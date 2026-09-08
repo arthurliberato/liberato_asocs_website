@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/precios",
+      "destination": "https://precios.ingsliberato.com/",
+      "permanent": true
+    },
+    {
+      "source": "/precios/:ruta*",
+      "destination": "https://precios.ingsliberato.com/:ruta*",
+      "permanent": true
+    }
+  ],
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)precios' ':(exclude)herramientas'"
+}
