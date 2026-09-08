@@ -203,6 +203,45 @@ WhatsApp. Sirve como lista de trabajo para levantar las primeras cotizaciones.
 
 ---
 
+## Filtro «Mis proveedores»
+
+Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios
+calculados **solo con las cotizaciones de ellos**. Se selecciona de dos formas:
+
+- desde el botón **Mis proveedores** de la barra de herramientas, que abre un panel con
+  buscador y casillas;
+- desde el directorio, con el botón **Trabajar solo con este** de cada tarjeta.
+
+La selección se guarda en el navegador (`localStorage`), se comparte entre páginas y no
+sale del equipo del visitante.
+
+### Qué cambia cuando hay filtro activo
+
+| | Sin filtro | Con filtro |
+|---|---|---|
+| Precio de referencia | Mediana de todas las cotizaciones | Mediana solo de las de sus proveedores |
+| Etiqueta del ítem | Estimado / Verificado / Demostración | Añade **sus proveedores** |
+| Ítem sin cotización de ellos | — | Vuelve a la referencia general y avisa: **sin cotización suya** |
+| Ficha por proveedor | Todas las cotizaciones | Las suyas resaltadas con la etiqueta **suyo** |
+| Copiado a Excel | Proveedor: «Referencia del mercado» | Proveedor: «Referencia de sus proveedores» |
+
+Arriba de cada página aparece una barra azul que dice con cuántos proveedores se está
+filtrando y cuántos ítems tienen cotización de ellos, con enlaces para cambiar la
+selección o quitarla.
+
+Un ítem sin cotizaciones de los proveedores elegidos **no se queda sin precio**: vuelve a
+su referencia general y se marca, que es más útil que un hueco.
+
+### Nota de implementación
+
+La interfaz del filtro (botón, panel y barra) la inyecta `app.js` en tiempo de ejecución,
+no está en el HTML de las 31 páginas. Es una función puramente interactiva que no necesita
+estar en el HTML para los buscadores, y así no hay que regenerar el sitio para tocarla.
+
+Las páginas de categoría traen la ficha de cada ítem escrita en el HTML —eso sí lo ve un
+buscador—, pero al abrirla se regenera desde los datos para reflejar el filtro y el
+interruptor de ITBIS del momento.
+
 ## Modo demostración (temporal)
 
 `assets/js/datos-demo.js` carga **8 proveedores y 31 cotizaciones ficticias** sobre 14

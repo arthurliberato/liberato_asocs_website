@@ -85,6 +85,7 @@
     tel:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1.5-3.2-4-1.8-1.7 1.9a12.4 12.4 0 0 1-6.7-6.7l1.9-1.7-1.8-4L5 4.9Z"/></svg>',
     mail:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>',
     copiar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+    proveedor: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><path d="M3 9h18l-1.5-4.5h-15L3 9Z"/><path d="M4.5 9v10.5h15V9"/><path d="M9.5 19.5V14h5v5.5"/></svg>',
     flecha:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     web:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>'
   };
@@ -314,6 +315,274 @@
     return window.DEMO && window.DEMO.activo;
   }
 
+
+  /* =========================================================
+     MIS PROVEEDORES
+     Un visitante que ya trabaja con ciertos proveedores puede
+     seleccionarlos y ver los precios calculados solo con sus
+     cotizaciones. La selección vive en el navegador y se comparte
+     entre páginas, igual que la lista de cotización.
+     ========================================================= */
+
+  var LS_PROV = 'ilya_precios_mis_proveedores_v1';
+  var misProveedores = cargarMisProveedores();
+
+  function cargarMisProveedores() {
+    try {
+      var raw = window.localStorage.getItem(LS_PROV);
+      var datos = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(datos)) return [];
+      var validos = {};
+      PROV.lista.forEach(function (p) { validos[p.nombre] = true; });
+      return datos.filter(function (n) { return validos[n]; });
+    } catch (e) { return []; }
+  }
+
+  function guardarMisProveedores() {
+    try { window.localStorage.setItem(LS_PROV, JSON.stringify(misProveedores)); } catch (e) { /* modo privado */ }
+  }
+
+  function aplicarFiltroProveedores() {
+    if (PRECIOS) PRECIOS.recalcular(CAT, misProveedores);
+    guardarMisProveedores();
+    refrescarTodo();
+  }
+
+  function alternarProveedor(nombre) {
+    var i = misProveedores.indexOf(nombre);
+    if (i === -1) misProveedores.push(nombre);
+    else misProveedores.splice(i, 1);
+    aplicarFiltroProveedores();
+  }
+
+  /* ---------- repintado general tras cambiar el filtro ---------- */
+
+  function badgeEstadoHTML(it) {
+    if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
+    if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
+    if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
+    return '<span class="badge badge-estimado">Estimado</span>';
+  }
+
+  function pintarCeldaPrecio(td, it) {
+    var pct = it.unidad === '%';
+    var p = precioVista(it.ref, it, estado.sinItbis);
+    var mn = precioVista(it.min, it, estado.sinItbis);
+    var mx = precioVista(it.max, it, estado.sinItbis);
+    if (p === null) { td.innerHTML = '<span class="precio-nulo">Según tarifario</span>'; return; }
+    td.innerHTML = pct
+      ? '<span class="precio">' + fmt(p) + ' %</span><span class="precio-rango">' + fmt(mn) + ' – ' + fmt(mx) + ' %</span>'
+      : '<span class="precio">' + rd(p) + '</span><span class="precio-rango">' + rd(mn) + ' – ' + rd(mx) + '</span>';
+    td.setAttribute('data-precio-ref', it.ref === null ? '' : it.ref);
+    td.setAttribute('data-precio-min', it.min === null ? '' : it.min);
+    td.setAttribute('data-precio-max', it.max === null ? '' : it.max);
+  }
+
+  /* Vuelve a pintar precios, etiquetas y fichas abiertas desde el objeto del
+     ítem, no desde el HTML: es lo que permite que el filtro cambie los montos
+     también en las páginas de categoría, que llegan ya renderizadas. */
+  function refrescarTodo() {
+    $$('tr[data-item]').forEach(function (tr) {
+      var it = itemPorCodigo[tr.getAttribute('data-item')];
+      if (!it) return;
+      var celda = $('td[data-precio-ref]', tr);
+      if (celda) pintarCeldaPrecio(celda, it);
+      var estadoCelda = $('.celda-estado', tr);
+      if (estadoCelda) {
+        estadoCelda.innerHTML = badgeEstadoHTML(it) +
+          (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
+          (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
+          (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '');
+      }
+      var detalle = tr.nextElementSibling;
+      if (detalle && detalle.classList.contains('fila-detalle') && !detalle.hidden) {
+        detalle.firstElementChild.innerHTML = detalleDe(it);
+        repintarPrecios(detalle);
+      }
+    });
+
+    if (window.__pintarCatalogo) window.__pintarCatalogo();
+    if (window.__pintarProveedores) window.__pintarProveedores();
+
+    pintarBarraFiltro();
+    pintarPanelProveedores();
+    pintarCotizacion();
+  }
+
+  /* ---------- barra de estado del filtro ---------- */
+
+  function pintarBarraFiltro() {
+    var barra = $('#barra-filtro');
+    if (!barra) return;
+    if (!misProveedores.length) { barra.hidden = true; return; }
+    barra.hidden = false;
+    var conCotizacion = CAT.items.filter(function (i) { return i.filtrado; }).length;
+    barra.innerHTML =
+      '<span class="barra-filtro-etiqueta">Sus proveedores</span> ' +
+      'Precios calculados solo con <strong>' + misProveedores.length + '</strong> ' +
+      (misProveedores.length === 1 ? 'proveedor' : 'proveedores') +
+      ' que usted eligió. ' +
+      (conCotizacion
+        ? '<strong>' + conCotizacion + '</strong> ' + (conCotizacion === 1 ? 'ítem tiene' : 'ítems tienen') + ' cotización suya; el resto muestra la referencia general.'
+        : 'Ninguno de los ítems tiene cotización de ellos todavía, así que se muestra la referencia general.') +
+      ' <button type="button" class="link-reset" id="abrir-proveedores">Cambiar</button>' +
+      ' <button type="button" class="link-reset" id="quitar-filtro">Quitar filtro</button>';
+  }
+
+  /* ---------- panel de selección ---------- */
+
+  function crearPanelProveedores() {
+    if ($('#prov-panel')) return;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'cot-overlay';
+    overlay.id = 'prov-overlay';
+
+    var panel = document.createElement('aside');
+    panel.className = 'cot-panel';
+    panel.id = 'prov-panel';
+    panel.setAttribute('aria-hidden', 'true');
+    panel.setAttribute('aria-label', 'Mis proveedores');
+    panel.innerHTML =
+      '<div class="cot-head">' +
+        '<h2>Mis proveedores</h2>' +
+        '<button class="cot-close" id="prov-close" type="button" aria-label="Cerrar">' +
+          ICONO.equis + '</button>' +
+      '</div>' +
+      '<div class="prov-buscador">' +
+        '<label class="visually-hidden" for="prov-filtro-q">Buscar proveedor</label>' +
+        '<input id="prov-filtro-q" type="search" placeholder="Buscar proveedor…" autocomplete="off">' +
+        '<p class="prov-ayuda">Marque los proveedores con los que trabaja. El precio de referencia ' +
+        'de cada ítem pasa a calcularse solo con sus cotizaciones. Los ítems sin cotización de ellos ' +
+        'siguen mostrando la referencia general.</p>' +
+      '</div>' +
+      '<div class="cot-body" id="prov-lista"></div>' +
+      '<div class="cot-foot">' +
+        '<div class="cot-total"><span class="k">Seleccionados</span><span class="v" id="prov-n">0</span></div>' +
+        '<div class="cot-acciones">' +
+          '<button class="btn btn-ghost" id="prov-limpiar" type="button">Quitar todos</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(panel);
+
+    function abrir() {
+      panel.classList.add('is-open');
+      overlay.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
+      $('#prov-close').focus();
+    }
+    function cerrar() {
+      panel.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
+    }
+    window.__abrirProveedores = abrir;
+
+    $('#prov-close').addEventListener('click', cerrar);
+    overlay.addEventListener('click', cerrar);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('is-open')) cerrar();
+    });
+    $('#prov-limpiar').addEventListener('click', function () {
+      misProveedores = [];
+      aplicarFiltroProveedores();
+    });
+    $('#prov-filtro-q').addEventListener('input', function () { pintarPanelProveedores(); });
+    $('#prov-lista').addEventListener('change', function (e) {
+      var chk = e.target.closest('input[data-prov]');
+      if (chk) alternarProveedor(chk.getAttribute('data-prov'));
+    });
+  }
+
+  function pintarPanelProveedores() {
+    var lista = $('#prov-lista');
+    if (!lista) return;
+    var q = normaliza(($('#prov-filtro-q') || {}).value || '');
+    var nombreZona = function (c) {
+      var z = PROV.zonas.filter(function (x) { return x.codigo === c; })[0];
+      return z ? z.nombre : c;
+    };
+
+    var visibles = PROV.lista.filter(function (p) {
+      if (!q) return true;
+      return normaliza(p.nombre + ' ' + p.cats.join(' ') + ' ' + p.zonas.map(nombreZona).join(' ')).indexOf(q) !== -1;
+    });
+
+    lista.innerHTML = visibles.length
+      ? visibles.map(function (p) {
+          var marcado = misProveedores.indexOf(p.nombre) !== -1;
+          return '<label class="prov-opcion' + (marcado ? ' is-marcado' : '') + '">' +
+              '<input type="checkbox" data-prov="' + esc(p.nombre) + '"' + (marcado ? ' checked' : '') + '>' +
+              '<span><span class="prov-opcion-n">' + esc(p.nombre) +
+                (p.demo ? ' <span class="badge badge-demo">demo</span>' : '') + '</span>' +
+              '<small>' + esc(p.zonas.map(nombreZona).join(' · ')) +
+                (p.publico ? '' : ' · solo vía distribución') + '</small></span>' +
+            '</label>';
+        }).join('')
+      : '<p class="cot-vacio">Ningún proveedor coincide con esa búsqueda.</p>';
+
+    var n = $('#prov-n');
+    if (n) n.textContent = misProveedores.length;
+
+    $$('[data-abrir-proveedores] .prov-cuenta').forEach(function (el) {
+      el.textContent = misProveedores.length ? '(' + misProveedores.length + ')' : '';
+    });
+  }
+
+  /* Botón para abrir el panel, junto al interruptor de ITBIS. */
+  function montarBotonProveedores() {
+    var filas = $$('.tools-row');
+    if (!filas.length) return;
+    var destino = filas[filas.length - 1];
+    if ($('[data-abrir-proveedores]', destino)) return;
+    var boton = document.createElement('button');
+    boton.className = 'btn btn-ghost btn-mini';
+    boton.type = 'button';
+    boton.setAttribute('data-abrir-proveedores', '');
+    boton.innerHTML = ICONO.proveedor + ' Mis proveedores <span class="prov-cuenta"></span>';
+    destino.appendChild(boton);
+  }
+
+  function montarBarraFiltro() {
+    if ($('#barra-filtro')) return;
+    var main = $('#main');
+    if (!main) return;
+    var barra = document.createElement('div');
+    barra.className = 'barra-filtro';
+    barra.id = 'barra-filtro';
+    barra.setAttribute('role', 'status');
+    barra.hidden = true;
+    main.insertBefore(barra, main.firstChild);
+  }
+
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-abrir-proveedores]') || e.target.closest('#abrir-proveedores')) {
+      if (window.__abrirProveedores) window.__abrirProveedores();
+      return;
+    }
+    if (e.target.closest('#quitar-filtro')) {
+      misProveedores = [];
+      aplicarFiltroProveedores();
+      return;
+    }
+    var estrella = e.target.closest('[data-prov-toggle]');
+    if (estrella) {
+      alternarProveedor(estrella.getAttribute('data-prov-toggle'));
+      return;
+    }
+  });
+
+
+  /* Arranque: aplica la selección guardada antes de que se pinte nada. */
+  if (PRECIOS && misProveedores.length) PRECIOS.recalcular(CAT, misProveedores);
+  crearPanelProveedores();
+  montarBotonProveedores();
+  montarBarraFiltro();
+  pintarBarraFiltro();
+  pintarPanelProveedores();
+
   /* =========================================================
      COPIAR AL PORTAPAPELES
      Todo se copia como TSV: es el formato que Excel, Google Sheets
@@ -422,37 +691,48 @@
      traen ya escrito en el HTML y solo se muestra u oculta.
      ========================================================= */
 
+  function detalleDe(it) {
+    return PRECIOS.detalleHTML(it, {
+      nombreCat: nombreCat,
+      proveedoresCategoria: PROV.lista.filter(function (p) { return !p.demo && p.cats.indexOf(it.cat) !== -1; }),
+      seleccion: misProveedores
+    });
+  }
+
   function alternarDetalle(boton) {
     var codigo = boton.getAttribute('data-detalle');
     var fila = boton.closest('tr');
     if (!fila) return;
     var abierto = boton.getAttribute('aria-expanded') === 'true';
     var siguiente = fila.nextElementSibling;
+    var esDetalle = siguiente && siguiente.classList.contains('fila-detalle');
 
     if (abierto) {
       boton.setAttribute('aria-expanded', 'false');
-      if (siguiente && siguiente.classList.contains('fila-detalle')) siguiente.hidden = true;
+      if (esDetalle) siguiente.hidden = true;
       return;
     }
 
     boton.setAttribute('aria-expanded', 'true');
 
-    if (siguiente && siguiente.classList.contains('fila-detalle')) {
+    var it = itemPorCodigo[codigo];
+    if (!it || !PRECIOS) return;
+
+    /* Las páginas de categoría traen la ficha ya escrita en el HTML, que es lo
+       que ve un buscador. Al abrirla se vuelve a generar desde los datos, para
+       que refleje el filtro de proveedores y el interruptor de ITBIS actuales. */
+    if (esDetalle) {
+      siguiente.firstElementChild.innerHTML = detalleDe(it);
       siguiente.hidden = false;
       repintarPrecios(siguiente);
       return;
     }
 
-    var it = itemPorCodigo[codigo];
-    if (!it || !PRECIOS) return;
     var tr = document.createElement('tr');
     tr.className = 'fila-detalle';
     var td = document.createElement('td');
     td.colSpan = fila.children.length;
-    td.innerHTML = PRECIOS.detalleHTML(it, {
-      nombreCat: nombreCat,
-      proveedoresCategoria: PROV.lista.filter(function (p) { return p.cats.indexOf(it.cat) !== -1; })
-    });
+    td.innerHTML = detalleDe(it);
     tr.appendChild(td);
     fila.parentNode.insertBefore(tr, fila.nextSibling);
     repintarPrecios(tr);
@@ -643,7 +923,7 @@
                      '<span class="precio-rango">' + rd(pmin) + ' – ' + rd(pmax) + '</span>';
       }
 
-      return '<tr>' +
+      return '<tr data-item="' + esc(it.codigo) + '">' +
           '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
                 ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
@@ -652,7 +932,10 @@
               '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num">' + precioHtml + '</td>' +
-          '<td>' + badgeEstado(it) + (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') + '</td>' +
+          '<td class="celda-estado">' + badgeEstado(it) +
+              (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
+              (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
+              (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '') + '</td>' +
           '<td class="num acciones">' +
             '<button class="btn-copiar" type="button" data-copiar-precio="' + esc(it.codigo) + '" ' +
               'aria-label="Copiar ' + esc(it.nombre) + ' como fila de hoja de cálculo" ' +
@@ -753,6 +1036,7 @@
       if (cg) cg.setAttribute('aria-pressed', 'true');
     }
 
+    window.__pintarCatalogo = pintar;
     pintar();
   })();
 
@@ -902,7 +1186,8 @@
       if (p.wa) contactos.push('<a href="https://wa.me/' + esc(p.wa) + '" target="_blank" rel="noopener">' + ICONO.wa + 'WhatsApp</a>');
       if (p.email) contactos.push('<a href="mailto:' + esc(p.email) + '">' + ICONO.mail + esc(p.email) + '</a>');
 
-      return '<article class="prov">' +
+      var elegido = misProveedores.indexOf(p.nombre) !== -1;
+      return '<article class="prov' + (elegido ? ' prov-elegido' : '') + '">' +
           '<div class="prov-top">' +
             '<div><h3>' + esc(p.nombre) + '</h3><p class="prov-tipo">' + esc(nombreTipo(p.tipo)) + '</p></div>' +
             '<div style="display:flex;flex-direction:column;gap:.3rem;align-items:flex-end">' +
@@ -918,6 +1203,9 @@
           '<div class="prov-contacto">' +
             (contactos.length ? contactos.join('') : '<span class="prov-sincontacto">Sin datos de contacto verificados públicamente.</span>') +
           '</div>' +
+          '<button class="btn-elegir' + (elegido ? ' is-elegido' : '') + '" type="button" data-prov-toggle="' + esc(p.nombre) + '">' +
+            (elegido ? ICONO.check + ' Trabajo con este proveedor' : ICONO.mas + ' Trabajar solo con este') +
+          '</button>' +
         '</article>';
     }
 
@@ -970,6 +1258,7 @@
       pintar();
     });
 
+    window.__pintarProveedores = pintar;
     pintar();
   })();
 

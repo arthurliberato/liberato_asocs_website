@@ -224,14 +224,14 @@ function fila(it) {
     proveedoresCategoria: PROV.lista.filter((p) => p.cats.indexOf(it.cat) !== -1),
   });
 
-  return `          <tr>
+  return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
       (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
             <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-min="${it.min === null ? '' : it.min}" data-precio-max="${it.max === null ? '' : it.max}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
-            <td>${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
+            <td class="celda-estado">${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
             <td class="num acciones">` +
       `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
       (it.ref === null ? '' :
