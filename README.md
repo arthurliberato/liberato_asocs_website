@@ -23,6 +23,7 @@ robots.txt
 sitemap.xml
 precios/                Subdominio precios.ingsliberato.com (ver precios/README.md)
 herramientas/           Generador de las páginas de categoría (no se publica)
+vercel.json             Configuración de despliegue del sitio institucional
 ```
 
 El repositorio contiene **dos sitios** que se publican por separado:
@@ -129,7 +130,22 @@ Formspree, por ejemplo:
 En el repositorio: **Settings → Pages → Source: Deploy from a branch**, elegir la
 rama y la carpeta `/ (root)`.
 
-### Netlify / Vercel
+### Vercel
+Conectar el repositorio. No hay comando de build y el directorio de publicación es la
+raíz. Cada push a `main` despliega solo.
+
+**Los dos sitios son dos proyectos de Vercel distintos** sobre el mismo repositorio: uno
+con *Root Directory* en la raíz (este sitio) y otro con *Root Directory* en `precios`
+(el subdominio). Un proyecto sirve una sola carpeta, por eso no basta con uno.
+
+El `vercel.json` de la raíz hace dos cosas:
+
+- Redirige `ingsliberato.com/precios/*` a `precios.ingsliberato.com/*` con un 301, para
+  que la carpeta del subdominio no quede duplicada bajo el dominio principal.
+- Cancela el build cuando el commit solo tocó `precios/` o `herramientas/`, para no
+  redesplegar este sitio por un cambio que no le afecta.
+
+### Netlify
 Arrastrar la carpeta, o conectar el repositorio. No hay comando de build:
 directorio de publicación = raíz del proyecto.
 

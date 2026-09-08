@@ -29,6 +29,7 @@ precios/
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
   sitemap.xml
+  vercel.json             Configuración de despliegue del subdominio
 ```
 
 ---
@@ -171,7 +172,36 @@ proveedores que venden al público.
 
 El contenido a publicar es **esta carpeta**, no la raíz del repositorio.
 
-### Netlify / Vercel
+### Vercel
+
+El subdominio necesita **su propio proyecto de Vercel**, separado del sitio principal:
+un proyecto sirve una sola carpeta raíz, así que el proyecto de `ingsliberato.com` no
+puede servir también este subdominio.
+
+En *Add New → Project*, importar el mismo repositorio y configurar:
+
+| Campo | Valor |
+|---|---|
+| **Root Directory** | `precios` |
+| Framework Preset | Other |
+| Build Command | vacío (override) |
+| Output Directory | vacío |
+| Install Command | vacío |
+
+Después, en *Settings → Domains*, agregar `precios.ingsliberato.com` y crear el registro
+DNS que indique Vercel. A partir de ahí, cada push a `main` despliega solo.
+
+El archivo `vercel.json` de esta carpeta ya deja fijado lo importante:
+
+- **`cleanUrls: false`** — es deliberado y no conviene cambiarlo. Con *Clean URLs*
+  activado, Vercel redirige `precio-varilla-acero.html` a `precio-varilla-acero`, y como
+  los `canonical` y el `sitemap.xml` usan la extensión `.html`, cada URL indexable
+  quedaría detrás de un redirect. Si algún día se quieren URLs sin `.html`, hay que
+  cambiar también el generador para que canonical y sitemap coincidan.
+- **`ignoreCommand`** — cancela el build cuando el commit no tocó esta carpeta, para que
+  un cambio en el sitio principal no redespliegue el subdominio.
+
+### Netlify
 Conectar el repositorio y configurar:
 - **Directorio de publicación:** `precios`
 - **Comando de build:** ninguno
@@ -185,13 +215,18 @@ contenido de esta carpeta.
 Un registro `CNAME` de `precios` hacia el host que sirva el sitio (o `A` hacia la IP
 del servidor si es hosting tradicional).
 
-### Después de publicar
-Ya todo apunta a `https://precios.ingsliberato.com`. Si el subdominio termina
-llamándose distinto, hay que cambiar la URL en:
-- las etiquetas `canonical` y `og:url` de las cuatro páginas
-- el bloque `application/ld+json` de `index.html`
-- `robots.txt` y `sitemap.xml`
-- los enlaces del sitio principal (`../index.html`, en la navegación y el pie)
+### Si el subdominio cambia de nombre
+Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose distinto,
+hay que cambiar la URL en:
+
+- la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
+  generador: eso rehace las 27 páginas de categoría, la portada y el `sitemap.xml`;
+- las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
+  `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
+  mantienen a mano;
+- `robots.txt`;
+- los enlaces del sitio principal (`../index.html`, en la navegación y el pie) y la
+  redirección del `vercel.json` de la raíz.
 
 ---
 
@@ -221,3 +256,17 @@ llamándose distinto, hay que cambiar la URL en:
 - No usamos marcado `Product` ni `Offer` en los precios, y es deliberado: no son ofertas
   de venta de un comerciante identificado, sino referencias de mercado. Declararlas como
   ofertas sería incorrecto ante Google y ante quien lee.
+
+---
+
+## Contenido duplicado bajo el dominio principal
+
+El sitio institucional se publica desde la raíz del repositorio, así que esta carpeta
+quedaría accesible también en `ingsliberato.com/precios/`. El `vercel.json` de la raíz
+redirige esa ruta al subdominio con un 301 permanente, de modo que la URL duplicada no
+existe. En un hosting sin esa redirección, los `canonical` de las páginas siguen
+resolviendo el problema para los buscadores.
+
+Efecto secundario a tener presente: esa redirección también actúa en los *preview
+deployments* del proyecto raíz. Para revisar cambios de este subdominio antes de
+publicar hay que usar el preview del proyecto de `precios`, no el de la raíz.
