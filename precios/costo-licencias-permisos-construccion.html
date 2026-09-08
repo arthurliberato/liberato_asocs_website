@@ -141,6 +141,10 @@
 
     <div class="tools-row" style="margin-bottom:1rem;justify-content:flex-end">
       <label class="toggle-itbis"><input type="checkbox" id="f-itbis"> Ver sin ITBIS</label>
+      <button class="btn btn-ghost btn-mini" type="button" data-copiar-tabla>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        Copiar tabla
+      </button>
     </div>
 
     <div class="tabla-wrap">
@@ -158,58 +162,70 @@
         </thead>
         <tbody id="tabla-estatica">
           <tr>
-            <td><span class="item-nombre">Licencia de construcción (MOPC)</span><span class="item-esp">Se liquida según el tarifario oficial vigente y el costo de la obra</span><span class="item-esp">Registrar por separado la tasa oficial y los honorarios de gestión.</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-001" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Licencia de construcción (MOPC)</span></button><span class="item-esp">Se liquida según el tarifario oficial vigente y el costo de la obra</span><span class="item-esp">Registrar por separado la tasa oficial y los honorarios de gestión.</span></td>
             <td><span class="item-cod">MOS-04-001</span><br><span class="item-esp">Preliminares</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-001" aria-label="Copiar Licencia de construcción (MOPC) como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-001 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-001">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario oficial MOPC</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-001" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
           <tr>
-            <td><span class="item-nombre">Permiso municipal / uso de suelo</span><span class="item-esp">Según ayuntamiento correspondiente</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-002" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Permiso municipal / uso de suelo</span></button><span class="item-esp">Según ayuntamiento correspondiente</span></td>
             <td><span class="item-cod">MOS-04-002</span><br><span class="item-esp">Preliminares</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-002" aria-label="Copiar Permiso municipal / uso de suelo como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-002 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-002">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario del ayuntamiento</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-002" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
           <tr>
-            <td><span class="item-nombre">No objeción de Medio Ambiente</span><span class="item-esp">Aplica según tipo y escala del proyecto</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-003" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">No objeción de Medio Ambiente</span></button><span class="item-esp">Aplica según tipo y escala del proyecto</span></td>
             <td><span class="item-cod">MOS-04-003</span><br><span class="item-esp">Preliminares</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-003" aria-label="Copiar No objeción de Medio Ambiente como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-003 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-003">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario Ministerio de Medio Ambiente</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-003" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
           <tr>
-            <td><span class="item-nombre">Conexión de agua (CAASD / INAPA)</span><span class="item-esp">Según diámetro de acometida y zona</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-004" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Conexión de agua (CAASD / INAPA)</span></button><span class="item-esp">Según diámetro de acometida y zona</span></td>
             <td><span class="item-cod">MOS-04-004</span><br><span class="item-esp">Instalaciones</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-004" aria-label="Copiar Conexión de agua (CAASD / INAPA) como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-004 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-004">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario de la prestadora</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-004" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
           <tr>
-            <td><span class="item-nombre">Conexión eléctrica (distribuidora)</span><span class="item-esp">Según carga contratada</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-005" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Conexión eléctrica (distribuidora)</span></button><span class="item-esp">Según carga contratada</span></td>
             <td><span class="item-cod">MOS-04-005</span><br><span class="item-esp">Instalaciones</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-005" aria-label="Copiar Conexión eléctrica (distribuidora) como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-005 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-005">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario de la distribuidora</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-005" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
           <tr>
-            <td><span class="item-nombre">Aprobación del Cuerpo de Bomberos</span><span class="item-esp">Sistemas de detección y extinción</span></td>
+            <td><button class="item-toggle" type="button" data-detalle="MOS-04-006" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Aprobación del Cuerpo de Bomberos</span></button><span class="item-esp">Sistemas de detección y extinción</span></td>
             <td><span class="item-cod">MOS-04-006</span><br><span class="item-esp">Preliminares</span></td>
             <td class="unidad">ajuste</td>
             <td class="num" data-precio-ref="" data-precio-min="" data-precio-max="" data-precio-itbis="0" data-precio-pct="0"><span class="precio-nulo">Según tarifario</span></td>
             <td><span class="badge badge-tarifario">Tarifario oficial</span> <span class="badge badge-itbis">no lleva ITBIS</span></td>
-            <td class="num"></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-006" aria-label="Copiar Aprobación del Cuerpo de Bomberos como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td>
           </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MOS-04-006 · Trámites y permisos</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MOS-04-006">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Tarifario del Cuerpo de Bomberos</span></td><td class="num"><span class="precio-nulo">Según tarifario</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MOS-04-006" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p></div></td></tr>
         </tbody>
       </table>
     </div>
 
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
+      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
+      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
+      Google Sheets se reparte en columnas.
+    </p>
+
+    <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       ¿Busca algo que no está en esta tabla?
       <a href="catalogo.html?cat=MOS-04">Abra el catálogo completo con buscador y filtros</a>
       o <a href="metodologia.html">lea cómo se arman estos precios</a>.
@@ -398,6 +414,8 @@
 
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
+<script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>
 </html>

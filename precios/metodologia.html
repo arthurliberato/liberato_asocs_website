@@ -141,6 +141,42 @@
             normalmente no lo lleva.</li>
       </ul>
 
+      <h2 id="por-proveedor">El precio por proveedor</h2>
+      <p>
+        Cada ítem del catálogo abre una ficha con su detalle por proveedor: pulse el nombre
+        del ítem en cualquier tabla de precios. Ahí conviven la referencia del mercado y,
+        cuando existen, las cotizaciones recibidas de cada proveedor con su fecha y su fuente.
+      </p>
+      <p>
+        Hoy esa ficha está casi vacía a propósito. <strong>No hay ninguna cotización
+        registrada</strong>, y no publicamos un precio inventado atribuido a una empresa real:
+        decir que tal ferretería vende el cemento a tal precio, sin que lo haya cotizado, es
+        un dato falso sobre un negocio con nombre propio. Mientras tanto, la ficha lista los
+        proveedores de esa categoría que están <em>pendientes de cotizar</em>, con enlace a su
+        web o su WhatsApp.
+      </p>
+      <p>
+        En cuanto un ítem recibe cotizaciones de proveedores que venden al público, el precio
+        de referencia deja de ser nuestra estimación y pasa a ser la mediana de esas
+        cotizaciones, con el mínimo y el máximo observados, y el ítem cambia a
+        <em>Verificado</em>. Las cotizaciones se normalizan antes al mismo criterio de ITBIS,
+        de modo que se puedan comparar aunque unas vengan con el impuesto incluido y otras no.
+      </p>
+
+      <h2 id="exportar">Copiar a una hoja de cálculo</h2>
+      <p>
+        Cada precio tiene un botón de copiar, y hay un botón <strong>Copiar tabla</strong> que
+        se lleva todo lo que esté viendo, con los filtros aplicados. Lo copiado se pega
+        directamente en Excel o Google Sheets repartido en columnas: código, ítem,
+        especificación, categoría, unidad, proveedor, precio, mínimo, máximo, moneda, si
+        incluye ITBIS, estado, fecha y fuente.
+      </p>
+      <p>
+        Los montos se copian como número plano, sin símbolo de moneda ni separador de miles,
+        para que la hoja los trate como números y no como texto. Y se copia lo que se ve: con
+        el interruptor <em>Ver sin ITBIS</em> activo, el monto ya viene sin el impuesto.
+      </p>
+
       <h2 id="estados">Los tres estados de un precio</h2>
       <div class="tabla-simple">
         <table>
@@ -312,6 +348,8 @@
 
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
+<script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>
 </html>

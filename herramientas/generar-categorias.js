@@ -31,9 +31,22 @@ const WA = '18297939892';
 global.window = {};
 require(path.join(DESTINO, 'assets/js/datos-catalogo.js'));
 require(path.join(DESTINO, 'assets/js/datos-proveedores.js'));
+require(path.join(DESTINO, 'assets/js/datos-precios.js'));
+require(path.join(DESTINO, 'assets/js/datos-demo.js'));
 const CAT = global.window.CATALOGO;
 const PROV = global.window.PROVEEDORES;
+const PRECIOS = global.window.PRECIOS;
 const CONTENIDO = require('./contenido-categorias.js');
+
+/* Une las cotizaciones por proveedor con el catálogo antes de generar nada.
+   Si una cotización apunta a un ítem o a un proveedor que no existe, se
+   aborta: es preferible fallar aquí que publicar una ficha rota. */
+const problemas = PRECIOS.aplicar(CAT, PROV);
+if (problemas.length) {
+  console.error('Errores en datos-precios.js:');
+  problemas.forEach((p) => console.error('  - ' + p));
+  process.exit(1);
+}
 
 /* ---------- utilidades ---------- */
 
@@ -185,6 +198,7 @@ const AVISO = `<div class="aviso">
 /* ---------- fila de la tabla ---------- */
 
 function badgeEstado(it) {
+  if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
   if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
   if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
   return '<span class="badge badge-estimado">Estimado</span>';
@@ -205,24 +219,31 @@ function fila(it) {
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
 
+  const detalle = PRECIOS.detalleHTML(it, {
+    nombreCat: (c) => (catPorCodigo[c] ? catPorCodigo[c].nombre : c),
+    proveedoresCategoria: PROV.lista.filter((p) => p.cats.indexOf(it.cat) !== -1),
+  });
+
   return `          <tr>
-            <td><span class="item-nombre">${esc(it.nombre)}</span>` +
+            <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
       (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
             <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-min="${it.min === null ? '' : it.min}" data-precio-max="${it.max === null ? '' : it.max}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
             <td>${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
-            <td class="num">` +
+            <td class="num acciones">` +
+      `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
       (it.ref === null ? '' :
         `<button class="btn-add" type="button" data-add="${esc(it.codigo)}" data-nombre="${esc(it.nombre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`) + `</td>
-          </tr>`;
+          </tr>
+          <tr class="fila-detalle" hidden><td colspan="6">${detalle}</td></tr>`;
 }
 
 /* ---------- bloques de la página ---------- */
 
 function bloqueProveedores(codigo) {
-  const lista = PROV.lista.filter((p) => p.cats.indexOf(codigo) !== -1);
+  const lista = PROV.lista.filter((p) => !p.demo && p.cats.indexOf(codigo) !== -1);
   if (!lista.length) return '';
 
   const zonaNombre = (c) => (PROV.zonas.filter((z) => z.codigo === c)[0] || {}).nombre || c;
@@ -365,6 +386,10 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
 
     <div class="tools-row" style="margin-bottom:1rem;justify-content:flex-end">
       <label class="toggle-itbis"><input type="checkbox" id="f-itbis"> Ver sin ITBIS</label>
+      <button class="btn btn-ghost btn-mini" type="button" data-copiar-tabla>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        Copiar tabla
+      </button>
     </div>
 
     <div class="tabla-wrap">
@@ -387,6 +412,12 @@ ${items.map(fila).join('\n')}
     </div>
 
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
+      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
+      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
+      Google Sheets se reparte en columnas.
+    </p>
+
+    <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       ¿Busca algo que no está en esta tabla?
       <a href="catalogo.html?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
       o <a href="metodologia.html">lea cómo se arman estos precios</a>.
@@ -483,6 +514,8 @@ ${COTIZACION}
 
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
+<script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>
 </html>

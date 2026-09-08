@@ -23,8 +23,10 @@ precios/
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
     js/
-      datos-catalogo.js   Taxonomía e ítems con sus precios      ← se edita a menudo
-      datos-proveedores.js Directorio de proveedores             ← se edita a menudo
+      datos-catalogo.js   Taxonomía e ítems con su precio de referencia
+      datos-proveedores.js Directorio de proveedores
+      datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
+      datos-demo.js       Datos ficticios de demostración       ← temporal, se apaga
       app.js              Buscador, filtros y lista de cotización
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
@@ -143,6 +145,135 @@ búsquedas.
 | Terminaciones, equipos, herramientas | Trimestral |
 
 ---
+
+## Registrar una cotización de proveedor
+
+Esta es la parte que convierte el sitio en una base de precios de verdad. Las
+cotizaciones viven en `assets/js/datos-precios.js`, separadas del catálogo: el precio
+nunca se guarda en la ficha del ítem, sino aquí, con su proveedor, su fecha y su fuente.
+
+```js
+c('MAT-02-001', 'Ferretería Ochoa (8A)', 455, {
+  fecha:  '2026-09-05',
+  fuente: 'Precio publicado en ochoa.com.do',
+  itbis:  true,        // ¿el monto incluye el 18%?
+  unidad: 'funda',     // solo si difiere de la del ítem
+  nota:   ''           // condiciones, volumen, validez
+});
+```
+
+El nombre del proveedor debe coincidir **exactamente** con el de
+`datos-proveedores.js`. Si no coincide, o si el código del ítem no existe, el generador
+falla y dice cuál es el problema. Es a propósito: un error de tipeo no debe llegar
+callado a producción.
+
+### Qué pasa al registrar precios
+
+En cuanto un ítem tiene al menos una cotización de un proveedor que **vende al público**,
+el sitio deja de mostrar la estimación de arranque y calcula:
+
+| Campo | Cómo se calcula |
+|---|---|
+| Precio de referencia | Mediana de las cotizaciones válidas |
+| Mínimo y máximo | Extremos observados |
+| Estado | Pasa de *Estimado* a *Verificado* |
+| Fecha | La más reciente de las cotizaciones |
+
+Antes de comparar, todas las cotizaciones se **normalizan al criterio de ITBIS del
+ítem**, así que da igual si un proveedor cotiza con el impuesto incluido y otro sin él.
+
+Los fabricantes de canal cerrado (`publico: false` — cementeras, siderúrgica, fábricas de
+pintura) aparecen en la ficha como indicador de tendencia pero **no entran en el
+cálculo**, siguiendo la regla del documento de proveedores. Una cotización en una unidad
+distinta a la del ítem tampoco promedia: se muestra marcada y fuera del cálculo.
+
+No hay nada más que tocar. La ficha del ítem, la etiqueta de estado, la tabla de
+categoría y el sitemap se actualizan solos al correr el generador.
+
+### Estado actual
+
+**Cero cotizaciones registradas.** Ningún proveedor ha cotizado formalmente todavía, y no
+se inventa un precio para atribuírselo a una empresa real con nombre propio: sería
+publicar un dato falso sobre un negocio identificable. Por eso la lista está vacía y los
+253 ítems siguen marcados como estimados.
+
+Mientras tanto, la ficha de cada ítem muestra la referencia estimada y la lista de
+proveedores de esa categoría **pendientes de cotizar**, con enlace directo a su web o su
+WhatsApp. Sirve como lista de trabajo para levantar las primeras cotizaciones.
+
+---
+
+## Modo demostración (temporal)
+
+`assets/js/datos-demo.js` carga **8 proveedores y 31 cotizaciones ficticias** sobre 14
+ítems, para poder ver el sitio funcionando como funcionará cuando haya cotizaciones
+reales: la ficha por proveedor llena, el recálculo de la referencia, la normalización de
+ITBIS y el copiado a Excel con varias filas.
+
+**Nada de eso es real.** Todos los proveedores llevan `(demo)` en el nombre y una etiqueta
+morada, hay una barra de aviso en todas las páginas, y los ítems afectados quedan marcados
+como **Demostración**, nunca como *Verificado*: un dato inventado no se presenta como
+comprobado.
+
+Los proveedores ficticios **no aparecen** en el directorio ni en los contadores de la
+portada, que siguen mostrando las 79 empresas reales.
+
+### Qué demuestra cada caso
+
+| Ítem | Qué muestra |
+|---|---|
+| Cemento (`MAT-02-001`) | Tres cotizaciones que promedian, una de ellas cotizada **sin ITBIS** que se normaliza antes de comparar, más un fabricante de canal cerrado que se muestra pero **no** entra en el cálculo |
+| Arena lavada (`MAT-01-001`) | Una cotización **por viaje** cuando el ítem se mide en m³: se muestra marcada y queda fuera del cálculo por no coincidir la unidad |
+| Colocación de bloques (`MOS-02-001`) | Mano de obra, que no lleva ITBIS |
+| Aluzinc (`MAT-07-002`) | Un ítem con una sola cotización |
+
+### Cómo apagarlo
+
+Abrir `assets/js/datos-demo.js`, poner `ACTIVO` en `false`, y regenerar:
+
+```bash
+node herramientas/generar-categorias.js
+```
+
+Todo vuelve a su estado real de inmediato: los proveedores ficticios desaparecen, los 14
+ítems regresan a su precio estimado y la barra de aviso deja de mostrarse. Para eliminarlo
+del todo, borrar el archivo y su etiqueta `<script>` del generador y de las cuatro páginas
+escritas a mano.
+
+> **Antes de publicar el sitio de cara al público, apáguelo.** Sirve para revisar y para
+> enseñarle a alguien cómo va a funcionar, no para estar en producción: aunque todo esté
+> marcado, son precios inventados en una página de precios.
+
+## Copiar a Excel
+
+Cada precio tiene un botón de copiar y todo se copia como **TSV** (valores separados por
+tabulaciones), que es lo que Excel, Google Sheets y Numbers reparten en columnas al pegar.
+
+| Botón | Qué copia |
+|---|---|
+| El de cada fila de la tabla | La fila de referencia de ese ítem |
+| El de cada fila del detalle | Esa cotización de proveedor |
+| **Copiar ítem completo** | La referencia más todas las cotizaciones del ítem |
+| **Copiar tabla** | Todo lo que se está viendo, con encabezados y respetando los filtros |
+
+Las columnas son siempre las mismas catorce:
+
+```
+Código · Ítem · Especificación · Categoría · Unidad · Proveedor · Precio ·
+Mínimo · Máximo · Moneda · ITBIS incluido · Estado · Fecha · Fuente
+```
+
+Dos decisiones que hacen que esto sea usable de verdad en una hoja de cálculo:
+
+- **Los montos van como número plano** (`1180`, no `RD$ 1,180`), sin símbolo ni separador
+  de miles. Es lo único que Excel reconoce como número en vez de como texto. La moneda va
+  en su propia columna.
+- **Se copia lo que se ve.** Si el interruptor *Ver sin ITBIS* está activo, el monto
+  copiado ya viene sin el impuesto y la columna «ITBIS incluido» dice `No`.
+
+El separador decimal es el punto, que es la convención dominicana. Si abre el archivo en
+un Excel configurado con locale de España, revise que no interprete el punto como
+separador de miles.
 
 ## Editar los proveedores
 

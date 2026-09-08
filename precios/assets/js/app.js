@@ -8,6 +8,12 @@
 
   var CAT = window.CATALOGO || {items:[], categorias:[], grupos:[], etapas:[], conversiones:[], meta:{}};
   var PROV = window.PROVEEDORES || {lista:[], zonas:[], tipos:[], canales:[], meta:{}};
+  var PRECIOS = window.PRECIOS || null;
+
+  /* Une las cotizaciones por proveedor con el catálogo. Cuando un ítem tiene
+     cotizaciones de proveedores que venden al público, su precio de referencia
+     pasa a ser la mediana de esas cotizaciones. */
+  if (PRECIOS) PRECIOS.aplicar(CAT, PROV);
   var ITBIS = (CAT.meta && CAT.meta.itbis) || 0.18;
   var LS_KEY = 'ilya_precios_cotizacion_v1';
 
@@ -78,6 +84,8 @@
     wa:      '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.8 12a5.1 5.1 0 0 0 1 2.2 11.5 11.5 0 0 0 4.5 3.9c1.6.6 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>',
     tel:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1.5-3.2-4-1.8-1.7 1.9a12.4 12.4 0 0 1-6.7-6.7l1.9-1.7-1.8-4L5 4.9Z"/></svg>',
     mail:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>',
+    copiar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+    flecha:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     web:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>'
   };
 
@@ -282,6 +290,211 @@
     pintarCotizacion();
   })();
 
+
+
+  /* =========================================================
+     AVISO DE MODO DEMOSTRACIÓN
+     Mientras haya datos ficticios cargados, todas las páginas lo
+     dicen arriba del todo. Se apaga solo al desactivar datos-demo.js.
+     ========================================================= */
+
+  (function avisoDemo() {
+    if (!global_DEMO() || !document.body) return;
+    var barra = document.createElement('div');
+    barra.className = 'barra-demo';
+    barra.setAttribute('role', 'status');
+    barra.innerHTML = '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
+      'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
+      'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
+      'cotizado todavía y ninguno de estos precios es una oferta.';
+    document.body.insertBefore(barra, document.body.firstChild);
+  })();
+
+  function global_DEMO() {
+    return window.DEMO && window.DEMO.activo;
+  }
+
+  /* =========================================================
+     COPIAR AL PORTAPAPELES
+     Todo se copia como TSV: es el formato que Excel, Google Sheets
+     y Numbers reparten en columnas al pegar. Los montos van como
+     número plano, sin símbolo ni separador de miles, para que la
+     hoja los reconozca como números y no como texto.
+     ========================================================= */
+
+  function avisar(boton, texto) {
+    if (!boton) return;
+    var previo = boton.getAttribute('data-previo');
+    if (previo === null) boton.setAttribute('data-previo', boton.innerHTML);
+    boton.classList.add('copiado');
+    boton.innerHTML = boton.classList.contains('btn-copiar')
+      ? ICONO.check
+      : texto;
+    window.clearTimeout(boton._t);
+    boton._t = window.setTimeout(function () {
+      boton.innerHTML = boton.getAttribute('data-previo');
+      boton.classList.remove('copiado');
+    }, 1600);
+  }
+
+  function copiarTexto(texto, boton) {
+    function alterno() {
+      var ta = document.createElement('textarea');
+      ta.value = texto;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.top = '-2000px';
+      document.body.appendChild(ta);
+      ta.select();
+      var exito = false;
+      try { exito = document.execCommand('copy'); } catch (e) { exito = false; }
+      document.body.removeChild(ta);
+      if (exito) avisar(boton, 'Copiado');
+      else window.prompt('Copie con Ctrl+C:', texto);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+      navigator.clipboard.writeText(texto).then(function () { avisar(boton, 'Copiado'); }, alterno);
+    } else {
+      alterno();
+    }
+  }
+
+  /* Opciones de exportación: el precio copiado es el que se ve en pantalla,
+     así que respeta el interruptor de ITBIS. */
+  function opcionesExport() {
+    return {
+      nombreCat: nombreCat,
+      sinItbis: estado.sinItbis,
+      precio: function (valor, item) { return precioVista(valor, item, estado.sinItbis); }
+    };
+  }
+
+  function filasDeItem(codigo) {
+    var it = itemPorCodigo[codigo];
+    if (!it || !PRECIOS) return [];
+    return PRECIOS.filasItem(it, opcionesExport());
+  }
+
+  /* =========================================================
+     REPINTAR PRECIOS AL CAMBIAR EL ITBIS
+     Sirve igual para la tabla de una página estática y para los
+     paneles de detalle que estén abiertos.
+     ========================================================= */
+
+  function repintarPrecios(raiz) {
+    var sinItbis = estado.sinItbis;
+
+    $$('[data-precio-ref]', raiz || document).forEach(function (el) {
+      var crudo = el.getAttribute('data-precio-ref');
+      if (crudo === '') return;
+      var falso = {itbis: el.getAttribute('data-precio-itbis') === '1'};
+      var pct = el.getAttribute('data-precio-pct') === '1';
+      var v = function (attr) {
+        var n = parseFloat(el.getAttribute(attr));
+        return isNaN(n) ? null : precioVista(n, falso, sinItbis);
+      };
+      var ref = v('data-precio-ref');
+
+      if (el.tagName === 'TD') {
+        var min = v('data-precio-min'), max = v('data-precio-max');
+        el.innerHTML = pct
+          ? '<span class="precio">' + fmt(ref) + ' %</span><span class="precio-rango">' + fmt(min) + ' – ' + fmt(max) + ' %</span>'
+          : '<span class="precio">' + rd(ref) + '</span><span class="precio-rango">' + rd(min) + ' – ' + rd(max) + '</span>';
+      } else {
+        el.textContent = pct ? fmt(ref) + ' %' : rd(ref);
+      }
+    });
+
+    $$('[data-precio-min]', raiz || document).forEach(function (el) {
+      if (el.tagName === 'TD') return;
+      var celda = el.previousElementSibling;
+      var traeItbis = celda && celda.getAttribute('data-precio-itbis') === '1';
+      var falso = {itbis: traeItbis};
+      var min = precioVista(parseFloat(el.getAttribute('data-precio-min')), falso, sinItbis);
+      var max = precioVista(parseFloat(el.getAttribute('data-precio-max')), falso, sinItbis);
+      el.textContent = rd(min) + ' – ' + rd(max);
+    });
+  }
+
+  /* =========================================================
+     DETALLE POR PROVEEDOR
+     El catálogo lo inserta al vuelo; las páginas de categoría lo
+     traen ya escrito en el HTML y solo se muestra u oculta.
+     ========================================================= */
+
+  function alternarDetalle(boton) {
+    var codigo = boton.getAttribute('data-detalle');
+    var fila = boton.closest('tr');
+    if (!fila) return;
+    var abierto = boton.getAttribute('aria-expanded') === 'true';
+    var siguiente = fila.nextElementSibling;
+
+    if (abierto) {
+      boton.setAttribute('aria-expanded', 'false');
+      if (siguiente && siguiente.classList.contains('fila-detalle')) siguiente.hidden = true;
+      return;
+    }
+
+    boton.setAttribute('aria-expanded', 'true');
+
+    if (siguiente && siguiente.classList.contains('fila-detalle')) {
+      siguiente.hidden = false;
+      repintarPrecios(siguiente);
+      return;
+    }
+
+    var it = itemPorCodigo[codigo];
+    if (!it || !PRECIOS) return;
+    var tr = document.createElement('tr');
+    tr.className = 'fila-detalle';
+    var td = document.createElement('td');
+    td.colSpan = fila.children.length;
+    td.innerHTML = PRECIOS.detalleHTML(it, {
+      nombreCat: nombreCat,
+      proveedoresCategoria: PROV.lista.filter(function (p) { return p.cats.indexOf(it.cat) !== -1; })
+    });
+    tr.appendChild(td);
+    fila.parentNode.insertBefore(tr, fila.nextSibling);
+    repintarPrecios(tr);
+  }
+
+  /* Manejadores globales: funcionan en el catálogo y en las páginas estáticas. */
+  document.addEventListener('click', function (e) {
+    var detalle = e.target.closest('[data-detalle]');
+    if (detalle) { alternarDetalle(detalle); return; }
+
+    var unaFila = e.target.closest('[data-copiar-precio]');
+    if (unaFila) {
+      var filas = filasDeItem(unaFila.getAttribute('data-copiar-precio'));
+      var i = unaFila.getAttribute('data-copiar-indice');
+      var fila = i === null ? filas[0] : filas[parseInt(i, 10) + 1];
+      if (fila) copiarTexto(PRECIOS.aTSV([fila], false), unaFila);
+      return;
+    }
+
+    var itemEntero = e.target.closest('[data-copiar-item]');
+    if (itemEntero) {
+      var todas = filasDeItem(itemEntero.getAttribute('data-copiar-item'));
+      if (todas.length) copiarTexto(PRECIOS.aTSV(todas, false), itemEntero);
+      return;
+    }
+
+    var tabla = e.target.closest('[data-copiar-tabla]');
+    if (tabla) {
+      var codigos = $$('[data-copiar-precio]:not([data-copiar-indice])').map(function (b) {
+        return b.getAttribute('data-copiar-precio');
+      });
+      var vistos = {}, acumulado = [];
+      codigos.forEach(function (c) {
+        if (vistos[c]) return;
+        vistos[c] = true;
+        acumulado = acumulado.concat(filasDeItem(c));
+      });
+      if (acumulado.length) copiarTexto(PRECIOS.aTSV(acumulado, true), tabla);
+      return;
+    }
+  });
+
   /* Agregar a la lista funciona igual en el catálogo y en las páginas
      estáticas de categoría, así que el manejador vive en el documento. */
   document.addEventListener('click', function (e) {
@@ -407,6 +620,7 @@
     }
 
     function badgeEstado(it) {
+      if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
       if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
       if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
       return '<span class="badge badge-estimado">Estimado</span>';
@@ -430,7 +644,8 @@
       }
 
       return '<tr>' +
-          '<td><span class="item-nombre">' + esc(it.nombre) + '</span>' +
+          '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
+                ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
               (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
           '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
@@ -438,7 +653,10 @@
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num">' + precioHtml + '</td>' +
           '<td>' + badgeEstado(it) + (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') + '</td>' +
-          '<td class="num">' +
+          '<td class="num acciones">' +
+            '<button class="btn-copiar" type="button" data-copiar-precio="' + esc(it.codigo) + '" ' +
+              'aria-label="Copiar ' + esc(it.nombre) + ' como fila de hoja de cálculo" ' +
+              'title="Copiar como fila para Excel">' + ICONO.copiar + '</button>' +
             (it.ref === null ? '' :
               '<button class="btn-add" type="button" data-add="' + esc(it.codigo) + '" data-nombre="' + esc(it.nombre) + '">' + ICONO.mas + '</button>') +
           '</td>' +
@@ -601,7 +819,7 @@
     var nItems = $('#n-items'), nCats = $('#n-cats'), nProv = $('#n-prov'), nPrecios = $('#n-precios');
     if (nItems) nItems.textContent = CAT.items.length;
     if (nCats) nCats.textContent = CAT.categorias.length;
-    if (nProv) nProv.textContent = PROV.lista.length;
+    if (nProv) nProv.textContent = PROV.lista.filter(function (p) { return !p.demo; }).length;
     if (nPrecios) nPrecios.textContent = PROV.lista.filter(function (p) { return p.precios; }).length;
   })();
 
@@ -615,29 +833,10 @@
     var cuerpo = $('#tabla-estatica');
     if (!cuerpo) return;
 
-    var celdas = $$('[data-precio-ref]', cuerpo);
     var chk = $('#f-itbis');
-
-    function pintarPrecios() {
-      var sinItbis = estado.sinItbis;
-      celdas.forEach(function (td) {
-        if (td.getAttribute('data-precio-ref') === '') return;
-        var falso = {itbis: td.getAttribute('data-precio-itbis') === '1'};
-        var pct = td.getAttribute('data-precio-pct') === '1';
-        var v = function (attr) {
-          var n = parseFloat(td.getAttribute(attr));
-          return isNaN(n) ? null : precioVista(n, falso, sinItbis);
-        };
-        var ref = v('data-precio-ref'), min = v('data-precio-min'), max = v('data-precio-max');
-        td.innerHTML = pct
-          ? '<span class="precio">' + fmt(ref) + ' %</span><span class="precio-rango">' + fmt(min) + ' – ' + fmt(max) + ' %</span>'
-          : '<span class="precio">' + rd(ref) + '</span><span class="precio-rango">' + rd(min) + ' – ' + rd(max) + '</span>';
-      });
-    }
-
     if (chk) chk.addEventListener('change', function () {
       estado.sinItbis = chk.checked;
-      pintarPrecios();
+      repintarPrecios(document);
       pintarCotizacion();
     });
 
@@ -663,7 +862,10 @@
 
     if (selCat) {
       var usadas = {};
-      PROV.lista.forEach(function (p) { p.cats.forEach(function (c) { usadas[c] = true; }); });
+      PROV.lista.forEach(function (p) {
+        if (p.demo) return;
+        p.cats.forEach(function (c) { usadas[c] = true; });
+      });
       selCat.innerHTML = '<option value="">Todas las categorías</option>' +
         CAT.categorias.filter(function (c) { return usadas[c.codigo]; })
           .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
@@ -722,6 +924,7 @@
     function pintar() {
       var q = normaliza(f.q).split(/\s+/).filter(Boolean);
       var lista = PROV.lista.filter(function (p) {
+        if (p.demo) return false;
         if (f.cat && p.cats.indexOf(f.cat) === -1) return false;
         if (f.zona && p.zonas.indexOf(f.zona) === -1 && p.zonas.indexOf('nacional') === -1) return false;
         if (f.tipo && p.tipo !== f.tipo) return false;
@@ -732,9 +935,10 @@
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
       });
 
+      var totalReales = PROV.lista.filter(function (p) { return !p.demo; }).length;
       if (meta) meta.innerHTML = '<span><strong>' + lista.length + '</strong> ' +
         (lista.length === 1 ? 'proveedor' : 'proveedores') +
-        (lista.length !== PROV.lista.length ? ' de ' + PROV.lista.length : '') + '</span>';
+        (lista.length !== totalReales ? ' de ' + totalReales : '') + '</span>';
 
       grid.innerHTML = lista.map(tarjeta).join('');
       if (vacio) vacio.hidden = lista.length > 0;
