@@ -21,7 +21,19 @@ assets/
     isotipo.png         Solo la marca — favicon y filigranas
 robots.txt
 sitemap.xml
+precios/                Subdominio precios.ingsliberato.com (ver precios/README.md)
 ```
+
+El repositorio contiene **dos sitios** que se publican por separado:
+
+| Sitio | Carpeta a publicar | Dominio |
+|---|---|---|
+| Sitio institucional | raíz del repositorio | `ingsliberato.com` |
+| Base de precios de construcción | `precios/` | `precios.ingsliberato.com` |
+
+La carpeta `precios/` es autocontenida (tiene sus propios `assets/`, `robots.txt` y
+`sitemap.xml`), así que se apunta el subdominio directamente a ella. Sus instrucciones
+de edición y despliegue están en [`precios/README.md`](precios/README.md).
 
 Las imágenes del logotipo se extrajeron del portafolio original en PDF y se les
 quitó el fondo blanco.
