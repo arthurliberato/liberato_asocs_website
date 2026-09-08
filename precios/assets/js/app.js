@@ -583,6 +583,184 @@
   pintarBarraFiltro();
   pintarPanelProveedores();
 
+
+  /* =========================================================
+     MATERIALES POR PROVEEDOR
+     Para cada proveedor, los ítems del catálogo que caen en las
+     categorías que cubre: el punto de partida para pedirle precios.
+     De ahí salen la hoja de cálculo en blanco y el texto del RFQ.
+     ========================================================= */
+
+  function itemsDeProveedor(p) {
+    return CAT.items.filter(function (it) {
+      return it.ref !== null && p.cats.indexOf(it.cat) !== -1;
+    });
+  }
+
+  function yaCotizo(it, nombre) {
+    return (it.cotizaciones || []).some(function (q) { return q.proveedor.nombre === nombre; });
+  }
+
+  var matEstado = {proveedor: null, cat: '', soloPendientes: true};
+
+  function crearPanelMateriales() {
+    if ($('#mat-panel')) return;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'cot-overlay';
+    overlay.id = 'mat-overlay';
+
+    var panel = document.createElement('aside');
+    panel.className = 'cot-panel cot-panel-ancho';
+    panel.id = 'mat-panel';
+    panel.setAttribute('aria-hidden', 'true');
+    panel.setAttribute('aria-label', 'Materiales a cotizar');
+    panel.innerHTML =
+      '<div class="cot-head">' +
+        '<div><h2 id="mat-titulo">Materiales a cotizar</h2>' +
+          '<p class="mat-sub" id="mat-sub"></p></div>' +
+        '<button class="cot-close" id="mat-close" type="button" aria-label="Cerrar">' + ICONO.equis + '</button>' +
+      '</div>' +
+      '<div class="mat-controles">' +
+        '<label class="visually-hidden" for="mat-cat">Categoría</label>' +
+        '<select class="select" id="mat-cat"></select>' +
+        '<label class="toggle-itbis"><input type="checkbox" id="mat-pendientes" checked> Solo los que aún no ha cotizado</label>' +
+      '</div>' +
+      '<div class="cot-body" id="mat-lista"></div>' +
+      '<div class="cot-foot">' +
+        '<div class="cot-total"><span class="k">Ítems seleccionados</span><span class="v" id="mat-n">0</span></div>' +
+        '<p class="cot-nota">Son los ítems del catálogo en las categorías que cubre este proveedor. ' +
+          'Es un punto de partida para el RFQ, no su inventario real: confirme con él qué maneja.</p>' +
+        '<div class="cot-acciones">' +
+          '<button class="btn btn-wa" id="mat-wa" type="button">' + ICONO.wa + ' Enviar por WhatsApp</button>' +
+          '<button class="btn btn-primary" id="mat-texto" type="button">Copiar solicitud</button>' +
+          '<button class="btn btn-ghost" id="mat-tsv" type="button">Copiar para Excel</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(panel);
+
+    function cerrar() {
+      panel.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
+    }
+    $('#mat-close').addEventListener('click', cerrar);
+    overlay.addEventListener('click', cerrar);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('is-open')) cerrar();
+    });
+
+    $('#mat-cat').addEventListener('change', function () {
+      matEstado.cat = this.value;
+      pintarMateriales();
+    });
+    $('#mat-pendientes').addEventListener('change', function () {
+      matEstado.soloPendientes = this.checked;
+      pintarMateriales();
+    });
+
+    $('#mat-tsv').addEventListener('click', function () {
+      var items = materialesVisibles();
+      if (!items.length) return;
+      copiarTexto(PRECIOS.aTSV(
+        [PRECIOS.ENCABEZADOS_RFQ].concat(PRECIOS.filasRFQ(items, matEstado.proveedor.nombre, nombreCat)),
+        false), this);
+    });
+    $('#mat-texto').addEventListener('click', function () {
+      var items = materialesVisibles();
+      if (!items.length) return;
+      copiarTexto(PRECIOS.textoRFQ(items, matEstado.proveedor.nombre, nombreCat), this);
+    });
+    $('#mat-wa').addEventListener('click', function () {
+      var items = materialesVisibles();
+      if (!items.length) return;
+      var p = matEstado.proveedor;
+      var texto = PRECIOS.textoRFQ(items, p.nombre, nombreCat);
+      var url = p.wa
+        ? 'https://wa.me/' + p.wa + '?text=' + encodeURIComponent(texto)
+        : 'https://wa.me/?text=' + encodeURIComponent(texto);
+      window.open(url, '_blank', 'noopener');
+    });
+  }
+
+  function materialesVisibles() {
+    var p = matEstado.proveedor;
+    if (!p) return [];
+    return itemsDeProveedor(p).filter(function (it) {
+      if (matEstado.cat && it.cat !== matEstado.cat) return false;
+      if (matEstado.soloPendientes && yaCotizo(it, p.nombre)) return false;
+      return true;
+    });
+  }
+
+  function pintarMateriales() {
+    var lista = $('#mat-lista');
+    if (!lista || !matEstado.proveedor) return;
+    var p = matEstado.proveedor;
+    var items = materialesVisibles();
+
+    var porCat = {};
+    items.forEach(function (it) { (porCat[it.cat] = porCat[it.cat] || []).push(it); });
+
+    lista.innerHTML = items.length
+      ? Object.keys(porCat).map(function (c) {
+          return '<div class="mat-grupo">' +
+              '<p class="detalle-titulo">' + esc(nombreCat(c)) + ' · ' + porCat[c].length + '</p>' +
+              porCat[c].map(function (it) {
+                return '<div class="mat-item">' +
+                    '<span class="mat-item-n">' + esc(it.nombre) +
+                      (yaCotizo(it, p.nombre) ? ' <span class="badge badge-verificado">ya cotizó</span>' : '') + '</span>' +
+                    '<small>' + esc(it.codigo) + ' · ' + esc(it.unidad) + (it.esp ? ' · ' + esc(it.esp) : '') + '</small>' +
+                  '</div>';
+              }).join('') +
+            '</div>';
+        }).join('')
+      : '<p class="cot-vacio">No queda ningún ítem por cotizar con este filtro.</p>';
+
+    var n = $('#mat-n');
+    if (n) n.textContent = items.length;
+
+    var wa = $('#mat-wa');
+    if (wa) {
+      wa.hidden = false;
+      wa.lastChild.textContent = p.wa ? ' Enviar por WhatsApp' : ' Abrir en WhatsApp';
+    }
+  }
+
+  function abrirMateriales(nombre) {
+    var p = PROV.lista.filter(function (x) { return x.nombre === nombre; })[0];
+    if (!p) return;
+    crearPanelMateriales();
+    matEstado.proveedor = p;
+    matEstado.cat = '';
+    matEstado.soloPendientes = true;
+
+    $('#mat-titulo').textContent = 'Materiales a cotizar';
+    $('#mat-sub').textContent = p.nombre;
+    $('#mat-pendientes').checked = true;
+
+    var usadas = {};
+    itemsDeProveedor(p).forEach(function (it) { usadas[it.cat] = true; });
+    $('#mat-cat').innerHTML = '<option value="">Todas sus categorías</option>' +
+      CAT.categorias.filter(function (c) { return usadas[c.codigo]; })
+        .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
+        .join('');
+    $('#mat-cat').value = '';
+
+    pintarMateriales();
+    $('#mat-panel').classList.add('is-open');
+    $('#mat-overlay').classList.add('is-open');
+    $('#mat-panel').setAttribute('aria-hidden', 'false');
+    $('#mat-close').focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-materiales]');
+    if (b) abrirMateriales(b.getAttribute('data-materiales'));
+  });
+
   /* =========================================================
      COPIAR AL PORTAPAPELES
      Todo se copia como TSV: es el formato que Excel, Google Sheets
@@ -1203,9 +1381,14 @@
           '<div class="prov-contacto">' +
             (contactos.length ? contactos.join('') : '<span class="prov-sincontacto">Sin datos de contacto verificados públicamente.</span>') +
           '</div>' +
-          '<button class="btn-elegir' + (elegido ? ' is-elegido' : '') + '" type="button" data-prov-toggle="' + esc(p.nombre) + '">' +
-            (elegido ? ICONO.check + ' Trabajo con este proveedor' : ICONO.mas + ' Trabajar solo con este') +
-          '</button>' +
+          '<div class="prov-acciones">' +
+            '<button class="btn-elegir' + (elegido ? ' is-elegido' : '') + '" type="button" data-prov-toggle="' + esc(p.nombre) + '">' +
+              (elegido ? ICONO.check + ' Trabajo con este' : ICONO.mas + ' Trabajar solo con este') +
+            '</button>' +
+            '<button class="btn-elegir" type="button" data-materiales="' + esc(p.nombre) + '">' +
+              ICONO.lista + ' Materiales a cotizar (' + itemsDeProveedor(p).length + ')' +
+            '</button>' +
+          '</div>' +
         '</article>';
     }
 

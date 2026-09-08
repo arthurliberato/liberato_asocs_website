@@ -381,6 +381,67 @@
       '</div>';
   }
 
+  /* ---------------------------------------------------------
+     Solicitud de cotización (RFQ) a un proveedor
+
+     Plantilla estandarizada con código de ítem, especificación y
+     unidad, y con las tres preguntas que siempre hay que hacer:
+     precio con y sin ITBIS, validez de la cotización y tramos por
+     volumen. Es la recomendación del documento de proveedores.
+     --------------------------------------------------------- */
+
+  var ENCABEZADOS_RFQ = [
+    'Código', 'Ítem', 'Especificación', 'Categoría', 'Unidad', 'Proveedor',
+    'Cantidad', 'Precio cotizado', 'Incluye ITBIS', 'Fecha de cotización', 'Validez', 'Notas'
+  ];
+
+  /* Hoja en blanco lista para que el proveedor la devuelva llena: las
+     columnas de precio van vacías a propósito. */
+  function filasRFQ(items, proveedor, nombreCat) {
+    nombreCat = nombreCat || function (c) { return c; };
+    return items.map(function (it) {
+      return [
+        it.codigo, it.nombre, it.esp, nombreCat(it.cat), it.unidad, proveedor,
+        '', '', '', '', '', ''
+      ].map(limpiar);
+    });
+  }
+
+  function textoRFQ(items, proveedor, nombreCat) {
+    nombreCat = nombreCat || function (c) { return c; };
+    var lineas = [
+      'Solicitud de cotización — Ingenieros Liberato & Asociados',
+      'Proveedor: ' + proveedor,
+      '',
+      'Buenos días. Favor cotizarnos los siguientes ítems:',
+      ''
+    ];
+
+    var catActual = '';
+    var n = 0;
+    items.forEach(function (it) {
+      var cat = nombreCat(it.cat);
+      if (cat !== catActual) {
+        catActual = cat;
+        lineas.push('— ' + cat + ' —');
+      }
+      n += 1;
+      lineas.push(n + '. [' + it.codigo + '] ' + it.nombre + ' — unidad: ' + it.unidad +
+        (it.esp ? '\n   ' + it.esp : ''));
+    });
+
+    lineas.push('');
+    lineas.push('Agradecemos indicar en la cotización:');
+    lineas.push('- Precio con y sin ITBIS');
+    lineas.push('- Validez de la cotización');
+    lineas.push('- Disponibilidad y tiempo de entrega');
+    lineas.push('- Tramos de descuento por volumen, si aplican');
+    lineas.push('');
+    lineas.push('Quedamos atentos. Gracias.');
+    lineas.push('Ingenieros Liberato & Asociados · arthur@ingsliberato.com · +1 (829) 793-9892');
+    return lineas.join('\n');
+  }
+
   global.PRECIOS = {
     registros: registros,
     aplicar: aplicar,
@@ -389,7 +450,10 @@
     filasItem: filasItem,
     aTSV: aTSV,
     num: num,
-    detalleHTML: detalleHTML
+    detalleHTML: detalleHTML,
+    ENCABEZADOS_RFQ: ENCABEZADOS_RFQ,
+    filasRFQ: filasRFQ,
+    textoRFQ: textoRFQ
   };
 
 })(typeof window !== 'undefined' ? window : globalThis);
