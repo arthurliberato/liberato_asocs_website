@@ -136,28 +136,70 @@
       });
     });
 
+    /* Se guarda la estimación original de cada ítem antes de tocarla, para
+       poder volver a ella cuando un filtro deje al ítem sin cotizaciones. */
     CAT.items.forEach(function (item) {
       item.cotizaciones.sort(function (a, b) { return a.precioNormalizado - b.precioNormalizado; });
-      var validas = item.cotizaciones.filter(function (q) { return q.cuenta; });
-      if (!validas.length) return;
+      item.base = {ref: item.ref, min: item.min, max: item.max,
+                   estado: item.estado, fuente: item.fuente, fecha: item.fecha};
+    });
+
+    recalcular(CAT, null);
+
+    return problemas;
+  }
+
+  /* Recalcula el precio de referencia de cada ítem.
+
+     `seleccion` es una lista de nombres de proveedores: cuando trae algo,
+     solo esas cotizaciones cuentan, que es lo que permite a un visitante
+     trabajar únicamente con los proveedores con los que ya tiene relación.
+     Con null o lista vacía, cuentan todas.
+
+     Un ítem sin cotizaciones de los proveedores elegidos vuelve a su
+     estimación original en vez de quedarse sin precio. */
+  function recalcular(CAT, seleccion) {
+    var filtro = seleccion && seleccion.length ? seleccion : null;
+
+    CAT.items.forEach(function (item) {
+      if (!item.base) return;
+
+      var validas = (item.cotizaciones || []).filter(function (q) {
+        return q.cuenta && (!filtro || filtro.indexOf(q.proveedor.nombre) !== -1);
+      });
+
+      if (!validas.length) {
+        item.ref = item.base.ref;
+        item.min = item.base.min;
+        item.max = item.base.max;
+        item.estado = item.base.estado;
+        item.fuente = item.base.fuente;
+        item.fecha = item.base.fecha;
+        item.filtrado = false;
+        item.sinCotizacionDelFiltro = !!filtro;
+        return;
+      }
 
       var valores = validas.map(function (q) { return q.precioNormalizado; });
       item.ref = Math.round(mediana(valores) * 100) / 100;
       item.min = Math.round(Math.min.apply(null, valores) * 100) / 100;
       item.max = Math.round(Math.max.apply(null, valores) * 100) / 100;
+
       /* Un dato inventado no se presenta como comprobado: si todas las
          cotizaciones que cuentan vienen del modo demostración, el ítem
          queda marcado como «Demostración», no como «Verificado». */
       var soloDemo = validas.every(function (q) { return q.proveedor.demo; });
       item.estado = soloDemo ? 'demo' : 'verificado';
       item.fuente = validas.length +
-        (validas.length === 1 ? ' cotización' : ' cotizaciones') +
-        (soloDemo ? ' de demostración (datos ficticios)' : ' de proveedores');
-      var fechas = validas.map(function (q) { return q.fecha; }).filter(Boolean).sort();
-      if (fechas.length) item.fecha = fechas[fechas.length - 1];
-    });
+        (validas.length === 1 ? ' cotización ' : ' cotizaciones ') +
+        (filtro ? 'de sus proveedores' : 'de proveedores') +
+        (soloDemo ? ' · datos de demostración' : '');
 
-    return problemas;
+      var fechas = validas.map(function (q) { return q.fecha; }).filter(Boolean).sort();
+      item.fecha = fechas.length ? fechas[fechas.length - 1] : item.base.fecha;
+      item.filtrado = !!filtro;
+      item.sinCotizacionDelFiltro = false;
+    });
   }
 
   /* ---------------------------------------------------------
@@ -201,7 +243,7 @@
 
     filas.push([
       item.codigo, item.nombre, item.esp, nombreCat(item.cat), item.unidad,
-      'Referencia del mercado',
+      item.filtrado ? 'Referencia de sus proveedores' : 'Referencia del mercado',
       num(precio(item.ref, item)), num(precio(item.min, item)), num(precio(item.max, item)),
       item.unidad === '%' ? '%' : 'DOP',
       itbisTexto(item.itbis), ESTADOS[item.estado] || item.estado, item.fecha, item.fuente
@@ -268,11 +310,14 @@
     opciones = opciones || {};
     var nombreCat = opciones.nombreCat || function (c) { return c; };
     var proveedoresCategoria = opciones.proveedoresCategoria || [];
+    var seleccion = opciones.seleccion || [];
 
     var filas = (item.cotizaciones || []).map(function (q, n) {
-      return '<tr' + (q.cuenta ? '' : ' class="cot-fuera"') + '>' +
+      var mia = seleccion.indexOf(q.proveedor.nombre) !== -1;
+      return '<tr class="' + (q.cuenta ? '' : 'cot-fuera ') + (mia ? 'cot-mia' : '') + '">' +
           '<td>' + esc(q.proveedor.nombre) +
             (q.proveedor.demo ? ' <span class="badge badge-demo">demo</span>' : '') +
+            (mia ? ' <span class="badge badge-filtrado">suyo</span>' : '') +
             (q.cuenta ? '' : '<span class="item-esp">No entra en el cálculo: ' +
               (q.proveedor.publico ? 'la unidad no coincide con la del ítem' : 'vende solo vía distribución') + '</span>') +
             (q.nota ? '<span class="item-esp">' + esc(q.nota) + '</span>' : '') + '</td>' +
@@ -319,7 +364,7 @@
           '<th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead>' +
           '<tbody>' +
             '<tr class="cot-referencia">' +
-              '<td><strong>Referencia del mercado</strong>' +
+              '<td><strong>' + (item.filtrado ? 'Referencia de sus proveedores' : 'Referencia del mercado') + '</strong>' +
                 '<span class="item-esp">' + esc(item.fuente) + '</span></td>' +
               '<td class="num">' + celdaPrecio(item.ref, item,
                   item.min === null ? '' : '<span class="precio-rango" data-precio-min="' + item.min +
@@ -339,6 +384,7 @@
   global.PRECIOS = {
     registros: registros,
     aplicar: aplicar,
+    recalcular: recalcular,
     ENCABEZADOS: ENCABEZADOS,
     filasItem: filasItem,
     aTSV: aTSV,
