@@ -504,6 +504,13 @@ ${JSON.stringify(jsonld, null, 2)}
 
 ${header('catalogo')}
 
+<aside class="franja-negocio">
+  <div class="shell franja-negocio-inner">
+    <p>Realizamos <strong>presupuestos para tus proyectos y licitaciones.</strong></p>
+    <a class="btn franja-cta" href="${PRINCIPAL}/#contacto">Contáctanos</a>
+  </div>
+</aside>
+
 <main id="main">
 ${cuerpo}
 </main>
