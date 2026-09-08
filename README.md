@@ -22,6 +22,7 @@ assets/
 robots.txt
 sitemap.xml
 precios/                Subdominio precios.ingsliberato.com (ver precios/README.md)
+herramientas/           Generador de las páginas de categoría (no se publica)
 ```
 
 El repositorio contiene **dos sitios** que se publican por separado:
@@ -34,6 +35,10 @@ El repositorio contiene **dos sitios** que se publican por separado:
 La carpeta `precios/` es autocontenida (tiene sus propios `assets/`, `robots.txt` y
 `sitemap.xml`), así que se apunta el subdominio directamente a ella. Sus instrucciones
 de edición y despliegue están en [`precios/README.md`](precios/README.md).
+
+Las 27 páginas de categoría del subdominio se generan con
+`node herramientas/generar-categorias.js`; la carpeta `herramientas/` es solo de
+construcción y no forma parte de ninguno de los dos sitios publicados.
 
 Las imágenes del logotipo se extrajeron del portafolio original en PDF y se les
 quitó el fondo blanco.

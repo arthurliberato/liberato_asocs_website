@@ -206,6 +206,12 @@ table{border-collapse:collapse;width:100%}
 .aviso strong{color:#5f3a06}
 .aviso a{color:#7a4d10}
 
+/* ---------- migas de pan ---------- */
+.miga{font-size:.85rem;color:var(--ink-mute);margin-bottom:1.4rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.miga a{color:var(--navy-400);text-decoration:none}
+.miga a:hover{color:var(--navy);text-decoration:underline}
+.miga span[aria-hidden]{color:var(--line)}
+
 /* =========================================================
    BUSCADOR + FILTROS (catálogo)
    ========================================================= */

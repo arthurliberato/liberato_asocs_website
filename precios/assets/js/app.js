@@ -51,6 +51,13 @@
 
   function nombreCat(codigo) { return catPorCodigo[codigo] ? catPorCodigo[codigo].nombre : codigo; }
 
+  /* Cada categoría tiene su página estática; es a donde deben apuntar los
+     enlaces internos, no a catalogo.html?cat=… */
+  function urlCat(codigo) {
+    var c = catPorCodigo[codigo];
+    return c && c.slug ? c.slug + '.html' : 'catalogo.html?cat=' + encodeURIComponent(codigo);
+  }
+
   /* El orden natural del catálogo es el de los grupos (MAT → MOS → EQU),
      no el alfabético del código. */
   var ordenGrupo = {};
@@ -275,6 +282,15 @@
     pintarCotizacion();
   })();
 
+  /* Agregar a la lista funciona igual en el catálogo y en las páginas
+     estáticas de categoría, así que el manejador vive en el documento. */
+  document.addEventListener('click', function (e) {
+    var add = e.target.closest('[data-add]');
+    if (!add) return;
+    agregarACotizacion(add.getAttribute('data-add'));
+    sincronizarBotonesTabla();
+  });
+
   /* =========================================================
      CATÁLOGO: buscador, filtros y tabla
      ========================================================= */
@@ -418,7 +434,7 @@
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
               (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
           '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
-              '<a class="item-esp" style="text-decoration:none" href="?cat=' + esc(it.cat) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
+              '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num">' + precioHtml + '</td>' +
           '<td>' + badgeEstado(it) + (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') + '</td>' +
@@ -507,11 +523,6 @@
         pintar();
         return;
       }
-      var add = e.target.closest('[data-add]');
-      if (add) {
-        agregarACotizacion(add.getAttribute('data-add'));
-        sincronizarBotonesTabla();
-      }
     });
 
     /* marcar chips que vengan en la URL */
@@ -533,11 +544,11 @@
 
   (function portada() {
     var gridCats = $('#grid-categorias');
-    if (gridCats) {
+    if (gridCats && !gridCats.children.length) {
       var conteo = {};
       CAT.items.forEach(function (i) { conteo[i.cat] = (conteo[i.cat] || 0) + 1; });
       gridCats.innerHTML = CAT.categorias.map(function (c) {
-        return '<a class="card" href="catalogo.html?cat=' + esc(c.codigo) + '">' +
+        return '<a class="card" href="' + esc(urlCat(c.codigo)) + '">' +
             '<span class="card-cod">' + esc(c.codigo) + '</span>' +
             '<h3>' + esc(c.nombre) + '</h3>' +
             '<p>' + esc(c.desc) + '</p>' +
@@ -547,7 +558,7 @@
     }
 
     var destacados = $('#destacados');
-    if (destacados) {
+    if (destacados && !destacados.children.length) {
       var codigos = [
         'MAT-02-001', 'MAT-04-002', 'MAT-05-003', 'MAT-03-002', 'MAT-01-001',
         'MAT-01-004', 'MAT-06-005', 'MAT-07-002', 'MOS-01-002', 'MOS-01-003'
@@ -592,6 +603,45 @@
     if (nCats) nCats.textContent = CAT.categorias.length;
     if (nProv) nProv.textContent = PROV.lista.length;
     if (nPrecios) nPrecios.textContent = PROV.lista.filter(function (p) { return p.precios; }).length;
+  })();
+
+  /* =========================================================
+     PÁGINAS ESTÁTICAS DE CATEGORÍA
+     La tabla llega renderizada desde el generador; aquí solo se
+     recalculan los montos cuando se pide verlos sin ITBIS.
+     ========================================================= */
+
+  (function paginaCategoria() {
+    var cuerpo = $('#tabla-estatica');
+    if (!cuerpo) return;
+
+    var celdas = $$('[data-precio-ref]', cuerpo);
+    var chk = $('#f-itbis');
+
+    function pintarPrecios() {
+      var sinItbis = estado.sinItbis;
+      celdas.forEach(function (td) {
+        if (td.getAttribute('data-precio-ref') === '') return;
+        var falso = {itbis: td.getAttribute('data-precio-itbis') === '1'};
+        var pct = td.getAttribute('data-precio-pct') === '1';
+        var v = function (attr) {
+          var n = parseFloat(td.getAttribute(attr));
+          return isNaN(n) ? null : precioVista(n, falso, sinItbis);
+        };
+        var ref = v('data-precio-ref'), min = v('data-precio-min'), max = v('data-precio-max');
+        td.innerHTML = pct
+          ? '<span class="precio">' + fmt(ref) + ' %</span><span class="precio-rango">' + fmt(min) + ' – ' + fmt(max) + ' %</span>'
+          : '<span class="precio">' + rd(ref) + '</span><span class="precio-rango">' + rd(min) + ' – ' + rd(max) + '</span>';
+      });
+    }
+
+    if (chk) chk.addEventListener('change', function () {
+      estado.sinItbis = chk.checked;
+      pintarPrecios();
+      pintarCotizacion();
+    });
+
+    sincronizarBotonesTabla();
   })();
 
   /* =========================================================

@@ -21,228 +21,138 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-01</loc>
+    <loc>https://precios.ingsliberato.com/precio-arena-grava-agregados.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-02</loc>
+    <loc>https://precios.ingsliberato.com/precio-cemento-morteros-aditivos.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-03</loc>
+    <loc>https://precios.ingsliberato.com/precio-hormigon-premezclado.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-04</loc>
+    <loc>https://precios.ingsliberato.com/precio-varilla-acero.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-05</loc>
+    <loc>https://precios.ingsliberato.com/precio-blocks-prefabricados.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-06</loc>
+    <loc>https://precios.ingsliberato.com/precio-madera-plywood-encofrado.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-07</loc>
+    <loc>https://precios.ingsliberato.com/precio-zinc-aluzinc-techos.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-08</loc>
+    <loc>https://precios.ingsliberato.com/precio-ceramica-porcelanato-pisos.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-09</loc>
+    <loc>https://precios.ingsliberato.com/precio-plomeria-sanitarios.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-10</loc>
+    <loc>https://precios.ingsliberato.com/precio-materiales-electricos.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-11</loc>
+    <loc>https://precios.ingsliberato.com/precio-puertas-ventanas-cristales.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-12</loc>
+    <loc>https://precios.ingsliberato.com/precio-pintura.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-13</loc>
+    <loc>https://precios.ingsliberato.com/precio-plafones-drywall.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-14</loc>
+    <loc>https://precios.ingsliberato.com/precio-ferreteria-fijaciones.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-15</loc>
+    <loc>https://precios.ingsliberato.com/precio-aire-acondicionado-ventilacion.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-16</loc>
+    <loc>https://precios.ingsliberato.com/precio-camaras-cctv-sistemas-especiales.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-17</loc>
+    <loc>https://precios.ingsliberato.com/precio-equipos-seguridad-industrial.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MAT-18</loc>
+    <loc>https://precios.ingsliberato.com/precio-grama-paisajismo-riego.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MOS-01</loc>
+    <loc>https://precios.ingsliberato.com/precio-jornal-mano-de-obra.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MOS-02</loc>
+    <loc>https://precios.ingsliberato.com/precio-mano-de-obra-por-partida.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MOS-03</loc>
+    <loc>https://precios.ingsliberato.com/precio-honorarios-diseno-supervision.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MOS-04</loc>
+    <loc>https://precios.ingsliberato.com/costo-licencias-permisos-construccion.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=MOS-05</loc>
+    <loc>https://precios.ingsliberato.com/precio-demolicion-movimiento-tierra-bote.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=EQU-01</loc>
+    <loc>https://precios.ingsliberato.com/precio-alquiler-maquinaria-pesada.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=EQU-02</loc>
+    <loc>https://precios.ingsliberato.com/precio-alquiler-equipos-construccion.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=EQU-03</loc>
+    <loc>https://precios.ingsliberato.com/precio-alquiler-andamios-formaleta.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/catalogo.html?cat=EQU-04</loc>
+    <loc>https://precios.ingsliberato.com/precio-herramientas-construccion.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-01</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-02</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-03</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-04</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-05</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-06</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-07</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-08</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-09</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-10</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-11</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-12</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-13</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-14</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-15</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-16</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-17</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://precios.ingsliberato.com/proveedores.html?cat=MAT-18</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
