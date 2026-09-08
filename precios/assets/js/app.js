@@ -291,6 +291,29 @@
   })();
 
 
+
+  /* =========================================================
+     AVISO DE MODO DEMOSTRACIÓN
+     Mientras haya datos ficticios cargados, todas las páginas lo
+     dicen arriba del todo. Se apaga solo al desactivar datos-demo.js.
+     ========================================================= */
+
+  (function avisoDemo() {
+    if (!global_DEMO() || !document.body) return;
+    var barra = document.createElement('div');
+    barra.className = 'barra-demo';
+    barra.setAttribute('role', 'status');
+    barra.innerHTML = '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
+      'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
+      'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
+      'cotizado todavía y ninguno de estos precios es una oferta.';
+    document.body.insertBefore(barra, document.body.firstChild);
+  })();
+
+  function global_DEMO() {
+    return window.DEMO && window.DEMO.activo;
+  }
+
   /* =========================================================
      COPIAR AL PORTAPAPELES
      Todo se copia como TSV: es el formato que Excel, Google Sheets
@@ -597,6 +620,7 @@
     }
 
     function badgeEstado(it) {
+      if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
       if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
       if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
       return '<span class="badge badge-estimado">Estimado</span>';
@@ -795,7 +819,7 @@
     var nItems = $('#n-items'), nCats = $('#n-cats'), nProv = $('#n-prov'), nPrecios = $('#n-precios');
     if (nItems) nItems.textContent = CAT.items.length;
     if (nCats) nCats.textContent = CAT.categorias.length;
-    if (nProv) nProv.textContent = PROV.lista.length;
+    if (nProv) nProv.textContent = PROV.lista.filter(function (p) { return !p.demo; }).length;
     if (nPrecios) nPrecios.textContent = PROV.lista.filter(function (p) { return p.precios; }).length;
   })();
 
@@ -838,7 +862,10 @@
 
     if (selCat) {
       var usadas = {};
-      PROV.lista.forEach(function (p) { p.cats.forEach(function (c) { usadas[c] = true; }); });
+      PROV.lista.forEach(function (p) {
+        if (p.demo) return;
+        p.cats.forEach(function (c) { usadas[c] = true; });
+      });
       selCat.innerHTML = '<option value="">Todas las categorías</option>' +
         CAT.categorias.filter(function (c) { return usadas[c.codigo]; })
           .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
@@ -897,6 +924,7 @@
     function pintar() {
       var q = normaliza(f.q).split(/\s+/).filter(Boolean);
       var lista = PROV.lista.filter(function (p) {
+        if (p.demo) return false;
         if (f.cat && p.cats.indexOf(f.cat) === -1) return false;
         if (f.zona && p.zonas.indexOf(f.zona) === -1 && p.zonas.indexOf('nacional') === -1) return false;
         if (f.tipo && p.tipo !== f.tipo) return false;
@@ -907,9 +935,10 @@
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
       });
 
+      var totalReales = PROV.lista.filter(function (p) { return !p.demo; }).length;
       if (meta) meta.innerHTML = '<span><strong>' + lista.length + '</strong> ' +
         (lista.length === 1 ? 'proveedor' : 'proveedores') +
-        (lista.length !== PROV.lista.length ? ' de ' + PROV.lista.length : '') + '</span>';
+        (lista.length !== totalReales ? ' de ' + totalReales : '') + '</span>';
 
       grid.innerHTML = lista.map(tarjeta).join('');
       if (vacio) vacio.hidden = lista.length > 0;

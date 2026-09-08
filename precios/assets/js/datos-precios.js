@@ -145,8 +145,14 @@
       item.ref = Math.round(mediana(valores) * 100) / 100;
       item.min = Math.round(Math.min.apply(null, valores) * 100) / 100;
       item.max = Math.round(Math.max.apply(null, valores) * 100) / 100;
-      item.estado = 'verificado';
-      item.fuente = validas.length + (validas.length === 1 ? ' cotización de proveedor' : ' cotizaciones de proveedores');
+      /* Un dato inventado no se presenta como comprobado: si todas las
+         cotizaciones que cuentan vienen del modo demostración, el ítem
+         queda marcado como «Demostración», no como «Verificado». */
+      var soloDemo = validas.every(function (q) { return q.proveedor.demo; });
+      item.estado = soloDemo ? 'demo' : 'verificado';
+      item.fuente = validas.length +
+        (validas.length === 1 ? ' cotización' : ' cotizaciones') +
+        (soloDemo ? ' de demostración (datos ficticios)' : ' de proveedores');
       var fechas = validas.map(function (q) { return q.fecha; }).filter(Boolean).sort();
       if (fechas.length) item.fecha = fechas[fechas.length - 1];
     });
@@ -177,7 +183,7 @@
     return String(s === null || s === undefined ? '' : s).replace(/[\t\r\n]+/g, ' ').trim();
   }
 
-  var ESTADOS = {estimado: 'Estimado', verificado: 'Verificado', tarifario: 'Tarifario oficial'};
+  var ESTADOS = {estimado: 'Estimado', verificado: 'Verificado', tarifario: 'Tarifario oficial', demo: 'Demostración'};
 
   /* Devuelve las filas de un ítem: la de referencia del sitio y una por
      cada cotización registrada. `precio` recibe una función que aplica el
@@ -208,7 +214,8 @@
         num(precio(q.precioNormalizado, item)), '', '',
         item.unidad === '%' ? '%' : 'DOP',
         itbisTexto(item.itbis),
-        q.cuenta ? 'Cotización' : 'Cotización (fuera del cálculo)',
+        (q.proveedor.demo ? 'Cotización de demostración' : 'Cotización') +
+          (q.cuenta ? '' : ' (fuera del cálculo)'),
         q.fecha, q.fuente
       ].map(limpiar));
     });
@@ -265,6 +272,7 @@
     var filas = (item.cotizaciones || []).map(function (q, n) {
       return '<tr' + (q.cuenta ? '' : ' class="cot-fuera"') + '>' +
           '<td>' + esc(q.proveedor.nombre) +
+            (q.proveedor.demo ? ' <span class="badge badge-demo">demo</span>' : '') +
             (q.cuenta ? '' : '<span class="item-esp">No entra en el cálculo: ' +
               (q.proveedor.publico ? 'la unidad no coincide con la del ítem' : 'vende solo vía distribución') + '</span>') +
             (q.nota ? '<span class="item-esp">' + esc(q.nota) + '</span>' : '') + '</td>' +
@@ -284,6 +292,12 @@
               : '<span class="tag">' + esc(p.nombre) + '</span>';
           }).join('') +
         '</div></div>'
+      : '';
+
+    var hayDemo = (item.cotizaciones || []).some(function (q) { return q.proveedor.demo; });
+    var avisoDemo = hayDemo
+      ? '<p class="detalle-demo">Las cotizaciones de esta ficha son <strong>ficticias</strong>, ' +
+        'cargadas para mostrar cómo funcionará el sitio. Ningún proveedor real ha cotizado todavía.</p>'
       : '';
 
     var vacio = !filas
@@ -311,12 +325,14 @@
                   item.min === null ? '' : '<span class="precio-rango" data-precio-min="' + item.min +
                   '" data-precio-max="' + item.max + '">' + moneda(item.min) + ' – ' + moneda(item.max) + '</span>') + '</td>' +
               '<td>' + esc(item.fecha) + '</td>' +
-              '<td>' + (item.estado === 'verificado' ? 'Cotizaciones de proveedores' : 'Estimación del sitio') + '</td>' +
+              '<td>' + (item.estado === 'verificado' ? 'Cotizaciones de proveedores'
+                        : item.estado === 'demo' ? 'Cotizaciones ficticias'
+                        : 'Estimación del sitio') + '</td>' +
               '<td class="num">' + botonCopiar(item.codigo, null, 'referencia de mercado') + '</td>' +
             '</tr>' + filas +
           '</tbody>' +
         '</table></div>' +
-        vacio + pendientes +
+        avisoDemo + vacio + pendientes +
       '</div>';
   }
 

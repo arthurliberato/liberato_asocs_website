@@ -32,6 +32,7 @@ global.window = {};
 require(path.join(DESTINO, 'assets/js/datos-catalogo.js'));
 require(path.join(DESTINO, 'assets/js/datos-proveedores.js'));
 require(path.join(DESTINO, 'assets/js/datos-precios.js'));
+require(path.join(DESTINO, 'assets/js/datos-demo.js'));
 const CAT = global.window.CATALOGO;
 const PROV = global.window.PROVEEDORES;
 const PRECIOS = global.window.PRECIOS;
@@ -197,6 +198,7 @@ const AVISO = `<div class="aviso">
 /* ---------- fila de la tabla ---------- */
 
 function badgeEstado(it) {
+  if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
   if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
   if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
   return '<span class="badge badge-estimado">Estimado</span>';
@@ -241,7 +243,7 @@ function fila(it) {
 /* ---------- bloques de la página ---------- */
 
 function bloqueProveedores(codigo) {
-  const lista = PROV.lista.filter((p) => p.cats.indexOf(codigo) !== -1);
+  const lista = PROV.lista.filter((p) => !p.demo && p.cats.indexOf(codigo) !== -1);
   if (!lista.length) return '';
 
   const zonaNombre = (c) => (PROV.zonas.filter((z) => z.codigo === c)[0] || {}).nombre || c;
@@ -513,6 +515,7 @@ ${COTIZACION}
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
 <script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>
 </html>

@@ -26,6 +26,7 @@ precios/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
       datos-proveedores.js Directorio de proveedores
       datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
+      datos-demo.js       Datos ficticios de demostración       ← temporal, se apaga
       app.js              Buscador, filtros y lista de cotización
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
@@ -201,6 +202,47 @@ proveedores de esa categoría **pendientes de cotizar**, con enlace directo a su
 WhatsApp. Sirve como lista de trabajo para levantar las primeras cotizaciones.
 
 ---
+
+## Modo demostración (temporal)
+
+`assets/js/datos-demo.js` carga **8 proveedores y 31 cotizaciones ficticias** sobre 14
+ítems, para poder ver el sitio funcionando como funcionará cuando haya cotizaciones
+reales: la ficha por proveedor llena, el recálculo de la referencia, la normalización de
+ITBIS y el copiado a Excel con varias filas.
+
+**Nada de eso es real.** Todos los proveedores llevan `(demo)` en el nombre y una etiqueta
+morada, hay una barra de aviso en todas las páginas, y los ítems afectados quedan marcados
+como **Demostración**, nunca como *Verificado*: un dato inventado no se presenta como
+comprobado.
+
+Los proveedores ficticios **no aparecen** en el directorio ni en los contadores de la
+portada, que siguen mostrando las 79 empresas reales.
+
+### Qué demuestra cada caso
+
+| Ítem | Qué muestra |
+|---|---|
+| Cemento (`MAT-02-001`) | Tres cotizaciones que promedian, una de ellas cotizada **sin ITBIS** que se normaliza antes de comparar, más un fabricante de canal cerrado que se muestra pero **no** entra en el cálculo |
+| Arena lavada (`MAT-01-001`) | Una cotización **por viaje** cuando el ítem se mide en m³: se muestra marcada y queda fuera del cálculo por no coincidir la unidad |
+| Colocación de bloques (`MOS-02-001`) | Mano de obra, que no lleva ITBIS |
+| Aluzinc (`MAT-07-002`) | Un ítem con una sola cotización |
+
+### Cómo apagarlo
+
+Abrir `assets/js/datos-demo.js`, poner `ACTIVO` en `false`, y regenerar:
+
+```bash
+node herramientas/generar-categorias.js
+```
+
+Todo vuelve a su estado real de inmediato: los proveedores ficticios desaparecen, los 14
+ítems regresan a su precio estimado y la barra de aviso deja de mostrarse. Para eliminarlo
+del todo, borrar el archivo y su etiqueta `<script>` del generador y de las cuatro páginas
+escritas a mano.
+
+> **Antes de publicar el sitio de cara al público, apáguelo.** Sirve para revisar y para
+> enseñarle a alguien cómo va a funcionar, no para estar en producción: aunque todo esté
+> marcado, son precios inventados en una página de precios.
 
 ## Copiar a Excel
 

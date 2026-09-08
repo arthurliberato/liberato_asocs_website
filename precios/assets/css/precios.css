@@ -270,6 +270,7 @@ table{border-collapse:collapse;width:100%}
 .badge-verificado{background:var(--green-soft);color:#137a3a;border:1px solid #bfe6cd}
 .badge-tarifario{background:var(--blue-50);color:var(--navy);border:1px solid var(--blue-200)}
 .badge-itbis{background:var(--bg-tint);color:var(--ink-mute);border:1px solid var(--line);font-weight:500}
+.badge-demo{background:#f3e8ff;color:#6b21a8;border:1px solid #e0cffc}
 
 .btn-add{
   border:1px solid var(--line);background:#fff;color:var(--navy);
@@ -284,6 +285,23 @@ table{border-collapse:collapse;width:100%}
 .sin-resultados{text-align:center;padding:3.5rem 1rem;color:var(--ink-mute)}
 .sin-resultados h3{color:var(--ink);margin-bottom:.6rem}
 
+
+/* ---------- aviso de modo demostración ---------- */
+.barra-demo{
+  background:#6b21a8;color:#f6ecff;
+  padding:.7rem 1.25rem;font-size:.87rem;line-height:1.5;text-align:center;
+}
+.barra-demo strong,.barra-demo em{color:#fff}
+.barra-demo em{font-style:normal;background:rgba(255,255,255,.16);padding:.05rem .35rem;border-radius:3px}
+.barra-demo-etiqueta{
+  display:inline-block;background:#fff;color:#6b21a8;
+  font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:.15rem .55rem;border-radius:100px;margin-right:.4rem;
+}
+.detalle-demo{
+  margin:.9rem 0 0;font-size:.87rem;color:#6b21a8;max-width:76ch;line-height:1.55;
+  border-left:3px solid #d8b4fe;padding-left:.85rem;
+}
 
 /* ---------- botón de copiar ---------- */
 .btn-copiar{
