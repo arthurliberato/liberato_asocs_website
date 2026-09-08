@@ -99,6 +99,11 @@
       <label class="toggle-itbis">
         <input type="checkbox" id="f-itbis"> Ver sin ITBIS
       </label>
+
+      <button class="btn btn-ghost btn-mini" type="button" data-copiar-tabla>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        Copiar tabla
+      </button>
     </div>
 
     <div class="filtros" id="chips-etapa"></div>
@@ -136,6 +141,10 @@
     </div>
 
     <p style="margin-top:1.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
+      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
+      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
+      Google Sheets se reparte en columnas (código, ítem, proveedor, precio, unidad, fecha…).
+      <br>
       Precio de referencia para el Gran Santo Domingo, actualizado en septiembre de 2026.
       El rango bajo el precio es el mínimo y el máximo esperados en el mercado.
       <a href="metodologia.html">Cómo se arman y se actualizan estos precios →</a>
@@ -231,6 +240,7 @@
 
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
+<script src="assets/js/datos-precios.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>
 </html>
