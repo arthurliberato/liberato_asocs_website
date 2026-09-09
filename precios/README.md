@@ -18,7 +18,7 @@ precios/
   catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           30 páginas estáticas, una por categoría   ← GENERADAS
+  precio-*.html           32 páginas estáticas, una por categoría   ← GENERADAS
   costo-licencias-…html
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
@@ -46,7 +46,7 @@ python3 -m http.server 8000
 
 ---
 
-## Las 30 páginas de categoría (generadas)
+## Las 32 páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
@@ -128,7 +128,7 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **445 ítems**. De ellos, **151 ya llevan un precio real** de un comercio
+El catálogo tiene **570 ítems**. De ellos, **276 ya llevan un precio real** de un comercio
 que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
@@ -196,7 +196,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **151 de 439 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **276 de 564 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -294,21 +294,32 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**189 cotizaciones reales cargadas · 151 ítems verificados de 439.**
+**316 cotizaciones reales cargadas · 276 ítems verificados de 564.**
 
 Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
 - **09/09/2026** — extracción completa del catálogo de construcción de Ochoa: 398
   artículos, 349 con precio. De ahí salieron 8 cotizaciones sobre ítems que ya existían
-  y **137 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
+  y **257 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
   estimación nuestra.
 
 Los 288 ítems restantes siguen siendo estimaciones nuestras.
 
-Las tres categorías nuevas —`MAT-19` perfiles y tubos, `MAT-20` angulares, planchuelas y
-barras, `MAT-21` tolas y láminas— salieron enteras de esa extracción: son 126 ítems que
-el catálogo no tenía y que llegaron verificados desde el primer día.
+Cinco categorías nuevas salieron enteras de esa extracción y llegaron verificadas desde
+el primer día:
+
+| | Categoría | Ítems |
+|---|---|---|
+| `MAT-19` | Perfiles y tubos de acero | 44 |
+| `MAT-20` | Angulares, planchuelas y barras | 58 |
+| `MAT-21` | Tolas y láminas de acero | 29 |
+| `MAT-22` | Cerramiento perimetral | 41 |
+| `MAT-23` | Perfilería de aluminio | 24 |
+
+El resto se repartió en categorías que ya existían: separadores y couplers de varilla en
+`MAT-04`, zinc de techo en `MAT-07`, polvo de color para mosaico en `MAT-08`, agregados
+ensacados en `MAT-01` y presentaciones menudas de cemento y yeso en `MAT-02`.
 
 ## Importar el catálogo de un proveedor
 
@@ -335,6 +346,17 @@ uno por uno. No hay emparejamiento automático por parecido de texto: lo probamo
 
 **2. `REGLAS`** — familias completas donde la ficha del comercio declara la medida
 exacta. De cada artículo sale un ítem nuevo del catálogo, ya verificado.
+
+Hay una regla por familia, y cada una sabe leer la forma en que ese rubro escribe su
+medida: los angulares la traen en la descripción («1-1/2 X 1/8 pulgadas»), la perfilería
+la reparte entre la descripción y el nombre (la pared en milímetros), y el cerramiento la
+lleva entera en la referencia (`C-096X50` es calibre 9, 6 pies de alto, rollo de 50).
+
+Un detalle del oficio que hubo que enseñarle al lector de medidas: el comercio escribe los
+números mixtos pegados, y «11/2» es una pulgada y media, no once medios. La regla que los
+separa sin romper las fracciones de verdad es que si la fracción tal cual sale mayor que 1
+es un mixto, porque en este oficio nadie escribe fracciones impropias. Así «11/4» queda en
+1 1/4 y «15/16» se mantiene como quince dieciseisavos.
 
 La regla devuelve `null` cuando la ficha **no** declara la medida, y entonces el artículo
 no entra. Es la mayor parte de lo que se descarta, y es deliberado: «Malla Ciclónica
@@ -364,6 +386,12 @@ perfectamente bueno. La nota de esas cotizaciones lo deja dicho.
 
 En la extracción del 09/09/2026 la validación rechazó dos precios: una tola galvanizada a
 RD$ 48.11 la libra y una tola negra a RD$ 9.33, contra los RD$ 26.80 de su familia.
+
+La prueba solo se aplica donde el peso **es** el precio, que son las familias de acero
+comercial. En el polvo de color para mosaico el precio depende del pigmento y del grado
+—el verde industrial vale casi el triple que el amarillo comercial— y aplicarla ahí
+rechazaría precios perfectamente buenos. La lista de familias que se validan está
+declarada en `VALIDA_POR_LIBRA`, dentro del importador.
 
 El peso también verifica el espesor. Una plancha de 4 x 8 pies pesa unas 40.8 libras por
 cada 1/32" de espesor, y por eso el peso va en la especificación de cada tola: fue lo que
@@ -590,7 +618,7 @@ Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose dis
 hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
-  generador: eso rehace las 30 páginas de categoría, la portada y el `sitemap.xml`;
+  generador: eso rehace las 32 páginas de categoría, la portada y el `sitemap.xml`;
 - las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
@@ -616,7 +644,7 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 30 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
+- Las 32 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
   el catálogo interactivo funcionan como concentradores.
 - `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
   ya no está en el `sitemap.xml`: la versión indexable de esa categoría es

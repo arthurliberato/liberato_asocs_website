@@ -128,15 +128,24 @@ function peso(a) {
 
 /* Fracciones como las escribe el comercio: "1-1/2", "1 1/2", "11/2", "3/4", "2". */
 function frac(txt) {
-  const t = limpia(txt).replace(/-/g, ' ');
-  let m = t.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+  const t = limpia(txt).replace(/-/g, ' ').replace(/["'\u2019\u201d]/g, '');
+  let m = t.match(/^(\d+)\s+(\d+)\/(\d+)$/);              // "1 1/2"
   if (m) return { n: +m[1] + (+m[2] / +m[3]), t: m[1] + ' ' + m[2] + '/' + m[3] };
+
+  /* El comercio escribe los números mixtos pegados: "11/2" es una pulgada y
+     media, no once medios. La regla que los separa sin romper las fracciones
+     de verdad: si la fracción tal cual sale mayor que 1, es un mixto, porque
+     en este oficio nadie escribe fracciones impropias. Así "11/4" queda en
+     1 1/4 y "15/16" se mantiene como quince dieciseisavos. */
+  m = t.match(/^(\d)(\d)\/(\d{1,2})$/);
+  if (m && (+m[1] + '' + m[2]) / +m[3] > 1) {
+    return { n: +m[1] + (+m[2] / +m[3]), t: m[1] + ' ' + m[2] + '/' + m[3] };
+  }
+
   m = t.match(/^(\d+)\/(\d+)$/);
   if (m) return { n: +m[1] / +m[2], t: m[1] + '/' + m[2] };
   m = t.match(/^(\d+)(?:\.0+)?$/);
   if (m) return { n: +m[1], t: m[1] };
-  m = t.match(/^(\d)(\d\/\d)$/);                          // "11/2" es "1 1/2"
-  if (m) { const f = m[2].split('/'); return { n: +m[1] + (+f[0] / +f[1]), t: m[1] + ' ' + m[2] }; }
   return null;
 }
 
@@ -149,6 +158,9 @@ function pared(a) {
   const m = a.nombre.match(/(\d\.\d)\s*Mm/i) || a.nombre.match(/\b(1\.2|1\.5|1\.6)\b/);
   return m ? m[1] : null;
 }
+
+const FAMILIAS_ALUMINIO = ['aluminio/angulares', 'aluminio/planchuela', 'aluminio/tubos',
+                           'aluminio/barras', 'aluminio/perfiles', 'aluminio/molduras'];
 
 const REGLAS = {
 
@@ -393,22 +405,453 @@ const REGLAS = {
     };
   },
 
-  /* ---- Alambre liso galvanizado, por libra y por calibre ---- */
+  /* ---- Alambre liso galvanizado y alambre de púas ---- */
   'hierros/alambres': function (a) {
-    const m = a.nombre.match(/Alambre Liso Galvanizado C-(\d+)/i);
-    if (!m || a.unidad !== 'LIBRA') return null;
+    let m = a.nombre.match(/Alambre Liso Galvanizado C-(\d+)/i);
+    if (m && a.unidad === 'LIBRA') {
+      return {
+        cat: 'MAT-04',
+        clave: 'alambre-liso-galv-' + m[1],
+        orden: +m[1],
+        nombre: 'Alambre liso galvanizado calibre ' + m[1],
+        unidad: 'lb',
+        esp: 'Acero al carbono con acabado galvanizado · calibre ' + m[1],
+        etapa: 'estructura',
+        alias: 'alambre galvanizado, alambre de amarre'
+      };
+    }
+
+    /* Del alambre de púas el nombre no dice nada útil —hay siete artículos
+       llamados casi igual— pero la referencia trae calibre y metraje. */
+    if (/Alambre D[eE]? ?\/? ?P[uú]as/i.test(a.nombre)) {
+      m = String(a.ref).match(/^C-(\d+)(\d{3})MTS/) || String(a.ref).match(/^([\d.]+)MM(\d{3})MTS/);
+      if (!m) return null;
+      const porMm = /MM/.test(String(a.ref));
+      return {
+        cat: 'MAT-22',
+        clave: 'alambre-puas-' + m[1] + '-' + m[2],
+        orden: 200 + (+m[1]),
+        nombre: 'Alambre de púas ' + (porMm ? m[1] + ' mm' : 'calibre ' + m[1]) +
+                ', rollo de ' + m[2] + ' metros',
+        unidad: 'rollo',
+        esp: 'Alambre galvanizado con púas entrelazadas · ' +
+             (porMm ? m[1] + ' mm de diámetro' : 'calibre ' + m[1]) + ' · rollo de ' + m[2] + ' metros',
+        etapa: 'exteriores',
+        origen: 'importado',
+        alias: 'alambre de púas, púa, alambre de espino'
+      };
+    }
+
+    return null;
+  },
+
+  /* ---- Malla ciclónica, postes, separadores, couplers y fibras ---- */
+  'hierros/mallas y complementos': function (a) {
+    const r = String(a.ref).replace(/["'\u2019\u201d]/g, '');
+
+    /* "C-096X50" = calibre 9, 6 pies de alto, rollo de 50 pies. La ficha lo
+       confirma en texto: «Galvanizada 6 x 50 pies de largo». */
+    let m = /Malla Cicl[oó]nica/i.test(a.nombre) && r.match(/^C-(\d{1,2}?)(\d)X(\d+)(.*)$/);
+    if (m) {
+      const cal = String(+m[1]);
+      const pvc = /Pvc/i.test(a.nombre) || /VERDE/i.test(m[4]);
+      return {
+        cat: 'MAT-22',
+        clave: 'malla-ciclonica-' + cal + '-' + m[2] + (pvc ? '-pvc' : ''),
+        orden: (+cal) * 10 + (+m[2]),
+        nombre: 'Malla ciclónica calibre ' + cal + (pvc ? ' revestida en PVC' : '') +
+                ', ' + m[2] + ' pies de alto, rollo de ' + m[3] + ' pies',
+        unidad: 'rollo',
+        esp: 'Malla de alambre galvanizado tejido en rombo · calibre ' + cal +
+             (pvc ? ' con revestimiento de PVC' : '') + ' · ' + m[2] +
+             ' pies de alto · rollo de ' + m[3] + ' pies',
+        etapa: 'exteriores',
+        origen: 'importado',
+        alias: 'malla ciclónica, verja de alambre, cyclone'
+      };
+    }
+
+    m = /Tubo Galv P \/ Malla/i.test(a.nombre) && r.match(/^([\d\/]+)X(\d+)/);
+    if (m) {
+      const l = frac(m[1]);
+      if (!l) return null;
+      return {
+        cat: 'MAT-22',
+        clave: 'tubo-malla-' + l.n + '-' + m[2],
+        orden: 100 + l.n,
+        nombre: 'Tubo galvanizado para malla ciclónica ' + pulg(l) + ' x ' + m[2] + ' pies',
+        unidad: 'unidad',
+        esp: 'Poste tubular galvanizado para cerramiento · ' + pulg(l) + ' · tramo de ' + m[2] + ' pies',
+        etapa: 'exteriores',
+        origen: 'importado',
+        alias: 'poste de malla, tubo de verja'
+      };
+    }
+
+    if (/Separadores Plasticos/i.test(a.nombre)) {
+      const l = frac(r);
+      if (!l) return null;
+      return {
+        cat: 'MAT-04',
+        clave: 'separador-varilla-' + l.n,
+        orden: 500 + l.n,
+        nombre: 'Separador plástico para varilla ' + pulg(l),
+        unidad: 'unidad',
+        esp: 'Silleta plástica para mantener el recubrimiento del acero · ' + pulg(l),
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: 'silleta, separador de varilla, galleta'
+      };
+    }
+
+    /* "Q251" = serie Q25 (25 mm) y su equivalente en pulgadas, 1". */
+    m = /Coupler Mecanico/i.test(a.nombre) && r.match(/^Q(\d{2})(.+)$/);
+    if (m) {
+      const l = frac(m[2]);
+      if (!l) return null;
+      return {
+        cat: 'MAT-04',
+        clave: 'coupler-varilla-' + l.n,
+        orden: 600 + l.n,
+        nombre: 'Coupler mecánico para varilla ' + pulg(l),
+        unidad: 'unidad',
+        esp: 'Empalme mecánico roscado para varilla de refuerzo · ' + pulg(l) +
+             ' · serie Q' + m[1] + ' (' + m[1] + ' mm)',
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: 'coupler, empalme mecánico de varilla'
+      };
+    }
+
+    /* Metal desplegable: "4X8X1/2" es plancha de 4 x 8 pies con rombo de 1/2". */
+    m = /Material Desplegable/i.test(a.nombre) && r.match(/^(\d+)X(\d+)X([\d\/]+)$/);
+    if (m) {
+      const l = frac(m[3]);
+      if (!l) return null;
+      return {
+        cat: 'MAT-21',
+        clave: 'desplegable-' + m[1] + 'x' + m[2] + '-' + l.n,
+        orden: 3000 + l.n,
+        nombre: 'Metal desplegable plano ' + pulg(l) + ', plancha ' + m[1] + ' x ' + m[2] + ' pies',
+        unidad: 'plancha',
+        esp: 'Lámina expandida de acero · rombo de ' + pulg(l) + ' · plancha de ' +
+             m[1] + ' x ' + m[2] + ' pies',
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: 'metal desplegado, lámina expandida'
+      };
+    }
+
+    if (/Fibra De Acero|Macro Fibra/i.test(a.nombre)) {
+      const k = r.match(/\(([\d.]+)\s*KG\)/i);
+      if (!k) return null;
+      const acero = /Fibra De Acero/i.test(a.nombre);
+      return {
+        cat: 'MAT-02',
+        clave: (acero ? 'fibra-acero-' : 'macrofibra-') + k[1],
+        orden: 900,
+        nombre: (acero ? 'Fibra de acero para hormigón' : 'Macrofibra sintética para hormigón') +
+                ', funda de ' + k[1] + ' kg',
+        unidad: 'funda',
+        esp: 'Refuerzo disperso para losas y pisos industriales · funda de ' + k[1] + ' kg',
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: acero ? 'fibra metálica para hormigón' : 'fibra sintética, macrofibra'
+      };
+    }
+
+    return null;
+  },
+
+  /* ---- Telas metálicas de cerramiento ---- */
+  'hierros/telas metalicas y gaviones': function (a) {
+    const m = String(a.ref).replace(/["'\u2019\u201d]/g, '').match(/^C-(\d{2})(.*)$/);
+    if (!m) return null;
+    const p = m[2].split('X');
+
+    if (/Gallinero/i.test(a.nombre) && p.length === 2) {
+      const alto = frac(p[0]);
+      if (!alto) return null;
+      return {
+        cat: 'MAT-22',
+        clave: 'tela-gallinero-' + m[1] + '-' + alto.n,
+        orden: 400 + (+m[1]),
+        nombre: 'Tela para gallinero calibre ' + m[1] + ', ' + alto.t + ' pies de alto',
+        unidad: 'yarda',
+        esp: 'Malla hexagonal galvanizada · calibre ' + m[1] + ' · ' + alto.t +
+             ' pies de alto · rollo de ' + parseInt(p[1], 10) + ' pies',
+        etapa: 'exteriores',
+        origen: 'importado',
+        alias: 'tela de gallinero, malla hexagonal'
+      };
+    }
+
+    if (p.length !== 4) return null;                       // retícula, alto y largo
+    const x = frac(p[0]), y = frac(p[1]), alto = frac(p[2]);
+    if (!x || !y || !alto) return null;
     return {
-      cat: 'MAT-04',
-      clave: 'alambre-liso-galv-' + m[1],
-      orden: +m[1],
-      nombre: 'Alambre liso galvanizado calibre ' + m[1],
-      unidad: 'lb',
-      esp: 'Acero al carbono con acabado galvanizado · calibre ' + m[1],
+      cat: 'MAT-22',
+      clave: 'tela-metalica-' + m[1] + '-' + x.n + 'x' + y.n + '-' + alto.n,
+      orden: 300 + (+m[1]),
+      nombre: 'Tela metálica calibre ' + m[1] + ', retícula ' + pulg(x) + ' x ' + pulg(y) +
+              ', ' + alto.t + ' pies de alto',
+      unidad: 'yarda',
+      esp: 'Malla de alambre tejido en cuadro · calibre ' + m[1] + ' · retícula ' +
+           pulg(x) + ' x ' + pulg(y) + ' · ' + alto.t + ' pies de alto · rollo de ' +
+           parseInt(p[3], 10) + ' pies',
+      etapa: 'exteriores',
+      origen: 'importado',
+      alias: 'tela metálica, malla de cuadrito, tela para conejo'
+    };
+  },
+
+  /* ---- Polvo de color para mosaico y granito fundido ---- */
+  'polvos/cromo': function (a) {
+    const r = String(a.ref).toUpperCase();
+    const grado = /IND/.test(r) || /\bInd\b/.test(a.nombre) ? 'industrial' : 'comercial';
+    const COLORES = {AMAR: 'amarillo', AZUL: 'azul', NEGRO: 'negro', ROJO: 'rojo', VERDE: 'verde'};
+
+    let color = null, libras = null;
+    const nm = a.nombre.match(/Polvo Mosaico (Amarillo|Azul|Negro|Rojo|Verde)/i);
+    if (nm) {
+      color = nm[1].toLowerCase();
+      const lb = r.match(/^(\d+)LIBRAS?$/);
+      if (!lb) return null;
+      libras = +lb[1];
+    } else {
+      /* La funda grande no dice el color en el nombre; la referencia sí:
+         "16068VERDECOM." o "13632AMAR.IND.". */
+      const k = Object.keys(COLORES).filter(c => r.indexOf(c) >= 0)[0];
+      if (!k) return null;
+      color = COLORES[k];
+      libras = 55;
+    }
+
+    return {
+      cat: 'MAT-08',
+      clave: 'polvo-mosaico-' + color + '-' + grado + '-' + libras,
+      orden: 900 + libras,
+      nombre: 'Polvo de color para mosaico ' + color + ' ' + grado + ', ' + libras + ' lb',
+      unidad: libras >= 55 ? 'funda' : 'unidad',
+      esp: 'Pigmento en polvo para granito fundido y mosaico · ' + color + ' ' + grado +
+           ' · presentación de ' + libras + ' libras',
+      etapa: 'pisos',
+      gama: grado === 'industrial' ? 'premium' : 'estandar',
+      origen: 'importado',
+      alias: 'cromo, polvo de color, pigmento para granito'
+    };
+  },
+
+  /* ---- Agregados en funda ---- */
+  'agregados/grava': function (a) {
+    const m = a.nombre.match(/(\d+)\s*Libras/i);
+    if (!m) return null;
+    const arena = /Arena/i.test(a.nombre);
+    const blanca = /Blanca/i.test(a.nombre);
+    const med = a.nombre.match(/(\d+\s*\/\s*\d+)\s*[”"']/);
+    const l = med ? frac(med[1].replace(/\s/g, '')) : null;
+    const que = arena ? 'Arena' : (blanca ? 'Grava blanca' : 'Grava');
+    return {
+      cat: 'MAT-01',
+      clave: 'funda-' + (arena ? 'arena' : blanca ? 'grava-blanca' : 'grava') +
+             (l ? '-' + l.n : '') + '-' + m[1],
+      orden: 900 + (+m[1]),
+      nombre: que + (l ? ' ' + pulg(l) : '') + ' en funda de ' + m[1] + ' libras',
+      unidad: 'funda',
+      esp: 'Agregado ensacado para obra menor y reparaciones · ' +
+           (l ? 'granulometría ' + pulg(l) + ' · ' : '') + 'funda de ' + m[1] + ' libras',
       etapa: 'estructura',
-      alias: 'alambre galvanizado, alambre de amarre'
+      alias: 'funda de arena, funda de grava, agregado ensacado'
+    };
+  },
+
+  /* ---- Yeso y estuco ---- */
+  'polvos/yeso': function (a) {
+    const r = String(a.ref).toUpperCase();
+
+    if (/Estuco/i.test(a.nombre)) {
+      const m = r.match(/^(\d+)LIBRAS?$/);
+      if (!m) return null;
+      return {
+        cat: 'MAT-12',
+        clave: 'estuco-' + m[1],
+        orden: 900,
+        nombre: 'Estuco para interiores, funda de ' + m[1] + ' libras',
+        unidad: 'funda',
+        esp: 'Masilla en polvo para alisar paredes interiores · funda de ' + m[1] + ' libras',
+        etapa: 'terminacion',
+        alias: 'estuco, masilla de pared'
+      };
+    }
+
+    if (!/Yeso En Polvo/i.test(a.nombre)) return null;
+
+    if (a.unidad === 'LIBRA') {
+      return {
+        cat: 'MAT-02',
+        clave: 'yeso-polvo-libra',
+        orden: 800,
+        nombre: 'Yeso en polvo, por libra',
+        unidad: 'lb',
+        esp: 'Yeso de construcción a granel, despachado por libra',
+        etapa: 'terminacion',
+        alias: 'yeso en polvo, yeso de obra'
+      };
+    }
+
+    const m = r.match(/(\d+(?:\.\d+)?)\s*LBS?/) || r.match(/^(\d+)LIBRAS?$/);
+    if (!m) return null;
+    const marca = /Iberyola/i.test(a.nombre) ? 'Iberyola' : /Paloma/i.test(a.nombre) ? 'Paloma' : '';
+    return {
+      cat: 'MAT-02',
+      clave: 'yeso-polvo-' + m[1] + (marca ? '-' + marca.toLowerCase() : ''),
+      orden: 800 + (+m[1]),
+      nombre: 'Yeso en polvo' + (marca ? ' ' + marca : '') + ', funda de ' + m[1] + ' libras',
+      unidad: 'funda',
+      esp: 'Yeso de construcción para plafones y terminación · funda de ' + m[1] + ' libras',
+      etapa: 'terminacion',
+      origen: /Iberyola/i.test(a.nombre) ? 'importado' : 'nacional',
+      alias: 'yeso en polvo, yeso de obra'
+    };
+  },
+
+  /* ---- Presentaciones pequeñas de cemento ---- */
+  'polvos/cemento blanco': function (a) {
+    const r = String(a.ref).toUpperCase();
+    const m = r.match(/^FDA\.(\d+)LBS/) || r.match(/^(\d+)LIBRAS?$/);
+    if (!m) return null;                                   // las fundas de 40 kg van por MAPEO
+    return {
+      cat: 'MAT-02',
+      clave: 'cemento-blanco-' + m[1],
+      orden: 700 + (+m[1]),
+      nombre: 'Cemento blanco, funda de ' + m[1] + ' libras',
+      unidad: 'funda',
+      esp: 'Cemento blanco en presentación menuda, para detalles y reparaciones · ' +
+           m[1] + ' libras',
+      etapa: 'terminacion',
+      origen: 'importado',
+      alias: 'cemento blanco'
+    };
+  },
+
+  'polvos/cemento gris': function (a) {
+    const m = String(a.ref).toUpperCase().match(/^(\d+)LIBRAS?$/);
+    if (!m) return null;
+    return {
+      cat: 'MAT-02',
+      clave: 'cemento-gris-' + m[1],
+      orden: 600 + (+m[1]),
+      nombre: 'Cemento gris, funda de ' + m[1] + ' libras',
+      unidad: 'funda',
+      esp: 'Cemento gris en presentación menuda, para reparaciones · ' + m[1] + ' libras',
+      etapa: 'terminacion',
+      alias: 'cemento gris, funda pequeña de cemento'
+    };
+  },
+
+  /* ---- Perfilería de aluminio ----
+     Aquí hay que ser estricto. Buena parte del aluminio se identifica por
+     código de extrusora —Angu0027, Plati0032, Tuboc0090— y no por medida,
+     y varias referencias traen ese código pegado delante de la dimensión
+     ("11575/8" es la pieza 1157 de 5/8"). Separarlos a ojo es adivinar, así
+     que solo entra la referencia que arranca directamente en la medida. */
+  aluminio: function (a, familia) {
+    const r = String(a.ref).replace(/["'\u2019\u201d]/g, '').trim();
+    if (/^[A-Za-z]/.test(r)) return null;                  // código de extrusora al frente
+    if (/^\d{4}/.test(r)) return null;                     // código numérico pegado a la medida
+
+    /* Todo el aluminio viene en tramos de 19.20 pies; se quita esa cola
+       para quedarnos solo con la sección. */
+    const cuerpo = r.replace(/X?\(?19[.,]?\d*\s*(PIES?|PI|P)?\)?$/i, '').replace(/[X(]+$/, '');
+    if (!cuerpo) return null;
+
+    const p = cuerpo.split(/X/i).map(limpia).filter(Boolean);
+    const l = frac(p[0]);
+    if (!l) return null;
+    const h = p.length > 1 ? frac(p[1]) : null;
+    if (p.length > 1 && !h) return null;
+
+    /* Un tubo redondo o una barra quedan definidos por un solo número, pero
+       una planchuela sin espesor o un angular sin ala no dicen nada. */
+    const UNA_MEDIDA = {'aluminio/tubos': true, 'aluminio/barras': true};
+    if (!h && !UNA_MEDIDA[familia]) return null;
+
+    const TIPOS = {
+      'aluminio/angulares':  ['Angular de aluminio',        'Perfil L de aluminio',            'angular de aluminio, perfil L'],
+      'aluminio/planchuela': ['Planchuela de aluminio',     'Pletina de aluminio',             'pletina de aluminio, planchuela'],
+      'aluminio/tubos':      ['Tubo redondo de aluminio',   'Tubería redonda de aluminio',     'tubo de aluminio'],
+      'aluminio/barras':     ['Barra de aluminio',          'Barra maciza de aluminio',        'barra de aluminio'],
+      'aluminio/perfiles':   ['Perfil de aluminio',         'Perfil tubular de aluminio',      'perfilería de aluminio'],
+      'aluminio/molduras':   ['Moldura U de aluminio',      'Moldura en U de aluminio',        'moldura U, canal de aluminio']
+    };
+    const t = TIPOS[familia];
+    if (!t) return null;
+
+    let nombre = t[0];
+    if (familia === 'aluminio/perfiles') {
+      nombre = /Cuad/i.test(a.nombre) ? 'Perfil cuadrado de aluminio'
+             : /Rect/i.test(a.nombre) ? 'Perfil rectangular de aluminio'
+             : 'Perfil de aluminio';
+    }
+
+    const medida = pulg(l) + (h ? ' x ' + pulg(h) : '');
+    return {
+      cat: 'MAT-23',
+      clave: familia.split('/')[1] + '-' + l.n + (h ? 'x' + h.n : ''),
+      orden: l.n * 100 + (h ? h.n : 0),
+      nombre: nombre + ' ' + medida + ' x 19.20 pies',
+      unidad: 'unidad',
+      esp: t[1] + ' extruido · ' + medida + ' · tramo de 19.20 pies',
+      etapa: 'puertas-ventanas',
+      origen: 'importado',
+      alias: t[2]
+    };
+  },
+
+  /* ---- Accesorios de malla ciclónica ---- */
+  'aluminio/accesorios para malla': function (a) {
+    const r = String(a.ref).replace(/["'']/g, '');
+    const tipo =
+      /^Abrazadera/i.test(a.nombre) ? 'Abrazadera' :
+      /^Brazo/i.test(a.nombre) ? 'Brazo' :
+      /^Copa Pasante/i.test(a.nombre) ? 'Copa pasante' :
+      /^Copa Tensora/i.test(a.nombre) ? 'Copa tensora' :
+      /^Copa Terminal/i.test(a.nombre) ? 'Copa terminal' :
+      /^Union/i.test(a.nombre) ? 'Unión' : null;
+    if (!tipo) return null;
+
+    const m = r.match(/^(\d(?:\d\/\d)?|\d\/\d)(?:X(\d(?:\d\/\d)?|\d\/\d))?(.*)$/);
+    if (!m) return null;
+    const a1 = frac(m[1]);
+    if (!a1) return null;
+    const a2 = m[2] ? frac(m[2]) : null;
+    /* La variante viene escrita en femenino en la referencia porque allá
+       describe la abrazadera; aquí concuerda con el nombre de la pieza. */
+    const resto = limpia(m[3] || '').replace(/[()]/g, '').toLowerCase();
+    const masculino = tipo === 'Brazo';
+    const variante =
+      /larga/.test(resto) ? (masculino ? ' largo' : ' larga') :
+      /corta/.test(resto) ? (masculino ? ' corto' : ' corta') :
+      /sencilla/.test(resto) || /Sencillo/i.test(a.nombre) ? (masculino ? ' sencillo' : ' sencilla') :
+      /doble/i.test(a.nombre) ? ' doble' :
+      /reforzada/.test(resto) ? (masculino ? ' reforzado' : ' reforzada') : '';
+    const medida = pulg(a1) + (a2 ? ' x ' + pulg(a2) : '');
+    return {
+      cat: 'MAT-22',
+      clave: 'accesorio-' + tipo.toLowerCase().replace(/\s/g, '-') + '-' + a1.n +
+             (a2 ? 'x' + a2.n : '') + variante.replace(/\s/g, ''),
+      orden: 500 + a1.n,
+      nombre: tipo + variante + ' para malla ciclónica ' + medida,
+      unidad: 'unidad',
+      esp: 'Herraje galvanizado de cerramiento · ' + medida + (variante ? ' ·' + variante : ''),
+      etapa: 'exteriores',
+      origen: 'importado',
+      alias: 'accesorio de verja, herraje de malla ciclónica'
     };
   }
 };
+
+FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
 
 /* =========================================================
    3. Lectura y clasificación
@@ -438,11 +881,25 @@ conPrecio.forEach(a => {
    4. Validación por precio de la libra
    ========================================================= */
 
+/* La prueba del precio por libra solo vale donde el peso ES el precio: el
+   acero comercial se compra al peso y dentro de una familia el RD$/lb apenas
+   se mueve. En el polvo de color, en cambio, el precio depende del pigmento
+   y del grado —el verde industrial vale casi el triple que el amarillo
+   comercial— y aplicarla ahí rechazaría precios buenos. */
+const VALIDA_POR_LIBRA = {
+  'hierros/angulares': true,
+  'hierros/planchuelas': true,
+  'hierros/barras': true,
+  'hierros/tolas': true,
+  'hierros/tubos': true
+};
+
 const porFamilia = {};
 nuevos.concat(aExistente.map(x => ({ a: x.a, spec: null }))).forEach(x => {
+  const f = x.a.cat2 + '/' + x.a.cat3;
+  if (!VALIDA_POR_LIBRA[f]) return;
   const w = peso(x.a);
   if (!w) return;
-  const f = x.a.cat2 + '/' + x.a.cat3;
   (porFamilia[f] = porFamilia[f] || []).push(precioUnidad(x.a) / w);
 });
 
@@ -455,8 +912,9 @@ Object.keys(porFamilia).forEach(f => { if (porFamilia[f].length >= 4) medianaFam
 
 const rechazados = [];
 function pasaValidacion(a) {
-  const w = peso(a);
   const f = a.cat2 + '/' + a.cat3;
+  if (!VALIDA_POR_LIBRA[f]) return true;
+  const w = peso(a);
   const med = medianaFam[f];
   if (!w || !med) return true;                        // sin peso o sin familia, no hay con qué comparar
   const ppl = precioUnidad(a) / w;
@@ -632,6 +1090,17 @@ if (rechazados.length) {
 
 console.log('');
 console.log('Descartados porque la ficha no declara la medida: ' + descartados.length + '.');
+
+if (process.argv.indexOf('--listar') >= 0) {
+  console.log('');
+  console.log('Ítems que saldrían:');
+  let cp = '';
+  lista.forEach(e => {
+    if (e.spec.cat !== cp) { cp = e.spec.cat; console.log('  — ' + cp); }
+    console.log('    ' + codigoDe[e.spec.cat + '|' + e.spec.clave] + '  ' + e.spec.nombre +
+                '  (' + e.spec.unidad + ')');
+  });
+}
 
 const faltan = Object.keys(porCategoria).filter(c => !CAT.categorias.some(k => k.codigo === c));
 if (faltan.length) {

@@ -200,6 +200,58 @@
   });
 
   /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */
+  c('MAT-01-020', PROV_OCHOA, 151.87, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/funda-de-grava-3-4-50-libras-04510335',
+    nota: 'Funda De Grava 3 / 4” - 50 Libras · artículo 04-51-0335 · ref. PT00009(50XAT) · marca PRET. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-01-021', PROV_OCHOA, 448.34, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/grava-blanca-50-libras-04510344',
+    nota: 'Grava Blanca (50 Libras) · artículo 04-51-0344 · ref. 3/4PT00014(50XAT) · marca PRET. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-01-022', PROV_OCHOA, 151.87, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/funda-de-arena-3-16-55-libras-04510337',
+    nota: 'Funda De Arena 3 / 16” - 55 Libras · artículo 04-51-0337 · ref. PT00011(50XAT) · marca PRET. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-017', PROV_OCHOA, 34.36, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590319',
+    nota: 'Cemento Gris. · artículo 04-59-0319 · ref. 5LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-018', PROV_OCHOA, 65.96, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590320',
+    nota: 'Cemento Gris · artículo 04-59-0320 · ref. 10LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-019', PROV_OCHOA, 49.97, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590410',
+    nota: 'Cemento Blanco · artículo 04-59-0410 · ref. FDA.2LBS0.9KG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-020', PROV_OCHOA, 109.93, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590409',
+    nota: 'Cemento Blanco · artículo 04-59-0409 · ref. FDA.5LBS2.25KG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-021', PROV_OCHOA, 159.1, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-fundas-04590356',
+    nota: 'Cemento Blanco Fundas · artículo 04-59-0356 · ref. 10LIBRAS · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-022', PROV_OCHOA, 4.8, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-04590219',
+    nota: 'Yeso En Polvo · artículo 04-59-0219 · ref. BLANCOLIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-023', PROV_OCHOA, 37.93, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-5-lbs-04590344',
+    nota: 'Yeso En Polvo 5 Lbs. · artículo 04-59-0344 · ref. 5LIBRAS · marca PALOMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-024', PROV_OCHOA, 373.64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-blanco-paloma-04590063',
+    nota: 'Yeso En Polvo Blanco Paloma · artículo 04-59-0063 · ref. FDA.65LBS · marca PALOMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-025', PROV_OCHOA, 1295.68, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibra-de-acero-04660385',
+    nota: 'Fibra De Acero · artículo 04-66-0385 · ref. 1439(5.3KG) · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-026', PROV_OCHOA, 807.79, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/macro-fibra-p-hormigon-04660383',
+    nota: 'Macro Fibra P / Hormigon · artículo 04-66-0383 · ref. 1437(1.5KG) · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
   c('MAT-04-027', PROV_OCHOA, 61.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-liso-galvanizado-c-10-02450008',
     nota: 'Alambre Liso Galvanizado C-10 · artículo 02-45-0008 · ref. C-10ROLLOGDE · marca GALV-ALAMBRE. ' + SUPUESTO_ITBIS
@@ -211,6 +263,50 @@
   c('MAT-04-029', PROV_OCHOA, 56.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-liso-galvanizado-c-16-02450107',
     nota: 'Alambre Liso Galvanizado C-16 · artículo 02-45-0107 · ref. C-16ROLLOGDE · marca GALV-ALAMBRE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-030', PROV_OCHOA, 30.48, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660381',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0381 · ref. 3/8" · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-031', PROV_OCHOA, 45.71, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660373',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0373 · ref. 1/2\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-032', PROV_OCHOA, 54.43, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660374',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0374 · ref. 5/8\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-033', PROV_OCHOA, 63.13, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660375',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0375 · ref. 3/4\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-034', PROV_OCHOA, 70.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660376',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0376 · ref. 1\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-035', PROV_OCHOA, 78.36, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/separadores-plasticos-p-varillas-04660377',
+    nota: 'Separadores Plasticos P / Varillas · artículo 04-66-0377 · ref. 11/4\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-036', PROV_OCHOA, 228.57, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/coupler-mecanico-p-varilla-04660369',
+    nota: 'Coupler Mecanico P / Varilla · artículo 04-66-0369 · ref. Q193/4\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-037', PROV_OCHOA, 434.26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/coupler-mecanico-p-varilla-04660368',
+    nota: 'Coupler Mecanico P / Varilla · artículo 04-66-0368 · ref. Q251\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-038', PROV_OCHOA, 697.68, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/coupler-mecanico-p-varilla-04660370',
+    nota: 'Coupler Mecanico P / Varilla · artículo 04-66-0370 · ref. Q2811/8\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-039', PROV_OCHOA, 854.4, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/coupler-mecanico-p-varilla-04660371',
+    nota: 'Coupler Mecanico P / Varilla · artículo 04-66-0371 · ref. Q3211/4\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-04-040', PROV_OCHOA, 1066.64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/coupler-mecanico-p-varilla-04660372',
+    nota: 'Coupler Mecanico P / Varilla · artículo 04-66-0372 · ref. Q3513/8\'\' · marca ULTRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-011', PROV_OCHOA, 296.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-acanalado-c-29-04770028',
@@ -259,6 +355,130 @@
   c('MAT-07-018', PROV_OCHOA, 660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-para-aluzinc-21-04520043',
     nota: 'Caballete Para Aluzinc 21\'\' · artículo 04-52-0043 · ref. 21"X10\'MAX. · marca ACERO ESTRELLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-014', PROV_OCHOA, 55.94, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590337',
+    nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0337 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-015', PROV_OCHOA, 153.81, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590330',
+    nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0330 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-016', PROV_OCHOA, 82.72, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590335',
+    nota: 'Polvo Mosaico Azul Com · artículo 04-59-0335 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-017', PROV_OCHOA, 162.49, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590327',
+    nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0327 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 90.79, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590342',
+    nota: 'Polvo Mosaico Negro Com · artículo 04-59-0342 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 129.29, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590328',
+    nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0328 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-020', PROV_OCHOA, 66.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590341',
+    nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0341 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-021', PROV_OCHOA, 106.37, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590332',
+    nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0332 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-022', PROV_OCHOA, 78.84, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590338',
+    nota: 'Polvo Mosaico Verde Com · artículo 04-59-0338 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-023', PROV_OCHOA, 180.39, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590324',
+    nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0324 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-024', PROV_OCHOA, 460.92, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590331',
+    nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0331 · ref. 3LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-025', PROV_OCHOA, 280.64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590336',
+    nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0336 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-026', PROV_OCHOA, 367.96, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590334',
+    nota: 'Polvo Mosaico Azul Com · artículo 04-59-0334 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-027', PROV_OCHOA, 813.47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590326',
+    nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0326 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-028', PROV_OCHOA, 406.73, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590343',
+    nota: 'Polvo Mosaico Negro Com · artículo 04-59-0343 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-029', PROV_OCHOA, 647.51, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590329',
+    nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0329 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-030', PROV_OCHOA, 333.56, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590340',
+    nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0340 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-031', PROV_OCHOA, 472.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590333',
+    nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0333 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-032', PROV_OCHOA, 350.7, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590339',
+    nota: 'Polvo Mosaico Verde Com · artículo 04-59-0339 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-033', PROV_OCHOA, 902.88, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590325',
+    nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0325 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-034', PROV_OCHOA, 3195.68, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590027',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0027 · ref. 16322AMAR.COM. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-035', PROV_OCHOA, 7742.13, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590022',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0022 · ref. 13632AMAR.IND. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-036', PROV_OCHOA, 4220.23, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590021',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0021 · ref. 16066AZULCOM. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-037', PROV_OCHOA, 8183.45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590050',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0050 · ref. 9776KAZULIND. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-038', PROV_OCHOA, 4640.79, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590071',
+    nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0071 · ref. 8035NEGROCOM. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 6521.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-6316-04590060',
+    nota: 'Polvo P / Mosaico (Cromo) 6316 · artículo 04-59-0060 · ref. 9081NEGROIND. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-040', PROV_OCHOA, 3350.57, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590024',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0024 · ref. 16323ROJOCOM. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-041', PROV_OCHOA, 5451.6, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-12908-55-lbs-04590023',
+    nota: 'Polvo P / Mosaico(Cromo) (12908) 55 Lbs. · artículo 04-59-0023 · ref. F-6225ROJOIND. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-042', PROV_OCHOA, 4017.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590033',
+    nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0033 · ref. 16068VERDECOM. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-043', PROV_OCHOA, 9092.93, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590059',
+    nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0059 · ref. 14951VERDEIND. · marca BELGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_OCHOA, 331.11, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',
+    nota: 'Estuco Para Interiores · artículo 04-59-0424 · ref. 35LIBRAS · marca DURO YESO. ' + SUPUESTO_ITBIS
   });
   c('MAT-19-001', PROV_OCHOA, 262.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-cuad-negro-1-2mm-144xat-04670061',
@@ -763,6 +983,294 @@
   c('MAT-21-024', PROV_OCHOA, 2364.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tola-galvanizada-83-75-libs-04770067',
     nota: 'Tola Galvanizada 83.75 Libs. · artículo 04-77-0067 · ref. C-164X8 · marca GALV-TOLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-21-025', PROV_OCHOA, 2209.05, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770012',
+    nota: 'Material Desplegable Plano · artículo 04-77-0012 · ref. 4X8X3/8" · marca MDP. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-21-026', PROV_OCHOA, 765.55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770010',
+    nota: 'Material Desplegable Plano · artículo 04-77-0010 · ref. 4X8X1/2" · marca MDP. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-21-027', PROV_OCHOA, 850, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770011',
+    nota: 'Material Desplegable Plano · artículo 04-77-0011 · ref. 4X8X3/4" · marca MDP. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-21-028', PROV_OCHOA, 1080.47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770009',
+    nota: 'Material Desplegable Plano. · artículo 04-77-0009 · ref. 4X8X1" · marca MDP. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-21-029', PROV_OCHOA, 939.35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770007',
+    nota: 'Material Desplegable Plano · artículo 04-77-0007 · ref. 4X8X11/2" · marca MDP. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-001', PROV_OCHOA, 5223.1, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660038',
+    nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0038 · ref. C-093X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-002', PROV_OCHOA, 6121.98, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660039',
+    nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0039 · ref. C-094X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-003', PROV_OCHOA, 9867.16, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660040',
+    nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0040 · ref. C-096X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-004', PROV_OCHOA, 11757.65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-rev-en-pvc-3-43mm-04660064',
+    nota: 'Malla Ciclonica Rev. En Pvc 3.43Mm · artículo 04-66-0064 · ref. C-96X50VERDE · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-005', PROV_OCHOA, 13273.54, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660051',
+    nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0051 · ref. C-098X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-006', PROV_OCHOA, 527.06, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-15mm-127xat-04730089',
+    nota: 'Tubo Galv P / Malla 1.15Mm (127Xat) · artículo 04-73-0089 · ref. 11/4X20\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-007', PROV_OCHOA, 462.61, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-15mm-91xat-04730090',
+    nota: 'Tubo Galv P / Malla 1.15Mm (91Xat) · artículo 04-73-0090 · ref. 11/2X15\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-008', PROV_OCHOA, 699.92, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-20mm-61xat-04730516',
+    nota: 'Tubo Galv P / Malla 1.20Mm (61Xat) · artículo 04-73-0516 · ref. 2"X20\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-009', PROV_OCHOA, 4335.91, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-c-11-04660035',
+    nota: 'Malla Ciclónica C-11 · artículo 04-66-0035 · ref. C-113X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-010', PROV_OCHOA, 8694.46, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-c-11-04660037',
+    nota: 'Malla Ciclónica C-11 · artículo 04-66-0037 · ref. C-116X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-011', PROV_OCHOA, 2601.2, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-premiun-64xpaleta-02450184',
+    nota: 'Alambre D / Puas Premiun (64Xpaleta) · artículo 02-45-0184 · ref. 1.50MM250MTS · marca CORVI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-012', PROV_OCHOA, 2541.47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-02450221',
+    nota: 'Alambre D / Puas · artículo 02-45-0221 · ref. C-15250MTS · marca PATRON. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-013', PROV_OCHOA, 964.11, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-02450003',
+    nota: 'Alambre De Púas · artículo 02-45-0003 · ref. C-16110MTS · marca CORVI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_OCHOA, 2108.46, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-galv-cebu-superior-02450007',
+    nota: 'Alambre D / Puas Galv.Cebu(Superior) · artículo 02-45-0007 · ref. C-16250MTS(64XAT) · marca KINNOX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_OCHOA, 2336.18, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-t-aiwa-02450159',
+    nota: 'Alambre De Puas / T Aiwa · artículo 02-45-0159 · ref. C-16250MTS · marca CORVI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_OCHOA, 3439.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-250-mts-02450098',
+    nota: 'Alambre De Puas 250 Mts. · artículo 02-45-0098 · ref. C-16250MTS · marca MOTTO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-015', PROV_OCHOA, 1933.36, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-250-mts-02450145',
+    nota: 'Alambre De Puas 250 Mts. · artículo 02-45-0145 · ref. C-17250MTS · marca TORO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-016', PROV_OCHOA, 113.78, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-29-30kgs-02450118',
+    nota: 'Tela Met. D / Cuad. P / Conejo 29.30Kgs · artículo 02-45-0118 · ref. C-161X2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-017', PROV_OCHOA, 192.26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-metalica-d-cuadrito-43-50kgs-02450080',
+    nota: 'Tela Metalica D / Cuadrito 43.50Kgs · artículo 02-45-0080 · ref. C-181/2X1/2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-018', PROV_OCHOA, 106.11, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-22kgs-02450199',
+    nota: 'Tela Met. D / Cuad. P / Conejo 22Kgs · artículo 02-45-0199 · ref. C-181X1/2X3\'X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-019', PROV_OCHOA, 145.1, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-29-30kgs-02450198',
+    nota: 'Tela Met. D / Cuad. P / Conejo 29.30Kgs · artículo 02-45-0198 · ref. C-181X1/2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-020', PROV_OCHOA, 37.54, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuadrito-p-conejo-6-60kgs-02450161',
+    nota: 'Tela Met. D / Cuadrito P / Conejo 6.60Kgs · artículo 02-45-0161 · ref. C-201X2X3X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-021', PROV_OCHOA, 72.61, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-metalica-d-cuadrito-bwg-14kgs-02450032',
+    nota: 'Tela Metalica D / Cuadrito Bwg 14Kgs · artículo 02-45-0032 · ref. C-213/8X3/8X3X100 · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-022', PROV_OCHOA, 54.04, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-p-gallinero-13kgs-02450127',
+    nota: 'Tela P / Gallinero 13Kgs · artículo 02-45-0127 · ref. C-193X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-023', PROV_OCHOA, 46.53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-p-gallinero-11kgs-02450139',
+    nota: 'Tela P / Gallinero 11Kgs · artículo 02-45-0139 · ref. C-203X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-024', PROV_OCHOA, 16.91, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660001',
+    nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0001 · ref. 11/4"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-025', PROV_OCHOA, 76.66, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-pasante-p-malla-cicl-04660023',
+    nota: 'Copa Pasante P / Malla Cicl. · artículo 04-66-0023 · ref. 11/4"X11/2" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-026', PROV_OCHOA, 55.61, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-tensora-p-malla-ciclonica-04660024',
+    nota: 'Copa Tensora P / Malla Ciclonica · artículo 04-66-0024 · ref. 11/4" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-027', PROV_OCHOA, 36.96, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660026',
+    nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0026 · ref. 11/4"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-028', PROV_OCHOA, 60.03, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/union-p-tubo-de-malla-04660280',
+    nota: 'Union P / Tubo De Malla · artículo 04-66-0280 · ref. 11/4"REFORZADA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-029', PROV_OCHOA, 19.14, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660003',
+    nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0003 · ref. 11/2"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-030', PROV_OCHOA, 28.77, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660002',
+    nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0002 · ref. 11/2"LARGA-S/TORN. · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-031', PROV_OCHOA, 187.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-p-malla-ciclonica-doble-04660017',
+    nota: 'Brazo P / Malla Ciclonica Doble · artículo 04-66-0017 · ref. 11/2X11/4 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-032', PROV_OCHOA, 124.76, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-sencillo-p-malla-especial-04660251',
+    nota: 'Brazo Sencillo P / Malla Especial · artículo 04-66-0251 · ref. 11/2X11/4 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-033', PROV_OCHOA, 76.66, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-pasante-p-malla-cicl-04660021',
+    nota: 'Copa Pasante P / Malla Cicl. · artículo 04-66-0021 · ref. 11/2"X11/2" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-034', PROV_OCHOA, 61.63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660091',
+    nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0091 · ref. 11/2(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-035', PROV_OCHOA, 21.04, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660006',
+    nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0006 · ref. 2"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-036', PROV_OCHOA, 20.38, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-ciclonica-04660007',
+    nota: 'Abrazadera P / Malla Ciclonica · artículo 04-66-0007 · ref. 2"LARGA-S/TORN. · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-037', PROV_OCHOA, 187.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-para-malla-ciclonica-04660242',
+    nota: 'Brazo Para Malla Ciclonica · artículo 04-66-0242 · ref. 2X11/4SENCILLA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-038', PROV_OCHOA, 373.18, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-doble-p-tubo-malla-04660319',
+    nota: 'Brazo Doble P / Tubo Malla · artículo 04-66-0319 · ref. 2X11/2 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-039', PROV_OCHOA, 51.11, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660029',
+    nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0029 · ref. 2"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-040', PROV_OCHOA, 300.64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-p-malla-ciclonica-04660326',
+    nota: 'Brazo P / Malla Ciclonica · artículo 04-66-0326 · ref. 23/8X11/2 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-041', PROV_OCHOA, 36.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660030',
+    nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0030 · ref. 3"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-001', PROV_OCHOA, 299.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-alum-tubor0004-04730134',
+    nota: 'Tubo Red.D / Alum. Tubor0004 · artículo 04-73-0134 · ref. 3/8"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-002', PROV_OCHOA, 373.61, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-aluminio-tubor0008-04730054',
+    nota: 'Tubo Red.D / Aluminio Tubor0008 · artículo 04-73-0054 · ref. 1/2"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-003', PROV_OCHOA, 452.36, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-aluminio-plati0003-04680089',
+    nota: 'Planchuela D / Aluminio Plati0003 · artículo 04-68-0089 · ref. 1/2X1/819.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-004', PROV_OCHOA, 394.72, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-aluminio-angu0001-04530109',
+    nota: 'Angular D / Aluminio Angu0001 · artículo 04-53-0109 · ref. 1/2X1/2X(19.20) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-005', PROV_OCHOA, 377.71, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-d-aluminio-u-eu002-04530094',
+    nota: 'Moldura D / Aluminio ”U” Eu002 · artículo 04-53-0094 · ref. 1/2X1/2X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-006', PROV_OCHOA, 827.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-u-d-aluminio-can-007-04530108',
+    nota: 'Moldura ”U” D / Aluminio Can.007 · artículo 04-53-0108 · ref. 5/8X5/8X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-007', PROV_OCHOA, 772.42, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-alum-tubor0013-04730057',
+    nota: 'Tubo Red. D / Alum. Tubor0013 · artículo 04-73-0057 · ref. 3/4"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-008', PROV_OCHOA, 436.29, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-de-aluminio-19-20cm-04530111',
+    nota: 'Angular De Aluminio 19.20Cm · artículo 04-53-0111 · ref. 3/4X3/4X19.20 · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-009', PROV_OCHOA, 957.33, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-aluminio-tubor0021-04730053',
+    nota: 'Tubo Red.D / Aluminio Tubor0021 · artículo 04-73-0053 · ref. 1"(19.20PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-010', PROV_OCHOA, 1709.91, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-aluminio-plati0020-04680050',
+    nota: 'Planchuela D / Aluminio Plati0020 · artículo 04-68-0050 · ref. 1X1/4X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-011', PROV_OCHOA, 626.57, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-aluminio-ea-046-04530084',
+    nota: 'Angular D / Aluminio Ea-046 · artículo 04-53-0084 · ref. 1X3/4(19.20PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-012', PROV_OCHOA, 1336.93, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-aluminio-tubo-et076-04670007',
+    nota: 'Perfil Aluminio (Tubo Et076) · artículo 04-67-0007 · ref. 1X1"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-013', PROV_OCHOA, 2185.58, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-alum-tubor0028-04730051',
+    nota: 'Tubo Red.D / Alum. Tubor0028 · artículo 04-73-0051 · ref. 11/4"X(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-014', PROV_OCHOA, 982.22, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-alum-ea014-19-20-pie-04530113',
+    nota: 'Angular D / Alum. Ea014 (19.20 Pie) · artículo 04-53-0113 · ref. 11/4X11/4 · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-015', PROV_OCHOA, 2567.7, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alum-plati0032-04540065',
+    nota: 'Planchuela D / Alum Plati0032 · artículo 04-54-0065 · ref. 11/2X1/4(19.20P · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-016', PROV_OCHOA, 1117.37, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-d-aluminio-u-eu071-04530099',
+    nota: 'Moldura D / Aluminio ”U” Eu071 · artículo 04-53-0099 · ref. 11/2X3/4X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-017', PROV_OCHOA, 2473.52, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-aluminio-angu0019-04530114',
+    nota: 'Angular D / Aluminio Angu0019 · artículo 04-53-0114 · ref. 11/2X11/2(19.20P · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-018', PROV_OCHOA, 1701.73, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-cuad-d-alum-et087-tuboca0087-04670194',
+    nota: 'Perfil Cuad. D / Alum.Et087 Tuboca0087 · artículo 04-67-0194 · ref. 11/2X11/2(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-019', PROV_OCHOA, 1846.63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-rect-alum-et117-rect0117-04670073',
+    nota: 'Perfil Rect. Alum. Et117 Rect0117 · artículo 04-67-0073 · ref. 2X1(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-020', PROV_OCHOA, 3334.76, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-alum-1-8-angu0027-04530115',
+    nota: 'Angular D / Alum. 1 / 8 Angu0027 · artículo 04-53-0115 · ref. 2X2X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-021', PROV_OCHOA, 2695.59, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alum-plati0051-04540066',
+    nota: 'Planchuela D / Alum Plati0051 · artículo 04-54-0066 · ref. 3"X3/16(19.20PI) · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-022', PROV_OCHOA, 3956.93, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-rect-d-aluminio-et103-04670080',
+    nota: 'Perfil Rect. D / Aluminio Et103 · artículo 04-67-0080 · ref. 3X11/2X(19.2PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-023', PROV_OCHOA, 3464.55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alumino-plati0059-04540067',
+    nota: 'Planchuela D / Alumino Plati0059 · artículo 04-54-0067 · ref. 4"X1/819.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-024', PROV_OCHOA, 5142.65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-aluminio-nat-rect0101-04670119',
+    nota: 'Perfil Aluminio Nat. Rect0101 · artículo 04-67-0119 · ref. 4"X13/4"X(19.2P · marca EMMA. ' + SUPUESTO_ITBIS
   });
   /* ochoa:cotizaciones:fin */
 

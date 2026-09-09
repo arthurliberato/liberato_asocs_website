@@ -476,6 +476,50 @@ module.exports = {
   ]
 },
 
+'MAT-22': {
+  titulo: 'Precio de la malla ciclónica en República Dominicana',
+  desc: 'Precio del rollo de malla ciclónica por calibre y altura, más alambre de púas, telas metálicas y los herrajes de la verja, en RD.',
+  h1: 'Precio de la malla ciclónica y el cerramiento perimetral en República Dominicana',
+  intro: [
+    'Cerrar un solar es de las primeras partidas de cualquier obra y una de las más fáciles de cotizar mal, porque casi nadie pide la malla completa. Una verja no es solo el rollo: son los postes, las abrazaderas, los brazos, las copas terminales y tensoras, el alambre de púas de remate y la mano de obra. Pedir precio de «malla ciclónica» a secas deja fuera la mitad del costo.',
+    'El rollo se define por dos datos: el calibre del alambre y la altura. Un rollo calibre 9 de 6 pies y uno calibre 11 de 3 pies son productos distintos, y entre el más caro y el más barato del listado hay más del doble de diferencia. El calibre 9 es más grueso y va en cerramiento definitivo; el 11 se usa en cercas provisionales de obra y divisiones internas.'
+  ],
+  claves: [
+    ['Calibre y altura, siempre juntos', 'Los dos datos determinan el precio. El calibre 9 es el de cerramiento permanente; el 11 aguanta menos y se usa en cercas de obra.'],
+    ['La verja no es solo la malla', 'Postes, abrazaderas, brazos, copas y tensores pueden acercarse al costo del rollo. Conviene cotizarlos en la misma partida para no descubrirlos después.'],
+    ['Revestida en PVC para la costa', 'La malla galvanizada con revestimiento plástico cuesta más pero dura mucho más en ambiente salino. En primera línea de costa deja de ser un lujo.'],
+    ['La tela metálica es otra cosa', 'La tela de cuadrito y la de gallinero se venden por yarda y se piden por calibre y retícula. No sustituyen a la ciclónica en cerramiento perimetral.']
+  ],
+  faq: [
+    ['¿Cuánto mide un rollo de malla ciclónica?',
+     'En el mercado dominicano el rollo estándar trae 50 pies de largo, y la altura va de 3 a 8 pies según el uso. La altura es la que se pide primero, porque define cuántos rollos hacen falta para el perímetro y qué largo deben tener los postes.'],
+    ['¿Qué diferencia hay entre calibre 9 y calibre 11?',
+     'El número indica el grosor del alambre y va al revés: mientras más bajo el calibre, más grueso el alambre. El 9 es más resistente y es el que se usa en cerramiento definitivo; el 11 es más liviano y económico, y se reserva para cercas provisionales de obra o divisiones internas.']
+  ]
+},
+
+'MAT-23': {
+  titulo: 'Precio de los perfiles de aluminio en RD',
+  desc: 'Precio por medida de angulares, planchuelas, tubos y molduras de aluminio en República Dominicana, en tramos de 19.20 pies.',
+  h1: 'Precio de los perfiles de aluminio en República Dominicana',
+  intro: [
+    'El aluminio comercial se vende en tramos de 19.20 pies —unos 5.85 metros— y esa es la unidad que se factura. Aparece en marcos de ventana y screen, divisiones, remates, plafones, muebles y todo el trabajo de terminación donde el hierro se oxidaría o pesaría de más.',
+    'Es un rubro donde el catálogo del suplidor manda: buena parte de los perfiles se identifican por código de extrusora, no por medida, y dos piezas con el mismo nombre pueden ser dos secciones distintas. En esta página solo entran las medidas que el comercio declara de forma inequívoca; para las que van por código hay que pedir la muestra o el número de pieza.'
+  ],
+  claves: [
+    ['El tramo son 19.20 pies', 'No 20. Al cubicar un marco o una división hay que contar con esa medida, que es la que sale de la extrusora y la que factura el suplidor.'],
+    ['El espesor no siempre se declara', 'Dos angulares de la misma medida pueden tener paredes distintas. Si la pieza va a cargar, hay que confirmar el espesor antes de cerrar el precio.'],
+    ['Natural o anodizado', 'El aluminio natural es el más barato; anodizado o pintado cuesta más y aguanta mejor la intemperie y el ambiente salino.'],
+    ['Se pide por número de pieza', 'En perfilería de ventanería el mercado trabaja con códigos de extrusora. Guardar el número de la pieza usada ahorra tiempo en la próxima compra.']
+  ],
+  faq: [
+    ['¿Por qué el aluminio viene en 19.20 pies y no en 20?',
+     'Es la longitud estándar de salida de las extrusoras que abastecen el mercado local, equivalente a 5.85 metros. Conviene tenerlo presente al cubicar: un cálculo hecho con tramos de 20 pies se queda corto.'],
+    ['¿El aluminio sirve para elementos estructurales?',
+     'Para estructura de obra, no. El aluminio comercial de esta página va en ventanería, divisiones, remates y muebles. Los elementos que cargan se resuelven con acero, que es lo que está en las páginas de perfiles, angulares y tolas.']
+  ]
+},
+
 'MOS-01': {
   titulo: 'Precio del jornal de albañil y mano de obra en RD',
   desc: 'Jornales diarios de referencia de maestro constructor, albañil, ayudante, plomero, electricista, pintor y demás oficios en República Dominicana.',
