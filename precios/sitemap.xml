@@ -136,6 +136,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://precios.ingsliberato.com/precio-inodoros-urinarios.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://precios.ingsliberato.com/precio-lavamanos-pedestales.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://precios.ingsliberato.com/precio-muebles-espejos-bano.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://precios.ingsliberato.com/precio-accesorios-bano.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://precios.ingsliberato.com/precio-jornal-mano-de-obra.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

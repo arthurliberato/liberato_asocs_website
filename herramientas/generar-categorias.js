@@ -219,10 +219,11 @@ function fila(it) {
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
 
-  const detalle = PRECIOS.detalleHTML(it, {
-    nombreCat: (c) => (catPorCodigo[c] ? catPorCodigo[c].nombre : c),
-    proveedoresCategoria: PROV.lista.filter((p) => p.cats.indexOf(it.cat) !== -1),
-  });
+  /* La ficha de precios por proveedor NO se escribe aquí. app.js la genera
+     al abrirla, siempre desde los datos, para que refleje el filtro de
+     proveedores y el interruptor de ITBIS del momento: lo que viniera
+     escrito en el HTML se sobrescribiría en el primer clic. Dejarlo fuera
+     bajó el peso de las 32 páginas de 3,167 KB a 1,665 KB. */
 
   return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
@@ -238,7 +239,7 @@ function fila(it) {
       (it.ref === null ? '' :
         `<button class="btn-add" type="button" data-add="${esc(it.codigo)}" data-nombre="${esc(it.nombre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`) + `</td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6">${detalle}</td></tr>`;
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>`;
 }
 
 /* ---------- bloques de la página ---------- */

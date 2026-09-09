@@ -969,8 +969,30 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
    3. Lectura y clasificación
    ========================================================= */
 
-const articulos = JSON.parse(fs.readFileSync(FUENTE, 'utf8'));
-const conPrecio = articulos.filter(a => typeof a.precio === 'number' && a.precio > 0);
+/* Cada extracción trae su propio criterio. En materiales de construcción el
+   artículo se identifica por su medida, y la regla la busca en la ficha. En
+   baños se identifica por marca y modelo, y lo que hay que decidir es otra
+   cosa: si el artículo le sirve o no a un constructor. Ese criterio vive en
+   reglas-banos.js. */
+const BANOS = require('./reglas-banos.js');
+
+const FUENTES = [
+  {
+    archivo: FUENTE,
+    etiqueta: 'materiales de construcción',
+    motivo: 'la ficha no declara la medida',
+    regla: a => {
+      const r = REGLAS[a.cat2 + '/' + a.cat3];
+      return r ? r(a) : undefined;              // undefined = familia sin regla, ni se cuenta
+    }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ochoa-banos-2026-09-09.json'),
+    etiqueta: 'baños',
+    motivo: 'repuesto de consumidor, no equipamiento de obra',
+    regla: a => BANOS.regla(a) || null
+  }
+];
 
 /* Ochoa cotiza algunas barras POR PIE; la unidad completa son 20 pies,
    como dice su propia nota de facturación. */
@@ -979,14 +1001,24 @@ const precioUnidad = a => a.unidad === 'PIE' ? a.precio * PIES_POR_UNIDAD : a.pr
 const aExistente = [];
 const nuevos = [];
 const descartados = [];
+const totales = [];
 
-conPrecio.forEach(a => {
-  if (MAPEO[a.codigo]) { aExistente.push({ a, item: MAPEO[a.codigo] }); return; }
-  const regla = REGLAS[a.cat2 + '/' + a.cat3];
-  if (!regla) return;
-  const spec = regla(a);
-  if (!spec) { descartados.push({ a, motivo: 'la ficha no declara la medida' }); return; }
-  nuevos.push({ a, spec });
+FUENTES.forEach(fuente => {
+  const articulos = JSON.parse(fs.readFileSync(fuente.archivo, 'utf8'));
+  const conPrecio = articulos.filter(a => typeof a.precio === 'number' && a.precio > 0);
+  let dentro = 0, fuera = 0;
+
+  conPrecio.forEach(a => {
+    if (MAPEO[a.codigo]) { aExistente.push({ a, item: MAPEO[a.codigo] }); dentro++; return; }
+    const spec = fuente.regla(a);
+    if (spec === undefined) return;                       // familia sin regla
+    if (!spec) { descartados.push({ a, motivo: fuente.motivo }); fuera++; return; }
+    nuevos.push({ a, spec });
+    dentro++;
+  });
+
+  totales.push({ etiqueta: fuente.etiqueta, articulos: articulos.length,
+                 conPrecio: conPrecio.length, dentro, fuera });
 });
 
 /* =========================================================
@@ -1181,7 +1213,11 @@ function reemplazar(archivo, marca, bloque) {
 const porCategoria = {};
 lista.forEach(e => { porCategoria[e.spec.cat] = (porCategoria[e.spec.cat] || 0) + 1; });
 
-console.log('Extracción: ' + articulos.length + ' artículos, ' + conPrecio.length + ' con precio.');
+totales.forEach(t => {
+  console.log('Extracción de ' + t.etiqueta + ': ' + t.articulos + ' artículos, ' +
+              t.conPrecio + ' con precio, ' + t.dentro + ' aprovechados' +
+              (t.fuera ? ' y ' + t.fuera + ' descartados' : '') + '.');
+});
 console.log('');
 console.log('Ítems nuevos por categoría:');
 Object.keys(porCategoria).sort().forEach(c => {
@@ -1201,7 +1237,10 @@ if (rechazados.length) {
 }
 
 console.log('');
-console.log('Descartados porque la ficha no declara la medida: ' + descartados.length + '.');
+const porMotivo = {};
+descartados.forEach(x => { porMotivo[x.motivo] = (porMotivo[x.motivo] || 0) + 1; });
+console.log('Descartados (' + descartados.length + '):');
+Object.keys(porMotivo).forEach(m => console.log('  ' + String(porMotivo[m]).padStart(4) + '  ' + m));
 if (process.argv.indexOf('--descartes') >= 0) {
   const porFam = {};
   descartados.forEach(x => {

@@ -520,6 +520,94 @@ module.exports = {
   ]
 },
 
+'MAT-24': {
+  titulo: 'Precio de los inodoros en República Dominicana',
+  desc: 'Precio de inodoros de una y dos piezas, tanques, basinetas y urinarios en RD, con marca y modelo, para presupuestar el equipamiento de baños.',
+  h1: 'Precio de los inodoros y urinarios en República Dominicana',
+  intro: [
+    'El inodoro es la partida que más se repite en un proyecto residencial y la que más se subestima al presupuestar, porque el rango es enorme: entre el modelo más económico y uno de gama alta hay cinco o seis veces de diferencia. Multiplicado por la cantidad de baños de un edificio, esa decisión mueve el presupuesto más que muchas partidas de obra gris.',
+    'Hay una trampa que conviene conocer: el inodoro de dos piezas casi nunca se vende completo. El comercio factura el tanque por un lado y la basineta por otro, con precios separados. Quien cotiza mirando solo el tanque se queda corto por más de la mitad. En el listado de abajo las dos piezas aparecen por separado, tal como se compran, y cada una dice qué es.'
+  ],
+  claves: [
+    ['Tanque y basineta se suman', 'El inodoro de dos piezas son dos partidas. Verificar siempre que la cotización incluya ambas, y del mismo modelo y color.'],
+    ['Una pieza o dos piezas', 'El de una pieza cuesta más pero se instala más rápido y se limpia mejor. El de dos piezas domina en vivienda económica y en obra de volumen.'],
+    ['El asiento no siempre viene incluido', 'Algunos modelos lo traen y otros no. Revisar la ficha antes de cerrar el precio, porque el asiento se cotiza aparte.'],
+    ['Redondo o elongado', 'El elongado es más cómodo y ocupa unos centímetros más. En baños pequeños el redondo puede ser la única opción que entra.']
+  ],
+  faq: [
+    ['¿Por qué el tanque y la basineta tienen precios separados?',
+     'Porque el comercio los vende como piezas independientes: cada una tiene su propio código y su propio precio. Un inodoro de dos piezas completo es la suma de las dos, del mismo modelo y color. Al presupuestar hay que contar las dos líneas.'],
+    ['¿Qué diferencia hay entre un inodoro de una pieza y uno de dos?',
+     'El de una pieza viene fundido en un solo cuerpo de cerámica: cuesta más, se instala más rápido y no tiene la junta entre tanque y taza, que es donde se acumula la suciedad. El de dos piezas es más económico y es el que domina en vivienda de volumen.']
+  ]
+},
+
+'MAT-25': {
+  titulo: 'Precio de los lavamanos en República Dominicana',
+  desc: 'Precio de lavamanos de pedestal, de sobreponer y de empotrar en RD, con marca y modelo, más pedestales y palometas de soporte.',
+  h1: 'Precio de los lavamanos y pedestales en República Dominicana',
+  intro: [
+    'El lavamanos se decide por cómo se monta, y esa decisión arrastra el resto del baño. El de pedestal esconde la tubería y no necesita mueble. El de sobreponer va encima de una cubierta o de un mueble y suele ser el de mayor efecto visual. El de empotrar se instala dentro de la cubierta y pide un tope de granito, mármol o porcelanato que hay que presupuestar aparte.',
+    'Igual que con el inodoro, hay piezas que se venden por separado. El pedestal tiene su propio código y su propio precio: un lavamanos de pedestal son dos partidas. Y el de sobreponer sobre pared necesita palometas, que son los soportes metálicos que lo sostienen. Ninguna de las dos cosas viene incluida.'
+  ],
+  claves: [
+    ['El pedestal se cotiza aparte', 'Lavamanos y pedestal son dos códigos distintos. Contar las dos líneas o el presupuesto queda corto.'],
+    ['El de empotrar arrastra la cubierta', 'Si el lavamanos va dentro de un tope, ese tope —granito, mármol, porcelanato— es una partida adicional y suele costar más que el aparato.'],
+    ['Uno, dos o tres agujeros', 'El número de perforaciones define qué grifería entra. Un lavamanos de un agujero no admite una mezcladora de tres piezas.'],
+    ['Con o sin rebosadero', 'El rebosadero cambia el desagüe que hay que comprar. Es un detalle chico que detiene una instalación.']
+  ],
+  faq: [
+    ['¿El precio del lavamanos incluye el pedestal?',
+     'No. En el catálogo del comercio son dos artículos con precios distintos, y así aparecen aquí. Un lavamanos de pedestal completo es la suma de los dos, del mismo modelo y color.'],
+    ['¿Qué es una palometa y cuándo hace falta?',
+     'Es el soporte metálico que se ancla a la pared para sostener un lavamanos que no lleva pedestal ni mueble. Va oculta bajo el aparato y se cotiza por unidad, generalmente en par.']
+  ]
+},
+
+'MAT-26': {
+  titulo: 'Precio de muebles y espejos de baño en RD',
+  desc: 'Precio de muebles de baño con lavamanos, botiquines, espejos y cabinas de ducha en República Dominicana, con marca y modelo.',
+  h1: 'Precio de los muebles, espejos y botiquines de baño en República Dominicana',
+  intro: [
+    'Es la partida de terminación del baño y la más visible para el cliente final. El mueble con lavamanos resuelve almacenamiento y desagüe en una sola compra, y por eso ha ido desplazando al lavamanos de pedestal en vivienda de gama media y alta. El botiquín y el espejo completan el conjunto sobre el lavamanos.',
+    'A la hora de presupuestar hay dos cosas que conviene fijar temprano: si el mueble viene con el lavamanos incluido o hay que comprarlo aparte, y si el espejo lleva luz. Los espejos y botiquines con LED necesitan una salida eléctrica prevista en la pared, y eso hay que decidirlo antes de que el electricista cierre el pañete, no después.'
+  ],
+  claves: [
+    ['¿Trae lavamanos el mueble?', 'Algunos modelos vienen con la cubierta y el lavamanos incluidos y otros no. Es la diferencia más común entre dos cotizaciones que parecen iguales.'],
+    ['El espejo con luz pide instalación eléctrica', 'Un botiquín o espejo LED necesita punto eléctrico previsto. Definirlo antes de cerrar el pañete evita romper pared después.'],
+    ['Suspendido o de piso', 'El mueble suspendido despeja el piso y facilita la limpieza, pero exige un anclaje firme y define la altura del desagüe.'],
+    ['La cabina cambia la albañilería', 'Una cabina prefabricada tiene medidas fijas. Si se decide después de levantar los muros, casi nunca calza.']
+  ],
+  faq: [
+    ['¿El mueble de baño incluye el lavamanos?',
+     'Depende del modelo: unos vienen con la cubierta y el lavamanos y otros se venden solo como mueble. Es lo primero que hay que confirmar al comparar dos precios, porque explica buena parte de la diferencia.'],
+    ['¿Qué hay que prever para un espejo o botiquín con luz LED?',
+     'Un punto eléctrico en la pared, a la altura del espejo, y protección del circuito del baño. Conviene definirlo en la etapa de instalaciones: dejarlo para el final significa romper pañete y cerámica ya terminados.']
+  ]
+},
+
+'MAT-27': {
+  titulo: 'Precio de los accesorios de baño en RD',
+  desc: 'Precio de juegos de accesorios de baño, toalleros, portapapel, barras de seguridad y secadores de manos en República Dominicana.',
+  h1: 'Precio de los accesorios de baño en República Dominicana',
+  intro: [
+    'Es la última partida del baño y la que más veces se olvida en el presupuesto original. Individualmente cada pieza cuesta poco; multiplicada por la cantidad de baños de un proyecto, el juego de accesorios se convierte en una cifra que conviene tener desde el principio y no descubrir al final.',
+    'Se compra de dos formas y no dan lo mismo. El juego completo —toallero, portapapel, jabonera y portacepillos de la misma línea— sale más económico y garantiza que todo combine. Las piezas sueltas tienen sentido cuando hay que igualar una línea existente o cuando el proyecto pide algo específico, como las barras de seguridad de un baño accesible.'
+  ],
+  claves: [
+    ['El juego sale mejor que las piezas sueltas', 'Comprar el kit de la misma línea cuesta menos y evita que el acabado de una pieza no combine con el resto.'],
+    ['Las barras de seguridad no son un accesorio más', 'En baños accesibles y en proyectos hoteleros y de salud son obligatorias, y su anclaje tiene que resolverse en el muro, no en la cerámica.'],
+    ['El acabado tiene que aguantar el ambiente', 'En zona costera el cromo económico se pica. Acero inoxidable o latón con buen acabado cuestan más y duran.'],
+    ['Se instalan al final, se deciden al principio', 'El anclaje de un toallero o de una barra depende de dónde quedaron los blocks y las juntas de la cerámica.']
+  ],
+  faq: [
+    ['¿Qué trae un juego de accesorios de baño?',
+     'Lo habitual son cuatro a seis piezas de la misma línea: toallero de barra, toallero de anilla, portapapel, jabonera y portacepillos, a veces con gancho. La cantidad viene indicada en el nombre del producto y cambia bastante el precio.'],
+    ['¿Cuántas barras de seguridad lleva un baño accesible?',
+     'Como mínimo una junto al inodoro y otra en la ducha, con el anclaje resuelto contra el muro y no solo contra la cerámica. En proyectos hoteleros y de salud la cantidad y la posición las fija la normativa del proyecto.']
+  ]
+},
+
 'MOS-01': {
   titulo: 'Precio del jornal de albañil y mano de obra en RD',
   desc: 'Jornales diarios de referencia de maestro constructor, albañil, ayudante, plomero, electricista, pintor y demás oficios en República Dominicana.',

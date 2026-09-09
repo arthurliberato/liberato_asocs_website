@@ -18,7 +18,7 @@ precios/
   catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           32 páginas estáticas, una por categoría   ← GENERADAS
+  precio-*.html           36 páginas estáticas, una por categoría   ← GENERADAS
   costo-licencias-…html
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
@@ -46,7 +46,7 @@ python3 -m http.server 8000
 
 ---
 
-## Las 32 páginas de categoría (generadas)
+## Las 36 páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
@@ -128,7 +128,7 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **581 ítems**. De ellos, **287 ya llevan un precio real** de un comercio
+El catálogo tiene **1,082 ítems**. De ellos, **788 ya llevan un precio real** de un comercio
 que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
@@ -196,7 +196,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **287 de 575 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **788 de 1,076 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -294,20 +294,21 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**329 cotizaciones reales cargadas · 287 ítems verificados de 575.**
+**868 cotizaciones reales cargadas · 788 ítems verificados de 1,076.**
 
 Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — extracción completa del catálogo de construcción de Ochoa: 398
-  artículos, 349 con precio. De ahí salieron 8 cotizaciones sobre ítems que ya existían
-  y **273 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
-  estimación nuestra.
+- **09/09/2026** — dos extracciones completas del catálogo de Ochoa, la de materiales de
+  construcción (398 artículos, 349 con precio) y la de baños (945 artículos, 713 con
+  precio). De ahí salieron 8 cotizaciones sobre ítems que ya existían y **774 ítems
+  nuevos que nacieron verificados**, con su precio real en lugar de una estimación
+  nuestra.
 
 Los 288 ítems restantes siguen siendo estimaciones nuestras.
 
-Cinco categorías nuevas salieron enteras de esa extracción y llegaron verificadas desde
-el primer día:
+Nueve categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
+desde el primer día:
 
 | | Categoría | Ítems |
 |---|---|---|
@@ -316,15 +317,22 @@ el primer día:
 | `MAT-21` | Tolas y láminas de acero | 29 |
 | `MAT-22` | Cerramiento perimetral | 41 |
 | `MAT-23` | Perfilería de aluminio | 24 |
+| `MAT-24` | Inodoros y urinarios | 116 |
+| `MAT-25` | Lavamanos y pedestales | 93 |
+| `MAT-26` | Muebles y espejos de baño | 75 |
+| `MAT-27` | Accesorios de baño | 160 |
 
-El resto se repartió en categorías que ya existían: separadores y couplers de varilla en
-`MAT-04`, zinc de techo en `MAT-07`, polvo de color para mosaico en `MAT-08`, agregados
-ensacados en `MAT-01` y presentaciones menudas de cemento y yeso en `MAT-02`.
+El resto se repartió en categorías que ya existían: duchas y grifería en `MAT-09`,
+separadores y couplers de varilla en `MAT-04`, zinc de techo en `MAT-07`, polvo de color
+para mosaico en `MAT-08`, agregados ensacados en `MAT-01` y presentaciones menudas de
+cemento y yeso en `MAT-02`.
 
 ## Importar el catálogo de un proveedor
 
 ```bash
 node herramientas/importar-ochoa.js              # revisar, sin escribir
+node herramientas/importar-ochoa.js --listar     # ver los ítems que saldrían
+node herramientas/importar-ochoa.js --descartes  # ver qué se quedó fuera y por qué
 node herramientas/importar-ochoa.js --escribir   # aplicar
 node herramientas/generar-categorias.js          # rehacer las páginas
 ```
@@ -333,7 +341,8 @@ La fuente es `herramientas/datos-externos/ochoa-AAAA-MM-DD.json`, la extracción
 catálogo tal como la publica el comercio. **Queda versionada en el repositorio** para que
 cualquiera pueda repetir la importación y ver de dónde salió cada número.
 
-La herramienta escribe entre marcadores: `ochoa:items` en `datos-catalogo.js` y
+Lee las dos extracciones de `herramientas/datos-externos/` en una sola corrida y escribe
+entre marcadores: `ochoa:items` en `datos-catalogo.js` y
 `ochoa:cotizaciones` en `datos-precios.js`. Todo lo que hay entre ellos se reescribe
 entero en cada corrida, así que no se edita a mano. Correrla dos veces seguidas deja los
 archivos idénticos.
@@ -346,6 +355,29 @@ uno por uno. No hay emparejamiento automático por parecido de texto: lo probamo
 
 **2. `REGLAS`** — familias completas donde la ficha del comercio declara la medida
 exacta. De cada artículo sale un ítem nuevo del catálogo, ya verificado.
+
+Cada extracción trae su propio criterio, y por eso hay dos juegos de reglas. En
+materiales de construcción el artículo se identifica por su medida, y la regla la busca
+en la ficha. En baños se identifica por marca y modelo, y lo que hay que decidir es otra
+cosa: **si el artículo le sirve o no a un constructor.** Ese criterio vive en
+`herramientas/reglas-banos.js`.
+
+### La regla de los baños: equipamiento sí, repuesto no
+
+Entra lo que un constructor presupuesta e instala como parte de la obra, y queda fuera el
+repuesto que compra el dueño de casa para cambiar una pieza rota.
+
+Un inodoro entra. Una tapa de inodoro no. Tampoco una manecilla, una pera, un flotador ni
+un juego de tornillos de tanque. No es que sean malos productos: es que nadie los pone en
+un presupuesto de obra, y cada fila que no se usa le quita claridad a las que sí. De los
+713 artículos con precio de la extracción de baños, 174 se quedaron fuera por esa regla.
+
+La única excepción es el kit de instalación de inodoro, que sí es de obra: es lo que el
+plomero compra por cada aparato que monta.
+
+Ojo con las categorías del comercio, que no son de fiar: hay espejos dentro de «muebles
+de baños», botiquines LED dentro de «espejos» y barras de seguridad dentro de «secador de
+manos». Por eso todo se clasifica por el nombre del producto, que sí es consistente.
 
 Hay una regla por familia, y cada una sabe leer la forma en que ese rubro escribe su
 medida: los angulares la traen en la descripción («1-1/2 X 1/8 pulgadas»), la perfilería
@@ -622,7 +654,7 @@ Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose dis
 hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
-  generador: eso rehace las 32 páginas de categoría, la portada y el `sitemap.xml`;
+  generador: eso rehace las 36 páginas de categoría, la portada y el `sitemap.xml`;
 - las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
@@ -648,7 +680,7 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 32 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
+- Las 36 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
   el catálogo interactivo funcionan como concentradores.
 - `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
   ya no está en el `sitemap.xml`: la versión indexable de esa categoría es
