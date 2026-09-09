@@ -128,7 +128,7 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **570 ítems**. De ellos, **276 ya llevan un precio real** de un comercio
+El catálogo tiene **581 ítems**. De ellos, **287 ya llevan un precio real** de un comercio
 que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
@@ -196,7 +196,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **276 de 564 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **287 de 575 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -294,14 +294,14 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**316 cotizaciones reales cargadas · 276 ítems verificados de 564.**
+**329 cotizaciones reales cargadas · 287 ítems verificados de 575.**
 
 Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
 - **09/09/2026** — extracción completa del catálogo de construcción de Ochoa: 398
   artículos, 349 con precio. De ahí salieron 8 cotizaciones sobre ítems que ya existían
-  y **257 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
+  y **273 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
   estimación nuestra.
 
 Los 288 ítems restantes siguen siendo estimaciones nuestras.
@@ -311,8 +311,8 @@ el primer día:
 
 | | Categoría | Ítems |
 |---|---|---|
-| `MAT-19` | Perfiles y tubos de acero | 44 |
-| `MAT-20` | Angulares, planchuelas y barras | 58 |
+| `MAT-19` | Perfiles y tubos de acero | 46 |
+| `MAT-20` | Angulares, planchuelas y barras | 62 |
 | `MAT-21` | Tolas y láminas de acero | 29 |
 | `MAT-22` | Cerramiento perimetral | 41 |
 | `MAT-23` | Perfilería de aluminio | 24 |
@@ -351,6 +351,10 @@ Hay una regla por familia, y cada una sabe leer la forma en que ese rubro escrib
 medida: los angulares la traen en la descripción («1-1/2 X 1/8 pulgadas»), la perfilería
 la reparte entre la descripción y el nombre (la pared en milímetros), y el cerramiento la
 lleva entera en la referencia (`C-096X50` es calibre 9, 6 pies de alto, rollo de 50).
+
+La medida se busca primero en la descripción y, si no está, en la referencia del
+fabricante: `3/4X11/2X20` es un perfil de 3/4 x 1 1/2 pulgadas en 20 pies. Eso rescató una
+docena de artículos que la descripción dejaba mudos.
 
 Un detalle del oficio que hubo que enseñarle al lector de medidas: el comercio escribe los
 números mixtos pegados, y «11/2» es una pulgada y media, no once medios. La regla que los

@@ -106,9 +106,14 @@ const MEDIDA = /^\s*(\d[\d\s\/\-.]*(?:\s*[xX×]\s*\d[\d\s\/\-.]*)*)/;
 function dimension(a) {
   const t = limpia(a.info);
   const m = t.match(/Dimensi[oóé]n[eé]?s?\s*:\s*(.{2,80})/i) || t.match(/Tama[nñ]o\s*:\s*(.{2,80})/i);
-  if (!m) return '';
-  const v = m[1].replace(/''|"|”|“|'|’/g, ' ').match(MEDIDA);
-  return v ? limpia(v[1]).replace(/[.,\-]$/, '') : '';
+  if (m) {
+    const v = m[1].replace(/''|"|”|“|'|’/g, ' ').match(MEDIDA);
+    if (v) return limpia(v[1]).replace(/[.,\-]$/, '');
+  }
+  /* Cuando la descripción no la trae, la referencia del fabricante casi
+     siempre sí: "3/4X11/2X20" es un perfil de 3/4 x 1 1/2 en 20 pies. */
+  const r = String(a.ref || '').replace(/''|"|”|“|'|’/g, ' ').match(MEDIDA);
+  return r ? limpia(r[1]).replace(/[.,\-]$/, '') : '';
 }
 
 /* Algunas tolas declaran el espesor aparte, como "Calibre: 1/8 pulgadas". */
@@ -210,22 +215,25 @@ const REGLAS = {
 
   /* ---- Barras lisas, cuadradas y redondas ---- */
   'hierros/barras': function (a) {
-    const cuad = /Cuadrada/i.test(a.nombre), red = /Redonda/i.test(a.nombre);
-    if (!cuad && !red) return null;                       // «Barra Torneada» no declara medida
+    const cuad = /Cuadrada/i.test(a.nombre);
+    const tor = /Torneada/i.test(a.nombre);
+    if (!cuad && !tor && !/Redonda/i.test(a.nombre)) return null;
     const p = partes(dimension(a));
     const l = p.length ? frac(p[0]) : null;
     if (!l) return null;
-    const forma = cuad ? 'cuadrada' : 'redonda';
+    const forma = cuad ? 'cuadrada' : tor ? 'redonda torneada' : 'redonda';
     return {
       cat: 'MAT-20',
-      clave: 'barra-' + forma + '-' + l.n,
-      orden: 2000 + (cuad ? 0 : 100) + l.n,
+      clave: 'barra-' + forma.replace(/\s/g, '-') + '-' + l.n,
+      orden: 2000 + (cuad ? 0 : tor ? 200 : 100) + l.n,
       nombre: 'Barra ' + forma + ' de acero ' + pulg(l) + ' x 20 pies',
       unidad: 'unidad',
-      esp: 'Acero al carbono liso · sección ' + forma + ' de ' + pulg(l) + ' · barra de 20 pies',
+      esp: 'Acero al carbono liso · sección ' + forma + ' de ' + pulg(l) +
+           (tor ? ' · rectificada a medida' : '') + ' · barra de 20 pies',
       etapa: 'estructura',
       origen: 'importado',
-      alias: cuad ? 'barra cuadrada, hierro cuadrado' : 'barra lisa, hierro redondo liso'
+      alias: cuad ? 'barra cuadrada, hierro cuadrado' :
+             tor ? 'barra torneada, eje de acero' : 'barra lisa, hierro redondo liso'
     };
   },
 
@@ -355,8 +363,8 @@ const REGLAS = {
   /* ---- Techos de zinc ---- */
   'hierros/planchas': function (a) {
     const p = partes(dimension(a));
-    const an = p.length === 2 ? frac(p[0]) : null;
-    const la = p.length === 2 ? frac(p[1]) : null;
+    let an = p.length === 2 ? frac(p[0]) : null;
+    let la = p.length === 2 ? frac(p[1]) : null;
 
     if (/Zinc Tra[ns]*lucido/i.test(a.nombre)) {
       if (!an || !la) return null;
@@ -389,9 +397,79 @@ const REGLAS = {
       };
     }
 
-    const m = a.nombre.match(/Plancha De Zinc (Acanalado|Liso) C-(\d+)/i);
-    if (!m || !an || !la) return null;
-    const tipo = m[1].toLowerCase(), cal = m[2];
+    const ref = String(a.ref || '').replace(/["'\u2019\u201d]/g, '').toUpperCase();
+
+    /* El caballete y el caño no declaran medida en la descripción, pero la
+       referencia sí: "CAL-29X6'" es calibre 29 en 6 pies. */
+    let z = /Caballete De Zinc/i.test(a.nombre) && ref.match(/^CAL-(\d+)X(\d+)/);
+    if (z) {
+      return {
+        cat: 'MAT-07',
+        clave: 'caballete-zinc-' + z[1] + '-' + z[2],
+        orden: 500 + (+z[1]),
+        nombre: 'Caballete de zinc calibre ' + z[1] + ', ' + z[2] + ' pies',
+        unidad: 'unidad',
+        esp: 'Pieza de remate para cumbrera de techo de zinc · calibre ' + z[1] +
+             ' · ' + z[2] + ' pies',
+        etapa: 'techos',
+        gama: 'economica',
+        alias: 'cumbrera de zinc, capote de techo'
+      };
+    }
+
+    z = /Ca[ñn]o Para Aluzinc/i.test(a.nombre) && ref.match(/^([\d\/]+)X([\d\/]+)X(\d+)/);
+    if (z) {
+      const d1 = frac(z[1]), d2 = frac(z[2]);
+      if (!d1 || !d2) return null;
+      return {
+        cat: 'MAT-07',
+        clave: 'cano-aluzinc-' + d1.n + 'x' + d2.n + '-' + z[3],
+        orden: 600 + d1.n,
+        nombre: 'Caño para aluzinc ' + pulg(d1) + ' x ' + pulg(d2) + ' x ' + z[3] + ' pies',
+        unidad: 'unidad',
+        esp: 'Canal de desagüe para techo de aluzinc · ' + pulg(d1) + ' x ' + pulg(d2) +
+             ' · tramo de ' + z[3] + ' pies',
+        etapa: 'techos',
+        origen: 'importado',
+        alias: 'canal de techo, canaleta de aluzinc'
+      };
+    }
+
+    /* La planchuela de acero inoxidable va aparte: a RD$ 263 la libra no es
+       la misma pieza que la de hierro negro a 35, y no debe promediar con
+       ella. Se cotiza por pie, y la unidad son 20. */
+    z = /Planchuela Acero Inox/i.test(a.nombre) && ref.match(/^([\d\/]+)X([\d\/]+)X(\d+)/);
+    if (z) {
+      const w1 = frac(z[1]), w2 = frac(z[2]);
+      if (!w1 || !w2) return null;
+      return {
+        cat: 'MAT-20',
+        clave: 'planchuela-inox-' + w1.n + 'x' + w2.n,
+        orden: 1900 + w1.n,
+        nombre: 'Planchuela de acero inoxidable ' + pulg(w1) + ' x ' + pulg(w2) + ' x ' + z[3] + ' pies',
+        unidad: 'unidad',
+        esp: 'Pletina de acero inoxidable · ' + pulg(w1) + ' x ' + pulg(w2) +
+             ' · barra de ' + z[3] + ' pies',
+        etapa: 'estructura',
+        gama: 'premium',
+        origen: 'importado',
+        alias: 'pletina inoxidable, planchuela inox'
+      };
+    }
+
+    /* "Zinc Acanalado (Sol)" y "Zinc Liso 6 Lbs." son el mismo producto que
+       las planchas de arriba con otro nombre; la referencia lo dice. */
+    let m = a.nombre.match(/Plancha De Zinc (Acanalado|Liso) C-(\d+)/i);
+    let tipo, cal;
+    if (m) { tipo = m[1].toLowerCase(); cal = m[2]; }
+    else {
+      const alt = a.nombre.match(/^Zinc (Acanalado|Liso)\b/i) && ref.match(/^C-(\d+)(\d)X(\d+)$/);
+      if (!alt) return null;
+      tipo = a.nombre.match(/^Zinc (Acanalado|Liso)\b/i)[1].toLowerCase();
+      cal = alt[1];
+      an = frac(alt[2]); la = frac(alt[3]);
+    }
+    if (!an || !la) return null;
     return {
       cat: 'MAT-07',
       clave: 'zinc-' + tipo + '-' + cal + '-' + an.n + 'x' + la.n,
@@ -418,6 +496,40 @@ const REGLAS = {
         esp: 'Acero al carbono con acabado galvanizado · calibre ' + m[1],
         etapa: 'estructura',
         alias: 'alambre galvanizado, alambre de amarre'
+      };
+    }
+
+    if (/Alambre Galv\. Picado/i.test(a.nombre)) {
+      const k = String(a.ref).toUpperCase().match(/^CAJA(\d+)LB/);
+      if (!k) return null;
+      return {
+        cat: 'MAT-04',
+        clave: 'alambre-picado-caja-' + k[1],
+        orden: 700,
+        nombre: 'Alambre galvanizado picado, caja de ' + k[1] + ' lb',
+        unidad: 'caja',
+        esp: 'Alambre galvanizado cortado a medida para amarre · caja de ' + k[1] + ' libras',
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: 'alambre picado, alambre cortado de amarre'
+      };
+    }
+
+    if (/Alambre Liso Galv\. Picado/i.test(a.nombre)) {
+      const k = a.nombre.match(/(\d+)\s*Lib/i);
+      const cal = String(a.ref).toUpperCase().match(/^C-(\d+)/);
+      if (!k || !cal) return null;
+      return {
+        cat: 'MAT-04',
+        clave: 'alambre-liso-picado-' + cal[1] + '-' + k[1],
+        orden: 750,
+        nombre: 'Alambre liso galvanizado picado calibre ' + cal[1] + ', paquete de ' + k[1] + ' lb',
+        unidad: 'paquete',
+        esp: 'Alambre liso galvanizado cortado para amarre · calibre ' + cal[1] +
+             ' · paquete de ' + k[1] + ' libras',
+        etapa: 'estructura',
+        origen: 'importado',
+        alias: 'alambre picado, alambre de amarre cortado'
       };
     }
 
@@ -1090,6 +1202,18 @@ if (rechazados.length) {
 
 console.log('');
 console.log('Descartados porque la ficha no declara la medida: ' + descartados.length + '.');
+if (process.argv.indexOf('--descartes') >= 0) {
+  const porFam = {};
+  descartados.forEach(x => {
+    const f = x.a.cat2 + '/' + x.a.cat3;
+    (porFam[f] = porFam[f] || []).push(x.a);
+  });
+  Object.keys(porFam).sort().forEach(f => {
+    console.log('  — ' + f + ' (' + porFam[f].length + ')');
+    porFam[f].forEach(a => console.log('     ' + a.codigo + '  ' + a.nombre +
+      '  · ref ' + (a.ref || '—')));
+  });
+}
 
 if (process.argv.indexOf('--listar') >= 0) {
   console.log('');
