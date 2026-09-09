@@ -111,23 +111,22 @@
      De paso quedó dicho que el precio se movió: el pino de 1/2 estaba en
      RD$ 1,495 y aparece en 1,425. */
 
-  /* Los dos tubos de PVC vienen en presentación de 19 pies, no de 20 como
-     dice la ficha del ítem. Se registran con su unidad real: el modelo los
-     muestra pero los deja fuera del cálculo, porque comparar 19 con 20 pies
-     daría un precio de referencia falso. Ver la nota del README. */
-  c('MAT-09-001', 'Ferretería Ochoa (8A)', 1494.58, {
+  /* El PVC sanitario viene en presentación de 19 pies, no de 20 como decía
+     nuestra ficha. Lo confirmaron dos comercios por separado: Ochoa lo
+     factura por pies con un mínimo de 19, y Cima publica toda su línea
+     SDR-41 y SDR-26 como «x 19». La especificación del ítem se corrigió y
+     estas cotizaciones ya no necesitan declarar otra unidad: cuentan. */
+  c('MAT-32-001', 'Ferretería Ochoa (8A)', 1494.58, {
     fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
-    unidad: 'tubo de 19 pies',
     nota: 'Tubo PVC semi-presión SDR-41 de 4" x 19 pies. La tienda factura por pies con un mínimo de 19, que equivale a una unidad. ' + SUPUESTO_ITBIS
   });
 
-  c('MAT-09-002', 'Ferretería Ochoa (8A)', 503.78, {
+  c('MAT-32-002', 'Ferretería Ochoa (8A)', 503.78, {
     fecha: '2026-09-08', fuente: 'Listado de marca en ochoa.com.do',
-    unidad: 'tubo de 19 pies',
     nota: 'Tubo PVC SDR-41 de 2" x 19 pies, marca CORVI. Precio tomado del listado de marca, no de la ficha del producto. ' + SUPUESTO_ITBIS
   });
 
-  c('MAT-09-008', 'Ferretería Ochoa (8A)', 6107.20, {
+  c('MAT-09-001', 'Ferretería Ochoa (8A)', 6107.20, {
     fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
     nota: 'Inodoro de una pieza Ares C con asiento, marca Ultra. ' + SUPUESTO_ITBIS
   });
@@ -159,6 +158,7 @@
 
   var PROV_OCHOA = 'Ferretería Ochoa (8A)';
   var PROV_INNOVA = 'InnovaCentro (La Innovación)';
+  var PROV_CIMA = 'Ferretería Cima';
 
 /* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.
      No editar a mano: se reescribe en cada importación. */
@@ -515,6 +515,82 @@
   c('MAT-13-001', PROV_INNOVA, 895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesdeyesoyaccesorios/plancha-yeso-knauf-4-x8-x1-3-2-7-004771',
     nota: 'PLANCHA YESO KNAUF 4\'X8\'X1/2" · artículo 004771 · ref. Plancha · marca KNAUF. ' + SUPUESTO_ITBIS
+  });
+
+  /* Cima · materiales */
+  c('MAT-02-001', PROV_CIMA, 600, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-gris-funda',
+    nota: 'CEMENTO GRIS FUNDA · artículo 061084. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-017', PROV_CIMA, 310, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pegamento-ceramica-gris-50lb-p',
+    nota: 'PEGAMENTO CERAMICA GRIS 50LB P · artículo 001156. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-168', PROV_CIMA, 330, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cer-1-5mm-300-1-2913',
+    nota: 'SEPARADOR CER 1.5MM 300/1 2912 · artículo 8413797269918. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-009', PROV_CIMA, 385, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcla-panete-funda-93lbs',
+    nota: 'MEZCLA PANETE FUNDA 94LBS · artículo 001050. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-005', PROV_CIMA, 345, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcla-junta-block-funda-93lbs',
+    nota: 'MEZCLA JUNTA BLOCK FUNDA 93LBS · artículo 001052. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-013', PROV_CIMA, 515, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-salmon-5kgs',
+    nota: 'DERRETIDO SALMON 5KGS · artículo 030024. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-003', PROV_CIMA, 1595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-funda-40kg',
+    nota: 'CEMENTO BLANCO FUNDA 40KG · artículo 001060. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-177', PROV_CIMA, 390, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-5mm-100-1-2903',
+    nota: 'SEPARADOR CERA 5MM 100/1 2903 · artículo 8413797029031. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-174', PROV_CIMA, 340, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-3mm-200-1-2902',
+    nota: 'SEPARADOR CERA 3MM 200/1 2902 · artículo 8413797029024. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-168', PROV_CIMA, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-1-5mm-300-1-602',
+    nota: 'SEPARADOR CERA 1.5MM 300/1 602 · artículo 7897451462739. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-013', PROV_CIMA, 525, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-white-5kgs',
+    nota: 'DERRETIDO WHITE 5KGS · artículo 098595. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-013', PROV_CIMA, 495, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-linchen-5kgs',
+    nota: 'DERRETIDO LINCHEN 5KGS · artículo 020320. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-013', PROV_CIMA, 520, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-gris-5kgs',
+    nota: 'DERRETIDO GRIS 5KGS · artículo 020303. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_CIMA, 2905, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/alambre-puas-calibre-16-250mts-1',
+    nota: 'ALAMBRE PUAS CALIBRE 16 250MTS · artículo 7861136600945. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_CIMA, 2663, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/alambre-puas-calibre-16-250mts',
+    nota: 'ALAMBRE PUAS CALIBRE 16 250MTS · artículo 465281263088. ' + SUPUESTO_ITBIS
+  });
+
+  /* Cima · plomería y baños */
+  c('MAT-32-001', PROV_CIMA, 1695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-41-4-x-19',
+    nota: 'TUBO PVC SDR-41 4 x 19 · artículo 250613. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-002', PROV_CIMA, 595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-41-2-x-19',
+    nota: 'TUBO PVC SDR-41 2 x 19 · artículo 272814. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-006', PROV_CIMA, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-4-x-90',
+    nota: 'CODO PVC DRENAJE 4 x 90 · artículo 030333. ' + SUPUESTO_ITBIS
   });
 
   /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */
@@ -4822,497 +4898,1145 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfiles-fibra-veg-beige-10mm-01096717',
     nota: 'Perfiles Fibra Veg. Beige 10Mm · artículo 01-09-6717 · ref. 01858 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-166', PROV_OCHOA, 47.83, {
+  c('MAT-08-166', PROV_CIMA, 248, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/perfiles-pvc-p-cera-8x2600-gri',
+    nota: 'PERFILES PVC P/CERA 8X2600 GRI · artículo 084199. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-167', PROV_OCHOA, 47.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1-5mm-01099042',
     nota: 'Cruceta Para Cerámica 1.5Mm · artículo 01-09-9042 · ref. F16651(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-167', PROV_OCHOA, 233.76, {
+  c('MAT-08-168', PROV_OCHOA, 233.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1-5mm-fda-300-uds-01098564',
     nota: 'Cruceta Para Ceramica 1.5Mm Fda 300 Uds · artículo 01-09-8564 · ref. 26991 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-168', PROV_OCHOA, 42.56, {
+  c('MAT-08-169', PROV_OCHOA, 42.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1mm-01099041',
     nota: 'Cruceta Para Cerámica 1Mm · artículo 01-09-9041 · ref. F16650(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-169', PROV_OCHOA, 10608.65, {
+  c('MAT-08-170', PROV_OCHOA, 10608.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1mm-fda-300-uds-01097701',
     nota: 'Cruceta Para Ceramica 1Mm Fda 300 Uds · artículo 01-09-7701 · ref. 02123/26998 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-170', PROV_OCHOA, 52.3, {
+  c('MAT-08-171', PROV_OCHOA, 52.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-2mm-01080125',
     nota: 'Cruceta Para Cerámica 2Mm · artículo 01-08-0125 · ref. F16652(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-171', PROV_OCHOA, 12274.78, {
+  c('MAT-08-172', PROV_OCHOA, 12274.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-2mm-fda-300-uds-01096683',
     nota: 'Cruceta Para Ceramicas 2Mm Fda 300 Uds · artículo 01-09-6683 · ref. 26997 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 61.54, {
+  c('MAT-08-173', PROV_OCHOA, 61.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-3mm-01080128',
     nota: 'Cruceta Para Cerámica 3Mm · artículo 01-08-0128 · ref. F16653(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-173', PROV_OCHOA, 252.59, {
+  c('MAT-08-174', PROV_OCHOA, 252.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-3mm-fda-200-uds-01096684',
     nota: 'Cruceta Para Ceramicas 3Mm Fda 200 Uds · artículo 01-09-6684 · ref. 26990/02902 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-174', PROV_OCHOA, 72.83, {
+  c('MAT-08-175', PROV_OCHOA, 72.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-4mm-01080353',
     nota: 'Cruceta Para Cerámica 4Mm · artículo 01-08-0353 · ref. F16654(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-175', PROV_OCHOA, 7235.96, {
+  c('MAT-08-176', PROV_OCHOA, 7235.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-4mm-fda-200-uds-01096682',
     nota: 'Cruceta Para Ceramicas 4Mm Fda 200 Uds · artículo 01-09-6682 · ref. 02129/02954 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-176', PROV_OCHOA, 81.07, {
+  c('MAT-08-177', PROV_OCHOA, 81.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-5mm-01080390',
     nota: 'Cruceta Para Cerámica 5Mm · artículo 01-08-0390 · ref. F16655(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-177', PROV_OCHOA, 78.89, {
+  c('MAT-08-178', PROV_OCHOA, 78.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-6mm-01080431',
     nota: 'Cruceta Para Cerámica 6Mm · artículo 01-08-0431 · ref. F16656(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-178', PROV_OCHOA, 919.94, {
+  c('MAT-08-179', PROV_OCHOA, 919.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-0-5-mm-01098897',
     nota: 'Calzos De Nivelación Cerámica 0.5 Mm · artículo 01-09-8897 · ref. 02209 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-179', PROV_OCHOA, 767.39, {
+  c('MAT-08-180', PROV_OCHOA, 767.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-1-mm-01098898',
     nota: 'Calzos De Nivelación Cerámica 1 Mm · artículo 01-09-8898 · ref. 02204 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-180', PROV_OCHOA, 487.49, {
+  c('MAT-08-181', PROV_OCHOA, 487.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-1-5-mm-01098899',
     nota: 'Calzos De Nivelación Cerámica 1.5 Mm · artículo 01-09-8899 · ref. 03060 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-181', PROV_OCHOA, 767.39, {
+  c('MAT-08-182', PROV_OCHOA, 767.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-2-mm-01098900',
     nota: 'Calzos De Nivelación Cerámica 2 Mm · artículo 01-09-8900 · ref. 02205 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-182', PROV_OCHOA, 873.47, {
+  c('MAT-08-183', PROV_OCHOA, 873.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-3-mm-01098901',
     nota: 'Calzos De Nivelación Cerámica 3 Mm · artículo 01-09-8901 · ref. 02206 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-183', PROV_OCHOA, 144.94, {
+  c('MAT-08-184', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-1-mm-01098666',
     nota: 'Nivelador Para Azulejo 1 Mm · artículo 01-09-8666 · ref. 61334BLUE · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-183', PROV_OCHOA, 1690.8, {
+  c('MAT-08-184', PROV_OCHOA, 1690.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/clips-nivelador-delta-1mm-fda-400-uds-01098635',
     nota: 'Clips Nivelador Delta 1Mm Fda. 400 Uds · artículo 01-09-8635 · ref. 02839 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-184', PROV_OCHOA, 144.94, {
+  c('MAT-08-185', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-1-5-mm-01098664',
     nota: 'Nivelador Para Azulejo 1.5 Mm · artículo 01-09-8664 · ref. 61336RED · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-185', PROV_OCHOA, 144.94, {
+  c('MAT-08-186', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-2-mm-01098665',
     nota: 'Nivelador Para Azulejo 2 Mm · artículo 01-09-8665 · ref. 61338GREEN · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-186', PROV_OCHOA, 358.87, {
+  c('MAT-08-187', PROV_OCHOA, 358.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuna-para-nivelar-ceramica-01098758',
     nota: 'Cuña Para Nivelar Cerámica · artículo 01-09-8758 · ref. 60694 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-186', PROV_OCHOA, 845.41, {
+  c('MAT-08-187', PROV_OCHOA, 845.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cunas-nivelacion-para-instalacion-de-ceramica-01098902',
     nota: 'Cuñas Nivelación Para Instalación De Cerámica · artículo 01-09-8902 · ref. 02207 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-187', PROV_OCHOA, 874.38, {
+  c('MAT-08-188', PROV_OCHOA, 874.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-cuad-40cm-x-40cm-x-7-3-6-25mt2-01092958',
     nota: 'Adoquin Cuad. 40Cm X 40Cm X 7.3 6.25Mt2 · artículo 01-09-2958 · ref. TIPOBALDOSA · marca OCHOA. La tienda cotiza por pieza; van 6.25 adoquines por m² según su propio nombre de artículo (RD$ 139.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-188', PROV_OCHOA, 812.28, {
+  c('MAT-08-189', PROV_OCHOA, 812.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-flecha-42-mt2-01096817',
     nota: 'Adoquin Tipo Flecha 42 / Mt2 · artículo 01-09-6817 · ref. TIPOFLECHA · marca OCHOA. La tienda cotiza por pieza; van 42 adoquines por m² según su propio nombre de artículo (RD$ 19.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-189', PROV_OCHOA, 850, {
+  c('MAT-08-190', PROV_OCHOA, 850, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-2x4x8-natural-50-mt2-01092082',
     nota: 'Adoquin 2X4X8 Natural 50 / Mt2 · artículo 01-09-2082 · ref. TIPOLADRILLO · marca OCHOA. La tienda cotiza por pieza; van 50 adoquines por m² según su propio nombre de artículo (RD$ 17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 872.87, {
+  c('MAT-08-191', PROV_OCHOA, 872.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-raqueta-38-25-mt2-01093486',
     nota: 'Adoquin Tipo Raqueta 38.25 / Mt2 · artículo 01-09-3486 · ref. TIPORAQUETA · marca OCHOA. La tienda cotiza por pieza; van 38.25 adoquines por m² según su propio nombre de artículo (RD$ 22.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 55.94, {
+  c('MAT-08-192', PROV_OCHOA, 55.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590337',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0337 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-192', PROV_OCHOA, 153.81, {
+  c('MAT-08-193', PROV_OCHOA, 153.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590330',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0330 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-193', PROV_OCHOA, 82.72, {
+  c('MAT-08-194', PROV_OCHOA, 82.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590335',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0335 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-194', PROV_OCHOA, 162.49, {
+  c('MAT-08-195', PROV_OCHOA, 162.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590327',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0327 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-195', PROV_OCHOA, 90.79, {
+  c('MAT-08-196', PROV_OCHOA, 90.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590342',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0342 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-196', PROV_OCHOA, 129.29, {
+  c('MAT-08-197', PROV_OCHOA, 129.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590328',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0328 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-197', PROV_OCHOA, 66.5, {
+  c('MAT-08-198', PROV_OCHOA, 66.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590341',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0341 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-198', PROV_OCHOA, 106.37, {
+  c('MAT-08-199', PROV_OCHOA, 106.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590332',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0332 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-199', PROV_OCHOA, 78.84, {
+  c('MAT-08-200', PROV_OCHOA, 78.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590338',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0338 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-200', PROV_OCHOA, 180.39, {
+  c('MAT-08-201', PROV_OCHOA, 180.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590324',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0324 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-201', PROV_OCHOA, 460.92, {
+  c('MAT-08-202', PROV_OCHOA, 460.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590331',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0331 · ref. 3LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-202', PROV_OCHOA, 280.64, {
+  c('MAT-08-203', PROV_OCHOA, 280.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590336',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0336 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 367.96, {
+  c('MAT-08-204', PROV_OCHOA, 367.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590334',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0334 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 813.47, {
+  c('MAT-08-205', PROV_OCHOA, 813.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590326',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0326 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 406.73, {
+  c('MAT-08-206', PROV_OCHOA, 406.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590343',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0343 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-206', PROV_OCHOA, 647.51, {
+  c('MAT-08-207', PROV_OCHOA, 647.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590329',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0329 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-207', PROV_OCHOA, 333.56, {
+  c('MAT-08-208', PROV_OCHOA, 333.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590340',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0340 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-208', PROV_OCHOA, 472.9, {
+  c('MAT-08-209', PROV_OCHOA, 472.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590333',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0333 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-209', PROV_OCHOA, 350.7, {
+  c('MAT-08-210', PROV_OCHOA, 350.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590339',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0339 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-210', PROV_OCHOA, 902.88, {
+  c('MAT-08-211', PROV_OCHOA, 902.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590325',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0325 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-211', PROV_OCHOA, 3195.68, {
+  c('MAT-08-212', PROV_OCHOA, 3195.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590027',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0027 · ref. 16322AMAR.COM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-212', PROV_OCHOA, 7742.13, {
+  c('MAT-08-213', PROV_OCHOA, 7742.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590022',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0022 · ref. 13632AMAR.IND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 4220.23, {
+  c('MAT-08-214', PROV_OCHOA, 4220.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590021',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0021 · ref. 16066AZULCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 8183.45, {
+  c('MAT-08-215', PROV_OCHOA, 8183.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590050',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0050 · ref. 9776KAZULIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-215', PROV_OCHOA, 4640.79, {
+  c('MAT-08-216', PROV_OCHOA, 4640.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590071',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0071 · ref. 8035NEGROCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-216', PROV_OCHOA, 6521.15, {
+  c('MAT-08-217', PROV_OCHOA, 6521.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-6316-04590060',
     nota: 'Polvo P / Mosaico (Cromo) 6316 · artículo 04-59-0060 · ref. 9081NEGROIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 3350.57, {
+  c('MAT-08-218', PROV_OCHOA, 3350.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590024',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0024 · ref. 16323ROJOCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-218', PROV_OCHOA, 5451.6, {
+  c('MAT-08-219', PROV_OCHOA, 5451.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-12908-55-lbs-04590023',
     nota: 'Polvo P / Mosaico(Cromo) (12908) 55 Lbs. · artículo 04-59-0023 · ref. F-6225ROJOIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-219', PROV_OCHOA, 4017.75, {
+  c('MAT-08-220', PROV_OCHOA, 4017.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590033',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0033 · ref. 16068VERDECOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-220', PROV_OCHOA, 9092.93, {
+  c('MAT-08-221', PROV_OCHOA, 9092.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590059',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0059 · ref. 14951VERDEIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 508.43, {
+  c('MAT-09-009', PROV_OCHOA, 508.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-01230529',
     nota: 'Cabeza De Ducha · artículo 01-23-0529 · ref. 15036 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 195.95, {
+  c('MAT-09-009', PROV_OCHOA, 195.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-01230415',
     nota: 'Cabeza De Ducha · artículo 01-23-0415 · ref. 15004 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 283.72, {
+  c('MAT-09-009', PROV_OCHOA, 283.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-2-01232379',
     nota: 'Cabeza De Ducha 2\'\' · artículo 01-23-2379 · ref. 15010 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 373.94, {
+  c('MAT-09-009', PROV_OCHOA, 373.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-3-01230545',
     nota: 'Cabeza De Ducha 3\'\' · artículo 01-23-0545 · ref. 15038 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 1660.9, {
+  c('MAT-09-009', PROV_OCHOA, 1660.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-4-01230533',
     nota: 'Cabeza De Ducha 4\'\' · artículo 01-23-0533 · ref. 15113 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 562.46, {
+  c('MAT-09-009', PROV_OCHOA, 562.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-cuadrada-01232514',
     nota: 'Cabeza De Ducha Cuadrada · artículo 01-23-2514 · ref. TB2228 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 404.04, {
+  c('MAT-09-009', PROV_OCHOA, 404.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-red-cromo-verde-01232507',
     nota: 'Cabeza De Ducha Red Cromo / Verde · artículo 01-23-2507 · ref. TB2236-4 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 401.38, {
+  c('MAT-09-009', PROV_OCHOA, 401.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-p-ducha-5-funciones-01232597',
     nota: 'Cabeza P / Ducha 5 Funciones · artículo 01-23-2597 · ref. P01703 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 336.35, {
+  c('MAT-09-009', PROV_OCHOA, 336.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-p-ducha-cuadrada-01232611',
     nota: 'Cabeza P / Ducha Cuadrada · artículo 01-23-2611 · ref. P017074" · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 678.49, {
+  c('MAT-09-009', PROV_OCHOA, 678.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-p-ducha-redonda-01232612',
     nota: 'Cabeza P / Ducha Redonda · artículo 01-23-2612 · ref. P017088" · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 1152.18, {
+  c('MAT-09-009', PROV_OCHOA, 1152.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-higienica-55-chattaf-f-01230424',
     nota: 'Ducha Higienica 55-Chattaf-F · artículo 01-23-0424 · ref. 96136 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 501.54, {
+  c('MAT-09-009', PROV_OCHOA, 501.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-p-banera-01232615',
     nota: 'Ducha P / Banera · artículo 01-23-2615 · ref. P01325 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 835.29, {
+  c('MAT-09-009', PROV_OCHOA, 835.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-redonda-5-funciones-01232600',
     nota: 'Ducha Redonda 5 Funciones · artículo 01-23-2600 · ref. P01704 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 126.44, {
+  c('MAT-09-009', PROV_OCHOA, 126.44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-ducha-p-pared-maldivas-01230425',
     nota: 'Soporte Ducha P / Pared Maldivas · artículo 01-23-0425 · ref. 96110 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-016', PROV_OCHOA, 218.18, {
+  c('MAT-09-009', PROV_OCHOA, 218.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-d-fijacion-p-ducha-01112754',
     nota: 'Soporte D / Fijacion P / Ducha · artículo 01-11-2754 · ref. 16074 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 535.05, {
+  c('MAT-09-009', PROV_CIMA, 1597, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-p-bidet-c-llave-jf031101',
+    nota: 'DUCHA P/BIDET C/LLAVE JF031101 · artículo 7460215719969. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 824, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-plastica-s-brazo-shb-380',
+    nota: 'DUCHA PLASTICA S/BRAZO SHB-380 · artículo 7460590002496. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 500, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regaderap-bidet-plastica-crom',
+    nota: 'REGADERAP/BIDET PLASTICA CROM · artículo 016601. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 1202, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-cuadrada-c-brazo-r-007',
+    nota: 'DUCHA CUADRADA C/BRAZO R-007 · artículo 7592032009593. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 1196, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-cuadrada-c-brazo-r-004',
+    nota: 'DUCHA CUADRADA C/BRAZO R-004 · artículo 7592032110930. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 567, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-s-brazo-722',
+    nota: 'DUCHA S/BRAZO 722 · artículo 8055118137294. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 590, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-s-brazo-5-funciones-p017',
+    nota: 'DUCHA S/BRAZO 5 FUNCIONES P017 · artículo 7453001171614. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 4706, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-rednda-grande-790066300',
+    nota: 'DUCHA REDNDA GRANDE 790066300 · artículo 8413509207078. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 322, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-plastica-s-brazo-p01701',
+    nota: 'DUCHA PLASTICA S/BRAZO P01701 · artículo 7453001171607. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CIMA, 967, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-p-bidet-160-16138-jl3013',
+    nota: 'DUCHA P/BIDET 160-16138/JL3013 · artículo 060613. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_OCHOA, 535.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-red-d-mano-01232512',
     nota: 'Cabeza De Ducha Red + D. Mano · artículo 01-23-2512 · ref. TB2216 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 307.94, {
+  c('MAT-09-010', PROV_OCHOA, 307.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-p-ducha-telefono-1-funcion-01232598',
     nota: 'Cabeza P / Ducha Telefono 1 Funcion · artículo 01-23-2598 · ref. P01715 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 267.91, {
+  c('MAT-09-010', PROV_OCHOA, 267.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-mano-cromo-rojo-01232499',
     nota: 'Ducha De Mano Cromo / Rojo · artículo 01-23-2499 · ref. TB5836/3-1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 712.46, {
+  c('MAT-09-010', PROV_OCHOA, 712.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-t-telefono-completa-01232463',
     nota: 'Ducha T / Telefono Completa · artículo 01-23-2463 · ref. 90103/15878 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 475.26, {
+  c('MAT-09-010', PROV_OCHOA, 475.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-t-telefono-completa-01232550',
     nota: 'Ducha T / Telefono Completa · artículo 01-23-2550 · ref. UP2168SET · marca ULTRA-PLOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 1482.99, {
+  c('MAT-09-010', PROV_OCHOA, 1482.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-t-telefono-completa-01230540',
     nota: 'Ducha T / Telefono Completa · artículo 01-23-0540 · ref. 15070 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 365.37, {
+  c('MAT-09-010', PROV_OCHOA, 365.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-t-telefono-p-bano-completa-01232571',
     nota: 'Ducha T / Telefono P / Bano Completa · artículo 01-23-2571 · ref. 1560 · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 559.28, {
+  c('MAT-09-010', PROV_OCHOA, 559.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-tipo-telefono-p01720-01232584',
     nota: 'Ducha Tipo Teléfono P01720 · artículo 01-23-2584 · ref. P01720 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 16238.78, {
+  c('MAT-09-010', PROV_CIMA, 910, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-p01720',
+    nota: 'DUCHA TELEFONO P01720 · artículo 7453001171669. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_CIMA, 494, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-s-mangu-p01714',
+    nota: 'DUCHA TELEFONO S/MANGU P01714 · artículo 7453001107163. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_CIMA, 567, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-p01715',
+    nota: 'DUCHA TELEFONO P01715 · artículo 7453001171652. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_CIMA, 1287, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-c-m-p01721',
+    nota: 'DUCHA TELEFONO C/M P01721 · artículo 7453001171683. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_CIMA, 1087, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-90103',
+    nota: 'DUCHA TELEFONO 90103 · artículo 091712901037. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-010', PROV_CIMA, 2169, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-telefono-15070',
+    nota: 'DUCHA TELEFONO 15070 · artículo 091712150701. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 16238.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-155x210-mm-01101275',
     nota: 'Columna De Ducha 155X210 Mm · artículo 01-10-1275 · ref. S9801 · marca GTSHOWER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 11281.28, {
+  c('MAT-09-011', PROV_OCHOA, 11281.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-155x210-mm-01101277',
     nota: 'Columna De Ducha 155X210 Mm · artículo 01-10-1277 · ref. SP21 · marca GTSHOWER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 15783.49, {
+  c('MAT-09-011', PROV_OCHOA, 15783.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-165x200-mm-01101276',
     nota: 'Columna De Ducha 165X200 Mm · artículo 01-10-1276 · ref. S8879 · marca GTSHOWER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 40738.17, {
+  c('MAT-09-011', PROV_OCHOA, 40738.17, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-ducha-expuesta-c-regadera-01101110',
     nota: 'Columna Ducha Expuesta C / Regadera · artículo 01-10-1110 · ref. ALS9409002-C · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 29022.19, {
+  c('MAT-09-011', PROV_CIMA, 6343, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sistema-ducha-universal-cuadra',
+    nota: 'SISTEMA DUCHA UNIVERSAL CUADRA · artículo 035912. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 29022.19, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-de-bano-ducha-coc-negro-cobalto-01021647',
     nota: 'Barra De Baño Ducha Coc Negro Cobalto · artículo 01-02-1647 · ref. M771DBK · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 27491.73, {
+  c('MAT-09-012', PROV_OCHOA, 27491.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-de-bano-ducha-coc-silver-chrome-01021646',
     nota: 'Barra De Baño Ducha Coc Silver Chrome · artículo 01-02-1646 · ref. M771DCR · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 25445.08, {
+  c('MAT-09-012', PROV_OCHOA, 25445.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-de-ducha-coc-silver-chrome-01021648',
     nota: 'Barra De Ducha Coc Silver Chrome · artículo 01-02-1648 · ref. M770DCR · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 1415.01, {
+  c('MAT-09-012', PROV_OCHOA, 1415.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-deslizable-p-ducha-01232530',
     nota: 'Barra Deslizable P / Ducha · artículo 01-23-2530 · ref. TB2156BN-1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 553.61, {
+  c('MAT-09-012', PROV_OCHOA, 553.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-deslizable-p-ducha-negra-01232555',
     nota: 'Barra Deslizable P / Ducha Negra · artículo 01-23-2555 · ref. SB18050-1-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 806.08, {
+  c('MAT-09-012', PROV_OCHOA, 806.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-deslizable-para-ducha-01232538',
     nota: 'Barra Deslizable Para Ducha · artículo 01-23-2538 · ref. TB2156-1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 783.73, {
+  c('MAT-09-012', PROV_OCHOA, 783.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-deslizante-para-duchas-01232450',
     nota: 'Barra Deslizante Para Duchas · artículo 01-23-2450 · ref. A98089/A89089 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 10189.3, {
+  c('MAT-09-012', PROV_OCHOA, 10189.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-ducha-ext-4-op-cabeza-cuad-negro-01021751',
     nota: 'Barra Ducha Ext 4 Op. Cabeza Cuad. Negro · artículo 01-02-1751 · ref. D191STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 10200.42, {
+  c('MAT-09-012', PROV_OCHOA, 10200.42, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-ducha-ext-4-op-cabeza-red-negro-01021752',
     nota: 'Barra Ducha Ext 4 Op. Cabeza Red. Negro · artículo 01-02-1752 · ref. D192STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 28335.12, {
+  c('MAT-09-012', PROV_OCHOA, 28335.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-exterior-minimalista-virgen-black-01021692',
     nota: 'Barra Exterior Minimalista Virgen Black · artículo 01-02-1692 · ref. EDD77177BLK · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 25137.69, {
+  c('MAT-09-012', PROV_OCHOA, 25137.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-exterior-minimalista-virgen-cromo-01021693',
     nota: 'Barra Exterior Minimalista Virgen Cromo · artículo 01-02-1693 · ref. EDD77177CR · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 10542.24, {
+  c('MAT-09-012', PROV_OCHOA, 10542.24, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-ext-inx-pro-2op-gris-soporte-01021745',
     nota: 'Ducha Barra Ext Inx Pro 2Op Gris Soporte · artículo 01-02-1745 · ref. INX-1553-S · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 16111.04, {
+  c('MAT-09-012', PROV_OCHOA, 16111.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-ext-inx-pro-4op-gris-cuad-01021743',
     nota: 'Ducha Barra Ext Inx Pro 4Op Gris Cuad · artículo 01-02-1743 · ref. INX-1551-BS · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 14479.76, {
+  c('MAT-09-012', PROV_OCHOA, 14479.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cab-cuad-cromo-01021716',
     nota: 'Ducha Barra Exter. Cab. Cuad. Cromo · artículo 01-02-1716 · ref. TB23SW63 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 9360.4, {
+  c('MAT-09-012', PROV_OCHOA, 9360.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cab-cuad-cromo-01021709',
     nota: 'Ducha Barra Exter. Cab. Cuad. Cromo · artículo 01-02-1709 · ref. TB23SW62 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 9604.32, {
+  c('MAT-09-012', PROV_OCHOA, 9604.32, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cab-cuad-cromo-01021712',
     nota: 'Ducha Barra Exter. Cab. Cuad. Cromo · artículo 01-02-1712 · ref. TB23SW004 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 3637.18, {
+  c('MAT-09-012', PROV_OCHOA, 3637.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cabeza-red-01021597',
     nota: 'Ducha Barra Exter. Cabeza Red · artículo 01-02-1597 · ref. TB2216 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 6509.26, {
+  c('MAT-09-012', PROV_OCHOA, 6509.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cabeza-red-01021600',
     nota: 'Ducha Barra Exter. Cabeza Red · artículo 01-02-1600 · ref. TB593 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 3180, {
+  c('MAT-09-012', PROV_OCHOA, 3180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cabeza-red-01021598',
     nota: 'Ducha Barra Exter. Cabeza Red · artículo 01-02-1598 · ref. TB2287 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-019', PROV_OCHOA, 12179.57, {
+  c('MAT-09-012', PROV_OCHOA, 12179.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-barra-exterior-paris-01021642',
     nota: 'Ducha De Barra Exterior Paris · artículo 01-02-1642 · ref. TB2151BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 361.27, {
+  c('MAT-09-013', PROV_OCHOA, 361.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-de-ducha-01230538',
     nota: 'Brazo De Ducha · artículo 01-23-0538 · ref. 15055 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 108.23, {
+  c('MAT-09-013', PROV_OCHOA, 108.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-de-ducha-con-cubrefalta-01232378',
     nota: 'Brazo De Ducha Con Cubrefalta · artículo 01-23-2378 · ref. 15059-1/2X7/1/4 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 345.56, {
+  c('MAT-09-013', PROV_OCHOA, 345.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-c-brazo-c-cubrefalta-redonda-01230011',
     nota: 'Ducha C / Brazo C / Cubrefalta Redonda · artículo 01-23-0011 · ref. SPC-1038 · marca SPC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 334.59, {
+  c('MAT-09-013', PROV_OCHOA, 334.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-c-brazo-cuadrada-01230014',
     nota: 'Ducha C / Brazo Cuadrada · artículo 01-23-0014 · ref. SPC-1039 · marca SPC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 331.14, {
+  c('MAT-09-013', PROV_OCHOA, 331.14, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-c-brazo-redonda-01230010',
     nota: 'Ducha C / Brazo Redonda · artículo 01-23-0010 · ref. SPC-1042 · marca SPC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 895.38, {
+  c('MAT-09-013', PROV_OCHOA, 895.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-c-brazo-y-cubrefalta-01230471',
     nota: 'Ducha C / Brazo Y Cubrefalta · artículo 01-23-0471 · ref. 15029 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 335.08, {
+  c('MAT-09-013', PROV_OCHOA, 335.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-con-brazo-01230539',
     nota: 'Ducha Con Brazo · artículo 01-23-0539 · ref. 15029 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_OCHOA, 124.58, {
+  c('MAT-09-013', PROV_OCHOA, 124.58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-giratoria-brazo-cubrefalta-01230013',
     nota: 'Ducha Giratoria Brazo / Cubrefalta · artículo 01-23-0013 · ref. SPC-4571/2 · marca SPC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_OCHOA, 12165.91, {
+  c('MAT-09-013', PROV_CIMA, 247, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/soporte-ducha-plas-cromada-715',
+    nota: 'SOPORTE DUCHA PLAS CROMADA 715 · artículo 8032615099911. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 12165.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monom-barra-ext-new-belice-01021175',
     nota: 'Mezc Monom. Barra Ext.New Belice · artículo 01-02-1175 · ref. 96170 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_OCHOA, 5025.94, {
+  c('MAT-09-014', PROV_OCHOA, 5025.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-cromo-01021754',
     nota: 'Mezcl. Ducha Stelo Milan Cromo · artículo 01-02-1754 · ref. D181STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_OCHOA, 5024.64, {
+  c('MAT-09-014', PROV_OCHOA, 5024.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-gris-met-01021755',
     nota: 'Mezcl. Ducha Stelo Milan Gris Met · artículo 01-02-1755 · ref. D182STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_OCHOA, 2603.89, {
+  c('MAT-09-014', PROV_OCHOA, 2603.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-01021719',
     nota: 'Mezcladora Mono Ducha C / Salida · artículo 01-02-1719 · ref. TBZ21C3 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 764.03, {
+  c('MAT-09-014', PROV_CIMA, 2035, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-sm-0202',
+    nota: 'MEZCLADORA DUCHA MONO SM-0202 · artículo 034090. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 3313, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-82',
+    nota: 'MEZCLADORA DUCHA MONO GRI-81 · artículo 7592032510181. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 4695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-83',
+    nota: 'MEZCLADORA DUCHA MONO GRI-83 · artículo 7592032504432. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 4000, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-79',
+    nota: 'MEZCLADORA DUCHA MONO GRI-79 · artículo 7592032030368. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 2672, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16011',
+    nota: 'MEZCLADORA DUCHA MONO EM-16010 · artículo 7460215700141. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 3869, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-inox',
+    nota: 'MEZCLADORA DUCHA MONO INOX · artículo 7592032702371. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 2895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-81',
+    nota: 'MEZCLADORA DUCHA MONO GRI-81 · artículo 7592032504418. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 3095, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-78',
+    nota: 'MEZCLADORA DUCHA MONO GRI-78 · artículo 7592032030351. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 2335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16010',
+    nota: 'MEZCLADORA DUCHA MONO EM-16010 · artículo 016010. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 6321, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-34042',
+    nota: 'MEZCLADORA DUCHA MONO 34042 · artículo 7460215705436. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 4160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-77',
+    nota: 'MEZCLADORA DUCHA M GRI-77 · artículo 7592032030344. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CIMA, 3702, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-76',
+    nota: 'MEZCLADORA DUCHA M GRI-76 · artículo 7592032030337. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 764.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232601',
     nota: 'Ducha Telefono C / Manguera 3 Funciones · artículo 01-23-2601 · ref. P01721 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 1084.36, {
+  c('MAT-09-015', PROV_OCHOA, 1084.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232604',
     nota: 'Ducha Telefono C / Manguera 3 Funciones · artículo 01-23-2604 · ref. P01725 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 1338.18, {
+  c('MAT-09-015', PROV_OCHOA, 1338.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-5-funciones-01232603',
     nota: 'Ducha Telefono C / Manguera 5 Funciones · artículo 01-23-2603 · ref. P01724 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 730.86, {
+  c('MAT-09-015', PROV_OCHOA, 730.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-8-funciones-01232602',
     nota: 'Ducha Telefono C / Manguera 8 Funciones · artículo 01-23-2602 · ref. P01722 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 511.64, {
+  c('MAT-09-015', PROV_OCHOA, 511.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-cromada-plastica-01230530',
     nota: 'Manguera Cromada Plastica · artículo 01-23-0530 · ref. 15078 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 363.69, {
+  c('MAT-09-015', PROV_OCHOA, 363.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-de-metal-p-ducha-1-5mts-01232599',
     nota: 'Manguera De Metal P / Ducha 1.5Mts · artículo 01-23-2599 · ref. P01800 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_OCHOA, 256.18, {
+  c('MAT-09-015', PROV_OCHOA, 256.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-p-fregadero-01162535',
     nota: 'Manguera P / Fregadero · artículo 01-16-2535 · ref. 30171 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_CIMA, 601, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-16',
+    nota: 'MANGUERA DUCHA TELEFONO 708-15 · artículo 8055118137751. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_CIMA, 647, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-p01799',
+    nota: 'MANGUERA DUCHA TELEFONO P01799 · artículo 7453001171706. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_CIMA, 779, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-710-15',
+    nota: 'MANGUERA DUCHA TELEFONO 710-15 · artículo 071020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_CIMA, 910, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-710',
+    nota: 'MANGUERA DUCHA TELEFONO 710- · artículo 071015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_CIMA, 525, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-15',
+    nota: 'MANGUERA DUCHA TELEFONO 708-15 · artículo 071021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CIMA, 1139, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-doble-tanque',
+    nota: 'REGULADOR GAS DOBLE TANQUE · artículo 039936. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CIMA, 953, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-grande-manual-m',
+    nota: 'REGULADOR GAS GRANDE MANUAL M · artículo 022345. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CIMA, 326, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-grande-si',
+    nota: 'REGULADOR GAS MANUAL GRANDE SI · artículo 7460818400882. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CIMA, 359, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-grande-co',
+    nota: 'REGULADOR GAS MANUAL GRANDE CO · artículo 7460818401261. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CIMA, 1315, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-g-grande-manual-tube',
+    nota: 'REGULADOR G GRANDE MANUAL TUBE · artículo 049275. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_CIMA, 760, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-pequeno-p-tuberi',
+    nota: 'REGULADOR GAS PEQUENO P/TUBERI · artículo 069578. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_CIMA, 259, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-pequeno-a',
+    nota: 'REGULADOR GAS MANUAL PEQUENO A · artículo 7460818400691. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_CIMA, 412, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-largo-estufa',
+    nota: 'PIG TAIL LARGO ESTUFA · artículo 030583. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_CIMA, 567, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-flexible-gas-fpig-55',
+    nota: 'PIG TAIL FLEXIBLE GAS FPIG-55 · artículo 7506240611127. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_CIMA, 1095, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-flexible-gas-eag-d60',
+    nota: 'PIG TAIL FLEXIBLE GAS EAG-D60 · artículo 7501605514907. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_CIMA, 299, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-corto-estufa',
+    nota: 'PIG TAIL CORTO ESTUFA · artículo 030594. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-020', PROV_CIMA, 377, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-tanque-gas-7-8-ll-ga',
+    nota: 'LLAVE TANQUE GAS 7/8 LL-GA · artículo 7501206643488. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-021', PROV_CIMA, 7106, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-cisterna-1-2-hp-110',
+    nota: 'BOMBA AGUA CISTERNA 1/2 HP 110 · artículo 045841. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-022', PROV_CIMA, 2789, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-nara',
+    nota: 'BOMBA AGUA LADRONA 1/2HP NARA · artículo 014449. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-022', PROV_CIMA, 2670, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-verde',
+    nota: 'BOMBA AGUA LADRONA 1/2HP VERDE · artículo 014451. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-022', PROV_CIMA, 3957, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-ama',
+    nota: 'BOMBA AGUA LADRONA 1/2HP AMA · artículo 014450. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-022', PROV_CIMA, 4480, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp-201t',
+    nota: 'BOMBA AGUA LADRONA 1/2 HP 201T · artículo 058546. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-022', PROV_CIMA, 6300, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp',
+    nota: 'BOMBA AGUA LADRONA 1/2 HP · artículo 044756. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-023', PROV_CIMA, 5075, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladro-presur-1-2hp',
+    nota: 'BOMBA AGUA LADRO PRESUR 1/2HP · artículo 023341. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-024', PROV_CIMA, 4914, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-3hp',
+    nota: 'BOMBA PRESURIZADORA 1/3HP · artículo 7506240667971. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-025', PROV_CIMA, 2911, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-6hp',
+    nota: 'BOMBA PRESURIZADORA 1/6HP · artículo 7506240667964. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-026', PROV_CIMA, 1825, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
+    nota: 'TANQUE PRESURIZADO HORIZO 24L · artículo 041539. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-027', PROV_CIMA, 1666, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
+    nota: 'INTERRUPTOR AUTOMA BOMBA 20-40 · artículo 782116159208. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-028', PROV_CIMA, 1631, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
+    nota: 'INTERRUPTOR AUTOMA BOMBA 30-50 · artículo 782116159215. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-029', PROV_CIMA, 1688, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
+    nota: 'INTERRUPTOR AUTOMA BOMBA 40-60 · artículo 782116159222. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-030', PROV_CIMA, 690, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
+    nota: 'INTERRUPTOR FLOTA ELECT 3M · artículo 022359. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-030', PROV_CIMA, 1454, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
+    nota: 'INTERRUPTOR FLOTA ELECT 10AMP · artículo 8428381208648. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-031', PROV_CIMA, 3178, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/control-automatico-bomba-1',
+    nota: 'CONTROL AUTOMATICO BOMBA 1\'\' · artículo 8428381219088. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-032', PROV_CIMA, 990, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
+    nota: 'MANOMETRO GLICERINA 150PSI 382 · artículo 8428381508908. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-033', PROV_CIMA, 905, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
+    nota: 'MANOMETRO GLICERINA 90PSI 3822 · artículo 8428381508892. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-034', PROV_CIMA, 407, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
+    nota: 'MANOMETRO 90PSI 3820N-006 · artículo 8428381508854. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-035', PROV_CIMA, 5395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
+    nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 082516. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-035', PROV_CIMA, 15945, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
+    nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 822312089944. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-036', PROV_CIMA, 10291, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
+    nota: 'CALENTADOR ELEC 6 GLS C-6 · artículo 064560. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_CIMA, 20503, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
+    nota: 'CALENTADOR ELECTRICO 7 KW · artículo 822312080392. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-038', PROV_CIMA, 11717, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
+    nota: 'CALENTADOR ELEC 8 GLS C-8 · artículo 064178. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-039', PROV_CIMA, 17755, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
+    nota: 'TANQUE CISTERNA 120gls FIBRA · artículo 085845. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-040', PROV_CIMA, 5101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
+    nota: 'TANQUE CISTERNA 30gls FIBRA VI · artículo 040678. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-041', PROV_CIMA, 7487, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
+    nota: 'TANQUE CISTERNA 42gls FIBRA VI · artículo 093660. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-041', PROV_CIMA, 14217, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
+    nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-042', PROV_CIMA, 15482, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
+    nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-042', PROV_CIMA, 10496, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
+    nota: 'TANQUE CISTERNA 60gls FIBRA VI · artículo 047125. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-043', PROV_CIMA, 9895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
+    nota: 'TANQUE CISTERNA 82 GLS FIBRA V · artículo 260406. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-044', PROV_CIMA, 9555, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-265gls-negro',
+    nota: 'TINACO 265gls NEGRO · artículo 040506. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-045', PROV_CIMA, 18535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-530gls-negro',
+    nota: 'TINACO 530gls NEGRO · artículo 025060. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-046', PROV_CIMA, 3313, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
+    nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-047', PROV_CIMA, 4503, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
+    nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-048', PROV_CIMA, 3995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
+    nota: 'TAPA CISTERNA ALUMINIO 33 X 33 · artículo 032540. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-049', PROV_CIMA, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
+    nota: 'BOYA CISTERNA NARANJA 120mm · artículo 090406. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-050', PROV_CIMA, 375, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
+    nota: 'BOYA CISTERNA NARANJA 150mm · artículo 090405. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-051', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
+    nota: 'BOYA CISTERNA NEGRA/MAMEY 90mm · artículo 090407. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-052', PROV_CIMA, 1425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
+    nota: 'FREGADERO BAR 2 HOYOS 15X15 · artículo 7592032002860. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-053', PROV_CIMA, 3040, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
+    nota: 'FREGADERO SENCILLO C/ESCURRIDO · artículo 010795. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-054', PROV_CIMA, 3285, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
+    nota: 'FREGADERO DOBLE 1H 33 X 19 S/E · artículo 012486. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-055', PROV_CIMA, 6540, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
+    nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-056', PROV_CIMA, 2969, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-101',
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-101 · artículo 7592032051011. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-056', PROV_CIMA, 3200, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-154',
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-154 · artículo 7592032056115. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-056', PROV_CIMA, 2453, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-153',
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-153 · artículo 7592032051530. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-056', PROV_CIMA, 2495, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-150',
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-150 · artículo 7592032051509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-056', PROV_CIMA, 2410, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-100',
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-100 · artículo 7592032051004. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-057', PROV_CIMA, 3770, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-ez-10481',
+    nota: 'MEZCLADORA LAVAMANO EZ-10481 · artículo 091712386308. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-057', PROV_CIMA, 655, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-tipo-pp-si',
+    nota: 'MEZCLADORA LAVAMANO TIPO PP SI · artículo 7460215792962. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-057', PROV_CIMA, 1235, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-tipo-nibco-1',
+    nota: 'MEZCLADORA LAVAMANO TIPO NIBCO · artículo 7460165700628. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1791, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-66',
+    nota: 'MEZCLADORA LAVAMANO MONO GR-66 · artículo 7592032030160. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-inox-2',
+    nota: 'MEZCLADORA LAVAM MONO INOX · artículo 7592032702357. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 3869, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-inox-1',
+    nota: 'MEZCLADORA LAVAM MONO INOX · artículo 7592032702388. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2585, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-82',
+    nota: 'MEZCLADORA LAVAMANO MONO GR-82 · artículo 7592032504425. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2260, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-74',
+    nota: 'MEZCLADORA LAVAMANO MONO GR-74 · artículo 7592032030313. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1711, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-j-6071',
+    nota: 'MEZCLADORA LAVAM MONO J-6071 · artículo 7460215726158. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2605, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-gri-531',
+    nota: 'MEZCLADORA LAVAM MONO GRI-531 · artículo 7592032111012. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-dhs-019',
+    nota: 'MEZCLADORA LAVAM MONO DHS-019 · artículo 7460215730704. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2403, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-75',
+    nota: 'MEZCLADORA LAVAMANO MONO GR-75 · artículo 7592032030320. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-73',
+    nota: 'MEZCLADORA LAVAMANO MONO GR-73 · artículo 7592032030306. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-cb-11',
+    nota: 'MEZCLADORA LAVAMANO MONO CB-11 · artículo 7460215726066. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 4340, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-64136',
+    nota: 'MEZCLADORA LAVAMANO MONO 64136 · artículo 7460215726110. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 4855, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono',
+    nota: 'MEZCLADORA LAVAMANO MONO · artículo 7592786043324. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2495, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavaman-mono-gri-72',
+    nota: 'MEZCLADORA LAVAMAN MONO GRI-72 · artículo 7592032030290. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 3295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-inox',
+    nota: 'MEZCLADORA LAVAM MONO INOX · artículo 7592032702364. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1875, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-gri-500',
+    nota: 'MEZCLADORA LAVAM MONO GRI-500 · artículo 7592032045102. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 2795, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-dhs-026h',
+    nota: 'MEZCLADORA LAVAM MONO DHS-026H · artículo 7460215735501. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-058', PROV_CIMA, 1225, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-bf-0201',
+    nota: 'MEZCLADORA LAVAM MONO BF-0201 · artículo 060340. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1556, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tipo-sayc',
+    nota: 'MEZCLADORA FREGADERO TIPO SAYC · artículo 060035. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 900, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tipo-nibc',
+    nota: 'MEZCLADORA FREGADERO TIPO NIBC · artículo 7506240606024. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1155, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-67',
+    nota: 'MEZCLADORA FREGADERO GRI-67 · artículo 7592032030245. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1786, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tip-sayc',
+    nota: 'MEZCLADORA FREGADERO TIP SAYC · artículo 7592032200044. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1495, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-t-nibco-1',
+    nota: 'MEZCLADORA FREGADERO T/NIBCO · artículo 7592032200051. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1396, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-014',
+    nota: 'MEZCLADORA FREGADERO M-014 · artículo 7592032112224. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 4039, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-611',
+    nota: 'MEZCLADORA FREGADERO M GRI-611 · artículo 7592032702258. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-58',
+    nota: 'MEZCLADORA FREGADERO GRI-58 · artículo 7592032030078. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-222',
+    nota: 'MEZCLADORA FREGADERO GRI-222 · artículo 7592032702074. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-204',
+    nota: 'MEZCLADORA FREGADERO GRI-204 · artículo 7592032056214. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3547, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-203',
+    nota: 'MEZCLADORA FREGADERO GRI-203 · artículo 7592032052032. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-201',
+    nota: 'MEZCLADORA FREGADERO GRI-201 · artículo 7592032052018. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 910, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-17',
+    nota: 'MEZCLADORA FREGADERO GRI-17 · artículo 7592032006059. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1909, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-f-318p',
+    nota: 'MEZCLADORA FREGADERO F-318P · artículo 7506240603450. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1275, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-7007u00gl',
+    nota: 'MEZCLADORA FREGADERO 7007U00GL · artículo 8055118139427. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1911, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-frega-inox-01',
+    nota: 'MEZCLADORA FREGA INOX-01 · artículo 7592032702319. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1634, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-t-nibco',
+    nota: 'MEZCLADORA FREGADERO T/NIBCO · artículo 7501206697290. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1430, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-mon-61200',
+    nota: 'MEZCLADORA FREGADERO MON KF-01 · artículo 7460215719068. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3325, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-mo-gri-25',
+    nota: 'MEZCLADORA FREGADERO MO GRI-25 · artículo 7592032006264. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-mf-24-ss',
+    nota: 'MEZCLADORA FREGADERO MF-24-SS · artículo 7460976192599. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3427, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-702',
+    nota: 'MEZCLADORA FREGADERO M GRI-702 · artículo 7592032500465. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2626, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-701',
+    nota: 'MEZCLADORA FREGADERO M GRI-701 · artículo 7592032500458. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2832, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-700',
+    nota: 'MEZCLADORA FREGADERO M GRI-700 · artículo 7592032500441. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3084, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-62',
+    nota: 'MEZCLADORA FREGADERO GRI-62 · artículo 7592032030122. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 1573, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-28',
+    nota: 'MEZCLADORA FREGADERO GRI-28 · artículo 7592032005489. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 3895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-214',
+    nota: 'MEZCLADORA FREGADERO GRI-214 · artículo 7592032056313. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-gri-200',
+    nota: 'MEZCLADORA FREGADERO GRI-200 · artículo 7592032052001. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-059', PROV_CIMA, 2885, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-ez-10471',
+    nota: 'MEZCLADORA FREGADERO EZ-10471 · artículo 091712386261. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-060', PROV_CIMA, 1255, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-7007mono',
+    nota: 'MEZCLADORA FREGADERO 7007MONO · artículo 8055118139397. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 486, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-sencilla-13093',
+    nota: 'LLAVE LAVAMANOS SENCILLA 13093 · artículo 7460104549950. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 796, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-senci-t-nibc',
+    nota: 'LLAVE LAVAMANOS SENCI T/NIBC · artículo 7592032007902. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 590, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-sencilla-monom-1',
+    nota: 'LLAVE LAVAMANOS SENCILLA MONOM · artículo 7592032111272. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 947, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-sencilla-monom',
+    nota: 'LLAVE LAVAMANOS SENCILLA MONOM · artículo 7592032501417. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 722, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-senci-t-sayco',
+    nota: 'LLAVE LAVAMANOS SENCI T/SAYCO · artículo 7467322511639. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 656, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-puno-triangula',
+    nota: 'LLAVE LAVAMANOS PUNO TRIANGULA · artículo 7592032007926. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 725, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-puno-acrilico-1',
+    nota: 'LLAVE LAVAMANOS PUNO ACRILICO · artículo 7592032006509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 824, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-m-242',
+    nota: 'LLAVE LAVAMANOS M-242 · artículo 7501206697245. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-061', PROV_CIMA, 3313, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-temp-1-2-1160',
+    nota: 'LLAVE  LAVAMANOS TEMP 1/2 1160 · artículo 8428381045427. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-062', PROV_CIMA, 2397, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-10497n',
+    nota: 'LLAVE BAÑO EMPOTRAR 1/2 10497N · artículo 091712386407. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-062', PROV_CIMA, 945, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-puno-a',
+    nota: 'LLAVE BAÑO EMPOTRAR 1/2 PUNO A · artículo 054133. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-063', PROV_CIMA, 256, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
+    nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-063', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
+    nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-063', PROV_CIMA, 213, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
+    nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-063', PROV_CIMA, 222, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
+    nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7461299795276. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-064', PROV_CIMA, 785, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-pared-multiple-1-2-x-3-4',
+    nota: 'LLAVE PARED MULTIPLE 1/2 X 3/4 · artículo 8055118134934. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-009', PROV_OCHOA, 331.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',
@@ -6566,575 +7290,591 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-susp-genius-cisterna-01045603',
     nota: 'Inodoro Susp. Genius + Cisterna · artículo 01-04-5603 · ref. 1907BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 11988.89, {
+  c('MAT-24-002', PROV_CIMA, 9971, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/inodoro-blanco-1pza-elongado',
+    nota: 'INODORO BLANCO 1PZA ELONGADO · artículo 301017. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-24-002', PROV_CIMA, 13440, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/inodoro-blanco-1pza-elongado-1',
+    nota: 'INODORO BLANCO 1PZA ELONGADO · artículo 301016. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-24-003', PROV_OCHOA, 11988.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-chichen-itza-c-asiento-01045178',
     nota: 'Inodoro Elong Chichen Itza C / Asiento · artículo 01-04-5178 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 11433.48, {
+  c('MAT-24-003', PROV_OCHOA, 11433.48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-tango-c-asiento-01045176',
     nota: 'Inodoro Elong Tango C / Asiento · artículo 01-04-5176 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 6458.6, {
+  c('MAT-24-003', PROV_OCHOA, 6458.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-anubis-c-asiento-01045495',
     nota: 'Inodoro Elong. Anubis C / Asiento · artículo 01-04-5495 · ref. 2777BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 13890.26, {
+  c('MAT-24-003', PROV_OCHOA, 13890.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-austral-compac-3-8l-01045498',
     nota: 'Inodoro Elong. Austral Compac 3.8L · artículo 01-04-5498 · ref. WCAUSTRALBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 8109.8, {
+  c('MAT-24-003', PROV_OCHOA, 8109.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-milenio-c-asiento-01045353',
     nota: 'Inodoro Elong. Milenio C / Asiento · artículo 01-04-5353 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 8569.28, {
+  c('MAT-24-003', PROV_OCHOA, 8569.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-tango-c-asiento-01045175',
     nota: 'Inodoro Elong. Tango C / Asiento · artículo 01-04-5175 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 9595.18, {
+  c('MAT-24-003', PROV_OCHOA, 9595.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-terra-c-asiento-01045145',
     nota: 'Inodoro Elong. Terra C / Asiento · artículo 01-04-5145 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 8116.49, {
+  c('MAT-24-003', PROV_OCHOA, 8116.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-zurich-c-asiento-01045155',
     nota: 'Inodoro Elong. Zurich C / Asiento · artículo 01-04-5155 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 19389.02, {
+  c('MAT-24-003', PROV_OCHOA, 19389.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elongado-bolmen-01045468',
     nota: 'Inodoro Elongado Bolmen · artículo 01-04-5468 · ref. TT1316MSMARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 9157.35, {
+  c('MAT-24-003', PROV_OCHOA, 9157.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-fiore-elongado-c-asiento-01045316',
     nota: 'Inodoro Fiore Elongado C / Asiento · artículo 01-04-5316 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 10904.75, {
+  c('MAT-24-003', PROV_OCHOA, 10904.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-jazmin-elong-c-asiento-01045172',
     nota: 'Inodoro Jazmin Elong. C / Asiento · artículo 01-04-5172 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 8937.51, {
+  c('MAT-24-003', PROV_OCHOA, 8937.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-jazmin-elong-c-asiento-01045147',
     nota: 'Inodoro Jazmin Elong. C / Asiento · artículo 01-04-5147 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 14950.43, {
+  c('MAT-24-003', PROV_OCHOA, 14950.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-option-elongado-4-8l-01045356',
     nota: 'Inodoro Option Elongado 4.8L · artículo 01-04-5356 · ref. WCBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 16560.53, {
+  c('MAT-24-003', PROV_OCHOA, 16560.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-sarez-c-asiento-01045621',
     nota: 'Inodoro Elong. Sarez C / Asiento · artículo 01-04-5621 · ref. 2094MBNEGROMATE · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_OCHOA, 15757.84, {
+  c('MAT-24-003', PROV_OCHOA, 15757.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elongado-drakar-16-01045388',
     nota: 'Inodoro Elongado Drakar 16 · artículo 01-04-5388 · ref. BLANCO4.8LT · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 5385, {
+  c('MAT-24-003', PROV_INNOVA, 5385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-280-blanco-dos-piezas-semi-elongad-056036',
     nota: 'INODORO AQUASPA 280 BLANCO DOS PIEZAS SEMI ELONGADO BALANCIN CON TAPA · artículo 056036 · ref. Taza · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 5995, {
+  c('MAT-24-003', PROV_INNOVA, 5995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-d1476-blanco-dos-piezas-elongado-b-046517',
     nota: 'INODORO AQUASPA D1476 BLANCO DOS PIEZAS ELONGADO BALANCIN CON TAPA · artículo 046517 · ref. Taza · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 7430, {
+  c('MAT-24-003', PROV_INNOVA, 7430, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-t-6833-blanco-con-tapa-una-pieza-7-064084',
     nota: 'INODORO AQUASPA T-6833 BLANCO CON TAPA UNA PIEZA 710X380X750MM · artículo 064084 · ref. Taza · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6395, {
+  c('MAT-24-003', PROV_INNOVA, 6395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-t-9622-blanco-con-tapa-una-pieza-063077',
     nota: 'INODORO AQUASPA T-9622 BLANCO CON TAPA UNA PIEZA · artículo 063077 · ref. Taza · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 9995, {
+  c('MAT-24-003', PROV_INNOVA, 9995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0002-blanco-con-tapa-una-p-042711',
     nota: 'INODORO COCOBELLA CB.12.0002 BLANCO CON TAPA UNA PIEZA · artículo 042711 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 8375, {
+  c('MAT-24-003', PROV_INNOVA, 8375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0008-blanco-con-tapa-una-p-041459',
     nota: 'INODORO COCOBELLA CB.12.0008 BLANCO CON TAPA UNA PIEZA · artículo 041459 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6985, {
+  c('MAT-24-003', PROV_INNOVA, 6985, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0014-blanco-con-tapa-una-p-019886',
     nota: 'INODORO COCOBELLA CB.12.0014 BLANCO CON TAPA UNA PIEZA · artículo 019886 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 11210, {
+  c('MAT-24-003', PROV_INNOVA, 11210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-001401-negro-con-tapa-una-048576',
     nota: 'INODORO COCOBELLA CB.12.001401 NEGRO CON TAPA UNA PIEZA · artículo 048576 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 7298, {
+  c('MAT-24-003', PROV_INNOVA, 7298, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0027-blanco-con-tapa-una-p-061771',
     nota: 'INODORO COCOBELLA CB.12.0027 BLANCO CON TAPA UNA PIEZA · artículo 061771 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 7485, {
+  c('MAT-24-003', PROV_INNOVA, 7485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0030-blanco-con-tapa-una-p-061770',
     nota: 'INODORO COCOBELLA CB.12.0030 BLANCO CON TAPA UNA PIEZA · artículo 061770 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6850, {
+  c('MAT-24-003', PROV_INNOVA, 6850, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0032-blanco-con-tapa-una-p-019888',
     nota: 'INODORO COCOBELLA CB.12.0032 BLANCO CON TAPA UNA PIEZA · artículo 019888 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 9639, {
+  c('MAT-24-003', PROV_INNOVA, 9639, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-003201-negro-con-tapa-una-048575',
     nota: 'INODORO COCOBELLA CB.12.003201 NEGRO CON TAPA UNA PIEZA · artículo 048575 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 7850, {
+  c('MAT-24-003', PROV_INNOVA, 7850, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-003274-bone-con-tapa-una-p-019889',
     nota: 'INODORO COCOBELLA CB.12.003274 BONE CON TAPA UNA PIEZA · artículo 019889 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 10235, {
+  c('MAT-24-003', PROV_INNOVA, 10235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0041-blanco-con-tapa-una-p-041461',
     nota: 'INODORO COCOBELLA CB.12.0041 BLANCO CON TAPA UNA PIEZA · artículo 041461 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 17705, {
+  c('MAT-24-003', PROV_INNOVA, 17705, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0122-blanco-con-tapa-una-p-061752',
     nota: 'INODORO COCOBELLA CB.12.0122 BLANCO CON TAPA UNA PIEZA · artículo 061752 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6960, {
+  c('MAT-24-003', PROV_INNOVA, 6960, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-12-0148-blanco-con-tapa-una-p-061772',
     nota: 'INODORO COCOBELLA CB.12.0148 BLANCO CON TAPA UNA PIEZA · artículo 061772 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 5295, {
+  c('MAT-24-003', PROV_INNOVA, 5295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-14-0055-blanco-con-tapa-dos-p-037381',
     nota: 'INODORO COCOBELLA CB.14.0055 BLANCO CON TAPA DOS PIEZAS ELONGADO PUSHBUTTON · artículo 037381 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 8478, {
+  c('MAT-24-003', PROV_INNOVA, 8478, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-16-0021-blanco-con-tapa-suspe-061753',
     nota: 'INODORO COCOBELLA CB.16.0021 BLANCO CON TAPA SUSPENDIDO · artículo 061753 · ref. Taza · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 12795, {
+  c('MAT-24-003', PROV_INNOVA, 12795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-16-002126-negro-matte-con-tap-061754',
     nota: 'INODORO COCOBELLA CB.16.002126 NEGRO MATTE CON TAPA SUSPENDIDO · artículo 061754 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 9860, {
+  c('MAT-24-003', PROV_INNOVA, 9860, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-fussion-blanco-con-tapa-una-pieza-6-068275',
     nota: 'INODORO CORONA FUSSION BLANCO CON TAPA UNA PIEZA 621511001/121511001 · artículo 068275 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6855, {
+  c('MAT-24-003', PROV_INNOVA, 6855, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-manantial-blanco-dos-piezas-elongad-063569',
     nota: 'INODORO CORONA MANANTIAL BLANCO DOS PIEZAS ELONGADO BALANCIN 030091000/020921001/85900AAA1 · artículo 063569 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 6845, {
+  c('MAT-24-003', PROV_INNOVA, 6845, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-manantial-blanco-dos-piezas-elongad-063561',
     nota: 'INODORO CORONA MANANTIAL BLANCO DOS PIEZAS ELONGADO PUSH 030091000/020911001/85900AAA1 · artículo 063561 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 13995, {
+  c('MAT-24-003', PROV_INNOVA, 13995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-piamonte-blanco-con-tapa-2-piezas-0-041285',
     nota: 'INODORO CORONA PIAMONTE BLANCO CON TAPA 2 PIEZAS 04115100 /21106100 · artículo 041285 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 4225, {
+  c('MAT-24-003', PROV_INNOVA, 4225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-victory-tr218la-blanco-dos-piezas-elongado-057468',
     nota: 'INODORO VICTORY TR218LA BLANCO DOS PIEZAS ELONGADO BALANCIN CON TAPA · artículo 057468 · ref. Taza · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-002', PROV_INNOVA, 7275, {
+  c('MAT-24-003', PROV_INNOVA, 7275, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-victory-tr5230-blanco-con-tapa-una-pieza-r-047331',
     nota: 'INODORO VICTORY TR5230 BLANCO CON TAPA UNA PIEZA ROHOI · artículo 047331 · ref. Taza · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_OCHOA, 8541.47, {
+  c('MAT-24-004', PROV_OCHOA, 8541.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-jazmin-red-c-asiento-01045171',
     nota: 'Inodoro Jazmin Red. C / Asiento · artículo 01-04-5171 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_OCHOA, 7263.45, {
+  c('MAT-24-004', PROV_OCHOA, 7263.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-jazmin-red-c-asiento-01045146',
     nota: 'Inodoro Jazmin Red. C / Asiento · artículo 01-04-5146 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_INNOVA, 12495, {
+  c('MAT-24-004', PROV_INNOVA, 12495, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoro-teka-blanco-dessin-one-piece-con-tapa-069274',
     nota: 'INODORO TEKA BLANCO DESSIN ONE PIECE CON TAPA · artículo 069274 · ref. Taza · marca TEKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_INNOVA, 11910, {
+  c('MAT-24-004', PROV_INNOVA, 11910, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoro-teka-sineu-blanco-one-piece-con-tapa-069273',
     nota: 'INODORO TEKA SINEU BLANCO ONE PIECE CON TAPA · artículo 069273 · ref. Taza · marca TEKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_INNOVA, 4855, {
+  c('MAT-24-004', PROV_INNOVA, 4855, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-acuacer-blanco-dos-piezas-redondo-p-063568',
     nota: 'INODORO CORONA ACUACER BLANCO DOS PIEZAS REDONDO PUSH 03007100/05470100/8690001 · artículo 063568 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_INNOVA, 5323, {
+  c('MAT-24-004', PROV_INNOVA, 5323, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-acuacer-bone-dos-piezas-redondo-pus-063567',
     nota: 'INODORO CORONA ACUACER BONE DOS PIEZAS REDONDO PUSH 03007103/05470103/869710001 · artículo 063567 · ref. Taza · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-003', PROV_INNOVA, 4995, {
+  c('MAT-24-004', PROV_INNOVA, 4995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-victory-tr202a-blanco-dos-piezas-redondo-b-046848',
     nota: 'INODORO VICTORY TR202A BLANCO DOS PIEZAS REDONDO BALANCIN CON TAPA · artículo 046848 · ref. Taza · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 5283.05, {
+  c('MAT-24-005', PROV_CIMA, 5320, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/inodoro-blanco-2-pieza-3400',
+    nota: 'INODORO BLANCO 2 PIEZA 3400 · artículo 073136. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-24-006', PROV_OCHOA, 5283.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-inodoro-drakar-16-01045405',
     nota: 'Tanque Inodoro Drakar 16 · artículo 01-04-5405 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 586.47, {
+  c('MAT-24-006', PROV_OCHOA, 586.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-bellini-01045417',
     nota: 'Tanque Para Inodoro Bellini · artículo 01-04-5417 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3205.05, {
+  c('MAT-24-006', PROV_OCHOA, 3205.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-3-lucas-4-8-01045633',
     nota: 'Tanque 3´´ Lucas 4.8 · artículo 01-04-5633 · ref. NEGRO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 2732.09, {
+  c('MAT-24-006', PROV_OCHOA, 2732.09, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-aguazul-calidad-universal-01045090',
     nota: 'Tanque Aguazul Calidad Universal · artículo 01-04-5090 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3460.52, {
+  c('MAT-24-006', PROV_OCHOA, 3460.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-aguazul-calidad-universal-01045092',
     nota: 'Tanque Aguazul Calidad Universal · artículo 01-04-5092 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 2587.8, {
+  c('MAT-24-006', PROV_OCHOA, 2587.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-artemis-push-710x415x800-mm-01045511',
     nota: 'Tanque Artemis Push 710X415X800 Mm · artículo 01-04-5511 · ref. 2758BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 5209.9, {
+  c('MAT-24-006', PROV_OCHOA, 5209.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-austral-01045518',
     nota: 'Tanque Austral · artículo 01-04-5518 · ref. WCAUSTRALBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 5914.29, {
+  c('MAT-24-006', PROV_OCHOA, 5914.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-bolmen-16-01045472',
     nota: 'Tanque Bolmen 16 · artículo 01-04-5472 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 1220.26, {
+  c('MAT-24-006', PROV_OCHOA, 1220.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-ceres-01045508',
     nota: 'Tanque Ceres · artículo 01-04-5508 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4844.47, {
+  c('MAT-24-006', PROV_OCHOA, 4844.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-de-inodoro-option-01045362',
     nota: 'Tanque De Inodoro Option · artículo 01-04-5362 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4864.27, {
+  c('MAT-24-006', PROV_OCHOA, 4864.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-de-inodoro-rodano-01045227',
     nota: 'Tanque De Inodoro Rodano · artículo 01-04-5227 · ref. TQ1-2BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3963.53, {
+  c('MAT-24-006', PROV_OCHOA, 3963.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-de-inodoro-rodano-01045228',
     nota: 'Tanque De Inodoro Rodano · artículo 01-04-5228 · ref. TQ1-2-MMARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3935.55, {
+  c('MAT-24-006', PROV_OCHOA, 3935.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-goya-c-boton-3-8-01045524',
     nota: 'Tanque Goya C / Boton 3.8 · artículo 01-04-5524 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3963.96, {
+  c('MAT-24-006', PROV_OCHOA, 3963.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-inodoro-chichen-itza-01045167',
     nota: 'Tanque Inodoro Chichen Itza · artículo 01-04-5167 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4532.11, {
+  c('MAT-24-006', PROV_OCHOA, 4532.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-inodoro-chichen-itza-01045168',
     nota: 'Tanque Inodoro Chichen Itza · artículo 01-04-5168 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 2559.07, {
+  c('MAT-24-006', PROV_OCHOA, 2559.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-lucas-red-3-4-8-lpd-01045601',
     nota: 'Tanque Lucas Red. 3´´ 4.8 Lpd · artículo 01-04-5601 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3281.77, {
+  c('MAT-24-006', PROV_OCHOA, 3281.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-milenio-01045349',
     nota: 'Tanque Milenio · artículo 01-04-5349 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 13128.56, {
+  c('MAT-24-006', PROV_OCHOA, 13128.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-miura-16-01045505',
     nota: 'Tanque Miura 16 · artículo 01-04-5505 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 18906.72, {
+  c('MAT-24-006', PROV_OCHOA, 18906.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-miura-con-sensor-miura-4-8-01045583',
     nota: 'Tanque Miura Con Sensor Miura 4.8 · artículo 01-04-5583 · ref. MIURA16TCCBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 10691.99, {
+  c('MAT-24-006', PROV_OCHOA, 10691.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-murano-murano-01045332',
     nota: 'Tanque Murano Murano · artículo 01-04-5332 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4513.21, {
+  c('MAT-24-006', PROV_OCHOA, 4513.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-olimpia-01045282',
     nota: 'Tanque Olimpia · artículo 01-04-5282 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4918.97, {
+  c('MAT-24-006', PROV_OCHOA, 4918.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-olimpia-01045262',
     nota: 'Tanque Olimpia · artículo 01-04-5262 · ref. MARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 6467.83, {
+  c('MAT-24-006', PROV_OCHOA, 6467.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-bolmen-01045471',
     nota: 'Tanque Para Inodoro Bolmen · artículo 01-04-5471 · ref. MARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3523.85, {
+  c('MAT-24-006', PROV_OCHOA, 3523.85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-fiore-01045314',
     nota: 'Tanque Para Inodoro Fiore · artículo 01-04-5314 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3353.81, {
+  c('MAT-24-006', PROV_OCHOA, 3353.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-jazmin-01045095',
     nota: 'Tanque Para Inodoro Jazmin · artículo 01-04-5095 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3686.21, {
+  c('MAT-24-006', PROV_OCHOA, 3686.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-jazmin-01045098',
     nota: 'Tanque Para Inodoro Jazmin · artículo 01-04-5098 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 2942.09, {
+  c('MAT-24-006', PROV_OCHOA, 2942.09, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-milenio-01045348',
     nota: 'Tanque Para Inodoro Milenio · artículo 01-04-5348 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4346.65, {
+  c('MAT-24-006', PROV_OCHOA, 4346.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-tango-01045165',
     nota: 'Tanque Para Inodoro Tango · artículo 01-04-5165 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4050.93, {
+  c('MAT-24-006', PROV_OCHOA, 4050.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-terra-iii-01045100',
     nota: 'Tanque Para Inodoro Terra Iii · artículo 01-04-5100 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 2953.4, {
+  c('MAT-24-006', PROV_OCHOA, 2953.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-zurich-01045104',
     nota: 'Tanque Para Inodoro Zurich · artículo 01-04-5104 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3294.37, {
+  c('MAT-24-006', PROV_OCHOA, 3294.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoro-zurich-01045106',
     nota: 'Tanque Para Inodoro Zurich · artículo 01-04-5106 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 6050.86, {
+  c('MAT-24-006', PROV_OCHOA, 6050.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-para-inodoros-rodano-01045476',
     nota: 'Tanque Para Inodoros Rodano · artículo 01-04-5476 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 6289.99, {
+  c('MAT-24-006', PROV_OCHOA, 6289.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-rodano-16-01045475',
     nota: 'Tanque Rodano 16 · artículo 01-04-5475 · ref. MARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 5467.75, {
+  c('MAT-24-006', PROV_OCHOA, 5467.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-sustenta-01045598',
     nota: 'Tanque Sustenta · artículo 01-04-5598 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 3504.93, {
+  c('MAT-24-006', PROV_OCHOA, 3504.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-tango-3-01045163',
     nota: 'Tanque Tango 3\'\' · artículo 01-04-5163 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 4629.65, {
+  c('MAT-24-006', PROV_OCHOA, 4629.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-terra-3-01045102',
     nota: 'Tanque Terra 3” · artículo 01-04-5102 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_OCHOA, 1707.44, {
+  c('MAT-24-006', PROV_OCHOA, 1707.44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tanque-toronto-ii-ada-manija-01045677',
     nota: 'Tanque Toronto Ii Ada Manija · artículo 01-04-5677 · ref. KLIPENIVORY · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_INNOVA, 12715, {
+  c('MAT-24-006', PROV_INNOVA, 12715, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/piezassanitarias/tanque-inodoro-cocobella-cb-27-0017-boton-descarga-061756',
     nota: 'TANQUE INODORO COCOBELLA CB.27.0017 BOTON DESCARGA BLANCO EMPOTRAR · artículo 061756 · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-004', PROV_INNOVA, 14100, {
+  c('MAT-24-006', PROV_INNOVA, 14100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/piezassanitarias/tanque-inodoro-cocobella-cb-27-001726-boton-descar-061757',
     nota: 'TANQUE INODORO COCOBELLA CB.27.001726 BOTON DESCARGA NEGRO MATTE EMPOTRAR · artículo 061757 · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 4011.15, {
+  c('MAT-24-007', PROV_OCHOA, 4011.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-artemis-2-c-a-700x360x740-01045640',
     nota: 'Basineta Artemis 2 C / A. 700X360X740 · artículo 01-04-5640 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 3026.71, {
+  c('MAT-24-007', PROV_OCHOA, 3026.71, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-baby-01045402',
     nota: 'Basineta Baby · artículo 01-04-5402 · ref. BLANCO · marca TREBOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 8732.4, {
+  c('MAT-24-007', PROV_OCHOA, 8732.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-bolmen-16-01045469',
     nota: 'Basineta Bolmen 16 · artículo 01-04-5469 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 9558, {
+  c('MAT-24-007', PROV_OCHOA, 9558, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-bolmen-16-01045470',
     nota: 'Basineta Bolmen 16 · artículo 01-04-5470 · ref. MARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 15899.37, {
+  c('MAT-24-007', PROV_OCHOA, 15899.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-c-asiento-murano-01045331',
     nota: 'Basineta C / Asiento Murano · artículo 01-04-5331 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 5063.97, {
+  c('MAT-24-007', PROV_OCHOA, 5063.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-de-ceramica-fiore-01045313',
     nota: 'Basineta De Cerámica Fiore · artículo 01-04-5313 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 7906.37, {
+  c('MAT-24-007', PROV_OCHOA, 7906.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-drakar-16-01045414',
     nota: 'Basineta Drakar 16 · artículo 01-04-5414 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 4090.27, {
+  c('MAT-24-007', PROV_OCHOA, 4090.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elon-armin-c-asiento-01045680',
     nota: 'Basineta Elon Armin C / Asiento · artículo 01-04-5680 · ref. LX-2596BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 4174.16, {
+  c('MAT-24-007', PROV_OCHOA, 4174.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elon-artemis-c-a-710x415x800-01045510',
     nota: 'Basineta Elon. Artemis C / A. 710X415X800 · artículo 01-04-5510 · ref. 2758BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 5846.69, {
+  c('MAT-24-007', PROV_OCHOA, 5846.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-emma-square-01045236',
     nota: 'Basineta Emma Square · artículo 01-04-5236 · ref. G2716001 · marca GALA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 4717.05, {
+  c('MAT-24-007', PROV_OCHOA, 4717.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-ino-drakar-1-tt1-01045182',
     nota: 'Basineta Ino. Drakar 1 Tt1 · artículo 01-04-5182 · ref. TZ1BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 19696.42, {
+  c('MAT-24-007', PROV_OCHOA, 19696.42, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-miura-16-con-asiento-01045506',
     nota: 'Basineta Miura 16 Con Asiento · artículo 01-04-5506 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 8922.82, {
+  c('MAT-24-007', PROV_OCHOA, 8922.82, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-rodano-16-01045473',
     nota: 'Basineta Rodano 16 · artículo 01-04-5473 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 2129.12, {
+  c('MAT-24-007', PROV_OCHOA, 2129.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-universal-01045625',
     nota: 'Basineta Universal · artículo 01-04-5625 · ref. 110018033BLANCO · marca TREBOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 7335.22, {
+  c('MAT-24-007', PROV_OCHOA, 7335.22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/taza-de-inodoro-olimpia-01045261',
     nota: 'Taza De Inodoro Olimpia · artículo 01-04-5261 · ref. MARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 7537.55, {
+  c('MAT-24-007', PROV_OCHOA, 7537.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/taza-de-inodoro-option-01045361',
     nota: 'Taza De Inodoro Option · artículo 01-04-5361 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 15300.18, {
+  c('MAT-24-007', PROV_OCHOA, 15300.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/taza-fluxpared-semiocul-3-5-4-8-6l-nao-01045631',
     nota: 'Taza Fluxpared Semiocul 3.5, 4.8, 6L Nao · artículo 01-04-5631 · ref. TZFNAOP · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 15716.08, {
+  c('MAT-24-007', PROV_OCHOA, 15716.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/taza-para-flux-nao-c-asiento-01045283',
     nota: 'Taza Para Flux Nao C / Asiento · artículo 01-04-5283 · ref. TZF1S · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-005', PROV_OCHOA, 7759.2, {
+  c('MAT-24-007', PROV_OCHOA, 7759.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/taza-terra-fluxometro-01045260',
     nota: 'Taza Terra Fluxometro · artículo 01-04-5260 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5127.81, {
+  c('MAT-24-008', PROV_OCHOA, 5127.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-goya-3-3-8-lpd-01045166',
     nota: 'Basineta Elong Goya 3” 3.8 Lpd · artículo 01-04-5166 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5938, {
+  c('MAT-24-008', PROV_OCHOA, 5938, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-goya-3-3-8-lpd-01045169',
     nota: 'Basineta Elong Goya 3” 3.8 Lpd · artículo 01-04-5169 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5568.04, {
+  c('MAT-24-008', PROV_OCHOA, 5568.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-tango-3-3-8-lpd-01045164',
     nota: 'Basineta Elong Tango 3” 3.8 Lpd · artículo 01-04-5164 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 4494.81, {
+  c('MAT-24-008', PROV_OCHOA, 4494.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-tango-elong-3-3-8-lpd-01045162',
     nota: 'Basineta Elong Tango Elong 3” 3.8 Lpd · artículo 01-04-5162 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5688.79, {
+  c('MAT-24-008', PROV_OCHOA, 5688.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-terra-3-3-8-lpd-01045101',
     nota: 'Basineta Elong Terra 3” 3.8 Lpd · artículo 01-04-5101 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 4974.71, {
+  c('MAT-24-008', PROV_OCHOA, 4974.71, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-terra-3-4-8-lpd-01045099',
     nota: 'Basineta Elong Terra 3” 4.8 Lpd · artículo 01-04-5099 · ref. BLANCA · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5574.97, {
+  c('MAT-24-008', PROV_OCHOA, 5574.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-zurich-3-4-8-lpd-01045105',
     nota: 'Basineta Elong Zurich 3” 4.8 Lpd · artículo 01-04-5105 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 3893.76, {
+  c('MAT-24-008', PROV_OCHOA, 3893.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-anubis-c-asientos-01045509',
     nota: 'Basineta Elong. Anubis C / Asientos · artículo 01-04-5509 · ref. 2777BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 6111.94, {
+  c('MAT-24-008', PROV_OCHOA, 6111.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-austral-3-8-l-01045517',
     nota: 'Basineta Elong. Austral 3.8 L · artículo 01-04-5517 · ref. WCAUSTRALBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 4593.55, {
+  c('MAT-24-008', PROV_OCHOA, 4593.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-zurich-3-4-8-lpd-01045103',
     nota: 'Basineta Elong. Zurich 3” 4.8 Lpd · artículo 01-04-5103 · ref. BLANCA · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 8277.43, {
+  c('MAT-24-008', PROV_OCHOA, 8277.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elongada-sustenta-01045599',
     nota: 'Basineta Elongada Sustenta · artículo 01-04-5599 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 2176.6, {
+  c('MAT-24-008', PROV_OCHOA, 2176.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elongado-ceres-01045507',
     nota: 'Basineta Elongado Ceres · artículo 01-04-5507 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5014.16, {
+  c('MAT-24-008', PROV_OCHOA, 5014.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-jazmin-elong-3-4-8-lpd-01045094',
     nota: 'Basineta Jazmin Elong. 3” 4.8 Lpd · artículo 01-04-5094 · ref. BLANCA · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 5699.74, {
+  c('MAT-24-008', PROV_OCHOA, 5699.74, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-jazmin-elong-3-4-8-lpd-01045097',
     nota: 'Basineta Jazmin Elong. 3” 4.8 Lpd · artículo 01-04-5097 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-006', PROV_OCHOA, 4598.17, {
+  c('MAT-24-008', PROV_OCHOA, 4598.17, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-milenio-elong-3-8-lpd-01045347',
     nota: 'Basineta Milenio Elong. 3.8 Lpd · artículo 01-04-5347 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 2731.31, {
+  c('MAT-24-009', PROV_OCHOA, 2731.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-aguazul-red-calidad-universal-01045089',
     nota: 'Basineta Aguazul Red. Calidad Universal · artículo 01-04-5089 · ref. BLANCA · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 3445.23, {
+  c('MAT-24-009', PROV_OCHOA, 3445.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-aguazul-red-calidad-universal-01045091',
     nota: 'Basineta Aguazul Red. Calidad Universal · artículo 01-04-5091 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 3391.69, {
+  c('MAT-24-009', PROV_OCHOA, 3391.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-jazmin-red-3-4-8-lpd-01045093',
     nota: 'Basineta Jazmin Red. 3” 4.8 Lpd · artículo 01-04-5093 · ref. BLANCA · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 3686.21, {
+  c('MAT-24-009', PROV_OCHOA, 3686.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-jazmin-red-3-4-8-lpd-01045096',
     nota: 'Basineta Jazmin Red. 3” 4.8 Lpd · artículo 01-04-5096 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 2558.56, {
+  c('MAT-24-009', PROV_OCHOA, 2558.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-lucas-red-3-4-8-lpd-01045600',
     nota: 'Basineta Lucas Red. 3´´ 4.8 Lpd · artículo 01-04-5600 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 6768.83, {
+  c('MAT-24-009', PROV_OCHOA, 6768.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-olimpia-red-01045294',
     nota: 'Basineta Olimpia Red. · artículo 01-04-5294 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 3204.84, {
+  c('MAT-24-009', PROV_OCHOA, 3204.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-red-3-lucas-4-8-01045632',
     nota: 'Basineta Red. 3´´ Lucas 4.8 · artículo 01-04-5632 · ref. NEGRO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-007', PROV_OCHOA, 2501.14, {
+  c('MAT-24-009', PROV_OCHOA, 2501.14, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-de-ceramica-redonda-01045360',
     nota: 'Basineta De Cerámica Redonda · artículo 01-04-5360 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-008', PROV_INNOVA, 8995, {
+  c('MAT-24-010', PROV_INNOVA, 8995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodorosfluxometro/taza-corona-fluxometro-adriatica-21318-elongada-050130',
     nota: 'TAZA CORONA FLUXOMETRO ADRIATICA 21318 ELONGADA · artículo 050130 · ref. Inodoro · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-008', PROV_INNOVA, 3925, {
+  c('MAT-24-010', PROV_INNOVA, 3925, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodorosfluxometro/taza-fluxometro-aquaspa-2106-blanco-elongada-sin-t-056195',
     nota: 'TAZA FLUXOMETRO AQUASPA 2106 BLANCO ELONGADA SIN TAPA · artículo 056195 · ref. Taza · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-008', PROV_INNOVA, 9187, {
+  c('MAT-24-010', PROV_INNOVA, 9187, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodorosfluxometro/taza-fluxometro-zurn-z5665-bwl1-blanca-062083',
     nota: 'TAZA FLUXOMETRO ZURN Z5665-BWL1 BLANCA · artículo 062083 · ref. Taza · marca ZURN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 11016.2, {
+  c('MAT-24-011', PROV_OCHOA, 11016.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mingitorio-orinal-terra-iii-01061486',
     nota: 'Mingitorio / Orinal Terra Iii · artículo 01-06-1486 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 5473.28, {
+  c('MAT-24-011', PROV_OCHOA, 5473.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mingitorio-orinal-misisipi-01061367',
     nota: 'Mingitorio Orinal Misisipi · artículo 01-06-1367 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 4422.13, {
+  c('MAT-24-011', PROV_OCHOA, 4422.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/orinal-duero-c-accesorios-01061649',
     nota: 'Orinal Duero C / Accesorios · artículo 01-06-1649 · ref. 3107HBLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 7374.92, {
+  c('MAT-24-011', PROV_OCHOA, 7374.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/orinal-obi-c-sensor-01061647',
     nota: 'Orinal Obi C / Sensor · artículo 01-06-1647 · ref. 3103BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 8145.95, {
+  c('MAT-24-011', PROV_OCHOA, 8145.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/orinal-victoria-c-sensor-01061646',
     nota: 'Orinal Victoria C / Sensor · artículo 01-06-1646 · ref. 3102BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 5887.21, {
+  c('MAT-24-011', PROV_OCHOA, 5887.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/orinal-volga-c-accesorios-01061648',
     nota: 'Orinal Volga C / Accesorios · artículo 01-06-1648 · ref. 3108BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_OCHOA, 21399.06, {
+  c('MAT-24-011', PROV_OCHOA, 21399.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/urinario-ferris-01061336',
     nota: 'Urinario Ferris · artículo 01-06-1336 · ref. MG-1BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_INNOVA, 4362, {
+  c('MAT-24-011', PROV_INNOVA, 4362, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/orinales/orinal-cocobella-cb-24-0007-p-blanco-036626',
     nota: 'ORINAL COCOBELLA CB.24.0007-P BLANCO · artículo 036626 · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_INNOVA, 5139, {
+  c('MAT-24-011', PROV_INNOVA, 5139, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/orinales/orinal-cocobella-cb-24-0013-p-blanco-036627',
     nota: 'ORINAL COCOBELLA CB.24.0013-P BLANCO · artículo 036627 · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-009', PROV_INNOVA, 9995, {
+  c('MAT-24-011', PROV_INNOVA, 9995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/orinales/orinal-zurn-z5730-blanco-062082',
     nota: 'ORINAL ZURN Z5730 BLANCO · artículo 062082 · marca ZURN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-010', PROV_INNOVA, 5937, {
+  c('MAT-24-012', PROV_CIMA, 3998, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bidet-blanco-ab8000',
+    nota: 'BIDET BLANCO AB8000 · artículo 170319802013. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-24-012', PROV_INNOVA, 5937, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/bidets/bidet-cocobella-cb-17-0007-blanco-041462',
     nota: 'BIDET COCOBELLA CB.17.0007 BLANCO · artículo 041462 · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-24-011', PROV_OCHOA, 1773, {
+  c('MAT-24-013', PROV_OCHOA, 1773, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-d-instalacion-p-inodoro-01045375',
     nota: 'Kit D / Instalacion P / Inodoro · artículo 01-04-5375 · ref. 400AK · marca FLUIDMASTERINC. ' + SUPUESTO_ITBIS
   });
@@ -7370,6 +8110,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-surt-01061617',
     nota: 'Lavamanos Surt · artículo 01-06-1617 · ref. 8009BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-25-004', PROV_CIMA, 3635, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-c-pedestal',
+    nota: 'LAVAMANOS BLANCO C/PEDESTAL · artículo 7506140607190. ' + SUPUESTO_ITBIS
+  });
   c('MAT-25-004', PROV_INNOVA, 2094, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-210-pedestal-1-hoyo-blanco-067205',
     nota: 'LAVAMANOS AQUASPA 210 PEDESTAL 1 HOYO BLANCO · artículo 067205 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -7574,6 +8318,14 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-trazzo-sobreponer-01061334',
     nota: 'Lavamanos Trazzo Sobreponer · artículo 01-06-1334 · ref. LV-5MMARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
+  c('MAT-25-005', PROV_CIMA, 1150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-1-hoyo-1',
+    nota: 'LAVAMANOS BLANCO 1 HOYO · artículo 057994. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_CIMA, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-1-hoyo',
+    nota: 'LAVAMANOS BLANCO 1 HOYO · artículo 097818. ' + SUPUESTO_ITBIS
+  });
   c('MAT-25-005', PROV_INNOVA, 2395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-5061-blanco-tipo-tope-051409',
     nota: 'LAVAMANOS AQUASPA TR-5061 BLANCO TIPO TOPE · artículo 051409 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -7733,6 +8485,18 @@
   c('MAT-25-007', PROV_OCHOA, 80.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/palometa-sencilla-p-lav-d-metal-01061641',
     nota: 'Palometa Sencilla P / Lav D / Metal · artículo 01-06-1641 · ref. 2494 · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-007', PROV_CIMA, 189, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamanos-sencillo',
+    nota: 'PALOMETA LAVAMANOS SENCILLO · artículo 710631917225. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-007', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamanos-doble',
+    nota: 'PALOMETA LAVAMANOS DOBLE · artículo 030980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-007', PROV_CIMA, 141, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamano-sencilla-met',
+    nota: 'PALOMETA LAVAMANO SENCILLA MET · artículo 061055. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-008', PROV_OCHOA, 255.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-yee-1-01061642',
@@ -8050,6 +8814,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-corona-aluvia-lm3766421-verde-45-cm-068278',
     nota: 'MUEBLE BAÑO CORONA ALUVIA LM3766421 VERDE 45 CM · artículo 068278 · ref. Mueble · marca CORONA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-26-003', PROV_CIMA, 21825, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-c-mueble-bco-ps500',
+    nota: 'LAVAMANOS C/MUEBLE BCO PS500 · artículo 020627. ' + SUPUESTO_ITBIS
+  });
   c('MAT-26-003', PROV_INNOVA, 9444, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-130018-50-aluminio-blanco-l-061742',
     nota: 'MUEBLE BAÑO AQUASPA CS.130018-50 ALUMINIO BLANCO LAVAMANO/ESPEJO 50 CM AQUASPA · artículo 061742 · ref. Mueble · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -8129,6 +8897,14 @@
   c('MAT-26-004', PROV_OCHOA, 6543.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/botiquin-city-40-blanco-01101233',
     nota: 'Botiquin City 40 Blanco · artículo 01-10-1233 · ref. 2012000000195 · marca AML. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-004', PROV_CIMA, 2886, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/botiquin-plastico-blanco-c-esp',
+    nota: 'BOTIQUIN PLASTICO BLANCO C/ESP · artículo 7705152073157. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-004', PROV_CIMA, 2775, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/botiquin-plastico-crema-c-esp',
+    nota: 'BOTIQUIN PLASTICO CREMA C/ESP · artículo 7705152073164. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-004', PROV_INNOVA, 1320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/botiquines/botiquin-aquaspa-40cm-blanco-mdf-con-espejo-rectan-070519',
@@ -8662,6 +9438,14 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/accesorio-p-bano-jgo-5-pieza-01112799',
     nota: 'Accesorio P / Bano Jgo (5 Pieza) · artículo 01-11-2799 · ref. 12966 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
+  c('MAT-27-021', PROV_CIMA, 1883, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/accesorio-bano-cromado-5-1a-90',
+    nota: 'ACCESORIO BANO CROMADO 5/1A-90 · artículo 7506240617259. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-021', PROV_CIMA, 1139, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/accesorio-bano-cromado-5-1j-80',
+    nota: 'ACCESORIO BANO CROMADO 5/1J-80 · artículo 7501206697450. ' + SUPUESTO_ITBIS
+  });
   c('MAT-27-021', PROV_INNOVA, 394, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/juegosaccesoriosbano/accesorios-baño-baikal-ty21001-niquelado-5-3-1-048926',
     nota: 'ACCESORIOS BAÑO BAIKAL TY21001 NIQUELADO 5/1 · artículo 048926 · marca BAIKAL. ' + SUPUESTO_ITBIS
@@ -8753,6 +9537,18 @@
   c('MAT-27-022', PROV_OCHOA, 4228.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-accesorios-p-bano-prem-6pzas-01101302',
     nota: 'Kit Accesorios P / Bano Prem 6Pzas · artículo 01-10-1302 · ref. IB906CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-022', PROV_CIMA, 2306, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/accesorio-bano-negro-6-1-aqa-4',
+    nota: 'ACCESORIO BANO NEGRO 6/1 AQA-4 · artículo 7506240692379. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-022', PROV_CIMA, 2969, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/accesorio-bano-cromado-6-1-aqa-1',
+    nota: 'ACCESORIO BANO CROMADO 6/1 AQA · artículo 7501206684566. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-022', PROV_CIMA, 3370, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/accesorio-bano-cromado-6-1-aqa',
+    nota: 'ACCESORIO BANO CROMADO 6/1 AQA · artículo 7506240680239. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-022', PROV_INNOVA, 1595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/juegosaccesoriosbano/accesorios-baño-baikal-1700-niquelado-6-3-1-73700-040367',
@@ -10709,6 +11505,1790 @@
   c('MAT-31-019', PROV_OCHOA, 5924.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-de-control-digital-pantalla-oled-03060710',
     nota: 'Unidad De Control Digital Pantalla Oled · artículo 03-06-0710 · ref. CZ830MC · marca TUTONDO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-008', PROV_CIMA, 967, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-drenaje-3-x-19',
+    nota: 'TUBO PVC DRENAJE 3 x 19 · artículo 070612. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-009', PROV_CIMA, 1001, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-drenaje-4-x-19',
+    nota: 'TUBO PVC DRENAJE 4 X 19 · artículo 210000. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-010', PROV_CIMA, 944, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sch-40-1-5-x-19',
+    nota: 'TUBO PVC SCH-40 1.5 x 19 · artículo 052603. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-011', PROV_CIMA, 315, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sch-40-1-2-x-19',
+    nota: 'TUBO PVC SCH-40 1/2 x 19 · artículo 064533. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-012', PROV_CIMA, 570, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sch-40-1-x-19',
+    nota: 'TUBO PVC SCH-40 1 x 19 · artículo 250624. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-013', PROV_CIMA, 388, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sch-40-3-4-x-19',
+    nota: 'TUBO PVC SCH-40 3/4 x 19 · artículo 250623. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-014', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-26-1-2-x-19',
+    nota: 'TUBO PVC SDR-26 1/2 x 19 · artículo 045243. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-015', PROV_CIMA, 305, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-26-1-x-19',
+    nota: 'TUBO PVC SDR-26 1 x 19 · artículo 011214. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-016', PROV_CIMA, 175, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-26-3-4-x-19',
+    nota: 'TUBO PVC SDR-26 3/4 x 19 · artículo 075675. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-017', PROV_CIMA, 2172, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-26-3-x-19',
+    nota: 'TUBO PVC SDR-26 3 x 19 · artículo 250614. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-018', PROV_CIMA, 453, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-41-1-5-x-19',
+    nota: 'TUBO PVC SDR-41 1.5 x 19 · artículo 051611. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-019', PROV_CIMA, 1150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tubo-pvc-sdr-41-3-x-19',
+    nota: 'TUBO PVC SDR-41 3 x 19 · artículo 250612. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-020', PROV_CIMA, 67, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-refor-1-5',
+    nota: 'ABRAZADERA MANGUERA REFOR 1.5 · artículo 7501206693995. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-020', PROV_CIMA, 39, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-1-5',
+    nota: 'ABRAZADERA MANGUERA 1.5 · artículo 050776. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-021', PROV_CIMA, 53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-refor-1-2',
+    nota: 'ABRAZADERA MANGUERA  REFOR 1/2 · artículo 015034. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-022', PROV_CIMA, 56, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-refor-1',
+    nota: 'ABRAZADERA MANGUERA REFOR 1 · artículo 031626. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-023', PROV_CIMA, 68, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-refor-2',
+    nota: 'ABRAZADERA MANGUERA REFOR 2 · artículo 031627. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-024', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/abrazadera-manguera-refor-3-4',
+    nota: 'ABRAZADERA MANGUERA REFOR 3/4 · artículo 031625. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-025', PROV_CIMA, 172, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-hembra-20mm-x-1-2-pp',
+    nota: 'ADAPTADOR HEMBRA 20mm X 1/2 PP · artículo 502015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-026', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-5',
+    nota: 'ADAPTADOR PVC HEMBRA 1.5 · artículo 030318. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-027', PROV_CIMA, 20, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-2',
+    nota: 'ADAPTADOR PVC HEMBRA 1/2 · artículo 030315. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-028', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1',
+    nota: 'ADAPTADOR PVC HEMBRA 1 · artículo 030317. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-029', PROV_CIMA, 130, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-2',
+    nota: 'ADAPTADOR PVC HEMBRA 2 · artículo 030319. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-030', PROV_CIMA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3-4',
+    nota: 'ADAPTADOR PVC HEMBRA 3/4 · artículo 030316. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-031', PROV_CIMA, 177, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3',
+    nota: 'ADAPTADOR PVC HEMBRA 3 · artículo 016404. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-032', PROV_CIMA, 172, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-4',
+    nota: 'ADAPTADOR PVC HEMBRA 4 · artículo 016403. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-033', PROV_CIMA, 188, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-3-4-pp',
+    nota: 'ADAPTADOR MACHO 20mm X 3/4 PP · artículo 7468910221008. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-033', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-1-2-pp',
+    nota: 'ADAPTADOR MACHO 20mm X 1/2 PP · artículo 552015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-034', PROV_CIMA, 253, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-25mm-x-3-4-ppr',
+    nota: 'ADAPTADOR MACHO 25mm X 3/4 PPR · artículo 0475621. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-035', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-5',
+    nota: 'ADAPTADOR PVC MACHO 1.5 · artículo 030313. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-036', PROV_CIMA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-2',
+    nota: 'ADAPTADOR PVC MACHO 1/2 · artículo 030310. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-037', PROV_CIMA, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1',
+    nota: 'ADAPTADOR PVC MACHO 1 · artículo 030312. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-038', PROV_CIMA, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-2',
+    nota: 'ADAPTADOR PVC MACHO 2 · artículo 030314. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-039', PROV_CIMA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-3-4',
+    nota: 'ADAPTADOR PVC MACHO 3/4 · artículo 030311. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-040', PROV_CIMA, 271, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-3',
+    nota: 'ADAPTADOR PVC MACHO 3 · artículo 016406. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-041', PROV_CIMA, 291, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-4',
+    nota: 'ADAPTADOR PVC MACHO 4 · artículo 016405. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-042', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-3-16',
+    nota: 'ANILLA COBRE 3/16 · artículo 030895. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-043', PROV_CIMA, 19, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-5-16',
+    nota: 'ANILLA COBRE 5/16 · artículo 030896. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-044', PROV_CIMA, 32, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-1-2',
+    nota: 'ANILLA COBRE 1/2 · artículo 018507. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-045', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-1-4',
+    nota: 'ANILLA COBRE 1/4 · artículo 017507. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-046', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-3-8',
+    nota: 'ANILLA COBRE 3/8 · artículo 031895. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-047', PROV_CIMA, 37, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-25mm-x-45-ppr',
+    nota: 'CODO 25mm X 45 PPR · artículo 069655. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-048', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-45',
+    nota: 'CODO PVC DRENAJE 1.5 x 45 · artículo 030380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-049', PROV_CIMA, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-45',
+    nota: 'CODO PVC DRENAJE 2 x 45 · artículo 030328. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-050', PROV_CIMA, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-45',
+    nota: 'CODO PVC DRENAJE 3 x 45 · artículo 030329. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-051', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-4-x-45',
+    nota: 'CODO PVC DRENAJE 4 x 45 · artículo 030330. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-052', PROV_CIMA, 612, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-6-x-45',
+    nota: 'CODO PVC DRENAJE 6 X 45 · artículo 069636. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-053', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-45',
+    nota: 'CODO PVC PRESION 1.5 x 45 · artículo 087417. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-054', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-45',
+    nota: 'CODO PVC PRESION 1/2 x 45 · artículo 023338. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-055', PROV_CIMA, 90, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-45',
+    nota: 'CODO PVC PRESION 1 x 45 · artículo 087428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-056', PROV_CIMA, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-45',
+    nota: 'CODO PVC PRESION 3/4 x 45 · artículo 030390. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-057', PROV_CIMA, 33, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-20mm-x-90-ppr',
+    nota: 'CODO 20mm X 90 PPR · artículo 150020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-058', PROV_CIMA, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-25mm-x-90-ppr',
+    nota: 'CODO 25mm X 90 PPR · artículo 069653. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-059', PROV_CIMA, 30, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-90',
+    nota: 'CODO PVC DRENAJE 1.5 x 90 · artículo 031018. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-060', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-90',
+    nota: 'CODO PVC DRENAJE 2 x 90 · artículo 030331. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-061', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-90',
+    nota: 'CODO PVC DRENAJE 3 x 90 · artículo 030332. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-062', PROV_CIMA, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-90',
+    nota: 'CODO PVC PRESION 1.5 x 90 · artículo 030337. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-063', PROV_CIMA, 15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-90',
+    nota: 'CODO PVC PRESION 1/2 x 90 · artículo 030334. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-064', PROV_CIMA, 27, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-90',
+    nota: 'CODO PVC PRESION 1 x 90 · artículo 030336. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-065', PROV_CIMA, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-2-x-90',
+    nota: 'CODO PVC PRESION 2 x 90 · artículo 030338. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-066', PROV_CIMA, 15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-90',
+    nota: 'CODO PVC PRESION 3/4 x 90 · artículo 030335. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-067', PROV_CIMA, 233, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-x-90',
+    nota: 'CODO PVC PRESION 3 x 90 · artículo 030339. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-068', PROV_CIMA, 370, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-4-x-90',
+    nota: 'CODO PVC PRESION 4 x 90 · artículo 030340. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-069', PROV_CIMA, 234, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-5',
+    nota: 'CODO HG 1.5 · artículo 300006. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-070', PROV_CIMA, 130, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-1-4',
+    nota: 'CODO HG 1 1/4 · artículo 300005. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-071', PROV_CIMA, 30, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-2',
+    nota: 'CODO HG 1/2 · artículo 300002. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-072', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-4',
+    nota: 'CODO HG 1/4 · artículo 300000. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-073', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1',
+    nota: 'CODO HG 1 · artículo 300004. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-074', PROV_CIMA, 291, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-2',
+    nota: 'CODO HG 2 · artículo 300007. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-075', PROV_CIMA, 51, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-3-4',
+    nota: 'CODO HG 3/4 · artículo 300003. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-076', PROV_CIMA, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-3-8',
+    nota: 'CODO HG 3/8 · artículo 300001. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-077', PROV_CIMA, 363, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-niquelado-1-2',
+    nota: 'CODO NIQUELADO 1/2 · artículo 78652. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-078', PROV_CIMA, 179, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-bronce-3-8x45',
+    nota: 'CODONIPLE BRONCE 3/8X45 · artículo 169541. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-079', PROV_CIMA, 215, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-5',
+    nota: 'CODONIPLE HG 1.5 · artículo 300030. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-080', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-1-4',
+    nota: 'CODONIPLE HG 1 1/4 · artículo 301035. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-081', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-2',
+    nota: 'CODONIPLE HG 1/2 · artículo 300026. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-082', PROV_CIMA, 39, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-4',
+    nota: 'CODONIPLE HG 1/4 · artículo 300024. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-083', PROV_CIMA, 149, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1',
+    nota: 'CODONIPLE HG 1 · artículo 300028. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-084', PROV_CIMA, 266, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-2',
+    nota: 'CODONIPLE HG 2 · artículo 030030. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-085', PROV_CIMA, 92, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-3-4',
+    nota: 'CODONIPLE HG 3/4 · artículo 300027. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-086', PROV_CIMA, 333, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-niquelado-1-2',
+    nota: 'CODONIPLE NIQUELADO 1/2 · artículo 78653. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-087', PROV_CIMA, 199, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-5',
+    nota: 'COUPLING HG 1.5 · artículo 300038. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-088', PROV_CIMA, 141, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-1-4',
+    nota: 'COUPLING HG 1 1/4 · artículo 300037. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-089', PROV_CIMA, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-2',
+    nota: 'COUPLING HG 1/2 · artículo 300034. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-090', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1',
+    nota: 'COUPLING HG 1 · artículo 300036. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-091', PROV_CIMA, 237, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-2',
+    nota: 'COUPLING HG 2 · artículo 300039. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-092', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-3-4',
+    nota: 'COUPLING HG 3/4 · artículo 300035. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-093', PROV_CIMA, 42, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-3-8',
+    nota: 'COUPLING HG 3/8 · artículo 300033. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-094', PROV_CIMA, 247, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-niquelado-1-2',
+    nota: 'COUPLING NIQUELADO 1/2 · artículo 078654. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-095', PROV_CIMA, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-25mm-ppr',
+    nota: 'COUPLING 25mm PPR · artículo 074596. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-096', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-32mm-ppr',
+    nota: 'COUPLING 32mm PPR · artículo 150037. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-097', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1-5',
+    nota: 'COUPLING PVC PRESION 1.5 · artículo 031017. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-098', PROV_CIMA, 27, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1-2',
+    nota: 'COUPLING PVC PRESION 1/2 · artículo 030322. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-099', PROV_CIMA, 41, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1',
+    nota: 'COUPLING PVC PRESION 1 · artículo 030324. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-100', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-2',
+    nota: 'COUPLING PVC PRESION 2 · artículo 030325. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-101', PROV_CIMA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-3-4',
+    nota: 'COUPLING PVC PRESION 3/4 · artículo 030323. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-102', PROV_CIMA, 215, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-3',
+    nota: 'COUPLING PVC PRESION 3 · artículo 030326. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-103', PROV_CIMA, 335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-4',
+    nota: 'COUPLING PVC PRESION 4 · artículo 030327. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-104', PROV_CIMA, 136, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cruz-pvc-presion-1',
+    nota: 'CRUZ PVC PRESION 1 · artículo 030022. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-105', PROV_CIMA, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-mac-1-2-x-1-4',
+    nota: 'FITTING MANGUERA MAC 1/2 X 1/4 · artículo 012138. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-106', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-1-2-x-3-8-mac',
+    nota: 'FITTING MANGUERA 1/2 x 3/8 MAC · artículo 017048. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-107', PROV_CIMA, 122, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-1-4-x-3-8',
+    nota: 'FITTING MANGUERA 1/4 X 3/8 · artículo 074563. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-108', PROV_CIMA, 102, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-3-8-x-1-4-mac',
+    nota: 'FITTING MANGUERA 3/8 x 1/4 MAC · artículo 019046. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-109', PROV_CIMA, 308, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1-5',
+    nota: 'JUNTA DRESSER PVC 1.5 · artículo 031891. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-110', PROV_CIMA, 86, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1-2',
+    nota: 'JUNTA DRESSER PVC 1/2 · artículo 030577. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-111', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1',
+    nota: 'JUNTA DRESSER PVC 1 · artículo 031890. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-112', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-3-4',
+    nota: 'JUNTA DRESSER PVC 3/4 · artículo 030578. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-113', PROV_CIMA, 121, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-1-4-x-1-5',
+    nota: 'NIPLE COBRE 1/4 x 1.5 · artículo 017506. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-114', PROV_CIMA, 230, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-4-x-3',
+    nota: 'NIPLE COBRE 3/4 X 3 · artículo 080211. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-115', PROV_CIMA, 193, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1-5',
+    nota: 'NIPLE COBRE 3/8 X 1.5 · artículo 080215. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-116', PROV_CIMA, 177, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1',
+    nota: 'NIPLE COBRE 3/8 X 1 · artículo 080207. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-117', PROV_CIMA, 189, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-2',
+    nota: 'NIPLE COBRE 3/8 X 2 · artículo 080206. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-118', PROV_CIMA, 372, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-10',
+    nota: 'NIPLE HG 1.5 X 10 · artículo 058589. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-119', PROV_CIMA, 187, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-3',
+    nota: 'NIPLE HG 1.5 x 3 · artículo 300144. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-120', PROV_CIMA, 257, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-4',
+    nota: 'NIPLE HG 1.5 x 4 · artículo 300145. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-121', PROV_CIMA, 379, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-6',
+    nota: 'NIPLE HG 1.5 x 6 · artículo 300146. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-122', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-2',
+    nota: 'NIPLE HG 1 1/4 x 2 · artículo 311134. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-123', PROV_CIMA, 174, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-3',
+    nota: 'NIPLE HG 1 1/4 x 3 · artículo 063503. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-124', PROV_CIMA, 191, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-4',
+    nota: 'NIPLE HG 1 1/4 x 4 · artículo 311234. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-125', PROV_CIMA, 236, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-6',
+    nota: 'NIPLE HG 1 1/4 x 6 · artículo 311434. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-126', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-1-5',
+    nota: 'NIPLE HG 1/2 x 1.5 · artículo 300202. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-127', PROV_CIMA, 199, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-10',
+    nota: 'NIPLE HG 1/2 x 10 · artículo 300095. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-128', PROV_CIMA, 259, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-12',
+    nota: 'NIPLE HG 1/2 x 12 · artículo 300096. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-129', PROV_CIMA, 67, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-1',
+    nota: 'NIPLE HG 1/2 x 1 · artículo 300210. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-130', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-2-5',
+    nota: 'NIPLE HG 1/2 x 2.5 · artículo 300204. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-131', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-2',
+    nota: 'NIPLE HG 1/2 x 2 · artículo 300203. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-132', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-3',
+    nota: 'NIPLE HG 1/2 x 3 · artículo 300205. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-133', PROV_CIMA, 155, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-4',
+    nota: 'NIPLE HG 1/2 x 4 · artículo 300092. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-134', PROV_CIMA, 182, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-5',
+    nota: 'NIPLE HG 1/2 x 5 · artículo 300206. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-135', PROV_CIMA, 49, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-6',
+    nota: 'NIPLE HG 1/2 x 6 · artículo 300093. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-136', PROV_CIMA, 187, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-8',
+    nota: 'NIPLE HG 1/2 x 8 · artículo 300094. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-137', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-4-x-2',
+    nota: 'NIPLE HG 1/4 X 2 · artículo 069657. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-138', PROV_CIMA, 204, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-4-x-4',
+    nota: 'NIPLE HG 1/4 X 4 · artículo 090807. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-139', PROV_CIMA, 344, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-10',
+    nota: 'NIPLE HG 1 x 10 · artículo 300215. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-140', PROV_CIMA, 130, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-2-5',
+    nota: 'NIPLE HG 1 x 2.5 · artículo 301213. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-141', PROV_CIMA, 53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-2',
+    nota: 'NIPLE HG 1 x 2 · artículo 301212. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-142', PROV_CIMA, 63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-3',
+    nota: 'NIPLE HG 1 x 3 · artículo 301214. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-143', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-4',
+    nota: 'NIPLE HG 1 x 4 · artículo 301216. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-144', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-5',
+    nota: 'NIPLE HG 1 x 5 · artículo 301217. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-145', PROV_CIMA, 86, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-6',
+    nota: 'NIPLE HG 1 x 6 · artículo 300211. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-146', PROV_CIMA, 338, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-3',
+    nota: 'NIPLE HG 2 x 3 · artículo 072360. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-147', PROV_CIMA, 368, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-4',
+    nota: 'NIPLE HG 2 x 4 · artículo 320134. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-148', PROV_CIMA, 257, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-5',
+    nota: 'NIPLE HG 2 x 5 · artículo 330134. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-149', PROV_CIMA, 77, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-1-5',
+    nota: 'NIPLE HG 3/4 x 1.5 · artículo 300103. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-150', PROV_CIMA, 62, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-1',
+    nota: 'NIPLE HG 3/4 x 1 · artículo 300104. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-151', PROV_CIMA, 131, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-2-5',
+    nota: 'NIPLE HG 3/4 x 2.5 · artículo 300100. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-152', PROV_CIMA, 120, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-2',
+    nota: 'NIPLE HG 3/4 x 2 · artículo 300099. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-153', PROV_CIMA, 149, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-3',
+    nota: 'NIPLE HG 3/4 x 3 · artículo 300101. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-154', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-4',
+    nota: 'NIPLE HG 3/4 x 4 · artículo 300102. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-155', PROV_CIMA, 194, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-5',
+    nota: 'NIPLE HG 3/4 x 5 · artículo 300207. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-156', PROV_CIMA, 248, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-6',
+    nota: 'NIPLE HG 3/4 x 6 · artículo 300208. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-157', PROV_CIMA, 155, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-2-5',
+    nota: 'NIPLE HG 3/8 x 2.5 · artículo 300262. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-158', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-2',
+    nota: 'NIPLE HG 3/8 x 2 · artículo 049733. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-159', PROV_CIMA, 194, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-3-5',
+    nota: 'NIPLE HG 3/8 x 3.5 · artículo 300264. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-160', PROV_CIMA, 185, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-3',
+    nota: 'NIPLE HG 3/8 X 3 · artículo 300270. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-161', PROV_CIMA, 194, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-4-5',
+    nota: 'NIPLE HG 3/8 x 4.5 · artículo 300266. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-162', PROV_CIMA, 249, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-4',
+    nota: 'NIPLE HG 3/8 x 4 · artículo 300265. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-163', PROV_CIMA, 229, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-5-5',
+    nota: 'NIPLE HG 3/8 x 5.5 · artículo 300268. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-164', PROV_CIMA, 255, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-5',
+    nota: 'NIPLE HG 3/8 x 5 · artículo 300267. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-165', PROV_CIMA, 327, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-6',
+    nota: 'NIPLE HG 3/8 x 6 · artículo 300269. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-166', PROV_CIMA, 326, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5-2586',
+    nota: 'NIPLE NIQUELADO 1/2 X 2.5 2586 · artículo 091712258650. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-166', PROV_CIMA, 59, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5',
+    nota: 'NIPLE NIQUELADO 1/2 X 2.5 · artículo 061039. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-167', PROV_CIMA, 224, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-25864',
+    nota: 'NIPLE NIQUELADO 1/2 x 2 25864 · artículo 091712258643. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-167', PROV_CIMA, 52, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2',
+    nota: 'NIPLE NIQUELADO 1/2 x 2 · artículo 050476. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-168', PROV_CIMA, 388, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-3-25866',
+    nota: 'NIPLE NIQUELADO 1/2 x 3 25866 · artículo 091712258667. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-169', PROV_CIMA, 47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-2',
+    nota: 'NIPLE NIQUELADO 3/8 x 2 · artículo 017850. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-170', PROV_CIMA, 59, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-3',
+    nota: 'NIPLE NIQUELADO 3/8 x 3 · artículo 031846. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-171', PROV_CIMA, 132, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-4-x-3-8',
+    nota: 'REDUCCION BUS BRONCE 1/4 x 3/8 · artículo 040471. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-172', PROV_CIMA, 101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-1-4',
+    nota: 'REDUCCION BUS BRONCE 1/8 x 1/4 · artículo 400085. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-173', PROV_CIMA, 77, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-3-8',
+    nota: 'REDUCCION BUS BRONCE 1/8 x 3/8 · artículo 040472. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-174', PROV_CIMA, 247, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-1-4',
+    nota: 'REDUCCION BUS HG 1.5 x 1 1/4 · artículo 300089. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-175', PROV_CIMA, 103, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-2',
+    nota: 'REDUCCION BUS HG 1.5 x 1/2 · artículo 300063. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-176', PROV_CIMA, 214, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1',
+    nota: 'REDUCCION BUS HG 1.5 x 1 · artículo 300081. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-177', PROV_CIMA, 87, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-3-4',
+    nota: 'REDUCCION BUS HG 1.5 x 3/4 · artículo 300068. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-178', PROV_CIMA, 61, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1-2',
+    nota: 'REDUCCION BUS HG 1 1/4 x 1/2 · artículo 300091. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-179', PROV_CIMA, 198, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1',
+    nota: 'REDUCCION BUS HG 1 1/4 x 1 · artículo 300080. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-180', PROV_CIMA, 80, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-1-4',
+    nota: 'REDUCCION BUS HG 1/2 x 1/4 · artículo 300078. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-181', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-3-8',
+    nota: 'REDUCCION BUS HG 1/2 x 3/8 · artículo 300075. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-182', PROV_CIMA, 92, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-1-2',
+    nota: 'REDUCCION BUS HG 1 x 1/2 · artículo 300086. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-183', PROV_CIMA, 97, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-3-4',
+    nota: 'REDUCCION BUS HG 1 x 3/4 · artículo 300071. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-184', PROV_CIMA, 189, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-2-x-1-5',
+    nota: 'REDUCCION BUS HG 2 x 1.5 · artículo 030087. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-185', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-3-4-x-1-2',
+    nota: 'REDUCCION BUS HG 3/4 x 1/2 · artículo 300079. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-186', PROV_CIMA, 64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dren-2-x-1-2',
+    nota: 'REDUCCION BUS PVC DREN 2 X 1/2 · artículo 963514. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-187', PROV_CIMA, 87, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-1',
+    nota: 'REDUCCION BUS PVC PR 1.5 x 1 · artículo 031011. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-188', PROV_CIMA, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-3-4',
+    nota: 'REDUCCION BUS PVC PR 1.5 x 3/4 · artículo 031010. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-189', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pres-1-x-1-2',
+    nota: 'REDUCCION BUS PVC PRES 1 X 1/2 · artículo 030343. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-190', PROV_CIMA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-x-3-4',
+    nota: 'REDUCCION BUS PVC PR 1 x 3/4 · artículo 030342. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-191', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-2-x-1-5',
+    nota: 'REDUCCION BUS PVC PRE 2 X 1.5 · artículo 031015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-192', PROV_CIMA, 64, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-1',
+    nota: 'REDUCCION BUS PVC DRE 2 X 1 · artículo 031014. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-193', PROV_CIMA, 41, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-3-4',
+    nota: 'REDUCCION BUS PVC DRE 2  X 3/4 · artículo 031013. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-194', PROV_CIMA, 20, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-3-4-x-1-2',
+    nota: 'REDUCCION BUS PVC PR 3/4 X 1/2 · artículo 030341. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-195', PROV_CIMA, 210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-3-x-2',
+    nota: 'REDUCCION BUS PVC PRE 3 X 2 · artículo 001923. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-196', PROV_CIMA, 175, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-2',
+    nota: 'REDUCCION BUS PVC DRE 4 X 2 · artículo 030346. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-197', PROV_CIMA, 195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-3',
+    nota: 'REDUCCION BUS PVC DRE 4 X 3 · artículo 030347. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-198', PROV_CIMA, 702, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-6-x-4',
+    nota: 'REDUCCION BUS PVC DRE 6 X 4 · artículo 030344. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-199', PROV_CIMA, 237, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-5-x-1',
+    nota: 'REDUCCION COPA HG 1.5 x 1 · artículo 3001296. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-200', PROV_CIMA, 70, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-2-x-3-8',
+    nota: 'REDUCCION COPA HG 1/2 x 3/8 · artículo 300072. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-201', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-1-2',
+    nota: 'REDUCCION COPA HG 1 x 1/2 · artículo 300064. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-202', PROV_CIMA, 101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-3-4',
+    nota: 'REDUCCION COPA HG 1 x 3/4 · artículo 300065. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-203', PROV_CIMA, 53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-ppr-25mm-x-20mm',
+    nota: 'REDUCCION PPR 25mm X 20mm · artículo 150024. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-204', PROV_CIMA, 63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-1-2',
+    nota: 'REDUCCION COP PVC PR 1.5 X 1/2 · artículo 7460823173214. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-205', PROV_CIMA, 111, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-pvc-pre-1-5-x-1',
+    nota: 'REDUCCION COPA PVC PRE 1.5 X 1 · artículo 7460823173238. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-206', PROV_CIMA, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-3-4',
+    nota: 'REDUCCION COP PVC PR 1.5 X 3/4 · artículo 7460823173221. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-207', PROV_CIMA, 234, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-2-x-1-5',
+    nota: 'REDUCCION COP PVC PR 2 X 1.5 · artículo 017326. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-208', PROV_CIMA, 46, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-3-4-x-1-2',
+    nota: 'REDUCCION COP PVC PR 3/4 X 1/2 · artículo 7460823173184. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-209', PROV_CIMA, 101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-bronce-1-4',
+    nota: 'TAPON HEMBRA BRONCE 1/4 · artículo 221250. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-210', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-bronce-3-8',
+    nota: 'TAPON HEMBRA BRONCE 3/8 · artículo 221251. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-211', PROV_CIMA, 270, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-5',
+    nota: 'TAPON HEMBRA HG 1.5 · artículo 300053. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-212', PROV_CIMA, 20, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-2',
+    nota: 'TAPON HEMBRA HG 1/2 · artículo 300049. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-213', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-4',
+    nota: 'TAPON HEMBRA HG 1/4 · artículo 300070. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-214', PROV_CIMA, 44, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1',
+    nota: 'TAPON HEMBRA HG 1 · artículo 300051. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-215', PROV_CIMA, 189, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-2',
+    nota: 'TAPON HEMBRA HG 2 · artículo 300054. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-216', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-20mm-ppr',
+    nota: 'TAPON HEMBRA 20mm PPR · artículo 450020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-217', PROV_CIMA, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-5',
+    nota: 'TAPON PVC PRESION HEMBRA 1.5 · artículo 030351. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-218', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-3',
+    nota: 'TAPON PVC PRESION HEMBRA 1/2 · artículo 049029. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-218', PROV_CIMA, 18, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-2',
+    nota: 'TAPON PVC PRESION HEMBRA 1/2 · artículo 030348. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-219', PROV_CIMA, 48, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-sch',
+    nota: 'TAPON PVC PRESION HEMBRA 1 SCH · artículo 049031. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-219', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1',
+    nota: 'TAPON PVC PRESION HEMBRA 1 · artículo 030350. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-220', PROV_CIMA, 20, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3-4',
+    nota: 'TAPON PVC PRESION HEMBRA 3/4 · artículo 030349. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-221', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3',
+    nota: 'TAPON PVC PRESION HEMBRA 3 · artículo 030353. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-222', PROV_CIMA, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-5',
+    nota: 'TAPON MACHO HG 1.5 · artículo 300045. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-223', PROV_CIMA, 141, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-1-4',
+    nota: 'TAPON MACHO HG 1 1/4 · artículo 300046. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-224', PROV_CIMA, 15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-2',
+    nota: 'TAPON MACHO HG 1/2 · artículo 300042. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-225', PROV_CIMA, 23, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-4',
+    nota: 'TAPON MACHO HG 1/4 · artículo 300040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-226', PROV_CIMA, 101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1',
+    nota: 'TAPON MACHO HG 1 · artículo 300044. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-227', PROV_CIMA, 33, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3-4',
+    nota: 'TAPON MACHO HG 3/4 · artículo 300043. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-228', PROV_CIMA, 22, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3-8',
+    nota: 'TAPON MACHO HG 3/8 · artículo 300041. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-229', PROV_CIMA, 206, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3',
+    nota: 'TAPON MACHO HG 3 · artículo 300052. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-230', PROV_CIMA, 62, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-macho-1',
+    nota: 'TAPON PVC MACHO 1 · artículo 029024. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-231', PROV_CIMA, 101, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-1-5',
+    nota: 'TAPON PVC REGISTRO 1.5 · artículo 051021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-232', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-2',
+    nota: 'TAPON PVC REGISTRO 2 · artículo 041020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-233', PROV_CIMA, 263, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-3',
+    nota: 'TAPON PVC REGISTRO 3 · artículo 031020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-234', PROV_CIMA, 372, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-4',
+    nota: 'TAPON PVC REGISTRO 4 · artículo 031021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-235', PROV_CIMA, 186, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-manguera-bronce-3-8',
+    nota: 'TEE MANGUERA BRONCE 3/8 · artículo 167425. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-236', PROV_CIMA, 256, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-cobre-flare-3-8-x-3-8',
+    nota: 'TEE COBRE FLARE 3/8 x 3/8 · artículo 031456. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-237', PROV_CIMA, 277, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-5',
+    nota: 'TEE HG 1.5 · artículo 300014. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-238', PROV_CIMA, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-2',
+    nota: 'TEE HG 1/2 · artículo 300010. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-239', PROV_CIMA, 130, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-4',
+    nota: 'TEE HG 1/4 · artículo 300008. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-240', PROV_CIMA, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1',
+    nota: 'TEE HG 1 · artículo 300012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-241', PROV_CIMA, 383, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-2',
+    nota: 'TEE HG 2 · artículo 300015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-242', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-3-4',
+    nota: 'TEE HG 3/4 · artículo 300011. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-243', PROV_CIMA, 58, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-3-8',
+    nota: 'TEE HG 3/8 · artículo 300009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-244', PROV_CIMA, 444, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-1-2-niquelada',
+    nota: 'TEE NIQUELADA 1/2 · artículo 035891. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-245', PROV_CIMA, 293, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-macho-20mm-x-1-2-ppr',
+    nota: 'TEE MACHO 20mm X 1/2 PPR · artículo 352521. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-245', PROV_CIMA, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-20mm-ppr',
+    nota: 'TEE 20mm PPR · artículo 3000192. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-246', PROV_CIMA, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-25mm-ppr',
+    nota: 'TEE 25mm PPR · artículo 150027. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-247', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-32mm-ppr',
+    nota: 'TEE 32mm PPR · artículo 150092. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-248', PROV_CIMA, 86, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-1-5',
+    nota: 'TEE PVC DRENAJE 1.5 · artículo 031019. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-249', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-2',
+    nota: 'TEE PVC DRENAJE 2 · artículo 030358. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-250', PROV_CIMA, 194, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-3-x-2',
+    nota: 'TEE PVC DRENAJE 3 x 2 · artículo 016409. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-250', PROV_CIMA, 257, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-3',
+    nota: 'TEE PVC DRENAJE 3 · artículo 030361. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-251', PROV_CIMA, 260, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-4-x-2',
+    nota: 'TEE PVC DRENAJE 4 x 2 · artículo 030362. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-251', PROV_CIMA, 429, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-4',
+    nota: 'TEE PVC DRENAJE 4 · artículo 030360. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-252', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1-5',
+    nota: 'TEE PVC PRESION 1.5 · artículo 030160. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-253', PROV_CIMA, 28, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1-2',
+    nota: 'TEE PVC PRESION 1/2 · artículo 030355. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-254', PROV_CIMA, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1',
+    nota: 'TEE PVC PRESION 1 · artículo 030357. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-255', PROV_CIMA, 195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-2',
+    nota: 'TEE PVC PRESION 2 · artículo 031400. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-256', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-3-4',
+    nota: 'TEE PVC PRESION 3/4 · artículo 030356. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-257', PROV_CIMA, 453, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-3',
+    nota: 'TEE PVC PRESION 3 · artículo 055666. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-258', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-reducida-25mm-x-20m-ppr',
+    nota: 'TEE REDUCIDA 25mm X 20m PPR · artículo 352520. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-259', PROV_CIMA, 144, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-reducida-1-a-3-4',
+    nota: 'TEE PVC REDUCIDA 1 A 3/4 · artículo 053031. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-260', PROV_CIMA, 235, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-1-2-cfm-1-2b',
+    nota: 'TERMINAL BRONCE 1/2 CFM-1/2B · artículo 7501206652039. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-261', PROV_CIMA, 275, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-3-4-cfm-3-4b',
+    nota: 'TERMINAL BRONCE 3/4 CFM-3/4B · artículo 7501206652046. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-262', PROV_CIMA, 335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-5-8-cfm-5-8b',
+    nota: 'TERMINAL BRONCE 5/8 CFM-5/8B · artículo 7501206652053. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-263', PROV_CIMA, 319, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bombas-1-x-3-4-cobre',
+    nota: 'TERMINAL BOMBAS 1 x 3/4 COBRE · artículo 032631. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-264', PROV_CIMA, 131, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-m-1-2-rem-1',
+    nota: 'TERMINAL MANGUERA M 1/2 REM-1/ · artículo 7501206652411. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-264', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-ref-1',
+    nota: 'TERMINAL MANGUERA H 1/2 REF-1/ · artículo 7501206652428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-264', PROV_CIMA, 161, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-cf-1-2',
+    nota: 'TERMINAL MANGUERA H 1/2 CF-1/2 · artículo 7501206668757. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-264', PROV_CIMA, 210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-1-2-cf-1-2',
+    nota: 'TERMINAL MANGUERA 1/2 CF-1/2 · artículo 7501206652022. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-265', PROV_CIMA, 247, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-mangue-h-3-4-cf-3-4b',
+    nota: 'TERMINAL MANGUE H 3/4 CF-3/4B · artículo 7506240606314. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-266', PROV_CIMA, 233, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-mangue-h-5-8-cf-5-8b',
+    nota: 'TERMINAL MANGUE H 5/8 CF-5/8B · artículo 7506240606338. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-267', PROV_CIMA, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-5-1-thhcs051',
+    nota: 'TERMINAL MANGUERA 5/1 THHCS051 · artículo 692582195170. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-268', PROV_CIMA, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-presion-bronce-1-2-x-3-8',
+    nota: 'UNION PRESION BRONCE 1/2 X 3/8 · artículo 012130. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-269', PROV_CIMA, 147, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-presion-bronce-3-8-x-3-8',
+    nota: 'UNION PRESION BRONCE 3/8 x 3/8 · artículo 032557. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-270', PROV_CIMA, 180, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-plastico-rema-1-2',
+    nota: 'UNION PLASTICO REMA 1/2 · artículo 7501206652435. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-271', PROV_CIMA, 525, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-5',
+    nota: 'UNION UNIVERSAL HG 1.5 · artículo 300022. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-272', PROV_CIMA, 422, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-1-4',
+    nota: 'UNION UNIVERSAL HG 1 1/4 · artículo 300021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-273', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-2',
+    nota: 'UNION UNIVERSAL HG 1/2 · artículo 300018. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-274', PROV_CIMA, 44, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-4',
+    nota: 'UNION UNIVERSAL HG 1/4 · artículo 300016. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-275', PROV_CIMA, 827, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-2',
+    nota: 'UNION UNIVERSAL HG 2 · artículo 300023. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-276', PROV_CIMA, 162, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-3-4',
+    nota: 'UNION UNIVERSAL HG 3/4 · artículo 300019. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-277', PROV_CIMA, 12, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-3-8',
+    nota: 'UNION UNIVERSAL HG 3/8 · artículo 300017. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-278', PROV_CIMA, 166, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-25mm-ppr',
+    nota: 'UNION UNIVERSAL 25mm PPR · artículo 250021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-279', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-1-2',
+    nota: 'UNION UNIVERSAL PVC 1/2 · artículo 030725. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-280', PROV_CIMA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-1',
+    nota: 'UNION UNIVERSAL PVC 1 · artículo 030726. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-281', PROV_CIMA, 232, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-2',
+    nota: 'UNION UNIVERSAL PVC 2 · artículo 021825. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-282', PROV_CIMA, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-3-4',
+    nota: 'UNION UNIVERSAL PVC 3/4 · artículo 031689. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-283', PROV_CIMA, 47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-1-5',
+    nota: 'YEE PVC DRENAJE 1.5 · artículo 030363. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-284', PROV_CIMA, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-2',
+    nota: 'YEE PVC DRENAJE 2 · artículo 030364. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-285', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-3-x-2',
+    nota: 'YEE PVC DRENAJE 3 x 2 · artículo 030367. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-286', PROV_CIMA, 425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-4',
+    nota: 'YEE PVC DRENAJE 4 · artículo 030151. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-287', PROV_CIMA, 265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-4-x-2',
+    nota: 'YEE PVC DRENAJE 4 x 2 · artículo 030368. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-288', PROV_CIMA, 565, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-1-2-x-3-8',
+    nota: 'LLAVE ANGULAR DOBLE 1/2 X 3/8 · artículo 091712043263. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-288', PROV_CIMA, 321, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-medio-giro-1-2x3',
+    nota: 'LLAVE ANGULAR MEDIO GIRO 1/2X3 · artículo 2460680002035. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-288', PROV_CIMA, 415, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-7-16-04329',
+    nota: 'LLAVE ANGULAR 1/2 X 7/16 04329 · artículo 091712043294. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-288', PROV_CIMA, 405, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-3-8-eastma',
+    nota: 'LLAVE ANGULAR 1/2 X 3/8 EASTMA · artículo 091712043225. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-288', PROV_CIMA, 271, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-medio-giro-1',
+    nota: 'LLAVE ANGULAR 1/2 MEDIO GIRO 1 · artículo 091712107330. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-289', PROV_CIMA, 453, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-3-8-x-3-8',
+    nota: 'LLAVE ANGULAR DOBLE 3/8 X 3/8 · artículo 091712043355. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-289', PROV_CIMA, 388, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-eastma',
+    nota: 'LLAVE ANGULAR 3/8 X 3/8 EASTMA · artículo 091712043195. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-289', PROV_CIMA, 257, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-bras-c',
+    nota: 'LLAVE ANGULAR 3/8 X 3/8 BRAS C · artículo 026613172842. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-290', PROV_CIMA, 435, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-cpvc-1-2-48636',
+    nota: 'LLAVE PASO BOLA CPVC 1/2 48636 · artículo 091712486367. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-291', PROV_CIMA, 1961, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-5',
+    nota: 'LLAVE PASO BOLA ITALIANA 1.5 · artículo 032573. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-292', PROV_CIMA, 259, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-ll-21p',
+    nota: 'LLAVE R/M BOLA 1/2 LL-21P · artículo 7501206658871. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-292', PROV_CIMA, 567, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-italiana',
+    nota: 'LLAVE R/M BOLA 1/2 ITALIANA · artículo 031783. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-292', PROV_CIMA, 635, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-2',
+    nota: 'LLAVE PASO BOLA P/GAS 1/2 · artículo 060271. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-292', PROV_CIMA, 545, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-macho-hemb-1-2',
+    nota: 'LLAVE PASO BOLA MACHO HEMB 1/2 · artículo 030304. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-292', PROV_CIMA, 465, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-2-0',
+    nota: 'LLAVE PASO BOLA ITALIANA 1/2 0 · artículo 031699. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-293', PROV_CIMA, 343, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-4',
+    nota: 'LLAVE PASO BOLA P/GAS 1/4 · artículo 060269. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-294', PROV_CIMA, 831, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-090',
+    nota: 'LLAVE PASO BOLA ITALIANA 1 090 · artículo 031701. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-295', PROV_CIMA, 3227, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-2-090',
+    nota: 'LLAVE PASO BOLA ITALIANA 2 090 · artículo 031703. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-296', PROV_CIMA, 630, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-3-4-italiana-09',
+    nota: 'LLAVE R/M BOLA 3/4 ITALIANA 09 · artículo 031784. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-296', PROV_CIMA, 555, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-4-0',
+    nota: 'LLAVE PASO BOLA ITALIANA 3/4 0 · artículo 031700. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-297', PROV_CIMA, 455, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-3-8',
+    nota: 'LLAVE PASO BOLA P/GAS 3/8 · artículo 060312. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-297', PROV_CIMA, 327, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8-0',
+    nota: 'LLAVE PASO BOLA ITALIANA 3/8 0 · artículo 044258. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-297', PROV_CIMA, 336, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8',
+    nota: 'LLAVE PASO BOLA ITALIANA 3/8 · artículo 034009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-298', PROV_CIMA, 465, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-5-sin-ro',
+    nota: 'LLAVE PASO BOLA PVC 1.5 SIN RO · artículo 091712201199. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-299', PROV_CIMA, 41, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro',
+    nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 022190. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-299', PROV_CIMA, 125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro-1',
+    nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 091712201113. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-300', PROV_CIMA, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-sin-ro',
+    nota: 'LLAVE PASO BOLA PVC 1 SIN RO · artículo 091712201151. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-301', PROV_CIMA, 616, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-2-sin-ro',
+    nota: 'LLAVE PASO BOLA PVC 2 SIN RO · artículo 091712201212. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-302', PROV_CIMA, 125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro-1',
+    nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 091712201137. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-302', PROV_CIMA, 107, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro',
+    nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 022091. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-303', PROV_CIMA, 2262, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-5',
+    nota: 'LLAVE CUNA 1.5 · artículo 7501973716200. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-304', PROV_CIMA, 858, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-2',
+    nota: 'LLAVE CUNA 1/2 · artículo 7501973716163. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-305', PROV_CIMA, 1595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1',
+    nota: 'LLAVE CUNA 1 · artículo 7501973716187. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-306', PROV_CIMA, 1248, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-3-4',
+    nota: 'LLAVE CUNA 3/4 · artículo 7501973716170. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-307', PROV_CIMA, 338, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-cromada-1-2-ll-19c',
+    nota: 'LLAVE R/M CROMADA 1/2 LL-19C · artículo 7501206695753. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-307', PROV_CIMA, 1001, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-candado-1-2-itali',
+    nota: 'LLAVE R/M CANDADO 1/2 ITALI · artículo 035798. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-307', PROV_CIMA, 1071, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-x-45-191-13',
+    nota: 'LLAVE R/M 1/2 x 45 191.13 · artículo 7501973701411. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-307', PROV_CIMA, 875, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-pesada-19n-13',
+    nota: 'LLAVE R/M 1/2  PESADA 19N.13 · artículo 7501973701442. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-307', PROV_CIMA, 575, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-liviana-19nc-13',
+    nota: 'LLAVE R/M 1/2  LIVIANA 19NC.13 · artículo 7501973701466. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-308', PROV_CIMA, 487, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-ll-19-3-4',
+    nota: 'LLAVE R/M 3/4 LLJ-180 · artículo 7501206695784. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-308', PROV_CIMA, 1145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-pesada-19n-19',
+    nota: 'LLAVE R/M 3/4  PESADA 19N.19 · artículo 7501973701459. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-309', PROV_CIMA, 2283, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
+    nota: 'CHEQUE VERTICAL EUROPA 1.5 · artículo 054231. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-309', PROV_CIMA, 1757, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-5',
+    nota: 'CHEQUE HORIZONTAL ITALIANO 1.5 · artículo 055154. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-310', PROV_CIMA, 590, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
+    nota: 'CHEQUE VERTICAL EUROPA 1/2 · artículo 054227. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-310', PROV_CIMA, 535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-2',
+    nota: 'CHEQUE HORIZONTAL ITALIANO 1/2 · artículo 055152. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-311', PROV_CIMA, 1048, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
+    nota: 'CHEQUE VERTICAL EUROPA 1 · artículo 054229. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-312', PROV_CIMA, 2946, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-2',
+    nota: 'CHEQUE HORIZONTAL ITALIANO 2 · artículo 055163. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-313', PROV_CIMA, 695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-3-4',
+    nota: 'CHEQUE HORIZONTAL ITALIANO 3/4 · artículo 054234. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-313', PROV_CIMA, 796, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
+    nota: 'CHEQUE VERTICAL EUROPA 3/4 · artículo 054228. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-314', PROV_CIMA, 616, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-sin-boya',
+    nota: 'VALVULA CISTERNA 1/2 SIN BOYA · artículo 030721. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-314', PROV_CIMA, 853, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-con-vari',
+    nota: 'VALVULA CISTERNA 1/2 CON VARI · artículo 7501973700254. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-315', PROV_CIMA, 615, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-italiana-3-4',
+    nota: 'VALVULA CISTERNA ITALIANA 3/4 · artículo 040427. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-315', PROV_CIMA, 1271, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-3-4-con-varil',
+    nota: 'VALVULA CISTERNA 3/4 CON VARIL · artículo 7501973700261. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-316', PROV_CIMA, 310, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-11',
+    nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063289. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-316', PROV_CIMA, 685, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-10',
+    nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063288. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-316', PROV_CIMA, 306, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-10-x-10',
+    nota: 'REJILLA PISO CUADRAD 10 X 10 · artículo 09687070. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-317', PROV_CIMA, 1173, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-100-x-100',
+    nota: 'REJILLA PISO CUADRAD 100 X 100 · artículo 096873. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-318', PROV_CIMA, 1510, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x40-3cm-sus304',
+    nota: 'REJILLA PISO 10X40 3CM SUS304 · artículo 033138. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-318', PROV_CIMA, 1196, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x30-3cm-sus304',
+    nota: 'REJILLA PISO 10X30 3CM SUS304 · artículo 7460215717163. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-318', PROV_CIMA, 968, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x20-3cm-sus304',
+    nota: 'REJILLA PISO 10X20 3CM SUS304 · artículo 7460215717156. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-319', PROV_CIMA, 413, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-15-x-15',
+    nota: 'REJILLA PISO CUADRAD 15 X 15 · artículo 096868. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-319', PROV_CIMA, 2054, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inox-15-x-15-304',
+    nota: 'REJILLA PISO INOX 15 X 15 304 · artículo 015104. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-320', PROV_CIMA, 572, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuad-gr-200-x-200',
+    nota: 'REJILLA PISO CUAD GR 20 X 20 · artículo 096872. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-321', PROV_CIMA, 755, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-11',
+    nota: 'REJILLA PISO CUADRADA 2 REJ-11 · artículo 7592032050410. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-321', PROV_CIMA, 858, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-10',
+    nota: 'REJILLA PISO CUADRADA 2 REJ-10 · artículo 7592032050403. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-321', PROV_CIMA, 541, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-2-cua-re',
+    nota: 'REJILLA PISO ALUMINIO 2 CUA RE · artículo 7460976184440. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-321', PROV_CIMA, 199, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-2-aluminio-redond',
+    nota: 'REJILLA PISO 2 ALUMINIO REDOND · artículo 030717. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-322', PROV_CIMA, 368, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inoxidable-3-5-rs',
+    nota: 'REJILLA PISO INOXIDABLE 3.5 RS · artículo 7506240612568. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-322', PROV_CIMA, 401, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-re-3-5',
+    nota: 'REJILLA PISO ALUMINIO RE 3.5 · artículo 7501206699188. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-323', PROV_CIMA, 356, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-fun',
+    nota: 'REJILLA PISO ALUMINIO 3 FUN · artículo 018755. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-323', PROV_CIMA, 565, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-cua-re',
+    nota: 'REJILLA PISO ALUMINIO 3 CUA RE · artículo 7460976184457. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_CIMA, 453, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-4',
+    nota: 'REJILLA PISO ALUMINIO CUAD 4 · artículo 7501206699171. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_CIMA, 510, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-aluminio-desague-4-fun',
+    nota: 'REJILLA ALUMINIO DESAGUE 4 FUN · artículo 7460440229912. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-325', PROV_CIMA, 2403, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-6x6',
+    nota: 'REJILLA PISO ALUMINIO CUAD 6X6 · artículo 7501206667798. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-326', PROV_CIMA, 865, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-80-x-80',
+    nota: 'REJILLA PISO CUADRAD 80 X 80 · artículo 096876. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-327', PROV_CIMA, 1425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-cromado-tipo-botel-1-1-4',
+    nota: 'SIFON CROMADO TIPO BOTEL 1 1/4 · artículo 8030575028897. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-328', PROV_CIMA, 647, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-freg-1-5-1092e',
+    nota: 'SIFON PVC DOBLE FREG 1.5 1092E · artículo 8030575008165. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-328', PROV_CIMA, 356, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-1-5-35393',
+    nota: 'SIFON PVC DOBLE 1.5 35393 · artículo 091712353935. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-329', PROV_CIMA, 225, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-2-sin-desague',
+    nota: 'SIFON PVC 2 SIN DESAGUE · artículo 032588. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-330', PROV_CIMA, 220, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-sencillo-1-1-2-35376',
+    nota: 'SIFON PVC SENCILLO 1.1/2 35376 · artículo 091712353768. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-331', PROV_CIMA, 475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-5',
+    nota: 'SIFON PVC FREGADERO 1.5 · artículo 8030575029603. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-332', PROV_CIMA, 585, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-1-4',
+    nota: 'SIFON PVC FREGADERO 1 1/4 · artículo 8055118131315. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-333', PROV_CIMA, 470, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-metal-4-30',
+    nota: 'BOQUILLA FREGADERO METAL 4 30 · artículo 091712300014. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-334', PROV_CIMA, 285, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-plastica-4',
+    nota: 'BOQUILLA FREGADERO PLASTICA 4 · artículo 091712300052. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-335', PROV_CIMA, 429, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavadero-metal-2-5-30',
+    nota: 'BOQUILLA LAVADERO METAL 2.5 30 · artículo 091712300410. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 1145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-push',
+    nota: 'BOQUILLA LAVAMANO METAL PUSH · artículo 091712901150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 665, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-nxc119',
+    nota: 'BOQUILLA LAVAMANO METAL NXC119 · artículo 033117. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 490, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-dhc005',
+    nota: 'BOQUILLA LAVAMANO METAL DHC005 · artículo 7460215744954. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 676, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-12',
+    nota: 'BOQUILLA LAVAMANO METAL DES-12 · artículo 7592032500991. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 255, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-14',
+    nota: 'BOQUILLA LAVAMANO METAL DES-14 · artículo 7592032002099. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-336', PROV_CIMA, 530, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-1-1-4',
+    nota: 'BOQUILLA LAVAMANO METAL 1 1/4 · artículo 091712350743. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-337', PROV_CIMA, 970, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-24',
+    nota: 'MANGUERA BOMBA TANQUE 24" · artículo 050025. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-338', PROV_CIMA, 475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-36',
+    nota: 'MANGUERA BOMBA TANQUE 36" · artículo 036058. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-339', PROV_CIMA, 895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60',
+    nota: 'MANGUERA CALENTADOR 24 EVB-B60 · artículo 7501605513160. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-340', PROV_CIMA, 620, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-1',
+    nota: 'MANGUERA CALENTADOR HM 3/4 X 1 · artículo 091712482543. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-341', PROV_CIMA, 1071, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-2',
+    nota: 'MANGUERA CALENTADOR HM 3/4 X 2 · artículo 091712482550. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-341', PROV_CIMA, 685, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hh-3-4-x-2',
+    nota: 'MANGUERA CALENTADOR HH 3/4 X 2 · artículo 091712482529. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-342', PROV_CIMA, 1094, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60-1',
+    nota: 'MANGUERA CALENTADOR 60 VB-B60 · artículo 710631939913. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-343', PROV_CIMA, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-12',
+    nota: 'MANGUERA POLIETILENO GAS 12 · artículo 017845. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-344', PROV_CIMA, 65, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-18',
+    nota: 'MANGUERA POLIETILENO GAS 18 · artículo 251461. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-345', PROV_CIMA, 250, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-inodoro-16-pn-48176',
+    nota: 'MANGUERA INODORO 16 PN-48176 · artículo 091712481768. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-346', PROV_CIMA, 535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man-1',
+    nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206653340. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-346', PROV_CIMA, 693, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man',
+    nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206691892. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-346', PROV_CIMA, 1940, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-20m-man',
+    nota: 'MANGUERA JARDIN 1/2 X 20M MAN- · artículo 7501206653388. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-346', PROV_CIMA, 1883, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-15m-man',
+    nota: 'MANGUERA JARDIN 1/2 X 15M MAN- · artículo 7501206660867. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-347', PROV_CIMA, 1475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refo-1-2-x-100',
+    nota: 'MANGUERA JARDIN REFO 1/2 X 100 · artículo 822312003834. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-348', PROV_CIMA, 544, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-1-2-x-25',
+    nota: 'MANGUERA JARDIN REFOR 1/2 X 25 · artículo 034574. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-349', PROV_CIMA, 1042, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-lisa-1-2-x-50',
+    nota: 'MANGUERA JARDIN LISA 1/2 X 50 · artículo 7460737001139. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-350', PROV_CIMA, 2741, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-30m-man',
+    nota: 'MANGUERA JARDIN 5/8 X 30M MAN- · artículo 7501206604861. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-350', PROV_CIMA, 2397, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-25m-man',
+    nota: 'MANGUERA JARDIN 5/8 X 25M MAN- · artículo 7501206604854. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-350', PROV_CIMA, 2054, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-20m-man',
+    nota: 'MANGUERA JARDIN 5/8 X 20M MAN- · artículo 7501206604847. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-351', PROV_CIMA, 1365, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-5-8-x-75',
+    nota: 'MANGUERA JARDIN REFOR 5/8 X 75 · artículo 022178. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-352', PROV_CIMA, 556, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-48',
+    nota: 'MANGUERA LAVADORA GOMA 48 · artículo 040003. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-353', PROV_CIMA, 410, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-60',
+    nota: 'MANGUERA LAVADORA GOMA 60 · artículo 010345. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-354', PROV_CIMA, 375, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-72',
+    nota: 'MANGUERA LAVADORA GOMA 72 · artículo 7460126802125. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-355', PROV_CIMA, 384, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-2',
+    nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931498. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-355', PROV_CIMA, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-1',
+    nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 71063193498. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-355', PROV_CIMA, 451, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1',
+    nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931504. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-356', PROV_CIMA, 265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-16-pn-48131',
+    nota: 'MANGUERA LAVAMANOS 16 PN-48131 · artículo 091712481317. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-357', PROV_CIMA, 325, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-20-pn-48132',
+    nota: 'MANGUERA LAVAMANOS 20 PN-48132 · artículo 091712481324. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-358', PROV_CIMA, 425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al-1',
+    nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 710631931313. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-358', PROV_CIMA, 365, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al',
+    nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 7501605502119. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-358', PROV_CIMA, 499, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-vl',
+    nota: 'MANGUERA METAL LAVAMANOS 22 VL · artículo 7501605507114. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-359', PROV_CIMA, 265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48135',
+    nota: 'MANGUERA LAVAMANOS 24 PN-48135 · artículo 091712481355. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-359', PROV_CIMA, 293, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48127',
+    nota: 'MANGUERA LAVAMANOS 24 PN-48127 · artículo 091712481270. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-360', PROV_CIMA, 505, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-3-8-eal-r55',
+    nota: 'MANGUERA LAVAMANOS 3/8 EAL-R55 · artículo 710631905635. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-361', PROV_CIMA, 198, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-20',
+    nota: 'MANGUERA LAVAMANOS 3/8 X 32 · artículo 7460215730049. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-362', PROV_CIMA, 330, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-30-pn-48128',
+    nota: 'MANGUERA LAVAMANOS 30 PN-48128 · artículo 091712481287. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-363', PROV_CIMA, 319, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-36-pn-48129',
+    nota: 'MANGUERA LAVAMANOS 36 PN-48129 · artículo 091712481294. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-364', PROV_CIMA, 195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-3-8-x-20',
+    nota: 'MANGUERA MEZC/ MONO 3/8 X 20 · artículo 010744. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-365', PROV_CIMA, 297, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-32-od',
+    nota: 'MANGUERA MEZC/ MONO 32 OD · artículo 01012045. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-366', PROV_CIMA, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-5-16',
+    nota: 'MANGUERA TRANSPARENTE 5/16 · artículo 051576. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-367', PROV_CIMA, 47, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-ma-1-2',
+    nota: 'MANGUERA TRANSPARENTE MA 1/2 · artículo 055583. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-367', PROV_CIMA, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-2',
+    nota: 'MANGUERA TRANSPARENTE 1/2 · artículo 051577. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-368', PROV_CIMA, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-4',
+    nota: 'MANGUERA TRANSPARENTE 1/4 · artículo 051575. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-369', PROV_CIMA, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1',
+    nota: 'MANGUERA TRANSPARENTE 1 · artículo 051572. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-370', PROV_CIMA, 36, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-4',
+    nota: 'MANGUERA TRANSPARENTE 3/4 · artículo 051579. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-371', PROV_CIMA, 32, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-8',
+    nota: 'MANGUERA TRANSPARENTE 3/8 · artículo 051573. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-372', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-ctf-1-2-rollo-12520',
+    nota: 'TEFLON CTF-1/2 ROLLO 12520 · artículo 7501206641675. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-373', PROV_CIMA, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-1-x-13m-ctf-1',
+    nota: 'TEFLON 1 X 13M CTF-1 · artículo 7506240602590. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-374', PROV_CIMA, 175, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-ind-3-4-ctf-3-4x13x',
+    nota: 'TEFLON IND 3/4 CTF-3/4X13X · artículo 7506240602583. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-374', PROV_CIMA, 60, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-3-4-x-7-ctf-3-4',
+    nota: 'TEFLON 3/4 X 7 CTF-3/4 · artículo 7501206641682. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-375', PROV_CIMA, 304, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
+    nota: 'CINTA PLOMERO 3/16 x 15 · artículo 4710277065485. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-376', PROV_CIMA, 2525, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-2-x-50',
+    nota: 'CINTA PLOMERO 1/2 x 50 · artículo 4710277021368. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-377', PROV_CIMA, 412, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-8-x-25-pies',
+    nota: 'CINTA PLOMERO 1/8 X 25 PIES · artículo 4710277019389. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-378', PROV_CIMA, 979, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-16oz-wet-dry-sm-24',
+    nota: 'CEMENTO PVC 16oz WET DRY SM-24 · artículo 718594024868. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-379', PROV_CIMA, 1765, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-32oz-w-d-sm-248-5',
+    nota: 'CEMENTO PVC 32oz W D SM-248-5 · artículo 718594024851. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-380', PROV_CIMA, 415, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-wet-dry-sm-248',
+    nota: 'CEMENTO PVC 4oz WET DRY SM-248 · artículo 718594024882. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-380', PROV_CIMA, 368, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-super-4oz-sm-244-8',
+    nota: 'CEMENTO PVC SUPER 4oz SM-244-8 · artículo 718594024486. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-380', PROV_CIMA, 335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-cleaner-4oz-sm-245',
+    nota: 'CEMENTO PVC CLEANER 4oz SM-245 · artículo 718594024585. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-380', PROV_CIMA, 522, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-jet-dry-sm-258',
+    nota: 'CEMENTO PVC 4oz JET-DRY SM-258 · artículo 718594025889. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-381', PROV_CIMA, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-50ml-wet-dry-tp-24',
+    nota: 'CEMENTO PVC 50ML WET DRY TP-24 · artículo 718594248103. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-382', PROV_CIMA, 567, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-wet-dry-sm-248',
+    nota: 'CEMENTO PVC 8oz WET-DRY SM-248 · artículo 718594024875. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-382', PROV_CIMA, 473, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
+    nota: 'CEMENTO PVC 8oz SM-244-7 · artículo 718594024479. ' + SUPUESTO_ITBIS
   });
   /* catalogos:cotizaciones:fin */
 

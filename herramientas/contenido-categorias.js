@@ -696,6 +696,31 @@ module.exports = {
   ]
 },
 
+'MAT-32': {
+  titulo: 'Precio de la tubería y las conexiones de PVC en RD',
+  desc: 'Precios de referencia de tubo PVC y CPVC, codos, tees, niples, reducciones, llaves de paso, sifones y rejillas en República Dominicana.',
+  h1: 'Precio de la tubería y las conexiones en República Dominicana',
+  intro: [
+    'Esta es la partida que más renglones tiene y los más pequeños: un baño lleva un inodoro y sesenta conexiones. Ninguna cuesta gran cosa por separado —un codo de PVC de 1/2" anda por RD$ 15— pero juntas explican por qué la plomería se cotiza por punto y no por metro de tubo.',
+    'Tres cosas definen cada pieza y las tres cambian el precio: qué es (codo, tee, niple, reducción), de qué material y de qué medida. El material no es un detalle: el mismo codo de 1/2" cuesta RD$ 15 en PVC y RD$ 170 en bronce, así que compararlos sin fijarlo no dice nada.',
+    'Ojo con la presentación del tubo: el PVC sanitario en República Dominicana viene en tramos de 19 pies, no de 20. Dos comercios lo confirman por separado, y un presupuesto armado sobre 20 pies se queda corto en material.'
+  ],
+  claves: [
+    ['Fijar el material antes de comparar', 'PVC presión, PVC drenaje, CPVC, HG, bronce y cobre son precios distintos para la misma pieza y la misma medida.'],
+    ['Drenaje y presión no se mezclan', 'El PVC de drenaje no aguanta agua a presión. Es el error más caro y más peligroso de la partida.'],
+    ['Contar las piezas, no el tubo', 'El costo de una instalación está en las conexiones y en la mano de obra, no en los metros de tubería.'],
+    ['El tubo sanitario es de 19 pies', 'Cubicar con 20 pies deja la obra corta. Conviene confirmarlo en la factura del suplidor.']
+  ],
+  faq: [
+    ['¿Cuántas conexiones lleva un baño completo?',
+     'Depende del trazado, pero un baño con inodoro, lavamanos y ducha suele pasar de cincuenta piezas entre codos, tees, reducciones, adaptadores, llaves de paso y el sifón de cada aparato. Por eso el plomero cotiza por punto: cada salida agrupa una cantidad parecida de piezas y de trabajo.'],
+    ['¿Por qué el mismo codo tiene precios tan distintos?',
+     'Porque el nombre no basta: hay que fijar el material. Un codo de 1/2" de PVC presión, uno de CPVC para agua caliente y uno de bronce son tres productos con tres precios, y las tres fichas se llaman «codo de 1/2"». En este catálogo cada uno tiene su propia fila.'],
+    ['¿El tubo de PVC viene en 19 o en 20 pies?',
+     'El PVC sanitario que se vende en el país viene en tramos de 19 pies. Un comercio lo factura por pies con un mínimo de 19 y otro publica toda su línea como «x 19». Conviene confirmarlo con el suplidor antes de cubicar, porque la diferencia de un pie por tubo se acumula rápido.']
+  ]
+},
+
 'MOS-01': {
   titulo: 'Precio del jornal de albañil y mano de obra en RD',
   desc: 'Jornales diarios de referencia de maestro constructor, albañil, ayudante, plomero, electricista, pintor y demás oficios en República Dominicana.',

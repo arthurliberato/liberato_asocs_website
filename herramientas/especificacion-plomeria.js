@@ -1,0 +1,398 @@
+'use strict';
+/* =========================================================
+   especificacion-plomeria.js — el ítem es la especificación
+
+   La plomería es la partida con más renglones y los más
+   pequeños: un baño lleva un inodoro y sesenta conexiones. El
+   catálogo de Ferretería Cima trae 862 artículos de plomería, y
+   la mayoría son la misma pieza en otra medida: un codo de PVC
+   presión de 1/2" y otro de 3/4" son dos partidas distintas, y
+   dos codos de 1/2" de marcas distintas son la misma.
+
+   QUÉ DEFINE UNA CONEXIÓN
+   -----------------------
+   Tres cosas: qué pieza es (codo, tee, niple, reducción…), de
+   qué material (PVC presión, PVC drenaje, HG, bronce, cobre,
+   CPVC, PPR) y de qué medida. Nada más. La marca y el código del
+   fabricante van en la cotización.
+
+   El material no es un detalle: un codo de 1/2" de PVC cuesta
+   RD$ 15 y el mismo codo en bronce, RD$ 170. Meterlos en la
+   misma fila haría un rango de 11 veces que no dice nada.
+   ========================================================= */
+
+/* La red —tubo, conexiones, llaves de paso, desagüe y sellado— vive en su
+   propia categoría, MAT-32. Son 378 ítems: dejarlos junto a los inodoros y las
+   bombas hacía una página donde el aparato que se busca queda enterrado bajo
+   trescientos codos. Los aparatos, la grifería, el bombeo y el gas se quedan
+   en MAT-09. */
+const FAMILIAS = {
+  /* ---- Tubería ---- */
+  tubo: {
+    cat: 'MAT-32', unidad: 'tubo', etapa: 'instalaciones', orden: 10,
+    ejes: ['material', 'norma', 'diametro', 'largo_pies'],
+    nombre: m => 'Tubo ' + m.material + (m.norma ? ' ' + m.norma : '') +
+                 ' ' + m.diametro + ' x ' + m.largo_pies + ' pies',
+    esp: m => 'Tubo de ' + m.diametro + ' en presentación de ' + m.largo_pies + ' pies',
+    alias: 'tubo, tubería, PVC, CPVC, drenaje, presión'
+  },
+  'llave-tanque-gas': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 145,
+    ejes: ['medida'],
+    nombre: m => 'Llave para tanque de gas ' + m.medida,
+    esp: 'Válvula de salida del tanque de GLP',
+    alias: 'llave de tanque de gas, válvula de gas'
+  },
+
+  /* ---- Conexiones ---- */
+  conexion: {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 20,
+    ejes: ['tipo', 'material', 'medida'],
+    nombre: m => ETIQUETA_CONEXION[m.tipo] + ' de ' + m.material + ' ' + m.medida,
+    esp: 'Pieza de conexión. El material manda el precio tanto como la medida',
+    alias: 'conexión, accesorio, fitting, codo, tee, niple, reducción'
+  },
+
+  /* ---- Válvulas y llaves ---- */
+  'llave-paso': {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 30,
+    ejes: ['tipo', 'material', 'medida'],
+    nombre: m => 'Llave de paso ' + m.tipo + ' de ' + m.material + ' ' + m.medida,
+    esp: 'Corte de agua en la línea',
+    alias: 'llave de paso, válvula, llave de bola, llave angular'
+  },
+  cheque: {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 40,
+    ejes: ['medida'],
+    nombre: m => 'Válvula de retención (cheque) ' + m.medida,
+    esp: 'Deja pasar el agua en un solo sentido. Obligatoria a la salida de la bomba',
+    alias: 'cheque, válvula de retención, check'
+  },
+  'valvula-cisterna': {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 50,
+    ejes: ['medida'],
+    nombre: m => 'Válvula de cisterna con flotante ' + m.medida,
+    esp: 'Corta la entrada de agua cuando la cisterna se llena',
+    alias: 'válvula de cisterna, flotante, boya de cisterna'
+  },
+
+  /* ---- Desagüe ---- */
+  'rejilla-piso': {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 60,
+    /* El material no entra en la clave: la mitad de las fichas no lo dice y
+       entre aluminio e inoxidable el precio casi no se mueve. */
+    ejes: ['medida'],
+    nombre: m => 'Rejilla de piso ' + m.medida,
+    esp: 'Sumidero de piso para baños, terrazas y áreas de lavado',
+    alias: 'rejilla, sumidero, coladera de piso'
+  },
+  sifon: {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 70,
+    ejes: ['uso', 'material', 'medida'],
+    nombre: m => 'Sifón de ' + m.material + ' para ' + m.uso + ' ' + m.medida,
+    esp: 'Trampa de olores bajo el aparato',
+    alias: 'sifón, trampa, P-trap'
+  },
+  'boquilla-desague': {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 80,
+    ejes: ['uso', 'material'],
+    nombre: m => 'Boquilla de desagüe de ' + m.material + ' para ' + m.uso,
+    esp: 'La pieza que va en el hoyo del aparato y recibe el sifón',
+    alias: 'boquilla, desagüe, cedazo'
+  },
+
+  /* ---- Mangueras ---- */
+  manguera: {
+    cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 90,
+    ejes: ['uso', 'medida'],
+    nombre: m => 'Manguera para ' + m.uso + ' ' + m.medida,
+    esp: 'Manguera de conexión del aparato a la llave de paso',
+    alias: 'manguera, flexible, acometida'
+  },
+
+  /* ---- Sellado ---- */
+  teflon: {
+    cat: 'MAT-32', unidad: 'rollo', etapa: 'instalaciones', orden: 100,
+    ejes: ['medida'],
+    nombre: m => 'Cinta de teflón ' + m.medida,
+    esp: 'Sella la rosca. Se compra por rollo',
+    alias: 'teflón, cinta de rosca, PTFE'
+  },
+  'cinta-plomero': {
+    cat: 'MAT-32', unidad: 'rollo', etapa: 'instalaciones', orden: 110,
+    ejes: ['medida'],
+    nombre: m => 'Cinta de plomero ' + m.medida,
+    esp: 'Fleje perforado para colgar y fijar tubería',
+    alias: 'cinta de plomero, fleje, perforada'
+  },
+  'cemento-pvc': {
+    cat: 'MAT-32', unidad: 'envase', etapa: 'instalaciones', orden: 120,
+    ejes: ['presentacion'],
+    nombre: m => 'Cemento solvente para PVC, ' + m.presentacion,
+    esp: 'Pega de tubería de PVC. No es un adhesivo de construcción',
+    alias: 'cemento PVC, pega de tubo, solvente'
+  },
+
+  /* ---- Gas ---- */
+  'regulador-gas': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 130,
+    ejes: ['tipo'],
+    nombre: m => 'Regulador de gas ' + m.tipo,
+    esp: 'Baja la presión del tanque a la de la estufa o el calentador',
+    alias: 'regulador de gas, GLP'
+  },
+  'pigtail-gas': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 140,
+    ejes: [],
+    nombre: 'Pig tail para conexión de gas',
+    esp: 'Manguera flexible entre el tanque de gas y el regulador',
+    alias: 'pig tail, conexión de gas'
+  },
+
+  /* ---- Bombeo y almacenamiento ---- */
+  'bomba-agua': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 150,
+    ejes: ['tipo', 'hp'],
+    nombre: m => 'Bomba ' + m.tipo + ' de ' + m.hp + ' HP',
+    esp: 'La potencia es lo que se presupuesta; la marca va en la cotización',
+    alias: 'bomba, presurizadora, ladrona, centrífuga'
+  },
+  'tanque-presurizado': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 160,
+    ejes: ['litros'],
+    nombre: m => 'Tanque presurizado de ' + m.litros + ' litros',
+    esp: 'Acumula presión para que la bomba no arranque en cada apertura',
+    alias: 'tanque presurizado, hidroneumático'
+  },
+  'interruptor-bomba': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 170,
+    ejes: ['rango'],
+    nombre: m => 'Interruptor automático de presión ' + m.rango + ' PSI',
+    esp: 'Arranca y para la bomba según la presión de la línea',
+    alias: 'interruptor de presión, presostato, automático de bomba'
+  },
+  'flotante-electrico': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 175,
+    ejes: [],
+    nombre: 'Interruptor de flotante eléctrico',
+    esp: 'Corta la bomba cuando la cisterna se vacía o el tinaco se llena',
+    alias: 'flotante eléctrico, interruptor de nivel, boya eléctrica'
+  },
+  'control-bomba': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 176,
+    ejes: ['medida'],
+    nombre: m => 'Control automático de bomba ' + m.medida,
+    esp: 'Arranca la bomba por flujo, sin tanque presurizado',
+    alias: 'control automático, press control'
+  },
+  'llave-empotrar': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 275,
+    ejes: ['medida'],
+    nombre: m => 'Llave de empotrar para baño ' + m.medida,
+    esp: 'Llave que va dentro del muro, para ducha o bañera',
+    alias: 'llave de empotrar, llave de pared, llave de ducha'
+  },
+  'llave-bebedero': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 276,
+    ejes: [],
+    nombre: 'Llave de bebedero',
+    esp: 'Llave pequeña de plástico para bebedero o tanque',
+    alias: 'llave de bebedero, llave plástica'
+  },
+  manometro: {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 180,
+    ejes: ['psi', 'tipo'],
+    nombre: m => 'Manómetro ' + m.tipo + ' de ' + m.psi + ' PSI',
+    esp: 'Mide la presión de la línea. El de glicerina aguanta la vibración de la bomba',
+    alias: 'manómetro, medidor de presión'
+  },
+  calentador: {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 190,
+    ejes: ['energia', 'capacidad'],
+    nombre: m => 'Calentador de agua ' + m.energia + ' de ' + m.capacidad,
+    esp: 'El de acumulación se mide en galones y el de paso, en litros por minuto',
+    alias: 'calentador, calentón, boiler, termo'
+  },
+  cisterna: {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 200,
+    ejes: ['material', 'capacidad_gal'],
+    nombre: m => 'Cisterna de ' + m.material + ' de ' + m.capacidad_gal + ' galones',
+    esp: 'Almacenamiento bajo o a nivel de piso',
+    alias: 'cisterna, tanque de agua, reserva'
+  },
+  tinaco: {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 210,
+    ejes: ['capacidad_gal'],
+    nombre: m => 'Tinaco de ' + m.capacidad_gal + ' galones',
+    esp: 'Tanque elevado de polietileno',
+    alias: 'tinaco, tanque elevado, tanque de techo'
+  },
+  'tapa-cisterna': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 220,
+    ejes: ['material', 'medida'],
+    nombre: m => 'Tapa de cisterna de ' + m.material + ' ' + m.medida,
+    esp: 'Registro de la cisterna, con marco',
+    alias: 'tapa de cisterna, registro'
+  },
+  'boya-cisterna': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 230,
+    ejes: ['medida_mm'],
+    nombre: m => 'Boya para válvula de cisterna, ' + m.medida_mm + ' mm',
+    esp: 'El flotador de la válvula, que se cambia aparte',
+    alias: 'boya, flotador'
+  },
+
+  /* ---- Cocina ---- */
+  fregadero: {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 240,
+    ejes: ['pozos', 'medida'],
+    nombre: m => 'Fregadero de ' + (m.pozos === 1 ? 'un pozo' : m.pozos + ' pozos') +
+                 (m.medida ? ', ' + m.medida : ''),
+    esp: 'Fregadero de cocina de acero inoxidable',
+    alias: 'fregadero, lavaplatos, pantry'
+  },
+
+  /* ---- Grifería ---- */
+  'mezcladora-lavamanos': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 250,
+    ejes: ['tipo'],
+    nombre: m => 'Mezcladora de lavamanos ' + m.tipo,
+    esp: 'La monocomando lleva una sola manija; la de cuatro pulgadas, dos',
+    alias: 'mezcladora de lavamanos, grifo, llave de lavamanos'
+  },
+  'mezcladora-fregadero': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 260,
+    ejes: ['tipo'],
+    nombre: m => 'Mezcladora de fregadero ' + m.tipo,
+    esp: 'Grifería de cocina',
+    alias: 'mezcladora de fregadero, grifo de cocina'
+  },
+  'llave-lavamanos': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 270,
+    ejes: [],
+    nombre: 'Llave sencilla de lavamanos',
+    esp: 'Una sola agua, sin mezclador',
+    alias: 'llave de lavamanos, grifo sencillo'
+  },
+  'llave-lavadero': {
+    cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 280,
+    ejes: [],
+    nombre: 'Llave de lavadero o jardín',
+    esp: 'Llave de manguera, para lavadero, patio y jardín',
+    alias: 'llave de jardín, llave de manguera, lavadero'
+  }
+};
+
+const ETIQUETA_CONEXION = {
+  codo: 'Codo',
+  'codo-45': 'Codo de 45°',
+  'codo-90': 'Codo de 90°',
+  codoniple: 'Codo niple',
+  tee: 'Tee',
+  'tee-reducida': 'Tee reducida',
+  cruz: 'Cruz',
+  yee: 'Yee',
+  niple: 'Niple',
+  'niple-reductor': 'Niple reductor',
+  reduccion: 'Reducción',
+  'reduccion-bushing': 'Reducción bushing',
+  tapon: 'Tapón',
+  'tapon-macho': 'Tapón macho',
+  'tapon-hembra': 'Tapón hembra',
+  adaptador: 'Adaptador',
+  'adaptador-macho': 'Adaptador macho',
+  'adaptador-hembra': 'Adaptador hembra',
+  union: 'Unión',
+  'union-universal': 'Unión universal',
+  coupling: 'Coupling',
+  terminal: 'Terminal',
+  abrazadera: 'Abrazadera',
+  anilla: 'Anilla',
+  fitting: 'Fitting',
+  tuerca: 'Tuerca',
+  junta: 'Junta'
+};
+
+const limpia = s => (s === 0 ? '0' : String(s === undefined || s === null ? '' : s).trim());
+
+function item(familia, medidas) {
+  const f = FAMILIAS[familia];
+  if (!f) throw new Error('familia de plomería desconocida: ' + familia);
+  medidas = medidas || {};
+
+  const claves = [familia];
+  for (let i = 0; i < f.ejes.length; i++) {
+    const v = limpia(medidas[f.ejes[i]]);
+    /* Sin el eje no hay ítem: un codo sin medida no se puede presupuestar. */
+    if (!v) return null;
+    claves.push(f.ejes[i] + '-' + v);
+  }
+
+  return {
+    cat: f.cat,
+    familia: familia,
+    clave: claves.join('-').toLowerCase()
+             .replace(/[áàä]/g, 'a').replace(/[éèë]/g, 'e').replace(/[íìï]/g, 'i')
+             .replace(/[óòö]/g, 'o').replace(/[úùü]/g, 'u').replace(/ñ/g, 'n')
+             .replace(/"/g, 'pulg').replace(/°/g, 'gr')
+             .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+    orden: f.orden,
+    nombre: typeof f.nombre === 'function' ? f.nombre(medidas) : f.nombre,
+    unidad: f.unidad,
+    esp: typeof f.esp === 'function' ? f.esp(medidas) : (f.esp || ''),
+    etapa: f.etapa,
+    origen: 'importado',
+    alias: f.alias,
+    medidas: medidas
+  };
+}
+
+/* ---------------------------------------------------------
+   Medidas de plomería
+
+   El oficio escribe las pulgadas como fracción y las pega sin
+   espacios: «1/2», «11/2» (que es una y media, no once medios),
+   «1.5», «25mm». Se normalizan a una sola forma para que el codo de
+   «1.5» y el de «1 1/2» sean el mismo ítem, que es lo que son.
+   --------------------------------------------------------- */
+
+const FRACCION = { 0.125: '1/8', 0.25: '1/4', 0.375: '3/8', 0.5: '1/2', 0.625: '5/8',
+                   0.75: '3/4', 0.875: '7/8' };
+
+function comoPulgada(v) {
+  if (!(v > 0)) return '';
+  const entero = Math.floor(v + 1e-9);
+  const resto = Math.round((v - entero) * 1000) / 1000;
+  const fr = FRACCION[resto];
+  if (resto && !fr) return (Math.round(v * 100) / 100) + '"';
+  if (entero && fr) return entero + ' ' + fr + '"';
+  if (fr) return fr + '"';
+  return entero + '"';
+}
+
+/* Lee una medida suelta y devuelve pulgadas como número. Devuelve null si el
+   texto no es una medida. */
+function pulgadas(t) {
+  const s = String(t || '').trim();
+  let m = s.match(/^(\d+)\s+(\d+)\s*\/\s*(\d+)$/);      // «1 1/2»
+  if (m) return parseInt(m[1], 10) + parseInt(m[2], 10) / parseInt(m[3], 10);
+  m = s.match(/^(\d+)\s*\/\s*(\d+)$/);                  // «1/2» o «11/2»
+  if (m) {
+    const a = parseInt(m[1], 10), b = parseInt(m[2], 10);
+    if (!b) return null;
+    /* «11/2» es una pulgada y media: si la fracción sale mayor que 1 es un
+       número mixto, porque en este oficio nadie escribe fracciones impropias.
+       La misma regla que ya usaban los angulares de Ochoa. */
+    if (a / b > 1 && m[1].length > 1) {
+      const ent = parseInt(m[1].slice(0, m[1].length - 1), 10);
+      const num = parseInt(m[1].slice(-1), 10);
+      if (num / b < 1) return ent + num / b;
+    }
+    return a / b;
+  }
+  m = s.match(/^(\d+(?:\.\d+)?)$/);
+  if (m) return parseFloat(m[1]);
+  return null;
+}
+
+module.exports = { FAMILIAS, item, comoPulgada, pulgadas, ETIQUETA_CONEXION };

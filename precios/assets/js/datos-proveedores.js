@@ -75,6 +75,16 @@
     zonas:['gsd'], web:'ferremix.com.do', wa:'18295373000', email:'soporteweb@ferremix.com.do', precios:true,
     nota:'La cadena de mayor expansión reciente. Sucursales Villa Mella (849-507-0003) y Herrera (829-539-0078). Tienda en línea con precios en RD$.'
   });
+  p('Ferretería Cima', {
+    tipo:'cadena', canal:'detallista',
+    cats:['MAT-02','MAT-04','MAT-08','MAT-09','MAT-11','MAT-13'],
+    /* No se pudo verificar dónde están sus sucursales, así que no se le
+       asigna zona: el filtro por zona la deja fuera antes que decir algo que
+       no sabemos. Sus precios sí cuentan para la referencia, que depende de
+       si vende al público y no de dónde está. */
+    zonas:[], web:'ferreteriacima.com.do', precios:true,
+    nota:'Tienda en línea con precios de lista en RD$ y disponibilidad por artículo. Su catálogo declara el suplidor o importador de cada producto, dato que casi ningún comercio publica. Ubicación de sucursales sin verificar.'
+  });
   p('InnovaCentro (La Innovación)', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12','MAT-13','MAT-14'],

@@ -176,6 +176,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://precios.ingsliberato.com/precio-tuberia-conexiones-pvc.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://precios.ingsliberato.com/precio-jornal-mano-de-obra.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

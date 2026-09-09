@@ -34,6 +34,15 @@ const FAMILIAS = {
     alias: 'inodoro, taza de baño, wc, one piece',
     esp: 'Inodoro monobloque de cerámica, tanque y taza en una sola pieza'
   },
+  /* Ochoa vende las dos mitades por separado y por eso el catálogo tenía
+     tanque y basineta como ítems sueltos. Cima vende el inodoro de dos piezas
+     completo, que es otra partida: la que un presupuesto escribe. */
+  'inodoro-dos-piezas': {
+    cat: 'MAT-24', base: 'Inodoro de dos piezas', unidad: 'unidad',
+    ejes: ['forma'], etapa: 'instalaciones', orden: 15,
+    alias: 'inodoro de dos piezas, taza y tanque, wc dos piezas',
+    esp: 'Tanque y taza como un solo aparato. Ojo al comparar: el tanque y la basineta sueltos son otras dos partidas'
+  },
   'inodoro-tanque': {
     cat: 'MAT-24', base: 'Tanque para inodoro de dos piezas', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20,

@@ -978,6 +978,7 @@ const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
+const CIMA = require('./reglas-cima.js');
 
 const FUENTES = [
   {
@@ -1037,6 +1038,30 @@ const FUENTES = [
     motivo: 'no corresponde a ningún ítem y su ficha no basta para crear uno',
     mapeo: INNOVA.MAPEO,
     regla: a => INNOVA.regla(a) || null
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/cima-materiales-2026-09-09.json'),
+    etiqueta: 'Cima · materiales',
+    proveedor: 'Ferretería Cima',
+    constante: 'PROV_CIMA',
+    fecha: '2026-09-09',
+    motivo: 'no corresponde a ningún ítem y su ficha no basta para crear uno',
+    /* La colección es corta y el comercio la trae agrupada, así que el motivo
+       del descarte se puede dar familia por familia. */
+    motivoDe: a => CIMA.FUERA_MATERIALES[a.cat3] || 'no corresponde a ningún ítem del catálogo',
+    mapeo: CIMA.MAPEO,
+    regla: () => null
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/cima-plomeria-2026-09-09.json'),
+    etiqueta: 'Cima · plomería y baños',
+    proveedor: 'Ferretería Cima',
+    constante: 'PROV_CIMA',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => CIMA.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: {},
+    regla: a => { const r = CIMA.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),

@@ -18,7 +18,7 @@ precios/
   catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           40 páginas estáticas, una por categoría   ← GENERADAS
+  precio-*.html           41 páginas estáticas, una por categoría   ← GENERADAS
   descargas/              el libro de Excel                        ← GENERADO
   costo-licencias-…html
   assets/
@@ -47,7 +47,7 @@ python3 -m http.server 8000
 
 ---
 
-## Las 40 páginas de categoría (generadas)
+## Las 41 páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
@@ -65,7 +65,7 @@ node herramientas/generar-categorias.js     # desde la raíz del repositorio
 
 El generador:
 
-1. escribe los 27 HTML en `precios/`;
+1. escribe los HTML de categoría en `precios/`;
 2. reescribe en `precios/index.html` la rejilla de categorías, los precios destacados y
    las cifras del hero, entre los marcadores `<!-- categorias:inicio -->` y
    `<!-- destacados:inicio -->`, para que esos enlaces y precios existan en el HTML sin
@@ -85,7 +85,7 @@ El generador:
 |---|---|
 | Precios, ítems y taxonomía | `precios/assets/js/datos-catalogo.js` |
 | Slug (URL) de cada categoría | campo `slug` en la lista `categorias` del mismo archivo |
-| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `-segtec.js`, `-baldosas.js` |
+| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `-segtec.js`, `-baldosas.js`, `-plomeria.js` |
 | Texto, claves y FAQ de cada página | `herramientas/contenido-categorias.js` |
 | Plantilla y maquetación | `herramientas/generar-categorias.js` |
 
@@ -135,13 +135,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,018 ítems**. De ellos, **732 ya llevan un precio real** de un
-comercio que lo publica; 280 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,445 ítems**. De ellos, **1,163 ya llevan un precio real** de un
+comercio que lo publica; 276 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 732 ítems verificados hay **2,641 cotizaciones**, o sea **3.6 precios por
-ítem**: el catálogo no creció solo en filas, creció en profundidad.
+Detrás de esos 1,163 ítems verificados hay **3,285 cotizaciones** de **cuatro comercios**.
+69 ítems tienen precio de más de uno y nueve ya tienen tres, entre ellos la funda de cemento
+gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -185,6 +186,7 @@ lo que hace que el inodoro de Ochoa y el de InnovaCentro caigan en la misma fila
 | `herramientas/especificacion-banos.js` | 28 familias de baño: inodoros por tipo de tanque y descarga, urinarios, lavamanos por montaje, muebles, cabinas, barras de seguridad, duchas, equipamiento de baño público |
 | `herramientas/especificacion-segtec.js` | 43 familias de corrientes débiles: cámaras, grabadores, alarma, incendio, cableado, racks, domótica, intercomunicación |
 | `herramientas/especificacion-baldosas.js` | 22 familias de piso y revestimiento: baldosa de campo, mosaico, peldaños, perfiles de canto, crucetas y niveladores, adoquines, tejas, adhesivos y morteros, herramienta del instalador |
+| `herramientas/especificacion-plomeria.js` | 33 familias de plomería: tubo, conexiones, llaves de paso, desagüe, mangueras, sellado, gas, bombeo, calentadores, tanques y grifería |
 
 Cada familia declara su categoría, su unidad, los ejes de medida que la distinguen y cómo
 se arma el nombre. Las reglas de cada comercio no inventan nombres: leen el artículo,
@@ -300,7 +302,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **732 de 1,012 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,163 de 1,439 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -398,19 +400,20 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**2,641 cotizaciones reales cargadas · 732 ítems verificados de 1,012.**
+**3,285 cotizaciones reales cargadas · 1,163 ítems verificados de 1,439.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — seis extracciones completas: el catálogo de Ochoa en materiales de
+- **09/09/2026** — ocho extracciones completas: el catálogo de Ochoa en materiales de
   construcción (398 artículos, 349 con precio), baños (945 / 713), seguridad y tecnología
-  (809 / 604) y baldosas (1,334 / 1,226), más los departamentos de materiales (118 / 118)
-  y de baño (520 / 520) de InnovaCentro. De sus 2,718 artículos aprovechados salieron
-  **710 ítems nuevos que nacieron verificados** y **106 cotizaciones sobre ítems que ya
+  (809 / 604) y baldosas (1,334 / 1,226); los departamentos de materiales (118 / 118)
+  y de baño (520 / 520) de InnovaCentro; y las colecciones de plomería y baños (862 / 862)
+  y materiales (53 / 53) de Ferretería Cima. De sus 3,352 artículos aprovechados salieron
+  **1,137 ítems nuevos que nacieron verificados** y **131 cotizaciones sobre ítems que ya
   existían**.
 
-Los 280 ítems restantes siguen siendo estimaciones nuestras.
+Los 276 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -489,6 +492,7 @@ Cada archivo responde una pregunta distinta:
 | `reglas-segtec.js` | Ochoa · seguridad: si es sistema del edificio o accesorio de computadora, y a qué especificación corresponde |
 | `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo, en materiales y en baño |
 | `reglas-baldosas.js` | Ochoa · baldosas: qué es cada artículo una vez que se le quita la marca y el color, y cómo se pasa su precio a metro cuadrado |
+| `reglas-cima.js` | Cima: mapeo a mano en materiales, reglas en plomería, y qué es repuesto de consumidor |
 | `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
 | `especificacion-segtec.js` | Lo mismo para corrientes débiles |
 | `especificacion-baldosas.js` | Lo mismo para pisos, revestimientos y sus morteros |
@@ -540,8 +544,9 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **51 ítems con precio de más de un comercio**, y el más consultado de todos ya
-tiene mercado: la funda de cemento gris de 42.5 kg va de RD$ 535 a RD$ 655.
+Hoy hay **69 ítems con precio de más de un comercio** y nueve con tres, y el más
+consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de RD$ 535 a
+RD$ 655 entre Ferremix, InnovaCentro y Cima.
 
 Su departamento de baño (520 artículos, 289 aprovechados) aporta menos comparación de la
 esperada y más cobertura: los dos comercios cargan marcas casi disjuntas, así que lo que
@@ -554,6 +559,73 @@ artículo, con su justificación cuando la equivalencia no salta a la vista: que
 3 pies aunque el útil sea 2.7, que «palometa» es como InnovaCentro llama al brazo del
 poste, o que la copa pasante lleva dos medidas y cada comercio las escribe en el orden que
 quiere.
+
+### El tercer comercio y la categoría que hubo que partir
+
+Ferretería Cima entra con dos colecciones: **plomería y baños** (862 artículos) y
+**materiales** (53). Es el primero que carga fuerte en plomería, y con él la partida más
+larga de una obra deja de ser una estimación nuestra.
+
+Las dos colecciones se trabajan al revés una de la otra, y eso dice algo del método:
+
+- **Materiales es corta y casi todo cae sobre ítems que ya existen**, así que va por mapeo
+  declarado a mano, artículo por artículo. Ahí está el valor: es el tercer precio del
+  cemento gris, del mortero de pañete y del alambre de púas. De sus 53 artículos entran 22,
+  y los 31 restantes se quedan fuera con el motivo dicho por familia — los clavos, por
+  ejemplo, porque a RD$ 97 el nombre no dice si es la libra o la caja.
+- **Plomería es larga y casi todo es territorio nuevo**, así que va por reglas contra una
+  tabla de especificación nueva, `especificacion-plomeria.js`. Entran 637 de 862.
+
+#### En una conexión, el material es identidad
+
+Una conexión queda definida por tres cosas: qué pieza es (codo, tee, niple, reducción,
+tapón…), de qué material y de qué medida. El material no es un detalle de acabado: el mismo
+codo de 1/2" cuesta RD$ 15 en PVC y RD$ 170 en bronce. Meterlos en la misma fila daría un
+rango de once veces que no dice nada, así que son dos ítems.
+
+En la rejilla de piso la decisión es la contraria, y por la misma razón bien aplicada: entre
+aluminio e inoxidable el precio casi no se mueve —RD$ 401 contra RD$ 368— y la mitad de las
+fichas ni lo declara. Ahí el material va como medida, no como clave. La regla no es «el
+material siempre parte el ítem»: es que **un eje entra en la clave cuando mueve el precio y
+el comercio lo declara**.
+
+#### MAT-32, la categoría nueva
+
+Con Cima dentro, `MAT-09` pasaba de 22 a 437 ítems, y 375 de ellos eran tubo y conexiones.
+Una página así entierra el inodoro que alguien vino a buscar bajo trescientos codos. Se
+partió en dos:
+
+| | Categoría | Qué lleva |
+|---|---|---|
+| `MAT-09` | Plomería, sanitarios y gas | Aparatos, grifería, duchas, calentadores, bombeo, tanques y gas |
+| `MAT-32` | Tubería y conexiones | Tubo, conexiones, llaves de paso, desagüe, mangueras y sellado |
+
+Los siete ítems de red que estaban en `MAT-09` desde el principio —los tubos, el codo y la
+llave de paso— se mudaron con ellos, y las cotizaciones escritas a mano que los
+referenciaban se renumeraron a mano también. Es el mismo riesgo que el importador ya vigila
+para los ítems generados: mover un ítem corre los códigos de los que venían detrás.
+
+#### El PVC sanitario es de 19 pies, ya no hay duda
+
+Era una de las dos cosas pendientes de verificar. Ochoa lo factura por pies con un mínimo
+de 19; Cima publica toda su línea SDR-41 y SDR-26 como «x 19». **Dos comercios
+independientes, cuatro diámetros**, y ninguno vende el tramo de 20 pies que decía nuestra
+ficha. La especificación de `MAT-32-001` a `003` se corrigió a 19 pies, y las dos
+cotizaciones de Ochoa que estaban marcadas «en otra unidad» —visibles pero fuera del
+cálculo— ya cuentan.
+
+#### Lo que Cima deja fuera
+
+La misma regla de siempre: entra lo que un constructor presupuesta e instala, no el repuesto
+que el dueño de casa compra para cambiar una pieza rota. Eso saca 94 artículos entre
+repuestos de inodoro (peras, balancines, juntas de cera, válvulas de descarga) y de
+grifería, 16 accesorios sueltos de decoración —el toallero y el organizador de ducha, no el
+juego completo de cinco piezas, que sí entra— y 7 destupidores.
+
+El resto de los descartes son fichas incompletas, cada una con su motivo: 41 conexiones que
+no declaran el material, 7 tubos de cobre que no declaran el largo del rollo, 5 calentadores
+que no dicen si son de gas o eléctricos y 3 inodoros cuyo nombre no dice si son de una o de
+dos piezas, que son dos partidas con precios muy distintos.
 
 ### Nunca apuntes por código a un ítem generado
 
@@ -761,13 +833,16 @@ comercio, basta con ajustar la nota o el valor.
 
 ### Dos cosas pendientes de verificar
 
-**Los tubos de PVC vienen en 19 pies, no en 20.** Ochoa vende el SDR-41 de 4" y de 2" en
-presentación de 19 pies y factura por pies con un mínimo de 19, que equivale a una unidad.
-La ficha de nuestros ítems `MAT-09-001` y `MAT-09-002` dice 20 pies. Es probable que el
-error sea nuestro —19 pies es la presentación comercial habitual del PVC sanitario en el
-país—, pero no se cambia la especificación del catálogo con la evidencia de un solo
-comercio. Mientras tanto las cotizaciones se registran con `unidad: 'tubo de 19 pies'`, de
-modo que el sitio las muestra y explica por qué no promedian.
+**Los tubos de PVC vienen en 19 pies, no en 20 — resuelto.** Se sostuvo sin cambiar la
+ficha mientras solo lo decía un comercio. Con Cima ya lo dicen dos, en cuatro diámetros, y
+la especificación se corrigió: ver «El PVC sanitario es de 19 pies» más arriba. Queda como
+ejemplo de la regla: no se cambia el catálogo con la evidencia de un solo comercio, pero
+tampoco se ignora — se registra la discrepancia a la vista y se espera al segundo.
+
+**El SCH-40 también podría ser de 19 pies.** Cima publica toda su línea a 19, SCH-40
+incluido, pero ahí es el único que lo dice: nuestro `MAT-32-004` sigue con 20 pies y su
+tubo de 19 entró como ítem aparte. Se resuelve igual que el sanitario, esperando al segundo
+comercio.
 
 **La pintura de Ochoa está retenida.** «Pintura Acrílica Superior 5 GL» aparece a
 RD$ 983.41, unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y resulta
@@ -1050,7 +1125,7 @@ Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose dis
 hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
-  generador: eso rehace las 40 páginas de categoría, la portada y el `sitemap.xml`;
+  generador: eso rehace las 41 páginas de categoría, la portada y el `sitemap.xml`;
 - las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
@@ -1076,7 +1151,7 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 40 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
+- Las 41 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
   el catálogo interactivo funcionan como concentradores.
 - `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
   ya no está en el `sitemap.xml`: la versión indexable de esa categoría es
