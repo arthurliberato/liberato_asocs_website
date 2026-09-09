@@ -706,6 +706,128 @@
     nota: 'ALAMBRE PUAS MOTTO C-16 250 MTS. · artículo 0001007285 · ref. Alambre de puas Motto | Calibre 16 | Rollo de 250 metros · marca MOTTO. ' + SUPUESTO_ITBIS
   });
 
+  /* Max Ferretería · eléctricos */
+  c('MAT-10-008', PROV_MAX, 180, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-sencillo-bco-ms-ae2100eb',
+    nota: 'INTERRUPTOR SENCILLO BCO MS AE2100EB · artículo 0001074306 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-simple-boton-ancho-s-lp-bco-37004',
+    nota: 'INT SIMPLE BOTON ANCHO S/LP BCO 37004 · artículo 0001127236 · ref. Color BCO · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 155, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-simple-boton-a-c-lp-blanco-36984',
+    nota: 'INT SIMPLE BOTON A. C/LP BLANCO 36984 · artículo 0001127232 · ref. Color BLANCO · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-sencillo-veto-plura-bco-60729',
+    nota: 'INTER SENCILLO VETO PLURA BCO 60729 · artículo 0001127203 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 3840, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-sencillo-plura-smart-ngr-60972',
+    nota: 'INTER SENCILLO PLURA SMART NGR 60972 · artículo 0001127193 · ref. Version smart (domotica) | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 880, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-crema-veto-gcfi-36441',
+    nota: 'TOMACORRIENTE CREMA VETO GCFI 36441 · artículo 0001118656 · ref. Con proteccion GFCI | Color CREMA · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 194.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-superf-bco-veto-20068',
+    nota: 'TOMACORRIENTE SUPERF. BCO VETO 20068 · artículo 0001118653 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 656, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-europea-50amp-veto-16801',
+    nota: 'TOMA EUROPEA 50AMP VETO 16801 · artículo 0001118646 · ref. 50 A · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 235, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-tomacorriente-veto-marfil-90191',
+    nota: 'INT.+TOMACORRIENTE VETO MARFIL 90191 · artículo 0001118614 · ref. Color MARFIL · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-thway-simple-veto-marfil-90207',
+    nota: 'INT.+THWAY SIMPLE VETO MARFIL 90207 · artículo 0001118612 · ref. Conmutable 3 vias | Color MARFIL · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 320, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-doble-veto-premiun-bco-16382',
+    nota: 'TOMA DOBLE VETO PREMIUN BCO 16382 · artículo 0001123887 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-doble-veto-marfil-35369',
+    nota: 'TOMACORRIENTE DOBLE VETO MARFIL 35369 · artículo 0001118652 · ref. Color MARFIL · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 380, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-sencillo-veto-plura-ngr-61801',
+    nota: 'INTER SENCILLO VETO PLURA NGR 61801 · artículo 0001127192 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-008', PROV_MAX, 280, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-simple-veto-premiun-bco-29078',
+    nota: 'INTERUPTOR SIMPLE VETO PREMIUN BCO 29078 · artículo 0001123892 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-doble-mamey-veto-90443',
+    nota: 'TOMACORRIENTE DOBLE MAMEY VETO 90443 · artículo 0001118651 · ref. Color MAMEY · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 185, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-cte-duplex-2p-1-bco-ms-ae2228e2b',
+    nota: 'TOMA-CTE DUPLEX 2P+1 BCO MS AE2228E2B · artículo 0001074313 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-cte-duplex-2p-t-marfil-ms-ae2228e2m',
+    nota: 'TOMA-CTE DUPLEX 2P+T MARFIL MS AE2228E2M · artículo 0001073677 · ref. Color MARFIL · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 365, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-doble-2p-t-15a-3m-matix-am5115ds',
+    nota: 'TOMA DOBLE 2P+T 15A 3M MATIX AM5115DS · artículo 0001020782 · ref. 15 A · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-004', PROV_MAX, 194.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-2-x10',
+    nota: 'TUBERIA METALICA EMT 1/2\'\'X10\' · artículo 0001003252 · ref. Medida 1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-009', PROV_MAX, 480, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1120-1p-20a-54010ea',
+    nota: 'BREAKER GE THQL1120 1P 20A 54010EA · artículo 0001000807 · ref. Polos 1P | Capacidad 20 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacte-doble-marfil-cien-ci1-tct2p-mar',
+    nota: 'TOMACTE DOBLE MARFIL CIEN CI1-TCT2P-MAR · artículo 0001075996 · ref. Color MARFIL · marca LEVITON. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 450, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-doble-veto-plura-ngr-61917',
+    nota: 'TOMA DOBLE VETO PLURA NGR 61917 · artículo 0001127220 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorr-p-extens-plastc-voltech-t46117',
+    nota: 'TOMACORR P/EXTENS PLASTC VOLTECH T46117 · artículo 0001121340 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 60, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorr-p-extens-aterriz-voltech-t46120',
+    nota: 'TOMACORR P/EXTENS ATERRIZ VOLTECH T46120 · artículo 0001121339 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 110, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorrien-doble-20a-c-t-volteck-t46100',
+    nota: 'TOMACORRIEN DOBLE 20A C/T VOLTECK T46100 · artículo 0001121324 · ref. 20 A · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-co-doble-c-t-blist-volteck-t46102',
+    nota: 'TOMA/CO DOBLE C/T BLIST VOLTECK T46102 · artículo 0001121323 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-009', PROV_MAX, 155, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-steck-dim-1p-20a-3ka-sdd61c20',
+    nota: 'BREAKER STECK DIM 1P 20A 6KA SDZD61C20 · artículo 0001099657 · ref. Polos 1P | Capacidad 20 A · marca STECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 30, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-cte-doble-superficie-ivory-gen-u07',
+    nota: 'TOMA-CTE DOBLE SUPERFICIE IVORY GEN U07 · artículo 0001085120 · ref. Color IVORY · marca YACO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 630, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-cte-doble-15a-110v-leviton-5262-ig',
+    nota: 'TOMA-CTE DOBLE 15A 110V LEVITON 5262-IG · artículo 0001009612 · ref. 15 A | 110 V · marca LEVITON. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-007', PROV_MAX, 405, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-cte-leviton-15a-110v-pvc-515cv',
+    nota: 'TOMA-CTE LEVITON 15A-110V PVC 515CV · artículo 0001013498 · ref. 15 A | 110 V · marca LEVITON. ' + SUPUESTO_ITBIS
+  });
+
   /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */
   c('EQU-04-006', PROV_OCHOA, 35818.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-man-tiger-1000-magnet-100-cm-01098175',
@@ -6222,6 +6344,966 @@
   c('MAT-09-069', PROV_CIMA, 785, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-pared-multiple-1-2-x-3-4',
     nota: 'LLAVE PARED MULTIPLE 1/2 X 3/4 · artículo 8055118134934. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-017', PROV_MAX, 785, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-cfl-ms-105w-64k-e40-faca',
+    nota: 'BOMBILLO CFL MS 105W 64K E40 FACA · artículo 0001079678 · ref. Tecnologia: CFL/ahorrador | Potencia 105 W | Temp. color 6400 K | Base/formato E40 · marca BOMBILOSFACA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-018', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-spiral-taschibra-11w-2700k',
+    nota: 'BOMB SPIRAL TASCHIBRA 11W 2700K · artículo 0001130247 · ref. Tecnologia: CFL/ahorrador | Potencia 11 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-019', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschibra-espiral-15w-65k-127v',
+    nota: 'BOMBILLO TASCHIBRA ESPIRAL 15W 65K 127V · artículo 0001118099 · ref. Tecnologia: CFL/ahorrador | Potencia 15 W | Temp. color 6500 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-020', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-spiral-taschibra-25w-2700k',
+    nota: 'BOMB SPIRAL TASCHIBRA 25W 2700K · artículo 0001130250 · ref. Tecnologia: CFL/ahorrador | Potencia 25 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-020', PROV_MAX, 127.12, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-aksi-3u-25w-110618',
+    nota: 'BOMBILLO AKSI 3U 25W 110618 · artículo 0001120257 · ref. Tecnologia: CFL/ahorrador | Potencia 25 W · marca AKSI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-021', PROV_MAX, 313.56, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschibra-spiral-45w',
+    nota: 'BOMBILLO TASCHIBRA SPIRAL 45W · artículo 0001124060 · ref. Tecnologia: CFL/ahorrador | Potencia 45 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-022', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschibra-espiral-7w-65k-127v',
+    nota: 'BOMBILLO TASCHIBRA ESPIRAL 7W 65K 127V · artículo 0001117200 · ref. Tecnologia: CFL/ahorrador | Potencia 7 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-023', PROV_MAX, 795, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschi-espiral-85w-6400k',
+    nota: 'BOMBILLO TASCHI-ESPIRAL 85W 6400K · artículo 0001118095 · ref. Tecnologia: CFL/ahorrador | Potencia 85 W | Temp. color 6400 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-024', PROV_MAX, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-satco-a19-25w-s6091-verde',
+    nota: 'BOMBILLO SATCO A19 25W S6091 VERDE* · artículo 0001005349 · ref. Tecnologia: Incandescente/halogeno | Potencia 25 W | Base/formato A19 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-025', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombill-g25-25w-clear-satco-3447',
+    nota: 'BOMBILL G25 25W CLEAR SATCO 3447 · artículo 0001055572 · ref. Tecnologia: Incandescente/halogeno | Potencia 25 W | Base/formato G25 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-026', PROV_MAX, 110, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-torpedo-40w-e26-frost-sat-s3735',
+    nota: 'BOMBILLO TORPEDO 40W E26 FROST SAT S3735 · artículo 0001010324 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato E26 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-027', PROV_MAX, 80, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-g16-40w-e27-clear-3839',
+    nota: 'BOMB G16 40W E27 CLEAR 3839 · artículo 0001131259 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato G16 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-028', PROV_MAX, 340.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-satco-g40-40w-s3001',
+    nota: 'BOMBILLO SATCO G40 40W S3001 · artículo 0001000287 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato G40 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-029', PROV_MAX, 235.06, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-r20-50w-e26-verde-satco-s3201',
+    nota: 'BOMBILLO R20 50W E26 VERDE SATCO S3201* · artículo 0001005348 · ref. Tecnologia: Incandescente/halogeno | Potencia 50 W | Base/formato R20 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-030', PROV_MAX, 60, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-filamento-1w-48452-2200k',
+    nota: 'BOMB LED FILAMENTO 1W 48452 2200K · artículo 0001128121 · ref. Tecnologia: LED | Potencia 1 W | Temp. color 2200 K · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-031', PROV_MAX, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-huevo-pal-rojo-1-2w-cn0893-1',
+    nota: 'BOMB LED HUEVO PAL ROJO 1.2W CN0893-1 · artículo 0001125329 · ref. Tecnologia: LED | Potencia 1.2 W · marca YACO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-032', PROV_MAX, 210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-a60-rayovac-led10w-av1bl-3000k',
+    nota: 'BOMB A60 RAYOVAC LED10W-AV1BL 3000K · artículo 0001120899 · ref. Tecnologia: LED | Potencia 10 W | Temp. color 3000 K | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-032', PROV_MAX, 170, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-a60-led-rayovac-10w-led1000-blb',
+    nota: 'BOMB A60 LED RAYOVAC 10W LED1000-BLB · artículo 0001120895 · ref. Tecnologia: LED | Potencia 10 W | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-033', PROV_MAX, 930.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-br30-11w-50k-dim-108g-s9045',
+    nota: 'BOMB LED BR30 11W 50K DIM 108G S9045 · artículo 0001077790 · ref. Tecnologia: LED | Potencia 11 W | Temp. color 5000 K | Base/formato BR30 | Regulable (dimmable) · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-034', PROV_MAX, 190, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par30-11w-65k-voltecht-t46187',
+    nota: 'BOMB LED PAR30 11W 65K VOLTECHT T46187 · artículo 0001123807 · ref. Tecnologia: LED | Potencia 11 W | Temp. color 6500 K | Base/formato PAR30 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-035', PROV_MAX, 119.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl80-12w-6500k',
+    nota: 'BOMB LED TASCHIBRA TKL80 12W 6500K · artículo 0001126756 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-035', PROV_MAX, 140, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl80-12w-3000k',
+    nota: 'BOMB LED TASCHIBRA TKL80 12W 3000K · artículo 0001126755 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-035', PROV_MAX, 241.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-globo-recargable-12w-eb-12',
+    nota: 'BOMBILLO LED GLOBO RECARGABLE 12W EB-12 · artículo 0001122750 · ref. Tecnologia: LED | Potencia 12 W | Recargable · marca YACO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-036', PROV_MAX, 60, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-a60-12w-65k-menca',
+    nota: 'BOMBILLO LED A60 12W 65K MENCA · artículo 0001117221 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K | Base/formato A60 · marca MEMCA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-037', PROV_MAX, 240, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bom-a60-rayovac-led14w-bv1bl-65k',
+    nota: 'BOM A60 RAYOVAC LED14W-BV1BL 65K · artículo 0001120896 · ref. Tecnologia: LED | Potencia 14 W | Temp. color 6500 K | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-038', PROV_MAX, 350, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par38-14w-65k-voltecht-t46191',
+    nota: 'BOMB LED PAR38 14W 65K VOLTECHT T46191 · artículo 0001123808 · ref. Tecnologia: LED | Potencia 14 W | Temp. color 6500 K | Base/formato PAR38 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-039', PROV_MAX, 140, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl90-15w-3000k',
+    nota: 'BOMB LED TASCHIBRA TKL90 15W 3000K · artículo 0001126757 · ref. Tecnologia: LED | Potencia 15 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-039', PROV_MAX, 130, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl90-15w-6500k',
+    nota: 'BOMB LED TASCHIBRA TKL90 15W 6500K · artículo 0001126758 · ref. Tecnologia: LED | Potencia 15 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-040', PROV_MAX, 260, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-planos-plb-40k-18w',
+    nota: 'BOMBILLO LED PLANOS PLB-40K 18W · artículo 0001000494 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 4000 K. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-041', PROV_MAX, 310, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-2-5w-twilight-g9-65k-ledg905dl',
+    nota: 'BOMB LED 2.5W TWILIGHT G9 65K LEDG905DL · artículo 0001060263 · ref. Tecnologia: LED | Potencia 2.5 W | Temp. color 6500 K | Base/formato G9 · marca TWILIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-042', PROV_MAX, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-torp-3w-e12-30k-twilight-twledc3w',
+    nota: 'BOMB TORP 3W E12 30K TWILIGHT TWLEDC3W · artículo 0001109544 · ref. Tecnologia: Incandescente/halogeno | Potencia 3 W | Temp. color 3000 K | Base/formato E12 · marca TWILIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-043', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombi-led-g4-l-calida-3w-voltek-t48103',
+    nota: 'BOMBI LED G4 L/CALIDA 3W VOLTEK T48103 · artículo 0001122431 · ref. Tecnologia: LED | Potencia 3 W | Base/formato G4 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-044', PROV_MAX, 595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl170-30w',
+    nota: 'BOMBILLO LED TASCHIBRA TKL170 30W · artículo 0001118088 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-045', PROV_MAX, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-aksi-35-watts-116401',
+    nota: 'BOMBILLO LED AKSI 35 WATTS 116401 · artículo 0001120263 · ref. Tecnologia: LED | Potencia 35 W · marca AKSI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-046', PROV_MAX, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl30-4-9w-6500k',
+    nota: 'BOMBILLO LED TASCHIBRA TKL30 4.9W 6500K · artículo 0001118091 · ref. Tecnologia: LED | Potencia 4.9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-047', PROV_MAX, 365, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-vela-4w-e12-clear-5000k-29866',
+    nota: 'BOMB LED VELA 4W E12 CLEAR 5000K 29866 · artículo 0001131266 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 5000 K | Base/formato E12 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-048', PROV_MAX, 180, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bobil-led-g45-4w-filam-brightly-e27-dim',
+    nota: 'BOBIL LED G45 4W FILAM BRIGHTLY E27 DIM · artículo 0001118481 · ref. Tecnologia: LED | Potencia 4 W | Base/formato G45 | Regulable (dimmable) · marca BRIGHTLY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-049', PROV_MAX, 200, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombi-led-g9-l-calida-4w-volteck-t48102',
+    nota: 'BOMBI LED G9 L/CALIDA 4W VOLTECK T48102 · artículo 0001122430 · ref. Tecnologia: LED | Potencia 4 W | Base/formato G9 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-050', PROV_MAX, 64.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-4w-gu10-3000k-voltech-46216',
+    nota: 'BOMB LED 4W GU10 3000K VOLTECH 46216 · artículo 0001128123 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato GU10 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-050', PROV_MAX, 80, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-4w-gu10-5000k-voltech-46215',
+    nota: 'BOMB LED 4W GU10 5000K VOLTECH 46215 · artículo 0001128122 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 5000 K | Base/formato GU10 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-051', PROV_MAX, 80, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-mr16-6500k-4w-volteck-t46178',
+    nota: 'BOMB LED MR16 6500K 4W VOLTECK T46178 · artículo 0001121341 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 6500 K | Base/formato MR16 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-051', PROV_MAX, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-mr16-30k-3w-brightly-ledro4ww',
+    nota: 'BOMB LED MR16 3000K 4W BRIGHTLY LEDRO4WW · artículo 0001109552 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato MR16 · marca BRIGHTLY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-051', PROV_MAX, 64.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-t-mr16-3500k-4w-volteck-t46177',
+    nota: 'BOMB LED T/MR16 3500K 4W VOLTECK T46177 · artículo 0001121349 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3500 K | Base/formato MR16 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-052', PROV_MAX, 709.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl225-40w',
+    nota: 'BOMBILLO LED TASCHIBRA TKL225 40W · artículo 0001118089 · ref. Tecnologia: LED | Potencia 40 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-053', PROV_MAX, 272.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-5w-mr16-70k12v-ameri-5wcob4',
+    nota: 'BOMB. LED 5W MR16 70K12V AMERI 5WCOB4* · artículo 0001068714 · ref. Tecnologia: LED | Potencia 5 W | Base/formato MR16 · marca AMERICANLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-054', PROV_MAX, 990, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl270-50w',
+    nota: 'BOMBILLO LED TASCHIBRA TKL270 50W · artículo 0001118090 · ref. Tecnologia: LED | Potencia 50 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-055', PROV_MAX, 1724.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-55w-116403',
+    nota: 'BOMBILLO LED 55W 116403 · artículo 0001120262 · ref. Tecnologia: LED | Potencia 55 W · marca AKSI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-056', PROV_MAX, 430, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-fila-led-dim-a19-6w-c-ahu-50k-light',
+    nota: 'BOMB FILA LED DIM A19 6W C/AHU 50K LIGHT · artículo 0001132229 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 5000 K | Base/formato A19 | Regulable (dimmable) · marca LIGHTNEST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-057', PROV_MAX, 70, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-g45-6w-6500k-e27-bl0060',
+    nota: 'BOMBILLO LED G45 6W 6500K E27 BL0060 · artículo 0001122483 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 6500 K | Base/formato G45 · marca MEMCA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-058', PROV_MAX, 200, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-gu10-6w-3000k-dim-westin-38692',
+    nota: 'BOMB LED GU10 6W 3000K DIM WESTIN 38692 · artículo 0001128565 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 3000 K | Base/formato GU10 | Regulable (dimmable) · marca WESTINGHOUSE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-059', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par20-7w-65k-voltecht-t46182',
+    nota: 'BOMB LED PAR20 6W 65K VOLTECHT T46182 · artículo 0001123806 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 6500 K | Base/formato PAR20 · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-060', PROV_MAX, 505, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bom-fila-led-dim-st19-6w-c-amb-50k-light',
+    nota: 'BOM FILA LED DIM ST19 6W C/AMB2200K LIGH · artículo 0001132231 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 2200 K | Base/formato ST19 | Regulable (dimmable) · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MAX, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl40-7w-6500w',
+    nota: 'BOMBILLO LED TASCHIBRA TKL40 7W 6500W · artículo 0001118092 · ref. Tecnologia: LED | Potencia 7 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-062', PROV_MAX, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschi-tkl60-9w-6500k',
+    nota: 'BOMBILLO LED TASCHI TKL60 9W 6500K · artículo 0001117178 · ref. Tecnologia: LED | Potencia 9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-063', PROV_MAX, 340.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-18w-65k-cuadrado-8-7',
+    nota: 'PANEL LED EMPOT 18W 65K CUADRADO 8.7 · artículo 0001124062 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-064', PROV_MAX, 240, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-emp-cuadra-3w-3000k-tasch',
+    nota: 'PANEL LED EMP CUADRA 3W 3000K TASCH · artículo 0001132123 · ref. Tecnologia: LED | Potencia 3 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-065', PROV_MAX, 304.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-12w-65k-redondo-6-7',
+    nota: 'PANEL LED EMPOT 12W 65K REDONDO 6.7 · artículo 0001124064 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-066', PROV_MAX, 290, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-18w-65k-redondo-8',
+    nota: 'PANEL LED EMPOT 18W 65K REDONDO 8 · artículo 0001124065 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_MAX, 650, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-24w-65k-redondo-11-6',
+    nota: 'PANEL LED EMPOT 24W 65K REDONDO 11.6 · artículo 0001124066 · ref. Tecnologia: LED | Potencia 24 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-068', PROV_MAX, 190, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-cuad-dirigib-negra-lightnest',
+    nota: 'LAM EMP CUAD DIRIGIB NEGRA LIGHTNEST · artículo 0001132225 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-068', PROV_MAX, 255, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-recto-voltech-46616',
+    nota: 'LAMP EMP DIRIG RECTO VOLTECH 46616 · artículo 0001128325 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-069', PROV_MAX, 190, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-circ-dirigib-blanca-lightnest',
+    nota: 'LAM EMP CIRC DIRIGIB BLANCA LIGHTNEST · artículo 0001132222 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-069', PROV_MAX, 265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-satin-voltech-46625',
+    nota: 'LAMP EMP DIRIG CURVO SATIN VOLTECH 46625 · artículo 0001128328 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-069', PROV_MAX, 270, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-voltech-46623',
+    nota: 'LAMP EMP DIRIG CURVO VOLTECH 46623 · artículo 0001128326 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-069', PROV_MAX, 240, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-negro-voltech-46624',
+    nota: 'LAMP EMP DIRIG CURVO NEGRO VOLTECH 46624 · artículo 0001128327 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-070', PROV_MAX, 1015, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emerc-recarg-voltech-300lu-t43008',
+    nota: 'LAMP EMERC RECARG VOLTECH 300LU T43008 · artículo 0001123803 · ref. Tecnologia: Incandescente/halogeno | Recargable · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-071', PROV_MAX, 735, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-10w-6500k-compac-philips',
+    nota: 'REFLECTOR LED 10W 6500K COMPAC PHILIPS · artículo 0001124094 · ref. Tecnologia: LED | Potencia 10 W | Temp. color 6500 K · marca PHILIPS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-071', PROV_MAX, 475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-10w-6500k',
+    nota: 'REFLECTOR LED TASCHIBRA 10W 6500k · artículo 0001117187 · ref. Tecnologia: LED | Potencia 10 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-072', PROV_MAX, 1950, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-3000k',
+    nota: 'REFLECTOR LED TASCHIBRA 100W 3000K · artículo 0001124073 · ref. Tecnologia: LED | Potencia 100 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-072', PROV_MAX, 1940, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-6500k',
+    nota: 'REFLECTOR LED TASCHIBRA 100W 6500k · artículo 0001117186 · ref. Tecnologia: LED | Potencia 100 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-073', PROV_MAX, 2335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-200w-65k-re0069',
+    nota: 'REFLECTOR LED 200W 65K RE0069 · artículo 0001112537 · ref. Tecnologia: LED | Potencia 200 W | Temp. color 6500 K · marca MEMCA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-074', PROV_MAX, 455, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-cfl-23w-r40-27k-satco-s7241',
+    nota: 'REFLECTOR CFL 23W R40 27K SATCO S7241 · artículo 0001029191 · ref. Tecnologia: CFL/ahorrador | Potencia 23 W | Temp. color 2700 K | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-075', PROV_MAX, 880, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-10-4998',
+    nota: 'REFLECTOR SATCO 250W/R40/10 4998 · artículo 0001060191 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-075', PROV_MAX, 280, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-1-4999',
+    nota: 'REFLECTOR SATCO 250W/R40/1 4999 · artículo 0001060190 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-076', PROV_MAX, 1325, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-rgb-30w-rg6219',
+    nota: 'REFLECTOR LED RGB 30W RG6219 · artículo 0001129898 · ref. Tecnologia: LED | Potencia 30 W. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-076', PROV_MAX, 620, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-30w-6500k',
+    nota: 'REFLECTOR LED TASCHIBRA 30W 6500k · artículo 0001118106 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-077', PROV_MAX, 970, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-50w-3000k',
+    nota: 'REFLECTOR LED TASCHIBRA 50W 3000K · artículo 0001124077 · ref. Tecnologia: LED | Potencia 50 W | Temp. color 3000 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-078', PROV_MAX, 249.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-16w-6500k',
+    nota: 'TUBO LED TASCHIBRA 40 16W 6500K · artículo 0001118111 · ref. Tecnologia: LED | Potencia 16 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-079', PROV_MAX, 264.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-20-5w-6500k',
+    nota: 'TUBO LED TASCHIBRA 40 20.5W 6500K · artículo 0001118112 · ref. Tecnologia: LED | Potencia 20.5 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-080', PROV_MAX, 210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-20-9-9w-6500k',
+    nota: 'TUBO LED TASCHIBRA 20 9.9W 6500K · artículo 0001118110 · ref. Tecnologia: LED | Potencia 9.9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-081', PROV_MAX, 235, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fotocelda-105-285v-7673c-jccc-jl-205c',
+    nota: 'FOTOCELDA 105-285V. 7673C-JCCC/JL-205C · artículo 0001001061 · ref. Tecnologia: Incandescente/halogeno · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-081', PROV_MAX, 370, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-con-fotocelda-t46534',
+    nota: 'ZOCALO CON FOTOCELDA T46534 · artículo 0001126253 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-081', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/base-p-fotocelda-suburba-voltech-t47229',
+    nota: 'BASE P/FOTOCELDA SUBURBA VOLTECH T47229 · artículo 0001122421 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-082', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-plast-marfil-veto-43036',
+    nota: 'ROSETA PLAST. MARFIL VETO 43036 · artículo 0001118638 · ref. Tecnologia: Incandescente/halogeno · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-082', PROV_MAX, 125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-porcelana-leviton-9875',
+    nota: 'ROSETA PORCELANA LEVITON 9875 · artículo 0001001043 · ref. Tecnologia: Incandescente/halogeno · marca LEVITON. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 30, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelana-e12-voltech-46531',
+    nota: 'ZOCALO PORCELANA E12 VOLTECH 46531 · artículo 0001128125 · ref. Tecnologia: Incandescente/halogeno | Base/formato E12 · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 560, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-c-sensor-movimiento-t46274',
+    nota: 'ZOCALO C/SENSOR MOVIMIENTO T46274 · artículo 0001126252 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-int-barra-volteck-t46501',
+    nota: 'ZOCALO BAQUE C/INT BARRA VOLTECK T46501 · artículo 0001121347 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 70, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-base-g13-bipin-volteck-t46508',
+    nota: 'ZOCALO BASE G13 BIPIN VOLTECK T46508 · artículo 0001121346 · ref. Tecnologia: Incandescente/halogeno | Base/formato G13 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 45.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelan-cuadrado-volteck-t46522',
+    nota: 'ZOCALO PORCELAN CUADRADO VOLTECK T46522 · artículo 0001121343 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-adaptador-volteck-46525',
+    nota: 'ZOCALO BAQUE C/ ADAPTADOR VOLTECK 46525 · artículo 0001121342 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-083', PROV_MAX, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-ref-d-pvc-p-interp-volteck-t47110',
+    nota: 'ZOCALO REF D/PVC P/INTERP VOLTECK T47110 · artículo 0001121303 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-084', PROV_MAX, 465, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-ngr-61849',
+    nota: 'TOMA/INTER VETO PLURA NGR 61849 · artículo 0001127216 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-084', PROV_MAX, 535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-bco-60767',
+    nota: 'TOMA/INTER VETO PLURA BCO 60767 · artículo 0001127215 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 565, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61900-3way',
+    nota: 'INTER DOBLE VETO PLURA NGR 61900 3WAY · artículo 0001127228 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 420, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-3way-veto-plura-ngr-61832',
+    nota: 'INTERUPTOR 3WAY VETO PLURA NGR 61832 · artículo 0001127226 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 675, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-ngr-61856',
+    nota: 'INTER TRIPLE 3WAY VETO PLURA NGR 61856 · artículo 0001127200 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 685, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-bco-60798',
+    nota: 'INTER TRIPLE 3WAY VETO PLURA BCO 60798 · artículo 0001127199 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-3way-veto-premiun-bco-29146',
+    nota: 'INTER DOBLE 3WAY VETO PREMIUN BCO 29146 · artículo 0001123894 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-085', PROV_MAX, 520, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-3way-doble-veto-plura-bco-60781',
+    nota: 'INTER 3WAY DOBLE VETO PLURA BCO 60781 · artículo 0001117207 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-086', PROV_MAX, 544.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-4way-veto-plura-bco-60804',
+    nota: 'INTER 4WAY VETO PLURA BCO 60804 · artículo 0001127202 · ref. Conmutable 4 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-086', PROV_MAX, 390, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-4way-veto-premiun-16146',
+    nota: 'INTERUPTOR 4WAY VETO PREMIUN 16146 · artículo 0001123895 · ref. Conmutable 4 vias · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-087', PROV_MAX, 1265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimmer-rotat-300w-120v-btn-matix-am4406',
+    nota: 'DIMMER ROTAT. 300W 120V BTN MATIX AM4406 · artículo 0001020785 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-087', PROV_MAX, 960, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimer-veto-plura-ngr-61955',
+    nota: 'DIMER VETO PLURA NGR 61955 · artículo 0001127184 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 205, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-doble-b-ancho-c-lp-plata-bco-36991',
+    nota: 'INT DOBLE B/ANCHO C/LP PLATA BCO 36991 · artículo 0001127234 · ref. Color PLATA · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 4320, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-ngr-60996',
+    nota: 'INTER DOBLE VETO PLURA SMART NGR 60996 · artículo 0001127186 · ref. Version smart (domotica) | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 4515, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-bco-60989',
+    nota: 'INTER DOBLE VETO PLURA SMART BCO 60989 · artículo 0001127185 · ref. Version smart (domotica) | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 460, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-bco-60736',
+    nota: 'INTER DOBLE VETO PLURA BCO 60736 · artículo 0001123893 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-crema-c-l-35130',
+    nota: 'INTERR VETO DOBLE CREMA C/L 35130 · artículo 0001118626 · ref. Color CREMA · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-doble-veto-blanco-90139',
+    nota: 'INTERRUPTOR DOBLE VETO BLANCO 90139 · artículo 0001118617 · ref. Color BLANCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-bco-c-l-35123',
+    nota: 'INTERR VETO DOBLE BCO C/L 35123 · artículo 0001118625 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-088', PROV_MAX, 475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61818',
+    nota: 'INTER DOBLE VETO PLURA NGR 61818 · artículo 0001127189 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 470.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-triple-veto-premiun-bco-16054',
+    nota: 'INTERUPTOR TRIPLE VETO PREMIUN BCO 16054 · artículo 0001123891 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 4440, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-smart-ngr-62075',
+    nota: 'INTER TRIPLE VETO PLURA SMART NGR 62075 · artículo 0001127198 · ref. Version smart (domotica) | Color NGR · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 325, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-c-luz-veto-35147',
+    nota: 'INTERRUPTOR TRIPLE BCO C/LUZ VETO 35147 · artículo 0001118622 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 640, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-ngr-61825',
+    nota: 'INTER TRIPLE VETO PLURA NGR 61825 · artículo 0001127201 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-m-st-ae2300eb',
+    nota: 'INTERRUPTOR TRIPLE BCO M-ST AE2300EB · artículo 0001073673 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-090', PROV_MAX, 1795, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-c-usb-veto-16788-premium',
+    nota: 'TOMACORRIENTE C/USB VETO 16788 PREMIUM · artículo 0001128655 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-090', PROV_MAX, 1085, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-usb-bco-veto-36465',
+    nota: 'TOMACORRIENTE+USB BCO VETO 36465 · artículo 0001118657 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-091', PROV_MAX, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-blanca-3m-bticino-matix-am503-3bn',
+    nota: 'PLACA BLANCA 3M BTICINO MATIX AM503/3BN · artículo 0001020799 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-092', PROV_MAX, 1620, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-class-7m-plata-mate-eikon-20657-13',
+    nota: 'PLACA CLASS 7M PLATA MATE EIKON 20657.13 · artículo 0001033452 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-093', PROV_MAX, 9.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-doble-abs-ivory-gen-u03z',
+    nota: 'TAPA DOBLE ABS IVORY GEN U03Z · artículo 0001085119 · ref. Sin especificaciones parseables en el nombre · marca YACO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-094', PROV_MAX, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-plura-ngr-62051',
+    nota: 'TAPA CIEGA VETO PLURA NGR 62051 · artículo 0001127207 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-094', PROV_MAX, 280, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-premiun-p-exterior-16672',
+    nota: 'TAPA CIEGA VETO PREMIUN P/EXTERIOR 16672 · artículo 0001123886 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-094', PROV_MAX, 119.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-marfil-veto-35499',
+    nota: 'TAPA CIEGA MARFIL VETO 35499 · artículo 0001118659 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-094', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-blanca-veto-35482',
+    nota: 'TAPA CIEGA BLANCA VETO 35482 · artículo 0001118639 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-095', PROV_MAX, 95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorriente-redon-t46411',
+    nota: 'TAPA PLAST P/TOMACORRIENTE REDON T46411 · artículo 0001126250 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-095', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-t-c-dob-ext-volteck-t46410',
+    nota: 'TAPA PLAST P/T C DOB EXT VOLTECK T46410 · artículo 0001121351 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-095', PROV_MAX, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorr-dob-volteck-t46406',
+    nota: 'TAPA PLAST P/TOMACORR DOB VOLTECK T46406 · artículo 0001121350 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 820.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-c-usb-972-30405',
+    nota: 'ADAPTADOR C/USB 972-30405 · artículo 0001125918 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 1360, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protec-4sl-c-usb-stanley-33202',
+    nota: 'ADAPTADOR PROTEC 4SL C/USB STANLEY 33202 · artículo 0001094737 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-eu-usa-vimar-1351',
+    nota: 'ADAPTADOR EU/USA VIMAR 1351 · artículo 0001014816 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 45.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-enchufe-usa-a-eu-voltech-46246',
+    nota: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246 · artículo 0001128664 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 285.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-d-6-salida-12cm-972-30346',
+    nota: 'ADAPTADOR D/6 SALIDA 12CM 972-30346 · artículo 0001125928 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-giratorio-c-3-972-30357',
+    nota: 'ADAPTADOR GIRATORIO C/3 972-30357 · artículo 0001125925 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 465, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-macho-europ-50amp-43210',
+    nota: 'ENCHUFE MACHO EUROP. 50AMP 43210 · artículo 0001118607 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-amarillo-t-leviton-15a-pbp317',
+    nota: 'ENCHUFE AMARILLO T/LEVITON 15A PBP317H · artículo 0001127423 · ref. Sin especificaciones parseables en el nombre. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 55, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plast-aterr-clp-a-voltech-t46205',
+    nota: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205 · artículo 0001121354 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plano-set-2pzs-t46209',
+    nota: 'ENCHUFE PLANO SET 2PZS T46209 · artículo 0001126251 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 60, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-blind-aterrizado-voltech-t46202',
+    nota: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202 · artículo 0001121357 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MAX, 290, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-leviton-15a-110v-cuerpo-m-515pa',
+    nota: 'ENCHUFE LEVITON 15A 110V CUERPO M. 515PA · artículo 0001006690 · ref. Sin especificaciones parseables en el nombre · marca LEVITON. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MAX, 485, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp115-1p-15a-fino',
+    nota: 'BREAKER GE THQP115 1P 15A (FINO) · artículo 0001001074 · ref. Polos 1P | Capacidad 15 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-099', PROV_MAX, 500, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp120-1p-20a-fino',
+    nota: 'BREAKER GE THQP120 1P 20A (FINO) · artículo 0001001075 · ref. Polos 1P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-100', PROV_MAX, 470.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1130-1p-30a',
+    nota: 'BREAKER GE THQL1130 1P 30A · artículo 0001000808 · ref. Polos 1P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_MAX, 505, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp130-1p-30a-fino',
+    nota: 'BREAKER GE THQP130 1P 30A (FINO) · artículo 0001001076 · ref. Polos 1P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-102', PROV_MAX, 815, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1160-1p-60a',
+    nota: 'BREAKER GE THQL1160 1P 60A · artículo 0001000816 · ref. Polos 1P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-103', PROV_MAX, 1134.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2120-2p-20a',
+    nota: 'BREAKER GE THQL2120 2P 20A · artículo 0001000818 · ref. Polos 2P | Capacidad 20 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-104', PROV_MAX, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp220-2p-20a',
+    nota: 'BREAKER GE THQP220 2P 20A · artículo 0001000803 · ref. Polos 2P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_MAX, 1134.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2130-2p-30a',
+    nota: 'BREAKER GE THQL2130 2P 30A · artículo 0001000826 · ref. Polos 2P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_MAX, 1165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp230-2p-30a',
+    nota: 'BREAKER GE THQP230 2P 30A · artículo 0001000804 · ref. Polos 2P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_MAX, 1134.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2140-2p-40a',
+    nota: 'BREAKER GE THQL2140 2P 40A · artículo 0001000827 · ref. Polos 2P | Capacidad 40 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-108', PROV_MAX, 1189.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2160-2p-60a',
+    nota: 'BREAKER GE THQL2160 2P 60A · artículo 0001000835 · ref. Polos 2P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_MAX, 4755, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-8-16-circ-tlm812fcud',
+    nota: 'PANEL BREAKER GE 8-16 CIRC. TLM812FCUD · artículo 0001000355 · ref. Sin especificaciones parseables en el nombre · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_MAX, 566, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
+    nota: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA · artículo 0001128966 · ref. Sin especificaciones parseables en el nombre · marca IBER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_MAX, 6160, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-14a24-125amp-tlm1212ccu',
+    nota: 'PANEL BREAKER GE 14A24 125AMP TLM1212CCU · artículo 0001025983 · ref. Capacidad 125 A · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_MAX, 815, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-25amp-220v-25001',
+    nota: 'CAJA BREAKER VETO 25AMP 220V 25001 · artículo 0001127231 · ref. Capacidad 25 A | Tension 220 V · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-113', PROV_MAX, 700, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-32amp-32016',
+    nota: 'CAJA BREAKER VETO 32AMP 32016 · artículo 0001118600 · ref. Capacidad 32 A · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-114', PROV_MAX, 675, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-30-amp-eurosol',
+    nota: 'SWITCH DOBLE TIRO 2P 30 AMP EUROSOL · artículo 0001119382 · ref. Polos 2P | Capacidad 30 A · marca EUROSOL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-115', PROV_MAX, 1805, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-60-amp-eurosol',
+    nota: 'SWITCH DOBLE TIRO 2P 60 AMP EUROSOL · artículo 0001119383 · ref. Polos 2P | Capacidad 60 A · marca EUROSOL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-116', PROV_MAX, 50, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fisible-30a-voltech-t47278',
+    nota: 'FISIBLE 30A VOLTECH T47278 · artículo 0001123801 · ref. Capacidad 30 A · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-117', PROV_MAX, 140, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fusible-volteck-reforzado-60a-fus-60r',
+    nota: 'FUSIBLE VOLTECK REFOR 60A FUS-60R 47279 · artículo 0001110195 · ref. Capacidad 60 A · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-118', PROV_MAX, 745, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protector-c-2-salida-usb-ggwp2',
+    nota: 'ADAPTADOR PROTECTOR C/2 SALIDA USB GGWP2 · artículo 0001126547 · ref. Sin especificaciones parseables en el nombre · marca GABBA GOODS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-118', PROV_MAX, 1025, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-volt-lavad-micro-pted-1t515',
+    nota: 'PROTECTOR VOLT LAVAD/MICRO PTED-1T515 · artículo 0001089578 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-118', PROV_MAX, 875.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-audio-video-avtek-pte-1t515ir',
+    nota: 'PROTECTOR AUDIO-VIDEO AVTEK PTE-1T515IR · artículo 0001000319 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-118', PROV_MAX, 1610, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-avtek-1875w-p-16',
+    nota: 'PROTECTOR AVTEK 1875W P-16 · artículo 0001126795 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_MAX, 1395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regulador-volta-avtek-rspc-1200-8t508',
+    nota: 'REGULADOR VOLTA AVTEK RSPC-1200-8T508 · artículo 0001084638 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-120', PROV_MAX, 725, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-1-2-x10',
+    nota: 'TUBERIA METALICA EMT 1-1/2\'\'X10\' · artículo 0001006500 · ref. Medida 1-1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-121', PROV_MAX, 375, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-x10',
+    nota: 'TUBERIA METALICA EMT 1\'\'X10\' · artículo 0001003254 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-122', PROV_MAX, 310, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-3-4-x10',
+    nota: 'TUBERIA METALICA EMT 3/4\'\'X10\' · artículo 0001003253 · ref. Medida 3/4" | Largo 4 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-123', PROV_MAX, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-1-2',
+    nota: 'TUBERIA BX 1/2\'\' · artículo 0001000900 · ref. Medida 1/2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-124', PROV_MAX, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-3-4',
+    nota: 'TUBERIA BX 3/4\'\' · artículo 0001000901 · ref. Medida 3/4" | Largo 4 pies · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-125', PROV_MAX, 45.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4-s-metal-alaflex',
+    nota: 'TUBERIA LIQUID TIGHT 3/4 S/METAL ALAFLEX · artículo 0001009754 · ref. Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-125', PROV_MAX, 110, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4',
+    nota: 'TUBERIA LIQUID TIGHT 3/4\'\' · artículo 0001003244 · ref. Medida 3/4" | Largo 4 pies | Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-126', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-2-kopos-lv-11x10',
+    nota: 'CANALETA PVC BCO 1/2 KOPOS LV 11X10 · artículo 0001077974 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-127', PROV_MAX, 119.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-5-8-kopos-lh-15x10',
+    nota: 'CANALETA PVC BCO 5/8 KOPOS LH 15X10 · artículo 0001077973 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-128', PROV_MAX, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-ova-5-8-kopos-lzk-15x12',
+    nota: 'CANALETA PVC OVA 5/8 KOPOS LZK 15X12 · artículo 0001077964 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-129', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-kopos-3-4-lhd-20x10',
+    nota: 'CANALETA PVC BCO KOPOS 3/4 LHD 20X10 · artículo 0001094771 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-130', PROV_MAX, 200, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-kopos-lhd-25x15-p2',
+    nota: 'CANALETA PVC BCO 1 KOPOS LHD 25X15 P2 · artículo 0001094772 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-131', PROV_MAX, 215, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-plastica-lhd-32x15-p2',
+    nota: 'CANALETA PLASTICA LHD 32X15 P2 · artículo 0001132760 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-132', PROV_MAX, 320, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lv-40x15-p2',
+    nota: 'CANALETA PALSTICA LV 40X15 P2 · artículo 0001132761 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-133', PROV_MAX, 550, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lh-60x40-p2',
+    nota: 'CANALETA PALSTICA LH 60X40 P2 2PUL · artículo 0001132762 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-134', PROV_MAX, 745, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-3-kopos-ekd-80x40-hd',
+    nota: 'CANALETA PVC BCO 3 KOPOS EKD 80X40 HD · artículo 0001077965 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MAX, 115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-octagonal-usa-1-2',
+    nota: 'CAJA METAL OCTAGONAL USA UL 1/2*** · artículo 0001006917 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-136', PROV_MAX, 41, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-3-4-tp596',
+    nota: 'CAJA METAL 2X4 USA 3/4 TP596 · artículo 0001000131 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-136', PROV_MAX, 40, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-1-2-tp594',
+    nota: 'CAJA METAL 2X4 USA 1/2 TP594 · artículo 0001000132 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-137', PROV_MAX, 45.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-plast-p-empot-bticino-2x4-533-503ms',
+    nota: 'CAJA PLAST P/EMPOT BTICINO 2X4 533/503MS · artículo 0001004734 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-138', PROV_MAX, 4, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2',
+    nota: 'ABRAZADERA EMT 1/2 · artículo 0001000331 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-139', PROV_MAX, 5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2-2-h',
+    nota: 'ABRAZADERA EMT 1/2\'\' 2-H · artículo 0001007003 · ref. Medida 1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-140', PROV_MAX, 7, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1',
+    nota: 'ABRAZADERA EMT 1\'\' · artículo 0001007092 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-141', PROV_MAX, 35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-2',
+    nota: 'ABRAZADERA UNISTRUST 2\'\' · artículo 0001013969 · ref. Medida 2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-142', PROV_MAX, 4, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-3-4',
+    nota: 'ABRAZADERA EMT 3/4 · artículo 0001004282 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-143', PROV_MAX, 64.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-3',
+    nota: 'ABRAZADERA UNISTRUST 3\'\' · artículo 0001013970 · ref. Medida 3" | Largo 3 pies · marca EMT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-144', PROV_MAX, 150, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-250-10-x-4-6mm',
+    nota: 'ABRAZADERA NYLON 0301CV-250 10\'\'X 4.6MM · artículo 0001000201 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-145', PROV_MAX, 2.86, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-12-x4-6mm-negra',
+    nota: 'ABRAZADERA PLAST. 12\'\'X4.6MM NEGRA · artículo 0001018041 · ref. Sin especificaciones parseables en el nombre · marca TOPAZ. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-145', PROV_MAX, 1.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-310-12-x-4-6mm',
+    nota: 'ABRAZADERA NYLON 0301CV-310 12\'\'X 4.6MM · artículo 0001000200 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-146', PROV_MAX, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-8-x-4-6mm-negra',
+    nota: 'ABRAZADERA PLAST. 8\'\'X 4.6MM NEGRA · artículo 0001018040 · ref. Sin especificaciones parseables en el nombre · marca CHINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-146', PROV_MAX, 85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-200k-8-x4-6mm',
+    nota: 'ABRAZADERA NYLON 0301CV-200K 8\'\'X4.6MM · artículo 0001007280 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-147', PROV_MAX, 1125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-15mts-t17751',
+    nota: 'CINTA P/ELECTRICISTA 15MTS T17751 · artículo 0001123475 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-148', PROV_MAX, 1140, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-goma-3m-scotch-no-23',
+    nota: 'TAPE GOMA 3M SCOTCH NO.23 · artículo 0001000086 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-148', PROV_MAX, 2115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-electrico-scotch-3m-no-27',
+    nota: 'TAPE ELECTRICO SCOTCH 3M NO.27 · artículo 0001000089 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-148', PROV_MAX, 435, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-vinyl-3m-super-33t',
+    nota: 'TAPE VINYL 3M SUPER 33T · artículo 0001000085 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-148', PROV_MAX, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-3m-temflex-1711-grd-negro',
+    nota: 'TAPE 3M TEMFLEX 1711 GRD NEGRO · artículo 0001004851 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-149', PROV_MAX, 1730, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-30mts-t17752',
+    nota: 'CINTA P/ELECTRICISTA 30MTS T17752 · artículo 0001123476 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-150', PROV_MAX, 180, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48006-10-blc-ed-3b-t48006',
+    nota: 'EXTEN VOLTECK 48006 10\' BLC ED-3B T48006 · artículo 0001110184 · ref. Longitud 10 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-151', PROV_MAX, 2335, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensi-elect-mamey-cent-100-16-exor100',
+    nota: 'EXTENSI ELECT MAMEY CENT 100\'-16 EXOR100 · artículo 0001120526 · ref. Longitud 100 pies · marca CENTURION. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-151', PROV_MAX, 1940, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-100-naranja-er-30x16',
+    nota: 'EXTENSION VOLTECK 100\' NARANJA ER-30X16 · artículo 0001110193 · ref. Longitud 100 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-151', PROV_MAX, 1355.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-electrica-naranja-100',
+    nota: 'EXTENSION ELECTRICA NARANJA 100\' · artículo 0001108212 · ref. Longitud 100 pies. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-152', PROV_MAX, 359.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-12-16awg-2c-972-90110924',
+    nota: 'EXTENSIONES 12 16AWG/2C 972-90110924 · artículo 0001125878 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-152', PROV_MAX, 210, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-12-centurion-exw12',
+    nota: 'EXTENSION ELECT 12\' CENTURION EXW12 · artículo 0001040209 · ref. Longitud 12 pies · marca CENTURION. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-153', PROV_MAX, 225, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48012-13-blc-ed-4b-t48012',
+    nota: 'EXTEN VOLTECK 48012 13\' BLC ED-4B T48012 · artículo 0001110185 · ref. Longitud 13 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-154', PROV_MAX, 300, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-centurion-exw15',
+    nota: 'EXTENSION ELECT 15\' CENTURION EXW15 · artículo 0001040210 · ref. Longitud 15 pies · marca CENTURION. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-154', PROV_MAX, 894.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-amarilla-st-33157',
+    nota: 'EXTENSION ELECT. 15\' AMARILLA ST 33157 · artículo 0001118244 · ref. Longitud 15 pies · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-154', PROV_MAX, 505, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-15-16awg-2c-972-90110927',
+    nota: 'EXTENSIONES 15 16AWG/2C 972-90110927 · artículo 0001125879 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-155', PROV_MAX, 270, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48018-16-blc-ed-5b-t48018',
+    nota: 'EXTEN VOLTECK 48018 16\' BLC ED-5B T48018 · artículo 0001110186 · ref. Longitud 16 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-156', PROV_MAX, 1700, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-25-amarilla-st-33257',
+    nota: 'EXTENSION ELECT. 25\' AMARILLA ST 33257 · artículo 0001118245 · ref. Longitud 25 pies · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-157', PROV_MAX, 520, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48030-26-blc-ed-8b-t48030',
+    nota: 'EXTEN VOLTECK 48030 26\' BLC ED-8B T48030 · artículo 0001110188 · ref. Longitud 26 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-158', PROV_MAX, 2989.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-50-amarilla-st-33507',
+    nota: 'EXTENSION ELECT. 50\' AMARILLA ST 33507 · artículo 0001118246 · ref. Longitud 50 pies · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-158', PROV_MAX, 1695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-3t-cent-awg14-50',
+    nota: 'EXTENSION ELECT. 3T. CENT AWG14-50\' · artículo 0001120523 · ref. Longitud 50 pies | Calibre AWG 14 · marca CENTURION. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-158', PROV_MAX, 725, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elec-50-naranja-gen-ec-4-50ft',
+    nota: 'EXTENSION ELEC 50\' NARANJA GEN EC-4-50FT · artículo 0001085105 · ref. Longitud 50 pies · marca YACO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-158', PROV_MAX, 965, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-50-naranja-er-15x16',
+    nota: 'EXTENSION VOLTECK 50\' NARANJA ER-15X16 · artículo 0001110192 · ref. Longitud 50 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-159', PROV_MAX, 310, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-6ft-3sal-blca-31061-2-34061',
+    nota: 'EXTENSION 6FT 3SAL BLCA 31061 · artículo 0001094694 · ref. Longitud 6 pies | 3 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-160', PROV_MAX, 145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48000-7-blc-ed-2b-t48000',
+    nota: 'EXTEN VOLTECK 48000 7\' BLC ED-2B T48000 · artículo 0001110182 · ref. Longitud 7 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-161', PROV_MAX, 737.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-3ft-6sal-15a-stanley-blca-30006',
+    nota: 'REGLETA 3FT 6SAL 15A STANLEY BLCA 30006 · artículo 0001118126 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-161', PROV_MAX, 1330, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-2un-bla-stanley-33211',
+    nota: 'REGLETA 6 SALIDAS 2UN BLA STANLEY 33211 · artículo 0001116443 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-161', PROV_MAX, 654.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-ngr-3-125v-15a-30007',
+    nota: 'REGLETA 6 SALIDAS NGR 3\'125V 15A 30007 · artículo 0001118238 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-162', PROV_MAX, 725, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-sali-suge-max-bl-245w-33213',
+    nota: 'REGLETA 6 SALI SUGE MAX BL 245W 33213 · artículo 0001118240 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-163', PROV_MAX, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-8sal-stanley-blanca-30012',
+    nota: 'REGLETA 8SAL STANLEY BLANCA 30012 · artículo 0001094734 · ref. 8 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-164', PROV_MAX, 599.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-movimiento-interup-pared-t47230',
+    nota: 'SENSOR MOVIMIENTO INTERUP PARED T47230 · artículo 0001126254 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-164', PROV_MAX, 500, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov180g-semo-180-voltech-t46594',
+    nota: 'SENSOR MOV180g SEMO-180 VOLTECH T46594 · artículo 0001121310 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-164', PROV_MAX, 780, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-interi-semo-in-voltech-t46599',
+    nota: 'SENSOR MOV/INTERI SEMO-IN VOLTECH T46599 · artículo 0001121309 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-164', PROV_MAX, 540, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-p-ext-semo-ex-voltech-t47231',
+    nota: 'SENSOR MOV P/EXT SEMO-EX VOLTECH T47231 · artículo 0001121300 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-165', PROV_MAX, 805, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timer-digital-8eve-tem-8-voltech-t48386',
+    nota: 'TIMER DIGITAL 8EVE TEM-8 VOLTECH T48386 · artículo 0001122434 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-veto-premium-bco-16290',
+    nota: 'PULSADOR TIMBRE VETO PREMIUM BCO 16290 · artículo 0001127222 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 414.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-veto-plura-bco-60866',
+    nota: 'TIMBRE VETO PLURA BCO 60866 · artículo 0001127211 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 100, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-sup-bco-20020',
+    nota: 'PULSADOR TIMBRE SUP. BCO 20020 · artículo 0001118633 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 894.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-ding-dong-bco-veto-89003',
+    nota: 'TIMBRE DING DONG BCO VETO 89003 · artículo 0001118640 · ref. Sin especificaciones parseables en el nombre · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 315, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-musical-domest-tim-voltech-t46605',
+    nota: 'TIMBRE MUSICAL DOMEST TIM VOLTECH T46605 · artículo 0001121308 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 380, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-4-voltech-t46607',
+    nota: 'TIMBRE INDUSTRIAL TIMC-4 VOLTECH T46607 · artículo 0001121307 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 740, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-6-voltech-t46609',
+    nota: 'TIMBRE INDUSTRIAL TIMC-6 VOLTECH T46609 · artículo 0001121306 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_MAX, 670, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-inala-timi-100-voltech-t46630',
+    nota: 'TIMBRE INALA TIMI-100 VOLTECH T46630 · artículo 0001121304 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-009', PROV_OCHOA, 331.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',

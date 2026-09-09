@@ -135,13 +135,13 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,461 ítems**. De ellos, **1,182 ya llevan un precio real** de un
-comercio que lo publica; 273 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,611 ítems**. De ellos, **1,335 ya llevan un precio real** de un
+comercio que lo publica; 270 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 1,182 ítems verificados hay **3,337 cotizaciones** de **cinco comercios**.
-83 ítems tienen precio de más de uno, 19 tienen tres y seis ya tienen cuatro — entre ellos
+Detrás de esos 1,335 ítems verificados hay **3,607 cotizaciones** de **cinco comercios**.
+84 ítems tienen precio de más de uno, 19 tienen tres y seis ya tienen cuatro — entre ellos
 la funda de cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
@@ -188,6 +188,7 @@ lo que hace que el inodoro de Ochoa y el de InnovaCentro caigan en la misma fila
 | `herramientas/especificacion-baldosas.js` | 22 familias de piso y revestimiento: baldosa de campo, mosaico, peldaños, perfiles de canto, crucetas y niveladores, adoquines, tejas, adhesivos y morteros, herramienta del instalador |
 | `herramientas/especificacion-plomeria.js` | 33 familias de plomería: tubo, conexiones, llaves de paso, desagüe, mangueras, sellado, gas, bombeo, calentadores, tanques y grifería |
 | `herramientas/especificacion-madera.js` | 2 familias: pieza de madera aserrada y panel |
+| `herramientas/especificacion-electricos.js` | 26 familias eléctricas: bombillos, paneles, salidas, breakers, canalización, extensiones y control |
 
 Cada familia declara su categoría, su unidad, los ejes de medida que la distinguen y cómo
 se arma el nombre. Las reglas de cada comercio no inventan nombres: leen el artículo,
@@ -303,7 +304,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,182 de 1,455 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,335 de 1,605 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -401,20 +402,21 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**3,337 cotizaciones reales cargadas · 1,182 ítems verificados de 1,455.**
+**3,607 cotizaciones reales cargadas · 1,335 ítems verificados de 1,605.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — diez extracciones completas: el catálogo de Ochoa en materiales de
+- **09/09/2026** — once extracciones completas: el catálogo de Ochoa en materiales de
   construcción (398 artículos, 349 con precio), baños (945 / 713), seguridad y tecnología
   (809 / 604) y baldosas (1,334 / 1,226); los departamentos de materiales (118 / 118)
   y de baño (520 / 520) de InnovaCentro; y las colecciones de plomería y baños (862 / 862)
-  y materiales (53 / 53) de Ferretería Cima; y las colecciones de maderas (45 / 45) y metales
-  (27 / 27) de Max Ferretería. De sus 3,404 artículos aprovechados salieron **1,145 ítems
-  nuevos que nacieron verificados** y **164 cotizaciones sobre ítems que ya existían**.
+  y materiales (53 / 53) de Ferretería Cima; y las colecciones de maderas (45 / 45), metales
+  (27 / 27) y eléctricos (468 / 468) de Max Ferretería. De sus 3,707 artículos aprovechados
+  salieron **1,295 ítems nuevos que nacieron verificados** y **201 cotizaciones sobre ítems
+  que ya existían**.
 
-Los 273 ítems restantes siguen siendo estimaciones nuestras.
+Los 270 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -495,6 +497,7 @@ Cada archivo responde una pregunta distinta:
 | `reglas-baldosas.js` | Ochoa · baldosas: qué es cada artículo una vez que se le quita la marca y el color, y cómo se pasa su precio a metro cuadrado |
 | `reglas-cima.js` | Cima: mapeo a mano en materiales, reglas en plomería, y qué es repuesto de consumidor |
 | `reglas-max.js` | Max Ferretería: mapeo a mano en cemento y adhesivos, reglas en tubo, madera, paneles y tinacos |
+| `reglas-max-electricos.js` | Max Ferretería · eléctricos: la colección más grande y la de nombres más abreviados |
 | `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
 | `especificacion-segtec.js` | Lo mismo para corrientes débiles |
 | `especificacion-baldosas.js` | Lo mismo para pisos, revestimientos y sus morteros |
@@ -546,7 +549,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **83 ítems con precio de más de un comercio**, 19 con tres y seis con cuatro. El
+Hoy hay **84 ítems con precio de más de un comercio**, 19 con tres y seis con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -727,6 +730,78 @@ Es exactamente para lo que existe este sitio.
 Una plancha de 3 x 6 pies no cubre 18 pie²: el traslape se come entre un 15% y un 20%.
 Quedó dicho en las claves de la página de techos, porque cubicar por el área nominal deja la
 obra corta y es un error que se comete solo.
+
+### Los eléctricos: cuando el eje se mide en vez de suponerse
+
+468 artículos, la colección más grande que ha entrado de un solo comercio y la de nombres
+más abreviados del catálogo: «INT SIMPLE BOTON A. C/LP BLANCO 36984». Entran 303 en 150
+ítems nuevos, más 37 cotizaciones sobre ítems que ya existían.
+
+#### Qué parte un bombillo: se midió, no se supuso
+
+Había que elegir los ejes de la clave y las dos candidatas eran obvias: la potencia y la
+temperatura de color. En vez de decidirlo por intuición se probaron las tres combinaciones
+sobre los 69 bombillos del catálogo:
+
+| Ejes | Ítems | Con rango > 3x |
+|---|---|---|
+| potencia sola | 26 | 7 |
+| potencia + temperatura de color | 45 | 4 |
+| **potencia + formato** | **47** | **0** |
+
+El **formato** —A60, ST19, G9, MR16— separa productos que cuestan muy distinto. La
+temperatura de color, que uno esperaría que pesara, no mueve el precio: el mismo bombillo
+sale en 30K y en 65K al mismo número. Así que el formato entra en la clave y la temperatura
+se registra como medida.
+
+Es la misma prueba que se hizo con las baldosas y con las rejillas de piso, y ya es la regla
+de la casa: **un eje entra en la clave cuando mueve el precio y el comercio lo declara**, y
+eso se comprueba contando, no opinando.
+
+#### Ejes opcionales: cuando no declararlo es también una especificación
+
+32 de los 69 bombillos no dicen su formato. No se pueden juntar con los que sí lo dicen —eso
+sería afirmar que son el mismo producto— así que «Bombillo LED de 15 W» y «Bombillo LED A60
+de 15 W» son dos ítems. El segundo dice más. Es la primera familia del catálogo con un eje
+**opcional**: entra en la clave cuando existe, y su ausencia no descarta el artículo.
+
+#### Lo que sí se pudo leer sin adivinar
+
+19 bombillos no declaran su tecnología, pero la potencia la delata: un bombillo decorativo
+de 25 W o más en formato G16, R20, torpedo o G40 **no existe en LED**. Es incandescente, y
+eso se puede leer de la ficha en vez de suponerlo. Los 4 que quedaron fuera son los que no
+tienen ni potencia ni formato que los ubique.
+
+#### La extensión eléctrica, y el calibre que nadie publica
+
+El hallazgo llegó con el archivo y el catálogo lo confirma con más evidencia. Puesto en una
+sola fila, `MAT-10-158` —extensión eléctrica de 50 pies— tiene cuatro precios:
+
+| | Precio |
+|---|---|
+| Genérica naranja | RD$ 725 |
+| Voltech (16 AWG) | RD$ 965 |
+| Centurion, **AWG 14** | RD$ 1,695 |
+| Stanley amarilla | RD$ 2,990 |
+
+**4.1 veces por el mismo largo.** Y ahí se ve por qué el calibre importa: la Centurion sí lo
+declara —14 AWG, más grueso que los 16 del Voltech— y eso explica una parte del salto. Lo
+que no explica es la Stanley, que está un 76% por encima de la de calibre 14 declarado y no
+publica el suyo.
+
+La ficha del ítem lo dice y la página de eléctricos lo dice en sus claves: **preguntar el
+AWG antes de comparar extensiones**. Sin ese dato, el ahorro que parece obvio puede ser un
+cable más fino.
+
+#### El hueco de las unidades, por tercera vez
+
+Es el tercer archivo de esta ferretería con el mismo problema, y ya no es un descuido
+puntual: la tienda deja vacío el campo de unidad de venta en toda su ficha. En cables y
+alambres eso es definitivo —RD$ 16 por un THHN No. 12 solo tiene sentido por pie, pero no lo
+dice— y los 27 artículos de esa familia quedan fuera.
+
+Con maderas, metales y eléctricos van **44 artículos de Max descartados por lo mismo**. Una
+sola pregunta al comercio los desbloquea todos.
 
 ### Nunca apuntes por código a un ítem generado
 
@@ -944,8 +1019,13 @@ tampoco se ignora — se registra la discrepancia a la vista y se espera al segu
 tienda dice 1x9. El artículo está fuera igual, porque tampoco declara la unidad de venta,
 pero si algún día entra hay que preguntar el calibre primero.
 
-**Los 17 artículos de metales sin unidad de venta.** Clavos, alambre de amarre y electrodos
-de Max Ferretería. Una pregunta al vendedor los desbloquea.
+**Los 44 artículos de Max sin unidad de venta.** 17 de metales —clavos, alambre de amarre y
+electrodos— y 27 de eléctricos —cables y alambres—. Una pregunta al vendedor los desbloquea
+todos.
+
+**El extractor de tornillos de Max.** «JUEG EXTRACTOR DE TORNILLOS TRUPER14512» tiene el
+enlace interno de una regleta USB: el nombre y el producto pueden no coincidir. Está fuera
+igual, por ser herramienta suelta.
 
 **La pintura de Ochoa está retenida.** «Pintura Acrílica Superior 5 GL» aparece a
 RD$ 983.41, unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y resulta
@@ -973,7 +1053,7 @@ sirven para extraer un catálogo sin pedir cotización. Cinco ya están cargadas
 | ✔ | Ferretería Ochoa (8A) | 2,288 |
 | ✔ | Ferretería Cima | 644 |
 | ✔ | InnovaCentro (La Innovación) | 351 |
-| ✔ | Max Ferretería | 49 |
+| ✔ | Max Ferretería | 352 |
 | ✔ | Ferremix (Grupo Alterra) | 2 |
 | | Plaza Lama, Ferretería Gigante, Würth Dominicana, Gerdau Metaldom, Cerarte, Cerámica Import, Procontratista, Segumart, SOS Protección Integral | — |
 

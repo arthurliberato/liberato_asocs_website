@@ -222,6 +222,7 @@ module.exports = {
     'A la instalación tradicional hay que sumarle hoy una partida que antes era opcional: el respaldo de energía. Inversores, baterías, plantas y paneles solares son parte normal del presupuesto residencial dominicano, y pueden pesar tanto como toda la instalación eléctrica básica.'
   ],
   claves: [
+    ['El calibre de la extensión no se publica', 'Casi ninguna ficha lo declara, y ahí está la diferencia: una extensión de 50 pies va de RD$ 725 a RD$ 2,990. Preguntar el AWG antes de comparar.'],
     ['El calibre no se improvisa', 'Cada circuito pide su calibre según la carga y la distancia. Bajar el calibre para ahorrar cable es un riesgo de incendio, no una economía.'],
     ['El cobre marca el precio', 'El cable es el material eléctrico más volátil. En obras largas conviene comprarlo por etapas y revisar precio.'],
     ['Cubicar por punto', 'Contar salidas es la forma práctica de estimar. Los tableros, breakers y el respaldo se presupuestan aparte.'],

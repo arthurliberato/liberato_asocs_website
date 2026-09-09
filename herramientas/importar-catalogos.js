@@ -980,6 +980,7 @@ const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
 const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
+const MAXELEC = require('./reglas-max-electricos.js');
 
 const FUENTES = [
   {
@@ -1085,6 +1086,17 @@ const FUENTES = [
     motivoDe: () => MAX.MOTIVO.valor || 'la ficha no declara la especificación',
     mapeo: MAX.MAPEO_METALES,
     regla: a => { const r = MAX.reglaMetales(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/max-electricos-2026-09-09.json'),
+    etiqueta: 'Max Ferretería · eléctricos',
+    proveedor: 'Max Ferretería',
+    constante: 'PROV_MAX',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => MAXELEC.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: {},
+    regla: a => { const r = MAXELEC.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
