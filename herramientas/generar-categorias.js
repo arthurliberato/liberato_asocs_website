@@ -189,10 +189,12 @@ const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 
 const AVISO = `<div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de arranque, no cotizaciones.</strong> Los montos publicados hoy son
-     estimaciones de referencia para el Gran Santo Domingo; ninguno proviene todavía de una
-     cotización formal. Sirven para dimensionar un presupuesto, no para cerrar una compra.
-     Cada ítem indica su estado y su fecha. <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
+     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
+     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
+     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
+     compra. Cada ítem indica su estado y su fecha.
+     <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>`;
 
 /* ---------- fila de la tabla ---------- */
@@ -210,35 +212,47 @@ function fila(it) {
   if (it.ref === null) {
     precio = '<span class="precio-nulo">Según tarifario</span>';
   } else if (pct) {
-    precio = `<span class="precio">${fmt(it.ref)} %</span>` +
-             `<span class="precio-rango">${fmt(it.min)} – ${fmt(it.max)} %</span>`;
+    /* Sin el rango debajo: el sitio muestra un precio de referencia y la
+       lista de cotizaciones reales. La mediana, el mínimo y el máximo son
+       herramientas de análisis y viven en el libro de Excel. */
+    precio = `<span class="precio">${fmt(it.ref)} %</span>`;
   } else {
-    precio = `<span class="precio">${rd(it.ref)}</span>` +
-             `<span class="precio-rango">${rd(it.min)} – ${rd(it.max)}</span>`;
+    precio = `<span class="precio">${rd(it.ref)}</span>`;
   }
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
 
-  const detalle = PRECIOS.detalleHTML(it, {
-    nombreCat: (c) => (catPorCodigo[c] ? catPorCodigo[c].nombre : c),
-    proveedoresCategoria: PROV.lista.filter((p) => p.cats.indexOf(it.cat) !== -1),
-  });
+  /* La ficha de precios por proveedor NO se escribe aquí. app.js la genera
+     al abrirla, siempre desde los datos, para que refleje el filtro de
+     proveedores y el interruptor de ITBIS del momento: lo que viniera
+     escrito en el HTML se sobrescribiría en el primer clic. Dejarlo fuera
+     bajó el peso de las 32 páginas de 3,167 KB a 1,665 KB. */
 
   return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
       (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
+      (it.alcance ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') +
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
-            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-min="${it.min === null ? '' : it.min}" data-precio-max="${it.max === null ? '' : it.max}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
+            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
             <td class="celda-estado">${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
             <td class="num acciones">` +
       `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
       (it.ref === null ? '' :
         `<button class="btn-add" type="button" data-add="${esc(it.codigo)}" data-nombre="${esc(it.nombre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`) + `</td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6">${detalle}</td></tr>`;
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>`;
 }
+
+/* Enlace al libro de Excel. Lo genera herramientas/generar-excel.py y va
+   commiteado en precios/descargas/, así que aquí es un enlace y ya: no hay
+   que armar el archivo en el navegador ni cargar una librería para eso. */
+const ENLACE_EXCEL =
+  '<a class="btn btn-ghost btn-mini" href="descargas/precios-construccion-rd.xlsx" download>' +
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px">' +
+  '<path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
+  ' Descargar en Excel</a>';
 
 /* ---------- bloques de la página ---------- */
 
@@ -359,7 +373,7 @@ function generarCategoria(cat) {
     : `<p class="section-sub" style="margin-top:1.2rem"><strong>${items.length} ítems</strong> en esta categoría, sin monto publicado porque se liquidan según tarifario oficial.</p>`;
 
   const cuerpo = `
-<section class="section" style="padding-bottom:1.5rem">
+<section class="section section-primera">
   <div class="shell">
     <nav class="miga" aria-label="Ruta de navegación">
       <a href="index.html">Precios de construcción</a> <span aria-hidden="true">›</span>
@@ -390,6 +404,7 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copiar tabla
       </button>
+      ${ENLACE_EXCEL}
     </div>
 
     <div class="tabla-wrap">
@@ -577,8 +592,11 @@ function parchearPortada() {
   const cifras = {
     'n-items': CAT.items.length,
     'n-cats': CAT.categorias.length,
-    'n-prov': PROV.lista.length,
-    'n-precios': PROV.lista.filter((p) => p.precios).length,
+    /* Sin el filtro, la portada anunciaba 87 proveedores contando los ocho
+       ficticios del modo demostración. Un número de portada no puede salir de
+       datos inventados, ni siquiera mientras la demo está encendida. */
+    'n-prov': PROV.lista.filter((p) => !p.demo).length,
+    'n-precios': PROV.lista.filter((p) => p.precios && !p.demo).length,
   };
   Object.keys(cifras).forEach((id) => {
     html = html.replace(

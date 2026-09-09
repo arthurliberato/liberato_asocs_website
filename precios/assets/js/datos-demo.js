@@ -127,8 +127,8 @@
   q('MAT-08-003', 'Distribuidora Ejemplo (demo)', 1350, {fecha: '2026-09-03'});
   q('MAT-08-003', 'Depósito Modelo (demo)', 1240, {fecha: '2026-09-06'});
 
-  q('MAT-09-001', 'Ferretería La Muestra (demo)', 1320, {fecha: '2026-09-05'});
-  q('MAT-09-001', 'Depósito Modelo (demo)', 1210, {fecha: '2026-09-04'});
+  q('MAT-32-001', 'Ferretería La Muestra (demo)', 1320, {fecha: '2026-09-05'});
+  q('MAT-32-001', 'Depósito Modelo (demo)', 1210, {fecha: '2026-09-04'});
 
   q('MAT-10-001', 'Depósito Modelo (demo)', 2380, {fecha: '2026-09-06'});
   q('MAT-10-001', 'Distribuidora Ejemplo (demo)', 2540, {fecha: '2026-09-02'});

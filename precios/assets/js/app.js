@@ -301,13 +301,34 @@
 
   (function avisoDemo() {
     if (!global_DEMO() || !document.body) return;
+
+    /* Se puede cerrar, pero solo por la sesión del navegador: al volver otro
+       día el aviso reaparece. Las etiquetas «Demostración» de cada ítem y la
+       nota morada dentro de cada ficha no se pueden ocultar. */
+    var LS_DEMO = 'ilya_precios_aviso_demo_cerrado';
+    try {
+      if (window.sessionStorage.getItem(LS_DEMO) === '1') return;
+    } catch (e) { /* modo privado: se muestra igual */ }
+
     var barra = document.createElement('div');
     barra.className = 'barra-demo';
     barra.setAttribute('role', 'status');
-    barra.innerHTML = '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
-      'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
-      'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
-      'cotizado todavía y ninguno de estos precios es una oferta.';
+    barra.innerHTML =
+      '<div class="barra-demo-texto">' +
+        '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
+        'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
+        'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
+        'cotizado todavía y ninguno de estos precios es una oferta.' +
+      '</div>' +
+      '<button class="barra-demo-cerrar" type="button" aria-label="Cerrar el aviso de demostración">' +
+        ICONO.equis +
+      '</button>';
+
+    barra.querySelector('.barra-demo-cerrar').addEventListener('click', function () {
+      barra.remove();
+      try { window.sessionStorage.setItem(LS_DEMO, '1'); } catch (e) { /* nada que guardar */ }
+    });
+
     document.body.insertBefore(barra, document.body.firstChild);
   })();
 
@@ -315,6 +336,105 @@
     return window.DEMO && window.DEMO.activo;
   }
 
+
+
+  /* =========================================================
+     FILA DE FILTROS EN UNA SOLA LÍNEA
+     Se muestran las etapas que caben y el resto pasa a un menú
+     desplegable, para que la barra no ocupe media pantalla.
+     ========================================================= */
+
+  function cerrarMenuChips() {
+    $$('.chip-menu').forEach(function (m) { m.hidden = true; });
+    $$('.chip-mas').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+  }
+
+  function compactarChips(cont) {
+    if (!cont) return;
+    var mas = $('.chip-mas', cont);
+    var menu = $('.chip-menu', cont);
+    if (!mas || !menu) return;
+
+    /* El menú es hijo del contenedor y sus opciones también son .chip, así
+       que solo cuentan los hijos directos de la fila. */
+    var chips = $$(':scope > .chip:not(.chip-mas)', cont);
+    if (!chips.length) return;
+
+    chips.forEach(function (c) { c.hidden = false; });
+    mas.hidden = false;
+    mas.textContent = '+0';
+
+    var base = cont.firstElementChild.offsetTop;
+    var ocultos = [];
+
+    /* Se ocultan desde el final hasta que el botón del menú vuelva a la
+       primera línea. El filtro activo nunca se oculta: si está aplicado,
+       tiene que verse. */
+    for (var i = chips.length - 1; i >= 0; i--) {
+      if (mas.offsetTop <= base + 2) break;
+      if (chips[i].getAttribute('aria-pressed') === 'true') continue;
+      chips[i].hidden = true;
+      ocultos.unshift(chips[i]);
+      mas.textContent = '+' + ocultos.length;
+    }
+
+    if (!ocultos.length) {
+      mas.hidden = true;
+      menu.hidden = true;
+      menu.innerHTML = '';
+      return;
+    }
+
+    mas.textContent = '+' + ocultos.length;
+    mas.setAttribute('aria-label', ocultos.length + ' etapas más');
+    mas.title = ocultos.map(function (c) { return c.textContent; }).join(' · ');
+    menu.innerHTML = ocultos.map(function (c) {
+      return '<button class="chip" type="button" data-etapa="' + esc(c.getAttribute('data-etapa')) +
+        '" aria-pressed="' + c.getAttribute('aria-pressed') + '">' + esc(c.textContent) + '</button>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function (e) {
+    var mas = e.target.closest('.chip-mas');
+    if (mas) {
+      var menu = $('.chip-menu', mas.parentNode);
+      var abierto = mas.getAttribute('aria-expanded') === 'true';
+      cerrarMenuChips();
+      if (!abierto && menu) {
+        menu.hidden = false;
+        mas.setAttribute('aria-expanded', 'true');
+      }
+      return;
+    }
+    if (!e.target.closest('.chip-menu')) cerrarMenuChips();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') cerrarMenuChips();
+  });
+
+  function recompactarTodo() {
+    $$('.filtros').forEach(function (f) {
+      if ($('.chip-mas', f)) compactarChips(f);
+    });
+  }
+
+  (function recompactar() {
+    var t;
+    window.addEventListener('resize', function () {
+      window.clearTimeout(t);
+      t = window.setTimeout(recompactarTodo, 150);
+    });
+
+    /* Las tipografías cargan de forma asíncrona y cambian el ancho de los
+       chips: hay que volver a medir cuando estén listas, o el cálculo se
+       hace sobre la fuente de reserva y sobran o faltan chips. */
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(recompactarTodo);
+    } else {
+      window.addEventListener('load', recompactarTodo);
+    }
+  })();
 
   /* =========================================================
      MIS PROVEEDORES
@@ -367,15 +487,12 @@
   function pintarCeldaPrecio(td, it) {
     var pct = it.unidad === '%';
     var p = precioVista(it.ref, it, estado.sinItbis);
-    var mn = precioVista(it.min, it, estado.sinItbis);
-    var mx = precioVista(it.max, it, estado.sinItbis);
     if (p === null) { td.innerHTML = '<span class="precio-nulo">Según tarifario</span>'; return; }
-    td.innerHTML = pct
-      ? '<span class="precio">' + fmt(p) + ' %</span><span class="precio-rango">' + fmt(mn) + ' – ' + fmt(mx) + ' %</span>'
-      : '<span class="precio">' + rd(p) + '</span><span class="precio-rango">' + rd(mn) + ' – ' + rd(mx) + '</span>';
+    /* Solo el precio de referencia. El rango y la mediana son análisis y
+       van en el libro de Excel, no en la tabla del sitio. */
+    td.innerHTML = pct ? '<span class="precio">' + fmt(p) + ' %</span>'
+                       : '<span class="precio">' + rd(p) + '</span>';
     td.setAttribute('data-precio-ref', it.ref === null ? '' : it.ref);
-    td.setAttribute('data-precio-min', it.min === null ? '' : it.min);
-    td.setAttribute('data-precio-max', it.max === null ? '' : it.max);
   }
 
   /* Vuelve a pintar precios, etiquetas y fichas abiertas desde el objeto del
@@ -843,23 +960,12 @@
       var ref = v('data-precio-ref');
 
       if (el.tagName === 'TD') {
-        var min = v('data-precio-min'), max = v('data-precio-max');
         el.innerHTML = pct
-          ? '<span class="precio">' + fmt(ref) + ' %</span><span class="precio-rango">' + fmt(min) + ' – ' + fmt(max) + ' %</span>'
-          : '<span class="precio">' + rd(ref) + '</span><span class="precio-rango">' + rd(min) + ' – ' + rd(max) + '</span>';
+          ? '<span class="precio">' + fmt(ref) + ' %</span>'
+          : '<span class="precio">' + rd(ref) + '</span>';
       } else {
         el.textContent = pct ? fmt(ref) + ' %' : rd(ref);
       }
-    });
-
-    $$('[data-precio-min]', raiz || document).forEach(function (el) {
-      if (el.tagName === 'TD') return;
-      var celda = el.previousElementSibling;
-      var traeItbis = celda && celda.getAttribute('data-precio-itbis') === '1';
-      var falso = {itbis: traeItbis};
-      var min = precioVista(parseFloat(el.getAttribute('data-precio-min')), falso, sinItbis);
-      var max = precioVista(parseFloat(el.getAttribute('data-precio-max')), falso, sinItbis);
-      el.textContent = rd(min) + ' – ' + rd(max);
     });
   }
 
@@ -1010,7 +1116,9 @@
       chipsEtapa.innerHTML = '<span class="chip-group-label">Etapa</span>' +
         CAT.etapas.map(function (e) {
           return '<button class="chip" type="button" data-etapa="' + esc(e.codigo) + '" aria-pressed="false">' + esc(e.nombre) + '</button>';
-        }).join('');
+        }).join('') +
+        '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-etapa-menu" hidden></button>' +
+        '<div class="chip-menu" id="chips-etapa-menu" hidden></div>';
     }
 
     /* --- chips de gama --- */
@@ -1033,7 +1141,7 @@
         if (estado.etapa && it.etapa !== estado.etapa) return false;
         if (estado.gama && it.gama !== estado.gama) return false;
         if (!q.length) return true;
-        var heno = normaliza([it.nombre, it.codigo, it.esp, it.unidad, nombreCat(it.cat)].join(' '));
+        var heno = normaliza([it.nombre, it.codigo, it.esp, it.alias, it.unidad, nombreCat(it.cat)].join(' '));
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
       });
     }
@@ -1086,25 +1194,22 @@
 
     function fila(it) {
       var p = precioVista(it.ref, it, estado.sinItbis);
-      var pmin = precioVista(it.min, it, estado.sinItbis);
-      var pmax = precioVista(it.max, it, estado.sinItbis);
       var esPorcentaje = it.unidad === '%';
 
       var precioHtml;
       if (p === null) {
         precioHtml = '<span class="precio-nulo">Según tarifario</span>';
       } else if (esPorcentaje) {
-        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>' +
-                     '<span class="precio-rango">' + fmt(pmin) + ' – ' + fmt(pmax) + ' %</span>';
+        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>';
       } else {
-        precioHtml = '<span class="precio">' + rd(p) + '</span>' +
-                     '<span class="precio-rango">' + rd(pmin) + ' – ' + rd(pmax) + '</span>';
+        precioHtml = '<span class="precio">' + rd(p) + '</span>';
       }
 
       return '<tr data-item="' + esc(it.codigo) + '">' +
           '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
                 ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
+              (it.alcance ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
               (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
           '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
               '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
@@ -1195,10 +1300,17 @@
         var esEtapa = chip.hasAttribute('data-etapa');
         var valor = chip.getAttribute(esEtapa ? 'data-etapa' : 'data-gama');
         var activo = chip.getAttribute('aria-pressed') === 'true';
-        $$('[' + (esEtapa ? 'data-etapa' : 'data-gama') + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-        chip.setAttribute('aria-pressed', String(!activo));
+        var attr = esEtapa ? 'data-etapa' : 'data-gama';
+        $$('[' + attr + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+        /* El mismo filtro puede estar en la fila y en el menú desplegable:
+           se marcan los dos, no solo el que se pulsó. */
+        if (!activo) {
+          $$('[' + attr + '="' + valor + '"]').forEach(function (c) { c.setAttribute('aria-pressed', 'true'); });
+        }
         if (esEtapa) estado.etapa = activo ? '' : valor;
         else estado.gama = activo ? '' : valor;
+        cerrarMenuChips();
+        compactarChips(chipsEtapa);
         pintar();
         return;
       }
@@ -1216,6 +1328,7 @@
 
     window.__pintarCatalogo = pintar;
     pintar();
+    compactarChips(chipsEtapa);
   })();
 
   /* =========================================================

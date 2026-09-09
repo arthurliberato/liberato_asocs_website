@@ -68,6 +68,9 @@ table{border-collapse:collapse;width:100%}
 /* ---------- layout ---------- */
 .shell{width:min(100% - 2.5rem, var(--shell));margin-inline:auto}
 .section{padding:clamp(3rem,6vw,5.5rem) 0;position:relative}
+/* La primera sección arranca más arriba: bajo la franja azul no hace falta
+   tanto aire, y en el catálogo aleja demasiado la tabla del encabezado. */
+.section-primera{padding-top:clamp(1.5rem,2.6vw,2.2rem);padding-bottom:1.5rem}
 .section-tint{background:var(--bg-tint)}
 .section-head{max-width:62ch;margin-bottom:clamp(1.8rem,4vw,3rem)}
 .section-title{font-size:clamp(1.7rem,3.2vw,2.6rem)}
@@ -259,6 +262,20 @@ table{border-collapse:collapse;width:100%}
 .chip:hover{border-color:var(--blue-200);color:var(--navy)}
 .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .chip-group-label{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin-right:.2rem}
+.chip[hidden]{display:none}
+
+/* Botón del resto de etapas y su menú desplegable. */
+.filtros{position:relative}
+.chip-mas{font-variant-numeric:tabular-nums;font-weight:600;color:var(--navy);border-color:var(--blue-200)}
+.chip-mas[aria-expanded="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip-menu{
+  position:absolute;top:calc(100% + .4rem);right:0;z-index:45;
+  display:flex;flex-wrap:wrap;gap:.5rem;
+  max-width:min(30rem,calc(100vw - 3rem));
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:.75rem;
+}
+.chip-menu[hidden]{display:none}
 
 .toggle-itbis{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--ink-soft);cursor:pointer;white-space:nowrap}
 .toggle-itbis input{width:16px;height:16px;accent-color:var(--navy)}
@@ -285,9 +302,15 @@ table{border-collapse:collapse;width:100%}
 .tabla td{padding:.8rem 1rem;vertical-align:top}
 .item-nombre{font-weight:500;color:var(--ink);display:block}
 .item-esp{display:block;font-size:.82rem;color:var(--ink-mute);margin-top:.15rem;max-width:46ch}
+/* Qué cubre el precio: sin esto dos cotizaciones del mismo ítem no se comparan. */
+.item-alcance{
+  display:inline-block;font-size:.78rem;color:var(--navy);margin-top:.25rem;
+  background:var(--blue-50);border:1px solid var(--blue-200);border-radius:var(--r-sm);
+  padding:.08rem .4rem;max-width:46ch;
+}
+.detalle-alcance{color:var(--navy);text-transform:none;letter-spacing:0;font-weight:500}
 .item-cod{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;color:var(--ink-mute);white-space:nowrap}
 .precio{font-family:Jost,sans-serif;font-weight:600;font-size:1.02rem;color:var(--navy);white-space:nowrap}
-.precio-rango{display:block;font-size:.79rem;color:var(--ink-mute);font-weight:400;margin-top:.1rem;white-space:nowrap}
 .precio-nulo{color:var(--ink-mute);font-style:italic;font-weight:400;font-size:.88rem}
 .unidad{color:var(--ink-soft);white-space:nowrap}
 
@@ -382,8 +405,24 @@ tr.cot-mia td{background:var(--blue-50)}
 
 /* ---------- aviso de modo demostración ---------- */
 .barra-demo{
+  position:relative;
   background:#6b21a8;color:#f6ecff;
-  padding:.7rem 1.25rem;font-size:.87rem;line-height:1.5;text-align:center;
+  padding:.7rem 3rem;font-size:.87rem;line-height:1.5;text-align:center;
+}
+.barra-demo-texto{max-width:100ch;margin-inline:auto}
+.barra-demo-cerrar{
+  position:absolute;top:50%;right:.8rem;transform:translateY(-50%);
+  width:30px;height:30px;padding:0;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:var(--r-sm);
+  color:#f6ecff;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:background .18s var(--ease),border-color .18s var(--ease);
+}
+.barra-demo-cerrar svg{width:15px;height:15px}
+.barra-demo-cerrar:hover{background:rgba(255,255,255,.26);border-color:rgba(255,255,255,.5)}
+@media (max-width:640px){
+  .barra-demo{padding:.7rem 2.6rem .7rem 1rem;font-size:.83rem}
+  .barra-demo-cerrar{top:.5rem;right:.5rem;transform:none}
 }
 .barra-demo strong,.barra-demo em{color:#fff}
 .barra-demo em{font-style:normal;background:rgba(255,255,255,.16);padding:.05rem .35rem;border-radius:3px}

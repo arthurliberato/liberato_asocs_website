@@ -156,6 +156,7 @@ module.exports = {
   ],
   claves: [
     ['Calibre y largo', 'Un calibre más grueso cuesta más y dura más. El largo a medida reduce traslapes: menos filtraciones y menos desperdicio.'],
+    ['La medida de la plancha es nominal', 'Una plancha de 3 x 6 pies no cubre 18 pie²: el traslape se come entre un 15% y un 20%. Cubicar por el área nominal deja el techo corto.'],
     ['El sistema completo', 'Presupuestar caballetes, caños, tornillos, sellador y aislamiento junto con las planchas. Solos, los metros de cubierta engañan.'],
     ['Impermeabilizar es por m²', 'Los mantos y las membranas se cotizan por rollo o cubeta, pero se presupuestan por m² de techo, contando solapes y subidas de pretil.'],
     ['Mantenimiento periódico', 'Una impermeabilización no es definitiva. Conviene planificar su revisión antes de que aparezca la filtración.']
@@ -173,8 +174,8 @@ module.exports = {
   desc: 'Precios de referencia por m² de cerámica, porcelanato, piedra natural, vinílico y topes de granito y cuarzo en República Dominicana.',
   h1: 'Precio de la cerámica, el porcelanato y los pisos en República Dominicana',
   intro: [
-    'Los revestimientos se cotizan por metro cuadrado o por caja, y la primera trampa está ahí: cada caja rinde una cantidad distinta de m² según el formato, así que un precio por caja no dice nada hasta que se convierte. La segunda es que el material es apenas una parte del costo: el pegamento correcto, la nivelación, el derretido y la mano de obra suelen sumar tanto como la pieza.',
-    'El rango de precios en esta categoría es el más amplio de todo el catálogo, porque conviven la cerámica nacional de tránsito medio y el porcelanato importado de gran formato. Comparar precios sin fijar formato, acabado y si es rectificado es comparar cosas distintas.'
+    'Los revestimientos se venden por pieza y se compran por metro cuadrado, y la primera trampa está ahí: cada formato rinde una cantidad distinta de piezas por m², así que un precio por pieza no dice nada hasta que se convierte. Aquí ya viene convertido: cada precio es por metro cuadrado, con las piezas por metro que declara el propio comercio. La segunda trampa es que el material es apenas una parte del costo: el pegamento correcto, la nivelación, el derretido y la mano de obra suelen sumar tanto como la pieza.',
+    'Cada fila es una especificación de compra —cerámica o porcelanato, de piso o de pared, y el formato—, no una marca ni un color. Un mismo renglón puede tener veinte diseños detrás y por eso el rango se abre: en 45 x 45 conviven la cerámica nacional básica y una importada que cuesta cuatro veces más. Ese ancho es el dato, no un error: dice cuánto se puede mover el presupuesto sin cambiar de especificación.'
   ],
   claves: [
     ['Convertir caja a metro cuadrado', 'Pedir siempre el rendimiento en m² por caja. Es el único modo de comparar dos precios.'],
@@ -221,6 +222,7 @@ module.exports = {
     'A la instalación tradicional hay que sumarle hoy una partida que antes era opcional: el respaldo de energía. Inversores, baterías, plantas y paneles solares son parte normal del presupuesto residencial dominicano, y pueden pesar tanto como toda la instalación eléctrica básica.'
   ],
   claves: [
+    ['El calibre de la extensión no se publica', 'Casi ninguna ficha lo declara, y ahí está la diferencia: una extensión de 50 pies va de RD$ 725 a RD$ 2,990. Preguntar el AWG antes de comparar.'],
     ['El calibre no se improvisa', 'Cada circuito pide su calibre según la carga y la distancia. Bajar el calibre para ahorrar cable es un riesgo de incendio, no una economía.'],
     ['El cobre marca el precio', 'El cable es el material eléctrico más volátil. En obras largas conviene comprarlo por etapas y revisar precio.'],
     ['Cubicar por punto', 'Contar salidas es la forma práctica de estimar. Los tableros, breakers y el respaldo se presupuestan aparte.'],
@@ -345,24 +347,112 @@ module.exports = {
 },
 
 'MAT-16': {
-  titulo: 'Precio de cámaras CCTV y sistemas especiales en RD',
-  desc: 'Precios de referencia de cámaras IP, NVR, cable UTP, detección de incendio, extintores y videoporteros en República Dominicana.',
-  h1: 'Precio de CCTV, redes y sistemas especiales en República Dominicana',
+  titulo: 'Precio de las cámaras de seguridad en RD',
+  desc: 'Precio de cámaras CCTV bullet, domo, turret y PTZ en República Dominicana, con grabadores, soportes, fuentes y discos de videovigilancia.',
+  h1: 'Precio de las cámaras de seguridad y videovigilancia en República Dominicana',
   intro: [
-    'CCTV, redes de datos, detección de incendio y control de acceso comparten una característica que cambia el presupuesto: el equipo es solo una parte. La canalización, el cableado, el almacenamiento, la energía de respaldo y la configuración pesan tanto o más, y son mucho más caros de resolver después de cerrar los muros.',
-    'La consecuencia práctica es que estos sistemas se deciden en la etapa de instalaciones, no al final de la obra. Dejar la canalización prevista cuesta poco durante la obra gris; abrirla después cuesta el acabado completo. En el mercado local hay distribuidores mayoristas con precios por volumen y kits armados, además de integradores que cotizan el sistema completo instalado.'
+    'La cámara es la parte visible y la más barata de un sistema de videovigilancia. Lo que decide el presupuesto es lo que va detrás: el grabador con la cantidad de canales correcta, el disco dimensionado para los días que se quieran conservar, la fuente de alimentación, el cableado y la canalización. Un sistema de ocho cámaras puede costar el doble que otro con las mismas ocho cámaras, solo por esas decisiones.',
+    'La forma de la cámara no es estética, es funcional. La bullet se ve y disuade, y va bien en perímetros. La domo pasa desapercibida y aguanta mejor el vandalismo, por eso domina en interiores comerciales. La turret combina las dos. La PTZ se mueve y hace zoom, cuesta varias veces más y solo se justifica cuando hay alguien mirando o un sistema que la dirija.'
   ],
   claves: [
-    ['Canalizar a tiempo', 'Prever tubería y cajas durante la obra gris. Es la decisión que más dinero ahorra en toda la categoría.'],
-    ['El equipo no es el sistema', 'Sumar cableado, almacenamiento, respaldo de energía, configuración y soporte.'],
-    ['Almacenamiento realista', 'Los días de grabación que se quieran conservar definen el disco. Es una decisión de costo, no un detalle técnico.'],
-    ['Incendio tiene requisitos', 'La detección y extinción se rigen por normativa y requieren aprobación del Cuerpo de Bomberos. No es un sistema que se improvise.']
+    ['Canalizar durante la obra gris', 'Dejar tubería y cajas previstas cuesta poco mientras hay pañete abierto. Hacerlo después cuesta el acabado completo.'],
+    ['El disco se calcula, no se adivina', 'Los días de grabación que se quieran conservar, por la resolución y la cantidad de cámaras, definen el disco. Pedirlo calculado en la cotización.'],
+    ['Disco de videovigilancia, no de escritorio', 'Un disco común no está hecho para escribir 24 horas al día. Los de vigilancia cuestan un poco más y duran años en lugar de meses.'],
+    ['PoE ahorra un cableado', 'Alimentar la cámara por el mismo cable de red evita tirar corriente hasta cada punto. Cambia el costo de instalación más que el de los equipos.']
   ],
   faq: [
-    ['¿Conviene un kit de cámaras o comprar los equipos por separado?',
-     'El kit resuelve rápido instalaciones pequeñas y sencillas. Cuando hay varias zonas, requisitos de resolución distintos o necesidad de crecer después, comprar por componentes permite dimensionar bien el grabador, el almacenamiento y la red.'],
+    ['¿Qué diferencia hay entre una cámara bullet, domo y turret?',
+     'La bullet es alargada y visible, ideal para perímetros y disuasión. La domo va dentro de una cúpula, es discreta y más resistente al vandalismo, por eso se usa en interiores comerciales. La turret es una esfera abierta que combina el alcance de la bullet con la discreción de la domo y evita los reflejos del domo en visión nocturna.'],
     ['¿Cuánto disco duro hace falta para un sistema de cámaras?',
-     'Depende de la cantidad de cámaras, la resolución, los cuadros por segundo, el tipo de compresión y los días de grabación que se quieran conservar. Es un cálculo que el proveedor debe entregar junto con la cotización.']
+     'Depende de la cantidad de cámaras, la resolución, los cuadros por segundo, la compresión y los días que se quieran conservar. Como orden de magnitud, ocho cámaras de 4 MP grabando continuo a 30 días piden varios terabytes. Es un cálculo que el proveedor debe entregar junto con la cotización, no una estimación de última hora.']
+  ]
+},
+
+'MAT-28': {
+  titulo: 'Precio de alarmas y control de acceso en RD',
+  desc: 'Precio de paneles de alarma, teclados, detectores de movimiento, lectores de proximidad, cerraduras y cerco eléctrico en República Dominicana.',
+  h1: 'Precio de las alarmas y el control de accesos en República Dominicana',
+  intro: [
+    'Alarma y control de acceso son dos sistemas que comparten cableado, canalización y, muchas veces, el mismo instalador. Se presupuestan por punto: cada puerta con lector, cada ventana con contacto magnético, cada zona con detector de movimiento. Contar los puntos antes de pedir precio es lo que evita que la cotización llegue con la mitad del alcance.',
+    'El panel es el corazón y define hasta dónde puede crecer el sistema. Un panel de ocho zonas no se amplía a treinta con un módulo: se cambia. Por eso conviene dimensionarlo por lo que el edificio va a necesitar en cinco años, no por lo que se instala el primer día, sobre todo en proyectos que se entregan por etapas.'
+  ],
+  claves: [
+    ['Se cotiza por punto', 'Cada puerta, ventana y zona es un punto con su detector, su cable y su canalización. El conteo va antes que el precio.'],
+    ['El panel define el techo del sistema', 'Cambiar de panel a mitad de camino significa rehacer la programación. Dimensionarlo por el crecimiento previsto.'],
+    ['Cableado o inalámbrico', 'El cableado es más confiable y no lleva baterías; el inalámbrico salva la obra terminada. En obra nueva casi siempre gana el cableado.'],
+    ['El cerco eléctrico tiene su propia partida', 'Electrificador, aisladores, alambre y señalización van aparte, y la señalización es obligatoria.']
+  ],
+  faq: [
+    ['¿Qué lleva un sistema de alarma completo?',
+     'Panel de control, teclado o aplicación para armarlo, detectores de movimiento por zona, contactos magnéticos en puertas y ventanas, sirena interior y exterior, fuente con batería de respaldo y comunicador para avisar afuera. La cantidad de cada cosa sale del conteo de puntos del proyecto.'],
+    ['¿Conviene control de acceso con huella o con tarjeta?',
+     'La tarjeta o el llavero de proximidad es más rápido, funciona con las manos sucias o con guantes y se reemplaza barato cuando se pierde. La huella no se presta ni se pierde, pero falla más en obra y con manos húmedas. En edificios de oficinas es común combinar los dos.']
+  ]
+},
+
+'MAT-29': {
+  titulo: 'Precio de la detección de incendios en RD',
+  desc: 'Precio de detectores de humo y calor, estaciones manuales, sirenas con estrobo, paneles de control y extintores en República Dominicana.',
+  h1: 'Precio de la detección y extinción de incendios en República Dominicana',
+  intro: [
+    'Es la única categoría de sistemas especiales que no es opcional. La detección de incendios se rige por normativa, la revisa el Cuerpo de Bomberos y su aprobación es condición para habilitar la edificación. Eso cambia la lógica del presupuesto: aquí no se elige entre poner o no poner, sino entre resolverlo a tiempo o resolverlo dos veces.',
+    'Hay dos familias de sistema y la diferencia se nota en la obra. El convencional agrupa los detectores por zonas y es más económico; el direccionable identifica cuál detector se activó, lo que en un edificio grande es la diferencia entre revisar un piso completo o ir directo al punto. La decisión se toma temprano porque cambia el cableado, no solo los equipos.'
+  ],
+  claves: [
+    ['Lo aprueba Bomberos', 'El sistema tiene que estar diseñado y aprobado, no improvisado. La no objeción del Cuerpo de Bomberos condiciona la habilitación de la obra.'],
+    ['Convencional o direccionable', 'La decisión cambia el cableado y el panel, no solo los detectores. Tomarla antes de canalizar.'],
+    ['La notificación cuenta tanto como la detección', 'Sirenas y estrobos son parte del sistema y del presupuesto. En áreas ruidosas el estrobo no es opcional.'],
+    ['Los extintores llevan mantenimiento', 'Además de la compra, hay recarga y revisión periódica. Es un costo recurrente que conviene dejar dicho desde el principio.']
+  ],
+  faq: [
+    ['¿Qué diferencia hay entre un sistema convencional y uno direccionable?',
+     'El convencional divide el edificio en zonas: el panel indica que hay una alarma en la zona 3, y hay que recorrerla para encontrar el punto. El direccionable identifica el detector exacto. El convencional cuesta menos y sirve en edificaciones pequeñas; el direccionable se impone a partir de cierto tamaño porque reduce el tiempo de respuesta.'],
+    ['¿Detector de humo o detector de calor?',
+     'El de humo detecta antes y es el estándar en pasillos, oficinas y habitaciones. El de calor se usa donde el humo o el vapor son normales —cocinas, calderas, parqueos— porque ahí el de humo daría falsas alarmas todo el día.']
+  ]
+},
+
+'MAT-30': {
+  titulo: 'Precio del cableado estructurado en RD',
+  desc: 'Precio de cable UTP y fibra óptica, jacks RJ45, patch panels, racks, placas de pared y cordones de parcheo en República Dominicana.',
+  h1: 'Precio del cableado estructurado y las redes en República Dominicana',
+  intro: [
+    'El cableado estructurado se presupuesta por punto de red, y cada punto es una suma de piezas pequeñas: el cable desde el rack hasta la salida, el jack, la placa de pared, la caja, el puerto del patch panel y el cordón de parcheo en cada extremo. El cable por rollo es la parte visible del costo; las piezas de terminación suelen sumar tanto como él.',
+    'La categoría del cable —Cat 5e, Cat 6, Cat 6A— hay que decidirla temprano, porque el cable queda dentro de la pared y cambiarlo después significa romper. Todo lo demás se puede sustituir. La regla práctica: el cable se elige por lo que el edificio va a necesitar dentro de diez años, no por lo que se conecta el primer día.'
+  ],
+  claves: [
+    ['Se cotiza por punto, no por metro', 'Cable, jack, placa, caja, puerto de patch panel y dos cordones. Presupuestar solo el rollo deja fuera la mitad.'],
+    ['El cable es lo único que no se cambia', 'Queda dentro de la pared. Elegir la categoría por el horizonte del edificio, no por el uso del primer día.'],
+    ['Cobre o fibra', 'El cobre resuelve la distribución dentro del piso. La fibra es para enlaces entre edificios o tramos largos, donde el cobre no llega.'],
+    ['El rack ordena o arruina', 'Patch panels, organizadores y bandejas cuestan poco y son la diferencia entre un rack que se puede mantener y uno que no.']
+  ],
+  faq: [
+    ['¿Qué lleva un punto de red completo?',
+     'El tramo de cable desde el rack hasta la salida, el jack RJ45, la placa de pared con su caja, un puerto en el patch panel y un cordón de parcheo en cada extremo. Al presupuestar hay que contar las seis cosas: el rollo de cable solo es una parte.'],
+    ['¿Cat 6 o Cat 6A?',
+     'Cat 6 resuelve con holgura las necesidades de oficina y vivienda de hoy. Cat 6A es blindado, soporta 10 Gbps en tramos completos y cuesta bastante más, en cable y en piezas de terminación. Como el cable queda enterrado en la pared, la pregunta correcta es qué va a necesitar el edificio en diez años.']
+  ]
+},
+
+'MAT-31': {
+  titulo: 'Precio de domótica e intercomunicadores en RD',
+  desc: 'Precio de interruptores inteligentes, sensores, hubs, videoporteros e intercomunicadores para apartamentos en República Dominicana.',
+  h1: 'Precio de la domótica y los intercomunicadores en República Dominicana',
+  intro: [
+    'La domótica dejó de ser un lujo y pasó a ser una decisión de instalación eléctrica. El interruptor inteligente que va en la pared necesita neutro en la caja, y esa es la diferencia entre poder instalarlo o no: en la vivienda dominicana tradicional el neutro no llega al interruptor. Definirlo con el electricista antes de cablear cuesta cero; descubrirlo después obliga a soluciones de compromiso.',
+    'El intercomunicador es la otra mitad de esta categoría y se presupuesta por apartamento. Un edificio de ocho unidades necesita ocho estaciones interiores, la placa de calle, la fuente y el cableado vertical. Los kits vienen armados por cantidad de apartamentos, y ahí la elección importante es audio o audio y video, porque cambia el cable que hay que dejar en el ducto.'
+  ],
+  claves: [
+    ['El interruptor inteligente pide neutro', 'Hay que preverlo en la caja antes de cerrar la pared. Es la restricción que más veces frustra una instalación de domótica.'],
+    ['El intercom se cuenta por apartamento', 'Estación interior por unidad, más la placa de calle, la fuente y el vertical. Los kits ya vienen por cantidad de apartamentos.'],
+    ['Audio o audio y video', 'La decisión cambia el cableado del ducto, no solo el equipo. Tomarla antes de tirar el vertical.'],
+    ['Cableado o inalámbrico', 'Lo inalámbrico salva una obra terminada, pero depende de baterías y de la cobertura wifi. En obra nueva el cableado sigue ganando.']
+  ],
+  faq: [
+    ['¿Por qué un interruptor inteligente necesita neutro?',
+     'Porque necesita alimentarse todo el tiempo, incluso con la luz apagada, para mantener su radio encendida. En la instalación dominicana tradicional al interruptor solo llega la línea viva, así que hay que prever el neutro en la caja durante el cableado. Hay modelos que funcionan sin neutro, pero son más limitados y a veces hacen parpadear los bombillos LED.'],
+    ['¿Cómo se presupuesta un intercomunicador para un edificio?',
+     'Por cantidad de apartamentos: una estación interior por unidad, más la placa de calle, la fuente de alimentación y el cableado vertical por el ducto. Los kits del mercado vienen armados para 4, 6 u 8 apartamentos; por encima de eso se arma por componentes.']
   ]
 },
 
@@ -407,6 +497,229 @@ module.exports = {
      'La natural tiene menor costo inicial pero exige riego, corte y abono de forma permanente. La artificial cuesta bastante más al instalarse y prácticamente no requiere mantenimiento, lo que la hace atractiva en áreas pequeñas, patios de servicio y zonas de difícil riego.'],
     ['¿Cuándo conviene sembrar grama?',
      'Lo más práctico es sembrar antes o durante la temporada de lluvias, para reducir el riego de establecimiento. Si se siembra en seco, hay que garantizar riego constante durante las primeras semanas o el material se pierde.']
+  ]
+},
+
+'MAT-19': {
+  titulo: 'Precio de perfiles y tubos de acero en RD',
+  desc: 'Precio por medida de la perfilería cuadrada y rectangular, negra y galvanizada, la tubería negra y las correas tipo Z, en tramos de 20 pies.',
+  h1: 'Precio de los perfiles y tubos de acero en República Dominicana',
+  intro: [
+    'La perfilería es el material de la herrería y de la estructura liviana: portones, rejas, marquesinas, naves, entrepisos metálicos y todo el techo de lámina. Se vende en tramos de 20 pies, que es la unidad completa que factura el suplidor, y el precio cambia con tres cosas al mismo tiempo: la medida de la sección, el espesor de la pared y el acabado.',
+    'Ese tercer dato es el que más se pierde al pedir precio por teléfono. Un perfil cuadrado de 1½ x 1½ pulgadas con pared de 1.2 mm y uno de la misma medida con pared de 1.6 mm son dos productos distintos, con dos precios distintos y dos capacidades distintas. Por eso en esta página cada fila trae la pared en milímetros: sin ella, comparar dos cotizaciones es comparar nombres, no materiales.'
+  ],
+  claves: [
+    ['La pared es la mitad del precio', 'A igual medida, subir de 1.2 a 1.6 mm de pared encarece el perfil de forma notable. Pedir siempre la pared en milímetros, no solo «tubo cuadrado de 2 pulgadas».'],
+    ['Negro o galvanizado', 'El galvanizado cuesta más y se justifica en exteriores y zonas costeras. En interiores protegidos, el negro pintado suele ser la decisión correcta.'],
+    ['La unidad son 20 pies', 'El suplidor factura el tramo completo. Comprar cortado casi siempre sale más caro por pie y, en muchas casas, no admite devolución.'],
+    ['El acero se paga al peso', 'Aunque el mostrador cotice por unidad, detrás hay un precio por libra bastante estable dentro de cada familia. Es la mejor forma de detectar una cotización fuera de mercado.']
+  ],
+  faq: [
+    ['¿Qué diferencia hay entre un perfil cuadrado y un tubo negro redondo?',
+     'La sección y el uso. El perfil cuadrado o rectangular es más fácil de unir a escuadra y domina en herrería y estructura liviana. El tubo redondo se usa en columnas, postes y estructuras donde importa el comportamiento a torsión. A igual peso, el precio por libra es parecido.'],
+    ['¿Por qué me cotizan el perfil por pie si la unidad son 20 pies?',
+     'Algunas casas manejan el precio por pie en el sistema, pero facturan la unidad completa de 20 pies. Al comparar precios hay que llevar los dos a la misma base: un precio por pie multiplicado por veinte, o el tramo completo. Si no, la diferencia parece enorme y no lo es.']
+  ]
+},
+
+'MAT-20': {
+  titulo: 'Precio de angulares y planchuelas de hierro en RD',
+  desc: 'Precio por medida de angulares, planchuelas y barras lisas de hierro negro en República Dominicana, en barras de 20 pies y con su peso.',
+  h1: 'Precio de angulares, planchuelas y barras de hierro en República Dominicana',
+  intro: [
+    'Es el acero comercial de toda la vida: el angular en L, la planchuela plana —la pletina— y la barra lisa, cuadrada o redonda. Se usa en marcos de puertas y ventanas, rejas, escaleras, refuerzos, bases de equipos y en cualquier detalle que un herrero resuelva soldando. Todo se vende en barras de 20 pies.',
+    'La medida es el precio. Un angular de 1 x 1/8 de pulgada y uno de 2 x 1/4 no se parecen en nada: el segundo pesa cuatro veces más y cuesta cuatro veces más. Por eso el listado de abajo va abierto por medida exacta, y no como un renglón genérico de «angular»: en un presupuesto, esa fila genérica es la que después no cuadra.'
+  ],
+  claves: [
+    ['Se paga por libra', 'Dentro de cada familia el precio por libra es casi constante. Un angular que se aparte mucho de ese valor por libra es una cotización que hay que revisar antes de aceptar.'],
+    ['La medida completa lleva dos números', 'El ala y el espesor. «Angular de 1 pulgada» no dice nada: hay de 1 x 1/8, 1 x 3/16 y 1 x 1/4, con precios muy distintos.'],
+    ['Planchuela no es lo mismo que fleje', 'La planchuela de hierro negro va estructural y soldada. El fleje delgado de ferretería es otro producto y no sustituye a la pletina en un marco cargado.'],
+    ['La barra lisa no es varilla', 'La barra redonda lisa no tiene corrugas y no trabaja como refuerzo de hormigón. Para acero de refuerzo, la varilla corrugada grado 60 es lo que corresponde.']
+  ],
+  faq: [
+    ['¿Cuánto pesa un angular de hierro negro?',
+     'Depende de la medida: uno de 1 x 1/8 de pulgada pesa alrededor de 16 libras la barra de 20 pies, y uno de 4 x 1/2 pasa de las 250. El peso es el mejor dato para verificar una cotización, porque el mercado del acero comercial se mueve con un precio por libra bastante parejo.'],
+    ['¿Puedo usar barra redonda lisa en lugar de varilla corrugada?',
+     'No para acero de refuerzo. La corruga es la que genera la adherencia con el hormigón y está normada. La barra lisa se usa en herrería, pasadores, ejes y elementos decorativos.']
+  ]
+},
+
+'MAT-21': {
+  titulo: 'Precio de tolas y láminas de acero en RD',
+  desc: 'Precio por espesor de las tolas negras, corrugadas antideslizantes y galvanizadas en República Dominicana, en planchas de 4 x 8 y 4 x 10 pies.',
+  h1: 'Precio de las tolas y láminas de acero en República Dominicana',
+  intro: [
+    'La tola es la plancha de acero, y en obra aparece en más sitios de los que uno espera: tapas de registro, rampas, bases de máquina, refuerzos, tanques, escalones antideslizantes y todo tipo de trabajo de calderería. Se identifica por dos datos, el espesor y la medida de la plancha, y se vende por plancha completa.',
+    'Hay tres familias que no se sustituyen entre sí. La tola negra es acero laminado sin recubrimiento, la más común y la más barata por libra. La corrugada trae relieve antideslizante y va en pisos y rampas de tránsito. La galvanizada trae recubrimiento de zinc y es la que aguanta intemperie. Al pedir precio conviene decir cuál de las tres, porque la diferencia es grande.'
+  ],
+  claves: [
+    ['Espesor y medida de plancha', 'Los dos datos juntos. Una tola de 1/8 en 4 x 8 pies y la misma de 1/8 en 5 x 10 son planchas distintas y precios distintos.'],
+    ['El peso verifica el precio', 'La plancha se paga al peso. Conocer las libras de la plancha permite comprobar si una cotización está dentro de mercado.'],
+    ['Corte y desperdicio', 'Casi nunca se usa la plancha entera. Al presupuestar hay que contar el desperdicio del despiece y, si aplica, el costo de corte del suplidor.'],
+    ['Galvanizada para intemperie', 'La tola negra a la intemperie se oxida rápido en clima costero. Si va a quedar expuesta, la galvanizada o un sistema de pintura completo dejan de ser opcionales.']
+  ],
+  faq: [
+    ['¿Cuál es la diferencia entre tola negra, corrugada y galvanizada?',
+     'La negra es acero laminado sin recubrimiento, de uso general. La corrugada trae un relieve en relieve para dar agarre y va en pisos, rampas y escalones. La galvanizada lleva recubrimiento de zinc y resiste la intemperie. Se piden por espesor y por medida de plancha.'],
+    ['¿En qué medidas viene la plancha?',
+     'Las más comunes en el mercado dominicano son 4 x 8 pies, 4 x 10 y 5 x 10, con espesores desde 1/32 hasta 1 pulgada. No todas las combinaciones están disponibles en todo momento: conviene confirmar existencia antes de cerrar un despiece.']
+  ]
+},
+
+'MAT-22': {
+  titulo: 'Precio de la malla ciclónica en República Dominicana',
+  desc: 'Precio del rollo de malla ciclónica por calibre y altura, más alambre de púas, telas metálicas y los herrajes de la verja, en RD.',
+  h1: 'Precio de la malla ciclónica y el cerramiento perimetral en República Dominicana',
+  intro: [
+    'Cerrar un solar es de las primeras partidas de cualquier obra y una de las más fáciles de cotizar mal, porque casi nadie pide la malla completa. Una verja no es solo el rollo: son los postes, las abrazaderas, los brazos, las copas terminales y tensoras, el alambre de púas de remate y la mano de obra. Pedir precio de «malla ciclónica» a secas deja fuera la mitad del costo.',
+    'El rollo se define por dos datos: el calibre del alambre y la altura. Un rollo calibre 9 de 6 pies y uno calibre 11 de 3 pies son productos distintos, y entre el más caro y el más barato del listado hay más del doble de diferencia. El calibre 9 es más grueso y va en cerramiento definitivo; el 11 se usa en cercas provisionales de obra y divisiones internas.'
+  ],
+  claves: [
+    ['Calibre y altura, siempre juntos', 'Los dos datos determinan el precio. El calibre 9 es el de cerramiento permanente; el 11 aguanta menos y se usa en cercas de obra.'],
+    ['La verja no es solo la malla', 'Postes, abrazaderas, brazos, copas y tensores pueden acercarse al costo del rollo. Conviene cotizarlos en la misma partida para no descubrirlos después.'],
+    ['Revestida en PVC para la costa', 'La malla galvanizada con revestimiento plástico cuesta más pero dura mucho más en ambiente salino. En primera línea de costa deja de ser un lujo.'],
+    ['La tela metálica es otra cosa', 'La tela de cuadrito y la de gallinero se venden por yarda y se piden por calibre y retícula. No sustituyen a la ciclónica en cerramiento perimetral.']
+  ],
+  faq: [
+    ['¿Cuánto mide un rollo de malla ciclónica?',
+     'En el mercado dominicano el rollo estándar trae 50 pies de largo, y la altura va de 3 a 8 pies según el uso. La altura es la que se pide primero, porque define cuántos rollos hacen falta para el perímetro y qué largo deben tener los postes.'],
+    ['¿Qué diferencia hay entre calibre 9 y calibre 11?',
+     'El número indica el grosor del alambre y va al revés: mientras más bajo el calibre, más grueso el alambre. El 9 es más resistente y es el que se usa en cerramiento definitivo; el 11 es más liviano y económico, y se reserva para cercas provisionales de obra o divisiones internas.']
+  ]
+},
+
+'MAT-23': {
+  titulo: 'Precio de los perfiles de aluminio en RD',
+  desc: 'Precio por medida de angulares, planchuelas, tubos y molduras de aluminio en República Dominicana, en tramos de 19.20 pies.',
+  h1: 'Precio de los perfiles de aluminio en República Dominicana',
+  intro: [
+    'El aluminio comercial se vende en tramos de 19.20 pies —unos 5.85 metros— y esa es la unidad que se factura. Aparece en marcos de ventana y screen, divisiones, remates, plafones, muebles y todo el trabajo de terminación donde el hierro se oxidaría o pesaría de más.',
+    'Es un rubro donde el catálogo del suplidor manda: buena parte de los perfiles se identifican por código de extrusora, no por medida, y dos piezas con el mismo nombre pueden ser dos secciones distintas. En esta página solo entran las medidas que el comercio declara de forma inequívoca; para las que van por código hay que pedir la muestra o el número de pieza.'
+  ],
+  claves: [
+    ['El tramo son 19.20 pies', 'No 20. Al cubicar un marco o una división hay que contar con esa medida, que es la que sale de la extrusora y la que factura el suplidor.'],
+    ['El espesor no siempre se declara', 'Dos angulares de la misma medida pueden tener paredes distintas. Si la pieza va a cargar, hay que confirmar el espesor antes de cerrar el precio.'],
+    ['Natural o anodizado', 'El aluminio natural es el más barato; anodizado o pintado cuesta más y aguanta mejor la intemperie y el ambiente salino.'],
+    ['Se pide por número de pieza', 'En perfilería de ventanería el mercado trabaja con códigos de extrusora. Guardar el número de la pieza usada ahorra tiempo en la próxima compra.']
+  ],
+  faq: [
+    ['¿Por qué el aluminio viene en 19.20 pies y no en 20?',
+     'Es la longitud estándar de salida de las extrusoras que abastecen el mercado local, equivalente a 5.85 metros. Conviene tenerlo presente al cubicar: un cálculo hecho con tramos de 20 pies se queda corto.'],
+    ['¿El aluminio sirve para elementos estructurales?',
+     'Para estructura de obra, no. El aluminio comercial de esta página va en ventanería, divisiones, remates y muebles. Los elementos que cargan se resuelven con acero, que es lo que está en las páginas de perfiles, angulares y tolas.']
+  ]
+},
+
+'MAT-24': {
+  titulo: 'Precio de los inodoros en República Dominicana',
+  desc: 'Precio de inodoros de una y dos piezas, tanques, basinetas y urinarios en RD, con marca y modelo, para presupuestar el equipamiento de baños.',
+  h1: 'Precio de los inodoros y urinarios en República Dominicana',
+  intro: [
+    'El inodoro es la partida que más se repite en un proyecto residencial y la que más se subestima al presupuestar, porque el rango es enorme: entre el modelo más económico y uno de gama alta hay cinco o seis veces de diferencia. Multiplicado por la cantidad de baños de un edificio, esa decisión mueve el presupuesto más que muchas partidas de obra gris.',
+    'Hay una trampa que conviene conocer: el inodoro de dos piezas casi nunca se vende completo. El comercio factura el tanque por un lado y la basineta por otro, con precios separados. Quien cotiza mirando solo el tanque se queda corto por más de la mitad. En el listado de abajo las dos piezas aparecen por separado, tal como se compran, y cada una dice qué es.'
+  ],
+  claves: [
+    ['Tanque y basineta se suman', 'El inodoro de dos piezas son dos partidas. Verificar siempre que la cotización incluya ambas, y del mismo modelo y color.'],
+    ['Una pieza o dos piezas', 'El de una pieza cuesta más pero se instala más rápido y se limpia mejor. El de dos piezas domina en vivienda económica y en obra de volumen.'],
+    ['El asiento no siempre viene incluido', 'Algunos modelos lo traen y otros no. Revisar la ficha antes de cerrar el precio, porque el asiento se cotiza aparte.'],
+    ['Redondo o elongado', 'El elongado es más cómodo y ocupa unos centímetros más. En baños pequeños el redondo puede ser la única opción que entra.']
+  ],
+  faq: [
+    ['¿Por qué el tanque y la basineta tienen precios separados?',
+     'Porque el comercio los vende como piezas independientes: cada una tiene su propio código y su propio precio. Un inodoro de dos piezas completo es la suma de las dos, del mismo modelo y color. Al presupuestar hay que contar las dos líneas.'],
+    ['¿Qué diferencia hay entre un inodoro de una pieza y uno de dos?',
+     'El de una pieza viene fundido en un solo cuerpo de cerámica: cuesta más, se instala más rápido y no tiene la junta entre tanque y taza, que es donde se acumula la suciedad. El de dos piezas es más económico y es el que domina en vivienda de volumen.']
+  ]
+},
+
+'MAT-25': {
+  titulo: 'Precio de los lavamanos en República Dominicana',
+  desc: 'Precio de lavamanos de pedestal, de sobreponer y de empotrar en RD, con marca y modelo, más pedestales y palometas de soporte.',
+  h1: 'Precio de los lavamanos y pedestales en República Dominicana',
+  intro: [
+    'El lavamanos se decide por cómo se monta, y esa decisión arrastra el resto del baño. El de pedestal esconde la tubería y no necesita mueble. El de sobreponer va encima de una cubierta o de un mueble y suele ser el de mayor efecto visual. El de empotrar se instala dentro de la cubierta y pide un tope de granito, mármol o porcelanato que hay que presupuestar aparte.',
+    'Igual que con el inodoro, hay piezas que se venden por separado. El pedestal tiene su propio código y su propio precio: un lavamanos de pedestal son dos partidas. Y el de sobreponer sobre pared necesita palometas, que son los soportes metálicos que lo sostienen. Ninguna de las dos cosas viene incluida.'
+  ],
+  claves: [
+    ['El pedestal se cotiza aparte', 'Lavamanos y pedestal son dos códigos distintos. Contar las dos líneas o el presupuesto queda corto.'],
+    ['El de empotrar arrastra la cubierta', 'Si el lavamanos va dentro de un tope, ese tope —granito, mármol, porcelanato— es una partida adicional y suele costar más que el aparato.'],
+    ['Uno, dos o tres agujeros', 'El número de perforaciones define qué grifería entra. Un lavamanos de un agujero no admite una mezcladora de tres piezas.'],
+    ['Con o sin rebosadero', 'El rebosadero cambia el desagüe que hay que comprar. Es un detalle chico que detiene una instalación.']
+  ],
+  faq: [
+    ['¿El precio del lavamanos incluye el pedestal?',
+     'No. En el catálogo del comercio son dos artículos con precios distintos, y así aparecen aquí. Un lavamanos de pedestal completo es la suma de los dos, del mismo modelo y color.'],
+    ['¿Qué es una palometa y cuándo hace falta?',
+     'Es el soporte metálico que se ancla a la pared para sostener un lavamanos que no lleva pedestal ni mueble. Va oculta bajo el aparato y se cotiza por unidad, generalmente en par.']
+  ]
+},
+
+'MAT-26': {
+  titulo: 'Precio de muebles y espejos de baño en RD',
+  desc: 'Precio de muebles de baño con lavamanos, botiquines, espejos y cabinas de ducha en República Dominicana, con marca y modelo.',
+  h1: 'Precio de los muebles, espejos y botiquines de baño en República Dominicana',
+  intro: [
+    'Es la partida de terminación del baño y la más visible para el cliente final. El mueble con lavamanos resuelve almacenamiento y desagüe en una sola compra, y por eso ha ido desplazando al lavamanos de pedestal en vivienda de gama media y alta. El botiquín y el espejo completan el conjunto sobre el lavamanos.',
+    'A la hora de presupuestar hay dos cosas que conviene fijar temprano: si el mueble viene con el lavamanos incluido o hay que comprarlo aparte, y si el espejo lleva luz. Los espejos y botiquines con LED necesitan una salida eléctrica prevista en la pared, y eso hay que decidirlo antes de que el electricista cierre el pañete, no después.'
+  ],
+  claves: [
+    ['¿Trae lavamanos el mueble?', 'Algunos modelos vienen con la cubierta y el lavamanos incluidos y otros no. Es la diferencia más común entre dos cotizaciones que parecen iguales.'],
+    ['El espejo con luz pide instalación eléctrica', 'Un botiquín o espejo LED necesita punto eléctrico previsto. Definirlo antes de cerrar el pañete evita romper pared después.'],
+    ['Suspendido o de piso', 'El mueble suspendido despeja el piso y facilita la limpieza, pero exige un anclaje firme y define la altura del desagüe.'],
+    ['La cabina cambia la albañilería', 'Una cabina prefabricada tiene medidas fijas. Si se decide después de levantar los muros, casi nunca calza.']
+  ],
+  faq: [
+    ['¿El mueble de baño incluye el lavamanos?',
+     'Depende del modelo: unos vienen con la cubierta y el lavamanos y otros se venden solo como mueble. Es lo primero que hay que confirmar al comparar dos precios, porque explica buena parte de la diferencia.'],
+    ['¿Qué hay que prever para un espejo o botiquín con luz LED?',
+     'Un punto eléctrico en la pared, a la altura del espejo, y protección del circuito del baño. Conviene definirlo en la etapa de instalaciones: dejarlo para el final significa romper pañete y cerámica ya terminados.']
+  ]
+},
+
+'MAT-27': {
+  titulo: 'Precio de los accesorios de baño en RD',
+  desc: 'Precio de juegos de accesorios de baño, toalleros, portapapel, barras de seguridad y secadores de manos en República Dominicana.',
+  h1: 'Precio de los accesorios de baño en República Dominicana',
+  intro: [
+    'Es la última partida del baño y la que más veces se olvida en el presupuesto original. Individualmente cada pieza cuesta poco; multiplicada por la cantidad de baños de un proyecto, el juego de accesorios se convierte en una cifra que conviene tener desde el principio y no descubrir al final.',
+    'Se compra de dos formas y no dan lo mismo. El juego completo —toallero, portapapel, jabonera y portacepillos de la misma línea— sale más económico y garantiza que todo combine. Las piezas sueltas tienen sentido cuando hay que igualar una línea existente o cuando el proyecto pide algo específico, como las barras de seguridad de un baño accesible.'
+  ],
+  claves: [
+    ['El juego sale mejor que las piezas sueltas', 'Comprar el kit de la misma línea cuesta menos y evita que el acabado de una pieza no combine con el resto.'],
+    ['Las barras de seguridad no son un accesorio más', 'En baños accesibles y en proyectos hoteleros y de salud son obligatorias, y su anclaje tiene que resolverse en el muro, no en la cerámica.'],
+    ['El acabado tiene que aguantar el ambiente', 'En zona costera el cromo económico se pica. Acero inoxidable o latón con buen acabado cuestan más y duran.'],
+    ['Se instalan al final, se deciden al principio', 'El anclaje de un toallero o de una barra depende de dónde quedaron los blocks y las juntas de la cerámica.']
+  ],
+  faq: [
+    ['¿Qué trae un juego de accesorios de baño?',
+     'Lo habitual son cuatro a seis piezas de la misma línea: toallero de barra, toallero de anilla, portapapel, jabonera y portacepillos, a veces con gancho. La cantidad viene indicada en el nombre del producto y cambia bastante el precio.'],
+    ['¿Cuántas barras de seguridad lleva un baño accesible?',
+     'Como mínimo una junto al inodoro y otra en la ducha, con el anclaje resuelto contra el muro y no solo contra la cerámica. En proyectos hoteleros y de salud la cantidad y la posición las fija la normativa del proyecto.']
+  ]
+},
+
+'MAT-32': {
+  titulo: 'Precio de la tubería y las conexiones de PVC en RD',
+  desc: 'Precios de referencia de tubo PVC y CPVC, codos, tees, niples, reducciones, llaves de paso, sifones y rejillas en República Dominicana.',
+  h1: 'Precio de la tubería y las conexiones en República Dominicana',
+  intro: [
+    'Esta es la partida que más renglones tiene y los más pequeños: un baño lleva un inodoro y sesenta conexiones. Ninguna cuesta gran cosa por separado —un codo de PVC de 1/2" anda por RD$ 15— pero juntas explican por qué la plomería se cotiza por punto y no por metro de tubo.',
+    'Tres cosas definen cada pieza y las tres cambian el precio: qué es (codo, tee, niple, reducción), de qué material y de qué medida. El material no es un detalle: el mismo codo de 1/2" cuesta RD$ 15 en PVC y RD$ 170 en bronce, así que compararlos sin fijarlo no dice nada.',
+    'Ojo con la presentación del tubo: el PVC sanitario en República Dominicana viene en tramos de 19 pies, no de 20. Dos comercios lo confirman por separado, y un presupuesto armado sobre 20 pies se queda corto en material.'
+  ],
+  claves: [
+    ['Fijar el material antes de comparar', 'PVC presión, PVC drenaje, CPVC, HG, bronce y cobre son precios distintos para la misma pieza y la misma medida.'],
+    ['Drenaje y presión no se mezclan', 'El PVC de drenaje no aguanta agua a presión. Es el error más caro y más peligroso de la partida.'],
+    ['Contar las piezas, no el tubo', 'El costo de una instalación está en las conexiones y en la mano de obra, no en los metros de tubería.'],
+    ['El tubo sanitario es de 19 pies', 'Cubicar con 20 pies deja la obra corta. Conviene confirmarlo en la factura del suplidor.']
+  ],
+  faq: [
+    ['¿Cuántas conexiones lleva un baño completo?',
+     'Depende del trazado, pero un baño con inodoro, lavamanos y ducha suele pasar de cincuenta piezas entre codos, tees, reducciones, adaptadores, llaves de paso y el sifón de cada aparato. Por eso el plomero cotiza por punto: cada salida agrupa una cantidad parecida de piezas y de trabajo.'],
+    ['¿Por qué el mismo codo tiene precios tan distintos?',
+     'Porque el nombre no basta: hay que fijar el material. Un codo de 1/2" de PVC presión, uno de CPVC para agua caliente y uno de bronce son tres productos con tres precios, y las tres fichas se llaman «codo de 1/2"». En este catálogo cada uno tiene su propia fila.'],
+    ['¿El tubo de PVC viene en 19 o en 20 pies?',
+     'El PVC sanitario que se vende en el país viene en tramos de 19 pies. Un comercio lo factura por pies con un mínimo de 19 y otro publica toda su línea como «x 19». Conviene confirmarlo con el suplidor antes de cubicar, porque la diferencia de un pie por tubo se acumula rápido.']
   ]
 },
 

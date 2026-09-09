@@ -114,7 +114,7 @@
 
 <main id="main">
 
-<section class="section" style="padding-bottom:1.5rem">
+<section class="section section-primera">
   <div class="shell">
     <nav class="miga" aria-label="Ruta de navegación">
       <a href="index.html">Precios de construcción</a> <span aria-hidden="true">›</span>
@@ -133,7 +133,7 @@
     </div>
 
     <p class="section-sub" style="margin-top:1.2rem">
-         <strong>5 ítems</strong> en esta categoría,
+         <strong>6 ítems</strong> en esta categoría,
          con precios de referencia entre RD$ 320 y RD$ 32,000
          según el ítem y su unidad (m², m³, unidad, kit).
          Gran Santo Domingo, actualizado en septiembre de 2026.
@@ -145,10 +145,12 @@
   <div class="shell">
     <div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de arranque, no cotizaciones.</strong> Los montos publicados hoy son
-     estimaciones de referencia para el Gran Santo Domingo; ninguno proviene todavía de una
-     cotización formal. Sirven para dimensionar un presupuesto, no para cerrar una compra.
-     Cada ítem indica su estado y su fecha. <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
+     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
+     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
+     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
+     compra. Cada ítem indica su estado y su fecha.
+     <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>
 
     <div class="tools-row" style="margin-bottom:1rem;justify-content:flex-end">
@@ -157,6 +159,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copiar tabla
       </button>
+      <a class="btn btn-ghost btn-mini" href="descargas/precios-construccion-rd.xlsx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg> Descargar en Excel</a>
     </div>
 
     <div class="tabla-wrap">
@@ -177,47 +180,56 @@
             <td><button class="item-toggle" type="button" data-detalle="MAT-18-001" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Grama natural San Agustín en alfombra</span></button><span class="item-esp">Suministro, sin siembra</span></td>
             <td><span class="item-cod">MAT-18-001</span><br><span class="item-esp">Exteriores</span></td>
             <td class="unidad">m²</td>
-            <td class="num" data-precio-ref="320" data-precio-min="240" data-precio-max="450" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 320</span><span class="precio-rango">RD$ 240 – RD$ 450</span></td>
+            <td class="num" data-precio-ref="320" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 320</span></td>
             <td class="celda-estado"><span class="badge badge-estimado">Estimado</span></td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-001" aria-label="Copiar Grama natural San Agustín en alfombra como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-001" data-nombre="Grama natural San Agustín en alfombra"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MAT-18-001 · Exteriores y paisajismo</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MAT-18-001">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Estimación de arranque — pendiente de cotización</span></td><td class="num"><span class="precio-celda" data-precio-ref="320" data-precio-itbis="1" data-precio-pct="0">RD$ 320</span><span class="precio-rango" data-precio-min="240" data-precio-max="450">RD$ 240 – RD$ 450</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-001" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p><div class="detalle-pendientes"><p class="detalle-titulo">Proveedores por cotizar</p><div class="prov-cats"><a class="tag tag-enlace" href="https://ochoa.com.do" target="_blank" rel="noopener">Ferretería Ochoa (8A)</a><a class="tag tag-enlace" href="https://irrigaciondominicana.com.do" target="_blank" rel="noopener">Irrigación Dominicana (IRRIDOM)</a><a class="tag tag-enlace" href="https://greengardencorp.com" target="_blank" rel="noopener">Green Garden Corp.</a><a class="tag tag-enlace" href="https://realturf.com" target="_blank" rel="noopener">Realturf República Dominicana</a><a class="tag tag-enlace" href="https://viverde.com.do" target="_blank" rel="noopener">Viverde</a><a class="tag tag-enlace" href="https://jbn.gob.do" target="_blank" rel="noopener">Jardín Botánico Nacional (Vivero)</a></div></div></div></td></tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
           <tr data-item="MAT-18-002">
             <td><button class="item-toggle" type="button" data-detalle="MAT-18-002" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Tierra negra vegetal</span></button><span class="item-esp">Cribada, para jardinería</span></td>
             <td><span class="item-cod">MAT-18-002</span><br><span class="item-esp">Exteriores</span></td>
             <td class="unidad">m³</td>
-            <td class="num" data-precio-ref="1450" data-precio-min="1150" data-precio-max="1900" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 1,450</span><span class="precio-rango">RD$ 1,150 – RD$ 1,900</span></td>
+            <td class="num" data-precio-ref="1450" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 1,450</span></td>
             <td class="celda-estado"><span class="badge badge-estimado">Estimado</span></td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-002" aria-label="Copiar Tierra negra vegetal como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-002" data-nombre="Tierra negra vegetal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MAT-18-002 · Exteriores y paisajismo</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MAT-18-002">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Estimación de arranque — pendiente de cotización</span></td><td class="num"><span class="precio-celda" data-precio-ref="1450" data-precio-itbis="1" data-precio-pct="0">RD$ 1,450</span><span class="precio-rango" data-precio-min="1150" data-precio-max="1900">RD$ 1,150 – RD$ 1,900</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-002" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p><div class="detalle-pendientes"><p class="detalle-titulo">Proveedores por cotizar</p><div class="prov-cats"><a class="tag tag-enlace" href="https://ochoa.com.do" target="_blank" rel="noopener">Ferretería Ochoa (8A)</a><a class="tag tag-enlace" href="https://irrigaciondominicana.com.do" target="_blank" rel="noopener">Irrigación Dominicana (IRRIDOM)</a><a class="tag tag-enlace" href="https://greengardencorp.com" target="_blank" rel="noopener">Green Garden Corp.</a><a class="tag tag-enlace" href="https://realturf.com" target="_blank" rel="noopener">Realturf República Dominicana</a><a class="tag tag-enlace" href="https://viverde.com.do" target="_blank" rel="noopener">Viverde</a><a class="tag tag-enlace" href="https://jbn.gob.do" target="_blank" rel="noopener">Jardín Botánico Nacional (Vivero)</a></div></div></div></td></tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
           <tr data-item="MAT-18-003">
             <td><button class="item-toggle" type="button" data-detalle="MAT-18-003" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Palma areca de 2 m</span></button><span class="item-esp">En funda, lista para siembra</span></td>
             <td><span class="item-cod">MAT-18-003</span><br><span class="item-esp">Exteriores</span></td>
             <td class="unidad">unidad</td>
-            <td class="num" data-precio-ref="2400" data-precio-min="1700" data-precio-max="3400" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 2,400</span><span class="precio-rango">RD$ 1,700 – RD$ 3,400</span></td>
+            <td class="num" data-precio-ref="2400" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 2,400</span></td>
             <td class="celda-estado"><span class="badge badge-estimado">Estimado</span></td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-003" aria-label="Copiar Palma areca de 2 m como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-003" data-nombre="Palma areca de 2 m"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MAT-18-003 · Exteriores y paisajismo</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MAT-18-003">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Estimación de arranque — pendiente de cotización</span></td><td class="num"><span class="precio-celda" data-precio-ref="2400" data-precio-itbis="1" data-precio-pct="0">RD$ 2,400</span><span class="precio-rango" data-precio-min="1700" data-precio-max="3400">RD$ 1,700 – RD$ 3,400</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-003" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p><div class="detalle-pendientes"><p class="detalle-titulo">Proveedores por cotizar</p><div class="prov-cats"><a class="tag tag-enlace" href="https://ochoa.com.do" target="_blank" rel="noopener">Ferretería Ochoa (8A)</a><a class="tag tag-enlace" href="https://irrigaciondominicana.com.do" target="_blank" rel="noopener">Irrigación Dominicana (IRRIDOM)</a><a class="tag tag-enlace" href="https://greengardencorp.com" target="_blank" rel="noopener">Green Garden Corp.</a><a class="tag tag-enlace" href="https://realturf.com" target="_blank" rel="noopener">Realturf República Dominicana</a><a class="tag tag-enlace" href="https://viverde.com.do" target="_blank" rel="noopener">Viverde</a><a class="tag tag-enlace" href="https://jbn.gob.do" target="_blank" rel="noopener">Jardín Botánico Nacional (Vivero)</a></div></div></div></td></tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
           <tr data-item="MAT-18-004">
             <td><button class="item-toggle" type="button" data-detalle="MAT-18-004" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Grama artificial 40 mm</span></button><span class="item-esp">Instalada, uso residencial</span></td>
             <td><span class="item-cod">MAT-18-004</span><br><span class="item-esp">Exteriores</span></td>
             <td class="unidad">m²</td>
-            <td class="num" data-precio-ref="1650" data-precio-min="1250" data-precio-max="2300" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 1,650</span><span class="precio-rango">RD$ 1,250 – RD$ 2,300</span></td>
+            <td class="num" data-precio-ref="1650" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 1,650</span></td>
             <td class="celda-estado"><span class="badge badge-estimado">Estimado</span></td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-004" aria-label="Copiar Grama artificial 40 mm como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-004" data-nombre="Grama artificial 40 mm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MAT-18-004 · Exteriores y paisajismo</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MAT-18-004">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Estimación de arranque — pendiente de cotización</span></td><td class="num"><span class="precio-celda" data-precio-ref="1650" data-precio-itbis="1" data-precio-pct="0">RD$ 1,650</span><span class="precio-rango" data-precio-min="1250" data-precio-max="2300">RD$ 1,250 – RD$ 2,300</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-004" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p><div class="detalle-pendientes"><p class="detalle-titulo">Proveedores por cotizar</p><div class="prov-cats"><a class="tag tag-enlace" href="https://ochoa.com.do" target="_blank" rel="noopener">Ferretería Ochoa (8A)</a><a class="tag tag-enlace" href="https://irrigaciondominicana.com.do" target="_blank" rel="noopener">Irrigación Dominicana (IRRIDOM)</a><a class="tag tag-enlace" href="https://greengardencorp.com" target="_blank" rel="noopener">Green Garden Corp.</a><a class="tag tag-enlace" href="https://realturf.com" target="_blank" rel="noopener">Realturf República Dominicana</a><a class="tag tag-enlace" href="https://viverde.com.do" target="_blank" rel="noopener">Viverde</a><a class="tag tag-enlace" href="https://jbn.gob.do" target="_blank" rel="noopener">Jardín Botánico Nacional (Vivero)</a></div></div></div></td></tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
           <tr data-item="MAT-18-005">
             <td><button class="item-toggle" type="button" data-detalle="MAT-18-005" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Sistema de riego por aspersión (kit residencial)</span></button><span class="item-esp">Aspersores, válvulas y programador</span></td>
             <td><span class="item-cod">MAT-18-005</span><br><span class="item-esp">Exteriores</span></td>
             <td class="unidad">kit</td>
-            <td class="num" data-precio-ref="32000" data-precio-min="24000" data-precio-max="45000" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 32,000</span><span class="precio-rango">RD$ 24,000 – RD$ 45,000</span></td>
+            <td class="num" data-precio-ref="32000" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 32,000</span></td>
             <td class="celda-estado"><span class="badge badge-estimado">Estimado</span></td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-005" aria-label="Copiar Sistema de riego por aspersión (kit residencial) como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-005" data-nombre="Sistema de riego por aspersión (kit residencial)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
           </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"><div class="detalle"><div class="detalle-cab"><p class="detalle-titulo">Precio por proveedor · MAT-18-005 · Exteriores y paisajismo</p><button class="btn btn-ghost btn-mini" type="button" data-copiar-item="MAT-18-005">Copiar ítem completo</button></div><div class="tabla-wrap tabla-detalle"><table class="tabla"><thead><tr><th scope="col">Proveedor</th><th scope="col" class="num">Precio</th><th scope="col">Fecha</th><th scope="col">Fuente</th><th scope="col" class="num"><span class="visually-hidden">Copiar</span></th></tr></thead><tbody><tr class="cot-referencia"><td><strong>Referencia del mercado</strong><span class="item-esp">Estimación de arranque — pendiente de cotización</span></td><td class="num"><span class="precio-celda" data-precio-ref="32000" data-precio-itbis="1" data-precio-pct="0">RD$ 32,000</span><span class="precio-rango" data-precio-min="24000" data-precio-max="45000">RD$ 24,000 – RD$ 45,000</span></td><td>2026-09</td><td>Estimación del sitio</td><td class="num"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-005" aria-label="Copiar referencia de mercado como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></td></tr></tbody></table></div><p class="detalle-vacio">Todavía no hay cotizaciones registradas para este ítem. El precio de arriba es la referencia estimada del sitio. En cuanto se registre la primera cotización de un proveedor que vende al público, la referencia pasa a calcularse con la mediana de las cotizaciones reales.</p><div class="detalle-pendientes"><p class="detalle-titulo">Proveedores por cotizar</p><div class="prov-cats"><a class="tag tag-enlace" href="https://ochoa.com.do" target="_blank" rel="noopener">Ferretería Ochoa (8A)</a><a class="tag tag-enlace" href="https://irrigaciondominicana.com.do" target="_blank" rel="noopener">Irrigación Dominicana (IRRIDOM)</a><a class="tag tag-enlace" href="https://greengardencorp.com" target="_blank" rel="noopener">Green Garden Corp.</a><a class="tag tag-enlace" href="https://realturf.com" target="_blank" rel="noopener">Realturf República Dominicana</a><a class="tag tag-enlace" href="https://viverde.com.do" target="_blank" rel="noopener">Viverde</a><a class="tag tag-enlace" href="https://jbn.gob.do" target="_blank" rel="noopener">Jardín Botánico Nacional (Vivero)</a></div></div></div></td></tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
+          <tr data-item="MAT-18-006">
+            <td><button class="item-toggle" type="button" data-detalle="MAT-18-006" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">Asfalto en frío, 25 kg</span></button><span class="item-alcance">Material retirado en almacén</span></td>
+            <td><span class="item-cod">MAT-18-006</span><br><span class="item-esp">Exteriores</span></td>
+            <td class="unidad">unidad</td>
+            <td class="num" data-precio-ref="1695" data-precio-itbis="1" data-precio-pct="0"><span class="precio">RD$ 1,695</span></td>
+            <td class="celda-estado"><span class="badge badge-verificado">Verificado</span></td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-precio="MAT-18-006" aria-label="Copiar Asfalto en frío, 25 kg como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="btn-add" type="button" data-add="MAT-18-006" data-nombre="Asfalto en frío, 25 kg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></td>
+          </tr>
+          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>
         </tbody>
       </table>
     </div>
@@ -342,25 +354,25 @@
         <span class="card-cod">MAT-01</span>
         <h3>Agregados y áridos</h3>
         <p>Arena, grava, caliche, piedra y polvo de piedra.</p>
-        <span class="card-meta"><span>10 ítems</span><span>Ver precios →</span></span>
+        <span class="card-meta"><span>22 ítems</span><span>Ver precios →</span></span>
       </a>
       <a class="card" href="precio-cemento-morteros-aditivos.html">
         <span class="card-cod">MAT-02</span>
         <h3>Cemento, morteros y aditivos</h3>
         <p>Cemento, cal, pegamentos, derretido y aditivos.</p>
-        <span class="card-meta"><span>11 ítems</span><span>Ver precios →</span></span>
+        <span class="card-meta"><span>66 ítems</span><span>Ver precios →</span></span>
       </a>
       <a class="card" href="precio-hormigon-premezclado.html">
         <span class="card-cod">MAT-03</span>
         <h3>Hormigón premezclado</h3>
         <p>Por resistencia, variantes y servicio de bombeo.</p>
-        <span class="card-meta"><span>8 ítems</span><span>Ver precios →</span></span>
+        <span class="card-meta"><span>13 ítems</span><span>Ver precios →</span></span>
       </a>
       <a class="card" href="precio-varilla-acero.html">
         <span class="card-cod">MAT-04</span>
         <h3>Acero de refuerzo y metales</h3>
         <p>Varillas, mallas, perfilería y planchas.</p>
-        <span class="card-meta"><span>12 ítems</span><span>Ver precios →</span></span>
+        <span class="card-meta"><span>42 ítems</span><span>Ver precios →</span></span>
       </a>
       <a class="card" href="precio-blocks-prefabricados.html">
         <span class="card-cod">MAT-05</span>
@@ -372,7 +384,7 @@
         <span class="card-cod">MAT-06</span>
         <h3>Madera y encofrado</h3>
         <p>Pino de encofrado, plywood y maderas tratadas.</p>
-        <span class="card-meta"><span>9 ítems</span><span>Ver precios →</span></span>
+        <span class="card-meta"><span>29 ítems</span><span>Ver precios →</span></span>
       </a>
       <a class="card" href="precio-jornal-mano-de-obra.html">
         <span class="card-cod">MOS-01</span>
