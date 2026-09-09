@@ -85,6 +85,7 @@ El generador:
 |---|---|
 | Precios, ítems y taxonomía | `precios/assets/js/datos-catalogo.js` |
 | Slug (URL) de cada categoría | campo `slug` en la lista `categorias` del mismo archivo |
+| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `herramientas/especificacion-segtec.js` |
 | Texto, claves y FAQ de cada página | `herramientas/contenido-categorias.js` |
 | Plantilla y maquetación | `herramientas/generar-categorias.js` |
 
@@ -108,12 +109,17 @@ it('MAT-04', 'Varilla corrugada 1/2" x 20 pies', 'unidad', 590, 530, 670, {
   gama:   'estandar',      // economica | estandar | premium
   origen: 'nacional',      // nacional | importado
   itbis:  true,            // el precio ya incluye el 18%
-  estado: 'estimado'       // estimado | verificado | tarifario
+  estado: 'estimado',      // estimado | verificado | tarifario
+  medidas: {diametro_pulg: 0.5, largo_pies: 20}   // ejes por los que empareja
 });
 ```
 
 Los tres números son **precio de referencia, mínimo y máximo**. El código
 (`MAT-04-002`) se genera solo, correlativo dentro de la categoría.
+
+El mínimo y el máximo alimentan el libro de Excel y el cálculo interno; **no se muestran
+en el sitio**, que publica un solo número por ítem. `medidas` es opcional en los ítems
+escritos a mano y lo llena solo el importador en los generados.
 
 ### Cuando entre una cotización real
 
@@ -129,10 +135,13 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,566 ítems**. De ellos, **1,276 ya llevan un precio real** de un
+El catálogo tiene **812 ítems**. De ellos, **522 ya llevan un precio real** de un
 comercio que lo publica; 284 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
+
+Detrás de esos 522 ítems verificados hay **1,681 cotizaciones**, o sea **3.2 precios por
+ítem**: el catálogo no creció en filas, creció en profundidad.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -144,6 +153,96 @@ herramientas de recolección por tandas y el importador de catálogos de proveed
 |---|---|
 | Varilla, cemento, cables de cobre, madera | 15–30 días |
 | Terminaciones, equipos, herramientas | Trimestral |
+
+---
+
+## El ítem es la especificación, no la marca
+
+Es la regla que ordena todo el catálogo, y la que más código costó.
+
+Un ítem es **una especificación de compra**: inodoro de una pieza, alargado, descarga de
+4.8 L. La marca, el modelo y el acabado no lo definen —son atributos de la cotización— y
+por eso viven en la nota del precio, no en el nombre del ítem. Igual que una hoja de papel
+8½ x 11 es un solo renglón de un presupuesto por más marcas que se vendan de ella.
+
+La primera importación no lo hacía así: cada modelo de cada marca entraba como ítem propio
+y el catálogo llegó a 1,851 filas donde el mismo aparato aparecía veinte veces. Un catálogo
+así **no se puede comparar**, que es justo lo único que este sitio existe para hacer: con
+un ítem por marca nunca hay dos comercios en la misma fila.
+
+Corregido, el catálogo pasó de **1,851 a 812 ítems** y los ítems con precio de más de un
+comercio subieron de 26 a **51**. No se perdió ni un precio: las 1,681 cotizaciones siguen
+todas ahí, solo que apiladas sobre la fila que les toca.
+
+### Las tablas de especificación
+
+Cada rubro tiene una tabla de familias canónicas que **comparten todos los comercios**. Son
+lo que hace que el inodoro de Ochoa y el de InnovaCentro caigan en la misma fila:
+
+| Archivo | Familias |
+|---|---|
+| `herramientas/especificacion-banos.js` | 28 familias de baño: inodoros por tipo de tanque y descarga, urinarios, lavamanos por montaje, muebles, cabinas, barras de seguridad, duchas, equipamiento de baño público |
+| `herramientas/especificacion-segtec.js` | 43 familias de corrientes débiles: cámaras, grabadores, alarma, incendio, cableado, racks, domótica, intercomunicación |
+
+Cada familia declara su categoría, su unidad, los ejes de medida que la distinguen y cómo
+se arma el nombre. Las reglas de cada comercio no inventan nombres: leen el artículo,
+deciden a qué familia pertenece, sacan sus medidas y le piden el ítem a la tabla. Dos
+comercios distintos con la misma lectura obtienen literalmente la misma clave.
+
+### `medidas` — varias columnas de medida por ítem
+
+El problema práctico: un comercio publica el litraje de descarga del inodoro y el otro
+publica las dimensiones de la taza. Si el ítem tuviera una sola medida, no habría por
+dónde emparejarlos.
+
+Por eso cada ítem lleva un diccionario `medidas` con **una columna por eje**, y cada
+artículo que cae en él aporta las que trae:
+
+```js
+it('MAT-24', 'Inodoro de una pieza, alargado, descarga 4.8 L', 'unidad', …, {
+  medidas: {descarga_l: 4.8, forma: 'alargado', largo_cm: 70}
+});
+```
+
+Un comercio que solo publica el litraje empareja por `descarga_l`; el que solo publica el
+largo, por `largo_cm`. Las medidas se acumulan: el ítem termina sabiendo más que cualquiera
+de sus fuentes por separado. Hoy 187 ítems llevan medidas estructuradas, con `uso`,
+`forma`, `ancho_mm`, `resolucion_mp`, `peso_lb`, `descarga_l`, `lente_mm`, `puertos` y
+`canales` entre las más usadas.
+
+Los largos se redondean a los 5 cm más cercanos antes de formar la clave, para que una
+barra de «90 cm» y una de «36 pulgadas» sean la misma barra y no dos.
+
+**No todo empareja, y no pasa nada.** Cuando el nivel de detalle de dos comercios no se
+toca, cada uno aporta su fila y el catálogo suma cobertura en vez de comparación. Eso es lo
+que pasa hoy en sanitarios, donde los dos comercios cargan marcas casi disjuntas —Ochoa
+trae Helvex, Cato, Ultra y AML; InnovaCentro, AquaSpa, Baikal, Coco, Corona y Teka— y lo
+único que se cruza limpio son las barras de seguridad, que se emparejan por largo.
+
+### Una fila aunque el rango sea ancho
+
+Si dentro de una especificación los precios van de RD$ 4,000 a RD$ 40,000, la fila se
+queda igual: el ancho del rango **es** el dato útil. Lo que hace el sitio es no publicarlo
+como si fuera un precio.
+
+### Mediana, mínimo y máximo: en el libro, no en el sitio
+
+El sitio muestra **un solo número por ítem**, el precio de referencia. El rango
+`RD$ mínimo – RD$ máximo` que antes salía en las tablas se quitó de las páginas de
+categoría, del catálogo y de la ficha: en una tabla de 40 filas, un rango ancho se lee como
+un error del sitio y no como lo que es.
+
+Quien necesita el detalle lo tiene completo en la hoja **Comparativo** del libro de Excel,
+con una columna por proveedor y sus columnas de mínimo, mediana, máximo y dispersión, que
+es donde un analista de compras puede auditarlo celda por celda. La ficha del ítem en el
+sitio sigue mostrando todas las cotizaciones con su proveedor, su marca y su fecha.
+
+Al quitarlo hubo que corregir el texto que lo prometía: la leyenda del catálogo, la
+bajada de la portada y dos párrafos de la metodología decían «su rango mínimo–máximo».
+Y de paso cayó una frase que ya era falsa: el aviso de todas las páginas seguía diciendo
+que **ninguno** de los precios venía de una cotización, cuando 522 ítems llevan el precio
+que el propio comercio publica. El aviso nuevo no lleva cifras, para que no vuelva a
+quedarse viejo solo.
 
 ---
 
@@ -197,7 +296,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,276 de 1,560 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **522 de 806 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -295,18 +394,18 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**1,393 cotizaciones reales cargadas · 1,276 ítems verificados de 1,560.**
+**1,681 cotizaciones reales cargadas · 522 ítems verificados de 806.**
 
-Tres tandas, todas de precios que los propios comercios publican:
+Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — cuatro extracciones completas: el catálogo de Ochoa en materiales de
+- **09/09/2026** — cinco extracciones completas: el catálogo de Ochoa en materiales de
   construcción (398 artículos, 349 con precio), baños (945 / 713) y seguridad y tecnología
-  (809 / 604), más el departamento de materiales de InnovaCentro (118 / 118). De ahí
-  salieron **1,260 ítems nuevos que nacieron verificados** y **47 cotizaciones sobre ítems
-  que ya existían**, que son las que vuelven comparable el catálogo.
+  (809 / 604), más los departamentos de materiales (118 / 118) y de baño (520 / 520) de
+  InnovaCentro. De sus 1,625 artículos aprovechados salieron **504 ítems nuevos que
+  nacieron verificados** y **49 cotizaciones sobre ítems que ya existían**.
 
-Los 288 ítems restantes siguen siendo estimaciones nuestras.
+Los 284 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -314,18 +413,23 @@ desde el primer día:
 | | Categoría | Ítems |
 |---|---|---|
 | `MAT-19` | Perfiles y tubos de acero | 46 |
-| `MAT-20` | Angulares, planchuelas y barras | 62 |
+| `MAT-20` | Angulares, planchuelas y barras | 64 |
 | `MAT-21` | Tolas y láminas de acero | 29 |
-| `MAT-22` | Cerramiento perimetral | 41 |
-| `MAT-23` | Perfilería de aluminio | 24 |
-| `MAT-24` | Inodoros y urinarios | 116 |
-| `MAT-25` | Lavamanos y pedestales | 93 |
-| `MAT-26` | Muebles y espejos de baño | 75 |
-| `MAT-27` | Accesorios de baño | 65 |
-| `MAT-28` | Alarmas y control de accesos | 96 |
-| `MAT-29` | Detección de incendios | 44 |
-| `MAT-30` | Cableado estructurado y redes | 145 |
-| `MAT-31` | Domótica e intercomunicadores | 129 |
+| `MAT-22` | Cerramiento perimetral | 43 |
+| `MAT-23` | Perfilería de aluminio | 26 |
+| `MAT-24` | Inodoros y urinarios | 11 |
+| `MAT-25` | Lavamanos y pedestales | 8 |
+| `MAT-26` | Muebles y espejos de baño | 8 |
+| `MAT-27` | Accesorios de baño | 29 |
+| `MAT-28` | Alarmas y control de accesos | 24 |
+| `MAT-29` | Detección de incendios | 6 |
+| `MAT-30` | Cableado estructurado y redes | 30 |
+| `MAT-31` | Domótica e intercomunicadores | 18 |
+
+Las cifras de baños y de seguridad son bajas a propósito: 442 artículos de baño de Ochoa
+y 289 de InnovaCentro caben en 63 ítems, y 536 de seguridad en 113, porque **el ítem es la
+especificación y no la marca** (ver más abajo). Un inodoro de una pieza alargado de 4.8 L
+es una fila, con las siete marcas que lo venden dentro.
 
 `MAT-16` dejó de ser «Sistemas especiales» y pasó a ser «Cámaras y videovigilancia»: sus
 cuatro ítems que no eran CCTV se movieron a las categorías nuevas que les corresponden.
@@ -365,23 +469,29 @@ uno por uno. No hay emparejamiento automático por parecido de texto: lo probamo
 **2. `REGLAS`** — familias completas donde la ficha del comercio declara la medida
 exacta. De cada artículo sale un ítem nuevo del catálogo, ya verificado.
 
-Cada extracción trae su propio criterio, y por eso hay dos juegos de reglas. En
+Cada rubro trae su propio criterio, y por eso hay un juego de reglas por comercio. En
 materiales de construcción el artículo se identifica por su medida, y la regla la busca
-en la ficha. En baños se identifica por marca y modelo, y lo que hay que decidir es otra
-cosa: **si el artículo le sirve o no a un constructor.** Ese criterio vive en
-`herramientas/reglas-banos.js`.
+en la ficha. En baños y en seguridad se identifica por marca y modelo, y hay que decidir
+dos cosas: **si el artículo le sirve o no a un constructor**, y **a qué especificación del
+catálogo corresponde** una vez que se le quita la marca.
 
-Hay un juego de reglas por extracción, porque cada rubro plantea una pregunta distinta:
+Cada archivo responde una pregunta distinta:
 
 | Archivo | Qué decide |
 |---|---|
 | dentro de `importar-catalogos.js` | Ochoa · materiales: cuál es la medida exacta del artículo |
-| `reglas-banos.js` | Ochoa · baños: si es equipamiento de obra o repuesto de consumidor |
-| `reglas-segtec.js` | Ochoa · seguridad: si es sistema del edificio o accesorio de computadora |
-| `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo |
+| `reglas-banos.js` | Ochoa · baños: si es equipamiento de obra o repuesto de consumidor, y a qué especificación corresponde |
+| `reglas-segtec.js` | Ochoa · seguridad: si es sistema del edificio o accesorio de computadora, y a qué especificación corresponde |
+| `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo, en materiales y en baño |
+| `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
+| `especificacion-segtec.js` | Lo mismo para corrientes débiles |
 
-Los tres comparten `texto-ochoa.js`, que expande las abreviaturas del comercio y separa
+Todos comparten `texto-ochoa.js`, que expande las abreviaturas del comercio y separa
 las medidas pegadas para que el nombre quede legible sin inventarle nada.
+
+La división importa: las **reglas** son de cada comercio, porque cada uno escribe distinto;
+las **especificaciones** son del catálogo, y por eso las comparten. Un comercio nuevo trae
+un archivo de reglas nuevo y no toca las tablas.
 
 ### La regla de los baños: equipamiento sí, repuesto no
 
@@ -391,14 +501,21 @@ repuesto que compra el dueño de casa para cambiar una pieza rota.
 Un inodoro entra. Una tapa de inodoro no. Tampoco una manecilla, una pera, un flotador ni
 un juego de tornillos de tanque. No es que sean malos productos: es que nadie los pone en
 un presupuesto de obra, y cada fila que no se usa le quita claridad a las que sí. De los
-713 artículos con precio de la extracción de baños, 174 se quedaron fuera por esa regla.
+713 artículos con precio de la extracción de baños de Ochoa, 271 se quedaron fuera por esa
+regla, y 231 de los 520 de InnovaCentro.
 
 La única excepción es el kit de instalación de inodoro, que sí es de obra: es lo que el
 plomero compra por cada aparato que monta.
 
-Ojo con las categorías del comercio, que no son de fiar: hay espejos dentro de «muebles
-de baños», botiquines LED dentro de «espejos» y barras de seguridad dentro de «secador de
-manos». Por eso todo se clasifica por el nombre del producto, que sí es consistente.
+Ojo con las categorías del comercio, que no son de fiar para decir **qué** es un artículo:
+hay espejos dentro de «muebles de baños», botiquines LED dentro de «espejos» y barras de
+seguridad dentro de «secador de manos». Por eso la familia se decide por el nombre del
+producto, que sí es consistente.
+
+Donde sí sirven es para decir **cómo se instala**, una vez que el nombre ya resolvió la
+familia. «Lavamanos Bali Blanco» no dice si va sobre pedestal, sobreponer, empotrar o a la
+pared, pero la subcategoría del comercio sí, y es lo que permitió partir los 61 lavamanos
+de InnovaCentro en las mismas cuatro especificaciones que ya tenía Ochoa.
 
 **Los accesorios entran solo como juego.** Un constructor presupuesta «juego de
 accesorios de baño» por cada baño del proyecto, no un toallero Milano y un portapapel
@@ -413,11 +530,16 @@ automáticos—, que se compra por cantidad de baños igual que un inodoro.
 Hasta InnovaCentro todo el catálogo venía de Ochoa, y con un solo precio por ítem el sitio
 muestra un número, no un mercado. De los 118 artículos de su departamento de materiales
 entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículos que caen
-sobre ítems que ya existían**. Ahí aparece el rango, la mediana deja de ser un dato suelto
-y el comprador ve con quién le conviene.
+sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
+del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **26 ítems con precio de más de un comercio**, y el más consultado de todos ya
+Hoy hay **51 ítems con precio de más de un comercio**, y el más consultado de todos ya
 tiene mercado: la funda de cemento gris de 42.5 kg va de RD$ 535 a RD$ 655.
+
+Su departamento de baño (520 artículos, 289 aprovechados) aporta menos comparación de la
+esperada y más cobertura: los dos comercios cargan marcas casi disjuntas, así que lo que
+entra son sobre todo especificaciones nuevas. Lo que sí se cruza limpio son las barras de
+seguridad, que se emparejan por largo, y ahí el rango aparece de una.
 
 Por eso `reglas-innovacentro.js` es sobre todo un **mapeo declarado a mano**, artículo por
 artículo, con su justificación cuando la equivalencia no salta a la vista: que la funda de
@@ -448,7 +570,7 @@ corrientes débiles de un edificio —CCTV, alarma, detección de incendio, cont
 acceso, cableado estructurado, intercomunicación, domótica de pared—, que son partidas de
 obra con su canalización, su cableado y su instalador. Por otro la tienda de
 computadoras: hubs USB, cargadores de laptop, memorias, cables HDMI de 1.8 metros,
-soportes de monitor. Lo primero entra, lo segundo no: 64 artículos de 604 se quedaron
+soportes de monitor. Lo primero entra, lo segundo no: 68 artículos de 604 se quedaron
 fuera por eso.
 
 La frontera pide cuidado en los dos sentidos. Un «cable de audio» de 1.8 metros con
@@ -654,7 +776,7 @@ que es lo que son.
 | Hoja | Para qué |
 |---|---|
 | **Léame** | De dónde salen los números, cuándo se generó y qué significa cada estado. El archivo circula separado del sitio: tiene que explicarse solo. |
-| **Catálogo** | Los ítems con todos sus campos. Es la hoja de datos contra la que buscan las demás. |
+| **Catálogo** | Los ítems con todos sus campos, más una columna por cada eje de medida que use al menos ocho ítems (litros de descarga, ancho en mm, resolución en MP…) y una columna de sobra con el resto. Es la hoja de datos contra la que buscan las demás. |
 | **Comparativo** | Un ítem por fila, una columna por proveedor, y mínimo, mediana, máximo, dispersión y cuál es el más barato. |
 | **Presupuesto** | Plantilla con fórmulas: se escribe código y cantidad, salen descripción, precio e importe. Con costo directo, indirectos y utilidad. |
 | **Resumen por etapa** | El presupuesto agrupado por etapa de obra, con `SUMIF` sobre la hoja anterior. |

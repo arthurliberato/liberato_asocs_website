@@ -1,88 +1,43 @@
 'use strict';
 /* =========================================================
-   reglas-banos.js — clasificador del catálogo de baños
+   reglas-banos.js — el catálogo de baños de Ochoa
 
-   Aquí la medida no es lo que identifica al artículo: un inodoro
-   se identifica por marca, modelo y color, no por pulgadas. Así
-   que este archivo no parsea dimensiones, decide dos cosas:
+   Este archivo decide dos cosas sobre cada artículo:
 
-     1. Si el artículo le sirve o no a un constructor.
-     2. Qué es, para poder ordenarlo en el catálogo.
+     1. Si le sirve o no a un constructor.
+     2. Qué ESPECIFICACIÓN es, para que caiga en el ítem que le
+        toca junto a los del otro comercio.
+
+   Lo segundo cambió: antes cada artículo creaba su propio ítem
+   con su marca y su modelo en el nombre, y eso está mal. Un
+   inodoro de una pieza elongado es un solo ítem aunque lo vendan
+   Helvex, Cato y AquaSpa; la marca es de la cotización. La tabla
+   de especificaciones vive en especificacion-banos.js y la usan
+   los dos comercios, que es lo que hace que sus precios caigan en
+   la misma fila.
 
    LA REGLA DE ENTRADA
    -------------------
-   Entra lo que un constructor presupuesta e instala como parte
-   de la obra —el equipamiento— y queda fuera el repuesto que
-   compra el dueño de casa para cambiar una pieza rota.
+   Entra lo que un constructor presupuesta e instala como parte de
+   la obra —el equipamiento— y queda fuera el repuesto que compra
+   el dueño de casa para cambiar una pieza rota.
 
    Un inodoro entra. Una tapa de inodoro no. Una manecilla, una
    pera, un flotador, un juego de tornillos de tanque: no. No es
    que sean malos productos, es que nadie los pone en un
-   presupuesto de obra, y cada fila que no se usa le quita
-   claridad a las que sí.
+   presupuesto de obra.
 
    OJO CON LAS CATEGORÍAS DEL COMERCIO
    -----------------------------------
    No son de fiar: hay espejos dentro de «muebles de baños»,
-   botiquines LED dentro de «espejos» y barras de seguridad
-   dentro de «secador de manos». Por eso todo se clasifica por el
-   nombre del producto, que sí es consistente.
+   botiquines LED dentro de «espejos», barras de seguridad dentro
+   de «secador de manos» y tapas de tanque dentro de «inodoros de
+   una pieza». Por eso todo se clasifica por el nombre del
+   producto, que sí es consistente.
    ========================================================= */
 
-const limpia = s => String(s || '').replace(/\s+/g, ' ').trim();
-
-/* El comercio escribe todo abreviado y en mayúscula inicial.
-   Solo expandimos sus abreviaturas: no se inventa nada. */
-const ABREVIATURAS = [
-  [/\bP\s*\/\s*/gi, 'para '], [/\bC\s*\/\s*/gi, 'con '],
-  [/\bD\s*\/\s*/gi, 'de '],   [/\bS\s*\/\s*/gi, 'sin '],
-  [/\bT\s*\/\s*/gi, 'tipo '],
-  [/\bElong\.?(?![a-zá-ú])/gi, 'elongado'], [/\bElon\.?(?![a-zá-ú])/gi, 'elongado'],
-  [/\bRed\.(?![a-zá-ú])/gi, 'redondo'], [/\bRect\.(?![a-zá-ú])/gi, 'rectangular'],
-  [/\bPzas?\.?(?![a-zá-ú])/gi, 'piezas'], [/\bJgo\.?(?![a-zá-ú])/gi, 'juego'],
-  [/\bIno\.?(?![a-zá-ú])/gi, 'inodoro'], [/\bInod\.?(?![a-zá-ú])/gi, 'inodoro'],
-  [/\bIndoro\b/gi, 'inodoro'], [/\bBidet\b/gi, 'bidé'],
-  [/\bBano\b/gi, 'baño'], [/\bBanos\b/gi, 'baños'], [/\bBanera\b/gi, 'bañera'],
-  [/\bAcces?\.(?![a-zá-ú])/gi, 'accesorios'], [/\bAccs\.?(?![a-zá-ú])/gi, 'accesorios'],
-  [/\bMezcl?\.(?![a-zá-ú])/gi, 'mezcladora'], [/\bMonom\.(?![a-zá-ú])/gi, 'monomando'],
-  [/\bLav\.(?![a-zá-ú])/gi, 'lavamanos'], [/\bCub\.(?![a-zá-ú])/gi, 'cubierta'],
-  [/\bReb\.(?![a-zá-ú])/gi, 'rebosadero'], [/\bDesag\.(?![a-zá-ú])/gi, 'desagüe'],
-  [/\bGde\.(?![a-zá-ú])/gi, 'grande'], [/\bSreb\b/gi, 'sin rebosadero'],
-  [/\bCreb\b/gi, 'con rebosadero'], [/\bSusp\.(?![a-zá-ú])/gi, 'suspendido'],
-  [/\bMult\.(?![a-zá-ú])/gi, 'múltiple'], [/\bSenc\.(?![a-zá-ú])/gi, 'sencillo'],
-  [/\bElec\.(?![a-zá-ú])/gi, 'eléctrico'], [/\bExt\.(?![a-zá-ú])/gi, 'extensible'],
-  /* Los tres nombres del mismo aparato, unificados para que se busquen juntos. */
-  [/^Lavabo\b/i, 'Lavamanos'], [/^Lavatorio\b/i, 'Lavamanos'], [/^Lavamano\b/i, 'Lavamanos'],
-  [/\bMezc\b(?![a-zá-ú])/gi, 'Mezcladora'],
-  [/\s*\/\s*/g, ' / '], [/\s*''/g, '"'], [/[”“]/g, '"'], [/[´`]/g, "'"],
-  /* Medidas pegadas: "50X70" y "700X360X740" se separan como medidas, no
-     como palabras, para que no queden "50 X70". */
-  [/(\d)\s*[xX]\s*(\d)/g, '$1 x $2'], [/(\d)\s*[xX]\s*(\d)/g, '$1 x $2'],
-  /* Una letra suelta pegada a un número suele ser parte del código del
-     modelo ("1P", "3H"), así que solo se separa cuando siguen dos o más. */
-  [/(\d)([A-Za-zá-ú]{2,})/g, '$1 $2'], [/\.(?=[A-Za-zá-ú])/g, '. ']
-];
-
-function normaliza(nombre) {
-  let t = limpia(nombre);
-  ABREVIATURAS.forEach(([re, a]) => { t = t.replace(re, a); });
-  t = limpia(t).replace(/\s+([.,])/g, '$1');
-  return t.charAt(0).toUpperCase() + t.slice(1);
-}
-
-/* El color viene pegado dentro de la referencia: "2758BLANCO",
-   "TQ1-2-MMARFIL", "KLIPENIVORY". */
-const COLORES = [
-  ['BLANCA', 'blanca'], ['BLANCO', 'blanco'], ['MARFIL', 'marfil'], ['NEGRO', 'negro'],
-  ['NEGRA', 'negra'], ['IVORY', 'marfil'], ['BEIGE', 'beige'], ['GRIS', 'gris'],
-  ['BONE', 'hueso'], ['DORADO', 'dorado'], ['ORO', 'dorado'], ['PLATA', 'plata'],
-  ['BRONCE', 'bronce'], ['NIQUEL', 'níquel'], ['CROMO', 'cromo']
-];
-function color(a) {
-  const r = String(a.ref || '').toUpperCase();
-  for (const [k, v] of COLORES) if (r.indexOf(k) >= 0) return v;
-  return '';
-}
+const T = require('./texto-ochoa.js');
+const E = require('./especificacion-banos.js');
 
 /* ---------------------------------------------------------
    Lo que no entra: repuesto de consumidor
@@ -105,108 +60,154 @@ const REPUESTO = [
   /^Fitting\b/i
 ];
 
-/* ---------------------------------------------------------
-   Lo que sí entra, y qué es
-     [patrón, tipo, categoría, unidad, etapa, alias]
-   El orden importa: gana el primero que casa.
-   --------------------------------------------------------- */
-const TIPOS = [
-  [/^Inodoro\b/i,                     'Inodoro de una pieza',     'MAT-24', 'unidad', 'instalaciones', 'inodoro, taza de baño, wc'],
-  [/^Tanque\b/i,                      'Tanque de inodoro',        'MAT-24', 'unidad', 'instalaciones', 'tanque de inodoro, cisterna'],
-  [/^(Basineta|Taza)\b/i,             'Basineta de inodoro',      'MAT-24', 'unidad', 'instalaciones', 'basineta, taza, cuerpo del inodoro'],
-  [/^(Orinal|Mingitorio|Urinario)\b/i,'Urinario',                 'MAT-24', 'unidad', 'instalaciones', 'orinal, mingitorio, urinario'],
-  [/^(Lavamanos?|Lavabo|Lavatorio)\b/i,'Lavamanos',               'MAT-25', 'unidad', 'instalaciones', 'lavamanos, lavabo, lavatorio'],
-  [/^(Pedestal|Pata)\b/i,             'Pedestal para lavamanos',  'MAT-25', 'unidad', 'instalaciones', 'pedestal, pie de lavamanos'],
-  [/^Palometa\b/i,                    'Palometa para lavamanos',  'MAT-25', 'unidad', 'instalaciones', 'palometa, soporte de lavamanos'],
-  [/^Conector\b/i,                    'Conector de desagüe',      'MAT-25', 'unidad', 'instalaciones', 'conector, yee de desagüe'],
+/* Accesorios: el juego sí, la pieza suelta no.
 
-  [/^(Mueble|Gabinete|Vanity)\b/i,    'Mueble de baño',           'MAT-26', 'unidad', 'terminacion', 'mueble de baño, vanity, gabinete'],
-  [/^Botiqu[ií]n\b/i,                 'Botiquín de baño',         'MAT-26', 'unidad', 'terminacion', 'botiquín, gabinete con espejo'],
-  [/^Espejo\b/i,                      'Espejo de baño',           'MAT-26', 'unidad', 'terminacion', 'espejo de baño'],
-  [/^Cabina\b/i,                      'Cabina de baño',           'MAT-26', 'unidad', 'terminacion', 'cabina de ducha, mampara'],
-
-  [/^(Barra (De )?Seguridad|Agarradera)/i, 'Barra de seguridad',  'MAT-27', 'unidad', 'terminacion', 'barra de seguridad, agarradera, accesibilidad'],
-  [/^(Barra|Columna|Cabeza|Ducha|Regadera|Brazo|Manguera|Soporte)\b/i,
-                                      'Ducha',                    'MAT-09', 'unidad', 'instalaciones', 'ducha, regadera, cabezal'],
-  [/^Mezc/i,                          'Mezcladora',               'MAT-09', 'unidad', 'instalaciones', 'mezcladora, grifería de ducha'],
-
-  [/^(Toallero|Portatoallas?|Porta ?Toalle?r?o?|Porta ?Toalla)/i, 'Toallero', 'MAT-27', 'unidad', 'terminacion', 'toallero, portatoallas'],
-  [/^(Portapapel|Porta ?Papel|Papelera)/i,    'Portapapel',       'MAT-27', 'unidad', 'terminacion', 'portapapel, papelera de baño'],
-  [/^(Portacepillos?|Porta ?Cepillo|Cepiller[ao])/i, 'Portacepillos', 'MAT-27', 'unidad', 'terminacion', 'portacepillos, cepillera'],
-  [/^(Dispensador|Dosificador)/i,     'Dispensador de baño público', 'MAT-27', 'unidad', 'terminacion', 'dispensador de jabón, dosificador automático'],
-  [/^Jabonera/i,                      'Jabonera',                 'MAT-27', 'unidad', 'terminacion', 'jabonera'],
-  [/^Secador\b/i,                     'Secador de manos',         'MAT-27', 'unidad', 'terminacion', 'secador de manos'],
-  [/^(Gancho|Percha)/i,               'Gancho de baño',           'MAT-27', 'unidad', 'terminacion', 'gancho, perchero de baño'],
-  [/^Repisa\b/i,                      'Repisa de baño',           'MAT-27', 'unidad', 'terminacion', 'repisa de baño'],
-  [/^Tendedero\b/i,                   'Tendedero',                'MAT-27', 'unidad', 'terminacion', 'tendedero retráctil'],
-  [/^(Kit|Juego|Accesorios?)\b/i,     'Juego de accesorios de baño', 'MAT-27', 'juego', 'terminacion', 'juego de accesorios, kit de baño']
+   Un constructor presupuesta «juego de accesorios de baño» por cada baño
+   del proyecto, no un toallero Milano y un portapapel Lugano por separado:
+   eso es una decisión de decoración que además llena la página de variantes
+   de la misma cosa en distintos acabados. Se quedan las barras de
+   seguridad, porque en baño accesible y en obra hotelera y de salud son
+   partida obligatoria con su propio anclaje, y el equipamiento de baño
+   público, que se compra por cantidad de baños igual que un inodoro. */
+const PIEZA_SUELTA = [
+  /^(Toallero|Portatoallas?|Porta ?Toalle?r?o?|Porta ?Toalla)/i,
+  /^(Portapapel|Porta ?Papel|Papelera)/i,
+  /^(Portacepillos?|Porta ?Cepillo|Cepiller[ao])/i,
+  /^Jabonera/i,
+  /^(Gancho|Percha)/i,
+  /^Repisa\b/i,
+  /^Tendedero\b/i
 ];
 
 /* ---------------------------------------------------------
-   Accesorios: el juego sí, la pieza suelta no
-
-   Un constructor presupuesta «juego de accesorios de baño» por
-   cada baño del proyecto, no un toallero Milano y un portapapel
-   Lugano por separado: eso es una decisión de decoración que se
-   toma pieza por pieza y que además llena la página de variantes
-   de la misma cosa en distintos acabados.
-
-   Se quedan las barras de seguridad, porque en baños accesibles
-   y en obra hotelera y de salud son una partida obligatoria con
-   su propio anclaje, y el equipamiento de baño público —secador
-   de manos y dispensadores automáticos—, que se compra por
-   cantidad de baños igual que un inodoro.
+   De qué especificación se trata. Gana el primero que casa.
    --------------------------------------------------------- */
-const SOLO_PIEZA_SUELTA = {
-  'Toallero': true, 'Portapapel': true, 'Portacepillos': true,
-  'Jabonera': true, 'Gancho de baño': true, 'Repisa de baño': true, 'Tendedero': true
-};
+const FAMILIA = [
+  [/^Inodoro\b/i,                      'inodoro-una-pieza'],
+  [/^Tanque\b/i,                       'inodoro-tanque'],
+  [/^(Basineta|Taza)\b/i,              'inodoro-basineta'],
+  [/^(Orinal|Mingitorio|Urinario)\b/i, 'urinario'],
+  [/^Bidet?\b/i,                       'bide'],
+  [/^Kit (De |D \/ )?Instalaci[oó]n/i, 'kit-instalacion-inodoro'],
+  [/^(Lavamanos?|Lavabo|Lavatorio)\b/i,'lavamanos'],
+  [/^(Pedestal|Pata)\b/i,              'pedestal'],
+  [/^Palometa\b/i,                     'palometa'],
+  [/^Conector\b/i,                     'conector-desague'],
+  [/^(Mueble|Gabinete|Vanity)\b/i,     'mueble-bano'],
+  [/^Botiqu[ií]n\b/i,                  'botiquin'],
+  [/^Espejo\b/i,                       'espejo'],
+  [/^Cabina\b/i,                       'cabina-ducha'],
+  [/^(Barra (De )?Seguridad|Agarradera)/i, 'barra-seguridad'],
+  [/^(Kit|Juego|Accesorios?)\b/i,      'juego-accesorios'],
+  [/^Secador\b/i,                      'secador-manos'],
+  [/^(Dispensador|Dosificador).*(Jab[oó]n|Espuma)/i, 'dispensador-jabon'],
+  [/^(Dispensador|Dosificador)/i,      'dispensador-papel'],
+  [/^Cambiador/i,                      'cambiador-bebes'],
+  /* Casi todo lo de ducha empieza por «Ducha», así que la palabra que
+     distingue está más adentro del nombre y no al principio. */
+  [/^Mezc/i,                           'ducha-mezcladora'],
+  [/^Manguera\b|manguera/i,            'ducha-manguera'],
+  [/^Columna\b|columna/i,              'ducha-columna'],
+  [/^Brazo\b|\bbrazo\b/i,             'ducha-brazo'],
+  [/barra|riel|desliza/i,              'ducha-barra'],
+  [/tel[eé]fono|de mano|\bmano\b/i,    'ducha-telefono'],
+  [/^(Cabeza|Regadera|Ducha|Soporte)/i,'ducha-cabezal']
+];
+
+/* ---------------------------------------------------------
+   Las medidas, sacadas del nombre y de la referencia
+   --------------------------------------------------------- */
+const num = s => { const v = parseFloat(String(s).replace(',', '.')); return isFinite(v) ? v : null; };
+
+function medidasDe(a, familia) {
+  const n = T.limpia(a.nombre) + ' ' + T.limpia(a.ref);
+  const m = {};
+
+  if (/^inodoro/.test(familia)) {
+    if (/elong|alarg/i.test(n)) m.forma = 'elongado';
+    else if (/redond|\bred\.?\b/i.test(n)) m.forma = 'redondo';
+    const l = n.match(/(\d[.,]?\d?)\s*(?:LPD|LTS?|L)\b/i);
+    if (l) { const v = num(l[1]); if (v && v >= 3 && v <= 12) m.descarga_l = v; }
+    if (/push|bot[oó]n/i.test(n)) m.descarga = 'push button';
+    else if (/palanca|manija/i.test(n)) m.descarga = 'palanca';
+  }
+
+  if (familia === 'lavamanos') {
+    if (/sobreponer|sobre poner|\btope\b/i.test(n)) m.montaje = 'sobreponer';
+    else if (/empotr|bajo cub/i.test(n)) m.montaje = 'empotrar';
+    else if (/pedestal/i.test(n)) m.montaje = 'pedestal';
+    else if (/pared|colgar/i.test(n)) m.montaje = 'pared';
+    /* El nombre casi nunca dice cómo se monta, pero la subcategoría del
+       comercio sí. No es de fiar para saber QUÉ es el artículo —hay tapas
+       de tanque archivadas bajo «pedestal»— pero una vez que el nombre ya
+       dijo que es un lavamanos, sirve para saber cómo va montado. */
+    else if (/^pedestal/i.test(a.cat3 || '')) m.montaje = 'pedestal';
+    else if (/sobreponer/i.test(a.cat3 || '')) m.montaje = 'sobreponer';
+    else if (/empotrable/i.test(a.cat3 || '')) m.montaje = 'empotrar';
+    const h = n.match(/\b(\d)\s*(?:H|agujeros?|perforaciones?)\b/i);
+    if (h) m.agujeros = +h[1];
+  }
+
+  if (familia === 'mueble-bano') {
+    if (/susp|pared|colgar|flotante/i.test(n)) m.montaje = 'pared';
+    else if (/\bpiso\b/i.test(n)) m.montaje = 'piso';
+  }
+
+  if (familia === 'botiquin' || familia === 'espejo') {
+    if (/\bled\b/i.test(n)) m.luz = 'led';
+  }
+
+  if (familia === 'barra-seguridad') {
+    if (/\ben ?l\b|tipo l|\bl\b(?!\w)/i.test(n)) m.forma = 'en L';
+    else if (/abatible/i.test(n)) m.forma = 'abatible';
+    else if (/curva/i.test(n)) m.forma = 'curva';
+    else m.forma = 'recta';
+    let c = n.match(/(\d+(?:[.,]\d+)?)\s*cm\b/i);
+    if (c) m.largo_cm = E.aCm(num(c[1]), 'cm');
+    if (!m.largo_cm) { c = n.match(/(\d+)\s*mm\b/i); if (c) m.largo_cm = E.aCm(num(c[1]), 'mm'); }
+    if (!m.largo_cm) { c = n.match(/(\d+)\s*(?:"|''|pulg)/i); if (c) m.largo_cm = E.aCm(num(c[1]), 'pulg'); }
+  }
+
+  if (familia === 'juego-accesorios') {
+    const p = n.match(/(\d)\s*(?:Pzas?|piezas?|pcs)\b/i) || n.match(/\b(\d)\s*\/\s*1\b/) || n.match(/\b(\d)\s*en\s*1\b/i);
+    if (p) m.piezas = +p[1];
+  }
+
+  if (familia === 'secador-manos' || familia === 'dispensador-jabon') {
+    if (/sensor|autom[aá]tic/i.test(n)) m.activacion = 'sensor';
+    else if (/bot[oó]n|manual|palanca/i.test(n)) m.activacion = 'boton';
+  }
+
+  if (familia === 'dispensador-papel') {
+    if (/toalla/i.test(n)) m.tipo_papel = 'toalla';
+    else if (/higi[eé]nico|jumbo|servilleta/i.test(n)) m.tipo_papel = 'papel higiénico';
+  }
+
+  /* Dimensiones, cuando el comercio las declara. No forman parte de la
+     identidad del ítem pero se registran: si otro proveedor solo publica
+     eso, es por donde se podrá emparejar más adelante. */
+  const d = n.match(/(\d{2,4})\s*[xX]\s*(\d{2,4})\s*[xX]\s*(\d{2,4})\s*(mm|cm)?/);
+  if (d) {
+    const u = (d[4] || (num(d[1]) > 200 ? 'mm' : 'cm')).toLowerCase();
+    const f = u === 'mm' ? 1 : 10;
+    m.largo_mm = num(d[1]) * f; m.ancho_mm = num(d[2]) * f; m.alto_mm = num(d[3]) * f;
+  }
+
+  return m;
+}
 
 /* ---------------------------------------------------------
    La regla
    --------------------------------------------------------- */
 function regla(a) {
-  const n = limpia(a.nombre);
+  const n = T.limpia(a.nombre);
   if (REPUESTO.some(re => re.test(n))) return null;
+  if (PIEZA_SUELTA.some(re => re.test(n))) return null;
 
-  /* El kit de instalación del inodoro sí es de obra: es lo que el
-     plomero compra por cada aparato que monta. */
-  const instalacion = /^Kit (De |D \/ )?Instalaci[oó]n/i.test(n);
+  const f = FAMILIA.filter(x => x[0].test(n))[0];
+  if (!f) return null;
 
-  const t = TIPOS.filter(x => x[0].test(n))[0];
-  if (!t && !instalacion) return null;
-
-  if (t && SOLO_PIEZA_SUELTA[t[1]]) return null;
-
-  const [, tipo, cat, unidad, etapa, alias] = t || [null, 'Kit de instalación de inodoro', 'MAT-24', 'juego', 'instalaciones', 'kit de instalación, cera y tornillos'];
-  const orden = t ? TIPOS.indexOf(t) : TIPOS.length;
-
-  /* El nombre del comercio ya dice qué es la pieza —«Basineta Aguazul»,
-     «Lavabo Santorini»— así que no se le antepone nada: prefijar el tipo
-     produce cosas como «Lavamanos lavabo Aure». El tipo sirve para
-     agrupar y ordenar, no para nombrar. */
-  const col = color(a);
-  let nombre = normaliza(n);
-  if (col && nombre.toLowerCase().indexOf(col) < 0) nombre += ', ' + col;
-
-  const detalle = [];
-  if (a.marca && !/GENERICO/i.test(a.marca)) detalle.push('marca ' + a.marca);
-  if (col) detalle.push('color ' + col);
-  if (a.ref) detalle.push('referencia ' + a.ref);
-
-  return {
-    cat: cat,
-    tipo: tipo,
-    orden: orden * 100000 + Math.round(a.precio),
-    clave: (tipo + '|' + nombre).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-             .replace(/[^a-z0-9]+/g, '-'),
-    nombre: nombre.length > 92 ? nombre.slice(0, 89).replace(/[\s,·-]+$/, '') + '…' : nombre,
-    unidad: unidad,
-    esp: detalle.join(' · '),
-    etapa: etapa,
-    origen: 'importado',
-    alias: alias
-  };
+  return E.item(f[1], medidasDe(a, f[1]));
 }
 
-module.exports = { regla, normaliza, TIPOS };
+module.exports = { regla, medidasDe, REPUESTO, PIEZA_SUELTA };

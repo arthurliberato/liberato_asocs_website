@@ -189,10 +189,12 @@ const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 
 const AVISO = `<div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de arranque, no cotizaciones.</strong> Los montos publicados hoy son
-     estimaciones de referencia para el Gran Santo Domingo; ninguno proviene todavía de una
-     cotización formal. Sirven para dimensionar un presupuesto, no para cerrar una compra.
-     Cada ítem indica su estado y su fecha. <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
+     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
+     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
+     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
+     compra. Cada ítem indica su estado y su fecha.
+     <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>`;
 
 /* ---------- fila de la tabla ---------- */
@@ -210,11 +212,12 @@ function fila(it) {
   if (it.ref === null) {
     precio = '<span class="precio-nulo">Según tarifario</span>';
   } else if (pct) {
-    precio = `<span class="precio">${fmt(it.ref)} %</span>` +
-             `<span class="precio-rango">${fmt(it.min)} – ${fmt(it.max)} %</span>`;
+    /* Sin el rango debajo: el sitio muestra un precio de referencia y la
+       lista de cotizaciones reales. La mediana, el mínimo y el máximo son
+       herramientas de análisis y viven en el libro de Excel. */
+    precio = `<span class="precio">${fmt(it.ref)} %</span>`;
   } else {
-    precio = `<span class="precio">${rd(it.ref)}</span>` +
-             `<span class="precio-rango">${rd(it.min)} – ${rd(it.max)}</span>`;
+    precio = `<span class="precio">${rd(it.ref)}</span>`;
   }
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
@@ -232,7 +235,7 @@ function fila(it) {
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
-            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-min="${it.min === null ? '' : it.min}" data-precio-max="${it.max === null ? '' : it.max}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
+            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
             <td class="celda-estado">${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
             <td class="num acciones">` +
       `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +

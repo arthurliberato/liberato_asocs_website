@@ -1021,6 +1021,19 @@ const FUENTES = [
     motivo: 'no corresponde a ningún ítem y su ficha no basta para crear uno',
     mapeo: INNOVA.MAPEO,
     regla: a => INNOVA.regla(a) || null
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
+    etiqueta: 'InnovaCentro · baños',
+    proveedor: 'InnovaCentro (La Innovación)',
+    constante: 'PROV_INNOVA',
+    fecha: '2026-09-09',
+    motivo: 'no es equipamiento de obra',
+    /* Este comercio agrupa bien su catálogo, así que el motivo del descarte
+       se puede decir grupo por grupo en vez de con una frase para todos. */
+    motivoDe: a => INNOVA.FUERA_BANOS[a.cat3] || 'no es equipamiento de obra',
+    mapeo: {},
+    regla: a => INNOVA.reglaBanos(a) || null
   }
 ];
 
@@ -1047,7 +1060,11 @@ FUENTES.forEach(fuente => {
     }
     const spec = fuente.regla(a);
     if (spec === undefined) return;                       // familia sin regla
-    if (!spec) { descartados.push({ a, motivo: fuente.motivo }); fuera++; return; }
+    if (!spec) {
+      descartados.push({ a, motivo: fuente.motivoDe ? fuente.motivoDe(a) : fuente.motivo });
+      fuera++;
+      return;
+    }
     /* Una regla puede resolver que el artículo es un ítem que ya existe.
        En InnovaCentro pasa mucho: es el segundo comercio, y lo valioso de su
        catálogo no son ítems nuevos sino un segundo precio para los que ya
@@ -1123,6 +1140,16 @@ nuevosOk.forEach(x => {
   const k = x.spec.cat + '|' + x.spec.clave;
   if (!items[k]) items[k] = { spec: x.spec, articulos: [] };
   items[k].articulos.push(x.a);
+  /* Las medidas se acumulan de todos los artículos que caen en el ítem: uno
+     declara los litros del tanque y otro las dimensiones, y la ficha termina
+     sabiendo más que cualquiera de sus fuentes. Gana la primera que llegue,
+     que es la del comercio que la publicó. */
+  if (x.spec.medidas) {
+    const m = items[k].spec.medidas || (items[k].spec.medidas = {});
+    Object.keys(x.spec.medidas).forEach(kk => {
+      if (m[kk] === undefined || m[kk] === '' || m[kk] === null) m[kk] = x.spec.medidas[kk];
+    });
+  }
 });
 
 const lista = Object.keys(items).map(k => items[k]);
@@ -1228,12 +1255,20 @@ function bloqueItems() {
        con el número correcto aunque el JavaScript no llegue a correr. */
     const precios = e.articulos.map(precioUnidad);
     const ref = num(mediana(precios));
+    const med = s.medidas || {};
+    const claves = Object.keys(med).filter(k => med[k] !== '' && med[k] !== null && med[k] !== undefined);
+    const medidas = claves.length
+      ? 'medidas:{' + claves.map(k =>
+          k + ':' + (typeof med[k] === 'number' ? med[k] : "'" + esc(med[k]) + "'")).join(', ') + '}'
+      : '';
+
     const o = [
       "esp:'" + esc(s.esp) + "'",
       "etapa:'" + s.etapa + "'",
       s.gama ? "gama:'" + s.gama + "'" : '',
       s.origen ? "origen:'" + s.origen + "'" : '',
       "alias:'" + esc(s.alias) + "'",
+      medidas,
       "alcance:'Material retirado en almacén'"
     ].filter(Boolean).join(', ');
     L.push("  it('" + s.cat + "', '" + esc(s.nombre) + "', '" + esc(s.unidad) + "', " +

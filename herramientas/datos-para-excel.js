@@ -82,6 +82,7 @@ const items = CAT.items.map(i => ({
   fecha: i.fecha,
   fuente: i.fuente,
   nota: i.nota,
+  medidas: i.medidas || {},
   cotizaciones: Object.keys(porItem[i.codigo] || {}).length,
   precios: conCotizaciones.map(p => {
     const q = (porItem[i.codigo] || {})[p.nombre];

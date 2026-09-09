@@ -487,15 +487,12 @@
   function pintarCeldaPrecio(td, it) {
     var pct = it.unidad === '%';
     var p = precioVista(it.ref, it, estado.sinItbis);
-    var mn = precioVista(it.min, it, estado.sinItbis);
-    var mx = precioVista(it.max, it, estado.sinItbis);
     if (p === null) { td.innerHTML = '<span class="precio-nulo">Según tarifario</span>'; return; }
-    td.innerHTML = pct
-      ? '<span class="precio">' + fmt(p) + ' %</span><span class="precio-rango">' + fmt(mn) + ' – ' + fmt(mx) + ' %</span>'
-      : '<span class="precio">' + rd(p) + '</span><span class="precio-rango">' + rd(mn) + ' – ' + rd(mx) + '</span>';
+    /* Solo el precio de referencia. El rango y la mediana son análisis y
+       van en el libro de Excel, no en la tabla del sitio. */
+    td.innerHTML = pct ? '<span class="precio">' + fmt(p) + ' %</span>'
+                       : '<span class="precio">' + rd(p) + '</span>';
     td.setAttribute('data-precio-ref', it.ref === null ? '' : it.ref);
-    td.setAttribute('data-precio-min', it.min === null ? '' : it.min);
-    td.setAttribute('data-precio-max', it.max === null ? '' : it.max);
   }
 
   /* Vuelve a pintar precios, etiquetas y fichas abiertas desde el objeto del
@@ -963,23 +960,12 @@
       var ref = v('data-precio-ref');
 
       if (el.tagName === 'TD') {
-        var min = v('data-precio-min'), max = v('data-precio-max');
         el.innerHTML = pct
-          ? '<span class="precio">' + fmt(ref) + ' %</span><span class="precio-rango">' + fmt(min) + ' – ' + fmt(max) + ' %</span>'
-          : '<span class="precio">' + rd(ref) + '</span><span class="precio-rango">' + rd(min) + ' – ' + rd(max) + '</span>';
+          ? '<span class="precio">' + fmt(ref) + ' %</span>'
+          : '<span class="precio">' + rd(ref) + '</span>';
       } else {
         el.textContent = pct ? fmt(ref) + ' %' : rd(ref);
       }
-    });
-
-    $$('[data-precio-min]', raiz || document).forEach(function (el) {
-      if (el.tagName === 'TD') return;
-      var celda = el.previousElementSibling;
-      var traeItbis = celda && celda.getAttribute('data-precio-itbis') === '1';
-      var falso = {itbis: traeItbis};
-      var min = precioVista(parseFloat(el.getAttribute('data-precio-min')), falso, sinItbis);
-      var max = precioVista(parseFloat(el.getAttribute('data-precio-max')), falso, sinItbis);
-      el.textContent = rd(min) + ' – ' + rd(max);
     });
   }
 
@@ -1208,19 +1194,15 @@
 
     function fila(it) {
       var p = precioVista(it.ref, it, estado.sinItbis);
-      var pmin = precioVista(it.min, it, estado.sinItbis);
-      var pmax = precioVista(it.max, it, estado.sinItbis);
       var esPorcentaje = it.unidad === '%';
 
       var precioHtml;
       if (p === null) {
         precioHtml = '<span class="precio-nulo">Según tarifario</span>';
       } else if (esPorcentaje) {
-        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>' +
-                     '<span class="precio-rango">' + fmt(pmin) + ' – ' + fmt(pmax) + ' %</span>';
+        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>';
       } else {
-        precioHtml = '<span class="precio">' + rd(p) + '</span>' +
-                     '<span class="precio-rango">' + rd(pmin) + ' – ' + rd(pmax) + '</span>';
+        precioHtml = '<span class="precio">' + rd(p) + '</span>';
       }
 
       return '<tr data-item="' + esc(it.codigo) + '">' +

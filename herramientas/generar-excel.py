@@ -213,9 +213,47 @@ CAT_COLS = [
 ]
 
 
+# Cómo se lee cada medida y en qué orden van las columnas. Solo salen las
+# que de verdad usa el catálogo; el resto va a «Otras medidas».
+ETIQUETA_MEDIDA = {
+    "forma": "Forma", "montaje": "Montaje", "luz": "Luz", "piezas": "Piezas",
+    "largo_cm": "Largo (cm)", "descarga_l": "Descarga (L)", "descarga": "Descarga",
+    "agujeros": "Agujeros", "activacion": "Activación", "tipo_papel": "Tipo de papel",
+    "largo_mm": "Largo (mm)", "ancho_mm": "Ancho (mm)", "alto_mm": "Alto (mm)",
+    "formato": "Formato", "resolucion_mp": "Resolución (MP)", "lente_mm": "Lente (mm)",
+    "tecnologia": "Tecnología", "alcance_ir_m": "Alcance IR (m)", "canales": "Canales",
+    "capacidad_tb": "Capacidad (TB)", "pulgadas": "Pulgadas", "zonas": "Zonas",
+    "alcance_m": "Alcance (m)", "ubicacion": "Ubicación", "potencia_db": "Potencia (dB)",
+    "deteccion": "Detección", "categoria": "Categoría de cable", "blindaje": "Blindaje",
+    "largo_pies": "Largo (pies)", "largo_m": "Largo (m)", "puertos": "Puertos",
+    "neutro": "Neutro", "mide": "Mide", "apartamentos": "Apartamentos", "video": "Video",
+    "voltaje_v": "Voltaje (V)", "amperaje_a": "Amperaje (A)", "camaras": "Cámaras",
+    "enlace": "Enlace", "capacidad_gal": "Capacidad (gal)", "capacidad_oz": "Capacidad (oz)",
+    "peso_kg": "Peso (kg)", "peso_lb": "Peso (lb)", "calibre": "Calibre",
+    "tamano": "Tamaño", "uso": "Uso",
+}
+MINIMO_PARA_COLUMNA = 8
+
+
+def columnas_medida(items):
+    """Las medidas con su propia columna: las que usa una cantidad de ítems
+    que justifique una columna. Es el aporte de tener varias medidas por
+    separado: si un proveedor solo publica los litros del tanque y otro solo
+    las dimensiones, cada dato queda en su columna y el emparejamiento se
+    hace con el que ambos declaren."""
+    cuenta = {}
+    for it in items:
+        for k in (it.get("medidas") or {}):
+            cuenta[k] = cuenta.get(k, 0) + 1
+    elegidas = [k for k in ETIQUETA_MEDIDA if cuenta.get(k, 0) >= MINIMO_PARA_COLUMNA]
+    return elegidas, cuenta
+
+
 def hoja_catalogo(wb, d):
     ws = wb.create_sheet("Catálogo")
-    encabeza(ws, 1, [c[0] for c in CAT_COLS], [c[1] for c in CAT_COLS])
+    medidas, _ = columnas_medida(d["items"])
+    cols = list(CAT_COLS) + [(ETIQUETA_MEDIDA[k], 13) for k in medidas] + [("Otras medidas", 30)]
+    encabeza(ws, 1, [c[0] for c in cols], [c[1] for c in cols])
 
     ESTADOS = {"verificado": "Verificado", "estimado": "Estimado",
                "tarifario": "Tarifario oficial", "demo": "Estimado"}
@@ -239,8 +277,25 @@ def hoja_catalogo(wb, d):
             ws.cell(row=n, column=col).number_format = MONEDA
         ws.cell(row=n, column=13).number_format = ENTERO
 
+    # Las medidas, una por columna
+    base = len(CAT_COLS)
+    for n2, it in enumerate(d["items"], start=2):
+        med = it.get("medidas") or {}
+        for j, k in enumerate(medidas):
+            v = med.get(k)
+            if v not in (None, ""):
+                c = ws.cell(row=n2, column=base + 1 + j, value=v)
+                c.font = TXT
+        otras = [ETIQUETA_MEDIDA.get(k, k) + ": " + str(med[k])
+                 for k in med if k not in medidas and med[k] not in (None, "")]
+        if otras:
+            c = ws.cell(row=n2, column=base + 1 + len(medidas), value=" · ".join(otras))
+            c.font = TXT
+            c.alignment = Alignment(vertical="top", wrap_text=True)
+
     ultima = len(d["items"]) + 1
-    ws.auto_filter.ref = "A1:T%d" % ultima
+    ws.auto_filter.ref = "A1:%s%d" % (
+        get_column_letter(base + len(medidas) + 1), ultima)
     return ultima
 
 

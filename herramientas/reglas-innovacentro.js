@@ -160,105 +160,285 @@ const MAPEO = {
    Ítems nuevos
    ========================================================= */
 
-/* Los derretidos se agrupan a propósito. InnovaCentro tiene trece en funda
-   de 10 libras que solo se diferencian por el color, y el color casi no
-   mueve el precio. Un presupuesto dice «derretido, funda de 10 lb» y no
-   «derretido Sierra Snow»: van todos al mismo ítem y el rango de la ficha
-   enseña la diferencia entre marcas. */
-const DERRETIDO = {
-  cat: 'MAT-02',
-  clave: 'derretido-ceramica-10lb',
-  nombre: 'Derretido para cerámica, funda de 10 libras',
-  unidad: 'funda',
-  esp: 'Fragua en polvo para juntas de cerámica y porcelanato · funda de 10 libras',
-  etapa: 'pisos',
-  origen: 'importado',
-  alias: 'derretido, grout, fragua',
-  orden: 500
-};
+/* Los grupos donde el artículo se identifica por su uso y su presentación,
+   no por su marca. «Aditivo impermeabilizante de 1 galón» es un solo ítem
+   aunque lo vendan Cano, Lanco y Weco: la marca va en la cotización y el
+   rango de la ficha enseña cuánto se mueve el precio según cuál se elija. */
+const USOS = [
+  [/IMPERMEABILIZANTE|SILBOND|CB-606|CB-610|CB-1052/i, 'impermeabilizante'],
+  [/TEXTURIZADO/i,                                     'texturizado'],
+  [/FIBRA|MACROFIBRA/i,                                'fibra de refuerzo'],
+  [/PRIMER|EPOXICO/i,                                  'primer epóxico'],
+  [/ANCLAJE|GROUT/i,                                   'de anclaje'],
+  [/AUTONIVELANTE/i,                                   'autonivelante'],
+  [/HIRAULICO|HIDRAULICO/i,                            'hidráulico'],
+  [/PAÑETE|EMPAÑETE/i,                                 'de pañete'],
+  [/CERAMICA|PORCELANATO/i,                            'para cerámica'],
+  [/BLANCO/i,                                          'blanco'],
+  [/GRIS/i,                                            'gris']
+];
 
-/* Igual con el pegamento gris de 50 libras, que es la presentación estándar
-   del mercado y la que se presupuesta. */
-const PEGA_GRIS = {
-  cat: 'MAT-02',
-  clave: 'pegamento-ceramica-gris-50lb',
-  nombre: 'Pegamento de cerámica gris, funda 22.7 kg (50 lb)',
-  unidad: 'funda',
-  esp: 'Adhesivo cementicio gris para cerámica · funda de 50 libras',
-  etapa: 'pisos',
-  alias: 'pegamento de cerámica, mortero cola, pega',
-  orden: 510
-};
+/* La presentación: lo que de verdad distingue dos filas de la misma cosa. */
+function presentacion(a) {
+  const t = T.limpia((a.capacidad || '') + ' ' + (a['tamaño'] || '') + ' ' + a.nombre);
+  let m = t.match(/(\d+(?:[.,]\d+)?)\s*\/?\s*(\d)?\s*(GL|GAL[OÓ]N)/i);
+  if (m) return { texto: (m[2] ? m[1] + '/' + m[2] : m[1]) + ' galón', capacidad_gal: m[2] ? +m[1] / +m[2] : +m[1] };
+  m = t.match(/(\d+(?:[.,]\d+)?)\s*OZ/i);
+  if (m) return { texto: m[1] + ' oz', capacidad_oz: +m[1] };
+  m = t.match(/(\d+(?:[.,]\d+)?)\s*KG/i);
+  if (m) return { texto: m[1] + ' kg', peso_kg: parseFloat(m[1].replace(',', '.')) };
+  m = t.match(/(\d+(?:[.,]\d+)?)\s*LBS?\b/i);
+  if (m) return { texto: m[1] + ' lb', peso_lb: parseFloat(m[1].replace(',', '.')) };
+  return null;
+}
 
-/* Dónde cae cada grupo del comercio y con qué etapa de obra. */
+const uso = n => (USOS.filter(u => u[0].test(n))[0] || [null, ''])[1];
+
+/* Grupo del comercio → cómo se llama el ítem y dónde va. */
 const GRUPOS = {
-  'ADITIVOS PARA CONCRETOS':        ['MAT-02', 'estructura', 'aditivo para hormigón'],
-  'CEMENTOS':                       ['MAT-02', 'estructura', 'cemento'],
-  'MORTEROS':                       ['MAT-02', 'terminacion', 'mortero'],
-  'YESO':                           ['MAT-02', 'terminacion', 'yeso en polvo'],
-  'PEGAMENTOS PARA CERAMICA':       ['MAT-02', 'pisos', 'pegamento de cerámica'],
-  'DERRETIDOS DE PISOS':            ['MAT-02', 'pisos', 'derretido, grout'],
-  'PLANCHAS DE PLYWOOD':            ['MAT-06', 'estructura', 'plywood, plancha de madera'],
-  'CARTON PIEDRA':                  ['MAT-13', 'terminacion', 'cartón piedra'],
-  'PLANCHAS TIPO TEJAS':            ['MAT-07', 'techos', 'teja de fibra, plancha tipo teja'],
-  'CABALLETES PARA TECHOS':         ['MAT-07', 'techos', 'caballete, cumbrera'],
-  'PLANCHAS TRANSLUCIDAS':          ['MAT-07', 'techos', 'plancha translúcida'],
-  'PLAFONES':                       ['MAT-13', 'terminacion', 'plafón'],
-  'ANGULAR PARA PLATFON':           ['MAT-13', 'terminacion', 'perfilería de plafón, T-grid'],
-  'CROSS TEE PLATFOND':             ['MAT-13', 'terminacion', 'perfilería de plafón, T-grid'],
-  'MAIN TEE PLAFON':                ['MAT-13', 'terminacion', 'perfilería de plafón, T-grid'],
-  'DURMIENTE PARA PLAFON':          ['MAT-13', 'terminacion', 'durmiente, perfilería de plafón'],
-  'PARALES PARA PLAFON':            ['MAT-13', 'terminacion', 'paral, stud, perfilería'],
-  'PANELES DE YESO Y ACCESORIOS':   ['MAT-13', 'terminacion', 'plancha de yeso, drywall'],
-  'ANGULARES PERFORADOS':           ['MAT-20', 'estructura', 'angular perforado'],
-  'PRODUCTOS DE ALUMINIO':          ['MAT-23', 'puertas-ventanas', 'angular de aluminio'],
-  'MALLAS CICLONICAS Y ACCESORIOS': ['MAT-22', 'exteriores', 'malla ciclónica, verja'],
-  'ALAMBRES DE PUAS':               ['MAT-22', 'exteriores', 'alambre de púas'],
-  'ALAMBRES DE TRINCHERAS':         ['MAT-22', 'exteriores', 'alambre de trinchera'],
-  'PROTECCION PARA VERJAS':         ['MAT-22', 'exteriores', 'protección de verja, puya'],
-  'PLANCHAS DE ZINC ACANALADAS':    ['MAT-07', 'techos', 'plancha de zinc'],
-  '':                               ['MAT-18', 'exteriores', 'asfalto en frío']
+  'ADITIVOS PARA CONCRETOS':        ['MAT-02', 'estructura',  'Aditivo para hormigón',        'aditivo, impermeabilizante de mezcla'],
+  'CEMENTOS':                       ['MAT-02', 'estructura',  'Cemento',                      'cemento'],
+  'MORTEROS':                       ['MAT-02', 'terminacion', 'Mortero',                      'mortero, mezcla'],
+  'YESO':                           ['MAT-02', 'terminacion', 'Yeso en polvo',                'yeso'],
+  'PEGAMENTOS PARA CERAMICA':       ['MAT-02', 'pisos',       'Pegamento de cerámica',        'pegamento de cerámica, mortero cola'],
+  'DERRETIDOS DE PISOS':            ['MAT-02', 'pisos',       'Derretido para cerámica',      'derretido, grout, fragua'],
+  'PLANCHAS DE PLYWOOD':            ['MAT-06', 'estructura',  'Plywood',                      'plywood, plancha de madera'],
+  'CARTON PIEDRA':                  ['MAT-13', 'terminacion', 'Cartón piedra',                'cartón piedra'],
+  'PLANCHAS TIPO TEJAS':            ['MAT-07', 'techos',      'Plancha tipo teja de fibra',   'teja de fibra'],
+  'CABALLETES PARA TECHOS':         ['MAT-07', 'techos',      'Caballete de fibra para techo','caballete, cumbrera'],
+  'PLANCHAS TRANSLUCIDAS':          ['MAT-07', 'techos',      'Plancha translúcida',          'plancha translúcida'],
+  'PLAFONES':                       ['MAT-13', 'terminacion', 'Plafón',                       'plafón'],
+  'ANGULAR PARA PLATFON':           ['MAT-13', 'terminacion', 'Angular para plafón',          'perfilería de plafón, T-grid'],
+  'CROSS TEE PLATFOND':             ['MAT-13', 'terminacion', 'Cross tee para plafón',        'perfilería de plafón, T-grid'],
+  'MAIN TEE PLAFON':                ['MAT-13', 'terminacion', 'Main tee para plafón',         'perfilería de plafón, T-grid'],
+  'DURMIENTE PARA PLAFON':          ['MAT-13', 'terminacion', 'Durmiente para plafón',        'durmiente, perfilería'],
+  'PARALES PARA PLAFON':            ['MAT-13', 'terminacion', 'Paral para plafón',            'paral, stud, perfilería'],
+  'PANELES DE YESO Y ACCESORIOS':   ['MAT-13', 'terminacion', 'Plancha de yeso',              'plancha de yeso, drywall'],
+  'ANGULARES PERFORADOS':           ['MAT-20', 'estructura',  'Angular perforado',            'angular perforado'],
+  'PRODUCTOS DE ALUMINIO':          ['MAT-23', 'puertas-ventanas', 'Angular de aluminio',     'angular de aluminio'],
+  'MALLAS CICLONICAS Y ACCESORIOS': ['MAT-22', 'exteriores',  'Accesorio de malla ciclónica', 'accesorio de verja'],
+  'ALAMBRES DE PUAS':               ['MAT-22', 'exteriores',  'Alambre de púas',              'alambre de púas'],
+  'ALAMBRES DE TRINCHERAS':         ['MAT-22', 'exteriores',  'Alambre de trinchera',         'alambre de trinchera'],
+  'PROTECCION PARA VERJAS':         ['MAT-22', 'exteriores',  'Protección de verja',          'puya, protección de verja'],
+  'PLANCHAS DE ZINC ACANALADAS':    ['MAT-07', 'techos',      'Zinc acanalado',               'plancha de zinc'],
+  '':                               ['MAT-18', 'exteriores',  'Asfalto en frío',              'asfalto en frío, bacheo']
 };
 
-let orden = 0;
+const UNIDADES = { UND: 'unidad', FDA: 'funda', ROLLOS: 'rollo' };
 
 function regla(a) {
   if (MAPEO[a.codigo]) return { existente: MAPEO[a.codigo] };
 
-  const n = T.limpia(a.nombre);
-
-  /* Los dos agrupados, antes que la regla general. */
-  if (/^DERRETIDO/i.test(n) && /10 ?LB/i.test(n)) return Object.assign({}, DERRETIDO);
-  if (/^PEGAMENTO CERAMICA (PEGA ?TOD|PEGATOD|PEGA FORTE)/i.test(n)) return Object.assign({}, PEGA_GRIS);
-
   const g = GRUPOS[a.cat3];
   if (!g) return null;
-  const [cat, etapa, alias] = g;
+  const [cat, etapa, base, alias] = g;
 
-  /* La ficha tiene que decir de qué tamaño es. Sin eso no se presupuesta. */
-  const medida = [a.capacidad, a.tamaño, a.calibre].filter(Boolean).join(' · ');
-  if (!medida) return null;
+  const n = T.limpia(a.nombre);
+  const u = uso(n);
+  const p = presentacion(a);
 
-  const detalle = [];
-  if (a.marca) detalle.push('marca ' + a.marca);
-  if (a.material) detalle.push(a.material.toLowerCase());
-  if (medida) detalle.push(medida);
-  if (a.acabado) detalle.push(a.acabado.toLowerCase());
+  /* Sin presentación no hay ítem: «pegamento de cerámica» a secas no se
+     puede presupuestar ni comparar con nada. */
+  const tam = T.limpia(a['tamaño'] || '');
+  const cal = T.limpia(a.calibre || '').replace(/^Calibre\s*/i, '');
+  const medida = tam + (cal && tam.toLowerCase().indexOf(cal.toLowerCase()) < 0 ? ' calibre ' + cal : '');
+  if (!p && !medida) return null;
 
-  const UNIDADES = { UND: 'unidad', FDA: 'funda', ROLLOS: 'rollo' };
+  /* El uso solo se agrega si no está ya dicho en el nombre base: si no,
+     salen cosas como «Derretido para cerámica para cerámica». */
+  const partes = [base];
+  if (u && base.toLowerCase().indexOf(u.toLowerCase()) < 0) partes.push(u);
+  /* Y la medida suelta tampoco se repite si ya viene dentro del tamaño. */
+  const cola = p ? p.texto
+    : (medida.replace(/\s+/g, ' ').split(' ').filter((x, i, arr) => arr.indexOf(x) === i).join(' '));
 
-  orden += 1;
+  const medidas = {};
+  if (p) Object.keys(p).forEach(k => { if (k !== 'texto') medidas[k] = p[k]; });
+  if (a.calibre) medidas.calibre = T.limpia(a.calibre).replace(/^Calibre\s*/i, '');
+  if (a['tamaño']) medidas.tamano = T.limpia(a['tamaño']);
+  if (u) medidas.uso = u;
+
+  const nombre = partes.join(' ') + (cola ? ', ' + cola : '');
+
   return {
     cat: cat,
-    clave: T.clave(a.cat3 + '-' + a.nombre),
-    orden: orden,
-    nombre: titulo(a),
+    clave: T.clave(base + '-' + u + '-' + cola + '-' + (medidas.calibre || '')),
+    orden: 500,
+    nombre: T.recorta(nombre),
     unidad: UNIDADES[a.unidad] || 'unidad',
-    esp: detalle.join(' · '),
+    esp: '',
     etapa: etapa,
     origen: 'importado',
-    alias: alias
+    alias: alias,
+    medidas: medidas
   };
 }
 
 module.exports = { MAPEO, regla, titulo };
+
+/* =========================================================
+   BAÑOS
+
+   Aquí no hay casi nada que mapear a mano, y es a propósito. El
+   ítem es la especificación, así que basta con que este comercio
+   diga qué especificación tiene delante y la tabla compartida
+   —especificacion-banos.js— decide en qué fila cae, junto a la
+   de Ochoa. Los nombres de producto no se comparan nunca.
+
+   Este comercio lo pone fácil: publica columnas estructuradas.
+   «Tipo» trae Elongada o Redonda en los inodoros y Tope,
+   Pedestal, Pared o Empotrar en los lavamanos, que es justo el
+   eje que define el ítem. Ochoa eso hay que sacárselo del nombre.
+
+   El criterio de entrada es el mismo de siempre: equipamiento de
+   obra sí, repuesto de consumidor y menaje no, y los accesorios
+   solo como juego.
+   ========================================================= */
+
+const EB = require('./especificacion-banos.js');
+
+/* Grupo del comercio → familia de la tabla. Los inodoros se resuelven por
+   el nombre, porque el grupo INODOROS mezcla el aparato completo con el
+   tanque y la taza sueltos. */
+const FAMILIA_BANOS = {
+  'INODOROS FLUXOMETRO':       'inodoro-fluxometro',
+  'ORINALES':                  'urinario',
+  'BIDETS':                    'bide',
+  'LAVAMANOS':                 'lavamanos',
+  'MUEBLES PARA EL BAÑO':      'mueble-bano',
+  'BOTIQUINES':                'botiquin',
+  'ESPEJOS DE BANO':           'espejo',
+  'PANELES PARA DUCHA':        'cabina-ducha',
+  'BARRAS DE SEGURIDAD BANERA Y DUCHA': 'barra-seguridad',
+  'SECADORES DE MANO':         'secador-manos',
+  'DISPENSADORES DE JABON':    'dispensador-jabon',
+  'DISPENSADORES DE PAPEL':    'dispensador-papel',
+  'JUEGO DE ACCESORIOS PARA BANO': 'juego-accesorios'
+};
+
+/* Lo que se queda fuera, y por qué. Escrito grupo por grupo en vez de con
+   un descarte silencioso, para que se pueda discutir. */
+const FUERA_BANOS = {
+  'TAPAS PARA INODOROS':        'repuesto de consumidor',
+  'ALFOMBRAS PARA LA BANERA':   'textil, no obra',
+  'CORTINAS DE BANO':           'textil, no obra',
+  'BARRAS DE CORTINA DE BANO':  'menaje',
+  'JUEGO DE ARGOLLAS PARA CORTINAS': 'menaje',
+  'BALANZAS DE BANO':           'menaje',
+  'CEPILLOS DE BANO':           'menaje',
+  'DESTUPIDORES':               'menaje',
+  'ORGANIZADORES':              'menaje',
+  'VASOS PARA CEPILLOS':        'menaje',
+  'PORTA VASOS DE BANO':        'menaje',
+  'PLATO DE VIDRIO PARA JABONERA': 'menaje',
+  'TABURETES DE BAÑO':          'menaje',
+  'ESQUINEROS PARA BANO':       'menaje',
+  /* Estos cinco son piezas sueltas: por la regla de los accesorios solo
+     entra el juego completo. */
+  'JABONERAS':                  'pieza suelta de decoración',
+  'PORTA PAPELES DE BANO':      'pieza suelta de decoración',
+  'TOALLEROS PARA BANO':        'pieza suelta de decoración',
+  'GANCHOS PARA ROPA Y TOALLA': 'pieza suelta de decoración',
+  'REPISAS DE CRISTAL':         'pieza suelta de decoración'
+};
+
+const numero = s => { const v = parseFloat(String(s).replace(',', '.')); return isFinite(v) ? v : null; };
+
+function medidasBano(a, familia) {
+  const n = T.limpia(a.nombre);
+  const tipo = T.limpia(a.tipo || '').toLowerCase();
+  const m = {};
+
+  if (/^inodoro/.test(familia)) {
+    if (/elong|alarg/.test(tipo) || /elong|alarg/i.test(n)) m.forma = 'elongado';
+    else if (/redond/.test(tipo) || /redond/i.test(n)) m.forma = 'redondo';
+    const l = n.match(/(\d[.,]?\d?)\s*(?:LPD|LTS?|L)\b/i);
+    if (l) { const v = numero(l[1]); if (v && v >= 3 && v <= 12) m.descarga_l = v; }
+    const act = T.limpia(a.activador_descarga || '').toLowerCase();
+    if (/boton|bot[oó]n|push/.test(act)) m.descarga = 'push button';
+    else if (/palanca|balancin/.test(act)) m.descarga = 'palanca';
+  }
+
+  if (familia === 'lavamanos') {
+    if (/tope|sobrepon/.test(tipo)) m.montaje = 'sobreponer';
+    else if (/pedestal/.test(tipo)) m.montaje = 'pedestal';
+    else if (/empotr/.test(tipo)) m.montaje = 'empotrar';
+    else if (/pared/.test(tipo)) m.montaje = 'pared';
+  }
+
+  if (familia === 'mueble-bano') {
+    if (/pared/.test(tipo)) m.montaje = 'pared';
+    else if (/piso/.test(tipo)) m.montaje = 'piso';
+  }
+
+  if (familia === 'botiquin' || familia === 'espejo') {
+    if (/\bled\b/i.test(n)) m.luz = 'led';
+  }
+
+  if (familia === 'barra-seguridad') {
+    if (/tipo l|\ben l\b|\bl\b(?!\w)/i.test(n)) m.forma = 'en L';
+    else if (/abatible/i.test(n)) m.forma = 'abatible';
+    else if (/curva/i.test(n)) m.forma = 'curva';
+    else m.forma = 'recta';
+    const g = T.limpia(a.largo || a['tamaño'] || '');
+    let c = (g + ' ' + n).match(/(\d+(?:[.,]\d+)?)\s*cm\b/i);
+    if (c) m.largo_cm = EB.aCm(numero(c[1]), 'cm');
+    if (!m.largo_cm) { c = (g + ' ' + n).match(/(\d+)\s*(?:"|''|pulg)/i); if (c) m.largo_cm = EB.aCm(numero(c[1]), 'pulg'); }
+  }
+
+  if (familia === 'juego-accesorios') {
+    const p = n.match(/\b(\d)\s*\/\s*1\b/) || n.match(/\b(\d)\s*en\s*1\b/i) || n.match(/(\d)\s*(?:Pzas?|piezas?)\b/i);
+    if (p) m.piezas = +p[1];
+  }
+
+  if (familia === 'secador-manos' || familia === 'dispensador-jabon') {
+    if (/sensor|autom[aá]tic/i.test(n)) m.activacion = 'sensor';
+    else if (/bot[oó]n|manual|palanca/i.test(n)) m.activacion = 'boton';
+  }
+
+  if (familia === 'dispensador-papel') {
+    if (/toalla/i.test(n)) m.tipo_papel = 'toalla';
+    else if (/higienico|higi[eé]nico|jumbo|servilleta/i.test(n)) m.tipo_papel = 'papel higiénico';
+  }
+
+  /* Dimensiones declaradas, para que otro proveedor pueda emparejar por ahí
+     aunque no publique el tipo. */
+  const dim = T.limpia(a['tamaño'] || '') || n;
+  const d = dim.match(/(\d{2,4})\s*[xX]\s*(\d{2,4})\s*[xX]\s*(\d{2,4})\s*(mm|cm)?/i);
+  if (d) {
+    const u = (d[4] || (numero(d[1]) > 200 ? 'mm' : 'cm')).toLowerCase();
+    const fx = u === 'mm' ? 1 : 10;
+    m.largo_mm = numero(d[1]) * fx; m.ancho_mm = numero(d[2]) * fx; m.alto_mm = numero(d[3]) * fx;
+  }
+  const an = T.limpia(a.ancho || '').match(/(\d+(?:[.,]\d+)?)\s*cm/i);
+  if (an && !m.ancho_mm) m.ancho_mm = numero(an[1]) * 10;
+
+  return m;
+}
+
+function reglaBanos(a) {
+  const n = T.limpia(a.nombre);
+  let familia = FAMILIA_BANOS[a.cat3];
+
+  /* El grupo INODOROS mezcla el aparato completo con el tanque y la taza
+     sueltos, y nueve artículos vienen sin grupo. En los dos casos manda el
+     nombre. */
+  if (!familia || a.cat3 === 'INODOROS' || !a.cat3) {
+    if (/^INODORO/i.test(n)) familia = 'inodoro-una-pieza';
+    else if (/^TANQUE/i.test(n)) familia = 'inodoro-tanque';
+    else if (/^TAZA/i.test(n)) familia = a.cat3 === 'INODOROS FLUXOMETRO' || /FLUXOMETRO/i.test(n)
+      ? 'inodoro-fluxometro' : 'inodoro-basineta';
+    else if (/CAMBIADOR.*PARED/i.test(n)) familia = 'cambiador-bebes';
+    else familia = FAMILIA_BANOS[a.cat3];
+  }
+
+  /* La silla de baño y la silla de inodoro son ayudas técnicas portátiles,
+     no equipamiento anclado a la obra. */
+  if (/^SILLA/i.test(n)) return null;
+
+  if (!familia) return null;
+  return EB.item(familia, medidasBano(a, familia));
+}
+
+module.exports.reglaBanos = reglaBanos;
+module.exports.FUERA_BANOS = FUERA_BANOS;
