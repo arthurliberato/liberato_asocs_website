@@ -85,7 +85,7 @@ El generador:
 |---|---|
 | Precios, ítems y taxonomía | `precios/assets/js/datos-catalogo.js` |
 | Slug (URL) de cada categoría | campo `slug` en la lista `categorias` del mismo archivo |
-| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `herramientas/especificacion-segtec.js` |
+| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `-segtec.js`, `-baldosas.js` |
 | Texto, claves y FAQ de cada página | `herramientas/contenido-categorias.js` |
 | Plantilla y maquetación | `herramientas/generar-categorias.js` |
 
@@ -135,13 +135,13 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **812 ítems**. De ellos, **522 ya llevan un precio real** de un
-comercio que lo publica; 284 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,018 ítems**. De ellos, **732 ya llevan un precio real** de un
+comercio que lo publica; 280 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 522 ítems verificados hay **1,681 cotizaciones**, o sea **3.2 precios por
-ítem**: el catálogo no creció en filas, creció en profundidad.
+Detrás de esos 732 ítems verificados hay **2,641 cotizaciones**, o sea **3.6 precios por
+ítem**: el catálogo no creció solo en filas, creció en profundidad.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -171,8 +171,9 @@ así **no se puede comparar**, que es justo lo único que este sitio existe para
 un ítem por marca nunca hay dos comercios en la misma fila.
 
 Corregido, el catálogo pasó de **1,851 a 812 ítems** y los ítems con precio de más de un
-comercio subieron de 26 a **51**. No se perdió ni un precio: las 1,681 cotizaciones siguen
-todas ahí, solo que apiladas sobre la fila que les toca.
+comercio subieron de 26 a **51**. No se perdió ni un precio: las cotizaciones siguen todas
+ahí, solo que apiladas sobre la fila que les toca. (Con la extracción de baldosas que entró
+después, el catálogo va por 1,018 ítems y 2,641 cotizaciones.)
 
 ### Las tablas de especificación
 
@@ -183,6 +184,7 @@ lo que hace que el inodoro de Ochoa y el de InnovaCentro caigan en la misma fila
 |---|---|
 | `herramientas/especificacion-banos.js` | 28 familias de baño: inodoros por tipo de tanque y descarga, urinarios, lavamanos por montaje, muebles, cabinas, barras de seguridad, duchas, equipamiento de baño público |
 | `herramientas/especificacion-segtec.js` | 43 familias de corrientes débiles: cámaras, grabadores, alarma, incendio, cableado, racks, domótica, intercomunicación |
+| `herramientas/especificacion-baldosas.js` | 22 familias de piso y revestimiento: baldosa de campo, mosaico, peldaños, perfiles de canto, crucetas y niveladores, adoquines, tejas, adhesivos y morteros, herramienta del instalador |
 
 Cada familia declara su categoría, su unidad, los ejes de medida que la distinguen y cómo
 se arma el nombre. Las reglas de cada comercio no inventan nombres: leen el artículo,
@@ -196,7 +198,9 @@ publica las dimensiones de la taza. Si el ítem tuviera una sola medida, no habr
 dónde emparejarlos.
 
 Por eso cada ítem lleva un diccionario `medidas` con **una columna por eje**, y cada
-artículo que cae en él aporta las que trae:
+artículo que cae en él aporta las que trae, **siempre que no se contradigan**: si un
+artículo declara acabado mate y otro brillante, la medida se cae en vez de publicar como
+especificación del ítem lo que dijo una sola de sus fuentes.
 
 ```js
 it('MAT-24', 'Inodoro de una pieza, alargado, descarga 4.8 L', 'unidad', …, {
@@ -206,9 +210,9 @@ it('MAT-24', 'Inodoro de una pieza, alargado, descarga 4.8 L', 'unidad', …, {
 
 Un comercio que solo publica el litraje empareja por `descarga_l`; el que solo publica el
 largo, por `largo_cm`. Las medidas se acumulan: el ítem termina sabiendo más que cualquiera
-de sus fuentes por separado. Hoy 187 ítems llevan medidas estructuradas, con `uso`,
-`forma`, `ancho_mm`, `resolucion_mp`, `peso_lb`, `descarga_l`, `lente_mm`, `puertos` y
-`canales` entre las más usadas.
+de sus fuentes por separado. Hoy 393 ítems llevan medidas estructuradas, con `formato`,
+`material`, `uso`, `piezas_m2`, `forma`, `ancho_mm`, `resolucion_mp`, `peso_lb`,
+`descarga_l`, `lente_mm` y `puertos` entre las más usadas.
 
 Los largos se redondean a los 5 cm más cercanos antes de formar la clave, para que una
 barra de «90 cm» y una de «36 pulgadas» sean la misma barra y no dos.
@@ -296,7 +300,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **522 de 806 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **732 de 1,012 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -394,18 +398,19 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**1,681 cotizaciones reales cargadas · 522 ítems verificados de 806.**
+**2,641 cotizaciones reales cargadas · 732 ítems verificados de 1,012.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — cinco extracciones completas: el catálogo de Ochoa en materiales de
-  construcción (398 artículos, 349 con precio), baños (945 / 713) y seguridad y tecnología
-  (809 / 604), más los departamentos de materiales (118 / 118) y de baño (520 / 520) de
-  InnovaCentro. De sus 1,625 artículos aprovechados salieron **504 ítems nuevos que
-  nacieron verificados** y **49 cotizaciones sobre ítems que ya existían**.
+- **09/09/2026** — seis extracciones completas: el catálogo de Ochoa en materiales de
+  construcción (398 artículos, 349 con precio), baños (945 / 713), seguridad y tecnología
+  (809 / 604) y baldosas (1,334 / 1,226), más los departamentos de materiales (118 / 118)
+  y de baño (520 / 520) de InnovaCentro. De sus 2,718 artículos aprovechados salieron
+  **710 ítems nuevos que nacieron verificados** y **106 cotizaciones sobre ítems que ya
+  existían**.
 
-Los 284 ítems restantes siguen siendo estimaciones nuestras.
+Los 280 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -483,8 +488,10 @@ Cada archivo responde una pregunta distinta:
 | `reglas-banos.js` | Ochoa · baños: si es equipamiento de obra o repuesto de consumidor, y a qué especificación corresponde |
 | `reglas-segtec.js` | Ochoa · seguridad: si es sistema del edificio o accesorio de computadora, y a qué especificación corresponde |
 | `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo, en materiales y en baño |
+| `reglas-baldosas.js` | Ochoa · baldosas: qué es cada artículo una vez que se le quita la marca y el color, y cómo se pasa su precio a metro cuadrado |
 | `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
 | `especificacion-segtec.js` | Lo mismo para corrientes débiles |
+| `especificacion-baldosas.js` | Lo mismo para pisos, revestimientos y sus morteros |
 
 Todos comparten `texto-ochoa.js`, que expande las abreviaturas del comercio y separa
 las medidas pegadas para que el nombre quede legible sin inventarle nada.
@@ -602,6 +609,112 @@ La regla devuelve `null` cuando la ficha **no** declara la medida, y entonces el
 no entra. Es la mayor parte de lo que se descarta, y es deliberado: «Malla Ciclónica
 3.43Mm» aparece cuatro veces con precios de RD$ 5,223 a RD$ 13,273 y el nombre no dice la
 altura del rollo. Una fila así en un presupuesto es peor que ninguna fila.
+
+### Las baldosas: 1,226 precios en 206 filas
+
+Es la extracción más grande y la que mejor muestra por qué el ítem es la especificación.
+Ochoa publica 1,334 baldosas, 1,226 con precio, y casi todas son el mismo producto en otro
+color: «Fronda Musgo» y «Castle Light» son las dos cerámica de pared de 20 x 60 de PAMESA,
+y en un presupuesto son una sola partida.
+
+Una baldosa queda definida por tres cosas, que son las tres que un presupuesto escribe:
+**material** (cerámica o porcelanato), **uso** (piso, pared, o piso y pared) y **formato**.
+El color, el diseño, la colección y la marca no definen nada: van en la cotización.
+
+El acabado se queda fuera de la clave a propósito. Mate, brillante, pulido y antideslizante
+son diferencias reales, pero la ficha las escribe de 134 maneras distintas y las calla en
+382 artículos. Convertirlas en clave partiría los ítems según si el comercio se acordó de
+escribirlo, que es la peor razón posible para partir un ítem. Van registradas como medida,
+y solo cuando todos los artículos del ítem coinciden.
+
+Con eso, 1,150 artículos entran en 206 ítems de baldosas y sus vecinos, y el catálogo pasó
+de 812 a 1,018.
+
+#### El precio va por metro cuadrado
+
+La tienda cobra por pieza y la obra compra por metro. La referencia trae las dos cosas
+pegadas —`60X602.77MT/2` son 60 x 60 cm y 2.77 piezas por m²— y de ahí sale el precio por
+metro, que es el único número comparable entre formatos. La nota de cada cotización deja
+dicho el precio por pieza y las piezas por metro, para que se pueda rehacer la cuenta.
+
+Dónde termina el ancho y empieza el factor no se puede saber leyendo: `45X455.0MT/2` se
+lee igual como «45 x 4 con 55 piezas» que como «45 x 45 con 5 piezas». Se resuelve con
+geometría: la lectura buena es la que cuadra con 10000 / (largo × ancho), y una baldosa de
+campo no mide menos de 5 cm de lado.
+
+Dos trampas más, cada una descubierta por un número que no cuadraba:
+
+- **La pieza no siempre es rectangular.** En un hexágono el rectángulo que lo encierra
+  miente: 23.2 x 26.8 daría 16.07 piezas por metro y las que hacen falta son 21.62, porque
+  los hexágonos se traban. Cuando ninguna lectura cuadra con la geometría se acepta la del
+  comercio, siempre que esté en el mismo orden de magnitud. Y cuando el comercio no declara
+  el factor, el artículo no entra: calcularlo del formato daría un precio 34% bajo.
+- **Hay referencias mal escritas.** `50.8X50.3.86MT/2` perdió un 8, y se deja leer como
+  «50.3 con 6 piezas» partiendo un decimal por la mitad: un precio por metro 55% más alto.
+  Las dos mitades tienen que ser números completos.
+
+La prueba de que todo esto quedó bien es que el propio comercio publica su precio por metro
+cuadrado en 980 de las baldosas: **las 980 coinciden con el que sale de aquí**, hasta el
+centavo. Y de paso quedaron recuperadas 20 baldosas que su extracción había dejado sin
+precio por metro por ese mismo problema de lectura.
+
+#### El formato se ajusta al nominal
+
+Cada fábrica declara su medida real —30, 30.3, 30.5, 31, 31.5— y son todas el mismo
+formato: la obra las pide como «30 x 60». Sin ajustarlas, el catálogo saca seis ítems donde
+hay uno y se pierde justo la comparación que se busca.
+
+El ajuste lleva su propia trampa, y costó una vuelta descubrirla: con una lista larga de
+medidas el redondeo empieza a **inventar**. Un 52 x 17 real terminaba llamándose
+«50 x 17.5 cm», que no lo vende nadie. La lista se dejó corta, solo con los formatos que el
+mercado nombra, y lo que no cae dentro del 5% de uno de ellos se queda con su medida real.
+Así el 58 x 32 de CEDASA sigue siendo 58 x 32, que es como se vende.
+
+#### Los precios de liquidación no son referencia
+
+23 artículos están rebajados más del 50%, y uno llega al 99%: un mosaico que lista a
+RD$ 599.52 y se vende a RD$ 4.54. Es un precio real, pero no es una referencia de mercado —
+nadie presupuesta una obra con saldo de almacén—, y si entrara arrastraría la mediana de su
+formato hacia abajo. Se descartan y el informe dice por qué.
+
+El corte en 50% no es una opinión: el catálogo tiene 239 artículos rebajados hasta 40%
+—promociones normales, la mayoría entre 10% y 30%—, luego un hueco de casi nada, y después
+esos 23 entre 50% y 99%.
+
+#### Un solo precio cuando el comercio repite
+
+El derretido Eurojunta sale en 16 colores y los 16 cuestan RD$ 323.12. Bajo el modelo de
+especificación son **un** precio: publicarlos 16 veces llenaría la ficha de filas idénticas
+y le daría a ese comercio 16 votos en la mediana frente al único de otro. El importador
+colapsa las cotizaciones que comparten ítem, comercio y precio, y la nota dice cuántos
+artículos hay detrás.
+
+#### Lo que no era una baldosa
+
+El comercio archiva bajo «baldosas» cosas que el presupuesto busca en otro lado, y cada una
+se mandó a su categoría: los adhesivos, derretidos, estucos y hormigón seco a
+`MAT-02` (cemento y morteros), las tejas y los caballetes a `MAT-07` (techos), y las
+cortadoras, discos y llanas a `EQU-04` (herramientas). En pisos se quedaron, además de las
+baldosas, los mosaicos en malla, los peldaños, los perfiles de canto, las crucetas y
+niveladores y los adoquines.
+
+Se quedaron fuera 75 artículos, todos con su razón dicha: 23 por precio de liquidación, 16
+perfiles que no declaran material ni medida, 15 repuestos de corte sin medida, 6 cortadoras
+que no dicen su largo de corte, 5 crucetas que no dicen cuántas trae la funda —la misma
+cruceta de 2 mm aparece a RD$ 52.30 y a RD$ 12,274.78, así que sin ese dato el precio no
+dice nada—, 5 herramientas de Milwaukee que son de plomería y no de cerámica, y 5 más entre
+piezas de decoración suelta y fichas incompletas.
+
+Y uno que ni siquiera cuenta como descarte: un taco metálico archivado bajo «pavimentos»,
+que no es de este rubro. Para eso la regla distingue entre *no entra* y *no es de aquí*.
+
+#### Las cuatro baldosas del principio
+
+`MAT-08-001` a `MAT-08-004` eran estimaciones nuestras escritas con el nombre de la calle:
+«Cerámica nacional 33 x 33», «Porcelanato mate 60 x 60». Se reescribieron con el nombre de
+su especificación para que la extracción cayera encima en vez de duplicarlas, y tres de las
+cuatro pasaron a verificadas —el porcelanato de 60 x 60 con 31 cotizaciones—. La cuarta, el
+porcelanato de 80 x 80, sigue estimada porque Ochoa no lo vende.
 
 ### El campo que hace posible todo esto
 

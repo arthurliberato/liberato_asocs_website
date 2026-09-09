@@ -977,6 +977,7 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
 const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
+const BALDOSAS = require('./reglas-baldosas.js');
 
 const FUENTES = [
   {
@@ -1013,6 +1014,21 @@ const FUENTES = [
     regla: a => SEGTEC.regla(a) || null
   },
   {
+    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
+    etiqueta: 'Ochoa · baldosas',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: {},
+    /* undefined tiene que sobrevivir: es «familia sin regla», y no es lo mismo
+       que un descarte. En este catálogo hay un taco metálico archivado bajo
+       pavimentos que no es de este rubro y no tiene por qué contarse como
+       algo que se dejó fuera. */
+    regla: a => { const r = BALDOSAS.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-2026-09-09.json'),
     etiqueta: 'InnovaCentro · materiales de construcción',
     proveedor: 'InnovaCentro (La Innovación)',
@@ -1038,8 +1054,15 @@ const FUENTES = [
 ];
 
 /* Ochoa cotiza algunas barras POR PIE; la unidad completa son 20 pies,
-   como dice su propia nota de facturación. */
-const precioUnidad = a => a.unidad === 'PIE' ? a.precio * PIES_POR_UNIDAD : a.precio;
+   como dice su propia nota de facturación.
+
+   Las baldosas plantean lo mismo al revés: la tienda cobra por pieza y la
+   obra compra por metro cuadrado. Ahí el factor no es fijo —depende del
+   formato— y lo pone la regla en `_factorUnidad` al clasificar el artículo,
+   con la nota que explica de dónde sale. */
+const precioUnidad = a =>
+  a._factorUnidad ? a.precio * a._factorUnidad.veces :
+  a.unidad === 'PIE' ? a.precio * PIES_POR_UNIDAD : a.precio;
 
 const aExistente = [];
 const nuevos = [];
@@ -1060,6 +1083,7 @@ FUENTES.forEach(fuente => {
     }
     const spec = fuente.regla(a);
     if (spec === undefined) return;                       // familia sin regla
+    if (spec && spec.factorUnidad) a._factorUnidad = spec.factorUnidad;
     if (!spec) {
       descartados.push({ a, motivo: fuente.motivoDe ? fuente.motivoDe(a) : fuente.motivo });
       fuera++;
@@ -1142,15 +1166,43 @@ nuevosOk.forEach(x => {
   items[k].articulos.push(x.a);
   /* Las medidas se acumulan de todos los artículos que caen en el ítem: uno
      declara los litros del tanque y otro las dimensiones, y la ficha termina
-     sabiendo más que cualquiera de sus fuentes. Gana la primera que llegue,
-     que es la del comercio que la publicó. */
+     sabiendo más que cualquiera de sus fuentes.
+
+     Pero solo se publica lo que TODOS los artículos del ítem dicen igual. Si
+     uno declara acabado mate y otro brillante, la ficha del ítem no puede
+     decir «mate»: sería publicar como especificación lo que dijo una sola de
+     sus fuentes. En conflicto, la medida se cae. */
   if (x.spec.medidas) {
     const m = items[k].spec.medidas || (items[k].spec.medidas = {});
+    const roto = items[k].medidasEnConflicto || (items[k].medidasEnConflicto = {});
     Object.keys(x.spec.medidas).forEach(kk => {
-      if (m[kk] === undefined || m[kk] === '' || m[kk] === null) m[kk] = x.spec.medidas[kk];
+      const v = x.spec.medidas[kk];
+      if (v === undefined || v === '' || v === null) return;
+      if (roto[kk]) return;
+      if (m[kk] === undefined || m[kk] === '' || m[kk] === null) { m[kk] = v; return; }
+      if (String(m[kk]) !== String(v)) { roto[kk] = true; delete m[kk]; }
     });
   }
 });
+
+/* El mismo ítem, el mismo comercio y el mismo precio, varias veces: el
+   derretido Eurojunta sale en 16 colores y los 16 cuestan RD$ 323.12. Bajo el
+   modelo de especificación son un solo precio, y publicarlos 16 veces llenaría
+   la ficha de filas idénticas y le daría a ese comercio 16 votos en la
+   mediana. Se deja una cotización y se dice cuántos artículos la comparten. */
+function colapsar(articulos) {
+  const vistos = {};
+  const salida = [];
+  articulos.forEach(a => {
+    const k = a._fuente.etiqueta + '|' + Math.round(precioUnidad(a) * 100);
+    if (vistos[k]) { vistos[k].repite++; return; }
+    vistos[k] = { a: a, repite: 1 };
+    salida.push(vistos[k]);
+  });
+  return salida;
+}
+
+Object.keys(items).forEach(k => { items[k].cotizables = colapsar(items[k].articulos); });
 
 const lista = Object.keys(items).map(k => items[k]);
 lista.sort((p, q) => p.spec.cat.localeCompare(q.spec.cat) || (p.spec.orden - q.spec.orden) ||
@@ -1253,7 +1305,7 @@ function bloqueItems() {
     /* El precio de referencia sale de la cotización real; el sitio lo
        recalcula igual al arrancar, pero así el HTML generado ya nace
        con el número correcto aunque el JavaScript no llegue a correr. */
-    const precios = e.articulos.map(precioUnidad);
+    const precios = e.cotizables.map(c => precioUnidad(c.a));
     const ref = num(mediana(precios));
     const med = s.medidas || {};
     const claves = Object.keys(med).filter(k => med[k] !== '' && med[k] !== null && med[k] !== undefined);
@@ -1279,13 +1331,27 @@ function bloqueItems() {
   return L.join('\n');
 }
 
+/* Lo mismo que colapsar(), para los artículos que caen en un ítem que ya
+   existía: ahí el ítem no se genera, así que hay que agrupar por código. */
+function colapsarPorItem(entradas) {
+  const vistos = {};
+  const salida = [];
+  entradas.forEach(x => {
+    const k = x.item + '|' + x.a._fuente.etiqueta + '|' + Math.round(precioUnidad(x.a) * 100);
+    if (vistos[k]) { vistos[k].repite++; return; }
+    vistos[k] = { item: x.item, a: x.a, repite: 1 };
+    salida.push(vistos[k]);
+  });
+  return salida;
+}
+
 function bloqueCotizaciones() {
   const L = [];
   L.push('  /* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.');
   L.push('     No editar a mano: se reescribe en cada importación. */');
   L.push('');
 
-  const linea = (item, a, extra) => {
+  const linea = (item, a, repite) => {
     /* La referencia del fabricante va en la nota porque es la prueba: es
        donde la tienda declara la medida que su propio nombre se calla. */
     const ficha = [a.nombre, 'artículo ' + a.codigo];
@@ -1294,7 +1360,9 @@ function bloqueCotizaciones() {
     const notas = [ficha.join(' · ')];
     if (a.unidad === 'PIE') notas.push('La tienda cotiza por pie y factura la unidad de ' +
       PIES_POR_UNIDAD + ' pies; aquí va el precio de la unidad completa');
-    if (extra) notas.push(extra);
+    if (a._factorUnidad) notas.push(a._factorUnidad.nota + ' (RD$ ' + num(a.precio) + ' por pieza)');
+    if (repite > 1) notas.push('El comercio lista ' + repite + ' artículos con esta misma ' +
+      'especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización');
     const f = a._fuente;
     return "  c('" + item + "', " + f.constante + ", " + num(precioUnidad(a)) + ", {\n" +
            "    fecha: '" + f.fecha + "', fuente: 'Precio publicado en " + esc(a.url) + "',\n" +
@@ -1311,14 +1379,14 @@ function bloqueCotizaciones() {
       if (!suyas.length) return;
       L.push('');
       L.push('  /* ' + f.etiqueta + ' */');
-      suyas.forEach(x => L.push(linea(x.item, x.a)));
+      colapsarPorItem(suyas).forEach(c => L.push(linea(c.item, c.a, c.repite)));
     });
     L.push('');
   }
   L.push('  /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */');
   lista.forEach(e => {
     const cod = codigoDe[e.spec.cat + '|' + e.spec.clave];
-    e.articulos.forEach(a => L.push(linea(cod, a)));
+    e.cotizables.forEach(c => L.push(linea(cod, c.a, c.repite)));
   });
   L.push('  /* catalogos:cotizaciones:fin */');
   return L.join('\n');

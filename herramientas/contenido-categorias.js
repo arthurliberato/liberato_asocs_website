@@ -173,8 +173,8 @@ module.exports = {
   desc: 'Precios de referencia por m² de cerámica, porcelanato, piedra natural, vinílico y topes de granito y cuarzo en República Dominicana.',
   h1: 'Precio de la cerámica, el porcelanato y los pisos en República Dominicana',
   intro: [
-    'Los revestimientos se cotizan por metro cuadrado o por caja, y la primera trampa está ahí: cada caja rinde una cantidad distinta de m² según el formato, así que un precio por caja no dice nada hasta que se convierte. La segunda es que el material es apenas una parte del costo: el pegamento correcto, la nivelación, el derretido y la mano de obra suelen sumar tanto como la pieza.',
-    'El rango de precios en esta categoría es el más amplio de todo el catálogo, porque conviven la cerámica nacional de tránsito medio y el porcelanato importado de gran formato. Comparar precios sin fijar formato, acabado y si es rectificado es comparar cosas distintas.'
+    'Los revestimientos se venden por pieza y se compran por metro cuadrado, y la primera trampa está ahí: cada formato rinde una cantidad distinta de piezas por m², así que un precio por pieza no dice nada hasta que se convierte. Aquí ya viene convertido: cada precio es por metro cuadrado, con las piezas por metro que declara el propio comercio. La segunda trampa es que el material es apenas una parte del costo: el pegamento correcto, la nivelación, el derretido y la mano de obra suelen sumar tanto como la pieza.',
+    'Cada fila es una especificación de compra —cerámica o porcelanato, de piso o de pared, y el formato—, no una marca ni un color. Un mismo renglón puede tener veinte diseños detrás y por eso el rango se abre: en 45 x 45 conviven la cerámica nacional básica y una importada que cuesta cuatro veces más. Ese ancho es el dato, no un error: dice cuánto se puede mover el presupuesto sin cambiar de especificación.'
   ],
   claves: [
     ['Convertir caja a metro cuadrado', 'Pedir siempre el rendimiento en m² por caja. Es el único modo de comparar dos precios.'],
