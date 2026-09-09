@@ -410,6 +410,72 @@ module.exports = {
   ]
 },
 
+'MAT-19': {
+  titulo: 'Precio de perfiles y tubos de acero en RD',
+  desc: 'Precio por medida de la perfilería cuadrada y rectangular, negra y galvanizada, la tubería negra y las correas tipo Z, en tramos de 20 pies.',
+  h1: 'Precio de los perfiles y tubos de acero en República Dominicana',
+  intro: [
+    'La perfilería es el material de la herrería y de la estructura liviana: portones, rejas, marquesinas, naves, entrepisos metálicos y todo el techo de lámina. Se vende en tramos de 20 pies, que es la unidad completa que factura el suplidor, y el precio cambia con tres cosas al mismo tiempo: la medida de la sección, el espesor de la pared y el acabado.',
+    'Ese tercer dato es el que más se pierde al pedir precio por teléfono. Un perfil cuadrado de 1½ x 1½ pulgadas con pared de 1.2 mm y uno de la misma medida con pared de 1.6 mm son dos productos distintos, con dos precios distintos y dos capacidades distintas. Por eso en esta página cada fila trae la pared en milímetros: sin ella, comparar dos cotizaciones es comparar nombres, no materiales.'
+  ],
+  claves: [
+    ['La pared es la mitad del precio', 'A igual medida, subir de 1.2 a 1.6 mm de pared encarece el perfil de forma notable. Pedir siempre la pared en milímetros, no solo «tubo cuadrado de 2 pulgadas».'],
+    ['Negro o galvanizado', 'El galvanizado cuesta más y se justifica en exteriores y zonas costeras. En interiores protegidos, el negro pintado suele ser la decisión correcta.'],
+    ['La unidad son 20 pies', 'El suplidor factura el tramo completo. Comprar cortado casi siempre sale más caro por pie y, en muchas casas, no admite devolución.'],
+    ['El acero se paga al peso', 'Aunque el mostrador cotice por unidad, detrás hay un precio por libra bastante estable dentro de cada familia. Es la mejor forma de detectar una cotización fuera de mercado.']
+  ],
+  faq: [
+    ['¿Qué diferencia hay entre un perfil cuadrado y un tubo negro redondo?',
+     'La sección y el uso. El perfil cuadrado o rectangular es más fácil de unir a escuadra y domina en herrería y estructura liviana. El tubo redondo se usa en columnas, postes y estructuras donde importa el comportamiento a torsión. A igual peso, el precio por libra es parecido.'],
+    ['¿Por qué me cotizan el perfil por pie si la unidad son 20 pies?',
+     'Algunas casas manejan el precio por pie en el sistema, pero facturan la unidad completa de 20 pies. Al comparar precios hay que llevar los dos a la misma base: un precio por pie multiplicado por veinte, o el tramo completo. Si no, la diferencia parece enorme y no lo es.']
+  ]
+},
+
+'MAT-20': {
+  titulo: 'Precio de angulares y planchuelas de hierro en RD',
+  desc: 'Precio por medida de angulares, planchuelas y barras lisas de hierro negro en República Dominicana, en barras de 20 pies y con su peso.',
+  h1: 'Precio de angulares, planchuelas y barras de hierro en República Dominicana',
+  intro: [
+    'Es el acero comercial de toda la vida: el angular en L, la planchuela plana —la pletina— y la barra lisa, cuadrada o redonda. Se usa en marcos de puertas y ventanas, rejas, escaleras, refuerzos, bases de equipos y en cualquier detalle que un herrero resuelva soldando. Todo se vende en barras de 20 pies.',
+    'La medida es el precio. Un angular de 1 x 1/8 de pulgada y uno de 2 x 1/4 no se parecen en nada: el segundo pesa cuatro veces más y cuesta cuatro veces más. Por eso el listado de abajo va abierto por medida exacta, y no como un renglón genérico de «angular»: en un presupuesto, esa fila genérica es la que después no cuadra.'
+  ],
+  claves: [
+    ['Se paga por libra', 'Dentro de cada familia el precio por libra es casi constante. Un angular que se aparte mucho de ese valor por libra es una cotización que hay que revisar antes de aceptar.'],
+    ['La medida completa lleva dos números', 'El ala y el espesor. «Angular de 1 pulgada» no dice nada: hay de 1 x 1/8, 1 x 3/16 y 1 x 1/4, con precios muy distintos.'],
+    ['Planchuela no es lo mismo que fleje', 'La planchuela de hierro negro va estructural y soldada. El fleje delgado de ferretería es otro producto y no sustituye a la pletina en un marco cargado.'],
+    ['La barra lisa no es varilla', 'La barra redonda lisa no tiene corrugas y no trabaja como refuerzo de hormigón. Para acero de refuerzo, la varilla corrugada grado 60 es lo que corresponde.']
+  ],
+  faq: [
+    ['¿Cuánto pesa un angular de hierro negro?',
+     'Depende de la medida: uno de 1 x 1/8 de pulgada pesa alrededor de 16 libras la barra de 20 pies, y uno de 4 x 1/2 pasa de las 250. El peso es el mejor dato para verificar una cotización, porque el mercado del acero comercial se mueve con un precio por libra bastante parejo.'],
+    ['¿Puedo usar barra redonda lisa en lugar de varilla corrugada?',
+     'No para acero de refuerzo. La corruga es la que genera la adherencia con el hormigón y está normada. La barra lisa se usa en herrería, pasadores, ejes y elementos decorativos.']
+  ]
+},
+
+'MAT-21': {
+  titulo: 'Precio de tolas y láminas de acero en RD',
+  desc: 'Precio por espesor de las tolas negras, corrugadas antideslizantes y galvanizadas en República Dominicana, en planchas de 4 x 8 y 4 x 10 pies.',
+  h1: 'Precio de las tolas y láminas de acero en República Dominicana',
+  intro: [
+    'La tola es la plancha de acero, y en obra aparece en más sitios de los que uno espera: tapas de registro, rampas, bases de máquina, refuerzos, tanques, escalones antideslizantes y todo tipo de trabajo de calderería. Se identifica por dos datos, el espesor y la medida de la plancha, y se vende por plancha completa.',
+    'Hay tres familias que no se sustituyen entre sí. La tola negra es acero laminado sin recubrimiento, la más común y la más barata por libra. La corrugada trae relieve antideslizante y va en pisos y rampas de tránsito. La galvanizada trae recubrimiento de zinc y es la que aguanta intemperie. Al pedir precio conviene decir cuál de las tres, porque la diferencia es grande.'
+  ],
+  claves: [
+    ['Espesor y medida de plancha', 'Los dos datos juntos. Una tola de 1/8 en 4 x 8 pies y la misma de 1/8 en 5 x 10 son planchas distintas y precios distintos.'],
+    ['El peso verifica el precio', 'La plancha se paga al peso. Conocer las libras de la plancha permite comprobar si una cotización está dentro de mercado.'],
+    ['Corte y desperdicio', 'Casi nunca se usa la plancha entera. Al presupuestar hay que contar el desperdicio del despiece y, si aplica, el costo de corte del suplidor.'],
+    ['Galvanizada para intemperie', 'La tola negra a la intemperie se oxida rápido en clima costero. Si va a quedar expuesta, la galvanizada o un sistema de pintura completo dejan de ser opcionales.']
+  ],
+  faq: [
+    ['¿Cuál es la diferencia entre tola negra, corrugada y galvanizada?',
+     'La negra es acero laminado sin recubrimiento, de uso general. La corrugada trae un relieve en relieve para dar agarre y va en pisos, rampas y escalones. La galvanizada lleva recubrimiento de zinc y resiste la intemperie. Se piden por espesor y por medida de plancha.'],
+    ['¿En qué medidas viene la plancha?',
+     'Las más comunes en el mercado dominicano son 4 x 8 pies, 4 x 10 y 5 x 10, con espesores desde 1/32 hasta 1 pulgada. No todas las combinaciones están disponibles en todo momento: conviene confirmar existencia antes de cerrar un despiece.']
+  ]
+},
+
 'MOS-01': {
   titulo: 'Precio del jornal de albañil y mano de obra en RD',
   desc: 'Jornales diarios de referencia de maestro constructor, albañil, ayudante, plomero, electricista, pintor y demás oficios en República Dominicana.',

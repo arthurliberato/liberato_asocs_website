@@ -18,7 +18,7 @@ precios/
   catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           27 páginas estáticas, una por categoría   ← GENERADAS
+  precio-*.html           30 páginas estáticas, una por categoría   ← GENERADAS
   costo-licencias-…html
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
@@ -46,7 +46,7 @@ python3 -m http.server 8000
 
 ---
 
-## Las 27 páginas de categoría (generadas)
+## Las 30 páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
@@ -128,14 +128,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-**Los 253 ítems están cargados como `estimado`.** Son estimaciones de arranque para
-poder publicar el sitio; ninguna proviene todavía de una cotización formal, y el sitio
-lo dice de forma visible en todas las páginas. Sustituirlos por cotizaciones reales
-es el trabajo pendiente más importante.
+El catálogo tiene **445 ítems**. De ellos, **151 ya llevan un precio real** de un comercio
+que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
+páginas.
 
-Arranque recomendado: los **100–150 ítems de alta rotación** (obra gris más
-instalaciones básicas) y expandir por categoría según la demanda que muestren las
-búsquedas.
+Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
+importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
+herramientas de recolección por tandas y el importador de catálogos de proveedor.
 
 ### Frecuencia de actualización sugerida
 
@@ -184,7 +184,9 @@ escriba el nombre correcto de la calle y no encuentre nada.
 **El sitio se publica cuando cada ítem tenga al menos un precio real.** Mientras tanto los
 montos son estimaciones nuestras y el sitio lo dice en todas las páginas.
 
-Conviene tenerlo presente al agregar ítems: cada ítem nuevo es un precio más que levantar.
+Conviene tenerlo presente al agregar ítems a mano: cada ítem nuevo es un precio más que
+levantar. La excepción son los que entran por `importar-ochoa.js`, que llegan con su
+cotización real puesta: esos suman al catálogo sin alejar el lanzamiento.
 
 ### Cómo va la cobertura
 
@@ -194,7 +196,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **13 de 302 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **151 de 439 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -292,40 +294,83 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**16 cotizaciones reales cargadas · 13 ítems verificados de 308.**
+**189 cotizaciones reales cargadas · 151 ítems verificados de 439.**
 
-Dos tandas, ambas de precios que los propios comercios publican:
+Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — 7 cotizaciones de una extracción completa del catálogo de construcción
-  de Ochoa: 398 artículos, 349 con precio. Cargadas solo las correspondencias verificadas
-  una por una; el resto del archivo queda como fuente para ampliar el catálogo.
+- **09/09/2026** — extracción completa del catálogo de construcción de Ochoa: 398
+  artículos, 349 con precio. De ahí salieron 8 cotizaciones sobre ítems que ya existían
+  y **137 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
+  estimación nuestra.
 
-Los 295 ítems restantes siguen siendo estimaciones nuestras.
+Los 288 ítems restantes siguen siendo estimaciones nuestras.
 
-### Cómo importar una extracción de proveedor
+Las tres categorías nuevas —`MAT-19` perfiles y tubos, `MAT-20` angulares, planchuelas y
+barras, `MAT-21` tolas y láminas— salieron enteras de esa extracción: son 126 ítems que
+el catálogo no tenía y que llegaron verificados desde el primer día.
+
+## Importar el catálogo de un proveedor
 
 ```bash
-node herramientas/importar-ochoa.js <extraccion.json>
+node herramientas/importar-ochoa.js              # revisar, sin escribir
+node herramientas/importar-ochoa.js --escribir   # aplicar
+node herramientas/generar-categorias.js          # rehacer las páginas
 ```
 
-Genera las cotizaciones listas para pegar y, sobre todo, **descarta los precios
-imposibles antes de que lleguen al sitio**. El acero se vende por peso, así que dentro de
-una familia el precio por libra es casi constante: en los angulares de Ochoa da RD$ 35.00
-por libra en ocho de nueve medidas. Una pieza que se sale más de un 35% de la mediana de
-su familia no se carga.
+La fuente es `herramientas/datos-externos/ochoa-AAAA-MM-DD.json`, la extracción del
+catálogo tal como la publica el comercio. **Queda versionada en el repositorio** para que
+cualquiera pueda repetir la importación y ver de dónde salió cada número.
 
-En la extracción del 09/09/2026 eso descartó seis precios, cuatro de ellos a RD$ 1.9 por
-libra cuando su familia va a 35: errores de la propia ficha del proveedor que habríamos
-publicado como buenos.
+La herramienta escribe entre marcadores: `ochoa:items` en `datos-catalogo.js` y
+`ochoa:cotizaciones` en `datos-precios.js`. Todo lo que hay entre ellos se reescribe
+entero en cada corrida, así que no se edita a mano. Correrla dos veces seguidas deja los
+archivos idénticos.
 
-El mapeo de artículo del proveedor a ítem nuestro se declara a mano, por código, dentro
-del importador. No se empareja automáticamente: probamos un emparejador por similitud de
-texto y confundía una funda de arena de 55 libras con un viaje de 16 metros cúbicos.
+### Cómo decide qué entra
 
-### El ITBIS de esta primera tanda
+**1. `MAPEO`** — artículos que corresponden a un ítem que ya existe. Se declaran a mano,
+uno por uno. No hay emparejamiento automático por parecido de texto: lo probamos y casó
+«Funda De Arena 55 Libras» con «Viaje de arena, 16 m³».
 
-### El ITBIS de esta primera tanda
+**2. `REGLAS`** — familias completas donde la ficha del comercio declara la medida
+exacta. De cada artículo sale un ítem nuevo del catálogo, ya verificado.
+
+La regla devuelve `null` cuando la ficha **no** declara la medida, y entonces el artículo
+no entra. Es la mayor parte de lo que se descarta, y es deliberado: «Malla Ciclónica
+3.43Mm» aparece cuatro veces con precios de RD$ 5,223 a RD$ 13,273 y el nombre no dice la
+altura del rollo. Una fila así en un presupuesto es peor que ninguna fila.
+
+### El campo que hace posible todo esto
+
+El nombre del artículo muchas veces se calla la medida —«Alambre Liso Galvanizado», sin
+más— pero **la referencia del fabricante sí la trae**: `C-18ROLLO/GDE.`. Lo mismo con las
+mallas electrosoldadas, donde `W2.3X2.3100X100` declara el calibre del alambre y la
+retícula que el nombre no menciona. Sin ese campo, la mitad de las correspondencias
+serían suposiciones nuestras; con él son datos del comercio, y por eso la referencia
+queda escrita en la nota de cada cotización, visible en el sitio.
+
+### Cómo valida los precios
+
+El acero se vende al peso: dentro de una familia, el precio por libra es casi constante.
+Los angulares de Ochoa dan **RD$ 35.00 por libra clavados en 15 de 21 medidas**. Eso da
+una prueba objetiva: se calcula la mediana de RD$/lb de la familia y se rechaza lo que se
+aparte más del 35%.
+
+Ojo con la unidad. Algunos artículos se cotizan **por pie**, y la unidad completa son 20
+pies, como dice la propia nota de facturación de Ochoa. Sin esa corrección, un angular de
+20.20 lb parece costar RD$ 1.93 la libra en vez de RD$ 38.66, y se descartaría un precio
+perfectamente bueno. La nota de esas cotizaciones lo deja dicho.
+
+En la extracción del 09/09/2026 la validación rechazó dos precios: una tola galvanizada a
+RD$ 48.11 la libra y una tola negra a RD$ 9.33, contra los RD$ 26.80 de su familia.
+
+El peso también verifica el espesor. Una plancha de 4 x 8 pies pesa unas 40.8 libras por
+cada 1/32" de espesor, y por eso el peso va en la especificación de cada tola: fue lo que
+confirmó que el raro «1/22"» del catálogo de Ochoa es un espesor real —0.045", el
+equivalente a 1.15 mm— y no un error de tipeo.
+
+### El ITBIS de estas tandas
 
 Ninguna de esas fichas declara si el precio incluye el impuesto. Se registran con
 `itbis: true` porque en República Dominicana el precio de mostrador al consumidor se
@@ -545,7 +590,7 @@ Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose dis
 hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
-  generador: eso rehace las 27 páginas de categoría, la portada y el `sitemap.xml`;
+  generador: eso rehace las 30 páginas de categoría, la portada y el `sitemap.xml`;
 - las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
@@ -571,7 +616,7 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 27 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
+- Las 30 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
   el catálogo interactivo funcionan como concentradores.
 - `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
   ya no está en el `sitemap.xml`: la versión indexable de esa categoría es
