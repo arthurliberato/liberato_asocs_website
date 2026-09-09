@@ -104,15 +104,12 @@
     nota: 'Varilla 3/8 x 20 pies grado 60, precio por unidad. ' + SUPUESTO_ITBIS
   });
 
-  c('MAT-06-005', 'InnovaCentro (La Innovación)', 1495, {
-    fecha: '2026-09-08', fuente: 'Precio publicado en innovacentro.com.do',
-    nota: 'Plancha de pino 4 x 8 x 1/2, artículo 004929. La misma medida en okume cuesta RD$ 1,395. ' + SUPUESTO_ITBIS
-  });
-
-  c('MAT-06-006', 'InnovaCentro (La Innovación)', 1895, {
-    fecha: '2026-09-08', fuente: 'Precio publicado en innovacentro.com.do',
-    nota: 'Plancha de okume 4 x 8 x 3/4, artículo 025846; no había pino de ese espesor con precio publicado. ' + SUPUESTO_ITBIS
-  });
+  /* Las dos planchas de plywood de InnovaCentro que estaban aquí, tomadas a
+     mano el 08/09/2026, las reemplazó la extracción completa del 09/09: son
+     los mismos artículos 004929 y 025846, con precio de la misma tienda un
+     día después. Ahora entran por el importador, con su ficha versionada.
+     De paso quedó dicho que el precio se movió: el pino de 1/2 estaba en
+     RD$ 1,495 y aparece en 1,425. */
 
   /* Los dos tubos de PVC vienen en presentación de 19 pies, no de 20 como
      dice la ficha del ítem. Se registran con su unidad real: el modelo los
@@ -161,11 +158,16 @@
      ===================================================================== */
 
   var PROV_OCHOA = 'Ferretería Ochoa (8A)';
+  var PROV_INNOVA = 'InnovaCentro (La Innovación)';
 
-/* ochoa:cotizaciones:inicio — generado por herramientas/importar-ochoa.js.
+/* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.
      No editar a mano: se reescribe en cada importación. */
 
-  /* Artículos que corresponden a un ítem que ya existía. */
+  /* Artículos que corresponden a un ítem que ya existía. Aquí es donde
+     el catálogo se vuelve comparable: el mismo ítem con el precio de
+     más de un comercio. */
+
+  /* Ochoa · materiales de construcción */
   c('MAT-04-021', PROV_OCHOA, 62.48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-liso-galvanizado-02450011',
     nota: 'Alambre Liso Galvanizado · artículo 02-45-0011 · ref. C-18ROLLO/GDE. · marca GALV-ALAMBRE. ' + SUPUESTO_ITBIS
@@ -199,6 +201,172 @@
     nota: 'Cemento Blanco Perla Del Sur · artículo 04-59-0391 · ref. FUNDA40KG · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
 
+  /* InnovaCentro · materiales de construcción */
+  c('MAT-02-004', PROV_INNOVA, 570, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/calhidratada/cal-hidratada-empañete-44-lb-perla-026053',
+    nota: 'CAL HIDRATADA EMPAÑETE 44 LB PERLA · artículo 026053 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-057', PROV_INNOVA, 57, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-en-funda-2-lb-009121',
+    nota: 'CEMENTO BLANCO EN FUNDA 2 LB · artículo 009121 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-058', PROV_INNOVA, 132, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-en-funda-5-lb-009110',
+    nota: 'CEMENTO BLANCO EN FUNDA 5 LB · artículo 009110 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-002', PROV_INNOVA, 755, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-funda-25-kg-015794',
+    nota: 'CEMENTO BLANCO FUNDA 25 KG · artículo 015794 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-003', PROV_INNOVA, 1295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-funda-40-kg-057367',
+    nota: 'CEMENTO BLANCO FUNDA 40 KG · artículo 057367 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-056', PROV_INNOVA, 173, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementogris/cemento-gris-10-lb-057347',
+    nota: 'CEMENTO GRIS 10 LB · artículo 057347 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-001', PROV_INNOVA, 655, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementogris/cemento-gris-titan-94-lb-023108',
+    nota: 'CEMENTO GRIS TITAN 94 LB · artículo 023108 · ref. Cemento · marca TITAN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_INNOVA, 690, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/estuco-interior-forte-blanco-35-lb-065073',
+    nota: 'ESTUCO INTERIOR FORTE BLANCO 35 LB · artículo 065073 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-009', PROV_INNOVA, 330, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-pañete-forte-94-lb-normal-065070',
+    nota: 'MORTERO PAÑETE FORTE 94 LB NORMAL · artículo 065070 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-009', PROV_INNOVA, 384, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-pañete-titan-42-5-kg-normal-023111',
+    nota: 'MORTERO PAÑETE TITAN 42.5 KG NORMAL · artículo 023111 · marca TITAN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-007', PROV_INNOVA, 1054, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-900-we0810457-blanco-50-058654',
+    nota: 'PEGAMENTO CERAMICA WECO W-900 WE0810457 BLANCO 50 LB · artículo 058654 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-006', PROV_INNOVA, 595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/plafones/plafon-biselado-pebble-2x2-046360',
+    nota: 'PLAFON BISELADO PEBBLE 2X2\' · artículo 046360 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-005', PROV_INNOVA, 1520, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-2-7-025844',
+    nota: 'PLYWOOD OKUME 4\'X8\'X1/2" · artículo 025844 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-006', PROV_INNOVA, 1990, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-4-7-025846',
+    nota: 'PLYWOOD OKUME 4\'X8\'X3/4" · artículo 025846 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-005', PROV_INNOVA, 1425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-2-7-004929',
+    nota: 'PLYWOOD PINO 4\'X8\'X1/2" · artículo 004929 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-006', PROV_INNOVA, 1995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-4-7-025685',
+    nota: 'PLYWOOD PINO 4\'X8\'X3/4" · artículo 025685 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-017', PROV_INNOVA, 2730, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/alambre-puas-cal-16-250-mt-premium-035335',
+    nota: 'ALAMBRE PUAS CAL-16 250 MT PREMIUM · artículo 035335 · ref. Alambre · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-016', PROV_INNOVA, 845, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/alambre-puas-jabali-cal-16-110-mt-059298',
+    nota: 'ALAMBRE PUAS JABALI CAL-16 110 MT · artículo 059298 · ref. Alambre · marca JABALI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-017', PROV_INNOVA, 1885, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/alambre-puas-jabali-cal-16-250-mt-059299',
+    nota: 'ALAMBRE PUAS JABALI CAL-16 250 MT · artículo 059299 · ref. Alambre · marca JABALI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-017', PROV_INNOVA, 3770, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/alambre-puas-motto-16x250-mt-003852',
+    nota: 'ALAMBRE PUAS MOTTO 16X250 MT · artículo 003852 · ref. Alambre · marca MOTTO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-033', PROV_INNOVA, 46, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/abrazadera-malla-ciclonica-1-1-3-2-7-larga-032630',
+    nota: 'ABRAZADERA MALLA CICLONICA 1-1/2" LARGA · artículo 032630 · ref. Malla · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-028', PROV_INNOVA, 98, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/copa-pasante-malla-ciclonica-1-1-3-2x1-1-3-4-7-032626',
+    nota: 'COPA PASANTE MALLA CICLONICA 1-1/2X1-1/4" · artículo 032626 · ref. Malla · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-037', PROV_INNOVA, 105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/copa-terminal-malla-ciclonica-1-1-3-2-7-032625',
+    nota: 'COPA TERMINAL MALLA CICLONICA 1-1/2" · artículo 032625 · ref. Malla · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-013', PROV_INNOVA, 10250, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/malla-ciclonica-6x50-calibre-11-galvanizada-028879',
+    nota: 'MALLA CICLONICA 6X50\' CALIBRE 11 GALVANIZADA · artículo 028879 · ref. Malla · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-007', PROV_INNOVA, 14690, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/malla-ciclonica-6x50-calibre-9-revestida-3-plastic-055382',
+    nota: 'MALLA CICLONICA 6X50\' CALIBRE 9 REVESTIDA/PLASTICA · artículo 055382 · ref. Malla · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-034', PROV_INNOVA, 277, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/palometa-doble-malla-ciclonica-1-1-3-2x1-1-3-4-032628',
+    nota: 'PALOMETA DOBLE MALLA CICLONICA 1-1/2X1-1/4 · artículo 032628 · ref. Palometa · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-035', PROV_INNOVA, 168, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/palometa-sencilla-malla-ciclonica-1-1-3-2x1-1-3-4-032629',
+    nota: 'PALOMETA SENCILLA MALLA CICLONICA 1-1/2X1-1/4 · artículo 032629 · ref. Palometa · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-010', PROV_INNOVA, 625, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/tubo-galvanizado-malla-ciclonica-1-1-3-2x15-054850',
+    nota: 'TUBO GALVANIZADO MALLA CICLONICA 1-1/2X15\' · artículo 054850 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-009', PROV_INNOVA, 730, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/tubo-galvanizado-malla-ciclonica-1-1-3-4x20-036418',
+    nota: 'TUBO GALVANIZADO MALLA CICLONICA 1-1/4X20\' · artículo 036418 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-013', PROV_INNOVA, 338, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchadezincacanaladas/plancha-zinc-acanalado-6-cal-29-029919',
+    nota: 'PLANCHA ZINC ACANALADO 6\' CAL 29 · artículo 029919 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-015', PROV_INNOVA, 245, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchadezincacanaladas/plancha-zinc-acanalado-6-cal-34-028393',
+    nota: 'PLANCHA ZINC ACANALADO 6\' CAL 34 · artículo 028393 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-016', PROV_INNOVA, 1165, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1-1-3-4x1-1-3-4-7-x19-046363',
+    nota: 'ANGULAR ALUMINIO 1-1/4X1-1/4"X19\' · artículo 046363 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-004', PROV_INNOVA, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/angularesdealuminio/angular-aluminio-1-3-2x1-3-2-7-x19-032501',
+    nota: 'ANGULAR ALUMINIO 1/2X1/2"X19\' · artículo 032501 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-013', PROV_INNOVA, 755, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x3-3-4-7-x19-046362',
+    nota: 'ANGULAR ALUMINIO 1X3/4"X19\' · artículo 046362 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-010', PROV_INNOVA, 445, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-3-3-4x3-3-4-7-x19-032502',
+    nota: 'ANGULAR ALUMINIO 3/4X3/4"X19\' · artículo 032502 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-019', PROV_INNOVA, 1795, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-6-trasparente-tipo-zinc-033108',
+    nota: 'PLANCHA TRANSLUCIDA 6\' TRASPARENTE TIPO ZINC · artículo 033108 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-019', PROV_INNOVA, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-fibraforte-amarillo-1-80m-x-0-046351',
+    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE AMARILLO 1.80M X 0.84M · artículo 046351 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-019', PROV_INNOVA, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-fibraforte-azul-1-80m-x-0-84m-046352',
+    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE AZUL 1.80M X 0.84M · artículo 046352 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-019', PROV_INNOVA, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-fibraforte-blanca-1-80m-x-0-84-017574',
+    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE BLANCA 1.80M X 0.84M · artículo 017574 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-019', PROV_INNOVA, 1195, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-fibraforte-verde-2-75x6-017576',
+    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE VERDE 2.75X6\' · artículo 017576 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-001', PROV_INNOVA, 895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesdeyesoyaccesorios/plancha-yeso-knauf-4-x8-x1-3-2-7-004771',
+    nota: 'PLANCHA YESO KNAUF 4\'X8\'X1/2" · artículo 004771 · ref. Plancha · marca KNAUF. ' + SUPUESTO_ITBIS
+  });
+
   /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */
   c('EQU-04-006', PROV_OCHOA, 480.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061404',
@@ -224,43 +392,247 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/funda-de-arena-3-16-55-libras-04510337',
     nota: 'Funda De Arena 3 / 16” - 55 Libras · artículo 04-51-0337 · ref. PT00011(50XAT) · marca PRET. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-017', PROV_OCHOA, 34.36, {
+  c('MAT-02-017', PROV_INNOVA, 959, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-1-gl-004840',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 1 GL · artículo 004840 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-018', PROV_INNOVA, 465, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-1-3-2-gl-004839',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 1/2 GL · artículo 004839 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-019', PROV_INNOVA, 265, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-32-oz-037788',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 32 OZ · artículo 037788 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-020', PROV_INNOVA, 1020, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-1-gl-005237',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 1 GL · artículo 005237 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-021', PROV_INNOVA, 535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-1-3-2-gl-005236',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 1/2 GL · artículo 005236 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-022', PROV_INNOVA, 305, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-32-oz-037787',
+    nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 32 OZ · artículo 037787 · marca CANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-023', PROV_INNOVA, 10935, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-1052-2-5-gl-058714',
+    nota: 'ADITIVO CONCRETO LANCO CB-1052-2 5 GL · artículo 058714 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-024', PROV_INNOVA, 1125, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-606-4-1-gl-rosado-003742',
+    nota: 'ADITIVO CONCRETO LANCO CB-606-4 1 GL ROSADO · artículo 003742 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-025', PROV_INNOVA, 570, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-606-9-1-3-2-gl-rosado-003744',
+    nota: 'ADITIVO CONCRETO LANCO CB-606-9 1/2 GL ROSADO · artículo 003744 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-026', PROV_INNOVA, 6300, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-2-5-gl-azul-extra-pr-036176',
+    nota: 'ADITIVO CONCRETO LANCO CB-610-2 5 GL AZUL EXTRA PRO · artículo 036176 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-027', PROV_INNOVA, 1185, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-4-1-gl-azul-extra-pr-003746',
+    nota: 'ADITIVO CONCRETO LANCO CB-610-4 1 GL AZUL EXTRA PRO · artículo 003746 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-028', PROV_INNOVA, 395, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-5-1-3-4-gl-001402',
+    nota: 'ADITIVO CONCRETO LANCO CB-610-5 1/4 GL · artículo 001402 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-029', PROV_INNOVA, 2005, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-8000-4-texturizado-1-gl-042770',
+    nota: 'ADITIVO CONCRETO LANCO CB-8000-4 TEXTURIZADO 1 GL · artículo 042770 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-030', PROV_INNOVA, 1460, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-902-1-gl-058712',
+    nota: 'ADITIVO CONCRETO LANCO CB-902 1 GL · artículo 058712 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-031', PROV_INNOVA, 6055, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-902-2-5-gl-058713',
+    nota: 'ADITIVO CONCRETO LANCO CB-902-2 5 GL · artículo 058713 · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-032', PROV_INNOVA, 454.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/fibra-polipropileno-sikafiber-para-concreto-0-6kg-047405',
+    nota: 'FIBRA POLIPROPILENO SIKAFIBER PARA CONCRETO 0.6KG · artículo 047405 · marca SIKA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-033', PROV_INNOVA, 1610.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/primer-epoxico-concreto-sikadur-32-gel-1kg-compone-010885',
+    nota: 'PRIMER EPOXICO CONCRETO SIKADUR 32 GEL 1KG COMPONENTE A+B · artículo 010885 · marca SIKA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-034', PROV_INNOVA, 3952.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-autonivelante-weco-w-501-we0850105-polimer-062080',
+    nota: 'CEMENTO AUTONIVELANTE WECO W-501 WE0850105 POLIMERO GRIS 40 LB · artículo 062080 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-035', PROV_INNOVA, 377.4, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-350-we0855504-gris-10-lb-062081',
+    nota: 'CEMENTO WECO W-350 WE0855504 GRIS 10 LB · artículo 062081 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-036', PROV_INNOVA, 533.8, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-400-we0875003-blanco-10-lb-ultra-058655',
+    nota: 'CEMENTO WECO W-400 WE0875003 BLANCO 10 LB ULTRA · artículo 058655 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-037', PROV_INNOVA, 949.45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-511-we0751104-hiraulico-1-gl-062076',
+    nota: 'CEMENTO WECO W-511 WE0751104 HIRAULICO 1 GL · artículo 062076 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-038', PROV_INNOVA, 2817.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-511-we0751105-hiraulico-cubeta-40-l-058652',
+    nota: 'CEMENTO WECO W-511 WE0751105 HIRAULICO CUBETA 40 LB · artículo 058652 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-039', PROV_INNOVA, 135, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mezcla-pañete-10-lb-057349',
+    nota: 'MEZCLA PAÑETE 10 LB · artículo 057349 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-040', PROV_INNOVA, 1270.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-anclaje-sikagrout-212-relleno-22kg-047407',
+    nota: 'MORTERO ANCLAJE SIKAGROUT 212 RELLENO 22KG · artículo 047407 · marca SIKA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-041', PROV_INNOVA, 2396, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-ceramica-mapei-ultraflex-lft-polimero-blan-061948',
+    nota: 'MORTERO CERAMICA MAPEI ULTRAFLEX LFT POLIMERO BLANCO 50 LB · artículo 061948 · marca MAPEI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-042', PROV_INNOVA, 2715.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-impermeabilizante-sika-101-blanco-25kg-tan-047421',
+    nota: 'MORTERO IMPERMEABILIZANTE SIKA 101 BLANCO 25KG TANQUES PISCINAS · artículo 047421 · marca SIKA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-043', PROV_INNOVA, 1308, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-mapei-planitop-xs-gris-50-lb-061934',
+    nota: 'MORTERO MAPEI PLANITOP XS GRIS 50 LB · artículo 061934 · marca MAPEI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-044', PROV_INNOVA, 167, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/yeso/yeso-blanco-funda-10-lb-057348',
+    nota: 'YESO BLANCO FUNDA 10 LB · artículo 057348 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-045', PROV_INNOVA, 28, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/yeso/yeso-blanco-funda-2-lb-052185',
+    nota: 'YESO BLANCO FUNDA 2 LB · artículo 052185 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-046', PROV_INNOVA, 1365.1, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/pegamento-ceramica-weco-w-1000-we0810501-polimero-062079',
+    nota: 'PEGAMENTO CERAMICA WECO W-1000 WE0810501 POLIMERO BLANCO 50 LB · artículo 062079 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-047', PROV_INNOVA, 786.25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/pegamento-ceramica-weco-w-3000-cero-polimero-blanc-062078',
+    nota: 'PEGAMENTO CERAMICA WECO W-3000 CERO POLIMERO BLANCO 10 LB · artículo 062078 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-048', PROV_INNOVA, 1845, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-4-ceramic-tile-bla-058460',
+    nota: 'PEGAMENTO CERAMICA LANCO SM-502-4 CERAMIC TILE BLANCO 1 GL · artículo 058460 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-049', PROV_INNOVA, 625, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-5-ceramic-tile-bla-058461',
+    nota: 'PEGAMENTO CERAMICA LANCO SM-502-5 CERAMIC TILE BLANCO 1/4 GL · artículo 058461 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-050', PROV_INNOVA, 610.3, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-2000-we0810602-polimero-062077',
+    nota: 'PEGAMENTO CERAMICA WECO W-2000 WE0810602 POLIMERO GRIS 10 LB · artículo 062077 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-051', PROV_INNOVA, 437.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-761-blanco-10-lb-069945',
+    nota: 'PEGAMENTO CERAMICA WECO W-761 BLANCO 10 LB · artículo 069945 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-052', PROV_INNOVA, 569.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-900-we0810454-blanco-10-058653',
+    nota: 'PEGAMENTO CERAMICA WECO W-900 WE0810454 BLANCO 10 LB · artículo 058653 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 328, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-1001-blanco-forte-10-lb-065072',
+    nota: 'DERRETIDO 1001 BLANCO FORTE 10 LB · artículo 065072 · ref. Derretido · marca PEGA FORTE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 712, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5005-chamois-10-lb-para-061937',
+    nota: 'DERRETIDO MAPEI KERACOLOR 5005 CHAMOIS 10 LB PARA CERAMICA · artículo 061937 · marca MAPEI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 712, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5010-negro-10-lb-para-ce-061942',
+    nota: 'DERRETIDO MAPEI KERACOLOR 5010 NEGRO 10 LB PARA CERAMICA · artículo 061942 · marca MAPEI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 712, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5077-frost-10-lb-para-ce-061941',
+    nota: 'DERRETIDO MAPEI KERACOLOR 5077 FROST 10 LB PARA CERMANICA · artículo 061941 · marca MAPEI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 543.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071051-10-lb-blanco-para-c-058656',
+    nota: 'DERRETIDO WECO W-573 WE1071051 10 LB BLANCO PARA CERAMICA · artículo 058656 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 543.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071055-10-lb-gris-para-cer-058657',
+    nota: 'DERRETIDO WECO W-573 WE1071055 10 LB GRIS PARA CERAMICA · artículo 058657 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 543.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071059-10-lb-bone-para-cer-058659',
+    nota: 'DERRETIDO WECO W-573 WE1071059 10 LB BONE PARA CERAMICA · artículo 058659 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 543.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071063-10-lb-silver-gray-p-058660',
+    nota: 'DERRETIDO WECO W-573 WE1071063 10 LB SILVER GRAY PARA CERAMICA · artículo 058660 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 543.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071064-10-lb-frost-gray-pa-058661',
+    nota: 'DERRETIDO WECO W-573 WE1071064 10 LB FROST GRAY PARA CERAMICA · artículo 058661 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 556.75, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071085-10-lb-riviera-sand-058662',
+    nota: 'DERRETIDO WECO W-573 WE1071085 10 LB RIVIERA SAND PARA CERAMICA · artículo 058662 · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 553.35, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071087-10-lb-sierra-snow-p-062075',
+    nota: 'DERRETIDO WECO W-573 WE1071087 10 LB SIERRA SNOW PARA CERAMICA · artículo 062075 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 668.95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071089-10-lb-terracota-par-062074',
+    nota: 'DERRETIDO WECO W-573 WE1071089 10 LB TERRACOTA PARA CERAMICA · artículo 062074 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-053', PROV_INNOVA, 681.7, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071093-10-lb-marron-para-c-062073',
+    nota: 'DERRETIDO WECO W-573 WE1071093 10 LB MARRON PARA CERAMICA · artículo 062073 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-054', PROV_INNOVA, 336, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-pega-forte-gris-50-lb-065071',
+    nota: 'PEGAMENTO CERAMICA PEGA FORTE GRIS 50 LB · artículo 065071 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-054', PROV_INNOVA, 325, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-pegatod-gris-50-lb-024743',
+    nota: 'PEGAMENTO CERAMICA PEGATOD GRIS 50 LB · artículo 024743 · marca PEGATOD. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-055', PROV_OCHOA, 34.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590319',
     nota: 'Cemento Gris. · artículo 04-59-0319 · ref. 5LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-018', PROV_OCHOA, 65.96, {
+  c('MAT-02-056', PROV_OCHOA, 65.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590320',
     nota: 'Cemento Gris · artículo 04-59-0320 · ref. 10LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-019', PROV_OCHOA, 49.97, {
+  c('MAT-02-057', PROV_OCHOA, 49.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590410',
     nota: 'Cemento Blanco · artículo 04-59-0410 · ref. FDA.2LBS0.9KG · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-020', PROV_OCHOA, 109.93, {
+  c('MAT-02-058', PROV_OCHOA, 109.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590409',
     nota: 'Cemento Blanco · artículo 04-59-0409 · ref. FDA.5LBS2.25KG · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-021', PROV_OCHOA, 159.1, {
+  c('MAT-02-059', PROV_OCHOA, 159.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-fundas-04590356',
     nota: 'Cemento Blanco Fundas · artículo 04-59-0356 · ref. 10LIBRAS · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-022', PROV_OCHOA, 4.8, {
+  c('MAT-02-060', PROV_OCHOA, 4.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-04590219',
     nota: 'Yeso En Polvo · artículo 04-59-0219 · ref. BLANCOLIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-023', PROV_OCHOA, 37.93, {
+  c('MAT-02-061', PROV_OCHOA, 37.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-5-lbs-04590344',
     nota: 'Yeso En Polvo 5 Lbs. · artículo 04-59-0344 · ref. 5LIBRAS · marca PALOMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-024', PROV_OCHOA, 373.64, {
+  c('MAT-02-062', PROV_OCHOA, 373.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-blanco-paloma-04590063',
     nota: 'Yeso En Polvo Blanco Paloma · artículo 04-59-0063 · ref. FDA.65LBS · marca PALOMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-025', PROV_OCHOA, 1295.68, {
+  c('MAT-02-063', PROV_OCHOA, 1295.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibra-de-acero-04660385',
     nota: 'Fibra De Acero · artículo 04-66-0385 · ref. 1439(5.3KG) · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-026', PROV_OCHOA, 807.79, {
+  c('MAT-02-064', PROV_OCHOA, 807.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/macro-fibra-p-hormigon-04660383',
     nota: 'Macro Fibra P / Hormigon · artículo 04-66-0383 · ref. 1437(1.5KG) · marca ULTRA. ' + SUPUESTO_ITBIS
   });
@@ -328,71 +700,103 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-liso-galv-picado-10lib-02450154',
     nota: 'Alambre Liso Galv. Picado 10Lib · artículo 02-45-0154 · ref. C-16PAQUETE · marca GALV-ALAMBRE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-011', PROV_OCHOA, 296.18, {
+  c('MAT-06-018', PROV_INNOVA, 780, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-4-7-025848',
+    nota: 'PLYWOOD OKUME 4\'X8\'X1/4" · artículo 025848 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-019', PROV_INNOVA, 475, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-8-7-025847',
+    nota: 'PLYWOOD OKUME 4\'X8\'X1/8" · artículo 025847 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-020', PROV_INNOVA, 1115, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-8-7-025849',
+    nota: 'PLYWOOD OKUME 4\'X8\'X3/8" · artículo 025849 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-021', PROV_INNOVA, 825, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-4-7-004927',
+    nota: 'PLYWOOD PINO 4\'X8\'X1/4" · artículo 004927 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-022', PROV_INNOVA, 1245, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-8-7-004928',
+    nota: 'PLYWOOD PINO 4\'X8\'X3/8" · artículo 004928 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-023', PROV_INNOVA, 1995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-slatwall-decoratico-blco-4x8-029814',
+    nota: 'PLYWOOD SLATWALL DECORATICO BLCO 4X8\' · artículo 029814 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-011', PROV_INNOVA, 1535, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/caballetes-para-techos/caballete-fibraforte-rojo-0-76x0-6-046355',
+    nota: 'CABALLETE FIBRAFORTE ROJO 0.76X0.6 · artículo 046355 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-012', PROV_INNOVA, 1450, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastipotejas/plancha-teja-fibraforte-rojo-opaco-0-76mx1-15m-046354',
+    nota: 'PLANCHA TEJA FIBRAFORTE ROJO OPACO 0 .76MX1.15M · artículo 046354 · ref. Plancha · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-013', PROV_OCHOA, 296.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-acanalado-c-29-04770028',
     nota: 'Plancha De Zinc Acanalado C-29 · artículo 04-77-0028 · ref. C-293X6 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-011', PROV_OCHOA, 270.21, {
+  c('MAT-07-013', PROV_OCHOA, 270.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-acanalado-sol-250xat-04770129',
     nota: 'Zinc Acanalado (Sol)(250Xat) · artículo 04-77-0129 · ref. C-293X6 · marca SOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-012', PROV_OCHOA, 592.36, {
+  c('MAT-07-014', PROV_OCHOA, 592.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-acanalado-c-29-04770094',
     nota: 'Plancha De Zinc Acanalado C-29 · artículo 04-77-0094 · ref. C-293X12 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-013', PROV_OCHOA, 208.33, {
+  c('MAT-07-015', PROV_OCHOA, 208.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-acanalado-c-34-04770030',
     nota: 'Plancha De Zinc Acanalado C-34 · artículo 04-77-0030 · ref. C-343X6 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-014', PROV_OCHOA, 414.3, {
+  c('MAT-07-016', PROV_OCHOA, 414.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-acanalado-c-34-04770095',
     nota: 'Plancha De Zinc Acanalado C-34 · artículo 04-77-0095 · ref. C-343X12 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-015', PROV_OCHOA, 296.18, {
+  c('MAT-07-017', PROV_OCHOA, 296.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-liso-c-29-04770054',
     nota: 'Plancha De Zinc Liso C-29 · artículo 04-77-0054 · ref. C-293X6 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-015', PROV_OCHOA, 270.35, {
+  c('MAT-07-017', PROV_OCHOA, 270.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-liso-c-29-04770131',
     nota: 'Plancha De Zinc Liso C-29 · artículo 04-77-0131 · ref. C-293X6 · marca SOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-016', PROV_OCHOA, 209.56, {
+  c('MAT-07-018', PROV_OCHOA, 209.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-liso-c-34-04770127',
     nota: 'Plancha De Zinc Liso C-34 · artículo 04-77-0127 · ref. C-343X6 · marca SOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-016', PROV_OCHOA, 208.33, {
+  c('MAT-07-018', PROV_OCHOA, 208.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-liso-6-lbs-100xat-04770055',
     nota: 'Zinc Liso 6 Lbs. (100Xat) · artículo 04-77-0055 · ref. C-343X6 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-017', PROV_OCHOA, 1127.34, {
+  c('MAT-07-019', PROV_OCHOA, 1127.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-translucido-04770063',
     nota: 'Zinc Translucido · artículo 04-77-0063 · ref. BLANCA3\'X6\' · marca BAF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-017', PROV_OCHOA, 1127.34, {
+  c('MAT-07-019', PROV_OCHOA, 1127.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-traslucido-3-04770064',
     nota: 'Zinc Traslucido 3\' · artículo 04-77-0064 · ref. AZUL3\'X6\' · marca BAF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-017', PROV_OCHOA, 1127.34, {
+  c('MAT-07-019', PROV_OCHOA, 1127.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-traslucido-3-04770065',
     nota: 'Zinc Traslucido 3\' · artículo 04-77-0065 · ref. VERDE3\'X6\' · marca BAF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-017', PROV_OCHOA, 1127.34, {
+  c('MAT-07-019', PROV_OCHOA, 1127.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-traslucido-3-04770072',
     nota: 'Zinc Traslucido 3\' · artículo 04-77-0072 · ref. AMARILLO3\'X6\' · marca BAF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-018', PROV_OCHOA, 660, {
+  c('MAT-07-020', PROV_OCHOA, 660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-para-aluzinc-21-04520043',
     nota: 'Caballete Para Aluzinc 21\'\' · artículo 04-52-0043 · ref. 21"X10\'MAX. · marca ACERO ESTRELLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-019', PROV_OCHOA, 141.1, {
+  c('MAT-07-021', PROV_OCHOA, 141.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-de-zinc-04580009',
     nota: 'Caballete De Zinc · artículo 04-58-0009 · ref. CAL-29X6\' · marca AVM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-020', PROV_OCHOA, 104.29, {
+  c('MAT-07-022', PROV_OCHOA, 104.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-de-zinc-04580010',
     nota: 'Caballete De Zinc · artículo 04-58-0010 · ref. CAL-34X6\' · marca AVM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-07-021', PROV_OCHOA, 659.86, {
+  c('MAT-07-023', PROV_OCHOA, 659.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cano-para-aluzinc-6-04520469',
     nota: 'Caño Para Aluzinc 6\'\' · artículo 04-52-0469 · ref. 6\'\'X7\'\'X10\' · marca ACERO ESTRELLA-C. ' + SUPUESTO_ITBIS
   });
@@ -787,6 +1191,46 @@
   c('MAT-12-009', PROV_OCHOA, 331.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',
     nota: 'Estuco Para Interiores · artículo 04-59-0424 · ref. 35LIBRAS · marca DURO YESO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-011', PROV_INNOVA, 98, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/angular-10-t-grid-plafon-014378',
+    nota: 'ANGULAR 10\' T-GRID PLAFON · artículo 014378 · ref. Angular · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-012', PROV_INNOVA, 26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cross-tee-2-t-grid-plafon-014381',
+    nota: 'CROSS TEE 2\' T-GRID PLAFON · artículo 014381 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-013', PROV_INNOVA, 56, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cross-tee-4-t-grid-plafon-014379',
+    nota: 'CROSS TEE 4\' T-GRID PLAFON · artículo 014379 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-014', PROV_INNOVA, 149, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/durmiente-plafon/durmiente-plafon-2-1-3-2-7-x-10-cal-25-036984',
+    nota: 'DURMIENTE PLAFON 2-1/2" X 10 CAL 25 · artículo 036984 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-015', PROV_INNOVA, 186, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/main-tee-plafon/main-tee-12-t-grid-plafon-014377',
+    nota: 'MAIN TEE 12\' T-GRID PLAFON · artículo 014377 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-016', PROV_INNOVA, 185, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/parales-para-plafon/parales-2-1-3-2-7-x10-cal-25-plafond-036983',
+    nota: 'PARALES 2-1/2"X10 CAL.25 PLAFOND · artículo 036983 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-017', PROV_INNOVA, 202, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/plafones/plafon-pvc-blanco-2-x-4-cs-605x1219x7-014374',
+    nota: 'PLAFON PVC BLANCO 2 X 4\' CS-605X1219X7 · artículo 014374 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-018', PROV_INNOVA, 375, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/plafones/plafon-pvc-blanco-machihembrado-cs-250x5800x7mm-19-060020',
+    nota: 'PLAFON PVC BLANCO MACHIHEMBRADO CS-250X5800X7MM (19’) · artículo 060020 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-019', PROV_INNOVA, 295, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/plafones/plafon-vinyl-yeso-liso-2-x-4-7-mm-a154-014372',
+    nota: 'PLAFON VINYL YESO LISO 2 X 4\' 7 MM A154 · artículo 014372 · ref. Plafon · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-13-020', PROV_INNOVA, 495, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/carton-piedra/carton-piedra-4-x8-3-2-mm-1-3-8-7-025843',
+    nota: 'CARTON PIEDRA 4\'X8\' 3.2 MM 1/8" · artículo 025843 · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
   c('MAT-16-003', PROV_OCHOA, 740.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-hdcvi-domo-2mp-2-8mm-cooper-sdl-03062128',
@@ -1184,6 +1628,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/homekit-camara-de-video-hub-03061699',
     nota: 'Homekit Camara De Video Hub · artículo 03-06-1699 · ref. HUBG3 · marca AQARA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-18-006', PROV_INNOVA, 1695, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/asfalto-en-frio-ecofalt-funda-25-kg-070537',
+    nota: 'ASFALTO EN FRIO ECOFALT FUNDA 25 KG · artículo 070537 · marca ECOFALT. ' + SUPUESTO_ITBIS
+  });
   c('MAT-19-001', PROV_OCHOA, 262.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-cuad-negro-1-2mm-144xat-04670061',
     nota: 'Perfil Cuad. Negro 1.2Mm (144Xat) · artículo 04-67-0061 · ref. 3/4X3/4"20\' · marca HN-PERFIL. ' + SUPUESTO_ITBIS
@@ -1368,251 +1816,259 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/correa-galvanizada-tipo-z-04780225',
     nota: 'Correa Galvanizada Tipo Z · artículo 04-78-0225 · ref. 1/16X8" · marca GALV-CORREA. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-001', PROV_OCHOA, 449.99, {
+  c('MAT-20-001', PROV_INNOVA, 425, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/angularesperforados/angular-perforado-1-1-3-2x1-1-3-2-7-x10-003678',
+    nota: 'ANGULAR PERFORADO 1-1/2X1-1/2"X10\' · artículo 003678 · ref. Angular · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-20-002', PROV_INNOVA, 360, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/angularesperforados/angular-perforado-1-1-3-2x1-1-3-2-7-x8-003679',
+    nota: 'ANGULAR PERFORADO 1-1/2X1-1/2"X8\' · artículo 003679 · ref. Angular · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-20-003', PROV_OCHOA, 449.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-11-80-lbs-04530002',
     nota: 'Angular H. Negro - 11.80 Lbs · artículo 04-53-0002 · ref. 3/4X1/83MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-002', PROV_OCHOA, 560, {
+  c('MAT-20-004', PROV_OCHOA, 560, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-16-00-lbs-04530007',
     nota: 'Angular H. Negro - 16.00 Lbs · artículo 04-53-0007 · ref. 1X1/83MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-003', PROV_OCHOA, 812.01, {
+  c('MAT-20-005', PROV_OCHOA, 812.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-23-20-lbs-04530014',
     nota: 'Angular H. Negro - 23.20 Lbs · artículo 04-53-0014 · ref. 1X3/165MM4.5MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-004', PROV_OCHOA, 1163.48, {
+  c('MAT-20-006', PROV_OCHOA, 1163.48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-29-80-lbs-04530018',
     nota: 'Angular H. Negro - 29.80 Lbs · artículo 04-53-0018 · ref. 1X1/46MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-005', PROV_OCHOA, 781, {
+  c('MAT-20-007', PROV_OCHOA, 781, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-20-20-lbs-04530012',
     nota: 'Angular H. Negro - 20.20 Lbs · artículo 04-53-0012 · ref. 11/4X1/83MM · marca HN-ANGULARES. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-006', PROV_OCHOA, 1036, {
+  c('MAT-20-008', PROV_OCHOA, 1036, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-29-60-lbs-04530017',
     nota: 'Angular H. Negro - 29.60 Lbs · artículo 04-53-0017 · ref. 11/4X3/16=5MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-007', PROV_OCHOA, 1344, {
+  c('MAT-20-009', PROV_OCHOA, 1344, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-38-40-lbs-04530024',
     nota: 'Angular H. Negro - 38.40 Lbs · artículo 04-53-0024 · ref. 11/4X1/46MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-008', PROV_OCHOA, 1260, {
+  c('MAT-20-010', PROV_OCHOA, 1260, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-36-00-lbs-04530022',
     nota: 'Angular H. Negro - 36.00 Lbs · artículo 04-53-0022 · ref. 11/2X3/16=5MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-009', PROV_OCHOA, 1638.01, {
+  c('MAT-20-011', PROV_OCHOA, 1638.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-46-80-lbs-04530027',
     nota: 'Angular H. Negro - 46.80 Lbs · artículo 04-53-0027 · ref. 11/2X1/4=6MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-010', PROV_OCHOA, 1155, {
+  c('MAT-20-012', PROV_OCHOA, 1155, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-33-00-lbs-04530021',
     nota: 'Angular H. Negro - 33.00 Lbs · artículo 04-53-0021 · ref. 2X1/8 · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-011', PROV_OCHOA, 1708, {
+  c('MAT-20-013', PROV_OCHOA, 1708, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-48-80-lbs-04530028',
     nota: 'Angular H. Negro - 48.80 Lbs · artículo 04-53-0028 · ref. 2X3/16=5MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-012', PROV_OCHOA, 2324.69, {
+  c('MAT-20-014', PROV_OCHOA, 2324.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-63-80-lbs-04530030',
     nota: 'Angular H. Negro - 63.80 Lbs · artículo 04-53-0030 · ref. 2X1/4=6MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-013', PROV_OCHOA, 3290.01, {
+  c('MAT-20-015', PROV_OCHOA, 3290.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-94-00-lbs-04530035',
     nota: 'Angular H. Negro - 94.00 Lbs · artículo 04-53-0035 · ref. 2X3/89MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-014', PROV_OCHOA, 2149, {
+  c('MAT-20-016', PROV_OCHOA, 2149, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-61-40-lbs-04530029',
     nota: 'Angular H. Negro - 61.40 Lbs · artículo 04-53-0029 · ref. 21/2X3/165MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-015', PROV_OCHOA, 2870, {
+  c('MAT-20-017', PROV_OCHOA, 2870, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-82-00-lbs-04530034',
     nota: 'Angular H. Negro - 82.00 Lbs · artículo 04-53-0034 · ref. 21/2X1/4 · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-016', PROV_OCHOA, 4130, {
+  c('MAT-20-018', PROV_OCHOA, 4130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-118-00-lbs-04530004',
     nota: 'Angular H. Negro - 118.00 Lbs · artículo 04-53-0004 · ref. 21/2X3/89MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-017', PROV_OCHOA, 3430, {
+  c('MAT-20-019', PROV_OCHOA, 3430, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-98-00-lbs-04530036',
     nota: 'Angular H. Negro - 98.00 Lbs · artículo 04-53-0036 · ref. 3X1/4 · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-018', PROV_OCHOA, 5622.2, {
+  c('MAT-20-020', PROV_OCHOA, 5622.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-144-00-lbs-04530006',
     nota: 'Angular H. Negro- 144.00 Lbs · artículo 04-53-0006 · ref. 3X3/89MM · marca HN-ANGULARES. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-019', PROV_OCHOA, 4117.73, {
+  c('MAT-20-021', PROV_OCHOA, 4117.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-h-negro-132-00-lbs-04530005',
     nota: 'Angular H. Negro - 132.00 Lbs · artículo 04-53-0005 · ref. 4X1/46MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-020', PROV_OCHOA, 9995.31, {
+  c('MAT-20-022', PROV_OCHOA, 9995.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-hierro-negro-256-lbs-04530016',
     nota: 'Angular Hierro Negro 256 Lbs · artículo 04-53-0016 · ref. 4X1/212MM · marca HN-ANGULARES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-021', PROV_OCHOA, 141.64, {
+  c('MAT-20-023', PROV_OCHOA, 141.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-4-250-lbs-04680031',
     nota: 'Planchuela H. Negro 4.250 Lbs · artículo 04-68-0031 · ref. 1/2X1/83MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-022', PROV_OCHOA, 249.92, {
+  c('MAT-20-024', PROV_OCHOA, 249.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-6-400-lbs-04680053',
     nota: 'Planchuela H. Negro 6.400 Lbs · artículo 04-68-0053 · ref. 1/2X3/165MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-023', PROV_OCHOA, 331.8, {
+  c('MAT-20-025', PROV_OCHOA, 331.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-8-500-lbs-04680046',
     nota: 'Planchuela H. Negro 8.500 Lbs · artículo 04-68-0046 · ref. 1/2X1/4 · marca HN-PLANCHUELA. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-024', PROV_OCHOA, 298.91, {
+  c('MAT-20-026', PROV_OCHOA, 298.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-6-376-lbs-04680039',
     nota: 'Planchuela H. Negro 6.376 Lbs · artículo 04-68-0039 · ref. 3/4X1/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-025', PROV_OCHOA, 373, {
+  c('MAT-20-027', PROV_OCHOA, 373, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-9-564-lbs-04680048',
     nota: 'Planchuela H. Negro 9.564 Lbs · artículo 04-68-0048 · ref. 3/4X3/165MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-026', PROV_OCHOA, 497.72, {
+  c('MAT-20-028', PROV_OCHOA, 497.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-12-750-lbs-04680007',
     nota: 'Planchuela H. Negro 12.750 Lbs · artículo 04-68-0007 · ref. 3/4X1/4 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-027', PROV_OCHOA, 297.5, {
+  c('MAT-20-029', PROV_OCHOA, 297.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-8-500-lbs-04680045',
     nota: 'Planchuela H. Negro 8.500 Lbs · artículo 04-68-0045 · ref. 1X1/83MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-028', PROV_OCHOA, 446.25, {
+  c('MAT-20-030', PROV_OCHOA, 446.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-12-750-lbs-04680006',
     nota: 'Planchuela H. Negro 12.750 Lbs · artículo 04-68-0006 · ref. 1X3/165MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-029', PROV_OCHOA, 595, {
+  c('MAT-20-031', PROV_OCHOA, 595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-17-000-lbs-04680013',
     nota: 'Planchuela H. Negro 17.000 Lbs · artículo 04-68-0013 · ref. 1X1/46MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-030', PROV_OCHOA, 1327.5, {
+  c('MAT-20-032', PROV_OCHOA, 1327.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-34-000-lbs-04680027',
     nota: 'Planchuela H. Negro 34.000 Lbs · artículo 04-68-0027 · ref. 1X1/212MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-031', PROV_OCHOA, 415.35, {
+  c('MAT-20-033', PROV_OCHOA, 415.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-10-650-lbs-04680001',
     nota: 'Planchuela H. Negro 10.650 Lbs · artículo 04-68-0001 · ref. 11/4X1/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-032', PROV_OCHOA, 614.58, {
+  c('MAT-20-034', PROV_OCHOA, 614.58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-15-94-lbs-04680010',
     nota: 'Planchuela H. Negro 15.94 Lbs · artículo 04-68-0010 · ref. 11/4X3/16=5MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-033', PROV_OCHOA, 745.5, {
+  c('MAT-20-035', PROV_OCHOA, 745.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-21-30-lbs-04680020',
     nota: 'Planchuela H. Negro 21.30 Lbs · artículo 04-68-0020 · ref. 11/4X1/46MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-034', PROV_OCHOA, 1115.73, {
+  c('MAT-20-036', PROV_OCHOA, 1115.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-31-878-lbs-04680025',
     nota: 'Planchuela H. Negro 31.878 Lbs · artículo 04-68-0025 · ref. 11/4X3/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-035', PROV_OCHOA, 451.7, {
+  c('MAT-20-037', PROV_OCHOA, 451.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-12-750-lbs-04680005',
     nota: 'Planchuela H. Negro 12.750 Lbs · artículo 04-68-0005 · ref. 11/2X1/83MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-036', PROV_OCHOA, 682.5, {
+  c('MAT-20-038', PROV_OCHOA, 682.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-19-500-lbs-04680017',
     nota: 'Planchuela H. Negro 19.500 Lbs · artículo 04-68-0017 · ref. 11/2X3/16=5MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-037', PROV_OCHOA, 892.5, {
+  c('MAT-20-039', PROV_OCHOA, 892.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-25-500-lbs-04680021',
     nota: 'Planchuela H. Negro 25.500 Lbs · artículo 04-68-0021 · ref. 11/2X1/4=6MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-038', PROV_OCHOA, 1338.75, {
+  c('MAT-20-040', PROV_OCHOA, 1338.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-38-250-lbs-04680029',
     nota: 'Planchuela H. Negro 38.250 Lbs · artículo 04-68-0029 · ref. 11/2X3/89MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-039', PROV_OCHOA, 1991.13, {
+  c('MAT-20-041', PROV_OCHOA, 1991.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-51-000-lbs-04680035',
     nota: 'Planchuela H. Negro 51.000 Lbs · artículo 04-68-0035 · ref. 11/2X1/2 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-040', PROV_OCHOA, 595, {
+  c('MAT-20-042', PROV_OCHOA, 595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-17-000-lbs-04680014',
     nota: 'Planchuela H. Negro 17.000 Lbs · artículo 04-68-0014 · ref. 2X1/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-041', PROV_OCHOA, 892.5, {
+  c('MAT-20-043', PROV_OCHOA, 892.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-25-500-lbs-04680023',
     nota: 'Planchuela H. Negro 25.500 Lbs · artículo 04-68-0023 · ref. 2X3/16=5MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-042', PROV_OCHOA, 1189.99, {
+  c('MAT-20-044', PROV_OCHOA, 1189.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-34-000-lbs-04680028',
     nota: 'Planchuela H. Negro 34.000 Lbs · artículo 04-68-0028 · ref. 2X1/4=6MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-043', PROV_OCHOA, 1785, {
+  c('MAT-20-045', PROV_OCHOA, 1785, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-51-000-lbs-04680036',
     nota: 'Planchuela H. Negro 51.000 Lbs · artículo 04-68-0036 · ref. 2X3/89MM · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-044', PROV_OCHOA, 2380, {
+  c('MAT-20-046', PROV_OCHOA, 2380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-68-000-lbs-04680041',
     nota: 'Planchuela H. Negro 68.000 Lbs · artículo 04-68-0041 · ref. 2X1/2 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-045', PROV_OCHOA, 1487.5, {
+  c('MAT-20-047', PROV_OCHOA, 1487.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-42-500-lbs-04680033',
     nota: 'Planchuela H. Negro 42.500 Lbs · artículo 04-68-0033 · ref. 21/2X1/4 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-046', PROV_OCHOA, 2231.6, {
+  c('MAT-20-048', PROV_OCHOA, 2231.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-63-760-lbs-04680040',
     nota: 'Planchuela H. Negro 63.760 Lbs · artículo 04-68-0040 · ref. 21/2X3/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-047', PROV_OCHOA, 1785, {
+  c('MAT-20-049', PROV_OCHOA, 1785, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-51-000-lbs-04680037',
     nota: 'Planchuela H. Negro 51.000 Lbs · artículo 04-68-0037 · ref. 3X1/4 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-048', PROV_OCHOA, 2677.62, {
+  c('MAT-20-050', PROV_OCHOA, 2677.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-76-500-lbs-04680044',
     nota: 'Planchuela H. Negro 76.500 Lbs · artículo 04-68-0044 · ref. 3X3/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-049', PROV_OCHOA, 2380, {
+  c('MAT-20-051', PROV_OCHOA, 2380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-68-000-lbs-04680042',
     nota: 'Planchuela H. Negro 68.000 Lbs · artículo 04-68-0042 · ref. 4X1/4 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-050', PROV_OCHOA, 3982.5, {
+  c('MAT-20-052', PROV_OCHOA, 3982.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-h-negro-102-000-lbs-04680003',
     nota: 'Planchuela H. Negro 102.000 Lbs · artículo 04-68-0003 · ref. 4X3/8 · marca HN-PLANCHUELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-051', PROV_OCHOA, 1397.2, {
+  c('MAT-20-053', PROV_OCHOA, 1397.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-acero-inox-04680070',
     nota: 'Planchuela Acero Inox. · artículo 04-68-0070 · ref. 2X1/8X20\' · marca INOX-PLANCHUELA. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-052', PROV_OCHOA, 411.76, {
+  c('MAT-20-054', PROV_OCHOA, 411.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-cuadrada-13-016-170xt-m-04540002',
     nota: 'Barra Cuadrada-13.016 (170Xt.M.) · artículo 04-54-0002 · ref. 7/16"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-053', PROV_OCHOA, 538.46, {
+  c('MAT-20-055', PROV_OCHOA, 538.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-cuadrada-17-lbs-130xt-m-04540004',
     nota: 'Barra Cuadrada-17 Lbs (130Xt.M) · artículo 04-54-0004 · ref. 1/2"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-054', PROV_OCHOA, 843.37, {
+  c('MAT-20-056', PROV_OCHOA, 843.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-cuadrada-26-562-lbs-83xt-m-s-d-04540005',
     nota: 'Barra Cuadrada-26.562 Lbs (83Xt.M) S / D · artículo 04-54-0005 · ref. 5/8"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-055', PROV_OCHOA, 238.1, {
+  c('MAT-20-057', PROV_OCHOA, 238.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-redonda-7-510-lbs-296xt-m-04540037',
     nota: 'Barra Redonda-7.510 Lbs(296Xt.M.) · artículo 04-54-0037 · ref. 3/8"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-056', PROV_OCHOA, 421.68, {
+  c('MAT-20-058', PROV_OCHOA, 421.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-redonda-13-352-lbs-166xt-m-04540027',
     nota: 'Barra Redonda-13.352 Lbs(166Xt.M.) · artículo 04-54-0027 · ref. 1/2"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-057', PROV_OCHOA, 660.38, {
+  c('MAT-20-059', PROV_OCHOA, 660.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-redonda-20-862-lbs-106xt-m-04540028',
     nota: 'Barra Redonda-20.862 Lbs(106Xt.M.) · artículo 04-54-0028 · ref. 5/8"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-058', PROV_OCHOA, 945.95, {
+  c('MAT-20-060', PROV_OCHOA, 945.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-redonda-30-040-lbs-74xt-04540030',
     nota: 'Barra Redonda-30.040 Lbs (74Xt) · artículo 04-54-0030 · ref. 3/4"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-059', PROV_OCHOA, 1666.67, {
+  c('MAT-20-061', PROV_OCHOA, 1666.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-redonda-53-408-lbs-42xt-04540035',
     nota: 'Barra Redonda-53.408 Lbs (42Xt) · artículo 04-54-0035 · ref. 1"X20\' · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-060', PROV_OCHOA, 426.77, {
+  c('MAT-20-062', PROV_OCHOA, 426.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-torneada-170-xt-04540009',
     nota: 'Barra Torneada (170 Xt) · artículo 04-54-0009 · ref. 7/16" · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-061', PROV_OCHOA, 553.47, {
+  c('MAT-20-063', PROV_OCHOA, 553.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-torneada-130-xt-04540008',
     nota: 'Barra Torneada (130 Xt) · artículo 04-54-0008 · ref. 1/2" · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-20-062', PROV_OCHOA, 858.38, {
+  c('MAT-20-064', PROV_OCHOA, 858.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-torneada-83-xt-04540010',
     nota: 'Barra Torneada ( 83 Xt) · artículo 04-54-0010 · ref. 5/8" · marca METALDOM-B. ' + SUPUESTO_ITBIS
   });
@@ -1732,175 +2188,187 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/material-desplegable-plano-04770007',
     nota: 'Material Desplegable Plano · artículo 04-77-0007 · ref. 4X8X11/2" · marca MDP. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-001', PROV_OCHOA, 5223.1, {
+  c('MAT-22-001', PROV_INNOVA, 595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/alambresdetrincheras/alambre-trinchera-jabali-rollo-45-mt-017017',
+    nota: 'ALAMBRE TRINCHERA JABALI ROLLO 45 MT · artículo 017017 · ref. Alambre · marca JABALI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-002', PROV_INNOVA, 995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/proteccion-verjas/proteccion-verja-3-puya-barra-redonda-060073',
+    nota: 'PROTECCION VERJA 3 PUYA BARRA REDONDA · artículo 060073 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-003', PROV_INNOVA, 985, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/proteccion-verjas/proteccion-verja-planchuela-1-mt-039225',
+    nota: 'PROTECCION VERJA PLANCHUELA 1 MT · artículo 039225 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-004', PROV_OCHOA, 5223.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660038',
     nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0038 · ref. C-093X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-002', PROV_OCHOA, 6121.98, {
+  c('MAT-22-005', PROV_OCHOA, 6121.98, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660039',
     nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0039 · ref. C-094X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-003', PROV_OCHOA, 9867.16, {
+  c('MAT-22-006', PROV_OCHOA, 9867.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660040',
     nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0040 · ref. C-096X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-004', PROV_OCHOA, 11757.65, {
+  c('MAT-22-007', PROV_OCHOA, 11757.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-rev-en-pvc-3-43mm-04660064',
     nota: 'Malla Ciclonica Rev. En Pvc 3.43Mm · artículo 04-66-0064 · ref. C-96X50VERDE · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-005', PROV_OCHOA, 13273.54, {
+  c('MAT-22-008', PROV_OCHOA, 13273.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-3-43mm-04660051',
     nota: 'Malla Ciclonica 3.43Mm · artículo 04-66-0051 · ref. C-098X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-006', PROV_OCHOA, 527.06, {
+  c('MAT-22-009', PROV_OCHOA, 527.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-15mm-127xat-04730089',
     nota: 'Tubo Galv P / Malla 1.15Mm (127Xat) · artículo 04-73-0089 · ref. 11/4X20\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-007', PROV_OCHOA, 462.61, {
+  c('MAT-22-010', PROV_OCHOA, 462.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-15mm-91xat-04730090',
     nota: 'Tubo Galv P / Malla 1.15Mm (91Xat) · artículo 04-73-0090 · ref. 11/2X15\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-008', PROV_OCHOA, 699.92, {
+  c('MAT-22-011', PROV_OCHOA, 699.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-galv-p-malla-1-20mm-61xat-04730516',
     nota: 'Tubo Galv P / Malla 1.20Mm (61Xat) · artículo 04-73-0516 · ref. 2"X20\' · marca TUB-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-009', PROV_OCHOA, 4335.91, {
+  c('MAT-22-012', PROV_OCHOA, 4335.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-c-11-04660035',
     nota: 'Malla Ciclónica C-11 · artículo 04-66-0035 · ref. C-113X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-010', PROV_OCHOA, 8694.46, {
+  c('MAT-22-013', PROV_OCHOA, 8694.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/malla-ciclonica-c-11-04660037',
     nota: 'Malla Ciclónica C-11 · artículo 04-66-0037 · ref. C-116X50 · marca MALLA-C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-011', PROV_OCHOA, 2601.2, {
+  c('MAT-22-014', PROV_OCHOA, 2601.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-premiun-64xpaleta-02450184',
     nota: 'Alambre D / Puas Premiun (64Xpaleta) · artículo 02-45-0184 · ref. 1.50MM250MTS · marca CORVI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-012', PROV_OCHOA, 2541.47, {
+  c('MAT-22-015', PROV_OCHOA, 2541.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-02450221',
     nota: 'Alambre D / Puas · artículo 02-45-0221 · ref. C-15250MTS · marca PATRON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-013', PROV_OCHOA, 964.11, {
+  c('MAT-22-016', PROV_OCHOA, 964.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-02450003',
     nota: 'Alambre De Púas · artículo 02-45-0003 · ref. C-16110MTS · marca CORVI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-014', PROV_OCHOA, 2108.46, {
+  c('MAT-22-017', PROV_OCHOA, 2108.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-d-puas-galv-cebu-superior-02450007',
     nota: 'Alambre D / Puas Galv.Cebu(Superior) · artículo 02-45-0007 · ref. C-16250MTS(64XAT) · marca KINNOX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-014', PROV_OCHOA, 2336.18, {
+  c('MAT-22-017', PROV_OCHOA, 2336.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-t-aiwa-02450159',
     nota: 'Alambre De Puas / T Aiwa · artículo 02-45-0159 · ref. C-16250MTS · marca CORVI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-014', PROV_OCHOA, 3439.5, {
+  c('MAT-22-017', PROV_OCHOA, 3439.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-250-mts-02450098',
     nota: 'Alambre De Puas 250 Mts. · artículo 02-45-0098 · ref. C-16250MTS · marca MOTTO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-015', PROV_OCHOA, 1933.36, {
+  c('MAT-22-018', PROV_OCHOA, 1933.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alambre-de-puas-250-mts-02450145',
     nota: 'Alambre De Puas 250 Mts. · artículo 02-45-0145 · ref. C-17250MTS · marca TORO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-016', PROV_OCHOA, 113.78, {
+  c('MAT-22-019', PROV_OCHOA, 113.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-29-30kgs-02450118',
     nota: 'Tela Met. D / Cuad. P / Conejo 29.30Kgs · artículo 02-45-0118 · ref. C-161X2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-017', PROV_OCHOA, 192.26, {
+  c('MAT-22-020', PROV_OCHOA, 192.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-metalica-d-cuadrito-43-50kgs-02450080',
     nota: 'Tela Metalica D / Cuadrito 43.50Kgs · artículo 02-45-0080 · ref. C-181/2X1/2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-018', PROV_OCHOA, 106.11, {
+  c('MAT-22-021', PROV_OCHOA, 106.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-22kgs-02450199',
     nota: 'Tela Met. D / Cuad. P / Conejo 22Kgs · artículo 02-45-0199 · ref. C-181X1/2X3\'X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-019', PROV_OCHOA, 145.1, {
+  c('MAT-22-022', PROV_OCHOA, 145.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuad-p-conejo-29-30kgs-02450198',
     nota: 'Tela Met. D / Cuad. P / Conejo 29.30Kgs · artículo 02-45-0198 · ref. C-181X1/2X4X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-020', PROV_OCHOA, 37.54, {
+  c('MAT-22-023', PROV_OCHOA, 37.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-met-d-cuadrito-p-conejo-6-60kgs-02450161',
     nota: 'Tela Met. D / Cuadrito P / Conejo 6.60Kgs · artículo 02-45-0161 · ref. C-201X2X3X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-021', PROV_OCHOA, 72.61, {
+  c('MAT-22-024', PROV_OCHOA, 72.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-metalica-d-cuadrito-bwg-14kgs-02450032',
     nota: 'Tela Metalica D / Cuadrito Bwg 14Kgs · artículo 02-45-0032 · ref. C-213/8X3/8X3X100 · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-022', PROV_OCHOA, 54.04, {
+  c('MAT-22-025', PROV_OCHOA, 54.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-p-gallinero-13kgs-02450127',
     nota: 'Tela P / Gallinero 13Kgs · artículo 02-45-0127 · ref. C-193X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-023', PROV_OCHOA, 46.53, {
+  c('MAT-22-026', PROV_OCHOA, 46.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tela-p-gallinero-11kgs-02450139',
     nota: 'Tela P / Gallinero 11Kgs · artículo 02-45-0139 · ref. C-203X100\' · marca GENER-TELA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-024', PROV_OCHOA, 16.91, {
+  c('MAT-22-027', PROV_OCHOA, 16.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660001',
     nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0001 · ref. 11/4"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-025', PROV_OCHOA, 76.66, {
+  c('MAT-22-028', PROV_OCHOA, 76.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-pasante-p-malla-cicl-04660023',
     nota: 'Copa Pasante P / Malla Cicl. · artículo 04-66-0023 · ref. 11/4"X11/2" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-026', PROV_OCHOA, 55.61, {
+  c('MAT-22-029', PROV_OCHOA, 55.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-tensora-p-malla-ciclonica-04660024',
     nota: 'Copa Tensora P / Malla Ciclonica · artículo 04-66-0024 · ref. 11/4" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-027', PROV_OCHOA, 36.96, {
+  c('MAT-22-030', PROV_OCHOA, 36.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660026',
     nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0026 · ref. 11/4"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-028', PROV_OCHOA, 60.03, {
+  c('MAT-22-031', PROV_OCHOA, 60.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/union-p-tubo-de-malla-04660280',
     nota: 'Union P / Tubo De Malla · artículo 04-66-0280 · ref. 11/4"REFORZADA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-029', PROV_OCHOA, 19.14, {
+  c('MAT-22-032', PROV_OCHOA, 19.14, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660003',
     nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0003 · ref. 11/2"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-030', PROV_OCHOA, 28.77, {
+  c('MAT-22-033', PROV_OCHOA, 28.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660002',
     nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0002 · ref. 11/2"LARGA-S/TORN. · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-031', PROV_OCHOA, 187.9, {
+  c('MAT-22-034', PROV_OCHOA, 187.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-p-malla-ciclonica-doble-04660017',
     nota: 'Brazo P / Malla Ciclonica Doble · artículo 04-66-0017 · ref. 11/2X11/4 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-032', PROV_OCHOA, 124.76, {
+  c('MAT-22-035', PROV_OCHOA, 124.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-sencillo-p-malla-especial-04660251',
     nota: 'Brazo Sencillo P / Malla Especial · artículo 04-66-0251 · ref. 11/2X11/4 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-033', PROV_OCHOA, 76.66, {
+  c('MAT-22-036', PROV_OCHOA, 76.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-pasante-p-malla-cicl-04660021',
     nota: 'Copa Pasante P / Malla Cicl. · artículo 04-66-0021 · ref. 11/2"X11/2" · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-034', PROV_OCHOA, 61.63, {
+  c('MAT-22-037', PROV_OCHOA, 61.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660091',
     nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0091 · ref. 11/2(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-035', PROV_OCHOA, 21.04, {
+  c('MAT-22-038', PROV_OCHOA, 21.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-cicl-04660006',
     nota: 'Abrazadera P / Malla Cicl. · artículo 04-66-0006 · ref. 2"CORTA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-036', PROV_OCHOA, 20.38, {
+  c('MAT-22-039', PROV_OCHOA, 20.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/abrazadera-p-malla-ciclonica-04660007',
     nota: 'Abrazadera P / Malla Ciclonica · artículo 04-66-0007 · ref. 2"LARGA-S/TORN. · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-037', PROV_OCHOA, 187.9, {
+  c('MAT-22-040', PROV_OCHOA, 187.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-para-malla-ciclonica-04660242',
     nota: 'Brazo Para Malla Ciclonica · artículo 04-66-0242 · ref. 2X11/4SENCILLA · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-038', PROV_OCHOA, 373.18, {
+  c('MAT-22-041', PROV_OCHOA, 373.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-doble-p-tubo-malla-04660319',
     nota: 'Brazo Doble P / Tubo Malla · artículo 04-66-0319 · ref. 2X11/2 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-039', PROV_OCHOA, 51.11, {
+  c('MAT-22-042', PROV_OCHOA, 51.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660029',
     nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0029 · ref. 2"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-040', PROV_OCHOA, 300.64, {
+  c('MAT-22-043', PROV_OCHOA, 300.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-p-malla-ciclonica-04660326',
     nota: 'Brazo P / Malla Ciclonica · artículo 04-66-0326 · ref. 23/8X11/2 · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-22-041', PROV_OCHOA, 36.5, {
+  c('MAT-22-044', PROV_OCHOA, 36.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/copa-terminal-p-tubo-malla-04660030',
     nota: 'Copa Terminal P / Tubo Malla · artículo 04-66-0030 · ref. 3"(TAPON) · marca ACC-MALLA. ' + SUPUESTO_ITBIS
   });
@@ -1924,79 +2392,87 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-d-aluminio-u-eu002-04530094',
     nota: 'Moldura D / Aluminio ”U” Eu002 · artículo 04-53-0094 · ref. 1/2X1/2X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-006', PROV_OCHOA, 827.9, {
+  c('MAT-23-006', PROV_INNOVA, 750, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x1-7-x19-032503',
+    nota: 'ANGULAR ALUMINIO 1X1"X19\' · artículo 032503 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-007', PROV_INNOVA, 398, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-3-3-4x1-3-2-7-x19-046361',
+    nota: 'ANGULAR ALUMINIO 3/4X1/2"X19\' · artículo 046361 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-23-008', PROV_OCHOA, 827.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-u-d-aluminio-can-007-04530108',
     nota: 'Moldura ”U” D / Aluminio Can.007 · artículo 04-53-0108 · ref. 5/8X5/8X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-007', PROV_OCHOA, 772.42, {
+  c('MAT-23-009', PROV_OCHOA, 772.42, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-alum-tubor0013-04730057',
     nota: 'Tubo Red. D / Alum. Tubor0013 · artículo 04-73-0057 · ref. 3/4"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-008', PROV_OCHOA, 436.29, {
+  c('MAT-23-010', PROV_OCHOA, 436.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-de-aluminio-19-20cm-04530111',
     nota: 'Angular De Aluminio 19.20Cm · artículo 04-53-0111 · ref. 3/4X3/4X19.20 · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-009', PROV_OCHOA, 957.33, {
+  c('MAT-23-011', PROV_OCHOA, 957.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-aluminio-tubor0021-04730053',
     nota: 'Tubo Red.D / Aluminio Tubor0021 · artículo 04-73-0053 · ref. 1"(19.20PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-010', PROV_OCHOA, 1709.91, {
+  c('MAT-23-012', PROV_OCHOA, 1709.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-aluminio-plati0020-04680050',
     nota: 'Planchuela D / Aluminio Plati0020 · artículo 04-68-0050 · ref. 1X1/4X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-011', PROV_OCHOA, 626.57, {
+  c('MAT-23-013', PROV_OCHOA, 626.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-aluminio-ea-046-04530084',
     nota: 'Angular D / Aluminio Ea-046 · artículo 04-53-0084 · ref. 1X3/4(19.20PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-012', PROV_OCHOA, 1336.93, {
+  c('MAT-23-014', PROV_OCHOA, 1336.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-aluminio-tubo-et076-04670007',
     nota: 'Perfil Aluminio (Tubo Et076) · artículo 04-67-0007 · ref. 1X1"(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-013', PROV_OCHOA, 2185.58, {
+  c('MAT-23-015', PROV_OCHOA, 2185.58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/tubo-red-d-alum-tubor0028-04730051',
     nota: 'Tubo Red.D / Alum. Tubor0028 · artículo 04-73-0051 · ref. 11/4"X(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-014', PROV_OCHOA, 982.22, {
+  c('MAT-23-016', PROV_OCHOA, 982.22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-alum-ea014-19-20-pie-04530113',
     nota: 'Angular D / Alum. Ea014 (19.20 Pie) · artículo 04-53-0113 · ref. 11/4X11/4 · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-015', PROV_OCHOA, 2567.7, {
+  c('MAT-23-017', PROV_OCHOA, 2567.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alum-plati0032-04540065',
     nota: 'Planchuela D / Alum Plati0032 · artículo 04-54-0065 · ref. 11/2X1/4(19.20P · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-016', PROV_OCHOA, 1117.37, {
+  c('MAT-23-018', PROV_OCHOA, 1117.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/moldura-d-aluminio-u-eu071-04530099',
     nota: 'Moldura D / Aluminio ”U” Eu071 · artículo 04-53-0099 · ref. 11/2X3/4X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-017', PROV_OCHOA, 2473.52, {
+  c('MAT-23-019', PROV_OCHOA, 2473.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-aluminio-angu0019-04530114',
     nota: 'Angular D / Aluminio Angu0019 · artículo 04-53-0114 · ref. 11/2X11/2(19.20P · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-018', PROV_OCHOA, 1701.73, {
+  c('MAT-23-020', PROV_OCHOA, 1701.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-cuad-d-alum-et087-tuboca0087-04670194',
     nota: 'Perfil Cuad. D / Alum.Et087 Tuboca0087 · artículo 04-67-0194 · ref. 11/2X11/2(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-019', PROV_OCHOA, 1846.63, {
+  c('MAT-23-021', PROV_OCHOA, 1846.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-rect-alum-et117-rect0117-04670073',
     nota: 'Perfil Rect. Alum. Et117 Rect0117 · artículo 04-67-0073 · ref. 2X1(19.2PIE) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-020', PROV_OCHOA, 3334.76, {
+  c('MAT-23-022', PROV_OCHOA, 3334.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/angular-d-alum-1-8-angu0027-04530115',
     nota: 'Angular D / Alum. 1 / 8 Angu0027 · artículo 04-53-0115 · ref. 2X2X19.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-021', PROV_OCHOA, 2695.59, {
+  c('MAT-23-023', PROV_OCHOA, 2695.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alum-plati0051-04540066',
     nota: 'Planchuela D / Alum Plati0051 · artículo 04-54-0066 · ref. 3"X3/16(19.20PI) · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-022', PROV_OCHOA, 3956.93, {
+  c('MAT-23-024', PROV_OCHOA, 3956.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-rect-d-aluminio-et103-04670080',
     nota: 'Perfil Rect. D / Aluminio Et103 · artículo 04-67-0080 · ref. 3X11/2X(19.2PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-023', PROV_OCHOA, 3464.55, {
+  c('MAT-23-025', PROV_OCHOA, 3464.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/planchuela-d-alumino-plati0059-04540067',
     nota: 'Planchuela D / Alumino Plati0059 · artículo 04-54-0067 · ref. 4"X1/819.20PIE · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-024', PROV_OCHOA, 5142.65, {
+  c('MAT-23-026', PROV_OCHOA, 5142.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfil-aluminio-nat-rect0101-04670119',
     nota: 'Perfil Aluminio Nat. Rect0101 · artículo 04-67-0119 · ref. 4"X13/4"X(19.2P · marca EMMA. ' + SUPUESTO_ITBIS
   });
@@ -5240,7 +5716,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plena-matrix-mezclador-8-canales-03061605',
     nota: 'Plena Matrix Mezclador 8 Canales · artículo 03-06-1605 · ref. PLM-8M8-US · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  /* ochoa:cotizaciones:fin */
+  /* catalogos:cotizaciones:fin */
 
   /* RETENIDO — pendiente de verificar
      Ochoa publica «Pintura Acrílica Superior 5 GL» a RD$ 983.41, que serían

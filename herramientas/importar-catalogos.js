@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 /* =========================================================
-   importar-ochoa.js
+   importar-catalogos.js
 
-   Ferretería Ochoa publica su catálogo completo con precios.
-   Esta herramienta lo convierte en ítems y cotizaciones del
-   sitio, sin que nadie transcriba nada a mano.
+   Varios comercios publican su catálogo con precios. Esta
+   herramienta los convierte en ítems y cotizaciones del sitio,
+   sin que nadie transcriba nada a mano.
 
    USO
    ---
-     node herramientas/importar-ochoa.js              # revisar
-     node herramientas/importar-ochoa.js --escribir   # aplicar
+     node herramientas/importar-catalogos.js              # revisar
+     node herramientas/importar-catalogos.js --listar     # ver qué saldría
+     node herramientas/importar-catalogos.js --descartes  # y qué no, y por qué
+     node herramientas/importar-catalogos.js --escribir   # aplicar
 
    La fuente es herramientas/datos-externos/ochoa-AAAA-MM-DD.json,
    la extracción del catálogo tal como la publica el comercio. Queda
@@ -57,8 +59,6 @@ const RAIZ = path.join(__dirname, '..');
 const DATOS = path.join(RAIZ, 'precios/assets/js');
 const FUENTE = path.join(__dirname, 'datos-externos/ochoa-2026-09-09.json');
 
-const PROVEEDOR = 'Ferretería Ochoa (8A)';
-const FECHA = '2026-09-09';
 const TOLERANCIA = 0.35;
 const PIES_POR_UNIDAD = 20;
 const ESCRIBIR = process.argv.indexOf('--escribir') >= 0;
@@ -67,7 +67,7 @@ const ESCRIBIR = process.argv.indexOf('--escribir') >= 0;
    1. Artículos que caen en un ítem que ya existe
    ========================================================= */
 
-const MAPEO = {
+const MAPEO_OCHOA = {
   '04-59-0192': 'MAT-02-003',   // Cemento Blanco Argos · ref FUNDA40KILOS
   '04-59-0391': 'MAT-02-003',   // Cemento Blanco Perla del Sur · ref FUNDA40KG
   '04-59-0065': 'MAT-02-004',   // Cal Perla hidratada · ref FDA44LBS = 20 kg
@@ -976,12 +976,17 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
    reglas-banos.js. */
 const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
+const INNOVA = require('./reglas-innovacentro.js');
 
 const FUENTES = [
   {
     archivo: FUENTE,
-    etiqueta: 'materiales de construcción',
+    etiqueta: 'Ochoa · materiales de construcción',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
     motivo: 'la ficha no declara la medida',
+    mapeo: MAPEO_OCHOA,
     regla: a => {
       const r = REGLAS[a.cat2 + '/' + a.cat3];
       return r ? r(a) : undefined;              // undefined = familia sin regla, ni se cuenta
@@ -989,15 +994,33 @@ const FUENTES = [
   },
   {
     archivo: path.join(__dirname, 'datos-externos/ochoa-banos-2026-09-09.json'),
-    etiqueta: 'baños',
+    etiqueta: 'Ochoa · baños',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
     motivo: 'repuesto de consumidor o pieza suelta de decoración',
+    mapeo: {},
     regla: a => BANOS.regla(a) || null
   },
   {
     archivo: path.join(__dirname, 'datos-externos/ochoa-seguridad-2026-09-09.json'),
-    etiqueta: 'seguridad y tecnología',
+    etiqueta: 'Ochoa · seguridad y tecnología',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
     motivo: 'accesorio de computadora, no de obra',
+    mapeo: {},
     regla: a => SEGTEC.regla(a) || null
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/innovacentro-2026-09-09.json'),
+    etiqueta: 'InnovaCentro · materiales de construcción',
+    proveedor: 'InnovaCentro (La Innovación)',
+    constante: 'PROV_INNOVA',
+    fecha: '2026-09-09',
+    motivo: 'no corresponde a ningún ítem y su ficha no basta para crear uno',
+    mapeo: INNOVA.MAPEO,
+    regla: a => INNOVA.regla(a) || null
   }
 ];
 
@@ -1016,10 +1039,24 @@ FUENTES.forEach(fuente => {
   let dentro = 0, fuera = 0;
 
   conPrecio.forEach(a => {
-    if (MAPEO[a.codigo]) { aExistente.push({ a, item: MAPEO[a.codigo] }); dentro++; return; }
+    a._fuente = fuente;                                   // de quién es el precio
+    if (fuente.mapeo[a.codigo]) {
+      aExistente.push({ a, item: fuente.mapeo[a.codigo] });
+      dentro++;
+      return;
+    }
     const spec = fuente.regla(a);
     if (spec === undefined) return;                       // familia sin regla
     if (!spec) { descartados.push({ a, motivo: fuente.motivo }); fuera++; return; }
+    /* Una regla puede resolver que el artículo es un ítem que ya existe.
+       En InnovaCentro pasa mucho: es el segundo comercio, y lo valioso de su
+       catálogo no son ítems nuevos sino un segundo precio para los que ya
+       están. */
+    if (spec.existente) {
+      aExistente.push({ a, item: spec.existente });
+      dentro++;
+      return;
+    }
     nuevos.push({ a, spec });
     dentro++;
   });
@@ -1104,8 +1141,17 @@ const CAT = global.CATALOGO;
    catálogo en cada importación. Se cuenta sobre el texto del archivo,
    hasta el marcador, que es exactamente lo escrito a mano. */
 const fuenteCatalogo = fs.readFileSync(path.join(DATOS, 'datos-catalogo.js'), 'utf8');
+const corte = fuenteCatalogo.indexOf('/* catalogos:items:inicio');
+if (corte < 0) {
+  /* Sin este aviso el indexOf devuelve -1, el slice se lleva el archivo
+     entero y el contador incluye los ítems que generó la corrida anterior:
+     los códigos se corren y las cotizaciones quedan apuntando al vacío.
+     Pasó una vez; no vuelve a pasar en silencio. */
+  console.error('No encuentro el marcador catalogos:items en datos-catalogo.js.');
+  process.exit(1);
+}
 const aMano = fuenteCatalogo
-  .slice(0, fuenteCatalogo.indexOf('/* ochoa:items:inicio'))
+  .slice(0, corte)
   .replace(/\/\*[\s\S]*?\*\//g, '');   // el encabezado trae un it() de ejemplo dentro de un comentario
 
 const contador = {};
@@ -1122,6 +1168,46 @@ lista.forEach(e => {
   codigoDe[c + '|' + e.spec.clave] = c + '-' + (n < 10 ? '00' + n : n < 100 ? '0' + n : '' + n);
 });
 
+/* Un mapeo puede apuntar a un ítem que genera esta misma herramienta. Ahí no
+   sirve escribir el código —se corre solo si más adelante entra otro ítem
+   antes—, así que se escribe '#CATEGORÍA|clave' y se resuelve aquí, ya con
+   los códigos asignados. */
+if (process.argv.indexOf('--claves') >= 0) {
+  const filtro = process.argv[process.argv.indexOf('--claves') + 1] || '';
+  console.log('');
+  console.log('Claves de los ítems generados' + (filtro ? ' que casan con «' + filtro + '»' : '') + ':');
+  Object.keys(codigoDe).sort().forEach(k => {
+    if (filtro && k.toLowerCase().indexOf(filtro.toLowerCase()) < 0) return;
+    console.log('  ' + codigoDe[k] + '   #' + k);
+  });
+}
+
+const generados = {};
+Object.keys(codigoDe).forEach(k => { generados[codigoDe[k]] = k; });
+
+aExistente.forEach(x => {
+  if (x.item.charAt(0) === '#') {
+    const k = x.item.slice(1);
+    const codigo = codigoDe[k];
+    if (!codigo) {
+      console.error('El mapeo del artículo ' + x.a.codigo + ' apunta a «' + k +
+                    '», que esta corrida no genera. Corre --claves para ver las que hay.');
+      process.exit(1);
+    }
+    x.item = codigo;
+    return;
+  }
+  /* Un mapeo NUNCA debe apuntar por código a un ítem que genera esta misma
+     herramienta: el número se corre en cuanto entra otro ítem antes en la
+     misma categoría, y las cotizaciones terminan en el ítem equivocado sin
+     dar ningún error. Pasó con InnovaCentro y las mallas ciclónicas. */
+  if (generados[x.item]) {
+    console.error('El mapeo del artículo ' + x.a.codigo + ' apunta a ' + x.item +
+                  ', que es un ítem generado. Usa la clave: #' + generados[x.item]);
+    process.exit(1);
+  }
+});
+
 /* =========================================================
    6. Código generado
    ========================================================= */
@@ -1131,7 +1217,7 @@ const num = n => Math.round(n * 100) / 100;
 
 function bloqueItems() {
   const L = [];
-  L.push('  /* ochoa:items:inicio — generado por herramientas/importar-ochoa.js.');
+  L.push('  /* catalogos:items:inicio — generado por herramientas/importar-catalogos.js.');
   L.push('     No editar a mano: se reescribe en cada importación. */');
   let catPrev = '';
   lista.forEach(e => {
@@ -1154,13 +1240,13 @@ function bloqueItems() {
            ref + ', ' + num(Math.min.apply(null, precios)) + ', ' + num(Math.max.apply(null, precios)) +
            ', {' + o + '});');
   });
-  L.push('  /* ochoa:items:fin */');
+  L.push('  /* catalogos:items:fin */');
   return L.join('\n');
 }
 
 function bloqueCotizaciones() {
   const L = [];
-  L.push('  /* ochoa:cotizaciones:inicio — generado por herramientas/importar-ochoa.js.');
+  L.push('  /* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.');
   L.push('     No editar a mano: se reescribe en cada importación. */');
   L.push('');
 
@@ -1174,15 +1260,24 @@ function bloqueCotizaciones() {
     if (a.unidad === 'PIE') notas.push('La tienda cotiza por pie y factura la unidad de ' +
       PIES_POR_UNIDAD + ' pies; aquí va el precio de la unidad completa');
     if (extra) notas.push(extra);
-    return "  c('" + item + "', PROV_OCHOA, " + num(precioUnidad(a)) + ", {\n" +
-           "    fecha: '" + FECHA + "', fuente: 'Precio publicado en " + esc(a.url) + "',\n" +
+    const f = a._fuente;
+    return "  c('" + item + "', " + f.constante + ", " + num(precioUnidad(a)) + ", {\n" +
+           "    fecha: '" + f.fecha + "', fuente: 'Precio publicado en " + esc(a.url) + "',\n" +
            "    nota: '" + esc(notas.join('. ')) + ". ' + SUPUESTO_ITBIS\n" +
            "  });";
   };
 
   if (existenteOk.length) {
-    L.push('  /* Artículos que corresponden a un ítem que ya existía. */');
-    existenteOk.forEach(x => L.push(linea(x.item, x.a)));
+    L.push('  /* Artículos que corresponden a un ítem que ya existía. Aquí es donde');
+    L.push('     el catálogo se vuelve comparable: el mismo ítem con el precio de');
+    L.push('     más de un comercio. */');
+    FUENTES.forEach(f => {
+      const suyas = existenteOk.filter(x => x.a._fuente === f);
+      if (!suyas.length) return;
+      L.push('');
+      L.push('  /* ' + f.etiqueta + ' */');
+      suyas.forEach(x => L.push(linea(x.item, x.a)));
+    });
     L.push('');
   }
   L.push('  /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */');
@@ -1190,7 +1285,7 @@ function bloqueCotizaciones() {
     const cod = codigoDe[e.spec.cat + '|' + e.spec.clave];
     e.articulos.forEach(a => L.push(linea(cod, a)));
   });
-  L.push('  /* ochoa:cotizaciones:fin */');
+  L.push('  /* catalogos:cotizaciones:fin */');
   return L.join('\n');
 }
 
@@ -1201,11 +1296,11 @@ function bloqueCotizaciones() {
 function reemplazar(archivo, marca, bloque) {
   const ruta = path.join(DATOS, archivo);
   const texto = fs.readFileSync(ruta, 'utf8');
-  const ini = '/* ochoa:' + marca + ':inicio';
-  const fin = '/* ochoa:' + marca + ':fin */';
+  const ini = '/* catalogos:' + marca + ':inicio';
+  const fin = '/* catalogos:' + marca + ':fin */';
   const i = texto.indexOf(ini), j = texto.indexOf(fin);
   if (i < 0 || j < 0) {
-    console.error('No encuentro los marcadores ochoa:' + marca + ' en ' + archivo + '.');
+    console.error('No encuentro los marcadores catalogos:' + marca + ' en ' + archivo + '.');
     process.exit(1);
   }
   const nuevo = texto.slice(0, i).replace(/[ \t]+$/, '') + bloque.replace(/^\s+/, '') +

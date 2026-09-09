@@ -129,8 +129,8 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,502 ítems**. De ellos, **1,208 ya llevan un precio real** de un
-comercio que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,566 ítems**. De ellos, **1,276 ya llevan un precio real** de un
+comercio que lo publica; 284 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
@@ -186,7 +186,7 @@ escriba el nombre correcto de la calle y no encuentre nada.
 montos son estimaciones nuestras y el sitio lo dice en todas las páginas.
 
 Conviene tenerlo presente al agregar ítems a mano: cada ítem nuevo es un precio más que
-levantar. La excepción son los que entran por `importar-ochoa.js`, que llegan con su
+levantar. La excepción son los que entran por `importar-catalogos.js`, que llegan con su
 cotización real puesta: esos suman al catálogo sin alejar el lanzamiento.
 
 ### Cómo va la cobertura
@@ -197,7 +197,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,208 de 1,496 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,276 de 1,560 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -295,16 +295,16 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**1,308 cotizaciones reales cargadas · 1,208 ítems verificados de 1,496.**
+**1,393 cotizaciones reales cargadas · 1,276 ítems verificados de 1,560.**
 
 Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — tres extracciones completas del catálogo de Ochoa: materiales de
-  construcción (398 artículos, 349 con precio), baños (945 / 713) y seguridad y
-  tecnología (809 / 604). De ahí salieron 8 cotizaciones sobre ítems que ya existían y
-  **1,194 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
-  estimación nuestra.
+- **09/09/2026** — cuatro extracciones completas: el catálogo de Ochoa en materiales de
+  construcción (398 artículos, 349 con precio), baños (945 / 713) y seguridad y tecnología
+  (809 / 604), más el departamento de materiales de InnovaCentro (118 / 118). De ahí
+  salieron **1,260 ítems nuevos que nacieron verificados** y **47 cotizaciones sobre ítems
+  que ya existían**, que son las que vuelven comparable el catálogo.
 
 Los 288 ítems restantes siguen siendo estimaciones nuestras.
 
@@ -338,10 +338,11 @@ cemento y yeso en `MAT-02`.
 ## Importar el catálogo de un proveedor
 
 ```bash
-node herramientas/importar-ochoa.js              # revisar, sin escribir
-node herramientas/importar-ochoa.js --listar     # ver los ítems que saldrían
-node herramientas/importar-ochoa.js --descartes  # ver qué se quedó fuera y por qué
-node herramientas/importar-ochoa.js --escribir   # aplicar
+node herramientas/importar-catalogos.js              # revisar, sin escribir
+node herramientas/importar-catalogos.js --listar     # ver los ítems que saldrían
+node herramientas/importar-catalogos.js --descartes  # ver qué se quedó fuera y por qué
+node herramientas/importar-catalogos.js --claves     # ver las claves de los generados
+node herramientas/importar-catalogos.js --escribir   # aplicar
 node herramientas/generar-categorias.js          # rehacer las páginas
 ```
 
@@ -374,9 +375,10 @@ Hay un juego de reglas por extracción, porque cada rubro plantea una pregunta d
 
 | Archivo | Qué decide |
 |---|---|
-| dentro de `importar-ochoa.js` | Materiales: cuál es la medida exacta del artículo |
-| `reglas-banos.js` | Baños: si es equipamiento de obra o repuesto de consumidor |
-| `reglas-segtec.js` | Seguridad y tecnología: si es sistema del edificio o accesorio de computadora |
+| dentro de `importar-catalogos.js` | Ochoa · materiales: cuál es la medida exacta del artículo |
+| `reglas-banos.js` | Ochoa · baños: si es equipamiento de obra o repuesto de consumidor |
+| `reglas-segtec.js` | Ochoa · seguridad: si es sistema del edificio o accesorio de computadora |
+| `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo |
 
 Los tres comparten `texto-ochoa.js`, que expande las abreviaturas del comercio y separa
 las medidas pegadas para que el nombre quede legible sin inventarle nada.
@@ -405,6 +407,39 @@ variantes de la misma cosa en distintos acabados. Se quedan las barras de seguri
 porque en baños accesibles y en obra hotelera y de salud son una partida obligatoria con
 su propio anclaje, y el equipamiento de baño público —secador de manos y dispensadores
 automáticos—, que se compra por cantidad de baños igual que un inodoro.
+
+### El segundo comercio, y por qué cambia todo
+
+Hasta InnovaCentro todo el catálogo venía de Ochoa, y con un solo precio por ítem el sitio
+muestra un número, no un mercado. De los 118 artículos de su departamento de materiales
+entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículos que caen
+sobre ítems que ya existían**. Ahí aparece el rango, la mediana deja de ser un dato suelto
+y el comprador ve con quién le conviene.
+
+Hoy hay **26 ítems con precio de más de un comercio**, y el más consultado de todos ya
+tiene mercado: la funda de cemento gris de 42.5 kg va de RD$ 535 a RD$ 655.
+
+Por eso `reglas-innovacentro.js` es sobre todo un **mapeo declarado a mano**, artículo por
+artículo, con su justificación cuando la equivalencia no salta a la vista: que la funda de
+94 libras son los mismos 42.5 kg, que el zinc acanalado se nombra por su ancho nominal de
+3 pies aunque el útil sea 2.7, que «palometa» es como InnovaCentro llama al brazo del
+poste, o que la copa pasante lleva dos medidas y cada comercio las escribe en el orden que
+quiere.
+
+### Nunca apuntes por código a un ítem generado
+
+El mapeo admite dos formas y la diferencia importa:
+
+```js
+'023108': 'MAT-02-001',                    // ítem escrito a mano: su código no se mueve
+'028879': '#MAT-22|malla-ciclonica-11-6',  // ítem generado: se apunta por clave
+```
+
+El código de un ítem generado **sí se corre**: basta con que entre otro ítem antes en la
+misma categoría. Apuntarle por código manda las cotizaciones al ítem equivocado **sin dar
+ningún error**, y así fue como en la primera pasada la malla ciclónica de 6 pies terminó
+cotizada al precio de un tubo. El importador ahora lo rechaza y dice qué clave usar; con
+`--claves` se listan todas.
 
 ### La regla de seguridad y tecnología: sistema del edificio sí, tienda de computadoras no
 

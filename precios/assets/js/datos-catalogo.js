@@ -100,7 +100,7 @@
   it('MAT-02', 'Yeso escayola E-30, funda 25 kg', 'funda', 620, 500, 780, {esp:'Para molduras y plafones de yeso', etapa:'terminacion'});
   it('MAT-02', 'Pegamento de cerámica blanco, funda 22.7 kg', 'funda', 720, 590, 900, {esp:'Blanco, para piezas claras', etapa:'pisos', alias:'50 libras'});
   it('MAT-02', 'Cal hidratada, funda 25 kg', 'funda', 390, 330, 470, {esp:'Para morteros de pañete', etapa:'terminacion', gama:'economica'});
-  it('MAT-02', 'Mortero predosificado de pañete, funda 40 kg', 'funda', 440, 380, 520, {esp:'Listo para mezclar con agua', etapa:'terminacion'});
+  it('MAT-02', 'Mortero predosificado de pañete, funda 42.5 kg', 'funda', 440, 380, 520, {esp:'Listo para mezclar con agua', etapa:'terminacion'});
   it('MAT-02', 'Mortero autonivelante, funda 20 kg', 'funda', 1180, 950, 1450, {esp:'Nivelación de pisos antes de revestir', etapa:'pisos', origen:'importado'});
   it('MAT-02', 'Pegamento de cerámica interior, funda 25 kg', 'funda', 385, 320, 470, {esp:'Uso interior, piso y pared', etapa:'pisos', gama:'economica'});
   it('MAT-02', 'Pegamento flexible para porcelanato, funda 25 kg', 'funda', 680, 560, 850, {esp:'Clase C2, gran formato y exteriores', etapa:'pisos', gama:'premium'});
@@ -457,7 +457,7 @@
      salen de las cotizaciones que están en datos-precios.js.
      ===================================================================== */
 
-/* ochoa:items:inicio — generado por herramientas/importar-ochoa.js.
+/* catalogos:items:inicio — generado por herramientas/importar-catalogos.js.
      No editar a mano: se reescribe en cada importación. */
 
   /* EQU-04 */
@@ -470,6 +470,44 @@
   it('MAT-01', 'Arena 3/16" en funda de 55 libras', 'funda', 151.87, 151.87, 151.87, {esp:'Agregado ensacado para obra menor y reparaciones · granulometría 3/16" · funda de 55 libras', etapa:'estructura', alias:'funda de arena, funda de grava, agregado ensacado', alcance:'Material retirado en almacén'});
 
   /* MAT-02 */
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Rosado 1 galón', 'unidad', 959, 959, 959, {esp:'marca CANO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Rosado 1 / 2 galón', 'unidad', 465, 465, 465, {esp:'marca CANO · liquido · 1/2Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Rosado 32 oz', 'unidad', 265, 265, 265, {esp:'marca CANO · liquido · 32Oz', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Ultra Azul 1 galón', 'unidad', 1020, 1020, 1020, {esp:'marca CANO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Ultra Azul 1 / 2 galón', 'unidad', 535, 535, 535, {esp:'marca CANO · liquido · 1/2Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Cano Silbond Ultra Azul 32 oz', 'unidad', 305, 305, 305, {esp:'marca CANO · liquido · 32Oz', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-1052-2 5 galón', 'unidad', 10935, 10935, 10935, {esp:'marca LANCO · liquido · 5Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-606-4 1 galón Rosado', 'unidad', 1125, 1125, 1125, {esp:'marca LANCO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-606-9 1 / 2 galón Rosado', 'unidad', 570, 570, 570, {esp:'marca LANCO · liquido · 1/2Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-610-2 5 galón Azul Extra Pro', 'unidad', 6300, 6300, 6300, {esp:'marca LANCO · liquido · 5Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-610-4 1 galón Azul Extra Pro', 'unidad', 1185, 1185, 1185, {esp:'marca LANCO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-610-5 1 / 4 galón', 'unidad', 395, 395, 395, {esp:'marca LANCO · liquido · 1/4Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-8000-4 Texturizado 1 galón', 'unidad', 2005, 2005, 2005, {esp:'marca LANCO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-902 1 galón', 'unidad', 1460, 1460, 1460, {esp:'marca LANCO · liquido · 1Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Aditivo Concreto Lanco CB-902-2 5 galón', 'unidad', 6055, 6055, 6055, {esp:'marca LANCO · liquido · 5Gl', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Fibra Polipropileno Sikafiber Para Concreto 0.6 KG', 'unidad', 454.75, 454.75, 454.75, {esp:'marca SIKA · fibra · 0.6Kg', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Primer Epoxico Concreto Sikadur 32 Gel 1 KG Componente A+B', 'unidad', 1610.75, 1610.75, 1610.75, {esp:'marca SIKA · 1Kg', etapa:'estructura', origen:'importado', alias:'aditivo para hormigón', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Cemento Autonivelante Weco W-501 WE0850105 Polimero Gris 40 lb', 'unidad', 3952.5, 3952.5, 3952.5, {esp:'marca WEC · 40Lb', etapa:'estructura', origen:'importado', alias:'cemento', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Cemento Weco W-350 WE0855504 Gris 10 lb', 'unidad', 377.4, 377.4, 377.4, {esp:'marca WEC · 10Lb', etapa:'estructura', origen:'importado', alias:'cemento', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Cemento Weco W-400 WE0875003 Blanco 10 lb Ultra', 'funda', 533.8, 533.8, 533.8, {esp:'marca WEC · polvo · 10lbs', etapa:'estructura', origen:'importado', alias:'cemento', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Cemento Weco W-511 WE0751104 hidráulico 1 galón', 'unidad', 949.45, 949.45, 949.45, {esp:'marca WEC · 1Gl', etapa:'estructura', origen:'importado', alias:'cemento', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Cemento Weco W-511 WE0751105 hidráulico Cubeta 40 lb', 'unidad', 2817.75, 2817.75, 2817.75, {esp:'marca WEC · 40Lb', etapa:'estructura', origen:'importado', alias:'cemento', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Mezcla Pañete 10 lb', 'unidad', 135, 135, 135, {esp:'marca INNOMATE · polvo · 10Lb', etapa:'terminacion', origen:'importado', alias:'mortero', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Mortero Anclaje Sikagrout 212 Relleno 22 KG', 'unidad', 1270.75, 1270.75, 1270.75, {esp:'marca SIKA · polvo · 22Kg', etapa:'terminacion', origen:'importado', alias:'mortero', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Mortero Ceramica Mapei Ultraflex LFT Polimero Blanco 50 lb', 'unidad', 2396, 2396, 2396, {esp:'marca MAPEI · polvo · 50Lb', etapa:'terminacion', origen:'importado', alias:'mortero', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Mortero Impermeabilizante Sika 101 Blanco 25 KG Tanques Piscinas', 'unidad', 2715.75, 2715.75, 2715.75, {esp:'marca SIKA · polvo · 25Kg', etapa:'terminacion', origen:'importado', alias:'mortero', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Mortero Mapei Planitop XS Gris 50 lb', 'unidad', 1308, 1308, 1308, {esp:'marca MAPEI · polvo · 50Lb', etapa:'terminacion', origen:'importado', alias:'mortero', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Yeso Blanco Funda 10 lb', 'unidad', 167, 167, 167, {esp:'marca INNOMATE · polvo · 10Lb', etapa:'terminacion', origen:'importado', alias:'yeso en polvo', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Yeso Blanco Funda 2 lb', 'unidad', 28, 28, 28, {esp:'marca INNOMATE · polvo · 2Lbs', etapa:'terminacion', origen:'importado', alias:'yeso en polvo', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Weco W-1000 WE0810501 Polimero Blanco 50 lb', 'unidad', 1365.1, 1365.1, 1365.1, {esp:'marca WEC · 50Lb', etapa:'pisos', origen:'importado', alias:'derretido, grout', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Weco W-3000 Cero Polimero Blanco 10 lb', 'unidad', 786.25, 786.25, 786.25, {esp:'marca WEC · 10Lb', etapa:'pisos', origen:'importado', alias:'derretido, grout', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Lanco SM-502-4 Ceramic Tile Blanco 1 galón', 'unidad', 1845, 1845, 1845, {esp:'marca LANCO · 1Gl', etapa:'pisos', origen:'importado', alias:'pegamento de cerámica', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Lanco SM-502-5 Ceramic Tile Blanco 1 / 4 galón', 'unidad', 625, 625, 625, {esp:'marca LANCO · 1/4Gl', etapa:'pisos', origen:'importado', alias:'pegamento de cerámica', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Weco W-2000 WE0810602 Polimero Gris 10 lb', 'unidad', 610.3, 610.3, 610.3, {esp:'marca WEC · 10Lb', etapa:'pisos', origen:'importado', alias:'pegamento de cerámica', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Weco W-761 Blanco 10 lb', 'unidad', 437.75, 437.75, 437.75, {esp:'marca WEC · polvo · 10lbs', etapa:'pisos', origen:'importado', alias:'pegamento de cerámica', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento Ceramica Weco W-900 WE0810454 Blanco 10 lb', 'funda', 569.5, 569.5, 569.5, {esp:'marca WEC · 10lbs', etapa:'pisos', origen:'importado', alias:'pegamento de cerámica', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Derretido para cerámica, funda de 10 libras', 'funda', 553.35, 328, 712, {esp:'Fragua en polvo para juntas de cerámica y porcelanato · funda de 10 libras', etapa:'pisos', origen:'importado', alias:'derretido, grout, fragua', alcance:'Material retirado en almacén'});
+  it('MAT-02', 'Pegamento de cerámica gris, funda 22.7 kg (50 lb)', 'funda', 330.5, 325, 336, {esp:'Adhesivo cementicio gris para cerámica · funda de 50 libras', etapa:'pisos', alias:'pegamento de cerámica, mortero cola, pega', alcance:'Material retirado en almacén'});
   it('MAT-02', 'Cemento gris, funda de 5 libras', 'funda', 34.36, 34.36, 34.36, {esp:'Cemento gris en presentación menuda, para reparaciones · 5 libras', etapa:'terminacion', alias:'cemento gris, funda pequeña de cemento', alcance:'Material retirado en almacén'});
   it('MAT-02', 'Cemento gris, funda de 10 libras', 'funda', 65.96, 65.96, 65.96, {esp:'Cemento gris en presentación menuda, para reparaciones · 10 libras', etapa:'terminacion', alias:'cemento gris, funda pequeña de cemento', alcance:'Material retirado en almacén'});
   it('MAT-02', 'Cemento blanco, funda de 2 libras', 'funda', 49.97, 49.97, 49.97, {esp:'Cemento blanco en presentación menuda, para detalles y reparaciones · 2 libras', etapa:'terminacion', origen:'importado', alias:'cemento blanco', alcance:'Material retirado en almacén'});
@@ -499,7 +537,17 @@
   it('MAT-04', 'Alambre galvanizado picado, caja de 50 lb', 'caja', 2488.96, 2488.96, 2488.96, {esp:'Alambre galvanizado cortado a medida para amarre · caja de 50 libras', etapa:'estructura', origen:'importado', alias:'alambre picado, alambre cortado de amarre', alcance:'Material retirado en almacén'});
   it('MAT-04', 'Alambre liso galvanizado picado calibre 16, paquete de 10 lb', 'paquete', 619.63, 619.63, 619.63, {esp:'Alambre liso galvanizado cortado para amarre · calibre 16 · paquete de 10 libras', etapa:'estructura', origen:'importado', alias:'alambre picado, alambre de amarre cortado', alcance:'Material retirado en almacén'});
 
+  /* MAT-06 */
+  it('MAT-06', 'Plywood Okume 4\'X8\'X1 / 4"', 'unidad', 780, 780, 780, {esp:'marca INNOMATE · madera · 4\'X8\'X1/4" · 1/4"', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+  it('MAT-06', 'Plywood Okume 4\'X8\'X1 / 8"', 'unidad', 475, 475, 475, {esp:'marca INNOMATE · madera · 4\'X8\'X1/8" · 1/8"', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+  it('MAT-06', 'Plywood Okume 4\'X8\'X3 / 8"', 'unidad', 1115, 1115, 1115, {esp:'marca INNOMATE · madera · 4\'X8\'X3/8" · 3/8"', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+  it('MAT-06', 'Plywood Pino 4\'X8\'X1 / 4"', 'unidad', 825, 825, 825, {esp:'marca INNOMATE · madera · 4\'X8\'X/4" · 1/4"', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+  it('MAT-06', 'Plywood Pino 4\'X8\'X3 / 8"', 'unidad', 1245, 1245, 1245, {esp:'marca INNOMATE · madera · 4\'X8\'X3/8" · 3/8"', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+  it('MAT-06', 'Plywood Slatwall Decoratico blanco 4 x 8\'', 'unidad', 1995, 1995, 1995, {esp:'marca INNOMATE · madera · 4X8\'', etapa:'estructura', origen:'importado', alias:'plywood, plancha de madera', alcance:'Material retirado en almacén'});
+
   /* MAT-07 */
+  it('MAT-07', 'Caballete Fibraforte Rojo 0.76 x 0.6', 'unidad', 1535, 1535, 1535, {esp:'marca INNOMATE · fibra · 0.76x0.6', etapa:'techos', origen:'importado', alias:'caballete, cumbrera', alcance:'Material retirado en almacén'});
+  it('MAT-07', 'Plancha Teja Fibraforte Rojo Opaco 0.76 Mx1.15M', 'unidad', 1450, 1450, 1450, {esp:'marca INNOMATE · fibra · 0.76X1.15', etapa:'techos', origen:'importado', alias:'teja de fibra, plancha tipo teja', alcance:'Material retirado en almacén'});
   it('MAT-07', 'Zinc acanalado calibre 29, 3 x 6 pies', 'plancha', 283.2, 270.21, 296.18, {esp:'Lámina galvanizada acanalado calibre 29 · 3 x 6 pies', etapa:'techos', gama:'economica', alias:'plancha de zinc, lámina de zinc', alcance:'Material retirado en almacén'});
   it('MAT-07', 'Zinc acanalado calibre 29, 3 x 12 pies', 'plancha', 592.36, 592.36, 592.36, {esp:'Lámina galvanizada acanalado calibre 29 · 3 x 12 pies', etapa:'techos', gama:'economica', alias:'plancha de zinc, lámina de zinc', alcance:'Material retirado en almacén'});
   it('MAT-07', 'Zinc acanalado calibre 34, 3 x 6 pies', 'plancha', 208.33, 208.33, 208.33, {esp:'Lámina galvanizada acanalado calibre 34 · 3 x 6 pies', etapa:'techos', gama:'economica', alias:'plancha de zinc, lámina de zinc', alcance:'Material retirado en almacén'});
@@ -606,6 +654,18 @@
   /* MAT-12 */
   it('MAT-12', 'Estuco para interiores, funda de 35 libras', 'funda', 331.11, 331.11, 331.11, {esp:'Masilla en polvo para alisar paredes interiores · funda de 35 libras', etapa:'terminacion', alias:'estuco, masilla de pared', alcance:'Material retirado en almacén'});
 
+  /* MAT-13 */
+  it('MAT-13', 'Angular 10\' T-Grid Plafon', 'unidad', 98, 98, 98, {esp:'marca INNOMATE · metal · 10\'', etapa:'terminacion', origen:'importado', alias:'perfilería de plafón, T-grid', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Cross Tee 2\' T-Grid Plafon', 'unidad', 26, 26, 26, {esp:'marca INNOMATE · metal · 2\'', etapa:'terminacion', origen:'importado', alias:'perfilería de plafón, T-grid', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Cross Tee 4\' T-Grid Plafon', 'unidad', 56, 56, 56, {esp:'marca INNOMATE · metal · 4\'', etapa:'terminacion', origen:'importado', alias:'perfilería de plafón, T-grid', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Durmiente Plafon 2-1 / 2" X 10 calibre 25', 'unidad', 149, 149, 149, {esp:'marca INNOMATE · yeso · 2-1/2"X10 · Calibre 25', etapa:'terminacion', origen:'importado', alias:'durmiente, perfilería de plafón', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Main Tee 12\' T-Grid Plafon', 'unidad', 186, 186, 186, {esp:'marca INNOMATE · yeso · 12\'', etapa:'terminacion', origen:'importado', alias:'perfilería de plafón, T-grid', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Parales 2-1 / 2"X10 calibre25 plafón', 'unidad', 185, 185, 185, {esp:'marca INNOMATE · metal · 2-1/2"X10 · Calibre 25', etapa:'terminacion', origen:'importado', alias:'paral, stud, perfilería', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Plafon PVC Blanco 2 x 4\' Cs-605 x 1219 x 7', 'unidad', 202, 202, 202, {esp:'marca INNOMATE · pvc · 2X4\'', etapa:'terminacion', origen:'importado', alias:'plafón', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Plafon PVC Blanco Machihembrado Cs-250 x 5800 x 7 Mm (19’)', 'unidad', 375, 375, 375, {esp:'marca INNOMATE · pvc · 250X5800X7MM', etapa:'terminacion', origen:'importado', alias:'plafón', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Plafon Vinyl Yeso Liso 2 x 4\' 7 mm A154', 'unidad', 295, 295, 295, {esp:'marca INNOMATE · vinil · 2X4\' · liso', etapa:'terminacion', origen:'importado', alias:'plafón', alcance:'Material retirado en almacén'});
+  it('MAT-13', 'Carton Piedra 4\'X8\' 3.2 mm 1 / 8"', 'unidad', 495, 495, 495, {esp:'marca INNOMATE · carton · 4\'X8\' 3X2Mm 1/8" · 1/8"', etapa:'terminacion', origen:'importado', alias:'cartón piedra', alcance:'Material retirado en almacén'});
+
   /* MAT-16 */
   it('MAT-16', 'Camara Hdcvi Domo 2 Mp 2.8 Mm Cooper Sdl', 'unidad', 740.01, 740.01, 740.01, {esp:'marca DAHUA · accesorios intelegentes · referencia DH-HAC-T1A21N-U-IL-A', etapa:'estructura', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
   it('MAT-16', 'Camara Hdcvi Domo 5 Mp 2.8 Mm Cooper Sdl', 'unidad', 1368.3, 1368.3, 1368.3, {esp:'marca DAHUA · accesorios intelegentes · referencia DH-HAC-T1A51N-U-IL-A', etapa:'estructura', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
@@ -707,6 +767,9 @@
   it('MAT-16', 'Mini Caja De Conexiones para Camara Bullet', 'unidad', 1012.91, 1012.91, 1012.91, {esp:'marca STD · accesorios para camaras · referencia TR-JB03-I-IN', etapa:'instalaciones', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
   it('MAT-16', 'Homekit Camara De Video Hub', 'unidad', 6508.12, 6508.12, 6508.12, {esp:'marca AQARA · camaras domesticas · referencia HUBG3', etapa:'instalaciones', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
 
+  /* MAT-18 */
+  it('MAT-18', 'Asfalto En Frio Ecofalt Funda 25 kg', 'unidad', 1695, 1695, 1695, {esp:'marca ECOFALT · asfalto frio · 25Kg', etapa:'exteriores', origen:'importado', alias:'asfalto en frío', alcance:'Material retirado en almacén'});
+
   /* MAT-19 */
   it('MAT-19', 'Perfil cuadrado negro 3/4" x 3/4" x 20 pies, pared 1.2 mm', 'unidad', 262.29, 262.29, 262.29, {esp:'Tubo estructural de sección cuadrado · 3/4" x 3/4" · pared 1.2 mm · acabado negro', etapa:'estructura', origen:'importado', alias:'perfilería, tubo cuadrado, HSS', alcance:'Material retirado en almacén'});
   it('MAT-19', 'Perfil cuadrado negro 3/4" x 3/4" x 20 pies, pared 1.6 mm', 'unidad', 321.76, 321.76, 321.76, {esp:'Tubo estructural de sección cuadrado · 3/4" x 3/4" · pared 1.6 mm · acabado negro', etapa:'estructura', origen:'importado', alias:'perfilería, tubo cuadrado, HSS', alcance:'Material retirado en almacén'});
@@ -756,6 +819,8 @@
   it('MAT-19', 'Correa galvanizada tipo Z 8" x 1/16" x 20 pies', 'unidad', 3039.2, 3039.2, 3039.2, {esp:'Perfil Z galvanizado para correas de techo · alma 8" · espesor 1/16" · tramo de 20 pies', etapa:'techos', origen:'importado', alias:'correa Z, perlín, larguero de techo', alcance:'Material retirado en almacén'});
 
   /* MAT-20 */
+  it('MAT-20', 'Angular Perforado 1-1 / 2 x 1-1 / 2"X10\'', 'unidad', 425, 425, 425, {esp:'marca INNOMATE · metal · 1-1/2X1-1/2"X10\'', etapa:'estructura', origen:'importado', alias:'angular perforado', alcance:'Material retirado en almacén'});
+  it('MAT-20', 'Angular Perforado 1-1 / 2 x 1-1 / 2"X8\'', 'unidad', 360, 360, 360, {esp:'marca INNOMATE · metal · 1-1/2X1-1/2"X8\'', etapa:'estructura', origen:'importado', alias:'angular perforado', alcance:'Material retirado en almacén'});
   it('MAT-20', 'Angular de hierro negro 3/4" x 1/8" x 20 pies', 'unidad', 449.99, 449.99, 449.99, {esp:'Perfil L de acero al carbono · 3/4" x 1/8" · barra de 20 pies', etapa:'estructura', origen:'importado', alias:'perfil L, ángulo de hierro, angular', alcance:'Material retirado en almacén'});
   it('MAT-20', 'Angular de hierro negro 1" x 1/8" x 20 pies', 'unidad', 560, 560, 560, {esp:'Perfil L de acero al carbono · 1" x 1/8" · barra de 20 pies', etapa:'estructura', origen:'importado', alias:'perfil L, ángulo de hierro, angular', alcance:'Material retirado en almacén'});
   it('MAT-20', 'Angular de hierro negro 1" x 3/16" x 20 pies', 'unidad', 812.01, 812.01, 812.01, {esp:'Perfil L de acero al carbono · 1" x 3/16" · barra de 20 pies', etapa:'estructura', origen:'importado', alias:'perfil L, ángulo de hierro, angular', alcance:'Material retirado en almacén'});
@@ -851,6 +916,9 @@
   it('MAT-21', 'Metal desplegable plano 1 1/2", plancha 4 x 8 pies', 'plancha', 939.35, 939.35, 939.35, {esp:'Lámina expandida de acero · rombo de 1 1/2" · plancha de 4 x 8 pies', etapa:'estructura', origen:'importado', alias:'metal desplegado, lámina expandida', alcance:'Material retirado en almacén'});
 
   /* MAT-22 */
+  it('MAT-22', 'Alambre Trinchera Jabali Rollo 45 m', 'rollo', 595, 595, 595, {esp:'marca JABALI · metal · 45 Mts · galvanizado', etapa:'exteriores', origen:'importado', alias:'alambre de trinchera', alcance:'Material retirado en almacén'});
+  it('MAT-22', 'Proteccion Verja 3 Puya Barra Redonda', 'unidad', 995, 995, 995, {esp:'marca INNOMATE · metal · 1mt', etapa:'exteriores', origen:'importado', alias:'protección de verja, puya', alcance:'Material retirado en almacén'});
+  it('MAT-22', 'Proteccion Verja Planchuela 1 m', 'unidad', 985, 985, 985, {esp:'marca INNOMATE · metal · 1mt', etapa:'exteriores', origen:'importado', alias:'protección de verja, puya', alcance:'Material retirado en almacén'});
   it('MAT-22', 'Malla ciclónica calibre 9, 3 pies de alto, rollo de 50 pies', 'rollo', 5223.1, 5223.1, 5223.1, {esp:'Malla de alambre galvanizado tejido en rombo · calibre 9 · 3 pies de alto · rollo de 50 pies', etapa:'exteriores', origen:'importado', alias:'malla ciclónica, verja de alambre, cyclone', alcance:'Material retirado en almacén'});
   it('MAT-22', 'Malla ciclónica calibre 9, 4 pies de alto, rollo de 50 pies', 'rollo', 6121.98, 6121.98, 6121.98, {esp:'Malla de alambre galvanizado tejido en rombo · calibre 9 · 4 pies de alto · rollo de 50 pies', etapa:'exteriores', origen:'importado', alias:'malla ciclónica, verja de alambre, cyclone', alcance:'Material retirado en almacén'});
   it('MAT-22', 'Malla ciclónica calibre 9, 6 pies de alto, rollo de 50 pies', 'rollo', 9867.16, 9867.16, 9867.16, {esp:'Malla de alambre galvanizado tejido en rombo · calibre 9 · 6 pies de alto · rollo de 50 pies', etapa:'exteriores', origen:'importado', alias:'malla ciclónica, verja de alambre, cyclone', alcance:'Material retirado en almacén'});
@@ -899,6 +967,8 @@
   it('MAT-23', 'Planchuela de aluminio 1/2" x 1/8" x 19.20 pies', 'unidad', 452.36, 452.36, 452.36, {esp:'Pletina de aluminio extruido · 1/2" x 1/8" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'pletina de aluminio, planchuela', alcance:'Material retirado en almacén'});
   it('MAT-23', 'Angular de aluminio 1/2" x 1/2" x 19.20 pies', 'unidad', 394.72, 394.72, 394.72, {esp:'Perfil L de aluminio extruido · 1/2" x 1/2" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'angular de aluminio, perfil L', alcance:'Material retirado en almacén'});
   it('MAT-23', 'Moldura U de aluminio 1/2" x 1/2" x 19.20 pies', 'unidad', 377.71, 377.71, 377.71, {esp:'Moldura en U de aluminio extruido · 1/2" x 1/2" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'moldura U, canal de aluminio', alcance:'Material retirado en almacén'});
+  it('MAT-23', 'Angular Aluminio 1 x 1"X19\'', 'unidad', 750, 750, 750, {esp:'marca INNOMATE · metal · 1X1"X19\' · aluminio', etapa:'puertas-ventanas', origen:'importado', alias:'angular de aluminio', alcance:'Material retirado en almacén'});
+  it('MAT-23', 'Angular Aluminio 3 / 4 x 1 / 2"X19\'', 'unidad', 398, 398, 398, {esp:'marca INNOMATE · metal · 3/4X1/2"X19\' · aluminio', etapa:'puertas-ventanas', origen:'importado', alias:'angular de aluminio', alcance:'Material retirado en almacén'});
   it('MAT-23', 'Moldura U de aluminio 5/8" x 5/8" x 19.20 pies', 'unidad', 827.9, 827.9, 827.9, {esp:'Moldura en U de aluminio extruido · 5/8" x 5/8" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'moldura U, canal de aluminio', alcance:'Material retirado en almacén'});
   it('MAT-23', 'Tubo redondo de aluminio 3/4" x 19.20 pies', 'unidad', 772.42, 772.42, 772.42, {esp:'Tubería redonda de aluminio extruido · 3/4" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'tubo de aluminio', alcance:'Material retirado en almacén'});
   it('MAT-23', 'Angular de aluminio 3/4" x 3/4" x 19.20 pies', 'unidad', 436.29, 436.29, 436.29, {esp:'Perfil L de aluminio extruido · 3/4" x 3/4" · tramo de 19.20 pies', etapa:'puertas-ventanas', origen:'importado', alias:'angular de aluminio, perfil L', alcance:'Material retirado en almacén'});
@@ -1697,7 +1767,7 @@
   it('MAT-31', 'Temporizador Semanal Plena', 'unidad', 39743.82, 39743.82, 39743.82, {esp:'marca BOSCH · intercom audio · referencia PLN-6TMW', etapa:'instalaciones', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
   it('MAT-31', 'Gestor De Mensajes Plena', 'unidad', 40282.58, 40282.58, 40282.58, {esp:'marca BOSCH · intercom audio · referencia LBB1965/00', etapa:'instalaciones', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
   it('MAT-31', 'Plena Matrix Mezclador 8 Canales', 'unidad', 59719.34, 59719.34, 59719.34, {esp:'marca BOSCH · intercom audio · referencia PLM-8M8-US', etapa:'instalaciones', origen:'importado', alias:'', alcance:'Material retirado en almacén'});
-  /* ochoa:items:fin */
+  /* catalogos:items:fin */
 
   /* ========================= TAXONOMÍA ========================= */
 
