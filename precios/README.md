@@ -184,13 +184,67 @@ escriba el nombre correcto de la calle y no encuentre nada.
 **El sitio se publica cuando cada ítem tenga al menos un precio real.** Mientras tanto los
 montos son estimaciones nuestras y el sitio lo dice en todas las páginas.
 
-Para ver cuánto falta:
+Conviene tenerlo presente al agregar ítems: cada ítem nuevo es un precio más que levantar.
+
+### Cómo va la cobertura
+
+Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 
 ```bash
-node -e "global.window={};['catalogo','proveedores','precios'].forEach(f=>require('./precios/assets/js/datos-'+f+'.js'));var C=window.CATALOGO;window.PRECIOS.aplicar(C,window.PROVEEDORES);var v=C.items.filter(i=>i.estado==='verificado').length;console.log(v+' de '+C.items.length+' con precio real · faltan '+(C.items.length-v));"
+node herramientas/generar-lote-precios.js 0
 ```
 
-Conviene tenerlo presente al agregar ítems: cada ítem nuevo es un precio más que levantar.
+Al 09/09/2026: **13 de 302 ítems con precio real**. Los otros 6 del catálogo van según
+tarifario oficial y no llevan precio por definición, así que no cuentan.
+
+### Levantar precios por tandas
+
+La recolección se trabaja en lotes, con dos herramientas que son las dos mitades del
+mismo ciclo.
+
+**1. Armar el encargo.**
+
+```bash
+node herramientas/generar-lote-precios.js            # los próximos 30 pendientes
+node herramientas/generar-lote-precios.js 40         # los próximos 40
+node herramientas/generar-lote-precios.js 20 --categoria MAT-04
+node herramientas/generar-lote-precios.js 30 --desde 60
+```
+
+Escribe `herramientas/lotes/lote-NN.md`: un encargo en Markdown con las reglas de
+recolección, el formato de respuesta y la ficha de cada ítem (especificación, unidad,
+alias de mercado, qué cubre el precio), más los comercios del directorio que publican
+esa categoría en línea. Se pega tal cual en un asistente con navegación, o se reparte
+entre quien vaya a llamar a los proveedores.
+
+Dos cosas que hace solo:
+
+- **No repite trabajo.** Excluye los ítems que ya tienen precio real, así que después de
+  cargar un lote basta volver a correrlo y el siguiente arranca donde terminó el anterior.
+- **Ordena por dificultad.** Primero las categorías que más comercios publican en línea;
+  de últimos los agregados, la mano de obra y el alquiler de equipos, que hay que
+  preguntar por teléfono.
+
+**2. Cargar la respuesta.** Se guarda la respuesta cruda en un archivo de texto y:
+
+```bash
+node herramientas/importar-lote.js respuesta.txt
+```
+
+Devuelve por salida estándar las llamadas a `c()` listas para pegar en
+`datos-precios.js`, y por error estándar el informe de lo que revisó. **No escribe en
+`datos-precios.js` por su cuenta, a propósito:** cada cotización que entra al sitio pasa
+antes por la vista de una persona.
+
+| Qué hace | Con qué |
+|---|---|
+| Rechaza | Código de ítem inexistente · proveedor que no está en el directorio (con sugerencia del más parecido, porque casi siempre es un tilde de menos) · precio que no es número positivo · fecha mal formada · líneas `NO ENCONTRADO` |
+| Avisa, pero deja pasar | Precio a más de 3× o menos de 0.35× de la estimación —casi siempre es otra presentación, no un cambio de precio— · proveedor que el directorio no tiene registrado en esa categoría |
+| Escribe solo | La nota con el nombre del producto en la tienda · `itbis: false` cuando la ficha declara que no lo incluye · la referencia a `SUPUESTO_ITBIS` cuando la ficha no dice nada |
+
+Después de pegar las cotizaciones hay que **volver a generar las páginas**
+(`node herramientas/generar-categorias.js`), porque los precios de las páginas de
+categoría se escriben en el HTML.
 
 ## Registrar una cotización de proveedor
 

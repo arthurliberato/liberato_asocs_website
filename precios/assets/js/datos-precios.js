@@ -43,9 +43,17 @@
 
    ESTADO ACTUAL
    -------------
-   Primera tanda cargada: 9 cotizaciones de 3 comercios, tomadas de los
-   precios que ellos mismos publican en sus tiendas en línea (08/09/2026).
-   Los 244 ítems restantes siguen siendo estimaciones nuestras.
+   16 cotizaciones de 3 comercios, tomadas de los precios que ellos
+   mismos publican en sus tiendas en línea (08 y 09/09/2026). Con eso hay
+   13 ítems verificados de 302 que llevan precio; los otros 289 siguen
+   siendo estimaciones nuestras. Los 6 ítems restantes van según
+   tarifario oficial y no llevan precio por definición.
+
+   El sitio no se abre al público hasta que cada ítem tenga al menos un
+   precio real. Para avanzar en eso están las dos herramientas del
+   repositorio: generar-lote-precios.js arma el encargo de los ítems que
+   todavía faltan, e importar-lote.js revisa la respuesta y escribe las
+   llamadas a c() que van justo aquí abajo.
 
    Nunca se inventa un precio para atribuírselo a una empresa real: cada
    cotización de aquí tiene su fuente y su fecha, y lo que no se pudo
