@@ -69,21 +69,23 @@ CAT.etapas.forEach((e) => { etapaPorCodigo[e.codigo] = e; });
 
 /* ---------- cabecera, pie y panel de cotización ---------- */
 
+/* La portada es el catálogo, así que el menú no lleva «Inicio»: el logotipo
+   ya cumple esa función. Las páginas generadas son hijas de una sección, no
+   la sección misma, por eso marcan aria-current="true" y no "page". */
 function header(seccion) {
   const nav = [
-    ['index.html', 'Inicio', 'inicio'],
-    ['catalogo.html', 'Catálogo de precios', 'catalogo'],
+    ['./', 'Catálogo de precios', 'catalogo'],
     ['proveedores.html', 'Proveedores', 'proveedores'],
     ['metodologia.html', 'Metodología', 'metodologia'],
   ].map(([href, texto, clave]) =>
-    `<li><a href="${href}"${clave === seccion ? ' aria-current="page"' : ''}>${texto}</a></li>`
+    `<li><a href="${href}"${clave === seccion ? ' aria-current="true"' : ''}>${texto}</a></li>`
   ).join('\n        ');
 
   return `<a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="brand" href="index.html" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
+    <a class="brand" href="./" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
       <img src="assets/img/logo.png" alt="Ingenieros Liberato &amp; Asociados" width="2920" height="766">
       <span class="brand-tag">Precios de<br>construcción</span>
     </a>
@@ -115,7 +117,7 @@ const FOOTER = `<footer class="site-footer">
       <div>
         <h3>Base de precios</h3>
         <ul>
-          <li><a href="catalogo.html">Catálogo completo</a></li>
+          <li><a href="./">Catálogo completo</a></li>
           <li><a href="precio-cemento-morteros-aditivos.html">Cemento</a></li>
           <li><a href="precio-varilla-acero.html">Varilla y acero</a></li>
           <li><a href="precio-blocks-prefabricados.html">Blocks</a></li>
@@ -348,9 +350,8 @@ function generarCategoria(cat) {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Precios de construcción', item: SITIO + '/' },
-          { '@type': 'ListItem', position: 2, name: 'Catálogo de precios', item: SITIO + '/catalogo.html' },
-          { '@type': 'ListItem', position: 3, name: cat.nombre, item: url },
+          { '@type': 'ListItem', position: 1, name: 'Catálogo de precios', item: SITIO + '/' },
+          { '@type': 'ListItem', position: 2, name: cat.nombre, item: url },
         ],
       },
       {
@@ -376,9 +377,8 @@ function generarCategoria(cat) {
 <section class="section section-primera">
   <div class="shell">
     <nav class="miga" aria-label="Ruta de navegación">
-      <a href="index.html">Precios de construcción</a> <span aria-hidden="true">›</span>
-      <a href="catalogo.html">Catálogo</a> <span aria-hidden="true">›</span>
-      <span>${esc(cat.nombre)}</span>
+      <a href="./">Catálogo de precios</a> <span aria-hidden="true">›</span>
+      <span aria-current="page">${esc(cat.nombre)}</span>
     </nav>
 
     <div class="section-head" style="margin-bottom:1.5rem">
@@ -434,7 +434,7 @@ ${items.map(fila).join('\n')}
 
     <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       ¿Busca algo que no está en esta tabla?
-      <a href="catalogo.html?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
+      <a href="./?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
       o <a href="metodologia.html">lea cómo se arman estos precios</a>.
     </p>
   </div>
@@ -548,9 +548,10 @@ ${COTIZACION}
 }
 
 /* ---------- portada: bloques estáticos e indexables ----------
-   La rejilla de categorías y los precios destacados se escriben en el HTML
-   de index.html entre marcadores, para que los enlaces a las 27 páginas y
-   los precios existan sin depender de JavaScript. */
+   index.html es el catálogo. Debajo de la tabla de resultados, la rejilla de
+   categorías y los precios destacados se escriben en el HTML entre marcadores,
+   para que los enlaces a las 41 páginas y los precios existan sin depender de
+   JavaScript: la tabla del catálogo se sirve vacía y la pinta app.js. */
 
 function parchearPortada() {
   const archivo = path.join(DESTINO, 'index.html');
@@ -588,21 +589,19 @@ function parchearPortada() {
   reemplazar('categorias', `    <div class="grid grid-4" id="grid-categorias">\n${tarjetas}\n    </div>`);
   reemplazar('destacados', `        <ul id="destacados" style="margin-top:1.6rem">\n${destacados}\n        </ul>`);
 
-  /* Cifras del hero: valor real en el HTML, el JS solo lo confirma. */
+  /* Cifras del encabezado: valor real en el HTML, el JS solo lo confirma.
+     Las del directorio (proveedores, cuántos publican precios) ya no van
+     en la portada: pertenecen a proveedores.html. */
   const cifras = {
     'n-items': CAT.items.length,
     'n-cats': CAT.categorias.length,
-    /* Sin el filtro, la portada anunciaba 87 proveedores contando los ocho
-       ficticios del modo demostración. Un número de portada no puede salir de
-       datos inventados, ni siquiera mientras la demo está encendida. */
-    'n-prov': PROV.lista.filter((p) => !p.demo).length,
-    'n-precios': PROV.lista.filter((p) => p.precios && !p.demo).length,
   };
   Object.keys(cifras).forEach((id) => {
-    html = html.replace(
-      new RegExp('(<span class="stat-num" id="' + id + '">)[^<]*(</span>)'),
-      '$1' + cifras[id] + '$2'
-    );
+    const re = new RegExp('(<span class="stat-num" id="' + id + '">)[^<]*(</span>)');
+    /* String.replace no protesta cuando no encuentra nada: sin esta
+       comprobación las cifras se congelarían en silencio. */
+    if (!re.test(html)) throw new Error('No se encontró la cifra ' + id + ' en index.html');
+    html = html.replace(re, '$1' + cifras[id] + '$2');
   });
 
   fs.writeFileSync(archivo, html);
@@ -614,7 +613,6 @@ function parchearPortada() {
 function generarSitemap() {
   const urls = [
     [SITIO + '/', 'weekly', '1.0'],
-    [SITIO + '/catalogo.html', 'weekly', '0.9'],
     [SITIO + '/proveedores.html', 'monthly', '0.8'],
     [SITIO + '/metodologia.html', 'monthly', '0.6'],
   ];

@@ -14,8 +14,8 @@ ni paso de compilación. Esta carpeta es la raíz del subdominio y es autoconten
 
 ```
 precios/
-  index.html              Portada: buscador, categorías, precios destacados, canal de venta
-  catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
+  index.html              Portada = el catálogo: filtros, tabla, lista de cotización y,
+                          debajo, destacados, las 41 categorías y la descarga en Excel
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
   precio-*.html           41 páginas estáticas, una por categoría   ← GENERADAS
@@ -1247,7 +1247,7 @@ su referencia general y se marca, que es más útil que un hueco.
 ### Nota de implementación
 
 La interfaz del filtro (botón, panel y barra) la inyecta `app.js` en tiempo de ejecución,
-no está en el HTML de las 31 páginas. Es una función puramente interactiva que no necesita
+no está en el HTML de las 41 páginas. Es una función puramente interactiva que no necesita
 estar en el HTML para los buscadores, y así no hay que regenerar el sitio para tocarla.
 
 Las páginas de categoría traen la ficha de cada ítem escrita en el HTML —eso sí lo ve un
@@ -1266,8 +1266,8 @@ morada, hay una barra de aviso en todas las páginas, y los ítems afectados que
 como **Demostración**, nunca como *Verificado*: un dato inventado no se presenta como
 comprobado.
 
-Los proveedores ficticios **no aparecen** en el directorio ni en los contadores de la
-portada, que siguen mostrando las 79 empresas reales.
+Los proveedores ficticios **no aparecen** en el directorio, que sigue mostrando las
+80 empresas reales.
 
 ### Qué demuestra cada caso
 
@@ -1482,7 +1482,7 @@ hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
   generador: eso rehace las 41 páginas de categoría, la portada y el `sitemap.xml`;
-- las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
+- las etiquetas `canonical` y `og:url` de `index.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
 - `robots.txt`;
@@ -1495,8 +1495,10 @@ hay que cambiar la URL en:
 
 - **La lista de cotización** se guarda en `localStorage` del visitante, se comparte
   entre páginas y se envía por WhatsApp al `18297939892` o se copia como texto.
-- **Los filtros viven en la URL** (`catalogo.html?cat=MAT-05&etapa=techos`), así que
-  cualquier vista se puede compartir o enlazar.
+- **Los filtros viven en la URL** (`/?cat=MAT-05&etapa=techos`), así que cualquier
+  vista se puede compartir o enlazar. Al reescribirla, `app.js` conserva los parámetros
+  que no son suyos (`utm_*`, `fbclid`…) y normaliza la ruta a `./`, para que
+  `/index.html` no aparezca nunca en la barra de direcciones.
 - **Búsqueda sin acentos:** "albanil" encuentra "Albañil".
 - **ITBIS:** el interruptor "Ver sin ITBIS" descuenta el 18% solo de los ítems que lo
   traen incluido; nunca se lo suma a la mano de obra, que no lo lleva.
@@ -1507,11 +1509,20 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 41 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
-  el catálogo interactivo funcionan como concentradores.
-- `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
-  ya no está en el `sitemap.xml`: la versión indexable de esa categoría es
-  `precio-blocks-prefabricados.html`, y todos los enlaces internos apuntan allí.
+- Las 41 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada
+  (que es el catálogo) funciona como concentrador: la rejilla de categorías y los diez
+  destacados que el generador escribe debajo de la tabla son los únicos enlaces y precios
+  que un buscador ve en la raíz, porque la tabla se sirve vacía y la pinta `app.js`.
+- `/?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero no está en el
+  `sitemap.xml`: la versión indexable de esa categoría es `precio-blocks-prefabricados.html`,
+  y todos los enlaces internos apuntan allí.
+- **`/catalogo.html` redirige a `/` con un 308 declarado en `precios/vercel.json`.** El
+  catálogo vivió en esa URL, está indexada y hay enlaces externos; Vercel reenvía la
+  cadena de consulta, así que `/catalogo.html?cat=MAT-05` cae en `/?cat=MAT-05`. La
+  redirección no se quita nunca: Google sigue pidiendo URLs viejas durante años. Ningún
+  enlace interno debe apuntar a `catalogo.html` (comprobación:
+  `grep -rn 'catalogo\.html' precios herramientas/generar-categorias.js` solo debe dar
+  el `vercel.json` y este README).
 - Si se cambia el `slug` de una categoría, la URL anterior queda muerta. Al hacerlo hay
   que dejar una redirección 301 en el hosting hacia la nueva.
 - No usamos marcado `Product` ni `Offer` en los precios, y es deliberado: no son ofertas

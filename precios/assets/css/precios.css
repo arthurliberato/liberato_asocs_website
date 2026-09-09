@@ -120,8 +120,8 @@ table{border-collapse:collapse;width:100%}
 .nav-list{display:flex;gap:1.5rem}
 .nav-list a{position:relative;font-family:Jost,sans-serif;font-size:.94rem;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .2s var(--ease)}
 .nav-list a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--blue);transition:right .28s var(--ease)}
-.nav-list a:hover,.nav-list a[aria-current="page"]{color:var(--navy)}
-.nav-list a:hover::after,.nav-list a[aria-current="page"]::after{right:0}
+.nav-list a:hover,.nav-list a[aria-current]{color:var(--navy)}
+.nav-list a:hover::after,.nav-list a[aria-current]::after{right:0}
 .nav-cta{padding:.55rem 1.05rem;font-size:.9rem}
 .nav-toggle{display:none;width:44px;height:44px;background:none;border:1px solid var(--line);border-radius:var(--r-sm);cursor:pointer;padding:0;flex-direction:column;align-items:center;justify-content:center;gap:5px}
 .nav-toggle span{width:19px;height:2px;background:var(--navy);border-radius:2px;transition:transform .25s var(--ease),opacity .2s var(--ease)}
@@ -171,56 +171,6 @@ table{border-collapse:collapse;width:100%}
   .franja-negocio-inner{gap:.6rem;padding:.7rem 0}
   .franja-negocio p{font-size:.88rem;text-align:center}
 }
-
-/* =========================================================
-   HERO
-   ========================================================= */
-.hero{
-  position:relative;background:linear-gradient(165deg,var(--navy-900) 0%,var(--navy-800) 45%,var(--navy-700) 100%);
-  color:#fff;padding:clamp(3rem,7vw,5.5rem) 0 clamp(2.5rem,5vw,4rem);overflow:hidden;isolation:isolate;
-}
-.hero-bg{position:absolute;inset:0;z-index:-1}
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(120,168,255,.11) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(120,168,255,.11) 1px,transparent 1px),
-    linear-gradient(rgba(120,168,255,.055) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(120,168,255,.055) 1px,transparent 1px);
-  background-size:120px 120px,120px 120px,24px 24px,24px 24px;
-  mask-image:radial-gradient(120% 90% at 30% 20%,#000 20%,transparent 78%);
-  -webkit-mask-image:radial-gradient(120% 90% at 30% 20%,#000 20%,transparent 78%);
-}
-.hero-glow{position:absolute;top:-30%;right:-15%;width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(circle,rgba(120,168,255,.26) 0%,transparent 62%);filter:blur(30px)}
-.hero-inner{position:relative;max-width:820px}
-.hero .eyebrow{color:var(--blue-200)}
-.hero-title{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.025em;margin-bottom:1.1rem}
-.hero-title em{font-style:normal;color:var(--blue)}
-.hero-lead{font-size:clamp(1rem,1.7vw,1.2rem);color:rgba(233,241,252,.82);max-width:62ch;font-weight:300;margin-bottom:1.9rem}
-
-.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:clamp(2.5rem,5vw,3.6rem);background:rgba(255,255,255,.12);border-top:1px solid rgba(255,255,255,.12)}
-.hero-stats li{background:linear-gradient(165deg,var(--navy-800),var(--navy-700));padding:1.4rem 1.2rem 1.7rem;display:flex;flex-direction:column;gap:.3rem}
-.stat-num{font-family:Jost,sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;color:var(--blue);line-height:1;font-variant-numeric:tabular-nums}
-.stat-label{font-size:.85rem;color:rgba(233,241,252,.66)}
-@media (max-width:720px){.hero-stats{grid-template-columns:repeat(2,1fr)}}
-
-/* ---------- buscador del hero ---------- */
-.hero-search{position:relative;max-width:640px}
-.hero-search input{
-  width:100%;padding:1.05rem 1.1rem 1.05rem 3.1rem;font-size:1.05rem;
-  background:rgba(255,255,255,.97);color:var(--ink);
-  border:1px solid transparent;border-radius:var(--r);box-shadow:var(--shadow-lg);
-}
-.hero-search input::placeholder{color:var(--ink-mute)}
-.hero-search svg{position:absolute;left:1.05rem;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--ink-mute);pointer-events:none}
-.hero-hints{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.95rem}
-.hero-hints span{font-size:.83rem;color:rgba(233,241,252,.6);margin-right:.15rem}
-.hero-hints a{
-  font-size:.85rem;text-decoration:none;padding:.28rem .7rem;border-radius:100px;
-  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);color:rgba(233,241,252,.9);
-  transition:background .2s var(--ease),border-color .2s var(--ease);
-}
-.hero-hints a:hover{background:rgba(255,255,255,.17);border-color:rgba(255,255,255,.34)}
 
 /* =========================================================
    AVISO DE ESTADO DE LOS DATOS
@@ -640,3 +590,89 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .footer-nav a:hover{color:#fff}
 .footer-bottom{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem;color:rgba(233,241,252,.5)}
 .footer-bottom p{margin:0}
+
+/* =========================================================
+   PORTADA DEL CATÁLOGO (raíz del subdominio)
+   Identidad a la izquierda y descargo a la derecha, en una sola
+   fila: como la fila mide el máximo de sus columnas y no su suma,
+   el descargo no cuesta altura en escritorio y la barra de filtros
+   queda a un palmo del título. Por debajo de ~840px la fila se
+   parte sola por flex-basis y las dos piezas se apilan.
+   Presupuesto medido: del título al borde superior de .tools,
+   ≤99px a 1440 y ≤143px a 390 (la cuarta parte del bloque viejo).
+
+   Va al final de la hoja: .aviso-fila tiene la misma especificidad
+   que .aviso y solo gana por orden de aparición. No toca
+   .section-primera, .section-head, .section-title, .section-sub,
+   .eyebrow ni .aviso, que usan proveedores, metodología y las
+   41 páginas que escribe herramientas/generar-categorias.js.
+   ========================================================= */
+.portada{padding:clamp(1rem,1.6vw,1.4rem) 0 .8rem}
+.portada-fila{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 2rem}
+
+.portada-id{flex:1 1 26rem;min-width:0}
+.portada-titulo{font-size:clamp(1.3rem,2.6vw,2.3rem);line-height:1.14}
+
+/* line-height en rem (no unitario) para que el rótulo, que va a menor
+   tamaño, no engorde el renglón. */
+.portada-meta{margin:.4rem 0 0;font-size:.88rem;line-height:1.3rem;color:var(--ink-soft)}
+.portada-meta .stat-num{font-family:Jost,sans-serif;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums}
+.portada-meta a{color:inherit}
+/* Hace el trabajo del .eyebrow sin gastar un renglón propio. */
+.portada-tag{
+  font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--navy);
+  margin-right:.55rem;
+}
+
+/* El descargo completo, como segunda columna. Crece algo más que la
+   columna de identidad para que la frase de la cotización formal quepa
+   en dos renglones y el aviso siga sin aportar altura. */
+.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.55rem .8rem;gap:.6rem}
+.aviso-fila svg{width:17px;height:17px;margin-top:.16rem}
+.aviso-fila p{font-size:.84rem;line-height:1.3rem}
+/* Solo cuando sobra ancho: a 390px esta frase añade un cuarto renglón y
+   rompe el techo de 143px. El texto íntegro vive en metodologia.html. */
+.aviso-largo{display:none}
+@media (min-width:700px){.aviso-largo{display:inline}}
+
+@media (max-width:560px){
+  .portada{padding-bottom:.5rem}
+  .portada-fila{gap:.5rem}
+  .portada-meta{margin-top:.35rem;font-size:.84rem;line-height:1.2rem}
+  /* Redundantes con el h1 en pantalla estrecha: se van y liberan el
+     renglón; quedan las dos cifras. */
+  .portada-tag,.portada-desc{display:none}
+  .aviso-fila{padding:.45rem .65rem;gap:.5rem}
+  .aviso-fila svg{width:15px;height:15px}
+  .aviso-fila p{font-size:.8rem;line-height:1.15rem}
+}
+@media (max-width:360px){
+  .portada-titulo{font-size:1.15rem}
+  .portada-meta{font-size:.76rem;line-height:1.1rem}
+  .aviso-fila p{font-size:.78rem;line-height:1.1rem}
+}
+
+/* =========================================================
+   LA BARRA PEGAJOSA NO SE PUEDE COMER EL MÓVIL
+   De poco sirve bajar el encabezado a la cuarta parte si .tools sigue
+   midiendo ~400px anclada bajo una cabecera de 73px. Aplica también a
+   proveedores.html, el otro archivo que usa .tools.
+
+   OJO: no poner overflow en .filtros. El menú de «+N etapas»
+   (.chip-menu) es hijo posicionado en absoluto de .filtros y cualquier
+   overflow distinto de visible lo recorta; además compactarChips()
+   decide qué chips esconder comparando offsetTop, así que necesita que
+   la fila siga envolviendo.
+   ========================================================= */
+@media (max-width:640px){
+  .tools{padding:.6rem 0 .7rem}
+  .tools-row{gap:.5rem}
+  .search-box input{padding:.62rem .8rem .62rem 2.5rem}
+  .select{font-size:.86rem;padding:.5rem .55rem}
+  .toggle-itbis{font-size:.84rem}
+  .tools-row .btn-mini{padding:.42rem .7rem;font-size:.82rem}
+  .filtros{margin-top:.55rem;gap:.4rem}
+  .chip{padding:.28rem .65rem;font-size:.82rem}
+  .chip-group-label{font-size:.72rem}
+}
