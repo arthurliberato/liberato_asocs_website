@@ -359,7 +359,7 @@ function generarCategoria(cat) {
     : `<p class="section-sub" style="margin-top:1.2rem"><strong>${items.length} ítems</strong> en esta categoría, sin monto publicado porque se liquidan según tarifario oficial.</p>`;
 
   const cuerpo = `
-<section class="section" style="padding-bottom:1.5rem">
+<section class="section section-primera">
   <div class="shell">
     <nav class="miga" aria-label="Ruta de navegación">
       <a href="index.html">Precios de construcción</a> <span aria-hidden="true">›</span>

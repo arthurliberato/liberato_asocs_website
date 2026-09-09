@@ -301,13 +301,34 @@
 
   (function avisoDemo() {
     if (!global_DEMO() || !document.body) return;
+
+    /* Se puede cerrar, pero solo por la sesión del navegador: al volver otro
+       día el aviso reaparece. Las etiquetas «Demostración» de cada ítem y la
+       nota morada dentro de cada ficha no se pueden ocultar. */
+    var LS_DEMO = 'ilya_precios_aviso_demo_cerrado';
+    try {
+      if (window.sessionStorage.getItem(LS_DEMO) === '1') return;
+    } catch (e) { /* modo privado: se muestra igual */ }
+
     var barra = document.createElement('div');
     barra.className = 'barra-demo';
     barra.setAttribute('role', 'status');
-    barra.innerHTML = '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
-      'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
-      'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
-      'cotizado todavía y ninguno de estos precios es una oferta.';
+    barra.innerHTML =
+      '<div class="barra-demo-texto">' +
+        '<span class="barra-demo-etiqueta">Modo demostración</span> ' +
+        'Esta versión incluye <strong>proveedores y cotizaciones ficticios</strong>, marcados con la ' +
+        'etiqueta <em>demo</em>, para mostrar cómo funcionará el sitio. Ningún proveedor real ha ' +
+        'cotizado todavía y ninguno de estos precios es una oferta.' +
+      '</div>' +
+      '<button class="barra-demo-cerrar" type="button" aria-label="Cerrar el aviso de demostración">' +
+        ICONO.equis +
+      '</button>';
+
+    barra.querySelector('.barra-demo-cerrar').addEventListener('click', function () {
+      barra.remove();
+      try { window.sessionStorage.setItem(LS_DEMO, '1'); } catch (e) { /* nada que guardar */ }
+    });
+
     document.body.insertBefore(barra, document.body.firstChild);
   })();
 
