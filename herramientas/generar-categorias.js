@@ -592,8 +592,11 @@ function parchearPortada() {
   const cifras = {
     'n-items': CAT.items.length,
     'n-cats': CAT.categorias.length,
-    'n-prov': PROV.lista.length,
-    'n-precios': PROV.lista.filter((p) => p.precios).length,
+    /* Sin el filtro, la portada anunciaba 87 proveedores contando los ocho
+       ficticios del modo demostración. Un número de portada no puede salir de
+       datos inventados, ni siquiera mientras la demo está encendida. */
+    'n-prov': PROV.lista.filter((p) => !p.demo).length,
+    'n-precios': PROV.lista.filter((p) => p.precios && !p.demo).length,
   };
   Object.keys(cifras).forEach((id) => {
     html = html.replace(

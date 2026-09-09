@@ -63,12 +63,6 @@
     zonas:['gsd','cibao'], web:'ochoa.com.do', tel:'809-971-8000', precios:true,
     nota:'Fundada en 1971. Sucursales en Santiago y Santo Domingo Oeste (Zona Industrial Herrera). E-commerce con precios en RD$ por producto: es la mejor fuente de precio base en línea.'
   });
-  p('Ferretería Americana', {
-    tipo:'cadena', canal:'detallista',
-    cats:['MAT-02','MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-11','MAT-12','MAT-13','MAT-14','MAT-15'],
-    zonas:['gsd'], web:'ferreteriaamericana.com.do', precios:true,
-    nota:'Fundada en 1964, más de 70 años. Seis o más sucursales en el Gran Santo Domingo (JFK, Mella, San Martín, Máximo Gómez, Independencia, Maga Centro-SDE). Tienda en línea.'
-  });
   p('Ferremix (Grupo Alterra)', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-04','MAT-06','MAT-08','MAT-09','MAT-10','MAT-12','MAT-14','MAT-17'],
@@ -100,8 +94,8 @@
   p('Ferretería MC', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12','MAT-14'],
-    zonas:['gsd'], web:'mc.com.do', precios:true,
-    nota:'Catálogo con carrito de compras. Departamento de terminación: cerámica de piso y pared, porcelanato y molduras.'
+    zonas:['gsd'], web:'mc.com.do', precios:false,
+    nota:'Catálogo en línea sin precios: hay que pedirlos. Departamento de terminación: cerámica de piso y pared, porcelanato y molduras. Lista de precios solicitada, pendiente de respuesta.'
   });
   p('Ferretería Gigante', {
     tipo:'cadena', canal:'detallista',
@@ -360,8 +354,8 @@
   });
   p('Cielos Acústicos', {
     tipo:'especializado', canal:'detallista', cats:['MAT-08','MAT-10','MAT-13'], zonas:['gsd','este'],
-    web:'cielosacusticos.com', tel:'809-732-2368', email:'ventas@cielosacusticos.com', precios:true,
-    nota:'Distribuidor de Panel Rey en RD. Sucursales en Av. Charles Sumner #35 y #20 (Los Prados), Av. Charles de Gaulle (Cancino), Urb. Las Américas y Carretera Higüey-Miches. Plafones acústicos, revestimientos, pisos, techos, fachadas, iluminación, divisiones acústicas móviles y herramientas. Catálogos en línea.'
+    web:'cielosacusticos.com', tel:'809-732-2368', email:'ventas@cielosacusticos.com', precios:false,
+    nota:'Distribuidor de Panel Rey en RD. Sucursales en Av. Charles Sumner #35 y #20 (Los Prados), Av. Charles de Gaulle (Cancino), Urb. Las Américas y Carretera Higüey-Miches. Plafones acústicos, revestimientos, pisos, techos, fachadas, iluminación, divisiones acústicas móviles y herramientas. Publica catálogos, no precios.'
   });
   p('Industrias Gueca (PANELROCK)', {
     tipo:'fabricante', canal:'fabricante', cats:['MAT-13'], zonas:['nacional'],

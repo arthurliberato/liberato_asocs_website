@@ -859,6 +859,46 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
+## El directorio: 79 proveedores, 13 con precios en línea
+
+El directorio es grande porque sirve para saber a quién llamar, no solo de dónde salen los
+precios. De sus 79 entradas, **13 publican precios o tienen tienda en línea**, y solo esas
+sirven para extraer un catálogo sin pedir cotización. Cuatro ya están cargadas.
+
+| | Proveedor | Cotizaciones |
+|---|---|---|
+| ✔ | Ferretería Ochoa (8A) | 2,288 |
+| ✔ | Ferretería Cima | 644 |
+| ✔ | InnovaCentro (La Innovación) | 351 |
+| ✔ | Ferremix (Grupo Alterra) | 2 |
+| | Plaza Lama, Ferretería Gigante, Würth Dominicana, Gerdau Metaldom, Cerarte, Cerámica Import, Procontratista, Segumart, SOS Protección Integral | — |
+
+Segumart está en la lista pero exige registro para ver precios, y no se entra a secciones
+que piden cuenta.
+
+### El campo `precios` hay que verificarlo a mano
+
+Es el campo del directorio que más se equivoca, porque un catálogo en línea no es lo mismo
+que un catálogo con precios. Al revisarlo con el cliente cayeron tres de dieciséis:
+
+- **Ferretería Americana** no existe. Se eliminó del directorio.
+- **Ferretería MC** tiene catálogo en línea pero sin precios; hay que pedirlos, y ya se
+  pidieron. Queda con `precios: false` y la gestión anotada en la nota.
+- **Cielos Acústicos** publica catálogos, no precios. Igual.
+
+Los otros trece no se pudieron comprobar desde aquí —el entorno de desarrollo no tiene
+salida a internet— así que siguen como estaban. **Conviene revisarlos uno por uno antes de
+publicar el sitio**, porque el número de la portada sale de ese campo.
+
+### Los ocho proveedores de demostración no cuentan
+
+La portada anunciaba «87 proveedores en el directorio»: los 79 reales más los ocho
+ficticios del modo demostración. Un número de portada no puede salir de datos inventados,
+ni siquiera mientras la demo está encendida, así que el generador ahora los excluye de las
+cifras del hero igual que ya los excluía de las tarjetas de cada categoría.
+
+---
+
 ## Filtro «Mis proveedores»
 
 Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios
