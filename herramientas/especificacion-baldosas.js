@@ -226,6 +226,14 @@ const FAMILIAS = {
     alias: 'masilla, pegacol panel'
   },
 
+  yeso: {
+    cat: 'MAT-02', unidad: 'funda', etapa: 'terminacion', orden: 455,
+    ejes: ['kg'],
+    nombre: m => 'Yeso en funda de ' + m.kg + ' kg',
+    esp: 'Yeso para plafones, molduras y resane',
+    alias: 'yeso, escayola, plafón de yeso'
+  },
+
   'hormigon-seco': {
     cat: 'MAT-02', unidad: 'funda', etapa: 'estructura', orden: 460,
     ejes: ['resistencia', 'lb'],

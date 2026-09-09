@@ -85,7 +85,7 @@ El generador:
 |---|---|
 | Precios, ítems y taxonomía | `precios/assets/js/datos-catalogo.js` |
 | Slug (URL) de cada categoría | campo `slug` en la lista `categorias` del mismo archivo |
-| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `-segtec.js`, `-baldosas.js`, `-plomeria.js` |
+| Familias de especificación compartidas | `herramientas/especificacion-banos.js`, `-segtec.js`, `-baldosas.js`, `-plomeria.js`, `-madera.js` |
 | Texto, claves y FAQ de cada página | `herramientas/contenido-categorias.js` |
 | Plantilla y maquetación | `herramientas/generar-categorias.js` |
 
@@ -135,14 +135,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,445 ítems**. De ellos, **1,163 ya llevan un precio real** de un
-comercio que lo publica; 276 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,461 ítems**. De ellos, **1,182 ya llevan un precio real** de un
+comercio que lo publica; 273 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 1,163 ítems verificados hay **3,285 cotizaciones** de **cuatro comercios**.
-69 ítems tienen precio de más de uno y nueve ya tienen tres, entre ellos la funda de cemento
-gris, que es el precio más consultado del país.
+Detrás de esos 1,182 ítems verificados hay **3,329 cotizaciones** de **cinco comercios**.
+80 ítems tienen precio de más de uno, 16 tienen tres y cinco ya tienen cuatro — entre ellos
+la funda de cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -187,6 +187,7 @@ lo que hace que el inodoro de Ochoa y el de InnovaCentro caigan en la misma fila
 | `herramientas/especificacion-segtec.js` | 43 familias de corrientes débiles: cámaras, grabadores, alarma, incendio, cableado, racks, domótica, intercomunicación |
 | `herramientas/especificacion-baldosas.js` | 22 familias de piso y revestimiento: baldosa de campo, mosaico, peldaños, perfiles de canto, crucetas y niveladores, adoquines, tejas, adhesivos y morteros, herramienta del instalador |
 | `herramientas/especificacion-plomeria.js` | 33 familias de plomería: tubo, conexiones, llaves de paso, desagüe, mangueras, sellado, gas, bombeo, calentadores, tanques y grifería |
+| `herramientas/especificacion-madera.js` | 2 familias: pieza de madera aserrada y panel |
 
 Cada familia declara su categoría, su unidad, los ejes de medida que la distinguen y cómo
 se arma el nombre. Las reglas de cada comercio no inventan nombres: leen el artículo,
@@ -302,7 +303,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,163 de 1,439 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,182 de 1,455 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -400,20 +401,21 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**3,285 cotizaciones reales cargadas · 1,163 ítems verificados de 1,439.**
+**3,329 cotizaciones reales cargadas · 1,182 ítems verificados de 1,455.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — ocho extracciones completas: el catálogo de Ochoa en materiales de
+- **09/09/2026** — nueve extracciones completas: el catálogo de Ochoa en materiales de
   construcción (398 artículos, 349 con precio), baños (945 / 713), seguridad y tecnología
   (809 / 604) y baldosas (1,334 / 1,226); los departamentos de materiales (118 / 118)
   y de baño (520 / 520) de InnovaCentro; y las colecciones de plomería y baños (862 / 862)
-  y materiales (53 / 53) de Ferretería Cima. De sus 3,352 artículos aprovechados salieron
-  **1,137 ítems nuevos que nacieron verificados** y **131 cotizaciones sobre ítems que ya
-  existían**.
+  y materiales (53 / 53) de Ferretería Cima; y la colección de maderas de Max Ferretería
+  (45 / 45), que es mixta y trae también tubería, cemento y tinacos. De sus 3,396 artículos
+  aprovechados salieron **1,145 ítems nuevos que nacieron verificados** y **156 cotizaciones
+  sobre ítems que ya existían**.
 
-Los 276 ítems restantes siguen siendo estimaciones nuestras.
+Los 273 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -493,6 +495,7 @@ Cada archivo responde una pregunta distinta:
 | `reglas-innovacentro.js` | InnovaCentro: a qué ítem del catálogo corresponde cada artículo, en materiales y en baño |
 | `reglas-baldosas.js` | Ochoa · baldosas: qué es cada artículo una vez que se le quita la marca y el color, y cómo se pasa su precio a metro cuadrado |
 | `reglas-cima.js` | Cima: mapeo a mano en materiales, reglas en plomería, y qué es repuesto de consumidor |
+| `reglas-max.js` | Max Ferretería: mapeo a mano en cemento y adhesivos, reglas en tubo, madera, paneles y tinacos |
 | `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
 | `especificacion-segtec.js` | Lo mismo para corrientes débiles |
 | `especificacion-baldosas.js` | Lo mismo para pisos, revestimientos y sus morteros |
@@ -544,9 +547,9 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **69 ítems con precio de más de un comercio** y nueve con tres, y el más
-consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de RD$ 535 a
-RD$ 655 entre Ferremix, InnovaCentro y Cima.
+Hoy hay **80 ítems con precio de más de un comercio**, 16 con tres y cinco con cuatro. El
+más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
+RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
 Su departamento de baño (520 artículos, 289 aprovechados) aporta menos comparación de la
 esperada y más cobertura: los dos comercios cargan marcas casi disjuntas, así que lo que
@@ -626,6 +629,53 @@ El resto de los descartes son fichas incompletas, cada una con su motivo: 41 con
 no declaran el material, 7 tubos de cobre que no declaran el largo del rollo, 5 calentadores
 que no dicen si son de gas o eléctricos y 3 inodoros cuyo nombre no dice si son de una o de
 dos piezas, que son dos partidas con precios muy distintos.
+
+### Max Ferretería: 45 artículos, y por qué valen tanto como 800
+
+El cuarto comercio es el más pequeño de todos —45 artículos de una sola colección— y es el
+que más movió la aguja donde importa. De los 45 entran 41, y **17 caen sobre ítems que ya
+existían**. Ahí está la diferencia entre un catálogo grande y uno comparable.
+
+Con él, cinco ítems pasan a tener **cuatro precios de cuatro comercios distintos**, entre
+ellos la funda de cemento gris de 42.5 kg, que es el precio que todo el mundo pregunta
+primero.
+
+La colección se llama MADERAS y es mixta: la propia extracción advierte que solo 9 de los
+45 son madera o paneles, y que la subcategoría de la tienda es inconsistente en el origen
+—el PEGAFORTE GRIS aparece archivado en TUBERIAS—. Por eso la regla se apoya en la familia
+normalizada que trae la extracción y, sobre ella, en el nombre.
+
+#### Bruta o cepillada es especificación
+
+En la madera hubo que agregar un eje que el catálogo no tenía: **si la pieza va bruta o
+cepillada**. Son dos productos con dos precios, y en este mismo comercio el 2x4x12 bruto
+sale a RD$ 860 y el cepillado a RD$ 635 — al revés de lo que uno esperaría, que es
+exactamente por qué hay que leerlo de la ficha en vez de suponerlo.
+
+Nuestro «Cuartón de pino 2x4x12» no lo declaraba. Se resolvió como se resuelven estos
+casos: en la obra el cuartón que se pide sin apellido es el bruto, así queda dicho en el
+mapeo, y el ítem pasó de estimado a verificado.
+
+#### El SCH-40 también es de 19 pies
+
+Quedó abierto en la importación anterior: Cima publicaba toda su línea a 19 pies, SCH-40
+incluido, pero era el único que lo decía. Max publica sus trece tubos igual. **Dos
+comercios**, y la ficha de `MAT-32-004` se corrigió.
+
+Es la segunda vez que pasa lo mismo con el mismo producto, y confirma la regla: no se
+cambia una especificación con la evidencia de un comercio, pero tampoco se archiva la
+discrepancia — se deja anotada y se espera al segundo.
+
+#### Dónde se paró la deducción
+
+Tres adhesivos de este comercio no declaran su clase C1 o C2. Dos entraron igual, porque su
+precio los ubica sin ambigüedad en la banda del adhesivo normal y su nombre no reclama otra
+cosa. El tercero, «PEGA FORTE SUPER PRO», se quedó fuera: **su propio nombre reclama una
+gama superior**, que es justo la señal de que puede no ser el adhesivo normal. Deducir del
+precio sirve para confirmar lo que el nombre ya sugiere; no para contradecirlo.
+
+Los otros tres descartes son fichas incompletas que la propia extracción ya marcaba: dos
+adhesivos sin presentación y un tubo de PPR sin largo.
 
 ### Nunca apuntes por código a un ítem generado
 
@@ -859,17 +909,18 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
-## El directorio: 79 proveedores, 13 con precios en línea
+## El directorio: 80 proveedores, 14 con precios en línea
 
 El directorio es grande porque sirve para saber a quién llamar, no solo de dónde salen los
-precios. De sus 79 entradas, **13 publican precios o tienen tienda en línea**, y solo esas
-sirven para extraer un catálogo sin pedir cotización. Cuatro ya están cargadas.
+precios. De sus 80 entradas, **14 publican precios o tienen tienda en línea**, y solo esas
+sirven para extraer un catálogo sin pedir cotización. Cinco ya están cargadas.
 
 | | Proveedor | Cotizaciones |
 |---|---|---|
 | ✔ | Ferretería Ochoa (8A) | 2,288 |
 | ✔ | Ferretería Cima | 644 |
 | ✔ | InnovaCentro (La Innovación) | 351 |
+| ✔ | Max Ferretería | 41 |
 | ✔ | Ferremix (Grupo Alterra) | 2 |
 | | Plaza Lama, Ferretería Gigante, Würth Dominicana, Gerdau Metaldom, Cerarte, Cerámica Import, Procontratista, Segumart, SOS Protección Integral | — |
 
@@ -892,7 +943,7 @@ publicar el sitio**, porque el número de la portada sale de ese campo.
 
 ### Los ocho proveedores de demostración no cuentan
 
-La portada anunciaba «87 proveedores en el directorio»: los 79 reales más los ocho
+La portada anunciaba «87 proveedores en el directorio»: los reales más los ocho
 ficticios del modo demostración. Un número de portada no puede salir de datos inventados,
 ni siquiera mientras la demo está encendida, así que el generador ahora los excluye de las
 cifras del hero igual que ya los excluía de las tarjetas de cada categoría.

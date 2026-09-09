@@ -395,4 +395,16 @@ function pulgadas(t) {
   return null;
 }
 
-module.exports = { FAMILIAS, item, comoPulgada, pulgadas, ETIQUETA_CONEXION };
+/* Especificaciones que el catálogo ya tenía escritas a mano. Vive aquí y no en
+   las reglas de un comercio porque es una propiedad del catálogo: cualquier
+   comercio que declare esta misma especificación tiene que caer en ese ítem, no
+   crear uno nuevo al lado. */
+const YA_EXISTE = {
+  'tubo-material-pvc-norma-sdr-41-diametro-4pulg-largo-pies-19': 'MAT-32-001',
+  'tubo-material-pvc-norma-sdr-41-diametro-2pulg-largo-pies-19': 'MAT-32-002',
+  'tubo-material-pvc-norma-sdr-41-diametro-6pulg-largo-pies-19': 'MAT-32-003',
+  'tubo-material-pvc-norma-sch-40-diametro-1-2pulg-largo-pies-19': 'MAT-32-004',
+  'conexion-tipo-codo-90-material-pvc-drenaje-medida-4pulg': 'MAT-32-006'
+};
+
+module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION };

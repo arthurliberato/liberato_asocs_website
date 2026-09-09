@@ -67,6 +67,12 @@ const MAPEO = {
   '7861136600945': '#MAT-22|alambre-puas-16-250',
   '465281263088': '#MAT-22|alambre-puas-16-250',
 
+  /* El cemento de detalle, en libras, sí tiene ítem: el catálogo ya trae las
+     presentaciones de 2, 5 y 10 libras que trajo InnovaCentro. */
+  '7465710056014': '#MAT-02|cemento-blanco-2',   // CEMENTO BLANCO 2LB
+  '7465710056021': '#MAT-02|cemento-blanco-5',   // CEMENTO BLANCO 5LB
+  '069041': '#MAT-02|cemento-gris-5',            // CEMENTO GRIS DETALLE 5LB
+
   /* Separadores de cerámica: es lo que en el catálogo de Ochoa se llama
      cruceta, y aquí sí declaran cuántas trae el paquete. */
   '8413797269918': '#MAT-08|cruceta-espesor-mm-1-5-piezas-300',
@@ -86,21 +92,15 @@ const FUERA_MATERIALES = {
   'Fijaciones': 'la ficha no declara la unidad de venta',
   'Yeso': 'presentación de 2 lb, de detalle: el catálogo trabaja el yeso por funda de obra',
   'Alambres': 'el nombre no declara la unidad de venta',
-  'Cemento': 'presentación de detalle, en libras, que no es la funda de obra'
+  'Cemento': 'presentación que no corresponde a ningún ítem del catálogo'
 };
 
-/* Especificaciones que el catálogo ya tenía escritas a mano. El ítem no se
-   duplica: se le pone precio. */
-const YA_EXISTE = {
-  /* El tubo sanitario de SDR-41: nuestra ficha decía «drenaje» porque es como
-     se pide en la obra, pero la especificación es la misma que la del
-     comercio. El PVC que Cima llama «DRENAJE» a secas es otro producto, más
-     barato —RD$ 1,001 contra RD$ 1,695 en el mismo diámetro—, y por eso no
-     entra aquí sino en su propio ítem. */
-  'tubo-material-pvc-norma-sdr-41-diametro-4pulg-largo-pies-19': 'MAT-32-001',
-  'tubo-material-pvc-norma-sdr-41-diametro-2pulg-largo-pies-19': 'MAT-32-002',
-  'conexion-tipo-codo-90-material-pvc-drenaje-medida-4pulg': 'MAT-32-006'
-};
+/* Las equivalencias con los ítems escritos a mano viven en la tabla de
+   especificación, no aquí: son del catálogo, no de este comercio. Ojo con una
+   trampa de este caso: nuestra ficha del tubo dice «drenaje» porque es como se
+   pide en la obra, y su especificación es el SDR-41. El PVC que Cima llama
+   «DRENAJE» a secas es otro producto, más barato —RD$ 1,001 contra RD$ 1,695
+   en el mismo diámetro— y va en su propio ítem. */
 
 /* =========================================================
    PLOMERÍA — reglas
@@ -216,7 +216,7 @@ function medidaConexion(a, tipo) {
 
 function regla(a) {
   const spec = clasificar(a);
-  if (spec && spec.clave && YA_EXISTE[spec.clave]) return { existente: YA_EXISTE[spec.clave] };
+  if (spec && spec.clave && PLOM.YA_EXISTE[spec.clave]) return { existente: PLOM.YA_EXISTE[spec.clave] };
   return spec;
 }
 
@@ -569,4 +569,4 @@ function clasificar(a) {
   return undefined;                       // categoría sin regla, ni se cuenta
 }
 
-module.exports = { MAPEO, YA_EXISTE, FUERA_MATERIALES, FUERA_PLOMERIA, MOTIVO, regla };
+module.exports = { MAPEO, FUERA_MATERIALES, FUERA_PLOMERIA, MOTIVO, regla };
