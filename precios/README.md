@@ -15,10 +15,12 @@ ni paso de compilación. Esta carpeta es la raíz del subdominio y es autoconten
 ```
 precios/
   index.html              Portada = el catálogo: filtros, tabla, lista de cotización y,
-                          debajo, destacados, las 41 categorías y la descarga en Excel
-  proveedores.html        Directorio de proveedores filtrable
+                          debajo, destacados, las categorías y la descarga en Excel
+  proveedores.html        Directorio: solo los comercios con precio confirmado
+  quienes-somos.html      La firma (en el menú, en lugar de Metodología)
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           41 páginas estáticas, una por categoría   ← GENERADAS
+                          (fuera del menú; se llega desde el pie y el descargo)
+  precio-*.html           28 páginas estáticas, una por categoría   ← GENERADAS
   descargas/              el libro de Excel                        ← GENERADO
   costo-licencias-…html
   assets/
@@ -27,7 +29,7 @@ precios/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
       datos-proveedores.js Directorio de proveedores
       datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
-      datos-demo.js       Datos ficticios de demostración       ← temporal, se apaga
+      datos-demo.js       Datos ficticios de demostración       ← APAGADO (ACTIVO = false)
       app.js              Buscador, filtros y lista de cotización
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
@@ -47,11 +49,11 @@ python3 -m http.server 8000
 
 ---
 
-## Las 41 páginas de categoría (generadas)
+## Las páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
-`precio-jornal-mano-de-obra.html`…). Son las páginas pensadas para recibir el tráfico
+`precio-tuberia-conexiones-pvc.html`…). Son las páginas pensadas para recibir el tráfico
 de Google: traen la tabla de precios ya escrita en el HTML, texto propio de unas 1,300
 palabras, preguntas frecuentes con marcado `FAQPage`, migas de pan con `BreadcrumbList`
 y los proveedores de esa categoría.
@@ -289,8 +291,10 @@ escriba el nombre correcto de la calle y no encuentre nada.
 
 ## Requisito de lanzamiento
 
-**El sitio se publica cuando cada ítem tenga al menos un precio real.** Mientras tanto los
-montos son estimaciones nuestras y el sitio lo dice en todas las páginas.
+**El sitio se publica cuando cada ítem tenga al menos un precio real.** Se cumple desde el
+09/09/2026 por la vía corta: en vez de esperar a levantar los 263 precios que faltaban, esos
+ítems se retiraron del sitio (ver «Qué se retiró del sitio y cómo vuelve», más abajo). Hoy
+todo lo publicado lleva el precio de un comercio, o no lleva monto por ser de tarifario.
 
 Conviene tenerlo presente al agregar ítems a mano: cada ítem nuevo es un precio más que
 levantar. La excepción son los que entran por `importar-catalogos.js`, que llegan con su
@@ -304,8 +308,10 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,369 de 1,632 ítems con precio real**. Los otros 6 del catálogo van según
-tarifario oficial y no llevan precio por definición, así que no cuentan.
+Al 09/09/2026: **1,369 de 1,369 ítems publicados con precio real**. Los otros 6 del
+catálogo van según tarifario oficial y no llevan precio por definición, así que no cuentan.
+Los 263 retirados no aparecen en esta cuenta: la herramienta de lotes solo recorre lo
+publicado, así que para seguir levantando precios hay que partir del Excel de retirados.
 
 ### Levantar precios por tandas
 
@@ -1170,12 +1176,18 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
-## El directorio: 80 proveedores, 14 con precios en línea
+## El directorio: seis comercios, todos con precio confirmado
 
-El directorio es grande porque sirve para saber a quién llamar, no solo de dónde salen los
-precios. De sus 80 entradas, **14 publican precios o tienen tienda en línea**, y solo esas
-sirven para extraer un catálogo sin pedir cotización. Cinco están cargadas, más una sexta
-—Ferretería MC— que no publica precios pero sí cotiza por escrito.
+Desde el 09/09/2026 el directorio publica solo los comercios a los que se les confirmó
+un precio, es decir, los que tienen cotizaciones en `datos-precios.js`. Los otros 74 que
+había (ferreterías, fabricantes, mayoristas y especializados de los que solo se conocían
+los datos de contacto) están en `herramientas/retirados/retirados-del-sitio.xlsx` y
+vuelven al directorio en cuanto se les registre una cotización.
+
+Lo que sigue describe cómo era el directorio antes de ese recorte y sigue siendo útil para
+volver a cargarlo. De sus 80 entradas, **14 publicaban precios o tenían tienda en línea**, y
+solo esas sirven para extraer un catálogo sin pedir cotización. Cinco están cargadas, más una
+sexta —Ferretería MC— que no publica precios pero sí cotiza por escrito.
 
 | | Proveedor | Cotizaciones |
 |---|---|---|
@@ -1254,7 +1266,12 @@ Las páginas de categoría traen la ficha de cada ítem escrita en el HTML —es
 buscador—, pero al abrirla se regenera desde los datos para reflejar el filtro y el
 interruptor de ITBIS del momento.
 
-## Modo demostración (temporal)
+## Modo demostración (apagado)
+
+**Está apagado desde el 09/09/2026** (`ACTIVO = false` en `assets/js/datos-demo.js`): un
+sitio que solo publica precios reales no puede cargar precios inventados. Se deja el
+archivo por si hace falta enseñar una función con datos ficticios; lo que sigue describe
+qué hace cuando está encendido.
 
 `assets/js/datos-demo.js` carga **8 proveedores y 31 cotizaciones ficticias** sobre 14
 ítems, para poder ver el sitio funcionando como funcionará cuando haya cotizaciones
@@ -1429,6 +1446,51 @@ proveedores que venden al público.
 
 ---
 
+## Qué se retiró del sitio y cómo vuelve
+
+El 09/09/2026 se aplicó la regla de lanzamiento por la vía corta: **solo se publica lo que
+tiene precio real**. Salieron del sitio:
+
+| | Cuántos | Dónde están |
+|---|---|---|
+| Ítems que solo tenían estimación nuestra | 263 de 1,638 | `herramientas/retirados/retirados-del-sitio.xlsx`, hoja «Ítems», con la estimación, su mínimo y su máximo |
+| Categorías que quedaron sin ningún ítem | 13 de 41 | hoja «Categorías»; sus páginas se borraron y redirigen a `/` |
+| Proveedores sin un solo precio confirmado | 74 de 80 | hoja «Proveedores», con los contactos públicos que se tenían |
+
+Quedan **1,375 ítems** (1,369 con precio de comercio y 6 de tarifario oficial), **28
+categorías** y **6 comercios** (Ochoa, Cima, Max, InnovaCentro, MC y Ferremix).
+
+El libro lo escribe `herramientas/exportar-retirados.py` a partir del estado de los datos
+en ese momento; se corre **antes** de retirar nada. No hace falta volver a correrlo salvo
+que se retire otra tanda.
+
+### Cómo está hecho el retiro en los datos
+
+- **Los ítems retirados siguen en `datos-catalogo.js`**, con `retirado:true` y los tres
+  precios en `null`. Es a propósito: la función `it()` numera los ítems por orden de
+  aparición, así que borrar una línea correría los códigos de todos los ítems siguientes de
+  su categoría y dejaría a las cotizaciones apuntando al ítem equivocado. Un ítem retirado
+  reserva su código, no se publica y no lleva precio (está en el Excel). Salen en
+  `CATALOGO.retirados`, no en `CATALOGO.items`.
+- **Las 13 categorías se quitaron de la lista `categorias`**, y de las listas `cats` de
+  los seis proveedores. Su contenido editorial sigue en `contenido-categorias.js`, listo.
+- **Los 74 proveedores se borraron de `datos-proveedores.js`**: ahí no hay códigos que
+  cuidar, y el Excel tiene todo lo que había.
+- El modo demostración se apagó.
+
+### Para que un ítem vuelva
+
+1. Registrar su cotización real en `datos-precios.js` (ver «Registrar una cotización»).
+2. En `datos-catalogo.js`, quitar `retirado:true` de su línea y poner los tres números
+   (referencia, mínimo, máximo); la referencia la recalcula el sitio con la mediana.
+3. Si su categoría estaba retirada: devolverla a `categorias`, quitar su redirección de
+   `vercel.json` y volver a poner la categoría en los proveedores que la cubren.
+4. `node herramientas/generar-categorias.js` y `python3 herramientas/generar-excel.py`.
+
+Los ítems que entran por `importar-catalogos.js` no pasan por esto: llegan con su precio.
+
+---
+
 ## Publicar el subdominio
 
 El contenido a publicar es **esta carpeta**, no la raíz del repositorio.
@@ -1509,13 +1571,18 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 41 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada
+- Las páginas de categoría son las que persiguen el tráfico de búsqueda; la portada
   (que es el catálogo) funciona como concentrador: la rejilla de categorías y los diez
   destacados que el generador escribe debajo de la tabla son los únicos enlaces y precios
   que un buscador ve en la raíz, porque la tabla se sirve vacía y la pinta `app.js`.
 - `/?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero no está en el
   `sitemap.xml`: la versión indexable de esa categoría es `precio-blocks-prefabricados.html`,
   y todos los enlaces internos apuntan allí.
+- **Las 13 páginas de categoría retiradas el 09/09/2026** (`precio-blocks-prefabricados.html`,
+  `precio-jornal-mano-de-obra.html`, `precio-hormigon-premezclado.html`…) redirigen a `/`
+  con un 308 en `precios/vercel.json`. Estaban en el sitemap y pueden estar indexadas. Cuando
+  una categoría vuelva con precios reales, hay que quitar su redirección antes de regenerar,
+  porque la regla de Vercel gana al archivo.
 - **`/catalogo.html` redirige a `/` con un 308 declarado en `precios/vercel.json`.** El
   catálogo vivió en esa URL, está indexada y hay enlaces externos; Vercel reenvía la
   cadena de consulta, así que `/catalogo.html?cat=MAT-05` cae en `/?cat=MAT-05`. La

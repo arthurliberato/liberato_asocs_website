@@ -31,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "\u00bfDe d\u00f3nde salen estos precios?", "acceptedAnswer": {"@type": "Answer", "text": "Hoy son estimaciones de arranque elaboradas por Ingenieros Liberato & Asociados para dar un punto de partida de referencia; ninguna proviene todav\u00eda de una cotizaci\u00f3n formal, y por eso cada \u00edtem aparece marcado como Estimado. A medida que entren cotizaciones de proveedores y cat\u00e1logos publicados, el \u00edtem pasa a Verificado con su fuente y su fecha."}},
+    {"@type": "Question", "name": "\u00bfDe d\u00f3nde salen estos precios?", "acceptedAnswer": {"@type": "Answer", "text": "De los precios que los propios comercios publican en l\u00ednea y de cotizaciones formales por escrito, registrados uno por uno con su fuente y su fecha. Un \u00edtem solo se publica cuando tiene al menos una cotizaci\u00f3n real; los que todav\u00eda no la tienen se trabajan fuera del sitio y entran en cuanto un comercio publica o cotiza su precio."}},
     {"@type": "Question", "name": "\u00bfLos precios incluyen ITBIS?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del \u00edtem y se indica en cada uno. Las ferreter\u00edas normalmente muestran el precio con el 18% incluido, y as\u00ed se registra aqu\u00ed. La mano de obra, los subcontratos y el alquiler de equipo se registran sin ITBIS y llevan la marca no lleva ITBIS. El interruptor Ver sin ITBIS del cat\u00e1logo descuenta el impuesto solo de los \u00edtems que lo traen incluido; nunca se lo suma a los que no lo llevan."}},
     {"@type": "Question", "name": "\u00bfPara qu\u00e9 zona del pa\u00eds sirven?", "acceptedAnswer": {"@type": "Answer", "text": "El precio de referencia es del Gran Santo Domingo. Los agregados, los bloques y los jornales son los rubros que m\u00e1s var\u00edan por zona, sobre todo por el costo de transporte: en el Cibao, el Este y el Sur conviene cotizar con productores locales. El directorio de proveedores permite filtrar por zona."}},
     {"@type": "Question", "name": "\u00bfCada cu\u00e1nto se actualizan?", "acceptedAnswer": {"@type": "Answer", "text": "Los commodities vol\u00e1tiles \u2014varilla, cemento, cables de cobre y madera\u2014 cada 15 a 30 d\u00edas; las terminaciones y los equipos, trimestralmente. Cada \u00edtem lleva la fecha de su \u00faltimo dato para que se vea cu\u00e1n fresco es."}},
@@ -57,7 +57,7 @@
       <ul class="nav-list">
         <li><a href="./">Catálogo de precios</a></li>
         <li><a href="proveedores.html">Proveedores</a></li>
-        <li><a href="metodologia.html" aria-current="page">Metodología</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
       </ul>
       <a class="btn btn-primary nav-cta" href="https://ingsliberato.com/#contacto">Solicitar cotización</a>
     </nav>
@@ -89,11 +89,10 @@
 
     <div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
-     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
-     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
-     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
-     compra. Cada ítem indica su estado y su fecha.
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Cada ítem lleva el precio que el
+     propio comercio publica en línea o cotizó por escrito, con su fecha, y sale marcado como
+     <em>Verificado</em>. Ninguno es una cotización formal a su nombre: sirven para dimensionar
+     un presupuesto, no para cerrar una compra.
      <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>
 
@@ -183,9 +182,9 @@
       <p>
         Nunca publicamos un precio inventado atribuido a una empresa real: decir que tal
         ferretería vende el cemento a tal precio, sin que lo haya publicado o cotizado, es un
-        dato falso sobre un negocio con nombre propio. Por eso los ítems que todavía no tienen
-        cotización salen marcados como <em>Estimado</em> y su ficha lista los proveedores de esa
-        categoría que están <em>pendientes de cotizar</em>, con enlace a su web o su WhatsApp.
+        dato falso sobre un negocio con nombre propio. Por eso un ítem solo se publica cuando
+        tiene al menos una cotización real; los que todavía no la tienen se trabajan fuera del
+        sitio y entran en cuanto un comercio publica o cotiza su precio.
       </p>
       <p>
         En cuanto un ítem recibe cotizaciones de proveedores que venden al público, el precio
@@ -209,14 +208,11 @@
         el interruptor <em>Ver sin ITBIS</em> activo, el monto ya viene sin el impuesto.
       </p>
 
-      <h2 id="estados">Los tres estados de un precio</h2>
+      <h2 id="estados">Los estados de un precio</h2>
       <div class="tabla-simple">
         <table>
           <thead><tr><th scope="col">Estado</th><th scope="col">Qué significa</th></tr></thead>
           <tbody>
-            <tr><td><span class="badge badge-estimado">Estimado</span></td>
-                <td>Estimación de arranque nuestra, para dar una referencia mientras se levanta la
-                    cotización real.</td></tr>
             <tr><td><span class="badge badge-verificado">Verificado</span></td>
                 <td>Respaldado por una cotización recibida o por un precio publicado por el proveedor,
                     con fuente y fecha registradas.</td></tr>
@@ -263,7 +259,7 @@
 
       <h2 id="preguntas">Preguntas frecuentes</h2>
       <div class="faq">
-        <details><summary>¿De dónde salen estos precios?</summary><p>Hoy son estimaciones de arranque elaboradas por Ingenieros Liberato &amp; Asociados para dar un punto de partida de referencia; ninguna proviene todavía de una cotización formal, y por eso cada ítem aparece marcado como <em>Estimado</em>. A medida que entren cotizaciones de proveedores y catálogos publicados, el ítem pasa a <em>Verificado</em> con su fuente y su fecha.</p></details>
+        <details><summary>¿De dónde salen estos precios?</summary><p>De los precios que los propios comercios publican en línea y de cotizaciones formales por escrito, registrados uno por uno con su fuente y su fecha. Un ítem solo se publica cuando tiene al menos una cotización real; los que todavía no la tienen se trabajan fuera del sitio y entran en cuanto un comercio publica o cotiza su precio.</p></details>
         <details><summary>¿Los precios incluyen ITBIS?</summary><p>Depende del ítem y se indica en cada uno. Las ferreterías normalmente muestran el precio con el 18% incluido, y así se registra aquí. La mano de obra, los subcontratos y el alquiler de equipo se registran sin ITBIS y llevan la marca <em>no lleva ITBIS</em>. El interruptor <strong>Ver sin ITBIS</strong> del catálogo descuenta el impuesto solo de los ítems que lo traen incluido; nunca se lo suma a los que no lo llevan.</p></details>
         <details><summary>¿Para qué zona del país sirven?</summary><p>El precio de referencia es del Gran Santo Domingo. Los agregados, los bloques y los jornales son los rubros que más varían por zona, sobre todo por el costo de transporte: en el Cibao, el Este y el Sur conviene cotizar con productores locales. El directorio de proveedores permite filtrar por zona.</p></details>
         <details><summary>¿Cada cuánto se actualizan?</summary><p>Los commodities volátiles —varilla, cemento, cables de cobre y madera— cada 15 a 30 días; las terminaciones y los equipos, trimestralmente. Cada ítem lleva la fecha de su último dato para que se vea cuán fresco es.</p></details>
@@ -309,7 +305,7 @@
         <ul>
           <li><a href="./">Catálogo completo</a></li>
           <li><a href="./?grupo=MAT">Materiales</a></li>
-          <li><a href="./?cat=MOS-01">Mano de obra</a></li>
+          <li><a href="precio-tuberia-conexiones-pvc.html">Tubería y conexiones</a></li>
           <li><a href="./?grupo=EQU">Equipos</a></li>
         </ul>
       </div>
@@ -325,6 +321,7 @@
       <div>
         <h3>La empresa</h3>
         <ul>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="https://ingsliberato.com/">ingsliberato.com</a></li>
           <li><a href="tel:+18297939892">+1 (829) 793-9892</a></li>
           <li><a href="mailto:arthur@ingsliberato.com">arthur@ingsliberato.com</a></li>

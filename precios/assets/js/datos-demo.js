@@ -29,7 +29,7 @@
 (function (global) {
   'use strict';
 
-  var ACTIVO = true;
+  var ACTIVO = false;
 
   if (!ACTIVO) { global.DEMO = {activo: false}; return; }
 

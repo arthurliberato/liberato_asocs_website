@@ -76,7 +76,7 @@ function header(seccion) {
   const nav = [
     ['./', 'Catálogo de precios', 'catalogo'],
     ['proveedores.html', 'Proveedores', 'proveedores'],
-    ['metodologia.html', 'Metodología', 'metodologia'],
+    ['quienes-somos.html', 'Quiénes somos', 'quienes-somos'],
   ].map(([href, texto, clave]) =>
     `<li><a href="${href}"${clave === seccion ? ' aria-current="true"' : ''}>${texto}</a></li>`
   ).join('\n        ');
@@ -120,8 +120,8 @@ const FOOTER = `<footer class="site-footer">
           <li><a href="./">Catálogo completo</a></li>
           <li><a href="precio-cemento-morteros-aditivos.html">Cemento</a></li>
           <li><a href="precio-varilla-acero.html">Varilla y acero</a></li>
-          <li><a href="precio-blocks-prefabricados.html">Blocks</a></li>
-          <li><a href="precio-jornal-mano-de-obra.html">Jornales</a></li>
+          <li><a href="precio-tuberia-conexiones-pvc.html">Tubería y conexiones</a></li>
+          <li><a href="precio-ceramica-porcelanato-pisos.html">Cerámica y pisos</a></li>
         </ul>
       </div>
       <div>
@@ -136,6 +136,7 @@ const FOOTER = `<footer class="site-footer">
       <div>
         <h3>La empresa</h3>
         <ul>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="${PRINCIPAL}/">ingsliberato.com</a></li>
           <li><a href="tel:+18297939892">+1 (829) 793-9892</a></li>
           <li><a href="mailto:arthur@ingsliberato.com">arthur@ingsliberato.com</a></li>
@@ -191,11 +192,10 @@ const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 
 const AVISO = `<div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
-     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
-     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
-     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
-     compra. Cada ítem indica su estado y su fecha.
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Cada ítem lleva el precio que el
+     propio comercio publica en línea o cotizó por escrito, con su fecha, y sale marcado como
+     <em>Verificado</em>. Ninguno es una cotización formal a su nombre: sirven para dimensionar
+     un presupuesto, no para cerrar una compra.
      <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>`;
 
@@ -567,9 +567,11 @@ function parchearPortada() {
         <span class="card-meta"><span>${conteo[c.codigo] || 0} ítems</span><span>Ver precios →</span></span>
       </a>`).join('\n');
 
+  /* Diez ítems con precio real y de compra frecuente; si uno se retira del
+     catálogo, el generador avisa y hay que elegir otro. */
   const destacados = [
-    'MAT-02-001', 'MAT-04-002', 'MAT-05-003', 'MAT-03-002', 'MAT-01-001',
-    'MAT-01-004', 'MAT-06-005', 'MAT-07-002', 'MOS-01-002', 'MOS-01-003',
+    'MAT-02-001', 'MAT-04-001', 'MAT-04-002', 'MAT-06-005', 'MAT-07-013',
+    'MAT-32-001', 'MAT-13-001', 'MAT-08-055', 'MAT-10-009', 'MAT-09-016',
   ].map((codigo) => {
     const it = CAT.items.filter((i) => i.codigo === codigo)[0];
     if (!it) throw new Error('Destacado inexistente: ' + codigo);
@@ -614,6 +616,7 @@ function generarSitemap() {
   const urls = [
     [SITIO + '/', 'weekly', '1.0'],
     [SITIO + '/proveedores.html', 'monthly', '0.8'],
+    [SITIO + '/quienes-somos.html', 'yearly', '0.5'],
     [SITIO + '/metodologia.html', 'monthly', '0.6'],
   ];
   CAT.categorias.forEach((c) => urls.push([`${SITIO}/${c.slug}.html`, 'weekly', '0.8']));
