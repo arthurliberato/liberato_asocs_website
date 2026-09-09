@@ -238,14 +238,38 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**9 cotizaciones reales cargadas**, de tres comercios, tomadas de los precios que ellos
-mismos publican en sus tiendas en línea el 08/09/2026: Ferremix, Ferretería Ochoa e
-InnovaCentro. Siete ítems pasaron de *Estimado* a **Verificado**; los otros dos son tubos
-de PVC que quedan fuera del cálculo por una diferencia de presentación (ver abajo). Los
-244 ítems restantes siguen siendo estimaciones nuestras.
+**16 cotizaciones reales cargadas · 13 ítems verificados de 308.**
 
-Nunca se inventa un precio para atribuírselo a una empresa real: cada cotización tiene su
-fuente y su fecha, y lo que no se pudo verificar simplemente no se carga.
+Dos tandas, ambas de precios que los propios comercios publican:
+
+- **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
+- **09/09/2026** — 7 cotizaciones de una extracción completa del catálogo de construcción
+  de Ochoa: 398 artículos, 349 con precio. Cargadas solo las correspondencias verificadas
+  una por una; el resto del archivo queda como fuente para ampliar el catálogo.
+
+Los 295 ítems restantes siguen siendo estimaciones nuestras.
+
+### Cómo importar una extracción de proveedor
+
+```bash
+node herramientas/importar-ochoa.js <extraccion.json>
+```
+
+Genera las cotizaciones listas para pegar y, sobre todo, **descarta los precios
+imposibles antes de que lleguen al sitio**. El acero se vende por peso, así que dentro de
+una familia el precio por libra es casi constante: en los angulares de Ochoa da RD$ 35.00
+por libra en ocho de nueve medidas. Una pieza que se sale más de un 35% de la mediana de
+su familia no se carga.
+
+En la extracción del 09/09/2026 eso descartó seis precios, cuatro de ellos a RD$ 1.9 por
+libra cuando su familia va a 35: errores de la propia ficha del proveedor que habríamos
+publicado como buenos.
+
+El mapeo de artículo del proveedor a ítem nuestro se declara a mano, por código, dentro
+del importador. No se empareja automáticamente: probamos un emparejador por similitud de
+texto y confundía una funda de arena de 55 libras con un viaje de 16 metros cúbicos.
+
+### El ITBIS de esta primera tanda
 
 ### El ITBIS de esta primera tanda
 

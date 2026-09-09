@@ -137,6 +137,49 @@
     nota: 'Plancha de yeso blanca 1/2 x 4 x 8, marca Knauf. La versión resistente a la humedad cuesta RD$ 1,095.69. ' + SUPUESTO_ITBIS
   });
 
+  /* --- Extracción completa del catálogo de construcción de Ochoa,
+         09/09/2026: 398 artículos, 349 con precio publicado.
+         Cargadas solo las correspondencias verificadas una por una con
+         nuestro catálogo; el resto del archivo queda como fuente para
+         ampliar el catálogo más adelante.
+         Seis precios del archivo se descartaron por inverosímiles: ver
+         herramientas/importar-ochoa.js. --- */
+
+c('MAT-02-003', 'Ferretería Ochoa (8A)', 1178.7, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Cemento Blanco Argos, marca ARGOS (ref. FUNDA40KILOS). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-02-003', 'Ferretería Ochoa (8A)', 1130.86, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Cemento Blanco Perla Del Sur, marca MORTEROS EUROPA (ref. FUNDA40KG). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-04-021', 'Ferretería Ochoa (8A)', 62.48, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Alambre Liso Galvanizado, marca GALV-ALAMBRE (ref. C-18ROLLO/GDE.). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-04-022', 'Ferretería Ochoa (8A)', 61.12, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Alambre Liso Galvanizado C-14, marca GALV-ALAMBRE (ref. C-14ROLLOGDE). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-04-008', 'Ferretería Ochoa (8A)', 17130.85, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Malla Elect-S Corrug 2.40X40 4.89 Qq, marca MALLA-E (ref. W2.3X2.3100X100). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-04-014', 'Ferretería Ochoa (8A)', 20629.26, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Malla Elect-S Corrug. 2.40X40 5.88 Qq, marca MALLA-E (ref. W2.7X2.7100X100). Precio publicado con ITBIS incluido."
+  });
+
+  c('MAT-04-023', 'Ferretería Ochoa (8A)', 861, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en ochoa.com.do',
+    nota: "Angular H. Negro - 24.60 Lbs, marca HN-ANGULARES (ref. 11/2X1/8=3MM). Precio publicado con ITBIS incluido."
+  });
+
   /* RETENIDO — pendiente de verificar
      Ochoa publica «Pintura Acrílica Superior 5 GL» a RD$ 983.41, que serían
      unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y
