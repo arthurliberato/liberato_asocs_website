@@ -345,24 +345,112 @@ module.exports = {
 },
 
 'MAT-16': {
-  titulo: 'Precio de cámaras CCTV y sistemas especiales en RD',
-  desc: 'Precios de referencia de cámaras IP, NVR, cable UTP, detección de incendio, extintores y videoporteros en República Dominicana.',
-  h1: 'Precio de CCTV, redes y sistemas especiales en República Dominicana',
+  titulo: 'Precio de las cámaras de seguridad en RD',
+  desc: 'Precio de cámaras CCTV bullet, domo, turret y PTZ en República Dominicana, con grabadores, soportes, fuentes y discos de videovigilancia.',
+  h1: 'Precio de las cámaras de seguridad y videovigilancia en República Dominicana',
   intro: [
-    'CCTV, redes de datos, detección de incendio y control de acceso comparten una característica que cambia el presupuesto: el equipo es solo una parte. La canalización, el cableado, el almacenamiento, la energía de respaldo y la configuración pesan tanto o más, y son mucho más caros de resolver después de cerrar los muros.',
-    'La consecuencia práctica es que estos sistemas se deciden en la etapa de instalaciones, no al final de la obra. Dejar la canalización prevista cuesta poco durante la obra gris; abrirla después cuesta el acabado completo. En el mercado local hay distribuidores mayoristas con precios por volumen y kits armados, además de integradores que cotizan el sistema completo instalado.'
+    'La cámara es la parte visible y la más barata de un sistema de videovigilancia. Lo que decide el presupuesto es lo que va detrás: el grabador con la cantidad de canales correcta, el disco dimensionado para los días que se quieran conservar, la fuente de alimentación, el cableado y la canalización. Un sistema de ocho cámaras puede costar el doble que otro con las mismas ocho cámaras, solo por esas decisiones.',
+    'La forma de la cámara no es estética, es funcional. La bullet se ve y disuade, y va bien en perímetros. La domo pasa desapercibida y aguanta mejor el vandalismo, por eso domina en interiores comerciales. La turret combina las dos. La PTZ se mueve y hace zoom, cuesta varias veces más y solo se justifica cuando hay alguien mirando o un sistema que la dirija.'
   ],
   claves: [
-    ['Canalizar a tiempo', 'Prever tubería y cajas durante la obra gris. Es la decisión que más dinero ahorra en toda la categoría.'],
-    ['El equipo no es el sistema', 'Sumar cableado, almacenamiento, respaldo de energía, configuración y soporte.'],
-    ['Almacenamiento realista', 'Los días de grabación que se quieran conservar definen el disco. Es una decisión de costo, no un detalle técnico.'],
-    ['Incendio tiene requisitos', 'La detección y extinción se rigen por normativa y requieren aprobación del Cuerpo de Bomberos. No es un sistema que se improvise.']
+    ['Canalizar durante la obra gris', 'Dejar tubería y cajas previstas cuesta poco mientras hay pañete abierto. Hacerlo después cuesta el acabado completo.'],
+    ['El disco se calcula, no se adivina', 'Los días de grabación que se quieran conservar, por la resolución y la cantidad de cámaras, definen el disco. Pedirlo calculado en la cotización.'],
+    ['Disco de videovigilancia, no de escritorio', 'Un disco común no está hecho para escribir 24 horas al día. Los de vigilancia cuestan un poco más y duran años en lugar de meses.'],
+    ['PoE ahorra un cableado', 'Alimentar la cámara por el mismo cable de red evita tirar corriente hasta cada punto. Cambia el costo de instalación más que el de los equipos.']
   ],
   faq: [
-    ['¿Conviene un kit de cámaras o comprar los equipos por separado?',
-     'El kit resuelve rápido instalaciones pequeñas y sencillas. Cuando hay varias zonas, requisitos de resolución distintos o necesidad de crecer después, comprar por componentes permite dimensionar bien el grabador, el almacenamiento y la red.'],
+    ['¿Qué diferencia hay entre una cámara bullet, domo y turret?',
+     'La bullet es alargada y visible, ideal para perímetros y disuasión. La domo va dentro de una cúpula, es discreta y más resistente al vandalismo, por eso se usa en interiores comerciales. La turret es una esfera abierta que combina el alcance de la bullet con la discreción de la domo y evita los reflejos del domo en visión nocturna.'],
     ['¿Cuánto disco duro hace falta para un sistema de cámaras?',
-     'Depende de la cantidad de cámaras, la resolución, los cuadros por segundo, el tipo de compresión y los días de grabación que se quieran conservar. Es un cálculo que el proveedor debe entregar junto con la cotización.']
+     'Depende de la cantidad de cámaras, la resolución, los cuadros por segundo, la compresión y los días que se quieran conservar. Como orden de magnitud, ocho cámaras de 4 MP grabando continuo a 30 días piden varios terabytes. Es un cálculo que el proveedor debe entregar junto con la cotización, no una estimación de última hora.']
+  ]
+},
+
+'MAT-28': {
+  titulo: 'Precio de alarmas y control de acceso en RD',
+  desc: 'Precio de paneles de alarma, teclados, detectores de movimiento, lectores de proximidad, cerraduras y cerco eléctrico en República Dominicana.',
+  h1: 'Precio de las alarmas y el control de accesos en República Dominicana',
+  intro: [
+    'Alarma y control de acceso son dos sistemas que comparten cableado, canalización y, muchas veces, el mismo instalador. Se presupuestan por punto: cada puerta con lector, cada ventana con contacto magnético, cada zona con detector de movimiento. Contar los puntos antes de pedir precio es lo que evita que la cotización llegue con la mitad del alcance.',
+    'El panel es el corazón y define hasta dónde puede crecer el sistema. Un panel de ocho zonas no se amplía a treinta con un módulo: se cambia. Por eso conviene dimensionarlo por lo que el edificio va a necesitar en cinco años, no por lo que se instala el primer día, sobre todo en proyectos que se entregan por etapas.'
+  ],
+  claves: [
+    ['Se cotiza por punto', 'Cada puerta, ventana y zona es un punto con su detector, su cable y su canalización. El conteo va antes que el precio.'],
+    ['El panel define el techo del sistema', 'Cambiar de panel a mitad de camino significa rehacer la programación. Dimensionarlo por el crecimiento previsto.'],
+    ['Cableado o inalámbrico', 'El cableado es más confiable y no lleva baterías; el inalámbrico salva la obra terminada. En obra nueva casi siempre gana el cableado.'],
+    ['El cerco eléctrico tiene su propia partida', 'Electrificador, aisladores, alambre y señalización van aparte, y la señalización es obligatoria.']
+  ],
+  faq: [
+    ['¿Qué lleva un sistema de alarma completo?',
+     'Panel de control, teclado o aplicación para armarlo, detectores de movimiento por zona, contactos magnéticos en puertas y ventanas, sirena interior y exterior, fuente con batería de respaldo y comunicador para avisar afuera. La cantidad de cada cosa sale del conteo de puntos del proyecto.'],
+    ['¿Conviene control de acceso con huella o con tarjeta?',
+     'La tarjeta o el llavero de proximidad es más rápido, funciona con las manos sucias o con guantes y se reemplaza barato cuando se pierde. La huella no se presta ni se pierde, pero falla más en obra y con manos húmedas. En edificios de oficinas es común combinar los dos.']
+  ]
+},
+
+'MAT-29': {
+  titulo: 'Precio de la detección de incendios en RD',
+  desc: 'Precio de detectores de humo y calor, estaciones manuales, sirenas con estrobo, paneles de control y extintores en República Dominicana.',
+  h1: 'Precio de la detección y extinción de incendios en República Dominicana',
+  intro: [
+    'Es la única categoría de sistemas especiales que no es opcional. La detección de incendios se rige por normativa, la revisa el Cuerpo de Bomberos y su aprobación es condición para habilitar la edificación. Eso cambia la lógica del presupuesto: aquí no se elige entre poner o no poner, sino entre resolverlo a tiempo o resolverlo dos veces.',
+    'Hay dos familias de sistema y la diferencia se nota en la obra. El convencional agrupa los detectores por zonas y es más económico; el direccionable identifica cuál detector se activó, lo que en un edificio grande es la diferencia entre revisar un piso completo o ir directo al punto. La decisión se toma temprano porque cambia el cableado, no solo los equipos.'
+  ],
+  claves: [
+    ['Lo aprueba Bomberos', 'El sistema tiene que estar diseñado y aprobado, no improvisado. La no objeción del Cuerpo de Bomberos condiciona la habilitación de la obra.'],
+    ['Convencional o direccionable', 'La decisión cambia el cableado y el panel, no solo los detectores. Tomarla antes de canalizar.'],
+    ['La notificación cuenta tanto como la detección', 'Sirenas y estrobos son parte del sistema y del presupuesto. En áreas ruidosas el estrobo no es opcional.'],
+    ['Los extintores llevan mantenimiento', 'Además de la compra, hay recarga y revisión periódica. Es un costo recurrente que conviene dejar dicho desde el principio.']
+  ],
+  faq: [
+    ['¿Qué diferencia hay entre un sistema convencional y uno direccionable?',
+     'El convencional divide el edificio en zonas: el panel indica que hay una alarma en la zona 3, y hay que recorrerla para encontrar el punto. El direccionable identifica el detector exacto. El convencional cuesta menos y sirve en edificaciones pequeñas; el direccionable se impone a partir de cierto tamaño porque reduce el tiempo de respuesta.'],
+    ['¿Detector de humo o detector de calor?',
+     'El de humo detecta antes y es el estándar en pasillos, oficinas y habitaciones. El de calor se usa donde el humo o el vapor son normales —cocinas, calderas, parqueos— porque ahí el de humo daría falsas alarmas todo el día.']
+  ]
+},
+
+'MAT-30': {
+  titulo: 'Precio del cableado estructurado en RD',
+  desc: 'Precio de cable UTP y fibra óptica, jacks RJ45, patch panels, racks, placas de pared y cordones de parcheo en República Dominicana.',
+  h1: 'Precio del cableado estructurado y las redes en República Dominicana',
+  intro: [
+    'El cableado estructurado se presupuesta por punto de red, y cada punto es una suma de piezas pequeñas: el cable desde el rack hasta la salida, el jack, la placa de pared, la caja, el puerto del patch panel y el cordón de parcheo en cada extremo. El cable por rollo es la parte visible del costo; las piezas de terminación suelen sumar tanto como él.',
+    'La categoría del cable —Cat 5e, Cat 6, Cat 6A— hay que decidirla temprano, porque el cable queda dentro de la pared y cambiarlo después significa romper. Todo lo demás se puede sustituir. La regla práctica: el cable se elige por lo que el edificio va a necesitar dentro de diez años, no por lo que se conecta el primer día.'
+  ],
+  claves: [
+    ['Se cotiza por punto, no por metro', 'Cable, jack, placa, caja, puerto de patch panel y dos cordones. Presupuestar solo el rollo deja fuera la mitad.'],
+    ['El cable es lo único que no se cambia', 'Queda dentro de la pared. Elegir la categoría por el horizonte del edificio, no por el uso del primer día.'],
+    ['Cobre o fibra', 'El cobre resuelve la distribución dentro del piso. La fibra es para enlaces entre edificios o tramos largos, donde el cobre no llega.'],
+    ['El rack ordena o arruina', 'Patch panels, organizadores y bandejas cuestan poco y son la diferencia entre un rack que se puede mantener y uno que no.']
+  ],
+  faq: [
+    ['¿Qué lleva un punto de red completo?',
+     'El tramo de cable desde el rack hasta la salida, el jack RJ45, la placa de pared con su caja, un puerto en el patch panel y un cordón de parcheo en cada extremo. Al presupuestar hay que contar las seis cosas: el rollo de cable solo es una parte.'],
+    ['¿Cat 6 o Cat 6A?',
+     'Cat 6 resuelve con holgura las necesidades de oficina y vivienda de hoy. Cat 6A es blindado, soporta 10 Gbps en tramos completos y cuesta bastante más, en cable y en piezas de terminación. Como el cable queda enterrado en la pared, la pregunta correcta es qué va a necesitar el edificio en diez años.']
+  ]
+},
+
+'MAT-31': {
+  titulo: 'Precio de domótica e intercomunicadores en RD',
+  desc: 'Precio de interruptores inteligentes, sensores, hubs, videoporteros e intercomunicadores para apartamentos en República Dominicana.',
+  h1: 'Precio de la domótica y los intercomunicadores en República Dominicana',
+  intro: [
+    'La domótica dejó de ser un lujo y pasó a ser una decisión de instalación eléctrica. El interruptor inteligente que va en la pared necesita neutro en la caja, y esa es la diferencia entre poder instalarlo o no: en la vivienda dominicana tradicional el neutro no llega al interruptor. Definirlo con el electricista antes de cablear cuesta cero; descubrirlo después obliga a soluciones de compromiso.',
+    'El intercomunicador es la otra mitad de esta categoría y se presupuesta por apartamento. Un edificio de ocho unidades necesita ocho estaciones interiores, la placa de calle, la fuente y el cableado vertical. Los kits vienen armados por cantidad de apartamentos, y ahí la elección importante es audio o audio y video, porque cambia el cable que hay que dejar en el ducto.'
+  ],
+  claves: [
+    ['El interruptor inteligente pide neutro', 'Hay que preverlo en la caja antes de cerrar la pared. Es la restricción que más veces frustra una instalación de domótica.'],
+    ['El intercom se cuenta por apartamento', 'Estación interior por unidad, más la placa de calle, la fuente y el vertical. Los kits ya vienen por cantidad de apartamentos.'],
+    ['Audio o audio y video', 'La decisión cambia el cableado del ducto, no solo el equipo. Tomarla antes de tirar el vertical.'],
+    ['Cableado o inalámbrico', 'Lo inalámbrico salva una obra terminada, pero depende de baterías y de la cobertura wifi. En obra nueva el cableado sigue ganando.']
+  ],
+  faq: [
+    ['¿Por qué un interruptor inteligente necesita neutro?',
+     'Porque necesita alimentarse todo el tiempo, incluso con la luz apagada, para mantener su radio encendida. En la instalación dominicana tradicional al interruptor solo llega la línea viva, así que hay que prever el neutro en la caja durante el cableado. Hay modelos que funcionan sin neutro, pero son más limitados y a veces hacen parpadear los bombillos LED.'],
+    ['¿Cómo se presupuesta un intercomunicador para un edificio?',
+     'Por cantidad de apartamentos: una estación interior por unidad, más la placa de calle, la fuente de alimentación y el cableado vertical por el ducto. Los kits del mercado vienen armados para 4, 6 u 8 apartamentos; por encima de eso se arma por componentes.']
   ]
 },
 

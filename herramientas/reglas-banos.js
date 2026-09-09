@@ -133,13 +133,34 @@ const TIPOS = [
   [/^(Toallero|Portatoallas?|Porta ?Toalle?r?o?|Porta ?Toalla)/i, 'Toallero', 'MAT-27', 'unidad', 'terminacion', 'toallero, portatoallas'],
   [/^(Portapapel|Porta ?Papel|Papelera)/i,    'Portapapel',       'MAT-27', 'unidad', 'terminacion', 'portapapel, papelera de baño'],
   [/^(Portacepillos?|Porta ?Cepillo|Cepiller[ao])/i, 'Portacepillos', 'MAT-27', 'unidad', 'terminacion', 'portacepillos, cepillera'],
-  [/^(Jabonera|Dispensador|Dosificador)/i,    'Jabonera o dispensador', 'MAT-27', 'unidad', 'terminacion', 'jabonera, dispensador de jabón'],
+  [/^(Dispensador|Dosificador)/i,     'Dispensador de baño público', 'MAT-27', 'unidad', 'terminacion', 'dispensador de jabón, dosificador automático'],
+  [/^Jabonera/i,                      'Jabonera',                 'MAT-27', 'unidad', 'terminacion', 'jabonera'],
   [/^Secador\b/i,                     'Secador de manos',         'MAT-27', 'unidad', 'terminacion', 'secador de manos'],
   [/^(Gancho|Percha)/i,               'Gancho de baño',           'MAT-27', 'unidad', 'terminacion', 'gancho, perchero de baño'],
   [/^Repisa\b/i,                      'Repisa de baño',           'MAT-27', 'unidad', 'terminacion', 'repisa de baño'],
   [/^Tendedero\b/i,                   'Tendedero',                'MAT-27', 'unidad', 'terminacion', 'tendedero retráctil'],
   [/^(Kit|Juego|Accesorios?)\b/i,     'Juego de accesorios de baño', 'MAT-27', 'juego', 'terminacion', 'juego de accesorios, kit de baño']
 ];
+
+/* ---------------------------------------------------------
+   Accesorios: el juego sí, la pieza suelta no
+
+   Un constructor presupuesta «juego de accesorios de baño» por
+   cada baño del proyecto, no un toallero Milano y un portapapel
+   Lugano por separado: eso es una decisión de decoración que se
+   toma pieza por pieza y que además llena la página de variantes
+   de la misma cosa en distintos acabados.
+
+   Se quedan las barras de seguridad, porque en baños accesibles
+   y en obra hotelera y de salud son una partida obligatoria con
+   su propio anclaje, y el equipamiento de baño público —secador
+   de manos y dispensadores automáticos—, que se compra por
+   cantidad de baños igual que un inodoro.
+   --------------------------------------------------------- */
+const SOLO_PIEZA_SUELTA = {
+  'Toallero': true, 'Portapapel': true, 'Portacepillos': true,
+  'Jabonera': true, 'Gancho de baño': true, 'Repisa de baño': true, 'Tendedero': true
+};
 
 /* ---------------------------------------------------------
    La regla
@@ -154,6 +175,8 @@ function regla(a) {
 
   const t = TIPOS.filter(x => x[0].test(n))[0];
   if (!t && !instalacion) return null;
+
+  if (t && SOLO_PIEZA_SUELTA[t[1]]) return null;
 
   const [, tipo, cat, unidad, etapa, alias] = t || [null, 'Kit de instalación de inodoro', 'MAT-24', 'juego', 'instalaciones', 'kit de instalación, cera y tornillos'];
   const orden = t ? TIPOS.indexOf(t) : TIPOS.length;

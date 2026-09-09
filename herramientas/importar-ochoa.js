@@ -975,6 +975,7 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
    cosa: si el artículo le sirve o no a un constructor. Ese criterio vive en
    reglas-banos.js. */
 const BANOS = require('./reglas-banos.js');
+const SEGTEC = require('./reglas-segtec.js');
 
 const FUENTES = [
   {
@@ -989,8 +990,14 @@ const FUENTES = [
   {
     archivo: path.join(__dirname, 'datos-externos/ochoa-banos-2026-09-09.json'),
     etiqueta: 'baños',
-    motivo: 'repuesto de consumidor, no equipamiento de obra',
+    motivo: 'repuesto de consumidor o pieza suelta de decoración',
     regla: a => BANOS.regla(a) || null
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ochoa-seguridad-2026-09-09.json'),
+    etiqueta: 'seguridad y tecnología',
+    motivo: 'accesorio de computadora, no de obra',
+    regla: a => SEGTEC.regla(a) || null
   }
 ];
 

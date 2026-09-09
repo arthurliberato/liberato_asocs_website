@@ -18,7 +18,7 @@ precios/
   catalogo.html           Catálogo completo con buscador, filtros y lista de cotización
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
-  precio-*.html           36 páginas estáticas, una por categoría   ← GENERADAS
+  precio-*.html           40 páginas estáticas, una por categoría   ← GENERADAS
   costo-licencias-…html
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
@@ -46,7 +46,7 @@ python3 -m http.server 8000
 
 ---
 
-## Las 36 páginas de categoría (generadas)
+## Las 40 páginas de categoría (generadas)
 
 Cada categoría del catálogo tiene su propia página estática, con URL orientada a
 búsqueda (`precio-cemento-morteros-aditivos.html`, `precio-varilla-acero.html`,
@@ -128,8 +128,8 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,082 ítems**. De ellos, **788 ya llevan un precio real** de un comercio
-que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,502 ítems**. De ellos, **1,208 ya llevan un precio real** de un
+comercio que lo publica; 288 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
@@ -196,7 +196,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **788 de 1,076 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,208 de 1,496 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -294,20 +294,20 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**868 cotizaciones reales cargadas · 788 ítems verificados de 1,076.**
+**1,308 cotizaciones reales cargadas · 1,208 ítems verificados de 1,496.**
 
 Tres tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — dos extracciones completas del catálogo de Ochoa, la de materiales de
-  construcción (398 artículos, 349 con precio) y la de baños (945 artículos, 713 con
-  precio). De ahí salieron 8 cotizaciones sobre ítems que ya existían y **774 ítems
-  nuevos que nacieron verificados**, con su precio real en lugar de una estimación
-  nuestra.
+- **09/09/2026** — tres extracciones completas del catálogo de Ochoa: materiales de
+  construcción (398 artículos, 349 con precio), baños (945 / 713) y seguridad y
+  tecnología (809 / 604). De ahí salieron 8 cotizaciones sobre ítems que ya existían y
+  **1,194 ítems nuevos que nacieron verificados**, con su precio real en lugar de una
+  estimación nuestra.
 
 Los 288 ítems restantes siguen siendo estimaciones nuestras.
 
-Nueve categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
+Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
 
 | | Categoría | Ítems |
@@ -320,7 +320,14 @@ desde el primer día:
 | `MAT-24` | Inodoros y urinarios | 116 |
 | `MAT-25` | Lavamanos y pedestales | 93 |
 | `MAT-26` | Muebles y espejos de baño | 75 |
-| `MAT-27` | Accesorios de baño | 160 |
+| `MAT-27` | Accesorios de baño | 65 |
+| `MAT-28` | Alarmas y control de accesos | 96 |
+| `MAT-29` | Detección de incendios | 44 |
+| `MAT-30` | Cableado estructurado y redes | 145 |
+| `MAT-31` | Domótica e intercomunicadores | 129 |
+
+`MAT-16` dejó de ser «Sistemas especiales» y pasó a ser «Cámaras y videovigilancia»: sus
+cuatro ítems que no eran CCTV se movieron a las categorías nuevas que les corresponden.
 
 El resto se repartió en categorías que ya existían: duchas y grifería en `MAT-09`,
 separadores y couplers de varilla en `MAT-04`, zinc de techo en `MAT-07`, polvo de color
@@ -362,6 +369,17 @@ en la ficha. En baños se identifica por marca y modelo, y lo que hay que decidi
 cosa: **si el artículo le sirve o no a un constructor.** Ese criterio vive en
 `herramientas/reglas-banos.js`.
 
+Hay un juego de reglas por extracción, porque cada rubro plantea una pregunta distinta:
+
+| Archivo | Qué decide |
+|---|---|
+| dentro de `importar-ochoa.js` | Materiales: cuál es la medida exacta del artículo |
+| `reglas-banos.js` | Baños: si es equipamiento de obra o repuesto de consumidor |
+| `reglas-segtec.js` | Seguridad y tecnología: si es sistema del edificio o accesorio de computadora |
+
+Los tres comparten `texto-ochoa.js`, que expande las abreviaturas del comercio y separa
+las medidas pegadas para que el nombre quede legible sin inventarle nada.
+
 ### La regla de los baños: equipamiento sí, repuesto no
 
 Entra lo que un constructor presupuesta e instala como parte de la obra, y queda fuera el
@@ -378,6 +396,34 @@ plomero compra por cada aparato que monta.
 Ojo con las categorías del comercio, que no son de fiar: hay espejos dentro de «muebles
 de baños», botiquines LED dentro de «espejos» y barras de seguridad dentro de «secador de
 manos». Por eso todo se clasifica por el nombre del producto, que sí es consistente.
+
+**Los accesorios entran solo como juego.** Un constructor presupuesta «juego de
+accesorios de baño» por cada baño del proyecto, no un toallero Milano y un portapapel
+Lugano por separado: eso es una decisión de decoración que además llena la página de
+variantes de la misma cosa en distintos acabados. Se quedan las barras de seguridad,
+porque en baños accesibles y en obra hotelera y de salud son una partida obligatoria con
+su propio anclaje, y el equipamiento de baño público —secador de manos y dispensadores
+automáticos—, que se compra por cantidad de baños igual que un inodoro.
+
+### La regla de seguridad y tecnología: sistema del edificio sí, tienda de computadoras no
+
+Ese catálogo mezcla dos negocios bajo los mismos estantes. Por un lado los sistemas de
+corrientes débiles de un edificio —CCTV, alarma, detección de incendio, control de
+acceso, cableado estructurado, intercomunicación, domótica de pared—, que son partidas de
+obra con su canalización, su cableado y su instalador. Por otro la tienda de
+computadoras: hubs USB, cargadores de laptop, memorias, cables HDMI de 1.8 metros,
+soportes de monitor. Lo primero entra, lo segundo no: 64 artículos de 604 se quedaron
+fuera por eso.
+
+La frontera pide cuidado en los dos sentidos. Un «cable de audio» de 1.8 metros con
+conectores RCA es de escritorio, pero uno declarado como AWG 16/4 es cable de instalación
+para un sistema de voceo, y entra. Un adaptador USB no es de obra, pero un adaptador de
+fibra óptica va en el patch panel y sí lo es.
+
+Aquí las categorías del comercio sí sirven para agrupar, así que la categoría sale de
+ellas y el filtro del nombre. Con dos excepciones, donde manda el nombre: hay cámaras y
+grabadores archivados en domótica, y estaciones de intercomunicador archivadas en
+cableado.
 
 Hay una regla por familia, y cada una sabe leer la forma en que ese rubro escribe su
 medida: los angulares la traen en la descripción («1-1/2 X 1/8 pulgadas»), la perfilería
@@ -654,7 +700,7 @@ Hoy todo apunta a `https://precios.ingsliberato.com`. Si termina llamándose dis
 hay que cambiar la URL en:
 
 - la constante `SITIO` de `herramientas/generar-categorias.js` y volver a correr el
-  generador: eso rehace las 36 páginas de categoría, la portada y el `sitemap.xml`;
+  generador: eso rehace las 40 páginas de categoría, la portada y el `sitemap.xml`;
 - las etiquetas `canonical` y `og:url` de `catalogo.html`, `proveedores.html` y
   `metodologia.html`, y el bloque `application/ld+json` de `index.html`, que se
   mantienen a mano;
@@ -680,7 +726,7 @@ hay que cambiar la URL en:
 
 ## Notas de SEO
 
-- Las 36 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
+- Las 40 páginas de categoría son las que persiguen el tráfico de búsqueda; la portada y
   el catálogo interactivo funcionan como concentradores.
 - `catalogo.html?cat=MAT-05` sigue funcionando para compartir una vista filtrada, pero
   ya no está en el `sitemap.xml`: la versión indexable de esa categoría es
