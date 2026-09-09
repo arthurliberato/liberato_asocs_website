@@ -242,6 +242,15 @@ function fila(it) {
           <tr class="fila-detalle" hidden><td colspan="6"></td></tr>`;
 }
 
+/* Enlace al libro de Excel. Lo genera herramientas/generar-excel.py y va
+   commiteado en precios/descargas/, así que aquí es un enlace y ya: no hay
+   que armar el archivo en el navegador ni cargar una librería para eso. */
+const ENLACE_EXCEL =
+  '<a class="btn btn-ghost btn-mini" href="descargas/precios-construccion-rd.xlsx" download>' +
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px">' +
+  '<path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
+  ' Descargar en Excel</a>';
+
 /* ---------- bloques de la página ---------- */
 
 function bloqueProveedores(codigo) {
@@ -392,6 +401,7 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copiar tabla
       </button>
+      ${ENLACE_EXCEL}
     </div>
 
     <div class="tabla-wrap">

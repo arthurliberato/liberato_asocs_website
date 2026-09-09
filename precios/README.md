@@ -19,6 +19,7 @@ precios/
   proveedores.html        Directorio de proveedores filtrable
   metodologia.html        Cómo se arman los precios, conversiones y preguntas frecuentes
   precio-*.html           40 páginas estáticas, una por categoría   ← GENERADAS
+  descargas/              el libro de Excel                        ← GENERADO
   costo-licencias-…html
   assets/
     css/precios.css       Estilos (misma paleta del logotipo)
@@ -592,6 +593,85 @@ escritas a mano.
 > **Antes de publicar el sitio de cara al público, apáguelo.** Sirve para revisar y para
 > enseñarle a alguien cómo va a funcionar, no para estar en producción: aunque todo esté
 > marcado, son precios inventados en una página de precios.
+
+## Descargar el libro de Excel
+
+El sitio ofrece `precios/descargas/precios-construccion-rd.xlsx`, un libro de ocho hojas
+con todo el catálogo. Es un **archivo estático commiteado al repositorio**: la página solo
+tiene un enlace. No se arma en el navegador ni hace falta cargar una librería para eso, que
+es lo que mantiene el sitio sin dependencias en tiempo de ejecución.
+
+```bash
+python3 herramientas/generar-excel.py     # arma el libro
+python3 herramientas/verificar-excel.py   # lo revisa antes de publicar
+```
+
+`generar-excel.py` no conoce el catálogo: se lo pide a `herramientas/datos-para-excel.js`,
+que es JavaScript porque es el mismo modelo que lee el sitio. El modelo no se duplica.
+
+**El libro no carga `datos-demo.js`.** Las cotizaciones de demostración existen para que se
+vea cómo funcionará el sitio, y un archivo que circula por correo no es lugar para precios
+ficticios. Los ítems que hoy solo tienen precio demo salen en el libro como estimaciones,
+que es lo que son.
+
+### Las ocho hojas
+
+| Hoja | Para qué |
+|---|---|
+| **Léame** | De dónde salen los números, cuándo se generó y qué significa cada estado. El archivo circula separado del sitio: tiene que explicarse solo. |
+| **Catálogo** | Los ítems con todos sus campos. Es la hoja de datos contra la que buscan las demás. |
+| **Comparativo** | Un ítem por fila, una columna por proveedor, y mínimo, mediana, máximo, dispersión y cuál es el más barato. |
+| **Presupuesto** | Plantilla con fórmulas: se escribe código y cantidad, salen descripción, precio e importe. Con costo directo, indirectos y utilidad. |
+| **Resumen por etapa** | El presupuesto agrupado por etapa de obra, con `SUMIF` sobre la hoja anterior. |
+| **Solicitud de cotización** | Lo mismo al revés: las columnas de precio van vacías para que las llene el proveedor, y al lado se ve cuánto se aparta de la referencia. |
+| **Proveedores** | A quién pedirle qué, con su contacto y las categorías que cubre. |
+| **Conversiones** | Los factores de cubicación. |
+
+### Por qué la mediana del libro puede no coincidir con la del sitio
+
+En el **Comparativo**, el mínimo, la mediana y el máximo se calculan con fórmulas sobre las
+celdas de proveedor que están a la vista, que es lo que un comprador espera poder auditar.
+El precio de referencia del sitio se calcula distinto: normaliza el ITBIS al criterio del
+ítem, promedia **todas** las cotizaciones —no solo la más baja de cada comercio— y deja
+fuera las que vienen en otra presentación. Las dos columnas están juntas en la hoja y la
+nota al pie lo explica, para que la diferencia se entienda en vez de parecer un error.
+
+### El ITBIS no se suma al final
+
+Es el error más fácil de cometer al armar un presupuesto con estos datos. Cada precio viene
+como lo cobra el comercio: los materiales de mostrador ya traen el 18% incluido y la mano
+de obra, los subcontratos y el alquiler de equipo no. Aplicar un 18% parejo al total
+cobraría el impuesto dos veces sobre los materiales. Por eso la plantilla no lo hace: suma
+el costo directo tal cual y muestra aparte, con `SUMIF`, cuánto impuesto va contenido en
+ese total.
+
+### Cómo se verifica
+
+Lo normal sería abrir el libro con LibreOffice y dejar que recalcule, pero eso solo prueba
+que las fórmulas **evalúan**: un rango corrido una fila da un archivo limpio con los números
+cambiados. `verificar-excel.py` comprueba lo otro, que es lo que de verdad se rompe:
+
+- que toda función usada sea de las que Excel entiende sin prefijo, sin `XLOOKUP` ni
+  fórmulas de matriz derramada, que openpyxl escribe sin la metadata que necesitan;
+- que cada referencia entre hojas nombre una hoja que existe;
+- que las columnas que buscan las plantillas sean las que uno cree —si el Catálogo cambia
+  de orden de columnas, la fórmula sigue evaluando y trae el dato equivocado—;
+- que los rangos cubran exactamente las filas con datos;
+- que el mínimo, la mediana y el máximo del comparativo miren justo las celdas de proveedor
+  de su fila.
+
+### Cuándo hay que regenerarlo
+
+Cada vez que cambien los precios o el catálogo, junto con el generador de páginas:
+
+```bash
+node herramientas/generar-categorias.js
+python3 herramientas/generar-excel.py
+python3 herramientas/verificar-excel.py
+```
+
+Requiere `openpyxl` (`pip install openpyxl`). El resto del repositorio sigue sin
+dependencias.
 
 ## Copiar a Excel
 
