@@ -43,11 +43,13 @@
 
    ESTADO ACTUAL
    -------------
-   Todavía no hay ninguna cotización registrada. Ningún proveedor de este
-   sitio ha cotizado formalmente, y no se inventa un precio y se le atribuye
-   a una empresa real: sería publicar un dato falso sobre un negocio con
-   nombre propio. Por eso la lista está vacía y todos los ítems siguen
-   marcados como estimados.
+   Primera tanda cargada: 9 cotizaciones de 3 comercios, tomadas de los
+   precios que ellos mismos publican en sus tiendas en línea (08/09/2026).
+   Los 244 ítems restantes siguen siendo estimaciones nuestras.
+
+   Nunca se inventa un precio para atribuírselo a una empresa real: cada
+   cotización de aquí tiene su fuente y su fecha, y lo que no se pudo
+   verificar simplemente no se carga.
    ========================================================= */
 
 (function (global) {
@@ -69,13 +71,81 @@
     });
   }
 
-  /* --- Aquí van las cotizaciones. Ejemplo de la forma esperada:
+  /* =========================================================
+     COTIZACIONES REGISTRADAS
 
-     c('MAT-02-001', 'Ferretería Ochoa (8A)', 455, {
-       fecha: '2026-09-05', fuente: 'Precio publicado en ochoa.com.do', itbis: true
-     });
+     Primera tanda: precios publicados abiertamente en las tiendas en
+     línea de los propios comerciantes, consultados el 08/09/2026.
 
-     Descomentar y sustituir por cotizaciones reales.                      --- */
+     Sobre el ITBIS: ninguna de estas fichas declara si el precio lo
+     incluye. Se registran como `itbis: true` porque en República
+     Dominicana el precio de mostrador al consumidor se muestra con el
+     impuesto incluido, pero es un SUPUESTO NUESTRO, no un dato de la
+     ficha, y así queda dicho en la nota de cada cotización.
+     ========================================================= */
+
+  var SUPUESTO_ITBIS = 'La ficha no declara ITBIS; se asume incluido, como es habitual en el precio de mostrador.';
+
+  c('MAT-02-001', 'Ferremix (Grupo Alterra)', 535, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ferremix.com.do',
+    nota: 'Cemento gris Titán, funda de 42.5 kg. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-04-001', 'Ferremix (Grupo Alterra)', 442.77, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ferremix.com.do',
+    nota: 'Varilla 3/8 x 20 pies grado 60, precio por unidad. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-06-005', 'InnovaCentro (La Innovación)', 1495, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en innovacentro.com.do',
+    nota: 'Plancha de pino 4 x 8 x 1/2, artículo 004929. La misma medida en okume cuesta RD$ 1,395. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-06-006', 'InnovaCentro (La Innovación)', 1895, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en innovacentro.com.do',
+    nota: 'Plancha de okume 4 x 8 x 3/4, artículo 025846; no había pino de ese espesor con precio publicado. ' + SUPUESTO_ITBIS
+  });
+
+  /* Los dos tubos de PVC vienen en presentación de 19 pies, no de 20 como
+     dice la ficha del ítem. Se registran con su unidad real: el modelo los
+     muestra pero los deja fuera del cálculo, porque comparar 19 con 20 pies
+     daría un precio de referencia falso. Ver la nota del README. */
+  c('MAT-09-001', 'Ferretería Ochoa (8A)', 1494.58, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
+    unidad: 'tubo de 19 pies',
+    nota: 'Tubo PVC semi-presión SDR-41 de 4" x 19 pies. La tienda factura por pies con un mínimo de 19, que equivale a una unidad. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-09-002', 'Ferretería Ochoa (8A)', 503.78, {
+    fecha: '2026-09-08', fuente: 'Listado de marca en ochoa.com.do',
+    unidad: 'tubo de 19 pies',
+    nota: 'Tubo PVC SDR-41 de 2" x 19 pies, marca CORVI. Precio tomado del listado de marca, no de la ficha del producto. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-09-008', 'Ferretería Ochoa (8A)', 6107.20, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
+    nota: 'Inodoro de una pieza Ares C con asiento, marca Ultra. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-10-009', 'Ferretería Ochoa (8A)', 472.72, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
+    nota: 'Breaker enchufable de 1 polo, 20 A, marca ABB. ' + SUPUESTO_ITBIS
+  });
+
+  c('MAT-13-001', 'Ferretería Ochoa (8A)', 956.17, {
+    fecha: '2026-09-08', fuente: 'Precio publicado en ochoa.com.do',
+    nota: 'Plancha de yeso blanca 1/2 x 4 x 8, marca Knauf. La versión resistente a la humedad cuesta RD$ 1,095.69. ' + SUPUESTO_ITBIS
+  });
+
+  /* RETENIDO — pendiente de verificar
+     Ochoa publica «Pintura Acrílica Superior 5 GL» a RD$ 983.41, que serían
+     unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y
+     resulta inverosímil para una cubeta de cinco galones: o la ficha cotiza
+     por galón, o es otra presentación. No se carga hasta confirmarlo en
+     tienda; publicar ese número sería peor que no publicar ninguno.
+
+     c('MAT-12-002', 'Ferretería Ochoa (8A)', 983.41, {...});
+  */
 
   /* ---------------------------------------------------------
      Cálculo
@@ -168,6 +238,12 @@
         return q.cuenta && (!filtro || filtro.indexOf(q.proveedor.nombre) !== -1);
       });
 
+      /* Un dato real siempre gana a uno de demostración. En cuanto el ítem
+         tiene una cotización de verdad, las ficticias dejan de promediar,
+         para que nunca se calcule una mediana mezclando ambas cosas. */
+      var reales = validas.filter(function (q) { return !q.proveedor.demo; });
+      if (reales.length) validas = reales;
+
       if (!validas.length) {
         item.ref = item.base.ref;
         item.min = item.base.min;
@@ -249,7 +325,13 @@
       itbisTexto(item.itbis), ESTADOS[item.estado] || item.estado, item.fecha, item.fuente
     ].map(limpiar));
 
-    (item.cotizaciones || []).forEach(function (q) {
+    /* Misma regla que en la ficha: donde hay cotizaciones reales, las de
+       demostración no se exportan. Lo que se copia es lo que se ve. */
+    var todas = item.cotizaciones || [];
+    var hayReales = todas.some(function (q) { return !q.proveedor.demo; });
+    var exportables = hayReales ? todas.filter(function (q) { return !q.proveedor.demo; }) : todas;
+
+    exportables.forEach(function (q) {
       filas.push([
         item.codigo, item.nombre, item.esp, nombreCat(item.cat), q.unidad,
         q.proveedor.nombre,
@@ -312,7 +394,14 @@
     var proveedoresCategoria = opciones.proveedoresCategoria || [];
     var seleccion = opciones.seleccion || [];
 
-    var filas = (item.cotizaciones || []).map(function (q, n) {
+    /* Si el ítem ya tiene cotizaciones reales, las de demostración ni se
+       muestran: ver un precio real al lado de uno inventado confunde más
+       de lo que enseña. Donde todavía no hay datos reales, siguen. */
+    var todas = item.cotizaciones || [];
+    var hayReales = todas.some(function (q) { return !q.proveedor.demo; });
+    var visibles = hayReales ? todas.filter(function (q) { return !q.proveedor.demo; }) : todas;
+
+    var filas = visibles.map(function (q, n) {
       var mia = seleccion.indexOf(q.proveedor.nombre) !== -1;
       return '<tr class="' + (q.cuenta ? '' : 'cot-fuera ') + (mia ? 'cot-mia' : '') + '">' +
           '<td>' + esc(q.proveedor.nombre) +
@@ -324,7 +413,7 @@
           '<td class="num">' + celdaPrecio(q.precioNormalizado, item) + '</td>' +
           '<td>' + esc(q.fecha || '—') + '</td>' +
           '<td>' + esc(q.fuente || '—') + '</td>' +
-          '<td class="num">' + botonCopiar(item.codigo, n, q.proveedor.nombre) + '</td>' +
+          '<td class="num">' + botonCopiar(item.codigo, todas.indexOf(q), q.proveedor.nombre) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -339,7 +428,7 @@
         '</div></div>'
       : '';
 
-    var hayDemo = (item.cotizaciones || []).some(function (q) { return q.proveedor.demo; });
+    var hayDemo = visibles.some(function (q) { return q.proveedor.demo; });
     var avisoDemo = hayDemo
       ? '<p class="detalle-demo">Las cotizaciones de esta ficha son <strong>ficticias</strong>, ' +
         'cargadas para mostrar cómo funcionará el sitio. Ningún proveedor real ha cotizado todavía.</p>'
