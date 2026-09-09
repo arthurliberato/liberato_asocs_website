@@ -981,6 +981,7 @@ const BALDOSAS = require('./reglas-baldosas.js');
 const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
+const MC = require('./reglas-mc.js');
 
 const FUENTES = [
   {
@@ -1097,6 +1098,21 @@ const FUENTES = [
     motivoDe: () => MAXELEC.MOTIVO.valor || 'la ficha no declara la especificación',
     mapeo: {},
     regla: a => { const r = MAXELEC.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/mc-cotizacion-2026-09-09.json'),
+    etiqueta: 'Ferretería MC · cotización formal',
+    proveedor: 'Ferretería MC',
+    constante: 'PROV_MC',
+    fecha: '2026-09-09',
+    /* No es una extracción de catálogo: son dos cotizaciones que el comercio
+       emitió a nombre nuestro, con el ITBIS en columna aparte. */
+    itbis: false,
+    fuenteDe: a => 'Cotización ' + a.cotizacion + ' de Ferretería MC, 09/09/2026',
+    motivo: 'la línea no corresponde a ningún ítem del catálogo',
+    motivoDe: () => MC.MOTIVO.valor || 'la línea no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = MC.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
@@ -1424,10 +1440,17 @@ function bloqueCotizaciones() {
     if (repite > 1) notas.push('El comercio lista ' + repite + ' artículos con esta misma ' +
       'especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización');
     const f = a._fuente;
+    /* El ITBIS solo se asume cuando la fuente no lo declara. En una cotización
+       formal viene en su propia columna, y entonces es un dato: se escribe
+       `itbis: false` y la nota lo dice en vez de suponerlo. */
+    const campos = ["    fecha: '" + f.fecha + "', fuente: '" +
+                    esc(f.fuenteDe ? f.fuenteDe(a) : 'Precio publicado en ' + a.url) + "'"];
+    if (f.itbis === false) campos.push('    itbis: false');
+    const cierre = f.itbis === false
+      ? "    nota: '" + esc(notas.join('. ')) + ". El precio es antes de ITBIS: la cotización lo suma aparte'"
+      : "    nota: '" + esc(notas.join('. ')) + ". ' + SUPUESTO_ITBIS";
     return "  c('" + item + "', " + f.constante + ", " + num(precioUnidad(a)) + ", {\n" +
-           "    fecha: '" + f.fecha + "', fuente: 'Precio publicado en " + esc(a.url) + "',\n" +
-           "    nota: '" + esc(notas.join('. ')) + ". ' + SUPUESTO_ITBIS\n" +
-           "  });";
+           campos.join(',\n') + ',\n' + cierre + "\n  });";
   };
 
   if (existenteOk.length) {

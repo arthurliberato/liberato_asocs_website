@@ -292,27 +292,30 @@ function familia(a, f) {
 function specPerfil(a) {
   const n = baja(a.nombre);
   const tipo = /junta de dilat/.test(n) ? 'dilatacion'
-             : /remate|separador/.test(n) ? 'separador'
              : /pelda/.test(n) ? 'peldano'
-             : /esquiner/.test(n) ? 'esquinero'
-             : 'listelo';
+             : 'canto';
   const mat = /ac\.?\s*inox|acero inox/.test(n) ? 'acero inoxidable'
             : /alum|alu\b/.test(n) ? 'aluminio'
             : /pvc/.test(n) ? 'PVC'
             : /fibra veg/.test(n) ? 'fibra vegetal'
             : '';
   if (!mat) return null;
-  /* La medida es el ala visible del perfil, en milímetros. La ficha la
-     escribe de dos formas: «8.5 Mm» o «12X12» (ala por ala), y en el segundo
-     caso la primera es la que se ve. */
+  /* La medida es el ala visible del perfil, en milímetros. La ficha la escribe
+     de dos formas: «8.5 Mm» o «12X12» (ala por ala), y en el segundo caso la
+     primera es la que se ve.
+
+     El número tiene que venir suelto y ser plausible. Sin eso, la referencia
+     «003048.5MM» —código 00304 pegado a «8.5MM»— se leía como un perfil de
+     3,048.5 mm, tres metros de ala. Un perfil de canto va de 6 a 30 mm. */
   const t = limpia(a.nombre + ' ' + a.ref);
   let medida = null;
-  let m = t.match(/(\d+(?:\.\d+)?)\s*[Mm][Mm]/);
+  let m = t.match(/(?:^|[\s(.])(\d{1,2}(?:\.\d+)?)\s*[Mm][Mm]/);
   if (m) medida = parseFloat(m[1]);
   if (!medida) {
     m = limpia(a.nombre).match(/(?:^|\s)(\d{1,2}(?:\.\d)?)\s*[xX]\s*(\d{1,2})(?!\d)/);
     if (m) medida = parseFloat(m[1]);
   }
+  if (medida !== null && (medida < 5 || medida > 40)) medida = null;
   /* Sin medida no hay ítem: un esquinero de 8.5 mm y uno de 12 mm no son la
      misma partida, y el precio se mueve con ella. */
   if (!medida) return null;

@@ -243,11 +243,13 @@ const FAMILIAS = {
   }
 };
 
+/* El esquinero, el listelo de terminación y el remate separador hacen lo
+   mismo —rematar el canto de la cerámica— y se instalan igual. Van juntos. El
+   perfil de peldaño y la junta de dilatación no: uno protege la nariz del
+   escalón y el otro absorbe movimiento. */
 const ETIQUETA_PERFIL = {
-  esquinero: 'Esquinero de canto',
-  listelo: 'Listelo de terminación',
+  canto: 'Perfil de canto',
   peldano: 'Perfil de peldaño',
-  separador: 'Remate separador',
   dilatacion: 'Junta de dilatación'
 };
 

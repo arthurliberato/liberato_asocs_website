@@ -28,18 +28,28 @@
 /* Las familias. `ejes` son las medidas que forman parte de la identidad:
    dos artículos con distinto valor en un eje son ítems distintos. */
 const FAMILIAS = {
+  /* Un inodoro es de una pieza, de dos piezas o infantil. La forma de la taza
+     —redonda o alargada— no lo parte: es la misma partida del presupuesto y
+     cada comercio la escribe distinto. Ochoa e InnovaCentro dicen «elongado»,
+     Cima dice «alargado», y era la misma palabra abriendo dos ítems. */
   'inodoro-una-pieza': {
     cat: 'MAT-24', base: 'Inodoro de una pieza', unidad: 'unidad',
-    ejes: ['forma'], etapa: 'instalaciones', orden: 10,
-    alias: 'inodoro, taza de baño, wc, one piece',
+    ejes: [], etapa: 'instalaciones', orden: 10,
+    alias: 'inodoro, taza de baño, wc, one piece, elongado, alargado, redondo',
     esp: 'Inodoro monobloque de cerámica, tanque y taza en una sola pieza'
+  },
+  'inodoro-infantil': {
+    cat: 'MAT-24', base: 'Inodoro infantil', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 12,
+    alias: 'inodoro infantil, inodoro de niño, wc infantil',
+    esp: 'Aparato de altura reducida, para preescolar'
   },
   /* Ochoa vende las dos mitades por separado y por eso el catálogo tenía
      tanque y basineta como ítems sueltos. Cima vende el inodoro de dos piezas
      completo, que es otra partida: la que un presupuesto escribe. */
   'inodoro-dos-piezas': {
     cat: 'MAT-24', base: 'Inodoro de dos piezas', unidad: 'unidad',
-    ejes: ['forma'], etapa: 'instalaciones', orden: 15,
+    ejes: [], etapa: 'instalaciones', orden: 15,
     alias: 'inodoro de dos piezas, taza y tanque, wc dos piezas',
     esp: 'Tanque y taza como un solo aparato. Ojo al comparar: el tanque y la basineta sueltos son otras dos partidas'
   },
@@ -51,13 +61,13 @@ const FAMILIAS = {
   },
   'inodoro-basineta': {
     cat: 'MAT-24', base: 'Basineta para inodoro de dos piezas', unidad: 'unidad',
-    ejes: ['forma'], etapa: 'instalaciones', orden: 30,
+    ejes: [], etapa: 'instalaciones', orden: 30,
     alias: 'basineta, taza, cuerpo del inodoro',
     esp: 'Solo la taza. El tanque se compra aparte y es la otra mitad del inodoro'
   },
   'inodoro-fluxometro': {
     cat: 'MAT-24', base: 'Taza para fluxómetro', unidad: 'unidad',
-    ejes: ['forma'], etapa: 'instalaciones', orden: 40,
+    ejes: [], etapa: 'instalaciones', orden: 40,
     alias: 'taza de fluxómetro, inodoro comercial',
     esp: 'Taza sin tanque, para válvula de descarga. Uso comercial e institucional'
   },
@@ -162,9 +172,12 @@ const FAMILIAS = {
     cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 30, alias: 'columna de ducha, set de ducha'
   },
+  /* La barra deslizable no se presupuesta sola: es parte del conjunto de
+     ducha, igual que la columna y el sistema completo. Todo eso es un ítem. */
   'ducha-barra': {
-    cat: 'MAT-09', base: 'Barra deslizable para ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 40, alias: 'barra deslizable, riel de ducha'
+    cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 40,
+    alias: 'columna de ducha, sistema de ducha, barra deslizable, riel'
   },
   'ducha-brazo': {
     cat: 'MAT-09', base: 'Brazo de ducha', unidad: 'unidad',
@@ -173,6 +186,16 @@ const FAMILIAS = {
   'ducha-mezcladora': {
     cat: 'MAT-09', base: 'Mezcladora de ducha', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 60, alias: 'mezcladora, grifería de ducha'
+  },
+
+  /* La grifería de aparato se separa por dos cosas y nada más: para qué
+     aparato es y si tiene sensor. El número de manijas, el acabado y la línea
+     del fabricante son de la cotización, no del ítem. */
+  mezcladora: {
+    cat: 'MAT-09', base: 'Mezcladora', unidad: 'unidad',
+    ejes: ['uso', 'activacion'], etapa: 'instalaciones', orden: 55,
+    alias: 'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero',
+    esp: 'Grifería del aparato. El número de manijas y el acabado son de la cotización'
   },
   'ducha-manguera': {
     cat: 'MAT-09', base: 'Manguera para ducha teléfono', unidad: 'unidad',
@@ -183,6 +206,8 @@ const FAMILIAS = {
 /* Cómo se lee cada eje en el nombre del ítem. */
 const ETIQUETA = {
   forma:       v => v,
+  uso:         v => 'de ' + (v === 'bano' ? 'baño' : v),
+  activacion:  v => v === 'sensor' ? 'con sensor' : '',
   montaje:     v => 'de ' + v,
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',

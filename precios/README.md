@@ -135,14 +135,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,611 ítems**. De ellos, **1,335 ya llevan un precio real** de un
-comercio que lo publica; 270 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
+El catálogo tiene **1,638 ítems**. De ellos, **1,369 ya llevan un precio real** de un
+comercio que lo publica; 263 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 1,335 ítems verificados hay **3,607 cotizaciones** de **cinco comercios**.
-84 ítems tienen precio de más de uno, 19 tienen tres y seis ya tienen cuatro — entre ellos
-la funda de cemento gris, que es el precio más consultado del país.
+Detrás de esos 1,369 ítems verificados hay **3,724 cotizaciones** de **seis comercios**.
+**131 ítems tienen precio de más de uno**, 33 tienen tres y seis ya tienen cuatro — entre
+ellos la funda de cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -304,7 +304,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,335 de 1,605 ítems con precio real**. Los otros 6 del catálogo van según
+Al 09/09/2026: **1,369 de 1,632 ítems con precio real**. Los otros 6 del catálogo van según
 tarifario oficial y no llevan precio por definición, así que no cuentan.
 
 ### Levantar precios por tandas
@@ -402,7 +402,7 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**3,607 cotizaciones reales cargadas · 1,335 ítems verificados de 1,605.**
+**3,724 cotizaciones reales cargadas · 1,369 ítems verificados de 1,632.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
@@ -416,7 +416,7 @@ Dos tandas, todas de precios que los propios comercios publican:
   salieron **1,295 ítems nuevos que nacieron verificados** y **201 cotizaciones sobre ítems
   que ya existían**.
 
-Los 270 ítems restantes siguen siendo estimaciones nuestras.
+Los 263 ítems restantes siguen siendo estimaciones nuestras.
 
 Trece categorías nuevas salieron enteras de esas extracciones y llegaron verificadas
 desde el primer día:
@@ -498,6 +498,7 @@ Cada archivo responde una pregunta distinta:
 | `reglas-cima.js` | Cima: mapeo a mano en materiales, reglas en plomería, y qué es repuesto de consumidor |
 | `reglas-max.js` | Max Ferretería: mapeo a mano en cemento y adhesivos, reglas en tubo, madera, paneles y tinacos |
 | `reglas-max-electricos.js` | Max Ferretería · eléctricos: la colección más grande y la de nombres más abreviados |
+| `reglas-mc.js` | Ferretería MC: dos cotizaciones formales, con el ITBIS declarado |
 | `especificacion-banos.js` | La tabla de familias de baño, **compartida por los dos comercios** |
 | `especificacion-segtec.js` | Lo mismo para corrientes débiles |
 | `especificacion-baldosas.js` | Lo mismo para pisos, revestimientos y sus morteros |
@@ -549,7 +550,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **84 ítems con precio de más de un comercio**, 19 con tres y seis con cuatro. El
+Hoy hay **131 ítems con precio de más de un comercio**, 33 con tres y seis con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -803,6 +804,132 @@ dice— y los 27 artículos de esa familia quedan fuera.
 Con maderas, metales y eléctricos van **44 artículos de Max descartados por lo mismo**. Una
 sola pregunta al comercio los desbloquea todos.
 
+### Cuántos ítems se pueden comparar, y por qué no son más
+
+Con cinco comercios cargados solo 83 ítems tienen precio de más de uno, y eso es poco. La
+pregunta obvia es si el catálogo está partido demasiado fino. Se midió, y la respuesta es
+que **una parte sí y la mayor parte no**.
+
+#### La parte que sí: ejes que no eran especificación
+
+Tres cortes se estaban haciendo por diferencias que no son de compra, y se quitaron:
+
+- **La forma de la taza del inodoro.** «Elongado» y «alargado» son la misma palabra: Ochoa
+  e InnovaCentro escriben una y Cima la otra, y eso abría dos ítems donde hay uno. Un
+  inodoro es de una pieza, de dos piezas o infantil, y nada más. Los cuatro ítems de una
+  pieza pasaron a ser **uno con tres comercios y 60 cotizaciones**.
+- **El número de manijas de la grifería.** Monocomando, de dos manijas y de cuatro pulgadas
+  eran tres ítems. La grifería se separa por dos cosas: para qué aparato es —baño o
+  fregadero— y si tiene sensor. El acabado y la línea del fabricante son de la cotización.
+- **El conjunto de ducha.** La columna, el sistema completo y la barra deslizable son la
+  misma partida.
+
+Y un cuarto que era un error de lectura, no de criterio: el perfil de canto salía con
+medidas de «7712 mm» y «3048.5 mm» porque la expresión leía el código del artículo pegado a
+la referencia. Un perfil de canto va de 6 a 30 mm; ahora se rechaza lo que no quepa ahí.
+
+#### La parte que no: cada comercio trajo un departamento distinto
+
+Este es el número que explica todo lo demás:
+
+| | |
+|---|---|
+| Familias donde coinciden dos comercios o más | **25** |
+| Familias con un solo comercio | **118** |
+| Ítems dentro de esas 118 familias | **861** |
+
+No hay eje que quitar que los cruce: **el otro comercio sencillamente no está**. Las
+familias con más ítems sin comparar lo dicen solas:
+
+| Ítems | Único comercio | Familia |
+|---|---|---|
+| 268 | Cima | conexiones de plomería |
+| 130 | Ochoa | baldosas |
+| 35 | Cima | mangueras |
+| 31 | Max | bombillos |
+| 21 | Cima | llaves de paso |
+| 18 | Ochoa | cámaras |
+| 11 | Max | extensiones eléctricas |
+| 11 | Max | breakers |
+
+Los tres comercios venden conexiones de PVC; solo tenemos las de uno. Los tres venden
+cerámica; solo tenemos las de otro. **Lo que mueve este número no es reagrupar: es traer el
+mismo departamento de un segundo comercio.**
+
+#### Ojo con el número que se mira
+
+Agrupar bien puede **bajar** la cuenta de «ítems con más de un precio» y mejorar el
+catálogo al mismo tiempo: los cuatro inodoros de una pieza incluían dos que ya cruzaban, y
+al fundirse en uno la cuenta baja de dos a uno. El indicador que no engaña es otro:
+
+**el 22% de las cotizaciones ya cae sobre un ítem comparable** — 811 de 3,724.
+
+### Una cotización formal: 134 líneas que valieron más que 468
+
+Ferretería MC no publica precios en línea; los cotiza por escrito. Sus dos cotizaciones
+—CZ27094 y CZ27096, emitidas a nombre nuestro— trajeron 134 líneas, y de esas **51 cayeron
+sobre ítems que ya existían**. Los ítems con precio de más de un comercio pasaron de **83 a
+131 de un golpe**.
+
+Es la prueba de lo que decía la sección anterior: **lo que mueve ese número no es
+reagrupar, es cubrir el mismo departamento dos veces.** Las 468 fichas de eléctricos de Max
+sumaron un cruce; estas 134 líneas sumaron 48, porque caen justo sobre los angulares, los
+perfiles, las mallas y los accesorios de cerramiento que ya teníamos de Ochoa.
+
+#### El ITBIS deja de ser un supuesto
+
+Todas las demás fuentes son precios de mostrador en línea, y de ahí sale la nota que
+acompaña a cada cotización: «la ficha no declara ITBIS; se asume incluido». Una cotización
+formal no deja lugar a eso: trae la columna de precio, la de ITBIS y la de total.
+
+Estas 124 cotizaciones entran con **`itbis: false` porque el documento lo dice**, y el sitio
+las normaliza antes de compararlas. Se ve en el angular de 1" x 1/8": Ochoa lo publica a
+RD$ 560 con impuesto incluido y MC lo cotiza a RD$ 580 sin impuesto —RD$ 684 con él—, y la
+referencia sale de los dos números ya llevados al mismo criterio.
+
+#### El cable se vende por pie: pregunta cerrada
+
+Era el hueco abierto en las tres colecciones de Max, que no publican unidad de venta. La
+cotización de MC pone la unidad en su propia columna: **PI, pie**. Un THHN #12 a RD$ 13.68
+el pie.
+
+Con eso, los RD$ 16 del THHN #12 de Max dejan de ser un misterio: son por pie, y el orden de
+magnitud coincide. El catálogo lleva el cable por rollo de 100 pies, que es como se compra
+en obra, así que la cotización se multiplica por 100 y la nota lo deja dicho.
+
+#### Lo que una cotización real enseña sobre dónde parte un ítem
+
+Es un comercio itemizando de verdad, no una ficha de e-commerce, y confirma línea por línea
+los ejes que el catálogo ya usaba:
+
+| Lo que abre una línea nueva | Evidencia en la cotización |
+|---|---|
+| **La norma del tubo** | «TUBO PVC 1 1/2X19» aparece tres veces: SDR41 a RD$ 337.80, SDR26 a RD$ 496.60 y SCH40 a RD$ 898.00 |
+| **Drenaje o presión** | «REDUCCION BUSHING PVC 2x1/2» aparece dos veces: drenaje a RD$ 12.26, presión a RD$ 26.14 |
+| **La pared del tubo** | «PERFIL CUADRADO GALV 1 1/2x20» aparece dos veces: 1.2 mm a RD$ 642.80 y 1.6 mm a RD$ 810 |
+| **Corta o larga** | «ABRAZADERA P/MALLA 1 1/2"» aparece dos veces, CORTA y LARGA |
+
+Y lo contrario también, que es lo que costaba fijar:
+
+| Lo que NO abre una línea nueva | Evidencia |
+|---|---|
+| **El color** | El THHN se cotiza #10 blanco, #12 amarillo, #14 blanco, #2 negro. El color va en la descripción y nunca abre una línea: lo que la abre es el calibre |
+| **La marca** | La misma unión universal de 1" está cotizada con ERA y con AQUAVITA. Lo que las separa no es la marca sino la cédula: SCH80 contra SCH40 |
+
+Es exactamente el modelo del catálogo, escrito por un comercio que no lo conocía.
+
+#### Y una trampa que ya conocíamos, otra vez
+
+La copa pasante lleva dos medidas y cada comercio las escribe en el orden que quiere: Ochoa
+pone «1 1/4 x 1 1/2» y MC «1 1/2 x 1 1/4». Es la misma pieza. Ya había pasado con
+InnovaCentro; ahora las dos medidas se ordenan de menor a mayor antes de formar la clave, de
+modo que no vuelva a pasar con el próximo comercio.
+
+Diez líneas quedaron fuera, todas por lo mismo y todas dichas: siete son medidas que el
+comercio del que salió esa familia no vende —un angular de 1 1/2 x 1/8, un perfil de 4x4 en
+2.2 mm— y crearlas es trabajo del importador de esa familia, no de un mapeo. Las otras tres
+son una copa de barandal, que el catálogo no tiene.
+
 ### Nunca apuntes por código a un ítem generado
 
 El mapeo admite dos formas y la diferencia importa:
@@ -1020,8 +1147,9 @@ tienda dice 1x9. El artículo está fuera igual, porque tampoco declara la unida
 pero si algún día entra hay que preguntar el calibre primero.
 
 **Los 44 artículos de Max sin unidad de venta.** 17 de metales —clavos, alambre de amarre y
-electrodos— y 27 de eléctricos —cables y alambres—. Una pregunta al vendedor los desbloquea
-todos.
+electrodos— y 27 de eléctricos —cables y alambres—. La cotización de MC ya despejó la mitad
+de la duda: el cable se factura por pie. Falta confirmar clavos, alambre de amarre y
+electrodos, que se venden por libra o por caja.
 
 **El extractor de tornillos de Max.** «JUEG EXTRACTOR DE TORNILLOS TRUPER14512» tiene el
 enlace interno de una regleta USB: el nombre y el producto pueden no coincidir. Está fuera
@@ -1046,7 +1174,8 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 El directorio es grande porque sirve para saber a quién llamar, no solo de dónde salen los
 precios. De sus 80 entradas, **14 publican precios o tienen tienda en línea**, y solo esas
-sirven para extraer un catálogo sin pedir cotización. Cinco ya están cargadas.
+sirven para extraer un catálogo sin pedir cotización. Cinco están cargadas, más una sexta
+—Ferretería MC— que no publica precios pero sí cotiza por escrito.
 
 | | Proveedor | Cotizaciones |
 |---|---|---|
@@ -1054,6 +1183,7 @@ sirven para extraer un catálogo sin pedir cotización. Cinco ya están cargadas
 | ✔ | Ferretería Cima | 644 |
 | ✔ | InnovaCentro (La Innovación) | 351 |
 | ✔ | Max Ferretería | 352 |
+| ✔ | Ferretería MC (por cotización) | 124 |
 | ✔ | Ferremix (Grupo Alterra) | 2 |
 | | Plaza Lama, Ferretería Gigante, Würth Dominicana, Gerdau Metaldom, Cerarte, Cerámica Import, Procontratista, Segumart, SOS Protección Integral | — |
 
@@ -1066,8 +1196,10 @@ Es el campo del directorio que más se equivoca, porque un catálogo en línea n
 que un catálogo con precios. Al revisarlo con el cliente cayeron tres de dieciséis:
 
 - **Ferretería Americana** no existe. Se eliminó del directorio.
-- **Ferretería MC** tiene catálogo en línea pero sin precios; hay que pedirlos, y ya se
-  pidieron. Queda con `precios: false` y la gestión anotada en la nota.
+- **Ferretería MC** tiene catálogo en línea pero sin precios; hay que pedirlos. **Se
+  pidieron y llegaron**: dos cotizaciones formales que ya están cargadas. Queda con
+  `precios: false` porque no los publica, pero es la mejor fuente del catálogo — es la
+  única donde el ITBIS viene declarado.
 - **Cielos Acústicos** publica catálogos, no precios. Igual.
 
 Los otros trece no se pudieron comprobar desde aquí —el entorno de desarrollo no tiene

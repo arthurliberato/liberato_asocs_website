@@ -31,12 +31,16 @@
 
 const FAMILIAS = {
   /* ---- Iluminación ---- */
+  /* El formato —A60, ST19, G9— se midió y era lo que más partía el catálogo,
+     pero también lo que más cruces impedía: solo 37 de 69 fichas lo declaran,
+     y un comercio que no lo escribe nunca casaba con uno que sí. Un bombillo
+     LED de 15 W es un bombillo LED de 15 W: misma función, mismo diseño,
+     misma dimensión. El formato queda registrado como medida. */
   bombillo: {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 10,
-    ejes: ['tecnologia', 'potencia_w'], opcionales: ['formato'],
-    nombre: m => 'Bombillo ' + m.tecnologia + (m.formato ? ' ' + m.formato : '') +
-                 ' de ' + m.potencia_w + ' W',
-    esp: 'El color y la marca son de la cotización. La temperatura de color no mueve el precio',
+    ejes: ['tecnologia', 'potencia_w'],
+    nombre: m => 'Bombillo ' + m.tecnologia + ' de ' + m.potencia_w + ' W',
+    esp: 'El formato, el color y la marca son de la cotización. La temperatura de color no mueve el precio',
     alias: 'bombillo, bombilla, foco, lámpara, LED'
   },
   'panel-led': {
@@ -210,6 +214,33 @@ const FAMILIAS = {
     nombre: m => 'Cinta aislante ' + m.medida,
     esp: 'Cinta de PVC para empalmes',
     alias: 'cinta aislante, tape, cinta eléctrica'
+  },
+
+  /* ---- Cable ----
+     La unidad estuvo abierta hasta que una cotización formal la declaró: el
+     alambre se factura POR PIE. El catálogo lo lleva por rollo de 100 pies,
+     que es como se compra en obra, y la nota de cada cotización dice de dónde
+     sale la conversión. */
+  'cable-thhn': {
+    cat: 'MAT-10', unidad: 'rollo', etapa: 'instalaciones', orden: 380,
+    ejes: ['calibre'],
+    nombre: m => 'Cable THHN #' + m.calibre + ', rollo 100 pies',
+    esp: 'Conductor de cobre con aislamiento THHN. El color no cambia el precio: es el calibre',
+    alias: 'cable THHN, alambre, conductor, cobre'
+  },
+  'cable-goma': {
+    cat: 'MAT-10', unidad: 'rollo', etapa: 'instalaciones', orden: 385,
+    ejes: ['calibre', 'conductores'],
+    nombre: m => 'Cable de goma ' + m.calibre + ', ' + m.conductores + ' conductores, rollo 100 pies',
+    esp: 'Cable flexible con cubierta de goma, para alimentación de equipos',
+    alias: 'cable de goma, SO, cable flexible, encauchetado'
+  },
+  'conexion-conduit': {
+    cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 345,
+    ejes: ['tipo', 'medida'],
+    nombre: m => (m.tipo === 'codo' ? 'Codo' : m.tipo) + ' conduit de PVC ' + m.medida,
+    esp: 'Accesorio de la canalización eléctrica de PVC',
+    alias: 'codo conduit, conduit, canalización eléctrica'
   },
 
   /* ---- Extensiones ---- */

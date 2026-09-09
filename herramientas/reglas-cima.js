@@ -252,7 +252,7 @@ function clasificar(a) {
     if (/^perfiles? pvc p\s*\/\s*cera/.test(n)) {
       const m = limpia(a.nombre).match(/(\d+)\s*[xX]\s*(\d+)/);
       if (!m) { MOTIVO.valor = 'la ficha no declara la medida del perfil'; return null; }
-      return BALDOSAS_ESP.item('perfil-canto', { tipo: 'listelo', material: 'PVC', medida_mm: parseInt(m[1], 10) });
+      return BALDOSAS_ESP.item('perfil-canto', { tipo: 'canto', material: 'PVC', medida_mm: parseInt(m[1], 10) });
     }
     const tipo = tipoConexion(n);
     if (!tipo) { MOTIVO.valor = 'no se reconoce qué pieza de conexión es'; return null; }
@@ -482,23 +482,17 @@ function clasificar(a) {
 
   /* ---- Grifería ---- */
   if (cat === 'Griferia y mezcladoras') {
-    if (/^llave bano empotrar|^llave empotrar|^llave bau0 empotrar/.test(n)) {
-      const md = medidaPulg((numerosDe(a.nombre)[0] || ''));
-      if (!md) { MOTIVO.valor = 'la ficha no declara la medida de la llave'; return null; }
-      return PLOM.item('llave-empotrar', { medida: md });
-    }
+    /* La grifería se separa por dos cosas: para qué aparato es y si tiene
+       sensor. El número de manijas y el acabado son de la cotización. */
     if (/^llave bebedero/.test(n)) return PLOM.item('llave-bebedero', {});
-    if (/^llave pared multiple/.test(n)) return PLOM.item('llave-lavadero', {});
-    if (/^mezcladora frega/.test(n)) {
-      return PLOM.item('mezcladora-fregadero', { tipo: /mono/.test(n) ? 'monocomando' : 'de dos manijas' });
+    if (/^mezcladora ducha|^mezcladora de ducha|^llave bano empotrar|^llave empotrar/.test(n)) {
+      return BANOS.item('ducha-mezcladora', {});
     }
-    if (/^mezcladora lavam|^mezcladora de lavam/.test(n)) {
-      const tipo = /mono/.test(n) ? 'monocomando' : /\b4\b|cuatro/.test(n) ? 'de 4 pulgadas' : 'de dos manijas';
-      return PLOM.item('mezcladora-lavamanos', { tipo: tipo });
+    if (/^mezcladora|^llave|^grifo|^grifer/.test(n)) {
+      const uso = /frega|lavadero|jardin|manguera|pared multiple|cocina/.test(n) ? 'fregadero' : 'bano';
+      const act = /sensor|electronic|automatic/.test(n) ? 'sensor' : 'manual';
+      return BANOS.item('mezcladora', { uso: uso, activacion: act });
     }
-    if (/^mezcladora ducha|^mezcladora de ducha/.test(n)) return BANOS.item('ducha-mezcladora', {});
-    if (/^llave lavamanos|^llave lavamano/.test(n)) return PLOM.item('llave-lavamanos', {});
-    if (/^llave lavadero|^llave jardin|^llave manguera/.test(n)) return PLOM.item('llave-lavadero', {});
     MOTIVO.valor = 'pieza de grifería que la ficha no describe lo bastante';
     return null;
   }
@@ -523,10 +517,10 @@ function clasificar(a) {
   if (cat === 'Sanitarios') {
     if (/^inodoro/.test(n)) {
       if (/1\s*pza|1\s*pieza|una pieza|monopieza/.test(n)) {
-        return BANOS.item('inodoro-una-pieza', { forma: /elongad|alargad/.test(n) ? 'alargado' : 'redondo' });
+        return BANOS.item('inodoro-una-pieza', {});
       }
       if (/2\s*pieza|dos pieza/.test(n)) {
-        return BANOS.item('inodoro-dos-piezas', { forma: /elongad|alargad/.test(n) ? 'alargado' : 'redondo' });
+        return BANOS.item('inodoro-dos-piezas', {});
       }
       /* «INODORO BLANCO CON TAPA» sin más: el comercio no dice si es de una o
          de dos piezas, y son dos partidas con precios distintos. */

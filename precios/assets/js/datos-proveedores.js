@@ -102,8 +102,8 @@
   p('Ferretería MC', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12','MAT-14'],
-    zonas:['gsd'], web:'mc.com.do', precios:false,
-    nota:'Catálogo en línea sin precios: hay que pedirlos. Departamento de terminación: cerámica de piso y pared, porcelanato y molduras. Lista de precios solicitada, pendiente de respuesta.'
+    zonas:['gsd'], web:'mc.com.do', precios:false, tel:'809-565-5797', email:'ferreteriamc@gmail.com',
+    nota:'Mercantil del Caribe, S.A.S., av. John F. Kennedy km 8½. No publica precios en línea: cotiza por escrito, y su cotización trae el ITBIS en columna aparte. Es la única fuente del catálogo donde el impuesto es un dato y no un supuesto.'
   });
   p('Ferretería Gigante', {
     tipo:'cadena', canal:'detallista',
