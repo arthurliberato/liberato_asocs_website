@@ -337,6 +337,105 @@
   }
 
 
+
+  /* =========================================================
+     FILA DE FILTROS EN UNA SOLA LÍNEA
+     Se muestran las etapas que caben y el resto pasa a un menú
+     desplegable, para que la barra no ocupe media pantalla.
+     ========================================================= */
+
+  function cerrarMenuChips() {
+    $$('.chip-menu').forEach(function (m) { m.hidden = true; });
+    $$('.chip-mas').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+  }
+
+  function compactarChips(cont) {
+    if (!cont) return;
+    var mas = $('.chip-mas', cont);
+    var menu = $('.chip-menu', cont);
+    if (!mas || !menu) return;
+
+    /* El menú es hijo del contenedor y sus opciones también son .chip, así
+       que solo cuentan los hijos directos de la fila. */
+    var chips = $$(':scope > .chip:not(.chip-mas)', cont);
+    if (!chips.length) return;
+
+    chips.forEach(function (c) { c.hidden = false; });
+    mas.hidden = false;
+    mas.textContent = '+0';
+
+    var base = cont.firstElementChild.offsetTop;
+    var ocultos = [];
+
+    /* Se ocultan desde el final hasta que el botón del menú vuelva a la
+       primera línea. El filtro activo nunca se oculta: si está aplicado,
+       tiene que verse. */
+    for (var i = chips.length - 1; i >= 0; i--) {
+      if (mas.offsetTop <= base + 2) break;
+      if (chips[i].getAttribute('aria-pressed') === 'true') continue;
+      chips[i].hidden = true;
+      ocultos.unshift(chips[i]);
+      mas.textContent = '+' + ocultos.length;
+    }
+
+    if (!ocultos.length) {
+      mas.hidden = true;
+      menu.hidden = true;
+      menu.innerHTML = '';
+      return;
+    }
+
+    mas.textContent = '+' + ocultos.length;
+    mas.setAttribute('aria-label', ocultos.length + ' etapas más');
+    mas.title = ocultos.map(function (c) { return c.textContent; }).join(' · ');
+    menu.innerHTML = ocultos.map(function (c) {
+      return '<button class="chip" type="button" data-etapa="' + esc(c.getAttribute('data-etapa')) +
+        '" aria-pressed="' + c.getAttribute('aria-pressed') + '">' + esc(c.textContent) + '</button>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function (e) {
+    var mas = e.target.closest('.chip-mas');
+    if (mas) {
+      var menu = $('.chip-menu', mas.parentNode);
+      var abierto = mas.getAttribute('aria-expanded') === 'true';
+      cerrarMenuChips();
+      if (!abierto && menu) {
+        menu.hidden = false;
+        mas.setAttribute('aria-expanded', 'true');
+      }
+      return;
+    }
+    if (!e.target.closest('.chip-menu')) cerrarMenuChips();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') cerrarMenuChips();
+  });
+
+  function recompactarTodo() {
+    $$('.filtros').forEach(function (f) {
+      if ($('.chip-mas', f)) compactarChips(f);
+    });
+  }
+
+  (function recompactar() {
+    var t;
+    window.addEventListener('resize', function () {
+      window.clearTimeout(t);
+      t = window.setTimeout(recompactarTodo, 150);
+    });
+
+    /* Las tipografías cargan de forma asíncrona y cambian el ancho de los
+       chips: hay que volver a medir cuando estén listas, o el cálculo se
+       hace sobre la fuente de reserva y sobran o faltan chips. */
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(recompactarTodo);
+    } else {
+      window.addEventListener('load', recompactarTodo);
+    }
+  })();
+
   /* =========================================================
      MIS PROVEEDORES
      Un visitante que ya trabaja con ciertos proveedores puede
@@ -1031,7 +1130,9 @@
       chipsEtapa.innerHTML = '<span class="chip-group-label">Etapa</span>' +
         CAT.etapas.map(function (e) {
           return '<button class="chip" type="button" data-etapa="' + esc(e.codigo) + '" aria-pressed="false">' + esc(e.nombre) + '</button>';
-        }).join('');
+        }).join('') +
+        '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-etapa-menu" hidden></button>' +
+        '<div class="chip-menu" id="chips-etapa-menu" hidden></div>';
     }
 
     /* --- chips de gama --- */
@@ -1216,10 +1317,17 @@
         var esEtapa = chip.hasAttribute('data-etapa');
         var valor = chip.getAttribute(esEtapa ? 'data-etapa' : 'data-gama');
         var activo = chip.getAttribute('aria-pressed') === 'true';
-        $$('[' + (esEtapa ? 'data-etapa' : 'data-gama') + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-        chip.setAttribute('aria-pressed', String(!activo));
+        var attr = esEtapa ? 'data-etapa' : 'data-gama';
+        $$('[' + attr + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+        /* El mismo filtro puede estar en la fila y en el menú desplegable:
+           se marcan los dos, no solo el que se pulsó. */
+        if (!activo) {
+          $$('[' + attr + '="' + valor + '"]').forEach(function (c) { c.setAttribute('aria-pressed', 'true'); });
+        }
         if (esEtapa) estado.etapa = activo ? '' : valor;
         else estado.gama = activo ? '' : valor;
+        cerrarMenuChips();
+        compactarChips(chipsEtapa);
         pintar();
         return;
       }
@@ -1237,6 +1345,7 @@
 
     window.__pintarCatalogo = pintar;
     pintar();
+    compactarChips(chipsEtapa);
   })();
 
   /* =========================================================
