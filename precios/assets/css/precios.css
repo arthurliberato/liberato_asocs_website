@@ -302,6 +302,13 @@ table{border-collapse:collapse;width:100%}
 .tabla td{padding:.8rem 1rem;vertical-align:top}
 .item-nombre{font-weight:500;color:var(--ink);display:block}
 .item-esp{display:block;font-size:.82rem;color:var(--ink-mute);margin-top:.15rem;max-width:46ch}
+/* Qué cubre el precio: sin esto dos cotizaciones del mismo ítem no se comparan. */
+.item-alcance{
+  display:inline-block;font-size:.78rem;color:var(--navy);margin-top:.25rem;
+  background:var(--blue-50);border:1px solid var(--blue-200);border-radius:var(--r-sm);
+  padding:.08rem .4rem;max-width:46ch;
+}
+.detalle-alcance{color:var(--navy);text-transform:none;letter-spacing:0;font-weight:500}
 .item-cod{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;color:var(--ink-mute);white-space:nowrap}
 .precio{font-family:Jost,sans-serif;font-weight:600;font-size:1.02rem;color:var(--navy);white-space:nowrap}
 .precio-rango{display:block;font-size:.79rem;color:var(--ink-mute);font-weight:400;margin-top:.1rem;white-space:nowrap}

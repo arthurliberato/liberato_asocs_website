@@ -1155,7 +1155,7 @@
         if (estado.etapa && it.etapa !== estado.etapa) return false;
         if (estado.gama && it.gama !== estado.gama) return false;
         if (!q.length) return true;
-        var heno = normaliza([it.nombre, it.codigo, it.esp, it.unidad, nombreCat(it.cat)].join(' '));
+        var heno = normaliza([it.nombre, it.codigo, it.esp, it.alias, it.unidad, nombreCat(it.cat)].join(' '));
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
       });
     }
@@ -1227,6 +1227,7 @@
           '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
                 ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
+              (it.alcance ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
               (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
           '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
               '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +

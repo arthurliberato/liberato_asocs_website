@@ -14,6 +14,8 @@
        etapa:  'estructura',                        // etapa de obra
        gama:   'estandar',                          // economica | estandar | premium
        origen: 'nacional',                          // nacional | importado
+       alcance:'Material puesto en obra',           // qué cubre el precio
+       alias:  '94 libras, saco de cemento',        // como lo llama el mercado
        itbis:  true,                                // el precio ya incluye el 18%
        estado: 'estimado'                           // estimado | verificado | tarifario
      })
@@ -57,6 +59,13 @@
       fuente:  o.fuente || 'Estimación de arranque — pendiente de cotización',
       fecha:   o.fecha || '2026-09',
       nota:    o.nota || '',
+      /* Qué cubre el precio. Sin esto, dos precios del mismo ítem no se
+         pueden comparar: un hormigón «solo puesto en obra» y otro «con
+         bombeo y colocación» no son el mismo número. */
+      alcance: o.alcance || '',
+      /* Cómo lo llama el mercado. El buscador también busca aquí, para que
+         «94 libras» encuentre la funda de 42.5 kg. */
+      alias:   o.alias || '',
       ref: ref, min: min, max: max
     });
   }
@@ -70,12 +79,26 @@
   it('MAT-01', 'Caliche / material de préstamo', 'm³', 650, 500, 850, {esp:'Relleno compactable', etapa:'movimiento-tierra', gama:'economica'});
   it('MAT-01', 'Piedra bola para mampostería', 'm³', 1450, 1200, 1800, {esp:'Muros de contención y cimientos', etapa:'cimentacion'});
   it('MAT-01', 'Polvo de piedra', 'm³', 1080, 900, 1350, {esp:'Base y sub-base', etapa:'movimiento-tierra'});
+  it('MAT-01', 'Arena fina de pañete', 'm³', 1320, 1080, 1650, {esp:'Arena azul cernida para pañete y fino', etapa:'terminacion', alias:'arena azul'});
+  it('MAT-01', 'Arena triturada lavada', 'm³', 1250, 1020, 1560, {esp:'De trituración, lavada', etapa:'estructura'});
+  it('MAT-01', 'Granzote grueso', 'm³', 820, 650, 1050, {esp:'Subproducto de trituración, para relleno y base', etapa:'movimiento-tierra', gama:'economica'});
+  it('MAT-01', 'Granzote fino o gravillita', 'm³', 880, 700, 1120, {esp:'Fracción fina, base y sub-base', etapa:'movimiento-tierra', gama:'economica'});
+  it('MAT-01', 'Cascajo de mina', 'm³', 560, 420, 740, {esp:'Precio en mina', etapa:'movimiento-tierra', gama:'economica', alcance:'En mina, sin transporte'});
+  it('MAT-01', 'Material de base triturado', 'm³', 980, 780, 1250, {esp:'Precio en mina', etapa:'movimiento-tierra', alcance:'En mina, sin transporte'});
+  it('MAT-01', 'Piedra para muro de gaviones', 'm³', 1450, 1150, 1850, {esp:'Precio en mina', etapa:'exteriores', alcance:'En mina, sin transporte'});
+  it('MAT-01', 'Agua para hormigones y morteros', 'galón', 3.5, 2.5, 5, {esp:'Agua apta para mezcla', etapa:'estructura'});
+  it('MAT-01', 'Camión de agua de 1,200 galones', 'unidad', 4800, 3600, 6500, {esp:'Suministro de agua a obra', etapa:'preliminares', alcance:'Puesto en obra'});
   it('MAT-01', 'Viaje de arena lavada, 16 m³', 'viaje', 17500, 14500, 21000, {esp:'Incluye transporte en volquete', etapa:'estructura'});
   it('MAT-01', 'Viaje de grava 3/4", 16 m³', 'viaje', 19800, 16500, 24000, {esp:'Incluye transporte en volquete', etapa:'estructura'});
 
   /* ============ MAT-02 · Cemento, morteros, pegamentos y aditivos ============ */
-  it('MAT-02', 'Cemento gris portland, funda 42.5 kg', 'funda', 455, 425, 500, {esp:'Portland mixto tipo IP, NORDOM 2', etapa:'estructura'});
+  it('MAT-02', 'Cemento gris portland, funda 42.5 kg', 'funda', 455, 425, 500, {esp:'Portland mixto tipo IP, NORDOM 2', etapa:'estructura', alias:'94 libras, 94 lbs, saco de cemento, funda de cemento'});
   it('MAT-02', 'Cemento blanco, funda 25 kg', 'funda', 1250, 1050, 1500, {esp:'Para terminación y derretido', etapa:'terminacion', origen:'importado'});
+  it('MAT-02', 'Cemento blanco, funda 40 kg', 'funda', 1850, 1500, 2300, {esp:'Presentación de 40 kg', etapa:'terminacion', origen:'importado'});
+  it('MAT-02', 'Cal hidratada, funda 20 kg', 'funda', 320, 260, 400, {esp:'Presentación de 20 kg', etapa:'terminacion', gama:'economica'});
+  it('MAT-02', 'Mortero para pegar bloques, funda 42.5 kg', 'funda', 465, 390, 560, {esp:'Predosificado para mampostería', etapa:'mamposteria', alias:'94 libras, pega bloques'});
+  it('MAT-02', 'Yeso escayola E-30, funda 25 kg', 'funda', 620, 500, 780, {esp:'Para molduras y plafones de yeso', etapa:'terminacion'});
+  it('MAT-02', 'Pegamento de cerámica blanco, funda 22.7 kg', 'funda', 720, 590, 900, {esp:'Blanco, para piezas claras', etapa:'pisos', alias:'50 libras'});
   it('MAT-02', 'Cal hidratada, funda 25 kg', 'funda', 390, 330, 470, {esp:'Para morteros de pañete', etapa:'terminacion', gama:'economica'});
   it('MAT-02', 'Mortero predosificado de pañete, funda 40 kg', 'funda', 440, 380, 520, {esp:'Listo para mezclar con agua', etapa:'terminacion'});
   it('MAT-02', 'Mortero autonivelante, funda 20 kg', 'funda', 1180, 950, 1450, {esp:'Nivelación de pisos antes de revestir', etapa:'pisos', origen:'importado'});
@@ -87,14 +110,23 @@
   it('MAT-02', 'Epóxico de anclaje, cartucho 585 ml', 'cartucho', 3100, 2400, 3900, {esp:'Anclaje químico de varilla', etapa:'estructura', gama:'premium', origen:'importado'});
 
   /* ===================== MAT-03 · Hormigón premezclado ===================== */
-  it('MAT-03', 'Hormigón premezclado 180 kg/cm²', 'm³', 6300, 5700, 7100, {esp:'F\'c 180, revenimiento 4"-6"', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Hormigón premezclado 210 kg/cm²', 'm³', 6800, 6200, 7600, {esp:'F\'c 210 — el más usado en vivienda', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Hormigón premezclado 240 kg/cm²', 'm³', 7300, 6700, 8200, {esp:'F\'c 240', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Hormigón premezclado 280 kg/cm²', 'm³', 7900, 7200, 8800, {esp:'F\'c 280', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Hormigón premezclado 350 kg/cm²', 'm³', 8900, 8100, 9900, {esp:'F\'c 350, elementos de alta exigencia', etapa:'estructura', gama:'premium', itbis:false});
-  it('MAT-03', 'Hormigón bombeable 210 kg/cm²', 'm³', 7400, 6700, 8300, {esp:'Diseñado para bombeo', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Servicio de bombeo de hormigón', 'm³', 1150, 900, 1500, {esp:'Bomba estacionaria o pluma; verificar mínimo por jornada', etapa:'estructura', itbis:false});
-  it('MAT-03', 'Relleno fluido (mortero de relleno)', 'm³', 5200, 4500, 6000, {esp:'Relleno de zanjas y vacíos', etapa:'movimiento-tierra', itbis:false});
+  /* El alcance es decisivo aquí: un precio «puesto en obra» y otro «con
+     bombeo y colocación» no son comparables aunque sean la misma
+     resistencia. Se declara en cada ítem. */
+  var PUESTO = 'Hormigón puesto en obra; no incluye bombeo ni colocación';
+  it('MAT-03', 'Hormigón premezclado 180 kg/cm²', 'm³', 6300, 5700, 7100, {esp:'F\'c 180, revenimiento 4"-6"', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 210 kg/cm²', 'm³', 6800, 6200, 7600, {esp:'F\'c 210 — el más usado en vivienda', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 240 kg/cm²', 'm³', 7300, 6700, 8200, {esp:'F\'c 240', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 280 kg/cm²', 'm³', 7900, 7200, 8800, {esp:'F\'c 280', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 300 kg/cm²', 'm³', 8300, 7500, 9300, {esp:'F\'c 300', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 350 kg/cm²', 'm³', 8900, 8100, 9900, {esp:'F\'c 350, elementos de alta exigencia', etapa:'estructura', gama:'premium', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 400 kg/cm²', 'm³', 9700, 8800, 10900, {esp:'F\'c 400, uso industrial', etapa:'estructura', gama:'premium', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 450 kg/cm²', 'm³', 10500, 9500, 11800, {esp:'F\'c 450, uso industrial', etapa:'estructura', gama:'premium', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón premezclado 500 kg/cm²', 'm³', 11400, 10300, 12800, {esp:'F\'c 500, uso industrial', etapa:'estructura', gama:'premium', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Hormigón bombeable 210 kg/cm²', 'm³', 7400, 6700, 8300, {esp:'Diseñado para bombeo', etapa:'estructura', itbis:false, alcance:PUESTO});
+  it('MAT-03', 'Bombeo y colocación de hormigón', 'm³', 1150, 900, 1500, {esp:'Bomba estacionaria o de pluma; verificar mínimo por jornada', etapa:'estructura', itbis:false, alcance:'Solo el servicio, sin el hormigón'});
+  it('MAT-03', 'Instalación de bomba de hormigón', 'unidad', 18000, 12000, 26000, {esp:'Cargo único de movilización y montaje del equipo', etapa:'estructura', itbis:false, alcance:'Cargo único, aparte del m³ bombeado', nota:'Se paga una vez por jornada de vaciado, además del bombeo por m³.'});
+  it('MAT-03', 'Relleno fluido (mortero de relleno)', 'm³', 5200, 4500, 6000, {esp:'Relleno de zanjas y vacíos', etapa:'movimiento-tierra', itbis:false, alcance:PUESTO});
 
   /* ================= MAT-04 · Acero de refuerzo y metales ================= */
   it('MAT-04', 'Varilla corrugada 3/8" x 20 pies', 'unidad', 335, 300, 385, {esp:'Grado 60 · ASTM A615 / RTD 458', etapa:'estructura'});
@@ -103,8 +135,25 @@
   it('MAT-04', 'Varilla corrugada 3/4" x 20 pies', 'unidad', 1340, 1200, 1520, {esp:'Grado 60 · ASTM A615', etapa:'estructura'});
   it('MAT-04', 'Varilla corrugada 1" x 20 pies', 'unidad', 2380, 2150, 2700, {esp:'Grado 60 · ASTM A615', etapa:'estructura'});
   it('MAT-04', 'Varilla corrugada 1/2" x 30 pies', 'unidad', 885, 800, 1010, {esp:'Grado 60, largo comercial 30\'', etapa:'estructura'});
-  it('MAT-04', 'Malla electrosoldada 6x6 10/10', 'plancha', 2650, 2300, 3100, {esp:'Plancha 2.20 x 6.00 m', etapa:'estructura'});
-  it('MAT-04', 'Alambre dulce de amarre', 'lb', 62, 52, 78, {esp:'Calibre 16 para amarre de acero', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada 6x6 10/10, plancha', 'plancha', 2650, 2300, 3100, {esp:'Plancha 2.20 x 6.00 m', etapa:'estructura', alias:'malla de piso'});
+  /* El mercado la maneja en rollo de 2.4 x 40 m, por calibre del alambre
+     (D2.3 a D2.9) y retícula (10x10, 15x15, 20x20). Un solo ítem no basta. */
+  it('MAT-04', 'Malla electrosoldada D2.3, retícula 10 x 10, rollo', 'rollo', 24500, 20000, 30000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.3, retícula 15 x 15, rollo', 'rollo', 18500, 15000, 23000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.3, retícula 20 x 20, rollo', 'rollo', 15000, 12000, 19000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.5, retícula 10 x 10, rollo', 'rollo', 28500, 23000, 35000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.5, retícula 15 x 15, rollo', 'rollo', 21500, 17500, 27000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.5, retícula 20 x 20, rollo', 'rollo', 17500, 14000, 22000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.7, retícula 10 x 10, rollo', 'rollo', 32500, 26000, 40000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.7, retícula 15 x 15, rollo', 'rollo', 24500, 20000, 30000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.9, retícula 10 x 10, rollo', 'rollo', 37000, 30000, 46000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.9, retícula 15 x 15, rollo', 'rollo', 28000, 22500, 35000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  it('MAT-04', 'Malla electrosoldada D2.9, retícula 20 x 20, rollo', 'rollo', 22500, 18000, 28000, {esp:'Rollo 2.40 x 40 m', etapa:'estructura'});
+  /* La varilla también se compra por peso cuando se cubica una estructura. */
+  it('MAT-04', 'Varilla corrugada, por quintal', 'qq', 4450, 3800, 5300, {esp:'Grado 40-60, de 3/8" a 1", largos de 20 a 30 pies', etapa:'estructura', alias:'acero por quintal, varilla por peso'});
+  it('MAT-04', 'Alambre dulce de amarre, calibre 16', 'lb', 62, 52, 78, {esp:'Amarre general de acero de refuerzo', etapa:'estructura'});
+  it('MAT-04', 'Alambre galvanizado calibre 18, para varillas', 'lb', 78, 62, 98, {esp:'Amarre de acero de refuerzo', etapa:'estructura'});
+  it('MAT-04', 'Alambre galvanizado calibre 14, para encofrados', 'lb', 72, 58, 92, {esp:'Amarre de formaleta', etapa:'estructura'});
   it('MAT-04', 'Angular 1 1/2" x 1/8" x 20 pies', 'unidad', 1480, 1250, 1780, {esp:'Perfil L de acero negro', etapa:'estructura'});
   it('MAT-04', 'Tubo estructural cuadrado 2" x 2" x 1/8" x 20 pies', 'unidad', 3950, 3400, 4600, {esp:'Tubería estructural negra', etapa:'estructura'});
   it('MAT-04', 'Plancha galvanizada calibre 22, 4 x 8 pies', 'plancha', 4200, 3600, 5000, {esp:'Lámina lisa galvanizada', etapa:'estructura', origen:'importado'});
@@ -130,6 +179,14 @@
   it('MAT-06', 'Plywood corriente 1/2", 4 x 8 pies', 'plancha', 1680, 1400, 2050, {esp:'Uso general y encofrado sencillo', etapa:'estructura', origen:'importado', gama:'economica'});
   it('MAT-06', 'Plywood corriente 3/4", 4 x 8 pies', 'plancha', 2650, 2200, 3200, {esp:'Uso general', etapa:'estructura', origen:'importado'});
   it('MAT-06', 'Plywood fenólico de formaleta 5/8" (Film Face)', 'plancha', 3950, 3300, 4800, {esp:'Cara fenólica, varios usos de encofrado', etapa:'estructura', origen:'importado', gama:'premium'});
+  it('MAT-06', 'Plywood 3/4 pulgada dos caras, americano', 'plancha', 3200, 2650, 3900, {esp:'Ambas caras aptas para vista, 4 x 8 pies', etapa:'terminacion', origen:'importado'});
+  it('MAT-06', 'Plywood 3/4 pulgada una cara, americano', 'plancha', 2850, 2350, 3500, {esp:'Una cara apta para vista, 4 x 8 pies', etapa:'terminacion', origen:'importado'});
+  it('MAT-06', 'Plywood 3/4 pulgada dos caras, brasileño', 'plancha', 2600, 2150, 3200, {esp:'Ambas caras aptas para vista, 4 x 8 pies', etapa:'terminacion', origen:'importado'});
+  it('MAT-06', 'Madera bruta de pino americano', 'pie tablar', 82, 66, 105, {esp:'Sin cepillar', etapa:'estructura', origen:'importado'});
+  it('MAT-06', 'Madera cepillada de pino americano', 'pie tablar', 118, 95, 150, {esp:'Cepillada en las cuatro caras', etapa:'terminacion', origen:'importado'});
+  it('MAT-06', 'Madera bruta de pino chileno', 'pie tablar', 74, 60, 95, {esp:'Sin cepillar', etapa:'estructura', origen:'importado', gama:'economica'});
+  it('MAT-06', 'Madera cepillada de pino chileno', 'pie tablar', 105, 84, 135, {esp:'Cepillada en las cuatro caras', etapa:'terminacion', origen:'importado'});
+  it('MAT-06', 'Madera bruta de pino americano tratado', 'pie tablar', 112, 90, 145, {esp:'Tratada para intemperie', etapa:'exteriores', origen:'importado'});
   it('MAT-06', 'Madera tratada 2" x 4" x 12 pies', 'unidad', 1180, 950, 1480, {esp:'Tratada para intemperie', etapa:'exteriores', origen:'importado'});
   it('MAT-06', 'Desmoldante para formaleta', 'galón', 1180, 950, 1500, {esp:'Facilita el desencofrado', etapa:'estructura'});
 
@@ -155,6 +212,7 @@
   it('MAT-08', 'Granito fundido / terrazo', 'm²', 1950, 1500, 2600, {esp:'Fundido y pulido en sitio', etapa:'pisos'});
   it('MAT-08', 'Piso vinílico SPC con click', 'm²', 1480, 1150, 1950, {esp:'Núcleo rígido, resistente al agua', etapa:'pisos', origen:'importado'});
   it('MAT-08', 'Deck de WPC para exteriores', 'm²', 3400, 2700, 4400, {esp:'Madera plástica, terrazas y piscinas', etapa:'exteriores', gama:'premium', origen:'importado'});
+  it('MAT-08', 'Clip con tornillo para deck sintético', 'unidad', 42, 32, 58, {esp:'Fijación oculta entre tablas', etapa:'exteriores', origen:'importado'});
   it('MAT-08', 'Zócalo de porcelanato 8 cm', 'ml', 240, 180, 330, {esp:'A juego con el piso', etapa:'pisos'});
   it('MAT-08', 'Tope de granito natural instalado', 'pie lineal', 4400, 3400, 5800, {esp:'Espesor 2 cm, incluye pulido de canto', etapa:'terminacion', gama:'premium', origen:'importado'});
   it('MAT-08', 'Tope de cuarzo instalado', 'pie lineal', 6800, 5200, 8900, {esp:'Cuarzo de ingeniería', etapa:'terminacion', gama:'premium', origen:'importado'});
@@ -238,6 +296,12 @@
   it('MAT-14', 'Sellador de poliuretano, tubo', 'tubo', 850, 650, 1150, {esp:'Juntas estructurales y fachadas', etapa:'terminacion', gama:'premium', origen:'importado'});
   it('MAT-14', 'Disco de corte de metal 4 1/2"', 'unidad', 145, 100, 210, {esp:'Para esmeriladora angular', etapa:'estructura'});
   it('MAT-14', 'Pegamento PVC, 1/4 galón', 'unidad', 780, 600, 1050, {esp:'Para tubería a presión y drenaje', etapa:'instalaciones'});
+  it('MAT-14', 'Clavo corriente con cabeza', 'lb', 78, 60, 100, {esp:'De acero dulce, uso general', etapa:'estructura', alias:'clavo común'});
+  it('MAT-14', 'Clavo de acero', 'lb', 145, 115, 185, {esp:'Endurecido, para fijar en hormigón', etapa:'estructura'});
+  it('MAT-14', 'Clavo de zinc para techo', 'lb', 130, 100, 170, {esp:'Con arandela, para lámina de zinc', etapa:'techos'});
+  it('MAT-14', 'Soga de nylon', 'lb', 265, 210, 340, {esp:'De 1/16 a 1 pulgada de diámetro', etapa:'preliminares'});
+  it('MAT-14', 'Hilo de gangorra, cono', 'unidad', 185, 145, 240, {esp:'Para trazado y alineación de mampostería', etapa:'mamposteria', alias:'hilo de albañil, cordel'});
+  it('MAT-14', 'Hoja de segueta', 'unidad', 68, 50, 92, {esp:'Para corte manual de metal', etapa:'estructura'});
   it('MAT-14', 'Malla de seguridad naranja, rollo 50 m', 'rollo', 2400, 1850, 3200, {esp:'Delimitación de obra', etapa:'preliminares'});
 
   /* ================= MAT-15 · Climatización y ventilación ================= */
@@ -328,10 +392,20 @@
   /* ================= MOS-05 · Servicios de obra y logística ================= */
   it('MOS-05', 'Demolición de mampostería', 'm²', 850, 600, 1200, {esp:'Incluye acopio, no incluye bote', etapa:'preliminares', itbis:false});
   it('MOS-05', 'Movimiento de tierra (corte y nivelación)', 'm³', 480, 350, 700, {esp:'Con equipo, en sitio', etapa:'movimiento-tierra', itbis:false});
-  it('MOS-05', 'Bote de escombros', 'viaje', 6500, 4800, 9000, {esp:'Volquete, incluye vertedero autorizado', etapa:'preliminares', itbis:false});
-  it('MOS-05', 'Flete de materiales dentro del Gran Santo Domingo', 'viaje', 4800, 3500, 7000, {esp:'Camión mediano', etapa:'preliminares', itbis:false});
+  /* Cargar, botar y transportar son tres cosas distintas y se contratan por
+     separado. Y el transporte se paga por distancia y sobre volumen
+     esponjado, no sobre el volumen teórico de la excavación. */
+  it('MOS-05', 'Bote de escombros con carga a mano, camión de 6 m³', 'viaje', 7800, 5800, 10500, {esp:'Incluye cargar a mano, transportar y depositar en vertedero autorizado', etapa:'preliminares', itbis:false, alcance:'Carga + transporte + disposición'});
+  it('MOS-05', 'Bote de escombros sin carga, camión de 6 m³', 'viaje', 6500, 4800, 9000, {esp:'El material ya viene cargado; incluye vertedero autorizado', etapa:'preliminares', itbis:false, alcance:'Transporte + disposición'});
+  it('MOS-05', 'Carga de material con equipo', 'm³ esponjado', 320, 230, 450, {esp:'Solo cargar al camión, con retro o minicargador', etapa:'movimiento-tierra', itbis:false, alcance:'Solo carga'});
+  it('MOS-05', 'Transporte en volquete, arranque de 0 a 5 km', 'm³ esponjado', 420, 300, 600, {esp:'Tarifa base del viaje corto; solo transporte', etapa:'movimiento-tierra', itbis:false, alcance:'Solo transporte', alias:'flete corto, acarreo'});
+  it('MOS-05', 'Transporte en volquete, por kilómetro adicional', 'm³·km', 38, 26, 55, {esp:'A partir del quinto kilómetro; solo transporte', etapa:'movimiento-tierra', itbis:false, alcance:'Solo transporte', nota:'Se multiplica por los kilómetros que excedan los 5 del arranque.'});
+  it('MOS-05', 'Flete de materiales dentro del Gran Santo Domingo', 'viaje', 4800, 3500, 7000, {esp:'Camión mediano', etapa:'preliminares', itbis:false, alcance:'Solo transporte'});
   it('MOS-05', 'Fumigación y control de termitas', 'm²', 180, 130, 260, {esp:'Tratamiento de suelo previo al vaciado', etapa:'preliminares', itbis:false});
   it('MOS-05', 'Limpieza final de obra', 'm²', 220, 160, 320, {esp:'Entrega lista para habitar', etapa:'limpieza', itbis:false});
+  it('MOS-05', 'Letrero de obra: arte, impresión y colocación de vinil', 'unidad', 9500, 7000, 13500, {esp:'Diseño, impresión y montaje del vinil', etapa:'preliminares', itbis:false, alcance:'Solo el vinil, sin estructura'});
+  it('MOS-05', 'Letrero de obra: estructura metálica', 'unidad', 16500, 12000, 23000, {esp:'Bastidor y anclaje del letrero', etapa:'preliminares', itbis:false, alcance:'Solo la estructura, sin el vinil'});
+  it('MOS-05', 'Fumigación de excavaciones y fundaciones', 'm²', 165, 120, 240, {esp:'Tratamiento del terreno antes de vaciar', etapa:'cimentacion', itbis:false});
   it('MOS-05', 'Vigilancia de obra', 'mes', 32000, 25000, 45000, {esp:'Un puesto de 12 horas', etapa:'preliminares', itbis:false});
   it('MOS-05', 'Alquiler de baño portátil', 'mes', 9500, 7000, 13000, {esp:'Incluye mantenimiento semanal', etapa:'preliminares', itbis:false});
 

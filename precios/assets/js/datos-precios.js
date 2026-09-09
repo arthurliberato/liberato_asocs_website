@@ -285,7 +285,7 @@
      --------------------------------------------------------- */
 
   var ENCABEZADOS = [
-    'Código', 'Ítem', 'Especificación', 'Categoría', 'Unidad',
+    'Código', 'Ítem', 'Especificación', 'Alcance', 'Categoría', 'Unidad',
     'Proveedor', 'Precio', 'Mínimo', 'Máximo', 'Moneda',
     'ITBIS incluido', 'Estado', 'Fecha', 'Fuente'
   ];
@@ -318,7 +318,7 @@
     };
 
     filas.push([
-      item.codigo, item.nombre, item.esp, nombreCat(item.cat), item.unidad,
+      item.codigo, item.nombre, item.esp, item.alcance, nombreCat(item.cat), item.unidad,
       item.filtrado ? 'Referencia de sus proveedores' : 'Referencia del mercado',
       num(precio(item.ref, item)), num(precio(item.min, item)), num(precio(item.max, item)),
       item.unidad === '%' ? '%' : 'DOP',
@@ -333,7 +333,7 @@
 
     exportables.forEach(function (q) {
       filas.push([
-        item.codigo, item.nombre, item.esp, nombreCat(item.cat), q.unidad,
+        item.codigo, item.nombre, item.esp, item.alcance, nombreCat(item.cat), q.unidad,
         q.proveedor.nombre,
         num(precio(q.precioNormalizado, item)), '', '',
         item.unidad === '%' ? '%' : 'DOP',
@@ -443,7 +443,8 @@
 
     return '<div class="detalle">' +
         '<div class="detalle-cab">' +
-          '<p class="detalle-titulo">Precio por proveedor · ' + esc(item.codigo) + ' · ' + esc(nombreCat(item.cat)) + '</p>' +
+          '<p class="detalle-titulo">Precio por proveedor · ' + esc(item.codigo) + ' · ' + esc(nombreCat(item.cat)) +
+            (item.alcance ? ' · <span class="detalle-alcance">' + esc(item.alcance) + '</span>' : '') + '</p>' +
           '<button class="btn btn-ghost btn-mini" type="button" data-copiar-item="' + esc(item.codigo) + '">' +
             'Copiar ítem completo</button>' +
         '</div>' +
@@ -480,7 +481,7 @@
      --------------------------------------------------------- */
 
   var ENCABEZADOS_RFQ = [
-    'Código', 'Ítem', 'Especificación', 'Categoría', 'Unidad', 'Proveedor',
+    'Código', 'Ítem', 'Especificación', 'Alcance', 'Categoría', 'Unidad', 'Proveedor',
     'Cantidad', 'Precio cotizado', 'Incluye ITBIS', 'Fecha de cotización', 'Validez', 'Notas'
   ];
 
@@ -490,7 +491,7 @@
     nombreCat = nombreCat || function (c) { return c; };
     return items.map(function (it) {
       return [
-        it.codigo, it.nombre, it.esp, nombreCat(it.cat), it.unidad, proveedor,
+        it.codigo, it.nombre, it.esp, it.alcance, nombreCat(it.cat), it.unidad, proveedor,
         '', '', '', '', '', ''
       ].map(limpiar);
     });

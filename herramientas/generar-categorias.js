@@ -227,6 +227,7 @@ function fila(it) {
   return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
       (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
+      (it.alcance ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') +
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>

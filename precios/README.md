@@ -146,6 +146,52 @@ búsquedas.
 
 ---
 
+## Dos campos que hacen comparables los precios
+
+### `alcance` — qué cubre el precio
+
+Sin esto, dos precios del mismo ítem pueden no ser comparables. Un hormigón de 210 puesto
+en obra y otro «con bombeo y colocación incluidos» son el mismo producto y precios muy
+distintos; una arena «en mina» y la misma arena puesta en obra, igual.
+
+```js
+it('MAT-03', 'Hormigón premezclado 210 kg/cm²', 'm³', 6800, 6200, 7600, {
+  alcance: 'Hormigón puesto en obra; no incluye bombeo ni colocación'
+});
+```
+
+Se muestra bajo el nombre del ítem, aparece en la ficha por proveedor y tiene su propia
+columna al copiar a Excel. Cuando dos cotizaciones tengan alcances distintos, se verá.
+
+### `alias` — cómo lo llama el mercado
+
+El catálogo dice «funda 42.5 kg»; la obra dice «94 libras». El buscador también busca en
+este campo, así que ambos nombres llegan al mismo ítem.
+
+```js
+it('MAT-02', 'Cemento gris portland, funda 42.5 kg', 'funda', 455, 425, 500, {
+  alias: '94 libras, 94 lbs, saco de cemento, funda de cemento'
+});
+```
+
+Es barato de mantener y evita el peor resultado posible de un buscador: que alguien
+escriba el nombre correcto de la calle y no encuentre nada.
+
+---
+
+## Requisito de lanzamiento
+
+**El sitio se publica cuando cada ítem tenga al menos un precio real.** Mientras tanto los
+montos son estimaciones nuestras y el sitio lo dice en todas las páginas.
+
+Para ver cuánto falta:
+
+```bash
+node -e "global.window={};['catalogo','proveedores','precios'].forEach(f=>require('./precios/assets/js/datos-'+f+'.js'));var C=window.CATALOGO;window.PRECIOS.aplicar(C,window.PROVEEDORES);var v=C.items.filter(i=>i.estado==='verificado').length;console.log(v+' de '+C.items.length+' con precio real · faltan '+(C.items.length-v));"
+```
+
+Conviene tenerlo presente al agregar ítems: cada ítem nuevo es un precio más que levantar.
+
 ## Registrar una cotización de proveedor
 
 Esta es la parte que convierte el sitio en una base de precios de verdad. Las
