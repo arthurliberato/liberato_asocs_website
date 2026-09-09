@@ -196,4 +196,68 @@ function clasificar(a) {
   return undefined;
 }
 
-module.exports = { MAPEO, FUERA, MOTIVO, regla };
+/* =========================================================
+   METALES — la colección donde la tienda no dice la unidad
+   =========================================================
+
+   Es el caso más limpio de «un precio sin unidad no es un precio». La ficha
+   deja vacío el campo de unidad de venta en toda la tienda, y en clavos,
+   alambre de amarre y electrodos —17 de 27 artículos— no se sabe si los
+   RD$ 60 son por libra, por unidad o por paquete. Asumir «por libra»
+   contaminaría la comparación contra Ochoa y Cima, que sí la declaran.
+
+   Quedan fuera los 17, con el motivo dicho. Es una pregunta corta al vendedor
+   y desbloquea media colección. */
+
+const MAPEO_METALES = {
+  /* Alambre de púas C-16 en rollo de 250 m: dos marcas en el mismo ítem, y
+     ahí aparece lo que un índice de precios existe para mostrar. Corvi a
+     RD$ 2,390 y Motto a RD$ 3,785 por la misma especificación: 58% de
+     diferencia. Vale confirmar si el calibre real o el número de púas difiere;
+     si no, es diferencia de marca pura. */
+  '0001117049': '#MAT-22|alambre-puas-16-250',   // ALAMBRE PUAS PREMIUM CORVI 250 M C-16
+  '0001007285': '#MAT-22|alambre-puas-16-250',   // ALAMBRE PUAS MOTTO C-16 250 MTS
+
+  /* Zinc de 3 x 6 pies. Ojo al presupuestar: esa área es nominal y el área
+     útil de cubierta baja entre 15% y 20% por el traslape. */
+  '0001003275': '#MAT-07|zinc-acanalado-34-3x6',       // ZINC ACAN. 3X6 C-34
+  '0001130482': '#MAT-07|zinc-translucido-3x6',        // ZINC TRANSLUCIDO BLANCO 3X6
+  '0001130481': '#MAT-07|zinc-translucido-3x6',        // ZINC TRANSLUCIDO AZUL 3X6
+
+  '0001003267': '#MAT-02|yeso-en-polvo-blanco-2-lb'   // YESO PURO 2 LBS
+};
+
+/* Familias enteras que no entran, con el motivo. */
+const FUERA_METALES = {
+  'Clavos y grapas': 'la tienda no declara la unidad de venta: no se sabe si el precio es por libra, por unidad o por paquete',
+  'Alambre de amarre galvanizado': 'la tienda no declara la unidad de venta: no se sabe si el precio es por libra, por unidad o por paquete',
+  'Electrodos de soldadura': 'la tienda no declara la unidad de venta: no se sabe si el precio es por libra, por unidad o por paquete',
+  'Perfiles de aluminio': 'la ficha no publica el largo del perfil, y sin él el precio no dice nada'
+};
+
+function reglaMetales(a) {
+  MOTIVO.valor = '';
+  const n = baja(a.nombre);
+  const fam = a.cat3;
+
+  if (FUERA_METALES[fam]) { MOTIVO.valor = FUERA_METALES[fam]; return null; }
+
+  /* Tapa de cisterna. La ficha no declara el material, pero los dos formatos
+     y los dos precios son los de las tapas de aluminio que Cima sí declara
+     —30x30 a RD$ 4,503 contra 4,745, y 24x24 a RD$ 3,313 contra 3,795—, y en
+     el país la tapa de cisterna de ese precio es de aluminio. Queda dicho aquí
+     por si alguien la encuentra de otro material. */
+  if (fam === 'Tapas de cisterna') {
+    const m = limpia(a.nombre).match(/(\d+)\s*[xX]\s*(\d+)/);
+    if (!m) { MOTIVO.valor = 'la ficha no declara la medida de la tapa'; return null; }
+    return PLOM.item('tapa-cisterna', {
+      material: 'aluminio', medida: m[1] + ' x ' + m[2] + ' pulgadas'
+    });
+  }
+
+  /* El yeso y el zinc entran por MAPEO; lo que llegue aquí es de una familia
+     sin regla. */
+  return undefined;
+}
+
+module.exports = { MAPEO, FUERA, MAPEO_METALES, FUERA_METALES, MOTIVO, regla, reglaMetales };

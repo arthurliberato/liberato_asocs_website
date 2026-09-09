@@ -551,6 +551,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-funda-40kg',
     nota: 'CEMENTO BLANCO FUNDA 40KG · artículo 001060. ' + SUPUESTO_ITBIS
   });
+  c('MAT-02-056', PROV_CIMA, 45, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yeso-2lb',
+    nota: 'YESO 2LB · artículo 7465710056045. ' + SUPUESTO_ITBIS
+  });
   c('MAT-08-177', PROV_CIMA, 390, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-5mm-100-1-2903',
     nota: 'SEPARADOR CERA 5MM 100/1 2903 · artículo 8413797029031. ' + SUPUESTO_ITBIS
@@ -678,6 +682,28 @@
   c('MAT-02-060', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cemento-blanco-puro-5-lbs',
     nota: 'CEMENTO BLANCO PURO 5 LBS · artículo 0001110292 · ref. Presentacion 5 lb (2.27 kg) · marca PURO. ' + SUPUESTO_ITBIS
+  });
+
+  /* Max Ferretería · metales */
+  c('MAT-07-023', PROV_MAX, 1050.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zinc-translucido-blanco-3x6',
+    nota: 'ZINC TRANSLUCIDO BLANCO 3X6 · artículo 0001130482 · ref. Lamina traslucida (fibra de vidrio / policarbonato) | Formato 3x6 pies (0.91 x 1.83 m) | Color Blanco. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-056', PROV_MAX, 30, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/yeso-puro-2-lbs',
+    nota: 'YESO PURO 2 LBS · artículo 0001003267 · ref. Yeso puro | Presentacion 2 lb (0.91 kg) · marca PURO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_MAX, 2390.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/alambre-puas-premium-corvi-250-m-c-16',
+    nota: 'ALAMBRE PUAS PREMIUM CORVI 250 M C-16 · artículo 0001117049 · ref. Alambre de puas Premium Corvi | Calibre 16 | Rollo de 250 metros · marca CORVI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-07-013', PROV_MAX, 275.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zinc-acan-3x6-c-34',
+    nota: 'ZINC ACAN. 3X6 C-34 · artículo 0001003275 · ref. Zinc acanalado galvanizado | Formato 3x6 pies (0.91 x 1.83 m) | Color Galvanizado natural | Calibre 34 · marca INCA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-22-014', PROV_MAX, 3785, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/alambre-puas-motto-c-16-250-mts',
+    nota: 'ALAMBRE PUAS MOTTO C-16 250 MTS. · artículo 0001007285 · ref. Alambre de puas Motto | Calibre 16 | Rollo de 250 metros · marca MOTTO. ' + SUPUESTO_ITBIS
   });
 
   /* Familias completas del catálogo de Ochoa: cada ítem nace verificado. */
@@ -5869,9 +5895,17 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-051', PROV_MAX, 3795, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-24x24',
+    nota: 'TAPA CISTERNA 24X24 · artículo 0001124802 · ref. Tapa de cisterna | Formato 24x24 pulgadas (estandar local). ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-052', PROV_CIMA, 4503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-052', PROV_MAX, 4745, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-30x30',
+    nota: 'TAPA CISTERNA 30X30 · artículo 0001124804 · ref. Tapa de cisterna | Formato 30x30 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
   c('MAT-09-053', PROV_CIMA, 3995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',

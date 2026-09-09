@@ -140,8 +140,8 @@ comercio que lo publica; 273 siguen siendo estimaciones de arranque y 6 van seg�
 y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
 páginas.
 
-Detrás de esos 1,182 ítems verificados hay **3,329 cotizaciones** de **cinco comercios**.
-80 ítems tienen precio de más de uno, 16 tienen tres y cinco ya tienen cuatro — entre ellos
+Detrás de esos 1,182 ítems verificados hay **3,337 cotizaciones** de **cinco comercios**.
+83 ítems tienen precio de más de uno, 19 tienen tres y seis ya tienen cuatro — entre ellos
 la funda de cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
@@ -401,19 +401,18 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**3,329 cotizaciones reales cargadas · 1,182 ítems verificados de 1,455.**
+**3,337 cotizaciones reales cargadas · 1,182 ítems verificados de 1,455.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
 - **08/09/2026** — 9 cotizaciones de Ferremix, Ochoa e InnovaCentro, levantadas a mano.
-- **09/09/2026** — nueve extracciones completas: el catálogo de Ochoa en materiales de
+- **09/09/2026** — diez extracciones completas: el catálogo de Ochoa en materiales de
   construcción (398 artículos, 349 con precio), baños (945 / 713), seguridad y tecnología
   (809 / 604) y baldosas (1,334 / 1,226); los departamentos de materiales (118 / 118)
   y de baño (520 / 520) de InnovaCentro; y las colecciones de plomería y baños (862 / 862)
-  y materiales (53 / 53) de Ferretería Cima; y la colección de maderas de Max Ferretería
-  (45 / 45), que es mixta y trae también tubería, cemento y tinacos. De sus 3,396 artículos
-  aprovechados salieron **1,145 ítems nuevos que nacieron verificados** y **156 cotizaciones
-  sobre ítems que ya existían**.
+  y materiales (53 / 53) de Ferretería Cima; y las colecciones de maderas (45 / 45) y metales
+  (27 / 27) de Max Ferretería. De sus 3,404 artículos aprovechados salieron **1,145 ítems
+  nuevos que nacieron verificados** y **164 cotizaciones sobre ítems que ya existían**.
 
 Los 273 ítems restantes siguen siendo estimaciones nuestras.
 
@@ -547,7 +546,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **80 ítems con precio de más de un comercio**, 16 con tres y cinco con cuatro. El
+Hoy hay **83 ítems con precio de más de un comercio**, 19 con tres y seis con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -676,6 +675,58 @@ precio sirve para confirmar lo que el nombre ya sugiere; no para contradecirlo.
 
 Los otros tres descartes son fichas incompletas que la propia extracción ya marcaba: dos
 adhesivos sin presentación y un tubo de PPR sin largo.
+
+### Un precio sin unidad no es un precio
+
+La colección de metales de Max Ferretería es el caso más limpio de la regla, y llegó con el
+diagnóstico hecho: **la tienda deja vacío el campo de unidad de venta en toda la ficha.** En
+clavos, alambre de amarre y electrodos —17 de 27 artículos— no se sabe si los RD$ 60 son por
+libra, por unidad o por paquete.
+
+Se quedan los 17 fuera. Asumir «por libra» no habría dejado un dato dudoso: habría
+contaminado la comparación contra Ochoa y Cima, que sí declaran la unidad, y el error sería
+invisible porque el número se ve perfectamente normal. Es una pregunta corta al vendedor y
+desbloquea media colección.
+
+Otros dos descartes de la misma familia: el angular de aluminio a RD$ 95 no dice si son 12 o
+20 pies, y sin eso el precio no dice nada.
+
+De 27 artículos entran 8. Y esos 8 valen la extracción entera.
+
+#### Lo que apareció al juntarlos: el alambre de púas
+
+`MAT-22-014` —alambre de púas calibre 16, rollo de 250 metros— es hoy el ítem con más
+cotizaciones del catálogo: **diez precios de cuatro comercios**, y van de RD$ 1,885 a
+RD$ 3,785. **El doble, por la misma especificación.**
+
+Lo interesante no es el rango sino lo que se ve al ordenarlo por marca:
+
+| Marca | Comercio | Precio |
+|---|---|---|
+| Jabalí | InnovaCentro | RD$ 1,885 |
+| Cebú | Ochoa | RD$ 2,108 |
+| Aiwa | Ochoa | RD$ 2,336 |
+| Corvi | Max | RD$ 2,390 |
+| — | Cima | RD$ 2,663 |
+| Premium | InnovaCentro | RD$ 2,730 |
+| — | Cima | RD$ 2,905 |
+| — | Ochoa | RD$ 3,440 |
+| **Motto** | **InnovaCentro** | **RD$ 3,770** |
+| **Motto** | **Max** | **RD$ 3,785** |
+
+Motto es el más caro en los dos comercios que lo venden, y con **0.4% de diferencia entre
+ellos**. Eso descarta que sea el margen de una tienda: es el precio de la marca. La pregunta
+que queda es de producto —si el calibre real o el número de púas por metro difiere— y esa
+hay que hacerla al suplidor, pero el catálogo ya la dejó planteada con evidencia de dos
+comercios independientes.
+
+Es exactamente para lo que existe este sitio.
+
+#### El área del zinc es nominal
+
+Una plancha de 3 x 6 pies no cubre 18 pie²: el traslape se come entre un 15% y un 20%.
+Quedó dicho en las claves de la página de techos, porque cubicar por el área nominal deja la
+obra corta y es un error que se comete solo.
 
 ### Nunca apuntes por código a un ítem generado
 
@@ -889,10 +940,12 @@ la especificación se corrigió: ver «El PVC sanitario es de 19 pies» más arr
 ejemplo de la regla: no se cambia el catálogo con la evidencia de un solo comercio, pero
 tampoco se ignora — se registra la discrepancia a la vista y se espera al segundo.
 
-**El SCH-40 también podría ser de 19 pies.** Cima publica toda su línea a 19, SCH-40
-incluido, pero ahí es el único que lo dice: nuestro `MAT-32-004` sigue con 20 pies y su
-tubo de 19 entró como ítem aparte. Se resuelve igual que el sanitario, esperando al segundo
-comercio.
+**Las grapas para alambre de púas de Max.** El nombre dice 1x10 y el código interno de la
+tienda dice 1x9. El artículo está fuera igual, porque tampoco declara la unidad de venta,
+pero si algún día entra hay que preguntar el calibre primero.
+
+**Los 17 artículos de metales sin unidad de venta.** Clavos, alambre de amarre y electrodos
+de Max Ferretería. Una pregunta al vendedor los desbloquea.
 
 **La pintura de Ochoa está retenida.** «Pintura Acrílica Superior 5 GL» aparece a
 RD$ 983.41, unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y resulta
@@ -920,7 +973,7 @@ sirven para extraer un catálogo sin pedir cotización. Cinco ya están cargadas
 | ✔ | Ferretería Ochoa (8A) | 2,288 |
 | ✔ | Ferretería Cima | 644 |
 | ✔ | InnovaCentro (La Innovación) | 351 |
-| ✔ | Max Ferretería | 41 |
+| ✔ | Max Ferretería | 49 |
 | ✔ | Ferremix (Grupo Alterra) | 2 |
 | | Plaza Lama, Ferretería Gigante, Würth Dominicana, Gerdau Metaldom, Cerarte, Cerámica Import, Procontratista, Segumart, SOS Protección Integral | — |
 

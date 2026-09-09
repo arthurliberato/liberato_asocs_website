@@ -1076,6 +1076,17 @@ const FUENTES = [
     regla: a => { const r = MAX.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
+    archivo: path.join(__dirname, 'datos-externos/max-metales-2026-09-09.json'),
+    etiqueta: 'Max Ferretería · metales',
+    proveedor: 'Max Ferretería',
+    constante: 'PROV_MAX',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => MAX.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: MAX.MAPEO_METALES,
+    regla: a => { const r = MAX.reglaMetales(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
     etiqueta: 'InnovaCentro · baños',
     proveedor: 'InnovaCentro (La Innovación)',

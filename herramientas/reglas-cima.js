@@ -72,6 +72,7 @@ const MAPEO = {
   '7465710056014': '#MAT-02|cemento-blanco-2',   // CEMENTO BLANCO 2LB
   '7465710056021': '#MAT-02|cemento-blanco-5',   // CEMENTO BLANCO 5LB
   '069041': '#MAT-02|cemento-gris-5',            // CEMENTO GRIS DETALLE 5LB
+  '7465710056045': '#MAT-02|yeso-en-polvo-blanco-2-lb',   // YESO 2LB
 
   /* Separadores de cerámica: es lo que en el catálogo de Ochoa se llama
      cruceta, y aquí sí declaran cuántas trae el paquete. */
@@ -90,7 +91,7 @@ const FUERA_MATERIALES = {
   'Colorantes / polvo de mosaico': 'la ficha no declara la presentación ni el grado del pigmento',
   'Soldadura': 'no corresponde a ninguna categoría del catálogo todavía',
   'Fijaciones': 'la ficha no declara la unidad de venta',
-  'Yeso': 'presentación de 2 lb, de detalle: el catálogo trabaja el yeso por funda de obra',
+
   'Alambres': 'el nombre no declara la unidad de venta',
   'Cemento': 'presentación que no corresponde a ningún ítem del catálogo'
 };

@@ -156,6 +156,7 @@ module.exports = {
   ],
   claves: [
     ['Calibre y largo', 'Un calibre más grueso cuesta más y dura más. El largo a medida reduce traslapes: menos filtraciones y menos desperdicio.'],
+    ['La medida de la plancha es nominal', 'Una plancha de 3 x 6 pies no cubre 18 pie²: el traslape se come entre un 15% y un 20%. Cubicar por el área nominal deja el techo corto.'],
     ['El sistema completo', 'Presupuestar caballetes, caños, tornillos, sellador y aislamiento junto con las planchas. Solos, los metros de cubierta engañan.'],
     ['Impermeabilizar es por m²', 'Los mantos y las membranas se cotizan por rollo o cubeta, pero se presupuestan por m² de techo, contando solapes y subidas de pretil.'],
     ['Mantenimiento periódico', 'Una impermeabilización no es definitiva. Conviene planificar su revisión antes de que aparezca la filtración.']
