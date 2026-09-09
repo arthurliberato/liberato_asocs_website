@@ -192,14 +192,45 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**Cero cotizaciones registradas.** Ningún proveedor ha cotizado formalmente todavía, y no
-se inventa un precio para atribuírselo a una empresa real con nombre propio: sería
-publicar un dato falso sobre un negocio identificable. Por eso la lista está vacía y los
-253 ítems siguen marcados como estimados.
+**9 cotizaciones reales cargadas**, de tres comercios, tomadas de los precios que ellos
+mismos publican en sus tiendas en línea el 08/09/2026: Ferremix, Ferretería Ochoa e
+InnovaCentro. Siete ítems pasaron de *Estimado* a **Verificado**; los otros dos son tubos
+de PVC que quedan fuera del cálculo por una diferencia de presentación (ver abajo). Los
+244 ítems restantes siguen siendo estimaciones nuestras.
 
-Mientras tanto, la ficha de cada ítem muestra la referencia estimada y la lista de
-proveedores de esa categoría **pendientes de cotizar**, con enlace directo a su web o su
-WhatsApp. Sirve como lista de trabajo para levantar las primeras cotizaciones.
+Nunca se inventa un precio para atribuírselo a una empresa real: cada cotización tiene su
+fuente y su fecha, y lo que no se pudo verificar simplemente no se carga.
+
+### El ITBIS de esta primera tanda
+
+Ninguna de esas fichas declara si el precio incluye el impuesto. Se registran con
+`itbis: true` porque en República Dominicana el precio de mostrador al consumidor se
+muestra con el ITBIS incluido, pero **es un supuesto nuestro, no un dato de la ficha**, y
+así queda dicho en la nota de cada cotización, visible en el sitio. Al confirmarlo con el
+comercio, basta con ajustar la nota o el valor.
+
+### Dos cosas pendientes de verificar
+
+**Los tubos de PVC vienen en 19 pies, no en 20.** Ochoa vende el SDR-41 de 4" y de 2" en
+presentación de 19 pies y factura por pies con un mínimo de 19, que equivale a una unidad.
+La ficha de nuestros ítems `MAT-09-001` y `MAT-09-002` dice 20 pies. Es probable que el
+error sea nuestro —19 pies es la presentación comercial habitual del PVC sanitario en el
+país—, pero no se cambia la especificación del catálogo con la evidencia de un solo
+comercio. Mientras tanto las cotizaciones se registran con `unidad: 'tubo de 19 pies'`, de
+modo que el sitio las muestra y explica por qué no promedian.
+
+**La pintura de Ochoa está retenida.** «Pintura Acrílica Superior 5 GL» aparece a
+RD$ 983.41, unos RD$ 197 por galón. Es nueve veces menos que nuestra estimación y resulta
+inverosímil para una cubeta de cinco galones: o la ficha cotiza por galón, o es otra
+presentación. No se carga hasta confirmarlo en tienda. Queda comentada en
+`datos-precios.js` con la explicación.
+
+### Cuando conviven datos reales y de demostración
+
+Un dato real siempre gana a uno ficticio. En cuanto un ítem tiene una cotización de
+verdad, las de demostración dejan de promediar y **ni siquiera se muestran**: ver un
+precio real al lado de uno inventado confunde más de lo que enseña. Lo mismo aplica al
+copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
