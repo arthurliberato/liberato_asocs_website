@@ -9,19 +9,18 @@
    QUÉ MIRA, Y POR QUÉ ESO
 
    1. DISPERSIÓN ENTRE COMERCIOS
-      Dos comercios cotizando el mismo ítem deberían quedar cerca. La
-      dispersión normal es de marca: un bombillo LED de 12 W cuesta 60
-      en genérico y 220 de marca, y eso es información, no un error.
-      Medido sobre los 242 ítems comparables, la mediana es 1.6x y el
-      percentil 90 está en 4.6x.
+      Dos comercios cotizando el mismo ítem deberían quedar cerca, y
+      cuando no, la diferencia suele ser de gama: un bombillo LED de 12 W
+      cuesta 60 en genérico y 220 de marca. Eso es información, no un
+      error.
 
-      Pero por encima de 8x el ítem deja de ser una sola cosa. El caso
-      que lo enseña es «Dispensador de jabón»: convivían un dispensador
-      plástico de 676 y uno electrónico HELVEX de 15,547. No es que un
-      comercio se equivocara; es que a la partida le falta un eje que
-      separe el manual del automático.
+      Lo que se mide NO es del más barato al más caro, sino el hueco más
+      grande entre dos cotizaciones vecinas. Los extremos no dicen si la
+      lista es una cosa o dos; el hueco sí. Ver el comentario largo sobre
+      la función, que trae el caso y el número.
 
-      Mientras ese eje no exista, el ítem no se publica.
+      Cuando el hueco delata que la partida no es una sola cosa, el ítem
+      no se publica hasta que exista el eje que la separe.
 
    2. MEDIDAS IMPOSIBLES
       Cuando la lectura del catálogo de un comercio se tuerce, sale una
@@ -46,9 +45,6 @@ const { execFileSync } = require('child_process');
 
 const RAIZ = path.join(__dirname, '..');
 
-/* Por encima de aquí, el ítem no es una sola cosa. Medido, no supuesto:
-   ver el encabezado. */
-const DISPERSION_MAXIMA = 8;
 /* Para informar de la serie hace falta que la serie exista. */
 const MINIMO_SERIE = 3;
 const FUERA_DE_SERIE = 10;
@@ -71,21 +67,84 @@ const mediana = a => {
 };
 
 /* ---------- 1: dispersión entre comercios ---------- */
+
+/* NO se mide del más barato al más caro. Se mide el HUECO más grande entre
+   dos cotizaciones vecinas, y la razón es que los dos extremos de una lista
+   ordenada no dicen si la lista es una cosa o dos.
+
+   El caso que lo enseña es «Cabezal de ducha»: 138 cotizaciones que van de
+   RD$ 126 a RD$ 143,568 —1,135 veces— y ni un solo salto mayor de 2.6x entre
+   una y la siguiente. Eso no es un error de nadie: es la escalera completa
+   del mercado, de la regadera plástica a la ducha de techo empotrada, con
+   todos los peldaños puestos. Retirarlo por sus extremos era retirar el
+   ítem con más información del catálogo.
+
+   El hueco, en cambio, sí distingue. Un intruso deja un vacío y se queda
+   solo del otro lado: en «Inodoro suspendido» el salto de 9.8x separa
+   diecinueve inodoros de un ASIENTO para inodoro, que es otra pieza. Un eje
+   que falta parte la lista en dos grupos con gente a los dos lados, como en
+   el dispensador de jabón manual contra el electrónico.
+
+   SE MIDE SOBRE TODAS LAS COTIZACIONES, NO UNA POR COMERCIO
+   El comparativo del Excel se queda con la más barata de cada tienda, que
+   es la que sirve para negociar. Aquí eso sería un error: borra los
+   peldaños de en medio y fabrica huecos que no existen. El tapón macho de
+   PVC de 1" quedaba en RD$ 5.61 y RD$ 62 y parecía roto; con la lista
+   entera aparece el de RD$ 35.11 —del mismo comercio, otra marca— y se ve
+   que es una escalera, no un salto. Siete accesorios de plomería estaban
+   retirados por eso y ninguno tenía nada malo.
+
+   DE DÓNDE SALE EL UMBRAL
+   Medido sobre los 883 ítems con más de una cotización: la mediana del
+   hueco mayor es 1.58x, el percentil 90 está en 3.56x, el 95 en 5.06x y el
+   99 en 13.11x. Cortar en 7x retira el 2.8%.
+   Mirando la banda de 3.5x a 7x uno por uno, casi todo lo que hay es la
+   misma cosa: el margen de mostrador en piezas chicas. Un niple de 3/8"
+   sale a RD$ 27 en una cadena grande y a RD$ 185 en una ferretería de
+   barrio, y las dos tienen razón —en una pieza de treinta pesos el costo de
+   manejarla pesa más que la pieza—. Se comprobó que es margen y no un error
+   de unidad porque la brecha SE CIERRA según sube el precio: 0.39x en las
+   piezas de menos de RD$ 100 y 0.92x en las de más de RD$ 2,000. Un error
+   de unidad sería igual en toda la escala.
+
+   De 7x en adelante lo que aparece son defectos: el asiento metido entre
+   los inodoros, un interruptor inteligente entre los sencillos, una tira
+   LED RGB entre los reflectores. Ahí se corta. */
+const HUECO_MAXIMO = 7;
+
+/* Cuántas cotizaciones quedan del lado chico del hueco. Una o dos son un
+   intruso —una pieza mal clasificada, que se arregla en la regla del
+   comercio—; más de dos son dos familias de verdad y lo que falta es un eje. */
+function huecoMayor(ps) {
+  const s = ps.slice().sort((a, b) => a - b);
+  let hueco = 1, corte = 0;
+  for (let k = 1; k < s.length; k++) {
+    const h = s[k] / s[k - 1];
+    if (h > hueco) { hueco = h; corte = k; }
+  }
+  return { hueco, corte, solos: Math.min(corte, s.length - corte), ordenados: s };
+}
+
 function dispersion(items) {
   const fuera = [];
   for (const i of items) {
-    const ps = (i.precios || []).filter(p => p && p.precio).map(p => p.precio);
-    if (ps.length < 2) continue;
-    const min = Math.min(...ps), max = Math.max(...ps);
-    if (min <= 0) continue;
-    const r = max / min;
-    if (r >= DISPERSION_MAXIMA) {
-      fuera.push({
-        item: i, razon: 'dispersion', factor: r, precios: ps.slice().sort((a, b) => a - b),
-        motivo: 'los comercios lo cotizan entre ' + pesos(min) + ' y ' + pesos(max)
-                + ' (' + r.toFixed(0) + 'x): la partida mezcla productos distintos'
-      });
-    }
+    /* Todas las cotizaciones, no una por comercio: ver la nota en
+       datos-para-excel.js sobre por qué el colapso fabricaba huecos. */
+    const ps = (i.todas && i.todas.length ? i.todas
+                : (i.precios || []).filter(p => p && p.precio).map(p => p.precio));
+    if (ps.length < 2 || Math.min(...ps) <= 0) continue;
+    const h = huecoMayor(ps);
+    if (h.hueco < HUECO_MAXIMO) continue;
+    const min = h.ordenados[h.corte - 1], max = h.ordenados[h.corte];
+    fuera.push({
+      item: i, razon: 'dispersion', factor: h.hueco, precios: h.ordenados,
+      motivo: (h.solos <= 2
+        ? 'entre ' + pesos(min) + ' y ' + pesos(max) + ' no hay nada, y del lado barato '
+          + (h.solos === 1 ? 'queda una sola cotización' : 'quedan dos cotizaciones')
+          + ' (' + h.hueco.toFixed(0) + 'x): hay una pieza mal clasificada'
+        : 'la partida se parte en dos entre ' + pesos(min) + ' y ' + pesos(max)
+          + ' (' + h.hueco.toFixed(0) + 'x): le falta un eje que separe los dos grupos')
+    });
   }
   return fuera;
 }

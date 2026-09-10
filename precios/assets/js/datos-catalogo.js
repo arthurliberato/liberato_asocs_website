@@ -1037,7 +1037,7 @@
   it('MAT-08', 'Polvo de color para mosaico verde industrial, 55 lb', 'funda', 9092.93, 9092.93, 9092.93, {esp:'', etapa:'pisos', gama:'premium', origen:'importado', alias:'cromo, polvo de color, pigmento para granito', alcance:'Material retirado en almacén'});
 
   /* MAT-09 */
-  it('MAT-09', 'Cabezal de ducha', 'unidad', 1581, 126.44, 143567.8, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabeza de ducha, regadera', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha', 'unidad', 1610.5, 150, 143567.8, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabeza de ducha, regadera', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Ducha teléfono', 'unidad', 712.46, 238.61, 16666.17, {esp:'', etapa:'instalaciones', origen:'importado', alias:'ducha de mano, teléfono de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Columna de ducha', 'unidad', 16238.78, 900, 151833.06, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, set de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Columna de ducha', 'unidad', 9896.81, 553.61, 29022.19, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, sistema de ducha, barra deslizable, riel', alcance:'Material retirado en almacén'});
@@ -1747,7 +1747,7 @@
   /* MAT-24 */
   it('MAT-24', 'Inodoro de una pieza', 'unidad', 9991.92, 4225, 95460.02, {esp:'', etapa:'instalaciones', origen:'importado', alias:'inodoro, taza de baño, wc, one piece, elongado, alargado, redondo', medidas:{largo_mm:710, ancho_mm:380, alto_mm:750}, alcance:'Material retirado en almacén'});
   it('MAT-24', 'Inodoro infantil', 'unidad', 11543.61, 6348.02, 13750, {esp:'', etapa:'instalaciones', origen:'importado', alias:'inodoro infantil, inodoro de niño, wc infantil', alcance:'Material retirado en almacén'});
-  it('MAT-24', 'Inodoro suspendido', 'unidad', 28315, 554.97, 70000, {esp:'', etapa:'instalaciones', origen:'importado', alias:'inodoro suspendido, inodoro de pared, wall hung, colgado', alcance:'Material retirado en almacén'});
+  it('MAT-24', 'Inodoro suspendido', 'unidad', 28900.01, 554.97, 70000, {esp:'', etapa:'instalaciones', origen:'importado', alias:'inodoro suspendido, inodoro de pared, wall hung, colgado', alcance:'Material retirado en almacén'});
   it('MAT-24', 'Inodoro de dos piezas', 'unidad', 8053.48, 5100, 21873.12, {esp:'Tanque y basineta incluidos', etapa:'instalaciones', origen:'importado', alias:'inodoro de dos piezas, taza y tanque, wc dos piezas', alcance:'Material retirado en almacén'});
   it('MAT-24', 'Tanque para inodoro de dos piezas', 'unidad', 4050.93, 586.47, 18906.72, {esp:'Sin basineta · se compra aparte', etapa:'instalaciones', origen:'importado', alias:'tanque de inodoro, cisterna', medidas:{largo_mm:710, ancho_mm:415, alto_mm:800, forma:'redondo', descarga_l:4.8}, alcance:'Material retirado en almacén'});
   it('MAT-24', 'Basineta para inodoro de dos piezas', 'unidad', 5571.51, 2129.12, 26806.88, {esp:'Sin tanque · se compra aparte', etapa:'instalaciones', origen:'importado', alias:'basineta, taza, cuerpo del inodoro', alcance:'Material retirado en almacén'});
@@ -1768,12 +1768,12 @@
   it('MAT-25', 'Conector de desagüe para lavamanos', 'unidad', 255.94, 255.94, 255.94, {esp:'', etapa:'instalaciones', origen:'importado', alias:'conector, yee de desagüe', alcance:'Material retirado en almacén'});
 
   /* MAT-26 */
-  it('MAT-26', 'Mueble de baño', 'unidad', 14668.75, 1140, 45479.87, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Mueble de baño', 'unidad', 14719.17, 6495, 45479.87, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Mueble de baño, de pared', 'unidad', 19517.62, 5433.44, 58000, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', medidas:{montaje:'pared'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Mueble de baño, de piso', 'unidad', 18691.13, 2725, 197500, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', medidas:{montaje:'piso'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Botiquín de baño', 'unidad', 1547, 725.87, 6543.83, {esp:'', etapa:'terminacion', origen:'importado', alias:'botiquín, gabinete con espejo', medidas:{largo_mm:300, alto_mm:120}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Botiquín de baño, con luz LED', 'unidad', 15456.85, 10320.96, 24256.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'botiquín, gabinete con espejo', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Espejo de baño', 'unidad', 1921.92, 665, 39933.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Espejo de baño', 'unidad', 1908.4, 665, 39933.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Espejo de baño, con luz LED', 'unidad', 8291.48, 1795, 25500, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Cabina o panel de ducha', 'unidad', 5733, 3118.5, 16029.13, {esp:'', etapa:'terminacion', origen:'importado', alias:'cabina de ducha, mampara, panel de ducha', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Bañera', 'unidad', 100299.99, 9469, 430700, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub, jacuzzi', alcance:'Material retirado en almacén'});
@@ -2785,46 +2785,60 @@
      ========================================================= */
   /* dudosos:inicio — generado por herramientas/auditar-precios.js. No editar a mano. */
   var dudosos = {
-    /* Mosaico cerámico en malla, 30 x 30 cm */
-    'MAT-08-203': 'los comercios lo cotizan entre RD$ 157 y RD$ 1,845 (12x): la partida mezcla productos distintos',
-    /* Cabezal de ducha */
-    'MAT-09-009': 'los comercios lo cotizan entre RD$ 126 y RD$ 2,924 (23x): la partida mezcla productos distintos',
-    /* Ducha teléfono */
-    'MAT-09-010': 'los comercios lo cotizan entre RD$ 239 y RD$ 3,361 (14x): la partida mezcla productos distintos',
-    /* Columna de ducha */
-    'MAT-09-011': 'los comercios lo cotizan entre RD$ 900 y RD$ 11,281 (13x): la partida mezcla productos distintos',
-    /* Brazo de ducha */
-    'MAT-09-013': 'los comercios lo cotizan entre RD$ 108 y RD$ 1,390 (13x): la partida mezcla productos distintos',
+    /* Herramienta de terminación de cableado */
+    'EQU-04-043': 'entre RD$ 481 y RD$ 6,682 no hay nada, y del lado barato queda una sola cotización (14x): hay una pieza mal clasificada',
     /* Tinaco de 600 galones */
     'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
+    /* Interruptor sencillo */
+    'MAT-10-008': 'entre RD$ 395 y RD$ 3,840 no hay nada, y del lado barato queda una sola cotización (10x): hay una pieza mal clasificada',
     /* Bombillo LED de 1 W */
-    'MAT-10-040': 'los comercios lo cotizan entre RD$ 60 y RD$ 756 (13x): la partida mezcla productos distintos',
+    'MAT-10-040': 'entre RD$ 89 y RD$ 756 no hay nada, y del lado barato queda una sola cotización (8x): hay una pieza mal clasificada',
+    /* Reflector LED de 9 W */
+    'MAT-10-150': 'entre RD$ 545 y RD$ 7,145 no hay nada, y del lado barato queda una sola cotización (13x): hay una pieza mal clasificada',
+    /* Zócalo para bombillo */
+    'MAT-10-164': 'entre RD$ 75 y RD$ 560 no hay nada, y del lado barato queda una sola cotización (7x): hay una pieza mal clasificada',
     /* Placa de pared de 2 huecos */
     'MAT-10-181': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se explica si el precio es de un paquete, y la ficha no lo dice',
     /* Inodoro suspendido */
-    'MAT-24-003': 'los comercios lo cotizan entre RD$ 555 y RD$ 5,440 (10x): la partida mezcla productos distintos',
-    /* Tanque para inodoro de dos piezas */
-    'MAT-24-005': 'los comercios lo cotizan entre RD$ 586 y RD$ 12,715 (22x): la partida mezcla productos distintos',
-    /* Lavamanos, de pedestal */
-    'MAT-25-005': 'los comercios lo cotizan entre RD$ 216 y RD$ 15,435 (71x): la partida mezcla productos distintos',
-    /* Mueble de baño, de piso */
-    'MAT-26-003': 'los comercios lo cotizan entre RD$ 2,725 y RD$ 21,825 (8x): la partida mezcla productos distintos',
-    /* Juego de accesorios de baño */
-    'MAT-27-018': 'los comercios lo cotizan entre RD$ 345 y RD$ 4,992 (14x): la partida mezcla productos distintos',
+    'MAT-24-003': 'entre RD$ 555 y RD$ 6,659 no hay nada, y del lado barato queda una sola cotización (12x): hay una pieza mal clasificada',
+    /* Lavamanos, de pared */
+    'MAT-25-004': 'la partida se parte en dos entre RD$ 14,157 y RD$ 105,775 (7x): le falta un eje que separe los dos grupos',
     /* Dispensador de jabón */
-    'MAT-27-028': 'los comercios lo cotizan entre RD$ 156 y RD$ 20,818 (133x): la partida mezcla productos distintos',
-    /* Dispensador de jabón, institucional */
-    'MAT-27-030': 'los comercios lo cotizan entre RD$ 1,270 y RD$ 14,903 (12x): la partida mezcla productos distintos',
-    /* Dispensador de papel, de toalla */
-    'MAT-27-032': 'los comercios lo cotizan entre RD$ 274 y RD$ 4,472 (16x): la partida mezcla productos distintos',
+    'MAT-27-028': 'entre RD$ 2,309 y RD$ 20,818 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
+    /* Equipo de cerco eléctrico */
+    'MAT-28-023': 'la partida se parte en dos entre RD$ 74 y RD$ 2,341 (32x): le falta un eje que separe los dos grupos',
+    /* Cable de red */
+    'MAT-30-002': 'la partida se parte en dos entre RD$ 16 y RD$ 164 (10x): le falta un eje que separe los dos grupos',
+    /* Cable de red Cat 6 */
+    'MAT-30-006': 'entre RD$ 477 y RD$ 11,276 no hay nada, y del lado barato quedan dos cotizaciones (24x): hay una pieza mal clasificada',
+    /* Jack RJ45 */
+    'MAT-30-008': 'entre RD$ 2 y RD$ 70 no hay nada, y del lado barato quedan dos cotizaciones (33x): hay una pieza mal clasificada',
+    /* Placa de pared para datos 1 puertos */
+    'MAT-30-017': 'entre RD$ 101 y RD$ 884 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
+    /* Placa de pared para datos 2 puertos */
+    'MAT-30-018': 'entre RD$ 101 y RD$ 884 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
+    /* Rack y accesorios de gabinete */
+    'MAT-30-020': 'entre RD$ 27 y RD$ 306 no hay nada, y del lado barato queda una sola cotización (11x): hay una pieza mal clasificada',
+    /* Equipo de red 8 puertos */
+    'MAT-30-023': 'entre RD$ 501 y RD$ 13,694 no hay nada, y del lado barato queda una sola cotización (27x): hay una pieza mal clasificada',
+    /* Conector y accesorio de cableado */
+    'MAT-30-024': 'la partida se parte en dos entre RD$ 4 y RD$ 30 (8x): le falta un eje que separe los dos grupos',
+    /* Parlante o amplificador de voceo */
+    'MAT-30-025': 'entre RD$ 287 y RD$ 7,861 no hay nada, y del lado barato quedan dos cotizaciones (27x): hay una pieza mal clasificada',
+    /* Fuente de alimentación para sistemas */
+    'MAT-30-026': 'entre RD$ 1 y RD$ 1,857 no hay nada, y del lado barato queda una sola cotización (1535x): hay una pieza mal clasificada',
+    /* Interruptor inteligente */
+    'MAT-31-002': 'entre RD$ 101 y RD$ 1,002 no hay nada, y del lado barato queda una sola cotización (10x): hay una pieza mal clasificada',
+    /* Tomacorriente inteligente */
+    'MAT-31-010': 'entre RD$ 294 y RD$ 2,369 no hay nada, y del lado barato queda una sola cotización (8x): hay una pieza mal clasificada',
+    /* Niple de HG 3/8" x 4" */
+    'MAT-32-358': 'entre RD$ 35 y RD$ 249 no hay nada, y del lado barato queda una sola cotización (7x): hay una pieza mal clasificada',
     /* Niple de niquelado 1/2" x 3" */
-    'MAT-32-366': 'los comercios lo cotizan entre RD$ 28 y RD$ 388 (14x): la partida mezcla productos distintos',
+    'MAT-32-366': 'entre RD$ 28 y RD$ 252 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
+    /* Niple de niquelado 1/2" x 4" */
+    'MAT-32-367': 'entre RD$ 28 y RD$ 348 no hay nada, y del lado barato queda una sola cotización (12x): hay una pieza mal clasificada',
     /* Tapón hembra de PPR 20 mm */
-    'MAT-32-512': 'los comercios lo cotizan entre RD$ 2 y RD$ 31 (13x): la partida mezcla productos distintos',
-    /* Tapón hembra de PVC presión 1/2" */
-    'MAT-32-522': 'los comercios lo cotizan entre RD$ 2 y RD$ 18 (8x): la partida mezcla productos distintos',
-    /* Tapón macho de PVC 1" */
-    'MAT-32-546': 'los comercios lo cotizan entre RD$ 6 y RD$ 62 (11x): la partida mezcla productos distintos'
+    'MAT-32-512': 'entre RD$ 2 y RD$ 31 no hay nada, y del lado barato queda una sola cotización (13x): hay una pieza mal clasificada'
   };
   /* dudosos:fin */
 

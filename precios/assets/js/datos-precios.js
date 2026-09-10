@@ -9067,14 +9067,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-redonda-5-funciones-01232600',
     nota: 'Ducha Redonda 5 Funciones · artículo 01-23-2600 · ref. P01704 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-009', PROV_OCHOA, 126.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-ducha-p-pared-maldivas-01230425',
-    nota: 'Soporte Ducha P / Pared Maldivas · artículo 01-23-0425 · ref. 96110 · marca INEX. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-009', PROV_OCHOA, 218.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-d-fijacion-p-ducha-01112754',
-    nota: 'Soporte D / Fijacion P / Ducha · artículo 01-11-2754 · ref. 16074 · marca EZ-FLO/USA. ' + SUPUESTO_ITBIS
-  });
   c('MAT-09-009', PROV_CIMA, 1597, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-p-bidet-c-llave-jf031101',
     nota: 'DUCHA P/BIDET C/LLAVE JF031101 · artículo 7460215719969. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
@@ -20511,11 +20503,6 @@
     itbis: false,
     nota: 'INODORO SUSPENDIDO 545MM D-CODE · artículo CERA-29959 · marca DURAVIT. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-24-003', PROV_CERARTE, 5440.14, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/asiento-pinodoro-suspendido-d-code-scierre-amortiguado',
-    itbis: false,
-    nota: 'ASIENTO P/INODORO SUSPENDIDO D-CODE S/CIERRE AMORTIGUADO · artículo CERA-30164 · marca DURAVIT. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-24-003', PROV_CERARTE, 13348.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/inodoro-suspendido-durastyle-eco-fondo-hondo',
     itbis: false,
@@ -22693,10 +22680,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mueble-zeus-80-wengue-01101165',
     nota: 'Mueble Zeus 80 Wengue · artículo 01-10-1165 · ref. 2011000000763 · marca AML. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-001', PROV_INNOVA, 1140, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/espejo-aquaspa-sf141b-50x70-cm-negro-rectangular-c-068968',
-    nota: 'ESPEJO AQUASPA SF141B 50X70 CM NEGRO RECTANGULAR CON REPISA · artículo 068968 · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
   c('MAT-26-001', PROV_INNOVA, 12850, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-6080-100-blanco-lavamano-3-esp-068966',
     nota: 'MUEBLE BAÑO AQUASPA 6080-100 BLANCO LAVAMANO/ESPEJO 100X50X15 CM/100X50X8 CM · artículo 068966 · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -23662,6 +23645,10 @@
   c('MAT-26-006', PROV_INNOVA, 4830, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-corona-oo2886391-60-cm-redondo-plateado-068284',
     nota: 'ESPEJO CORONA OO2886391 60 CM REDONDO PLATEADO · artículo 068284 · ref. Espejo · marca CORONA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_INNOVA, 1140, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/espejo-aquaspa-sf141b-50x70-cm-negro-rectangular-c-068968',
+    nota: 'ESPEJO AQUASPA SF141B 50X70 CM NEGRO RECTANGULAR CON REPISA · artículo 068968 · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-007', PROV_OCHOA, 6121.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/espejo-led-antifog-chrome-01101550',
