@@ -88,6 +88,8 @@
     tel:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1.5-3.2-4-1.8-1.7 1.9a12.4 12.4 0 0 1-6.7-6.7l1.9-1.7-1.8-4L5 4.9Z"/></svg>',
     mail:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>',
     copiar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+    wa:      '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.8 12a5.1 5.1 0 0 0 1 2.2 11.5 11.5 0 0 0 4.5 3.9c1.6.6 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>',
+    correo:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
     proveedor: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><path d="M3 9h18l-1.5-4.5h-15L3 9Z"/><path d="M4.5 9v10.5h15V9"/><path d="M9.5 19.5V14h5v5.5"/></svg>',
     flecha:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     web:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>'
@@ -157,7 +159,6 @@
     cotizacion = cotizacion.filter(function (l) { return l.codigo !== codigo; });
     guardarCotizacion();
     pintarCotizacion();
-    sincronizarBotonesTabla();
   }
 
   function totalCotizacion(sinItbis) {
@@ -265,7 +266,6 @@
       cotizacion = [];
       guardarCotizacion();
       pintarCotizacion();
-      sincronizarBotonesTabla();
     });
 
     var wa = $('#cot-wa');
@@ -512,15 +512,30 @@
     });
   }
 
+  /* Junto al precio va un botón que copia solo el número; el de la última
+     columna copia la fila tal como se ve. */
+  function botonCopiarPrecio(it) {
+    return ' <button class="btn-copiar btn-copiar-precio" type="button" data-copiar-monto="' + esc(it.codigo) + '" ' +
+      'aria-label="Copiar el precio de ' + esc(it.nombre) + '" title="Copiar el precio">' + ICONO.copiar + '</button>';
+  }
   function pintarCeldaPrecio(td, it) {
     var pct = it.unidad === '%';
     var p = precioVista(it.ref, it, estado.sinItbis);
     if (p === null) { td.innerHTML = '<span class="precio-nulo">Según tarifario</span>'; return; }
     /* Solo el precio de referencia. El rango y la mediana son análisis y
        van en el libro de Excel, no en la tabla del sitio. */
-    td.innerHTML = pct ? '<span class="precio">' + fmt(p) + ' %</span>'
-                       : '<span class="precio">' + rd(p) + '</span>';
+    td.innerHTML = (pct ? '<span class="precio">' + fmt(p) + ' %</span>'
+                        : '<span class="precio">' + rd(p) + '</span>') + botonCopiarPrecio(it);
     td.setAttribute('data-precio-ref', it.ref === null ? '' : it.ref);
+  }
+  /* Copia la fila tal como se ve: ítem, categoría o etapa, unidad, precio y
+     última actualización, separados por tabulador. Lo que sale en el Excel
+     (código, especificación, mínimo, máximo, fuente) se copia desde la ficha. */
+  function textoFilaVisible(tr) {
+    if (!tr) return '';
+    return $$('td', tr).slice(0, -1).map(function (td) {
+      return td.textContent.replace(/\s+/g, ' ').trim();
+    }).join('\t');
   }
 
   /* Vuelve a pintar precios, etiquetas y fichas abiertas desde el objeto del
@@ -988,9 +1003,10 @@
       var ref = v('data-precio-ref');
 
       if (el.tagName === 'TD') {
-        el.innerHTML = pct
-          ? '<span class="precio">' + fmt(ref) + ' %</span>'
-          : '<span class="precio">' + rd(ref) + '</span>';
+        var texto = pct ? fmt(ref) + ' %' : rd(ref);
+        var span = $('.precio', el);
+        if (span) span.textContent = texto;
+        else el.innerHTML = '<span class="precio">' + texto + '</span>';
       } else {
         el.textContent = pct ? fmt(ref) + ' %' : rd(ref);
       }
@@ -1055,6 +1071,21 @@
     var detalle = e.target.closest('[data-detalle]');
     if (detalle) { alternarDetalle(detalle); return; }
 
+    var monto = e.target.closest('[data-copiar-monto]');
+    if (monto) {
+      var itM = itemPorCodigo[monto.getAttribute('data-copiar-monto')];
+      var pM = itM ? precioVista(itM.ref, itM, estado.sinItbis) : null;
+      /* Se copia lo que se ve: el monto redondeado como en la tabla. */
+      if (pM !== null) copiarTexto(itM.unidad === '%' ? String(pM) : String(Math.round(pM)), monto);
+      return;
+    }
+
+    var filaVisible = e.target.closest('[data-copiar-fila]');
+    if (filaVisible) {
+      copiarTexto(textoFilaVisible(filaVisible.closest('tr')), filaVisible);
+      return;
+    }
+
     var unaFila = e.target.closest('[data-copiar-precio]');
     if (unaFila) {
       var filas = filasDeItem(unaFila.getAttribute('data-copiar-precio'));
@@ -1073,9 +1104,7 @@
 
     var tabla = e.target.closest('[data-copiar-tabla]');
     if (tabla) {
-      var codigos = $$('[data-copiar-precio]:not([data-copiar-indice])').map(function (b) {
-        return b.getAttribute('data-copiar-precio');
-      });
+      var codigos = $$('tr[data-item]').map(function (tr) { return tr.getAttribute('data-item'); });
       var vistos = {}, acumulado = [];
       codigos.forEach(function (c) {
         if (vistos[c]) return;
@@ -1087,27 +1116,11 @@
     }
   });
 
-  /* Agregar a la lista funciona igual en el catálogo y en las páginas
-     estáticas de categoría, así que el manejador vive en el documento. */
-  document.addEventListener('click', function (e) {
-    var add = e.target.closest('[data-add]');
-    if (!add) return;
-    agregarACotizacion(add.getAttribute('data-add'));
-    sincronizarBotonesTabla();
-  });
 
   /* =========================================================
      CATÁLOGO: buscador, filtros y tabla
      ========================================================= */
 
-  function sincronizarBotonesTabla() {
-    $$('.btn-add').forEach(function (b) {
-      var dentro = enCotizacion(b.getAttribute('data-add'));
-      b.classList.toggle('is-added', dentro);
-      b.innerHTML = dentro ? ICONO.check : ICONO.mas;
-      b.setAttribute('aria-label', (dentro ? 'Ya está en la lista: ' : 'Agregar a la lista de cotización: ') + b.getAttribute('data-nombre'));
-    });
-  }
 
   (function catalogo() {
     var cuerpo = $('#tabla-body');
@@ -1222,9 +1235,9 @@
       if (p === null) {
         precioHtml = '<span class="precio-nulo">Según tarifario</span>';
       } else if (esPorcentaje) {
-        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>';
+        precioHtml = '<span class="precio">' + fmt(p) + ' %</span>' + botonCopiarPrecio(it);
       } else {
-        precioHtml = '<span class="precio">' + rd(p) + '</span>';
+        precioHtml = '<span class="precio">' + rd(p) + '</span>' + botonCopiarPrecio(it);
       }
 
       return '<tr data-item="' + esc(it.codigo) + '">' +
@@ -1239,11 +1252,8 @@
               (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
               (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '') + '</td>' +
           '<td class="num acciones">' +
-            '<button class="btn-copiar" type="button" data-copiar-precio="' + esc(it.codigo) + '" ' +
-              'aria-label="Copiar ' + esc(it.nombre) + ' como fila de hoja de cálculo" ' +
-              'title="Copiar como fila para Excel">' + ICONO.copiar + '</button>' +
-            (it.ref === null ? '' :
-              '<button class="btn-add" type="button" data-add="' + esc(it.codigo) + '" data-nombre="' + esc(it.nombre) + '">' + ICONO.mas + '</button>') +
+            '<button class="btn-copiar" type="button" data-copiar-fila="' + esc(it.codigo) + '" ' +
+              'aria-label="Copiar la fila de ' + esc(it.nombre) + '" title="Copiar la fila">' + ICONO.copiar + '</button>' +
           '</td>' +
         '</tr>';
     }
@@ -1268,8 +1278,6 @@
         if (vacio) vacio.hidden = true;
         cuerpo.innerHTML = lista.map(fila).join('');
       }
-
-      sincronizarBotonesTabla();
       actualizarURL();
     }
 
@@ -1426,8 +1434,6 @@
       repintarPrecios(document);
       pintarCotizacion();
     });
-
-    sincronizarBotonesTabla();
   })();
 
   /* =========================================================
@@ -1570,6 +1576,58 @@
     pintar();
   })();
 
+
+  /* =========================================================
+     BANNERS LATERALES
+     En pantallas anchas sobra margen a los dos lados del contenido; ahí va
+     la firma con su llamada. El botón no lleva a otra página: despliega
+     las dos vías de contacto. Se montan desde aquí para no repetir el
+     marcado en 32 páginas.
+     ========================================================= */
+  var CONTACTO = {
+    wa: 'https://wa.me/18297939892?text=' + encodeURIComponent('Hola, vengo de precios.ingsliberato.com y quiero información sobre contratación, subcontratos especializados o presupuestos.'),
+    correo: 'mailto:arthur@ingsliberato.com?subject=' + encodeURIComponent('Consulta desde precios.ingsliberato.com')
+  };
+  function montarBannersLaterales() {
+    if (!document.body || $('.banner-lateral')) return;
+    ['izq', 'der'].forEach(function (lado) {
+      var b = document.createElement('aside');
+      b.className = 'banner-lateral banner-' + lado;
+      b.setAttribute('aria-label', 'Ingenieros Liberato & Asociados');
+      b.innerHTML =
+        '<img class="banner-iso" src="assets/img/isotipo.png" alt="" width="615" height="766">' +
+        '<p class="banner-marca">Ingenieros Liberato<br>&amp; Asociados</p>' +
+        '<p class="banner-servicios">Construcción · Supervisión · Diseño</p>' +
+        '<p class="banner-msj">¿Necesitas contratista, subcontratista especializado o presupuestos?</p>' +
+        '<button class="btn btn-primary banner-cta" type="button" aria-expanded="false" aria-controls="banner-contacto-' + lado + '">Contáctanos</button>' +
+        '<div class="banner-contacto" id="banner-contacto-' + lado + '" hidden>' +
+          '<a class="banner-opcion" href="' + CONTACTO.wa + '" target="_blank" rel="noopener">' + ICONO.wa + '<span>WhatsApp<small>+1 (829) 793-9892</small></span></a>' +
+          '<a class="banner-opcion" href="' + CONTACTO.correo + '">' + ICONO.correo + '<span>Correo electrónico<small>arthur@ingsliberato.com</small></span></a>' +
+        '</div>';
+      document.body.appendChild(b);
+    });
+    function cerrarTodos(salvo) {
+      $$('.banner-cta').forEach(function (btn) {
+        if (btn === salvo) return;
+        btn.setAttribute('aria-expanded', 'false');
+        $('#' + btn.getAttribute('aria-controls')).hidden = true;
+      });
+    }
+    document.addEventListener('click', function (e) {
+      var cta = e.target.closest('.banner-cta');
+      if (cta) {
+        var caja = $('#' + cta.getAttribute('aria-controls'));
+        var abrir = caja.hidden;
+        cerrarTodos(cta);
+        caja.hidden = !abrir;
+        cta.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+        return;
+      }
+      if (!e.target.closest('.banner-lateral')) cerrarTodos();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrarTodos(); });
+  }
+  montarBannersLaterales();
 
   refrescarBadgesFecha();
 })();

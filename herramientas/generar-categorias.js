@@ -207,6 +207,12 @@ const AVISO = `<div class="aviso">
    envejece cada día. El HTML trae la fecha en data-fecha y, como texto de
    respaldo sin JavaScript, la fecha misma: así el archivo no cambia de un
    día para otro y la regeneración sigue siendo idempotente. */
+/* Los dos botones de copiar de la fila: el del precio copia el número; el
+   de la última columna, la fila tal como se ve. app.js hace el trabajo. */
+const ICONO_COPIAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+function botonCopiarPrecio(it) {
+  return ` <button class="btn-copiar btn-copiar-precio" type="button" data-copiar-monto="${esc(it.codigo)}" aria-label="Copiar el precio de ${esc(it.nombre)}" title="Copiar el precio">${ICONO_COPIAR}</button>`;
+}
 const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
 function badgeFecha(it) {
   const f = String(it.fecha || '');
@@ -243,12 +249,9 @@ function fila(it) {
       (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') + `</td>
             <td><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
-            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
+            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}${it.ref === null ? '' : botonCopiarPrecio(it)}</td>
             <td class="celda-estado">${badgeFecha(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
-            <td class="num acciones">` +
-      `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
-      (it.ref === null ? '' :
-        `<button class="btn-add" type="button" data-add="${esc(it.codigo)}" data-nombre="${esc(it.nombre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`) + `</td>
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-fila="${esc(it.codigo)}" aria-label="Copiar la fila de ${esc(it.nombre)}" title="Copiar la fila">${ICONO_COPIAR}</button></td>
           </tr>
           <tr class="fila-detalle" hidden><td colspan="6"></td></tr>`;
 }
@@ -423,7 +426,7 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
             <th scope="col">Última actualización</th>
-            <th scope="col" class="num"><span class="visually-hidden">Agregar a la lista</span></th>
+            <th scope="col" class="num">Copiar fila</th>
           </tr>
         </thead>
         <tbody id="tabla-estatica">
@@ -433,9 +436,9 @@ ${items.map(fila).join('\n')}
     </div>
 
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
-      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
-      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
-      Google Sheets se reparte en columnas. Salvo que el ítem diga otra cosa, el precio es
+      Pulse el nombre de un ítem para ver su precio por proveedor. El botón junto al precio
+      copia solo el número; el de la última columna copia la fila tal como se ve, separada
+      por tabuladores. Salvo que el ítem diga otra cosa, el precio es
       de mostrador: material retirado en almacén, sin transporte.
     </p>
 

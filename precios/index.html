@@ -188,7 +188,7 @@
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
             <th scope="col">Última actualización</th>
-            <th scope="col" class="num"><span class="visually-hidden">Agregar a la lista</span></th>
+            <th scope="col" class="num">Copiar fila</th>
           </tr>
         </thead>
         <tbody id="tabla-body"></tbody>
@@ -203,9 +203,10 @@
     </div>
 
     <p style="margin-top:1.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
-      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
-      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
-      Google Sheets se reparte en columnas (código, ítem, proveedor, precio, unidad, fecha…).
+      Pulse el nombre de un ítem para ver su precio por proveedor. El botón junto al precio
+      copia solo el número; el de la última columna copia la fila tal como se ve, separada
+      por tabuladores (al pegar en Excel o Google Sheets se reparte en columnas). El detalle
+      por proveedor, con código y especificación, se copia desde la ficha.
       Salvo que el ítem diga otra cosa, el precio es de mostrador: material retirado en
       almacén, sin transporte.
       <br>
