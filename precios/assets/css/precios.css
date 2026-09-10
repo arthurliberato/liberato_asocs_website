@@ -164,7 +164,10 @@ table{border-collapse:collapse;width:100%}
 .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
 .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-@media (max-width:1000px){
+/* El menú se pliega a 1080 y no a 1000: con «Proyectos en venta»
+   dentro, entre 961 y 1080 px la lista se montaba sobre el botón de
+   contacto. Medido con herramientas/auditar-contraste.js a su lado. */
+@media (max-width:1080px){
   .nav-toggle{display:flex}
   .nav{
     position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;

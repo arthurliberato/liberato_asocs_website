@@ -75,10 +75,15 @@ const ALCANCE_BASE = (CAT.meta && CAT.meta.alcanceBase) || '';
    ya cumple esa función. Las páginas generadas son hijas de una sección, no
    la sección misma, por eso marcan aria-current="true" y no "page". */
 function header(seccion) {
+  /* «En venta» sale del subdominio, igual que el sitio principal apunta
+     aquí desde su propio menú. Este es el lado con más tráfico —quien
+     busca precios de construcción muchas veces está presupuestando una
+     casa— y ese público es justo el de los apartamentos. */
   const nav = [
     ['./', 'Catálogo de precios', 'catalogo'],
     ['proveedores.html', 'Proveedores', 'proveedores'],
     ['quienes-somos.html', 'Quiénes somos', 'quienes-somos'],
+    [PRINCIPAL + '/proyectos-en-venta.html', 'Proyectos en venta', 'en-venta'],
   ].map(([href, texto, clave]) =>
     `<li><a href="${href}"${clave === seccion ? ' aria-current="true"' : ''}>${texto}</a></li>`
   ).join('\n        ');
@@ -132,6 +137,7 @@ const FOOTER = `<footer class="site-footer">
           <li><a href="proveedores.html">Directorio de proveedores</a></li>
           <li><a href="descargas/precios-construccion-rd.xlsx" download>Descargar en Excel</a></li>
           <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="${PRINCIPAL}/proyectos-en-venta.html">Apartamentos en venta</a></li>
         </ul>
       </div>
       <div>
