@@ -96,6 +96,13 @@
       fuente: o.fuente || '',
       itbis: o.itbis !== false,
       unidad: o.unidad || '',
+      /* Cuántos artículos del comercio representa esta cotización. Es 1 casi
+         siempre; sube cuando varios artículos comparten especificación y
+         precio y la importación los junta en una línea. Sin él la mediana
+         cuenta igual una lámpara única de RD$ 186,717 que un precio que
+         comparten veintiocho, y en una partida que se presupuesta por rango
+         eso la corre hacia arriba sin que se vea. */
+      peso: o.peso > 1 ? o.peso : 1,
       nota: nota
     });
   }
@@ -187,6 +194,8 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_MUNDOLED = 'Mundo LED';
+  var PROV_LUMINATTI = 'Luminatti';
 
 
   /* =========================================================
@@ -328,11 +337,13 @@
   });
   c('MAT-02-013', PROV_OCHOA, 323.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/eurojunta-5kg-derretido-p-ceramica-01096522',
-    nota: 'Eurojunta 5Kg ( Derretido P / Ceramica) · artículo 01-09-6522 · ref. BLANCO · marca MORTEROS EUROPA. El comercio lista 16 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 16,
+    nota: 'Eurojunta 5Kg ( Derretido P / Ceramica) · artículo 01-09-6522 · ref. BLANCO · marca MORTEROS EUROPA. El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-003', PROV_OCHOA, 842.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-blanca-01097657',
-    nota: 'Baldosa Porcelánica Blanca · artículo 01-09-7657 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 303.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Porcelánica Blanca · artículo 01-09-7657 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 303.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-007', PROV_OCHOA, 554.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adhesivo-cementicio-pegacol-blanco-04590147',
@@ -396,7 +407,8 @@
   });
   c('MAT-08-001', PROV_OCHOA, 764.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-esmeralda-01099156',
-    nota: 'Baldosa Cerámica L. Bávaro Esmeralda · artículo 01-09-9156 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 84.77 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica L. Bávaro Esmeralda · artículo 01-09-9156 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 84.77 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-001', PROV_OCHOA, 752, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-2-azul-01099153',
@@ -626,7 +638,8 @@
   });
   c('MAT-07-023', PROV_INNOVA, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchastranslucidas/plancha-translucida-fibraforte-amarillo-1-80m-x-0-046351',
-    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE AMARILLO 1.80M X 0.84M · artículo 046351 · ref. Plancha · marca INNOMATE. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'PLANCHA TRANSLUCIDA FIBRAFORTE AMARILLO 1.80M X 0.84M · artículo 046351 · ref. Plancha · marca INNOMATE. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-13-001', PROV_INNOVA, 895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesdeyesoyaccesorios/plancha-yeso-knauf-4-x8-x1-3-2-7-004771',
@@ -648,7 +661,8 @@
   });
   c('MAT-08-249', PROV_CIMA, 330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cer-1-5mm-300-1-2913',
-    nota: 'SEPARADOR CER 1.5MM 300/1 2912 · artículo 8413797269918. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'SEPARADOR CER 1.5MM 300/1 2912 · artículo 8413797269918. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-009', PROV_CIMA, 385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcla-panete-funda-93lbs',
@@ -660,7 +674,8 @@
   });
   c('MAT-02-013', PROV_CIMA, 515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-salmon-5kgs',
-    nota: 'DERRETIDO SALMON 5KGS · artículo 030024. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'DERRETIDO SALMON 5KGS · artículo 030024. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-003', PROV_CIMA, 1595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-funda-40kg',
@@ -684,11 +699,13 @@
   });
   c('MAT-02-013', PROV_CIMA, 525, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-white-5kgs',
-    nota: 'DERRETIDO WHITE 5KGS · artículo 098595. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DERRETIDO WHITE 5KGS · artículo 098595. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-013', PROV_CIMA, 495, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-linchen-5kgs',
-    nota: 'DERRETIDO LINCHEN 5KGS · artículo 020320. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DERRETIDO LINCHEN 5KGS · artículo 020320. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-013', PROV_CIMA, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-gris-5kgs',
@@ -802,7 +819,8 @@
   /* Max Ferretería · metales */
   c('MAT-07-023', PROV_MAX, 1050.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zinc-translucido-blanco-3x6',
-    nota: 'ZINC TRANSLUCIDO BLANCO 3X6 · artículo 0001130482 · ref. Lamina traslucida (fibra de vidrio / policarbonato) | Formato 3x6 pies (0.91 x 1.83 m) | Color Blanco. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ZINC TRANSLUCIDO BLANCO 3X6 · artículo 0001130482 · ref. Lamina traslucida (fibra de vidrio / policarbonato) | Formato 3x6 pies (0.91 x 1.83 m) | Color Blanco. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-066', PROV_MAX, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/yeso-puro-2-lbs',
@@ -828,11 +846,13 @@
   });
   c('MAT-10-008', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-simple-boton-ancho-s-lp-bco-37004',
-    nota: 'INT SIMPLE BOTON ANCHO S/LP BCO 37004 · artículo 0001127236 · ref. Color BCO · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'INT SIMPLE BOTON ANCHO S/LP BCO 37004 · artículo 0001127236 · ref. Color BCO · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-008', PROV_MAX, 155, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-simple-boton-a-c-lp-blanco-36984',
-    nota: 'INT SIMPLE BOTON A. C/LP BLANCO 36984 · artículo 0001127232 · ref. Color BLANCO · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'INT SIMPLE BOTON A. C/LP BLANCO 36984 · artículo 0001127232 · ref. Color BLANCO · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-008', PROV_MAX, 395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-sencillo-veto-plura-bco-60729',
@@ -844,7 +864,8 @@
   });
   c('MAT-10-007', PROV_MAX, 880, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-crema-veto-gcfi-36441',
-    nota: 'TOMACORRIENTE CREMA VETO GCFI 36441 · artículo 0001118656 · ref. Con proteccion GFCI | Color CREMA · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'TOMACORRIENTE CREMA VETO GCFI 36441 · artículo 0001118656 · ref. Con proteccion GFCI | Color CREMA · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-007', PROV_MAX, 194.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-superf-bco-veto-20068',
@@ -856,7 +877,8 @@
   });
   c('MAT-10-007', PROV_MAX, 235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-tomacorriente-veto-marfil-90191',
-    nota: 'INT.+TOMACORRIENTE VETO MARFIL 90191 · artículo 0001118614 · ref. Color MARFIL · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'INT.+TOMACORRIENTE VETO MARFIL 90191 · artículo 0001118614 · ref. Color MARFIL · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-008', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-thway-simple-veto-marfil-90207',
@@ -868,7 +890,8 @@
   });
   c('MAT-10-007', PROV_MAX, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-doble-veto-marfil-35369',
-    nota: 'TOMACORRIENTE DOBLE VETO MARFIL 35369 · artículo 0001118652 · ref. Color MARFIL · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'TOMACORRIENTE DOBLE VETO MARFIL 35369 · artículo 0001118652 · ref. Color MARFIL · marca VETO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-008', PROV_MAX, 380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-sencillo-veto-plura-ngr-61801',
@@ -1409,7 +1432,8 @@
   });
   c('EQU-04-027', PROV_FERREMIX, 85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/felpa-de-rodillo-para-pintar',
-    nota: 'Mota para pintar 9\'\' x 1 1/4\'\' pretul · artículo T28045 · marca Pretul. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mota para pintar 9\'\' x 1 1/4\'\' pretul · artículo T28045 · marca Pretul. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('EQU-04-027', PROV_FERREMIX, 209, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-pvc-9-rugosa',
@@ -1429,7 +1453,8 @@
   });
   c('EQU-04-027', PROV_FERREMIX, 169, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-semi-rugosa',
-    nota: 'Rodillo p/pinta, felpa 9", semi ugosa · artículo T13877 · ref. PINTA · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Rodillo p/pinta, felpa 9", semi ugosa · artículo T13877 · ref. PINTA · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('EQU-04-027', PROV_FERREMIX, 95, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-rolo-de-9',
@@ -1465,7 +1490,8 @@
   });
   c('EQU-04-027', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-para-pintar-felpa-extra-lisa',
-    nota: 'Repuesto p/odillo, felpa 9", exta lisa · artículo T13882 · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Repuesto p/odillo, felpa 9", exta lisa · artículo T13882 · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('EQU-04-027', PROV_FERREMIX, 140, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-rolo-jaula-9',
@@ -1645,7 +1671,8 @@
   });
   c('MAT-02-027', PROV_IBERICA, 2120, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-biscuit-2/',
-    nota: 'Derretido Keracolor U Biscuit 25 Lb · artículo 001383. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Derretido Keracolor U Biscuit 25 Lb · artículo 001383. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 1475, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-black/',
@@ -1665,35 +1692,43 @@
   });
   c('MAT-02-027', PROV_IBERICA, 3185, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-armor-25-lb/',
-    nota: 'Derretido Ultracolor Plus FA Armor 25 Lb · artículo 017672. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Derretido Ultracolor Plus FA Armor 25 Lb · artículo 017672. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3199.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-biscuit/',
-    nota: 'Derretido Ultracolor Plus FA Biscuit 25 Lb · artículo 012376. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Ultracolor Plus FA Biscuit 25 Lb · artículo 012376. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3090, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-black/',
-    nota: 'Derretido Ultracolor Plus FA Black 25 Lb · artículo 015096. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Derretido Ultracolor Plus FA Black 25 Lb · artículo 015096. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3150, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-charcoal/',
-    nota: 'Derretido Ultracolor Plus FA Charcoal 25 Lb · artículo 012794. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Ultracolor Plus FA Charcoal 25 Lb · artículo 012794. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-gray/',
-    nota: 'Derretido Ultracolor Plus FA Gray 25 Lb · artículo 013998. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Ultracolor Plus FA Gray 25 Lb · artículo 013998. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 2950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-hickory/',
-    nota: 'Derretido Ultracolor Plus FA Hickory 25 Lb · artículo 013337. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'Derretido Ultracolor Plus FA Hickory 25 Lb · artículo 013337. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3230, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-ivory/',
-    nota: 'Derretido Ultracolor Plus FA Ivory 25 Lb · artículo 012602. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Derretido Ultracolor Plus FA Ivory 25 Lb · artículo 012602. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3050.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-mocha-25-lb-2/',
-    nota: 'Derretido Ultracolor Plus FA Mocha 25 Lb · artículo 018166. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Ultracolor Plus FA Mocha 25 Lb · artículo 018166. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3420.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-wicker-25-lb/',
@@ -1701,7 +1736,8 @@
   });
   c('MAT-02-027', PROV_IBERICA, 3250, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-alabaster/',
-    nota: 'Derretido Ultracolor Plus FA Alabaster 25 Lb · artículo 017302. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'Derretido Ultracolor Plus FA Alabaster 25 Lb · artículo 017302. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-027', PROV_IBERICA, 3174.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-bamboo/',
@@ -1725,11 +1761,13 @@
   });
   c('MAT-02-029', PROV_IBERICA, 1370, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-biscuit/',
-    nota: 'Derretido Keracolor U Biscuit 10Lb · artículo 008300. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Keracolor U Biscuit 10Lb · artículo 008300. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-029', PROV_IBERICA, 1325, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-bone/',
-    nota: 'Derretido Keracolor U Bone 10 Lb · artículo 009964. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Derretido Keracolor U Bone 10 Lb · artículo 009964. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-029', PROV_IBERICA, 1390, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-pearl-gray/',
@@ -1757,11 +1795,13 @@
   });
   c('MAT-02-029', PROV_IBERICA, 1400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-keracolor-u-frost/',
-    nota: 'Derretido Keracolor U Frost 10 Lb · artículo 010781. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Derretido Keracolor U Frost 10 Lb · artículo 010781. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-029', PROV_IBERICA, 1850, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/derretido-ultracolor-plus-fa-avalanche-10-lb/',
-    nota: 'Derretido Ultracolor Plus FA Avalanche 10 Lb · artículo 019142. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Derretido Ultracolor Plus FA Avalanche 10 Lb · artículo 019142. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-030', PROV_OCHOA, 550.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mortero-pegacol-estuco-blanco-04590385',
@@ -1893,11 +1933,13 @@
   });
   c('MAT-02-054', PROV_INNOVA, 712, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5005-chamois-10-lb-para-061937',
-    nota: 'DERRETIDO MAPEI KERACOLOR 5005 CHAMOIS 10 LB PARA CERAMICA · artículo 061937 · marca MAPEI. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DERRETIDO MAPEI KERACOLOR 5005 CHAMOIS 10 LB PARA CERAMICA · artículo 061937 · marca MAPEI. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-054', PROV_INNOVA, 543.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071051-10-lb-blanco-para-c-058656',
-    nota: 'DERRETIDO WECO W-573 WE1071051 10 LB BLANCO PARA CERAMICA · artículo 058656 · marca WEC. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'DERRETIDO WECO W-573 WE1071051 10 LB BLANCO PARA CERAMICA · artículo 058656 · marca WEC. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-054', PROV_INNOVA, 556.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071085-10-lb-riviera-sand-058662',
@@ -2229,7 +2271,8 @@
   });
   c('MAT-06-033', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba · artículo 202601. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba · artículo 202601. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-06-034', PROV_MAX, 1735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/plywood-mdf-hidrofugado-1-2',
@@ -2285,7 +2328,8 @@
   });
   c('MAT-07-015', PROV_OCHOA, 1026.24, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-acero-gravi-carbon-16-1-2-x52-01097587',
-    nota: 'Teja Acero Gravi Carbon 16-1 / 2\'\'X52\'\' · artículo 01-09-7587 · ref. CHARCOAL2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 513.12 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Teja Acero Gravi Carbon 16-1 / 2\'\'X52\'\' · artículo 01-09-7587 · ref. CHARCOAL2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 513.12 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-016', PROV_OCHOA, 1677.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-mixta-gde-marron-01097666',
@@ -2305,7 +2349,8 @@
   });
   c('MAT-07-018', PROV_OCHOA, 394.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-grav-01092141',
-    nota: 'Caballete P / Teja Acero Grav. · artículo 01-09-2141 · ref. TERRACOTA2.5ML · marca DECRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Caballete P / Teja Acero Grav. · artículo 01-09-2141 · ref. TERRACOTA2.5ML · marca DECRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-018', PROV_OCHOA, 202.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-duna-01095354',
@@ -2349,7 +2394,8 @@
   });
   c('MAT-07-023', PROV_OCHOA, 1127.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/zinc-translucido-04770063',
-    nota: 'Zinc Translucido · artículo 04-77-0063 · ref. BLANCA3\'X6\' · marca BAF. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Zinc Translucido · artículo 04-77-0063 · ref. BLANCA3\'X6\' · marca BAF. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-024', PROV_OCHOA, 660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-para-aluzinc-21-04520043',
@@ -2385,11 +2431,13 @@
   });
   c('MAT-08-014', PROV_OCHOA, 2197.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramico-mediterranea-blanco-01098754',
-    nota: 'Baldosa Cerámico Mediterránea Blanco · artículo 01-09-8754 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 693.14 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámico Mediterránea Blanco · artículo 01-09-8754 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 693.14 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2112.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-01097718',
-    nota: 'Baldosa Cerámica Venato · artículo 01-09-7718 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 666.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Venato · artículo 01-09-7718 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 666.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2223.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mediterranea-01099061',
@@ -2553,7 +2601,8 @@
   c('MAT-08-019', PROV_CERARTE, 1903.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nature-40x120',
     itbis: false,
-    nota: 'NATURE 40X120 · artículo CERA-02696 · ref. 40X120 · marca BALDOCER. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'NATURE 40X120 · artículo CERA-02696 · ref. 40X120 · marca BALDOCER. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-019', PROV_CERARTE, 1887.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nature-40x120',
@@ -2703,7 +2752,8 @@
   c('MAT-08-019', PROV_CERARTE, 1990.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-node-40x120',
     itbis: false,
-    nota: 'RV NODE 40X120 · artículo CERA-36822 · ref. 40X120 · marca CIFRE. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'RV NODE 40X120 · artículo CERA-36822 · ref. 40X120 · marca CIFRE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-019', PROV_CERARTE, 1990.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-origin-brisk-40x120',
@@ -2871,7 +2921,8 @@
   });
   c('MAT-08-023', PROV_OCHOA, 2775.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-blanco-brillo-01098745',
-    nota: 'Baldosa Cerámica Subway Blanco Brillo · artículo 01-09-8745 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 31.54 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Subway Blanco Brillo · artículo 01-09-8745 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 31.54 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-023', PROV_OCHOA, 2355.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-negro-01098742',
@@ -2884,7 +2935,8 @@
   c('MAT-08-024', PROV_CERARTE, 1224.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/metro-white-biselado-10x20',
     itbis: false,
-    nota: 'METRO WHITE BISELADO 10X20 · artículo CERA-34562 · ref. 10X20 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'METRO WHITE BISELADO 10X20 · artículo CERA-34562 · ref. 10X20 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-025', PROV_OCHOA, 772.82, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-c-01097412',
@@ -2892,7 +2944,8 @@
   });
   c('MAT-08-025', PROV_OCHOA, 767.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-a-01097410',
-    nota: 'Baldosa Cerámica Makara Decor A · artículo 01-09-7410 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 26.86 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Makara Decor A · artículo 01-09-7410 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 26.86 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-026', PROV_CERARTE, 995, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/trace-20x20',
@@ -2910,7 +2963,8 @@
   });
   c('MAT-08-026', PROV_IBERICA, 924.83, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-brillo-20x20/',
-    nota: 'Blanco Brillo 20×20 · artículo 017837 · ref. 20×20. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Blanco Brillo 20×20 · artículo 017837 · ref. 20×20. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-027', PROV_OCHOA, 1177.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sysley-1-01097102',
@@ -2978,7 +3032,8 @@
   c('MAT-08-030', PROV_CERARTE, 1004.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-aylla-design-denver-75x26',
     itbis: false,
-    nota: 'CERAMICA AYLLA DESIGN DENVER 7.5X26 · artículo CERA-36632 · ref. 7.5X30 · marca KARINA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'CERAMICA AYLLA DESIGN DENVER 7.5X26 · artículo CERA-36632 · ref. 7.5X30 · marca KARINA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-030', PROV_CERARTE, 2592.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/jewell-75x30-2',
@@ -2993,12 +3048,14 @@
   c('MAT-08-030', PROV_CERARTE, 2072, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-spaced-75x30',
     itbis: false,
-    nota: 'RV. SPACED 7.5X30 · artículo CERA-36810 · ref. 7.5X30 · marca CIFRE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'RV. SPACED 7.5X30 · artículo CERA-36810 · ref. 7.5X30 · marca CIFRE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-030', PROV_CERARTE, 1980.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-spaced-75x30',
     itbis: false,
-    nota: 'RV. SPACED 7.5X30 · artículo CERA-36809 · ref. 7.5X30 · marca CIFRE. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'RV. SPACED 7.5X30 · artículo CERA-36809 · ref. 7.5X30 · marca CIFRE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-030', PROV_CERARTE, 2089.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-lexa-duna-75x30',
@@ -3013,7 +3070,8 @@
   c('MAT-08-030', PROV_CERARTE, 2188.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-lexa-duna-75x30',
     itbis: false,
-    nota: 'RV LEXA DUNA 7.5X30 · artículo CERA-36816 · ref. 7.5X30 · marca CIFRE. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'RV LEXA DUNA 7.5X30 · artículo CERA-36816 · ref. 7.5X30 · marca CIFRE. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-031', PROV_IBERICA, 1628.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-ice-brillo-25x40/',
@@ -3042,7 +3100,8 @@
   c('MAT-08-034', PROV_CERARTE, 2332.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-harlem-15x45',
     itbis: false,
-    nota: 'RV HARLEM 15X45 · artículo CERA-36784 · ref. 20X50 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'RV HARLEM 15X45 · artículo CERA-36784 · ref. 20X50 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-035', PROV_CERARTE, 459.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/toulouse-25x50',
@@ -3055,7 +3114,8 @@
   });
   c('MAT-08-036', PROV_OCHOA, 1229.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-gales-terra-01095832',
-    nota: 'Revestimiento Cerámico Gales Terra · artículo 01-09-5832 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 209.16 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Revestimiento Cerámico Gales Terra · artículo 01-09-5832 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 209.16 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-037', PROV_CERARTE, 1029.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fileto-34x50-14pcs',
@@ -3064,7 +3124,8 @@
   });
   c('MAT-08-038', PROV_OCHOA, 839.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brillo-blanco-01095987',
-    nota: 'Baldosa Cerámica Brillo Blanco · artículo 01-09-5987 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Brillo Blanco · artículo 01-09-5987 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-038', PROV_OCHOA, 900.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-egeo-blanco-01097972',
@@ -3084,7 +3145,8 @@
   });
   c('MAT-08-038', PROV_OCHOA, 815.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-perla-01095966',
-    nota: 'Baldosa Cerámica Badem Perla · artículo 01-09-5966 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 150.19 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Badem Perla · artículo 01-09-5966 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 150.19 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-038', PROV_OCHOA, 812.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-florida-mix-01099124',
@@ -3272,11 +3334,13 @@
   });
   c('MAT-08-041', PROV_FERREMIX, 495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-cedasa-brasil',
-    nota: 'Ceramia pared hd 2114 32x58 edasa brasil · artículo 49522 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Ceramia pared hd 2114 32x58 edasa brasil · artículo 49522 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-041', PROV_FERREMIX, 944, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-lorenzza-brasil',
-    nota: 'Ceramia pared 73048 32x58 lorenzza brasil · artículo 32573 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Ceramia pared 73048 32x58 lorenzza brasil · artículo 32573 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-042', PROV_OCHOA, 1264.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-marengo-01098105',
@@ -3292,7 +3356,8 @@
   });
   c('MAT-08-043', PROV_OCHOA, 470.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099001',
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9001 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 84.83 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 6,
+    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9001 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 84.83 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-043', PROV_OCHOA, 504.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099005',
@@ -3328,15 +3393,18 @@
   });
   c('MAT-08-043', PROV_OCHOA, 707.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099006',
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9006 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 127.39 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9006 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 127.39 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-043', PROV_OCHOA, 1220.14, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tour-beige-01096964',
-    nota: 'Baldosa Cerámica Tour Beige · artículo 01-09-6964 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.65 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Tour Beige · artículo 01-09-6964 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.65 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-043', PROV_OCHOA, 617.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-majolica-01098980',
-    nota: 'Baldosa Cerámica Majolica · artículo 01-09-8980 · ref. 30X605.55MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 111.2 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Majolica · artículo 01-09-8980 · ref. 30X605.55MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 111.2 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-043', PROV_OCHOA, 1321.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muretto-alabama-perla-01097955',
@@ -3482,7 +3550,8 @@
   c('MAT-08-043', PROV_CERARTE, 658.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-hueso-30x60-rt',
     itbis: false,
-    nota: 'CERÁMICA RV HUESO 30X60 RT · artículo CERA-36159 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'CERÁMICA RV HUESO 30X60 RT · artículo CERA-36159 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-043', PROV_CERARTE, 679.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-nieve-white-absoluto-30x60-rt-012493',
@@ -3607,7 +3676,8 @@
   });
   c('MAT-08-047', PROV_OCHOA, 1347.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-azul-01098534',
-    nota: 'Baldosa Cerámica Chromatic Azul · artículo 01-09-8534 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Chromatic Azul · artículo 01-09-8534 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1184.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-gris-01095782',
@@ -3727,7 +3797,8 @@
   });
   c('MAT-08-052', PROV_OCHOA, 1850.48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origins-graphic-white-01099190',
-    nota: 'Baldosa Cerámica Origins Graphic White · artículo 01-09-9190 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 500.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Origins Graphic White · artículo 01-09-9190 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 500.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1829.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-metric-oak-01099193',
@@ -3807,7 +3878,8 @@
   c('MAT-08-052', PROV_CERARTE, 995, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/modico-dune-30x90-rect',
     itbis: false,
-    nota: 'MODICO DUNE 30X90 RECT · artículo CERA-31532 · ref. 30X90 · marca ARGENTA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MODICO DUNE 30X90 RECT · artículo CERA-31532 · ref. 30X90 · marca ARGENTA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-052', PROV_CERARTE, 1609.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zig-larchwood-30x90-rect',
@@ -3877,7 +3949,8 @@
   c('MAT-08-052', PROV_CERARTE, 1842.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-level-xs-mod-30x90',
     itbis: false,
-    nota: 'RV LEVEL XS MOD 30X90 · artículo CERA-36771 · ref. 30X90 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'RV LEVEL XS MOD 30X90 · artículo CERA-36771 · ref. 30X90 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-052', PROV_CERARTE, 1084.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-assos-decorado-30x90',
@@ -3897,7 +3970,8 @@
   c('MAT-08-052', PROV_CERARTE, 1750.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-level-xs-30x90',
     itbis: false,
-    nota: 'RV LEVEL XS 30X90 · artículo CERA-36871 · ref. 30X90 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'RV LEVEL XS 30X90 · artículo CERA-36871 · ref. 30X90 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-052', PROV_IBERICA, 2655.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/caesar-natural-rectificado-30x90/',
@@ -3943,7 +4017,8 @@
   c('MAT-08-056', PROV_CERARTE, 1145.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/gran-urbano-46x100-rt',
     itbis: false,
-    nota: 'GRAN URBANO 46X100 RT · artículo CERA-33695 · ref. 45X100 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'GRAN URBANO 46X100 RT · artículo CERA-33695 · ref. 45X100 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-057', PROV_CERARTE, 664.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-saturno-ppi56940r-54x109-rt',
@@ -3964,7 +4039,8 @@
   });
   c('MAT-08-058', PROV_FERREMIX, 975, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-gris-alboran-polido-gran-56x113-brasil',
-    nota: 'Ceramia piso gris alboran polido gran 56 x 113 brasil · artículo 49541 · marca Génerico. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Ceramia piso gris alboran polido gran 56 x 113 brasil · artículo 49541 · marca Génerico. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-059', PROV_OCHOA, 669.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-canela-slim-01098799',
@@ -3980,11 +4056,13 @@
   });
   c('MAT-08-060', PROV_OCHOA, 4005.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yoho-oak-01098431',
-    nota: 'Baldosa Cerámica Yoho Oak · artículo 01-09-8431 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 696.55 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Yoho Oak · artículo 01-09-8431 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 696.55 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-060', PROV_OCHOA, 3981.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-opera-silver-01099178',
-    nota: 'Baldosa Cerámica Opera Silver · artículo 01-09-9178 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 692.37 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Baldosa Cerámica Opera Silver · artículo 01-09-9178 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 692.37 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-060', PROV_OCHOA, 3429.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-perla-01098587',
@@ -4020,7 +4098,8 @@
   });
   c('MAT-08-062', PROV_OCHOA, 1327.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-roble-01098458',
-    nota: 'Baldosa Cerámica Acadian Roble · artículo 01-09-8458 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 366.76 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Acadian Roble · artículo 01-09-8458 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 366.76 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-062', PROV_OCHOA, 1295.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-haya-01098457',
@@ -4056,7 +4135,8 @@
   });
   c('MAT-08-063', PROV_OCHOA, 1883.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-pigmenta-ambar-01099291',
-    nota: 'Sa Pigmenta Ambar · artículo 01-09-9291 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 905.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Sa Pigmenta Ambar · artículo 01-09-9291 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 905.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-063', PROV_OCHOA, 2779.58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-faces-ceniza-01097561',
@@ -4142,7 +4222,8 @@
   c('MAT-08-064', PROV_CERARTE, 1082.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-montreal-beige-64x123-rt',
     itbis: false,
-    nota: 'PV MONTREAL BEIGE 64X123 RT · artículo CERA-34767 · ref. 60X120 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PV MONTREAL BEIGE 64X123 RT · artículo CERA-34767 · ref. 60X120 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-065', PROV_OCHOA, 741.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-quadra-liscio-01096491',
@@ -4197,7 +4278,8 @@
   });
   c('MAT-08-071', PROV_OCHOA, 401.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-san-marino-01092405',
-    nota: 'Baldosa Cerámica Piso San Marino · artículo 01-09-2405 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.33 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Piso San Marino · artículo 01-09-2405 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.33 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 717.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-volcan-01097821',
@@ -4205,7 +4287,8 @@
   });
   c('MAT-08-071', PROV_OCHOA, 714.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-orisha-beige-01099013',
-    nota: 'Baldosa Cerámica Orisha Beige · artículo 01-09-9013 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Orisha Beige · artículo 01-09-9013 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 407, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-baltimore-01097894',
@@ -4213,11 +4296,13 @@
   });
   c('MAT-08-071', PROV_OCHOA, 408.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-anthem-white-plus-01097898',
-    nota: 'Baldosa Cerámica Anthem White Plus · artículo 01-09-7898 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.66 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Anthem White Plus · artículo 01-09-7898 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.66 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 720.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pebbles-merida-ext-01096668',
-    nota: 'Baldosa Cerámica Pebbles Mérida Ext. · artículo 01-09-6668 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Baldosa Cerámica Pebbles Mérida Ext. · artículo 01-09-6668 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 702.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-ocre-01097820',
@@ -4225,7 +4310,8 @@
   });
   c('MAT-08-071', PROV_OCHOA, 710.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-01096893',
-    nota: 'Baldosa Cerámica Blanco · artículo 01-09-6893 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Blanco · artículo 01-09-6893 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 746.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-medina-beige-01098948',
@@ -4249,7 +4335,8 @@
   });
   c('MAT-08-071', PROV_OCHOA, 806.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oliana-beige-anti-01093520',
-    nota: 'Baldosa Cerámica Oliana Beige Anti · artículo 01-09-3520 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.64 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Oliana Beige Anti · artículo 01-09-3520 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.64 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 441.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/piso-branco-neve-plus-brillo-02125-01099047',
@@ -4269,7 +4356,8 @@
   });
   c('MAT-08-071', PROV_OCHOA, 714.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caiman-gris-01097825',
-    nota: 'Baldosa Cerámica Caiman Gris · artículo 01-09-7825 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Caiman Gris · artículo 01-09-7825 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_OCHOA, 822.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-beige-01085658',
@@ -4427,7 +4515,8 @@
   });
   c('MAT-08-071', PROV_BELLON, 652.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45310 11Pcs/Cjs Interior · artículo 184574. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 132 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45310 11Pcs/Cjs Interior · artículo 184574. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 132 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_BELLON, 1096.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -4439,7 +4528,8 @@
   });
   c('MAT-08-071', PROV_BELLON, 671.84, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45201 11Pcs/Cjs Interior-Exterior · artículo 196066. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 136 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45201 11Pcs/Cjs Interior-Exterior · artículo 196066. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 136 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-071', PROV_BELLON, 805.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -4491,11 +4581,13 @@
   });
   c('MAT-08-073', PROV_OCHOA, 394.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-olga-plus-01099017',
-    nota: 'Baldosa Cerámica Piso Olga Plus · artículo 01-09-9017 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.22 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'Baldosa Cerámica Piso Olga Plus · artículo 01-09-9017 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.22 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-073', PROV_OCHOA, 422.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-concreto-gris-01099020',
-    nota: 'Baldosa Cerámica Concreto Gris · artículo 01-09-9020 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 109.56 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Concreto Gris · artículo 01-09-9020 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 109.56 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-073', PROV_OCHOA, 395.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-pompeia-marron-01098491',
@@ -4551,7 +4643,8 @@
   });
   c('MAT-08-074', PROV_OCHOA, 596.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-brickroad-gris-mate-01099318',
-    nota: 'Pared Brickroad Gris Mate · artículo 01-09-9318 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 108.09 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Pared Brickroad Gris Mate · artículo 01-09-9318 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 108.09 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-074', PROV_OCHOA, 1056.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-gaia-01098134',
@@ -4587,7 +4680,8 @@
   });
   c('MAT-08-075', PROV_BELLON, 718.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56010-1 7Pcs/Cjs Interior · artículo 205667. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 226 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56010-1 7Pcs/Cjs Interior · artículo 205667. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 226 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-075', PROV_BELLON, 864.96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -4595,7 +4689,8 @@
   });
   c('MAT-08-075', PROV_BELLON, 696.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56046 7Pcs/Cjs Exterior · artículo 218383. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 219 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56046 7Pcs/Cjs Exterior · artículo 218383. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 219 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-075', PROV_BELLON, 674.16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -4615,7 +4710,8 @@
   });
   c('MAT-08-076', PROV_OCHOA, 509.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-ref-5902-01099255',
-    nota: 'Cer. Ref-5902 · artículo 01-09-9255 · ref. 33X575.31MT/2. La tienda cotiza por pieza; van 5.31 piezas por m² según su propia referencia (RD$ 96 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'Cer. Ref-5902 · artículo 01-09-9255 · ref. 33X575.31MT/2. La tienda cotiza por pieza; van 5.31 piezas por m² según su propia referencia (RD$ 96 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-076', PROV_OCHOA, 509.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-hd-ref-57702-01099253',
@@ -4623,11 +4719,13 @@
   });
   c('MAT-08-077', PROV_OCHOA, 427.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098576',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8576 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 142.12 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Piso · artículo 01-09-8576 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 142.12 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-077', PROV_OCHOA, 375.44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098552',
-    nota: 'Baldosa Cerámica · artículo 01-09-8552 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.73 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica · artículo 01-09-8552 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.73 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-077', PROV_OCHOA, 375.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098574',
@@ -4675,7 +4773,8 @@
   });
   c('MAT-08-077', PROV_FERREMIX, 389, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-58-x-58',
-    nota: 'Ceramia piso hd 5798 58x58 vistabella brasil · artículo 49532 · marca Brasileña. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Ceramia piso hd 5798 58x58 vistabella brasil · artículo 49532 · marca Brasileña. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-077', PROV_FERREMIX, 410, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-beige-hd-58x58-brasil',
@@ -4683,7 +4782,8 @@
   });
   c('MAT-08-077', PROV_FERREMIX, 495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-3798-58x58',
-    nota: 'Ceramia piso hd 3798 58x58 majopar brasil · artículo 49536 · marca Cedasa Brasil. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Ceramia piso hd 3798 58x58 majopar brasil · artículo 49536 · marca Cedasa Brasil. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-078', PROV_OCHOA, 913.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-perla-01098000',
@@ -4707,11 +4807,13 @@
   });
   c('MAT-08-078', PROV_OCHOA, 983.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-cerezo-01095939',
-    nota: 'Baldosa Cerámica Fronda Cerezo · artículo 01-09-5939 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 118.07 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Fronda Cerezo · artículo 01-09-5939 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 118.07 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-078', PROV_OCHOA, 1017.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-cenere-01095941',
-    nota: 'Baldosa Cerámica Castle Cenere · artículo 01-09-5941 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 122.17 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Castle Cenere · artículo 01-09-5941 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 122.17 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-078', PROV_OCHOA, 757.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-gris-01098143',
@@ -4861,7 +4963,8 @@
   });
   c('MAT-08-081', PROV_OCHOA, 1279.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-olimpia-beige-01097932',
-    nota: 'Baldosa Cerámica Olimpia Beige · artículo 01-09-7932 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Olimpia Beige · artículo 01-09-7932 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-081', PROV_OCHOA, 1093.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-carrara-01098054',
@@ -4881,7 +4984,8 @@
   });
   c('MAT-08-081', PROV_OCHOA, 1196.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palace-gris-01094759',
-    nota: 'Baldosa Cerámica Palace Gris · artículo 01-09-4759 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Palace Gris · artículo 01-09-4759 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-081', PROV_OCHOA, 1491.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yukon-ivory-01097065',
@@ -4998,7 +5102,8 @@
   c('MAT-08-081', PROV_CERARTE, 645.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-glacial-60x60-rt',
     itbis: false,
-    nota: 'CERAMICA GLACIAL 60X60 RT · artículo CERA-36653 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'CERAMICA GLACIAL 60X60 RT · artículo CERA-36653 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-081', PROV_CERARTE, 668.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-pavia-605x605',
@@ -5008,7 +5113,8 @@
   c('MAT-08-081', PROV_CERARTE, 691.95, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-pettros-60x60-rt',
     itbis: false,
-    nota: 'CERAMICA PETTROS 60X60 RT · artículo CERA-36659 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'CERAMICA PETTROS 60X60 RT · artículo CERA-36659 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-082', PROV_OCHOA, 2092.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wood-roble-antideslizante-01097220',
@@ -5086,7 +5192,8 @@
   });
   c('MAT-08-086', PROV_OCHOA, 951.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venus-pulido-01099150',
-    nota: 'Baldosa Cerámica Venus Pulido · artículo 01-09-9150 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Venus Pulido · artículo 01-09-9150 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-086', PROV_OCHOA, 1730.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caseto-roble-01097573',
@@ -5350,7 +5457,8 @@
   });
   c('MAT-08-095', PROV_OCHOA, 2294.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-blanco-01098672',
-    nota: 'Baldosa Cerámica Cavallina Blanco · artículo 01-09-8672 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1662.84 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Cavallina Blanco · artículo 01-09-8672 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1662.84 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-095', PROV_OCHOA, 2271.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-gris-01099040',
@@ -5390,7 +5498,8 @@
   });
   c('MAT-08-095', PROV_OCHOA, 1871, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-oxido-01098674',
-    nota: 'Baldosa Cerámica Metallo Óxido · artículo 01-09-8674 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1355.8 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Metallo Óxido · artículo 01-09-8674 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1355.8 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-095', PROV_OCHOA, 1915.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-beige-01098617',
@@ -5530,7 +5639,8 @@
   });
   c('MAT-08-107', PROV_OCHOA, 666.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mirror-brown-01098296',
-    nota: 'Baldosa Cerámica Mirror Brown · artículo 01-09-8296 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Mirror Brown · artículo 01-09-8296 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-107', PROV_OCHOA, 1226.14, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-blanco-01096725',
@@ -5594,7 +5704,8 @@
   });
   c('MAT-08-111', PROV_OCHOA, 757.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-perla-01098142',
-    nota: 'Baldosa Cerámica Toronto Perla · artículo 01-09-8142 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Toronto Perla · artículo 01-09-8142 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-111', PROV_OCHOA, 482.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/albero-bosco-plus-hd-mad-01098762',
@@ -5606,7 +5717,8 @@
   });
   c('MAT-08-111', PROV_OCHOA, 995.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-01095217',
-    nota: 'Baldosa Cerámica Colorgloss Blanco · artículo 01-09-5217 · ref. 20X608.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 119.45 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Colorgloss Blanco · artículo 01-09-5217 · ref. 20X608.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 119.45 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-111', PROV_OCHOA, 788.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brienz-01098102',
@@ -5618,11 +5730,13 @@
   });
   c('MAT-08-111', PROV_OCHOA, 692.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-perla-climb-01098692',
-    nota: 'Baldosa Cerámica City Perla Climb · artículo 01-09-8692 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.18 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica City Perla Climb · artículo 01-09-8692 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.18 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-111', PROV_OCHOA, 777.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gravel-gris-01098106',
-    nota: 'Baldosa Cerámica Gravel Gris · artículo 01-09-8106 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 93.34 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Gravel Gris · artículo 01-09-8106 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 93.34 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-111', PROV_OCHOA, 723.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mos-chip-marron-01094466',
@@ -5670,7 +5784,8 @@
   });
   c('MAT-08-112', PROV_OCHOA, 1681.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-woodstrip-nogal-01098348',
-    nota: 'Baldosa Cerámica Woodstrip Nogal · artículo 01-09-8348 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 302.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Woodstrip Nogal · artículo 01-09-8348 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 302.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-112', PROV_OCHOA, 1280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alameda-blanco-01097912',
@@ -5686,7 +5801,8 @@
   });
   c('MAT-08-112', PROV_OCHOA, 1251.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-perla-01098004',
-    nota: 'Baldosa Alabama Perla · artículo 01-09-8004 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Alabama Perla · artículo 01-09-8004 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-112', PROV_OCHOA, 1666.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-marfil-01098685',
@@ -6038,7 +6154,8 @@
   });
   c('MAT-08-117', PROV_OCHOA, 2274.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-rail-ceniza-01098362',
-    nota: 'Baldosa Cerámica Igneous Stone Rail Ceniza · artículo 01-09-8362 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 614.74 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Igneous Stone Rail Ceniza · artículo 01-09-8362 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 614.74 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-117', PROV_OCHOA, 1750.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pontesei-negro-01098127',
@@ -6082,7 +6199,8 @@
   });
   c('MAT-08-118', PROV_OCHOA, 1988.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-gris-01098364',
-    nota: 'Baldosa Cerámica Igneous Stone Gris · artículo 01-09-8364 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 811.58 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Igneous Stone Gris · artículo 01-09-8364 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 811.58 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-118', PROV_OCHOA, 1367.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vendome-gris-01096673',
@@ -6129,7 +6247,8 @@
   c('MAT-08-122', PROV_CERARTE, 1713.83, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-flotan-canele-45x120',
     itbis: false,
-    nota: 'RV FLOTAN CANELE 45X120 · artículo CERA-37077 · ref. 45X120 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'RV FLOTAN CANELE 45X120 · artículo CERA-37077 · ref. 45X120 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-123', PROV_OCHOA, 1708.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-pure-essenza-plu-nero-01098723',
@@ -6183,7 +6302,8 @@
   c('MAT-08-123', PROV_CERARTE, 996.8, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-viterbo-60x120',
     itbis: false,
-    nota: 'PORCELANATO VITERBO 60X120 · artículo CERA-36787 · ref. 60X120 · marca GRIFINE. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'PORCELANATO VITERBO 60X120 · artículo CERA-36787 · ref. 60X120 · marca GRIFINE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-123', PROV_CERARTE, 1045.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-monza-60x120',
@@ -6224,7 +6344,8 @@
   });
   c('MAT-08-124', PROV_IBERICA, 3349.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-moon-esmeralda-antislip-15x15/',
-    nota: 'Porcelanato Moon Esmeralda Antislip 15×15 · artículo 019280 · ref. 15×15. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Porcelanato Moon Esmeralda Antislip 15×15 · artículo 019280 · ref. 15×15. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-125', PROV_CERARTE, 2611.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-goroka-20x20',
@@ -6248,7 +6369,8 @@
   });
   c('MAT-08-126', PROV_IBERICA, 3926.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rhombus-cream-14x24/',
-    nota: 'Porcelanato Rhombus Cream 14×24 · artículo 010634 · ref. 14×24. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Porcelanato Rhombus Cream 14×24 · artículo 010634 · ref. 14×24. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-127', PROV_IBERICA, 2990.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-sonar-white-hex-22x25/',
@@ -6262,7 +6384,8 @@
   c('MAT-08-129', PROV_CERARTE, 1838.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bali-333x333',
     itbis: false,
-    nota: 'PORCELANATO BALI 33.3X33.3 · artículo CERA-36767 · ref. 30X30 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO BALI 33.3X33.3 · artículo CERA-36767 · ref. 30X30 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-130', PROV_CERARTE, 6935.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-alaska-white-150x300-6mm',
@@ -6279,7 +6402,8 @@
   });
   c('MAT-08-132', PROV_OCHOA, 839.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-arena-01095737',
-    nota: 'Baldosa At Kiel Arena · artículo 01-09-5737 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa At Kiel Arena · artículo 01-09-5737 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-132', PROV_OCHOA, 1073.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-perla-01095738',
@@ -6308,7 +6432,8 @@
   c('MAT-08-133', PROV_CERARTE, 1363.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-nusa-pool-30x60',
     itbis: false,
-    nota: 'PORC. NUSA POOL 30X60 · artículo CERA-36500 · ref. 30X60 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORC. NUSA POOL 30X60 · artículo CERA-36500 · ref. 30X60 · marca ARGENTA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-133', PROV_CERARTE, 1309.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-nusa-pool-30x60',
@@ -6327,7 +6452,8 @@
   });
   c('MAT-08-135', PROV_OCHOA, 796.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-piscis-relieve-crema-01098773',
-    nota: 'Baldosa Porcelánica Piscis Relieve Crema · artículo 01-09-8773 · ref. 25X755.34MT2 · marca HALCON. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 149.19 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Porcelánica Piscis Relieve Crema · artículo 01-09-8773 · ref. 25X755.34MT2 · marca HALCON. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 149.19 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-135', PROV_OCHOA, 1544.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ardesia-tilt-cenere-01098255',
@@ -6344,7 +6470,8 @@
   c('MAT-08-138', PROV_CERARTE, 682.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-rv-ripado-45x90-rt',
     itbis: false,
-    nota: 'SEMI-GRES RV RIPADO 45X90 RT · artículo CERA-36049 · ref. 45X90 · marca LUME CERAMICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'SEMI-GRES RV RIPADO 45X90 RT · artículo CERA-36049 · ref. 45X90 · marca LUME CERAMICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-139', PROV_CERARTE, 1566.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pietra-di-bergamo-100x100-012773',
@@ -6354,7 +6481,8 @@
   c('MAT-08-139', PROV_CERARTE, 1696.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-acapulco-108x108-rt-012825',
     itbis: false,
-    nota: 'PORCELANATO ACAPULCO 108X108 RT · artículo CERA-36650 · ref. 100X100 · marca VILLAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO ACAPULCO 108X108 RT · artículo CERA-36650 · ref. 100X100 · marca VILLAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-140', PROV_OCHOA, 1243.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-carson-ceniza-mad-mate-01097993',
@@ -6392,7 +6520,8 @@
   });
   c('MAT-08-144', PROV_OCHOA, 1505.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-ceniza-01098732',
-    nota: 'Baldosa Cerámica Aren Ceniza · artículo 01-09-8732 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 361.85 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Aren Ceniza · artículo 01-09-8732 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 361.85 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-144', PROV_OCHOA, 1316.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-terra-01098734',
@@ -6412,7 +6541,8 @@
   });
   c('MAT-08-144', PROV_OCHOA, 939.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-magicwood-crema-01097845',
-    nota: 'Baldosa Porcelánica Magicwood Crema · artículo 01-09-7845 · ref. 20X1204.23MT/2 · marca SALONI. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 222.06 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Porcelánica Magicwood Crema · artículo 01-09-7845 · ref. 20X1204.23MT/2 · marca SALONI. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 222.06 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-144', PROV_CERARTE, 2090, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-boreal-20x120-ret-5pz',
@@ -6436,7 +6566,8 @@
   });
   c('MAT-08-145', PROV_IBERICA, 1949.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-bellver-grey-23-3x120-2/',
-    nota: 'Porcelanato Tablilla Bellver Grey 23.3×120 · artículo 018086 · ref. 23.3×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Porcelanato Tablilla Bellver Grey 23.3×120 · artículo 018086 · ref. 23.3×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-146', PROV_OCHOA, 1122.74, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-boreal-haya-01098726',
@@ -6444,11 +6575,13 @@
   });
   c('MAT-08-146', PROV_IBERICA, 1949.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-kenia-natural-23x120-2/',
-    nota: 'Porcelanato Tablilla Kenia Natural 23×120 · artículo 018757 · ref. 23×120. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Porcelanato Tablilla Kenia Natural 23×120 · artículo 018757 · ref. 23×120. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-146', PROV_IBERICA, 1798, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-ninsba-beige-rect-23x120-2/',
-    nota: 'Porcelanato Tablilla Ninsba Beige Rect. 23×120 · artículo 017948 · ref. 23×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Porcelanato Tablilla Ninsba Beige Rect. 23×120 · artículo 017948 · ref. 23×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-147', PROV_OCHOA, 1516.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-metric-blanco-01098828',
@@ -6536,7 +6669,8 @@
   });
   c('MAT-08-148', PROV_IBERICA, 2249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rodano-chalk-rect-60x120/',
-    nota: 'Porcelanato Rodano Chalk Rect. 60×120 · artículo 017897 · ref. 60×120. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Porcelanato Rodano Chalk Rect. 60×120 · artículo 017897 · ref. 60×120. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-149', PROV_CERARTE, 2029.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-infinity-savlon-80x160-rt',
@@ -6594,7 +6728,8 @@
   });
   c('MAT-08-152', PROV_OCHOA, 1062.22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-monza-gris-01098543',
-    nota: 'Baldosa Cerámica Monza Gris · artículo 01-09-8543 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 215.46 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Monza Gris · artículo 01-09-8543 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 215.46 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-152', PROV_OCHOA, 581.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-taranto-crema-01098541',
@@ -6634,7 +6769,8 @@
   });
   c('MAT-08-156', PROV_OCHOA, 1251.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-bone-01097826',
-    nota: 'Baldosa Porcelánica Rajasthan Bone · artículo 01-09-7826 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Porcelánica Rajasthan Bone · artículo 01-09-7826 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-156', PROV_OCHOA, 1311.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-black-antislip-01098500',
@@ -6719,7 +6855,8 @@
   });
   c('MAT-08-156', PROV_IBERICA, 1350.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rodano-chalk-mate-30x60/',
-    nota: 'Porcelanato Rodano Chalk Mate 30×60 · artículo 017752 · ref. 30×60. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Porcelanato Rodano Chalk Mate 30×60 · artículo 017752 · ref. 30×60. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-157', PROV_CERARTE, 1507.72, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pyrenees-out-60x60',
@@ -6729,7 +6866,8 @@
   c('MAT-08-157', PROV_CERARTE, 903.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-marfil-marmolizado-60x60-rt-012498',
     itbis: false,
-    nota: 'PORCELANATO PV MARFIL MARMOLIZADO 60X60 RT · artículo CERA-36166 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO PV MARFIL MARMOLIZADO 60X60 RT · artículo CERA-36166 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-157', PROV_CERARTE, 879.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-inca-calacatta-60x60-rt',
@@ -6782,7 +6920,8 @@
   });
   c('MAT-08-157', PROV_IBERICA, 1190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-elpaso-light-beige-mate-rec-60x60/',
-    nota: 'Porcelanato Elpaso Light Beige Mate Rec. 60×60 · artículo 018678 · ref. 60×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Porcelanato Elpaso Light Beige Mate Rec. 60×60 · artículo 018678 · ref. 60×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-157', PROV_IBERICA, 2249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-kursaal-slate-rectificado-60x60/',
@@ -6825,7 +6964,8 @@
   c('MAT-08-158', PROV_CERARTE, 1111.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-city-76x76-rt-012734',
     itbis: false,
-    nota: 'PORCELANATO CITY 76X76 RT · artículo CERA-36609 · ref. 75X75 · marca CERAMICA CRISTOFOLETTI. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO CITY 76X76 RT · artículo CERA-36609 · ref. 75X75 · marca CERAMICA CRISTOFOLETTI. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-158', PROV_CERARTE, 756.14, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-petra-natural-75x75-rt-012777',
@@ -7221,7 +7361,8 @@
   c('MAT-08-172', PROV_CERARTE, 1274.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-ark-60x120-rt-2',
     itbis: false,
-    nota: 'PORC. ARK 60X120 RT · artículo CERA-35449 · ref. 60X120 · marca TILE SPACE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORC. ARK 60X120 RT · artículo CERA-35449 · ref. 60X120 · marca TILE SPACE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-172', PROV_CERARTE, 2181.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-sun-60x120-rt',
@@ -7370,7 +7511,8 @@
   c('MAT-08-180', PROV_CERARTE, 5799.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bw-flow-120x280-6mm-ret',
     itbis: false,
-    nota: 'PORCELANATO B&W FLOW 120X280 6MM RET · artículo CERA-31689 · ref. 120X280 · marca FLORIM. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO B&W FLOW 120X280 6MM RET · artículo CERA-31689 · ref. 120X280 · marca FLORIM. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-180', PROV_CERARTE, 6244.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-gris-120x280-6mm-ret',
@@ -7380,7 +7522,8 @@
   c('MAT-08-181', PROV_CERARTE, 2402.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-origo-8x315',
     itbis: false,
-    nota: 'PORCELANATO ORIGO 8X31.5 · artículo CERA-36428 · ref. 10X30 · marca VIVES AZULEJOS Y GRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'PORCELANATO ORIGO 8X31.5 · artículo CERA-36428 · ref. 10X30 · marca VIVES AZULEJOS Y GRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-181', PROV_CERARTE, 2709.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-origo-8x315',
@@ -7409,7 +7552,8 @@
   c('MAT-08-182', PROV_CERARTE, 2244.92, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porce-venus-33x285',
     itbis: false,
-    nota: 'PORCE. VENUS 33X28.5 · artículo CERA-36774 · ref. 30X30 · marca REALONDA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'PORCE. VENUS 33X28.5 · artículo CERA-36774 · ref. 30X30 · marca REALONDA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-182', PROV_CERARTE, 2244.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-scale-30-7x30-7-013060',
@@ -7424,7 +7568,8 @@
   c('MAT-08-184', PROV_CERARTE, 7890.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-nebula-150x300-6mm',
     itbis: false,
-    nota: 'LEVIGATO NEBULA 150X300 6MM · artículo CERA-31394 · ref. 150X300 · marca GRANITI FIANDRE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'LEVIGATO NEBULA 150X300 6MM · artículo CERA-31394 · ref. 150X300 · marca GRANITI FIANDRE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-184', PROV_CERARTE, 6081.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-eminent-150x300',
@@ -7474,7 +7619,8 @@
   c('MAT-08-185', PROV_CERARTE, 10949.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-i-naturali-arabescato-162x324-12mm',
     itbis: false,
-    nota: 'PORCELANATO I NATURALI ARABESCATO 162X324 12MM · artículo CERA-31763 · ref. 162X324 · marca LAMINAM. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO I NATURALI ARABESCATO 162X324 12MM · artículo CERA-31763 · ref. 162X324 · marca LAMINAM. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-185', PROV_CERARTE, 12535.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-i-naturali-arabescato-162x324-12mm',
@@ -7718,7 +7864,8 @@
   c('MAT-08-191', PROV_CERARTE, 1003.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-viterbo-60x60',
     itbis: false,
-    nota: 'PORCELANATO VITERBO 60X60 · artículo CERA-36792 · ref. 60X60 · marca GRIFINE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PORCELANATO VITERBO 60X60 · artículo CERA-36792 · ref. 60X60 · marca GRIFINE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-192', PROV_OCHOA, 1386.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-art-indigo-01097944',
@@ -7848,7 +7995,8 @@
   c('MAT-08-202', PROV_CERARTE, 947.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-rodes-07x26',
     itbis: false,
-    nota: 'MOSAICO RODES 07X26 · artículo CERA-33750 · ref. 26X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MOSAICO RODES 07X26 · artículo CERA-33750 · ref. 26X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-203', PROV_OCHOA, 3159.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-jade50ay-jade-mate-poliure-01098813',
@@ -7884,7 +8032,8 @@
   });
   c('MAT-08-203', PROV_OCHOA, 2863.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-piscina-01097980',
-    nota: 'Baldosa Cerámica Mosaico Niebla Piscina · artículo 01-09-7980 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 286.35 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Mosaico Niebla Piscina · artículo 01-09-7980 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 286.35 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-203', PROV_OCHOA, 2707.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-fuerte-01097982',
@@ -7896,7 +8045,8 @@
   });
   c('MAT-08-203', PROV_OCHOA, 7157.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-bronze-fibra-01097131',
-    nota: 'Baldosa Cerámica Mosaico Bronze Fibra · artículo 01-09-7131 · ref. 30.7X30.710.00M · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 715.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Baldosa Cerámica Mosaico Bronze Fibra · artículo 01-09-7131 · ref. 30.7X30.710.00M · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 715.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-203', PROV_OCHOA, 1844.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-arena-01098155',
@@ -7919,7 +8069,8 @@
   c('MAT-08-203', PROV_CERARTE, 1414.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-tasos-1015x1015',
     itbis: false,
-    nota: 'MOSAICO TASOS 10.15X10.15 · artículo CERA-36747 · ref. 30X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MOSAICO TASOS 10.15X10.15 · artículo CERA-36747 · ref. 30X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-203', PROV_IBERICA, 892.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-artist-black-cristal-metal-piedra-natural-2-3x9-8x8-30x30/',
@@ -7959,7 +8110,8 @@
   });
   c('MAT-08-204', PROV_OCHOA, 4636.17, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-01098988',
-    nota: 'Baldosa Cerámica Mosaico Hexagonal · artículo 01-09-8988 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 421.47 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Baldosa Cerámica Mosaico Hexagonal · artículo 01-09-8988 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 421.47 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-204', PROV_OCHOA, 5223.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-black-diamond-01098986',
@@ -7975,7 +8127,8 @@
   });
   c('MAT-08-205', PROV_OCHOA, 1349.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-azul-poli-niaz25y-01095850',
-    nota: 'Mosaico Niebla Azul Poli Niaz25Y · artículo 01-09-5850 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mosaico Niebla Azul Poli Niaz25Y · artículo 01-09-5850 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-205', PROV_OCHOA, 1582.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-turquesa-01094410',
@@ -8055,7 +8208,8 @@
   });
   c('MAT-08-205', PROV_IBERICA, 690.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-iris-artic-ms3800-31-6x31-6/',
-    nota: 'Mosaico Iris Artic 31.6×31.6 · artículo 016263 · ref. 31.6×31.6. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Mosaico Iris Artic 31.6×31.6 · artículo 016263 · ref. 31.6×31.6. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-205', PROV_IBERICA, 400.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-negro-liso-cristal-2-5x2-5x8-31-6x31-6/',
@@ -8063,7 +8217,8 @@
   });
   c('MAT-08-205', PROV_IBERICA, 350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-nieblas-azul-claro-ms3003-31-6x31-6/',
-    nota: 'Mosaico Nieblas Azul Claro 31.6×31.6 · artículo 016837 · ref. 31.6×31.6. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 7,
+    nota: 'Mosaico Nieblas Azul Claro 31.6×31.6 · artículo 016837 · ref. 31.6×31.6. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-205', PROV_IBERICA, 390, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-tenerife-cristal-31-6x31-6/',
@@ -8113,7 +8268,8 @@
   });
   c('MAT-08-209', PROV_IBERICA, 790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penta-bidart-artic-mate-cristal-5x5x5-3-31-1x31-1/',
-    nota: 'Mosaico Penta Bidart Artic Mate Cristal 5x5x5.3 (31.1×31.1) · artículo 018188 · ref. 5×5×5.3. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Mosaico Penta Bidart Artic Mate Cristal 5x5x5.3 (31.1×31.1) · artículo 018188 · ref. 5×5×5.3. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-209', PROV_IBERICA, 590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penta-forest-blue-cristal-5x5x5-3/',
@@ -8152,7 +8308,8 @@
   });
   c('MAT-08-213', PROV_OCHOA, 2087.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-coliseo-blanco-romo-ran-2-01098316',
-    nota: 'Peldaño Coliseo Blanco Romo Ran 2 · artículo 01-09-8316 · ref. 30X120 · marca UNDEFASA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Peldaño Coliseo Blanco Romo Ran 2 · artículo 01-09-8316 · ref. 30X120 · marca UNDEFASA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-213', PROV_OCHOA, 2066.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-heritage-roble-romo-ran-2-01098317',
@@ -8204,7 +8361,8 @@
   });
   c('MAT-08-214', PROV_OCHOA, 5478.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-marble-travertino-01098432',
-    nota: 'Peldaño Cerámico Recto Marble Travertino · artículo 01-09-8432 · ref. 33X120 · marca EXAGRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Peldaño Cerámico Recto Marble Travertino · artículo 01-09-8432 · ref. 33X120 · marca EXAGRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-214', PROV_OCHOA, 3607.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-crema-marfil-01096896',
@@ -8228,7 +8386,8 @@
   });
   c('MAT-08-214', PROV_IBERICA, 8990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/peldano-ang-decor-marquetry-park-spike-120x32-3/',
-    nota: 'Peldaño Ang. Decor Marquetry Park Spike 120×32/3 · artículo 018163 · ref. 120×32. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'Peldaño Ang. Decor Marquetry Park Spike 120×32/3 · artículo 018163 · ref. 120×32. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-214', PROV_IBERICA, 9990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/peldao-porcelanato-coral-beach-antideslizante-33x120/',
@@ -8236,7 +8395,8 @@
   });
   c('MAT-08-215', PROV_OCHOA, 1547.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huella-metalo-01098983',
-    nota: 'Set Huella C / Huella Metalo · artículo 01-09-8983 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Set Huella C / Huella Metalo · artículo 01-09-8983 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-215', PROV_OCHOA, 1547.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huel-desert-cem-01098874',
@@ -8244,11 +8404,13 @@
   });
   c('MAT-08-215', PROV_OCHOA, 1266.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-blanco-matrix-01098760',
-    nota: 'Set Huella / Contra Huella Blanco Matrix · artículo 01-09-8760 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Set Huella / Contra Huella Blanco Matrix · artículo 01-09-8760 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-215', PROV_OCHOA, 1307.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-desert-sahara-01099320',
-    nota: 'Set Huella / Contra Huella Desert Sahara · artículo 01-09-9320 · ref. 1.20X30CM · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Set Huella / Contra Huella Desert Sahara · artículo 01-09-9320 · ref. 1.20X30CM · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-216', PROV_OCHOA, 1267.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-super-white-01098236',
@@ -8260,7 +8422,8 @@
   });
   c('MAT-08-217', PROV_OCHOA, 452.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6004-01097448',
-    nota: 'Borde P / Peldano T-6004 · artículo 01-09-7448 · ref. 69.5X3 · marca EXAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Borde P / Peldano T-6004 · artículo 01-09-7448 · ref. 69.5X3 · marca EXAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-217', PROV_OCHOA, 433.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6002-01097447',
@@ -8280,7 +8443,8 @@
   });
   c('MAT-08-218', PROV_IBERICA, 189.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/zocalo-media-cana-quarry-tile-rojo-15x15/',
-    nota: 'Zocalo Media Caña Quarry Tile Rojo 15×15 · artículo 004712 · ref. 15×15. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Zocalo Media Caña Quarry Tile Rojo 15×15 · artículo 004712 · ref. 15×15. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-219', PROV_OCHOA, 1395.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/rodapie-crema-marfil-pulidas-01097077',
@@ -8299,7 +8463,8 @@
   c('MAT-08-220', PROV_CERARTE, 543.06, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zocalo-vinil-240x9x15',
     itbis: false,
-    nota: 'ZOCALO VINIL 240X9X1.5 · artículo CERA-35674 · ref. 240X9X1.5 · marca PORCELAMIKA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'ZOCALO VINIL 240X9X1.5 · artículo CERA-35674 · ref. 240X9X1.5 · marca PORCELAMIKA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-221', PROV_CERARTE, 2765.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquiniero-acero-inox-cuadrado',
@@ -8363,7 +8528,8 @@
   });
   c('MAT-08-224', PROV_IBERICA, 1590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-xs-oro-mate-aluminio-10x2500/',
-    nota: 'Perfil N-Listel 3 XS Oro Mate Aluminio 10×2500 · artículo 016228 · ref. 10×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Perfil N-Listel 3 XS Oro Mate Aluminio 10×2500 · artículo 016228 · ref. 10×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-224', PROV_IBERICA, 990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-plata-brillo-aluminio-10x2500/',
@@ -8395,7 +8561,8 @@
   });
   c('MAT-08-225', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-bisel-anodizado-espejo-aluminio-12x2500/',
-    nota: 'Perfil N-Bisel Anodizado Espejo Aluminio 12×2500 · artículo 012302 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Perfil N-Bisel Anodizado Espejo Aluminio 12×2500 · artículo 012302 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-225', PROV_IBERICA, 1950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-bisel-anodizado-plata-mate-aluminio-12x2500/',
@@ -8443,7 +8610,8 @@
   });
   c('MAT-08-225', PROV_IBERICA, 1900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-xs-oro-brillo-aluminio-12x2500/',
-    nota: 'Perfil N-Listel 3 XS Oro Brillo Aluminio 12×2500 · artículo 016230 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Perfil N-Listel 3 XS Oro Brillo Aluminio 12×2500 · artículo 016230 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-225', PROV_IBERICA, 5549.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-forte-plata-mate-aluminio-12x2500/',
@@ -8459,7 +8627,8 @@
   });
   c('MAT-08-225', PROV_IBERICA, 649.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-remate-separador-plata-mate-aluminio-12x2600-ref-02231/',
-    nota: 'Perfil Remate Separador Plata Mate Aluminio 12×2600 Ref.02231 · artículo 019403 · ref. 02231. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Perfil Remate Separador Plata Mate Aluminio 12×2600 Ref.02231 · artículo 019403 · ref. 02231. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-225', PROV_IBERICA, 889.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-remate-separador-plata-mate-aluminio-12x3000/',
@@ -8579,7 +8748,8 @@
   c('MAT-08-235', PROV_CERARTE, 291.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
-    nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-03729 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-03729 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-235', PROV_CERARTE, 330.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
@@ -8605,7 +8775,8 @@
   });
   c('MAT-08-237', PROV_CIMA, 248, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/perfiles-pvc-p-cera-8x2600-gri',
-    nota: 'PERFILES PVC P/CERA 8X2600 GRI · artículo 084199. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'PERFILES PVC P/CERA 8X2600 GRI · artículo 084199. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-238', PROV_OCHOA, 73.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-8-5-mm-01098632',
@@ -8613,7 +8784,8 @@
   });
   c('MAT-08-238', PROV_OCHOA, 68.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-8-5-mm-01082755',
-    nota: 'Esquinero Canto Pvc 8.5 Mm · artículo 01-08-2755 · ref. MARFIL00303 · marca VALENPLAS. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Esquinero Canto Pvc 8.5 Mm · artículo 01-08-2755 · ref. MARFIL00303 · marca VALENPLAS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-238', PROV_OCHOA, 66.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquiner-canto-pvc-8-5mm-2-6mt-01096369',
@@ -8872,7 +9044,8 @@
   c('MAT-08-271', PROV_CERARTE, 1302.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-2',
     itbis: false,
-    nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34830 · ref. 60X260 · marca PORCELAMIKA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34830 · ref. 60X260 · marca PORCELAMIKA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-271', PROV_CERARTE, 857.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-4',
@@ -9069,7 +9242,8 @@
   });
   c('MAT-09-009', PROV_CIMA, 1597, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-p-bidet-c-llave-jf031101',
-    nota: 'DUCHA P/BIDET C/LLAVE JF031101 · artículo 7460215719969. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DUCHA P/BIDET C/LLAVE JF031101 · artículo 7460215719969. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_CIMA, 824, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-plastica-s-brazo-shb-380',
@@ -9200,7 +9374,8 @@
   c('MAT-09-009', PROV_CERARTE, 27900.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/cabezal-dducha-dpared-redonda-cbrazo-emporio',
     itbis: false,
-    nota: 'CABEZAL D/DUCHA D/PARED REDONDA C/BRAZO EMPORIO · artículo CERA-34653 · ref. 20Ø · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'CABEZAL D/DUCHA D/PARED REDONDA C/BRAZO EMPORIO · artículo CERA-34653 · ref. 20Ø · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-009', PROV_CERARTE, 20449.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/cabezal-dducha-dpared-redonda-cbrazo-emporio',
@@ -9263,7 +9438,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-sin-brazo-1',
-    nota: 'Regadera cuadrada 6", acero inox, sin brazo · artículo T47743 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Regadera cuadrada 6", acero inox, sin brazo · artículo T47743 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_FERREMIX, 1624, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-con-brazo',
@@ -9271,7 +9447,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 610, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-sin-brazo-1',
-    nota: 'Regadera cuadrada 4", acero inox, sin brazo · artículo T47741 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Regadera cuadrada 4", acero inox, sin brazo · artículo T47741 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_FERREMIX, 1099, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-con-brazo-1',
@@ -9291,7 +9468,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 415, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-abs-sin-brazo-negro',
-    nota: 'Regadera cuadrada 4", ABS, sin brazo, negro · artículo T46745 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Regadera cuadrada 4", ABS, sin brazo, negro · artículo T46745 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_FERREMIX, 1230, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-8-abs-sin-brazo',
@@ -9383,7 +9561,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 405, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-acabado-cromo-sin-brazo-foset',
-    nota: 'Ducha cuaraa cromaa 4" sin brazofoset aqua.. · artículo T46733 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Ducha cuaraa cromaa 4" sin brazofoset aqua.. · artículo T46733 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_FERREMIX, 535, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-acabado-cromo-con-brazo-foset',
@@ -9391,7 +9570,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 570, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-sin-brazo-foset',
-    nota: 'Regadea cuadada abs 4", sin bazo, aca · artículo T46739 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Regadea cuadada abs 4", sin bazo, aca · artículo T46739 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-009', PROV_FERREMIX, 969, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-8-sin-brazo',
@@ -9579,7 +9759,8 @@
   });
   c('MAT-09-009', PROV_FERREMIX, 429, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-zamac-s-brazo-aqua',
-    nota: 'Ducha cuaraa 2" sin brazo metalica foset aqua · artículo T44494 · ref. T44494 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Ducha cuaraa 2" sin brazo metalica foset aqua · artículo T44494 · ref. T44494 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-010', PROV_OCHOA, 535.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-red-d-mano-01232512',
@@ -9650,7 +9831,8 @@
   c('MAT-09-010', PROV_CERARTE, 16666.17, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ducha-dmano-via-manzoni',
     itbis: false,
-    nota: 'DUCHA D/MANO VIA MANZONI · artículo CERA-34268 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'DUCHA D/MANO VIA MANZONI · artículo CERA-34268 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-010', PROV_CERARTE, 13294.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ducha-dmano-via-manzoni',
@@ -9688,7 +9870,8 @@
   });
   c('MAT-09-010', PROV_BELLON, 238.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Ducha Teléfono Plástica Caiba Cromo CB-54412 · artículo 170443. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Ducha Teléfono Plástica Caiba Cromo CB-54412 · artículo 170443. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-010', PROV_BELLON, 375.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -9818,12 +10001,14 @@
   c('MAT-09-011', PROV_CERARTE, 10371.81, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-cducha-dmano-viseu',
     itbis: false,
-    nota: 'SISTEMA D/DUCHA C/CABEZAL C/DUCHA D/MANO VISEU · artículo CERA-34845 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'SISTEMA D/DUCHA C/CABEZAL C/DUCHA D/MANO VISEU · artículo CERA-34845 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-011', PROV_CERARTE, 14682.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-cducha-dmano-aveiro',
     itbis: false,
-    nota: 'SISTEMA D/DUCHA C/CABEZAL C/DUCHA D/MANO AVEIRO · artículo CERA-34857 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'SISTEMA D/DUCHA C/CABEZAL C/DUCHA D/MANO AVEIRO · artículo CERA-34857 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-011', PROV_CERARTE, 12902.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-cducha-dmano-aveiro',
@@ -10019,7 +10204,8 @@
   });
   c('MAT-09-012', PROV_OCHOA, 16111.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-ext-inx-pro-4op-gris-cuad-01021743',
-    nota: 'Ducha Barra Ext Inx Pro 4Op Gris Cuad · artículo 01-02-1743 · ref. INX-1551-BS · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Ducha Barra Ext Inx Pro 4Op Gris Cuad · artículo 01-02-1743 · ref. INX-1551-BS · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-012', PROV_OCHOA, 14479.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cab-cuad-cromo-01021716',
@@ -10206,7 +10392,8 @@
   });
   c('MAT-09-014', PROV_CIMA, 2605, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-gri-531',
-    nota: 'MEZCLADORA LAVAM MONO GRI-531 · artículo 7592032111012. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MEZCLADORA LAVAM MONO GRI-531 · artículo 7592032111012. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 1895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavam-mono-dhs-019',
@@ -10254,7 +10441,8 @@
   });
   c('MAT-09-014', PROV_CIMA, 2495, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-150',
-    nota: 'MEZCLADORA LAVAMANO 4 GRI-150 · artículo 7592032051509. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MEZCLADORA LAVAMANO 4 GRI-150 · artículo 7592032051509. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 2410, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-4-gri-100',
@@ -10286,7 +10474,8 @@
   });
   c('MAT-09-014', PROV_CIMA, 722, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-senci-t-sayco',
-    nota: 'LLAVE LAVAMANOS SENCI T/SAYCO · artículo 7467322511639. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'LLAVE LAVAMANOS SENCI T/SAYCO · artículo 7467322511639. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 656, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-lavamanos-puno-triangula',
@@ -10472,7 +10661,8 @@
   c('MAT-09-014', PROV_CERARTE, 11694.92, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cdesague-priori',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE C/DESAGUE PRIORI · artículo CERA-01343 · marca DOCOL. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE C/DESAGUE PRIORI · artículo CERA-01343 · marca DOCOL. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 4414.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cdesague-walford',
@@ -10487,7 +10677,8 @@
   c('MAT-09-014', PROV_CERARTE, 36271.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cono',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE CONO · artículo CERA-01349 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE CONO · artículo CERA-01349 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 34315.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cono',
@@ -10522,7 +10713,8 @@
   c('MAT-09-014', PROV_CERARTE, 10254.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-modena',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE MODENA · artículo CERA-29115 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE MODENA · artículo CERA-29115 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 5091.39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-modena',
@@ -10722,7 +10914,8 @@
   c('MAT-09-014', PROV_CERARTE, 34258.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-freestanding-pbanera-modena',
     itbis: false,
-    nota: 'MEZCLADORA FREESTANDING P/BAÑERA MODENA · artículo CERA-31654 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA FREESTANDING P/BAÑERA MODENA · artículo CERA-31654 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 5134.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pducha-aveiro-cllenador-de-banera',
@@ -10732,7 +10925,8 @@
   c('MAT-09-014', PROV_CERARTE, 6896.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pducha-aveiro-cllenador-de-banera',
     itbis: false,
-    nota: 'MEZCLADORA P/DUCHA AVEIRO C/LLENADOR DE BAÑERA · artículo CERA-35064 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/DUCHA AVEIRO C/LLENADOR DE BAÑERA · artículo CERA-35064 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 42931.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-monomando-plavamanos-dtope-indigo',
@@ -10812,7 +11006,8 @@
   c('MAT-09-014', PROV_CERARTE, 8720.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-cdesague-bella',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS C/DESAGUE BELLA · artículo CERA-34993 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'MEZCLADORA P/LAVAMANOS C/DESAGUE BELLA · artículo CERA-34993 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 8629.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cdesague-bella',
@@ -10827,17 +11022,20 @@
   c('MAT-09-014', PROV_CERARTE, 12902.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-cdesague-bella',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE C/DESAGUE BELLA · artículo CERA-34999 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE C/DESAGUE BELLA · artículo CERA-34999 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 11122.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dpared-bella',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/PARED BELLA · artículo CERA-35002 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'MEZCLADORA P/LAVAMANOS D/PARED BELLA · artículo CERA-35002 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 5508.47, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-grosseto',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS GROSSETO · artículo CERA-35046 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA P/LAVAMANOS GROSSETO · artículo CERA-35046 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 7043.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-grosseto',
@@ -10847,7 +11045,8 @@
   c('MAT-09-014', PROV_CERARTE, 7203.39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-grosseto',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE GROSSETO · artículo CERA-35048 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE GROSSETO · artículo CERA-35048 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 3546.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-bormio',
@@ -10872,7 +11071,8 @@
   c('MAT-09-014', PROV_CERARTE, 2580.51, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-salemi',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS SALEMI · artículo CERA-35116 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS SALEMI · artículo CERA-35116 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 2687.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-salemi',
@@ -10882,17 +11082,20 @@
   c('MAT-09-014', PROV_CERARTE, 3408.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-salemi',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE SALEMI · artículo CERA-35118 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE SALEMI · artículo CERA-35118 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 4004.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-fasano',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS FASANO · artículo CERA-35146 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA P/LAVAMANOS FASANO · artículo CERA-35146 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 6590.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-fasano',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE FASANO · artículo CERA-35147 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/TOPE FASANO · artículo CERA-35147 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 6509.56, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dtope-fasano',
@@ -10912,7 +11115,8 @@
   c('MAT-09-014', PROV_CERARTE, 6673.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-plavamanos-dpared-scalea',
     itbis: false,
-    nota: 'MEZCLADORA P/LAVAMANOS D/PARED SCALEA · artículo CERA-35160 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/LAVAMANOS D/PARED SCALEA · artículo CERA-35160 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 10233.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dlavamanos-d3-huecos-nuoro',
@@ -10922,7 +11126,8 @@
   c('MAT-09-014', PROV_CERARTE, 9745.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dlavamanos-d3-huecos-nuoro',
     itbis: false,
-    nota: 'MEZCLADORA D/LAVAMANOS D/3 HUECOS NUORO · artículo CERA-35162 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA D/LAVAMANOS D/3 HUECOS NUORO · artículo CERA-35162 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-014', PROV_CERARTE, 3128.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/griferia-dbidet-csoporte-y-salida-angular-verese',
@@ -11012,7 +11217,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 18500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-p-lav-cuello-alto-gold-brushed/',
-    nota: 'Mezc. Kloe P/Lav Cuello Alto Gold Brushed Ref.69136345166 · artículo 019105 · ref. 69136345166. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezc. Kloe P/Lav Cuello Alto Gold Brushed Ref.69136345166 · artículo 019105 · ref. 69136345166. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 1070, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-lavamanos-black-mate/',
@@ -11048,7 +11254,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 29500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-naia-cr-lavamanos-cuello-alto-con-desague/',
-    nota: 'Mezc. Naia Cr Lavamanos Cuello Alto C/Des. · artículo 019490. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezc. Naia Cr Lavamanos Cuello Alto C/Des. · artículo 019490. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 20000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-lavamanos-con-desague/',
@@ -11060,7 +11267,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 4850, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-sense-empotrable-cr-lavamanos/',
-    nota: 'Mezc. Sense Empotrable Cr Lavamano Ref.914610200 · artículo 019165 · ref. 914610200. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezc. Sense Empotrable Cr Lavamano Ref.914610200 · artículo 019165 · ref. 914610200. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 8990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-cr-lavamano-cuello-alto-sin-desage/',
@@ -11092,7 +11300,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 5400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-lavamano-sin-desage/',
-    nota: 'Mezcladora Calvia Cromo Lavamano Sin Desagüe · artículo 010136. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Calvia Cromo Lavamano Sin Desagüe · artículo 010136. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 6741.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-lavabo-cromo/',
@@ -11124,7 +11333,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 7890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bidet-sin-desage/',
-    nota: 'Mezcladora Formentera Cromo Bidet Sin Desagüe · artículo 013722. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Formentera Cromo Bidet Sin Desagüe · artículo 013722. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 8900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-lavamano-sin-desage/',
@@ -11136,7 +11346,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 13500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-icon-black-lavamano-sin-desage/',
-    nota: 'Mezcladora Icon Black Lavamano Sin Desagüe · artículo 010132. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Mezcladora Icon Black Lavamano Sin Desagüe · artículo 010132. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 12128.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-icon-cromo-lavamano-sin-desage/',
@@ -11164,7 +11375,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 15100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-proud-rose-lavamanos-cuello-alto/',
-    nota: 'Mezcladora Itaca Proud Rose Lavamanos Cuello Alto · artículo 016058. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Itaca Proud Rose Lavamanos Cuello Alto · artículo 016058. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 17990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-xl-pure-gold-cromo-lavamanos-empotrar/',
@@ -11176,7 +11388,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 17500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-p-lav-cuello-alto-brushed-metal/',
-    nota: 'Mezcladora Kloe P/Lav Cuello Alto Brushed Metal · artículo 019106 · ref. 69136345266. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Kloe P/Lav Cuello Alto Brushed Metal · artículo 019106 · ref. 69136345266. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 9775.12, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kobe-lavabo-alto-cromo-mate/',
@@ -11192,7 +11405,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 4900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-cuello-alto-lav-frauenthal/',
-    nota: 'Mezcladora Manacor Cuello Alto Lav. Frauenthal · artículo 017268 · marca Frauenthal. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Manacor Cuello Alto Lav. Frauenthal · artículo 017268 · marca Frauenthal. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 3320, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-maneral-extraible-cromo/',
@@ -11236,7 +11450,8 @@
   });
   c('MAT-09-014', PROV_IBERICA, 14274.46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-vision/',
-    nota: 'Mezcladora Vision · artículo 005992. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Vision · artículo 005992. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 18668.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-vision-lavabo-empotrar-bimando/',
@@ -11360,7 +11575,8 @@
   });
   c('MAT-09-014', PROV_FERREMIX, 2459, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-lav-ml-10',
-    nota: 'Monoando lav l-10 lukan · artículo 11811 · marca Lukan. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Monoando lav l-10 lukan · artículo 11811 · marca Lukan. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_FERREMIX, 949, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-plastico-nariz-curva',
@@ -11432,7 +11648,8 @@
   });
   c('MAT-09-014', PROV_BELLON, 2386.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Llave Mezcladora Lavamanos Monomando Con Accesorios Caiba CB-17801 · artículo 166354. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Llave Mezcladora Lavamanos Monomando Con Accesorios Caiba CB-17801 · artículo 166354. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_BELLON, 2156.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -11664,7 +11881,8 @@
   });
   c('MAT-09-014', PROV_BELLON, 715, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Llave Mezcladora Lavamanos Monomando 1H Maximus Cromada KB100-1 · artículo 239106. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Llave Mezcladora Lavamanos Monomando 1H Maximus Cromada KB100-1 · artículo 239106. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_BELLON, 1625, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -11739,7 +11957,8 @@
   c('MAT-09-015', PROV_CERARTE, 4004.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/griferia-dsensor-sn8501',
     itbis: false,
-    nota: 'GRIFERIA D/SENSOR CUNEO · artículo CERA-35142 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'GRIFERIA D/SENSOR CUNEO · artículo CERA-35142 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-015', PROV_CERARTE, 6912.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/kit-griferia-c-3-sensor-d-3-ninos-p-3-lavamanos-ti-012643',
@@ -11885,7 +12104,8 @@
   });
   c('MAT-09-016', PROV_CIMA, 2626, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-701',
-    nota: 'MEZCLADORA FREGADERO M GRI-701 · artículo 7592032500458. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MEZCLADORA FREGADERO M GRI-701 · artículo 7592032500458. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_CIMA, 2832, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-m-gri-700',
@@ -11958,7 +12178,8 @@
   c('MAT-09-016', PROV_CERARTE, 20050.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pcocina-doc',
     itbis: false,
-    nota: 'MEZCLADORA P/COCINA DOC · artículo CERA-28550 · marca DOCOL. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/COCINA DOC · artículo CERA-28550 · marca DOCOL. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-016', PROV_CERARTE, 10944.92, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pcocina-doc',
@@ -12063,12 +12284,14 @@
   c('MAT-09-016', PROV_CERARTE, 13983.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pfregadero-bella',
     itbis: false,
-    nota: 'MEZCLADORA P/FREGADERO BELLA · artículo CERA-35030 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA P/FREGADERO BELLA · artículo CERA-35030 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-016', PROV_CERARTE, 8262.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pfregadero-cmanguera-extraible-grosseto',
     itbis: false,
-    nota: 'MEZCLADORA P/FREGADERO C/MANGUERA EXTRAIBLE GROSSETO · artículo CERA-35055 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA P/FREGADERO C/MANGUERA EXTRAIBLE GROSSETO · artículo CERA-35055 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-016', PROV_CERARTE, 5484.17, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pfregadero-tranto',
@@ -12106,7 +12329,8 @@
   });
   c('MAT-09-016', PROV_IBERICA, 4500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-frame-cr-fregadero/',
-    nota: 'Mezc. Frame Cr Fregadero Ref.509150210 · artículo 019159 · ref. 509150210. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezc. Frame Cr Fregadero Ref.509150210 · artículo 019159 · ref. 509150210. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_IBERICA, 2399.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-fregadero-extraible-ref-oq15-15-color-inox/',
@@ -12114,7 +12338,8 @@
   });
   c('MAT-09-016', PROV_IBERICA, 12500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-genebre-fregadero-maneral-extraible-negro-mate/',
-    nota: 'Mezc. Genebre Fregadero Maneral Extraible Negro Mate · artículo 016497 · marca Genebre. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Mezc. Genebre Fregadero Maneral Extraible Negro Mate · artículo 016497 · marca Genebre. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_IBERICA, 6990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-retro-fregadero/',
@@ -12166,7 +12391,8 @@
   });
   c('MAT-09-016', PROV_IBERICA, 7500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-cromo-fregadero/',
-    nota: 'Mezcladora Inca Cromo Fregadero · artículo 010440. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Inca Cromo Fregadero · artículo 010440. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_IBERICA, 5200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-fregadero/',
@@ -12194,7 +12420,8 @@
   });
   c('MAT-09-016', PROV_IBERICA, 6600, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-petra-fregadero-maneral-extraible/',
-    nota: 'Mezcladora Petra Fregadero Maneral Extraible · artículo 016848. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Petra Fregadero Maneral Extraible · artículo 016848. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_IBERICA, 5500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-cr-fregadero/',
@@ -12442,7 +12669,8 @@
   });
   c('MAT-09-016', PROV_BELLON, 4653, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Llave Mezcladora Fregadero Monomando Alta IN 912 Teka 5391212 · artículo 206218. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Llave Mezcladora Fregadero Monomando Alta IN 912 Teka 5391212 · artículo 206218. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_BELLON, 5038, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -12542,7 +12770,8 @@
   });
   c('MAT-09-016', PROV_BELLON, 805, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Llave Mezcladora Fregadero Monomando 1H Maximus Cromada SC03 · artículo 243771. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Llave Mezcladora Fregadero Monomando 1H Maximus Cromada SC03 · artículo 243771. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_BELLON, 1880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -12718,7 +12947,8 @@
   c('MAT-09-017', PROV_CERARTE, 33050.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-ovale-1',
     itbis: false,
-    nota: 'MEZCLADORA TERMOSTATICA ALTA CAP OVALE 1 · artículo CERA-01419 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA TERMOSTATICA ALTA CAP OVALE 1 · artículo CERA-01419 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 38135.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-rettangolo',
@@ -12808,17 +13038,20 @@
   c('MAT-09-017', PROV_CERARTE, 15858.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-manzoni',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34264 · marca GESSI SPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34264 · marca GESSI SPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 11965.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-manzoni',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34263 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34263 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 7502.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-manzoni',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34261 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA MANZONI · artículo CERA-34261 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 15860.91, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona',
@@ -12853,7 +13086,8 @@
   c('MAT-09-017', PROV_CERARTE, 22245.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA · artículo CERA-35005 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 4,
+    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA · artículo CERA-35005 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 21882.13, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella',
@@ -12863,7 +13097,8 @@
   c('MAT-09-017', PROV_CERARTE, 33368.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella',
     itbis: false,
-    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35032 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35032 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 27306.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella',
@@ -12888,7 +13123,8 @@
   c('MAT-09-017', PROV_CERARTE, 10233.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35066 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35066 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 8061.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro',
@@ -12903,7 +13139,8 @@
   c('MAT-09-017', PROV_CERARTE, 6673.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cducha-dmano-salemi',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA EXPUESTA C/DUCHA D/MANO SALEMI · artículo CERA-35120 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA D/DUCHA EXPUESTA C/DUCHA D/MANO SALEMI · artículo CERA-35120 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_CERARTE, 12288.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro',
@@ -12928,7 +13165,8 @@
   c('MAT-09-017', PROV_CERARTE, 13347.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano',
     itbis: false,
-    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO · artículo CERA-35151 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO · artículo CERA-35151 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-017', PROV_IBERICA, 16200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/grifo-itaca-bao-ducha-3h-cromo-metal/',
@@ -13032,7 +13270,8 @@
   });
   c('MAT-09-017', PROV_IBERICA, 14500.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha/',
-    nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 016063. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 016063. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-017', PROV_IBERICA, 9550, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-sin-maneral/',
@@ -13915,7 +14154,8 @@
   });
   c('MAT-09-100', PROV_FERREMIX, 1635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
-    nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-101', PROV_IBERICA, 74.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
@@ -13970,7 +14210,8 @@
   });
   c('MAT-09-110', PROV_CIMA, 6540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
-    nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-111', PROV_IBERICA, 45860, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
@@ -14011,15 +14252,18 @@
   });
   c('MAT-10-018', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-spiral-taschibra-11w-2700k',
-    nota: 'BOMB SPIRAL TASCHIBRA 11W 2700K · artículo 0001130247 · ref. Tecnologia: CFL/ahorrador | Potencia 11 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMB SPIRAL TASCHIBRA 11W 2700K · artículo 0001130247 · ref. Tecnologia: CFL/ahorrador | Potencia 11 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-019', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschibra-espiral-15w-65k-127v',
-    nota: 'BOMBILLO TASCHIBRA ESPIRAL 15W 65K 127V · artículo 0001118099 · ref. Tecnologia: CFL/ahorrador | Potencia 15 W | Temp. color 6500 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMBILLO TASCHIBRA ESPIRAL 15W 65K 127V · artículo 0001118099 · ref. Tecnologia: CFL/ahorrador | Potencia 15 W | Temp. color 6500 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-020', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-spiral-taschibra-25w-2700k',
-    nota: 'BOMB SPIRAL TASCHIBRA 25W 2700K · artículo 0001130250 · ref. Tecnologia: CFL/ahorrador | Potencia 25 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMB SPIRAL TASCHIBRA 25W 2700K · artículo 0001130250 · ref. Tecnologia: CFL/ahorrador | Potencia 25 W | Temp. color 2700 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-020', PROV_MAX, 127.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-aksi-3u-25w-110618',
@@ -14039,7 +14283,8 @@
   });
   c('MAT-10-024', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo Fluorescente Mini Espiral 11W T2 E27 2700K 550Lm 110V 6000h Maximus BL 105050 · artículo 216574. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo Fluorescente Mini Espiral 11W T2 E27 2700K 550Lm 110V 6000h Maximus BL 105050 · artículo 216574. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-025', PROV_BELLON, 102, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14063,7 +14308,8 @@
   });
   c('MAT-10-027', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-en-espiral-de-bajo-consumo-t4',
-    nota: 'bombillo en espiral de bajo consumo t4 · artículo T48213 · ref. T48212 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'bombillo en espiral de bajo consumo t4 · artículo T48213 · ref. T48212 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-027', PROV_BELLON, 110, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14095,11 +14341,13 @@
   });
   c('MAT-10-030', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w-varios-colores',
-    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47254 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47254 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-030', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w-varios-colores',
-    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47255 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47255 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-030', PROV_FERREMIX, 59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w',
@@ -14151,7 +14399,8 @@
   });
   c('MAT-10-037', PROV_MAX, 110, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-torpedo-40w-e26-frost-sat-s3735',
-    nota: 'BOMBILLO TORPEDO 40W E26 FROST SAT S3735 · artículo 0001010324 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato E26 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMBILLO TORPEDO 40W E26 FROST SAT S3735 · artículo 0001010324 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato E26 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-037', PROV_MAX, 340.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-satco-g40-40w-s3001',
@@ -14171,7 +14420,8 @@
   });
   c('MAT-10-037', PROV_FERREMIX, 209, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-incandescente-vintage-tipo-edison',
-    nota: 'Bomillo 40w 120v incandescente luz calida tipo edison volteck · artículo T47104 · ref. T47104 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bomillo 40w 120v incandescente luz calida tipo edison volteck · artículo T47104 · ref. T47104 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-037', PROV_BELLON, 122, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14191,7 +14441,8 @@
   });
   c('MAT-10-038', PROV_MAX, 235.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-r20-50w-e26-verde-satco-s3201',
-    nota: 'BOMBILLO R20 50W E26 VERDE SATCO S3201* · artículo 0001005348 · ref. Tecnologia: Incandescente/halogeno | Potencia 50 W | Base/formato R20 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMBILLO R20 50W E26 VERDE SATCO S3201* · artículo 0001005348 · ref. Tecnologia: Incandescente/halogeno | Potencia 50 W | Base/formato R20 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-039', PROV_BELLON, 42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14211,7 +14462,8 @@
   });
   c('MAT-10-040', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-azul-1w-volteck',
-    nota: 'bombillo led azul 1w volteck · artículo T46026 · ref. T46026 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'bombillo led azul 1w volteck · artículo T46026 · ref. T46026 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-040', PROV_BELLON, 756, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14255,7 +14507,8 @@
   });
   c('MAT-10-043', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED 10W E27 3000K EcoHome Philips · artículo 234738. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED 10W E27 3000K EcoHome Philips · artículo 234738. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-043', PROV_BELLON, 674, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14303,7 +14556,8 @@
   });
   c('MAT-10-046', PROV_BELLON, 244, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 12W E27 6500K 1150Lm AC100-130V Dimeable 25000h Maximus 3111029 · artículo 212606. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 12W E27 6500K 1150Lm AC100-130V Dimeable 25000h Maximus 3111029 · artículo 212606. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-046', PROV_BELLON, 852, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14323,11 +14577,13 @@
   });
   c('MAT-10-046', PROV_BELLON, 199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo Led Eco 12W E27 2700K 950Lm Syltech P27034-36 · artículo 218291. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo Led Eco 12W E27 2700K 950Lm Syltech P27034-36 · artículo 218291. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-046', PROV_BELLON, 96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 12W E27 3000K 1050Lm MV 20000h Maximus  31555-1 · artículo 222727. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 12W E27 3000K 1050Lm MV 20000h Maximus  31555-1 · artículo 222727. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-046', PROV_BELLON, 153, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14348,6 +14604,10 @@
   c('MAT-10-046', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Recargable 12W E27 Yaco 47670 · artículo 244301. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-046', PROV_MUNDOLED, 106, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-12-watts-luz-blanca-frost/',
+    nota: 'BOMBILLO LED 12 WATTS LUZ BLANCA FROST · artículo 29267. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-047', PROV_FERREMIX, 295, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-125w-120v-de-led-tipo-lampara-luz-calida-sin-filamento',
@@ -14375,7 +14635,8 @@
   });
   c('MAT-10-049', PROV_BELLON, 1058, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED PAR 38 14W E27 3000K 950Lm AC100-130V Dimeable 25000h Maximus 3111023 · artículo 212642. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED PAR 38 14W E27 3000K 950Lm AC100-130V Dimeable 25000h Maximus 3111023 · artículo 212642. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-049', PROV_BELLON, 218, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14395,7 +14656,8 @@
   });
   c('MAT-10-050', PROV_BELLON, 35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 15W E27 3000K 1500Lm MV 20000h Maximus  22343-1 · artículo 224930. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 15W E27 3000K 1500Lm MV 20000h Maximus  22343-1 · artículo 224930. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-050', PROV_BELLON, 153, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14408,6 +14670,10 @@
   c('MAT-10-050', PROV_BELLON, 87.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 15W 6500K Wellmax · artículo 245022. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-050', PROV_MUNDOLED, 142, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-15-watts-luz-blanca-frost/',
+    nota: 'BOMBILLO LED 15 WATTS LUZ BLANCA FROST · artículo 2274. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-051', PROV_MAX, 260, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-planos-plb-40k-18w',
@@ -14431,7 +14697,8 @@
   });
   c('MAT-10-052', PROV_BELLON, 265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Bi-Pin G4 2W 3000K AC100-130V Lightnest 2111042 · artículo 214678. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Bombillo LED Bi-Pin G4 2W 3000K AC100-130V Lightnest 2111042 · artículo 214678. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-053', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-2-5w-twilight-g9-65k-ledg905dl',
@@ -14439,7 +14706,8 @@
   });
   c('MAT-10-053', PROV_BELLON, 265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Bi-Pin G9 2.5W 6500K AC100-130V Lightnest 2111045 · artículo 209587. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Bi-Pin G9 2.5W 6500K AC100-130V Lightnest 2111045 · artículo 209587. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-054', PROV_FERREMIX, 149, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-alta-potencia-luz-blanca-fria',
@@ -14501,6 +14769,11 @@
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Dimeable G45 3W 3CCT 250Lm E27 AC100-130V Lightnest 2111154 · artículo 242638. ' + SUPUESTO_ITBIS
   });
+  c('MAT-10-057', PROV_MUNDOLED, 140, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/empotrable-led-techo-basculante-3w-3000k-100-240v-ip20-fy-integrado-cod-2552/',
+    peso: 2,
+    nota: 'EMPOTRABLE LED TECHO BASCULANTE 3W 3000K 100/240V IP20 FY (INTEGRADO) cod. 2552 · artículo 2552. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
   c('MAT-10-058', PROV_FERREMIX, 474.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-led-y-luz-blanca-de-3-5w',
     nota: '@bomb. de leds l/blanca led-164 3.5w voltech · artículo T46163 · ref. T46163 · marca Volteck. ' + SUPUESTO_ITBIS
@@ -14539,7 +14812,8 @@
   });
   c('MAT-10-061', PROV_MAX, 80, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-mr16-6500k-4w-volteck-t46178',
-    nota: 'BOMB LED MR16 6500K 4W VOLTECK T46178 · artículo 0001121341 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 6500 K | Base/formato MR16 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMB LED MR16 6500K 4W VOLTECK T46178 · artículo 0001121341 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 6500 K | Base/formato MR16 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-061', PROV_MAX, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bobil-led-g45-4w-filam-brightly-e27-dim',
@@ -14551,7 +14825,8 @@
   });
   c('MAT-10-061', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-4w-gu10-3000k-voltech-46216',
-    nota: 'BOMB LED 4W GU10 3000K VOLTECH 46216 · artículo 0001128123 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato GU10 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOMB LED 4W GU10 3000K VOLTECH 46216 · artículo 0001128123 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato GU10 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-061', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombi-led-g9-l-calida-4w-volteck-t48102',
@@ -14576,6 +14851,28 @@
   c('MAT-10-061', PROV_BELLON, 186, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 4W E27 6500K 100-240V Philips · artículo 234762. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MUNDOLED, 142, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-dicroica-it-4w-gu10-luz-blanca-6500k-ojo-de-buey-cod-2076/',
+    nota: 'Bombillo Led Dicroica IT 4W / GU10 LUZ BLANCA 6500k (ojo de buey) cod. 2076 · artículo 2201-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MUNDOLED, 140, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/dicroica-gu10-2700k-ww-4w-100-130v-ip20-clear-cod-2077/',
+    nota: 'DICROICA GU10 2700K WW 4W 100/130V IP20 CLEAR cod. 2077 · artículo 2077. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MUNDOLED, 200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/dicroica-gu10-4w-4100k-nw-clear-100-130v-cod-2079/',
+    peso: 2,
+    nota: 'DICROICA GU10 4W 4100K NW CLEAR 100/130V cod. 2079 · artículo 2202-1. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MUNDOLED, 130, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/dicroica-mr16-2700k-4w-ap-100-130v-cod-2075/',
+    peso: 3,
+    nota: 'DICROICA MR16 2700K 4W AP 100/130V cod. 2075 · artículo 9026. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-061', PROV_MUNDOLED, 250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-g80-filamento-led-dimeable-4w-e27-cod-1958/',
+    nota: 'Bombillo G80 -Filamento Led -Dimeable- 4W-E27. COD.1958 · artículo 1958. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-062', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl30-4-9w-6500k',
@@ -14615,7 +14912,8 @@
   });
   c('MAT-10-064', PROV_BELLON, 325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED G50 5W E27 3000K 350Lm AC100-130V Dimeable 25000h Maximus 3111027 · artículo 214425. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED G50 5W E27 3000K 350Lm AC100-130V Dimeable 25000h Maximus 3111027 · artículo 214425. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-064', PROV_BELLON, 341, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14636,6 +14934,23 @@
   c('MAT-10-064', PROV_BELLON, 47.45, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 5W 6500K Wellmax · artículo 245021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-064', PROV_MUNDOLED, 210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-dicroica-it-5w-dimmeable-gu10-luz-intermedia-4100k-ojo-de-buey-cod-2202/',
+    nota: 'Bombillo Led Dicroica IT 5W DIMMEABLE / GU10 LUZ INTERMEDIA 4100k (ojo de buey) cod. 2202 · artículo 2202. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-064', PROV_MUNDOLED, 500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/dicroica-gu10-5w-100-130v-rgb-multicolor-con-control-y-memoria-cod-2053/',
+    nota: 'DICROICA GU10 5W 100-130V RGB MULTICOLOR CON CONTROL Y MEMORIA cod. 2053 · artículo 2053-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-064', PROV_MUNDOLED, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/empotrable-led-techo-basculante-5w-3000k-100-240v-ip20-redondo-fy-integrado-cod-2541/',
+    peso: 2,
+    nota: 'EMPOTRABLE LED TECHO BASCULANTE 5W 3000K 100/240V IP20 REDONDO FY( INTEGRADO) cod. 2541 · artículo 2541. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-064', PROV_MUNDOLED, 58, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-5-watts/',
+    nota: 'Bombillo LED 5 WATTS · artículo 2273. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-065', PROV_MAX, 990, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl270-50w',
@@ -14667,7 +14982,8 @@
   });
   c('MAT-10-067', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bom-fila-led-dim-st19-6w-c-amb-50k-light',
-    nota: 'BOM FILA LED DIM ST19 6W C/AMB2200K LIGH · artículo 0001132231 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 2200 K | Base/formato ST19 | Regulable (dimmable) · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOM FILA LED DIM ST19 6W C/AMB2200K LIGH · artículo 0001132231 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 2200 K | Base/formato ST19 | Regulable (dimmable) · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-067', PROV_MAX, 430, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-fila-led-dim-a19-6w-c-ahu-50k-light',
@@ -14719,11 +15035,13 @@
   });
   c('MAT-10-067', PROV_BELLON, 674, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 6W E27 RGBW 450Lm AC100-130V Dimeable Con Control Lightnest 2111061 · artículo 221689. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 6W E27 RGBW 450Lm AC100-130V Dimeable Con Control Lightnest 2111061 · artículo 221689. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-067', PROV_BELLON, 65, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 6W E27 3000K 500Lm MV 20000h Maximus 31549-1 · artículo 222721. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 6W E27 3000K 500Lm MV 20000h Maximus 31549-1 · artículo 222721. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-067', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14740,6 +15058,20 @@
   c('MAT-10-067', PROV_BELLON, 85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 6W GU10 6500K Sylvania · artículo 244263. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_MUNDOLED, 200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-dicroica-it-6w-dimmeable-gu10-luz-blanca-6500k-ojo-de-buey-cod-2201/',
+    peso: 2,
+    nota: 'Bombillo Led Dicroica IT 6W DIMMEABLE / GU10 LUZ BLANCA 6500k (ojo de buey) cod. 2201 · artículo 2201. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_MUNDOLED, 130, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/dicroica-mr16-6w-3000k-nw-clear-dimeable-100-130v-cod-2038/',
+    peso: 2,
+    nota: 'DICROICA MR16 6W 3000k NW CLEAR DIMEABLE 100/130V cod. 2038 · artículo 2078-1-1-1. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_MUNDOLED, 160, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-filamento-mini-g45-6w-2700k-e27-1937/',
+    nota: 'Bombillo Led Filamento Mini G45 6W 2700K E27. 1937 · artículo 1937. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-068', PROV_BELLON, 370, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14767,7 +15099,16 @@
   });
   c('MAT-10-070', PROV_BELLON, 101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A60 7W 3000K 560Lm E27 Sylvania P27618-19 · artículo 235516. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A60 7W 3000K 560Lm E27 Sylvania P27618-19 · artículo 235516. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-070', PROV_MUNDOLED, 83, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-7-watts-luz-blanca-frost/',
+    nota: 'BOMBILLO LED 7 WATTS LUZ BLANCA FROST · artículo 2271. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-070', PROV_MUNDOLED, 77, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-7-watts-luz-calida-frost/',
+    nota: 'BOMBILLO LED 7 WATTS LUZ CÁLIDA FROST · artículo 2271-1. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-071', PROV_FERREMIX, 160, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-8w-120v-de-led-luz-blanca-calida-neutra',
@@ -14783,7 +15124,8 @@
   });
   c('MAT-10-071', PROV_BELLON, 131, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED 8W E27 3000K EcoHome Philips · artículo 234734. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED 8W E27 3000K EcoHome Philips · artículo 234734. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-071', PROV_BELLON, 261, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14801,6 +15143,10 @@
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 8W GU10 6500K Wellmax · artículo 245017. ' + SUPUESTO_ITBIS
   });
+  c('MAT-10-071', PROV_MUNDOLED, 341, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-filamento-g125-8w-e27-globo-cod-2121/',
+    nota: 'Bombillo Led Filamento G125 8W E27 (Globo) COD. 2121 · artículo 2121. ' + SUPUESTO_ITBIS
+  });
   c('MAT-10-072', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschi-tkl60-9w-6500k',
     nota: 'BOMBILLO LED TASCHI TKL60 9W 6500K · artículo 0001117178 · ref. Tecnologia: LED | Potencia 9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
@@ -14815,11 +15161,13 @@
   });
   c('MAT-10-072', PROV_BELLON, 193, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 9W E27 6500K 800Lm AC100-130V Dimeable 25000h Maximus 3111005 · artículo 212608. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 9W E27 6500K 800Lm AC100-130V Dimeable 25000h Maximus 3111005 · artículo 212608. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-072', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED A19 9W E27 3000K MV Maximus 31552-1 · artículo 222724. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED A19 9W E27 3000K MV Maximus 31552-1 · artículo 222724. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-072', PROV_BELLON, 660, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14844,6 +15192,11 @@
   c('MAT-10-072', PROV_BELLON, 215, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED 9W 6500K Recargable Wellmax · artículo 245018. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-072', PROV_MUNDOLED, 83, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bombillo-led-9-watts-luz-blanca-frost/',
+    peso: 2,
+    nota: 'BOMBILLO LED 9 WATTS LUZ BLANCA FROST · artículo 30504. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-073', PROV_BELLON, 182, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -14949,3446 +15302,3952 @@
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Cuadrado Empotrar S/Borde 36W 6000K 85-265V 10251D-DL · artículo 234457. ' + SUPUESTO_ITBIS
   });
+  c('MAT-10-087', PROV_MUNDOLED, 1050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-2x2-40w-6500k-backlight-100-277v-ip20-power-neoluz-cod-3042-copia/',
+    nota: 'PANEL 2X2 BACKLIT 36W 6500K 100-270V DRIVER INTEGRADO COD. 3042 · artículo 3042 · marca LIGHT SOURCE. ' + SUPUESTO_ITBIS
+  });
   c('MAT-10-088', PROV_BELLON, 245, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Cuadrado Empotrar 4” 4W 3000K 110-240V Philips · artículo 244989. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Cuadrado Empotrar 4” 4W 3000K 110-240V Philips · artículo 244989. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-089', PROV_FERREMIX, 159, {
+  c('MAT-10-089', PROV_MUNDOLED, 1600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-1x4-40w-4100k-edgelight-100-277v-30012009mm-ip20-power-neoluz-cod-3060/',
+    nota: 'PANEL LED 1X4 40W 4100K EDGELIGHT 100/277V 300*1200*9MM IP20 POWER NEOLUZ cod. 3060 · artículo 3060. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-rectangular-de-40w-1x4-luz-blanca-6500k-cod-3054/',
+    nota: 'PANEL LED 1X4 40W 6500K BACKLIT 100/240V 300*1200*32MM IP2 NEOLUZ COD.3054 · artículo 3054. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MUNDOLED, 1700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-1x4-40w-6500k-edgelight-100-277v-30012009mm-ip20-power-neoluz-rlcod-3055/',
+    nota: 'PANEL LED 1X4 40W 6500K EDGELIGHT 100/277V 300*1200*9MM IP20 POWER NEOLUZ RLcod. 3055 · artículo 3055. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MUNDOLED, 1350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-2x2-40w-certificacion-ul-luz-blanca-6500k-100-277v-4000lm-ip20-cod-3040/',
+    nota: 'PANEL LED 2X2 40W 6500K 100/277V IP20 POWER NEOLUZ COD.3040 · artículo 3040 · marca LIGHT SOURCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MUNDOLED, 1150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-2x2-40w-6500k-backlight-100-277v-ip20-power-neoluz-cod-3043/',
+    nota: 'PANEL LED 2X2 40W 6500K BACKLIGHT 100/277V IP20 POWER NEOLUZ COD. 3043 · artículo 3043 · marca LIGHT SOURCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MUNDOLED, 2500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-troffer-2x2-60605cm-40w-6500k-cod-3062/',
+    nota: 'PANEL LED TROFFER 2X2 60*60*5CM 40W 6500K COD.3062 · artículo 3062. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-090', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lamparas-cuadradas-de-empotrar-de-led-ulta-delgada',
     nota: 'Lámpara cuadrada de empotrar de led ulta delgada · artículo T48540 · ref. T48540 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-089', PROV_BELLON, 285, {
+  c('MAT-10-090', PROV_BELLON, 285, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 6W 6500K 460lm Lightnest 2502037 · artículo 222993. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-089', PROV_BELLON, 241, {
+  c('MAT-10-090', PROV_BELLON, 241, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 6W 6500K Maximus Lite 31463-1 · artículo 225367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-090', PROV_BELLON, 911, {
+  c('MAT-10-091', PROV_BELLON, 911, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 4" 7W 3000K 120V Dimeable Satco S39757 · artículo 224066. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-090', PROV_BELLON, 880, {
+  c('MAT-10-091', PROV_BELLON, 880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 4" 7W 5000K 120V Dimeable Satco S39759 · artículo 227088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-091', PROV_BELLON, 656, {
+  c('MAT-10-092', PROV_BELLON, 656, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 6" 7.8W 6500K 400Lm Philips · artículo 234763. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-091', PROV_BELLON, 405, {
+  c('MAT-10-092', PROV_BELLON, 405, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 4" 7.8W 3000K 900Lm Phil · artículo 244996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-092', PROV_BELLON, 1044, {
+  c('MAT-10-093', PROV_BELLON, 1044, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 4" 9W 5000K 120V Dimeable Satco S29759/S9759 · artículo 216085. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-092', PROV_BELLON, 1064, {
+  c('MAT-10-093', PROV_BELLON, 1064, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Empotrar 9W 3000K 120V Dimm 4" Satco S29757 · artículo 219815. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-093', PROV_BELLON, 568, {
+  c('MAT-10-094', PROV_BELLON, 568, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 8" 11.5W 6500K 1300Lm 110-240V IP20 Philips · artículo 239476. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-093', PROV_BELLON, 465, {
+  c('MAT-10-094', PROV_BELLON, 465, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 8" 11.5W 3000K 1300Lm · artículo 244994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-094', PROV_BELLON, 1552, {
+  c('MAT-10-095', PROV_BELLON, 1552, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 11.6W 4000K 120V Dimeable Satco S29063/S9063 · artículo 216090. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_FERREMIX, 375, {
+  c('MAT-10-096', PROV_FERREMIX, 375, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
     nota: 'luminario led empotrable redondo luz de dia · artículo T25088 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_FERREMIX, 219, {
+  c('MAT-10-096', PROV_FERREMIX, 219, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
     nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48547 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 992, {
+  c('MAT-10-096', PROV_BELLON, 992, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6.69" 12W 6500K 900lm AC100-130V Dimeable 25000h Maximus · artículo 214108. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 935, {
+  c('MAT-10-096', PROV_BELLON, 935, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6.69" 12W 3000K 900lm AC100-130V Dimeable 25000h Maximus · artículo 214109. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 415, {
+  c('MAT-10-096', PROV_BELLON, 415, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6.69" 12W 900lm 3000K Lightnest 2502013 · artículo 214383. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 501, {
+  c('MAT-10-096', PROV_BELLON, 501, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar 6" 12W 3000K 720Lm Syltech P27471-36 · artículo 218304. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 135, {
+  c('MAT-10-096', PROV_BELLON, 135, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 12W 3000K Maximus 31473-1 · artículo 223686. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 210, {
+  c('MAT-10-096', PROV_BELLON, 210, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 12W 6500K 960Lm AC100-240V 20000h Maximus 31474-1 · artículo 223687. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 390, {
+  c('MAT-10-096', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 5.43" 12W 3000K 720Lm 100-240V Tecnolite · artículo 226538. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 375, {
+  c('MAT-10-096', PROV_BELLON, 375, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar 12W 6500K Tecnolite 12YDLED430MV65B · artículo 227309. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_BELLON, 180, {
+  c('MAT-10-096', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 12W 3CCT AC85-277V Enerlite · artículo 241975. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_FERREMIX, 325, {
+  c('MAT-10-096', PROV_MUNDOLED, 210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-12w-100-265v/',
+    nota: 'Panel Led Circular Empotrar 12W 100-265V · artículo 30921. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MUNDOLED, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-12w-100-265v/',
+    nota: 'Panel Led Circular Superficie 12W 100-265V · artículo 30925. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MUNDOLED, 300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-12w-100-265v-negro/',
+    nota: 'Panel Led Circular Superficie 12W 100-265V Negro · artículo 33754. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_MUNDOLED, 330, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-empotrar-12w-100-265v/',
+    nota: 'Panel Led Cuadrado Empotrar 12W 100-265V · artículo 30947. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_MUNDOLED, 232, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circ-emp-15w-con-power-6500k-100-265v/',
+    nota: 'PANEL LED CIRC EMP 15W CON POWER 6500K 100-265V · artículo 2518. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_FERREMIX, 325, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
     nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48548 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 1313, {
+  c('MAT-10-098', PROV_BELLON, 1313, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 8.86" 18W 6500K 1500lm AC100-130V Dimeable 25000h  Maximus · artículo 214110. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 1056, {
+  c('MAT-10-098', PROV_BELLON, 1056, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 8.86" 18W 3000K 1500lm AC100-130V Dimeable 25000h Maximus · artículo 216764. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 634, {
+  c('MAT-10-098', PROV_BELLON, 634, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar 8" 18W 3000K 1200Lm Syltech P27472-36 · artículo 218307. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 205, {
+  c('MAT-10-098', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Empotrar 18W 3000K Maximus 31479-1 · artículo 223688. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Empotrar 18W 3000K Maximus 31479-1 · artículo 223688. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 607, {
+  c('MAT-10-098', PROV_BELLON, 607, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 18W 3000K Tecnolite YDLED-430/003/30/B · artículo 225368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 373, {
+  c('MAT-10-098', PROV_BELLON, 373, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar S/Borde 18W 6000K 85-265V 10250B-DL · artículo 234458. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 432, {
+  c('MAT-10-098', PROV_BELLON, 432, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 8" 18W 6500K 1260Lm Sylvania P24338-36 · artículo 235520. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 545, {
+  c('MAT-10-098', PROV_BELLON, 545, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 18W 3CCT 1350Lm AC100-277V Lightnest 2502052 · artículo 241280. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_BELLON, 212, {
+  c('MAT-10-098', PROV_BELLON, 212, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 18W 3CCT AC85-277V Enerlite · artículo 241953. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-097', PROV_BELLON, 912, {
+  c('MAT-10-098', PROV_MUNDOLED, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-18w-100-265v/',
+    nota: 'Panel Led Circular Empotrar 18W 100-265V · artículo 30922. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MUNDOLED, 310, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-18w-100-265v/',
+    nota: 'Panel Led Circular Superficie 18W 100-265V · artículo 30926. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MUNDOLED, 400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-18w-100-265v-negro/',
+    nota: 'Panel Led Circular Superficie 18W 100-265V Negro · artículo 33755. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MUNDOLED, 389, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-empotrar-18w-100-265v/',
+    nota: 'Panel Led Cuadrado Empotrar 18W 100-265V · artículo 30948. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MUNDOLED, 355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-superficie-18w-100-265v/',
+    nota: 'Panel Led Cuadrado Superficie 18W 100-265V · artículo 30943. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-099', PROV_BELLON, 912, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Empotrar Circular 6" 22W CCT 1850Lm Blanco Sylvania P26118 · artículo 244100. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-097', PROV_BELLON, 660, {
+  c('MAT-10-099', PROV_BELLON, 660, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 22W 11” 6500K 110-240V Philips · artículo 245003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_BELLON, 744, {
+  c('MAT-10-100', PROV_BELLON, 744, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar 11" 24W 3000K 1700Lm Syltech P27473-36 · artículo 218310. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_BELLON, 528, {
+  c('MAT-10-100', PROV_BELLON, 528, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar S/Borde 24W 6000K 85-265V 10250C-DL · artículo 234462. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_BELLON, 567, {
+  c('MAT-10-100', PROV_BELLON, 567, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 11" 24W 6500K 1600Lm Sylvania P24339-36 · artículo 235522. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_BELLON, 720, {
+  c('MAT-10-100', PROV_BELLON, 720, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 24W 3CCT 2000Lm AC100-277V Lightnest 2502053 · artículo 241281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_BELLON, 295, {
+  c('MAT-10-100', PROV_BELLON, 295, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 24W 3000K Maximus 32766-1 · artículo 241665. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-099', PROV_BELLON, 630, {
+  c('MAT-10-100', PROV_MUNDOLED, 499, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-24w-100-265v/',
+    nota: 'Panel Led Circular Empotrar 24W 100-265V · artículo 30923. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-100', PROV_MUNDOLED, 470, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-24w-100-265v/',
+    nota: 'Panel Led Circular Superficie 24W 100-265V · artículo 30927. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-100', PROV_MUNDOLED, 550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-superficie-24w-100-265v-negro/',
+    nota: 'Panel Led Circular Superficie 24W 100-265V Negro · artículo 33756. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-100', PROV_MUNDOLED, 496, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-empotrar-24w-100-265v/',
+    nota: 'Panel Led Cuadrado Empotrar 24W 100-265V · artículo 30949. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-100', PROV_MUNDOLED, 500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-superficie-24w-100-265v/',
+    nota: 'Panel Led Cuadrado Superficie 24W 100-265V · artículo 30944. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_BELLON, 630, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 25W 6500K 2000Lm AC100-240V 20000h Maximus Lite 31486-1 · artículo 223690. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-099', PROV_BELLON, 663, {
+  c('MAT-10-101', PROV_BELLON, 663, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 25W 3000K 2000Lm AC100-240V 20000h Maximus Lite 32766-1 · artículo 225362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_BELLON, 195, {
+  c('MAT-10-102', PROV_BELLON, 195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 3W 265lm 3000K AC100-277V Lightnest · artículo 216239. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_BELLON, 491, {
+  c('MAT-10-102', PROV_BELLON, 491, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 3.30\'\' 3W 3000K 265lm AC100-130V Dimeable 25000h Maximus · artículo 216732. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_BELLON, 502, {
+  c('MAT-10-102', PROV_BELLON, 502, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 3.30\'\' 3W 6500K 265lm AC100-130V Dimeable 25000h Maximus · artículo 216733. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_BELLON, 90, {
+  c('MAT-10-102', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Empotrar 3W 3000K 240Lm AC100-240V 20000h Maximus 31796-1 · artículo 223680. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Empotrar 3W 3000K 240Lm AC100-240V 20000h Maximus 31796-1 · artículo 223680. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_BELLON, 155, {
+  c('MAT-10-102', PROV_BELLON, 155, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Empotrar Circular 3" 3W 3000K 150Lm IP20 Blanco Sylvania P27359-19 · artículo 244308. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-101', PROV_BELLON, 808, {
+  c('MAT-10-102', PROV_MUNDOLED, 130, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-3w-100-265v/',
+    nota: 'Panel Led Circular Empotrar 3W 100-265V · artículo 30919. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-102', PROV_MUNDOLED, 120, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-empotrar-3w-100-265v/',
+    nota: 'Panel Led Cuadrado Empotrar 3W 100-265V · artículo 30945. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-103', PROV_BELLON, 808, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar S/Borde 36W 6000K 85-265V 10250D-DL · artículo 234463. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-102', PROV_BELLON, 315, {
+  c('MAT-10-104', PROV_BELLON, 315, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 4" 4W 6500K 400Lm 110-240V IP20 Philips · artículo 234766. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-102', PROV_BELLON, 245, {
+  c('MAT-10-104', PROV_BELLON, 245, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 4" 4W 3000K 110-240V Philips · artículo 244988. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-103', PROV_FERREMIX, 159, {
+  c('MAT-10-105', PROV_MUNDOLED, 1600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/empotrable-led-techo-blanca-40w-3000k-cod-1059/',
+    nota: 'EMPOTRABLE LED TECHO BLANCA 40W 3000K COD.1059 · artículo 1059. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
     nota: 'luminario led empotrable redondo luz de dia · artículo T25086 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_FERREMIX, 155, {
+  c('MAT-10-107', PROV_FERREMIX, 155, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
     nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48546 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_BELLON, 95, {
+  c('MAT-10-107', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Empotrar  6W 6500K 460lm AC100-130V Dimeable 25000h Maximus · artículo 214106. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Empotrar  6W 6500K 460lm AC100-130V Dimeable 25000h Maximus · artículo 214106. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_BELLON, 624, {
+  c('MAT-10-107', PROV_BELLON, 624, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 4.72" 6W 3000K 460lm AC100-130V Dimeable 25000h Maximus · artículo 214107. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_BELLON, 222, {
+  c('MAT-10-107', PROV_BELLON, 222, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 4.72" 6W 3000K 460lm AC100-277V Lightnest 2502008 · artículo 214384. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_BELLON, 150, {
+  c('MAT-10-107', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6W 6500K 480Lm AC100-240V 20000h Maximus Lite 31467-1 · artículo 223683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_BELLON, 305, {
+  c('MAT-10-107', PROV_BELLON, 305, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 6W 3CCT 460Lm AC100-277V Lightnest 2502054 · artículo 241278. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-105', PROV_FERREMIX, 219, {
+  c('MAT-10-107', PROV_MUNDOLED, 189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-6w-100-265v/',
+    peso: 2,
+    nota: 'Panel Led Circular Empotrar 6W 100-265V · artículo 30920. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_MUNDOLED, 236, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-empotrar-6w-100-265v/',
+    nota: 'Panel Led Cuadrado Empotrar 6W 100-265V · artículo 30946. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_MUNDOLED, 185, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-cuadrado-superficie-6w-100-265v/',
+    nota: 'Panel Led Cuadrado Superficie 6W 100-265V · artículo 30941. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-108', PROV_FERREMIX, 219, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
     nota: 'luminario led empotrable redondo luz de dia · artículo T25087 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-106', PROV_BELLON, 435, {
+  c('MAT-10-109', PROV_BELLON, 435, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 7.8W 6500K 900Lm 110 · artículo 239473. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-106', PROV_BELLON, 335, {
+  c('MAT-10-109', PROV_BELLON, 335, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 7.8W 3000K 110-240V Philips · artículo 244991. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-107', PROV_BELLON, 1268, {
+  c('MAT-10-110', PROV_BELLON, 1268, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 8.5W 4000K 120V Dimeable Satco S39057/S29057/S9057 · artículo 216088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 893, {
+  c('MAT-10-111', PROV_BELLON, 893, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 9W 3000K 120V Dimeable Satco S29313/S9313 · artículo 216081. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 691, {
+  c('MAT-10-111', PROV_BELLON, 691, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 5.71" 9W 3000K 720lm AC100-130V Dimeable 25000h Maximus · artículo 216734. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 793, {
+  c('MAT-10-111', PROV_BELLON, 793, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 5.71" 9W 6500K 720lm AC100-130V Dimeable 25000h Maximus · artículo 216735. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 310, {
+  c('MAT-10-111', PROV_BELLON, 310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Empotrar 5.71" 9W 600lm 3000K Lightnest · artículo 216779. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Empotrar 5.71" 9W 600lm 3000K Lightnest · artículo 216779. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 397, {
+  c('MAT-10-111', PROV_BELLON, 397, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Empotrar 5" 9W 3000K 500Lm Syltech P27470-36 · artículo 218301. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 210, {
+  c('MAT-10-111', PROV_BELLON, 210, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 9W 3000K 720Lm AC100-277V 20000h Maximus Lite 31798-1 · artículo 223684. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 120, {
+  c('MAT-10-111', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 9W 6500K 720Lm AC100-240V 20000h Maximus Lite 31799-1 · artículo 223685. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 410, {
+  c('MAT-10-111', PROV_BELLON, 410, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrable 9W 3CCT 720Lm AC100-277V Lightnest 2502050 · artículo 241279. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 280, {
+  c('MAT-10-111', PROV_BELLON, 280, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Empotrar Circular 5" 9W 3000K 440Lm IP20 Blanco Sylvania P24611-36 · artículo 244311. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_BELLON, 285, {
+  c('MAT-10-111', PROV_BELLON, 285, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Empotrar Circular 5" 9W 6500K 490Lm IP20 Blanco Sylvania P24336-36 · artículo 244313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-109', PROV_BELLON, 859, {
+  c('MAT-10-111', PROV_MUNDOLED, 200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/panel-led-circular-empotrar-9w-cod-2526/',
+    nota: 'Panel Led Circular Empotrar 9W COD.2526 · artículo 33780. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_BELLON, 859, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Empotrar 6" 9.8W 5000K 120V Dimeable Satco S29315/S9315 · artículo 216083. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-110', PROV_BELLON, 2536, {
+  c('MAT-10-113', PROV_BELLON, 2536, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 5.5" 10.5W 3000K 120V Dimeable Satco S29327 · artículo 216093. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-111', PROV_BELLON, 535, {
+  c('MAT-10-114', PROV_BELLON, 535, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 8” 11.5W 6500K 110-240V Philips · artículo 245001. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-112', PROV_BELLON, 400, {
+  c('MAT-10-115', PROV_BELLON, 400, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 12W 3000K  Maximus Lite 32291-1 · artículo 225372. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-112', PROV_BELLON, 390, {
+  c('MAT-10-115', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 12W 6500K  Maximus Lite 32292-1 · artículo 225373. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-112', PROV_BELLON, 220, {
+  c('MAT-10-115', PROV_BELLON, 220, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 12W 3CCT AC85-277V Enerlite · artículo 241931. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-113', PROV_BELLON, 390, {
+  c('MAT-10-116', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Cuadrado Superficie 18W 6500K · artículo 233548. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-113', PROV_BELLON, 305, {
+  c('MAT-10-116', PROV_BELLON, 305, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Cuadrado Superficie S/Borde 18W 6000K 85-265V 10261B-DL · artículo 234467. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-113', PROV_BELLON, 505, {
+  c('MAT-10-116', PROV_BELLON, 505, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 8.66" 18W 6500K 1350Lm Sylvania P24524-36 · artículo 235524. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-114', PROV_BELLON, 760, {
+  c('MAT-10-117', PROV_BELLON, 760, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Cuadrado Superficie 11” 22W 3011” 3000K 110-240V Philips · artículo 245008. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Cuadrado Superficie 11” 22W 3011” 3000K 110-240V Philips · artículo 245008. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-115', PROV_BELLON, 695, {
+  c('MAT-10-118', PROV_BELLON, 695, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Cuadrado Superficie S/Borde 24W 6000K 85-265V 10261C-DL · artículo 234468. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-116', PROV_BELLON, 1242, {
+  c('MAT-10-119', PROV_BELLON, 1242, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Cuadrado Superficie S/Borde 36W 6000K 85-265V 10261D-DL · artículo 234469. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-117', PROV_BELLON, 375, {
+  c('MAT-10-120', PROV_BELLON, 375, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Cuadrado Superficie 6W 6500K 460lm Lightnest 2502039 · artículo 222995. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-118', PROV_BELLON, 2187, {
+  c('MAT-10-121', PROV_BELLON, 2187, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 5.5" 10.5W 3000K 120V Dimeable Satco S29323 · artículo 216091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-118', PROV_BELLON, 1910, {
+  c('MAT-10-121', PROV_BELLON, 1910, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 5.5" 10.5W 2700K 120V Dimeable Niquel Satco S29321 · artículo 216094. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-119', PROV_BELLON, 525, {
+  c('MAT-10-122', PROV_BELLON, 525, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Superficie 8” 11.5W 3000K 110-240V Philips · artículo 244998. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Superficie 8” 11.5W 3000K 110-240V Philips · artículo 244998. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_FERREMIX, 269, {
+  c('MAT-10-123', PROV_FERREMIX, 269, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
     nota: 'Luminario led redondo de sobreponer · artículo T48257 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 1047, {
+  c('MAT-10-123', PROV_BELLON, 1047, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6.69" 12W 3000K 900Lm AC100-130V Dimeable 25000h Maximus · artículo 214104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 1086, {
+  c('MAT-10-123', PROV_BELLON, 1086, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6.69" 12W 6500K 900Lm AC100-130V Dimeable 25000h Maximus · artículo 214105. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 525, {
+  c('MAT-10-123', PROV_BELLON, 525, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6.69" 12W 3000K 900Lm Lightnest · artículo 214382. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 175, {
+  c('MAT-10-123', PROV_BELLON, 175, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 12W 3000K Maximus 31794-1 · artículo 223693. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 314, {
+  c('MAT-10-123', PROV_BELLON, 314, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 12W 6500K Maximus 31795-1 · artículo 223694. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 300, {
+  c('MAT-10-123', PROV_BELLON, 300, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6" 12W 6500K Rudo H-52 · artículo 226403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 372, {
+  c('MAT-10-123', PROV_BELLON, 372, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel Led Circular Superficie 12W 3000K Negro Sylvania P29624-19 · artículo 236827. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel Led Circular Superficie 12W 3000K Negro Sylvania P29624-19 · artículo 236827. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_BELLON, 205, {
+  c('MAT-10-123', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 12W 3CCT AC85-277V Enerlite · artículo 241967. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_FERREMIX, 345, {
+  c('MAT-10-124', PROV_FERREMIX, 345, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
     nota: 'Luminario led redondo de sobreponer · artículo T48258 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 1453, {
+  c('MAT-10-124', PROV_BELLON, 1453, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 8.86" 18W 3000K 1500Lm AC100-130V Dimeable 25000h Maximus · artículo 216775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 1462, {
+  c('MAT-10-124', PROV_BELLON, 1462, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 8.86" 18W 6500K 1500Lm AC100-130V Dimeable 25000h Maximus · artículo 216776. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 406, {
+  c('MAT-10-124', PROV_BELLON, 406, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Superficie 18W 3000K Maximus 31493-1 · artículo 223695. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Superficie 18W 3000K Maximus 31493-1 · artículo 223695. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 460, {
+  c('MAT-10-124', PROV_BELLON, 460, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Superficie S/Borde 18W 6000K 85-265V 10260B-DL · artículo 234464. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 528, {
+  c('MAT-10-124', PROV_BELLON, 528, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Superficie 18W 3000K Negro Sylvania P29625-19 · artículo 236826. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Superficie 18W 3000K Negro Sylvania P29625-19 · artículo 236826. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 235, {
+  c('MAT-10-124', PROV_BELLON, 235, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 18W 3CCT AC85-277V Enerlite · artículo 241954. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 464, {
+  c('MAT-10-124', PROV_BELLON, 464, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Superficie 18W 3CCT Negro Enerlite · artículo 242091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_BELLON, 509, {
+  c('MAT-10-124', PROV_BELLON, 509, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Superficie 18W 6500K C/Sensor Movimiento Luzmas · artículo 242092. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-122', PROV_BELLON, 825, {
+  c('MAT-10-125', PROV_BELLON, 825, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 11” 22W 3000K 110-240V Philips · artículo 245006. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-122', PROV_BELLON, 735, {
+  c('MAT-10-125', PROV_BELLON, 735, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 11” 22W 6500K 110-240V Philips · artículo 245007. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-123', PROV_FERREMIX, 519, {
+  c('MAT-10-126', PROV_FERREMIX, 519, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
     nota: 'Luminario led redondo de sobreponer · artículo T48259 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-123', PROV_BELLON, 903, {
+  c('MAT-10-126', PROV_BELLON, 903, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Superficie S/Borde 24W 6000K 85-265V 10260C-DL · artículo 234465. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-123', PROV_BELLON, 390, {
+  c('MAT-10-126', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 24W 3000K Maximus · artículo 241668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-124', PROV_BELLON, 595, {
+  c('MAT-10-127', PROV_BELLON, 595, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Superficie 25W 6500K 2000Lm AC100-240V 20000h Maximus Lite 31499-1 · artículo 223697. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Superficie 25W 6500K 2000Lm AC100-240V 20000h Maximus Lite 31499-1 · artículo 223697. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-125', PROV_BELLON, 1290, {
+  c('MAT-10-128', PROV_BELLON, 1290, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel Led Circular Superficie S/Borde 36W 6000K 85-265V 10260D-DL · artículo 234466. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_BELLON, 634, {
+  c('MAT-10-129', PROV_BELLON, 634, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 4.72" 6W 3000K 460Lm AC100-130V Dimeable 25000h Maximus · artículo 216767. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_BELLON, 732, {
+  c('MAT-10-129', PROV_BELLON, 732, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 4.72" 6W 6500K 460Lm AC100-130V Dimeable 25000h Maximus · artículo 216769. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_BELLON, 276, {
+  c('MAT-10-129', PROV_BELLON, 276, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6W 3000K 480Lm AC100-240V 20000h Maximus Lite 31487-1 · artículo 223691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_BELLON, 327, {
+  c('MAT-10-129', PROV_BELLON, 327, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6W 6500K 480Lm AC100-240V 20000h Maximus Lite 31488-1 · artículo 223692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_BELLON, 325, {
+  c('MAT-10-129', PROV_BELLON, 325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Panel LED Circular Superficie 6W 3000K Tecnolite 6PTLLEDR30MVB · artículo 225365. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-127', PROV_BELLON, 395, {
+  c('MAT-10-130', PROV_BELLON, 395, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Panel LED Circular Superficie 6” 7.8W 3000K 110-240V Philips · artículo 244993. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Panel LED Circular Superficie 6” 7.8W 3000K 110-240V Philips · artículo 244993. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-128', PROV_MAX, 190, {
+  c('MAT-10-131', PROV_MAX, 190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-cuad-dirigib-negra-lightnest',
-    nota: 'LAM EMP CUAD DIRIGIB NEGRA LIGHTNEST · artículo 0001132225 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LAM EMP CUAD DIRIGIB NEGRA LIGHTNEST · artículo 0001132225 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-128', PROV_MAX, 255, {
+  c('MAT-10-131', PROV_MAX, 255, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-recto-voltech-46616',
     nota: 'LAMP EMP DIRIG RECTO VOLTECH 46616 · artículo 0001128325 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-129', PROV_MAX, 190, {
+  c('MAT-10-132', PROV_MAX, 190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-circ-dirigib-blanca-lightnest',
     nota: 'LAM EMP CIRC DIRIGIB BLANCA LIGHTNEST · artículo 0001132222 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-129', PROV_MAX, 265, {
+  c('MAT-10-132', PROV_MAX, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-satin-voltech-46625',
     nota: 'LAMP EMP DIRIG CURVO SATIN VOLTECH 46625 · artículo 0001128328 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-129', PROV_MAX, 270, {
+  c('MAT-10-132', PROV_MAX, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-voltech-46623',
     nota: 'LAMP EMP DIRIG CURVO VOLTECH 46623 · artículo 0001128326 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-129', PROV_MAX, 240, {
+  c('MAT-10-132', PROV_MAX, 240, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-negro-voltech-46624',
     nota: 'LAMP EMP DIRIG CURVO NEGRO VOLTECH 46624 · artículo 0001128327 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-130', PROV_MAX, 1015, {
+  c('MAT-10-133', PROV_MAX, 1015, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emerc-recarg-voltech-300lu-t43008',
     nota: 'LAMP EMERC RECARG VOLTECH 300LU T43008 · artículo 0001123803 · ref. Tecnologia: Incandescente/halogeno | Recargable · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_MAX, 735, {
+  c('MAT-10-134', PROV_MAX, 735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-10w-6500k-compac-philips',
     nota: 'REFLECTOR LED 10W 6500K COMPAC PHILIPS · artículo 0001124094 · ref. Tecnologia: LED | Potencia 10 W | Temp. color 6500 K · marca PHILIPS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_MAX, 475, {
+  c('MAT-10-134', PROV_MAX, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-10w-6500k',
     nota: 'REFLECTOR LED TASCHIBRA 10W 6500k · artículo 0001117187 · ref. Tecnologia: LED | Potencia 10 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_FERREMIX, 985, {
+  c('MAT-10-134', PROV_FERREMIX, 985, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-de-led-10-w-con-sensor-de-movimiento',
     nota: 'Reflecto de led, 10 w con senso · artículo T48228 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_FERREMIX, 397.34, {
+  c('MAT-10-134', PROV_FERREMIX, 397.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-led',
     nota: 'Reflector led · artículo 10901 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 2575, {
+  c('MAT-10-134', PROV_BELLON, 2575, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo Reflector Led 10W PAR-30 E26 GE Largo 2700K 76145 · artículo 194639. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 2275, {
+  c('MAT-10-134', PROV_BELLON, 2275, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo Reflector Led 10W PAR-30 E26 GE Corto 2700K 76144 · artículo 195309. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 555, {
+  c('MAT-10-134', PROV_BELLON, 555, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED PAR-30 10W E27 3000K 750Lm AC100-130V IP65 Dimeable Lightnest 2111009 · artículo 208509. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED PAR-30 10W E27 3000K 750Lm AC100-130V IP65 Dimeable Lightnest 2111009 · artículo 208509. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 487, {
+  c('MAT-10-134', PROV_BELLON, 487, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector Led 10W 3000K 110/220V LightNest 2907002 · artículo 209483. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 740, {
+  c('MAT-10-134', PROV_BELLON, 740, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 10W 3000K 800Lm IP65 MV Maximus · artículo 212623. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 648, {
+  c('MAT-10-134', PROV_BELLON, 648, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 10W 3000K 900Lm MV IP65 Maximus Negro 3907002 · artículo 216817. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 632, {
+  c('MAT-10-134', PROV_BELLON, 632, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 10W 6500K 900Lm MV IP65 Maximus Negro 3907001 · artículo 216818. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 501, {
+  c('MAT-10-134', PROV_BELLON, 501, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 10W 3000K 900Lm AC100/240V IP65 Negro Lightnest · artículo 221247. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 855, {
+  c('MAT-10-134', PROV_BELLON, 855, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED PAR-38 10W E27 RGBW 750Lm AC100-130V Dimeable Con Control Lightnest 2111066 · artículo 223009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 1099, {
+  c('MAT-10-134', PROV_BELLON, 1099, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 10W 120-277V BVP150 LED8 Philips · artículo 234743. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-131', PROV_BELLON, 615, {
+  c('MAT-10-134', PROV_BELLON, 615, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED PAR-38 10W 3CCT 750Lm E27 AC100-130V IP65 Dimeable Lightnest 2111150 · artículo 241265. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_MAX, 1950, {
+  c('MAT-10-134', PROV_MUNDOLED, 400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-10w-plano-luz-calida-para-exteriorip65/',
+    peso: 2,
+    nota: 'Reflector 10W Plano Luz Calida Para Exterior(Ip65) · artículo 2607. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-134', PROV_MUNDOLED, 1000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-rgb-10w-ip66-cod-4032/',
+    nota: 'REFLECTOR RGB 10W IP66 COD.4032 · artículo 4032. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MAX, 1950, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-3000k',
     nota: 'REFLECTOR LED TASCHIBRA 100W 3000K · artículo 0001124073 · ref. Tecnologia: LED | Potencia 100 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_MAX, 1940, {
+  c('MAT-10-135', PROV_MAX, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-6500k',
     nota: 'REFLECTOR LED TASCHIBRA 100W 6500k · artículo 0001117186 · ref. Tecnologia: LED | Potencia 100 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_BELLON, 10518, {
+  c('MAT-10-135', PROV_BELLON, 10518, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 100W 6500K 10000Lm MV IP65 Maximus Gris 3407012 · artículo 212631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_BELLON, 9252, {
+  c('MAT-10-135', PROV_BELLON, 9252, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 100W 3000K 8500Lm MV IP65 Maximus Gris 3407011 · artículo 212632. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_BELLON, 3694, {
+  c('MAT-10-135', PROV_BELLON, 3694, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 100W 6500K/3CCT 8000/10000Lm AC100-240V 30000H IP65 Lightnest Negro 2907008 · artículo 228054. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-132', PROV_BELLON, 1502, {
+  c('MAT-10-135', PROV_BELLON, 1502, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 100W 6500K 10000Lm 100-240V IP65 DYLLU · artículo 240120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-133', PROV_BELLON, 815, {
+  c('MAT-10-135', PROV_MUNDOLED, 1990, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-100w-ip65-6500k/',
+    nota: 'Reflector Led 100W – IP65 6500K · artículo 7046. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MUNDOLED, 3350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-100w-smd-ip65-6500k-cod-7030/',
+    nota: 'Reflector Led 100W SMD – IP65 6500K Cod. 7030 · artículo 7030. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MUNDOLED, 1600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-plano-100w-2700k-85-265w-ip65-cod-4029/',
+    nota: 'REFLECTOR LED SMD PLANO 100W 2700K 85/265W IP65 COD.4029 · artículo 4029. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-plano-100w-6500k-cod-4036/',
+    nota: 'REFLECTOR LED SMD PLANO 100W 6500K cod. 4036 · artículo 4027-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-135', PROV_MUNDOLED, 2925, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-rgb-100w-ip66-cod-4033/',
+    nota: 'REFLECTOR RGB 100W IP66 COD.4033 · artículo 4030-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-136', PROV_BELLON, 815, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED PAR-38 14W 3CCT 1000Lm E27 AC100-130V IP65 Dimeable Lightnest 2111151 · artículo 241266. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-134', PROV_BELLON, 9835, {
+  c('MAT-10-137', PROV_BELLON, 9835, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 150W 120-277V BVP150 LED127/CW Philips · artículo 234816. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-134', PROV_BELLON, 1818, {
+  c('MAT-10-137', PROV_BELLON, 1818, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 150W 6500K 13500Lm 90-265V IP65 PLF-1045C150 · artículo 236233. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-134', PROV_BELLON, 3990, {
+  c('MAT-10-137', PROV_BELLON, 3990, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 150W 3CCT 15000Lm AC100-265V IP65 Negro Lightnest 2907016 · artículo 241290. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-135', PROV_BELLON, 2207, {
+  c('MAT-10-137', PROV_MUNDOLED, 2950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-150w-ip65-6500k/',
+    nota: 'Reflector Led 150W – IP65 6500K · artículo 7031. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-137', PROV_MUNDOLED, 5250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-150w-smd-6500k-100-277-ip66-cod-7041/',
+    nota: 'REFLECTOR LED 150W SMD 6500K 100/277 IP66 cod.7041 · artículo 7041. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-138', PROV_BELLON, 2207, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector Led 16W PAR-38 5000K Maxled 2658 · artículo 206099. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-136', PROV_BELLON, 1062, {
+  c('MAT-10-139', PROV_BELLON, 1062, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED PAR-38 18W E27 1300Lm Azul AC12V Lightnest 2111104 · artículo 235571. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_FERREMIX, 462.51, {
+  c('MAT-10-140', PROV_FERREMIX, 462.51, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-led',
     nota: 'Reflector led · artículo 10913 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_BELLON, 978, {
+  c('MAT-10-140', PROV_BELLON, 978, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED Panel 20W 3000K AC100-130V 25000h IP65 Maximus Gris 3407014 · artículo 216730. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_BELLON, 1228, {
+  c('MAT-10-140', PROV_BELLON, 1228, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 20W 3000K 1800Lm MV IP65 Maximus Negro 3907004 · artículo 216819. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_BELLON, 1260, {
+  c('MAT-10-140', PROV_BELLON, 1260, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 20W 6500K 1800Lm MV IP65 Maximus Negro 3907003 · artículo 216820. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_BELLON, 899, {
+  c('MAT-10-140', PROV_BELLON, 899, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 20W 6500K 1800Lm AC100/240V IP65 Negro Lightnest LG158-20W65K · artículo 220502. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_BELLON, 1155, {
+  c('MAT-10-140', PROV_BELLON, 1155, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 20W 120-277V BVP150 LED17 Philips · artículo 234744. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_MAX, 2335, {
+  c('MAT-10-141', PROV_MAX, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-200w-65k-re0069',
     nota: 'REFLECTOR LED 200W 65K RE0069 · artículo 0001112537 · ref. Tecnologia: LED | Potencia 200 W | Temp. color 6500 K · marca MEMCA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_BELLON, 10351, {
+  c('MAT-10-141', PROV_BELLON, 10351, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 200W 120-277V BVP150 LED170 Philips · artículo 234815. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_BELLON, 8167, {
+  c('MAT-10-141', PROV_BELLON, 8167, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector Led 200W 6500K 24000LM IP66 Sylvania P23681-36 · artículo 234897. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_BELLON, 5295, {
+  c('MAT-10-141', PROV_BELLON, 5295, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 200W 3CCT 20000Lm AC100-265V IP65 Negro Lightnest 2907017 · artículo 241291. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-139', PROV_MAX, 455, {
+  c('MAT-10-141', PROV_MUNDOLED, 6750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-200w-smd-6500k-100-277-ip66-cod-7042/',
+    nota: 'REFLECTOR LED 200W SMD 6500K 100/277 IP66 COD.7042 · artículo 7042. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-141', PROV_MUNDOLED, 7100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-modular-200w-6500k-120-277v-ac-ip66-cod-1306/',
+    nota: 'REFLECTOR LED MODULAR 200W 6500K 120/277V AC IP66 COD. 1306 · artículo 1301. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-141', PROV_MUNDOLED, 3200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-200w-6500k-85-265v-ip65-rl-cod-7034/',
+    nota: 'REFLECTOR LED SMD 200W 6500K 85/265V IP65 RL cod. 7034 · artículo 7034. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-142', PROV_MAX, 455, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-cfl-23w-r40-27k-satco-s7241',
     nota: 'REFLECTOR CFL 23W R40 27K SATCO S7241 · artículo 0001029191 · ref. Tecnologia: CFL/ahorrador | Potencia 23 W | Temp. color 2700 K | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 880, {
+  c('MAT-10-143', PROV_MAX, 880, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-10-4998',
     nota: 'REFLECTOR SATCO 250W/R40/10 4998 · artículo 0001060191 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 280, {
+  c('MAT-10-143', PROV_MAX, 280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-1-4999',
     nota: 'REFLECTOR SATCO 250W/R40/1 4999 · artículo 0001060190 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_MAX, 1325, {
+  c('MAT-10-144', PROV_MAX, 1325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-rgb-30w-rg6219',
     nota: 'REFLECTOR LED RGB 30W RG6219 · artículo 0001129898 · ref. Tecnologia: LED | Potencia 30 W. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_MAX, 620, {
+  c('MAT-10-144', PROV_MAX, 620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-30w-6500k',
-    nota: 'REFLECTOR LED TASCHIBRA 30W 6500k · artículo 0001118106 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'REFLECTOR LED TASCHIBRA 30W 6500k · artículo 0001118106 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 2191, {
+  c('MAT-10-144', PROV_BELLON, 2191, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED Panel 30W 3000K AC100-130V 25000h IP65 Maximus Gris 3407016 · artículo 216748. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 1622, {
+  c('MAT-10-144', PROV_BELLON, 1622, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 30W 3000K 2400Lm MV IP65 Maximus Negro 3907006 · artículo 216821. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 1588, {
+  c('MAT-10-144', PROV_BELLON, 1588, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 30W 6500K 2700Lm MV IP65 Maximus Negro 3907005 · artículo 216822. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 1145, {
+  c('MAT-10-144', PROV_BELLON, 1145, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Reflector LED 30W 6500K 2700Lm AC100/240V IP65 Negro Lightnest LG158-30W65K · artículo 220501. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Reflector LED 30W 6500K 2700Lm AC100/240V IP65 Negro Lightnest LG158-30W65K · artículo 220501. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 1339, {
+  c('MAT-10-144', PROV_BELLON, 1339, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 30W 120-277V BVP150 LED25 Philips · artículo 234745. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 776, {
+  c('MAT-10-144', PROV_BELLON, 776, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 30W 6500K 2700Lm Negro Sylvania · artículo 235526. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_BELLON, 475, {
+  c('MAT-10-144', PROV_BELLON, 475, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 30W 6500K 3000Lm 100-240V IP65 DYLLU · artículo 240118. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 1195, {
+  c('MAT-10-144', PROV_MUNDOLED, 767, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-30w-ip65-6500k/',
+    nota: 'Reflector Led 30W – IP65 6500K COD.7039 · artículo 7039. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-144', PROV_MUNDOLED, 650, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-30w-ip66-2700k-cod7040/',
+    nota: 'Reflector Led 30W – IP66 2700K COD7040 · artículo 7040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-144', PROV_MUNDOLED, 1270, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-rgb-30w-ip66-cod-4030/',
+    nota: 'REFLECTOR RGB 30W IP66 COD.4030 · artículo 4030. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-145', PROV_MUNDOLED, 5100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-300w-ip65-6500k-cod-7035/',
+    nota: 'Reflector Led 300W – IP65 6500K cod. 7035 · artículo 9069. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-145', PROV_MUNDOLED, 10500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-modular-300w-100-277v-ip68-cod-1307/',
+    nota: 'REFLECTOR LED MODULAR 300W 100/277V IP68 COD. 1307 · artículo 1307. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-146', PROV_BELLON, 1195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo Reflector Led 4W PAR-16 E26 GE 3050K 75626 · artículo 194640. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 244, {
+  c('MAT-10-146', PROV_BELLON, 244, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica MR16 4W GU5.3 6500K 300Lm AC100-130V 25000h Dimeable Maximus 3111043 · artículo 212618. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 93, {
+  c('MAT-10-146', PROV_BELLON, 93, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica MR16 4W GU5.3 3000K 300Lm AC100-130V 25000h Dimeable Maximus 3111042 · artículo 212619. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 88, {
+  c('MAT-10-146', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Tipo Dicroica 4W GU10 6500K 300Lm AC100-130V 25000h Dimeable Maximus 3111041 · artículo 212620. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Tipo Dicroica 4W GU10 6500K 300Lm AC100-130V 25000h Dimeable Maximus 3111041 · artículo 212620. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 265, {
+  c('MAT-10-146', PROV_BELLON, 265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Tipo Dicroica MR16 4W GU5.3 3000K 300Lm 12V Lightnest 2111018 · artículo 216245. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Tipo Dicroica MR16 4W GU5.3 3000K 300Lm 12V Lightnest 2111018 · artículo 216245. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 290, {
+  c('MAT-10-146', PROV_BELLON, 290, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica MR16 4W GU5.3 6500K 300Lm 12V Lightnest 2111019 · artículo 218612. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_BELLON, 199, {
+  c('MAT-10-146', PROV_BELLON, 199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED T/Dicroica 4W 3CCT GU10 300Lm AC100-130V Dimeable Lightnest 2111141 · artículo 241267. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED T/Dicroica 4W 3CCT GU10 300Lm AC100-130V Dimeable Lightnest 2111141 · artículo 241267. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-143', PROV_BELLON, 7058, {
+  c('MAT-10-147', PROV_BELLON, 7058, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 400W 6500K 36000Lm 90-265V IP65 PLF-1045C-400 · artículo 236245. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-143', PROV_BELLON, 11880, {
+  c('MAT-10-147', PROV_BELLON, 11880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 400W 6500K 32000Lm AC100-265V 60Hz IP65 Negro Lightnest 2907014 · artículo 237904. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-144', PROV_BELLON, 95, {
+  c('MAT-10-147', PROV_MUNDOLED, 5950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-400w-ip65-6500k/',
+    nota: 'Reflector Led 400W – IP65 6500K · artículo 7036. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-147', PROV_MUNDOLED, 14000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-modular-400w-6500k-120-277v-ac-ip66-cod-1308/',
+    nota: 'REFLECTOR LED MODULAR 400W 6500K 120/277V AC IP66 COD. 1308 · artículo 1308. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-147', PROV_MUNDOLED, 5900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-plano-400w-6500k-cod-7036/',
+    nota: 'REFLECTOR LED SMD PLANO 400W 6500K cod. 7036 · artículo 7034-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-148', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica 5W GU10 3000K 375Lm MV 20000h Maximus  31564-1 · artículo 222735. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-144', PROV_BELLON, 108, {
+  c('MAT-10-148', PROV_BELLON, 108, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica 5W GU10 6500K 375Lm MV 20000h Maximus 31565-1 · artículo 222736. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-144', PROV_BELLON, 93, {
+  c('MAT-10-148', PROV_BELLON, 93, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Tipo Dicroica MR16 5W GU5.3 3000K 375Lm MV 20000h Maximus Lite 31566-1 · artículo 222737. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Tipo Dicroica MR16 5W GU5.3 3000K 375Lm MV 20000h Maximus Lite 31566-1 · artículo 222737. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-144', PROV_BELLON, 487, {
+  c('MAT-10-148', PROV_BELLON, 487, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica 5W GU10 RGBW 350Lm AC100-130V Dimmeable Con Control Lightnest 2111065 · artículo 223184. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_MAX, 970, {
+  c('MAT-10-149', PROV_MAX, 970, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-50w-3000k',
-    nota: 'REFLECTOR LED TASCHIBRA 50W 3000K · artículo 0001124077 · ref. Tecnologia: LED | Potencia 50 W | Temp. color 3000 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'REFLECTOR LED TASCHIBRA 50W 3000K · artículo 0001124077 · ref. Tecnologia: LED | Potencia 50 W | Temp. color 3000 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 3683, {
+  c('MAT-10-149', PROV_BELLON, 3683, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED Panel 50W 6500K AC100-130V 25000h IP65 Maximus Gris 3407001 · artículo 216757. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 1799, {
+  c('MAT-10-149', PROV_BELLON, 1799, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 50W 6500K/3CCT 4000/5000Lm AC100-240V 30000H IP65 Lightnest Negro 2907007 · artículo 228053. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 2640, {
+  c('MAT-10-149', PROV_BELLON, 2640, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 50W 120-277V BVP150 LED42 Philips · artículo 234746. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 1136, {
+  c('MAT-10-149', PROV_BELLON, 1136, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 50W 6500K 4500L/4750Lm Negro Sylvania P28639 · artículo 235527. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 3510, {
+  c('MAT-10-149', PROV_BELLON, 3510, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED C/ Tripode 1L 50W 6500K 4500Lm 100-240V IP65 GE-60073A · artículo 238739. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 645.63, {
+  c('MAT-10-149', PROV_BELLON, 645.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 50W 6500K 5000Lm 100-240V IP65  DYLLU · artículo 240119. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-145', PROV_BELLON, 2010, {
+  c('MAT-10-149', PROV_BELLON, 2010, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED 50W 3CCT 5000Lm AC100-265V IP65 Negro Lightnest 2907019 · artículo 241289. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-146', PROV_BELLON, 12101, {
+  c('MAT-10-149', PROV_MUNDOLED, 1038, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-50w-ip65-6500k/',
+    nota: 'Reflector Led 50W – IP65 6500K · artículo 7044. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-149', PROV_MUNDOLED, 950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-50w-2700k-cw-cod-4027/',
+    nota: 'REFLECTOR LED SMD 50W 2700K CW cod. 4027 · artículo 4027. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-149', PROV_MUNDOLED, 915, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-smd-50w-6500k-cw-cod-4035/',
+    nota: 'REFLECTOR LED SMD 50W 6500K CW cod.4035 · artículo 4035. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-149', PROV_MUNDOLED, 1901, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-rgb-50w-ip66-cod-4037/',
+    nota: 'REFLECTOR RGB 50W IP66 COD.4037 · artículo 4037. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-150', PROV_MUNDOLED, 18000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/reflector-led-modular-500w-5000k-100-277v-ip68-cod-1309/',
+    nota: 'REFLECTOR LED MODULAR 500W 5000K 100/277V IP68 COD. 1309 · artículo 1304. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-151', PROV_BELLON, 12101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector 55 Jeta LED 55W 4500K 3300LM 120/240V IP65 Sylvania P47725-36 · artículo 219537. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-147', PROV_BELLON, 472, {
+  c('MAT-10-152', PROV_BELLON, 472, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Tipo Dicroica 6.5W GU10 3000K Dimeable Satco S9383 · artículo 216076. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Tipo Dicroica 6.5W GU10 3000K Dimeable Satco S9383 · artículo 216076. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-148', PROV_BELLON, 120, {
+  c('MAT-10-153', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Bombillo LED Tipo Dicroica 8W GU10 3000K 500Lm AC100-130V 25000h Dimeable Maximus 3111018 · artículo 216723. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bombillo LED Tipo Dicroica 8W GU10 3000K 500Lm AC100-130V 25000h Dimeable Maximus 3111018 · artículo 216723. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-148', PROV_BELLON, 280, {
+  c('MAT-10-153', PROV_BELLON, 280, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED Tipo Dicroica 8W 130V GU10 6500K 500 LM Dimm 1663 · artículo 216966. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-148', PROV_BELLON, 877, {
+  c('MAT-10-153', PROV_BELLON, 877, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector LED Con Soporte 8W 5000K 400Lm Diamond Visions 08-2595 · artículo 231915. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-148', PROV_BELLON, 310, {
+  c('MAT-10-153', PROV_BELLON, 310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED T/Dicroica 8W 3CCT GU10 500Lm AC100-130V Dimeable Lightnest 2111143 · artículo 241268. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-149', PROV_BELLON, 319, {
+  c('MAT-10-154', PROV_BELLON, 319, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo Reflector LED BR30 8.5W E26 2700K 700Lm 120V Dimeable Satco · artículo 234955. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-150', PROV_BELLON, 7145, {
+  c('MAT-10-155', PROV_BELLON, 7145, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Reflector Mini 9W Super Led RG 5M Sibrape 14500R512 · artículo 228237. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-150', PROV_BELLON, 545, {
+  c('MAT-10-155', PROV_BELLON, 545, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bombillo LED PAR-20 9W E27 1300Lm Azul AC12V Lightnest 2111105 · artículo 235572. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-151', PROV_FERREMIX, 699, {
+  c('MAT-10-156', PROV_FERREMIX, 699, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
     nota: 'Tubo de led para gabinete · artículo T47325 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-152', PROV_MAX, 249.99, {
+  c('MAT-10-157', PROV_MUNDOLED, 142, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-t5-fino-80cm-12watts-luz-blanca-cod-5028/',
+    nota: 'Tubo LED T5 fino 80CM 12WATTS LUZ BLANCA COD.5028 · artículo 5028. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-158', PROV_MAX, 249.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-16w-6500k',
     nota: 'TUBO LED TASCHIBRA 40 16W 6500K · artículo 0001118111 · ref. Tecnologia: LED | Potencia 16 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-153', PROV_FERREMIX, 785, {
+  c('MAT-10-159', PROV_MUNDOLED, 177, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-cristal-clear-120cm-18w-luz-blanca-6500k-cod-5012/',
+    peso: 4,
+    nota: 'Tubo Led CRISTAL CLEAR 120Cm 18W Luz Blanca (6500K) COD. 5012 · artículo 5012. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-159', PROV_MUNDOLED, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-cristal-clear-120cm-18w-luz-intermedia-4100-cod-5053/',
+    nota: 'Tubo Led CRISTAL CLEAR 120Cm 18W Luz Intermedia 4100K COD. 5053 · artículo 5053. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-159', PROV_MUNDOLED, 500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-frost-120cm-18w-luz-blanca-6500k-24-horas-cod-5045/',
+    peso: 2,
+    nota: 'Tubo Led Frost 120Cm 18W Luz Blanca (6500K) 24 HORAS Cod. 5045 · artículo 5045. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-159', PROV_MUNDOLED, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-t8-cristal-120-cm-18w-3000k-frost-100-277v-ip20-neoluz-cod-5083/',
+    nota: 'TUBO LED T8 CRISTAL 120 CM 18W 3000K FROST 100/277V IP20 NEOLUZ COD.5083 · artículo 5083. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-160', PROV_FERREMIX, 785, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
     nota: 'Tubo de led para gabinete · artículo T47326 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-154', PROV_MAX, 264.99, {
+  c('MAT-10-161', PROV_MAX, 264.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-20-5w-6500k',
     nota: 'TUBO LED TASCHIBRA 40 20.5W 6500K · artículo 0001118112 · ref. Tecnologia: LED | Potencia 20.5 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-155', PROV_FERREMIX, 889, {
+  c('MAT-10-162', PROV_MUNDOLED, 404, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-t8-150cm-cristal-22w-100-277v-frost-cod-5040/',
+    nota: 'TUBO LED T8 150cm CRISTAL 22W 100/277V Frost Cod. 5040 · artículo 5040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-163', PROV_FERREMIX, 889, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
     nota: 'Tubo de led para gabinete · artículo T47327 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-156', PROV_FERREMIX, 875, {
+  c('MAT-10-164', PROV_MUNDOLED, 3000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-integrado-1-2m-30w-100-277v-6500k-ip65-cod-5018/',
+    nota: 'TUBO LED INTEGRADO 1.2M 30W 100-277V 6500K IP65 Cod.5018 · artículo 5018. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-165', PROV_FERREMIX, 875, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-led-t8-36w',
     nota: 'Tubo de led 8, 36w, 3800lm, 240 cm de largo.. · artículo T49310 · ref. 240 CM · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-157', PROV_FERREMIX, 505, {
+  c('MAT-10-165', PROV_MUNDOLED, 1000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-36w-240cm-alpc-24h-1pin-clear-100-277v-neoluz-6500k-24-horas-cod-5046/',
+    nota: 'TUBO LED 36W 240CM AL+PC 24H 1PIN FROST 100/277V NEOLUZ (6500K) 24 HORAS Cod.5043 · artículo 5043. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-165', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-integrado-cuarto-frio-36w-cw-6500k-120cm-cod-5609/',
+    nota: 'TUBO LED INTEGRADO CUARTO FRIO 36W CW 6500K 120CM COD.5609 · artículo 5609. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-165', PROV_MUNDOLED, 700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-t8-36w-240cm-1pin-6500k-cristal-clear-100-277v-cod-r5037/',
+    nota: 'TUBO LED T8 36W 240CM 1PIN 6500K CRISTAL CLEAR 100-277V COD.5037 · artículo R5037. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-165', PROV_MUNDOLED, 650, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-t8-36w-240cm-1pin-6500k-cristal-frost-100-277v-cod-r5036/',
+    nota: 'TUBO LED T8 36W 240CM 1PIN 6500K CRISTAL FROST 100-277V COD.5036 · artículo R5036. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-166', PROV_FERREMIX, 505, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
     nota: 'Tubo de led para gabinete · artículo T47324 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-158', PROV_FERREMIX, 145, {
+  c('MAT-10-167', PROV_FERREMIX, 145, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-led-vidrio-luz-blanca',
     nota: 'Tubo led con pantalla de vidrio de luz blanca · artículo T28000 · ref. T28000 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-159', PROV_MAX, 210, {
+  c('MAT-10-167', PROV_MUNDOLED, 120, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-cristal-transparente-9-watts-60cm-cod5049/',
+    nota: 'Tubo Led Cristal Transparente 9 Watts 60Cm COD.5052 · artículo 5052. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-167', PROV_MUNDOLED, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/tubo-led-frost-60cm-9w-cw-cod5049/',
+    peso: 2,
+    nota: 'Tubo Led Frost 60Cm 9W 4100k COD.4021 · artículo 4021. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-168', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-20-9-9w-6500k',
     nota: 'TUBO LED TASCHIBRA 20 9.9W 6500K · artículo 0001118110 · ref. Tecnologia: LED | Potencia 9.9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-160', PROV_MAX, 235, {
+  c('MAT-10-169', PROV_MAX, 235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fotocelda-105-285v-7673c-jccc-jl-205c',
     nota: 'FOTOCELDA 105-285V. 7673C-JCCC/JL-205C · artículo 0001001061 · ref. Tecnologia: Incandescente/halogeno · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-160', PROV_MAX, 370, {
+  c('MAT-10-169', PROV_MAX, 370, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-con-fotocelda-t46534',
     nota: 'ZOCALO CON FOTOCELDA T46534 · artículo 0001126253 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-160', PROV_MAX, 150, {
+  c('MAT-10-169', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/base-p-fotocelda-suburba-voltech-t47229',
     nota: 'BASE P/FOTOCELDA SUBURBA VOLTECH T47229 · artículo 0001122421 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 49, {
+  c('MAT-10-170', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-plastica-tw',
     nota: 'MASILLA JOINT COMPOUND W 5GL TROPICAL · artículo 1702 · ref. 5 GL · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 259, {
+  c('MAT-10-170', PROV_FERREMIX, 259, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-3-4-x-10-1-0mm-emt',
     nota: 'ROSETA PLASTICA TW · artículo 2358 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 35, {
+  c('MAT-10-170', PROV_FERREMIX, 35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-t46500',
-    nota: 'Zocalo de baquelita sencillo en funda volteck · artículo T46500 · ref. T46500 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Zocalo de baquelita sencillo en funda volteck · artículo T46500 · ref. T46500 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 55, {
+  c('MAT-10-170', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-plastico-reforzado-para-exterior',
     nota: 'Zocalo reforado de pvc para interperie volteck.. · artículo T47110 · ref. T47110 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 110, {
+  c('MAT-10-170', PROV_FERREMIX, 110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-plastico-para-lampara-de-tubo',
     nota: 'Zocalo slim line volteck · artículo T46506 · ref. T46506 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 80, {
+  c('MAT-10-170', PROV_FERREMIX, 80, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-plastico-con-base-g13-bipin',
     nota: 'Zocalo base g13 bipin volteck · artículo T46508 · ref. T46508 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 60, {
+  c('MAT-10-170', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-de-doble-entrada',
     nota: 'Zocalo de baquelita de doble entrada volteck · artículo T46539 · ref. T46539 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 45, {
+  c('MAT-10-170', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita',
     nota: 'Zocalo 2\'\' plastico volteck · artículo T46517 · ref. T46517 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_FERREMIX, 39, {
+  c('MAT-10-170', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-con-adaptador',
     nota: 'Zocalo 1 5/8\'\' plastico con adaptador volteck · artículo T46525 · ref. T46525 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 135, {
+  c('MAT-10-171', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46527',
     nota: 'Zocalo de porcelana base mogul e39 volteck · artículo T46527 · ref. T46527 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 29, {
+  c('MAT-10-171', PROV_FERREMIX, 29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-para-candil',
     nota: 'Zocalo de porcelana para candil volteck · artículo T46531 · ref. T46531 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 40, {
+  c('MAT-10-171', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46528',
-    nota: 'Zocalo de porcelana sencillo volteck · artículo T46528 · ref. T46528 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Zocalo de porcelana sencillo volteck · artículo T46528 · ref. T46528 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 45, {
+  c('MAT-10-171', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46529',
-    nota: 'Zocalo de porcelana soporte tipo escuadra volteck · artículo T46529 · ref. T46529 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Zocalo de porcelana soporte tipo escuadra volteck · artículo T46529 · ref. T46529 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 299, {
+  c('MAT-10-171', PROV_FERREMIX, 299, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46526',
     nota: 'Roseta 4 1/2\'\' de pocelana con enchufe y cadena volteck · artículo T46526 · ref. T46526 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 125, {
+  c('MAT-10-171', PROV_FERREMIX, 125, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-de-porcelana',
     nota: 'Roseta de pocelana 49875 leviton · artículo 1317 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_FERREMIX, 49, {
+  c('MAT-10-171', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-porcelana',
     nota: 'SELLADOR DE RADIADOR FOQUITA 20GR · artículo 13337 · ref. 20 GR · marca Levente. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-163', PROV_MAX, 115, {
+  c('MAT-10-172', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-plast-marfil-veto-43036',
-    nota: 'ROSETA PLAST. MARFIL VETO 43036 · artículo 0001118638 · ref. Tecnologia: Incandescente/halogeno · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ROSETA PLAST. MARFIL VETO 43036 · artículo 0001118638 · ref. Tecnologia: Incandescente/halogeno · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-163', PROV_MAX, 125, {
+  c('MAT-10-172', PROV_MAX, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-porcelana-leviton-9875',
     nota: 'ROSETA PORCELANA LEVITON 9875 · artículo 0001001043 · ref. Tecnologia: Incandescente/halogeno · marca LEVITON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 30, {
+  c('MAT-10-173', PROV_MAX, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelana-e12-voltech-46531',
-    nota: 'ZOCALO PORCELANA E12 VOLTECH 46531 · artículo 0001128125 · ref. Tecnologia: Incandescente/halogeno | Base/formato E12 · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ZOCALO PORCELANA E12 VOLTECH 46531 · artículo 0001128125 · ref. Tecnologia: Incandescente/halogeno | Base/formato E12 · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 560, {
+  c('MAT-10-173', PROV_MAX, 560, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-c-sensor-movimiento-t46274',
     nota: 'ZOCALO C/SENSOR MOVIMIENTO T46274 · artículo 0001126252 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 75, {
+  c('MAT-10-173', PROV_MAX, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-int-barra-volteck-t46501',
     nota: 'ZOCALO BAQUE C/INT BARRA VOLTECK T46501 · artículo 0001121347 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 70, {
+  c('MAT-10-173', PROV_MAX, 70, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-base-g13-bipin-volteck-t46508',
-    nota: 'ZOCALO BASE G13 BIPIN VOLTECK T46508 · artículo 0001121346 · ref. Tecnologia: Incandescente/halogeno | Base/formato G13 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ZOCALO BASE G13 BIPIN VOLTECK T46508 · artículo 0001121346 · ref. Tecnologia: Incandescente/halogeno | Base/formato G13 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 45.01, {
+  c('MAT-10-173', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelan-cuadrado-volteck-t46522',
-    nota: 'ZOCALO PORCELAN CUADRADO VOLTECK T46522 · artículo 0001121343 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ZOCALO PORCELAN CUADRADO VOLTECK T46522 · artículo 0001121343 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 35, {
+  c('MAT-10-173', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-adaptador-volteck-46525',
-    nota: 'ZOCALO BAQUE C/ ADAPTADOR VOLTECK 46525 · artículo 0001121342 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ZOCALO BAQUE C/ ADAPTADOR VOLTECK 46525 · artículo 0001121342 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 55, {
+  c('MAT-10-173', PROV_MAX, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-ref-d-pvc-p-interp-volteck-t47110',
     nota: 'ZOCALO REF D/PVC P/INTERP VOLTECK T47110 · artículo 0001121303 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-165', PROV_MAX, 465, {
+  c('MAT-10-174', PROV_MUNDOLED, 1000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/empotrable-de-techo-lineal-blanca-y-negra-10w-3000k-cod-3020/',
+    nota: 'EMPOTRABLE DE TECHO LINEAL BLANCA Y NEGRA 10W 3000K cod. 3020 · artículo 3020. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-175', PROV_MUNDOLED, 1800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/empotrable-led-techo-lineal-blanca-y-negra-20w-3000k-cod-3021/',
+    nota: 'EMPOTRABLE LED TECHO LINEAL BLANCA Y NEGRA 20W 3000K cod. 3021 · artículo 3021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-176', PROV_MUNDOLED, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/manguera-led-60xm-100m-3528-ip-68-4100k-intermedia-110v-cod-6086/',
+    nota: 'Manguera Led 60Xm 100M 3528 Ip 68 4100K INTERMEDIA 110V COD.6086 · artículo 6086. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-177', PROV_MUNDOLED, 900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/rollo-cinta-led-luz-intermedia4100k-5-metros-ip20-120-leds-m-cod-1733/',
+    peso: 2,
+    nota: 'CINTA LED 2835 120LED NW 4100K 5M 12V IP20 cod.1733 · artículo 1733. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-178', PROV_MUNDOLED, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/manguera-neon-cw-6500k-smd-2835-ac-110v-120led-m-rollo-100m-ip65-cod-1529/',
+    nota: 'MANGUERA NEON CW 6500K SMD 2835 AC 110V 120LED/M (ROLLO 100M) IP65 COD.1529 · artículo 1529. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-178', PROV_MUNDOLED, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/manguera-neon-ww-3000k-smd-2835-ac-110v-120led-m-rollo-100m-ip65-cod-1530/',
+    nota: 'MANGUERA NEON WW 3000K SMD 2835 AC 110V 120LED/M (ROLLO 100M) IP65 COD.1530 · artículo 1530. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-179', PROV_MUNDOLED, 1151, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/cinta-de-neon-flex-cw-612mm-8mm-5m-cod-1509/',
+    nota: 'CINTA DE NEON FLEX CW 6*12mm *8mm 5M COD.1509 · artículo 1509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-179', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/cinta-led-5050-60led-rgb-5m-12v-ip20-cod-1734/',
+    nota: 'CINTA LED 5050 60LED RGB 5M 12V IP20 COD.1734 · artículo 1734. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-180', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/esquinero-led-perfil-25009135mm-cod-7366/',
+    nota: 'ESQUINERO LED PERFIL 2500*91*35MM COD.7366 · artículo 7366. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-181', PROV_MUNDOLED, 2800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/perfil-led-escalera-negro-25005524-mm-cod-7367/',
+    nota: 'PERFIL LED ESCALERA NEGRO 2500*55*24 MM COD.7367 · artículo 7367. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-182', PROV_MUNDOLED, 1730, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-12v-lpv-100w-8-3-ampip-65-small-size-hw/',
+    nota: 'POWER SUPPLY 12V LPV 100W .8.3 amp,IP 65 SMALL SIZE. HW · artículo 6062. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-182', PROV_MUNDOLED, 1000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-12v-ms-100w-8-5-amp-ip44-lrs-wh/',
+    nota: 'POWER SUPPLY 12V MS 100W ,8.5 amp, IP44 (LRS) WH · artículo 6028. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-183', PROV_MUNDOLED, 1840, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-150w-s-12v-ip44-12-5amp-lrs-wh/',
+    nota: 'POWER SUPPLY 150W S 12V IP44/12.5amp (LRS) WH · artículo 7021. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-183', PROV_MUNDOLED, 1263, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-5v-150w-non-wp/',
+    nota: 'POWER SUPPLY 5V 150W NON-WP · artículo 6026. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-184', PROV_MUNDOLED, 2006, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-200w-s-12v-ip-44-lrs-wh/',
+    nota: 'POWER SUPPLY 200W S 12V IP 44 (LRS) WH · artículo 7019. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-184', PROV_MUNDOLED, 1723, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-200w-s-24v-ip44-lrs-wh/',
+    nota: 'POWER SUPPLY 200W S 24V IP44 (LRS) WH · artículo 6030. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-184', PROV_MUNDOLED, 2600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-lpv-200w-12v-ip67-16-6amp-wh/',
+    nota: 'POWER SUPPLY LPV 200W 12V IP67/16.6amp WH · artículo 7013. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-185', PROV_MUNDOLED, 2006, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-s-250w-12v20amp-ip44-lrs-wh/',
+    nota: 'POWER SUPPLY S – 250W 12V,20amp, IP44 (LRS ) WH · artículo 6071. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-186', PROV_MUNDOLED, 2071, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-de-300w-ip44-25-amp-lrs/',
+    nota: 'Power Supply De 300W IP44 25 AMP (LRS). · artículo 6063. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-187', PROV_MUNDOLED, 2431, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-s-400w-12v-ipp44-110v-lrs-33amp-wh/',
+    nota: 'POWER SUPPLY S- 400W-12V IPP44 110V (LRS) 33AMP WH · artículo 7008. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-188', PROV_MUNDOLED, 770, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/power-supply-12v-60w-5-amp-ip-44-lrs-wh/',
+    nota: 'POWER SUPPLY 12v, 60W, 5 amp IP 44 (LRS) WH · artículo 6073. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MUNDOLED, 3700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-6500k-100-277v-ip65-jg-cod-1809/',
+    peso: 2,
+    nota: 'CAMPANA LED UFO 100W 6500K 100-277V IP65 JG COD.1809 · artículo 1809. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-gris-sin-driver-6500k-100-277v-cod-1813/',
+    nota: 'CAMPANA LED UFO 100W GRIS SIN DRIVER 6500K 100-277V COD.1813 · artículo 1813. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MUNDOLED, 5800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-selector-de-watts-100w-150w-200w-6500k-24h-ip65-cod-1833/',
+    nota: 'CAMPANA LED UFO SELECTOR DE WATTS 100W 150W 200W 6500K 24H IP65 COD.1833 · artículo 1833. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MUNDOLED, 4625, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-100w-sin-cover-6500k-120-277v-120/',
+    nota: 'Campana Ufo 100W Sin Cover 6500K 120/277V 120° · artículo 1807-1 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MUNDOLED, 14500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-led-canopy-100w-cod-3009/',
+    nota: 'LAMPARA LED CANOPY 100W COD.3009 · artículo 3009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-190', PROV_MUNDOLED, 5830, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-120-277v/',
+    nota: 'Campana Ufo 150W Sin Cover 6500K 120* 120/277V · artículo 1810 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-190', PROV_MUNDOLED, 6900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-dimeable-24h-120-277v/',
+    nota: 'Campana Ufo 150W Sin Cover 6500K 120* DIMEABLE 24H 120/277V · artículo 1824 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-191', PROV_MUNDOLED, 2500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-200w-gris-sin-driver-6500k-100-277v-cod-1814/',
+    nota: 'CAMPANA LED UFO 200W GRIS SIN DRIVER 6500K 100-277V COD.1814 · artículo 1814. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-192', PROV_MUNDOLED, 4090, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-50-watt-120v-277v-cod-1808-copy/',
+    nota: 'Campana Led Ufo 50 Watt 120V-277V Cod-1808 (Copy) · artículo 1808-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-192', PROV_MUNDOLED, 4000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-50w-6500k-cod-1808/',
+    nota: 'CAMPANA LED UFO 50W 6500K Cod-1808 · artículo 1808. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-193', PROV_MUNDOLED, 4500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-60w-6500k-120-277-cod-1802/',
+    nota: 'CAMPANA LED UFO 60W 6500K 120/277 COD.1802 · artículo 1808-2-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-194', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-ngr-61849',
     nota: 'TOMA/INTER VETO PLURA NGR 61849 · artículo 0001127216 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-165', PROV_MAX, 535, {
+  c('MAT-10-194', PROV_MAX, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-bco-60767',
     nota: 'TOMA/INTER VETO PLURA BCO 60767 · artículo 0001127215 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 115, {
+  c('MAT-10-195', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-negro',
     nota: 'MATRACA DE 72 DIENTES PL511 · artículo T47892 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 58, {
+  c('MAT-10-195', PROV_FERREMIX, 58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-1-5-modulo',
     nota: 'Interruptor 3 vías acero inox de 1.5 módulo · artículo 50257082974512 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 69, {
+  c('MAT-10-195', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-acero-inox-de-1-modulo',
     nota: 'CINCHOS TAIRRA PLASTICO DE 18 LBS TENSION · artículo T47823 · ref. 18 LBS · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 75, {
+  c('MAT-10-195', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-3-modulos-linea-lisboa',
     nota: 'CINCHOS TAIRRA PLASTICO 40 LBS TENSION · artículo T47825 · ref. 40 LBS · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 55, {
+  c('MAT-10-195', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-blanco-de-1-modulo-linea-lisboa',
     nota: 'CINCHO TAIRRA PLASTICO DE ALTA RESISTENCIA Y 120 LB DE TENSION · artículo T47943 · ref. 120 LB · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 45, {
+  c('MAT-10-195', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-marfil',
     nota: 'LLAVIN PARA BANO · artículo T27229 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 135, {
+  c('MAT-10-195', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-con-placa-negro',
     nota: 'Interruptor de 3 vas negro lnea talana volteck · artículo T47600 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_FERREMIX, 70, {
+  c('MAT-10-195', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-tipo-oslo',
     nota: 'Interruptor sencllo blanco de 3 vas sn tapa oslo volteck · artículo T48321 · ref. T48321 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 14.74, {
+  c('MAT-10-195', PROV_BELLON, 14.74, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3 Way Conatel Marfil 5614 · artículo 19514. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 176.78, {
+  c('MAT-10-195', PROV_BELLON, 176.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Modus Marfil AE2101EM · artículo 136416. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 168.68, {
+  c('MAT-10-195', PROV_BELLON, 168.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Modus Blanco AE2101EB · artículo 136417. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 555, {
+  c('MAT-10-195', PROV_BELLON, 555, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Leviton Decora Blanco S12-5603-2W · artículo 153257. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 188.1, {
+  c('MAT-10-195', PROV_BELLON, 188.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Matix Blanco AM5003 · artículo 161404. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 386, {
+  c('MAT-10-195', PROV_BELLON, 386, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3 Way Leviton Decora Light Almond 5603-2TS · artículo 195674. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 230, {
+  c('MAT-10-195', PROV_BELLON, 230, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Con Placa Leviton Cien Blanco INVPL-BLA · artículo 205908. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 159, {
+  c('MAT-10-195', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3 Way Con Placa Leviton Cien Marfil INVPL-MAR · artículo 205928. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 447, {
+  c('MAT-10-195', PROV_BELLON, 447, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Blanco INT3V-BLA · artículo 209338. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 349, {
+  c('MAT-10-195', PROV_BELLON, 349, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Marfil INT3V-MAR · artículo 209339. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 476.79, {
+  c('MAT-10-195', PROV_BELLON, 476.79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3 Way Con Tomacorriente Universal Bticino Domino Blanco AP5326 · artículo 212520. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 67, {
+  c('MAT-10-195', PROV_BELLON, 67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3Way Sencillo Maximus  Blanco · artículo 221980. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 73, {
+  c('MAT-10-195', PROV_BELLON, 73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3Way Sencillo Maximus Marfil PBK-C005M · artículo 221981. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 264.67, {
+  c('MAT-10-195', PROV_BELLON, 264.67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Blanco AF2101EB · artículo 226679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 194.34, {
+  c('MAT-10-195', PROV_BELLON, 194.34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Marfil AF2101EM · artículo 226680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 240, {
+  c('MAT-10-195', PROV_BELLON, 240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Champagne AF2101EBCH · artículo 226681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 269.11, {
+  c('MAT-10-195', PROV_BELLON, 269.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Negro AF2101EANG · artículo 226682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 143, {
+  c('MAT-10-195', PROV_BELLON, 143, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way · artículo 229203. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 262, {
+  c('MAT-10-195', PROV_BELLON, 262, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Acero Inoxidable INTR3-L13-13S · artículo 234243. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 272, {
+  c('MAT-10-195', PROV_BELLON, 272, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L23-12S · artículo 234244. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 270, {
+  c('MAT-10-195', PROV_BELLON, 270, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Acero Inoxidable INTR3-L33-33S · artículo 234245. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Acero Inoxidable INTR3-L33-33S · artículo 234245. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 202, {
+  c('MAT-10-195', PROV_BELLON, 202, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Negro INTR3-L12-13N · artículo 234254. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 259, {
+  c('MAT-10-195', PROV_BELLON, 259, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Negro INTR3-L22-12N · artículo 234255. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 263, {
+  c('MAT-10-195', PROV_BELLON, 263, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Negro INTR3-L32-33N · artículo 234256. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 237, {
+  c('MAT-10-195', PROV_BELLON, 237, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Blanco INTR3-L10-13B · artículo 234281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 260, {
+  c('MAT-10-195', PROV_BELLON, 260, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Blanco INTR3-L20-12B · artículo 234282. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Blanco INTR3-L20-12B · artículo 234282. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 407, {
+  c('MAT-10-195', PROV_BELLON, 407, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3 Way Leviton Decora Negro 5603-2E · artículo 238611. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 72, {
+  c('MAT-10-195', PROV_BELLON, 72, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor 3Way Sencillo Maximus Negro PBK-C005N · artículo 241300. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor 3Way Sencillo Maximus Negro PBK-C005N · artículo 241300. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 142, {
+  c('MAT-10-195', PROV_BELLON, 142, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Sencillo 3Way 110V Enerlite Negro E-I400A-BK-2 · artículo 241702. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Sencillo 3Way 110V Enerlite Negro E-I400A-BK-2 · artículo 241702. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_BELLON, 155, {
+  c('MAT-10-195', PROV_BELLON, 155, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3Way 110V Enerlite Aluminio E-I400A-SS-2 · artículo 241705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 565, {
+  c('MAT-10-196', PROV_MAX, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61900-3way',
     nota: 'INTER DOBLE VETO PLURA NGR 61900 3WAY · artículo 0001127228 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 420, {
+  c('MAT-10-196', PROV_MAX, 420, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-3way-veto-plura-ngr-61832',
     nota: 'INTERUPTOR 3WAY VETO PLURA NGR 61832 · artículo 0001127226 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 675, {
+  c('MAT-10-196', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-ngr-61856',
     nota: 'INTER TRIPLE 3WAY VETO PLURA NGR 61856 · artículo 0001127200 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 685, {
+  c('MAT-10-196', PROV_MAX, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-bco-60798',
     nota: 'INTER TRIPLE 3WAY VETO PLURA BCO 60798 · artículo 0001127199 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 395, {
+  c('MAT-10-196', PROV_MAX, 395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-3way-veto-premiun-bco-29146',
     nota: 'INTER DOBLE 3WAY VETO PREMIUN BCO 29146 · artículo 0001123894 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 520, {
+  c('MAT-10-196', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-3way-doble-veto-plura-bco-60781',
     nota: 'INTER 3WAY DOBLE VETO PLURA BCO 60781 · artículo 0001117207 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-168', PROV_MAX, 544.99, {
+  c('MAT-10-197', PROV_MAX, 544.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-4way-veto-plura-bco-60804',
     nota: 'INTER 4WAY VETO PLURA BCO 60804 · artículo 0001127202 · ref. Conmutable 4 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-168', PROV_MAX, 390, {
+  c('MAT-10-197', PROV_MAX, 390, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-4way-veto-premiun-16146',
     nota: 'INTERUPTOR 4WAY VETO PREMIUN 16146 · artículo 0001123895 · ref. Conmutable 4 vias · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-169', PROV_MAX, 1265, {
+  c('MAT-10-198', PROV_MAX, 1265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimmer-rotat-300w-120v-btn-matix-am4406',
     nota: 'DIMMER ROTAT. 300W 120V BTN MATIX AM4406 · artículo 0001020785 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-169', PROV_MAX, 960, {
+  c('MAT-10-198', PROV_MAX, 960, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimer-veto-plura-ngr-61955',
     nota: 'DIMER VETO PLURA NGR 61955 · artículo 0001127184 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 205, {
+  c('MAT-10-199', PROV_MAX, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-doble-b-ancho-c-lp-plata-bco-36991',
     nota: 'INT DOBLE B/ANCHO C/LP PLATA BCO 36991 · artículo 0001127234 · ref. Color PLATA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 4320, {
+  c('MAT-10-199', PROV_MAX, 4320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-ngr-60996',
     nota: 'INTER DOBLE VETO PLURA SMART NGR 60996 · artículo 0001127186 · ref. Version smart (domotica) | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 4515, {
+  c('MAT-10-199', PROV_MAX, 4515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-bco-60989',
     nota: 'INTER DOBLE VETO PLURA SMART BCO 60989 · artículo 0001127185 · ref. Version smart (domotica) | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 460, {
+  c('MAT-10-199', PROV_MAX, 460, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-bco-60736',
     nota: 'INTER DOBLE VETO PLURA BCO 60736 · artículo 0001123893 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 165, {
+  c('MAT-10-199', PROV_MAX, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-crema-c-l-35130',
     nota: 'INTERR VETO DOBLE CREMA C/L 35130 · artículo 0001118626 · ref. Color CREMA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 150, {
+  c('MAT-10-199', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-doble-veto-blanco-90139',
     nota: 'INTERRUPTOR DOBLE VETO BLANCO 90139 · artículo 0001118617 · ref. Color BLANCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 145, {
+  c('MAT-10-199', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-bco-c-l-35123',
     nota: 'INTERR VETO DOBLE BCO C/L 35123 · artículo 0001118625 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 475, {
+  c('MAT-10-199', PROV_MAX, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61818',
     nota: 'INTER DOBLE VETO PLURA NGR 61818 · artículo 0001127189 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 190, {
+  c('MAT-10-199', PROV_FERREMIX, 190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-blanco-1',
-    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47968 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47968 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 189, {
+  c('MAT-10-199', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-blanco-1',
-    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47967 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47967 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 145, {
+  c('MAT-10-199', PROV_FERREMIX, 145, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-34mm-blanco',
-    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47960 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47960 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 230, {
+  c('MAT-10-199', PROV_FERREMIX, 230, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-negro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47901 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 225, {
+  c('MAT-10-199', PROV_FERREMIX, 225, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-bnegro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47900 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 139, {
+  c('MAT-10-199', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro-1',
-    nota: 'MALETIN PORTAHERRAMIENTAS · artículo T47887 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MALETIN PORTAHERRAMIENTAS · artículo T47887 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 289, {
+  c('MAT-10-199', PROV_FERREMIX, 289, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-acero-inox-linea-espanola-volteck',
     nota: 'TOPE DE PERNO DE BISAGRA PARA PUERTA · artículo T47848 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 340, {
+  c('MAT-10-199', PROV_FERREMIX, 340, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-acero-inox',
     nota: 'PALOMETA CON GANCHO REFORZADA · artículo T47847 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 45, {
+  c('MAT-10-199', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-sin-tapa',
     nota: 'BISAGRA DOBLE ACCION 3 · artículo T27109 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 120, {
+  c('MAT-10-199', PROV_FERREMIX, 120, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-oslo',
-    nota: 'BISAGRA DOBLE ACCION 3 · artículo T46493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BISAGRA DOBLE ACCION 3 · artículo T46493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 55, {
+  c('MAT-10-199', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-23mm-linea-espanola',
     nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47045 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 65, {
+  c('MAT-10-199', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-sin-tapa-blanco-35mm-linea-espanola',
     nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47049 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 60, {
+  c('MAT-10-199', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-70mm',
-    nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47990 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47990 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 165, {
+  c('MAT-10-199', PROV_FERREMIX, 165, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro',
     nota: 'COMBO CERRADURAS LLAVE MARIPOSA · artículo T47597 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 159, {
+  c('MAT-10-199', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-crema-linea-estandar',
     nota: 'CERROJO TIPO MARIPOSA · artículo T48492 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 239, {
+  c('MAT-10-199', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-creama-linea-italiana',
-    nota: 'CANDADO DE LATON PULIDO · artículo T48667 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CANDADO DE LATON PULIDO · artículo T48667 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 235, {
+  c('MAT-10-199', PROV_FERREMIX, 235, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-negro-linea',
     nota: 'CERROJO LLAVE LLAVE · artículo T47596 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 205, {
+  c('MAT-10-199', PROV_FERREMIX, 205, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-crema-linea',
     nota: 'CERROJO LLAVE LLAVE · artículo T48665 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 215, {
+  c('MAT-10-199', PROV_FERREMIX, 215, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-crema-linea-italiana',
     nota: 'LLAVIN PARA ENTRADA · artículo T48668 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 75, {
+  c('MAT-10-199', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-con-tapa-ivory',
     nota: 'Interruptor doble c/tapa vory ez* · artículo 8936 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 429, {
+  c('MAT-10-199', PROV_FERREMIX, 429, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-blanco-5243-i',
     nota: 'Interruptor doble blanco 5243-w blanco levton · artículo 25983 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 416, {
+  c('MAT-10-199', PROV_FERREMIX, 416, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-crema-5243-i',
     nota: 'Interruptor 3way doble crema 5243- levton · artículo 25984 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 365, {
+  c('MAT-10-199', PROV_FERREMIX, 365, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-blanco-5224-2w',
-    nota: 'interruptor doble blanco 5224 2w · artículo 25986 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'interruptor doble blanco 5224 2w · artículo 25986 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 129, {
+  c('MAT-10-199', PROV_FERREMIX, 129, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-linea-standard',
     nota: 'Interruptor doble crema sn tapa lnea estandar volteck · artículo T46002 · ref. T46002 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_FERREMIX, 175, {
+  c('MAT-10-199', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble',
     nota: 'Interruptor doble blanco sn tapa lnea classc volteck · artículo T46006 · ref. T46006 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 369.94, {
+  c('MAT-10-199', PROV_BELLON, 369.94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3 Way Bticino Modus Marfil AE2201EM · artículo 136409. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 226.63, {
+  c('MAT-10-199', PROV_BELLON, 226.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Modus Marfil 1200MAB AE2200EM · artículo 136411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 216.41, {
+  c('MAT-10-199', PROV_BELLON, 216.41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Modus Blanco AE2200EB · artículo 136412. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 981, {
+  c('MAT-10-199', PROV_BELLON, 981, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3Way Leviton Decora Blanco 5643-W · artículo 153249. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 533, {
+  c('MAT-10-199', PROV_BELLON, 533, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3Way Leviton Decora Marfil 5643-I · artículo 153250. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 788, {
+  c('MAT-10-199', PROV_BELLON, 788, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Leviton Decora Blanco R62-5634-WS · artículo 153251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 752, {
+  c('MAT-10-199', PROV_BELLON, 752, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Leviton Decora Marfil 5634-I · artículo 153252. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 892, {
+  c('MAT-10-199', PROV_BELLON, 892, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Leviton Decora Light Almond R66/S06-5634-TS · artículo 195681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 910, {
+  c('MAT-10-199', PROV_BELLON, 910, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble 3 Vía Leviton Decora Almond 5643-T · artículo 200664. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Doble 3 Vía Leviton Decora Almond 5643-T · artículo 200664. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 269, {
+  c('MAT-10-199', PROV_BELLON, 269, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble Con Placa Leviton Cien Blanco IN2PL-BLA · artículo 205905. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Doble Con Placa Leviton Cien Blanco IN2PL-BLA · artículo 205905. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 602, {
+  c('MAT-10-199', PROV_BELLON, 602, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Blanco 2IN3V-BL · artículo 209336. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 482, {
+  c('MAT-10-199', PROV_BELLON, 482, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Marfil 2IN3V-MA · artículo 209337. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 465.57, {
+  c('MAT-10-199', PROV_BELLON, 465.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Con Uno 3 Way Bticino Domino Blanco AP5303 · artículo 212551. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 95, {
+  c('MAT-10-199', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Maximus Blanco PBK-C006B · artículo 221883. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 86, {
+  c('MAT-10-199', PROV_BELLON, 86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble Maximus Marfil PBK-C006M · artículo 221884. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor Doble Maximus Marfil PBK-C006M · artículo 221884. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 114, {
+  c('MAT-10-199', PROV_BELLON, 114, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3Way Doble Maximus  Blanco · artículo 221982. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 113, {
+  c('MAT-10-199', PROV_BELLON, 113, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3Way Doble Maximus  Marfil · artículo 221983. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 339.32, {
+  c('MAT-10-199', PROV_BELLON, 339.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Nobile Blanco AF2200EB · artículo 226683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 220.36, {
+  c('MAT-10-199', PROV_BELLON, 220.36, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Nobile Marfil AF2200EM · artículo 226684. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 310.48, {
+  c('MAT-10-199', PROV_BELLON, 310.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Nobile Champagne AF2200EBCH · artículo 226685. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 339.24, {
+  c('MAT-10-199', PROV_BELLON, 339.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Bticino Nobile Negro AF2200EANG · artículo 226686. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 540, {
+  c('MAT-10-199', PROV_BELLON, 540, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Blanco AF2201EB · artículo 233679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 422.76, {
+  c('MAT-10-199', PROV_BELLON, 422.76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Marfil AF2201EM · artículo 233680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 315, {
+  c('MAT-10-199', PROV_BELLON, 315, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Champagne AF2201EBCH · artículo 233681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 497.91, {
+  c('MAT-10-199', PROV_BELLON, 497.91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Negro AF2201EANG · artículo 233682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 483, {
+  c('MAT-10-199', PROV_BELLON, 483, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble ½ Leviton Stalo Acero Inoxidable INTER-L43-0DS · artículo 234242. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Doble ½ Leviton Stalo Acero Inoxidable INTER-L43-0DS · artículo 234242. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 464, {
+  c('MAT-10-199', PROV_BELLON, 464, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L43-0DS · artículo 234246. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Doble 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L43-0DS · artículo 234246. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 440, {
+  c('MAT-10-199', PROV_BELLON, 440, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble ½ Leviton Stalo Blanco INTER-L40-D2B · artículo 234280. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 514, {
+  c('MAT-10-199', PROV_BELLON, 514, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble ½ Leviton Stalo Blanco INTR3-L40-D2B · artículo 234284. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 735, {
+  c('MAT-10-199', PROV_BELLON, 735, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Leviton Decora Negro 5634-E · artículo 238609. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 91.12, {
+  c('MAT-10-199', PROV_BELLON, 91.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble Dyllu Blanco DTSWB921A · artículo 240350. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 102, {
+  c('MAT-10-199', PROV_BELLON, 102, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor 3Way Doble Maximus Negro PBK-C006N · artículo 241302. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor 3Way Doble Maximus Negro PBK-C006N · artículo 241302. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 186, {
+  c('MAT-10-199', PROV_BELLON, 186, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Doble 3Way 110V Enerlite Blanco E-I400D-WH2 · artículo 241706. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor Doble 3Way 110V Enerlite Blanco E-I400D-WH2 · artículo 241706. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_BELLON, 203, {
+  c('MAT-10-199', PROV_BELLON, 203, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Doble 3Way 110V Enerlite Aluminio E-I400D-SS-2 · artículo 241710. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 99, {
+  c('MAT-10-200', PROV_FERREMIX, 99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-68mm-blanco',
-    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47962 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47962 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 145, {
+  c('MAT-10-200', PROV_FERREMIX, 145, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-35mm-blanco',
-    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47961 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47961 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 155, {
+  c('MAT-10-200', PROV_FERREMIX, 155, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco-1',
     nota: 'PATA PARA SOFA Y MUEBLE · artículo T47955 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 59, {
+  c('MAT-10-200', PROV_FERREMIX, 59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-timbre-blanco-sin-tapa',
-    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47946 · ref. ROLLO · marca Volteck. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47946 · ref. ROLLO · marca Volteck. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 50, {
+  c('MAT-10-200', PROV_FERREMIX, 50, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-70mm',
-    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47942 · ref. ROLLO · marca Volteck. El comercio lista 9 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 9,
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47942 · ref. ROLLO · marca Volteck. El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 49, {
+  c('MAT-10-200', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-1',
-    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47940 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47940 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 115, {
+  c('MAT-10-200', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro',
-    nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47891 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47891 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 150, {
+  c('MAT-10-200', PROV_FERREMIX, 150, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-lisboa-volteck',
-    nota: 'CAJA PARA HERRAMIENTAS PL501 · artículo T47888 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CAJA PARA HERRAMIENTAS PL501 · artículo T47888 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 55, {
+  c('MAT-10-200', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-23mm',
-    nota: 'PALOMETA · artículo T47876 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'PALOMETA · artículo T47876 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 48, {
+  c('MAT-10-200', PROV_FERREMIX, 48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-1-modulo',
     nota: 'Interruptor sencillo acero inox de 1 módulo · artículo 50257073209648 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 69, {
+  c('MAT-10-200', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-3-modulos-linea-lisboa',
-    nota: 'CINCHOS TAIRRA PLASTICO PARA 50 LBS TENSION · artículo T47822 · ref. 50 LBS · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'CINCHOS TAIRRA PLASTICO PARA 50 LBS TENSION · artículo T47822 · ref. 50 LBS · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 39, {
+  c('MAT-10-200', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil-linea-volteck',
-    nota: 'TOPE TIPO CODO · artículo T27228 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'TOPE TIPO CODO · artículo T27228 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 159, {
+  c('MAT-10-200', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-contacto-duplex',
-    nota: 'PORTACANDADO · artículo T26633 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'PORTACANDADO · artículo T26633 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 125, {
+  c('MAT-10-200', PROV_FERREMIX, 125, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-y-de-3-vias',
     nota: 'MIRILLA DE SEGURIDAD · artículo T26639 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 120, {
+  c('MAT-10-200', PROV_FERREMIX, 120, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro-linea-italiana',
-    nota: 'CANDADO DE ACERO 109MM · artículo T47599 · ref. 109 MM · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CANDADO DE ACERO 109MM · artículo T47599 · ref. 109 MM · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 79, {
+  c('MAT-10-200', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil',
     nota: 'CANDADO ANTI CIZALLA 75MM · artículo T26642 · ref. 75 MM · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 105, {
+  c('MAT-10-200', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-duplex-con-placa',
     nota: 'CANDO REDONDO GANCHO LARGO Y CORTO · artículo T25080 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 70, {
+  c('MAT-10-200', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-con-luz-piloto-crema-sin-tapa-linea-italiana',
-    nota: 'CANDADO DE HIERRO GANCHO CORTO · artículo T48056 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CANDADO DE HIERRO GANCHO CORTO · artículo T48056 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 40, {
+  c('MAT-10-200', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-para-lampara',
-    nota: 'BISAGRA DE PISO · artículo T48003 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BISAGRA DE PISO · artículo T48003 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 35, {
+  c('MAT-10-200', PROV_FERREMIX, 35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa',
-    nota: 'CERRADURA DE ENTRADA · artículo T27108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CERRADURA DE ENTRADA · artículo T27108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 195, {
+  c('MAT-10-200', PROV_FERREMIX, 195, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-italina',
     nota: 'CANDADO DE HIERRO DE ALTA SEGURIDAD · artículo T47598 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 175, {
+  c('MAT-10-200', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco',
     nota: 'CERRADURA LATON MARIPOSA · artículo T46337 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 80, {
+  c('MAT-10-200', PROV_FERREMIX, 80, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-t25084',
     nota: 'Interruptor sencllo de 3 vas blanco volteck basc · artículo T25084 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 275, {
+  c('MAT-10-200', PROV_FERREMIX, 275, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luz-de-led-para-pared-con-interruptor',
     nota: '@interruptor sencillo con luz de led para pared · artículo T49970 · ref. T49970 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 30, {
+  c('MAT-10-200', PROV_FERREMIX, 30, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-superficie-a-granel',
     nota: 'Interruptor sencllo crema de superfce a granel volteck · artículo T47042 · ref. T47042 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 65, {
+  c('MAT-10-200', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t48322',
     nota: 'Interruptor sencllo blanco sn tapa oslo volteck · artículo T48322 · ref. T48322 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 110, {
+  c('MAT-10-200', PROV_FERREMIX, 110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1451-icp',
     nota: 'Interru.1451-cp sencllo levton · artículo 1313 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 189, {
+  c('MAT-10-200', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-1453-icp',
     nota: 'interruptor sencillo crema 1453 icp · artículo 1316 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 109, {
+  c('MAT-10-200', PROV_FERREMIX, 109, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias',
     nota: 'Interruptor sencllo de 3 vas sn tapa crema lnea estandar volteck · artículo T46003 · ref. T46003 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_FERREMIX, 90, {
+  c('MAT-10-200', PROV_FERREMIX, 90, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t46005',
     nota: 'Interruptor sencllo blanco sn tapa lnea classc volteck · artículo T46005 · ref. T46005 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 257, {
+  c('MAT-10-200', PROV_BELLON, 257, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 120-277V Leviton Decora Blanco 5601-2W · artículo 59829. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 143.71, {
+  c('MAT-10-200', PROV_BELLON, 143.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Modus Marfil 1100MAB AE2100EM · artículo 136418. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 150.56, {
+  c('MAT-10-200', PROV_BELLON, 150.56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Modus Blanco AE2100EB · artículo 136419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 241, {
+  c('MAT-10-200', PROV_BELLON, 241, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Leviton Decora Marfil 5601-2IS · artículo 153260. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 49.48, {
+  c('MAT-10-200', PROV_BELLON, 49.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Leviton Basica Blanco X12-21100-0UB · artículo 195698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 243, {
+  c('MAT-10-200', PROV_BELLON, 243, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Leviton Decora Light Almond 5601-2T · artículo 195700. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 139, {
+  c('MAT-10-200', PROV_BELLON, 139, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Con Placa Leviton Cien Blanco IN0PL-BLA · artículo 205904. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 176, {
+  c('MAT-10-200', PROV_BELLON, 176, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Con Placa Leviton Cien Marfil IN0PL-MAR · artículo 205924. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 56, {
+  c('MAT-10-200', PROV_BELLON, 56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Maximus Blanco PBK-C005B · artículo 221881. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 60, {
+  c('MAT-10-200', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Sencillo Maximus Marfil PBK-C005M · artículo 221882. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor Sencillo Maximus Marfil PBK-C005M · artículo 221882. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 223.95, {
+  c('MAT-10-200', PROV_BELLON, 223.95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Nobile Blanco AF2100EB · artículo 226675. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 225, {
+  c('MAT-10-200', PROV_BELLON, 225, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Nobile Marfil AF2100EM · artículo 226676. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 205.33, {
+  c('MAT-10-200', PROV_BELLON, 205.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Nobile Champagne AF2100EBCH · artículo 226677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 224.37, {
+  c('MAT-10-200', PROV_BELLON, 224.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Bticino Nobile Negro AF2100EA · artículo 226678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 492, {
+  c('MAT-10-200', PROV_BELLON, 492, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 1M Iluminable Bticino Living Now K4001 · artículo 233281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 186, {
+  c('MAT-10-200', PROV_BELLON, 186, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Acero Inoxidable INTER-L13-13S · artículo 234239. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 189, {
+  c('MAT-10-200', PROV_BELLON, 189, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo ½ Leviton Stalo Acero Inoxidable INTER-L23-12S · artículo 234240. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 240, {
+  c('MAT-10-200', PROV_BELLON, 240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Sencillo 3/3 Leviton Stalo Acero Inoxidable INTER-L33-33S · artículo 234241. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor Sencillo 3/3 Leviton Stalo Acero Inoxidable INTER-L33-33S · artículo 234241. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 193, {
+  c('MAT-10-200', PROV_BELLON, 193, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Negro INTER-L12-13N · artículo 234250. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 208, {
+  c('MAT-10-200', PROV_BELLON, 208, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo ½ Leviton Stalo Negro INTER-L22-12N · artículo 234251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 280, {
+  c('MAT-10-200', PROV_BELLON, 280, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 3/3 Leviton Stalo Negro INTER-L32-33N · artículo 234252. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 171, {
+  c('MAT-10-200', PROV_BELLON, 171, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Blanco INTER-L10-13B · artículo 234277. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 331.47, {
+  c('MAT-10-200', PROV_BELLON, 331.47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo+Toma 2P+T Bticino Luzica Blanco PU5231 · artículo 235497. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 286.12, {
+  c('MAT-10-200', PROV_BELLON, 286.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo + Toma 2P + T Bticino Luzica Grafito PU5231GR · artículo 237997. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 304, {
+  c('MAT-10-200', PROV_BELLON, 304, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 110V Leviton Decora Negro 5601-2E · artículo 238608. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 184.08, {
+  c('MAT-10-200', PROV_BELLON, 184.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Blanco JW4001 · artículo 238950. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 160.29, {
+  c('MAT-10-200', PROV_BELLON, 160.29, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Gris JG4001 · artículo 238951. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 210.07, {
+  c('MAT-10-200', PROV_BELLON, 210.07, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Negro JB4001 · artículo 238952. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_BELLON, 64.79, {
+  c('MAT-10-200', PROV_BELLON, 64.79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Sencillo Dyllu Blanco DTSWB901A · artículo 240351. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 470.01, {
+  c('MAT-10-201', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-triple-veto-premiun-bco-16054',
     nota: 'INTERUPTOR TRIPLE VETO PREMIUN BCO 16054 · artículo 0001123891 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 4440, {
+  c('MAT-10-201', PROV_MAX, 4440, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-smart-ngr-62075',
-    nota: 'INTER TRIPLE VETO PLURA SMART NGR 62075 · artículo 0001127198 · ref. Version smart (domotica) | Color NGR · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'INTER TRIPLE VETO PLURA SMART NGR 62075 · artículo 0001127198 · ref. Version smart (domotica) | Color NGR · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 325, {
+  c('MAT-10-201', PROV_MAX, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-c-luz-veto-35147',
     nota: 'INTERRUPTOR TRIPLE BCO C/LUZ VETO 35147 · artículo 0001118622 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 640, {
+  c('MAT-10-201', PROV_MAX, 640, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-ngr-61825',
     nota: 'INTER TRIPLE VETO PLURA NGR 61825 · artículo 0001127201 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 425, {
+  c('MAT-10-201', PROV_MAX, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-m-st-ae2300eb',
     nota: 'INTERRUPTOR TRIPLE BCO M-ST AE2300EB · artículo 0001073673 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 180, {
+  c('MAT-10-201', PROV_FERREMIX, 180, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro',
     nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47889 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 210, {
+  c('MAT-10-201', PROV_FERREMIX, 210, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro-linea-italiana',
     nota: 'ESLINGA · artículo T47595 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 139, {
+  c('MAT-10-201', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco',
     nota: 'ESLINGA · artículo T25083 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 215, {
+  c('MAT-10-201', PROV_FERREMIX, 215, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco-linea-classic',
     nota: 'LENTES DE SEGURIDAD PT253 · artículo T46339 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 149, {
+  c('MAT-10-201', PROV_FERREMIX, 149, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-triple-con-placa',
     nota: 'GANCHO ALDABA PARA PUERTA · artículo T26638 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 175, {
+  c('MAT-10-201', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple',
     nota: 'Interruptor trple blanco sn tapa lnea classc volteck · artículo T46007 · ref. T46007 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_FERREMIX, 60, {
+  c('MAT-10-201', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-italiano',
     nota: 'interruptor triple italiano · artículo T48137 · ref. T48137 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 1042, {
+  c('MAT-10-201', PROV_BELLON, 1042, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Leviton Decora Marfil 1755-I · artículo 127348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 381.55, {
+  c('MAT-10-201', PROV_BELLON, 381.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Bticino Modus Blanco AE2300EB · artículo 136425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 1026, {
+  c('MAT-10-201', PROV_BELLON, 1026, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Leviton Decora Almond 1755-T · artículo 195705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 392, {
+  c('MAT-10-201', PROV_BELLON, 392, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Triple Con Placa Leviton Cien Blanco IN3PL-BLA · artículo 205906. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Triple Con Placa Leviton Cien Blanco IN3PL-BLA · artículo 205906. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 1437, {
+  c('MAT-10-201', PROV_BELLON, 1437, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple 110V Leviton Decora Blanco 1755-W · artículo 213207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 92, {
+  c('MAT-10-201', PROV_BELLON, 92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Maximus Blanco PBK-C007B · artículo 221885. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 132, {
+  c('MAT-10-201', PROV_BELLON, 132, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Maximus Marfil PBK-C007M · artículo 221886. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 126, {
+  c('MAT-10-201', PROV_BELLON, 126, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor 3Way Triple Maximus  Blanco · artículo 221984. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor 3Way Triple Maximus  Blanco · artículo 221984. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 142, {
+  c('MAT-10-201', PROV_BELLON, 142, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor 3Way Triple Maximus  Marfil · artículo 221985. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 399.39, {
+  c('MAT-10-201', PROV_BELLON, 399.39, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Bticino Nobile Blanco AF2300EB · artículo 226687. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 399.37, {
+  c('MAT-10-201', PROV_BELLON, 399.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Bticino Nobile Marfil AF2300EM · artículo 226688. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 514.71, {
+  c('MAT-10-201', PROV_BELLON, 514.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Bticino Nobile Champagne AF2300EBCH · artículo 226689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 499.85, {
+  c('MAT-10-201', PROV_BELLON, 499.85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Bticino Nobile Negro AF2300EANG · artículo 226690. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 234, {
+  c('MAT-10-201', PROV_BELLON, 234, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Master · artículo 229211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 407.69, {
+  c('MAT-10-201', PROV_BELLON, 407.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple 1P 3 Way Bticino Luzica Blanco PU5303 · artículo 236541. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 536.86, {
+  c('MAT-10-201', PROV_BELLON, 536.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple 2x1P + 1x3W Bticino Luzica Grafito PU5303GR · artículo 238002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 1199, {
+  c('MAT-10-201', PROV_BELLON, 1199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple 110V Leviton Decora Negro 1755-E · artículo 238610. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 111, {
+  c('MAT-10-201', PROV_BELLON, 111, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Interruptor Triple Dyllu Blanco DTSWB931A · artículo 240348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 100, {
+  c('MAT-10-201', PROV_BELLON, 100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Triple Maximus Negro PBK-C011N · artículo 241318. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Interruptor Triple Maximus Negro PBK-C011N · artículo 241318. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_BELLON, 235, {
+  c('MAT-10-201', PROV_BELLON, 235, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Interruptor Triple 3Way 110V Enerlite Blanco E-I400F-WH2 · artículo 241711. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Interruptor Triple 3Way 110V Enerlite Blanco E-I400F-WH2 · artículo 241711. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-173', PROV_MAX, 1795, {
+  c('MAT-10-202', PROV_MAX, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-c-usb-veto-16788-premium',
     nota: 'TOMACORRIENTE C/USB VETO 16788 PREMIUM · artículo 0001128655 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-173', PROV_MAX, 1085, {
+  c('MAT-10-202', PROV_MAX, 1085, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-usb-bco-veto-36465',
     nota: 'TOMACORRIENTE+USB BCO VETO 36465 · artículo 0001118657 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-173', PROV_FERREMIX, 460, {
+  c('MAT-10-202', PROV_FERREMIX, 460, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-blanco',
-    nota: 'CODO HEMBRA DE BRONCE · artículo T47971 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CODO HEMBRA DE BRONCE · artículo T47971 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-173', PROV_FERREMIX, 550, {
+  c('MAT-10-202', PROV_FERREMIX, 550, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-acero-inox-linea-lisboa-volteck',
     nota: 'BARRA CAVADORA 1 8 · artículo T47851 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 239, {
+  c('MAT-10-203', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-triple-blanco',
     nota: 'CERRADURA DE DOBLE CERROJO · artículo T47970 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 170, {
+  c('MAT-10-203', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47902 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 269, {
+  c('MAT-10-203', PROV_FERREMIX, 269, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-acero-inox-linea-lisboa-volteck',
     nota: 'RIEL DOBLE PALOMETA · artículo T47849 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 189, {
+  c('MAT-10-203', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro-linea-italiana',
     nota: 'CINCHOS DE PLASTICO · artículo T47588 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 185, {
+  c('MAT-10-203', PROV_FERREMIX, 185, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-linea-estandar',
-    nota: 'CINCHOS DE PLASTICO · artículo T48493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CINCHOS DE PLASTICO · artículo T48493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 169, {
+  c('MAT-10-203', PROV_FERREMIX, 169, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-20amp-tierra-aislada-sin-tapa-linea-estandar',
-    nota: 'CINCHOS DE PLASTICO · artículo T48022 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CINCHOS DE PLASTICO · artículo T48022 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 105, {
+  c('MAT-10-203', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-dorado-de-aluminio-15amp-linea-estandar',
-    nota: 'CINCHOS DE PLASTICO · artículo T48494 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CINCHOS DE PLASTICO · artículo T48494 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 110, {
+  c('MAT-10-203', PROV_FERREMIX, 110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-volteck',
-    nota: 'CINCHOS DE PLASTICO · artículo T25076 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'CINCHOS DE PLASTICO · artículo T25076 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 115, {
+  c('MAT-10-203', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-linea-espanola',
-    nota: 'Tomacorriente doble blanco linea española · artículo T47059 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriente doble blanco linea española · artículo T47059 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 235, {
+  c('MAT-10-203', PROV_FERREMIX, 235, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interuptor-doble-tomacorriente-negro-linea-italiana',
     nota: 'CANDADO DE LATON PULIDO GANCHO LARGO · artículo T47592 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 109, {
+  c('MAT-10-203', PROV_FERREMIX, 109, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-tapa',
     nota: 'Tomacorriene doble crema 15amp linea esandar voleck · artículo T48488 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 79, {
+  c('MAT-10-203', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble',
-    nota: 'tomacorriente doble · artículo t46102 · ref. T46102 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'tomacorriente doble · artículo t46102 · ref. T46102 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 699, {
+  c('MAT-10-203', PROV_FERREMIX, 699, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-5262-ig',
     nota: 'Tomacorr. doble naranja 5262-ig levion · artículo 10593 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 69, {
+  c('MAT-10-203', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-sin-tierra',
     nota: 'Tomacorriene doble baquelia crema sin ierra de superficie voleck · artículo T46106 · ref. T46106 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 80, {
+  c('MAT-10-203', PROV_FERREMIX, 80, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra-en-blister',
-    nota: 'Tomacorriene doble baquelia crema de superficie en bliser voleck · artículo T46103 · ref. T46103 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriene doble baquelia crema de superficie en bliser voleck · artículo T46103 · ref. T46103 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 935, {
+  c('MAT-10-203', PROV_FERREMIX, 935, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-falla-a-tierra-llinea-classic',
     nota: 'Tomacorriene doble blanco con falla a ierra sin apa linea classic voleck · artículo T46107 · ref. T46107 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 65, {
+  c('MAT-10-203', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-de-tres-hilos-a-granel',
     nota: 'Tomacorriene doble crema sin apa a granel linea esandar voleck · artículo T48311 · ref. T48311 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 129, {
+  c('MAT-10-203', PROV_FERREMIX, 129, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-cara-de-chino-linea-standard',
     nota: 'Tomacorriene doble 250 v / 60 hz, 15 a sin apa linea esandar voleck · artículo T46104 · ref. T46104 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 159, {
+  c('MAT-10-203', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-aterrizado-linea-italiana',
     nota: 'tomacorriente doble aterrizado linea italiana · artículo T48110 · ref. T48110 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 75, {
+  c('MAT-10-203', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra',
     nota: 'Tomacorriene doble baquelia crema de superficie a granel voleck · artículo T47041 · ref. T47041 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 70, {
+  c('MAT-10-203', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente',
     nota: 'Tomacorriene doble 5320-icp levion · artículo 11581 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_FERREMIX, 34, {
+  c('MAT-10-203', PROV_FERREMIX, 34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-pbe-6',
     nota: 'Tomacorriene doble blanco pbe-6 · artículo 17884 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 681, {
+  c('MAT-10-203', PROV_BELLON, 681, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Living L4188S · artículo 100222. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 757.51, {
+  c('MAT-10-203', PROV_BELLON, 757.51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Light Blanco N4188S · artículo 100313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 416, {
+  c('MAT-10-203', PROV_BELLON, 416, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Universal Doble Bticino Living L4185S · artículo 104747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 222, {
+  c('MAT-10-203', PROV_BELLON, 222, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2P+T 125V 15A Pass & Seymour 4700 · artículo 108215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 167, {
+  c('MAT-10-203', PROV_BELLON, 167, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Tierra Bticino Modus Blanco AE2228E2B/AE2228S2B · artículo 136434. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1516, {
+  c('MAT-10-203', PROV_BELLON, 1516, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable 2P Con Tierra 125V 15A Leviton L5-15R 4700 · artículo 147514. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 208, {
+  c('MAT-10-203', PROV_BELLON, 208, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Tomacorriente Doble Leviton Decora Blanco S52/S02-5325-WS · artículo 153271. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriente Doble Leviton Decora Blanco S52/S02-5325-WS · artículo 153271. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 187, {
+  c('MAT-10-203', PROV_BELLON, 187, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Leviton Decora Marfil 5325-I · artículo 153445. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 194.54, {
+  c('MAT-10-203', PROV_BELLON, 194.54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Superficie Con Tierra Bticino P38 · artículo 158451. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 475.6, {
+  c('MAT-10-203', PROV_BELLON, 475.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Tierra Bticino Matix SAM5115DS/3H · artículo 161419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 758, {
+  c('MAT-10-203', PROV_BELLON, 758, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 125V 15A Leviton Naranja 5262-IG · artículo 180775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1114.49, {
+  c('MAT-10-203', PROV_BELLON, 1114.49, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Tierra/Aislada Bticino Matix AM5028IGR · artículo 181065. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1483, {
+  c('MAT-10-203', PROV_BELLON, 1483, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Grado Hospital 5-15R Leviton Decora Rojo D8200-IGR · artículo 195826. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 179, {
+  c('MAT-10-203', PROV_BELLON, 179, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Blanco R62-T5320-W · artículo 195828. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 184, {
+  c('MAT-10-203', PROV_BELLON, 184, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Ivory R59-T5320-IV · artículo 195829. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 285, {
+  c('MAT-10-203', PROV_BELLON, 285, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Blanco R57-T5325-W · artículo 195831. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 238, {
+  c('MAT-10-203', PROV_BELLON, 238, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable Tamper R 5-15R Leviton Decora Light Almond T5325-T · artículo 195833. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 188, {
+  c('MAT-10-203', PROV_BELLON, 188, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Leviton Decora Light Almond R56-5325-TS · artículo 195859. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 160, {
+  c('MAT-10-203', PROV_BELLON, 160, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A 125/250V Leviton Ultra/Plus Blanco X52-0TOMA-PCB · artículo 203646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 472, {
+  c('MAT-10-203', PROV_BELLON, 472, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A 125V Con Tapa Aluminio Leviton U03-TCT2P-ALU · artículo 203657. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 210, {
+  c('MAT-10-203', PROV_BELLON, 210, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Blanco X02-UTOMA-PCB · artículo 203720. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 180, {
+  c('MAT-10-203', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Marfil X03-UTOMA-PCM · artículo 203721. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 165, {
+  c('MAT-10-203', PROV_BELLON, 165, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Tierra Leviton Cien Blanco TCT2P-BLA · artículo 205912. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 439, {
+  c('MAT-10-203', PROV_BELLON, 439, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 120V 15A Leviton Marrón 5262-IGB · artículo 207251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 597, {
+  c('MAT-10-203', PROV_BELLON, 597, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 20A 125V Leviton Decora Almond T-5825-T · artículo 208774. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 753, {
+  c('MAT-10-203', PROV_BELLON, 753, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 20A Tamper Leviton Decora Blanco T-5825-W · artículo 208775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 623, {
+  c('MAT-10-203', PROV_BELLON, 623, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 20A 125V Tamper Leviton Decora Marfil T-5825-I · artículo 208776. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 430, {
+  c('MAT-10-203', PROV_BELLON, 430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Ivory 5825-I · artículo 208777. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 399, {
+  c('MAT-10-203', PROV_BELLON, 399, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Blanco 5825-W · artículo 208778. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 178, {
+  c('MAT-10-203', PROV_BELLON, 178, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Emp. 125V 20A Leviton Alm CBR20-1 · artículo 211461. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 106, {
+  c('MAT-10-203', PROV_BELLON, 106, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Superficie Doble 120V 15A Voltech COSO-DA · artículo 212396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 150.88, {
+  c('MAT-10-203', PROV_BELLON, 150.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228 · artículo 212523. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 200.55, {
+  c('MAT-10-203', PROV_BELLON, 200.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228TR · artículo 212524. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 98, {
+  c('MAT-10-203', PROV_BELLON, 98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Maximus Blanco PBK-C022B · artículo 221887. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 75, {
+  c('MAT-10-203', PROV_BELLON, 75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Maximus Marfil PBK-C022M · artículo 221888. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 355, {
+  c('MAT-10-203', PROV_BELLON, 355, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable 125V 20A Leviton Blanco CR20-W · artículo 223667. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1326, {
+  c('MAT-10-203', PROV_BELLON, 1326, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Grado Hospital 5-20R Leviton Decora Blanco 16362-HGW · artículo 224414. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 222.82, {
+  c('MAT-10-203', PROV_BELLON, 222.82, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Nobile Blanco AF2228EB · artículo 226691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 225, {
+  c('MAT-10-203', PROV_BELLON, 225, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Nobile Marfil AF2228EM · artículo 226692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 233.05, {
+  c('MAT-10-203', PROV_BELLON, 233.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Nobile Champagne AF2228EBCH · artículo 226693. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 275.51, {
+  c('MAT-10-203', PROV_BELLON, 275.51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Bticino Nobile Negro AF2228EAN · artículo 226694. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 190, {
+  c('MAT-10-203', PROV_BELLON, 190, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Tomacorriente Doble Empotrable 125V 20A Pass & Seymour Almond CR20I · artículo 233136. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriente Doble Empotrable 125V 20A Pass & Seymour Almond CR20I · artículo 233136. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 812, {
+  c('MAT-10-203', PROV_BELLON, 812, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A TR 3M Bticino Negro KG4188 · artículo 233361. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1101, {
+  c('MAT-10-203', PROV_BELLON, 1101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Blanco KW4188 · artículo 233362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 1006, {
+  c('MAT-10-203', PROV_BELLON, 1006, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Arena KM4188 · artículo 233363. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 390, {
+  c('MAT-10-203', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A Leviton Stalo Negro LTOMA-L32-33N · artículo 234263. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 272, {
+  c('MAT-10-203', PROV_BELLON, 272, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A Leviton Stalo Blanco LTOMA-L30-33B · artículo 234290. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 182, {
+  c('MAT-10-203', PROV_BELLON, 182, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Superficie Doble 120V 15A Voltech 47350 · artículo 237629. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 197, {
+  c('MAT-10-203', PROV_BELLON, 197, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Leviton Decora Negro 5325-E · artículo 238615. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 789, {
+  c('MAT-10-203', PROV_BELLON, 789, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Negro T5325-E · artículo 238616. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 852, {
+  c('MAT-10-203', PROV_BELLON, 852, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 20A 125V Leviton Decora Negro T-5825-E · artículo 238620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 443.6, {
+  c('MAT-10-203', PROV_BELLON, 443.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Blanco JW4185 · artículo 238961. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 608.27, {
+  c('MAT-10-203', PROV_BELLON, 608.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Gris JG4185 · artículo 238962. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 829.26, {
+  c('MAT-10-203', PROV_BELLON, 829.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Negro JB4185 · artículo 238963. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 359.57, {
+  c('MAT-10-203', PROV_BELLON, 359.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Blanco JW4188 · artículo 238994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 300.61, {
+  c('MAT-10-203', PROV_BELLON, 300.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Gris JG4188 · artículo 238995. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 422.9, {
+  c('MAT-10-203', PROV_BELLON, 422.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Negro JB4188 · artículo 238996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 89.71, {
+  c('MAT-10-203', PROV_BELLON, 89.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 15A 277V Dyllu  Blanco DTQKB9AAA · artículo 240346. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_BELLON, 79, {
+  c('MAT-10-203', PROV_BELLON, 79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Tomacorriente Doble Maximus Negro PBK-C022N · artículo 241308. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriente Doble Maximus Negro PBK-C022N · artículo 241308. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1867.5, {
+  c('MAT-10-204', PROV_BELLON, 1867.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Falla/Tierra Bticino Matix AM5028GFR · artículo 161420. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2226, {
+  c('MAT-10-204', PROV_BELLON, 2226, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Luz GFCI Leviton Blanco GFNT-W · artículo 210677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1899, {
+  c('MAT-10-204', PROV_BELLON, 1899, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble GFCI Leviton Ivory GFNT1-I/N7599-I · artículo 210689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1525.94, {
+  c('MAT-10-204', PROV_BELLON, 1525.94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente GFCI 2P Con Tierra Bticino Domino Blanco AP1228GF · artículo 212525. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2636, {
+  c('MAT-10-204', PROV_BELLON, 2636, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble 2P Con Tierra 15A GFCI 3 Módulos Bticino Living Gris NT4188GF · artículo 218809. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2115, {
+  c('MAT-10-204', PROV_BELLON, 2115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente AFCI/GFCI 20A Leviton Blanco GFTR2-W · artículo 221927. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1674, {
+  c('MAT-10-204', PROV_BELLON, 1674, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble Con Luz GFCI Leviton Light Almond GFNT1-T · artículo 222698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 3426, {
+  c('MAT-10-204', PROV_BELLON, 3426, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Negro KG4188GFG6 · artículo 233364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 3469, {
+  c('MAT-10-204', PROV_BELLON, 3469, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Blanco KW4188GFG6 · artículo 233365. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 3598, {
+  c('MAT-10-204', PROV_BELLON, 3598, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Arena KM4188GFG6 · artículo 233366. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1787.14, {
+  c('MAT-10-204', PROV_BELLON, 1787.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente GFCI 2P 15A Con Tierra Bticino Luzica Blanco PU1228GF · artículo 234212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1722.25, {
+  c('MAT-10-204', PROV_BELLON, 1722.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Duplex Gfci Bticino Luzica Grafito PU1228GFGR · artículo 238006. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2128, {
+  c('MAT-10-204', PROV_BELLON, 2128, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Doble C/Luz GFCI Leviton Decora Negro GFNT-NE · artículo 238617. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 1467.04, {
+  c('MAT-10-204', PROV_BELLON, 1467.04, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Blanco JW4188GFG6 · artículo 239002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2297.66, {
+  c('MAT-10-204', PROV_BELLON, 2297.66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Gris JG4188GFG6 · artículo 239003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-175', PROV_BELLON, 2297.64, {
+  c('MAT-10-204', PROV_BELLON, 2297.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Negro JB4188GFG6 · artículo 239004. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 65, {
+  c('MAT-10-205', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco-sin-tapa-34mm-1',
-    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47948 · ref. ROLLO · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47948 · ref. ROLLO · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 59, {
+  c('MAT-10-205', PROV_FERREMIX, 59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tierra-sin-tapa-linea-italiana',
-    nota: 'ADAPTADOR 3 A 2 · artículo T47606 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ADAPTADOR 3 A 2 · artículo T47606 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 60, {
+  c('MAT-10-205', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-35mm-linea-espanola',
-    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47992 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47992 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 55, {
+  c('MAT-10-205', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-23mm-linea-espanola',
-    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47991 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47991 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 69, {
+  c('MAT-10-205', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-con-tierra-sin-tapa-linea-italiana',
     nota: 'BOMBA LADRONA AUTOCEBANTE · artículo T47605 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 49, {
+  c('MAT-10-205', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco',
     nota: 'ABRAZADERA DE TUBO TIPO OMEGA · artículo T27107 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 39, {
+  c('MAT-10-205', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-de-superficie-sin-tierra-1',
-    nota: 'Tomacorriene sencillo crema sin ierra de superficie voleck · artículo T46108 · ref. T46108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriene sencillo crema sin ierra de superficie voleck · artículo T46108 · ref. T46108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 75, {
+  c('MAT-10-205', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-redondo-20a-linea-standard-1',
-    nota: 'Tomacorriene sencillo crema 20amp sin apa linea esandar voleck · artículo T46101 · ref. T46101 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Tomacorriene sencillo crema 20amp sin apa linea esandar voleck · artículo T46101 · ref. T46101 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_FERREMIX, 70, {
+  c('MAT-10-205', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-sin-tierra-linea-oslo',
-    nota: 'Tomacorriene sencillo blanco sin ierra sin apa oslo voleck · artículo T48318 · ref. T48318 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriene sencillo blanco sin ierra sin apa oslo voleck · artículo T48318 · ref. T48318 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 418, {
+  c('MAT-10-205', PROV_BELLON, 418, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 250V Leviton Decora Marfil 16441-I · artículo 153274. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 573, {
+  c('MAT-10-205', PROV_BELLON, 573, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 220V Leviton Decora Blanco 16441-W · artículo 153275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 210.98, {
+  c('MAT-10-205', PROV_BELLON, 210.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo Con Tierra 2 Módulos Bticino Matix AM5038 · artículo 166889. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 514, {
+  c('MAT-10-205', PROV_BELLON, 514, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 250V Leviton Decora Light Almond 16441-T(A) · artículo 195842. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 921, {
+  c('MAT-10-205', PROV_BELLON, 921, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Negro KG4129 · artículo 233321. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 638, {
+  c('MAT-10-205', PROV_BELLON, 638, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Blanco KW4129 · artículo 233356. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 910, {
+  c('MAT-10-205', PROV_BELLON, 910, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Arena KM4129 · artículo 233357. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 232.21, {
+  c('MAT-10-205', PROV_BELLON, 232.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Blanco JW4129 · artículo 239000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-176', PROV_BELLON, 211.69, {
+  c('MAT-10-205', PROV_BELLON, 211.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Gris JG4129 · artículo 239001. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Gris JG4129 · artículo 239001. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 49, {
+  c('MAT-10-206', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-negra-linea-italina',
-    nota: 'CLAVOS CORRIENTE · artículo T40139 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CLAVOS CORRIENTE · artículo T40139 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 79, {
+  c('MAT-10-206', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-color-madera-linea-italiana',
     nota: 'Tapa ciega color madera linea ialiana voleck · artículo T46395 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 11, {
+  c('MAT-10-206', PROV_FERREMIX, 11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca',
     nota: 'Tapa ciega blc. pbc-d ez ligh · artículo 222769 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 139, {
+  c('MAT-10-206', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-para-tapa-ciega',
     nota: 'Placa ara caja fs, ciega afci-s voltech · artículo T46432 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 156, {
+  c('MAT-10-206', PROV_FERREMIX, 156, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-gris-84014-40',
     nota: 'Tapa ciega gris 84014-40 levion · artículo 26000 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-177', PROV_FERREMIX, 45, {
+  c('MAT-10-206', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca-88014-leviton',
     nota: 'Tapa ciega blanca 88014 levion · artículo 25992 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 70, {
+  c('MAT-10-207', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble-linea-lisboa-volteck',
     nota: 'PALOMETA · artículo T47870 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 55, {
+  c('MAT-10-207', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-o-tomacorriente-doble',
     nota: 'LIJA DE AGUA · artículo T40137 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 60, {
+  c('MAT-10-207', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble',
     nota: 'LIJA DE AGUA · artículo T47998 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 40, {
+  c('MAT-10-207', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-marfil-para-interruptor-o-matacorriente-doble',
-    nota: 'LIJA DE AGUA · artículo T27231 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LIJA DE AGUA · artículo T27231 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 85, {
+  c('MAT-10-207', PROV_FERREMIX, 85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-doble-linea-italiana',
     nota: 'ALAMBRE DE GOMA SJTW · artículo T46393 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 65, {
+  c('MAT-10-207', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-doble-linea-espanola',
     nota: 'COUPLING EMT · artículo T47063 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 105, {
+  c('MAT-10-207', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-tomacorriente-de-exterior',
     nota: 'Tapa gris para omacorriene doble de inerperie linea esandar voleck · artículo T46410 · ref. T46410 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 39, {
+  c('MAT-10-207', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-interruptores-y-tomacorrientes-1',
     nota: 'Tapa naranja para omacorriene doble linea esandar voleck · artículo T46409 · ref. T46409 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 175, {
+  c('MAT-10-207', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-sencillo-y-2-contactos-aterrizados',
     nota: 'Interruptor + tomacorrente doble blanco lnea española volteck · artículo T45594 · ref. T45594 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 249, {
+  c('MAT-10-207', PROV_FERREMIX, 249, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-armada-contacto-y-2-interruptores-linea-oslo-blanco-1',
     nota: 'Interruptor doble + tomacorrente blanco oslo volteck · artículo T46488 · ref. T46488 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 149, {
+  c('MAT-10-207', PROV_FERREMIX, 149, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-3-vias',
     nota: 'Interruptor sencllo + 1 de 3 vas blanco lnea española volteck · artículo T45602 · ref. T45602 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 170, {
+  c('MAT-10-207', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-2-interruptores-sencillos-y-contacto-aterrizado-de-1-modulo',
     nota: 'Interruptor doble + tomacorrente blanco lnea española volteck · artículo T45597 · ref. T45597 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 185, {
+  c('MAT-10-207', PROV_FERREMIX, 185, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-y-1-tipo-escalera-de-1-modulo',
     nota: 'Interruptor doble + 1 de 3 vas blanco lnea española volteck · artículo T45606 · ref. T45606 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 135, {
+  c('MAT-10-207', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-1-modulo',
     nota: 'Interruptor doble blanco lnea española volteck · artículo T45596 · ref. T45596 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 130, {
+  c('MAT-10-207', PROV_FERREMIX, 130, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-1-5-modulos',
     nota: 'Interruptor doble 35mm blanco lnea española volteck · artículo T45595 · ref. T45595 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 449, {
+  c('MAT-10-207', PROV_FERREMIX, 449, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-waterproof-4976-gy-leviton',
     nota: 'tapa doble gris waterproof 4976 gy leviton · artículo 26001 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 160, {
+  c('MAT-10-207', PROV_FERREMIX, 160, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-con-2-interruptores-t46389-1',
-    nota: 'Interruptor doble dorado lnea economca volteck · artículo T46389 · ref. T46389 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Interruptor doble dorado lnea economca volteck · artículo T46389 · ref. T46389 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 45, {
+  c('MAT-10-207', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-toma-corriente-80703-w',
     nota: 'tapa doble blanca para toma corriente 80703 w · artículo 25996 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 210, {
+  c('MAT-10-207', PROV_FERREMIX, 210, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-para-toma-corriente-gris-84003-40',
     nota: 'Tapa para oma corriene doble gris 84003-40 levion · artículo 25997 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 46, {
+  c('MAT-10-207', PROV_FERREMIX, 46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-tomacorriente-88003',
     nota: 'Tapa omacorr. doble blanco 88003 levion · artículo 25779 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 42, {
+  c('MAT-10-207', PROV_FERREMIX, 42, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-marfil-86003-leviton',
-    nota: 'Tapa doble ivory 86003 levion · artículo 25778 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tapa doble ivory 86003 levion · artículo 25778 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 229, {
+  c('MAT-10-207', PROV_FERREMIX, 229, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-para-interruptores',
     nota: 'Interruptor doble + 1 de 3 vas blanco oslo volteck · artículo T46497 · ref. T46497 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 255, {
+  c('MAT-10-207', PROV_FERREMIX, 255, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-y-tomacorriente-t46489',
     nota: 'Interruptor + tomacorrente doble blanco oslo volteck · artículo T46489 · ref. T46489 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 1199, {
+  c('MAT-10-207', PROV_FERREMIX, 1199, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-italiana',
     nota: 'tapa con contacto doble falla a tierra linea italiana · artículo T46145 · ref. T46145 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 1169, {
+  c('MAT-10-207', PROV_FERREMIX, 1169, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-oslo',
     nota: 'Tomacorriene doble blanco falla a ierra oslo voleck · artículo T48310 · ref. T48310 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 180, {
+  c('MAT-10-207', PROV_FERREMIX, 180, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado-linea-oslo',
     nota: 'Tomacorriene doble blanco oslo voleck · artículo T48309 · ref. T48309 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 115, {
+  c('MAT-10-207', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado',
     nota: 'Tomacorriene doble blanco linea classic voleck · artículo T40016 · ref. T40016 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-178', PROV_FERREMIX, 15, {
+  c('MAT-10-207', PROV_FERREMIX, 15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-2-x-4-metalica-doble',
     nota: 'Tapa 2 x 4 mealica doble · artículo 14020 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-179', PROV_MAX, 85, {
+  c('MAT-10-208', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-blanca-3m-bticino-matix-am503-3bn',
     nota: 'PLACA BLANCA 3M BTICINO MATIX AM503/3BN · artículo 0001020799 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-180', PROV_MAX, 1620, {
+  c('MAT-10-209', PROV_MAX, 1620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-class-7m-plata-mate-eikon-20657-13',
     nota: 'PLACA CLASS 7M PLATA MATE EIKON 20657.13 · artículo 0001033452 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-181', PROV_MAX, 9.99, {
+  c('MAT-10-210', PROV_MAX, 9.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-doble-abs-ivory-gen-u03z',
     nota: 'TAPA DOBLE ABS IVORY GEN U03Z · artículo 0001085119 · ref. Sin especificaciones parseables en el nombre · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-182', PROV_FERREMIX, 52.59, {
+  c('MAT-10-211', PROV_FERREMIX, 52.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-de-acero-inoxidable',
     nota: 'tapa de acero inoxidable · artículo T46421 · ref. T47190 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-182', PROV_FERREMIX, 49, {
+  c('MAT-10-211', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-blanca-de-interruptor-80701-w',
-    nota: 'Tapa de inerrupor sencillo blanca 80701-w levion · artículo 25994 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Tapa de inerrupor sencillo blanca 80701-w levion · artículo 25994 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-182', PROV_FERREMIX, 45, {
+  c('MAT-10-211', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-crema-para-toma-corriente-220v-86004',
     nota: 'tapa sencilla crema para toma corriente 220v 86004 · artículo 25989 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-183', PROV_MAX, 295, {
+  c('MAT-10-212', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-plura-ngr-62051',
     nota: 'TAPA CIEGA VETO PLURA NGR 62051 · artículo 0001127207 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-183', PROV_MAX, 280, {
+  c('MAT-10-212', PROV_MAX, 280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-premiun-p-exterior-16672',
     nota: 'TAPA CIEGA VETO PREMIUN P/EXTERIOR 16672 · artículo 0001123886 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-183', PROV_MAX, 119.99, {
+  c('MAT-10-212', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-marfil-veto-35499',
     nota: 'TAPA CIEGA MARFIL VETO 35499 · artículo 0001118659 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-183', PROV_MAX, 115, {
+  c('MAT-10-212', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-blanca-veto-35482',
     nota: 'TAPA CIEGA BLANCA VETO 35482 · artículo 0001118639 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-184', PROV_MAX, 95, {
+  c('MAT-10-213', PROV_MAX, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorriente-redon-t46411',
     nota: 'TAPA PLAST P/TOMACORRIENTE REDON T46411 · artículo 0001126250 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-184', PROV_MAX, 100, {
+  c('MAT-10-213', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-t-c-dob-ext-volteck-t46410',
     nota: 'TAPA PLAST P/T C DOB EXT VOLTECK T46410 · artículo 0001121351 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-184', PROV_MAX, 25, {
+  c('MAT-10-213', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorr-dob-volteck-t46406',
     nota: 'TAPA PLAST P/TOMACORR DOB VOLTECK T46406 · artículo 0001121350 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 70, {
+  c('MAT-10-214', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-triple-modular',
-    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47939 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47939 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 85, {
+  c('MAT-10-214', PROV_FERREMIX, 85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-triple-linea-italiana-t46394',
-    nota: 'CAJA DE REGISTRO PLASTICA · artículo T46394 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'CAJA DE REGISTRO PLASTICA · artículo T46394 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 40, {
+  c('MAT-10-214', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-o-tomacorriente-triple',
     nota: 'CLAVOS CORRIENTE · artículo T27224 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 520, {
+  c('MAT-10-214', PROV_FERREMIX, 520, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-metalica-triple-de-1-ventana-de-exterior',
     nota: '@tapa metalica de 1 ventana para interperie linea · artículo T46428 · ref. T46428 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 105, {
+  c('MAT-10-214', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-triple-de-2-ventanas-linea-espanola',
     nota: 'Tapa triple de 2 ventanas para interruptores · artículo T47065 · ref. T47065 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 170, {
+  c('MAT-10-214', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-de-1-modulo',
     nota: 'Interruptor trple blanco lnea española volteck · artículo T45599 · ref. T45599 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 99, {
+  c('MAT-10-214', PROV_FERREMIX, 99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-tipo-escalera-de-1-5-modulos',
     nota: 'Interruptor de 3 vas blanco lnea española volteck · artículo T45600 · ref. T45600 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 239, {
+  c('MAT-10-214', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-linea-italiana',
     nota: 'tapa con contacto triple aterrizados linea italiana · artículo T48669 · ref. T48669 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-185', PROV_FERREMIX, 199, {
+  c('MAT-10-214', PROV_FERREMIX, 199, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-de-1-modulo-linea-espanola',
     nota: 'Tomacorriene riple blanco linea española voleck · artículo T45598 · ref. T45598 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 820.01, {
+  c('MAT-10-215', PROV_MAX, 820.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-c-usb-972-30405',
     nota: 'ADAPTADOR C/USB 972-30405 · artículo 0001125918 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 1360, {
+  c('MAT-10-215', PROV_MAX, 1360, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protec-4sl-c-usb-stanley-33202',
     nota: 'ADAPTADOR PROTEC 4SL C/USB STANLEY 33202 · artículo 0001094737 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 75, {
+  c('MAT-10-215', PROV_MAX, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-eu-usa-vimar-1351',
     nota: 'ADAPTADOR EU/USA VIMAR 1351 · artículo 0001014816 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 45.01, {
+  c('MAT-10-215', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-enchufe-usa-a-eu-voltech-46246',
-    nota: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246 · artículo 0001128664 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246 · artículo 0001128664 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 285.01, {
+  c('MAT-10-215', PROV_MAX, 285.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-d-6-salida-12cm-972-30346',
     nota: 'ADAPTADOR D/6 SALIDA 12CM 972-30346 · artículo 0001125928 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-186', PROV_MAX, 150, {
+  c('MAT-10-215', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-giratorio-c-3-972-30357',
     nota: 'ADAPTADOR GIRATORIO C/3 972-30357 · artículo 0001125925 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 465, {
+  c('MAT-10-216', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-macho-europ-50amp-43210',
     nota: 'ENCHUFE MACHO EUROP. 50AMP 43210 · artículo 0001118607 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 125, {
+  c('MAT-10-216', PROV_MAX, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-amarillo-t-leviton-15a-pbp317',
     nota: 'ENCHUFE AMARILLO T/LEVITON 15A PBP317H · artículo 0001127423 · ref. Sin especificaciones parseables en el nombre. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 55, {
+  c('MAT-10-216', PROV_MAX, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plast-aterr-clp-a-voltech-t46205',
-    nota: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205 · artículo 0001121354 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205 · artículo 0001121354 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 50, {
+  c('MAT-10-216', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plano-set-2pzs-t46209',
-    nota: 'ENCHUFE PLANO SET 2PZS T46209 · artículo 0001126251 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ENCHUFE PLANO SET 2PZS T46209 · artículo 0001126251 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 60, {
+  c('MAT-10-216', PROV_MAX, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-blind-aterrizado-voltech-t46202',
-    nota: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202 · artículo 0001121357 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202 · artículo 0001121357 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-187', PROV_MAX, 290, {
+  c('MAT-10-216', PROV_MAX, 290, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-leviton-15a-110v-cuerpo-m-515pa',
     nota: 'ENCHUFE LEVITON 15A 110V CUERPO M. 515PA · artículo 0001006690 · ref. Sin especificaciones parseables en el nombre · marca LEVITON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-188', PROV_BELLON, 430.24, {
+  c('MAT-10-217', PROV_BELLON, 430.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 15A ABB/GE THQL1115 · artículo 18607. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-188', PROV_BELLON, 447.27, {
+  c('MAT-10-217', PROV_BELLON, 447.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 1P 1/2" 15A ABB/GE THQP115 · artículo 18619. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-188', PROV_BELLON, 790, {
+  c('MAT-10-217', PROV_BELLON, 790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 15A Eaton BR115 · artículo 202552. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-189', PROV_MAX, 485, {
+  c('MAT-10-218', PROV_MAX, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp115-1p-15a-fino',
     nota: 'BREAKER GE THQP115 1P 15A (FINO) · artículo 0001001074 · ref. Polos 1P | Capacidad 15 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-190', PROV_BELLON, 374.13, {
+  c('MAT-10-219', PROV_BELLON, 374.13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 20A ABB/GE THQL1120 · artículo 18609. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-190', PROV_BELLON, 447.27, {
+  c('MAT-10-219', PROV_BELLON, 447.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 1P 1/2" 20A ABB/GE THQP120 · artículo 18620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-190', PROV_BELLON, 742, {
+  c('MAT-10-219', PROV_BELLON, 742, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 20A Eaton BR120 · artículo 202553. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-191', PROV_MAX, 500, {
+  c('MAT-10-220', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp120-1p-20a-fino',
     nota: 'BREAKER GE THQP120 1P 20A (FINO) · artículo 0001001075 · ref. Polos 1P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_MAX, 470.01, {
+  c('MAT-10-221', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1130-1p-30a',
     nota: 'BREAKER GE THQL1130 1P 30A · artículo 0001000808 · ref. Polos 1P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_BELLON, 374.1, {
+  c('MAT-10-221', PROV_BELLON, 374.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 30A ABB/GE THQL1130 · artículo 18611. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_BELLON, 424.55, {
+  c('MAT-10-221', PROV_BELLON, 424.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 1P 1/2" 30A ABB/GE THQP130 · artículo 18621. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_BELLON, 845, {
+  c('MAT-10-221', PROV_BELLON, 845, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 30A Eaton BR130 · artículo 202554. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-193', PROV_MAX, 505, {
+  c('MAT-10-222', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp130-1p-30a-fino',
     nota: 'BREAKER GE THQP130 1P 30A (FINO) · artículo 0001001076 · ref. Polos 1P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_FERREMIX, 170, {
+  c('MAT-10-223', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/breaker-termomagnetico-1-polo-40amp',
     nota: 'BREAKER TERMOMAGNETICO 1 POLO 40AMP · artículo T47509 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_BELLON, 495, {
+  c('MAT-10-223', PROV_BELLON, 495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 40A ABB/ GE THQL1140 · artículo 18614. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_BELLON, 481.33, {
+  c('MAT-10-223', PROV_BELLON, 481.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 1P 1/2" 40A ABB/GE THQP140 · artículo 18622. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_BELLON, 929, {
+  c('MAT-10-223', PROV_BELLON, 929, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 40A Eaton BR140 · artículo 202555. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 495, {
+  c('MAT-10-224', PROV_BELLON, 495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 50A ABB/GE THQL1150 · artículo 18616. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 515, {
+  c('MAT-10-224', PROV_BELLON, 515, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 1P 1/2" 50A ABB/GE THQP150 · artículo 18623. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 815, {
+  c('MAT-10-225', PROV_MAX, 815, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1160-1p-60a',
     nota: 'BREAKER GE THQL1160 1P 60A · artículo 0001000816 · ref. Polos 1P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_BELLON, 717.63, {
+  c('MAT-10-225', PROV_BELLON, 717.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 1P 1" 60A ABB/GE THQL1160 · artículo 18618. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-197', PROV_BELLON, 2820, {
+  c('MAT-10-226', PROV_BELLON, 2820, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 100A ABB/GE THQL21100 · artículo 18624. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-197', PROV_BELLON, 3586, {
+  c('MAT-10-226', PROV_BELLON, 3586, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 100A Eaton BR2100 · artículo 202556. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-198', PROV_BELLON, 969.78, {
+  c('MAT-10-227', PROV_BELLON, 969.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 15A ABB/GE THQL2115 · artículo 18625. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-198', PROV_BELLON, 1061.42, {
+  c('MAT-10-227', PROV_BELLON, 1061.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 2P 15A ABB/GE THQP215 · artículo 18634. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-198', PROV_BELLON, 1379, {
+  c('MAT-10-227', PROV_BELLON, 1379, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 15A Eaton BR215 · artículo 202557. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 1134.99, {
+  c('MAT-10-228', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2120-2p-20a',
     nota: 'BREAKER GE THQL2120 2P 20A · artículo 0001000818 · ref. Polos 2P | Capacidad 20 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 1135, {
+  c('MAT-10-228', PROV_BELLON, 1135, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 20A ABB/GE THQL2120 · artículo 18626. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 1180, {
+  c('MAT-10-228', PROV_BELLON, 1180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 2P 20A ABB/GE THQP220 · artículo 18636. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 1425, {
+  c('MAT-10-228', PROV_BELLON, 1425, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 20A Eaton BR220 · artículo 202558. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_MAX, 1195, {
+  c('MAT-10-229', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp220-2p-20a',
     nota: 'BREAKER GE THQP220 2P 20A · artículo 0001000803 · ref. Polos 2P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 1134.99, {
+  c('MAT-10-230', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2130-2p-30a',
     nota: 'BREAKER GE THQL2130 2P 30A · artículo 0001000826 · ref. Polos 2P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1025, {
+  c('MAT-10-230', PROV_BELLON, 1025, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 30A ABB/GE THQL2130 · artículo 18627. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1180, {
+  c('MAT-10-230', PROV_BELLON, 1180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 2P 30A ABB/GE THQP230 · artículo 18638. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 896, {
+  c('MAT-10-230', PROV_BELLON, 896, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 30A Eaton BR230 · artículo 202559. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-202', PROV_MAX, 1165, {
+  c('MAT-10-231', PROV_MAX, 1165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp230-2p-30a',
     nota: 'BREAKER GE THQP230 2P 30A · artículo 0001000804 · ref. Polos 2P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_MAX, 1134.99, {
+  c('MAT-10-232', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2140-2p-40a',
     nota: 'BREAKER GE THQL2140 2P 40A · artículo 0001000827 · ref. Polos 2P | Capacidad 40 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1055, {
+  c('MAT-10-232', PROV_BELLON, 1055, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 40A ABB/GE THQL2140 · artículo 18628. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 976.05, {
+  c('MAT-10-232', PROV_BELLON, 976.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 2P 40A ABB/GE THQP240 · artículo 18639. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1013, {
+  c('MAT-10-232', PROV_BELLON, 1013, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 40A Eaton BR240 · artículo 202679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 999.95, {
+  c('MAT-10-233', PROV_BELLON, 999.95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 50A ABB/GE THQL2150 · artículo 18629. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1215, {
+  c('MAT-10-233', PROV_BELLON, 1215, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Fino 2P ABB/50A GE THQP250 · artículo 18640. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1354, {
+  c('MAT-10-233', PROV_BELLON, 1354, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 50A Eaton BR250 · artículo 202560. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_MAX, 1189.99, {
+  c('MAT-10-234', PROV_MAX, 1189.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2160-2p-60a',
     nota: 'BREAKER GE THQL2160 2P 60A · artículo 0001000835 · ref. Polos 2P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 1100, {
+  c('MAT-10-234', PROV_BELLON, 1100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 60A ABB/GE THQL2160 · artículo 18630. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 1977, {
+  c('MAT-10-234', PROV_BELLON, 1977, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 60A Eaton BR260 · artículo 202561. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_BELLON, 2720, {
+  c('MAT-10-235', PROV_BELLON, 2720, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 70A ABB/GE THQL2170 · artículo 18631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_BELLON, 3199, {
+  c('MAT-10-235', PROV_BELLON, 3199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 70A Eaton BR270 · artículo 202562. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_BELLON, 2547.97, {
+  c('MAT-10-236', PROV_BELLON, 2547.97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 80A ABB/GE THQL2180 · artículo 18632. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_BELLON, 3073, {
+  c('MAT-10-236', PROV_BELLON, 3073, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 80A Eaton BR280 · artículo 202563. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-208', PROV_BELLON, 2968, {
+  c('MAT-10-237', PROV_BELLON, 2968, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 2P 90A Eaton BR290 · artículo 209311. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-209', PROV_BELLON, 6940, {
+  c('MAT-10-238', PROV_BELLON, 6940, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 100A ABB/GE THQL32100 · artículo 18641. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-210', PROV_BELLON, 3815, {
+  c('MAT-10-239', PROV_BELLON, 3815, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 15A ABB/GE THQL32015 · artículo 18643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-210', PROV_BELLON, 2309, {
+  c('MAT-10-239', PROV_BELLON, 2309, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 15A Eaton BR315 · artículo 202565. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-211', PROV_BELLON, 3815, {
+  c('MAT-10-240', PROV_BELLON, 3815, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 20A ABB/GE THQL32020 · artículo 18644. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-211', PROV_BELLON, 5787, {
+  c('MAT-10-240', PROV_BELLON, 5787, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 20A Eaton BR320 · artículo 202566. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_BELLON, 4310, {
+  c('MAT-10-241', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 40A ABB/GE THQL32040 · artículo 18647. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_BELLON, 4405, {
+  c('MAT-10-241', PROV_BELLON, 4405, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 40A Eaton BR340 · artículo 202680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-213', PROV_BELLON, 4310, {
+  c('MAT-10-242', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P ABB/50A GE THQL32050 · artículo 18649. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-213', PROV_BELLON, 5787, {
+  c('MAT-10-242', PROV_BELLON, 5787, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 50A Eaton BR350 · artículo 202568. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_BELLON, 4310, {
+  c('MAT-10-243', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 60A ABB/GE THQL32060 · artículo 18651. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_BELLON, 3933, {
+  c('MAT-10-243', PROV_BELLON, 3933, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 60A Eaton BR360 · artículo 202681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_BELLON, 5710, {
+  c('MAT-10-244', PROV_BELLON, 5710, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 70A ABB/GE THQL32070 · artículo 18653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_BELLON, 5328, {
+  c('MAT-10-244', PROV_BELLON, 5328, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 70A Eaton BR370 · artículo 202569. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_BELLON, 6380, {
+  c('MAT-10-245', PROV_BELLON, 6380, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 80A ABB/GE THQL32080 · artículo 18654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_BELLON, 5739, {
+  c('MAT-10-245', PROV_BELLON, 5739, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 80A Eaton BR380 · artículo 202570. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-217', PROV_BELLON, 5128.24, {
+  c('MAT-10-246', PROV_BELLON, 5128.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 90A ABB/GE THQL32090 · artículo 18655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-217', PROV_BELLON, 4647, {
+  c('MAT-10-246', PROV_BELLON, 4647, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Breaker Grueso 3P 90A Eaton BR390 · artículo 209312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-218', PROV_BELLON, 9622.41, {
+  c('MAT-10-247', PROV_BELLON, 9622.41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 1 Circuitos 240V 100A ABB/GE TQL-100S · artículo 82759. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 3920, {
+  c('MAT-10-248', PROV_BELLON, 3920, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 6-12 Circuitos 240V 125A ABB/GE TLM612FCUD · artículo 18733. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 7731.92, {
+  c('MAT-10-248', PROV_BELLON, 7731.92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 12 Circuitos 240V 125A ABB/GE TL12412C · artículo 18737. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 3829, {
+  c('MAT-10-248', PROV_BELLON, 3829, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 6-12 Circuitos 240V 125A Eaton BR612L125FP · artículo 202577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_MAX, 4755, {
+  c('MAT-10-249', PROV_MAX, 4755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-8-16-circ-tlm812fcud',
     nota: 'PANEL BREAKER GE 8-16 CIRC. TLM812FCUD · artículo 0001000355 · ref. Sin especificaciones parseables en el nombre · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_BELLON, 4715, {
+  c('MAT-10-249', PROV_BELLON, 4715, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 8-16 Circuitos 240V 125A ABB/GE TLM812FCUD · artículo 18736. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_BELLON, 3943, {
+  c('MAT-10-249', PROV_BELLON, 3943, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 8-16 Circuitos 240V 125A Eaton BR816L125FDP · artículo 202578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_BELLON, 4044, {
+  c('MAT-10-249', PROV_BELLON, 4044, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 8-16 Circuitos 120/240V 125A Nema-1 Eaton BR816ML125CRF · artículo 209506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_BELLON, 1522, {
+  c('MAT-10-249', PROV_BELLON, 1522, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 8-16 Circuitos 120/240V 125A Tipo General 2887 · artículo 226296. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-221', PROV_BELLON, 14240, {
+  c('MAT-10-250', PROV_BELLON, 14240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 18 Circuitos 240V 150A ABB/GE TL18415C · artículo 18739. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-222', PROV_BELLON, 180, {
+  c('MAT-10-251', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 2 Circuitos 120/240V 40A Tipo General · artículo 223576. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 6220, {
+  c('MAT-10-252', PROV_BELLON, 6220, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 14-24 Circuitos 240V 125A ABB/GE TLM1212CCU · artículo 18707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 9240, {
+  c('MAT-10-252', PROV_BELLON, 9240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 24 Circuitos 240V 125A ABB/GE TLM2412CCU PAL2412 · artículo 18722. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 13850, {
+  c('MAT-10-252', PROV_BELLON, 13850, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 24 Circuitos 240V 150A ABB/GE TL24415C · artículo 18740. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 13599, {
+  c('MAT-10-252', PROV_BELLON, 13599, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Eaton 3BR1224L125 · artículo 202580. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 33115, {
+  c('MAT-10-252', PROV_BELLON, 33115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Nema-3R Eaton 3BR1224L125R · artículo 202682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 4431, {
+  c('MAT-10-252', PROV_BELLON, 4431, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 12-24 Circuitos 120/240V 125A Nema-1 Eaton BR1224ML125CRF · artículo 209503. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-224', PROV_BELLON, 5730, {
+  c('MAT-10-253', PROV_BELLON, 5730, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 3 Circuitos 240V 100A Nema-1 Eaton 3BR3L100S · artículo 208597. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-225', PROV_BELLON, 14169.46, {
+  c('MAT-10-254', PROV_BELLON, 14169.46, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 30 Circuitos 240V 200A ABB/GE TL30420C · artículo 18743. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-226', PROV_BELLON, 8136.48, {
+  c('MAT-10-255', PROV_BELLON, 8136.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 16-32 Circuitos 240V 125A ABB/GE TLM1612CCU / PAL1612 · artículo 18708. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-227', PROV_BELLON, 16369, {
+  c('MAT-10-256', PROV_BELLON, 16369, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 18-36 Circuitos 208/120V 150A Eaton 3BR1836L150 · artículo 202581. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 1855, {
+  c('MAT-10-257', PROV_BELLON, 1855, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A ABB/GE TL240SCU · artículo 82402. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 2442, {
+  c('MAT-10-257', PROV_BELLON, 2442, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 2-4 Circuitos 240V 70A Eaton BR24L70FP · artículo 202573. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 629, {
+  c('MAT-10-257', PROV_BELLON, 629, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A Tipo General · artículo 223575. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-229', PROV_BELLON, 9743.09, {
+  c('MAT-10-258', PROV_BELLON, 9743.09, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 20-40 Circuitos 240V 200A ABB/GE TLM1620CCU PAL2020 · artículo 58859. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 11250.61, {
+  c('MAT-10-259', PROV_BELLON, 11250.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 42 Circuitos 240V 225A ABB/GE TLM4222CCU PAL4022 · artículo 18732. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 21330, {
+  c('MAT-10-259', PROV_BELLON, 21330, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos 240V 200A ABB/GE TL42420C · artículo 18744. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 18912.91, {
+  c('MAT-10-259', PROV_BELLON, 18912.91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos 240V 225A ABB/GE TL42422C · artículo 18745. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 22869, {
+  c('MAT-10-259', PROV_BELLON, 22869, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Eaton 3BR4242L225 · artículo 202575. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 15860, {
+  c('MAT-10-259', PROV_BELLON, 15860, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 24-42 Circuitos 240V 150A Eaton 3BR2442L150 · artículo 202582. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 16662, {
+  c('MAT-10-259', PROV_BELLON, 16662, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos 208/120V 200A Eaton 3BR4242L200 · artículo 202583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 22480, {
+  c('MAT-10-259', PROV_BELLON, 22480, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos Con Main Breaker 150A Eaton 3BR3042B150 · artículo 202587. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 21870, {
+  c('MAT-10-259', PROV_BELLON, 21870, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Nema-3R Eaton 3BR4242L225R · artículo 222125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-231', PROV_BELLON, 11883, {
+  c('MAT-10-260', PROV_BELLON, 11883, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 24-48 Circuitos 240V 125A Eaton BRP24L125G · artículo 234615. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-232', PROV_BELLON, 10527.54, {
+  c('MAT-10-261', PROV_BELLON, 10527.54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 30-60 Circuitos 240V 200A ABB/GE TLM3220CCU / PAL3020 · artículo 83040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_MAX, 566, {
+  c('MAT-10-262', PROV_MAX, 566, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
     nota: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA · artículo 0001128966 · ref. Sin especificaciones parseables en el nombre · marca IBER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 2620.57, {
+  c('MAT-10-262', PROV_BELLON, 2620.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A ABB/GE TL412C · artículo 18725. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 1239, {
+  c('MAT-10-262', PROV_BELLON, 1239, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 4-8 Circuitos 240V 125A Eaton BR48L125FP · artículo 202576. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 3603, {
+  c('MAT-10-262', PROV_BELLON, 3603, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRF · artículo 209504. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 6205, {
+  c('MAT-10-262', PROV_BELLON, 6205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRS · artículo 209505. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 1145, {
+  c('MAT-10-262', PROV_BELLON, 1145, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A Tipo General 4636 · artículo 224956. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-234', PROV_MAX, 6160, {
+  c('MAT-10-263', PROV_MAX, 6160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-14a24-125amp-tlm1212ccu',
     nota: 'PANEL BREAKER GE 14A24 125AMP TLM1212CCU · artículo 0001025983 · ref. Capacidad 125 A · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-235', PROV_MAX, 815, {
+  c('MAT-10-264', PROV_MAX, 815, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-25amp-220v-25001',
     nota: 'CAJA BREAKER VETO 25AMP 220V 25001 · artículo 0001127231 · ref. Capacidad 25 A | Tension 220 V · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-236', PROV_MAX, 700, {
+  c('MAT-10-265', PROV_MAX, 700, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-32amp-32016',
     nota: 'CAJA BREAKER VETO 32AMP 32016 · artículo 0001118600 · ref. Capacidad 32 A · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-237', PROV_MAX, 675, {
+  c('MAT-10-266', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-30-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 30 AMP EUROSOL · artículo 0001119382 · ref. Polos 2P | Capacidad 30 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-238', PROV_MAX, 1805, {
+  c('MAT-10-267', PROV_MAX, 1805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-60-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 60 AMP EUROSOL · artículo 0001119383 · ref. Polos 2P | Capacidad 60 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-239', PROV_MAX, 50, {
+  c('MAT-10-268', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fisible-30a-voltech-t47278',
     nota: 'FISIBLE 30A VOLTECH T47278 · artículo 0001123801 · ref. Capacidad 30 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-240', PROV_MAX, 140, {
+  c('MAT-10-269', PROV_MAX, 140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fusible-volteck-reforzado-60a-fus-60r',
     nota: 'FUSIBLE VOLTECK REFOR 60A FUS-60R 47279 · artículo 0001110195 · ref. Capacidad 60 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_MAX, 745, {
+  c('MAT-10-270', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protector-c-2-salida-usb-ggwp2',
     nota: 'ADAPTADOR PROTECTOR C/2 SALIDA USB GGWP2 · artículo 0001126547 · ref. Sin especificaciones parseables en el nombre · marca GABBA GOODS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_MAX, 1025, {
+  c('MAT-10-270', PROV_MAX, 1025, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-volt-lavad-micro-pted-1t515',
     nota: 'PROTECTOR VOLT LAVAD/MICRO PTED-1T515 · artículo 0001089578 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_MAX, 875.01, {
+  c('MAT-10-270', PROV_MAX, 875.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-audio-video-avtek-pte-1t515ir',
     nota: 'PROTECTOR AUDIO-VIDEO AVTEK PTE-1T515IR · artículo 0001000319 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_MAX, 1610, {
+  c('MAT-10-270', PROV_MAX, 1610, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-avtek-1875w-p-16',
     nota: 'PROTECTOR AVTEK 1875W P-16 · artículo 0001126795 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-242', PROV_MAX, 1395, {
+  c('MAT-10-271', PROV_MAX, 1395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regulador-volta-avtek-rspc-1200-8t508',
     nota: 'REGULADOR VOLTA AVTEK RSPC-1200-8T508 · artículo 0001084638 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-243', PROV_MAX, 725, {
+  c('MAT-10-272', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-1-2-x10',
     nota: 'TUBERIA METALICA EMT 1-1/2\'\'X10\' · artículo 0001006500 · ref. Medida 1-1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-244', PROV_MAX, 375, {
+  c('MAT-10-273', PROV_MAX, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-x10',
     nota: 'TUBERIA METALICA EMT 1\'\'X10\' · artículo 0001003254 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-245', PROV_MAX, 310, {
+  c('MAT-10-274', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-3-4-x10',
     nota: 'TUBERIA METALICA EMT 3/4\'\'X10\' · artículo 0001003253 · ref. Medida 3/4" | Largo 4 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-246', PROV_MAX, 25, {
+  c('MAT-10-275', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-1-2',
     nota: 'TUBERIA BX 1/2\'\' · artículo 0001000900 · ref. Medida 1/2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-247', PROV_MAX, 35, {
+  c('MAT-10-276', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-3-4',
     nota: 'TUBERIA BX 3/4\'\' · artículo 0001000901 · ref. Medida 3/4" | Largo 4 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-248', PROV_MAX, 45.01, {
+  c('MAT-10-277', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4-s-metal-alaflex',
     nota: 'TUBERIA LIQUID TIGHT 3/4 S/METAL ALAFLEX · artículo 0001009754 · ref. Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-248', PROV_MAX, 110, {
+  c('MAT-10-277', PROV_MAX, 110, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4',
     nota: 'TUBERIA LIQUID TIGHT 3/4\'\' · artículo 0001003244 · ref. Medida 3/4" | Largo 4 pies | Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_MAX, 115, {
+  c('MAT-10-278', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-2-kopos-lv-11x10',
     nota: 'CANALETA PVC BCO 1/2 KOPOS LV 11X10 · artículo 0001077974 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-250', PROV_MAX, 119.99, {
+  c('MAT-10-279', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-5-8-kopos-lh-15x10',
     nota: 'CANALETA PVC BCO 5/8 KOPOS LH 15X10 · artículo 0001077973 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-251', PROV_MAX, 135, {
+  c('MAT-10-280', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-ova-5-8-kopos-lzk-15x12',
     nota: 'CANALETA PVC OVA 5/8 KOPOS LZK 15X12 · artículo 0001077964 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-252', PROV_MAX, 150, {
+  c('MAT-10-281', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-kopos-3-4-lhd-20x10',
     nota: 'CANALETA PVC BCO KOPOS 3/4 LHD 20X10 · artículo 0001094771 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-253', PROV_MAX, 200, {
+  c('MAT-10-282', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-kopos-lhd-25x15-p2',
     nota: 'CANALETA PVC BCO 1 KOPOS LHD 25X15 P2 · artículo 0001094772 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-254', PROV_MAX, 215, {
+  c('MAT-10-283', PROV_MAX, 215, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-plastica-lhd-32x15-p2',
     nota: 'CANALETA PLASTICA LHD 32X15 P2 · artículo 0001132760 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-255', PROV_MAX, 320, {
+  c('MAT-10-284', PROV_MAX, 320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lv-40x15-p2',
     nota: 'CANALETA PALSTICA LV 40X15 P2 · artículo 0001132761 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-256', PROV_MAX, 550, {
+  c('MAT-10-285', PROV_MAX, 550, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lh-60x40-p2',
     nota: 'CANALETA PALSTICA LH 60X40 P2 2PUL · artículo 0001132762 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-257', PROV_MAX, 745, {
+  c('MAT-10-286', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-3-kopos-ekd-80x40-hd',
     nota: 'CANALETA PVC BCO 3 KOPOS EKD 80X40 HD · artículo 0001077965 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-258', PROV_MAX, 115, {
+  c('MAT-10-287', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-octagonal-usa-1-2',
     nota: 'CAJA METAL OCTAGONAL USA UL 1/2*** · artículo 0001006917 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-259', PROV_MAX, 41, {
+  c('MAT-10-288', PROV_MAX, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-3-4-tp596',
     nota: 'CAJA METAL 2X4 USA 3/4 TP596 · artículo 0001000131 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-259', PROV_MAX, 40, {
+  c('MAT-10-288', PROV_MAX, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-1-2-tp594',
     nota: 'CAJA METAL 2X4 USA 1/2 TP594 · artículo 0001000132 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-260', PROV_MAX, 45.01, {
+  c('MAT-10-289', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-plast-p-empot-bticino-2x4-533-503ms',
     nota: 'CAJA PLAST P/EMPOT BTICINO 2X4 533/503MS · artículo 0001004734 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-261', PROV_MAX, 4, {
+  c('MAT-10-290', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2',
     nota: 'ABRAZADERA EMT 1/2 · artículo 0001000331 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-262', PROV_MAX, 5, {
+  c('MAT-10-291', PROV_MAX, 5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2-2-h',
     nota: 'ABRAZADERA EMT 1/2\'\' 2-H · artículo 0001007003 · ref. Medida 1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-263', PROV_MAX, 7, {
+  c('MAT-10-292', PROV_MAX, 7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1',
     nota: 'ABRAZADERA EMT 1\'\' · artículo 0001007092 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-264', PROV_MAX, 35, {
+  c('MAT-10-293', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-2',
     nota: 'ABRAZADERA UNISTRUST 2\'\' · artículo 0001013969 · ref. Medida 2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-265', PROV_MAX, 4, {
+  c('MAT-10-294', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-3-4',
     nota: 'ABRAZADERA EMT 3/4 · artículo 0001004282 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-266', PROV_MAX, 64.99, {
+  c('MAT-10-295', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-3',
     nota: 'ABRAZADERA UNISTRUST 3\'\' · artículo 0001013970 · ref. Medida 3" | Largo 3 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-267', PROV_MC, 38.64, {
+  c('MAT-10-296', PROV_MC, 38.64, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1 1/2 · artículo 735748 · ref. 1 1/2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-268', PROV_MC, 7.62, {
+  c('MAT-10-297', PROV_MC, 7.62, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1/2 · artículo 758510 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-269', PROV_MC, 15.16, {
+  c('MAT-10-298', PROV_MC, 15.16, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1 · artículo 849332 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-270', PROV_MC, 55.83, {
+  c('MAT-10-299', PROV_MC, 55.83, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 2 · artículo 782070 · ref. 2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-271', PROV_MC, 9.13, {
+  c('MAT-10-300', PROV_MC, 9.13, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 3/4 · artículo 6003002 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-272', PROV_MC, 165.6, {
+  c('MAT-10-301', PROV_MC, 165.6, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 3 · artículo 123290 · ref. 3". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-273', PROV_MC, 311.19, {
+  c('MAT-10-302', PROV_MC, 311.19, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 4 · artículo 123422 · ref. 4". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-274', PROV_MAX, 150, {
+  c('MAT-10-303', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-250-10-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-250 10\'\'X 4.6MM · artículo 0001000201 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-275', PROV_MAX, 2.86, {
+  c('MAT-10-304', PROV_MAX, 2.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-12-x4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 12\'\'X4.6MM NEGRA · artículo 0001018041 · ref. Sin especificaciones parseables en el nombre · marca TOPAZ. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-275', PROV_MAX, 1.99, {
+  c('MAT-10-304', PROV_MAX, 1.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-310-12-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-310 12\'\'X 4.6MM · artículo 0001000200 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-276', PROV_MAX, 105, {
+  c('MAT-10-305', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-8-x-4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 8\'\'X 4.6MM NEGRA · artículo 0001018040 · ref. Sin especificaciones parseables en el nombre · marca CHINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-276', PROV_MAX, 85, {
+  c('MAT-10-305', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-200k-8-x4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-200K 8\'\'X4.6MM · artículo 0001007280 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-277', PROV_MAX, 1125, {
+  c('MAT-10-306', PROV_MAX, 1125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-15mts-t17751',
     nota: 'CINTA P/ELECTRICISTA 15MTS T17751 · artículo 0001123475 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-278', PROV_MAX, 1140, {
+  c('MAT-10-307', PROV_MAX, 1140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-goma-3m-scotch-no-23',
     nota: 'TAPE GOMA 3M SCOTCH NO.23 · artículo 0001000086 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-278', PROV_MAX, 2115, {
+  c('MAT-10-307', PROV_MAX, 2115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-electrico-scotch-3m-no-27',
     nota: 'TAPE ELECTRICO SCOTCH 3M NO.27 · artículo 0001000089 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-278', PROV_MAX, 435, {
+  c('MAT-10-307', PROV_MAX, 435, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-vinyl-3m-super-33t',
     nota: 'TAPE VINYL 3M SUPER 33T · artículo 0001000085 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-278', PROV_MAX, 135, {
+  c('MAT-10-307', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-3m-temflex-1711-grd-negro',
     nota: 'TAPE 3M TEMFLEX 1711 GRD NEGRO · artículo 0001004851 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-279', PROV_MAX, 1730, {
+  c('MAT-10-308', PROV_MAX, 1730, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-30mts-t17752',
     nota: 'CINTA P/ELECTRICISTA 30MTS T17752 · artículo 0001123476 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-280', PROV_MC, 966, {
+  c('MAT-10-309', PROV_MC, 966, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #14 BLANCO · artículo 61009003 · ref. AWG#14 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 9.66 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-281', PROV_MC, 12600, {
+  c('MAT-10-310', PROV_MC, 12600, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #2 NEGRO · artículo 5002006 · ref. AWG#2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 126 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-282', PROV_MC, 25900, {
+  c('MAT-10-311', PROV_MC, 25900, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 2/0 NEGRO · artículo 42141 · ref. AWG2/0 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 259 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-283', PROV_MC, 32800, {
+  c('MAT-10-312', PROV_MC, 32800, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 3/0 NEGRO · artículo 301320 · ref. 3/0 AWG PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 328 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-284', PROV_MC, 8436, {
+  c('MAT-10-313', PROV_MC, 8436, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #4 NEGRO · artículo 6109002 · ref. AWG#4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 84.36 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-285', PROV_MC, 39200, {
+  c('MAT-10-314', PROV_MC, 39200, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 4/0 NEGRO · artículo 65983 · ref. 4/0 AWG PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 392 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-286', PROV_MC, 5268, {
+  c('MAT-10-315', PROV_MC, 5268, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #6 BLANCO · artículo 97780 · ref. AWG#6 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 52.68 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-287', PROV_MC, 2102, {
+  c('MAT-10-316', PROV_MC, 2102, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/2 · artículo 6101001 · ref. 1.5/MM/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 21.02 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-288', PROV_MC, 2927, {
+  c('MAT-10-317', PROV_MC, 2927, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/3 · artículo 6101002 · ref. 1.5 MM/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 29.27 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-289', PROV_MC, 3713, {
+  c('MAT-10-318', PROV_MC, 3713, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/4 · artículo 158619 · ref. 1.5MM/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 37.13 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-290', PROV_MC, 3644, {
+  c('MAT-10-319', PROV_MC, 3644, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA (AWG) 12/2 · artículo 96654 · ref. AWG 12/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 36.44 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-291', PROV_MC, 5338, {
+  c('MAT-10-320', PROV_MC, 5338, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA AWG 12/3 · artículo 96478 · ref. AWG 12/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 53.38 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-292', PROV_MC, 4668, {
+  c('MAT-10-321', PROV_MC, 4668, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA AWG 14/4 · artículo 321487 · ref. AWG 14/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 46.68 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-293', PROV_MC, 2908, {
+  c('MAT-10-322', PROV_MC, 2908, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 2.5MM/2 · artículo 191784 · ref. 2.5MM/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 29.08 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-294', PROV_MC, 4361, {
+  c('MAT-10-323', PROV_MC, 4361, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 2.5MM/3 · artículo 74216 · ref. 2.5MM/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 43.61 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-295', PROV_MC, 26700, {
+  c('MAT-10-324', PROV_MC, 26700, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA (AWG) 6/4 · artículo 6101013 · ref. AWG 6/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 267 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-296', PROV_MAX, 180, {
+  c('MAT-10-325', PROV_MAX, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48006-10-blc-ed-3b-t48006',
     nota: 'EXTEN VOLTECK 48006 10\' BLC ED-3B T48006 · artículo 0001110184 · ref. Longitud 10 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-297', PROV_MAX, 2335, {
+  c('MAT-10-326', PROV_MAX, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensi-elect-mamey-cent-100-16-exor100',
     nota: 'EXTENSI ELECT MAMEY CENT 100\'-16 EXOR100 · artículo 0001120526 · ref. Longitud 100 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-297', PROV_MAX, 1940, {
+  c('MAT-10-326', PROV_MAX, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-100-naranja-er-30x16',
     nota: 'EXTENSION VOLTECK 100\' NARANJA ER-30X16 · artículo 0001110193 · ref. Longitud 100 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-297', PROV_MAX, 1355.01, {
+  c('MAT-10-326', PROV_MAX, 1355.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-electrica-naranja-100',
     nota: 'EXTENSION ELECTRICA NARANJA 100\' · artículo 0001108212 · ref. Longitud 100 pies. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-298', PROV_MAX, 359.99, {
+  c('MAT-10-327', PROV_MAX, 359.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-12-16awg-2c-972-90110924',
     nota: 'EXTENSIONES 12 16AWG/2C 972-90110924 · artículo 0001125878 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-298', PROV_MAX, 210, {
+  c('MAT-10-327', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-12-centurion-exw12',
     nota: 'EXTENSION ELECT 12\' CENTURION EXW12 · artículo 0001040209 · ref. Longitud 12 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-299', PROV_MAX, 225, {
+  c('MAT-10-328', PROV_MAX, 225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48012-13-blc-ed-4b-t48012',
     nota: 'EXTEN VOLTECK 48012 13\' BLC ED-4B T48012 · artículo 0001110185 · ref. Longitud 13 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-300', PROV_MAX, 300, {
+  c('MAT-10-329', PROV_MAX, 300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-centurion-exw15',
     nota: 'EXTENSION ELECT 15\' CENTURION EXW15 · artículo 0001040210 · ref. Longitud 15 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-300', PROV_MAX, 894.99, {
+  c('MAT-10-329', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-amarilla-st-33157',
     nota: 'EXTENSION ELECT. 15\' AMARILLA ST 33157 · artículo 0001118244 · ref. Longitud 15 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-300', PROV_MAX, 505, {
+  c('MAT-10-329', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-15-16awg-2c-972-90110927',
     nota: 'EXTENSIONES 15 16AWG/2C 972-90110927 · artículo 0001125879 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-301', PROV_MAX, 270, {
+  c('MAT-10-330', PROV_MAX, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48018-16-blc-ed-5b-t48018',
     nota: 'EXTEN VOLTECK 48018 16\' BLC ED-5B T48018 · artículo 0001110186 · ref. Longitud 16 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-302', PROV_MAX, 1700, {
+  c('MAT-10-331', PROV_MAX, 1700, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-25-amarilla-st-33257',
     nota: 'EXTENSION ELECT. 25\' AMARILLA ST 33257 · artículo 0001118245 · ref. Longitud 25 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-303', PROV_MAX, 520, {
+  c('MAT-10-332', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48030-26-blc-ed-8b-t48030',
     nota: 'EXTEN VOLTECK 48030 26\' BLC ED-8B T48030 · artículo 0001110188 · ref. Longitud 26 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 2989.99, {
+  c('MAT-10-333', PROV_MAX, 2989.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-50-amarilla-st-33507',
     nota: 'EXTENSION ELECT. 50\' AMARILLA ST 33507 · artículo 0001118246 · ref. Longitud 50 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 1695, {
+  c('MAT-10-333', PROV_MAX, 1695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-3t-cent-awg14-50',
     nota: 'EXTENSION ELECT. 3T. CENT AWG14-50\' · artículo 0001120523 · ref. Longitud 50 pies | Calibre AWG 14 · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 725, {
+  c('MAT-10-333', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elec-50-naranja-gen-ec-4-50ft',
     nota: 'EXTENSION ELEC 50\' NARANJA GEN EC-4-50FT · artículo 0001085105 · ref. Longitud 50 pies · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 965, {
+  c('MAT-10-333', PROV_MAX, 965, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-50-naranja-er-15x16',
     nota: 'EXTENSION VOLTECK 50\' NARANJA ER-15X16 · artículo 0001110192 · ref. Longitud 50 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-305', PROV_MAX, 310, {
+  c('MAT-10-334', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-6ft-3sal-blca-31061-2-34061',
     nota: 'EXTENSION 6FT 3SAL BLCA 31061 · artículo 0001094694 · ref. Longitud 6 pies | 3 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-306', PROV_MAX, 145, {
+  c('MAT-10-335', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48000-7-blc-ed-2b-t48000',
     nota: 'EXTEN VOLTECK 48000 7\' BLC ED-2B T48000 · artículo 0001110182 · ref. Longitud 7 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 737.5, {
+  c('MAT-10-336', PROV_MAX, 737.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-3ft-6sal-15a-stanley-blca-30006',
     nota: 'REGLETA 3FT 6SAL 15A STANLEY BLCA 30006 · artículo 0001118126 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 1330, {
+  c('MAT-10-336', PROV_MAX, 1330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-2un-bla-stanley-33211',
     nota: 'REGLETA 6 SALIDAS 2UN BLA STANLEY 33211 · artículo 0001116443 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 654.99, {
+  c('MAT-10-336', PROV_MAX, 654.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-ngr-3-125v-15a-30007',
     nota: 'REGLETA 6 SALIDAS NGR 3\'125V 15A 30007 · artículo 0001118238 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-308', PROV_MAX, 725, {
+  c('MAT-10-337', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-sali-suge-max-bl-245w-33213',
     nota: 'REGLETA 6 SALI SUGE MAX BL 245W 33213 · artículo 0001118240 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-309', PROV_MAX, 1195, {
+  c('MAT-10-338', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-8sal-stanley-blanca-30012',
     nota: 'REGLETA 8SAL STANLEY BLANCA 30012 · artículo 0001094734 · ref. 8 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-310', PROV_MAX, 599.99, {
+  c('MAT-10-339', PROV_MAX, 599.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-movimiento-interup-pared-t47230',
     nota: 'SENSOR MOVIMIENTO INTERUP PARED T47230 · artículo 0001126254 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-310', PROV_MAX, 500, {
+  c('MAT-10-339', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov180g-semo-180-voltech-t46594',
     nota: 'SENSOR MOV180g SEMO-180 VOLTECH T46594 · artículo 0001121310 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-310', PROV_MAX, 780, {
+  c('MAT-10-339', PROV_MAX, 780, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-interi-semo-in-voltech-t46599',
     nota: 'SENSOR MOV/INTERI SEMO-IN VOLTECH T46599 · artículo 0001121309 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-310', PROV_MAX, 540, {
+  c('MAT-10-339', PROV_MAX, 540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-p-ext-semo-ex-voltech-t47231',
     nota: 'SENSOR MOV P/EXT SEMO-EX VOLTECH T47231 · artículo 0001121300 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-311', PROV_MAX, 805, {
+  c('MAT-10-340', PROV_MAX, 805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timer-digital-8eve-tem-8-voltech-t48386',
     nota: 'TIMER DIGITAL 8EVE TEM-8 VOLTECH T48386 · artículo 0001122434 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 295, {
+  c('MAT-10-341', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-veto-premium-bco-16290',
     nota: 'PULSADOR TIMBRE VETO PREMIUM BCO 16290 · artículo 0001127222 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 414.99, {
+  c('MAT-10-341', PROV_MAX, 414.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-veto-plura-bco-60866',
     nota: 'TIMBRE VETO PLURA BCO 60866 · artículo 0001127211 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 100, {
+  c('MAT-10-341', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-sup-bco-20020',
     nota: 'PULSADOR TIMBRE SUP. BCO 20020 · artículo 0001118633 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 894.99, {
+  c('MAT-10-341', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-ding-dong-bco-veto-89003',
-    nota: 'TIMBRE DING DONG BCO VETO 89003 · artículo 0001118640 · ref. Sin especificaciones parseables en el nombre · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'TIMBRE DING DONG BCO VETO 89003 · artículo 0001118640 · ref. Sin especificaciones parseables en el nombre · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 315, {
+  c('MAT-10-341', PROV_MAX, 315, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-musical-domest-tim-voltech-t46605',
     nota: 'TIMBRE MUSICAL DOMEST TIM VOLTECH T46605 · artículo 0001121308 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 380, {
+  c('MAT-10-341', PROV_MAX, 380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-4-voltech-t46607',
     nota: 'TIMBRE INDUSTRIAL TIMC-4 VOLTECH T46607 · artículo 0001121307 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 740, {
+  c('MAT-10-341', PROV_MAX, 740, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-6-voltech-t46609',
     nota: 'TIMBRE INDUSTRIAL TIMC-6 VOLTECH T46609 · artículo 0001121306 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-312', PROV_MAX, 670, {
+  c('MAT-10-341', PROV_MAX, 670, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-inala-timi-100-voltech-t46630',
     nota: 'TIMBRE INALA TIMI-100 VOLTECH T46630 · artículo 0001121304 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
@@ -18418,7 +19277,8 @@
   });
   c('MAT-12-009', PROV_TONOS, 7147.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
-    nota: 'Pintura acrílica mate Popular · artículo 26471-3 · ref. 5 GL · marca Popular. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 5,
+    nota: 'Pintura acrílica mate Popular · artículo 26471-3 · ref. 5 GL · marca Popular. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 7142.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
@@ -18426,15 +19286,18 @@
   });
   c('MAT-12-009', PROV_TONOS, 6383.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-satinada-popular/',
-    nota: 'Pintura satinada Popular · artículo 02450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura satinada Popular · artículo 02450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 7109.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-popular/',
-    nota: 'Pintura semigloss Popular · artículo 04450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura semigloss Popular · artículo 04450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 4160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
-    nota: 'Pintura Acrílica Mate Contractor · artículo 2667-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 5,
+    nota: 'Pintura Acrílica Mate Contractor · artículo 2667-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 2641.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
@@ -18450,7 +19313,8 @@
   });
   c('MAT-12-009', PROV_TONOS, 6926.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-contractor/',
-    nota: 'Pintura semigloss Contractor · artículo 3250-3 · ref. 5 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura semigloss Contractor · artículo 3250-3 · ref. 5 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 9269.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/montokril-cubiertas/',
@@ -18462,7 +19326,8 @@
   });
   c('MAT-12-009', PROV_TONOS, 6700.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
-    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8223-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 5,
+    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8223-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-009', PROV_TONOS, 8124.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
@@ -18482,11 +19347,13 @@
   });
   c('MAT-12-009', PROV_FERREMIX, 6380, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-elite-ultra-acrilica-mate',
-    nota: 'Pintura elite ultra acrílica mate · artículo 29495 · marca Cano. El comercio lista 34 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 34,
+    nota: 'Pintura elite ultra acrílica mate · artículo 29495 · marca Cano. El comercio lista 34 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 34 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-009', PROV_FERREMIX, 3750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-pro-advance-acrilica-mate',
-    nota: 'Pintura pro advance acrílica mate · artículo 29432 · marca Cano. El comercio lista 42 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 42,
+    nota: 'Pintura pro advance acrílica mate · artículo 29432 · marca Cano. El comercio lista 42 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 42 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-009', PROV_FERREMIX, 1750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-techo-acrilica-mate',
@@ -18494,7 +19361,8 @@
   });
   c('MAT-12-009', PROV_FERREMIX, 2265, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-latex-acrilica-mate',
-    nota: 'Pintura látex acrílica mate · artículo 30853 · marca Cano. El comercio lista 15 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 15,
+    nota: 'Pintura látex acrílica mate · artículo 30853 · marca Cano. El comercio lista 15 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 15 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-009', PROV_FERREMIX, 2150, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-duratex-popular',
@@ -18506,7 +19374,8 @@
   });
   c('MAT-12-009', PROV_FERREMIX, 2075, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-ecnomica-latex-king',
-    nota: 'pintura acrilica ecnomica latex king · artículo 25473 · marca Pinturas King. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 7,
+    nota: 'pintura acrilica ecnomica latex king · artículo 25473 · marca Pinturas King. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-010', PROV_TONOS, 2113.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-uno-zero-monto/',
@@ -18530,15 +19399,18 @@
   });
   c('MAT-12-010', PROV_TONOS, 1383.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
-    nota: 'Pintura acrílica mate Popular · artículo 26466-2 · ref. 1 GL · marca Popular. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 3,
+    nota: 'Pintura acrílica mate Popular · artículo 26466-2 · ref. 1 GL · marca Popular. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 1276.74, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-satinada-popular/',
-    nota: 'Pintura satinada Popular · artículo 02450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura satinada Popular · artículo 02450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 1421.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-popular/',
-    nota: 'Pintura semigloss Popular · artículo 04450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura semigloss Popular · artículo 04450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 832.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
@@ -18554,15 +19426,18 @@
   });
   c('MAT-12-010', PROV_TONOS, 1385.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-contractor/',
-    nota: 'Pintura semigloss Contractor · artículo 3250-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura semigloss Contractor · artículo 3250-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 5297.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-nature/',
-    nota: 'Monto Nature · artículo 093372 · ref. 1 GL · marca Montó. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 3,
+    nota: 'Monto Nature · artículo 093372 · ref. 1 GL · marca Montó. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 1340.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
-    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8205-2 · ref. 1 GL · marca Tropical. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 4,
+    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8205-2 · ref. 1 GL · marca Tropical. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-010', PROV_TONOS, 682.24, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-ultratex/',
@@ -18586,7 +19461,8 @@
   });
   c('MAT-12-010', PROV_FERREMIX, 415, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-ecnomica-latex-king',
-    nota: 'pintura acrilica ecnomica latex king · artículo 4534 · marca Pinturas King. El comercio lista 21 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 21,
+    nota: 'pintura acrilica ecnomica latex king · artículo 4534 · marca Pinturas King. El comercio lista 21 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 21 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-12-011', PROV_TONOS, 6835.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-poliuretano-acripol/',
@@ -18598,7 +19474,8 @@
   });
   c('MAT-12-012', PROV_TONOS, 4353.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-epoxiguard/',
-    nota: 'Pintura Popular Epoxiguard · artículo 40103-2 · ref. 1 GL · marca Popular. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 4,
+    nota: 'Pintura Popular Epoxiguard · artículo 40103-2 · ref. 1 GL · marca Popular. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-012', PROV_TONOS, 1345.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-anticorrosiva-popular/',
@@ -18622,15 +19499,18 @@
   });
   c('MAT-12-015', PROV_TONOS, 2954.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-epoxica/',
-    nota: 'Pintura epóxica para aplicaciones industriales · artículo 5138-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura epóxica para aplicaciones industriales · artículo 5138-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-016', PROV_TONOS, 1212.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-esmalte-ferrum-acabado-forja/',
-    nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012830 · ref. 0.20 gl (750ml) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 7,
+    nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012830 · ref. 0.20 gl (750ml) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-017', PROV_TONOS, 5401.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-esmalte-ferrum-acabado-forja/',
-    nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012823 · ref. 1.06 gl (4L) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 7,
+    nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012823 · ref. 1.06 gl (4L) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-017', PROV_TONOS, 1481.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-enamelguard-popular/',
@@ -18642,11 +19522,13 @@
   });
   c('MAT-12-017', PROV_TONOS, 1312.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-esmalte/',
-    nota: 'Pintura Popular Esmalte Color Matcher – Popular · artículo 79250-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Pintura Popular Esmalte Color Matcher – Popular · artículo 79250-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-017', PROV_TONOS, 1574.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-industrial/',
-    nota: 'Esmalte Industrial – Tropical · artículo 8846-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+    peso: 2,
+    nota: 'Esmalte Industrial – Tropical · artículo 8846-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-017', PROV_TONOS, 1480.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-plus/',
@@ -19162,7 +20044,8 @@
   });
   c('MAT-16-031', PROV_OCHOA, 5019.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-cristal-a-color-libre-manos-03060437',
-    nota: 'Monitor Cristal A Color Libre Manos · artículo 03-06-0437 · ref. VXKRV76-WBLANCO · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Monitor Cristal A Color Libre Manos · artículo 03-06-0437 · ref. VXKRV76-WBLANCO · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-16-032', PROV_OCHOA, 4362.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-color-de-3-5-pulgadas-03060485',
@@ -20122,7 +21005,8 @@
   });
   c('MAT-24-001', PROV_OCHOA, 16560.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elong-sarez-c-asiento-01045621',
-    nota: 'Inodoro Elong. Sarez C / Asiento · artículo 01-04-5621 · ref. 2094MBNEGROMATE · marca ULTRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Inodoro Elong. Sarez C / Asiento · artículo 01-04-5621 · ref. 2094MBNEGROMATE · marca ULTRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-001', PROV_OCHOA, 15757.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/inodoro-elongado-drakar-16-01045388',
@@ -20187,7 +21071,8 @@
   c('MAT-24-001', PROV_CERARTE, 5932.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/inodoro-regenzeit',
     itbis: false,
-    nota: 'INODORO ONE PIECE REGENZEIT · artículo CERA-32423 · ref. 69X41.5x61 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'INODORO ONE PIECE REGENZEIT · artículo CERA-32423 · ref. 69X41.5x61 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-24-001', PROV_CERARTE, 19061.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/inodoro-op-nasser-ii',
@@ -20237,7 +21122,8 @@
   c('MAT-24-001', PROV_CERARTE, 6355.93, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/inodoro-op-1156',
     itbis: false,
-    nota: 'INODORO ONE PIECE REGENZEIT · artículo CERA-36842 · ref. 690X415X610 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'INODORO ONE PIECE REGENZEIT · artículo CERA-36842 · ref. 690X415X610 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-24-001', PROV_IBERICA, 12500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/inodoro-aqua-one-piece-elong-blanco-c-asiento-2/',
@@ -20321,7 +21207,8 @@
   });
   c('MAT-24-001', PROV_BELLON, 9737, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Inodoro Elongado One Piece Con Asiento Chino Blanco JG-2131 · artículo 227910. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Inodoro Elongado One Piece Con Asiento Chino Blanco JG-2131 · artículo 227910. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-001', PROV_BELLON, 7408, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -20369,7 +21256,8 @@
   });
   c('MAT-24-001', PROV_INNOVA, 5995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-d1476-blanco-dos-piezas-elongado-b-046517',
-    nota: 'INODORO AQUASPA D1476 BLANCO DOS PIEZAS ELONGADO BALANCIN CON TAPA · artículo 046517 · ref. Taza · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'INODORO AQUASPA D1476 BLANCO DOS PIEZAS ELONGADO BALANCIN CON TAPA · artículo 046517 · ref. Taza · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-001', PROV_INNOVA, 7430, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-aquaspa-t-6833-blanco-con-tapa-una-pieza-7-064084',
@@ -20429,7 +21317,8 @@
   });
   c('MAT-24-001', PROV_INNOVA, 5295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-14-0055-blanco-con-tapa-dos-p-037381',
-    nota: 'INODORO COCOBELLA CB.14.0055 BLANCO CON TAPA DOS PIEZAS ELONGADO PUSHBUTTON · artículo 037381 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'INODORO COCOBELLA CB.14.0055 BLANCO CON TAPA DOS PIEZAS ELONGADO PUSHBUTTON · artículo 037381 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-001', PROV_INNOVA, 8478, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-16-0021-blanco-con-tapa-suspe-061753',
@@ -20437,7 +21326,8 @@
   });
   c('MAT-24-001', PROV_INNOVA, 12795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-cocobella-cb-16-002126-negro-matte-con-tap-061754',
-    nota: 'INODORO COCOBELLA CB.16.002126 NEGRO MATTE CON TAPA SUSPENDIDO · artículo 061754 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'INODORO COCOBELLA CB.16.002126 NEGRO MATTE CON TAPA SUSPENDIDO · artículo 061754 · ref. Taza · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-001', PROV_INNOVA, 4855, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/inodoros/inodoro-corona-acuacer-blanco-dos-piezas-redondo-p-063568',
@@ -20614,7 +21504,8 @@
   });
   c('MAT-24-004', PROV_BELLON, 7112, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Inodoro Elongado Con Asiento Chino Blanco JG-023 2 Pcs · artículo 183778. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Inodoro Elongado Con Asiento Chino Blanco JG-023 2 Pcs · artículo 183778. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-004', PROV_BELLON, 5100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -20774,7 +21665,8 @@
   });
   c('MAT-24-005', PROV_INNOVA, 14100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/piezassanitarias/tanque-inodoro-cocobella-cb-27-001726-boton-descar-061757',
-    nota: 'TANQUE INODORO COCOBELLA CB.27.001726 BOTON DESCARGA NEGRO MATTE EMPOTRAR · artículo 061757 · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'TANQUE INODORO COCOBELLA CB.27.001726 BOTON DESCARGA NEGRO MATTE EMPOTRAR · artículo 061757 · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-006', PROV_OCHOA, 2731.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-aguazul-red-calidad-universal-01045089',
@@ -20846,7 +21738,8 @@
   });
   c('MAT-24-006', PROV_OCHOA, 5574.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-zurich-3-4-8-lpd-01045105',
-    nota: 'Basineta Elong Zurich 3” 4.8 Lpd · artículo 01-04-5105 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Basineta Elong Zurich 3” 4.8 Lpd · artículo 01-04-5105 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-006', PROV_OCHOA, 3893.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/basineta-elong-anubis-c-asientos-01045509',
@@ -20996,7 +21889,8 @@
   });
   c('MAT-24-007', PROV_IBERICA, 8400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/inodoro-fluxometro-adriatico-blanco-sin-asiento/',
-    nota: 'Inodoro fluxometro Adriatico Blanco · artículo 009645. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Inodoro fluxometro Adriatico Blanco · artículo 009645. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-24-007', PROV_IBERICA, 10500.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/inodoro-fluxometro-adriatico-plus-blanco-ref-213181001-e-superior/',
@@ -21219,15 +22113,18 @@
   });
   c('MAT-25-001', PROV_IBERICA, 4400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-blanco-41x41/',
-    nota: 'Lavamano Blanco 41×41 · artículo 015885 · ref. 41×41. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Blanco 41×41 · artículo 015885 · ref. 41×41. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 3500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-blanco-43x43/',
-    nota: 'Lavamano Blanco 43×43 · artículo 012782 · ref. 43×43. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Blanco 43×43 · artículo 012782 · ref. 43×43. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-blanco-48x37/',
-    nota: 'Lavamano Blanco 48×37 · artículo 016158 · ref. 48×37. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Blanco 48×37 · artículo 016158 · ref. 48×37. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 3999.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-blanco-48x37-con-hueco/',
@@ -21255,7 +22152,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 8500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-meridian-blanco-34x60/',
-    nota: 'Lavamano Meridian Blanco 34×60 · artículo 012121 · ref. 34×60. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'Lavamano Meridian Blanco 34×60 · artículo 012121 · ref. 34×60. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 3100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-ovalado-blanco-53x32/',
@@ -21275,7 +22173,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 5500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-apoyo-cascade-arena-mate-sin-desage/',
-    nota: 'Lavamanos Apoyo Cascade Arena Mate · artículo 016554. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Lavamanos Apoyo Cascade Arena Mate · artículo 016554. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 6499.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-apoyo-cascade-negro-mate-s-desague/',
@@ -21291,7 +22190,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 7500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-apoyo-terra-blanco-t4/',
-    nota: 'Lavamanos Apoyo Terra Blanco T4 · artículo 019513. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Lavamanos Apoyo Terra Blanco T4 · artículo 019513. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 15500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-encimera-porcelana-praga-46x32-5x13-5cms-c-desague/',
@@ -21339,7 +22239,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 1600, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-sobre-encimera-ovalado-blanco-37x29-5x12/',
-    nota: 'Lavamanos Sobre encimera Ovalado Blanco 37×29.5×12 · artículo 017699 · ref. 37×29.5×12. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Sobre encimera Ovalado Blanco 37×29.5×12 · artículo 017699 · ref. 37×29.5×12. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 32590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-sobre-encimera-petra-natural-45-50x15cms-madera-fosil/',
@@ -21359,7 +22260,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 21500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-sobre-encimera-terrazo-beige-40x40x14cms-porcelana/',
-    nota: 'Lavamanos Sobre Encimera Terrazo Beige 40x40x14cms Porcelana · artículo 017550 · ref. 40×40×14 cm. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Sobre Encimera Terrazo Beige 40x40x14cms Porcelana · artículo 017550 · ref. 40×40×14 cm. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 2400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-sobre-encimera-triangular-blanco-50x40-5x12/',
@@ -21367,7 +22269,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 8024, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-arezzo-blanco-1h-42-5x32x14/',
-    nota: 'Lavamano Arezzo Blanco 1H 42.5x32x14 · artículo 009915 · ref. 42.5×32×14. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Arezzo Blanco 1H 42.5x32x14 · artículo 009915 · ref. 42.5×32×14. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 15290, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-apoyo-375-ruy-ohtake-blanco-mate/',
@@ -21387,7 +22290,8 @@
   });
   c('MAT-25-001', PROV_IBERICA, 55300, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-inspira-soft-beige-50x37x14/',
-    nota: 'Lavamanos Inspira Soft Beige 50X37X14 · artículo 019488 · ref. 50×37×14. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Inspira Soft Beige 50X37X14 · artículo 019488 · ref. 50×37×14. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-001', PROV_IBERICA, 8142, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-platinum-p3-blanco/',
@@ -21431,7 +22335,8 @@
   });
   c('MAT-25-002', PROV_OCHOA, 3524.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-sobre-cubierta-turin-01061544',
-    nota: 'Lavamano Sobre Cubierta Turin · artículo 01-06-1544 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Sobre Cubierta Turin · artículo 01-06-1544 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-002', PROV_OCHOA, 1381.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-argos-01061622',
@@ -21491,7 +22396,8 @@
   });
   c('MAT-25-002', PROV_BELLON, 1345, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Lavamanos Ovalado Empotrar 1H Chino Blanco JG-076 · artículo 176347. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Ovalado Empotrar 1H Chino Blanco JG-076 · artículo 176347. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-002', PROV_BELLON, 1429, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -21637,15 +22543,18 @@
   });
   c('MAT-25-004', PROV_INNOVA, 1725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3095-blanco-pared-051429',
-    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3095 BLANCO PARED · artículo 051429 · ref. Lavamanos · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3095 BLANCO PARED · artículo 051429 · ref. Lavamanos · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-004', PROV_INNOVA, 7875, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-39-000226-negro-matte-pared-061760',
-    nota: 'LAVAMANOS COCOBELLA CB.39.000226 NEGRO MATTE PARED · artículo 061760 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LAVAMANOS COCOBELLA CB.39.000226 NEGRO MATTE PARED · artículo 061760 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_OCHOA, 2158.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-jazmin-1-h-01061511',
-    nota: 'Lavamano Jazmin 1 H · artículo 01-06-1511 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamano Jazmin 1 H · artículo 01-06-1511 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_OCHOA, 2925.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-mono-milenio-01061487',
@@ -21673,7 +22582,8 @@
   });
   c('MAT-25-005', PROV_OCHOA, 3266.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-goya-01061514',
-    nota: 'Lavamanos De Cerámica Goya · artículo 01-06-1514 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos De Cerámica Goya · artículo 01-06-1514 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_OCHOA, 1859.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061510',
@@ -21689,7 +22599,8 @@
   });
   c('MAT-25-005', PROV_OCHOA, 1527.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061309',
-    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1309 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1309 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_OCHOA, 1582.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061311',
@@ -21776,7 +22687,8 @@
   });
   c('MAT-25-005', PROV_BELLON, 2630, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Lavamanos 1H Con Pedestal Chino Blanco JG-026(LT60-17A) · artículo 176343. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos 1H Con Pedestal Chino Blanco JG-026(LT60-17A) · artículo 176343. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_BELLON, 2757.73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -21840,7 +22752,8 @@
   });
   c('MAT-25-005', PROV_INNOVA, 3884, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-0004-pedestal-1-hoyo-bla-023454',
-    nota: 'LAVAMANOS COCOBELLA CB.22.0004 PEDESTAL 1 HOYO BLANCO · artículo 023454 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LAVAMANOS COCOBELLA CB.22.0004 PEDESTAL 1 HOYO BLANCO · artículo 023454 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-005', PROV_INNOVA, 4050, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-001601-pedestal-1-hoyo-b-023460',
@@ -22164,7 +23077,8 @@
   c('MAT-25-006', PROV_CERARTE, 47599.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-rim54',
     itbis: false,
-    nota: 'LAVAMANOS D/TOPE C/DESAGUE RIM54 · artículo CERA-32985 · ref. 54X13.6 · marca ANTONIO LUPI. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'LAVAMANOS D/TOPE C/DESAGUE RIM54 · artículo CERA-32985 · ref. 54X13.6 · marca ANTONIO LUPI. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-25-006', PROV_CERARTE, 47675.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-verso',
@@ -22309,7 +23223,8 @@
   c('MAT-25-006', PROV_CERARTE, 6952.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-aq21295',
     itbis: false,
-    nota: 'LAVAMANOS D/TOPE REDONDO VIKA · artículo CERA-36988 · ref. 36X36X12 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'LAVAMANOS D/TOPE REDONDO VIKA · artículo CERA-36988 · ref. 36X36X12 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-25-006', PROV_CERARTE, 6952.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-aq21295',
@@ -22334,7 +23249,8 @@
   });
   c('MAT-25-006', PROV_BELLON, 3055, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Lavamanos Sobreponer Marsella Corona Blanco O13011001 / 945032 / O023011001 · artículo 216267. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Sobreponer Marsella Corona Blanco O13011001 / 945032 / O023011001 · artículo 216267. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-006', PROV_BELLON, 4047.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -22362,7 +23278,8 @@
   });
   c('MAT-25-006', PROV_BELLON, 3556, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Lavamanos Rectangular Sobremesa 460x360x135 mm Chino Negro 2307 · artículo 235835. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lavamanos Rectangular Sobremesa 460x360x135 mm Chino Negro 2307 · artículo 235835. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-006', PROV_BELLON, 4445, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -22394,7 +23311,8 @@
   });
   c('MAT-25-006', PROV_INNOVA, 1895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8004-blanco-tipo-tope-051411',
-    nota: 'LAVAMANOS AQUASPA TR-8004 BLANCO TIPO TOPE · artículo 051411 · ref. Lavamanos · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'LAVAMANOS AQUASPA TR-8004 BLANCO TIPO TOPE · artículo 051411 · ref. Lavamanos · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-006', PROV_INNOVA, 1675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8038-blanco-tipo-tope-051418',
@@ -22438,7 +23356,8 @@
   });
   c('MAT-25-006', PROV_INNOVA, 3195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0038-x-blanco-tipo-tope-036634',
-    nota: 'LAVAMANOS COCOBELLA CB.18.0038-X BLANCO TIPO TOPE · artículo 036634 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'LAVAMANOS COCOBELLA CB.18.0038-X BLANCO TIPO TOPE · artículo 036634 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-006', PROV_INNOVA, 5355, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-004603-x-oro-tipo-tope-042786',
@@ -22454,7 +23373,8 @@
   });
   c('MAT-25-006', PROV_INNOVA, 3529, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0070-amarillo-041945',
-    nota: 'LAVAMANOS COCOBELLA CB.18.0070 AMARILLO · artículo 041945 · ref. Lavamanos · marca COCO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'LAVAMANOS COCOBELLA CB.18.0070 AMARILLO · artículo 041945 · ref. Lavamanos · marca COCO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-006', PROV_INNOVA, 3950, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0073-negro-041948',
@@ -22694,7 +23614,8 @@
   });
   c('MAT-26-001', PROV_INNOVA, 8355, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-625-60-pvc-blanco-lavamano-3-e-069383',
-    nota: 'MUEBLE BAÑO AQUASPA 625-60 PVC BLANCO LAVAMANO/ESPEJO 60X48X45CM/54X11X68CM · artículo 069383 · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA 625-60 PVC BLANCO LAVAMANO/ESPEJO 60X48X45CM/54X11X68CM · artículo 069383 · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-001', PROV_INNOVA, 11995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-666-60-pvc-marron-lavamano-3-e-069386',
@@ -22730,7 +23651,8 @@
   });
   c('MAT-26-001', PROV_INNOVA, 7195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-fyb002-50-acero-inox-gris-lava-068960',
-    nota: 'MUEBLE BAÑO AQUASPA FYB002-50 ACERO INOX GRIS LAVAMANO/ESPEJO 50X36X40 CM · artículo 068960 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA FYB002-50 ACERO INOX GRIS LAVAMANO/ESPEJO 50X36X40 CM · artículo 068960 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-001', PROV_INNOVA, 7250, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-fyb002-60-acero-inox-gris-lava-068961',
@@ -22750,7 +23672,8 @@
   });
   c('MAT-26-001', PROV_INNOVA, 9795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-r-44-pvc-blanco-lavamano-3-esp-069388',
-    nota: 'MUEBLE BAÑO AQUASPA R-44 PVC BLANCO LAVAMANO/ESPEJO 60X47X49CM/50X60CM · artículo 069388 · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA R-44 PVC BLANCO LAVAMANO/ESPEJO 60X47X49CM/50X60CM · artículo 069388 · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-001', PROV_INNOVA, 11295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-r-45-pvc-crema-oscuro-lavamano-069391',
@@ -22854,7 +23777,8 @@
   });
   c('MAT-26-002', PROV_IBERICA, 19500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-mallorca-60-2p-suspendido-britannia-61x46x74-oscuro/',
-    nota: 'Conjunto Mallorca 60 2P Suspendido Britannia 61x46x74 Oscuro · artículo 012869 · ref. 61×46×74. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto Mallorca 60 2P Suspendido Britannia 61x46x74 Oscuro · artículo 012869 · ref. 61×46×74. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_IBERICA, 35282, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-modena-suspendido-roble-ostippo-81x46x48/',
@@ -22878,7 +23802,8 @@
   });
   c('MAT-26-002', PROV_INNOVA, 8120, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-13-0015-60-aluminio-gris-os-061739',
-    nota: 'MUEBLE BAÑO AQUASPA CS.13.0015-60 ALUMINIO GRIS OSCURO LAVAMANO/ESPEJO LED 60 CM AQUASPA · artículo 061739 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA CS.13.0015-60 ALUMINIO GRIS OSCURO LAVAMANO/ESPEJO LED 60 CM AQUASPA · artículo 061739 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_INNOVA, 8495, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-emv120bm-mdf-blanco-lavamano-3-046624',
@@ -22886,7 +23811,8 @@
   });
   c('MAT-26-002', PROV_INNOVA, 10995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-milano-mdf-blanco-lavamano-3-e-054742',
-    nota: 'MUEBLE BAÑO AQUASPA MILANO MDF BLANCO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054742 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA MILANO MDF BLANCO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054742 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_INNOVA, 11750, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-milano-mdf-roble-oscuro-lavama-054745',
@@ -22898,15 +23824,18 @@
   });
   c('MAT-26-002', PROV_INNOVA, 13875, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-sandy-mdf-roble-oscuro-lavaman-054747',
-    nota: 'MUEBLE BAÑO AQUASPA SANDY MDF ROBLE OSCURO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054747 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA SANDY MDF ROBLE OSCURO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054747 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_INNOVA, 9570, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-tc-1960-mdf-blanco-lavamano-3-054749',
-    nota: 'MUEBLE BAÑO AQUASPA TC-1960 MDF BLANCO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054749 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA TC-1960 MDF BLANCO LAVAMANO/ESPEJO 60X46X50 CM · artículo 054749 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_INNOVA, 8915, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-tc-5121-mdf-gris-lavamano-3-es-066820',
-    nota: 'MUEBLE BAÑO AQUASPA TC-5121 MDF GRIS LAVAMANO/ESPEJO 55X33X45 CM · artículo 066820 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA TC-5121 MDF GRIS LAVAMANO/ESPEJO 55X33X45 CM · artículo 066820 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-002', PROV_INNOVA, 8469, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-corona-aluvia-lm3766421-verde-45-cm-068278',
@@ -23034,7 +23963,8 @@
   c('MAT-26-003', PROV_CERARTE, 18465.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cdesague-chirico',
     itbis: false,
-    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/DESAGUE CHIRICO · artículo CERA-35233 · ref. 80X46X41.8 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/DESAGUE CHIRICO · artículo CERA-35233 · ref. 80X46X41.8 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-26-003', PROV_CERARTE, 26672.1, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cdesague-chia',
@@ -23044,7 +23974,8 @@
   c('MAT-26-003', PROV_CERARTE, 20491.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cdesague-carra',
     itbis: false,
-    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/DESAGUE CARRA · artículo CERA-35239 · ref. 60X45.5X50 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/DESAGUE CARRA · artículo CERA-35239 · ref. 60X45.5X50 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-26-003', PROV_CERARTE, 47802.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cdesague-altichero',
@@ -23079,7 +24010,8 @@
   c('MAT-26-003', PROV_CERARTE, 8141.31, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cespejo-danzini',
     itbis: false,
-    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/ESPEJO DANZINI · artículo CERA-36601 · ref. 61X47X50 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'MUEBLE D/BAÑO C/LAVAMANOS C/ESPEJO DANZINI · artículo CERA-36601 · ref. 61X47X50 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-26-003', PROV_CERARTE, 8141.3, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mueble-dbano-clavamanos-cespejo-danzini',
@@ -23108,11 +24040,13 @@
   });
   c('MAT-26-003', PROV_IBERICA, 78500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-espira-doble-152x49x52-5-ref-xh22003-a-c-espejo-led/',
-    nota: 'Conjunto Espira Doble 152x49x52.5 Ref. XH22003-A C/Espejo Led · artículo 018224 · ref. XH22003-A. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto Espira Doble 152x49x52.5 Ref. XH22003-A C/Espejo Led · artículo 018224 · ref. XH22003-A. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 22650.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-granada-70-britannia-oscuro-71x39-5x47/',
-    nota: 'Conjunto Granada 70 Britannia oscuro 71×39.5×47 · artículo 012865 · ref. 71×39.5×47. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto Granada 70 Britannia oscuro 71×39.5×47 · artículo 012865 · ref. 71×39.5×47. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 25000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-inca-pro-blanco-brillo-80x45-c-espejo/',
@@ -23148,7 +24082,8 @@
   });
   c('MAT-26-003', PROV_IBERICA, 28599.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-t-580-black-wood-46-8x58-con-espejo/',
-    nota: 'Conjunto T-580 Black-Wood 46.8×58 Con Espejo · artículo 012436 · ref. 46.8×58. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto T-580 Black-Wood 46.8×58 Con Espejo · artículo 012436 · ref. 46.8×58. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 28000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-t-730-b-wood-negro-73x48-con-espejo/',
@@ -23180,11 +24115,13 @@
   });
   c('MAT-26-003', PROV_IBERICA, 84999.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-vora-80-blanco-mate-c-espejo-led-s-toallero/',
-    nota: 'Conjunto Vora 80 Blanco Mate C/Espejo Led S/Toallero Ref. 131766+131645+128128 · artículo 019081 · ref. 131766+131645+128128. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto Vora 80 Blanco Mate C/Espejo Led S/Toallero Ref. 131766+131645+128128 · artículo 019081 · ref. 131766+131645+128128. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 10499.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-white-61x47x48-c-espejo/',
-    nota: 'Conjunto White 61x47x48 C/Espejo · artículo 019400 · ref. 612-60F. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Conjunto White 61x47x48 C/Espejo · artículo 019400 · ref. 612-60F. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 13650, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-zen-black-50x35x52-pvc-c-espejo/',
@@ -23268,7 +24205,8 @@
   });
   c('MAT-26-003', PROV_IBERICA, 27700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mueble-pro-para-lavadero-blanco-100x60/',
-    nota: 'Mueble Pro Para Lavadero Blanco 100×60 · artículo 016621 · ref. 100×60. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mueble Pro Para Lavadero Blanco 100×60 · artículo 016621 · ref. 100×60. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_IBERICA, 7800, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mueble-superior-para-lavadero-blanco-55x35/',
@@ -23312,7 +24250,8 @@
   });
   c('MAT-26-003', PROV_INNOVA, 7995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-130019-60-aluminio-gris-lav-061746',
-    nota: 'MUEBLE BAÑO AQUASPA CS.130019-60 ALUMINIO GRIS LAVAMANO/ESPEJO 60 CM AQUASPA · artículo 061746 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA CS.130019-60 ALUMINIO GRIS LAVAMANO/ESPEJO 60 CM AQUASPA · artículo 061746 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_INNOVA, 8995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-130019-80-aluminio-gris-lav-061747',
@@ -23324,11 +24263,13 @@
   });
   c('MAT-26-003', PROV_INNOVA, 8500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-emv120bm-mdf-crema-lavamano-3-050816',
-    nota: 'MUEBLE BAÑO AQUASPA EMV120BM MDF CREMA LAVAMANO/ESPEJO 525X295X800 MM · artículo 050816 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA EMV120BM MDF CREMA LAVAMANO/ESPEJO 525X295X800 MM · artículo 050816 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_INNOVA, 7012.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-emv129bm50-mdf-crema-lavamano-050813',
-    nota: 'MUEBLE BAÑO AQUASPA EMV129BM50 MDF CREMA LAVAMANO/ESPEJO 470X295X800 MM · artículo 050813 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'MUEBLE BAÑO AQUASPA EMV129BM50 MDF CREMA LAVAMANO/ESPEJO 470X295X800 MM · artículo 050813 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_INNOVA, 12595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-emv140bm-mdf-blanco-lavamano-3-046626',
@@ -23336,7 +24277,8 @@
   });
   c('MAT-26-003', PROV_INNOVA, 12515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-emv140bm-mdf-crema-lavamano-3-050823',
-    nota: 'MUEBLE BAÑO AQUASPA EMV140BM MDF CREMA LAVAMANO/ESPEJO 715X330X700 MM · artículo 050823 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'MUEBLE BAÑO AQUASPA EMV140BM MDF CREMA LAVAMANO/ESPEJO 715X330X700 MM · artículo 050823 · ref. Mueble · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_INNOVA, 15900, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-jbp600w-pvc-blanco-lavamano-3-038927',
@@ -23388,11 +24330,13 @@
   });
   c('MAT-26-004', PROV_INNOVA, 1320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/botiquines/botiquin-aquaspa-40cm-blanco-mdf-con-espejo-rectan-070519',
-    nota: 'BOTIQUIN AQUASPA 40CM BLANCO MDF CON ESPEJO RECTANGULAR · artículo 070519 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOTIQUIN AQUASPA 40CM BLANCO MDF CON ESPEJO RECTANGULAR · artículo 070519 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-004', PROV_INNOVA, 1415, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/botiquines/botiquin-aquaspa-60cm-bone-mdf-con-espejo-rectangu-070518',
-    nota: 'BOTIQUIN AQUASPA 60CM BONE MDF CON ESPEJO RECTANGULAR · artículo 070518 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOTIQUIN AQUASPA 60CM BONE MDF CON ESPEJO RECTANGULAR · artículo 070518 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-004', PROV_INNOVA, 1695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/botiquines/botiquin-aquaspa-80cm-blanco-mdf-con-espejo-rectan-070520',
@@ -23428,7 +24372,8 @@
   });
   c('MAT-26-004', PROV_INNOVA, 2975, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/botiquines/botiquin-rimax-7315-blanco-031330',
-    nota: 'BOTIQUIN RIMAX 7315 BLANCO · artículo 031330 · ref. Botiquin · marca RIMAX. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BOTIQUIN RIMAX 7315 BLANCO · artículo 031330 · ref. Botiquin · marca RIMAX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-005', PROV_OCHOA, 10820.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/botiquin-p-bano-led-50-x-70-01101253',
@@ -23488,7 +24433,8 @@
   });
   c('MAT-26-006', PROV_OCHOA, 1210.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/espejo-p-bano-rectangular-01101255',
-    nota: 'Espejo P / Bano Rectangular · artículo 01-10-1255 · ref. 50X70 · marca GTSHOWER. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Espejo P / Bano Rectangular · artículo 01-10-1255 · ref. 50X70 · marca GTSHOWER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-006', PROV_OCHOA, 1880.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/espejo-p-bano-rectangular-01101256',
@@ -23592,7 +24538,8 @@
   });
   c('MAT-26-006', PROV_INNOVA, 995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-gd146b-50x50-cm-dorado-cuadrado-064827',
-    nota: 'ESPEJO AQUASPA GD146B 50X50 CM DORADO CUADRADO · artículo 064827 · ref. Espejo · marca AQUASPA. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 5,
+    nota: 'ESPEJO AQUASPA GD146B 50X50 CM DORADO CUADRADO · artículo 064827 · ref. Espejo · marca AQUASPA. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-006', PROV_INNOVA, 836.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-gd146b-50x70-cm-dorado-rectangular-064828',
@@ -23616,7 +24563,8 @@
   });
   c('MAT-26-006', PROV_INNOVA, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-m05-60cm-ovalado-070514',
-    nota: 'ESPEJO AQUASPA M05 60CM OVALADO · artículo 070514 · ref. Espejo · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ESPEJO AQUASPA M05 60CM OVALADO · artículo 070514 · ref. Espejo · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-006', PROV_INNOVA, 859, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-sf141b-40x60-cm-negro-rectangular-c-068950',
@@ -23628,7 +24576,8 @@
   });
   c('MAT-26-006', PROV_INNOVA, 1375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-sf177b-60-cm-negro-redondo-con-repi-068953',
-    nota: 'ESPEJO AQUASPA SF177B 60 CM NEGRO REDONDO CON REPISA · artículo 068953 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ESPEJO AQUASPA SF177B 60 CM NEGRO REDONDO CON REPISA · artículo 068953 · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-006', PROV_INNOVA, 710, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-astra-w-ae1br1-plastico-con-jabonera-y-cepi-070738',
@@ -23664,7 +24613,8 @@
   });
   c('MAT-26-007', PROV_OCHOA, 5267.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/espejo-p-bano-led-antifog-50-x-70-01101242',
-    nota: 'Espejo P / Bano Led Antifog 50 X 70 · artículo 01-10-1242 · ref. LIM5070VR100-24V · marca GTSHOWER. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Espejo P / Bano Led Antifog 50 X 70 · artículo 01-10-1242 · ref. LIM5070VR100-24V · marca GTSHOWER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-007', PROV_OCHOA, 4270.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/espejo-p-bano-led-antifog-50-x-70-01101247',
@@ -23785,7 +24735,8 @@
   });
   c('MAT-26-007', PROV_IBERICA, 4900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/espejo-rectangular-ps-825-led-80x60-cristal/',
-    nota: 'Espejo Rectangular Led 80×60 Cristal · artículo 015041 · ref. 80×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 3,
+    nota: 'Espejo Rectangular Led 80×60 Cristal · artículo 015041 · ref. 80×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-007', PROV_FERREMIX, 3615, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-decorativa-de-led-para-bano-de-3-spots',
@@ -23797,7 +24748,8 @@
   });
   c('MAT-26-007', PROV_INNOVA, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-baño-aquaspa-h-1012-60x60-cm-rectangular-lu-064824',
-    nota: 'ESPEJO BAÑO AQUASPA H-1012 60X60 CM RECTANGULAR LUZ LED · artículo 064824 · ref. Espejo · marca AQUASPA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 4,
+    nota: 'ESPEJO BAÑO AQUASPA H-1012 60X60 CM RECTANGULAR LUZ LED · artículo 064824 · ref. Espejo · marca AQUASPA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-007', PROV_INNOVA, 1995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-baño-aquaspa-h-132-60x80-cm-rectangular-luz-053150',
@@ -23830,11 +24782,13 @@
   c('MAT-26-008', PROV_CERARTE, 14364.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room-8mm',
     itbis: false,
-    nota: 'WET ROOM 8MM · artículo CERA-00238 · ref. 85X85X195 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'WET ROOM 8MM · artículo CERA-00238 · ref. 85X85X195 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-26-008', PROV_IBERICA, 8900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte/',
-    nota: 'Mampara 80×190 Cristal · artículo 017557 · ref. 80×190. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mampara 80×190 Cristal · artículo 017557 · ref. 80×190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-008', PROV_IBERICA, 9299.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-90x190-cristal-5-16/',
@@ -23955,7 +24909,8 @@
   });
   c('MAT-26-009', PROV_IBERICA, 83900.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
-    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-009', PROV_IBERICA, 195000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
@@ -23967,7 +24922,8 @@
   });
   c('MAT-26-009', PROV_IBERICA, 14250, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
-    nota: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague · artículo 010627 · ref. 72×44×15.5. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague · artículo 010627 · ref. 72×44×15.5. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-009', PROV_IBERICA, 168799.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
@@ -24016,7 +24972,8 @@
   c('MAT-26-010', PROV_CERARTE, 16337.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-slate',
     itbis: false,
-    nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA SMART SLATE · artículo CERA-36588 · ref. 80X120 · marca ZENON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA SMART SLATE · artículo CERA-36588 · ref. 80X120 · marca ZENON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-26-010', PROV_CERARTE, 14956.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-frame-korvit',
@@ -24062,7 +25019,8 @@
   });
   c('MAT-27-006', PROV_INNOVA, 6294, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/barrassegubaneraducha/barra-seguridad-tornado-t-1350-s-baño-en-l-izquier-061518',
-    nota: 'BARRA SEGURIDAD TORNADO T-1350-S BAÑO EN L IZQUIERDA · artículo 061518 · ref. Barra · marca TORNADO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'BARRA SEGURIDAD TORNADO T-1350-S BAÑO EN L IZQUIERDA · artículo 061518 · ref. Barra · marca TORNADO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-007', PROV_OCHOA, 7495.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/agarradera-con-jabonera-clasica-01112778',
@@ -24279,7 +25237,8 @@
   c('MAT-27-018', PROV_CERARTE, 5747.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-de-accesorios-dbano-d-6pz-serie-2100',
     itbis: false,
-    nota: 'SET DE ACCESORIOS D/BAÑO D/ 6PZ SERIE 2100 · artículo CERA-36011 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'SET DE ACCESORIOS D/BAÑO D/ 6PZ SERIE 2100 · artículo CERA-36011 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-27-018', PROV_CERARTE, 4992.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-de-accesorios-dbano-d-6pz-serie-2100',
@@ -24320,7 +25279,8 @@
   });
   c('MAT-27-019', PROV_OCHOA, 1673.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-de-acce-p-bano-3-pzas-brushed-nickel-01101379',
-    nota: 'Kit De Acce P / Baño 3 Pzas Brushed Nickel · artículo 01-10-1379 · ref. IB-3M-303BN · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Kit De Acce P / Baño 3 Pzas Brushed Nickel · artículo 01-10-1379 · ref. IB-3M-303BN · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-020', PROV_OCHOA, 1605.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-accesorios-p-bano-prem-4pzas-01101303',
@@ -24468,7 +25428,8 @@
   });
   c('MAT-27-022', PROV_INNOVA, 1575, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/juegosaccesoriosbano/accesorios-baño-baikal-1900-niquelado-6-3-1-61600-040347',
-    nota: 'ACCESORIOS BAÑO BAIKAL 1900 NIQUELADO 6/1 61600 · artículo 040347 · marca BAIKAL. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'ACCESORIOS BAÑO BAIKAL 1900 NIQUELADO 6/1 61600 · artículo 040347 · marca BAIKAL. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-022', PROV_INNOVA, 1545, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/juegosaccesoriosbano/accesorios-baño-baikal-2200a-blk-negro-6-3-1-053529',
@@ -24520,7 +25481,8 @@
   });
   c('MAT-27-025', PROV_FERREMIX, 16755, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/secador-de-manos-con-sensor-optico-acer',
-    nota: 'SECADOR DE MANOS CON SENSOR ÓPTICO, ACER · artículo 50769070096688 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'SECADOR DE MANOS CON SENSOR ÓPTICO, ACER · artículo 50769070096688 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-025', PROV_INNOVA, 12595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/secadoresmano/secador-mano-aquaspa-cd-9999-pl-cromado-con-sensor-052274',
@@ -24622,11 +25584,13 @@
   });
   c('MAT-27-031', PROV_INNOVA, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-512a-blanco-serville-070579',
-    nota: 'DISPENSADOR PAPEL AQUASPA TKO-512A BLANCO SERVILLETA PLASTICO · artículo 070579 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DISPENSADOR PAPEL AQUASPA TKO-512A BLANCO SERVILLETA PLASTICO · artículo 070579 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-031', PROV_INNOVA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tn-201-1-blanco-higienic-052271',
-    nota: 'DISPENSADOR PAPEL AQUASPA TN-201-1 BLANCO HIGIENICO PLASTICO · artículo 052271 · ref. Dispensador · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DISPENSADOR PAPEL AQUASPA TN-201-1 BLANCO HIGIENICO PLASTICO · artículo 052271 · ref. Dispensador · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-032', PROV_OCHOA, 4472.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dispensador-de-toalla-papel-gm-ai-01112869',
@@ -24634,7 +25598,8 @@
   });
   c('MAT-27-032', PROV_INNOVA, 1275, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-525a-blanco-centro-t-070584',
-    nota: 'DISPENSADOR PAPEL AQUASPA TKO-525A BLANCO CENTRO TIPO TOALLA PLASTICO · artículo 070584 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'DISPENSADOR PAPEL AQUASPA TKO-525A BLANCO CENTRO TIPO TOALLA PLASTICO · artículo 070584 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-032', PROV_INNOVA, 2695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tt-31bk-negro-tipo-toall-062122',
@@ -24766,7 +25731,8 @@
   });
   c('MAT-28-008', PROV_OCHOA, 5376.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teclado-con-funciones-b920-03060575',
-    nota: 'Teclado Con Funciones B920 · artículo 03-06-0575 · ref. B920 · marca BOSCH. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Teclado Con Funciones B920 · artículo 03-06-0575 · ref. B920 · marca BOSCH. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-008', PROV_OCHOA, 7211.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teclado-para-fuego-e-intrusion-03061199',
@@ -25138,7 +26104,8 @@
   });
   c('MAT-28-024', PROV_OCHOA, 744.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-117-8x36mm-03061893',
-    nota: 'Caja De Conexion 117.8X36Mm · artículo 03-06-1893 · ref. TR-JB03-I-IN · marca STD. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Caja De Conexion 117.8X36Mm · artículo 03-06-1893 · ref. TR-JB03-I-IN · marca STD. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 751.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-126x36mm-03061892',
@@ -25326,11 +26293,13 @@
   });
   c('MAT-28-024', PROV_OCHOA, 594.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
-    nota: 'Configurador #2 Caja De 10 Unids · artículo 03-06-0319 · ref. 346912/3501/2 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Configurador #2 Caja De 10 Unids · artículo 03-06-0319 · ref. 346912/3501/2 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 323.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
-    nota: 'Configurador #3 Caja De 10 Unids · artículo 03-06-0320 · ref. 346913/3501/3 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Configurador #3 Caja De 10 Unids · artículo 03-06-0320 · ref. 346913/3501/3 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 329.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
@@ -25470,7 +26439,8 @@
   });
   c('MAT-30-002', PROV_OCHOA, 1649.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cable-cobre-direct-attach-03061664',
-    nota: 'Cable Cobre Direct Attach · artículo 03-06-1664 · ref. SFPH10GB1.5MS03 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Cable Cobre Direct Attach · artículo 03-06-1664 · ref. SFPH10GB1.5MS03 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-002', PROV_OCHOA, 21280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cable-copper-categoria-7a-e10-r-1000-03061632',
@@ -25626,7 +26596,8 @@
   });
   c('MAT-30-006', PROV_OCHOA, 222.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cable-utp-cat-6-24-4-azul-r-1000-03061503',
-    nota: 'Cable Utp Cat.6 24 / 4 Azul R / 1000\' · artículo 03-06-1503 · ref. 9C6M4-E2-06 · marca SIEMON. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Cable Utp Cat.6 24 / 4 Azul R / 1000\' · artículo 03-06-1503 · ref. 9C6M4-E2-06 · marca SIEMON. La tienda cotiza por pie y factura la unidad de 20 pies; aquí va el precio de la unidad completa. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-006', PROV_OCHOA, 242.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cable-utp-cat-6e-24-4-gris-r-1640-03061502',
@@ -25670,7 +26641,8 @@
   });
   c('MAT-30-007', PROV_OCHOA, 503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cordon-de-parcheo-5-rj45-cat-6a-azul-03061400',
-    nota: 'Cordon De Parcheo 5\' Rj45 Cat.6A Azul · artículo 03-06-1400 · ref. ZM6A-S05-06 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Cordon De Parcheo 5\' Rj45 Cat.6A Azul · artículo 03-06-1400 · ref. ZM6A-S05-06 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-007', PROV_OCHOA, 260.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cordon-de-parcheo-7-cat-6-azul-03061431',
@@ -25738,7 +26710,8 @@
   });
   c('MAT-30-012', PROV_OCHOA, 301.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/jack-zmax-rj45-cat-6a-blindado-blanco-03061648',
-    nota: 'Jack Zmax Rj45 Cat.6A Blindado Blanco · artículo 03-06-1648 · ref. Z6A-S02 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Jack Zmax Rj45 Cat.6A Blindado Blanco · artículo 03-06-1648 · ref. Z6A-S02 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-012', PROV_OCHOA, 337.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/jack-zmax-rj45-cat-6a-blindado-negro-03061395',
@@ -25750,7 +26723,8 @@
   });
   c('MAT-30-012', PROV_OCHOA, 275.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/jack-zmax-rj45-cat-6a-blindado-negro-03061650',
-    nota: 'Jack Zmax Rj45 Cat.6A Blindado Negro · artículo 03-06-1650 · ref. Z6A-S03 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Jack Zmax Rj45 Cat.6A Blindado Negro · artículo 03-06-1650 · ref. Z6A-S03 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-012', PROV_OCHOA, 439.42, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/jack-zmax-rj45-cat-6a-blindado-negro-03061653',
@@ -25946,7 +26920,8 @@
   });
   c('MAT-30-024', PROV_OCHOA, 0.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/acoplador-de-300-a-75-ohms-interior-03061089',
-    nota: 'Acoplador De 300 A 75 Ohms Interior · artículo 03-06-1089 · ref. 200-510 · marca STEREN. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Acoplador De 300 A 75 Ohms Interior · artículo 03-06-1089 · ref. 200-510 · marca STEREN. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-024', PROV_OCHOA, 0.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/acoplador-de-75-a-300-ohms-interior-03061091',
@@ -26062,7 +27037,8 @@
   });
   c('MAT-30-024', PROV_OCHOA, 190.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mc6-utp-modular-cord-1-ft-white-03061614',
-    nota: 'Mc6 Utp Modular Cord, 1 Ft, White · artículo 03-06-1614 · ref. MC6-01-02 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Mc6 Utp Modular Cord, 1 Ft, White · artículo 03-06-1614 · ref. MC6-01-02 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-024', PROV_OCHOA, 43.71, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plug-utp-categoria-6-03061411',
@@ -26074,7 +27050,8 @@
   });
   c('MAT-30-025', PROV_OCHOA, 287.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/anillo-blanco-03060742',
-    nota: 'Anillo Blanco · artículo 03-06-0742 · ref. SX34AWH · marca TUTONDO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Anillo Blanco · artículo 03-06-0742 · ref. SX34AWH · marca TUTONDO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-025', PROV_OCHOA, 104.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/anillo-negro-03060739',
@@ -26174,7 +27151,8 @@
   });
   c('MAT-31-002', PROV_OCHOA, 5359.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/int-timer-smart-home-16a-03061068',
-    nota: 'Int.Timer Smart Home 16A · artículo 03-06-1068 · ref. G2-CW-PT · marca SWITCH BEE. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Int.Timer Smart Home 16A · artículo 03-06-1068 · ref. G2-CW-PT · marca SWITCH BEE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-002', PROV_OCHOA, 1630.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/interruptor-blanco-03061961',
@@ -26326,7 +27304,8 @@
   });
   c('MAT-31-011', PROV_OCHOA, 13196.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-dlfra-p-acceso-modo-bco-03060704',
-    nota: 'Modulo Dlfra P / Acceso Modo Bco. · artículo 03-06-0704 · ref. HA02012 · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Modulo Dlfra P / Acceso Modo Bco. · artículo 03-06-0704 · ref. HA02012 · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-011', PROV_OCHOA, 3719.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061700',
@@ -30872,7 +31851,8 @@
   });
   c('MAT-32-690', PROV_FERREMIX, 285, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-3-8-a-3-8-sencillo',
-    nota: 'Lave anguar 3/8 a 3/8 senc. usa eastman · artículo 6595 · marca Eastman. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Lave anguar 3/8 a 3/8 senc. usa eastman · artículo 6595 · marca Eastman. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-32-691', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -31356,7 +32336,8 @@
   });
   c('MAT-32-751', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    nota: 'Sifón PVC Sencillo 1 1/2" Eastman 35376 · artículo 205465. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+    peso: 2,
+    nota: 'Sifón PVC Sencillo 1 1/2" Eastman 35376 · artículo 205465. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-32-751', PROV_BELLON, 91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -31478,7 +32459,8 @@
   c('MAT-32-758', PROV_CERARTE, 518.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
     itbis: false,
-    nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33891 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33891 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-32-758', PROV_CERARTE, 367.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
@@ -31493,12 +32475,14 @@
   c('MAT-32-758', PROV_CERARTE, 878.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
-    nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35250 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35250 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-32-758', PROV_CERARTE, 809.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
-    nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35247 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 2,
+    nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35247 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-32-758', PROV_CERARTE, 834.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
@@ -31786,6 +32770,1279 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
     nota: 'CEMENTO PVC 8oz SM-244-7 · artículo 718594024479. ' + SUPUESTO_ITBIS
   });
+  c('MAT-33-001', PROV_MUNDOLED, 4500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-base-bronce-mampara-blanca-e27-50cm30cm-cod-3695/',
+    peso: 7,
+    nota: 'LÁMPARA DE MESA BASE BRONCE MAMPARA BLANCA E27 50cm*30cm COD.3695 · artículo 3695. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 6000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-base-rattan-tejido-mampara-blanca-e27-d350h600mm-cod-4943/',
+    peso: 2,
+    nota: 'LÁMPARA DE MESA BASE RATTAN TEJIDO MAMPARA BLANCA E27 D350*H600MM COD.4943 · artículo 4943. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 2500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-beige-usb-recargable-usb-c-2-5w-2-cct-cod-4440/',
+    peso: 4,
+    nota: 'LAMPARA DE MESA BEIGE USB RECARGABLE USB C 2.5W 2 CCT COD.4440 · artículo 4440. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 4000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-concreto-d2033-5cm-cod-2320/',
+    peso: 5,
+    nota: 'LÁMPARA DE MESA CONCRETO D20*33.5CM COD.2320 · artículo 43137. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 3500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-mampara-de-tela-beige-e27-base-de-madera-d350xh700mm-cod-4794/',
+    peso: 7,
+    nota: 'LÁMPARA DE MESA MAMPARA DE TELA BEIGE E27 BASE DE MADERA D350xH700mm COD.4794 · artículo 4794. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 3000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-negra-27cm15042cm-cod-3100/',
+    peso: 3,
+    nota: 'LÁMPARA DE MESA NEGRA 27CM*150*42CM COD 3100 · artículo 3100. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-redonda-bronc-usb-recargable-usb-tipo-c-2-5w-3-cct-400ma-12-320-5c-cod-4732/',
+    peso: 6,
+    nota: 'LAMPARA DE MESA REDONDA BRONC USB RECARGABLE USB TIPO C 2.5W 3 CCT 400mA 12.3*20.5C COD.4732 · artículo 4732. El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-redonda-bronce-usb-recargable-usb-c-2-5w-3-cct-8h34cm-cod-4735/',
+    peso: 2,
+    nota: 'LÁMPARA DE MESA REDONDA BRONCE USB RECARGABLE USB C 2.5W 3 CCT 8*H34CM COD.4735 · artículo 4735. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 4400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-vintage-negra-globo-ancho-ambar-sockets-bronce-e27-22h54cm-cod-4728/',
+    nota: 'LÁMPARA DE MESA VINTAGE NEGRA GLOBO ANCHO ÁMBAR SOCKETS BRONCE E27 22*H54cm COD.4728 · artículo 4728. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 7500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-circular-de-mesa-bronce-y-blanco-25h42cm-e271pc-dia-25cm-cod-4851/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA CIRCULAR DE MESA BRONCE Y BLANCO 25*H42cm «E27*1pc Dia.25cm COD.4851 · artículo 4851. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 6500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-circular-de-mesa-bronce-y-blanco-35h55cm-e271pc-cod-4853/',
+    nota: 'LÁMPARA DECORATIVA CIRCULAR DE MESA BRONCE Y BLANCO 35*H55cm «E27*1pc COD.4853 · artículo 4853. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 2900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-aro-eliptico-globo-milk-w200h440-e27-cod-4646/',
+    nota: 'LÁMPARA DECORATIVA DE MESA ARO ELIPTICO GLOBO MILK W200*H440 E27 COD.4646 · artículo 4646. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 3900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-aro-led-integrado-13w-3000k-cod-2371/',
+    nota: 'LÁMPARA DECORATIVA DE MESA ARO LED INTEGRADO 13W 3000K COD. 2371 · artículo 2371. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 7000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-bronce-y-negro-25h50cm-e271pc-dia-25cm-cod-4849/',
+    nota: 'LÁMPARA DECORATIVA DE MESA BRONCE Y NEGRO 25*H50cm «E27*1pc Dia.25cm COD.4849 · artículo 4849. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 8000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-dorada-cono-clear-cod-3772/',
+    nota: 'LÁMPARA DECORATIVA DE MESA DORADA CONO CLEAR COD.3772 · artículo 3772. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 3425, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-rattan-marron-circular-base-madera-ip20-350480-e27-cod-3109/',
+    nota: 'LÁMPARA DECORATIVA DE MESA RATTAN MARRON CIRCULAR BASE MADERA IP20 350*480 E27 COD.3109 · artículo 3109. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 1800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-recargable-dimeable-touch-dorada-3w-328-5cm-cod-4666/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA DE MESA RECARGABLE DIMEABLE TOUCH DORADA 3W 3*28.5CM COD.4666 · artículo 4666. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 7700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-mesa-tulipan-blacksmome-con-aro-negro-cod-3774/',
+    nota: 'LÁMPARA DECORATIVA DE MESA TULIPAN BLACKSMOME CON ARO NEGRO COD.3774 · artículo 3774. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 5500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-negro-madera-integrada-h200cm-24w-110v-cct-cod-2171/',
+    nota: 'LÁMPARA DECORATIVA DE PIE NEGRO/MADERA INTEGRADA H200cm 24W 110V CCT COD.2171 · artículo 2171. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 3100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-piso-l20cm-cod-3312/',
+    nota: 'LÁMPARA DECORATIVA DE PISO L20CM COD.3312 · artículo 3343-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 5000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-mesa-circ-rattan-base-negra-e27-d20cm-cod-2985/',
+    peso: 3,
+    nota: 'LÁMPARA DECORATIVA MESA CIRC RATTAN BASE NEGRA E27 D20cm COD.2985 · artículo 2985. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 6600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-para-mesa-de-bronce-y-blanco-25h45cm-e271pc-dia-25cm-cod-4847/',
+    nota: 'LÁMPARA DECORATIVA PARA MESA DE BRONCE Y BLANCO 25*H45cm E27*1pc Dia.25cm COD.4847 · artículo 4847. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_MUNDOLED, 4300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampra-de-mesa-ceramica-crema-mampara-blanca-4730cm-cod-2289/',
+    nota: 'LÁMPRA DE MESA CERAMICA CREMA MAMPARA BLANCA 47*30CM COD.2289 · artículo 2289. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_LUMINATTI, 404.08, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/table-lamp-black-iron-h14in-led-10w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Table Lamp Black Iron H14in LED 10W 120v/60Hz · artículo T415-CH-10W-WW · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_LUMINATTI, 432.94, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/table-lamp-white-stone-base-with-white-shade-and-gold-accents-h25in-g9x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Table Lamp White Stone Base with White Shade and Gold Accents H25in G9x1 120v/60Hz · artículo T964-WH-G9 · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_LUMINATTI, 500.3, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/table-lamp-with-marble-base-and-golden-disc-d14in-led-3000k-8w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Table Lamp with Marble base and Golden Disc D14in LED 3000K 8W 120v/60Hz · artículo MTBMG007732D360GDLEDWW8W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-2-led-integrado-negro-ovalado-4w-cod-1504/',
+    nota: 'APLIQUE 2 LED INTEGRADO NEGRO OVALADO 4W cod. 1504 · artículo 1504. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-3-led-integrado-negro-ovalado-6w-ww-cod-1502/',
+    peso: 3,
+    nota: 'APLIQUE 3 LED INTEGRADO NEGRO OVALADO 6W WW cod. 1502 · artículo 1502. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-ahorcado-soga-y-madera-sockets-e27-cod-3279-2/',
+    peso: 8,
+    nota: 'APLIQUE AHORCADO SOGA Y MADERA SOCKETS E27 COD.3279 · artículo 41132. El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-base-negra-cristal-ambar-1-e27-cod-2386/',
+    peso: 14,
+    nota: 'APLIQUE BASE NEGRA CRISTAL AMBAR 1 E27 IP65 COD.2386 · artículo 2386. El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1416, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-blanco-con-aro-transparente-una-luz-gu10-ip54-cod-4008/',
+    nota: 'APLIQUE BLANCO CON ARO TRANSPARENTE UNA LUZ GU10 IP54 cod. 4008 · artículo 4008. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1460, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-blanco-con-aro-transparente-una-luz-gu10-ip54-cod-3555/',
+    nota: 'APLIQUE BLANCO CON ARO TRANSPARENTE UNA LUZ GU10 IP54 COD.3555 · artículo 3555. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-brazo-curvo-madera-cct-integrada-l20w25h31cm-18w-110v-cod-4635/',
+    peso: 24,
+    nota: 'APLIQUE BRAZO CURVO MADERA CCT INTEGRADA L20W25H31cm 18W 110V COD.4635 · artículo 4635. El comercio lista 24 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 24 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1791, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-cilindriconegro-e27-110-130v-c-difusor-ip54-mod-cod-3515/',
+    nota: 'APLIQUE CILINDRICONEGRO E27 110-130V C/DIFUSOR IP54 MOD COD.3515 · artículo 3515. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 8000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-circular-de-marmol-centro-de-metal-color-broce-dia-30cm-4w-ac110v-3000k-cod-4864/',
+    nota: 'APLIQUE CIRCULAR DE MÁRMOL CENTRO DE METAL COLOR BROCE Dia.30cm 4W AC110V 3000K COD.4864 · artículo 4864. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-colgante-de-madera-base-blanca-1318h30cm-e27-cod-2937/',
+    peso: 3,
+    nota: 'APLIQUE COLGANTE DE MADERA BASE BLANCA 13*18*H30cm E27 COD.2937 · artículo 2937. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-copa-smoke-doble-e14-cod-2824/',
+    nota: 'APLIQUE COPA SMOKE DOBLE e14 cod. 2824 · artículo 2824. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1012, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-exterior-clasico-colonial-e27-cod-1124/',
+    nota: 'APLIQUE DE EXTERIOR CLASICO COLONIAL E27 COD.1124 · artículo 1124. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2380, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-2-bombillos-t8-cod-3609/',
+    nota: 'Aplique de pared 2 bombillos t8 COD. 3609 · artículo 3609. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-base-negra-y-cristal-smoker-led-integrado-3000k-102124-cod-3354/',
+    nota: 'APLIQUE DE PARED BASE NEGRA Y CRISTAL SMOKER LED INTEGRADO 3000K 10*21*24 COD.3354 · artículo 3354. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-colgante-globo-ambar-25cm-cod3591/',
+    nota: 'Aplique de pared colgante globo ambar 25cm COD3591 · artículo 3591. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 650, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-cuadrado-blanco-cod-4016/',
+    peso: 2,
+    nota: 'Aplique De Pared Cuadrado blanco COD.4016 · artículo 4016. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2620, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-cuadrado-y-enrejado-negro-cod3913/',
+    nota: 'Aplique De Pared Cuadrado Y Enrejado Negro Cod3913 · artículo 3913. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1829, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-doble-aros-transparentes-y-doble-luz-cod3923/',
+    nota: 'Aplique De Pared Doble Aros Transparentes Y Doble Luz Cod3923 · artículo 3923. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 885, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-doble-luz-color-gris-cod-3943/',
+    nota: 'Aplique De Pared Doble Luz Color Gris Cod. 3943 · artículo 30160. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-doble-luz-negro-cod-3918/',
+    peso: 2,
+    nota: 'Aplique De Pared Doble Luz Negro Cod. 3918 · artículo 30167. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1865, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-globo-ambar-sockets-g9-base-negro-mate-cod-3267/',
+    nota: 'APLIQUE DE PARED GLOBO AMBAR SOCKETS G9 BASE NEGRO MATE COD 3267 · artículo 3267. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3830, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-globo-clear-tipo-diamante-base-negra-socket-g9-cod-3263/',
+    nota: 'APLIQUE DE PARED GLOBO CLEAR TIPO DIAMANTE BASE NEGRA SOCKET G9 COD 3263 · artículo 3263. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-globo-smoke-base-dorada-socket-e12-cod-3265/',
+    peso: 21,
+    nota: 'APLIQUE DE PARED GLOBO SMOKE BASE DORADA SOCKET E12 COD 3265 · artículo 3265. El comercio lista 21 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 21 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2850, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-integrado-luna-cod-3987/',
+    peso: 2,
+    nota: 'Aplique De Pared Integrado Luna cod. 3987 · artículo 3987. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1730, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-metalico-imitando-madera-cuadrado-doble-luz-ww-cod-3692/',
+    nota: 'APLIQUE DE PARED METALICO IMITANDO MADERA CUADRADO DOBLE LUZ WW cod. 3692 · artículo 3692. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-negro-100-240v-50-60hz-%cf%8681198mm-ldc0120b-gu10-cod-5614/',
+    peso: 2,
+    nota: 'APLIQUE DE PARED NEGRO 100-240V 50/60Hz Φ81*198mm LDC0120B-GU10 COD.5614 · artículo 5614. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-negro-12w-100-240v-50-60hz-600lm-3000k-131417cm-cod-5617/',
+    peso: 4,
+    nota: 'APLIQUE DE PARED NEGRO 12W 100-240V 50/60Hz 600LM 3000K 13*14*17CM COD.5617 · artículo 5617. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-negro-4w-100-240v-50-60hz-380lm-3000k-7x7x4cm-cod-5613/',
+    peso: 3,
+    nota: 'APLIQUE DE PARED NEGRO 4W 100-240V 50/60Hz 380LM 3000K 7X7X4CM COD.5613 · artículo 5613. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1292, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-negro-cuadrado-con-difusor-blanco-ip54/',
+    nota: 'Aplique De Pared Negro Cuadrado Con Difusor Blanco, Ip54 COD.4009 · artículo 4009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1450, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-negro-cuadrado-luz-regulable-cod-2812/',
+    peso: 2,
+    nota: 'Aplique De Pared NEGRO CUADRADO LUZ REGULABLE COD. 2812 · artículo 2812. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 4000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-rectangular-marmol-gu10-cod-2888/',
+    peso: 11,
+    nota: 'APLIQUE DE PARED RECTANGULAR MÁRMOL GU10 COD.2888 · artículo 2888. El comercio lista 11 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 11 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-soga-cilindro-de-metal-calado-negro-tipo-candelabro-cod-2856/',
+    peso: 2,
+    nota: 'APLIQUE DE PARED SOGA CILINDRO DE METAL CALADO NEGRO TIPO CANDELABRO cod. 2856 · artículo 2856. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 505, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-de-pared-una-luz-blanco-cod-3996/',
+    peso: 2,
+    nota: 'Aplique De Pared Una Luz Blanco Cod.3996 · artículo 30161. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-aro-led-integrado-10w-base-circular-negra-cod-4223/',
+    peso: 4,
+    nota: 'APLIQUE DEC ARO LED INTEGRADO 10W BASE CIRCULAR NEGRA COD. 4223 · artículo 4223. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-aro-negro-medalla-negra-cod-4477/',
+    nota: 'APLIQUE DEC ARO NEGRO MEDALLA NEGRA cod. 4477 · artículo 4477. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3840, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-brazo-curveado-marron-cilindro-ancho-smoke-e27-cod-4248/',
+    nota: 'APLIQUE DEC BASE BRAZO CURVEADO MARRON CILINDRO ANCHO SMOKE E27 cod. 4248 · artículo 4248. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-bronze-3-cables-led-integrado-3000kcod-4122/',
+    peso: 2,
+    nota: 'APLIQUE DEC BASE BRONZE 3 CABLES LED INTEGRADO 3000Kcod. 4122 · artículo 4122. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-circ-cilindro-smoke-black-e27-cod-4247/',
+    nota: 'APLIQUE DEC BASE CIRC CILINDRO SMOKE BLACK E27 COD.4247 · artículo 4247. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 4710, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-cuad-dorada-embudo-clear-de-vidrio-led-integrado-5w-ww-cod-4245/',
+    nota: 'APLIQUE DEC BASE CUAD DORADA EMBUDO CLEAR DE VIDRIO LED INTEGRADO 5W WW COD 4245 · artículo 4245. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1790, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-dorada-brazo-curveado-copa-frost-e27-cod-4243/',
+    nota: 'APLIQUE DEC BASE DORADA BRAZO CURVEADO COPA FROST E27 COD 4243 · artículo 4243. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1410, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-negra-brazo-curveado-copa-milk-e27-cod-4244/',
+    nota: 'APLIQUE DEC BASE NEGRA BRAZO CURVEADO COPA MILK E27 COD 4244 · artículo 4244. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1510, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-negra-circ-brazo-recto-globo-smoke-e27-cod-4249/',
+    nota: 'APLIQUE DEC BASE NEGRA CIRC BRAZO RECTO GLOBO SMOKE E27 Cod. 4249 · artículo 4249. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-base-y-2-circulos-negro-perlado-led-3000k-110v-cod-2363/',
+    peso: 4,
+    nota: 'APLIQUE DEC BASE Y 2 CIRCULOS NEGRO PERLADO LED 3000K 110V COD.2363 · artículo 2363. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 4150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-blanco-espejo-3-cuadrados-led-integrado-15w-3cct-500120100mm-cod-2359/',
+    nota: 'APLIQUE DEC BLANCO ESPEJO 3 CUADRADOS LED INTEGRADO 15W 3CCT 500*120*100MM COD. 2359 · artículo 2359. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-blanco-ovalado-15w-4200k-cod-2624/',
+    peso: 2,
+    nota: 'APLIQUE DEC BLANCO OVALADO 15W 4200K COD.2624 · artículo 2624. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-bronce-rectangular-tela-blanca-e27-cod-4138/',
+    nota: 'APLIQUE DEC BRONCE RECTANGULAR TELA BLANCA E27 COD. 4138 · artículo 4138. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-circular-led-integrado-cod-4403/',
+    nota: 'APLIQUE DEC CIRCULAR LED INTEGRADO COD. 4403 · artículo 4403. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 12600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-color-wooden-cod-4513/',
+    nota: 'APLIQUE DEC COLOR WOODEN COD.4513 · artículo 4513. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-copa-dorada-circular-cod-4585/',
+    nota: 'APLIQUE DEC COPA DORADA CIRCULAR COD. 4585 · artículo 4585. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1860, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-copa-negra-circular-e27-cod-4225/',
+    nota: 'APLIQUE DEC COPA NEGRA CIRCULAR E27 COD. 4225 · artículo 4225. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1625, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-copa-y-base-negra-sockets-cod-3268/',
+    nota: 'APLIQUE DEC COPA Y BASE NEGRA SOCKETS COD 3268 · artículo 3268. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-cubo-doble-luz-5w-ww-3000k-negro-cod-1506/',
+    peso: 2,
+    nota: 'APLIQUE DEC CUBO DOBLE LUZ 5W WW 3000K NEGRO COD. 1506 · artículo 1506. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-de-exterior-led-negro-6w-ac85-265v-6565h160mm-3000k-ip65-cod-1126/',
+    peso: 17,
+    nota: 'APLIQUE DEC DE EXTERIOR LED NEGRO 6W AC85-265V 65*65*H160mm 3000k IP65 COD.1126 · artículo 1126. El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-de-fibra-base-circular-cod-3685/',
+    nota: 'APLIQUE DEC DE FIBRA BASE CIRCULAR COD.3685 · artículo 2895-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 925, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-doble-luz-cristal-clear-cilindrico-centro-negro-e27-ip44-cod-2085/',
+    nota: 'APLIQUE DEC DOBLE LUZ CRISTAL CLEAR CILINDRICO CENTRO NEGRO E27 IP44 COD. 2085 · artículo 3924-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 5750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-dorado-2-aros-clear-led-integrado-3000k-od-4350/',
+    nota: 'APLIQUE DEC DORADO 2 AROS CLEAR LED INTEGRADO 3000K OD. 4350 · artículo 4350. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3850, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-dos-globos-smoke-negro-cod-3710/',
+    nota: 'APLIQUE DEC DOS GLOBOS SMOKE NEGRO COD.3710 · artículo 3710. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2065, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-en-madera-y-cristal-tubular-milk-ip20-cod-3594/',
+    nota: 'APLIQUE DEC EN MADERA Y CRISTAL TUBULAR MILK IP20 COD.3594 · artículo 40475. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-exterior-blanco-300011cm9cm3cm-cod-4010/',
+    nota: 'APLIQUE DEC EXTERIOR BLANCO 300011CM*9CM*3CM COD. 4010 · artículo 2806-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 915, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-exterior-cilindro-ip54-6w-3000k-5cm6-8cm8cm-cod-3904/',
+    nota: 'APLIQUE DEC EXTERIOR CILINDRO IP54 6W 3000K 5CM*6.8CM*8CM COD. 3904 · artículo 3218-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1451, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-exterior-ip54-circular-negra-2w-3000k-6cm6cm-cod-2806/',
+    nota: 'APLIQUE DEC EXTERIOR IP54 CIRCULAR NEGRA 2W 3000K 6CM*6CM COD. 2806 · artículo 2806. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 7900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-grande-dos-campanas-negra-cod-4383/',
+    nota: 'APLIQUE DEC GRANDE DOS CAMPANAS NEGRA Cod. 4383 · artículo 4383. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 12050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-grande-negro-tipo-hacha-dos-filos-e27-cod-4402/',
+    nota: 'APLIQUE DEC GRANDE NEGRO TIPO HACHA DOS FILOS E27 Cod. 4402 · artículo 4402. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-grande-tipo-campana-negra-e27-cod-4382/',
+    nota: 'APLIQUE DEC GRANDE TIPO CAMPANA NEGRA E27 Cod. 4382 · artículo 4382. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 5000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-led-dorado-cod-4501/',
+    peso: 8,
+    nota: 'APLIQUE DEC LED DORADO COD.4501 · artículo 4501. El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1665, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-led-integrado-2w-ip20-cod-4254/',
+    nota: 'APLIQUE DEC LED INTEGRADO 2W IP20 COD. 4254 · artículo 4254. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 7000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-led-integrado-base-negra-y-aro-y-barra-dorada-ww-3000k-cod-4387/',
+    peso: 3,
+    nota: 'APLIQUE DEC LED INTEGRADO BASE NEGRA Y ARO Y BARRA DORADA WW 3000K Cod. 4387 · artículo 4387. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 5600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-negro-brazo-curveado-largo-led-integrado-ww-cod-4385/',
+    nota: 'APLIQUE DEC NEGRO BRAZO CURVEADO LARGO LED INTEGRADO WW Cod. 4385 · artículo 4385. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-negro-brazo-curveado-largo-led-integrado-ww-cod-4386/',
+    nota: 'APLIQUE DEC NEGRO BRAZO CURVEADO LARGO LED INTEGRADO WW Cod. 4386 · artículo 4386. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-punta-abajo-marmol-verde-globo-milk-1325cm-g9-cod-3546/',
+    nota: 'APLIQUE DEC PUNTA ABAJO MÁRMOL VERDE GLOBO MILK 13*25cm G9 COD.3546 · artículo 3275-1-1-1-2. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-tipo-extrella-negra-led-integrado-5w-cod-4257/',
+    nota: 'APLIQUE DEC TIPO EXTRELLA NEGRA LED INTEGRADO 5W COD: 4257 · artículo 4257. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decoativo-curvo-plateado-led-integrado-dia-10h45cm-ac110v-3000k-cod-4882/',
+    peso: 4,
+    nota: 'APLIQUE DECOATIVO CURVO PLATEADO LED INTEGRADO DIA.10*H45CM AC110V 3000K COD.4882 · artículo 4882. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 4500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativa-de-exterior-vertical-negro-21w-ac85-265v-10008043mm-3000k-ip65-cod-1128/',
+    nota: 'APLIQUE DECORATIVA DE EXTERIOR VERTICAL NEGRO 21W AC85-265V 1000*80*43mm 3000K IP65 COD.1128 · artículo 1128. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativa-vertical-color-negro-y-madera-l60w18h7cm-ac110v-3000k-cod-4861/',
+    nota: 'APLIQUE DECORATIVA VERTICAL COLOR NEGRO Y MADERA L60*W18*H7cm AC110V 3000K COD.4861 · artículo 4861. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-aro-negro-y-globo-cod-3208/',
+    nota: 'APLIQUE DECORATIVO ARO NEGRO Y GLOBO COD.3208 · artículo 3208. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 9050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-barra-vertical-bronze-110v-3000k-15120cm-cod-3887/',
+    nota: 'APLIQUE DECORATIVO BARRA VERTICAL BRONZE 110V 3000K 15*120cm COD.3887 · artículo 3275-1-1-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3999, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-de-pared-negro-60cm10cm10cm-13w-110v-3000k-cod-4835/',
+    nota: 'APLIQUE DECORATIVO DE PARED NEGRO 60cm*10cm*10cm 13W 110V 3000K COD.4835 · artículo 47835. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dec-dorada-mampara-frost-tela-cod-4514/',
+    nota: 'APLIQUE DECORATIVO DORADA MAMPARA FROST TELA COD.4514 · artículo 4514. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 4100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-dorado-cristal-110v-3000k-cod-4492/',
+    peso: 2,
+    nota: 'APLIQUE DECORATIVO DORADO CRISTAL 110V 3000K COD.4492 · artículo 4492. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 5700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-polea-dorada-cod-4557/',
+    nota: 'APLIQUE DECORATIVO POLEA DORADA COD.4557 · artículo 4557. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 590, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-decorativo-rectangular-negro-1w-3000k-ip65-fy-cod-2626/',
+    peso: 2,
+    nota: 'APLIQUE DECORATIVO RECTANGULAR NEGRO 1W 3000K IP65 FY COD.2626 · artículo 2626. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-dorado-aro-central-con-globo-milk-e14-cod-3706/',
+    nota: 'APLIQUE DORADO ARO CENTRAL CON GLOBO MILK E14 COD 3706 · artículo 3706. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-exterior-liso-gris-doble-luz-cod-4811/',
+    nota: 'APLIQUE EXTERIOR LISO GRIS DOBLE LUZ COD 4811 · artículo 4811. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-exterior-negro-con-2-aros-transparente-doble-luz-gu10-ip54-modelo-1142-yh-cod-3923/',
+    nota: 'APLIQUE EXTERIOR NEGRO CON 2 AROS TRANSPARENTE DOBLE LUZ GU10 IP54 MODELO 1142 YH COD.3923 · artículo 37559. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 6350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-grande-8-platos-dorado-dif-tamano-cod-4393/',
+    nota: 'APLIQUE GRANDE 8 PLATOS DORADO DIF TAMAÑO COD. 4393 · artículo 4393. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-grandec-4-platos-dorado-dif-tamano-cod-4392/',
+    nota: 'APLIQUE GRANDEC 4 PLATOS DORADO DIF TAMAÑO COD. 4392 · artículo 4392. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 3200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-le-cuadrado-negro-15w-30k-l200w60h230-cod-4890/',
+    peso: 3,
+    nota: 'APLIQUE LE CUADRADO NEGRO 15W 30K L200*W60*H230 COD.4890 · artículo 4890. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2320, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-led-blanco-asimetrico-doble-luz-integrado-cod-3572/',
+    nota: 'APLIQUE LED BLANCO ASIMETRICO DOBLE LUZ INTEGRADO cod. 3572 · artículo 3572. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-pared-blanco-doble-luz-e27cod-4015/',
+    nota: 'APLIQUE PARED BLANCO DOBLE LUZ E27cod. 4015 · artículo 4015. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1385, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-pared-cilindrico-doble-luz-e27-1162s-ip54/',
+    peso: 3,
+    nota: 'Aplique Pared Cilíndrico Doble Luz E27 1162S Ip54 · artículo 3999 · marca NEO LUZ. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-pared-cilindrico-doble-luz-e27-ip54-mod-1162m/',
+    nota: 'Aplique Pared Cilindrico Doble Luz E27 Ip54 Mod 1162M · artículo 3921. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 2229, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-pared-dec-cod-4239/',
+    nota: 'APLIQUE PARED DEC COD 4239 · artículo 4239. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 1090, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/bola-de-navidad-60cm-cod-1054/',
+    nota: 'BOLA DE NAVIDAD 60CM cod. 1054 · artículo 1054. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_MUNDOLED, 500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-circular-led-recargable-con-sensor-de-movimiento-cod-1893/',
+    nota: 'LÁMPARA CIRCULAR LED RECARGABLE CON SENSOR DE MOVIMIENTO COD.1893 · artículo 1893. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 118.81, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-scone-with-fume-glass-h13-77in-2xe12-120v-60hz',
+    moneda: 'USD',
+    nota: 'Black Scone with Fume Glass H13.77in 2xE12 120v/60hz · artículo MWLMG009093H350FUE12X2 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 153.94, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-wall-lamp-with-clear-acrylic-2l-h12in-120v-60hz',
+    moneda: 'USD',
+    nota: 'Black Wall Lamp with Clear Acrylic 2L H12in 120v/60Hz · artículo MWLMG000609L300BKE26X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 113.16, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-wall-light-with-fume-crystal-h14in-2xe12-120v-60hz',
+    moneda: 'USD',
+    nota: 'Black Wall Light with Fume Crystal H14in 2xE12 120v/60hz · artículo MWLMG000075H260FUE12X2 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 169.73, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-wall-light-with-white-marble-d12-3w-led-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Black Wall Light with White Marble D12 3W LED 3000K 120v/60hz · artículo MWLMG009083D300BKLEDWW3W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 363.39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/clear-cristal-wall-lamp-h18in-3000k-led',
+    moneda: 'USD',
+    nota: 'Clear Cristal Wall Lamp, H18in 3000K Led · artículo DL-WA06-6-SV · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 295.05, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-amber-glass-wall-light-d9in-h9in-10w-led-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Amber Glass Wall Light D9in H9in 10W LED 3000K 120v/60Hz · artículo MWLMG0A3218D240AMLEDWW10W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 436.16, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-crystal-wall-light-l10in-led-3000k-8w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Crystal Wall Light L10in LED 3000K 8W 120v/60Hz · artículo MWLMG008081L270GDLEDWW8W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 474.64, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-wall-light-with-frosted-globes-g9x5-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Wall Light with Frosted Globes G9x5 120v/60Hz · artículo MWLMG008082L250GDG9X5 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 230.91, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/golden-wall-light-with-black-marble-h21in-5w-led-3000k-120v-60hz-1',
+    moneda: 'USD',
+    nota: 'Golden Wall Light with Black Marble H21in 5W LED 3000K 120v/60Hz · artículo MTBMG00N134H500BKE12X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 225, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/wall-lamp-black-and-gold-e27x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Wall Lamp  Black and Gold E27x1 120v/60Hz · artículo MWLMG000226H520BKE26X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_LUMINATTI, 172.5, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/wall-lamp-2-metal-gold-g9x2-120v-60hz',
+    moneda: 'USD',
+    nota: 'Wall Lamp 2 Metal Gold G9x2 120v/60Hz · artículo MWLMG0B7047L760GDG9X2 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 4200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-soga-tejida-circular-e27-5028-h60cm-cod-4783/',
+    nota: 'LÁMPARA DE MESA SOGA TEJIDA CIRCULAR E27 50*28 H60CM COD.4783 · artículo 4783. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 7200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-bamboo-d25cmh145cm-cod-3627/',
+    nota: 'LÁMPARA DE PIE BAMBOO D25CM*H145CM COD. 3627 · artículo 3627. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 8000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-bronce-3-globos-ambar-cod-3629/',
+    peso: 2,
+    nota: 'LÁMPARA DE PIE BRONCE 3 GLOBOS ÁMBAR COD 3629 · artículo 3629. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 5000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-decorativa-mampara-blanca-1e27-d450h1580mm-cod-3142/',
+    nota: 'LÁMPARA DE PIE DECORATIVA MAMPARA BLANCA 1*E27 D450*H1580MM COD.3142 · artículo 3142. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 8500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-decorativa-negra-2-globo-humo-2e27-3502001550-cod-2277/',
+    peso: 2,
+    nota: 'LÁMPARA DE PIE DECORATIVA NEGRA 2 GLOBO HUMO 2*E27 350*200*1550 COD.2277 · artículo 43074. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 4000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-negra-foco-e27-34cm23cm148cmod-3626/',
+    nota: 'LÁMPARA DE PIE NEGRA FOCO E27 34CM*23CM*148CMOD 3626 · artículo 3626. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 7800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-pie-negra-tipo-foco-cod-3229/',
+    nota: 'LÁMPARA DE PIE NEGRA TIPO FOCO COD.3229 · artículo 3226-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 10000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-circular-de-pie-bronce-y-blanco-50h160cm-e271pc-dia-50cm-cod-4852/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA CIRCULAR DE PIE BRONCE Y BLANCO 50*H160cm «E27*1pc Dia.50cm COD.4852 · artículo 4852. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 7500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-1-cristal-negro-humo-e27-d49h120cm-cod-2288/',
+    peso: 3,
+    nota: 'LÁMPARA DECORATIVA DE PIE 1 CRISTAL NEGRO HUMO E27 D49*H120CM COD.2288 · artículo 2288. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 7000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-bamboo-tipo-cilindro-estrello-d30h120cm-e27-cod-2994/',
+    nota: 'LÁMPARA DECORATIVA DE PIE BAMBOO TIPO CILINDRO ESTRELLO D30*H120cm E27 COD.2994 · artículo 2994. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 9000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-de-bronce-y-blanco-35h140cm-e271pc-dia-35cm-cod-4848/',
+    nota: 'LÁMPARA DECORATIVA DE PIE DE BRONCE Y BLANCO 35*H140cm E27*1pc Dia.35cm COD.4848 · artículo 4848. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 10500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-de-bronce-y-negro-48h162cm-e271pc-dia-48cm-cod-4850/',
+    nota: 'LÁMPARA DECORATIVA DE PIE DE BRONCE Y NEGRO 48*H162cm «E27*1pc Dia.48cm COD.4850 · artículo 4850. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_MUNDOLED, 11800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-pie-globo-ambar-3000k-cod-3777/',
+    nota: 'LÁMPARA DECORATIVA DE PIE GLOBO ÁMBAR 3000K COD.3777 · artículo 3777. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_LUMINATTI, 559.82, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/floor-lamp-black-body-and-gold-shade-h59in-e26x3-120v-60hz-1-2',
+    moneda: 'USD',
+    peso: 2,
+    nota: 'Floor Lamp Black Body and Gold Shade H59in E26x3 120v/60Hz 1/2 · artículo 9010-GD-E26X3-BODY · marca Marco Guridi. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_LUMINATTI, 618.75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/floor-lamp-black-iron-with-brass-accents-and-white-stone-base-h68in-e26x1120v-60hz-1-2',
+    moneda: 'USD',
+    nota: 'Floor Lamp Black Iron with  Brass Accents and White Stone Base H68in E26X1120v/60Hz 1/2 · artículo 9016-WH-E26-BODY · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_LUMINATTI, 515.63, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/floor-lamp-gold-iron-with-white-stone-base-h65in-led-5w-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Floor Lamp Gold Iron with White Stone Base H65in LED 5W 3000K 120v/60Hz · artículo 9061-WH-5W-WW · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 14000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-3-aros-negra-di-378-bk-z-d800-100-120-3000k-169w-cod-2269/',
+    peso: 4,
+    nota: 'LÁMPARA 3 AROS NEGRA DI-378-BK-Z D800* 100* 120* 3000K 169W COD.2269 · artículo 2269. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-barra-hexagonos-metal-negra-cod3953/',
+    peso: 17,
+    nota: 'Lámpara barra hexagonos metal negra COD3953 · artículo 3953. El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-col-tipo-campana-led-negra-25w-3000k-600h1500-cod-4956/',
+    peso: 28,
+    nota: 'LÁMPARA COL TIPO CAMPANA LED NEGRA 25W 3000K 600*H1500 COD.4956 · artículo 4956. El comercio lista 28 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 28 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 12500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colg-cilintro-en-espiral-color-madera-d40h60-1-2my-cod-2834/',
+    peso: 4,
+    nota: 'LÁMPARA COLG CILINTRO EN ESPIRAL COLOR MADERA D40*H60 1.2MY COD.2834 · artículo 2834. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colg-cir-ovalada-de-rattan-d55h28cm-e27-cod-4954/',
+    peso: 20,
+    nota: 'LÁMPARA COLG CIR OVALADA DE RATTAN D55*H28CM E27 COD.4954 · artículo 4954. El comercio lista 20 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 20 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colg-circular-cilindrica-en-blanco-y-borde-negro-dia-40h120cm-e27-cod-4929/',
+    peso: 25,
+    nota: 'LÁMPARA COLG CIRCULAR CILÍNDRICA EN BLANCO Y BORDE NEGRO DIA.40*H120CM E27 COD.4929 · artículo 4929. El comercio lista 25 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 25 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colg-tipo-campana-metal-azul-y-gold-d300-e27-cod-3881/',
+    peso: 48,
+    nota: 'LÁMPARA COLG TIPO CAMPANA METAL AZUL Y GOLD D300 E27 COD.3881 · artículo 39507. El comercio lista 48 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 48 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 12000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colg-tipo-campana-tres-aro-bronce-led-520430h1500-cod-4959/',
+    peso: 16,
+    nota: 'LÁMPARA COLG TIPO CAMPANA TRES ARO BRONCE LED 520*430*H1500 COD.4959 · artículo 4959. El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgan-barra-led-con-malla-base-negra-led-integrado-d0629-24-d5003000-38w-3cct-cod-3097/',
+    peso: 16,
+    nota: 'LÁMPARA COLGAN BARRA LED CON MALLA BASE NEGRA LED INTEGRADO D0629-24 D500*3000 38W 3CCT COD.3097 · artículo 3097. El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 19000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgan-doble-altura-color-bronce-led-integrado-d0628-13-d6002000-21w-3cct-ip20-cod-3092/',
+    peso: 3,
+    nota: 'LÁMPARA COLGAN DOBLE ALTURA COLOR BRONCE LED INTEGRADO D0628-13 D600*2000 21W 3CCT IP20 COD.3093 · artículo 3093. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 10500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgan-en-sogas-base-negra-natural-d800-e278-cod-2866/',
+    peso: 7,
+    nota: 'LAMPARA COLGAN EN SOGAS BASE NEGRA& NATURAL D800 E27*8 COD.2866 · artículo RD$ 8,898.30. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 9500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-barra-negra-4-led-colgantes-l80cm-1-2mt-ac110-3000k-cod-2906/',
+    peso: 14,
+    nota: 'LÁMPARA COLGANTE BARRA NEGRA 4 LED COLGANTES L80CM 1.2MT AC110 3000K COD.2906 · artículo 2906. El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-barra-vertical-6-tulipanes-alternos-ambar-d50120cm-e276-cod-1029/',
+    peso: 3,
+    nota: 'LÁMPARA COLGANTE BARRA VERTICAL 6 TULIPANES ALTERNOS ÁMBAR D50*120cm E27*6 COD.1029 · artículo 1029. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 21240, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-de-madera-tipo-estrella-de-mar-pequena-e27-cod-4530/',
+    nota: 'LÁMPARA COLGANTE DE MADERA TIPO ESTRELLA DE MAR PEQUEÑA E27 COD.4530 · artículo 43439. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-dec-redonda-de-bronce-dia-30h120cm-9w-110v-3000k-cod-4833/',
+    peso: 47,
+    nota: 'LÁMPARA COLGANTE DEC REDONDA DE BRONCE Dia.30*H120cm 9W 110V 3000K COD.4833 · artículo 4833. El comercio lista 47 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 47 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-negra-1-globo-gris-humo-led-integrado-30h120cm-ac110v-3000k-cod-2923/',
+    nota: 'LÁMPARA COLGANTE NEGRA 1 GLOBO GRIS HUMO LED INTEGRADO 30*H120cm AC110V 3000K COD.2923 · artículo 42665. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 2100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgante-tipo-esfera-y-aro-color-bronce-led-integrado-d0618-160-d160180-20w-3cct-cod-3078/',
+    peso: 5,
+    nota: 'LÁMPARA COLGANTE TIPO ESFERA Y ARO COLOR BRONCE LED INTEGRADO D0618-160 D160*180 20W 3CCT COD.3078 · artículo 3078. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-3-copas-marmol-blancomarron-y-azul-marino-dia-25h120cm-g93-cod-2925/',
+    nota: 'LÁMPARA COLGAR 3 COPAS MARMOL BLANCO,MARRON Y AZUL MARINO Dia.25*H120cm G9*3 COD.2925 · artículo 2925. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 9000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-3-formas-cir-frost-campana-bronce-y-cilindro-azul-86130cm-e273-cod-2934/',
+    peso: 13,
+    nota: 'LÁMPARA COLGAR 3 FORMAS CIR FROST CAMPANA BRONCE Y CILINDRO AZUL 86*130cm E27*3 COD.2934 · artículo 2934. El comercio lista 13 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 13 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 13000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-aro-con-cristales-led-integrado-33w-4000k-4201000mm-cod-3259-2/',
+    peso: 4,
+    nota: 'LÁMPARA COLGAR ARO CON CRISTALES LED INTEGRADO 33W 4000K 420*1000MM COD.3259 · artículo 40095. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 15000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-barra-bronce-globos-blancos-transl-l100h120cm-g98pcs-cod-2916/',
+    peso: 12,
+    nota: 'LAMPARA COLGAR BARRA BRONCE GLOBOS BLANCOS TRANSL L100*H120cm G9*8pcs COD.2916 · artículo 38742. El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 16500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-base-circ-negra-6-globos-humo-d40h60cm-di-873-bk-3000k-cod-2221/',
+    nota: 'LÁMPARA COLGAR BASE CIRC NEGRA 6 GLOBOS HUMO D40*H60CM DI-873-BK-3000K COD.2221 · artículo 2221. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 10000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-base-dorada-13-globos-rosados-y-transparente-6-sockets-g9-d63h100cm-cod-4736/',
+    peso: 5,
+    nota: 'LÁMPARA COLGAR BASE DORADA 13 GLOBOS ROSADOS Y TRANSPARENTE 6 SOCKETS G9 D63*H100cm COD.4736 · artículo 4736. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-campana-negra-circular-di-509-bk-z-d300mm-cod-2398/',
+    peso: 20,
+    nota: 'LÁMPARA COLGAR CAMPANA NEGRA CIRCULAR DI-509-BK-Z D300MM COD.2398 · artículo 2398. El comercio lista 20 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 20 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 18000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-circ-aro-dorado-6-brazos-cristal-d60h25cm-cable1-2m-g9-cod-3708/',
+    peso: 5,
+    nota: 'LÁMPARA COLGAR CIRC ARO DORADO 6 BRAZOS CRISTAL D*60*H25CM CABLE1.2M G9 COD.3708 · artículo 3708. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 2500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-cuerda-natural-di-885-nat-z-e27-d310h220-cod-2249/',
+    peso: 14,
+    nota: 'LÁMPARA COLGAR CUERDA NATURAL DI-885- NAT-Z E27 D310*H220 COD.2249 · artículo 2249. El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-dorado-y-ambar-1-e27-di-731-st-z-ip20-d20120cm-cod-3476/',
+    peso: 44,
+    nota: 'LÁMPARA COLGAR DORADO Y ÁMBAR 1 E27 DI-731-ST-Z IP20 D20*120CM COD.3476 · artículo 43138. El comercio lista 44 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 44 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 16520, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-eliptica-dorada-y-cristal-cod-3704/',
+    nota: 'LÁMPARA COLGAR ELIPTICA DORADA Y CRISTAL COD.3704 · artículo 3704. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 25000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-horizontal-flores-ambar-y-centro-bronce-3000k-1004033cm-cod-2918/',
+    peso: 8,
+    nota: 'LÁMPARA COLGAR HORIZONTAL FLORES ÁMBAR Y CENTRO BRONCE 3000K 100*40*33CM COD.2918 · artículo 2918. El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-lineal-dorada-4-cilindros-cortos-led-integrado-3000k-80815cm-cod-5063/',
+    peso: 14,
+    nota: 'LÁMPARA COLGAR LINEAL DORADA 4 CILINDROS CORTOS LED INTEGRADO 3000K 80*8*15CM COD.5063 · artículo 5063. El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 17818, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-lineal-dorada-6-globos-fros-g9-l100w20h120-cod-5077/',
+    nota: 'LÁMPARA COLGAR LINEAL DORADA 6 GLOBOS FROS G9 L100*W20*H120 COD.5077 · artículo 5077. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-colgar-tela-fabric-y-varillas-bronce-d40h40cm-e27-cod-2914/',
+    peso: 22,
+    nota: 'LÁMPARA COLGAR TELA FABRIC Y VARILLAS BRONCE D*40*H40cm E27 COD.2914 · artículo 2914. El comercio lista 22 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 22 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-techo-3-barras-doradas-led-27w-luz-intermedia-cod-3842/',
+    peso: 4,
+    nota: 'LAMPARA DE TECHO 3 BARRAS DORADAS LED 27W LUZ INTERMEDIA COD 3842 · artículo 3898-1-1. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-techo-5-globos-ambar-con-cables-negros-e14-cod-3951/',
+    nota: 'Lámpara de techo 5 GLOBOS AMBAR CON CABLES NEGROS E14 COD. 3951 · artículo 3951. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-techo-base-negra-circ-en-madera-d320h235-e273-cod-2870/',
+    peso: 39,
+    nota: 'LÁMPARA DE TECHO BASE NEGRA & CIRC EN MADERA D320*H235 E27*3 COD.2870 · artículo 2870. El comercio lista 39 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 39 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 2000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-techo-circ-con-2-lineas-negra-y-blanco-led-integrado-x0529-260bkwh-26065-3cct-cod-1163/',
+    peso: 10,
+    nota: 'LÁMPARA DE TECHO CIRC CON 2 LINEAS NEGRA Y BLANCO LED INTEGRADO X0529-260BK+WH 260*65 3CCT COD.1163 · artículo 1163. El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 30000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-techo-decorativa-led-doble-altura-2-4-m-cod-3864/',
+    peso: 14,
+    nota: 'Lámpara de techo decorativa LED DOBLE ALTURA 2.4 M cod. 3864 · artículo 3864. El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-3-candelabros-cod-3646/',
+    nota: 'LÁMPARA DEC 3 CANDELABROS COD. 3646 · artículo 3646. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 14150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-6-tubos-cristal-clear-g9-cod-4351/',
+    nota: 'LÁMPARA DEC 6 TUBOS CRISTAL CLEAR G9 COD. 4351 · artículo 4351. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 20000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-60-cristales-blacksmoke-sockets-cod-4360/',
+    peso: 8,
+    nota: 'LÁMPARA DEC 60 CRISTALES BLACKSMOKE SOCKETS COD. 4360 · artículo 4360. El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5930, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-barra-negra-led-integrada-cod-4059/',
+    nota: 'LÁMPARA DEC BARRA NEGRA LED INTEGRADA COD 4059 · artículo 4059. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 16600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-base-dorada-9-globos-milk-semi-cubiertos-de-bronce-e27-cod-4150/',
+    nota: 'LÁMPARA DEC BASE DORADA 9 GLOBOS MILK SEMI CUBIERTOS DE BRONCE E27 COD. 4150 · artículo 4150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-cilindro-bronce-base-bronce-led-integrado-7w-4000k-cod-3128/',
+    nota: 'LÁMPARA DEC CILINDRO BRONCE BASE BRONCE LED INTEGRADO 7W 4000K COD.3128 · artículo 3128. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-cristal-globo-tipo-a-cristal-coffe-2524cm-led-integrado-cod-4210/',
+    nota: 'LÁMPARA DEC CRISTAL GLOBO TIPO A CRISTAL COFFE 25*24CM LED INTEGRADO COD. 4210 · artículo 4210. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 13305, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-de-madera-tipo-espiral-ancho-cod-4292/',
+    nota: 'LÁMPARA DEC DE MADERA TIPO ESPIRAL ANCHO COD.4292 · artículo 4292. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-de-rattan-base-rectn-3-sockets-cod-3343/',
+    nota: 'LÁMPARA DEC DE RATTAN BASE RECTN 3 SOCKETS COD.3343 · artículo 3343. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3645, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-de-rattan-esferica-e27-cod-4295/',
+    nota: 'LÁMPARA DEC DE RATTAN ESFERICA E27 COD. 4295 · artículo 4295. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 27700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-doble-altura-12-copas-doradas-led-integrado-cod-3490/',
+    peso: 2,
+    nota: 'LAMPARA DEC DOBLE ALTURA 12 COPAS DORADAS LED INTEGRADO COD. 3490 · artículo 3489-1. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 36900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-doble-altura-16-aros-transparentes-verticales-cod-3487-2/',
+    nota: 'LÁMPARA DEC DOBLE ALTURA 16 AROS TRANSPARENTES VERTICALES COD. 3487 · artículo 3488-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-dos-aros-elipticos-led-integrado-3000k-cod-4346/',
+    nota: 'LAMPARA DEC DOS AROS ELIPTICOS LED INTEGRADO 3000K Cod. 4346 · artículo 4346. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4720, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-planetas-led-integrado-cod-4404/',
+    nota: 'LÁMPARA DEC PLANETAS LED INTEGRADO COD. 4404 · artículo 4404. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-soga-1-socket-e27-corta-1-m-ip20-cod-3892/',
+    nota: 'LÁMPARA DEC SOGA 1 SOCKET E27 CORTA 1 M IP20 Cod. 3892 · artículo 3892. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-tubo-fino-dorado-con-plato-wooden-color-y-globo-frost-peq-e27-cod-4397/',
+    nota: 'LÁMPARA DEC TUBO FINO DORADO CON PLATO WOODEN COLOR Y GLOBO FROST PEQ E27 COD.4397 · artículo 4397. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 24000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-ww-5-aro-con-borde-negro-luz-fria-6500k-cod-3813/',
+    peso: 3,
+    nota: 'LÁMPARA DEC WW 5 ARO CON BORDE NEGRO luz fria 6500K Cod. 3813 · artículo 3813. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1841, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decoeativa-vintage-bronze-y-negro-para-bulbo-t28-no-incluye-bombillo-cod-3671/',
+    nota: 'LAMPARA DECOEATIVA VINTAGE BRONZE Y NEGRO PARA BULBO T28 (No incluye bombillo) COD. 3671 · artículo 31017. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decoprativa-colgar-base-circ-bronce-2-globos-bronce-de-metal-110v-ww-d-15h120cm-cod-4695/',
+    nota: 'LÁMPARA DECOPRATIVA COLGAR BASE CIRC BRONCE 2 GLOBOS BRONCE DE METAL 110V WW D.15*H120cm COD.4695 · artículo 4695. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 22000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-12-brazos-curveados-negros-e27-cod-4625/',
+    nota: 'LÁMPARA DECORATIVA 12 BRAZOS CURVEADOS NEGROS E27 COD.4625 · artículo 4625. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 35000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-18-platicos-negro-cod-4593/',
+    peso: 7,
+    nota: 'LÁMPARA DECORATIVA 18 PLATICOS NEGRO COD.4593 · artículo 4593. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-3-brazos-dobles-asimetricos-6-globos-ambar-6cod-3635/',
+    nota: 'LÁMPARA DECORATIVA 3 BRAZOS DOBLES ASIMETRICOS 6 GLOBOS ÁMBAR COD.3635 · artículo 3635. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-3-brazos-y-3-globos-frost-cod-4558/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA 3 BRAZOS Y 3 GLOBOS FROST COD.4558 · artículo 4558. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-3-globos-champagne-gold-cod-4471/',
+    nota: 'LÁMPARA DECORATIVA 3 GLOBOS CHAMPAGNE GOLD COD. 4471 · artículo 4471. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-3-sombreros-blancos-dia-60h55cm-110v-3000k-cod-3756/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA 3 SOMBREROS BLANCOS Dia.60*H55cm 110V 3000K COD.3756 · artículo 3275-1-1-2. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 9800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-4-aros-en-filas-dif-tamano-3000k-cod-4495/',
+    nota: 'LÁMPARA DECORATIVA 4 AROS EN FILAS DIF TAMAÑO 3000K COD.4495 · artículo 4495. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 33500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-altura-13-globos-cod-4105/',
+    nota: 'LÁMPARA DECORATIVA ALTURA 13 GLOBOS COD.4105 · artículo 4105. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 11100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-anillo-redondo-de-cristal-led-intregrado-cod-4073/',
+    nota: 'LÁMPARA DECORATIVA ANILLO REDONDO DE CRISTAL LED INTREGRADO COD.4073 · artículo 4073. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 10200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-aro-de-bronce-d60cm-cod-4551/',
+    nota: 'LÁMPARA DECORATIVA ARO DE BRONCE D60CM COD.4551 · artículo 4551. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-bamboo-falda-ancha-60x90cm-cod-4603/',
+    nota: 'LÁMPARA DECORATIVA BAMBOO FALDA ANCHA 60X90CM COD.4603 · artículo 4603. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-bambooo-60cm-cod-3400/',
+    nota: 'LÁMPARA DECORATIVA BAMBOOO 60CM COD. 3400 · artículo 4241-1-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 13450, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-candelabro-6-cristales-ambar-cod-4368/',
+    nota: 'LÁMPARA DECORATIVA CANDELABRO 6 CRISTALES ÁMBAR COD.4368 · artículo 4368. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-cilindro-bronce-base-bronce-led-integrado-7w-4000k-cod-3127/',
+    nota: 'LÁMPARA DECORATIVA CILINDRO BRONCE BASE BRONCE LED INTEGRADO 7W 3000K COD.3127 · artículo 3127. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 11000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-colg-cir-con-borde-negro-d50h18-1-2cm-cable-e274-ip20-cod-4939/',
+    peso: 4,
+    nota: 'LÁMPARA DECORATIVA COLG CIR CON BORDE NEGRO D50*H18 1.2CM CABLE E27*4 IP20 COD.4939 · artículo 4939. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 9900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-colgar-aro-bronce-6-globos-ambar-e27-dia-72h20cm-cod-4771/',
+    nota: 'LÁMPARA DECORATIVA COLGAR ARO BRONCE 6 GLOBOS AMBAR E27 Dia.72*H20cm COD.4771 · artículo 4771. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 50000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-colgar-circular-en-lajas-de-alabastro-espanol-y-cobre-dorada-80cm-led-integrado-cod-1177/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA COLGAR CIRCULAR EN LAJAS DE ALABASTRO ESPANOL Y COBRE DORADA 80CM LED INTEGRADO COD.1177 · artículo 1177. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-colgar-cristal-ambar-tope-madera-c-110v-ww-3213cm-cod-4709-2/',
+    peso: 3,
+    nota: 'LÁMPARA DECORATIVA COLGAR CRISTAL ÁMBAR TOPE MADERA C 110V WW 32*13cm COD. 4709 · artículo 4709. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 2800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-colgar-tubular-negra-dia-6h40cm-1-2mt-ac110v-3000k-cod-4915/',
+    peso: 3,
+    nota: 'LÁMPARA DECORATIVA COLGAR TUBULAR NEGRA Dia.6*H40cm 1.2MT AC110V 3000K COD.4915 · artículo 4915. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-aro-de-hierro-6-globos-cristal-ambar-cod-3281/',
+    nota: 'LÁMPARA DECORATIVA DE ARO DE HIERRO 6 GLOBOS CRISTAL ÁMBAR COD 3281 · artículo 3281. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 9050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-bamboo-cilindro-largo-y-ancho-tipo-malla-grande-cod-4271/',
+    nota: 'LÁMPARA DECORATIVA DE BAMBOO CILINDRO LARGO Y ANCHO TIPO MALLA GRANDE COD.4271 · artículo 4271. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-bamboo-cilindro-largo-y-ancho-tipo-malla-mediana-cod-4272/',
+    nota: 'LÁMPARA DECORATIVA DE BAMBOO CILINDRO LARGO Y ANCHO TIPO MALLA MEDIANA COD.4272 · artículo 4272. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-colgar-bronce-3-globos-media-luna-dia-25h120cm-110v-3000k-cod-4775/',
+    nota: 'LÁMPARA DECORATIVA DE COLGAR BRONCE 3 GLOBOS MEDIA LUNA Dia.25*H120cm 110V 3000K COD.4775 · artículo 4775. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-cuerdas-color-natural-3-capas-cadena-negra-d500h300-cod-4654/',
+    nota: 'LÁMPARA DECORATIVA DE CUERDAS COLOR NATURAL 3 CAPAS CADENA NEGRA D500*H300 COD.4654 · artículo 4654. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-rattan-circular-3-capas-d500h300-e27-cod-4651/',
+    peso: 4,
+    nota: 'LÁMPARA DECORATIVA DE RATTAN CIRCULAR 3 CAPAS D500*H300 E27 COD.4651 · artículo 4651. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 11500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-techo-3-aros-led-integrado-cod-3852/',
+    nota: 'LÁMPARA DECORATIVA DE TECHO 3 AROS LED INTEGRADO COD.3852 · artículo 3852. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-techo-negra-23-cm-cod-3298/',
+    nota: 'LÁMPARA DECORATIVA DE TECHO CIRC NEGRA LED INTEGRADO 911-220 230×50 18W 3000K COD.3298 · artículo 3298. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-techo-circular-hierro-y-vidrio-plafon-negro-e27-cod-3185/',
+    nota: 'LÁMPARA DECORATIVA DE TECHO CIRCULAR HIERRO Y VIDRIO PLAFON NEGRO E27 COD.3185 · artículo 3185. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 11800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-doble-altura-6-focos-negro-gu10-30h200cm-cod-3415/',
+    peso: 2,
+    nota: 'LÁMPARA DECORATIVA DOBLE ALTURA 6 FOCOS NEGRO GU10 30*H200cm COD.3415 · artículo 3258-1. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 25200, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-doble-altura-tubitos-finos-led-integrado-cod-4081/',
+    nota: 'LÁMPARA DECORATIVA DOBLE ALTURA TUBITOS FINOS LED INTEGRADO COD.4081 · artículo 4081. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 125000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-doble-altura-tubos-de-alabastro-espanol-y-cobre-dorada-21-led-ip20-240cm-cod-1179/',
+    nota: 'LÁMPARA DECORATIVA DOBLE ALTURA TUBOS DE ALABASTRO ESPANOL Y COBRE DORADA 21 LED IP20 240CM COD.1179 · artículo 1179. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 10900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-dorada-5-cristales-ambar-cuadrados-cod-4366/',
+    nota: 'LÁMPARA DECORATIVA DORADA 5 CRISTALES ÁMBAR CUADRADOS COD.4366 · artículo 4366. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-dos-sombreros-blancos-y-bronce-110v-3000k-dia-60h70cm-cod-3459/',
+    nota: 'LÁMPARA DECORATIVA DOS SOMBREROS BLANCOS Y BRONCE 110V 3000K Dia.60*H70cm COD.3459 · artículo 3275-1-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-de-techo-hexagonal-negra-3-tono-de-luz-30w-cod-3291/',
+    peso: 3,
+    nota: 'LÁMPARA DECORATIVA HEXÁGONAL NEGRA 3 TONO DE LUZ 30W COD.3291 · artículo 3291. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-plato-ancho-blanco-e27-d36h25cm-cod-4803/',
+    nota: 'LÁMPARA DECORATIVA PLATO ANCHO BLANCO E27 D36*H25CM COD.4803 · artículo 4803. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 6800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-rattan-circ-campana-ancha-con-lineas-negra-4550cm-e27-cod-4343/',
+    nota: 'LÁMPARA DECORATIVA RATTAN CIRC CAMPANA ANCHA CON LINEAS NEGRA 45*50cm E27 COD.4343 · artículo 42014. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-rattan-doble-capa-cod-4637/',
+    nota: 'LÁMPARA DECORATIVA RATTAN DOBLE CAPA COD.4637 · artículo 4637. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 3560, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-rattan-tipo-sombrero-fino-cod-4639/',
+    nota: 'LÁMPARA DECORATIVA RATTAN TIPO SOMBRERO FINO COD.4639 · artículo 4639. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 7650, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-techo-6-cubos-3d-negros-metal-acrilico-110v-ww-52-532-5h24cm-cod-4672/',
+    nota: 'LÁMPARA DECORATIVA TECHO 6 CUBOS 3D NEGROS METAL + ACRILICO 110V WW 52.5*32.5*H24cm COD.4672 · artículo 4672. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8850, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativa-techo-circ-centro-negro-aro-dorado-3000k-d42cm-110v-cod-3728/',
+    nota: 'LÁMPARA DECORATIVA TECHO CIRC CENTRO NEGRO ARO DORADO 3000K D*42cm 110V COD.3728 · artículo 3728. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 26000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-decorativacolgar-bronce-15-paleta-transparente-circular-110v-ww-dia-50h300cm-cod-4706/',
+    nota: 'LÁMPARA DECORATIVACOLGAR BRONCE 15 PALETA TRANSPARENTE CIRCULAR 110V WW Dia.50*H300cm COD.4706 · artículo 4706. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 5600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-6-cubos-de-cristal-ambar-y-negro-cod-4329/',
+    nota: 'LÁMPARA DECORATIVO 6 CUBOS DE CRISTAL AMBAR Y NEGRO COD.4329 · artículo 4329. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 8400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-dec-base-dorada-6-globos-milk-g9-cod-4341/',
+    nota: 'LÁMPARA DECORTAIVA BASE DORADA 6 GLOBOS MILK G9 COD.4341 · artículo 4341. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 21500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-doble-altura-6-rectangulos-dorados-201w-110v-3000k-dia-45h300cm-cod-4159/',
+    nota: 'LÁMPARA DOBLE ALTURA 6 RECTANGULOS DORADOS 201W 110V 3000K Dia.45*H300cm COD.4159 · artículo 42810. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 17000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-doble-altura-aros-alargados-bronce-led-integrados-35h300cm-ac110v-3000k-cod-4324/',
+    nota: 'LÁMPARA DOBLE ALTURA AROS ALARGADOS BRONCE LED INTEGRADOS 35*H300CM AC110V 3000K COD.4324 · artículo 42688. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-infantil-techo-balon-de-baloncesto-negro-dia-18h22cm-e271pc-cod-2949/',
+    nota: 'LÁMPARA INFANTIL TECHO BALON DE BALONCESTO DIA.18*H22CM E27*1PC COD.2949 · artículo 2949. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 1800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-techo-circ-borde-negro-y-madera-oscura-led-integrado-12w-3cct-27cm-cod-5064/',
+    nota: 'LÁMPARA TECHO CIRC BORDE NEGRO Y MADERA OSCURA LED INTEGRADO 12W 3CCT 27CM COD.5064 · artículo 5064. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 2300, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-techo-plafon-blanco-metal-y-pvc-d400mm-12w-cct-cod-2397/',
+    peso: 2,
+    nota: 'LÁMPARA TECHO PLAFON BLANCO METAL Y PVC D400MM 12W CCT COD.2397 · artículo 2397. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_MUNDOLED, 4800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lamparas-decorativas-cristal-blacksmoke-cod-3188/',
+    nota: 'LÁMPARAS DECORATIVAS CRISTAL BLACKSMOKE COD.3188 · artículo 3184-1. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 543.15, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-pendant-with-12-frost-globes-l45in-g9x12-120v-60hz',
+    moneda: 'USD',
+    peso: 2,
+    nota: 'Black Pendant with 12 Frost Globes L45in G9x12 120v/60Hz · artículo MPDMG007708L1M1BKG9X12 · marca Vigo Lighting Group. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 275.59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-pendant-with-4-fume-globes-4xe27-g45-120v-60hz',
+    moneda: 'USD',
+    peso: 2,
+    nota: 'Black Pendant with 4 Fume Globes 4xE27-G45 120v/60Hz · artículo MPDMG009066L1M3BKE26X4 · marca Vigo Lighting Group. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 418.68, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/black-pendant-with-black-circles-l47in-40w-led-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Black Pendant with Black Circles L47in 40W LED 3000K 120v/60Hz · artículo MPDMG007704L1M2BKLEDWW40W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 821.35, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/brushed-silver-pendant-lamp-d30-7-h59-06-60w-triac-dimmable-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Brushed Silver Pendant Lamp D30.7" H59.06" 60W Triac Dimmable 3000K 120v/60Hz · artículo HO-P5367-60-SV · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 440.86, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/clear-pendant-lamp-7w-d11-81in-led-3000k-80lm-w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Clear Pendant Lamp 7w D11.81in LED 3000K 80LM/W 120v/60Hz · artículo DL-P8503-S-WH · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 192.36, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-pendant-of-1-globe-frost-g9x1-o11in-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Pendant of 1 Globe Frost G9x1 Ø11in 120v/60Hz · artículo MPDMG004167D280FRG9X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 166.25, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-pendant-of-1-globe-frost-small-g9x1-o8in-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Pendant of 1 Globe Frost Small G9x1 Ø8in 120v/60Hz · artículo MPDMG004167D200FRG9X1 · marca Luminatti Online Store. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 256.56, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/gold-pendant-round-base-with-beveled-glass-e12x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Gold Pendant Round Base with Beveled Glass E12x1 120v/60hz · artículo MPDMG008818D100COE12X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 2411.84, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-black-cube-with-gold-details-and-white-crystal-globes-g9x4-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Black Cube With Gold Details And White Crystal Globes G9x4 120V/60HZ · artículo 26610B · marca GRUPO ANDAMORRO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 1591.08, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-golden-with-black-lamp-of-25-frosted-globes-l120cm-g9x25-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Golden with Black Lamp of 25 Frosted Globes L120cm G9x25 120v/60Hz · artículo MPDMG008008L1M2GDG9X25 · marca GRUPO ANDAMORRO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 3160, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-5-rings-chrome-led-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp 5 Rings Chrome LED 3000K 120v/60Hz · artículo MPDMG008003R5CHLEDWW96W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 875, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-6-arms-black-e27x6-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp 6 arms Black E27x6 120v/60Hz · artículo 8505P-6-BK · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 316.88, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-amber-e27x1-120v-60hz',
+    moneda: 'USD',
+    peso: 2,
+    nota: 'Pendant Lamp Amber E27x1 120v/60Hz · artículo MPDMG003195D200AME26X1 · marca Vigo Lighting Group. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 358, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-bell-shape-cooper-e27x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Bell Shape Cooper E27x1 120V/60Hz · artículo 26297D-CP · marca 7. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 474.64, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-black-oval-42w-led-3000k-59-inch-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Black Oval 42W LED 3000k 59 inch 120v/60Hz · artículo MPDMG008030L1M5BKLEDWW42W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 1026.25, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-black-with-crystal-d26in-e12x12-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Black with Crystal D26in E12x12 120v/60Hz · artículo MPDMG007730D680BKE12X9 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-black-with-metal-structure-and-5-cooper-sockets-e26x5-l30-91-in-x-h7-87in-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Black with Metal Structure and 5 Cooper Sockets E26x5 L30.91 in x H7.87in 120v/60Hz · artículo 26863C · marca 7. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 218.13, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-crystal-amber-d7-87in-1xg9-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Crystal Amber D7.87in 1xG9 120v/60Hz · artículo MPDMG003272D200COFG9X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 160, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-crystal-amber-d7in-g4x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Crystal Amber D7in G4x1 120v/60Hz · artículo MPDMG003227D180AMG4X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 198, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-crystal-amber-e27x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Crystal Amber E27x1 120v/60Hz · artículo 26919A-AMB · marca 7. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 760, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-crystal-double-ring-d24in-led-3000k-32w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Crystal Double Ring D24in LED 3000k 32W 120v/60Hz · artículo MPDMG007707D600GDLEDWW32W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 1104.88, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-crystal-double-ring-d31in-d24in-led-3000k-32w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Crystal Double Ring D31in D24in LED 3000k 32W 120v/60Hz · artículo MPDMG007707R2GDLEDWW75W · marca Luminatti Online Store. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 154.12, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-dark-wood-d19-h17-inches-inches-small-e26x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Dark Wood D19 H17 inches inches Small E26x1 120v/60Hz · artículo WC-P1480-WO · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-gold-metal-tubes-g4x8-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Gold Metal Tubes G4x8 120v/60Hz · artículo MPDMG009125D900GDG4X8 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 410.5, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-golden-arms-with-frost-globes-d37in-8xg9-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Golden Arms with Frost Globes D37in 8xG9 120v/60hz · artículo MPDMG007723D950GDG9X8 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 330.71, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-horizontal-gold-with-globe-frost-led-12w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Horizontal Gold With Globe Frost LED 12W 120v/60Hz · artículo 10053P-A2-HOR · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 384.84, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-organic-glass-clear-d12in-g4x1-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Organic Glass  Clear D12in G4x1 120v/60hz · artículo MPDMG007705D300CLG4X1 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 701.07, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-sand-white-d23-6-h59-06-50w-triac-dimmable-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Sand White D23.6" H59.06" 50W Triac Dimmable 3000K 120v/60Hz · artículo HO-P5357-50-WH · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 657.71, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-sand-white-d31-5-h59-06-60w-triac-dimmable-3000k-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Sand White D31.5" H59.06" 60W Triac Dimmable 3000K 120v/60Hz · artículo HO-P5342-60-WH · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 375, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-lamp-vertical-frosted-globe-led-3000k-15w-120v-60hz',
+    moneda: 'USD',
+    nota: 'Pendant Lamp Vertical Frosted Globe LED 3000K 15W 120v/60Hz · artículo MPDMG0B4150D200BKLEDWW15W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_LUMINATTI, 130.13, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/pendant-with-black-base-and-white-globe-1xg9-120v-60hz',
+    moneda: 'USD',
+    peso: 2,
+    nota: 'Pendant With Black Base And White Globe 1xG9 120v/60hz · artículo MPDMG008110D300BKE26X1 · marca Vigo Lighting Group. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
   /* catalogos:cotizaciones:fin */
 
   /* RETENIDO — pendiente de verificar
@@ -31813,6 +34070,23 @@
     var v = valores.slice().sort(function (a, b) { return a - b; });
     var m = Math.floor(v.length / 2);
     return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+  }
+
+  /* La mediana del estante, no la de la lista de precios distintos: cada
+     cotización pesa lo que pesa en la vitrina del comercio. Con todos los
+     pesos en 1 da exactamente lo mismo que la de arriba. */
+  function medianaPonderada(pares) {
+    var v = pares.slice().sort(function (a, b) { return a.valor - b.valor; });
+    var total = 0, i;
+    for (i = 0; i < v.length; i++) total += v[i].peso;
+    if (!total) return mediana(v.map(function (x) { return x.valor; }));
+    var mitad = total / 2, suma = 0;
+    for (i = 0; i < v.length; i++) {
+      suma += v[i].peso;
+      if (suma > mitad) return v[i].valor;
+      if (suma === mitad && i + 1 < v.length) return (v[i].valor + v[i + 1].valor) / 2;
+    }
+    return v[v.length - 1].valor;
   }
 
   /* Une las cotizaciones con el catálogo y el directorio.
@@ -31856,6 +34130,8 @@
         fecha: r.fecha,
         fuente: r.fuente,
         nota: r.nota,
+        /* Cuántos artículos del comercio representa esta línea. */
+        peso: r.peso || 1,
         /* Solo los proveedores que venden al público entran en el cálculo. */
         cuenta: prov.publico && mismaUnidad
       });
@@ -31912,7 +34188,9 @@
       }
 
       var valores = validas.map(function (q) { return q.precioNormalizado; });
-      item.ref = Math.round(mediana(valores) * 100) / 100;
+      item.ref = Math.round(medianaPonderada(validas.map(function (q) {
+        return { valor: q.precioNormalizado, peso: q.peso || 1 };
+      })) * 100) / 100;
       item.min = Math.round(Math.min.apply(null, valores) * 100) / 100;
       item.max = Math.round(Math.max.apply(null, valores) * 100) / 100;
 

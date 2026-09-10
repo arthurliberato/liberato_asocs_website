@@ -146,6 +146,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://precios.ingsliberato.com/precio-iluminacion-decorativa.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://precios.ingsliberato.com/costo-licencias-permisos-construccion.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

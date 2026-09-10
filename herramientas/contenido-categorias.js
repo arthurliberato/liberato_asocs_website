@@ -698,6 +698,30 @@ module.exports = {
   ]
 },
 
+'MAT-33': {
+  titulo: 'Precio de la iluminación decorativa en RD',
+  desc: 'Precio de lámparas de techo, colgantes, apliques de pared, lámparas de mesa y de pie en República Dominicana.',
+  h1: 'Precio de la iluminación decorativa en República Dominicana',
+  intro: [
+    'Esta partida se presupuesta distinto a todas las demás del catálogo, y conviene decirlo antes que nada: la lámpara decorativa no se elige por especificación, se elige por cómo se ve. De las casi mil que publican las tiendas de iluminación del país, solo una de cada cien dice cuántas luces lleva y una de cada cinco declara su potencia. No es descuido del comercio: es que nadie compra una lámpara de comedor por sus vatios.',
+    'Por eso aquí no hay un precio por modelo sino un rango por tipo de montaje, que es exactamente lo que necesita quien cubica: una cifra por punto de luz para la partida de iluminación, con el piso y el techo del mercado a la vista. Lo notable es lo ordenado que resulta ese rango. Entre las lámparas de techo, que van de poco más de mil pesos a casi doscientos mil, no hay un solo salto grande entre una y la siguiente: es una escalera continua, del plafón sencillo a la pieza de diseño importada.'
+  ],
+  claves: [
+    ['Se presupuesta por punto, no por modelo', 'Lo práctico es fijar un monto por punto de luz decorativo y multiplicarlo por la cantidad de puntos del proyecto; el modelo se elige después, contra ese monto.'],
+    ['El montaje es lo que más mueve el precio', 'Una lámpara de pie parte de un piso muy por encima del de un aplique de pared, y esa diferencia se sostiene en todo el rango.'],
+    ['El punto de luz hay que dejarlo previsto en obra', 'La lámpara llega al final, pero su salida eléctrica, su refuerzo en el cielo raso y su control se resuelven cuando todavía hay acceso. Cambiar de colgante a empotrado después cuesta romper.'],
+    ['El extremo alto es importado y se cotiza en dólares', 'Las piezas de diseño llegan por pedido y su precio se mueve con la tasa; conviene cerrar la cotización y no arrastrarla meses.']
+  ],
+  faq: [
+    ['¿Por qué no aparece el precio de cada lámpara?',
+     'Porque no sería una referencia útil. Dos lámparas de techo del mismo tamaño y la misma potencia pueden costar diez veces distinto según su diseño y su material, y ninguna ficha declara qué las separa. Publicar un modelo suelto daría una precisión falsa; el rango del mercado, con su mediana, dice más.'],
+    ['¿Cuánto conviene presupuestar por punto de luz decorativo?',
+     'La mediana del mercado por tipo de montaje es el punto de partida que aparece en la tabla. Para una vivienda corriente suele trabajarse cerca de esa mediana en los ambientes principales y por debajo en los secundarios; en proyectos de interiorismo el monto sube hacia el extremo alto del rango.'],
+    ['¿La lámpara decorativa lleva su bombillo?',
+     'No siempre, y es una diferencia que se paga. Muchas piezas se venden solo con el cuerpo y el zócalo; el bombillo va aparte y tiene su propia partida en electricidad e iluminación.']
+  ]
+},
+
 'MAT-32': {
   titulo: 'Precio de la tubería y las conexiones de PVC en RD',
   desc: 'Precios de referencia de tubo PVC y CPVC, codos, tees, niples, reducciones, llaves de paso, sifones y rejillas en República Dominicana.',

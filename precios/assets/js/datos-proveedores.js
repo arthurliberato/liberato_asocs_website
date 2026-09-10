@@ -88,6 +88,18 @@
     zonas:['nacional'], web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
+  p('Mundo LED', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-10','MAT-33'],
+    zonas:[], web:'mundoled.com.do', precios:true,
+    nota:'Tienda dedicada solo a iluminación, con 1,549 productos y precio por artículo en RD$. Es la fuente que llena la iluminación decorativa, que el catálogo tenía vacía: 952 de sus artículos son lámparas de techo, de pared, de mesa y de pie. Declara potencia, temperatura de color y zócalo en el material de instalación; en la lámpara decorativa, como todo el rubro, no declara ejes. No dice si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
+  });
+  p('Luminatti', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-33'],
+    zonas:[], web:'luminatti.com', precios:true,
+    nota:'Iluminación de diseño importada, de Vigo Lighting Group. 140 piezas con precio en DÓLARES, de US$ 77 a US$ 3,160. Es el extremo alto de la partida y por eso vale: sin él, la referencia de una lámpara terminaba en lo que cuesta en el mercado local. El peso sale de la tasa del catálogo y cada cotización dice cuál y de cuándo. No declara ITBIS. Ubicación sin verificar.'
+  });
   p('Max Ferretería', {
     tipo:'cadena', canal:'detallista',
     /* Las categorías salen de la única colección que se ha extraído. El sitio

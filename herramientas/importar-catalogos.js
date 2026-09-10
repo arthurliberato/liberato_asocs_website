@@ -972,6 +972,8 @@ const IBERICA = require('./reglas-iberica.js');
 const TONOS = require('./reglas-tonos.js');
 const FERREMIX = require('./reglas-ferremix.js');
 const BELLON = require('./reglas-bellon.js');
+const MUNDOLED = require('./reglas-mundoled.js');
+const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
   {
@@ -1171,6 +1173,32 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/mundoled-2026-09-10.json'),
+    etiqueta: 'Mundo LED · iluminación',
+    proveedor: 'Mundo LED',
+    constante: 'PROV_MUNDOLED',
+    fecha: '2026-09-10',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => MUNDOLED.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = MUNDOLED.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/luminatti-2026-09-10.json'),
+    etiqueta: 'Luminatti · iluminación de diseño',
+    proveedor: 'Luminatti',
+    constante: 'PROV_LUMINATTI',
+    fecha: '2026-09-10',
+    /* Publica en dólares: el dato de origen es el dólar y el peso sale de la
+       tasa del catálogo. */
+    moneda: 'USD',
+    fuenteDe: a => 'Precio publicado en ' + (a.url || 'luminatti.com'),
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => LUMINATTI.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = LUMINATTI.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
@@ -1496,7 +1524,8 @@ function bloqueCotizaciones() {
       PIES_POR_UNIDAD + ' pies; aquí va el precio de la unidad completa');
     if (a._factorUnidad) notas.push(a._factorUnidad.nota + ' (RD$ ' + num(a.precio) + ' por pieza)');
     if (repite > 1) notas.push('El comercio lista ' + repite + ' artículos con esta misma ' +
-      'especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización');
+      'especificación y el mismo precio; aquí van como una sola cotización, y cuenta por ' +
+      repite + ' al calcular la referencia');
     const f = a._fuente;
     /* El ITBIS solo se asume cuando la fuente no lo declara. En una cotización
        formal viene en su propia columna, y entonces es un dato: se escribe
@@ -1504,6 +1533,11 @@ function bloqueCotizaciones() {
     const campos = ["    fecha: '" + f.fecha + "', fuente: '" +
                     esc(f.fuenteDe ? f.fuenteDe(a) : 'Precio publicado en ' + a.url) + "'"];
     if (f.itbis === false) campos.push('    itbis: false');
+    /* Hay comercios que publican en dólares. El peso lo pone la tasa del
+       catálogo, en un solo sitio, y la nota de la cotización dice cuál y de
+       cuándo: así el día que la tasa cambie no hay que tocar mil líneas. */
+    if (f.moneda && f.moneda !== 'RD$') campos.push("    moneda: '" + f.moneda + "'");
+    if (repite > 1) campos.push('    peso: ' + repite);
     /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
        lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
        y solo ese lo dice. */
