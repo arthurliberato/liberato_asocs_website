@@ -1496,6 +1496,13 @@ python3 herramientas/generar-excel.py     # arma el libro
 python3 herramientas/verificar-excel.py   # lo revisa antes de publicar
 ```
 
+`verificar-excel.py` acepta una ruta, así que se le puede dar una copia rota a propósito
+para comprobar que sus comprobaciones sirven de algo:
+
+```bash
+python3 herramientas/verificar-excel.py /tmp/copia-rota.xlsx
+```
+
 `generar-excel.py` no conoce el catálogo: se lo pide a `herramientas/datos-para-excel.js`,
 que es JavaScript porque es el mismo modelo que lee el sitio. El modelo no se duplica.
 
@@ -1510,8 +1517,32 @@ ficticios.
 | **Catálogo** | Los ítems con sus campos, más una columna por cada eje de medida que use al menos ocho ítems (litros de descarga, ancho en mm, resolución en MP…) y una columna de sobra con el resto. |
 | **Comparativo** | Un ítem por fila, una columna por comercio, y mínimo, mediana, máximo, dispersión y cuál es el más barato. |
 
-Las dos llevan en la fila 1 una **banda fina con la firma** y se congelan bajo los
-encabezados, que van en la fila 2. Antes había ocho hojas —Léame, Presupuesto, Resumen por
+Las dos llevan en la fila 1 una **banda fina de marfil con el logotipo** y se congelan
+bajo los encabezados, que van en la fila 2.
+
+En la banda va el **icono**, no el bloque entero: a la altura de una banda fina el nombre
+dibujado quedaría en tres píxeles de altura de mayúscula, ilegible. El icono se lee a 22 px
+y el nombre va como texto de verdad, que además se puede buscar y escalar. La banda es de
+marfil y no verde porque el icono lleva su propia plancha verde y sobre un fondo del mismo
+color se perdería. Se incrusta desde `assets/img/isotipo-180.png`, que escribe
+`herramientas/rasterizar-marca.js`: openpyxl solo mete mapas de bits, no SVG.
+
+### La tipografía del libro: Calibri, no Arial
+
+Arial es una grotesca de trazo cerrado; en una columna de mil filas cansa. **Calibri** es
+humanista —aperturas abiertas, esquinas redondeadas, menos contraste de trazo— y se lee más
+ligera en tablas largas.
+
+Está donde haya Excel: viene con Office desde 2007, en Windows y en Mac. Y donde no hay
+Office, LibreOffice trae **Carlito**, que es métricamente compatible y sustituye sin mover
+un ancho de columna. Ninguna otra opción más ligera que Arial —Trebuchet MS, Verdana— tiene
+un clon libre con las mismas métricas; Verdana además es más ancha y más pesada, justo lo
+contrario de lo que se buscaba.
+
+De paso arregla una incoherencia que llevaba tiempo: **el ancho de columna de openpyxl se
+mide en anchos de carácter de la fuente por defecto del libro**, que siempre fue Calibri 11,
+mientras las celdas iban en Arial 10. Los anchos y la fuente no coincidían. Ahora el estilo
+«Normal» se declara explícitamente. Antes había ocho hojas —Léame, Presupuesto, Resumen por
 etapa, Solicitud de cotización, Proveedores y Conversiones—: eran plantillas de trabajo, y
 quien cubica ya tiene las suyas. El libro se quedó con lo que solo este sitio puede dar.
 
