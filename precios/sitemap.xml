@@ -151,6 +151,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://precios.ingsliberato.com/precio-alquiler-equipos-construccion.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://precios.ingsliberato.com/precio-herramientas-construccion.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

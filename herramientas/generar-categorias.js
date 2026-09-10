@@ -352,6 +352,24 @@ ${elegidas.map((c) => `      <a class="card" href="${c.slug}.html">
 function generarCategoria(cat) {
   const c = CONTENIDO[cat.codigo];
   const items = CAT.items.filter((i) => i.cat === cat.codigo);
+  /* La zona no es la misma en todas las categorías: el alquiler de
+     plataformas lo cotiza un comercio de Bávaro, no del Gran Santo Domingo.
+     Se saca de quién cotizó de verdad, no de un valor fijo. */
+  const zonasDeLaCategoria = (items) => {
+    const codigos = new Set();
+    /* c.proveedor ya es el objeto del comercio, no su nombre. */
+    items.forEach((i) => (i.cotizaciones || []).forEach((c) => {
+      const p = c.proveedor;
+      if (p && p.zonas) p.zonas.forEach((z) => codigos.add(z));
+    }));
+    if (codigos.has('nacional') || codigos.size === 0) return 'Cobertura nacional';
+    const nombre = (c) => (PROV.zonas.filter((z) => z.codigo === c)[0] || {}).nombre || c;
+    const nombres = Array.from(codigos).map(nombre).sort();
+    return nombres.length > 2
+      ? nombres.slice(0, 2).join(', ') + ' y otras zonas'
+      : nombres.join(' y ');
+  };
+
   const conPrecio = items.filter((i) => i.ref !== null);
   const url = `${SITIO}/${cat.slug}.html`;
   const grupo = grupoPorCodigo[cat.grupo];
@@ -385,7 +403,7 @@ function generarCategoria(cat) {
          <strong>${items.length} ${items.length === 1 ? 'ítem' : 'ítems'}</strong> en esta categoría,
          con precios de referencia entre ${rd(minimo)} y ${rd(maximo)}
          según el ítem y su unidad (${unidades.slice(0, 4).map(esc).join(', ')}${unidades.length > 4 ? '…' : ''}).
-         Gran Santo Domingo, actualizado en septiembre de 2026.
+         ${zonasDeLaCategoria(items)}, actualizado en septiembre de 2026.
        </p>`
     : `<p class="section-sub" style="margin-top:1.2rem"><strong>${items.length} ítems</strong> en esta categoría, sin monto publicado porque se liquidan según tarifario oficial.</p>`;
 

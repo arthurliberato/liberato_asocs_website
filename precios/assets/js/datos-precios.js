@@ -65,17 +65,38 @@
 
   var registros = [];
 
+  /* Cuando el comercio cotiza en dólares, el USD es el dato de origen y el
+     peso se deriva de la tasa del catálogo. Se guardan los dos: el original
+     para poder auditarlo y el convertido para poder compararlo. */
+  function enPesos(precio, moneda) {
+    if (moneda !== 'USD') return precio;
+    /* El catálogo ya está cargado cuando esto corre: datos-catalogo.js va
+       antes en el HTML y antes en el require de las herramientas. */
+    var t = global.CATALOGO && global.CATALOGO.meta && global.CATALOGO.meta.tasaUSD;
+    if (!t || !t.valor) throw new Error('Hay precios en USD y el catálogo no trae tasa de cambio.');
+    return Math.round(precio * t.valor * 100) / 100;
+  }
+
   function c(item, proveedor, precio, o) {
     o = o || {};
+    var moneda = o.moneda || 'RD$';
+    var nota = o.nota || '';
+    if (moneda !== 'RD$') {
+      var t = global.CATALOGO.meta.tasaUSD;
+      nota += (nota ? '. ' : '') + 'Convertido a RD$ a ' + t.valor
+            + ' por dólar, tasa del ' + t.fecha;
+    }
     registros.push({
       item: item,
       proveedor: proveedor,
-      precio: precio,
+      precio: enPesos(precio, moneda),
+      moneda: moneda,
+      precioOrigen: moneda === 'RD$' ? null : precio,
       fecha: o.fecha || '',
       fuente: o.fuente || '',
       itbis: o.itbis !== false,
       unidad: o.unidad || '',
-      nota: o.nota || ''
+      nota: nota
     });
   }
 
@@ -165,6 +186,94 @@
   var PROV_IBERICA = 'La Ibérica';
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
+
+
+  /* =========================================================
+     IMPER SYSTEM · alquiler de plataformas elevadoras
+
+     Del listado «Renta de equipos, precios oferta 2025», que el
+     comercio confirmó vigente el 10/09/2026: la fecha que se registra
+     es la de la confirmación, que es cuando sabemos que el precio
+     sigue en pie, no la del PDF.
+
+     Cotiza en USD. El dólar es el dato de origen y el peso sale de la
+     tasa del catálogo; el ITBIS lo declara excluido.
+     ========================================================= */
+  c('EQU-02-001', 'Imper System (Impersystem Tecnologies)', 450, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'HINOWA 26.14 · tarifa de USD 450 por día. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-002', 'Imper System (Impersystem Tecnologies)', 1900, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'HINOWA 26.14 · tarifa de USD 1,900 por semana. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-003', 'Imper System (Impersystem Tecnologies)', 8000, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'HINOWA 26.14 · tarifa de USD 8,000 por mes. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-004', 'Imper System (Impersystem Tecnologies)', 350, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG X20 J PLUS · tarifa de USD 350 por día. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-005', 'Imper System (Impersystem Tecnologies)', 1600, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG X20 J PLUS · tarifa de USD 1,600 por semana. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-006', 'Imper System (Impersystem Tecnologies)', 6600, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG X20 J PLUS · tarifa de USD 6,600 por mes. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-007', 'Imper System (Impersystem Tecnologies)', 800, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 1250 AJP · tarifa de USD 800 por día. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-008', 'Imper System (Impersystem Tecnologies)', 3000, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 1250 AJP · tarifa de USD 3,000 por semana. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-009', 'Imper System (Impersystem Tecnologies)', 12925, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 1250 AJP · tarifa de USD 12,925 por mes. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-010', 'Imper System (Impersystem Tecnologies)', 260, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'GENIE S-60 · tarifa de USD 260 por día. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-011', 'Imper System (Impersystem Tecnologies)', 1100, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'GENIE S-60 · tarifa de USD 1,100 por semana. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-012', 'Imper System (Impersystem Tecnologies)', 5200, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'GENIE S-60 · tarifa de USD 5,200 por mes. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-013', 'Imper System (Impersystem Tecnologies)', 190, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 450 AJ SII · tarifa de USD 190 por día. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-014', 'Imper System (Impersystem Tecnologies)', 850, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 450 AJ SII · tarifa de USD 850 por semana. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('EQU-02-015', 'Imper System (Impersystem Tecnologies)', 3800, {
+    fecha: '2026-09-10', moneda: 'USD', itbis: false,
+    fuente: 'Listado de precios de alquiler de máquinas, oferta 2025, confirmado vigente por el comercio',
+    nota: 'JLG 450 AJ SII · tarifa de USD 3,800 por mes. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
 
 /* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.
      No editar a mano: se reescribe en cada importación. */

@@ -1392,6 +1392,53 @@ La pintura deja de tener un solo comercio: **6 ítems de MAT-12 ya se comparan**
 de acrílica tiene RD$ 375–430 de Ferremix contra RD$ 374–1,485 de Tonos y Colores. En
 eléctricos, MAT-10 sube a 204 ítems con 21 comparables.
 
+## Precios en dólares
+
+Algún comercio cotiza en USD. El alquiler de equipo de altura, por ejemplo, se cotiza en
+dólares en todo el país.
+
+**El dólar es el dato de origen y el peso se deriva.** La cotización guarda el monto original
+en USD —que es el precio real que dio el comercio— y la tabla muestra el peso convertido a la
+tasa que vive en `CATALOGO.meta.tasaUSD`, con su fecha y su fuente. Así no hay ninguna cifra
+inventada: el RD$ es derivado y va fechado, y cuando la tasa se mueva se cambia **un número**
+y se actualiza todo el catálogo de una vez.
+
+```js
+c('EQU-02-001', 'Imper System (Impersystem Tecnologies)', 450, {
+  fecha: '2026-09-10', moneda: 'USD', itbis: false,
+  fuente: '…', nota: 'HINOWA 26.14 · tarifa de USD 450 por día…'
+});
+```
+
+La nota de cada precio convertido termina con la tasa aplicada y su fecha, para que quien lo
+audite pueda rehacer la cuenta sin salir de la ficha. El orden de la cuenta importa: primero
+se normaliza el ITBIS al criterio del ítem y después se convierte, no al revés.
+
+> **Pendiente:** la tasa está en `59.0878` con fecha del 9 de septiembre de 2026, tomada de
+> una fuente secundaria porque el entorno de generación no alcanza el Banco Central ni la
+> DGA. **Confirmarla contra la fuente oficial antes de publicar.**
+
+### El alquiler: tres partidas por máquina
+
+Cada máquina son tres ítems —por día, por semana y por mes— porque quien cubica necesita la
+tarifa del periodo que va a usar, y las tres son del propio comercio. Las tarifas no son
+proporcionales: la semana sale por poco más de cuatro días y el mes por poco más de tres
+semanas.
+
+El alcance de cada ítem dice lo que la tarifa **no** cubre, que en alquiler de equipo es la
+mitad del costo real: combustible y transporte van aparte.
+
+Estos ítems van escritos a mano en la zona no generada de `datos-catalogo.js` y
+`datos-precios.js`, porque la fuente es un PDF de una página y no un catálogo en línea. El
+importador respeta esa zona: correrlo no los pisa.
+
+### La zona de cada categoría
+
+El resumen de cada página de categoría decía «Gran Santo Domingo» fijo. Ahora la zona sale de
+**quién cotizó de verdad**: el alquiler de plataformas lo cotiza un comercio de Bávaro, así
+que esa página dice «Este (Punta Cana, La Romana)» y la de cerámica, «Gran Santo Domingo y
+Santiago / Cibao».
+
 ## Precios que no se sostienen
 
 Un precio de referencia mal puesto es peor que un ítem que falta: quien cubica se lo lleva

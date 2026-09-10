@@ -109,6 +109,62 @@
     });
   }
 
+
+  /* =========== EQU-02 · Alquiler de equipos de altura ===========
+     Transcritos del listado de Imper System. Van a mano y no por el
+     importador porque la fuente es un PDF de una página, no un catálogo
+     en línea. Tres partidas por máquina: quien cubica necesita la del
+     periodo que va a usar, y las tres tarifas son del propio comercio.
+
+     El alcance de cada una dice lo que la tarifa NO cubre, que en
+     alquiler de equipo es la mitad del costo real: combustible y
+     transporte van aparte. =========================================== */
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por día',      'día',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por semana',   'semana',  null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por mes',      'mes',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por día',      'día',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por semana',   'semana',  null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por mes',      'mes',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por día', 'día',     null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por día', 'día',     null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por día', 'día',     null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+
   /* ===================== MAT-01 · Agregados y áridos ===================== */
   it('MAT-01', 'Arena lavada', 'm³', null, null, null, {esp:'Lavada de río, para hormigón y pañete', etapa:'estructura', retirado:true});
   it('MAT-01', 'Arena gruesa (itabo)', 'm³', null, null, null, {esp:'Para mezclas de mampostería', etapa:'mamposteria', gama:'economica', retirado:true});
@@ -2160,6 +2216,7 @@
     {codigo:'MAT-31', grupo:'MAT', nombre:'Domótica e intercomunicadores',     desc:'Interruptores inteligentes, intercomunicadores y videoporteros.', slug:'precio-domotica-intercomunicadores'},
     {codigo:'MAT-32', grupo:'MAT', nombre:'Tubería y conexiones',              desc:'Tubo PVC y CPVC, codos, tees, niples, llaves de paso, sifones y rejillas.', slug:'precio-tuberia-conexiones-pvc'},
     {codigo:'MOS-04', grupo:'MOS', nombre:'Trámites y permisos',                 desc:'Licencias, no objeciones y conexiones de servicios.', slug:'costo-licencias-permisos-construccion'},
+    {codigo:'EQU-02', grupo:'EQU', nombre:'Alquiler de equipos de altura',       desc:'Plataformas elevadoras por día, semana y mes.', slug:'precio-alquiler-equipos-construccion'},
     {codigo:'EQU-04', grupo:'EQU', nombre:'Herramientas y equipo menor',         desc:'Herramienta de compra.', slug:'precio-herramientas-construccion'}
   ];
 
@@ -2267,6 +2324,21 @@
          solo etiqueta el alcance cuando se aparta de este. */
       alcanceBase: 'Material retirado en almacén',
       actualizado: '2026-09',
+      /* PRECIOS EN DÓLARES
+         Algún comercio cotiza en USD —el alquiler de equipo de altura, por
+         ejemplo—. El dólar se guarda como dato de origen, que es el precio
+         real que dio el comercio, y la tabla muestra el peso convertido a
+         esta tasa. Así no hay ninguna cifra inventada: el RD$ es derivado
+         y va fechado, y cuando la tasa se mueva se cambia aquí y se
+         actualiza todo el catálogo de una vez.
+
+         CONFIRMAR ANTES DE PUBLICAR: no pude leer el Banco Central desde
+         este entorno. */
+      tasaUSD: {
+        valor: 59.0878,
+        fecha: '2026-09-09',
+        fuente: 'Tasa de venta del dólar publicada para el 9 de septiembre de 2026'
+      },
       aviso: 'Cada ítem lleva el precio que el propio comercio publica o cotizó por escrito. Ninguno sustituye una cotización del proveedor.'
     },
     grupos: grupos,

@@ -16,7 +16,6 @@
     {"source": "/precio-honorarios-diseno-supervision.html", "destination": "/", "permanent": true},
     {"source": "/precio-demolicion-movimiento-tierra-bote.html", "destination": "/", "permanent": true},
     {"source": "/precio-alquiler-maquinaria-pesada.html", "destination": "/", "permanent": true},
-    {"source": "/precio-alquiler-equipos-construccion.html", "destination": "/", "permanent": true},
     {"source": "/precio-alquiler-andamios-formaleta.html", "destination": "/", "permanent": true}
   ],
   "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."
