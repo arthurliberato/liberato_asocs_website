@@ -331,13 +331,17 @@ function reglaAccesorio(a) {
   }
   if (/^brazo de ducha/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^manguera de ducha/.test(t)) return BANOS.item('ducha-manguera', {});
-  if (/^dispensador para jabon|^dispensador de jabon/.test(t)) {
-    return BANOS.item('dispensador-jabon',
-      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
-  }
-  if (/^secador de manos/.test(t)) {
-    return BANOS.item('secador-manos',
-      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+  /* El dispensador de este grupo no es el mismo aparato que el del grupo
+     DISPENSADOR D/ JABON: aquí es una pieza de la colección de accesorios,
+     que se compra por diseño igual que la jabonera y el toallero de dos
+     líneas más abajo. El «TAPE101» sale a RD$ 20,818 y no trae en el nombre
+     una sola seña de por qué —ni marca institucional, ni capacidad, ni
+     sensor—, así que entraba como dispensador corriente al lado de uno
+     plástico de RD$ 156. La tienda tiene un grupo propio para el aparato;
+     lo que cae en éste no lo es. */
+  if (/^dispensador|^secador de manos|^accesorio p(?:ara|\/)/.test(t)) {
+    MOTIVO.valor = 'pieza de la colección de accesorios, que se compra por diseño; el aparato vive en su propio grupo';
+    return null;
   }
   if (/^barra de seguridad/.test(t)) return reglaBarra(a);
   if (/^llave angular/.test(t)) { MOTIVO.valor = 'la ficha no declara la medida de la llave angular'; return null; }

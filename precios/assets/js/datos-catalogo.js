@@ -1807,12 +1807,12 @@
   it('MAT-27', 'Secador de manos, con sensor', 'unidad', 16755, 12495, 63455.69, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico', activacion:'sensor', ancho_mm:270}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Secador de manos, institucional', 'unidad', 30467.1, 27487.14, 33447.06, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Secador de manos, institucional, con sensor', 'unidad', 32765.78, 32765.78, 32765.78, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional', activacion:'sensor'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de jabón', 'unidad', 676, 156, 20817.8, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón', 'unidad', 672, 156, 2309, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Dispensador de jabón, con sensor', 'unidad', 28704.01, 28704.01, 28704.01, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico', activacion:'sensor'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Dispensador de jabón, institucional', 'unidad', 3782.5, 1270, 15547.21, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 690, 485, 1105, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 587.5, 485, 690, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Dispensador de papel, de toalla', 'unidad', 2645, 274, 7965, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'toalla', ancho_mm:310}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, institucional, de papel higiénico', 'unidad', 3145, 2595, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'papel higiénico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, institucional, de papel higiénico', 'unidad', 2870, 1105, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'papel higiénico'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Dispensador de papel, institucional, de toalla', 'unidad', 3245, 2515, 12190, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'toalla'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Cambiador de bebés de pared', 'unidad', 8705, 8705, 8705, {esp:'', etapa:'terminacion', origen:'importado', alias:'cambiador de bebés, baño público', medidas:{largo_mm:860, ancho_mm:550, alto_mm:140}, alcance:'Material retirado en almacén'});
 
@@ -2803,8 +2803,6 @@
     'MAT-24-003': 'entre RD$ 555 y RD$ 6,659 no hay nada, y del lado barato queda una sola cotización (12x): hay una pieza mal clasificada',
     /* Lavamanos, de pared */
     'MAT-25-004': 'la partida se parte en dos entre RD$ 14,157 y RD$ 105,775 (7x): le falta un eje que separe los dos grupos',
-    /* Dispensador de jabón */
-    'MAT-27-028': 'entre RD$ 2,309 y RD$ 20,818 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
     /* Equipo de cerco eléctrico */
     'MAT-28-023': 'la partida se parte en dos entre RD$ 74 y RD$ 2,341 (32x): le falta un eje que separe los dos grupos',
     /* Cable de red */

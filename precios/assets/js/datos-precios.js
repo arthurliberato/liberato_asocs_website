@@ -24543,11 +24543,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-manos-c-sensor-turbo-elec-ace-i-01112773',
     nota: 'Secador Manos C / Sensor Turbo Elec. Ace.I · artículo 01-11-2773 · ref. MB-1012AI · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-028', PROV_CERARTE, 20817.8, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/dispensador-pjabon-tape101',
-    itbis: false,
-    nota: 'DISPENSADOR P/JABON TAPE101 · artículo CERA-00614 · ref. 6.5X9.5X16 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-27-028', PROV_FERREMIX, 2309, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-a-pared-de-laton-satinado',
     nota: 'Dispensador de jabón a pared de latón satinado · artículo T45227 · marca Foset. ' + SUPUESTO_ITBIS
@@ -24625,10 +24620,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-83550-jabon-liquido-mini-47-050942',
     nota: 'DISPENSADOR JABON TORK 83550 JABON LIQUIDO MINI 475 ML · artículo 050942 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-031', PROV_INNOVA, 1105, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-508as-niquelado-higi-070583',
-    nota: 'DISPENSADOR PAPEL AQUASPA TKO-508AS NIQUELADO HIGIENICO METAL INOX · artículo 070583 · ref. Dispensador · marca AQUAPLASTICA. ' + SUPUESTO_ITBIS
-  });
   c('MAT-27-031', PROV_INNOVA, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-512a-blanco-serville-070579',
     nota: 'DISPENSADOR PAPEL AQUASPA TKO-512A BLANCO SERVILLETA PLASTICO · artículo 070579 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
@@ -24660,6 +24651,10 @@
   c('MAT-27-032', PROV_INNOVA, 274, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-rayen-2072-01-blanco-tipo-toalla-057554',
     nota: 'DISPENSADOR PAPEL RAYEN 2072.01 BLANCO TIPO TOALLA PLASTICO · artículo 057554 · ref. Dispensador · marca RAYEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-033', PROV_INNOVA, 1105, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-508as-niquelado-higi-070583',
+    nota: 'DISPENSADOR PAPEL AQUASPA TKO-508AS NIQUELADO HIGIENICO METAL INOX · artículo 070583 · ref. Dispensador · marca AQUAPLASTICA. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-033', PROV_INNOVA, 8995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-460006-gris-jumbo-luxury-050934',
