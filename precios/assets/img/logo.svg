@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 200" role="img" aria-label="Ingenieros Liberato &amp; Asociados">
+  <path fill="#3f6e22" d="M0 0h200v166l-34 34H0z"/>
+  <rect fill="#de3b22" x="54" y="34" width="30" height="26"/>
+  <rect fill="#f2efe2" x="54" y="64" width="30" height="48"/>
+  <rect fill="#e89019" x="54" y="112" width="92" height="28"/>
+  <!-- textLength fija el ancho: el bloque mide lo mismo aunque la
+       máquina que lo abra no tenga Inter. -->
+  <text x="262" y="100" fill="#1b1e17"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="84" font-weight="700" dominant-baseline="central"
+        textLength="858" lengthAdjust="spacingAndGlyphs"
+    >Ingenieros Liberato <tspan fill="#3f6e22">&amp;</tspan> Asociados</text>
+</svg>

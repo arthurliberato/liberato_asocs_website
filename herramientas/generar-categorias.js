@@ -88,7 +88,7 @@ function header(seccion) {
 <header class="site-header">
   <div class="shell header-inner">
     <a class="brand" href="./" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
-      <img src="assets/img/logo.png" alt="Ingenieros Liberato &amp; Asociados" width="2920" height="766">
+      <img src="assets/img/logo.svg" alt="Ingenieros Liberato &amp; Asociados" width="1120" height="200">
       <span class="brand-tag">Precios de<br>construcción</span>
     </a>
 
@@ -109,7 +109,7 @@ function header(seccion) {
 const FOOTER = `<footer class="site-footer">
   <div class="shell footer-inner">
     <div class="footer-brand">
-      <img src="assets/img/logo-oscuro.png" alt="Ingenieros Liberato &amp; Asociados" width="2920" height="766">
+      <img src="assets/img/logo.svg" alt="Ingenieros Liberato &amp; Asociados" width="1120" height="200">
       <p>Base de precios de construcción de República Dominicana,<br>
          publicada por Ingenieros Liberato &amp; Asociados.<br>
          Más de 40 años construyendo en el país.</p>
@@ -513,7 +513,7 @@ ${bloqueRelacionadas(cat.codigo)}
 <title>${esc(c.titulo)}</title>
 <meta name="description" content="${esc(c.desc)}">
 <meta name="author" content="Ingenieros Liberato &amp; Asociados">
-<meta name="theme-color" content="#0d2440">
+<meta name="theme-color" content="#f2efe2">
 <link rel="canonical" href="${url}">
 
 <meta property="og:type" content="article">
@@ -522,11 +522,11 @@ ${bloqueRelacionadas(cat.codigo)}
 <meta property="og:title" content="${esc(c.titulo)}">
 <meta property="og:description" content="${esc(c.desc)}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITIO}/assets/img/logo.png">
+<meta property="og:image" content="${SITIO}/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="assets/img/isotipo.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/img/isotipo.png">
+<link rel="icon" href="assets/img/isotipo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

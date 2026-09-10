@@ -89,15 +89,53 @@ del `<head>`, la sección `#contacto` y el pie de página. El número de WhatsAp
 
 ### Colores
 
-Están al inicio de `assets/css/styles.css`, en `:root`. La paleta sale del
-logotipo oficial:
+Están al inicio de `assets/css/styles.css`, en `:root`, y la misma tabla se
+repite en `precios/assets/css/precios.css`. Los cinco colores salen del
+logotipo:
 
-| Token | Valor | Uso |
-|---|---|---|
-| `--navy` | `#254d76` | Azul del logotipo, botones, títulos |
-| `--blue` | `#78a8ff` | Acento, enlaces, íconos |
-| `--blue-200` | `#b1d3ff` | Detalles claros |
-| `--navy-900` / `--navy-800` | `#0b1f38` / `#0d2440` | Fondos oscuros |
+| Token | Valor | De dónde sale | Uso |
+|---|---|---|---|
+| `--verde` | `#3f6e22` | Fondo del icono, ampersand del nombre | Botones, estados activos, enlaces, filetes |
+| `--marfil` | `#f2efe2` | Barra vertical de la i y la L, papelería | Fondo de las bandas: cabecera, franja, cierre |
+| `--ambar` | `#e89019` | Brazo horizontal de la L | Acento: subrayados, iconos, separadores |
+| `--rojo` | `#de3b22` | Barra superior, el punto de la i | Alertas y errores de formulario |
+| `--ink` | `#1b1e17` | El nombre sobre fondo claro | Todo el texto corriente |
+
+**La página es clara de arriba abajo.** Los tonos oscuros solo pintan texto y
+acentos; no hay planchas de fondo. Donde antes había un degradado oscuro —el
+hero, las «secciones oscuras», el cierre, el pie, la ficha del fundador— ahora
+hay papel, y el peso lo lleva la tinta. El marfil se va templando hacia abajo
+(`--marfil` en el cierre, `--marfil-hondo` en el pie) para que la página cierre
+sin necesidad de oscurecerse.
+
+#### Lo que el contraste obliga
+
+Dos colores de la marca **no sirven de texto** tal como son, y eso está medido,
+no supuesto:
+
+- **Ámbar sobre blanco da 2.5:1.** Rellena y subraya, pero el texto ámbar usa
+  `--ambar-700` (`#8a5309`, 7.5:1) y los titulares `--ambar-600` (`#c37813`,
+  3.5:1, que es el mínimo de texto grande).
+- **Rojo sobre blanco da 4.4:1**, justo por debajo del mínimo. El texto rojo usa
+  `--rojo-700` (`#a32b16`, 7.2:1).
+
+El verde de marca sí llega solo (6.1:1 sobre blanco, 5.3:1 sobre marfil).
+
+`--ink-mute` y `--verde-500` se oscurecieron respecto de su primer valor porque
+el barrido del navegador los encontró en 4.1 y 3.9 sobre blanco: el peor fondo
+que tienen que aguantar es el `--marfil-hondo` del pie.
+
+#### Cómo se comprueba
+
+`herramientas/auditar-contraste.js` abre cada página, fuerza visibles los
+elementos con animación de entrada y mide el contraste real de todo el texto,
+buscando el fondo opaco más cercano en el árbol. Da 4.5:1 de mínimo, o 3:1
+cuando el texto es grande:
+
+```bash
+python3 -m http.server 8123 &
+node herramientas/auditar-contraste.js
+```
 
 ---
 

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+  <!-- El monograma sin la plancha verde: para usarse de marca de agua,
+       donde un cuadro lleno se lee como un bloque y no como la marca. -->
+  <rect fill="#de3b22" x="27" y="17" width="15" height="13"/>
+  <rect fill="#3f6e22" x="27" y="32" width="15" height="24"/>
+  <rect fill="#e89019" x="27" y="56" width="46" height="14"/>
+</svg>

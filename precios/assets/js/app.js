@@ -1627,7 +1627,7 @@
         '<button class="banner-plegar" type="button" data-plegar="' + lado + '" aria-expanded="true" ' +
           'aria-label="Plegar el aviso">' +
           (lado === 'izq' ? ICONO.flechaIzq : ICONO.flechaDer) + '</button>' +
-        '<img class="banner-iso" src="assets/img/isotipo.png" alt="" width="615" height="766">' +
+        '<img class="banner-iso" src="assets/img/isotipo.svg" alt="" width="100" height="100">' +
         '<p class="banner-marca">Ingenieros Liberato<br>&amp; Asociados</p>' +
         '<p class="banner-servicios">Construcción · Supervisión · Diseño</p>' +
         '<p class="banner-msj">¿Necesitas contratista, subcontratista especializado o presupuestos?</p>' +

@@ -24,7 +24,7 @@ precios/
   descargas/              el libro de Excel                        ← GENERADO
   costo-licencias-…html
   assets/
-    css/precios.css       Estilos (misma paleta del logotipo)
+    css/precios.css       Estilos (la paleta de marca, en :root)
     js/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
       datos-proveedores.js Directorio de proveedores
@@ -1729,6 +1729,50 @@ hay que cambiar la URL en:
   redirección del `vercel.json` de la raíz.
 
 ---
+
+## La paleta
+
+Los cinco colores salen del logotipo y están en `:root`, al inicio de
+`assets/css/precios.css`, con los mismos nombres que en el dominio principal
+(`--verde`, `--marfil`, `--ambar`, `--rojo`, `--ink`). La tabla completa y las
+reglas de contraste están en el [README de la raíz](../README.md#colores).
+
+Dos cosas propias del subdominio:
+
+- **La página es clara de arriba abajo.** La franja de servicios, el cierre y el
+  pie eran planchas oscuras; ahora son marfil, y el pie cierra con
+  `--marfil-hondo`. Los tonos oscuros solo pintan texto y acentos.
+- **La rampa de frescura usa el verde de la marca.** Los cuatro tramos de
+  «Última actualización» eran un verde esmeralda que no tenía nada que ver con
+  el resto; ahora bajan por la escala del verde de marca, del sólido al casi
+  blanco:
+
+  | Tramo | Fondo | Texto | Contraste |
+  |---|---|---|---|
+  | Últimos 7 días | `--verde` | blanco | 6.1:1 |
+  | 8–14 días | `--verde-200` | `--verde-900` | 8.9:1 |
+  | 15–30 días | `--verde-100` | `--verde-700` | 5.7:1 |
+  | Más de 30 días | `--verde-50` | `#67745b` | 4.5:1 |
+
+El contraste de todo el texto se comprueba con
+`node herramientas/auditar-contraste.js`, que mide en el navegador en vez de
+confiar en la hoja de estilo.
+
+### El logotipo
+
+`assets/img/` lleva tres piezas en SVG y dos rasterizadas:
+
+| Archivo | Para qué |
+|---|---|
+| `logo.svg` | El bloque horizontal: icono más nombre. Cabecera y pie |
+| `isotipo.svg` | Solo el icono. Favicon y usos cuadrados |
+| `marca-agua.svg` | El monograma **sin** la plancha verde. Sobre papel, un cuadro lleno se lee como un bloque y no como la marca |
+| `og.png` | La vista previa de 1200×630 que piden WhatsApp y las redes, que no aceptan SVG |
+| `apple-touch-icon.png` | iOS tampoco acepta SVG para el icono de pantalla de inicio |
+
+El nombre dentro de `logo.svg` va con `textLength` y
+`lengthAdjust="spacingAndGlyphs"`: así el bloque mide lo mismo aunque la
+máquina que lo abra no tenga Inter instalada.
 
 ## Notas técnicas
 
