@@ -1392,6 +1392,64 @@ La pintura deja de tener un solo comercio: **6 ítems de MAT-12 ya se comparan**
 de acrílica tiene RD$ 375–430 de Ferremix contra RD$ 374–1,485 de Tonos y Colores. En
 eléctricos, MAT-10 sube a 204 ítems con 21 comparables.
 
+## Precios que no se sostienen
+
+Un precio de referencia mal puesto es peor que un ítem que falta: quien cubica se lo lleva
+a un presupuesto y lo descubre cuando ya lo entregó. `herramientas/auditar-precios.js`
+busca los que no se sostienen y los retira.
+
+```bash
+node herramientas/auditar-precios.js             # el informe completo
+node herramientas/auditar-precios.js --escribir  # escribe la lista en el catálogo
+```
+
+### Qué mira, y por qué eso
+
+**1 · Dispersión entre comercios.** Dos comercios cotizando el mismo ítem deberían quedar
+cerca. La dispersión normal es de marca —un bombillo LED de 12 W cuesta RD$ 60 en genérico
+y RD$ 220 de marca, y eso es información, no un error—, y medida sobre los 242 ítems
+comparables la mediana es **1.6x** y el percentil 90 está en **4.6x**.
+
+El corte está en **8x**, y no es un número redondo elegido a ojo:
+
+| Franja | Qué hay dentro |
+|---|---|
+| 3x – 6x | Bombillos LED de 60 y 220, interruptores de 45 y 145, uniones de PVC de 22 y 75. Marca, no error |
+| 6x – 8x | Muebles de baño de 2,725 a 21,825. Dudoso pero creíble |
+| **> 8x** | «Dispensador de jabón» de RD$ 156 a RD$ 20,818. El ítem no es una sola cosa |
+
+El caso que lo enseña es ese dispensador: convivían uno plástico de AquaSpa a RD$ 676 y uno
+electrónico de HELVEX a RD$ 15,547. **No es que un comercio se equivocara**: a la partida le
+falta un eje que separe el manual del automático. Mientras ese eje no exista, no se publica.
+
+**2 · Medidas imposibles.** Cuando la lectura del catálogo de un comercio se tuerce sale una
+medida absurda —«Cinta de teflón 12520"»— y con ella un precio que no significa nada. Hay un
+techo por eje; 305 m de cable de red **no** salta, porque esa es la caja de 1000 pies.
+
+**3 · Fuera de serie (solo informa).** Un ítem que se sale de su propia serie de medidas.
+No retira automáticamente porque **la medida sí manda en el precio**: un bushing de 8" x 4"
+cuesta legítimamente treinta veces uno de 1/2". Sale en el informe para mirarlo a ojo.
+
+**4 · Revisados a mano.** Los que ninguna regla general pilla sin llevarse por delante casos
+legítimos, cada uno con su razón escrita en `A_MANO`. Ahí está el único error de proveedor
+encontrado hasta ahora: La Ibérica publica un fregadero Teka de 20 × 21" a **RD$ 75**, que no
+es un precio de fregadero.
+
+### Cómo se retira
+
+La lista vive en `datos-catalogo.js`, entre los marcadores `dudosos:inicio` y `dudosos:fin`,
+**fuera de los marcadores del importador**: así sobrevive a reimportar los catálogos. Los
+ítems pasan a `retirados` con su motivo y no se publican, pero **conservan su código**: si
+mañana aparece el eje que falta o el comercio corrige el precio, se borra la línea y vuelven.
+
+Dos detalles que costaron un rato:
+
+- El auditor corre con `ILYA_AUDITAR=1`, que le hace ver también los ítems ya retirados.
+  Sin eso no vería lo que él mismo retiró en la pasada anterior, lo daría por bueno y lo
+  volvería a publicar.
+- Las cotizaciones de un ítem retirado **no son huérfanas**: el validador de
+  `datos-precios.js` las acepta consultando `CATALOGO.dudosos`.
+
 ## Filtro «Mis proveedores»
 
 Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios

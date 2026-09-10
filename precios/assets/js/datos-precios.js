@@ -24754,6 +24754,10 @@
     registros.forEach(function (r, n) {
       var item = itemPorCodigo[r.item];
       if (!item) {
+        /* Un ítem retirado por precio dudoso sigue teniendo sus cotizaciones:
+           no son huérfanas, es que su ítem no se publica. Ver
+           herramientas/auditar-precios.js. */
+        if (CAT.dudosos && CAT.dudosos[r.item]) return;
         problemas.push('Cotización ' + (n + 1) + ': el ítem ' + r.item + ' no existe en el catálogo.');
         return;
       }

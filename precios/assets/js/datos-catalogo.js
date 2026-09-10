@@ -2187,6 +2187,71 @@
     {de:'1 pie tablar',                   a:'1" x 12" x 12" de madera'}
   ];
 
+  /* =========================================================
+     PRECIOS QUE NO SE SOSTIENEN
+
+     Un precio de referencia mal puesto es peor que un ítem que falta:
+     quien cubica se lo lleva a un presupuesto y lo descubre cuando ya
+     lo entregó. Los ítems de esta lista tienen precio, pero un precio
+     del que no nos fiamos, así que no se publican.
+
+     La escribe herramientas/auditar-precios.js --escribir. Va fuera de
+     los marcadores del importador a propósito: sobrevive a reimportar
+     los catálogos.
+     ========================================================= */
+  /* dudosos:inicio — generado por herramientas/auditar-precios.js. No editar a mano. */
+  var dudosos = {
+    /* Mosaico cerámico en malla, 30 x 30 cm */
+    'MAT-08-202': 'los comercios lo cotizan entre RD$ 157 y RD$ 1,845 (12x): la partida mezcla productos distintos',
+    /* Cabezal de ducha */
+    'MAT-09-009': 'los comercios lo cotizan entre RD$ 126 y RD$ 2,924 (23x): la partida mezcla productos distintos',
+    /* Ducha teléfono */
+    'MAT-09-010': 'los comercios lo cotizan entre RD$ 268 y RD$ 3,361 (13x): la partida mezcla productos distintos',
+    /* Columna de ducha */
+    'MAT-09-011': 'los comercios lo cotizan entre RD$ 900 y RD$ 11,281 (13x): la partida mezcla productos distintos',
+    /* Brazo de ducha */
+    'MAT-09-013': 'los comercios lo cotizan entre RD$ 108 y RD$ 1,390 (13x): la partida mezcla productos distintos',
+    /* Fregadero de un pozo, 8 x 8 pulgadas */
+    'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
+    /* Cinta aislante 30 mts */
+    'MAT-10-181': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se explica si el precio es de un paquete, y la ficha no lo dice',
+    /* Inodoro suspendido */
+    'MAT-24-003': 'los comercios lo cotizan entre RD$ 555 y RD$ 5,440 (10x): la partida mezcla productos distintos',
+    /* Tanque para inodoro de dos piezas */
+    'MAT-24-005': 'los comercios lo cotizan entre RD$ 586 y RD$ 12,715 (22x): la partida mezcla productos distintos',
+    /* Lavamanos, de pedestal */
+    'MAT-25-004': 'los comercios lo cotizan entre RD$ 216 y RD$ 15,435 (71x): la partida mezcla productos distintos',
+    /* Mueble de baño, de piso */
+    'MAT-26-003': 'los comercios lo cotizan entre RD$ 2,725 y RD$ 21,825 (8x): la partida mezcla productos distintos',
+    /* Juego de accesorios de baño */
+    'MAT-27-018': 'los comercios lo cotizan entre RD$ 345 y RD$ 4,992 (14x): la partida mezcla productos distintos',
+    /* Secador de manos */
+    'MAT-27-023': 'los comercios lo cotizan entre RD$ 849 y RD$ 33,447 (39x): la partida mezcla productos distintos',
+    /* Dispensador de jabón */
+    'MAT-27-026': 'los comercios lo cotizan entre RD$ 156 y RD$ 20,818 (133x): la partida mezcla productos distintos',
+    /* Dispensador de papel, de toalla */
+    'MAT-27-029': 'los comercios lo cotizan entre RD$ 274 y RD$ 4,472 (16x): la partida mezcla productos distintos',
+    /* Sifón de PVC para desagüe 35376" */
+    'MAT-32-373': 'la medida leída es imposible: medida = 35376" (35376) (el techo razonable es 120)',
+    /* Cinta de teflón 12520" */
+    'MAT-32-418': 'la medida leída es imposible: medida = 12520" (12520) (el techo razonable es 120)'
+  };
+  /* dudosos:fin */
+
+  /* El auditor necesita ver los ítems retirados junto a sus cotizaciones
+     para poder juzgarlos; si los escondiéramos, la próxima pasada los
+     daría por buenos y volverían a publicarse. */
+  var auditando = (typeof process !== 'undefined' && process.env
+                   && process.env.ILYA_AUDITAR) || global.ILYA_AUDITAR;
+  var publicables = auditando ? items : items.filter(function (i) {
+    if (!dudosos[i.codigo]) return true;
+    retirados.push({
+      codigo: i.codigo, cat: i.cat, nombre: i.nombre, unidad: i.unidad,
+      esp: i.esp, etapa: i.etapa, motivo: dudosos[i.codigo]
+    });
+    return false;
+  });
+
   global.CATALOGO = {
     meta: {
       moneda: 'RD$',
@@ -2202,7 +2267,10 @@
     categorias: categorias,
     etapas: etapas,
     conversiones: conversiones,
-    items: items,
+    items: publicables,
+    /* Códigos con precio pero sin confianza: sus cotizaciones existen
+       y no son huérfanas. Ver herramientas/auditar-precios.js. */
+    dudosos: dudosos,
     /* Reservan código; no se publican. Ver el encabezado del archivo. */
     retirados: retirados
   };
