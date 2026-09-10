@@ -98,6 +98,12 @@
     zonas:['nacional'], web:'innovacentro.com.do', precios:true,
     nota:'Catálogo en línea con marcas y precios. Maneja Truper, Foset, Total, Pedrollo y Tangit.'
   });
+  p('CerArte', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-02','MAT-08','MAT-09','MAT-24','MAT-25','MAT-26','MAT-27','MAT-32'],
+    zonas:[], web:'cerarte.com.do', precios:true,
+    nota:'Tienda especializada en cerámica, porcelanato, baños y cocinas, con tienda en línea. Es el único comercio del directorio que declara en cada ficha la unidad de venta, los metros y las piezas por caja, y que el precio publicado no lleva ITBIS. Ubicación de sucursales sin verificar.'
+  });
   p('Ferretería MC', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12'],

@@ -137,14 +137,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo tiene **1,638 ítems**. De ellos, **1,369 ya llevan un precio real** de un
-comercio que lo publica; 263 siguen siendo estimaciones de arranque y 6 van según tarifario oficial
-y no llevan precio. El sitio distingue los tres estados de forma visible en todas las
-páginas.
+El catálogo publica **1,449 ítems**, todos con precio real: **1,443 con precio de un
+comercio** que lo publica y 6 que van según tarifario oficial y no llevan monto. Los ítems
+que solo tenían estimación nuestra se retiraron del sitio (ver «Solo se publica lo que tiene
+precio real»).
 
-Detrás de esos 1,369 ítems verificados hay **3,724 cotizaciones** de **seis comercios**.
-**131 ítems tienen precio de más de uno**, 33 tienen tres y seis ya tienen cuatro — entre
-ellos la funda de cemento gris, que es el precio más consultado del país.
+Detrás hay **4,660 cotizaciones** de **siete comercios**. **178 ítems tienen precio de más
+de uno**, 48 tienen tres y nueve ya tienen cuatro — entre ellos la funda de cemento gris, que
+es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -337,7 +337,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 09/09/2026: **1,369 de 1,369 ítems publicados con precio real**. Los otros 6 del
+Al 10/09/2026: **1,443 de 1,443 ítems publicados con precio real**. Los otros 6 del
 catálogo van según tarifario oficial y no llevan precio por definición, así que no cuentan.
 Los 263 retirados no aparecen en esta cuenta: la herramienta de lotes solo recorre lo
 publicado, así que para seguir levantando precios hay que partir del Excel de retirados.
@@ -437,7 +437,7 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**3,724 cotizaciones reales cargadas · 1,369 ítems verificados de 1,632.**
+**4,660 cotizaciones reales cargadas · 1,443 ítems verificados, todos los publicados.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
@@ -585,7 +585,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **131 ítems con precio de más de un comercio**, 33 con tres y seis con cuatro. El
+Hoy hay **178 ítems con precio de más de un comercio**, 48 con tres y nueve con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -897,7 +897,7 @@ Agrupar bien puede **bajar** la cuenta de «ítems con más de un precio» y mej
 catálogo al mismo tiempo: los cuatro inodoros de una pieza incluían dos que ya cruzaban, y
 al fundirse en uno la cuenta baja de dos a uno. El indicador que no engaña es otro:
 
-**el 22% de las cotizaciones ya cae sobre un ítem comparable** — 811 de 3,724.
+**el 45% de las cotizaciones ya cae sobre un ítem comparable** — 2,079 de 4,660.
 
 ### Una cotización formal: 134 líneas que valieron más que 468
 
@@ -1205,7 +1205,7 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
-## El directorio: seis comercios, todos con precio confirmado
+## El directorio: siete comercios, todos con precio confirmado
 
 Desde el 09/09/2026 el directorio publica solo los comercios a los que se les confirmó
 un precio, es decir, los que tienen cotizaciones en `datos-precios.js`. Los otros 74 que
@@ -1255,6 +1255,42 @@ ni siquiera mientras la demo está encendida, así que el generador ahora los ex
 cifras del hero igual que ya los excluía de las tarjetas de cada categoría.
 
 ---
+
+## CerArte: el segundo precio de las baldosas
+
+Al 10/09/2026 entra **CerArte** (cerarte.com.do), tienda especializada en cerámica,
+porcelanato, baños y cocinas: 1,926 variantes publicadas, 1,050 aprovechadas, **936
+cotizaciones**. Es el primer comercio que le hace segunda voz a Ochoa en baldosas, que era
+el hueco más grande del catálogo: MAT-08 pasa de 0 a **39 ítems con dos comercios**.
+
+Su ficha declara tres cosas que casi ningún comercio publica y que aquí valen oro: la
+**unidad de venta** de cada línea (m² o unidad), los **metros y las piezas por caja**, y que
+el **precio publicado no lleva ITBIS**. Lo último se registra como dato (`itbis: false` en
+la fuente, con su propia nota) en vez de suponerse.
+
+### El uso de la baldosa se midió antes de decidir
+
+En 434 de sus 883 baldosas no dice si la pieza es de piso o de pared. Antes de tirarlas o de
+adivinar se midió si ese eje mueve el precio, con el método de los bombillos:
+
+| Ejes | Buckets | Con rango > 3x |
+|---|---|---|
+| material + uso + formato | 71 | **4** |
+| material + formato | 64 | 10 |
+| solo formato | 53 | 11 |
+
+Y dentro de un mismo (material, formato) la mediana cambia hasta **1.9x** de un uso a otro:
+la cerámica de 60 x 120 de pared vale RD$ 2,067/m² y la de piso RD$ 1,082/m². El eje se gana
+su sitio, así que las 353 que no lo declaran quedan fuera con ese motivo escrito. Tampoco se
+dedujo del formato: 60 x 120 y 60 x 60 están genuinamente repartidos entre piso, pared y
+ambos, y solo seis formatos son unánimes.
+
+### Cuatro familias nuevas
+
+`inodoro-suspendido` (va sobre bastidor dentro de la pared, con el tanque empotrado: es otra
+partida y otra albañilería), `banera`, `plato-ducha` y `piso-vinilico`. La primera se aparta
+de la regla de agrupación de inodoros —una pieza, dos piezas o infantil— porque la
+diferencia no es de diseño sino de instalación.
 
 ## Filtro «Mis proveedores»
 
@@ -1493,8 +1529,8 @@ tiene precio real**. Salieron del sitio:
 | Categorías que quedaron sin ningún ítem | 13 de 41 | hoja «Categorías»; sus páginas se borraron y redirigen a `/` |
 | Proveedores sin un solo precio confirmado | 74 de 80 | hoja «Proveedores», con los contactos públicos que se tenían |
 
-Quedan **1,375 ítems** (1,369 con precio de comercio y 6 de tarifario oficial), **28
-categorías** y **6 comercios** (Ochoa, Cima, Max, InnovaCentro, MC y Ferremix).
+Quedan **1,449 ítems** (1,443 con precio de comercio y 6 de tarifario oficial), **28
+categorías** y **7 comercios** (Ochoa, Cima, Max, InnovaCentro, MC, Ferremix y CerArte).
 
 El libro lo escribe `herramientas/exportar-retirados.py` a partir del estado de los datos
 en ese momento; se corre **antes** de retirar nada. No hace falta volver a correrlo salvo

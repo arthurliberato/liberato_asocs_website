@@ -967,6 +967,7 @@ const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
 const MC = require('./reglas-mc.js');
+const CERARTE = require('./reglas-cerarte.js');
 
 const FUENTES = [
   {
@@ -1098,6 +1099,21 @@ const FUENTES = [
     motivoDe: () => MC.MOTIVO.valor || 'la línea no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = MC.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/cerarte-2026-09-10.json'),
+    etiqueta: 'CerArte · cerámica, porcelanato y baños',
+    proveedor: 'CerArte',
+    constante: 'PROV_CERARTE',
+    fecha: '2026-09-10',
+    /* Su tienda declara en la ficha que el precio publicado no lleva ITBIS.
+       No hay nada que suponer. */
+    itbis: false,
+    notaItbis: 'El comercio publica el precio sin ITBIS y lo suma en la factura',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => CERARTE.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = CERARTE.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
@@ -1432,7 +1448,7 @@ function bloqueCotizaciones() {
                     esc(f.fuenteDe ? f.fuenteDe(a) : 'Precio publicado en ' + a.url) + "'"];
     if (f.itbis === false) campos.push('    itbis: false');
     const cierre = f.itbis === false
-      ? "    nota: '" + esc(notas.join('. ')) + ". El precio es antes de ITBIS: la cotización lo suma aparte'"
+      ? "    nota: '" + esc(notas.join('. ')) + '. ' + esc(f.notaItbis || 'El precio es antes de ITBIS: la cotización lo suma aparte') + "'"
       : "    nota: '" + esc(notas.join('. ')) + ". ' + SUPUESTO_ITBIS";
     return "  c('" + item + "', " + f.constante + ", " + num(precioUnidad(a)) + ", {\n" +
            campos.join(',\n') + ',\n' + cierre + "\n  });";

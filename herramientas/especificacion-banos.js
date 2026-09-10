@@ -45,6 +45,15 @@ const FAMILIAS = {
   /* Ochoa vende las dos mitades por separado y por eso el catálogo tenía
      tanque y basineta como ítems sueltos. Cima vende el inodoro de dos piezas
      completo, que es otra partida: la que un presupuesto escribe. */
+  /* Suspendido no es un acabado del inodoro de piso: va sobre un bastidor
+     dentro de la pared, con el tanque empotrado, y eso es otra partida y
+     otro trabajo de albañilería. Por eso es familia propia y no una medida
+     del de una pieza. */
+  'inodoro-suspendido': {
+    cat: 'MAT-24', base: 'Inodoro suspendido', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 14,
+    alias: 'inodoro suspendido, inodoro de pared, wall hung, colgado'
+  },
   'inodoro-dos-piezas': {
     cat: 'MAT-24', base: 'Inodoro de dos piezas', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 15,
@@ -123,6 +132,18 @@ const FAMILIAS = {
     cat: 'MAT-26', base: 'Cabina o panel de ducha', unidad: 'unidad',
     ejes: [], etapa: 'terminacion', orden: 40,
     alias: 'cabina de ducha, mampara, panel de ducha'
+  },
+
+  banera: {
+    cat: 'MAT-26', base: 'Bañera', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 42,
+    alias: 'bañera, tina, bathtub, jacuzzi'
+  },
+
+  'plato-ducha': {
+    cat: 'MAT-26', base: 'Plato de ducha', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 44,
+    alias: 'plato de ducha, receptáculo, base de ducha'
   },
 
   'barra-seguridad': {
