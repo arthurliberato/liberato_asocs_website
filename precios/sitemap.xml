@@ -16,11 +16,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://precios.ingsliberato.com/metodologia.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://precios.ingsliberato.com/precio-arena-grava-agregados.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

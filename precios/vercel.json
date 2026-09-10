@@ -4,6 +4,7 @@
   "trailingSlash": false,
   "redirects": [
     {"source": "/catalogo.html", "destination": "/", "permanent": true},
+    {"source": "/metodologia.html", "destination": "/", "permanent": true},
     {"source": "/precio-hormigon-premezclado.html", "destination": "/", "permanent": true},
     {"source": "/precio-blocks-prefabricados.html", "destination": "/", "permanent": true},
     {"source": "/precio-puertas-ventanas-cristales.html", "destination": "/", "permanent": true},

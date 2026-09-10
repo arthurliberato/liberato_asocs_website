@@ -140,6 +140,12 @@ ul{margin:0;padding:0;list-style:none}
 .btn-block{width:100%}
 .btn-primary{--btn-bg:var(--verde)}
 .btn-primary:hover{--btn-bg:var(--verde-700)}
+/* El botón de contacto es el único ámbar del sitio: es la acción que
+   queremos que se vea, y el ámbar la despega del verde estructural.
+   Va con tinta encima, no con blanco: el ámbar de marca rinde 2.5:1
+   contra el blanco y 6.8:1 contra la tinta. */
+.btn-contacto{--btn-bg:var(--ambar);color:var(--ink)}
+.btn-contacto:hover{--btn-bg:var(--ambar-600);color:var(--ink)}
 .btn-ghost{background:transparent;border-color:var(--line-fuerte);color:var(--verde-800)}
 .btn-ghost:hover{background:#fff;border-color:var(--verde-200)}
 .btn-whatsapp{background:var(--verde);margin-top:.5rem}
