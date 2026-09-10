@@ -82,6 +82,12 @@
     zonas:['gsd'], web:'ferremix.com.do', wa:'18295373000', email:'soporteweb@ferremix.com.do', precios:true,
     nota:'La cadena de mayor expansión reciente. Sucursales Villa Mella (849-507-0003) y Herrera (829-539-0078). Tienda en línea con 8,984 productos y precio por SKU. Es una ferretería general: de sus 21 departamentos solo siete traen partidas de obra. Su ficha no declara si el precio lleva ITBIS.'
   });
+  p('Bellón', {
+    tipo:'cadena', canal:'detallista',
+    cats:['MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-12','MAT-24','MAT-25','MAT-26','MAT-32'],
+    zonas:['nacional'], web:'bellon.com.do', precios:true,
+    nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
+  });
   p('Max Ferretería', {
     tipo:'cadena', canal:'detallista',
     /* Las categorías salen de la única colección que se ha extraído. El sitio

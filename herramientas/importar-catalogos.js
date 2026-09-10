@@ -971,6 +971,7 @@ const CERARTE = require('./reglas-cerarte.js');
 const IBERICA = require('./reglas-iberica.js');
 const TONOS = require('./reglas-tonos.js');
 const FERREMIX = require('./reglas-ferremix.js');
+const BELLON = require('./reglas-bellon.js');
 
 const FUENTES = [
   {
@@ -1156,6 +1157,20 @@ const FUENTES = [
     motivoDe: () => FERREMIX.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = FERREMIX.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/bellon-2026-09-10.json'),
+    etiqueta: 'Bellón · ferretería completa',
+    proveedor: 'Bellón',
+    constante: 'PROV_BELLON',
+    fecha: '2026-09-10',
+    /* Ni la extracción ni la ficha dicen si el precio publicado lleva ITBIS:
+       va con el supuesto de mostrador y la nota lo dice. */
+    fuenteDe: () => 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
