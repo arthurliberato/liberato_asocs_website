@@ -269,6 +269,12 @@ en el nombre, ni una explicación de cómo se construyó el ítem. Si no queda n
 Para los ítems importados, `esp` se define por familia en las tablas de especificación y
 en las reglas incrustadas del importador; el 10/09/2026 se revisaron todas con esa regla.
 
+**La tabla ya no tiene ficha desplegable.** Bajo el nombre de cada ítem va un tag por
+comercio que lo vende (los que venden al público y en la misma unidad); al pulsarlo, el
+precio y la fecha de la fila pasan a ser los de ese comercio, y al volver a pulsarlo regresa
+la referencia. La elección vive en el objeto del ítem (`provElegido`), así sobrevive a que
+la tabla se vuelva a pintar. `PRECIOS.detalleHTML` queda en la capa de datos sin uso.
+
 **Desde ese mismo día la tabla del sitio no muestra `esp` ni el código**: la fila lleva solo
 el nombre, la categoría (o la etapa, en las páginas de categoría), la unidad, el precio y la
 última actualización. El código y la especificación siguen en los datos, en la fila que se
@@ -277,7 +283,7 @@ una hoja de cálculo los necesitan.
 
 Lo mismo con el **alcance**: «Material retirado en almacén» es el de casi todo el catálogo,
 así que está declarado una vez (`meta.alcanceBase`) y la tabla solo etiqueta el ítem que se
-aparta de él. La ficha por proveedor y el Excel lo muestran siempre.
+aparta de él. El Excel lo muestra siempre.
 
 ## Dos campos que hacen comparables los precios
 

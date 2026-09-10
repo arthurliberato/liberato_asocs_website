@@ -501,8 +501,8 @@
   }
   function badgeFechaHTML(it) {
     if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
-    var t = tramoFecha(it.fecha);
-    return '<span class="badge ' + t.clase + '" data-fecha="' + esc(it.fecha || '') + '" title="' + esc(it.fecha || 'sin fecha') + '">' + t.texto + '</span>';
+    var f = fechaFila(it), t = tramoFecha(f);
+    return '<span class="badge ' + t.clase + '" data-fecha="' + esc(f || '') + '" title="' + esc(f || 'sin fecha') + '">' + t.texto + '</span>';
   }
   function refrescarBadgesFecha(raiz) {
     $$('.badge[data-fecha]', raiz || document).forEach(function (el) {
@@ -510,6 +510,51 @@
       el.className = 'badge ' + t.clase;
       el.textContent = t.texto;
     });
+  }
+
+  /* =========================================================
+     EL COMERCIO ELEGIDO
+     Bajo el nombre de cada ítem va un tag por comercio que lo vende. Al
+     pulsarlo, el precio y la fecha de la fila pasan a ser los de ese
+     comercio; al volver a pulsarlo, regresa la referencia del mercado.
+     La elección vive en el objeto del ítem, así sobrevive a que la tabla
+     se vuelva a pintar por un filtro o por el interruptor de ITBIS.
+     ========================================================= */
+  function cotizacionesPorProveedor(it) {
+    var vistos = {}, lista = [];
+    (it.cotizaciones || []).forEach(function (q) {
+      if (!q.cuenta || vistos[q.proveedor.nombre]) return;
+      vistos[q.proveedor.nombre] = true;
+      lista.push(q);
+    });
+    return lista;
+  }
+  function cotizacionElegida(it) {
+    if (!it.provElegido) return null;
+    var qs = cotizacionesPorProveedor(it);
+    for (var i = 0; i < qs.length; i++) if (qs[i].proveedor.nombre === it.provElegido) return qs[i];
+    return null;
+  }
+  function precioFila(it) { var q = cotizacionElegida(it); return q ? q.precioNormalizado : it.ref; }
+  function fechaFila(it) { var q = cotizacionElegida(it); return q ? q.fecha : it.fecha; }
+  function nombreTag(nombre) {
+    return String(nombre).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
+  }
+  function tagsProveedores(it) {
+    var qs = cotizacionesPorProveedor(it);
+    if (!qs.length) return '';
+    return '<span class="item-provs">' + qs.map(function (q) {
+      var activo = it.provElegido === q.proveedor.nombre;
+      var titulo = rd(q.precioNormalizado) + (q.fecha ? ' · ' + q.fecha : '') + (q.nota ? ' · ' + String(q.nota).slice(0, 160) : '');
+      return '<button class="tag-prov" type="button" data-item-prov="' + esc(it.codigo) + '" data-prov="' + esc(q.proveedor.nombre) + '" ' +
+        'aria-pressed="' + (activo ? 'true' : 'false') + '" title="' + esc(titulo) + '">' + esc(nombreTag(q.proveedor.nombre)) + '</button>';
+    }).join('') + '</span>';
+  }
+  function htmlCeldaEstado(it) {
+    return badgeFechaHTML(it) +
+      (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
+      (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
+      (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '');
   }
 
   /* Junto al precio va un botón que copia solo el número; el de la última
@@ -520,21 +565,23 @@
   }
   function pintarCeldaPrecio(td, it) {
     var pct = it.unidad === '%';
-    var p = precioVista(it.ref, it, estado.sinItbis);
+    var bruto = precioFila(it);
+    var p = precioVista(bruto, it, estado.sinItbis);
     if (p === null) { td.innerHTML = '<span class="precio-nulo">Según tarifario</span>'; return; }
-    /* Solo el precio de referencia. El rango y la mediana son análisis y
-       van en el libro de Excel, no en la tabla del sitio. */
+    /* Solo un número: la referencia o el precio del comercio elegido. El
+       rango y la mediana son análisis y van en el libro de Excel. */
     td.innerHTML = (pct ? '<span class="precio">' + fmt(p) + ' %</span>'
                         : '<span class="precio">' + rd(p) + '</span>') + botonCopiarPrecio(it);
-    td.setAttribute('data-precio-ref', it.ref === null ? '' : it.ref);
+    td.setAttribute('data-precio-ref', bruto === null ? '' : bruto);
   }
   /* Copia la fila tal como se ve: ítem, categoría o etapa, unidad, precio y
      última actualización, separados por tabulador. Lo que sale en el Excel
      (código, especificación, mínimo, máximo, fuente) se copia desde la ficha. */
   function textoFilaVisible(tr) {
     if (!tr) return '';
-    return $$('td', tr).slice(0, -1).map(function (td) {
-      return td.textContent.replace(/\s+/g, ' ').trim();
+    return $$('td', tr).slice(0, -1).map(function (td, i) {
+      var nombre = i === 0 ? $('.item-nombre', td) : null;
+      return (nombre || td).textContent.replace(/\s+/g, ' ').trim();
     }).join('\t');
   }
 
@@ -549,15 +596,7 @@
       if (celda) pintarCeldaPrecio(celda, it);
       var estadoCelda = $('.celda-estado', tr);
       if (estadoCelda) {
-        estadoCelda.innerHTML = badgeFechaHTML(it) +
-          (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
-          (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
-          (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '');
-      }
-      var detalle = tr.nextElementSibling;
-      if (detalle && detalle.classList.contains('fila-detalle') && !detalle.hidden) {
-        detalle.firstElementChild.innerHTML = detalleDe(it);
-        repintarPrecios(detalle);
+        estadoCelda.innerHTML = htmlCeldaEstado(it);
       }
     });
 
@@ -1013,68 +1052,29 @@
     });
   }
 
-  /* =========================================================
-     DETALLE POR PROVEEDOR
-     El catálogo lo inserta al vuelo; las páginas de categoría lo
-     traen ya escrito en el HTML y solo se muestra u oculta.
-     ========================================================= */
-
-  function detalleDe(it) {
-    return PRECIOS.detalleHTML(it, {
-      nombreCat: nombreCat,
-      proveedoresCategoria: PROV.lista.filter(function (p) { return !p.demo && p.cats.indexOf(it.cat) !== -1; }),
-      seleccion: misProveedores
-    });
-  }
-
-  function alternarDetalle(boton) {
-    var codigo = boton.getAttribute('data-detalle');
-    var fila = boton.closest('tr');
-    if (!fila) return;
-    var abierto = boton.getAttribute('aria-expanded') === 'true';
-    var siguiente = fila.nextElementSibling;
-    var esDetalle = siguiente && siguiente.classList.contains('fila-detalle');
-
-    if (abierto) {
-      boton.setAttribute('aria-expanded', 'false');
-      if (esDetalle) siguiente.hidden = true;
-      return;
-    }
-
-    boton.setAttribute('aria-expanded', 'true');
-
-    var it = itemPorCodigo[codigo];
-    if (!it || !PRECIOS) return;
-
-    /* Las páginas de categoría traen la ficha ya escrita en el HTML, que es lo
-       que ve un buscador. Al abrirla se vuelve a generar desde los datos, para
-       que refleje el filtro de proveedores y el interruptor de ITBIS actuales. */
-    if (esDetalle) {
-      siguiente.firstElementChild.innerHTML = detalleDe(it);
-      siguiente.hidden = false;
-      repintarPrecios(siguiente);
-      return;
-    }
-
-    var tr = document.createElement('tr');
-    tr.className = 'fila-detalle';
-    var td = document.createElement('td');
-    td.colSpan = fila.children.length;
-    td.innerHTML = detalleDe(it);
-    tr.appendChild(td);
-    fila.parentNode.insertBefore(tr, fila.nextSibling);
-    repintarPrecios(tr);
-  }
-
   /* Manejadores globales: funcionan en el catálogo y en las páginas estáticas. */
   document.addEventListener('click', function (e) {
-    var detalle = e.target.closest('[data-detalle]');
-    if (detalle) { alternarDetalle(detalle); return; }
+    var tag = e.target.closest('[data-item-prov]');
+    if (tag) {
+      var itT = itemPorCodigo[tag.getAttribute('data-item-prov')];
+      var trT = tag.closest('tr');
+      if (!itT || !trT) return;
+      var nombreT = tag.getAttribute('data-prov');
+      itT.provElegido = itT.provElegido === nombreT ? null : nombreT;
+      $$('.tag-prov', trT).forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-prov') === itT.provElegido ? 'true' : 'false');
+      });
+      var celdaP = $('td[data-precio-ref]', trT);
+      if (celdaP) pintarCeldaPrecio(celdaP, itT);
+      var celdaE = $('.celda-estado', trT);
+      if (celdaE) celdaE.innerHTML = htmlCeldaEstado(itT);
+      return;
+    }
 
     var monto = e.target.closest('[data-copiar-monto]');
     if (monto) {
       var itM = itemPorCodigo[monto.getAttribute('data-copiar-monto')];
-      var pM = itM ? precioVista(itM.ref, itM, estado.sinItbis) : null;
+      var pM = itM ? precioVista(precioFila(itM), itM, estado.sinItbis) : null;
       /* Se copia lo que se ve: el monto redondeado como en la tabla. */
       if (pM !== null) copiarTexto(itM.unidad === '%' ? String(pM) : String(Math.round(pM)), monto);
       return;
@@ -1083,22 +1083,6 @@
     var filaVisible = e.target.closest('[data-copiar-fila]');
     if (filaVisible) {
       copiarTexto(textoFilaVisible(filaVisible.closest('tr')), filaVisible);
-      return;
-    }
-
-    var unaFila = e.target.closest('[data-copiar-precio]');
-    if (unaFila) {
-      var filas = filasDeItem(unaFila.getAttribute('data-copiar-precio'));
-      var i = unaFila.getAttribute('data-copiar-indice');
-      var fila = i === null ? filas[0] : filas[parseInt(i, 10) + 1];
-      if (fila) copiarTexto(PRECIOS.aTSV([fila], false), unaFila);
-      return;
-    }
-
-    var itemEntero = e.target.closest('[data-copiar-item]');
-    if (itemEntero) {
-      var todas = filasDeItem(itemEntero.getAttribute('data-copiar-item'));
-      if (todas.length) copiarTexto(PRECIOS.aTSV(todas, false), itemEntero);
       return;
     }
 
@@ -1228,7 +1212,8 @@
 
 
     function fila(it) {
-      var p = precioVista(it.ref, it, estado.sinItbis);
+      var bruto = precioFila(it);
+      var p = precioVista(bruto, it, estado.sinItbis);
       var esPorcentaje = it.unidad === '%';
 
       var precioHtml;
@@ -1241,16 +1226,13 @@
       }
 
       return '<tr data-item="' + esc(it.codigo) + '">' +
-          '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
-                ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
-              (it.alcance && it.alcance !== ALCANCE_BASE ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') + '</td>' +
+          '<td><span class="item-nombre">' + esc(it.nombre) + '</span>' +
+              (it.alcance && it.alcance !== ALCANCE_BASE ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
+              tagsProveedores(it) + '</td>' +
           '<td><a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
-          '<td class="num">' + precioHtml + '</td>' +
-          '<td class="celda-estado">' + badgeFechaHTML(it) +
-              (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
-              (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
-              (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '') + '</td>' +
+          '<td class="num" data-precio-ref="' + (bruto === null ? '' : bruto) + '">' + precioHtml + '</td>' +
+          '<td class="celda-estado">' + htmlCeldaEstado(it) + '</td>' +
           '<td class="num acciones">' +
             '<button class="btn-copiar" type="button" data-copiar-fila="' + esc(it.codigo) + '" ' +
               'aria-label="Copiar la fila de ' + esc(it.nombre) + '" title="Copiar la fila">' + ICONO.copiar + '</button>' +
