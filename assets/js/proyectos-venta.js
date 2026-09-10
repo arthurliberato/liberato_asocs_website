@@ -22,6 +22,9 @@
      ubicacion      {sector, municipio, provincia}. sector puede ir null
      estado         'preventa' | 'en-construccion' | 'terminado'
      avance         porcentaje de obra, o null
+     etapa          en cuál de ETAPAS_OBRA va la obra, o null. Es un dato
+                    aparte del avance a propósito: mapear etapas a
+                    porcentajes fijos sería inventarse una ponderación
      entrega        'AAAA-MM' estimada, o null
      niveles        número de niveles, o null
      unidades       total de unidades, o null
@@ -37,6 +40,20 @@
 (function (global) {
   'use strict';
 
+  /* Las etapas de una obra, en orden. Sirven de escalera al medidor de
+     avance: la ficha marca hasta cuál va. NO llevan porcentaje asociado
+     —eso sería inventarse una ponderación que cada obra tiene distinta—:
+     el porcentaje es un dato propio y la etapa, otro. */
+  var ETAPAS_OBRA = [
+    { clave: 'preliminares',  nombre: 'Preliminares' },
+    { clave: 'cimentacion',   nombre: 'Cimentación' },
+    { clave: 'estructura',    nombre: 'Estructura' },
+    { clave: 'mamposteria',   nombre: 'Mampostería' },
+    { clave: 'instalaciones', nombre: 'Instalaciones' },
+    { clave: 'terminacion',   nombre: 'Terminación' },
+    { clave: 'entrega',       nombre: 'Entrega' }
+  ];
+
   var PROYECTOS_VENTA = [
     {
       slug: 'residencial-santo-domingo-norte',
@@ -45,6 +62,7 @@
       ubicacion: { sector: null, municipio: 'Santo Domingo Norte', provincia: 'Santo Domingo' },
       estado: 'en-construccion',
       avance: null,
+      etapa: null,
       entrega: null,
       niveles: 4,
       unidades: 8,
@@ -62,7 +80,11 @@
   ];
 
   global.PROYECTOS_VENTA = PROYECTOS_VENTA;
+  global.ETAPAS_OBRA = ETAPAS_OBRA;
 
 })(typeof window !== 'undefined' ? window : global);
 
-if (typeof module !== 'undefined') module.exports = { PROYECTOS_VENTA: (typeof window !== 'undefined' ? window : global).PROYECTOS_VENTA };
+if (typeof module !== 'undefined') {
+  var g = typeof window !== 'undefined' ? window : global;
+  module.exports = { PROYECTOS_VENTA: g.PROYECTOS_VENTA, ETAPAS_OBRA: g.ETAPAS_OBRA };
+}

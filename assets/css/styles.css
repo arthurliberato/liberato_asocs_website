@@ -642,3 +642,60 @@ a.ct-v:hover{color:var(--verde-700)}
 .miga a{color:var(--verde-700);text-decoration:none}
 .miga a:hover{text-decoration:underline}
 .miga span[aria-hidden]{margin:0 .35rem;color:var(--line-fuerte)}
+
+/* ---------- el medidor de avance de obra ----------
+   Un solo edificio que se llena, no una fila de iconos repetidos: la
+   obra es una y lo que cambia es cuánto lleva hecha. La pista vacía es
+   un paso claro del mismo verde —no gris—, y el contorno es quien
+   carga la forma, porque en una paleta clara ningún verde pálido
+   alcanza 3:1 contra el papel. */
+.pv-avance{
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(1.4rem,4vw,2.6rem);
+  align-items:center;
+  background:var(--marfil);border:1px solid var(--marfil-hondo);
+  border-radius:var(--r);padding:1.6rem 1.7rem;margin:0 0 2.4rem;
+  max-width:640px;
+}
+@media (max-width:560px){.pv-avance{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.pv-avance-fig{margin:0}
+.pv-avance-fig svg{width:clamp(112px,16vw,150px);height:auto;display:block}
+
+.pv-suelo{stroke:var(--verde-500);stroke-width:2.5;stroke-linecap:round}
+.pv-vacio{fill:var(--verde-100);stroke:var(--verde-800);stroke-width:2.5;stroke-linejoin:round}
+.pv-lleno{fill:var(--verde);stroke:var(--verde-800);stroke-width:2.5;stroke-linejoin:round}
+/* La línea de agua marca dónde llega el avance dentro de la figura. */
+.pv-linea-agua{stroke:var(--ambar);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:5 4}
+
+.pv-avance-cifra{display:flex;align-items:baseline;gap:.6rem;margin:0 0 1.2rem;flex-wrap:wrap}
+@media (max-width:560px){.pv-avance-cifra{justify-content:center}}
+/* La cifra va en tinta, no en el color del medidor: el color es del
+   dibujo, el texto lleva tokens de texto. Y con cifras proporcionales,
+   que las tabulares se ven sueltas a este tamaño. */
+.pv-avance-cifra strong{
+  font-family:Jost,sans-serif;font-size:clamp(2.6rem,6vw,3.4rem);
+  font-weight:600;line-height:1;color:var(--ink);letter-spacing:-.02em;
+}
+.pv-avance-sin{margin:0 0 1.1rem;font-size:1.02rem;color:var(--ink-soft)}
+.pv-avance-sin strong{color:var(--ink);font-weight:600}
+.pv-avance-cifra span{font-size:.98rem;color:var(--ink-soft)}
+
+.pv-etapas{list-style:none;margin:0;padding:0;display:grid;gap:.38rem}
+.pv-etapas li{
+  display:flex;align-items:baseline;gap:.55rem;
+  font-size:.95rem;color:var(--ink-mute);
+}
+@media (max-width:560px){.pv-etapas li{justify-content:center}}
+.pv-marca{
+  flex-shrink:0;width:1.1em;text-align:center;
+  font-size:.9em;line-height:1;
+}
+.pv-etapas .es-hecha{color:var(--verde-700)}
+.pv-etapas .es-hecha .pv-marca{color:var(--verde)}
+.pv-etapas .es-actual{color:var(--ink);font-weight:600}
+.pv-etapas .es-actual .pv-marca{color:var(--ambar-700)}
+.pv-etapas .es-pendiente .pv-marca{color:var(--line-fuerte)}
+.pv-aqui{
+  font-weight:500;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--ambar-700);background:var(--ambar-50);
+  border:1px solid var(--ambar-200);border-radius:100px;padding:.1rem .5rem;
+}

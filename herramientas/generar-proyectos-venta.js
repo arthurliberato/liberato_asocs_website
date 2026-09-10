@@ -32,6 +32,7 @@ const INDEX = path.join(RAIZ, 'index.html');
 global.window = global;
 require(path.join(RAIZ, 'assets', 'js', 'proyectos-venta.js'));
 const PROYECTOS = global.PROYECTOS_VENTA;
+const ETAPAS = global.ETAPAS_OBRA;
 
 const esc = (t) => String(t == null ? '' : t)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -86,6 +87,108 @@ function tipologiaNombre(t) {
    blanco: en blanco parece un error de la página. */
 const PENDIENTE = '<span class="pendiente">Pendiente de confirmar</span>';
 const dato = (v) => (v == null || v === '') ? PENDIENTE : esc(v);
+
+/* ---------- el medidor de avance ----------
+   Un ratio contra un límite se dibuja como MEDIDOR, no como barra ni
+   como tarta de dos porciones. Y va de un solo elemento que se llena,
+   no de una fila de iconos repetidos: la obra es una, y lo que cambia
+   es cuánto lleva hecho.
+
+   La pista vacía es un paso claro del mismo verde —no gris—, para que
+   el estado se lea a lo largo de toda la figura. Pero en una paleta
+   clara ese paso no llega a 3:1 contra el papel: quien carga la forma
+   es el CONTORNO, como en cualquier ilustración de línea. Medido:
+
+     contorno verde 800 sobre la tarjeta de marfil   8.2:1
+     relleno verde sobre el interior claro           4.1:1
+
+   Con avance 0 la figura se sigue viendo, que es justo el caso que hoy
+   tenemos. */
+const LIENZO = { w: 150, h: 190, suelo: 172 };
+
+function siluetaEdificio(niveles) {
+  const n = Math.max(1, Math.min(niveles || 4, 8));
+  /* El edificio ocupa SIEMPRE el mismo alto y lo reparte entre sus
+     niveles. Si el alto de nivel fuera fijo, siete plantas se saldrían
+     del lienzo y se verían recortadas —igual que cuatro—, que es
+     justo lo que pasaba. */
+  const alto = 132;
+  const altoNivel = alto / n;
+  const y0 = LIENZO.suelo - alto;
+  const x0 = 26, ancho = 98;
+
+  /* La ventana crece con el nivel pero no se pasa: en siete plantas
+     queda una franja, en dos una ventana de verdad. */
+  const hV = Math.max(6, Math.min(altoNivel * 0.46, 16));
+  const wV = 26;
+  const partes = [];
+  partes.push(`<rect x="${x0 - 6}" y="${(y0 - 8).toFixed(1)}" width="${ancho + 12}" height="8" rx="2"/>`);
+  partes.push(`<rect x="${x0}" y="${y0.toFixed(1)}" width="${ancho}" height="${alto}"/>`);
+  for (let i = 0; i < n; i++) {
+    const yN = y0 + i * altoNivel;
+    const yV = yN + (altoNivel - hV) / 2;
+    if (i === n - 1) {
+      /* Planta baja: una ventana y la puerta, que llega al suelo. */
+      const hP = Math.min(altoNivel - 5, 30);
+      partes.push(`<rect x="${x0 + 14}" y="${yV.toFixed(1)}" width="20" height="${hV.toFixed(1)}" rx="2"/>`);
+      partes.push(`<rect x="${x0 + 58}" y="${(LIENZO.suelo - hP).toFixed(1)}" width="26" height="${hP.toFixed(1)}" rx="2"/>`);
+    } else {
+      partes.push(`<rect x="${x0 + 14}" y="${yV.toFixed(1)}" width="${wV}" height="${hV.toFixed(1)}" rx="2"/>`);
+      partes.push(`<rect x="${x0 + 58}" y="${yV.toFixed(1)}" width="${wV}" height="${hV.toFixed(1)}" rx="2"/>`);
+    }
+  }
+  return { partes: partes.join(''), y0: y0 - 8, alto: alto + 8 };
+}
+
+function medidorAvance(p) {
+  const { partes, y0, alto } = siluetaEdificio(p.niveles);
+  const pct = p.avance;
+  const hay = pct != null;
+  /* El relleno sube desde el suelo hasta el porcentaje. */
+  const hRelleno = hay ? (alto * pct) / 100 : 0;
+  const yRelleno = LIENZO.suelo - hRelleno;
+  const id = 'av-' + p.slug;
+
+  const etapaIdx = p.etapa ? ETAPAS.findIndex((e) => e.clave === p.etapa) : -1;
+  const escalera = ETAPAS.map((e, i) => {
+    const hecha = etapaIdx >= 0 && i < etapaIdx;
+    const actual = etapaIdx >= 0 && i === etapaIdx;
+    const cls = actual ? 'es-actual' : hecha ? 'es-hecha' : 'es-pendiente';
+    const marca = hecha ? '&#10003;' : actual ? '&bull;' : '&middot;';
+    return `<li class="${cls}"><span class="pv-marca" aria-hidden="true">${marca}</span>${esc(e.nombre)}`
+      + (actual ? ' <span class="pv-aqui">va por aquí</span>' : '') + '</li>';
+  }).join('\n        ');
+
+  /* Sin dato no se pone una cifra falsa ni un guion del tamaño de una
+     cifra —a ese cuerpo se lee como una raya suelta—: se dice, y ya. */
+  const leyenda = hay
+    ? `<p class="pv-avance-cifra"><strong>${pct}%</strong> <span>de avance de obra</span></p>`
+    : `<p class="pv-avance-sin">Avance de obra <strong>pendiente de confirmar</strong></p>`;
+
+  return `<div class="pv-avance">
+    <figure class="pv-avance-fig">
+      <svg viewBox="0 0 ${LIENZO.w} ${LIENZO.h}" role="img"
+           aria-label="${hay ? esc(pct + '% de avance de obra') : 'Avance de obra pendiente de confirmar'}">
+        <defs>
+          <clipPath id="${id}"><rect x="0" y="${yRelleno.toFixed(1)}" width="${LIENZO.w}" height="${(LIENZO.h - yRelleno).toFixed(1)}"/></clipPath>
+          <g id="${id}-formas">${partes}</g>
+        </defs>
+        <line class="pv-suelo" x1="6" y1="${LIENZO.suelo}" x2="${LIENZO.w - 6}" y2="${LIENZO.suelo}"/>
+        <use href="#${id}-formas" class="pv-vacio"/>
+        <g clip-path="url(#${id})"><use href="#${id}-formas" class="pv-lleno"/></g>
+        ${hay && pct > 0 && pct < 100
+          ? `<line class="pv-linea-agua" x1="14" y1="${yRelleno.toFixed(1)}" x2="${LIENZO.w - 14}" y2="${yRelleno.toFixed(1)}"/>`
+          : ''}
+      </svg>
+    </figure>
+    <div class="pv-avance-datos">
+      ${leyenda}
+      <ol class="pv-etapas">
+        ${escalera}
+      </ol>
+    </div>
+  </div>`;
+}
 
 /* ---------- las piezas ---------- */
 function fichaDatos(p) {
@@ -286,6 +389,9 @@ ${CONTACTO('¿Le interesa alguna de estas unidades?')}`
       <p class="section-sub">${esc(loc)}</p>
       ${p.nombreProvisional ? `<p class="pv-provisional">El nombre comercial del proyecto está por definirse; aquí se identifica por su ubicación.</p>` : ''}
     </div>
+
+    <h2 class="pv-h2">Estado de la obra</h2>
+    ${medidorAvance(p)}
 
     ${fichaDatos(p)}
 
