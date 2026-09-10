@@ -2189,35 +2189,35 @@
   ];
 
   var categorias = [
-    {codigo:'MAT-01', grupo:'MAT', nombre:'Agregados y áridos',                  desc:'Arena, grava, caliche, piedra y polvo de piedra.', slug:'precio-arena-grava-agregados'},
-    {codigo:'MAT-02', grupo:'MAT', nombre:'Cemento, morteros y aditivos',        desc:'Cemento, cal, pegamentos, derretido y aditivos.', slug:'precio-cemento-morteros-aditivos'},
-    {codigo:'MAT-04', grupo:'MAT', nombre:'Acero de refuerzo y metales',         desc:'Varillas, mallas, perfilería y planchas.', slug:'precio-varilla-acero'},
-    {codigo:'MAT-06', grupo:'MAT', nombre:'Madera y encofrado',                  desc:'Pino de encofrado, plywood y maderas tratadas.', slug:'precio-madera-plywood-encofrado'},
-    {codigo:'MAT-07', grupo:'MAT', nombre:'Techos e impermeabilización',         desc:'Zinc, aluzinc, tejas, mantos y aislamientos.', slug:'precio-zinc-aluzinc-techos'},
-    {codigo:'MAT-08', grupo:'MAT', nombre:'Pisos y revestimientos',              desc:'Cerámica, porcelanato, piedra natural y topes.', slug:'precio-ceramica-porcelanato-pisos'},
-    {codigo:'MAT-09', grupo:'MAT', nombre:'Plomería, sanitarios y gas',          desc:'Aparatos sanitarios, grifería, calentadores, bombas y tanques.', slug:'precio-plomeria-sanitarios'},
-    {codigo:'MAT-10', grupo:'MAT', nombre:'Electricidad e iluminación',          desc:'Cables, canalización, paneles, luminarias y respaldo.', slug:'precio-materiales-electricos'},
-    {codigo:'MAT-12', grupo:'MAT', nombre:'Pintura y acabados',                  desc:'Acrílicas, esmaltes, selladores y especiales.', slug:'precio-pintura'},
-    {codigo:'MAT-13', grupo:'MAT', nombre:'Plafones y construcción liviana',     desc:'Yeso, perfilería, plafones y consumibles de drywall.', slug:'precio-plafones-drywall'},
-    {codigo:'MAT-16', grupo:'MAT', nombre:'Cámaras y videovigilancia',           desc:'Cámaras CCTV, grabadores, soportes y accesorios de instalación.', slug:'precio-camaras-cctv-sistemas-especiales'},
-    {codigo:'MAT-18', grupo:'MAT', nombre:'Exteriores y paisajismo',             desc:'Grama, tierra, plantas y riego.', slug:'precio-grama-paisajismo-riego'},
-    {codigo:'MAT-19', grupo:'MAT', nombre:'Perfiles y tubos de acero',          desc:'Perfilería cuadrada y rectangular, tubería negra y correas.', slug:'precio-perfiles-tubos-acero'},
-    {codigo:'MAT-20', grupo:'MAT', nombre:'Angulares, planchuelas y barras',      desc:'Acero comercial por medida: angulares, pletinas y barras lisas.', slug:'precio-angulares-planchuelas-barras'},
-    {codigo:'MAT-21', grupo:'MAT', nombre:'Tolas y láminas de acero',             desc:'Tolas negras, corrugadas y galvanizadas por espesor.', slug:'precio-tolas-laminas-acero'},
-    {codigo:'MAT-22', grupo:'MAT', nombre:'Cerramiento perimetral',            desc:'Malla ciclónica, alambre de púas, telas metálicas y sus herrajes.', slug:'precio-malla-ciclonica-cerramiento'},
-    {codigo:'MAT-23', grupo:'MAT', nombre:'Perfilería de aluminio',            desc:'Angulares, planchuelas, tubos y molduras de aluminio por medida.', slug:'precio-perfiles-aluminio'},
-    {codigo:'MAT-24', grupo:'MAT', nombre:'Inodoros y urinarios',              desc:'Inodoros de una y dos piezas, tanques, basinetas y urinarios.', slug:'precio-inodoros-urinarios'},
-    {codigo:'MAT-25', grupo:'MAT', nombre:'Lavamanos y pedestales',            desc:'Lavamanos de pedestal, sobreponer y empotrar, con sus soportes.', slug:'precio-lavamanos-pedestales'},
-    {codigo:'MAT-26', grupo:'MAT', nombre:'Muebles y espejos de baño',         desc:'Muebles con lavamanos, botiquines, espejos y cabinas.', slug:'precio-muebles-espejos-bano'},
-    {codigo:'MAT-27', grupo:'MAT', nombre:'Accesorios de baño',                desc:'Juegos de accesorios, barras de seguridad y equipamiento de baño público.', slug:'precio-accesorios-bano'},
-    {codigo:'MAT-28', grupo:'MAT', nombre:'Alarmas y control de accesos',      desc:'Paneles, teclados, detectores, lectores y cerco eléctrico.', slug:'precio-alarmas-control-acceso'},
-    {codigo:'MAT-29', grupo:'MAT', nombre:'Detección de incendios',            desc:'Detectores, estaciones manuales, sirenas, paneles y extintores.', slug:'precio-deteccion-incendios'},
-    {codigo:'MAT-30', grupo:'MAT', nombre:'Cableado estructurado y redes',     desc:'Cable UTP y fibra, jacks, patch panels, racks y placas.', slug:'precio-cableado-estructurado-redes'},
-    {codigo:'MAT-31', grupo:'MAT', nombre:'Domótica e intercomunicadores',     desc:'Interruptores inteligentes, intercomunicadores y videoporteros.', slug:'precio-domotica-intercomunicadores'},
-    {codigo:'MAT-32', grupo:'MAT', nombre:'Tubería y conexiones',              desc:'Tubo PVC y CPVC, codos, tees, niples, llaves de paso, sifones y rejillas.', slug:'precio-tuberia-conexiones-pvc'},
-    {codigo:'MOS-04', grupo:'MOS', nombre:'Trámites y permisos',                 desc:'Licencias, no objeciones y conexiones de servicios.', slug:'costo-licencias-permisos-construccion'},
-    {codigo:'EQU-02', grupo:'EQU', nombre:'Alquiler de equipos de altura',       desc:'Plataformas elevadoras por día, semana y mes.', slug:'precio-alquiler-equipos-construccion'},
-    {codigo:'EQU-04', grupo:'EQU', nombre:'Herramientas y equipo menor',         desc:'Herramienta de compra.', slug:'precio-herramientas-construccion'}
+    {codigo:'MAT-01', grupo:'MAT', nombre:'Agregados y áridos',                  desc:'Arena, grava, caliche, piedra y polvo de piedra.', slug:'precio-arena-grava-agregados', ambitos:['construccion']},
+    {codigo:'MAT-02', grupo:'MAT', nombre:'Cemento, morteros y aditivos',        desc:'Cemento, cal, pegamentos, derretido y aditivos.', slug:'precio-cemento-morteros-aditivos', ambitos:['construccion']},
+    {codigo:'MAT-04', grupo:'MAT', nombre:'Acero de refuerzo y metales',         desc:'Varillas, mallas, perfilería y planchas.', slug:'precio-varilla-acero', ambitos:['construccion']},
+    {codigo:'MAT-06', grupo:'MAT', nombre:'Madera y encofrado',                  desc:'Pino de encofrado, plywood y maderas tratadas.', slug:'precio-madera-plywood-encofrado', ambitos:['construccion']},
+    {codigo:'MAT-07', grupo:'MAT', nombre:'Techos e impermeabilización',         desc:'Zinc, aluzinc, tejas, mantos y aislamientos.', slug:'precio-zinc-aluzinc-techos', ambitos:['construccion']},
+    {codigo:'MAT-08', grupo:'MAT', nombre:'Pisos y revestimientos',              desc:'Cerámica, porcelanato, piedra natural y topes.', slug:'precio-ceramica-porcelanato-pisos', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-09', grupo:'MAT', nombre:'Plomería, sanitarios y gas',          desc:'Aparatos sanitarios, grifería, calentadores, bombas y tanques.', slug:'precio-plomeria-sanitarios', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-10', grupo:'MAT', nombre:'Electricidad e iluminación',          desc:'Cables, canalización, paneles, luminarias y respaldo.', slug:'precio-materiales-electricos', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-12', grupo:'MAT', nombre:'Pintura y acabados',                  desc:'Acrílicas, esmaltes, selladores y especiales.', slug:'precio-pintura', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-13', grupo:'MAT', nombre:'Plafones y construcción liviana',     desc:'Yeso, perfilería, plafones y consumibles de drywall.', slug:'precio-plafones-drywall', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-16', grupo:'MAT', nombre:'Cámaras y videovigilancia',           desc:'Cámaras CCTV, grabadores, soportes y accesorios de instalación.', slug:'precio-camaras-cctv-sistemas-especiales', ambitos:['construccion']},
+    {codigo:'MAT-18', grupo:'MAT', nombre:'Exteriores y paisajismo',             desc:'Grama, tierra, plantas y riego.', slug:'precio-grama-paisajismo-riego', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-19', grupo:'MAT', nombre:'Perfiles y tubos de acero',          desc:'Perfilería cuadrada y rectangular, tubería negra y correas.', slug:'precio-perfiles-tubos-acero', ambitos:['construccion']},
+    {codigo:'MAT-20', grupo:'MAT', nombre:'Angulares, planchuelas y barras',      desc:'Acero comercial por medida: angulares, pletinas y barras lisas.', slug:'precio-angulares-planchuelas-barras', ambitos:['construccion']},
+    {codigo:'MAT-21', grupo:'MAT', nombre:'Tolas y láminas de acero',             desc:'Tolas negras, corrugadas y galvanizadas por espesor.', slug:'precio-tolas-laminas-acero', ambitos:['construccion']},
+    {codigo:'MAT-22', grupo:'MAT', nombre:'Cerramiento perimetral',            desc:'Malla ciclónica, alambre de púas, telas metálicas y sus herrajes.', slug:'precio-malla-ciclonica-cerramiento', ambitos:['construccion']},
+    {codigo:'MAT-23', grupo:'MAT', nombre:'Perfilería de aluminio',            desc:'Angulares, planchuelas, tubos y molduras de aluminio por medida.', slug:'precio-perfiles-aluminio', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-24', grupo:'MAT', nombre:'Inodoros y urinarios',              desc:'Inodoros de una y dos piezas, tanques, basinetas y urinarios.', slug:'precio-inodoros-urinarios', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-25', grupo:'MAT', nombre:'Lavamanos y pedestales',            desc:'Lavamanos de pedestal, sobreponer y empotrar, con sus soportes.', slug:'precio-lavamanos-pedestales', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-26', grupo:'MAT', nombre:'Muebles y espejos de baño',         desc:'Muebles con lavamanos, botiquines, espejos y cabinas.', slug:'precio-muebles-espejos-bano', ambitos:['interiorismo']},
+    {codigo:'MAT-27', grupo:'MAT', nombre:'Accesorios de baño',                desc:'Juegos de accesorios, barras de seguridad y equipamiento de baño público.', slug:'precio-accesorios-bano', ambitos:['interiorismo']},
+    {codigo:'MAT-28', grupo:'MAT', nombre:'Alarmas y control de accesos',      desc:'Paneles, teclados, detectores, lectores y cerco eléctrico.', slug:'precio-alarmas-control-acceso', ambitos:['construccion']},
+    {codigo:'MAT-29', grupo:'MAT', nombre:'Detección de incendios',            desc:'Detectores, estaciones manuales, sirenas, paneles y extintores.', slug:'precio-deteccion-incendios', ambitos:['construccion']},
+    {codigo:'MAT-30', grupo:'MAT', nombre:'Cableado estructurado y redes',     desc:'Cable UTP y fibra, jacks, patch panels, racks y placas.', slug:'precio-cableado-estructurado-redes', ambitos:['construccion']},
+    {codigo:'MAT-31', grupo:'MAT', nombre:'Domótica e intercomunicadores',     desc:'Interruptores inteligentes, intercomunicadores y videoporteros.', slug:'precio-domotica-intercomunicadores', ambitos:['construccion','interiorismo']},
+    {codigo:'MAT-32', grupo:'MAT', nombre:'Tubería y conexiones',              desc:'Tubo PVC y CPVC, codos, tees, niples, llaves de paso, sifones y rejillas.', slug:'precio-tuberia-conexiones-pvc', ambitos:['construccion']},
+    {codigo:'MOS-04', grupo:'MOS', nombre:'Trámites y permisos',                 desc:'Licencias, no objeciones y conexiones de servicios.', slug:'costo-licencias-permisos-construccion', ambitos:['construccion']},
+    {codigo:'EQU-02', grupo:'EQU', nombre:'Alquiler de equipos de altura',       desc:'Plataformas elevadoras por día, semana y mes.', slug:'precio-alquiler-equipos-construccion', ambitos:['construccion']},
+    {codigo:'EQU-04', grupo:'EQU', nombre:'Herramientas y equipo menor',         desc:'Herramienta de compra.', slug:'precio-herramientas-construccion', ambitos:['construccion']}
   ];
 
   var etapas = [
@@ -2304,6 +2304,40 @@
   /* El auditor necesita ver los ítems retirados junto a sus cotizaciones
      para poder juzgarlos; si los escondiéramos, la próxima pasada los
      daría por buenos y volverían a publicarse. */
+  /* =========================================================
+     ÁMBITO POR ÍTEM
+
+     La categoría dice a qué público sirve, pero dentro de una misma
+     categoría hay dos cosas distintas. En eléctricos, el cableado, las
+     canaletas y los breakers son obra; los bombillos y las luminarias
+     los pide también quien decora, y un interiorista no cubica tubería
+     conduit. Lo mismo en plomería —la bomba y el tinaco son obra, el
+     fregadero y la mezcladora se especifican— y en pisos, donde las
+     crucetas y los calzos son consumible de instalación.
+
+     La regla va por el arranque del nombre, que es donde el catálogo
+     pone el sustantivo, y se aplica ENCIMA del ámbito de la categoría.
+     Un ítem sin regla hereda el de la suya.
+     ========================================================= */
+  var REGLAS_AMBITO = [
+    { cat: 'MAT-10', re: /^(cable|tubo|tuberia|tubería|canaleta|abrazadera|codo|caja|breaker|fusible|regleta|tapa|placa|tomacorriente|interruptor|switch|cinta|conector|curva|extension|extensión|centro de carga|panel de breaker)/i,
+      ambitos: ['construccion'] },
+    { cat: 'MAT-09', re: /^(bomba|tinaco|cisterna|regulador|manometro|manómetro|boya|interruptor|tapa|valvula|válvula|tanque)/i,
+      ambitos: ['construccion'] },
+    { cat: 'MAT-08', re: /^(cruceta|calzo|clip|junta|set|adoquin|adoquín|polvo|yeso|mortero|pegamento|fragua|separador)/i,
+      ambitos: ['construccion'] }
+  ];
+
+  var ambitoDeCat = {};
+  categorias.forEach(function (c) { ambitoDeCat[c.codigo] = c.ambitos || []; });
+  items.forEach(function (i) {
+    var r = null;
+    for (var k = 0; k < REGLAS_AMBITO.length; k++) {
+      if (REGLAS_AMBITO[k].cat === i.cat && REGLAS_AMBITO[k].re.test(i.nombre)) { r = REGLAS_AMBITO[k]; break; }
+    }
+    i.ambitos = r ? r.ambitos : (ambitoDeCat[i.cat] || []);
+  });
+
   var auditando = (typeof process !== 'undefined' && process.env
                    && process.env.ILYA_AUDITAR) || global.ILYA_AUDITAR;
   var publicables = auditando ? items : items.filter(function (i) {

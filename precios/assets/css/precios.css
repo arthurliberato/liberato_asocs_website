@@ -801,3 +801,36 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .banner-der.plegado .banner-plegar svg{transform:rotate(180deg)}
 }
 @media print{.banner-lateral{display:none}}
+
+/* =========================================================
+   SELECTOR DE ÁMBITO: CONSTRUCCIÓN O INTERIORISMO
+   No es un filtro más, así que no va de chip: decide qué catálogo se
+   está mirando y de él dependen las categorías que se ofrecen. Se
+   dibuja como control segmentado —una sola pieza con tres tramos— para
+   que se lea como una elección excluyente y no como tres botones.
+   ========================================================= */
+.ambitos{
+  display:inline-flex;flex-wrap:wrap;gap:2px;
+  background:var(--marfil);border:1px solid var(--marfil-hondo);
+  border-radius:100px;padding:3px;margin:.15rem 0 .1rem;
+}
+.ambito-op{
+  display:inline-flex;align-items:center;gap:.45rem;
+  border:0;background:transparent;border-radius:100px;
+  padding:.34rem .9rem;cursor:pointer;
+  font-family:Jost,sans-serif;font-size:.9rem;font-weight:500;
+  color:var(--ink-soft);
+  transition:background .18s var(--ease),color .18s var(--ease);
+}
+.ambito-op:hover{background:#fff;color:var(--verde-800)}
+.ambito-op[aria-pressed="true"]{background:var(--verde);color:#fff}
+/* El conteo va en la misma tinta que su botón, a media opacidad: es un
+   dato de apoyo, no una segunda etiqueta. */
+.ambito-n{
+  font-size:.8rem;font-variant-numeric:tabular-nums;
+  color:var(--ink-mute);
+}
+/* Al 75 % el conteo se quedaba en 4.2:1 sobre el verde. Al 88 % pasa
+   de 4.5 y sigue leyéndose como dato de apoyo y no como etiqueta. */
+.ambito-op[aria-pressed="true"] .ambito-n{color:rgba(255,255,255,.88)}
+.ambito-op:hover .ambito-n{color:var(--verde-700)}
