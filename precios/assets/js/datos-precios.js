@@ -17698,206 +17698,59 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-valencia-blanco-empotrar-01331100-063565',
     nota: 'LAVAMANOS CORONA VALENCIA BLANCO EMPOTRAR 013311001 · artículo 063565 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-003', PROV_CERARTE, 3058.2, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-arcadia',
-    itbis: false,
-    nota: 'LAVAMANOS ARCADIA · artículo CERA-00857 · ref. 40.5X41.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 316669.5, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-cluz-led-cdesague-y-manguera-flexible-soffio',
-    itbis: false,
-    nota: 'LAVAMANOS C/LUZ LED C/DESAGUE Y MANGUERA FLEXIBLE SOFFIO · artículo CERA-00875 · ref. 78X58X86 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 4411.62, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-lavanda',
-    itbis: false,
-    nota: 'LAVAMANOS LAVANDA · artículo CERA-00996 · ref. 48X43X34.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 7423.17, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-lotus',
-    itbis: false,
-    nota: 'LAVAMANOS LOTUS · artículo CERA-01007 · ref. 56X45X38 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 142203.39, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-rettangolo',
-    itbis: false,
-    nota: 'LAVAMANOS SUSPENDIDO RETTANGOLO · artículo CERA-01037 · ref. ST · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 105775.42, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-slot21',
-    itbis: false,
-    nota: 'LAVAMANOS SUSPENDIDO SLOT21 · artículo CERA-01038 · ref. 50X50X15 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 11144.26, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-violeta',
-    itbis: false,
-    nota: 'LAVAMANOS VIOLETA · artículo CERA-01043 · ref. 49X43.5X38 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_CERARTE, 14156.7, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-commercial-chueco-pdispensador-jabon',
-    itbis: false,
-    nota: 'LAVAMANOS SUSPENDIDO COMMERCIAL C/HUECO P/DISPENSADOR JABON · artículo CERA-30526 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-003', PROV_INNOVA, 9457, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-hy5079-blanco-pared-051423',
-    nota: 'LAVAMANOS AQUASPA HY5079 BLANCO PARED · artículo 051423 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 995, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-2003-blanco-1-hoyo-sin-pedest-057994',
-    nota: 'LAVAMANOS AQUASPA TR-2003 BLANCO 1 HOYO SIN PEDESTAL · artículo 057994 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 5895, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-5076-blanco-pared-051424',
-    nota: 'LAVAMANOS AQUASPA TR-5076 BLANCO PARED · artículo 051424 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 1995, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3043r-blanco-pared-051425',
-    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3043R BLANCO PARED · artículo 051425 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 1885, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3044-blanco-pared-051426',
-    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3044 BLANCO PARED · artículo 051426 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 1725, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3095-blanco-pared-051429',
-    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3095 BLANCO PARED · artículo 051429 · ref. Lavamanos · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-003', PROV_INNOVA, 7875, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-39-000226-negro-matte-pared-061760',
-    nota: 'LAVAMANOS COCOBELLA CB.39.000226 NEGRO MATTE PARED · artículo 061760 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2158.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-jazmin-1-h-01061511',
-    nota: 'Lavamano Jazmin 1 H · artículo 01-06-1511 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2925.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-mono-milenio-01061487',
-    nota: 'Lavamano Mono Milenio · artículo 01-06-1487 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 3186.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-mono-milenio-01061489',
-    nota: 'Lavamano Mono Milenio · artículo 01-06-1489 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1879.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-4-lucas-01061671',
-    nota: 'Lavamanos 4´´ Lucas · artículo 01-06-1671 · ref. NEGRO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2188.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-c-pedestal-bp518-01061538',
-    nota: 'Lavamanos C / Pedestal Bp518. · artículo 01-06-1538 · ref. BLANCO · marca TILBY-BAN. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1325.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-caprio-01061629',
-    nota: 'Lavamanos Caprio · artículo 01-06-1629 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2565.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-01061445',
-    nota: 'Lavamanos De Cerámica · artículo 01-06-1445 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 3266.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-goya-01061514',
-    nota: 'Lavamanos De Cerámica Goya · artículo 01-06-1514 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1859.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061510',
-    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1510 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1681.49, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061313',
-    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1313 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1789.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061512',
-    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1512 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1527.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061309',
-    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1309 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1582.49, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061311',
-    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1311 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2658.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061515',
-    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1515 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2653.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061317',
-    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1317 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 3027.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061524',
-    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1524 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 3026.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061320',
-    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1320 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2913.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061530',
-    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1530 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 2932.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061322',
-    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1322 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 3411.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061324',
-    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1324 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 1093, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-erie-01061626',
-    nota: 'Lavamanos Erie · artículo 01-06-1626 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 15293.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-helmi-01061618',
-    nota: 'Lavamanos Helmi · artículo 01-06-1618 · ref. 8003BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_OCHOA, 17783.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-surt-01061617',
-    nota: 'Lavamanos Surt · artículo 01-06-1617 · ref. 8009BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_CIMA, 3635, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-c-pedestal',
-    nota: 'LAVAMANOS BLANCO C/PEDESTAL · artículo 7506140607190. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_CERARTE, 185169.48, {
+  c('MAT-25-003', PROV_CERARTE, 185169.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-a-piso-rettangolo',
     itbis: false,
     nota: 'LAVAMANOS A PISO RETTANGOLO · artículo CERA-00839 · ref. ST · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-004', PROV_CERARTE, 15434.59, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-baltico',
-    itbis: false,
-    nota: 'LAVAMANOS BALTICO · artículo CERA-00871 · ref. 55X51.5X85 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-004', PROV_CERARTE, 48435.91, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-cpedestal-cdesague-helenio',
-    itbis: false,
-    nota: 'LAVAMANOS C/PEDESTAL C/DESAGUE HELENIO · artículo CERA-34614 · ref. 40X40X90 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-25-004', PROV_CERARTE, 228711.86, {
+  c('MAT-25-003', PROV_CERARTE, 228711.86, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-freestanding-cdesague-tuba-3',
     itbis: false,
     nota: 'LAVAMANOS FREESTANDING C/DESAGUE TUBA 3 · artículo CERA-00990 · ref. H=90 D50.4 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-004', PROV_CERARTE, 67666.44, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dpesdestal-olympia',
+  c('MAT-25-004', PROV_CERARTE, 3058.2, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-arcadia',
     itbis: false,
-    nota: 'LAVAMANOS D/PESDESTAL OLYMPIA · artículo CERA-36806 · ref. 55X36X85 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    nota: 'LAVAMANOS ARCADIA · artículo CERA-00857 · ref. 40.5X41.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-004', PROV_IBERICA, 2870, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-acuacer-con-pedestal-blanco/',
-    nota: 'Lavamano Acuacer Con Pedestal Blanco · artículo 008504. ' + SUPUESTO_ITBIS
+  c('MAT-25-004', PROV_CERARTE, 316669.5, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-cluz-led-cdesague-y-manguera-flexible-soffio',
+    itbis: false,
+    nota: 'LAVAMANOS C/LUZ LED C/DESAGUE Y MANGUERA FLEXIBLE SOFFIO · artículo CERA-00875 · ref. 78X58X86 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 4411.62, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-lavanda',
+    itbis: false,
+    nota: 'LAVAMANOS LAVANDA · artículo CERA-00996 · ref. 48X43X34.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 7423.17, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-lotus',
+    itbis: false,
+    nota: 'LAVAMANOS LOTUS · artículo CERA-01007 · ref. 56X45X38 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 142203.39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-rettangolo',
+    itbis: false,
+    nota: 'LAVAMANOS SUSPENDIDO RETTANGOLO · artículo CERA-01037 · ref. ST · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 105775.42, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-slot21',
+    itbis: false,
+    nota: 'LAVAMANOS SUSPENDIDO SLOT21 · artículo CERA-01038 · ref. 50X50X15 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 11144.26, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-violeta',
+    itbis: false,
+    nota: 'LAVAMANOS VIOLETA · artículo CERA-01043 · ref. 49X43.5X38 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-004', PROV_CERARTE, 14156.7, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-suspendido-commercial-chueco-pdispensador-jabon',
+    itbis: false,
+    nota: 'LAVAMANOS SUSPENDIDO COMMERCIAL C/HUECO P/DISPENSADOR JABON · artículo CERA-30526 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-25-004', PROV_IBERICA, 1750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-acuacer-sin-pedestal-blanco/',
     nota: 'LAVAMANO ACUACER SIN PEDESTAL BLANCO Ref. 07339 · artículo 008522 · ref. 07339. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-25-004', PROV_IBERICA, 2590.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-aqua-con-pedestal-blanco/',
-    nota: 'Lavamano Aqua Con Pedestal Blanco · artículo 018945. ' + SUPUESTO_ITBIS
   });
   c('MAT-25-004', PROV_IBERICA, 3450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-ganamax-con-semipedestal-bone/',
@@ -17907,681 +17760,828 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-maximo-sin-pedestal-blanco-c/',
     nota: 'Lavamano Maximo Sin Pedestal Blanco · artículo 008876. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_IBERICA, 4750, {
+  c('MAT-25-004', PROV_INNOVA, 9457, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-hy5079-blanco-pared-051423',
+    nota: 'LAVAMANOS AQUASPA HY5079 BLANCO PARED · artículo 051423 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-2003-blanco-1-hoyo-sin-pedest-057994',
+    nota: 'LAVAMANOS AQUASPA TR-2003 BLANCO 1 HOYO SIN PEDESTAL · artículo 057994 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 5895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-5076-blanco-pared-051424',
+    nota: 'LAVAMANOS AQUASPA TR-5076 BLANCO PARED · artículo 051424 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 1995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3043r-blanco-pared-051425',
+    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3043R BLANCO PARED · artículo 051425 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 1885, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3044-blanco-pared-051426',
+    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3044 BLANCO PARED · artículo 051426 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 1725, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-3095-blanco-pared-051429',
+    nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-3095 BLANCO PARED · artículo 051429 · ref. Lavamanos · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-004', PROV_INNOVA, 7875, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-39-000226-negro-matte-pared-061760',
+    nota: 'LAVAMANOS COCOBELLA CB.39.000226 NEGRO MATTE PARED · artículo 061760 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2158.15, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-jazmin-1-h-01061511',
+    nota: 'Lavamano Jazmin 1 H · artículo 01-06-1511 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2925.8, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-mono-milenio-01061487',
+    nota: 'Lavamano Mono Milenio · artículo 01-06-1487 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 3186.28, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-mono-milenio-01061489',
+    nota: 'Lavamano Mono Milenio · artículo 01-06-1489 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1879.63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-4-lucas-01061671',
+    nota: 'Lavamanos 4´´ Lucas · artículo 01-06-1671 · ref. NEGRO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2188.73, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-c-pedestal-bp518-01061538',
+    nota: 'Lavamanos C / Pedestal Bp518. · artículo 01-06-1538 · ref. BLANCO · marca TILBY-BAN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1325.53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-caprio-01061629',
+    nota: 'Lavamanos Caprio · artículo 01-06-1629 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2565.83, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-01061445',
+    nota: 'Lavamanos De Cerámica · artículo 01-06-1445 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 3266.84, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-goya-01061514',
+    nota: 'Lavamanos De Cerámica Goya · artículo 01-06-1514 · ref. MARFIL · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1859.63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061510',
+    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1510 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1681.49, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061313',
+    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1313 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1789.16, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-jazmin-01061512',
+    nota: 'Lavamanos De Cerámica Jazmin · artículo 01-06-1512 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1527.27, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061309',
+    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1309 · ref. BLANCO · marca CATO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1582.49, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-junior-01061311',
+    nota: 'Lavamanos De Cerámica Junior · artículo 01-06-1311 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2658.6, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061515',
+    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1515 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2653.91, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061317',
+    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1317 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 3027.2, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061524',
+    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1524 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 3026.28, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-terra-01061320',
+    nota: 'Lavamanos De Cerámica Terra · artículo 01-06-1320 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2913.99, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061530',
+    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1530 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 2932.6, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061322',
+    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1322 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 3411.25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-de-ceramica-zurich-01061324',
+    nota: 'Lavamanos De Cerámica Zurich · artículo 01-06-1324 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 1093, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-erie-01061626',
+    nota: 'Lavamanos Erie · artículo 01-06-1626 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 15293.22, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-helmi-01061618',
+    nota: 'Lavamanos Helmi · artículo 01-06-1618 · ref. 8003BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_OCHOA, 17783.95, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-surt-01061617',
+    nota: 'Lavamanos Surt · artículo 01-06-1617 · ref. 8009BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_CIMA, 3635, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-c-pedestal',
+    nota: 'LAVAMANOS BLANCO C/PEDESTAL · artículo 7506140607190. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_CERARTE, 15434.59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-baltico',
+    itbis: false,
+    nota: 'LAVAMANOS BALTICO · artículo CERA-00871 · ref. 55X51.5X85 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-005', PROV_CERARTE, 48435.91, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-cpedestal-cdesague-helenio',
+    itbis: false,
+    nota: 'LAVAMANOS C/PEDESTAL C/DESAGUE HELENIO · artículo CERA-34614 · ref. 40X40X90 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-005', PROV_CERARTE, 67666.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dpesdestal-olympia',
+    itbis: false,
+    nota: 'LAVAMANOS D/PESDESTAL OLYMPIA · artículo CERA-36806 · ref. 55X36X85 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-25-005', PROV_IBERICA, 2870, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-acuacer-con-pedestal-blanco/',
+    nota: 'Lavamano Acuacer Con Pedestal Blanco · artículo 008504. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_IBERICA, 2590.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-aqua-con-pedestal-blanco/',
+    nota: 'Lavamano Aqua Con Pedestal Blanco · artículo 018945. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-005', PROV_IBERICA, 4750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-torino-con-pedestal-blanco/',
     nota: 'Lavamano Torino Con Pedestal Blanco · artículo 009577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_IBERICA, 4366, {
+  c('MAT-25-005', PROV_IBERICA, 4366, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamano-torino-con-pedestal-bone/',
     nota: 'Lavamano Torino Con Pedestal Bone · artículo 009578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2094, {
+  c('MAT-25-005', PROV_INNOVA, 2094, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-210-pedestal-1-hoyo-blanco-067205',
     nota: 'LAVAMANOS AQUASPA 210 PEDESTAL 1 HOYO BLANCO · artículo 067205 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 3884, {
+  c('MAT-25-005', PROV_INNOVA, 3884, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-0004-pedestal-1-hoyo-bla-023454',
     nota: 'LAVAMANOS COCOBELLA CB.22.0004 PEDESTAL 1 HOYO BLANCO · artículo 023454 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 4050, {
+  c('MAT-25-005', PROV_INNOVA, 4050, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-001601-pedestal-1-hoyo-b-023460',
     nota: 'LAVAMANOS COCOBELLA CB.22.001601 PEDESTAL 1 HOYO BLANCO CB.22.0016 · artículo 023460 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2339, {
+  c('MAT-25-005', PROV_INNOVA, 2339, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-0019-pedestal-1-hoyo-bla-023449',
     nota: 'LAVAMANOS COCOBELLA CB.22.0019 PEDESTAL 1 HOYO BLANCO · artículo 023449 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2243, {
+  c('MAT-25-005', PROV_INNOVA, 2243, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-001974-pedestal-1-hoyo-b-023450',
     nota: 'LAVAMANOS COCOBELLA CB.22.001974 PEDESTAL 1 HOYO BONE · artículo 023450 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 3880, {
+  c('MAT-25-005', PROV_INNOVA, 3880, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-0022-pedestal-blanco-1-h-039263',
     nota: 'LAVAMANOS COCOBELLA CB.22.0022 PEDESTAL BLANCO 1 HOYO · artículo 039263 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 4489, {
+  c('MAT-25-005', PROV_INNOVA, 4489, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-002201-pedestal-negro-1-048577',
     nota: 'LAVAMANOS COCOBELLA CB.22.002201 PEDESTAL NEGRO 1 HOYO · artículo 048577 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 3665, {
+  c('MAT-25-005', PROV_INNOVA, 3665, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-22-003301-pedestal-negro-1-048578',
     nota: 'LAVAMANOS COCOBELLA CB.22.003301 PEDESTAL NEGRO 1 HOYO · artículo 048578 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 1345, {
+  c('MAT-25-005', PROV_INNOVA, 1345, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-acuacer-blanco-1-hoyo-sin-pedesta-058486',
     nota: 'LAVAMANOS CORONA ACUACER BLANCO 1 HOYO SIN PEDESTAL · artículo 058486 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 5049, {
+  c('MAT-25-005', PROV_INNOVA, 5049, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-free-003891001-blanco-063566',
     nota: 'LAVAMANOS CORONA FREE 003891001 BLANCO · artículo 063566 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2325, {
+  c('MAT-25-005', PROV_INNOVA, 2325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-manantial-blanco-con-pedestal-731-063563',
     nota: 'LAVAMANOS CORONA MANANTIAL BLANCO CON PEDESTAL 731101001 · artículo 063563 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2385, {
+  c('MAT-25-005', PROV_INNOVA, 2385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-milano-blanco-100-con-pedestal-va-063564',
     nota: 'LAVAMANOS CORONA MILANO BLANCO 100 CON PEDESTAL VARONA 014111000 · artículo 063564 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2619, {
+  c('MAT-25-005', PROV_INNOVA, 2619, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-milano-bone-103-con-pedestal-varo-063570',
     nota: 'LAVAMANOS CORONA MILANO BONE 103 CON PEDESTAL VARONA 014111030 · artículo 063570 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 6975, {
+  c('MAT-25-005', PROV_INNOVA, 6975, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-corona-piamonte-blanco-503281001-041289',
     nota: 'LAVAMANOS CORONA PIAMONTE BLANCO 503281001 · artículo 041289 · ref. Lavamanos · marca CORONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 216, {
+  c('MAT-25-005', PROV_INNOVA, 216, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-roma-6056-1-plastico-sin-pedestal-blanco-067269',
     nota: 'LAVAMANOS ROMA 6056 1 PLASTICO SIN PEDESTAL BLANCO 31X23X11 CM · artículo 067269 · ref. Lavamanos · marca ROMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2295, {
+  c('MAT-25-005', PROV_INNOVA, 2295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-victory-tr363-pedestal-1-hoyo-blanco-046849',
     nota: 'LAVAMANOS VICTORY TR363 PEDESTAL 1 HOYO BLANCO · artículo 046849 · ref. Lavamanos · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2534, {
+  c('MAT-25-005', PROV_INNOVA, 2534, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-victory-tr364-pedestal-1-hoyo-blanco-043841',
     nota: 'LAVAMANOS VICTORY TR364 PEDESTAL 1 HOYO BLANCO · artículo 043841 · ref. Lavamanos · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-004', PROV_INNOVA, 2395, {
+  c('MAT-25-005', PROV_INNOVA, 2395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-victory-tr364-pedestal-1-hoyo-bone-054694',
     nota: 'LAVAMANOS VICTORY TR364 PEDESTAL 1 HOYO BONE · artículo 054694 · ref. Lavamanos · marca VICTORY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 8964.65, {
+  c('MAT-25-006', PROV_OCHOA, 8964.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-clap-sobreponer-01061503',
     nota: 'Lavabo Clap Sobreponer · artículo 01-06-1503 · ref. LV-CLAPBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 13554.16, {
+  c('MAT-25-006', PROV_OCHOA, 13554.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-de-sobreponer-lucerna-1p-01061304',
     nota: 'Lavabo De Sobreponer Lucerna 1P · artículo 01-06-1304 · ref. LV-2-1P · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 9362.62, {
+  c('MAT-25-006', PROV_OCHOA, 9362.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-de-sobreponer-lucerna-c-r-3p-01061306',
     nota: 'Lavabo De Sobreponer Lucerna C / R 3P · artículo 01-06-1306 · ref. LV-2-3PBLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 2960.63, {
+  c('MAT-25-006', PROV_OCHOA, 2960.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-sobreponer-ovalin-4-01061492',
     nota: 'Lavamano Sobreponer Ovalin 4\'\' · artículo 01-06-1492 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3253.11, {
+  c('MAT-25-006', PROV_OCHOA, 3253.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-sobreponer-redondo-4-01061493',
     nota: 'Lavamano Sobreponer Redondo 4\'\' · artículo 01-06-1493 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3272.47, {
+  c('MAT-25-006', PROV_OCHOA, 3272.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-sobreponer-ovalin-1h-01061516',
     nota: 'Lavamano Sobreponer Ovalin 1H · artículo 01-06-1516 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3261.93, {
+  c('MAT-25-006', PROV_OCHOA, 3261.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamano-sobreponer-redondo-1h-01061517',
     nota: 'Lavamano Sobreponer Redondo 1H · artículo 01-06-1517 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 12545.35, {
+  c('MAT-25-006', PROV_OCHOA, 12545.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-sobreponer-1p-creb-futura-m-01061669',
     nota: 'Lavabo Sobreponer 1P Creb Futura M · artículo 01-06-1669 · ref. LV-FUTURA1M · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 5971.47, {
+  c('MAT-25-006', PROV_OCHOA, 5971.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-sobreponer-1p-moreab-01061543',
     nota: 'Lavabo Sobreponer 1P Moreab · artículo 01-06-1543 · ref. BLANCOLVMOREA1B · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4837.48, {
+  c('MAT-25-006', PROV_OCHOA, 4837.48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-sobreponer-1p-santorini-01061541',
     nota: 'Lavabo Sobreponer 1P Santorini · artículo 01-06-1541 · ref. BLANCOLVSANTORINI1 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 5533.86, {
+  c('MAT-25-006', PROV_OCHOA, 5533.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-sobreponer-sreb-moreab-01061542',
     nota: 'Lavabo Sobreponer Sreb Moreab · artículo 01-06-1542 · ref. BLANCOLVMOREAB · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4645.55, {
+  c('MAT-25-006', PROV_OCHOA, 4645.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-sobreponer-sreb-santorini-01061540',
     nota: 'Lavabo Sobreponer Sreb Santorini · artículo 01-06-1540 · ref. BLANCOLVSANTORINI · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4912.67, {
+  c('MAT-25-006', PROV_OCHOA, 4912.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-artemis-01061616',
     nota: 'Lavamanos Artemis · artículo 01-06-1616 · ref. C004BLANCO/ORO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 2085.37, {
+  c('MAT-25-006', PROV_OCHOA, 2085.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-atenas-36x36-01061595',
     nota: 'Lavamanos Atenas 36X36 · artículo 01-06-1595 · ref. 5206CBLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 6135.36, {
+  c('MAT-25-006', PROV_OCHOA, 6135.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-atenea-01061615',
     nota: 'Lavamanos Atenea · artículo 01-06-1615 · ref. C005BLANCO/PLATA · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3507.02, {
+  c('MAT-25-006', PROV_OCHOA, 3507.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-balder-cuad-01061654',
     nota: 'Lavamanos Balder Cuad. · artículo 01-06-1654 · ref. 5506BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4072.97, {
+  c('MAT-25-006', PROV_OCHOA, 4072.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-bragi-red-01061657',
     nota: 'Lavamanos Bragi Red. · artículo 01-06-1657 · ref. 8428MA-10ART.COLOR · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 11061.07, {
+  c('MAT-25-006', PROV_OCHOA, 11061.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-cassini-sobreponer-01061331',
     nota: 'Lavamanos Cassini Sobreponer · artículo 01-06-1331 · ref. LV-4BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 11790.9, {
+  c('MAT-25-006', PROV_OCHOA, 11790.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-cassini-sobreponer-01061332',
     nota: 'Lavamanos Cassini Sobreponer · artículo 01-06-1332 · ref. LV-4MMARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 7782.01, {
+  c('MAT-25-006', PROV_OCHOA, 7782.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-cibeles-01061612',
     nota: 'Lavamanos Cibeles · artículo 01-06-1612 · ref. 7023BLANCCALACATTA · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 7649.83, {
+  c('MAT-25-006', PROV_OCHOA, 7649.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-clio-01061613',
     nota: 'Lavamanos Clio · artículo 01-06-1613 · ref. C019NEGRO/PLATA · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 6280.34, {
+  c('MAT-25-006', PROV_OCHOA, 6280.34, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-cloe-01061614',
     nota: 'Lavamanos Cloe · artículo 01-06-1614 · ref. C020NEGRO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 5418.52, {
+  c('MAT-25-006', PROV_OCHOA, 5418.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-delos-01061608',
     nota: 'Lavamanos Delos · artículo 01-06-1608 · ref. LX-C036NEGRO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 2177.81, {
+  c('MAT-25-006', PROV_OCHOA, 2177.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-eros-41x41-01061596',
     nota: 'Lavamanos Eros 41X41 · artículo 01-06-1596 · ref. 5002BBLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4880.62, {
+  c('MAT-25-006', PROV_OCHOA, 4880.62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-frey-cuad-01061655',
     nota: 'Lavamanos Frey Cuad. · artículo 01-06-1655 · ref. LX-5529BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 5578.97, {
+  c('MAT-25-006', PROV_OCHOA, 5578.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-isis-41x41-01061611',
     nota: 'Lavamanos Isis 41X41 · artículo 01-06-1611 · ref. 7024BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 2769.61, {
+  c('MAT-25-006', PROV_OCHOA, 2769.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-jano-red-01061656',
     nota: 'Lavamanos Jano Red. · artículo 01-06-1656 · ref. 5554BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3246.27, {
+  c('MAT-25-006', PROV_OCHOA, 3246.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-label-01061625',
     nota: 'Lavamanos Label · artículo 01-06-1625 · ref. 5271BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 4096.36, {
+  c('MAT-25-006', PROV_OCHOA, 4096.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-odin-red-01061653',
     nota: 'Lavamanos Odin Red. · artículo 01-06-1653 · ref. 8428MA-9ART.COLOR · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 6202.55, {
+  c('MAT-25-006', PROV_OCHOA, 6202.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-sobrecu-elipsis-01061643',
     nota: 'Lavamanos Sobrecu Elipsis · artículo 01-06-1643 · ref. BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 3056.22, {
+  c('MAT-25-006', PROV_OCHOA, 3056.22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-square-38x38-01061594',
     nota: 'Lavamanos Square 38X38 · artículo 01-06-1594 · ref. 5079CBLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 10519.02, {
+  c('MAT-25-006', PROV_OCHOA, 10519.02, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-trazzo-sobreponer-01061333',
     nota: 'Lavamanos Trazzo Sobreponer · artículo 01-06-1333 · ref. LV-5BLANCO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_OCHOA, 10865.44, {
+  c('MAT-25-006', PROV_OCHOA, 10865.44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavamanos-trazzo-sobreponer-01061334',
     nota: 'Lavamanos Trazzo Sobreponer · artículo 01-06-1334 · ref. LV-5MMARFIL · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_CIMA, 1150, {
+  c('MAT-25-006', PROV_CIMA, 1150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-1-hoyo-1',
     nota: 'LAVAMANOS BLANCO 1 HOYO · artículo 057994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_CIMA, 1195, {
+  c('MAT-25-006', PROV_CIMA, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/lavamanos-blanco-1-hoyo',
     nota: 'LAVAMANOS BLANCO 1 HOYO · artículo 097818. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_CERARTE, 1398.48, {
+  c('MAT-25-006', PROV_CERARTE, 1398.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-almendro',
     itbis: false,
     nota: 'LAVAMANOS ALMENDRO · artículo CERA-00842 · ref. 34X29X11.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 1882.68, {
+  c('MAT-25-006', PROV_CERARTE, 1882.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-cilindric',
     itbis: false,
     nota: 'LAVAMANOS CILINDRIC · artículo CERA-00887 · ref. 46.5X46.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2792.89, {
+  c('MAT-25-006', PROV_CERARTE, 2792.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-adenium',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE ADENIUM · artículo CERA-13665 · ref. 47.5X24.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2216.58, {
+  c('MAT-25-006', PROV_CERARTE, 2216.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-avellano',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE AVELLANO · artículo CERA-00918 · ref. 45X45X13 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 1867.46, {
+  c('MAT-25-006', PROV_CERARTE, 1867.46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-bowl',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE BOWL · artículo CERA-00920 · ref. 40X40X15.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 55233.05, {
+  c('MAT-25-006', PROV_CERARTE, 55233.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-graffio',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE GRAFFIO · artículo CERA-00957 · ref. 72X38 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 67894.07, {
+  c('MAT-25-006', PROV_CERARTE, 67894.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-graffio',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE GRAFFIO · artículo CERA-00958 · ref. 72X50 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2004.46, {
+  c('MAT-25-006', PROV_CERARTE, 2004.46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-chloe',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CHLOE · artículo CERA-00933 · ref. 45X45X17 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 1552.55, {
+  c('MAT-25-006', PROV_CERARTE, 1552.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-conic',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CONIC · artículo CERA-00935 · ref. 42X42X15 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 107745.77, {
+  c('MAT-25-006', PROV_CERARTE, 107745.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-doble-cdesague-graffio',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE DOBLE C/DESAGUE GRAFFIO · artículo CERA-00940 · ref. 108X50 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 16484.5, {
+  c('MAT-25-006', PROV_CERARTE, 16484.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-durastyle',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE DURASTYLE · artículo CERA-00942 · ref. 60X38 · marca DURAVIT. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2227.51, {
+  c('MAT-25-006', PROV_CERARTE, 2227.51, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-rosella',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE ROSELLA · artículo CERA-00967 · ref. 48X37X13 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 1740.49, {
+  c('MAT-25-006', PROV_CERARTE, 1740.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-oval',
     itbis: false,
     nota: 'LAVAMANOS OVAL · artículo CERA-01016 · ref. 41X33X14.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2706.87, {
+  c('MAT-25-006', PROV_CERARTE, 2706.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-oval-iris',
     itbis: false,
     nota: 'LAVAMANOS OVAL IRIS · artículo CERA-01017 · ref. 63X43X11.8 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3545.67, {
+  c('MAT-25-006', PROV_CERARTE, 3545.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-morera',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE MORERA · artículo CERA-31550 · ref. 35X39X12 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 5089.44, {
+  c('MAT-25-006', PROV_CERARTE, 5089.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-almez',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE ALMEZ · artículo CERA-31637 · ref. 40X40X14.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2847.82, {
+  c('MAT-25-006', PROV_CERARTE, 2847.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-rubra',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE RUBRA · artículo CERA-31627 · ref. 64.5X42X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 5507.39, {
+  c('MAT-25-006', PROV_CERARTE, 5507.39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ficus',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE FICUS · artículo CERA-31628 · ref. 28.5X28.5X11.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4439.94, {
+  c('MAT-25-006', PROV_CERARTE, 4439.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-pavonia',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE PAVONIA · artículo CERA-31640 · ref. 31x31x15.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 5133.69, {
+  c('MAT-25-006', PROV_CERARTE, 5133.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cernuum',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CERNUUM · artículo CERA-31635 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 21650.65, {
+  c('MAT-25-006', PROV_CERARTE, 21650.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-tajo',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE TAJO · artículo CERA-32818 · ref. 40X40X14 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 14061.67, {
+  c('MAT-25-006', PROV_CERARTE, 14061.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-helix',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE HELIX · artículo CERA-32819 · ref. 40X40X12 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 23882.64, {
+  c('MAT-25-006', PROV_CERARTE, 23882.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-biloba',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE BILOBA · artículo CERA-32820 · ref. 40X40X13 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 47599.89, {
+  c('MAT-25-006', PROV_CERARTE, 47599.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-rim54',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE RIM54 · artículo CERA-32985 · ref. 54X13.6 · marca ANTONIO LUPI. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 47675.45, {
+  c('MAT-25-006', PROV_CERARTE, 47675.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-verso',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE VERSO · artículo CERA-32994 · ref. 50X12 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 13857.66, {
+  c('MAT-25-006', PROV_CERARTE, 13857.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-d-neo',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE D-NEO · artículo CERA-34054 · ref. 60X40 · marca DURAVIT. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 10817.95, {
+  c('MAT-25-006', PROV_CERARTE, 10817.95, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-d-neo',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE D-NEO · artículo CERA-34053 · ref. 40X40 · marca DURAVIT. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3435.18, {
+  c('MAT-25-006', PROV_CERARTE, 3435.18, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-merlot',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE MERLOT · artículo CERA-35179 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4834.43, {
+  c('MAT-25-006', PROV_CERARTE, 4834.43, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-merlot',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE MERLOT · artículo CERA-35181 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4701.76, {
+  c('MAT-25-006', PROV_CERARTE, 4701.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cuadrado-farga',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CUADRADO FARGA · artículo CERA-35184 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3430.31, {
+  c('MAT-25-006', PROV_CERARTE, 3430.31, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cuadrado-farga',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CUADRADO FARGA · artículo CERA-35182 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4181.03, {
+  c('MAT-25-006', PROV_CERARTE, 4181.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cuadrado-farga',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE CUADRADO FARGA · artículo CERA-35183 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3266.87, {
+  c('MAT-25-006', PROV_CERARTE, 3266.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-yusu',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO YUSU · artículo CERA-35185 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4181.07, {
+  c('MAT-25-006', PROV_CERARTE, 4181.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-yusu',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO YUSU · artículo CERA-35186 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4680.28, {
+  c('MAT-25-006', PROV_CERARTE, 4680.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-yusu',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO YUSU · artículo CERA-35187 · ref. 50X37X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4567.44, {
+  c('MAT-25-006', PROV_CERARTE, 4567.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-sauce',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO SAUCE · artículo CERA-35188 · ref. 36X36X12.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4933.08, {
+  c('MAT-25-006', PROV_CERARTE, 4933.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-nardus',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE NARDUS · artículo CERA-35189 · ref. 39.5X39.5X12 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3693.58, {
+  c('MAT-25-006', PROV_CERARTE, 3693.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-cdesague-amur',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO C/DESAGUE AMUR · artículo CERA-35206 · ref. 58X37.5X19 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4143.79, {
+  c('MAT-25-006', PROV_CERARTE, 4143.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-cdesague-amur',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO C/DESAGUE AMUR · artículo CERA-35205 · ref. 58X37.5X19 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 5728.54, {
+  c('MAT-25-006', PROV_CERARTE, 5728.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-cdesague-clematis',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO C/DESAGUE CLEMATIS · artículo CERA-35207 · ref. 58.5X40X15 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4797.72, {
+  c('MAT-25-006', PROV_CERARTE, 4797.72, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-suazi',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE SUAZI · artículo CERA-35209 · ref. 39X39X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 6260.22, {
+  c('MAT-25-006', PROV_CERARTE, 6260.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-suazi',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE SUAZI · artículo CERA-35208 · ref. 39X39X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 4797.71, {
+  c('MAT-25-006', PROV_CERARTE, 4797.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-suazi',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE SUAZI · artículo CERA-35210 · ref. 39X39X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 5426.37, {
+  c('MAT-25-006', PROV_CERARTE, 5426.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-cdesague-ciruleo',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO C/DESAGUE CIRULEO · artículo CERA-35212 · ref. 43X43X17 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3359.29, {
+  c('MAT-25-006', PROV_CERARTE, 3359.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-bical',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO BICAL · artículo CERA-35200 · ref. 52.5X32.5X15.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 3128.24, {
+  c('MAT-25-006', PROV_CERARTE, 3128.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-ovalado-kobus',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OVALADO KOBUS · artículo CERA-35201 · ref. 60X38X12.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2696.08, {
+  c('MAT-25-006', PROV_CERARTE, 2696.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redodndo-lisbon',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDODNDO LISBON · artículo CERA-35202 · ref. 400X37X11 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 2731.52, {
+  c('MAT-25-006', PROV_CERARTE, 2731.52, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-monton',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO MONTON · artículo CERA-35203 · ref. 37.5X37.5X13.5 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 12932.93, {
+  c('MAT-25-006', PROV_CERARTE, 12932.93, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-click-clack-rin',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE CLIK-CLAK RIN · artículo CERA-36585 · ref. 39X39X10.8 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 14311.43, {
+  c('MAT-25-006', PROV_CERARTE, 14311.43, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-click-clack-florida',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE CLICK-CLACK FLORIDA · artículo CERA-36586 · ref. 38.5X38.5X13.8 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 12923.41, {
+  c('MAT-25-006', PROV_CERARTE, 12923.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-cdesague-click-clack-duero',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE C/DESAGUE CLICK-CLACK DUERO · artículo CERA-36587 · ref. 45.7X32.8X12.2 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 23959.15, {
+  c('MAT-25-006', PROV_CERARTE, 23959.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-olympia',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE OLYMPIA · artículo CERA-36805 · ref. 48X34.5X14 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 6952.16, {
+  c('MAT-25-006', PROV_CERARTE, 6952.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-aq21295',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO VIKA · artículo CERA-36988 · ref. 36X36X12 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_CERARTE, 6952.19, {
+  c('MAT-25-006', PROV_CERARTE, 6952.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lavamanos-dtope-redondo-aq21295',
     itbis: false,
     nota: 'LAVAMANOS D/TOPE REDONDO VIKA · artículo CERA-36990 · ref. 36X36X12 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-25-005', PROV_IBERICA, 5000, {
+  c('MAT-25-006', PROV_IBERICA, 5000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-apoyo-cascade-vessel-blanco-sin-desage/',
     nota: 'Lavamanos Apoyo Cascade Vessel Blanco · artículo 016553. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 2395, {
+  c('MAT-25-006', PROV_INNOVA, 2395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-5061-blanco-tipo-tope-051409',
     nota: 'LAVAMANOS AQUASPA TR-5061 BLANCO TIPO TOPE · artículo 051409 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1735, {
+  c('MAT-25-006', PROV_INNOVA, 1735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-5883-blanco-tipo-tope-051410',
     nota: 'LAVAMANOS AQUASPA TR-5883 BLANCO TIPO TOPE · artículo 051410 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1895, {
+  c('MAT-25-006', PROV_INNOVA, 1895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8004-blanco-tipo-tope-051411',
     nota: 'LAVAMANOS AQUASPA TR-8004 BLANCO TIPO TOPE · artículo 051411 · ref. Lavamanos · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1675, {
+  c('MAT-25-006', PROV_INNOVA, 1675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8038-blanco-tipo-tope-051418',
     nota: 'LAVAMANOS AQUASPA TR-8038 BLANCO TIPO TOPE · artículo 051418 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 2225, {
+  c('MAT-25-006', PROV_INNOVA, 2225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8060-blanco-tipo-tope-051416',
     nota: 'LAVAMANOS AQUASPA TR-8060 BLANCO TIPO TOPE · artículo 051416 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 2595, {
+  c('MAT-25-006', PROV_INNOVA, 2595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-tr-8064-45-blanco-tipo-tope-051414',
     nota: 'LAVAMANOS AQUASPA TR-8064-45 BLANCO TIPO TOPE · artículo 051414 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1975, {
+  c('MAT-25-006', PROV_INNOVA, 1975, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-453-blanco-tipo-to-051407',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-453 BLANCO TIPO TOPE · artículo 051407 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1725, {
+  c('MAT-25-006', PROV_INNOVA, 1725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-8006-blanco-tipo-t-051430',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-8006 BLANCO TIPO TOPE · artículo 051430 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1495, {
+  c('MAT-25-006', PROV_INNOVA, 1495, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-8025b-blanco-tipo-051412',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-8025B BLANCO TIPO TOPE · artículo 051412 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 2760, {
+  c('MAT-25-006', PROV_INNOVA, 2760, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-8025t-tipo-tope-051419',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-8025T TIPO TOPE · artículo 051419 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 2995, {
+  c('MAT-25-006', PROV_INNOVA, 2995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-8120t-tipo-tope-051417',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-8120T TIPO TOPE · artículo 051417 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 1995, {
+  c('MAT-25-006', PROV_INNOVA, 1995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-aquaspa-3-aquaplin-tr-8122-blanco-tipo-t-051422',
     nota: 'LAVAMANOS AQUASPA/AQUAPLIN TR-8122 BLANCO TIPO TOPE · artículo 051422 · ref. Lavamanos · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 3144, {
+  c('MAT-25-006', PROV_INNOVA, 3144, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0037-1-hoyo-blanco-036628',
     nota: 'LAVAMANOS COCOBELLA CB.18.0037 1 HOYO BLANCO · artículo 036628 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 3195, {
+  c('MAT-25-006', PROV_INNOVA, 3195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0038-x-blanco-tipo-tope-036634',
     nota: 'LAVAMANOS COCOBELLA CB.18.0038-X BLANCO TIPO TOPE · artículo 036634 · ref. Lavamanos · marca COCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 5355, {
+  c('MAT-25-006', PROV_INNOVA, 5355, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-004603-x-oro-tipo-tope-042786',
     nota: 'LAVAMANOS COCOBELLA CB.18.004603-X ORO TIPO TOPE · artículo 042786 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 5933, {
+  c('MAT-25-006', PROV_INNOVA, 5933, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-004605-x-plata-tipo-tope-042785',
     nota: 'LAVAMANOS COCOBELLA CB.18.004605-X PLATA TIPO TOPE · artículo 042785 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 3890, {
+  c('MAT-25-006', PROV_INNOVA, 3890, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0050-x-blanco-tipo-tope-036633',
     nota: 'LAVAMANOS COCOBELLA CB.18.0050-X BLANCO TIPO TOPE · artículo 036633 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 3529, {
+  c('MAT-25-006', PROV_INNOVA, 3529, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0070-amarillo-041945',
     nota: 'LAVAMANOS COCOBELLA CB.18.0070 AMARILLO · artículo 041945 · ref. Lavamanos · marca COCO. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-005', PROV_INNOVA, 3950, {
+  c('MAT-25-006', PROV_INNOVA, 3950, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/lavamanos/lavamanos-cocobella-cb-18-0073-negro-041948',
     nota: 'LAVAMANOS COCOBELLA CB.18.0073 NEGRO · artículo 041948 · ref. Lavamanos · marca COCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1327.39, {
+  c('MAT-25-007', PROV_OCHOA, 1327.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-caprio-01061630',
     nota: 'Pedestal Caprio · artículo 01-06-1630 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1093, {
+  c('MAT-25-007', PROV_OCHOA, 1093, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-erie-01061627',
     nota: 'Pedestal Erie · artículo 01-06-1627 · ref. BLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2016.67, {
+  c('MAT-25-007', PROV_OCHOA, 2016.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-lavamanos-milenio-01061488',
     nota: 'Pedestal Lavamanos Milenio · artículo 01-06-1488 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1618.35, {
+  c('MAT-25-007', PROV_OCHOA, 1618.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-lucas-01061672',
     nota: 'Pedestal Lucas · artículo 01-06-1672 · ref. NEGRO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 891.27, {
+  c('MAT-25-007', PROV_OCHOA, 891.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-magna-01061632',
     nota: 'Pedestal Magna · artículo 01-06-1632 · ref. 3209FBLANCO · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2382.44, {
+  c('MAT-25-007', PROV_OCHOA, 2382.44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-milenio-01061490',
     nota: 'Pedestal Milenio · artículo 01-06-1490 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1778.99, {
+  c('MAT-25-007', PROV_OCHOA, 1778.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-goya-01061446',
     nota: 'Pedestal Para Lavamanos Goya · artículo 01-06-1446 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2276.8, {
+  c('MAT-25-007', PROV_OCHOA, 2276.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-goya-01061448',
     nota: 'Pedestal Para Lavamanos Goya · artículo 01-06-1448 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1102.1, {
+  c('MAT-25-007', PROV_OCHOA, 1102.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-universal-01061482',
     nota: 'Pedestal Universal · artículo 01-06-1482 · ref. BLANCO · marca TREBOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 979.72, {
+  c('MAT-25-007', PROV_OCHOA, 979.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-vallarta-01061604',
     nota: 'Pedestal Vallarta · artículo 01-06-1604 · ref. BLANCO · marca ITALGRIF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2305.73, {
+  c('MAT-25-007', PROV_OCHOA, 2305.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-01061316',
     nota: 'Pedestal Para Lavamanos · artículo 01-06-1316 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2357.25, {
+  c('MAT-25-007', PROV_OCHOA, 2357.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-01061321',
     nota: 'Pedestal Para Lavamanos · artículo 01-06-1321 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 1986.77, {
+  c('MAT-25-007', PROV_OCHOA, 1986.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-jazmin-01061310',
     nota: 'Pedestal Para Lavamanos Jazmin · artículo 01-06-1310 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2014.01, {
+  c('MAT-25-007', PROV_OCHOA, 2014.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-terra-01061319',
     nota: 'Pedestal Para Lavamanos Terra · artículo 01-06-1319 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2376.73, {
+  c('MAT-25-007', PROV_OCHOA, 2376.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-para-lavamanos-zurich-01061325',
     nota: 'Pedestal Para Lavamanos Zurich · artículo 01-06-1325 · ref. MARFIL · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 2014.28, {
+  c('MAT-25-007', PROV_OCHOA, 2014.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pedestal-zurich-01061323',
     nota: 'Pedestal Zurich · artículo 01-06-1323 · ref. BLANCO · marca CATO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_OCHOA, 3334.17, {
+  c('MAT-25-007', PROV_OCHOA, 3334.17, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pata-volga-30-kit-2-uds-2-5x2-5-negro-01101479',
     nota: 'Pata Volga 30 (Kit 2 Uds. 2.5X2.5 Negro) · artículo 01-10-1479 · ref. 20230435 · marca AML. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_IBERICA, 3207.24, {
+  c('MAT-25-007', PROV_IBERICA, 3207.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/semipedestal-dama-senso-compacto/',
     nota: 'Semipedestal Dama Senso Compacto · artículo 007922. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-006', PROV_IBERICA, 1100, {
+  c('MAT-25-007', PROV_IBERICA, 1100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/semipedestal-happy-blanco/',
     nota: 'Semipedestal Happy Blanco · artículo 010631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_OCHOA, 57.88, {
+  c('MAT-25-008', PROV_OCHOA, 57.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/palometa-p-lavamanos-senc-01060339',
     nota: 'Palometa P / Lavamanos Senc. · artículo 01-06-0339 · ref. PAR · marca P.CIBAO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_OCHOA, 70.55, {
+  c('MAT-25-008', PROV_OCHOA, 70.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/palometa-para-lavamanos-doble-01060123',
     nota: 'Palometa Para Lavamanos Doble · artículo 01-06-0123 · ref. HG1A017 · marca PROMEDOCA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_OCHOA, 69.49, {
+  c('MAT-25-008', PROV_OCHOA, 69.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/palometa-para-lavamanos-doble-01060338',
     nota: 'Palometa Para Lavamanos Doble · artículo 01-06-0338 · ref. DOBLE · marca P.CIBAO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_OCHOA, 80.59, {
+  c('MAT-25-008', PROV_OCHOA, 80.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/palometa-sencilla-p-lav-d-metal-01061641',
     nota: 'Palometa Sencilla P / Lav D / Metal · artículo 01-06-1641 · ref. 2494 · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_CIMA, 189, {
+  c('MAT-25-008', PROV_CIMA, 189, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamanos-sencillo',
     nota: 'PALOMETA LAVAMANOS SENCILLO · artículo 710631917225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_CIMA, 170, {
+  c('MAT-25-008', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamanos-doble',
     nota: 'PALOMETA LAVAMANOS DOBLE · artículo 030980. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-007', PROV_CIMA, 141, {
+  c('MAT-25-008', PROV_CIMA, 141, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/palometa-lavamano-sencilla-met',
     nota: 'PALOMETA LAVAMANO SENCILLA MET · artículo 061055. ' + SUPUESTO_ITBIS
   });
-  c('MAT-25-008', PROV_OCHOA, 255.94, {
+  c('MAT-25-009', PROV_OCHOA, 255.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-yee-1-01061642',
     nota: 'Conector Yee 1\'\' · artículo 01-06-1642 · ref. 25861" · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
   });
@@ -20511,19 +20511,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/juegosaccesoriosbano/accesorios-baño-foset-ela-7000-element-6-3-1-49681-050252',
     nota: 'ACCESORIOS BAÑO FOSET ELA-7000 ELEMENT 6/1 49681 · artículo 050252 · marca FOSET. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-023', PROV_OCHOA, 27487.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-de-manos-turbo-01112748',
-    nota: 'Secador De Manos Turbo · artículo 01-11-2748 · ref. MB-1012 · marca HELVEX. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-023', PROV_CERARTE, 33447.06, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/secador-dmanos-dalta-velocidad-clean-dry',
-    itbis: false,
-    nota: 'SECADOR D/MANOS D/ALTA VELOCIDAD CLEAN DRY · artículo CERA-32741 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-27-023', PROV_FERREMIX, 849, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/filtro-hepa-para-secador-de-manos',
-    nota: 'Filtro HEPA para secador de manos · artículo T45848 · marca Foset. ' + SUPUESTO_ITBIS
-  });
   c('MAT-27-023', PROV_INNOVA, 3600, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/secadoresmano/secador-mano-aquaspa-cd-886-gy-gris-plastico-053148',
     nota: 'SECADOR MANO AQUASPA CD-886-GY GRIS PLASTICO · artículo 053148 · ref. Secador · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -20544,10 +20531,6 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-de-mano-c-sensor-alumin-negro-01112828',
     nota: 'Secador De Mano C / Sensor Alumin Negro · artículo 01-11-2828 · ref. Q-162A2 · marca WORLD DRYER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-025', PROV_OCHOA, 32765.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-manos-c-sensor-turbo-elec-ace-i-01112773',
-    nota: 'Secador Manos C / Sensor Turbo Elec. Ace.I · artículo 01-11-2773 · ref. MB-1012AI · marca HELVEX. ' + SUPUESTO_ITBIS
-  });
   c('MAT-27-025', PROV_FERREMIX, 16755, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/secador-de-manos-con-sensor-optico-acer',
     nota: 'SECADOR DE MANOS CON SENSOR ÓPTICO, ACER · artículo 50769070096688 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
@@ -20560,149 +20543,162 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/secadoresmano/secador-mano-aquaspa-cd-9999-wt-blanco-con-sensor-052275',
     nota: 'SECADOR MANO AQUASPA CD-9999-WT BLANCO CON SENSOR BLANCO · artículo 052275 · ref. Secador · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_OCHOA, 14903.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dispensador-de-jabon-cumberland-01112824',
-    nota: 'Dispensador De Jabon Cumberland · artículo 01-11-2824 · ref. Z6956-SD · marca ZURN. ' + SUPUESTO_ITBIS
+  c('MAT-27-026', PROV_OCHOA, 27487.14, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-de-manos-turbo-01112748',
+    nota: 'Secador De Manos Turbo · artículo 01-11-2748 · ref. MB-1012 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_OCHOA, 15547.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dosificador-jabon-espuma-elec-bat-01112821',
-    nota: 'Dosificador Jabon Espuma Elec Bat · artículo 01-11-2821 · ref. MB1101 · marca HELVEX. ' + SUPUESTO_ITBIS
+  c('MAT-27-026', PROV_CERARTE, 33447.06, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/secador-dmanos-dalta-velocidad-clean-dry',
+    itbis: false,
+    nota: 'SECADOR D/MANOS D/ALTA VELOCIDAD CLEAN DRY · artículo CERA-32741 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-27-026', PROV_CERARTE, 20817.8, {
+  c('MAT-27-027', PROV_OCHOA, 32765.78, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-manos-c-sensor-turbo-elec-ace-i-01112773',
+    nota: 'Secador Manos C / Sensor Turbo Elec. Ace.I · artículo 01-11-2773 · ref. MB-1012AI · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-028', PROV_CERARTE, 20817.8, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/dispensador-pjabon-tape101',
     itbis: false,
     nota: 'DISPENSADOR P/JABON TAPE101 · artículo CERA-00614 · ref. 6.5X9.5X16 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-27-026', PROV_FERREMIX, 2309, {
+  c('MAT-27-028', PROV_FERREMIX, 2309, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-a-pared-de-laton-satinado',
     nota: 'Dispensador de jabón a pared de latón satinado · artículo T45227 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_FERREMIX, 899, {
+  c('MAT-27-028', PROV_FERREMIX, 899, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-satinado-element',
     nota: 'Dispensador de jabón · artículo T49666 · ref. T49666 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_FERREMIX, 980, {
+  c('MAT-27-028', PROV_FERREMIX, 980, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-satinado-element',
     nota: 'Dispensador de jabón · artículo T49665 · ref. T49666 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 676, {
+  c('MAT-27-028', PROV_INNOVA, 676, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tj9055-plastico-blanco-5-033702',
     nota: 'DISPENSADOR JABON AQUASPA TJ9055 PLASTICO BLANCO 500 ML · artículo 033702 · ref. Taza · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 535, {
+  c('MAT-27-028', PROV_INNOVA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tko-117a-blanco-plastico-070582',
     nota: 'DISPENSADOR JABON AQUASPA TKO-117A BLANCO PLASTICO 250ML DOBLE · artículo 070582 · ref. Dispensador · marca AQUAPLASTICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 715, {
+  c('MAT-27-028', PROV_INNOVA, 715, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tko-117b-cromado-plastic-070581',
     nota: 'DISPENSADOR JABON AQUASPA TKO-117B CROMADO PLASTICO 250ML DOBLE · artículo 070581 · ref. Dispensador · marca AQUAPLASTICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 500, {
+  c('MAT-27-028', PROV_INNOVA, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tn-101c-plastico-cromado-052270',
     nota: 'DISPENSADOR JABON AQUASPA TN-101C PLASTICO CROMADO 500 ML · artículo 052270 · ref. Dispensador · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 416, {
+  c('MAT-27-028', PROV_INNOVA, 416, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tn-101w-plastico-blanco-052269',
     nota: 'DISPENSADOR JABON AQUASPA TN-101W PLASTICO BLANCO 500 ML · artículo 052269 · ref. Dispensador · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 5670, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-familia-460010-jabon-espuma-acer-050941',
-    nota: 'DISPENSADOR JABON FAMILIA 460010 JABON ESPUMA ACERO TORK · artículo 050941 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-026', PROV_INNOVA, 650, {
+  c('MAT-27-028', PROV_INNOVA, 650, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-interdesign-45620-acrilico-trans-043818',
     nota: 'DISPENSADOR JABON INTERDESIGN 45620 ACRILICO TRANSPARENTE · artículo 043818 · ref. Dispensador · marca INTERDESIGN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 668, {
+  c('MAT-27-028', PROV_INNOVA, 668, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-interdesign-50100-acrilico-trans-057866',
     nota: 'DISPENSADOR JABON INTERDESIGN 50100 ACRILICO TRANSPARENTE · artículo 057866 · ref. Dispensador · marca INTERDESIGN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 743, {
+  c('MAT-27-028', PROV_INNOVA, 743, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-rayen-2025-01-jabon-liquido-3-ge-057550',
     nota: 'DISPENSADOR JABON RAYEN 2025.01 JABON LIQUIDO/GEL · artículo 057550 · ref. Dispensador · marca RAYEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-026', PROV_INNOVA, 1895, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-561500-jabon-espuma-1000-ml-050940',
-    nota: 'DISPENSADOR JABON TORK 561500 JABON ESPUMA 1000 ML · artículo 050940 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-026', PROV_INNOVA, 1530, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-83510-jabon-liquido-3-gel-1-050939',
-    nota: 'DISPENSADOR JABON TORK 83510 JABON LIQUIDO/GEL 1000 ML · artículo 050939 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-026', PROV_INNOVA, 1270, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-83550-jabon-liquido-mini-47-050942',
-    nota: 'DISPENSADOR JABON TORK 83550 JABON LIQUIDO MINI 475 ML · artículo 050942 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-026', PROV_INNOVA, 156, {
+  c('MAT-27-028', PROV_INNOVA, 156, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tricorp-9660-020999',
     nota: 'DISPENSADOR JABON TRICORP 9660 · artículo 020999 · ref. Dispensador · marca TRICORP. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-027', PROV_CERARTE, 28704.01, {
+  c('MAT-27-029', PROV_CERARTE, 28704.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/dispensador-djabon-operado-csensor-dc',
     itbis: false,
     nota: 'DISPENSADOR D/JABÓN OPERADO C/SENSOR DC · artículo CERA-00612 · ref. ST · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-27-028', PROV_INNOVA, 1105, {
+  c('MAT-27-030', PROV_OCHOA, 14903.09, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dispensador-de-jabon-cumberland-01112824',
+    nota: 'Dispensador De Jabon Cumberland · artículo 01-11-2824 · ref. Z6956-SD · marca ZURN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-030', PROV_OCHOA, 15547.21, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dosificador-jabon-espuma-elec-bat-01112821',
+    nota: 'Dosificador Jabon Espuma Elec Bat · artículo 01-11-2821 · ref. MB1101 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-030', PROV_INNOVA, 5670, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-familia-460010-jabon-espuma-acer-050941',
+    nota: 'DISPENSADOR JABON FAMILIA 460010 JABON ESPUMA ACERO TORK · artículo 050941 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-030', PROV_INNOVA, 1895, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-561500-jabon-espuma-1000-ml-050940',
+    nota: 'DISPENSADOR JABON TORK 561500 JABON ESPUMA 1000 ML · artículo 050940 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-030', PROV_INNOVA, 1530, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-83510-jabon-liquido-3-gel-1-050939',
+    nota: 'DISPENSADOR JABON TORK 83510 JABON LIQUIDO/GEL 1000 ML · artículo 050939 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-030', PROV_INNOVA, 1270, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-tork-83550-jabon-liquido-mini-47-050942',
+    nota: 'DISPENSADOR JABON TORK 83550 JABON LIQUIDO MINI 475 ML · artículo 050942 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-031', PROV_INNOVA, 1105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-508as-niquelado-higi-070583',
     nota: 'DISPENSADOR PAPEL AQUASPA TKO-508AS NIQUELADO HIGIENICO METAL INOX · artículo 070583 · ref. Dispensador · marca AQUAPLASTICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-028', PROV_INNOVA, 485, {
+  c('MAT-27-031', PROV_INNOVA, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-512a-blanco-serville-070579',
     nota: 'DISPENSADOR PAPEL AQUASPA TKO-512A BLANCO SERVILLETA PLASTICO · artículo 070579 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-028', PROV_INNOVA, 690, {
+  c('MAT-27-031', PROV_INNOVA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tn-201-1-blanco-higienic-052271',
     nota: 'DISPENSADOR PAPEL AQUASPA TN-201-1 BLANCO HIGIENICO PLASTICO · artículo 052271 · ref. Dispensador · marca AQUASPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-028', PROV_INNOVA, 8995, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-460006-gris-jumbo-luxury-050934',
-    nota: 'DISPENSADOR PAPEL FAMILIA 460006 GRIS JUMBO LUXURY · artículo 050934 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-028', PROV_INNOVA, 3145, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-83412-blanco-jumbo-higie-050932',
-    nota: 'DISPENSADOR PAPEL FAMILIA 83412 BLANCO JUMBO HIGIENICO PLASTICO · artículo 050932 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-028', PROV_INNOVA, 2595, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-83708-blanco-jumbo-xtra-050933',
-    nota: 'DISPENSADOR PAPEL FAMILIA 83708 BLANCO JUMBO XTRA HIGIENICO PLASTICO 680000 · artículo 050933 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-27-029', PROV_OCHOA, 4472.06, {
+  c('MAT-27-032', PROV_OCHOA, 4472.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/dispensador-de-toalla-papel-gm-ai-01112869',
     nota: 'Dispensador De Toalla Papel Gm Ai · artículo 01-11-2869 · ref. MB-2512 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 1275, {
+  c('MAT-27-032', PROV_INNOVA, 1275, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tko-525a-blanco-centro-t-070584',
     nota: 'DISPENSADOR PAPEL AQUASPA TKO-525A BLANCO CENTRO TIPO TOALLA PLASTICO · artículo 070584 · ref. Dispensador · marca AQUAPLASTICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 2695, {
+  c('MAT-27-032', PROV_INNOVA, 2695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tt-31bk-negro-tipo-toall-062122',
     nota: 'DISPENSADOR PAPEL AQUASPA TT-31BK NEGRO TIPO TOALLA PLASTICO · artículo 062122 · ref. Dispensador · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 2595, {
+  c('MAT-27-032', PROV_INNOVA, 2595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-aquaspa-tt-31w-blanco-tipo-toall-062121',
     nota: 'DISPENSADOR PAPEL AQUASPA TT-31W BLANCO TIPO TOALLA PLASTICO · artículo 062121 · ref. Dispensador · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 7965, {
+  c('MAT-27-032', PROV_INNOVA, 7965, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-jofel-ag16510-blanco-tipo-toalla-059115',
     nota: 'DISPENSADOR PAPEL JOFEL AG16510 BLANCO TIPO TOALLA SMART PLASTICO · artículo 059115 · ref. Dispensador · marca JOFEL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 274, {
+  c('MAT-27-032', PROV_INNOVA, 274, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-rayen-2072-01-blanco-tipo-toalla-057554',
     nota: 'DISPENSADOR PAPEL RAYEN 2072.01 BLANCO TIPO TOALLA PLASTICO · artículo 057554 · ref. Dispensador · marca RAYEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 2515, {
+  c('MAT-27-033', PROV_INNOVA, 8995, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-460006-gris-jumbo-luxury-050934',
+    nota: 'DISPENSADOR PAPEL FAMILIA 460006 GRIS JUMBO LUXURY · artículo 050934 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-033', PROV_INNOVA, 3145, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-83412-blanco-jumbo-higie-050932',
+    nota: 'DISPENSADOR PAPEL FAMILIA 83412 BLANCO JUMBO HIGIENICO PLASTICO · artículo 050932 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-033', PROV_INNOVA, 2595, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-familia-83708-blanco-jumbo-xtra-050933',
+    nota: 'DISPENSADOR PAPEL FAMILIA 83708 BLANCO JUMBO XTRA HIGIENICO PLASTICO 680000 · artículo 050933 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-034', PROV_INNOVA, 2515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-tork-552100-blanco-3-203288-tipo-050935',
     nota: 'DISPENSADOR PAPEL TORK 552100 BLANCO/203288 TIPO TOALLA DOBLADA 83051 PLASTICO · artículo 050935 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 3245, {
+  c('MAT-27-034', PROV_INNOVA, 3245, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-tork-83160-blanco-tipo-toalla-ro-050936',
     nota: 'DISPENSADOR PAPEL TORK 83160 BLANCO TIPO TOALLA ROLLO PRECORTADO PLASTICO · artículo 050936 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-029', PROV_INNOVA, 12190, {
+  c('MAT-27-034', PROV_INNOVA, 12190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadorespapel/dispensador-papel-tork-83610-niquelado-tipo-toalla-050938',
     nota: 'DISPENSADOR PAPEL TORK 83610 NIQUELADO TIPO TOALLA DOBLADA METAL · artículo 050938 · ref. Dispensador · marca FAMILIA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-27-030', PROV_INNOVA, 8705, {
+  c('MAT-27-035', PROV_INNOVA, 8705, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cambiador-bebes-aquaspa-tty-8909-2-pared-86x55x14-070109',
     nota: 'CAMBIADOR BEBES AQUASPA TTY-8909-2 PARED 86X55X14.5 CM · artículo 070109 · marca AQUASPA. ' + SUPUESTO_ITBIS
   });

@@ -546,7 +546,8 @@ function clasificar(a) {
     if (/^accesorio bano/.test(n)) {
       const m = limpia(a.nombre).match(/(\d+)\s*\/\s*1/);
       if (!m) { MOTIVO.valor = 'la ficha no declara cuántas piezas trae el juego'; return null; }
-      return BANOS.item('juego-accesorios', { piezas: parseInt(m[1], 10) });
+      return BANOS.item('juego-accesorios',
+        { ambito: BANOS.ambito(n), piezas: parseInt(m[1], 10) });
     }
     if (/^barra (de )?seguridad|^agarradera/.test(n)) {
       const m = limpia(a.nombre).match(/(\d+)\s*(?:cm|')/i);

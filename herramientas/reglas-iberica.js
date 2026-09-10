@@ -212,9 +212,12 @@ function reglaBano(a) {
     return null;
   }
   if (/^lavaman|^lavabo/.test(t)) {
-    const montaje = /con pedestal|pedestal/.test(t) ? 'pedestal'
+    /* «Sin pedestal» y «semipedestal» van PRIMERO: los dos contienen la
+       palabra «pedestal» y, puestos después, nunca llegaban a su rama.
+       Un lavamanos sin pedestal cuesta la mitad que uno con él. */
+    const montaje = /sin pedestal|semipedestal|suspendido|colgar/.test(t) ? 'pared'
+                  : /con pedestal|\bpedestal\b/.test(t) ? 'pedestal'
                   : /empotr|bajo tope|undermount/.test(t) ? 'empotrar'
-                  : /suspendido|colgar|semipedestal|sin pedestal/.test(t) ? 'pared'
                   : /sobre tope|sobreponer|vessel/.test(t) ? 'sobreponer' : '';
     /* Sin montaje declarado va al «Lavamanos» genérico, que existe justo
        para eso y ya recibe precios de otros comercios. */

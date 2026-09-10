@@ -263,9 +263,14 @@ function reglaLavamanos(a) {
   if (/^mueble|con mueble/.test(t)) {
     return BANOS.item('mueble-bano', { montaje: /suspendido|pared|flotante/.test(t) ? 'pared' : 'piso' });
   }
-  const montaje = /pedestal/.test(t) ? 'pedestal'
+  /* El orden importa: «sin pedestal» contiene «pedestal», y un lavamanos
+     exento o a piso tampoco es de pedestal aunque toque el suelo. Son
+     piezas de otro precio: el freestanding de este comercio va en 228,711. */
+  const montaje = /sin pedestal|semipedestal|suspendido|colgar/.test(t) ? 'pared'
+                : /freestanding|exent|a piso|de piso/.test(t) ? 'exento'
+                : /\bpedestal\b/.test(t) ? 'pedestal'
                 : /empotrado|empotrar|bajo tope|undermount/.test(t) ? 'empotrar'
-                : /suspendido|pared|colgar/.test(t) ? 'pared'
+                : /\bpared\b/.test(t) ? 'pared'
                 : /sobre tope|de tope|sobreponer|vessel/.test(t) ? 'sobreponer'
                 : MONTAJE_LAVAMANOS[a.cat3] || null;
   if (!montaje) { MOTIVO.valor = 'la ficha no declara cómo se monta el lavamanos'; return null; }
@@ -311,15 +316,18 @@ function reglaAccesorio(a) {
   const t = texto(a);
   if (/^set de/.test(t)) {
     const p = t.match(/(\d+)\s*(?:pza|pzas|pieza|piezas|en 1)/);
-    return BANOS.item('juego-accesorios', p ? { piezas: parseInt(p[1], 10) } : {});
+    return BANOS.item('juego-accesorios',
+      Object.assign({ ambito: BANOS.ambito(t) }, p ? { piezas: parseInt(p[1], 10) } : {}));
   }
   if (/^brazo de ducha/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^manguera de ducha/.test(t)) return BANOS.item('ducha-manguera', {});
   if (/^dispensador para jabon|^dispensador de jabon/.test(t)) {
-    return BANOS.item('dispensador-jabon', { activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+    return BANOS.item('dispensador-jabon',
+      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
   }
   if (/^secador de manos/.test(t)) {
-    return BANOS.item('secador-manos', { activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+    return BANOS.item('secador-manos',
+      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
   }
   if (/^barra de seguridad/.test(t)) return reglaBarra(a);
   if (/^asiento para inodoro/.test(t)) { MOTIVO.valor = 'repuesto de consumidor, no partida de obra'; return null; }
@@ -432,9 +440,11 @@ function regla(a) {
     case 'BARRA DE SEGURIDAD':    return reglaBarra(a);
     case 'ACCESORIOS BAÑOS':      return reglaAccesorio(a);
     case 'DISPENSADOR D/ JABON':  return BANOS.item('dispensador-jabon',
-      { activacion: /sensor|automatic/.test(texto(a)) ? 'sensor' : '' });
+      { ambito: BANOS.ambito(texto(a)),
+        activacion: /sensor|automatic/.test(texto(a)) ? 'sensor' : '' });
     case 'SECADOR DE MANOS':      return BANOS.item('secador-manos',
-      { activacion: /sensor|automatic/.test(texto(a)) ? 'sensor' : '' });
+      { ambito: BANOS.ambito(texto(a)),
+        activacion: /sensor|automatic/.test(texto(a)) ? 'sensor' : '' });
 
     case 'GRIFERIA D/LAVAMANO':
     case 'GRIFERIA D/BIDET':

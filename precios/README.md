@@ -1435,6 +1435,45 @@ legítimos, cada uno con su razón escrita en `A_MANO`. Ahí está el único err
 encontrado hasta ahora: La Ibérica publica un fregadero Teka de 20 × 21" a **RD$ 75**, que no
 es un precio de fregadero.
 
+### Los ejes que faltaban
+
+Cuando el auditor dice «la partida mezcla productos distintos», el arreglo de fondo no es
+retirar: es el eje que falta. Tres se añadieron a partir de lo que enseñó el informe.
+
+**`ambito`: doméstico o institucional.** Un dispensador de jabón de AquaSpa cuesta RD$ 500 y
+uno de TORK para un baño público RD$ 1,900; no son el mismo artículo aunque se llamen igual.
+Lo que los separa se lee en la marca institucional (TORK, Cumberland, Kimberly), en las señas
+del nombre («alta velocidad», «turbo», «jumbo», «elec bat») y en la capacidad: un litro de
+jabón no se pone en un baño de casa.
+
+El eje vive en `especificacion-banos.js` y **no en las reglas de cada comercio**, para que los
+seis usen el mismo criterio; si cada uno decidiera por su cuenta, el mismo artículo caería en
+partidas distintas según quién lo venda. Creó cuatro partidas nuevas —secador, dispensador de
+jabón, y dispensador de papel higiénico y de toalla, todos institucionales— y sacó «Secador de
+manos» de la lista de retirados: de 39x a 1.1x en el doméstico.
+
+**Dos fallos de clasificación que salieron por el mismo camino:**
+
+- **«Sin pedestal» entraba como «de pedestal».** En La Ibérica y en CerArte el patrón
+  `/pedestal/` casaba antes de llegar a la rama de «sin pedestal», que contiene la misma
+  palabra. Un lavamanos sin pedestal cuesta la mitad que uno con él. De paso, CerArte vende
+  lavamanos *freestanding* y a piso, que tampoco son de pedestal aunque toquen el suelo: el
+  suyo va en RD$ 228,711.
+- **Un repuesto colado como aparato.** «Filtro HEPA para secador de manos» de RD$ 849 entraba
+  como secador, en una partida de RD$ 27,000. El patrón «X para ‹aparato›» es el que delata al
+  repuesto: la pieza es la X, no el aparato.
+
+### Lo que estos ejes no arreglan
+
+Queda un caso que ningún eje de uso resuelve: **la gama**. CerArte vende un lavamanos de
+pedestal Olympia en RD$ 67,666 y un *freestanding* Tuba 3 en RD$ 228,711; Antonio Lupi tiene un
+dispensador de jabón en RD$ 20,818. Son piezas de diseño importado, y no se sustituyen por una
+estándar en un presupuesto por mucho que compartan la especificación.
+
+El catálogo ya tiene un campo `gama`, pero no es un eje: no entra en la clave del ítem. Meterlo
+es la decisión pendiente, y no es menor —contradice en parte el principio de que la marca es
+atributo de la cotización y no de la partida—. Mientras tanto, esos ítems se retiran.
+
 ### Cómo se retira
 
 La lista vive en `datos-catalogo.js`, entre los marcadores `dudosos:inicio` y `dudosos:fin`,

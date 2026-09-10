@@ -1557,8 +1557,9 @@
   /* MAT-25 */
   it('MAT-25', 'Lavamanos', 'unidad', 9590, 910, 88600.01, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{largo_mm:810, ancho_mm:460, alto_mm:170}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Lavamanos, de empotrar', 'unidad', 2878.82, 684.67, 14543.12, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'empotrar', alto_mm:175}, alcance:'Material retirado en almacén'});
-  it('MAT-25', 'Lavamanos, de pared', 'unidad', 7423.17, 995, 316669.5, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pared', largo_mm:400, alto_mm:160}, alcance:'Material retirado en almacén'});
-  it('MAT-25', 'Lavamanos, de pedestal', 'unidad', 2892, 216, 228711.86, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pedestal', agujeros:1, largo_mm:310, alto_mm:110}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de exento', 'unidad', 206940.67, 185169.48, 228711.86, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'exento'}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de pared', 'unidad', 5153.31, 995, 316669.5, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pared', largo_mm:400, alto_mm:160}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de pedestal', 'unidad', 2658.6, 216, 67666.44, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pedestal', agujeros:1, largo_mm:310, alto_mm:110}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Lavamanos, de sobreponer', 'unidad', 4439.94, 1150, 107745.77, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'sobreponer', agujeros:1}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Pedestal para lavamanos', 'unidad', 2014.01, 891.27, 3334.17, {esp:'Sin lavamanos · se compra aparte', etapa:'instalaciones', origen:'importado', alias:'pedestal, pie de lavamanos', alcance:'Material retirado en almacén'});
   it('MAT-25', 'Palometa para lavamanos', 'unidad', 80.59, 57.88, 189, {esp:'', etapa:'instalaciones', origen:'importado', alias:'palometa, soporte de lavamanos, escuadra', alcance:'Material retirado en almacén'});
@@ -1594,18 +1595,23 @@
   it('MAT-27', 'Barra de seguridad, recta, 70 cm', 'unidad', 3983.41, 3271.81, 4695, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:70}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Barra de seguridad, recta, 75 cm', 'unidad', 2185, 2185, 2185, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:75}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Barra de seguridad, recta, 90 cm', 'unidad', 2439, 2395, 6226.47, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:90}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño', 'juego', 2327.23, 345, 6703.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 3 piezas', 'juego', 1377.76, 1081.92, 1673.59, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:3}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 4 piezas', 'juego', 2927.39, 1605.2, 3995, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:4}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 5 piezas', 'juego', 1139, 394, 1883, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:5}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 6 piezas', 'juego', 3070.44, 1342.61, 4372.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:6}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos', 'unidad', 3600, 849, 33447.06, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos, de botón', 'unidad', 16368.74, 16368.74, 16368.74, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{activacion:'boton'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos, con sensor', 'unidad', 17572.74, 12495, 63455.69, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{activacion:'sensor', ancho_mm:270}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de jabón', 'unidad', 899, 156, 20817.8, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de jabón, con sensor', 'unidad', 28704.01, 28704.01, 28704.01, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{activacion:'sensor'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 1850, 485, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, de toalla', 'unidad', 2695, 274, 12190, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{tipo_papel:'toalla', ancho_mm:310}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño', 'juego', 2327.23, 345, 6703.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 3 piezas', 'juego', 1377.76, 1081.92, 1673.59, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:3, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 4 piezas', 'juego', 2927.39, 1605.2, 3995, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:4, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 5 piezas', 'juego', 1139, 394, 1883, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:5, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 6 piezas', 'juego', 3070.44, 1342.61, 4372.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:6, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos', 'unidad', 3467.5, 3335, 3600, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, de botón', 'unidad', 16368.74, 16368.74, 16368.74, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico', activacion:'boton'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, con sensor', 'unidad', 16755, 12495, 63455.69, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico', activacion:'sensor', ancho_mm:270}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, institucional', 'unidad', 30467.1, 27487.14, 33447.06, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, institucional, con sensor', 'unidad', 32765.78, 32765.78, 32765.78, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional', activacion:'sensor'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón', 'unidad', 676, 156, 20817.8, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón, con sensor', 'unidad', 28704.01, 28704.01, 28704.01, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico', activacion:'sensor'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón, institucional', 'unidad', 3782.5, 1270, 15547.21, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 690, 485, 1105, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, de toalla', 'unidad', 2645, 274, 7965, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'toalla', ancho_mm:310}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, institucional, de papel higiénico', 'unidad', 3145, 2595, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'papel higiénico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, institucional, de toalla', 'unidad', 3245, 2515, 12190, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'toalla'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Cambiador de bebés de pared', 'unidad', 8705, 8705, 8705, {esp:'', etapa:'terminacion', origen:'importado', alias:'cambiador de bebés, baño público', medidas:{largo_mm:860, ancho_mm:550, alto_mm:140}, alcance:'Material retirado en almacén'});
 
   /* MAT-28 */
@@ -2220,17 +2226,17 @@
     /* Tanque para inodoro de dos piezas */
     'MAT-24-005': 'los comercios lo cotizan entre RD$ 586 y RD$ 12,715 (22x): la partida mezcla productos distintos',
     /* Lavamanos, de pedestal */
-    'MAT-25-004': 'los comercios lo cotizan entre RD$ 216 y RD$ 15,435 (71x): la partida mezcla productos distintos',
+    'MAT-25-005': 'los comercios lo cotizan entre RD$ 216 y RD$ 15,435 (71x): la partida mezcla productos distintos',
     /* Mueble de baño, de piso */
     'MAT-26-003': 'los comercios lo cotizan entre RD$ 2,725 y RD$ 21,825 (8x): la partida mezcla productos distintos',
     /* Juego de accesorios de baño */
     'MAT-27-018': 'los comercios lo cotizan entre RD$ 345 y RD$ 4,992 (14x): la partida mezcla productos distintos',
-    /* Secador de manos */
-    'MAT-27-023': 'los comercios lo cotizan entre RD$ 849 y RD$ 33,447 (39x): la partida mezcla productos distintos',
     /* Dispensador de jabón */
-    'MAT-27-026': 'los comercios lo cotizan entre RD$ 156 y RD$ 20,818 (133x): la partida mezcla productos distintos',
+    'MAT-27-028': 'los comercios lo cotizan entre RD$ 156 y RD$ 20,818 (133x): la partida mezcla productos distintos',
+    /* Dispensador de jabón, institucional */
+    'MAT-27-030': 'los comercios lo cotizan entre RD$ 1,270 y RD$ 14,903 (12x): la partida mezcla productos distintos',
     /* Dispensador de papel, de toalla */
-    'MAT-27-029': 'los comercios lo cotizan entre RD$ 274 y RD$ 4,472 (16x): la partida mezcla productos distintos',
+    'MAT-27-032': 'los comercios lo cotizan entre RD$ 274 y RD$ 4,472 (16x): la partida mezcla productos distintos',
     /* Sifón de PVC para desagüe 35376" */
     'MAT-32-373': 'la medida leída es imposible: medida = 35376" (35376) (el techo razonable es 120)',
     /* Cinta de teflón 12520" */
