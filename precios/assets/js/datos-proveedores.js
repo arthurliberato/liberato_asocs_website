@@ -98,6 +98,18 @@
     zonas:['nacional'], web:'innovacentro.com.do', precios:true,
     nota:'Catálogo en línea con marcas y precios. Maneja Truper, Foset, Total, Pedrollo y Tangit.'
   });
+  p('La Ibérica', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-02','MAT-08','MAT-09','MAT-24','MAT-25','MAT-26','MAT-32'],
+    zonas:['gsd'], web:'tienda.laiberica.com.do', precios:true,
+    nota:'Tienda especializada en cerámica, porcelanato, baños, grifería y adhesivos, con tienda en línea y precios por artículo. Su web no desglosa el ITBIS. Santo Domingo.'
+  });
+  p('Tonos y Colores', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-12','EQU-04'],
+    zonas:[], web:'tonosycolores.com', precios:true,
+    nota:'Tienda de pintura en línea: Montó, Tropical, Popular, Lanco y Claudette, con el envase de cada presentación y el precio por SKU. Declara que sus precios incluyen ITBIS. Todo su catálogo se publica en oferta sobre el precio de lista. Ubicación de sucursales sin verificar.'
+  });
   p('CerArte', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-24','MAT-25','MAT-26','MAT-27','MAT-32'],

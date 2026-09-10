@@ -968,6 +968,8 @@ const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
 const MC = require('./reglas-mc.js');
 const CERARTE = require('./reglas-cerarte.js');
+const IBERICA = require('./reglas-iberica.js');
+const TONOS = require('./reglas-tonos.js');
 
 const FUENTES = [
   {
@@ -1114,6 +1116,34 @@ const FUENTES = [
     motivoDe: () => CERARTE.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = CERARTE.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/iberica-2026-09-10.json'),
+    etiqueta: 'La Ibérica · cerámica, baños y grifería',
+    proveedor: 'La Ibérica',
+    constante: 'PROV_IBERICA',
+    fecha: '2026-09-10',
+    /* Su propia nota de extracción dice que la web no desglosa el impuesto:
+       va con el supuesto de mostrador. */
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => IBERICA.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = IBERICA.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/tonos-2026-09-09.json'),
+    etiqueta: 'Tonos y Colores · pintura',
+    proveedor: 'Tonos y Colores',
+    constante: 'PROV_TONOS',
+    fecha: '2026-09-09',
+    /* La tienda declara que sus precios llevan ITBIS: es un dato, no un
+       supuesto, y la nota lo dice así. */
+    itbisDeclarado: true,
+    notaItbis: 'El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => TONOS.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = TONOS.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
@@ -1447,7 +1477,10 @@ function bloqueCotizaciones() {
     const campos = ["    fecha: '" + f.fecha + "', fuente: '" +
                     esc(f.fuenteDe ? f.fuenteDe(a) : 'Precio publicado en ' + a.url) + "'"];
     if (f.itbis === false) campos.push('    itbis: false');
-    const cierre = f.itbis === false
+    /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
+       lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
+       y solo ese lo dice. */
+    const cierre = (f.itbis === false || f.itbisDeclarado)
       ? "    nota: '" + esc(notas.join('. ')) + '. ' + esc(f.notaItbis || 'El precio es antes de ITBIS: la cotización lo suma aparte') + "'"
       : "    nota: '" + esc(notas.join('. ')) + ". ' + SUPUESTO_ITBIS";
     return "  c('" + item + "', " + f.constante + ", " + num(precioUnidad(a)) + ", {\n" +

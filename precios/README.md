@@ -137,14 +137,14 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo publica **1,449 ítems**, todos con precio real: **1,443 con precio de un
+El catálogo publica **1,516 ítems**, todos con precio real: **1,510 con precio de un
 comercio** que lo publica y 6 que van según tarifario oficial y no llevan monto. Los ítems
 que solo tenían estimación nuestra se retiraron del sitio (ver «Solo se publica lo que tiene
 precio real»).
 
-Detrás hay **4,660 cotizaciones** de **siete comercios**. **178 ítems tienen precio de más
-de uno**, 48 tienen tres y nueve ya tienen cuatro — entre ellos la funda de cemento gris, que
-es el precio más consultado del país.
+Detrás hay **5,316 cotizaciones** de **nueve comercios**. **209 ítems tienen precio de más
+de uno**, 67 tienen tres, 19 tienen cuatro y tres ya tienen cinco — entre ellos la funda de
+cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
 importante, y es la condición de lanzamiento (ver más abajo). Para eso están las dos
@@ -337,7 +337,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 10/09/2026: **1,443 de 1,443 ítems publicados con precio real**. Los otros 6 del
+Al 10/09/2026: **1,510 de 1,510 ítems publicados con precio real**. Los otros 6 del
 catálogo van según tarifario oficial y no llevan precio por definición, así que no cuentan.
 Los 263 retirados no aparecen en esta cuenta: la herramienta de lotes solo recorre lo
 publicado, así que para seguir levantando precios hay que partir del Excel de retirados.
@@ -437,7 +437,7 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**4,660 cotizaciones reales cargadas · 1,443 ítems verificados, todos los publicados.**
+**5,316 cotizaciones reales cargadas · 1,510 ítems verificados, todos los publicados.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
@@ -585,7 +585,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **178 ítems con precio de más de un comercio**, 48 con tres y nueve con cuatro. El
+Hoy hay **209 ítems con precio de más de un comercio**, 67 con tres y 19 con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -897,7 +897,7 @@ Agrupar bien puede **bajar** la cuenta de «ítems con más de un precio» y mej
 catálogo al mismo tiempo: los cuatro inodoros de una pieza incluían dos que ya cruzaban, y
 al fundirse en uno la cuenta baja de dos a uno. El indicador que no engaña es otro:
 
-**el 45% de las cotizaciones ya cae sobre un ítem comparable** — 2,079 de 4,660.
+**el 51% de las cotizaciones ya cae sobre un ítem comparable** — 2,732 de 5,316.
 
 ### Una cotización formal: 134 líneas que valieron más que 468
 
@@ -1205,7 +1205,7 @@ copiado a Excel, para que lo que se copia sea lo que se ve.
 
 ---
 
-## El directorio: siete comercios, todos con precio confirmado
+## El directorio: nueve comercios, todos con precio confirmado
 
 Desde el 09/09/2026 el directorio publica solo los comercios a los que se les confirmó
 un precio, es decir, los que tienen cotizaciones en `datos-precios.js`. Los otros 74 que
@@ -1291,6 +1291,53 @@ ambos, y solo seis formatos son unánimes.
 partida y otra albañilería), `banera`, `plato-ducha` y `piso-vinilico`. La primera se aparta
 de la regla de agrupación de inodoros —una pieza, dos piezas o infantil— porque la
 diferencia no es de diseño sino de instalación.
+
+## La Ibérica y Tonos y Colores
+
+Dos comercios más el 10/09/2026, los dos especializados.
+
+**La Ibérica** (tienda.laiberica.com.do) es el tercer comercio de baldosas: 1,522 artículos
+publicados, 687 aprovechados, **575 cotizaciones**. Cubre lo mismo que CerArte —cerámica,
+porcelanato, baños, grifería, adhesivos y complementos de colocación— y trae la medida y la
+presentación en columnas propias, lo que ahorra adivinarlas dentro del nombre. Su web no
+desglosa el ITBIS, así que va con el supuesto de mostrador.
+
+Declara el uso de la baldosa en solo 87 de sus 478 piezas: las otras viven en «CERAMICA» y
+«DECORADO», que mezclan formatos de piso y de pared. Se les aplica la misma regla que a
+CerArte y quedan fuera con el motivo escrito.
+
+**Tonos y Colores** (tonosycolores.com) es la primera tienda de pintura del directorio, y
+llena la categoría más vacía: MAT-12 tenía **un solo ítem** —un estuco— y ahora tiene 16.
+126 SKU aprovechados de 236, **81 cotizaciones**.
+
+Trae dos datos que casi nadie publica: que sus precios **llevan ITBIS** —se registra como
+dato, no como supuesto, y para eso el importador distingue ahora los tres casos: lo declara
+incluido, lo declara aparte, o se calla— y el envase de cada SKU en columna propia.
+
+Todo su catálogo está «en oferta», con un 27% de descuento medio. Cuando el 100% del
+catálogo está rebajado, el precio de oferta **es** el de calle y el «regular» es el de lista:
+se carga el vigente y la nota lo dice. No es el caso de una liquidación puntual —esas sí se
+dejan fuera, como las 23 baldosas rebajadas de Ochoa—, porque aquí no hay un precio sin
+rebaja con el que comparar.
+
+### La pintura como partida
+
+`especificacion-pintura.js` define dos familias. `pintura` se identifica por **tipo** (acrílica,
+esmalte, anticorrosiva, epóxica, de tráfico, para piscina, aislante térmica, impermeabilizante,
+primer, masilla para sheetrock, masilla para exterior) y **envase** (el galón, la cubeta de
+cinco, el de 750 ml…), porque el precio por galón cambia con el envase y mezclarlos daría una
+mediana sin sentido. El color es de la cotización, como en la baldosa. El acabado va como
+medida y no como clave: 128 de 236 artículos no lo declaran, y partir ítems según si el
+comercio se acordó de escribirlo es la peor razón posible para partirlos.
+
+Un detalle de la ficha que costó dos artículos: en este catálogo el sufijo «-3» del SKU es la
+cubeta de cinco galones (32 de 34 lo confirman). Cuando además la presentación dice un galón,
+la ficha se contradice y el precio no entra.
+
+Queda un rango ancho que vigilar: `Pintura acrílica, galón` va de RD$ 374 (Acritex, línea
+económica) a RD$ 5,298 (Montó Nature), 14x. Es el mercado, no un error de agrupación —marca
+económica contra premium del mismo producto—, pero conviene volver a mirarlo cuando entre un
+segundo comercio de pintura.
 
 ## Filtro «Mis proveedores»
 
@@ -1529,8 +1576,9 @@ tiene precio real**. Salieron del sitio:
 | Categorías que quedaron sin ningún ítem | 13 de 41 | hoja «Categorías»; sus páginas se borraron y redirigen a `/` |
 | Proveedores sin un solo precio confirmado | 74 de 80 | hoja «Proveedores», con los contactos públicos que se tenían |
 
-Quedan **1,449 ítems** (1,443 con precio de comercio y 6 de tarifario oficial), **28
-categorías** y **7 comercios** (Ochoa, Cima, Max, InnovaCentro, MC, Ferremix y CerArte).
+Quedan **1,516 ítems** (1,510 con precio de comercio y 6 de tarifario oficial), **28
+categorías** y **9 comercios** (Ochoa, Cima, Max, InnovaCentro, MC, Ferremix, CerArte,
+La Ibérica y Tonos y Colores).
 
 El libro lo escribe `herramientas/exportar-retirados.py` a partir del estado de los datos
 en ese momento; se corre **antes** de retirar nada. No hace falta volver a correrlo salvo
