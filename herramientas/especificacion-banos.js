@@ -35,14 +35,12 @@ const FAMILIAS = {
   'inodoro-una-pieza': {
     cat: 'MAT-24', base: 'Inodoro de una pieza', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 10,
-    alias: 'inodoro, taza de baño, wc, one piece, elongado, alargado, redondo',
-    esp: 'Inodoro monobloque de cerámica, tanque y taza en una sola pieza'
+    alias: 'inodoro, taza de baño, wc, one piece, elongado, alargado, redondo'
   },
   'inodoro-infantil': {
     cat: 'MAT-24', base: 'Inodoro infantil', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 12,
-    alias: 'inodoro infantil, inodoro de niño, wc infantil',
-    esp: 'Aparato de altura reducida, para preescolar'
+    alias: 'inodoro infantil, inodoro de niño, wc infantil'
   },
   /* Ochoa vende las dos mitades por separado y por eso el catálogo tenía
      tanque y basineta como ítems sueltos. Cima vende el inodoro de dos piezas
@@ -51,25 +49,25 @@ const FAMILIAS = {
     cat: 'MAT-24', base: 'Inodoro de dos piezas', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 15,
     alias: 'inodoro de dos piezas, taza y tanque, wc dos piezas',
-    esp: 'Tanque y taza como un solo aparato. Ojo al comparar: el tanque y la basineta sueltos son otras dos partidas'
+    esp: 'Tanque y basineta incluidos'
   },
   'inodoro-tanque': {
     cat: 'MAT-24', base: 'Tanque para inodoro de dos piezas', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20,
     alias: 'tanque de inodoro, cisterna',
-    esp: 'Solo el tanque. La basineta se compra aparte y es la otra mitad del inodoro'
+    esp: 'Sin basineta · se compra aparte'
   },
   'inodoro-basineta': {
     cat: 'MAT-24', base: 'Basineta para inodoro de dos piezas', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 30,
     alias: 'basineta, taza, cuerpo del inodoro',
-    esp: 'Solo la taza. El tanque se compra aparte y es la otra mitad del inodoro'
+    esp: 'Sin tanque · se compra aparte'
   },
   'inodoro-fluxometro': {
     cat: 'MAT-24', base: 'Taza para fluxómetro', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 40,
     alias: 'taza de fluxómetro, inodoro comercial',
-    esp: 'Taza sin tanque, para válvula de descarga. Uso comercial e institucional'
+    esp: 'Sin tanque · el fluxómetro va aparte'
   },
   'urinario': {
     cat: 'MAT-24', base: 'Urinario de porcelana', unidad: 'unidad',
@@ -83,8 +81,7 @@ const FAMILIAS = {
   'kit-instalacion-inodoro': {
     cat: 'MAT-24', base: 'Kit de instalación de inodoro', unidad: 'juego',
     ejes: [], etapa: 'instalaciones', orden: 70,
-    alias: 'kit de instalación, cera y tornillos de inodoro',
-    esp: 'Lo que el plomero compra por cada aparato que monta'
+    alias: 'kit de instalación, cera y tornillos de inodoro'
   },
 
   'lavamanos': {
@@ -96,7 +93,7 @@ const FAMILIAS = {
     cat: 'MAT-25', base: 'Pedestal para lavamanos', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20,
     alias: 'pedestal, pie de lavamanos',
-    esp: 'Se compra aparte del lavamanos: son dos partidas'
+    esp: 'Sin lavamanos · se compra aparte'
   },
   'palometa': {
     cat: 'MAT-25', base: 'Palometa para lavamanos', unidad: 'unidad',
@@ -131,8 +128,7 @@ const FAMILIAS = {
   'barra-seguridad': {
     cat: 'MAT-27', base: 'Barra de seguridad', unidad: 'unidad',
     ejes: ['forma', 'largo_cm'], etapa: 'terminacion', orden: 10,
-    alias: 'barra de seguridad, agarradera, accesibilidad',
-    esp: 'Herraje de accesibilidad. Su anclaje va contra el muro, no contra la cerámica'
+    alias: 'barra de seguridad, agarradera, accesibilidad'
   },
   'juego-accesorios': {
     cat: 'MAT-27', base: 'Juego de accesorios de baño', unidad: 'juego',
@@ -194,8 +190,7 @@ const FAMILIAS = {
   mezcladora: {
     cat: 'MAT-09', base: 'Mezcladora', unidad: 'unidad',
     ejes: ['uso', 'activacion'], etapa: 'instalaciones', orden: 55,
-    alias: 'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero',
-    esp: 'Grifería del aparato. El número de manijas y el acabado son de la cotización'
+    alias: 'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero'
   },
   'ducha-manguera': {
     cat: 'MAT-09', base: 'Manguera para ducha teléfono', unidad: 'unidad',

@@ -66,6 +66,8 @@ const grupoPorCodigo = {};
 CAT.grupos.forEach((g) => { grupoPorCodigo[g.codigo] = g; });
 const etapaPorCodigo = {};
 CAT.etapas.forEach((e) => { etapaPorCodigo[e.codigo] = e; });
+/* En la tabla solo se etiqueta el alcance que se aparta del de mostrador. */
+const ALCANCE_BASE = (CAT.meta && CAT.meta.alcanceBase) || '';
 
 /* ---------- cabecera, pie y panel de cotización ---------- */
 
@@ -233,7 +235,7 @@ function fila(it) {
   return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
       (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
-      (it.alcance ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') +
+      (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') +
       (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
             <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
@@ -429,7 +431,8 @@ ${items.map(fila).join('\n')}
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
       llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
-      Google Sheets se reparte en columnas.
+      Google Sheets se reparte en columnas. Salvo que el ítem diga otra cosa, el precio es
+      de mostrador: material retirado en almacén, sin transporte.
     </p>
 
     <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">

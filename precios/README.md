@@ -256,6 +256,23 @@ quedarse viejo solo.
 
 ---
 
+### Qué va en `esp`, y qué no
+
+`esp` sale en la tabla debajo del nombre, en gris, y en el teléfono cada palabra de más es
+un renglón. Solo lleva **lo que el nombre no dice** y hace falta para no equivocarse de
+producto: una norma o grado (`Grado 60 · ASTM A615`, `SDR-41`, `600 V`), el material si no
+está en el nombre (`Gres porcelánico`), una presentación que el nombre no trae (`Rollo de
+2.40 x 40 m`) o una advertencia de compra corta. Nunca una paráfrasis del nombre o de la
+familia («Pletina de acero al carbono» bajo «Pletina 1" x 1/8"»), ni una medida que ya está
+en el nombre, ni una explicación de cómo se construyó el ítem. Si no queda nada, vacío.
+
+Para los ítems importados, `esp` se define por familia en las tablas de especificación y
+en las reglas incrustadas del importador; el 10/09/2026 se revisaron todas con esa regla.
+
+Lo mismo con el **alcance**: «Material retirado en almacén» es el de casi todo el catálogo,
+así que está declarado una vez (`meta.alcanceBase`) y la tabla solo etiqueta el ítem que se
+aparta de él. La ficha por proveedor y el Excel lo muestran siempre.
+
 ## Dos campos que hacen comparables los precios
 
 ### `alcance` — qué cubre el precio

@@ -45,9 +45,9 @@ const FAMILIAS = {
     ejes: ['material', 'uso', 'formato'],
     nombre: m => (m.material === 'porcelanato' ? 'Porcelanato' : 'Cerámica') +
                  ' de ' + m.uso + ', ' + m.formato,
-    esp: m => 'Baldosa de campo de ' + m.formato + ', ' +
-              (m.material === 'porcelanato' ? 'gres porcelánico' : 'pasta cerámica esmaltada') +
-              '. El color, el diseño y la marca son de la cotización',
+    /* Material, uso y formato van en el nombre; color, diseño y marca son
+       de la cotización. No queda nada que la pantalla deba repetir. */
+    esp: '',
     alias: 'piso, cerámica, porcelanato, baldosa, azulejo, revestimiento, loza'
   },
 
@@ -55,7 +55,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'm²', etapa: 'pisos', orden: 20,
     ejes: ['formato'],
     nombre: m => 'Mosaico cerámico en malla, ' + m.formato,
-    esp: 'Piezas pequeñas montadas en malla, para piscinas, duchas y paños decorativos',
+    esp: '',
     alias: 'mosaico, malla, veneciano, pastilla'
   },
 
@@ -63,7 +63,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'unidad', etapa: 'pisos', orden: 30,
     ejes: ['formato'],
     nombre: m => 'Peldaño cerámico recto, ' + m.formato,
-    esp: 'Pieza de huella con nariz, para el escalón',
+    esp: '',
     alias: 'peldaño, escalón, nariz de escalón'
   },
 
@@ -71,7 +71,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'juego', etapa: 'pisos', orden: 40,
     ejes: ['largo_cm'],
     nombre: m => 'Set de huella y contrahuella, ' + m.largo_cm + ' cm',
-    esp: 'Las dos piezas del escalón en un solo juego',
+    esp: '',
     alias: 'huella y contrahuella, set de escalón'
   },
 
@@ -79,7 +79,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'unidad', etapa: 'pisos', orden: 50,
     ejes: ['largo_cm'],
     nombre: m => 'Borde para peldaño, ' + m.largo_cm + ' cm',
-    esp: 'Remate de nariz que se pega sobre el escalón terminado',
+    esp: '',
     alias: 'borde de peldaño, nariz'
   },
 
@@ -87,7 +87,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'ml', etapa: 'pisos', orden: 60,
     ejes: ['material'],
     nombre: m => 'Rodapié de ' + m.material,
-    esp: 'Zócalo perimetral, medido por metro lineal',
+    esp: '',
     alias: 'rodapié, zócalo, guardapolvo'
   },
 
@@ -96,7 +96,9 @@ const FAMILIAS = {
     ejes: ['tipo', 'material', 'medida_mm'],
     nombre: m => ETIQUETA_PERFIL[m.tipo] + ' de ' + m.material +
                  (m.medida_mm ? ', ' + m.medida_mm + ' mm' : ''),
-    esp: 'Perfil de terminación de la cerámica. Se vende por tramo, normalmente de 2.5 m',
+    /* La unidad es el tramo: 2.5 m en listelos, peldaños y juntas, 2.6 m
+       en los esquineros de canto. */
+    esp: 'Tramo de 2.5 a 2.6 m',
     alias: 'perfil, listelo metálico, esquinero, remate, junta de dilatación'
   },
 
@@ -104,7 +106,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'funda', etapa: 'pisos', orden: 80,
     ejes: ['espesor_mm', 'piezas'],
     nombre: m => 'Cruceta para cerámica ' + m.espesor_mm + ' mm, funda de ' + m.piezas,
-    esp: 'Separador de junta. El precio no dice nada si no se sabe cuántas trae la funda',
+    esp: '',
     alias: 'cruceta, separador, crucetilla'
   },
 
@@ -113,7 +115,10 @@ const FAMILIAS = {
     ejes: ['pieza', 'espesor_mm'],
     nombre: m => (m.pieza === 'calzo' ? 'Calzo' : m.pieza === 'cuna' ? 'Cuña' : 'Clip') +
                  ' de nivelación para cerámica' + (m.espesor_mm ? ' ' + m.espesor_mm + ' mm' : ''),
-    esp: 'Sistema de nivelación de baldosa: el calzo fija la altura y la cuña la aprieta',
+    /* Los mm del calzo y del clip son la junta que dejan, no el espesor de
+       la pieza, y ninguno de los dos aprieta solo: la cuña se compra aparte. */
+    esp: m => m.pieza === 'cuna' ? 'Aprieta calzos y clips de cualquier junta'
+                                 : 'La medida es la junta · la cuña va aparte',
     alias: 'nivelador, calzo, cuña, clip de nivelación'
   },
 
@@ -121,7 +126,7 @@ const FAMILIAS = {
     cat: 'MAT-08', unidad: 'm²', etapa: 'exteriores', orden: 100,
     ejes: ['tipo'],
     nombre: m => 'Adoquín de hormigón tipo ' + m.tipo,
-    esp: 'Pavimento de exterior. El precio va por metro cuadrado, con las piezas que declara la ficha',
+    esp: '',
     alias: 'adoquín, pavimento de exterior, acera'
   },
 
@@ -129,7 +134,7 @@ const FAMILIAS = {
     cat: 'MAT-07', unidad: 'm²', etapa: 'techos', orden: 200,
     ejes: ['material', 'piezas_m2'],
     nombre: m => 'Teja de ' + m.material + ', ' + m.piezas_m2 + ' piezas por m²',
-    esp: 'Cubierta de teja medida por metro cuadrado, que es como se presupuesta. El formato de la pieza cambia con cada modelo; las piezas por metro, no',
+    esp: '',
     alias: 'teja, techo de teja, cubierta, teja gravillada'
   },
 
@@ -138,7 +143,7 @@ const FAMILIAS = {
     ejes: ['pieza', 'material'],
     nombre: m => (m.pieza === 'final' ? 'Final de caballete' : 'Caballete') +
                  ' para teja de ' + m.material,
-    esp: 'Remate de cumbrera. El final cierra el extremo del caballete',
+    esp: '',
     alias: 'caballete, cumbrera, remate de techo'
   },
 
@@ -150,7 +155,7 @@ const FAMILIAS = {
     cat: 'EQU-04', unidad: 'unidad', etapa: 'preliminares', orden: 300,
     ejes: ['tipo', 'corte_cm'],
     nombre: m => ETIQUETA_HERRAMIENTA[m.tipo] + ', corte de ' + m.corte_cm + ' cm',
-    esp: 'Máquina del instalador de cerámica, por su largo de corte',
+    esp: '',
     alias: 'cortadora, cortadora de cerámica, máquina de cortar'
   },
 
@@ -158,7 +163,7 @@ const FAMILIAS = {
     cat: 'EQU-04', unidad: 'unidad', etapa: 'preliminares', orden: 310,
     ejes: ['tipo'],
     nombre: m => ETIQUETA_HERRAMIENTA[m.tipo],
-    esp: 'Herramienta del instalador de cerámica',
+    esp: '',
     alias: 'herramienta de cerámica, llana, ventosa, alicate'
   },
 
@@ -168,7 +173,7 @@ const FAMILIAS = {
     cat: 'EQU-04', unidad: 'unidad', etapa: 'preliminares', orden: 320,
     ejes: ['tipo', 'medida'],
     nombre: m => ETIQUETA_HERRAMIENTA[m.tipo] + ', ' + m.medida,
-    esp: 'Repuesto de corte, por su medida',
+    esp: '',
     alias: 'disco, rodel, cuchilla, repuesto de cortadora'
   },
 
@@ -180,9 +185,11 @@ const FAMILIAS = {
     ejes: ['clase', 'color', 'kg'],
     nombre: m => 'Adhesivo cementicio ' + m.clase.toUpperCase() + ' ' + m.color +
                  ', funda ' + m.kg + ' kg',
+    /* La clase va en el nombre; lo que el comprador necesita es saber que el
+       C1 no sirve para porcelanato. */
     esp: m => m.clase === 'c2'
-      ? 'Adhesivo mejorado y deformable: porcelanato, gran formato y exteriores'
-      : 'Adhesivo de fraguado normal: cerámica de alta y media absorción, interiores',
+      ? 'Adherencia mejorada · porcelanato, gran formato y exteriores'
+      : 'Adherencia normal · cerámica de interiores, no porcelanato',
     alias: 'pegamento de cerámica, adhesivo, pegacol, cemento cola'
   },
 
@@ -190,7 +197,7 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'unidad', etapa: 'pisos', orden: 410,
     ejes: ['presentacion'],
     nombre: m => 'Adhesivo en pasta para cerámica, ' + m.presentacion,
-    esp: 'Adhesivo acrílico listo para usar, para cerámica en interiores',
+    esp: 'Acrílico · solo interiores',
     alias: 'adhesivo en pasta, vinalit, pega de cerámica lista'
   },
 
@@ -198,7 +205,8 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'pisos', orden: 420,
     ejes: ['kg'],
     nombre: m => 'Derretido para cerámica, funda ' + m.kg + ' kg',
-    esp: 'Mortero de juntas. El color no cambia el precio: el mismo producto sale en 16 tonos',
+    /* El color no cambia el precio: el mismo producto sale en 16 tonos. */
+    esp: '',
     alias: 'derretido, grout, fragua, junta de cerámica'
   },
 
@@ -206,7 +214,7 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'pisos', orden: 430,
     ejes: ['kg'],
     nombre: m => 'Mortero predosificado de pañete, funda ' + m.kg + ' kg',
-    esp: 'Mezcla lista para pañete de paredes interiores y exteriores',
+    esp: '',
     alias: 'readymix, mezcla lista, pañete, mortero de revestimiento'
   },
 
@@ -214,7 +222,7 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'pisos', orden: 440,
     ejes: ['color', 'kg'],
     nombre: m => 'Estuco ' + m.color + ', funda ' + m.kg + ' kg',
-    esp: 'Acabado fino sobre pañete, paredes y techos',
+    esp: '',
     alias: 'estuco, masilla de pared'
   },
 
@@ -222,7 +230,9 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'pisos', orden: 450,
     ejes: ['kg'],
     nombre: m => 'Masilla para revestimiento, funda ' + m.kg + ' kg',
-    esp: 'Masilla cementicia para pegar y emboquillar paneles de revestimiento',
+    /* La ficha (Pegacol Panel, CS IV, EN 998-1) la describe como mortero de
+       terminación sobre paneles, no como pega. */
+    esp: 'Cementicia · sobre paneles de fibrocemento y drywall',
     alias: 'masilla, pegacol panel'
   },
 
@@ -230,7 +240,7 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'terminacion', orden: 455,
     ejes: ['kg'],
     nombre: m => 'Yeso en funda de ' + m.kg + ' kg',
-    esp: 'Yeso para plafones, molduras y resane',
+    esp: '',
     alias: 'yeso, escayola, plafón de yeso'
   },
 
@@ -238,7 +248,7 @@ const FAMILIAS = {
     cat: 'MAT-02', unidad: 'funda', etapa: 'estructura', orden: 460,
     ejes: ['resistencia', 'lb'],
     nombre: m => 'Hormigón seco premezclado ' + m.resistencia + ' kg/cm², funda ' + m.lb + ' lb',
-    esp: 'Hormigón en funda para volúmenes pequeños: dados, bases y reparaciones',
+    esp: '',
     alias: 'hormigón seco, concreto en funda, mezcla lista de hormigón'
   }
 };

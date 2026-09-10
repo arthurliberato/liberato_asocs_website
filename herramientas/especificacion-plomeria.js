@@ -25,7 +25,12 @@
    propia categoría, MAT-32. Son 378 ítems: dejarlos junto a los inodoros y las
    bombas hacía una página donde el aparato que se busca queda enterrado bajo
    trescientos codos. Los aparatos, la grifería, el bombeo y el gas se quedan
-   en MAT-09. */
+   en MAT-09.
+
+   El campo esp es lo que el nombre NO dice y el comprador necesita: material
+   o clase que no está en el nombre, una advertencia de compra corta. Lo que
+   solo parafrasea el nombre o explica cómo se armó el ítem no va en pantalla:
+   esp queda en ''. */
 const FAMILIAS = {
   /* ---- Tubería ---- */
   tubo: {
@@ -33,14 +38,15 @@ const FAMILIAS = {
     ejes: ['material', 'norma', 'diametro', 'largo_pies'],
     nombre: m => 'Tubo ' + m.material + (m.norma ? ' ' + m.norma : '') +
                  ' ' + m.diametro + ' x ' + m.largo_pies + ' pies',
-    esp: m => 'Tubo de ' + m.diametro + ' en presentación de ' + m.largo_pies + ' pies',
+    /* Material, norma, diámetro y largo ya van en el nombre. */
+    esp: m => '',
     alias: 'tubo, tubería, PVC, CPVC, drenaje, presión'
   },
   'llave-tanque-gas': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 145,
     ejes: ['medida'],
     nombre: m => 'Llave para tanque de gas ' + m.medida,
-    esp: 'Válvula de salida del tanque de GLP',
+    esp: '',
     alias: 'llave de tanque de gas, válvula de gas'
   },
 
@@ -49,7 +55,7 @@ const FAMILIAS = {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 20,
     ejes: ['tipo', 'material', 'medida'],
     nombre: m => ETIQUETA_CONEXION[m.tipo] + ' de ' + m.material + ' ' + m.medida,
-    esp: 'Pieza de conexión. El material manda el precio tanto como la medida',
+    esp: '',
     alias: 'conexión, accesorio, fitting, codo, tee, niple, reducción'
   },
 
@@ -58,21 +64,21 @@ const FAMILIAS = {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 30,
     ejes: ['tipo', 'material', 'medida'],
     nombre: m => 'Llave de paso ' + m.tipo + ' de ' + m.material + ' ' + m.medida,
-    esp: 'Corte de agua en la línea',
+    esp: '',
     alias: 'llave de paso, válvula, llave de bola, llave angular'
   },
   cheque: {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 40,
     ejes: ['medida'],
     nombre: m => 'Válvula de retención (cheque) ' + m.medida,
-    esp: 'Deja pasar el agua en un solo sentido. Obligatoria a la salida de la bomba',
+    esp: '',
     alias: 'cheque, válvula de retención, check'
   },
   'valvula-cisterna': {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 50,
     ejes: ['medida'],
     nombre: m => 'Válvula de cisterna con flotante ' + m.medida,
-    esp: 'Corta la entrada de agua cuando la cisterna se llena',
+    esp: '',
     alias: 'válvula de cisterna, flotante, boya de cisterna'
   },
 
@@ -83,21 +89,21 @@ const FAMILIAS = {
        entre aluminio e inoxidable el precio casi no se mueve. */
     ejes: ['medida'],
     nombre: m => 'Rejilla de piso ' + m.medida,
-    esp: 'Sumidero de piso para baños, terrazas y áreas de lavado',
+    esp: '',
     alias: 'rejilla, sumidero, coladera de piso'
   },
   sifon: {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 70,
     ejes: ['uso', 'material', 'medida'],
     nombre: m => 'Sifón de ' + m.material + ' para ' + m.uso + ' ' + m.medida,
-    esp: 'Trampa de olores bajo el aparato',
+    esp: '',
     alias: 'sifón, trampa, P-trap'
   },
   'boquilla-desague': {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 80,
     ejes: ['uso', 'material'],
     nombre: m => 'Boquilla de desagüe de ' + m.material + ' para ' + m.uso,
-    esp: 'La pieza que va en el hoyo del aparato y recibe el sifón',
+    esp: '',
     alias: 'boquilla, desagüe, cedazo'
   },
 
@@ -106,7 +112,7 @@ const FAMILIAS = {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 90,
     ejes: ['uso', 'medida'],
     nombre: m => 'Manguera para ' + m.uso + ' ' + m.medida,
-    esp: 'Manguera de conexión del aparato a la llave de paso',
+    esp: '',
     alias: 'manguera, flexible, acometida'
   },
 
@@ -115,21 +121,21 @@ const FAMILIAS = {
     cat: 'MAT-32', unidad: 'rollo', etapa: 'instalaciones', orden: 100,
     ejes: ['medida'],
     nombre: m => 'Cinta de teflón ' + m.medida,
-    esp: 'Sella la rosca. Se compra por rollo',
+    esp: '',
     alias: 'teflón, cinta de rosca, PTFE'
   },
   'cinta-plomero': {
     cat: 'MAT-32', unidad: 'rollo', etapa: 'instalaciones', orden: 110,
     ejes: ['medida'],
     nombre: m => 'Cinta de plomero ' + m.medida,
-    esp: 'Fleje perforado para colgar y fijar tubería',
+    esp: '',
     alias: 'cinta de plomero, fleje, perforada'
   },
   'cemento-pvc': {
     cat: 'MAT-32', unidad: 'envase', etapa: 'instalaciones', orden: 120,
     ejes: ['presentacion'],
     nombre: m => 'Cemento solvente para PVC, ' + m.presentacion,
-    esp: 'Pega de tubería de PVC. No es un adhesivo de construcción',
+    esp: '',
     alias: 'cemento PVC, pega de tubo, solvente'
   },
 
@@ -138,14 +144,15 @@ const FAMILIAS = {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 130,
     ejes: ['tipo'],
     nombre: m => 'Regulador de gas ' + m.tipo,
-    esp: 'Baja la presión del tanque a la de la estufa o el calentador',
+    esp: '',
     alias: 'regulador de gas, GLP'
   },
   'pigtail-gas': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 140,
     ejes: [],
     nombre: 'Pig tail para conexión de gas',
-    esp: 'Manguera flexible entre el tanque de gas y el regulador',
+    /* La manguera para gas va del regulador a la estufa; esta, del tanque al regulador. */
+    esp: 'Del tanque al regulador',
     alias: 'pig tail, conexión de gas'
   },
 
@@ -154,91 +161,95 @@ const FAMILIAS = {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 150,
     ejes: ['tipo', 'hp'],
     nombre: m => 'Bomba ' + m.tipo + ' de ' + m.hp + ' HP',
-    esp: 'La potencia es lo que se presupuesta; la marca va en la cotización',
+    esp: '',
     alias: 'bomba, presurizadora, ladrona, centrífuga'
   },
   'tanque-presurizado': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 160,
     ejes: ['litros'],
     nombre: m => 'Tanque presurizado de ' + m.litros + ' litros',
-    esp: 'Acumula presión para que la bomba no arranque en cada apertura',
+    esp: '',
     alias: 'tanque presurizado, hidroneumático'
   },
   'interruptor-bomba': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 170,
     ejes: ['rango'],
     nombre: m => 'Interruptor automático de presión ' + m.rango + ' PSI',
-    esp: 'Arranca y para la bomba según la presión de la línea',
+    esp: '',
     alias: 'interruptor de presión, presostato, automático de bomba'
   },
   'flotante-electrico': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 175,
     ejes: [],
     nombre: 'Interruptor de flotante eléctrico',
-    esp: 'Corta la bomba cuando la cisterna se vacía o el tinaco se llena',
+    esp: '',
     alias: 'flotante eléctrico, interruptor de nivel, boya eléctrica'
   },
   'control-bomba': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 176,
     ejes: ['medida'],
     nombre: m => 'Control automático de bomba ' + m.medida,
-    esp: 'Arranca la bomba por flujo, sin tanque presurizado',
+    esp: '',
     alias: 'control automático, press control'
   },
   'llave-empotrar': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 275,
     ejes: ['medida'],
     nombre: m => 'Llave de empotrar para baño ' + m.medida,
-    esp: 'Llave que va dentro del muro, para ducha o bañera',
+    esp: '',
     alias: 'llave de empotrar, llave de pared, llave de ducha'
   },
   'llave-bebedero': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 276,
     ejes: [],
     nombre: 'Llave de bebedero',
-    esp: 'Llave pequeña de plástico para bebedero o tanque',
+    esp: 'Plástico',
     alias: 'llave de bebedero, llave plástica'
   },
   manometro: {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 180,
     ejes: ['psi', 'tipo'],
     nombre: m => 'Manómetro ' + m.tipo + ' de ' + m.psi + ' PSI',
-    esp: 'Mide la presión de la línea. El de glicerina aguanta la vibración de la bomba',
+    esp: 'El de glicerina aguanta la vibración de la bomba',
     alias: 'manómetro, medidor de presión'
   },
   calentador: {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 190,
     ejes: ['energia', 'capacidad'],
     nombre: m => 'Calentador de agua ' + m.energia + ' de ' + m.capacidad,
-    esp: 'El de acumulación se mide en galones y el de paso, en litros por minuto',
+    /* Galones = tanque de acumulación; litros por minuto = de paso. En kW no se sabe. */
+    esp: m => /galon/.test(m.capacidad) ? 'De acumulación'
+            : /minuto/.test(m.capacidad) ? 'De paso' : '',
     alias: 'calentador, calentón, boiler, termo'
   },
   cisterna: {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 200,
     ejes: ['material', 'capacidad_gal'],
     nombre: m => 'Cisterna de ' + m.material + ' de ' + m.capacidad_gal + ' galones',
-    esp: 'Almacenamiento bajo o a nivel de piso',
+    esp: '',
     alias: 'cisterna, tanque de agua, reserva'
   },
   tinaco: {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 210,
     ejes: ['capacidad_gal'],
     nombre: m => 'Tinaco de ' + m.capacidad_gal + ' galones',
-    esp: 'Tanque elevado de polietileno',
+    /* La ficha no declara el material: no se afirma. */
+    esp: '',
     alias: 'tinaco, tanque elevado, tanque de techo'
   },
   'tapa-cisterna': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 220,
     ejes: ['material', 'medida'],
     nombre: m => 'Tapa de cisterna de ' + m.material + ' ' + m.medida,
-    esp: 'Registro de la cisterna, con marco',
+    /* La ficha no dice si trae marco: no se afirma. */
+    esp: '',
     alias: 'tapa de cisterna, registro'
   },
   'boya-cisterna': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 230,
     ejes: ['medida_mm'],
     nombre: m => 'Boya para válvula de cisterna, ' + m.medida_mm + ' mm',
-    esp: 'El flotador de la válvula, que se cambia aparte',
+    esp: '',
     alias: 'boya, flotador'
   },
 
@@ -248,7 +259,8 @@ const FAMILIAS = {
     ejes: ['pozos', 'medida'],
     nombre: m => 'Fregadero de ' + (m.pozos === 1 ? 'un pozo' : m.pozos + ' pozos') +
                  (m.medida ? ', ' + m.medida : ''),
-    esp: 'Fregadero de cocina de acero inoxidable',
+    /* La ficha no declara el material: no se afirma. */
+    esp: '',
     alias: 'fregadero, lavaplatos, pantry'
   },
 
@@ -257,28 +269,28 @@ const FAMILIAS = {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 250,
     ejes: ['tipo'],
     nombre: m => 'Mezcladora de lavamanos ' + m.tipo,
-    esp: 'La monocomando lleva una sola manija; la de cuatro pulgadas, dos',
+    esp: '',
     alias: 'mezcladora de lavamanos, grifo, llave de lavamanos'
   },
   'mezcladora-fregadero': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 260,
     ejes: ['tipo'],
     nombre: m => 'Mezcladora de fregadero ' + m.tipo,
-    esp: 'Grifería de cocina',
+    esp: '',
     alias: 'mezcladora de fregadero, grifo de cocina'
   },
   'llave-lavamanos': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 270,
     ejes: [],
     nombre: 'Llave sencilla de lavamanos',
-    esp: 'Una sola agua, sin mezclador',
+    esp: '',
     alias: 'llave de lavamanos, grifo sencillo'
   },
   'llave-lavadero': {
     cat: 'MAT-09', unidad: 'unidad', etapa: 'instalaciones', orden: 280,
     ejes: [],
     nombre: 'Llave de lavadero o jardín',
-    esp: 'Llave de manguera, para lavadero, patio y jardín',
+    esp: '',
     alias: 'llave de jardín, llave de manguera, lavadero'
   }
 };

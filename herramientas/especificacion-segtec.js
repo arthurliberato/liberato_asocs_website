@@ -17,8 +17,7 @@ const FAMILIAS = {
   'camara': {
     cat: 'MAT-16', base: 'Cámara de seguridad', unidad: 'unidad',
     ejes: ['formato', 'resolucion_mp'], etapa: 'estructura', orden: 10,
-    alias: 'cámara CCTV, cámara de seguridad',
-    esp: 'Cámara de circuito cerrado para videovigilancia'
+    alias: 'cámara CCTV, cámara de seguridad'
   },
   'grabador': {
     cat: 'MAT-16', base: 'Grabador de video', unidad: 'unidad',
@@ -29,7 +28,7 @@ const FAMILIAS = {
     cat: 'MAT-16', base: 'Disco duro para videovigilancia', unidad: 'unidad',
     ejes: ['capacidad_tb'], etapa: 'estructura', orden: 30,
     alias: 'disco de vigilancia, HDD',
-    esp: 'Disco pensado para escribir las 24 horas; uno de escritorio no aguanta'
+    esp: 'Escritura 24/7 · uno de escritorio no aguanta'
   },
   'monitor-cctv': {
     cat: 'MAT-16', base: 'Monitor para CCTV', unidad: 'unidad',
@@ -48,7 +47,7 @@ const FAMILIAS = {
     cat: 'MAT-16', base: 'Kit de videovigilancia', unidad: 'juego',
     ejes: ['camaras', 'formato', 'resolucion_mp'], etapa: 'estructura', orden: 5,
     alias: 'kit de cámaras, combo de videovigilancia',
-    esp: 'Cámaras, grabador y disco en un solo paquete'
+    esp: 'Incluye grabador y disco'
   },
   'kit-alarma': {
     cat: 'MAT-28', base: 'Kit de alarma', unidad: 'juego',
@@ -162,7 +161,8 @@ const FAMILIAS = {
     cat: 'MAT-31', base: 'Interruptor inteligente', unidad: 'unidad',
     ejes: ['canales', 'neutro'], etapa: 'instalaciones', orden: 10,
     alias: 'interruptor wifi, interruptor inteligente',
-    esp: 'Necesita neutro en la caja: hay que preverlo antes de cerrar la pared'
+    /* Solo cuando el nombre no dice con/sin neutro: los Sonoff sin eje lo exigen. */
+    esp: m => m.neutro ? '' : 'Necesita neutro en la caja'
   },
   'tomacorriente-smart': {
     cat: 'MAT-31', base: 'Tomacorriente inteligente', unidad: 'unidad',
@@ -251,7 +251,7 @@ function item(familia, medidas) {
     orden: f.orden,
     nombre: f.base + (partes.length ? ' ' + partes.join(' ') : ''),
     unidad: f.unidad,
-    esp: f.esp || '',
+    esp: typeof f.esp === 'function' ? f.esp(medidas) : (f.esp || ''),
     etapa: f.etapa,
     origen: 'importado',
     alias: f.alias,

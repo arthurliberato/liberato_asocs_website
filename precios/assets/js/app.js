@@ -15,6 +15,9 @@
      pasa a ser la mediana de esas cotizaciones. */
   if (PRECIOS) PRECIOS.aplicar(CAT, PROV);
   var ITBIS = (CAT.meta && CAT.meta.itbis) || 0.18;
+  /* El alcance de casi todos los ítems (precio de mostrador); en la tabla
+     solo se etiqueta el que se aparta de él. La ficha lo muestra siempre. */
+  var ALCANCE_BASE = (CAT.meta && CAT.meta.alcanceBase) || '';
   var LS_KEY = 'ilya_precios_cotizacion_v1';
 
   /* ---------------- utilidades ---------------- */
@@ -1209,7 +1212,7 @@
           '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
                 ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
               (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
-              (it.alcance ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
+              (it.alcance && it.alcance !== ALCANCE_BASE ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
               (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
           '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
               '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
