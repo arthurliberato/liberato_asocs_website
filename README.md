@@ -190,6 +190,18 @@ entrega inventados no son un adorno de maqueta: son una oferta de venta de un in
 que no se sabe va en `null`, y la ficha lo dice —«Pendiente de confirmar»— en vez de
 rellenarlo o dejarlo en blanco, que parecería un fallo de la página.
 
+### Qué falta por confirmar
+
+La ficha publica «Pendiente de confirmar» donde no hay dato. Para pedirlo sin ir campo por
+campo por la página:
+
+```bash
+node herramientas/generar-proyectos-venta.js --pendientes
+```
+
+Saca la lista en texto plano, proyecto por proyecto y tipología por tipología, lista para
+reenviar a quien tenga el dato.
+
 ### El precio
 
 `politicaPrecio` decide cómo se muestra:

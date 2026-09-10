@@ -4,6 +4,7 @@
    proyecto inmobiliario en venta
 
        node herramientas/generar-proyectos-venta.js
+       node herramientas/generar-proyectos-venta.js --pendientes
 
    Escribe proyectos-en-venta.html y una proyecto-<slug>.html por cada
    entrada de assets/js/proyectos-venta.js, y actualiza el sitemap.
@@ -198,7 +199,43 @@ const CONTACTO = (que) => `
   </div>
 </section>`;
 
+/* ---------- qué falta por confirmar ----------
+   La ficha publica «Pendiente de confirmar» donde no hay dato. Esto
+   saca la misma lista en texto plano, para pedirla sin tener que ir
+   campo por campo por la página. */
+const FALTANTES = [
+  ['nombre comercial', (p) => p.nombreProvisional],
+  ['sector dentro del municipio', (p) => !p.ubicacion.sector],
+  ['avance de obra', (p) => p.avance == null],
+  ['fecha estimada de entrega', (p) => !p.entrega],
+  ['niveles', (p) => p.niveles == null],
+  ['total de unidades', (p) => p.unidades == null],
+  ['amenidades', (p) => !p.amenidades || !p.amenidades.length],
+  ['condiciones de financiamiento', (p) => !p.financiamiento]
+];
+const FALTANTES_TIPOLOGIA = [
+  ['baños', (t) => t.banos == null],
+  ['metros cuadrados', (t) => t.m2 == null],
+  ['precio', (t) => !t.desde],
+  ['unidades disponibles', (t) => t.disponibles == null]
+];
+
+function pendientes() {
+  for (const p of PROYECTOS) {
+    console.log('\n' + p.nombre + '  (' + ubicacionTexto(p.ubicacion) + ')');
+    const faltan = FALTANTES.filter(([, f]) => f(p)).map(([q]) => q);
+    faltan.forEach((q) => console.log('  · ' + q));
+    for (const t of p.tipologias) {
+      const ft = FALTANTES_TIPOLOGIA.filter(([, f]) => f(t)).map(([q]) => q);
+      if (ft.length) console.log('  · del apartamento de ' + tipologiaNombre(t) + ': ' + ft.join(', '));
+    }
+    if (!faltan.length) console.log('  (nada pendiente)');
+  }
+  console.log('\nMientras falten, la ficha lo dice en vez de rellenarlo.');
+}
+
 function main() {
+  if (process.argv.includes('--pendientes')) return pendientes();
   const { cabecera, pie } = desdeLaPortada();
   const escritos = [];
 
