@@ -570,6 +570,12 @@ a.ct-v:hover{color:var(--verde-700)}
    no está confirmado se dice en vez de dejarse en blanco, que parece
    un error de la página.
    ========================================================= */
+/* La primera sección de una página arranca más arriba: bajo la cabecera
+   pegajosa no hace falta tanto aire, y 126 px separaban el título del
+   menú sin que eso dijera nada. El subdominio ya lo había resuelto así;
+   las páginas generadas de aquí pedían la clase y no existía. */
+.section-primera{padding-top:clamp(1.4rem,2.6vw,2.2rem);padding-bottom:1.6rem}
+
 .pv-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;list-style:none;padding:0;margin:0}
 @media (max-width:900px){.pv-lista{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.pv-lista{grid-template-columns:1fr}}
