@@ -47,24 +47,29 @@ RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "precios" / "descargas" / "precios-construccion-rd.xlsx"
 
 FUENTE = "Arial"
-AZUL = "1F3864"
-AZUL_SUAVE = "D9E2F3"
-GRIS = "F2F2F2"
-AMARILLO = "FFF2CC"
+
+# La paleta del logotipo, la misma del sitio. El libro se mantiene claro:
+# el verde solo pinta la banda de firma y la fila de títulos.
+VERDE = "3F6E22"        # fondo del icono
+VERDE_HONDO = "2C4E18"  # texto verde sobre claro
+VERDE_SUAVE = "E2EDD9"  # totales
+MARFIL = "F8F6EE"       # zebra
+AMBAR_SUAVE = "FDF3E2"  # celdas que el usuario llena
+FILETE = "D8D4C4"
 
 TXT = Font(name=FUENTE, size=10)
-TXT_MINI = Font(name=FUENTE, size=9, color="595959")
+TXT_MINI = Font(name=FUENTE, size=9, color="62685A")
 TIT = Font(name=FUENTE, size=10, bold=True, color="FFFFFF")
-H1 = Font(name=FUENTE, size=16, bold=True, color=AZUL)
-H2 = Font(name=FUENTE, size=11, bold=True, color=AZUL)
-ENTRADA = Font(name=FUENTE, size=10, color="0000FF")
+H1 = Font(name=FUENTE, size=16, bold=True, color=VERDE_HONDO)
+H2 = Font(name=FUENTE, size=11, bold=True, color=VERDE_HONDO)
+ENTRADA = Font(name=FUENTE, size=10, color="8A5309")
 
-FILL_TIT = PatternFill("solid", fgColor=AZUL)
-FILL_ENTRADA = PatternFill("solid", fgColor=AMARILLO)
-FILL_TOTAL = PatternFill("solid", fgColor=AZUL_SUAVE)
-FILL_ZEBRA = PatternFill("solid", fgColor=GRIS)
+FILL_TIT = PatternFill("solid", fgColor=VERDE)
+FILL_ENTRADA = PatternFill("solid", fgColor=AMBAR_SUAVE)
+FILL_TOTAL = PatternFill("solid", fgColor=VERDE_SUAVE)
+FILL_ZEBRA = PatternFill("solid", fgColor=MARFIL)
 
-BORDE = Border(*[Side(style="thin", color="BFBFBF")] * 4)
+BORDE = Border(*[Side(style="thin", color=FILETE)] * 4)
 
 MONEDA = '#,##0.00;[Red]-#,##0.00;"—"'
 PORCENTAJE = '0.0%;[Red]-0.0%;"—"'
