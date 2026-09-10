@@ -444,6 +444,7 @@ ${items.map(fila).join('\n')}
         </tbody>
       </table>
     </div>
+      <div class="tabla-mas" id="tabla-mas" hidden></div>
 
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       Bajo cada ítem están los comercios que lo venden: pulse uno y el precio de la fila pasa
@@ -578,39 +579,9 @@ function parchearPortada() {
   const archivo = path.join(DESTINO, 'index.html');
   let html = fs.readFileSync(archivo, 'utf8');
 
-  const conteo = {};
-  CAT.items.forEach((i) => { conteo[i.cat] = (conteo[i.cat] || 0) + 1; });
-
-  const tarjetas = CAT.categorias.map((c) => `      <a class="card" href="${c.slug}.html">
-        <span class="card-cod">${esc(c.codigo)}</span>
-        <h3>${esc(c.nombre)}</h3>
-        <p>${esc(c.desc)}</p>
-        <span class="card-meta"><span>${conteo[c.codigo] || 0} ítems</span><span>Ver precios →</span></span>
-      </a>`).join('\n');
-
-  /* Diez ítems con precio real y de compra frecuente; si uno se retira del
-     catálogo, el generador avisa y hay que elegir otro. */
-  const destacados = [
-    'MAT-02-001', 'MAT-04-001', 'MAT-04-002', 'MAT-06-005', 'MAT-07-013',
-    'MAT-32-001', 'MAT-13-001', 'MAT-08-055', 'MAT-10-009', 'MAT-09-016',
-  ].map((codigo) => {
-    const it = CAT.items.filter((i) => i.codigo === codigo)[0];
-    if (!it) throw new Error('Destacado inexistente: ' + codigo);
-    const cat = catPorCodigo[it.cat];
-    return `          <li class="destacado">
-            <span class="destacado-n"><a href="${cat.slug}.html" style="text-decoration:none">${esc(it.nombre)}</a><small>${esc(it.esp || cat.nombre)}</small></span>
-            <span class="destacado-p">${rd(it.ref)} <small style="font-weight:400;color:var(--ink-mute)">/ ${esc(it.unidad)}</small></span>
-          </li>`;
-  }).join('\n');
-
-  const reemplazar = (marca, contenido) => {
-    const re = new RegExp('(<!-- ' + marca + ':inicio -->)[\\s\\S]*?(<!-- ' + marca + ':fin -->)');
-    if (!re.test(html)) throw new Error('No se encontró el marcador ' + marca + ' en index.html');
-    html = html.replace(re, '$1\n' + contenido + '\n    $2');
-  };
-
-  reemplazar('categorias', `    <div class="grid grid-4" id="grid-categorias">\n${tarjetas}\n    </div>`);
-  reemplazar('destacados', `        <ul id="destacados" style="margin-top:1.6rem">\n${destacados}\n        </ul>`);
+  /* La portada es la tabla del catálogo y nada más: la rejilla de categorías
+     y los destacados salieron de ahí, así que aquí solo quedan las cifras
+     del encabezado. */
 
   /* Cifras del encabezado: valor real en el HTML, el JS solo lo confirma.
      Las del directorio (proveedores, cuántos publican precios) ya no van
@@ -628,7 +599,7 @@ function parchearPortada() {
   });
 
   fs.writeFileSync(archivo, html);
-  return CAT.categorias.length;
+  return Object.keys(cifras).length;
 }
 
 /* ---------- sitemap ---------- */
@@ -666,5 +637,5 @@ CAT.categorias.forEach((cat) => {
 });
 
 console.log(`\n${CAT.categorias.length} páginas de categoría generadas (${(totalBytes / 1024).toFixed(0)} KB en total)`);
-console.log(`index.html: ${parchearPortada()} enlaces de categoría escritos en el HTML`);
+console.log(`index.html: ${parchearPortada()} cifras del encabezado actualizadas`);
 console.log(`sitemap.xml regenerado con ${generarSitemap()} URLs`);

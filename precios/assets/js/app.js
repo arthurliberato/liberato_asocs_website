@@ -88,6 +88,8 @@
     tel:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1.5-3.2-4-1.8-1.7 1.9a12.4 12.4 0 0 1-6.7-6.7l1.9-1.7-1.8-4L5 4.9Z"/></svg>',
     mail:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>',
     copiar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+    flechaIzq: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>',
+    flechaDer: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>',
     wa:      '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.8 12a5.1 5.1 0 0 0 1 2.2 11.5 11.5 0 0 0 4.5 3.9c1.6.6 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>',
     correo:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
     proveedor: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><path d="M3 9h18l-1.5-4.5h-15L3 9Z"/><path d="M4.5 9v10.5h15V9"/><path d="M9.5 19.5V14h5v5.5"/></svg>',
@@ -127,6 +129,10 @@
   /* Estado compartido: los filtros del catálogo y el interruptor de ITBIS
      también gobiernan cómo se muestran los montos de la lista de cotización. */
   var estado = {q: '', grupo: '', cat: '', etapa: '', min: '', max: '', orden: 'cat', sinItbis: false};
+
+  /* La tabla arranca con 100 filas. Con 1,449 ítems, pintarlas todas cuesta
+     casi un segundo en un teléfono y nadie las mira: el que busca filtra. */
+  var PAGINA = 100;
 
   var cotizacion = cargarCotizacion();
 
@@ -577,6 +583,26 @@
                         : '<span class="precio">' + rd(p) + '</span>') + botonCopiarPrecio(it);
     td.setAttribute('data-precio-ref', bruto === null ? '' : bruto);
   }
+  /* Los dos botones bajo la tabla. Sirven igual al catálogo, que pinta las
+     filas, y a las páginas de categoría, que las traen escritas y solo las
+     esconden: un buscador ve las 416 filas de tubería aunque el visitante
+     empiece viendo 100. */
+  function pintarMas(visibles, total, alPulsar) {
+    var caja = $('#tabla-mas');
+    if (!caja) return;
+    if (visibles >= total) { caja.hidden = true; caja.innerHTML = ''; return; }
+    var faltan = total - visibles;
+    caja.hidden = false;
+    caja.innerHTML =
+      '<span class="tabla-mas-cuenta">' + visibles + ' de ' + total + '</span>' +
+      '<button class="btn btn-ghost btn-mini" type="button" data-mas="pagina">Cargar ' +
+        Math.min(PAGINA, faltan) + ' más</button>' +
+      '<button class="btn btn-ghost btn-mini" type="button" data-mas="todo">Cargar los ' + total + '</button>';
+    $$('[data-mas]', caja).forEach(function (b) {
+      b.addEventListener('click', function () { alPulsar(b.getAttribute('data-mas') === 'todo'); });
+    });
+  }
+
   /* Copia la fila tal como se ve: ítem, categoría o etapa, unidad, precio y
      última actualización, separados por tabulador. Lo que sale en el Excel
      (código, especificación, mínimo, máximo, fuente) se copia desde la ficha. */
@@ -1258,6 +1284,8 @@
 
     function pintar() {
       var lista = ordenar(filtrar());
+      if (estado.tope === undefined) estado.tope = PAGINA;
+      if (estado.tope > lista.length) estado.tope = Math.max(PAGINA, lista.length);
 
       if (meta) {
         meta.innerHTML = '<span><strong>' + lista.length + '</strong> ' +
@@ -1274,8 +1302,12 @@
       } else {
         if (tablaWrap) tablaWrap.hidden = false;
         if (vacio) vacio.hidden = true;
-        cuerpo.innerHTML = lista.map(fila).join('');
+        cuerpo.innerHTML = lista.slice(0, estado.tope).map(fila).join('');
       }
+      pintarMas(Math.min(estado.tope, lista.length), lista.length, function (todo) {
+        estado.tope = todo ? lista.length : estado.tope + PAGINA;
+        pintar();
+      });
       actualizarURL();
     }
 
@@ -1284,7 +1316,7 @@
     }
 
     function limpiar() {
-      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.min = ''; estado.max = '';
+      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.min = ''; estado.max = ''; estado.tope = PAGINA;
       if (input) input.value = '';
       if (inMin) inMin.value = '';
       if (inMax) inMax.value = '';
@@ -1317,7 +1349,7 @@
       var t;
       input.addEventListener('input', function () {
         window.clearTimeout(t);
-        t = window.setTimeout(function () { estado.q = input.value.trim(); pintar(); }, 140);
+        t = window.setTimeout(function () { estado.q = input.value.trim(); estado.tope = PAGINA; pintar(); }, 140);
       });
     }
     [[inMin, 'min'], [inMax, 'max']].forEach(function (par) {
@@ -1325,7 +1357,7 @@
       var tm;
       par[0].addEventListener('input', function () {
         window.clearTimeout(tm);
-        tm = window.setTimeout(function () { estado[par[1]] = numero(par[0].value); pintar(); }, 200);
+        tm = window.setTimeout(function () { estado[par[1]] = numero(par[0].value); estado.tope = PAGINA; pintar(); }, 200);
       });
     });
     if (selOrden) selOrden.addEventListener('change', function () { estado.orden = selOrden.value; pintar(); });
@@ -1353,6 +1385,7 @@
         }
         if (esEtapa) estado.etapa = activo ? '' : valor;
         else { estado.cat = activo ? '' : valor; estado.grupo = ''; }
+        estado.tope = PAGINA;
         cerrarMenuChips();
         compactarChips(esEtapa ? chipsEtapa : chipsCat);
         pintar();
@@ -1441,6 +1474,19 @@
     var cuerpo = $('#tabla-estatica');
     if (!cuerpo) return;
 
+    /* Las filas ya están en el HTML, que es lo que ve un buscador; aquí solo
+       se esconden las que pasan de la primera página. */
+    var filas = $$('tr[data-item]', cuerpo);
+    var tope = PAGINA;
+    function aplicarTope() {
+      filas.forEach(function (tr, k) { tr.hidden = k >= tope; });
+      pintarMas(Math.min(tope, filas.length), filas.length, function (todo) {
+        tope = todo ? filas.length : tope + PAGINA;
+        aplicarTope();
+      });
+    }
+    if (filas.length > PAGINA) aplicarTope();
+
     var chk = $('#f-itbis');
     if (chk) chk.addEventListener('change', function () {
       estado.sinItbis = chk.checked;
@@ -1460,7 +1506,7 @@
     var input = $('#q-prov'), selCat = $('#f-prov-cat'), selZona = $('#f-prov-zona'),
         meta = $('#prov-meta'), vacio = $('#prov-vacio');
 
-    var f = {q: '', cat: '', zona: '', tipo: '', soloPublico: false, soloPrecios: false};
+    var f = {q: '', cat: '', zona: '', soloPrecios: false};
 
     var params = new URLSearchParams(window.location.search);
     f.cat = params.get('cat') || '';
@@ -1484,23 +1530,10 @@
     }
     if (input) input.value = f.q;
 
-    var chipsTipo = $('#chips-tipo');
-    if (chipsTipo) {
-      chipsTipo.innerHTML = '<span class="chip-group-label">Tipo</span>' +
-        PROV.tipos.map(function (t) {
-          return '<button class="chip" type="button" data-tipo="' + esc(t.codigo) + '" aria-pressed="false">' + esc(t.nombre) + '</button>';
-        }).join('');
-    }
-
     function nombreZona(c) {
       var z = PROV.zonas.filter(function (x) { return x.codigo === c; })[0];
       return z ? z.nombre : c;
     }
-    function nombreTipo(c) {
-      var t = PROV.tipos.filter(function (x) { return x.codigo === c; })[0];
-      return t ? t.nombre : c;
-    }
-
     function tarjeta(p) {
       var contactos = [];
       if (p.web) contactos.push('<a href="https://' + esc(p.web) + '" target="_blank" rel="noopener nofollow">' + ICONO.web + esc(p.web) + '</a>');
@@ -1511,15 +1544,12 @@
       var elegido = misProveedores.indexOf(p.nombre) !== -1;
       return '<article class="prov' + (elegido ? ' prov-elegido' : '') + '">' +
           '<div class="prov-top">' +
-            '<div><h3>' + esc(p.nombre) + '</h3><p class="prov-tipo">' + esc(nombreTipo(p.tipo)) + '</p></div>' +
-            '<div style="display:flex;flex-direction:column;gap:.3rem;align-items:flex-end">' +
-              (p.precios ? '<span class="badge badge-precios">Precios en línea</span>' : '') +
-              (p.publico ? '<span class="badge badge-publico">Vende al público</span>' : '<span class="badge badge-canal">Solo vía distribución</span>') +
-            '</div>' +
+            '<h3>' + esc(p.nombre) + '</h3>' +
+            (p.precios ? '<span class="badge badge-precios">Precios en línea</span>' : '') +
           '</div>' +
           '<p class="prov-nota">' + esc(p.nota) + '</p>' +
           '<div class="prov-cats">' +
-            p.cats.map(function (c) { return '<span class="tag" title="' + esc(nombreCat(c)) + '">' + esc(c) + '</span>'; }).join('') +
+            p.cats.map(function (c) { return '<span class="tag">' + esc(nombreCat(c)) + '</span>'; }).join('') +
             p.zonas.map(function (z) { return '<span class="tag">' + esc(nombreZona(z)) + '</span>'; }).join('') +
           '</div>' +
           '<div class="prov-contacto">' +
@@ -1542,11 +1572,9 @@
         if (p.demo) return false;
         if (f.cat && p.cats.indexOf(f.cat) === -1) return false;
         if (f.zona && p.zonas.indexOf(f.zona) === -1 && p.zonas.indexOf('nacional') === -1) return false;
-        if (f.tipo && p.tipo !== f.tipo) return false;
-        if (f.soloPublico && !p.publico) return false;
         if (f.soloPrecios && !p.precios) return false;
         if (!q.length) return true;
-        var heno = normaliza([p.nombre, p.nota, p.web, p.cats.join(' '), nombreTipo(p.tipo)].join(' '));
+        var heno = normaliza([p.nombre, p.nota, p.web, p.cats.map(nombreCat).join(' ')].join(' '));
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
       });
 
@@ -1570,20 +1598,8 @@
     if (selCat) selCat.addEventListener('change', function () { f.cat = selCat.value; pintar(); });
     if (selZona) selZona.addEventListener('change', function () { f.zona = selZona.value; pintar(); });
 
-    var chkPublico = $('#f-prov-publico');
-    if (chkPublico) chkPublico.addEventListener('change', function () { f.soloPublico = chkPublico.checked; pintar(); });
     var chkPrecios = $('#f-prov-precios');
     if (chkPrecios) chkPrecios.addEventListener('change', function () { f.soloPrecios = chkPrecios.checked; pintar(); });
-
-    document.addEventListener('click', function (e) {
-      var chip = e.target.closest('[data-tipo]');
-      if (!chip) return;
-      var activo = chip.getAttribute('aria-pressed') === 'true';
-      $$('[data-tipo]').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-      chip.setAttribute('aria-pressed', String(!activo));
-      f.tipo = activo ? '' : chip.getAttribute('data-tipo');
-      pintar();
-    });
 
     window.__pintarProveedores = pintar;
     pintar();
@@ -1608,6 +1624,9 @@
       b.className = 'banner-lateral banner-' + lado;
       b.setAttribute('aria-label', 'Ingenieros Liberato & Asociados');
       b.innerHTML =
+        '<button class="banner-plegar" type="button" data-plegar="' + lado + '" aria-expanded="true" ' +
+          'aria-label="Plegar el aviso">' +
+          (lado === 'izq' ? ICONO.flechaIzq : ICONO.flechaDer) + '</button>' +
         '<img class="banner-iso" src="assets/img/isotipo.png" alt="" width="615" height="766">' +
         '<p class="banner-marca">Ingenieros Liberato<br>&amp; Asociados</p>' +
         '<p class="banner-servicios">Construcción · Supervisión · Diseño</p>' +
@@ -1619,6 +1638,34 @@
         '</div>';
       document.body.appendChild(b);
     });
+
+    /* El ajuste dura lo que dure la pestaña: sessionStorage, no localStorage.
+       Al abrir una nueva pestaña el aviso vuelve a verse. */
+    var LS_BANNER = 'ilya_precios_banners_plegados';
+    function leerPlegados() {
+      try { return JSON.parse(window.sessionStorage.getItem(LS_BANNER)) || {}; } catch (e) { return {}; }
+    }
+    function aplicarPlegados() {
+      var p = leerPlegados();
+      $$('.banner-lateral').forEach(function (b) {
+        var lado = b.classList.contains('banner-izq') ? 'izq' : 'der';
+        var plegado = !!p[lado];
+        b.classList.toggle('plegado', plegado);
+        var btn = $('.banner-plegar', b);
+        btn.setAttribute('aria-expanded', plegado ? 'false' : 'true');
+        btn.setAttribute('aria-label', plegado ? 'Desplegar el aviso' : 'Plegar el aviso');
+      });
+    }
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-plegar]');
+      if (!btn) return;
+      var lado = btn.getAttribute('data-plegar');
+      var p = leerPlegados();
+      p[lado] = !p[lado];
+      try { window.sessionStorage.setItem(LS_BANNER, JSON.stringify(p)); } catch (err) { /* modo privado */ }
+      aplicarPlegados();
+    });
+    aplicarPlegados();
     function cerrarTodos(salvo) {
       $$('.banner-cta').forEach(function (btn) {
         if (btn === salvo) return;
