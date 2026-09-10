@@ -164,6 +164,7 @@
   var PROV_CERARTE = 'CerArte';
   var PROV_IBERICA = 'La Ibérica';
   var PROV_TONOS = 'Tonos y Colores';
+  var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
 
 /* catalogos:cotizaciones:inicio — generado por herramientas/importar-catalogos.js.
      No editar a mano: se reescribe en cada importación. */
@@ -373,11 +374,11 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/calhidratada/cal-hidratada-empañete-44-lb-perla-026053',
     nota: 'CAL HIDRATADA EMPAÑETE 44 LB PERLA · artículo 026053 · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-067', PROV_INNOVA, 57, {
+  c('MAT-02-069', PROV_INNOVA, 57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-en-funda-2-lb-009121',
     nota: 'CEMENTO BLANCO EN FUNDA 2 LB · artículo 009121 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-068', PROV_INNOVA, 132, {
+  c('MAT-02-070', PROV_INNOVA, 132, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-en-funda-5-lb-009110',
     nota: 'CEMENTO BLANCO EN FUNDA 5 LB · artículo 009110 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
@@ -389,7 +390,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementoblanco/cemento-blanco-funda-40-kg-057367',
     nota: 'CEMENTO BLANCO FUNDA 40 KG · artículo 057367 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-066', PROV_INNOVA, 173, {
+  c('MAT-02-068', PROV_INNOVA, 173, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementogris/cemento-gris-10-lb-057347',
     nota: 'CEMENTO GRIS 10 LB · artículo 057347 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
@@ -397,7 +398,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementogris/cemento-gris-titan-94-lb-023108',
     nota: 'CEMENTO GRIS TITAN 94 LB · artículo 023108 · ref. Cemento · marca TITAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-12-030', PROV_INNOVA, 690, {
+  c('MAT-12-032', PROV_INNOVA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/estuco-interior-forte-blanco-35-lb-065073',
     nota: 'ESTUCO INTERIOR FORTE BLANCO 35 LB · artículo 065073 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
   });
@@ -531,7 +532,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pegamento-ceramica-gris-50lb-p',
     nota: 'PEGAMENTO CERAMICA GRIS 50LB P · artículo 001156. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-068', PROV_CIMA, 175, {
+  c('MAT-02-070', PROV_CIMA, 175, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-5lb',
     nota: 'CEMENTO BLANCO 5LB · artículo 7465710056021. ' + SUPUESTO_ITBIS
   });
@@ -555,7 +556,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-funda-40kg',
     nota: 'CEMENTO BLANCO FUNDA 40KG · artículo 001060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-064', PROV_CIMA, 45, {
+  c('MAT-02-066', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yeso-2lb',
     nota: 'YESO 2LB · artículo 7465710056045. ' + SUPUESTO_ITBIS
   });
@@ -583,11 +584,11 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/derretido-gris-5kgs',
     nota: 'DERRETIDO GRIS 5KGS · artículo 020303. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-065', PROV_CIMA, 75, {
+  c('MAT-02-067', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-gris-detalle-5lb',
     nota: 'CEMENTO GRIS DETALLE 5LB · artículo 069041. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-067', PROV_CIMA, 75, {
+  c('MAT-02-069', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-2lb',
     nota: 'CEMENTO BLANCO 2LB · artículo 7465710056014. ' + SUPUESTO_ITBIS
   });
@@ -631,11 +632,11 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/derretido-blanco-eurojunta-5-kg',
     nota: 'DERRETIDO BLANCO EUROJUNTA 5 KG · artículo 0001008005 · ref. Presentacion 5 kg · marca PEGACOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-067', PROV_MAX, 64.99, {
+  c('MAT-02-069', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cemento-blanco-puro-2-lbs',
     nota: 'CEMENTO BLANCO PURO 2 LBS · artículo 0001110291 · ref. Presentacion 2 lb (0.91 kg) · marca PURO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-067', PROV_MAX, 54.01, {
+  c('MAT-02-069', PROV_MAX, 54.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cemento-blanco-harder-2lb',
     nota: 'CEMENTO BLANCO HARDER 2LB · artículo 0001134328 · ref. Presentacion 2 lb (0.91 kg). ' + SUPUESTO_ITBIS
   });
@@ -683,7 +684,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cemento-pegafull-gris-p-ceramica-22-7kg',
     nota: 'CEMENTO PEGAFULL GRIS P/CERAMICA 22.7KG · artículo 0001115450 · ref. Presentacion 22.7 kg | Uso: pegamento para ceramica · marca PEGAFULL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-068', PROV_MAX, 145, {
+  c('MAT-02-070', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cemento-blanco-puro-5-lbs',
     nota: 'CEMENTO BLANCO PURO 5 LBS · artículo 0001110292 · ref. Presentacion 5 lb (2.27 kg) · marca PURO. ' + SUPUESTO_ITBIS
   });
@@ -693,7 +694,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zinc-translucido-blanco-3x6',
     nota: 'ZINC TRANSLUCIDO BLANCO 3X6 · artículo 0001130482 · ref. Lamina traslucida (fibra de vidrio / policarbonato) | Formato 3x6 pies (0.91 x 1.83 m) | Color Blanco. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-064', PROV_MAX, 30, {
+  c('MAT-02-066', PROV_MAX, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/yeso-puro-2-lbs',
     nota: 'YESO PURO 2 LBS · artículo 0001003267 · ref. Yeso puro | Presentacion 2 lb (0.91 kg) · marca PURO. ' + SUPUESTO_ITBIS
   });
@@ -1098,127 +1099,279 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/brocha-1-1-2-mango-marron/',
     nota: 'Brocha 1 1/2″ Mango Marrón · artículo 395-1 1/2. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-008', PROV_TONOS, 101.99, {
+  c('EQU-04-008', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/brocha-para-pintar-de-1-2',
+    nota: 'Brocha para pintar de 1/2" pelo camello · artículo T12465 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-009', PROV_TONOS, 101.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/brocha-2-mango-marron/',
     nota: 'Brocha 2″ Mango Marrón · artículo 395-2. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-009', PROV_TONOS, 123.46, {
+  c('EQU-04-010', PROV_TONOS, 123.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/brocha-2-1-2-mango-marron/',
     nota: 'Brocha 2 1/2″ Mango Marrón · artículo 395-2 1/2. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-010', PROV_TONOS, 150.31, {
+  c('EQU-04-011', PROV_TONOS, 150.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/brocha-3-mango-marron/',
     nota: 'Brocha 3″ Mango Marrón · artículo 395-3. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-011', PROV_TONOS, 203.99, {
+  c('EQU-04-012', PROV_TONOS, 203.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/brocha-4-mango-marron/',
     nota: 'Brocha 4″ Mango Marrón · artículo 395-4. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-012', PROV_TONOS, 128.83, {
+  c('EQU-04-013', PROV_FERREMIX, 305, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-tapizadora-10',
+    nota: 'Espatula tapizadora 10" acro al mdio carbono trupr · artículo T14460 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-014', PROV_FERREMIX, 335, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-tapizadora-12',
+    nota: 'Espatula tapizadora 12" acro al mdio carbono trupr · artículo T14461 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-015', PROV_FERREMIX, 255, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-de-2-1-2-de-5-usos-rigida',
+    nota: 'Espatula 2 1/2\'\' d 5 usos rigida acro inoxidabl trupr · artículo T15855 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-015', PROV_FERREMIX, 220, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-2-1-2-de-5-usos-mango-de-madera',
+    nota: 'Espatula 2 1/2\'\' d 5 usos mango d madra trupr · artículo T14458 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-016', PROV_FERREMIX, 249, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-de-3-afilada-y-angulada',
+    nota: 'Espatula 3\'\' afilada y angulada trupr · artículo T14457 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-017', PROV_TONOS, 128.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/espatula-metal-4/',
     nota: 'Espátula de metal 4″ · artículo 175/10. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-013', PROV_TONOS, 504.59, {
+  c('EQU-04-018', PROV_FERREMIX, 380, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-de-acero-inoxidable-6',
+    nota: 'Espatula 6" d acro inoxidabl mango d madra trupr.. · artículo T101374 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-019', PROV_FERREMIX, 265, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/espatula-tapizadora-8',
+    nota: 'Espatula tapizadora 8" acro al mdio carbono trupr · artículo T14459 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-020', PROV_FERREMIX, 249, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mota-esmalte-9-1-1-4-lanco',
+    nota: 'Mota esalte 9 1 1/4 lanco · artículo 7080 · marca Lanco. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-021', PROV_FERREMIX, 115, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-12-lisa',
+    nota: 'Repuesto paa odillo, felpa 12", lisa · artículo T13893 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-022', PROV_FERREMIX, 119, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/charola-para-rodillo-9',
+    nota: 'Charola de plástio 14" p/rodillo pretul · artículo T20654 · marca Pretul. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-023', PROV_FERREMIX, 240, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-rodillo-9-semi-rugosa',
+    nota: 'Felpa para rodillo, esponja 9 x 3/4" · artículo T13901 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 95, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mini-rodillo-para-pintar-felpa-4-esponja',
+    nota: 'Mini rodillo p/pintar,felpa 4",esponja · artículo T13903 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-4-poliester',
+    nota: 'Repuesto p/odillo, felpa 4", polieste · artículo T13897 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 30, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-4',
+    nota: 'Repuesto de olo 4" x 3/8" paa pinta, nylon tupe · artículo T13911 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-4-esponja',
+    nota: 'Repuesto p/odillo, felpa 4", esponja · artículo T13907 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mini-rodillo-para-pintar-felpa-de-poliester',
+    nota: 'Mini rodillo p/pintar,felpa 4",poliester · artículo T13896 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mini-rodillo-para-pintar-felpa-de-nylon-de-4',
+    nota: 'Mini rodillo p/pintar,felpa 4", nylon · artículo T13905 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-024', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-rolo-para-mini-rodillo',
+    nota: 'Porta rolo ara mini-rodillo, 4" · artículo T10742 · ref. T10742 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-025', PROV_FERREMIX, 395, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mota-antigoteo-9x5-16',
+    nota: 'Mota antigoteo 9 x 5/16 lanco · artículo 7086 · marca Lanco. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-026', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-7-lisa',
+    nota: 'Rodillo paa pinta, felpa 7", lisa · artículo T13880 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-026', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-7-lisa',
+    nota: 'Repuesto paa odillo, felpa 7", lisa.. · artículo T13892 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_TONOS, 504.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/mota-antigota-1-4-x-9/',
     nota: 'Mota Antigota 1/4 x 9″ · artículo 321/10. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-013', PROV_TONOS, 328.3, {
+  c('EQU-04-027', PROV_TONOS, 328.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/mota-antigota-5-16-x-9/',
     nota: 'Mota Antigota 5/16 x 9″ · artículo PA-580-19. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-013', PROV_TONOS, 176.04, {
+  c('EQU-04-027', PROV_TONOS, 176.04, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/porta-rolo-9-mango-negro/',
     nota: 'Porta-rolo 9″ Mango Negro · artículo PA-570-19. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-013', PROV_TONOS, 223.63, {
+  c('EQU-04-027', PROV_TONOS, 223.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/porta-rolo-9-mango-rojo/',
     nota: 'Porta-rolo 9″ Mango Rojo · artículo 400/23. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('EQU-04-014', PROV_OCHOA, 35818.07, {
+  c('EQU-04-027', PROV_FERREMIX, 85, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/felpa-de-rodillo-para-pintar',
+    nota: 'Mota para pintar 9\'\' x 1 1/4\'\' pretul · artículo T28045 · marca Pretul. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 209, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-pvc-9-rugosa',
+    nota: 'Repuesto paa odillo, pvc, 9", ugosa · artículo T17684 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 79, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-9-lisa',
+    nota: 'Repuesto paa odillo, felpa 9", lisa · artículo T13883 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-extra-lisa',
+    nota: 'Rodillo p/pinta, felpa 9", exta lisa · artículo T13875 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 90, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-felpa-9-rugosa',
+    nota: 'Repuesto paa odillo, felpa 9", ugosa · artículo T13885 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 169, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-semi-rugosa',
+    nota: 'Rodillo p/pinta, felpa 9", semi ugosa · artículo T13877 · ref. PINTA · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 95, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-rolo-de-9',
+    nota: 'Porta rolo de 9" truer · artículo T19255 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-rodillo-felpa9-extra-rugosa',
+    nota: 'Repuesto odillo, felpa 9", exta ugosa · artículo T13891 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 179, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-rugosa',
+    nota: 'Rodillo paa pinta, felpa 9", ugosa · artículo T13878 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 295, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-de-pvc',
+    nota: 'Rodillo p/pinta, felpa 9", de pvc · artículo T13895 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 180, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-rodillo-p-pintar-felpa-9-extra-rugosa',
+    nota: 'Rodillo p/pinta, felpa 9", exta ugosa · artículo T13879 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 255, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-9-extra-lisa',
+    nota: 'Rodillo p/pinta, 9", exta lisa, espuma · artículo T13841 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/rodillo-para-pintar-felpa-9-microfibra',
+    nota: 'Rodillo p/pinta, felpa 9",micofiba · artículo T13894 · ref. PINTA · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-rodillo-felpa-9-lisa-de-esponja',
+    nota: 'Repuesto odillo, felpa 9", lisa, espuma · artículo T13898 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/repuesto-para-rodillo-para-pintar-felpa-extra-lisa',
+    nota: 'Repuesto p/odillo, felpa 9", exta lisa · artículo T13882 · marca Truper. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-027', PROV_FERREMIX, 140, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-rolo-jaula-9',
+    nota: 'Porta rolo jaula, 9" maja-9x rofesional truer · artículo T10745 · ref. T10745 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-028', PROV_OCHOA, 35818.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-man-tiger-1000-magnet-100-cm-01098175',
     nota: 'Cortadora Man Tiger 1000 Magnet 100 Cm · artículo 01-09-8175 · ref. 14966 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-015', PROV_OCHOA, 32070.28, {
+  c('EQU-04-029', PROV_OCHOA, 32070.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-manual-p-ceram-125cm-01098709',
     nota: 'Cortadora Manual P / Ceram 125Cm · artículo 01-09-8709 · ref. 62187 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-016', PROV_OCHOA, 2857.38, {
+  c('EQU-04-030', PROV_OCHOA, 2857.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-manual-para-ceramica-01097638',
     nota: 'Cortadora Manual Para Cerámica · artículo 01-09-7638 · ref. 6114820\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-017', PROV_OCHOA, 6482.72, {
+  c('EQU-04-031', PROV_OCHOA, 6482.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-manual-p-ceram-62-cm-01098663',
     nota: 'Cortadora Manual P / Ceram 62 Cm · artículo 01-09-8663 · ref. 61365 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-018', PROV_OCHOA, 9559.05, {
+  c('EQU-04-032', PROV_OCHOA, 9559.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortador-ceramica-pop60rb-63cms-01098913',
     nota: 'Cortador Ceramica Pop60Rb 63Cms · artículo 01-09-8913 · ref. 7POP60RB · marca BELLOTA. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-019', PROV_OCHOA, 15050.43, {
+  c('EQU-04-033', PROV_OCHOA, 15050.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-man-p-ceram-sup-90-cm-01097641',
     nota: 'Cortadora Man P / Ceram Sup 90 Cm · artículo 01-09-7641 · ref. 6128936\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-020', PROV_OCHOA, 966.22, {
+  c('EQU-04-034', PROV_OCHOA, 966.22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alicate-para-nivelacion-01098759',
     nota: 'Alicate Para Nivelacion · artículo 01-09-8759 · ref. 60695 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-020', PROV_IBERICA, 663.14, {
+  c('EQU-04-034', PROV_IBERICA, 663.14, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/tenaza-p-tira-de-nivelacion/',
     nota: 'Tenaza P/Tira De Nivelación · artículo 017250. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-021', PROV_OCHOA, 1282.31, {
+  c('EQU-04-035', PROV_OCHOA, 1282.31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplicador-de-morteros-profes-01097643',
     nota: 'Aplicador De Morteros Profes · artículo 01-09-7643 · ref. 615699\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-021', PROV_OCHOA, 4581.15, {
+  c('EQU-04-035', PROV_OCHOA, 4581.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplicador-de-mortero-650-cc-01097256',
     nota: 'Aplicador De Mortero 650 Cc · artículo 01-09-7256 · ref. 65990 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-022', PROV_OCHOA, 4694.51, {
+  c('EQU-04-036', PROV_OCHOA, 4694.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-de-nivelacion-delta-01098055',
     nota: 'Kit De Nivelación Delta · artículo 01-09-8055 · ref. 03914 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-023', PROV_OCHOA, 420.99, {
+  c('EQU-04-037', PROV_OCHOA, 420.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/llana-dentada-acero-c-m-pl-10x10-01097645',
     nota: 'Llana Dentada Acero C / M Pl 10X10 · artículo 01-09-7645 · ref. 6099618.15/16\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-023', PROV_OCHOA, 226.37, {
+  c('EQU-04-037', PROV_OCHOA, 226.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/llana-de-acero-c-mango-plast-6x6-01097644',
     nota: 'Llana De Acero C / Mango Plast 6X6 · artículo 01-09-7644 · ref. 6095912X25.6CM · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-024', PROV_OCHOA, 1279.54, {
+  c('EQU-04-038', PROV_OCHOA, 1279.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ventosa-doble-para-piezas-lisas-01098667',
     nota: 'Ventosa Doble Para Piezas Lisas · artículo 01-09-8667 · ref. 60673 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-025', PROV_OCHOA, 5321.25, {
+  c('EQU-04-039', PROV_OCHOA, 5321.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-t-disco-p-cortadora-10-01097259',
     nota: 'Cuchilla T / Disco P / Cortadora 10\'\' · artículo 01-09-7259 · ref. 31900 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-026', PROV_OCHOA, 2178.45, {
+  c('EQU-04-040', PROV_OCHOA, 2178.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortadora-ceramica-18mm-01080136',
     nota: 'Cuchilla P / Cortadora Ceramica 18Mm · artículo 01-08-0136 · ref. 01950 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-026', PROV_OCHOA, 1110.46, {
+  c('EQU-04-040', PROV_OCHOA, 1110.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortadcer-titan-18mm-01097637',
     nota: 'Cuchilla P / Cortadcer. Titan.18Mm · artículo 01-09-7637 · ref. 612933/4\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-027', PROV_OCHOA, 358.67, {
+  c('EQU-04-041', PROV_OCHOA, 358.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortad-ceramica-7mm-01097636',
     nota: 'Cuchilla P / Cortad Ceramica 7Mm · artículo 01-09-7636 · ref. 613509/32\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-028', PROV_OCHOA, 234.67, {
+  c('EQU-04-042', PROV_OCHOA, 234.67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cucihlla-p-cortadora-80mm-01097903',
     nota: 'Cucihlla P / Cortadora 80Mm · artículo 01-09-7903 · ref. 60.200 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-029', PROV_OCHOA, 480.68, {
+  c('EQU-04-043', PROV_OCHOA, 480.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061404',
     nota: 'Herramienta De Terminación Z-Tool · artículo 03-06-1404 · ref. Z-TOOL-ZP · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-029', PROV_OCHOA, 448.43, {
+  c('EQU-04-043', PROV_OCHOA, 448.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061403',
     nota: 'Herramienta De Terminación Z-Tool · artículo 03-06-1403 · ref. Z-TOOL · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-029', PROV_OCHOA, 6682.26, {
+  c('EQU-04-043', PROV_OCHOA, 6682.26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/max-turbotool-03061424',
     nota: 'Max Turbotool · artículo 03-06-1424 · ref. MAX-TT · marca SIEMON. ' + SUPUESTO_ITBIS
   });
@@ -1430,243 +1583,255 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mortero-pegacol-estuco-blanco-04590385',
     nota: 'Mortero Pegacol Estuco Blanco · artículo 04-59-0385 · ref. 140KG · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-02-030', PROV_FERREMIX, 630, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/estuco-de-14-kg-para',
+    nota: 'Estuco de 14 kg · artículo 48158 · ref. 14 KG · marca Pegacol. ' + SUPUESTO_ITBIS
+  });
   c('MAT-02-031', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/estuco-forte-blc-35-lbs',
     nota: 'ESTUCO FORTE BLCO INTERIOR 35 LBS. · artículo 0001106657 · ref. Presentacion 35 lb (15.88 kg) | Uso: interior · marca PEGAFORTE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-032', PROV_MAX, 330, {
+  c('MAT-02-032', PROV_FERREMIX, 435, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/estuco-de-14-kg-para',
+    nota: 'Estuco de 14 kg · artículo 48157 · ref. 14 KG · marca Pegacol. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-033', PROV_FERREMIX, 1720, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/masilla-yeso',
+    nota: 'Masilla yeso pro-for us 50lbs · artículo 5121 · ref. 50 LBS · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-02-034', PROV_MAX, 330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/yeso-panamerican-30-kgs',
     nota: 'YESO PANAMERICAN 27 KGS · artículo 0001007165 · ref. Presentacion 27 kg · marca BARAHONA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-033', PROV_OCHOA, 245.85, {
+  c('MAT-02-035', PROV_OCHOA, 245.85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/hormigon-seco-180-kg-cm2-66-libras-04590389',
     nota: 'Hormigon Seco 180 Kg / Cm2 / 66 Libras · artículo 04-59-0389 · ref. PT00012(72XAT) · marca PRET. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-034', PROV_OCHOA, 253.1, {
+  c('MAT-02-036', PROV_OCHOA, 253.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/hormigon-seco-estructural-210-kg-cm2-66l-04590390',
     nota: 'Hormigon Seco Estructural 210 Kg / Cm2 / 66L · artículo 04-59-0390 · ref. PT00017(72XAT) · marca PRET. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-035', PROV_INNOVA, 1460, {
+  c('MAT-02-037', PROV_INNOVA, 1460, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-902-1-gl-058712',
     nota: 'ADITIVO CONCRETO LANCO CB-902 1 GL · artículo 058712 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-036', PROV_INNOVA, 6055, {
+  c('MAT-02-038', PROV_INNOVA, 6055, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-902-2-5-gl-058713',
     nota: 'ADITIVO CONCRETO LANCO CB-902-2 5 GL · artículo 058713 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-037', PROV_INNOVA, 454.75, {
+  c('MAT-02-039', PROV_INNOVA, 454.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/fibra-polipropileno-sikafiber-para-concreto-0-6kg-047405',
     nota: 'FIBRA POLIPROPILENO SIKAFIBER PARA CONCRETO 0.6KG · artículo 047405 · marca SIKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-038', PROV_INNOVA, 465, {
+  c('MAT-02-040', PROV_INNOVA, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-1-3-2-gl-004839',
     nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 1/2 GL · artículo 004839 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-038', PROV_INNOVA, 535, {
+  c('MAT-02-040', PROV_INNOVA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-1-3-2-gl-005236',
     nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 1/2 GL · artículo 005236 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-038', PROV_INNOVA, 570, {
+  c('MAT-02-040', PROV_INNOVA, 570, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-606-9-1-3-2-gl-rosado-003744',
     nota: 'ADITIVO CONCRETO LANCO CB-606-9 1/2 GL ROSADO · artículo 003744 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-039', PROV_INNOVA, 395, {
+  c('MAT-02-041', PROV_INNOVA, 395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-5-1-3-4-gl-001402',
     nota: 'ADITIVO CONCRETO LANCO CB-610-5 1/4 GL · artículo 001402 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-040', PROV_INNOVA, 959, {
+  c('MAT-02-042', PROV_INNOVA, 959, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-1-gl-004840',
     nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 1 GL · artículo 004840 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-040', PROV_INNOVA, 1020, {
+  c('MAT-02-042', PROV_INNOVA, 1020, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-1-gl-005237',
     nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 1 GL · artículo 005237 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-040', PROV_INNOVA, 1125, {
+  c('MAT-02-042', PROV_INNOVA, 1125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-606-4-1-gl-rosado-003742',
     nota: 'ADITIVO CONCRETO LANCO CB-606-4 1 GL ROSADO · artículo 003742 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-040', PROV_INNOVA, 1185, {
+  c('MAT-02-042', PROV_INNOVA, 1185, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-4-1-gl-azul-extra-pr-003746',
     nota: 'ADITIVO CONCRETO LANCO CB-610-4 1 GL AZUL EXTRA PRO · artículo 003746 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-041', PROV_INNOVA, 265, {
+  c('MAT-02-043', PROV_INNOVA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-rosado-32-oz-037788',
     nota: 'ADITIVO CONCRETO CANO SILBOND ROSADO 32 OZ · artículo 037788 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-041', PROV_INNOVA, 305, {
+  c('MAT-02-043', PROV_INNOVA, 305, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-cano-silbond-ultra-azul-32-oz-037787',
     nota: 'ADITIVO CONCRETO CANO SILBOND ULTRA AZUL 32 OZ · artículo 037787 · marca CANO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-042', PROV_INNOVA, 10935, {
+  c('MAT-02-044', PROV_INNOVA, 10935, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-1052-2-5-gl-058714',
     nota: 'ADITIVO CONCRETO LANCO CB-1052-2 5 GL · artículo 058714 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-042', PROV_INNOVA, 6300, {
+  c('MAT-02-044', PROV_INNOVA, 6300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-610-2-5-gl-azul-extra-pr-036176',
     nota: 'ADITIVO CONCRETO LANCO CB-610-2 5 GL AZUL EXTRA PRO · artículo 036176 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-043', PROV_INNOVA, 1610.75, {
+  c('MAT-02-045', PROV_INNOVA, 1610.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/primer-epoxico-concreto-sikadur-32-gel-1kg-compone-010885',
     nota: 'PRIMER EPOXICO CONCRETO SIKADUR 32 GEL 1KG COMPONENTE A+B · artículo 010885 · marca SIKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-044', PROV_INNOVA, 2005, {
+  c('MAT-02-046', PROV_INNOVA, 2005, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/aditivosparaconcretos/aditivo-concreto-lanco-cb-8000-4-texturizado-1-gl-042770',
     nota: 'ADITIVO CONCRETO LANCO CB-8000-4 TEXTURIZADO 1 GL · artículo 042770 · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-045', PROV_INNOVA, 3952.5, {
+  c('MAT-02-047', PROV_INNOVA, 3952.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-autonivelante-weco-w-501-we0850105-polimer-062080',
     nota: 'CEMENTO AUTONIVELANTE WECO W-501 WE0850105 POLIMERO GRIS 40 LB · artículo 062080 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-046', PROV_INNOVA, 533.8, {
+  c('MAT-02-048', PROV_INNOVA, 533.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-400-we0875003-blanco-10-lb-ultra-058655',
     nota: 'CEMENTO WECO W-400 WE0875003 BLANCO 10 LB ULTRA · artículo 058655 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-047', PROV_INNOVA, 377.4, {
+  c('MAT-02-049', PROV_INNOVA, 377.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-350-we0855504-gris-10-lb-062081',
     nota: 'CEMENTO WECO W-350 WE0855504 GRIS 10 LB · artículo 062081 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-048', PROV_INNOVA, 949.45, {
+  c('MAT-02-050', PROV_INNOVA, 949.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-511-we0751104-hiraulico-1-gl-062076',
     nota: 'CEMENTO WECO W-511 WE0751104 HIRAULICO 1 GL · artículo 062076 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-049', PROV_INNOVA, 2817.75, {
+  c('MAT-02-051', PROV_INNOVA, 2817.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementos/cemento-weco-w-511-we0751105-hiraulico-cubeta-40-l-058652',
     nota: 'CEMENTO WECO W-511 WE0751105 HIRAULICO CUBETA 40 LB · artículo 058652 · ref. Cemento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-050', PROV_INNOVA, 712, {
+  c('MAT-02-052', PROV_INNOVA, 712, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5077-frost-10-lb-para-ce-061941',
     nota: 'DERRETIDO MAPEI KERACOLOR 5077 FROST 10 LB PARA CERMANICA · artículo 061941 · marca MAPEI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-051', PROV_INNOVA, 328, {
+  c('MAT-02-053', PROV_INNOVA, 328, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-1001-blanco-forte-10-lb-065072',
     nota: 'DERRETIDO 1001 BLANCO FORTE 10 LB · artículo 065072 · ref. Derretido · marca PEGA FORTE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 712, {
+  c('MAT-02-054', PROV_INNOVA, 712, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-mapei-keracolor-5005-chamois-10-lb-para-061937',
     nota: 'DERRETIDO MAPEI KERACOLOR 5005 CHAMOIS 10 LB PARA CERAMICA · artículo 061937 · marca MAPEI. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 543.15, {
+  c('MAT-02-054', PROV_INNOVA, 543.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071051-10-lb-blanco-para-c-058656',
     nota: 'DERRETIDO WECO W-573 WE1071051 10 LB BLANCO PARA CERAMICA · artículo 058656 · marca WEC. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 556.75, {
+  c('MAT-02-054', PROV_INNOVA, 556.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071085-10-lb-riviera-sand-058662',
     nota: 'DERRETIDO WECO W-573 WE1071085 10 LB RIVIERA SAND PARA CERAMICA · artículo 058662 · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 553.35, {
+  c('MAT-02-054', PROV_INNOVA, 553.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071087-10-lb-sierra-snow-p-062075',
     nota: 'DERRETIDO WECO W-573 WE1071087 10 LB SIERRA SNOW PARA CERAMICA · artículo 062075 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 668.95, {
+  c('MAT-02-054', PROV_INNOVA, 668.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071089-10-lb-terracota-par-062074',
     nota: 'DERRETIDO WECO W-573 WE1071089 10 LB TERRACOTA PARA CERAMICA · artículo 062074 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 681.7, {
+  c('MAT-02-054', PROV_INNOVA, 681.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/derretido-weco-w-573-we1071093-10-lb-marron-para-c-062073',
     nota: 'DERRETIDO WECO W-573 WE1071093 10 LB MARRON PARA CERAMICA · artículo 062073 · ref. Derretido · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-052', PROV_INNOVA, 786.25, {
+  c('MAT-02-054', PROV_INNOVA, 786.25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/pegamento-ceramica-weco-w-3000-cero-polimero-blanc-062078',
     nota: 'PEGAMENTO CERAMICA WECO W-3000 CERO POLIMERO BLANCO 10 LB · artículo 062078 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-053', PROV_INNOVA, 1365.1, {
+  c('MAT-02-055', PROV_INNOVA, 1365.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/derretidosdepisos/pegamento-ceramica-weco-w-1000-we0810501-polimero-062079',
     nota: 'PEGAMENTO CERAMICA WECO W-1000 WE0810501 POLIMERO BLANCO 50 LB · artículo 062079 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-054', PROV_INNOVA, 1270.75, {
+  c('MAT-02-056', PROV_INNOVA, 1270.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-anclaje-sikagrout-212-relleno-22kg-047407',
     nota: 'MORTERO ANCLAJE SIKAGROUT 212 RELLENO 22KG · artículo 047407 · marca SIKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-055', PROV_INNOVA, 135, {
+  c('MAT-02-057', PROV_INNOVA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mezcla-pañete-10-lb-057349',
     nota: 'MEZCLA PAÑETE 10 LB · artículo 057349 · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-056', PROV_INNOVA, 1308, {
+  c('MAT-02-058', PROV_INNOVA, 1308, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-mapei-planitop-xs-gris-50-lb-061934',
     nota: 'MORTERO MAPEI PLANITOP XS GRIS 50 LB · artículo 061934 · marca MAPEI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-057', PROV_INNOVA, 2715.75, {
+  c('MAT-02-059', PROV_INNOVA, 2715.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-impermeabilizante-sika-101-blanco-25kg-tan-047421',
     nota: 'MORTERO IMPERMEABILIZANTE SIKA 101 BLANCO 25KG TANQUES PISCINAS · artículo 047421 · marca SIKA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-058', PROV_INNOVA, 2396, {
+  c('MAT-02-060', PROV_INNOVA, 2396, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/mortero-ceramica-mapei-ultraflex-lft-polimero-blan-061948',
     nota: 'MORTERO CERAMICA MAPEI ULTRAFLEX LFT POLIMERO BLANCO 50 LB · artículo 061948 · marca MAPEI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-059', PROV_INNOVA, 625, {
+  c('MAT-02-061', PROV_INNOVA, 625, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-5-ceramic-tile-bla-058461',
     nota: 'PEGAMENTO CERAMICA LANCO SM-502-5 CERAMIC TILE BLANCO 1/4 GL · artículo 058461 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-060', PROV_INNOVA, 1845, {
+  c('MAT-02-062', PROV_INNOVA, 1845, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-4-ceramic-tile-bla-058460',
     nota: 'PEGAMENTO CERAMICA LANCO SM-502-4 CERAMIC TILE BLANCO 1 GL · artículo 058460 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-061', PROV_INNOVA, 610.3, {
+  c('MAT-02-063', PROV_INNOVA, 610.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-2000-we0810602-polimero-062077',
     nota: 'PEGAMENTO CERAMICA WECO W-2000 WE0810602 POLIMERO GRIS 10 LB · artículo 062077 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-061', PROV_INNOVA, 437.75, {
+  c('MAT-02-063', PROV_INNOVA, 437.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-761-blanco-10-lb-069945',
     nota: 'PEGAMENTO CERAMICA WECO W-761 BLANCO 10 LB · artículo 069945 · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-061', PROV_INNOVA, 569.5, {
+  c('MAT-02-063', PROV_INNOVA, 569.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-weco-w-900-we0810454-blanco-10-058653',
     nota: 'PEGAMENTO CERAMICA WECO W-900 WE0810454 BLANCO 10 LB · artículo 058653 · marca WEC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-062', PROV_INNOVA, 336, {
+  c('MAT-02-064', PROV_INNOVA, 336, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-pega-forte-gris-50-lb-065071',
     nota: 'PEGAMENTO CERAMICA PEGA FORTE GRIS 50 LB · artículo 065071 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-062', PROV_INNOVA, 325, {
+  c('MAT-02-064', PROV_INNOVA, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/pegamento-ceramica-pegatod-gris-50-lb-024743',
     nota: 'PEGAMENTO CERAMICA PEGATOD GRIS 50 LB · artículo 024743 · marca PEGATOD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-063', PROV_INNOVA, 167, {
+  c('MAT-02-065', PROV_INNOVA, 167, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/yeso/yeso-blanco-funda-10-lb-057348',
     nota: 'YESO BLANCO FUNDA 10 LB · artículo 057348 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-064', PROV_INNOVA, 28, {
+  c('MAT-02-066', PROV_INNOVA, 28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/yeso/yeso-blanco-funda-2-lb-052185',
     nota: 'YESO BLANCO FUNDA 2 LB · artículo 052185 · ref. Cemento · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-065', PROV_OCHOA, 34.36, {
+  c('MAT-02-067', PROV_OCHOA, 34.36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590319',
     nota: 'Cemento Gris. · artículo 04-59-0319 · ref. 5LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-066', PROV_OCHOA, 65.96, {
+  c('MAT-02-068', PROV_OCHOA, 65.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-gris-04590320',
     nota: 'Cemento Gris · artículo 04-59-0320 · ref. 10LIBRAS · marca PANAM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-067', PROV_OCHOA, 49.97, {
+  c('MAT-02-069', PROV_OCHOA, 49.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590410',
     nota: 'Cemento Blanco · artículo 04-59-0410 · ref. FDA.2LBS0.9KG · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-068', PROV_OCHOA, 109.93, {
+  c('MAT-02-070', PROV_OCHOA, 109.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-04590409',
     nota: 'Cemento Blanco · artículo 04-59-0409 · ref. FDA.5LBS2.25KG · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-069', PROV_OCHOA, 159.1, {
+  c('MAT-02-071', PROV_OCHOA, 159.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cemento-blanco-fundas-04590356',
     nota: 'Cemento Blanco Fundas · artículo 04-59-0356 · ref. 10LIBRAS · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-070', PROV_OCHOA, 4.8, {
+  c('MAT-02-072', PROV_OCHOA, 4.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-04590219',
     nota: 'Yeso En Polvo · artículo 04-59-0219 · ref. BLANCOLIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-071', PROV_OCHOA, 37.93, {
+  c('MAT-02-073', PROV_OCHOA, 37.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-5-lbs-04590344',
     nota: 'Yeso En Polvo 5 Lbs. · artículo 04-59-0344 · ref. 5LIBRAS · marca PALOMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-072', PROV_OCHOA, 373.64, {
+  c('MAT-02-074', PROV_OCHOA, 373.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/yeso-en-polvo-blanco-paloma-04590063',
     nota: 'Yeso En Polvo Blanco Paloma · artículo 04-59-0063 · ref. FDA.65LBS · marca PALOMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-073', PROV_OCHOA, 1295.68, {
+  c('MAT-02-075', PROV_OCHOA, 1295.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibra-de-acero-04660385',
     nota: 'Fibra De Acero · artículo 04-66-0385 · ref. 1439(5.3KG) · marca ULTRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-02-074', PROV_OCHOA, 807.79, {
+  c('MAT-02-076', PROV_OCHOA, 807.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/macro-fibra-p-hormigon-04660383',
     nota: 'Macro Fibra P / Hormigon · artículo 04-66-0383 · ref. 1437(1.5KG) · marca ULTRA. ' + SUPUESTO_ITBIS
   });
@@ -2785,6 +2950,18 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-idealle-01098016',
     nota: 'Baldosa Cerámica Idealle · artículo 01-09-8016 · ref. 32X575.41MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 156.9 por pieza). ' + SUPUESTO_ITBIS
   });
+  c('MAT-08-041', PROV_FERREMIX, 460, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-hd-32-x-58',
+    nota: 'Ceramia pared hd 4114 32x58 majopar brasil · artículo 49524 · marca Majopar brasileña. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-041', PROV_FERREMIX, 495, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-cedasa-brasil',
+    nota: 'Ceramia pared hd 2114 32x58 edasa brasil · artículo 49522 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-041', PROV_FERREMIX, 944, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-lorenzza-brasil',
+    nota: 'Ceramia pared 73048 32x58 lorenzza brasil · artículo 32573 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-08-042', PROV_OCHOA, 1264.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-marengo-01098105',
     nota: 'Baldosa Cerámica Rlv Brienz Marengo · artículo 01-09-8105 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 151.75 por pieza). ' + SUPUESTO_ITBIS
@@ -3465,6 +3642,14 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dunas-mate-01099089',
     nota: 'Baldosa Cerámica Dunas Mate · artículo 01-09-9089 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 309.8 por pieza). ' + SUPUESTO_ITBIS
   });
+  c('MAT-08-058', PROV_FERREMIX, 750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-urban-concreto-56x113-brasil',
+    nota: 'Ceramia piso urban onreto 56 x 113 edasa brasil · artículo 49544 · marca Génerico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-058', PROV_FERREMIX, 975, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-gris-alboran-polido-gran-56x113-brasil',
+    nota: 'Ceramia piso gris alboran polido gran 56 x 113 brasil · artículo 49541 · marca Génerico. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-08-059', PROV_OCHOA, 669.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-canela-slim-01098799',
     nota: 'Baldosa Cerámica Piso Madera Canela Slim · artículo 01-09-8799 · ref. 18X1144.92MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.92 piezas por m² según su propia referencia (RD$ 136.03 por pieza). ' + SUPUESTO_ITBIS
@@ -4095,6 +4280,18 @@
   c('MAT-08-076', PROV_OCHOA, 352.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-exterior-hd-01098554',
     nota: 'Baldosa Cerámica Exterior Hd · artículo 01-09-8554 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 117.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-076', PROV_FERREMIX, 389, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-58-x-58',
+    nota: 'Ceramia piso hd 5798 58x58 vistabella brasil · artículo 49532 · marca Brasileña. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-076', PROV_FERREMIX, 410, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-beige-hd-58x58-brasil',
+    nota: 'Ceramia piso beige 1801 58x58 edasa brasil · artículo 49530 · marca Cedasa. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-076', PROV_FERREMIX, 495, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-3798-58x58',
+    nota: 'Ceramia piso hd 3798 58x58 majopar brasil · artículo 49536 · marca Cedasa Brasil. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-077', PROV_OCHOA, 913.97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-perla-01098000',
@@ -8652,6 +8849,354 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/rociador-wave-cromo-ducha/',
     nota: 'Rociador Wave Cromo Ducha · artículo 012845. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-009', PROV_FERREMIX, 3205, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-laton-8-sin-brazo-1',
+    nota: 'REGADERA REDONDA, LATON, 8", SIN BRAZO · artículo 50768774758704 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 380, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-abs-4-1-4-sin-brazo-negro',
+    nota: 'Regadera redonda de ABS 4-1/4" sin brazo, negro · artículo T48423 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 269, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plastica-redonda-2-1-2-gris-blanca',
+    nota: 'Regadera plástica redonda 2-1/2" gris-blanca · artículo T48293 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1005, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-sin-brazo-negro',
+    nota: 'Regadera cuadrada 6", acero inox, sin brazo, negro · artículo T47749 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1799, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-con-brazo-negro',
+    nota: 'Regadera cuadrada 6", acero inox, con brazo, negro · artículo T47748 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 719, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-sin-brazo-negro',
+    nota: 'Regadera cuadrada 4", acero inox, sin brazo, negro · artículo T47747 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1209, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-con-brazo-negro',
+    nota: 'Regadera cuadrada 4", acero inox, con brazo, negro · artículo T47746 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 790, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-sin-brazo-1',
+    nota: 'Regadera cuadrada 6", acero inox, sin brazo · artículo T47743 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1624, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-acero-inox-con-brazo',
+    nota: 'Regadera cuadrada 6", acero inox, con brazo · artículo T47742 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 610, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-sin-brazo-1',
+    nota: 'Regadera cuadrada 4", acero inox, sin brazo · artículo T47741 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1099, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-con-brazo-1',
+    nota: 'Regadera cuadrada 4", acero inox, con brazo · artículo T47740 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1905, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-8-acero-inox-con-brazo',
+    nota: 'Regadera cuadrada 8", acero inox, con brazo · artículo T47738 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1049, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-acero-inox-con-brazo',
+    nota: 'Regadera cuadrada 4", acero inox, con brazo · artículo T47734 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 710, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-6-abs-sin-brazo-negro',
+    nota: 'Regadera cuadrada 6", ABS, sin brazo, negro · artículo T46747 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 415, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-4-abs-sin-brazo-negro',
+    nota: 'Regadera cuadrada 4", ABS, sin brazo, negro · artículo T46745 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1230, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-8-abs-sin-brazo',
+    nota: 'Regadera cuadrada 8", ABS, sin brazo · artículo T46743 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2675, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-satin-6-plato-redondo-sin-brazo',
+    nota: 'Regadera satín 6" plato redondo, sin brazo · artículo T45582 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2135, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-satin-4-plato-redondo-sin-brazo',
+    nota: 'Regadera satín 4" plato redondo, sin brazo · artículo T45581 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5879, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-satin-8-plato-redondo-con-brazo',
+    nota: 'Regadera satín 8" plato redondo, con brazo · artículo T45577 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2779, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-satin-4-plato-redondo-con-brazo',
+    nota: 'Regadera satín 4" plato redondo, con brazo · artículo T45575 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 285, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-1',
+    nota: 'Regadera cuadrada · artículo T45066 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 6075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-redondo-1',
+    nota: 'Regadera plato redondo · artículo T44825 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 4480, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-redondo-1',
+    nota: 'Regadera plato redondo · artículo T44827 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5799, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-cuadrado-1',
+    nota: 'Regadera plato cuadrado · artículo T44823 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 4329, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-cuadrado-1',
+    nota: 'Regadera plato cuadrado · artículo T44826 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 7315, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-redondo',
+    nota: 'Regadera plato redondo · artículo T44822 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 6905, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plato-cuadrado',
+    nota: 'Regadera plato cuadrado · artículo T44821 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 3275, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-telefono',
+    nota: 'Regadera de teléfono · artículo T44456 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1480, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-electrica',
+    nota: 'Regadera eléctrica · artículo T40237 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 320, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada',
+    nota: 'Regadera cuadrada · artículo T48421 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1420, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera',
+    nota: 'Regadera cuadrada · artículo T47736 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 970, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera',
+    nota: 'Regadera cuadrada · artículo T47739 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera',
+    nota: 'Regadera cuadrada · artículo T47750 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera',
+    nota: 'Regadera cuadrada · artículo T47751 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 995, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-8-acabado-cromo-sin-brazo-foset',
+    nota: 'Regadea cuadada abs 8", sin bazo, aca · artículo T46737 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 749, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-6-acabado-cromo-sin-brazo-foset',
+    nota: 'Ducha cuaraa cromaa 6" sin brazofoset aqua · artículo T46735 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1259, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-6-acabado-cromo-con-brazo-foset',
+    nota: 'Ducha cuaraa cromaa 6" con brazofoset aqua · artículo T46734 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 405, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-acabado-cromo-sin-brazo-foset',
+    nota: 'Ducha cuaraa cromaa 4" sin brazofoset aqua.. · artículo T46733 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 535, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-acabado-cromo-con-brazo-foset',
+    nota: 'Ducha cuaraa cromaa 4" con brazofoset aqua.. · artículo T46732 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 570, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-4-sin-brazo-foset',
+    nota: 'Regadea cuadada abs 4", sin bazo, aca · artículo T46739 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 969, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-8-sin-brazo',
+    nota: 'Regadera cuadrada ABS 8\'\' sin brazo · artículo T46749 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1185, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-abs-6-acabado-satin-con-brazo-foset',
+    nota: 'Regadera cuadrada ABS 6\'\' acabado satín con brazo, Foset · artículo T46746 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 469, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cabeza-de-ducha-redonda-2-1-2-cromo-oro-aquia',
+    nota: 'Cabeza de duha redonda 2 1/2" romo-oro foset aqua · artículo T49148 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 555, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-2-1-2-con-brazo-y-cubre-falta',
+    nota: 'Ducha reona 2 1/2" con brazo y cubre falta cromo-oro foset aqua · artículo T49147 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1565, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-2-3-4-sin-brazo',
+    nota: 'Regadea 2-3/4 s/bazo iviea aeo · artículo T49468 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 930, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ducha-cuadrada-plastica-de-6-con-brazo-1',
+    nota: 'Regad. edonda 6\'\' c/bazo -510 aeo · artículo T49451 · ref. T49451 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1040, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plastica-tipo-telefono',
+    nota: 'Regadea plastica t/telefono foset · artículo T49450 · ref. T49450 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1410, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-electrica-4-temperaturas-foset',
+    nota: 'Regadea electica, 4 tempeatuas foset.. · artículo T49491 · ref. T49491 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-lujo-aero',
+    nota: 'Regadea edonda de lujo, aeo · artículo T49460 · ref. T49460 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 525, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-plastica-6-s-brazo-aero',
+    nota: 'Regadea edonda, plastica, 6" s/bazo aeo · artículo T49454 · ref. T49454 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 735, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-plastica-8-s-brazo-aero',
+    nota: 'Ducha cuaraa 8" plato ancho sin brazo gris cromo foset · artículo T49453 · ref. T49453 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-plastica-8-c-brazo-aero',
+    nota: 'Ducha cuaraa 8" plato ancho con brazo y cubre falta acero inoxiable foset · artículo T49452 · ref. T49452 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 399, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-conica-2-1-2-sin-brazo-aqua',
+    nota: 'Regadea conica, 2-1/2", sin bazo, aqua · artículo T49449 · ref. T49449 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1940, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-c-extension-tipo-telefono-aqua',
+    nota: 'Regadea c/extension tipo telefono, aqua · artículo T49433 · ref. T49433 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-manual-con-soporte-aqua',
+    nota: 'Regadea manual con sopote, aqua · artículo T49432 · ref. T49432 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 305, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ducha-redonda-abs-3-s-brazo',
+    nota: 'Ducha reona sin brazo acero inoxiable foset basic · artículo T49413 · ref. T49413 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 205, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-abs-2-1-2-sin-brazo',
+    nota: 'Regadea edonda, abs, 2-1/2", sin bazo · artículo T49412 · ref. T49412 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-plastica-s-brazo-basic-r-500s',
+    nota: 'Regadea plastica, s/bazo basic -500s · artículo T49256 · ref. T49256 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 655, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-3-1-4-sin-brazo-aero',
+    nota: 'Regadea 3-1/4", sin bazo, aeo.. · artículo T45790 · ref. T45790 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1249, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-3-1-4-aero',
+    nota: 'Ducha reona 3 1/4" con brazo y cubre falta acero inoxiable foset aero · artículo T45789 · ref. T45789 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 3100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-c-extension-tipo-telefono-aero',
+    nota: 'Regadea c/extension tipo telefono, aeo · artículo T45788 · ref. T45788 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1765, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-telefono-con-soporte-3-1-4-aero',
+    nota: 'Regadea de telefono c/sopote foset · artículo T45787 · ref. T45787 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2999, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-manual-c-sporte-cromo-riviera',
+    nota: 'Regadera manual con soporte · artículo T45785 · ref. T45786 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 3850, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-manual-c-sporte-cromo-riviera',
+    nota: 'Regadera manual con soporte · artículo T45786 · ref. T45786 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2425, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-acero-8-sin-brazo-cromado',
+    nota: 'Ducha cuadrada de acero inoxidable 8\'\' sin brazo · artículo T45780 · ref. T45780 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2475, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-acero-8-sin-brazo-cromado',
+    nota: 'Ducha cuadrada de acero inoxidable 8\'\' sin brazo · artículo T45779 · ref. T45780 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 7230, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-acero-12-con-brazo-satinado',
+    nota: 'regadera de acero 12 con brazo satinado · artículo T45776 · ref. T45776 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 7095, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-acero-12-con-brazo-satinado',
+    nota: 'regadera de acero 12 con brazo satinado · artículo T45775 · ref. T45776 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5485, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-acero-10-con-brazo',
+    nota: 'regadera de acero 10 con brazo · artículo T45774 · ref. T45774 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5505, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-de-acero-10-con-brazo',
+    nota: 'regadera de acero 10 con brazo · artículo T45773 · ref. T45774 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 4175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-acero-8-con-brazo-satinado',
+    nota: 'Ducha de acero inoxidable 8\'\' con brazo · artículo T45772 · ref. T45772 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 3909, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-acero-8-con-brazo-satinado',
+    nota: 'Ducha de acero inoxidable 8\'\' con brazo · artículo T45771 · ref. T45772 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 1345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-5-funciones-sin-brazo',
+    nota: 'Regadea 5 funciones, s/bazo, como · artículo T45169 · ref. T45169 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2055, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-5-funciones-element',
+    nota: 'Regadera 5 funciones · artículo T45167 · ref. T45167 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2775, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-5-funciones-element',
+    nota: 'Regadera 5 funciones · artículo T45168 · ref. T45167 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 2560, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-manual-c-soporte-cromo-element',
+    nota: 'Ducha manual con soporte · artículo T45165 · ref. T45165 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 3260, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-manual-c-soporte-cromo-element',
+    nota: 'Ducha manual con soporte · artículo T45166 · ref. T45165 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 7459, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable-cromado-12',
+    nota: 'regadera redonda de acero inoxidable cromado 12 · artículo T45080 · ref. T45079 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 7355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable-cromado-12',
+    nota: 'regadera redonda de acero inoxidable cromado 12 · artículo T45079 · ref. T45079 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5809, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable-cromado-10',
+    nota: 'regadera redonda de acero inoxidable cromado 10 · artículo T45077 · ref. T45077 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 5959, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable-cromado-10',
+    nota: 'regadera redonda de acero inoxidable cromado 10 · artículo T45078 · ref. T45077 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 4360, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable',
+    nota: 'Regadera redonda de acero inoxidable 8\'\' · artículo T45076 · ref. T45075 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 4060, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-acero-inoxidable',
+    nota: 'Regadera redonda de acero inoxidable 8\'\' · artículo T45075 · ref. T45075 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-abs-4-1-4-sin-brazo',
+    nota: 'Regadea edonda de abs 4-1/4", sin bazo · artículo T45068 · ref. T45068 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 505, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-abs-4-1-4-con-brazo',
+    nota: 'Regadea edonda de abs 4-1/4", con bazo · artículo T45067 · ref. T45067 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 499, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-redonda-de-zamak-3-con-brazo',
+    nota: 'Regadea edonda de zamak 3", con bazo · artículo T45058 · ref. T45058 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_FERREMIX, 429, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/regadera-cuadrada-zamac-s-brazo-aqua',
+    nota: 'Ducha cuaraa 2" sin brazo metalica foset aqua · artículo T44494 · ref. T44494 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-010', PROV_OCHOA, 535.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-red-d-mano-01232512',
     nota: 'Cabeza De Ducha Red + D. Mano · artículo 01-23-2512 · ref. TB2216 · marca TILBY-GR. ' + SUPUESTO_ITBIS
@@ -8732,6 +9277,10 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ducha-dmano-csoporte-tempesta-100-2-chorros-rain-jet',
     itbis: false,
     nota: 'DUCHA D/MANO C/SOPORTE TEMPESTA 100 /2 CHORROS RAIN JET · artículo CERA-35766 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-010', PROV_FERREMIX, 450, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ducha-telefono-negra',
+    nota: 'Ducha telefono negra · artículo 30217 · marca Genérico. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-011', PROV_OCHOA, 16238.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-155x210-mm-01101275',
@@ -9138,6 +9687,18 @@
   c('MAT-09-013', PROV_IBERICA, 5281.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/brazo-para-ducha-cuadro-350mm/',
     nota: 'Brazo Para Ducha Cuadro 350mm · artículo 006735 · ref. 350 mm. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_FERREMIX, 839, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/brazo-para-ducha-de-techo-con-cubre-falta-laton-foset',
+    nota: 'BRAZO PARA DUCHA DE TECHO CON CUBRE FALTA LATON FOSET · artículo 50768570122544 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_FERREMIX, 799, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/brazo-para-ducha-con-cubre-falta-laton-foset',
+    nota: 'BRAZO PARA DUCHA CON CUBRE FALTA LATON FOSET · artículo 50768533258544 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_FERREMIX, 349, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/brazo-plastico-para-regel-3-y-regel-4',
+    nota: 'Brazo para ducha electrica plastico foset · artículo T49494 · ref. T49494 · marca Foset. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 1791, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-66',
@@ -10241,6 +10802,130 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-inox-lavamanos-cuello-alto-con-desague/',
     nota: 'Mezcladora Ona Inox Lavamanos Cuello Alto Con Desague · artículo 019487. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-014', PROV_FERREMIX, 8319, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-lavamanos-monomando-alta-cuello-recto-satinada-de-laton-foset-element',
+    nota: 'MEZCLADORA DE LAVAMANOS MONOMANDO ALTA CUELLO RECTO SATINADA DE LATON FOSET ELEMENT · artículo 50769157849392 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 6229, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-lavamanos-monomando-corta-cuello-recto-satinada-de-laton-foset-element',
+    nota: 'MEZCLADORA DE LAVAMANOS MONOMANDO CORTA CUELLO RECTO SATINADA DE LATON FOSET ELEMENT · artículo 50769153753392 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1555, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-4-para-lavabo-tubular',
+    nota: 'Mezcladora 4" para lavabo, tubular · artículo T47683 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 16075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-nariz-flexible',
+    nota: 'Monomando nariz flexible · artículo T44103 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-alto',
+    nota: 'Monomando alto · artículo T47793 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 2029, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-alto',
+    nota: 'Monomando alto · artículo T47795 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1725, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-corto',
+    nota: 'Monomando corto · artículo T47790 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1790, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-corto',
+    nota: 'Monomando corto · artículo T47792 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 340, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cuello-tipo-bar-para-mezcladora-de-lavabo-aqua',
+    nota: 'cuello tipo bar para mezcladora de lavabo aqua · artículo T46723 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 359, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cuello-tipo-bar-para-mezcladora-de-lavabo-aqua',
+    nota: 'cuello tipo bar para mezcladora de lavabo aqua · artículo T46725 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3830, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavamanos-tipo-p',
+    nota: 'mezcladora para lavamanos tipo p · artículo T46758 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3545, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavamanos-tipo-p',
+    nota: 'mezcladora para lavamanos tipo p · artículo T46756 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1645, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavabo-tipo-bar-pt1916',
+    nota: 'mezcladora para lavabo tipo bar pt1916 · artículo T46752 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1615, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavabo-tipo-bar-pt1916',
+    nota: 'mezcladora para lavabo tipo bar pt1916 · artículo T46750 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1624, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavabo-tipo-bar',
+    nota: 'mezcladora para lavabo tipo bar · artículo T46755 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1610, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-lavabo-tipo-bar',
+    nota: 'mezcladora para lavabo tipo bar · artículo T46753 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1999, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-laton-para-lavabo-satin',
+    nota: 'Mezcladora de latón para lavabo satín, 2 · artículo T45622 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 2750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-lavamanos-cuello-curvo-palanca-de-laton',
+    nota: 'mezcladora de lavamanos cuello curvo palanca de laton · artículo T45357 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3155, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-lavamanos',
+    nota: 'monomando para lavamanos · artículo T46764 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3020, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-lavamanos',
+    nota: 'monomando para lavamanos · artículo T46762 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 2125, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-bano-comp',
+    nota: 'Monoando baño cop. b-01 spc-2078/13303 lukan · artículo 13701 · marca Lukan. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 910, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-monomando',
+    nota: 'Lave monomando as-07 ukan · artículo 26815 · marca Lukan. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 2459, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-lav-ml-10',
+    nota: 'Monoando lav l-10 lukan · artículo 11811 · marca Lukan. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 949, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-plastico-nariz-curva',
+    nota: 'Mezcladora de lavaanos onoando cuello curvo de plastico foset basic abs · artículo T48191 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 7949, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-alto-para-lavamano-pt976',
+    nota: 'Mezcladora de lavaanos onoando alta cuello recto croada de laton foset eleent · artículo T49929 · ref. T49929 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1565, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcaldora-monomando-para-banera',
+    nota: 'Mezc. ono. p/bañera · artículo 3875 · marca Smart Life. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3709, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-lavamano-de-4',
+    nota: 'Mezcladora de lavaanos 4" onoando cuello corto de laton foset aero · artículo T49765 · ref. T49765 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1285, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-lavamano-plastico-1',
+    nota: 'Mezcladora de lavaanos onoando cuello recto de plastico foset basic abs · artículo T49550 · ref. T49550 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 3475, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-corto-para-lavamano-t45203',
+    nota: 'Mezcladora de lavaanos onoando cuello corto de laton foset aero · artículo T45203 · ref. T45203 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 995, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-lavamano-t-nypko-spc-978',
+    nota: 'Mezcladora lavaano t/nypko spc-978 · artículo 7082 · marca Importado. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_FERREMIX, 1195, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-lav-pesada-t-sayco',
+    nota: 'Mezcladora lav. pesada t/sayco · artículo 5770 · marca Importado. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-015', PROV_CERARTE, 5455.27, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/griferia-join-timer-bacteria-free-pressmatic',
     itbis: false,
@@ -10317,6 +11002,14 @@
   c('MAT-09-015', PROV_IBERICA, 15635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-tektronic-lavamanos-con-sensor-a-pilas/',
     nota: 'Mezcladora Tektronic Lavamanos con sensor a Pilas · artículo 005994. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_FERREMIX, 2339, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-solenoide-para-mezcladora-de-sensor-foster',
+    nota: 'Válula solenoide para mezcladora de sen.. · artículo T45351 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_FERREMIX, 740, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-baterias-para-mezcladora-de-sensor',
+    nota: 'Porta baterías ara mezcladora de sensor foset.. · artículo T45350 · marca Foset. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_CIMA, 1556, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tipo-sayc',
@@ -10738,6 +11431,130 @@
   c('MAT-09-016', PROV_IBERICA, 5192, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kitchen-ohm-cromo-fregadero/',
     nota: 'Mezcladora Kitchen OHM Cromo Fregadero · artículo 015062. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 7860, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-fregadero-monomando-cuello-alto-satinada-de-laton-foset-element',
+    nota: 'MEZCLADORA DE FREGADERO MONOMANDO CUELLO ALTO SATINADA DE LATON FOSET ELEMENT · artículo 50769130783024 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 9999, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-fregadero-monomando-con-manguera-extraible-cromada-de-laton-foset-element',
+    nota: 'MEZCLADORA DE FREGADERO MONOMANDO CON MANGUERA EXTRAIBLE CROMADA DE LATON FOSET ELEMENT · artículo 50769103814960 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 9569, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-con-doble-salida-para-fregadero-cromo',
+    nota: 'Monomando con doble salida para fregadero, Cromo · artículo T49106 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 3785, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-con-cuello-flexible-1',
+    nota: 'Monomando para fregadero con cuello flexible · artículo T47386 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 575, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cuello-flexible-para-mezcladora-de-fregadero-negro',
+    nota: 'Cuello flexible para mezcladora de fregadero, negro · artículo T45948 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 635, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cuello-flexible-para-mezcladora-de-fregadero',
+    nota: 'Cuello flexible para mezcladora de fregadero · artículo T45885 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 889, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-8-fregadero-abs-cuello-cobra',
+    nota: 'Mezcladora 8" fregadero, ABS, cuello cobra · artículo T45517 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 265, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cabezal-dirigible-para-mezcladora-de-fregadero-2',
+    nota: 'Cabezal dirigible para mezcladora de fregadero · artículo T45385 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 320, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cabezal-dirigible-para-mezcladora-de-fregadero-1',
+    nota: 'Cabezal dirigible para mezcladora de fregadero · artículo T45381 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 230, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cabezal-dirigible-para-mezcladora-de-fregadero',
+    nota: 'Cabezal dirigible para mezcladora de fregadero · artículo T45380 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 2089, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadero-cuello-cobra-hex-aqua',
+    nota: 'Mezcladora de latónpara fregadero, 2 an · artículo T45629 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 2140, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadero-cuello-cobra-palanca-foset',
+    nota: 'Mezcladora de latón para fregadero, 2 a · artículo T45627 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 2075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadero-cuello-cobra-cruceta',
+    nota: 'Mezcladora de latón para fregadero, 2 a · artículo T45626 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 2239, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-laton-para-fregadero-satin',
+    nota: 'Mezcladora de latón para fregadero satín · artículo T45624 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1699, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-laton-para-fregadero',
+    nota: 'mezcladora de laton para fregadero · artículo T45611 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1729, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-laton-para-fregadero',
+    nota: 'mezcladora de laton para fregadero · artículo T45612 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1825, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-de-laton-para-fregadero',
+    nota: 'mezcladora de laton para fregadero · artículo T45613 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 3575, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-cuello-alto',
+    nota: 'monomando para fregadero cuello alto · artículo T46767 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 3299, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-cuello-alto',
+    nota: 'monomando para fregadero cuello alto · artículo T46765 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1415, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadero-vikingo',
+    nota: 'Mezcladora para fregadero vikingo acr.8 · artículo 11403 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 5755, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-t49772',
+    nota: 'Mezcladora de fregadero onoando cuello largo de laton foset aero · artículo T49772 · ref. T49772 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 7149, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-con-cuello-extraible-t49771',
+    nota: 'Mezcladora de fregadero onoando cuello extraible foset aero · artículo T49771 · ref. T49771 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 4619, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-con-cuello-extraible',
+    nota: 'Mezcladora de fregadero onoando cuello con anguera extraible de laton foset aqua · artículo T49685 · ref. T49685 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 3675, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-de-cuello-curvo',
+    nota: 'Mezcladora de fregadero onoando cuello curvo de laton foset aqua · artículo T49684 · ref. T49684 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1220, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-plastico',
+    nota: 'Mezcladora de fregadero onoando cuello largo de plastico foset basic abs · artículo T49551 · ref. T49551 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 2545, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-cromada-para-fregadero',
+    nota: 'Mezcladora de fregadero onoando cuello recto de laton foset aqua · artículo T49407 · ref. T49407 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 14185, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-fregadero-semi-profesional',
+    nota: 'monomando para fregadero semi profesional · artículo T45195 · ref. T45195 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1280, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/grifo-fregadero-lujo-allure-viqua',
+    nota: 'Grifo freadero lujo allure viqua · artículo 26758 · marca Importado. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1459, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/grifo-fregadero-cristal-cromo-viqua',
+    nota: 'Grifo freadero cristal cromo viqua · artículo 26755 · marca Importado. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 1335, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadero-p-026-spc-979-001',
+    nota: 'Mezcladora para fregadero p-026 spc-979-001 · artículo 12595 · marca Importado. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_FERREMIX, 385, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/grifo-p-fregadero-c-cruceta-ref-2030-viqua',
+    nota: 'Grifo p/freadero c/cruceta ref. 2030 viqua · artículo 10292 · marca Viqua. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-017', PROV_OCHOA, 12165.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monom-barra-ext-new-belice-01021175',
@@ -11293,6 +12110,54 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-empotrada-ducha-1-via-con-accesorios/',
     nota: 'Mezcladora ONA Negro Mate Empotrada Ducha 1 Vía Con Accesorios · artículo 019494. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-017', PROV_FERREMIX, 2789, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-negro-1',
+    nota: 'Monomando para regadera, negro · artículo T48472 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 3340, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-satin',
+    nota: 'Monomando para regadera, satín · artículo T48471 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 2435, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-negro',
+    nota: 'Monomando para regadera, negro · artículo T46791 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 1759, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-de-empotrar-para-regadera',
+    nota: 'Monomando de empotrar para regadera · artículo T45859 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 1880, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-de-empotrar-para-regadera-cpvc-1-2',
+    nota: 'Monomando de empotrar para regadera CPVC 1/2" · artículo T45484 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 2195, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera',
+    nota: 'Monomando para regadera · artículo T46789 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 1215, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadera-metal-tipo-sayco',
+    nota: 'Mezcladora para fregadera etal tipo sayco gf-11 · artículo 13566 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 5085, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-t49767-1',
+    nota: 'Mezcladora de baño onoando de laton foset aero · artículo T49767 · ref. T49767 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 4535, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-empotrar',
+    nota: 'Mezcladora epostrable tipo nibco 1/4 de vuelta de bronce foset · artículo T49445 · ref. T49445 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 2380, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-t49435',
+    nota: 'Mezcladora de baño onoando 1/2" de laton foset aqua · artículo T49435 · ref. T49435 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 5019, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-pt860',
+    nota: 'monomando para ducha pt860 · artículo T45199 · ref. T45199 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_FERREMIX, 5419, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-pt860',
+    nota: 'monomando para ducha pt860 · artículo T45200 · ref. T45199 · marca Foset. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-018', PROV_OCHOA, 764.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232601',
     nota: 'Ducha Telefono C / Manguera 3 Funciones · artículo 01-23-2601 · ref. P01721 · marca AQUINA. ' + SUPUESTO_ITBIS
@@ -11409,318 +12274,426 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-tanque-gas-7-8-ll-ga',
     nota: 'LLAVE TANQUE GAS 7/8 LL-GA · artículo 7501206643488. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-024', PROV_CIMA, 7106, {
+  c('MAT-09-024', PROV_FERREMIX, 11205, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-presurizadora-multietapas',
+    nota: 'Boma centrifuga 1 1/3 hp presurizadora multietap · artículo T102387 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-025', PROV_FERREMIX, 7989, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-1-2-hp',
+    nota: 'Boma 1/2 hp centrifuga para agua truper expert · artículo T100431 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-026', PROV_FERREMIX, 30539, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/motobomba-para-agua-uso-agricola-15-hp',
+    nota: 'Motoboba 4" para agua uso agricola, 15 hp · artículo T102405 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-027', PROV_FERREMIX, 9495, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-3-4-hp',
+    nota: 'Boma 3/4 hp centrifuga para agua truper expert · artículo T100432 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-027', PROV_FERREMIX, 7849, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-de-3-4-hp',
+    nota: 'Boma 3/4 hp centrifuga para agua truper · artículo T100389 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-028', PROV_FERREMIX, 13189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/motobomba-para-agua-de-3-6-1-2hp-uso-agricola',
+    nota: 'Motoboba para agua de 3 6 1/2hp uso agricola pretul · artículo T26063 · marca Pretul. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-029', PROV_CIMA, 7106, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-cisterna-1-2-hp-110',
     nota: 'BOMBA AGUA CISTERNA 1/2 HP 110 · artículo 045841. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_CIMA, 2789, {
+  c('MAT-09-030', PROV_CIMA, 2789, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-nara',
     nota: 'BOMBA AGUA LADRONA 1/2HP NARA · artículo 014449. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_CIMA, 2670, {
+  c('MAT-09-030', PROV_CIMA, 2670, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-verde',
     nota: 'BOMBA AGUA LADRONA 1/2HP VERDE · artículo 014451. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_CIMA, 3957, {
+  c('MAT-09-030', PROV_CIMA, 3957, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-ama',
     nota: 'BOMBA AGUA LADRONA 1/2HP AMA · artículo 014450. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_CIMA, 4480, {
+  c('MAT-09-030', PROV_CIMA, 4480, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp-201t',
     nota: 'BOMBA AGUA LADRONA 1/2 HP 201T · artículo 058546. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_CIMA, 6300, {
+  c('MAT-09-030', PROV_CIMA, 6300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp',
     nota: 'BOMBA AGUA LADRONA 1/2 HP · artículo 044756. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-026', PROV_CIMA, 5075, {
+  c('MAT-09-031', PROV_FERREMIX, 5719, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-1hp',
+    nota: 'Bomba periférica 1HP · artículo T10070 · marca Truper Expert. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-032', PROV_FERREMIX, 1995, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-1-2hp-altura-max-30m-uso-agricola',
+    nota: 'Boma periférica para agua de 1/2 hp, foset · artículo T46237 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-033', PROV_FERREMIX, 5079, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-3-4hp-altura-max-65m-uso-agricola-expert',
+    nota: 'Bomba periférica 3/4HP · artículo T10069 · marca Truper Expert. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-034', PROV_CIMA, 5075, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladro-presur-1-2hp',
     nota: 'BOMBA AGUA LADRO PRESUR 1/2HP · artículo 023341. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_CIMA, 4914, {
+  c('MAT-09-035', PROV_CIMA, 4914, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-3hp',
     nota: 'BOMBA PRESURIZADORA 1/3HP · artículo 7506240667971. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-028', PROV_CIMA, 2911, {
+  c('MAT-09-036', PROV_CIMA, 2911, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-6hp',
     nota: 'BOMBA PRESURIZADORA 1/6HP · artículo 7506240667964. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-029', PROV_CIMA, 1825, {
+  c('MAT-09-037', PROV_FERREMIX, 4075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-sucia',
+    nota: 'Boma sumergile para agua sucia 1hp pre · artículo T27198 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 3719, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-limpia',
+    nota: 'Boma sumergile para agua limpia 1 hp p · artículo T27197 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 1920, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/caja-de-control-para-bomba-tipo-bala-1-hp',
+    nota: 'Caja de ontrol elétrio 1hp para bomba sumergible · artículo T102709 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 11755, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-1-hp-tipo-bala',
+    nota: 'Boma 1 hp sumergile agua limpia t/ ala truper · artículo T12625 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 13220, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-de-1-hp',
+    nota: 'Boma 1 hp sumergile de agua limpia de hierro truper · artículo T100171 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 6635, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-inoxidable-para-agua-sucia',
+    nota: 'Boma 1 hp sumergile para agua sucia acero inoxidale truper · artículo T12607 · ref. T12607 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-037', PROV_FERREMIX, 5255, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-para-agua-sucia',
+    nota: 'Boma 1 hp sumergile para agua sucia plastica truper · artículo T12603 · ref. T12603 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-038', PROV_FERREMIX, 14569, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-1-1-2-hp-tipo-bala',
+    nota: 'Boma 1 1/2 hp sumergile para agua limpia tipo ala truper · artículo T12626 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-039', PROV_FERREMIX, 2835, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-2-hp-para-agua-limpia',
+    nota: 'Boma sumergile para agua limpia 1/2 hp · artículo T27195 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-039', PROV_FERREMIX, 9405, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-1-2-hp',
+    nota: 'Boma 1/2 hp sumergile de agua limpia de hierro truper · artículo T100169 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-039', PROV_FERREMIX, 9595, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-tipo-bala-para-agua-limpia',
+    nota: 'Boma 1/2 hp sumergile para agua limpia tipo ala truper · artículo T16933 · ref. T16933 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-039', PROV_FERREMIX, 7809, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-metalica-para-agua-limpia-uso-rudo-1-2-hp',
+    nota: 'Boma 1/2 hp sumergile para agua limpia uso rudo truper · artículo T15001 · ref. T15001 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-040', PROV_FERREMIX, 16615, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-para-pozo-profundo-2-hp-agua-limpia',
+    nota: 'Boma 2 hp sumergile para agua limpia tipo ala truper · artículo T12627 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-041', PROV_FERREMIX, 2999, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-3-4-hp-para-agua-limpia',
+    nota: 'Boma sumergile para agua limpia 3/4 hp · artículo T27196 · marca Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-042', PROV_CIMA, 1825, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
     nota: 'TANQUE PRESURIZADO HORIZO 24L · artículo 041539. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-030', PROV_CIMA, 1666, {
+  c('MAT-09-043', PROV_CIMA, 1666, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
     nota: 'INTERRUPTOR AUTOMA BOMBA 20-40 · artículo 782116159208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-031', PROV_CIMA, 1631, {
+  c('MAT-09-044', PROV_CIMA, 1631, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
     nota: 'INTERRUPTOR AUTOMA BOMBA 30-50 · artículo 782116159215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-032', PROV_CIMA, 1688, {
+  c('MAT-09-045', PROV_CIMA, 1688, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
     nota: 'INTERRUPTOR AUTOMA BOMBA 40-60 · artículo 782116159222. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-033', PROV_CIMA, 690, {
+  c('MAT-09-046', PROV_CIMA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
     nota: 'INTERRUPTOR FLOTA ELECT 3M · artículo 022359. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-033', PROV_CIMA, 1454, {
+  c('MAT-09-046', PROV_CIMA, 1454, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
     nota: 'INTERRUPTOR FLOTA ELECT 10AMP · artículo 8428381208648. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 3178, {
+  c('MAT-09-047', PROV_CIMA, 3178, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/control-automatico-bomba-1',
     nota: 'CONTROL AUTOMATICO BOMBA 1\'\' · artículo 8428381219088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-035', PROV_CIMA, 990, {
+  c('MAT-09-048', PROV_CIMA, 990, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
     nota: 'MANOMETRO GLICERINA 150PSI 382 · artículo 8428381508908. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-036', PROV_CIMA, 905, {
+  c('MAT-09-049', PROV_CIMA, 905, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
     nota: 'MANOMETRO GLICERINA 90PSI 3822 · artículo 8428381508892. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-037', PROV_CIMA, 407, {
+  c('MAT-09-050', PROV_CIMA, 407, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
     nota: 'MANOMETRO 90PSI 3820N-006 · artículo 8428381508854. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-038', PROV_CIMA, 5395, {
+  c('MAT-09-051', PROV_CIMA, 5395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 082516. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-038', PROV_CIMA, 15945, {
+  c('MAT-09-051', PROV_CIMA, 15945, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 822312089944. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-039', PROV_CIMA, 10291, {
+  c('MAT-09-052', PROV_CIMA, 10291, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
     nota: 'CALENTADOR ELEC 6 GLS C-6 · artículo 064560. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-040', PROV_CIMA, 20503, {
+  c('MAT-09-053', PROV_CIMA, 20503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
     nota: 'CALENTADOR ELECTRICO 7 KW · artículo 822312080392. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_CIMA, 11717, {
+  c('MAT-09-054', PROV_CIMA, 11717, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
     nota: 'CALENTADOR ELEC 8 GLS C-8 · artículo 064178. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-042', PROV_CIMA, 17755, {
+  c('MAT-09-055', PROV_CIMA, 17755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
     nota: 'TANQUE CISTERNA 120gls FIBRA · artículo 085845. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_CIMA, 5101, {
+  c('MAT-09-056', PROV_CIMA, 5101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
     nota: 'TANQUE CISTERNA 30gls FIBRA VI · artículo 040678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-044', PROV_CIMA, 7487, {
+  c('MAT-09-057', PROV_CIMA, 7487, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     nota: 'TANQUE CISTERNA 42gls FIBRA VI · artículo 093660. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-044', PROV_CIMA, 14217, {
+  c('MAT-09-057', PROV_CIMA, 14217, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
     nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-045', PROV_CIMA, 15482, {
+  c('MAT-09-058', PROV_CIMA, 15482, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
     nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-045', PROV_CIMA, 10496, {
+  c('MAT-09-058', PROV_CIMA, 10496, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     nota: 'TANQUE CISTERNA 60gls FIBRA VI · artículo 047125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-046', PROV_CIMA, 9895, {
+  c('MAT-09-059', PROV_CIMA, 9895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     nota: 'TANQUE CISTERNA 82 GLS FIBRA V · artículo 260406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_MAX, 41115, {
+  c('MAT-09-060', PROV_MAX, 41115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     nota: 'TINACO TINACOM 1100 GLS. · artículo 0001016137 · ref. Tinaco Vertical | Capacidad 1100 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_MAX, 5385, {
+  c('MAT-09-061', PROV_MAX, 5385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     nota: 'TINACO TINACOM 145 GLS · artículo 0001047874 · ref. Tinaco Vertical | Capacidad 145 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_MAX, 10469.3, {
+  c('MAT-09-062', PROV_MAX, 10469.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     nota: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO · artículo 0001015240 · ref. Tinaco Horizontal | Capacidad 200 galones | Color Negro · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_CIMA, 9555, {
+  c('MAT-09-063', PROV_FERREMIX, 8375, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
+    nota: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper · artículo OF0187 · ref. 255 GLS · marca Truper y Truper. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-064', PROV_CIMA, 9555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     nota: 'TINACO 265gls NEGRO · artículo 040506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_MAX, 8585, {
+  c('MAT-09-064', PROV_MAX, 8585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     nota: 'TINACO TINACOM 265 GLS · artículo 0001012185 · ref. Tinaco Vertical | Capacidad 265 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-051', PROV_MAX, 9660, {
+  c('MAT-09-065', PROV_MAX, 9660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     nota: 'TINACO TINACOM 300 GLS · artículo 0001047397 · ref. Tinaco Vertical | Capacidad 300 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-052', PROV_MAX, 12125, {
+  c('MAT-09-066', PROV_MAX, 12125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     nota: 'TINACO TINACOM 400 GLS. · artículo 0001013502 · ref. Tinaco Vertical | Capacidad 400 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-053', PROV_CIMA, 18535, {
+  c('MAT-09-067', PROV_CIMA, 18535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     nota: 'TINACO 530gls NEGRO · artículo 025060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-053', PROV_MAX, 15331.46, {
+  c('MAT-09-067', PROV_MAX, 15331.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     nota: 'TINACO TINACOM 530 GLS · artículo 0001012186 · ref. Tinaco Vertical | Capacidad 530 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-054', PROV_CIMA, 3313, {
+  c('MAT-09-068', PROV_CIMA, 3313, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-054', PROV_MAX, 3795, {
+  c('MAT-09-068', PROV_MAX, 3795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-24x24',
     nota: 'TAPA CISTERNA 24X24 · artículo 0001124802 · ref. Tapa de cisterna | Formato 24x24 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-055', PROV_CIMA, 4503, {
+  c('MAT-09-069', PROV_CIMA, 4503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-055', PROV_MAX, 4745, {
+  c('MAT-09-069', PROV_MAX, 4745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-30x30',
     nota: 'TAPA CISTERNA 30X30 · artículo 0001124804 · ref. Tapa de cisterna | Formato 30x30 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-056', PROV_CIMA, 3995, {
+  c('MAT-09-070', PROV_CIMA, 3995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     nota: 'TAPA CISTERNA ALUMINIO 33 X 33 · artículo 032540. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-057', PROV_CIMA, 295, {
+  c('MAT-09-071', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     nota: 'BOYA CISTERNA NARANJA 120mm · artículo 090406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-058', PROV_CIMA, 375, {
+  c('MAT-09-072', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     nota: 'BOYA CISTERNA NARANJA 150mm · artículo 090405. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-059', PROV_CIMA, 160, {
+  c('MAT-09-073', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     nota: 'BOYA CISTERNA NEGRA/MAMEY 90mm · artículo 090407. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-060', PROV_IBERICA, 4000, {
+  c('MAT-09-074', PROV_IBERICA, 4000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     nota: 'Fregadero Sencillo Teka 25×22 · artículo 001680 · ref. 25×22 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-061', PROV_CIMA, 1425, {
+  c('MAT-09-075', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     nota: 'FREGADERO BAR 2 HOYOS 15X15 · artículo 7592032002860. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-062', PROV_CERARTE, 2764.6, {
+  c('MAT-09-076', PROV_CERARTE, 2764.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva',
     itbis: false,
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34518 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-063', PROV_CERARTE, 2753.38, {
+  c('MAT-09-077', PROV_CERARTE, 2753.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta',
     itbis: false,
     nota: 'FREGADERO 1B EMPOTRADO INVICTA · artículo CERA-34523 · ref. 47X32X15 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-064', PROV_CERARTE, 16794.81, {
+  c('MAT-09-078', PROV_CERARTE, 16794.81, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50',
     itbis: false,
     nota: 'FREGADERO 1B BOX LINE 50 · artículo CERA-03261 · ref. 50X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-065', PROV_CERARTE, 4600.63, {
+  c('MAT-09-079', PROV_CERARTE, 4600.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva',
     itbis: false,
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34521 · ref. 56X34X14.5 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-066', PROV_CERARTE, 15492.89, {
+  c('MAT-09-080', PROV_CERARTE, 15492.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo',
     itbis: false,
     nota: 'FREGADERO 1B D/CUARZO · artículo CERA-34922 · ref. 60X48X20 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-067', PROV_CERARTE, 18365.37, {
+  c('MAT-09-081', PROV_CERARTE, 18365.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74',
     itbis: false,
     nota: 'FREGADERO 1B BOX LINE 74 · artículo CERA-03262 · ref. 70X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-068', PROV_CERARTE, 23956.99, {
+  c('MAT-09-082', PROV_CERARTE, 23956.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74',
     itbis: false,
     nota: 'FREGADERO 1B BOX LUX 74 · artículo CERA-03263 · ref. 74X40X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-069', PROV_IBERICA, 74.85, {
+  c('MAT-09-083', PROV_FERREMIX, 1635, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
+    nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-084', PROV_IBERICA, 74.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     nota: 'Fregadero Sencillo 20×21 Teka · artículo 008929 · ref. 20×21 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-070', PROV_IBERICA, 5265.16, {
+  c('MAT-09-085', PROV_IBERICA, 5265.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     nota: 'Fregadero Sencillo Black 23.5x18x8 1H · artículo 018946 · ref. FRE-603B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-071', PROV_CIMA, 3040, {
+  c('MAT-09-086', PROV_CIMA, 3040, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     nota: 'FREGADERO SENCILLO C/ESCURRIDO · artículo 010795. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-072', PROV_CERARTE, 11376, {
+  c('MAT-09-087', PROV_CERARTE, 11376, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice',
     itbis: false,
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34524 · ref. 71.5X40X15 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-073', PROV_CERARTE, 45252.11, {
+  c('MAT-09-088', PROV_CERARTE, 45252.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75',
     itbis: false,
     nota: 'FREGADERO 2B BOX LINE 75 · artículo CERA-03264 · ref. 77.6X46X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-073', PROV_CERARTE, 18165.28, {
+  c('MAT-09-088', PROV_CERARTE, 18165.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo',
     itbis: false,
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35549 · ref. 79X45X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-074', PROV_CERARTE, 17852.79, {
+  c('MAT-09-089', PROV_CERARTE, 17852.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo',
     itbis: false,
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35126 · ref. 80X47X22 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-075', PROV_CERARTE, 17226.67, {
+  c('MAT-09-090', PROV_CERARTE, 17226.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo',
     itbis: false,
     nota: 'FREGADERO 2B OKIO PLUS 80 DUO · artículo CERA-03266 · ref. 80X50X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-075', PROV_CERARTE, 5594.18, {
+  c('MAT-09-090', PROV_CERARTE, 5594.18, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio',
     itbis: false,
     nota: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO · artículo CERA-20957 · ref. 800X500 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-076', PROV_CERARTE, 11166.49, {
+  c('MAT-09-091', PROV_CERARTE, 11166.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice',
     itbis: false,
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34525 · ref. 83.5X34.5X18 4. · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-077', PROV_CIMA, 3285, {
+  c('MAT-09-092', PROV_CIMA, 3285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     nota: 'FREGADERO DOBLE 1H 33 X 19 S/E · artículo 012486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-078', PROV_CIMA, 6540, {
+  c('MAT-09-093', PROV_CIMA, 6540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-079', PROV_IBERICA, 45860, {
+  c('MAT-09-094', PROV_IBERICA, 45860, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     nota: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido · artículo 018396 · ref. 44×86. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-080', PROV_CERARTE, 17194.13, {
+  c('MAT-09-095', PROV_CERARTE, 17194.13, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo',
     itbis: false,
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35127 · ref. 86X46X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-081', PROV_CIMA, 256, {
+  c('MAT-09-096', PROV_FERREMIX, 6665, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
+    nota: 'fregadero de empotrar 120 x 50 doble · artículo T45061 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-096', PROV_FERREMIX, 6680, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
+    nota: 'fregadero de empotrar 120 x 50 doble · artículo T45060 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-097', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_CIMA, 205, {
+  c('MAT-09-097', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_CIMA, 213, {
+  c('MAT-09-097', PROV_CIMA, 213, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_CIMA, 222, {
+  c('MAT-09-097', PROV_CIMA, 222, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7461299795276. ' + SUPUESTO_ITBIS
   });
@@ -11756,1038 +12729,1982 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-taschi-espiral-85w-6400k',
     nota: 'BOMBILLO TASCHI-ESPIRAL 85W 6400K · artículo 0001118095 · ref. Tecnologia: CFL/ahorrador | Potencia 85 W | Temp. color 6400 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-024', PROV_MAX, 115, {
+  c('MAT-10-024', PROV_FERREMIX, 125, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-en-espiral-de-bajo-consumo-t4',
+    nota: 'bombillo en espiral de bajo consumo t4 · artículo T48212 · ref. T48212 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-024', PROV_FERREMIX, 85, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-espiral-bajo-consumo-15w',
+    nota: 'Bomillo espiral ajo consumo 15w ez light · artículo 1431 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-025', PROV_FERREMIX, 135, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-en-espiral-de-bajo-consumo-t4',
+    nota: 'bombillo en espiral de bajo consumo t4 · artículo T48213 · ref. T48212 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-026', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-en-espiral-de-bajo-consumo-t4',
+    nota: 'bombillo en espiral de bajo consumo t4 · artículo T48215 · ref. T48212 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-027', PROV_FERREMIX, 99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w-t48380',
+    nota: 'Bomillo 50w 120v halogeno luz calida ase gu10 volteck · artículo T48380 · ref. T48380 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-027', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w-varios-colores',
+    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47254 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-027', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w-varios-colores',
+    nota: 'bombillo de halogeno tipo mr 16 50w varios colores · artículo T47255 · ref. T47254 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-027', PROV_FERREMIX, 59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-halogeno-tipo-mr-16-50w',
+    nota: 'Bomillo 50w 12v de halogeno luz calida ase gx5.3 volteck · artículo T47253 · ref. T47253 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-028', PROV_FERREMIX, 50, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-11w-120v-incandescente-serie-de-luz-calida-s1',
+    nota: 'Bomillo 11w 120v incandescente serie de luz calida s1 volteck · artículo T49091 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-029', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombill-g25-25w-clear-satco-3447',
     nota: 'BOMBILL G25 25W CLEAR SATCO 3447 · artículo 0001055572 · ref. Tecnologia: Incandescente/halogeno | Potencia 25 W | Base/formato G25 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-024', PROV_MAX, 85, {
+  c('MAT-10-029', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-satco-a19-25w-s6091-verde',
     nota: 'BOMBILLO SATCO A19 25W S6091 VERDE* · artículo 0001005349 · ref. Tecnologia: Incandescente/halogeno | Potencia 25 W | Base/formato A19 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-025', PROV_MAX, 80, {
+  c('MAT-10-030', PROV_MAX, 80, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-g16-40w-e27-clear-3839',
     nota: 'BOMB G16 40W E27 CLEAR 3839 · artículo 0001131259 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato G16 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-025', PROV_MAX, 110, {
+  c('MAT-10-030', PROV_MAX, 110, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-torpedo-40w-e26-frost-sat-s3735',
     nota: 'BOMBILLO TORPEDO 40W E26 FROST SAT S3735 · artículo 0001010324 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato E26 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-025', PROV_MAX, 340.01, {
+  c('MAT-10-030', PROV_MAX, 340.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-satco-g40-40w-s3001',
     nota: 'BOMBILLO SATCO G40 40W S3001 · artículo 0001000287 · ref. Tecnologia: Incandescente/halogeno | Potencia 40 W | Base/formato G40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-026', PROV_MAX, 235.06, {
+  c('MAT-10-030', PROV_FERREMIX, 205, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-incandescente-tipo-probeta',
+    nota: 'Bomillo 40w 120 incandescente luz calida tipo proeta volteck · artículo T47106 · ref. T47106 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-030', PROV_FERREMIX, 305, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-incandescente-vintage-tipo-globo',
+    nota: 'Bomillo 40w 120v incandescente luz calida tipo gloo volteck · artículo T47105 · ref. T47105 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-030', PROV_FERREMIX, 120, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-incandescente-vintage-tipo-flama',
+    nota: 'Bomillo 40w 120v incandescente luz calida tipo flama volteck · artículo T47108 · ref. T47108 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-030', PROV_FERREMIX, 209, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-incandescente-vintage-tipo-edison',
+    nota: 'Bomillo 40w 120v incandescente luz calida tipo edison volteck · artículo T47104 · ref. T47104 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-031', PROV_MAX, 235.06, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-r20-50w-e26-verde-satco-s3201',
     nota: 'BOMBILLO R20 50W E26 VERDE SATCO S3201* · artículo 0001005348 · ref. Tecnologia: Incandescente/halogeno | Potencia 50 W | Base/formato R20 · marca SATCO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-027', PROV_MAX, 60, {
+  c('MAT-10-032', PROV_MAX, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-filamento-1w-48452-2200k',
     nota: 'BOMB LED FILAMENTO 1W 48452 2200K · artículo 0001128121 · ref. Tecnologia: LED | Potencia 1 W | Temp. color 2200 K · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-028', PROV_MAX, 40, {
+  c('MAT-10-032', PROV_FERREMIX, 89, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-1w-120v-de-led-sin-filamento-luz-calida-s14',
+    nota: 'Bomillo 1w 120v de led sin filamento luz calida s14 volteck · artículo T48077 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-032', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-1w-120v-de-led-con-filamento-luz-calida-s14',
+    nota: 'Bomillo 1w 120v de led con filamento luz calida s14 volteck · artículo T48452 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-032', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-azul-1w-volteck',
+    nota: 'bombillo led azul 1w volteck · artículo T46026 · ref. T46026 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-033', PROV_MAX, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-huevo-pal-rojo-1-2w-cn0893-1',
     nota: 'BOMB LED HUEVO PAL ROJO 1.2W CN0893-1 · artículo 0001125329 · ref. Tecnologia: LED | Potencia 1.2 W · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-029', PROV_MAX, 210, {
+  c('MAT-10-034', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-a60-rayovac-led10w-av1bl-3000k',
     nota: 'BOMB A60 RAYOVAC LED10W-AV1BL 3000K · artículo 0001120899 · ref. Tecnologia: LED | Potencia 10 W | Temp. color 3000 K | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-029', PROV_MAX, 170, {
+  c('MAT-10-034', PROV_MAX, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-a60-led-rayovac-10w-led1000-blb',
     nota: 'BOMB A60 LED RAYOVAC 10W LED1000-BLB · artículo 0001120895 · ref. Tecnologia: LED | Potencia 10 W | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-030', PROV_MAX, 930.01, {
+  c('MAT-10-034', PROV_FERREMIX, 215, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-tipo-bulbo-10w-con-sensor-de-movimiento',
+    nota: 'Foco led tipo bulbo 10 w, con sensor de · artículo T46990 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-035', PROV_MAX, 930.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-br30-11w-50k-dim-108g-s9045',
     nota: 'BOMB LED BR30 11W 50K DIM 108G S9045 · artículo 0001077790 · ref. Tecnologia: LED | Potencia 11 W | Temp. color 5000 K | Base/formato BR30 | Regulable (dimmable) · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-030', PROV_MAX, 190, {
+  c('MAT-10-035', PROV_MAX, 190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par30-11w-65k-voltecht-t46187',
     nota: 'BOMB LED PAR30 11W 65K VOLTECHT T46187 · artículo 0001123807 · ref. Tecnologia: LED | Potencia 11 W | Temp. color 6500 K | Base/formato PAR30 · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-031', PROV_MAX, 60, {
+  c('MAT-10-036', PROV_MAX, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-a60-12w-65k-menca',
     nota: 'BOMBILLO LED A60 12W 65K MENCA · artículo 0001117221 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K | Base/formato A60 · marca MEMCA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-031', PROV_MAX, 119.99, {
+  c('MAT-10-036', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl80-12w-6500k',
     nota: 'BOMB LED TASCHIBRA TKL80 12W 6500K · artículo 0001126756 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-031', PROV_MAX, 140, {
+  c('MAT-10-036', PROV_MAX, 140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl80-12w-3000k',
     nota: 'BOMB LED TASCHIBRA TKL80 12W 3000K · artículo 0001126755 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-031', PROV_MAX, 241.9, {
+  c('MAT-10-036', PROV_MAX, 241.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-globo-recargable-12w-eb-12',
     nota: 'BOMBILLO LED GLOBO RECARGABLE 12W EB-12 · artículo 0001122750 · ref. Tecnologia: LED | Potencia 12 W | Recargable · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-032', PROV_MAX, 240, {
+  c('MAT-10-036', PROV_FERREMIX, 265, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-12w-120v-de-led-luz-calida-circular-tipo-ovni',
+    nota: 'Bomillo 12w 120v de led luz calida circular tipo ovni volteck · artículo T45630 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-036', PROV_FERREMIX, 220, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-circular-tipo-ovni',
+    nota: 'Bomillo 12w 120v de led luz lanca circular tipo ovni volteck · artículo T46090 · ref. T46090 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-037', PROV_FERREMIX, 295, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-125w-120v-de-led-tipo-lampara-luz-calida-sin-filamento',
+    nota: 'Bomillo 125w 120v de led tipo lampara luz calida sin filamento volteck · artículo T45631 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-038', PROV_MAX, 240, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bom-a60-rayovac-led14w-bv1bl-65k',
     nota: 'BOM A60 RAYOVAC LED14W-BV1BL 65K · artículo 0001120896 · ref. Tecnologia: LED | Potencia 14 W | Temp. color 6500 K | Base/formato A60 · marca RAYOVAC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-032', PROV_MAX, 350, {
+  c('MAT-10-038', PROV_MAX, 350, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par38-14w-65k-voltecht-t46191',
     nota: 'BOMB LED PAR38 14W 65K VOLTECHT T46191 · artículo 0001123808 · ref. Tecnologia: LED | Potencia 14 W | Temp. color 6500 K | Base/formato PAR38 · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-033', PROV_MAX, 140, {
+  c('MAT-10-038', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillos-14w-120v-luz-calida-tipo-bulbo-a19',
+    nota: 'Bomillos 14w 120v de led luz calida tipo ulo a19 volteck · artículo T27214 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-038', PROV_FERREMIX, 95, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-14w-120v-de-led-luz-calida-tipo-bulbo',
+    nota: 'Bomillo 14w 120v de led luz calida tipo ulo volteck · artículo T46593 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-039', PROV_MAX, 140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl90-15w-3000k',
     nota: 'BOMB LED TASCHIBRA TKL90 15W 3000K · artículo 0001126757 · ref. Tecnologia: LED | Potencia 15 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-033', PROV_MAX, 130, {
+  c('MAT-10-039', PROV_MAX, 130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-taschibra-tkl90-15w-6500k',
     nota: 'BOMB LED TASCHIBRA TKL90 15W 6500K · artículo 0001126758 · ref. Tecnologia: LED | Potencia 15 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-034', PROV_MAX, 260, {
+  c('MAT-10-040', PROV_MAX, 260, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-planos-plb-40k-18w',
     nota: 'BOMBILLO LED PLANOS PLB-40K 18W · artículo 0001000494 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 4000 K. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-035', PROV_MAX, 310, {
+  c('MAT-10-040', PROV_FERREMIX, 129, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-led-tipo-bulbo',
+    nota: 'Bomillo 18w 120v de led luz calida tipo ulo volteck · artículo T48459 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-041', PROV_FERREMIX, 250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-led-y-luz-calida-de-4w',
+    nota: '@bomb. de leds l/calida led-104c 2w voltech · artículo T46166 · ref. T46166 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-042', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-2-5w-twilight-g9-65k-ledg905dl',
     nota: 'BOMB LED 2.5W TWILIGHT G9 65K LEDG905DL · artículo 0001060263 · ref. Tecnologia: LED | Potencia 2.5 W | Temp. color 6500 K | Base/formato G9 · marca TWILIGHT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-036', PROV_MAX, 165, {
+  c('MAT-10-043', PROV_FERREMIX, 149, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-alta-potencia-luz-blanca-fria',
+    nota: 'Foco LED alta potencia luz blanca fría · artículo T28206 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-044', PROV_FERREMIX, 229, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-alta-potencia-luz-blanca-fria',
+    nota: 'Foco LED alta potencia luz blanca fría · artículo T28207 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-044', PROV_FERREMIX, 199, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-g9-luz-calida-4w-volteck',
+    nota: 'Bomillo 25w 120v de led luz calida ase g9 tipo capsula volteck · artículo T48102 · ref. T48102 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-045', PROV_MAX, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-torp-3w-e12-30k-twilight-twledc3w',
     nota: 'BOMB TORP 3W E12 30K TWILIGHT TWLEDC3W · artículo 0001109544 · ref. Tecnologia: Incandescente/halogeno | Potencia 3 W | Temp. color 3000 K | Base/formato E12 · marca TWILIGHT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-036', PROV_MAX, 150, {
+  c('MAT-10-045', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombi-led-g4-l-calida-3w-voltek-t48103',
     nota: 'BOMBI LED G4 L/CALIDA 3W VOLTEK T48103 · artículo 0001122431 · ref. Tecnologia: LED | Potencia 3 W | Base/formato G4 · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-037', PROV_MAX, 595, {
+  c('MAT-10-045', PROV_FERREMIX, 50, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-3w-25w-blanca-fria',
+    nota: 'Foco LED 3W (25W) blanca fría · artículo T47542 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-045', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-tipo-vela',
+    nota: 'Bomillo 3w 120v de led luz calida con filamento volteck · artículo T46212 · ref. T46212 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-045', PROV_FERREMIX, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-tipo-capsula-2-5w',
+    nota: 'Bomillo 3w 12v de led luz calida ase g4 tipo capsula volteck · artículo T48103 · ref. T48103 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-046', PROV_FERREMIX, 474.36, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-de-led-y-luz-blanca-de-3-5w',
+    nota: '@bomb. de leds l/blanca led-164 3.5w voltech · artículo T46163 · ref. T46163 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-047', PROV_MAX, 595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl170-30w',
     nota: 'BOMBILLO LED TASCHIBRA TKL170 30W · artículo 0001118088 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-038', PROV_MAX, 1195, {
+  c('MAT-10-048', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-aksi-35-watts-116401',
     nota: 'BOMBILLO LED AKSI 35 WATTS 116401 · artículo 0001120263 · ref. Tecnologia: LED | Potencia 35 W · marca AKSI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 365, {
+  c('MAT-10-048', PROV_FERREMIX, 339, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-alta-potencia-luz-blanca-fria',
+    nota: 'Foco LED alta potencia luz blanca fría · artículo T28208 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-049', PROV_MAX, 365, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-vela-4w-e12-clear-5000k-29866',
     nota: 'BOMB LED VELA 4W E12 CLEAR 5000K 29866 · artículo 0001131266 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 5000 K | Base/formato E12 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 80, {
+  c('MAT-10-049', PROV_MAX, 80, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-mr16-6500k-4w-volteck-t46178',
     nota: 'BOMB LED MR16 6500K 4W VOLTECK T46178 · artículo 0001121341 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 6500 K | Base/formato MR16 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 180, {
+  c('MAT-10-049', PROV_MAX, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bobil-led-g45-4w-filam-brightly-e27-dim',
     nota: 'BOBIL LED G45 4W FILAM BRIGHTLY E27 DIM · artículo 0001118481 · ref. Tecnologia: LED | Potencia 4 W | Base/formato G45 | Regulable (dimmable) · marca BRIGHTLY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 145, {
+  c('MAT-10-049', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-mr16-30k-3w-brightly-ledro4ww',
     nota: 'BOMB LED MR16 3000K 4W BRIGHTLY LEDRO4WW · artículo 0001109552 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato MR16 · marca BRIGHTLY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 64.99, {
+  c('MAT-10-049', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-4w-gu10-3000k-voltech-46216',
     nota: 'BOMB LED 4W GU10 3000K VOLTECH 46216 · artículo 0001128123 · ref. Tecnologia: LED | Potencia 4 W | Temp. color 3000 K | Base/formato GU10 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-039', PROV_MAX, 200, {
+  c('MAT-10-049', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombi-led-g9-l-calida-4w-volteck-t48102',
     nota: 'BOMBI LED G9 L/CALIDA 4W VOLTECK T48102 · artículo 0001122430 · ref. Tecnologia: LED | Potencia 4 W | Base/formato G9 · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-040', PROV_MAX, 105, {
+  c('MAT-10-050', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl30-4-9w-6500k',
     nota: 'BOMBILLO LED TASCHIBRA TKL30 4.9W 6500K · artículo 0001118091 · ref. Tecnologia: LED | Potencia 4.9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-041', PROV_MAX, 709.99, {
+  c('MAT-10-051', PROV_MAX, 709.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl225-40w',
     nota: 'BOMBILLO LED TASCHIBRA TKL225 40W · artículo 0001118089 · ref. Tecnologia: LED | Potencia 40 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-042', PROV_MAX, 272.01, {
+  c('MAT-10-051', PROV_FERREMIX, 470, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/foco-led-alta-potencia-luz-blanca-fria',
+    nota: 'Foco LED alta potencia luz blanca fría · artículo T28209 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-052', PROV_MAX, 272.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-5w-mr16-70k12v-ameri-5wcob4',
     nota: 'BOMB. LED 5W MR16 70K12V AMERI 5WCOB4* · artículo 0001068714 · ref. Tecnologia: LED | Potencia 5 W | Base/formato MR16 · marca AMERICANLIGHT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-043', PROV_MAX, 990, {
+  c('MAT-10-052', PROV_FERREMIX, 123, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-luz-blanca-3u',
+    nota: 'Bombillo de led luz blanca · artículo 10061 · marca Consuegra Superior. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-053', PROV_MAX, 990, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl270-50w',
     nota: 'BOMBILLO LED TASCHIBRA TKL270 50W · artículo 0001118090 · ref. Tecnologia: LED | Potencia 50 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-044', PROV_MAX, 1724.99, {
+  c('MAT-10-054', PROV_MAX, 1724.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-55w-116403',
     nota: 'BOMBILLO LED 55W 116403 · artículo 0001120262 · ref. Tecnologia: LED | Potencia 55 W · marca AKSI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-045', PROV_MAX, 505, {
+  c('MAT-10-055', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bom-fila-led-dim-st19-6w-c-amb-50k-light',
     nota: 'BOM FILA LED DIM ST19 6W C/AMB2200K LIGH · artículo 0001132231 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 2200 K | Base/formato ST19 | Regulable (dimmable) · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-045', PROV_MAX, 430, {
+  c('MAT-10-055', PROV_MAX, 430, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-fila-led-dim-a19-6w-c-ahu-50k-light',
     nota: 'BOMB FILA LED DIM A19 6W C/AHU 50K LIGHT · artículo 0001132229 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 5000 K | Base/formato A19 | Regulable (dimmable) · marca LIGHTNEST. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-045', PROV_MAX, 200, {
+  c('MAT-10-055', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-gu10-6w-3000k-dim-westin-38692',
     nota: 'BOMB LED GU10 6W 3000K DIM WESTIN 38692 · artículo 0001128565 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 3000 K | Base/formato GU10 | Regulable (dimmable) · marca WESTINGHOUSE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-045', PROV_MAX, 70, {
+  c('MAT-10-055', PROV_MAX, 70, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-g45-6w-6500k-e27-bl0060',
     nota: 'BOMBILLO LED G45 6W 6500K E27 BL0060 · artículo 0001122483 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 6500 K | Base/formato G45 · marca MEMCA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-045', PROV_MAX, 115, {
+  c('MAT-10-055', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bomb-led-par20-7w-65k-voltecht-t46182',
     nota: 'BOMB LED PAR20 6W 65K VOLTECHT T46182 · artículo 0001123806 · ref. Tecnologia: LED | Potencia 6 W | Temp. color 6500 K | Base/formato PAR20 · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-046', PROV_MAX, 105, {
+  c('MAT-10-055', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-6w-120v-de-led-luz-calida-tipo-bulbo',
+    nota: 'Bomillo 6w 120v de led luz calida tipo ulo volteck · artículo T46857 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-055', PROV_FERREMIX, 90, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-6w-bolb-6-blister-6400k',
+    nota: 'Bom led 6w ol-6 lister 6400k ez light · artículo 12682 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-055', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-con-filamento-luz-calida-6w',
+    nota: 'Bomillo 6w 120v de led luz calida con filamento volteck · artículo T46211 · ref. T46211 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-056', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschibra-tkl40-7w-6500w',
     nota: 'BOMBILLO LED TASCHIBRA TKL40 7W 6500W · artículo 0001118092 · ref. Tecnologia: LED | Potencia 7 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-047', PROV_MAX, 105, {
+  c('MAT-10-057', PROV_FERREMIX, 160, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-8w-120v-de-led-luz-blanca-calida-neutra',
+    nota: 'Bomillo 8w 120v de led luz lanca/calida/neutra volteck · artículo T49036 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-057', PROV_FERREMIX, 215, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-tipo-globo-10w',
+    nota: 'Bomillo 8w 120v de led luz lanca tipo gloo volteck · artículo T46195 · ref. T46195 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-057', PROV_FERREMIX, 225, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-con-3-niveles-iluminacion-9w',
+    nota: 'Bomillo 8w 120 de led luz lanca con 3 niveles de iluminacion volteck · artículo T48052 · ref. T48052 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-058', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/bombillo-led-taschi-tkl60-9w-6500k',
     nota: 'BOMBILLO LED TASCHI TKL60 9W 6500K · artículo 0001117178 · ref. Tecnologia: LED | Potencia 9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-048', PROV_MAX, 340.01, {
+  c('MAT-10-058', PROV_FERREMIX, 275, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-recargable',
+    nota: 'Bombillo led recargable · artículo 26512 · marca Yary. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-058', PROV_FERREMIX, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bombillo-led-luz-blanca-3u',
+    nota: 'Bombillo de led luz blanca · artículo 10070 · marca Consuegra Superior. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-059', PROV_MAX, 340.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-18w-65k-cuadrado-8-7',
     nota: 'PANEL LED EMPOT 18W 65K CUADRADO 8.7 · artículo 0001124062 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-049', PROV_MAX, 240, {
+  c('MAT-10-060', PROV_MAX, 240, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-emp-cuadra-3w-3000k-tasch',
     nota: 'PANEL LED EMP CUADRA 3W 3000K TASCH · artículo 0001132123 · ref. Tecnologia: LED | Potencia 3 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-050', PROV_MAX, 304.99, {
+  c('MAT-10-061', PROV_MAX, 304.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-12w-65k-redondo-6-7',
     nota: 'PANEL LED EMPOT 12W 65K REDONDO 6.7 · artículo 0001124064 · ref. Tecnologia: LED | Potencia 12 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-051', PROV_MAX, 290, {
+  c('MAT-10-062', PROV_MAX, 290, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-18w-65k-redondo-8',
     nota: 'PANEL LED EMPOT 18W 65K REDONDO 8 · artículo 0001124065 · ref. Tecnologia: LED | Potencia 18 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-052', PROV_MAX, 650, {
+  c('MAT-10-063', PROV_MAX, 650, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-led-empot-24w-65k-redondo-11-6',
     nota: 'PANEL LED EMPOT 24W 65K REDONDO 11.6 · artículo 0001124066 · ref. Tecnologia: LED | Potencia 24 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-053', PROV_MAX, 190, {
+  c('MAT-10-064', PROV_FERREMIX, 245, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lamparas-cuadradas-de-empotrar-de-led-ulta-delgada',
+    nota: 'Lámpara cuadrada de empotrar de led ulta delgada · artículo T48541 · ref. T48540 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-065', PROV_FERREMIX, 349, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lamparas-cuadradas-de-empotrar-de-led-ulta-delgada',
+    nota: 'Lámpara cuadrada de empotrar de led ulta delgada · artículo T48542 · ref. T48540 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-066', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lamparas-cuadradas-de-empotrar-de-led-ulta-delgada',
+    nota: 'Lámpara cuadrada de empotrar de led ulta delgada · artículo T48540 · ref. T48540 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_FERREMIX, 375, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
+    nota: 'luminario led empotrable redondo luz de dia · artículo T25088 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-067', PROV_FERREMIX, 219, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
+    nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48547 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-068', PROV_FERREMIX, 325, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
+    nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48548 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-069', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
+    nota: 'luminario led empotrable redondo luz de dia · artículo T25086 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-070', PROV_FERREMIX, 155, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-redonda-de-led-y-de-empotrar-ultra-delgado',
+    nota: 'Lámpara redonda de led y de empotrar ultra delgada · artículo T48546 · ref. T48546 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-071', PROV_FERREMIX, 219, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-empotrable-redondo-luz-de-dia',
+    nota: 'luminario led empotrable redondo luz de dia · artículo T25087 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-072', PROV_FERREMIX, 269, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
+    nota: 'Luminario led redondo de sobreponer · artículo T48257 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-073', PROV_FERREMIX, 345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
+    nota: 'Luminario led redondo de sobreponer · artículo T48258 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-074', PROV_FERREMIX, 519, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luminario-led-redondo-de-sobreponer',
+    nota: 'Luminario led redondo de sobreponer · artículo T48259 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-075', PROV_MAX, 190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-cuad-dirigib-negra-lightnest',
     nota: 'LAM EMP CUAD DIRIGIB NEGRA LIGHTNEST · artículo 0001132225 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-053', PROV_MAX, 255, {
+  c('MAT-10-075', PROV_MAX, 255, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-recto-voltech-46616',
     nota: 'LAMP EMP DIRIG RECTO VOLTECH 46616 · artículo 0001128325 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-054', PROV_MAX, 190, {
+  c('MAT-10-076', PROV_MAX, 190, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lam-emp-circ-dirigib-blanca-lightnest',
     nota: 'LAM EMP CIRC DIRIGIB BLANCA LIGHTNEST · artículo 0001132222 · ref. Tecnologia: Incandescente/halogeno · marca LIGHTNEST. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-054', PROV_MAX, 265, {
+  c('MAT-10-076', PROV_MAX, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-satin-voltech-46625',
     nota: 'LAMP EMP DIRIG CURVO SATIN VOLTECH 46625 · artículo 0001128328 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-054', PROV_MAX, 270, {
+  c('MAT-10-076', PROV_MAX, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-voltech-46623',
     nota: 'LAMP EMP DIRIG CURVO VOLTECH 46623 · artículo 0001128326 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-054', PROV_MAX, 240, {
+  c('MAT-10-076', PROV_MAX, 240, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emp-dirig-curvo-negro-voltech-46624',
     nota: 'LAMP EMP DIRIG CURVO NEGRO VOLTECH 46624 · artículo 0001128327 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-055', PROV_MAX, 1015, {
+  c('MAT-10-077', PROV_MAX, 1015, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/lamp-emerc-recarg-voltech-300lu-t43008',
     nota: 'LAMP EMERC RECARG VOLTECH 300LU T43008 · artículo 0001123803 · ref. Tecnologia: Incandescente/halogeno | Recargable · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-056', PROV_MAX, 735, {
+  c('MAT-10-078', PROV_MAX, 735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-10w-6500k-compac-philips',
     nota: 'REFLECTOR LED 10W 6500K COMPAC PHILIPS · artículo 0001124094 · ref. Tecnologia: LED | Potencia 10 W | Temp. color 6500 K · marca PHILIPS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-056', PROV_MAX, 475, {
+  c('MAT-10-078', PROV_MAX, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-10w-6500k',
     nota: 'REFLECTOR LED TASCHIBRA 10W 6500k · artículo 0001117187 · ref. Tecnologia: LED | Potencia 10 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-057', PROV_MAX, 1950, {
+  c('MAT-10-078', PROV_FERREMIX, 985, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-de-led-10-w-con-sensor-de-movimiento',
+    nota: 'Reflecto de led, 10 w con senso · artículo T48228 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-078', PROV_FERREMIX, 397.34, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-led',
+    nota: 'Reflector led · artículo 10901 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-079', PROV_MAX, 1950, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-3000k',
     nota: 'REFLECTOR LED TASCHIBRA 100W 3000K · artículo 0001124073 · ref. Tecnologia: LED | Potencia 100 W | Temp. color 3000 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-057', PROV_MAX, 1940, {
+  c('MAT-10-079', PROV_MAX, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-100w-6500k',
     nota: 'REFLECTOR LED TASCHIBRA 100W 6500k · artículo 0001117186 · ref. Tecnologia: LED | Potencia 100 W · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-058', PROV_MAX, 2335, {
+  c('MAT-10-080', PROV_FERREMIX, 462.51, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/reflector-led',
+    nota: 'Reflector led · artículo 10913 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-081', PROV_MAX, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-200w-65k-re0069',
     nota: 'REFLECTOR LED 200W 65K RE0069 · artículo 0001112537 · ref. Tecnologia: LED | Potencia 200 W | Temp. color 6500 K · marca MEMCA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-059', PROV_MAX, 455, {
+  c('MAT-10-082', PROV_MAX, 455, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-cfl-23w-r40-27k-satco-s7241',
     nota: 'REFLECTOR CFL 23W R40 27K SATCO S7241 · artículo 0001029191 · ref. Tecnologia: CFL/ahorrador | Potencia 23 W | Temp. color 2700 K | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-060', PROV_MAX, 880, {
+  c('MAT-10-083', PROV_MAX, 880, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-10-4998',
     nota: 'REFLECTOR SATCO 250W/R40/10 4998 · artículo 0001060191 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-060', PROV_MAX, 280, {
+  c('MAT-10-083', PROV_MAX, 280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-satco-250w-r40-1-4999',
     nota: 'REFLECTOR SATCO 250W/R40/1 4999 · artículo 0001060190 · ref. Tecnologia: Incandescente/halogeno | Potencia 250 W | Base/formato R40 · marca SATCO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-061', PROV_MAX, 1325, {
+  c('MAT-10-084', PROV_MAX, 1325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-rgb-30w-rg6219',
     nota: 'REFLECTOR LED RGB 30W RG6219 · artículo 0001129898 · ref. Tecnologia: LED | Potencia 30 W. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-061', PROV_MAX, 620, {
+  c('MAT-10-084', PROV_MAX, 620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-30w-6500k',
     nota: 'REFLECTOR LED TASCHIBRA 30W 6500k · artículo 0001118106 · ref. Tecnologia: LED | Potencia 30 W · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-062', PROV_MAX, 970, {
+  c('MAT-10-085', PROV_MAX, 970, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/reflector-led-taschibra-50w-3000k',
     nota: 'REFLECTOR LED TASCHIBRA 50W 3000K · artículo 0001124077 · ref. Tecnologia: LED | Potencia 50 W | Temp. color 3000 K · marca TASCHIBRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-063', PROV_MAX, 249.99, {
+  c('MAT-10-086', PROV_FERREMIX, 699, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
+    nota: 'Tubo de led para gabinete · artículo T47325 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-087', PROV_MAX, 249.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-16w-6500k',
     nota: 'TUBO LED TASCHIBRA 40 16W 6500K · artículo 0001118111 · ref. Tecnologia: LED | Potencia 16 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-064', PROV_MAX, 264.99, {
+  c('MAT-10-088', PROV_FERREMIX, 785, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
+    nota: 'Tubo de led para gabinete · artículo T47326 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-089', PROV_MAX, 264.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-40-20-5w-6500k',
     nota: 'TUBO LED TASCHIBRA 40 20.5W 6500K · artículo 0001118112 · ref. Tecnologia: LED | Potencia 20.5 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-065', PROV_MAX, 210, {
+  c('MAT-10-090', PROV_FERREMIX, 889, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
+    nota: 'Tubo de led para gabinete · artículo T47327 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-091', PROV_FERREMIX, 875, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-led-t8-36w',
+    nota: 'Tubo de led 8, 36w, 3800lm, 240 cm de largo.. · artículo T49310 · ref. 240 CM · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-092', PROV_FERREMIX, 505, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-de-led-para-gabinete',
+    nota: 'Tubo de led para gabinete · artículo T47324 · ref. 47324 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-093', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-led-vidrio-luz-blanca',
+    nota: 'Tubo led con pantalla de vidrio de luz blanca · artículo T28000 · ref. T28000 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-094', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tubo-led-taschibra-20-9-9w-6500k',
     nota: 'TUBO LED TASCHIBRA 20 9.9W 6500K · artículo 0001118110 · ref. Tecnologia: LED | Potencia 9.9 W | Temp. color 6500 K · marca TASCHIBRA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-066', PROV_MAX, 235, {
+  c('MAT-10-095', PROV_MAX, 235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fotocelda-105-285v-7673c-jccc-jl-205c',
     nota: 'FOTOCELDA 105-285V. 7673C-JCCC/JL-205C · artículo 0001001061 · ref. Tecnologia: Incandescente/halogeno · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-066', PROV_MAX, 370, {
+  c('MAT-10-095', PROV_MAX, 370, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-con-fotocelda-t46534',
     nota: 'ZOCALO CON FOTOCELDA T46534 · artículo 0001126253 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-066', PROV_MAX, 150, {
+  c('MAT-10-095', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/base-p-fotocelda-suburba-voltech-t47229',
     nota: 'BASE P/FOTOCELDA SUBURBA VOLTECH T47229 · artículo 0001122421 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-067', PROV_MAX, 115, {
+  c('MAT-10-096', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-plastica-tw',
+    nota: 'MASILLA JOINT COMPOUND W 5GL TROPICAL · artículo 1702 · ref. 5 GL · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 259, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tubo-3-4-x-10-1-0mm-emt',
+    nota: 'ROSETA PLASTICA TW · artículo 2358 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 35, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-t46500',
+    nota: 'Zocalo de baquelita sencillo en funda volteck · artículo T46500 · ref. T46500 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-plastico-reforzado-para-exterior',
+    nota: 'Zocalo reforado de pvc para interperie volteck.. · artículo T47110 · ref. T47110 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-plastico-para-lampara-de-tubo',
+    nota: 'Zocalo slim line volteck · artículo T46506 · ref. T46506 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 80, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-plastico-con-base-g13-bipin',
+    nota: 'Zocalo base g13 bipin volteck · artículo T46508 · ref. T46508 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-de-doble-entrada',
+    nota: 'Zocalo de baquelita de doble entrada volteck · artículo T46539 · ref. T46539 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita',
+    nota: 'Zocalo 2\'\' plastico volteck · artículo T46517 · ref. T46517 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-096', PROV_FERREMIX, 39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-baquelita-con-adaptador',
+    nota: 'Zocalo 1 5/8\'\' plastico con adaptador volteck · artículo T46525 · ref. T46525 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 135, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46527',
+    nota: 'Zocalo de porcelana base mogul e39 volteck · artículo T46527 · ref. T46527 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 29, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-para-candil',
+    nota: 'Zocalo de porcelana para candil volteck · artículo T46531 · ref. T46531 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 40, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46528',
+    nota: 'Zocalo de porcelana sencillo volteck · artículo T46528 · ref. T46528 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46529',
+    nota: 'Zocalo de porcelana soporte tipo escuadra volteck · artículo T46529 · ref. T46529 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 299, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/zocalo-de-porcelana-t46526',
+    nota: 'Roseta 4 1/2\'\' de pocelana con enchufe y cadena volteck · artículo T46526 · ref. T46526 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 125, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-de-porcelana',
+    nota: 'Roseta de pocelana 49875 leviton · artículo 1317 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-097', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/roseta-porcelana',
+    nota: 'SELLADOR DE RADIADOR FOQUITA 20GR · artículo 13337 · ref. 20 GR · marca Levente. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-098', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-plast-marfil-veto-43036',
     nota: 'ROSETA PLAST. MARFIL VETO 43036 · artículo 0001118638 · ref. Tecnologia: Incandescente/halogeno · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-067', PROV_MAX, 125, {
+  c('MAT-10-098', PROV_MAX, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/roseta-porcelana-leviton-9875',
     nota: 'ROSETA PORCELANA LEVITON 9875 · artículo 0001001043 · ref. Tecnologia: Incandescente/halogeno · marca LEVITON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 30, {
+  c('MAT-10-099', PROV_MAX, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelana-e12-voltech-46531',
     nota: 'ZOCALO PORCELANA E12 VOLTECH 46531 · artículo 0001128125 · ref. Tecnologia: Incandescente/halogeno | Base/formato E12 · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 560, {
+  c('MAT-10-099', PROV_MAX, 560, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-c-sensor-movimiento-t46274',
     nota: 'ZOCALO C/SENSOR MOVIMIENTO T46274 · artículo 0001126252 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 75, {
+  c('MAT-10-099', PROV_MAX, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-int-barra-volteck-t46501',
     nota: 'ZOCALO BAQUE C/INT BARRA VOLTECK T46501 · artículo 0001121347 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 70, {
+  c('MAT-10-099', PROV_MAX, 70, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-base-g13-bipin-volteck-t46508',
     nota: 'ZOCALO BASE G13 BIPIN VOLTECK T46508 · artículo 0001121346 · ref. Tecnologia: Incandescente/halogeno | Base/formato G13 · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 45.01, {
+  c('MAT-10-099', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-porcelan-cuadrado-volteck-t46522',
     nota: 'ZOCALO PORCELAN CUADRADO VOLTECK T46522 · artículo 0001121343 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 35, {
+  c('MAT-10-099', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-baque-c-adaptador-volteck-46525',
     nota: 'ZOCALO BAQUE C/ ADAPTADOR VOLTECK 46525 · artículo 0001121342 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-068', PROV_MAX, 55, {
+  c('MAT-10-099', PROV_MAX, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/zocalo-ref-d-pvc-p-interp-volteck-t47110',
     nota: 'ZOCALO REF D/PVC P/INTERP VOLTECK T47110 · artículo 0001121303 · ref. Tecnologia: Incandescente/halogeno · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-069', PROV_MAX, 465, {
+  c('MAT-10-100', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-ngr-61849',
     nota: 'TOMA/INTER VETO PLURA NGR 61849 · artículo 0001127216 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-069', PROV_MAX, 535, {
+  c('MAT-10-100', PROV_MAX, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-bco-60767',
     nota: 'TOMA/INTER VETO PLURA BCO 60767 · artículo 0001127215 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 565, {
+  c('MAT-10-101', PROV_FERREMIX, 115, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-negro',
+    nota: 'MATRACA DE 72 DIENTES PL511 · artículo T47892 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 58, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-1-5-modulo',
+    nota: 'Interruptor 3 vías acero inox de 1.5 módulo · artículo 50257082974512 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-acero-inox-de-1-modulo',
+    nota: 'CINCHOS TAIRRA PLASTICO DE 18 LBS TENSION · artículo T47823 · ref. 18 LBS · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-3-modulos-linea-lisboa',
+    nota: 'CINCHOS TAIRRA PLASTICO 40 LBS TENSION · artículo T47825 · ref. 40 LBS · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-blanco-de-1-modulo-linea-lisboa',
+    nota: 'CINCHO TAIRRA PLASTICO DE ALTA RESISTENCIA Y 120 LB DE TENSION · artículo T47943 · ref. 120 LB · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-marfil',
+    nota: 'LLAVIN PARA BANO · artículo T27229 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 135, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-con-placa-negro',
+    nota: 'Interruptor de 3 vas negro lnea talana volteck · artículo T47600 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-101', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-tipo-oslo',
+    nota: 'Interruptor sencllo blanco de 3 vas sn tapa oslo volteck · artículo T48321 · ref. T48321 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-102', PROV_MAX, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61900-3way',
     nota: 'INTER DOBLE VETO PLURA NGR 61900 3WAY · artículo 0001127228 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 420, {
+  c('MAT-10-102', PROV_MAX, 420, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-3way-veto-plura-ngr-61832',
     nota: 'INTERUPTOR 3WAY VETO PLURA NGR 61832 · artículo 0001127226 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 675, {
+  c('MAT-10-102', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-ngr-61856',
     nota: 'INTER TRIPLE 3WAY VETO PLURA NGR 61856 · artículo 0001127200 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 685, {
+  c('MAT-10-102', PROV_MAX, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-bco-60798',
     nota: 'INTER TRIPLE 3WAY VETO PLURA BCO 60798 · artículo 0001127199 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 395, {
+  c('MAT-10-102', PROV_MAX, 395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-3way-veto-premiun-bco-29146',
     nota: 'INTER DOBLE 3WAY VETO PREMIUN BCO 29146 · artículo 0001123894 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-070', PROV_MAX, 520, {
+  c('MAT-10-102', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-3way-doble-veto-plura-bco-60781',
     nota: 'INTER 3WAY DOBLE VETO PLURA BCO 60781 · artículo 0001117207 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-071', PROV_MAX, 544.99, {
+  c('MAT-10-103', PROV_MAX, 544.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-4way-veto-plura-bco-60804',
     nota: 'INTER 4WAY VETO PLURA BCO 60804 · artículo 0001127202 · ref. Conmutable 4 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-071', PROV_MAX, 390, {
+  c('MAT-10-103', PROV_MAX, 390, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-4way-veto-premiun-16146',
     nota: 'INTERUPTOR 4WAY VETO PREMIUN 16146 · artículo 0001123895 · ref. Conmutable 4 vias · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-072', PROV_MAX, 1265, {
+  c('MAT-10-104', PROV_MAX, 1265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimmer-rotat-300w-120v-btn-matix-am4406',
     nota: 'DIMMER ROTAT. 300W 120V BTN MATIX AM4406 · artículo 0001020785 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-072', PROV_MAX, 960, {
+  c('MAT-10-104', PROV_MAX, 960, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimer-veto-plura-ngr-61955',
     nota: 'DIMER VETO PLURA NGR 61955 · artículo 0001127184 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 205, {
+  c('MAT-10-105', PROV_MAX, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-doble-b-ancho-c-lp-plata-bco-36991',
     nota: 'INT DOBLE B/ANCHO C/LP PLATA BCO 36991 · artículo 0001127234 · ref. Color PLATA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 4320, {
+  c('MAT-10-105', PROV_MAX, 4320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-ngr-60996',
     nota: 'INTER DOBLE VETO PLURA SMART NGR 60996 · artículo 0001127186 · ref. Version smart (domotica) | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 4515, {
+  c('MAT-10-105', PROV_MAX, 4515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-bco-60989',
     nota: 'INTER DOBLE VETO PLURA SMART BCO 60989 · artículo 0001127185 · ref. Version smart (domotica) | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 460, {
+  c('MAT-10-105', PROV_MAX, 460, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-bco-60736',
     nota: 'INTER DOBLE VETO PLURA BCO 60736 · artículo 0001123893 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 165, {
+  c('MAT-10-105', PROV_MAX, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-crema-c-l-35130',
     nota: 'INTERR VETO DOBLE CREMA C/L 35130 · artículo 0001118626 · ref. Color CREMA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 150, {
+  c('MAT-10-105', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-doble-veto-blanco-90139',
     nota: 'INTERRUPTOR DOBLE VETO BLANCO 90139 · artículo 0001118617 · ref. Color BLANCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 145, {
+  c('MAT-10-105', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-bco-c-l-35123',
     nota: 'INTERR VETO DOBLE BCO C/L 35123 · artículo 0001118625 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-073', PROV_MAX, 475, {
+  c('MAT-10-105', PROV_MAX, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61818',
     nota: 'INTER DOBLE VETO PLURA NGR 61818 · artículo 0001127189 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-074', PROV_MAX, 470.01, {
+  c('MAT-10-105', PROV_FERREMIX, 190, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-blanco-1',
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47968 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-blanco-1',
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47967 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-34mm-blanco',
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47960 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 230, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-negro',
+    nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47901 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 225, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-bnegro',
+    nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47900 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 139, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro-1',
+    nota: 'MALETIN PORTAHERRAMIENTAS · artículo T47887 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 289, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-acero-inox-linea-espanola-volteck',
+    nota: 'TOPE DE PERNO DE BISAGRA PARA PUERTA · artículo T47848 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 340, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-acero-inox',
+    nota: 'PALOMETA CON GANCHO REFORZADA · artículo T47847 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-sin-tapa',
+    nota: 'BISAGRA DOBLE ACCION 3 · artículo T27109 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 120, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-oslo',
+    nota: 'BISAGRA DOBLE ACCION 3 · artículo T46493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-23mm-linea-espanola',
+    nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47045 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-sin-tapa-blanco-35mm-linea-espanola',
+    nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47049 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-70mm',
+    nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47990 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 165, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro',
+    nota: 'COMBO CERRADURAS LLAVE MARIPOSA · artículo T47597 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-crema-linea-estandar',
+    nota: 'CERROJO TIPO MARIPOSA · artículo T48492 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 239, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-creama-linea-italiana',
+    nota: 'CANDADO DE LATON PULIDO · artículo T48667 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-negro-linea',
+    nota: 'CERROJO LLAVE LLAVE · artículo T47596 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 205, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-crema-linea',
+    nota: 'CERROJO LLAVE LLAVE · artículo T48665 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 215, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-crema-linea-italiana',
+    nota: 'LLAVIN PARA ENTRADA · artículo T48668 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-con-tapa-ivory',
+    nota: 'Interruptor doble c/tapa vory ez* · artículo 8936 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 429, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-blanco-5243-i',
+    nota: 'Interruptor doble blanco 5243-w blanco levton · artículo 25983 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 416, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-crema-5243-i',
+    nota: 'Interruptor 3way doble crema 5243- levton · artículo 25984 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 365, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-blanco-5224-2w',
+    nota: 'interruptor doble blanco 5224 2w · artículo 25986 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 129, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-linea-standard',
+    nota: 'Interruptor doble crema sn tapa lnea estandar volteck · artículo T46002 · ref. T46002 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-105', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble',
+    nota: 'Interruptor doble blanco sn tapa lnea classc volteck · artículo T46006 · ref. T46006 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-68mm-blanco',
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47962 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 145, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-35mm-blanco',
+    nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47961 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 155, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco-1',
+    nota: 'PATA PARA SOFA Y MUEBLE · artículo T47955 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-timbre-blanco-sin-tapa',
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47946 · ref. ROLLO · marca Volteck. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 50, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-70mm',
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47942 · ref. ROLLO · marca Volteck. El comercio lista 9 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-1',
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47940 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 115, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro',
+    nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47891 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-lisboa-volteck',
+    nota: 'CAJA PARA HERRAMIENTAS PL501 · artículo T47888 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-23mm',
+    nota: 'PALOMETA · artículo T47876 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 48, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-1-modulo',
+    nota: 'Interruptor sencillo acero inox de 1 módulo · artículo 50257073209648 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-3-modulos-linea-lisboa',
+    nota: 'CINCHOS TAIRRA PLASTICO PARA 50 LBS TENSION · artículo T47822 · ref. 50 LBS · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil-linea-volteck',
+    nota: 'TOPE TIPO CODO · artículo T27228 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-contacto-duplex',
+    nota: 'PORTACANDADO · artículo T26633 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 125, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-y-de-3-vias',
+    nota: 'MIRILLA DE SEGURIDAD · artículo T26639 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 120, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro-linea-italiana',
+    nota: 'CANDADO DE ACERO 109MM · artículo T47599 · ref. 109 MM · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 79, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil',
+    nota: 'CANDADO ANTI CIZALLA 75MM · artículo T26642 · ref. 75 MM · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 105, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-duplex-con-placa',
+    nota: 'CANDO REDONDO GANCHO LARGO Y CORTO · artículo T25080 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-con-luz-piloto-crema-sin-tapa-linea-italiana',
+    nota: 'CANDADO DE HIERRO GANCHO CORTO · artículo T48056 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 40, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-para-lampara',
+    nota: 'BISAGRA DE PISO · artículo T48003 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 35, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa',
+    nota: 'CERRADURA DE ENTRADA · artículo T27108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 195, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-italina',
+    nota: 'CANDADO DE HIERRO DE ALTA SEGURIDAD · artículo T47598 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco',
+    nota: 'CERRADURA LATON MARIPOSA · artículo T46337 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 80, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-t25084',
+    nota: 'Interruptor sencllo de 3 vas blanco volteck basc · artículo T25084 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 275, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luz-de-led-para-pared-con-interruptor',
+    nota: '@interruptor sencillo con luz de led para pared · artículo T49970 · ref. T49970 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 30, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-superficie-a-granel',
+    nota: 'Interruptor sencllo crema de superfce a granel volteck · artículo T47042 · ref. T47042 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t48322',
+    nota: 'Interruptor sencllo blanco sn tapa oslo volteck · artículo T48322 · ref. T48322 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1451-icp',
+    nota: 'Interru.1451-cp sencllo levton · artículo 1313 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-1453-icp',
+    nota: 'interruptor sencillo crema 1453 icp · artículo 1316 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 109, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias',
+    nota: 'Interruptor sencllo de 3 vas sn tapa crema lnea estandar volteck · artículo T46003 · ref. T46003 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-106', PROV_FERREMIX, 90, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t46005',
+    nota: 'Interruptor sencllo blanco sn tapa lnea classc volteck · artículo T46005 · ref. T46005 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-triple-veto-premiun-bco-16054',
     nota: 'INTERUPTOR TRIPLE VETO PREMIUN BCO 16054 · artículo 0001123891 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-074', PROV_MAX, 4440, {
+  c('MAT-10-107', PROV_MAX, 4440, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-smart-ngr-62075',
     nota: 'INTER TRIPLE VETO PLURA SMART NGR 62075 · artículo 0001127198 · ref. Version smart (domotica) | Color NGR · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-074', PROV_MAX, 325, {
+  c('MAT-10-107', PROV_MAX, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-c-luz-veto-35147',
     nota: 'INTERRUPTOR TRIPLE BCO C/LUZ VETO 35147 · artículo 0001118622 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-074', PROV_MAX, 640, {
+  c('MAT-10-107', PROV_MAX, 640, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-ngr-61825',
     nota: 'INTER TRIPLE VETO PLURA NGR 61825 · artículo 0001127201 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-074', PROV_MAX, 425, {
+  c('MAT-10-107', PROV_MAX, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-m-st-ae2300eb',
     nota: 'INTERRUPTOR TRIPLE BCO M-ST AE2300EB · artículo 0001073673 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-075', PROV_MAX, 1795, {
+  c('MAT-10-107', PROV_FERREMIX, 180, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro',
+    nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47889 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro-linea-italiana',
+    nota: 'ESLINGA · artículo T47595 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 139, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco',
+    nota: 'ESLINGA · artículo T25083 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 215, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco-linea-classic',
+    nota: 'LENTES DE SEGURIDAD PT253 · artículo T46339 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 149, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-triple-con-placa',
+    nota: 'GANCHO ALDABA PARA PUERTA · artículo T26638 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple',
+    nota: 'Interruptor trple blanco sn tapa lnea classc volteck · artículo T46007 · ref. T46007 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-107', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-italiano',
+    nota: 'interruptor triple italiano · artículo T48137 · ref. T48137 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-108', PROV_MAX, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-c-usb-veto-16788-premium',
     nota: 'TOMACORRIENTE C/USB VETO 16788 PREMIUM · artículo 0001128655 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-075', PROV_MAX, 1085, {
+  c('MAT-10-108', PROV_MAX, 1085, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-usb-bco-veto-36465',
     nota: 'TOMACORRIENTE+USB BCO VETO 36465 · artículo 0001118657 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-076', PROV_MAX, 85, {
+  c('MAT-10-108', PROV_FERREMIX, 460, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-blanco',
+    nota: 'CODO HEMBRA DE BRONCE · artículo T47971 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-108', PROV_FERREMIX, 550, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-acero-inox-linea-lisboa-volteck',
+    nota: 'BARRA CAVADORA 1 8 · artículo T47851 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 239, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-triple-blanco',
+    nota: 'CERRADURA DE DOBLE CERROJO · artículo T47970 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro',
+    nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47902 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 269, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-acero-inox-linea-lisboa-volteck',
+    nota: 'RIEL DOBLE PALOMETA · artículo T47849 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 189, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro-linea-italiana',
+    nota: 'CINCHOS DE PLASTICO · artículo T47588 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 185, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-linea-estandar',
+    nota: 'CINCHOS DE PLASTICO · artículo T48493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 169, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-20amp-tierra-aislada-sin-tapa-linea-estandar',
+    nota: 'CINCHOS DE PLASTICO · artículo T48022 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 105, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-dorado-de-aluminio-15amp-linea-estandar',
+    nota: 'CINCHOS DE PLASTICO · artículo T48494 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 110, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-volteck',
+    nota: 'CINCHOS DE PLASTICO · artículo T25076 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 115, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-linea-espanola',
+    nota: 'Tomacorriente doble blanco linea española · artículo T47059 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interuptor-doble-tomacorriente-negro-linea-italiana',
+    nota: 'CANDADO DE LATON PULIDO GANCHO LARGO · artículo T47592 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 109, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-tapa',
+    nota: 'Tomacorriene doble crema 15amp linea esandar voleck · artículo T48488 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 79, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble',
+    nota: 'tomacorriente doble · artículo t46102 · ref. T46102 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 699, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-5262-ig',
+    nota: 'Tomacorr. doble naranja 5262-ig levion · artículo 10593 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-sin-tierra',
+    nota: 'Tomacorriene doble baquelia crema sin ierra de superficie voleck · artículo T46106 · ref. T46106 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 80, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra-en-blister',
+    nota: 'Tomacorriene doble baquelia crema de superficie en bliser voleck · artículo T46103 · ref. T46103 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 935, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-falla-a-tierra-llinea-classic',
+    nota: 'Tomacorriene doble blanco con falla a ierra sin apa linea classic voleck · artículo T46107 · ref. T46107 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-de-tres-hilos-a-granel',
+    nota: 'Tomacorriene doble crema sin apa a granel linea esandar voleck · artículo T48311 · ref. T48311 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 129, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-cara-de-chino-linea-standard',
+    nota: 'Tomacorriene doble 250 v / 60 hz, 15 a sin apa linea esandar voleck · artículo T46104 · ref. T46104 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 159, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-aterrizado-linea-italiana',
+    nota: 'tomacorriente doble aterrizado linea italiana · artículo T48110 · ref. T48110 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra',
+    nota: 'Tomacorriene doble baquelia crema de superficie a granel voleck · artículo T47041 · ref. T47041 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente',
+    nota: 'Tomacorriene doble 5320-icp levion · artículo 11581 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-109', PROV_FERREMIX, 34, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-pbe-6',
+    nota: 'Tomacorriene doble blanco pbe-6 · artículo 17884 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco-sin-tapa-34mm-1',
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47948 · ref. ROLLO · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tierra-sin-tapa-linea-italiana',
+    nota: 'ADAPTADOR 3 A 2 · artículo T47606 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-35mm-linea-espanola',
+    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47992 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-23mm-linea-espanola',
+    nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47991 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-con-tierra-sin-tapa-linea-italiana',
+    nota: 'BOMBA LADRONA AUTOCEBANTE · artículo T47605 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco',
+    nota: 'ABRAZADERA DE TUBO TIPO OMEGA · artículo T27107 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-de-superficie-sin-tierra-1',
+    nota: 'Tomacorriene sencillo crema sin ierra de superficie voleck · artículo T46108 · ref. T46108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 75, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-redondo-20a-linea-standard-1',
+    nota: 'Tomacorriene sencillo crema 20amp sin apa linea esandar voleck · artículo T46101 · ref. T46101 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-110', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-sin-tierra-linea-oslo',
+    nota: 'Tomacorriene sencillo blanco sin ierra sin apa oslo voleck · artículo T48318 · ref. T48318 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-negra-linea-italina',
+    nota: 'CLAVOS CORRIENTE · artículo T40139 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 79, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-color-madera-linea-italiana',
+    nota: 'Tapa ciega color madera linea ialiana voleck · artículo T46395 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 11, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca',
+    nota: 'Tapa ciega blc. pbc-d ez ligh · artículo 222769 · marca EZ Light. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 139, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-para-tapa-ciega',
+    nota: 'Placa ara caja fs, ciega afci-s voltech · artículo T46432 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 156, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-gris-84014-40',
+    nota: 'Tapa ciega gris 84014-40 levion · artículo 26000 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-111', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca-88014-leviton',
+    nota: 'Tapa ciega blanca 88014 levion · artículo 25992 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble-linea-lisboa-volteck',
+    nota: 'PALOMETA · artículo T47870 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-o-tomacorriente-doble',
+    nota: 'LIJA DE AGUA · artículo T40137 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 60, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble',
+    nota: 'LIJA DE AGUA · artículo T47998 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 40, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-marfil-para-interruptor-o-matacorriente-doble',
+    nota: 'LIJA DE AGUA · artículo T27231 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 85, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-doble-linea-italiana',
+    nota: 'ALAMBRE DE GOMA SJTW · artículo T46393 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 65, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-doble-linea-espanola',
+    nota: 'COUPLING EMT · artículo T47063 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 105, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-tomacorriente-de-exterior',
+    nota: 'Tapa gris para omacorriene doble de inerperie linea esandar voleck · artículo T46410 · ref. T46410 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-interruptores-y-tomacorrientes-1',
+    nota: 'Tapa naranja para omacorriene doble linea esandar voleck · artículo T46409 · ref. T46409 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 175, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-sencillo-y-2-contactos-aterrizados',
+    nota: 'Interruptor + tomacorrente doble blanco lnea española volteck · artículo T45594 · ref. T45594 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 249, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-armada-contacto-y-2-interruptores-linea-oslo-blanco-1',
+    nota: 'Interruptor doble + tomacorrente blanco oslo volteck · artículo T46488 · ref. T46488 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 149, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-3-vias',
+    nota: 'Interruptor sencllo + 1 de 3 vas blanco lnea española volteck · artículo T45602 · ref. T45602 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-2-interruptores-sencillos-y-contacto-aterrizado-de-1-modulo',
+    nota: 'Interruptor doble + tomacorrente blanco lnea española volteck · artículo T45597 · ref. T45597 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 185, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-y-1-tipo-escalera-de-1-modulo',
+    nota: 'Interruptor doble + 1 de 3 vas blanco lnea española volteck · artículo T45606 · ref. T45606 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 135, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-1-modulo',
+    nota: 'Interruptor doble blanco lnea española volteck · artículo T45596 · ref. T45596 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 130, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-1-5-modulos',
+    nota: 'Interruptor doble 35mm blanco lnea española volteck · artículo T45595 · ref. T45595 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 449, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-waterproof-4976-gy-leviton',
+    nota: 'tapa doble gris waterproof 4976 gy leviton · artículo 26001 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 160, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-con-2-interruptores-t46389-1',
+    nota: 'Interruptor doble dorado lnea economca volteck · artículo T46389 · ref. T46389 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-toma-corriente-80703-w',
+    nota: 'tapa doble blanca para toma corriente 80703 w · artículo 25996 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-para-toma-corriente-gris-84003-40',
+    nota: 'Tapa para oma corriene doble gris 84003-40 levion · artículo 25997 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 46, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-tomacorriente-88003',
+    nota: 'Tapa omacorr. doble blanco 88003 levion · artículo 25779 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 42, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-marfil-86003-leviton',
+    nota: 'Tapa doble ivory 86003 levion · artículo 25778 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 229, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-para-interruptores',
+    nota: 'Interruptor doble + 1 de 3 vas blanco oslo volteck · artículo T46497 · ref. T46497 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 255, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-y-tomacorriente-t46489',
+    nota: 'Interruptor + tomacorrente doble blanco oslo volteck · artículo T46489 · ref. T46489 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 1199, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-italiana',
+    nota: 'tapa con contacto doble falla a tierra linea italiana · artículo T46145 · ref. T46145 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 1169, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-oslo',
+    nota: 'Tomacorriene doble blanco falla a ierra oslo voleck · artículo T48310 · ref. T48310 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 180, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado-linea-oslo',
+    nota: 'Tomacorriene doble blanco oslo voleck · artículo T48309 · ref. T48309 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 115, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado',
+    nota: 'Tomacorriene doble blanco linea classic voleck · artículo T40016 · ref. T40016 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-112', PROV_FERREMIX, 15, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-2-x-4-metalica-doble',
+    nota: 'Tapa 2 x 4 mealica doble · artículo 14020 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-113', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-blanca-3m-bticino-matix-am503-3bn',
     nota: 'PLACA BLANCA 3M BTICINO MATIX AM503/3BN · artículo 0001020799 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-077', PROV_MAX, 1620, {
+  c('MAT-10-114', PROV_MAX, 1620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-class-7m-plata-mate-eikon-20657-13',
     nota: 'PLACA CLASS 7M PLATA MATE EIKON 20657.13 · artículo 0001033452 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-078', PROV_MAX, 9.99, {
+  c('MAT-10-115', PROV_MAX, 9.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-doble-abs-ivory-gen-u03z',
     nota: 'TAPA DOBLE ABS IVORY GEN U03Z · artículo 0001085119 · ref. Sin especificaciones parseables en el nombre · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-079', PROV_MAX, 295, {
+  c('MAT-10-116', PROV_FERREMIX, 52.59, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-de-acero-inoxidable',
+    nota: 'tapa de acero inoxidable · artículo T46421 · ref. T47190 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-116', PROV_FERREMIX, 49, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-blanca-de-interruptor-80701-w',
+    nota: 'Tapa de inerrupor sencillo blanca 80701-w levion · artículo 25994 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-116', PROV_FERREMIX, 45, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-crema-para-toma-corriente-220v-86004',
+    nota: 'tapa sencilla crema para toma corriente 220v 86004 · artículo 25989 · marca Leviton. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-117', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-plura-ngr-62051',
     nota: 'TAPA CIEGA VETO PLURA NGR 62051 · artículo 0001127207 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-079', PROV_MAX, 280, {
+  c('MAT-10-117', PROV_MAX, 280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-premiun-p-exterior-16672',
     nota: 'TAPA CIEGA VETO PREMIUN P/EXTERIOR 16672 · artículo 0001123886 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-079', PROV_MAX, 119.99, {
+  c('MAT-10-117', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-marfil-veto-35499',
     nota: 'TAPA CIEGA MARFIL VETO 35499 · artículo 0001118659 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-079', PROV_MAX, 115, {
+  c('MAT-10-117', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-blanca-veto-35482',
     nota: 'TAPA CIEGA BLANCA VETO 35482 · artículo 0001118639 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-080', PROV_MAX, 95, {
+  c('MAT-10-118', PROV_MAX, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorriente-redon-t46411',
     nota: 'TAPA PLAST P/TOMACORRIENTE REDON T46411 · artículo 0001126250 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-080', PROV_MAX, 100, {
+  c('MAT-10-118', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-t-c-dob-ext-volteck-t46410',
     nota: 'TAPA PLAST P/T C DOB EXT VOLTECK T46410 · artículo 0001121351 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-080', PROV_MAX, 25, {
+  c('MAT-10-118', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorr-dob-volteck-t46406',
     nota: 'TAPA PLAST P/TOMACORR DOB VOLTECK T46406 · artículo 0001121350 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 820.01, {
+  c('MAT-10-119', PROV_FERREMIX, 70, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-triple-modular',
+    nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47939 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 85, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-triple-linea-italiana-t46394',
+    nota: 'CAJA DE REGISTRO PLASTICA · artículo T46394 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 40, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-o-tomacorriente-triple',
+    nota: 'CLAVOS CORRIENTE · artículo T27224 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 520, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-metalica-triple-de-1-ventana-de-exterior',
+    nota: '@tapa metalica de 1 ventana para interperie linea · artículo T46428 · ref. T46428 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 105, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-triple-de-2-ventanas-linea-espanola',
+    nota: 'Tapa triple de 2 ventanas para interruptores · artículo T47065 · ref. T47065 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-de-1-modulo',
+    nota: 'Interruptor trple blanco lnea española volteck · artículo T45599 · ref. T45599 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-tipo-escalera-de-1-5-modulos',
+    nota: 'Interruptor de 3 vas blanco lnea española volteck · artículo T45600 · ref. T45600 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 239, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-linea-italiana',
+    nota: 'tapa con contacto triple aterrizados linea italiana · artículo T48669 · ref. T48669 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-119', PROV_FERREMIX, 199, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-de-1-modulo-linea-espanola',
+    nota: 'Tomacorriene riple blanco linea española voleck · artículo T45598 · ref. T45598 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-120', PROV_MAX, 820.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-c-usb-972-30405',
     nota: 'ADAPTADOR C/USB 972-30405 · artículo 0001125918 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 1360, {
+  c('MAT-10-120', PROV_MAX, 1360, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protec-4sl-c-usb-stanley-33202',
     nota: 'ADAPTADOR PROTEC 4SL C/USB STANLEY 33202 · artículo 0001094737 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 75, {
+  c('MAT-10-120', PROV_MAX, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-eu-usa-vimar-1351',
     nota: 'ADAPTADOR EU/USA VIMAR 1351 · artículo 0001014816 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 45.01, {
+  c('MAT-10-120', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-enchufe-usa-a-eu-voltech-46246',
     nota: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246 · artículo 0001128664 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 285.01, {
+  c('MAT-10-120', PROV_MAX, 285.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-d-6-salida-12cm-972-30346',
     nota: 'ADAPTADOR D/6 SALIDA 12CM 972-30346 · artículo 0001125928 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-081', PROV_MAX, 150, {
+  c('MAT-10-120', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-giratorio-c-3-972-30357',
     nota: 'ADAPTADOR GIRATORIO C/3 972-30357 · artículo 0001125925 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 465, {
+  c('MAT-10-121', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-macho-europ-50amp-43210',
     nota: 'ENCHUFE MACHO EUROP. 50AMP 43210 · artículo 0001118607 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 125, {
+  c('MAT-10-121', PROV_MAX, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-amarillo-t-leviton-15a-pbp317',
     nota: 'ENCHUFE AMARILLO T/LEVITON 15A PBP317H · artículo 0001127423 · ref. Sin especificaciones parseables en el nombre. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 55, {
+  c('MAT-10-121', PROV_MAX, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plast-aterr-clp-a-voltech-t46205',
     nota: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205 · artículo 0001121354 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 50, {
+  c('MAT-10-121', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plano-set-2pzs-t46209',
     nota: 'ENCHUFE PLANO SET 2PZS T46209 · artículo 0001126251 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 60, {
+  c('MAT-10-121', PROV_MAX, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-blind-aterrizado-voltech-t46202',
     nota: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202 · artículo 0001121357 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-082', PROV_MAX, 290, {
+  c('MAT-10-121', PROV_MAX, 290, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-leviton-15a-110v-cuerpo-m-515pa',
     nota: 'ENCHUFE LEVITON 15A 110V CUERPO M. 515PA · artículo 0001006690 · ref. Sin especificaciones parseables en el nombre · marca LEVITON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-083', PROV_MAX, 485, {
+  c('MAT-10-122', PROV_MAX, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp115-1p-15a-fino',
     nota: 'BREAKER GE THQP115 1P 15A (FINO) · artículo 0001001074 · ref. Polos 1P | Capacidad 15 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-084', PROV_MAX, 500, {
+  c('MAT-10-123', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp120-1p-20a-fino',
     nota: 'BREAKER GE THQP120 1P 20A (FINO) · artículo 0001001075 · ref. Polos 1P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-085', PROV_MAX, 470.01, {
+  c('MAT-10-124', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1130-1p-30a',
     nota: 'BREAKER GE THQL1130 1P 30A · artículo 0001000808 · ref. Polos 1P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-086', PROV_MAX, 505, {
+  c('MAT-10-125', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp130-1p-30a-fino',
     nota: 'BREAKER GE THQP130 1P 30A (FINO) · artículo 0001001076 · ref. Polos 1P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-087', PROV_MAX, 815, {
+  c('MAT-10-126', PROV_FERREMIX, 170, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/breaker-termomagnetico-1-polo-40amp',
+    nota: 'BREAKER TERMOMAGNETICO 1 POLO 40AMP · artículo T47509 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-127', PROV_MAX, 815, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1160-1p-60a',
     nota: 'BREAKER GE THQL1160 1P 60A · artículo 0001000816 · ref. Polos 1P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-088', PROV_MAX, 1134.99, {
+  c('MAT-10-128', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2120-2p-20a',
     nota: 'BREAKER GE THQL2120 2P 20A · artículo 0001000818 · ref. Polos 2P | Capacidad 20 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-089', PROV_MAX, 1195, {
+  c('MAT-10-129', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp220-2p-20a',
     nota: 'BREAKER GE THQP220 2P 20A · artículo 0001000803 · ref. Polos 2P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-090', PROV_MAX, 1134.99, {
+  c('MAT-10-130', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2130-2p-30a',
     nota: 'BREAKER GE THQL2130 2P 30A · artículo 0001000826 · ref. Polos 2P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-091', PROV_MAX, 1165, {
+  c('MAT-10-131', PROV_MAX, 1165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp230-2p-30a',
     nota: 'BREAKER GE THQP230 2P 30A · artículo 0001000804 · ref. Polos 2P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-092', PROV_MAX, 1134.99, {
+  c('MAT-10-132', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2140-2p-40a',
     nota: 'BREAKER GE THQL2140 2P 40A · artículo 0001000827 · ref. Polos 2P | Capacidad 40 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-093', PROV_MAX, 1189.99, {
+  c('MAT-10-133', PROV_MAX, 1189.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2160-2p-60a',
     nota: 'BREAKER GE THQL2160 2P 60A · artículo 0001000835 · ref. Polos 2P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-094', PROV_MAX, 4755, {
+  c('MAT-10-134', PROV_MAX, 4755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-8-16-circ-tlm812fcud',
     nota: 'PANEL BREAKER GE 8-16 CIRC. TLM812FCUD · artículo 0001000355 · ref. Sin especificaciones parseables en el nombre · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-095', PROV_MAX, 566, {
+  c('MAT-10-135', PROV_MAX, 566, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
     nota: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA · artículo 0001128966 · ref. Sin especificaciones parseables en el nombre · marca IBER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-096', PROV_MAX, 6160, {
+  c('MAT-10-136', PROV_MAX, 6160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-14a24-125amp-tlm1212ccu',
     nota: 'PANEL BREAKER GE 14A24 125AMP TLM1212CCU · artículo 0001025983 · ref. Capacidad 125 A · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-097', PROV_MAX, 815, {
+  c('MAT-10-137', PROV_MAX, 815, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-25amp-220v-25001',
     nota: 'CAJA BREAKER VETO 25AMP 220V 25001 · artículo 0001127231 · ref. Capacidad 25 A | Tension 220 V · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-098', PROV_MAX, 700, {
+  c('MAT-10-138', PROV_MAX, 700, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-32amp-32016',
     nota: 'CAJA BREAKER VETO 32AMP 32016 · artículo 0001118600 · ref. Capacidad 32 A · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-099', PROV_MAX, 675, {
+  c('MAT-10-139', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-30-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 30 AMP EUROSOL · artículo 0001119382 · ref. Polos 2P | Capacidad 30 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-100', PROV_MAX, 1805, {
+  c('MAT-10-140', PROV_MAX, 1805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-60-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 60 AMP EUROSOL · artículo 0001119383 · ref. Polos 2P | Capacidad 60 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-101', PROV_MAX, 50, {
+  c('MAT-10-141', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fisible-30a-voltech-t47278',
     nota: 'FISIBLE 30A VOLTECH T47278 · artículo 0001123801 · ref. Capacidad 30 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-102', PROV_MAX, 140, {
+  c('MAT-10-142', PROV_MAX, 140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fusible-volteck-reforzado-60a-fus-60r',
     nota: 'FUSIBLE VOLTECK REFOR 60A FUS-60R 47279 · artículo 0001110195 · ref. Capacidad 60 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-103', PROV_MAX, 745, {
+  c('MAT-10-143', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protector-c-2-salida-usb-ggwp2',
     nota: 'ADAPTADOR PROTECTOR C/2 SALIDA USB GGWP2 · artículo 0001126547 · ref. Sin especificaciones parseables en el nombre · marca GABBA GOODS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-103', PROV_MAX, 1025, {
+  c('MAT-10-143', PROV_MAX, 1025, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-volt-lavad-micro-pted-1t515',
     nota: 'PROTECTOR VOLT LAVAD/MICRO PTED-1T515 · artículo 0001089578 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-103', PROV_MAX, 875.01, {
+  c('MAT-10-143', PROV_MAX, 875.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-audio-video-avtek-pte-1t515ir',
     nota: 'PROTECTOR AUDIO-VIDEO AVTEK PTE-1T515IR · artículo 0001000319 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-103', PROV_MAX, 1610, {
+  c('MAT-10-143', PROV_MAX, 1610, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-avtek-1875w-p-16',
     nota: 'PROTECTOR AVTEK 1875W P-16 · artículo 0001126795 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-104', PROV_MAX, 1395, {
+  c('MAT-10-144', PROV_MAX, 1395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regulador-volta-avtek-rspc-1200-8t508',
     nota: 'REGULADOR VOLTA AVTEK RSPC-1200-8T508 · artículo 0001084638 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-105', PROV_MAX, 725, {
+  c('MAT-10-145', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-1-2-x10',
     nota: 'TUBERIA METALICA EMT 1-1/2\'\'X10\' · artículo 0001006500 · ref. Medida 1-1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-106', PROV_MAX, 375, {
+  c('MAT-10-146', PROV_MAX, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-x10',
     nota: 'TUBERIA METALICA EMT 1\'\'X10\' · artículo 0001003254 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-107', PROV_MAX, 310, {
+  c('MAT-10-147', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-3-4-x10',
     nota: 'TUBERIA METALICA EMT 3/4\'\'X10\' · artículo 0001003253 · ref. Medida 3/4" | Largo 4 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-108', PROV_MAX, 25, {
+  c('MAT-10-148', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-1-2',
     nota: 'TUBERIA BX 1/2\'\' · artículo 0001000900 · ref. Medida 1/2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-109', PROV_MAX, 35, {
+  c('MAT-10-149', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-3-4',
     nota: 'TUBERIA BX 3/4\'\' · artículo 0001000901 · ref. Medida 3/4" | Largo 4 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-110', PROV_MAX, 45.01, {
+  c('MAT-10-150', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4-s-metal-alaflex',
     nota: 'TUBERIA LIQUID TIGHT 3/4 S/METAL ALAFLEX · artículo 0001009754 · ref. Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-110', PROV_MAX, 110, {
+  c('MAT-10-150', PROV_MAX, 110, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4',
     nota: 'TUBERIA LIQUID TIGHT 3/4\'\' · artículo 0001003244 · ref. Medida 3/4" | Largo 4 pies | Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-111', PROV_MAX, 115, {
+  c('MAT-10-151', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-2-kopos-lv-11x10',
     nota: 'CANALETA PVC BCO 1/2 KOPOS LV 11X10 · artículo 0001077974 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-112', PROV_MAX, 119.99, {
+  c('MAT-10-152', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-5-8-kopos-lh-15x10',
     nota: 'CANALETA PVC BCO 5/8 KOPOS LH 15X10 · artículo 0001077973 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-113', PROV_MAX, 135, {
+  c('MAT-10-153', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-ova-5-8-kopos-lzk-15x12',
     nota: 'CANALETA PVC OVA 5/8 KOPOS LZK 15X12 · artículo 0001077964 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-114', PROV_MAX, 150, {
+  c('MAT-10-154', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-kopos-3-4-lhd-20x10',
     nota: 'CANALETA PVC BCO KOPOS 3/4 LHD 20X10 · artículo 0001094771 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-115', PROV_MAX, 200, {
+  c('MAT-10-155', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-kopos-lhd-25x15-p2',
     nota: 'CANALETA PVC BCO 1 KOPOS LHD 25X15 P2 · artículo 0001094772 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-116', PROV_MAX, 215, {
+  c('MAT-10-156', PROV_MAX, 215, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-plastica-lhd-32x15-p2',
     nota: 'CANALETA PLASTICA LHD 32X15 P2 · artículo 0001132760 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-117', PROV_MAX, 320, {
+  c('MAT-10-157', PROV_MAX, 320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lv-40x15-p2',
     nota: 'CANALETA PALSTICA LV 40X15 P2 · artículo 0001132761 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-118', PROV_MAX, 550, {
+  c('MAT-10-158', PROV_MAX, 550, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lh-60x40-p2',
     nota: 'CANALETA PALSTICA LH 60X40 P2 2PUL · artículo 0001132762 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-119', PROV_MAX, 745, {
+  c('MAT-10-159', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-3-kopos-ekd-80x40-hd',
     nota: 'CANALETA PVC BCO 3 KOPOS EKD 80X40 HD · artículo 0001077965 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-120', PROV_MAX, 115, {
+  c('MAT-10-160', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-octagonal-usa-1-2',
     nota: 'CAJA METAL OCTAGONAL USA UL 1/2*** · artículo 0001006917 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_MAX, 41, {
+  c('MAT-10-161', PROV_MAX, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-3-4-tp596',
     nota: 'CAJA METAL 2X4 USA 3/4 TP596 · artículo 0001000131 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-121', PROV_MAX, 40, {
+  c('MAT-10-161', PROV_MAX, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-1-2-tp594',
     nota: 'CAJA METAL 2X4 USA 1/2 TP594 · artículo 0001000132 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-122', PROV_MAX, 45.01, {
+  c('MAT-10-162', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-plast-p-empot-bticino-2x4-533-503ms',
     nota: 'CAJA PLAST P/EMPOT BTICINO 2X4 533/503MS · artículo 0001004734 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-123', PROV_MAX, 4, {
+  c('MAT-10-163', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2',
     nota: 'ABRAZADERA EMT 1/2 · artículo 0001000331 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-124', PROV_MAX, 5, {
+  c('MAT-10-164', PROV_MAX, 5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2-2-h',
     nota: 'ABRAZADERA EMT 1/2\'\' 2-H · artículo 0001007003 · ref. Medida 1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-125', PROV_MAX, 7, {
+  c('MAT-10-165', PROV_MAX, 7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1',
     nota: 'ABRAZADERA EMT 1\'\' · artículo 0001007092 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-126', PROV_MAX, 35, {
+  c('MAT-10-166', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-2',
     nota: 'ABRAZADERA UNISTRUST 2\'\' · artículo 0001013969 · ref. Medida 2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-127', PROV_MAX, 4, {
+  c('MAT-10-167', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-3-4',
     nota: 'ABRAZADERA EMT 3/4 · artículo 0001004282 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-128', PROV_MAX, 64.99, {
+  c('MAT-10-168', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-3',
     nota: 'ABRAZADERA UNISTRUST 3\'\' · artículo 0001013970 · ref. Medida 3" | Largo 3 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-129', PROV_MC, 38.64, {
+  c('MAT-10-169', PROV_MC, 38.64, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1 1/2 · artículo 735748 · ref. 1 1/2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-130', PROV_MC, 7.62, {
+  c('MAT-10-170', PROV_MC, 7.62, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1/2 · artículo 758510 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-131', PROV_MC, 15.16, {
+  c('MAT-10-171', PROV_MC, 15.16, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 1 · artículo 849332 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-132', PROV_MC, 55.83, {
+  c('MAT-10-172', PROV_MC, 55.83, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 2 · artículo 782070 · ref. 2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-133', PROV_MC, 9.13, {
+  c('MAT-10-173', PROV_MC, 9.13, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 3/4 · artículo 6003002 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-134', PROV_MC, 165.6, {
+  c('MAT-10-174', PROV_MC, 165.6, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 3 · artículo 123290 · ref. 3". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-135', PROV_MC, 311.19, {
+  c('MAT-10-175', PROV_MC, 311.19, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'CODO CONDUIT PVC 4 · artículo 123422 · ref. 4". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-136', PROV_MAX, 150, {
+  c('MAT-10-176', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-250-10-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-250 10\'\'X 4.6MM · artículo 0001000201 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_MAX, 2.86, {
+  c('MAT-10-177', PROV_MAX, 2.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-12-x4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 12\'\'X4.6MM NEGRA · artículo 0001018041 · ref. Sin especificaciones parseables en el nombre · marca TOPAZ. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-137', PROV_MAX, 1.99, {
+  c('MAT-10-177', PROV_MAX, 1.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-310-12-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-310 12\'\'X 4.6MM · artículo 0001000200 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_MAX, 105, {
+  c('MAT-10-178', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-8-x-4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 8\'\'X 4.6MM NEGRA · artículo 0001018040 · ref. Sin especificaciones parseables en el nombre · marca CHINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-138', PROV_MAX, 85, {
+  c('MAT-10-178', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-200k-8-x4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-200K 8\'\'X4.6MM · artículo 0001007280 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-139', PROV_MAX, 1125, {
+  c('MAT-10-179', PROV_MAX, 1125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-15mts-t17751',
     nota: 'CINTA P/ELECTRICISTA 15MTS T17751 · artículo 0001123475 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 1140, {
+  c('MAT-10-180', PROV_MAX, 1140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-goma-3m-scotch-no-23',
     nota: 'TAPE GOMA 3M SCOTCH NO.23 · artículo 0001000086 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 2115, {
+  c('MAT-10-180', PROV_MAX, 2115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-electrico-scotch-3m-no-27',
     nota: 'TAPE ELECTRICO SCOTCH 3M NO.27 · artículo 0001000089 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 435, {
+  c('MAT-10-180', PROV_MAX, 435, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-vinyl-3m-super-33t',
     nota: 'TAPE VINYL 3M SUPER 33T · artículo 0001000085 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-140', PROV_MAX, 135, {
+  c('MAT-10-180', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-3m-temflex-1711-grd-negro',
     nota: 'TAPE 3M TEMFLEX 1711 GRD NEGRO · artículo 0001004851 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-141', PROV_MAX, 1730, {
+  c('MAT-10-181', PROV_MAX, 1730, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-30mts-t17752',
     nota: 'CINTA P/ELECTRICISTA 30MTS T17752 · artículo 0001123476 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-142', PROV_MC, 9.66, {
+  c('MAT-10-182', PROV_FERREMIX, 325, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-para-soldar',
+    nota: 'Alambre para soldar · artículo 25813 · marca 168.64. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-183', PROV_FERREMIX, 10.9, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-estandar-600v',
+    nota: 'ALAMBRE DUPLEX AWG 300V · artículo 2261 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-184', PROV_MC, 9.66, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #14 BLANCO · artículo 61009003 · ref. AWG#14 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-143', PROV_MC, 126, {
+  c('MAT-10-184', PROV_FERREMIX, 7.39, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-estandar-600v',
+    nota: 'ALAMBRE DUPLEX AWG 300V · artículo 2260 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-185', PROV_MC, 126, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #2 NEGRO · artículo 5002006 · ref. AWG#2 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-144', PROV_MC, 259, {
+  c('MAT-10-185', PROV_FERREMIX, 349, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-para-soldar',
+    nota: 'Alambre para soldar · artículo 12764 · marca 168.64. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-186', PROV_MC, 259, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 2/0 NEGRO · artículo 42141 · ref. AWG2/0 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-145', PROV_MC, 328, {
+  c('MAT-10-187', PROV_MC, 328, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 3/0 NEGRO · artículo 301320 · ref. 3/0 AWG PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-146', PROV_MC, 84.36, {
+  c('MAT-10-188', PROV_MC, 84.36, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #4 NEGRO · artículo 6109002 · ref. AWG#4 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-147', PROV_MC, 392, {
+  c('MAT-10-188', PROV_FERREMIX, 105, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-para-soldar',
+    nota: 'Alambre para soldar · artículo 25811 · marca 168.64. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-189', PROV_MC, 392, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) 4/0 NEGRO · artículo 65983 · ref. 4/0 AWG PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-148', PROV_MC, 52.68, {
+  c('MAT-10-190', PROV_MC, 52.68, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE THHN (AWG) #6 BLANCO · artículo 97780 · ref. AWG#6 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-149', PROV_MC, 21.02, {
+  c('MAT-10-190', PROV_FERREMIX, 80, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-para-soldar',
+    nota: 'Alambre para soldar · artículo 27799 · marca 168.64. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-191', PROV_FERREMIX, 29.15, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/alambre-estandar-600v',
+    nota: 'ALAMBRE DUPLEX AWG 300V · artículo 2263 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-192', PROV_MC, 21.02, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/2 · artículo 6101001 · ref. 1.5/MM/2 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-150', PROV_MC, 29.27, {
+  c('MAT-10-193', PROV_MC, 29.27, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/3 · artículo 6101002 · ref. 1.5 MM/3 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-151', PROV_MC, 37.13, {
+  c('MAT-10-194', PROV_MC, 37.13, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 1.5MM/4 · artículo 158619 · ref. 1.5MM/4 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-152', PROV_MC, 36.44, {
+  c('MAT-10-195', PROV_MC, 36.44, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA (AWG) 12/2 · artículo 96654 · ref. AWG 12/2 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-153', PROV_MC, 53.38, {
+  c('MAT-10-196', PROV_MC, 53.38, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA AWG 12/3 · artículo 96478 · ref. AWG 12/3 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-154', PROV_MC, 46.68, {
+  c('MAT-10-197', PROV_MC, 46.68, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA AWG 14/4 · artículo 321487 · ref. AWG 14/4 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-155', PROV_MC, 29.08, {
+  c('MAT-10-198', PROV_MC, 29.08, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 2.5MM/2 · artículo 191784 · ref. 2.5MM/2 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-156', PROV_MC, 43.61, {
+  c('MAT-10-199', PROV_MC, 43.61, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA 2.5MM/3 · artículo 74216 · ref. 2.5MM/3 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-157', PROV_MC, 267, {
+  c('MAT-10-200', PROV_MC, 267, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     nota: 'ALAMBRE DE GOMA (AWG) 6/4 · artículo 6101013 · ref. AWG 6/4 PIES · marca PHELPS DODGE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-158', PROV_MAX, 180, {
+  c('MAT-10-201', PROV_MAX, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48006-10-blc-ed-3b-t48006',
     nota: 'EXTEN VOLTECK 48006 10\' BLC ED-3B T48006 · artículo 0001110184 · ref. Longitud 10 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-159', PROV_MAX, 2335, {
+  c('MAT-10-202', PROV_MAX, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensi-elect-mamey-cent-100-16-exor100',
     nota: 'EXTENSI ELECT MAMEY CENT 100\'-16 EXOR100 · artículo 0001120526 · ref. Longitud 100 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-159', PROV_MAX, 1940, {
+  c('MAT-10-202', PROV_MAX, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-100-naranja-er-30x16',
     nota: 'EXTENSION VOLTECK 100\' NARANJA ER-30X16 · artículo 0001110193 · ref. Longitud 100 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-159', PROV_MAX, 1355.01, {
+  c('MAT-10-202', PROV_MAX, 1355.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-electrica-naranja-100',
     nota: 'EXTENSION ELECTRICA NARANJA 100\' · artículo 0001108212 · ref. Longitud 100 pies. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-160', PROV_MAX, 359.99, {
+  c('MAT-10-203', PROV_MAX, 359.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-12-16awg-2c-972-90110924',
     nota: 'EXTENSIONES 12 16AWG/2C 972-90110924 · artículo 0001125878 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-160', PROV_MAX, 210, {
+  c('MAT-10-203', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-12-centurion-exw12',
     nota: 'EXTENSION ELECT 12\' CENTURION EXW12 · artículo 0001040209 · ref. Longitud 12 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-161', PROV_MAX, 225, {
+  c('MAT-10-204', PROV_MAX, 225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48012-13-blc-ed-4b-t48012',
     nota: 'EXTEN VOLTECK 48012 13\' BLC ED-4B T48012 · artículo 0001110185 · ref. Longitud 13 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_MAX, 300, {
+  c('MAT-10-205', PROV_MAX, 300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-centurion-exw15',
     nota: 'EXTENSION ELECT 15\' CENTURION EXW15 · artículo 0001040210 · ref. Longitud 15 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_MAX, 894.99, {
+  c('MAT-10-205', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-amarilla-st-33157',
     nota: 'EXTENSION ELECT. 15\' AMARILLA ST 33157 · artículo 0001118244 · ref. Longitud 15 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-162', PROV_MAX, 505, {
+  c('MAT-10-205', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-15-16awg-2c-972-90110927',
     nota: 'EXTENSIONES 15 16AWG/2C 972-90110927 · artículo 0001125879 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-163', PROV_MAX, 270, {
+  c('MAT-10-206', PROV_MAX, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48018-16-blc-ed-5b-t48018',
     nota: 'EXTEN VOLTECK 48018 16\' BLC ED-5B T48018 · artículo 0001110186 · ref. Longitud 16 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-164', PROV_MAX, 1700, {
+  c('MAT-10-207', PROV_MAX, 1700, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-25-amarilla-st-33257',
     nota: 'EXTENSION ELECT. 25\' AMARILLA ST 33257 · artículo 0001118245 · ref. Longitud 25 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-165', PROV_MAX, 520, {
+  c('MAT-10-208', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48030-26-blc-ed-8b-t48030',
     nota: 'EXTEN VOLTECK 48030 26\' BLC ED-8B T48030 · artículo 0001110188 · ref. Longitud 26 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_MAX, 2989.99, {
+  c('MAT-10-209', PROV_MAX, 2989.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-50-amarilla-st-33507',
     nota: 'EXTENSION ELECT. 50\' AMARILLA ST 33507 · artículo 0001118246 · ref. Longitud 50 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_MAX, 1695, {
+  c('MAT-10-209', PROV_MAX, 1695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-3t-cent-awg14-50',
     nota: 'EXTENSION ELECT. 3T. CENT AWG14-50\' · artículo 0001120523 · ref. Longitud 50 pies | Calibre AWG 14 · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_MAX, 725, {
+  c('MAT-10-209', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elec-50-naranja-gen-ec-4-50ft',
     nota: 'EXTENSION ELEC 50\' NARANJA GEN EC-4-50FT · artículo 0001085105 · ref. Longitud 50 pies · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-166', PROV_MAX, 965, {
+  c('MAT-10-209', PROV_MAX, 965, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-50-naranja-er-15x16',
     nota: 'EXTENSION VOLTECK 50\' NARANJA ER-15X16 · artículo 0001110192 · ref. Longitud 50 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-167', PROV_MAX, 310, {
+  c('MAT-10-210', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-6ft-3sal-blca-31061-2-34061',
     nota: 'EXTENSION 6FT 3SAL BLCA 31061 · artículo 0001094694 · ref. Longitud 6 pies | 3 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-168', PROV_MAX, 145, {
+  c('MAT-10-211', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48000-7-blc-ed-2b-t48000',
     nota: 'EXTEN VOLTECK 48000 7\' BLC ED-2B T48000 · artículo 0001110182 · ref. Longitud 7 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-169', PROV_MAX, 737.5, {
+  c('MAT-10-212', PROV_MAX, 737.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-3ft-6sal-15a-stanley-blca-30006',
     nota: 'REGLETA 3FT 6SAL 15A STANLEY BLCA 30006 · artículo 0001118126 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-169', PROV_MAX, 1330, {
+  c('MAT-10-212', PROV_MAX, 1330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-2un-bla-stanley-33211',
     nota: 'REGLETA 6 SALIDAS 2UN BLA STANLEY 33211 · artículo 0001116443 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-169', PROV_MAX, 654.99, {
+  c('MAT-10-212', PROV_MAX, 654.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-ngr-3-125v-15a-30007',
     nota: 'REGLETA 6 SALIDAS NGR 3\'125V 15A 30007 · artículo 0001118238 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-170', PROV_MAX, 725, {
+  c('MAT-10-213', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-sali-suge-max-bl-245w-33213',
     nota: 'REGLETA 6 SALI SUGE MAX BL 245W 33213 · artículo 0001118240 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-171', PROV_MAX, 1195, {
+  c('MAT-10-214', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-8sal-stanley-blanca-30012',
     nota: 'REGLETA 8SAL STANLEY BLANCA 30012 · artículo 0001094734 · ref. 8 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 599.99, {
+  c('MAT-10-215', PROV_MAX, 599.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-movimiento-interup-pared-t47230',
     nota: 'SENSOR MOVIMIENTO INTERUP PARED T47230 · artículo 0001126254 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 500, {
+  c('MAT-10-215', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov180g-semo-180-voltech-t46594',
     nota: 'SENSOR MOV180g SEMO-180 VOLTECH T46594 · artículo 0001121310 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 780, {
+  c('MAT-10-215', PROV_MAX, 780, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-interi-semo-in-voltech-t46599',
     nota: 'SENSOR MOV/INTERI SEMO-IN VOLTECH T46599 · artículo 0001121309 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-172', PROV_MAX, 540, {
+  c('MAT-10-215', PROV_MAX, 540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-p-ext-semo-ex-voltech-t47231',
     nota: 'SENSOR MOV P/EXT SEMO-EX VOLTECH T47231 · artículo 0001121300 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-173', PROV_MAX, 805, {
+  c('MAT-10-216', PROV_MAX, 805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timer-digital-8eve-tem-8-voltech-t48386',
     nota: 'TIMER DIGITAL 8EVE TEM-8 VOLTECH T48386 · artículo 0001122434 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 295, {
+  c('MAT-10-217', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-veto-premium-bco-16290',
     nota: 'PULSADOR TIMBRE VETO PREMIUM BCO 16290 · artículo 0001127222 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 414.99, {
+  c('MAT-10-217', PROV_MAX, 414.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-veto-plura-bco-60866',
     nota: 'TIMBRE VETO PLURA BCO 60866 · artículo 0001127211 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 100, {
+  c('MAT-10-217', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-sup-bco-20020',
     nota: 'PULSADOR TIMBRE SUP. BCO 20020 · artículo 0001118633 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 894.99, {
+  c('MAT-10-217', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-ding-dong-bco-veto-89003',
     nota: 'TIMBRE DING DONG BCO VETO 89003 · artículo 0001118640 · ref. Sin especificaciones parseables en el nombre · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 315, {
+  c('MAT-10-217', PROV_MAX, 315, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-musical-domest-tim-voltech-t46605',
     nota: 'TIMBRE MUSICAL DOMEST TIM VOLTECH T46605 · artículo 0001121308 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 380, {
+  c('MAT-10-217', PROV_MAX, 380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-4-voltech-t46607',
     nota: 'TIMBRE INDUSTRIAL TIMC-4 VOLTECH T46607 · artículo 0001121307 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 740, {
+  c('MAT-10-217', PROV_MAX, 740, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-6-voltech-t46609',
     nota: 'TIMBRE INDUSTRIAL TIMC-6 VOLTECH T46609 · artículo 0001121306 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-174', PROV_MAX, 670, {
+  c('MAT-10-217', PROV_MAX, 670, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-inala-timi-100-voltech-t46630',
     nota: 'TIMBRE INALA TIMI-100 VOLTECH T46630 · artículo 0001121304 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
@@ -12879,6 +14796,34 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-plus/',
     nota: 'Pintura semigloss Tropical Plus · artículo 8435-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
+  c('MAT-12-009', PROV_FERREMIX, 6380, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-elite-ultra-acrilica-mate',
+    nota: 'Pintura elite ultra acrílica mate · artículo 29495 · marca Cano. El comercio lista 34 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 3750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-pro-advance-acrilica-mate',
+    nota: 'Pintura pro advance acrílica mate · artículo 29432 · marca Cano. El comercio lista 42 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 1750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-techo-acrilica-mate',
+    nota: 'Pintura techo acrílica mate · artículo 29406 · marca Cano. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 2265, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-latex-acrilica-mate',
+    nota: 'Pintura látex acrílica mate · artículo 30853 · marca Cano. El comercio lista 15 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 2150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-duratex-popular',
+    nota: 'Pintura acrílica duratex popular · artículo 4665 · marca Pinturas Popular. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 1895, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-super-economica-king',
+    nota: 'Pintura acrílica súper económica King · artículo 7648 · marca Pinturas King. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-009', PROV_FERREMIX, 2075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-ecnomica-latex-king',
+    nota: 'pintura acrilica ecnomica latex king · artículo 25473 · marca Pinturas King. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-12-010', PROV_TONOS, 2113.27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-uno-zero-monto/',
     nota: 'Pintura acrílica antibacterial Uno zero · artículo 320072 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
@@ -12947,6 +14892,18 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-plus/',
     nota: 'Pintura semigloss Tropical Plus · artículo 8435-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
+  c('MAT-12-010', PROV_FERREMIX, 430, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-duratex-popular',
+    nota: 'Pintura acrílica duratex popular · artículo 4644 · marca Pinturas Popular. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-010', PROV_FERREMIX, 375, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-super-economica-king',
+    nota: 'Pintura acrílica súper económica King · artículo 25793 · marca Pinturas King. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-010', PROV_FERREMIX, 415, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-ecnomica-latex-king',
+    nota: 'pintura acrilica ecnomica latex king · artículo 4534 · marca Pinturas King. El comercio lista 21 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-12-011', PROV_TONOS, 6835.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-poliuretano-acripol/',
     nota: 'Pintura aislante térmico Acripol · artículo 072506 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
@@ -12975,131 +14932,183 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-trafico-tropical/',
     nota: 'Pintura Tráfico de señalización víal · artículo 0926-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-014', PROV_TONOS, 2954.01, {
+  c('MAT-12-014', PROV_FERREMIX, 1675, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/masilla-joint-compound-w-5gl-tropical',
+    nota: 'EPOXI GRIS PERLA GL TROPICAL · artículo 847 · ref. GL · marca Pinturas Tropical. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-015', PROV_TONOS, 2954.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-epoxica/',
     nota: 'Pintura epóxica para aplicaciones industriales · artículo 5138-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-015', PROV_TONOS, 1212.3, {
+  c('MAT-12-016', PROV_TONOS, 1212.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-esmalte-ferrum-acabado-forja/',
     nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012830 · ref. 0.20 gl (750ml) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 5401.1, {
+  c('MAT-12-017', PROV_TONOS, 5401.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-esmalte-ferrum-acabado-forja/',
     nota: 'Montó Esmalte Ferrum Acabado Forja · artículo 012823 · ref. 1.06 gl (4L) · marca Montó. El comercio lista 7 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 1481.69, {
+  c('MAT-12-017', PROV_TONOS, 1481.69, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-enamelguard-popular/',
     nota: 'Esmalte de revestimiento industrial y mantenimiento Enamelguard · artículo 30350-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 1695.19, {
+  c('MAT-12-017', PROV_TONOS, 1695.19, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-enamelguard-popular/',
     nota: 'Esmalte de revestimiento industrial y mantenimiento Enamelguard · artículo 30356-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 1312.41, {
+  c('MAT-12-017', PROV_TONOS, 1312.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-esmalte/',
     nota: 'Pintura Popular Esmalte Color Matcher – Popular · artículo 79250-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 1574.11, {
+  c('MAT-12-017', PROV_TONOS, 1574.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-industrial/',
     nota: 'Esmalte Industrial – Tropical · artículo 8846-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-016', PROV_TONOS, 1480.96, {
+  c('MAT-12-017', PROV_TONOS, 1480.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-plus/',
     nota: 'Esmalte de acabado brillante Tropical Plus · artículo 8500-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 5351.84, {
+  c('MAT-12-018', PROV_TONOS, 5351.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-roof-wall-primer-sealer-lanco/',
     nota: 'Primer sellador para techos AS-2010 Roof & Wall Primer/Sealer · artículo AS-210-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 6482.72, {
+  c('MAT-12-018', PROV_TONOS, 6482.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-de-techo-duraflex/',
     nota: 'Sellador de techo Duraflex 5GL · artículo RC-100-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 4578.08, {
+  c('MAT-12-018', PROV_TONOS, 4578.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-de-techo-masterflex-lanco/',
     nota: 'Sellador de techo Masterflex · artículo VA-1744-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 8030.24, {
+  c('MAT-12-018', PROV_TONOS, 8030.24, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-siliconizer-lanco/',
     nota: 'Sellador de techo Siliconizer · artículo RC-200-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 10773.12, {
+  c('MAT-12-018', PROV_TONOS, 10773.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-ultra-siliconizer-lanco/',
     nota: 'Sellador de techo Ultra Siliconizer · artículo RC-905-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 11789.92, {
+  c('MAT-12-018', PROV_TONOS, 11789.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-urethanizer-lanco/',
     nota: 'Sellador de techo Urethanizer · artículo RC-994-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 12344.64, {
+  c('MAT-12-018', PROV_TONOS, 12344.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-para-exterior-ovaldine-fachadas/',
     nota: 'Pintura Impermeabilizante Ovaldine Fachadas · artículo 191825 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 13902.88, {
+  c('MAT-12-018', PROV_TONOS, 13902.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/dry-coat-lanco/',
     nota: 'Pintura Impermeabilizante Dry Coat · artículo DC-480-2 · ref. Cubeta · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 2419.2, {
+  c('MAT-12-018', PROV_FERREMIX, 2065, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/sellador-de-techo-cementicio',
+    nota: '5gl sellador de techo cementicio nova-block cano · artículo 29593 · ref. 5 GL · marca Cano. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-018', PROV_FERREMIX, 8399, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/5gl-elasto-sil-doble',
+    nota: '5gl impermeabilizante elasto-sil doble cano · artículo 12057 · ref. 5 GL · marca Cano. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-018', PROV_FERREMIX, 6325, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-impermeabilizante-popular',
+    nota: 'pintura impermeabilizante popular · artículo 901 · marca Pinturas Popular. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-018', PROV_FERREMIX, 7475, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-impermeabilizante-tropical',
+    nota: 'PINTURA INDUSTRIAL FERRO TROPICAL · artículo 332 · marca Pinturas Tropical. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-019', PROV_TONOS, 2419.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/blockaid-popular-impermeabilizante/',
     nota: 'Impermeabilizante Blockaid Popular · artículo 711978 · ref. 40 LB · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-019', PROV_TONOS, 2838.53, {
+  c('MAT-12-020', PROV_TONOS, 2838.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/plasmont-antihumedad-monto/',
     nota: 'Plasmont Antihumedad · artículo 599904 · ref. 20kg · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-020', PROV_TONOS, 4642.17, {
+  c('MAT-12-021', PROV_TONOS, 4642.17, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-antihumedad-tixoway-monto/',
     nota: 'Pintura antihumedad Tixoway · artículo 010683 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-020', PROV_TONOS, 3104.96, {
+  c('MAT-12-021', PROV_TONOS, 3104.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/dry-coat-lanco/',
     nota: 'Pintura Impermeabilizante Dry Coat · artículo DC-480-4 · ref. 1 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-021', PROV_TONOS, 1429.12, {
+  c('MAT-12-021', PROV_FERREMIX, 1265, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-impermeabilizante-popular',
+    nota: 'pintura impermeabilizante popular · artículo 900 · marca Pinturas Popular. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-021', PROV_FERREMIX, 1495, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-acrilica-impermeabilizante-tropical',
+    nota: 'PINTURA INDUSTRIAL FERRO TROPICAL · artículo 331 · marca Pinturas Tropical. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-022', PROV_FERREMIX, 1795, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/5gl-masilla-panel-master',
+    nota: '5gl. masilla panel master cano. · artículo 10474 · ref. 5 GL · marca Cano. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-022', PROV_FERREMIX, 1395, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/5gl-masilla-kementex-tropical',
+    nota: 'DISCO DE CORTE EXTRAFINO PARA METAL · artículo 10654 · marca Pinturas Tropical. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-022', PROV_FERREMIX, 8050, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/gl-pintura-revetex-fino-blanco-tropical',
+    nota: '5GL MASILLA KEMENTEX TROPICAL · artículo 11146 · ref. 5 GL · marca Pinturas Tropical. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-023', PROV_TONOS, 1429.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 095239 · ref. 0.66 gl (2.5L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-022', PROV_TONOS, 211.9, {
+  c('MAT-12-024', PROV_TONOS, 211.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 008079 · ref. 0.08 gl (0.5kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-023', PROV_TONOS, 1118.66, {
+  c('MAT-12-025', PROV_TONOS, 1118.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 008055 · ref. 0.73 gl (5kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-024', PROV_TONOS, 335.1, {
+  c('MAT-12-026', PROV_TONOS, 335.1, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 008048 · ref. 0.15 gl (1kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-025', PROV_TONOS, 4072.16, {
+  c('MAT-12-027', PROV_TONOS, 4072.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-exterior-zentech/',
     nota: 'Masilla para exterior satinada Zentech · artículo ZE-259-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-026', PROV_TONOS, 2157.6, {
+  c('MAT-12-028', PROV_TONOS, 2157.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-exterior-zentech/',
     nota: 'Masilla para exterior satinada Zentech · artículo RA-168-21 · ref. Caja 40 lbs · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-027', PROV_TONOS, 1221.74, {
+  c('MAT-12-029', PROV_TONOS, 1221.74, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-sheetrock-kementex/',
     nota: 'Masilla para sheetrock Kementex · artículo 1923-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-027', PROV_TONOS, 1401.92, {
+  c('MAT-12-029', PROV_TONOS, 1401.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-sheetrock-wallboard/',
     nota: 'Masilla para sheetrock Wallboard · artículo 1905-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-028', PROV_TONOS, 3326.41, {
+  c('MAT-12-030', PROV_TONOS, 3326.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/montosport-monto-piscina/',
     nota: 'Pintura para piscinas e instalaciones deportivas MontoSport · artículo 019808 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-029', PROV_TONOS, 7349.76, {
+  c('MAT-12-031', PROV_TONOS, 7349.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/primer-emulsion-fijadora/',
     nota: 'Primer Emulsión Fijadora · artículo 413026 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-029', PROV_TONOS, 3473.6, {
+  c('MAT-12-031', PROV_TONOS, 3473.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/primer-acrilico-fresh-cement/',
     nota: 'Primer para cemento Fresh Cement · artículo 6823-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-030', PROV_OCHOA, 331.11, {
+  c('MAT-12-031', PROV_FERREMIX, 3260, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/pintura-pro-primer-5gl',
+    nota: '5gl. primer antihongo blanco c00 cano · artículo 29521 · ref. 5 GL · marca Cano. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-031', PROV_FERREMIX, 8900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/5-galones-seal-coat-primer',
+    nota: '5 galones seal coat primer · artículo 28437 · ref. 5 GALONES · marca Lanco. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-031', PROV_FERREMIX, 5925, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/5gl-acr-primer',
+    nota: '5gl acr primer · artículo 2538 · ref. 5 GL · marca Lanco. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-12-032', PROV_OCHOA, 331.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',
     nota: 'Estuco Para Interiores · artículo 04-59-0424 · ref. 35LIBRAS · marca DURO YESO. ' + SUPUESTO_ITBIS
   });
@@ -15561,6 +17570,26 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/lavamanos-sobre-encimera-cristal-gris-39x39x10-5/',
     nota: 'Lavamanos Sobre Encimera Cristal Gris 39x39x10.5 · artículo 018361 · ref. 39×39×10.5. ' + SUPUESTO_ITBIS
   });
+  c('MAT-25-001', PROV_FERREMIX, 2490, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-temporizadora-para-lavabo',
+    nota: 'Lave temporizadora para avabo · artículo T47918 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-001', PROV_FERREMIX, 12875, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-de-lavamanos-con-sensor-automatico',
+    nota: 'Lave de avamanos con sensor automatico foset · artículo T49194 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-001', PROV_FERREMIX, 9276, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-de-bano-con-lavamanos-blanco',
+    nota: 'Mueble de baño con lavaanos blanco c003 · artículo 26876 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-001', PROV_FERREMIX, 910, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/contra-para-lavabo-de-laton',
+    nota: 'Contra para lavamanos de latón · artículo T47037 · ref. T47038 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-25-001', PROV_FERREMIX, 1030, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/contra-para-lavabo-de-laton',
+    nota: 'Contra para lavamanos de latón · artículo T47038 · ref. T47038 · marca Foset. ' + SUPUESTO_ITBIS
+  });
   c('MAT-25-002', PROV_OCHOA, 6285.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/lavabo-aure-01061566',
     nota: 'Lavabo Aure · artículo 01-06-1566 · ref. BLANCO · marca INNOBATH. ' + SUPUESTO_ITBIS
@@ -16864,6 +18893,10 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/conjunto-valencia-suspendido-blanco-ebony-61x46x45/',
     nota: 'Conjunto Valencia Suspendido Blanco Ebony 61x46x45 · artículo 015757 · ref. 61×46×45. ' + SUPUESTO_ITBIS
   });
+  c('MAT-26-002', PROV_FERREMIX, 13150, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-de-bano-de-pared-con-espejo',
+    nota: 'Mueble de baño sg-e8045 de pared c/espejo 800*390 df · artículo 26144 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
   c('MAT-26-002', PROV_INNOVA, 8120, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-13-0015-60-aluminio-gris-os-061739',
     nota: 'MUEBLE BAÑO AQUASPA CS.13.0015-60 ALUMINIO GRIS OSCURO LAVAMANO/ESPEJO LED 60 CM AQUASPA · artículo 061739 · ref. Mueble · marca AQUASPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
@@ -17265,6 +19298,26 @@
   c('MAT-26-003', PROV_IBERICA, 17110.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mueble-para-lavadero-blanco-90x60/',
     nota: 'Mueble para Lavadero Blanco 90×60 · artículo 014841 · ref. 90×60. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_FERREMIX, 14750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-con-lavamanos-blanco',
+    nota: 'Mueble c/lav blanco ky-3091 · artículo 27826 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_FERREMIX, 13800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-con-lavamanos-grande',
+    nota: 'Mueble c/ lav. grande ky-3092* · artículo 27827 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_FERREMIX, 22900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-de-bano-ky-3211-con-espejo',
+    nota: 'Mueble de baño ky-3211 con espejo · artículo 27815 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_FERREMIX, 15500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mueble-de-bano-con-lavamano-color-madera-c011',
+    nota: 'Mueble de baño con lavaano color adera c011 · artículo 26877 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_FERREMIX, 2725, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/gabinete-de-bano-c-espejo-blanco-rimax',
+    nota: 'gabinete de bano c espejo blanco rimax · artículo 25419 · marca Rimax. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-003', PROV_INNOVA, 9444, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-130018-50-aluminio-blanco-l-061742',
@@ -17751,6 +19804,14 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/espejo-rectangular-ps-825-led-80x60-cristal/',
     nota: 'Espejo Rectangular Led 80×60 Cristal · artículo 015041 · ref. 80×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
   });
+  c('MAT-26-007', PROV_FERREMIX, 3615, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-decorativa-de-led-para-bano-de-3-spots',
+    nota: 'Lampara ed 9w tres uces para espejo de baño voteck · artículo T46346 · ref. T46346 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-007', PROV_FERREMIX, 2035, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-decorativa-de-led-para-bano-tipo-barra',
+    nota: 'Lampara ed 10w tipo barra para espejo de baño voteck · artículo T46347 · ref. T46347 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
   c('MAT-26-007', PROV_INNOVA, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-baño-aquaspa-h-1012-60x60-cm-rectangular-lu-064824',
     nota: 'ESPEJO BAÑO AQUASPA H-1012 60X60 CM RECTANGULAR LUZ LED · artículo 064824 · ref. Espejo · marca AQUASPA. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
@@ -18024,6 +20085,18 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-seguridad-recta-01112140',
     nota: 'Barra Seguridad Recta · artículo 01-11-2140 · ref. B-470-S · marca HELVEX. ' + SUPUESTO_ITBIS
   });
+  c('MAT-27-007', PROV_FERREMIX, 1615, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/barra-de-apoyo',
+    nota: 'Barra de apoyo · artículo 12817. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-007', PROV_FERREMIX, 1830, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/barra-de-apoyo',
+    nota: 'Barra de apoyo · artículo 12825. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-007', PROV_FERREMIX, 1940, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/barra-de-apoyo',
+    nota: 'Barra de apoyo · artículo 12847. ' + SUPUESTO_ITBIS
+  });
   c('MAT-27-008', PROV_INNOVA, 2750, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/barrassegubaneraducha/barra-seguridad-tornado-t-1342-s-baño-1-1-3-2x42-7-061517',
     nota: 'BARRA SEGURIDAD TORNADO T-1342-S BAÑO 1-1/2X42" SATINADA · artículo 061517 · ref. Barra · marca TORNADO. ' + SUPUESTO_ITBIS
@@ -18226,6 +20299,34 @@
     itbis: false,
     nota: 'SET DE ACCESORIOS D/BAÑO D/ 6PZ SERIE 2100 · artículo CERA-33078 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
+  c('MAT-27-018', PROV_FERREMIX, 1195, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-wc-con-valvula-t45309',
+    nota: 'Juego de accesorios para wc con válvula · artículo T45309 · ref. JUEGO · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 955, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-wc-con-valvula',
+    nota: 'Juego de accesorios para wc con válvula · artículo T45308 · ref. JUEGO · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 599, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-wc-con-valvula-de-descarga-de-3',
+    nota: 'Juego de accesorios para wc con válvula · artículo T48448 · ref. JUEGO · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 535, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-wc-con-valvula-flotador-regulacion-clip',
+    nota: 'Juego de accesorios para wc con válvula · artículo T48447 · ref. JUEGO · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-wc-con-valvula-de-flotador-compacto',
+    nota: 'Juego de accesorios para wc con válvula · artículo T48446 · ref. JUEGO · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 1587, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-bano-cromado',
+    nota: 'Jgo access p/ baã‘o cromado p44203 aquina · artículo 15648 · ref. JGO · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_FERREMIX, 345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/juego-de-accesorios-para-tanque-bajo-economico',
+    nota: 'Jgo accesorios tanque bao, economico foset · artículo T49326 · ref. T49326 · marca Foset. ' + SUPUESTO_ITBIS
+  });
   c('MAT-27-019', PROV_OCHOA, 1081.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-acc-bano-3pzas-burdeos-01100350',
     nota: 'Kit Acc. Bano 3Pzas.Burdeos · artículo 01-10-0350 · ref. 601/3-ACROMO · marca TILBY-KIT. ' + SUPUESTO_ITBIS
@@ -18419,6 +20520,10 @@
     itbis: false,
     nota: 'SECADOR D/MANOS D/ALTA VELOCIDAD CLEAN DRY · artículo CERA-32741 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
+  c('MAT-27-023', PROV_FERREMIX, 849, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/filtro-hepa-para-secador-de-manos',
+    nota: 'Filtro HEPA para secador de manos · artículo T45848 · marca Foset. ' + SUPUESTO_ITBIS
+  });
   c('MAT-27-023', PROV_INNOVA, 3600, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/secadoresmano/secador-mano-aquaspa-cd-886-gy-gris-plastico-053148',
     nota: 'SECADOR MANO AQUASPA CD-886-GY GRIS PLASTICO · artículo 053148 · ref. Secador · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -18443,6 +20548,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/secador-manos-c-sensor-turbo-elec-ace-i-01112773',
     nota: 'Secador Manos C / Sensor Turbo Elec. Ace.I · artículo 01-11-2773 · ref. MB-1012AI · marca HELVEX. ' + SUPUESTO_ITBIS
   });
+  c('MAT-27-025', PROV_FERREMIX, 16755, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/secador-de-manos-con-sensor-optico-acer',
+    nota: 'SECADOR DE MANOS CON SENSOR ÓPTICO, ACER · artículo 50769070096688 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
   c('MAT-27-025', PROV_INNOVA, 12595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/secadoresmano/secador-mano-aquaspa-cd-9999-pl-cromado-con-sensor-052274',
     nota: 'SECADOR MANO AQUASPA CD-9999-PL CROMADO CON SENSOR CROMADO · artículo 052274 · ref. Secador · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -18463,6 +20572,18 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/dispensador-pjabon-tape101',
     itbis: false,
     nota: 'DISPENSADOR P/JABON TAPE101 · artículo CERA-00614 · ref. 6.5X9.5X16 · marca ANTONIO LUPI. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-27-026', PROV_FERREMIX, 2309, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-a-pared-de-laton-satinado',
+    nota: 'Dispensador de jabón a pared de latón satinado · artículo T45227 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-026', PROV_FERREMIX, 899, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-satinado-element',
+    nota: 'Dispensador de jabón · artículo T49666 · ref. T49666 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-026', PROV_FERREMIX, 980, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/dispensador-de-jabon-satinado-element',
+    nota: 'Dispensador de jabón · artículo T49665 · ref. T49666 · marca Foset. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-026', PROV_INNOVA, 676, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/dispensadoresjabon/dispensador-jabon-aquaspa-tj9055-plastico-blanco-5-033702',
@@ -21791,727 +23912,799 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-4-x-2',
     nota: 'YEE PVC DRENAJE 4 x 2 · artículo 030368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 565, {
+  c('MAT-32-323', PROV_FERREMIX, 355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-doble',
+    nota: 'LLAVE ANGULAR DE LATÓN 1/2" X 1/2", DOBLE · artículo T47478 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-323', PROV_FERREMIX, 395, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-para-cpvc',
+    nota: 'Lave anguar, aton, 1/2x1/2" para cpvc · artículo T49108 · ref. T49108 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_CIMA, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-1-2-x-3-8',
     nota: 'LLAVE ANGULAR DOBLE 1/2 X 3/8 · artículo 091712043263. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 321, {
+  c('MAT-32-324', PROV_CIMA, 321, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-medio-giro-1-2x3',
     nota: 'LLAVE ANGULAR MEDIO GIRO 1/2X3 · artículo 2460680002035. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 415, {
+  c('MAT-32-324', PROV_CIMA, 415, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-7-16-04329',
     nota: 'LLAVE ANGULAR 1/2 X 7/16 04329 · artículo 091712043294. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 405, {
+  c('MAT-32-324', PROV_CIMA, 405, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-3-8-eastma',
     nota: 'LLAVE ANGULAR 1/2 X 3/8 EASTMA · artículo 091712043225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 271, {
+  c('MAT-32-324', PROV_CIMA, 271, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-medio-giro-1',
     nota: 'LLAVE ANGULAR 1/2 MEDIO GIRO 1 · artículo 091712107330. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-324', PROV_CIMA, 453, {
+  c('MAT-32-324', PROV_FERREMIX, 235, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular',
+    nota: 'Lave anguar 1/2\'\' x 1/2\'\' 1/4 de vueta foset · artículo T46299 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_FERREMIX, 140, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-sensilla-1-2-x3-8',
+    nota: 'Lave ang. senc.1/2 x3/8 · artículo 4869 · marca Genérico. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_FERREMIX, 245, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-1-2-a-3-8-1-salida',
+    nota: 'Lave ang. 1/2 a 3/8 senc. eastman - unidad · artículo 13952 · marca Eastman. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_FERREMIX, 385, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-3-8',
+    nota: 'Lave anguar 1/2- 3/8 ( 2 saida) eastman · artículo 8859 · marca Eastman. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_FERREMIX, 270, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-x-1-2-de-1-4-de-vuelta-con-barrilito',
+    nota: 'Lave anguar, 1/2 x1/2,1/4 v,barriito. · artículo T49111 · ref. T49111 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-324', PROV_FERREMIX, 210, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-x-1-2-1-4-de-vuelta',
+    nota: 'Lave anguar, 1/2 x 1/2, 1/4 vueta foset · artículo T49110 · ref. T49110 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-325', PROV_CIMA, 453, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-3-8-x-3-8',
     nota: 'LLAVE ANGULAR DOBLE 3/8 X 3/8 · artículo 091712043355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-324', PROV_CIMA, 388, {
+  c('MAT-32-325', PROV_CIMA, 388, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-eastma',
     nota: 'LLAVE ANGULAR 3/8 X 3/8 EASTMA · artículo 091712043195. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-324', PROV_CIMA, 257, {
+  c('MAT-32-325', PROV_CIMA, 257, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-bras-c',
     nota: 'LLAVE ANGULAR 3/8 X 3/8 BRAS C · artículo 026613172842. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-325', PROV_CIMA, 435, {
+  c('MAT-32-325', PROV_FERREMIX, 285, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-3-8-a-3-8-sencillo',
+    nota: 'Lave anguar 3/8 a 3/8 senc. usa eastman · artículo 6595 · marca Eastman. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-326', PROV_FERREMIX, 1299, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49021 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-327', PROV_FERREMIX, 1075, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49020 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-328', PROV_FERREMIX, 355, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49017 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-329', PROV_FERREMIX, 655, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49019 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-330', PROV_FERREMIX, 1855, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49022 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-331', PROV_FERREMIX, 449, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
+    nota: 'valvula de compuerta de laton roscable · artículo T49018 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-332', PROV_CIMA, 435, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-cpvc-1-2-48636',
     nota: 'LLAVE PASO BOLA CPVC 1/2 48636 · artículo 091712486367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-326', PROV_CIMA, 1961, {
+  c('MAT-32-333', PROV_CIMA, 1961, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-5',
     nota: 'LLAVE PASO BOLA ITALIANA 1.5 · artículo 032573. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 259, {
+  c('MAT-32-334', PROV_CIMA, 259, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-ll-21p',
     nota: 'LLAVE R/M BOLA 1/2 LL-21P · artículo 7501206658871. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 567, {
+  c('MAT-32-334', PROV_CIMA, 567, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-italiana',
     nota: 'LLAVE R/M BOLA 1/2 ITALIANA · artículo 031783. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 635, {
+  c('MAT-32-334', PROV_CIMA, 635, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-2',
     nota: 'LLAVE PASO BOLA P/GAS 1/2 · artículo 060271. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 545, {
+  c('MAT-32-334', PROV_CIMA, 545, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-macho-hemb-1-2',
     nota: 'LLAVE PASO BOLA MACHO HEMB 1/2 · artículo 030304. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 465, {
+  c('MAT-32-334', PROV_CIMA, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-2-0',
     nota: 'LLAVE PASO BOLA ITALIANA 1/2 0 · artículo 031699. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-328', PROV_CIMA, 343, {
+  c('MAT-32-335', PROV_CIMA, 343, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-4',
     nota: 'LLAVE PASO BOLA P/GAS 1/4 · artículo 060269. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-329', PROV_CIMA, 831, {
+  c('MAT-32-336', PROV_CIMA, 831, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-090',
     nota: 'LLAVE PASO BOLA ITALIANA 1 090 · artículo 031701. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-330', PROV_CIMA, 3227, {
+  c('MAT-32-337', PROV_CIMA, 3227, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-2-090',
     nota: 'LLAVE PASO BOLA ITALIANA 2 090 · artículo 031703. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-331', PROV_CIMA, 630, {
+  c('MAT-32-338', PROV_CIMA, 630, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-3-4-italiana-09',
     nota: 'LLAVE R/M BOLA 3/4 ITALIANA 09 · artículo 031784. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-331', PROV_CIMA, 555, {
+  c('MAT-32-338', PROV_CIMA, 555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-4-0',
     nota: 'LLAVE PASO BOLA ITALIANA 3/4 0 · artículo 031700. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-332', PROV_CIMA, 455, {
+  c('MAT-32-339', PROV_CIMA, 455, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-3-8',
     nota: 'LLAVE PASO BOLA P/GAS 3/8 · artículo 060312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-332', PROV_CIMA, 327, {
+  c('MAT-32-339', PROV_CIMA, 327, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8-0',
     nota: 'LLAVE PASO BOLA ITALIANA 3/8 0 · artículo 044258. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-332', PROV_CIMA, 336, {
+  c('MAT-32-339', PROV_CIMA, 336, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8',
     nota: 'LLAVE PASO BOLA ITALIANA 3/8 · artículo 034009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-333', PROV_CIMA, 465, {
+  c('MAT-32-340', PROV_CIMA, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-5-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1.5 SIN RO · artículo 091712201199. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-334', PROV_CIMA, 41, {
+  c('MAT-32-341', PROV_CIMA, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 022190. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-334', PROV_CIMA, 125, {
+  c('MAT-32-341', PROV_CIMA, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro-1',
     nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 091712201113. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-335', PROV_CIMA, 170, {
+  c('MAT-32-342', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1 SIN RO · artículo 091712201151. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-336', PROV_CIMA, 616, {
+  c('MAT-32-343', PROV_CIMA, 616, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-2-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 2 SIN RO · artículo 091712201212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-337', PROV_CIMA, 125, {
+  c('MAT-32-344', PROV_CIMA, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro-1',
     nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 091712201137. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-337', PROV_CIMA, 107, {
+  c('MAT-32-344', PROV_CIMA, 107, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 022091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-338', PROV_CIMA, 2262, {
+  c('MAT-32-345', PROV_CIMA, 2262, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-5',
     nota: 'LLAVE CUNA 1.5 · artículo 7501973716200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-339', PROV_CIMA, 858, {
+  c('MAT-32-346', PROV_CIMA, 858, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-2',
     nota: 'LLAVE CUNA 1/2 · artículo 7501973716163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-340', PROV_CIMA, 1595, {
+  c('MAT-32-347', PROV_CIMA, 1595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1',
     nota: 'LLAVE CUNA 1 · artículo 7501973716187. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-341', PROV_CIMA, 1248, {
+  c('MAT-32-348', PROV_CIMA, 1248, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-3-4',
     nota: 'LLAVE CUNA 3/4 · artículo 7501973716170. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_CIMA, 338, {
+  c('MAT-32-349', PROV_CIMA, 338, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-cromada-1-2-ll-19c',
     nota: 'LLAVE R/M CROMADA 1/2 LL-19C · artículo 7501206695753. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_CIMA, 1001, {
+  c('MAT-32-349', PROV_CIMA, 1001, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-candado-1-2-itali',
     nota: 'LLAVE R/M CANDADO 1/2 ITALI · artículo 035798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_CIMA, 1071, {
+  c('MAT-32-349', PROV_CIMA, 1071, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-x-45-191-13',
     nota: 'LLAVE R/M 1/2 x 45 191.13 · artículo 7501973701411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_CIMA, 875, {
+  c('MAT-32-349', PROV_CIMA, 875, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-pesada-19n-13',
     nota: 'LLAVE R/M 1/2  PESADA 19N.13 · artículo 7501973701442. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_CIMA, 575, {
+  c('MAT-32-349', PROV_CIMA, 575, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-liviana-19nc-13',
     nota: 'LLAVE R/M 1/2  LIVIANA 19NC.13 · artículo 7501973701466. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-343', PROV_CIMA, 487, {
+  c('MAT-32-350', PROV_CIMA, 487, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-ll-19-3-4',
     nota: 'LLAVE R/M 3/4 LLJ-180 · artículo 7501206695784. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-343', PROV_CIMA, 1145, {
+  c('MAT-32-350', PROV_CIMA, 1145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-pesada-19n-19',
     nota: 'LLAVE R/M 3/4  PESADA 19N.19 · artículo 7501973701459. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-344', PROV_CIMA, 2283, {
+  c('MAT-32-351', PROV_CIMA, 2283, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
     nota: 'CHEQUE VERTICAL EUROPA 1.5 · artículo 054231. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-344', PROV_CIMA, 1757, {
+  c('MAT-32-351', PROV_CIMA, 1757, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-5',
     nota: 'CHEQUE HORIZONTAL ITALIANO 1.5 · artículo 055154. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-345', PROV_CIMA, 590, {
+  c('MAT-32-352', PROV_CIMA, 590, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
     nota: 'CHEQUE VERTICAL EUROPA 1/2 · artículo 054227. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-345', PROV_CIMA, 535, {
+  c('MAT-32-352', PROV_CIMA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-2',
     nota: 'CHEQUE HORIZONTAL ITALIANO 1/2 · artículo 055152. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-346', PROV_CIMA, 1048, {
+  c('MAT-32-353', PROV_CIMA, 1048, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
     nota: 'CHEQUE VERTICAL EUROPA 1 · artículo 054229. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-347', PROV_CIMA, 2946, {
+  c('MAT-32-354', PROV_CIMA, 2946, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-2',
     nota: 'CHEQUE HORIZONTAL ITALIANO 2 · artículo 055163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-348', PROV_CIMA, 695, {
+  c('MAT-32-355', PROV_CIMA, 695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-3-4',
     nota: 'CHEQUE HORIZONTAL ITALIANO 3/4 · artículo 054234. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-348', PROV_CIMA, 796, {
+  c('MAT-32-355', PROV_CIMA, 796, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
     nota: 'CHEQUE VERTICAL EUROPA 3/4 · artículo 054228. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-349', PROV_CIMA, 616, {
+  c('MAT-32-356', PROV_CIMA, 616, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-sin-boya',
     nota: 'VALVULA CISTERNA 1/2 SIN BOYA · artículo 030721. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-349', PROV_CIMA, 853, {
+  c('MAT-32-356', PROV_CIMA, 853, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-con-vari',
     nota: 'VALVULA CISTERNA 1/2 CON VARI · artículo 7501973700254. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-350', PROV_CIMA, 615, {
+  c('MAT-32-357', PROV_CIMA, 615, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-italiana-3-4',
     nota: 'VALVULA CISTERNA ITALIANA 3/4 · artículo 040427. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-350', PROV_CIMA, 1271, {
+  c('MAT-32-357', PROV_CIMA, 1271, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-3-4-con-varil',
     nota: 'VALVULA CISTERNA 3/4 CON VARIL · artículo 7501973700261. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-351', PROV_CIMA, 310, {
+  c('MAT-32-358', PROV_CIMA, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-11',
     nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063289. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-351', PROV_CIMA, 685, {
+  c('MAT-32-358', PROV_CIMA, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-10',
     nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063288. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-351', PROV_CIMA, 306, {
+  c('MAT-32-358', PROV_CIMA, 306, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-10-x-10',
     nota: 'REJILLA PISO CUADRAD 10 X 10 · artículo 09687070. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-352', PROV_CIMA, 1173, {
+  c('MAT-32-359', PROV_CIMA, 1173, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-100-x-100',
     nota: 'REJILLA PISO CUADRAD 100 X 100 · artículo 096873. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-353', PROV_CIMA, 1510, {
+  c('MAT-32-360', PROV_CIMA, 1510, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x40-3cm-sus304',
     nota: 'REJILLA PISO 10X40 3CM SUS304 · artículo 033138. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-353', PROV_CIMA, 1196, {
+  c('MAT-32-360', PROV_CIMA, 1196, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x30-3cm-sus304',
     nota: 'REJILLA PISO 10X30 3CM SUS304 · artículo 7460215717163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-353', PROV_CIMA, 968, {
+  c('MAT-32-360', PROV_CIMA, 968, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x20-3cm-sus304',
     nota: 'REJILLA PISO 10X20 3CM SUS304 · artículo 7460215717156. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-354', PROV_CIMA, 413, {
+  c('MAT-32-361', PROV_CIMA, 413, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-15-x-15',
     nota: 'REJILLA PISO CUADRAD 15 X 15 · artículo 096868. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-354', PROV_CIMA, 2054, {
+  c('MAT-32-361', PROV_CIMA, 2054, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inox-15-x-15-304',
     nota: 'REJILLA PISO INOX 15 X 15 304 · artículo 015104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-355', PROV_CIMA, 572, {
+  c('MAT-32-362', PROV_CIMA, 572, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuad-gr-200-x-200',
     nota: 'REJILLA PISO CUAD GR 20 X 20 · artículo 096872. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_CIMA, 755, {
+  c('MAT-32-363', PROV_CIMA, 755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-11',
     nota: 'REJILLA PISO CUADRADA 2 REJ-11 · artículo 7592032050410. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_CIMA, 858, {
+  c('MAT-32-363', PROV_CIMA, 858, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-10',
     nota: 'REJILLA PISO CUADRADA 2 REJ-10 · artículo 7592032050403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_CIMA, 541, {
+  c('MAT-32-363', PROV_CIMA, 541, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-2-cua-re',
     nota: 'REJILLA PISO ALUMINIO 2 CUA RE · artículo 7460976184440. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_CIMA, 199, {
+  c('MAT-32-363', PROV_CIMA, 199, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-2-aluminio-redond',
     nota: 'REJILLA PISO 2 ALUMINIO REDOND · artículo 030717. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-357', PROV_CIMA, 368, {
+  c('MAT-32-364', PROV_CIMA, 368, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inoxidable-3-5-rs',
     nota: 'REJILLA PISO INOXIDABLE 3.5 RS · artículo 7506240612568. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-357', PROV_CIMA, 401, {
+  c('MAT-32-364', PROV_CIMA, 401, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-re-3-5',
     nota: 'REJILLA PISO ALUMINIO RE 3.5 · artículo 7501206699188. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-358', PROV_CIMA, 356, {
+  c('MAT-32-365', PROV_CIMA, 356, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-fun',
     nota: 'REJILLA PISO ALUMINIO 3 FUN · artículo 018755. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-358', PROV_CIMA, 565, {
+  c('MAT-32-365', PROV_CIMA, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-cua-re',
     nota: 'REJILLA PISO ALUMINIO 3 CUA RE · artículo 7460976184457. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-359', PROV_CIMA, 453, {
+  c('MAT-32-366', PROV_CIMA, 453, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-4',
     nota: 'REJILLA PISO ALUMINIO CUAD 4 · artículo 7501206699171. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-359', PROV_CIMA, 510, {
+  c('MAT-32-366', PROV_CIMA, 510, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-aluminio-desague-4-fun',
     nota: 'REJILLA ALUMINIO DESAGUE 4 FUN · artículo 7460440229912. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-360', PROV_CIMA, 2403, {
+  c('MAT-32-367', PROV_FERREMIX, 3129, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/resumidero-cuadrado-de-laton-6-x-6',
+    nota: 'Resumideo cuadado de latón, 6 x 6".. · artículo T46049 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-368', PROV_CIMA, 2403, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-6x6',
     nota: 'REJILLA PISO ALUMINIO CUAD 6X6 · artículo 7501206667798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-361', PROV_CIMA, 865, {
+  c('MAT-32-369', PROV_CIMA, 865, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-80-x-80',
     nota: 'REJILLA PISO CUADRAD 80 X 80 · artículo 096876. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-362', PROV_CIMA, 1425, {
+  c('MAT-32-370', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-cromado-tipo-botel-1-1-4',
     nota: 'SIFON CROMADO TIPO BOTEL 1 1/4 · artículo 8030575028897. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-363', PROV_CIMA, 647, {
+  c('MAT-32-371', PROV_CIMA, 647, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-freg-1-5-1092e',
     nota: 'SIFON PVC DOBLE FREG 1.5 1092E · artículo 8030575008165. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-363', PROV_CIMA, 356, {
+  c('MAT-32-371', PROV_CIMA, 356, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-1-5-35393',
     nota: 'SIFON PVC DOBLE 1.5 35393 · artículo 091712353935. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-364', PROV_CIMA, 225, {
+  c('MAT-32-372', PROV_CIMA, 225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-2-sin-desague',
     nota: 'SIFON PVC 2 SIN DESAGUE · artículo 032588. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-365', PROV_CIMA, 220, {
+  c('MAT-32-373', PROV_CIMA, 220, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-sencillo-1-1-2-35376',
     nota: 'SIFON PVC SENCILLO 1.1/2 35376 · artículo 091712353768. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-366', PROV_CIMA, 475, {
+  c('MAT-32-374', PROV_CIMA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-5',
     nota: 'SIFON PVC FREGADERO 1.5 · artículo 8030575029603. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-367', PROV_CIMA, 585, {
+  c('MAT-32-375', PROV_CIMA, 585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-1-4',
     nota: 'SIFON PVC FREGADERO 1 1/4 · artículo 8055118131315. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-368', PROV_CIMA, 470, {
+  c('MAT-32-376', PROV_FERREMIX, 925, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cespol-para-lavabo-de-laton-sin-contra',
+    nota: 'Cespol, sin ontra para lavabo 1-1/4" · artículo T49985 · ref. T49985 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-377', PROV_FERREMIX, 345, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cespol-flexible-de-pvc-para-lavamano-con-extension-1-1-4',
+    nota: 'Sifon flexible para lavamano 1 1/4" con extenion 20cm pvc foet · artículo T49947 · ref. T49947 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-378', PROV_CIMA, 470, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-metal-4-30',
     nota: 'BOQUILLA FREGADERO METAL 4 30 · artículo 091712300014. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-369', PROV_CIMA, 285, {
+  c('MAT-32-379', PROV_CIMA, 285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-plastica-4',
     nota: 'BOQUILLA FREGADERO PLASTICA 4 · artículo 091712300052. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-369', PROV_CERARTE, 713.65, {
+  c('MAT-32-379', PROV_CERARTE, 713.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/valvula-ddesague-pfregadero',
     itbis: false,
     nota: 'VALVULA D/DESAGUE P/FREGADERO · artículo CERA-35466 · ref. 4 1/2" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-370', PROV_CIMA, 429, {
+  c('MAT-32-380', PROV_CIMA, 429, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavadero-metal-2-5-30',
     nota: 'BOQUILLA LAVADERO METAL 2.5 30 · artículo 091712300410. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 1145, {
+  c('MAT-32-381', PROV_CIMA, 1145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-push',
     nota: 'BOQUILLA LAVAMANO METAL PUSH · artículo 091712901150. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 665, {
+  c('MAT-32-381', PROV_CIMA, 665, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-nxc119',
     nota: 'BOQUILLA LAVAMANO METAL NXC119 · artículo 033117. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 490, {
+  c('MAT-32-381', PROV_CIMA, 490, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-dhc005',
     nota: 'BOQUILLA LAVAMANO METAL DHC005 · artículo 7460215744954. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 676, {
+  c('MAT-32-381', PROV_CIMA, 676, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-12',
     nota: 'BOQUILLA LAVAMANO METAL DES-12 · artículo 7592032500991. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 255, {
+  c('MAT-32-381', PROV_CIMA, 255, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-14',
     nota: 'BOQUILLA LAVAMANO METAL DES-14 · artículo 7592032002099. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_CIMA, 530, {
+  c('MAT-32-381', PROV_CIMA, 530, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-1-1-4',
     nota: 'BOQUILLA LAVAMANO METAL 1 1/4 · artículo 091712350743. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_IBERICA, 2100, {
+  c('MAT-32-381', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desague-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose · artículo 017988. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_IBERICA, 5850, {
+  c('MAT-32-381', PROV_IBERICA, 5850, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose · artículo 015211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_IBERICA, 2200, {
+  c('MAT-32-381', PROV_IBERICA, 2200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Metal Sin Rebose · artículo 016641. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_IBERICA, 1500, {
+  c('MAT-32-381', PROV_IBERICA, 1500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-teka-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Metal Teka Con Rebose · artículo 011688 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_IBERICA, 5990, {
+  c('MAT-32-381', PROV_IBERICA, 5990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-pure-gold-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Pure Gold Metal Sin Rebose · artículo 015210. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_CERARTE, 1576.12, {
+  c('MAT-32-382', PROV_CERARTE, 1576.12, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33391 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 938.11, {
+  c('MAT-32-382', PROV_CERARTE, 938.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-31846 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 411.27, {
+  c('MAT-32-382', PROV_CERARTE, 411.27, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35226 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 544.6, {
+  c('MAT-32-382', PROV_CERARTE, 544.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33889 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 518.67, {
+  c('MAT-32-382', PROV_CERARTE, 518.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33891 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 367.2, {
+  c('MAT-32-382', PROV_CERARTE, 367.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35227 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 760.81, {
+  c('MAT-32-382', PROV_CERARTE, 760.81, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35249 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 878.71, {
+  c('MAT-32-382', PROV_CERARTE, 878.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35250 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 809.75, {
+  c('MAT-32-382', PROV_CERARTE, 809.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35247 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 834.57, {
+  c('MAT-32-382', PROV_CERARTE, 834.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35251 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_CERARTE, 567.32, {
+  c('MAT-32-382', PROV_CERARTE, 567.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-2',
     itbis: false,
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35866 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-372', PROV_IBERICA, 450, {
+  c('MAT-32-382', PROV_IBERICA, 450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-aqua-push-up-para-lavamanos-1-1-4-cromo-sin-rebose/',
     nota: 'Desagüe Aqua Push Up Para Lavamanos 1 1/4 Cromo Sin rebose · artículo 016364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 2500, {
+  c('MAT-32-382', PROV_IBERICA, 2500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-genebre-para-lavamanos-push-up-negro-mate-sin-rebose/',
     nota: 'Desagüe Genebre Para Lavamanos Push Up Negro Mate Sin Rebose · artículo 016507 · marca Genebre. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 1100, {
+  c('MAT-32-382', PROV_IBERICA, 1100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-1-1-4-cromo-flova/',
     nota: 'Desagüe Para Lavamanos 1 1/4 Cromo Flova · artículo 016454 · marca Flova. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 1700, {
+  c('MAT-32-382', PROV_IBERICA, 1700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Sin Rebose · artículo 015408. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 509.76, {
+  c('MAT-32-382', PROV_IBERICA, 509.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-blanco-fomi-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Blanco Fomi Con Rebose · artículo 015653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 265.5, {
+  c('MAT-32-382', PROV_IBERICA, 265.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Con Rebose · artículo 015009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_IBERICA, 5590, {
+  c('MAT-32-382', PROV_IBERICA, 5590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-proud-rose-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Proud Rose Sin Rebose · artículo 016066. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-373', PROV_CIMA, 970, {
+  c('MAT-32-383', PROV_CIMA, 970, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-24',
     nota: 'MANGUERA BOMBA TANQUE 24" · artículo 050025. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-374', PROV_CIMA, 475, {
+  c('MAT-32-384', PROV_CIMA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-36',
     nota: 'MANGUERA BOMBA TANQUE 36" · artículo 036058. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-375', PROV_CIMA, 895, {
+  c('MAT-32-385', PROV_CIMA, 895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60',
     nota: 'MANGUERA CALENTADOR 24 EVB-B60 · artículo 7501605513160. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-376', PROV_CIMA, 620, {
+  c('MAT-32-386', PROV_CIMA, 620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-1',
     nota: 'MANGUERA CALENTADOR HM 3/4 X 1 · artículo 091712482543. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-377', PROV_CIMA, 1071, {
+  c('MAT-32-387', PROV_CIMA, 1071, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-2',
     nota: 'MANGUERA CALENTADOR HM 3/4 X 2 · artículo 091712482550. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-377', PROV_CIMA, 685, {
+  c('MAT-32-387', PROV_CIMA, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hh-3-4-x-2',
     nota: 'MANGUERA CALENTADOR HH 3/4 X 2 · artículo 091712482529. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-378', PROV_CIMA, 1094, {
+  c('MAT-32-388', PROV_CIMA, 1094, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60-1',
     nota: 'MANGUERA CALENTADOR 60 VB-B60 · artículo 710631939913. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-379', PROV_CIMA, 50, {
+  c('MAT-32-389', PROV_CIMA, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-12',
     nota: 'MANGUERA POLIETILENO GAS 12 · artículo 017845. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-380', PROV_CIMA, 65, {
+  c('MAT-32-390', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-18',
     nota: 'MANGUERA POLIETILENO GAS 18 · artículo 251461. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-381', PROV_CIMA, 250, {
+  c('MAT-32-391', PROV_CIMA, 250, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-inodoro-16-pn-48176',
     nota: 'MANGUERA INODORO 16 PN-48176 · artículo 091712481768. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-382', PROV_CIMA, 535, {
+  c('MAT-32-392', PROV_CIMA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man-1',
     nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206653340. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-382', PROV_CIMA, 693, {
+  c('MAT-32-392', PROV_CIMA, 693, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man',
     nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206691892. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-382', PROV_CIMA, 1940, {
+  c('MAT-32-392', PROV_CIMA, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-20m-man',
     nota: 'MANGUERA JARDIN 1/2 X 20M MAN- · artículo 7501206653388. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-382', PROV_CIMA, 1883, {
+  c('MAT-32-392', PROV_CIMA, 1883, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-15m-man',
     nota: 'MANGUERA JARDIN 1/2 X 15M MAN- · artículo 7501206660867. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-383', PROV_CIMA, 1475, {
+  c('MAT-32-393', PROV_CIMA, 1475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refo-1-2-x-100',
     nota: 'MANGUERA JARDIN REFO 1/2 X 100 · artículo 822312003834. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-384', PROV_CIMA, 544, {
+  c('MAT-32-394', PROV_CIMA, 544, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-1-2-x-25',
     nota: 'MANGUERA JARDIN REFOR 1/2 X 25 · artículo 034574. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-385', PROV_CIMA, 1042, {
+  c('MAT-32-395', PROV_CIMA, 1042, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-lisa-1-2-x-50',
     nota: 'MANGUERA JARDIN LISA 1/2 X 50 · artículo 7460737001139. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-386', PROV_CIMA, 2741, {
+  c('MAT-32-396', PROV_CIMA, 2741, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-30m-man',
     nota: 'MANGUERA JARDIN 5/8 X 30M MAN- · artículo 7501206604861. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-386', PROV_CIMA, 2397, {
+  c('MAT-32-396', PROV_CIMA, 2397, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-25m-man',
     nota: 'MANGUERA JARDIN 5/8 X 25M MAN- · artículo 7501206604854. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-386', PROV_CIMA, 2054, {
+  c('MAT-32-396', PROV_CIMA, 2054, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-20m-man',
     nota: 'MANGUERA JARDIN 5/8 X 20M MAN- · artículo 7501206604847. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-387', PROV_CIMA, 1365, {
+  c('MAT-32-397', PROV_CIMA, 1365, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-5-8-x-75',
     nota: 'MANGUERA JARDIN REFOR 5/8 X 75 · artículo 022178. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-388', PROV_CIMA, 556, {
+  c('MAT-32-398', PROV_CIMA, 556, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-48',
     nota: 'MANGUERA LAVADORA GOMA 48 · artículo 040003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-389', PROV_CIMA, 410, {
+  c('MAT-32-399', PROV_CIMA, 410, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-60',
     nota: 'MANGUERA LAVADORA GOMA 60 · artículo 010345. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-390', PROV_CIMA, 375, {
+  c('MAT-32-400', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-72',
     nota: 'MANGUERA LAVADORA GOMA 72 · artículo 7460126802125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-391', PROV_CIMA, 384, {
+  c('MAT-32-401', PROV_CIMA, 384, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-2',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931498. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-391', PROV_CIMA, 295, {
+  c('MAT-32-401', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-1',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 71063193498. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-391', PROV_CIMA, 451, {
+  c('MAT-32-401', PROV_CIMA, 451, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931504. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-392', PROV_CIMA, 265, {
+  c('MAT-32-402', PROV_CIMA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-16-pn-48131',
     nota: 'MANGUERA LAVAMANOS 16 PN-48131 · artículo 091712481317. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-393', PROV_CIMA, 325, {
+  c('MAT-32-403', PROV_CIMA, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-20-pn-48132',
     nota: 'MANGUERA LAVAMANOS 20 PN-48132 · artículo 091712481324. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-394', PROV_CIMA, 425, {
+  c('MAT-32-404', PROV_CIMA, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al-1',
     nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 710631931313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-394', PROV_CIMA, 365, {
+  c('MAT-32-404', PROV_CIMA, 365, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al',
     nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 7501605502119. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-394', PROV_CIMA, 499, {
+  c('MAT-32-404', PROV_CIMA, 499, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-vl',
     nota: 'MANGUERA METAL LAVAMANOS 22 VL · artículo 7501605507114. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-395', PROV_CIMA, 265, {
+  c('MAT-32-405', PROV_CIMA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48135',
     nota: 'MANGUERA LAVAMANOS 24 PN-48135 · artículo 091712481355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-395', PROV_CIMA, 293, {
+  c('MAT-32-405', PROV_CIMA, 293, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48127',
     nota: 'MANGUERA LAVAMANOS 24 PN-48127 · artículo 091712481270. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-396', PROV_CIMA, 505, {
+  c('MAT-32-406', PROV_CIMA, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-3-8-eal-r55',
     nota: 'MANGUERA LAVAMANOS 3/8 EAL-R55 · artículo 710631905635. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-397', PROV_CIMA, 198, {
+  c('MAT-32-407', PROV_CIMA, 198, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-20',
     nota: 'MANGUERA LAVAMANOS 3/8 X 32 · artículo 7460215730049. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-398', PROV_CIMA, 330, {
+  c('MAT-32-408', PROV_CIMA, 330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-30-pn-48128',
     nota: 'MANGUERA LAVAMANOS 30 PN-48128 · artículo 091712481287. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-399', PROV_CIMA, 319, {
+  c('MAT-32-409', PROV_CIMA, 319, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-36-pn-48129',
     nota: 'MANGUERA LAVAMANOS 36 PN-48129 · artículo 091712481294. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-400', PROV_CIMA, 195, {
+  c('MAT-32-410', PROV_CIMA, 195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-3-8-x-20',
     nota: 'MANGUERA MEZC/ MONO 3/8 X 20 · artículo 010744. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-401', PROV_CIMA, 297, {
+  c('MAT-32-411', PROV_CIMA, 297, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-32-od',
     nota: 'MANGUERA MEZC/ MONO 32 OD · artículo 01012045. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-402', PROV_CIMA, 25, {
+  c('MAT-32-412', PROV_CIMA, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-5-16',
     nota: 'MANGUERA TRANSPARENTE 5/16 · artículo 051576. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-403', PROV_CIMA, 47, {
+  c('MAT-32-413', PROV_CIMA, 47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-ma-1-2',
     nota: 'MANGUERA TRANSPARENTE MA 1/2 · artículo 055583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-403', PROV_CIMA, 40, {
+  c('MAT-32-413', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-2',
     nota: 'MANGUERA TRANSPARENTE 1/2 · artículo 051577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-404', PROV_CIMA, 35, {
+  c('MAT-32-414', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-4',
     nota: 'MANGUERA TRANSPARENTE 1/4 · artículo 051575. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-405', PROV_CIMA, 100, {
+  c('MAT-32-415', PROV_CIMA, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1',
     nota: 'MANGUERA TRANSPARENTE 1 · artículo 051572. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-406', PROV_CIMA, 36, {
+  c('MAT-32-416', PROV_CIMA, 36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-4',
     nota: 'MANGUERA TRANSPARENTE 3/4 · artículo 051579. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-407', PROV_CIMA, 32, {
+  c('MAT-32-417', PROV_CIMA, 32, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-8',
     nota: 'MANGUERA TRANSPARENTE 3/8 · artículo 051573. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-408', PROV_CIMA, 45, {
+  c('MAT-32-418', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-ctf-1-2-rollo-12520',
     nota: 'TEFLON CTF-1/2 ROLLO 12520 · artículo 7501206641675. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-409', PROV_CIMA, 75, {
+  c('MAT-32-419', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-1-x-13m-ctf-1',
     nota: 'TEFLON 1 X 13M CTF-1 · artículo 7506240602590. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-410', PROV_CIMA, 175, {
+  c('MAT-32-420', PROV_CIMA, 175, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-ind-3-4-ctf-3-4x13x',
     nota: 'TEFLON IND 3/4 CTF-3/4X13X · artículo 7506240602583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-410', PROV_CIMA, 60, {
+  c('MAT-32-420', PROV_CIMA, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-3-4-x-7-ctf-3-4',
     nota: 'TEFLON 3/4 X 7 CTF-3/4 · artículo 7501206641682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-411', PROV_CIMA, 304, {
+  c('MAT-32-421', PROV_CIMA, 304, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
     nota: 'CINTA PLOMERO 3/16 x 15 · artículo 4710277065485. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-412', PROV_CIMA, 2525, {
+  c('MAT-32-422', PROV_CIMA, 2525, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-2-x-50',
     nota: 'CINTA PLOMERO 1/2 x 50 · artículo 4710277021368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-413', PROV_CIMA, 412, {
+  c('MAT-32-423', PROV_CIMA, 412, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-8-x-25-pies',
     nota: 'CINTA PLOMERO 1/8 X 25 PIES · artículo 4710277019389. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-414', PROV_CIMA, 979, {
+  c('MAT-32-424', PROV_CIMA, 979, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-16oz-wet-dry-sm-24',
     nota: 'CEMENTO PVC 16oz WET DRY SM-24 · artículo 718594024868. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-415', PROV_CIMA, 1765, {
+  c('MAT-32-425', PROV_CIMA, 1765, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-32oz-w-d-sm-248-5',
     nota: 'CEMENTO PVC 32oz W D SM-248-5 · artículo 718594024851. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-416', PROV_CIMA, 415, {
+  c('MAT-32-426', PROV_CIMA, 415, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-wet-dry-sm-248',
     nota: 'CEMENTO PVC 4oz WET DRY SM-248 · artículo 718594024882. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-416', PROV_CIMA, 368, {
+  c('MAT-32-426', PROV_CIMA, 368, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-super-4oz-sm-244-8',
     nota: 'CEMENTO PVC SUPER 4oz SM-244-8 · artículo 718594024486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-416', PROV_CIMA, 335, {
+  c('MAT-32-426', PROV_CIMA, 335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-cleaner-4oz-sm-245',
     nota: 'CEMENTO PVC CLEANER 4oz SM-245 · artículo 718594024585. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-416', PROV_CIMA, 522, {
+  c('MAT-32-426', PROV_CIMA, 522, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-jet-dry-sm-258',
     nota: 'CEMENTO PVC 4oz JET-DRY SM-258 · artículo 718594025889. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-417', PROV_CIMA, 205, {
+  c('MAT-32-427', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-50ml-wet-dry-tp-24',
     nota: 'CEMENTO PVC 50ML WET DRY TP-24 · artículo 718594248103. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-418', PROV_CIMA, 567, {
+  c('MAT-32-428', PROV_CIMA, 567, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-wet-dry-sm-248',
     nota: 'CEMENTO PVC 8oz WET-DRY SM-248 · artículo 718594024875. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-418', PROV_CIMA, 473, {
+  c('MAT-32-428', PROV_CIMA, 473, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
     nota: 'CEMENTO PVC 8oz SM-244-7 · artículo 718594024479. ' + SUPUESTO_ITBIS
   });

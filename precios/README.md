@@ -137,13 +137,13 @@ nada más. Un ítem sin monto (permisos, licencias) va con `null, null, null` y
 
 ### Estado actual de los datos
 
-El catálogo publica **1,516 ítems**, todos con precio real: **1,516 con precio de un
+El catálogo publica **1,609 ítems**, todos con precio real: **1,603 con precio de un
 comercio** que lo publica y 6 que van según tarifario oficial y no llevan monto. Los ítems
 que solo tenían estimación nuestra se retiraron del sitio (ver «Solo se publica lo que tiene
 precio real»).
 
-Detrás hay **5,323 cotizaciones** de **nueve comercios**. **209 ítems tienen precio de más
-de uno**, 67 tienen tres, 19 tienen cuatro y tres ya tienen cinco — entre ellos la funda de
+Detrás hay **5,871 cotizaciones** de **nueve comercios**. **242 ítems tienen precio de más
+de uno**, 71 tienen tres, 25 tienen cuatro y ocho ya tienen cinco — entre ellos la funda de
 cemento gris, que es el precio más consultado del país.
 
 Sustituir las estimaciones que quedan por cotizaciones reales es el trabajo pendiente más
@@ -337,7 +337,7 @@ Cualquiera de las dos herramientas de abajo la imprime al final. La más corta:
 node herramientas/generar-lote-precios.js 0
 ```
 
-Al 10/09/2026: **1,516 de 1,516 ítems publicados con precio real**. Los otros 6 del
+Al 10/09/2026: **1,603 de 1,603 ítems publicados con precio real**. Los otros 6 del
 catálogo van según tarifario oficial y no llevan precio por definición, así que no cuentan.
 Los 263 retirados no aparecen en esta cuenta: la herramienta de lotes solo recorre lo
 publicado, así que para seguir levantando precios hay que partir del Excel de retirados.
@@ -437,7 +437,7 @@ categoría y el sitemap se actualizan solos al correr el generador.
 
 ### Estado actual
 
-**5,323 cotizaciones reales cargadas · 1,516 ítems verificados, todos los publicados.**
+**5,871 cotizaciones reales cargadas · 1,603 ítems verificados, todos los publicados.**
 
 Dos tandas, todas de precios que los propios comercios publican:
 
@@ -585,7 +585,7 @@ entran los 118, pero lo valioso no son los ítems nuevos: son los **47 artículo
 sobre ítems que ya existían**. Ahí la mediana deja de ser un dato suelto, el comparativo
 del libro tiene dos columnas que comparar y el comprador ve con quién le conviene.
 
-Hoy hay **209 ítems con precio de más de un comercio**, 67 con tres y 19 con cuatro. El
+Hoy hay **242 ítems con precio de más de un comercio**, 71 con tres y 25 con cuatro. El
 más consultado de todos ya tiene mercado: la funda de cemento gris de 42.5 kg va de
 RD$ 535 a RD$ 655 entre Ferremix, Max, Cima e InnovaCentro.
 
@@ -897,7 +897,7 @@ Agrupar bien puede **bajar** la cuenta de «ítems con más de un precio» y mej
 catálogo al mismo tiempo: los cuatro inodoros de una pieza incluían dos que ya cruzaban, y
 al fundirse en uno la cuenta baja de dos a uno. El indicador que no engaña es otro:
 
-**el 51% de las cotizaciones ya cae sobre un ítem comparable** — 2,732 de 5,323.
+**el 54% de las cotizaciones ya cae sobre un ítem comparable** — 3,192 de 5,871.
 
 ### Una cotización formal: 134 líneas que valieron más que 468
 
@@ -1339,6 +1339,59 @@ económica) a RD$ 5,298 (Montó Nature), 14x. Es el mercado, no un error de agru
 económica contra premium del mismo producto—, pero conviene volver a mirarlo cuando entre un
 segundo comercio de pintura.
 
+## Ferremix: 12,583 filas, y el nombre roto
+
+El 10/09/2026 entra el catálogo completo de **Ferremix** (ferremix.com.do). Ferremix ya
+estaba en el directorio con dos precios levantados a mano; ahora es fuente completa: 12,583
+filas, 8,984 productos, **550 cotizaciones** sobre 135 ítems.
+
+Es el catálogo más extenso y el más sucio del directorio, y las dos cosas están
+relacionadas.
+
+### El nombre está roto; el slug no
+
+La columna «Producto» viene con letras comidas en cientos de artículos: «Ceramia» por
+cerámica, «Boma» por bomba, «Tomacorriene», «Bomillo», «Lave», «Valula», «Dispensaor e».
+Escribir expresiones contra eso sería clasificar mal en silencio.
+
+Pero el **slug de la URL** trae el nombre que el propio comercio escribió, bien:
+
+| Columna «Producto» | Slug de la URL |
+|---|---|
+| Boma periférica para agua de 1/2 hp | `bomba-periferica-1-2hp-altura-max-30m-uso-agricola` |
+| Ceramia hibrida 26 oz meguiars | `ceramica-hibrida-26-oz-meguiars` |
+
+Las reglas leen los dos: el slug para saber **qué** es la pieza y el nombre original para las
+**medidas**, porque el slug convierte las barras en espacios y «1/2» se vuelve «1 2». De 382
+artículos con «lave» por «llave», el slug lo trae bien en 343.
+
+### De 21 departamentos, siete
+
+Solo plomería, baños y grifería, electricidad, iluminación, pinturas, pisos y materiales de
+construcción tienen partidas de obra. Herramientas (1,667), hogar y decoración (836),
+automotriz, tornillería, jardinería, maquinaria, cerrajería, protección personal y los 2,920
+artículos que la propia tienda deja «sin departamento» quedan fuera enteros: es una
+ferretería general, no una lista de materiales. Se descartan además 1,836 agotados.
+
+### Lo que el precio delató
+
+Tres clasificaciones erróneas salieron a la luz porque abrían el rango del ítem de forma
+imposible, y se corrigieron en las reglas, no con un filtro de precio:
+
+- **Piezas sueltas del aparato** —cartucho, aireador, puño, vástago, cuello de repuesto,
+  pichorro, chapetón— caían en el ítem del aparato completo. «Mezcladora, de baño» iba de
+  RD$ 49 a RD$ 83,000; ahora arranca en RD$ 340.
+- **Las tapas** de interruptor y tomacorriente son la placa, no el aparato: son dos partidas
+  y se llevan diez veces de precio. «Interruptor doble» pasó de RD$ 39–4,515 a RD$ 45–429.
+- **Los paquetes**: «Juego de 2 bombillos 110w» es un precio por dos. Cualquier artículo cuyo
+  nombre diga «juego/set/pack/combo de N» queda fuera con ese motivo.
+
+### Lo que trajo
+
+La pintura deja de tener un solo comercio: **6 ítems de MAT-12 ya se comparan**, y el galón
+de acrílica tiene RD$ 375–430 de Ferremix contra RD$ 374–1,485 de Tonos y Colores. En
+eléctricos, MAT-10 sube a 204 ítems con 21 comparables.
+
 ## Filtro «Mis proveedores»
 
 Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios
@@ -1580,7 +1633,7 @@ tiene precio real**. Salieron del sitio:
 | Categorías que quedaron sin ningún ítem | 13 de 41 | hoja «Categorías»; sus páginas se borraron y redirigen a `/` |
 | Proveedores sin un solo precio confirmado | 74 de 80 | hoja «Proveedores», con los contactos públicos que se tenían |
 
-Quedan **1,522 ítems** (1,516 con precio de comercio y 6 de tarifario oficial), **28
+Quedan **1,609 ítems** (1,603 con precio de comercio y 6 de tarifario oficial), **28
 categorías** y **9 comercios** (Ochoa, Cima, Max, InnovaCentro, MC, Ferremix, CerArte,
 La Ibérica y Tonos y Colores).
 

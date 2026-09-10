@@ -70,9 +70,9 @@
   });
   p('Ferremix (Grupo Alterra)', {
     tipo:'cadena', canal:'detallista',
-    cats:['MAT-02','MAT-04','MAT-06','MAT-08','MAT-09','MAT-10','MAT-12'],
+    cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12','MAT-24','MAT-25','MAT-26','MAT-27','MAT-32','EQU-04'],
     zonas:['gsd'], web:'ferremix.com.do', wa:'18295373000', email:'soporteweb@ferremix.com.do', precios:true,
-    nota:'La cadena de mayor expansión reciente. Sucursales Villa Mella (849-507-0003) y Herrera (829-539-0078). Tienda en línea con precios en RD$.'
+    nota:'La cadena de mayor expansión reciente. Sucursales Villa Mella (849-507-0003) y Herrera (829-539-0078). Tienda en línea con 8,984 productos y precio por SKU. Es una ferretería general: de sus 21 departamentos solo siete traen partidas de obra. Su ficha no declara si el precio lleva ITBIS.'
   });
   p('Max Ferretería', {
     tipo:'cadena', canal:'detallista',
