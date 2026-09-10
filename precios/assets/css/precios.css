@@ -229,6 +229,10 @@ table{border-collapse:collapse;width:100%}
 
 .toggle-itbis{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--ink-soft);cursor:pointer;white-space:nowrap}
 .toggle-itbis input{width:16px;height:16px;accent-color:var(--navy)}
+.rango-precio{display:inline-flex;align-items:center;gap:.3rem;color:var(--ink-mute);font-size:.88rem}
+.rango-precio input{width:6.4rem;padding:.42rem .55rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.9rem;-moz-appearance:textfield}
+.rango-precio input::-webkit-outer-spin-button,.rango-precio input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.rango-precio input:focus{background:#fff;border-color:var(--blue-200)}
 
 .resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .9rem;font-size:.9rem;color:var(--ink-mute)}
 .resultado-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
@@ -278,15 +282,6 @@ table{border-collapse:collapse;width:100%}
 .badge-mes{background:#e9f6ee;color:#2f7d4c;border:1px solid #cfe9d9}
 .badge-viejo{background:#f5faf7;color:#6f9c80;border:1px solid #e2efe7}
 
-.btn-add{
-  border:1px solid var(--line);background:#fff;color:var(--navy);
-  width:34px;height:34px;border-radius:var(--r-sm);cursor:pointer;
-  display:inline-flex;align-items:center;justify-content:center;
-  transition:background .18s var(--ease),border-color .18s var(--ease),color .18s var(--ease);
-}
-.btn-add svg{width:17px;height:17px}
-.btn-add:hover{background:var(--navy);border-color:var(--navy);color:#fff}
-.btn-add.is-added{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
 
 .sin-resultados{text-align:center;padding:3.5rem 1rem;color:var(--ink-mute)}
 .sin-resultados h3{color:var(--ink);margin-bottom:.6rem}
@@ -404,35 +399,25 @@ tr.cot-mia td{background:var(--blue-50)}
 .btn-copiar.copiado{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
 .btn-mini{padding:.36rem .8rem;font-size:.85rem}
 .btn-mini.copiado{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
-td.acciones{white-space:nowrap;display:flex;gap:.4rem;justify-content:flex-end}
+td.acciones{white-space:nowrap;text-align:right}
+.btn-copiar-precio{width:26px;height:26px;margin-left:.4rem;vertical-align:middle}
+.btn-copiar-precio svg{width:13px;height:13px}
 
 /* ---------- nombre del ítem como desplegable ---------- */
-.item-toggle{
-  display:flex;align-items:flex-start;gap:.4rem;
-  background:none;border:0;padding:0;margin:0;cursor:pointer;text-align:left;width:100%;
+/* Un tag por comercio bajo el nombre; el pulsado manda el precio de la fila. */
+.item-provs{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.35rem}
+.tag-prov{
+  border:1px solid var(--line);background:#fff;border-radius:100px;
+  padding:.1rem .55rem;font-size:.72rem;line-height:1.3;color:var(--ink-soft);cursor:pointer;
+  transition:border-color .15s var(--ease),background .15s var(--ease),color .15s var(--ease);
 }
-.item-toggle svg{
-  width:15px;height:15px;flex-shrink:0;margin-top:.3em;color:var(--ink-mute);
-  transition:transform .2s var(--ease),color .2s var(--ease);
-}
-.item-toggle:hover svg{color:var(--navy)}
-.item-toggle:hover .item-nombre{color:var(--navy);text-decoration:underline}
-.item-toggle[aria-expanded="true"] svg{transform:rotate(180deg);color:var(--navy)}
+.tag-prov:hover{border-color:var(--blue-200);color:var(--navy)}
+.tag-prov[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 
-/* ---------- detalle de precios por proveedor ---------- */
-tr.fila-detalle > td{background:var(--bg-tint);padding:0}
-tr.fila-detalle:hover > td{background:var(--bg-tint)}
-.detalle{padding:1.2rem 1rem 1.4rem}
-.detalle-cab{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem}
 .detalle-titulo{
   font-family:Jost,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;color:var(--ink-mute);margin:0;
 }
-.tabla-detalle{box-shadow:none;background:#fff}
-.tabla-detalle .tabla{min-width:640px;font-size:.9rem}
-.tabla-detalle thead th{background:#fff;font-size:.72rem}
-.tabla-detalle td{padding:.65rem .9rem}
-.tabla-detalle tbody tr:hover{background:var(--blue-50)}
 .precio-celda{font-family:Jost,sans-serif;font-weight:600;color:var(--navy);white-space:nowrap}
 tr.cot-referencia td{background:var(--blue-50)}
 tr.cot-referencia:hover td{background:var(--blue-50)}
@@ -634,9 +619,11 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* El descargo completo, como segunda columna. Crece algo más que la
    columna de identidad para que la frase de la cotización formal quepa
    en dos renglones y el aviso siga sin aportar altura. */
-.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.4rem .7rem;gap:.55rem}
-.aviso-fila svg{width:17px;height:17px;margin-top:.16rem}
-.aviso-fila p{font-size:.84rem;line-height:1.25rem}
+.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.1rem 0;gap:.55rem;background:none;border:0;border-radius:0}
+.aviso-fila svg{width:17px;height:17px;margin-top:.2rem;color:var(--navy-400)}
+.aviso-fila p{font-size:.84rem;line-height:1.25rem;color:var(--ink-soft)}
+.aviso-fila strong{color:var(--navy)}
+.aviso-fila a{color:var(--navy-400)}
 /* Solo cuando sobra ancho: a 390px esta frase añade un cuarto renglón y
    rompe el techo de 143px. El texto íntegro vive en metodologia.html. */
 .aviso-largo{display:none}
@@ -649,7 +636,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   /* Redundantes con el h1 en pantalla estrecha: se van y liberan el
      renglón; quedan las dos cifras. */
   .portada-tag,.portada-desc{display:none}
-  .aviso-fila{padding:.35rem .6rem;gap:.5rem}
+  .aviso-fila{padding:0;gap:.5rem}
   .aviso-fila svg{width:15px;height:15px}
   .aviso-fila p{font-size:.8rem;line-height:1.1rem}
 }
@@ -676,6 +663,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .tools-row{gap:.4rem .5rem}
   .search-box input{padding:.4rem .7rem .4rem 2.3rem}
   .select{font-size:.86rem;padding:.38rem .55rem}
+  .rango-precio input{width:5.6rem;font-size:.86rem;padding:.38rem .5rem}
   .toggle-itbis{font-size:.84rem}
   .tools-row .btn-mini{padding:.32rem .65rem;font-size:.82rem}
   .filtros{margin-top:.45rem;gap:.35rem}
@@ -694,11 +682,14 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .about-copy .lead{font-size:1.16rem;color:var(--ink);line-height:1.6}
 .about-copy p{color:var(--ink-soft)}
 .about-copy .lead strong{color:var(--navy);font-weight:600}
-.values{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem 2rem;margin-top:2.8rem;padding-top:2.4rem;border-top:1px solid var(--line)}
-.values h3{font-size:1.02rem;font-weight:600;color:var(--navy);margin-bottom:.35rem;padding-left:.9rem;position:relative}
-.values h3::before{content:"";position:absolute;left:0;top:.35em;width:3px;height:1em;background:var(--blue);border-radius:2px}
-.values p{font-size:.94rem;color:var(--ink-mute);margin:0;padding-left:.9rem}
-@media (max-width:560px){.values{grid-template-columns:1fr}}
+.about-copy .section-head{margin-bottom:1.2rem}
+.obras-titulo{font-size:1.02rem;font-weight:600;color:var(--navy);margin:1.8rem 0 .8rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.obras{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem 2rem;list-style:none;padding:0;margin:0}
+.obras li{padding-left:.9rem;position:relative}
+.obras li::before{content:"";position:absolute;left:0;top:.45em;width:3px;height:1em;background:var(--blue);border-radius:2px}
+.obras strong{display:block;color:var(--navy);font-weight:600;font-size:.98rem}
+.obras span{font-size:.88rem;color:var(--ink-mute)}
+@media (max-width:560px){.obras{grid-template-columns:1fr}}
 .founder{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--navy-800),var(--navy-700));color:#fff;border-radius:var(--r);padding:2.4rem 2.1rem;box-shadow:var(--shadow-lg)}
 .founder-mark{position:absolute;right:-32px;top:-28px;width:180px;opacity:.13;pointer-events:none}
 .founder-role{font-family:Jost,sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-200);margin:0 0 .5rem}
@@ -708,3 +699,40 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .founder-facts li:first-child{padding-top:0;border-top:0}
 .fact-k{font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(177,211,255,.72)}
 .fact-v{font-size:.97rem;color:rgba(233,241,252,.9);line-height:1.5}
+
+/* =========================================================
+   BANNERS LATERALES
+   Solo cuando sobra margen: el contenido mide 1240 px y cada banner
+   necesita unos 200 más por lado. Por debajo, la franja azul ya lleva
+   la llamada. app.js los monta en todas las páginas.
+   ========================================================= */
+.banner-lateral{display:none}
+@media (min-width:1700px){
+  .banner-lateral{
+    /* Por encima de la barra de filtros (40), que es pegajosa y ocupa todo el
+       ancho; por debajo de la cabecera (60) y del panel de la lista (90). */
+    display:block;position:fixed;top:50%;transform:translateY(-50%);z-index:50;
+    width:188px;padding:1.3rem 1.15rem 1.2rem;border-radius:var(--r);
+    background:linear-gradient(165deg,var(--navy-800),var(--navy-700));color:#fff;
+    box-shadow:var(--shadow-lg);
+  }
+  .banner-izq{left:max(12px,calc((100vw - var(--shell)) / 2 - 188px - 28px))}
+  .banner-der{right:max(12px,calc((100vw - var(--shell)) / 2 - 188px - 28px))}
+  .banner-iso{width:38px;height:auto;display:block;margin-bottom:.7rem;opacity:.95}
+  .banner-marca{font-family:Jost,sans-serif;font-weight:600;font-size:1.02rem;line-height:1.2;margin:0 0 .3rem;color:#fff}
+  .banner-servicios{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-200);margin:0 0 .9rem}
+  .banner-msj{font-size:.86rem;line-height:1.4;color:rgba(233,241,252,.85);margin:0 0 .9rem}
+  .banner-cta{width:100%;--btn-bg:var(--blue);padding:.55rem .8rem;font-size:.9rem}
+  .banner-cta[aria-expanded="true"]{--btn-bg:var(--blue-200);color:var(--navy)}
+  .banner-contacto{display:grid;gap:.45rem;margin-top:.7rem}
+  .banner-contacto[hidden]{display:none}
+  .banner-opcion{
+    display:flex;align-items:center;gap:.55rem;padding:.5rem .6rem;border-radius:var(--r-sm);
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;text-decoration:none;
+    font-size:.84rem;font-weight:500;line-height:1.2;
+  }
+  .banner-opcion:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3)}
+  .banner-opcion svg{width:18px;height:18px;flex-shrink:0;color:var(--blue-200)}
+  .banner-opcion small{display:block;font-weight:400;font-size:.68rem;color:rgba(233,241,252,.7);margin-top:.1rem;overflow-wrap:anywhere}
+}
+@media print{.banner-lateral{display:none}}

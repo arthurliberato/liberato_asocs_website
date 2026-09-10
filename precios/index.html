@@ -122,8 +122,8 @@
     </div>
 
     <div class="aviso aviso-fila">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-      <p><strong>Precios de referencia, no cotizaciones.</strong><span class="aviso-largo"> Ninguno es una cotización formal a su nombre.</span> Cada ítem lleva el precio que el comercio publica, con su fecha. <a href="metodologia.html">Metodología →</a></p>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg>
+      <p><strong>Precios compartidos por proveedores, no cotizaciones.</strong><span class="aviso-largo"> Ninguno es una cotización formal a su nombre.</span> Cada ítem lleva el precio que el comercio publica, con su fecha. <a href="metodologia.html">Metodología →</a></p>
     </div>
 
   </div>
@@ -143,9 +143,6 @@
         <input id="q" type="search" placeholder="Buscar: cemento, varilla 1/2, bloque 6, plafón…" autocomplete="off">
       </div>
 
-      <label class="visually-hidden" for="f-cat">Categoría</label>
-      <select class="select" id="f-cat"></select>
-
       <label class="visually-hidden" for="orden">Ordenar por</label>
       <select class="select" id="orden">
         <option value="cat">Orden del catálogo</option>
@@ -158,6 +155,14 @@
         <input type="checkbox" id="f-itbis"> Ver sin ITBIS
       </label>
 
+      <div class="rango-precio" role="group" aria-label="Filtrar por precio">
+        <label class="visually-hidden" for="f-min">Precio mínimo</label>
+        <input id="f-min" type="number" min="0" inputmode="decimal" placeholder="Precio mín.">
+        <span aria-hidden="true">–</span>
+        <label class="visually-hidden" for="f-max">Precio máximo</label>
+        <input id="f-max" type="number" min="0" inputmode="decimal" placeholder="máx.">
+      </div>
+
       <button class="btn btn-ghost btn-mini" type="button" data-copiar-tabla>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copiar tabla
@@ -168,8 +173,9 @@
       </a>
     </div>
 
+    <div class="filtros" id="chips-cat"></div>
     <div class="filtros" id="chips-etapa"></div>
-    <div class="filtros" id="chips-gama"></div>
+    <div class="filtros" id="chips-prov"></div>
   </div>
 </div>
 
@@ -188,7 +194,7 @@
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
             <th scope="col">Última actualización</th>
-            <th scope="col" class="num"><span class="visually-hidden">Agregar a la lista</span></th>
+            <th scope="col" class="num">Copiar fila</th>
           </tr>
         </thead>
         <tbody id="tabla-body"></tbody>
@@ -203,15 +209,17 @@
     </div>
 
     <p style="margin-top:1.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
-      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
-      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
-      Google Sheets se reparte en columnas (código, ítem, proveedor, precio, unidad, fecha…).
+      Bajo cada ítem están los comercios que lo venden: pulse uno y el precio de la fila pasa
+      a ser el suyo, con su fecha; púlselo otra vez y vuelve la referencia del mercado. El
+      botón junto al precio copia solo el número; el de la última columna copia la fila tal
+      como se ve, separada por tabuladores (al pegar en Excel o Google Sheets se reparte en
+      columnas). El comparativo completo, con código y especificación, está en el Excel.
       Salvo que el ítem diga otra cosa, el precio es de mostrador: material retirado en
       almacén, sin transporte.
       <br>
       Precio de referencia para el Gran Santo Domingo; cada ítem muestra su propia fecha.
-      Cada ítem muestra un solo número; el detalle por proveedor está en su ficha y el
-      comparativo completo, en el libro de Excel.
+      Cada ítem muestra un solo número; el de cada comercio se ve pulsando su nombre y el
+      comparativo completo está en el libro de Excel.
       <a href="metodologia.html">Cómo se arman y se actualizan estos precios →</a>
       · <a href="#categorias">Ver las categorías, una página por cada una →</a>
     </p>

@@ -193,8 +193,8 @@ const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 </aside>`;
 
 const AVISO = `<div class="aviso">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de referencia, no cotizaciones.</strong> Cada ítem lleva el precio que el
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg>
+  <p><strong>Precios compartidos por proveedores, no cotizaciones.</strong> Cada ítem lleva el precio que el
      propio comercio publica en línea o cotizó por escrito, con su fecha, y sale marcado como
      <em>Verificado</em>. Ninguno es una cotización formal a su nombre: sirven para dimensionar
      un presupuesto, no para cerrar una compra.
@@ -207,6 +207,26 @@ const AVISO = `<div class="aviso">
    envejece cada día. El HTML trae la fecha en data-fecha y, como texto de
    respaldo sin JavaScript, la fecha misma: así el archivo no cambia de un
    día para otro y la regeneración sigue siendo idempotente. */
+/* Los dos botones de copiar de la fila: el del precio copia el número; el
+   de la última columna, la fila tal como se ve. app.js hace el trabajo. */
+const ICONO_COPIAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+function botonCopiarPrecio(it) {
+  return ` <button class="btn-copiar btn-copiar-precio" type="button" data-copiar-monto="${esc(it.codigo)}" aria-label="Copiar el precio de ${esc(it.nombre)}" title="Copiar el precio">${ICONO_COPIAR}</button>`;
+}
+/* Mismo criterio que app.js: un tag por comercio que vende al público y en
+   la misma unidad; el nombre corto, sin «Ferretería» ni paréntesis. */
+function nombreTag(nombre) {
+  return String(nombre).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
+}
+function tagsProveedores(it) {
+  const vistos = new Set();
+  const qs = (it.cotizaciones || []).filter((q) => q.cuenta && !vistos.has(q.proveedor.nombre) && vistos.add(q.proveedor.nombre));
+  if (!qs.length) return '';
+  return '<span class="item-provs">' + qs.map((q) => {
+    const titulo = 'RD$ ' + Math.round(q.precioNormalizado).toLocaleString('en-US') + (q.fecha ? ' · ' + q.fecha : '') + (q.nota ? ' · ' + String(q.nota).slice(0, 160) : '');
+    return `<button class="tag-prov" type="button" data-item-prov="${esc(it.codigo)}" data-prov="${esc(q.proveedor.nombre)}" aria-pressed="false" title="${esc(titulo)}">${esc(nombreTag(q.proveedor.nombre))}</button>`;
+  }).join('') + '</span>';
+}
 const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
 function badgeFecha(it) {
   const f = String(it.fecha || '');
@@ -232,25 +252,18 @@ function fila(it) {
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
 
-  /* La ficha de precios por proveedor NO se escribe aquí. app.js la genera
-     al abrirla, siempre desde los datos, para que refleje el filtro de
-     proveedores y el interruptor de ITBIS del momento: lo que viniera
-     escrito en el HTML se sobrescribiría en el primer clic. Dejarlo fuera
-     bajó el peso de las 32 páginas de 3,167 KB a 1,665 KB. */
+  /* Bajo el nombre, un tag por comercio que vende el ítem; app.js hace que
+     al pulsarlo la fila muestre el precio de ese comercio. */
 
   return `          <tr data-item="${esc(it.codigo)}">
-            <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
-      (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') + `</td>
+            <td><span class="item-nombre">${esc(it.nombre)}</span>` +
+      (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') + tagsProveedores(it) + `</td>
             <td><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
-            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
+            <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}${it.ref === null ? '' : botonCopiarPrecio(it)}</td>
             <td class="celda-estado">${badgeFecha(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
-            <td class="num acciones">` +
-      `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
-      (it.ref === null ? '' :
-        `<button class="btn-add" type="button" data-add="${esc(it.codigo)}" data-nombre="${esc(it.nombre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`) + `</td>
-          </tr>
-          <tr class="fila-detalle" hidden><td colspan="6"></td></tr>`;
+            <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-fila="${esc(it.codigo)}" aria-label="Copiar la fila de ${esc(it.nombre)}" title="Copiar la fila">${ICONO_COPIAR}</button></td>
+          </tr>`;
 }
 
 /* Enlace al libro de Excel. Lo genera herramientas/generar-excel.py y va
@@ -423,7 +436,7 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
             <th scope="col">Última actualización</th>
-            <th scope="col" class="num"><span class="visually-hidden">Agregar a la lista</span></th>
+            <th scope="col" class="num">Copiar fila</th>
           </tr>
         </thead>
         <tbody id="tabla-estatica">
@@ -433,9 +446,10 @@ ${items.map(fila).join('\n')}
     </div>
 
     <p style="margin-top:1.2rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
-      Pulse el nombre de un ítem para ver su precio por proveedor. Los botones de copiar
-      llevan la fila al portapapeles en formato de hoja de cálculo: al pegar en Excel o
-      Google Sheets se reparte en columnas. Salvo que el ítem diga otra cosa, el precio es
+      Bajo cada ítem están los comercios que lo venden: pulse uno y el precio de la fila pasa
+      a ser el suyo, con su fecha; púlselo otra vez y vuelve la referencia del mercado. El
+      botón junto al precio copia solo el número; el de la última columna copia la fila tal
+      como se ve, separada por tabuladores. Salvo que el ítem diga otra cosa, el precio es
       de mostrador: material retirado en almacén, sin transporte.
     </p>
 
