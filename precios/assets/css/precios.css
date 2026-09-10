@@ -401,6 +401,10 @@ tr.cot-mia td{background:var(--blue-50)}
 .btn-mini.copiado{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
 td.acciones{white-space:nowrap;text-align:right}
 .btn-copiar-precio{width:26px;height:26px;margin-left:.4rem;vertical-align:middle}
+/* Los dos botones bajo la tabla: cargar otra página o cargarlo todo. */
+.tabla-mas{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.9rem}
+.tabla-mas[hidden]{display:none}
+.tabla-mas-cuenta{font-size:.86rem;color:var(--ink-mute);margin-right:.3rem;font-variant-numeric:tabular-nums}
 .btn-copiar-precio svg{width:13px;height:13px}
 
 /* ---------- nombre del ítem como desplegable ---------- */
@@ -468,7 +472,8 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .prov-tipo{font-size:.76rem;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-top:.25rem}
 .prov-nota{font-size:.88rem;color:var(--ink-soft);margin:0}
 .prov-cats{display:flex;flex-wrap:wrap;gap:.3rem}
-.tag{font-size:.72rem;background:var(--bg-tint);border:1px solid var(--line);color:var(--ink-soft);border-radius:var(--r-sm);padding:.14rem .45rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+/* Ya no lleva códigos sino nombres de categoría: tipografía normal. */
+.tag{font-size:.75rem;background:var(--bg-tint);border:1px solid var(--line);color:var(--ink-soft);border-radius:100px;padding:.14rem .6rem}
 .prov-contacto{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:auto;padding-top:.85rem;border-top:1px solid var(--line)}
 .prov-contacto a{
   display:inline-flex;align-items:center;gap:.35rem;font-size:.84rem;text-decoration:none;
@@ -703,36 +708,52 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* =========================================================
    BANNERS LATERALES
    Solo cuando sobra margen: el contenido mide 1240 px y cada banner
-   necesita unos 200 más por lado. Por debajo, la franja azul ya lleva
-   la llamada. app.js los monta en todas las páginas.
+   necesita unos 200 más por lado. Van del color de la página, no de un
+   recuadro oscuro: acompañan, no interrumpen. Se pliegan con una flecha
+   y se quedan plegados hasta que se cierre la pestaña.
    ========================================================= */
 .banner-lateral{display:none}
 @media (min-width:1700px){
   .banner-lateral{
-    /* Por encima de la barra de filtros (40), que es pegajosa y ocupa todo el
-       ancho; por debajo de la cabecera (60) y del panel de la lista (90). */
+    /* Por encima de la barra de filtros (40), que es pegajosa y ocupa todo
+       el ancho; por debajo de la cabecera (60) y del panel de la lista (90). */
     display:block;position:fixed;top:50%;transform:translateY(-50%);z-index:50;
-    width:188px;padding:1.3rem 1.15rem 1.2rem;border-radius:var(--r);
-    background:linear-gradient(165deg,var(--navy-800),var(--navy-700));color:#fff;
-    box-shadow:var(--shadow-lg);
+    width:192px;padding:1.1rem 1rem 1.05rem;border-radius:var(--r);
+    background:var(--bg-tint);border:1px solid var(--line);color:var(--ink-soft);
+    transition:width .22s var(--ease),padding .22s var(--ease);
   }
-  .banner-izq{left:max(12px,calc((100vw - var(--shell)) / 2 - 188px - 28px))}
-  .banner-der{right:max(12px,calc((100vw - var(--shell)) / 2 - 188px - 28px))}
-  .banner-iso{width:38px;height:auto;display:block;margin-bottom:.7rem;opacity:.95}
-  .banner-marca{font-family:Jost,sans-serif;font-weight:600;font-size:1.02rem;line-height:1.2;margin:0 0 .3rem;color:#fff}
-  .banner-servicios{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-200);margin:0 0 .9rem}
-  .banner-msj{font-size:.86rem;line-height:1.4;color:rgba(233,241,252,.85);margin:0 0 .9rem}
-  .banner-cta{width:100%;--btn-bg:var(--blue);padding:.55rem .8rem;font-size:.9rem}
-  .banner-cta[aria-expanded="true"]{--btn-bg:var(--blue-200);color:var(--navy)}
-  .banner-contacto{display:grid;gap:.45rem;margin-top:.7rem}
+  .banner-izq{left:max(12px,calc((100vw - var(--shell)) / 2 - 192px - 28px))}
+  .banner-der{right:max(12px,calc((100vw - var(--shell)) / 2 - 192px - 28px))}
+  .banner-plegar{
+    position:absolute;top:.5rem;width:26px;height:26px;padding:0;
+    border:1px solid var(--line);background:#fff;border-radius:var(--r-sm);
+    color:var(--ink-mute);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+  }
+  .banner-plegar:hover{border-color:var(--blue-200);color:var(--navy)}
+  .banner-plegar svg{width:14px;height:14px;transition:transform .22s var(--ease)}
+  .banner-izq .banner-plegar{right:.5rem}
+  .banner-der .banner-plegar{left:.5rem}
+  .banner-iso{width:34px;height:auto;display:block;margin-bottom:.6rem}
+  .banner-marca{font-family:Jost,sans-serif;font-weight:600;font-size:.98rem;line-height:1.2;margin:0 0 .28rem;color:var(--navy)}
+  .banner-servicios{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-400);margin:0 0 .8rem}
+  .banner-msj{font-size:.84rem;line-height:1.4;color:var(--ink-soft);margin:0 0 .8rem}
+  .banner-cta{width:100%;padding:.5rem .8rem;font-size:.88rem}
+  .banner-contacto{display:grid;gap:.4rem;margin-top:.6rem}
   .banner-contacto[hidden]{display:none}
   .banner-opcion{
-    display:flex;align-items:center;gap:.55rem;padding:.5rem .6rem;border-radius:var(--r-sm);
-    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;text-decoration:none;
-    font-size:.84rem;font-weight:500;line-height:1.2;
+    display:flex;align-items:center;gap:.5rem;padding:.45rem .55rem;border-radius:var(--r-sm);
+    background:#fff;border:1px solid var(--line);color:var(--navy);text-decoration:none;
+    font-size:.82rem;font-weight:500;line-height:1.2;
   }
-  .banner-opcion:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3)}
-  .banner-opcion svg{width:18px;height:18px;flex-shrink:0;color:var(--blue-200)}
-  .banner-opcion small{display:block;font-weight:400;font-size:.68rem;color:rgba(233,241,252,.7);margin-top:.1rem;overflow-wrap:anywhere}
+  .banner-opcion:hover{border-color:var(--blue-200);background:var(--blue-50)}
+  .banner-opcion svg{width:17px;height:17px;flex-shrink:0;color:var(--navy-400)}
+  .banner-opcion small{display:block;font-weight:400;font-size:.68rem;color:var(--ink-mute);margin-top:.1rem;overflow-wrap:anywhere}
+
+  /* Plegado: queda una pestaña con la flecha, que ya apunta al otro lado. */
+  .banner-lateral.plegado{width:38px;padding:.4rem}
+  .banner-lateral.plegado > :not(.banner-plegar){display:none}
+  .banner-lateral.plegado .banner-plegar{position:static;margin:0 auto}
+  .banner-izq.plegado .banner-plegar svg{transform:rotate(180deg)}
+  .banner-der.plegado .banner-plegar svg{transform:rotate(180deg)}
 }
 @media print{.banner-lateral{display:none}}
