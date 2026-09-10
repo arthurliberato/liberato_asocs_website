@@ -2,5 +2,21 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": false,
   "trailingSlash": false,
+  "redirects": [
+    {"source": "/catalogo.html", "destination": "/", "permanent": true},
+    {"source": "/precio-hormigon-premezclado.html", "destination": "/", "permanent": true},
+    {"source": "/precio-blocks-prefabricados.html", "destination": "/", "permanent": true},
+    {"source": "/precio-puertas-ventanas-cristales.html", "destination": "/", "permanent": true},
+    {"source": "/precio-ferreteria-fijaciones.html", "destination": "/", "permanent": true},
+    {"source": "/precio-aire-acondicionado-ventilacion.html", "destination": "/", "permanent": true},
+    {"source": "/precio-equipos-seguridad-industrial.html", "destination": "/", "permanent": true},
+    {"source": "/precio-jornal-mano-de-obra.html", "destination": "/", "permanent": true},
+    {"source": "/precio-mano-de-obra-por-partida.html", "destination": "/", "permanent": true},
+    {"source": "/precio-honorarios-diseno-supervision.html", "destination": "/", "permanent": true},
+    {"source": "/precio-demolicion-movimiento-tierra-bote.html", "destination": "/", "permanent": true},
+    {"source": "/precio-alquiler-maquinaria-pesada.html", "destination": "/", "permanent": true},
+    {"source": "/precio-alquiler-equipos-construccion.html", "destination": "/", "permanent": true},
+    {"source": "/precio-alquiler-andamios-formaleta.html", "destination": "/", "permanent": true}
+  ],
   "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."
 }

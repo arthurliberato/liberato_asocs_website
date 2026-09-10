@@ -58,10 +58,10 @@
   function nombreCat(codigo) { return catPorCodigo[codigo] ? catPorCodigo[codigo].nombre : codigo; }
 
   /* Cada categoría tiene su página estática; es a donde deben apuntar los
-     enlaces internos, no a catalogo.html?cat=… */
+     enlaces internos, no al catálogo filtrado (./?cat=…). */
   function urlCat(codigo) {
     var c = catPorCodigo[codigo];
-    return c && c.slug ? c.slug + '.html' : 'catalogo.html?cat=' + encodeURIComponent(codigo);
+    return c && c.slug ? c.slug + '.html' : './?cat=' + encodeURIComponent(codigo);
   }
 
   /* El orden natural del catálogo es el de los grupos (MAT → MOS → EQU),
@@ -1266,8 +1266,13 @@
       pintar();
     }
 
+    /* Se parte de la URL con la que llegó el visitante: los parámetros que no
+       son del catálogo (utm, fbclid…) se conservan y solo se reescriben los
+       seis del filtro. La ruta se normaliza a ./ para que /index.html no se
+       cuele en la barra de direcciones ni en la URL que la gente copia. */
     function actualizarURL() {
-      var p = new URLSearchParams();
+      var p = new URLSearchParams(window.location.search);
+      ['q', 'grupo', 'cat', 'etapa', 'gama', 'orden'].forEach(function (k) { p['delete'](k); });
       if (estado.q) p.set('q', estado.q);
       if (estado.grupo) p.set('grupo', estado.grupo);
       if (estado.cat) p.set('cat', estado.cat);
@@ -1275,7 +1280,7 @@
       if (estado.gama) p.set('gama', estado.gama);
       if (estado.orden !== 'cat') p.set('orden', estado.orden);
       var qs = p.toString();
-      window.history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+      window.history.replaceState(null, '', './' + (qs ? '?' + qs : '') + window.location.hash);
     }
 
     /* --- eventos --- */
@@ -1380,22 +1385,10 @@
       }).join('');
     }
 
-    /* buscador del hero: manda al catálogo */
-    var heroForm = $('#hero-form');
-    if (heroForm) {
-      heroForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var v = $('#hero-q').value.trim();
-        window.location.href = 'catalogo.html' + (v ? '?q=' + encodeURIComponent(v) : '');
-      });
-    }
-
     /* cifras de la portada */
-    var nItems = $('#n-items'), nCats = $('#n-cats'), nProv = $('#n-prov'), nPrecios = $('#n-precios');
+    var nItems = $('#n-items'), nCats = $('#n-cats');
     if (nItems) nItems.textContent = CAT.items.length;
     if (nCats) nCats.textContent = CAT.categorias.length;
-    if (nProv) nProv.textContent = PROV.lista.filter(function (p) { return !p.demo; }).length;
-    if (nPrecios) nPrecios.textContent = PROV.lista.filter(function (p) { return p.precios; }).length;
   })();
 
   /* =========================================================

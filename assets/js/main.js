@@ -262,38 +262,12 @@
     window.addEventListener('load', function () { setTimeout(revealAll, 2500); });
   }
 
-  /* ---------- contador de estadísticas ---------- */
-  if (!reduced && 'IntersectionObserver' in window) {
-    var countObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var el = entry.target;
-        countObs.unobserve(el);
-
-        var target = parseInt(el.dataset.count, 10);
-        var suffix = el.dataset.suffix || '';
-        if (isNaN(target)) return;
-
-        var start = null;
-        var dur = 1100;
-        function step(ts) {
-          if (start === null) start = ts;
-          var t = Math.min((ts - start) / dur, 1);
-          var eased = 1 - Math.pow(1 - t, 3);
-          el.textContent = Math.round(target * eased) + suffix;
-          if (t < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-      });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.stat-num').forEach(function (el) { countObs.observe(el); });
-  }
-
   /* ---------- resaltado del enlace activo ---------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-list a'));
+  /* Solo las anclas de la propia página: el enlace a precios.ingsliberato.com
+     no es un selector y hacía saltar todo el bloque. */
   var sections = navLinks
-    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .map(function (a) { var h = a.getAttribute('href'); return h && h.charAt(0) === '#' ? document.querySelector(h) : null; })
     .filter(Boolean);
 
   if (sections.length && 'IntersectionObserver' in window) {

@@ -233,26 +233,7 @@ ul{margin:0;padding:0;list-style:none}
 .hero-actions .btn-primary{background:var(--blue);color:var(--navy-900);font-weight:600}
 .hero-actions .btn-primary:hover{background:var(--blue-200)}
 
-.stats{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1px;
-  margin-top:clamp(3.5rem,7vw,6rem);
-  background:rgba(255,255,255,.12);
-  border-top:1px solid rgba(255,255,255,.12);
-}
-.stats li{
-  background:linear-gradient(165deg,var(--navy-800),var(--navy-700));
-  padding:1.8rem 1.4rem 2.2rem;
-  display:flex;flex-direction:column;gap:.35rem;
-}
-.stat-num{
-  font-family:Jost,sans-serif;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:600;
-  color:var(--blue);line-height:1;letter-spacing:-.02em;
-  font-variant-numeric:tabular-nums;
-}
-.stat-label{font-size:.88rem;color:rgba(233,241,252,.66);letter-spacing:.01em}
 @media (max-width:720px){
-  .stats{grid-template-columns:repeat(2,1fr)}
   .hero-mark{display:none}
 }
 
@@ -425,26 +406,6 @@ ul{margin:0;padding:0;list-style:none}
   background:var(--blue-50);color:var(--navy);
 }
 .projects-empty{text-align:center;color:var(--ink-mute);padding:3rem 0}
-
-/* =========================================================
-   COBERTURA
-   ========================================================= */
-.coverage{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:1px;background:#fff;
-  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
-}
-.coverage li{
-  background:#fff;padding:1.6rem 1.5rem;
-  box-shadow:0 0 0 1px var(--line);
-  display:flex;flex-direction:column;gap:.35rem;
-  transition:background .25s var(--ease);
-}
-.coverage li:hover{background:var(--blue-50)}
-.cov-name{
-  font-family:Jost,sans-serif;font-size:1.12rem;font-weight:600;color:var(--navy);
-}
-.cov-meta{font-size:.87rem;color:var(--ink-mute)}
 
 /* =========================================================
    CONTACTO

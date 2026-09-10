@@ -9,7 +9,7 @@
    NADA DE LO QUE HAY AQUÍ ES REAL.
 
    Todos los proveedores llevan «(demo)» en el nombre y la etiqueta
-   `demo`, precisamente para que nunca se confundan con las 79
+   `demo`, precisamente para que nunca se confundan con las 80
    empresas reales del directorio. Los ítems que reciben estas
    cotizaciones quedan marcados como «Demostración», no como
    «Verificado»: un dato inventado no se presenta como comprobado.
@@ -29,7 +29,7 @@
 (function (global) {
   'use strict';
 
-  var ACTIVO = true;
+  var ACTIVO = false;
 
   if (!ACTIVO) { global.DEMO = {activo: false}; return; }
 

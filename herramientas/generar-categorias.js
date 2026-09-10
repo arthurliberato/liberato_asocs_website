@@ -69,21 +69,23 @@ CAT.etapas.forEach((e) => { etapaPorCodigo[e.codigo] = e; });
 
 /* ---------- cabecera, pie y panel de cotización ---------- */
 
+/* La portada es el catálogo, así que el menú no lleva «Inicio»: el logotipo
+   ya cumple esa función. Las páginas generadas son hijas de una sección, no
+   la sección misma, por eso marcan aria-current="true" y no "page". */
 function header(seccion) {
   const nav = [
-    ['index.html', 'Inicio', 'inicio'],
-    ['catalogo.html', 'Catálogo de precios', 'catalogo'],
+    ['./', 'Catálogo de precios', 'catalogo'],
     ['proveedores.html', 'Proveedores', 'proveedores'],
-    ['metodologia.html', 'Metodología', 'metodologia'],
+    ['quienes-somos.html', 'Quiénes somos', 'quienes-somos'],
   ].map(([href, texto, clave]) =>
-    `<li><a href="${href}"${clave === seccion ? ' aria-current="page"' : ''}>${texto}</a></li>`
+    `<li><a href="${href}"${clave === seccion ? ' aria-current="true"' : ''}>${texto}</a></li>`
   ).join('\n        ');
 
   return `<a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="brand" href="index.html" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
+    <a class="brand" href="./" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
       <img src="assets/img/logo.png" alt="Ingenieros Liberato &amp; Asociados" width="2920" height="766">
       <span class="brand-tag">Precios de<br>construcción</span>
     </a>
@@ -115,11 +117,11 @@ const FOOTER = `<footer class="site-footer">
       <div>
         <h3>Base de precios</h3>
         <ul>
-          <li><a href="catalogo.html">Catálogo completo</a></li>
+          <li><a href="./">Catálogo completo</a></li>
           <li><a href="precio-cemento-morteros-aditivos.html">Cemento</a></li>
           <li><a href="precio-varilla-acero.html">Varilla y acero</a></li>
-          <li><a href="precio-blocks-prefabricados.html">Blocks</a></li>
-          <li><a href="precio-jornal-mano-de-obra.html">Jornales</a></li>
+          <li><a href="precio-tuberia-conexiones-pvc.html">Tubería y conexiones</a></li>
+          <li><a href="precio-ceramica-porcelanato-pisos.html">Cerámica y pisos</a></li>
         </ul>
       </div>
       <div>
@@ -134,6 +136,7 @@ const FOOTER = `<footer class="site-footer">
       <div>
         <h3>La empresa</h3>
         <ul>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="${PRINCIPAL}/">ingsliberato.com</a></li>
           <li><a href="tel:+18297939892">+1 (829) 793-9892</a></li>
           <li><a href="mailto:arthur@ingsliberato.com">arthur@ingsliberato.com</a></li>
@@ -189,11 +192,10 @@ const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 
 const AVISO = `<div class="aviso">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v5M12 17.5h.01"/><path d="M10.3 3.9 1.9 18.4A2 2 0 0 0 3.6 21.4h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-  <p><strong>Precios de referencia, no cotizaciones.</strong> Buena parte del catálogo lleva el
-     precio que el propio comercio publica y sale marcada como <em>Verificado</em>; el resto son
-     estimaciones nuestras para el Gran Santo Domingo, marcadas como <em>Estimado</em>. Ninguno es
-     una cotización formal a su nombre: sirven para dimensionar un presupuesto, no para cerrar una
-     compra. Cada ítem indica su estado y su fecha.
+  <p><strong>Precios de referencia, no cotizaciones.</strong> Cada ítem lleva el precio que el
+     propio comercio publica en línea o cotizó por escrito, con su fecha, y sale marcado como
+     <em>Verificado</em>. Ninguno es una cotización formal a su nombre: sirven para dimensionar
+     un presupuesto, no para cerrar una compra.
      <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
 </div>`;
 
@@ -348,9 +350,8 @@ function generarCategoria(cat) {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Precios de construcción', item: SITIO + '/' },
-          { '@type': 'ListItem', position: 2, name: 'Catálogo de precios', item: SITIO + '/catalogo.html' },
-          { '@type': 'ListItem', position: 3, name: cat.nombre, item: url },
+          { '@type': 'ListItem', position: 1, name: 'Catálogo de precios', item: SITIO + '/' },
+          { '@type': 'ListItem', position: 2, name: cat.nombre, item: url },
         ],
       },
       {
@@ -376,9 +377,8 @@ function generarCategoria(cat) {
 <section class="section section-primera">
   <div class="shell">
     <nav class="miga" aria-label="Ruta de navegación">
-      <a href="index.html">Precios de construcción</a> <span aria-hidden="true">›</span>
-      <a href="catalogo.html">Catálogo</a> <span aria-hidden="true">›</span>
-      <span>${esc(cat.nombre)}</span>
+      <a href="./">Catálogo de precios</a> <span aria-hidden="true">›</span>
+      <span aria-current="page">${esc(cat.nombre)}</span>
     </nav>
 
     <div class="section-head" style="margin-bottom:1.5rem">
@@ -434,7 +434,7 @@ ${items.map(fila).join('\n')}
 
     <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       ¿Busca algo que no está en esta tabla?
-      <a href="catalogo.html?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
+      <a href="./?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
       o <a href="metodologia.html">lea cómo se arman estos precios</a>.
     </p>
   </div>
@@ -548,9 +548,10 @@ ${COTIZACION}
 }
 
 /* ---------- portada: bloques estáticos e indexables ----------
-   La rejilla de categorías y los precios destacados se escriben en el HTML
-   de index.html entre marcadores, para que los enlaces a las 27 páginas y
-   los precios existan sin depender de JavaScript. */
+   index.html es el catálogo. Debajo de la tabla de resultados, la rejilla de
+   categorías y los precios destacados se escriben en el HTML entre marcadores,
+   para que los enlaces a las 41 páginas y los precios existan sin depender de
+   JavaScript: la tabla del catálogo se sirve vacía y la pinta app.js. */
 
 function parchearPortada() {
   const archivo = path.join(DESTINO, 'index.html');
@@ -566,9 +567,11 @@ function parchearPortada() {
         <span class="card-meta"><span>${conteo[c.codigo] || 0} ítems</span><span>Ver precios →</span></span>
       </a>`).join('\n');
 
+  /* Diez ítems con precio real y de compra frecuente; si uno se retira del
+     catálogo, el generador avisa y hay que elegir otro. */
   const destacados = [
-    'MAT-02-001', 'MAT-04-002', 'MAT-05-003', 'MAT-03-002', 'MAT-01-001',
-    'MAT-01-004', 'MAT-06-005', 'MAT-07-002', 'MOS-01-002', 'MOS-01-003',
+    'MAT-02-001', 'MAT-04-001', 'MAT-04-002', 'MAT-06-005', 'MAT-07-013',
+    'MAT-32-001', 'MAT-13-001', 'MAT-08-055', 'MAT-10-009', 'MAT-09-016',
   ].map((codigo) => {
     const it = CAT.items.filter((i) => i.codigo === codigo)[0];
     if (!it) throw new Error('Destacado inexistente: ' + codigo);
@@ -588,21 +591,19 @@ function parchearPortada() {
   reemplazar('categorias', `    <div class="grid grid-4" id="grid-categorias">\n${tarjetas}\n    </div>`);
   reemplazar('destacados', `        <ul id="destacados" style="margin-top:1.6rem">\n${destacados}\n        </ul>`);
 
-  /* Cifras del hero: valor real en el HTML, el JS solo lo confirma. */
+  /* Cifras del encabezado: valor real en el HTML, el JS solo lo confirma.
+     Las del directorio (proveedores, cuántos publican precios) ya no van
+     en la portada: pertenecen a proveedores.html. */
   const cifras = {
     'n-items': CAT.items.length,
     'n-cats': CAT.categorias.length,
-    /* Sin el filtro, la portada anunciaba 87 proveedores contando los ocho
-       ficticios del modo demostración. Un número de portada no puede salir de
-       datos inventados, ni siquiera mientras la demo está encendida. */
-    'n-prov': PROV.lista.filter((p) => !p.demo).length,
-    'n-precios': PROV.lista.filter((p) => p.precios && !p.demo).length,
   };
   Object.keys(cifras).forEach((id) => {
-    html = html.replace(
-      new RegExp('(<span class="stat-num" id="' + id + '">)[^<]*(</span>)'),
-      '$1' + cifras[id] + '$2'
-    );
+    const re = new RegExp('(<span class="stat-num" id="' + id + '">)[^<]*(</span>)');
+    /* String.replace no protesta cuando no encuentra nada: sin esta
+       comprobación las cifras se congelarían en silencio. */
+    if (!re.test(html)) throw new Error('No se encontró la cifra ' + id + ' en index.html');
+    html = html.replace(re, '$1' + cifras[id] + '$2');
   });
 
   fs.writeFileSync(archivo, html);
@@ -614,8 +615,8 @@ function parchearPortada() {
 function generarSitemap() {
   const urls = [
     [SITIO + '/', 'weekly', '1.0'],
-    [SITIO + '/catalogo.html', 'weekly', '0.9'],
     [SITIO + '/proveedores.html', 'monthly', '0.8'],
+    [SITIO + '/quienes-somos.html', 'yearly', '0.5'],
     [SITIO + '/metodologia.html', 'monthly', '0.6'],
   ];
   CAT.categorias.forEach((c) => urls.push([`${SITIO}/${c.slug}.html`, 'weekly', '0.8']));
