@@ -83,6 +83,17 @@ def datos():
     return json.loads(r.stdout)
 
 
+def marca(ws, n_cols):
+    """Banda fina con la firma, fija arriba de la hoja."""
+    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=max(2, n_cols))
+    c = ws.cell(row=1, column=1,
+                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com")
+    c.font = Font(name=FUENTE, size=9, bold=True, color="FFFFFF")
+    c.fill = FILL_TIT
+    c.alignment = Alignment(vertical="center", horizontal="left", indent=1)
+    ws.row_dimensions[1].height = 16
+
+
 def encabeza(ws, fila, titulos, anchos=None, congelar=True):
     for i, t in enumerate(titulos, start=1):
         c = ws.cell(row=fila, column=i, value=t)
@@ -202,14 +213,17 @@ def hoja_leame(wb, d):
 # 2. Catálogo
 # =====================================================================
 
+# Fuera «Alcance» (lo mismo en 1,471 de 1,522 ítems), «Alias de mercado»
+#    (es para el buscador del sitio, no para una hoja) y «Estado» (ya no hay
+#    estimaciones: todo lo publicado tiene precio de comercio). 
 CAT_COLS = [
     ("Código", 13), ("Grupo", 16), ("Categoría", 26), ("Ítem", 46),
-    ("Especificación", 40), ("Alcance", 26), ("Alias de mercado", 26),
+    ("Especificación", 40),
     ("Unidad", 12), ("Etapa de obra", 20), ("Gama", 11), ("Origen", 11),
-    ("Estado", 13), ("Cotizaciones", 11),
+    ("Cotizaciones", 11),
     ("Precio de referencia (RD$)", 15), ("Mínimo (RD$)", 13), ("Máximo (RD$)", 13),
     ("Incluye ITBIS", 11), ("Precio sin ITBIS (RD$)", 15),
-    ("Fecha", 11), ("Fuente", 42),
+    ("Fecha", 11), ("Comercios que cotizaron", 46),
 ]
 
 
@@ -253,33 +267,31 @@ def hoja_catalogo(wb, d):
     ws = wb.create_sheet("Catálogo")
     medidas, _ = columnas_medida(d["items"])
     cols = list(CAT_COLS) + [(ETIQUETA_MEDIDA[k], 13) for k in medidas] + [("Otras medidas", 30)]
-    encabeza(ws, 1, [c[0] for c in cols], [c[1] for c in cols])
+    marca(ws, len(cols))
+    encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
 
-    ESTADOS = {"verificado": "Verificado", "estimado": "Estimado",
-               "tarifario": "Tarifario oficial", "demo": "Estimado"}
-
-    for n, it in enumerate(d["items"], start=2):
+    for n, it in enumerate(d["items"], start=3):
         fila = [
             it["codigo"], it["grupo"], it["categoria"], it["nombre"],
-            it["esp"], it["alcance"], it["alias"], it["unidad"], it["etapa"],
-            it["gama"], it["origen"], ESTADOS.get(it["estado"], it["estado"]),
+            it["esp"], it["unidad"], it["etapa"],
+            it["gama"], it["origen"],
             it["cotizaciones"], it["ref"], it["min"], it["max"],
             "Sí" if it["itbis"] else "No", None, it["fecha"], it["fuente"],
         ]
         for i, v in enumerate(fila, start=1):
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
-            c.alignment = Alignment(vertical="top", wrap_text=(i in (4, 5, 6, 7, 20)))
-        # R: el precio sin el impuesto, para quien presupuesta sin ITBIS
-        ws.cell(row=n, column=18,
-                value='=IF(N{0}="","",IF(Q{0}="Sí",ROUND(N{0}/1.18,2),N{0}))'.format(n)).font = TXT
-        for col in (14, 15, 16, 18):
+            c.alignment = Alignment(vertical="top", wrap_text=(i in (4, 5, 17)))
+        # O: el precio sin el impuesto, para quien presupuesta sin ITBIS
+        ws.cell(row=n, column=15,
+                value='=IF(K{0}="","",IF(N{0}="Sí",ROUND(K{0}/1.18,2),K{0}))'.format(n)).font = TXT
+        for col in (11, 12, 13, 15):
             ws.cell(row=n, column=col).number_format = MONEDA
-        ws.cell(row=n, column=13).number_format = ENTERO
+        ws.cell(row=n, column=10).number_format = ENTERO
 
     # Las medidas, una por columna
     base = len(CAT_COLS)
-    for n2, it in enumerate(d["items"], start=2):
+    for n2, it in enumerate(d["items"], start=3):
         med = it.get("medidas") or {}
         for j, k in enumerate(medidas):
             v = med.get(k)
@@ -293,8 +305,8 @@ def hoja_catalogo(wb, d):
             c.font = TXT
             c.alignment = Alignment(vertical="top", wrap_text=True)
 
-    ultima = len(d["items"]) + 1
-    ws.auto_filter.ref = "A1:%s%d" % (
+    ultima = len(d["items"]) + 2
+    ws.auto_filter.ref = "A2:%s%d" % (
         get_column_letter(base + len(medidas) + 1), ultima)
     return ultima
 
@@ -313,7 +325,8 @@ def hoja_comparativo(wb, d):
         "Más barato", "Referencia del sitio (RD$)", "Cotizaciones",
     ]
     anchos = [13, 46, 12] + [17] * n_prov + [13, 13, 13, 11, 24, 15, 11]
-    encabeza(ws, 1, cols, anchos)
+    marca(ws, len(cols))
+    encabeza(ws, 2, cols, anchos)
 
     p1 = 4                       # primera columna de proveedor
     p2 = 3 + n_prov              # última
@@ -321,7 +334,7 @@ def hoja_comparativo(wb, d):
     cMin, cMed, cMax = [get_column_letter(p2 + i) for i in (1, 2, 3)]
     cDis, cBar, cRef, cCot = [get_column_letter(p2 + i) for i in (4, 5, 6, 7)]
 
-    n = 2
+    n = 3
     for it in d["items"]:
         if not it["cotizaciones"]:
             continue
@@ -358,7 +371,7 @@ def hoja_comparativo(wb, d):
         ws.cell(row=n, column=p2 + 5).font = TXT
         n += 1
 
-    ws.auto_filter.ref = "A1:{0}{1}".format(cCot, n - 1)
+    ws.auto_filter.ref = "A2:{0}{1}".format(cCot, n - 1)
 
     nota = ws.cell(row=n + 1, column=1,
                    value="Cómo leer esta hoja. Cada celda de proveedor trae el precio tal como ese "
@@ -682,14 +695,9 @@ def main():
     wb = Workbook()
     wb.remove(wb.active)
 
-    hoja_leame(wb, d)
-    filas_catalogo = hoja_catalogo(wb, d)
+    # Dos hojas y nada más: el catálogo y el comparativo por comercio.
+    hoja_catalogo(wb, d)
     comparadas = hoja_comparativo(wb, d)
-    presu = hoja_presupuesto(wb, d, filas_catalogo)
-    hoja_resumen(wb, d, presu)
-    hoja_rfq(wb, d, filas_catalogo)
-    hoja_proveedores(wb, d)
-    hoja_conversiones(wb, d)
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"

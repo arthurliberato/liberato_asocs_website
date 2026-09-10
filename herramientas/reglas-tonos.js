@@ -39,13 +39,19 @@ const FUERA = {
 /* El envase, de su propia columna: «1 GL», «5 GL», «1/2 GL», «0.20 gl
    (750ml)», «Cubeta», «20kg». Los que vienen en peso no son pintura
    líquida y van por otro camino. */
-function galones(a) {
+function envaseDe(a) {
   const p = String(a.presentacion || '');
-  let m = p.match(/^\s*([\d.]+)\s*\/\s*([\d.]+)\s*gl/i);
+  /* El peso manda cuando la presentación lo declara: «0.08 gl (0.5kg)» es
+     medio kilo de masilla en pasta, no un octavo de galón de nada. */
+  let m = p.match(/\(?\s*([\d.]+)\s*kg\s*\)?/i);
+  if (m) return PINTURA.aEnvasePeso(parseFloat(m[1]) / 0.45359237);
+  m = p.match(/([\d.]+)\s*(?:lb|lbs|libras?)/i);
+  if (m) return PINTURA.aEnvasePeso(parseFloat(m[1]));
+  m = p.match(/^\s*([\d.]+)\s*\/\s*([\d.]+)\s*gl/i);
   if (m) return PINTURA.aEnvase(parseFloat(m[1]) / parseFloat(m[2]));
   m = p.match(/^\s*([\d.]+)\s*gl/i);
   if (m) return PINTURA.aEnvase(parseFloat(m[1]));
-  if (/cubeta/i.test(p)) return 5;
+  if (/cubeta/i.test(p)) return PINTURA.envaseVolumen(5);
   m = p.match(/^\s*([\d.]+)\s*(?:oz|onz)/i);
   if (m) return PINTURA.aEnvase(parseFloat(m[1]) / 128);
   m = p.match(/^\s*([\d.]+)\s*ml/i);
@@ -81,7 +87,7 @@ function tipo(a) {
 
 const HERRAMIENTA = [
   [/^brocha/, 'brocha'],
-  [/^rodillo|^mota/, 'rodillo'],
+  [/^rodillo|^mota|^porta-?rolo|^portarrolo/, 'rodillo'],
   [/^espatula/, 'espatula'],
   [/^bandeja/, 'bandeja']
 ];
@@ -128,15 +134,10 @@ function regla(a) {
 
   const tp = tipo(a);
   if (!tp) { MOTIVO.valor = 'la ficha no dice qué tipo de pintura es'; return null; }
-  const g = galones(a);
-  if (!g) {
-    MOTIVO.valor = String(a.presentacion || '').trim()
-      ? 'el envase que declara no es uno de los que se compran por volumen'
-      : 'la ficha no declara el envase, que es lo que define la partida';
-    return null;
-  }
+  const env = envaseDe(a);
+  if (!env) { MOTIVO.valor = 'la ficha no declara el envase, que es lo que define la partida'; return null; }
 
-  const medidas = { tipo: tp, galones: g };
+  const medidas = { tipo: tp, envase: env };
   const acab = baja(a.acabado);
   if (/mate/.test(acab) && !/semi/.test(acab)) medidas.acabado = 'mate';
   else if (/satinad|semigloss|semi-mate|semi/.test(acab)) medidas.acabado = 'satinado';

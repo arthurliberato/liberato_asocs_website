@@ -970,6 +970,7 @@ const MC = require('./reglas-mc.js');
 const CERARTE = require('./reglas-cerarte.js');
 const IBERICA = require('./reglas-iberica.js');
 const TONOS = require('./reglas-tonos.js');
+const FERREMIX = require('./reglas-ferremix.js');
 
 const FUENTES = [
   {
@@ -1144,6 +1145,17 @@ const FUENTES = [
     motivoDe: () => TONOS.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = TONOS.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ferremix-2026-09-10.json'),
+    etiqueta: 'Ferremix · ferretería general',
+    proveedor: 'Ferremix (Grupo Alterra)',
+    constante: 'PROV_FERREMIX',
+    fecha: '2026-09-10',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => FERREMIX.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = FERREMIX.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),

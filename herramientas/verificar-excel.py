@@ -14,10 +14,8 @@ esto comprueba lo otro, que es lo que de verdad se rompe:
      XLOOKUP ni de fórmulas de matriz derramada, que openpyxl escribe sin la
      metadata que necesitan.
   2. Que cada referencia entre hojas nombre una hoja que existe.
-  3. Que las columnas que buscan las plantillas sean las que uno cree. Es el
-     error caro: si la hoja Catálogo cambia de orden de columnas, la fórmula
-     sigue evaluando y trae el dato equivocado.
-  4. Que los rangos cubran exactamente las filas con datos, sin sobrar ni faltar.
+  3. Que las columnas del catálogo estén donde uno cree, en el orden que cree.
+  4. Que las dos hojas lleven su banda de firma y estén congeladas bajo ella.
   5. Que el mínimo, la mediana y el máximo del comparativo den lo mismo que
      calculados aparte sobre las celdas de proveedor de esa fila.
 """
@@ -42,9 +40,13 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 
 # Qué tiene que haber en cada columna de la hoja Catálogo. Si esto deja de
 # cumplirse, las plantillas traen el dato equivocado sin dar error.
+# Los encabezados van en la fila 2: la 1 es la banda de firma.
+FILA_TITULOS = 2
+HOJAS = ["Catálogo", "Comparativo"]
 COLUMNAS_CATALOGO = {
-    "A": "Código", "D": "Ítem", "E": "Especificación", "H": "Unidad",
-    "I": "Etapa de obra", "N": "Precio de referencia (RD$)", "Q": "Incluye ITBIS",
+    "A": "Código", "D": "Ítem", "E": "Especificación", "F": "Unidad",
+    "G": "Etapa de obra", "K": "Precio de referencia (RD$)", "N": "Incluye ITBIS",
+    "Q": "Comercios que cotizaron",
 }
 
 fallos = []
@@ -85,71 +87,39 @@ def main():
     for r in sorted(referencias - hojas):
         falla("referencia a una hoja que no existe: %s" % r)
 
-    # ---- 3: las columnas del catálogo son las que creen las plantillas ----
+    # ---- 3: las columnas del catálogo están donde uno cree ------------
+    if wb.sheetnames != HOJAS:
+        falla("el libro debería tener solo %s y tiene %s" % (HOJAS, wb.sheetnames))
     cat = wb["Catálogo"]
     for col, titulo in COLUMNAS_CATALOGO.items():
-        real = cat["%s1" % col].value
+        real = cat["%s%d" % (col, FILA_TITULOS)].value
         if real != titulo:
-            falla("Catálogo!%s1 debería ser «%s» y dice «%s»" % (col, titulo, real))
+            falla("Catálogo!%s%d debería ser «%s» y dice «%s»"
+                  % (col, FILA_TITULOS, titulo, real))
+    for retirada in ("Alcance", "Alias de mercado", "Estado"):
+        fila = [c.value for c in cat[FILA_TITULOS]]
+        if retirada in fila:
+            falla("la columna «%s» debía salir del catálogo y sigue ahí" % retirada)
 
     filas_cat = cat.max_row
-    while filas_cat > 1 and cat.cell(row=filas_cat, column=1).value is None:
+    while filas_cat > FILA_TITULOS and cat.cell(row=filas_cat, column=1).value is None:
         filas_cat -= 1
-    print("Catálogo: %d ítems (filas 2 a %d)" % (filas_cat - 1, filas_cat))
+    print("Catálogo: %d ítems (filas %d a %d)"
+          % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
 
-    # ---- 4: los rangos de las plantillas cubren justo esas filas -------
-    for hoja in ("Presupuesto", "Solicitud de cotización"):
-        ws = wb[hoja]
-        rangos = set()
-        for fila in ws.iter_rows():
-            for c in fila:
-                if isinstance(c.value, str) and "Catálogo" in c.value:
-                    rangos.update(re.findall(r"'Catálogo'!\$([A-Z]+)\$(\d+):\$[A-Z]+\$(\d+)", c.value))
-        if not rangos:
-            falla("%s no busca nada en el catálogo" % hoja)
-        for col, desde, hasta in sorted(rangos):
-            if int(desde) != 2 or int(hasta) != filas_cat:
-                falla("%s busca en Catálogo!%s%s:%s%s y el catálogo va de 2 a %d"
-                      % (hoja, col, desde, col, hasta, filas_cat))
-            if col not in COLUMNAS_CATALOGO:
-                avisos.append("%s busca en la columna %s del catálogo, que no está verificada"
-                              % (hoja, col))
-
-    # ---- Resumen por etapa: que sume el rango real del presupuesto ----
-    presu = wb["Presupuesto"]
-    primera = None
-    ultima = None
-    for f in range(1, presu.max_row + 1):
-        v = presu.cell(row=f, column=7).value
-        if isinstance(v, str) and v.startswith("=IF(OR($E"):
-            primera = primera or f
-            ultima = f
-    res = wb["Resumen por etapa"]
-    ref = res["B5"].value or ""
-    m = re.search(r"\$D\$(\d+):\$D\$(\d+)", ref)
-    if not m:
-        falla("Resumen por etapa no suma sobre el presupuesto")
-    elif (int(m.group(1)), int(m.group(2))) != (primera, ultima):
-        falla("Resumen por etapa suma D%s:D%s y el presupuesto va de %d a %d"
-              % (m.group(1), m.group(2), primera, ultima))
-    else:
-        print("Presupuesto: filas %d a %d, y el resumen suma justo ese rango" % (primera, ultima))
-
-    # ---- Que las etapas del resumen existan en el catálogo ------------
-    etapas_cat = {cat.cell(row=f, column=9).value for f in range(2, filas_cat + 1)}
-    f = 5
-    sin_uso = []
-    while res.cell(row=f, column=1).value and res.cell(row=f, column=1).value != "Costo directo":
-        e = res.cell(row=f, column=1).value
-        if e not in etapas_cat:
-            sin_uso.append(e)
-        f += 1
-    if sin_uso:
-        avisos.append("etapas del resumen que ningún ítem usa: " + ", ".join(sin_uso))
+    # ---- 4: la banda de firma y el congelado --------------------------
+    for nombre in HOJAS:
+        ws = wb[nombre]
+        v = str(ws.cell(row=1, column=1).value or "")
+        if "Ingenieros Liberato" not in v:
+            falla("%s no lleva la banda de firma en la fila 1" % nombre)
+        if ws.freeze_panes != "A%d" % (FILA_TITULOS + 1):
+            falla("%s debería congelarse en A%d y está en %s"
+                  % (nombre, FILA_TITULOS + 1, ws.freeze_panes))
 
     # ---- 5: mínimo, mediana y máximo del comparativo -------------------
     comp = wb["Comparativo"]
-    encabezados = [comp.cell(row=1, column=i).value for i in range(1, comp.max_column + 1)]
+    encabezados = [comp.cell(row=FILA_TITULOS, column=i).value for i in range(1, comp.max_column + 1)]
     p1 = 4
     p2 = encabezados.index("Mínimo (RD$)")          # 0-based: la columna anterior es la última de proveedor
     n_prov = p2 - 3
@@ -157,7 +127,7 @@ def main():
           % (n_prov, get_column_letter(p1), get_column_letter(p2)))
 
     revisadas = 0
-    for f in range(2, comp.max_row + 1):
+    for f in range(FILA_TITULOS + 1, comp.max_row + 1):
         if not comp.cell(row=f, column=1).value:
             break
         valores = [comp.cell(row=f, column=c).value for c in range(p1, p2 + 1)]

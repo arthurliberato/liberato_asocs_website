@@ -80,7 +80,9 @@ const items = CAT.items.map(i => ({
   min: i.min,
   max: i.max,
   fecha: i.fecha,
-  fuente: i.fuente,
+  /* En el Excel la fuente son los comercios que cotizaron el ítem, no el
+     conteo: quien audita un presupuesto quiere el nombre. */
+  fuente: Object.keys(porItem[i.codigo] || {}).sort().join(' · '),
   nota: i.nota,
   medidas: i.medidas || {},
   cotizaciones: Object.keys(porItem[i.codigo] || {}).length,

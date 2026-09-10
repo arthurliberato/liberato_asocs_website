@@ -543,8 +543,7 @@ ${header('catalogo')}
 
 <aside class="franja-negocio">
   <div class="shell franja-negocio-inner">
-    <p>Realizamos <strong>presupuestos para tus proyectos y licitaciones.</strong></p>
-    <a class="btn franja-cta" href="${PRINCIPAL}/#contacto">Contáctanos</a>
+    <p class="franja-servicios">Construcción <span aria-hidden="true">·</span> Diseño <span aria-hidden="true">·</span> Supervisión</p>
   </div>
 </aside>
 
