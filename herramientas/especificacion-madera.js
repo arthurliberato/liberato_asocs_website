@@ -21,7 +21,8 @@ const FAMILIAS = {
     ejes: ['especie', 'escuadria', 'largo_pies', 'acabado'],
     nombre: m => 'Madera de ' + m.especie + ' ' + m.acabado + ', ' + m.escuadria +
                  ' x ' + m.largo_pies + ' pies',
-    esp: m => 'Pieza de ' + m.escuadria + ' en ' + m.largo_pies + ' pies, ' + m.acabado,
+    /* Escuadría, largo y acabado ya van en el nombre: no queda nada que decir. */
+    esp: '',
     alias: 'madera, pino, cuartón, tabla, alfarda, encofrado'
   },
 
@@ -29,7 +30,8 @@ const FAMILIAS = {
     cat: 'MAT-06', unidad: 'plancha', etapa: 'estructura', orden: 20,
     ejes: ['material', 'espesor', 'formato'],
     nombre: m => m.material + ' ' + m.espesor + ', ' + m.formato,
-    esp: m => 'Hoja de ' + m.formato + ' y ' + m.espesor + ' de espesor',
+    /* Material, espesor y formato ya van en el nombre. */
+    esp: '',
     alias: 'plywood, panel, hoja, formaleta, MDF'
   }
 };

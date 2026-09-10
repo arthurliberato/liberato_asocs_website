@@ -40,14 +40,14 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 10,
     ejes: ['tecnologia', 'potencia_w'],
     nombre: m => 'Bombillo ' + m.tecnologia + ' de ' + m.potencia_w + ' W',
-    esp: 'El formato, el color y la marca son de la cotización. La temperatura de color no mueve el precio',
+    esp: '',
     alias: 'bombillo, bombilla, foco, lámpara, LED'
   },
   'panel-led': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 20,
     ejes: ['montaje', 'forma', 'potencia_w'],
     nombre: m => 'Panel LED ' + m.montaje + ' ' + m.forma + ' de ' + m.potencia_w + ' W',
-    esp: 'Luminaria de techo. El empotrado va dentro del plafón y el sobreponer, sobre él',
+    esp: '',
     alias: 'panel LED, ojo de buey, plafón, luminaria, empotrado'
   },
   'reflector-led': {
@@ -55,14 +55,14 @@ const FAMILIAS = {
     ejes: ['potencia_w'], opcionales: ['alimentacion'],
     nombre: m => 'Reflector LED de ' + m.potencia_w + ' W' +
                  (m.alimentacion === 'solar' ? ', solar' : ''),
-    esp: 'Proyector para fachada, patio y obra',
+    esp: '',
     alias: 'reflector, proyector, foco de exterior'
   },
   'tubo-led': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 40,
     ejes: ['potencia_w'], opcionales: ['largo_pies'],
     nombre: m => 'Tubo LED de ' + m.potencia_w + ' W' + (m.largo_pies ? ', ' + m.largo_pies + ' pies' : ''),
-    esp: 'Tubo de reemplazo del fluorescente',
+    esp: '',
     alias: 'tubo LED, fluorescente, T8'
   },
   roseta: {
@@ -70,7 +70,7 @@ const FAMILIAS = {
     ejes: ['tipo'],
     nombre: m => (m.tipo === 'roseta' ? 'Roseta de techo' : m.tipo === 'zocalo' ? 'Zócalo para bombillo'
                 : m.tipo === 'fotocelda' ? 'Fotocelda' : 'Portalámparas'),
-    esp: 'Sostiene y alimenta el bombillo',
+    esp: '',
     alias: 'roseta, zócalo, socket, portalámparas, fotocelda'
   },
 
@@ -79,28 +79,29 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 100,
     ejes: ['tipo'],
     nombre: m => 'Interruptor ' + m.tipo,
-    esp: 'El color y la línea son de la cotización; lo que se presupuesta es cuántas teclas y de qué tipo',
+    esp: '',
     alias: 'interruptor, switch, apagador, breaker de pared'
   },
   tomacorriente: {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 110,
     ejes: ['tipo'],
     nombre: m => 'Tomacorriente ' + m.tipo,
-    esp: 'El color y la línea son de la cotización',
+    esp: '',
     alias: 'tomacorriente, toma, enchufe de pared, receptáculo'
   },
   'placa-electrica': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 120,
     ejes: ['tipo'],
     nombre: m => m.tipo,
-    esp: 'Tapa de la caja, sin el mecanismo',
+    /* La placa modular se vende sola; la de huecos y la tapa ciega no engañan. */
+    esp: m => /módulos/.test(m.tipo) ? 'Solo la placa · los módulos van aparte' : '',
     alias: 'placa, tapa, plaquita, tapa ciega'
   },
   'enchufe-adaptador': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 130,
     ejes: ['tipo'],
     nombre: m => m.tipo,
-    esp: 'Pieza de conexión suelta',
+    esp: '',
     alias: 'enchufe, clavija, adaptador, espigo'
   },
 
@@ -110,56 +111,56 @@ const FAMILIAS = {
     ejes: ['polos', 'amperaje'], opcionales: ['formato'],
     nombre: m => 'Breaker enchufable ' + m.polos + 'P de ' + m.amperaje + ' A' +
                  (m.formato === 'fino' ? ', formato fino' : ''),
-    esp: 'El fino ocupa medio espacio del panel: no es intercambiable con el estándar',
+    esp: m => m.formato === 'fino' ? 'Ocupa medio espacio · no es intercambiable con el estándar' : '',
     alias: 'breaker, interruptor termomagnético, brekaer'
   },
   'caja-breaker': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 210,
     ejes: ['espacios'],
     nombre: m => 'Panel de breakers de ' + m.espacios + ' espacios',
-    esp: 'Solo la caja con sus barras; los breakers van aparte',
+    esp: 'Solo la caja · los breakers van aparte',
     alias: 'caja de breakers, panel eléctrico, tablero'
   },
   'caja-main': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 215,
     ejes: ['amperaje'],
     nombre: m => 'Caja de breaker principal de ' + m.amperaje + ' A',
-    esp: 'Caja de un solo breaker, para la acometida',
+    esp: '',
     alias: 'caja de breaker, main, acometida'
   },
   'switch-doble-tiro': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 220,
     ejes: ['polos', 'amperaje'],
     nombre: m => 'Switch de doble tiro ' + m.polos + 'P de ' + m.amperaje + ' A',
-    esp: 'Transferencia manual entre dos fuentes',
+    esp: '',
     alias: 'switch de doble tiro, transferencia, cuchilla'
   },
   fusible: {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 230,
     ejes: ['amperaje'],
     nombre: m => 'Fusible de ' + m.amperaje + ' A',
-    esp: 'Protección de un solo uso',
+    esp: '',
     alias: 'fusible, fisible'
   },
   'protector-voltaje': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 240,
     ejes: ['tipo'],
     nombre: m => m.tipo,
-    esp: 'Corta o regula cuando el voltaje se sale de rango',
+    esp: '',
     alias: 'protector de voltaje, regulador, estabilizador, supresor'
   },
   'luminaria-empotrada': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 25,
     ejes: ['tipo', 'forma'],
     nombre: m => 'Luminaria empotrada ' + m.tipo + ' ' + m.forma,
-    esp: 'Cuerpo de la luminaria, sin el bombillo: se compra aparte',
+    esp: 'Sin bombillo · se compra aparte',
     alias: 'lámpara empotrada, dirigible, ojo de buey sin bombillo'
   },
   'lampara-emergencia': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 26,
     ejes: [],
     nombre: 'Lámpara de emergencia recargable',
-    esp: 'Enciende al irse la luz. Partida obligatoria en salidas de evacuación',
+    esp: '',
     alias: 'lámpara de emergencia, luz de emergencia, recargable'
   },
 
@@ -168,21 +169,21 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'tubo', etapa: 'instalaciones', orden: 300,
     ejes: ['material', 'medida', 'largo_pies'],
     nombre: m => 'Tubo eléctrico ' + m.material + ' ' + m.medida + ' x ' + m.largo_pies + ' pies',
-    esp: 'Canalización rígida',
+    esp: '',
     alias: 'tubo eléctrico, EMT, conduit, tubería'
   },
   'tubo-flexible': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 310,
     ejes: ['material', 'medida'],
     nombre: m => 'Tubería flexible ' + m.material + ' ' + m.medida,
-    esp: 'Canalización flexible. La ficha no declara el largo del rollo',
+    esp: 'La ficha no declara el largo del rollo',
     alias: 'liquid tight, BX, flexible, corrugado'
   },
   canaleta: {
     cat: 'MAT-10', unidad: 'tramo', etapa: 'instalaciones', orden: 320,
     ejes: ['medida'],
     nombre: m => 'Canaleta plástica ' + m.medida,
-    esp: 'Canalización a la vista, sobre el muro',
+    esp: '',
     alias: 'canaleta, moldura, ducto plástico'
   },
   'caja-electrica': {
@@ -190,7 +191,7 @@ const FAMILIAS = {
     ejes: ['material', 'forma'], opcionales: ['medida'],
     nombre: m => 'Caja eléctrica ' + m.forma + ' de ' + m.material +
                  (m.medida ? ' ' + m.medida : ''),
-    esp: 'Caja de salida o de registro',
+    esp: '',
     alias: 'caja eléctrica, caja de salida, octagonal, rectangular'
   },
   'abrazadera-emt': {
@@ -198,21 +199,21 @@ const FAMILIAS = {
     ejes: ['medida'], opcionales: ['huecos'],
     nombre: m => 'Abrazadera para tubo eléctrico ' + m.medida +
                  (m.huecos ? ', ' + m.huecos + ' huecos' : ''),
-    esp: 'Fija el tubo al muro o al techo',
+    esp: '',
     alias: 'abrazadera, grapa de tubo, clamp'
   },
   'abrazadera-plastica': {
     cat: 'MAT-10', unidad: 'paquete', etapa: 'instalaciones', orden: 350,
     ejes: ['largo_pulg'],
     nombre: m => 'Abrazadera plástica de ' + m.largo_pulg + '"',
-    esp: 'Amarre plástico. La ficha no declara cuántas trae el paquete',
+    esp: 'La ficha no declara cuántas trae el paquete',
     alias: 'abrazadera plástica, tie wrap, amarre, cincho'
   },
   'cinta-aislante': {
     cat: 'MAT-10', unidad: 'rollo', etapa: 'instalaciones', orden: 360,
     ejes: ['medida'],
     nombre: m => 'Cinta aislante ' + m.medida,
-    esp: 'Cinta de PVC para empalmes',
+    esp: '',
     alias: 'cinta aislante, tape, cinta eléctrica'
   },
 
@@ -225,21 +226,21 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'rollo', etapa: 'instalaciones', orden: 380,
     ejes: ['calibre'],
     nombre: m => 'Cable THHN #' + m.calibre + ', rollo 100 pies',
-    esp: 'Conductor de cobre con aislamiento THHN. El color no cambia el precio: es el calibre',
+    esp: 'Cobre · 600 V',
     alias: 'cable THHN, alambre, conductor, cobre'
   },
   'cable-goma': {
     cat: 'MAT-10', unidad: 'rollo', etapa: 'instalaciones', orden: 385,
     ejes: ['calibre', 'conductores'],
     nombre: m => 'Cable de goma ' + m.calibre + ', ' + m.conductores + ' conductores, rollo 100 pies',
-    esp: 'Cable flexible con cubierta de goma, para alimentación de equipos',
+    esp: '',
     alias: 'cable de goma, SO, cable flexible, encauchetado'
   },
   'conexion-conduit': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 345,
     ejes: ['tipo', 'medida'],
     nombre: m => (m.tipo === 'codo' ? 'Codo' : m.tipo) + ' conduit de PVC ' + m.medida,
-    esp: 'Accesorio de la canalización eléctrica de PVC',
+    esp: '',
     alias: 'codo conduit, conduit, canalización eléctrica'
   },
 
@@ -248,7 +249,7 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 400,
     ejes: ['largo_pies'],
     nombre: m => 'Extensión eléctrica de ' + m.largo_pies + ' pies',
-    esp: 'Ojo al comparar: casi ninguna ficha declara el calibre del cable, y ahí está la diferencia entre una barata y una cara',
+    esp: 'Casi ninguna ficha declara el calibre · ahí está la diferencia',
     alias: 'extensión, alargue, cable de extensión'
   },
   regleta: {
@@ -256,7 +257,8 @@ const FAMILIAS = {
     ejes: ['salidas'], opcionales: ['supresor'],
     nombre: m => 'Regleta de ' + m.salidas + ' salidas' +
                  (m.supresor === 'si' ? ' con supresor de picos' : ''),
-    esp: 'Multitoma. El supresor de picos cambia el precio y no todas lo traen',
+    /* «si» solo cuando la ficha lo dice; sin él no se sabe, y el precio lo delata. */
+    esp: m => m.supresor === 'si' ? '' : 'La ficha no declara si trae supresor de picos',
     alias: 'regleta, multitoma, power strip, supresor'
   },
 
@@ -265,7 +267,7 @@ const FAMILIAS = {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 500,
     ejes: ['tipo'],
     nombre: m => m.tipo,
-    esp: 'Control de encendido y aviso',
+    esp: '',
     alias: 'timbre, sensor de movimiento, temporizador, fotocelda'
   }
 };

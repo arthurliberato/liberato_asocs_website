@@ -194,19 +194,19 @@ table{border-collapse:collapse;width:100%}
 /* =========================================================
    BUSCADOR + FILTROS (catálogo)
    ========================================================= */
-.tools{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:1rem 0}
-.tools-row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+.tools{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.6rem 0 .65rem}
+.tools-row{display:flex;gap:.5rem .6rem;align-items:center;flex-wrap:wrap}
 .search-box{position:relative;flex:1 1 320px;min-width:0}
-.search-box input{width:100%;padding:.75rem .95rem .75rem 2.7rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint)}
+.search-box input{width:100%;padding:.42rem .9rem .42rem 2.4rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint)}
 .search-box input:focus{background:#fff;border-color:var(--blue-200)}
-.search-box svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--ink-mute);pointer-events:none}
-.select{padding:.72rem .8rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.92rem;max-width:100%}
+.search-box svg{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-mute);pointer-events:none}
+.select{padding:.42rem .7rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.9rem;max-width:100%}
 .select:focus{background:#fff}
 
-.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.85rem;align-items:center}
+.filtros{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem;align-items:center}
 .chip{
   border:1px solid var(--line);background:#fff;border-radius:100px;
-  padding:.35rem .85rem;font-size:.86rem;cursor:pointer;color:var(--ink-soft);
+  padding:.24rem .75rem;font-size:.84rem;cursor:pointer;color:var(--ink-soft);
   transition:border-color .2s var(--ease),background .2s var(--ease),color .2s var(--ease);
 }
 .chip:hover{border-color:var(--blue-200);color:var(--navy)}
@@ -271,6 +271,12 @@ table{border-collapse:collapse;width:100%}
 .badge-itbis{background:var(--bg-tint);color:var(--ink-mute);border:1px solid var(--line);font-weight:500}
 .badge-demo{background:#f3e8ff;color:#6b21a8;border:1px solid #e0cffc}
 .badge-filtrado{background:var(--navy);color:#fff;border:1px solid var(--navy)}
+/* Última actualización: cuánto hace que se confirmó el precio, no qué es.
+   Una sola familia de verdes que se va apagando con los días. */
+.badge-reciente{background:#137a3a;color:#fff;border:1px solid #137a3a}
+.badge-quincena{background:#cdebd8;color:#0f5f2d;border:1px solid #a6dcbb}
+.badge-mes{background:#e9f6ee;color:#2f7d4c;border:1px solid #cfe9d9}
+.badge-viejo{background:#f5faf7;color:#6f9c80;border:1px solid #e2efe7}
 
 .btn-add{
   border:1px solid var(--line);background:#fff;color:var(--navy);
@@ -396,7 +402,7 @@ tr.cot-mia td{background:var(--blue-50)}
 .btn-copiar svg{width:16px;height:16px}
 .btn-copiar:hover{background:var(--blue-50);border-color:var(--blue-200);color:var(--navy)}
 .btn-copiar.copiado{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
-.btn-mini{padding:.5rem .9rem;font-size:.87rem}
+.btn-mini{padding:.36rem .8rem;font-size:.85rem}
 .btn-mini.copiado{background:var(--green-soft);border-color:#bfe6cd;color:#137a3a}
 td.acciones{white-space:nowrap;display:flex;gap:.4rem;justify-content:flex-end}
 
@@ -607,15 +613,15 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    .eyebrow ni .aviso, que usan proveedores, metodología y las
    41 páginas que escribe herramientas/generar-categorias.js.
    ========================================================= */
-.portada{padding:clamp(1rem,1.6vw,1.4rem) 0 .8rem}
-.portada-fila{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 2rem}
+.portada{padding:clamp(.5rem,.9vw,.8rem) 0 .5rem}
+.portada-fila{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 2rem}
 
 .portada-id{flex:1 1 26rem;min-width:0}
-.portada-titulo{font-size:clamp(1.3rem,2.6vw,2.3rem);line-height:1.14}
+.portada-titulo{font-size:clamp(1.3rem,2.6vw,2.3rem);line-height:1.05}
 
 /* line-height en rem (no unitario) para que el rótulo, que va a menor
    tamaño, no engorde el renglón. */
-.portada-meta{margin:.4rem 0 0;font-size:.88rem;line-height:1.3rem;color:var(--ink-soft)}
+.portada-meta{margin:.15rem 0 0;font-size:.88rem;line-height:1.2rem;color:var(--ink-soft)}
 .portada-meta .stat-num{font-family:Jost,sans-serif;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums}
 .portada-meta a{color:inherit}
 /* Hace el trabajo del .eyebrow sin gastar un renglón propio. */
@@ -628,24 +634,24 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* El descargo completo, como segunda columna. Crece algo más que la
    columna de identidad para que la frase de la cotización formal quepa
    en dos renglones y el aviso siga sin aportar altura. */
-.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.55rem .8rem;gap:.6rem}
+.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.4rem .7rem;gap:.55rem}
 .aviso-fila svg{width:17px;height:17px;margin-top:.16rem}
-.aviso-fila p{font-size:.84rem;line-height:1.3rem}
+.aviso-fila p{font-size:.84rem;line-height:1.25rem}
 /* Solo cuando sobra ancho: a 390px esta frase añade un cuarto renglón y
    rompe el techo de 143px. El texto íntegro vive en metodologia.html. */
 .aviso-largo{display:none}
 @media (min-width:700px){.aviso-largo{display:inline}}
 
 @media (max-width:560px){
-  .portada{padding-bottom:.5rem}
-  .portada-fila{gap:.5rem}
-  .portada-meta{margin-top:.35rem;font-size:.84rem;line-height:1.2rem}
+  .portada{padding-bottom:.4rem}
+  .portada-fila{gap:.4rem}
+  .portada-meta{margin-top:.1rem;font-size:.84rem;line-height:1.1rem}
   /* Redundantes con el h1 en pantalla estrecha: se van y liberan el
      renglón; quedan las dos cifras. */
   .portada-tag,.portada-desc{display:none}
-  .aviso-fila{padding:.45rem .65rem;gap:.5rem}
+  .aviso-fila{padding:.35rem .6rem;gap:.5rem}
   .aviso-fila svg{width:15px;height:15px}
-  .aviso-fila p{font-size:.8rem;line-height:1.15rem}
+  .aviso-fila p{font-size:.8rem;line-height:1.1rem}
 }
 @media (max-width:360px){
   .portada-titulo{font-size:1.15rem}
@@ -666,14 +672,14 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    la fila siga envolviendo.
    ========================================================= */
 @media (max-width:640px){
-  .tools{padding:.6rem 0 .7rem}
-  .tools-row{gap:.5rem}
-  .search-box input{padding:.62rem .8rem .62rem 2.5rem}
-  .select{font-size:.86rem;padding:.5rem .55rem}
+  .tools{padding:.5rem 0 .55rem}
+  .tools-row{gap:.4rem .5rem}
+  .search-box input{padding:.4rem .7rem .4rem 2.3rem}
+  .select{font-size:.86rem;padding:.38rem .55rem}
   .toggle-itbis{font-size:.84rem}
-  .tools-row .btn-mini{padding:.42rem .7rem;font-size:.82rem}
-  .filtros{margin-top:.55rem;gap:.4rem}
-  .chip{padding:.28rem .65rem;font-size:.82rem}
+  .tools-row .btn-mini{padding:.32rem .65rem;font-size:.82rem}
+  .filtros{margin-top:.45rem;gap:.35rem}
+  .chip{padding:.22rem .6rem;font-size:.8rem}
   .chip-group-label{font-size:.72rem}
 }
 

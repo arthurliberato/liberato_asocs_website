@@ -182,7 +182,7 @@ const REGLAS = {
       orden: l.n * 100 + e.n,
       nombre: 'Angular de hierro negro ' + pulg(l) + ' x ' + pulg(e) + ' x 20 pies',
       unidad: 'unidad',
-      esp: 'Perfil L de acero al carbono · ' + pulg(l) + ' x ' + pulg(e) + ' · barra de 20 pies',
+      esp: '',
       etapa: 'estructura',
       origen: 'importado',
       alias: 'perfil L, ángulo de hierro, angular'
@@ -206,7 +206,7 @@ const REGLAS = {
       orden: 1000 + l.n * 100 + e.n,
       nombre: 'Planchuela de hierro negro ' + pulg(l) + ' x ' + pulg(e) + ' x 20 pies',
       unidad: 'unidad',
-      esp: 'Pletina de acero al carbono · ' + pulg(l) + ' x ' + pulg(e) + ' · barra de 20 pies',
+      esp: '',
       etapa: 'estructura',
       origen: 'importado',
       alias: 'pletina, fleje de hierro, planchuela'
@@ -228,8 +228,7 @@ const REGLAS = {
       orden: 2000 + (cuad ? 0 : tor ? 200 : 100) + l.n,
       nombre: 'Barra ' + forma + ' de acero ' + pulg(l) + ' x 20 pies',
       unidad: 'unidad',
-      esp: 'Acero al carbono liso · sección ' + forma + ' de ' + pulg(l) +
-           (tor ? ' · rectificada a medida' : '') + ' · barra de 20 pies',
+      esp: '',
       etapa: 'estructura',
       origen: 'importado',
       alias: cuad ? 'barra cuadrada, hierro cuadrado' :
@@ -258,8 +257,7 @@ const REGLAS = {
       nombre: 'Perfil ' + forma + ' ' + acab + ' ' + pulg(l) + ' x ' + pulg(h) +
               ' x 20 pies, pared ' + w + ' mm',
       unidad: 'unidad',
-      esp: 'Tubo estructural de sección ' + forma + ' · ' + pulg(l) + ' x ' + pulg(h) +
-           ' · pared ' + w + ' mm · acabado ' + acab,
+      esp: '',
       etapa: 'estructura',
       origen: 'importado',
       alias: 'perfilería, tubo cuadrado, HSS'
@@ -280,8 +278,7 @@ const REGLAS = {
       orden: 1000 + l.n,
       nombre: 'Tubo negro redondo ' + pulg(l) + ' x 20 pies' + (w ? ', pared ' + w + ' mm' : ''),
       unidad: 'unidad',
-      esp: 'Tubería de acero negro sin recubrimiento · ' + pulg(l) +
-           (w ? ' · pared ' + w + ' mm' : '') + ' · tramo de 20 pies',
+      esp: w ? '' : 'La ficha no declara la pared',
       etapa: 'estructura',
       origen: 'importado',
       alias: 'tubo de hierro, tubería negra'
@@ -300,8 +297,7 @@ const REGLAS = {
       orden: 2000 + l.n,
       nombre: 'Correa galvanizada tipo Z ' + pulg(l) + ' x ' + pulg(e) + ' x 20 pies',
       unidad: 'unidad',
-      esp: 'Perfil Z galvanizado para correas de techo · alma ' + pulg(l) +
-           ' · espesor ' + pulg(e) + ' · tramo de 20 pies',
+      esp: '',
       etapa: 'techos',
       origen: 'importado',
       alias: 'correa Z, perlín, larguero de techo'
@@ -324,7 +320,8 @@ const REGLAS = {
         orden: 2000 + w,
         nombre: 'Tola galvanizada 4 x 8 pies, ' + w + ' lb',
         unidad: 'plancha',
-        esp: 'Lámina de acero galvanizada · plancha de 4 x 8 pies · ' + w + ' lb',
+        /* El calibre solo está en la referencia: "C-264X8" es calibre 26 en 4 x 8. */
+        esp: (c => c ? 'Calibre ' + c[1] : '')(String(a.ref).match(/^C-(\d{2})/)),
         etapa: 'estructura',
         origen: 'importado',
         alias: 'lámina galvanizada, tola galvanizada'
@@ -351,9 +348,7 @@ const REGLAS = {
       orden: (cor ? 1000 : 0) + e.n * 100 + an.n,
       nombre: 'Tola ' + tipo + ' ' + pulg(e) + ', plancha ' + an.t + ' x ' + la.t + ' pies',
       unidad: 'plancha',
-      esp: 'Lámina de hierro ' + (cor ? 'corrugada antideslizante' : 'negra laminada en frío') +
-           ' · espesor ' + pulg(e) + ' · plancha de ' + an.t + ' x ' + la.t + ' pies' +
-           (w ? ' · ' + w + ' lb' : ''),
+      esp: w ? 'Peso ' + w + ' lb' : '',
       etapa: 'estructura',
       origen: 'importado',
       alias: cor ? 'lámina antiderrapante, plancha corrugada' : 'lámina de hierro, plancha negra'
@@ -374,7 +369,7 @@ const REGLAS = {
         orden: 300 + an.n,
         nombre: 'Zinc translúcido ' + an.t + ' x ' + la.t + ' pies',
         unidad: 'plancha',
-        esp: 'Lámina traslúcida para entrada de luz · ' + an.t + ' x ' + la.t + ' pies',
+        esp: '',
         etapa: 'techos',
         origen: 'importado',
         alias: 'zinc transparente, lámina traslúcida'
@@ -390,7 +385,8 @@ const REGLAS = {
         orden: 400 + c.n,
         nombre: 'Caballete para aluzinc ' + pulg(c),
         unidad: 'unidad',
-        esp: 'Pieza de remate para cumbrera de techo de aluzinc · desarrollo ' + pulg(c),
+        /* El nombre lleva el desarrollo; el largo solo está en la referencia: 21"X10'. */
+        esp: (t => t ? 'Tramo de ' + t[1] + ' pies' : '')(String(a.ref).match(/X(\d+)'/)),
         etapa: 'techos',
         origen: 'importado',
         alias: 'cumbrera, capote de techo'
@@ -409,8 +405,7 @@ const REGLAS = {
         orden: 500 + (+z[1]),
         nombre: 'Caballete de zinc calibre ' + z[1] + ', ' + z[2] + ' pies',
         unidad: 'unidad',
-        esp: 'Pieza de remate para cumbrera de techo de zinc · calibre ' + z[1] +
-             ' · ' + z[2] + ' pies',
+        esp: '',
         etapa: 'techos',
         gama: 'economica',
         alias: 'cumbrera de zinc, capote de techo'
@@ -427,8 +422,7 @@ const REGLAS = {
         orden: 600 + d1.n,
         nombre: 'Caño para aluzinc ' + pulg(d1) + ' x ' + pulg(d2) + ' x ' + z[3] + ' pies',
         unidad: 'unidad',
-        esp: 'Canal de desagüe para techo de aluzinc · ' + pulg(d1) + ' x ' + pulg(d2) +
-             ' · tramo de ' + z[3] + ' pies',
+        esp: '',
         etapa: 'techos',
         origen: 'importado',
         alias: 'canal de techo, canaleta de aluzinc'
@@ -448,8 +442,7 @@ const REGLAS = {
         orden: 1900 + w1.n,
         nombre: 'Planchuela de acero inoxidable ' + pulg(w1) + ' x ' + pulg(w2) + ' x ' + z[3] + ' pies',
         unidad: 'unidad',
-        esp: 'Pletina de acero inoxidable · ' + pulg(w1) + ' x ' + pulg(w2) +
-             ' · barra de ' + z[3] + ' pies',
+        esp: '',
         etapa: 'estructura',
         gama: 'premium',
         origen: 'importado',
@@ -476,7 +469,7 @@ const REGLAS = {
       orden: (tipo === 'acanalado' ? 100 : 200) + (+cal) + la.n / 100,
       nombre: 'Zinc ' + tipo + ' calibre ' + cal + ', ' + an.t + ' x ' + la.t + ' pies',
       unidad: 'plancha',
-      esp: 'Lámina galvanizada ' + tipo + ' calibre ' + cal + ' · ' + an.t + ' x ' + la.t + ' pies',
+      esp: '',
       etapa: 'techos',
       gama: 'economica',
       alias: 'plancha de zinc, lámina de zinc'
@@ -493,7 +486,7 @@ const REGLAS = {
         orden: +m[1],
         nombre: 'Alambre liso galvanizado calibre ' + m[1],
         unidad: 'lb',
-        esp: 'Acero al carbono con acabado galvanizado · calibre ' + m[1],
+        esp: '',
         etapa: 'estructura',
         alias: 'alambre galvanizado, alambre de amarre'
       };
@@ -508,7 +501,7 @@ const REGLAS = {
         orden: 700,
         nombre: 'Alambre galvanizado picado, caja de ' + k[1] + ' lb',
         unidad: 'caja',
-        esp: 'Alambre galvanizado cortado a medida para amarre · caja de ' + k[1] + ' libras',
+        esp: 'La ficha no declara el calibre',
         etapa: 'estructura',
         origen: 'importado',
         alias: 'alambre picado, alambre cortado de amarre'
@@ -525,8 +518,7 @@ const REGLAS = {
         orden: 750,
         nombre: 'Alambre liso galvanizado picado calibre ' + cal[1] + ', paquete de ' + k[1] + ' lb',
         unidad: 'paquete',
-        esp: 'Alambre liso galvanizado cortado para amarre · calibre ' + cal[1] +
-             ' · paquete de ' + k[1] + ' libras',
+        esp: '',
         etapa: 'estructura',
         origen: 'importado',
         alias: 'alambre picado, alambre de amarre cortado'
@@ -546,8 +538,9 @@ const REGLAS = {
         nombre: 'Alambre de púas ' + (porMm ? m[1] + ' mm' : 'calibre ' + m[1]) +
                 ', rollo de ' + m[2] + ' metros',
         unidad: 'rollo',
-        esp: 'Alambre galvanizado con púas entrelazadas · ' +
-             (porMm ? m[1] + ' mm de diámetro' : 'calibre ' + m[1]) + ' · rollo de ' + m[2] + ' metros',
+        /* Cuando el nombre da milímetros, la ficha suele traducirlos a calibre. */
+        esp: porMm && /Calibre:\s*\d+/i.test(a.info)
+             ? 'La ficha lo declara calibre ' + limpia(a.info).match(/Calibre:\s*(\d+)/i)[1] : '',
         etapa: 'exteriores',
         origen: 'importado',
         alias: 'alambre de púas, púa, alambre de espino'
@@ -574,9 +567,7 @@ const REGLAS = {
         nombre: 'Malla ciclónica calibre ' + cal + (pvc ? ' revestida en PVC' : '') +
                 ', ' + m[2] + ' pies de alto, rollo de ' + m[3] + ' pies',
         unidad: 'rollo',
-        esp: 'Malla de alambre galvanizado tejido en rombo · calibre ' + cal +
-             (pvc ? ' con revestimiento de PVC' : '') + ' · ' + m[2] +
-             ' pies de alto · rollo de ' + m[3] + ' pies',
+        esp: 'Galvanizada',
         etapa: 'exteriores',
         origen: 'importado',
         alias: 'malla ciclónica, verja de alambre, cyclone'
@@ -593,7 +584,7 @@ const REGLAS = {
         orden: 100 + l.n,
         nombre: 'Tubo galvanizado para malla ciclónica ' + pulg(l) + ' x ' + m[2] + ' pies',
         unidad: 'unidad',
-        esp: 'Poste tubular galvanizado para cerramiento · ' + pulg(l) + ' · tramo de ' + m[2] + ' pies',
+        esp: '',
         etapa: 'exteriores',
         origen: 'importado',
         alias: 'poste de malla, tubo de verja'
@@ -609,7 +600,7 @@ const REGLAS = {
         orden: 500 + l.n,
         nombre: 'Separador plástico para varilla ' + pulg(l),
         unidad: 'unidad',
-        esp: 'Silleta plástica para mantener el recubrimiento del acero · ' + pulg(l),
+        esp: 'La ficha no declara el recubrimiento',
         etapa: 'estructura',
         origen: 'importado',
         alias: 'silleta, separador de varilla, galleta'
@@ -627,8 +618,7 @@ const REGLAS = {
         orden: 600 + l.n,
         nombre: 'Coupler mecánico para varilla ' + pulg(l),
         unidad: 'unidad',
-        esp: 'Empalme mecánico roscado para varilla de refuerzo · ' + pulg(l) +
-             ' · serie Q' + m[1] + ' (' + m[1] + ' mm)',
+        esp: 'Serie Q' + m[1],
         etapa: 'estructura',
         origen: 'importado',
         alias: 'coupler, empalme mecánico de varilla'
@@ -646,8 +636,7 @@ const REGLAS = {
         orden: 3000 + l.n,
         nombre: 'Metal desplegable plano ' + pulg(l) + ', plancha ' + m[1] + ' x ' + m[2] + ' pies',
         unidad: 'plancha',
-        esp: 'Lámina expandida de acero · rombo de ' + pulg(l) + ' · plancha de ' +
-             m[1] + ' x ' + m[2] + ' pies',
+        esp: 'La ficha no declara el calibre',
         etapa: 'estructura',
         origen: 'importado',
         alias: 'metal desplegado, lámina expandida'
@@ -665,7 +654,7 @@ const REGLAS = {
         nombre: (acero ? 'Fibra de acero para hormigón' : 'Macrofibra sintética para hormigón') +
                 ', funda de ' + k[1] + ' kg',
         unidad: 'funda',
-        esp: 'Refuerzo disperso para losas y pisos industriales · funda de ' + k[1] + ' kg',
+        esp: '',
         etapa: 'estructura',
         origen: 'importado',
         alias: acero ? 'fibra metálica para hormigón' : 'fibra sintética, macrofibra'
@@ -690,8 +679,7 @@ const REGLAS = {
         orden: 400 + (+m[1]),
         nombre: 'Tela para gallinero calibre ' + m[1] + ', ' + alto.t + ' pies de alto',
         unidad: 'yarda',
-        esp: 'Malla hexagonal galvanizada · calibre ' + m[1] + ' · ' + alto.t +
-             ' pies de alto · rollo de ' + parseInt(p[1], 10) + ' pies',
+        esp: 'Rollo de ' + parseInt(p[1], 10) + ' pies',
         etapa: 'exteriores',
         origen: 'importado',
         alias: 'tela de gallinero, malla hexagonal'
@@ -708,9 +696,7 @@ const REGLAS = {
       nombre: 'Tela metálica calibre ' + m[1] + ', retícula ' + pulg(x) + ' x ' + pulg(y) +
               ', ' + alto.t + ' pies de alto',
       unidad: 'yarda',
-      esp: 'Malla de alambre tejido en cuadro · calibre ' + m[1] + ' · retícula ' +
-           pulg(x) + ' x ' + pulg(y) + ' · ' + alto.t + ' pies de alto · rollo de ' +
-           parseInt(p[3], 10) + ' pies',
+      esp: 'Rollo de ' + parseInt(p[3], 10) + ' pies',
       etapa: 'exteriores',
       origen: 'importado',
       alias: 'tela metálica, malla de cuadrito, tela para conejo'
@@ -745,8 +731,7 @@ const REGLAS = {
       orden: 900 + libras,
       nombre: 'Polvo de color para mosaico ' + color + ' ' + grado + ', ' + libras + ' lb',
       unidad: libras >= 55 ? 'funda' : 'unidad',
-      esp: 'Pigmento en polvo para granito fundido y mosaico · ' + color + ' ' + grado +
-           ' · presentación de ' + libras + ' libras',
+      esp: '',
       etapa: 'pisos',
       gama: grado === 'industrial' ? 'premium' : 'estandar',
       origen: 'importado',
@@ -770,8 +755,7 @@ const REGLAS = {
       orden: 900 + (+m[1]),
       nombre: que + (l ? ' ' + pulg(l) : '') + ' en funda de ' + m[1] + ' libras',
       unidad: 'funda',
-      esp: 'Agregado ensacado para obra menor y reparaciones · ' +
-           (l ? 'granulometría ' + pulg(l) + ' · ' : '') + 'funda de ' + m[1] + ' libras',
+      esp: '',
       etapa: 'estructura',
       alias: 'funda de arena, funda de grava, agregado ensacado'
     };
@@ -790,7 +774,7 @@ const REGLAS = {
         orden: 900,
         nombre: 'Estuco para interiores, funda de ' + m[1] + ' libras',
         unidad: 'funda',
-        esp: 'Masilla en polvo para alisar paredes interiores · funda de ' + m[1] + ' libras',
+        esp: '',
         etapa: 'terminacion',
         alias: 'estuco, masilla de pared'
       };
@@ -805,7 +789,7 @@ const REGLAS = {
         orden: 800,
         nombre: 'Yeso en polvo, por libra',
         unidad: 'lb',
-        esp: 'Yeso de construcción a granel, despachado por libra',
+        esp: '',
         etapa: 'terminacion',
         alias: 'yeso en polvo, yeso de obra'
       };
@@ -820,7 +804,7 @@ const REGLAS = {
       orden: 800 + (+m[1]),
       nombre: 'Yeso en polvo' + (marca ? ' ' + marca : '') + ', funda de ' + m[1] + ' libras',
       unidad: 'funda',
-      esp: 'Yeso de construcción para plafones y terminación · funda de ' + m[1] + ' libras',
+      esp: '',
       etapa: 'terminacion',
       origen: /Iberyola/i.test(a.nombre) ? 'importado' : 'nacional',
       alias: 'yeso en polvo, yeso de obra'
@@ -838,8 +822,7 @@ const REGLAS = {
       orden: 700 + (+m[1]),
       nombre: 'Cemento blanco, funda de ' + m[1] + ' libras',
       unidad: 'funda',
-      esp: 'Cemento blanco en presentación menuda, para detalles y reparaciones · ' +
-           m[1] + ' libras',
+      esp: '',
       etapa: 'terminacion',
       origen: 'importado',
       alias: 'cemento blanco'
@@ -855,7 +838,7 @@ const REGLAS = {
       orden: 600 + (+m[1]),
       nombre: 'Cemento gris, funda de ' + m[1] + ' libras',
       unidad: 'funda',
-      esp: 'Cemento gris en presentación menuda, para reparaciones · ' + m[1] + ' libras',
+      esp: '',
       etapa: 'terminacion',
       alias: 'cemento gris, funda pequeña de cemento'
     };
@@ -888,13 +871,15 @@ const REGLAS = {
     const UNA_MEDIDA = {'aluminio/tubos': true, 'aluminio/barras': true};
     if (!h && !UNA_MEDIDA[familia]) return null;
 
+    /* Nombre, especificación y alias. Ninguna ficha de aluminio declara la
+       pared del tubo ni el espesor del angular, y ahí está la diferencia. */
     const TIPOS = {
-      'aluminio/angulares':  ['Angular de aluminio',        'Perfil L de aluminio',            'angular de aluminio, perfil L'],
-      'aluminio/planchuela': ['Planchuela de aluminio',     'Pletina de aluminio',             'pletina de aluminio, planchuela'],
-      'aluminio/tubos':      ['Tubo redondo de aluminio',   'Tubería redonda de aluminio',     'tubo de aluminio'],
-      'aluminio/barras':     ['Barra de aluminio',          'Barra maciza de aluminio',        'barra de aluminio'],
-      'aluminio/perfiles':   ['Perfil de aluminio',         'Perfil tubular de aluminio',      'perfilería de aluminio'],
-      'aluminio/molduras':   ['Moldura U de aluminio',      'Moldura en U de aluminio',        'moldura U, canal de aluminio']
+      'aluminio/angulares':  ['Angular de aluminio',        'La ficha no declara el espesor',  'angular de aluminio, perfil L'],
+      'aluminio/planchuela': ['Planchuela de aluminio',     '',                                'pletina de aluminio, planchuela'],
+      'aluminio/tubos':      ['Tubo redondo de aluminio',   'La ficha no declara la pared',    'tubo de aluminio'],
+      'aluminio/barras':     ['Barra de aluminio',          '',                                'barra de aluminio'],
+      'aluminio/perfiles':   ['Perfil de aluminio',         'La ficha no declara la pared',    'perfilería de aluminio'],
+      'aluminio/molduras':   ['Moldura U de aluminio',      'La ficha no declara el espesor',  'moldura U, canal de aluminio']
     };
     const t = TIPOS[familia];
     if (!t) return null;
@@ -913,7 +898,7 @@ const REGLAS = {
       orden: l.n * 100 + (h ? h.n : 0),
       nombre: nombre + ' ' + medida + ' x 19.20 pies',
       unidad: 'unidad',
-      esp: t[1] + ' extruido · ' + medida + ' · tramo de 19.20 pies',
+      esp: t[1],
       etapa: 'puertas-ventanas',
       origen: 'importado',
       alias: t[2]
@@ -955,7 +940,7 @@ const REGLAS = {
       orden: 500 + a1.n,
       nombre: tipo + variante + ' para malla ciclónica ' + medida,
       unidad: 'unidad',
-      esp: 'Herraje galvanizado de cerramiento · ' + medida + (variante ? ' ·' + variante : ''),
+      esp: /S\/TORN/i.test(r) ? 'Sin tornillo · se compra aparte' : '',
       etapa: 'exteriores',
       origen: 'importado',
       alias: 'accesorio de verja, herraje de malla ciclónica'

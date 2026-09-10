@@ -256,6 +256,29 @@ quedarse viejo solo.
 
 ---
 
+### Qué va en `esp`, y qué no
+
+`esp` sale en la tabla debajo del nombre, en gris, y en el teléfono cada palabra de más es
+un renglón. Solo lleva **lo que el nombre no dice** y hace falta para no equivocarse de
+producto: una norma o grado (`Grado 60 · ASTM A615`, `SDR-41`, `600 V`), el material si no
+está en el nombre (`Gres porcelánico`), una presentación que el nombre no trae (`Rollo de
+2.40 x 40 m`) o una advertencia de compra corta. Nunca una paráfrasis del nombre o de la
+familia («Pletina de acero al carbono» bajo «Pletina 1" x 1/8"»), ni una medida que ya está
+en el nombre, ni una explicación de cómo se construyó el ítem. Si no queda nada, vacío.
+
+Para los ítems importados, `esp` se define por familia en las tablas de especificación y
+en las reglas incrustadas del importador; el 10/09/2026 se revisaron todas con esa regla.
+
+**Desde ese mismo día la tabla del sitio no muestra `esp` ni el código**: la fila lleva solo
+el nombre, la categoría (o la etapa, en las páginas de categoría), la unidad, el precio y la
+última actualización. El código y la especificación siguen en los datos, en la fila que se
+copia al portapapeles, en el mensaje de WhatsApp y en el Excel, que es donde un proveedor o
+una hoja de cálculo los necesitan.
+
+Lo mismo con el **alcance**: «Material retirado en almacén» es el de casi todo el catálogo,
+así que está declarado una vez (`meta.alcanceBase`) y la tabla solo etiqueta el ítem que se
+aparta de él. La ficha por proveedor y el Excel lo muestran siempre.
+
 ## Dos campos que hacen comparables los precios
 
 ### `alcance` — qué cubre el precio
@@ -392,7 +415,7 @@ el sitio deja de mostrar la estimación de arranque y calcula:
 |---|---|
 | Precio de referencia | Mediana de las cotizaciones válidas |
 | Mínimo y máximo | Extremos observados |
-| Estado | Pasa de *Estimado* a *Verificado* |
+| Última actualización | Tramo de días desde la fecha más reciente (≤7, 8–14, 15–30, más de 30), calculado en el navegador al abrir la página |
 | Fecha | La más reciente de las cotizaciones |
 
 Antes de comparar, todas las cotizaciones se **normalizan al criterio de ITBIS del

@@ -15,6 +15,9 @@
      pasa a ser la mediana de esas cotizaciones. */
   if (PRECIOS) PRECIOS.aplicar(CAT, PROV);
   var ITBIS = (CAT.meta && CAT.meta.itbis) || 0.18;
+  /* El alcance de casi todos los ítems (precio de mostrador); en la tabla
+     solo se etiqueta el que se aparta de él. La ficha lo muestra siempre. */
+  var ALCANCE_BASE = (CAT.meta && CAT.meta.alcanceBase) || '';
   var LS_KEY = 'ilya_precios_cotizacion_v1';
 
   /* ---------------- utilidades ---------------- */
@@ -183,7 +186,7 @@
         var p = precioVista(it.ref, it, sinItbis);
         var sub = p === null ? null : p * (parseFloat(l.cant) || 0);
         return '<div class="cot-item" data-codigo="' + esc(it.codigo) + '">' +
-            '<div><h4>' + esc(it.nombre) + '</h4><small>' + esc(it.codigo) + ' · ' + esc(nombreCat(it.cat)) + '</small></div>' +
+            '<div><h4>' + esc(it.nombre) + '</h4><small>' + esc(nombreCat(it.cat)) + '</small></div>' +
             '<button class="cot-quitar" type="button" data-quitar="' + esc(it.codigo) + '" aria-label="Quitar ' + esc(it.nombre) + '">' + ICONO.basura + '</button>' +
             '<div class="cot-controles">' +
               '<input type="number" min="0" step="any" value="' + esc(l.cant) + '" data-cant="' + esc(it.codigo) + '" aria-label="Cantidad de ' + esc(it.nombre) + '">' +
@@ -477,11 +480,36 @@
 
   /* ---------- repintado general tras cambiar el filtro ---------- */
 
-  function badgeEstadoHTML(it) {
+  /* La columna «Última actualización» no dice qué es el precio sino cuánto
+     hace que se confirmó. Se calcula al cargar, porque envejece cada día:
+     las páginas de categoría traen la fecha en data-fecha y aquí se pasa al
+     tramo. Una fecha de solo año y mes cuenta desde su día 1. */
+  var TRAMOS_FECHA = [
+    [7, 'badge-reciente', 'Últimos 7 días'],
+    [14, 'badge-quincena', '8–14 días'],
+    [30, 'badge-mes', '15–30 días']
+  ];
+  function tramoFecha(fecha) {
+    if (!fecha) return {clase: 'badge-viejo', texto: 'Sin fecha'};
+    var p = String(fecha).split('-');
+    var d = new Date(+p[0], (+p[1] || 1) - 1, +p[2] || 1);
+    var dias = Math.floor((new Date() - d) / 864e5);
+    for (var i = 0; i < TRAMOS_FECHA.length; i++) {
+      if (dias <= TRAMOS_FECHA[i][0]) return {clase: TRAMOS_FECHA[i][1], texto: TRAMOS_FECHA[i][2]};
+    }
+    return {clase: 'badge-viejo', texto: 'Más de 30 días'};
+  }
+  function badgeFechaHTML(it) {
     if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
-    if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
-    if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
-    return '<span class="badge badge-estimado">Estimado</span>';
+    var t = tramoFecha(it.fecha);
+    return '<span class="badge ' + t.clase + '" data-fecha="' + esc(it.fecha || '') + '" title="' + esc(it.fecha || 'sin fecha') + '">' + t.texto + '</span>';
+  }
+  function refrescarBadgesFecha(raiz) {
+    $$('.badge[data-fecha]', raiz || document).forEach(function (el) {
+      var t = tramoFecha(el.getAttribute('data-fecha'));
+      el.className = 'badge ' + t.clase;
+      el.textContent = t.texto;
+    });
   }
 
   function pintarCeldaPrecio(td, it) {
@@ -506,7 +534,7 @@
       if (celda) pintarCeldaPrecio(celda, it);
       var estadoCelda = $('.celda-estado', tr);
       if (estadoCelda) {
-        estadoCelda.innerHTML = badgeEstadoHTML(it) +
+        estadoCelda.innerHTML = badgeFechaHTML(it) +
           (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
           (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
           (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '');
@@ -829,7 +857,7 @@
                 return '<div class="mat-item">' +
                     '<span class="mat-item-n">' + esc(it.nombre) +
                       (yaCotizo(it, p.nombre) ? ' <span class="badge badge-verificado">ya cotizó</span>' : '') + '</span>' +
-                    '<small>' + esc(it.codigo) + ' · ' + esc(it.unidad) + (it.esp ? ' · ' + esc(it.esp) : '') + '</small>' +
+                    '<small>' + esc(it.unidad) + '</small>' +
                   '</div>';
               }).join('') +
             '</div>';
@@ -862,7 +890,7 @@
     itemsDeProveedor(p).forEach(function (it) { usadas[it.cat] = true; });
     $('#mat-cat').innerHTML = '<option value="">Todas sus categorías</option>' +
       CAT.categorias.filter(function (c) { return usadas[c.codigo]; })
-        .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
+        .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.nombre) + '</option>'; })
         .join('');
     $('#mat-cat').value = '';
 
@@ -1103,7 +1131,7 @@
       selCat.innerHTML = '<option value="">Todas las categorías</option>' +
         CAT.grupos.map(function (g) {
           var opciones = CAT.categorias.filter(function (c) { return c.grupo === g.codigo; })
-            .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
+            .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.nombre) + '</option>'; })
             .join('');
           return '<optgroup label="' + esc(g.codigo + ' — ' + g.nombre) + '">' + opciones + '</optgroup>';
         }).join('');
@@ -1185,12 +1213,6 @@
       return copia;
     }
 
-    function badgeEstado(it) {
-      if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
-      if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
-      if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
-      return '<span class="badge badge-estimado">Estimado</span>';
-    }
 
     function fila(it) {
       var p = precioVista(it.ref, it, estado.sinItbis);
@@ -1208,14 +1230,11 @@
       return '<tr data-item="' + esc(it.codigo) + '">' +
           '<td><button class="item-toggle" type="button" data-detalle="' + esc(it.codigo) + '" aria-expanded="false">' +
                 ICONO.flecha + '<span class="item-nombre">' + esc(it.nombre) + '</span></button>' +
-              (it.esp ? '<span class="item-esp">' + esc(it.esp) + '</span>' : '') +
-              (it.alcance ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
-              (it.nota ? '<span class="item-esp">' + esc(it.nota) + '</span>' : '') + '</td>' +
-          '<td><span class="item-cod">' + esc(it.codigo) + '</span><br>' +
-              '<a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
+              (it.alcance && it.alcance !== ALCANCE_BASE ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') + '</td>' +
+          '<td><a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num">' + precioHtml + '</td>' +
-          '<td class="celda-estado">' + badgeEstado(it) +
+          '<td class="celda-estado">' + badgeFechaHTML(it) +
               (it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>') +
               (it.filtrado ? ' <span class="badge badge-filtrado">sus proveedores</span>' : '') +
               (it.sinCotizacionDelFiltro ? ' <span class="badge badge-itbis">sin cotización suya</span>' : '') + '</td>' +
@@ -1436,7 +1455,7 @@
       });
       selCat.innerHTML = '<option value="">Todas las categorías</option>' +
         CAT.categorias.filter(function (c) { return usadas[c.codigo]; })
-          .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.codigo + ' · ' + c.nombre) + '</option>'; })
+          .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.nombre) + '</option>'; })
           .join('');
       selCat.value = f.cat;
     }
@@ -1551,4 +1570,6 @@
     pintar();
   })();
 
+
+  refrescarBadgesFecha();
 })();
