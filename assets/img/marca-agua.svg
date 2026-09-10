@@ -1,7 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
-  <!-- El monograma sin la plancha verde: para usarse de marca de agua,
-       donde un cuadro lleno se lee como un bloque y no como la marca. -->
-  <rect fill="#de3b22" x="27" y="17" width="15" height="13"/>
-  <rect fill="#3f6e22" x="27" y="32" width="15" height="24"/>
-  <rect fill="#e89019" x="27" y="56" width="46" height="14"/>
+<!-- Ingenieros Liberato & Asociados · el monograma SIN la plancha verde
+     Verde #3F6E22 · Marfil #F2EFE2 · Ámbar #E89019 · Rojo #DE3B22 · Tinta #1B1E17
+     Generado por herramientas/logo-a-trazos.py -->
+  <!-- Sobre papel un cuadro lleno se lee como un bloque y no como la
+       marca, así que la marca de agua deja fuera el fondo verde. -->
+  <rect fill="#de3b22" x="29.0" y="19.0" width="14.0" height="11.0"/>
+  <rect fill="#3f6e22" x="29.0" y="32.0" width="14.0" height="26.0"/>
+  <rect fill="#e89019" x="29.0" y="58.0" width="42.5" height="12.0"/>
 </svg>

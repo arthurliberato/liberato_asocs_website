@@ -125,6 +125,20 @@ El verde de marca sí llega solo (6.1:1 sobre blanco, 5.3:1 sobre marfil).
 el barrido del navegador los encontró en 4.1 y 3.9 sobre blanco: el peor fondo
 que tienen que aguantar es el `--marfil-hondo` del pie.
 
+### Tipografía
+
+| Dónde | Fuente |
+|---|---|
+| El nombre dentro del logotipo | **Archivo SemiBold (600)**, ya convertido a trazos |
+| Títulos del sitio | Jost |
+| Texto corrido | Inter |
+
+El logotipo no depende de que Archivo esté instalada porque el nombre va en
+contornos; el sitio no la carga. Si en algún momento se quiere alinear la
+tipografía del sitio con la de la marca, el cambio es sustituir Jost por
+Archivo en el `<link>` de Google Fonts y en la pila de `h1..h4`: es una
+decisión de diseño, no un arreglo, y por eso está sin hacer.
+
 #### Cómo se comprueba
 
 `herramientas/auditar-contraste.js` abre cada página, fuerza visibles los
