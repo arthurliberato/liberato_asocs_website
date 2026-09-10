@@ -70,7 +70,11 @@ const MEDIR = () => {
 function paginas() {
   if (process.argv.length > 2) return process.argv.slice(2);
   const raiz = path.join(__dirname, '..');
-  const urls = [BASE + '/index.html'];
+  /* La raíz ya no es solo index.html: están el listado de proyectos en
+     venta y la ficha de cada uno. */
+  const urls = fs.readdirSync(raiz)
+    .filter(f => f.endsWith('.html')).sort()
+    .map(f => BASE + '/' + f);
   fs.readdirSync(path.join(raiz, 'precios'))
     .filter(f => f.endsWith('.html')).sort()
     .forEach(f => urls.push(BASE + '/precios/' + f));
