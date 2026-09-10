@@ -155,11 +155,10 @@ table{border-collapse:collapse;width:100%}
   /* Línea inferior para que se separe del hero, que también es azul oscuro. */
   box-shadow:inset 0 -1px 0 rgba(120,168,255,.28);
 }
-.franja-negocio-inner{
-  display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;
-  padding:.62rem 0;
-}
+.franja-negocio-inner{display:flex;justify-content:center;align-items:center;gap:.9rem;padding:.55rem 0}
 .franja-negocio p{margin:0;font-size:.94rem;line-height:1.4}
+.franja-servicios{font-family:Jost,sans-serif;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;color:rgba(233,241,252,.92);text-align:center}
+.franja-servicios span{color:var(--blue-200);margin:0 .1rem}
 .franja-negocio strong{color:#fff;font-weight:600}
 .franja-cta{
   --btn-bg:var(--blue);

@@ -397,7 +397,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/cementogris/cemento-gris-titan-94-lb-023108',
     nota: 'CEMENTO GRIS TITAN 94 LB · artículo 023108 · ref. Cemento · marca TITAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-12-024', PROV_INNOVA, 690, {
+  c('MAT-12-030', PROV_INNOVA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/morteros/estuco-interior-forte-blanco-35-lb-065073',
     nota: 'ESTUCO INTERIOR FORTE BLANCO 35 LB · artículo 065073 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
   });
@@ -1125,6 +1125,14 @@
   c('EQU-04-013', PROV_TONOS, 328.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/mota-antigota-5-16-x-9/',
     nota: 'Mota Antigota 5/16 x 9″ · artículo PA-580-19. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('EQU-04-013', PROV_TONOS, 176.04, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/porta-rolo-9-mango-negro/',
+    nota: 'Porta-rolo 9″ Mango Negro · artículo PA-570-19. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('EQU-04-013', PROV_TONOS, 223.63, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/porta-rolo-9-mango-rojo/',
+    nota: 'Porta-rolo 9″ Mango Rojo · artículo 400/23. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('EQU-04-014', PROV_OCHOA, 35818.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cortadora-man-tiger-1000-magnet-100-cm-01098175',
@@ -12783,161 +12791,161 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-inala-timi-100-voltech-t46630',
     nota: 'TIMBRE INALA TIMI-100 VOLTECH T46630 · artículo 0001121304 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-12-009', PROV_TONOS, 2113.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-uno-zero-monto/',
-    nota: 'Pintura acrílica antibacterial Uno zero · artículo 320072 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1252.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-supra-antimoho-monto/',
-    nota: 'Pintura acrílica antimoho Supra · artículo 510978 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1485.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-nevada-plus/',
-    nota: 'Pintura acrílica mate blanca Nevada · artículo 123130 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 838.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/acrilica-latex-popular/',
-    nota: 'Pintura acrílica látex de acabado mate Popular · artículo 07750-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1429.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
-    nota: 'Pintura acrílica mate Popular · artículo 26450-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1383.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
-    nota: 'Pintura acrílica mate Popular · artículo 26466-2 · ref. 1 GL · marca Popular. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1276.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-satinada-popular/',
-    nota: 'Pintura satinada Popular · artículo 02450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1421.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-popular/',
-    nota: 'Pintura semigloss Popular · artículo 04450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 832.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
-    nota: 'Pintura Acrílica Mate Contractor · artículo 2650-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 881.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
-    nota: 'Pintura Acrílica Mate Contractor · artículo 2641-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 374.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-acritex/',
-    nota: 'Pintura acrílica mate Acritex · artículo 7755-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1385.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-contractor/',
-    nota: 'Pintura semigloss Contractor · artículo 3250-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 5297.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-nature/',
-    nota: 'Monto Nature · artículo 093372 · ref. 1 GL · marca Montó. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1340.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
-    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8205-2 · ref. 1 GL · marca Tropical. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 682.24, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-ultratex/',
-    nota: 'Pintura acrílica mate Ultratex · artículo 7700-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1367.04, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-plus-satinada/',
-    nota: 'Pintura satinada Tropical Plus · artículo 8400-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-009', PROV_TONOS, 1411.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-plus/',
-    nota: 'Pintura semigloss Tropical Plus · artículo 8435-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-010', PROV_TONOS, 11526.59, {
+  c('MAT-12-009', PROV_TONOS, 11526.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-ovaldine-50-aniv-monto/',
     nota: 'Pintura Acrílica Mate de alta calidad Ovaldine 50 Aniversario · artículo 491956 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 9885.57, {
+  c('MAT-12-009', PROV_TONOS, 9885.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-uno-zero-monto/',
     nota: 'Pintura acrílica antibacterial Uno zero · artículo 518585 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 4819.59, {
+  c('MAT-12-009', PROV_TONOS, 4819.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-supra-antimoho-monto/',
     nota: 'Pintura acrílica antimoho Supra · artículo 489779 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 6598.58, {
+  c('MAT-12-009', PROV_TONOS, 6598.58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-nevada-plus/',
     nota: 'Pintura acrílica mate blanca Nevada · artículo 317133 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 7096.32, {
+  c('MAT-12-009', PROV_TONOS, 7096.32, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-texturizada-montokril-rugoso/',
     nota: 'Pintura texturizada para fachadas Montokril Rugoso · artículo 160159 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 4192.53, {
+  c('MAT-12-009', PROV_TONOS, 4192.53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/acrilica-latex-popular/',
     nota: 'Pintura acrílica látex de acabado mate Popular · artículo 07750-3 · ref. 5 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 7147.52, {
+  c('MAT-12-009', PROV_TONOS, 7147.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
     nota: 'Pintura acrílica mate Popular · artículo 26471-3 · ref. 5 GL · marca Popular. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 7142.52, {
+  c('MAT-12-009', PROV_TONOS, 7142.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
     nota: 'Pintura acrílica mate Popular · artículo 26466-3 · ref. 5 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 6383.65, {
+  c('MAT-12-009', PROV_TONOS, 6383.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-satinada-popular/',
     nota: 'Pintura satinada Popular · artículo 02450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 7109.55, {
+  c('MAT-12-009', PROV_TONOS, 7109.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-popular/',
     nota: 'Pintura semigloss Popular · artículo 04450-3 · ref. 5 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 4160, {
+  c('MAT-12-009', PROV_TONOS, 4160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
     nota: 'Pintura Acrílica Mate Contractor · artículo 2667-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 2641.61, {
+  c('MAT-12-009', PROV_TONOS, 2641.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
     nota: 'Pintura Acrílica Mate Contractor · artículo 3295-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 1872, {
+  c('MAT-12-009', PROV_TONOS, 1872, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-acritex/',
     nota: 'Pintura acrílica mate Acritex · artículo 7755-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 1730.56, {
+  c('MAT-12-009', PROV_TONOS, 1730.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-super-economica/',
     nota: 'Pintura acrílica mate Super Económica · artículo 7709-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 6926.4, {
+  c('MAT-12-009', PROV_TONOS, 6926.4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-contractor/',
     nota: 'Pintura semigloss Contractor · artículo 3250-3 · ref. 5 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 9269.56, {
+  c('MAT-12-009', PROV_TONOS, 9269.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/montokril-cubiertas/',
     nota: 'Montokril Cubiertas · artículo 659264 · ref. Cubeta · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 10521.28, {
+  c('MAT-12-009', PROV_TONOS, 10521.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/montokril-cubiertas-fibrado/',
     nota: 'Montokril Cubiertas Fibrado · artículo 659271 · ref. Cubeta · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 6700.81, {
+  c('MAT-12-009', PROV_TONOS, 6700.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
     nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8223-3 · ref. 5 GL · marca Tropical. El comercio lista 5 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 8124.43, {
+  c('MAT-12-009', PROV_TONOS, 8124.43, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
     nota: 'Pintura Acrílica Mate Tropical Plus · artículo 1671 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 3411.2, {
+  c('MAT-12-009', PROV_TONOS, 3411.2, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-ultratex/',
     nota: 'Pintura acrílica mate Ultratex · artículo 7700-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 6835.21, {
+  c('MAT-12-009', PROV_TONOS, 6835.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-plus-satinada/',
     nota: 'Pintura satinada Tropical Plus · artículo 8400-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-010', PROV_TONOS, 7097.35, {
+  c('MAT-12-009', PROV_TONOS, 7097.35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-plus/',
     nota: 'Pintura semigloss Tropical Plus · artículo 8435-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 2113.27, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-uno-zero-monto/',
+    nota: 'Pintura acrílica antibacterial Uno zero · artículo 320072 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1252.16, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-supra-antimoho-monto/',
+    nota: 'Pintura acrílica antimoho Supra · artículo 510978 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1485.12, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-nevada-plus/',
+    nota: 'Pintura acrílica mate blanca Nevada · artículo 123130 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 838.51, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/acrilica-latex-popular/',
+    nota: 'Pintura acrílica látex de acabado mate Popular · artículo 07750-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1429.5, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
+    nota: 'Pintura acrílica mate Popular · artículo 26450-2 · ref. 1 GL · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1383.79, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-popular-acrilica/',
+    nota: 'Pintura acrílica mate Popular · artículo 26466-2 · ref. 1 GL · marca Popular. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1276.74, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-satinada-popular/',
+    nota: 'Pintura satinada Popular · artículo 02450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1421.91, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-popular/',
+    nota: 'Pintura semigloss Popular · artículo 04450-2 · ref. 1 GL · marca Popular. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 832.01, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
+    nota: 'Pintura Acrílica Mate Contractor · artículo 2650-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 881.92, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-contractor/',
+    nota: 'Pintura Acrílica Mate Contractor · artículo 2641-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 374.4, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-acritex/',
+    nota: 'Pintura acrílica mate Acritex · artículo 7755-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1385.27, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-contractor/',
+    nota: 'Pintura semigloss Contractor · artículo 3250-2 · ref. 1 GL · marca Tropical. El comercio lista 2 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 5297.6, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/monto-nature/',
+    nota: 'Monto Nature · artículo 093372 · ref. 1 GL · marca Montó. El comercio lista 3 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1340.16, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-tropical-plus-acrilica/',
+    nota: 'Pintura Acrílica Mate Tropical Plus · artículo 8205-2 · ref. 1 GL · marca Tropical. El comercio lista 4 artículos con esta misma especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 682.24, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-acrilica-ultratex/',
+    nota: 'Pintura acrílica mate Ultratex · artículo 7700-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1367.04, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-plus-satinada/',
+    nota: 'Pintura satinada Tropical Plus · artículo 8400-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-010', PROV_TONOS, 1411.54, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-semigloss-plus/',
+    nota: 'Pintura semigloss Tropical Plus · artículo 8435-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
   c('MAT-12-011', PROV_TONOS, 6835.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-poliuretano-acripol/',
@@ -12999,79 +13007,99 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/esmalte-plus/',
     nota: 'Esmalte de acabado brillante Tropical Plus · artículo 8500-2 · ref. 1 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-017', PROV_TONOS, 4642.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-antihumedad-tixoway-monto/',
-    nota: 'Pintura antihumedad Tixoway · artículo 010683 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-017', PROV_TONOS, 3104.96, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/dry-coat-lanco/',
-    nota: 'Pintura Impermeabilizante Dry Coat · artículo DC-480-4 · ref. 1 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
-  });
-  c('MAT-12-018', PROV_TONOS, 5351.84, {
+  c('MAT-12-017', PROV_TONOS, 5351.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-roof-wall-primer-sealer-lanco/',
     nota: 'Primer sellador para techos AS-2010 Roof & Wall Primer/Sealer · artículo AS-210-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 6482.72, {
+  c('MAT-12-017', PROV_TONOS, 6482.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-de-techo-duraflex/',
     nota: 'Sellador de techo Duraflex 5GL · artículo RC-100-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 4578.08, {
+  c('MAT-12-017', PROV_TONOS, 4578.08, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-de-techo-masterflex-lanco/',
     nota: 'Sellador de techo Masterflex · artículo VA-1744-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 8030.24, {
+  c('MAT-12-017', PROV_TONOS, 8030.24, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-siliconizer-lanco/',
     nota: 'Sellador de techo Siliconizer · artículo RC-200-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 10773.12, {
+  c('MAT-12-017', PROV_TONOS, 10773.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-ultra-siliconizer-lanco/',
     nota: 'Sellador de techo Ultra Siliconizer · artículo RC-905-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 11789.92, {
+  c('MAT-12-017', PROV_TONOS, 11789.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/sellador-techo-urethanizer-lanco/',
     nota: 'Sellador de techo Urethanizer · artículo RC-994-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 12344.64, {
+  c('MAT-12-017', PROV_TONOS, 12344.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-para-exterior-ovaldine-fachadas/',
     nota: 'Pintura Impermeabilizante Ovaldine Fachadas · artículo 191825 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-018', PROV_TONOS, 13902.88, {
+  c('MAT-12-017', PROV_TONOS, 13902.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/dry-coat-lanco/',
     nota: 'Pintura Impermeabilizante Dry Coat · artículo DC-480-2 · ref. Cubeta · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-019', PROV_TONOS, 1429.12, {
+  c('MAT-12-018', PROV_TONOS, 2419.2, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/blockaid-popular-impermeabilizante/',
+    nota: 'Impermeabilizante Blockaid Popular · artículo 711978 · ref. 40 LB · marca Popular. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-019', PROV_TONOS, 2838.53, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/plasmont-antihumedad-monto/',
+    nota: 'Plasmont Antihumedad · artículo 599904 · ref. 20kg · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-020', PROV_TONOS, 4642.17, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/pintura-antihumedad-tixoway-monto/',
+    nota: 'Pintura antihumedad Tixoway · artículo 010683 · ref. 1.06 gl (4L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-020', PROV_TONOS, 3104.96, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/dry-coat-lanco/',
+    nota: 'Pintura Impermeabilizante Dry Coat · artículo DC-480-4 · ref. 1 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-021', PROV_TONOS, 1429.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 095239 · ref. 0.66 gl (2.5L) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-019', PROV_TONOS, 1118.66, {
+  c('MAT-12-022', PROV_TONOS, 211.9, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
+    nota: 'Masilla en pasta Plasmont al Uso · artículo 008079 · ref. 0.08 gl (0.5kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-023', PROV_TONOS, 1118.66, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
     nota: 'Masilla en pasta Plasmont al Uso · artículo 008055 · ref. 0.73 gl (5kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-020', PROV_TONOS, 4072.16, {
+  c('MAT-12-024', PROV_TONOS, 335.1, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-multiuso-plasmont-al-uso/',
+    nota: 'Masilla en pasta Plasmont al Uso · artículo 008048 · ref. 0.15 gl (1kg) · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-025', PROV_TONOS, 4072.16, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-exterior-zentech/',
     nota: 'Masilla para exterior satinada Zentech · artículo ZE-259-2 · ref. 5 GL · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-021', PROV_TONOS, 1221.74, {
+  c('MAT-12-026', PROV_TONOS, 2157.6, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-exterior-zentech/',
+    nota: 'Masilla para exterior satinada Zentech · artículo RA-168-21 · ref. Caja 40 lbs · marca Lanco. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
+  });
+  c('MAT-12-027', PROV_TONOS, 1221.74, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-sheetrock-kementex/',
     nota: 'Masilla para sheetrock Kementex · artículo 1923-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-021', PROV_TONOS, 1401.92, {
+  c('MAT-12-027', PROV_TONOS, 1401.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/masilla-para-sheetrock-wallboard/',
     nota: 'Masilla para sheetrock Wallboard · artículo 1905-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-022', PROV_TONOS, 3326.41, {
+  c('MAT-12-028', PROV_TONOS, 3326.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/montosport-monto-piscina/',
     nota: 'Pintura para piscinas e instalaciones deportivas MontoSport · artículo 019808 · ref. 1 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-023', PROV_TONOS, 7349.76, {
+  c('MAT-12-029', PROV_TONOS, 7349.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/primer-emulsion-fijadora/',
     nota: 'Primer Emulsión Fijadora · artículo 413026 · ref. 5 GL · marca Montó. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-023', PROV_TONOS, 3473.6, {
+  c('MAT-12-029', PROV_TONOS, 3473.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.tonosycolores.com/producto/primer-acrilico-fresh-cement/',
     nota: 'Primer para cemento Fresh Cement · artículo 6823-3 · ref. 5 GL · marca Tropical. El comercio declara que el precio incluye ITBIS. Todo su catálogo está en oferta, así que se carga el precio vigente: es el de calle'
   });
-  c('MAT-12-024', PROV_OCHOA, 331.11, {
+  c('MAT-12-030', PROV_OCHOA, 331.11, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/estuco-para-interiores-04590424',
     nota: 'Estuco Para Interiores · artículo 04-59-0424 · ref. 35LIBRAS · marca DURO YESO. ' + SUPUESTO_ITBIS
   });

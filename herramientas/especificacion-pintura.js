@@ -11,9 +11,13 @@
 
      tipo      acrílica, esmalte, anticorrosivo, epóxica,
                de tráfico, impermeabilizante, primer, masilla
-     envase    el galón o la cubeta de cinco: el precio por
-               galón cambia con el envase, así que mezclarlos
-               en un mismo ítem daría una mediana sin sentido
+     envase    el galón, la cubeta de cinco, la funda de 40
+               libras: el precio por galón cambia con el
+               envase, así que mezclarlos en un mismo ítem
+               daría una mediana sin sentido. Va como texto y
+               no como número porque no toda la pintura se
+               vende por volumen: los impermeabilizantes en
+               polvo y algunas masillas se venden por peso.
 
    Y una que NO: el color. Es de la cotización, igual que en la
    baldosa. Una tienda publica cuarenta colores del mismo
@@ -34,8 +38,8 @@
 const FAMILIAS = {
   pintura: {
     cat: 'MAT-12', unidad: 'envase', etapa: 'terminacion', orden: 10,
-    ejes: ['tipo', 'galones'],
-    nombre: m => (SUSTANTIVO[m.tipo] || 'Pintura ' + m.tipo) + ', ' + envase(m.galones),
+    ejes: ['tipo', 'envase'],
+    nombre: m => (SUSTANTIVO[m.tipo] || 'Pintura ' + m.tipo) + ', ' + m.envase,
     alias: 'pintura, galón de pintura, cubeta, acrílica, esmalte, látex, anticorrosivo'
   },
 
@@ -65,7 +69,7 @@ const ETIQUETA_HERRAMIENTA = {
 };
 
 /* Cómo lo pide la obra: el galón y la cubeta tienen nombre propio. */
-function envase(g) {
+function envaseVolumen(g) {
   if (g === 5) return 'cubeta de 5 galones';
   if (g === 2.5) return '2.5 galones';
   if (g === 1) return 'galón';
@@ -94,7 +98,21 @@ function aEnvase(g) {
     const err = Math.abs(e - g) / g;
     if (err <= TOLERANCIA_ENVASE && (!mejor || err < mejor.err)) mejor = { e: e, err: err };
   });
-  return mejor ? mejor.e : null;
+  return mejor ? envaseVolumen(mejor.e) : null;
+}
+
+/* Los que se venden por peso conservan su propia unidad: una funda de 40
+   libras de impermeabilizante en polvo no es «0.73 galones» de nada. */
+const PESOS_LB = [1, 2, 5, 10, 20, 25, 40, 50, 55, 80, 100];
+function aEnvasePeso(lb) {
+  if (!(lb > 0)) return null;
+  let mejor = null;
+  PESOS_LB.forEach(p => {
+    const err = Math.abs(p - lb) / lb;
+    if (err <= 0.06 && (!mejor || err < mejor.err)) mejor = { p: p, err: err };
+  });
+  const v = mejor ? mejor.p : Math.round(lb);
+  return 'funda de ' + v + (v === 1 ? ' libra' : ' libras');
 }
 
 const limpia = s => String(s === 0 ? 0 : (s || '')).trim();
@@ -131,4 +149,4 @@ function item(familia, medidas) {
   };
 }
 
-module.exports = { FAMILIAS, item, aEnvase, envase, ENVASES_GAL };
+module.exports = { FAMILIAS, item, aEnvase, aEnvasePeso, envaseVolumen, ENVASES_GAL };
