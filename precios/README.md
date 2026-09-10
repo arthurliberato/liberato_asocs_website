@@ -1770,9 +1770,21 @@ confiar en la hoja de estilo.
 | `og.png` | La vista previa de 1200×630 que piden WhatsApp y las redes, que no aceptan SVG |
 | `apple-touch-icon.png` | iOS tampoco acepta SVG para el icono de pantalla de inicio |
 
-El nombre dentro de `logo.svg` va con `textLength` y
-`lengthAdjust="spacingAndGlyphs"`: así el bloque mide lo mismo aunque la
-máquina que lo abra no tenga Inter instalada.
+La tipografía del nombre es **Archivo SemiBold, peso 600**, y dentro de
+`logo.svg` va **en trazos, no en texto**: un SVG cargado con `<img>` no puede
+usar las fuentes de la página que lo incrusta, así que un `<text>` habría caído
+en la fuente del sistema, distinta en cada máquina. Los contornos se sacaron
+con HarfBuzz, para que el interletraje sea el que la fuente manda y no una
+suma de anchos:
+
+```bash
+pip install fonttools brotli uharfbuzz
+python3 herramientas/logo-a-trazos.py    # descarga Archivo 600 y escribe los tres SVG
+node herramientas/rasterizar-marca.js    # og.png y el icono de iOS, que no aceptan SVG
+```
+
+El precio es que **el nombre ya no se puede editar** a mano en el SVG: para
+cambiarlo hay que volver a generar los trazos.
 
 ## Notas técnicas
 
