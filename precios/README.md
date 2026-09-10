@@ -1905,6 +1905,24 @@ hay que cambiar la URL en:
 
 ---
 
+## El enlace al sitio principal
+
+Las 32 páginas del subdominio llevan «Proyectos en venta» en el menú y en el pie, apuntando a
+`ingsliberato.com/proyectos-en-venta.html`. Es el mismo cruce que hace el sitio principal
+apuntando aquí desde su menú, pero al revés y con más razón: **este es el lado con más
+tráfico**, y quien busca precios de construcción muchas veces está presupuestando una casa.
+
+La etiqueta hace doble trabajo. «Proyectos» dice que hay obra en marcha y cartera —que la
+empresa está construyendo ahora—, y «en venta» capta al que compra. «En venta» a secas se
+lee mal aquí, entre «Catálogo de precios» y «Proveedores»: en venta, ¿qué?
+
+En el sitio principal el enlace sí dice «Proyectos en venta», y el del portafolio pasó de
+«Proyectos» a **«Obras»** para que los dos no se pisen en el mismo menú. Además «Obras» es
+más exacto: ese enlace lleva a obra ejecutada.
+
+**Un efecto de tamaño:** con la etiqueta dentro, entre 961 y 1080 px la lista se montaba
+sobre el botón de contacto. El menú se pliega ahora a 1080 y no a 1000. Medido, no supuesto.
+
 ## La paleta
 
 Los cinco colores salen del logotipo y están en `:root`, al inicio de
