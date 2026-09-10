@@ -269,6 +269,12 @@ en el nombre, ni una explicación de cómo se construyó el ítem. Si no queda n
 Para los ítems importados, `esp` se define por familia en las tablas de especificación y
 en las reglas incrustadas del importador; el 10/09/2026 se revisaron todas con esa regla.
 
+**Desde ese mismo día la tabla del sitio no muestra `esp` ni el código**: la fila lleva solo
+el nombre, la categoría (o la etapa, en las páginas de categoría), la unidad, el precio y la
+última actualización. El código y la especificación siguen en los datos, en la fila que se
+copia al portapapeles, en el mensaje de WhatsApp y en el Excel, que es donde un proveedor o
+una hoja de cálculo los necesitan.
+
 Lo mismo con el **alcance**: «Material retirado en almacén» es el de casi todo el catálogo,
 así que está declarado una vez (`meta.alcanceBase`) y la tabla solo etiqueta el ítem que se
 aparta de él. La ficha por proveedor y el Excel lo muestran siempre.
@@ -409,7 +415,7 @@ el sitio deja de mostrar la estimación de arranque y calcula:
 |---|---|
 | Precio de referencia | Mediana de las cotizaciones válidas |
 | Mínimo y máximo | Extremos observados |
-| Estado | Pasa de *Estimado* a *Verificado* |
+| Última actualización | Tramo de días desde la fecha más reciente (≤7, 8–14, 15–30, más de 30), calculado en el navegador al abrir la página |
 | Fecha | La más reciente de las cotizaciones |
 
 Antes de comparar, todas las cotizaciones se **normalizan al criterio de ITBIS del

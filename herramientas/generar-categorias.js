@@ -203,11 +203,17 @@ const AVISO = `<div class="aviso">
 
 /* ---------- fila de la tabla ---------- */
 
-function badgeEstado(it) {
-  if (it.estado === 'demo') return '<span class="badge badge-demo">Demostración</span>';
-  if (it.estado === 'verificado') return '<span class="badge badge-verificado">Verificado</span>';
-  if (it.estado === 'tarifario') return '<span class="badge badge-tarifario">Tarifario oficial</span>';
-  return '<span class="badge badge-estimado">Estimado</span>';
+/* La columna «Última actualización» se calcula en el navegador, porque
+   envejece cada día. El HTML trae la fecha en data-fecha y, como texto de
+   respaldo sin JavaScript, la fecha misma: así el archivo no cambia de un
+   día para otro y la regeneración sigue siendo idempotente. */
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+function badgeFecha(it) {
+  const f = String(it.fecha || '');
+  const p = f.split('-');
+  const texto = p.length >= 3 ? `${+p[2]} ${MESES[+p[1] - 1]} ${p[0]}`
+              : p.length === 2 ? `${MESES[+p[1] - 1]} ${p[0]}` : 'sin fecha';
+  return `<span class="badge badge-viejo" data-fecha="${esc(f)}" title="${esc(f || 'sin fecha')}">${esc(texto)}</span>`;
 }
 
 function fila(it) {
@@ -234,13 +240,11 @@ function fila(it) {
 
   return `          <tr data-item="${esc(it.codigo)}">
             <td><button class="item-toggle" type="button" data-detalle="${esc(it.codigo)}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="item-nombre">${esc(it.nombre)}</span></button>` +
-      (it.esp ? `<span class="item-esp">${esc(it.esp)}</span>` : '') +
-      (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') +
-      (it.nota ? `<span class="item-esp">${esc(it.nota)}</span>` : '') + `</td>
-            <td><span class="item-cod">${esc(it.codigo)}</span><br><span class="item-esp">${esc(etapa)}</span></td>
+      (it.alcance && it.alcance !== ALCANCE_BASE ? `<span class="item-alcance">${esc(it.alcance)}</span>` : '') + `</td>
+            <td><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
             <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}</td>
-            <td class="celda-estado">${badgeEstado(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
+            <td class="celda-estado">${badgeFecha(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
             <td class="num acciones">` +
       `<button class="btn-copiar" type="button" data-copiar-precio="${esc(it.codigo)}" aria-label="Copiar ${esc(it.nombre)} como fila de hoja de cálculo" title="Copiar como fila para Excel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>` +
       (it.ref === null ? '' :
@@ -384,7 +388,7 @@ function generarCategoria(cat) {
     </nav>
 
     <div class="section-head" style="margin-bottom:1.5rem">
-      <p class="eyebrow">${esc(cat.codigo)} · ${esc(grupo.nombre)}</p>
+      <p class="eyebrow">${esc(grupo.nombre)}</p>
       <h1 class="section-title">${esc(c.h1)}</h1>
     </div>
 
@@ -415,10 +419,10 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
         <thead>
           <tr>
             <th scope="col">Ítem</th>
-            <th scope="col">Código y etapa</th>
+            <th scope="col">Etapa</th>
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
-            <th scope="col">Estado</th>
+            <th scope="col">Última actualización</th>
             <th scope="col" class="num"><span class="visually-hidden">Agregar a la lista</span></th>
           </tr>
         </thead>

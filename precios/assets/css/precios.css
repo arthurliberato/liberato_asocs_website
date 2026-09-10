@@ -271,6 +271,11 @@ table{border-collapse:collapse;width:100%}
 .badge-itbis{background:var(--bg-tint);color:var(--ink-mute);border:1px solid var(--line);font-weight:500}
 .badge-demo{background:#f3e8ff;color:#6b21a8;border:1px solid #e0cffc}
 .badge-filtrado{background:var(--navy);color:#fff;border:1px solid var(--navy)}
+/* Última actualización: cuánto hace que se confirmó el precio, no qué es. */
+.badge-reciente{background:var(--green-soft);color:#137a3a;border:1px solid #bfe6cd}
+.badge-quincena{background:var(--blue-50);color:var(--navy);border:1px solid var(--blue-200)}
+.badge-mes{background:var(--accent-soft);color:#8a5a12;border:1px solid #f0dcbd}
+.badge-viejo{background:var(--bg-tint);color:var(--ink-mute);border:1px solid var(--line)}
 
 .btn-add{
   border:1px solid var(--line);background:#fff;color:var(--navy);
