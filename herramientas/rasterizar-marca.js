@@ -9,6 +9,10 @@
                           que esperan.
      apple-touch-icon.png iOS tampoco lo acepta para el icono de la
                           pantalla de inicio. Va a 180x180.
+     isotipo-180.png      El que se incrusta en el libro de Excel: openpyxl
+                          solo mete mapas de bits. Es el mismo dibujo que
+                          el de iOS, pero con su propio archivo para que
+                          cambiar uno no toque el otro sin querer.
 
    Se rasterizan con Chromium para no meter otra dependencia: el
    navegador ya está para el barrido de contraste.
@@ -71,13 +75,14 @@ const paginaIcono = iso => `<!doctype html><meta charset="utf-8">
   await icono.setContent(paginaIcono(path.join(carpeta, 'isotipo.svg')));
   await icono.waitForTimeout(300);
   await icono.screenshot({ path: path.join(carpeta, 'apple-touch-icon.png') });
+  await icono.screenshot({ path: path.join(carpeta, 'isotipo-180.png') });
   await icono.close();
 
   await b.close();
 
   /* La segunda carpeta es copia: el subdominio se publica por separado. */
-  for (const f of ['og.png', 'apple-touch-icon.png']) {
+  for (const f of ['og.png', 'apple-touch-icon.png', 'isotipo-180.png']) {
     fs.copyFileSync(path.join(DESTINOS[0], f), path.join(DESTINOS[1], f));
   }
-  console.log('Escritos og.png (1200x630) y apple-touch-icon.png (180x180) en las dos carpetas.');
+  console.log('Escritos og.png (1200x630), apple-touch-icon.png e isotipo-180.png en las dos carpetas.');
 })();

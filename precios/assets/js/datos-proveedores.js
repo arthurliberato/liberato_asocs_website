@@ -62,6 +62,14 @@
   }
 
   /* ---------- Cadenas y multicategoría (núcleo para RFQ) ---------- */
+  p('Imper System (Impersystem Tecnologies)', {
+    tipo:'especialista', canal:'directo',
+    cats:['EQU-02'],
+    zonas:['este'], web:'imper-system.com', tel:'849-456-3228',
+    email:'info@imper-system.com', precios:true,
+    nota:'Impermeabilizantes y aislamientos térmicos, con flota de plataformas elevadoras en alquiler. Nave Industrial Bávaro M&M, Boulevard Turístico del Este, entrada CEPM. Cotiza en USD y sin ITBIS. La tarifa de los brazos telescópico y articulado incluye operador; ninguna incluye combustible ni transporte.'
+  });
+
   p('Ferretería Ochoa (8A)', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-12','MAT-13','MAT-18'],

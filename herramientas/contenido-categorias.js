@@ -856,27 +856,29 @@ module.exports = {
 },
 
 'EQU-02': {
-  titulo: 'Precio del alquiler de equipos de construcción en RD',
-  desc: 'Tarifas de referencia de alquiler de mezcladora, vibrador, compactadora, martillo demoledor, hidrolavadora, planta eléctrica y soldadora en RD.',
-  h1: 'Precio del alquiler de equipos de construcción en República Dominicana',
+  titulo: 'Precio del alquiler de plataformas elevadoras en RD',
+  desc: 'Tarifas de referencia por día, semana y mes de manlift de oruga, brazo telescópico y brazo articulado en República Dominicana.',
+  h1: 'Precio del alquiler de plataformas elevadoras en República Dominicana',
   intro: [
-    'Mezcladoras, vibradores, compactadoras, martillos demoledores y plantas eléctricas se alquilan por día o por semana, y en obras cortas casi siempre conviene alquilar antes que comprar. El cálculo es simple: si el equipo se va a usar unos pocos días al año, el alquiler gana; si va a estar en uso continuo durante meses, la compra empieza a tener sentido.',
-    'Lo que suele quedar fuera de la comparación son los consumibles y el depósito. Discos, electrodos, puntas, combustible y aceite corren normalmente por cuenta de quien alquila, y muchos proveedores piden un depósito en garantía que hay que contemplar en el flujo de caja de la obra.'
+    'La plataforma elevadora se alquila por día, por semana o por mes, y la diferencia entre las tres tarifas no es proporcional: la semana sale por poco más de cuatro días y el mes por poco más de tres semanas. Elegir bien el periodo es la primera decisión de costo, y depende del avance real de la cuadrilla, no del calendario del contrato.',
+    'Lo que decide la máquina es la altura de trabajo y cómo se llega al punto: la de oruga entra por pasillos y patios estrechos, el brazo articulado salva obstáculos, y el telescópico es el que alcanza las grandes alturas de fachada. Pagar por más altura de la necesaria es de los sobrecostos más comunes de esta partida.',
+    'La tarifa casi nunca es el costo. El combustible corre por cuenta de quien alquila, el transporte de entrega y retiro se cobra aparte, y muchos proveedores piden un depósito en garantía por el monto de la renta que hay que contemplar en el flujo de caja. En cambio, en los brazos telescópico y articulado el operador suele venir incluido.'
   ],
   claves: [
-    ['Alquilar o comprar', 'Comparar el alquiler por los días de uso reales contra el precio de compra más su mantenimiento.'],
-    ['Consumibles aparte', 'Discos, electrodos, puntas y combustible no vienen con el equipo.'],
-    ['Depósito en garantía', 'Es dinero inmovilizado durante el alquiler. Contarlo en el flujo, no solo en el costo.'],
-    ['Recibir el equipo probado', 'Verificar funcionamiento y estado al recibir, y dejarlo documentado. Evita cargos al devolver.']
+    ['Altura de trabajo, no de la máquina', 'La altura de trabajo ya incluye el alcance de la persona. Pedir más de la necesaria se paga.'],
+    ['El periodo manda', 'La semana cuesta poco más que cuatro días y el mes poco más que tres semanas: conviene ajustar el periodo al avance real.'],
+    ['Combustible y transporte aparte', 'La tarifa es del equipo. El diésel y la entrega y retiro se suman al costo de la partida.'],
+    ['Operador incluido, a veces', 'En brazo telescópico y articulado suele venir con operador. En las de oruga, no: hace falta personal certificado.']
   ],
   faq: [
-    ['¿Conviene comprar o alquilar un equipo de construcción?',
-     'La regla práctica es comparar el costo de alquiler por los días de uso previstos contra el precio de compra más el mantenimiento y el almacenamiento. Para equipos de uso esporádico, el alquiler es claramente mejor; para los de uso continuo en una empresa constructora, la compra se amortiza.'],
-    ['¿Qué incluye el alquiler de un equipo?',
-     'Normalmente el equipo funcionando y su mantenimiento básico. Los consumibles, el combustible y el transporte hasta la obra suelen ir por cuenta de quien alquila, y es frecuente que se pida un depósito en garantía.']
+    ['¿Conviene alquilar por día, por semana o por mes?',
+     'Depende del avance real de la cuadrilla, no de la duración del contrato. Como la semana cuesta poco más que cuatro días y el mes poco más que tres semanas, en cuanto se prevén más de cuatro días seguidos de trabajo el periodo largo sale mejor. El error caro es alquilar por mes una máquina que se va a usar dos días por semana.'],
+    ['¿Qué altura de plataforma necesito?',
+     'La que declara el fabricante es la altura de trabajo, que ya suma el alcance de una persona de pie en la canasta. Para trabajar a 18 metros basta una de 20, no una de 26. Conviene medir el punto más alto de la fachada y no la altura total del edificio.'],
+    ['¿Qué no incluye la tarifa de alquiler?',
+     'Normalmente el combustible y el transporte de entrega y retiro, que se cotiza aparte y por distancia. Es frecuente que además se pida un depósito en garantía por el mismo monto de la renta, reembolsable al devolver el equipo. El mantenimiento preventivo sí suele estar incluido.']
   ]
 },
-
 'EQU-03': {
   titulo: 'Precio del alquiler de andamios y formaleta en RD',
   desc: 'Tarifas de referencia de alquiler mensual de andamios, puntales metálicos, formaleta y escaleras de obra en República Dominicana.',

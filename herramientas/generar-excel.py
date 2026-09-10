@@ -10,27 +10,22 @@ quien conoce el catálogo, y escribe precios/descargas/precios-construccion-rd.x
 El modelo vive en JavaScript porque es el que lee el sitio; aquí no se
 duplica nada, solo se le da forma de libro.
 
-LAS OCHO HOJAS Y POR QUÉ ESTÁN
+LAS DOS HOJAS
 
-  Léame                   De dónde salen los números, cuándo se generaron y
-                          qué significa cada estado. El archivo va a circular
-                          por correo separado del sitio: tiene que explicarse solo.
-  Catálogo                Los 1,500 ítems con todos sus campos. Es la hoja de
-                          datos contra la que buscan las demás.
-  Comparativo             Un ítem por fila, una columna por proveedor, y el
-                          mínimo, la mediana y el máximo al lado. Es la hoja
-                          del comprador: dice a quién comprarle y cuánto se
-                          gana negociando.
-  Presupuesto             Plantilla con fórmulas: se escribe el código y la
-                          cantidad, y sale la descripción, el precio y el
-                          importe. Con costo directo, indirectos y utilidad.
-  Resumen por etapa       El presupuesto agrupado por etapa de obra, que es
-                          como se programa el desembolso.
-  Solicitud de cotización Lo mismo pero al revés: las columnas de precio van
-                          vacías para que las llene el proveedor, y al lado
-                          se ve cuánto se aparta de la referencia.
-  Proveedores             A quién pedirle qué, con su contacto.
-  Conversiones            Los factores de cubicación de siempre.
+  Catálogo      Todos los ítems con sus campos. Es la hoja de datos contra
+                la que busca la otra.
+  Comparativo   Un ítem por fila, una columna por comercio, y el mínimo, la
+                mediana y el máximo al lado. Es la hoja del comprador: dice
+                a quién comprarle y cuánto se gana negociando.
+
+Las dos llevan arriba una banda fina y fija con la marca, y los títulos en
+la fila 2 para que los datos empiecen en la 3.
+
+OJO: este archivo todavía carga seis funciones hoja_* que nadie llama
+—Léame, Presupuesto, Resumen por etapa, Solicitud de cotización,
+Proveedores y Conversiones—, de cuando el libro tenía ocho hojas. Son unas
+450 líneas muertas. Se dejan por si alguna vuelve, pero conviene decidirlo:
+o vuelven o se borran.
 """
 
 import json
@@ -39,6 +34,12 @@ import sys
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl.drawing.image import Image
+from openpyxl.drawing.fill import Blip
+from openpyxl.drawing.geometry import PresetGeometry2D
+from openpyxl.drawing.picture import PictureFrame
+from openpyxl.drawing.spreadsheet_drawing import AnchorMarker, OneCellAnchor
+from openpyxl.drawing.xdr import XDRPositiveSize2D
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -46,7 +47,23 @@ from openpyxl.worksheet.datavalidation import DataValidation
 RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "precios" / "descargas" / "precios-construccion-rd.xlsx"
 
-FUENTE = "Arial"
+# CALIBRI, NO ARIAL
+# Arial es una grotesca de trazo cerrado: en una columna de mil filas
+# cansa. Calibri es humanista —aperturas abiertas, esquinas redondeadas,
+# menos contraste de trazo— y se lee más ligera en tablas largas.
+#
+# Está en todas partes donde hay Excel: viene con Office desde 2007, en
+# Windows y en Mac. Y donde no hay Office, LibreOffice trae Carlito, que
+# es métricamente compatible: sustituye sin mover un ancho de columna.
+# Ninguna otra opción más ligera que Arial —Trebuchet, Verdana— tiene un
+# clon libre con las mismas métricas.
+#
+# Además arregla una incoherencia vieja: el ancho de columna de openpyxl
+# se mide en anchos de carácter de la fuente por defecto del libro, que
+# siempre fue Calibri 11, mientras las celdas iban en Arial 10. Los
+# anchos y la fuente no coincidían.
+FUENTE = "Calibri"
+CUERPO = 11          # Calibri 11 ocupa lo que Arial 10
 
 # La paleta del logotipo, la misma del sitio. El libro se mantiene claro:
 # el verde solo pinta la banda de firma y la fila de títulos.
@@ -57,17 +74,18 @@ MARFIL = "F8F6EE"       # zebra
 AMBAR_SUAVE = "FDF3E2"  # celdas que el usuario llena
 FILETE = "D8D4C4"
 
-TXT = Font(name=FUENTE, size=10)
-TXT_MINI = Font(name=FUENTE, size=9, color="62685A")
-TIT = Font(name=FUENTE, size=10, bold=True, color="FFFFFF")
-H1 = Font(name=FUENTE, size=16, bold=True, color=VERDE_HONDO)
-H2 = Font(name=FUENTE, size=11, bold=True, color=VERDE_HONDO)
-ENTRADA = Font(name=FUENTE, size=10, color="8A5309")
+TXT = Font(name=FUENTE, size=CUERPO)
+TXT_MINI = Font(name=FUENTE, size=CUERPO - 1, color="62685A")
+TIT = Font(name=FUENTE, size=CUERPO, bold=True, color="FFFFFF")
+H1 = Font(name=FUENTE, size=18, bold=True, color=VERDE_HONDO)
+H2 = Font(name=FUENTE, size=CUERPO + 1, bold=True, color=VERDE_HONDO)
+ENTRADA = Font(name=FUENTE, size=CUERPO, color="8A5309")
 
 FILL_TIT = PatternFill("solid", fgColor=VERDE)
 FILL_ENTRADA = PatternFill("solid", fgColor=AMBAR_SUAVE)
 FILL_TOTAL = PatternFill("solid", fgColor=VERDE_SUAVE)
 FILL_ZEBRA = PatternFill("solid", fgColor=MARFIL)
+FILL_MARCA = PatternFill("solid", fgColor=MARFIL)
 
 BORDE = Border(*[Side(style="thin", color=FILETE)] * 4)
 
@@ -88,15 +106,55 @@ def datos():
     return json.loads(r.stdout)
 
 
+ISOTIPO = RAIZ / "assets" / "img" / "isotipo-180.png"
+EMU = 9525          # unidades internas de Office por píxel
+ICONO_PX = 22       # el icono dentro de la banda
+MARGEN_PX = 5
+
+
 def marca(ws, n_cols):
-    """Banda fina con la firma, fija arriba de la hoja."""
+    """Banda fina con la marca, fija arriba de la hoja.
+
+    Va el icono, no el bloque entero: en una banda de esta altura el
+    nombre dibujado quedaría en tres píxeles de altura de mayúscula, o
+    sea ilegible. El icono se lee a 22 px, y el nombre se pone como
+    texto de verdad, que además se puede buscar y escalar.
+
+    La banda es de marfil, no verde: el icono lleva su propia plancha
+    verde y sobre un fondo del mismo color se perdería.
+    """
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=max(2, n_cols))
     c = ws.cell(row=1, column=1,
                 value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com")
-    c.font = Font(name=FUENTE, size=9, bold=True, color="FFFFFF")
-    c.fill = FILL_TIT
-    c.alignment = Alignment(vertical="center", horizontal="left", indent=1)
-    ws.row_dimensions[1].height = 16
+    c.font = Font(name=FUENTE, size=CUERPO - 1, bold=True, color=VERDE_HONDO)
+    c.fill = FILL_MARCA
+    # La sangría deja hueco al icono: cada nivel vale un ancho de carácter.
+    c.alignment = Alignment(vertical="center", horizontal="left", indent=4)
+    ws.row_dimensions[1].height = 24
+
+    if ISOTIPO.exists():
+        img = Image(str(ISOTIPO))
+        img.width = img.height = ICONO_PX
+        # Anclado a A1 con desplazamiento propio, para que no se pegue al borde.
+        ancla = OneCellAnchor(
+            _from=AnchorMarker(col=0, row=0,
+                               colOff=MARGEN_PX * EMU, rowOff=MARGEN_PX * EMU),
+            ext=XDRPositiveSize2D(ICONO_PX * EMU, ICONO_PX * EMU))
+        # openpyxl rotularía la imagen «Picture». Se arma el marco a mano
+        # para que el lector de pantalla diga de qué es el logotipo.
+        marco = PictureFrame()
+        marco.nvPicPr.cNvPr.id = 1
+        marco.nvPicPr.cNvPr.name = "Ingenieros Liberato & Asociados"
+        marco.nvPicPr.cNvPr.descr = "Logotipo de Ingenieros Liberato & Asociados"
+        # openpyxl rellena el identificador al escribir, pero el blip
+        # tiene que existir de antemano.
+        marco.blipFill.blip = Blip()
+        marco.blipFill.blip.cstate = "print"
+        marco.spPr.prstGeom = PresetGeometry2D(prst="rect")
+        marco.spPr.ln = None
+        ancla.pic = marco
+        img.anchor = ancla
+        ws.add_image(img)
 
 
 def encabeza(ws, fila, titulos, anchos=None, congelar=True):
@@ -699,6 +757,13 @@ def main():
     d = datos()
     wb = Workbook()
     wb.remove(wb.active)
+
+    # El estilo «Normal» es el que fija la unidad de ancho de columna de
+    # todo el libro. Coincidía con Calibri 11 por casualidad; ahora se
+    # declara, para que los anchos y la fuente de las celdas sean lo mismo.
+    normal = wb._named_styles["Normal"]
+    normal.font.name = FUENTE
+    normal.font.sz = CUERPO
 
     # Dos hojas y nada más: el catálogo y el comparativo por comercio.
     hoja_catalogo(wb, d)

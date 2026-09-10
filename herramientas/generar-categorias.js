@@ -96,7 +96,7 @@ function header(seccion) {
       <ul class="nav-list">
         ${nav}
       </ul>
-      <a class="btn btn-primary nav-cta" href="${PRINCIPAL}/#contacto">Solicitar cotización</a>
+      <a class="btn btn-contacto nav-cta" href="${PRINCIPAL}/#contacto">Contáctanos</a>
     </nav>
 
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
@@ -130,15 +130,13 @@ const FOOTER = `<footer class="site-footer">
         <h3>Referencia</h3>
         <ul>
           <li><a href="proveedores.html">Directorio de proveedores</a></li>
-          <li><a href="metodologia.html">Metodología</a></li>
-          <li><a href="metodologia.html#conversiones">Conversiones de unidad</a></li>
-          <li><a href="metodologia.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="descargas/precios-construccion-rd.xlsx" download>Descargar en Excel</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
         </ul>
       </div>
       <div>
-        <h3>La empresa</h3>
+        <h3>Contacto</h3>
         <ul>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="${PRINCIPAL}/">ingsliberato.com</a></li>
           <li><a href="tel:+18297939892">+1 (829) 793-9892</a></li>
           <li><a href="mailto:arthur@ingsliberato.com">arthur@ingsliberato.com</a></li>
@@ -197,8 +195,7 @@ const AVISO = `<div class="aviso">
   <p><strong>Precios compartidos por proveedores, no cotizaciones.</strong> Cada ítem lleva el precio que el
      propio comercio publica en línea o cotizó por escrito, con su fecha, y sale marcado como
      <em>Verificado</em>. Ninguno es una cotización formal a su nombre: sirven para dimensionar
-     un presupuesto, no para cerrar una compra.
-     <a href="metodologia.html">Cómo trabajamos los precios →</a></p>
+     un presupuesto, no para cerrar una compra.</p>
 </div>`;
 
 /* ---------- fila de la tabla ---------- */
@@ -355,6 +352,24 @@ ${elegidas.map((c) => `      <a class="card" href="${c.slug}.html">
 function generarCategoria(cat) {
   const c = CONTENIDO[cat.codigo];
   const items = CAT.items.filter((i) => i.cat === cat.codigo);
+  /* La zona no es la misma en todas las categorías: el alquiler de
+     plataformas lo cotiza un comercio de Bávaro, no del Gran Santo Domingo.
+     Se saca de quién cotizó de verdad, no de un valor fijo. */
+  const zonasDeLaCategoria = (items) => {
+    const codigos = new Set();
+    /* c.proveedor ya es el objeto del comercio, no su nombre. */
+    items.forEach((i) => (i.cotizaciones || []).forEach((c) => {
+      const p = c.proveedor;
+      if (p && p.zonas) p.zonas.forEach((z) => codigos.add(z));
+    }));
+    if (codigos.has('nacional') || codigos.size === 0) return 'Cobertura nacional';
+    const nombre = (c) => (PROV.zonas.filter((z) => z.codigo === c)[0] || {}).nombre || c;
+    const nombres = Array.from(codigos).map(nombre).sort();
+    return nombres.length > 2
+      ? nombres.slice(0, 2).join(', ') + ' y otras zonas'
+      : nombres.join(' y ');
+  };
+
   const conPrecio = items.filter((i) => i.ref !== null);
   const url = `${SITIO}/${cat.slug}.html`;
   const grupo = grupoPorCodigo[cat.grupo];
@@ -388,7 +403,7 @@ function generarCategoria(cat) {
          <strong>${items.length} ${items.length === 1 ? 'ítem' : 'ítems'}</strong> en esta categoría,
          con precios de referencia entre ${rd(minimo)} y ${rd(maximo)}
          según el ítem y su unidad (${unidades.slice(0, 4).map(esc).join(', ')}${unidades.length > 4 ? '…' : ''}).
-         Gran Santo Domingo, actualizado en septiembre de 2026.
+         ${zonasDeLaCategoria(items)}, actualizado en septiembre de 2026.
        </p>`
     : `<p class="section-sub" style="margin-top:1.2rem"><strong>${items.length} ítems</strong> en esta categoría, sin monto publicado porque se liquidan según tarifario oficial.</p>`;
 
@@ -456,8 +471,7 @@ ${items.map(fila).join('\n')}
 
     <p style="margin-top:.6rem;font-size:.88rem;color:var(--ink-mute);max-width:74ch">
       ¿Busca algo que no está en esta tabla?
-      <a href="./?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>
-      o <a href="metodologia.html">lea cómo se arman estos precios</a>.
+      <a href="./?cat=${esc(cat.codigo)}">Abra el catálogo completo con buscador y filtros</a>.
     </p>
   </div>
 </section>
@@ -608,7 +622,6 @@ function generarSitemap() {
     [SITIO + '/', 'weekly', '1.0'],
     [SITIO + '/proveedores.html', 'monthly', '0.8'],
     [SITIO + '/quienes-somos.html', 'yearly', '0.5'],
-    [SITIO + '/metodologia.html', 'monthly', '0.6'],
   ];
   CAT.categorias.forEach((c) => urls.push([`${SITIO}/${c.slug}.html`, 'weekly', '0.8']));
 

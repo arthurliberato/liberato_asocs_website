@@ -140,6 +140,12 @@ ul{margin:0;padding:0;list-style:none}
 .btn-block{width:100%}
 .btn-primary{--btn-bg:var(--verde)}
 .btn-primary:hover{--btn-bg:var(--verde-700)}
+/* El botón de contacto es el único ámbar del sitio: es la acción que
+   queremos que se vea, y el ámbar la despega del verde estructural.
+   Va con tinta encima, no con blanco: el ámbar de marca rinde 2.5:1
+   contra el blanco y 6.8:1 contra la tinta. */
+.btn-contacto{--btn-bg:var(--ambar);color:var(--ink)}
+.btn-contacto:hover{--btn-bg:var(--ambar-600);color:var(--ink)}
 .btn-ghost{background:transparent;border-color:var(--line-fuerte);color:var(--verde-800)}
 .btn-ghost:hover{background:#fff;border-color:var(--verde-200)}
 .btn-whatsapp{background:var(--verde);margin-top:.5rem}
@@ -556,3 +562,83 @@ a.ct-v:hover{color:var(--verde-700)}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none}
 }
+
+/* =========================================================
+   PROYECTOS EN VENTA
+   Otra cosa que el portafolio: aquello cuenta obra ejecutada, esto es
+   una oferta comercial. Por eso el estado va arriba de todo y lo que
+   no está confirmado se dice en vez de dejarse en blanco, que parece
+   un error de la página.
+   ========================================================= */
+.pv-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;list-style:none;padding:0;margin:0}
+@media (max-width:900px){.pv-lista{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.pv-lista{grid-template-columns:1fr}}
+
+.pv-tarjeta a{
+  display:flex;flex-direction:column;gap:.35rem;height:100%;
+  padding:1.5rem 1.4rem 1.3rem;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  text-decoration:none;color:inherit;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);
+}
+.pv-tarjeta a:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--verde-200)}
+.pv-estado{
+  align-self:flex-start;margin-bottom:.5rem;
+  font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--verde-800);background:var(--verde-100);border:1px solid var(--verde-200);
+  padding:.2rem .6rem;border-radius:100px;
+}
+.pv-tarjeta h3{font-size:1.18rem;color:var(--verde-900)}
+.pv-loc{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.pv-tip{margin:0;font-size:.9rem;color:var(--ink-mute)}
+.pv-ver{margin-top:auto;padding-top:.9rem;font-family:Jost,sans-serif;font-weight:500;font-size:.92rem;color:var(--verde-700)}
+
+/* ---------- la ficha ---------- */
+.pv-datos{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;margin:0 0 2.4rem;
+}
+@media (max-width:700px){.pv-datos{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.pv-datos{grid-template-columns:1fr}}
+.pv-datos > div{background:#fff;padding:1rem 1.1rem}
+.pv-datos dt{
+  font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--verde-700);margin-bottom:.3rem;
+}
+.pv-datos dd{margin:0;font-size:1.02rem;color:var(--ink)}
+
+/* Lo que falta se nombra. En blanco parecería un fallo de la página. */
+.pendiente{font-size:.88rem;font-style:italic;color:var(--ink-mute)}
+
+.pv-h2{font-size:1.5rem;margin:0 0 1rem}
+.pv-provisional{
+  margin:.9rem 0 0;font-size:.9rem;color:var(--ambar-700);
+  background:var(--ambar-50);border-left:3px solid var(--ambar);
+  padding:.7rem .9rem;border-radius:0 var(--r-sm) var(--r-sm) 0;max-width:70ch;
+}
+.pv-tabla-caja{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r)}
+.pv-tabla{width:100%;border-collapse:collapse;min-width:520px;background:#fff}
+.pv-tabla th{
+  text-align:left;padding:.85rem 1.1rem;background:var(--bg-tint);
+  border-bottom:1px solid var(--line);
+  font-family:Jost,sans-serif;font-size:.75rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);
+}
+.pv-tabla td{padding:.9rem 1.1rem;border-bottom:1px solid var(--line);font-size:.98rem}
+.pv-tabla tr:last-child td{border-bottom:0}
+.pv-precio{font-weight:600;color:var(--verde-700);white-space:nowrap}
+.pv-nota{margin:.9rem 0 0;font-size:.92rem;color:var(--ink-soft);max-width:70ch}
+.pv-amenidades{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem 1.4rem;margin:0 0 2rem;padding:0;list-style:none}
+@media (max-width:600px){.pv-amenidades{grid-template-columns:1fr}}
+.pv-amenidades li{position:relative;padding-left:1.2rem;font-size:.96rem;color:var(--ink-soft)}
+.pv-amenidades li::before{
+  content:"";position:absolute;left:0;top:.55em;
+  width:7px;height:7px;border-radius:1px;background:var(--ambar);transform:rotate(45deg);
+}
+
+/* ---------- migas ---------- */
+.miga{font-size:.88rem;color:var(--ink-mute);margin-bottom:1.4rem}
+.miga a{color:var(--verde-700);text-decoration:none}
+.miga a:hover{text-decoration:underline}
+.miga span[aria-hidden]{margin:0 .35rem;color:var(--line-fuerte)}

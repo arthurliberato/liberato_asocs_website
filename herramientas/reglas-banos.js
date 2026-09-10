@@ -173,6 +173,13 @@ function medidasDe(a, familia) {
     if (p) m.piezas = +p[1];
   }
 
+  /* El ámbito lo decide la tabla de especificación, no cada comercio:
+     si cada uno lo decidiera, el mismo artículo caería en partidas
+     distintas según quién lo venda. */
+  if (['juego-accesorios', 'secador-manos', 'dispensador-jabon', 'dispensador-papel'].indexOf(familia) >= 0) {
+    m.ambito = E.ambito(n);
+  }
+
   if (familia === 'secador-manos' || familia === 'dispensador-jabon') {
     if (/sensor|autom[aá]tic/i.test(n)) m.activacion = 'sensor';
     else if (/bot[oó]n|manual|palanca/i.test(n)) m.activacion = 'boton';

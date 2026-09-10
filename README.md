@@ -153,6 +153,69 @@ node herramientas/auditar-contraste.js
 
 ---
 
+## Proyectos en venta
+
+Los inmuebles a la venta de obras en curso. Es **otra cosa que el portafolio**: el portafolio
+cuenta obra ejecutada, esto es una oferta comercial y lleva precio, disponibilidad y fecha de
+entrega.
+
+### Las tres vistas, encadenadas
+
+| Dónde | Qué hace |
+|---|---|
+| Bloque en la portada (`#en-venta`) | Un adelanto de hasta tres proyectos, que lleva al listado |
+| `proyectos-en-venta.html` | El listado completo |
+| `proyecto-‹slug›.html` | Una ficha por proyecto, con URL, título y vista previa propios |
+
+No compiten, se encadenan. Un proyecto en venta se comparte por WhatsApp y se busca por su
+nombre: necesita URL propia, y en un bloque de la portada no la tiene. Las tres vistas leen
+**el mismo dato**, `assets/js/proyectos-venta.js`.
+
+### Agregar un proyecto
+
+Se añade un objeto a `PROYECTOS_VENTA` y se corre el generador:
+
+```bash
+node herramientas/generar-proyectos-venta.js
+```
+
+Escribe el listado, una página por proyecto y el `sitemap.xml`. La cabecera y el pie **se
+leen de `index.html`**, no se copian: una copia se queda vieja el día que alguien toque el
+menú y nadie se entera.
+
+### La regla de la casa
+
+**Aquí no se escribe nada que no esté confirmado.** Un metraje, un precio o una fecha de
+entrega inventados no son un adorno de maqueta: son una oferta de venta de un inmueble. Lo
+que no se sabe va en `null`, y la ficha lo dice —«Pendiente de confirmar»— en vez de
+rellenarlo o dejarlo en blanco, que parecería un fallo de la página.
+
+### Qué falta por confirmar
+
+La ficha publica «Pendiente de confirmar» donde no hay dato. Para pedirlo sin ir campo por
+campo por la página:
+
+```bash
+node herramientas/generar-proyectos-venta.js --pendientes
+```
+
+Saca la lista en texto plano, proyecto por proyecto y tipología por tipología, lista para
+reenviar a quien tenga el dato.
+
+### El precio
+
+`politicaPrecio` decide cómo se muestra:
+
+- `'a-solicitud'` — no se publica cifra y la tabla no trae columna de precio. La ficha dice
+  que el precio se da por contacto.
+- `'desde'` — publica «Desde US$ X» por tipología, que es lo corriente en preventa: da orden
+  de magnitud sin comprometer el precio de una unidad concreta.
+
+La estructura ya soporta las dos; hoy el proyecto que hay va en `'a-solicitud'` porque su
+precio está pendiente de confirmación.
+
+---
+
 ## Formulario de contacto
 
 Hoy el formulario **no usa servidor**: valida los campos y abre el cliente de

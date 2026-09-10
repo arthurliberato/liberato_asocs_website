@@ -15,7 +15,8 @@ esto comprueba lo otro, que es lo que de verdad se rompe:
      metadata que necesitan.
   2. Que cada referencia entre hojas nombre una hoja que existe.
   3. Que las columnas del catálogo estén donde uno cree, en el orden que cree.
-  4. Que las dos hojas lleven su banda de firma y estén congeladas bajo ella.
+  4. Que las dos hojas lleven su banda de marca —con el logotipo dentro y
+     sitio para él— y estén congeladas bajo ella, y que todo vaya en Calibri.
   5. Que el mínimo, la mediana y el máximo del comparativo den lo mismo que
      calculados aparte sobre las celdas de proveedor de esa fila.
 """
@@ -29,7 +30,11 @@ from openpyxl import load_workbook
 from openpyxl.utils import column_index_from_string, get_column_letter
 
 RAIZ = Path(__file__).resolve().parent.parent
-LIBRO = RAIZ / "precios" / "descargas" / "precios-construccion-rd.xlsx"
+# Por defecto revisa el libro publicado, pero acepta una ruta: así se
+# puede apuntar a una copia rota a propósito y comprobar que las
+# comprobaciones de aquí abajo sirven de algo.
+LIBRO = Path(sys.argv[1]) if len(sys.argv) > 1 else (
+    RAIZ / "precios" / "descargas" / "precios-construccion-rd.xlsx")
 
 # Las que Excel entiende sin prefijo y LibreOffice también.
 PERMITIDAS = {
@@ -40,8 +45,9 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 
 # Qué tiene que haber en cada columna de la hoja Catálogo. Si esto deja de
 # cumplirse, las plantillas traen el dato equivocado sin dar error.
-# Los encabezados van en la fila 2: la 1 es la banda de firma.
+# Los encabezados van en la fila 2: la 1 es la banda de marca.
 FILA_TITULOS = 2
+FUENTE = "Calibri"
 HOJAS = ["Catálogo", "Comparativo"]
 COLUMNAS_CATALOGO = {
     "A": "Código", "D": "Ítem", "E": "Especificación", "F": "Unidad",
@@ -107,15 +113,49 @@ def main():
     print("Catálogo: %d ítems (filas %d a %d)"
           % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
 
-    # ---- 4: la banda de firma y el congelado --------------------------
+    # ---- 4: la banda de marca y el congelado --------------------------
     for nombre in HOJAS:
         ws = wb[nombre]
-        v = str(ws.cell(row=1, column=1).value or "")
+        celda = ws.cell(row=1, column=1)
+        v = str(celda.value or "")
         if "Ingenieros Liberato" not in v:
-            falla("%s no lleva la banda de firma en la fila 1" % nombre)
+            falla("%s no lleva la banda de marca en la fila 1" % nombre)
         if ws.freeze_panes != "A%d" % (FILA_TITULOS + 1):
             falla("%s debería congelarse en A%d y está en %s"
                   % (nombre, FILA_TITULOS + 1, ws.freeze_panes))
+        # El logotipo va incrustado; si falta, la banda queda coja y nadie
+        # se entera hasta abrir el archivo.
+        if len(ws._images) != 1:
+            falla("%s debería llevar el logotipo en la banda y tiene %d imágenes"
+                  % (nombre, len(ws._images)))
+        # El icono mide 22 px con 5 de margen: la fila tiene que darle sitio.
+        alto_px = (ws.row_dimensions[1].height or 0) * 4 / 3
+        if alto_px < 27:
+            falla("%s: la fila 1 mide %.0f px y el logotipo necesita 27"
+                  % (nombre, alto_px))
+        # Y la sangría tiene que apartar el texto del icono, o se solapan.
+        if (celda.alignment.indent or 0) < 4:
+            falla("%s: el texto de la banda se montaría sobre el logotipo "
+                  "(sangría %s, hacen falta 4)" % (nombre, celda.alignment.indent))
+
+    # ---- 4b: la tipografía --------------------------------------------
+    # Calibri, no Arial: es la que fija el ancho de columna del libro, así
+    # que si las celdas van en otra, los anchos dejan de cuadrar.
+    normal = wb._named_styles["Normal"].font
+    if normal.name != FUENTE:
+        falla("La fuente por defecto del libro es %s y debería ser %s"
+              % (normal.name, FUENTE))
+    distintas = set()
+    for nombre in HOJAS:
+        ws = wb[nombre]
+        for fila in ws.iter_rows(min_row=1, max_row=min(ws.max_row, 60)):
+            for c in fila:
+                if c.value is not None and c.font and c.font.name:
+                    distintas.add(c.font.name)
+    intrusas = distintas - {FUENTE}
+    if intrusas:
+        falla("Hay celdas en %s; el libro va todo en %s"
+              % (", ".join(sorted(intrusas)), FUENTE))
 
     # ---- 5: mínimo, mediana y máximo del comparativo -------------------
     comp = wb["Comparativo"]

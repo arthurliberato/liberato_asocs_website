@@ -109,6 +109,62 @@
     });
   }
 
+
+  /* =========== EQU-02 · Alquiler de equipos de altura ===========
+     Transcritos del listado de Imper System. Van a mano y no por el
+     importador porque la fuente es un PDF de una página, no un catálogo
+     en línea. Tres partidas por máquina: quien cubica necesita la del
+     periodo que va a usar, y las tres tarifas son del propio comercio.
+
+     El alcance de cada una dice lo que la tarifa NO cubre, que en
+     alquiler de equipo es la mitad del costo real: combustible y
+     transporte van aparte. =========================================== */
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por día',      'día',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por semana',   'semana',  null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 26 m, por mes',      'mes',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 26.14 m (86.76 pies), alcance horizontal 13.75 m. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por día',      'día',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por semana',   'semana',  null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de oruga, 20 m, por mes',      'mes',     null, null, null, {
+    esp:'Oruga, para espacios reducidos. Altura de trabajo 20 m (60 pies), alcance horizontal 10 m. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por día', 'día',     null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 40 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo telescópico. Altura de trabajo 40.30 m (125 pies), alcance horizontal 19.90 m. La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por día', 'día',     null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo telescópico, 20 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo telescópico diésel. Altura de trabajo 20 m (60 pies). La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por día', 'día',     null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 8 horas por día', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por semana', 'semana',  null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 40 horas por semana', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+  it('EQU-02', 'Plataforma elevadora de brazo articulado, 13 m, por mes', 'mes',     null, null, null, {
+    esp:'Brazo articulado. Altura de trabajo 13.45 m (45 pies). La tarifa incluye operador. 188 horas por mes', etapa:'preliminares',
+    alcance:'Equipo en obra. No incluye combustible ni transporte (USD 200 por entrega y retiro, hasta 30 km)'});
+
   /* ===================== MAT-01 · Agregados y áridos ===================== */
   it('MAT-01', 'Arena lavada', 'm³', null, null, null, {esp:'Lavada de río, para hormigón y pañete', etapa:'estructura', retirado:true});
   it('MAT-01', 'Arena gruesa (itabo)', 'm³', null, null, null, {esp:'Para mezclas de mampostería', etapa:'mamposteria', gama:'economica', retirado:true});
@@ -1557,8 +1613,9 @@
   /* MAT-25 */
   it('MAT-25', 'Lavamanos', 'unidad', 9590, 910, 88600.01, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{largo_mm:810, ancho_mm:460, alto_mm:170}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Lavamanos, de empotrar', 'unidad', 2878.82, 684.67, 14543.12, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'empotrar', alto_mm:175}, alcance:'Material retirado en almacén'});
-  it('MAT-25', 'Lavamanos, de pared', 'unidad', 7423.17, 995, 316669.5, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pared', largo_mm:400, alto_mm:160}, alcance:'Material retirado en almacén'});
-  it('MAT-25', 'Lavamanos, de pedestal', 'unidad', 2892, 216, 228711.86, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pedestal', agujeros:1, largo_mm:310, alto_mm:110}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de exento', 'unidad', 206940.67, 185169.48, 228711.86, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'exento'}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de pared', 'unidad', 5153.31, 995, 316669.5, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pared', largo_mm:400, alto_mm:160}, alcance:'Material retirado en almacén'});
+  it('MAT-25', 'Lavamanos, de pedestal', 'unidad', 2658.6, 216, 67666.44, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'pedestal', agujeros:1, largo_mm:310, alto_mm:110}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Lavamanos, de sobreponer', 'unidad', 4439.94, 1150, 107745.77, {esp:'', etapa:'instalaciones', origen:'importado', alias:'lavamanos, lavabo, lavatorio', medidas:{montaje:'sobreponer', agujeros:1}, alcance:'Material retirado en almacén'});
   it('MAT-25', 'Pedestal para lavamanos', 'unidad', 2014.01, 891.27, 3334.17, {esp:'Sin lavamanos · se compra aparte', etapa:'instalaciones', origen:'importado', alias:'pedestal, pie de lavamanos', alcance:'Material retirado en almacén'});
   it('MAT-25', 'Palometa para lavamanos', 'unidad', 80.59, 57.88, 189, {esp:'', etapa:'instalaciones', origen:'importado', alias:'palometa, soporte de lavamanos, escuadra', alcance:'Material retirado en almacén'});
@@ -1594,18 +1651,23 @@
   it('MAT-27', 'Barra de seguridad, recta, 70 cm', 'unidad', 3983.41, 3271.81, 4695, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:70}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Barra de seguridad, recta, 75 cm', 'unidad', 2185, 2185, 2185, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:75}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Barra de seguridad, recta, 90 cm', 'unidad', 2439, 2395, 6226.47, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'recta', largo_cm:90}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño', 'juego', 2327.23, 345, 6703.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 3 piezas', 'juego', 1377.76, 1081.92, 1673.59, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:3}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 4 piezas', 'juego', 2927.39, 1605.2, 3995, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:4}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 5 piezas', 'juego', 1139, 394, 1883, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:5}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Juego de accesorios de baño, 6 piezas', 'juego', 3070.44, 1342.61, 4372.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:6}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos', 'unidad', 3600, 849, 33447.06, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos, de botón', 'unidad', 16368.74, 16368.74, 16368.74, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{activacion:'boton'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Secador de manos, con sensor', 'unidad', 17572.74, 12495, 63455.69, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{activacion:'sensor', ancho_mm:270}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de jabón', 'unidad', 899, 156, 20817.8, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de jabón, con sensor', 'unidad', 28704.01, 28704.01, 28704.01, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{activacion:'sensor'}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 1850, 485, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
-  it('MAT-27', 'Dispensador de papel, de toalla', 'unidad', 2695, 274, 12190, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{tipo_papel:'toalla', ancho_mm:310}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño', 'juego', 2327.23, 345, 6703.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 3 piezas', 'juego', 1377.76, 1081.92, 1673.59, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:3, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 4 piezas', 'juego', 2927.39, 1605.2, 3995, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:4, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 5 piezas', 'juego', 1139, 394, 1883, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:5, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Juego de accesorios de baño, 6 piezas', 'juego', 3070.44, 1342.61, 4372.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'juego de accesorios, kit de baño', medidas:{piezas:6, ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos', 'unidad', 3467.5, 3335, 3600, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, de botón', 'unidad', 16368.74, 16368.74, 16368.74, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico', activacion:'boton'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, con sensor', 'unidad', 16755, 12495, 63455.69, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'domestico', activacion:'sensor', ancho_mm:270}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, institucional', 'unidad', 30467.1, 27487.14, 33447.06, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Secador de manos, institucional, con sensor', 'unidad', 32765.78, 32765.78, 32765.78, {esp:'', etapa:'terminacion', origen:'importado', alias:'secador de manos', medidas:{ambito:'institucional', activacion:'sensor'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón', 'unidad', 676, 156, 20817.8, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón, con sensor', 'unidad', 28704.01, 28704.01, 28704.01, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'domestico', activacion:'sensor'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de jabón, institucional', 'unidad', 3782.5, 1270, 15547.21, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de jabón, dosificador', medidas:{ambito:'institucional'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, de papel higiénico', 'unidad', 690, 485, 1105, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'papel higiénico', ancho_mm:270}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, de toalla', 'unidad', 2645, 274, 7965, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'domestico', tipo_papel:'toalla', ancho_mm:310}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, institucional, de papel higiénico', 'unidad', 3145, 2595, 8995, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'papel higiénico'}, alcance:'Material retirado en almacén'});
+  it('MAT-27', 'Dispensador de papel, institucional, de toalla', 'unidad', 3245, 2515, 12190, {esp:'', etapa:'terminacion', origen:'importado', alias:'dispensador de papel, portarrollo comercial', medidas:{ambito:'institucional', tipo_papel:'toalla'}, alcance:'Material retirado en almacén'});
   it('MAT-27', 'Cambiador de bebés de pared', 'unidad', 8705, 8705, 8705, {esp:'', etapa:'terminacion', origen:'importado', alias:'cambiador de bebés, baño público', medidas:{largo_mm:860, ancho_mm:550, alto_mm:140}, alcance:'Material retirado en almacén'});
 
   /* MAT-28 */
@@ -2154,6 +2216,7 @@
     {codigo:'MAT-31', grupo:'MAT', nombre:'Domótica e intercomunicadores',     desc:'Interruptores inteligentes, intercomunicadores y videoporteros.', slug:'precio-domotica-intercomunicadores'},
     {codigo:'MAT-32', grupo:'MAT', nombre:'Tubería y conexiones',              desc:'Tubo PVC y CPVC, codos, tees, niples, llaves de paso, sifones y rejillas.', slug:'precio-tuberia-conexiones-pvc'},
     {codigo:'MOS-04', grupo:'MOS', nombre:'Trámites y permisos',                 desc:'Licencias, no objeciones y conexiones de servicios.', slug:'costo-licencias-permisos-construccion'},
+    {codigo:'EQU-02', grupo:'EQU', nombre:'Alquiler de equipos de altura',       desc:'Plataformas elevadoras por día, semana y mes.', slug:'precio-alquiler-equipos-construccion'},
     {codigo:'EQU-04', grupo:'EQU', nombre:'Herramientas y equipo menor',         desc:'Herramienta de compra.', slug:'precio-herramientas-construccion'}
   ];
 
@@ -2187,6 +2250,71 @@
     {de:'1 pie tablar',                   a:'1" x 12" x 12" de madera'}
   ];
 
+  /* =========================================================
+     PRECIOS QUE NO SE SOSTIENEN
+
+     Un precio de referencia mal puesto es peor que un ítem que falta:
+     quien cubica se lo lleva a un presupuesto y lo descubre cuando ya
+     lo entregó. Los ítems de esta lista tienen precio, pero un precio
+     del que no nos fiamos, así que no se publican.
+
+     La escribe herramientas/auditar-precios.js --escribir. Va fuera de
+     los marcadores del importador a propósito: sobrevive a reimportar
+     los catálogos.
+     ========================================================= */
+  /* dudosos:inicio — generado por herramientas/auditar-precios.js. No editar a mano. */
+  var dudosos = {
+    /* Mosaico cerámico en malla, 30 x 30 cm */
+    'MAT-08-202': 'los comercios lo cotizan entre RD$ 157 y RD$ 1,845 (12x): la partida mezcla productos distintos',
+    /* Cabezal de ducha */
+    'MAT-09-009': 'los comercios lo cotizan entre RD$ 126 y RD$ 2,924 (23x): la partida mezcla productos distintos',
+    /* Ducha teléfono */
+    'MAT-09-010': 'los comercios lo cotizan entre RD$ 268 y RD$ 3,361 (13x): la partida mezcla productos distintos',
+    /* Columna de ducha */
+    'MAT-09-011': 'los comercios lo cotizan entre RD$ 900 y RD$ 11,281 (13x): la partida mezcla productos distintos',
+    /* Brazo de ducha */
+    'MAT-09-013': 'los comercios lo cotizan entre RD$ 108 y RD$ 1,390 (13x): la partida mezcla productos distintos',
+    /* Fregadero de un pozo, 8 x 8 pulgadas */
+    'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
+    /* Cinta aislante 30 mts */
+    'MAT-10-181': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se explica si el precio es de un paquete, y la ficha no lo dice',
+    /* Inodoro suspendido */
+    'MAT-24-003': 'los comercios lo cotizan entre RD$ 555 y RD$ 5,440 (10x): la partida mezcla productos distintos',
+    /* Tanque para inodoro de dos piezas */
+    'MAT-24-005': 'los comercios lo cotizan entre RD$ 586 y RD$ 12,715 (22x): la partida mezcla productos distintos',
+    /* Lavamanos, de pedestal */
+    'MAT-25-005': 'los comercios lo cotizan entre RD$ 216 y RD$ 15,435 (71x): la partida mezcla productos distintos',
+    /* Mueble de baño, de piso */
+    'MAT-26-003': 'los comercios lo cotizan entre RD$ 2,725 y RD$ 21,825 (8x): la partida mezcla productos distintos',
+    /* Juego de accesorios de baño */
+    'MAT-27-018': 'los comercios lo cotizan entre RD$ 345 y RD$ 4,992 (14x): la partida mezcla productos distintos',
+    /* Dispensador de jabón */
+    'MAT-27-028': 'los comercios lo cotizan entre RD$ 156 y RD$ 20,818 (133x): la partida mezcla productos distintos',
+    /* Dispensador de jabón, institucional */
+    'MAT-27-030': 'los comercios lo cotizan entre RD$ 1,270 y RD$ 14,903 (12x): la partida mezcla productos distintos',
+    /* Dispensador de papel, de toalla */
+    'MAT-27-032': 'los comercios lo cotizan entre RD$ 274 y RD$ 4,472 (16x): la partida mezcla productos distintos',
+    /* Sifón de PVC para desagüe 35376" */
+    'MAT-32-373': 'la medida leída es imposible: medida = 35376" (35376) (el techo razonable es 120)',
+    /* Cinta de teflón 12520" */
+    'MAT-32-418': 'la medida leída es imposible: medida = 12520" (12520) (el techo razonable es 120)'
+  };
+  /* dudosos:fin */
+
+  /* El auditor necesita ver los ítems retirados junto a sus cotizaciones
+     para poder juzgarlos; si los escondiéramos, la próxima pasada los
+     daría por buenos y volverían a publicarse. */
+  var auditando = (typeof process !== 'undefined' && process.env
+                   && process.env.ILYA_AUDITAR) || global.ILYA_AUDITAR;
+  var publicables = auditando ? items : items.filter(function (i) {
+    if (!dudosos[i.codigo]) return true;
+    retirados.push({
+      codigo: i.codigo, cat: i.cat, nombre: i.nombre, unidad: i.unidad,
+      esp: i.esp, etapa: i.etapa, motivo: dudosos[i.codigo]
+    });
+    return false;
+  });
+
   global.CATALOGO = {
     meta: {
       moneda: 'RD$',
@@ -2196,13 +2324,31 @@
          solo etiqueta el alcance cuando se aparta de este. */
       alcanceBase: 'Material retirado en almacén',
       actualizado: '2026-09',
+      /* PRECIOS EN DÓLARES
+         Algún comercio cotiza en USD —el alquiler de equipo de altura, por
+         ejemplo—. El dólar se guarda como dato de origen, que es el precio
+         real que dio el comercio, y la tabla muestra el peso convertido a
+         esta tasa. Así no hay ninguna cifra inventada: el RD$ es derivado
+         y va fechado, y cuando la tasa se mueva se cambia aquí y se
+         actualiza todo el catálogo de una vez.
+
+         CONFIRMAR ANTES DE PUBLICAR: no pude leer el Banco Central desde
+         este entorno. */
+      tasaUSD: {
+        valor: 59.0878,
+        fecha: '2026-09-09',
+        fuente: 'Tasa de venta del dólar publicada para el 9 de septiembre de 2026'
+      },
       aviso: 'Cada ítem lleva el precio que el propio comercio publica o cotizó por escrito. Ninguno sustituye una cotización del proveedor.'
     },
     grupos: grupos,
     categorias: categorias,
     etapas: etapas,
     conversiones: conversiones,
-    items: items,
+    items: publicables,
+    /* Códigos con precio pero sin confianza: sus cotizaciones existen
+       y no son huérfanas. Ver herramientas/auditar-precios.js. */
+    dudosos: dudosos,
     /* Reservan código; no se publican. Ver el encabezado del archivo. */
     retirados: retirados
   };

@@ -1392,6 +1392,150 @@ La pintura deja de tener un solo comercio: **6 ítems de MAT-12 ya se comparan**
 de acrílica tiene RD$ 375–430 de Ferremix contra RD$ 374–1,485 de Tonos y Colores. En
 eléctricos, MAT-10 sube a 204 ítems con 21 comparables.
 
+## Precios en dólares
+
+Algún comercio cotiza en USD. El alquiler de equipo de altura, por ejemplo, se cotiza en
+dólares en todo el país.
+
+**El dólar es el dato de origen y el peso se deriva.** La cotización guarda el monto original
+en USD —que es el precio real que dio el comercio— y la tabla muestra el peso convertido a la
+tasa que vive en `CATALOGO.meta.tasaUSD`, con su fecha y su fuente. Así no hay ninguna cifra
+inventada: el RD$ es derivado y va fechado, y cuando la tasa se mueva se cambia **un número**
+y se actualiza todo el catálogo de una vez.
+
+```js
+c('EQU-02-001', 'Imper System (Impersystem Tecnologies)', 450, {
+  fecha: '2026-09-10', moneda: 'USD', itbis: false,
+  fuente: '…', nota: 'HINOWA 26.14 · tarifa de USD 450 por día…'
+});
+```
+
+La nota de cada precio convertido termina con la tasa aplicada y su fecha, para que quien lo
+audite pueda rehacer la cuenta sin salir de la ficha. El orden de la cuenta importa: primero
+se normaliza el ITBIS al criterio del ítem y después se convierte, no al revés.
+
+> **Pendiente:** la tasa está en `59.0878` con fecha del 9 de septiembre de 2026, tomada de
+> una fuente secundaria porque el entorno de generación no alcanza el Banco Central ni la
+> DGA. **Confirmarla contra la fuente oficial antes de publicar.**
+
+### El alquiler: tres partidas por máquina
+
+Cada máquina son tres ítems —por día, por semana y por mes— porque quien cubica necesita la
+tarifa del periodo que va a usar, y las tres son del propio comercio. Las tarifas no son
+proporcionales: la semana sale por poco más de cuatro días y el mes por poco más de tres
+semanas.
+
+El alcance de cada ítem dice lo que la tarifa **no** cubre, que en alquiler de equipo es la
+mitad del costo real: combustible y transporte van aparte.
+
+Estos ítems van escritos a mano en la zona no generada de `datos-catalogo.js` y
+`datos-precios.js`, porque la fuente es un PDF de una página y no un catálogo en línea. El
+importador respeta esa zona: correrlo no los pisa.
+
+### La zona de cada categoría
+
+El resumen de cada página de categoría decía «Gran Santo Domingo» fijo. Ahora la zona sale de
+**quién cotizó de verdad**: el alquiler de plataformas lo cotiza un comercio de Bávaro, así
+que esa página dice «Este (Punta Cana, La Romana)» y la de cerámica, «Gran Santo Domingo y
+Santiago / Cibao».
+
+## Precios que no se sostienen
+
+Un precio de referencia mal puesto es peor que un ítem que falta: quien cubica se lo lleva
+a un presupuesto y lo descubre cuando ya lo entregó. `herramientas/auditar-precios.js`
+busca los que no se sostienen y los retira.
+
+```bash
+node herramientas/auditar-precios.js             # el informe completo
+node herramientas/auditar-precios.js --escribir  # escribe la lista en el catálogo
+```
+
+### Qué mira, y por qué eso
+
+**1 · Dispersión entre comercios.** Dos comercios cotizando el mismo ítem deberían quedar
+cerca. La dispersión normal es de marca —un bombillo LED de 12 W cuesta RD$ 60 en genérico
+y RD$ 220 de marca, y eso es información, no un error—, y medida sobre los 242 ítems
+comparables la mediana es **1.6x** y el percentil 90 está en **4.6x**.
+
+El corte está en **8x**, y no es un número redondo elegido a ojo:
+
+| Franja | Qué hay dentro |
+|---|---|
+| 3x – 6x | Bombillos LED de 60 y 220, interruptores de 45 y 145, uniones de PVC de 22 y 75. Marca, no error |
+| 6x – 8x | Muebles de baño de 2,725 a 21,825. Dudoso pero creíble |
+| **> 8x** | «Dispensador de jabón» de RD$ 156 a RD$ 20,818. El ítem no es una sola cosa |
+
+El caso que lo enseña es ese dispensador: convivían uno plástico de AquaSpa a RD$ 676 y uno
+electrónico de HELVEX a RD$ 15,547. **No es que un comercio se equivocara**: a la partida le
+falta un eje que separe el manual del automático. Mientras ese eje no exista, no se publica.
+
+**2 · Medidas imposibles.** Cuando la lectura del catálogo de un comercio se tuerce sale una
+medida absurda —«Cinta de teflón 12520"»— y con ella un precio que no significa nada. Hay un
+techo por eje; 305 m de cable de red **no** salta, porque esa es la caja de 1000 pies.
+
+**3 · Fuera de serie (solo informa).** Un ítem que se sale de su propia serie de medidas.
+No retira automáticamente porque **la medida sí manda en el precio**: un bushing de 8" x 4"
+cuesta legítimamente treinta veces uno de 1/2". Sale en el informe para mirarlo a ojo.
+
+**4 · Revisados a mano.** Los que ninguna regla general pilla sin llevarse por delante casos
+legítimos, cada uno con su razón escrita en `A_MANO`. Ahí está el único error de proveedor
+encontrado hasta ahora: La Ibérica publica un fregadero Teka de 20 × 21" a **RD$ 75**, que no
+es un precio de fregadero.
+
+### Los ejes que faltaban
+
+Cuando el auditor dice «la partida mezcla productos distintos», el arreglo de fondo no es
+retirar: es el eje que falta. Tres se añadieron a partir de lo que enseñó el informe.
+
+**`ambito`: doméstico o institucional.** Un dispensador de jabón de AquaSpa cuesta RD$ 500 y
+uno de TORK para un baño público RD$ 1,900; no son el mismo artículo aunque se llamen igual.
+Lo que los separa se lee en la marca institucional (TORK, Cumberland, Kimberly), en las señas
+del nombre («alta velocidad», «turbo», «jumbo», «elec bat») y en la capacidad: un litro de
+jabón no se pone en un baño de casa.
+
+El eje vive en `especificacion-banos.js` y **no en las reglas de cada comercio**, para que los
+seis usen el mismo criterio; si cada uno decidiera por su cuenta, el mismo artículo caería en
+partidas distintas según quién lo venda. Creó cuatro partidas nuevas —secador, dispensador de
+jabón, y dispensador de papel higiénico y de toalla, todos institucionales— y sacó «Secador de
+manos» de la lista de retirados: de 39x a 1.1x en el doméstico.
+
+**Dos fallos de clasificación que salieron por el mismo camino:**
+
+- **«Sin pedestal» entraba como «de pedestal».** En La Ibérica y en CerArte el patrón
+  `/pedestal/` casaba antes de llegar a la rama de «sin pedestal», que contiene la misma
+  palabra. Un lavamanos sin pedestal cuesta la mitad que uno con él. De paso, CerArte vende
+  lavamanos *freestanding* y a piso, que tampoco son de pedestal aunque toquen el suelo: el
+  suyo va en RD$ 228,711.
+- **Un repuesto colado como aparato.** «Filtro HEPA para secador de manos» de RD$ 849 entraba
+  como secador, en una partida de RD$ 27,000. El patrón «X para ‹aparato›» es el que delata al
+  repuesto: la pieza es la X, no el aparato.
+
+### Lo que estos ejes no arreglan
+
+Queda un caso que ningún eje de uso resuelve: **la gama**. CerArte vende un lavamanos de
+pedestal Olympia en RD$ 67,666 y un *freestanding* Tuba 3 en RD$ 228,711; Antonio Lupi tiene un
+dispensador de jabón en RD$ 20,818. Son piezas de diseño importado, y no se sustituyen por una
+estándar en un presupuesto por mucho que compartan la especificación.
+
+El catálogo ya tiene un campo `gama`, pero no es un eje: no entra en la clave del ítem. Meterlo
+es la decisión pendiente, y no es menor —contradice en parte el principio de que la marca es
+atributo de la cotización y no de la partida—. Mientras tanto, esos ítems se retiran.
+
+### Cómo se retira
+
+La lista vive en `datos-catalogo.js`, entre los marcadores `dudosos:inicio` y `dudosos:fin`,
+**fuera de los marcadores del importador**: así sobrevive a reimportar los catálogos. Los
+ítems pasan a `retirados` con su motivo y no se publican, pero **conservan su código**: si
+mañana aparece el eje que falta o el comercio corrige el precio, se borra la línea y vuelven.
+
+Dos detalles que costaron un rato:
+
+- El auditor corre con `ILYA_AUDITAR=1`, que le hace ver también los ítems ya retirados.
+  Sin eso no vería lo que él mismo retiró en la pasada anterior, lo daría por bueno y lo
+  volvería a publicar.
+- Las cotizaciones de un ítem retirado **no son huérfanas**: el validador de
+  `datos-precios.js` las acepta consultando `CATALOGO.dudosos`.
+
 ## Filtro «Mis proveedores»
 
 Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios
@@ -1496,6 +1640,13 @@ python3 herramientas/generar-excel.py     # arma el libro
 python3 herramientas/verificar-excel.py   # lo revisa antes de publicar
 ```
 
+`verificar-excel.py` acepta una ruta, así que se le puede dar una copia rota a propósito
+para comprobar que sus comprobaciones sirven de algo:
+
+```bash
+python3 herramientas/verificar-excel.py /tmp/copia-rota.xlsx
+```
+
 `generar-excel.py` no conoce el catálogo: se lo pide a `herramientas/datos-para-excel.js`,
 que es JavaScript porque es el mismo modelo que lee el sitio. El modelo no se duplica.
 
@@ -1510,8 +1661,32 @@ ficticios.
 | **Catálogo** | Los ítems con sus campos, más una columna por cada eje de medida que use al menos ocho ítems (litros de descarga, ancho en mm, resolución en MP…) y una columna de sobra con el resto. |
 | **Comparativo** | Un ítem por fila, una columna por comercio, y mínimo, mediana, máximo, dispersión y cuál es el más barato. |
 
-Las dos llevan en la fila 1 una **banda fina con la firma** y se congelan bajo los
-encabezados, que van en la fila 2. Antes había ocho hojas —Léame, Presupuesto, Resumen por
+Las dos llevan en la fila 1 una **banda fina de marfil con el logotipo** y se congelan
+bajo los encabezados, que van en la fila 2.
+
+En la banda va el **icono**, no el bloque entero: a la altura de una banda fina el nombre
+dibujado quedaría en tres píxeles de altura de mayúscula, ilegible. El icono se lee a 22 px
+y el nombre va como texto de verdad, que además se puede buscar y escalar. La banda es de
+marfil y no verde porque el icono lleva su propia plancha verde y sobre un fondo del mismo
+color se perdería. Se incrusta desde `assets/img/isotipo-180.png`, que escribe
+`herramientas/rasterizar-marca.js`: openpyxl solo mete mapas de bits, no SVG.
+
+### La tipografía del libro: Calibri, no Arial
+
+Arial es una grotesca de trazo cerrado; en una columna de mil filas cansa. **Calibri** es
+humanista —aperturas abiertas, esquinas redondeadas, menos contraste de trazo— y se lee más
+ligera en tablas largas.
+
+Está donde haya Excel: viene con Office desde 2007, en Windows y en Mac. Y donde no hay
+Office, LibreOffice trae **Carlito**, que es métricamente compatible y sustituye sin mover
+un ancho de columna. Ninguna otra opción más ligera que Arial —Trebuchet MS, Verdana— tiene
+un clon libre con las mismas métricas; Verdana además es más ancha y más pesada, justo lo
+contrario de lo que se buscaba.
+
+De paso arregla una incoherencia que llevaba tiempo: **el ancho de columna de openpyxl se
+mide en anchos de carácter de la fuente por defecto del libro**, que siempre fue Calibri 11,
+mientras las celdas iban en Arial 10. Los anchos y la fuente no coincidían. Ahora el estilo
+«Normal» se declara explícitamente. Antes había ocho hojas —Léame, Presupuesto, Resumen por
 etapa, Solicitud de cotización, Proveedores y Conversiones—: eran plantillas de trabajo, y
 quien cubica ya tiene las suyas. El libro se quedó con lo que solo este sitio puede dar.
 

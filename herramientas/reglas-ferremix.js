@@ -243,7 +243,10 @@ function reglaPlomeria(a) {
    mezcladoras», «puño para monomando», «vástago para llave de lavamanos»— y
    si se cuelan en el ítem del aparato lo abren de RD$ 49 a RD$ 83,000. Van
    primero, antes de que ninguna otra expresión las reclame. */
-const PIEZA_SUELTA = /cartucho|aireador|\bpuno\b|\bpunos\b|maneral|vastago|cuello de repuesto|repuesto|pichorro|chapeton|desviador|\btapa\b|\btapon\b|asiento para inodoro|sello|empaque|arandela|kit de reparacion|salida de tina|manguera (de|para) (abasto|lavamanos|lavabo|fregadero|inodoro)|manguera flexible|manguera acero/;
+/* «Filtro HEPA para secador de manos» entraba como secador y metía un
+   repuesto de 849 en una partida de 27,000. El patrón «X para <aparato>»
+   es el que delata al repuesto: la pieza es la X, no el aparato. */
+const PIEZA_SUELTA = /\bfiltro\b|\bresistencia\b|(?:^|\s)(?:motor|bomba) para |cartucho|aireador|\bpuno\b|\bpunos\b|maneral|vastago|cuello de repuesto|repuesto|pichorro|chapeton|desviador|\btapa\b|\btapon\b|asiento para inodoro|sello|empaque|arandela|kit de reparacion|salida de tina|manguera (de|para) (abasto|lavamanos|lavabo|fregadero|inodoro)|manguera flexible|manguera acero/;
 
 function reglaBano(a) {
   const t = texto(a);
@@ -294,11 +297,14 @@ function reglaBano(a) {
     if (cm) { const v = BANOS.aCm(cm, 'cm'); if (v) med.largo_cm = v; }
     return BANOS.item('barra-seguridad', med);
   }
-  if (/secador de manos/.test(t)) return BANOS.item('secador-manos', { activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
-  if (/dispensador (de|para) jabon/.test(t)) return BANOS.item('dispensador-jabon', { activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+  if (/secador de manos/.test(t)) return BANOS.item('secador-manos',
+    { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+  if (/dispensador (de|para) jabon/.test(t)) return BANOS.item('dispensador-jabon',
+    { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
   if (/juego de accesorios|set de accesorios/.test(t)) {
     const p = t.match(/(\d+)\s*(?:pza|pzas|piezas)/);
-    return BANOS.item('juego-accesorios', p ? { piezas: parseInt(p[1], 10) } : {});
+    return BANOS.item('juego-accesorios',
+      Object.assign({ ambito: BANOS.ambito(t) }, p ? { piezas: parseInt(p[1], 10) } : {}));
   }
   if (/toallero|jabonera|portarrollo|porta rollo|gancho|percha|papelera|escobillero|repisa|vaso/.test(t)) {
     MOTIVO.valor = 'accesorio suelto de baño; el catálogo compara juegos, no piezas sueltas';

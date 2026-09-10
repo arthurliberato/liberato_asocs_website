@@ -153,22 +153,22 @@ const FAMILIAS = {
   },
   'juego-accesorios': {
     cat: 'MAT-27', base: 'Juego de accesorios de baño', unidad: 'juego',
-    ejes: ['piezas'], etapa: 'terminacion', orden: 20,
+    ejes: ['ambito', 'piezas'], etapa: 'terminacion', orden: 20,
     alias: 'juego de accesorios, kit de baño'
   },
   'secador-manos': {
     cat: 'MAT-27', base: 'Secador de manos', unidad: 'unidad',
-    ejes: ['activacion'], etapa: 'terminacion', orden: 30,
+    ejes: ['ambito', 'activacion'], etapa: 'terminacion', orden: 30,
     alias: 'secador de manos'
   },
   'dispensador-jabon': {
     cat: 'MAT-27', base: 'Dispensador de jabón', unidad: 'unidad',
-    ejes: ['activacion'], etapa: 'terminacion', orden: 40,
+    ejes: ['ambito', 'activacion'], etapa: 'terminacion', orden: 40,
     alias: 'dispensador de jabón, dosificador'
   },
   'dispensador-papel': {
     cat: 'MAT-27', base: 'Dispensador de papel', unidad: 'unidad',
-    ejes: ['tipo_papel'], etapa: 'terminacion', orden: 50,
+    ejes: ['ambito', 'tipo_papel'], etapa: 'terminacion', orden: 50,
     alias: 'dispensador de papel, portarrollo comercial'
   },
   'cambiador-bebes': {
@@ -223,14 +223,42 @@ const FAMILIAS = {
 const ETIQUETA = {
   forma:       v => v,
   uso:         v => 'de ' + (v === 'bano' ? 'baño' : v),
-  activacion:  v => v === 'sensor' ? 'con sensor' : '',
   montaje:     v => 'de ' + v,
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
   activacion:  v => v === 'sensor' ? 'con sensor' : v === 'boton' ? 'de botón' : '',
+  /* El doméstico es el caso corriente y va sin etiqueta; el institucional
+     se nombra porque es el que no se espera. */
+  ambito:      v => v === 'institucional' ? 'institucional' : '',
   tipo_papel:  v => 'de ' + v
 };
+
+/* ÁMBITO: DOMÉSTICO O INSTITUCIONAL
+   Un dispensador de jabón de AquaSpa cuesta RD$ 500 y uno de TORK para un
+   baño público RD$ 1,900: no son el mismo artículo aunque se llamen igual.
+   Lo que los separa no es la marca en sí, sino a qué baño van, y eso se
+   lee en la marca institucional, en la capacidad y en las señas del nombre.
+
+   Vive aquí y no en las reglas de cada comercio para que los seis usen el
+   mismo criterio; si cada uno decidiera por su cuenta, el mismo artículo
+   caería en partidas distintas según quién lo venda. */
+const MARCA_INSTITUCIONAL =
+  /\btork\b|cumberland|kimberly|\bscott\b|georgia.?pacific|\brubbermaid\b|\bbobrick\b|\bfamilia\b/;
+const SENA_INSTITUCIONAL =
+  /institucional|comercial|industrial|alta velocidad|\bturbo\b|secamanos|\bjumbo\b|bano publico|elec\.? ?bat|electronic|acero inoxidable/;
+
+function ambito(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (MARCA_INSTITUCIONAL.test(t) || SENA_INSTITUCIONAL.test(t)) return 'institucional';
+  /* Un litro de jabón no se pone en un baño de casa. */
+  const ml = t.match(/(\d[\d.]*)\s*ml\b/);
+  if (ml && parseFloat(ml[1]) >= 800) return 'institucional';
+  const l = t.match(/(\d[\d.]*)\s*(?:l|lt|litros?)\b/);
+  if (l && parseFloat(l[1]) >= 0.8) return 'institucional';
+  return 'domestico';
+}
 
 const limpia = s => String(s || '').trim();
 
@@ -278,4 +306,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, aCm };
+module.exports = { FAMILIAS, item, ambito, aCm };

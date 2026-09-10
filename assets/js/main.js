@@ -146,6 +146,38 @@
     });
   }
 
+  /* ---------- adelanto de los proyectos en venta ----------
+     Las mismas tarjetas del listado, pintadas en la portada. El dato
+     vive en proyectos-venta.js, que es el mismo que lee el generador
+     de las fichas: una sola fuente para las tres vistas. */
+  var enVenta = document.getElementById('pv-portada');
+  if (enVenta && window.PROYECTOS_VENTA) {
+    var ESTADOS = {
+      'preventa': 'En preventa',
+      'en-construccion': 'En construcción',
+      'terminado': 'Terminado'
+    };
+    enVenta.innerHTML = window.PROYECTOS_VENTA.slice(0, 3).map(function (p) {
+      var u = p.ubicacion;
+      var loc = [u.sector, u.municipio, u.provincia === u.municipio ? null : u.provincia]
+        .filter(Boolean).join(', ');
+      var tip = p.tipologias.map(function (t) {
+        return t.habitaciones + (t.habitaciones === 1 ? ' habitación' : ' habitaciones');
+      }).join(' y ');
+      return '' +
+        '<li class="pv-tarjeta">' +
+          '<a href="proyecto-' + esc(p.slug) + '.html">' +
+            '<span class="pv-estado">' + esc(ESTADOS[p.estado] || 'En venta') + '</span>' +
+            '<h3>' + esc(p.nombre) + '</h3>' +
+            '<p class="pv-loc">' + esc(loc) + '</p>' +
+            '<p class="pv-tip">' + esc(tip) +
+              (p.unidades ? ' &middot; ' + p.unidades + ' unidades' : '') + '</p>' +
+            '<span class="pv-ver">Ver el proyecto <span aria-hidden="true">&rarr;</span></span>' +
+          '</a>' +
+        '</li>';
+    }).join('');
+  }
+
   /* ---------- render del portafolio ---------- */
   var grid = document.getElementById('projects');
   if (grid) {
