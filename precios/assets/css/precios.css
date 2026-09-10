@@ -634,9 +634,11 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* El descargo completo, como segunda columna. Crece algo más que la
    columna de identidad para que la frase de la cotización formal quepa
    en dos renglones y el aviso siga sin aportar altura. */
-.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.4rem .7rem;gap:.55rem}
-.aviso-fila svg{width:17px;height:17px;margin-top:.16rem}
-.aviso-fila p{font-size:.84rem;line-height:1.25rem}
+.aviso-fila{flex:1.2 1 22rem;max-width:40rem;margin:0;padding:.1rem 0;gap:.55rem;background:none;border:0;border-radius:0}
+.aviso-fila svg{width:17px;height:17px;margin-top:.2rem;color:var(--navy-400)}
+.aviso-fila p{font-size:.84rem;line-height:1.25rem;color:var(--ink-soft)}
+.aviso-fila strong{color:var(--navy)}
+.aviso-fila a{color:var(--navy-400)}
 /* Solo cuando sobra ancho: a 390px esta frase añade un cuarto renglón y
    rompe el techo de 143px. El texto íntegro vive en metodologia.html. */
 .aviso-largo{display:none}
@@ -649,7 +651,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   /* Redundantes con el h1 en pantalla estrecha: se van y liberan el
      renglón; quedan las dos cifras. */
   .portada-tag,.portada-desc{display:none}
-  .aviso-fila{padding:.35rem .6rem;gap:.5rem}
+  .aviso-fila{padding:0;gap:.5rem}
   .aviso-fila svg{width:15px;height:15px}
   .aviso-fila p{font-size:.8rem;line-height:1.1rem}
 }
