@@ -126,7 +126,7 @@
 
   /* Estado compartido: los filtros del catálogo y el interruptor de ITBIS
      también gobiernan cómo se muestran los montos de la lista de cotización. */
-  var estado = {q: '', grupo: '', cat: '', etapa: '', gama: '', orden: 'cat', sinItbis: false};
+  var estado = {q: '', grupo: '', cat: '', etapa: '', min: '', max: '', orden: 'cat', sinItbis: false};
 
   var cotizacion = cargarCotizacion();
 
@@ -362,6 +362,9 @@
        que solo cuentan los hijos directos de la fila. */
     var chips = $$(':scope > .chip:not(.chip-mas)', cont);
     if (!chips.length) return;
+    /* La fila puede ser de categorías, de etapas o de proveedores: el menú
+       repite el mismo atributo que llevan sus chips. */
+    var attr = ['data-cat', 'data-etapa', 'data-prov-chip'].filter(function (n) { return chips[0].hasAttribute(n); })[0] || 'data-etapa';
 
     chips.forEach(function (c) { c.hidden = false; });
     mas.hidden = false;
@@ -389,10 +392,10 @@
     }
 
     mas.textContent = '+' + ocultos.length;
-    mas.setAttribute('aria-label', ocultos.length + ' etapas más');
+    mas.setAttribute('aria-label', ocultos.length + ' más');
     mas.title = ocultos.map(function (c) { return c.textContent; }).join(' · ');
     menu.innerHTML = ocultos.map(function (c) {
-      return '<button class="chip" type="button" data-etapa="' + esc(c.getAttribute('data-etapa')) +
+      return '<button class="chip" type="button" ' + attr + '="' + esc(c.getAttribute(attr)) +
         '" aria-pressed="' + c.getAttribute('aria-pressed') + '">' + esc(c.textContent) + '</button>';
     }).join('');
   }
@@ -728,10 +731,14 @@
     $$('[data-abrir-proveedores] .prov-cuenta').forEach(function (el) {
       el.textContent = misProveedores.length ? '(' + misProveedores.length + ')' : '';
     });
+    $$('[data-prov-chip]').forEach(function (c) {
+      c.setAttribute('aria-pressed', misProveedores.indexOf(c.getAttribute('data-prov-chip')) !== -1 ? 'true' : 'false');
+    });
   }
 
   /* Botón para abrir el panel, junto al interruptor de ITBIS. */
   function montarBotonProveedores() {
+    if ($('#chips-prov')) return;
     var filas = $$('.tools-row');
     if (!filas.length) return;
     var destino = filas[filas.length - 1];
@@ -1110,32 +1117,32 @@
     var cuerpo = $('#tabla-body');
     if (!cuerpo) return;
 
-    var input = $('#q'), selOrden = $('#orden'), selCat = $('#f-cat'),
+    var input = $('#q'), selOrden = $('#orden'), inMin = $('#f-min'), inMax = $('#f-max'),
         chkItbis = $('#f-itbis'), meta = $('#resultado-meta'), tablaWrap = $('#tabla-wrap'),
         vacio = $('#sin-resultados');
 
     /* --- estado inicial desde la URL --- */
     var params = new URLSearchParams(window.location.search);
+    var numero = function (v) { var n = parseFloat(v); return isNaN(n) || n < 0 ? '' : n; };
     estado.q = params.get('q') || '';
     estado.grupo = params.get('grupo') || '';
     estado.cat = params.get('cat') || '';
     estado.etapa = params.get('etapa') || '';
-    estado.gama = params.get('gama') || '';
+    estado.min = numero(params.get('min'));
+    estado.max = numero(params.get('max'));
     estado.orden = params.get('orden') || 'cat';
 
-    /* --- poblar el selector de categorías --- */
-    if (selCat) {
-      selCat.innerHTML = '<option value="">Todas las categorías</option>' +
-        CAT.grupos.map(function (g) {
-          var opciones = CAT.categorias.filter(function (c) { return c.grupo === g.codigo; })
-            .map(function (c) { return '<option value="' + esc(c.codigo) + '">' + esc(c.nombre) + '</option>'; })
-            .join('');
-          return '<optgroup label="' + esc(g.codigo + ' — ' + g.nombre) + '">' + opciones + '</optgroup>';
-        }).join('');
-      selCat.value = estado.cat;
+    /* --- chips: categoría, etapa y proveedor. Categoría y etapa eligen una;
+       proveedor admite varios, y su selección se guarda en el navegador. --- */
+    var chipsCat = $('#chips-cat');
+    if (chipsCat) {
+      chipsCat.innerHTML = '<span class="chip-group-label">Categoría</span>' +
+        CAT.categorias.map(function (c) {
+          return '<button class="chip" type="button" data-cat="' + esc(c.codigo) + '" aria-pressed="false">' + esc(c.nombre) + '</button>';
+        }).join('') +
+        '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-cat-menu" hidden></button>' +
+        '<div class="chip-menu" id="chips-cat-menu" hidden></div>';
     }
-
-    /* --- chips de etapa --- */
     var chipsEtapa = $('#chips-etapa');
     if (chipsEtapa) {
       chipsEtapa.innerHTML = '<span class="chip-group-label">Etapa</span>' +
@@ -1145,18 +1152,19 @@
         '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-etapa-menu" hidden></button>' +
         '<div class="chip-menu" id="chips-etapa-menu" hidden></div>';
     }
-
-    /* --- chips de gama --- */
-    var chipsGama = $('#chips-gama');
-    if (chipsGama) {
-      chipsGama.innerHTML = '<span class="chip-group-label">Gama</span>' +
-        [['economica', 'Económica'], ['estandar', 'Estándar'], ['premium', 'Premium']].map(function (g) {
-          return '<button class="chip" type="button" data-gama="' + esc(g[0]) + '" aria-pressed="false">' + esc(g[1]) + '</button>';
+    var chipsProv = $('#chips-prov');
+    if (chipsProv) {
+      chipsProv.innerHTML = '<span class="chip-group-label">Proveedor</span>' +
+        PROV.lista.filter(function (p) { return !p.demo; }).map(function (p) {
+          var activo = misProveedores.indexOf(p.nombre) !== -1;
+          return '<button class="chip" type="button" data-prov-chip="' + esc(p.nombre) + '" aria-pressed="' + (activo ? 'true' : 'false') + '" title="' + esc(p.nombre) + '">' + esc(nombreTag(p.nombre)) + '</button>';
         }).join('');
     }
 
     if (input) input.value = estado.q;
     if (selOrden) selOrden.value = estado.orden;
+    if (inMin) inMin.value = estado.min;
+    if (inMax) inMax.value = estado.max;
 
     function filtrar() {
       var q = normaliza(estado.q).split(/\s+/).filter(Boolean);
@@ -1164,7 +1172,15 @@
         if (estado.cat && it.cat !== estado.cat) return false;
         if (estado.grupo && it.cat.indexOf(estado.grupo) !== 0) return false;
         if (estado.etapa && it.etapa !== estado.etapa) return false;
-        if (estado.gama && it.gama !== estado.gama) return false;
+        /* Con proveedores elegidos solo quedan los ítems que ellos cotizan;
+           el precio ya viene recalculado solo con sus cotizaciones. */
+        if (misProveedores.length && !it.filtrado) return false;
+        if (estado.min !== '' || estado.max !== '') {
+          var pv = precioVista(precioFila(it), it, estado.sinItbis);
+          if (pv === null) return false;
+          if (estado.min !== '' && pv < estado.min) return false;
+          if (estado.max !== '' && pv > estado.max) return false;
+        }
         if (!q.length) return true;
         var heno = normaliza([it.nombre, it.codigo, it.esp, it.alias, it.unidad, nombreCat(it.cat)].join(' '));
         return q.every(function (t) { return heno.indexOf(t) !== -1; });
@@ -1264,15 +1280,18 @@
     }
 
     function hayFiltros() {
-      return !!(estado.q || estado.cat || estado.grupo || estado.etapa || estado.gama);
+      return !!(estado.q || estado.cat || estado.grupo || estado.etapa || estado.min !== '' || estado.max !== '' || misProveedores.length);
     }
 
     function limpiar() {
-      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.gama = '';
+      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.min = ''; estado.max = '';
       if (input) input.value = '';
-      if (selCat) selCat.value = '';
-      $$('[data-etapa],[data-gama]').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-      pintar();
+      if (inMin) inMin.value = '';
+      if (inMax) inMax.value = '';
+      $$('[data-etapa],[data-cat]').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+      recompactarTodo();
+      if (misProveedores.length) { misProveedores = []; aplicarFiltroProveedores(); }
+      else pintar();
     }
 
     /* Se parte de la URL con la que llegó el visitante: los parámetros que no
@@ -1281,12 +1300,13 @@
        cuele en la barra de direcciones ni en la URL que la gente copia. */
     function actualizarURL() {
       var p = new URLSearchParams(window.location.search);
-      ['q', 'grupo', 'cat', 'etapa', 'gama', 'orden'].forEach(function (k) { p['delete'](k); });
+      ['q', 'grupo', 'cat', 'etapa', 'min', 'max', 'orden'].forEach(function (k) { p['delete'](k); });
       if (estado.q) p.set('q', estado.q);
       if (estado.grupo) p.set('grupo', estado.grupo);
       if (estado.cat) p.set('cat', estado.cat);
       if (estado.etapa) p.set('etapa', estado.etapa);
-      if (estado.gama) p.set('gama', estado.gama);
+      if (estado.min !== '') p.set('min', estado.min);
+      if (estado.max !== '') p.set('max', estado.max);
       if (estado.orden !== 'cat') p.set('orden', estado.orden);
       var qs = p.toString();
       window.history.replaceState(null, '', './' + (qs ? '?' + qs : '') + window.location.hash);
@@ -1300,7 +1320,14 @@
         t = window.setTimeout(function () { estado.q = input.value.trim(); pintar(); }, 140);
       });
     }
-    if (selCat) selCat.addEventListener('change', function () { estado.cat = selCat.value; estado.grupo = ''; pintar(); });
+    [[inMin, 'min'], [inMax, 'max']].forEach(function (par) {
+      if (!par[0]) return;
+      var tm;
+      par[0].addEventListener('input', function () {
+        window.clearTimeout(tm);
+        tm = window.setTimeout(function () { estado[par[1]] = numero(par[0].value); pintar(); }, 200);
+      });
+    });
     if (selOrden) selOrden.addEventListener('change', function () { estado.orden = selOrden.value; pintar(); });
     if (chkItbis) chkItbis.addEventListener('change', function () {
       estado.sinItbis = chkItbis.checked;
@@ -1309,12 +1336,15 @@
     });
 
     document.addEventListener('click', function (e) {
-      var chip = e.target.closest('[data-etapa],[data-gama]');
+      var provChip = e.target.closest('[data-prov-chip]');
+      if (provChip) { alternarProveedor(provChip.getAttribute('data-prov-chip')); return; }
+
+      var chip = e.target.closest('[data-etapa],[data-cat]');
       if (chip) {
         var esEtapa = chip.hasAttribute('data-etapa');
-        var valor = chip.getAttribute(esEtapa ? 'data-etapa' : 'data-gama');
+        var attr = esEtapa ? 'data-etapa' : 'data-cat';
+        var valor = chip.getAttribute(attr);
         var activo = chip.getAttribute('aria-pressed') === 'true';
-        var attr = esEtapa ? 'data-etapa' : 'data-gama';
         $$('[' + attr + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
         /* El mismo filtro puede estar en la fila y en el menú desplegable:
            se marcan los dos, no solo el que se pulsó. */
@@ -1322,9 +1352,9 @@
           $$('[' + attr + '="' + valor + '"]').forEach(function (c) { c.setAttribute('aria-pressed', 'true'); });
         }
         if (esEtapa) estado.etapa = activo ? '' : valor;
-        else estado.gama = activo ? '' : valor;
+        else { estado.cat = activo ? '' : valor; estado.grupo = ''; }
         cerrarMenuChips();
-        compactarChips(chipsEtapa);
+        compactarChips(esEtapa ? chipsEtapa : chipsCat);
         pintar();
         return;
       }
@@ -1335,13 +1365,14 @@
       var ce = $('[data-etapa="' + estado.etapa + '"]');
       if (ce) ce.setAttribute('aria-pressed', 'true');
     }
-    if (estado.gama) {
-      var cg = $('[data-gama="' + estado.gama + '"]');
-      if (cg) cg.setAttribute('aria-pressed', 'true');
+    if (estado.cat) {
+      var cc = $('[data-cat="' + estado.cat + '"]');
+      if (cc) cc.setAttribute('aria-pressed', 'true');
     }
 
     window.__pintarCatalogo = pintar;
     pintar();
+    compactarChips(chipsCat);
     compactarChips(chipsEtapa);
   })();
 

@@ -1259,11 +1259,18 @@ cifras del hero igual que ya los excluía de las tarjetas de cada categoría.
 ## Filtro «Mis proveedores»
 
 Un visitante que ya trabaja con ciertos proveedores puede seleccionarlos y ver los precios
-calculados **solo con las cotizaciones de ellos**. Se selecciona de dos formas:
+calculados **solo con las cotizaciones de ellos**, y la tabla se queda con los ítems que
+ellos cotizan. Se selecciona de tres formas:
 
-- desde el botón **Mis proveedores** de la barra de herramientas, que abre un panel con
-  buscador y casillas;
+- desde los chips **Proveedor** de la barra del catálogo (uno por comercio; admiten varios);
+- desde el botón **Mis proveedores** del directorio, que abre un panel con buscador y casillas;
 - desde el directorio, con el botón **Trabajar solo con este** de cada tarjeta.
+
+La barra del catálogo filtra además por **categoría** y **etapa** (chips de una sola
+elección, con menú «+N» para las que no caben) y por **rango de precio** (dos campos, mínimo
+y máximo, sobre el precio que se ve: con ITBIS o sin él según el interruptor). Todo va en la
+URL (`?cat=MAT-04&min=400&max=500`) salvo la selección de proveedores, que se guarda en el
+navegador. La antigua «gama» (económica, estándar, premium) dejó de ser filtro.
 
 La selección se guarda en el navegador (`localStorage`), se comparte entre páginas y no
 sale del equipo del visitante.

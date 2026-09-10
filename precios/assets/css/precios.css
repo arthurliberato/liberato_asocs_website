@@ -229,6 +229,10 @@ table{border-collapse:collapse;width:100%}
 
 .toggle-itbis{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--ink-soft);cursor:pointer;white-space:nowrap}
 .toggle-itbis input{width:16px;height:16px;accent-color:var(--navy)}
+.rango-precio{display:inline-flex;align-items:center;gap:.3rem;color:var(--ink-mute);font-size:.88rem}
+.rango-precio input{width:6.4rem;padding:.42rem .55rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.9rem;-moz-appearance:textfield}
+.rango-precio input::-webkit-outer-spin-button,.rango-precio input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.rango-precio input:focus{background:#fff;border-color:var(--blue-200)}
 
 .resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .9rem;font-size:.9rem;color:var(--ink-mute)}
 .resultado-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
@@ -659,6 +663,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .tools-row{gap:.4rem .5rem}
   .search-box input{padding:.4rem .7rem .4rem 2.3rem}
   .select{font-size:.86rem;padding:.38rem .55rem}
+  .rango-precio input{width:5.6rem;font-size:.86rem;padding:.38rem .5rem}
   .toggle-itbis{font-size:.84rem}
   .tools-row .btn-mini{padding:.32rem .65rem;font-size:.82rem}
   .filtros{margin-top:.45rem;gap:.35rem}

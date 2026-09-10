@@ -143,9 +143,6 @@
         <input id="q" type="search" placeholder="Buscar: cemento, varilla 1/2, bloque 6, plafón…" autocomplete="off">
       </div>
 
-      <label class="visually-hidden" for="f-cat">Categoría</label>
-      <select class="select" id="f-cat"></select>
-
       <label class="visually-hidden" for="orden">Ordenar por</label>
       <select class="select" id="orden">
         <option value="cat">Orden del catálogo</option>
@@ -158,6 +155,14 @@
         <input type="checkbox" id="f-itbis"> Ver sin ITBIS
       </label>
 
+      <div class="rango-precio" role="group" aria-label="Filtrar por precio">
+        <label class="visually-hidden" for="f-min">Precio mínimo</label>
+        <input id="f-min" type="number" min="0" inputmode="decimal" placeholder="Precio mín.">
+        <span aria-hidden="true">–</span>
+        <label class="visually-hidden" for="f-max">Precio máximo</label>
+        <input id="f-max" type="number" min="0" inputmode="decimal" placeholder="máx.">
+      </div>
+
       <button class="btn btn-ghost btn-mini" type="button" data-copiar-tabla>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:15px;height:15px"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         Copiar tabla
@@ -168,8 +173,9 @@
       </a>
     </div>
 
+    <div class="filtros" id="chips-cat"></div>
     <div class="filtros" id="chips-etapa"></div>
-    <div class="filtros" id="chips-gama"></div>
+    <div class="filtros" id="chips-prov"></div>
   </div>
 </div>
 
