@@ -144,7 +144,12 @@
     }
   }
 
+  /* Fichas que se cayeron porque su foto no cargó. Se guarda la dirección
+     para no contar dos veces la misma al repintar. */
+  var caidas = {}, rotas = 0, ultimoConteo = null;
+
   function contar(ns, listasYa) {
+    ultimoConteo = [ns, listasYa];
     var c;
     var simple = !estado.q && (estado.cats.length + (estado.comercio ? 1 : 0)) <= 1;
     if (simple && !estado.cats.length && !estado.comercio) c = man.todo;
@@ -164,11 +169,16 @@
     var parcial = !exactas && !cargadas(ns);
     /* Cuántos hay, y nada más. El rango y la mediana son análisis y aquí
        se viene a mirar: quien quiera comparar números tiene el catálogo de
-       precios y el libro de Excel. */
-    cuenta.innerHTML = '<strong>' + c.n.toLocaleString('en-US') + '</strong> ' +
-      (c.n === 1 ? 'artículo' : 'artículos') +
+       precios y el libro de Excel.
+
+       Menos las fichas que se cayeron: si una foto no carga, su ficha se
+       quita (ver ficha()) y contarla sería prometer algo que no está. */
+    var n = Math.max(0, c.n - rotas);
+    cuenta.innerHTML = '<strong>' + n.toLocaleString('en-US') + '</strong> ' +
+      (n === 1 ? 'artículo' : 'artículos') +
       (parcial ? ' <span class="ir-cargando">cargando el resto…</span>' : '');
   }
+
 
   /* ---------- pintar ---------- */
 
@@ -188,7 +198,24 @@
     img.alt = v.n;
     img.loading = 'lazy';
     img.decoding = 'async';
-    img.onerror = function () { marco.classList.add('ir-foto-rota'); img.remove(); };
+    /* Aquí se viene a mirar, así que una ficha sin foto no es media ficha:
+       es un hueco que estorba. Cuando la dirección de la imagen ya no
+       existe —la tienda la cambió, la retiró— la ficha entera se va y el
+       contador lo resta. Es lo contrario de lo habitual, y es a propósito:
+       en una tabla de precios el dato manda aunque falte la foto; en una
+       cuadrícula de fotos, sin foto no hay nada que enseñar. */
+    img.onerror = function () {
+      if (!caidas[v.img]) { caidas[v.img] = 1; rotas += 1; }
+      if (a.parentNode) a.parentNode.removeChild(a);
+      if (ultimoConteo) contar(ultimoConteo[0], ultimoConteo[1]);
+      /* Si se cayeron todas —la tienda dejó de servir sus imágenes, o no
+         hay red— la cuadrícula vacía sin explicación parece un error de la
+         página. Vale más decir qué pasó. */
+      if (!grid.children.length) {
+        vacio.hidden = false;
+        vacio.textContent = 'No se pudieron cargar las fotos de estos artículos. Vuelva a intentarlo en un momento.';
+      }
+    };
     marco.appendChild(img);
 
     var chip = document.createElement('span');

@@ -971,6 +971,7 @@ const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
+const ALISS = require('./reglas-aliss.js');
 
 /* Los códigos que trae la extracción de baldosas del 11/09, para que la
    del 09/09 solo aporte lo que aquella dejó fuera. Ver FUENTES. */
@@ -1074,6 +1075,17 @@ const FUENTES = [
       const r = BALDOSAS.regla(a);
       return r === undefined ? undefined : (r || null);
     }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/aliss-2026-09-11.json'),
+    etiqueta: 'Aliss · lámparas, jardín y espejos',
+    proveedor: 'Aliss',
+    constante: 'PROV_ALISS',
+    fecha: '2026-09-11',
+    motivo: 'no es partida de obra ni pieza que se especifique',
+    motivoDe: () => ALISS.MOTIVO.valor || 'no es partida de obra ni pieza que se especifique',
+    mapeo: {},
+    regla: a => ALISS.regla(a)
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-2026-09-09.json'),
@@ -1840,9 +1852,17 @@ function escribirVisual() {
 
   const filas = [];
   const vistos = {};
+  /* Hay catálogos que traen todas las fotos del artículo en un mismo campo,
+     separadas por « | ». Puestas tal cual en el src, el navegador pide una
+     dirección que no existe y la ficha sale vacía: 128 artículos de un solo
+     comercio se veían así. Se toma la primera, que es la principal. */
+  const primeraFoto = v => String(v || '').split(/\s*\|\s*|\s+(?=https?:\/\/)/)[0].trim();
+
   const anota = (a, codigoItem, cat) => {
-    const img = a.imagen || '';
-    if (!img) return;
+    const img = primeraFoto(a.imagen);
+    /* Una dirección a medias da una ficha rota, que en una página de fotos
+       es peor que una ficha que no está. */
+    if (!/^https:\/\/\S+$/.test(img)) return;
     if (!(ambitoDeItem[codigoItem] || []).includes('interiorismo')) return;
     const f = a._fuente;
     const clave = f.proveedor + '|' + a.codigo;

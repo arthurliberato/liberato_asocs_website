@@ -1000,19 +1000,6 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* Una tienda renombra un archivo y la foto desaparece. La ficha sigue
    sirviendo: precio, comercio, nombre y enlace. Lo que no puede quedar es
    un hueco blanco sin explicación. */
-.ir-foto-rota {
-  background:
-    repeating-linear-gradient(45deg, var(--marfil-hondo) 0 8px, var(--marfil) 8px 16px);
-}
-.ir-foto-rota::after {
-  content: 'Foto no disponible';
-  position: absolute;
-  inset: auto 0 45% 0;
-  text-align: center;
-  font-size: .74rem;
-  color: var(--ink-mute);
-}
-
 /* El recuadro: relleno sólido para leerse sobre cualquier foto. */
 .ir-precio {
   position: absolute;

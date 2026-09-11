@@ -130,6 +130,12 @@
     zonas:[], web:'mundoled.com.do', precios:true,
     nota:'Tienda dedicada solo a iluminación, con 1,549 productos y precio por artículo en RD$. Es la fuente que llena la iluminación decorativa, que el catálogo tenía vacía: 952 de sus artículos son lámparas de techo, de pared, de mesa y de pie. Declara potencia, temperatura de color y zócalo en el material de instalación; en la lámpara decorativa, como todo el rubro, no declara ejes. No dice si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
   });
+  p('Aliss', {
+    tipo:'cadena', canal:'detallista',
+    cats:['MAT-33'],
+    zonas:[], web:'aliss.do', precios:true,
+    nota:'Cadena de artículos de hogar con tienda en línea y precio en RD$ por artículo. Del catálogo extraído solo entran sus 35 lámparas decorativas de techo y de pared: es el extremo barato de una partida que se publica por rango —una lámpara de techo suya cuesta RD$ 1,800 y una de Luminatti US$ 3,160—, y sin ese extremo la referencia sale corrida hacia arriba. Sus 337 maceteros y artículos de jardinería, su iluminación exterior de temporada y sus espejos de sobremesa quedan fuera: ver herramientas/reglas-aliss.js. No declara si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
+  });
   p('Luminatti', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-33'],

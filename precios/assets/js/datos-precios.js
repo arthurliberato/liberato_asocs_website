@@ -115,6 +115,7 @@
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
   var PROV_BELLAVISTA = 'Papel Tapiz Bella Vista';
+  var PROV_ALISS = 'Aliss';
   var PROV_CARABELA = 'Carabela';
   var PROV_ILUMEL = 'Ilumel';
   var PROV_DCO = 'DCO';
@@ -33253,6 +33254,10 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
     nota: 'CEMENTO PVC 8oz SM-244-7 · artículo 718594024479. ' + SUPUESTO_ITBIS
   });
+  c('MAT-33-001', PROV_ALISS, 3027.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-mesa-con-pantalla-de-yute-20x40cm-3056998',
+    nota: 'Lámpara Mesa Con Pantalla De Yute 20X40Cm · artículo 3056998 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
   c('MAT-33-001', PROV_MUNDOLED, 4500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-base-bronce-mampara-blanca-e27-50cm30cm-cod-3695/',
     peso: 7,
@@ -33370,6 +33375,16 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/table-lamp-with-marble-base-and-golden-disc-d14in-led-3000k-8w-120v-60hz',
     moneda: 'USD',
     nota: 'Table Lamp with Marble base and Golden Disc D14in LED 3000K 8W 120v/60Hz · artículo MTBMG007732D360GDLEDWW8W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ALISS, 365, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-oso-para-pared-24x19x9cm-3030564',
+    peso: 2,
+    nota: 'Lámpara De Oso Para Pared 24X19X9Cm · artículo 3030564 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ALISS, 150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-pared-23x18x8cm-3030569',
+    peso: 3,
+    nota: 'Lámpara De Pared 23X18X8Cm · artículo 3030569 · marca HOME DECOR. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-33-002', PROV_CARABELA, 5800, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/aplique-judi',
@@ -34058,6 +34073,85 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/floor-lamp-gold-iron-with-white-stone-base-h65in-led-5w-3000k-120v-60hz',
     moneda: 'USD',
     nota: 'Floor Lamp Gold Iron with White Stone Base H65in LED 5W 3000K 120v/60Hz · artículo 9061-WH-5W-WW · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 2306.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-blanca-de-mimbre-para-techo-34x34x124cm-3055494',
+    peso: 2,
+    nota: 'Lámpara Blanca De Mimbre Para Techo 34X34X124Cm · artículo 3055494 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 5281.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-de-cocina-3045581',
+    nota: 'Lámpara Colgante De Cocina · artículo 3045581 · marca CHINA PANDA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 4375, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-decorativa-15x30cm-3052197',
+    peso: 2,
+    nota: 'Lámpara Colgante Decorativa 15X30Cm · artículo 3052197 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 5586, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-negro-30x40cm-3052188',
+    nota: 'Lámpara Colgante Negro 30X40Cm · artículo 3052188 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 4056.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-negro-75-5x28x150cm-3052048',
+    peso: 2,
+    nota: 'Lampara Colgante Negro 75.5x28x150cm · artículo 3052048 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 4168.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-tipo-vintage-en-blanco-3042839',
+    nota: 'Lámpara Colgante Tipo Vintage En Blanco · artículo 3042839 · marca SOHO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 1830, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-colgante-tipo-vintage-en-blanco-3042841',
+    peso: 2,
+    nota: 'Lámpara Colgante Tipo Vintage En Blanco · artículo 3042841 · marca SOHO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3314.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-cocina-qicheng-3045582',
+    nota: 'Lámpara De Cocina Qicheng · artículo 3045582 · marca CHINA PANDA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3538.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-mimbre-para-techo-30x40cm-3056997',
+    peso: 2,
+    nota: 'Lámpara De Mimbre Para Techo 30X40Cm · artículo 3056997 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 955, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-24-5x80cm-3043458',
+    nota: 'Lampara De Techo 24.5x80cm · artículo 3043458 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3332, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-35-5x42cm-3055071',
+    nota: 'Lámpara De Techo 35.5x42cm · artículo 3055071 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3027.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-blanca-26x44cm-3052179',
+    peso: 2,
+    nota: 'Lámpara De Techo Blanca 26X44Cm · artículo 3052179 · marca HOME DECOR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 2513, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-colgante-25x15cm-3052192',
+    peso: 4,
+    nota: 'Lámpara De Techo Colgante 25X15Cm · artículo 3052192 · marca HOME DECOR. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 2327.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-con-cupula-de-porcelana-verde-con-puntos-3036605',
+    nota: 'Lámpara de techo con cúpula de porcelana verde con puntos · artículo 3036605 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3115, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-de-metal-24x80cm-3043456',
+    nota: 'Lámpara De Techo De Metal 24X80Cm · artículo 3043456 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 4567.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-decorativa-gris-42x20cm-3052191',
+    nota: 'Lámpara De Techo Decorativa Gris 42X20Cm · artículo 3052191 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 1792, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-techo-negra-36x28x150cm-3052047',
+    nota: 'Lámpara De Techo Negra 36x28x150cm · artículo 3052047 · marca HOME DECOR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ALISS, 3958.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-decorativa-color-negro-3043580',
+    nota: 'Lámpara Decorativa Color Negro · artículo 3043580 · marca HOME DECOR. ' + SUPUESTO_ITBIS
   });
   c('MAT-33-004', PROV_ILUMEL, 17818, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-techo-29',
