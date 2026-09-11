@@ -1003,6 +1003,7 @@ const BELLAVISTA = require('./reglas-bellavista.js');
 const ILUMEL = require('./reglas-ilumel.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 const OCHOAILUM = require('./reglas-ochoa-iluminacion.js');
+const OCHOAMAD = require('./reglas-ochoa-madera.js');
 
 const FUENTES = [
   /* EL CATÁLOGO ENTERO DE OCHOA, EN UN SOLO ARCHIVO
@@ -1029,8 +1030,8 @@ const FUENTES = [
     constante: 'PROV_OCHOA',
     fecha: '2026-09-11',
     motivo: 'la ficha no declara la especificación',
-    motivoDe: () => OCHOAILUM.MOTIVO.valor || BALDOSAS.MOTIVO.valor ||
-                    'la ficha no declara la especificación',
+    motivoDe: () => OCHOAILUM.MOTIVO.valor || OCHOAMAD.MOTIVO.valor ||
+                    BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
     mapeo: MAPEO_OCHOA,
     regla: a => {
       if (a.cat1 === 'baldosas') {
@@ -1045,6 +1046,7 @@ const FUENTES = [
       if (a.cat1 === 'plomeria' && a.cat2 === 'griferia y mezcladora') return BANOS.regla(a) || null;
       if (a.cat1 === 'seguridad y tecnologia') return SEGTEC.regla(a) || null;
       if (a.cat1 === 'iluminacion') return OCHOAILUM.regla(a);
+      if (a.cat1 === 'madera') return OCHOAMAD.regla(a);
       if (a.cat1 === 'materiales de construccion') {
         const r = REGLAS[a.cat2 + '/' + a.cat3];
         return r ? r(a) : undefined;

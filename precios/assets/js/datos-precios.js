@@ -3709,7 +3709,114 @@
     url: 'https://maxferreteria.com/products/pino-amer-2x4x16-bruto',
     nota: 'PINO AMER 2X4X16 BRUTO · artículo 0001005405 · ref. Escuadria 2"x4" nominal | Largo 16 pies | Acabado: Bruto | Pino americano · marca PINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-022', PROV_MAX, 2470, {
+  c('MAT-06-022', PROV_OCHOA, 569.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carton-piedra-atado-100-04690004',
+    art: 'CARTON PIEDRA (ATADO 100)',
+    sku: '04-69-0004',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/carton-piedra-atado-100-04690004',
+    nota: 'CARTON PIEDRA (ATADO 100) · artículo 04-69-0004 · ref. 4X8X3.0MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-023', PROV_OCHOA, 1889.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdf-hidro-brixton-04690330',
+    peso: 3,
+    art: 'MELAMINA MDF HIDRO-BRIXTON',
+    sku: '04-69-0330',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/melamina-mdf-hidro-brixton-04690330',
+    nota: 'MELAMINA MDF HIDRO-BRIXTON · artículo 04-69-0330 · ref. 1CARA-5.5MM-6X8 · marca BRASIL. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-023', PROV_OCHOA, 3458.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdf-1c-hidrof-5-5mm-6x8-04690348',
+    art: 'MELAMINA-MDF 1C / HIDROF. 5.5MM-6X8',
+    sku: '04-69-0348',
+    marca: 'MASISA',
+    url: 'https://ochoa.com.do/producto/melamina-mdf-1c-hidrof-5-5mm-6x8-04690348',
+    nota: 'MELAMINA-MDF 1C / HIDROF. 5.5MM-6X8 · artículo 04-69-0348 · ref. CASTANOBLANCM047 · marca MASISA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 6318.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-hidro-brixton-04690319',
+    peso: 2,
+    art: 'MELAMINA MDP HIDRO-BRIXTON',
+    sku: '04-69-0319',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-hidro-brixton-04690319',
+    nota: 'MELAMINA MDP HIDRO-BRIXTON · artículo 04-69-0319 · ref. 2C-18MM-6\'X8\' · marca BRASIL. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 6318.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-hidro-chantilli-04690317',
+    art: 'MELAMINA MDP HIDRO-CHANTILLI',
+    sku: '04-69-0317',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-hidro-chantilli-04690317',
+    nota: 'MELAMINA MDP HIDRO-CHANTILLI · artículo 04-69-0317 · ref. 2C-18MM-6\'X8\' · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 5046.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690266',
+    art: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8',
+    sku: '04-69-0266',
+    marca: 'MASISA',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690266',
+    nota: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8 · artículo 04-69-0266 · ref. BLANCOSOFT · marca MASISA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 5254.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690268',
+    peso: 4,
+    art: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8',
+    sku: '04-69-0268',
+    marca: 'MASISA',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690268',
+    nota: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8 · artículo 04-69-0268 · ref. NOGALAFRICANOM050 · marca MASISA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 5442.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690261',
+    art: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8',
+    sku: '04-69-0261',
+    marca: 'MASISA',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-2c-hidrof-18mm-6x8-04690261',
+    nota: 'MELAMINA-MDP 2C / HIDROF. 18MM-6X8 · artículo 04-69-0261 · ref. ROBLEMILANOM035 · marca MASISA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-024', PROV_OCHOA, 5231.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/melamina-mdp-de-2c-hidrof-18mm-6x8-04690263',
+    art: 'MELAMINA-MDP DE 2C / HIDROF. 18MM-6X8',
+    sku: '04-69-0263',
+    marca: 'MASISA',
+    url: 'https://ochoa.com.do/producto/melamina-mdp-de-2c-hidrof-18mm-6x8-04690263',
+    nota: 'MELAMINA-MDP DE 2C / HIDROF. 18MM-6X8 · artículo 04-69-0263 · ref. FRESNOHUMOM060 · marca MASISA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-025', PROV_OCHOA, 2770.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-encofrar-select-b-c-04690295',
+    art: 'PLYWOOD ENCOFRAR SELECT B / C+',
+    sku: '04-69-0295',
+    marca: 'TUFF CORE',
+    url: 'https://ochoa.com.do/producto/plywood-encofrar-select-b-c-04690295',
+    nota: 'PLYWOOD ENCOFRAR SELECT B / C+ · artículo 04-69-0295 · ref. 4X8X3/4-18MM · marca TUFF CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-025', PROV_OCHOA, 3327.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-p-encofrar-1c-atado-48pz-04690048',
+    art: 'PLYWOOD P / ENCOFRAR 1C-ATADO 48PZ',
+    sku: '04-69-0048',
+    marca: 'AMERICANO',
+    url: 'https://ochoa.com.do/producto/plywood-p-encofrar-1c-atado-48pz-04690048',
+    nota: 'PLYWOOD P / ENCOFRAR 1C-ATADO 48PZ · artículo 04-69-0048 · ref. 4X8X3/4=18MM · marca AMERICANO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-025', PROV_OCHOA, 2168.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-encofrado-1c-atado-50pz-04690204',
+    art: 'PLYWOOD ENCOFRADO 1C-ATADO 50PZ',
+    sku: '04-69-0204',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-encofrado-1c-atado-50pz-04690204',
+    nota: 'PLYWOOD ENCOFRADO 1C-ATADO 50PZ · artículo 04-69-0204 · ref. 4X8X3/4-18MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-025', PROV_OCHOA, 2162.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-encofrado-2c-atado-50pz-04690338',
+    art: 'PLYWOOD ENCOFRADO 2C-ATADO 50PZ',
+    sku: '04-69-0338',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-encofrado-2c-atado-50pz-04690338',
+    nota: 'PLYWOOD ENCOFRADO 2C-ATADO 50PZ · artículo 04-69-0338 · ref. 4X8X3/4-18MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-025', PROV_MAX, 2470, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/formaleta-pino-brazil-1c-4x8-3-4',
     art: 'FORMALETA PINO BRAZIL 1C 4X8 3/4',
     sku: '0001068097',
@@ -3717,49 +3824,65 @@
     url: 'https://maxferreteria.com/products/formaleta-pino-brazil-1c-4x8-3-4',
     nota: 'FORMALETA PINO BRAZIL 1C 4X8 3/4 · artículo 0001068097 · ref. Formaleta (plywood fenolico 1 cara) pino Brasil | Formato 4x8 pies (1.22 x 2.44 m) | Espesor 3/4" · marca PLYWOOD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-022', PROV_BELLON, 2996, {
+  c('MAT-06-025', PROV_BELLON, 2996, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Encofrar 1 Cara TFC USA 4\' x 8\' x 3/4" 18mm B+/C+ OES WBP Glue Tuff Core',
     sku: '193229',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Encofrar 1 Cara TFC USA 4\' x 8\' x 3/4" 18mm B+/C+ OES WBP Glue Tuff Core · artículo 193229. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-022', PROV_BELLON, 3140, {
+  c('MAT-06-025', PROV_BELLON, 3140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Encofrar USA 1 Cara GP 4\' x 8\' x 3/4" 18mm Georgia Pacific',
     sku: '204597',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Encofrar USA 1 Cara GP 4\' x 8\' x 3/4" 18mm Georgia Pacific · artículo 204597. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-022', PROV_BELLON, 2180, {
+  c('MAT-06-025', PROV_BELLON, 2180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Encofrar Brasil 2 Caras 4\' x 8\' x 3/4" 18mm C+/C+ OES WBP 7plies',
     sku: '207745',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Encofrar Brasil 2 Caras 4\' x 8\' x 3/4" 18mm C+/C+ OES WBP 7plies · artículo 207745. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-023', PROV_BELLON, 430, {
+  c('MAT-06-026', PROV_BELLON, 430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR',
     sku: '16659',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR · artículo 16659. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-024', PROV_BELLON, 501, {
+  c('MAT-06-027', PROV_BELLON, 501, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR',
     sku: '16661',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR · artículo 16661. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-025', PROV_BELLON, 1235, {
+  c('MAT-06-028', PROV_OCHOA, 1508.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-80pz-04690059',
+    art: 'PLYWOOD DE OKUME (ATADO 80PZ)',
+    sku: '04-69-0059',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-80pz-04690059',
+    nota: 'PLYWOOD DE OKUME (ATADO 80PZ) · artículo 04-69-0059 · ref. 4X8X1/2=12MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-028', PROV_BELLON, 1235, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 1/2" 12mm MR',
     sku: '16654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 1/2" 12mm MR · artículo 16654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-026', PROV_MAX, 849.6, {
+  c('MAT-06-029', PROV_OCHOA, 744.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-165pz-04690041',
+    art: 'PLYWOOD DE OKUME (ATADO 165PZ)',
+    sku: '04-69-0041',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-165pz-04690041',
+    nota: 'PLYWOOD DE OKUME (ATADO 165PZ) · artículo 04-69-0041 · ref. 4X8X1/4=6MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-029', PROV_MAX, 849.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/plywood-okume-4x8-5-5-mm-ref-1-4',
     art: 'PLYWOOD OKUME 4X8 5.5 MM (REF. 1/4)',
     sku: '0001017969',
@@ -3767,56 +3890,176 @@
     url: 'https://maxferreteria.com/products/plywood-okume-4x8-5-5-mm-ref-1-4',
     nota: 'PLYWOOD OKUME 4X8 5.5 MM (REF. 1/4) · artículo 0001017969 · ref. Plywood Okume | Formato 4x8 pies (1.22 x 2.44 m) | Espesor 1/4" / 5.5 mm · marca PLYWOOD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-026', PROV_BELLON, 770, {
+  c('MAT-06-029', PROV_BELLON, 770, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 1/4" 6mm MR',
     sku: '16655',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 1/4" 6mm MR · artículo 16655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-027', PROV_BELLON, 450, {
+  c('MAT-06-030', PROV_OCHOA, 421.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-335pz-04690008',
+    art: 'PLYWOOD DE OKUME (ATADO 335PZ)',
+    sku: '04-69-0008',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-335pz-04690008',
+    nota: 'PLYWOOD DE OKUME (ATADO 335PZ) · artículo 04-69-0008 · ref. 4X8X1/8=2.7MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-030', PROV_BELLON, 450, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 1C 4\' x 8\' x 1/8" 2.7mm BB/CC MR',
     sku: '16658',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 1C 4\' x 8\' x 1/8" 2.7mm BB/CC MR · artículo 16658. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-028', PROV_BELLON, 2121, {
+  c('MAT-06-031', PROV_OCHOA, 455.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690038',
+    art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
+    sku: '04-69-0038',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690038',
+    nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0038 · ref. 32X7X3/16=4MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-032', PROV_OCHOA, 492.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690037',
+    art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
+    sku: '04-69-0037',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690037',
+    nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0037 · ref. 3X7X3/16=4MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-032', PROV_OCHOA, 440.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690061',
+    art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
+    sku: '04-69-0061',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690061',
+    nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0061 · ref. 30X7X3/16-3.6MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-033', PROV_OCHOA, 544.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-250pz-04690039',
+    art: 'PLYWOOD DE OKUME (ATADO 250PZ)',
+    sku: '04-69-0039',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-250pz-04690039',
+    nota: 'PLYWOOD DE OKUME (ATADO 250PZ) · artículo 04-69-0039 · ref. 4X8X3/16 · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-034', PROV_OCHOA, 2115.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-33pz-04690060',
+    art: 'PLYWOOD DE OKUME (ATADO 33PZ)',
+    sku: '04-69-0060',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-33pz-04690060',
+    nota: 'PLYWOOD DE OKUME (ATADO 33PZ) · artículo 04-69-0060 · ref. 4X8X3/4=18MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-034', PROV_BELLON, 2121, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 3/4" 18mm MR',
     sku: '16662',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 3/4" 18mm MR · artículo 16662. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-029', PROV_BELLON, 1249, {
+  c('MAT-06-035', PROV_OCHOA, 1186.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-105pz-04690058',
+    art: 'PLYWOOD DE OKUME (ATADO 105PZ)',
+    sku: '04-69-0058',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-105pz-04690058',
+    nota: 'PLYWOOD DE OKUME (ATADO 105PZ) · artículo 04-69-0058 · ref. 4X8X3/8=9MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-035', PROV_BELLON, 1249, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 3/8" 9mm MR',
     sku: '16663',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 3/8" 9mm MR · artículo 16663. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-030', PROV_BELLON, 705, {
+  c('MAT-06-036', PROV_OCHOA, 2476.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-65pz-04690020',
+    art: 'PLYWOOD DE OKUME (ATADO 65PZ)',
+    sku: '04-69-0020',
+    marca: 'OKUME',
+    url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-65pz-04690020',
+    nota: 'PLYWOOD DE OKUME (ATADO 65PZ) · artículo 04-69-0020 · ref. 4X8X5/8=15MM · marca OKUME. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-037', PROV_OCHOA, 1436.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-75pz-04690119',
+    art: 'PLYWOOD D / PINO (ATADO 75PZ)',
+    sku: '04-69-0119',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-75pz-04690119',
+    nota: 'PLYWOOD D / PINO (ATADO 75PZ) · artículo 04-69-0119 · ref. 4X8X1/2=12MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-038', PROV_OCHOA, 798.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-150pz-04690144',
+    art: 'PLYWOOD D / PINO (ATADO 150PZ)',
+    sku: '04-69-0144',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-150pz-04690144',
+    nota: 'PLYWOOD D / PINO (ATADO 150PZ) · artículo 04-69-0144 · ref. 4X8X1/4=6MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-038', PROV_BELLON, 705, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Brasil 4\' x 8\' x 1/4" 6mm C+/C MR Glue',
     sku: '142110',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Brasil 4\' x 8\' x 1/4" 6mm C+/C MR Glue · artículo 142110. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-031', PROV_BELLON, 875, {
+  c('MAT-06-039', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Decorativo 4\' x 8\' x 1/8" Pino',
     sku: '202600',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Pino · artículo 202600. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-032', PROV_BELLON, 1030, {
+  c('MAT-06-040', PROV_OCHOA, 587.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-225pz-04690185',
+    art: 'PLYWOOD D / PINO (ATADO 225PZ)',
+    sku: '04-69-0185',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-225pz-04690185',
+    nota: 'PLYWOOD D / PINO (ATADO 225PZ) · artículo 04-69-0185 · ref. 4X8X3/16=4MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-041', PROV_OCHOA, 2076.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-50pz-04690057',
+    art: 'PLYWOOD D / PINO (ATADO 50PZ)',
+    sku: '04-69-0057',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-50pz-04690057',
+    nota: 'PLYWOOD D / PINO (ATADO 50PZ) · artículo 04-69-0057 · ref. 4X8X3/4=18MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-042', PROV_OCHOA, 1106.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-100pz-04690125',
+    art: 'PLYWOOD D / PINO (ATADO 100PZ)',
+    sku: '04-69-0125',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-100pz-04690125',
+    nota: 'PLYWOOD D / PINO (ATADO 100PZ) · artículo 04-69-0125 · ref. 4X8X3/8=9MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-042', PROV_BELLON, 1030, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Brasil 4\' x 8\' x 3/8" 9mm C+/C MR Glue',
     sku: '16666',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Brasil 4\' x 8\' x 3/8" 9mm C+/C MR Glue · artículo 16666. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-033', PROV_BELLON, 875, {
+  c('MAT-06-043', PROV_OCHOA, 1757.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-60pz-04690126',
+    art: 'PLYWOOD D / PINO (ATADO 60PZ)',
+    sku: '04-69-0126',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-60pz-04690126',
+    nota: 'PLYWOOD D / PINO (ATADO 60PZ) · artículo 04-69-0126 · ref. 4X8X5/8=15MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-044', PROV_OCHOA, 700.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-dec-blanco-sm001-atado-200-04690101',
+    art: 'PLYWOOD DEC. BLANCO (SM001) ATADO 200',
+    sku: '04-69-0101',
+    marca: 'SIMAG',
+    url: 'https://ochoa.com.do/producto/plywood-dec-blanco-sm001-atado-200-04690101',
+    nota: 'PLYWOOD DEC. BLANCO (SM001) ATADO 200 · artículo 04-69-0101 · ref. 4X8X1/8=3MM · marca SIMAG. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-044', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba',
@@ -3824,7 +4067,87 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba · artículo 202601. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-034', PROV_MAX, 1735, {
+  c('MAT-06-045', PROV_OCHOA, 2479.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-laminado-negro-atado-52pz-04690293',
+    art: 'PLYWOOD LAMINADO NEGRO (ATADO 52PZ)',
+    sku: '04-69-0293',
+    marca: 'EXTRANJERA',
+    url: 'https://ochoa.com.do/producto/plywood-laminado-negro-atado-52pz-04690293',
+    nota: 'PLYWOOD LAMINADO NEGRO (ATADO 52PZ) · artículo 04-69-0293 · ref. 4X8-3/4-18MM · marca EXTRANJERA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-046', PROV_OCHOA, 1163.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-55-pz-04690154',
+    art: 'FIBRO MDF (ATADO 55 PZ)',
+    sku: '04-69-0154',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-55-pz-04690154',
+    nota: 'FIBRO MDF (ATADO 55 PZ) · artículo 04-69-0154 · ref. 4X8X1/2=12MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-047', PROV_OCHOA, 721.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-124-pz-04690152',
+    art: 'FIBRO MDF (ATADO 124 PZ)',
+    sku: '04-69-0152',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-124-pz-04690152',
+    nota: 'FIBRO MDF (ATADO 124 PZ) · artículo 04-69-0152 · ref. 4X8X1/4=5.5MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-047', PROV_OCHOA, 704.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-165-04690278',
+    art: 'FIBRO MDF (ATADO 165)',
+    sku: '04-69-0278',
+    marca: 'EXTRANJERA',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-165-04690278',
+    nota: 'FIBRO MDF (ATADO 165) · artículo 04-69-0278 · ref. 4X8-5.5MM-1/4 · marca EXTRANJERA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-048', PROV_OCHOA, 399.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-224-und-04690257',
+    art: 'FIBRO MDF (ATADO 224 UND)',
+    sku: '04-69-0257',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-224-und-04690257',
+    nota: 'FIBRO MDF (ATADO 224 UND) · artículo 04-69-0257 · ref. 4X8X3MM1/8 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-049', PROV_OCHOA, 579.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-168-106pz-04690151',
+    art: 'FIBRO MDF (ATADO 168-106PZ)',
+    sku: '04-69-0151',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-168-106pz-04690151',
+    nota: 'FIBRO MDF (ATADO 168-106PZ) · artículo 04-69-0151 · ref. 4X8X3/16=4MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-050', PROV_OCHOA, 1835.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-39-pz-04690156',
+    art: 'FIBRO MDF (ATADO 39 PZ)',
+    sku: '04-69-0156',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-39-pz-04690156',
+    nota: 'FIBRO MDF (ATADO 39 PZ) · artículo 04-69-0156 · ref. 4X8X3/4=18MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-051', PROV_OCHOA, 980.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-102pz-04690153',
+    art: 'FIBRO MDF (ATADO 102PZ)',
+    sku: '04-69-0153',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-102pz-04690153',
+    nota: 'FIBRO MDF (ATADO 102PZ) · artículo 04-69-0153 · ref. 4X8X3/8=9MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-052', PROV_OCHOA, 1471.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-46-pz-04690155',
+    art: 'FIBRO MDF (ATADO 46 PZ)',
+    sku: '04-69-0155',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/fibro-mdf-atado-46-pz-04690155',
+    nota: 'FIBRO MDF (ATADO 46 PZ) · artículo 04-69-0155 · ref. 4X8X5/8=15MM · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-053', PROV_OCHOA, 1616.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-80-plancha-04690232',
+    art: 'MDF HIDROFUGO (ATADO=80 PLANCHA)',
+    sku: '04-69-0232',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-80-plancha-04690232',
+    nota: 'MDF HIDROFUGO (ATADO=80 PLANCHA) · artículo 04-69-0232 · ref. 4X8-12MM-1/2 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-053', PROV_MAX, 1735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/plywood-mdf-hidrofugado-1-2',
     art: 'PLYWOOD MDF HIDROFUGADO 1/2',
     sku: '0001117951',
@@ -3832,7 +4155,55 @@
     url: 'https://maxferreteria.com/products/plywood-mdf-hidrofugado-1-2',
     nota: 'PLYWOOD MDF HIDROFUGADO 1/2 · artículo 0001117951 · ref. Plywood MDF hidrofugado | Formato 4x8 pies (asumido; no declarado en la ficha) | Espesor 1/2" · marca (sin marca). ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-035', PROV_INNOVA, 825, {
+  c('MAT-06-054', PROV_OCHOA, 968.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-113plancha-04690230',
+    art: 'MDF HIDROFUGO (ATADO=113PLANCHA)',
+    sku: '04-69-0230',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-113plancha-04690230',
+    nota: 'MDF HIDROFUGO (ATADO=113PLANCHA) · artículo 04-69-0230 · ref. 4X8-6MM-1/4 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-055', PROV_OCHOA, 524.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-04690292',
+    art: 'MDF HIDROFUGO',
+    sku: '04-69-0292',
+    marca: 'EXTRANJERA',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-04690292',
+    nota: 'MDF HIDROFUGO · artículo 04-69-0292 · ref. 4X8-3MM · marca EXTRANJERA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-055', PROV_OCHOA, 562.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-hdf-atado-276-04690256',
+    art: 'MDF HIDROFUGO HDF (ATADO 276)',
+    sku: '04-69-0256',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-hdf-atado-276-04690256',
+    nota: 'MDF HIDROFUGO HDF (ATADO 276) · artículo 04-69-0256 · ref. 4X8X3MM1/8 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-056', PROV_OCHOA, 2418.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-53-plancha-04690234',
+    art: 'MDF HIDROFUGO (ATADO=53 PLANCHA)',
+    sku: '04-69-0234',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-53-plancha-04690234',
+    nota: 'MDF HIDROFUGO (ATADO=53 PLANCHA) · artículo 04-69-0234 · ref. 4X8-18MM-3/4 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-057', PROV_OCHOA, 1309.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-106-plancha-04690231',
+    art: 'MDF HIDROFUGO (ATADO=106 PLANCHA)',
+    sku: '04-69-0231',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-106-plancha-04690231',
+    nota: 'MDF HIDROFUGO (ATADO=106 PLANCHA) · artículo 04-69-0231 · ref. 4X8-9MM-3/8 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-058', PROV_OCHOA, 2015.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-64-plancha-04690233',
+    art: 'MDF HIDROFUGO (ATADO=64 PLANCHA)',
+    sku: '04-69-0233',
+    marca: 'BRASIL',
+    url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-64-plancha-04690233',
+    nota: 'MDF HIDROFUGO (ATADO=64 PLANCHA) · artículo 04-69-0233 · ref. 4X8-15MM-5/8 · marca BRASIL. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-059', PROV_INNOVA, 825, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-4-7-004927',
     art: 'PLYWOOD PINO 4\'X8\'X1/4"',
     sku: '004927',
@@ -3840,7 +4211,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-4-7-004927',
     nota: 'PLYWOOD PINO 4\'X8\'X1/4" · artículo 004927 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-036', PROV_INNOVA, 780, {
+  c('MAT-06-060', PROV_INNOVA, 780, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-4-7-025848',
     art: 'PLYWOOD OKUME 4\'X8\'X1/4"',
     sku: '025848',
@@ -3848,7 +4219,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-4-7-025848',
     nota: 'PLYWOOD OKUME 4\'X8\'X1/4" · artículo 025848 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-037', PROV_INNOVA, 475, {
+  c('MAT-06-061', PROV_INNOVA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-8-7-025847',
     art: 'PLYWOOD OKUME 4\'X8\'X1/8"',
     sku: '025847',
@@ -3856,7 +4227,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-8-7-025847',
     nota: 'PLYWOOD OKUME 4\'X8\'X1/8" · artículo 025847 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-038', PROV_INNOVA, 1115, {
+  c('MAT-06-062', PROV_INNOVA, 1115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-8-7-025849',
     art: 'PLYWOOD OKUME 4\'X8\'X3/8"',
     sku: '025849',
@@ -3864,7 +4235,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-8-7-025849',
     nota: 'PLYWOOD OKUME 4\'X8\'X3/8" · artículo 025849 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-038', PROV_INNOVA, 1245, {
+  c('MAT-06-062', PROV_INNOVA, 1245, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-8-7-004928',
     art: 'PLYWOOD PINO 4\'X8\'X3/8"',
     sku: '004928',
@@ -3872,7 +4243,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-8-7-004928',
     nota: 'PLYWOOD PINO 4\'X8\'X3/8" · artículo 004928 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-039', PROV_INNOVA, 1995, {
+  c('MAT-06-063', PROV_INNOVA, 1995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-slatwall-decoratico-blco-4x8-029814',
     art: 'PLYWOOD SLATWALL DECORATICO BLCO 4X8\'',
     sku: '029814',
