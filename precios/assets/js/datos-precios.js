@@ -194,6 +194,7 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_BELLAVISTA = 'Papel Tapiz Bella Vista';
   var PROV_CARABELA = 'Carabela';
   var PROV_ILUMEL = 'Ilumel';
   var PROV_DCO = 'DCO';
@@ -35734,6 +35735,21 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-lisa-color-rosa-viejo/',
     peso: 23,
     nota: 'Plancha Lisa – Color Rosa Viejo · artículo h098. · ref. Rosa Viejo H098. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 1.74 m²; aquí va el precio del m² (RD$ 2400 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_BELLAVISTA, 500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://papeltapizbellavista.com/product/150-1004/',
+    peso: 54,
+    nota: '150-1004 · artículo 150-1004. La tienda cobra por rollo de 0.53 m × 10.05 m y declara que cubre 5 m²; aquí va el precio del m² (RD$ 2500 por pieza). El comercio lista 54 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 54 al calcular la referencia. El comercio declara que el precio incluye ITBIS'
+  });
+  c('MAT-34-016', PROV_BELLAVISTA, 420, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://papeltapizbellavista.com/product/150-3001/',
+    peso: 24,
+    nota: '150-3001 · artículo 150-3001. La tienda cobra por rollo de 0.53 m × 10.05 m y declara que cubre 5 m²; aquí va el precio del m² (RD$ 2100 por pieza). El comercio lista 24 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 24 al calcular la referencia. El comercio declara que el precio incluye ITBIS'
+  });
+  c('MAT-34-016', PROV_BELLAVISTA, 238.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://papeltapizbellavista.com/product/75701/',
+    peso: 31,
+    nota: '75701 · artículo 75701. La tienda cobra por rollo de 0.53 m × 10.05 m y declara que cubre 5 m²; aquí va el precio del m² (RD$ 1190.62 por pieza). El comercio lista 31 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 31 al calcular la referencia. El comercio declara que el precio incluye ITBIS'
   });
   c('MAT-34-016', PROV_DCO, 712.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/borosan-2/',

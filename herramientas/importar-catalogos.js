@@ -985,6 +985,7 @@ const HOGARDECO = require('./reglas-hogardeco.js');
 const CORTINAJE = require('./reglas-cortinaje.js');
 const DCO = require('./reglas-dco.js');
 const CARABELA = require('./reglas-carabela.js');
+const BELLAVISTA = require('./reglas-bellavista.js');
 const ILUMEL = require('./reglas-ilumel.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 
@@ -1186,6 +1187,20 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/bellavista-2026-09-11.json'),
+    etiqueta: 'Papel Tapiz Bella Vista',
+    proveedor: 'Papel Tapiz Bella Vista',
+    constante: 'PROV_BELLAVISTA',
+    fecha: '2026-09-11',
+    /* Lo declara su propia columna de precio, así que es dato y no supuesto. */
+    itbisDeclarado: true,
+    notaItbis: 'El comercio declara que el precio incluye ITBIS',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => BELLAVISTA.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = BELLAVISTA.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/carabela-2026-09-11.json'),
