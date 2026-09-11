@@ -30747,20 +30747,6 @@
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     nota: 'TANQUE CISTERNA 42gls FIBRA VI · artículo 093660. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_CIMA, 14217, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
-    art: 'TANQUE CISTERNA 42gls FV VERDE',
-    sku: '039668',
-    url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
-    nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-116', PROV_CIMA, 15482, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
-    art: 'TANQUE CISTERNA 60gls FV VERDE',
-    sku: '039691',
-    url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
-    nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
-  });
   c('MAT-09-116', PROV_CIMA, 10496, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     art: 'TANQUE CISTERNA 60gls FIBRA VI',
@@ -30775,14 +30761,28 @@
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     nota: 'TANQUE CISTERNA 82 GLS FIBRA V · artículo 260406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-118', PROV_BELLON, 35835, {
+  c('MAT-09-118', PROV_CIMA, 14217, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
+    art: 'TANQUE CISTERNA 42gls FV VERDE',
+    sku: '039668',
+    url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
+    nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-119', PROV_CIMA, 15482, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
+    art: 'TANQUE CISTERNA 60gls FV VERDE',
+    sku: '039691',
+    url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
+    nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-120', PROV_BELLON, 35835, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 1000 GL El Valleno Negro',
     sku: '78646',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 1000 GL El Valleno Negro · artículo 78646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-119', PROV_MAX, 41115, {
+  c('MAT-09-121', PROV_MAX, 41115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     art: 'TINACO TINACOM 1100 GLS.',
     sku: '0001016137',
@@ -30790,7 +30790,7 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     nota: 'TINACO TINACOM 1100 GLS. · artículo 0001016137 · ref. Tinaco Vertical | Capacidad 1100 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-120', PROV_MAX, 5385, {
+  c('MAT-09-122', PROV_MAX, 5385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     art: 'TINACO TINACOM 145 GLS',
     sku: '0001047874',
@@ -30798,21 +30798,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     nota: 'TINACO TINACOM 145 GLS · artículo 0001047874 · ref. Tinaco Vertical | Capacidad 145 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-120', PROV_BELLON, 5880, {
+  c('MAT-09-122', PROV_BELLON, 5880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro',
     sku: '147528',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro · artículo 147528. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-120', PROV_BELLON, 4990, {
+  c('MAT-09-122', PROV_BELLON, 4990, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GL Tinagua TC-150',
     sku: '199707',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GL Tinagua TC-150 · artículo 199707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-121', PROV_MAX, 10469.3, {
+  c('MAT-09-123', PROV_MAX, 10469.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     art: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO',
     sku: '0001015240',
@@ -30820,21 +30820,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     nota: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO · artículo 0001015240 · ref. Tinaco Horizontal | Capacidad 200 galones | Color Negro · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-122', PROV_BELLON, 6325, {
+  c('MAT-09-124', PROV_BELLON, 6325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 215 GL Tinagua TC-225',
     sku: '199708',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 215 GL Tinagua TC-225 · artículo 199708. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-123', PROV_BELLON, 7125, {
+  c('MAT-09-125', PROV_BELLON, 7125, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 250 GL El Valleno Negro',
     sku: '23435',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 250 GL El Valleno Negro · artículo 23435. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-124', PROV_FERREMIX, 8375, {
+  c('MAT-09-126', PROV_FERREMIX, 8375, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     art: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper',
     sku: 'OF0187',
@@ -30842,21 +30842,21 @@
     url: 'https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     nota: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper · artículo OF0187 · ref. 255 GLS · marca Truper y Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-124', PROV_BELLON, 7664, {
+  c('MAT-09-126', PROV_BELLON, 7664, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 255GL Tinagua TC-255',
     sku: '121511',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 255GL Tinagua TC-255 · artículo 121511. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-125', PROV_CIMA, 9555, {
+  c('MAT-09-127', PROV_CIMA, 9555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     art: 'TINACO 265gls NEGRO',
     sku: '040506',
     url: 'https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     nota: 'TINACO 265gls NEGRO · artículo 040506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-125', PROV_MAX, 8585, {
+  c('MAT-09-127', PROV_MAX, 8585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     art: 'TINACO TINACOM 265 GLS',
     sku: '0001012185',
@@ -30864,21 +30864,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     nota: 'TINACO TINACOM 265 GLS · artículo 0001012185 · ref. Tinaco Vertical | Capacidad 265 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-125', PROV_BELLON, 8050, {
+  c('MAT-09-127', PROV_BELLON, 8050, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro',
     sku: '26643',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro · artículo 26643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-126', PROV_BELLON, 8105, {
+  c('MAT-09-128', PROV_BELLON, 8105, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 295 GL Tinagua TC-300',
     sku: '199709',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 295 GL Tinagua TC-300 · artículo 199709. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-127', PROV_MAX, 9660, {
+  c('MAT-09-129', PROV_MAX, 9660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     art: 'TINACO TINACOM 300 GLS',
     sku: '0001047397',
@@ -30886,28 +30886,28 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     nota: 'TINACO TINACOM 300 GLS · artículo 0001047397 · ref. Tinaco Vertical | Capacidad 300 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-127', PROV_BELLON, 10080, {
+  c('MAT-09-129', PROV_BELLON, 10080, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro',
     sku: '48543',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro · artículo 48543. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-127', PROV_BELLON, 7995, {
+  c('MAT-09-129', PROV_BELLON, 7995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GL El Valleno Negro',
     sku: '100747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GL El Valleno Negro · artículo 100747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-128', PROV_BELLON, 9335, {
+  c('MAT-09-130', PROV_BELLON, 9335, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 350 GL El Valleno Negro',
     sku: '120396',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 350 GL El Valleno Negro · artículo 120396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-129', PROV_MAX, 12125, {
+  c('MAT-09-131', PROV_MAX, 12125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     art: 'TINACO TINACOM 400 GLS.',
     sku: '0001013502',
@@ -30915,42 +30915,42 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     nota: 'TINACO TINACOM 400 GLS. · artículo 0001013502 · ref. Tinaco Vertical | Capacidad 400 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-129', PROV_BELLON, 13300, {
+  c('MAT-09-131', PROV_BELLON, 13300, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GLS 2 Capas Tinacom Negro',
     sku: '105219',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GLS  2 Capas Tinacom Negro · artículo 105219. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-129', PROV_BELLON, 13140, {
+  c('MAT-09-131', PROV_BELLON, 13140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GL Tinagua TC-420',
     sku: '199778',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GL Tinagua TC-420 · artículo 199778. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-130', PROV_BELLON, 12940, {
+  c('MAT-09-132', PROV_BELLON, 12940, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 500 GL El Valleno Negro',
     sku: '23433',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 500 GL El Valleno Negro · artículo 23433. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-131', PROV_BELLON, 292790, {
+  c('MAT-09-133', PROV_BELLON, 292790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 5000 GL El Valleno Negro',
     sku: '149801',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 5000 GL El Valleno Negro · artículo 149801. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-132', PROV_CIMA, 18535, {
+  c('MAT-09-134', PROV_CIMA, 18535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     art: 'TINACO 530gls NEGRO',
     sku: '025060',
     url: 'https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     nota: 'TINACO 530gls NEGRO · artículo 025060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-132', PROV_MAX, 15331.46, {
+  c('MAT-09-134', PROV_MAX, 15331.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     art: 'TINACO TINACOM 530 GLS',
     sku: '0001012186',
@@ -30958,84 +30958,84 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     nota: 'TINACO TINACOM 530 GLS · artículo 0001012186 · ref. Tinaco Vertical | Capacidad 530 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-132', PROV_BELLON, 14980, {
+  c('MAT-09-134', PROV_BELLON, 14980, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro',
     sku: '16722',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro · artículo 16722. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-132', PROV_BELLON, 15115, {
+  c('MAT-09-134', PROV_BELLON, 15115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GL Tinagua TC-555',
     sku: '199779',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GL Tinagua TC-555 · artículo 199779. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-133', PROV_BELLON, 15265, {
+  c('MAT-09-135', PROV_BELLON, 15265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 600 GL El Valleno Negro',
     sku: '48561',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 600 GL El Valleno Negro · artículo 48561. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-134', PROV_CIMA, 3313, {
+  c('MAT-09-136', PROV_CIMA, 3313, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     art: 'TAPA CISTERNA ALUMINIO 24 X 24',
     sku: '105040',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-134', PROV_MAX, 3795, {
+  c('MAT-09-136', PROV_MAX, 3795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-24x24',
     art: 'TAPA CISTERNA 24X24',
     sku: '0001124802',
     url: 'https://maxferreteria.com/products/tapa-cisterna-24x24',
     nota: 'TAPA CISTERNA 24X24 · artículo 0001124802 · ref. Tapa de cisterna | Formato 24x24 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-135', PROV_CIMA, 4503, {
+  c('MAT-09-137', PROV_CIMA, 4503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     art: 'TAPA CISTERNA ALUMINIO 30 x 30',
     sku: '065683',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-135', PROV_MAX, 4745, {
+  c('MAT-09-137', PROV_MAX, 4745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-30x30',
     art: 'TAPA CISTERNA 30X30',
     sku: '0001124804',
     url: 'https://maxferreteria.com/products/tapa-cisterna-30x30',
     nota: 'TAPA CISTERNA 30X30 · artículo 0001124804 · ref. Tapa de cisterna | Formato 30x30 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-136', PROV_CIMA, 3995, {
+  c('MAT-09-138', PROV_CIMA, 3995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     art: 'TAPA CISTERNA ALUMINIO 33 X 33',
     sku: '032540',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     nota: 'TAPA CISTERNA ALUMINIO 33 X 33 · artículo 032540. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-137', PROV_CIMA, 295, {
+  c('MAT-09-139', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     art: 'BOYA CISTERNA NARANJA 120mm',
     sku: '090406',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     nota: 'BOYA CISTERNA NARANJA 120mm · artículo 090406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-138', PROV_CIMA, 375, {
+  c('MAT-09-140', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     art: 'BOYA CISTERNA NARANJA 150mm',
     sku: '090405',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     nota: 'BOYA CISTERNA NARANJA 150mm · artículo 090405. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-139', PROV_CIMA, 160, {
+  c('MAT-09-141', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     art: 'BOYA CISTERNA NEGRA/MAMEY 90mm',
     sku: '090407',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     nota: 'BOYA CISTERNA NEGRA/MAMEY 90mm · artículo 090407. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-140', PROV_IBERICA, 4000, {
+  c('MAT-09-142', PROV_IBERICA, 4000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     art: 'Fregadero Sencillo Teka 25×22',
     sku: '001680',
@@ -31043,14 +31043,14 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     nota: 'Fregadero Sencillo Teka 25×22 · artículo 001680 · ref. 25×22 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-141', PROV_CIMA, 1425, {
+  c('MAT-09-143', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     art: 'FREGADERO BAR 2 HOYOS 15X15',
     sku: '7592032002860',
     url: 'https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     nota: 'FREGADERO BAR 2 HOYOS 15X15 · artículo 7592032002860. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-142', PROV_CERARTE, 1795.08, {
+  c('MAT-09-144', PROV_CERARTE, 1795.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31059,7 +31059,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34519 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-142', PROV_CERARTE, 2764.6, {
+  c('MAT-09-144', PROV_CERARTE, 2764.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31068,7 +31068,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34518 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-143', PROV_CERARTE, 2753.38, {
+  c('MAT-09-145', PROV_CERARTE, 2753.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO INVICTA',
@@ -31077,7 +31077,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO INVICTA · artículo CERA-34523 · ref. 47X32X15 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-144', PROV_CERARTE, 16794.81, {
+  c('MAT-09-146', PROV_CERARTE, 16794.81, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 50',
@@ -31086,7 +31086,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 50 · artículo CERA-03261 · ref. 50X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-145', PROV_CERARTE, 4600.63, {
+  c('MAT-09-147', PROV_CERARTE, 4600.63, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31095,7 +31095,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34521 · ref. 56X34X14.5 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-146', PROV_CERARTE, 15492.89, {
+  c('MAT-09-148', PROV_CERARTE, 15492.89, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 1B D/CUARZO',
@@ -31104,7 +31104,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 1B D/CUARZO · artículo CERA-34922 · ref. 60X48X20 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-147', PROV_CERARTE, 18365.37, {
+  c('MAT-09-149', PROV_CERARTE, 18365.37, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 74',
@@ -31113,7 +31113,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 74 · artículo CERA-03262 · ref. 70X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-148', PROV_CERARTE, 23956.99, {
+  c('MAT-09-150', PROV_CERARTE, 23956.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LUX 74',
@@ -31122,7 +31122,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LUX 74 · artículo CERA-03263 · ref. 74X40X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-149', PROV_FERREMIX, 1635, {
+  c('MAT-09-151', PROV_FERREMIX, 1635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     peso: 2,
     art: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga',
@@ -31131,7 +31131,7 @@
     url: 'https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-150', PROV_IBERICA, 74.85, {
+  c('MAT-09-152', PROV_IBERICA, 74.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     art: 'Fregadero Sencillo 20×21 Teka',
     sku: '008929',
@@ -31139,21 +31139,21 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     nota: 'Fregadero Sencillo 20×21 Teka · artículo 008929 · ref. 20×21 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-151', PROV_IBERICA, 5265.16, {
+  c('MAT-09-153', PROV_IBERICA, 5265.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     art: 'Fregadero Sencillo Black 23.5x18x8 1H',
     sku: '018946',
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     nota: 'Fregadero Sencillo Black 23.5x18x8 1H · artículo 018946 · ref. FRE-603B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-152', PROV_CIMA, 3040, {
+  c('MAT-09-154', PROV_CIMA, 3040, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     art: 'FREGADERO SENCILLO C/ESCURRIDO',
     sku: '010795',
     url: 'https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     nota: 'FREGADERO SENCILLO C/ESCURRIDO · artículo 010795. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-153', PROV_CERARTE, 11376, {
+  c('MAT-09-155', PROV_CERARTE, 11376, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -31162,7 +31162,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34524 · ref. 71.5X40X15 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-154', PROV_CERARTE, 18165.28, {
+  c('MAT-09-156', PROV_CERARTE, 18165.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31171,7 +31171,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35549 · ref. 79X45X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-154', PROV_CERARTE, 45252.11, {
+  c('MAT-09-156', PROV_CERARTE, 45252.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B BOX LINE 75',
@@ -31180,7 +31180,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 2B BOX LINE 75 · artículo CERA-03264 · ref. 77.6X46X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-155', PROV_CERARTE, 17852.79, {
+  c('MAT-09-157', PROV_CERARTE, 17852.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31189,7 +31189,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35126 · ref. 80X47X22 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-156', PROV_CERARTE, 5594.18, {
+  c('MAT-09-158', PROV_CERARTE, 5594.18, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO',
@@ -31198,7 +31198,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     nota: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO · artículo CERA-20957 · ref. 800X500 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-156', PROV_CERARTE, 17226.67, {
+  c('MAT-09-158', PROV_CERARTE, 17226.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B OKIO PLUS 80 DUO',
@@ -31207,7 +31207,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     nota: 'FREGADERO 2B OKIO PLUS 80 DUO · artículo CERA-03266 · ref. 80X50X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-157', PROV_CERARTE, 11166.49, {
+  c('MAT-09-159', PROV_CERARTE, 11166.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -31216,14 +31216,14 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34525 · ref. 83.5X34.5X18 4. · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-158', PROV_CIMA, 3285, {
+  c('MAT-09-160', PROV_CIMA, 3285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     art: 'FREGADERO DOBLE 1H 33 X 19 S/E',
     sku: '012486',
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     nota: 'FREGADERO DOBLE 1H 33 X 19 S/E · artículo 012486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-159', PROV_CIMA, 6540, {
+  c('MAT-09-161', PROV_CIMA, 6540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     peso: 2,
     art: 'FREGADERO DOBLE 7 1H 33 x 22',
@@ -31231,14 +31231,14 @@
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-160', PROV_IBERICA, 45860, {
+  c('MAT-09-162', PROV_IBERICA, 45860, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     art: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido',
     sku: '018396',
     url: 'https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     nota: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido · artículo 018396 · ref. 44×86. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-161', PROV_CERARTE, 17194.13, {
+  c('MAT-09-163', PROV_CERARTE, 17194.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31247,7 +31247,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35127 · ref. 86X46X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-162', PROV_CARABELA, 18400, {
+  c('MAT-09-164', PROV_CARABELA, 18400, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     art: 'Fregadero Prime Doble Rectángular 89x39 cm',
     sku: '29581',
@@ -31255,7 +31255,7 @@
     url: 'https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     nota: 'Fregadero Prime Doble Rectángular 89x39 cm · artículo 29581 · marca Carabelatienda. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-163', PROV_FERREMIX, 6665, {
+  c('MAT-09-165', PROV_FERREMIX, 6665, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45061',
@@ -31263,7 +31263,7 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45061 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-163', PROV_FERREMIX, 6680, {
+  c('MAT-09-165', PROV_FERREMIX, 6680, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45060',
@@ -31271,28 +31271,28 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45060 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-164', PROV_CIMA, 256, {
+  c('MAT-09-166', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     art: 'LLAVE BEBEDERO PLAST # 53 AF',
     sku: '7461299795443',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-164', PROV_CIMA, 205, {
+  c('MAT-09-166', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     art: 'LLAVE BEBEDERO PLAS MACHO 5/8',
     sku: '7502217611022',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-164', PROV_CIMA, 213, {
+  c('MAT-09-166', PROV_CIMA, 213, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7502217612012',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-164', PROV_CIMA, 222, {
+  c('MAT-09-166', PROV_CIMA, 222, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7461299795276',
@@ -35637,25 +35637,10 @@
   });
   c('MAT-10-189', PROV_MUNDOLED, 3700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-6500k-100-277v-ip65-jg-cod-1809/',
-    peso: 2,
     art: 'CAMPANA LED UFO 100W 6500K 100-277V IP65 JG COD.1809',
     sku: '1809',
     url: 'https://mundoled.com.do/producto/campana-led-ufo-100w-6500k-100-277v-ip65-jg-cod-1809/',
-    nota: 'CAMPANA LED UFO 100W 6500K 100-277V IP65 JG COD.1809 · artículo 1809. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-189', PROV_MUNDOLED, 1500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-gris-sin-driver-6500k-100-277v-cod-1813/',
-    art: 'CAMPANA LED UFO 100W GRIS SIN DRIVER 6500K 100-277V COD.1813',
-    sku: '1813',
-    url: 'https://mundoled.com.do/producto/campana-led-ufo-100w-gris-sin-driver-6500k-100-277v-cod-1813/',
-    nota: 'CAMPANA LED UFO 100W GRIS SIN DRIVER 6500K 100-277V COD.1813 · artículo 1813. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-189', PROV_MUNDOLED, 5800, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-selector-de-watts-100w-150w-200w-6500k-24h-ip65-cod-1833/',
-    art: 'CAMPANA LED UFO SELECTOR DE WATTS 100W 150W 200W 6500K 24H IP65 COD.1833',
-    sku: '1833',
-    url: 'https://mundoled.com.do/producto/campana-led-ufo-selector-de-watts-100w-150w-200w-6500k-24h-ip65-cod-1833/',
-    nota: 'CAMPANA LED UFO SELECTOR DE WATTS 100W 150W 200W 6500K 24H IP65 COD.1833 · artículo 1833. ' + SUPUESTO_ITBIS
+    nota: 'CAMPANA LED UFO 100W 6500K 100-277V IP65 JG COD.1809 · artículo 1809. ' + SUPUESTO_ITBIS
   });
   c('MAT-10-189', PROV_MUNDOLED, 4625, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-100w-sin-cover-6500k-120-277v-120/',
@@ -35664,56 +35649,77 @@
     url: 'https://mundoled.com.do/producto/campana-ufo-100w-sin-cover-6500k-120-277v-120/',
     nota: 'Campana Ufo 100W Sin Cover 6500K 120/277V 120° · artículo 1807-1 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-189', PROV_MUNDOLED, 14500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-led-canopy-100w-cod-3009/',
-    art: 'LAMPARA LED CANOPY 100W COD.3009',
-    sku: '3009',
-    url: 'https://mundoled.com.do/producto/lampara-led-canopy-100w-cod-3009/',
-    nota: 'LAMPARA LED CANOPY 100W COD.3009 · artículo 3009. ' + SUPUESTO_ITBIS
+  c('MAT-10-190', PROV_MUNDOLED, 1500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-gris-sin-driver-6500k-100-277v-cod-1813/',
+    art: 'CAMPANA LED UFO 100W GRIS SIN DRIVER 6500K 100-277V COD.1813',
+    sku: '1813',
+    url: 'https://mundoled.com.do/producto/campana-led-ufo-100w-gris-sin-driver-6500k-100-277v-cod-1813/',
+    nota: 'CAMPANA LED UFO 100W GRIS SIN DRIVER 6500K 100-277V COD.1813 · artículo 1813. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-190', PROV_MUNDOLED, 5830, {
+  c('MAT-10-191', PROV_MUNDOLED, 5830, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-120-277v/',
     art: 'Campana Ufo 150W Sin Cover 6500K 120* 120/277V',
     sku: '1810',
     url: 'https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-120-277v/',
     nota: 'Campana Ufo 150W Sin Cover 6500K 120* 120/277V · artículo 1810 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-190', PROV_MUNDOLED, 6900, {
+  c('MAT-10-191', PROV_MUNDOLED, 6900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-dimeable-24h-120-277v/',
     art: 'Campana Ufo 150W Sin Cover 6500K 120* DIMEABLE 24H 120/277V',
     sku: '1824',
     url: 'https://mundoled.com.do/producto/campana-ufo-150w-sin-cover-6500k-120-dimeable-24h-120-277v/',
     nota: 'Campana Ufo 150W Sin Cover 6500K 120* DIMEABLE 24H 120/277V · artículo 1824 · ref. CAMPANA UFO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-191', PROV_MUNDOLED, 2500, {
+  c('MAT-10-192', PROV_MUNDOLED, 2500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-200w-gris-sin-driver-6500k-100-277v-cod-1814/',
     art: 'CAMPANA LED UFO 200W GRIS SIN DRIVER 6500K 100-277V COD.1814',
     sku: '1814',
     url: 'https://mundoled.com.do/producto/campana-led-ufo-200w-gris-sin-driver-6500k-100-277v-cod-1814/',
     nota: 'CAMPANA LED UFO 200W GRIS SIN DRIVER 6500K 100-277V COD.1814 · artículo 1814. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_MUNDOLED, 4090, {
+  c('MAT-10-193', PROV_MUNDOLED, 4090, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-50-watt-120v-277v-cod-1808-copy/',
     art: 'Campana Led Ufo 50 Watt 120V-277V Cod-1808 (Copy)',
     sku: '1808-1',
     url: 'https://mundoled.com.do/producto/campana-led-ufo-50-watt-120v-277v-cod-1808-copy/',
     nota: 'Campana Led Ufo 50 Watt 120V-277V Cod-1808 (Copy) · artículo 1808-1. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-192', PROV_MUNDOLED, 4000, {
+  c('MAT-10-193', PROV_MUNDOLED, 4000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-50w-6500k-cod-1808/',
     art: 'CAMPANA LED UFO 50W 6500K Cod-1808',
     sku: '1808',
     url: 'https://mundoled.com.do/producto/campana-led-ufo-50w-6500k-cod-1808/',
     nota: 'CAMPANA LED UFO 50W 6500K Cod-1808 · artículo 1808. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-193', PROV_MUNDOLED, 4500, {
+  c('MAT-10-194', PROV_MUNDOLED, 4500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-60w-6500k-120-277-cod-1802/',
     art: 'CAMPANA LED UFO 60W 6500K 120/277 COD.1802',
     sku: '1808-2-1',
     url: 'https://mundoled.com.do/producto/campana-led-ufo-60w-6500k-120-277-cod-1802/',
     nota: 'CAMPANA LED UFO 60W 6500K 120/277 COD.1802 · artículo 1808-2-1. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_MAX, 465, {
+  c('MAT-10-195', PROV_MUNDOLED, 3700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-100w-6500k-selector-de-watts-60w-80w-100w-6500k-cod-1834/',
+    art: 'CAMPANA LED UFO 100W 6500K SELECTOR DE WATTS 60W 80W 100W 6500K COD.1834',
+    sku: '1834',
+    url: 'https://mundoled.com.do/producto/campana-led-ufo-100w-6500k-selector-de-watts-60w-80w-100w-6500k-cod-1834/',
+    nota: 'CAMPANA LED UFO 100W 6500K SELECTOR DE WATTS 60W 80W 100W 6500K COD.1834 · artículo 1834. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-195', PROV_MUNDOLED, 5800, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/campana-led-ufo-selector-de-watts-100w-150w-200w-6500k-24h-ip65-cod-1833/',
+    art: 'CAMPANA LED UFO SELECTOR DE WATTS 100W 150W 200W 6500K 24H IP65 COD.1833',
+    sku: '1833',
+    url: 'https://mundoled.com.do/producto/campana-led-ufo-selector-de-watts-100w-150w-200w-6500k-24h-ip65-cod-1833/',
+    nota: 'CAMPANA LED UFO SELECTOR DE WATTS 100W 150W 200W 6500K 24H IP65 COD.1833 · artículo 1833. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-196', PROV_MUNDOLED, 14500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-led-canopy-100w-cod-3009/',
+    art: 'LAMPARA LED CANOPY 100W COD.3009',
+    sku: '3009',
+    url: 'https://mundoled.com.do/producto/lampara-led-canopy-100w-cod-3009/',
+    nota: 'LAMPARA LED CANOPY 100W COD.3009 · artículo 3009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-197', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-ngr-61849',
     art: 'TOMA/INTER VETO PLURA NGR 61849',
     sku: '0001127216',
@@ -35721,7 +35727,7 @@
     url: 'https://maxferreteria.com/products/toma-inter-veto-plura-ngr-61849',
     nota: 'TOMA/INTER VETO PLURA NGR 61849 · artículo 0001127216 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-194', PROV_MAX, 535, {
+  c('MAT-10-197', PROV_MAX, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/toma-inter-veto-plura-bco-60767',
     art: 'TOMA/INTER VETO PLURA BCO 60767',
     sku: '0001127215',
@@ -35729,7 +35735,7 @@
     url: 'https://maxferreteria.com/products/toma-inter-veto-plura-bco-60767',
     nota: 'TOMA/INTER VETO PLURA BCO 60767 · artículo 0001127215 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 115, {
+  c('MAT-10-198', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-negro',
     art: 'MATRACA DE 72 DIENTES PL511',
     sku: 'T47892',
@@ -35737,7 +35743,7 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-negro',
     nota: 'MATRACA DE 72 DIENTES PL511 · artículo T47892 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 58, {
+  c('MAT-10-198', PROV_FERREMIX, 58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-1-5-modulo',
     art: 'Interruptor 3 vías acero inox de 1.5 módulo',
     sku: '50257082974512',
@@ -35745,7 +35751,7 @@
     url: 'https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-1-5-modulo',
     nota: 'Interruptor 3 vías acero inox de 1.5 módulo · artículo 50257082974512 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 69, {
+  c('MAT-10-198', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-acero-inox-de-1-modulo',
     art: 'CINCHOS TAIRRA PLASTICO DE 18 LBS TENSION',
     sku: 'T47823',
@@ -35753,7 +35759,7 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-acero-inox-de-1-modulo',
     nota: 'CINCHOS TAIRRA PLASTICO DE 18 LBS TENSION · artículo T47823 · ref. 18 LBS · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 75, {
+  c('MAT-10-198', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-3-modulos-linea-lisboa',
     art: 'CINCHOS TAIRRA PLASTICO 40 LBS TENSION',
     sku: 'T47825',
@@ -35761,7 +35767,7 @@
     url: 'https://ferremix.com.do/products/interruptor-3-vias-acero-inox-de-3-modulos-linea-lisboa',
     nota: 'CINCHOS TAIRRA PLASTICO 40 LBS TENSION · artículo T47825 · ref. 40 LBS · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 55, {
+  c('MAT-10-198', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-blanco-de-1-modulo-linea-lisboa',
     art: 'CINCHO TAIRRA PLASTICO DE ALTA RESISTENCIA Y 120 LB DE TENSION',
     sku: 'T47943',
@@ -35769,7 +35775,7 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-blanco-de-1-modulo-linea-lisboa',
     nota: 'CINCHO TAIRRA PLASTICO DE ALTA RESISTENCIA Y 120 LB DE TENSION · artículo T47943 · ref. 120 LB · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 45, {
+  c('MAT-10-198', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-marfil',
     art: 'LLAVIN PARA BANO',
     sku: 'T27229',
@@ -35777,7 +35783,7 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-marfil',
     nota: 'LLAVIN PARA BANO · artículo T27229 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 135, {
+  c('MAT-10-198', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-con-placa-negro',
     art: 'Interruptor de 3 vas negro lnea talana volteck',
     sku: 'T47600',
@@ -35785,7 +35791,7 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-con-placa-negro',
     nota: 'Interruptor de 3 vas negro lnea talana volteck · artículo T47600 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_FERREMIX, 70, {
+  c('MAT-10-198', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-de-3-vias-tipo-oslo',
     art: 'Interruptor sencllo blanco de 3 vas sn tapa oslo volteck',
     sku: 'T48321',
@@ -35793,147 +35799,147 @@
     url: 'https://ferremix.com.do/products/interruptor-de-3-vias-tipo-oslo',
     nota: 'Interruptor sencllo blanco de 3 vas sn tapa oslo volteck · artículo T48321 · ref. T48321 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 14.74, {
+  c('MAT-10-198', PROV_BELLON, 14.74, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3 Way Conatel Marfil 5614',
     sku: '19514',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3 Way Conatel Marfil 5614 · artículo 19514. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 176.78, {
+  c('MAT-10-198', PROV_BELLON, 176.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Modus Marfil AE2101EM',
     sku: '136416',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Modus Marfil AE2101EM · artículo 136416. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 168.68, {
+  c('MAT-10-198', PROV_BELLON, 168.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Modus Blanco AE2101EB',
     sku: '136417',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Modus Blanco AE2101EB · artículo 136417. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 555, {
+  c('MAT-10-198', PROV_BELLON, 555, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Leviton Decora Blanco S12-5603-2W',
     sku: '153257',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Leviton Decora Blanco S12-5603-2W · artículo 153257. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 188.1, {
+  c('MAT-10-198', PROV_BELLON, 188.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Matix Blanco AM5003',
     sku: '161404',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Matix Blanco AM5003 · artículo 161404. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 386, {
+  c('MAT-10-198', PROV_BELLON, 386, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3 Way Leviton Decora Light Almond 5603-2TS',
     sku: '195674',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3 Way Leviton Decora Light Almond 5603-2TS · artículo 195674. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 230, {
+  c('MAT-10-198', PROV_BELLON, 230, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Con Placa Leviton Cien Blanco INVPL-BLA',
     sku: '205908',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Con Placa Leviton Cien Blanco INVPL-BLA · artículo 205908. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 159, {
+  c('MAT-10-198', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3 Way Con Placa Leviton Cien Marfil INVPL-MAR',
     sku: '205928',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3 Way Con Placa Leviton Cien Marfil INVPL-MAR · artículo 205928. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 447, {
+  c('MAT-10-198', PROV_BELLON, 447, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Blanco INT3V-BLA',
     sku: '209338',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Blanco INT3V-BLA · artículo 209338. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 349, {
+  c('MAT-10-198', PROV_BELLON, 349, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Marfil INT3V-MAR',
     sku: '209339',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Con Uno 3 Way Placa Leviton Cien Marfil INT3V-MAR · artículo 209339. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 476.79, {
+  c('MAT-10-198', PROV_BELLON, 476.79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3 Way Con Tomacorriente Universal Bticino Domino Blanco AP5326',
     sku: '212520',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3 Way Con Tomacorriente Universal Bticino Domino Blanco AP5326 · artículo 212520. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 67, {
+  c('MAT-10-198', PROV_BELLON, 67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3Way Sencillo Maximus Blanco',
     sku: '221980',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Sencillo Maximus  Blanco · artículo 221980. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 73, {
+  c('MAT-10-198', PROV_BELLON, 73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3Way Sencillo Maximus Marfil PBK-C005M',
     sku: '221981',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Sencillo Maximus Marfil PBK-C005M · artículo 221981. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 264.67, {
+  c('MAT-10-198', PROV_BELLON, 264.67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Nobile Blanco AF2101EB',
     sku: '226679',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Blanco AF2101EB · artículo 226679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 194.34, {
+  c('MAT-10-198', PROV_BELLON, 194.34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Nobile Marfil AF2101EM',
     sku: '226680',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Marfil AF2101EM · artículo 226680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 240, {
+  c('MAT-10-198', PROV_BELLON, 240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Nobile Champagne AF2101EBCH',
     sku: '226681',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Champagne AF2101EBCH · artículo 226681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 269.11, {
+  c('MAT-10-198', PROV_BELLON, 269.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way Bticino Nobile Negro AF2101EANG',
     sku: '226682',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way Bticino Nobile Negro AF2101EANG · artículo 226682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 143, {
+  c('MAT-10-198', PROV_BELLON, 143, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way',
     sku: '229203',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way · artículo 229203. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 262, {
+  c('MAT-10-198', PROV_BELLON, 262, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Acero Inoxidable INTR3-L13-13S',
     sku: '234243',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Acero Inoxidable INTR3-L13-13S · artículo 234243. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 272, {
+  c('MAT-10-198', PROV_BELLON, 272, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L23-12S',
     sku: '234244',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L23-12S · artículo 234244. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 270, {
+  c('MAT-10-198', PROV_BELLON, 270, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Acero Inoxidable INTR3-L33-33S',
@@ -35941,35 +35947,35 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Acero Inoxidable INTR3-L33-33S · artículo 234245. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 202, {
+  c('MAT-10-198', PROV_BELLON, 202, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Negro INTR3-L12-13N',
     sku: '234254',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Negro INTR3-L12-13N · artículo 234254. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 259, {
+  c('MAT-10-198', PROV_BELLON, 259, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Negro INTR3-L22-12N',
     sku: '234255',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Negro INTR3-L22-12N · artículo 234255. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 263, {
+  c('MAT-10-198', PROV_BELLON, 263, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Negro INTR3-L32-33N',
     sku: '234256',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way 3/3 Leviton Stalo Negro INTR3-L32-33N · artículo 234256. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 237, {
+  c('MAT-10-198', PROV_BELLON, 237, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Blanco INTR3-L10-13B',
     sku: '234281',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way 1/3 Leviton Stalo Blanco INTR3-L10-13B · artículo 234281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 260, {
+  c('MAT-10-198', PROV_BELLON, 260, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Blanco INTR3-L20-12B',
@@ -35977,14 +35983,14 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3 Way ½ Leviton Stalo Blanco INTR3-L20-12B · artículo 234282. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 407, {
+  c('MAT-10-198', PROV_BELLON, 407, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3 Way Leviton Decora Negro 5603-2E',
     sku: '238611',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3 Way Leviton Decora Negro 5603-2E · artículo 238611. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 72, {
+  c('MAT-10-198', PROV_BELLON, 72, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor 3Way Sencillo Maximus Negro PBK-C005N',
@@ -35992,7 +35998,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Sencillo Maximus Negro PBK-C005N · artículo 241300. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 142, {
+  c('MAT-10-198', PROV_BELLON, 142, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Sencillo 3Way 110V Enerlite Negro E-I400A-BK-2',
@@ -36000,14 +36006,14 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3Way 110V Enerlite Negro E-I400A-BK-2 · artículo 241702. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-195', PROV_BELLON, 155, {
+  c('MAT-10-198', PROV_BELLON, 155, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3Way 110V Enerlite Aluminio E-I400A-SS-2',
     sku: '241705',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3Way 110V Enerlite Aluminio E-I400A-SS-2 · artículo 241705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 565, {
+  c('MAT-10-199', PROV_MAX, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61900-3way',
     art: 'INTER DOBLE VETO PLURA NGR 61900 3WAY',
     sku: '0001127228',
@@ -36015,7 +36021,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61900-3way',
     nota: 'INTER DOBLE VETO PLURA NGR 61900 3WAY · artículo 0001127228 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 420, {
+  c('MAT-10-199', PROV_MAX, 420, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-3way-veto-plura-ngr-61832',
     art: 'INTERUPTOR 3WAY VETO PLURA NGR 61832',
     sku: '0001127226',
@@ -36023,7 +36029,7 @@
     url: 'https://maxferreteria.com/products/interuptor-3way-veto-plura-ngr-61832',
     nota: 'INTERUPTOR 3WAY VETO PLURA NGR 61832 · artículo 0001127226 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 675, {
+  c('MAT-10-199', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-ngr-61856',
     art: 'INTER TRIPLE 3WAY VETO PLURA NGR 61856',
     sku: '0001127200',
@@ -36031,7 +36037,7 @@
     url: 'https://maxferreteria.com/products/inter-triple-3way-veto-plura-ngr-61856',
     nota: 'INTER TRIPLE 3WAY VETO PLURA NGR 61856 · artículo 0001127200 · ref. Conmutable 3 vias | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 685, {
+  c('MAT-10-199', PROV_MAX, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-3way-veto-plura-bco-60798',
     art: 'INTER TRIPLE 3WAY VETO PLURA BCO 60798',
     sku: '0001127199',
@@ -36039,7 +36045,7 @@
     url: 'https://maxferreteria.com/products/inter-triple-3way-veto-plura-bco-60798',
     nota: 'INTER TRIPLE 3WAY VETO PLURA BCO 60798 · artículo 0001127199 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 395, {
+  c('MAT-10-199', PROV_MAX, 395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-3way-veto-premiun-bco-29146',
     art: 'INTER DOBLE 3WAY VETO PREMIUN BCO 29146',
     sku: '0001123894',
@@ -36047,7 +36053,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-3way-veto-premiun-bco-29146',
     nota: 'INTER DOBLE 3WAY VETO PREMIUN BCO 29146 · artículo 0001123894 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-196', PROV_MAX, 520, {
+  c('MAT-10-199', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-3way-doble-veto-plura-bco-60781',
     art: 'INTER 3WAY DOBLE VETO PLURA BCO 60781',
     sku: '0001117207',
@@ -36055,7 +36061,7 @@
     url: 'https://maxferreteria.com/products/inter-3way-doble-veto-plura-bco-60781',
     nota: 'INTER 3WAY DOBLE VETO PLURA BCO 60781 · artículo 0001117207 · ref. Conmutable 3 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-197', PROV_MAX, 544.99, {
+  c('MAT-10-200', PROV_MAX, 544.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-4way-veto-plura-bco-60804',
     art: 'INTER 4WAY VETO PLURA BCO 60804',
     sku: '0001127202',
@@ -36063,7 +36069,7 @@
     url: 'https://maxferreteria.com/products/inter-4way-veto-plura-bco-60804',
     nota: 'INTER 4WAY VETO PLURA BCO 60804 · artículo 0001127202 · ref. Conmutable 4 vias | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-197', PROV_MAX, 390, {
+  c('MAT-10-200', PROV_MAX, 390, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-4way-veto-premiun-16146',
     art: 'INTERUPTOR 4WAY VETO PREMIUN 16146',
     sku: '0001123895',
@@ -36071,7 +36077,7 @@
     url: 'https://maxferreteria.com/products/interuptor-4way-veto-premiun-16146',
     nota: 'INTERUPTOR 4WAY VETO PREMIUN 16146 · artículo 0001123895 · ref. Conmutable 4 vias · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-198', PROV_MAX, 1265, {
+  c('MAT-10-201', PROV_MAX, 1265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimmer-rotat-300w-120v-btn-matix-am4406',
     art: 'DIMMER ROTAT. 300W 120V BTN MATIX AM4406',
     sku: '0001020785',
@@ -36079,7 +36085,7 @@
     url: 'https://maxferreteria.com/products/dimmer-rotat-300w-120v-btn-matix-am4406',
     nota: 'DIMMER ROTAT. 300W 120V BTN MATIX AM4406 · artículo 0001020785 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-198', PROV_MAX, 960, {
+  c('MAT-10-201', PROV_MAX, 960, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/dimer-veto-plura-ngr-61955',
     art: 'DIMER VETO PLURA NGR 61955',
     sku: '0001127184',
@@ -36087,7 +36093,7 @@
     url: 'https://maxferreteria.com/products/dimer-veto-plura-ngr-61955',
     nota: 'DIMER VETO PLURA NGR 61955 · artículo 0001127184 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 205, {
+  c('MAT-10-202', PROV_MAX, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/int-doble-b-ancho-c-lp-plata-bco-36991',
     art: 'INT DOBLE B/ANCHO C/LP PLATA BCO 36991',
     sku: '0001127234',
@@ -36095,7 +36101,7 @@
     url: 'https://maxferreteria.com/products/int-doble-b-ancho-c-lp-plata-bco-36991',
     nota: 'INT DOBLE B/ANCHO C/LP PLATA BCO 36991 · artículo 0001127234 · ref. Color PLATA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 4320, {
+  c('MAT-10-202', PROV_MAX, 4320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-ngr-60996',
     art: 'INTER DOBLE VETO PLURA SMART NGR 60996',
     sku: '0001127186',
@@ -36103,7 +36109,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-veto-plura-smart-ngr-60996',
     nota: 'INTER DOBLE VETO PLURA SMART NGR 60996 · artículo 0001127186 · ref. Version smart (domotica) | Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 4515, {
+  c('MAT-10-202', PROV_MAX, 4515, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-smart-bco-60989',
     art: 'INTER DOBLE VETO PLURA SMART BCO 60989',
     sku: '0001127185',
@@ -36111,7 +36117,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-veto-plura-smart-bco-60989',
     nota: 'INTER DOBLE VETO PLURA SMART BCO 60989 · artículo 0001127185 · ref. Version smart (domotica) | Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 460, {
+  c('MAT-10-202', PROV_MAX, 460, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-bco-60736',
     art: 'INTER DOBLE VETO PLURA BCO 60736',
     sku: '0001123893',
@@ -36119,7 +36125,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-veto-plura-bco-60736',
     nota: 'INTER DOBLE VETO PLURA BCO 60736 · artículo 0001123893 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 165, {
+  c('MAT-10-202', PROV_MAX, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-crema-c-l-35130',
     art: 'INTERR VETO DOBLE CREMA C/L 35130',
     sku: '0001118626',
@@ -36127,7 +36133,7 @@
     url: 'https://maxferreteria.com/products/interr-veto-doble-crema-c-l-35130',
     nota: 'INTERR VETO DOBLE CREMA C/L 35130 · artículo 0001118626 · ref. Color CREMA · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 150, {
+  c('MAT-10-202', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-doble-veto-blanco-90139',
     art: 'INTERRUPTOR DOBLE VETO BLANCO 90139',
     sku: '0001118617',
@@ -36135,7 +36141,7 @@
     url: 'https://maxferreteria.com/products/interruptor-doble-veto-blanco-90139',
     nota: 'INTERRUPTOR DOBLE VETO BLANCO 90139 · artículo 0001118617 · ref. Color BLANCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 145, {
+  c('MAT-10-202', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interr-veto-doble-bco-c-l-35123',
     art: 'INTERR VETO DOBLE BCO C/L 35123',
     sku: '0001118625',
@@ -36143,7 +36149,7 @@
     url: 'https://maxferreteria.com/products/interr-veto-doble-bco-c-l-35123',
     nota: 'INTERR VETO DOBLE BCO C/L 35123 · artículo 0001118625 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_MAX, 475, {
+  c('MAT-10-202', PROV_MAX, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61818',
     art: 'INTER DOBLE VETO PLURA NGR 61818',
     sku: '0001127189',
@@ -36151,7 +36157,7 @@
     url: 'https://maxferreteria.com/products/inter-doble-veto-plura-ngr-61818',
     nota: 'INTER DOBLE VETO PLURA NGR 61818 · artículo 0001127189 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 190, {
+  c('MAT-10-202', PROV_FERREMIX, 190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-blanco-1',
     peso: 2,
     art: 'CERRADURA DE POMO LA ENTRADA TABULAR',
@@ -36160,7 +36166,7 @@
     url: 'https://ferremix.com.do/products/interruptor-tomacorriente-doble-blanco-1',
     nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47968 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 189, {
+  c('MAT-10-202', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-blanco-1',
     peso: 2,
     art: 'CERRADURA DE POMO LA ENTRADA TABULAR',
@@ -36169,7 +36175,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-tomacorriente-blanco-1',
     nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47967 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 145, {
+  c('MAT-10-202', PROV_FERREMIX, 145, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-34mm-blanco',
     peso: 2,
     art: 'CERRADURA DE POMO LA ENTRADA TABULAR',
@@ -36178,7 +36184,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-34mm-blanco',
     nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47960 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 230, {
+  c('MAT-10-202', PROV_FERREMIX, 230, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-negro',
     art: 'EXTENSION ELECTRICA DOMESTICA BLANCA',
     sku: 'T47901',
@@ -36186,7 +36192,7 @@
     url: 'https://ferremix.com.do/products/interruptor-tomacorriente-doble-negro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47901 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 225, {
+  c('MAT-10-202', PROV_FERREMIX, 225, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-bnegro',
     art: 'EXTENSION ELECTRICA DOMESTICA BLANCA',
     sku: 'T47900',
@@ -36194,7 +36200,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-tomacorriente-bnegro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47900 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 139, {
+  c('MAT-10-202', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro-1',
     peso: 2,
     art: 'MALETIN PORTAHERRAMIENTAS',
@@ -36203,7 +36209,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-negro-1',
     nota: 'MALETIN PORTAHERRAMIENTAS · artículo T47887 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 289, {
+  c('MAT-10-202', PROV_FERREMIX, 289, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-acero-inox-linea-espanola-volteck',
     art: 'TOPE DE PERNO DE BISAGRA PARA PUERTA',
     sku: 'T47848',
@@ -36211,7 +36217,7 @@
     url: 'https://ferremix.com.do/products/interruptor-tomacorriente-doble-acero-inox-linea-espanola-volteck',
     nota: 'TOPE DE PERNO DE BISAGRA PARA PUERTA · artículo T47848 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 340, {
+  c('MAT-10-202', PROV_FERREMIX, 340, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-acero-inox',
     art: 'PALOMETA CON GANCHO REFORZADA',
     sku: 'T47847',
@@ -36219,7 +36225,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-tomacorriente-acero-inox',
     nota: 'PALOMETA CON GANCHO REFORZADA · artículo T47847 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 45, {
+  c('MAT-10-202', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-sin-tapa',
     art: 'BISAGRA DOBLE ACCION 3',
     sku: 'T27109',
@@ -36227,7 +36233,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-sin-tapa',
     nota: 'BISAGRA DOBLE ACCION 3 · artículo T27109 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 120, {
+  c('MAT-10-202', PROV_FERREMIX, 120, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-oslo',
     peso: 2,
     art: 'BISAGRA DOBLE ACCION 3',
@@ -36236,7 +36242,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-blanco-oslo',
     nota: 'BISAGRA DOBLE ACCION 3 · artículo T46493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 55, {
+  c('MAT-10-202', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-23mm-linea-espanola',
     art: 'CERRADURA ENTRADA DOBLE POMO JALADERA',
     sku: 'T47045',
@@ -36244,7 +36250,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-23mm-linea-espanola',
     nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47045 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 65, {
+  c('MAT-10-202', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-sin-tapa-blanco-35mm-linea-espanola',
     art: 'CERRADURA ENTRADA DOBLE POMO JALADERA',
     sku: 'T47049',
@@ -36252,7 +36258,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-sin-tapa-blanco-35mm-linea-espanola',
     nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47049 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 60, {
+  c('MAT-10-202', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-70mm',
     peso: 3,
     art: 'CERRADURA ENTRADA DOBLE POMO JALADERA',
@@ -36261,7 +36267,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-70mm',
     nota: 'CERRADURA ENTRADA DOBLE POMO JALADERA · artículo T47990 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 165, {
+  c('MAT-10-202', PROV_FERREMIX, 165, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-negro',
     art: 'COMBO CERRADURAS LLAVE MARIPOSA',
     sku: 'T47597',
@@ -36269,7 +36275,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-negro',
     nota: 'COMBO CERRADURAS LLAVE MARIPOSA · artículo T47597 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 159, {
+  c('MAT-10-202', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-crema-linea-estandar',
     art: 'CERROJO TIPO MARIPOSA',
     sku: 'T48492',
@@ -36277,7 +36283,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-crema-linea-estandar',
     nota: 'CERROJO TIPO MARIPOSA · artículo T48492 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 239, {
+  c('MAT-10-202', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-tomacorriente-creama-linea-italiana',
     peso: 2,
     art: 'CANDADO DE LATON PULIDO',
@@ -36286,7 +36292,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-tomacorriente-creama-linea-italiana',
     nota: 'CANDADO DE LATON PULIDO · artículo T48667 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 235, {
+  c('MAT-10-202', PROV_FERREMIX, 235, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-negro-linea',
     art: 'CERROJO LLAVE LLAVE',
     sku: 'T47596',
@@ -36294,7 +36300,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-negro-linea',
     nota: 'CERROJO LLAVE LLAVE · artículo T47596 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 205, {
+  c('MAT-10-202', PROV_FERREMIX, 205, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-crema-linea',
     art: 'CERROJO LLAVE LLAVE',
     sku: 'T48665',
@@ -36302,7 +36308,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-1-de-3-vias-crema-linea',
     nota: 'CERROJO LLAVE LLAVE · artículo T48665 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 215, {
+  c('MAT-10-202', PROV_FERREMIX, 215, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-tomacorriente-doble-crema-linea-italiana',
     art: 'LLAVIN PARA ENTRADA',
     sku: 'T48668',
@@ -36310,7 +36316,7 @@
     url: 'https://ferremix.com.do/products/interruptor-tomacorriente-doble-crema-linea-italiana',
     nota: 'LLAVIN PARA ENTRADA · artículo T48668 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 75, {
+  c('MAT-10-202', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-con-tapa-ivory',
     art: 'Interruptor doble c/tapa vory ez*',
     sku: '8936',
@@ -36318,7 +36324,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-con-tapa-ivory',
     nota: 'Interruptor doble c/tapa vory ez* · artículo 8936 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 429, {
+  c('MAT-10-202', PROV_FERREMIX, 429, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-blanco-5243-i',
     art: 'Interruptor doble blanco 5243-w blanco levton',
     sku: '25983',
@@ -36326,7 +36332,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-3way-blanco-5243-i',
     nota: 'Interruptor doble blanco 5243-w blanco levton · artículo 25983 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 416, {
+  c('MAT-10-202', PROV_FERREMIX, 416, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-3way-crema-5243-i',
     art: 'Interruptor 3way doble crema 5243- levton',
     sku: '25984',
@@ -36334,7 +36340,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-3way-crema-5243-i',
     nota: 'Interruptor 3way doble crema 5243- levton · artículo 25984 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 365, {
+  c('MAT-10-202', PROV_FERREMIX, 365, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-blanco-5224-2w',
     peso: 2,
     art: 'interruptor doble blanco 5224 2w',
@@ -36343,7 +36349,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-blanco-5224-2w',
     nota: 'interruptor doble blanco 5224 2w · artículo 25986 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 129, {
+  c('MAT-10-202', PROV_FERREMIX, 129, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble-linea-standard',
     art: 'Interruptor doble crema sn tapa lnea estandar volteck',
     sku: 'T46002',
@@ -36351,7 +36357,7 @@
     url: 'https://ferremix.com.do/products/interruptor-doble-linea-standard',
     nota: 'Interruptor doble crema sn tapa lnea estandar volteck · artículo T46002 · ref. T46002 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_FERREMIX, 175, {
+  c('MAT-10-202', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-doble',
     art: 'Interruptor doble blanco sn tapa lnea classc volteck',
     sku: 'T46006',
@@ -36359,63 +36365,63 @@
     url: 'https://ferremix.com.do/products/interruptor-doble',
     nota: 'Interruptor doble blanco sn tapa lnea classc volteck · artículo T46006 · ref. T46006 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 369.94, {
+  c('MAT-10-202', PROV_BELLON, 369.94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3 Way Bticino Modus Marfil AE2201EM',
     sku: '136409',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way Bticino Modus Marfil AE2201EM · artículo 136409. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 226.63, {
+  c('MAT-10-202', PROV_BELLON, 226.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Modus Marfil 1200MAB AE2200EM',
     sku: '136411',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Modus Marfil 1200MAB AE2200EM · artículo 136411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 216.41, {
+  c('MAT-10-202', PROV_BELLON, 216.41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Modus Blanco AE2200EB',
     sku: '136412',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Modus Blanco AE2200EB · artículo 136412. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 981, {
+  c('MAT-10-202', PROV_BELLON, 981, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3Way Leviton Decora Blanco 5643-W',
     sku: '153249',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3Way Leviton Decora Blanco 5643-W · artículo 153249. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 533, {
+  c('MAT-10-202', PROV_BELLON, 533, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3Way Leviton Decora Marfil 5643-I',
     sku: '153250',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3Way Leviton Decora Marfil 5643-I · artículo 153250. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 788, {
+  c('MAT-10-202', PROV_BELLON, 788, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Leviton Decora Blanco R62-5634-WS',
     sku: '153251',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Leviton Decora Blanco R62-5634-WS · artículo 153251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 752, {
+  c('MAT-10-202', PROV_BELLON, 752, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Leviton Decora Marfil 5634-I',
     sku: '153252',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Leviton Decora Marfil 5634-I · artículo 153252. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 892, {
+  c('MAT-10-202', PROV_BELLON, 892, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Leviton Decora Light Almond R66/S06-5634-TS',
     sku: '195681',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Leviton Decora Light Almond R66/S06-5634-TS · artículo 195681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 910, {
+  c('MAT-10-202', PROV_BELLON, 910, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Doble 3 Vía Leviton Decora Almond 5643-T',
@@ -36423,7 +36429,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Vía Leviton Decora Almond 5643-T · artículo 200664. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 269, {
+  c('MAT-10-202', PROV_BELLON, 269, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Doble Con Placa Leviton Cien Blanco IN2PL-BLA',
@@ -36431,35 +36437,35 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Con Placa Leviton Cien Blanco IN2PL-BLA · artículo 205905. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 602, {
+  c('MAT-10-202', PROV_BELLON, 602, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Blanco 2IN3V-BL',
     sku: '209336',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Blanco 2IN3V-BL · artículo 209336. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 482, {
+  c('MAT-10-202', PROV_BELLON, 482, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Marfil 2IN3V-MA',
     sku: '209337',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Con Uno 3 Way Placa Leviton Cien Marfil 2IN3V-MA · artículo 209337. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 465.57, {
+  c('MAT-10-202', PROV_BELLON, 465.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Con Uno 3 Way Bticino Domino Blanco AP5303',
     sku: '212551',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Con Uno 3 Way Bticino Domino Blanco AP5303 · artículo 212551. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 95, {
+  c('MAT-10-202', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Maximus Blanco PBK-C006B',
     sku: '221883',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Maximus Blanco PBK-C006B · artículo 221883. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 86, {
+  c('MAT-10-202', PROV_BELLON, 86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     art: 'Interruptor Doble Maximus Marfil PBK-C006M',
@@ -36467,77 +36473,77 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Maximus Marfil PBK-C006M · artículo 221884. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 114, {
+  c('MAT-10-202', PROV_BELLON, 114, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3Way Doble Maximus Blanco',
     sku: '221982',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Doble Maximus  Blanco · artículo 221982. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 113, {
+  c('MAT-10-202', PROV_BELLON, 113, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3Way Doble Maximus Marfil',
     sku: '221983',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Doble Maximus  Marfil · artículo 221983. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 339.32, {
+  c('MAT-10-202', PROV_BELLON, 339.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Nobile Blanco AF2200EB',
     sku: '226683',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Nobile Blanco AF2200EB · artículo 226683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 220.36, {
+  c('MAT-10-202', PROV_BELLON, 220.36, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Nobile Marfil AF2200EM',
     sku: '226684',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Nobile Marfil AF2200EM · artículo 226684. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 310.48, {
+  c('MAT-10-202', PROV_BELLON, 310.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Nobile Champagne AF2200EBCH',
     sku: '226685',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Nobile Champagne AF2200EBCH · artículo 226685. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 339.24, {
+  c('MAT-10-202', PROV_BELLON, 339.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Bticino Nobile Negro AF2200EANG',
     sku: '226686',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Bticino Nobile Negro AF2200EANG · artículo 226686. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 540, {
+  c('MAT-10-202', PROV_BELLON, 540, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3 Way Bticino Nobile Blanco AF2201EB',
     sku: '233679',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Blanco AF2201EB · artículo 233679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 422.76, {
+  c('MAT-10-202', PROV_BELLON, 422.76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3 Way Bticino Nobile Marfil AF2201EM',
     sku: '233680',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Marfil AF2201EM · artículo 233680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 315, {
+  c('MAT-10-202', PROV_BELLON, 315, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3 Way Bticino Nobile Champagne AF2201EBCH',
     sku: '233681',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Champagne AF2201EBCH · artículo 233681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 497.91, {
+  c('MAT-10-202', PROV_BELLON, 497.91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3 Way Bticino Nobile Negro AF2201EANG',
     sku: '233682',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way Bticino Nobile Negro AF2201EANG · artículo 233682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 483, {
+  c('MAT-10-202', PROV_BELLON, 483, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Doble ½ Leviton Stalo Acero Inoxidable INTER-L43-0DS',
@@ -36545,7 +36551,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble ½ Leviton Stalo Acero Inoxidable INTER-L43-0DS · artículo 234242. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 464, {
+  c('MAT-10-202', PROV_BELLON, 464, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Doble 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L43-0DS',
@@ -36553,35 +36559,35 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3 Way ½ Leviton Stalo Acero Inoxidable INTR3-L43-0DS · artículo 234246. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 440, {
+  c('MAT-10-202', PROV_BELLON, 440, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble ½ Leviton Stalo Blanco INTER-L40-D2B',
     sku: '234280',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble ½ Leviton Stalo Blanco INTER-L40-D2B · artículo 234280. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 514, {
+  c('MAT-10-202', PROV_BELLON, 514, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble ½ Leviton Stalo Blanco INTR3-L40-D2B',
     sku: '234284',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble ½ Leviton Stalo Blanco INTR3-L40-D2B · artículo 234284. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 735, {
+  c('MAT-10-202', PROV_BELLON, 735, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Leviton Decora Negro 5634-E',
     sku: '238609',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Leviton Decora Negro 5634-E · artículo 238609. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 91.12, {
+  c('MAT-10-202', PROV_BELLON, 91.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble Dyllu Blanco DTSWB921A',
     sku: '240350',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble Dyllu Blanco DTSWB921A · artículo 240350. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 102, {
+  c('MAT-10-202', PROV_BELLON, 102, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor 3Way Doble Maximus Negro PBK-C006N',
@@ -36589,7 +36595,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Doble Maximus Negro PBK-C006N · artículo 241302. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 186, {
+  c('MAT-10-202', PROV_BELLON, 186, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     art: 'Interruptor Doble 3Way 110V Enerlite Blanco E-I400D-WH2',
@@ -36597,14 +36603,14 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3Way 110V Enerlite Blanco E-I400D-WH2 · artículo 241706. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-199', PROV_BELLON, 203, {
+  c('MAT-10-202', PROV_BELLON, 203, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Doble 3Way 110V Enerlite Aluminio E-I400D-SS-2',
     sku: '241710',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Doble 3Way 110V Enerlite Aluminio E-I400D-SS-2 · artículo 241710. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 99, {
+  c('MAT-10-203', PROV_FERREMIX, 99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-68mm-blanco',
     peso: 3,
     art: 'CERRADURA DE POMO LA ENTRADA TABULAR',
@@ -36613,7 +36619,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-68mm-blanco',
     nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47962 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 145, {
+  c('MAT-10-203', PROV_FERREMIX, 145, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-35mm-blanco',
     peso: 2,
     art: 'CERRADURA DE POMO LA ENTRADA TABULAR',
@@ -36622,7 +36628,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-35mm-blanco',
     nota: 'CERRADURA DE POMO LA ENTRADA TABULAR · artículo T47961 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 155, {
+  c('MAT-10-203', PROV_FERREMIX, 155, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco-1',
     art: 'PATA PARA SOFA Y MUEBLE',
     sku: 'T47955',
@@ -36630,7 +36636,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco-1',
     nota: 'PATA PARA SOFA Y MUEBLE · artículo T47955 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 59, {
+  c('MAT-10-203', PROV_FERREMIX, 59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-timbre-blanco-sin-tapa',
     peso: 5,
     art: 'ALAMBRE ESTANDAR ROLLO DE 500M',
@@ -36639,7 +36645,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-timbre-blanco-sin-tapa',
     nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47946 · ref. ROLLO · marca Volteck. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 50, {
+  c('MAT-10-203', PROV_FERREMIX, 50, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-70mm',
     peso: 9,
     art: 'ALAMBRE ESTANDAR ROLLO DE 500M',
@@ -36648,7 +36654,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-70mm',
     nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47942 · ref. ROLLO · marca Volteck. El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 49, {
+  c('MAT-10-203', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-1',
     peso: 2,
     art: 'ALAMBRE ESTANDAR ROLLO DE 500M',
@@ -36657,7 +36663,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa-1',
     nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47940 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 115, {
+  c('MAT-10-203', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro',
     peso: 2,
     art: 'BARRENA TIPO HILLTIN PARA CONCRETO',
@@ -36666,7 +36672,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-negro',
     nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47891 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 150, {
+  c('MAT-10-203', PROV_FERREMIX, 150, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-lisboa-volteck',
     peso: 2,
     art: 'CAJA PARA HERRAMIENTAS PL501',
@@ -36675,7 +36681,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-lisboa-volteck',
     nota: 'CAJA PARA HERRAMIENTAS PL501 · artículo T47888 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 55, {
+  c('MAT-10-203', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-23mm',
     peso: 4,
     art: 'PALOMETA',
@@ -36684,7 +36690,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-3-vias-negro-sin-tapa-23mm',
     nota: 'PALOMETA · artículo T47876 · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 48, {
+  c('MAT-10-203', PROV_FERREMIX, 48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-1-modulo',
     art: 'Interruptor sencillo acero inox de 1 módulo',
     sku: '50257073209648',
@@ -36692,7 +36698,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-1-modulo',
     nota: 'Interruptor sencillo acero inox de 1 módulo · artículo 50257073209648 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 69, {
+  c('MAT-10-203', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-3-modulos-linea-lisboa',
     peso: 3,
     art: 'CINCHOS TAIRRA PLASTICO PARA 50 LBS TENSION',
@@ -36701,7 +36707,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-acero-inox-de-3-modulos-linea-lisboa',
     nota: 'CINCHOS TAIRRA PLASTICO PARA 50 LBS TENSION · artículo T47822 · ref. 50 LBS · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 39, {
+  c('MAT-10-203', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil-linea-volteck',
     peso: 3,
     art: 'TOPE TIPO CODO',
@@ -36710,7 +36716,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-marfil-linea-volteck',
     nota: 'TOPE TIPO CODO · artículo T27228 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 159, {
+  c('MAT-10-203', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-contacto-duplex',
     peso: 2,
     art: 'PORTACANDADO',
@@ -36719,7 +36725,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-contacto-duplex',
     nota: 'PORTACANDADO · artículo T26633 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 125, {
+  c('MAT-10-203', PROV_FERREMIX, 125, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-y-de-3-vias',
     art: 'MIRILLA DE SEGURIDAD',
     sku: 'T26639',
@@ -36727,7 +36733,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-y-de-3-vias',
     nota: 'MIRILLA DE SEGURIDAD · artículo T26639 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 120, {
+  c('MAT-10-203', PROV_FERREMIX, 120, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-negro-linea-italiana',
     peso: 2,
     art: 'CANDADO DE ACERO 109MM',
@@ -36736,7 +36742,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-negro-linea-italiana',
     nota: 'CANDADO DE ACERO 109MM · artículo T47599 · ref. 109 MM · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 79, {
+  c('MAT-10-203', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-marfil',
     art: 'CANDADO ANTI CIZALLA 75MM',
     sku: 'T26642',
@@ -36744,7 +36750,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-marfil',
     nota: 'CANDADO ANTI CIZALLA 75MM · artículo T26642 · ref. 75 MM · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 105, {
+  c('MAT-10-203', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-duplex-con-placa',
     art: 'CANDO REDONDO GANCHO LARGO Y CORTO',
     sku: 'T25080',
@@ -36752,7 +36758,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-duplex-con-placa',
     nota: 'CANDO REDONDO GANCHO LARGO Y CORTO · artículo T25080 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 70, {
+  c('MAT-10-203', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-con-luz-piloto-crema-sin-tapa-linea-italiana',
     peso: 2,
     art: 'CANDADO DE HIERRO GANCHO CORTO',
@@ -36761,7 +36767,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-con-luz-piloto-crema-sin-tapa-linea-italiana',
     nota: 'CANDADO DE HIERRO GANCHO CORTO · artículo T48056 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 40, {
+  c('MAT-10-203', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-para-lampara',
     peso: 2,
     art: 'BISAGRA DE PISO',
@@ -36770,7 +36776,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-crema-para-lampara',
     nota: 'BISAGRA DE PISO · artículo T48003 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 35, {
+  c('MAT-10-203', PROV_FERREMIX, 35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa',
     peso: 2,
     art: 'CERRADURA DE ENTRADA',
@@ -36779,7 +36785,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-blanco-sin-tapa',
     nota: 'CERRADURA DE ENTRADA · artículo T27108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 195, {
+  c('MAT-10-203', PROV_FERREMIX, 195, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-italina',
     art: 'CANDADO DE HIERRO DE ALTA SEGURIDAD',
     sku: 'T47598',
@@ -36787,7 +36793,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-negro-linea-italina',
     nota: 'CANDADO DE HIERRO DE ALTA SEGURIDAD · artículo T47598 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 175, {
+  c('MAT-10-203', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco',
     art: 'CERRADURA LATON MARIPOSA',
     sku: 'T46337',
@@ -36795,7 +36801,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1-de-3-vias-blanco',
     nota: 'CERRADURA LATON MARIPOSA · artículo T46337 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 80, {
+  c('MAT-10-203', PROV_FERREMIX, 80, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-t25084',
     art: 'Interruptor sencllo de 3 vas blanco volteck basc',
     sku: 'T25084',
@@ -36803,7 +36809,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias-t25084',
     nota: 'Interruptor sencllo de 3 vas blanco volteck basc · artículo T25084 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 275, {
+  c('MAT-10-203', PROV_FERREMIX, 275, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/luz-de-led-para-pared-con-interruptor',
     art: '@interruptor sencillo con luz de led para pared',
     sku: 'T49970',
@@ -36811,7 +36817,7 @@
     url: 'https://ferremix.com.do/products/luz-de-led-para-pared-con-interruptor',
     nota: '@interruptor sencillo con luz de led para pared · artículo T49970 · ref. T49970 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 30, {
+  c('MAT-10-203', PROV_FERREMIX, 30, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-superficie-a-granel',
     art: 'Interruptor sencllo crema de superfce a granel volteck',
     sku: 'T47042',
@@ -36819,7 +36825,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-superficie-a-granel',
     nota: 'Interruptor sencllo crema de superfce a granel volteck · artículo T47042 · ref. T47042 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 65, {
+  c('MAT-10-203', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t48322',
     art: 'Interruptor sencllo blanco sn tapa oslo volteck',
     sku: 'T48322',
@@ -36827,7 +36833,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-t48322',
     nota: 'Interruptor sencllo blanco sn tapa oslo volteck · artículo T48322 · ref. T48322 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 110, {
+  c('MAT-10-203', PROV_FERREMIX, 110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-1451-icp',
     art: 'Interru.1451-cp sencllo levton',
     sku: '1313',
@@ -36835,7 +36841,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-1451-icp',
     nota: 'Interru.1451-cp sencllo levton · artículo 1313 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 189, {
+  c('MAT-10-203', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-crema-1453-icp',
     art: 'interruptor sencillo crema 1453 icp',
     sku: '1316',
@@ -36843,7 +36849,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-crema-1453-icp',
     nota: 'interruptor sencillo crema 1453 icp · artículo 1316 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 109, {
+  c('MAT-10-203', PROV_FERREMIX, 109, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-de-3-vias',
     art: 'Interruptor sencllo de 3 vas sn tapa crema lnea estandar volteck',
     sku: 'T46003',
@@ -36851,7 +36857,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-de-3-vias',
     nota: 'Interruptor sencllo de 3 vas sn tapa crema lnea estandar volteck · artículo T46003 · ref. T46003 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_FERREMIX, 90, {
+  c('MAT-10-203', PROV_FERREMIX, 90, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-t46005',
     art: 'Interruptor sencllo blanco sn tapa lnea classc volteck',
     sku: 'T46005',
@@ -36859,70 +36865,70 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-t46005',
     nota: 'Interruptor sencllo blanco sn tapa lnea classc volteck · artículo T46005 · ref. T46005 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 257, {
+  c('MAT-10-203', PROV_BELLON, 257, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 120-277V Leviton Decora Blanco 5601-2W',
     sku: '59829',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 120-277V Leviton Decora Blanco 5601-2W · artículo 59829. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 143.71, {
+  c('MAT-10-203', PROV_BELLON, 143.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Modus Marfil 1100MAB AE2100EM',
     sku: '136418',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Modus Marfil 1100MAB AE2100EM · artículo 136418. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 150.56, {
+  c('MAT-10-203', PROV_BELLON, 150.56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Modus Blanco AE2100EB',
     sku: '136419',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Modus Blanco AE2100EB · artículo 136419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 241, {
+  c('MAT-10-203', PROV_BELLON, 241, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Leviton Decora Marfil 5601-2IS',
     sku: '153260',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Leviton Decora Marfil 5601-2IS · artículo 153260. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 49.48, {
+  c('MAT-10-203', PROV_BELLON, 49.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Leviton Basica Blanco X12-21100-0UB',
     sku: '195698',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Leviton Basica Blanco X12-21100-0UB · artículo 195698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 243, {
+  c('MAT-10-203', PROV_BELLON, 243, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Leviton Decora Light Almond 5601-2T',
     sku: '195700',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Leviton Decora Light Almond 5601-2T · artículo 195700. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 139, {
+  c('MAT-10-203', PROV_BELLON, 139, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Con Placa Leviton Cien Blanco IN0PL-BLA',
     sku: '205904',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Con Placa Leviton Cien Blanco IN0PL-BLA · artículo 205904. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 176, {
+  c('MAT-10-203', PROV_BELLON, 176, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Con Placa Leviton Cien Marfil IN0PL-MAR',
     sku: '205924',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Con Placa Leviton Cien Marfil IN0PL-MAR · artículo 205924. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 56, {
+  c('MAT-10-203', PROV_BELLON, 56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Maximus Blanco PBK-C005B',
     sku: '221881',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Maximus Blanco PBK-C005B · artículo 221881. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 60, {
+  c('MAT-10-203', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     art: 'Interruptor Sencillo Maximus Marfil PBK-C005M',
@@ -36930,56 +36936,56 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Maximus Marfil PBK-C005M · artículo 221882. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 223.95, {
+  c('MAT-10-203', PROV_BELLON, 223.95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Nobile Blanco AF2100EB',
     sku: '226675',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Nobile Blanco AF2100EB · artículo 226675. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 225, {
+  c('MAT-10-203', PROV_BELLON, 225, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Nobile Marfil AF2100EM',
     sku: '226676',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Nobile Marfil AF2100EM · artículo 226676. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 205.33, {
+  c('MAT-10-203', PROV_BELLON, 205.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Nobile Champagne AF2100EBCH',
     sku: '226677',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Nobile Champagne AF2100EBCH · artículo 226677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 224.37, {
+  c('MAT-10-203', PROV_BELLON, 224.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Bticino Nobile Negro AF2100EA',
     sku: '226678',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Bticino Nobile Negro AF2100EA · artículo 226678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 492, {
+  c('MAT-10-203', PROV_BELLON, 492, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 1M Iluminable Bticino Living Now K4001',
     sku: '233281',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 1M Iluminable Bticino Living Now K4001 · artículo 233281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 186, {
+  c('MAT-10-203', PROV_BELLON, 186, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 1/3 Leviton Stalo Acero Inoxidable INTER-L13-13S',
     sku: '234239',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Acero Inoxidable INTER-L13-13S · artículo 234239. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 189, {
+  c('MAT-10-203', PROV_BELLON, 189, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo ½ Leviton Stalo Acero Inoxidable INTER-L23-12S',
     sku: '234240',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo ½ Leviton Stalo Acero Inoxidable INTER-L23-12S · artículo 234240. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 240, {
+  c('MAT-10-203', PROV_BELLON, 240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     art: 'Interruptor Sencillo 3/3 Leviton Stalo Acero Inoxidable INTER-L33-33S',
@@ -36987,84 +36993,84 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3/3 Leviton Stalo Acero Inoxidable INTER-L33-33S · artículo 234241. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 193, {
+  c('MAT-10-203', PROV_BELLON, 193, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 1/3 Leviton Stalo Negro INTER-L12-13N',
     sku: '234250',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Negro INTER-L12-13N · artículo 234250. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 208, {
+  c('MAT-10-203', PROV_BELLON, 208, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo ½ Leviton Stalo Negro INTER-L22-12N',
     sku: '234251',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo ½ Leviton Stalo Negro INTER-L22-12N · artículo 234251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 280, {
+  c('MAT-10-203', PROV_BELLON, 280, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 3/3 Leviton Stalo Negro INTER-L32-33N',
     sku: '234252',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 3/3 Leviton Stalo Negro INTER-L32-33N · artículo 234252. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 171, {
+  c('MAT-10-203', PROV_BELLON, 171, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 1/3 Leviton Stalo Blanco INTER-L10-13B',
     sku: '234277',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 1/3 Leviton Stalo Blanco INTER-L10-13B · artículo 234277. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 331.47, {
+  c('MAT-10-203', PROV_BELLON, 331.47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo+Toma 2P+T Bticino Luzica Blanco PU5231',
     sku: '235497',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo+Toma 2P+T Bticino Luzica Blanco PU5231 · artículo 235497. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 286.12, {
+  c('MAT-10-203', PROV_BELLON, 286.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo + Toma 2P + T Bticino Luzica Grafito PU5231GR',
     sku: '237997',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo + Toma 2P + T Bticino Luzica Grafito PU5231GR · artículo 237997. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 304, {
+  c('MAT-10-203', PROV_BELLON, 304, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 110V Leviton Decora Negro 5601-2E',
     sku: '238608',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 110V Leviton Decora Negro 5601-2E · artículo 238608. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 184.08, {
+  c('MAT-10-203', PROV_BELLON, 184.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Blanco JW4001',
     sku: '238950',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Blanco JW4001 · artículo 238950. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 160.29, {
+  c('MAT-10-203', PROV_BELLON, 160.29, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Gris JG4001',
     sku: '238951',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Gris JG4001 · artículo 238951. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 210.07, {
+  c('MAT-10-203', PROV_BELLON, 210.07, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Negro JB4001',
     sku: '238952',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo 15ax 127v 1m Matix Go Bticino Negro JB4001 · artículo 238952. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-200', PROV_BELLON, 64.79, {
+  c('MAT-10-203', PROV_BELLON, 64.79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Sencillo Dyllu Blanco DTSWB901A',
     sku: '240351',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Sencillo Dyllu Blanco DTSWB901A · artículo 240351. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 470.01, {
+  c('MAT-10-204', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interuptor-triple-veto-premiun-bco-16054',
     art: 'INTERUPTOR TRIPLE VETO PREMIUN BCO 16054',
     sku: '0001123891',
@@ -37072,7 +37078,7 @@
     url: 'https://maxferreteria.com/products/interuptor-triple-veto-premiun-bco-16054',
     nota: 'INTERUPTOR TRIPLE VETO PREMIUN BCO 16054 · artículo 0001123891 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 4440, {
+  c('MAT-10-204', PROV_MAX, 4440, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-smart-ngr-62075',
     peso: 2,
     art: 'INTER TRIPLE VETO PLURA SMART NGR 62075',
@@ -37081,7 +37087,7 @@
     url: 'https://maxferreteria.com/products/inter-triple-veto-plura-smart-ngr-62075',
     nota: 'INTER TRIPLE VETO PLURA SMART NGR 62075 · artículo 0001127198 · ref. Version smart (domotica) | Color NGR · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 325, {
+  c('MAT-10-204', PROV_MAX, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-c-luz-veto-35147',
     art: 'INTERRUPTOR TRIPLE BCO C/LUZ VETO 35147',
     sku: '0001118622',
@@ -37089,7 +37095,7 @@
     url: 'https://maxferreteria.com/products/interruptor-triple-bco-c-luz-veto-35147',
     nota: 'INTERRUPTOR TRIPLE BCO C/LUZ VETO 35147 · artículo 0001118622 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 640, {
+  c('MAT-10-204', PROV_MAX, 640, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/inter-triple-veto-plura-ngr-61825',
     art: 'INTER TRIPLE VETO PLURA NGR 61825',
     sku: '0001127201',
@@ -37097,7 +37103,7 @@
     url: 'https://maxferreteria.com/products/inter-triple-veto-plura-ngr-61825',
     nota: 'INTER TRIPLE VETO PLURA NGR 61825 · artículo 0001127201 · ref. Color NGR · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_MAX, 425, {
+  c('MAT-10-204', PROV_MAX, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/interruptor-triple-bco-m-st-ae2300eb',
     art: 'INTERRUPTOR TRIPLE BCO M-ST AE2300EB',
     sku: '0001073673',
@@ -37105,7 +37111,7 @@
     url: 'https://maxferreteria.com/products/interruptor-triple-bco-m-st-ae2300eb',
     nota: 'INTERRUPTOR TRIPLE BCO M-ST AE2300EB · artículo 0001073673 · ref. Color BCO · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 180, {
+  c('MAT-10-204', PROV_FERREMIX, 180, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro',
     art: 'BARRENA TIPO HILLTIN PARA CONCRETO',
     sku: 'T47889',
@@ -37113,7 +37119,7 @@
     url: 'https://ferremix.com.do/products/interruptor-triple-negro',
     nota: 'BARRENA TIPO HILLTIN PARA CONCRETO · artículo T47889 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 210, {
+  c('MAT-10-204', PROV_FERREMIX, 210, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-negro-linea-italiana',
     art: 'ESLINGA',
     sku: 'T47595',
@@ -37121,7 +37127,7 @@
     url: 'https://ferremix.com.do/products/interruptor-triple-negro-linea-italiana',
     nota: 'ESLINGA · artículo T47595 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 139, {
+  c('MAT-10-204', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco',
     art: 'ESLINGA',
     sku: 'T25083',
@@ -37129,7 +37135,7 @@
     url: 'https://ferremix.com.do/products/interruptor-triple-blanco',
     nota: 'ESLINGA · artículo T25083 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 215, {
+  c('MAT-10-204', PROV_FERREMIX, 215, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-blanco-linea-classic',
     art: 'LENTES DE SEGURIDAD PT253',
     sku: 'T46339',
@@ -37137,7 +37143,7 @@
     url: 'https://ferremix.com.do/products/interruptor-triple-blanco-linea-classic',
     nota: 'LENTES DE SEGURIDAD PT253 · artículo T46339 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 149, {
+  c('MAT-10-204', PROV_FERREMIX, 149, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-sencillo-triple-con-placa',
     art: 'GANCHO ALDABA PARA PUERTA',
     sku: 'T26638',
@@ -37145,7 +37151,7 @@
     url: 'https://ferremix.com.do/products/interruptor-sencillo-triple-con-placa',
     nota: 'GANCHO ALDABA PARA PUERTA · artículo T26638 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 175, {
+  c('MAT-10-204', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple',
     art: 'Interruptor trple blanco sn tapa lnea classc volteck',
     sku: 'T46007',
@@ -37153,7 +37159,7 @@
     url: 'https://ferremix.com.do/products/interruptor-triple',
     nota: 'Interruptor trple blanco sn tapa lnea classc volteck · artículo T46007 · ref. T46007 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_FERREMIX, 60, {
+  c('MAT-10-204', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interruptor-triple-italiano',
     art: 'interruptor triple italiano',
     sku: 'T48137',
@@ -37161,28 +37167,28 @@
     url: 'https://ferremix.com.do/products/interruptor-triple-italiano',
     nota: 'interruptor triple italiano · artículo T48137 · ref. T48137 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1042, {
+  c('MAT-10-204', PROV_BELLON, 1042, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Leviton Decora Marfil 1755-I',
     sku: '127348',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Leviton Decora Marfil 1755-I · artículo 127348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 381.55, {
+  c('MAT-10-204', PROV_BELLON, 381.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Bticino Modus Blanco AE2300EB',
     sku: '136425',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Bticino Modus Blanco AE2300EB · artículo 136425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1026, {
+  c('MAT-10-204', PROV_BELLON, 1026, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Leviton Decora Almond 1755-T',
     sku: '195705',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Leviton Decora Almond 1755-T · artículo 195705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 392, {
+  c('MAT-10-204', PROV_BELLON, 392, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Triple Con Placa Leviton Cien Blanco IN3PL-BLA',
@@ -37190,28 +37196,28 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Con Placa Leviton Cien Blanco IN3PL-BLA · artículo 205906. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1437, {
+  c('MAT-10-204', PROV_BELLON, 1437, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple 110V Leviton Decora Blanco 1755-W',
     sku: '213207',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple 110V Leviton Decora Blanco 1755-W · artículo 213207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 92, {
+  c('MAT-10-204', PROV_BELLON, 92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Maximus Blanco PBK-C007B',
     sku: '221885',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Maximus Blanco PBK-C007B · artículo 221885. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 132, {
+  c('MAT-10-204', PROV_BELLON, 132, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Maximus Marfil PBK-C007M',
     sku: '221886',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Maximus Marfil PBK-C007M · artículo 221886. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 126, {
+  c('MAT-10-204', PROV_BELLON, 126, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     art: 'Interruptor 3Way Triple Maximus Blanco',
@@ -37219,77 +37225,77 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Triple Maximus  Blanco · artículo 221984. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 142, {
+  c('MAT-10-204', PROV_BELLON, 142, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor 3Way Triple Maximus Marfil',
     sku: '221985',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor 3Way Triple Maximus  Marfil · artículo 221985. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 399.39, {
+  c('MAT-10-204', PROV_BELLON, 399.39, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Bticino Nobile Blanco AF2300EB',
     sku: '226687',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Bticino Nobile Blanco AF2300EB · artículo 226687. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 399.37, {
+  c('MAT-10-204', PROV_BELLON, 399.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Bticino Nobile Marfil AF2300EM',
     sku: '226688',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Bticino Nobile Marfil AF2300EM · artículo 226688. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 514.71, {
+  c('MAT-10-204', PROV_BELLON, 514.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Bticino Nobile Champagne AF2300EBCH',
     sku: '226689',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Bticino Nobile Champagne AF2300EBCH · artículo 226689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 499.85, {
+  c('MAT-10-204', PROV_BELLON, 499.85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Bticino Nobile Negro AF2300EANG',
     sku: '226690',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Bticino Nobile Negro AF2300EANG · artículo 226690. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 234, {
+  c('MAT-10-204', PROV_BELLON, 234, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Master',
     sku: '229211',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Master · artículo 229211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 407.69, {
+  c('MAT-10-204', PROV_BELLON, 407.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple 1P 3 Way Bticino Luzica Blanco PU5303',
     sku: '236541',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple 1P 3 Way Bticino Luzica Blanco PU5303 · artículo 236541. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 536.86, {
+  c('MAT-10-204', PROV_BELLON, 536.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple 2x1P + 1x3W Bticino Luzica Grafito PU5303GR',
     sku: '238002',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple 2x1P + 1x3W Bticino Luzica Grafito PU5303GR · artículo 238002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 1199, {
+  c('MAT-10-204', PROV_BELLON, 1199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple 110V Leviton Decora Negro 1755-E',
     sku: '238610',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple 110V Leviton Decora Negro 1755-E · artículo 238610. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 111, {
+  c('MAT-10-204', PROV_BELLON, 111, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Interruptor Triple Dyllu Blanco DTSWB931A',
     sku: '240348',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Dyllu Blanco DTSWB931A · artículo 240348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 100, {
+  c('MAT-10-204', PROV_BELLON, 100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Interruptor Triple Maximus Negro PBK-C011N',
@@ -37297,7 +37303,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple Maximus Negro PBK-C011N · artículo 241318. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-201', PROV_BELLON, 235, {
+  c('MAT-10-204', PROV_BELLON, 235, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 4,
     art: 'Interruptor Triple 3Way 110V Enerlite Blanco E-I400F-WH2',
@@ -37305,7 +37311,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Interruptor Triple 3Way 110V Enerlite Blanco E-I400F-WH2 · artículo 241711. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-202', PROV_MAX, 1795, {
+  c('MAT-10-205', PROV_MAX, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-c-usb-veto-16788-premium',
     art: 'TOMACORRIENTE C/USB VETO 16788 PREMIUM',
     sku: '0001128655',
@@ -37313,7 +37319,7 @@
     url: 'https://maxferreteria.com/products/tomacorriente-c-usb-veto-16788-premium',
     nota: 'TOMACORRIENTE C/USB VETO 16788 PREMIUM · artículo 0001128655 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-202', PROV_MAX, 1085, {
+  c('MAT-10-205', PROV_MAX, 1085, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tomacorriente-usb-bco-veto-36465',
     art: 'TOMACORRIENTE+USB BCO VETO 36465',
     sku: '0001118657',
@@ -37321,7 +37327,7 @@
     url: 'https://maxferreteria.com/products/tomacorriente-usb-bco-veto-36465',
     nota: 'TOMACORRIENTE+USB BCO VETO 36465 · artículo 0001118657 · ref. Color BCO · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-202', PROV_FERREMIX, 460, {
+  c('MAT-10-205', PROV_FERREMIX, 460, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-blanco',
     peso: 2,
     art: 'CODO HEMBRA DE BRONCE',
@@ -37330,7 +37336,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-blanco',
     nota: 'CODO HEMBRA DE BRONCE · artículo T47971 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-202', PROV_FERREMIX, 550, {
+  c('MAT-10-205', PROV_FERREMIX, 550, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-acero-inox-linea-lisboa-volteck',
     art: 'BARRA CAVADORA 1 8',
     sku: 'T47851',
@@ -37338,7 +37344,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-modulo-con-2-puertos-usb-acero-inox-linea-lisboa-volteck',
     nota: 'BARRA CAVADORA 1 8 · artículo T47851 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 239, {
+  c('MAT-10-206', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-triple-blanco',
     art: 'CERRADURA DE DOBLE CERROJO',
     sku: 'T47970',
@@ -37346,7 +37352,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-triple-blanco',
     nota: 'CERRADURA DE DOBLE CERROJO · artículo T47970 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 170, {
+  c('MAT-10-206', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro',
     art: 'EXTENSION ELECTRICA DOMESTICA BLANCA',
     sku: 'T47902',
@@ -37354,7 +37360,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-negro',
     nota: 'EXTENSION ELECTRICA DOMESTICA BLANCA · artículo T47902 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 269, {
+  c('MAT-10-206', PROV_FERREMIX, 269, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-acero-inox-linea-lisboa-volteck',
     art: 'RIEL DOBLE PALOMETA',
     sku: 'T47849',
@@ -37362,7 +37368,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-acero-inox-linea-lisboa-volteck',
     nota: 'RIEL DOBLE PALOMETA · artículo T47849 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 189, {
+  c('MAT-10-206', PROV_FERREMIX, 189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-negro-linea-italiana',
     art: 'CINCHOS DE PLASTICO',
     sku: 'T47588',
@@ -37370,7 +37376,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-negro-linea-italiana',
     nota: 'CINCHOS DE PLASTICO · artículo T47588 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 185, {
+  c('MAT-10-206', PROV_FERREMIX, 185, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-linea-estandar',
     peso: 2,
     art: 'CINCHOS DE PLASTICO',
@@ -37379,7 +37385,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-naranja-linea-estandar',
     nota: 'CINCHOS DE PLASTICO · artículo T48493 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 169, {
+  c('MAT-10-206', PROV_FERREMIX, 169, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-20amp-tierra-aislada-sin-tapa-linea-estandar',
     peso: 2,
     art: 'CINCHOS DE PLASTICO',
@@ -37388,7 +37394,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-naranja-20amp-tierra-aislada-sin-tapa-linea-estandar',
     nota: 'CINCHOS DE PLASTICO · artículo T48022 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 105, {
+  c('MAT-10-206', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-dorado-de-aluminio-15amp-linea-estandar',
     peso: 2,
     art: 'CINCHOS DE PLASTICO',
@@ -37397,7 +37403,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-dorado-de-aluminio-15amp-linea-estandar',
     nota: 'CINCHOS DE PLASTICO · artículo T48494 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 110, {
+  c('MAT-10-206', PROV_FERREMIX, 110, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-volteck',
     peso: 3,
     art: 'CINCHOS DE PLASTICO',
@@ -37406,7 +37412,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-blanco-volteck',
     nota: 'CINCHOS DE PLASTICO · artículo T25076 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 115, {
+  c('MAT-10-206', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-linea-espanola',
     peso: 2,
     art: 'Tomacorriente doble blanco linea española',
@@ -37415,7 +37421,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-blanco-linea-espanola',
     nota: 'Tomacorriente doble blanco linea española · artículo T47059 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 235, {
+  c('MAT-10-206', PROV_FERREMIX, 235, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/interuptor-doble-tomacorriente-negro-linea-italiana',
     art: 'CANDADO DE LATON PULIDO GANCHO LARGO',
     sku: 'T47592',
@@ -37423,7 +37429,7 @@
     url: 'https://ferremix.com.do/products/interuptor-doble-tomacorriente-negro-linea-italiana',
     nota: 'CANDADO DE LATON PULIDO GANCHO LARGO · artículo T47592 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 109, {
+  c('MAT-10-206', PROV_FERREMIX, 109, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-tapa',
     art: 'Tomacorriene doble crema 15amp linea esandar voleck',
     sku: 'T48488',
@@ -37431,7 +37437,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-con-tapa',
     nota: 'Tomacorriene doble crema 15amp linea esandar voleck · artículo T48488 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 79, {
+  c('MAT-10-206', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble',
     peso: 3,
     art: 'tomacorriente doble',
@@ -37440,7 +37446,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble',
     nota: 'tomacorriente doble · artículo t46102 · ref. T46102 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 699, {
+  c('MAT-10-206', PROV_FERREMIX, 699, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-naranja-5262-ig',
     art: 'Tomacorr. doble naranja 5262-ig levion',
     sku: '10593',
@@ -37448,7 +37454,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-naranja-5262-ig',
     nota: 'Tomacorr. doble naranja 5262-ig levion · artículo 10593 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 69, {
+  c('MAT-10-206', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-sin-tierra',
     art: 'Tomacorriene doble baquelia crema sin ierra de superficie voleck',
     sku: 'T46106',
@@ -37456,7 +37462,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-baquelita-sin-tierra',
     nota: 'Tomacorriene doble baquelia crema sin ierra de superficie voleck · artículo T46106 · ref. T46106 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 80, {
+  c('MAT-10-206', PROV_FERREMIX, 80, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra-en-blister',
     peso: 2,
     art: 'Tomacorriene doble baquelia crema de superficie en bliser voleck',
@@ -37465,7 +37471,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra-en-blister',
     nota: 'Tomacorriene doble baquelia crema de superficie en bliser voleck · artículo T46103 · ref. T46103 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 935, {
+  c('MAT-10-206', PROV_FERREMIX, 935, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-con-falla-a-tierra-llinea-classic',
     art: 'Tomacorriene doble blanco con falla a ierra sin apa linea classic voleck',
     sku: 'T46107',
@@ -37473,7 +37479,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-con-falla-a-tierra-llinea-classic',
     nota: 'Tomacorriene doble blanco con falla a ierra sin apa linea classic voleck · artículo T46107 · ref. T46107 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 65, {
+  c('MAT-10-206', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-de-tres-hilos-a-granel',
     art: 'Tomacorriene doble crema sin apa a granel linea esandar voleck',
     sku: 'T48311',
@@ -37481,7 +37487,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-de-tres-hilos-a-granel',
     nota: 'Tomacorriene doble crema sin apa a granel linea esandar voleck · artículo T48311 · ref. T48311 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 129, {
+  c('MAT-10-206', PROV_FERREMIX, 129, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-cara-de-chino-linea-standard',
     art: 'Tomacorriene doble 250 v / 60 hz, 15 a sin apa linea esandar voleck',
     sku: 'T46104',
@@ -37489,7 +37495,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-cara-de-chino-linea-standard',
     nota: 'Tomacorriene doble 250 v / 60 hz, 15 a sin apa linea esandar voleck · artículo T46104 · ref. T46104 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 159, {
+  c('MAT-10-206', PROV_FERREMIX, 159, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-aterrizado-linea-italiana',
     art: 'tomacorriente doble aterrizado linea italiana',
     sku: 'T48110',
@@ -37497,7 +37503,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-aterrizado-linea-italiana',
     nota: 'tomacorriente doble aterrizado linea italiana · artículo T48110 · ref. T48110 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 75, {
+  c('MAT-10-206', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra',
     art: 'Tomacorriene doble baquelia crema de superficie a granel voleck',
     sku: 'T47041',
@@ -37505,7 +37511,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-doble-baquelita-con-tierra',
     nota: 'Tomacorriene doble baquelia crema de superficie a granel voleck · artículo T47041 · ref. T47041 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 70, {
+  c('MAT-10-206', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente',
     art: 'Tomacorriene doble 5320-icp levion',
     sku: '11581',
@@ -37513,56 +37519,56 @@
     url: 'https://ferremix.com.do/products/tomacorriente',
     nota: 'Tomacorriene doble 5320-icp levion · artículo 11581 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_FERREMIX, 34, {
+  c('MAT-10-206', PROV_FERREMIX, 34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-doble-blanco-pbe-6',
     art: 'Tomacorriene doble blanco pbe-6',
     sku: '17884',
     url: 'https://ferremix.com.do/products/tomacorriente-doble-blanco-pbe-6',
     nota: 'Tomacorriene doble blanco pbe-6 · artículo 17884 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 681, {
+  c('MAT-10-206', PROV_BELLON, 681, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Living L4188S',
     sku: '100222',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Living L4188S · artículo 100222. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 757.51, {
+  c('MAT-10-206', PROV_BELLON, 757.51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Light Blanco N4188S',
     sku: '100313',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Light Blanco N4188S · artículo 100313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 416, {
+  c('MAT-10-206', PROV_BELLON, 416, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Universal Doble Bticino Living L4185S',
     sku: '104747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Universal Doble Bticino Living L4185S · artículo 104747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 222, {
+  c('MAT-10-206', PROV_BELLON, 222, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2P+T 125V 15A Pass & Seymour 4700',
     sku: '108215',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2P+T 125V 15A Pass & Seymour 4700 · artículo 108215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 167, {
+  c('MAT-10-206', PROV_BELLON, 167, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Tierra Bticino Modus Blanco AE2228E2B/AE2228S2B',
     sku: '136434',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Tierra Bticino Modus Blanco AE2228E2B/AE2228S2B · artículo 136434. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1516, {
+  c('MAT-10-206', PROV_BELLON, 1516, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable 2P Con Tierra 125V 15A Leviton L5-15R 4700',
     sku: '147514',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable 2P Con Tierra 125V 15A Leviton L5-15R 4700 · artículo 147514. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 208, {
+  c('MAT-10-206', PROV_BELLON, 208, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Tomacorriente Doble Leviton Decora Blanco S52/S02-5325-WS',
@@ -37570,245 +37576,245 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Leviton Decora Blanco S52/S02-5325-WS · artículo 153271. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 187, {
+  c('MAT-10-206', PROV_BELLON, 187, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Leviton Decora Marfil 5325-I',
     sku: '153445',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Leviton Decora Marfil 5325-I · artículo 153445. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 194.54, {
+  c('MAT-10-206', PROV_BELLON, 194.54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Superficie Con Tierra Bticino P38',
     sku: '158451',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Superficie Con Tierra Bticino P38 · artículo 158451. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 475.6, {
+  c('MAT-10-206', PROV_BELLON, 475.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Tierra Bticino Matix SAM5115DS/3H',
     sku: '161419',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Tierra Bticino Matix SAM5115DS/3H · artículo 161419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 758, {
+  c('MAT-10-206', PROV_BELLON, 758, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 125V 15A Leviton Naranja 5262-IG',
     sku: '180775',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 125V 15A Leviton Naranja 5262-IG · artículo 180775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1114.49, {
+  c('MAT-10-206', PROV_BELLON, 1114.49, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Tierra/Aislada Bticino Matix AM5028IGR',
     sku: '181065',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Tierra/Aislada Bticino Matix AM5028IGR · artículo 181065. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1483, {
+  c('MAT-10-206', PROV_BELLON, 1483, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Grado Hospital 5-15R Leviton Decora Rojo D8200-IGR',
     sku: '195826',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Grado Hospital 5-15R Leviton Decora Rojo D8200-IGR · artículo 195826. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 179, {
+  c('MAT-10-206', PROV_BELLON, 179, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Blanco R62-T5320-W',
     sku: '195828',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Blanco R62-T5320-W · artículo 195828. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 184, {
+  c('MAT-10-206', PROV_BELLON, 184, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Ivory R59-T5320-IV',
     sku: '195829',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Ivory R59-T5320-IV · artículo 195829. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 285, {
+  c('MAT-10-206', PROV_BELLON, 285, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Blanco R57-T5325-W',
     sku: '195831',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Blanco R57-T5325-W · artículo 195831. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 238, {
+  c('MAT-10-206', PROV_BELLON, 238, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable Tamper R 5-15R Leviton Decora Light Almond T5325-T',
     sku: '195833',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable Tamper R 5-15R Leviton Decora Light Almond T5325-T · artículo 195833. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 188, {
+  c('MAT-10-206', PROV_BELLON, 188, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Leviton Decora Light Almond R56-5325-TS',
     sku: '195859',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Leviton Decora Light Almond R56-5325-TS · artículo 195859. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 160, {
+  c('MAT-10-206', PROV_BELLON, 160, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A 125/250V Leviton Ultra/Plus Blanco X52-0TOMA-PCB',
     sku: '203646',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A 125/250V Leviton Ultra/Plus Blanco X52-0TOMA-PCB · artículo 203646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 472, {
+  c('MAT-10-206', PROV_BELLON, 472, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A 125V Con Tapa Aluminio Leviton U03-TCT2P-ALU',
     sku: '203657',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A 125V Con Tapa Aluminio Leviton U03-TCT2P-ALU · artículo 203657. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 210, {
+  c('MAT-10-206', PROV_BELLON, 210, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Blanco X02-UTOMA-PCB',
     sku: '203720',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Blanco X02-UTOMA-PCB · artículo 203720. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 180, {
+  c('MAT-10-206', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Marfil X03-UTOMA-PCM',
     sku: '203721',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Tapa 15A 125V Leviton Ultra Marfil X03-UTOMA-PCM · artículo 203721. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 165, {
+  c('MAT-10-206', PROV_BELLON, 165, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Tierra Leviton Cien Blanco TCT2P-BLA',
     sku: '205912',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Tierra Leviton Cien Blanco TCT2P-BLA · artículo 205912. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 439, {
+  c('MAT-10-206', PROV_BELLON, 439, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 120V 15A Leviton Marrón 5262-IGB',
     sku: '207251',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 120V 15A Leviton Marrón 5262-IGB · artículo 207251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 597, {
+  c('MAT-10-206', PROV_BELLON, 597, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 20A 125V Leviton Decora Almond T-5825-T',
     sku: '208774',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 20A 125V Leviton Decora Almond T-5825-T · artículo 208774. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 753, {
+  c('MAT-10-206', PROV_BELLON, 753, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 20A Tamper Leviton Decora Blanco T-5825-W',
     sku: '208775',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 20A Tamper Leviton Decora Blanco T-5825-W · artículo 208775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 623, {
+  c('MAT-10-206', PROV_BELLON, 623, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 20A 125V Tamper Leviton Decora Marfil T-5825-I',
     sku: '208776',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 20A 125V Tamper Leviton Decora Marfil T-5825-I · artículo 208776. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 430, {
+  c('MAT-10-206', PROV_BELLON, 430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Ivory 5825-I',
     sku: '208777',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Ivory 5825-I · artículo 208777. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 399, {
+  c('MAT-10-206', PROV_BELLON, 399, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Blanco 5825-W',
     sku: '208778',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Universal 15A 125V Leviton Decora Blanco 5825-W · artículo 208778. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 178, {
+  c('MAT-10-206', PROV_BELLON, 178, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Emp. 125V 20A Leviton Alm CBR20-1',
     sku: '211461',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Emp. 125V 20A Leviton Alm CBR20-1 · artículo 211461. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 106, {
+  c('MAT-10-206', PROV_BELLON, 106, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Superficie Doble 120V 15A Voltech COSO-DA',
     sku: '212396',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Superficie Doble 120V 15A Voltech COSO-DA · artículo 212396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 150.88, {
+  c('MAT-10-206', PROV_BELLON, 150.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228',
     sku: '212523',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228 · artículo 212523. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 200.55, {
+  c('MAT-10-206', PROV_BELLON, 200.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228TR',
     sku: '212524',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2P Con Tierra Bticino Domino Blanco AP1228TR · artículo 212524. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 98, {
+  c('MAT-10-206', PROV_BELLON, 98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Maximus Blanco PBK-C022B',
     sku: '221887',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Maximus Blanco PBK-C022B · artículo 221887. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 75, {
+  c('MAT-10-206', PROV_BELLON, 75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Maximus Marfil PBK-C022M',
     sku: '221888',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Maximus Marfil PBK-C022M · artículo 221888. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 355, {
+  c('MAT-10-206', PROV_BELLON, 355, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable 125V 20A Leviton Blanco CR20-W',
     sku: '223667',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable 125V 20A Leviton Blanco CR20-W · artículo 223667. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1326, {
+  c('MAT-10-206', PROV_BELLON, 1326, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Grado Hospital 5-20R Leviton Decora Blanco 16362-HGW',
     sku: '224414',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Grado Hospital 5-20R Leviton Decora Blanco 16362-HGW · artículo 224414. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 222.82, {
+  c('MAT-10-206', PROV_BELLON, 222.82, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Nobile Blanco AF2228EB',
     sku: '226691',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Nobile Blanco AF2228EB · artículo 226691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 225, {
+  c('MAT-10-206', PROV_BELLON, 225, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Nobile Marfil AF2228EM',
     sku: '226692',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Nobile Marfil AF2228EM · artículo 226692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 233.05, {
+  c('MAT-10-206', PROV_BELLON, 233.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Nobile Champagne AF2228EBCH',
     sku: '226693',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Nobile Champagne AF2228EBCH · artículo 226693. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 275.51, {
+  c('MAT-10-206', PROV_BELLON, 275.51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Bticino Nobile Negro AF2228EAN',
     sku: '226694',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Bticino Nobile Negro AF2228EAN · artículo 226694. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 190, {
+  c('MAT-10-206', PROV_BELLON, 190, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Tomacorriente Doble Empotrable 125V 20A Pass & Seymour Almond CR20I',
@@ -37816,119 +37822,119 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable 125V 20A Pass & Seymour Almond CR20I · artículo 233136. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 812, {
+  c('MAT-10-206', PROV_BELLON, 812, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A TR 3M Bticino Negro KG4188',
     sku: '233361',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A TR 3M Bticino Negro KG4188 · artículo 233361. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1101, {
+  c('MAT-10-206', PROV_BELLON, 1101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Blanco KW4188',
     sku: '233362',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Blanco KW4188 · artículo 233362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 1006, {
+  c('MAT-10-206', PROV_BELLON, 1006, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Arena KM4188',
     sku: '233363',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble TR 15A 3M Bticino Living Now Arena KM4188 · artículo 233363. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 390, {
+  c('MAT-10-206', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A Leviton Stalo Negro LTOMA-L32-33N',
     sku: '234263',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A Leviton Stalo Negro LTOMA-L32-33N · artículo 234263. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 272, {
+  c('MAT-10-206', PROV_BELLON, 272, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A Leviton Stalo Blanco LTOMA-L30-33B',
     sku: '234290',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A Leviton Stalo Blanco LTOMA-L30-33B · artículo 234290. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 182, {
+  c('MAT-10-206', PROV_BELLON, 182, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Superficie Doble 120V 15A Voltech 47350',
     sku: '237629',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Superficie Doble 120V 15A Voltech 47350 · artículo 237629. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 197, {
+  c('MAT-10-206', PROV_BELLON, 197, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Leviton Decora Negro 5325-E',
     sku: '238615',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Leviton Decora Negro 5325-E · artículo 238615. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 789, {
+  c('MAT-10-206', PROV_BELLON, 789, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Negro T5325-E',
     sku: '238616',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Empotrable Tamper 5-15R Leviton Decora Negro T5325-E · artículo 238616. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 852, {
+  c('MAT-10-206', PROV_BELLON, 852, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 20A 125V Leviton Decora Negro T-5825-E',
     sku: '238620',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 20A 125V Leviton Decora Negro T-5825-E · artículo 238620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 443.6, {
+  c('MAT-10-206', PROV_BELLON, 443.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Blanco JW4185',
     sku: '238961',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Blanco JW4185 · artículo 238961. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 608.27, {
+  c('MAT-10-206', PROV_BELLON, 608.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Gris JG4185',
     sku: '238962',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Gris JG4185 · artículo 238962. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 829.26, {
+  c('MAT-10-206', PROV_BELLON, 829.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Negro JB4185',
     sku: '238963',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Euroamericano Doble 2p+T 1 Matix Go Bticino Negro JB4185 · artículo 238963. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 359.57, {
+  c('MAT-10-206', PROV_BELLON, 359.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Blanco JW4188',
     sku: '238994',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Blanco JW4188 · artículo 238994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 300.61, {
+  c('MAT-10-206', PROV_BELLON, 300.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Gris JG4188',
     sku: '238995',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Gris JG4188 · artículo 238995. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 422.9, {
+  c('MAT-10-206', PROV_BELLON, 422.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Negro JB4188',
     sku: '238996',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2p+T 15a 17v 3m Matix Go Bticino Negro JB4188 · artículo 238996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 89.71, {
+  c('MAT-10-206', PROV_BELLON, 89.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 15A 277V Dyllu Blanco DTQKB9AAA',
     sku: '240346',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 15A 277V Dyllu  Blanco DTQKB9AAA · artículo 240346. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-203', PROV_BELLON, 79, {
+  c('MAT-10-206', PROV_BELLON, 79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Tomacorriente Doble Maximus Negro PBK-C022N',
@@ -37936,119 +37942,119 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Maximus Negro PBK-C022N · artículo 241308. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1867.5, {
+  c('MAT-10-207', PROV_BELLON, 1867.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Falla/Tierra Bticino Matix AM5028GFR',
     sku: '161420',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Falla/Tierra Bticino Matix AM5028GFR · artículo 161420. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2226, {
+  c('MAT-10-207', PROV_BELLON, 2226, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Luz GFCI Leviton Blanco GFNT-W',
     sku: '210677',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Luz GFCI Leviton Blanco GFNT-W · artículo 210677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1899, {
+  c('MAT-10-207', PROV_BELLON, 1899, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble GFCI Leviton Ivory GFNT1-I/N7599-I',
     sku: '210689',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble GFCI Leviton Ivory GFNT1-I/N7599-I · artículo 210689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1525.94, {
+  c('MAT-10-207', PROV_BELLON, 1525.94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente GFCI 2P Con Tierra Bticino Domino Blanco AP1228GF',
     sku: '212525',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente GFCI 2P Con Tierra Bticino Domino Blanco AP1228GF · artículo 212525. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2636, {
+  c('MAT-10-207', PROV_BELLON, 2636, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble 2P Con Tierra 15A GFCI 3 Módulos Bticino Living Gris NT4188GF',
     sku: '218809',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble 2P Con Tierra 15A GFCI 3 Módulos Bticino Living Gris NT4188GF · artículo 218809. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2115, {
+  c('MAT-10-207', PROV_BELLON, 2115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente AFCI/GFCI 20A Leviton Blanco GFTR2-W',
     sku: '221927',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente AFCI/GFCI 20A Leviton Blanco GFTR2-W · artículo 221927. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1674, {
+  c('MAT-10-207', PROV_BELLON, 1674, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble Con Luz GFCI Leviton Light Almond GFNT1-T',
     sku: '222698',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble Con Luz GFCI Leviton Light Almond GFNT1-T · artículo 222698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 3426, {
+  c('MAT-10-207', PROV_BELLON, 3426, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Negro KG4188GFG6',
     sku: '233364',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Negro KG4188GFG6 · artículo 233364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 3469, {
+  c('MAT-10-207', PROV_BELLON, 3469, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Blanco KW4188GFG6',
     sku: '233365',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Blanco KW4188GFG6 · artículo 233365. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 3598, {
+  c('MAT-10-207', PROV_BELLON, 3598, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Arena KM4188GFG6',
     sku: '233366',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble GFCI TR 15A 3M Bticino Living Now Arena KM4188GFG6 · artículo 233366. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1787.14, {
+  c('MAT-10-207', PROV_BELLON, 1787.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente GFCI 2P 15A Con Tierra Bticino Luzica Blanco PU1228GF',
     sku: '234212',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente GFCI 2P 15A Con Tierra Bticino Luzica Blanco PU1228GF · artículo 234212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1722.25, {
+  c('MAT-10-207', PROV_BELLON, 1722.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Duplex Gfci Bticino Luzica Grafito PU1228GFGR',
     sku: '238006',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Duplex Gfci Bticino Luzica Grafito PU1228GFGR · artículo 238006. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2128, {
+  c('MAT-10-207', PROV_BELLON, 2128, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Doble C/Luz GFCI Leviton Decora Negro GFNT-NE',
     sku: '238617',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Doble C/Luz GFCI Leviton Decora Negro GFNT-NE · artículo 238617. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 1467.04, {
+  c('MAT-10-207', PROV_BELLON, 1467.04, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Blanco JW4188GFG6',
     sku: '239002',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Blanco JW4188GFG6 · artículo 239002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2297.66, {
+  c('MAT-10-207', PROV_BELLON, 2297.66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Gris JG4188GFG6',
     sku: '239003',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Gris JG4188GFG6 · artículo 239003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-204', PROV_BELLON, 2297.64, {
+  c('MAT-10-207', PROV_BELLON, 2297.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Negro JB4188GFG6',
     sku: '239004',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Gfci Doble 2p+T 15a 127v 3 Matix Go Bticino Negro JB4188GFG6 · artículo 239004. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 65, {
+  c('MAT-10-208', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco-sin-tapa-34mm-1',
     peso: 4,
     art: 'ALAMBRE ESTANDAR ROLLO DE 500M',
@@ -38057,7 +38063,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-blanco-sin-tapa-34mm-1',
     nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47948 · ref. ROLLO · marca Volteck. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 59, {
+  c('MAT-10-208', PROV_FERREMIX, 59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tierra-sin-tapa-linea-italiana',
     peso: 2,
     art: 'ADAPTADOR 3 A 2',
@@ -38066,7 +38072,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tierra-sin-tapa-linea-italiana',
     nota: 'ADAPTADOR 3 A 2 · artículo T47606 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 60, {
+  c('MAT-10-208', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-35mm-linea-espanola',
     peso: 2,
     art: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION',
@@ -38075,7 +38081,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-35mm-linea-espanola',
     nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47992 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 55, {
+  c('MAT-10-208', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-23mm-linea-espanola',
     peso: 2,
     art: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION',
@@ -38084,7 +38090,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-negro-sin-tapa-23mm-linea-espanola',
     nota: 'ABRAZADERA TAIRRA PLASTICA PARA 40 LBS DE TENSION · artículo T47991 · ref. 40 LBS · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 69, {
+  c('MAT-10-208', PROV_FERREMIX, 69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-negro-con-tierra-sin-tapa-linea-italiana',
     art: 'BOMBA LADRONA AUTOCEBANTE',
     sku: 'T47605',
@@ -38092,7 +38098,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-negro-con-tierra-sin-tapa-linea-italiana',
     nota: 'BOMBA LADRONA AUTOCEBANTE · artículo T47605 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 49, {
+  c('MAT-10-208', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-blanco',
     art: 'ABRAZADERA DE TUBO TIPO OMEGA',
     sku: 'T27107',
@@ -38100,7 +38106,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-blanco',
     nota: 'ABRAZADERA DE TUBO TIPO OMEGA · artículo T27107 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 39, {
+  c('MAT-10-208', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-de-superficie-sin-tierra-1',
     peso: 2,
     art: 'Tomacorriene sencillo crema sin ierra de superficie voleck',
@@ -38109,7 +38115,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-de-superficie-sin-tierra-1',
     nota: 'Tomacorriene sencillo crema sin ierra de superficie voleck · artículo T46108 · ref. T46108 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 75, {
+  c('MAT-10-208', PROV_FERREMIX, 75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-redondo-20a-linea-standard-1',
     peso: 3,
     art: 'Tomacorriene sencillo crema 20amp sin apa linea esandar voleck',
@@ -38118,7 +38124,7 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-redondo-20a-linea-standard-1',
     nota: 'Tomacorriene sencillo crema 20amp sin apa linea esandar voleck · artículo T46101 · ref. T46101 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_FERREMIX, 70, {
+  c('MAT-10-208', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tomacorriente-sencillo-sin-tierra-linea-oslo',
     peso: 2,
     art: 'Tomacorriene sencillo blanco sin ierra sin apa oslo voleck',
@@ -38127,63 +38133,63 @@
     url: 'https://ferremix.com.do/products/tomacorriente-sencillo-sin-tierra-linea-oslo',
     nota: 'Tomacorriene sencillo blanco sin ierra sin apa oslo voleck · artículo T48318 · ref. T48318 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 418, {
+  c('MAT-10-208', PROV_BELLON, 418, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 250V Leviton Decora Marfil 16441-I',
     sku: '153274',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 250V Leviton Decora Marfil 16441-I · artículo 153274. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 573, {
+  c('MAT-10-208', PROV_BELLON, 573, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 220V Leviton Decora Blanco 16441-W',
     sku: '153275',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 220V Leviton Decora Blanco 16441-W · artículo 153275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 210.98, {
+  c('MAT-10-208', PROV_BELLON, 210.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo Con Tierra 2 Módulos Bticino Matix AM5038',
     sku: '166889',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo Con Tierra 2 Módulos Bticino Matix AM5038 · artículo 166889. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 514, {
+  c('MAT-10-208', PROV_BELLON, 514, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 250V Leviton Decora Light Almond 16441-T(A)',
     sku: '195842',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 250V Leviton Decora Light Almond 16441-T(A) · artículo 195842. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 921, {
+  c('MAT-10-208', PROV_BELLON, 921, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Negro KG4129',
     sku: '233321',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Negro KG4129 · artículo 233321. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 638, {
+  c('MAT-10-208', PROV_BELLON, 638, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Blanco KW4129',
     sku: '233356',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Blanco KW4129 · artículo 233356. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 910, {
+  c('MAT-10-208', PROV_BELLON, 910, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Arena KM4129',
     sku: '233357',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 15A 2M Bticino Living Now Arena KM4129 · artículo 233357. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 232.21, {
+  c('MAT-10-208', PROV_BELLON, 232.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Blanco JW4129',
     sku: '239000',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Blanco JW4129 · artículo 239000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-205', PROV_BELLON, 211.69, {
+  c('MAT-10-208', PROV_BELLON, 211.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Gris JG4129',
@@ -38191,7 +38197,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tomacorriente Sencillo 2p+T 15a 127v 2m Matix Go Bticino Gris JG4129 · artículo 239001. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 49, {
+  c('MAT-10-209', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-negra-linea-italina',
     peso: 2,
     art: 'CLAVOS CORRIENTE',
@@ -38200,7 +38206,7 @@
     url: 'https://ferremix.com.do/products/tapa-ciega-negra-linea-italina',
     nota: 'CLAVOS CORRIENTE · artículo T40139 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 79, {
+  c('MAT-10-209', PROV_FERREMIX, 79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-color-madera-linea-italiana',
     art: 'Tapa ciega color madera linea ialiana voleck',
     sku: 'T46395',
@@ -38208,7 +38214,7 @@
     url: 'https://ferremix.com.do/products/tapa-ciega-color-madera-linea-italiana',
     nota: 'Tapa ciega color madera linea ialiana voleck · artículo T46395 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 11, {
+  c('MAT-10-209', PROV_FERREMIX, 11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca',
     art: 'Tapa ciega blc. pbc-d ez ligh',
     sku: '222769',
@@ -38216,7 +38222,7 @@
     url: 'https://ferremix.com.do/products/tapa-ciega-blanca',
     nota: 'Tapa ciega blc. pbc-d ez ligh · artículo 222769 · marca EZ Light. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 139, {
+  c('MAT-10-209', PROV_FERREMIX, 139, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-para-tapa-ciega',
     art: 'Placa ara caja fs, ciega afci-s voltech',
     sku: 'T46432',
@@ -38224,7 +38230,7 @@
     url: 'https://ferremix.com.do/products/placa-para-tapa-ciega',
     nota: 'Placa ara caja fs, ciega afci-s voltech · artículo T46432 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 156, {
+  c('MAT-10-209', PROV_FERREMIX, 156, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-gris-84014-40',
     art: 'Tapa ciega gris 84014-40 levion',
     sku: '26000',
@@ -38232,7 +38238,7 @@
     url: 'https://ferremix.com.do/products/tapa-ciega-gris-84014-40',
     nota: 'Tapa ciega gris 84014-40 levion · artículo 26000 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-206', PROV_FERREMIX, 45, {
+  c('MAT-10-209', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-ciega-blanca-88014-leviton',
     art: 'Tapa ciega blanca 88014 levion',
     sku: '25992',
@@ -38240,7 +38246,7 @@
     url: 'https://ferremix.com.do/products/tapa-ciega-blanca-88014-leviton',
     nota: 'Tapa ciega blanca 88014 levion · artículo 25992 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 70, {
+  c('MAT-10-210', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble-linea-lisboa-volteck',
     art: 'PALOMETA',
     sku: 'T47870',
@@ -38248,7 +38254,7 @@
     url: 'https://ferremix.com.do/products/tapa-negra-para-interruptor-doble-linea-lisboa-volteck',
     nota: 'PALOMETA · artículo T47870 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 55, {
+  c('MAT-10-210', PROV_FERREMIX, 55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-o-tomacorriente-doble',
     art: 'LIJA DE AGUA',
     sku: 'T40137',
@@ -38256,7 +38262,7 @@
     url: 'https://ferremix.com.do/products/tapa-negra-para-interruptor-o-tomacorriente-doble',
     nota: 'LIJA DE AGUA · artículo T40137 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 60, {
+  c('MAT-10-210', PROV_FERREMIX, 60, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-negra-para-interruptor-doble',
     art: 'LIJA DE AGUA',
     sku: 'T47998',
@@ -38264,7 +38270,7 @@
     url: 'https://ferremix.com.do/products/tapa-negra-para-interruptor-doble',
     nota: 'LIJA DE AGUA · artículo T47998 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 40, {
+  c('MAT-10-210', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-marfil-para-interruptor-o-matacorriente-doble',
     peso: 2,
     art: 'LIJA DE AGUA',
@@ -38273,7 +38279,7 @@
     url: 'https://ferremix.com.do/products/tapa-marfil-para-interruptor-o-matacorriente-doble',
     nota: 'LIJA DE AGUA · artículo T27231 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 85, {
+  c('MAT-10-210', PROV_FERREMIX, 85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-doble-linea-italiana',
     art: 'ALAMBRE DE GOMA SJTW',
     sku: 'T46393',
@@ -38281,7 +38287,7 @@
     url: 'https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-doble-linea-italiana',
     nota: 'ALAMBRE DE GOMA SJTW · artículo T46393 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 65, {
+  c('MAT-10-210', PROV_FERREMIX, 65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-doble-linea-espanola',
     art: 'COUPLING EMT',
     sku: 'T47063',
@@ -38289,7 +38295,7 @@
     url: 'https://ferremix.com.do/products/tapa-blanca-para-interruptor-doble-linea-espanola',
     nota: 'COUPLING EMT · artículo T47063 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 105, {
+  c('MAT-10-210', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-tomacorriente-de-exterior',
     art: 'Tapa gris para omacorriene doble de inerperie linea esandar voleck',
     sku: 'T46410',
@@ -38297,7 +38303,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-para-tomacorriente-de-exterior',
     nota: 'Tapa gris para omacorriene doble de inerperie linea esandar voleck · artículo T46410 · ref. T46410 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 39, {
+  c('MAT-10-210', PROV_FERREMIX, 39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-para-interruptores-y-tomacorrientes-1',
     art: 'Tapa naranja para omacorriene doble linea esandar voleck',
     sku: 'T46409',
@@ -38305,7 +38311,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-para-interruptores-y-tomacorrientes-1',
     nota: 'Tapa naranja para omacorriene doble linea esandar voleck · artículo T46409 · ref. T46409 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 175, {
+  c('MAT-10-210', PROV_FERREMIX, 175, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-sencillo-y-2-contactos-aterrizados',
     art: 'Interruptor + tomacorrente doble blanco lnea española volteck',
     sku: 'T45594',
@@ -38313,7 +38319,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-sencillo-y-2-contactos-aterrizados',
     nota: 'Interruptor + tomacorrente doble blanco lnea española volteck · artículo T45594 · ref. T45594 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 249, {
+  c('MAT-10-210', PROV_FERREMIX, 249, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/placa-armada-contacto-y-2-interruptores-linea-oslo-blanco-1',
     art: 'Interruptor doble + tomacorrente blanco oslo volteck',
     sku: 'T46488',
@@ -38321,7 +38327,7 @@
     url: 'https://ferremix.com.do/products/placa-armada-contacto-y-2-interruptores-linea-oslo-blanco-1',
     nota: 'Interruptor doble + tomacorrente blanco oslo volteck · artículo T46488 · ref. T46488 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 149, {
+  c('MAT-10-210', PROV_FERREMIX, 149, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-3-vias',
     art: 'Interruptor sencllo + 1 de 3 vas blanco lnea española volteck',
     sku: 'T45602',
@@ -38329,7 +38335,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-doble-de-3-vias',
     nota: 'Interruptor sencllo + 1 de 3 vas blanco lnea española volteck · artículo T45602 · ref. T45602 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 170, {
+  c('MAT-10-210', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-2-interruptores-sencillos-y-contacto-aterrizado-de-1-modulo',
     art: 'Interruptor doble + tomacorrente blanco lnea española volteck',
     sku: 'T45597',
@@ -38337,7 +38343,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-2-interruptores-sencillos-y-contacto-aterrizado-de-1-modulo',
     nota: 'Interruptor doble + tomacorrente blanco lnea española volteck · artículo T45597 · ref. T45597 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 185, {
+  c('MAT-10-210', PROV_FERREMIX, 185, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-y-1-tipo-escalera-de-1-modulo',
     art: 'Interruptor doble + 1 de 3 vas blanco lnea española volteck',
     sku: 'T45606',
@@ -38345,7 +38351,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-doble-y-1-tipo-escalera-de-1-modulo',
     nota: 'Interruptor doble + 1 de 3 vas blanco lnea española volteck · artículo T45606 · ref. T45606 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 135, {
+  c('MAT-10-210', PROV_FERREMIX, 135, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-1-modulo',
     art: 'Interruptor doble blanco lnea española volteck',
     sku: 'T45596',
@@ -38353,7 +38359,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-doble-1-modulo',
     nota: 'Interruptor doble blanco lnea española volteck · artículo T45596 · ref. T45596 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 130, {
+  c('MAT-10-210', PROV_FERREMIX, 130, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-doble-de-1-5-modulos',
     art: 'Interruptor doble 35mm blanco lnea española volteck',
     sku: 'T45595',
@@ -38361,7 +38367,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-doble-de-1-5-modulos',
     nota: 'Interruptor doble 35mm blanco lnea española volteck · artículo T45595 · ref. T45595 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 449, {
+  c('MAT-10-210', PROV_FERREMIX, 449, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-waterproof-4976-gy-leviton',
     art: 'tapa doble gris waterproof 4976 gy leviton',
     sku: '26001',
@@ -38369,7 +38375,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-gris-waterproof-4976-gy-leviton',
     nota: 'tapa doble gris waterproof 4976 gy leviton · artículo 26001 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 160, {
+  c('MAT-10-210', PROV_FERREMIX, 160, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-con-2-interruptores-t46389-1',
     peso: 3,
     art: 'Interruptor doble dorado lnea economca volteck',
@@ -38378,7 +38384,7 @@
     url: 'https://ferremix.com.do/products/tapa-plastica-con-2-interruptores-t46389-1',
     nota: 'Interruptor doble dorado lnea economca volteck · artículo T46389 · ref. T46389 · marca Volteck. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 45, {
+  c('MAT-10-210', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-toma-corriente-80703-w',
     art: 'tapa doble blanca para toma corriente 80703 w',
     sku: '25996',
@@ -38386,7 +38392,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-blanca-para-toma-corriente-80703-w',
     nota: 'tapa doble blanca para toma corriente 80703 w · artículo 25996 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 210, {
+  c('MAT-10-210', PROV_FERREMIX, 210, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-gris-para-toma-corriente-gris-84003-40',
     art: 'Tapa para oma corriene doble gris 84003-40 levion',
     sku: '25997',
@@ -38394,7 +38400,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-gris-para-toma-corriente-gris-84003-40',
     nota: 'Tapa para oma corriene doble gris 84003-40 levion · artículo 25997 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 46, {
+  c('MAT-10-210', PROV_FERREMIX, 46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-blanca-para-tomacorriente-88003',
     art: 'Tapa omacorr. doble blanco 88003 levion',
     sku: '25779',
@@ -38402,7 +38408,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-blanca-para-tomacorriente-88003',
     nota: 'Tapa omacorr. doble blanco 88003 levion · artículo 25779 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 42, {
+  c('MAT-10-210', PROV_FERREMIX, 42, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-doble-marfil-86003-leviton',
     peso: 2,
     art: 'Tapa doble ivory 86003 levion',
@@ -38411,7 +38417,7 @@
     url: 'https://ferremix.com.do/products/tapa-doble-marfil-86003-leviton',
     nota: 'Tapa doble ivory 86003 levion · artículo 25778 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 229, {
+  c('MAT-10-210', PROV_FERREMIX, 229, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-plastica-para-interruptores',
     art: 'Interruptor doble + 1 de 3 vas blanco oslo volteck',
     sku: 'T46497',
@@ -38419,7 +38425,7 @@
     url: 'https://ferremix.com.do/products/tapa-plastica-para-interruptores',
     nota: 'Interruptor doble + 1 de 3 vas blanco oslo volteck · artículo T46497 · ref. T46497 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 255, {
+  c('MAT-10-210', PROV_FERREMIX, 255, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-y-tomacorriente-t46489',
     art: 'Interruptor + tomacorrente doble blanco oslo volteck',
     sku: 'T46489',
@@ -38427,7 +38433,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-y-tomacorriente-t46489',
     nota: 'Interruptor + tomacorrente doble blanco oslo volteck · artículo T46489 · ref. T46489 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 1199, {
+  c('MAT-10-210', PROV_FERREMIX, 1199, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-italiana',
     art: 'tapa con contacto doble falla a tierra linea italiana',
     sku: 'T46145',
@@ -38435,7 +38441,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-italiana',
     nota: 'tapa con contacto doble falla a tierra linea italiana · artículo T46145 · ref. T46145 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 1169, {
+  c('MAT-10-210', PROV_FERREMIX, 1169, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-oslo',
     art: 'Tomacorriene doble blanco falla a ierra oslo voleck',
     sku: 'T48310',
@@ -38443,7 +38449,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-doble-falla-a-tierra-linea-oslo',
     nota: 'Tomacorriene doble blanco falla a ierra oslo voleck · artículo T48310 · ref. T48310 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 180, {
+  c('MAT-10-210', PROV_FERREMIX, 180, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado-linea-oslo',
     art: 'Tomacorriene doble blanco oslo voleck',
     sku: 'T48309',
@@ -38451,7 +38457,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado-linea-oslo',
     nota: 'Tomacorriene doble blanco oslo voleck · artículo T48309 · ref. T48309 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 115, {
+  c('MAT-10-210', PROV_FERREMIX, 115, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado',
     art: 'Tomacorriene doble blanco linea classic voleck',
     sku: 'T40016',
@@ -38459,14 +38465,14 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-doble-aterrizado',
     nota: 'Tomacorriene doble blanco linea classic voleck · artículo T40016 · ref. T40016 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-207', PROV_FERREMIX, 15, {
+  c('MAT-10-210', PROV_FERREMIX, 15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-2-x-4-metalica-doble',
     art: 'Tapa 2 x 4 mealica doble',
     sku: '14020',
     url: 'https://ferremix.com.do/products/tapa-2-x-4-metalica-doble',
     nota: 'Tapa 2 x 4 mealica doble · artículo 14020 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-208', PROV_MAX, 85, {
+  c('MAT-10-211', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-blanca-3m-bticino-matix-am503-3bn',
     art: 'PLACA BLANCA 3M BTICINO MATIX AM503/3BN',
     sku: '0001020799',
@@ -38474,7 +38480,7 @@
     url: 'https://maxferreteria.com/products/placa-blanca-3m-bticino-matix-am503-3bn',
     nota: 'PLACA BLANCA 3M BTICINO MATIX AM503/3BN · artículo 0001020799 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-209', PROV_MAX, 1620, {
+  c('MAT-10-212', PROV_MAX, 1620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/placa-class-7m-plata-mate-eikon-20657-13',
     art: 'PLACA CLASS 7M PLATA MATE EIKON 20657.13',
     sku: '0001033452',
@@ -38482,7 +38488,7 @@
     url: 'https://maxferreteria.com/products/placa-class-7m-plata-mate-eikon-20657-13',
     nota: 'PLACA CLASS 7M PLATA MATE EIKON 20657.13 · artículo 0001033452 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-210', PROV_MAX, 9.99, {
+  c('MAT-10-213', PROV_MAX, 9.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-doble-abs-ivory-gen-u03z',
     art: 'TAPA DOBLE ABS IVORY GEN U03Z',
     sku: '0001085119',
@@ -38490,7 +38496,7 @@
     url: 'https://maxferreteria.com/products/tapa-doble-abs-ivory-gen-u03z',
     nota: 'TAPA DOBLE ABS IVORY GEN U03Z · artículo 0001085119 · ref. Sin especificaciones parseables en el nombre · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-211', PROV_FERREMIX, 52.59, {
+  c('MAT-10-214', PROV_FERREMIX, 52.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-de-acero-inoxidable',
     art: 'tapa de acero inoxidable',
     sku: 'T46421',
@@ -38498,7 +38504,7 @@
     url: 'https://ferremix.com.do/products/tapa-de-acero-inoxidable',
     nota: 'tapa de acero inoxidable · artículo T46421 · ref. T47190 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-211', PROV_FERREMIX, 49, {
+  c('MAT-10-214', PROV_FERREMIX, 49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-blanca-de-interruptor-80701-w',
     peso: 2,
     art: 'Tapa de inerrupor sencillo blanca 80701-w levion',
@@ -38507,7 +38513,7 @@
     url: 'https://ferremix.com.do/products/tapa-sencilla-blanca-de-interruptor-80701-w',
     nota: 'Tapa de inerrupor sencillo blanca 80701-w levion · artículo 25994 · marca Leviton. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-211', PROV_FERREMIX, 45, {
+  c('MAT-10-214', PROV_FERREMIX, 45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-sencilla-crema-para-toma-corriente-220v-86004',
     art: 'tapa sencilla crema para toma corriente 220v 86004',
     sku: '25989',
@@ -38515,7 +38521,7 @@
     url: 'https://ferremix.com.do/products/tapa-sencilla-crema-para-toma-corriente-220v-86004',
     nota: 'tapa sencilla crema para toma corriente 220v 86004 · artículo 25989 · marca Leviton. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_MAX, 295, {
+  c('MAT-10-215', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-plura-ngr-62051',
     art: 'TAPA CIEGA VETO PLURA NGR 62051',
     sku: '0001127207',
@@ -38523,7 +38529,7 @@
     url: 'https://maxferreteria.com/products/tapa-ciega-veto-plura-ngr-62051',
     nota: 'TAPA CIEGA VETO PLURA NGR 62051 · artículo 0001127207 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_MAX, 280, {
+  c('MAT-10-215', PROV_MAX, 280, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-veto-premiun-p-exterior-16672',
     art: 'TAPA CIEGA VETO PREMIUN P/EXTERIOR 16672',
     sku: '0001123886',
@@ -38531,7 +38537,7 @@
     url: 'https://maxferreteria.com/products/tapa-ciega-veto-premiun-p-exterior-16672',
     nota: 'TAPA CIEGA VETO PREMIUN P/EXTERIOR 16672 · artículo 0001123886 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_MAX, 119.99, {
+  c('MAT-10-215', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-marfil-veto-35499',
     art: 'TAPA CIEGA MARFIL VETO 35499',
     sku: '0001118659',
@@ -38539,7 +38545,7 @@
     url: 'https://maxferreteria.com/products/tapa-ciega-marfil-veto-35499',
     nota: 'TAPA CIEGA MARFIL VETO 35499 · artículo 0001118659 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-212', PROV_MAX, 115, {
+  c('MAT-10-215', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-ciega-blanca-veto-35482',
     art: 'TAPA CIEGA BLANCA VETO 35482',
     sku: '0001118639',
@@ -38547,7 +38553,7 @@
     url: 'https://maxferreteria.com/products/tapa-ciega-blanca-veto-35482',
     nota: 'TAPA CIEGA BLANCA VETO 35482 · artículo 0001118639 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-213', PROV_MAX, 95, {
+  c('MAT-10-216', PROV_MAX, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorriente-redon-t46411',
     art: 'TAPA PLAST P/TOMACORRIENTE REDON T46411',
     sku: '0001126250',
@@ -38555,7 +38561,7 @@
     url: 'https://maxferreteria.com/products/tapa-plast-p-tomacorriente-redon-t46411',
     nota: 'TAPA PLAST P/TOMACORRIENTE REDON T46411 · artículo 0001126250 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-213', PROV_MAX, 100, {
+  c('MAT-10-216', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-t-c-dob-ext-volteck-t46410',
     art: 'TAPA PLAST P/T C DOB EXT VOLTECK T46410',
     sku: '0001121351',
@@ -38563,7 +38569,7 @@
     url: 'https://maxferreteria.com/products/tapa-plast-p-t-c-dob-ext-volteck-t46410',
     nota: 'TAPA PLAST P/T C DOB EXT VOLTECK T46410 · artículo 0001121351 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-213', PROV_MAX, 25, {
+  c('MAT-10-216', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-plast-p-tomacorr-dob-volteck-t46406',
     art: 'TAPA PLAST P/TOMACORR DOB VOLTECK T46406',
     sku: '0001121350',
@@ -38571,7 +38577,7 @@
     url: 'https://maxferreteria.com/products/tapa-plast-p-tomacorr-dob-volteck-t46406',
     nota: 'TAPA PLAST P/TOMACORR DOB VOLTECK T46406 · artículo 0001121350 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 70, {
+  c('MAT-10-217', PROV_FERREMIX, 70, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-triple-modular',
     peso: 2,
     art: 'ALAMBRE ESTANDAR ROLLO DE 500M',
@@ -38580,7 +38586,7 @@
     url: 'https://ferremix.com.do/products/tapa-blanca-para-interruptor-triple-modular',
     nota: 'ALAMBRE ESTANDAR ROLLO DE 500M · artículo T47939 · ref. ROLLO · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 85, {
+  c('MAT-10-217', PROV_FERREMIX, 85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-triple-linea-italiana-t46394',
     peso: 2,
     art: 'CAJA DE REGISTRO PLASTICA',
@@ -38589,7 +38595,7 @@
     url: 'https://ferremix.com.do/products/tapa-color-madera-interruptor-o-tomacorriente-triple-linea-italiana-t46394',
     nota: 'CAJA DE REGISTRO PLASTICA · artículo T46394 · marca Volteck. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 40, {
+  c('MAT-10-217', PROV_FERREMIX, 40, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-blanca-para-interruptor-o-tomacorriente-triple',
     art: 'CLAVOS CORRIENTE',
     sku: 'T27224',
@@ -38597,7 +38603,7 @@
     url: 'https://ferremix.com.do/products/tapa-blanca-para-interruptor-o-tomacorriente-triple',
     nota: 'CLAVOS CORRIENTE · artículo T27224 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 520, {
+  c('MAT-10-217', PROV_FERREMIX, 520, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-metalica-triple-de-1-ventana-de-exterior',
     art: '@tapa metalica de 1 ventana para interperie linea',
     sku: 'T46428',
@@ -38605,7 +38611,7 @@
     url: 'https://ferremix.com.do/products/tapa-metalica-triple-de-1-ventana-de-exterior',
     nota: '@tapa metalica de 1 ventana para interperie linea · artículo T46428 · ref. T46428 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 105, {
+  c('MAT-10-217', PROV_FERREMIX, 105, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-triple-de-2-ventanas-linea-espanola',
     art: 'Tapa triple de 2 ventanas para interruptores',
     sku: 'T47065',
@@ -38613,7 +38619,7 @@
     url: 'https://ferremix.com.do/products/tapa-triple-de-2-ventanas-linea-espanola',
     nota: 'Tapa triple de 2 ventanas para interruptores · artículo T47065 · ref. T47065 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 170, {
+  c('MAT-10-217', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-de-1-modulo',
     art: 'Interruptor trple blanco lnea española volteck',
     sku: 'T45599',
@@ -38621,7 +38627,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-triple-de-1-modulo',
     nota: 'Interruptor trple blanco lnea española volteck · artículo T45599 · ref. T45599 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 99, {
+  c('MAT-10-217', PROV_FERREMIX, 99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-interruptor-triple-tipo-escalera-de-1-5-modulos',
     art: 'Interruptor de 3 vas blanco lnea española volteck',
     sku: 'T45600',
@@ -38629,7 +38635,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-interruptor-triple-tipo-escalera-de-1-5-modulos',
     nota: 'Interruptor de 3 vas blanco lnea española volteck · artículo T45600 · ref. T45600 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 239, {
+  c('MAT-10-217', PROV_FERREMIX, 239, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-linea-italiana',
     art: 'tapa con contacto triple aterrizados linea italiana',
     sku: 'T48669',
@@ -38637,7 +38643,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-linea-italiana',
     nota: 'tapa con contacto triple aterrizados linea italiana · artículo T48669 · ref. T48669 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-214', PROV_FERREMIX, 199, {
+  c('MAT-10-217', PROV_FERREMIX, 199, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-de-1-modulo-linea-espanola',
     art: 'Tomacorriene riple blanco linea española voleck',
     sku: 'T45598',
@@ -38645,7 +38651,7 @@
     url: 'https://ferremix.com.do/products/tapa-con-contacto-triple-aterrizados-de-1-modulo-linea-espanola',
     nota: 'Tomacorriene riple blanco linea española voleck · artículo T45598 · ref. T45598 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 820.01, {
+  c('MAT-10-218', PROV_MAX, 820.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-c-usb-972-30405',
     art: 'ADAPTADOR C/USB 972-30405',
     sku: '0001125918',
@@ -38653,7 +38659,7 @@
     url: 'https://maxferreteria.com/products/adaptador-c-usb-972-30405',
     nota: 'ADAPTADOR C/USB 972-30405 · artículo 0001125918 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 1360, {
+  c('MAT-10-218', PROV_MAX, 1360, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protec-4sl-c-usb-stanley-33202',
     art: 'ADAPTADOR PROTEC 4SL C/USB STANLEY 33202',
     sku: '0001094737',
@@ -38661,7 +38667,7 @@
     url: 'https://maxferreteria.com/products/adaptador-protec-4sl-c-usb-stanley-33202',
     nota: 'ADAPTADOR PROTEC 4SL C/USB STANLEY 33202 · artículo 0001094737 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 75, {
+  c('MAT-10-218', PROV_MAX, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-eu-usa-vimar-1351',
     art: 'ADAPTADOR EU/USA VIMAR 1351',
     sku: '0001014816',
@@ -38669,7 +38675,7 @@
     url: 'https://maxferreteria.com/products/adaptador-eu-usa-vimar-1351',
     nota: 'ADAPTADOR EU/USA VIMAR 1351 · artículo 0001014816 · ref. Sin especificaciones parseables en el nombre · marca VIMAR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 45.01, {
+  c('MAT-10-218', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-enchufe-usa-a-eu-voltech-46246',
     peso: 3,
     art: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246',
@@ -38678,7 +38684,7 @@
     url: 'https://maxferreteria.com/products/adaptador-enchufe-usa-a-eu-voltech-46246',
     nota: 'ADAPTADOR ENCHUFE USA A EU VOLTECH 46246 · artículo 0001128664 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 285.01, {
+  c('MAT-10-218', PROV_MAX, 285.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-d-6-salida-12cm-972-30346',
     art: 'ADAPTADOR D/6 SALIDA 12CM 972-30346',
     sku: '0001125928',
@@ -38686,7 +38692,7 @@
     url: 'https://maxferreteria.com/products/adaptador-d-6-salida-12cm-972-30346',
     nota: 'ADAPTADOR D/6 SALIDA 12CM 972-30346 · artículo 0001125928 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-215', PROV_MAX, 150, {
+  c('MAT-10-218', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-giratorio-c-3-972-30357',
     art: 'ADAPTADOR GIRATORIO C/3 972-30357',
     sku: '0001125925',
@@ -38694,7 +38700,7 @@
     url: 'https://maxferreteria.com/products/adaptador-giratorio-c-3-972-30357',
     nota: 'ADAPTADOR GIRATORIO C/3 972-30357 · artículo 0001125925 · ref. Sin especificaciones parseables en el nombre · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 465, {
+  c('MAT-10-219', PROV_MAX, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-macho-europ-50amp-43210',
     art: 'ENCHUFE MACHO EUROP. 50AMP 43210',
     sku: '0001118607',
@@ -38702,14 +38708,14 @@
     url: 'https://maxferreteria.com/products/enchufe-macho-europ-50amp-43210',
     nota: 'ENCHUFE MACHO EUROP. 50AMP 43210 · artículo 0001118607 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 125, {
+  c('MAT-10-219', PROV_MAX, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-amarillo-t-leviton-15a-pbp317',
     art: 'ENCHUFE AMARILLO T/LEVITON 15A PBP317H',
     sku: '0001127423',
     url: 'https://maxferreteria.com/products/enchufe-amarillo-t-leviton-15a-pbp317',
     nota: 'ENCHUFE AMARILLO T/LEVITON 15A PBP317H · artículo 0001127423 · ref. Sin especificaciones parseables en el nombre. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 55, {
+  c('MAT-10-219', PROV_MAX, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plast-aterr-clp-a-voltech-t46205',
     peso: 3,
     art: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205',
@@ -38718,7 +38724,7 @@
     url: 'https://maxferreteria.com/products/enchufe-plast-aterr-clp-a-voltech-t46205',
     nota: 'ENCHUFE PLAST ATERR CLP-A VOLTECH T46205 · artículo 0001121354 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 50, {
+  c('MAT-10-219', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-plano-set-2pzs-t46209',
     peso: 3,
     art: 'ENCHUFE PLANO SET 2PZS T46209',
@@ -38727,7 +38733,7 @@
     url: 'https://maxferreteria.com/products/enchufe-plano-set-2pzs-t46209',
     nota: 'ENCHUFE PLANO SET 2PZS T46209 · artículo 0001126251 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 60, {
+  c('MAT-10-219', PROV_MAX, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-blind-aterrizado-voltech-t46202',
     peso: 3,
     art: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202',
@@ -38736,7 +38742,7 @@
     url: 'https://maxferreteria.com/products/enchufe-blind-aterrizado-voltech-t46202',
     nota: 'ENCHUFE BLIND ATERRIZADO VOLTECH T46202 · artículo 0001121357 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-216', PROV_MAX, 290, {
+  c('MAT-10-219', PROV_MAX, 290, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/enchufe-leviton-15a-110v-cuerpo-m-515pa',
     art: 'ENCHUFE LEVITON 15A 110V CUERPO M. 515PA',
     sku: '0001006690',
@@ -38744,28 +38750,28 @@
     url: 'https://maxferreteria.com/products/enchufe-leviton-15a-110v-cuerpo-m-515pa',
     nota: 'ENCHUFE LEVITON 15A 110V CUERPO M. 515PA · artículo 0001006690 · ref. Sin especificaciones parseables en el nombre · marca LEVITON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-217', PROV_BELLON, 430.24, {
+  c('MAT-10-220', PROV_BELLON, 430.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 15A ABB/GE THQL1115',
     sku: '18607',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 15A ABB/GE THQL1115 · artículo 18607. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-217', PROV_BELLON, 447.27, {
+  c('MAT-10-220', PROV_BELLON, 447.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 1P 1/2" 15A ABB/GE THQP115',
     sku: '18619',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 1P 1/2" 15A ABB/GE THQP115 · artículo 18619. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-217', PROV_BELLON, 790, {
+  c('MAT-10-220', PROV_BELLON, 790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 15A Eaton BR115',
     sku: '202552',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 15A Eaton BR115 · artículo 202552. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-218', PROV_MAX, 485, {
+  c('MAT-10-221', PROV_MAX, 485, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp115-1p-15a-fino',
     art: 'BREAKER GE THQP115 1P 15A (FINO)',
     sku: '0001001074',
@@ -38773,28 +38779,28 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thqp115-1p-15a-fino',
     nota: 'BREAKER GE THQP115 1P 15A (FINO) · artículo 0001001074 · ref. Polos 1P | Capacidad 15 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 374.13, {
+  c('MAT-10-222', PROV_BELLON, 374.13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 20A ABB/GE THQL1120',
     sku: '18609',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 20A ABB/GE THQL1120 · artículo 18609. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 447.27, {
+  c('MAT-10-222', PROV_BELLON, 447.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 1P 1/2" 20A ABB/GE THQP120',
     sku: '18620',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 1P 1/2" 20A ABB/GE THQP120 · artículo 18620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-219', PROV_BELLON, 742, {
+  c('MAT-10-222', PROV_BELLON, 742, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 20A Eaton BR120',
     sku: '202553',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 20A Eaton BR120 · artículo 202553. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-220', PROV_MAX, 500, {
+  c('MAT-10-223', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp120-1p-20a-fino',
     art: 'BREAKER GE THQP120 1P 20A (FINO)',
     sku: '0001001075',
@@ -38802,7 +38808,7 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thqp120-1p-20a-fino',
     nota: 'BREAKER GE THQP120 1P 20A (FINO) · artículo 0001001075 · ref. Polos 1P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-221', PROV_MAX, 470.01, {
+  c('MAT-10-224', PROV_MAX, 470.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1130-1p-30a',
     art: 'BREAKER GE THQL1130 1P 30A',
     sku: '0001000808',
@@ -38810,28 +38816,28 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql1130-1p-30a',
     nota: 'BREAKER GE THQL1130 1P 30A · artículo 0001000808 · ref. Polos 1P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-221', PROV_BELLON, 374.1, {
+  c('MAT-10-224', PROV_BELLON, 374.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 30A ABB/GE THQL1130',
     sku: '18611',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 30A ABB/GE THQL1130 · artículo 18611. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-221', PROV_BELLON, 424.55, {
+  c('MAT-10-224', PROV_BELLON, 424.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 1P 1/2" 30A ABB/GE THQP130',
     sku: '18621',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 1P 1/2" 30A ABB/GE THQP130 · artículo 18621. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-221', PROV_BELLON, 845, {
+  c('MAT-10-224', PROV_BELLON, 845, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 30A Eaton BR130',
     sku: '202554',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 30A Eaton BR130 · artículo 202554. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-222', PROV_MAX, 505, {
+  c('MAT-10-225', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp130-1p-30a-fino',
     art: 'BREAKER GE THQP130 1P 30A (FINO)',
     sku: '0001001076',
@@ -38839,7 +38845,7 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thqp130-1p-30a-fino',
     nota: 'BREAKER GE THQP130 1P 30A (FINO) · artículo 0001001076 · ref. Polos 1P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_FERREMIX, 170, {
+  c('MAT-10-226', PROV_FERREMIX, 170, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/breaker-termomagnetico-1-polo-40amp',
     art: 'BREAKER TERMOMAGNETICO 1 POLO 40AMP',
     sku: 'T47509',
@@ -38847,42 +38853,42 @@
     url: 'https://ferremix.com.do/products/breaker-termomagnetico-1-polo-40amp',
     nota: 'BREAKER TERMOMAGNETICO 1 POLO 40AMP · artículo T47509 · marca Volteck. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 495, {
+  c('MAT-10-226', PROV_BELLON, 495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 40A ABB/ GE THQL1140',
     sku: '18614',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 40A ABB/ GE THQL1140 · artículo 18614. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 481.33, {
+  c('MAT-10-226', PROV_BELLON, 481.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 1P 1/2" 40A ABB/GE THQP140',
     sku: '18622',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 1P 1/2" 40A ABB/GE THQP140 · artículo 18622. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-223', PROV_BELLON, 929, {
+  c('MAT-10-226', PROV_BELLON, 929, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 40A Eaton BR140',
     sku: '202555',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 40A Eaton BR140 · artículo 202555. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-224', PROV_BELLON, 495, {
+  c('MAT-10-227', PROV_BELLON, 495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 50A ABB/GE THQL1150',
     sku: '18616',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 50A ABB/GE THQL1150 · artículo 18616. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-224', PROV_BELLON, 515, {
+  c('MAT-10-227', PROV_BELLON, 515, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 1P 1/2" 50A ABB/GE THQP150',
     sku: '18623',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 1P 1/2" 50A ABB/GE THQP150 · artículo 18623. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-225', PROV_MAX, 815, {
+  c('MAT-10-228', PROV_MAX, 815, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql1160-1p-60a',
     art: 'BREAKER GE THQL1160 1P 60A',
     sku: '0001000816',
@@ -38890,49 +38896,49 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql1160-1p-60a',
     nota: 'BREAKER GE THQL1160 1P 60A · artículo 0001000816 · ref. Polos 1P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-225', PROV_BELLON, 717.63, {
+  c('MAT-10-228', PROV_BELLON, 717.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 1P 1" 60A ABB/GE THQL1160',
     sku: '18618',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 1P 1" 60A ABB/GE THQL1160 · artículo 18618. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-226', PROV_BELLON, 2820, {
+  c('MAT-10-229', PROV_BELLON, 2820, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 100A ABB/GE THQL21100',
     sku: '18624',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 100A ABB/GE THQL21100 · artículo 18624. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-226', PROV_BELLON, 3586, {
+  c('MAT-10-229', PROV_BELLON, 3586, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 100A Eaton BR2100',
     sku: '202556',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 100A Eaton BR2100 · artículo 202556. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-227', PROV_BELLON, 969.78, {
+  c('MAT-10-230', PROV_BELLON, 969.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 15A ABB/GE THQL2115',
     sku: '18625',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 15A ABB/GE THQL2115 · artículo 18625. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-227', PROV_BELLON, 1061.42, {
+  c('MAT-10-230', PROV_BELLON, 1061.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 2P 15A ABB/GE THQP215',
     sku: '18634',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 2P 15A ABB/GE THQP215 · artículo 18634. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-227', PROV_BELLON, 1379, {
+  c('MAT-10-230', PROV_BELLON, 1379, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 15A Eaton BR215',
     sku: '202557',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 15A Eaton BR215 · artículo 202557. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_MAX, 1134.99, {
+  c('MAT-10-231', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2120-2p-20a',
     art: 'BREAKER GE THQL2120 2P 20A',
     sku: '0001000818',
@@ -38940,28 +38946,28 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql2120-2p-20a',
     nota: 'BREAKER GE THQL2120 2P 20A · artículo 0001000818 · ref. Polos 2P | Capacidad 20 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 1135, {
+  c('MAT-10-231', PROV_BELLON, 1135, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 20A ABB/GE THQL2120',
     sku: '18626',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 20A ABB/GE THQL2120 · artículo 18626. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 1180, {
+  c('MAT-10-231', PROV_BELLON, 1180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 2P 20A ABB/GE THQP220',
     sku: '18636',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 2P 20A ABB/GE THQP220 · artículo 18636. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-228', PROV_BELLON, 1425, {
+  c('MAT-10-231', PROV_BELLON, 1425, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 20A Eaton BR220',
     sku: '202558',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 20A Eaton BR220 · artículo 202558. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-229', PROV_MAX, 1195, {
+  c('MAT-10-232', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp220-2p-20a',
     art: 'BREAKER GE THQP220 2P 20A',
     sku: '0001000803',
@@ -38969,7 +38975,7 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thqp220-2p-20a',
     nota: 'BREAKER GE THQP220 2P 20A · artículo 0001000803 · ref. Polos 2P | Capacidad 20 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_MAX, 1134.99, {
+  c('MAT-10-233', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2130-2p-30a',
     art: 'BREAKER GE THQL2130 2P 30A',
     sku: '0001000826',
@@ -38977,28 +38983,28 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql2130-2p-30a',
     nota: 'BREAKER GE THQL2130 2P 30A · artículo 0001000826 · ref. Polos 2P | Capacidad 30 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 1025, {
+  c('MAT-10-233', PROV_BELLON, 1025, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 30A ABB/GE THQL2130',
     sku: '18627',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 30A ABB/GE THQL2130 · artículo 18627. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 1180, {
+  c('MAT-10-233', PROV_BELLON, 1180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 2P 30A ABB/GE THQP230',
     sku: '18638',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 2P 30A ABB/GE THQP230 · artículo 18638. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-230', PROV_BELLON, 896, {
+  c('MAT-10-233', PROV_BELLON, 896, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 30A Eaton BR230',
     sku: '202559',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 30A Eaton BR230 · artículo 202559. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-231', PROV_MAX, 1165, {
+  c('MAT-10-234', PROV_MAX, 1165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thqp230-2p-30a',
     art: 'BREAKER GE THQP230 2P 30A',
     sku: '0001000804',
@@ -39006,7 +39012,7 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thqp230-2p-30a',
     nota: 'BREAKER GE THQP230 2P 30A · artículo 0001000804 · ref. Polos 2P | Capacidad 30 A | Serie GE THQP (fino / medio espacio) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-232', PROV_MAX, 1134.99, {
+  c('MAT-10-235', PROV_MAX, 1134.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2140-2p-40a',
     art: 'BREAKER GE THQL2140 2P 40A',
     sku: '0001000827',
@@ -39014,49 +39020,49 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql2140-2p-40a',
     nota: 'BREAKER GE THQL2140 2P 40A · artículo 0001000827 · ref. Polos 2P | Capacidad 40 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-232', PROV_BELLON, 1055, {
+  c('MAT-10-235', PROV_BELLON, 1055, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 40A ABB/GE THQL2140',
     sku: '18628',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 40A ABB/GE THQL2140 · artículo 18628. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-232', PROV_BELLON, 976.05, {
+  c('MAT-10-235', PROV_BELLON, 976.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 2P 40A ABB/GE THQP240',
     sku: '18639',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 2P 40A ABB/GE THQP240 · artículo 18639. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-232', PROV_BELLON, 1013, {
+  c('MAT-10-235', PROV_BELLON, 1013, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 40A Eaton BR240',
     sku: '202679',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 40A Eaton BR240 · artículo 202679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 999.95, {
+  c('MAT-10-236', PROV_BELLON, 999.95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 50A ABB/GE THQL2150',
     sku: '18629',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 50A ABB/GE THQL2150 · artículo 18629. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 1215, {
+  c('MAT-10-236', PROV_BELLON, 1215, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Fino 2P ABB/50A GE THQP250',
     sku: '18640',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Fino 2P ABB/50A GE THQP250 · artículo 18640. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-233', PROV_BELLON, 1354, {
+  c('MAT-10-236', PROV_BELLON, 1354, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 50A Eaton BR250',
     sku: '202560',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 50A Eaton BR250 · artículo 202560. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-234', PROV_MAX, 1189.99, {
+  c('MAT-10-237', PROV_MAX, 1189.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/breaker-ge-thql2160-2p-60a',
     art: 'BREAKER GE THQL2160 2P 60A',
     sku: '0001000835',
@@ -39064,203 +39070,203 @@
     url: 'https://maxferreteria.com/products/breaker-ge-thql2160-2p-60a',
     nota: 'BREAKER GE THQL2160 2P 60A · artículo 0001000835 · ref. Polos 2P | Capacidad 60 A | Serie GE THQL (enchufable estandar) · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-234', PROV_BELLON, 1100, {
+  c('MAT-10-237', PROV_BELLON, 1100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 60A ABB/GE THQL2160',
     sku: '18630',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 60A ABB/GE THQL2160 · artículo 18630. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-234', PROV_BELLON, 1977, {
+  c('MAT-10-237', PROV_BELLON, 1977, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 60A Eaton BR260',
     sku: '202561',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 60A Eaton BR260 · artículo 202561. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-235', PROV_BELLON, 2720, {
+  c('MAT-10-238', PROV_BELLON, 2720, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 70A ABB/GE THQL2170',
     sku: '18631',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 70A ABB/GE THQL2170 · artículo 18631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-235', PROV_BELLON, 3199, {
+  c('MAT-10-238', PROV_BELLON, 3199, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 70A Eaton BR270',
     sku: '202562',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 70A Eaton BR270 · artículo 202562. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-236', PROV_BELLON, 2547.97, {
+  c('MAT-10-239', PROV_BELLON, 2547.97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 80A ABB/GE THQL2180',
     sku: '18632',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 80A ABB/GE THQL2180 · artículo 18632. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-236', PROV_BELLON, 3073, {
+  c('MAT-10-239', PROV_BELLON, 3073, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 80A Eaton BR280',
     sku: '202563',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 80A Eaton BR280 · artículo 202563. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-237', PROV_BELLON, 2968, {
+  c('MAT-10-240', PROV_BELLON, 2968, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 2P 90A Eaton BR290',
     sku: '209311',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 2P 90A Eaton BR290 · artículo 209311. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-238', PROV_BELLON, 6940, {
+  c('MAT-10-241', PROV_BELLON, 6940, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 100A ABB/GE THQL32100',
     sku: '18641',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 100A ABB/GE THQL32100 · artículo 18641. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-239', PROV_BELLON, 3815, {
+  c('MAT-10-242', PROV_BELLON, 3815, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 15A ABB/GE THQL32015',
     sku: '18643',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 15A ABB/GE THQL32015 · artículo 18643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-239', PROV_BELLON, 2309, {
+  c('MAT-10-242', PROV_BELLON, 2309, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 15A Eaton BR315',
     sku: '202565',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 15A Eaton BR315 · artículo 202565. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-240', PROV_BELLON, 3815, {
+  c('MAT-10-243', PROV_BELLON, 3815, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 20A ABB/GE THQL32020',
     sku: '18644',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 20A ABB/GE THQL32020 · artículo 18644. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-240', PROV_BELLON, 5787, {
+  c('MAT-10-243', PROV_BELLON, 5787, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 20A Eaton BR320',
     sku: '202566',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 20A Eaton BR320 · artículo 202566. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_BELLON, 4310, {
+  c('MAT-10-244', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 40A ABB/GE THQL32040',
     sku: '18647',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 40A ABB/GE THQL32040 · artículo 18647. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-241', PROV_BELLON, 4405, {
+  c('MAT-10-244', PROV_BELLON, 4405, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 40A Eaton BR340',
     sku: '202680',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 40A Eaton BR340 · artículo 202680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-242', PROV_BELLON, 4310, {
+  c('MAT-10-245', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P ABB/50A GE THQL32050',
     sku: '18649',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P ABB/50A GE THQL32050 · artículo 18649. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-242', PROV_BELLON, 5787, {
+  c('MAT-10-245', PROV_BELLON, 5787, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 50A Eaton BR350',
     sku: '202568',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 50A Eaton BR350 · artículo 202568. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-243', PROV_BELLON, 4310, {
+  c('MAT-10-246', PROV_BELLON, 4310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 60A ABB/GE THQL32060',
     sku: '18651',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 60A ABB/GE THQL32060 · artículo 18651. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-243', PROV_BELLON, 3933, {
+  c('MAT-10-246', PROV_BELLON, 3933, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 60A Eaton BR360',
     sku: '202681',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 60A Eaton BR360 · artículo 202681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-244', PROV_BELLON, 5710, {
+  c('MAT-10-247', PROV_BELLON, 5710, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 70A ABB/GE THQL32070',
     sku: '18653',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 70A ABB/GE THQL32070 · artículo 18653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-244', PROV_BELLON, 5328, {
+  c('MAT-10-247', PROV_BELLON, 5328, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 70A Eaton BR370',
     sku: '202569',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 70A Eaton BR370 · artículo 202569. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-245', PROV_BELLON, 6380, {
+  c('MAT-10-248', PROV_BELLON, 6380, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 80A ABB/GE THQL32080',
     sku: '18654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 80A ABB/GE THQL32080 · artículo 18654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-245', PROV_BELLON, 5739, {
+  c('MAT-10-248', PROV_BELLON, 5739, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 80A Eaton BR380',
     sku: '202570',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 80A Eaton BR380 · artículo 202570. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-246', PROV_BELLON, 5128.24, {
+  c('MAT-10-249', PROV_BELLON, 5128.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 90A ABB/GE THQL32090',
     sku: '18655',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 90A ABB/GE THQL32090 · artículo 18655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-246', PROV_BELLON, 4647, {
+  c('MAT-10-249', PROV_BELLON, 4647, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Breaker Grueso 3P 90A Eaton BR390',
     sku: '209312',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Breaker Grueso 3P 90A Eaton BR390 · artículo 209312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-247', PROV_BELLON, 9622.41, {
+  c('MAT-10-250', PROV_BELLON, 9622.41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 3F 1 Circuitos 240V 100A ABB/GE TQL-100S',
     sku: '82759',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 3F 1 Circuitos 240V 100A ABB/GE TQL-100S · artículo 82759. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-248', PROV_BELLON, 3920, {
+  c('MAT-10-251', PROV_BELLON, 3920, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 6-12 Circuitos 240V 125A ABB/GE TLM612FCUD',
     sku: '18733',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 6-12 Circuitos 240V 125A ABB/GE TLM612FCUD · artículo 18733. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-248', PROV_BELLON, 7731.92, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 12 Circuitos 240V 125A ABB/GE TL12412C',
-    sku: '18737',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 12 Circuitos 240V 125A ABB/GE TL12412C · artículo 18737. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-248', PROV_BELLON, 3829, {
+  c('MAT-10-251', PROV_BELLON, 3829, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 6-12 Circuitos 240V 125A Eaton BR612L125FP',
     sku: '202577',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 6-12 Circuitos 240V 125A Eaton BR612L125FP · artículo 202577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_MAX, 4755, {
+  c('MAT-10-252', PROV_BELLON, 7731.92, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 12 Circuitos 240V 125A ABB/GE TL12412C',
+    sku: '18737',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 12 Circuitos 240V 125A ABB/GE TL12412C · artículo 18737. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-253', PROV_MAX, 4755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-8-16-circ-tlm812fcud',
     art: 'PANEL BREAKER GE 8-16 CIRC. TLM812FCUD',
     sku: '0001000355',
@@ -39268,260 +39274,49 @@
     url: 'https://maxferreteria.com/products/panel-breaker-ge-8-16-circ-tlm812fcud',
     nota: 'PANEL BREAKER GE 8-16 CIRC. TLM812FCUD · artículo 0001000355 · ref. Sin especificaciones parseables en el nombre · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_BELLON, 4715, {
+  c('MAT-10-253', PROV_BELLON, 4715, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 8-16 Circuitos 240V 125A ABB/GE TLM812FCUD',
     sku: '18736',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 8-16 Circuitos 240V 125A ABB/GE TLM812FCUD · artículo 18736. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_BELLON, 3943, {
+  c('MAT-10-253', PROV_BELLON, 3943, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 8-16 Circuitos 240V 125A Eaton BR816L125FDP',
     sku: '202578',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 8-16 Circuitos 240V 125A Eaton BR816L125FDP · artículo 202578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_BELLON, 4044, {
+  c('MAT-10-253', PROV_BELLON, 4044, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 8-16 Circuitos 120/240V 125A Nema-1 Eaton BR816ML125CRF',
     sku: '209506',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 8-16 Circuitos 120/240V 125A Nema-1 Eaton BR816ML125CRF · artículo 209506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-249', PROV_BELLON, 1522, {
+  c('MAT-10-253', PROV_BELLON, 1522, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 8-16 Circuitos 120/240V 125A Tipo General 2887',
     sku: '226296',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 8-16 Circuitos 120/240V 125A Tipo General 2887 · artículo 226296. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-250', PROV_BELLON, 14240, {
+  c('MAT-10-254', PROV_BELLON, 14240, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 3F 18 Circuitos 240V 150A ABB/GE TL18415C',
     sku: '18739',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 3F 18 Circuitos 240V 150A ABB/GE TL18415C · artículo 18739. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-251', PROV_BELLON, 180, {
+  c('MAT-10-255', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Caja Breaker 1F 2 Circuitos 120/240V 40A Tipo General',
     sku: '223576',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Caja Breaker 1F 2 Circuitos 120/240V 40A Tipo General · artículo 223576. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-252', PROV_BELLON, 6220, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 14-24 Circuitos 240V 125A ABB/GE TLM1212CCU',
-    sku: '18707',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 14-24 Circuitos 240V 125A ABB/GE TLM1212CCU · artículo 18707. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-252', PROV_BELLON, 9240, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 24 Circuitos 240V 125A ABB/GE TLM2412CCU PAL2412',
-    sku: '18722',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 24 Circuitos 240V 125A ABB/GE TLM2412CCU PAL2412 · artículo 18722. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-252', PROV_BELLON, 13850, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 24 Circuitos 240V 150A ABB/GE TL24415C',
-    sku: '18740',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 24 Circuitos 240V 150A ABB/GE TL24415C · artículo 18740. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-252', PROV_BELLON, 13599, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Eaton 3BR1224L125',
-    sku: '202580',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Eaton 3BR1224L125 · artículo 202580. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-252', PROV_BELLON, 33115, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Nema-3R Eaton 3BR1224L125R',
-    sku: '202682',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Nema-3R Eaton 3BR1224L125R · artículo 202682. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-252', PROV_BELLON, 4431, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 12-24 Circuitos 120/240V 125A Nema-1 Eaton BR1224ML125CRF',
-    sku: '209503',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 12-24 Circuitos 120/240V 125A Nema-1 Eaton BR1224ML125CRF · artículo 209503. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-253', PROV_BELLON, 5730, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 3 Circuitos 240V 100A Nema-1 Eaton 3BR3L100S',
-    sku: '208597',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 3 Circuitos 240V 100A Nema-1 Eaton 3BR3L100S · artículo 208597. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-254', PROV_BELLON, 14169.46, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 30 Circuitos 240V 200A ABB/GE TL30420C',
-    sku: '18743',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 30 Circuitos 240V 200A ABB/GE TL30420C · artículo 18743. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-255', PROV_BELLON, 8136.48, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 16-32 Circuitos 240V 125A ABB/GE TLM1612CCU / PAL1612',
-    sku: '18708',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 16-32 Circuitos 240V 125A ABB/GE TLM1612CCU / PAL1612 · artículo 18708. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-256', PROV_BELLON, 16369, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 18-36 Circuitos 208/120V 150A Eaton 3BR1836L150',
-    sku: '202581',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 18-36 Circuitos 208/120V 150A Eaton 3BR1836L150 · artículo 202581. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-257', PROV_BELLON, 1855, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 2-4 Circuitos 240V 40A ABB/GE TL240SCU',
-    sku: '82402',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A ABB/GE TL240SCU · artículo 82402. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-257', PROV_BELLON, 2442, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 2-4 Circuitos 240V 70A Eaton BR24L70FP',
-    sku: '202573',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 70A Eaton BR24L70FP · artículo 202573. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-257', PROV_BELLON, 629, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 2-4 Circuitos 240V 40A Tipo General',
-    sku: '223575',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A Tipo General · artículo 223575. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-258', PROV_BELLON, 9743.09, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 20-40 Circuitos 240V 200A ABB/GE TLM1620CCU PAL2020',
-    sku: '58859',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 20-40 Circuitos 240V 200A ABB/GE TLM1620CCU PAL2020 · artículo 58859. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 11250.61, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 42 Circuitos 240V 225A ABB/GE TLM4222CCU PAL4022',
-    sku: '18732',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 42 Circuitos 240V 225A ABB/GE TLM4222CCU PAL4022 · artículo 18732. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 21330, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos 240V 200A ABB/GE TL42420C',
-    sku: '18744',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos 240V 200A ABB/GE TL42420C · artículo 18744. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 18912.91, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos 240V 225A ABB/GE TL42422C',
-    sku: '18745',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A ABB/GE TL42422C · artículo 18745. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 22869, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos 240V 225A Eaton 3BR4242L225',
-    sku: '202575',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Eaton 3BR4242L225 · artículo 202575. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 15860, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 24-42 Circuitos 240V 150A Eaton 3BR2442L150',
-    sku: '202582',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 24-42 Circuitos 240V 150A Eaton 3BR2442L150 · artículo 202582. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 16662, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos 208/120V 200A Eaton 3BR4242L200',
-    sku: '202583',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos 208/120V 200A Eaton 3BR4242L200 · artículo 202583. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 22480, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos Con Main Breaker 150A Eaton 3BR3042B150',
-    sku: '202587',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos Con Main Breaker 150A Eaton 3BR3042B150 · artículo 202587. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-259', PROV_BELLON, 21870, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 3F 42 Circuitos 240V 225A Nema-3R Eaton 3BR4242L225R',
-    sku: '222125',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Nema-3R Eaton 3BR4242L225R · artículo 222125. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-260', PROV_BELLON, 11883, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 24-48 Circuitos 240V 125A Eaton BRP24L125G',
-    sku: '234615',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 24-48 Circuitos 240V 125A Eaton BRP24L125G · artículo 234615. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-261', PROV_BELLON, 10527.54, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 30-60 Circuitos 240V 200A ABB/GE TLM3220CCU / PAL3020',
-    sku: '83040',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 30-60 Circuitos 240V 200A ABB/GE TLM3220CCU / PAL3020 · artículo 83040. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_MAX, 566, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
-    art: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA',
-    sku: '0001128966',
-    marca: 'IBER',
-    url: 'https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
-    nota: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA · artículo 0001128966 · ref. Sin especificaciones parseables en el nombre · marca IBER. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_BELLON, 2620.57, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A ABB/GE TL412C',
-    sku: '18725',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A ABB/GE TL412C · artículo 18725. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_BELLON, 1239, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 4-8 Circuitos 240V 125A Eaton BR48L125FP',
-    sku: '202576',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 4-8 Circuitos 240V 125A Eaton BR48L125FP · artículo 202576. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_BELLON, 3603, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRF',
-    sku: '209504',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRF · artículo 209504. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_BELLON, 6205, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRS',
-    sku: '209505',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRS · artículo 209505. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-262', PROV_BELLON, 1145, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A Tipo General 4636',
-    sku: '224956',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A Tipo General 4636 · artículo 224956. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-10-263', PROV_MAX, 6160, {
+  c('MAT-10-256', PROV_MAX, 6160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/panel-breaker-ge-14a24-125amp-tlm1212ccu',
     art: 'PANEL BREAKER GE 14A24 125AMP TLM1212CCU',
     sku: '0001025983',
@@ -39529,23 +39324,218 @@
     url: 'https://maxferreteria.com/products/panel-breaker-ge-14a24-125amp-tlm1212ccu',
     nota: 'PANEL BREAKER GE 14A24 125AMP TLM1212CCU · artículo 0001025983 · ref. Capacidad 125 A · marca GENERALELECTRIC. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-264', PROV_MAX, 815, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-25amp-220v-25001',
-    art: 'CAJA BREAKER VETO 25AMP 220V 25001',
-    sku: '0001127231',
-    marca: 'VETO',
-    url: 'https://maxferreteria.com/products/caja-breaker-veto-25amp-220v-25001',
-    nota: 'CAJA BREAKER VETO 25AMP 220V 25001 · artículo 0001127231 · ref. Capacidad 25 A | Tension 220 V · marca VETO. ' + SUPUESTO_ITBIS
+  c('MAT-10-256', PROV_BELLON, 6220, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 14-24 Circuitos 240V 125A ABB/GE TLM1212CCU',
+    sku: '18707',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 14-24 Circuitos 240V 125A ABB/GE TLM1212CCU · artículo 18707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-265', PROV_MAX, 700, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-veto-32amp-32016',
-    art: 'CAJA BREAKER VETO 32AMP 32016',
-    sku: '0001118600',
-    marca: 'VETO',
-    url: 'https://maxferreteria.com/products/caja-breaker-veto-32amp-32016',
-    nota: 'CAJA BREAKER VETO 32AMP 32016 · artículo 0001118600 · ref. Capacidad 32 A · marca VETO. ' + SUPUESTO_ITBIS
+  c('MAT-10-256', PROV_BELLON, 9240, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 24 Circuitos 240V 125A ABB/GE TLM2412CCU PAL2412',
+    sku: '18722',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 24 Circuitos 240V 125A ABB/GE TLM2412CCU PAL2412 · artículo 18722. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-266', PROV_MAX, 675, {
+  c('MAT-10-256', PROV_BELLON, 4431, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 12-24 Circuitos 120/240V 125A Nema-1 Eaton BR1224ML125CRF',
+    sku: '209503',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 12-24 Circuitos 120/240V 125A Nema-1 Eaton BR1224ML125CRF · artículo 209503. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-257', PROV_BELLON, 13850, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 24 Circuitos 240V 150A ABB/GE TL24415C',
+    sku: '18740',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 24 Circuitos 240V 150A ABB/GE TL24415C · artículo 18740. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-257', PROV_BELLON, 13599, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Eaton 3BR1224L125',
+    sku: '202580',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Eaton 3BR1224L125 · artículo 202580. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-257', PROV_BELLON, 33115, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Nema-3R Eaton 3BR1224L125R',
+    sku: '202682',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 12-24 Circuitos 240V 125A Nema-3R Eaton 3BR1224L125R · artículo 202682. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-258', PROV_BELLON, 5730, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 3 Circuitos 240V 100A Nema-1 Eaton 3BR3L100S',
+    sku: '208597',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 3 Circuitos 240V 100A Nema-1 Eaton 3BR3L100S · artículo 208597. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-259', PROV_BELLON, 14169.46, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 30 Circuitos 240V 200A ABB/GE TL30420C',
+    sku: '18743',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 30 Circuitos 240V 200A ABB/GE TL30420C · artículo 18743. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-260', PROV_BELLON, 8136.48, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 16-32 Circuitos 240V 125A ABB/GE TLM1612CCU / PAL1612',
+    sku: '18708',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 16-32 Circuitos 240V 125A ABB/GE TLM1612CCU / PAL1612 · artículo 18708. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-261', PROV_BELLON, 16369, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 18-36 Circuitos 208/120V 150A Eaton 3BR1836L150',
+    sku: '202581',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 18-36 Circuitos 208/120V 150A Eaton 3BR1836L150 · artículo 202581. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-262', PROV_BELLON, 1855, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 2-4 Circuitos 240V 40A ABB/GE TL240SCU',
+    sku: '82402',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A ABB/GE TL240SCU · artículo 82402. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-262', PROV_BELLON, 2442, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 2-4 Circuitos 240V 70A Eaton BR24L70FP',
+    sku: '202573',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 70A Eaton BR24L70FP · artículo 202573. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-262', PROV_BELLON, 629, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 2-4 Circuitos 240V 40A Tipo General',
+    sku: '223575',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 2-4 Circuitos 240V 40A Tipo General · artículo 223575. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-263', PROV_BELLON, 9743.09, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 20-40 Circuitos 240V 200A ABB/GE TLM1620CCU PAL2020',
+    sku: '58859',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 20-40 Circuitos 240V 200A ABB/GE TLM1620CCU PAL2020 · artículo 58859. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-264', PROV_BELLON, 11250.61, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 42 Circuitos 240V 225A ABB/GE TLM4222CCU PAL4022',
+    sku: '18732',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 42 Circuitos 240V 225A ABB/GE TLM4222CCU PAL4022 · artículo 18732. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 21330, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos 240V 200A ABB/GE TL42420C',
+    sku: '18744',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos 240V 200A ABB/GE TL42420C · artículo 18744. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 18912.91, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos 240V 225A ABB/GE TL42422C',
+    sku: '18745',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A ABB/GE TL42422C · artículo 18745. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 22869, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos 240V 225A Eaton 3BR4242L225',
+    sku: '202575',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Eaton 3BR4242L225 · artículo 202575. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 15860, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 24-42 Circuitos 240V 150A Eaton 3BR2442L150',
+    sku: '202582',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 24-42 Circuitos 240V 150A Eaton 3BR2442L150 · artículo 202582. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 16662, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos 208/120V 200A Eaton 3BR4242L200',
+    sku: '202583',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos 208/120V 200A Eaton 3BR4242L200 · artículo 202583. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 22480, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos Con Main Breaker 150A Eaton 3BR3042B150',
+    sku: '202587',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos Con Main Breaker 150A Eaton 3BR3042B150 · artículo 202587. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-265', PROV_BELLON, 21870, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 3F 42 Circuitos 240V 225A Nema-3R Eaton 3BR4242L225R',
+    sku: '222125',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 3F 42 Circuitos 240V 225A Nema-3R Eaton 3BR4242L225R · artículo 222125. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-266', PROV_BELLON, 11883, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 24-48 Circuitos 240V 125A Eaton BRP24L125G',
+    sku: '234615',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 24-48 Circuitos 240V 125A Eaton BRP24L125G · artículo 234615. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-267', PROV_BELLON, 10527.54, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 30-60 Circuitos 240V 200A ABB/GE TLM3220CCU / PAL3020',
+    sku: '83040',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 30-60 Circuitos 240V 200A ABB/GE TLM3220CCU / PAL3020 · artículo 83040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_MAX, 566, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
+    art: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA',
+    sku: '0001128966',
+    marca: 'IBER',
+    url: 'https://maxferreteria.com/products/caja-breaker-sup-rfb-ht-8ways-iber',
+    nota: 'CAJA BREAKER SUP RFB-HT 8WAYS IBER/ZETA · artículo 0001128966 · ref. Sin especificaciones parseables en el nombre · marca IBER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_BELLON, 2620.57, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A ABB/GE TL412C',
+    sku: '18725',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A ABB/GE TL412C · artículo 18725. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_BELLON, 1239, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 4-8 Circuitos 240V 125A Eaton BR48L125FP',
+    sku: '202576',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 4-8 Circuitos 240V 125A Eaton BR48L125FP · artículo 202576. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_BELLON, 3603, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRF',
+    sku: '209504',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRF · artículo 209504. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_BELLON, 6205, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRS',
+    sku: '209505',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 4-8 Circuitos 120/240V 125A Nema-1 Eaton BR48ML125CRS · artículo 209505. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-268', PROV_BELLON, 1145, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A Tipo General 4636',
+    sku: '224956',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Caja Breaker 1F 4-8 Circuitos 120/240V 125A Tipo General 4636 · artículo 224956. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-10-269', PROV_MAX, 675, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-30-amp-eurosol',
     art: 'SWITCH DOBLE TIRO 2P 30 AMP EUROSOL',
     sku: '0001119382',
@@ -39553,7 +39543,7 @@
     url: 'https://maxferreteria.com/products/switch-doble-tiro-2p-30-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 30 AMP EUROSOL · artículo 0001119382 · ref. Polos 2P | Capacidad 30 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-267', PROV_MAX, 1805, {
+  c('MAT-10-270', PROV_MAX, 1805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/switch-doble-tiro-2p-60-amp-eurosol',
     art: 'SWITCH DOBLE TIRO 2P 60 AMP EUROSOL',
     sku: '0001119383',
@@ -39561,7 +39551,7 @@
     url: 'https://maxferreteria.com/products/switch-doble-tiro-2p-60-amp-eurosol',
     nota: 'SWITCH DOBLE TIRO 2P 60 AMP EUROSOL · artículo 0001119383 · ref. Polos 2P | Capacidad 60 A · marca EUROSOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-268', PROV_MAX, 50, {
+  c('MAT-10-271', PROV_MAX, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fisible-30a-voltech-t47278',
     art: 'FISIBLE 30A VOLTECH T47278',
     sku: '0001123801',
@@ -39569,7 +39559,7 @@
     url: 'https://maxferreteria.com/products/fisible-30a-voltech-t47278',
     nota: 'FISIBLE 30A VOLTECH T47278 · artículo 0001123801 · ref. Capacidad 30 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-269', PROV_MAX, 140, {
+  c('MAT-10-272', PROV_MAX, 140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/fusible-volteck-reforzado-60a-fus-60r',
     art: 'FUSIBLE VOLTECK REFOR 60A FUS-60R 47279',
     sku: '0001110195',
@@ -39577,7 +39567,7 @@
     url: 'https://maxferreteria.com/products/fusible-volteck-reforzado-60a-fus-60r',
     nota: 'FUSIBLE VOLTECK REFOR 60A FUS-60R 47279 · artículo 0001110195 · ref. Capacidad 60 A · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-270', PROV_MAX, 745, {
+  c('MAT-10-273', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/adaptador-protector-c-2-salida-usb-ggwp2',
     art: 'ADAPTADOR PROTECTOR C/2 SALIDA USB GGWP2',
     sku: '0001126547',
@@ -39585,7 +39575,7 @@
     url: 'https://maxferreteria.com/products/adaptador-protector-c-2-salida-usb-ggwp2',
     nota: 'ADAPTADOR PROTECTOR C/2 SALIDA USB GGWP2 · artículo 0001126547 · ref. Sin especificaciones parseables en el nombre · marca GABBA GOODS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-270', PROV_MAX, 1025, {
+  c('MAT-10-273', PROV_MAX, 1025, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-volt-lavad-micro-pted-1t515',
     art: 'PROTECTOR VOLT LAVAD/MICRO PTED-1T515',
     sku: '0001089578',
@@ -39593,7 +39583,7 @@
     url: 'https://maxferreteria.com/products/protector-volt-lavad-micro-pted-1t515',
     nota: 'PROTECTOR VOLT LAVAD/MICRO PTED-1T515 · artículo 0001089578 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-270', PROV_MAX, 875.01, {
+  c('MAT-10-273', PROV_MAX, 875.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-audio-video-avtek-pte-1t515ir',
     art: 'PROTECTOR AUDIO-VIDEO AVTEK PTE-1T515IR',
     sku: '0001000319',
@@ -39601,7 +39591,7 @@
     url: 'https://maxferreteria.com/products/protector-audio-video-avtek-pte-1t515ir',
     nota: 'PROTECTOR AUDIO-VIDEO AVTEK PTE-1T515IR · artículo 0001000319 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-270', PROV_MAX, 1610, {
+  c('MAT-10-273', PROV_MAX, 1610, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/protector-avtek-1875w-p-16',
     art: 'PROTECTOR AVTEK 1875W P-16',
     sku: '0001126795',
@@ -39609,7 +39599,7 @@
     url: 'https://maxferreteria.com/products/protector-avtek-1875w-p-16',
     nota: 'PROTECTOR AVTEK 1875W P-16 · artículo 0001126795 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-271', PROV_MAX, 1395, {
+  c('MAT-10-274', PROV_MAX, 1395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regulador-volta-avtek-rspc-1200-8t508',
     art: 'REGULADOR VOLTA AVTEK RSPC-1200-8T508',
     sku: '0001084638',
@@ -39617,7 +39607,7 @@
     url: 'https://maxferreteria.com/products/regulador-volta-avtek-rspc-1200-8t508',
     nota: 'REGULADOR VOLTA AVTEK RSPC-1200-8T508 · artículo 0001084638 · ref. Sin especificaciones parseables en el nombre · marca AVTEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-272', PROV_MAX, 725, {
+  c('MAT-10-275', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-1-2-x10',
     art: 'TUBERIA METALICA EMT 1-1/2\'\'X10\'',
     sku: '0001006500',
@@ -39625,7 +39615,7 @@
     url: 'https://maxferreteria.com/products/tuberia-metalica-emt-1-1-2-x10',
     nota: 'TUBERIA METALICA EMT 1-1/2\'\'X10\' · artículo 0001006500 · ref. Medida 1-1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-273', PROV_MAX, 375, {
+  c('MAT-10-276', PROV_MAX, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-1-x10',
     art: 'TUBERIA METALICA EMT 1\'\'X10\'',
     sku: '0001003254',
@@ -39633,7 +39623,7 @@
     url: 'https://maxferreteria.com/products/tuberia-metalica-emt-1-x10',
     nota: 'TUBERIA METALICA EMT 1\'\'X10\' · artículo 0001003254 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-274', PROV_MAX, 310, {
+  c('MAT-10-277', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-metalica-emt-3-4-x10',
     art: 'TUBERIA METALICA EMT 3/4\'\'X10\'',
     sku: '0001003253',
@@ -39641,7 +39631,7 @@
     url: 'https://maxferreteria.com/products/tuberia-metalica-emt-3-4-x10',
     nota: 'TUBERIA METALICA EMT 3/4\'\'X10\' · artículo 0001003253 · ref. Medida 3/4" | Largo 4 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-275', PROV_MAX, 25, {
+  c('MAT-10-278', PROV_MAX, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-1-2',
     art: 'TUBERIA BX 1/2\'\'',
     sku: '0001000900',
@@ -39649,7 +39639,7 @@
     url: 'https://maxferreteria.com/products/tuberia-bx-1-2',
     nota: 'TUBERIA BX 1/2\'\' · artículo 0001000900 · ref. Medida 1/2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-276', PROV_MAX, 35, {
+  c('MAT-10-279', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-bx-3-4',
     art: 'TUBERIA BX 3/4\'\'',
     sku: '0001000901',
@@ -39657,7 +39647,7 @@
     url: 'https://maxferreteria.com/products/tuberia-bx-3-4',
     nota: 'TUBERIA BX 3/4\'\' · artículo 0001000901 · ref. Medida 3/4" | Largo 4 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-277', PROV_MAX, 45.01, {
+  c('MAT-10-280', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4-s-metal-alaflex',
     art: 'TUBERIA LIQUID TIGHT 3/4 S/METAL ALAFLEX',
     sku: '0001009754',
@@ -39665,7 +39655,7 @@
     url: 'https://maxferreteria.com/products/tuberia-liquid-tight-3-4-s-metal-alaflex',
     nota: 'TUBERIA LIQUID TIGHT 3/4 S/METAL ALAFLEX · artículo 0001009754 · ref. Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-277', PROV_MAX, 110, {
+  c('MAT-10-280', PROV_MAX, 110, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tuberia-liquid-tight-3-4',
     art: 'TUBERIA LIQUID TIGHT 3/4\'\'',
     sku: '0001003244',
@@ -39673,7 +39663,7 @@
     url: 'https://maxferreteria.com/products/tuberia-liquid-tight-3-4',
     nota: 'TUBERIA LIQUID TIGHT 3/4\'\' · artículo 0001003244 · ref. Medida 3/4" | Largo 4 pies | Liquid tight (flexible sellado) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-278', PROV_MAX, 115, {
+  c('MAT-10-281', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-2-kopos-lv-11x10',
     art: 'CANALETA PVC BCO 1/2 KOPOS LV 11X10',
     sku: '0001077974',
@@ -39681,7 +39671,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-bco-1-2-kopos-lv-11x10',
     nota: 'CANALETA PVC BCO 1/2 KOPOS LV 11X10 · artículo 0001077974 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-279', PROV_MAX, 119.99, {
+  c('MAT-10-282', PROV_MAX, 119.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-5-8-kopos-lh-15x10',
     art: 'CANALETA PVC BCO 5/8 KOPOS LH 15X10',
     sku: '0001077973',
@@ -39689,7 +39679,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-bco-5-8-kopos-lh-15x10',
     nota: 'CANALETA PVC BCO 5/8 KOPOS LH 15X10 · artículo 0001077973 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-280', PROV_MAX, 135, {
+  c('MAT-10-283', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-ova-5-8-kopos-lzk-15x12',
     art: 'CANALETA PVC OVA 5/8 KOPOS LZK 15X12',
     sku: '0001077964',
@@ -39697,7 +39687,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-ova-5-8-kopos-lzk-15x12',
     nota: 'CANALETA PVC OVA 5/8 KOPOS LZK 15X12 · artículo 0001077964 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-281', PROV_MAX, 150, {
+  c('MAT-10-284', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-kopos-3-4-lhd-20x10',
     art: 'CANALETA PVC BCO KOPOS 3/4 LHD 20X10',
     sku: '0001094771',
@@ -39705,7 +39695,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-bco-kopos-3-4-lhd-20x10',
     nota: 'CANALETA PVC BCO KOPOS 3/4 LHD 20X10 · artículo 0001094771 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-282', PROV_MAX, 200, {
+  c('MAT-10-285', PROV_MAX, 200, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-1-kopos-lhd-25x15-p2',
     art: 'CANALETA PVC BCO 1 KOPOS LHD 25X15 P2',
     sku: '0001094772',
@@ -39713,7 +39703,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-bco-1-kopos-lhd-25x15-p2',
     nota: 'CANALETA PVC BCO 1 KOPOS LHD 25X15 P2 · artículo 0001094772 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-283', PROV_MAX, 215, {
+  c('MAT-10-286', PROV_MAX, 215, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-plastica-lhd-32x15-p2',
     art: 'CANALETA PLASTICA LHD 32X15 P2',
     sku: '0001132760',
@@ -39721,7 +39711,7 @@
     url: 'https://maxferreteria.com/products/canaleta-plastica-lhd-32x15-p2',
     nota: 'CANALETA PLASTICA LHD 32X15 P2 · artículo 0001132760 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-284', PROV_MAX, 320, {
+  c('MAT-10-287', PROV_MAX, 320, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lv-40x15-p2',
     art: 'CANALETA PALSTICA LV 40X15 P2',
     sku: '0001132761',
@@ -39729,7 +39719,7 @@
     url: 'https://maxferreteria.com/products/canaleta-palstica-lv-40x15-p2',
     nota: 'CANALETA PALSTICA LV 40X15 P2 · artículo 0001132761 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-285', PROV_MAX, 550, {
+  c('MAT-10-288', PROV_MAX, 550, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-palstica-lh-60x40-p2',
     art: 'CANALETA PALSTICA LH 60X40 P2 2PUL',
     sku: '0001132762',
@@ -39737,7 +39727,7 @@
     url: 'https://maxferreteria.com/products/canaleta-palstica-lh-60x40-p2',
     nota: 'CANALETA PALSTICA LH 60X40 P2 2PUL · artículo 0001132762 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-286', PROV_MAX, 745, {
+  c('MAT-10-289', PROV_MAX, 745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/canaleta-pvc-bco-3-kopos-ekd-80x40-hd',
     art: 'CANALETA PVC BCO 3 KOPOS EKD 80X40 HD',
     sku: '0001077965',
@@ -39745,7 +39735,7 @@
     url: 'https://maxferreteria.com/products/canaleta-pvc-bco-3-kopos-ekd-80x40-hd',
     nota: 'CANALETA PVC BCO 3 KOPOS EKD 80X40 HD · artículo 0001077965 · ref. Sin especificaciones parseables en el nombre · marca KOPOS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-287', PROV_MAX, 115, {
+  c('MAT-10-290', PROV_MAX, 115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-octagonal-usa-1-2',
     art: 'CAJA METAL OCTAGONAL USA UL 1/2***',
     sku: '0001006917',
@@ -39753,7 +39743,7 @@
     url: 'https://maxferreteria.com/products/caja-metal-octagonal-usa-1-2',
     nota: 'CAJA METAL OCTAGONAL USA UL 1/2*** · artículo 0001006917 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-288', PROV_MAX, 41, {
+  c('MAT-10-291', PROV_MAX, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-3-4-tp596',
     art: 'CAJA METAL 2X4 USA 3/4 TP596',
     sku: '0001000131',
@@ -39761,7 +39751,7 @@
     url: 'https://maxferreteria.com/products/caja-metal-2x4-usa-3-4-tp596',
     nota: 'CAJA METAL 2X4 USA 3/4 TP596 · artículo 0001000131 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-288', PROV_MAX, 40, {
+  c('MAT-10-291', PROV_MAX, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-metal-2x4-usa-1-2-tp594',
     art: 'CAJA METAL 2X4 USA 1/2 TP594',
     sku: '0001000132',
@@ -39769,7 +39759,7 @@
     url: 'https://maxferreteria.com/products/caja-metal-2x4-usa-1-2-tp594',
     nota: 'CAJA METAL 2X4 USA 1/2 TP594 · artículo 0001000132 · ref. Sin especificaciones parseables en el nombre · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-289', PROV_MAX, 45.01, {
+  c('MAT-10-292', PROV_MAX, 45.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/caja-plast-p-empot-bticino-2x4-533-503ms',
     art: 'CAJA PLAST P/EMPOT BTICINO 2X4 533/503MS',
     sku: '0001004734',
@@ -39777,7 +39767,7 @@
     url: 'https://maxferreteria.com/products/caja-plast-p-empot-bticino-2x4-533-503ms',
     nota: 'CAJA PLAST P/EMPOT BTICINO 2X4 533/503MS · artículo 0001004734 · ref. Sin especificaciones parseables en el nombre · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-290', PROV_MAX, 4, {
+  c('MAT-10-293', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2',
     art: 'ABRAZADERA EMT 1/2',
     sku: '0001000331',
@@ -39785,7 +39775,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-emt-1-2',
     nota: 'ABRAZADERA EMT 1/2 · artículo 0001000331 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-291', PROV_MAX, 5, {
+  c('MAT-10-294', PROV_MAX, 5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1-2-2-h',
     art: 'ABRAZADERA EMT 1/2\'\' 2-H',
     sku: '0001007003',
@@ -39793,7 +39783,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-emt-1-2-2-h',
     nota: 'ABRAZADERA EMT 1/2\'\' 2-H · artículo 0001007003 · ref. Medida 1/2" | Largo 2 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-292', PROV_MAX, 7, {
+  c('MAT-10-295', PROV_MAX, 7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-1',
     art: 'ABRAZADERA EMT 1\'\'',
     sku: '0001007092',
@@ -39801,7 +39791,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-emt-1',
     nota: 'ABRAZADERA EMT 1\'\' · artículo 0001007092 · ref. Medida 1" | Largo 1 pies | Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-293', PROV_MAX, 35, {
+  c('MAT-10-296', PROV_MAX, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-2',
     art: 'ABRAZADERA UNISTRUST 2\'\'',
     sku: '0001013969',
@@ -39809,7 +39799,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-unistrust-2',
     nota: 'ABRAZADERA UNISTRUST 2\'\' · artículo 0001013969 · ref. Medida 2" | Largo 2 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-294', PROV_MAX, 4, {
+  c('MAT-10-297', PROV_MAX, 4, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-emt-3-4',
     art: 'ABRAZADERA EMT 3/4',
     sku: '0001004282',
@@ -39817,7 +39807,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-emt-3-4',
     nota: 'ABRAZADERA EMT 3/4 · artículo 0001004282 · ref. Sistema EMT (metalico) · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-295', PROV_MAX, 64.99, {
+  c('MAT-10-298', PROV_MAX, 64.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-unistrust-3',
     art: 'ABRAZADERA UNISTRUST 3\'\'',
     sku: '0001013970',
@@ -39825,56 +39815,56 @@
     url: 'https://maxferreteria.com/products/abrazadera-unistrust-3',
     nota: 'ABRAZADERA UNISTRUST 3\'\' · artículo 0001013970 · ref. Medida 3" | Largo 3 pies · marca EMT. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-296', PROV_MC, 38.64, {
+  c('MAT-10-299', PROV_MC, 38.64, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 1 1/2',
     sku: '735748',
     nota: 'CODO CONDUIT PVC 1 1/2 · artículo 735748 · ref. 1 1/2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-297', PROV_MC, 7.62, {
+  c('MAT-10-300', PROV_MC, 7.62, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 1/2',
     sku: '758510',
     nota: 'CODO CONDUIT PVC 1/2 · artículo 758510 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-298', PROV_MC, 15.16, {
+  c('MAT-10-301', PROV_MC, 15.16, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 1',
     sku: '849332',
     nota: 'CODO CONDUIT PVC 1 · artículo 849332 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-299', PROV_MC, 55.83, {
+  c('MAT-10-302', PROV_MC, 55.83, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 2',
     sku: '782070',
     nota: 'CODO CONDUIT PVC 2 · artículo 782070 · ref. 2". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-300', PROV_MC, 9.13, {
+  c('MAT-10-303', PROV_MC, 9.13, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 3/4',
     sku: '6003002',
     nota: 'CODO CONDUIT PVC 3/4 · artículo 6003002 · ref. DOBLE CAMPANA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-301', PROV_MC, 165.6, {
+  c('MAT-10-304', PROV_MC, 165.6, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 3',
     sku: '123290',
     nota: 'CODO CONDUIT PVC 3 · artículo 123290 · ref. 3". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-302', PROV_MC, 311.19, {
+  c('MAT-10-305', PROV_MC, 311.19, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'CODO CONDUIT PVC 4',
     sku: '123422',
     nota: 'CODO CONDUIT PVC 4 · artículo 123422 · ref. 4". El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-303', PROV_MAX, 150, {
+  c('MAT-10-306', PROV_MAX, 150, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-250-10-x-4-6mm',
     art: 'ABRAZADERA NYLON 0301CV-250 10\'\'X 4.6MM',
     sku: '0001000201',
@@ -39882,7 +39872,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-nylon-0301cv-250-10-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-250 10\'\'X 4.6MM · artículo 0001000201 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 2.86, {
+  c('MAT-10-307', PROV_MAX, 2.86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-12-x4-6mm-negra',
     art: 'ABRAZADERA PLAST. 12\'\'X4.6MM NEGRA',
     sku: '0001018041',
@@ -39890,7 +39880,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-plast-12-x4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 12\'\'X4.6MM NEGRA · artículo 0001018041 · ref. Sin especificaciones parseables en el nombre · marca TOPAZ. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-304', PROV_MAX, 1.99, {
+  c('MAT-10-307', PROV_MAX, 1.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-310-12-x-4-6mm',
     art: 'ABRAZADERA NYLON 0301CV-310 12\'\'X 4.6MM',
     sku: '0001000200',
@@ -39898,7 +39888,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-nylon-0301cv-310-12-x-4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-310 12\'\'X 4.6MM · artículo 0001000200 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-305', PROV_MAX, 105, {
+  c('MAT-10-308', PROV_MAX, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-plast-8-x-4-6mm-negra',
     art: 'ABRAZADERA PLAST. 8\'\'X 4.6MM NEGRA',
     sku: '0001018040',
@@ -39906,7 +39896,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-plast-8-x-4-6mm-negra',
     nota: 'ABRAZADERA PLAST. 8\'\'X 4.6MM NEGRA · artículo 0001018040 · ref. Sin especificaciones parseables en el nombre · marca CHINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-305', PROV_MAX, 85, {
+  c('MAT-10-308', PROV_MAX, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/abrazadera-nylon-0301cv-200k-8-x4-6mm',
     art: 'ABRAZADERA NYLON 0301CV-200K 8\'\'X4.6MM',
     sku: '0001007280',
@@ -39914,7 +39904,7 @@
     url: 'https://maxferreteria.com/products/abrazadera-nylon-0301cv-200k-8-x4-6mm',
     nota: 'ABRAZADERA NYLON 0301CV-200K 8\'\'X4.6MM · artículo 0001007280 · ref. Sin especificaciones parseables en el nombre · marca TAIWANTORCHLIGHTENTERPRIS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-306', PROV_MAX, 1125, {
+  c('MAT-10-309', PROV_MAX, 1125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-15mts-t17751',
     art: 'CINTA P/ELECTRICISTA 15MTS T17751',
     sku: '0001123475',
@@ -39922,7 +39912,7 @@
     url: 'https://maxferreteria.com/products/cinta-p-electricista-15mts-t17751',
     nota: 'CINTA P/ELECTRICISTA 15MTS T17751 · artículo 0001123475 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 1140, {
+  c('MAT-10-310', PROV_MAX, 1140, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-goma-3m-scotch-no-23',
     art: 'TAPE GOMA 3M SCOTCH NO.23',
     sku: '0001000086',
@@ -39930,7 +39920,7 @@
     url: 'https://maxferreteria.com/products/tape-goma-3m-scotch-no-23',
     nota: 'TAPE GOMA 3M SCOTCH NO.23 · artículo 0001000086 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 2115, {
+  c('MAT-10-310', PROV_MAX, 2115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-electrico-scotch-3m-no-27',
     art: 'TAPE ELECTRICO SCOTCH 3M NO.27',
     sku: '0001000089',
@@ -39938,7 +39928,7 @@
     url: 'https://maxferreteria.com/products/tape-electrico-scotch-3m-no-27',
     nota: 'TAPE ELECTRICO SCOTCH 3M NO.27 · artículo 0001000089 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 435, {
+  c('MAT-10-310', PROV_MAX, 435, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-vinyl-3m-super-33t',
     art: 'TAPE VINYL 3M SUPER 33T',
     sku: '0001000085',
@@ -39946,7 +39936,7 @@
     url: 'https://maxferreteria.com/products/tape-vinyl-3m-super-33t',
     nota: 'TAPE VINYL 3M SUPER 33T · artículo 0001000085 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-307', PROV_MAX, 135, {
+  c('MAT-10-310', PROV_MAX, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tape-3m-temflex-1711-grd-negro',
     art: 'TAPE 3M TEMFLEX 1711 GRD NEGRO',
     sku: '0001004851',
@@ -39954,7 +39944,7 @@
     url: 'https://maxferreteria.com/products/tape-3m-temflex-1711-grd-negro',
     nota: 'TAPE 3M TEMFLEX 1711 GRD NEGRO · artículo 0001004851 · ref. Sin especificaciones parseables en el nombre · marca 3M. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-308', PROV_MAX, 1730, {
+  c('MAT-10-311', PROV_MAX, 1730, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/cinta-p-electricista-30mts-t17752',
     art: 'CINTA P/ELECTRICISTA 30MTS T17752',
     sku: '0001123476',
@@ -39962,7 +39952,7 @@
     url: 'https://maxferreteria.com/products/cinta-p-electricista-30mts-t17752',
     nota: 'CINTA P/ELECTRICISTA 30MTS T17752 · artículo 0001123476 · ref. Sin especificaciones parseables en el nombre · marca TRUPER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-309', PROV_MC, 966, {
+  c('MAT-10-312', PROV_MC, 966, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) #14 BLANCO',
@@ -39970,7 +39960,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) #14 BLANCO · artículo 61009003 · ref. AWG#14 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 9.66 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-310', PROV_MC, 12600, {
+  c('MAT-10-313', PROV_MC, 12600, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) #2 NEGRO',
@@ -39978,7 +39968,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) #2 NEGRO · artículo 5002006 · ref. AWG#2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 126 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-311', PROV_MC, 25900, {
+  c('MAT-10-314', PROV_MC, 25900, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) 2/0 NEGRO',
@@ -39986,7 +39976,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) 2/0 NEGRO · artículo 42141 · ref. AWG2/0 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 259 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-312', PROV_MC, 32800, {
+  c('MAT-10-315', PROV_MC, 32800, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) 3/0 NEGRO',
@@ -39994,7 +39984,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) 3/0 NEGRO · artículo 301320 · ref. 3/0 AWG PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 328 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-313', PROV_MC, 8436, {
+  c('MAT-10-316', PROV_MC, 8436, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) #4 NEGRO',
@@ -40002,7 +39992,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) #4 NEGRO · artículo 6109002 · ref. AWG#4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 84.36 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-314', PROV_MC, 39200, {
+  c('MAT-10-317', PROV_MC, 39200, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) 4/0 NEGRO',
@@ -40010,7 +40000,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) 4/0 NEGRO · artículo 65983 · ref. 4/0 AWG PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 392 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-315', PROV_MC, 5268, {
+  c('MAT-10-318', PROV_MC, 5268, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE THHN (AWG) #6 BLANCO',
@@ -40018,7 +40008,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE THHN (AWG) #6 BLANCO · artículo 97780 · ref. AWG#6 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 52.68 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-316', PROV_MC, 2102, {
+  c('MAT-10-319', PROV_MC, 2102, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA 1.5MM/2',
@@ -40026,7 +40016,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA 1.5MM/2 · artículo 6101001 · ref. 1.5/MM/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 21.02 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-317', PROV_MC, 2927, {
+  c('MAT-10-320', PROV_MC, 2927, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA 1.5MM/3',
@@ -40034,7 +40024,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA 1.5MM/3 · artículo 6101002 · ref. 1.5 MM/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 29.27 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-318', PROV_MC, 3713, {
+  c('MAT-10-321', PROV_MC, 3713, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA 1.5MM/4',
@@ -40042,7 +40032,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA 1.5MM/4 · artículo 158619 · ref. 1.5MM/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 37.13 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-319', PROV_MC, 3644, {
+  c('MAT-10-322', PROV_MC, 3644, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA (AWG) 12/2',
@@ -40050,7 +40040,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA (AWG) 12/2 · artículo 96654 · ref. AWG 12/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 36.44 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-320', PROV_MC, 5338, {
+  c('MAT-10-323', PROV_MC, 5338, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA AWG 12/3',
@@ -40058,7 +40048,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA AWG 12/3 · artículo 96478 · ref. AWG 12/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 53.38 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-321', PROV_MC, 4668, {
+  c('MAT-10-324', PROV_MC, 4668, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA AWG 14/4',
@@ -40066,7 +40056,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA AWG 14/4 · artículo 321487 · ref. AWG 14/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 46.68 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-322', PROV_MC, 2908, {
+  c('MAT-10-325', PROV_MC, 2908, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA 2.5MM/2',
@@ -40074,7 +40064,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA 2.5MM/2 · artículo 191784 · ref. 2.5MM/2 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 29.08 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-323', PROV_MC, 4361, {
+  c('MAT-10-326', PROV_MC, 4361, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA 2.5MM/3',
@@ -40082,7 +40072,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA 2.5MM/3 · artículo 74216 · ref. 2.5MM/3 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 43.61 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-324', PROV_MC, 26700, {
+  c('MAT-10-327', PROV_MC, 26700, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27096 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'ALAMBRE DE GOMA (AWG) 6/4',
@@ -40090,7 +40080,7 @@
     marca: 'PHELPS DODGE',
     nota: 'ALAMBRE DE GOMA (AWG) 6/4 · artículo 6101013 · ref. AWG 6/4 PIES · marca PHELPS DODGE. La cotización va por pie y el ítem por rollo de 100 pies (RD$ 267 por pieza). El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-10-325', PROV_MAX, 180, {
+  c('MAT-10-328', PROV_MAX, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48006-10-blc-ed-3b-t48006',
     art: 'EXTEN VOLTECK 48006 10\' BLC ED-3B T48006',
     sku: '0001110184',
@@ -40098,7 +40088,7 @@
     url: 'https://maxferreteria.com/products/exten-volteck-48006-10-blc-ed-3b-t48006',
     nota: 'EXTEN VOLTECK 48006 10\' BLC ED-3B T48006 · artículo 0001110184 · ref. Longitud 10 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-326', PROV_MAX, 2335, {
+  c('MAT-10-329', PROV_MAX, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensi-elect-mamey-cent-100-16-exor100',
     art: 'EXTENSI ELECT MAMEY CENT 100\'-16 EXOR100',
     sku: '0001120526',
@@ -40106,7 +40096,7 @@
     url: 'https://maxferreteria.com/products/extensi-elect-mamey-cent-100-16-exor100',
     nota: 'EXTENSI ELECT MAMEY CENT 100\'-16 EXOR100 · artículo 0001120526 · ref. Longitud 100 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-326', PROV_MAX, 1940, {
+  c('MAT-10-329', PROV_MAX, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-100-naranja-er-30x16',
     art: 'EXTENSION VOLTECK 100\' NARANJA ER-30X16',
     sku: '0001110193',
@@ -40114,14 +40104,14 @@
     url: 'https://maxferreteria.com/products/extension-volteck-100-naranja-er-30x16',
     nota: 'EXTENSION VOLTECK 100\' NARANJA ER-30X16 · artículo 0001110193 · ref. Longitud 100 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-326', PROV_MAX, 1355.01, {
+  c('MAT-10-329', PROV_MAX, 1355.01, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-electrica-naranja-100',
     art: 'EXTENSION ELECTRICA NARANJA 100\'',
     sku: '0001108212',
     url: 'https://maxferreteria.com/products/extension-electrica-naranja-100',
     nota: 'EXTENSION ELECTRICA NARANJA 100\' · artículo 0001108212 · ref. Longitud 100 pies. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-327', PROV_MAX, 359.99, {
+  c('MAT-10-330', PROV_MAX, 359.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-12-16awg-2c-972-90110924',
     art: 'EXTENSIONES 12 16AWG/2C 972-90110924',
     sku: '0001125878',
@@ -40129,7 +40119,7 @@
     url: 'https://maxferreteria.com/products/extensiones-12-16awg-2c-972-90110924',
     nota: 'EXTENSIONES 12 16AWG/2C 972-90110924 · artículo 0001125878 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-327', PROV_MAX, 210, {
+  c('MAT-10-330', PROV_MAX, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-12-centurion-exw12',
     art: 'EXTENSION ELECT 12\' CENTURION EXW12',
     sku: '0001040209',
@@ -40137,7 +40127,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-12-centurion-exw12',
     nota: 'EXTENSION ELECT 12\' CENTURION EXW12 · artículo 0001040209 · ref. Longitud 12 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-328', PROV_MAX, 225, {
+  c('MAT-10-331', PROV_MAX, 225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48012-13-blc-ed-4b-t48012',
     art: 'EXTEN VOLTECK 48012 13\' BLC ED-4B T48012',
     sku: '0001110185',
@@ -40145,7 +40135,7 @@
     url: 'https://maxferreteria.com/products/exten-volteck-48012-13-blc-ed-4b-t48012',
     nota: 'EXTEN VOLTECK 48012 13\' BLC ED-4B T48012 · artículo 0001110185 · ref. Longitud 13 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-329', PROV_MAX, 300, {
+  c('MAT-10-332', PROV_MAX, 300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-centurion-exw15',
     art: 'EXTENSION ELECT 15\' CENTURION EXW15',
     sku: '0001040210',
@@ -40153,7 +40143,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-15-centurion-exw15',
     nota: 'EXTENSION ELECT 15\' CENTURION EXW15 · artículo 0001040210 · ref. Longitud 15 pies · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-329', PROV_MAX, 894.99, {
+  c('MAT-10-332', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-15-amarilla-st-33157',
     art: 'EXTENSION ELECT. 15\' AMARILLA ST 33157',
     sku: '0001118244',
@@ -40161,7 +40151,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-15-amarilla-st-33157',
     nota: 'EXTENSION ELECT. 15\' AMARILLA ST 33157 · artículo 0001118244 · ref. Longitud 15 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-329', PROV_MAX, 505, {
+  c('MAT-10-332', PROV_MAX, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extensiones-15-16awg-2c-972-90110927',
     art: 'EXTENSIONES 15 16AWG/2C 972-90110927',
     sku: '0001125879',
@@ -40169,7 +40159,7 @@
     url: 'https://maxferreteria.com/products/extensiones-15-16awg-2c-972-90110927',
     nota: 'EXTENSIONES 15 16AWG/2C 972-90110927 · artículo 0001125879 · ref. Sin especificaciones parseables en el nombre · marca MAX MOTOR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-330', PROV_MAX, 270, {
+  c('MAT-10-333', PROV_MAX, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48018-16-blc-ed-5b-t48018',
     art: 'EXTEN VOLTECK 48018 16\' BLC ED-5B T48018',
     sku: '0001110186',
@@ -40177,7 +40167,7 @@
     url: 'https://maxferreteria.com/products/exten-volteck-48018-16-blc-ed-5b-t48018',
     nota: 'EXTEN VOLTECK 48018 16\' BLC ED-5B T48018 · artículo 0001110186 · ref. Longitud 16 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-331', PROV_MAX, 1700, {
+  c('MAT-10-334', PROV_MAX, 1700, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-25-amarilla-st-33257',
     art: 'EXTENSION ELECT. 25\' AMARILLA ST 33257',
     sku: '0001118245',
@@ -40185,7 +40175,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-25-amarilla-st-33257',
     nota: 'EXTENSION ELECT. 25\' AMARILLA ST 33257 · artículo 0001118245 · ref. Longitud 25 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-332', PROV_MAX, 520, {
+  c('MAT-10-335', PROV_MAX, 520, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48030-26-blc-ed-8b-t48030',
     art: 'EXTEN VOLTECK 48030 26\' BLC ED-8B T48030',
     sku: '0001110188',
@@ -40193,7 +40183,7 @@
     url: 'https://maxferreteria.com/products/exten-volteck-48030-26-blc-ed-8b-t48030',
     nota: 'EXTEN VOLTECK 48030 26\' BLC ED-8B T48030 · artículo 0001110188 · ref. Longitud 26 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-333', PROV_MAX, 2989.99, {
+  c('MAT-10-336', PROV_MAX, 2989.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-50-amarilla-st-33507',
     art: 'EXTENSION ELECT. 50\' AMARILLA ST 33507',
     sku: '0001118246',
@@ -40201,7 +40191,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-50-amarilla-st-33507',
     nota: 'EXTENSION ELECT. 50\' AMARILLA ST 33507 · artículo 0001118246 · ref. Longitud 50 pies · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-333', PROV_MAX, 1695, {
+  c('MAT-10-336', PROV_MAX, 1695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elect-3t-cent-awg14-50',
     art: 'EXTENSION ELECT. 3T. CENT AWG14-50\'',
     sku: '0001120523',
@@ -40209,7 +40199,7 @@
     url: 'https://maxferreteria.com/products/extension-elect-3t-cent-awg14-50',
     nota: 'EXTENSION ELECT. 3T. CENT AWG14-50\' · artículo 0001120523 · ref. Longitud 50 pies | Calibre AWG 14 · marca CENTURION. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-333', PROV_MAX, 725, {
+  c('MAT-10-336', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-elec-50-naranja-gen-ec-4-50ft',
     art: 'EXTENSION ELEC 50\' NARANJA GEN EC-4-50FT',
     sku: '0001085105',
@@ -40217,7 +40207,7 @@
     url: 'https://maxferreteria.com/products/extension-elec-50-naranja-gen-ec-4-50ft',
     nota: 'EXTENSION ELEC 50\' NARANJA GEN EC-4-50FT · artículo 0001085105 · ref. Longitud 50 pies · marca YACO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-333', PROV_MAX, 965, {
+  c('MAT-10-336', PROV_MAX, 965, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-volteck-50-naranja-er-15x16',
     art: 'EXTENSION VOLTECK 50\' NARANJA ER-15X16',
     sku: '0001110192',
@@ -40225,7 +40215,7 @@
     url: 'https://maxferreteria.com/products/extension-volteck-50-naranja-er-15x16',
     nota: 'EXTENSION VOLTECK 50\' NARANJA ER-15X16 · artículo 0001110192 · ref. Longitud 50 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-334', PROV_MAX, 310, {
+  c('MAT-10-337', PROV_MAX, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/extension-6ft-3sal-blca-31061-2-34061',
     art: 'EXTENSION 6FT 3SAL BLCA 31061',
     sku: '0001094694',
@@ -40233,7 +40223,7 @@
     url: 'https://maxferreteria.com/products/extension-6ft-3sal-blca-31061-2-34061',
     nota: 'EXTENSION 6FT 3SAL BLCA 31061 · artículo 0001094694 · ref. Longitud 6 pies | 3 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-335', PROV_MAX, 145, {
+  c('MAT-10-338', PROV_MAX, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/exten-volteck-48000-7-blc-ed-2b-t48000',
     art: 'EXTEN VOLTECK 48000 7\' BLC ED-2B T48000',
     sku: '0001110182',
@@ -40241,7 +40231,7 @@
     url: 'https://maxferreteria.com/products/exten-volteck-48000-7-blc-ed-2b-t48000',
     nota: 'EXTEN VOLTECK 48000 7\' BLC ED-2B T48000 · artículo 0001110182 · ref. Longitud 7 pies · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-336', PROV_MAX, 737.5, {
+  c('MAT-10-339', PROV_MAX, 737.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-3ft-6sal-15a-stanley-blca-30006',
     art: 'REGLETA 3FT 6SAL 15A STANLEY BLCA 30006',
     sku: '0001118126',
@@ -40249,7 +40239,7 @@
     url: 'https://maxferreteria.com/products/regleta-3ft-6sal-15a-stanley-blca-30006',
     nota: 'REGLETA 3FT 6SAL 15A STANLEY BLCA 30006 · artículo 0001118126 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-336', PROV_MAX, 1330, {
+  c('MAT-10-339', PROV_MAX, 1330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-2un-bla-stanley-33211',
     art: 'REGLETA 6 SALIDAS 2UN BLA STANLEY 33211',
     sku: '0001116443',
@@ -40257,7 +40247,7 @@
     url: 'https://maxferreteria.com/products/regleta-6-salidas-2un-bla-stanley-33211',
     nota: 'REGLETA 6 SALIDAS 2UN BLA STANLEY 33211 · artículo 0001116443 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-336', PROV_MAX, 654.99, {
+  c('MAT-10-339', PROV_MAX, 654.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-salidas-ngr-3-125v-15a-30007',
     art: 'REGLETA 6 SALIDAS NGR 3\'125V 15A 30007',
     sku: '0001118238',
@@ -40265,7 +40255,7 @@
     url: 'https://maxferreteria.com/products/regleta-6-salidas-ngr-3-125v-15a-30007',
     nota: 'REGLETA 6 SALIDAS NGR 3\'125V 15A 30007 · artículo 0001118238 · ref. Longitud 3 pies | 6 salidas | 15 A · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-337', PROV_MAX, 725, {
+  c('MAT-10-340', PROV_MAX, 725, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-6-sali-suge-max-bl-245w-33213',
     art: 'REGLETA 6 SALI SUGE MAX BL 245W 33213',
     sku: '0001118240',
@@ -40273,7 +40263,7 @@
     url: 'https://maxferreteria.com/products/regleta-6-sali-suge-max-bl-245w-33213',
     nota: 'REGLETA 6 SALI SUGE MAX BL 245W 33213 · artículo 0001118240 · ref. 6 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-338', PROV_MAX, 1195, {
+  c('MAT-10-341', PROV_MAX, 1195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/regleta-8sal-stanley-blanca-30012',
     art: 'REGLETA 8SAL STANLEY BLANCA 30012',
     sku: '0001094734',
@@ -40281,7 +40271,7 @@
     url: 'https://maxferreteria.com/products/regleta-8sal-stanley-blanca-30012',
     nota: 'REGLETA 8SAL STANLEY BLANCA 30012 · artículo 0001094734 · ref. 8 salidas · marca STANLEY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-339', PROV_MAX, 599.99, {
+  c('MAT-10-342', PROV_MAX, 599.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-movimiento-interup-pared-t47230',
     art: 'SENSOR MOVIMIENTO INTERUP PARED T47230',
     sku: '0001126254',
@@ -40289,7 +40279,7 @@
     url: 'https://maxferreteria.com/products/sensor-movimiento-interup-pared-t47230',
     nota: 'SENSOR MOVIMIENTO INTERUP PARED T47230 · artículo 0001126254 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-339', PROV_MAX, 500, {
+  c('MAT-10-342', PROV_MAX, 500, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov180g-semo-180-voltech-t46594',
     art: 'SENSOR MOV180g SEMO-180 VOLTECH T46594',
     sku: '0001121310',
@@ -40297,7 +40287,7 @@
     url: 'https://maxferreteria.com/products/sensor-mov180g-semo-180-voltech-t46594',
     nota: 'SENSOR MOV180g SEMO-180 VOLTECH T46594 · artículo 0001121310 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-339', PROV_MAX, 780, {
+  c('MAT-10-342', PROV_MAX, 780, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-interi-semo-in-voltech-t46599',
     art: 'SENSOR MOV/INTERI SEMO-IN VOLTECH T46599',
     sku: '0001121309',
@@ -40305,7 +40295,7 @@
     url: 'https://maxferreteria.com/products/sensor-mov-interi-semo-in-voltech-t46599',
     nota: 'SENSOR MOV/INTERI SEMO-IN VOLTECH T46599 · artículo 0001121309 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-339', PROV_MAX, 540, {
+  c('MAT-10-342', PROV_MAX, 540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/sensor-mov-p-ext-semo-ex-voltech-t47231',
     art: 'SENSOR MOV P/EXT SEMO-EX VOLTECH T47231',
     sku: '0001121300',
@@ -40313,7 +40303,7 @@
     url: 'https://maxferreteria.com/products/sensor-mov-p-ext-semo-ex-voltech-t47231',
     nota: 'SENSOR MOV P/EXT SEMO-EX VOLTECH T47231 · artículo 0001121300 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-340', PROV_MAX, 805, {
+  c('MAT-10-343', PROV_MAX, 805, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timer-digital-8eve-tem-8-voltech-t48386',
     art: 'TIMER DIGITAL 8EVE TEM-8 VOLTECH T48386',
     sku: '0001122434',
@@ -40321,7 +40311,7 @@
     url: 'https://maxferreteria.com/products/timer-digital-8eve-tem-8-voltech-t48386',
     nota: 'TIMER DIGITAL 8EVE TEM-8 VOLTECH T48386 · artículo 0001122434 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 295, {
+  c('MAT-10-344', PROV_MAX, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-veto-premium-bco-16290',
     art: 'PULSADOR TIMBRE VETO PREMIUM BCO 16290',
     sku: '0001127222',
@@ -40329,7 +40319,7 @@
     url: 'https://maxferreteria.com/products/pulsador-timbre-veto-premium-bco-16290',
     nota: 'PULSADOR TIMBRE VETO PREMIUM BCO 16290 · artículo 0001127222 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 414.99, {
+  c('MAT-10-344', PROV_MAX, 414.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-veto-plura-bco-60866',
     art: 'TIMBRE VETO PLURA BCO 60866',
     sku: '0001127211',
@@ -40337,7 +40327,7 @@
     url: 'https://maxferreteria.com/products/timbre-veto-plura-bco-60866',
     nota: 'TIMBRE VETO PLURA BCO 60866 · artículo 0001127211 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 100, {
+  c('MAT-10-344', PROV_MAX, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/pulsador-timbre-sup-bco-20020',
     art: 'PULSADOR TIMBRE SUP. BCO 20020',
     sku: '0001118633',
@@ -40345,7 +40335,7 @@
     url: 'https://maxferreteria.com/products/pulsador-timbre-sup-bco-20020',
     nota: 'PULSADOR TIMBRE SUP. BCO 20020 · artículo 0001118633 · ref. Sin especificaciones parseables en el nombre · marca VETO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 894.99, {
+  c('MAT-10-344', PROV_MAX, 894.99, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-ding-dong-bco-veto-89003',
     peso: 2,
     art: 'TIMBRE DING DONG BCO VETO 89003',
@@ -40354,7 +40344,7 @@
     url: 'https://maxferreteria.com/products/timbre-ding-dong-bco-veto-89003',
     nota: 'TIMBRE DING DONG BCO VETO 89003 · artículo 0001118640 · ref. Sin especificaciones parseables en el nombre · marca VETO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 315, {
+  c('MAT-10-344', PROV_MAX, 315, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-musical-domest-tim-voltech-t46605',
     art: 'TIMBRE MUSICAL DOMEST TIM VOLTECH T46605',
     sku: '0001121308',
@@ -40362,7 +40352,7 @@
     url: 'https://maxferreteria.com/products/timbre-musical-domest-tim-voltech-t46605',
     nota: 'TIMBRE MUSICAL DOMEST TIM VOLTECH T46605 · artículo 0001121308 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 380, {
+  c('MAT-10-344', PROV_MAX, 380, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-4-voltech-t46607',
     art: 'TIMBRE INDUSTRIAL TIMC-4 VOLTECH T46607',
     sku: '0001121307',
@@ -40370,7 +40360,7 @@
     url: 'https://maxferreteria.com/products/timbre-industrial-timc-4-voltech-t46607',
     nota: 'TIMBRE INDUSTRIAL TIMC-4 VOLTECH T46607 · artículo 0001121307 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 740, {
+  c('MAT-10-344', PROV_MAX, 740, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-industrial-timc-6-voltech-t46609',
     art: 'TIMBRE INDUSTRIAL TIMC-6 VOLTECH T46609',
     sku: '0001121306',
@@ -40378,7 +40368,7 @@
     url: 'https://maxferreteria.com/products/timbre-industrial-timc-6-voltech-t46609',
     nota: 'TIMBRE INDUSTRIAL TIMC-6 VOLTECH T46609 · artículo 0001121306 · ref. Sin especificaciones parseables en el nombre · marca VOLTECK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-10-341', PROV_MAX, 670, {
+  c('MAT-10-344', PROV_MAX, 670, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/timbre-inala-timi-100-voltech-t46630',
     art: 'TIMBRE INALA TIMI-100 VOLTECH T46630',
     sku: '0001121304',
@@ -41405,60 +41395,13 @@
     url: 'https://ochoa.com.do/producto/camara-de-video-home-kit-hub-g2h-pro-03061712',
     nota: 'CAMARA DE VIDEO HOME KIT HUB G2H PRO · artículo 03-06-1712 · ref. CH-C01 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-005', PROV_OCHOA, 2548.17, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-seguridad-wi-fi-hd-360-c-fuente-03061546',
-    art: 'CAMARA SEGURIDAD WI-FI HD 360 C / FUENTE',
-    sku: '03-06-1546',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/camara-seguridad-wi-fi-hd-360-c-fuente-03061546',
-    nota: 'CAMARA SEGURIDAD WI-FI HD 360 C / FUENTE · artículo 03-06-1546 · ref. 4663GK-200MP2-B · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-006', PROV_OCHOA, 2588.72, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-anal-hybrid-ahd-100-ir-03060610',
-    art: 'CAMARA T / BULLET ANAL.HYBRID AHD 100\' IR',
-    sku: '03-06-0610',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-t-bullet-anal-hybrid-ahd-100-ir-03060610',
-    nota: 'CAMARA T / BULLET ANAL.HYBRID AHD 100\' IR · artículo 03-06-0610 · ref. COR-HF97 · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-006', PROV_OCHOA, 5547.25, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-net-ext-ir-1920hx1080v-03060621',
-    art: 'CAMARA T / BULLET NET EXT. IR 1920HX1080V',
-    sku: '03-06-0621',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-t-bullet-net-ext-ir-1920hx1080v-03060621',
-    nota: 'CAMARA T / BULLET NET EXT. IR 1920HX1080V · artículo 03-06-0621 · ref. COR-IP2BF · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-006', PROV_OCHOA, 2191.4, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-seg-bullet-hdcvi-hfw2220rn-2-03062141',
-    art: 'CAMARA SEG. BULLET HDCVI HFW2220RN (2',
-    sku: '03-06-2141',
-    url: 'https://ochoa.com.do/producto/camara-seg-bullet-hdcvi-hfw2220rn-2-03062141',
-    nota: 'CAMARA SEG. BULLET HDCVI HFW2220RN (2 · artículo 03-06-2141 · ref. 116788. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-007', PROV_OCHOA, 1784.16, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cam-hdcvi-bullet-2mp-2-8mm-sdl-mic-ir40m-03062003',
-    art: 'CAM HDCVI BULLET 2MP 2.8MM SDL MIC IR40M',
-    sku: '03-06-2003',
-    marca: 'DAHUA',
-    url: 'https://ochoa.com.do/producto/cam-hdcvi-bullet-2mp-2-8mm-sdl-mic-ir40m-03062003',
-    nota: 'CAM HDCVI BULLET 2MP 2.8MM SDL MIC IR40M · artículo 03-06-2003 · ref. DH-HAC-HFW1200TLMN · marca DAHUA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-007', PROV_OCHOA, 8801.58, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-2-8-12mm-net-autofocus-03060623',
-    art: 'CAMARA 2MP 2.8-12MM NET AUTOFOCUS',
-    sku: '03-06-0623',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-2mp-2-8-12mm-net-autofocus-03060623',
-    nota: 'CAMARA 2MP 2.8-12MM NET AUTOFOCUS · artículo 03-06-0623 · ref. COR-IP2BV · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-007', PROV_OCHOA, 2810.59, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-3-6mm-net-poe-03060622',
-    art: 'CAMARA 2MP 3.6MM NET POE',
-    sku: '03-06-0622',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-2mp-3-6mm-net-poe-03060622',
-    nota: 'CAMARA 2MP 3.6MM NET POE · artículo 03-06-0622 · ref. COR-IP2BM · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  c('MAT-16-006', PROV_OCHOA, 4918.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-2mp-lente-fija-2-8mm-03061874',
+    art: 'CAMARA BULLET 2MP LENTE FIJA 2.8MM',
+    sku: '03-06-1874',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/camara-bullet-2mp-lente-fija-2-8mm-03061874',
+    nota: 'CAMARA BULLET 2MP LENTE FIJA 2.8MM · artículo 03-06-1874 · ref. IPC-B122-APF28-SC · marca STD. ' + SUPUESTO_ITBIS
   });
   c('MAT-16-007', PROV_OCHOA, 8594.82, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-2mp-2-8-12mm-03061802',
@@ -41468,30 +41411,6 @@
     url: 'https://ochoa.com.do/producto/camara-bullet-2mp-2-8-12mm-03061802',
     nota: 'CAMARA BULLET 2MP 2.8-12MM · artículo 03-06-1802 · ref. B312-APKZ · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-007', PROV_OCHOA, 4918.58, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-2mp-lente-fija-2-8mm-03061874',
-    art: 'CAMARA BULLET 2MP LENTE FIJA 2.8MM',
-    sku: '03-06-1874',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/camara-bullet-2mp-lente-fija-2-8mm-03061874',
-    nota: 'CAMARA BULLET 2MP LENTE FIJA 2.8MM · artículo 03-06-1874 · ref. IPC-B122-APF28-SC · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-007', PROV_OCHOA, 3079.43, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-wifi-ip-2mp-28mm-zoom-16x-03061861',
-    art: 'CAMARA BULLET WIFI IP 2MP 2,8MM ZOOM 16X',
-    sku: '03-06-1861',
-    marca: 'VESTA',
-    url: 'https://ochoa.com.do/producto/camara-bullet-wifi-ip-2mp-28mm-zoom-16x-03061861',
-    nota: 'CAMARA BULLET WIFI IP 2MP 2,8MM ZOOM 16X · artículo 03-06-1861 · ref. VESTA-293 · marca VESTA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-007', PROV_OCHOA, 4606.9, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-ip-bullet-2mp-2-8mm-wizsense-sdl-03062046',
-    art: 'CAMARA IP BULLET 2MP 2.8MM WIZSENSE SDL',
-    sku: '03-06-2046',
-    marca: 'DAHUA',
-    url: 'https://ochoa.com.do/producto/camara-ip-bullet-2mp-2-8mm-wizsense-sdl-03062046',
-    nota: 'CAMARA IP BULLET 2MP 2.8MM WIZSENSE SDL · artículo 03-06-2046 · ref. DH-IPC-HFW2249S-S-IL · marca DAHUA. ' + SUPUESTO_ITBIS
-  });
   c('MAT-16-008', PROV_OCHOA, 9064.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-4mp-03061968',
     art: 'CAMARA BULLET 4MP',
@@ -41500,7 +41419,7 @@
     url: 'https://ochoa.com.do/producto/camara-bullet-4mp-03061968',
     nota: 'CAMARA BULLET 4MP · artículo 03-06-1968 · ref. IPC-B124-APF28-SC · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-008', PROV_OCHOA, 3087.35, {
+  c('MAT-16-009', PROV_OCHOA, 3087.35, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-4mp-2-8mm-03061771',
     art: 'CAMARA BULLET 4MP 2.8MM',
     sku: '03-06-1771',
@@ -41508,31 +41427,7 @@
     url: 'https://ochoa.com.do/producto/camara-bullet-4mp-2-8mm-03061771',
     nota: 'CAMARA BULLET 4MP 2.8MM · artículo 03-06-1771 · ref. STD-B124-APF28 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-008', PROV_OCHOA, 17705.5, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-solar-ip-bullet-4mp-4g-2da-gen-03062164',
-    art: 'CAMARA SOLAR IP BULLET 4MP 4G 2DA GEN',
-    sku: '03-06-2164',
-    marca: 'DAHUA',
-    url: 'https://ochoa.com.do/producto/camara-solar-ip-bullet-4mp-4g-2da-gen-03062164',
-    nota: 'CAMARA SOLAR IP BULLET 4MP 4G 2DA GEN · artículo 03-06-2164 · ref. DH-IPC-HFW2441DG-4G- · marca DAHUA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-009', PROV_OCHOA, 12499.73, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-net-2-8-12mm-03060626',
-    art: 'CAMARA 5MP NET 2.8-12MM',
-    sku: '03-06-0626',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-5mp-net-2-8-12mm-03060626',
-    nota: 'CAMARA 5MP NET 2.8-12MM · artículo 03-06-0626 · ref. COR-IP5BV · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-009', PROV_OCHOA, 5675.9, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-5mp-lente-vf-2-8mm-03061876',
-    art: 'CAMARA BULLET 5MP LENTE VF 2.8MM',
-    sku: '03-06-1876',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/camara-bullet-5mp-lente-vf-2-8mm-03061876',
-    nota: 'CAMARA BULLET 5MP LENTE VF 2.8MM · artículo 03-06-1876 · ref. IPC-B315-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-009', PROV_OCHOA, 3442.71, {
+  c('MAT-16-010', PROV_OCHOA, 3442.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-medallion-2-8mm-03060612',
     art: 'CAMARA T / BULLET 5MP EXT. MEDALLION 2.8MM',
     sku: '03-06-0612',
@@ -41540,15 +41435,38 @@
     url: 'https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-medallion-2-8mm-03060612',
     nota: 'CAMARA T / BULLET 5MP EXT. MEDALLION 2.8MM · artículo 03-06-0612 · ref. COR-H5BF · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-009', PROV_OCHOA, 7322.31, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-net-2-8mm-03060625',
-    art: 'CAMARA T / BULLET 5MP EXT. NET 2.8MM',
-    sku: '03-06-0625',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-net-2-8mm-03060625',
-    nota: 'CAMARA T / BULLET 5MP EXT. NET 2.8MM · artículo 03-06-0625 · ref. COR-IP5BF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  c('MAT-16-011', PROV_OCHOA, 5675.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-5mp-lente-vf-2-8mm-03061876',
+    art: 'CAMARA BULLET 5MP LENTE VF 2.8MM',
+    sku: '03-06-1876',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/camara-bullet-5mp-lente-vf-2-8mm-03061876',
+    nota: 'CAMARA BULLET 5MP LENTE VF 2.8MM · artículo 03-06-1876 · ref. IPC-B315-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-009', PROV_OCHOA, 1394.08, {
+  c('MAT-16-012', PROV_OCHOA, 2588.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-anal-hybrid-ahd-100-ir-03060610',
+    art: 'CAMARA T / BULLET ANAL.HYBRID AHD 100\' IR',
+    sku: '03-06-0610',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-t-bullet-anal-hybrid-ahd-100-ir-03060610',
+    nota: 'CAMARA T / BULLET ANAL.HYBRID AHD 100\' IR · artículo 03-06-0610 · ref. COR-HF97 · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-012', PROV_OCHOA, 2191.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-seg-bullet-hdcvi-hfw2220rn-2-03062141',
+    art: 'CAMARA SEG. BULLET HDCVI HFW2220RN (2',
+    sku: '03-06-2141',
+    url: 'https://ochoa.com.do/producto/camara-seg-bullet-hdcvi-hfw2220rn-2-03062141',
+    nota: 'CAMARA SEG. BULLET HDCVI HFW2220RN (2 · artículo 03-06-2141 · ref. 116788. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-013', PROV_OCHOA, 1784.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cam-hdcvi-bullet-2mp-2-8mm-sdl-mic-ir40m-03062003',
+    art: 'CAM HDCVI BULLET 2MP 2.8MM SDL MIC IR40M',
+    sku: '03-06-2003',
+    marca: 'DAHUA',
+    url: 'https://ochoa.com.do/producto/cam-hdcvi-bullet-2mp-2-8mm-sdl-mic-ir40m-03062003',
+    nota: 'CAM HDCVI BULLET 2MP 2.8MM SDL MIC IR40M · artículo 03-06-2003 · ref. DH-HAC-HFW1200TLMN · marca DAHUA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-014', PROV_OCHOA, 1394.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-hdcvi-bullet-5mp-2-8mm-cooper-sdl-03062140',
     art: 'CAMARA HDCVI BULLET 5MP 2.8MM COOPER SDL',
     sku: '03-06-2140',
@@ -41556,7 +41474,55 @@
     url: 'https://ochoa.com.do/producto/camara-hdcvi-bullet-5mp-2-8mm-cooper-sdl-03062140',
     nota: 'CAMARA HDCVI BULLET 5MP 2.8MM COOPER SDL · artículo 03-06-2140 · ref. DH-HAC-B1A51N-U-IL-A · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-010', PROV_OCHOA, 13465.71, {
+  c('MAT-16-015', PROV_OCHOA, 5547.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-net-ext-ir-1920hx1080v-03060621',
+    art: 'CAMARA T / BULLET NET EXT. IR 1920HX1080V',
+    sku: '03-06-0621',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-t-bullet-net-ext-ir-1920hx1080v-03060621',
+    nota: 'CAMARA T / BULLET NET EXT. IR 1920HX1080V · artículo 03-06-0621 · ref. COR-IP2BF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-016', PROV_OCHOA, 2810.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-3-6mm-net-poe-03060622',
+    art: 'CAMARA 2MP 3.6MM NET POE',
+    sku: '03-06-0622',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-2mp-3-6mm-net-poe-03060622',
+    nota: 'CAMARA 2MP 3.6MM NET POE · artículo 03-06-0622 · ref. COR-IP2BM · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-016', PROV_OCHOA, 4606.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-ip-bullet-2mp-2-8mm-wizsense-sdl-03062046',
+    art: 'CAMARA IP BULLET 2MP 2.8MM WIZSENSE SDL',
+    sku: '03-06-2046',
+    marca: 'DAHUA',
+    url: 'https://ochoa.com.do/producto/camara-ip-bullet-2mp-2-8mm-wizsense-sdl-03062046',
+    nota: 'CAMARA IP BULLET 2MP 2.8MM WIZSENSE SDL · artículo 03-06-2046 · ref. DH-IPC-HFW2249S-S-IL · marca DAHUA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-017', PROV_OCHOA, 8801.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-2-8-12mm-net-autofocus-03060623',
+    art: 'CAMARA 2MP 2.8-12MM NET AUTOFOCUS',
+    sku: '03-06-0623',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-2mp-2-8-12mm-net-autofocus-03060623',
+    nota: 'CAMARA 2MP 2.8-12MM NET AUTOFOCUS · artículo 03-06-0623 · ref. COR-IP2BV · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-018', PROV_OCHOA, 7322.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-net-2-8mm-03060625',
+    art: 'CAMARA T / BULLET 5MP EXT. NET 2.8MM',
+    sku: '03-06-0625',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-t-bullet-5mp-ext-net-2-8mm-03060625',
+    nota: 'CAMARA T / BULLET 5MP EXT. NET 2.8MM · artículo 03-06-0625 · ref. COR-IP5BF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-019', PROV_OCHOA, 12499.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-net-2-8-12mm-03060626',
+    art: 'CAMARA 5MP NET 2.8-12MM',
+    sku: '03-06-0626',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-5mp-net-2-8-12mm-03060626',
+    nota: 'CAMARA 5MP NET 2.8-12MM · artículo 03-06-0626 · ref. COR-IP5BV · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-020', PROV_OCHOA, 13465.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cam-ip-varifocal-motoriz-bullet8mp-wizse-03061989',
     art: 'CAM IP VARIFOCAL MOTORIZ BULLET8MP WIZSE',
     sku: '03-06-1989',
@@ -41564,31 +41530,23 @@
     url: 'https://ochoa.com.do/producto/cam-ip-varifocal-motoriz-bullet8mp-wizse-03061989',
     nota: 'CAM IP VARIFOCAL MOTORIZ BULLET8MP WIZSE · artículo 03-06-1989 · ref. DH-IPC-HFW2841T-ZS · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-011', PROV_OCHOA, 12992.17, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/flexidome-ip-micro-3000i-domo-fijo-130gr-03061597',
-    art: 'FLEXIDOME IP MICRO 3000I DOMO FIJO 130GR',
-    sku: '03-06-1597',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/flexidome-ip-micro-3000i-domo-fijo-130gr-03061597',
-    nota: 'FLEXIDOME IP MICRO 3000I DOMO FIJO 130GR · artículo 03-06-1597 · ref. NDV-3502-F02 · marca BOSCH. ' + SUPUESTO_ITBIS
+  c('MAT-16-021', PROV_OCHOA, 17705.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-solar-ip-bullet-4mp-4g-2da-gen-03062164',
+    art: 'CAMARA SOLAR IP BULLET 4MP 4G 2DA GEN',
+    sku: '03-06-2164',
+    marca: 'DAHUA',
+    url: 'https://ochoa.com.do/producto/camara-solar-ip-bullet-4mp-4g-2da-gen-03062164',
+    nota: 'CAMARA SOLAR IP BULLET 4MP 4G 2DA GEN · artículo 03-06-2164 · ref. DH-IPC-HFW2441DG-4G- · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-012', PROV_OCHOA, 4807.61, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-net-03060624',
-    art: 'CAMARA 2MP NET',
-    sku: '03-06-0624',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-2mp-net-03060624',
-    nota: 'CAMARA 2MP NET · artículo 03-06-0624 · ref. COR-IP2TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  c('MAT-16-022', PROV_OCHOA, 3079.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-bullet-wifi-ip-2mp-28mm-zoom-16x-03061861',
+    art: 'CAMARA BULLET WIFI IP 2MP 2,8MM ZOOM 16X',
+    sku: '03-06-1861',
+    marca: 'VESTA',
+    url: 'https://ochoa.com.do/producto/camara-bullet-wifi-ip-2mp-28mm-zoom-16x-03061861',
+    nota: 'CAMARA BULLET WIFI IP 2MP 2,8MM ZOOM 16X · artículo 03-06-1861 · ref. VESTA-293 · marca VESTA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-012', PROV_OCHOA, 7322.31, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-net-2-8-12mm-03060652',
-    art: 'CAMARA 2MP NET 2.8-12MM',
-    sku: '03-06-0652',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-2mp-net-2-8-12mm-03060652',
-    nota: 'CAMARA 2MP NET 2.8-12MM · artículo 03-06-0652 · ref. COR-IP2TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-012', PROV_OCHOA, 2705.84, {
+  c('MAT-16-023', PROV_OCHOA, 2705.84, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-2mp-lente-fijo-2-8mm-03061877',
     art: 'CAMARA DOMO 2MP LENTE FIJO 2.8MM',
     sku: '03-06-1877',
@@ -41596,23 +41554,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-2mp-lente-fijo-2-8mm-03061877',
     nota: 'CAMARA DOMO 2MP LENTE FIJO 2.8MM · artículo 03-06-1877 · ref. IPC-D122-PF28-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-012', PROV_OCHOA, 4592.19, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-2mp-vf-2-8-12mm-03061879',
-    art: 'CAMARA DOMO 2MP VF 2.8-12MM',
-    sku: '03-06-1879',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/camara-domo-2mp-vf-2-8-12mm-03061879',
-    nota: 'CAMARA DOMO 2MP VF 2.8-12MM · artículo 03-06-1879 · ref. IPC-D312-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-012', PROV_OCHOA, 3489.15, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-ip-domo-2mp-2-8mm-entry-03062004',
-    art: 'CAMARA IP DOMO 2MP 2.8MM ENTRY',
-    sku: '03-06-2004',
-    marca: 'DAHUA',
-    url: 'https://ochoa.com.do/producto/camara-ip-domo-2mp-2-8mm-entry-03062004',
-    nota: 'CAMARA IP DOMO 2MP 2.8MM ENTRY · artículo 03-06-2004 · ref. DH-IPC-HDBW1230E-S5 · marca DAHUA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-012', PROV_OCHOA, 1649.1, {
+  c('MAT-16-023', PROV_OCHOA, 1649.1, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-domo-2mp-3-6mm-exterior-serie4-03060604',
     art: 'CAMARA T / DOMO 2MP 3.6MM EXTERIOR SERIE4',
     sku: '03-06-0604',
@@ -41620,15 +41562,15 @@
     url: 'https://ochoa.com.do/producto/camara-t-domo-2mp-3-6mm-exterior-serie4-03060604',
     nota: 'CAMARA T / DOMO 2MP 3.6MM EXTERIOR SERIE4 · artículo 03-06-0604 · ref. COR-H2TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-012', PROV_OCHOA, 740.01, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-hdcvi-domo-2mp-2-8mm-cooper-sdl-03062128',
-    art: 'CAMARA HDCVI DOMO 2MP 2.8MM COOPER SDL',
-    sku: '03-06-2128',
-    marca: 'DAHUA',
-    url: 'https://ochoa.com.do/producto/camara-hdcvi-domo-2mp-2-8mm-cooper-sdl-03062128',
-    nota: 'CAMARA HDCVI DOMO 2MP 2.8MM COOPER SDL · artículo 03-06-2128 · ref. DH-HAC-T1A21N-U-IL-A · marca DAHUA. ' + SUPUESTO_ITBIS
+  c('MAT-16-024', PROV_OCHOA, 4592.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-2mp-vf-2-8-12mm-03061879',
+    art: 'CAMARA DOMO 2MP VF 2.8-12MM',
+    sku: '03-06-1879',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/camara-domo-2mp-vf-2-8-12mm-03061879',
+    nota: 'CAMARA DOMO 2MP VF 2.8-12MM · artículo 03-06-1879 · ref. IPC-D312-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-013', PROV_OCHOA, 3695.82, {
+  c('MAT-16-025', PROV_OCHOA, 3695.82, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-4mp-2-8mm-03061803',
     art: 'CAMARA DOMO 4MP 2.8MM',
     sku: '03-06-1803',
@@ -41636,7 +41578,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-4mp-2-8mm-03061803',
     nota: 'CAMARA DOMO 4MP 2.8MM · artículo 03-06-1803 · ref. D124-PF28 · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-013', PROV_OCHOA, 5009.67, {
+  c('MAT-16-025', PROV_OCHOA, 5009.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-fixed-eyeball-4mp-2-8mm-03061888',
     art: 'CAMARA DOMO FIXED EYEBALL 4MP 2.8MM',
     sku: '03-06-1888',
@@ -41644,7 +41586,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-fixed-eyeball-4mp-2-8mm-03061888',
     nota: 'CAMARA DOMO FIXED EYEBALL 4MP 2.8MM · artículo 03-06-1888 · ref. SC-3243-IGS-F28 · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-013', PROV_OCHOA, 5040.65, {
+  c('MAT-16-025', PROV_OCHOA, 5040.65, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-ir-fixed-eyeball-4mp-03061887',
     art: 'CAMARA DOMO IR FIXED EYEBALL 4MP',
     sku: '03-06-1887',
@@ -41652,7 +41594,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-ir-fixed-eyeball-4mp-03061887',
     nota: 'CAMARA DOMO IR FIXED EYEBALL 4MP · artículo 03-06-1887 · ref. SC-3143-IGS-F28 · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-013', PROV_OCHOA, 8268.27, {
+  c('MAT-16-026', PROV_OCHOA, 8268.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-motorizada-4mp-2-8-12mm-03061890',
     art: 'CAMARA DOMO MOTORIZADA 4MP 2.8-12MM',
     sku: '03-06-1890',
@@ -41660,31 +41602,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-motorizada-4mp-2-8-12mm-03061890',
     nota: 'CAMARA DOMO MOTORIZADA 4MP 2.8-12MM · artículo 03-06-1890 · ref. SC-3743F-IGZ · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-014', PROV_OCHOA, 11760.12, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-medallion-2-8-12mm-net-varif-03060629',
-    art: 'CAMARA 5MP MEDALLION 2.8-12MM NET VARIF.',
-    sku: '03-06-0629',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-5mp-medallion-2-8-12mm-net-varif-03060629',
-    nota: 'CAMARA 5MP MEDALLION 2.8-12MM NET VARIF. · artículo 03-06-0629 · ref. COR-IP5TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-014', PROV_OCHOA, 7322.31, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-net-ir-2-8mm-03060653',
-    art: 'CAMARA 5MP NET IR 2.8MM',
-    sku: '03-06-0653',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-5mp-net-ir-2-8mm-03060653',
-    nota: 'CAMARA 5MP NET IR 2.8MM · artículo 03-06-0653 · ref. COR-IP5TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-014', PROV_OCHOA, 5448.59, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-5mp-vf-2-8-12mm-03061880',
-    art: 'CAMARA DOMO 5MP VF 2.8-12MM',
-    sku: '03-06-1880',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/camara-domo-5mp-vf-2-8-12mm-03061880',
-    nota: 'CAMARA DOMO 5MP VF 2.8-12MM · artículo 03-06-1880 · ref. IPC-D315-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-014', PROV_OCHOA, 6122.92, {
+  c('MAT-16-027', PROV_OCHOA, 6122.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-fixed-eyeball-5mp-2-8mm-03061889',
     art: 'CAMARA DOMO FIXED EYEBALL 5MP 2.8MM',
     sku: '03-06-1889',
@@ -41692,23 +41610,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-fixed-eyeball-5mp-2-8mm-03061889',
     nota: 'CAMARA DOMO FIXED EYEBALL 5MP 2.8MM · artículo 03-06-1889 · ref. SC-3253-IGS-F28 · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-014', PROV_OCHOA, 3618.09, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-ip-5mp-2-8mm-ip67-poe-c-mic-03061878',
-    art: 'CAMARA DOMO IP 5MP 2.8MM IP67 POE C / MIC',
-    sku: '03-06-1878',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/camara-domo-ip-5mp-2-8mm-ip67-poe-c-mic-03061878',
-    nota: 'CAMARA DOMO IP 5MP 2.8MM IP67 POE C / MIC · artículo 03-06-1878 · ref. IPC-D125-PF28-SC · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-014', PROV_OCHOA, 7248.37, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-ir-varifocal-03060609',
-    art: 'CAMARA T / DOMO 5MP 2.8MM IR VARIFOCAL',
-    sku: '03-06-0609',
-    marca: 'CCTV CORE',
-    url: 'https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-ir-varifocal-03060609',
-    nota: 'CAMARA T / DOMO 5MP 2.8MM IR VARIFOCAL · artículo 03-06-0609 · ref. COR-H5TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-014', PROV_OCHOA, 3402.29, {
+  c('MAT-16-027', PROV_OCHOA, 3402.29, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-wide-medallion-03060608',
     art: 'CAMARA T / DOMO 5MP 2.8MM WIDE MEDALLION',
     sku: '03-06-0608',
@@ -41716,15 +41618,31 @@
     url: 'https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-wide-medallion-03060608',
     nota: 'CAMARA T / DOMO 5MP 2.8MM WIDE MEDALLION · artículo 03-06-0608 · ref. COR-H5TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-014', PROV_OCHOA, 24325.6, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/flexidome-ip-3000i-ir-domo-fijo-5mp-hdr-03061561',
-    art: 'FLEXIDOME IP 3000I IR DOMO FIJO 5MP HDR',
-    sku: '03-06-1561',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/flexidome-ip-3000i-ir-domo-fijo-5mp-hdr-03061561',
-    nota: 'FLEXIDOME IP 3000I IR DOMO FIJO 5MP HDR · artículo 03-06-1561 · ref. NDE-3503-AL · marca BOSCH. ' + SUPUESTO_ITBIS
+  c('MAT-16-028', PROV_OCHOA, 5448.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-5mp-vf-2-8-12mm-03061880',
+    art: 'CAMARA DOMO 5MP VF 2.8-12MM',
+    sku: '03-06-1880',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/camara-domo-5mp-vf-2-8-12mm-03061880',
+    nota: 'CAMARA DOMO 5MP VF 2.8-12MM · artículo 03-06-1880 · ref. IPC-D315-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-014', PROV_OCHOA, 1368.3, {
+  c('MAT-16-028', PROV_OCHOA, 7248.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-ir-varifocal-03060609',
+    art: 'CAMARA T / DOMO 5MP 2.8MM IR VARIFOCAL',
+    sku: '03-06-0609',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-t-domo-5mp-2-8mm-ir-varifocal-03060609',
+    nota: 'CAMARA T / DOMO 5MP 2.8MM IR VARIFOCAL · artículo 03-06-0609 · ref. COR-H5TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-029', PROV_OCHOA, 740.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-hdcvi-domo-2mp-2-8mm-cooper-sdl-03062128',
+    art: 'CAMARA HDCVI DOMO 2MP 2.8MM COOPER SDL',
+    sku: '03-06-2128',
+    marca: 'DAHUA',
+    url: 'https://ochoa.com.do/producto/camara-hdcvi-domo-2mp-2-8mm-cooper-sdl-03062128',
+    nota: 'CAMARA HDCVI DOMO 2MP 2.8MM COOPER SDL · artículo 03-06-2128 · ref. DH-HAC-T1A21N-U-IL-A · marca DAHUA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-030', PROV_OCHOA, 1368.3, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-hdcvi-domo-5mp-2-8mm-cooper-sdl-03062129',
     art: 'CAMARA HDCVI DOMO 5MP 2.8MM COOPER SDL',
     sku: '03-06-2129',
@@ -41732,7 +41650,71 @@
     url: 'https://ochoa.com.do/producto/camara-hdcvi-domo-5mp-2-8mm-cooper-sdl-03062129',
     nota: 'CAMARA HDCVI DOMO 5MP 2.8MM COOPER SDL · artículo 03-06-2129 · ref. DH-HAC-T1A51N-U-IL-A · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-015', PROV_OCHOA, 11020.47, {
+  c('MAT-16-031', PROV_OCHOA, 12992.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/flexidome-ip-micro-3000i-domo-fijo-130gr-03061597',
+    art: 'FLEXIDOME IP MICRO 3000I DOMO FIJO 130GR',
+    sku: '03-06-1597',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/flexidome-ip-micro-3000i-domo-fijo-130gr-03061597',
+    nota: 'FLEXIDOME IP MICRO 3000I DOMO FIJO 130GR · artículo 03-06-1597 · ref. NDV-3502-F02 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-032', PROV_OCHOA, 4807.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-net-03060624',
+    art: 'CAMARA 2MP NET',
+    sku: '03-06-0624',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-2mp-net-03060624',
+    nota: 'CAMARA 2MP NET · artículo 03-06-0624 · ref. COR-IP2TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-033', PROV_OCHOA, 3489.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-ip-domo-2mp-2-8mm-entry-03062004',
+    art: 'CAMARA IP DOMO 2MP 2.8MM ENTRY',
+    sku: '03-06-2004',
+    marca: 'DAHUA',
+    url: 'https://ochoa.com.do/producto/camara-ip-domo-2mp-2-8mm-entry-03062004',
+    nota: 'CAMARA IP DOMO 2MP 2.8MM ENTRY · artículo 03-06-2004 · ref. DH-IPC-HDBW1230E-S5 · marca DAHUA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-034', PROV_OCHOA, 7322.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-2mp-net-2-8-12mm-03060652',
+    art: 'CAMARA 2MP NET 2.8-12MM',
+    sku: '03-06-0652',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-2mp-net-2-8-12mm-03060652',
+    nota: 'CAMARA 2MP NET 2.8-12MM · artículo 03-06-0652 · ref. COR-IP2TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-035', PROV_OCHOA, 24325.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/flexidome-ip-3000i-ir-domo-fijo-5mp-hdr-03061561',
+    art: 'FLEXIDOME IP 3000I IR DOMO FIJO 5MP HDR',
+    sku: '03-06-1561',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/flexidome-ip-3000i-ir-domo-fijo-5mp-hdr-03061561',
+    nota: 'FLEXIDOME IP 3000I IR DOMO FIJO 5MP HDR · artículo 03-06-1561 · ref. NDE-3503-AL · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-036', PROV_OCHOA, 7322.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-net-ir-2-8mm-03060653',
+    art: 'CAMARA 5MP NET IR 2.8MM',
+    sku: '03-06-0653',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-5mp-net-ir-2-8mm-03060653',
+    nota: 'CAMARA 5MP NET IR 2.8MM · artículo 03-06-0653 · ref. COR-IP5TRF · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-036', PROV_OCHOA, 3618.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-ip-5mp-2-8mm-ip67-poe-c-mic-03061878',
+    art: 'CAMARA DOMO IP 5MP 2.8MM IP67 POE C / MIC',
+    sku: '03-06-1878',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/camara-domo-ip-5mp-2-8mm-ip67-poe-c-mic-03061878',
+    nota: 'CAMARA DOMO IP 5MP 2.8MM IP67 POE C / MIC · artículo 03-06-1878 · ref. IPC-D125-PF28-SC · marca STD. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-037', PROV_OCHOA, 11760.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-medallion-2-8-12mm-net-varif-03060629',
+    art: 'CAMARA 5MP MEDALLION 2.8-12MM NET VARIF.',
+    sku: '03-06-0629',
+    marca: 'CCTV CORE',
+    url: 'https://ochoa.com.do/producto/camara-5mp-medallion-2-8-12mm-net-varif-03060629',
+    nota: 'CAMARA 5MP MEDALLION 2.8-12MM NET VARIF. · artículo 03-06-0629 · ref. COR-IP5TRV · marca CCTV CORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-038', PROV_OCHOA, 11020.47, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-5mp-ext-net-360gr-pano-03060627',
     art: 'CAMARA 5MP EXT. NET 360GR PANO.',
     sku: '03-06-0627',
@@ -41740,7 +41722,7 @@
     url: 'https://ochoa.com.do/producto/camara-5mp-ext-net-360gr-pano-03060627',
     nota: 'CAMARA 5MP EXT. NET 360GR PANO. · artículo 03-06-0627 · ref. COR-IP5FISH · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-016', PROV_OCHOA, 30360.56, {
+  c('MAT-16-039', PROV_OCHOA, 30360.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-domo-ip-ptz-2mp-25x-zoom-03061806',
     art: 'CAMARA DOMO IP PTZ 2MP 25X ZOOM',
     sku: '03-06-1806',
@@ -41748,7 +41730,7 @@
     url: 'https://ochoa.com.do/producto/camara-domo-ip-ptz-2mp-25x-zoom-03061806',
     nota: 'CAMARA DOMO IP PTZ 2MP 25X ZOOM · artículo 03-06-1806 · ref. XPTIE252X · marca EPCOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-017', PROV_OCHOA, 19602.61, {
+  c('MAT-16-040', PROV_OCHOA, 19602.61, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-solar-ptz-3mp-3mp-audio-2way-4g-03062165',
     art: 'CAMARA SOLAR PTZ 3MP+3MP AUDIO 2WAY 4G',
     sku: '03-06-2165',
@@ -41756,7 +41738,7 @@
     url: 'https://ochoa.com.do/producto/camara-solar-ptz-3mp-3mp-audio-2way-4g-03062165',
     nota: 'CAMARA SOLAR PTZ 3MP+3MP AUDIO 2WAY 4G · artículo 03-06-2165 · ref. DH-IPC-PTS2649C-3E3Z · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-018', PROV_OCHOA, 2549.16, {
+  c('MAT-16-041', PROV_OCHOA, 2549.16, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-turr-2mp-lente-fijo-turrent-2-8mm-03061881',
     art: 'CAMARA TURR 2MP LENTE FIJO TURRENT 2.8MM',
     sku: '03-06-1881',
@@ -41764,7 +41746,7 @@
     url: 'https://ochoa.com.do/producto/camara-turr-2mp-lente-fijo-turrent-2-8mm-03061881',
     nota: 'CAMARA TURR 2MP LENTE FIJO TURRENT 2.8MM · artículo 03-06-1881 · ref. IPC-T122-APF28-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-018', PROV_OCHOA, 4679.99, {
+  c('MAT-16-042', PROV_OCHOA, 4679.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-turret-2mp-vf-03061883',
     art: 'CAMARA TURRET 2MP VF',
     sku: '03-06-1883',
@@ -41772,7 +41754,7 @@
     url: 'https://ochoa.com.do/producto/camara-turret-2mp-vf-03061883',
     nota: 'CAMARA TURRET 2MP VF · artículo 03-06-1883 · ref. IPC-T312-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-019', PROV_OCHOA, 3073.06, {
+  c('MAT-16-043', PROV_OCHOA, 3073.06, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-turret-4mp-ip67-smart-ir-uniarch-03061730',
     art: 'CAMARA TURRET 4MP IP67 SMART IR UNIARCH',
     sku: '03-06-1730',
@@ -41780,7 +41762,7 @@
     url: 'https://ochoa.com.do/producto/camara-turret-4mp-ip67-smart-ir-uniarch-03061730',
     nota: 'CAMARA TURRET 4MP IP67 SMART IR UNIARCH · artículo 03-06-1730 · ref. T124-APF28 · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-020', PROV_OCHOA, 3714.5, {
+  c('MAT-16-044', PROV_OCHOA, 3714.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-turret-5mp-lente-fijo-2-8mm-03061882',
     art: 'CAMARA TURRET 5MP LENTE FIJO 2.8MM',
     sku: '03-06-1882',
@@ -41788,7 +41770,7 @@
     url: 'https://ochoa.com.do/producto/camara-turret-5mp-lente-fijo-2-8mm-03061882',
     nota: 'CAMARA TURRET 5MP LENTE FIJO 2.8MM · artículo 03-06-1882 · ref. IPC-T125-APF28-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-020', PROV_OCHOA, 5427.13, {
+  c('MAT-16-045', PROV_OCHOA, 5427.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-turret-5mp-vf-03061884',
     art: 'CAMARA TURRET 5MP VF',
     sku: '03-06-1884',
@@ -41796,23 +41778,7 @@
     url: 'https://ochoa.com.do/producto/camara-turret-5mp-vf-03061884',
     nota: 'CAMARA TURRET 5MP VF · artículo 03-06-1884 · ref. IPC-T315-APKZ-SC · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-021', PROV_OCHOA, 14863.32, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-fija-2mp-3-12mm-dinion-03060536',
-    art: 'CAMARA FIJA 2MP 3-12MM DINION',
-    sku: '03-06-0536',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/camara-fija-2mp-3-12mm-dinion-03060536',
-    nota: 'CAMARA FIJA 2MP 3-12MM DINION · artículo 03-06-0536 · ref. NBN-50022-V3 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-021', PROV_OCHOA, 1576.87, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-inalambr-smart-inte-2mp-1080p-03061896',
-    art: 'CAMARA INALAMBR SMART INTE 2MP 1080P',
-    sku: '03-06-1896',
-    marca: 'UNNO',
-    url: 'https://ochoa.com.do/producto/camara-inalambr-smart-inte-2mp-1080p-03061896',
-    nota: 'CAMARA INALAMBR SMART INTE 2MP 1080P · artículo 03-06-1896 · ref. CM1408WT/CM1418WT · marca UNNO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-16-021', PROV_OCHOA, 5421.17, {
+  c('MAT-16-046', PROV_OCHOA, 5421.17, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-inala-smart-ext-2mp-1080p-reflect-03061898',
     art: 'CAMARA INALA SMART EXT 2MP 1080P REFLECT',
     sku: '03-06-1898',
@@ -41820,7 +41786,15 @@
     url: 'https://ochoa.com.do/producto/camara-inala-smart-ext-2mp-1080p-reflect-03061898',
     nota: 'CAMARA INALA SMART EXT 2MP 1080P REFLECT · artículo 03-06-1898 · ref. CM1412WT · marca UNNO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-022', PROV_OCHOA, 3414.74, {
+  c('MAT-16-047', PROV_OCHOA, 14863.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-fija-2mp-3-12mm-dinion-03060536',
+    art: 'CAMARA FIJA 2MP 3-12MM DINION',
+    sku: '03-06-0536',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/camara-fija-2mp-3-12mm-dinion-03060536',
+    nota: 'CAMARA FIJA 2MP 3-12MM DINION · artículo 03-06-0536 · ref. NBN-50022-V3 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-048', PROV_OCHOA, 3414.74, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-ip-pt-p-interior-5mp-bidirecional-03062001',
     art: 'CAMARA IP PT P / INTERIOR 5MP BIDIRECIONAL',
     sku: '03-06-2001',
@@ -41828,7 +41802,23 @@
     url: 'https://ochoa.com.do/producto/camara-ip-pt-p-interior-5mp-bidirecional-03062001',
     nota: 'CAMARA IP PT P / INTERIOR 5MP BIDIRECIONAL · artículo 03-06-2001 · ref. DH-IPC-H5BP-0360B · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-023', PROV_OCHOA, 18426.33, {
+  c('MAT-16-049', PROV_OCHOA, 2548.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-seguridad-wi-fi-hd-360-c-fuente-03061546',
+    art: 'CAMARA SEGURIDAD WI-FI HD 360 C / FUENTE',
+    sku: '03-06-1546',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/camara-seguridad-wi-fi-hd-360-c-fuente-03061546',
+    nota: 'CAMARA SEGURIDAD WI-FI HD 360 C / FUENTE · artículo 03-06-1546 · ref. 4663GK-200MP2-B · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-050', PROV_OCHOA, 1576.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/camara-inalambr-smart-inte-2mp-1080p-03061896',
+    art: 'CAMARA INALAMBR SMART INTE 2MP 1080P',
+    sku: '03-06-1896',
+    marca: 'UNNO',
+    url: 'https://ochoa.com.do/producto/camara-inalambr-smart-inte-2mp-1080p-03061896',
+    nota: 'CAMARA INALAMBR SMART INTE 2MP 1080P · artículo 03-06-1896 · ref. CM1408WT/CM1418WT · marca UNNO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-16-051', PROV_OCHOA, 18426.33, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/dvr-medallion-ahd-16-canales-03060602',
     art: 'DVR MEDALLION AHD 16 CANALES',
     sku: '03-06-0602',
@@ -41836,7 +41826,7 @@
     url: 'https://ochoa.com.do/producto/dvr-medallion-ahd-16-canales-03060602',
     nota: 'DVR MEDALLION AHD 16 CANALES · artículo 03-06-0602 · ref. COR-MD16LT · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-024', PROV_OCHOA, 6677.44, {
+  c('MAT-16-052', PROV_OCHOA, 6677.44, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/dvr-4-canales-5mpx-03060651',
     art: 'DVR 4 CANALES 5MPX',
     sku: '03-06-0651',
@@ -41844,7 +41834,7 @@
     url: 'https://ochoa.com.do/producto/dvr-4-canales-5mpx-03060651',
     nota: 'DVR 4 CANALES 5MPX · artículo 03-06-0651 · ref. MD4LT · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-024', PROV_OCHOA, 7438.16, {
+  c('MAT-16-052', PROV_OCHOA, 7438.16, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/dvr-medallion-ahd-4canales-960h-03060600',
     art: 'DVR MEDALLION AHD 4CANALES 960H',
     sku: '03-06-0600',
@@ -41852,7 +41842,7 @@
     url: 'https://ochoa.com.do/producto/dvr-medallion-ahd-4canales-960h-03060600',
     nota: 'DVR MEDALLION AHD 4CANALES 960H · artículo 03-06-0600 · ref. COR-MD4 · marca CCTV CORE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-025', PROV_OCHOA, 17077.39, {
+  c('MAT-16-053', PROV_OCHOA, 17077.39, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grabador-de-video-nvr-16ch-1u-c-16poe-8t-03061732',
     art: 'GRABADOR DE VIDEO NVR 16CH 1U C / 16POE 8T',
     sku: '03-06-1732',
@@ -41860,7 +41850,7 @@
     url: 'https://ochoa.com.do/producto/grabador-de-video-nvr-16ch-1u-c-16poe-8t-03061732',
     nota: 'GRABADOR DE VIDEO NVR 16CH 1U C / 16POE 8T · artículo 03-06-1732 · ref. NVR302-16S-16P · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-026', PROV_OCHOA, 20990.22, {
+  c('MAT-16-054', PROV_OCHOA, 20990.22, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/nvr-32ch-no-poe-serie-4000-ei-2hdd-wizse-03062005',
     art: 'NVR 32CH NO POE SERIE 4000-EI 2HDD WIZSE',
     sku: '03-06-2005',
@@ -41868,7 +41858,7 @@
     url: 'https://ochoa.com.do/producto/nvr-32ch-no-poe-serie-4000-ei-2hdd-wizse-03062005',
     nota: 'NVR 32CH NO POE SERIE 4000-EI 2HDD WIZSE · artículo 03-06-2005 · ref. DHI-NVR4232-EI · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-027', PROV_OCHOA, 126684.93, {
+  c('MAT-16-055', PROV_OCHOA, 126684.93, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/nvr-64ch-4k-network-video-recorder-03061805',
     art: 'NVR 64CH 4K NETWORK VIDEO RECORDER',
     sku: '03-06-1805',
@@ -41876,7 +41866,7 @@
     url: 'https://ochoa.com.do/producto/nvr-64ch-4k-network-video-recorder-03061805',
     nota: 'NVR 64CH 4K NETWORK VIDEO RECORDER · artículo 03-06-1805 · ref. NVR308-64X · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-028', PROV_OCHOA, 6079.41, {
+  c('MAT-16-056', PROV_OCHOA, 6079.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grabador-xvr-16-2ip-1080n-cooper-ws-03062126',
     art: 'GRABADOR XVR 16 / 2IP 1080N COOPER WS',
     sku: '03-06-2126',
@@ -41884,7 +41874,7 @@
     url: 'https://ochoa.com.do/producto/grabador-xvr-16-2ip-1080n-cooper-ws-03062126',
     nota: 'GRABADOR XVR 16 / 2IP 1080N COOPER WS · artículo 03-06-2126 · ref. DH-XVR1B16-I · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-029', PROV_OCHOA, 7633.17, {
+  c('MAT-16-057', PROV_OCHOA, 7633.17, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disco-duro-skyhawk-sata-1tb-5900-rpm-03062132',
     art: 'DISCO DURO SKYHAWK SATA 1TB 5900 RPM',
     sku: '03-06-2132',
@@ -41892,7 +41882,7 @@
     url: 'https://ochoa.com.do/producto/disco-duro-skyhawk-sata-1tb-5900-rpm-03062132',
     nota: 'DISCO DURO SKYHAWK SATA 1TB 5900 RPM · artículo 03-06-2132 · ref. ST1000VX012 · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-030', PROV_OCHOA, 22243.38, {
+  c('MAT-16-058', PROV_OCHOA, 22243.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disco-duro-sata-p-video-vigilancia-8tb-03061812',
     art: 'DISCO DURO SATA P / VIDEO VIGILANCIA 8TB',
     sku: '03-06-1812',
@@ -41900,7 +41890,7 @@
     url: 'https://ochoa.com.do/producto/disco-duro-sata-p-video-vigilancia-8tb-03061812',
     nota: 'DISCO DURO SATA P / VIDEO VIGILANCIA 8TB · artículo 03-06-1812 · ref. WD84PURZ · marca MDD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-031', PROV_OCHOA, 2976.42, {
+  c('MAT-16-059', PROV_OCHOA, 2976.42, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-calidad-del-aire-tvoc-03061708',
     art: 'MONITOR CALIDAD DEL AIRE TVOC',
     sku: '03-06-1708',
@@ -41908,7 +41898,7 @@
     url: 'https://ochoa.com.do/producto/monitor-calidad-del-aire-tvoc-03061708',
     nota: 'MONITOR CALIDAD DEL AIRE TVOC · artículo 03-06-1708 · ref. AAQS-S01 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-031', PROV_OCHOA, 7129.26, {
+  c('MAT-16-059', PROV_OCHOA, 7129.26, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-color-con-telefcolor-03060359',
     art: 'MONITOR COLOR CON TELEFCOLOR',
     sku: '03-06-0359',
@@ -41916,7 +41906,7 @@
     url: 'https://ochoa.com.do/producto/monitor-color-con-telefcolor-03060359',
     nota: 'MONITOR COLOR CON TELEFCOLOR · artículo 03-06-0359 · ref. 331751 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-031', PROV_OCHOA, 5692.64, {
+  c('MAT-16-059', PROV_OCHOA, 5692.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-color-s-telefh-fre-03060358',
     art: 'MONITOR COLOR S / TELEFH / FRE',
     sku: '03-06-0358',
@@ -41924,7 +41914,7 @@
     url: 'https://ochoa.com.do/producto/monitor-color-s-telefh-fre-03060358',
     nota: 'MONITOR COLOR S / TELEFH / FRE · artículo 03-06-0358 · ref. 331851 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-031', PROV_OCHOA, 5019.51, {
+  c('MAT-16-059', PROV_OCHOA, 5019.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-cristal-a-color-libre-manos-03060436',
     peso: 2,
     art: 'MONITOR CRISTAL A COLOR LIBRE MANOS',
@@ -41933,7 +41923,7 @@
     url: 'https://ochoa.com.do/producto/monitor-cristal-a-color-libre-manos-03060436',
     nota: 'MONITOR CRISTAL A COLOR LIBRE MANOS · artículo 03-06-0436 · ref. VXKRV76-BNEGRO · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-032', PROV_OCHOA, 4362.91, {
+  c('MAT-16-060', PROV_OCHOA, 4362.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-color-de-3-5-pulgadas-03060485',
     art: 'MONITOR COLOR DE 3.5 PULGADAS',
     sku: '03-06-0485',
@@ -41941,7 +41931,7 @@
     url: 'https://ochoa.com.do/producto/monitor-color-de-3-5-pulgadas-03060485',
     nota: 'MONITOR COLOR DE 3.5 PULGADAS · artículo 03-06-0485 · ref. 344502 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-033', PROV_OCHOA, 15349.99, {
+  c('MAT-16-061', PROV_OCHOA, 15349.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-led-cctv-32-pulgadas-03061760',
     art: 'MONITOR LED CCTV 32 PULGADAS',
     sku: '03-06-1760',
@@ -41949,7 +41939,7 @@
     url: 'https://ochoa.com.do/producto/monitor-led-cctv-32-pulgadas-03061760',
     nota: 'MONITOR LED CCTV 32 PULGADAS · artículo 03-06-1760 · ref. MW3232V-K · marca UNIVIEW. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-034', PROV_OCHOA, 2707.65, {
+  c('MAT-16-062', PROV_OCHOA, 2707.65, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-contacto-clase-a-4-03060553',
     art: 'MONITOR CONTACTO CLASE A 4\'\'',
     sku: '03-06-0553',
@@ -41957,7 +41947,7 @@
     url: 'https://ochoa.com.do/producto/monitor-contacto-clase-a-4-03060553',
     nota: 'MONITOR CONTACTO CLASE A 4\'\' · artículo 03-06-0553 · ref. FLM-325-I4-A · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-035', PROV_OCHOA, 10076.91, {
+  c('MAT-16-063', PROV_OCHOA, 10076.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-p-intercom-de-7-03061665',
     art: 'MONITOR P / INTERCOM DE 7\'\'',
     sku: '03-06-1665',
@@ -41965,7 +41955,7 @@
     url: 'https://ochoa.com.do/producto/monitor-p-intercom-de-7-03061665',
     nota: 'MONITOR P / INTERCOM DE 7\'\' · artículo 03-06-1665 · ref. 16124 · marca YALE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-035', PROV_OCHOA, 5570.12, {
+  c('MAT-16-063', PROV_OCHOA, 5570.12, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monitor-touch-negro-7-p-intercom-03062009',
     art: 'MONITOR TOUCH NEGRO 7” P / INTERCOM',
     sku: '03-06-2009',
@@ -41973,7 +41963,7 @@
     url: 'https://ochoa.com.do/producto/monitor-touch-negro-7-p-intercom-03062009',
     nota: 'MONITOR TOUCH NEGRO 7” P / INTERCOM · artículo 03-06-2009 · ref. DHI-VTH2421FB-P · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-036', PROV_OCHOA, 1012.91, {
+  c('MAT-16-064', PROV_OCHOA, 1012.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mini-caja-de-conexiones-p-camara-bullet-03061774',
     art: 'MINI CAJA DE CONEXIONES P / CAMARA BULLET',
     sku: '03-06-1774',
@@ -41981,7 +41971,7 @@
     url: 'https://ochoa.com.do/producto/mini-caja-de-conexiones-p-camara-bullet-03061774',
     nota: 'MINI CAJA DE CONEXIONES P / CAMARA BULLET · artículo 03-06-1774 · ref. TR-JB03-I-IN · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-037', PROV_OCHOA, 251.58, {
+  c('MAT-16-065', PROV_OCHOA, 251.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/video-balun-st-530135a-03061738',
     art: 'VIDEO BALUN ST-530135A',
     sku: '03-06-1738',
@@ -41989,7 +41979,7 @@
     url: 'https://ochoa.com.do/producto/video-balun-st-530135a-03061738',
     nota: 'VIDEO BALUN ST-530135A · artículo 03-06-1738 · ref. ST-530135A · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-16-037', PROV_OCHOA, 231.08, {
+  c('MAT-16-065', PROV_OCHOA, 231.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/video-balun-aciple-rap-c-cable-8mp-cvi-03062123',
     art: 'VIDEO BALUN ACIPLE RAP.C / CABLE 8MP CVI',
     sku: '03-06-2123',
@@ -56000,22 +55990,6 @@
     url: 'https://ochoa.com.do/producto/boton-de-salida-mecanico-03062055',
     nota: 'BOTON DE SALIDA MECANICO · artículo 03-06-2055 · ref. ASF905 · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-002', PROV_OCHOA, 2733.21, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061580',
-    art: 'DISP. WIFI 4CH 10A / 15A',
-    sku: '03-06-1580',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061580',
-    nota: 'DISP. WIFI 4CH 10A / 15A · artículo 03-06-1580 · ref. 4CHPROR3 · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-002', PROV_OCHOA, 2564.62, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061583',
-    art: 'DISP. WIFI 4CH 10A / 15A',
-    sku: '03-06-1583',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061583',
-    nota: 'DISP. WIFI 4CH 10A / 15A · artículo 03-06-1583 · ref. 4CHR3 · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
   c('MAT-31-002', PROV_OCHOA, 2878.17, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disp-wifi-multifuncion-15a-03061449',
     art: 'DISP. WIFI MULTIFUNCION 15A',
@@ -56129,6 +56103,14 @@
     url: 'https://ochoa.com.do/producto/pulsador-inalambrico-bidireccional-4-bot-03061825',
     nota: 'PULSADOR INALAMBRICO BIDIRECCIONAL 4 BOT · artículo 03-06-1825 · ref. V144-433 · marca VESTA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-31-003', PROV_OCHOA, 1749.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-1ch-black-03061461',
+    art: 'AUTO PREMIUM INTERRUPTOR 1CH BLACK',
+    sku: '03-06-1461',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-1ch-black-03061461',
+    nota: 'AUTO PREMIUM INTERRUPTOR 1CH BLACK · artículo 03-06-1461 · ref. T3US1C · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
   c('MAT-31-003', PROV_OCHOA, 5359.63, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/int-sencillo-smart-home-10a-03061065',
     art: 'INT.SENCILLO SMART HOME 10A',
@@ -56168,6 +56150,22 @@
     marca: 'AQARA',
     url: 'https://ochoa.com.do/producto/interrupto-simple-sin-neutro-120v-blanco-03061695',
     nota: 'INTERRUPTO SIMPLE SIN NEUTRO 120V BLANCO · artículo 03-06-1695 · ref. WS-USC01 · marca AQARA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-006', PROV_OCHOA, 1430.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-2ch-blanco-03061470',
+    art: 'AUTO PREMIUM INTERRUPTOR 2CH BLANCO',
+    sku: '03-06-1470',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-2ch-blanco-03061470',
+    nota: 'AUTO PREMIUM INTERRUPTOR 2CH BLANCO · artículo 03-06-1470 · ref. T2US2C · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-006', PROV_OCHOA, 1856.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-2ch-negro-03061476',
+    art: 'AUTO PREMIUM INTERRUPTOR 2CH NEGRO',
+    sku: '03-06-1476',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-2ch-negro-03061476',
+    nota: 'AUTO PREMIUM INTERRUPTOR 2CH NEGRO · artículo 03-06-1476 · ref. T3US2C · marca SONOFF. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-006', PROV_OCHOA, 1210.31, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/doble-pulsador-serie-modo-03060679',
@@ -56209,6 +56207,14 @@
     url: 'https://ochoa.com.do/producto/interruptor-doble-sin-neutro-120v-blanco-03061696',
     nota: 'INTERRUPTOR DOBLE SIN NEUTRO 120V BLANCO · artículo 03-06-1696 · ref. WS-USC02 · marca AQARA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-31-009', PROV_OCHOA, 2071.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-3ch-negro-03061477',
+    art: 'AUTO PREMIUM INTERRUPTOR 3CH NEGRO',
+    sku: '03-06-1477',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-3ch-negro-03061477',
+    nota: 'AUTO PREMIUM INTERRUPTOR 3CH NEGRO · artículo 03-06-1477 · ref. T3US3C · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
   c('MAT-31-009', PROV_OCHOA, 7656.61, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/int-triple-smart-home-10a-03061066',
     art: 'INT. TRIPLE SMART HOME 10A',
@@ -56225,77 +56231,21 @@
     url: 'https://ochoa.com.do/producto/interruptor-wifi-triple-bco-03061450',
     nota: 'INTERRUPTOR WIFI TRIPLE BCO · artículo 03-06-1450 · ref. T2US3C · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-010', PROV_OCHOA, 5359.63, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/toma-cte-inteligente-smat-home-03060753',
-    art: 'TOMA CTE INTELIGENTE SMAT HOME',
-    sku: '03-06-0753',
-    marca: 'SWITCH BEE',
-    url: 'https://ochoa.com.do/producto/toma-cte-inteligente-smat-home-03060753',
-    nota: 'TOMA CTE INTELIGENTE SMAT HOME · artículo 03-06-0753 · ref. IR-SK-R16 · marca SWITCH BEE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-010', PROV_OCHOA, 2368.55, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tomacorriente-smart-zigbee-15a-125v-03061694',
-    art: 'TOMACORRIENTE SMART ZIGBEE 15A 125V',
-    sku: '03-06-1694',
-    marca: 'AQARA',
-    url: 'https://ochoa.com.do/producto/tomacorriente-smart-zigbee-15a-125v-03061694',
-    nota: 'TOMACORRIENTE SMART ZIGBEE 15A 125V · artículo 03-06-1694 · ref. ZNCZ12LM · marca AQARA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-010', PROV_OCHOA, 294.14, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/toma-8-hilos-p-centralita-1-mod-living-03060344',
-    art: 'TOMA 8 HILOS P / CENTRALITA 1 MOD.LIVING',
-    sku: '03-06-0344',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/toma-8-hilos-p-centralita-1-mod-living-03060344',
-    nota: 'TOMA 8 HILOS P / CENTRALITA 1 MOD.LIVING · artículo 03-06-0344 · ref. 336983 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 1749.36, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-1ch-black-03061461',
-    art: 'AUTO PREMIUM INTERRUPTOR 1CH BLACK',
-    sku: '03-06-1461',
+  c('MAT-31-010', PROV_OCHOA, 2733.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061580',
+    art: 'DISP. WIFI 4CH 10A / 15A',
+    sku: '03-06-1580',
     marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-1ch-black-03061461',
-    nota: 'AUTO PREMIUM INTERRUPTOR 1CH BLACK · artículo 03-06-1461 · ref. T3US1C · marca SONOFF. ' + SUPUESTO_ITBIS
+    url: 'https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061580',
+    nota: 'DISP. WIFI 4CH 10A / 15A · artículo 03-06-1580 · ref. 4CHPROR3 · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 1430.53, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-2ch-blanco-03061470',
-    art: 'AUTO PREMIUM INTERRUPTOR 2CH BLANCO',
-    sku: '03-06-1470',
+  c('MAT-31-010', PROV_OCHOA, 2564.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061583',
+    art: 'DISP. WIFI 4CH 10A / 15A',
+    sku: '03-06-1583',
     marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-2ch-blanco-03061470',
-    nota: 'AUTO PREMIUM INTERRUPTOR 2CH BLANCO · artículo 03-06-1470 · ref. T2US2C · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 1856.15, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-2ch-negro-03061476',
-    art: 'AUTO PREMIUM INTERRUPTOR 2CH NEGRO',
-    sku: '03-06-1476',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-2ch-negro-03061476',
-    nota: 'AUTO PREMIUM INTERRUPTOR 2CH NEGRO · artículo 03-06-1476 · ref. T3US2C · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 2071.9, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/auto-premium-interruptor-3ch-negro-03061477',
-    art: 'AUTO PREMIUM INTERRUPTOR 3CH NEGRO',
-    sku: '03-06-1477',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/auto-premium-interruptor-3ch-negro-03061477',
-    nota: 'AUTO PREMIUM INTERRUPTOR 3CH NEGRO · artículo 03-06-1477 · ref. T3US3C · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 1143.26, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/automation-premium-basic-zigbee-03061540',
-    art: 'AUTOMATION PREMIUM BASIC ZIGBEE',
-    sku: '03-06-1540',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/automation-premium-basic-zigbee-03061540',
-    nota: 'AUTOMATION PREMIUM BASIC ZIGBEE · artículo 03-06-1540 · ref. 4660 · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 1145.61, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/automation-premium-d1-03061541',
-    art: 'AUTOMATION PREMIUM D1',
-    sku: '03-06-1541',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/automation-premium-d1-03061541',
-    nota: 'AUTOMATION PREMIUM D1 · artículo 03-06-1541 · ref. 433.92MH · marca SONOFF. ' + SUPUESTO_ITBIS
+    url: 'https://ochoa.com.do/producto/disp-wifi-4ch-10a-15a-03061583',
+    nota: 'DISP. WIFI 4CH 10A / 15A · artículo 03-06-1583 · ref. 4CHR3 · marca SONOFF. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-011', PROV_OCHOA, 1516.19, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/automation-premium-tomacorriente-03061634',
@@ -56305,7 +56255,31 @@
     url: 'https://ochoa.com.do/producto/automation-premium-tomacorriente-03061634',
     nota: 'AUTOMATION PREMIUM TOMACORRIENTE · artículo 03-06-1634 · ref. IW100 · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 8465.64, {
+  c('MAT-31-011', PROV_OCHOA, 5359.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/toma-cte-inteligente-smat-home-03060753',
+    art: 'TOMA CTE INTELIGENTE SMAT HOME',
+    sku: '03-06-0753',
+    marca: 'SWITCH BEE',
+    url: 'https://ochoa.com.do/producto/toma-cte-inteligente-smat-home-03060753',
+    nota: 'TOMA CTE INTELIGENTE SMAT HOME · artículo 03-06-0753 · ref. IR-SK-R16 · marca SWITCH BEE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-011', PROV_OCHOA, 2368.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tomacorriente-smart-zigbee-15a-125v-03061694',
+    art: 'TOMACORRIENTE SMART ZIGBEE 15A 125V',
+    sku: '03-06-1694',
+    marca: 'AQARA',
+    url: 'https://ochoa.com.do/producto/tomacorriente-smart-zigbee-15a-125v-03061694',
+    nota: 'TOMACORRIENTE SMART ZIGBEE 15A 125V · artículo 03-06-1694 · ref. ZNCZ12LM · marca AQARA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-011', PROV_OCHOA, 294.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/toma-8-hilos-p-centralita-1-mod-living-03060344',
+    art: 'TOMA 8 HILOS P / CENTRALITA 1 MOD.LIVING',
+    sku: '03-06-0344',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/toma-8-hilos-p-centralita-1-mod-living-03060344',
+    nota: 'TOMA 8 HILOS P / CENTRALITA 1 MOD.LIVING · artículo 03-06-0344 · ref. 336983 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-012', PROV_OCHOA, 8465.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/concentrador-hub-03061963',
     art: 'CONCENTRADOR HUB',
     sku: '03-06-1963',
@@ -56313,7 +56287,7 @@
     url: 'https://ochoa.com.do/producto/concentrador-hub-03061963',
     nota: 'CONCENTRADOR HUB · artículo 03-06-1963 · ref. AIBRIDG/AIBRIDGE-26 · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 1439.87, {
+  c('MAT-31-012', PROV_OCHOA, 1439.87, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/controlador-smart-home-cub-03061706',
     art: 'CONTROLADOR SMART HOME CUB',
     sku: '03-06-1706',
@@ -56321,31 +56295,55 @@
     url: 'https://ochoa.com.do/producto/controlador-smart-home-cub-03061706',
     nota: 'CONTROLADOR SMART HOME CUB · artículo 03-06-1706 · ref. MFKZQ01LM · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 85380.83, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-03061770',
-    art: 'KIT DOMOTICA 10 CIRCUITOS ON-',
-    sku: '03-06-1770',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-03061770',
-    nota: 'KIT DOMOTICA 10 CIRCUITOS ON- · artículo 03-06-1770 · ref. HKITZ527H · marca MASTER. ' + SUPUESTO_ITBIS
+  c('MAT-31-012', PROV_OCHOA, 3719.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061700',
+    art: 'SMART HOME HUB',
+    sku: '03-06-1700',
+    marca: 'AQARA',
+    url: 'https://ochoa.com.do/producto/smart-home-hub-03061700',
+    nota: 'SMART HOME HUB · artículo 03-06-1700 · ref. HUBM1S · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 61795.82, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-off-2-shutt-03061769',
-    art: 'KIT DOMOTICA 10 CIRCUITOS ON-OFF+2 SHUTT',
-    sku: '03-06-1769',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-off-2-shutt-03061769',
-    nota: 'KIT DOMOTICA 10 CIRCUITOS ON-OFF+2 SHUTT · artículo 03-06-1769 · ref. HKITZ520H · marca MASTER. ' + SUPUESTO_ITBIS
+  c('MAT-31-012', PROV_OCHOA, 4457.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061709',
+    art: 'SMART HOME HUB',
+    sku: '03-06-1709',
+    marca: 'AQARA',
+    url: 'https://ochoa.com.do/producto/smart-home-hub-03061709',
+    nota: 'SMART HOME HUB · artículo 03-06-1709 · ref. HUBM2 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 22371.26, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-luci-microeva-2in-2out-03060665',
-    art: 'KIT LUCI MICROEVA 2IN / 2OUT',
-    sku: '03-06-0665',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/kit-luci-microeva-2in-2out-03060665',
-    nota: 'KIT LUCI MICROEVA 2IN / 2OUT · artículo 03-06-0665 · ref. HKITP620 · marca MASTER. ' + SUPUESTO_ITBIS
+  c('MAT-31-012', PROV_OCHOA, 2234.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061710',
+    art: 'SMART HOME HUB',
+    sku: '03-06-1710',
+    marca: 'AQARA',
+    url: 'https://ochoa.com.do/producto/smart-home-hub-03061710',
+    nota: 'SMART HOME HUB · artículo 03-06-1710 · ref. HUBE1 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 13196.68, {
+  c('MAT-31-012', PROV_OCHOA, 10846.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-central-c-alexa-incluido-03060754',
+    art: 'UNIDAD CENTRAL C / ALEXA INCLUIDO',
+    sku: '03-06-0754',
+    marca: 'SWITCH BEE',
+    url: 'https://ochoa.com.do/producto/unidad-central-c-alexa-incluido-03060754',
+    nota: 'UNIDAD CENTRAL C / ALEXA INCLUIDO · artículo 03-06-0754 · ref. 1-CU · marca SWITCH BEE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-013', PROV_OCHOA, 1143.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/automation-premium-basic-zigbee-03061540',
+    art: 'AUTOMATION PREMIUM BASIC ZIGBEE',
+    sku: '03-06-1540',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/automation-premium-basic-zigbee-03061540',
+    nota: 'AUTOMATION PREMIUM BASIC ZIGBEE · artículo 03-06-1540 · ref. 4660 · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-013', PROV_OCHOA, 1145.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/automation-premium-d1-03061541',
+    art: 'AUTOMATION PREMIUM D1',
+    sku: '03-06-1541',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/automation-premium-d1-03061541',
+    nota: 'AUTOMATION PREMIUM D1 · artículo 03-06-1541 · ref. 433.92MH · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-014', PROV_OCHOA, 13196.68, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-dlfra-p-acceso-modo-bco-03060704',
     peso: 2,
     art: 'MODULO DLFRA P / ACCESO MODO BCO.',
@@ -56354,31 +56352,7 @@
     url: 'https://ochoa.com.do/producto/modulo-dlfra-p-acceso-modo-bco-03060704',
     nota: 'MODULO DLFRA P / ACCESO MODO BCO. · artículo 03-06-0704 · ref. HA02012 · marca MASTER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 3719.96, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061700',
-    art: 'SMART HOME HUB',
-    sku: '03-06-1700',
-    marca: 'AQARA',
-    url: 'https://ochoa.com.do/producto/smart-home-hub-03061700',
-    nota: 'SMART HOME HUB · artículo 03-06-1700 · ref. HUBM1S · marca AQARA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 4457.57, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061709',
-    art: 'SMART HOME HUB',
-    sku: '03-06-1709',
-    marca: 'AQARA',
-    url: 'https://ochoa.com.do/producto/smart-home-hub-03061709',
-    nota: 'SMART HOME HUB · artículo 03-06-1709 · ref. HUBM2 · marca AQARA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 2234.38, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/smart-home-hub-03061710',
-    art: 'SMART HOME HUB',
-    sku: '03-06-1710',
-    marca: 'AQARA',
-    url: 'https://ochoa.com.do/producto/smart-home-hub-03061710',
-    nota: 'SMART HOME HUB · artículo 03-06-1710 · ref. HUBE1 · marca AQARA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-011', PROV_OCHOA, 19549.22, {
+  c('MAT-31-014', PROV_OCHOA, 19549.22, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-eva-16in-100ut-multifuncion-125v-03060397',
     art: 'TARJETA EVA 16IN 100UT MULTIFUNCION 125V',
     sku: '03-06-0397',
@@ -56386,7 +56360,7 @@
     url: 'https://ochoa.com.do/producto/tarjeta-eva-16in-100ut-multifuncion-125v-03060397',
     nota: 'TARJETA EVA 16IN 100UT MULTIFUNCION 125V · artículo 03-06-0397 · ref. HS01500 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 14351.38, {
+  c('MAT-31-014', PROV_OCHOA, 14351.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-eva-light-16in-100ut-125v-03060396',
     art: 'TARJETA EVA LIGHT 16IN 100UT 125V',
     sku: '03-06-0396',
@@ -56394,7 +56368,7 @@
     url: 'https://ochoa.com.do/producto/tarjeta-eva-light-16in-100ut-125v-03060396',
     nota: 'TARJETA EVA LIGHT 16IN 100UT 125V · artículo 03-06-0396 · ref. HS07500 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 7237.01, {
+  c('MAT-31-014', PROV_OCHOA, 7237.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-ingrid-para-extension-03060668',
     art: 'TARJETA INGRID PARA EXTENSIÓN',
     sku: '03-06-0668',
@@ -56402,7 +56376,7 @@
     url: 'https://ochoa.com.do/producto/tarjeta-ingrid-para-extension-03060668',
     nota: 'TARJETA INGRID PARA EXTENSIÓN · artículo 03-06-0668 · ref. HL16000 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 17663.76, {
+  c('MAT-31-014', PROV_OCHOA, 17663.76, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-vesta-12vdc-03060399',
     art: 'TARJETA VESTA 12VDC',
     sku: '03-06-0399',
@@ -56410,15 +56384,31 @@
     url: 'https://ochoa.com.do/producto/tarjeta-vesta-12vdc-03060399',
     nota: 'TARJETA VESTA 12VDC · artículo 03-06-0399 · ref. HM01000 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-011', PROV_OCHOA, 10846.87, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-central-c-alexa-incluido-03060754',
-    art: 'UNIDAD CENTRAL C / ALEXA INCLUIDO',
-    sku: '03-06-0754',
-    marca: 'SWITCH BEE',
-    url: 'https://ochoa.com.do/producto/unidad-central-c-alexa-incluido-03060754',
-    nota: 'UNIDAD CENTRAL C / ALEXA INCLUIDO · artículo 03-06-0754 · ref. 1-CU · marca SWITCH BEE. ' + SUPUESTO_ITBIS
+  c('MAT-31-015', PROV_OCHOA, 22371.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-luci-microeva-2in-2out-03060665',
+    art: 'KIT LUCI MICROEVA 2IN / 2OUT',
+    sku: '03-06-0665',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/kit-luci-microeva-2in-2out-03060665',
+    nota: 'KIT LUCI MICROEVA 2IN / 2OUT · artículo 03-06-0665 · ref. HKITP620 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-012', PROV_OCHOA, 32009.7, {
+  c('MAT-31-016', PROV_OCHOA, 85380.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-03061770',
+    art: 'KIT DOMOTICA 10 CIRCUITOS ON-',
+    sku: '03-06-1770',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-03061770',
+    nota: 'KIT DOMOTICA 10 CIRCUITOS ON- · artículo 03-06-1770 · ref. HKITZ527H · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-016', PROV_OCHOA, 61795.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-off-2-shutt-03061769',
+    art: 'KIT DOMOTICA 10 CIRCUITOS ON-OFF+2 SHUTT',
+    sku: '03-06-1769',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/kit-domotica-10-circuitos-on-off-2-shutt-03061769',
+    nota: 'KIT DOMOTICA 10 CIRCUITOS ON-OFF+2 SHUTT · artículo 03-06-1769 · ref. HKITZ520H · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-017', PROV_OCHOA, 32009.7, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-audio-video-color-4-apart-03060428',
     art: 'KIT INTERCOM AUDIO VIDEO / COLOR 4 APART.',
     sku: '03-06-0428',
@@ -56426,7 +56416,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-audio-video-color-4-apart-03060428',
     nota: 'KIT INTERCOM AUDIO VIDEO / COLOR 4 APART. · artículo 03-06-0428 · ref. KWB48LL2BS · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-013', PROV_OCHOA, 41504.58, {
+  c('MAT-31-018', PROV_OCHOA, 41504.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-audio-video-color-6-apart-03060429',
     art: 'KIT INTERCOM AUDIO VIDEO / COLOR 6 APART.',
     sku: '03-06-0429',
@@ -56434,7 +56424,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-audio-video-color-6-apart-03060429',
     nota: 'KIT INTERCOM AUDIO VIDEO / COLOR 6 APART. · artículo 03-06-0429 · ref. KWB68LL2BS · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-014', PROV_OCHOA, 16951.2, {
+  c('MAT-31-019', PROV_OCHOA, 16951.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-audio-8-apartamentos-03060434',
     art: 'KIT INTERCOM AUDIO 8 APARTAMENTOS',
     sku: '03-06-0434',
@@ -56442,7 +56432,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-audio-8-apartamentos-03060434',
     nota: 'KIT INTERCOM AUDIO 8 APARTAMENTOS · artículo 03-06-0434 · ref. KBP88LL3BS · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-015', PROV_OCHOA, 50715.2, {
+  c('MAT-31-020', PROV_OCHOA, 50715.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-audio-video-color-8-apart-03060430',
     art: 'KIT INTERCOM AUDIO VIDEO / COLOR 8 APART.',
     sku: '03-06-0430',
@@ -56450,7 +56440,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-audio-video-color-8-apart-03060430',
     nota: 'KIT INTERCOM AUDIO VIDEO / COLOR 8 APART. · artículo 03-06-0430 · ref. KWB88LL2BS · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-016', PROV_OCHOA, 16736.62, {
+  c('MAT-31-021', PROV_OCHOA, 16736.62, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-video-4-ydv-4702-ydv4403-03060654',
     art: 'KIT INTERCOM VIDEO 4\'\' YDV-4702 / YDV4403',
     sku: '03-06-0654',
@@ -56458,7 +56448,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-video-4-ydv-4702-ydv4403-03060654',
     nota: 'KIT INTERCOM VIDEO 4\'\' YDV-4702 / YDV4403 · artículo 03-06-0654 · ref. 11400/16140 · marca YALE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-016', PROV_OCHOA, 22538.2, {
+  c('MAT-31-021', PROV_OCHOA, 22538.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-intercom-video-7-touch-ydv-ts-03060655',
     art: 'KIT INTERCOM VIDEO 7\'\' TOUCH YDV-TS',
     sku: '03-06-0655',
@@ -56466,7 +56456,7 @@
     url: 'https://ochoa.com.do/producto/kit-intercom-video-7-touch-ydv-ts-03060655',
     nota: 'KIT INTERCOM VIDEO 7\'\' TOUCH YDV-TS · artículo 03-06-0655 · ref. 10930/16066 · marca YALE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-016', PROV_OCHOA, 8802.87, {
+  c('MAT-31-021', PROV_OCHOA, 8802.87, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/videoportero-p-villa-ip-wf-4btn-2mp-03062008',
     art: 'VIDEOPORTERO P / VILLA IP / WF 4BTN 2MP',
     sku: '03-06-2008',
@@ -56474,7 +56464,7 @@
     url: 'https://ochoa.com.do/producto/videoportero-p-villa-ip-wf-4btn-2mp-03062008',
     nota: 'VIDEOPORTERO P / VILLA IP / WF 4BTN 2MP · artículo 03-06-2008 · ref. DHI-VTO3311Q-WP · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-016', PROV_OCHOA, 8979.87, {
+  c('MAT-31-021', PROV_OCHOA, 8979.87, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-de-video-timbre-inteligente-g4-03061830',
     art: 'KIT DE VIDEO TIMBRE INTELIGENTE G4',
     sku: '03-06-1830',
@@ -56482,7 +56472,7 @@
     url: 'https://ochoa.com.do/producto/kit-de-video-timbre-inteligente-g4-03061830',
     nota: 'KIT DE VIDEO TIMBRE INTELIGENTE G4 · artículo 03-06-1830 · ref. SVD-KIT1 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-017', PROV_OCHOA, 305.08, {
+  c('MAT-31-022', PROV_OCHOA, 305.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
     art: 'TELEFONO TRAD. INTERCOM SERIE 3000',
     sku: '03-06-0439',
@@ -56490,7 +56480,7 @@
     url: 'https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
     nota: 'TELEFONO TRAD. INTERCOM SERIE 3000 · artículo 03-06-0439 · ref. S.VX3111 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-017', PROV_OCHOA, 1419, {
+  c('MAT-31-022', PROV_OCHOA, 1419, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
     art: 'TELEFONO SPRINT 194MM',
     sku: '03-06-1069',
@@ -56498,7 +56488,7 @@
     url: 'https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
     nota: 'TELEFONO SPRINT 194MM · artículo 03-06-1069 · ref. 344242 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-017', PROV_OCHOA, 5278.83, {
+  c('MAT-31-022', PROV_OCHOA, 5278.83, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
     art: 'INTERCOMUNICADOR 2HINTER',
     sku: '03-06-0352',
@@ -56506,7 +56496,7 @@
     url: 'https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
     nota: 'INTERCOMUNICADOR 2HINTER · artículo 03-06-0352 · ref. 331651 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-018', PROV_OCHOA, 14861.01, {
+  c('MAT-31-023', PROV_OCHOA, 14861.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/estacion-interior-touch-7-p-intercom-03061766',
     art: 'ESTACION INTERIOR TOUCH 7” P / INTERCOM',
     sku: '03-06-1766',
@@ -56514,7 +56504,7 @@
     url: 'https://ochoa.com.do/producto/estacion-interior-touch-7-p-intercom-03061766',
     nota: 'ESTACION INTERIOR TOUCH 7” P / INTERCOM · artículo 03-06-1766 · ref. ST-LI9460-UD2 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-018', PROV_OCHOA, 11519.81, {
+  c('MAT-31-023', PROV_OCHOA, 11519.81, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
     art: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT',
     sku: '03-06-1043',
@@ -56522,7 +56512,7 @@
     url: 'https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
     nota: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT · artículo 03-06-1043 · ref. 330751 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-019', PROV_OCHOA, 9883.62, {
+  c('MAT-31-024', PROV_OCHOA, 9883.62, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/video-intercom-modulo-estacion-puerta-03061764',
     art: 'VIDEO INTERCOM MODULO ESTACION PUERTA',
     sku: '03-06-1764',
@@ -56530,7 +56520,7 @@
     url: 'https://ochoa.com.do/producto/video-intercom-modulo-estacion-puerta-03061764',
     nota: 'VIDEO INTERCOM MODULO ESTACION PUERTA · artículo 03-06-1764 · ref. ST-LE9003-JNF1 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 594.57, {
+  c('MAT-31-025', PROV_OCHOA, 594.57, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
     peso: 2,
     art: 'CONFIGURADOR #2 CAJA DE 10 UNIDS',
@@ -56539,7 +56529,7 @@
     url: 'https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
     nota: 'CONFIGURADOR #2 CAJA DE 10 UNIDS · artículo 03-06-0319 · ref. 346912/3501/2 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 323.38, {
+  c('MAT-31-025', PROV_OCHOA, 323.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
     peso: 2,
     art: 'CONFIGURADOR #3 CAJA DE 10 UNIDS',
@@ -56548,7 +56538,7 @@
     url: 'https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
     nota: 'CONFIGURADOR #3 CAJA DE 10 UNIDS · artículo 03-06-0320 · ref. 346913/3501/3 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 329.66, {
+  c('MAT-31-025', PROV_OCHOA, 329.66, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
     art: 'CONFIGURADOR #5 CAJA DE 10 UNIDS',
     sku: '03-06-0322',
@@ -56556,7 +56546,7 @@
     url: 'https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
     nota: 'CONFIGURADOR #5 CAJA DE 10 UNIDS · artículo 03-06-0322 · ref. 346915/3501/5 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 559.47, {
+  c('MAT-31-025', PROV_OCHOA, 559.47, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
     art: 'CONFIGURADOR #6 CAJA DE 10 UNIDS',
     sku: '03-06-0323',
@@ -56564,7 +56554,7 @@
     url: 'https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
     nota: 'CONFIGURADOR #6 CAJA DE 10 UNIDS · artículo 03-06-0323 · ref. 346916/3501/6 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 1765.47, {
+  c('MAT-31-025', PROV_OCHOA, 1765.47, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/derivador-montante-independ-03060327',
     art: 'DERIVADOR MONTANTE INDEPEND.',
     sku: '03-06-0327',
@@ -56572,7 +56562,7 @@
     url: 'https://ochoa.com.do/producto/derivador-montante-independ-03060327',
     nota: 'DERIVADOR MONTANTE INDEPEND. · artículo 03-06-0327 · ref. 346980 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 537.03, {
+  c('MAT-31-025', PROV_OCHOA, 537.03, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soneria-adicional-2-hilos-03060303',
     art: 'SONERIA ADICIONAL 2 HILOS',
     sku: '03-06-0303',
@@ -56580,7 +56570,7 @@
     url: 'https://ochoa.com.do/producto/soneria-adicional-2-hilos-03060303',
     nota: 'SONERIA ADICIONAL 2 HILOS · artículo 03-06-0303 · ref. 336910 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 563.56, {
+  c('MAT-31-025', PROV_OCHOA, 563.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-p-secreto-de-conversacion-03060302',
     art: 'UNIDAD P / SECRETO DE CONVERSACION',
     sku: '03-06-0302',
@@ -56588,7 +56578,7 @@
     url: 'https://ochoa.com.do/producto/unidad-p-secreto-de-conversacion-03060302',
     nota: 'UNIDAD P / SECRETO DE CONVERSACION · artículo 03-06-0302 · ref. 336300 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 2573.7, {
+  c('MAT-31-026', PROV_OCHOA, 2573.7, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
     art: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM',
     sku: '03-06-1767',
@@ -56596,7 +56586,7 @@
     url: 'https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
     nota: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM · artículo 03-06-1767 · ref. OCB-LBCE9003-RS2 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 5396.45, {
+  c('MAT-31-026', PROV_OCHOA, 5396.45, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/accesorios-p-instalacion-2-modulo-interc-03061768',
     art: 'ACCESORIOS P / INSTALACION 2 MODULO INTERC',
     sku: '03-06-1768',
@@ -56604,7 +56594,7 @@
     url: 'https://ochoa.com.do/producto/accesorios-p-instalacion-2-modulo-interc-03061768',
     nota: 'ACCESORIOS P / INSTALACION 2 MODULO INTERC · artículo 03-06-1768 · ref. ST-LE-BDV2 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 656.41, {
+  c('MAT-31-026', PROV_OCHOA, 656.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
     art: 'CAJA EMPOTRAR DE 2 MÓDULOS',
     sku: '03-06-0465',
@@ -56612,7 +56602,7 @@
     url: 'https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
     nota: 'CAJA EMPOTRAR DE 2 MÓDULOS · artículo 03-06-0465 · ref. 350020 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 2499.01, {
+  c('MAT-31-026', PROV_OCHOA, 2499.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
     art: 'CUBIERTA 8 PULSADORRS 2H 2F',
     sku: '03-06-0471',
@@ -56620,7 +56610,7 @@
     url: 'https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
     nota: 'CUBIERTA 8 PULSADORRS 2H 2F · artículo 03-06-0471 · ref. 352181 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 1556.51, {
+  c('MAT-31-026', PROV_OCHOA, 1556.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
     art: 'CUBIERTA DE MÓDULO 2 HILOS',
     sku: '03-06-0473',
@@ -56628,7 +56618,7 @@
     url: 'https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
     nota: 'CUBIERTA DE MÓDULO 2 HILOS · artículo 03-06-0473 · ref. 351201 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 2164.34, {
+  c('MAT-31-026', PROV_OCHOA, 2164.34, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
     art: 'MARCO SOPORTE 2 MODULOS',
     sku: '03-06-0477',
@@ -56636,7 +56626,7 @@
     url: 'https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
     nota: 'MARCO SOPORTE 2 MODULOS · artículo 03-06-0477 · ref. 350221 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-021', PROV_OCHOA, 1085.02, {
+  c('MAT-31-026', PROV_OCHOA, 1085.02, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
     art: 'FRONTAL PARA TECLADO NUMERICO',
     sku: '03-06-0313',
@@ -56644,7 +56634,7 @@
     url: 'https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
     nota: 'FRONTAL PARA TECLADO NUMERICO · artículo 03-06-0313 · ref. 332651 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-022', PROV_OCHOA, 2999.88, {
+  c('MAT-31-027', PROV_OCHOA, 2999.88, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
     art: 'MODULO 8 PULSADORES 2H 2F',
     sku: '03-06-0479',
@@ -56652,7 +56642,7 @@
     url: 'https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
     nota: 'MODULO 8 PULSADORES 2H 2F · artículo 03-06-0479 · ref. 352100 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-022', PROV_OCHOA, 13617.34, {
+  c('MAT-31-027', PROV_OCHOA, 13617.34, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
     art: 'MODULO AUDIO Y VIDEO 2 HILO',
     sku: '03-06-0480',
@@ -56660,7 +56650,7 @@
     url: 'https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
     nota: 'MODULO AUDIO Y VIDEO 2 HILO · artículo 03-06-0480 · ref. 351200 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-022', PROV_OCHOA, 3563.14, {
+  c('MAT-31-027', PROV_OCHOA, 3563.14, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
     art: 'MÓDULO DE TECLADO SFERA 2H',
     sku: '03-06-0484',
@@ -56668,7 +56658,7 @@
     url: 'https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
     nota: 'MÓDULO DE TECLADO SFERA 2H · artículo 03-06-0484 · ref. 353000 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-022', PROV_OCHOA, 12062.42, {
+  c('MAT-31-027', PROV_OCHOA, 12062.42, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-pantalla-2h2-wir-03060481',
     art: 'MODULO PANTALLA 2H2 WIR',
     sku: '03-06-0481',

@@ -129,7 +129,15 @@ const FAMILIA = [
 
   [/^(Interruptor|Interrupto|Int\.|Dimmer|Microfluxa|Shutter|Pulsador|Doble Pulsador|Boton|Disp\. Wifi)/i, 'interruptor-inteligente'],
   [/^(Tomacorriente|Toma )/i,                      'tomacorriente-smart'],
-  [/^(Hub|Concentrador|Unidad Central|Kit Domotica|Kit Luci|Smart Home|Automation|Auto Premium|Modulo Dlfra|Tarjeta Eva|Tarjeta Ingrid|Tarjeta Vesta)|Smart Home/i, 'hub-domotica'],
+  /* El prefijo comercial de SONOFF y las tarjetas de MASTER se los
+     llevaba todos al hub. Ver la nota de 'hub-domotica'. Lo
+     específico va primero, y el prefijo suelto al final. */
+  [/^Auto(?:mation)? Premium Int/i,                'interruptor-inteligente'],
+  [/^Auto(?:mation)? Premium Tomacorriente/i,      'tomacorriente-smart'],
+  [/^(?:Tarjeta (?:Eva|Ingrid|Vesta)|Modulo Dlfra)/i, 'tarjeta-domotica'],
+  [/^Kit (?:Domotica|Luci)/i,                      'kit-domotica'],
+  [/^Auto(?:mation)? Premium/i,                    'modulo-domotica'],
+  [/^(Hub|Concentrador|Unidad Central|Controlador Smart|Smart Home)|Smart Home/i, 'hub-domotica'],
   [/Cerradura Inteligente/i,                       'cerradura-inteligente'],
   [/^Kit Intercom|^Kit De Video Timbre/i,          'intercom-kit'],
   [/^(Timbre|Pulsador Inalambrico)/i,              'timbre-inteligente'],
@@ -225,8 +233,19 @@ function medidasDe(a, familia) {
     if (mp) m.resolucion_mp = num(mp[1]);
     const le = n.match(/(\d+(?:\.\d+)?)\s*Mm\b/i);
     if (le) m.lente_mm = num(le[1]);
-    if (/\bip\b|\bnet\b|\bpoe\b/i.test(n)) m.tecnologia = 'IP';
-    else if (/hdcvi|hdtvi|analog/i.test(n)) m.tecnologia = 'HDCVI';
+
+    /* Lo específico primero: la solar trae 4G y también dice «IP», y la
+       de wifi dice las dos. Ver la nota larga de la familia. */
+    if (/solar|\b4g\b/i.test(n)) m.tecnologia = 'solar 4G';
+    else if (/wifi|wi-fi|inalambr/i.test(n)) m.tecnologia = 'wifi';
+    else if (/\bip\b|\bnet\b|\bpoe\b/i.test(n)) m.tecnologia = 'IP';
+    else if (/hdcvi|hdtvi|\bahd\b|analog/i.test(n)) m.tecnologia = 'analógica';
+
+    /* El varifocal se declara de cuatro maneras y todas dicen lo mismo:
+       que el lente se mueve. El fijo, cuando la ficha da una sola
+       distancia o lo dice con todas las letras. */
+    if (/motoriz|varifocal|varif\b|\bvf\b|\d\s*-\s*\d+\s*mm|zoom/i.test(n)) m.lente = 'varifocal';
+    else if (/lente fij|fixed/i.test(n) || le) m.lente = 'fijo';
     const ir = n.match(/ir\s*(\d+)\s*m/i);
     if (ir) m.alcance_ir_m = num(ir[1]);
   }
@@ -294,8 +313,17 @@ function medidasDe(a, familia) {
     if (p) m.puertos = num(p[1]);
   }
 
+  if (familia === 'kit-domotica') {
+    const c = n.match(/(\d+)\s*circuitos?/i);
+    if (c) m.circuitos = num(c[1]);
+  }
+
   if (familia === 'interruptor-inteligente') {
-    if (/triple/i.test(n)) m.canales = 3;
+    /* SONOFF escribe los canales como «2CH». Sin leerlo, sus cuatro
+       interruptores quedaban sin eje y en el mismo montón. */
+    const ch = n.match(/(\d)\s*ch\b/i);
+    if (ch) m.canales = num(ch[1]);
+    else if (/triple/i.test(n)) m.canales = 3;
     else if (/doble|2 canales/i.test(n)) m.canales = 2;
     else if (/simple|sencill|1 canal/i.test(n)) m.canales = 1;
     if (/con neutro|c \/ neutro/i.test(n)) m.neutro = 'con';

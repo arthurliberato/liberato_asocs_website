@@ -90,12 +90,46 @@ const FAMILIAS = {
     esp: '',
     alias: 'fuente, driver, transformador LED, power supply'
   },
+  /* LA CAMPANA, Y LO QUE NO LO ES
+
+     «Campana LED industrial de 100 W» eran cinco cotizaciones de RD$
+     1.500 a RD$ 14.500, casi diez veces, y dentro había tres cosas
+     distintas y un eje sin nombrar.
+
+     EL EJE ES EL DRIVER. La campana sin driver es la carcasa con el
+     LED y nada más: la fuente se compra aparte y el catálogo ya la
+     tiene como partida propia. A 100 W, sin driver RD$ 1.500 y con
+     driver RD$ 3.700; a 200 W, sin driver RD$ 2.500 cuando la de 150
+     con driver cuesta RD$ 6.365. Se nombra la que no lo trae, que es
+     la que no se espera.
+
+     LO QUE NO ES CAMPANA: la de selector de vatios no es de 100 W ni
+     de 150 ni de 200 sino las tres, y meterla en una de ellas era
+     elegir por el comercio; y la canopy es la luminaria plana de
+     marquesina o gasolinera, no la campana de nave. */
   'campana-led': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 60,
-    ejes: ['potencia_w'],
-    nombre: m => 'Campana LED industrial de ' + m.potencia_w + ' W',
-    esp: 'Para nave, taller o techo alto',
+    ejes: ['potencia_w'], opcionales: ['driver'],
+    nombre: m => 'Campana LED industrial de ' + m.potencia_w + ' W' +
+                 (m.driver === 'sin' ? ', sin driver' : ''),
+    esp: m => m.driver === 'sin'
+      ? 'Para nave, taller o techo alto · la fuente va aparte'
+      : 'Para nave, taller o techo alto',
     alias: 'campana, high bay, luminaria industrial'
+  },
+  'campana-led-selector': {
+    cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 61,
+    ejes: [],
+    nombre: 'Campana LED industrial con selector de potencia',
+    esp: 'La potencia se elige en el equipo · no es una partida de vatios fijos',
+    alias: 'campana selector de watts, high bay ajustable'
+  },
+  'luminaria-canopy': {
+    cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 62,
+    ejes: ['potencia_w'],
+    nombre: m => 'Luminaria LED canopy de ' + m.potencia_w + ' W',
+    esp: 'Plafón plano de marquesina o estación de servicio',
+    alias: 'canopy, luminaria de marquesina, gasolinera'
   }
 };
 
@@ -123,6 +157,13 @@ function item(familia, medidas) {
     if (!v) return null;
     claves.push(f.ejes[i] + '-' + v);
   }
+  /* Los ejes opcionales entran en la clave solo cuando el comercio los
+     declara: una campana que dice «sin driver» no es la misma que una
+     que no dice nada, y juntarlas sería afirmar que sí. */
+  (f.opcionales || []).forEach(eje => {
+    const v = limpia(medidas[eje]);
+    if (v) claves.push(eje + '-' + v);
+  });
   return {
     cat: f.cat,
     familia: familia,

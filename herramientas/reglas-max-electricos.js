@@ -235,8 +235,19 @@ function clasificar(a) {
       if (m) return ESP.item('caja-breaker', { espacios: parseInt(m[1], 10) });
       m = limpia(a.nombre).match(/(\d+)\s*-\s*(\d+)\s*CIRC/i);
       if (m) return ESP.item('caja-breaker', { espacios: parseInt(m[2], 10) });
-      if (a.amperaje) return ESP.item('caja-main', { amperaje: a.amperaje });
-      MOTIVO.valor = 'la ficha no declara cuántos espacios ni qué amperaje tiene el panel';
+      /* «14A24» es como GE escribe «de 14 a 24 circuitos», y sin leerlo
+         el TLM1212CCU caía en un ítem propio definido por amperios
+         mientras el mismo número de parte estaba en Bellón como panel
+         de 24. La «A» es del catálogo del fabricante, no un amperaje:
+         detrás viene siempre el número mayor. */
+      m = limpia(a.nombre).match(/\b(\d{1,2})\s*A\s*(\d{1,2})\b/i);
+      if (m) return ESP.item('caja-breaker', { espacios: parseInt(m[2], 10) });
+      /* Antes había aquí un respaldo por amperaje que creaba una «caja
+         de breaker principal». No existe tal distinción: caja y panel
+         son la misma cosa, y lo que quedaba dentro eran dos cajas VETO
+         de 25 y 32 A sin número de circuitos, que es justamente lo que
+         no se sabe de ellas. Van a la lista de pendientes. */
+      MOTIVO.valor = 'la ficha no declara cuántos espacios tiene el panel';
       return null;
     }
     if (/^breaker/.test(n)) {

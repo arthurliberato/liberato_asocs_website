@@ -512,7 +512,12 @@ function reglaElectrico(a) {
        ítem se define por el número mayor, que es el que la caja admite. */
     const m = n.match(/(?:(\d+)\s*-\s*)?(\d+)\s*Circuitos/i);
     if (!m) { MOTIVO.valor = 'la ficha no declara cuántos espacios tiene la caja'; return null; }
-    return ELEC.item('caja-breaker', { espacios: parseInt(m[2], 10) });
+    /* La fase la declara esta tienda en todas: «1F» o «3F». Solo se
+       nombra la trifásica; ver la nota de la familia. */
+    return ELEC.item('caja-breaker', {
+      espacios: parseInt(m[2], 10),
+      fases: /\b3\s*f\b|trifasic/.test(t) ? '3F' : ''
+    });
   }
   if (/^bombillo/.test(t)) {
     if (!w) { MOTIVO.valor = 'la ficha no declara la potencia del bombillo'; return null; }

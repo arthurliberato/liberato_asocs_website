@@ -14,9 +14,29 @@
    ========================================================= */
 
 const FAMILIAS = {
+  /* LA CÁMARA SE DEFINÍA POR LA MITAD DE LO QUE LA FICHA DECLARA
+
+     El formato y los megapíxeles no bastan, y se veía: «domo 5 MP» eran
+     nueve cotizaciones de RD$ 1.368 a RD$ 24.326. Los dos ejes que
+     faltaban ya los leía el clasificador —los calculaba y los tiraba— y
+     los dos mandan más que los megapíxeles:
+
+       LA TECNOLOGÍA DE SEÑAL. Analógica RD$ 1.784, wifi RD$ 2.548, IP
+       RD$ 7.322, solar con 4G RD$ 19.603. Y no es efecto de otra cosa:
+       controlando formato y megapíxeles, la analógica es la más barata
+       en las cuatro parejas donde conviven —domo 2 MP RD$ 740 contra
+       RD$ 3.489 en IP; domo 5 MP RD$ 1.368 contra RD$ 3.618; bullet 5
+       MP RD$ 1.394 contra RD$ 7.322—.
+
+       EL LENTE. Fijo RD$ 3.443, varifocal RD$ 8.268, y otra vez
+       consistente dentro de cada grupo.
+
+     Lo que ninguno de los dos hace es entrar cuando la ficha calla:
+     25 de 54 no dicen la tecnología y se quedan con el nombre corto. */
   'camara': {
     cat: 'MAT-16', base: 'Cámara de seguridad', unidad: 'unidad',
-    ejes: ['formato', 'resolucion_mp'], etapa: 'estructura', orden: 10,
+    ejes: ['formato', 'tecnologia', 'resolucion_mp', 'lente'],
+    etapa: 'estructura', orden: 10,
     alias: 'cámara CCTV, cámara de seguridad'
   },
   'grabador': {
@@ -210,9 +230,46 @@ const FAMILIAS = {
     cat: 'MAT-31', base: 'Sensor de domótica', unidad: 'unidad',
     ejes: ['mide'], etapa: 'instalaciones', orden: 30, alias: 'sensor inteligente, zigbee'
   },
+  /* «CENTRAL DE DOMÓTICA» ERA EL CAJÓN DEL RUBRO
+
+     Veintiuna cotizaciones de RD$ 1.143 a RD$ 85.381 —setenta y cinco
+     veces— y dentro cinco compras que no se sustituyen: cuatro
+     interruptores inteligentes, un tomacorriente, dos módulos de
+     empotrar, cinco tarjetas de central cableada y tres kits
+     completos. Las tres primeras ya tenían partida propia en esta
+     misma tabla.
+
+     Lo que las juntaba era el prefijo comercial, no el producto:
+     SONOFF nombra toda su línea «AUTOMATION PREMIUM …» o «AUTO PREMIUM
+     …» y detrás dice lo que es —«AUTO PREMIUM INTERRUPTOR 2CH
+     BLANCO»—, y la regla del hub reclamaba el prefijo antes de que
+     nadie leyera el resto. Lo específico primero, como siempre.
+
+     El módulo y la tarjeta se separan porque son dos instalaciones
+     distintas: el módulo va escondido en la caja detrás del
+     interruptor y cuesta RD$ 1.143; la tarjeta va en el riel de una
+     central cableada y va de RD$ 7.237 a RD$ 19.549. La palabra del
+     comercio lo dice. */
   'hub-domotica': {
     cat: 'MAT-31', base: 'Central de domótica', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 40, alias: 'hub, gateway, central inteligente'
+  },
+  'modulo-domotica': {
+    cat: 'MAT-31', base: 'Módulo de automatización para empotrar', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 41,
+    alias: 'módulo wifi, relé zigbee, módulo de automatización',
+    esp: 'Va dentro de la caja, detrás del interruptor'
+  },
+  'tarjeta-domotica': {
+    cat: 'MAT-31', base: 'Tarjeta de central de domótica', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 42,
+    alias: 'tarjeta de domótica, módulo de central, expansión',
+    esp: 'Se monta en la central cableada · no funciona sola'
+  },
+  'kit-domotica': {
+    cat: 'MAT-31', base: 'Kit de domótica', unidad: 'juego',
+    ejes: ['circuitos'], etapa: 'instalaciones', orden: 43,
+    alias: 'kit de domótica, combo de automatización'
   },
   'cerradura-inteligente': {
     cat: 'MAT-31', base: 'Cerradura inteligente', unidad: 'unidad',
@@ -291,7 +348,9 @@ const ETIQUETA = {
   camaras:       v => v + ' cámaras',
   resolucion_mp: v => v + ' MP',
   tecnologia:    v => v,
-  canales:       v => v + ' canales',
+  lente:         v => 'lente ' + v,
+  circuitos:     v => 'de ' + v + ' circuitos',
+  canales:       v => v + ' canal' + (Number(v) === 1 ? '' : 'es'),
   capacidad_tb:  v => v + ' TB',
   pulgadas:      v => v + '"',
   zonas:         v => v + ' zonas',

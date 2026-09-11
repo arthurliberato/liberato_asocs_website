@@ -371,9 +371,15 @@ function clasificar(a) {
     if (/^tanque cisterna|^cisterna/.test(n)) {
       const m = limpia(a.nombre).match(/(\d+)\s*gls?\b/i);
       if (!m) { MOTIVO.valor = 'la ficha no declara la capacidad de la cisterna'; return null; }
-      /* «FV» es como el comercio abrevia fibra de vidrio. */
-      const material = /fibra|\bfv\b/.test(n) ? 'fibra de vidrio' : /polietil|plast/.test(n) ? 'polietileno' : '';
+      /* «FV» es como el comercio abrevia fibra de vidrio. Y «VERDE» no
+         es un color de adorno: es otra línea del mismo tanque y cuesta
+         casi el doble. A igual capacidad, 42 gls RD$ 7.487 y RD$
+         14.217; 60 gls RD$ 10.496 y RD$ 15.482. Juntarlas dejaba dos
+         partidas con el doble de dispersión y ningún eje que lo
+         explicara. */
+      let material = /fibra|\bfv\b/.test(n) ? 'fibra de vidrio' : /polietil|plast/.test(n) ? 'polietileno' : '';
       if (!material) { MOTIVO.valor = 'la ficha no declara el material de la cisterna'; return null; }
+      if (/\bverde\b/.test(n)) material += ' verde';
       return PLOM.item('cisterna', { material: material, capacidad_gal: parseInt(m[1], 10) });
     }
     if (/^tinaco/.test(n)) {
