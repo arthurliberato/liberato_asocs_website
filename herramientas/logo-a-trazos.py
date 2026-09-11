@@ -64,8 +64,9 @@ def descarga_archivo():
     raise SystemExit('El CSS de Google Fonts no trae el subconjunto latino.')
 
 
-def trazos(woff2):
-    """Devuelve (d del nombre, d del ampersand, ancho, altura de caja alta)."""
+def trazos(woff2, texto=None):
+    """Devuelve (d del texto, d del ampersand, ancho, altura de caja alta)."""
+    texto = NOMBRE if texto is None else texto
     import uharfbuzz as hb
     from fontTools.ttLib import TTFont
     from fontTools.pens.svgPathPen import SVGPathPen
@@ -80,7 +81,7 @@ def trazos(woff2):
 
     cara = hb.Face(crudo.getvalue())
     buf = hb.Buffer()
-    buf.add_str(NOMBRE)
+    buf.add_str(texto)
     buf.guess_segment_properties()
     hb.shape(hb.Font(cara), buf, {'kern': True, 'liga': True})
 
@@ -112,6 +113,31 @@ def monograma(escala):
         % (ROJO, e(58), e(38), e(28), e(22),
            e(58), e(64), e(28), e(52),
            AMBAR, e(58), e(116), e(85), e(24))
+    )
+
+
+# ---------------------------------------------------------------
+# PRESUPUESTA
+# El catálogo de precios tiene nombre propio, y su marca es hermana
+# de la del estudio: la misma plancha verde con la esquina cortada y
+# la misma paleta, con una P en lugar de la L. Las medidas están
+# tomadas del original y expresadas en el mismo icono de 200.
+# ---------------------------------------------------------------
+
+def pe(escala):
+    """Las cuatro piezas de la P. El marfil queda parametrizado, igual que
+       en el monograma, porque sin plancha verde tiene que volverse verde:
+       sobre fondo claro un bloque marfil no se ve."""
+    e = lambda v: round(v * escala, 2)
+    return (
+        '  <rect fill="%s" x="%s" y="%s" width="%s" height="%s"/>\n'      # asta
+        '  <rect fill="%%s" x="%s" y="%s" width="%s" height="%s"/>\n'     # alto del ojo
+        '  <rect fill="%s" x="%s" y="%s" width="%s" height="%s"/>\n'      # costado
+        '  <rect fill="%%s" x="%s" y="%s" width="%s" height="%s"/>\n'     # base del ojo
+        % (AMBAR, e(53.4), e(38.0), e(23.8), e(92.6),
+           e(77.2), e(38.0), e(32.8), e(22.8),
+           ROJO, e(110.0), e(38.0), e(24.0), e(45.4),
+           e(77.2), e(83.4), e(56.8), e(22.4))
     )
 
 
@@ -158,15 +184,63 @@ def main():
         + monograma(0.5) % VERDE
         + '</svg>\n')
 
+    # ---------- Presupuesta ----------
+    d_pre, _, ancho_pre, _ = trazos(woff2, 'Presupuesta')
+    ancho_texto_pre = ANCHO_CONTENIDO - ICONO - HUECO
+    escala_pre = (caja_alta * escala) / caja_alta          # mismo cuerpo que el nombre del estudio
+    ancho_pre_esc = ancho_pre * escala_pre
+    total_pre = round(ICONO + HUECO + ancho_pre_esc)
+
+    firma_pre = ('<!-- Presupuesta · %s\n'
+                 '     La marca del catálogo de precios, hermana de la del estudio:\n'
+                 '     misma plancha, misma paleta, una P en lugar de la L.\n'
+                 '     Generado por herramientas/logo-a-trazos.py -->\n')
+
+    pre_logo = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" '
+        'role="img" aria-label="Presupuesta">\n' % (total_pre, ICONO)
+        + firma_pre % 'el icono y el nombre en Archivo SemiBold (600), a trazos'
+        + '  <!-- Sin plancha verde: este bloque va al lado del logotipo del\n'
+          '       estudio, que sí la lleva, y dos planchas seguidas se leen como\n'
+          '       dos marcas peleando. La P suelta, en cambio, se lee como lo que\n'
+          '       es: la marca de la casa aplicada al catálogo. -->\n'
+        + pe(1) % (VERDE, VERDE)
+        + '  <g transform="translate(%d %.1f) scale(%.5f)">\n' % (ICONO + HUECO, base, escala_pre)
+        + '    <path fill="%s" d="%s"/>\n' % (TINTA, d_pre)
+        + '  </g>\n</svg>\n')
+
+    pre_isotipo = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" '
+        'role="img" aria-label="Presupuesta">\n'
+        + firma_pre % 'solo el icono: favicon y usos cuadrados'
+        + '  <path fill="%s" d="M0 0h100v%sL%s 100H0z"/>\n'
+          % (VERDE, round(CORTE_Y / 2, 1), round((ICONO - CORTE_X) / 2, 1))
+        + pe(0.5) % (MARFIL, MARFIL)
+        + '</svg>\n')
+
+    pre_marca = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">\n'
+        + firma_pre % 'la P SIN la plancha verde, para ir junto a un texto'
+        + '  <!-- Mismo criterio que marca-agua.svg: sin plancha, el marfil se\n'
+          '       vuelve verde, porque sobre fondo claro no se vería. El ojo de\n'
+          '       la P lo hace el hueco, no una pieza. -->\n'
+        + pe(0.5) % (VERDE, VERDE)
+        + '</svg>\n')
+
     for carpeta in DESTINOS:
         carpeta.mkdir(parents=True, exist_ok=True)
         (carpeta / 'logo.svg').write_text(logo, encoding='utf-8')
         (carpeta / 'isotipo.svg').write_text(isotipo, encoding='utf-8')
         (carpeta / 'marca-agua.svg').write_text(agua, encoding='utf-8')
+        (carpeta / 'presupuesta.svg').write_text(pre_logo, encoding='utf-8')
+        (carpeta / 'presupuesta-isotipo.svg').write_text(pre_isotipo, encoding='utf-8')
+        (carpeta / 'presupuesta-marca.svg').write_text(pre_marca, encoding='utf-8')
 
     print('Lienzo %d x %d · cuerpo %.1f · caja alta %.1f · base y=%.1f'
           % (total, ICONO, escala * 1000, caja_alta * escala, base))
-    print('Escritos logo.svg, isotipo.svg y marca-agua.svg en:')
+    print('Presupuesta: lienzo %d x %d' % (total_pre, ICONO))
+    print('Escritos logo.svg, isotipo.svg, marca-agua.svg,')
+    print('  presupuesta.svg, presupuesta-isotipo.svg y presupuesta-marca.svg en:')
     for c in DESTINOS:
         print('   ' + str(c.relative_to(RAIZ)))
     print('\nFalta rasterizar la vista previa y el icono de iOS, que no aceptan SVG:')

@@ -180,6 +180,10 @@ ul{margin:0;padding:0;list-style:none}
   content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;
   background:var(--ambar);transition:right .28s var(--ease);
 }
+/* El catálogo de precios tiene marca propia: en el menú va su P, que es
+   hermana de la L del estudio, delante del nombre. */
+.nav-presupuesta{display:inline-flex;align-items:center;gap:.4rem}
+.nav-presupuesta img{width:20px;height:20px;flex:none}
 .nav-list a:hover,.nav-list a.is-current{color:var(--verde)}
 .nav-list a:hover::after,.nav-list a.is-current::after{right:0}
 .nav-cta{padding:.6rem 1.15rem;font-size:.92rem}
@@ -210,6 +214,10 @@ ul{margin:0;padding:0;list-style:none}
   .nav.is-open{transform:none;opacity:1;visibility:visible;pointer-events:auto}
   .nav-list{flex-direction:column;gap:0}
   .nav-list a{display:block;padding:.85rem .25rem;font-size:1.05rem;border-bottom:1px solid var(--line)}
+  /* El desplegable pone los enlaces en bloque; la P tiene que seguir en la
+     misma línea que su nombre, no encima. */
+  .nav-list a.nav-presupuesta{display:flex;gap:.5rem}
+  .nav-list a.nav-presupuesta img{width:22px;height:22px}
   .nav-list a::after{display:none}
   .nav-cta{margin-top:1.1rem;width:100%}
 }

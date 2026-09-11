@@ -147,10 +147,10 @@ table{border-collapse:collapse;width:100%}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;min-height:72px}
 .brand{display:flex;align-items:center;gap:.7rem;flex-shrink:0;text-decoration:none}
 .brand img{width:auto;height:34px}
-.brand-tag{
-  font-family:Jost,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--verde-500);border-left:1px solid var(--line);padding-left:.7rem;line-height:1.25;
-}
+/* El catálogo tiene nombre propio y marca propia: Presupuesta va con su
+   icono y su nombre en la misma tipografía que el del estudio, separado
+   por el mismo filete que antes llevaba el rótulo. */
+.brand-presupuesta{height:26px;border-left:1px solid var(--line);padding-left:.25rem;box-sizing:content-box}
 .nav{display:flex;align-items:center;gap:1.6rem}
 .nav-list{display:flex;gap:1.5rem}
 .nav-list a{position:relative;font-family:Jost,sans-serif;font-size:.94rem;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .2s var(--ease)}
@@ -181,7 +181,7 @@ table{border-collapse:collapse;width:100%}
   .nav-list a{display:block;padding:.85rem .25rem;font-size:1.03rem;border-bottom:1px solid var(--line)}
   .nav-list a::after{display:none}
   .nav-cta{margin-top:1rem;width:100%}
-  .brand-tag{display:none}
+  .brand-presupuesta{display:none}
 }
 
 /* ---------- franja del modelo de negocio ----------
