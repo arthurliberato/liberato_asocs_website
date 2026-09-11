@@ -45,29 +45,30 @@ const DESTINO = path.join(RAIZ, 'precios/interiorismo.html');
 const g = { window: {} };
 global.window = g.window;
 require(path.join(RAIZ, 'precios/assets/js/datos-catalogo.js'));
-require(path.join(RAIZ, 'precios/assets/js/datos-visual.js'));
 const CAT = g.window.CATALOGO;
-const VISUAL = g.window.VISUAL;
+/* El catálogo visual ya no es un archivo que se carga: son doce páginas que
+   el explorador pide según hacen falta. Aquí se lee su manifiesto, que trae
+   las cifras que van impresas en la página. */
+const MAN = JSON.parse(fs.readFileSync(path.join(RAIZ, 'precios/assets/datos/visual.json'), 'utf8'));
 
 /* Solo las categorías que de verdad tienen artículos con foto: una pastilla
-   de filtro que no filtra nada es ruido. */
-const cuenta = {};
-VISUAL.forEach(v => { cuenta[v.k] = (cuenta[v.k] || 0) + 1; });
+   de filtro que no filtra nada es ruido. Las cifras salen del manifiesto,
+   que las trae ya calculadas. */
 const cats = CAT.categorias
-  .filter(c => cuenta[c.codigo])
-  .map(c => ({ codigo: c.codigo, nombre: c.nombre, slug: c.slug, n: cuenta[c.codigo] }))
+  .filter(c => MAN.cat[c.codigo])
+  .map(c => ({ codigo: c.codigo, nombre: c.nombre, slug: c.slug, n: MAN.cat[c.codigo].n }))
   .sort((a, b) => b.n - a.n);
 
-const comercios = [...new Set(VISUAL.map(v => v.c))].sort((a, b) => a.localeCompare(b));
+const comercios = MAN.com.slice();
+const TOTAL = MAN.total;
 
 const esc = s => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const precios = VISUAL.map(v => v.p).sort((a, b) => a - b);
-const mediana = precios[precios.length >> 1];
+const mediana = MAN.todo.med;
 
 const TITULO = 'Interiorismo: explorar acabados y luminarias por imagen';
-const DESC = 'Explore visualmente ' + VISUAL.length.toLocaleString('en-US') +
+const DESC = 'Explore visualmente ' + TOTAL.toLocaleString('en-US') +
   ' acabados, revestimientos, luminarias y piezas de baño de ' + comercios.length +
   ' comercios dominicanos, con el precio y la tienda sobre cada foto.';
 
@@ -76,7 +77,15 @@ const pastillas = cats.map(c =>
   `${esc(c.nombre)}<span class="ir-chip-n">${c.n}</span></button>`
 ).join('\n          ');
 
-const opciones = comercios.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('\n            ');
+/* El valor es el nombre completo, que es con el que viaja el dato; lo que
+   se lee es el corto, igual que en la tabla y que en el recuadro sobre la
+   foto. Que las tres vistas nombren al comercio de la misma manera. */
+const corto = (n) => String(n).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
+/* Se ordena por el nombre corto, que es el que se lee: alfabetizar por
+   «Ferretería Ochoa (8A)» y mostrar «Ochoa» deja la lista descolocada. */
+const opciones = comercios.slice()
+  .sort((a, b) => corto(a).localeCompare(corto(b), 'es'))
+  .map(c => `<option value="${esc(c)}">${esc(corto(c))}</option>`).join('\n            ');
 
 const html = `<!DOCTYPE html>
 <html lang="es-DO">
@@ -122,23 +131,22 @@ ${header('interiorismo')}
   <div class="shell ir-intro">
     <div>
       <h1 class="ir-titulo">Interiorismo</h1>
-      <p class="ir-bajada">Aquí se elige mirando. ${VISUAL.length.toLocaleString('en-US')} acabados,
-        revestimientos, luminarias y piezas de baño de ${comercios.length} comercios dominicanos,
-        con el precio y la tienda sobre cada foto. Un clic lleva al producto en la tienda que lo vende.</p>
     </div>
-    <p class="ir-nota">La foto y el precio son del comercio que los publica.
-      Para comparar precios entre tiendas y ver la especificación,
-      <a href="./">el catálogo de precios</a> sigue siendo el sitio.</p>
   </div>
 </section>
 
 <div class="ir-barra" id="ir-barra">
   <div class="shell">
     <div class="ir-filtros">
-      <div class="ir-chips" role="group" aria-label="Filtrar por categoría">
-        <button class="ir-chip is-on" type="button" data-cat="" aria-pressed="true">Todo<span class="ir-chip-n">${VISUAL.length}</span></button>
+      <div class="ir-chips" id="ir-chips" role="group" aria-label="Filtrar por categoría">
+        <button class="ir-chip is-on" type="button" data-cat="" aria-pressed="true">Todo<span class="ir-chip-n">${TOTAL}</span></button>
         ${pastillas}
       </div>
+
+      <!-- La segunda fila la pinta interiorismo.js: son las subcategorías
+           de la categoría elegida —papel tapiz, porcelanato de pared,
+           lámpara de techo— y solo aparece cuando hay una elegida. -->
+      <div class="ir-chips ir-subs" id="ir-subs" role="group" aria-label="Filtrar por tipo" hidden></div>
 
       <div class="ir-controles">
         <label class="ir-busca">
@@ -180,7 +188,6 @@ ${header('interiorismo')}
 
 ${FOOTER}
 
-<script src="assets/js/datos-visual.js"></script>
 <script>
   window.IR_CATS = ${JSON.stringify(cats.reduce((m, c) => (m[c.codigo] = { n: c.nombre, s: c.slug }, m), {}))};
 </script>
@@ -194,7 +201,7 @@ ${FOOTER}
 
 fs.writeFileSync(DESTINO, html);
 console.log('Escrito precios/interiorismo.html');
-console.log('  ' + VISUAL.length + ' artículos · ' + cats.length + ' categorías · ' +
+console.log('  ' + TOTAL + ' artículos · ' + cats.length + ' categorías · ' +
             comercios.length + ' comercios · mediana RD$ ' + mediana.toLocaleString('en-US'));
 
 /* El sitemap lo escribe generar-categorias.js, que es su dueño: si los dos

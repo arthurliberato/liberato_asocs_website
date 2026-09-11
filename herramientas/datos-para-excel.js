@@ -23,6 +23,8 @@ const path = require('path');
 const DATOS = path.join(__dirname, '..', 'precios/assets/js');
 
 global.window = global;
+/* El motor va antes que el registro: datos-precios.js le pide la c(). */
+require(path.join(DATOS, 'precios.js'));
 ['catalogo', 'proveedores', 'precios'].forEach(f => require(path.join(DATOS, 'datos-' + f + '.js')));
 
 const CAT = global.CATALOGO;

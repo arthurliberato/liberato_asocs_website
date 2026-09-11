@@ -48,6 +48,11 @@ const baja = s => limpia(s).toLowerCase()
    La ficha: «Dimensiones: 60 x 60 cmTipo de producto: Baldosa…»
    Un solo párrafo sin puntuación, con las claves pegadas al valor
    anterior. Se corta justo antes de cada «Clave:».
+
+   La extracción del 11/09 separa los campos con « | ». Se parte
+   primero por la barra y después por el corte de siempre, así que
+   las dos formas dan exactamente la misma ficha y no hay que tocar
+   nada de lo que lee debajo.
    --------------------------------------------------------- */
 const CORTE = /(?<=[a-záéíóúñ0-9%²)\.])(?=[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?: [a-záéíóúñ0-9²]+){0,3}:)/;
 
@@ -55,9 +60,11 @@ function ficha(a) {
   const t = limpia(a.info);
   const o = {};
   if (!t) return o;
-  t.split(CORTE).forEach(trozo => {
-    const i = trozo.indexOf(':');
-    if (i > 0) o[baja(trozo.slice(0, i))] = limpia(trozo.slice(i + 1));
+  t.split(/\s*\|\s*/).forEach(parte => {
+    parte.split(CORTE).forEach(trozo => {
+      const i = trozo.indexOf(':');
+      if (i > 0) o[baja(trozo.slice(0, i))] = limpia(trozo.slice(i + 1));
+    });
   });
   return o;
 }

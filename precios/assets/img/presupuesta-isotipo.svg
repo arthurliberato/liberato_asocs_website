@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Presupuesta">
+<!-- Presupuesta · solo el icono: favicon y usos cuadrados
+     La marca del catálogo de precios, hermana de la del estudio:
+     misma plancha, misma paleta, una P en lugar de la L.
+     Generado por herramientas/logo-a-trazos.py -->
+  <path fill="#3f6e22" d="M0 0h100v78.5L86.5 100H0z"/>
+  <rect fill="#e89019" x="26.7" y="19.0" width="11.9" height="46.3"/>
+  <rect fill="#f2efe2" x="38.6" y="19.0" width="16.4" height="11.4"/>
+  <rect fill="#de3b22" x="55.0" y="19.0" width="12.0" height="22.7"/>
+  <rect fill="#f2efe2" x="38.6" y="41.7" width="28.4" height="11.2"/>
+</svg>

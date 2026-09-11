@@ -75,14 +75,15 @@
 </script>
 </head></head>
 <body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="i-copiar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol></svg>
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="brand" href="./" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
+    <a class="brand" href="./" aria-label="Presupuesta — Ingenieros Liberato &amp; Asociados">
       <img src="assets/img/logo.svg" alt="Ingenieros Liberato &amp; Asociados" width="1114" height="200">
-      <span class="brand-tag">Precios de<br>construcción</span>
+      <img class="brand-presupuesta" src="assets/img/presupuesta.svg" alt="Presupuesta" width="592" height="200">
     </a>
 
     <nav class="nav" id="nav" aria-label="Navegación principal">
@@ -119,7 +120,6 @@
 
     <div class="portada-id">
       <h1 class="portada-titulo">Precios de construcción en RD<span class="visually-hidden"> (República Dominicana)</span></h1>
-      <p class="portada-meta"><span class="portada-tag">Base de precios</span><span class="portada-desc">Materiales y equipos de obra: </span><span class="stat-num" id="n-items">2185</span> ítems en <span class="stat-num" id="n-cats">31</span> categorías.</p>
     </div>
 
     <div class="aviso aviso-fila">
@@ -146,6 +146,7 @@
 
       <label class="visually-hidden" for="orden">Ordenar por</label>
       <select class="select" id="orden">
+        <option value="comercios">Más comercios primero</option>
         <option value="cat">Orden del catálogo</option>
         <option value="nombre">Nombre (A–Z)</option>
         <option value="precio-asc">Precio: menor a mayor</option>
@@ -179,9 +180,22 @@
          La misma base de datos, dos lentes. -->
     <div class="ambitos" id="ambito" role="group" aria-label="Para qué tipo de trabajo"></div>
 
-    <div class="filtros" id="chips-cat"></div>
-    <div class="filtros" id="chips-etapa"></div>
-    <div class="filtros" id="chips-prov"></div>
+    <!-- Categoría y etapa eligen una y son listas normales. Proveedor
+         admite varios a la vez, así que es un menú con casillas: se
+         despliega, se marcan los comercios con los que se trabaja y la
+         selección se guarda en el navegador. -->
+    <div class="filtros filtros-menus">
+      <label class="visually-hidden" for="f-cat">Categoría</label>
+      <select class="select" id="f-cat"></select>
+
+      <label class="visually-hidden" for="f-etapa">Etapa</label>
+      <select class="select" id="f-etapa"></select>
+
+      <div class="menu-multi" id="menu-prov">
+        <button class="select select-menu" type="button" id="f-prov" aria-expanded="false" aria-controls="menu-prov-lista">Todos los proveedores</button>
+        <div class="menu-multi-lista" id="menu-prov-lista" role="group" aria-label="Proveedores" hidden></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -328,9 +342,11 @@
   </div>
 </aside>
 
-<script src="assets/js/datos-catalogo.js"></script>
+<script src="assets/js/catalogo.js"></script>
+<script src="assets/js/catalogo-alias.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
-<script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/precios.js"></script>
+<script src="assets/js/cotizaciones.js"></script>
 <script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>

@@ -36,9 +36,9 @@ function header(seccion) {
 
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="brand" href="./" aria-label="Precios de construcción — Ingenieros Liberato &amp; Asociados">
+    <a class="brand" href="./" aria-label="Presupuesta — Ingenieros Liberato &amp; Asociados">
       <img src="assets/img/logo.svg" alt="Ingenieros Liberato &amp; Asociados" width="1114" height="200">
-      <span class="brand-tag">Precios de<br>construcción</span>
+      <img class="brand-presupuesta" src="assets/img/presupuesta.svg" alt="Presupuesta" width="592" height="200">
     </a>
 
     <nav class="nav" id="nav" aria-label="Navegación principal">
@@ -103,4 +103,11 @@ const FOOTER = `<footer class="site-footer">
 </footer>`;
 
 
-module.exports = { header, FOOTER, PRINCIPAL };
+/* El icono de copiar aparece dos veces por fila: en una página de 800 ítems
+   son mil seiscientas copias del mismo dibujo, medio megabyte de trazos
+   repetidos. Se declara una vez aquí y cada botón lo referencia. */
+const SPRITE = `<svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="i-copiar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol></svg>`;
+
+const USO_COPIAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-copiar"/></svg>';
+
+module.exports = { header, FOOTER, PRINCIPAL, SPRITE, USO_COPIAR };

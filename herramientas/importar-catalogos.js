@@ -971,6 +971,13 @@ const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
+const ALISS = require('./reglas-aliss.js');
+
+/* Los códigos que trae la extracción de baldosas del 11/09, para que la
+   del 09/09 solo aporte lo que aquella dejó fuera. Ver FUENTES. */
+const CUBIERTOS_11 = new Set(
+  require('./datos-externos/ochoa-baldosas-2026-09-11.json').map(a => a.codigo)
+);
 const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
@@ -1023,12 +1030,24 @@ const FUENTES = [
     mapeo: {},
     regla: a => SEGTEC.regla(a) || null
   },
+  /* LAS DOS EXTRACCIONES DE BALDOSAS
+     La del 11/09 trae foto de cada artículo —lo que faltaba para que los
+     pisos se pudieran mirar en el explorador— y además separa los campos
+     de la ficha con « | », de modo que se leen bien: en la del 09/09 las
+     claves venían pegadas al valor anterior y 447 fichas quedaban mal
+     partidas, con el material y el uso mezclados en un mismo campo.
+
+     Pero deja fuera 157 artículos de «Terminación Baldosas»: las
+     crucetas, los niveladores, los perfiles de canto, los adhesivos y la
+     herramienta de instalación. Esos 75 ítems no se pierden, siguen
+     saliendo de la extracción anterior: la del 09/09 se queda, limitada a
+     lo que la nueva ya no cubre. */
   {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
+    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-11.json'),
     etiqueta: 'Ochoa · baldosas',
     proveedor: 'Ferretería Ochoa (8A)',
     constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
+    fecha: '2026-09-11',
     motivo: 'la ficha no declara la especificación',
     motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
     mapeo: {},
@@ -1037,6 +1056,36 @@ const FUENTES = [
        pavimentos que no es de este rubro y no tiene por qué contarse como
        algo que se dejó fuera. */
     regla: a => { const r = BALDOSAS.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
+    etiqueta: 'Ochoa · terminación de baldosas',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: {},
+    /* Lo que la extracción del 11/09 ya trae no se vuelve a leer aquí: se
+       devuelve undefined, que es «no es de esta fuente» y no cuenta como
+       descarte. Si no, cada baldosa entraría dos veces, con dos precios del
+       mismo comercio y dos fechas. */
+    regla: a => {
+      if (CUBIERTOS_11.has(a.codigo)) return undefined;
+      const r = BALDOSAS.regla(a);
+      return r === undefined ? undefined : (r || null);
+    }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/aliss-2026-09-11.json'),
+    etiqueta: 'Aliss · lámparas, jardín y espejos',
+    proveedor: 'Aliss',
+    constante: 'PROV_ALISS',
+    fecha: '2026-09-11',
+    motivo: 'no es partida de obra ni pieza que se especifique',
+    motivoDe: () => ALISS.MOTIVO.valor || 'no es partida de obra ni pieza que se especifique',
+    mapeo: {},
+    regla: a => ALISS.regla(a)
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-2026-09-09.json'),
@@ -1121,11 +1170,18 @@ const FUENTES = [
     regla: a => { const r = MC.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
-    archivo: path.join(__dirname, 'datos-externos/cerarte-2026-09-10.json'),
+    /* La extracción del 11/09 releva a la del 10/09. Trae la foto de cada
+       artículo —1,660 de 1,927— y, sobre todo, trae la sección del menú de
+       la tienda para los 715 artículos que antes salían como «sin sección»:
+       con ella, 107 baldosas que estaban archivadas como cerámica resultan
+       ser porcelanato —lo dice la propia tienda— y 74 artículos que no se
+       podían clasificar entran. Se pierde uno: una mezcladora de lavamanos
+       que la nueva extracción ya no lista, y ese ítem tiene otras 155. */
+    archivo: path.join(__dirname, 'datos-externos/cerarte-2026-09-11.json'),
     etiqueta: 'CerArte · cerámica, porcelanato y baños',
     proveedor: 'CerArte',
     constante: 'PROV_CERARTE',
-    fecha: '2026-09-10',
+    fecha: '2026-09-11',
     /* Su tienda declara en la ficha que el precio publicado no lleva ITBIS.
        No hay nada que suponer. */
     itbis: false,
@@ -1459,6 +1515,8 @@ lista.sort((p, q) => p.spec.cat.localeCompare(q.spec.cat) || (p.spec.orden - q.s
    dentro de la categoría, así que aquí solo necesitamos saber en qué
    número va cada categoría al llegar el bloque generado. */
 global.window = global;
+/* El motor va antes que el registro: datos-precios.js le pide la c(). */
+require(path.join(DATOS, 'precios.js'));
 ['catalogo', 'proveedores', 'precios', 'demo'].forEach(f => require(path.join(DATOS, 'datos-' + f + '.js')));
 const CAT = global.CATALOGO;
 
@@ -1756,81 +1814,238 @@ if (faltan.length) {
    clasificar en otro sitio con otras reglas, que es como se desincronizan
    los catálogos.
 
-   Solo entra lo que tiene foto y cae en una categoría de interiorismo:
-   sin imagen no hay nada que explorar visualmente.
+   Solo entra lo que tiene foto y es de interiorismo: sin imagen no hay nada
+   que explorar visualmente.
+
+   SE ESCRIBE EN PÁGINAS, NO EN UN ARCHIVO
+   En un solo archivo son 790 KB que el navegador tiene que descargar
+   ENTEROS antes de pintar la primera foto, que es exactamente lo que no
+   debe pasar en una página cuya gracia es ver algo de inmediato. Van en
+   páginas de 250 y el explorador pide la que necesita.
    ========================================================= */
 
-function bloqueVisual() {
+function escribirVisual() {
   /* El ámbito se pregunta ÍTEM POR ÍTEM, no por su categoría, y esa
-     distinción no es cosmética. «Pisos y revestimientos» es de los dos
-     ámbitos, pero dentro lleva sesenta y dos consumibles de instalación
-     —crucetas, calzos, clips, juntas de dilatación— que el catálogo saca de
-     interiorismo uno por uno con sus propias reglas. Preguntando por la
-     categoría, un «Clips-Calzo Espesorado 2mm» terminaba entre las lámparas
-     y los mármoles.
+     distinción no es cosmética: hay categorías de los dos ámbitos donde el
+     catálogo saca ítems sueltos de interiorismo con sus propias reglas —el
+     cable y el breaker dentro de eléctricos, la bomba dentro de plomería—.
+     Preguntando por la categoría terminaban entre las lámparas.
 
      Por eso esto se calcula DESPUÉS de escribir el catálogo: recargándolo se
      obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
      reglas y arriesgar que las dos copias se separen. */
   const ambitoDeItem = {};
+  const nombreDeItem = {};
+  const ordenCat = {};
   (function () {
     const g = { window: {} };
     const antes = global.window;
     global.window = g.window;
     delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
     require(path.join(DATOS, 'datos-catalogo.js'));
-    (g.window.CATALOGO.items || []).forEach(i => { ambitoDeItem[i.codigo] = i.ambitos || []; });
+    (g.window.CATALOGO.items || []).forEach(i => {
+      ambitoDeItem[i.codigo] = i.ambitos || [];
+      nombreDeItem[i.codigo] = i.nombre;
+    });
+    (g.window.CATALOGO.categorias || []).forEach((c, n) => { ordenCat[c.codigo] = n; });
     global.window = antes;
   }());
 
+  /* Un comercio publica en mayúsculas y los demás no. En una cuadrícula de
+     fotos, donde el nombre va debajo de cada una, esa tienda grita y parece
+     un error de la página. Se pasa a caja de título solo cuando el nombre
+     viene ENTERO en mayúsculas —si trae una sola minúscula se respeta tal
+     cual— y se dejan intactas las siglas y los números. */
+  const SIGLAS = /^(PVC|CPVC|PPR|PP|LED|WPC|MDF|HG|SDR|UV|IP|USB|RGB|CCT|AT|MT|CM|MM|HD|XL|SL|LX|II|III)$/;
+  const caja = n => /[a-záéíóúüñ]/.test(n) ? n
+    : n.replace(/[A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ']*/g, p =>
+        SIGLAS.test(p) ? p : p.charAt(0) + p.slice(1).toLowerCase());
+
+  /* LA SUBCATEGORÍA: EL NOMBRE DEL ÍTEM SIN SUS EJES
+
+     Una categoría del catálogo es demasiado gruesa para elegir mirando.
+     «Revestimientos decorativos» mete en la misma pastilla el papel tapiz,
+     la plancha de bambú, la piedra flexible y el tirador de mueble, que no
+     son la misma decisión ni se buscan igual. Pero el ítem es demasiado
+     fino: «Cerámica de piso, 45 x 45 cm» y «Cerámica de piso, 60 x 60 cm»
+     son la misma cosa en dos medidas, y el catálogo tiene 284 así.
+
+     En medio está el nombre del ítem sin sus ejes, que es exactamente cómo
+     lo nombraría alguien: papel tapiz, porcelanato de pared, mosaico
+     decorativo de madera, lámpara decorativa de techo. Se corta por la coma
+     —ahí empieza la medida— y se le quita la magnitud o el tipo que algunas
+     familias llevan pegada al final sin coma: «Bombillo LED de 4 W» es
+     bombillo LED, «Cruceta para cerámica 1.5 mm» es cruceta. */
+  const subDe = codigo => String(nombreDeItem[codigo] || '')
+    .split(',')[0]
+    .replace(/\s+(?:de\s+)?\d+(?:[.,]\d+)?\s*(?:w|mm|cm|m|"|pulg|lb|kg|kw)\b.*$/i, '')
+    .replace(/\s+tipo\s+[\wáéíóúñ]+$/i, '')
+    .trim();
+
   const filas = [];
   const vistos = {};
+  /* Hay catálogos que traen todas las fotos del artículo en un mismo campo,
+     separadas por « | ». Puestas tal cual en el src, el navegador pide una
+     dirección que no existe y la ficha sale vacía: 128 artículos de un solo
+     comercio se veían así. Se toma la primera, que es la principal. */
+  const primeraFoto = v => String(v || '').split(/\s*\|\s*|\s+(?=https?:\/\/)/)[0].trim();
+
   const anota = (a, codigoItem, cat) => {
-    const img = a.imagen || '';
-    if (!img) return;
+    const img = primeraFoto(a.imagen);
+    /* Una dirección a medias da una ficha rota, que en una página de fotos
+       es peor que una ficha que no está. */
+    if (!/^https:\/\/\S+$/.test(img)) return;
     if (!(ambitoDeItem[codigoItem] || []).includes('interiorismo')) return;
     const f = a._fuente;
     const clave = f.proveedor + '|' + a.codigo;
     if (vistos[clave]) return;
     vistos[clave] = 1;
     filas.push({
-      n: limpia(a.nombre).slice(0, 90),
+      n: caja(limpia(a.nombre)).slice(0, 90),
       img: img,
       p: Math.round(precioUnidad(a) * (f.moneda === 'USD' ? TASA_USD : 1)),
       c: f.proveedor,
       u: a.url || '',
       i: codigoItem,
-      k: cat
+      k: cat,
+      s: subDe(codigoItem)
     });
   };
 
   nuevosOk.forEach(x => anota(x.a, codigoDe[x.spec.cat + '|' + x.spec.clave], x.spec.cat));
-  existenteOk.forEach(x => {
-    const cat = String(x.item).slice(0, 6);
-    anota(x.a, x.item, cat);
+  existenteOk.forEach(x => anota(x.a, x.item, String(x.item).slice(0, 6)));
+
+  /* El orden de la página: por categoría, y dentro de ella intercalando
+     comercios, para que las primeras pantallas no parezcan una sola tienda.
+     Se fija AQUÍ y no en el navegador porque de este orden dependen las
+     páginas: la número 3 tiene que traer siempre los mismos artículos. */
+  /* El turno se cuenta por comercio Y categoría, no por comercio a secas.
+     Contándolo global, un comercio que ya gastó cuatrocientos turnos en las
+     lámparas entraba en los pisos con el turno 400, detrás de los primeros
+     cuatrocientos del comercio que llega con el contador en cero: la
+     categoría abría con una sola tienda, que es justo lo que el intercalado
+     existe para evitar. */
+  const turno = {};
+  filas.forEach(v => {
+    const k = v.c + '|' + v.k;
+    turno[k] = (turno[k] || 0);
+    v._t = turno[k]++;
+  });
+  filas.sort((a, b) =>
+    (ordenCat[a.k] - ordenCat[b.k]) || (a._t - b._t) || a.n.localeCompare(b.n));
+
+  /* Las URL son el 63% de los bytes y casi todas empiezan igual: 977 por
+     «https://mundoled.com.do/wp-content/uploads/», 535 por el CDN de
+     Shopify. Un diccionario de prefijos con la referencia por número las
+     encoge a la mitad. */
+  const cuentaPre = {};
+  const prefijoDe = u => {
+    const m = String(u).match(/^https?:\/\/[^/]+\/(?:[^/]+\/){0,3}/);
+    return m ? m[0] : '';
+  };
+  filas.forEach(v => {
+    [prefijoDe(v.img), prefijoDe(v.u)].forEach(q => { if (q) cuentaPre[q] = (cuentaPre[q] || 0) + 1; });
+  });
+  const pre = Object.keys(cuentaPre).filter(q => cuentaPre[q] >= 3 && q.length > 18)
+    .sort((a, b) => cuentaPre[b] * b.length - cuentaPre[a] * a.length).slice(0, 60);
+  const idxPre = {};
+  pre.forEach((q, n) => { idxPre[q] = n; });
+  const corta = u => {
+    const q = prefijoDe(u);
+    return (q && idxPre[q] !== undefined) ? [idxPre[q], String(u).slice(q.length)] : String(u);
+  };
+
+  const comercios = [...new Set(filas.map(v => v.c))].sort();
+  const idxCom = {};
+  comercios.forEach((c, n) => { idxCom[c] = n; });
+
+  /* Una fila es un arreglo y no un objeto: repetir siete nombres de campo
+     2,771 veces cuesta 83 KB que no dicen nada. */
+  /* Se ordenan por cuántas fichas tiene cada una, de más a menos: así el
+     índice más repetido es el más corto y, de paso, las pastillas salen ya
+     en el orden en que se van a pintar. */
+  const cuentaSub = {};
+  filas.forEach(v => { cuentaSub[v.s] = (cuentaSub[v.s] || 0) + 1; });
+  const subs = Object.keys(cuentaSub).sort((a, b) => cuentaSub[b] - cuentaSub[a] || a.localeCompare(b, 'es'));
+  const idxSub = {};
+  subs.forEach((x, n) => { idxSub[x] = n; });
+
+  const fila = v => [v.n, corta(v.img), v.p, idxCom[v.c], corta(v.u), v.i, v.k, idxSub[v.s]];
+
+  const POR_PAGINA = 250;
+  const dir = path.join(DATOS, '..', 'datos');
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.readdirSync(dir).filter(f => /^visual/.test(f)).forEach(f => fs.unlinkSync(path.join(dir, f)));
+
+  const paginas = [];
+  for (let i = 0; i < filas.length; i += POR_PAGINA) {
+    const trozo = filas.slice(i, i + POR_PAGINA);
+    fs.writeFileSync(path.join(dir, 'visual-' + paginas.length + '.json'),
+                     JSON.stringify(trozo.map(fila)));
+    paginas.push({
+      n: trozo.length,
+      k: [...new Set(trozo.map(v => v.k))],
+      c: [...new Set(trozo.map(v => idxCom[v.c]))]
+    });
+  }
+
+  /* Las cifras de cada categoría y de cada comercio se calculan aquí, con
+     todo delante, y viajan en el manifiesto. Así el contador —cuántos hay,
+     de cuánto a cuánto, cuál es la mediana— sale exacto desde la primera
+     pantalla, sin obligar a descargar las doce páginas solo para contar.
+     Cuando el visitante combina filtros, lo que se cuenta es lo cargado y
+     el contador lo dice. */
+  const cifras = lista => {
+    const v = lista.map(x => x.p).sort((a, b) => a - b);
+    return { n: v.length, min: v[0], max: v[v.length - 1], med: v[v.length >> 1] };
+  };
+  const porCat = {}, porCom = {};
+  filas.forEach(v => {
+    (porCat[v.k] = porCat[v.k] || []).push(v);
+    (porCom[v.c] = porCom[v.c] || []).push(v);
+  });
+  Object.keys(porCat).forEach(k => { porCat[k] = cifras(porCat[k]); });
+  Object.keys(porCom).forEach(k => { porCom[idxCom[k]] = cifras(porCom[k]); delete porCom[k]; });
+
+  /* Qué subcategorías tiene cada categoría y cuántas fichas cada una, para
+     que la segunda fila de pastillas se pueda pintar sin descargar una sola
+     página. Van ya ordenadas de más a menos. */
+  const subCat = {};
+  filas.forEach(v => {
+    const m = subCat[v.k] = subCat[v.k] || {};
+    m[idxSub[v.s]] = (m[idxSub[v.s]] || 0) + 1;
+  });
+  Object.keys(subCat).forEach(k => {
+    subCat[k] = Object.keys(subCat[k])
+      .map(i => [+i, subCat[k][i]])
+      .sort((a, b) => b[1] - a[1]);
   });
 
-  filas.sort((a, b) => (a.k + a.n).localeCompare(b.k + b.n));
-  return "'use strict';\n" +
-    '/* Generado por herramientas/importar-catalogos.js. No editar a mano.\n' +
-    '   Un registro por ARTÍCULO de interiorismo con foto: lo que se explora\n' +
-    '   visualmente. El precio de referencia y la comparación entre comercios\n' +
-    '   siguen viviendo en el catálogo de ítems; esto es para elegir, no para\n' +
-    '   presupuestar. Las imágenes se sirven desde el comercio que las publica\n' +
-    '   y cada ficha enlaza a su producto. */\n' +
-    '(function (global) {\n' +
-    '  global.VISUAL = ' + JSON.stringify(filas) + ';\n' +
-    '}(typeof window !== \'undefined\' ? window : globalThis));\n';
+  fs.writeFileSync(path.join(dir, 'visual.json'), JSON.stringify({
+    total: filas.length, porPagina: POR_PAGINA,
+    pre: pre, com: comercios, pags: paginas, sub: subs, subCat: subCat,
+    todo: cifras(filas), cat: porCat, porCom: porCom
+  }));
+
+  return { total: filas.length, paginas: paginas.length,
+           /* Solo lo del explorador: en esta carpeta también viven los
+              detalle-CAT.json, que son de otra cosa. */
+           kb: Math.round(fs.readdirSync(dir).filter(f => /^visual/.test(f)).reduce((s, f) =>
+             s + fs.statSync(path.join(dir, f)).size, 0) / 1024) };
 }
 
 if (ESCRIBIR) {
   reemplazar('datos-catalogo.js', 'items', bloqueItems());
   reemplazar('datos-precios.js', 'cotizaciones', bloqueCotizaciones());
-  /* Después de los dos, y no a la vez: bloqueVisual() recarga el catálogo
+  /* Después de los dos, y no a la vez: escribirVisual() recarga el catálogo
      para preguntarle el ámbito de cada ítem, y necesita el recién escrito. */
-  fs.writeFileSync(path.join(DATOS, 'datos-visual.js'), bloqueVisual());
+  const vis = escribirVisual();
+  console.log('Catálogo visual: ' + vis.total + ' artículos en ' + vis.paginas +
+              ' páginas (' + vis.kb + ' KB en total).');
   console.log('');
-  console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');
+  console.log('Escrito. Ahora corre, en este orden:');
+  console.log('  node herramientas/generar-datos-navegador.js');
+  console.log('  node herramientas/generar-categorias.js');
 } else {
   console.log('');
   console.log('Nada escrito. Corre otra vez con --escribir para aplicar.');

@@ -27,14 +27,68 @@ precios/
     css/precios.css       Estilos (la paleta de marca, en :root)
     js/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
+                          (el original; no lo carga el navegador)
+      catalogo.js         El mismo, en forma compacta           ← GENERADO
+      catalogo-alias.js   Los alias, solo para el buscador      ← GENERADO
       datos-proveedores.js Directorio de proveedores
+      precios.js          El cálculo: mediana, ITBIS, exportación
       datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
+                          (el registro completo; no lo carga el navegador)
+      cotizaciones.js     Las mismas, en forma compacta         ← GENERADO
       datos-demo.js       Datos ficticios de demostración       ← APAGADO (ACTIVO = false)
       app.js              Buscador, filtros y lista de cotización
+    datos/
+      visual-N.json       El explorador de interiorismo, por páginas  ← GENERADO
+      detalle-CAT.json    La nota y la fuente de cada cotización     ← GENERADO
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
   sitemap.xml
   vercel.json             Configuración de despliegue del subdominio
+```
+
+---
+
+## Qué carga el navegador y qué no
+
+Los dos originales del repositorio —`datos-catalogo.js` y `datos-precios.js`—
+suman 3.3 MB, y el navegador no carga ninguno de los dos.
+
+El registro de cotizaciones —`datos-precios.js`— pesa 2.6 MB, y dos terceras
+partes de eso son la nota y la fuente de cada una: de qué artículo exacto se
+trata, de qué marca, con qué referencia, y dónde se leyó el precio. Eso es la
+prueba de cada número y por eso se guarda; pero para **pintar** un precio no
+hace falta.
+
+Así que el navegador no lo carga. Carga dos archivos más chicos:
+
+- `precios.js`, el cálculo, que es el mismo en el sitio y en las herramientas.
+- `cotizaciones.js`, las 8,532 cotizaciones en forma compacta: el comercio, la
+  fecha y la unidad en diccionarios, y una línea de tres números por
+  cotización. Son 163 KB en vez de 2.6 MB, y salen exactamente las mismas
+  medianas (se comprueba ítem por ítem).
+
+La nota y la fuente llegan aparte, por categoría, en
+`assets/datos/detalle-CAT.json`, y solo cuando se van a usar: al acercar el
+cursor a un comercio y al copiar la tabla para Excel. Quien solo mira precios
+no las descarga nunca.
+
+Las herramientas del repositorio hacen lo contrario: cargan `precios.js` y
+después el registro completo, porque ahí la nota y la fuente son justamente
+lo que importa.
+
+Con el catálogo pasa algo parecido, aunque más simple: la unidad, la etapa,
+el alcance, el estado y la fuente de cada ítem son los mismos siete u ocho
+textos repetidos 2,185 veces, y en diccionario ocupan 1 KB. Tres campos
+—`medidas`, `gama` y `origen`— no los mira nadie en el navegador: son de la
+auditoría y del libro de Excel, que leen el original. Y los alias, que solo
+sirven para buscar, van en su propio archivo y los carga únicamente la
+portada, que es la única página con buscador. De 678 KB quedan 277.
+
+**Después de tocar `datos-precios.js` o `datos-catalogo.js` hay que correr:**
+
+```bash
+node herramientas/generar-datos-navegador.js   # catalogo.js, cotizaciones.js, detalle-CAT.json
+node herramientas/generar-categorias.js        # las páginas
 ```
 
 ---

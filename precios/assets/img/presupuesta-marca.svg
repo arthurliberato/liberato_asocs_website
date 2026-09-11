@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+<!-- Presupuesta · la P SIN la plancha verde, para ir junto a un texto
+     La marca del catálogo de precios, hermana de la del estudio:
+     misma plancha, misma paleta, una P en lugar de la L.
+     Generado por herramientas/logo-a-trazos.py -->
+  <!-- Mismo criterio que marca-agua.svg: sin plancha, el marfil se
+       vuelve verde, porque sobre fondo claro no se vería. El ojo de
+       la P lo hace el hueco, no una pieza. -->
+  <rect fill="#e89019" x="26.7" y="19.0" width="11.9" height="46.3"/>
+  <rect fill="#3f6e22" x="38.6" y="19.0" width="16.4" height="11.4"/>
+  <rect fill="#de3b22" x="55.0" y="19.0" width="12.0" height="22.7"/>
+  <rect fill="#3f6e22" x="38.6" y="41.7" width="28.4" height="11.2"/>
+</svg>
