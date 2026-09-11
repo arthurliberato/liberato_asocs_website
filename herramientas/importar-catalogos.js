@@ -1681,6 +1681,22 @@ function bloqueCotizaciones() {
        cuándo: así el día que la tasa cambie no hay que tocar mil líneas. */
     if (f.moneda && f.moneda !== 'RD$') campos.push("    moneda: '" + f.moneda + "'");
     if (repite > 1) campos.push('    peso: ' + repite);
+    /* EL ARTÍCULO, EN CAMPOS Y NO SOLO EN LA PROSA DE LA NOTA
+
+       La nota ya dice qué artículo es —«Mezcladora Alaior · artículo 84346
+       · marca Ramón Soler»— y para leerla eso basta. Pero para trabajar con
+       ello no: sacar la marca de una frase con una expresión regular es
+       exactamente la clase de cosa que se rompe callada. La marca decide la
+       gama, el enlace lleva a la ficha del comercio y el SKU es con lo que
+       se pide, así que van como campos.
+
+       No viajan al navegador: la forma compacta no los lleva y el detalle
+       tampoco, porque el globo enseña la nota, que ya los dice. Viven en el
+       registro, que es de donde leen el libro de Excel y la auditoría. */
+    if (a.nombre) campos.push("    art: '" + esc(limpia(a.nombre)) + "'");
+    if (a.codigo) campos.push("    sku: '" + esc(limpia(a.codigo)) + "'");
+    if (a.marca && !/GENERICO|GENÉRICO/i.test(a.marca)) campos.push("    marca: '" + esc(limpia(a.marca)) + "'");
+    if (a.url) campos.push("    url: '" + esc(a.url) + "'");
     /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
        lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
        y solo ese lo dice. */

@@ -68,6 +68,47 @@ PRECIOS.registros.forEach(q => {
   if (!previo || q.precio < previo.precio) fila[q.proveedor] = q;
 });
 
+/* TODOS LOS ARTÍCULOS, UNO POR FILA
+
+   El resto del libro trabaja por ítem: una fila por especificación, con
+   el precio de referencia y una columna por comercio. Eso es lo que va a
+   un presupuesto. Pero debajo de cada ítem hay decenas de artículos
+   concretos —esta marca, este modelo, este precio, esta tienda— y hasta
+   ahora solo se veían de uno en uno al pasar el cursor.
+
+   Esta hoja los saca todos, como el explorador de interiorismo saca todas
+   las fotos: sin agregar nada, sin mediana, sin comparar. Es el dato
+   crudo, para filtrarlo y ordenarlo en Excel como haga falta. */
+const nombreItem = {};
+CAT.items.forEach(i => { nombreItem[i.codigo] = i; });
+
+const articulos = PRECIOS.registros
+  .filter(q => q.precio > 0)
+  .map(q => {
+    const it = nombreItem[q.item];
+    return {
+      catCodigo: q.item.slice(0, 6),
+      categoria: catPorCodigo[q.item.slice(0, 6)] ? catPorCodigo[q.item.slice(0, 6)].nombre : q.item.slice(0, 6),
+      item: it ? it.nombre : '(ítem retirado)',
+      itemCodigo: q.item,
+      articulo: q.art || '',
+      marca: q.marca || '',
+      comercio: q.proveedor,
+      unidad: q.unidad || (it ? it.unidad : ''),
+      precio: Math.round(q.precio * 100) / 100,
+      /* Cuántos artículos del comercio representa la fila: sube cuando
+         varios comparten especificación y precio y la importación los
+         junta en uno. */
+      articulos: q.peso || 1,
+      fecha: q.fecha || '',
+      url: q.url || ''
+    };
+  })
+  .sort((a, b) =>
+    a.catCodigo.localeCompare(b.catCodigo) ||
+    a.itemCodigo.localeCompare(b.itemCodigo) ||
+    a.precio - b.precio);
+
 const items = CAT.items.map(i => ({
   codigo: i.codigo,
   grupo: grupoPorCodigo[i.codigo.slice(0, 3)] ? grupoPorCodigo[i.codigo.slice(0, 3)].nombre : i.codigo.slice(0, 3),
@@ -141,6 +182,7 @@ process.stdout.write(JSON.stringify({
   },
   proveedoresComparativo: conCotizaciones.map(p => p.nombre),
   items: items,
+  articulos: articulos,
   proveedores: proveedores,
   categorias: CAT.categorias.map(c => ({ codigo: c.codigo, nombre: c.nombre, desc: c.desc, slug: c.slug })),
   etapas: CAT.etapas.map(e => e.nombre),

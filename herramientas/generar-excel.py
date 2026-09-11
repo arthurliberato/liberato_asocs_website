@@ -753,6 +753,52 @@ def hoja_conversiones(wb, d):
 
 # =====================================================================
 
+# =====================================================================
+# 3. Todos los artículos
+# =====================================================================
+
+def hoja_articulos(wb, d):
+    """Una fila por artículo de tienda, sin agregar nada.
+
+    El resto del libro trabaja por ítem: una fila por especificación, con
+    el precio de referencia y una columna por comercio. Eso es lo que va a
+    un presupuesto. Pero debajo de cada ítem hay decenas de artículos
+    concretos —esta marca, este modelo, este precio, esta tienda— y así,
+    agregados, no se pueden mirar uno por uno.
+
+    Esta hoja los saca todos, como el explorador de interiorismo saca
+    todas las fotos: sin mediana, sin comparar, sin columna por comercio.
+    Es el dato crudo con pocas columnas, para filtrarlo y ordenarlo en
+    Excel como haga falta.
+    """
+    ws = wb.create_sheet("Artículos")
+    cols = [("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
+            ("Marca", 18), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
+            ("Fecha", 11), ("Enlace", 52)]
+    marca(ws, len(cols))
+    encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
+
+    n = 3
+    for a in d["articulos"]:
+        fila = [a["categoria"], a["item"], a["articulo"] or a["item"], a["marca"],
+                a["comercio"], a["unidad"], a["precio"], a["fecha"], a["url"]]
+        for i, v in enumerate(fila, start=1):
+            c = ws.cell(row=n, column=i, value=v)
+            c.font = TXT
+            c.alignment = Alignment(vertical="top")
+        ws.cell(row=n, column=7).number_format = MONEDA
+        # El enlace va como hipervínculo: es lo que convierte la hoja en una
+        # herramienta de compra y no en una lista para mirar.
+        if a["url"]:
+            c = ws.cell(row=n, column=9)
+            c.hyperlink = a["url"]
+            c.font = Font(name=FUENTE, size=CUERPO, color="3F6E22", underline="single")
+        n += 1
+
+    ws.auto_filter.ref = "A2:I%d" % (n - 1)
+    return n - 3
+
+
 def main():
     d = datos()
     wb = Workbook()
@@ -765,9 +811,11 @@ def main():
     normal.font.name = FUENTE
     normal.font.sz = CUERPO
 
-    # Dos hojas y nada más: el catálogo y el comparativo por comercio.
+    # Tres hojas: el catálogo por ítem, el comparativo por comercio y el
+    # dato crudo, un artículo de tienda por fila.
     hoja_catalogo(wb, d)
     comparadas = hoja_comparativo(wb, d)
+    n_articulos = hoja_articulos(wb, d)
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"
@@ -780,6 +828,7 @@ def main():
     print("Escrito %s" % SALIDA.relative_to(RAIZ))
     print("  %d ítems · %d en el comparativo · %d proveedores" % (
         len(d["items"]), comparadas, d["totales"]["comercios"]))
+    print("  %d artículos de tienda en la hoja «Artículos»" % n_articulos)
     print("  Ahora conviene revisarlo: python3 herramientas/verificar-excel.py")
 
 

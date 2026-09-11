@@ -48,7 +48,7 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 # Los encabezados van en la fila 2: la 1 es la banda de marca.
 FILA_TITULOS = 2
 FUENTE = "Calibri"
-HOJAS = ["Catálogo", "Comparativo"]
+HOJAS = ["Catálogo", "Comparativo", "Artículos"]
 COLUMNAS_CATALOGO = {
     "A": "Código", "D": "Ítem", "E": "Especificación", "F": "Unidad",
     "G": "Etapa de obra", "K": "Precio de referencia (RD$)", "N": "Incluye ITBIS",
@@ -112,6 +112,30 @@ def main():
         filas_cat -= 1
     print("Catálogo: %d ítems (filas %d a %d)"
           % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
+
+    # ---- 3 bis: la hoja de artículos --------------------------------
+    # Es el dato crudo, una fila por artículo de tienda. Lo que puede
+    # romperse callado aquí es que se quede vacía —si el registro deja de
+    # traer el nombre del artículo— o que el precio entre como texto, que
+    # es lo que inutiliza una hoja hecha para filtrar y sumar.
+    art = wb["Artículos"]
+    filas_art = art.max_row
+    while filas_art > FILA_TITULOS and art.cell(row=filas_art, column=1).value is None:
+        filas_art -= 1
+    n_art = filas_art - FILA_TITULOS
+    if n_art < 1000:
+        falla("la hoja de artículos trae %d filas; deberían ser miles" % n_art)
+    sin_nombre = sum(1 for r in range(FILA_TITULOS + 1, filas_art + 1)
+                     if not art.cell(row=r, column=3).value)
+    if sin_nombre:
+        falla("%d artículos sin nombre en la hoja de artículos" % sin_nombre)
+    no_numero = [r for r in range(FILA_TITULOS + 1, min(filas_art, FILA_TITULOS + 400) + 1)
+                 if not isinstance(art.cell(row=r, column=7).value, (int, float))]
+    if no_numero:
+        falla("el precio de la hoja de artículos entra como texto en %d filas (ej. fila %d)"
+              % (len(no_numero), no_numero[0]))
+    print("Artículos: %d artículos de tienda (filas %d a %d)"
+          % (n_art, FILA_TITULOS + 1, filas_art))
 
     # ---- 4: la banda de marca y el congelado --------------------------
     for nombre in HOJAS:
