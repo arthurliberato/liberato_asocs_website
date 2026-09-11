@@ -63,6 +63,14 @@ const TOLERANCIA = 0.35;
 const PIES_POR_UNIDAD = 20;
 const ESCRIBIR = process.argv.indexOf('--escribir') >= 0;
 
+/* La misma tasa que usa el catálogo, leída de su propio archivo para que no
+   haya dos números del dólar en el repositorio. */
+const TASA_USD = (function () {
+  const t = fs.readFileSync(path.join(DATOS, 'datos-catalogo.js'), 'utf8')
+             .match(/tasaUSD\s*:\s*\{[^}]*valor\s*:\s*([\d.]+)/);
+  return t ? parseFloat(t[1]) : 0;
+}());
+
 /* =========================================================
    1. Artículos que caen en un ítem que ya existe
    ========================================================= */
@@ -1693,9 +1701,85 @@ if (faltan.length) {
   process.exit(1);
 }
 
+/* =========================================================
+   7. El catálogo visual
+
+   El índice de precios compara ESPECIFICACIONES: «Papel tapiz» es un
+   solo ítem con 289 cotizaciones, y esa es exactamente la abstracción
+   que sirve para presupuestar. Pero no sirve para elegir: nadie escoge
+   un papel tapiz por su mediana, lo escoge por cómo se ve.
+
+   Así que para interiorismo hace falta el otro grano, el del ARTÍCULO
+   concreto —este modelo, esta foto, este precio, esta tienda— y eso lo
+   sabe este importador y nadie más: es el único punto del sistema donde
+   conviven el artículo tal como lo publica el comercio y el ítem del
+   catálogo al que pertenece. Sacarlo aquí evita tener que volver a
+   clasificar en otro sitio con otras reglas, que es como se desincronizan
+   los catálogos.
+
+   Solo entra lo que tiene foto y cae en una categoría de interiorismo:
+   sin imagen no hay nada que explorar visualmente.
+   ========================================================= */
+
+function bloqueVisual() {
+  /* Los ámbitos salen del propio catálogo, cargándolo: si se copiaran a otro
+     archivo habría dos verdades sobre qué es interiorismo y un día no
+     coincidirían. */
+  const g = { window: {} };
+  const cats = {};
+  (function () {
+    const antes = global.window;
+    global.window = g.window;
+    delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
+    require(path.join(DATOS, 'datos-catalogo.js'));
+    (g.window.CATALOGO.categorias || []).forEach(c => { cats[c.codigo] = c.ambitos || []; });
+    global.window = antes;
+  }());
+
+  const filas = [];
+  const vistos = {};
+  const anota = (a, codigoItem, cat) => {
+    const img = a.imagen || '';
+    if (!img) return;
+    if (!(cats[cat] || []).includes('interiorismo')) return;
+    const f = a._fuente;
+    const clave = f.proveedor + '|' + a.codigo;
+    if (vistos[clave]) return;
+    vistos[clave] = 1;
+    filas.push({
+      n: limpia(a.nombre).slice(0, 90),
+      img: img,
+      p: Math.round(precioUnidad(a) * (f.moneda === 'USD' ? TASA_USD : 1)),
+      c: f.proveedor,
+      u: a.url || '',
+      i: codigoItem,
+      k: cat
+    });
+  };
+
+  nuevosOk.forEach(x => anota(x.a, codigoDe[x.spec.cat + '|' + x.spec.clave], x.spec.cat));
+  existenteOk.forEach(x => {
+    const cat = String(x.item).slice(0, 6);
+    anota(x.a, x.item, cat);
+  });
+
+  filas.sort((a, b) => (a.k + a.n).localeCompare(b.k + b.n));
+  return "'use strict';\n" +
+    '/* Generado por herramientas/importar-catalogos.js. No editar a mano.\n' +
+    '   Un registro por ARTÍCULO de interiorismo con foto: lo que se explora\n' +
+    '   visualmente. El precio de referencia y la comparación entre comercios\n' +
+    '   siguen viviendo en el catálogo de ítems; esto es para elegir, no para\n' +
+    '   presupuestar. Las imágenes se sirven desde el comercio que las publica\n' +
+    '   y cada ficha enlaza a su producto. */\n' +
+    '(function (global) {\n' +
+    '  global.VISUAL = ' + JSON.stringify(filas) + ';\n' +
+    '}(typeof window !== \'undefined\' ? window : globalThis));\n';
+}
+
 if (ESCRIBIR) {
   reemplazar('datos-catalogo.js', 'items', bloqueItems());
   reemplazar('datos-precios.js', 'cotizaciones', bloqueCotizaciones());
+  fs.writeFileSync(path.join(DATOS, 'datos-visual.js'), bloqueVisual());
   console.log('');
   console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');
 } else {
