@@ -1170,11 +1170,18 @@ const FUENTES = [
     regla: a => { const r = MC.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
-    archivo: path.join(__dirname, 'datos-externos/cerarte-2026-09-10.json'),
+    /* La extracción del 11/09 releva a la del 10/09. Trae la foto de cada
+       artículo —1,660 de 1,927— y, sobre todo, trae la sección del menú de
+       la tienda para los 715 artículos que antes salían como «sin sección»:
+       con ella, 107 baldosas que estaban archivadas como cerámica resultan
+       ser porcelanato —lo dice la propia tienda— y 74 artículos que no se
+       podían clasificar entran. Se pierde uno: una mezcladora de lavamanos
+       que la nueva extracción ya no lista, y ese ítem tiene otras 155. */
+    archivo: path.join(__dirname, 'datos-externos/cerarte-2026-09-11.json'),
     etiqueta: 'CerArte · cerámica, porcelanato y baños',
     proveedor: 'CerArte',
     constante: 'PROV_CERARTE',
-    fecha: '2026-09-10',
+    fecha: '2026-09-11',
     /* Su tienda declara en la ficha que el precio publicado no lleva ITBIS.
        No hay nada que suponer. */
     itbis: false,
@@ -1828,6 +1835,7 @@ function escribirVisual() {
      obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
      reglas y arriesgar que las dos copias se separen. */
   const ambitoDeItem = {};
+  const nombreDeItem = {};
   const ordenCat = {};
   (function () {
     const g = { window: {} };
@@ -1835,7 +1843,10 @@ function escribirVisual() {
     global.window = g.window;
     delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
     require(path.join(DATOS, 'datos-catalogo.js'));
-    (g.window.CATALOGO.items || []).forEach(i => { ambitoDeItem[i.codigo] = i.ambitos || []; });
+    (g.window.CATALOGO.items || []).forEach(i => {
+      ambitoDeItem[i.codigo] = i.ambitos || [];
+      nombreDeItem[i.codigo] = i.nombre;
+    });
     (g.window.CATALOGO.categorias || []).forEach((c, n) => { ordenCat[c.codigo] = n; });
     global.window = antes;
   }());
@@ -1849,6 +1860,27 @@ function escribirVisual() {
   const caja = n => /[a-záéíóúüñ]/.test(n) ? n
     : n.replace(/[A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ']*/g, p =>
         SIGLAS.test(p) ? p : p.charAt(0) + p.slice(1).toLowerCase());
+
+  /* LA SUBCATEGORÍA: EL NOMBRE DEL ÍTEM SIN SUS EJES
+
+     Una categoría del catálogo es demasiado gruesa para elegir mirando.
+     «Revestimientos decorativos» mete en la misma pastilla el papel tapiz,
+     la plancha de bambú, la piedra flexible y el tirador de mueble, que no
+     son la misma decisión ni se buscan igual. Pero el ítem es demasiado
+     fino: «Cerámica de piso, 45 x 45 cm» y «Cerámica de piso, 60 x 60 cm»
+     son la misma cosa en dos medidas, y el catálogo tiene 284 así.
+
+     En medio está el nombre del ítem sin sus ejes, que es exactamente cómo
+     lo nombraría alguien: papel tapiz, porcelanato de pared, mosaico
+     decorativo de madera, lámpara decorativa de techo. Se corta por la coma
+     —ahí empieza la medida— y se le quita la magnitud o el tipo que algunas
+     familias llevan pegada al final sin coma: «Bombillo LED de 4 W» es
+     bombillo LED, «Cruceta para cerámica 1.5 mm» es cruceta. */
+  const subDe = codigo => String(nombreDeItem[codigo] || '')
+    .split(',')[0]
+    .replace(/\s+(?:de\s+)?\d+(?:[.,]\d+)?\s*(?:w|mm|cm|m|"|pulg|lb|kg|kw)\b.*$/i, '')
+    .replace(/\s+tipo\s+[\wáéíóúñ]+$/i, '')
+    .trim();
 
   const filas = [];
   const vistos = {};
@@ -1875,7 +1907,8 @@ function escribirVisual() {
       c: f.proveedor,
       u: a.url || '',
       i: codigoItem,
-      k: cat
+      k: cat,
+      s: subDe(codigoItem)
     });
   };
 
@@ -1928,7 +1961,16 @@ function escribirVisual() {
 
   /* Una fila es un arreglo y no un objeto: repetir siete nombres de campo
      2,771 veces cuesta 83 KB que no dicen nada. */
-  const fila = v => [v.n, corta(v.img), v.p, idxCom[v.c], corta(v.u), v.i, v.k];
+  /* Se ordenan por cuántas fichas tiene cada una, de más a menos: así el
+     índice más repetido es el más corto y, de paso, las pastillas salen ya
+     en el orden en que se van a pintar. */
+  const cuentaSub = {};
+  filas.forEach(v => { cuentaSub[v.s] = (cuentaSub[v.s] || 0) + 1; });
+  const subs = Object.keys(cuentaSub).sort((a, b) => cuentaSub[b] - cuentaSub[a] || a.localeCompare(b, 'es'));
+  const idxSub = {};
+  subs.forEach((x, n) => { idxSub[x] = n; });
+
+  const fila = v => [v.n, corta(v.img), v.p, idxCom[v.c], corta(v.u), v.i, v.k, idxSub[v.s]];
 
   const POR_PAGINA = 250;
   const dir = path.join(DATOS, '..', 'datos');
@@ -1965,9 +2007,23 @@ function escribirVisual() {
   Object.keys(porCat).forEach(k => { porCat[k] = cifras(porCat[k]); });
   Object.keys(porCom).forEach(k => { porCom[idxCom[k]] = cifras(porCom[k]); delete porCom[k]; });
 
+  /* Qué subcategorías tiene cada categoría y cuántas fichas cada una, para
+     que la segunda fila de pastillas se pueda pintar sin descargar una sola
+     página. Van ya ordenadas de más a menos. */
+  const subCat = {};
+  filas.forEach(v => {
+    const m = subCat[v.k] = subCat[v.k] || {};
+    m[idxSub[v.s]] = (m[idxSub[v.s]] || 0) + 1;
+  });
+  Object.keys(subCat).forEach(k => {
+    subCat[k] = Object.keys(subCat[k])
+      .map(i => [+i, subCat[k][i]])
+      .sort((a, b) => b[1] - a[1]);
+  });
+
   fs.writeFileSync(path.join(dir, 'visual.json'), JSON.stringify({
     total: filas.length, porPagina: POR_PAGINA,
-    pre: pre, com: comercios, pags: paginas,
+    pre: pre, com: comercios, pags: paginas, sub: subs, subCat: subCat,
     todo: cifras(filas), cat: porCat, porCom: porCom
   }));
 

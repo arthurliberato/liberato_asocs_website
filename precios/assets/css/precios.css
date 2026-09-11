@@ -919,6 +919,14 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 }
 .ir-chip.is-on .ir-chip-n { opacity: .8; }
 
+/* La segunda fila, la de subcategorías: misma pastilla un punto más
+   pequeña y sin relleno cuando está apagada, para que se lea como lo que
+   es —un detalle de la fila de arriba— y no como otra fila de igual peso. */
+.ir-subs { margin-top: .45rem; }
+.ir-subs[hidden] { display: none; }
+.ir-sub { font-size: .8rem; padding: .18rem .6rem; }
+.ir-sub.is-on { background: var(--verde-800); border-color: var(--verde-800); }
+
 .ir-controles { display: flex; flex-wrap: wrap; gap: .5rem; margin-left: auto; }
 
 .ir-busca {

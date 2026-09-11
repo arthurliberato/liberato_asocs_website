@@ -138,10 +138,15 @@ ${header('interiorismo')}
 <div class="ir-barra" id="ir-barra">
   <div class="shell">
     <div class="ir-filtros">
-      <div class="ir-chips" role="group" aria-label="Filtrar por categoría">
+      <div class="ir-chips" id="ir-chips" role="group" aria-label="Filtrar por categoría">
         <button class="ir-chip is-on" type="button" data-cat="" aria-pressed="true">Todo<span class="ir-chip-n">${TOTAL}</span></button>
         ${pastillas}
       </div>
+
+      <!-- La segunda fila la pinta interiorismo.js: son las subcategorías
+           de la categoría elegida —papel tapiz, porcelanato de pared,
+           lámpara de techo— y solo aparece cuando hay una elegida. -->
+      <div class="ir-chips ir-subs" id="ir-subs" role="group" aria-label="Filtrar por tipo" hidden></div>
 
       <div class="ir-controles">
         <label class="ir-busca">
