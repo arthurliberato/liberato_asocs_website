@@ -70,8 +70,8 @@ function material(t) {
 function porMetro(a, d, queEs) {
   return {
     veces: 1 / d.area_m2,
-    nota: 'La tienda cobra por ' + queEs + ' y su ficha declara ' + (a.medida || '').trim() +
-          ', o sea ' + d.area_m2 + ' m² por pieza; aquí va el precio del m²'
+    nota: 'La tienda cobra por ' + queEs + ' y, según ' + d.fuente + ', cada una cubre ' +
+          d.area_m2 + ' m²; aquí va el precio del m²'
   };
 }
 
@@ -99,7 +99,8 @@ function regla(a) {
     return null;
   }
 
-  const d = REV.dimensiones(a.medida);
+  /* Lo que cubre la pieza: primero lo que la tienda declara, y si no, sus medidas. */
+  const d = REV.area(a);
 
   /* ---- Pisos: van a la familia de piso vinílico, que ya existe ---- */
   if (a.cat1 === 'Pisos') {

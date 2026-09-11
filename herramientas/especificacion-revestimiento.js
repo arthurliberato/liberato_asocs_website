@@ -159,4 +159,32 @@ function dimensiones(texto) {
   };
 }
 
-module.exports = { FAMILIAS, item, dimensiones };
+/* Cuando la tienda dice directamente cuánto cubre la pieza, eso manda sobre
+   cualquier cuenta que hagamos con sus medidas. Y no es un detalle: en el
+   papel tapiz de Hogardeco las medidas vienen con una errata —«0.53 cm x 10
+   m», que serían cinco milímetros de ancho— mientras que al lado, en la
+   misma línea, la ficha dice «cubre aproximadamente 5 m²», que es correcto.
+   Multiplicar la errata habría dado un precio por metro cuadrado cien veces
+   mayor; leer lo que la tienda declara da el bueno. */
+function cobertura(texto) {
+  const t = String(texto || '');
+  const m = t.match(/cubre\s+(?:aproximadamente\s+|aprox\.?\s+|~\s*|≈\s*)?(\d+(?:[.,]\d+)?)\s*m\s*(?:²|2\b)/i)
+         || t.match(/^\s*(?:≈\s*)?(\d+(?:[.,]\d+)?)\s*m\s*(?:²|2\b)/i)
+         || t.match(/(\d+(?:[.,]\d+)?)\s*m\s*(?:²|2\b)\s*por\s*(?:rollo|plancha|pieza|caja)/i);
+  if (!m) return null;
+  const v = parseFloat(m[1].replace(',', '.'));
+  return (v > 0.01 && v < 60) ? v : null;
+}
+
+/* El área de la pieza, por el camino más fiable que haya: lo que la tienda
+   declara que cubre, y si no lo declara, sus medidas. */
+function area(articulo) {
+  const c = cobertura(articulo.cobertura) || cobertura(articulo.info);
+  if (c) return { area_m2: c, espesor_mm: (dimensiones(articulo.medida) || {}).espesor_mm || null,
+                  fuente: 'la cobertura que declara la tienda' };
+  const d = dimensiones(articulo.medida);
+  if (d) return { area_m2: d.area_m2, espesor_mm: d.espesor_mm, fuente: 'las medidas que publica la tienda' };
+  return null;
+}
+
+module.exports = { FAMILIAS, item, dimensiones, cobertura, area };

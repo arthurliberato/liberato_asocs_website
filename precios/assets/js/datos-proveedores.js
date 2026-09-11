@@ -88,6 +88,12 @@
     zonas:['nacional'], web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
+  p('Cortinaje', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-34'],
+    zonas:['gsd'], web:'cortinaje.shop', precios:true,
+    nota:'Papel tapiz de diseñador en Santo Domingo: Roberto Cavalli, Gianfranco Ferré, Dolce & Gabbana, Lamborghini y Elie Saab, con precio en DÓLARES de US$ 27 a US$ 250 el rollo. Es el extremo alto de la partida. Solo entran los 52 artículos cuyo rollo trae medida declarada: el papel tapiz se vende en dos estándares —5.3 y 10.6 m² por rollo— que se llevan el doble, y sin el dato no hay metro cuadrado. El peso sale de la tasa del catálogo. No declara ITBIS.'
+  });
   p('Hogardeco', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-08','MAT-34'],

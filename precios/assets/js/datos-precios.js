@@ -194,6 +194,7 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_CORTINAJE = 'Cortinaje';
   var PROV_HOGARDECO = 'Hogardeco';
   var PROV_MUNDOLED = 'Mundo LED';
   var PROV_LUMINATTI = 'Luminatti';
@@ -9045,16 +9046,16 @@
   c('MAT-08-271', PROV_HOGARDECO, 3201.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-madera-sintetica-color-caoba-oscuro-3/',
     peso: 5,
-    nota: 'Pisos Exterior WPC – Color CAOBA OSCURO 3 · artículo 3 · ref. Pisos Exterior WPC – Color CAOBA OSCURO 3. La tienda cobra por tabla y su ficha declara 14CM X 25MM X 2.90M, o sea 0.406 m² por pieza; aquí va el precio del m² (RD$ 1300 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Pisos Exterior WPC – Color CAOBA OSCURO 3 · artículo 3 · ref. Pisos Exterior WPC – Color CAOBA OSCURO 3. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.406 m²; aquí va el precio del m² (RD$ 1300 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-272', PROV_HOGARDECO, 1411.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-nogal-2073/',
-    nota: 'Pisos De Spc Para Interior – Color 2056 · artículo 2056. · ref. Pisos De Spc Para Interior – Color 2056. La tienda cobra por tabla y su ficha declara 18CM X 5.2MM X 1.22M, o sea 0.2196 m² por pieza; aquí va el precio del m² (RD$ 310 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Pisos De Spc Para Interior – Color 2056 · artículo 2056. · ref. Pisos De Spc Para Interior – Color 2056. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.2196 m²; aquí va el precio del m² (RD$ 310 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-273', PROV_HOGARDECO, 1411.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-2005/',
     peso: 10,
-    nota: 'Pisos De Spc Para Interior – Color 2005 · artículo 2005 · ref. Pisos De Spc Para Interior – Color 2005. La tienda cobra por tabla y su ficha declara 18CM X 6MM X 1.22M, o sea 0.2196 m² por pieza; aquí va el precio del m² (RD$ 310 por pieza). El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Pisos De Spc Para Interior – Color 2005 · artículo 2005 · ref. Pisos De Spc Para Interior – Color 2005. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.2196 m²; aquí va el precio del m² (RD$ 310 por pieza). El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-274', PROV_CERARTE, 1302.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-2',
@@ -34061,296 +34062,330 @@
   c('MAT-34-001', PROV_HOGARDECO, 1609.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/panel-acustico-pvc-color-roble-claro/',
     peso: 2,
-    nota: 'Panel Acústico Pvc – Color Roble Claro · artículo h050 A. La tienda cobra por tablilla y su ficha declara 60 cm x 2.9 m x 21 mm., o sea 1.74 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Panel Acústico Pvc – Color Roble Claro · artículo h050 A. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 1.74 m²; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-002', PROV_HOGARDECO, 1354.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-baby-pink/',
     peso: 14,
-    nota: 'Paneles De PVC Interior – Color Baby Pink · artículo m08 h083. La tienda cobra por tablilla y su ficha declara 14CM X 10MM X 2.9M, o sea 0.406 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De PVC Interior – Color Baby Pink · artículo m08 h083. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.406 m²; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-003', PROV_HOGARDECO, 998.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-camvas-beige-3/',
     peso: 8,
-    nota: 'Paneles De Pvc Interior – Color CAMVAS BEIGE · artículo M03 H073 · ref. CAMVAS BEIGE M02 H073. La tienda cobra por tablilla y su ficha declara 19CM X 12MM X 2.90M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De Pvc Interior – Color CAMVAS BEIGE · artículo M03 H073 · ref. CAMVAS BEIGE M02 H073. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.551 m²; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-004', PROV_HOGARDECO, 1252.27, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-arena-2/',
     peso: 15,
-    nota: 'Paneles De Pvc Interior – Color BLANCO ARENA · artículo m06 071 · ref. NOGAL M06 H071. La tienda cobra por tablilla y su ficha declara 19CM X13MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 15 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 15 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De Pvc Interior – Color BLANCO ARENA · artículo m06 071 · ref. NOGAL M06 H071. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.551 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 15 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 15 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-005', PROV_HOGARDECO, 1586.21, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-textil-m010-h073/',
     peso: 8,
-    nota: 'Paneles De PVC Interior – Color Blanco Textil · artículo m010 H073 · ref. m010 H073. La tienda cobra por tablilla y su ficha declara 15CM X 14MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De PVC Interior – Color Blanco Textil · artículo m010 H073 · ref. m010 H073. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.435 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-005', PROV_HOGARDECO, 1133, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-yaquitiba-m09-h070/',
     peso: 9,
-    nota: 'Paneles De PVC Interior – Color CAMVAS BEIGE · artículo m09 H073. La tienda cobra por tablilla y su ficha declara 21CM X 14MM X 2.9M, o sea 0.609 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De PVC Interior – Color CAMVAS BEIGE · artículo m09 H073. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.609 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-006', PROV_HOGARDECO, 1252.27, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-beige-oscuro-2/',
     peso: 5,
-    nota: 'Paneles De Pvc Interior – Color BEIGE OSCURO · artículo M05 H013 · ref. BEIGE OSCURO M05 H013. La tienda cobra por tablilla y su ficha declara 19CM X 15MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De Pvc Interior – Color BEIGE OSCURO · artículo M05 H013 · ref. BEIGE OSCURO M05 H013. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.551 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-006', PROV_HOGARDECO, 1586.21, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-arena-3/',
     peso: 13,
-    nota: 'Paneles De PVC Interior – Color Blanco Arena · artículo m07 h071. La tienda cobra por tablilla y su ficha declara 15CM X 15MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 13 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 13 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De PVC Interior – Color Blanco Arena · artículo m07 h071. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.435 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 13 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 13 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-006', PROV_HOGARDECO, 1264.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-nogal-m08-h032/',
     peso: 2,
-    nota: 'Paneles De PVC Interior – color NOGAL M08 H032 · artículo m08 h032 · ref. m08 h032. La tienda cobra por tablilla y su ficha declara 15CM X 15MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De PVC Interior – color NOGAL M08 H032 · artículo m08 h032 · ref. m08 h032. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.435 m²; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-007', PROV_HOGARDECO, 1487.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-beige-claro-2/',
     peso: 8,
-    nota: 'Paneles De Pvc Interior – Color BEIGE CLARO · artículo M01 H035 · ref. BEIGE CLARO M01 H035. La tienda cobra por tablilla y su ficha declara 16CM X 20MM X 2.90M ALTO, o sea 0.464 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De Pvc Interior – Color BEIGE CLARO · artículo M01 H035 · ref. BEIGE CLARO M01 H035. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.464 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-008', PROV_HOGARDECO, 1487.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-azul-lavanda/',
     peso: 12,
-    nota: 'Paneles De Pvc Interior – Color AZUL LAVANDA · artículo M02 H075 · ref. AZUL LAVANDA M02 H075. La tienda cobra por tablilla y su ficha declara 16CM X 24MM X 2.90M ALTO, o sea 0.464 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De Pvc Interior – Color AZUL LAVANDA · artículo M02 H075 · ref. AZUL LAVANDA M02 H075. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.464 m²; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-009', PROV_HOGARDECO, 3266.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-exterior-color-miel-oscuro/',
-    nota: 'Paneles De WPC Exterior – Color MIEL OSCURO · artículo Color MIEL OSCURO · ref. MIEL OSCURO M06 H071. La tienda cobra por tablilla y su ficha declara 19CM X13MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 1800 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Paneles De WPC Exterior – Color MIEL OSCURO · artículo Color MIEL OSCURO · ref. MIEL OSCURO M06 H071. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.551 m²; aquí va el precio del m² (RD$ 1800 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-34-010', PROV_HOGARDECO, 2955.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-exterior-color-gris-beige-1/',
     peso: 4,
-    nota: 'Paneles De WPC Exterior – COLOR GRIS BEIGE 1 · artículo PANELES DE EXTERIOR – COLOR GRIS BEIGE 1 · ref. EXTERIOR. La tienda cobra por tablilla y su ficha declara 21CM X 26MM X 2.9M, o sea 0.609 m² por pieza; aquí va el precio del m² (RD$ 1800 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Paneles De WPC Exterior – COLOR GRIS BEIGE 1 · artículo PANELES DE EXTERIOR – COLOR GRIS BEIGE 1 · ref. EXTERIOR. La tienda cobra por tablilla y, según las medidas que publica la tienda, cada una cubre 0.609 m²; aquí va el precio del m² (RD$ 1800 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-011', PROV_HOGARDECO, 791.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-bambu-8mm-beige-arena-modelo-h021/',
     peso: 7,
-    nota: 'Plancha Bambu 8MM Beige Arena – Modelo H021 · artículo h021. · ref. Plancha Bambu 8MM Beige Arena – Modelo H021. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 8MM X 2.9M ALTO, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Plancha Bambu 8MM Beige Arena – Modelo H021 · artículo h021. · ref. Plancha Bambu 8MM Beige Arena – Modelo H021. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.538 m²; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-012', PROV_HOGARDECO, 650.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-marmol-modelo-boticcino-marron-s013/',
     peso: 6,
-    nota: 'Planchas Mármol Modelo – Marmol Nube Imperial · artículo s013. La tienda cobra por plancha y su ficha declara 📐 1.22 m de ancho x 3 mm de espesor x 2.90 m de alto, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2300 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Planchas Mármol Modelo – Marmol Nube Imperial · artículo s013. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.538 m²; aquí va el precio del m² (RD$ 2300 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-012', PROV_HOGARDECO, 772.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-marmol-pvc-2-44m-color-caliza-marron-2-44m/',
-    nota: 'Planchas Mármol Pvc 2.44M – Color  CALIZA MARRÓN  2.44M · artículo L010 · ref. CALIZA MARRÓN L010. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 3MM X 2.44M ALTO, o sea 2.9768 m² por pieza; aquí va el precio del m² (RD$ 2300 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Planchas Mármol Pvc 2.44M – Color  CALIZA MARRÓN  2.44M · artículo L010 · ref. CALIZA MARRÓN L010. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 2.9768 m²; aquí va el precio del m² (RD$ 2300 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-34-013', PROV_HOGARDECO, 1463.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-3mm-color-calacatta-paonazo/',
-    nota: 'PLANCHAS ONIX 3MM color CALACATTA PAONAZO · artículo ox11. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 5000 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'PLANCHAS ONIX 3MM color CALACATTA PAONAZO · artículo ox11. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.416 m²; aquí va el precio del m² (RD$ 5000 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-34-013', PROV_HOGARDECO, 3512.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-brown-smoky/',
     peso: 3,
-    nota: 'PLANCHAS ONIX 6MM color BROWN SMOKY · artículo ox6. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 12000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PLANCHAS ONIX 6MM color BROWN SMOKY · artículo ox6. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.416 m²; aquí va el precio del m² (RD$ 12000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-013', PROV_HOGARDECO, 4391.1, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-cuarcita-cristallo-brown/',
     peso: 3,
-    nota: 'PLANCHAS ONIX 6MM Color CUARCITA CRISTALLO BROWN · artículo ox9. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 15000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PLANCHAS ONIX 6MM Color CUARCITA CRISTALLO BROWN · artículo ox9. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.416 m²; aquí va el precio del m² (RD$ 15000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-013', PROV_HOGARDECO, 2927.4, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-helix-silestone-ox3/',
     peso: 2,
-    nota: 'PLANCHAS ONIX 6MM color HELIX SILESTONE OX3 · artículo ox3. La tienda cobra por plancha y su ficha declara 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 10000 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PLANCHAS ONIX 6MM color HELIX SILESTONE OX3 · artículo ox3. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.416 m²; aquí va el precio del m² (RD$ 10000 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-34-014', PROV_HOGARDECO, 791.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-decorativa-pu-m08-3-pu-roca-lineal/',
-    nota: 'Plancha Decorativa PU M08-3 | PU ROCA LINEAL · artículo m08-3 · ref. Plancha ROCA PU POLIURETANO – M08-3. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 8MM X 2.9M ALTO, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Plancha Decorativa PU M08-3 | PU ROCA LINEAL · artículo m08-3 · ref. Plancha ROCA PU POLIURETANO – M08-3. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 3.538 m²; aquí va el precio del m² (RD$ 2800 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-34-015', PROV_HOGARDECO, 1379.31, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-lisa-color-rosa-viejo/',
     peso: 23,
-    nota: 'Plancha Lisa – Color Rosa Viejo · artículo h098. · ref. Rosa Viejo H098. La tienda cobra por plancha y su ficha declara 60CM X 9MM X 2.90M, o sea 1.74 m² por pieza; aquí va el precio del m² (RD$ 2400 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Plancha Lisa – Color Rosa Viejo · artículo h098. · ref. Rosa Viejo H098. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 1.74 m²; aquí va el precio del m² (RD$ 2400 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 2430.56, {
+  c('MAT-34-016', PROV_HOGARDECO, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-geometrico-madera-modelo-tt1008/',
+    nota: 'Papel Tapiz Geometrico Madera Modelo – TT1008 · artículo TT1008. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1750 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-geometrico-modelo-tt1015/',
+    peso: 22,
+    nota: 'Papel Tapiz Geometrico Modelo – TT1015 · artículo TT1015. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 22 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 22 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 330, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-st-5544/',
+    peso: 33,
+    nota: 'Papel Tapiz Modelo -ST-5544 · artículo ST-5544. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 33 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 33 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 310, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-df-400404-1/',
+    peso: 4,
+    nota: 'Papel Tapiz Modelo – DF-400404-1 · artículo DF-400404-1. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1550 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 370, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261801/',
+    peso: 8,
+    nota: 'Papel Tapiz Modelo – LP-261801 · artículo LP-261801. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1850 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 390, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261901/',
+    nota: 'Papel Tapiz Modelo – LP-261901 · artículo LP-261901. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1950 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_CORTINAJE, 23.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cortinaje.shop/products/papel-tapiz-collage-oriental-azulado-voyage-db73735',
+    moneda: 'USD',
+    peso: 52,
+    nota: 'Papel Tapiz Collage Oriental Azulado – Mural Vinílico Lavable | VOYAGE (DB73735) · artículo DB73735 · ref. VOYAGE (DB73735) · marca Debora Benvenuti. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada uno cubre 10.6 m²; aquí va el precio del m² (RD$ 250 por pieza). El comercio lista 52 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 52 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 2430.56, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ando-cement-concrete-fl8/',
     peso: 3,
-    nota: 'Flexistone Interior –  Color ANDO CEMENT CONCRETE  FL8 · artículo 8 · ref. Flexistone Interior – Color ANDO CEMENT CONCRETE FL8. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color ANDO CEMENT CONCRETE  FL8 · artículo 8 · ref. Flexistone Interior – Color ANDO CEMENT CONCRETE FL8. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 1736.11, {
+  c('MAT-34-019', PROV_HOGARDECO, 1736.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-cut-stone-striola-grey-fl13-1/',
     peso: 5,
-    nota: 'Flexistone Interior –  Color CUT STONE STRIOLA GREY FL13-1 · artículo fl13-1 · ref. Flexistone Interior – Color – CUT STONE STRIOLA GREY FL13-1. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1250 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color CUT STONE STRIOLA GREY FL13-1 · artículo fl13-1 · ref. Flexistone Interior – Color – CUT STONE STRIOLA GREY FL13-1. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1250 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 1458.33, {
+  c('MAT-34-019', PROV_HOGARDECO, 1458.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-danxia-rammed-earth-beige-fl20/',
     peso: 2,
-    nota: 'Flexistone Interior –  Color DANXIA RAMMED EARTH BEIGE FL20 · artículo fl20 · ref. Flexistone Interior – Color – DANXIA RAMMED EARTH BEIGE FL20. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color DANXIA RAMMED EARTH BEIGE FL20 · artículo fl20 · ref. Flexistone Interior – Color – DANXIA RAMMED EARTH BEIGE FL20. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1050 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 2291.67, {
+  c('MAT-34-019', PROV_HOGARDECO, 2291.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-lime-stone-beige-fl6-2/',
     peso: 4,
-    nota: 'Flexistone Interior –  Color LIME STONE BEIGE  FL6 · artículo 6-1 · ref. Flexistone Interior – Color LIME STONE BEIGE FL6. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color LIME STONE BEIGE  FL6 · artículo 6-1 · ref. Flexistone Interior – Color LIME STONE BEIGE FL6. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 2708.33, {
+  c('MAT-34-019', PROV_HOGARDECO, 2708.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-muretto-stone-cascade-beige/',
     peso: 3,
-    nota: 'Flexistone Interior –  Color MURETTO STONE CASCADE BEIGE · artículo fl14 · ref. Flexistone Interior – Color – MURETTO STONE CASCADE BEIGE. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1950 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color MURETTO STONE CASCADE BEIGE · artículo fl14 · ref. Flexistone Interior – Color – MURETTO STONE CASCADE BEIGE. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1950 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 2013.89, {
+  c('MAT-34-019', PROV_HOGARDECO, 2013.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ripple-board-beige-fl15/',
     peso: 2,
-    nota: 'Flexistone Interior –  Color RIPPLE BOARD BEIGE FL15 · artículo fl15 · ref. Flexistone Interior – Color – RIPPLE BOARD BEIGE FL15. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1450 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color RIPPLE BOARD BEIGE FL15 · artículo fl15 · ref. Flexistone Interior – Color – RIPPLE BOARD BEIGE FL15. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1450 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 1319.44, {
+  c('MAT-34-019', PROV_HOGARDECO, 1319.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-3d-travertine-oceanic-beige/',
-    nota: 'Flexistone Interior –  Color Sand Brick · artículo fl22 · ref. Flexistone Interior – Color – Color Sand Brick FL22. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 950 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color Sand Brick · artículo fl22 · ref. Flexistone Interior – Color – Color Sand Brick FL22. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 950 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 937.5, {
+  c('MAT-34-019', PROV_HOGARDECO, 937.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-travertine-concrete-fl11-2/',
-    nota: 'Flexistone Interior –  Color TRAVERTINE CONCRETE  FL11-2 · artículo fl11-2 · ref. Flexistone Interior – Color – TRAVERTINE CONCRETE FL11-2. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 675 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  Color TRAVERTINE CONCRETE  FL11-2 · artículo fl11-2 · ref. Flexistone Interior – Color – TRAVERTINE CONCRETE FL11-2. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 675 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 1944.44, {
+  c('MAT-34-019', PROV_HOGARDECO, 1944.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-dolomitic-travertine-dark-grey-fl5/',
-    nota: 'Flexistone Interior –  DOLOMITIC TRAVERTINE  DARK GREY FL5 · artículo fl5 · ref. Flexistone Interior – Color DOLOMITIC TRAVERTINE DARK GREY FL5. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Flexistone Interior –  DOLOMITIC TRAVERTINE  DARK GREY FL5 · artículo fl5 · ref. Flexistone Interior – Color DOLOMITIC TRAVERTINE DARK GREY FL5. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 10216.35, {
+  c('MAT-34-020', PROV_HOGARDECO, 10216.35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m01/',
-    nota: 'Madera Maciza M01 · artículo modelo m01 · ref. M01. La tienda cobra por pieza y su ficha declara 26CM X 32CM, o sea 0.0832 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M01 · artículo modelo m01 · ref. M01. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0832 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 9444.44, {
+  c('MAT-34-020', PROV_HOGARDECO, 9444.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m010/',
     peso: 11,
-    nota: 'Madera Maciza M010 · artículo modelo m010 · ref. M010. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 11 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 11 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M010 · artículo modelo m010 · ref. M010. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 11 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 11 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 8750, {
+  c('MAT-34-020', PROV_HOGARDECO, 8750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m012/',
-    nota: 'Madera Maciza M012 · artículo modelo m012 · ref. M012. La tienda cobra por pieza y su ficha declara 40CM X 40CM, o sea 0.16 m² por pieza; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M012 · artículo modelo m012 · ref. M012. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.16 m²; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 8333.33, {
+  c('MAT-34-020', PROV_HOGARDECO, 8333.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m016/',
-    nota: 'Madera Maciza M016 · artículo modelo m016 · ref. M016. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 750 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M016 · artículo modelo m016 · ref. M016. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 750 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 10861.11, {
+  c('MAT-34-020', PROV_HOGARDECO, 10861.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m05/',
-    nota: 'Madera Maciza M05 · artículo modelo m05 · ref. M05. La tienda cobra por pieza y su ficha declara 30CM X 60CM, o sea 0.18 m² por pieza; aquí va el precio del m² (RD$ 1955 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M05 · artículo modelo m05 · ref. M05. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.18 m²; aquí va el precio del m² (RD$ 1955 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 8095.24, {
+  c('MAT-34-020', PROV_HOGARDECO, 8095.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m07/',
     peso: 2,
-    nota: 'Madera Maciza M07 · artículo modelo m07 · ref. M07. La tienda cobra por pieza y su ficha declara 35CM X 30CM, o sea 0.105 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M07 · artículo modelo m07 · ref. M07. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.105 m²; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 11666.67, {
+  c('MAT-34-020', PROV_HOGARDECO, 11666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m09/',
-    nota: 'Madera Maciza M09 · artículo modelo m09 · ref. M09. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Madera Maciza M09 · artículo modelo m09 · ref. M09. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 4714.29, {
+  c('MAT-34-020', PROV_HOGARDECO, 4714.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m020/',
-    nota: 'Mosaicos Madera Maciza Modelo M018 · artículo m018. La tienda cobra por pieza y su ficha declara M019 :30CM X 35CM, o sea 0.105 m² por pieza; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaicos Madera Maciza Modelo M018 · artículo m018. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.105 m²; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 5500, {
+  c('MAT-34-020', PROV_HOGARDECO, 5500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m019/',
-    nota: 'Mosaicos Madera Maciza Modelo M019 · artículo m019. La tienda cobra por pieza y su ficha declara M019 :30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaicos Madera Maciza Modelo M019 · artículo m019. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 10337.55, {
+  c('MAT-34-021', PROV_HOGARDECO, 10337.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-modelo-m06-2/',
     peso: 2,
-    nota: 'Mosaico de Mármol  – Modelo M06-2 · artículo 2553. La tienda cobra por pieza y su ficha declara 29.8 cm x 31.8 cm, o sea 0.0948 m² por pieza; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Mármol  – Modelo M06-2 · artículo 2553. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0948 m²; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 9444.44, {
+  c('MAT-34-021', PROV_HOGARDECO, 9444.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-blanco-modelo-m04/',
-    nota: 'Mosaico de Mármol Blanco – Modelo M04 · artículo 2547. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Mármol Blanco – Modelo M04 · artículo 2547. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 12887.44, {
+  c('MAT-34-021', PROV_HOGARDECO, 12887.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-leaf-blanca-m010-2-30-x-34-5-cm/',
     peso: 2,
-    nota: 'Mosaico de Mármol Leaf Blanca M010-2 – 30 x 34.5 cm · artículo m010-1-1. La tienda cobra por pieza y su ficha declara 24.5 cm x 25 cm, o sea 0.0613 m² por pieza; aquí va el precio del m² (RD$ 790 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Mármol Leaf Blanca M010-2 – 30 x 34.5 cm · artículo m010-1-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0613 m²; aquí va el precio del m² (RD$ 790 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 4166.67, {
+  c('MAT-34-021', PROV_HOGARDECO, 4166.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-m08-1-28-5-x-32-cm/',
     peso: 2,
-    nota: 'Mosaico de Mármol M08-1 – 28.5 x 32 cm · artículo m08-1……. La tienda cobra por pieza y su ficha declara 28.5CM X 32CM, o sea 0.0912 m² por pieza; aquí va el precio del m² (RD$ 380 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Mármol M08-1 – 28.5 x 32 cm · artículo m08-1……. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0912 m²; aquí va el precio del m² (RD$ 380 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 11299.44, {
+  c('MAT-34-021', PROV_HOGARDECO, 11299.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-negro-y-blanco-modelo-m05/',
-    nota: 'Mosaico de Mármol Verde y Blanco – Modelo M05 · artículo 2549. La tienda cobra por pieza y su ficha declara 29.5 cm x 30 cm, o sea 0.0885 m² por pieza; aquí va el precio del m² (RD$ 1000 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Mármol Verde y Blanco – Modelo M05 · artículo 2549. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0885 m²; aquí va el precio del m² (RD$ 1000 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 14518.76, {
+  c('MAT-34-021', PROV_HOGARDECO, 14518.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-nube-marmol-m011-1-24-5-x-25-cm/',
     peso: 2,
-    nota: 'Mosaico de Nube Mármol M011-1 – 24.5 x 25 cm · artículo m011-1. La tienda cobra por pieza y su ficha declara 24.5 cm x 25 cm, o sea 0.0613 m² por pieza; aquí va el precio del m² (RD$ 890 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Nube Mármol M011-1 – 24.5 x 25 cm · artículo m011-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0613 m²; aquí va el precio del m² (RD$ 890 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 9615.38, {
+  c('MAT-34-021', PROV_HOGARDECO, 9615.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m09/',
-    nota: 'Mosaico Mármol Blanco Estilo Escama  – Modelo M09 · artículo 2562. La tienda cobra por pieza y su ficha declara 29CM X 30.5CM, o sea 0.0884 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico Mármol Blanco Estilo Escama  – Modelo M09 · artículo 2562. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0884 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 13709.68, {
+  c('MAT-34-021', PROV_HOGARDECO, 13709.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m08/',
-    nota: 'Mosaico Mármol Blanco Estilo Escama – Modelo M08 · artículo 2560. La tienda cobra por pieza y su ficha declara 24.8 cm x 25 cm, o sea 0.062 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico Mármol Blanco Estilo Escama – Modelo M08 · artículo 2560. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.062 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_HOGARDECO, 9015.64, {
+  c('MAT-34-021', PROV_HOGARDECO, 9015.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-marmol-modelo-m07-1/',
     peso: 2,
-    nota: 'Mosaicos De Mármol Modelo – M07-1 · artículo 2555. La tienda cobra por pieza y su ficha declara 31.5 cm x 34.5 cm💠 Tipo de mármol: Gris con tonos beige, o sea 0.1087 m² por pieza; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaicos De Mármol Modelo – M07-1 · artículo 2555. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.1087 m²; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 6111.11, {
+  c('MAT-34-022', PROV_HOGARDECO, 6111.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-crema-natural-m014-30-x-30-cm/',
     peso: 2,
-    nota: 'Mosaico de Piedra Crema Natural M014 – 30 x 30 cm · artículo m014. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Piedra Crema Natural M014 – 30 x 30 cm · artículo m014. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 11666.67, {
+  c('MAT-34-022', PROV_HOGARDECO, 11666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m01-elegancia-en-relieve/',
-    nota: 'Mosaico de Piedra Natural M01 – Elegancia en Relieve · artículo 2541. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Piedra Natural M01 – Elegancia en Relieve · artículo 2541. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 13888.89, {
+  c('MAT-34-022', PROV_HOGARDECO, 13888.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m03/',
-    nota: 'Mosaico de Piedra Natural M03 · artículo 2545. La tienda cobra por pieza y su ficha declara 27.5CM X 27.5CM, o sea 0.0756 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaico de Piedra Natural M03 · artículo 2545. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0756 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 9311.74, {
+  c('MAT-34-022', PROV_HOGARDECO, 9311.74, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-m09-1/',
-    nota: 'Mosaicos De Piedra M09-1 · artículo m09-1. La tienda cobra por pieza y su ficha declara 26 cm x 28.5 cm, o sea 0.0741 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaicos De Piedra M09-1 · artículo m09-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0741 m²; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 7666.67, {
+  c('MAT-34-022', PROV_HOGARDECO, 7666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-natural-m013/',
-    nota: 'Mosaicos de Piedra Natural M013 · artículo m013. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'Mosaicos de Piedra Natural M013 · artículo m013. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 3277.78, {
+  c('MAT-34-023', PROV_HOGARDECO, 3277.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-m02-019/',
     peso: 17,
-    nota: 'PIEZAS 3D DE CUERO – M02 019 · artículo M02 019 · ref. Piezas 3D De Cuero M02- 19. La tienda cobra por pieza y su ficha declara 30CM X 2CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PIEZAS 3D DE CUERO – M02 019 · artículo M02 019 · ref. Piezas 3D De Cuero M02- 19. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 6357.76, {
+  c('MAT-34-023', PROV_HOGARDECO, 6357.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m01-001/',
     peso: 17,
-    nota: 'Piezas 3D De Cuero – Modelo M01 001 · artículo m01 · ref. M01 001. La tienda cobra por pieza y su ficha declara 23.2CM X 2CM X 20CM, o sea 0.0464 m² por pieza; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Piezas 3D De Cuero – Modelo M01 001 · artículo m01 · ref. M01 001. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0464 m²; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 4669.54, {
+  c('MAT-34-023', PROV_HOGARDECO, 4669.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m04-038/',
     peso: 16,
-    nota: 'Piezas 3D De Cuero – Modelo M04 038 · artículo M04 038. La tienda cobra por pieza y su ficha declara M04 : 34.8CM X 20CM X 20MM, o sea 0.0696 m² por pieza; aquí va el precio del m² (RD$ 325 por pieza). El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Piezas 3D De Cuero – Modelo M04 038 · artículo M04 038. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0696 m²; aquí va el precio del m² (RD$ 325 por pieza). El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 1247.69, {
+  c('MAT-34-024', PROV_HOGARDECO, 1247.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mallas-de-rattan-decorativas-modelo-r1-coffee/',
     peso: 2,
-    nota: 'Mallas de Rattan Decorativas Modelo – R1 Coffee · artículo R1 Coffee. La tienda cobra por rollo y su ficha declara 0.41M ANCHO X 30.3M LARGO, o sea 12.423 m² por pieza; aquí va el precio del m² (RD$ 15500 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mallas de Rattan Decorativas Modelo – R1 Coffee · artículo R1 Coffee. La tienda cobra por rollo y, según las medidas que publica la tienda, cada una cubre 12.423 m²; aquí va el precio del m² (RD$ 15500 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 350, {
+  c('MAT-34-025', PROV_HOGARDECO, 350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-irregular-round-circle-c9-19/',
     peso: 36,
     nota: 'Tiradores Modelo -IRREGULAR ROUND CIRCLE C9-19 · artículo c9 -19. El comercio lista 36 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 36 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 500, {
+  c('MAT-34-025', PROV_HOGARDECO, 500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-54/',
     peso: 12,
     nota: 'Tiradores Modelo – C-54 · artículo C-54. El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 450, {
+  c('MAT-34-025', PROV_HOGARDECO, 450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-55/',
     peso: 9,
     nota: 'Tiradores Modelo – C-55 · artículo C-55. El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 650, {
+  c('MAT-34-025', PROV_HOGARDECO, 650, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c46/',
     peso: 2,
     nota: 'Tiradores Modelo – C46 · artículo C-46. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 900, {
+  c('MAT-34-025', PROV_HOGARDECO, 900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c50/',
     nota: 'Tiradores Modelo – C50 · artículo C-50. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 700, {
+  c('MAT-34-025', PROV_HOGARDECO, 700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c52/',
     peso: 2,
     nota: 'Tiradores Modelo – C52 · artículo C-52. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS

@@ -974,6 +974,7 @@ const FERREMIX = require('./reglas-ferremix.js');
 const BELLON = require('./reglas-bellon.js');
 const MUNDOLED = require('./reglas-mundoled.js');
 const HOGARDECO = require('./reglas-hogardeco.js');
+const CORTINAJE = require('./reglas-cortinaje.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
@@ -1174,6 +1175,19 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/cortinaje-2026-09-11.json'),
+    etiqueta: 'Cortinaje · papel tapiz de diseñador',
+    proveedor: 'Cortinaje',
+    constante: 'PROV_CORTINAJE',
+    fecha: '2026-09-11',
+    moneda: 'USD',
+    fuenteDe: a => 'Precio publicado en ' + (a.url || 'cortinaje.shop'),
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => CORTINAJE.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = CORTINAJE.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/hogardeco-2026-09-10.json'),
