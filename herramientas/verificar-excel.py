@@ -47,6 +47,8 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 # cumplirse, las plantillas traen el dato equivocado sin dar error.
 # Los encabezados van en la fila 2: la 1 es la banda de marca.
 FILA_TITULOS = 2
+# La primera fila de datos: dos de encabezado y a la tercera empiezan.
+FILA_1 = 3
 FUENTE = "Calibri"
 HOJAS = ["Catálogo", "Comparativo", "Artículos"]
 # La columna del precio en la hoja de artículos. Se corrió al entrar
@@ -246,6 +248,70 @@ def main():
             falla("Comparativo fila %d: sin ningún precio, no debería estar en esta hoja" % f)
 
     print("Comparativo: %d filas revisadas" % revisadas)
+
+    # ---- los enlaces entre hojas apuntan a donde dicen -----------------
+    #
+    # El ítem del catálogo lleva al bloque de sus artículos, y el artículo
+    # vuelve a la fila de su ítem. Un enlace que apunta a un rango
+    # equivocado es peor que no tener enlace: enseña los artículos de otra
+    # partida y quien los mira no tiene cómo saberlo.
+    #
+    # Se comprueban tres cosas: que el destino sea interno (con «location»
+    # y sin destino externo), que el rango caiga dentro de la hoja, y que
+    # todas sus filas sean del mismo ítem que la fila de origen. Y que los
+    # rangos no se pisen entre sí, que es como se vería un bloque mal
+    # cortado.
+    art = wb["Artículos"]
+    col_item_cat, col_item_art = 4, 2
+    cubiertas, enlazadas, solapes = {}, 0, 0
+    for f in range(FILA_1, cat.max_row + 1):
+        c = cat.cell(row=f, column=col_item_cat)
+        if not c.hyperlink:
+            continue
+        enlazadas += 1
+        if c.hyperlink.target:
+            falla("Catálogo fila %d: el enlace al bloque de artículos sale del libro" % f)
+            continue
+        destino = (c.hyperlink.location or "")
+        m = re.match(r"^'Artículos'!A(\d+):[A-Z]+(\d+)$", destino)
+        if not m:
+            falla("Catálogo fila %d: el enlace dice «%s» y no es un rango de Artículos"
+                  % (f, destino))
+            continue
+        ini, fin = int(m.group(1)), int(m.group(2))
+        if ini < FILA_1 or fin > art.max_row or fin < ini:
+            falla("Catálogo fila %d: el enlace señala %d:%d y la hoja llega a %d"
+                  % (f, ini, fin, art.max_row))
+            continue
+        nombre = c.value
+        for k in range(ini, fin + 1):
+            if art.cell(row=k, column=col_item_art).value != nombre:
+                falla("Catálogo fila %d («%s»): el rango %d:%d incluye la fila %d, "
+                      "que es de otro ítem" % (f, nombre, ini, fin, k))
+                break
+            if k in cubiertas:
+                solapes += 1
+            cubiertas[k] = f
+    if solapes:
+        falla("hay %d filas de Artículos señaladas por dos ítems del catálogo" % solapes)
+
+    vuelta = sum(1 for f in range(FILA_1, art.max_row + 1)
+                 if art.cell(row=f, column=col_item_art).hyperlink)
+    for f in range(FILA_1, art.max_row + 1):
+        h = art.cell(row=f, column=col_item_art).hyperlink
+        if not h:
+            continue
+        m = re.match(r"^'Catálogo'!A(\d+)$", h.location or "")
+        if not m or not (FILA_1 <= int(m.group(1)) <= cat.max_row):
+            falla("Artículos fila %d: el enlace de vuelta dice «%s»" % (f, h.location))
+            break
+        if cat.cell(row=int(m.group(1)), column=col_item_cat).value != \
+                art.cell(row=f, column=col_item_art).value:
+            falla("Artículos fila %d: el enlace de vuelta lleva a otro ítem" % f)
+            break
+
+    print("Enlaces: %d ítems llevan a sus artículos (%d filas) · %d artículos vuelven"
+          % (enlazadas, len(cubiertas), vuelta))
 
     # ---- Informe ------------------------------------------------------
     print("")
