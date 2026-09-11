@@ -973,6 +973,7 @@ const TONOS = require('./reglas-tonos.js');
 const FERREMIX = require('./reglas-ferremix.js');
 const BELLON = require('./reglas-bellon.js');
 const MUNDOLED = require('./reglas-mundoled.js');
+const HOGARDECO = require('./reglas-hogardeco.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
@@ -1173,6 +1174,17 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/hogardeco-2026-09-10.json'),
+    etiqueta: 'Hogardeco · revestimientos decorativos',
+    proveedor: 'Hogardeco',
+    constante: 'PROV_HOGARDECO',
+    fecha: '2026-09-10',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => HOGARDECO.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = HOGARDECO.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/mundoled-2026-09-10.json'),

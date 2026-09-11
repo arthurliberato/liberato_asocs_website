@@ -88,6 +88,12 @@
     zonas:['nacional'], web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
+  p('Hogardeco', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-08','MAT-34'],
+    zonas:[], web:'hogardeco.com.do', precios:true,
+    nota:'Tienda de revestimientos decorativos: paneles de pared de PVC y WPC, planchas de bambú, mármol y ónix, papel tapiz, piedra flexible, mosaicos y piezas 3D. Es la fuente que llena los revestimientos decorativos y el piso vinílico, dos rubros que el catálogo tenía vacíos. Lo que la hace utilizable es que publica la medida de cada pieza, y con ella el precio se lleva al metro cuadrado. No declara si el precio incluye ITBIS. Ubicación sin verificar.'
+  });
   p('Mundo LED', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-10','MAT-33'],

@@ -194,6 +194,7 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_HOGARDECO = 'Hogardeco';
   var PROV_MUNDOLED = 'Mundo LED';
   var PROV_LUMINATTI = 'Luminatti';
 
@@ -9041,150 +9042,164 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cunas-nivelacion-para-instalacion-de-ceramica-01098902',
     nota: 'Cuñas Nivelación Para Instalación De Cerámica · artículo 01-09-8902 · ref. 02207 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-271', PROV_CERARTE, 1302.6, {
+  c('MAT-08-271', PROV_HOGARDECO, 3201.97, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-madera-sintetica-color-caoba-oscuro-3/',
+    peso: 5,
+    nota: 'Pisos Exterior WPC – Color CAOBA OSCURO 3 · artículo 3 · ref. Pisos Exterior WPC – Color CAOBA OSCURO 3. La tienda cobra por tabla y su ficha declara 14CM X 25MM X 2.90M, o sea 0.406 m² por pieza; aquí va el precio del m² (RD$ 1300 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-272', PROV_HOGARDECO, 1411.66, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-nogal-2073/',
+    nota: 'Pisos De Spc Para Interior – Color 2056 · artículo 2056. · ref. Pisos De Spc Para Interior – Color 2056. La tienda cobra por tabla y su ficha declara 18CM X 5.2MM X 1.22M, o sea 0.2196 m² por pieza; aquí va el precio del m² (RD$ 310 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-273', PROV_HOGARDECO, 1411.66, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-2005/',
+    peso: 10,
+    nota: 'Pisos De Spc Para Interior – Color 2005 · artículo 2005 · ref. Pisos De Spc Para Interior – Color 2005. La tienda cobra por tabla y su ficha declara 18CM X 6MM X 1.22M, o sea 0.2196 m² por pieza; aquí va el precio del m² (RD$ 310 por pieza). El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-274', PROV_CERARTE, 1302.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-2',
     itbis: false,
     peso: 3,
     nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34830 · ref. 60X260 · marca PORCELAMIKA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-271', PROV_CERARTE, 857.68, {
+  c('MAT-08-274', PROV_CERARTE, 857.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-4',
     itbis: false,
     nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34879 · ref. 60X260 · marca PORCELAMIKA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-272', PROV_OCHOA, 874.38, {
+  c('MAT-08-275', PROV_OCHOA, 874.38, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-cuad-40cm-x-40cm-x-7-3-6-25mt2-01092958',
     nota: 'Adoquin Cuad. 40Cm X 40Cm X 7.3 6.25Mt2 · artículo 01-09-2958 · ref. TIPOBALDOSA · marca OCHOA. La tienda cotiza por pieza; van 6.25 adoquines por m² según su propio nombre de artículo (RD$ 139.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-273', PROV_OCHOA, 812.28, {
+  c('MAT-08-276', PROV_OCHOA, 812.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-flecha-42-mt2-01096817',
     nota: 'Adoquin Tipo Flecha 42 / Mt2 · artículo 01-09-6817 · ref. TIPOFLECHA · marca OCHOA. La tienda cotiza por pieza; van 42 adoquines por m² según su propio nombre de artículo (RD$ 19.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-274', PROV_OCHOA, 850, {
+  c('MAT-08-277', PROV_OCHOA, 850, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-2x4x8-natural-50-mt2-01092082',
     nota: 'Adoquin 2X4X8 Natural 50 / Mt2 · artículo 01-09-2082 · ref. TIPOLADRILLO · marca OCHOA. La tienda cotiza por pieza; van 50 adoquines por m² según su propio nombre de artículo (RD$ 17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-275', PROV_OCHOA, 872.87, {
+  c('MAT-08-278', PROV_OCHOA, 872.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-raqueta-38-25-mt2-01093486',
     nota: 'Adoquin Tipo Raqueta 38.25 / Mt2 · artículo 01-09-3486 · ref. TIPORAQUETA · marca OCHOA. La tienda cotiza por pieza; van 38.25 adoquines por m² según su propio nombre de artículo (RD$ 22.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-276', PROV_OCHOA, 55.94, {
+  c('MAT-08-279', PROV_OCHOA, 55.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590337',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0337 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-277', PROV_OCHOA, 153.81, {
+  c('MAT-08-280', PROV_OCHOA, 153.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590330',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0330 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-278', PROV_OCHOA, 82.72, {
+  c('MAT-08-281', PROV_OCHOA, 82.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590335',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0335 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-279', PROV_OCHOA, 162.49, {
+  c('MAT-08-282', PROV_OCHOA, 162.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590327',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0327 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-280', PROV_OCHOA, 90.79, {
+  c('MAT-08-283', PROV_OCHOA, 90.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590342',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0342 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-281', PROV_OCHOA, 129.29, {
+  c('MAT-08-284', PROV_OCHOA, 129.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590328',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0328 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-282', PROV_OCHOA, 66.5, {
+  c('MAT-08-285', PROV_OCHOA, 66.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590341',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0341 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-283', PROV_OCHOA, 106.37, {
+  c('MAT-08-286', PROV_OCHOA, 106.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590332',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0332 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-284', PROV_OCHOA, 78.84, {
+  c('MAT-08-287', PROV_OCHOA, 78.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590338',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0338 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-285', PROV_OCHOA, 180.39, {
+  c('MAT-08-288', PROV_OCHOA, 180.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590324',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0324 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-286', PROV_OCHOA, 460.92, {
+  c('MAT-08-289', PROV_OCHOA, 460.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590331',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0331 · ref. 3LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-287', PROV_OCHOA, 280.64, {
+  c('MAT-08-290', PROV_OCHOA, 280.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590336',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0336 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-288', PROV_OCHOA, 367.96, {
+  c('MAT-08-291', PROV_OCHOA, 367.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590334',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0334 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-289', PROV_OCHOA, 813.47, {
+  c('MAT-08-292', PROV_OCHOA, 813.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590326',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0326 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-290', PROV_OCHOA, 406.73, {
+  c('MAT-08-293', PROV_OCHOA, 406.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590343',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0343 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-291', PROV_OCHOA, 647.51, {
+  c('MAT-08-294', PROV_OCHOA, 647.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590329',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0329 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-292', PROV_OCHOA, 333.56, {
+  c('MAT-08-295', PROV_OCHOA, 333.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590340',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0340 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-293', PROV_OCHOA, 472.9, {
+  c('MAT-08-296', PROV_OCHOA, 472.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590333',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0333 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-294', PROV_OCHOA, 350.7, {
+  c('MAT-08-297', PROV_OCHOA, 350.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590339',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0339 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-295', PROV_OCHOA, 902.88, {
+  c('MAT-08-298', PROV_OCHOA, 902.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590325',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0325 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-296', PROV_OCHOA, 3195.68, {
+  c('MAT-08-299', PROV_OCHOA, 3195.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590027',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0027 · ref. 16322AMAR.COM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-297', PROV_OCHOA, 7742.13, {
+  c('MAT-08-300', PROV_OCHOA, 7742.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590022',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0022 · ref. 13632AMAR.IND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-298', PROV_OCHOA, 4220.23, {
+  c('MAT-08-301', PROV_OCHOA, 4220.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590021',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0021 · ref. 16066AZULCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-299', PROV_OCHOA, 8183.45, {
+  c('MAT-08-302', PROV_OCHOA, 8183.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590050',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0050 · ref. 9776KAZULIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-300', PROV_OCHOA, 4640.79, {
+  c('MAT-08-303', PROV_OCHOA, 4640.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590071',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0071 · ref. 8035NEGROCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-301', PROV_OCHOA, 6521.15, {
+  c('MAT-08-304', PROV_OCHOA, 6521.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-6316-04590060',
     nota: 'Polvo P / Mosaico (Cromo) 6316 · artículo 04-59-0060 · ref. 9081NEGROIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-302', PROV_OCHOA, 3350.57, {
+  c('MAT-08-305', PROV_OCHOA, 3350.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590024',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0024 · ref. 16323ROJOCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-303', PROV_OCHOA, 5451.6, {
+  c('MAT-08-306', PROV_OCHOA, 5451.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-12908-55-lbs-04590023',
     nota: 'Polvo P / Mosaico(Cromo) (12908) 55 Lbs. · artículo 04-59-0023 · ref. F-6225ROJOIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-304', PROV_OCHOA, 4017.75, {
+  c('MAT-08-307', PROV_OCHOA, 4017.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590033',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0033 · ref. 16068VERDECOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-305', PROV_OCHOA, 9092.93, {
+  c('MAT-08-308', PROV_OCHOA, 9092.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590059',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0059 · ref. 14951VERDEIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
@@ -34042,6 +34057,303 @@
     moneda: 'USD',
     peso: 2,
     nota: 'Pendant With Black Base And White Globe 1xG9 120v/60hz · artículo MPDMG008110D300BKE26X1 · marca Vigo Lighting Group. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-001', PROV_HOGARDECO, 1609.2, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/panel-acustico-pvc-color-roble-claro/',
+    peso: 2,
+    nota: 'Panel Acústico Pvc – Color Roble Claro · artículo h050 A. La tienda cobra por tablilla y su ficha declara 60 cm x 2.9 m x 21 mm., o sea 1.74 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-002', PROV_HOGARDECO, 1354.68, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-baby-pink/',
+    peso: 14,
+    nota: 'Paneles De PVC Interior – Color Baby Pink · artículo m08 h083. La tienda cobra por tablilla y su ficha declara 14CM X 10MM X 2.9M, o sea 0.406 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 14 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 14 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-003', PROV_HOGARDECO, 998.19, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-camvas-beige-3/',
+    peso: 8,
+    nota: 'Paneles De Pvc Interior – Color CAMVAS BEIGE · artículo M03 H073 · ref. CAMVAS BEIGE M02 H073. La tienda cobra por tablilla y su ficha declara 19CM X 12MM X 2.90M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-004', PROV_HOGARDECO, 1252.27, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-arena-2/',
+    peso: 15,
+    nota: 'Paneles De Pvc Interior – Color BLANCO ARENA · artículo m06 071 · ref. NOGAL M06 H071. La tienda cobra por tablilla y su ficha declara 19CM X13MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 15 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 15 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-005', PROV_HOGARDECO, 1586.21, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-textil-m010-h073/',
+    peso: 8,
+    nota: 'Paneles De PVC Interior – Color Blanco Textil · artículo m010 H073 · ref. m010 H073. La tienda cobra por tablilla y su ficha declara 15CM X 14MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-005', PROV_HOGARDECO, 1133, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-yaquitiba-m09-h070/',
+    peso: 9,
+    nota: 'Paneles De PVC Interior – Color CAMVAS BEIGE · artículo m09 H073. La tienda cobra por tablilla y su ficha declara 21CM X 14MM X 2.9M, o sea 0.609 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-006', PROV_HOGARDECO, 1252.27, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-beige-oscuro-2/',
+    peso: 5,
+    nota: 'Paneles De Pvc Interior – Color BEIGE OSCURO · artículo M05 H013 · ref. BEIGE OSCURO M05 H013. La tienda cobra por tablilla y su ficha declara 19CM X 15MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-006', PROV_HOGARDECO, 1586.21, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-blanco-arena-3/',
+    peso: 13,
+    nota: 'Paneles De PVC Interior – Color Blanco Arena · artículo m07 h071. La tienda cobra por tablilla y su ficha declara 15CM X 15MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 13 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 13 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-006', PROV_HOGARDECO, 1264.37, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-nogal-m08-h032/',
+    peso: 2,
+    nota: 'Paneles De PVC Interior – color NOGAL M08 H032 · artículo m08 h032 · ref. m08 h032. La tienda cobra por tablilla y su ficha declara 15CM X 15MM X 2.9M, o sea 0.435 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-007', PROV_HOGARDECO, 1487.07, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-beige-claro-2/',
+    peso: 8,
+    nota: 'Paneles De Pvc Interior – Color BEIGE CLARO · artículo M01 H035 · ref. BEIGE CLARO M01 H035. La tienda cobra por tablilla y su ficha declara 16CM X 20MM X 2.90M ALTO, o sea 0.464 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-008', PROV_HOGARDECO, 1487.07, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-interior-color-azul-lavanda/',
+    peso: 12,
+    nota: 'Paneles De Pvc Interior – Color AZUL LAVANDA · artículo M02 H075 · ref. AZUL LAVANDA M02 H075. La tienda cobra por tablilla y su ficha declara 16CM X 24MM X 2.90M ALTO, o sea 0.464 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-009', PROV_HOGARDECO, 3266.79, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-pvc-exterior-color-miel-oscuro/',
+    nota: 'Paneles De WPC Exterior – Color MIEL OSCURO · artículo Color MIEL OSCURO · ref. MIEL OSCURO M06 H071. La tienda cobra por tablilla y su ficha declara 19CM X13MM X 2.9M, o sea 0.551 m² por pieza; aquí va el precio del m² (RD$ 1800 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-010', PROV_HOGARDECO, 2955.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/paneles-de-exterior-color-gris-beige-1/',
+    peso: 4,
+    nota: 'Paneles De WPC Exterior – COLOR GRIS BEIGE 1 · artículo PANELES DE EXTERIOR – COLOR GRIS BEIGE 1 · ref. EXTERIOR. La tienda cobra por tablilla y su ficha declara 21CM X 26MM X 2.9M, o sea 0.609 m² por pieza; aquí va el precio del m² (RD$ 1800 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-011', PROV_HOGARDECO, 791.41, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-bambu-8mm-beige-arena-modelo-h021/',
+    peso: 7,
+    nota: 'Plancha Bambu 8MM Beige Arena – Modelo H021 · artículo h021. · ref. Plancha Bambu 8MM Beige Arena – Modelo H021. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 8MM X 2.9M ALTO, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-012', PROV_HOGARDECO, 650.08, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-marmol-modelo-boticcino-marron-s013/',
+    peso: 6,
+    nota: 'Planchas Mármol Modelo – Marmol Nube Imperial · artículo s013. La tienda cobra por plancha y su ficha declara 📐 1.22 m de ancho x 3 mm de espesor x 2.90 m de alto, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2300 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-012', PROV_HOGARDECO, 772.64, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-marmol-pvc-2-44m-color-caliza-marron-2-44m/',
+    nota: 'Planchas Mármol Pvc 2.44M – Color  CALIZA MARRÓN  2.44M · artículo L010 · ref. CALIZA MARRÓN L010. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 3MM X 2.44M ALTO, o sea 2.9768 m² por pieza; aquí va el precio del m² (RD$ 2300 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-013', PROV_HOGARDECO, 1463.7, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-3mm-color-calacatta-paonazo/',
+    nota: 'PLANCHAS ONIX 3MM color CALACATTA PAONAZO · artículo ox11. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 5000 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-013', PROV_HOGARDECO, 3512.88, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-brown-smoky/',
+    peso: 3,
+    nota: 'PLANCHAS ONIX 6MM color BROWN SMOKY · artículo ox6. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 12000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-013', PROV_HOGARDECO, 4391.1, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-cuarcita-cristallo-brown/',
+    peso: 3,
+    nota: 'PLANCHAS ONIX 6MM Color CUARCITA CRISTALLO BROWN · artículo ox9. La tienda cobra por plancha y su ficha declara estándar: 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 15000 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-013', PROV_HOGARDECO, 2927.4, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/planchas-onix-6mm-color-helix-silestone-ox3/',
+    peso: 2,
+    nota: 'PLANCHAS ONIX 6MM color HELIX SILESTONE OX3 · artículo ox3. La tienda cobra por plancha y su ficha declara 1.22 m de ancho x 2.8 m de alto x 6 mm de grosor, o sea 3.416 m² por pieza; aquí va el precio del m² (RD$ 10000 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-014', PROV_HOGARDECO, 791.41, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-decorativa-pu-m08-3-pu-roca-lineal/',
+    nota: 'Plancha Decorativa PU M08-3 | PU ROCA LINEAL · artículo m08-3 · ref. Plancha ROCA PU POLIURETANO – M08-3. La tienda cobra por plancha y su ficha declara 1.22M ANCHO X 8MM X 2.9M ALTO, o sea 3.538 m² por pieza; aquí va el precio del m² (RD$ 2800 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-015', PROV_HOGARDECO, 1379.31, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/plancha-lisa-color-rosa-viejo/',
+    peso: 23,
+    nota: 'Plancha Lisa – Color Rosa Viejo · artículo h098. · ref. Rosa Viejo H098. La tienda cobra por plancha y su ficha declara 60CM X 9MM X 2.90M, o sea 1.74 m² por pieza; aquí va el precio del m² (RD$ 2400 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 2430.56, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ando-cement-concrete-fl8/',
+    peso: 3,
+    nota: 'Flexistone Interior –  Color ANDO CEMENT CONCRETE  FL8 · artículo 8 · ref. Flexistone Interior – Color ANDO CEMENT CONCRETE FL8. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 1736.11, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-cut-stone-striola-grey-fl13-1/',
+    peso: 5,
+    nota: 'Flexistone Interior –  Color CUT STONE STRIOLA GREY FL13-1 · artículo fl13-1 · ref. Flexistone Interior – Color – CUT STONE STRIOLA GREY FL13-1. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1250 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 1458.33, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-danxia-rammed-earth-beige-fl20/',
+    peso: 2,
+    nota: 'Flexistone Interior –  Color DANXIA RAMMED EARTH BEIGE FL20 · artículo fl20 · ref. Flexistone Interior – Color – DANXIA RAMMED EARTH BEIGE FL20. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 2291.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-lime-stone-beige-fl6-2/',
+    peso: 4,
+    nota: 'Flexistone Interior –  Color LIME STONE BEIGE  FL6 · artículo 6-1 · ref. Flexistone Interior – Color LIME STONE BEIGE FL6. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 2708.33, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-muretto-stone-cascade-beige/',
+    peso: 3,
+    nota: 'Flexistone Interior –  Color MURETTO STONE CASCADE BEIGE · artículo fl14 · ref. Flexistone Interior – Color – MURETTO STONE CASCADE BEIGE. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1950 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 2013.89, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ripple-board-beige-fl15/',
+    peso: 2,
+    nota: 'Flexistone Interior –  Color RIPPLE BOARD BEIGE FL15 · artículo fl15 · ref. Flexistone Interior – Color – RIPPLE BOARD BEIGE FL15. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1450 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 1319.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-3d-travertine-oceanic-beige/',
+    nota: 'Flexistone Interior –  Color Sand Brick · artículo fl22 · ref. Flexistone Interior – Color – Color Sand Brick FL22. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 950 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 937.5, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-travertine-concrete-fl11-2/',
+    nota: 'Flexistone Interior –  Color TRAVERTINE CONCRETE  FL11-2 · artículo fl11-2 · ref. Flexistone Interior – Color – TRAVERTINE CONCRETE FL11-2. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 675 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 1944.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-dolomitic-travertine-dark-grey-fl5/',
+    nota: 'Flexistone Interior –  DOLOMITIC TRAVERTINE  DARK GREY FL5 · artículo fl5 · ref. Flexistone Interior – Color DOLOMITIC TRAVERTINE DARK GREY FL5. La tienda cobra por lámina y su ficha declara 60CM ANCHO x 1.20M ALTO, o sea 0.72 m² por pieza; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 10216.35, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m01/',
+    nota: 'Madera Maciza M01 · artículo modelo m01 · ref. M01. La tienda cobra por pieza y su ficha declara 26CM X 32CM, o sea 0.0832 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 9444.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m010/',
+    peso: 11,
+    nota: 'Madera Maciza M010 · artículo modelo m010 · ref. M010. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 11 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 11 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 8750, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m012/',
+    nota: 'Madera Maciza M012 · artículo modelo m012 · ref. M012. La tienda cobra por pieza y su ficha declara 40CM X 40CM, o sea 0.16 m² por pieza; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 8333.33, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m016/',
+    nota: 'Madera Maciza M016 · artículo modelo m016 · ref. M016. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 750 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 10861.11, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m05/',
+    nota: 'Madera Maciza M05 · artículo modelo m05 · ref. M05. La tienda cobra por pieza y su ficha declara 30CM X 60CM, o sea 0.18 m² por pieza; aquí va el precio del m² (RD$ 1955 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 8095.24, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m07/',
+    peso: 2,
+    nota: 'Madera Maciza M07 · artículo modelo m07 · ref. M07. La tienda cobra por pieza y su ficha declara 35CM X 30CM, o sea 0.105 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 11666.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m09/',
+    nota: 'Madera Maciza M09 · artículo modelo m09 · ref. M09. La tienda cobra por pieza y su ficha declara 30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 4714.29, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m020/',
+    nota: 'Mosaicos Madera Maciza Modelo M018 · artículo m018. La tienda cobra por pieza y su ficha declara M019 :30CM X 35CM, o sea 0.105 m² por pieza; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 5500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m019/',
+    nota: 'Mosaicos Madera Maciza Modelo M019 · artículo m019. La tienda cobra por pieza y su ficha declara M019 :30CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 10337.55, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-modelo-m06-2/',
+    peso: 2,
+    nota: 'Mosaico de Mármol  – Modelo M06-2 · artículo 2553. La tienda cobra por pieza y su ficha declara 29.8 cm x 31.8 cm, o sea 0.0948 m² por pieza; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 9444.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-blanco-modelo-m04/',
+    nota: 'Mosaico de Mármol Blanco – Modelo M04 · artículo 2547. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 12887.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-leaf-blanca-m010-2-30-x-34-5-cm/',
+    peso: 2,
+    nota: 'Mosaico de Mármol Leaf Blanca M010-2 – 30 x 34.5 cm · artículo m010-1-1. La tienda cobra por pieza y su ficha declara 24.5 cm x 25 cm, o sea 0.0613 m² por pieza; aquí va el precio del m² (RD$ 790 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 4166.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-m08-1-28-5-x-32-cm/',
+    peso: 2,
+    nota: 'Mosaico de Mármol M08-1 – 28.5 x 32 cm · artículo m08-1……. La tienda cobra por pieza y su ficha declara 28.5CM X 32CM, o sea 0.0912 m² por pieza; aquí va el precio del m² (RD$ 380 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 11299.44, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-negro-y-blanco-modelo-m05/',
+    nota: 'Mosaico de Mármol Verde y Blanco – Modelo M05 · artículo 2549. La tienda cobra por pieza y su ficha declara 29.5 cm x 30 cm, o sea 0.0885 m² por pieza; aquí va el precio del m² (RD$ 1000 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 14518.76, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-nube-marmol-m011-1-24-5-x-25-cm/',
+    peso: 2,
+    nota: 'Mosaico de Nube Mármol M011-1 – 24.5 x 25 cm · artículo m011-1. La tienda cobra por pieza y su ficha declara 24.5 cm x 25 cm, o sea 0.0613 m² por pieza; aquí va el precio del m² (RD$ 890 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 9615.38, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m09/',
+    nota: 'Mosaico Mármol Blanco Estilo Escama  – Modelo M09 · artículo 2562. La tienda cobra por pieza y su ficha declara 29CM X 30.5CM, o sea 0.0884 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 13709.68, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m08/',
+    nota: 'Mosaico Mármol Blanco Estilo Escama – Modelo M08 · artículo 2560. La tienda cobra por pieza y su ficha declara 24.8 cm x 25 cm, o sea 0.062 m² por pieza; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-018', PROV_HOGARDECO, 9015.64, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-marmol-modelo-m07-1/',
+    peso: 2,
+    nota: 'Mosaicos De Mármol Modelo – M07-1 · artículo 2555. La tienda cobra por pieza y su ficha declara 31.5 cm x 34.5 cm💠 Tipo de mármol: Gris con tonos beige, o sea 0.1087 m² por pieza; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 6111.11, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-crema-natural-m014-30-x-30-cm/',
+    peso: 2,
+    nota: 'Mosaico de Piedra Crema Natural M014 – 30 x 30 cm · artículo m014. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 11666.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m01-elegancia-en-relieve/',
+    nota: 'Mosaico de Piedra Natural M01 – Elegancia en Relieve · artículo 2541. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 13888.89, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m03/',
+    nota: 'Mosaico de Piedra Natural M03 · artículo 2545. La tienda cobra por pieza y su ficha declara 27.5CM X 27.5CM, o sea 0.0756 m² por pieza; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 9311.74, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-m09-1/',
+    nota: 'Mosaicos De Piedra M09-1 · artículo m09-1. La tienda cobra por pieza y su ficha declara 26 cm x 28.5 cm, o sea 0.0741 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-019', PROV_HOGARDECO, 7666.67, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-natural-m013/',
+    nota: 'Mosaicos de Piedra Natural M013 · artículo m013. La tienda cobra por pieza y su ficha declara 30 cm x 30 cm, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-020', PROV_HOGARDECO, 3277.78, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-m02-019/',
+    peso: 17,
+    nota: 'PIEZAS 3D DE CUERO – M02 019 · artículo M02 019 · ref. Piezas 3D De Cuero M02- 19. La tienda cobra por pieza y su ficha declara 30CM X 2CM X 30CM, o sea 0.09 m² por pieza; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-020', PROV_HOGARDECO, 6357.76, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m01-001/',
+    peso: 17,
+    nota: 'Piezas 3D De Cuero – Modelo M01 001 · artículo m01 · ref. M01 001. La tienda cobra por pieza y su ficha declara 23.2CM X 2CM X 20CM, o sea 0.0464 m² por pieza; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-020', PROV_HOGARDECO, 4669.54, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m04-038/',
+    peso: 16,
+    nota: 'Piezas 3D De Cuero – Modelo M04 038 · artículo M04 038. La tienda cobra por pieza y su ficha declara M04 : 34.8CM X 20CM X 20MM, o sea 0.0696 m² por pieza; aquí va el precio del m² (RD$ 325 por pieza). El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-021', PROV_HOGARDECO, 1247.69, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mallas-de-rattan-decorativas-modelo-r1-coffee/',
+    peso: 2,
+    nota: 'Mallas de Rattan Decorativas Modelo – R1 Coffee · artículo R1 Coffee. La tienda cobra por rollo y su ficha declara 0.41M ANCHO X 30.3M LARGO, o sea 12.423 m² por pieza; aquí va el precio del m² (RD$ 15500 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-irregular-round-circle-c9-19/',
+    peso: 36,
+    nota: 'Tiradores Modelo -IRREGULAR ROUND CIRCLE C9-19 · artículo c9 -19. El comercio lista 36 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 36 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-54/',
+    peso: 12,
+    nota: 'Tiradores Modelo – C-54 · artículo C-54. El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 450, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-55/',
+    peso: 9,
+    nota: 'Tiradores Modelo – C-55 · artículo C-55. El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 650, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c46/',
+    peso: 2,
+    nota: 'Tiradores Modelo – C46 · artículo C-46. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c50/',
+    nota: 'Tiradores Modelo – C50 · artículo C-50. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-022', PROV_HOGARDECO, 700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c52/',
+    peso: 2,
+    nota: 'Tiradores Modelo – C52 · artículo C-52. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   /* catalogos:cotizaciones:fin */
 

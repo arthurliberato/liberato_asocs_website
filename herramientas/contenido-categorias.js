@@ -698,6 +698,30 @@ module.exports = {
   ]
 },
 
+'MAT-34': {
+  titulo: 'Precio de los revestimientos decorativos en RD',
+  desc: 'Precio por metro cuadrado de paneles de pared de PVC y WPC, planchas de bambú y ónix, papel tapiz, piedra flexible, mosaicos y piezas 3D en República Dominicana.',
+  h1: 'Precio de los revestimientos decorativos en República Dominicana',
+  intro: [
+    'Todo lo de esta página va por metro cuadrado, y conviene saber por qué: las tiendas los venden como salen de fábrica —el panel por tablilla, el papel por rollo, el mosaico por pieza— y cada formato cubre una superficie distinta. Una tablilla de PVC de 14 cm por 2.9 m cubre 0.41 m²; un rollo de papel tapiz de 0.53 por 10 m cubre 5.3. Comparar RD$ 550 con RD$ 1,850 sin esa cuenta no dice nada; llevados al metro, se ordenan solos.',
+    'Es la partida que más ha crecido en el interiorismo dominicano de los últimos años, y la que más sorprende al presupuestar: un panel de PVC cuesta por metro cuadrado más o menos lo que una cerámica de gama media, pero se instala en seco, sobre cualquier muro y sin pegamento cementicio. El mosaico decorativo y la pieza 3D juegan en otra liga —salen varias veces eso— porque son piezas pequeñas y el metro cuadrado se llena despacio.'
+  ],
+  claves: [
+    ['El precio de la pieza engaña; el del metro, no', 'Dos paneles al mismo precio pueden cubrir superficies muy distintas según su ancho. La tabla ya trae la cuenta hecha con las medidas que publica cada tienda.'],
+    ['El espesor cambia el precio y también el uso', 'Un panel de 10 mm es decorativo; uno de 24 o 26 mm aguanta exterior y golpes. No son el mismo producto aunque se vean parecidos.'],
+    ['Se instala en seco, y eso cambia la mano de obra', 'La mayoría va con adhesivo de montaje o con clip sobre rastreles. Sale más rápido que un revestimiento cementicio, pero pide un muro plano.'],
+    ['Cuenta el desperdicio del despiece', 'En piezas chicas —mosaico, 3D— el recorte se come más metro del que uno calcula. Conviene sumar un margen sobre el área neta.']
+  ],
+  faq: [
+    ['¿Por qué el precio aparece por metro cuadrado si la tienda lo vende por pieza?',
+     'Porque es la única forma de compararlos entre sí y de llevarlos a un presupuesto, que se cubica por área. La conversión sale de la medida que publica la propia tienda, y la ficha de cada cotización deja dicho cuál era el precio de la pieza y cuánto cubre.'],
+    ['¿Un panel de PVC sirve para exterior?',
+     'Solo el que la ficha declara como WPC de exterior, que es más grueso y lleva carga de madera. El panel de PVC de interior puesto a la intemperie se deforma y pierde color.'],
+    ['¿Cuánto de más hay que comprar por el recorte?',
+     'Depende del despiece y del tamaño de la pieza. En tablilla larga el desperdicio es bajo; en mosaico y pieza 3D sube, porque cada corte inutiliza más proporción de la pieza.']
+  ]
+},
+
 'MAT-33': {
   titulo: 'Precio de la iluminación decorativa en RD',
   desc: 'Precio de lámparas de techo, colgantes, apliques de pared, lámparas de mesa y de pie en República Dominicana.',
