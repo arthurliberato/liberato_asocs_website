@@ -88,6 +88,18 @@
     zonas:['nacional'], web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
+  p('Carabela', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-09','MAT-24','MAT-25','MAT-26','MAT-33'],
+    zonas:['gsd'], web:'carabela.do', precios:true,
+    nota:'Baño y cocina de gama alta: Ramón Soler, Noken, IB Rubinetterie, Salgar y Foster. Es la contraparte de arriba de partidas que hasta ahora se movían entre lo que venden las ferreterías. Sus categorías están hechas para navegar la tienda y no para presupuestar —«Muebles de baño» incluye las patas y los tiradores, «Lavamanos» sobre todo grifería—, así que la clasificación sale del nombre. Sus electrodomésticos de cocina no entran: el catálogo no tiene ese rubro. No declara si el precio incluye ITBIS.'
+  });
+  p('Ilumel', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-33'],
+    zonas:['gsd'], web:'ilumel.com', precios:true,
+    nota:'Lámparas decorativas en Santo Domingo, de RD$ 1,089 a RD$ 153,327. Incluye su tienda de descuento, ilumeloutlet.com, que es la misma empresa: de sus 23 lámparas, 15 llevan el mismo SKU y el mismo precio que la tienda principal y no se cuentan dos veces; entran las 8 que solo existen allí. No declara si el precio incluye ITBIS.'
+  });
   p('DCO', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-34'],

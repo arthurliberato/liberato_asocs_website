@@ -1040,15 +1040,15 @@
   it('MAT-08', 'Polvo de color para mosaico verde industrial, 55 lb', 'funda', 9092.93, 9092.93, 9092.93, {esp:'', etapa:'pisos', gama:'premium', origen:'importado', alias:'cromo, polvo de color, pigmento para granito', alcance:'Material retirado en almacén'});
 
   /* MAT-09 */
-  it('MAT-09', 'Cabezal de ducha', 'unidad', 1610.5, 150, 143567.8, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabeza de ducha, regadera', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha', 'unidad', 1782, 150, 143567.8, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabeza de ducha, regadera', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Ducha teléfono', 'unidad', 712.46, 238.61, 16666.17, {esp:'', etapa:'instalaciones', origen:'importado', alias:'ducha de mano, teléfono de ducha', alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Columna de ducha', 'unidad', 16238.78, 900, 151833.06, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, set de ducha', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Columna de ducha', 'unidad', 18965.97, 900, 151833.06, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, set de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Columna de ducha', 'unidad', 9896.81, 553.61, 29022.19, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, sistema de ducha, barra deslizable, riel', alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Brazo de ducha', 'unidad', 895.38, 108.23, 5944.92, {esp:'', etapa:'instalaciones', origen:'importado', alias:'brazo de ducha, cuello de ducha', alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Mezcladora, de baño', 'unidad', 4750, 340, 75000, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'bano', activacion:'manual'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Brazo de ducha', 'unidad', 1347.54, 108.23, 10850, {esp:'', etapa:'instalaciones', origen:'importado', alias:'brazo de ducha, cuello de ducha', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Mezcladora, de baño', 'unidad', 6229, 340, 75950, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'bano', activacion:'manual'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Mezcladora, de baño, con sensor', 'unidad', 5977.63, 740, 32262.65, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'bano', activacion:'sensor'}, alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Mezcladora, de fregadero', 'unidad', 3440.02, 230, 45138.45, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'fregadero', activacion:'manual'}, alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Mezcladora de ducha', 'unidad', 8881.51, 945, 80500, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifería de ducha', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Mezcladora, de fregadero', 'unidad', 3801.77, 230, 86350, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'fregadero', activacion:'manual'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Mezcladora de ducha', 'unidad', 8913, 945, 80500, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifería de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Manguera para ducha teléfono', 'unidad', 747.45, 256.18, 2085.35, {esp:'', etapa:'instalaciones', origen:'importado', alias:'manguera de ducha, flexible', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Regulador de gas de doble tanque', 'unidad', 1139, 1139, 1139, {esp:'', etapa:'instalaciones', origen:'importado', alias:'regulador de gas, GLP', medidas:{tipo:'de doble tanque'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Regulador de gas grande', 'unidad', 656, 326, 1315, {esp:'', etapa:'instalaciones', origen:'importado', alias:'regulador de gas, GLP', medidas:{tipo:'grande'}, alcance:'Material retirado en almacén'});
@@ -1144,6 +1144,7 @@
   it('MAT-09', 'Fregadero de 2 pozos, 33 x 22 pulgadas', 'unidad', 6540, 6540, 6540, {esp:'', etapa:'instalaciones', origen:'importado', alias:'fregadero, lavaplatos, pantry', medidas:{pozos:2, medida:'33 x 22 pulgadas'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Fregadero de 2 pozos, 34 x 17 pulgadas', 'unidad', 45860, 45860, 45860, {esp:'', etapa:'instalaciones', origen:'importado', alias:'fregadero, lavaplatos, pantry', medidas:{pozos:2, medida:'34 x 17 pulgadas'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Fregadero de 2 pozos, 34 x 18 pulgadas', 'unidad', 17194.13, 17194.13, 17194.13, {esp:'', etapa:'instalaciones', origen:'importado', alias:'fregadero, lavaplatos, pantry', medidas:{pozos:2, medida:'34 x 18 pulgadas'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Fregadero de 2 pozos, 35 x 15 pulgadas', 'unidad', 18400, 18400, 18400, {esp:'', etapa:'instalaciones', origen:'importado', alias:'fregadero, lavaplatos, pantry', medidas:{pozos:2, medida:'35 x 15 pulgadas'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Fregadero de 2 pozos, 47 x 20 pulgadas', 'unidad', 6672.5, 6665, 6680, {esp:'', etapa:'instalaciones', origen:'importado', alias:'fregadero, lavaplatos, pantry', medidas:{pozos:2, medida:'47 x 20 pulgadas'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Llave de bebedero', 'unidad', 217.5, 205, 256, {esp:'Plástico', etapa:'instalaciones', origen:'importado', alias:'llave de bebedero, llave plástica', alcance:'Material retirado en almacén'});
 
@@ -1785,7 +1786,7 @@
   it('MAT-24', 'Basineta para inodoro de dos piezas', 'unidad', 5571.51, 2129.12, 26806.88, {esp:'Sin tanque · se compra aparte', etapa:'instalaciones', origen:'importado', alias:'basineta, taza, cuerpo del inodoro', alcance:'Material retirado en almacén'});
   it('MAT-24', 'Taza para fluxómetro', 'unidad', 9187, 3925, 14269.5, {esp:'Sin tanque · el fluxómetro va aparte', etapa:'instalaciones', origen:'importado', alias:'taza de fluxómetro, inodoro comercial', medidas:{forma:'elongado'}, alcance:'Material retirado en almacén'});
   it('MAT-24', 'Urinario de porcelana', 'unidad', 9070.48, 3265, 25886.53, {esp:'', etapa:'instalaciones', origen:'importado', alias:'orinal, mingitorio, urinario', alcance:'Material retirado en almacén'});
-  it('MAT-24', 'Bidé', 'unidad', 20490, 3998, 48499.99, {esp:'', etapa:'instalaciones', origen:'importado', alias:'bidé, bidet', alcance:'Material retirado en almacén'});
+  it('MAT-24', 'Bidé', 'unidad', 20495, 3998, 48499.99, {esp:'', etapa:'instalaciones', origen:'importado', alias:'bidé, bidet', alcance:'Material retirado en almacén'});
   it('MAT-24', 'Kit de instalación de inodoro', 'juego', 1773, 1773, 1773, {esp:'', etapa:'instalaciones', origen:'importado', alias:'kit de instalación, cera y tornillos de inodoro', alcance:'Material retirado en almacén'});
 
   /* MAT-25 */
@@ -1802,13 +1803,13 @@
   /* MAT-26 */
   it('MAT-26', 'Mueble de baño', 'unidad', 14719.17, 6495, 45479.87, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Mueble de baño, de pared', 'unidad', 19517.62, 5433.44, 58000, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', medidas:{montaje:'pared'}, alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Mueble de baño, de piso', 'unidad', 18691.13, 2725, 197500, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', medidas:{montaje:'piso'}, alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Mueble de baño, de piso', 'unidad', 22705.73, 2725, 197500, {esp:'', etapa:'terminacion', origen:'importado', alias:'mueble de baño, vanity, gabinete', medidas:{montaje:'piso'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Botiquín de baño', 'unidad', 1547, 725.87, 6543.83, {esp:'', etapa:'terminacion', origen:'importado', alias:'botiquín, gabinete con espejo', medidas:{largo_mm:300, alto_mm:120}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Botiquín de baño, con luz LED', 'unidad', 15456.85, 10320.96, 24256.84, {esp:'', etapa:'terminacion', origen:'importado', alias:'botiquín, gabinete con espejo', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Espejo de baño', 'unidad', 1908.4, 665, 39933.24, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Espejo de baño, con luz LED', 'unidad', 8291.48, 1795, 25500, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Espejo de baño', 'unidad', 2690, 665, 56400, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Espejo de baño, con luz LED', 'unidad', 8386.54, 1795, 40600, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Cabina o panel de ducha', 'unidad', 5733, 3118.5, 16029.13, {esp:'', etapa:'terminacion', origen:'importado', alias:'cabina de ducha, mampara, panel de ducha', alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Bañera', 'unidad', 100299.99, 9469, 430700, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub, jacuzzi', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Bañera', 'unidad', 102520.34, 9469, 430700, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub, jacuzzi', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Plato de ducha', 'unidad', 16337.59, 14956.2, 29990, {esp:'', etapa:'terminacion', origen:'importado', alias:'plato de ducha, receptáculo, base de ducha', alcance:'Material retirado en almacén'});
 
   /* MAT-27 */
@@ -2734,9 +2735,9 @@
 
   /* MAT-33 */
   it('MAT-33', 'Lámpara decorativa de mesa', 'unidad', 3950, 404.08, 8000, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'mesa'}, alcance:'Material retirado en almacén'});
-  it('MAT-33', 'Lámpara decorativa de pared', 'unidad', 1950, 113.16, 12600, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'pared'}, alcance:'Material retirado en almacén'});
+  it('MAT-33', 'Lámpara decorativa de pared', 'unidad', 3125, 113.16, 37040.2, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'pared'}, alcance:'Material retirado en almacén'});
   it('MAT-33', 'Lámpara decorativa de pie', 'unidad', 7350, 515.63, 11800, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'pie'}, alcance:'Material retirado en almacén'});
-  it('MAT-33', 'Lámpara decorativa de techo', 'unidad', 5915, 130.13, 125000, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'techo'}, alcance:'Material retirado en almacén'});
+  it('MAT-33', 'Lámpara decorativa de techo', 'unidad', 14412, 130.13, 153327.31, {esp:'Se presupuesta por rango: la pieza se elige por diseño y el catálogo no la compara modelo a modelo', etapa:'terminacion', origen:'importado', alias:'lámpara, luminaria decorativa, colgante, aplique, plafón, iluminación de interiores', medidas:{montaje:'techo'}, alcance:'Material retirado en almacén'});
 
   /* MAT-34 */
   it('MAT-34', 'Panel de pared de PVC acústico, 21 mm', 'm²', 1609.2, 1609.2, 1609.2, {esp:'', etapa:'terminacion', origen:'importado', alias:'panel decorativo, panel de pared, lambrín, tablilla, WPC', medidas:{material:'PVC acústico', espesor_mm:21}, alcance:'Material retirado en almacén'});

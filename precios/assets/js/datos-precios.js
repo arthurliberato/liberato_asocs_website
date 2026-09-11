@@ -194,6 +194,8 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_CARABELA = 'Carabela';
+  var PROV_ILUMEL = 'Ilumel';
   var PROV_DCO = 'DCO';
   var PROV_CORTINAJE = 'Cortinaje';
   var PROV_HOGARDECO = 'Hogardeco';
@@ -9779,6 +9781,31 @@
     peso: 2,
     nota: 'Ducha cuaraa 2" sin brazo metalica foset aqua · artículo T44494 · ref. T44494 · marca Foset. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-009', PROV_CARABELA, 31100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-de-ducha-colore-2',
+    peso: 3,
+    nota: 'Rociador de ducha Colore · artículo 29431 · marca IB RUBINETTERIE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CARABELA, 36265, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-inclinado-redondo',
+    nota: 'Rociador Inclinado Redondo · artículo 26161 · ref. Material: Acero Inoxidable · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CARABELA, 36800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-neptune',
+    nota: 'Rociador Neptune · artículo 26406 · ref. Color: Negro · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CARABELA, 57000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-redondo',
+    nota: 'Rociador Redondo · artículo 26162 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CARABELA, 56275, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-rork',
+    nota: 'Rociador Rork · artículo 26159 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_CARABELA, 42940, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/rociador-tono-400mm-cromo',
+    nota: 'Rociador Tono · artículo 26804 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-010', PROV_OCHOA, 535.05, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-red-d-mano-01232512',
     nota: 'Cabeza De Ducha Red + D. Mano · artículo 01-23-2512 · ref. TB2216 · marca TILBY-GR. ' + SUPUESTO_ITBIS
@@ -10171,6 +10198,42 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/sistema-de-ducha-itaca-bronze-con-mezcladora/',
     nota: 'Sistema De Ducha Itaca Bronze con Mezcladora · artículo 018766 · ref. 67297020BZ. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-011', PROV_CARABELA, 95700, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-ducha-alexia',
+    nota: 'Columna de ducha ALEXIA · artículo 28467 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 137350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-7',
+    nota: 'Columna de Grifería Alexia · artículo 28471 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 95350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-griferia-alexia',
+    nota: 'Columna de Grifería Alexia · artículo 28468 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 88450, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-griferia-drako-cromo',
+    nota: 'Columna Drako Ducha · artículo 27132 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 35050, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-ducha-smart',
+    nota: 'Columna Ducha Smart · artículo 23718 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 71100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-ducha-gaudi',
+    nota: 'Columna Gaudi Ducha · artículo 26158 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 31800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-smart-termostatica-cromo',
+    nota: 'Columna Smart Termostática Ducha · artículo 26875 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 108900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-de-ducha-tec-square',
+    nota: 'Columna Tec Square Ducha · artículo 28128 · ref. Color: Negro mate · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CARABELA, 57900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/columna-uniiq',
+    nota: 'Columna Uniiq · artículo 28019 · ref. Color: Blanco mate · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-012', PROV_OCHOA, 29022.19, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/barra-de-bano-ducha-coc-negro-cobalto-01021647',
     nota: 'Barra De Baño Ducha Coc Negro Cobalto · artículo 01-02-1647 · ref. M771DBK · marca INEX. ' + SUPUESTO_ITBIS
@@ -10370,6 +10433,19 @@
   c('MAT-09-013', PROV_FERREMIX, 349, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/brazo-plastico-para-regel-3-y-regel-4',
     nota: 'Brazo para ducha electrica plastico foset · artículo T49494 · ref. T49494 · marca Foset. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_CARABELA, 1895, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/brazo-de-ducha-1',
+    nota: 'Brazo de ducha · artículo 26164 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_CARABELA, 3300, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/brazo-de-ducha',
+    nota: 'Brazo de ducha · artículo 24648 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_CARABELA, 10850, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/brazo-de-ducha-de-techo-redondo-colore-1',
+    peso: 3,
+    nota: 'Brazo de ducha de techo Colore · artículo 29427 · marca IB RUBINETTERIE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 1791, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-66',
@@ -11941,6 +12017,230 @@
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Llave Mezcladora Lavamanos Monomando Alta 1H Maximus Negra SB02 · artículo 243770. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-014', PROV_CARABELA, 75950, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-a-pared-colore-1',
+    peso: 3,
+    nota: 'Grifería a pared colore · artículo 29449 · marca Carabelatienda. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 8200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-cromo',
+    nota: 'Grifería Alexia · artículo 26136 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 14850, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-5',
+    nota: 'Grifería Alexia · artículo 28473 · ref. Color: Oro cepillado · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 9690, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-4',
+    nota: 'Grifería Alexia · artículo 28453 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 31100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-3',
+    nota: 'Grifería Alexia · artículo 28452 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 37400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-1',
+    nota: 'Grifería Alexia · artículo 28449 · ref. Color: Oro cepillado · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 31970, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-lav-alexia',
+    nota: 'Grifería Alexia · artículo 26147 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 20950, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-cano-alto',
+    nota: 'Grifería Alexia Caño Alto · artículo 28431 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 64150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-bold-i-negro-mate',
+    nota: 'Grifería Bold I · artículo 26342 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 58410, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-bold-i-oro',
+    nota: 'Grifería Bold I · artículo 26339 · ref. Color: Oro · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 58550, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-bold-i-oro-mate',
+    nota: 'Grifería Bold I · artículo 26341 · ref. Color: Oro mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 66100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-cano-alto-bold-i-oro',
+    nota: 'Grifería Bold I Caño Alto · artículo 26343 · ref. Color: Oro · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 52820, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-cano-alto-bold-i-negro',
+    nota: 'Grifería Bold I Caño Alto · artículo 26345 · ref. Color: Negro · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 70650, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-cano-alto-bold-i-oro-mate',
+    nota: 'Grifería Bold I Caño Alto · artículo 26344 · ref. Color: Oro mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 62950, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-cano-alto-bold-ii-oro',
+    nota: 'Grifería Bold II Caño Alto · artículo 26350 · ref. Color: Oro · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 9200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-drako-cromo',
+    peso: 3,
+    nota: 'Grifería Drako · artículo 22997 · ref. Color: Cromo · marca RAMÓN SOLER. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 19875, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-lav-gaudi',
+    peso: 2,
+    nota: 'Grifería Gaudi · artículo 28137 · ref. Color: Cromo · marca RAMÓN SOLER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 25140, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-cocina-gaudi-cromo',
+    nota: 'Grifería Gaudi · artículo 26157 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 22200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-lavabo-hotels-c-alto-cromo',
+    nota: 'Grifería Hotels Caño Alto · artículo 23654 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 54200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-pared-part-externa-negro-mate',
+    nota: 'Grifería Industria · artículo 27817 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 18350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-ducha-cromo-1',
+    nota: 'Grifería Industria · artículo 27805 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 22000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-ducha-negro-mate',
+    nota: 'Grifería Industria · artículo 27816 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 22730, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-ducha-cromo',
+    nota: 'Grifería Industria · artículo 27808 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 29050, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-negro-mate',
+    nota: 'Grifería Industria · artículo 27819 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 29360, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-ducha-oro-cepillado',
+    nota: 'Grifería Industria · artículo 27813 · ref. Color: Oro cepillado · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 24200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-cromo',
+    peso: 3,
+    nota: 'Grifería Industria · artículo 27821 · ref. Color: Cromo · marca IB RUBINETTERIE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 62500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-oro-cepillado',
+    nota: 'Grifería Industria · artículo 27812 · ref. Color: Oro cepillado · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 57500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-cano-alto-negro-mate',
+    nota: 'Grifería Industria Caño Alto · artículo 27820 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 55580, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-cano-alto-oro-cepillado',
+    nota: 'Grifería Industria Caño Alto · artículo 27810 · ref. Color: Oro cepillado · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 34740, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-cano-alto-cromo',
+    nota: 'Grifería Industria Caño Alto · artículo 27809 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 4800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-new-fly-3',
+    peso: 2,
+    nota: 'Grifería New Fly · artículo 28463 · ref. Color: Cromo · marca RAMÓN SOLER. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 15900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-new-fly-cano-alto',
+    nota: 'Grifería New Fly Caño Alto · artículo 28446 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 17400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferias-para-lavamano-round-cromo',
+    nota: 'Grifería Round · artículo 25629 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 28150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-round-cano-alto-cromo-306mm',
+    nota: 'Grifería Round Caño Alto · artículo 25793 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 13900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-square',
+    nota: 'Grifería Square · artículo 28201 · ref. Color: Código · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 22670, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-tono-maneta-estriada-cromo',
+    peso: 2,
+    nota: 'Grifería Tono · artículo 26801 · ref. Color: Cromo · marca NOKEN. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 37740, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-tono-cano-alto-maneta-estriada-cromo',
+    nota: 'Grifería Tono Caño Alto · artículo 26802 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 6850, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-urban-cromo',
+    nota: 'Grifería Urban · artículo 23185 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 11400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-urban-cano-alto-negro',
+    nota: 'Grifería Urban Caño Alto · artículo 26551 · ref. Color: Negro mate · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 13000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-why-not-cromo-1',
+    nota: 'Grifería Why Not · artículo 28152 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 11100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-why-not-ducha-negro-mate',
+    nota: 'Grifería Why Not · artículo 28155 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 21000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-why-not-cano-alto-negro-mate',
+    nota: 'Grifería Why Not Caño Alto · artículo 28160 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 32500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-why-not-cano-alto-cromo',
+    nota: 'Grifería Why Not Caño Alto · artículo 28161 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 6890, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-new-fly-para-bidet',
+    nota: 'Grifería Bidet New Fly · artículo 28437 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 11500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-bidet-why-not-cromo',
+    nota: 'Grifería Bidet Why Not · artículo 28153 · ref. Color: Cromo · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 43400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-bidet-colore-1',
+    peso: 6,
+    nota: 'Griferia de Bidet Colore · artículo 29442 · marca IB RUBINETTERIE. El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 11990, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-bidet-hotels-cromo',
+    nota: 'Griferia Hotels Bidet · artículo 23615 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 8150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/sustituta-bidet-hotels-cromo',
+    nota: 'Grifería Hotels Bidet · artículo 23358 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 38730, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-industria-bidet-oro-cepillado',
+    nota: 'Grifería Industria Bidet · artículo 27811 · ref. Color: Oro cepillado · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 18500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-round-bidet',
+    nota: 'Grifería Round Bidet · artículo 25627 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 4300, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferias-de-bidet-titanium-cromo',
+    nota: 'Grifería Titanium Bidet · artículo 25887 · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 62550, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-lavabo-cano-alto-colore',
+    peso: 3,
+    nota: 'Grifería de lavabo C Alto Colore · artículo 29438 · marca IB RUBINETTERIE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 70250, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-lavabo-cano-alto',
+    nota: 'Grifería de Lavabo Caño Alto · artículo 28568 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_CARABELA, 53950, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-lavabo-marmo',
+    nota: 'Grifería de Lavabo Marmo · artículo 28566 · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-015', PROV_CERARTE, 5455.27, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/griferia-join-timer-bacteria-free-pressmatic',
     itbis: false,
@@ -12794,6 +13094,51 @@
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Llave Mezcladora Fregadero Monomando Extensible 1H Maximus Cromada SC04 · artículo 243773. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-016', PROV_CARABELA, 86350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-fregadero-bold-i-negro-mate',
+    nota: 'Grifería Bold I · artículo 26346 · ref. Color: Negro Mate · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 27300, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-fregadero-arquitect',
+    nota: 'Grifería de fregadero Arquitect · artículo 28127 · ref. Color: Negro · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 9000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-cocina-drako-cromo',
+    nota: 'Grifería de fregadero Drako · artículo 24606 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 19600, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-cocina-2-jets-drako-con-cano-giratorio',
+    nota: 'Grifería de fregadero Drako Jets · artículo 26156 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 3900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-fregadero-mural-cromo-1',
+    peso: 2,
+    nota: 'Grifería de fregadero mural cromo · artículo 29213 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 18400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-round-fregadero-acabado-cromo',
+    nota: 'Grifería de fregadero Round · artículo 28202 · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 14800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-cocina-vulcano-ducha-extraible',
+    nota: 'Grifería de fregadero Vulcano · artículo 22851 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 16130, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/monomando-para-fregadero-f2000-alto-cromo',
+    nota: 'Grifería F2000 · artículo 27461 · ref. Color: Cromo · marca FOSTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 46150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-para-fregadero-omega-copper',
+    nota: 'Grifería Omega · artículo 27464 · ref. Material: Latón · marca FOSTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 44530, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/monomando-para-fregadero-omega-plus-gun-metal',
+    nota: 'Grifería Omega Plus · artículo 27466 · ref. Material: Latón · marca FOSTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_CARABELA, 54300, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/monomando-para-fregadero-play-cromo',
+    nota: 'Grifería Play · artículo 27463 · ref. Material: Latón · marca FOSTER. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-017', PROV_OCHOA, 12165.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monom-barra-ext-new-belice-01021175',
     nota: 'Mezc Monom. Barra Ext.New Belice · artículo 01-02-1175 · ref. 96170 · marca INEX. ' + SUPUESTO_ITBIS
@@ -13489,6 +13834,78 @@
   c('MAT-09-017', PROV_BELLON, 1455, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Dyllu DTZD1502 · artículo 243588. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 33400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-8',
+    nota: 'Grifería Alexia Ducha · artículo 28472 · ref. Color: Oro cepillado · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 24600, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-alexia',
+    nota: 'Grifería Alexia Ducha · artículo 28438 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 6700, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia-cromo',
+    nota: 'Grifería Alexia Ducha · artículo 26151 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 12000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia-1',
+    nota: 'Grifería de Ducha Alexia · artículo 26148 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 10100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia',
+    nota: 'Grifería de Ducha Alexia · artículo 26150 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 11040, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-cromo',
+    nota: 'Grifería de Ducha Cromo · artículo 26155 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 8050, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-drako-cromo',
+    nota: 'Grifería Drako Ducha · artículo 26154 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 10500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-con-equipo-de-ducha-drako-cromo',
+    nota: 'Grifería Drako Ducha · artículo 24040 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 5200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-ducha-hotels',
+    nota: 'Grifería Ducha Hotels · artículo 25722 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 14350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/monomando-hotels-externo-ducha-cromo',
+    nota: 'Grifería Hotels Ducha · artículo 23616 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 15950, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-new-fly',
+    nota: 'Grifería New Fly Ducha · artículo 28454 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 1000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-bano-nk-concept-1',
+    nota: 'Grifería Nk Concept Ducha · artículo 25835 · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 11400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-rondo',
+    nota: 'Grifería Rondo Ducha · artículo 28350 · ref. Color: Negro · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 7220, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-titanium',
+    nota: 'Grifería Titanium Ducha · artículo 25889 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 29350, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-touch-feel',
+    nota: 'Grifería Touch-Feel Ducha · artículo 27273 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 3550, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-urban-3',
+    nota: 'Grifería Urban Ducha · artículo 23835 · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 6750, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-urban-cromo',
+    nota: 'Grifería Urban Ducha · artículo 23187 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_CARABELA, 3467.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-urban-exterior-cromo',
+    nota: 'Grifería Urban Ducha + Complemento · artículo 23135 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-018', PROV_OCHOA, 764.03, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232601',
@@ -14239,27 +14656,31 @@
     itbis: false,
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35127 · ref. 86X46X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-113', PROV_FERREMIX, 6665, {
+  c('MAT-09-113', PROV_CARABELA, 18400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
+    nota: 'Fregadero Prime Doble Rectángular 89x39 cm · artículo 29581 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-114', PROV_FERREMIX, 6665, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45061 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-113', PROV_FERREMIX, 6680, {
+  c('MAT-09-114', PROV_FERREMIX, 6680, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45060 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_CIMA, 256, {
+  c('MAT-09-115', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_CIMA, 205, {
+  c('MAT-09-115', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_CIMA, 213, {
+  c('MAT-09-115', PROV_CIMA, 213, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_CIMA, 222, {
+  c('MAT-09-115', PROV_CIMA, 222, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7461299795276. ' + SUPUESTO_ITBIS
   });
@@ -22068,6 +22489,10 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/bidet-inspira-square-blanco-brillo/',
     nota: 'Bidet Inspira Square Blanco Brillo · artículo 019479. ' + SUPUESTO_ITBIS
   });
+  c('MAT-24-009', PROV_CARABELA, 22250, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/bidet-nk-concept',
+    nota: 'Bidet Nk Concept · artículo 26316 · ref. Color: Blanco · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
   c('MAT-24-009', PROV_INNOVA, 5937, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/bidets/bidet-cocobella-cb-17-0007-blanco-041462',
     nota: 'BIDET COCOBELLA CB.17.0007 BLANCO · artículo 041462 · marca COCO. ' + SUPUESTO_ITBIS
@@ -24253,6 +24678,98 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/gabinete-de-bano-c-espejo-blanco-rimax',
     nota: 'gabinete de bano c espejo blanco rimax · artículo 25419 · marca Rimax. ' + SUPUESTO_ITBIS
   });
+  c('MAT-26-003', PROV_CARABELA, 20150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-conj-micro-de-40-1puerta-reter-lav-espejo',
+    peso: 2,
+    nota: 'Mueble de baño Micro + Lavamanos + Espejo · artículo 27482 · ref. Color: Roble eternity · marca SALGAR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 47970, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-biba-macchiato-60-cm-1-cajon',
+    peso: 2,
+    nota: 'Mueble de baño BIBA macchiato 60 cm 1 cajón · artículo 29688 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 53900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-macchiato-80-cm-1-cajon',
+    nota: 'Mueble de baño BIBA macchiato 80 cm 1 cajón · artículo 29691 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 51700, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-biba-nogal-maya-100-cm-1-cajon',
+    nota: 'Mueble de baño BIBA nogal maya 100 cm 1 cajón · artículo 29686 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 54200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-biba-white-cotton-100-cm-1-cajon',
+    nota: 'Mueble de baño BIBA white cotton 100 cm 1 cajón · artículo 29687 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 50460, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-biba-white-cotton-80-cm-1-cajon',
+    nota: 'Mueble de baño BIBA white cotton 80 cm 1 cajón · artículo 29693 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 88700, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-macchiatto-100-cm-2-cajones',
+    peso: 2,
+    nota: 'Mueble de baño Macchiatto 100 cm 2 cajones · artículo 28756 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 80550, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-monterrey-black-velvet-100-cm-2-cajones',
+    peso: 2,
+    nota: 'Mueble de baño MONTERREY black velvet 100 cm 2 cajones · artículo 28785 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 69450, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-monterrey-white-cotton-80-cm-2-cajones',
+    nota: 'Mueble de baño MONTERREY white cotton 80 cm 2 cajones · artículo 28789 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 23700, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-noja-lavamanos-1',
+    nota: 'Mueble de baño Noja + Lavamanos · artículo 27411 · ref. Color: Blanco Brillo · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 26150, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-noja-80-2-puertas-roble-eternity-lavabo',
+    nota: 'Mueble de baño Noja + Lavamanos · artículo 27556 · ref. Color: Roble Eternity · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 24900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-conj-noja-de-60-2-puertas-lavamanos',
+    nota: 'Mueble de baño Noja + Lavamanos · artículo 27412 · ref. Color: Gris mate · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 95900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-renoir-100-night-blue-2-cajones',
+    nota: 'Mueble de baño RENOIR 100 night blue 2 Cajones · artículo 28755 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 74200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-renoir-black-velvet-80-cm',
+    peso: 2,
+    nota: 'Mueble de baño RENOIR black velvet 80 cm 2 cajones · artículo 28766 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 79450, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-renoir-blue-fog-80-cm-2-cajones',
+    nota: 'Mueble de baño RENOIR blue fog 80 cm 2 cajones · artículo 28768 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 83450, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-renoir-white-cotton-100-cm-2-cajones',
+    nota: 'Mueble de baño RENOIR white cotton 100 cm 2 cajones · artículo 28754 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 60250, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-spirit-roble-africa-60-cm-c-tiradores-negro',
+    peso: 2,
+    nota: 'Mueble de baño SPIRIT roble áfrica 60 cm C/tiradores negro · artículo 28824 · marca Carabelatienda. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 57100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-uniiq-60-cm-2-cajones',
+    peso: 4,
+    nota: 'Mueble de baño Uniiq humo 60 cm 2 cajones · artículo 29971 · marca Carabelatienda. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 59500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-uniiq-humo-80-cm-de-2-cajones',
+    peso: 4,
+    nota: 'Mueble de baño Uniiq humo 80 cm de 2 cajones · artículo 29975 · marca Carabelatienda. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 56855, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-uniiq-izquierdo-humo-90cm',
+    nota: 'Mueble de baño Uniiq Izquierdo HUMO 90CM · artículo 28795 · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-003', PROV_CARABELA, 110800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/mueble-de-bano-uniiq-derecho-3',
+    nota: 'Mueble de baño Uniiq macchiao derecho · artículo 28024 · ref. Color: Macchiato · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
   c('MAT-26-003', PROV_INNOVA, 9444, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/muebles-bano/mueble-baño-aquaspa-cs-130018-50-aluminio-blanco-l-061742',
     nota: 'MUEBLE BAÑO AQUASPA CS.130018-50 ALUMINIO BLANCO LAVAMANO/ESPEJO 50 CM AQUASPA · artículo 061742 · ref. Mueble · marca AQUASPA. ' + SUPUESTO_ITBIS
@@ -24553,6 +25070,42 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/espejo-mallorca-60-60x80/',
     nota: 'Espejo Mallorca 60 60×80 · artículo 012908 · ref. 60×80. ' + SUPUESTO_ITBIS
   });
+  c('MAT-26-006', PROV_CARABELA, 56400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-reflexo-60x160',
+    nota: 'Espejo reflexo 60x160 · artículo 29247 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 11000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-rota',
+    nota: 'Espejo Rota · artículo 28059 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 9250, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-sena-4',
+    nota: 'Espejo Sena · artículo 28054 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 16300, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-sena-3',
+    nota: 'Espejo Sena · artículo 28057 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 15750, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-sena-2',
+    nota: 'Espejo Sena · artículo 28056 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 10860, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-sena-1',
+    nota: 'Espejo Sena · artículo 28058 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 9900, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-sena',
+    nota: 'Espejo Sena · artículo 28055 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 24850, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-vinci',
+    nota: 'Espejo Vinci · artículo 28061 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-006', PROV_CARABELA, 16085, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejos-square',
+    nota: 'Espejos Square · artículo 26798 · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
   c('MAT-26-006', PROV_INNOVA, 995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-aquaspa-gd146b-50x50-cm-dorado-cuadrado-064827',
     peso: 5,
@@ -24762,6 +25315,10 @@
   c('MAT-26-007', PROV_FERREMIX, 2035, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/lampara-decorativa-de-led-para-bano-tipo-barra',
     nota: 'Lampara ed 10w tipo barra para espejo de baño voteck · artículo T46347 · ref. T46347 · marca Volteck. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-007', PROV_CARABELA, 40600, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/espejo-led-olimpia',
+    nota: 'Espejo Led Olimpia · artículo 28060 · ref. Material: Vidrio · marca SALGAR. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-007', PROV_INNOVA, 1795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/espejosbano/espejo-baño-aquaspa-h-1012-60x60-cm-rectangular-lu-064824',
@@ -24985,6 +25542,10 @@
   c('MAT-26-009', PROV_BELLON, 9469, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Bañera Acero Esmaltado Liviana Der Briggs Beige · artículo 22551. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-009', PROV_CARABELA, 213400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/banera-new-arquitect',
+    nota: 'Bañera New Arquitect · artículo 29419 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-010', PROV_CERARTE, 16337.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-slate',
@@ -32905,6 +33466,162 @@
     moneda: 'USD',
     nota: 'Table Lamp with Marble base and Golden Disc D14in LED 3000K 8W 120v/60Hz · artículo MTBMG007732D360GDLEDWW8W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
   });
+  c('MAT-33-002', PROV_CARABELA, 5800, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/aplique-judi',
+    nota: 'Aplique Judi · artículo 29249 · marca Carabelatienda. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 5338, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/aplique-w43-h56-e22cm-1',
+    nota: 'APLIQUE (W43*H56*E22CM) · artículo 1539W56PN · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 37040.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-pared',
+    nota: 'LAMPARA DE PARED · artículo 1721W80CP · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 12433.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-mb8231l',
+    nota: 'LAMPARA DE PARED · artículo MB8231400 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7450.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-brown-bronze-2',
+    nota: 'LAMPARA DE PARED · artículo 1539W56BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 16294.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/frame-accord-wall-lamp',
+    nota: 'LAMPARA DE PARED EN ACABADO DE MADERA · artículo 4117LED · ref. PRO-002489. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 10717, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-shinny-gold-finish',
+    nota: 'WALL LAMP SHINNY GOLD FINISH · artículo 1114742SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9588, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-stainless-steel',
+    nota: 'WALL LAMP STAINLESS STEEL · artículo 1114742PN · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 5144.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/beaded-cone-wall-sconce-1',
+    nota: 'APLIQUE DE PARED CONO CON CUENTAS · artículo 14027N · ref. PRO-002428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 4123.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/beaded-demi-wall-sconce',
+    nota: 'APLIQUE DE PARED DEMI CON CUENTAS · artículo 14028 · ref. PRO-002428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 12184.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-glass-iron-in-brushed-brass-finish-clear-glass',
+    nota: 'LAMPARA DE PARED · artículo 1115943CL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 11600, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-glass-iron-in-brushed-brass-finish-clear-and-froggy-glass',
+    nota: 'LAMPARA DE PARED · artículo 1115842 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 13668.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-alabaster-iron-in-brushed-brass-finish-2',
+    nota: 'LAMPARA DE PARED · artículo 1100662 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9999.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-44',
+    nota: 'LAMPARA DE PARED · artículo 1116092 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 11337, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-matt-brass',
+    nota: 'LAMPARA DE PARED · artículo 1822W35BR · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 10089, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-41',
+    nota: 'LAMPARA DE PARED · artículo MB8316600 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7309, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-brown-bronze-4',
+    nota: 'LAMPARA DE PARED · artículo 1725W25GBBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 2870, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-33',
+    nota: 'LAMPARA DE PARED · artículo TBB0041XL · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 4858, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-pared-1',
+    nota: 'LAMPARA DE PARED · artículo 1648W25BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9325, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-gold-amber-glass',
+    nota: 'LÁMPARA DE PARED · artículo 1113911SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9526, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-sconce-3',
+    nota: 'LAMPARA DE PARED DE CUENCAS · artículo AE2512W · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9058, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-sconce-1',
+    nota: 'LAMPARA DE PARED DE CUENCAS · artículo AE2510WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 8676, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-wall-sconce',
+    nota: 'LAMPARA DE PARED DE CUENCAS · artículo AE5334NAT · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7885, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-sconce-5',
+    nota: 'LAMPARA DE PARED DE CUERDA · artículo AE2511WNAT · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7768, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-sconce-4',
+    nota: 'LAMPARA DE PARED DE CUERDA · artículo AE2517WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7182, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-sconce',
+    nota: 'LAMPARA DE PARED DE CUERDA · artículo AE5338OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 8090, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/5-tiered-sconce-natural-1',
+    nota: 'LAMPARA DE PARED DE JUTE · artículo AE25511OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 17285.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-28',
+    nota: 'LAMPARA DE PARED DORADA · artículo MB8269Y300 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 13270.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-27',
+    nota: 'LAMPARA DE PARED DORADA · artículo MB8269Y220 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 16871.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-30',
+    nota: 'LAMPARA DE PARED DORADA CON ESFERA BLANCA · artículo MB8108300 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 10275.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-29',
+    nota: 'LAMPARA DE PARED DORADA CON ESFERA BLANCA · artículo MB8108200 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 8260, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-alabaster-iron-in-brushed-brass-finish-natural-alabaster',
+    nota: 'LAMPARA DE PARED ESTILO MARMOL BLANCO · artículo 1116952 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 13713.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lena-wall-deco-lamp-ibung-leaves-natural',
+    nota: 'LAMPARA DE PARED LENA · artículo 401786 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 15720.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/leora-wall-deco-lamp-ental-leaves-natural',
+    nota: 'LAMPARA DE PARED LEORA · artículo 401787 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 5607, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-glossy-white-glass-shade-matt-black-brass-finish-metal',
+    nota: 'LAMPARA DE PARED NEGRA CON DORADO Y ESFERAS · artículo W2120 · ref. PRO-000980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7521, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-made-iron-in-matte-black-and-gold-finish',
+    nota: 'LAMPARA DE PARED NEGRO MATE E INTERIOR DORADO · artículo 1114362 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 9185, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-glass-iron-in-matt-brushed-brass-finish-sanded-glass-1',
+    nota: 'WALL LAMP, IRON AND GLASS,IRON IN MATT BRUSHED BRASS FINISH, SANDED GLASS · artículo 1117303 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 7976, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-iron-and-glass-iron-in-matt-brushed-brass-finish-sanded-glass',
+    nota: 'WALL LAMP, IRON AND GLASS,IRON IN MATT BRUSHED BRASS FINISH, SANDED GLASS · artículo 1117322 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_ILUMEL, 1809.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/lampara-de-pared-5',
+    nota: 'LAMPARA DE PARED · artículo TBB0051A · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
   c('MAT-33-002', PROV_MUNDOLED, 700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/aplique-2-led-integrado-negro-ovalado-4w-cod-1504/',
     nota: 'APLIQUE 2 LED INTEGRADO NEGRO OVALADO 4W cod. 1504 · artículo 1504. ' + SUPUESTO_ITBIS
@@ -33436,6 +34153,858 @@
     fecha: '2026-09-10', fuente: 'Precio publicado en https://luminatti.com/products/floor-lamp-gold-iron-with-white-stone-base-h65in-led-5w-3000k-120v-60hz',
     moneda: 'USD',
     nota: 'Floor Lamp Gold Iron with White Stone Base H65in LED 5W 3000K 120v/60Hz · artículo 9061-WH-5W-WW · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 17818, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-techo-29',
+    nota: 'LAMPARA DE TECHO · artículo UR304L · ref. PRO-000980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13901.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-61',
+    nota: 'PENDANT LAMP · artículo MD44614CL · ref. PRO-001792. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 22066, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-11',
+    nota: 'LAMPARA · artículo UR600M · ref. PRO-000980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24894, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-mount-iron-and-glass-iron-in-brushed-brass-finish-champagne-glass',
+    nota: 'CEILING MOUNT, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, CHAMPAGNE GLASS · artículo 1017544PK · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 56623.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-green-glass',
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH , GREEN GLASS · artículo 10174214GR · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 65981, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-champagne-glass-2',
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH,  CHAMPAGNE GLASS · artículo 10174818 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 25619, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-amber-champange-light-smoke-glass-3',
+    peso: 2,
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, AMBER, CHAMPANGE, LIGHT SMOKE GLASS · artículo 1017505 · ref. PRO-002380. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24169, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-champange-glass-4',
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, CHAMPANGE  GLASS · artículo 1017165CH · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 66706, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-8',
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, CLEAR GLASS · artículo 10159421CL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 68156, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-10',
+    nota: 'CHANDELIER, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, CLEAR GLASS · artículo 10173814CL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 54380, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-resin-iron-in-brushed-brass-finish-white-resin-with-black-pattern',
+    nota: 'CHANDELIER, IRON AND RESIN, IRON IN BRUSHED BRASS FINISH,  WHITE RESIN WITH BLACK PATTERN · artículo 10168613 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 32870, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-resin-iron-in-brushed-brass-finish-white-resin-with-black-pattern-1',
+    nota: 'CHANDELIER, IRON AND RESIN, IRON IN BRUSHED BRASS FINISH, WHITE RESIN WITH BLACK PATTERN · artículo 1016867 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 12327, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/flush-mount-iron-and-resin-iron-in-brushed-brass-finish-white-resin-with-black-pattern-1',
+    nota: 'FLUSH MOUNT, IRON AND RESIN, IRON IN BRUSHED BRASS FINISH, WHITE RESIN WITH BLACK PATTERN · artículo 1017212 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 43719, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-brown-bronze-3',
+    nota: 'LAMPARA  DE TECHO · artículo 1639D66BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 31412.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-36',
+    nota: 'LAMPARA  DE TECHO DORADA · artículo 10107624GD · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14709.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-candelabro-de-techo',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 1014254BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 22015.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-matt-black',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 1014258BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 37122.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-50',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 10226412 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 45170.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-49',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 10226712 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 51977.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-58',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 10153316 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 52277.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-67',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 1014049 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 67248.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-25',
+    nota: 'LAMPARA CANDELABRO DE TECHO · artículo 1013306 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18340.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-gold-finish-clear-glass',
+    nota: 'LAMPARA CANDELABRO DE TECHO EN ACABADO DORADO Y GLOBOS EN VIDRIO · artículo 1014216GD · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10876, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-45',
+    nota: 'LAMPARA COLGANTE · artículo 1116852 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 43063.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-324',
+    nota: 'LAMPARA COLGANTE · artículo 1638D80PS3D · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 47552.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-303',
+    nota: 'LAMPARA COLGANTE · artículo MD82142 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 53257.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-34',
+    nota: 'LAMPARA COLGANTE · artículo 10168413 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 64688.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-325',
+    nota: 'LAMPARA COLGANTE · artículo 1638D110PS3D · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 65790.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-4',
+    nota: 'LAMPARA COLGANTE · artículo MX82059 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1597, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-254',
+    peso: 7,
+    nota: 'LÁMPARA COLGANTE AMARILLA Y DORADA · artículo THD202371B · ref. PRO-002492. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1089, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-408',
+    nota: 'LÁMPARA COLGANTE AMARILLO · artículo THD20238A1L · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1512, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-246',
+    nota: 'LAMPARA COLGANTE BLANCO Y NEGRO · artículo MD51952B3C · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34509.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-15',
+    nota: 'LAMPARA COLGANTE COLOR DORADO · artículo 1012356 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18082, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beaded-hanging-lamp',
+    nota: 'LÁMPARA COLGANTE CON CUENTAS DE MADERA · artículo 3397C · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 15038, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-colgante-en-madera',
+    nota: 'LAMPARA COLGANTE DE CUENTAS DE MADERA DE ESTILO BOHEMIO Y RUSTICO · artículo 4020 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18113.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-in-antique-brass-finish',
+    nota: 'LAMPARA COLGANTE DE CUERDA NEGRA CON BOLAS TRANSPARENTE · artículo 1012403 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14868, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-66',
+    nota: 'LAMPARA COLGANTE DE TECHO DORADA CON GLOBOS BLANCOS · artículo 1014318SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 7562.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-in-antique-brass-and-black-finish',
+    nota: 'LAMPARA COLGANTE DORADA · artículo 1014643 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 35061.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ibiza-hanging-lamp-s-3-without-electric-cable-rattan-natural',
+    nota: 'LAMPARA COLGANTE IBIZA EN RATAN SET DE 3 · artículo 400988 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10333, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-hanging-lamp',
+    nota: 'LÁMPARA COLGANTE NATURAL · artículo 15079 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13777, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-hanging-lamp-1',
+    nota: 'LÁMPARA COLGANTE NATURAL · artículo 15078 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/3-layered-hanging-lamp',
+    nota: 'LÁMPARA COLGANTE NATURAL DE 3 CAPAS · artículo 15736 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13056.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/tania-hanging-lamp-without-electric-cable-rattan-natural-2',
+    nota: 'LAMPARA COLGANTE TANIA EN RATAN · artículo 401667 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 16035.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/tania-hanging-lamp-without-electric-cable-rattan-natural-1',
+    nota: 'LAMPARA COLGANTE TANIA EN RATAN · artículo 401666 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 26907.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/tania-hanging-lamp-without-electric-cable-rattan-natural',
+    nota: 'LAMPARA COLGANTE TANIA EN RATAN · artículo 401665 · ref. PRO-002150. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 26586, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-shade-iron-in-brushed-brass-finish-milk-white-glass-1',
+    nota: 'LAMPARA COLGANTE, EN HIERRO CON ACABADO DE LATON CEPILLADO · artículo 1016506BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 37945, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-shade-iron-in-brushed-brass-finish-milk-white-glass',
+    nota: 'LAMPARA COLGANTE, EN HIERRO CON ACABADO DE LATON CEPILLADO · artículo 10166824BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 23175.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-shade-iron-in-matt-black-finish-milk-white-glass',
+    nota: 'LAMPARA COLGANTE, EN HIERRO CON ACABADO NEGRO MATE · artículo 1016506BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 31386.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-30',
+    nota: 'LAMPARA COLGANTE, EN HIERRO PINTADO CON ACABADO DORADO, BOLA DE CRISTAL TRANSPARENTE · artículo 1017096 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34643.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-428',
+    nota: 'LAMPARA COLGANTE, HIERRO CON ACABADO DE LATON CEPILLADO, CRISTAL BLANCO · artículo 10164912 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 37050.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-in-brushed-brass-finish-4',
+    nota: 'LAMPARA DE ARANA, HECHA EN HIERRO, ACABADO EN LATÓN CEPILLADO · artículo 10145912 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14015.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/flush-mount-3',
+    nota: 'LÁMPARA DE EMPOTRAR, HIERRO ACABADO DORADO ANTIGUO · artículo 1014824GD · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11922.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-brushed-brass-1',
+    nota: 'LÁMPARA DE PARED · artículo 1114023 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1782.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lam',
+    nota: 'LAMPARA DE TECHO · artículo 21118 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 3799, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-389',
+    nota: 'LAMPARA DE TECHO · artículo 244013GOLD · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 4717, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-18',
+    nota: 'LAMPARA DE TECHO · artículo TBX218A1S · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 5896, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-17',
+    nota: 'LAMPARA DE TECHO · artículo TBX218A1M · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 6028.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/paper-mache-and-wood-hanging-lamp-small-mud-finish-antique-brown-1',
+    nota: 'LAMPARA DE TECHO · artículo 88632CANTBROWN · ref. PRO-002509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 6289, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-364',
+    nota: 'LAMPARA DE TECHO · artículo TBD18080 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 6643.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-399',
+    nota: 'LAMPARA DE TECHO · artículo TBD036A3 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 6977.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/paper-mache-and-wood-hanging-lamp-medium-mud-finish-antique-brown',
+    nota: 'LAMPARA DE TECHO · artículo 88631CANTBROWN · ref. PRO-002509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 7112.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/paper-mache-and-wood-hanging-lamp-medium-mud-finish-antique-brown-1',
+    nota: 'LAMPARA DE TECHO · artículo 88632BANTBROWN · ref. PRO-002509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 7208.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-400',
+    nota: 'LAMPARA DE TECHO · artículo TBD1653A · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8036, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-363',
+    nota: 'LAMPARA DE TECHO · artículo TBD180120 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8061.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/paper-mache-and-wood-hanging-lamp-big-mud-finish-antique-brown',
+    nota: 'LAMPARA DE TECHO · artículo 88631AANTBROWN · ref. PRO-002509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8295.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-41',
+    nota: 'LAMPARA DE TECHO · artículo 1541D32BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8463, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-brown-bronze-mw',
+    nota: 'LAMPARA DE TECHO · artículo 1804D33BBZMW · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8874.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/paper-mache-and-wood-hanging-lamp-big-mud-finish-antique-brown-1',
+    nota: 'LAMPARA DE TECHO · artículo 88632AANTBROWN · ref. PRO-002509. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 9737, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-381',
+    nota: 'LAMPARA DE TECHO · artículo TBD0365 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 9917, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-51',
+    nota: 'LAMPARA DE TECHO · artículo 1541D63BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10303.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-382',
+    nota: 'LAMPARA DE TECHO · artículo TBD036A5 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10474.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-329',
+    nota: 'LAMPARA DE TECHO · artículo MD80582GOLDEN · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11882.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-42',
+    nota: 'LAMPARA DE TECHO · artículo 1541D64BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11888.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-74',
+    nota: 'LAMPARA DE TECHO · artículo HD136120 · ref. PRO-001792. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13299, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-electroplating-rose-gold-milk-white-glass-2',
+    nota: 'LAMPARA DE TECHO · artículo 1802D30ERGMW · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14018, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/flush-mount-iron-and-resin-iron-in-brushed-brass-finish-white-resin-with-black-pattern',
+    nota: 'LAMPARA DE TECHO · artículo 1017202BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14122.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-techo',
+    nota: 'LAMPARA DE TECHO · artículo TD700248NIBLS · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14557.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wall-lamp-42',
+    nota: 'LAMPARA DE TECHO · artículo MX1055200 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 15572.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-made-iron-in-white-and-matt-black-and-brushed-brass-finish-2',
+    nota: 'LAMPARA DE TECHO · artículo 1016753BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 15768.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-matt-black-finish-clear-glass-with-bubbles-1',
+    nota: 'LAMPARA DE TECHO · artículo 1016736 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 17402, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-resin-iron-in-matt-black',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO · artículo 10163818BL · ref. PRO-002380. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18748.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-301',
+    nota: 'LAMPARA DE TECHO · artículo MD8170600A · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18968, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-matt-black-5',
+    nota: 'LAMPARA DE TECHO · artículo 1793D80MB · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 19352.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-polished-nickel-finish-frosted-glass-shade-1',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO · artículo 1014925PN · ref. PRO-002380. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20082.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-white-and-clear-glass-1',
+    nota: 'LAMPARA DE TECHO · artículo 1017179 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20339.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-298',
+    nota: 'LAMPARA DE TECHO · artículo MD82371000L · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20755.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-brushed-brass-finish-milk-white-glass-shade',
+    nota: 'LAMPARA DE TECHO · artículo 1016053 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20965, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-409',
+    nota: 'LAMPARA DE TECHO · artículo 1785D60BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 21027, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-champange-glass-3',
+    nota: 'LAMPARA DE TECHO · artículo 1017164CH · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 22500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-6',
+    nota: 'LAMPARA DE TECHO · artículo 1000706BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 22503, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-410',
+    nota: 'LAMPARA DE TECHO · artículo 1785D85BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24805.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/flush-mount-iron-and-glass-iron-in-brushed-brass-finish-clear-glass',
+    nota: 'LAMPARA DE TECHO · artículo 1015924 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24850.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-345',
+    nota: 'LAMPARA DE TECHO · artículo MD80586S · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 26927, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-matt-black',
+    nota: 'LAMPARA DE TECHO · artículo 1768D80MB · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 27470, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-brown-bronze-19',
+    nota: 'LAMPARA DE TECHO · artículo 1765D45BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 27705.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-made-iron-in-white-and-matt-black-and-brushed-brass-finish-1',
+    nota: 'LAMPARA DE TECHO · artículo 1016756BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 27783, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-brown-bronze-25',
+    nota: 'LAMPARA DE TECHO · artículo 1763D35BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 27794, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-resin-iron-in-matt-black-1',
+    nota: 'LAMPARA DE TECHO · artículo 10163830BL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 28761, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-acrylic-iron-in-shinny-gold-finish-clear-acrylic-1',
+    nota: 'LAMPARA DE TECHO · artículo 1012214SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 30211, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-9',
+    nota: 'LAMPARA DE TECHO · artículo 10159415CL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 30746.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-21',
+    nota: 'LAMPARA DE TECHO · artículo MD83166X · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 31388, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/lampara-de-techo-27',
+    nota: 'LAMPARA DE TECHO · artículo 1891D71BRWG · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 31738.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-342',
+    nota: 'LAMPARA DE TECHO · artículo MD81485 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 32049, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-matt-black-2',
+    nota: 'LAMPARA DE TECHO · artículo 1739D120MB · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 32509, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-236',
+    nota: 'LAMPARA DE TECHO · artículo 1639D51BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34447, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-brown-bronze-21',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO · artículo 1762D45BBZ · ref. PRO-002012. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34500, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-7',
+    nota: 'LAMPARA DE TECHO · artículo 10007010BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 36192, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-326',
+    nota: 'LAMPARA DE TECHO · artículo 1626D160BOW · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 37762.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-421',
+    nota: 'LAMPARA DE TECHO · artículo MD830612005 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 38318.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-in-brushed-brass-finish-amber-glass-1',
+    nota: 'LAMPARA DE TECHO · artículo 10168010AM · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 38434.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-416',
+    nota: 'LAMPARA DE TECHO · artículo MD83168Y · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 39878.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish',
+    nota: 'LAMPARA DE TECHO · artículo 10158010 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40120, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-acrylic-iron-in-shinny-gold-finish-clear-acrylic',
+    nota: 'LAMPARA DE TECHO · artículo 1012108SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40199, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-brown-bronze-9',
+    nota: 'LAMPARA DE TECHO · artículo 1725D80GBBZL · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40994.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-422',
+    nota: 'LAMPARA DE TECHO · artículo MD8306D700 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 41215.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-12',
+    nota: 'LAMPARA DE TECHO · artículo 10157013 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 41511, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-brushed-brass-finish-milk-white-glass-shade-1',
+    nota: 'LAMPARA DE TECHO · artículo 1016058 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 42295, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-2',
+    nota: 'LAMPARA DE TECHO · artículo 1017118 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 42453.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-22',
+    nota: 'LAMPARA DE TECHO · artículo 1015645 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 43005.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-antique-black-finish-amber-glass',
+    nota: 'LAMPARA DE TECHO · artículo 10173613AM · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 43671.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-426',
+    nota: 'LAMPARA DE TECHO · artículo MD10553Y · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 44180.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-346',
+    nota: 'LAMPARA DE TECHO · artículo MD805812 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 44849.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-5',
+    nota: 'LAMPARA DE TECHO · artículo 10140214 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 45565, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendante-lamp-finish-brown-bronze-9',
+    nota: 'LAMPARA DE TECHO · artículo 1725D80BBZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 46021.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-328',
+    nota: 'LAMPARA DE TECHO · artículo MD805810SGOLDEN · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 47200, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-44',
+    nota: 'LAMPARA DE TECHO · artículo 1719D49 · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 51874.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-2',
+    nota: 'LAMPARA DE TECHO · artículo 10157016 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 55164.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-297',
+    nota: 'LAMPARA DE TECHO · artículo MD82371000Y · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 58057.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-amber-champange-light-smoke-glass',
+    nota: 'LAMPARA DE TECHO · artículo 10175017 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 61975.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-425',
+    nota: 'LAMPARA DE TECHO · artículo MD82253B · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 62445.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-332',
+    nota: 'LAMPARA DE TECHO · artículo MD808614BLACK · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 74947.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-420',
+    nota: 'LAMPARA DE TECHO · artículo MD83076 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 75936.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-73',
+    nota: 'LAMPARA DE TECHO · artículo 1015949BBSM · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 80037.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-iron-in-brushed-brass-finish-clear-glass-5',
+    nota: 'LAMPARA DE TECHO · artículo 10173316 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 88359.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-330',
+    nota: 'LAMPARA DE TECHO · artículo MD805824B · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 48618, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-brushed-brass',
+    nota: 'LÁMPARA DE TECHO · artículo 10158410FG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 67386, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-gold-finish',
+    nota: 'LÁMPARA DE TECHO COLGANTE · artículo 10139117SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10932, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-64',
+    nota: 'LAMPARA DE TECHO COLGANTE DORADA CON GLOBOS BLANCOS · artículo 1014086SG · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40812.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-63',
+    nota: 'LAMPARA DE TECHO COLGANTE EN ACABADO DORADO Y VIDRIO · artículo 1014044 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 68555.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-62',
+    nota: 'LAMPARA DE TECHO COLGANTE EN ACABADO DORADO Y VIDRIO · artículo 10140414 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 21267.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-in-brushed-brass-finish-6',
+    nota: 'LAMPARA DE TECHO COLGANTE RECTANGULAR EN ACABADO DORADO Y VIDRIO TRANSPARENTE · artículo 1014468 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 30857.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-80',
+    nota: 'LAMPARA DE TECHO CON GLOBOS TRANSPARENTES · artículo 1015376 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 38453.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-81',
+    nota: 'LAMPARA DE TECHO CON GLOBOS TRANSPARENTES · artículo 1015379 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 13337, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/hanging-lamp-5',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO DE  JUTE · artículo AE2519NAT · ref. PRO-002567. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 25464, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-76',
+    nota: 'LAMPARA DE TECHO DE CRISTAL · artículo 10156114CL · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 28031, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-77',
+    nota: 'LAMPARA DE TECHO DE CRISTAL · artículo 10156114SM · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 37486, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-79',
+    nota: 'LAMPARA DE TECHO DE CRISTAL · artículo 10156117SM · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8940, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/glass-beads-pendant',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5317BLUE · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11632, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-pendant',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5326OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 12659, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-pendant-off-white',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5324OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14216, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-13',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5445WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14412, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-pendant-off-white-1',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5327OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 15100, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-pendant-1',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5325OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18349, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-11',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5311WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 19272, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-pendant-3',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5319WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 21661, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-10',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5299OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 23303, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-12',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5318WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 23566, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-3',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE13154OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24155, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-pendant',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5323WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 28098, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-2',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5310 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 30630, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-8',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5304WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 31070, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-6',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5302OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 33268, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-5',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5303OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40449, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-7',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5305WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 48309, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-4',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE13150OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 65893, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5322 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 68000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-9',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE5309WH · ref. PRO-002567. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 71935, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-1',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE54716 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 102000, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beads-chandelier-14',
+    nota: 'LAMPARA DE TECHO DE CUENCAS · artículo AE2518OFFWH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 12458, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/flush-mount-5',
+    nota: 'LAMPARA DE TECHO DE JUTE · artículo AE2513CNAT · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 16268, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/white-jute-pendant-small',
+    nota: 'LAMPARA DE TECHO DE JUTE · artículo AE54116WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 39570, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/white-jute-chandelier',
+    nota: 'LAMPARA DE TECHO DE JUTE · artículo AE24216WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 3192, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-122',
+    nota: 'LAMPARA DE TECHO DORADA · artículo MD891873GD · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 5264, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-gold',
+    nota: 'LAMPARA DE TECHO DORADA · artículo MYD20348 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8444, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-brass-white',
+    nota: 'LAMPARA DE TECHO DORADA · artículo 30516P · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 8724, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-clear-glass-brass-finish-metal-12',
+    nota: 'LAMPARA DE TECHO DORADA · artículo SG1043 · ref. PRO-000980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 15611.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-290',
+    nota: 'LAMPARA DE TECHO DORADA · artículo MD81801200 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 21745.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-288',
+    peso: 2,
+    nota: 'LAMPARA DE TECHO DORADA · artículo MD81786 · ref. PRO-001619. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 24321, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-crystal-gold-finish',
+    nota: 'LAMPARA DE TECHO DORADA · artículo UR3137 · ref. PRO-000980. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 73783.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-338',
+    nota: 'LAMPARA DE TECHO DORADA · artículo MD811711 · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 153327.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-308',
+    nota: 'LAMPARA DE TECHO DORADA · artículo MD82764G · ref. PRO-001619. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 32836.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-286',
+    nota: 'LAMPARA DE TECHO DORADA CON VIDRIO TRANSPARENTE · artículo 1014986BB · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 19606, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-glass-shade-iron-in-gold-finish-white-glass-shade',
+    nota: 'LAMPARA DE TECHO EN ACABADO DORADO Y GLOBOS BLANCOS · artículo 1014206GD · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1718, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/ceiling-lamp-11',
+    nota: 'LAMPARA DE TECHO EN COLOR MADERA · artículo TBX0131 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34591.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-2',
+    nota: 'LAMPARA DE TECHO EN CUENCAS BLANCAS · artículo MI24625 · ref. PRO-002428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 38224.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant',
+    nota: 'LAMPARA DE TECHO EN CUENCAS NATURALES · artículo MI24623 · ref. PRO-002428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 25032, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-chandelier',
+    nota: 'LAMPARA DE TECHO EN CUERDA · artículo AE2516WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 40613, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/natural-pendant-3',
+    nota: 'LAMPARA DE TECHO EN CUERDA NATURAL · artículo MI24626 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 90246.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/natural-pendant-large',
+    nota: 'LAMPARA DE TECHO EN CUERDA NATURAL · artículo MI24613 · ref. PRO-002428. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 14004, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/natural-pendant-1',
+    nota: 'LAMPARA DE TECHO EN CUERDA OFF BLANCO · artículo MI24616 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11944, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/natural-pendant',
+    nota: 'LAMPARA DE TECHO EN CUERDA OFF WHITE · artículo MI24611 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 11001.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-131',
+    nota: 'LAMPARA DE TECHO EN FORMA DE ESTRALLA · artículo 1627D45A · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 26836.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-in-antique-brass-and-white-finish',
+    nota: 'LAMPARA DE TECHO EN HIERRO Y LATON ANTIGUO EN ACABADO BLANCO · artículo 10145912WH · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 9058, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/jute-hanging-lamp-3',
+    nota: 'LAMPARA DE TECHO EN JUTE · artículo MIC15665 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1454, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-239',
+    nota: 'LAMPARA DE TECHO GRIS NEGRA Y BLANCA · artículo MD550103 · ref. PRO-002492. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 73113, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-beaded-kadi-chandelier',
+    nota: 'LAMPARA DE TECHO KADI · artículo MIC16540 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10393, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-pendant-natural',
+    nota: 'LAMPARA DE TECHO NATURAL · artículo AE54316 · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 10726, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/wooden-pendant-white',
+    nota: 'LAMPARA DE TECHO NATURAL · artículo AE54616WH · ref. PRO-002567. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 22527.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-29',
+    nota: 'LAMPARA DE TECHO, EN HIERRO PINTADO CON ACABADO DORADO, BOLA DE CRISTAL TRANSPARENTE · artículo 1017093 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20370.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/chandelier-iron-and-resin-iron-in-matt-black-white-resin-shade',
+    nota: 'LAMPARA DE TECHO, HIERRO Y RESINA, HIERRO EN NEGRO MATE, RESINA BLANCA · artículo 1015551 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18883.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-219',
+    nota: 'PENDANT LAMP · artículo 1620D80BMB · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 23642.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-28',
+    nota: 'PENDANT LAMP · artículo TD7002412NIBLS · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 20626.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-d86-h72cm',
+    nota: 'PENDANT LAMP BROWN BRONZE, LATON NEGRO · artículo 1541D85BZ · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 34320, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ilumel.com/products/pendant-lamp-iron-and-glass-iron-in-brushed-brass-finish-milk-white-glass-shade-2',
+    nota: 'PENDANT LAMP, IRON AND GLASS, IRON IN BRUSHED BRASS FINISH, MILK WHITE GLASS SHADE · artículo 1016056 · ref. PRO-002380. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1224, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/round-pendant-63-5cm-nickle',
+    nota: 'ROUND PENDANT 63.5CM NICKLE · artículo 58502 · ref. PRO-002242. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 47212, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/lampara-colgante-17',
+    nota: 'LAMPARA COLGANTE · artículo MD20150150950WH · ref. PRO-000967. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 18859, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/ceiling-lamp-1',
+    nota: 'CEILING LAMP · artículo MX1058022800MW · ref. PRO-000967. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 25924, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/lampara-colgante-19',
+    nota: 'LAMPARA COLGANTE · artículo 1802D60ERGMW · ref. PRO-002012. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 1780, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/iron-hanging-lamp-1',
+    nota: 'LAMPARA COLGANTE EN HIERRO · artículo ASM0320 · ref. PRO-002121. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 3886, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/pendant-lamp-20',
+    nota: 'LAMPARA DE TECHO COLGANTE PLATEADA · artículo PL13078CR · ref. PRO-001796. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_ILUMEL, 2528, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://www.ilumeloutlet.com/products/pendant-lamp-37',
+    nota: 'PENDANT LAMP · artículo MD70711SCHROME · ref. PRO-001619. ' + SUPUESTO_ITBIS
   });
   c('MAT-33-004', PROV_MUNDOLED, 14000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-3-aros-negra-di-378-bk-z-d800-100-120-3000k-169w-cod-2269/',

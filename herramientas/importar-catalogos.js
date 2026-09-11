@@ -984,6 +984,8 @@ const MUNDOLED = require('./reglas-mundoled.js');
 const HOGARDECO = require('./reglas-hogardeco.js');
 const CORTINAJE = require('./reglas-cortinaje.js');
 const DCO = require('./reglas-dco.js');
+const CARABELA = require('./reglas-carabela.js');
+const ILUMEL = require('./reglas-ilumel.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
@@ -1184,6 +1186,28 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/carabela-2026-09-11.json'),
+    etiqueta: 'Carabela · baño y cocina de gama alta',
+    proveedor: 'Carabela',
+    constante: 'PROV_CARABELA',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => CARABELA.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = CARABELA.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ilumel-2026-09-11.json'),
+    etiqueta: 'Ilumel · lámparas decorativas',
+    proveedor: 'Ilumel',
+    constante: 'PROV_ILUMEL',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => ILUMEL.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = ILUMEL.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/dco-2026-09-11.json'),
