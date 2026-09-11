@@ -214,7 +214,7 @@ ${header('interiorismo')}
      un ítem —«papel tapiz, 12 m²»—, que es lo que va a un presupuesto.
      Aquí se guarda el artículo concreto que se vio: esta foto, este
      modelo, este precio, esta tienda. Por eso son dos listas y no una. -->
-<button class="cot-fab" id="ir-fab" type="button" hidden aria-controls="ir-panel">
+<button class="cot-fab" id="ir-fab" type="button" aria-controls="ir-panel">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v16l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>
   Mi selección <span class="cot-n" id="ir-n">0</span>
 </button>
@@ -243,13 +243,18 @@ ${header('interiorismo')}
       Cada pieza lleva el precio que publica su tienda, con enlace a ella. La suma es
       orientativa: no incluye instalación, transporte ni las mermas del corte.
     </p>
+    <!-- Dos salidas y nada más. Una selección de interiorismo se cuenta por
+         decenas o por cientos, y eso no se manda por WhatsApp ni se pega en
+         un mensaje: se abre en una hoja o se imprime para enseñarlo. -->
     <div class="cot-acciones">
-      <button class="btn btn-wa" id="ir-wa" type="button">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.8 12a5.1 5.1 0 0 0 1 2.2 11.5 11.5 0 0 0 4.5 3.9c1.6.6 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>
-        Enviar por WhatsApp
+      <button class="btn btn-primary" id="ir-pdf" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V4h12v5M6 18v2h12v-2M6 9h12a2 2 0 0 1 2 2v5H4v-5a2 2 0 0 1 2-2z"/></svg>
+        Exportar a PDF
       </button>
-      <button class="btn btn-ghost" id="ir-copiar" type="button">Copiar la lista</button>
-      <button class="btn btn-ghost" id="ir-vaciar" type="button">Vaciar</button>
+      <button class="btn btn-ghost" id="ir-excel" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        Exportar a Excel
+      </button>
     </div>
   </div>
 </aside>

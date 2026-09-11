@@ -607,6 +607,10 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .cot-total .v{font-family:Jost,sans-serif;font-size:1.35rem;font-weight:600;color:var(--verde);font-variant-numeric:tabular-nums}
 .cot-nota{font-size:.79rem;color:var(--ink-mute);margin:.5rem 0 .9rem;line-height:1.5}
 .cot-acciones{display:grid;gap:.5rem}
+/* Sin esto el icono hereda el tamaño del viewBox y sale del porte de un
+   sello: los botones del pie del panel llevan su icono dentro y hay que
+   decirle cuánto mide. */
+.cot-acciones .btn svg{width:17px;height:17px;flex:none}
 .cot-overlay{position:fixed;inset:0;background:rgba(27,30,23,.38);z-index:80;opacity:0;visibility:hidden;transition:opacity .28s var(--ease),visibility .28s}
 .cot-overlay.is-open{opacity:1;visibility:visible}
 
@@ -1095,6 +1099,73 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ir-sel-txt a:hover { color: var(--verde); text-decoration: underline; }
 .ir-sel-txt small { display: block; font-size: .74rem; color: var(--ink-mute); margin-top: .15rem; }
 .ir-sel-der { display: flex; align-items: center; gap: .4rem; white-space: nowrap; }
+
+/* Cada categoría con su subtotal. Una selección de acabados se cuenta por
+   decenas o por cientos, y en una lista plana no se ve cuánto va en piso y
+   cuánto en luz, que es la primera pregunta de un presupuesto. */
+.ir-grupo { margin-bottom: 1.1rem; }
+.ir-grupo-cab {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: .5rem 0 .35rem;
+  margin-bottom: .1rem;
+  background: #fff;
+  border-bottom: 2px solid var(--verde-200);
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--verde-800);
+}
+.ir-grupo-cab small {
+  font-size: .72rem;
+  font-weight: 500;
+  color: var(--ink-mute);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.ir-grupo-sub { font-variant-numeric: tabular-nums; letter-spacing: 0; color: var(--verde-700); }
+
+/* ---------- la hoja que sale al imprimir ----------
+   No existe en pantalla. Al pulsar «Exportar a PDF» se llena y se llama a
+   la impresión del navegador, que ya sabe guardar en PDF y lo hace con
+   mejor tipografía que cualquier generador que pudiéramos cargar. */
+.solo-impresion { display: none; }
+@media print {
+  body > *:not(.solo-impresion) { display: none !important; }
+  .solo-impresion { display: block !important; }
+  @page { margin: 14mm 12mm; }
+  #ir-impresion { font-family: Inter, system-ui, sans-serif; color: #1b1e17; font-size: 10pt; }
+  .imp-cab { border-bottom: 3px solid #3f6e22; padding-bottom: .5rem; margin-bottom: 1rem; }
+  .imp-cab h1 { font-family: Jost, system-ui, sans-serif; font-size: 19pt; margin: 0 0 .2rem; color: #2c4e18; }
+  .imp-cab p { margin: 0; font-size: 8.5pt; color: #5a5f52; }
+  .imp-grupo { margin-bottom: .9rem; break-inside: auto; }
+  .imp-grupo h2 {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: Jost, system-ui, sans-serif; font-size: 10.5pt; margin: 0 0 .25rem;
+    color: #2c4e18; border-bottom: 1.5pt solid #c7dcb8; padding-bottom: .12rem;
+  }
+  .imp-grupo table { width: 100%; border-collapse: collapse; }
+  .imp-grupo tr { break-inside: avoid; }
+  .imp-grupo td { padding: .28rem .3rem; border-bottom: .5pt solid #e9e5d3; vertical-align: top; }
+  .imp-foto { width: 46pt; }
+  .imp-foto img { width: 42pt; height: 42pt; object-fit: contain; }
+  .imp-grupo small { color: #5a5f52; font-size: 8pt; }
+  .imp-url { word-break: break-all; }
+  .imp-p { text-align: right; white-space: nowrap; font-family: Jost, system-ui, sans-serif; font-weight: 600; }
+  .imp-total {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 3px solid #3f6e22; margin-top: .6rem; padding-top: .4rem;
+    font-family: Jost, system-ui, sans-serif; font-size: 13pt; font-weight: 600; color: #2c4e18;
+  }
+  .imp-pie { font-size: 8pt; color: #5a5f52; margin-top: .5rem; }
+}
 .ir-sel-p { font-family: 'Jost', system-ui, sans-serif; font-weight: 600; font-size: .9rem; color: var(--verde-700); }
 .ir-foto {
   position: relative;
