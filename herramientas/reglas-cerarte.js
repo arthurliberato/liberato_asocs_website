@@ -452,7 +452,7 @@ function regla(a) {
       { luz: /led|luz/.test(texto(a)) ? 'led' : '' });
     case 'CABINAS':               return BANOS.item('cabina-ducha', {});
     case 'PLATO DUCHA':           return BANOS.item('plato-ducha', {});
-    case 'BAÑERAS':               return BANOS.item('banera', {});
+    case 'BAÑERAS':               return BANOS.item(BANOS.tipoDeBanera(texto(a)), { montaje: BANOS.montajeDeBanera(texto(a)) });
     case 'BARRA DE SEGURIDAD':    return reglaBarra(a);
     case 'ACCESORIOS BAÑOS':      return reglaAccesorio(a);
     case 'DISPENSADOR D/ JABON':  return BANOS.item('dispensador-jabon',

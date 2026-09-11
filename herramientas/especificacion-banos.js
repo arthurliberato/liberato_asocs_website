@@ -134,10 +134,45 @@ const FAMILIAS = {
     alias: 'cabina de ducha, mampara, panel de ducha'
   },
 
+  /* CUATRO COSAS QUE SE LLAMABAN «BAÑERA»
+
+     Veintiocho cotizaciones de RD$ 9.469 a RD$ 430.700 —cuarenta y cinco
+     veces— en un solo ítem sin ejes, y dentro cuatro productos que no se
+     presupuestan igual: la bañera de baño, la infantil de 72 cm, la que
+     lleva chorros y el jacuzzi, que es otro aparato con su bomba y su
+     instalación eléctrica.
+
+     Quien presupuesta un apartamento pone una bañera; quien pone un
+     jacuzzi está resolviendo otra cosa, y necesita además una línea
+     eléctrica y un desagüe que la bañera no pide. Mezclarlos daba una
+     referencia de RD$ 99.105 que no servía para ninguno de los dos. */
   banera: {
     cat: 'MAT-26', base: 'Bañera', unidad: 'unidad',
-    ejes: [], etapa: 'terminacion', orden: 42,
-    alias: 'bañera, tina, bathtub, jacuzzi'
+    /* Y dentro de la bañera a secas queda un corte más, que los propios
+       nombres declaran: la exenta —isla, freestanding— se planta en medio
+       del baño y pide que la plomería suba por el piso; la empotrada va
+       contra la pared y se resuelve como siempre. Entre las dos hay tres
+       veces, y es la clase de decisión que se toma antes de picar. */
+    ejes: ['montaje'], etapa: 'terminacion', orden: 42,
+    alias: 'bañera, tina, bathtub'
+  },
+  'banera-infantil': {
+    cat: 'MAT-26', base: 'Bañera infantil', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 43,
+    esp: 'Bañera corta, de guardería o baño de niños',
+    alias: 'bañera infantil, kiddy, tina de niños'
+  },
+  'banera-hidromasaje': {
+    cat: 'MAT-26', base: 'Bañera de hidromasaje', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 44,
+    esp: 'Lleva bomba y chorros: pide línea eléctrica propia',
+    alias: 'bañera de hidromasaje, bañera con chorros, whirlpool'
+  },
+  jacuzzi: {
+    cat: 'MAT-26', base: 'Jacuzzi', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 45,
+    esp: 'Aparato completo con bomba: pide línea eléctrica y desagüe propios',
+    alias: 'jacuzzi, spa, tina de hidromasaje'
   },
 
   'plato-ducha': {
@@ -289,6 +324,41 @@ function activacion(texto) {
   return ACCIONADO.test(t) ? 'sensor' : 'manual';
 }
 
+/* CUÁL DE LAS CUATRO BAÑERAS
+
+   El nombre lo dice en las cuatro, y por eso la decisión vive aquí y no
+   en la regla de cada comercio: seis las clasifican y los seis mandaban
+   todo al mismo ítem.
+
+   El orden importa. «Bañera Hidromasaje Cataluña» lleva las dos
+   palabras y es una bañera con chorros, no un jacuzzi; el jacuzzi se
+   llama jacuzzi a secas. Y lo infantil se pregunta primero de todo,
+   porque una bañera infantil con chorros seguiría siendo infantil. */
+function tipoDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  if (/\bkiddy\b|infantil|\binfante\b|\bninos?\b|\bbebe\b/.test(t)) return 'banera-infantil';
+  if (/hidromasaje|whirlpool|c\/? ?chorros|con chorros/.test(t)) return 'banera-hidromasaje';
+  if (/\bjacuzzi\b|\bspa\b/.test(t)) return 'jacuzzi';
+  return 'banera';
+}
+
+/* Y si es bañera a secas, cómo se planta. «Isla» y «freestanding» son la
+   misma palabra en dos idiomas; «corner» va contra dos paredes y se
+   resuelve como una empotrada. Cuando el nombre no lo dice, es empotrada:
+   es lo corriente, y una exenta siempre se anuncia como tal porque es
+   justo lo que se está vendiendo. */
+function montajeDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  /* Los valores se eligen para que encajen con la etiqueta del eje, que
+     antepone «de»: sale «Bañera, de isla» y «Bañera, de empotrar», que es
+     como se piden. Con «exenta» y «empotrada» salía «Bañera, de exenta». */
+  return /\bisla\b|freestanding|free standing|\bexenta\b|c\/? ?patas|con patas/.test(t)
+    ? 'isla' : 'empotrar';
+}
+
 /* ¿LA MEZCLADORA SOLA, O EL JUEGO COMPLETO?
 
    «Mezcladora de ducha» es la válvula que va en la pared. «Columna de
@@ -376,4 +446,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, aCm };

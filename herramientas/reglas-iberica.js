@@ -251,7 +251,7 @@ function reglaBano(a) {
     return BANOS.item('mueble-bano', { montaje: /suspendido|flotante|pared/.test(t) ? 'pared' : 'piso' });
   }
   if (/^espejo/.test(t)) return BANOS.item('espejo', { luz: /led|luz/.test(t) ? 'led' : '' });
-  if (/^banera|^jacuzzi|^tina\b/.test(t)) return BANOS.item('banera', {});
+  if (/^banera|^jacuzzi|^tina\b/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t) });
   if (/^plato/.test(t)) return BANOS.item('plato-ducha', {});
   if (/^mampara|^cabina/.test(t)) return BANOS.item('cabina-ducha', {});
   if (/^bidet|^bide\b/.test(t)) return BANOS.item('bide', {});

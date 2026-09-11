@@ -51378,15 +51378,6 @@
     url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-aura?variant=012162%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
     nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW AURA · artículo CERA-35731 · ref. 170X75X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-009', PROV_CERARTE, 82974.23, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA',
-    sku: 'CERA-35732',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    nota: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA · artículo CERA-35732 · ref. 170X80X58 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-26-009', PROV_CERARTE, 117819.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
     itbis: false,
@@ -51396,13 +51387,6 @@
     url: 'https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
     nota: 'BAÑERA BRANT · artículo CERA-00077 · ref. 180X80X69 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-009', PROV_IBERICA, 109999.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
-    art: 'Bañera Acrilica Freestanding Blanco 170×80',
-    sku: '017247',
-    url: 'https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
-    nota: 'Bañera Acrilica Freestanding Blanco 170×80 · artículo 017247 · ref. 170×80. ' + SUPUESTO_ITBIS
-  });
   c('MAT-26-009', PROV_IBERICA, 220004.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
     art: 'Bañera Alaior Blanco 160x70x5 Carga Mineral',
@@ -51410,113 +51394,12 @@
     url: 'https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
     nota: 'Bañera Alaior Blanco 160x70x5 Carga Mineral · artículo 016937 · ref. 160×70×5. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-009', PROV_IBERICA, 74000.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
-    art: 'Bañera Cataluña Isla Blanco 170×90',
-    sku: '013680',
-    url: 'https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
-    nota: 'Bañera Cataluña Isla Blanco 170×90 · artículo 013680 · ref. 170×90. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 83900.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
-    peso: 2,
-    art: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios',
-    sku: '018597',
-    url: 'https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
-    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 195000, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
-    art: 'Bañera Freestanding Arianne Stonex Blanco',
-    sku: '016997',
-    url: 'https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
-    nota: 'Bañera Freestanding Arianne Stonex Blanco · artículo 016997. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 224176.4, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
-    art: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90',
-    sku: '015731',
-    url: 'https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
-    nota: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90 · artículo 015731 · ref. 170×90. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 14250, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
-    peso: 2,
-    art: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague',
-    sku: '010627',
-    url: 'https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
-    nota: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague · artículo 010627 · ref. 72×44×15.5. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
   c('MAT-26-009', PROV_IBERICA, 168799.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
     art: 'Bañera ONA Corner Der. Stonex Blanco',
     sku: '019493',
     url: 'https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
     nota: 'Bañera ONA Corner Der. Stonex Blanco · artículo 019493. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 147500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
-    art: 'Jacuzzi Palermo Acrilico Blanco',
-    sku: '005935',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
-    nota: 'Jacuzzi Palermo Acrilico Blanco · artículo 005935. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 389999.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
-    art: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico',
-    sku: '010967',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
-    nota: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico · artículo 010967 · ref. 235×285×81. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 295000, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
-    art: 'Jacuzzi Samana White 200x200x98 Acrílico',
-    sku: '010970',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
-    nota: 'Jacuzzi Samana White 200x200x98 Acrílico · artículo 010970 · ref. 200×200×98. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 69620, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
-    art: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho',
-    sku: '007741',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
-    nota: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho · artículo 007741 · ref. 180×90×40. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 100299.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
-    art: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico',
-    sku: '011601',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
-    nota: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico · artículo 011601 · ref. 1.20×2.00×0.42. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 64899.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
-    art: 'Jacuzzi Ibiza Blanco',
-    sku: '002029',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
-    nota: 'Jacuzzi Ibiza Blanco · artículo 002029. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 348100, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
-    art: 'Jacuzzi Macao Acrilico Blanco',
-    sku: '010308',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
-    nota: 'Jacuzzi Macao Acrilico Blanco · artículo 010308. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 76699.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
-    art: 'Jacuzzi Mallorca Acrílico Blanco 170×90',
-    sku: '002053',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
-    nota: 'Jacuzzi Mallorca Acrílico Blanco 170×90 · artículo 002053 · ref. 170×90. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-009', PROV_IBERICA, 430700, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
-    art: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico',
-    sku: '010960',
-    marca: 'Kohler',
-    url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
-    nota: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico · artículo 010960 · ref. 235×285×81 · marca Kohler. ' + SUPUESTO_ITBIS
   });
   c('MAT-26-009', PROV_BELLON, 9469, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
@@ -51533,7 +51416,60 @@
     url: 'https://carabela.do/products/banera-new-arquitect',
     nota: 'Bañera New Arquitect · artículo 29419 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-010', PROV_CERARTE, 16337.59, {
+  c('MAT-26-010', PROV_CERARTE, 82974.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA',
+    sku: 'CERA-35732',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    nota: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA · artículo CERA-35732 · ref. 170X80X58 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-010', PROV_IBERICA, 109999.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
+    art: 'Bañera Acrilica Freestanding Blanco 170×80',
+    sku: '017247',
+    url: 'https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
+    nota: 'Bañera Acrilica Freestanding Blanco 170×80 · artículo 017247 · ref. 170×80. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-010', PROV_IBERICA, 74000.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
+    art: 'Bañera Cataluña Isla Blanco 170×90',
+    sku: '013680',
+    url: 'https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
+    nota: 'Bañera Cataluña Isla Blanco 170×90 · artículo 013680 · ref. 170×90. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-010', PROV_IBERICA, 83900.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
+    peso: 2,
+    art: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios',
+    sku: '018597',
+    url: 'https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
+    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-010', PROV_IBERICA, 195000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
+    art: 'Bañera Freestanding Arianne Stonex Blanco',
+    sku: '016997',
+    url: 'https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
+    nota: 'Bañera Freestanding Arianne Stonex Blanco · artículo 016997. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-011', PROV_IBERICA, 14250, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
+    peso: 2,
+    art: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague',
+    sku: '010627',
+    url: 'https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
+    nota: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague · artículo 010627 · ref. 72×44×15.5. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-012', PROV_IBERICA, 224176.4, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
+    art: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90',
+    sku: '015731',
+    url: 'https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
+    nota: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90 · artículo 015731 · ref. 170×90. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-013', PROV_CERARTE, 16337.59, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-korvit?variant=012718%20%3A%20%20%3A%2080X120%20%3A%20NIEVE%20%3A%20ZENON',
     itbis: false,
     peso: 2,
@@ -51543,7 +51479,7 @@
     url: 'https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-korvit?variant=012718%20%3A%20%20%3A%2080X120%20%3A%20NIEVE%20%3A%20ZENON',
     nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA SMART KORVIT · artículo CERA-36589 · ref. 80X120 · marca ZENON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-010', PROV_CERARTE, 14956.2, {
+  c('MAT-26-013', PROV_CERARTE, 14956.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-frame-korvit?variant=012719%20%3A%20%20%3A%2090X90%20%3A%20NIEVE%20%3A%20ZENON',
     itbis: false,
     art: 'PLATO D/DUCHA C/DESAGUE C/REJILLA FRAME KORVIT',
@@ -51552,26 +51488,90 @@
     url: 'https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-frame-korvit?variant=012719%20%3A%20%20%3A%2090X90%20%3A%20NIEVE%20%3A%20ZENON',
     nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA FRAME KORVIT · artículo CERA-36590 · ref. 90X90 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-010', PROV_IBERICA, 23481.99, {
+  c('MAT-26-013', PROV_IBERICA, 23481.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-120x80-acrilico-blanco-derecha/',
     art: 'Plato De Ducha 120×80 Acrílico Blanco Derecha',
     sku: '003786',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-120x80-acrilico-blanco-derecha/',
     nota: 'Plato De Ducha 120×80 Acrílico Blanco Derecha · artículo 003786 · ref. 120×80. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-010', PROV_IBERICA, 14999.99, {
+  c('MAT-26-013', PROV_IBERICA, 14999.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-classic-traverten/',
     art: 'Plato De Ducha 36″X36″ Classic Traverten',
     sku: '003788',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-classic-traverten/',
     nota: 'Plato De Ducha 36″X36″ Classic Traverten · artículo 003788. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-010', PROV_IBERICA, 29990, {
+  c('MAT-26-013', PROV_IBERICA, 29990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-gold-travertino/',
     art: 'Plato De Ducha 36″X36″ Gold Travertino',
     sku: '003789',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-gold-travertino/',
     nota: 'Plato De Ducha 36″X36″ Gold Travertino · artículo 003789. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 147500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
+    art: 'Jacuzzi Palermo Acrilico Blanco',
+    sku: '005935',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
+    nota: 'Jacuzzi Palermo Acrilico Blanco · artículo 005935. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 389999.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
+    art: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico',
+    sku: '010967',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
+    nota: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico · artículo 010967 · ref. 235×285×81. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 295000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
+    art: 'Jacuzzi Samana White 200x200x98 Acrílico',
+    sku: '010970',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
+    nota: 'Jacuzzi Samana White 200x200x98 Acrílico · artículo 010970 · ref. 200×200×98. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 69620, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
+    art: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho',
+    sku: '007741',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
+    nota: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho · artículo 007741 · ref. 180×90×40. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 100299.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
+    art: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico',
+    sku: '011601',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
+    nota: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico · artículo 011601 · ref. 1.20×2.00×0.42. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 64899.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
+    art: 'Jacuzzi Ibiza Blanco',
+    sku: '002029',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
+    nota: 'Jacuzzi Ibiza Blanco · artículo 002029. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 348100, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
+    art: 'Jacuzzi Macao Acrilico Blanco',
+    sku: '010308',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
+    nota: 'Jacuzzi Macao Acrilico Blanco · artículo 010308. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 76699.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
+    art: 'Jacuzzi Mallorca Acrílico Blanco 170×90',
+    sku: '002053',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
+    nota: 'Jacuzzi Mallorca Acrílico Blanco 170×90 · artículo 002053 · ref. 170×90. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_IBERICA, 430700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
+    art: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico',
+    sku: '010960',
+    marca: 'Kohler',
+    url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
+    nota: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico · artículo 010960 · ref. 235×285×81 · marca Kohler. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-001', PROV_INNOVA, 2439, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/barrassegubaneraducha/barra-seguridad-baikal-tty-8865-3-a-abatible-blanc-070116',

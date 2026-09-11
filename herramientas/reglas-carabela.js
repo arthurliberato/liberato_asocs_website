@@ -120,7 +120,7 @@ function regla(a) {
     return null;
   }
   if (/^bidet|^bide\b/.test(n)) return BANOS.item('bide', {});
-  if (/^banera|^tina\b/.test(n)) return BANOS.item('banera', {});
+  if (/^banera|^tina\b|^jacuzzi/.test(n)) return BANOS.item(BANOS.tipoDeBanera(n), { montaje: BANOS.montajeDeBanera(n) });
   if (/^espejo/.test(n)) return BANOS.item('espejo', { luz: /led|luz/.test(t) ? 'led' : '' });
   if (/^botiquin/.test(n)) return BANOS.item('botiquin', {});
 

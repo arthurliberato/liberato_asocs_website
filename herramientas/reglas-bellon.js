@@ -428,7 +428,7 @@ function reglaBano(a) {
   if (/^mueble (de bano|con lavamanos)|^vanity/.test(t)) {
     return BANOS.item('mueble-bano', { montaje: /suspendido|flotante|pared/.test(t) ? 'pared' : 'piso' });
   }
-  if (/^banera|^tina de bano|^jacuzzi/.test(t)) return BANOS.item('banera', {});
+  if (/^banera|^tina de bano|^jacuzzi/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t) });
   if (/^barra (de apoyo|de seguridad)/.test(t)) {
     const cm = numero(baja(n), /(\d+(?:\.\d+)?)\s*cm/);
     const med = { forma: /abatible/.test(t) ? 'abatible' : /\ben l\b/.test(t) ? 'en L' : 'recta' };

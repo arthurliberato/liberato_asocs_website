@@ -1830,8 +1830,12 @@
   it('MAT-26', 'Espejo de baño', 'unidad', 2690, 665, 56400, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', alcance:'Material retirado en almacén'});
   it('MAT-26', 'Espejo de baño, con luz LED', 'unidad', 8386.54, 1795, 40600, {esp:'', etapa:'terminacion', origen:'importado', alias:'espejo de baño', medidas:{luz:'led'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Cabina o panel de ducha', 'unidad', 5733, 3118.5, 16029.13, {esp:'', etapa:'terminacion', origen:'importado', alias:'cabina de ducha, mampara, panel de ducha', alcance:'Material retirado en almacén'});
-  it('MAT-26', 'Bañera', 'unidad', 102520.34, 9469, 430700, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub, jacuzzi', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Bañera, de empotrar', 'unidad', 93421.49, 9469, 220004.71, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub', medidas:{montaje:'empotrar'}, alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Bañera, de isla', 'unidad', 83900.01, 74000.01, 195000, {esp:'', etapa:'terminacion', origen:'importado', alias:'bañera, tina, bathtub', medidas:{montaje:'isla'}, alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Bañera infantil', 'unidad', 14250, 14250, 14250, {esp:'Bañera corta, de guardería o baño de niños', etapa:'terminacion', origen:'importado', alias:'bañera infantil, kiddy, tina de niños', medidas:{montaje:'empotrar'}, alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Bañera de hidromasaje', 'unidad', 224176.4, 224176.4, 224176.4, {esp:'Lleva bomba y chorros: pide línea eléctrica propia', etapa:'terminacion', origen:'importado', alias:'bañera de hidromasaje, bañera con chorros, whirlpool', medidas:{montaje:'isla'}, alcance:'Material retirado en almacén'});
   it('MAT-26', 'Plato de ducha', 'unidad', 16337.59, 14956.2, 29990, {esp:'', etapa:'terminacion', origen:'importado', alias:'plato de ducha, receptáculo, base de ducha', alcance:'Material retirado en almacén'});
+  it('MAT-26', 'Jacuzzi', 'unidad', 147500, 64899.99, 430700, {esp:'Aparato completo con bomba: pide línea eléctrica y desagüe propios', etapa:'terminacion', origen:'importado', alias:'jacuzzi, spa, tina de hidromasaje', medidas:{montaje:'empotrar'}, alcance:'Material retirado en almacén'});
 
   /* MAT-27 */
   it('MAT-27', 'Barra de seguridad, abatible, 20 cm', 'unidad', 2439, 2439, 2439, {esp:'', etapa:'terminacion', origen:'importado', alias:'barra de seguridad, agarradera, accesibilidad', medidas:{forma:'abatible', largo_cm:20}, alcance:'Material retirado en almacén'});
