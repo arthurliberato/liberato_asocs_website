@@ -100,6 +100,55 @@
     web:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>'
   };
 
+  /* =========================================================
+     LO QUE SE QUEDA ARRIBA AL BAJAR
+
+     Al bajar por una tabla de ochocientas filas, lo que hace falta a
+     la vista no son los filtros —ya se aplicaron— sino saber qué
+     columna se está leyendo. Así que la cabecera de la tabla se pega
+     siempre, y la barra de filtros se repliega al bajar hasta dejar
+     solo el buscador y sus acciones, que es lo único que se usa a
+     media tabla. Al subir vuelve entera.
+
+     Las dos alturas van a variables de CSS porque de ellas cuelga
+     dónde se pega la cabecera de la tabla, y la de la barra cambia
+     cada vez que se repliega.
+     ========================================================= */
+
+  (function barraPegajosa() {
+    var cabecera = $('.site-header'), tools = $('.tools');
+    var raiz = document.documentElement;
+
+    function medir() {
+      if (cabecera) raiz.style.setProperty('--alto-cabecera', cabecera.offsetHeight + 'px');
+      raiz.style.setProperty('--alto-tools', (tools ? tools.offsetHeight : 0) + 'px');
+    }
+    medir();
+    window.addEventListener('resize', medir);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(medir);
+
+    if (!tools) return;
+
+    /* Histéresis: se repliega al pasar de 240 px bajando y solo vuelve
+       tras subir 60 px seguidos. Sin eso, un dedo tembloroso sobre el
+       umbral abre y cierra la barra sin parar. */
+    var ultimo = window.pageYOffset, subido = 0, plegada = false;
+    function alDeslizar() {
+      var y = window.pageYOffset;
+      var baja = y > ultimo;
+      subido = baja ? 0 : subido + (ultimo - y);
+      if (!plegada && baja && y > 240) { plegada = true; tools.classList.add('is-plegada'); medir(); }
+      else if (plegada && (subido > 60 || y < 120)) { plegada = false; tools.classList.remove('is-plegada'); medir(); }
+      ultimo = y;
+    }
+    var esperando = false;
+    window.addEventListener('scroll', function () {
+      if (esperando) return;
+      esperando = true;
+      window.requestAnimationFrame(function () { esperando = false; alDeslizar(); });
+    }, {passive: true});
+  })();
+
   /* ---------------- menú móvil (todas las páginas) ---------------- */
 
   (function navMovil() {

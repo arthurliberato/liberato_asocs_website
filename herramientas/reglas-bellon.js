@@ -415,7 +415,7 @@ function reglaBano(a) {
   if (/^(llave mezcladora|mezcladora|monomando)/.test(t)) {
     if (/ducha|regadera/.test(t)) return BANOS.item('ducha-mezcladora', {});
     const uso = /frega|cocina|lavadero|bar\b/.test(t) ? 'fregadero' : 'bano';
-    const act = /sensor|electronic|automatic|temporizad/.test(t) ? 'sensor' : 'manual';
+    const act = BANOS.activacion(t);
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }
   if (/^ducha/.test(t)) {

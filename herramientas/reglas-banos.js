@@ -105,7 +105,9 @@ const FAMILIA = [
   [/^Cambiador/i,                      'cambiador-bebes'],
   /* Casi todo lo de ducha empieza por «Ducha», así que la palabra que
      distingue está más adentro del nombre y no al principio. */
-  [/^Mezc/i,                           'ducha-mezcladora'],
+  /* La mezcladora la resuelve mezcladoraDe(), abajo: no basta con el
+     principio del nombre porque lo que decide es a qué aparato va. */
+  [/^(Mezc|Monomando|Grifo|Grifer[ií]a|Llave)/i, 'mezcladora'],
   [/^Manguera\b|manguera/i,            'ducha-manguera'],
   [/^Columna\b|columna/i,              'ducha-columna'],
   [/^Brazo\b|\bbrazo\b/i,             'ducha-brazo'],
@@ -222,7 +224,44 @@ function regla(a) {
      antes que «Ducha»— y decir que no es partida. */
   if (!f || !f[1]) return null;
 
+  if (f[1] === 'mezcladora') return mezcladoraDe(a, n);
   return E.item(f[1], medidasDe(a, f[1]));
+}
+
+/* A QUÉ APARATO VA LA MEZCLADORA
+
+   La tabla mandaba todo lo que empieza por «Mezc» a la mezcladora de
+   ducha. Mientras la única fuente de Ochoa era la extracción de baños eso
+   no se notaba, porque aquella no traía grifería; con el catálogo entero
+   entraron 624 artículos de «Grifería y mezcladora» y 210 mezcladoras de
+   lavamanos y de fregadero se archivaron como de ducha.
+
+   Lo que decide es el aparato, y el nombre suele decirlo —«MEZCLADORA P /
+   LAVAMANO», «MEZCLADORA PARA FREGADERO»—. Cuando no lo dice, lo dice la
+   subcategoría del comercio, que aquí es el dato y no una orientación:
+   Ochoa separa su grifería por aparato («para lavamanos», «para
+   fregaderos», «para bañeras y duchas», «para bidets») igual que Carabela
+   separa la suya entre baño y cocina. */
+function mezcladoraDe(a, n) {
+  const t = (n + ' ' + T.limpia(a.ref) + ' ' + T.limpia(a.cat3))
+    .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  /* «Llave» en una ferretería dominicana es casi siempre la mezcladora,
+     pero no siempre: la llave de paso corta el agua de un tramo y la de
+     manguera va en la pared del patio. Ni una ni otra son grifería de
+     aparato, y la de paso vale una décima parte. */
+  if (/llave de paso|llave de chorro|llave de manguera|llave de jardin|paso de bola/.test(t)) return null;
+
+  /* La de ducha y la de bañera son la misma partida —la que va empotrada
+     en la pared del baño— y otra que la del aparato. */
+  if (/ducha|regadera|banera|tina\b|empotrar/.test(t)) return E.item('ducha-mezcladora', {});
+  if (/bidet?\b/.test(t)) return null;   // el catálogo no tiene grifería de bidé
+
+  const uso = /frega|cocina|lavadero|lavatrapero|barra\b/.test(t) ? 'fregadero'
+            : /lavamano|lavabo|lavatorio/.test(t) ? 'bano'
+            : '';
+  if (!uso) return null;   // multiuso sin aparato declarado: no se adivina
+  return E.item('mezcladora', { uso: uso, activacion: E.activacion(t) });
 }
 
 module.exports = { regla, medidasDe, REPUESTO, PIEZA_SUELTA };

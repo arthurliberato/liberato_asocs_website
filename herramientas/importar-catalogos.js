@@ -57,7 +57,6 @@ const path = require('path');
 
 const RAIZ = path.join(__dirname, '..');
 const DATOS = path.join(RAIZ, 'precios/assets/js');
-const FUENTE = path.join(__dirname, 'datos-externos/ochoa-2026-09-09.json');
 
 const TOLERANCIA = 0.35;
 const PIES_POR_UNIDAD = 20;
@@ -967,17 +966,25 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
    baños se identifica por marca y modelo, y lo que hay que decidir es otra
    cosa: si el artículo le sirve o no a un constructor. Ese criterio vive en
    reglas-banos.js. */
+/* Los datos públicos de cada comercio, para el explorador. Se lee el
+   registro del sitio y no una copia: si el directorio cambia un teléfono,
+   la solicitud de cotización lo trae en la siguiente importación. */
+const PROV_POR_NOMBRE = (() => {
+  /* datos-proveedores.js se escribió para el navegador: cuelga de window.
+     En Node no hay window, así que se le da uno. */
+  global.window = global.window || global;
+  require(path.join(DATOS, 'datos-proveedores.js'));
+  const m = {};
+  ((global.PROVEEDORES || {}).lista || []).forEach(p => { m[p.nombre] = p; });
+  return m;
+})();
+
 const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
 const ALISS = require('./reglas-aliss.js');
 
-/* Los códigos que trae la extracción de baldosas del 11/09, para que la
-   del 09/09 solo aporte lo que aquella dejó fuera. Ver FUENTES. */
-const CUBIERTOS_11 = new Set(
-  require('./datos-externos/ochoa-baldosas-2026-09-11.json').map(a => a.codigo)
-);
 const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
@@ -995,85 +1002,56 @@ const CARABELA = require('./reglas-carabela.js');
 const BELLAVISTA = require('./reglas-bellavista.js');
 const ILUMEL = require('./reglas-ilumel.js');
 const LUMINATTI = require('./reglas-luminatti.js');
+const OCHOAILUM = require('./reglas-ochoa-iluminacion.js');
+const OCHOAMAD = require('./reglas-ochoa-madera.js');
 
 const FUENTES = [
-  {
-    archivo: FUENTE,
-    etiqueta: 'Ochoa · materiales de construcción',
-    proveedor: 'Ferretería Ochoa (8A)',
-    constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
-    motivo: 'la ficha no declara la medida',
-    mapeo: MAPEO_OCHOA,
-    regla: a => {
-      const r = REGLAS[a.cat2 + '/' + a.cat3];
-      return r ? r(a) : undefined;              // undefined = familia sin regla, ni se cuenta
-    }
-  },
-  {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-banos-2026-09-09.json'),
-    etiqueta: 'Ochoa · baños',
-    proveedor: 'Ferretería Ochoa (8A)',
-    constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
-    motivo: 'repuesto de consumidor o pieza suelta de decoración',
-    mapeo: {},
-    regla: a => BANOS.regla(a) || null
-  },
-  {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-seguridad-2026-09-09.json'),
-    etiqueta: 'Ochoa · seguridad y tecnología',
-    proveedor: 'Ferretería Ochoa (8A)',
-    constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
-    motivo: 'accesorio de computadora, no de obra',
-    mapeo: {},
-    regla: a => SEGTEC.regla(a) || null
-  },
-  /* LAS DOS EXTRACCIONES DE BALDOSAS
-     La del 11/09 trae foto de cada artículo —lo que faltaba para que los
-     pisos se pudieran mirar en el explorador— y además separa los campos
-     de la ficha con « | », de modo que se leen bien: en la del 09/09 las
-     claves venían pegadas al valor anterior y 447 fichas quedaban mal
-     partidas, con el material y el uso mezclados en un mismo campo.
+  /* EL CATÁLOGO ENTERO DE OCHOA, EN UN SOLO ARCHIVO
 
-     Pero deja fuera 157 artículos de «Terminación Baldosas»: las
-     crucetas, los niveladores, los perfiles de canto, los adhesivos y la
-     herramienta de instalación. Esos 75 ítems no se pierden, siguen
-     saliendo de la extracción anterior: la del 09/09 se queda, limitada a
-     lo que la nueva ya no cubre. */
+     Hasta ahora Ochoa entraba por cinco extracciones parciales —materiales,
+     baños, seguridad y dos de baldosas— hechas en dos fechas distintas, con
+     un juego de códigos para que las dos de baldosas no se pisaran. Esta es
+     una sola pasada del 11/09 sobre las catorce categorías de la tienda:
+     20.028 artículos, 15.546 con precio, y foto en 15.543 de ellos.
+
+     Sustituye a las cinco. Se comprobó antes de tirarlas: de todo lo que
+     traían, solo tres artículos con precio no están aquí —Ochoa dejó de
+     listarlos—, y de los 1.084 que se solapan en baldosas ninguno cambió de
+     precio, así que es el mismo retrato de la tienda, más ancho.
+
+     La regla se reparte por categoría, que es como venían repartidos los
+     archivos. Las categorías para las que todavía no hay regla devuelven
+     undefined: eso es «esta fuente no la cubre», no un descarte, y no se
+     cuenta como algo que se dejó fuera. */
   {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-11.json'),
-    etiqueta: 'Ochoa · baldosas',
+    archivo: path.join(__dirname, 'datos-externos/ochoa-completo-2026-09-11.json'),
+    etiqueta: 'Ochoa · catálogo completo',
     proveedor: 'Ferretería Ochoa (8A)',
     constante: 'PROV_OCHOA',
     fecha: '2026-09-11',
     motivo: 'la ficha no declara la especificación',
-    motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
-    mapeo: {},
-    /* undefined tiene que sobrevivir: es «familia sin regla», y no es lo mismo
-       que un descarte. En este catálogo hay un taco metálico archivado bajo
-       pavimentos que no es de este rubro y no tiene por qué contarse como
-       algo que se dejó fuera. */
-    regla: a => { const r = BALDOSAS.regla(a); return r === undefined ? undefined : (r || null); }
-  },
-  {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
-    etiqueta: 'Ochoa · terminación de baldosas',
-    proveedor: 'Ferretería Ochoa (8A)',
-    constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
-    motivo: 'la ficha no declara la especificación',
-    motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
-    mapeo: {},
-    /* Lo que la extracción del 11/09 ya trae no se vuelve a leer aquí: se
-       devuelve undefined, que es «no es de esta fuente» y no cuenta como
-       descarte. Si no, cada baldosa entraría dos veces, con dos precios del
-       mismo comercio y dos fechas. */
+    motivoDe: () => OCHOAILUM.MOTIVO.valor || OCHOAMAD.MOTIVO.valor ||
+                    BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: MAPEO_OCHOA,
     regla: a => {
-      if (CUBIERTOS_11.has(a.codigo)) return undefined;
-      const r = BALDOSAS.regla(a);
-      return r === undefined ? undefined : (r || null);
+      if (a.cat1 === 'baldosas') {
+        const r = BALDOSAS.regla(a);
+        return r === undefined ? undefined : (r || null);
+      }
+      if (a.cat1 === 'baños') return BANOS.regla(a) || null;
+      /* La grifería de Ochoa vive en «Plomería», no en «Baños»: 624
+         artículos que hasta ahora no entraban por ningún lado —de ahí que
+         el comercio apareciera con cuatro mezcladoras—. Es la misma regla
+         de baños; lo único que hacía falta era llamarla. */
+      if (a.cat1 === 'plomeria' && a.cat2 === 'griferia y mezcladora') return BANOS.regla(a) || null;
+      if (a.cat1 === 'seguridad y tecnologia') return SEGTEC.regla(a) || null;
+      if (a.cat1 === 'iluminacion') return OCHOAILUM.regla(a);
+      if (a.cat1 === 'madera') return OCHOAMAD.regla(a);
+      if (a.cat1 === 'materiales de construccion') {
+        const r = REGLAS[a.cat2 + '/' + a.cat3];
+        return r ? r(a) : undefined;
+      }
+      return undefined;
     }
   },
   {
@@ -1681,6 +1659,22 @@ function bloqueCotizaciones() {
        cuándo: así el día que la tasa cambie no hay que tocar mil líneas. */
     if (f.moneda && f.moneda !== 'RD$') campos.push("    moneda: '" + f.moneda + "'");
     if (repite > 1) campos.push('    peso: ' + repite);
+    /* EL ARTÍCULO, EN CAMPOS Y NO SOLO EN LA PROSA DE LA NOTA
+
+       La nota ya dice qué artículo es —«Mezcladora Alaior · artículo 84346
+       · marca Ramón Soler»— y para leerla eso basta. Pero para trabajar con
+       ello no: sacar la marca de una frase con una expresión regular es
+       exactamente la clase de cosa que se rompe callada. La marca decide la
+       gama, el enlace lleva a la ficha del comercio y el SKU es con lo que
+       se pide, así que van como campos.
+
+       No viajan al navegador: la forma compacta no los lleva y el detalle
+       tampoco, porque el globo enseña la nota, que ya los dice. Viven en el
+       registro, que es de donde leen el libro de Excel y la auditoría. */
+    if (a.nombre) campos.push("    art: '" + esc(limpia(a.nombre)) + "'");
+    if (a.codigo) campos.push("    sku: '" + esc(limpia(a.codigo)) + "'");
+    if (a.marca && !/GENERICO|GENÉRICO/i.test(a.marca)) campos.push("    marca: '" + esc(limpia(a.marca)) + "'");
+    if (a.url) campos.push("    url: '" + esc(a.url) + "'");
     /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
        lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
        y solo ese lo dice. */
@@ -2021,10 +2015,33 @@ function escribirVisual() {
       .sort((a, b) => b[1] - a[1]);
   });
 
+  /* POR DÓNDE SE LE PIDE A CADA COMERCIO
+
+     La selección se arma para mandarla, y mandarla quiere decir a alguien.
+     El directorio ya tiene los datos públicos de cada tienda, así que aquí
+     solo se copian los de los doce que salen en el explorador: el
+     explorador no carga datos-proveedores.js entero —son 60 KB para usar
+     doce líneas— y tampoco tiene por qué.
+
+     Hoy casi ninguno tiene más que la web, y eso está bien: la solicitud
+     se copia y se pega donde haga falta. El día que se recojan los correos
+     y los WhatsApp, aparecen los botones solos, sin tocar el navegador. */
+  const contacto = {};
+  comercios.forEach((n, i) => {
+    const p = PROV_POR_NOMBRE[n];
+    if (!p) return;
+    const c = {};
+    if (p.web) c.web = p.web;
+    if (p.email) c.email = p.email;
+    if (p.wa) c.wa = p.wa;
+    if (p.tel) c.tel = p.tel;
+    if (Object.keys(c).length) contacto[i] = c;
+  });
+
   fs.writeFileSync(path.join(dir, 'visual.json'), JSON.stringify({
     total: filas.length, porPagina: POR_PAGINA,
     pre: pre, com: comercios, pags: paginas, sub: subs, subCat: subCat,
-    todo: cifras(filas), cat: porCat, porCom: porCom
+    todo: cifras(filas), cat: porCat, porCom: porCom, contacto: contacto
   }));
 
   return { total: filas.length, paginas: paginas.length,

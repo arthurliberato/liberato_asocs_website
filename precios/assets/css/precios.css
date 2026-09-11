@@ -231,7 +231,17 @@ table{border-collapse:collapse;width:100%}
 /* =========================================================
    BUSCADOR + FILTROS (catálogo)
    ========================================================= */
-.tools{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.6rem 0 .65rem}
+/* --alto-cabecera es lo que mide la cabecera del sitio; --alto-tools, lo
+   que mide esta barra ahora mismo —cambia al replegarse—. Los dos los
+   mantiene app.js y de ellos cuelga dónde se pega la cabecera de la tabla,
+   que es lo que de verdad hace falta al bajar por una tabla larga. */
+:root{--alto-cabecera:72px;--alto-tools:0px}
+.tools{position:sticky;top:var(--alto-cabecera);z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.75rem 0 .8rem}
+/* Al bajar se queda solo el buscador y sus acciones: sigue sirviendo, pero
+   deja de comerse un tercio de la pantalla. Al subir vuelve entera. */
+.tools.is-plegada{padding:.5rem 0}
+.tools.is-plegada .ambitos,
+.tools.is-plegada .filtros{display:none}
 .tools-row{display:flex;gap:.5rem .6rem;align-items:center;flex-wrap:wrap}
 .search-box{position:relative;flex:1 1 320px;min-width:0}
 /* Al 70 % del cuerpo del texto: el buscador es una herramienta, no un
@@ -284,17 +294,31 @@ table{border-collapse:collapse;width:100%}
 .rango-precio input::-webkit-outer-spin-button,.rango-precio input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .rango-precio input:focus{background:#fff;border-color:var(--verde-200)}
 
-.resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .9rem;font-size:.9rem;color:var(--ink-mute)}
+/* Un renglón que dice cuántos ítems hay no merece dos centímetros de
+   margen: lo que se viene a ver es la tabla que va debajo. */
+.resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:.75rem 0 .5rem;font-size:.9rem;color:var(--ink-mute)}
 .resultado-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
 .link-reset{background:none;border:0;color:var(--verde);cursor:pointer;text-decoration:underline;font-size:.9rem;padding:0}
 
 /* =========================================================
    TABLA DE PRECIOS
    ========================================================= */
-.tabla-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+/* El desbordamiento horizontal solo hace falta donde la tabla no cabe.
+   Y tiene un costo escondido: un contenedor con overflow es un contenedor
+   de desplazamiento, y dentro de él position:sticky se pega a ÉL y no a la
+   ventana —o sea, no se pega—. Por eso el desbordamiento queda solo en
+   pantalla estrecha, que es donde de verdad se necesita deslizar de lado,
+   y en escritorio la cabecera de la tabla puede quedarse arriba. */
+.tabla-wrap{border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+@media (max-width:900px){.tabla-wrap{overflow-x:auto}}
 .tabla{min-width:820px;font-size:.94rem}
+/* Al bajar por una tabla de ochocientas filas, lo que hace falta arriba no
+   son los filtros sino saber qué columna se está leyendo. La cabecera se
+   pega justo debajo de la cabecera del sitio y de lo que quede de la barra
+   de filtros; el z-index la deja por encima de las filas y por debajo de
+   las dos barras, que es el orden en que se superponen. */
 .tabla thead th{
-  position:sticky;top:0;z-index:2;background:var(--bg-tint);
+  position:sticky;top:calc(var(--alto-cabecera) + var(--alto-tools));z-index:3;background:var(--bg-tint);
   text-align:left;font-family:Jost,sans-serif;font-size:.79rem;font-weight:600;
   letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);
   padding:.85rem 1rem;border-bottom:1px solid var(--line);white-space:nowrap;
@@ -583,6 +607,13 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .cot-total .v{font-family:Jost,sans-serif;font-size:1.35rem;font-weight:600;color:var(--verde);font-variant-numeric:tabular-nums}
 .cot-nota{font-size:.79rem;color:var(--ink-mute);margin:.5rem 0 .9rem;line-height:1.5}
 .cot-acciones{display:grid;gap:.5rem}
+/* display:grid le gana a la regla del navegador para [hidden], así que
+   hay que decirlo: sin esto las dos filas de botones salen a la vez. */
+.cot-acciones[hidden]{display:none}
+/* Sin esto el icono hereda el tamaño del viewBox y sale del porte de un
+   sello: los botones del pie del panel llevan su icono dentro y hay que
+   decirle cuánto mide. */
+.cot-acciones .btn svg{width:17px;height:17px;flex:none}
 .cot-overlay{position:fixed;inset:0;background:rgba(27,30,23,.38);z-index:80;opacity:0;visibility:hidden;transition:opacity .28s var(--ease),visibility .28s}
 .cot-overlay.is-open{opacity:1;visibility:visible}
 
@@ -805,7 +836,11 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ambitos{
   display:inline-flex;flex-wrap:wrap;gap:2px;
   background:var(--marfil);border:1px solid var(--marfil-hondo);
-  border-radius:100px;padding:3px;margin:.15rem 0 .1rem;
+  border-radius:100px;padding:3px;
+  /* Es el selector que decide qué catálogo se está mirando, no un filtro
+     más: necesita aire propio para leerse como lo que es. Iba pegado por
+     arriba y por abajo a las dos filas vecinas. */
+  margin:.7rem 0 .6rem;
 }
 .ambito-op{
   display:inline-flex;align-items:center;gap:.45rem;
@@ -1066,8 +1101,206 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 }
 .ir-sel-txt a:hover { color: var(--verde); text-decoration: underline; }
 .ir-sel-txt small { display: block; font-size: .74rem; color: var(--ink-mute); margin-top: .15rem; }
-.ir-sel-der { display: flex; align-items: center; gap: .4rem; white-space: nowrap; }
-.ir-sel-p { font-family: 'Jost', system-ui, sans-serif; font-weight: 600; font-size: .9rem; color: var(--verde-700); }
+.ir-sel-der { display: flex; align-items: center; gap: .45rem; white-space: nowrap; }
+
+/* CUÁNTAS
+
+   Una pieza guardada casi nunca es una pieza comprada: son doce metros de
+   porcelanato o seis luminarias iguales. El campo va estrecho a propósito
+   —caben tres cifras, que es lo que se teclea aquí— y con las cifras
+   tabulares alineadas, para que una columna de cantidades se lea de un
+   vistazo aunque las filas midan distinto. */
+.ir-cant {
+  width: 3.1rem;
+  padding: .22rem .3rem;
+  border: 1px solid var(--verde-200);
+  border-radius: var(--r-sm);
+  background: #fff;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .84rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  color: var(--ink);
+}
+.ir-cant:focus-visible { outline: 2px solid var(--verde); outline-offset: 1px; border-color: var(--verde); }
+.ir-sel-p { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.15; }
+.ir-sel-p small { font-size: .68rem; font-weight: 500; color: var(--ink-mute); }
+
+/* Cada categoría con su subtotal. Una selección de acabados se cuenta por
+   decenas o por cientos, y en una lista plana no se ve cuánto va en piso y
+   cuánto en luz, que es la primera pregunta de un presupuesto. */
+.ir-grupo { margin-bottom: 1.1rem; }
+.ir-grupo-cab {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: .5rem 0 .35rem;
+  margin-bottom: .1rem;
+  background: #fff;
+  border-bottom: 2px solid var(--verde-200);
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--verde-800);
+}
+.ir-grupo-cab small {
+  font-size: .72rem;
+  font-weight: 500;
+  color: var(--ink-mute);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.ir-grupo-sub { font-variant-numeric: tabular-nums; letter-spacing: 0; color: var(--verde-700); }
+
+/* ---------- solicitar cotización ----------
+   La misma selección vista por comercio. Ocupa el sitio de la lista dentro
+   del mismo panel: es la misma lista contada de otra manera, no otra
+   pantalla, y sacarla a un diálogo aparte haría perder de vista que lo que
+   se manda es exactamente lo que se guardó. */
+.ir-quien {
+  padding: .9rem 1rem 1rem;
+  margin-bottom: 1.1rem;
+  background: var(--marfil);
+  border: 1px solid var(--verde-200);
+  border-radius: var(--r-sm);
+}
+.ir-quien h3 {
+  margin: 0 0 .2rem;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--verde-800);
+}
+.ir-quien-n { margin: 0 0 .75rem; font-size: .76rem; line-height: 1.4; color: var(--ink-mute); }
+.ir-quien-campos { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem .7rem; }
+.ir-campo-ancho { grid-column: 1 / -1; }
+.ir-campo { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.ir-campo > span {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--verde-800);
+}
+.ir-campo > span i { font-style: normal; font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--ink-mute); }
+.ir-campo input {
+  width: 100%;
+  padding: .38rem .5rem;
+  border: 1px solid var(--verde-200);
+  border-radius: var(--r-sm);
+  background: #fff;
+  font-family: inherit;
+  font-size: .84rem;
+  color: var(--ink);
+}
+.ir-campo input:focus-visible { outline: 2px solid var(--verde); outline-offset: 1px; border-color: var(--verde); }
+
+.ir-rfq-tit {
+  margin: 0 0 .7rem;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--verde-800);
+}
+
+/* Una carta por comercio: lo que se le pide y por dónde. */
+.ir-carta {
+  padding: .8rem .9rem .85rem;
+  margin-bottom: .9rem;
+  border: 1px solid var(--verde-200);
+  border-radius: var(--r-sm);
+  background: #fff;
+}
+.ir-carta-cab {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .8rem;
+  flex-wrap: wrap;
+  padding-bottom: .45rem;
+  margin-bottom: .5rem;
+  border-bottom: 2px solid var(--verde-200);
+}
+.ir-carta-com {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--verde-800);
+}
+.ir-carta-cif { font-size: .74rem; color: var(--ink-mute); font-variant-numeric: tabular-nums; }
+.ir-carta-lista { margin: 0 0 .6rem; padding: 0 0 0 1.15rem; }
+.ir-carta-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .7rem;
+  padding: .17rem 0;
+  font-size: .8rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.ir-carta-lista li b {
+  flex: none;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  color: var(--verde-700);
+}
+.ir-carta-n { margin: 0 0 .6rem; font-size: .74rem; line-height: 1.4; color: var(--ink-mute); }
+.ir-carta-acc { display: flex; flex-wrap: wrap; gap: .4rem; }
+.ir-carta-acc .btn { font-size: .78rem; padding: .36rem .6rem; }
+.ir-carta-acc .btn svg { width: 15px; height: 15px; flex: none; }
+
+@media (max-width: 520px) {
+  .ir-quien-campos { grid-template-columns: 1fr; }
+}
+
+/* ---------- la hoja que sale al imprimir ----------
+   No existe en pantalla. Al pulsar «Exportar a PDF» se llena y se llama a
+   la impresión del navegador, que ya sabe guardar en PDF y lo hace con
+   mejor tipografía que cualquier generador que pudiéramos cargar. */
+.solo-impresion { display: none; }
+@media print {
+  body > *:not(.solo-impresion) { display: none !important; }
+  .solo-impresion { display: block !important; }
+  @page { margin: 14mm 12mm; }
+  #ir-impresion { font-family: Inter, system-ui, sans-serif; color: #1b1e17; font-size: 10pt; }
+  .imp-cab { border-bottom: 3px solid #3f6e22; padding-bottom: .5rem; margin-bottom: 1rem; }
+  .imp-cab h1 { font-family: Jost, system-ui, sans-serif; font-size: 19pt; margin: 0 0 .2rem; color: #2c4e18; }
+  .imp-cab p { margin: 0; font-size: 8.5pt; color: #5a5f52; }
+  .imp-grupo { margin-bottom: .9rem; break-inside: auto; }
+  .imp-grupo h2 {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: Jost, system-ui, sans-serif; font-size: 10.5pt; margin: 0 0 .25rem;
+    color: #2c4e18; border-bottom: 1.5pt solid #c7dcb8; padding-bottom: .12rem;
+  }
+  .imp-grupo table { width: 100%; border-collapse: collapse; }
+  .imp-grupo tr { break-inside: avoid; }
+  .imp-grupo td { padding: .28rem .3rem; border-bottom: .5pt solid #e9e5d3; vertical-align: top; }
+  .imp-foto { width: 46pt; }
+  .imp-foto img { width: 42pt; height: 42pt; object-fit: contain; }
+  .imp-grupo small { color: #5a5f52; font-size: 8pt; }
+  .imp-url { word-break: break-all; }
+  .imp-c { text-align: right; white-space: nowrap; width: 32pt;
+           font-family: Jost, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+  .imp-p { text-align: right; white-space: nowrap; font-family: Jost, system-ui, sans-serif; font-weight: 600; }
+  .imp-total {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 3px solid #3f6e22; margin-top: .6rem; padding-top: .4rem;
+    font-family: Jost, system-ui, sans-serif; font-size: 13pt; font-weight: 600; color: #2c4e18;
+  }
+  .imp-pie { font-size: 8pt; color: #5a5f52; margin-top: .5rem; }
+}
+.ir-sel-p { font-family: 'Jost', system-ui, sans-serif; font-weight: 600; font-size: .88rem; color: var(--verde-700); }
 .ir-foto {
   position: relative;
   display: block;

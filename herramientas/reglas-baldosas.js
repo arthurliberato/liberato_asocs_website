@@ -411,6 +411,11 @@ function clasificar(a) {
     const ac = acabado(f); if (ac) medidas.acabado = ac;
     const es = espesorMm(f); if (es) medidas.espesor_mm = es;
 
+    if (ESP.precioDeMarcador(a.precio * piezas)) {
+      MOTIVO.valor = 'el precio por m² queda por debajo del suelo del mercado: es un marcador, no un precio';
+      return null;
+    }
+
     const spec = ESP.item('baldosa', medidas);
     if (spec) spec.factorUnidad = { veces: piezas, nota: 'La tienda cotiza por pieza; van ' +
       medidas.piezas_m2 + ' piezas por m² según su propia referencia' };
@@ -423,6 +428,10 @@ function clasificar(a) {
     if (!dim) { MOTIVO.valor = 'la ficha no declara el formato de la malla'; return null; }
     const piezas = (porRef && porRef.piezas) || piezasPorM2(f) || a.unidadesM2;
     if (!(piezas > 0)) { MOTIVO.valor = 'la ficha no declara cuántas mallas lleva el metro cuadrado'; return null; }
+    if (ESP.precioDeMarcador(a.precio * piezas)) {
+      MOTIVO.valor = 'el precio por m² queda por debajo del suelo del mercado: es un marcador, no un precio';
+      return null;
+    }
     const spec = ESP.item('mosaico', {
       formato: ESP.formato(dim.largo, dim.ancho),
       largo_cm: ESP.aFormatoCm(Math.max(dim.largo, dim.ancho)),

@@ -105,7 +105,16 @@
          comparten veintiocho, y en una partida que se presupuesta por rango
          eso la corre hacia arriba sin que se vea. */
       peso: o.peso > 1 ? o.peso : 1,
-      nota: nota
+      nota: nota,
+      /* El artículo del comercio detrás de esta cotización: su nombre, su
+         SKU, su marca y el enlace a su ficha. La marca es la que decide la
+         gama; el enlace y el SKU son con lo que se pide. Solo los trae el
+         registro completo —las herramientas del repositorio—, no la forma
+         compacta que carga el navegador. */
+      art: o.art || '',
+      sku: o.sku || '',
+      marca: o.marca || '',
+      url: o.url || ''
     });
   }
   /* ---------------------------------------------------------
