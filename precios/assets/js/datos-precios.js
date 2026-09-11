@@ -53654,62 +53654,6 @@
     url: 'https://ochoa.com.do/producto/letrero-de-advertencia-electricidad-03030587',
     nota: 'LETRERO DE ADVERTENCIA ELECTRICIDAD · artículo 03-03-0587 · ref. LTL13625267 · marca LINSEG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 676.56, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/control-remoto-p-alarma-03060445',
-    art: 'CONTROL REMOTO P / ALARMA',
-    sku: '03-06-0445',
-    marca: 'AMC',
-    url: 'https://ochoa.com.do/producto/control-remoto-p-alarma-03060445',
-    nota: 'CONTROL REMOTO P / ALARMA · artículo 03-06-0445 · ref. TR-400 · marca AMC. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 2153.87, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-superficie-ip66-ip67-03061412',
-    art: 'CAJA DE SUPERFICIE IP66 / IP67',
-    sku: '03-06-1412',
-    marca: 'SIEMON',
-    url: 'https://ochoa.com.do/producto/caja-de-superficie-ip66-ip67-03061412',
-    nota: 'CAJA DE SUPERFICIE IP66 / IP67 · artículo 03-06-1412 · ref. X-IBOX-03 · marca SIEMON. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 4089.16, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-12-port-cat5e12-po-03061326',
-    art: 'MODULO 12-PORT CAT5E12-PO',
-    sku: '03-06-1326',
-    marca: 'ON Q',
-    url: 'https://ochoa.com.do/producto/modulo-12-port-cat5e12-po-03061326',
-    nota: 'MODULO 12-PORT CAT5E12-PO · artículo 03-06-1326 · ref. AC1014 · marca ON Q. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 5514.72, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-12-port-cat612-po-03061327',
-    art: 'MODULO 12-PORT CAT612-PO',
-    sku: '03-06-1327',
-    marca: 'ON Q',
-    url: 'https://ochoa.com.do/producto/modulo-12-port-cat612-po-03061327',
-    nota: 'MODULO 12-PORT CAT612-PO · artículo 03-06-1327 · ref. AC1015 · marca ON Q. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 146.83, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-ciego-wp3455wh-03061342',
-    art: 'MÓDULO CIEGO WP3455WH',
-    sku: '03-06-1342',
-    marca: 'ON Q',
-    url: 'https://ochoa.com.do/producto/modulo-ciego-wp3455wh-03061342',
-    nota: 'MÓDULO CIEGO WP3455WH · artículo 03-06-1342 · ref. WP3455WH · marca ON Q. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 4491.54, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-ric-c-12-acopladores-03061389',
-    art: 'MODULO RIC C / 12 ACOPLADORES',
-    sku: '03-06-1389',
-    marca: 'SIEMON',
-    url: 'https://ochoa.com.do/producto/modulo-ric-c-12-acopladores-03061389',
-    nota: 'MODULO RIC C / 12 ACOPLADORES · artículo 03-06-1389 · ref. RIC-F-LCQ24-01C · marca SIEMON. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 10635.77, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-comunicacion-ethernet-03060580',
-    art: 'MODULO COMUNICACION ETHERNET',
-    sku: '03-06-0580',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-comunicacion-ethernet-03060580',
-    nota: 'MODULO COMUNICACION ETHERNET · artículo 03-06-0580 · ref. B426 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
   c('MAT-28-024', PROV_OCHOA, 331.55, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/base-estandar-analogica-03061585',
     art: 'BASE ESTÁNDAR ANALÓGICA',
@@ -53733,63 +53677,6 @@
     marca: 'BOSCH',
     url: 'https://ochoa.com.do/producto/base-unica-4-cables-12-24v-03061594',
     nota: 'BASE UNICA 4 CABLES 12 / 24V · artículo 03-06-1594 · ref. F220-B6PS · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 657.93, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-108-6x36mm-03061891',
-    art: 'CAJA DE CONEXION 108.6X36MM',
-    sku: '03-06-1891',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/caja-de-conexion-108-6x36mm-03061891',
-    nota: 'CAJA DE CONEXION 108.6X36MM · artículo 03-06-1891 · ref. TR-JB03-G-IN · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 744.11, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-117-8x36mm-03061893',
-    peso: 2,
-    art: 'CAJA DE CONEXION 117.8X36MM',
-    sku: '03-06-1893',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/caja-de-conexion-117-8x36mm-03061893',
-    nota: 'CAJA DE CONEXION 117.8X36MM · artículo 03-06-1893 · ref. TR-JB03-I-IN · marca STD. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 751.93, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-126x36mm-03061892',
-    art: 'CAJA DE CONEXION 126X36MM',
-    sku: '03-06-1892',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/caja-de-conexion-126x36mm-03061892',
-    nota: 'CAJA DE CONEXION 126X36MM · artículo 03-06-1892 · ref. TR-JB03-H-IN · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1286.99, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexiones-p-camara-bullet-03061807',
-    art: 'CAJA DE CONEXIONES P / CAMARA BULLET',
-    sku: '03-06-1807',
-    marca: 'STD',
-    url: 'https://ochoa.com.do/producto/caja-de-conexiones-p-camara-bullet-03061807',
-    nota: 'CAJA DE CONEXIONES P / CAMARA BULLET · artículo 03-06-1807 · ref. TR-JB05-A-IN · marca STD. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 7086.75, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-amc-con-1-rail-din-03061589',
-    art: 'CARCASA AMC CON 1 RAÍL DIN',
-    sku: '03-06-1589',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/carcasa-amc-con-1-rail-din-03061589',
-    nota: 'CARCASA AMC CON 1 RAÍL DIN · artículo 03-06-1589 · ref. AEC-AMC2-UL01 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 8661.58, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-amc-con-2-rail-din-03061590',
-    art: 'CARCASA AMC CON 2 RAÍL DIN',
-    sku: '03-06-1590',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/carcasa-amc-con-2-rail-din-03061590',
-    nota: 'CARCASA AMC CON 2 RAÍL DIN · artículo 03-06-1590 · ref. AEC-AMC2-UL02 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3481.22, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-expansion-popex-bg-series-03061193',
-    art: 'MODULO DE EXPANSION POPEX BG-SERIES',
-    sku: '03-06-1193',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-expansion-popex-bg-series-03061193',
-    nota: 'MODULO DE EXPANSION POPEX BG-SERIES · artículo 03-06-1193 · ref. B299 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 4335.82, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-de-cuello-de-ganzo-para-domo-ptz-03061809',
@@ -53815,14 +53702,6 @@
     url: 'https://ochoa.com.do/producto/soporte-tubo-colgante-12-03061268',
     nota: 'SOPORTE TUBO COLGANTE 12” · artículo 03-06-1268 · ref. NDA-U-PMT · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 34654.38, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/receptor-multicanal-5-2-4k-hdvr-av-negro-03061641',
-    art: 'RECEPTOR MULTICANAL 5.2 4K HDVR AV NEGRO',
-    sku: '03-06-1641',
-    marca: 'SONY',
-    url: 'https://ochoa.com.do/producto/receptor-multicanal-5-2-4k-hdvr-av-negro-03061641',
-    nota: 'RECEPTOR MULTICANAL 5.2 4K HDVR AV NEGRO · artículo 03-06-1641 · ref. O-STR/DH590 · marca SONY. ' + SUPUESTO_ITBIS
-  });
   c('MAT-28-024', PROV_OCHOA, 1259.02, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-de-pared-y-techo-smb-03060535',
     art: 'SOPORTE DE PARED Y TECHO SMB',
@@ -53847,54 +53726,6 @@
     url: 'https://ochoa.com.do/producto/soporte-pared-camara-microdomo-03060530',
     nota: 'SOPORTE PARED CAMARA MICRODOMO · artículo 03-06-0530 · ref. NDA-WMT-MICDOME · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 4924.63, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/comunicador-gsm-03061784',
-    art: 'COMUNICADOR GSM',
-    sku: '03-06-1784',
-    marca: 'LINSEG',
-    url: 'https://ochoa.com.do/producto/comunicador-gsm-03061784',
-    nota: 'COMUNICADOR GSM · artículo 03-06-1784 · ref. 000403CELL8 · marca LINSEG. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 6614.35, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-con-1-rail-din-03060563',
-    art: 'CARCASA CON 1 RAIL DIN',
-    sku: '03-06-0563',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/carcasa-con-1-rail-din-03060563',
-    nota: 'CARCASA CON 1 RAIL DIN · artículo 03-06-0563 · ref. AEC-AMC2-UL1 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 2299.62, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-telefono-plug-in-03060578',
-    art: 'MODULO TELEFONO PLUG-IN',
-    sku: '03-06-0578',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-telefono-plug-in-03060578',
-    nota: 'MODULO TELEFONO PLUG-IN · artículo 03-06-0578 · ref. B430 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1910.93, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/sello-03160429',
-    art: 'SELLO',
-    sku: '03-16-0429',
-    marca: 'FAAC',
-    url: 'https://ochoa.com.do/producto/sello-03160429',
-    nota: 'SELLO · artículo 03-16-0429 · ref. A12025P5008 · marca FAAC. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1683.66, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-expasion-8-entradas-03060585',
-    art: 'MODULO DE EXPASION 8 ENTRADAS',
-    sku: '03-06-0585',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-expasion-8-entradas-03060585',
-    nota: 'MODULO DE EXPASION 8 ENTRADAS · artículo 03-06-0585 · ref. B208 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 574.9, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-expansivo-popit-03060586',
-    art: 'MODULO EXPANSIVO POPIT',
-    sku: '03-06-0586',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-expansivo-popit-03060586',
-    nota: 'MODULO EXPANSIVO POPIT · artículo 03-06-0586 · ref. D9127U · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
   c('MAT-28-024', PROV_OCHOA, 309.44, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/base-estandar-analogica-4-pulg-03060559',
     art: 'BASE ESTÁNDAR ANALÓGICA 4 PULG',
@@ -53902,110 +53733,6 @@
     marca: 'BOSCH',
     url: 'https://ochoa.com.do/producto/base-estandar-analogica-4-pulg-03060559',
     nota: 'BASE ESTÁNDAR ANALÓGICA 4 PULG · artículo 03-06-0559 · ref. FAA-440-B4 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1091.73, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-post-sup-475x325x225-roja-03061228',
-    art: 'CAJA POST. SUP., 4,75X3,25X2,25”, ROJA',
-    sku: '03-06-1228',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/caja-post-sup-475x325x225-roja-03061228',
-    nota: 'CAJA POST. SUP., 4,75X3,25X2,25”, ROJA · artículo 03-06-1228 · ref. FMM-100WPBB-R · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3906.74, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-para-detector-de-humo-03060521',
-    art: 'CARCASA PARA DETECTOR DE HUMO',
-    sku: '03-06-0521',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/carcasa-para-detector-de-humo-03060521',
-    nota: 'CARCASA PARA DETECTOR DE HUMO · artículo 03-06-0521 · ref. D341 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 452.89, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-transparente-03061224',
-    art: 'CUBIERTA, TRANSPARENTE.',
-    sku: '03-06-1224',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/cubierta-transparente-03061224',
-    nota: 'CUBIERTA, TRANSPARENTE. · artículo 03-06-1224 · ref. FMC-FLAP-RW · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 22010.69, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/display-lcd-fpa-1000-03060548',
-    art: 'DISPLAY LCD FPA-1000',
-    sku: '03-06-0548',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/display-lcd-fpa-1000-03060548',
-    nota: 'DISPLAY LCD FPA-1000 · artículo 03-06-0548 · ref. FMR-1000-RCMD · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3442.57, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-entrada-dual-p-fpa-1000-03060549',
-    art: 'MODULO DE ENTRADA DUAL P / FPA-1000',
-    sku: '03-06-0549',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-entrada-dual-p-fpa-1000-03060549',
-    nota: 'MODULO DE ENTRADA DUAL P / FPA-1000 · artículo 03-06-0549 · ref. FLM-325-214 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 6150.21, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-extension-multiplex-p-7024-03060504',
-    art: 'MODULO DE EXTENSION MULTIPLEX P / 7024',
-    sku: '03-06-0504',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-extension-multiplex-p-7024-03060504',
-    nota: 'MODULO DE EXTENSION MULTIPLEX P / 7024 · artículo 03-06-0504 · ref. FPE-7039 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3449.44, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-rele-doble-2a-03060550',
-    art: 'MÓDULO DE RELÉ DOBLE 2A',
-    sku: '03-06-0550',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-rele-doble-2a-03060550',
-    nota: 'MÓDULO DE RELÉ DOBLE 2A · artículo 03-06-0550 · ref. FLM-325-2R4-2A · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1276.45, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-1-entrada-12v-03060506',
-    art: 'MODULO MULTIPLEX 1 ENTRADA 12V',
-    sku: '03-06-0506',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-multiplex-1-entrada-12v-03060506',
-    nota: 'MODULO MULTIPLEX 1 ENTRADA 12V · artículo 03-06-0506 · ref. D7044 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 2217.5, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-entrada-salida-12v-03060507',
-    art: 'MODULO MULTIPLEX ENTRADA / SALIDA 12V',
-    sku: '03-06-0507',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-multiplex-entrada-salida-12v-03060507',
-    nota: 'MODULO MULTIPLEX ENTRADA / SALIDA 12V · artículo 03-06-0507 · ref. D7053 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 1199.1, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-mini-1-entrada-12v-03060505',
-    art: 'MODULO MULTIPLEX MINI 1 ENTRADA 12V',
-    sku: '03-06-0505',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-multiplex-mini-1-entrada-12v-03060505',
-    nota: 'MODULO MULTIPLEX MINI 1 ENTRADA 12V · artículo 03-06-0505 · ref. D7044M · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3868.04, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-salida-supervisado-clase-a-b-03060552',
-    art: 'MODULO SALIDA SUPERVISADO CLASE A / B',
-    sku: '03-06-0552',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-salida-supervisado-clase-a-b-03060552',
-    nota: 'MODULO SALIDA SUPERVISADO CLASE A / B · artículo 03-06-0552 · ref. FLM-325-NA4 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 11977.01, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-slc-conectable-para-fpa-1000-03061236',
-    art: 'MÓDULO SLC CONECTABLE PARA FPA-1000',
-    sku: '03-06-1236',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-slc-conectable-para-fpa-1000-03061236',
-    nota: 'MÓDULO SLC CONECTABLE PARA FPA-1000 · artículo 03-06-1236 · ref. FPE-1000-SLC · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 11751.42, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/programador-punto-analogico-de-mano-03060554',
-    art: 'PROGRAMADOR PUNTO ANALOGICO DE MANO',
-    sku: '03-06-0554',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/programador-punto-analogico-de-mano-03060554',
-    nota: 'PROGRAMADOR PUNTO ANALOGICO DE MANO · artículo 03-06-0554 · ref. D5070 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 165.78, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soporte-de-montaje-lc1-mmsb-03061249',
@@ -54015,30 +53742,6 @@
     url: 'https://ochoa.com.do/producto/soporte-de-montaje-lc1-mmsb-03061249',
     nota: 'SOPORTE DE MONTAJE LC1-MMSB · artículo 03-06-1249 · ref. LC1-MMSB · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 781.46, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/bisel-p-pulsador-de-alarma-mcp-rw-rojo-03061568',
-    art: 'BISEL P / PULSADOR DE ALARMA MCP RW, ROJO',
-    sku: '03-06-1568',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/bisel-p-pulsador-de-alarma-mcp-rw-rojo-03061568',
-    nota: 'BISEL P / PULSADOR DE ALARMA MCP RW, ROJO · artículo 03-06-1568 · ref. FMC-BEZEL-RD · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3564.1, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-zona-convencional-03061586',
-    art: 'MÓDULO DE ZONA CONVENCIONAL',
-    sku: '03-06-1586',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-de-zona-convencional-03061586',
-    nota: 'MÓDULO DE ZONA CONVENCIONAL · artículo 03-06-1586 · ref. FLM-325-CZM4 · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3149.67, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-dispositivos-de-notificacion-03061596',
-    art: 'MODULO DISPOSITIVOS DE NOTIFICACION',
-    sku: '03-06-1596',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/modulo-dispositivos-de-notificacion-03061596',
-    nota: 'MODULO DISPOSITIVOS DE NOTIFICACION · artículo 03-06-1596 · ref. D192G · marca BOSCH. ' + SUPUESTO_ITBIS
-  });
   c('MAT-28-024', PROV_OCHOA, 175.04, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/base-din-sonoff-03061469',
     art: 'BASE DIN SONOFF',
@@ -54046,14 +53749,6 @@
     marca: 'SONOFF',
     url: 'https://ochoa.com.do/producto/base-din-sonoff-03061469',
     nota: 'BASE DIN SONOFF · artículo 03-06-1469 · ref. DRDINRAILTRAY · marca SONOFF. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 5282.42, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borne-transmisor-infrarojos-12vcc-03060674',
-    art: 'BORNE TRANSMISOR INFRAROJOS 12VCC',
-    sku: '03-06-0674',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/borne-transmisor-infrarojos-12vcc-03060674',
-    nota: 'BORNE TRANSMISOR INFRAROJOS 12VCC · artículo 03-06-0674 · ref. HA11000 · marca MASTER. ' + SUPUESTO_ITBIS
   });
   c('MAT-28-024', PROV_OCHOA, 2294.68, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/bracket-u-zl-p-fijar-cerradura-600lbs-03062117',
@@ -54079,39 +53774,88 @@
     url: 'https://ochoa.com.do/producto/bracket-zl-p-fijar-cerradura-600lbs-03062118',
     nota: 'BRACKET ZL P / FIJAR CERRADURA 600LBS · artículo 03-06-2118 · ref. DHI-ASF500-ZL · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 538.84, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/control-remoto-rf-03061610',
-    art: 'CONTROL REMOTO RF',
-    sku: '03-06-1610',
-    marca: 'SONOFF',
-    url: 'https://ochoa.com.do/producto/control-remoto-rf-03061610',
-    nota: 'CONTROL REMOTO RF · artículo 03-06-1610 · ref. RM433 · marca SONOFF. ' + SUPUESTO_ITBIS
+  c('MAT-28-025', PROV_OCHOA, 2153.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-superficie-ip66-ip67-03061412',
+    art: 'CAJA DE SUPERFICIE IP66 / IP67',
+    sku: '03-06-1412',
+    marca: 'SIEMON',
+    url: 'https://ochoa.com.do/producto/caja-de-superficie-ip66-ip67-03061412',
+    nota: 'CAJA DE SUPERFICIE IP66 / IP67 · artículo 03-06-1412 · ref. X-IBOX-03 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 1766.44, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-termoregulador-12vdc-rs485-mix-03060398',
-    art: 'MODULO TERMOREGULADOR 12VDC RS485.MIX',
-    sku: '03-06-0398',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/modulo-termoregulador-12vdc-rs485-mix-03060398',
-    nota: 'MODULO TERMOREGULADOR 12VDC RS485.MIX · artículo 03-06-0398 · ref. HA10413 · marca MASTER. ' + SUPUESTO_ITBIS
+  c('MAT-28-025', PROV_OCHOA, 657.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-108-6x36mm-03061891',
+    art: 'CAJA DE CONEXION 108.6X36MM',
+    sku: '03-06-1891',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/caja-de-conexion-108-6x36mm-03061891',
+    nota: 'CAJA DE CONEXION 108.6X36MM · artículo 03-06-1891 · ref. TR-JB03-G-IN · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 4641.62, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/receptor-bus-sdi2-inalambrica-03061548',
-    art: 'RECEPTOR BUS SDI2 INALÁMBRICA',
-    sku: '03-06-1548',
+  c('MAT-28-025', PROV_OCHOA, 744.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-117-8x36mm-03061893',
+    peso: 2,
+    art: 'CAJA DE CONEXION 117.8X36MM',
+    sku: '03-06-1893',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/caja-de-conexion-117-8x36mm-03061893',
+    nota: 'CAJA DE CONEXION 117.8X36MM · artículo 03-06-1893 · ref. TR-JB03-I-IN · marca STD. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 751.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexion-126x36mm-03061892',
+    art: 'CAJA DE CONEXION 126X36MM',
+    sku: '03-06-1892',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/caja-de-conexion-126x36mm-03061892',
+    nota: 'CAJA DE CONEXION 126X36MM · artículo 03-06-1892 · ref. TR-JB03-H-IN · marca STD. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 1286.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-conexiones-p-camara-bullet-03061807',
+    art: 'CAJA DE CONEXIONES P / CAMARA BULLET',
+    sku: '03-06-1807',
+    marca: 'STD',
+    url: 'https://ochoa.com.do/producto/caja-de-conexiones-p-camara-bullet-03061807',
+    nota: 'CAJA DE CONEXIONES P / CAMARA BULLET · artículo 03-06-1807 · ref. TR-JB05-A-IN · marca STD. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 7086.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-amc-con-1-rail-din-03061589',
+    art: 'CARCASA AMC CON 1 RAÍL DIN',
+    sku: '03-06-1589',
     marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/receptor-bus-sdi2-inalambrica-03061548',
-    nota: 'RECEPTOR BUS SDI2 INALÁMBRICA · artículo 03-06-1548 · ref. B810 · marca BOSCH. ' + SUPUESTO_ITBIS
+    url: 'https://ochoa.com.do/producto/carcasa-amc-con-1-rail-din-03061589',
+    nota: 'CARCASA AMC CON 1 RAÍL DIN · artículo 03-06-1589 · ref. AEC-AMC2-UL01 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 774.47, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-badge-rifd-neutra-adjunta-03060707',
-    art: 'TARJETA BADGE RIFD NEUTRA ADJUNTA',
-    sku: '03-06-0707',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/tarjeta-badge-rifd-neutra-adjunta-03060707',
-    nota: 'TARJETA BADGE RIFD NEUTRA ADJUNTA · artículo 03-06-0707 · ref. HA02021 · marca MASTER. ' + SUPUESTO_ITBIS
+  c('MAT-28-025', PROV_OCHOA, 8661.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-amc-con-2-rail-din-03061590',
+    art: 'CARCASA AMC CON 2 RAÍL DIN',
+    sku: '03-06-1590',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/carcasa-amc-con-2-rail-din-03061590',
+    nota: 'CARCASA AMC CON 2 RAÍL DIN · artículo 03-06-1590 · ref. AEC-AMC2-UL02 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 255.43, {
+  c('MAT-28-025', PROV_OCHOA, 6614.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-con-1-rail-din-03060563',
+    art: 'CARCASA CON 1 RAIL DIN',
+    sku: '03-06-0563',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/carcasa-con-1-rail-din-03060563',
+    nota: 'CARCASA CON 1 RAIL DIN · artículo 03-06-0563 · ref. AEC-AMC2-UL1 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 1091.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-post-sup-475x325x225-roja-03061228',
+    art: 'CAJA POST. SUP., 4,75X3,25X2,25”, ROJA',
+    sku: '03-06-1228',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/caja-post-sup-475x325x225-roja-03061228',
+    nota: 'CAJA POST. SUP., 4,75X3,25X2,25”, ROJA · artículo 03-06-1228 · ref. FMM-100WPBB-R · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 3906.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carcasa-para-detector-de-humo-03060521',
+    art: 'CARCASA PARA DETECTOR DE HUMO',
+    sku: '03-06-0521',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/carcasa-para-detector-de-humo-03060521',
+    nota: 'CARCASA PARA DETECTOR DE HUMO · artículo 03-06-0521 · ref. D341 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-025', PROV_OCHOA, 255.43, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-de-registro-para-basic-03061468',
     art: 'CAJA DE REGISTRO PARA BASIC',
     sku: '03-06-1468',
@@ -54119,89 +53863,143 @@
     url: 'https://ochoa.com.do/producto/caja-de-registro-para-basic-03061468',
     nota: 'CAJA DE REGISTRO PARA BASIC · artículo 03-06-1468 · ref. WATERPROOFCASE · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 656.41, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
-    art: 'CAJA EMPOTRAR DE 2 MÓDULOS',
-    sku: '03-06-0465',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
-    nota: 'CAJA EMPOTRAR DE 2 MÓDULOS · artículo 03-06-0465 · ref. 350020 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 10635.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-comunicacion-ethernet-03060580',
+    art: 'MODULO COMUNICACION ETHERNET',
+    sku: '03-06-0580',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-comunicacion-ethernet-03060580',
+    nota: 'MODULO COMUNICACION ETHERNET · artículo 03-06-0580 · ref. B426 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 594.57, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
-    peso: 2,
-    art: 'CONFIGURADOR #2 CAJA DE 10 UNIDS',
-    sku: '03-06-0319',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
-    nota: 'CONFIGURADOR #2 CAJA DE 10 UNIDS · artículo 03-06-0319 · ref. 346912/3501/2 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 3481.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-expansion-popex-bg-series-03061193',
+    art: 'MODULO DE EXPANSION POPEX BG-SERIES',
+    sku: '03-06-1193',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-expansion-popex-bg-series-03061193',
+    nota: 'MODULO DE EXPANSION POPEX BG-SERIES · artículo 03-06-1193 · ref. B299 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 323.38, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
-    peso: 2,
-    art: 'CONFIGURADOR #3 CAJA DE 10 UNIDS',
-    sku: '03-06-0320',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
-    nota: 'CONFIGURADOR #3 CAJA DE 10 UNIDS · artículo 03-06-0320 · ref. 346913/3501/3 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 4924.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/comunicador-gsm-03061784',
+    art: 'COMUNICADOR GSM',
+    sku: '03-06-1784',
+    marca: 'LINSEG',
+    url: 'https://ochoa.com.do/producto/comunicador-gsm-03061784',
+    nota: 'COMUNICADOR GSM · artículo 03-06-1784 · ref. 000403CELL8 · marca LINSEG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 329.66, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
-    art: 'CONFIGURADOR #5 CAJA DE 10 UNIDS',
-    sku: '03-06-0322',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
-    nota: 'CONFIGURADOR #5 CAJA DE 10 UNIDS · artículo 03-06-0322 · ref. 346915/3501/5 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 2299.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-telefono-plug-in-03060578',
+    art: 'MODULO TELEFONO PLUG-IN',
+    sku: '03-06-0578',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-telefono-plug-in-03060578',
+    nota: 'MODULO TELEFONO PLUG-IN · artículo 03-06-0578 · ref. B430 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 559.47, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
-    art: 'CONFIGURADOR #6 CAJA DE 10 UNIDS',
-    sku: '03-06-0323',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
-    nota: 'CONFIGURADOR #6 CAJA DE 10 UNIDS · artículo 03-06-0323 · ref. 346916/3501/6 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 1683.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-expasion-8-entradas-03060585',
+    art: 'MODULO DE EXPASION 8 ENTRADAS',
+    sku: '03-06-0585',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-expasion-8-entradas-03060585',
+    nota: 'MODULO DE EXPASION 8 ENTRADAS · artículo 03-06-0585 · ref. B208 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 2499.01, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
-    art: 'CUBIERTA 8 PULSADORRS 2H 2F',
-    sku: '03-06-0471',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
-    nota: 'CUBIERTA 8 PULSADORRS 2H 2F · artículo 03-06-0471 · ref. 352181 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 574.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-expansivo-popit-03060586',
+    art: 'MODULO EXPANSIVO POPIT',
+    sku: '03-06-0586',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-expansivo-popit-03060586',
+    nota: 'MODULO EXPANSIVO POPIT · artículo 03-06-0586 · ref. D9127U · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 1556.51, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
-    art: 'CUBIERTA DE MÓDULO 2 HILOS',
-    sku: '03-06-0473',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
-    nota: 'CUBIERTA DE MÓDULO 2 HILOS · artículo 03-06-0473 · ref. 351201 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 6150.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-extension-multiplex-p-7024-03060504',
+    art: 'MODULO DE EXTENSION MULTIPLEX P / 7024',
+    sku: '03-06-0504',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-extension-multiplex-p-7024-03060504',
+    nota: 'MODULO DE EXTENSION MULTIPLEX P / 7024 · artículo 03-06-0504 · ref. FPE-7039 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 1992.43, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-modulo-a-v-2p-audio-03061187',
-    art: 'CUBIERTA MODULO A / V 2P AUDIO',
-    sku: '03-06-1187',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/cubierta-modulo-a-v-2p-audio-03061187',
-    nota: 'CUBIERTA MODULO A / V 2P AUDIO · artículo 03-06-1187 · ref. 351221 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 3449.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-rele-doble-2a-03060550',
+    art: 'MÓDULO DE RELÉ DOBLE 2A',
+    sku: '03-06-0550',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-rele-doble-2a-03060550',
+    nota: 'MÓDULO DE RELÉ DOBLE 2A · artículo 03-06-0550 · ref. FLM-325-2R4-2A · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 2999.88, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
-    art: 'MODULO 8 PULSADORES 2H 2F',
-    sku: '03-06-0479',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
-    nota: 'MODULO 8 PULSADORES 2H 2F · artículo 03-06-0479 · ref. 352100 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 1276.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-1-entrada-12v-03060506',
+    art: 'MODULO MULTIPLEX 1 ENTRADA 12V',
+    sku: '03-06-0506',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-multiplex-1-entrada-12v-03060506',
+    nota: 'MODULO MULTIPLEX 1 ENTRADA 12V · artículo 03-06-0506 · ref. D7044 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 13617.34, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
-    art: 'MODULO AUDIO Y VIDEO 2 HILO',
-    sku: '03-06-0480',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
-    nota: 'MODULO AUDIO Y VIDEO 2 HILO · artículo 03-06-0480 · ref. 351200 · marca BTICINO. ' + SUPUESTO_ITBIS
+  c('MAT-28-026', PROV_OCHOA, 2217.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-entrada-salida-12v-03060507',
+    art: 'MODULO MULTIPLEX ENTRADA / SALIDA 12V',
+    sku: '03-06-0507',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-multiplex-entrada-salida-12v-03060507',
+    nota: 'MODULO MULTIPLEX ENTRADA / SALIDA 12V · artículo 03-06-0507 · ref. D7053 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 21617.57, {
+  c('MAT-28-026', PROV_OCHOA, 1199.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-multiplex-mini-1-entrada-12v-03060505',
+    art: 'MODULO MULTIPLEX MINI 1 ENTRADA 12V',
+    sku: '03-06-0505',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-multiplex-mini-1-entrada-12v-03060505',
+    nota: 'MODULO MULTIPLEX MINI 1 ENTRADA 12V · artículo 03-06-0505 · ref. D7044M · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 3868.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-salida-supervisado-clase-a-b-03060552',
+    art: 'MODULO SALIDA SUPERVISADO CLASE A / B',
+    sku: '03-06-0552',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-salida-supervisado-clase-a-b-03060552',
+    nota: 'MODULO SALIDA SUPERVISADO CLASE A / B · artículo 03-06-0552 · ref. FLM-325-NA4 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 3564.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-zona-convencional-03061586',
+    art: 'MÓDULO DE ZONA CONVENCIONAL',
+    sku: '03-06-1586',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-zona-convencional-03061586',
+    nota: 'MÓDULO DE ZONA CONVENCIONAL · artículo 03-06-1586 · ref. FLM-325-CZM4 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 3149.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-dispositivos-de-notificacion-03061596',
+    art: 'MODULO DISPOSITIVOS DE NOTIFICACION',
+    sku: '03-06-1596',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-dispositivos-de-notificacion-03061596',
+    nota: 'MODULO DISPOSITIVOS DE NOTIFICACION · artículo 03-06-1596 · ref. D192G · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 5282.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borne-transmisor-infrarojos-12vcc-03060674',
+    art: 'BORNE TRANSMISOR INFRAROJOS 12VCC',
+    sku: '03-06-0674',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/borne-transmisor-infrarojos-12vcc-03060674',
+    nota: 'BORNE TRANSMISOR INFRAROJOS 12VCC · artículo 03-06-0674 · ref. HA11000 · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 1766.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-termoregulador-12vdc-rs485-mix-03060398',
+    art: 'MODULO TERMOREGULADOR 12VDC RS485.MIX',
+    sku: '03-06-0398',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/modulo-termoregulador-12vdc-rs485-mix-03060398',
+    nota: 'MODULO TERMOREGULADOR 12VDC RS485.MIX · artículo 03-06-0398 · ref. HA10413 · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 4641.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/receptor-bus-sdi2-inalambrica-03061548',
+    art: 'RECEPTOR BUS SDI2 INALÁMBRICA',
+    sku: '03-06-1548',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/receptor-bus-sdi2-inalambrica-03061548',
+    nota: 'RECEPTOR BUS SDI2 INALÁMBRICA · artículo 03-06-1548 · ref. B810 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-026', PROV_OCHOA, 21617.57, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-expansion-03061483',
     art: 'MODULO DE EXPANSION',
     sku: '03-06-1483',
@@ -54209,15 +54007,7 @@
     url: 'https://ochoa.com.do/producto/modulo-de-expansion-03061483',
     nota: 'MODULO DE EXPANSION · artículo 03-06-1483 · ref. 346851 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 3563.14, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
-    art: 'MÓDULO DE TECLADO SFERA 2H',
-    sku: '03-06-0484',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
-    nota: 'MÓDULO DE TECLADO SFERA 2H · artículo 03-06-0484 · ref. 353000 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-28-024', PROV_OCHOA, 3552.66, {
+  c('MAT-28-026', PROV_OCHOA, 3552.66, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-duplicacion-entradas-03060394',
     art: 'MODULO DUPLICACION ENTRADAS',
     sku: '03-06-0394',
@@ -54225,13 +54015,69 @@
     url: 'https://ochoa.com.do/producto/modulo-duplicacion-entradas-03060394',
     nota: 'MODULO DUPLICACION ENTRADAS · artículo 03-06-0394 · ref. HA03000 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-28-024', PROV_OCHOA, 12062.42, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-pantalla-2h2-wir-03060481',
-    art: 'MODULO PANTALLA 2H2 WIR',
-    sku: '03-06-0481',
+  c('MAT-28-027', PROV_OCHOA, 146.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-ciego-wp3455wh-03061342',
+    art: 'MÓDULO CIEGO WP3455WH',
+    sku: '03-06-1342',
+    marca: 'ON Q',
+    url: 'https://ochoa.com.do/producto/modulo-ciego-wp3455wh-03061342',
+    nota: 'MÓDULO CIEGO WP3455WH · artículo 03-06-1342 · ref. WP3455WH · marca ON Q. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-027', PROV_OCHOA, 452.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-transparente-03061224',
+    art: 'CUBIERTA, TRANSPARENTE.',
+    sku: '03-06-1224',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/cubierta-transparente-03061224',
+    nota: 'CUBIERTA, TRANSPARENTE. · artículo 03-06-1224 · ref. FMC-FLAP-RW · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-027', PROV_OCHOA, 781.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/bisel-p-pulsador-de-alarma-mcp-rw-rojo-03061568',
+    art: 'BISEL P / PULSADOR DE ALARMA MCP RW, ROJO',
+    sku: '03-06-1568',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/bisel-p-pulsador-de-alarma-mcp-rw-rojo-03061568',
+    nota: 'BISEL P / PULSADOR DE ALARMA MCP RW, ROJO · artículo 03-06-1568 · ref. FMC-BEZEL-RD · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-027', PROV_OCHOA, 1992.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-modulo-a-v-2p-audio-03061187',
+    art: 'CUBIERTA MODULO A / V 2P AUDIO',
+    sku: '03-06-1187',
     marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/modulo-pantalla-2h2-wir-03060481',
-    nota: 'MODULO PANTALLA 2H2 WIR · artículo 03-06-0481 · ref. 352500 · marca BTICINO. ' + SUPUESTO_ITBIS
+    url: 'https://ochoa.com.do/producto/cubierta-modulo-a-v-2p-audio-03061187',
+    nota: 'CUBIERTA MODULO A / V 2P AUDIO · artículo 03-06-1187 · ref. 351221 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-028', PROV_OCHOA, 676.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/control-remoto-p-alarma-03060445',
+    art: 'CONTROL REMOTO P / ALARMA',
+    sku: '03-06-0445',
+    marca: 'AMC',
+    url: 'https://ochoa.com.do/producto/control-remoto-p-alarma-03060445',
+    nota: 'CONTROL REMOTO P / ALARMA · artículo 03-06-0445 · ref. TR-400 · marca AMC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-028', PROV_OCHOA, 538.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/control-remoto-rf-03061610',
+    art: 'CONTROL REMOTO RF',
+    sku: '03-06-1610',
+    marca: 'SONOFF',
+    url: 'https://ochoa.com.do/producto/control-remoto-rf-03061610',
+    nota: 'CONTROL REMOTO RF · artículo 03-06-1610 · ref. RM433 · marca SONOFF. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-028', PROV_OCHOA, 774.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tarjeta-badge-rifd-neutra-adjunta-03060707',
+    art: 'TARJETA BADGE RIFD NEUTRA ADJUNTA',
+    sku: '03-06-0707',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/tarjeta-badge-rifd-neutra-adjunta-03060707',
+    nota: 'TARJETA BADGE RIFD NEUTRA ADJUNTA · artículo 03-06-0707 · ref. HA02021 · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-28-029', PROV_OCHOA, 11751.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/programador-punto-analogico-de-mano-03060554',
+    art: 'PROGRAMADOR PUNTO ANALOGICO DE MANO',
+    sku: '03-06-0554',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/programador-punto-analogico-de-mano-03060554',
+    nota: 'PROGRAMADOR PUNTO ANALOGICO DE MANO · artículo 03-06-0554 · ref. D5070 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
   c('MAT-29-003', PROV_OCHOA, 1508.54, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/detector-termico-03060515',
@@ -54376,6 +54222,30 @@
     marca: 'BOSCH',
     url: 'https://ochoa.com.do/producto/base-detector-de-humo-multiplex-03060514',
     nota: 'BASE DETECTOR DE HUMO MULTIPLEX · artículo 03-06-0514 · ref. D7050-B6 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-29-008', PROV_OCHOA, 22010.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/display-lcd-fpa-1000-03060548',
+    art: 'DISPLAY LCD FPA-1000',
+    sku: '03-06-0548',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/display-lcd-fpa-1000-03060548',
+    nota: 'DISPLAY LCD FPA-1000 · artículo 03-06-0548 · ref. FMR-1000-RCMD · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-29-008', PROV_OCHOA, 3442.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-entrada-dual-p-fpa-1000-03060549',
+    art: 'MODULO DE ENTRADA DUAL P / FPA-1000',
+    sku: '03-06-0549',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-de-entrada-dual-p-fpa-1000-03060549',
+    nota: 'MODULO DE ENTRADA DUAL P / FPA-1000 · artículo 03-06-0549 · ref. FLM-325-214 · marca BOSCH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-29-008', PROV_OCHOA, 11977.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-slc-conectable-para-fpa-1000-03061236',
+    art: 'MÓDULO SLC CONECTABLE PARA FPA-1000',
+    sku: '03-06-1236',
+    marca: 'BOSCH',
+    url: 'https://ochoa.com.do/producto/modulo-slc-conectable-para-fpa-1000-03061236',
+    nota: 'MÓDULO SLC CONECTABLE PARA FPA-1000 · artículo 03-06-1236 · ref. FPE-1000-SLC · marca BOSCH. ' + SUPUESTO_ITBIS
   });
   c('MAT-30-002', PROV_OCHOA, 617.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cable-audio-2x0-75-4x2x0-22-03061496',
@@ -55008,6 +54878,14 @@
     url: 'https://ochoa.com.do/producto/jack-zmax-rj45-cat-6a-blindado-negro-03061653',
     nota: 'JACK ZMAX RJ45 CAT.6A BLINDADO NEGRO · artículo 03-06-1653 · ref. ZP1-6AS-01S · marca SIEMON. ' + SUPUESTO_ITBIS
   });
+  c('MAT-30-013', PROV_OCHOA, 4491.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-ric-c-12-acopladores-03061389',
+    art: 'MODULO RIC C / 12 ACOPLADORES',
+    sku: '03-06-1389',
+    marca: 'SIEMON',
+    url: 'https://ochoa.com.do/producto/modulo-ric-c-12-acopladores-03061389',
+    nota: 'MODULO RIC C / 12 ACOPLADORES · artículo 03-06-1389 · ref. RIC-F-LCQ24-01C · marca SIEMON. ' + SUPUESTO_ITBIS
+  });
   c('MAT-30-013', PROV_OCHOA, 1396.76, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/patch-cord-10-pies-cat-7-03061631',
     art: 'PATCH CORD 10 PIES CAT 7',
@@ -55032,7 +54910,23 @@
     url: 'https://ochoa.com.do/producto/patch-cord-cat6-blanco-3ft-03061737',
     nota: 'PATCH CORD CAT6 BLANCO 3FT · artículo 03-06-1737 · ref. CB4303GY · marca UNIMAX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-014', PROV_OCHOA, 5568.67, {
+  c('MAT-30-014', PROV_OCHOA, 4089.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-12-port-cat5e12-po-03061326',
+    art: 'MODULO 12-PORT CAT5E12-PO',
+    sku: '03-06-1326',
+    marca: 'ON Q',
+    url: 'https://ochoa.com.do/producto/modulo-12-port-cat5e12-po-03061326',
+    nota: 'MODULO 12-PORT CAT5E12-PO · artículo 03-06-1326 · ref. AC1014 · marca ON Q. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-30-014', PROV_OCHOA, 5514.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-12-port-cat612-po-03061327',
+    art: 'MODULO 12-PORT CAT612-PO',
+    sku: '03-06-1327',
+    marca: 'ON Q',
+    url: 'https://ochoa.com.do/producto/modulo-12-port-cat612-po-03061327',
+    nota: 'MODULO 12-PORT CAT612-PO · artículo 03-06-1327 · ref. AC1015 · marca ON Q. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-30-015', PROV_OCHOA, 5568.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/patch-pannel-quest-cat6-24-puertos-03061736',
     art: 'PATCH PANNEL QUEST CAT6 24 PUERTOS',
     sku: '03-06-1736',
@@ -55040,7 +54934,7 @@
     url: 'https://ochoa.com.do/producto/patch-pannel-quest-cat6-24-puertos-03061736',
     nota: 'PATCH PANNEL QUEST CAT6 24 PUERTOS · artículo 03-06-1736 · ref. ST-QC6-24 · marca TE CONNECTIVITY. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-015', PROV_OCHOA, 1782.28, {
+  c('MAT-30-016', PROV_OCHOA, 1782.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/patch-panel-max-modular-de-48-puertos-03061618',
     art: 'PATCH PANEL MAX MODULAR, DE 48 PUERTOS,',
     sku: '03-06-1618',
@@ -55048,7 +54942,7 @@
     url: 'https://ochoa.com.do/producto/patch-panel-max-modular-de-48-puertos-03061618',
     nota: 'PATCH PANEL MAX MODULAR, DE 48 PUERTOS, · artículo 03-06-1618 · ref. MX-PNL-48 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 102.17, {
+  c('MAT-30-017', PROV_OCHOA, 102.17, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/faceplate-single-gang-4-openings-mx-03061617',
     art: 'FACEPLATE, SINGLE GANG, 4 OPENINGS, MX,',
     sku: '03-06-1617',
@@ -55056,7 +54950,7 @@
     url: 'https://ochoa.com.do/producto/faceplate-single-gang-4-openings-mx-03061617',
     nota: 'FACEPLATE, SINGLE GANG, 4 OPENINGS, MX, · artículo 03-06-1617 · ref. MX-FP-S-04-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 101.11, {
+  c('MAT-30-017', PROV_OCHOA, 101.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-de-pared-modular-3s-03061442',
     art: 'PLACA DE PARED MODULAR 3S',
     sku: '03-06-1442',
@@ -55064,7 +54958,7 @@
     url: 'https://ochoa.com.do/producto/placa-de-pared-modular-3s-03061442',
     nota: 'PLACA DE PARED MODULAR 3S · artículo 03-06-1442 · ref. MX-FP-S-03-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 77.06, {
+  c('MAT-30-017', PROV_OCHOA, 77.06, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fp-keystone-2hole-sg-pc-desig-screw-kit-03061362',
     art: 'FP,KEYSTONE,2HOLE,SG,PC DESIG,SCREW,KIT',
     sku: '03-06-1362',
@@ -55072,7 +54966,7 @@
     url: 'https://ochoa.com.do/producto/fp-keystone-2hole-sg-pc-desig-screw-kit-03061362',
     nota: 'FP,KEYSTONE,2HOLE,SG,PC DESIG,SCREW,KIT · artículo 03-06-1362 · ref. KSFP2 · marca ORTRONICS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 101.92, {
+  c('MAT-30-017', PROV_OCHOA, 101.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-serie-ct-p-1-acoplador-bco-03061376',
     art: 'PLACA SERIE CT P / 1 ACOPLADOR BCO.',
     sku: '03-06-1376',
@@ -55080,7 +54974,7 @@
     url: 'https://ochoa.com.do/producto/placa-serie-ct-p-1-acoplador-bco-03061376',
     nota: 'PLACA SERIE CT P / 1 ACOPLADOR BCO. · artículo 03-06-1376 · ref. CT2-FP-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 145.92, {
+  c('MAT-30-017', PROV_OCHOA, 145.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-serie-ct-p-2-acoplador-bco-03061377',
     art: 'PLACA SERIE CT P / 2 ACOPLADOR BCO.',
     sku: '03-06-1377',
@@ -55088,7 +54982,7 @@
     url: 'https://ochoa.com.do/producto/placa-serie-ct-p-2-acoplador-bco-03061377',
     nota: 'PLACA SERIE CT P / 2 ACOPLADOR BCO. · artículo 03-06-1377 · ref. CT4-BOX-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 139.7, {
+  c('MAT-30-017', PROV_OCHOA, 139.7, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-de-pared-modular-10g-max-03061375',
     art: 'PLACA DE PARED MODULAR 10G MAX',
     sku: '03-06-1375',
@@ -55096,7 +54990,7 @@
     url: 'https://ochoa.com.do/producto/placa-de-pared-modular-10g-max-03061375',
     nota: 'PLACA DE PARED MODULAR 10G MAX · artículo 03-06-1375 · ref. 10GMX-FPS02-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-016', PROV_OCHOA, 612.77, {
+  c('MAT-30-017', PROV_OCHOA, 612.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-interfaz-colgante-03060542',
     art: 'PLACA INTERFAZ COLGANTE',
     sku: '03-06-0542',
@@ -55104,7 +54998,7 @@
     url: 'https://ochoa.com.do/producto/placa-interfaz-colgante-03060542',
     nota: 'PLACA INTERFAZ COLGANTE · artículo 03-06-0542 · ref. NDA-5031-PIP · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-017', PROV_OCHOA, 101.21, {
+  c('MAT-30-018', PROV_OCHOA, 101.21, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-max-1-puerto-bco-03061440',
     art: 'PLACA MAX 1 PUERTO BCO',
     sku: '03-06-1440',
@@ -55112,7 +55006,7 @@
     url: 'https://ochoa.com.do/producto/placa-max-1-puerto-bco-03061440',
     nota: 'PLACA MAX 1 PUERTO BCO · artículo 03-06-1440 · ref. MX-FP-S-01-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-017', PROV_OCHOA, 883.79, {
+  c('MAT-30-018', PROV_OCHOA, 883.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-sencilla-acero-1-puerto-03061413',
     art: 'PLACA SENCILLA ACERO 1 PUERTO',
     sku: '03-06-1413',
@@ -55120,7 +55014,7 @@
     url: 'https://ochoa.com.do/producto/placa-sencilla-acero-1-puerto-03061413',
     nota: 'PLACA SENCILLA ACERO 1 PUERTO · artículo 03-06-1413 · ref. XFP-S-01-SS · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-018', PROV_OCHOA, 101.21, {
+  c('MAT-30-019', PROV_OCHOA, 101.21, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-max-2-puerto-bco-03061441',
     art: 'PLACA MAX 2 PUERTO BCO',
     sku: '03-06-1441',
@@ -55128,7 +55022,7 @@
     url: 'https://ochoa.com.do/producto/placa-max-2-puerto-bco-03061441',
     nota: 'PLACA MAX 2 PUERTO BCO · artículo 03-06-1441 · ref. MX-FP-S-02-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-018', PROV_OCHOA, 883.79, {
+  c('MAT-30-019', PROV_OCHOA, 883.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-sencilla-acero-2-puerto-03061414',
     art: 'PLACA SENCILLA ACERO 2 PUERTO',
     sku: '03-06-1414',
@@ -55136,7 +55030,7 @@
     url: 'https://ochoa.com.do/producto/placa-sencilla-acero-2-puerto-03061414',
     nota: 'PLACA SENCILLA ACERO 2 PUERTO · artículo 03-06-1414 · ref. XFP-S-02-SS · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-019', PROV_OCHOA, 1196.92, {
+  c('MAT-30-020', PROV_OCHOA, 1196.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/placa-doble-acero-3-puerto-03061415',
     art: 'PLACA DOBLE ACERO 3 PUERTO',
     sku: '03-06-1415',
@@ -55144,7 +55038,7 @@
     url: 'https://ochoa.com.do/producto/placa-doble-acero-3-puerto-03061415',
     nota: 'PLACA DOBLE ACERO 3 PUERTO · artículo 03-06-1415 · ref. XFP-D-03-SS · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 1803.27, {
+  c('MAT-30-021', PROV_OCHOA, 1803.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/bandeja-de-empalme-03061392',
     art: 'BANDEJA DE EMPALME',
     sku: '03-06-1392',
@@ -55152,7 +55046,7 @@
     url: 'https://ochoa.com.do/producto/bandeja-de-empalme-03061392',
     nota: 'BANDEJA DE EMPALME · artículo 03-06-1392 · ref. TRAY-3 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 1866.53, {
+  c('MAT-30-021', PROV_OCHOA, 1866.53, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tapa-ciega-para-rack-03061646',
     art: 'TAPA CIEGA PARA RACK',
     sku: '03-06-1646',
@@ -55160,7 +55054,7 @@
     url: 'https://ochoa.com.do/producto/tapa-ciega-para-rack-03061646',
     nota: 'TAPA CIEGA PARA RACK · artículo 03-06-1646 · ref. PNL-TBLNK010-1S · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 6282.9, {
+  c('MAT-30-021', PROV_OCHOA, 6282.9, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/organizador-cable-vertical-42u-03061627',
     art: 'ORGANIZADOR CABLE VERTICAL 42U',
     sku: '03-06-1627',
@@ -55168,7 +55062,7 @@
     url: 'https://ochoa.com.do/producto/organizador-cable-vertical-42u-03061627',
     nota: 'ORGANIZADOR CABLE VERTICAL 42U · artículo 03-06-1627 · ref. V8A-VPC6-1-42 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 2740.76, {
+  c('MAT-30-021', PROV_OCHOA, 2740.76, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/organizador-de-cable-2ur-03061421',
     art: 'ORGANIZADOR DE CABLE 2UR',
     sku: '03-06-1421',
@@ -55176,7 +55070,7 @@
     url: 'https://ochoa.com.do/producto/organizador-de-cable-2ur-03061421',
     nota: 'ORGANIZADOR DE CABLE 2UR · artículo 03-06-1421 · ref. HCM-4-2U · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 2171.17, {
+  c('MAT-30-021', PROV_OCHOA, 2171.17, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/organizador-de-cable-hor-1ur-03061386',
     art: 'ORGANIZADOR DE CABLE HOR. 1UR',
     sku: '03-06-1386',
@@ -55184,7 +55078,7 @@
     url: 'https://ochoa.com.do/producto/organizador-de-cable-hor-1ur-03061386',
     nota: 'ORGANIZADOR DE CABLE HOR. 1UR · artículo 03-06-1386 · ref. HCM-4-1U · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 24364.91, {
+  c('MAT-30-021', PROV_OCHOA, 24364.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/organizador-routeit-vertical-doble-de-45-03061621',
     art: 'ORGANIZADOR ROUTEIT VERTICAL DOBLE DE 45',
     sku: '03-06-1621',
@@ -55192,7 +55086,7 @@
     url: 'https://ochoa.com.do/producto/organizador-routeit-vertical-doble-de-45-03061621',
     nota: 'ORGANIZADOR ROUTEIT VERTICAL DOBLE DE 45 · artículo 03-06-1621 · ref. VCM1A-10D-1-45 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 305.63, {
+  c('MAT-30-021', PROV_OCHOA, 305.63, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/pasador-de-cables-03061348',
     art: 'PASADOR DE CABLES',
     sku: '03-06-1348',
@@ -55200,7 +55094,7 @@
     url: 'https://ochoa.com.do/producto/pasador-de-cables-03061348',
     nota: 'PASADOR DE CABLES · artículo 03-06-1348 · ref. WP1014WH · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 10078.03, {
+  c('MAT-30-021', PROV_OCHOA, 10078.03, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/rack-7-pies-03061391',
     art: 'RACK 7 PIES',
     sku: '03-06-1391',
@@ -55208,7 +55102,7 @@
     url: 'https://ochoa.com.do/producto/rack-7-pies-03061391',
     nota: 'RACK 7 PIES · artículo 03-06-1391 · ref. RS1-07-S · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 26.88, {
+  c('MAT-30-021', PROV_OCHOA, 26.88, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mangas-de-proteccion-03061423',
     art: 'MANGAS DE PROTECCIÓN',
     sku: '03-06-1423',
@@ -55216,7 +55110,7 @@
     url: 'https://ochoa.com.do/producto/mangas-de-proteccion-03061423',
     nota: 'MANGAS DE PROTECCIÓN · artículo 03-06-1423 · ref. HT-60 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 7469.85, {
+  c('MAT-30-021', PROV_OCHOA, 7469.85, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/distribuidor-f-o-deslizable-03061380',
     art: 'DISTRIBUIDOR F.O DESLIZABLE',
     sku: '03-06-1380',
@@ -55224,7 +55118,7 @@
     url: 'https://ochoa.com.do/producto/distribuidor-f-o-deslizable-03061380',
     nota: 'DISTRIBUIDOR F.O DESLIZABLE · artículo 03-06-1380 · ref. FCP3-DWR · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 481.6, {
+  c('MAT-30-021', PROV_OCHOA, 481.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/carril-din-03060561',
     art: 'CARRIL DIN',
     sku: '03-06-0561',
@@ -55232,7 +55126,7 @@
     url: 'https://ochoa.com.do/producto/carril-din-03060561',
     nota: 'CARRIL DIN · artículo 03-06-0561 · ref. ACX-RAIL-250 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 1199.1, {
+  c('MAT-30-021', PROV_OCHOA, 1199.1, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/gabinete-p-modulo-mdn-03060582',
     art: 'GABINETE P / MODULO MDN',
     sku: '03-06-0582',
@@ -55240,7 +55134,7 @@
     url: 'https://ochoa.com.do/producto/gabinete-p-modulo-mdn-03060582',
     nota: 'GABINETE P / MODULO MDN · artículo 03-06-0582 · ref. B10 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 1083.05, {
+  c('MAT-30-021', PROV_OCHOA, 1083.05, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/gabinete-p-modulo-pqn-03060581',
     art: 'GABINETE P / MODULO PQN',
     sku: '03-06-0581',
@@ -55248,7 +55142,7 @@
     url: 'https://ochoa.com.do/producto/gabinete-p-modulo-pqn-03060581',
     nota: 'GABINETE P / MODULO PQN · artículo 03-06-0581 · ref. B11 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-020', PROV_OCHOA, 713.94, {
+  c('MAT-30-021', PROV_OCHOA, 713.94, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/organizador-de-2-u-fertec-03062159',
     art: 'ORGANIZADOR DE 2 U FERTEC',
     sku: '03-06-2159',
@@ -55256,7 +55150,7 @@
     url: 'https://ochoa.com.do/producto/organizador-de-2-u-fertec-03062159',
     nota: 'ORGANIZADOR DE 2 U FERTEC · artículo 03-06-2159 · ref. FT-CM2UFERTEC · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 4838.56, {
+  c('MAT-30-022', PROV_OCHOA, 4838.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conversor-d-zonas-cableadas-inalambrico-03061820',
     art: 'CONVERSOR D / ZONAS CABLEADAS INALAMBRICO',
     sku: '03-06-1820',
@@ -55264,7 +55158,7 @@
     url: 'https://ochoa.com.do/producto/conversor-d-zonas-cableadas-inalambrico-03061820',
     nota: 'CONVERSOR D / ZONAS CABLEADAS INALAMBRICO · artículo 03-06-1820 · ref. V027-433 · marca VESTA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 4965.67, {
+  c('MAT-30-022', PROV_OCHOA, 4965.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conversor-de-zonas-cableadas-inalambrico-03061863',
     art: 'CONVERSOR DE ZONAS CABLEADAS INALAMBRICO',
     sku: '03-06-1863',
@@ -55272,7 +55166,7 @@
     url: 'https://ochoa.com.do/producto/conversor-de-zonas-cableadas-inalambrico-03061863',
     nota: 'CONVERSOR DE ZONAS CABLEADAS INALAMBRICO · artículo 03-06-1863 · ref. VESTA-027-433 · marca VESTA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 5208.08, {
+  c('MAT-30-022', PROV_OCHOA, 5208.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/extensor-repetidor-inalambrico-03061826',
     art: 'EXTENSOR / REPETIDOR INALAMBRICO',
     sku: '03-06-1826',
@@ -55280,7 +55174,7 @@
     url: 'https://ochoa.com.do/producto/extensor-repetidor-inalambrico-03061826',
     nota: 'EXTENSOR / REPETIDOR INALAMBRICO · artículo 03-06-1826 · ref. 030-433 · marca VESTA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 670.06, {
+  c('MAT-30-022', PROV_OCHOA, 670.06, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulador-agil-uso-comercial-p-3-canales-03061153',
     art: 'MODULADOR AGIL USO COMERCIAL P / 3 CANALES',
     sku: '03-06-1153',
@@ -55288,7 +55182,7 @@
     url: 'https://ochoa.com.do/producto/modulador-agil-uso-comercial-p-3-canales-03061153',
     nota: 'MODULADOR AGIL USO COMERCIAL P / 3 CANALES · artículo 03-06-1153 · ref. USM-20D3 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 4799.38, {
+  c('MAT-30-022', PROV_OCHOA, 4799.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/switch-remoto-rf-3-way-03061518',
     art: 'SWITCH REMOTO RF 3-WAY',
     sku: '03-06-1518',
@@ -55296,7 +55190,7 @@
     url: 'https://ochoa.com.do/producto/switch-remoto-rf-3-way-03061518',
     nota: 'SWITCH REMOTO RF 3-WAY · artículo 03-06-1518 · ref. LC2203-WH · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 11046.92, {
+  c('MAT-30-022', PROV_OCHOA, 11046.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/wireless-av-receiver-03061371',
     art: 'WIRELESS AV / RECEIVER',
     sku: '03-06-1371',
@@ -55304,7 +55198,7 @@
     url: 'https://ochoa.com.do/producto/wireless-av-receiver-03061371',
     nota: 'WIRELESS AV / RECEIVER · artículo 03-06-1371 · ref. 29358 · marca ORTRONICS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 16024.35, {
+  c('MAT-30-022', PROV_OCHOA, 16024.35, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/wireless-a-v-for-hdmi-taa-com-03061370',
     art: 'WIRELESS A / V FOR HDMI TAA COM',
     sku: '03-06-1370',
@@ -55312,7 +55206,7 @@
     url: 'https://ochoa.com.do/producto/wireless-a-v-for-hdmi-taa-com-03061370',
     nota: 'WIRELESS A / V FOR HDMI TAA COM · artículo 03-06-1370 · ref. 29329 · marca ORTRONICS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 6508.12, {
+  c('MAT-30-022', PROV_OCHOA, 6508.12, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/homekit-camara-de-video-hub-03061699',
     art: 'HOMEKIT CAMARA DE VIDEO HUB',
     sku: '03-06-1699',
@@ -55320,7 +55214,7 @@
     url: 'https://ochoa.com.do/producto/homekit-camara-de-video-hub-03061699',
     nota: 'HOMEKIT CAMARA DE VIDEO HUB · artículo 03-06-1699 · ref. HUBG3 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 1156.51, {
+  c('MAT-30-022', PROV_OCHOA, 1156.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/bridge-rf-433mhz-wifi-03061452',
     art: 'BRIDGE RF-433MHZ + WIFI',
     sku: '03-06-1452',
@@ -55328,7 +55222,7 @@
     url: 'https://ochoa.com.do/producto/bridge-rf-433mhz-wifi-03061452',
     nota: 'BRIDGE RF-433MHZ + WIFI · artículo 03-06-1452 · ref. RFBRIDGER2 · marca SONOFF. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 1120.56, {
+  c('MAT-30-022', PROV_OCHOA, 1120.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mini-switch-inalambrico-03061707',
     art: 'MINI SWITCH INALÁMBRICO',
     sku: '03-06-1707',
@@ -55336,7 +55230,7 @@
     url: 'https://ochoa.com.do/producto/mini-switch-inalambrico-03061707',
     nota: 'MINI SWITCH INALÁMBRICO · artículo 03-06-1707 · ref. WXKG11LM · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 18998.93, {
+  c('MAT-30-022', PROV_OCHOA, 18998.93, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/switch-poe-clod-gigabit-ad-24poe-2ul-03062109',
     art: 'SWITCH POE CLOD GIGABIT AD 24POE+2UL',
     sku: '03-06-2109',
@@ -55344,7 +55238,7 @@
     url: 'https://ochoa.com.do/producto/switch-poe-clod-gigabit-ad-24poe-2ul-03062109',
     nota: 'SWITCH POE CLOD GIGABIT AD 24POE+2UL · artículo 03-06-2109 · ref. DH-CS4228-24GT-240 · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-021', PROV_OCHOA, 587.39, {
+  c('MAT-30-022', PROV_OCHOA, 587.39, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/terminal-rj45-cat6-100pcs-03062124',
     art: 'TERMINAL RJ45 CAT6 (100PCS)',
     sku: '03-06-2124',
@@ -55352,7 +55246,7 @@
     url: 'https://ochoa.com.do/producto/terminal-rj45-cat6-100pcs-03062124',
     nota: 'TERMINAL RJ45 CAT6 (100PCS) · artículo 03-06-2124 · ref. DH-PFM976-631 · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-022', PROV_OCHOA, 16692.67, {
+  c('MAT-30-023', PROV_OCHOA, 16692.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/switch-24-puerto-100m-poe-2puertos-1000m-03061733',
     art: 'SWITCH 24 PUERTO 100M POE+2PUERTOS 1000M',
     sku: '03-06-1733',
@@ -55360,7 +55254,7 @@
     url: 'https://ochoa.com.do/producto/switch-24-puerto-100m-poe-2puertos-1000m-03061733',
     nota: 'SWITCH 24 PUERTO 100M POE+2PUERTOS 1000M · artículo 03-06-1733 · ref. WI-PS526G · marca STD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-023', PROV_OCHOA, 500.98, {
+  c('MAT-30-024', PROV_OCHOA, 500.98, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/switch-8-puertos-10-100-mbps-plastico-03062000',
     art: 'SWITCH 8 PUERTOS 10 / 100 MBPS PLASTICO',
     sku: '03-06-2000',
@@ -55368,7 +55262,7 @@
     url: 'https://ochoa.com.do/producto/switch-8-puertos-10-100-mbps-plastico-03062000',
     nota: 'SWITCH 8 PUERTOS 10 / 100 MBPS PLASTICO · artículo 03-06-2000 · ref. DH-PFS3008-8ET-L · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-023', PROV_OCHOA, 13694.47, {
+  c('MAT-30-024', PROV_OCHOA, 13694.47, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/switch-8-puertos-100m-poe-2puertos-1000m-03061772',
     art: 'SWITCH 8 PUERTOS 100M POE+2PUERTOS 1000M',
     sku: '03-06-1772',
@@ -55376,7 +55270,7 @@
     url: 'https://ochoa.com.do/producto/switch-8-puertos-100m-poe-2puertos-1000m-03061772',
     nota: 'SWITCH 8 PUERTOS 100M POE+2PUERTOS 1000M · artículo 03-06-1772 · ref. ST-WI-PS226XT · marca WI-TEK. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.58, {
+  c('MAT-30-025', PROV_OCHOA, 0.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/acoplador-03060981',
     art: 'ACOPLADOR',
     sku: '03-06-0981',
@@ -55384,7 +55278,7 @@
     url: 'https://ochoa.com.do/producto/acoplador-03060981',
     nota: 'ACOPLADOR · artículo 03-06-0981 · ref. 200-515 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.6, {
+  c('MAT-30-025', PROV_OCHOA, 0.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/acoplador-de-300-a-75-ohms-interior-03061089',
     peso: 2,
     art: 'ACOPLADOR DE 300 A 75 OHMS INTERIOR',
@@ -55393,7 +55287,7 @@
     url: 'https://ochoa.com.do/producto/acoplador-de-300-a-75-ohms-interior-03061089',
     nota: 'ACOPLADOR DE 300 A 75 OHMS INTERIOR · artículo 03-06-1089 · ref. 200-510 · marca STEREN. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.77, {
+  c('MAT-30-025', PROV_OCHOA, 0.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/acoplador-de-75-a-300-ohms-interior-03061091',
     art: 'ACOPLADOR DE 75 A 300 OHMS INTERIOR',
     sku: '03-06-1091',
@@ -55401,7 +55295,7 @@
     url: 'https://ochoa.com.do/producto/acoplador-de-75-a-300-ohms-interior-03061091',
     nota: 'ACOPLADOR DE 75 A 300 OHMS INTERIOR · artículo 03-06-1091 · ref. 200-500 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.41, {
+  c('MAT-30-025', PROV_OCHOA, 0.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/barril-de-union-cople-f-con-tuerca-03061142',
     art: 'BARRIL DE UNION COPLE F CON TUERCA',
     sku: '03-06-1142',
@@ -55409,7 +55303,7 @@
     url: 'https://ochoa.com.do/producto/barril-de-union-cople-f-con-tuerca-03061142',
     nota: 'BARRIL DE UNION COPLE F CON TUERCA · artículo 03-06-1142 · ref. 200-053 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1.43, {
+  c('MAT-30-025', PROV_OCHOA, 1.43, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/barril-union-doble-03060980',
     art: 'BARRIL UNION DOBLE',
     sku: '03-06-0980',
@@ -55417,7 +55311,7 @@
     url: 'https://ochoa.com.do/producto/barril-union-doble-03060980',
     nota: 'BARRIL UNION DOBLE · artículo 03-06-0980 · ref. 200-272 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.51, {
+  c('MAT-30-025', PROV_OCHOA, 0.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/barril-union-sencillo-03060979',
     art: 'BARRIL UNION SENCILLO',
     sku: '03-06-0979',
@@ -55425,7 +55319,7 @@
     url: 'https://ochoa.com.do/producto/barril-union-sencillo-03060979',
     nota: 'BARRIL UNION SENCILLO · artículo 03-06-0979 · ref. 200-271 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 3.67, {
+  c('MAT-30-025', PROV_OCHOA, 3.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/barriles-de-union-coples-dorados-f-24k-03061165',
     art: 'BARRILES DE UNION (COPLES) DORADOS F 24K',
     sku: '03-06-1165',
@@ -55433,7 +55327,7 @@
     url: 'https://ochoa.com.do/producto/barriles-de-union-coples-dorados-f-24k-03061165',
     nota: 'BARRILES DE UNION (COPLES) DORADOS F 24K · artículo 03-06-1165 · ref. 203-050 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 30.46, {
+  c('MAT-30-025', PROV_OCHOA, 30.46, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/casquillo-con-tuerca-p-soldadores-wtcpt-03061080',
     art: 'CASQUILLO CON TUERCA P / SOLDADORES WTCPT',
     sku: '03-06-1080',
@@ -55441,7 +55335,7 @@
     url: 'https://ochoa.com.do/producto/casquillo-con-tuerca-p-soldadores-wtcpt-03061080',
     nota: 'CASQUILLO CON TUERCA P / SOLDADORES WTCPT · artículo 03-06-1080 · ref. BA-60 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 33.77, {
+  c('MAT-30-025', PROV_OCHOA, 33.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-plug-para-camara-03061739',
     art: 'CONECTOR PLUG PARA CAMARA',
     sku: '03-06-1739',
@@ -55449,7 +55343,7 @@
     url: 'https://ochoa.com.do/producto/conector-plug-para-camara-03061739',
     nota: 'CONECTOR PLUG PARA CAMARA · artículo 03-06-1739 · ref. ST-PLUG · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 181.66, {
+  c('MAT-30-025', PROV_OCHOA, 181.66, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-rca-rojo-03061343',
     art: 'CONECTOR RCA ROJO',
     sku: '03-06-1343',
@@ -55457,7 +55351,7 @@
     url: 'https://ochoa.com.do/producto/conector-rca-rojo-03061343',
     nota: 'CONECTOR RCA ROJO · artículo 03-06-1343 · ref. KSRCARW · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 76.15, {
+  c('MAT-30-025', PROV_OCHOA, 76.15, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-rj45-blanco-cat5e-03061339',
     art: 'CONECTOR RJ45 BLANCO CAT5E',
     sku: '03-06-1339',
@@ -55465,7 +55359,7 @@
     url: 'https://ochoa.com.do/producto/conector-rj45-blanco-cat5e-03061339',
     nota: 'CONECTOR RJ45 BLANCO CAT5E · artículo 03-06-1339 · ref. WP3450WH · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 3.68, {
+  c('MAT-30-025', PROV_OCHOA, 3.68, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conectores-dorados-f-de-enroscar-p-rg-6-03061163',
     art: 'CONECTORES DORADOS F DE ENROSCAR P / RG-6',
     sku: '03-06-1163',
@@ -55473,7 +55367,7 @@
     url: 'https://ochoa.com.do/producto/conectores-dorados-f-de-enroscar-p-rg-6-03061163',
     nota: 'CONECTORES DORADOS F DE ENROSCAR P / RG-6 · artículo 03-06-1163 · ref. 203-039 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 2.46, {
+  c('MAT-30-025', PROV_OCHOA, 2.46, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cople-c-cable-p-tira-led-monocromatica-03061155',
     art: 'COPLE C / CABLE P / TIRA LED MONOCROMATICA',
     sku: '03-06-1155',
@@ -55481,7 +55375,7 @@
     url: 'https://ochoa.com.do/producto/cople-c-cable-p-tira-led-monocromatica-03061155',
     nota: 'COPLE C / CABLE P / TIRA LED MONOCROMATICA · artículo 03-06-1155 · ref. MODLED-025 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 3.01, {
+  c('MAT-30-025', PROV_OCHOA, 3.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cople-c-cable-p-tira-led-rgb-03061156',
     art: 'COPLE C / CABLE P / TIRA LED RGB',
     sku: '03-06-1156',
@@ -55489,7 +55383,7 @@
     url: 'https://ochoa.com.do/producto/cople-c-cable-p-tira-led-rgb-03061156',
     nota: 'COPLE C / CABLE P / TIRA LED RGB · artículo 03-06-1156 · ref. MODLED-026 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 56.86, {
+  c('MAT-30-025', PROV_OCHOA, 56.86, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/decorator-strap-bl3p-03061346',
     art: 'DECORATOR STRAP, BL3P',
     sku: '03-06-1346',
@@ -55497,7 +55391,7 @@
     url: 'https://ochoa.com.do/producto/decorator-strap-bl3p-03061346',
     nota: 'DECORATOR STRAP, BL3P · artículo 03-06-1346 · ref. WP3413WH · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 58, {
+  c('MAT-30-025', PROV_OCHOA, 58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/decorator-strap-bl4p-03061347',
     art: 'DECORATOR STRAP, BL4P',
     sku: '03-06-1347',
@@ -55505,7 +55399,7 @@
     url: 'https://ochoa.com.do/producto/decorator-strap-bl4p-03061347',
     nota: 'DECORATOR STRAP, BL4P · artículo 03-06-1347 · ref. WP3414WH · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1187.51, {
+  c('MAT-30-025', PROV_OCHOA, 1187.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/jumper-de-f-o-xglo-1mt-03061410',
     art: 'JUMPER DE F.O XGLO 1MT',
     sku: '03-06-1410',
@@ -55513,7 +55407,7 @@
     url: 'https://ochoa.com.do/producto/jumper-de-f-o-xglo-1mt-03061410',
     nota: 'JUMPER DE F.O XGLO 1MT · artículo 03-06-1410 · ref. FJ2-LCUSCUL-01 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1081.94, {
+  c('MAT-30-025', PROV_OCHOA, 1081.94, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/jumper-xglo-1mt-03061382',
     art: 'JUMPER XGLO 1MT',
     sku: '03-06-1382',
@@ -55521,7 +55415,7 @@
     url: 'https://ochoa.com.do/producto/jumper-xglo-1mt-03061382',
     nota: 'JUMPER XGLO 1MT · artículo 03-06-1382 · ref. FJ2-LCLC5L-01AQ · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 359.05, {
+  c('MAT-30-025', PROV_OCHOA, 359.05, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/jumper-xglo-1mt-03061384',
     art: 'JUMPER XGLO 1MT',
     sku: '03-06-1384',
@@ -55529,7 +55423,7 @@
     url: 'https://ochoa.com.do/producto/jumper-xglo-1mt-03061384',
     nota: 'JUMPER XGLO 1MT · artículo 03-06-1384 · ref. FP1B-LC5L-01AQ · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1215.37, {
+  c('MAT-30-025', PROV_OCHOA, 1215.37, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/jumper-xglo-3mt-03061383',
     art: 'JUMPER XGLO 3MT.',
     sku: '03-06-1383',
@@ -55537,7 +55431,7 @@
     url: 'https://ochoa.com.do/producto/jumper-xglo-3mt-03061383',
     nota: 'JUMPER XGLO 3MT. · artículo 03-06-1383 · ref. FJ2-LCLC5L-03AQ · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 0.65, {
+  c('MAT-30-025', PROV_OCHOA, 0.65, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/tira-sencillo-36pines-03061105',
     art: 'TIRA SENCILLO 36PINES',
     sku: '03-06-1105',
@@ -55545,7 +55439,7 @@
     url: 'https://ochoa.com.do/producto/tira-sencillo-36pines-03061105',
     nota: 'TIRA SENCILLO 36PINES · artículo 03-06-1105 · ref. F36-S · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 200.21, {
+  c('MAT-30-025', PROV_OCHOA, 200.21, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/inserto-ciego-max-paq-10-bco-03061438',
     art: 'INSERTO CIEGO MAX PAQ.10 BCO',
     sku: '03-06-1438',
@@ -55553,7 +55447,7 @@
     url: 'https://ochoa.com.do/producto/inserto-ciego-max-paq-10-bco-03061438',
     nota: 'INSERTO CIEGO MAX PAQ.10 BCO · artículo 03-06-1438 · ref. MX-BL-02 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 128.13, {
+  c('MAT-30-025', PROV_OCHOA, 128.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/inserto-ciego-max-paq-10-negro-03061439',
     art: 'INSERTO CIEGO MAX PAQ.10 NEGRO',
     sku: '03-06-1439',
@@ -55561,7 +55455,7 @@
     url: 'https://ochoa.com.do/producto/inserto-ciego-max-paq-10-negro-03061439',
     nota: 'INSERTO CIEGO MAX PAQ.10 NEGRO · artículo 03-06-1439 · ref. MX-BL-01 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1315.91, {
+  c('MAT-30-025', PROV_OCHOA, 1315.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adaptador-de-fibra-reforzado-03061418',
     art: 'ADAPTADOR DE FIBRA REFORZADO',
     sku: '03-06-1418',
@@ -55569,7 +55463,7 @@
     url: 'https://ochoa.com.do/producto/adaptador-de-fibra-reforzado-03061418',
     nota: 'ADAPTADOR DE FIBRA REFORZADO · artículo 03-06-1418 · ref. XG2-XLC-LC-MM · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 1646.92, {
+  c('MAT-30-025', PROV_OCHOA, 1646.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adaptador-de-fibra-reforzados-03061417',
     art: 'ADAPTADOR DE FIBRA REFORZADOS',
     sku: '03-06-1417',
@@ -55577,7 +55471,7 @@
     url: 'https://ochoa.com.do/producto/adaptador-de-fibra-reforzados-03061417',
     nota: 'ADAPTADOR DE FIBRA REFORZADOS · artículo 03-06-1417 · ref. XG2-XLC-LC-SM · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 2810.02, {
+  c('MAT-30-025', PROV_OCHOA, 2810.02, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adaptador-fibra-optica-03061654',
     art: 'ADAPTADOR FIBRA OPTICA',
     sku: '03-06-1654',
@@ -55585,7 +55479,7 @@
     url: 'https://ochoa.com.do/producto/adaptador-fibra-optica-03061654',
     nota: 'ADAPTADOR FIBRA OPTICA · artículo 03-06-1654 · ref. LS-MP6-01CAQ · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 83.44, {
+  c('MAT-30-025', PROV_OCHOA, 83.44, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adaptador-fibra-optica-03061656',
     art: 'ADAPTADOR FIBRA OPTICA',
     sku: '03-06-1656',
@@ -55593,7 +55487,7 @@
     url: 'https://ochoa.com.do/producto/adaptador-fibra-optica-03061656',
     nota: 'ADAPTADOR FIBRA OPTICA · artículo 03-06-1656 · ref. RIC-F-MX6-01 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 3491.49, {
+  c('MAT-30-025', PROV_OCHOA, 3491.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adaptador-quickpack-fibra-optica-03061655',
     art: 'ADAPTADOR QUICKPACK FIBRA OPTICA',
     sku: '03-06-1655',
@@ -55601,7 +55495,7 @@
     url: 'https://ochoa.com.do/producto/adaptador-quickpack-fibra-optica-03061655',
     nota: 'ADAPTADOR QUICKPACK FIBRA OPTICA · artículo 03-06-1655 · ref. RIC-F-MP72-01 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 525.07, {
+  c('MAT-30-025', PROV_OCHOA, 525.07, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-de-fibra-optica-03061378',
     art: 'CONECTOR DE FIBRA ÓPTICA',
     sku: '03-06-1378',
@@ -55609,7 +55503,7 @@
     url: 'https://ochoa.com.do/producto/conector-de-fibra-optica-03061378',
     nota: 'CONECTOR DE FIBRA ÓPTICA · artículo 03-06-1378 · ref. FC1-LB-LC5-9AQ · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 652.25, {
+  c('MAT-30-025', PROV_OCHOA, 652.25, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/conector-de-fibra-os1-os4-03061379',
     art: 'CONECTOR DE FIBRA OS1 / OS4',
     sku: '03-06-1379',
@@ -55617,7 +55511,7 @@
     url: 'https://ochoa.com.do/producto/conector-de-fibra-os1-os4-03061379',
     nota: 'CONECTOR DE FIBRA OS1 / OS4 · artículo 03-06-1379 · ref. FC1-LB-LCU-9BL · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 190.83, {
+  c('MAT-30-025', PROV_OCHOA, 190.83, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mc6-utp-modular-cord-1-ft-white-03061614',
     peso: 2,
     art: 'MC6 UTP MODULAR CORD, 1 FT, WHITE',
@@ -55626,7 +55520,7 @@
     url: 'https://ochoa.com.do/producto/mc6-utp-modular-cord-1-ft-white-03061614',
     nota: 'MC6 UTP MODULAR CORD, 1 FT, WHITE · artículo 03-06-1614 · ref. MC6-01-02 · marca SIEMON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-024', PROV_OCHOA, 43.71, {
+  c('MAT-30-025', PROV_OCHOA, 43.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plug-utp-categoria-6-03061411',
     art: 'PLUG UTP CATEGORÍA 6',
     sku: '03-06-1411',
@@ -55634,7 +55528,7 @@
     url: 'https://ochoa.com.do/producto/plug-utp-categoria-6-03061411',
     nota: 'PLUG UTP CATEGORÍA 6 · artículo 03-06-1411 · ref. P6U-8-8 · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 7860.67, {
+  c('MAT-30-026', PROV_OCHOA, 7860.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/parlante-6-5-cielo-par-s2incei-03061039',
     art: 'PARLANTE 6.5” CIELO, PAR, S2INCEI',
     sku: '03-06-1039',
@@ -55642,7 +55536,7 @@
     url: 'https://ochoa.com.do/producto/parlante-6-5-cielo-par-s2incei-03061039',
     nota: 'PARLANTE 6.5” CIELO, PAR, S2INCEI · artículo 03-06-1039 · ref. NV21C6 · marca NUVO LEGRAND. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 287.39, {
+  c('MAT-30-026', PROV_OCHOA, 287.39, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/anillo-blanco-03060742',
     peso: 2,
     art: 'ANILLO BLANCO',
@@ -55651,7 +55545,7 @@
     url: 'https://ochoa.com.do/producto/anillo-blanco-03060742',
     nota: 'ANILLO BLANCO · artículo 03-06-0742 · ref. SX34AWH · marca TUTONDO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 104.5, {
+  c('MAT-30-026', PROV_OCHOA, 104.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/anillo-negro-03060739',
     art: 'ANILLO NEGRO',
     sku: '03-06-0739',
@@ -55659,7 +55553,7 @@
     url: 'https://ochoa.com.do/producto/anillo-negro-03060739',
     nota: 'ANILLO NEGRO · artículo 03-06-0739 · ref. SX34ABK · marca TUTONDO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 62081.59, {
+  c('MAT-30-026', PROV_OCHOA, 62081.59, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/amplificador-240w-todo-en-uno-03061291',
     art: 'AMPLIFICADOR 240W TODO EN UNO',
     sku: '03-06-1291',
@@ -55667,7 +55561,7 @@
     url: 'https://ochoa.com.do/producto/amplificador-240w-todo-en-uno-03061291',
     nota: 'AMPLIFICADOR 240W TODO EN UNO · artículo 03-06-1291 · ref. PLN-6AIO240 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 40282.58, {
+  c('MAT-30-026', PROV_OCHOA, 40282.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/gestor-de-mensajes-plena-03061244',
     art: 'GESTOR DE MENSAJES PLENA',
     sku: '03-06-1244',
@@ -55675,7 +55569,7 @@
     url: 'https://ochoa.com.do/producto/gestor-de-mensajes-plena-03061244',
     nota: 'GESTOR DE MENSAJES PLENA · artículo 03-06-1244 · ref. LBB1965/00 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 59719.34, {
+  c('MAT-30-026', PROV_OCHOA, 59719.34, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plena-matrix-mezclador-8-canales-03061605',
     art: 'PLENA MATRIX MEZCLADOR 8 CANALES',
     sku: '03-06-1605',
@@ -55683,7 +55577,7 @@
     url: 'https://ochoa.com.do/producto/plena-matrix-mezclador-8-canales-03061605',
     nota: 'PLENA MATRIX MEZCLADOR 8 CANALES · artículo 03-06-1605 · ref. PLM-8M8-US · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-025', PROV_OCHOA, 39743.82, {
+  c('MAT-30-026', PROV_OCHOA, 39743.82, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/temporizador-semanal-plena-03061293',
     art: 'TEMPORIZADOR SEMANAL PLENA',
     sku: '03-06-1293',
@@ -55691,7 +55585,7 @@
     url: 'https://ochoa.com.do/producto/temporizador-semanal-plena-03061293',
     nota: 'TEMPORIZADOR SEMANAL PLENA · artículo 03-06-1293 · ref. PLN-6TMW · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 1857.35, {
+  c('MAT-30-027', PROV_OCHOA, 1857.35, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-ethernet-poe-15-4w-1-puerto-03061279',
     art: 'FUENTE ETHERNET POE 15.4W 1 PUERTO',
     sku: '03-06-1279',
@@ -55699,7 +55593,7 @@
     url: 'https://ochoa.com.do/producto/fuente-ethernet-poe-15-4w-1-puerto-03061279',
     nota: 'FUENTE ETHERNET POE 15.4W 1 PUERTO · artículo 03-06-1279 · ref. NPD-5001-POE · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 9810.73, {
+  c('MAT-30-027', PROV_OCHOA, 9810.73, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/injector-poe-injec-03061338',
     art: 'INJECTOR POE INJEC',
     sku: '03-06-1338',
@@ -55707,7 +55601,7 @@
     url: 'https://ochoa.com.do/producto/injector-poe-injec-03061338',
     nota: 'INJECTOR POE INJEC · artículo 03-06-1338 · ref. DA2401 · marca ON Q. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 1.21, {
+  c('MAT-30-027', PROV_OCHOA, 1.21, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/transf-ext-p-antena-03061090',
     art: 'TRANSF.EXT. P / ANTENA',
     sku: '03-06-1090',
@@ -55715,7 +55609,7 @@
     url: 'https://ochoa.com.do/producto/transf-ext-p-antena-03061090',
     nota: 'TRANSF.EXT. P / ANTENA · artículo 03-06-1090 · ref. 200-490 · marca STEREN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 4801.16, {
+  c('MAT-30-027', PROV_OCHOA, 4801.16, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/pdu-8-salidas-rackmount-dahua-03062115',
     art: 'PDU 8 SALIDAS RACKMOUNT DAHUA',
     sku: '03-06-2115',
@@ -55723,7 +55617,7 @@
     url: 'https://ochoa.com.do/producto/pdu-8-salidas-rackmount-dahua-03062115',
     nota: 'PDU 8 SALIDAS RACKMOUNT DAHUA · artículo 03-06-2115 · ref. ZZM10/PDU(8USA250) · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 9152.69, {
+  c('MAT-30-027', PROV_OCHOA, 9152.69, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regenerador-de-bus-ursula-03060670',
     art: 'REGENERADOR DE BUS ÚRSULA',
     sku: '03-06-0670',
@@ -55731,7 +55625,7 @@
     url: 'https://ochoa.com.do/producto/regenerador-de-bus-ursula-03060670',
     nota: 'REGENERADOR DE BUS ÚRSULA · artículo 03-06-0670 · ref. HA02000 · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 5229.21, {
+  c('MAT-30-027', PROV_OCHOA, 5229.21, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-poder-2-hilos-03060476',
     art: 'FUENTE PODER 2 HILOS',
     sku: '03-06-0476',
@@ -55739,7 +55633,7 @@
     url: 'https://ochoa.com.do/producto/fuente-poder-2-hilos-03060476',
     nota: 'FUENTE PODER 2 HILOS · artículo 03-06-0476 · ref. 346050 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-026', PROV_OCHOA, 2122.4, {
+  c('MAT-30-027', PROV_OCHOA, 2122.4, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-inalabrica-on-off-03061077',
     art: 'FUENTE INALABRICA ON / OFF',
     sku: '03-06-1077',
@@ -55747,7 +55641,7 @@
     url: 'https://ochoa.com.do/producto/fuente-inalabrica-on-off-03061077',
     nota: 'FUENTE INALABRICA ON / OFF · artículo 03-06-1077 · ref. ARPS15RF2 · marca ADORNE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-027', PROV_OCHOA, 4514.34, {
+  c('MAT-30-028', PROV_OCHOA, 4514.34, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-alimentador-12v-4a-4mod-03060395',
     art: 'FUENTE ALIMENTADOR 12V 4A 4MOD',
     sku: '03-06-0395',
@@ -55755,7 +55649,7 @@
     url: 'https://ochoa.com.do/producto/fuente-alimentador-12v-4a-4mod-03060395',
     nota: 'FUENTE ALIMENTADOR 12V 4A 4MOD · artículo 03-06-0395 · ref. HA06000-DIN · marca MASTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-027', PROV_OCHOA, 1111.78, {
+  c('MAT-30-028', PROV_OCHOA, 1111.78, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/power-supply-12vdc-100-260vac-03062116',
     art: 'POWER SUPPLY 12VDC 100-260VAC',
     sku: '03-06-2116',
@@ -55763,7 +55657,7 @@
     url: 'https://ochoa.com.do/producto/power-supply-12vdc-100-260vac-03062116',
     nota: 'POWER SUPPLY 12VDC 100-260VAC · artículo 03-06-2116 · ref. ES516N110VAC · marca DAHUA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-028', PROV_OCHOA, 906.34, {
+  c('MAT-30-029', PROV_OCHOA, 906.34, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-de-alimentacion-120v-60hz-03060533',
     art: 'FUENTE DE ALIMENTACION 120V 60HZ',
     sku: '03-06-0533',
@@ -55771,7 +55665,7 @@
     url: 'https://ochoa.com.do/producto/fuente-de-alimentacion-120v-60hz-03060533',
     nota: 'FUENTE DE ALIMENTACION 120V 60HZ · artículo 03-06-0533 · ref. UPA-1220-60 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-028', PROV_OCHOA, 1157.38, {
+  c('MAT-30-029', PROV_OCHOA, 1157.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-de-alimentacion-120vac-60hz-03060538',
     art: 'FUENTE DE ALIMENTACION 120VAC 60HZ',
     sku: '03-06-0538',
@@ -55779,7 +55673,7 @@
     url: 'https://ochoa.com.do/producto/fuente-de-alimentacion-120vac-60hz-03060538',
     nota: 'FUENTE DE ALIMENTACION 120VAC 60HZ · artículo 03-06-0538 · ref. UPA-2430-60 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-029', PROV_OCHOA, 11089.49, {
+  c('MAT-30-030', PROV_OCHOA, 11089.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-de-alimentacion-12-24vdc-03060565',
     art: 'FUENTE DE ALIMENTACIÓN 12 / 24VDC',
     sku: '03-06-0565',
@@ -55787,7 +55681,7 @@
     url: 'https://ochoa.com.do/producto/fuente-de-alimentacion-12-24vdc-03060565',
     nota: 'FUENTE DE ALIMENTACIÓN 12 / 24VDC · artículo 03-06-0565 · ref. APS-PSU-60 · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-029', PROV_OCHOA, 16632.64, {
+  c('MAT-30-030', PROV_OCHOA, 16632.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fuente-de-alimentacion-rnac-8a-24v-03060525',
     art: 'FUENTE DE ALIMENTACION RNAC 8A 24V',
     sku: '03-06-0525',
@@ -55795,7 +55689,7 @@
     url: 'https://ochoa.com.do/producto/fuente-de-alimentacion-rnac-8a-24v-03060525',
     nota: 'FUENTE DE ALIMENTACION RNAC 8A 24V · artículo 03-06-0525 · ref. FPP-RNAC-8A-4C · marca BOSCH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-030', PROV_OCHOA, 28.95, {
+  c('MAT-30-031', PROV_OCHOA, 28.95, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/capacitor-275v-0-5mf-03060752',
     art: 'CAPACITOR 275V 0.5MF',
     sku: '03-06-0752',
@@ -55803,7 +55697,7 @@
     url: 'https://ochoa.com.do/producto/capacitor-275v-0-5mf-03060752',
     nota: 'CAPACITOR 275V 0.5MF · artículo 03-06-0752 · ref. CAPBLINK · marca SWITCH BEE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-30-031', PROV_OCHOA, 2150.5, {
+  c('MAT-30-032', PROV_OCHOA, 2150.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/power-pack-120-277v-03061063',
     art: 'POWER PACK 120 / 277V',
     sku: '03-06-1063',
@@ -56349,13 +56243,39 @@
     url: 'https://ochoa.com.do/producto/video-intercom-modulo-estacion-puerta-03061764',
     nota: 'VIDEO INTERCOM MODULO ESTACION PUERTA · artículo 03-06-1764 · ref. ST-LE9003-JNF1 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-020', PROV_OCHOA, 2573.7, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
-    art: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM',
-    sku: '03-06-1767',
-    marca: 'SECTECH',
-    url: 'https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
-    nota: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM · artículo 03-06-1767 · ref. OCB-LBCE9003-RS2 · marca SECTECH. ' + SUPUESTO_ITBIS
+  c('MAT-31-020', PROV_OCHOA, 594.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
+    peso: 2,
+    art: 'CONFIGURADOR #2 CAJA DE 10 UNIDS',
+    sku: '03-06-0319',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/configurador-2-caja-de-10-unids-03060319',
+    nota: 'CONFIGURADOR #2 CAJA DE 10 UNIDS · artículo 03-06-0319 · ref. 346912/3501/2 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 323.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
+    peso: 2,
+    art: 'CONFIGURADOR #3 CAJA DE 10 UNIDS',
+    sku: '03-06-0320',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/configurador-3-caja-de-10-unids-03060320',
+    nota: 'CONFIGURADOR #3 CAJA DE 10 UNIDS · artículo 03-06-0320 · ref. 346913/3501/3 · marca BTICINO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 329.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
+    art: 'CONFIGURADOR #5 CAJA DE 10 UNIDS',
+    sku: '03-06-0322',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/configurador-5-caja-de-10-unids-03060322',
+    nota: 'CONFIGURADOR #5 CAJA DE 10 UNIDS · artículo 03-06-0322 · ref. 346915/3501/5 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 559.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
+    art: 'CONFIGURADOR #6 CAJA DE 10 UNIDS',
+    sku: '03-06-0323',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/configurador-6-caja-de-10-unids-03060323',
+    nota: 'CONFIGURADOR #6 CAJA DE 10 UNIDS · artículo 03-06-0323 · ref. 346916/3501/6 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-020', PROV_OCHOA, 1765.47, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/derivador-montante-independ-03060327',
@@ -56364,22 +56284,6 @@
     marca: 'BTICINO',
     url: 'https://ochoa.com.do/producto/derivador-montante-independ-03060327',
     nota: 'DERIVADOR MONTANTE INDEPEND. · artículo 03-06-0327 · ref. 346980 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-020', PROV_OCHOA, 2164.34, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
-    art: 'MARCO SOPORTE 2 MODULOS',
-    sku: '03-06-0477',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
-    nota: 'MARCO SOPORTE 2 MODULOS · artículo 03-06-0477 · ref. 350221 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-020', PROV_OCHOA, 1085.02, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
-    art: 'FRONTAL PARA TECLADO NUMERICO',
-    sku: '03-06-0313',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
-    nota: 'FRONTAL PARA TECLADO NUMERICO · artículo 03-06-0313 · ref. 332651 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-020', PROV_OCHOA, 537.03, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soneria-adicional-2-hilos-03060303',
@@ -56396,6 +56300,94 @@
     marca: 'BTICINO',
     url: 'https://ochoa.com.do/producto/unidad-p-secreto-de-conversacion-03060302',
     nota: 'UNIDAD P / SECRETO DE CONVERSACION · artículo 03-06-0302 · ref. 336300 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 2573.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
+    art: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM',
+    sku: '03-06-1767',
+    marca: 'SECTECH',
+    url: 'https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
+    nota: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM · artículo 03-06-1767 · ref. OCB-LBCE9003-RS2 · marca SECTECH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 5396.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/accesorios-p-instalacion-2-modulo-interc-03061768',
+    art: 'ACCESORIOS P / INSTALACION 2 MODULO INTERC',
+    sku: '03-06-1768',
+    marca: 'SECTECH',
+    url: 'https://ochoa.com.do/producto/accesorios-p-instalacion-2-modulo-interc-03061768',
+    nota: 'ACCESORIOS P / INSTALACION 2 MODULO INTERC · artículo 03-06-1768 · ref. ST-LE-BDV2 · marca SECTECH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 656.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
+    art: 'CAJA EMPOTRAR DE 2 MÓDULOS',
+    sku: '03-06-0465',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/caja-empotrar-de-2-modulos-03060465',
+    nota: 'CAJA EMPOTRAR DE 2 MÓDULOS · artículo 03-06-0465 · ref. 350020 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 2499.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
+    art: 'CUBIERTA 8 PULSADORRS 2H 2F',
+    sku: '03-06-0471',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/cubierta-8-pulsadorrs-2h-2f-03060471',
+    nota: 'CUBIERTA 8 PULSADORRS 2H 2F · artículo 03-06-0471 · ref. 352181 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 1556.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
+    art: 'CUBIERTA DE MÓDULO 2 HILOS',
+    sku: '03-06-0473',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/cubierta-de-modulo-2-hilos-03060473',
+    nota: 'CUBIERTA DE MÓDULO 2 HILOS · artículo 03-06-0473 · ref. 351201 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 2164.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
+    art: 'MARCO SOPORTE 2 MODULOS',
+    sku: '03-06-0477',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
+    nota: 'MARCO SOPORTE 2 MODULOS · artículo 03-06-0477 · ref. 350221 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-021', PROV_OCHOA, 1085.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
+    art: 'FRONTAL PARA TECLADO NUMERICO',
+    sku: '03-06-0313',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
+    nota: 'FRONTAL PARA TECLADO NUMERICO · artículo 03-06-0313 · ref. 332651 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-022', PROV_OCHOA, 2999.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
+    art: 'MODULO 8 PULSADORES 2H 2F',
+    sku: '03-06-0479',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/modulo-8-pulsadores-2h-2f-03060479',
+    nota: 'MODULO 8 PULSADORES 2H 2F · artículo 03-06-0479 · ref. 352100 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-022', PROV_OCHOA, 13617.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
+    art: 'MODULO AUDIO Y VIDEO 2 HILO',
+    sku: '03-06-0480',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/modulo-audio-y-video-2-hilo-03060480',
+    nota: 'MODULO AUDIO Y VIDEO 2 HILO · artículo 03-06-0480 · ref. 351200 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-022', PROV_OCHOA, 3563.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
+    art: 'MÓDULO DE TECLADO SFERA 2H',
+    sku: '03-06-0484',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/modulo-de-teclado-sfera-2h-03060484',
+    nota: 'MÓDULO DE TECLADO SFERA 2H · artículo 03-06-0484 · ref. 353000 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-022', PROV_OCHOA, 12062.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-pantalla-2h2-wir-03060481',
+    art: 'MODULO PANTALLA 2H2 WIR',
+    sku: '03-06-0481',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/modulo-pantalla-2h2-wir-03060481',
+    nota: 'MODULO PANTALLA 2H2 WIR · artículo 03-06-0481 · ref. 352500 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
   c('MAT-32-008', PROV_BELLON, 3075, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',

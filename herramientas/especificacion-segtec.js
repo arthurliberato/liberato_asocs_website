@@ -81,9 +81,47 @@ const FAMILIAS = {
     cat: 'MAT-28', base: 'Equipo de cerco eléctrico', unidad: 'unidad',
     ejes: [], etapa: 'exteriores', orden: 70, alias: 'electrificador, cerco eléctrico'
   },
+  /* LO QUE HABÍA DENTRO DE «ACCESORIO DE SISTEMA DE ALARMA»
+
+     Setenta y dos cotizaciones de RD$ 147 a RD$ 34.654 —doscientas
+     treinta y seis veces— y ahí dentro, mezcladas, cinco cosas que no se
+     parecen en nada: el soporte de chapa que sujeta una cámara, la caja
+     que la aloja, el módulo electrónico que expande el panel, la tapa de
+     plástico que cubre un hueco y el control remoto del usuario.
+
+     Se separan por función, que es lo que distingue un presupuesto: los
+     soportes y las cajas se cuentan por punto instalado, los módulos por
+     capacidad del panel, las cubiertas por hueco y los mandos por
+     usuario. Nadie compra un módulo de expansión mirando lo que cuesta
+     un bisel. */
+  'soporte-montaje': {
+    cat: 'MAT-28', base: 'Soporte de montaje para equipo de seguridad', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 78,
+    alias: 'soporte, bracket, base de montaje, brazo'
+  },
+  'caja-equipo': {
+    cat: 'MAT-28', base: 'Caja o carcasa para equipo de seguridad', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 79,
+    alias: 'caja de conexión, carcasa, gabinete, caja de registro'
+  },
+  'modulo-panel': {
+    cat: 'MAT-28', base: 'Módulo de expansión para panel de alarma', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 80,
+    alias: 'módulo de expansión, módulo de zona, módulo multiplex, tarjeta de panel'
+  },
+  'cubierta-modulo': {
+    cat: 'MAT-28', base: 'Cubierta o bisel de módulo', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 81,
+    alias: 'cubierta, bisel, módulo ciego, tapa'
+  },
+  'mando-credencial': {
+    cat: 'MAT-28', base: 'Control remoto o credencial de acceso', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 82,
+    alias: 'control remoto, llavero, tarjeta de proximidad, badge'
+  },
   'accesorio-alarma': {
     cat: 'MAT-28', base: 'Accesorio de sistema de alarma', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 80, alias: 'módulo, tarjeta, control remoto de alarma'
+    ejes: [], etapa: 'instalaciones', orden: 83, alias: 'accesorio de alarma'
   },
 
   'detector-incendio': {
@@ -217,10 +255,25 @@ const FAMILIAS = {
     esp: 'Unidad exterior del portón, una por entrada',
     alias: 'placa de calle, estación de puerta, frente de calle'
   },
+  /* Y lo que quedaba en «Accesorio de intercomunicador» son dos cosas
+     más: lo que va en la línea —la sonería que suena en otro cuarto, el
+     derivador del montante, la unidad de secreto— y el herraje que
+     sujeta la placa a la pared. Lo primero se cuenta por vivienda o por
+     montante; lo segundo, por entrada. */
+  'intercom-linea': {
+    cat: 'MAT-31', base: 'Dispositivo de línea de intercomunicador', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 76,
+    alias: 'derivador, montante, sonería, unidad de secreto'
+  },
+  'intercom-montaje': {
+    cat: 'MAT-31', base: 'Herraje de montaje de intercomunicador', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 78,
+    alias: 'marco, frontal, módulo de montaje, caja de empotrar'
+  },
   'intercom-accesorio': {
     cat: 'MAT-31', base: 'Accesorio de intercomunicador', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 80,
-    alias: 'marco, módulo de montaje, derivador, sonería'
+    alias: 'accesorio de intercomunicador'
   },
   'timbre-inteligente': {
     cat: 'MAT-31', base: 'Timbre inteligente', unidad: 'unidad',

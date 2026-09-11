@@ -1894,7 +1894,12 @@
   it('MAT-28', 'Control de acceso proximidad', 'unidad', 9465.78, 8365.11, 10566.44, {esp:'', etapa:'instalaciones', origen:'importado', alias:'control de acceso, lector', medidas:{tecnologia:'proximidad'}, alcance:'Material retirado en almacén'});
   it('MAT-28', 'Control de acceso teclado', 'unidad', 12767.79, 12767.79, 12767.79, {esp:'', etapa:'instalaciones', origen:'importado', alias:'control de acceso, lector', medidas:{tecnologia:'teclado'}, alcance:'Material retirado en almacén'});
   it('MAT-28', 'Equipo de cerco eléctrico', 'unidad', 1207.19, 10.19, 11952.92, {esp:'', etapa:'exteriores', origen:'importado', alias:'electrificador, cerco eléctrico', alcance:'Material retirado en almacén'});
-  it('MAT-28', 'Accesorio de sistema de alarma', 'unidad', 1911.87, 146.83, 34654.38, {esp:'', etapa:'instalaciones', origen:'importado', alias:'módulo, tarjeta, control remoto de alarma', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Soporte de montaje para equipo de seguridad', 'unidad', 1068.39, 165.78, 4335.82, {esp:'', etapa:'instalaciones', origen:'importado', alias:'soporte, bracket, base de montaje, brazo', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Caja o carcasa para equipo de seguridad', 'unidad', 1286.99, 255.43, 8661.58, {esp:'', etapa:'instalaciones', origen:'importado', alias:'caja de conexión, carcasa, gabinete, caja de registro', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Módulo de expansión para panel de alarma', 'unidad', 3481.22, 574.9, 21617.57, {esp:'', etapa:'instalaciones', origen:'importado', alias:'módulo de expansión, módulo de zona, módulo multiplex, tarjeta de panel', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Cubierta o bisel de módulo', 'unidad', 617.17, 146.83, 1992.43, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cubierta, bisel, módulo ciego, tapa', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Control remoto o credencial de acceso', 'unidad', 676.56, 538.84, 774.47, {esp:'', etapa:'instalaciones', origen:'importado', alias:'control remoto, llavero, tarjeta de proximidad, badge', alcance:'Material retirado en almacén'});
+  it('MAT-28', 'Accesorio de sistema de alarma', 'unidad', 11751.42, 11751.42, 11751.42, {esp:'', etapa:'instalaciones', origen:'importado', alias:'accesorio de alarma', alcance:'Material retirado en almacén'});
 
   /* MAT-29 */
   it('MAT-29', 'Detector para sistema de incendio de calor', 'unidad', 1780.89, 1508.54, 2053.24, {esp:'', etapa:'instalaciones', origen:'importado', alias:'detector de humo, detector de calor', medidas:{deteccion:'calor'}, alcance:'Material retirado en almacén'});
@@ -1902,7 +1907,7 @@
   it('MAT-29', 'Detector para sistema de incendio de humo y calor', 'unidad', 1657.72, 1657.72, 1657.72, {esp:'', etapa:'instalaciones', origen:'importado', alias:'detector de humo, detector de calor', medidas:{deteccion:'humo y calor'}, alcance:'Material retirado en almacén'});
   it('MAT-29', 'Estación manual de incendio', 'unidad', 2358.36, 870.3, 4065.41, {esp:'', etapa:'instalaciones', origen:'importado', alias:'estación manual, pulsador de incendio', alcance:'Material retirado en almacén'});
   it('MAT-29', 'Sirena o estrobo de incendio', 'unidad', 3502.55, 3502.55, 3502.55, {esp:'', etapa:'instalaciones', origen:'importado', alias:'sirena con estrobo, notificación', alcance:'Material retirado en almacén'});
-  it('MAT-29', 'Accesorio de sistema de incendio', 'unidad', 270.76, 232.07, 615.97, {esp:'', etapa:'instalaciones', origen:'importado', alias:'base, caja, módulo de incendio', alcance:'Material retirado en almacén'});
+  it('MAT-29', 'Accesorio de sistema de incendio', 'unidad', 2029.27, 232.07, 22010.69, {esp:'', etapa:'instalaciones', origen:'importado', alias:'base, caja, módulo de incendio', alcance:'Material retirado en almacén'});
 
   /* MAT-30 */
   it('MAT-30', 'Cable de red', 'rollo', 433.97, 5.11, 21280, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cable UTP, cable de red', alcance:'Material retirado en almacén'});
@@ -1916,7 +1921,8 @@
   it('MAT-30', 'Jack RJ45 Cat 6', 'unidad', 254.97, 189.16, 1513.22, {esp:'', etapa:'instalaciones', origen:'importado', alias:'jack, keystone', medidas:{categoria:'6'}, alcance:'Material retirado en almacén'});
   it('MAT-30', 'Jack RJ45 Cat 6A', 'unidad', 256.97, 256.97, 256.97, {esp:'', etapa:'instalaciones', origen:'importado', alias:'jack, keystone', medidas:{categoria:'6A'}, alcance:'Material retirado en almacén'});
   it('MAT-30', 'Jack RJ45 Cat 6A blindado', 'unidad', 337.87, 275.76, 439.42, {esp:'', etapa:'instalaciones', origen:'importado', alias:'jack, keystone', medidas:{categoria:'6A', blindaje:'blindado'}, alcance:'Material retirado en almacén'});
-  it('MAT-30', 'Patch panel', 'unidad', 1305.12, 192.87, 1396.76, {esp:'', etapa:'instalaciones', origen:'importado', alias:'panel de parcheo', alcance:'Material retirado en almacén'});
+  it('MAT-30', 'Patch panel', 'unidad', 1350.94, 192.87, 4491.54, {esp:'', etapa:'instalaciones', origen:'importado', alias:'panel de parcheo', alcance:'Material retirado en almacén'});
+  it('MAT-30', 'Patch panel 12 puertos', 'unidad', 4801.94, 4089.16, 5514.72, {esp:'', etapa:'instalaciones', origen:'importado', alias:'panel de parcheo', medidas:{puertos:12}, alcance:'Material retirado en almacén'});
   it('MAT-30', 'Patch panel 24 puertos', 'unidad', 5568.67, 5568.67, 5568.67, {esp:'', etapa:'instalaciones', origen:'importado', alias:'panel de parcheo', medidas:{puertos:24}, alcance:'Material retirado en almacén'});
   it('MAT-30', 'Patch panel 48 puertos', 'unidad', 1782.28, 1782.28, 1782.28, {esp:'', etapa:'instalaciones', origen:'importado', alias:'panel de parcheo', medidas:{puertos:48}, alcance:'Material retirado en almacén'});
   it('MAT-30', 'Placa de pared para datos', 'unidad', 102.17, 77.06, 612.77, {esp:'', etapa:'instalaciones', origen:'importado', alias:'faceplate, placa de pared', alcance:'Material retirado en almacén'});
@@ -1955,7 +1961,9 @@
   it('MAT-31', 'Teléfono de intercomunicador', 'unidad', 1419, 305.08, 5278.83, {esp:'Unidad interior de audio, una por apartamento', etapa:'instalaciones', origen:'importado', alias:'teléfono de intercom, unidad interior, auricular', alcance:'Material retirado en almacén'});
   it('MAT-31', 'Monitor de intercomunicador', 'unidad', 13190.41, 11519.81, 14861.01, {esp:'Unidad interior con video, una por apartamento', etapa:'instalaciones', origen:'importado', alias:'monitor de intercom, estación interior, videoportero interior', alcance:'Material retirado en almacén'});
   it('MAT-31', 'Placa de calle de intercomunicador', 'unidad', 9883.62, 9883.62, 9883.62, {esp:'Unidad exterior del portón, una por entrada', etapa:'instalaciones', origen:'importado', alias:'placa de calle, estación de puerta, frente de calle', alcance:'Material retirado en almacén'});
-  it('MAT-31', 'Accesorio de intercomunicador', 'unidad', 1425.25, 537.03, 2573.7, {esp:'', etapa:'instalaciones', origen:'importado', alias:'marco, módulo de montaje, derivador, sonería', alcance:'Material retirado en almacén'});
+  it('MAT-31', 'Dispositivo de línea de intercomunicador', 'unidad', 559.47, 323.38, 1765.47, {esp:'', etapa:'instalaciones', origen:'importado', alias:'derivador, montante, sonería, unidad de secreto', alcance:'Material retirado en almacén'});
+  it('MAT-31', 'Herraje de montaje de intercomunicador', 'unidad', 2164.34, 656.41, 5396.45, {esp:'', etapa:'instalaciones', origen:'importado', alias:'marco, frontal, módulo de montaje, caja de empotrar', alcance:'Material retirado en almacén'});
+  it('MAT-31', 'Accesorio de intercomunicador', 'unidad', 7812.78, 2999.88, 13617.34, {esp:'', etapa:'instalaciones', origen:'importado', alias:'accesorio de intercomunicador', alcance:'Material retirado en almacén'});
 
   /* MAT-32 */
   it('MAT-32', 'Tubo Acero Inoxidable SCH-40 1/2" x 20 pies', 'tubo', 3075, 3075, 3075, {esp:'', etapa:'instalaciones', origen:'importado', alias:'tubo, tubería, PVC, CPVC, drenaje, presión', medidas:{material:'Acero Inoxidable', norma:'SCH-40', diametro:'1/2"', largo_pies:20}, alcance:'Material retirado en almacén'});

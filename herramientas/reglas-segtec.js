@@ -142,10 +142,59 @@ const FAMILIA = [
   [/estacion (de )?puerta|placa de calle|frente de calle|modulo estacion puerta|^Placa/i, 'intercom-placa'],
   [/intercom video|video intercom|^Estacion Interior|estacion interior|monitor.*intercom|intercom.*monitor|videoportero interior/i, 'intercom-monitor'],
   [/^Telefono .*intercom|intercom.*telefono|^Telefono Sprint|^Telefono Trad|^Intercomunicador\b/i, 'intercom-telefono'],
-  [/intercom|conserje|montante|soneria|secreto de conversacion|^Frontal Para Teclado|^Marco Soporte/i, 'intercom-accesorio'],
+  /* Lo que va en la línea del intercom y lo que lo sujeta a la pared son
+     dos compras distintas: la primera se cuenta por vivienda o por
+     montante, la segunda por entrada. */
+  [/^Soneria|montante|^Derivador|secreto de conversacion|conserje/i, 'intercom-linea'],
+  [/^Frontal Para Teclado|^Marco Soporte|modulo montaje|^Caja Empotrar|^Accesorios? p ?\/ ?instalacion.*interc/i, 'intercom-montaje'],
+  [/intercom/i,                                    'intercom-accesorio'],
 
   [/^Mini Caja/i,                                  'soporte-camara'],
-  [/^(Soporte|Bracket|Carcasa|Caja|Base|Cubierta|Brazo|Copa|Poste|Sello|Bisel|Display|Programador|Comunicador|Modulo|Módulo|Tarjeta|Configurador|Control Remoto|Llavero|Mando|Receptor|Transmisor|Borne)/i, 'accesorio-alarma']
+
+  /* EL CAJÓN DE «ACCESORIO DE SISTEMA DE ALARMA», ABIERTO
+
+     Esta última línea recogía todo lo que empezaba por una de veinte
+     palabras y lo metía en un solo ítem: 72 cotizaciones de RD$ 147 a
+     RD$ 34.654. Ahora se reparten por función —ver
+     especificacion-segtec.js—, y el orden manda: lo más específico
+     primero, porque «MODULO CIEGO» empieza por «Modulo» y es una tapa, y
+     «CARCASA CON 1 RAIL DIN» empieza por «Carcasa» y es una caja. */
+
+  [/^Sello\b/i, null],
+
+  /* Lo que es de otro sistema y caía aquí por empezar por la palabra
+     adecuada. Cada uno con su casa:
+
+     - Los módulos del panel de incendio FPA-1000 de BOSCH son de
+       incendio, no de intrusión: el catálogo los tiene en MAT-29.
+     - Los módulos de parcheo de 12 puertos de ON Q y SIEMON son
+       cableado estructurado.
+     - Los configuradores de BTICINO son los puentes numerados con que
+       se direccionan los aparatos de un intercom de dos hilos; vienen
+       en caja de diez y valen RD$ 300, no son un módulo de expansión.
+     - Los módulos de dos hilos de BTICINO —pantalla, audio y video,
+       teclado Sfera, pulsadores— son de la placa de calle. El
+       fabricante los numera «2H», «2H2» o «2 hilos», y las tres formas
+       hay que reconocerlas: «2H2 WIR» no lleva separador y «2 HILO» va
+       en singular. */
+  [/fpa-?1000|\bslc\b/i,                            'accesorio-incendio'],
+  [/^Modulo \d+-?port|modulo ric\b|\bcat ?[56]e?\d*-?po\b/i, 'patch-panel'],
+  [/^Configurador/i,                               'intercom-linea'],
+  [/^Cubierta.*(2\s*h|hilos?|pulsador)/i,           'intercom-montaje'],
+  [/\b2\s*h(ilos?|\d)?\b|sfera|2 hilos?/i,          'intercom-accesorio'],
+
+  /* Y lo que no es de obra de ninguna manera. */
+  [/^Receptor Multicanal|hdvr av|home theater|^Bateria Power Bank|^Estacion De Llamada|^Estación De Llamada|pln-\d|^Unidad De Control Digital|^Serie Modo/i, null],
+
+  [/^(Control Remoto|Llavero|Mando|Tarjeta Badge|Tarjeta De Proximidad|Credencial)/i, 'mando-credencial'],
+  [/^(Cubierta|Bisel|Modulo Ciego|Módulo Ciego|Tapa)/i,      'cubierta-modulo'],
+  [/^(Caja|Carcasa|Gabinete)/i,                              'caja-equipo'],
+  [/^(Soporte|Bracket|Brazo|Copa|Poste|Base)/i,              'soporte-montaje'],
+  /* El programador de mano es la herramienta con que se configura el
+     panel, no una pieza que se instale en él. */
+  [/^Programador/i,                                'accesorio-alarma'],
+  [/^(Modulo|Módulo|Tarjeta|Display|Comunicador|Transmisor|Borne|Receptor)/i, 'modulo-panel'],
+  [/./,                                                      'accesorio-alarma']
 ];
 
 const num = s => { const v = parseFloat(String(s).replace(',', '.')); return isFinite(v) ? v : null; };
@@ -297,7 +346,11 @@ function regla(a) {
   if (!CATEGORIA[a.cat2]) return null;
 
   const f = FAMILIA.filter(x => x[0].test(n))[0];
-  if (!f) return null;
+  /* La familia puede ser null a propósito: hay expresiones en la tabla
+     que están para atrapar el nombre ANTES de que lo reclame otra —el
+     receptor de cine en casa antes que «Receptor»— y decir que no es
+     partida. Mismo mecanismo que en reglas-banos.js. */
+  if (!f || !f[1]) return null;
 
   return ES.item(f[1], medidasDe(a, f[1]));
 }
