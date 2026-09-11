@@ -299,7 +299,7 @@ function reglaBano(a) {
   if (/espejo/.test(t)) return BANOS.item('espejo', { luz: /led|luz/.test(t) ? 'led' : '' });
   if (/urinario|orinal/.test(t)) return BANOS.item('urinario', {});
   if (/\bbidet\b|\bbide\b/.test(t)) return BANOS.item('bide', {});
-  if (/banera|tina de bano|jacuzzi/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t) });
+  if (/banera|tina de bano|jacuzzi/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t), material: BANOS.materialDeBanera(t) });
   if (/barra de (apoyo|seguridad)/.test(t)) {
     const cm = numero(medido(a), /(\d+(?:\.\d+)?)\s*cm/);
     const med = { forma: /abatible/.test(t) ? 'abatible' : /\ben l\b|"l"/.test(t) ? 'en L' : 'recta' };

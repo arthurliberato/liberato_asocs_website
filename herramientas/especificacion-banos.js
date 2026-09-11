@@ -153,7 +153,19 @@ const FAMILIAS = {
        del baño y pide que la plomería suba por el piso; la empotrada va
        contra la pared y se resuelve como siempre. Entre las dos hay tres
        veces, y es la clase de decisión que se toma antes de picar. */
-    ejes: ['montaje'], etapa: 'terminacion', orden: 42,
+    /* Y el material, que es el que manda en el precio: acero esmaltado
+       RD$ 9.469, acrílica RD$ 82.974 de mediana, carga mineral
+       RD$ 195.000. Nueve veces del primero al segundo y dos y media del
+       segundo al tercero.
+
+       Va como eje aunque solo lo declaren siete de doce, porque item()
+       salta el eje que falta en vez de rechazar la cotización: las que
+       no lo dicen se quedan juntas en «Bañera, de empotrar», y eso es
+       exactamente lo que son —bañeras de las que no sabemos de qué están
+       hechas—. Las fichas no ayudan: las de CerArte hablan de
+       «materiales duraderos y resistentes a la humedad», que es prosa de
+       venta y no una especificación. */
+    ejes: ['montaje', 'material'], etapa: 'terminacion', orden: 42,
     alias: 'bañera, tina, bathtub'
   },
   'banera-infantil': {
@@ -259,6 +271,10 @@ const ETIQUETA = {
   forma:       v => v,
   uso:         v => 'de ' + (v === 'bano' ? 'baño' : v),
   montaje:     v => 'de ' + v,
+  /* «Acrílica» es adjetivo y va sola; las otras dos son sustantivos y
+     piden el «de». Sale «Bañera, de empotrar, acrílica» y «Bañera, de
+     isla, de carga mineral». */
+  material:    v => (v === 'acrílica' ? 'acrílica' : 'de ' + v),
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
@@ -349,6 +365,28 @@ function tipoDeBanera(texto) {
    resuelve como una empotrada. Cuando el nombre no lo dice, es empotrada:
    es lo corriente, y una exenta siempre se anuncia como tal porque es
    justo lo que se está vendiendo. */
+/* DE QUÉ ESTÁ HECHA
+
+   Lo dice el nombre en siete de doce y la ficha en ninguna. Se reconocen
+   tres materiales porque son los tres que el mercado dominicano separa
+   por precio, y en ese orden.
+
+   «Stonex» entra como carga mineral y no como material aparte: es el
+   nombre que Roca le da a su resina de carga mineral, y La Ibérica vende
+   las dos cosas —«ONA Corner Stonex» y «Alaior Carga Mineral»— al mismo
+   nivel de precio. Dejarlas separadas sería partir una partida por una
+   marca comercial. */
+function materialDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (/acero esmaltado|acero porcelanizado/.test(t)) return 'acero esmaltado';
+  if (/stonex|carga mineral|solid ?surface/.test(t)) return 'carga mineral';
+  if (/acrilic/.test(t)) return 'acrílica';
+  if (/hierro fundido/.test(t)) return 'hierro fundido';
+  if (/fibra de vidrio|fiberglass/.test(t)) return 'fibra de vidrio';
+  return '';                      // la ficha no lo dice: no se inventa
+}
+
 function montajeDeBanera(texto) {
   const t = String(texto || '').toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -446,4 +484,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, aCm };
