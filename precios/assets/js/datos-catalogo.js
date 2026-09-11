@@ -2937,17 +2937,14 @@
       ambitos: ['construccion'] },
     { cat: 'MAT-09', re: /^(bomba|tinaco|cisterna|regulador|manometro|manómetro|boya|interruptor|tapa|valvula|válvula|tanque)/i,
       ambitos: ['construccion'] },
-    /* Lo que sale de interiorismo aquí es el consumible de instalación —la
-       cruceta, el calzo, el clip, la junta de dilatación, el polvo de color
-       del mosaico—, no el acabado. La baldosa, el porcelanato, el rodapié y
-       el peldaño los elige quien diseña, y por eso se quedan en los dos
-       ámbitos.
-
-       «set» estaba en esta lista y sobraba: lo único que empieza así en la
-       categoría es el «Set de huella y contrahuella», que es el acabado de
-       una escalera y se elige igual que el piso al que acompaña. */
-    { cat: 'MAT-08', re: /^(cruceta|calzo|clip|junta|adoquin|adoquín|polvo|yeso|mortero|pegamento|fragua|separador)/i,
-      ambitos: ['construccion'] }
+    /* «Pisos y revestimientos» entra entero en interiorismo. Aquí había una
+       regla que sacaba el consumible de instalación —la cruceta, el calzo,
+       el clip, la junta de dilatación, el polvo de color del mosaico— por
+       considerarlo obra y no acabado. Se quitó: quien elige un piso elige
+       con él el color de la fragua, el ancho de la junta y el perfil de
+       aluminio que se va a ver, y tenerlos a mano al lado de la baldosa es
+       parte del trabajo, no ruido. Los 62 ítems que la regla apartaba
+       vuelven a los dos ámbitos, como el resto de la categoría. */
   ];
 
   var ambitoDeCat = {};
