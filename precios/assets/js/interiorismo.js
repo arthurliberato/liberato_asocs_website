@@ -145,12 +145,7 @@
     }
   }
 
-  /* Fichas que se cayeron porque su foto no cargó. Se guarda la dirección
-     para no contar dos veces la misma al repintar. */
-  var caidas = {}, rotas = 0, ultimoConteo = null;
-
   function contar(ns, listasYa) {
-    ultimoConteo = [ns, listasYa];
     var c;
     var simple = !estado.q && (estado.cats.length + (estado.comercio ? 1 : 0)) <= 1;
     /* Una categoría con una subcategoría dentro también es cuenta exacta:
@@ -176,24 +171,26 @@
       c = { n: lista.length, min: v[0], max: v[v.length - 1], med: v[v.length >> 1] };
     }
     var parcial = !exactas && !cargadas(ns);
-    /* Cuántos hay, y nada más. El rango y la mediana son análisis y aquí
-       se viene a mirar: quien quiera comparar números tiene el catálogo de
-       precios y el libro de Excel.
-
-       Menos las fichas que se cayeron: si una foto no carga, su ficha se
-       quita (ver ficha()) y contarla sería prometer algo que no está. */
-    var n = Math.max(0, c.n - rotas);
-    cuenta.innerHTML = '<strong>' + n.toLocaleString('en-US') + '</strong> ' +
-      (n === 1 ? 'artículo' : 'artículos') +
-      (parcial ? ' <span class="ir-cargando">cargando el resto…</span>' : '');
+    /* Ya no se dice cuántos hay. Quien viene a mirar no elige por el número
+       —4,841 no ayuda a decidir nada— y ocupaba un renglón entero encima de
+       la primera fila de fotos. Lo único que queda es el aviso de que
+       todavía está llegando lo que falta, que sí es información: explica
+       por qué la cuadrícula sigue creciendo sola. */
+    cuenta.innerHTML = parcial ? '<span class="ir-cargando">cargando el resto…</span>' : '';
   }
 
 
   /* ---------- pintar ---------- */
 
   function ficha(v) {
+    /* La ficha es un <article> y no un <a>: dentro va el enlace a la tienda
+       y, encima de la foto, el botón de guardar. Un botón dentro de un
+       enlace no es HTML válido y en la práctica se traga el clic. */
+    var tarjeta = document.createElement('article');
+    tarjeta.className = 'ir-card';
+
     var a = document.createElement('a');
-    a.className = 'ir-card';
+    a.className = 'ir-enlace';
     a.href = v.u || '#';
     a.target = '_blank';
     a.rel = 'noopener nofollow';
@@ -209,14 +206,12 @@
     img.decoding = 'async';
     /* Aquí se viene a mirar, así que una ficha sin foto no es media ficha:
        es un hueco que estorba. Cuando la dirección de la imagen ya no
-       existe —la tienda la cambió, la retiró— la ficha entera se va y el
-       contador lo resta. Es lo contrario de lo habitual, y es a propósito:
-       en una tabla de precios el dato manda aunque falte la foto; en una
-       cuadrícula de fotos, sin foto no hay nada que enseñar. */
+       existe —la tienda la cambió, la retiró— la ficha entera se va. Es lo
+       contrario de lo habitual, y es a propósito: en una tabla de precios
+       el dato manda aunque falte la foto; en una cuadrícula de fotos, sin
+       foto no hay nada que enseñar. */
     img.onerror = function () {
-      if (!caidas[v.img]) { caidas[v.img] = 1; rotas += 1; }
-      if (a.parentNode) a.parentNode.removeChild(a);
-      if (ultimoConteo) contar(ultimoConteo[0], ultimoConteo[1]);
+      if (tarjeta.parentNode) tarjeta.parentNode.removeChild(tarjeta);
       /* Si se cayeron todas —la tienda dejó de servir sus imágenes, o no
          hay red— la cuadrícula vacía sin explicación parece un error de la
          página. Vale más decir qué pasó. */
@@ -254,8 +249,206 @@
       pie.appendChild(cat);
     }
     a.appendChild(pie);
-    return a;
+    tarjeta.appendChild(a);
+    tarjeta.appendChild(botonGuardar(v));
+    return tarjeta;
   }
+
+  /* =========================================================
+     MI SELECCIÓN
+
+     El mismo panel lateral que la lista de cotización del catálogo,
+     porque es el mismo gesto: ir apartando lo que sirve para mandarlo
+     junto. Lo que cambia es qué se guarda. En la tabla se guarda un
+     ítem —«papel tapiz, 12 m²»—, que es lo que va a un presupuesto;
+     aquí se guarda el artículo concreto que se vio: esta foto, este
+     modelo, este precio, esta tienda. Son dos listas y no una porque
+     son dos decisiones distintas, y mezclarlas perdería justo lo que
+     hace útil a cada una.
+
+     Vive en el navegador, como la otra. El día que haya cuentas, esto
+     es lo que se sincroniza.
+     ========================================================= */
+
+  var LS_SEL = 'ilya_interiorismo_seleccion_v1';
+  var seleccion = [];
+
+  /* La dirección del producto identifica al artículo: es única por tienda
+     y no cambia con la importación, a diferencia de cualquier índice. */
+  function claveDe(v) { return v.u || v.img; }
+
+  function leerSeleccion() {
+    try {
+      var t = localStorage.getItem(LS_SEL);
+      seleccion = t ? JSON.parse(t) : [];
+      if (!Array.isArray(seleccion)) seleccion = [];
+    } catch (e) { seleccion = []; }
+  }
+  function guardarSeleccion() {
+    try { localStorage.setItem(LS_SEL, JSON.stringify(seleccion)); } catch (e) { /* modo privado */ }
+  }
+  function estaGuardado(v) {
+    var k = claveDe(v);
+    for (var i = 0; i < seleccion.length; i++) if (claveDe(seleccion[i]) === k) return true;
+    return false;
+  }
+
+  var ICONO_MARCA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v16l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>';
+
+  function botonGuardar(v) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'ir-guardar';
+    b.innerHTML = ICONO_MARCA;
+    marcarBoton(b, v);
+    b.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      alternar(v);
+      marcarBoton(b, v);
+    });
+    return b;
+  }
+
+  function marcarBoton(b, v) {
+    var on = estaGuardado(v);
+    b.classList.toggle('is-on', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.setAttribute('aria-label', (on ? 'Quitar de mi selección: ' : 'Guardar en mi selección: ') + v.n);
+    b.title = on ? 'Quitar de mi selección' : 'Guardar en mi selección';
+  }
+
+  function alternar(v) {
+    var k = claveDe(v), i = -1;
+    for (var n = 0; n < seleccion.length; n++) if (claveDe(seleccion[n]) === k) { i = n; break; }
+    if (i >= 0) seleccion.splice(i, 1);
+    else seleccion.push({ n: v.n, img: v.img, p: v.p, c: v.c, u: v.u, k: v.k, s: v.s });
+    guardarSeleccion();
+    pintarSeleccion();
+  }
+
+  /* Los botones de la cuadrícula tienen que decir lo mismo que el panel:
+     se quita algo desde el panel y la ficha de atrás se entera. */
+  function refrescarBotones() {
+    [].forEach.call(grid.querySelectorAll('.ir-card'), function (t) {
+      var b = t.querySelector('.ir-guardar');
+      var enlace = t.querySelector('.ir-enlace');
+      var img = t.querySelector('img');
+      if (!b || !img) return;
+      var v = { u: enlace ? enlace.getAttribute('href') : '', img: img.getAttribute('src'),
+                n: (t.querySelector('.ir-nombre') || {}).textContent || '' };
+      if (v.u === '#') v.u = '';
+      marcarBoton(b, v);
+    });
+  }
+
+  function pintarSeleccion() {
+    var fab = $('ir-fab'), n = $('ir-n'), cuerpo = $('ir-lista'),
+        total = $('ir-total'), sub = $('ir-sub');
+    if (!cuerpo) return;
+    if (fab) fab.hidden = seleccion.length === 0;
+    if (n) n.textContent = seleccion.length;
+
+    if (!seleccion.length) {
+      cuerpo.innerHTML = '<p class="cot-vacio">Todavía no ha guardado nada.<br>' +
+        'Use el marcador de cada foto para ir apartando lo que le sirva.</p>';
+    } else {
+      cuerpo.innerHTML = seleccion.map(function (v, i) {
+        return '<div class="ir-sel">' +
+            '<img src="' + esc(v.img) + '" alt="" loading="lazy">' +
+            '<div class="ir-sel-txt">' +
+              '<a href="' + esc(v.u || '#') + '" target="_blank" rel="noopener nofollow">' + esc(v.n) + '</a>' +
+              '<small>' + esc(corto(v.c)) + (man && man.sub && man.sub[v.s] ? ' · ' + esc(man.sub[v.s]) : '') + '</small>' +
+            '</div>' +
+            '<div class="ir-sel-der">' +
+              '<span class="ir-sel-p">' + money(v.p) + '</span>' +
+              '<button class="cot-quitar" type="button" data-quitar="' + i + '" aria-label="Quitar ' + esc(v.n) + '">' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M9 7V5h6v2M7 7l1 12h8l1-12"/></svg>' +
+              '</button>' +
+            '</div>' +
+          '</div>';
+      }).join('');
+    }
+
+    var suma = 0;
+    seleccion.forEach(function (v) { suma += v.p || 0; });
+    if (total) total.textContent = money(suma);
+    if (sub) sub.textContent = seleccion.length
+      ? seleccion.length + (seleccion.length === 1 ? ' pieza guardada' : ' piezas guardadas')
+      : '';
+    refrescarBotones();
+  }
+
+  function textoSeleccion() {
+    var l = ['Mi selección — Presupuesta · precios.ingsliberato.com', ''];
+    seleccion.forEach(function (v, i) {
+      l.push((i + 1) + '. ' + v.n + ' — ' + money(v.p) + ' · ' + corto(v.c));
+      if (v.u) l.push('   ' + v.u);
+    });
+    var suma = 0;
+    seleccion.forEach(function (v) { suma += v.p || 0; });
+    l.push('');
+    l.push('Suma de lo guardado: ' + money(suma));
+    l.push('Los precios son los que publica cada tienda y no incluyen instalación ni transporte.');
+    return l.join('\n');
+  }
+
+  /* Se abre y se cierra igual que el panel del catálogo, con las mismas
+     clases: una sola manera de comportarse en todo el sitio. */
+  function abrirPanel(abrir) {
+    var panel = $('ir-panel'), velo = $('ir-overlay');
+    if (!panel) return;
+    panel.classList.toggle('is-open', abrir);
+    panel.setAttribute('aria-hidden', abrir ? 'false' : 'true');
+    if (velo) velo.classList.toggle('is-open', abrir);
+    var foco = abrir ? $('ir-cerrar') : $('ir-fab');
+    if (foco && !foco.hidden) foco.focus();
+  }
+
+  (function montarSeleccion() {
+    if (!$('ir-panel')) return;
+    leerSeleccion();
+    pintarSeleccion();
+
+    $('ir-fab').addEventListener('click', function () { abrirPanel(true); });
+    $('ir-cerrar').addEventListener('click', function () { abrirPanel(false); });
+    $('ir-overlay').addEventListener('click', function () { abrirPanel(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && $('ir-panel').classList.contains('is-open')) abrirPanel(false);
+    });
+
+    $('ir-lista').addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-quitar]') : null;
+      if (!b) return;
+      seleccion.splice(+b.getAttribute('data-quitar'), 1);
+      guardarSeleccion();
+      pintarSeleccion();
+    });
+
+    $('ir-vaciar').addEventListener('click', function () {
+      seleccion = [];
+      guardarSeleccion();
+      pintarSeleccion();
+    });
+
+    $('ir-copiar').addEventListener('click', function () {
+      var t = textoSeleccion(), b = this;
+      var aviso = function () {
+        var antes = b.textContent;
+        b.textContent = 'Copiado';
+        setTimeout(function () { b.textContent = antes; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+        navigator.clipboard.writeText(t).then(aviso, function () { window.prompt('Copie con Ctrl+C:', t); });
+      } else {
+        window.prompt('Copie con Ctrl+C:', t);
+      }
+    });
+
+    $('ir-wa').addEventListener('click', function () {
+      window.open('https://wa.me/18297939892?text=' + encodeURIComponent(textoSeleccion()), '_blank', 'noopener');
+    });
+  }());
 
   function pintar() {
     var frag = document.createDocumentFragment();

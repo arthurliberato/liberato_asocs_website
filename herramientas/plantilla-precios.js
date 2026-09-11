@@ -25,7 +25,7 @@ function header(seccion) {
   const nav = [
     ['./', 'Catálogo de precios', 'catalogo'],
     ['interiorismo.html', 'Interiorismo', 'interiorismo'],
-    ['proveedores.html', 'Proveedores', 'proveedores'],
+    ['proveedores.html', 'Directorio de proveedores', 'proveedores'],
     ['quienes-somos.html', 'Quiénes somos', 'quienes-somos'],
     [PRINCIPAL + '/proyectos-en-venta.html', 'Proyectos en venta', 'en-venta'],
   ].map(([href, texto, clave]) =>
