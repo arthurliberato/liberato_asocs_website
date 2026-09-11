@@ -1756,11 +1756,17 @@ if (faltan.length) {
    clasificar en otro sitio con otras reglas, que es como se desincronizan
    los catálogos.
 
-   Solo entra lo que tiene foto y cae en una categoría de interiorismo:
-   sin imagen no hay nada que explorar visualmente.
+   Solo entra lo que tiene foto y es de interiorismo: sin imagen no hay nada
+   que explorar visualmente.
+
+   SE ESCRIBE EN PÁGINAS, NO EN UN ARCHIVO
+   En un solo archivo son 790 KB que el navegador tiene que descargar
+   ENTEROS antes de pintar la primera foto, que es exactamente lo que no
+   debe pasar en una página cuya gracia es ver algo de inmediato. Van en
+   páginas de 250 y el explorador pide la que necesita.
    ========================================================= */
 
-function bloqueVisual() {
+function escribirVisual() {
   /* El ámbito se pregunta ÍTEM POR ÍTEM, no por su categoría, y esa
      distinción no es cosmética. «Pisos y revestimientos» es de los dos
      ámbitos, pero dentro lleva sesenta y dos consumibles de instalación
@@ -1773,6 +1779,7 @@ function bloqueVisual() {
      obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
      reglas y arriesgar que las dos copias se separen. */
   const ambitoDeItem = {};
+  const ordenCat = {};
   (function () {
     const g = { window: {} };
     const antes = global.window;
@@ -1780,6 +1787,7 @@ function bloqueVisual() {
     delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
     require(path.join(DATOS, 'datos-catalogo.js'));
     (g.window.CATALOGO.items || []).forEach(i => { ambitoDeItem[i.codigo] = i.ambitos || []; });
+    (g.window.CATALOGO.categorias || []).forEach((c, n) => { ordenCat[c.codigo] = n; });
     global.window = antes;
   }());
 
@@ -1805,30 +1813,100 @@ function bloqueVisual() {
   };
 
   nuevosOk.forEach(x => anota(x.a, codigoDe[x.spec.cat + '|' + x.spec.clave], x.spec.cat));
-  existenteOk.forEach(x => {
-    const cat = String(x.item).slice(0, 6);
-    anota(x.a, x.item, cat);
-  });
+  existenteOk.forEach(x => anota(x.a, x.item, String(x.item).slice(0, 6)));
 
-  filas.sort((a, b) => (a.k + a.n).localeCompare(b.k + b.n));
-  return "'use strict';\n" +
-    '/* Generado por herramientas/importar-catalogos.js. No editar a mano.\n' +
-    '   Un registro por ARTÍCULO de interiorismo con foto: lo que se explora\n' +
-    '   visualmente. El precio de referencia y la comparación entre comercios\n' +
-    '   siguen viviendo en el catálogo de ítems; esto es para elegir, no para\n' +
-    '   presupuestar. Las imágenes se sirven desde el comercio que las publica\n' +
-    '   y cada ficha enlaza a su producto. */\n' +
-    '(function (global) {\n' +
-    '  global.VISUAL = ' + JSON.stringify(filas) + ';\n' +
-    '}(typeof window !== \'undefined\' ? window : globalThis));\n';
+  /* El orden de la página: por categoría, y dentro de ella intercalando
+     comercios, para que las primeras pantallas no parezcan una sola tienda.
+     Se fija AQUÍ y no en el navegador porque de este orden dependen las
+     páginas: la número 3 tiene que traer siempre los mismos artículos. */
+  const turno = {};
+  filas.forEach(v => { turno[v.c] = (turno[v.c] || 0); v._t = turno[v.c]++; });
+  filas.sort((a, b) =>
+    (ordenCat[a.k] - ordenCat[b.k]) || (a._t - b._t) || a.n.localeCompare(b.n));
+
+  /* Las URL son el 63% de los bytes y casi todas empiezan igual: 977 por
+     «https://mundoled.com.do/wp-content/uploads/», 535 por el CDN de
+     Shopify. Un diccionario de prefijos con la referencia por número las
+     encoge a la mitad. */
+  const cuentaPre = {};
+  const prefijoDe = u => {
+    const m = String(u).match(/^https?:\/\/[^/]+\/(?:[^/]+\/){0,3}/);
+    return m ? m[0] : '';
+  };
+  filas.forEach(v => {
+    [prefijoDe(v.img), prefijoDe(v.u)].forEach(q => { if (q) cuentaPre[q] = (cuentaPre[q] || 0) + 1; });
+  });
+  const pre = Object.keys(cuentaPre).filter(q => cuentaPre[q] >= 3 && q.length > 18)
+    .sort((a, b) => cuentaPre[b] * b.length - cuentaPre[a] * a.length).slice(0, 60);
+  const idxPre = {};
+  pre.forEach((q, n) => { idxPre[q] = n; });
+  const corta = u => {
+    const q = prefijoDe(u);
+    return (q && idxPre[q] !== undefined) ? [idxPre[q], String(u).slice(q.length)] : String(u);
+  };
+
+  const comercios = [...new Set(filas.map(v => v.c))].sort();
+  const idxCom = {};
+  comercios.forEach((c, n) => { idxCom[c] = n; });
+
+  /* Una fila es un arreglo y no un objeto: repetir siete nombres de campo
+     2,771 veces cuesta 83 KB que no dicen nada. */
+  const fila = v => [v.n, corta(v.img), v.p, idxCom[v.c], corta(v.u), v.i, v.k];
+
+  const POR_PAGINA = 250;
+  const dir = path.join(DATOS, '..', 'datos');
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.readdirSync(dir).filter(f => /^visual/.test(f)).forEach(f => fs.unlinkSync(path.join(dir, f)));
+
+  const paginas = [];
+  for (let i = 0; i < filas.length; i += POR_PAGINA) {
+    const trozo = filas.slice(i, i + POR_PAGINA);
+    fs.writeFileSync(path.join(dir, 'visual-' + paginas.length + '.json'),
+                     JSON.stringify(trozo.map(fila)));
+    paginas.push({
+      n: trozo.length,
+      k: [...new Set(trozo.map(v => v.k))],
+      c: [...new Set(trozo.map(v => idxCom[v.c]))]
+    });
+  }
+
+  /* Las cifras de cada categoría y de cada comercio se calculan aquí, con
+     todo delante, y viajan en el manifiesto. Así el contador —cuántos hay,
+     de cuánto a cuánto, cuál es la mediana— sale exacto desde la primera
+     pantalla, sin obligar a descargar las doce páginas solo para contar.
+     Cuando el visitante combina filtros, lo que se cuenta es lo cargado y
+     el contador lo dice. */
+  const cifras = lista => {
+    const v = lista.map(x => x.p).sort((a, b) => a - b);
+    return { n: v.length, min: v[0], max: v[v.length - 1], med: v[v.length >> 1] };
+  };
+  const porCat = {}, porCom = {};
+  filas.forEach(v => {
+    (porCat[v.k] = porCat[v.k] || []).push(v);
+    (porCom[v.c] = porCom[v.c] || []).push(v);
+  });
+  Object.keys(porCat).forEach(k => { porCat[k] = cifras(porCat[k]); });
+  Object.keys(porCom).forEach(k => { porCom[idxCom[k]] = cifras(porCom[k]); delete porCom[k]; });
+
+  fs.writeFileSync(path.join(dir, 'visual.json'), JSON.stringify({
+    total: filas.length, porPagina: POR_PAGINA,
+    pre: pre, com: comercios, pags: paginas,
+    todo: cifras(filas), cat: porCat, porCom: porCom
+  }));
+
+  return { total: filas.length, paginas: paginas.length,
+           kb: Math.round(fs.readdirSync(dir).reduce((s, f) =>
+             s + fs.statSync(path.join(dir, f)).size, 0) / 1024) };
 }
 
 if (ESCRIBIR) {
   reemplazar('datos-catalogo.js', 'items', bloqueItems());
   reemplazar('datos-precios.js', 'cotizaciones', bloqueCotizaciones());
-  /* Después de los dos, y no a la vez: bloqueVisual() recarga el catálogo
+  /* Después de los dos, y no a la vez: escribirVisual() recarga el catálogo
      para preguntarle el ámbito de cada ítem, y necesita el recién escrito. */
-  fs.writeFileSync(path.join(DATOS, 'datos-visual.js'), bloqueVisual());
+  const vis = escribirVisual();
+  console.log('Catálogo visual: ' + vis.total + ' artículos en ' + vis.paginas +
+              ' páginas (' + vis.kb + ' KB en total).');
   console.log('');
   console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');
 } else {

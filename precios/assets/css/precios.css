@@ -838,13 +838,26 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* =========================================================
    EXPLORADOR VISUAL DE INTERIORISMO
    =========================================================
-   La cuadrícula es de columnas y no de celdas iguales a
-   propósito. Las fotos vienen de seis tiendas y no hay dos con
-   la misma proporción: hay lámparas recortadas sobre blanco en
-   cuadrado, papeles tapiz verticales y salas enteras
-   apaisadas. Forzarlas todas a un cuadrado recortaría justo lo
-   que hace falta ver. Con columnas, cada foto se muestra como
-   es y la página se lee como un muestrario.
+   La cuadrícula es de celdas iguales, y esto empezó siendo al
+   revés. La primera versión usaba columnas para que cada foto
+   se mostrara en su proporción —las fotos vienen de nueve
+   tiendas y no hay dos iguales: lámparas recortadas en
+   cuadrado, papeles tapiz verticales, salas apaisadas— y sobre
+   el papel era lo correcto.
+
+   En uso resultó insoportable. Las fotos llegan de nueve
+   servidores y cada una con su alto; según van cargando, las
+   columnas se reacomodan y las fichas saltan BAJO EL CURSOR
+   mientras uno baja. Se pierde el sitio: no se sabe si hay que
+   volver a subir porque se escapó algo o si lo que se movió es
+   la página.
+
+   La celda de alto fijo lo elimina de raíz: cada ficha ocupa su
+   hueco desde antes de que su foto exista, y nada se mueve
+   nunca. Para no pagarlo recortando la foto —que era el motivo
+   original— la imagen va CONTENIDA dentro de la celda, sobre un
+   fondo de marfil: se ve entera, en su proporción, y lo que
+   sobra es un margen tranquilo en lugar de un salto.
    ========================================================= */
 
 .ir-intro {
@@ -949,17 +962,16 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 /* ---------- la cuadrícula ---------- */
 
 .ir-grid {
-  columns: 2 9rem;
-  column-gap: .8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 1rem .8rem;
 }
-@media (min-width: 620px)  { .ir-grid { columns: 3 13rem; column-gap: 1rem; } }
-@media (min-width: 1000px) { .ir-grid { columns: 4 15rem; } }
-@media (min-width: 1320px) { .ir-grid { columns: 5 15rem; } }
+@media (min-width: 620px)  { .ir-grid { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1.4rem 1rem; } }
+@media (min-width: 1000px) { .ir-grid { grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); } }
 
 .ir-card {
-  display: block;
-  break-inside: avoid;
-  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -968,10 +980,10 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   display: block;
   border-radius: var(--r-sm);
   overflow: hidden;
-  background: var(--marfil-hondo);
-  /* Mientras la foto carga, el bloque ya ocupa un alto razonable: sin esto
-     la cuadrícula salta y reacomoda todo a medida que van llegando. */
-  min-height: 7rem;
+  background: var(--marfil);
+  /* El hueco existe antes que la foto: es lo que impide que la cuadrícula
+     se reacomode mientras se baja. */
+  aspect-ratio: 1 / 1;
   transition: box-shadow .14s, transform .14s;
 }
 .ir-card:hover .ir-foto,
@@ -982,13 +994,21 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ir-card:focus-visible { outline: 0; }
 .ir-card:focus-visible .ir-foto { outline: 2px solid var(--verde); outline-offset: 2px; }
 
-.ir-foto img { display: block; width: 100%; height: auto; }
+/* Contenida y no recortada: la pieza se ve entera y en su proporción, que
+   era la razón de la cuadrícula de columnas. Lo que sobra queda como margen. */
+.ir-foto img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: .3rem;
+}
 
 /* Una tienda renombra un archivo y la foto desaparece. La ficha sigue
    sirviendo: precio, comercio, nombre y enlace. Lo que no puede quedar es
    un hueco blanco sin explicación. */
 .ir-foto-rota {
-  min-height: 10rem;
   background:
     repeating-linear-gradient(45deg, var(--marfil-hondo) 0 8px, var(--marfil) 8px 16px);
 }
@@ -1033,7 +1053,14 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   text-overflow: ellipsis;
 }
 
-.ir-pie { display: block; padding: .45rem .15rem 0; }
+/* El pie también mide siempre lo mismo: si creciera con el largo del
+   nombre, la fila entera volvería a desalinearse. */
+.ir-pie {
+  display: block;
+  padding: .45rem .15rem 0;
+  height: 3.5rem;
+  overflow: hidden;
+}
 .ir-nombre {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1044,6 +1071,13 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   color: var(--ink-soft);
 }
 .ir-cat { display: block; font-size: .72rem; color: var(--ink-mute); margin-top: .12rem; }
+
+.ir-cargando {
+  display: inline-block;
+  font-size: .8rem;
+  color: var(--ink-mute);
+  font-style: italic;
+}
 
 .ir-vacio { text-align: center; color: var(--ink-mute); padding: 3rem 1rem; }
 .ir-mas { display: flex; justify-content: center; padding: .5rem 0 2.5rem; }
