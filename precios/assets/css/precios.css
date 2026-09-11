@@ -853,20 +853,48 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    sobra es un margen tranquilo en lugar de un salto.
    ========================================================= */
 
-.ir-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: .9rem;
+/* ---------- el banner ----------
+   La franja de arriba era blanca y solo llevaba el título. Ahora lleva la
+   misma geometría de la marca: rectángulos a tope, sin bordes ni sombras,
+   con la esquina cortada de la plancha y la paleta entera. El dibujo es
+   decorativo y va detrás del texto; en pantalla estrecha se retira, donde
+   el título necesita todo el ancho. */
+.ir-banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--verde-800);
+  /* El mismo corte que la plancha del logotipo: baja por la derecha y
+     retrocede por abajo, en esa proporción y no a 45°. */
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 96% 100%, 0 100%);
+  padding: clamp(1.6rem, 3.6vw, 2.8rem) 0 clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 0;
 }
-@media (min-width: 900px) {
-  .ir-intro { grid-template-columns: minmax(0, 1fr) 22rem; align-items: start; gap: 2rem; }
+.ir-banner-inner { position: relative; z-index: 1; }
+.ir-trama {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: min(46%, 30rem);
+  height: 100%;
+  z-index: 0;
+  opacity: .9;
+}
+@media (max-width: 760px) { .ir-trama { display: none; } }
+
+.ir-eyebrow {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--verde-200);
+  margin: 0 0 .3rem;
 }
 .ir-titulo {
   font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(1.8rem, 3.4vw, 2.6rem);
   line-height: 1.1;
-  margin: 0 0 .4rem;
-  color: var(--verde-800);
+  margin: 0;
+  color: var(--marfil);
 }
 .ir-bajada { margin: 0; color: var(--ink-soft); max-width: 58ch; }
 .ir-nota {
@@ -927,7 +955,10 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ir-sub { font-size: .8rem; padding: .18rem .6rem; }
 .ir-sub.is-on { background: var(--verde-800); border-color: var(--verde-800); }
 
-.ir-controles { display: flex; flex-wrap: wrap; gap: .5rem; margin-left: auto; }
+/* A la izquierda, en la misma columna que las pastillas: el buscador y los
+   dos desplegables son parte del mismo gesto de filtrar, y empujados al
+   borde derecho quedaban lejos de lo que filtran. */
+.ir-controles { display: flex; flex-wrap: wrap; gap: .5rem; margin-right: auto; }
 
 .ir-busca {
   display: flex;
@@ -969,12 +1000,74 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 @media (min-width: 620px)  { .ir-grid { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1.4rem 1rem; } }
 @media (min-width: 1000px) { .ir-grid { grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); } }
 
-.ir-card {
+.ir-card { position: relative; display: flex; flex-direction: column; }
+.ir-enlace {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
+
+/* El marcador de guardar, sobre la esquina de la foto. Va fuera del enlace
+   —un botón dentro de un enlace no es HTML válido y se traga el clic— y
+   encima de él. Apagado es discreto; encendido es ámbar, que en esta
+   paleta es lo que señala sin gritar. */
+.ir-guardar {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  color: var(--verde-800);
+  background: rgba(248, 246, 238, .88);
+  box-shadow: 0 1px 4px rgba(27, 30, 23, .18);
+  transition: background .16s var(--ease), color .16s var(--ease), transform .16s var(--ease);
+}
+.ir-guardar svg { width: 16px; height: 16px; }
+.ir-guardar:hover { background: #fff; transform: scale(1.06); }
+.ir-guardar.is-on { background: var(--ambar); color: var(--verde-900); }
+.ir-guardar.is-on svg { fill: currentColor; }
+.ir-guardar:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+
+/* Cada pieza guardada, dentro del panel. */
+.ir-sel {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  gap: .7rem;
+  align-items: center;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.ir-sel:last-child { border-bottom: 0; }
+.ir-sel img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  background: var(--marfil);
+  border-radius: var(--r-sm);
+}
+.ir-sel-txt { min-width: 0; }
+.ir-sel-txt a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: .86rem;
+  line-height: 1.25;
+  color: var(--ink);
+  text-decoration: none;
+}
+.ir-sel-txt a:hover { color: var(--verde); text-decoration: underline; }
+.ir-sel-txt small { display: block; font-size: .74rem; color: var(--ink-mute); margin-top: .15rem; }
+.ir-sel-der { display: flex; align-items: center; gap: .4rem; white-space: nowrap; }
+.ir-sel-p { font-family: 'Jost', system-ui, sans-serif; font-weight: 600; font-size: .9rem; color: var(--verde-700); }
 .ir-foto {
   position: relative;
   display: block;
@@ -986,13 +1079,13 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   aspect-ratio: 1 / 1;
   transition: box-shadow .14s, transform .14s;
 }
-.ir-card:hover .ir-foto,
-.ir-card:focus-visible .ir-foto {
+.ir-enlace:hover .ir-foto,
+.ir-enlace:focus-visible .ir-foto {
   box-shadow: 0 6px 18px rgba(27, 30, 23, .16);
   transform: translateY(-2px);
 }
-.ir-card:focus-visible { outline: 0; }
-.ir-card:focus-visible .ir-foto { outline: 2px solid var(--verde); outline-offset: 2px; }
+.ir-enlace:focus-visible { outline: 0; }
+.ir-enlace:focus-visible .ir-foto { outline: 2px solid var(--verde); outline-offset: 2px; }
 
 /* Contenida y no recortada: la pieza se ve entera y en su proporción, que
    era la razón de la cuadrícula de columnas. Lo que sobra queda como margen. */
@@ -1042,11 +1135,14 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 
 /* El pie también mide siempre lo mismo: si creciera con el largo del
    nombre, la fila entera volvería a desalinearse. */
+/* Alto mínimo, no alto fijo: con dos renglones de nombre más la
+   subcategoría no cabía y el texto salía cortado por la mitad de la letra.
+   La cuadrícula sigue alineada porque cada fila toma el alto de su celda
+   más alta; lo que ya no pasa es que el nombre se corte. */
 .ir-pie {
   display: block;
-  padding: .45rem .15rem 0;
-  height: 3.5rem;
-  overflow: hidden;
+  padding: .45rem .15rem .1rem;
+  min-height: 3.5rem;
 }
 .ir-nombre {
   display: -webkit-box;
