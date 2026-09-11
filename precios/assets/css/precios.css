@@ -801,3 +801,282 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .banner-der.plegado .banner-plegar svg{transform:rotate(180deg)}
 }
 @media print{.banner-lateral{display:none}}
+
+/* =========================================================
+   SELECTOR DE ÁMBITO: CONSTRUCCIÓN O INTERIORISMO
+   No es un filtro más, así que no va de chip: decide qué catálogo se
+   está mirando y de él dependen las categorías que se ofrecen. Se
+   dibuja como control segmentado —una sola pieza con tres tramos— para
+   que se lea como una elección excluyente y no como tres botones.
+   ========================================================= */
+.ambitos{
+  display:inline-flex;flex-wrap:wrap;gap:2px;
+  background:var(--marfil);border:1px solid var(--marfil-hondo);
+  border-radius:100px;padding:3px;margin:.15rem 0 .1rem;
+}
+.ambito-op{
+  display:inline-flex;align-items:center;gap:.45rem;
+  border:0;background:transparent;border-radius:100px;
+  padding:.34rem .9rem;cursor:pointer;
+  font-family:Jost,sans-serif;font-size:.9rem;font-weight:500;
+  color:var(--ink-soft);
+  transition:background .18s var(--ease),color .18s var(--ease);
+}
+.ambito-op:hover{background:#fff;color:var(--verde-800)}
+.ambito-op[aria-pressed="true"]{background:var(--verde);color:#fff}
+/* El conteo va en la misma tinta que su botón, a media opacidad: es un
+   dato de apoyo, no una segunda etiqueta. */
+.ambito-n{
+  font-size:.8rem;font-variant-numeric:tabular-nums;
+  color:var(--ink-mute);
+}
+/* Al 75 % el conteo se quedaba en 4.2:1 sobre el verde. Al 88 % pasa
+   de 4.5 y sigue leyéndose como dato de apoyo y no como etiqueta. */
+.ambito-op[aria-pressed="true"] .ambito-n{color:rgba(255,255,255,.88)}
+.ambito-op:hover .ambito-n{color:var(--verde-700)}
+
+/* =========================================================
+   EXPLORADOR VISUAL DE INTERIORISMO
+   =========================================================
+   La cuadrícula es de columnas y no de celdas iguales a
+   propósito. Las fotos vienen de seis tiendas y no hay dos con
+   la misma proporción: hay lámparas recortadas sobre blanco en
+   cuadrado, papeles tapiz verticales y salas enteras
+   apaisadas. Forzarlas todas a un cuadrado recortaría justo lo
+   que hace falta ver. Con columnas, cada foto se muestra como
+   es y la página se lee como un muestrario.
+   ========================================================= */
+
+.ir-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .9rem;
+}
+@media (min-width: 900px) {
+  .ir-intro { grid-template-columns: minmax(0, 1fr) 22rem; align-items: start; gap: 2rem; }
+}
+.ir-titulo {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  line-height: 1.1;
+  margin: 0 0 .4rem;
+  color: var(--verde-800);
+}
+.ir-bajada { margin: 0; color: var(--ink-soft); max-width: 58ch; }
+.ir-nota {
+  margin: 0;
+  font-size: .86rem;
+  color: var(--ink-mute);
+  border-left: 3px solid var(--verde-200);
+  padding-left: .8rem;
+}
+
+/* ---------- la barra de filtros ---------- */
+
+.ir-barra {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg-tint);
+  border-bottom: 1px solid var(--line);
+  padding: .7rem 0 .55rem;
+  margin-bottom: 1.2rem;
+}
+.ir-filtros { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: center; }
+.ir-chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+
+.ir-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font: inherit;
+  font-size: .82rem;
+  line-height: 1;
+  padding: .44rem .7rem;
+  border: 1px solid var(--line-fuerte);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background .12s, color .12s, border-color .12s;
+}
+.ir-chip:hover { border-color: var(--verde-400); color: var(--verde-800); }
+.ir-chip.is-on {
+  background: var(--verde-800);
+  border-color: var(--verde-800);
+  color: #fff;
+}
+.ir-chip-n {
+  font-size: .74rem;
+  font-variant-numeric: tabular-nums;
+  opacity: .7;
+}
+.ir-chip.is-on .ir-chip-n { opacity: .8; }
+
+.ir-controles { display: flex; flex-wrap: wrap; gap: .5rem; margin-left: auto; }
+
+.ir-busca {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  background: var(--bg);
+  border: 1px solid var(--line-fuerte);
+  border-radius: var(--r-sm);
+  padding: .34rem .6rem;
+  min-width: 15rem;
+}
+.ir-busca svg { width: 1rem; height: 1rem; color: var(--ink-mute); flex: none; }
+.ir-busca input { border: 0; outline: 0; font: inherit; font-size: .88rem; background: none; width: 100%; color: var(--ink); }
+
+.ir-select select {
+  font: inherit;
+  font-size: .88rem;
+  padding: .4rem 1.9rem .4rem .6rem;
+  border: 1px solid var(--line-fuerte);
+  border-radius: var(--r-sm);
+  background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%2362685a' d='M1 1.5 6 6.5l5-5'/%3E%3C/svg%3E") no-repeat right .6rem center/.7rem;
+  color: var(--ink);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.ir-busca:focus-within, .ir-select select:focus-visible { border-color: var(--verde); outline: 2px solid var(--verde-200); outline-offset: 1px; }
+
+.ir-cuenta { margin: .55rem 0 0; font-size: .82rem; color: var(--ink-mute); }
+.ir-cuenta strong { color: var(--verde-800); font-variant-numeric: tabular-nums; }
+.ir-cuenta-sep { opacity: .45; margin: 0 .1rem; }
+
+/* ---------- la cuadrícula ---------- */
+
+.ir-grid {
+  columns: 2 9rem;
+  column-gap: .8rem;
+}
+@media (min-width: 620px)  { .ir-grid { columns: 3 13rem; column-gap: 1rem; } }
+@media (min-width: 1000px) { .ir-grid { columns: 4 15rem; } }
+@media (min-width: 1320px) { .ir-grid { columns: 5 15rem; } }
+
+.ir-card {
+  display: block;
+  break-inside: avoid;
+  margin: 0 0 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.ir-foto {
+  position: relative;
+  display: block;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: var(--marfil-hondo);
+  /* Mientras la foto carga, el bloque ya ocupa un alto razonable: sin esto
+     la cuadrícula salta y reacomoda todo a medida que van llegando. */
+  min-height: 7rem;
+  transition: box-shadow .14s, transform .14s;
+}
+.ir-card:hover .ir-foto,
+.ir-card:focus-visible .ir-foto {
+  box-shadow: 0 6px 18px rgba(27, 30, 23, .16);
+  transform: translateY(-2px);
+}
+.ir-card:focus-visible { outline: 0; }
+.ir-card:focus-visible .ir-foto { outline: 2px solid var(--verde); outline-offset: 2px; }
+
+.ir-foto img { display: block; width: 100%; height: auto; }
+
+/* Una tienda renombra un archivo y la foto desaparece. La ficha sigue
+   sirviendo: precio, comercio, nombre y enlace. Lo que no puede quedar es
+   un hueco blanco sin explicación. */
+.ir-foto-rota {
+  min-height: 10rem;
+  background:
+    repeating-linear-gradient(45deg, var(--marfil-hondo) 0 8px, var(--marfil) 8px 16px);
+}
+.ir-foto-rota::after {
+  content: 'Foto no disponible';
+  position: absolute;
+  inset: auto 0 45% 0;
+  text-align: center;
+  font-size: .74rem;
+  color: var(--ink-mute);
+}
+
+/* El recuadro: relleno sólido para leerse sobre cualquier foto. */
+.ir-precio {
+  position: absolute;
+  left: .5rem;
+  bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .05rem;
+  padding: .34rem .55rem;
+  border-radius: 5px;
+  background: var(--verde-800);
+  box-shadow: 0 2px 8px rgba(27, 30, 23, .3);
+  max-width: calc(100% - 1rem);
+}
+.ir-precio b {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .92rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+.ir-precio i {
+  font-style: normal;
+  font-size: .68rem;
+  line-height: 1.2;
+  color: var(--verde-200);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ir-pie { display: block; padding: .45rem .15rem 0; }
+.ir-nombre {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: .82rem;
+  line-height: 1.3;
+  color: var(--ink-soft);
+}
+.ir-cat { display: block; font-size: .72rem; color: var(--ink-mute); margin-top: .12rem; }
+
+.ir-vacio { text-align: center; color: var(--ink-mute); padding: 3rem 1rem; }
+.ir-mas { display: flex; justify-content: center; padding: .5rem 0 2.5rem; }
+.ir-mas-n { font-size: .8rem; opacity: .7; margin-left: .3rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ir-card:hover .ir-foto, .ir-card:focus-visible .ir-foto { transform: none; }
+  .ir-foto { transition: none; }
+}
+
+/* En el teléfono, nueve pastillas apiladas más los controles empujan la
+   primera foto fuera de pantalla, y aquí lo primero que hay que ver son las
+   fotos. La fila de categorías pasa a deslizarse en horizontal: ocupa una
+   línea en vez de cuatro y la cuadrícula queda a la vista de entrada. */
+@media (max-width: 619px) {
+  .ir-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Que las pastillas se despeguen del borde al deslizarse, sin abrir
+       hueco en la primera. */
+    margin: 0 -1rem;
+    padding: .1rem 1rem;
+    width: calc(100% + 2rem);
+  }
+  .ir-chips::-webkit-scrollbar { display: none; }
+  .ir-chip { flex: none; scroll-snap-align: start; }
+  .ir-controles { margin-left: 0; width: 100%; }
+  .ir-busca { min-width: 0; flex: 1 1 100%; }
+  .ir-select { flex: 1 1 8rem; }
+  .ir-select select { width: 100%; }
+  .ir-intro .ir-nota { font-size: .8rem; }
+  .ir-bajada { font-size: .92rem; }
+}

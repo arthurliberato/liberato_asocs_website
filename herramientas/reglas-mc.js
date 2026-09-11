@@ -226,12 +226,24 @@ function regla(a) {
 
   /* ---- Cable THHN y cable de goma, por rollo de 100 pies ---- */
   m = n.match(/^ALAMBRE THHN \(AWG\)\s+#?([\d/]+)\b/);
-  if (m) return ELEC.item('cable-thhn', { calibre: m[1] });
+  if (m) return porPie(ELEC.item('cable-thhn', { calibre: m[1] }), a);
   m = n.match(/^ALAMBRE DE GOMA\s+(?:\(AWG\)\s+|AWG\s+)?([\d.]+(?:MM)?)\s*\/\s*(\d+)/);
-  if (m) return ELEC.item('cable-goma', { calibre: m[1].replace('MM', ' mm'), conductores: parseInt(m[2], 10) });
+  if (m) return porPie(ELEC.item('cable-goma', { calibre: m[1].replace('MM', ' mm'), conductores: parseInt(m[2], 10) }), a);
 
   MOTIVO.valor = 'línea de la cotización que no corresponde a ninguna familia del catálogo';
   return null;
+}
+
+/* El factor por pie hay que ponerlo TAMBIÉN cuando la línea crea un ítem
+   nuevo, no solo cuando cae en uno que ya existía. Faltaba aquí, y por eso
+   diecinueve calibres se publicaron con el precio del pie bajo un nombre que
+   decía «rollo 100 pies»: el #14 a RD$ 9.66 al lado del #12 a RD$ 1,950.
+   Cien veces por debajo, en la misma tabla y sin que se notara. */
+function porPie(spec, a) {
+  if (!spec) return spec;
+  const f = factor(a);
+  if (f) spec.factorUnidad = f;
+  return spec;
 }
 
 /* El cable se cotiza por pie y el catálogo lo lleva por rollo de 100 pies. */

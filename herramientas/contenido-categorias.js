@@ -698,6 +698,54 @@ module.exports = {
   ]
 },
 
+'MAT-34': {
+  titulo: 'Precio de los revestimientos decorativos en RD',
+  desc: 'Precio por metro cuadrado de paneles de pared de PVC y WPC, planchas de bambú y ónix, papel tapiz, piedra flexible, mosaicos y piezas 3D en República Dominicana.',
+  h1: 'Precio de los revestimientos decorativos en República Dominicana',
+  intro: [
+    'Todo lo de esta página va por metro cuadrado, y conviene saber por qué: las tiendas los venden como salen de fábrica —el panel por tablilla, el papel por rollo, el mosaico por pieza— y cada formato cubre una superficie distinta. Una tablilla de PVC de 14 cm por 2.9 m cubre 0.41 m²; un rollo de papel tapiz de 0.53 por 10 m cubre 5.3. Comparar RD$ 550 con RD$ 1,850 sin esa cuenta no dice nada; llevados al metro, se ordenan solos.',
+    'Es la partida que más ha crecido en el interiorismo dominicano de los últimos años, y la que más sorprende al presupuestar: un panel de PVC cuesta por metro cuadrado más o menos lo que una cerámica de gama media, pero se instala en seco, sobre cualquier muro y sin pegamento cementicio. El mosaico decorativo y la pieza 3D juegan en otra liga —salen varias veces eso— porque son piezas pequeñas y el metro cuadrado se llena despacio.'
+  ],
+  claves: [
+    ['El precio de la pieza engaña; el del metro, no', 'Dos paneles al mismo precio pueden cubrir superficies muy distintas según su ancho. La tabla ya trae la cuenta hecha con las medidas que publica cada tienda.'],
+    ['El espesor cambia el precio y también el uso', 'Un panel de 10 mm es decorativo; uno de 24 o 26 mm aguanta exterior y golpes. No son el mismo producto aunque se vean parecidos.'],
+    ['Se instala en seco, y eso cambia la mano de obra', 'La mayoría va con adhesivo de montaje o con clip sobre rastreles. Sale más rápido que un revestimiento cementicio, pero pide un muro plano.'],
+    ['Cuenta el desperdicio del despiece', 'En piezas chicas —mosaico, 3D— el recorte se come más metro del que uno calcula. Conviene sumar un margen sobre el área neta.']
+  ],
+  faq: [
+    ['¿Por qué el precio aparece por metro cuadrado si la tienda lo vende por pieza?',
+     'Porque es la única forma de compararlos entre sí y de llevarlos a un presupuesto, que se cubica por área. La conversión sale de la medida que publica la propia tienda, y la ficha de cada cotización deja dicho cuál era el precio de la pieza y cuánto cubre.'],
+    ['¿Un panel de PVC sirve para exterior?',
+     'Solo el que la ficha declara como WPC de exterior, que es más grueso y lleva carga de madera. El panel de PVC de interior puesto a la intemperie se deforma y pierde color.'],
+    ['¿Cuánto de más hay que comprar por el recorte?',
+     'Depende del despiece y del tamaño de la pieza. En tablilla larga el desperdicio es bajo; en mosaico y pieza 3D sube, porque cada corte inutiliza más proporción de la pieza.']
+  ]
+},
+
+'MAT-33': {
+  titulo: 'Precio de la iluminación decorativa en RD',
+  desc: 'Precio de lámparas de techo, colgantes, apliques de pared, lámparas de mesa y de pie en República Dominicana.',
+  h1: 'Precio de la iluminación decorativa en República Dominicana',
+  intro: [
+    'Esta partida se presupuesta distinto a todas las demás del catálogo, y conviene decirlo antes que nada: la lámpara decorativa no se elige por especificación, se elige por cómo se ve. De las casi mil que publican las tiendas de iluminación del país, solo una de cada cien dice cuántas luces lleva y una de cada cinco declara su potencia. No es descuido del comercio: es que nadie compra una lámpara de comedor por sus vatios.',
+    'Por eso aquí no hay un precio por modelo sino un rango por tipo de montaje, que es exactamente lo que necesita quien cubica: una cifra por punto de luz para la partida de iluminación, con el piso y el techo del mercado a la vista. Lo notable es lo ordenado que resulta ese rango. Entre las lámparas de techo, que van de poco más de mil pesos a casi doscientos mil, no hay un solo salto grande entre una y la siguiente: es una escalera continua, del plafón sencillo a la pieza de diseño importada.'
+  ],
+  claves: [
+    ['Se presupuesta por punto, no por modelo', 'Lo práctico es fijar un monto por punto de luz decorativo y multiplicarlo por la cantidad de puntos del proyecto; el modelo se elige después, contra ese monto.'],
+    ['El montaje es lo que más mueve el precio', 'Una lámpara de pie parte de un piso muy por encima del de un aplique de pared, y esa diferencia se sostiene en todo el rango.'],
+    ['El punto de luz hay que dejarlo previsto en obra', 'La lámpara llega al final, pero su salida eléctrica, su refuerzo en el cielo raso y su control se resuelven cuando todavía hay acceso. Cambiar de colgante a empotrado después cuesta romper.'],
+    ['El extremo alto es importado y se cotiza en dólares', 'Las piezas de diseño llegan por pedido y su precio se mueve con la tasa; conviene cerrar la cotización y no arrastrarla meses.']
+  ],
+  faq: [
+    ['¿Por qué no aparece el precio de cada lámpara?',
+     'Porque no sería una referencia útil. Dos lámparas de techo del mismo tamaño y la misma potencia pueden costar diez veces distinto según su diseño y su material, y ninguna ficha declara qué las separa. Publicar un modelo suelto daría una precisión falsa; el rango del mercado, con su mediana, dice más.'],
+    ['¿Cuánto conviene presupuestar por punto de luz decorativo?',
+     'La mediana del mercado por tipo de montaje es el punto de partida que aparece en la tabla. Para una vivienda corriente suele trabajarse cerca de esa mediana en los ambientes principales y por debajo en los secundarios; en proyectos de interiorismo el monto sube hacia el extremo alto del rango.'],
+    ['¿La lámpara decorativa lleva su bombillo?',
+     'No siempre, y es una diferencia que se paga. Muchas piezas se venden solo con el cuerpo y el zócalo; el bombillo va aparte y tiene su propia partida en electricidad e iluminación.']
+  ]
+},
+
 'MAT-32': {
   titulo: 'Precio de la tubería y las conexiones de PVC en RD',
   desc: 'Precios de referencia de tubo PVC y CPVC, codos, tees, niples, reducciones, llaves de paso, sifones y rejillas en República Dominicana.',

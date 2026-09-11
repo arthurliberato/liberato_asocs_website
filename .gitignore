@@ -11,3 +11,6 @@ Thumbs.db
 node_modules/
 dist/
 .cache/
+
+# Salida de herramientas/prueba-medidor.js: taller, no sitio.
+prueba-medidor.html

@@ -1392,6 +1392,50 @@ La pintura deja de tener un solo comercio: **6 ítems de MAT-12 ya se comparan**
 de acrílica tiene RD$ 375–430 de Ferremix contra RD$ 374–1,485 de Tonos y Colores. En
 eléctricos, MAT-10 sube a 204 ítems con 21 comparables.
 
+## Construcción o interiorismo: dos lentes, una base
+
+El catálogo lleva un selector de ámbito sobre los filtros: **Todo el catálogo ·
+Construcción · Interiorismo**. No es un filtro más —decide qué catálogo se está mirando, y
+de él dependen las categorías que se ofrecen—, así que va aparte y como control segmentado.
+
+**Es una lente, no una partición.** El 42 % de los ítems los piden los dos públicos: pisos y
+revestimientos, pintura, iluminación, sanitarios. Partirlo en dos catálogos duplicaría 682
+ítems y los dejaría separarse en cuanto uno se actualizara sin el otro.
+
+| | Ítems |
+|---|---|
+| Todo el catálogo | 1,613 |
+| Construcción | 1,573 |
+| Interiorismo | 488 |
+
+### El ámbito es del ítem, no solo de la categoría
+
+La categoría dice a qué público sirve, pero **dentro de una categoría hay dos cosas
+distintas**. En eléctricos, el cableado, las canaletas y los breakers son obra; los bombillos
+y las luminarias los pide también quien decora, y un interiorista no cubica tubería conduit.
+Igual en plomería —la bomba y el tinaco son obra, el fregadero y la mezcladora se
+especifican— y en pisos, donde las crucetas y los calzos son consumible de instalación.
+
+`REGLAS_AMBITO`, en `datos-catalogo.js`, aplica esa distinción por el arranque del nombre,
+encima del ámbito de la categoría. Un ítem sin regla hereda el de la suya. El efecto es real:
+interiorismo baja de 722 a **488** ítems, y de 207 eléctricos solo quedan los 85 que iluminan.
+
+### Qué le falta a interiorismo
+
+Hoy no hay **ninguna** de sus partidas principales: topes y encimeras, clósets, cocinas y
+gabinetes, cortinas y persianas, revestimientos decorativos de pared, iluminación decorativa
+ni pisos vinílicos y laminados. Cero ítems en las siete. La lente ya funciona; lo que falta
+son catálogos de proveedor de ese lado.
+
+Y hay 27 ítems descartados que sí son suyos: los acabados decorativos —chalk, tiza, pizarra,
+magnética, efecto madera, estuco, cera— que el importador deja fuera por «no ser partida de
+obra corriente». Para un interiorista lo son.
+
+> **Ojo con el auditor de precios cuando lleguen.** Una «luminaria decorativa» de una tienda
+> de gama alta puede ir de RD$ 2,000 a RD$ 200,000 en la misma partida, y la regla de
+> dispersión de 8x la retiraría. Es el mismo caso del lavamanos de diseño: hace falta decidir
+> si la gama entra en la clave del ítem.
+
 ## Precios en dólares
 
 Algún comercio cotiza en USD. El alquiler de equipo de altura, por ejemplo, se cotiza en

@@ -240,13 +240,17 @@ const ETIQUETA = {
    Lo que los separa no es la marca en sí, sino a qué baño van, y eso se
    lee en la marca institucional, en la capacidad y en las señas del nombre.
 
+   «Inox» y «mural» entraron después, de mirar los que se colaban: el
+   dispensador mural de acero inoxidable de RD$ 6,500 es el de un baño
+   público, y la lista solo reconocía «acero inoxidable» escrito entero.
+
    Vive aquí y no en las reglas de cada comercio para que los seis usen el
    mismo criterio; si cada uno decidiera por su cuenta, el mismo artículo
    caería en partidas distintas según quién lo venda. */
 const MARCA_INSTITUCIONAL =
   /\btork\b|cumberland|kimberly|\bscott\b|georgia.?pacific|\brubbermaid\b|\bbobrick\b|\bfamilia\b/;
 const SENA_INSTITUCIONAL =
-  /institucional|comercial|industrial|alta velocidad|\bturbo\b|secamanos|\bjumbo\b|bano publico|elec\.? ?bat|electronic|acero inoxidable/;
+  /institucional|comercial|industrial|alta velocidad|\bturbo\b|secamanos|\bjumbo\b|bano publico|elec\.? ?bat|electronic|acero inoxidable|\binox\b|\bmural\b/;
 
 function ambito(texto) {
   const t = String(texto || '').toLowerCase()

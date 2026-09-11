@@ -63,6 +63,14 @@ const TOLERANCIA = 0.35;
 const PIES_POR_UNIDAD = 20;
 const ESCRIBIR = process.argv.indexOf('--escribir') >= 0;
 
+/* La misma tasa que usa el catálogo, leída de su propio archivo para que no
+   haya dos números del dólar en el repositorio. */
+const TASA_USD = (function () {
+  const t = fs.readFileSync(path.join(DATOS, 'datos-catalogo.js'), 'utf8')
+             .match(/tasaUSD\s*:\s*\{[^}]*valor\s*:\s*([\d.]+)/);
+  return t ? parseFloat(t[1]) : 0;
+}());
+
 /* =========================================================
    1. Artículos que caen en un ítem que ya existe
    ========================================================= */
@@ -971,6 +979,15 @@ const CERARTE = require('./reglas-cerarte.js');
 const IBERICA = require('./reglas-iberica.js');
 const TONOS = require('./reglas-tonos.js');
 const FERREMIX = require('./reglas-ferremix.js');
+const BELLON = require('./reglas-bellon.js');
+const MUNDOLED = require('./reglas-mundoled.js');
+const HOGARDECO = require('./reglas-hogardeco.js');
+const CORTINAJE = require('./reglas-cortinaje.js');
+const DCO = require('./reglas-dco.js');
+const CARABELA = require('./reglas-carabela.js');
+const BELLAVISTA = require('./reglas-bellavista.js');
+const ILUMEL = require('./reglas-ilumel.js');
+const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
   {
@@ -1156,6 +1173,117 @@ const FUENTES = [
     motivoDe: () => FERREMIX.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = FERREMIX.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/bellon-2026-09-10.json'),
+    etiqueta: 'Bellón · ferretería completa',
+    proveedor: 'Bellón',
+    constante: 'PROV_BELLON',
+    fecha: '2026-09-10',
+    /* Ni la extracción ni la ficha dicen si el precio publicado lleva ITBIS:
+       va con el supuesto de mostrador y la nota lo dice. */
+    fuenteDe: () => 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/bellavista-2026-09-11.json'),
+    etiqueta: 'Papel Tapiz Bella Vista',
+    proveedor: 'Papel Tapiz Bella Vista',
+    constante: 'PROV_BELLAVISTA',
+    fecha: '2026-09-11',
+    /* Lo declara su propia columna de precio, así que es dato y no supuesto. */
+    itbisDeclarado: true,
+    notaItbis: 'El comercio declara que el precio incluye ITBIS',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => BELLAVISTA.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = BELLAVISTA.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/carabela-2026-09-11.json'),
+    etiqueta: 'Carabela · baño y cocina de gama alta',
+    proveedor: 'Carabela',
+    constante: 'PROV_CARABELA',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => CARABELA.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = CARABELA.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ilumel-2026-09-11.json'),
+    etiqueta: 'Ilumel · lámparas decorativas',
+    proveedor: 'Ilumel',
+    constante: 'PROV_ILUMEL',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => ILUMEL.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = ILUMEL.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/dco-2026-09-11.json'),
+    etiqueta: 'DCO · papel tapiz escandinavo',
+    proveedor: 'DCO',
+    constante: 'PROV_DCO',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => DCO.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = DCO.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/cortinaje-2026-09-11.json'),
+    etiqueta: 'Cortinaje · papel tapiz de diseñador',
+    proveedor: 'Cortinaje',
+    constante: 'PROV_CORTINAJE',
+    fecha: '2026-09-11',
+    moneda: 'USD',
+    fuenteDe: a => 'Precio publicado en ' + (a.url || 'cortinaje.shop'),
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => CORTINAJE.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = CORTINAJE.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/hogardeco-2026-09-10.json'),
+    etiqueta: 'Hogardeco · revestimientos decorativos',
+    proveedor: 'Hogardeco',
+    constante: 'PROV_HOGARDECO',
+    fecha: '2026-09-10',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => HOGARDECO.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = HOGARDECO.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/mundoled-2026-09-10.json'),
+    etiqueta: 'Mundo LED · iluminación',
+    proveedor: 'Mundo LED',
+    constante: 'PROV_MUNDOLED',
+    fecha: '2026-09-10',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => MUNDOLED.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = MUNDOLED.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/luminatti-2026-09-10.json'),
+    etiqueta: 'Luminatti · iluminación de diseño',
+    proveedor: 'Luminatti',
+    constante: 'PROV_LUMINATTI',
+    fecha: '2026-09-10',
+    /* Publica en dólares: el dato de origen es el dólar y el peso sale de la
+       tasa del catálogo. */
+    moneda: 'USD',
+    fuenteDe: a => 'Precio publicado en ' + (a.url || 'luminatti.com'),
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => LUMINATTI.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = LUMINATTI.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-banos-2026-09-09.json'),
@@ -1481,7 +1609,8 @@ function bloqueCotizaciones() {
       PIES_POR_UNIDAD + ' pies; aquí va el precio de la unidad completa');
     if (a._factorUnidad) notas.push(a._factorUnidad.nota + ' (RD$ ' + num(a.precio) + ' por pieza)');
     if (repite > 1) notas.push('El comercio lista ' + repite + ' artículos con esta misma ' +
-      'especificación y el mismo precio (colores o modelos distintos); aquí van como una sola cotización');
+      'especificación y el mismo precio; aquí van como una sola cotización, y cuenta por ' +
+      repite + ' al calcular la referencia');
     const f = a._fuente;
     /* El ITBIS solo se asume cuando la fuente no lo declara. En una cotización
        formal viene en su propia columna, y entonces es un dato: se escribe
@@ -1489,6 +1618,11 @@ function bloqueCotizaciones() {
     const campos = ["    fecha: '" + f.fecha + "', fuente: '" +
                     esc(f.fuenteDe ? f.fuenteDe(a) : 'Precio publicado en ' + a.url) + "'"];
     if (f.itbis === false) campos.push('    itbis: false');
+    /* Hay comercios que publican en dólares. El peso lo pone la tasa del
+       catálogo, en un solo sitio, y la nota de la cotización dice cuál y de
+       cuándo: así el día que la tasa cambie no hay que tocar mil líneas. */
+    if (f.moneda && f.moneda !== 'RD$') campos.push("    moneda: '" + f.moneda + "'");
+    if (repite > 1) campos.push('    peso: ' + repite);
     /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
        lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
        y solo ese lo dice. */
@@ -1606,9 +1740,95 @@ if (faltan.length) {
   process.exit(1);
 }
 
+/* =========================================================
+   7. El catálogo visual
+
+   El índice de precios compara ESPECIFICACIONES: «Papel tapiz» es un
+   solo ítem con 289 cotizaciones, y esa es exactamente la abstracción
+   que sirve para presupuestar. Pero no sirve para elegir: nadie escoge
+   un papel tapiz por su mediana, lo escoge por cómo se ve.
+
+   Así que para interiorismo hace falta el otro grano, el del ARTÍCULO
+   concreto —este modelo, esta foto, este precio, esta tienda— y eso lo
+   sabe este importador y nadie más: es el único punto del sistema donde
+   conviven el artículo tal como lo publica el comercio y el ítem del
+   catálogo al que pertenece. Sacarlo aquí evita tener que volver a
+   clasificar en otro sitio con otras reglas, que es como se desincronizan
+   los catálogos.
+
+   Solo entra lo que tiene foto y cae en una categoría de interiorismo:
+   sin imagen no hay nada que explorar visualmente.
+   ========================================================= */
+
+function bloqueVisual() {
+  /* El ámbito se pregunta ÍTEM POR ÍTEM, no por su categoría, y esa
+     distinción no es cosmética. «Pisos y revestimientos» es de los dos
+     ámbitos, pero dentro lleva sesenta y dos consumibles de instalación
+     —crucetas, calzos, clips, juntas de dilatación— que el catálogo saca de
+     interiorismo uno por uno con sus propias reglas. Preguntando por la
+     categoría, un «Clips-Calzo Espesorado 2mm» terminaba entre las lámparas
+     y los mármoles.
+
+     Por eso esto se calcula DESPUÉS de escribir el catálogo: recargándolo se
+     obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
+     reglas y arriesgar que las dos copias se separen. */
+  const ambitoDeItem = {};
+  (function () {
+    const g = { window: {} };
+    const antes = global.window;
+    global.window = g.window;
+    delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
+    require(path.join(DATOS, 'datos-catalogo.js'));
+    (g.window.CATALOGO.items || []).forEach(i => { ambitoDeItem[i.codigo] = i.ambitos || []; });
+    global.window = antes;
+  }());
+
+  const filas = [];
+  const vistos = {};
+  const anota = (a, codigoItem, cat) => {
+    const img = a.imagen || '';
+    if (!img) return;
+    if (!(ambitoDeItem[codigoItem] || []).includes('interiorismo')) return;
+    const f = a._fuente;
+    const clave = f.proveedor + '|' + a.codigo;
+    if (vistos[clave]) return;
+    vistos[clave] = 1;
+    filas.push({
+      n: limpia(a.nombre).slice(0, 90),
+      img: img,
+      p: Math.round(precioUnidad(a) * (f.moneda === 'USD' ? TASA_USD : 1)),
+      c: f.proveedor,
+      u: a.url || '',
+      i: codigoItem,
+      k: cat
+    });
+  };
+
+  nuevosOk.forEach(x => anota(x.a, codigoDe[x.spec.cat + '|' + x.spec.clave], x.spec.cat));
+  existenteOk.forEach(x => {
+    const cat = String(x.item).slice(0, 6);
+    anota(x.a, x.item, cat);
+  });
+
+  filas.sort((a, b) => (a.k + a.n).localeCompare(b.k + b.n));
+  return "'use strict';\n" +
+    '/* Generado por herramientas/importar-catalogos.js. No editar a mano.\n' +
+    '   Un registro por ARTÍCULO de interiorismo con foto: lo que se explora\n' +
+    '   visualmente. El precio de referencia y la comparación entre comercios\n' +
+    '   siguen viviendo en el catálogo de ítems; esto es para elegir, no para\n' +
+    '   presupuestar. Las imágenes se sirven desde el comercio que las publica\n' +
+    '   y cada ficha enlaza a su producto. */\n' +
+    '(function (global) {\n' +
+    '  global.VISUAL = ' + JSON.stringify(filas) + ';\n' +
+    '}(typeof window !== \'undefined\' ? window : globalThis));\n';
+}
+
 if (ESCRIBIR) {
   reemplazar('datos-catalogo.js', 'items', bloqueItems());
   reemplazar('datos-precios.js', 'cotizaciones', bloqueCotizaciones());
+  /* Después de los dos, y no a la vez: bloqueVisual() recarga el catálogo
+     para preguntarle el ámbito de cada ítem, y necesita el recién escrito. */
+  fs.writeFileSync(path.join(DATOS, 'datos-visual.js'), bloqueVisual());
   console.log('');
   console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');
 } else {

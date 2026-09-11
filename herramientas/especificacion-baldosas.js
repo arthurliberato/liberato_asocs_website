@@ -128,9 +128,15 @@ const FAMILIAS = {
   'piso-vinilico': {
     cat: 'MAT-08', unidad: 'm²', etapa: 'pisos', orden: 90,
     ejes: ['uso', 'espesor_mm'],
-    nombre: m => (m.uso === 'pared' ? 'Panel de vinil para pared, ' : 'Piso vinílico, ') + m.espesor_mm + ' mm',
-    esp: '',
-    alias: 'vinil, vinílico, spc, lvt, piso flotante, panel de vinil'
+    /* El eje del uso estaba en la clave pero no salía en el nombre, y con una
+       sola fuente no se notaba. Al entrar el deck de exterior sí: la tabla de
+       WPC de 25 mm que va a la intemperie se llamaba «Piso vinílico, 25 mm»,
+       igual que el SPC de una sala. Ni es vinilo ni es de interior. */
+    nombre: m => (m.uso === 'pared' ? 'Panel de vinil para pared, '
+                : m.uso === 'exterior' ? 'Deck de WPC para exterior, '
+                : 'Piso vinílico, ') + m.espesor_mm + ' mm',
+    esp: m => m.uso === 'exterior' ? 'Tabla de madera plástica, para intemperie' : '',
+    alias: 'vinil, vinílico, spc, lvt, wpc, deck, piso flotante, panel de vinil'
   },
 
   adoquin: {

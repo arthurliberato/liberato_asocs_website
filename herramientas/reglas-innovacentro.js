@@ -443,6 +443,16 @@ function reglaBanos(a) {
      no equipamiento anclado a la obra. */
   if (/^SILLA/i.test(n)) return null;
 
+  /* El grupo «MUEBLES PARA EL BAÑO» de esta tienda trae también espejos y
+     repisas, y el nombre lo dice aunque el grupo no: un espejo de RD$ 1,140
+     entraba en la partida del mueble, cuyo siguiente precio son RD$ 8,615.
+     Manda el nombre, como en el grupo de los inodoros. */
+  if (familia === 'mueble-bano') {
+    if (/^ESPEJO/i.test(n)) familia = 'espejo';
+    else if (/^BOTIQU[IÍ]N/i.test(n)) familia = 'botiquin';
+    else if (/^REPISA|^TOALLERO|^ORGANIZADOR/i.test(n)) return null;
+  }
+
   if (!familia) return null;
   return EB.item(familia, medidasBano(a, familia));
 }

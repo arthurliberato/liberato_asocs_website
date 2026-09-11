@@ -183,6 +183,47 @@ Escribe el listado, una página por proyecto y el `sitemap.xml`. La cabecera y e
 leen de `index.html`**, no se copian: una copia se queda vieja el día que alguien toque el
 menú y nadie se entera.
 
+### El medidor de avance de obra
+
+El estado de la obra se dibuja como un **medidor**: un ratio contra un límite. No es una barra
+—una barra sola es un gráfico de una sola barra— ni una tarta de dos porciones.
+
+Y va de **un solo edificio que se llena**, no de una fila de iconos repetidos como en los
+pictogramas de porcentaje al uso: aquí la obra es una, y lo que cambia es cuánto lleva hecho.
+El relleno sube desde el suelo hasta el porcentaje, una línea de agua ámbar marca dónde llega,
+y al lado la escalera de etapas dice por cuál va.
+
+**Dos decisiones de color, medidas:**
+
+- La pista vacía es un paso claro del **mismo verde**, no gris, para que el estado se lea a lo
+  largo de toda la figura. El relleno contra ese interior da **4.1:1**, por encima del 3:1 que
+  pide un elemento gráfico.
+- Pero en una paleta clara ningún verde pálido llega a 3:1 contra el papel, así que **quien
+  carga la forma es el contorno** —verde 800, **8.2:1** contra la tarjeta—, como en cualquier
+  ilustración de línea. Con avance 0 la figura se sigue viendo, que es el caso que hoy tenemos.
+
+La cifra grande va en **tinta, no en el verde del medidor**: el color es del dibujo y el texto
+lleva tokens de texto. Y con cifras proporcionales, que las tabulares se ven sueltas a ese
+cuerpo.
+
+**Las etapas no llevan porcentaje asociado.** `etapa` y `avance` son dos datos distintos a
+propósito: mapear «cimentación» a un 20% fijo sería inventarse una ponderación que cada obra
+tiene distinta.
+
+#### Verlo con valores
+
+El único proyecto que hay tiene el avance pendiente, así que la ficha real solo enseña el caso
+vacío:
+
+```bash
+node herramientas/prueba-medidor.js   # ocho casos: de 0 a 100%, de dos a siete niveles
+```
+
+Escribe `prueba-medidor.html` en la raíz —está en `.gitignore`— reusando la función del
+generador, no una copia. Ahí salió el fallo de que un edificio de siete niveles se dibujaba
+igual que uno de cuatro, porque se salía del lienzo: ahora el alto es fijo y se reparte entre
+los niveles.
+
 ### La regla de la casa
 
 **Aquí no se escribe nada que no esté confirmado.** Un metraje, un precio o una fecha de

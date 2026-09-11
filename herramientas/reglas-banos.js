@@ -111,7 +111,12 @@ const FAMILIA = [
   [/^Brazo\b|\bbrazo\b/i,             'ducha-brazo'],
   [/barra|riel|desliza/i,              'ducha-barra'],
   [/tel[eé]fono|de mano|\bmano\b/i,    'ducha-telefono'],
-  [/^(Cabeza|Regadera|Ducha|Soporte)/i,'ducha-cabezal']
+  /* «Soporte» estaba aquí y no debía: la escuadra que sujeta el teléfono de
+     la ducha a la pared no es el cabezal. Entraba a RD$ 126 en una partida
+     cuyo siguiente peldaño está en RD$ 2,759 y hacía parecer roto un ítem
+     que no lo estaba. */
+  [/^Soporte\b/i,                      null],
+  [/^(Cabeza|Regadera|Ducha)/i,        'ducha-cabezal']
 ];
 
 /* ---------------------------------------------------------
@@ -212,7 +217,10 @@ function regla(a) {
   if (PIEZA_SUELTA.some(re => re.test(n))) return null;
 
   const f = FAMILIA.filter(x => x[0].test(n))[0];
-  if (!f) return null;
+  /* La familia puede ser null a propósito: es una expresión que está en la
+     tabla para atrapar el nombre ANTES de que lo reclame otra —«Soporte»
+     antes que «Ducha»— y decir que no es partida. */
+  if (!f || !f[1]) return null;
 
   return E.item(f[1], medidasDe(a, f[1]));
 }

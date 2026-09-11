@@ -1153,6 +1153,7 @@
     estado.q = params.get('q') || '';
     estado.grupo = params.get('grupo') || '';
     estado.cat = params.get('cat') || '';
+    estado.ambito = params.get('ambito') || '';
     estado.etapa = params.get('etapa') || '';
     estado.min = numero(params.get('min'));
     estado.max = numero(params.get('max'));
@@ -1160,15 +1161,57 @@
 
     /* --- chips: categoría, etapa y proveedor. Categoría y etapa eligen una;
        proveedor admite varios, y su selección se guarda en el navegador. --- */
+    var ambitoPorCat = {};
+    CAT.categorias.forEach(function (c) { ambitoPorCat[c.codigo] = c.ambitos || []; });
+    /* El ítem manda sobre su categoría: dentro de eléctricos, el cable es
+       obra y el bombillo lo pide también quien decora. El catálogo ya
+       resolvió esa regla y dejó el ámbito en cada ítem. */
+    function itemEnAmbito(it, a) {
+      return !a || (it.ambitos || ambitoPorCat[it.cat] || []).indexOf(a) !== -1;
+    }
+    /* Los chips sí van por categoría: la fila ofrece categorías. */
+    function catEnAmbito(cod, a) {
+      return !a || (ambitoPorCat[cod] || []).indexOf(a) !== -1;
+    }
+
+    /* El selector de ámbito. Va aparte de los chips porque no es un
+       filtro más: decide qué catálogo estás mirando, y de él depende
+       qué categorías se ofrecen. Por eso «Todo» es el estado por
+       defecto —el catálogo completo no se esconde— y los otros dos son
+       lentes sobre la misma base. */
+    var AMBITOS = [
+      { clave: '', nombre: 'Todo el catálogo' },
+      { clave: 'construccion', nombre: 'Construcción' },
+      { clave: 'interiorismo', nombre: 'Interiorismo' }
+    ];
+    var selAmbito = $('#ambito');
+    function pintarAmbitos() {
+      if (!selAmbito) return;
+      selAmbito.innerHTML = AMBITOS.map(function (a) {
+        var n = a.clave
+          ? CAT.items.filter(function (i) { return itemEnAmbito(i, a.clave); }).length
+          : CAT.items.length;
+        return '<button class="ambito-op" type="button" data-ambito="' + esc(a.clave) + '" ' +
+          'aria-pressed="' + (estado.ambito === a.clave ? 'true' : 'false') + '">' +
+          esc(a.nombre) + ' <span class="ambito-n">' + n + '</span></button>';
+      }).join('');
+    }
+
     var chipsCat = $('#chips-cat');
-    if (chipsCat) {
+    /* Se pinta en función y no en línea porque hay que repintarla cuando
+       cambia el ámbito: las categorías ofrecidas son las de ese público. */
+    function pintarChipsCat() {
+      if (!chipsCat) return;
       chipsCat.innerHTML = '<span class="chip-group-label">Categoría</span>' +
-        CAT.categorias.map(function (c) {
-          return '<button class="chip" type="button" data-cat="' + esc(c.codigo) + '" aria-pressed="false">' + esc(c.nombre) + '</button>';
+        CAT.categorias.filter(function (c) { return catEnAmbito(c.codigo, estado.ambito); }).map(function (c) {
+          return '<button class="chip" type="button" data-cat="' + esc(c.codigo) + '" aria-pressed="' +
+            (estado.cat === c.codigo ? 'true' : 'false') + '">' + esc(c.nombre) + '</button>';
         }).join('') +
         '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-cat-menu" hidden></button>' +
         '<div class="chip-menu" id="chips-cat-menu" hidden></div>';
     }
+    pintarChipsCat();
+    pintarAmbitos();
     var chipsEtapa = $('#chips-etapa');
     if (chipsEtapa) {
       chipsEtapa.innerHTML = '<span class="chip-group-label">Etapa</span>' +
@@ -1195,6 +1238,10 @@
     function filtrar() {
       var q = normaliza(estado.q).split(/\s+/).filter(Boolean);
       return CAT.items.filter(function (it) {
+        /* El ámbito filtra por categoría, no por ítem: una categoría
+           sirve a un público o a los dos, y el 42 % del catálogo lo
+           piden ambos. Es una lente, no una partición. */
+        if (estado.ambito && !itemEnAmbito(it, estado.ambito)) return false;
         if (estado.cat && it.cat !== estado.cat) return false;
         if (estado.grupo && it.cat.indexOf(estado.grupo) !== 0) return false;
         if (estado.etapa && it.etapa !== estado.etapa) return false;
@@ -1312,11 +1359,11 @@
     }
 
     function hayFiltros() {
-      return !!(estado.q || estado.cat || estado.grupo || estado.etapa || estado.min !== '' || estado.max !== '' || misProveedores.length);
+      return !!(estado.q || estado.cat || estado.grupo || estado.etapa || estado.ambito || estado.min !== '' || estado.max !== '' || misProveedores.length);
     }
 
     function limpiar() {
-      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.min = ''; estado.max = ''; estado.tope = PAGINA;
+      estado.q = ''; estado.cat = ''; estado.grupo = ''; estado.etapa = ''; estado.ambito = ''; estado.min = ''; estado.max = ''; estado.tope = PAGINA;
       if (input) input.value = '';
       if (inMin) inMin.value = '';
       if (inMax) inMax.value = '';
@@ -1332,9 +1379,10 @@
        cuele en la barra de direcciones ni en la URL que la gente copia. */
     function actualizarURL() {
       var p = new URLSearchParams(window.location.search);
-      ['q', 'grupo', 'cat', 'etapa', 'min', 'max', 'orden'].forEach(function (k) { p['delete'](k); });
+      ['q', 'grupo', 'cat', 'etapa', 'ambito', 'min', 'max', 'orden'].forEach(function (k) { p['delete'](k); });
       if (estado.q) p.set('q', estado.q);
       if (estado.grupo) p.set('grupo', estado.grupo);
+      if (estado.ambito) p.set('ambito', estado.ambito);
       if (estado.cat) p.set('cat', estado.cat);
       if (estado.etapa) p.set('etapa', estado.etapa);
       if (estado.min !== '') p.set('min', estado.min);
@@ -1370,6 +1418,23 @@
     document.addEventListener('click', function (e) {
       var provChip = e.target.closest('[data-prov-chip]');
       if (provChip) { alternarProveedor(provChip.getAttribute('data-prov-chip')); return; }
+
+      var op = e.target.closest('[data-ambito]');
+      if (op) {
+        var nuevo = op.getAttribute('data-ambito');
+        if (nuevo === estado.ambito) return;
+        estado.ambito = nuevo;
+        /* Una categoría elegida puede no existir en el ámbito nuevo:
+           se suelta en vez de dejar la tabla vacía sin explicación. */
+        if (estado.cat && !catEnAmbito(estado.cat, estado.ambito)) estado.cat = '';
+        estado.grupo = '';
+        estado.tope = PAGINA;
+        pintarAmbitos();
+        pintarChipsCat();
+        pintar();
+        actualizarURL();
+        return;
+      }
 
       var chip = e.target.closest('[data-etapa],[data-cat]');
       if (chip) {

@@ -401,10 +401,21 @@ function reglaElectrico(a) {
     if (!p) { MOTIVO.valor = 'la ficha no declara la medida de la cinta'; return null; }
     return ELEC.item('cinta-aislante', { medida: p });
   }
-  if (/alambre|cable thhn|conductor/.test(t)) {
-    const c = numero(md, /(?:no\.?|#|calibre)\s*(\d+)/);
-    if (!c) { MOTIVO.valor = 'la ficha no declara el calibre del alambre'; return null; }
-    return ELEC.item('cable-thhn', { calibre: c });
+  if (/alambre|cable|conductor/.test(t)) {
+    /* El calibre no basta para saber que es THHN. Esta tienda vende alambre
+       dúplex de 300 V, alambre para soldar, alambre de vehículo y «alambre
+       estándar» en rollo de 500 m, y todos traen su AWG en la talla. Si
+       entran en la partida del THHN se llevan por delante el ítem: el
+       dúplex #12 sale a RD$ 10.90 y el rollo de THHN #12 a RD$ 1,950.
+
+       Y hay una segunda trampa detrás: esos precios son POR PIE, y el ítem
+       del catálogo va por rollo de 100 pies. La ficha de esta tienda no
+       declara la unidad en ningún campo, así que no hay con qué convertir.
+       Sin THHN declarado y sin unidad, el alambre de aquí no entra. */
+    MOTIVO.valor = /thhn|thhw/.test(t)
+      ? 'la ficha no declara si el precio es por pie o por rollo'
+      : 'alambre que no es THHN (dúplex, para soldar, de vehículo o estándar)';
+    return null;
   }
   if (/linterna|pila|bateria|inversor|antena|multimetro|probador|candado|cerradura|contactor|palometa/.test(t)) {
     MOTIVO.valor = 'artículo eléctrico que no es partida de obra';

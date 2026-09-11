@@ -371,8 +371,19 @@ function item(familia, medidas) {
 const FRACCION = { 0.125: '1/8', 0.25: '1/4', 0.375: '3/8', 0.5: '1/2', 0.625: '5/8',
                    0.75: '3/4', 0.875: '7/8' };
 
+/* Ninguna pieza de este catálogo mide más de diez pies. Por encima de ahí
+   lo que se leyó no es una medida sino el SKU interno del comercio, que
+   viene pegado al nombre y sin nada que lo distinga de un número: «SIFON PVC
+   SENCILLO 1.1/2 35376», «TEFLON CTF-1/2 ROLLO 12520», «Adaptador Plástico
+   Llave Hembra/Macho Orbit 67750». Los tres publicaron un sifón de 35,376
+   pulgadas al lado de la medida buena que el nombre sí traía.
+
+   El tope va aquí, en el módulo, y no en las reglas de cada comercio: es el
+   mismo error en tres tiendas distintas y va a volver en la cuarta. */
+const TOPE_PULGADAS = 120;
+
 function comoPulgada(v) {
-  if (!(v > 0)) return '';
+  if (!(v > 0) || v > TOPE_PULGADAS) return '';
   const entero = Math.floor(v + 1e-9);
   const resto = Math.round((v - entero) * 1000) / 1000;
   const fr = FRACCION[resto];
@@ -419,4 +430,4 @@ const YA_EXISTE = {
   'conexion-tipo-codo-90-material-pvc-drenaje-medida-4pulg': 'MAT-32-006'
 };
 
-module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION };
+module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION, TOPE_PULGADAS };

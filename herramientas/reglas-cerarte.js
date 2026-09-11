@@ -236,6 +236,16 @@ function reglaVinil(a) {
 
 function reglaInodoro(a) {
   const t = texto(a);
+  /* Va lo primero, antes que nada. El grupo INODORO SUS trae también los
+     asientos, y la tienda los escribe de dos maneras: «asiento para
+     inodoro» y «ASIENTO P/INODORO SUSPENDIDO». El descarte estaba escrito
+     más abajo, en la regla general, y a estos no les llegaba nunca porque
+     el grupo los traía derecho aquí: un asiento de RD$ 5,440 terminaba en
+     la partida de un inodoro de RD$ 555. */
+  if (/^asiento\s*(?:para|p\/)\s*inodoro/.test(t)) {
+    MOTIVO.valor = 'repuesto de consumidor, no partida de obra';
+    return null;
+  }
   if (/^taza para inodoro|^taza para inodoro/.test(t)) {
     return /fluxometro/.test(t) ? BANOS.item('inodoro-fluxometro', {})
                                 : BANOS.item('inodoro-basineta', {});
@@ -321,16 +331,19 @@ function reglaAccesorio(a) {
   }
   if (/^brazo de ducha/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^manguera de ducha/.test(t)) return BANOS.item('ducha-manguera', {});
-  if (/^dispensador para jabon|^dispensador de jabon/.test(t)) {
-    return BANOS.item('dispensador-jabon',
-      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
-  }
-  if (/^secador de manos/.test(t)) {
-    return BANOS.item('secador-manos',
-      { ambito: BANOS.ambito(t), activacion: /sensor|automatic/.test(t) ? 'sensor' : '' });
+  /* El dispensador de este grupo no es el mismo aparato que el del grupo
+     DISPENSADOR D/ JABON: aquí es una pieza de la colección de accesorios,
+     que se compra por diseño igual que la jabonera y el toallero de dos
+     líneas más abajo. El «TAPE101» sale a RD$ 20,818 y no trae en el nombre
+     una sola seña de por qué —ni marca institucional, ni capacidad, ni
+     sensor—, así que entraba como dispensador corriente al lado de uno
+     plástico de RD$ 156. La tienda tiene un grupo propio para el aparato;
+     lo que cae en éste no lo es. */
+  if (/^dispensador|^secador de manos|^accesorio p(?:ara|\/)/.test(t)) {
+    MOTIVO.valor = 'pieza de la colección de accesorios, que se compra por diseño; el aparato vive en su propio grupo';
+    return null;
   }
   if (/^barra de seguridad/.test(t)) return reglaBarra(a);
-  if (/^asiento para inodoro/.test(t)) { MOTIVO.valor = 'repuesto de consumidor, no partida de obra'; return null; }
   if (/^llave angular/.test(t)) { MOTIVO.valor = 'la ficha no declara la medida de la llave angular'; return null; }
   if (ACCESORIO_SUELTO.test(t)) {
     MOTIVO.valor = 'accesorio suelto de baño; el catálogo compara juegos, no piezas sueltas';

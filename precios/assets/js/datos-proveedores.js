@@ -82,6 +82,60 @@
     zonas:['gsd'], web:'ferremix.com.do', wa:'18295373000', email:'soporteweb@ferremix.com.do', precios:true,
     nota:'La cadena de mayor expansión reciente. Sucursales Villa Mella (849-507-0003) y Herrera (829-539-0078). Tienda en línea con 8,984 productos y precio por SKU. Es una ferretería general: de sus 21 departamentos solo siete traen partidas de obra. Su ficha no declara si el precio lleva ITBIS.'
   });
+  p('Bellón', {
+    tipo:'cadena', canal:'detallista',
+    cats:['MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-12','MAT-24','MAT-25','MAT-26','MAT-32'],
+    zonas:['nacional'], web:'bellon.com.do', precios:true,
+    nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
+  });
+  p('Papel Tapiz Bella Vista', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-34'],
+    zonas:[], web:'papeltapizbellavista.com', precios:true,
+    nota:'Papel tapiz. De sus 386 referencias entran 109: el resto está agotado —descontinuado, más bien— y ninguno de esos declara la medida de su rollo ni trae foto, mientras que los 109 disponibles la declaran todos. Es de los pocos comercios del directorio que declara el ITBIS en vez de dejarlo al supuesto: su columna de precio dice «ITBIS incluido». Ubicación sin verificar.'
+  });
+  p('Carabela', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-09','MAT-24','MAT-25','MAT-26','MAT-33'],
+    zonas:['gsd'], web:'carabela.do', precios:true,
+    nota:'Baño y cocina de gama alta: Ramón Soler, Noken, IB Rubinetterie, Salgar y Foster. Es la contraparte de arriba de partidas que hasta ahora se movían entre lo que venden las ferreterías. Sus categorías están hechas para navegar la tienda y no para presupuestar —«Muebles de baño» incluye las patas y los tiradores, «Lavamanos» sobre todo grifería—, así que la clasificación sale del nombre. Sus electrodomésticos de cocina no entran: el catálogo no tiene ese rubro. No declara si el precio incluye ITBIS.'
+  });
+  p('Ilumel', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-33'],
+    zonas:['gsd'], web:'ilumel.com', precios:true,
+    nota:'Lámparas decorativas en Santo Domingo, de RD$ 1,089 a RD$ 153,327. Incluye su tienda de descuento, ilumeloutlet.com, que es la misma empresa: de sus 23 lámparas, 15 llevan el mismo SKU y el mismo precio que la tienda principal y no se cuentan dos veces; entran las 8 que solo existen allí. No declara si el precio incluye ITBIS.'
+  });
+  p('DCO', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-34'],
+    zonas:[], web:'dco.do', precios:true,
+    nota:'Papel tapiz escandinavo y europeo: Boråstapeter, Majvillan, Rifle Paper Co., Newbie y Scandinavian Designers. Es la mejor fuente de la partida porque cada ficha publica la medida de su rollo —no todos son el estándar: los hay de 68.58 cm de ancho y de 11.20 m de largo—, y de ahí sale el metro cuadrado sin suponer nada. La mayor parte de su catálogo se vende por preorden. No declara si el precio incluye ITBIS.'
+  });
+  p('Cortinaje', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-34'],
+    zonas:['gsd'], web:'cortinaje.shop', precios:true,
+    nota:'Papel tapiz de diseñador en Santo Domingo: Roberto Cavalli, Gianfranco Ferré, Dolce & Gabbana, Lamborghini y Elie Saab, con precio en DÓLARES de US$ 27 a US$ 250 el rollo. Es el extremo alto de la partida. Solo entran los 52 artículos cuyo rollo trae medida declarada: el papel tapiz se vende en dos estándares —5.3 y 10.6 m² por rollo— que se llevan el doble, y sin el dato no hay metro cuadrado. El peso sale de la tasa del catálogo. No declara ITBIS.'
+  });
+  p('Hogardeco', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-08','MAT-34'],
+    zonas:[], web:'hogardeco.com.do', precios:true,
+    nota:'Tienda de revestimientos decorativos: paneles de pared de PVC y WPC, planchas de bambú, mármol y ónix, papel tapiz, piedra flexible, mosaicos y piezas 3D. Es la fuente que llena los revestimientos decorativos y el piso vinílico, dos rubros que el catálogo tenía vacíos. Lo que la hace utilizable es que publica la medida de cada pieza, y con ella el precio se lleva al metro cuadrado. No declara si el precio incluye ITBIS. Ubicación sin verificar.'
+  });
+  p('Mundo LED', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-10','MAT-33'],
+    zonas:[], web:'mundoled.com.do', precios:true,
+    nota:'Tienda dedicada solo a iluminación, con 1,549 productos y precio por artículo en RD$. Es la fuente que llena la iluminación decorativa, que el catálogo tenía vacía: 952 de sus artículos son lámparas de techo, de pared, de mesa y de pie. Declara potencia, temperatura de color y zócalo en el material de instalación; en la lámpara decorativa, como todo el rubro, no declara ejes. No dice si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
+  });
+  p('Luminatti', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-33'],
+    zonas:[], web:'luminatti.com', precios:true,
+    nota:'Iluminación de diseño importada, de Vigo Lighting Group. 140 piezas con precio en DÓLARES, de US$ 77 a US$ 3,160. Es el extremo alto de la partida y por eso vale: sin él, la referencia de una lámpara terminaba en lo que cuesta en el mercado local. El peso sale de la tasa del catálogo y cada cotización dice cuál y de cuándo. No declara ITBIS. Ubicación sin verificar.'
+  });
   p('Max Ferretería', {
     tipo:'cadena', canal:'detallista',
     /* Las categorías salen de la única colección que se ha extraído. El sitio

@@ -54,6 +54,11 @@ const conCotizaciones = PROV.lista
 /* Cotizaciones por ítem y proveedor. Cuando un proveedor tiene más de
    una para el mismo ítem —dos presentaciones, dos marcas— se toma la
    más baja, que es la que un comprador usaría para negociar. */
+const todasPorItem = {};
+PRECIOS.registros.forEach(q => {
+  if (q.precio > 0) (todasPorItem[q.item] = todasPorItem[q.item] || []).push(q.precio);
+});
+
 const porItem = {};
 PRECIOS.registros.forEach(q => {
   const fila = porItem[q.item] || (porItem[q.item] = {});
@@ -89,7 +94,16 @@ const items = CAT.items.map(i => ({
   precios: conCotizaciones.map(p => {
     const q = (porItem[i.codigo] || {})[p.nombre];
     return q ? { precio: q.precio, unidad: q.unidad || '', itbis: q.itbis, fecha: q.fecha } : null;
-  })
+  }),
+  /* TODAS las cotizaciones, sin colapsar por comercio. El comparativo del
+     Excel usa la más barata de cada tienda, que es la que sirve para
+     negociar; el auditor necesita lo contrario —la lista entera— porque los
+     peldaños intermedios son justamente lo que le dice si un hueco es un
+     error o el salto normal entre una marca y otra. Colapsando, el tapón
+     macho de 1" quedaba en RD$ 5.61 y RD$ 62 y parecía roto; con la lista
+     completa aparece el de RD$ 35.11 en medio, del mismo comercio, y se ve
+     que es la escalera de marcas. */
+  todas: (todasPorItem[i.codigo] || []).slice().sort((a, b) => a - b)
 }));
 
 const proveedores = PROV.lista.map(p => ({
