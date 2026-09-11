@@ -55,13 +55,36 @@ const LIBRA_KG = 0.45359237;
    Categorías que no entran, y por qué
    ========================================================= */
 
+/* SOBRE LOS TOPES, que es lo que hay en los grupos «Marmolero»
+
+   Aquí decía que la encimera «se cotiza por trabajo, no por partida de
+   catálogo», y eso no era exacto: esta tienda SÍ publica precio fijo por
+   material y por color, treinta y cuatro topes de cuarzo, granito, mármol y
+   Neolith, con los precios ordenados por material como uno esperaría.
+
+   Lo que falta es la unidad, y sin ella el número no significa nada. «Tope
+   Cuarzo Bianchissimo Pulido 2cm · RD$ 24,001» no dice si son 24 mil pesos
+   la plancha, el metro cuadrado o el pie lineal, y entre la primera y la
+   segunda lectura hay cinco veces de diferencia.
+
+   La evidencia interna apunta a la plancha: los diez Neolith son los únicos
+   que traen medida —3200×1600×12, unos 5 m²— y salen entre RD$ 5,300 y
+   RD$ 6,400 el metro cuadrado. Leídos como plancha, el cuarzo, el granito y
+   el mármol caen en esa misma banda; leídos como metro cuadrado, el cuarzo
+   saldría cuatro veces por encima del Neolith, que es el material más caro
+   de los cuatro. Apunta, pero no lo dice.
+
+   Se consultó y se decidió esperar: topes se queda vacío hasta conseguir una
+   lista de una marmolería que declare la unidad. Es la misma regla que dejó
+   fuera el alambre de Bellón —casi seguro no es una unidad— y por la misma
+   razón. Cuando llegue esa lista, lo único que hay que cambiar aquí es esto. */
 const FUERA = {
   Accesorios: 'accesorio suelto de baño; el catálogo compara juegos, no piezas sueltas',
-  'Marmolero Mosaicos': 'encimera de piedra a medida: se cotiza por trabajo, no por partida de catálogo',
-  'Marmolero Cuarzo': 'encimera de piedra a medida: se cotiza por trabajo, no por partida de catálogo',
-  'Marmolero Neolith': 'encimera de piedra a medida: se cotiza por trabajo, no por partida de catálogo',
-  'Marmolero Granito': 'encimera de piedra a medida: se cotiza por trabajo, no por partida de catálogo',
-  'Marmolero Marmol': 'encimera de piedra a medida: se cotiza por trabajo, no por partida de catálogo',
+  'Marmolero Mosaicos': 'la ficha del tope no declara si el precio es por plancha, por metro cuadrado o por pie lineal',
+  'Marmolero Cuarzo': 'la ficha del tope no declara si el precio es por plancha, por metro cuadrado o por pie lineal',
+  'Marmolero Neolith': 'la ficha del tope no declara si el precio es por plancha, por metro cuadrado o por pie lineal',
+  'Marmolero Granito': 'la ficha del tope no declara si el precio es por plancha, por metro cuadrado o por pie lineal',
+  'Marmolero Marmol': 'la ficha del tope no declara si el precio es por plancha, por metro cuadrado o por pie lineal',
   'Piedras Naturales': 'piedra natural cortada a medida, no baldosa de formato de catálogo'
 };
 
