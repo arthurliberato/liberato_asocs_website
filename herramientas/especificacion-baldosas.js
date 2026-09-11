@@ -287,7 +287,18 @@ const ETIQUETA_HERRAMIENTA = {
   'rodel': 'Rodel de repuesto para cortadora',
   'cuchilla': 'Cuchilla de repuesto para cortadora',
   'llana': 'Llana dentada',
-  'aplicador': 'Aplicador de mortero',
+  /* DOS HERRAMIENTAS CON EL MISMO NOMBRE COMERCIAL
+
+     «Aplicador de mortero» juntaba una pistola de calafateo de CORTAG de
+     RD$ 1.282 con un aplicador RUBI de RD$ 4.581, 3,6 veces. No son la
+     misma herramienta y las dos fichas lo dicen: la de RUBI es un
+     «aplicador manual de mortero/juntas» con depósito de 650 cc y
+     boquillas de 2 a 14 mm, que se llena de mortero; la de CORTAG es una
+     «pistola manual para silicona / masillas» para cartuchos o tubos.
+
+     Lo que las separa es cómo se cargan, y por eso se llaman por ahí. */
+  'aplicador-deposito': 'Aplicador de mortero de depósito',
+  'pistola-cartucho': 'Pistola para cartucho de silicona o mortero',
   'ventosa': 'Ventosa para piezas lisas',
   'alicate': 'Alicate para nivelación de cerámica',
   'kit-nivelacion': 'Kit de nivelación de cerámica'

@@ -147,7 +147,12 @@ const MAPEO = {
   '032501': '#MAT-23|angulares-0.5x0.5',     // Angular 1/2 x 1/2
   '032502': '#MAT-23|angulares-0.75x0.75',   // Angular 3/4 x 3/4
   '046362': '#MAT-23|angulares-1x0.75',      // Angular 1 x 3/4
-  '046363': '#MAT-23|angulares-1.25x1.25'    // Angular 1 1/4 x 1 1/4
+  '046363': '#MAT-23|angulares-1.25x1.25',   // Angular 1 1/4 x 1 1/4
+  /* Faltaba, y se notaba: el mismo angular de 1 x 1 salía en dos partidas
+     —RD$ 750 aquí y RD$ 633 en Ochoa— sin compararse con nada, y el
+     nombre delataba el fallo porque llevaba la medida en crudo,
+     «Angular de aluminio, 1X1"X19'», en vez de escrita. */
+  '032503': '#MAT-23|angulares-1x1'          // Angular 1 x 1
 };
 
 /* Artículos que se dejan fuera a conciencia, con el motivo:

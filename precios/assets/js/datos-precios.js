@@ -858,6 +858,14 @@
     url: 'https://www.innovacentro.com.do/angularesdealuminio/angular-aluminio-1-3-2x1-3-2-7-x19-032501',
     nota: 'ANGULAR ALUMINIO 1/2X1/2"X19\' · artículo 032501 · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
+  c('MAT-23-012', PROV_INNOVA, 750, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x1-7-x19-032503',
+    art: 'ANGULAR ALUMINIO 1X1"X19\'',
+    sku: '032503',
+    marca: 'INNOMATE',
+    url: 'https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x1-7-x19-032503',
+    nota: 'ANGULAR ALUMINIO 1X1"X19\' · artículo 032503 · marca INNOMATE. ' + SUPUESTO_ITBIS
+  });
   c('MAT-23-011', PROV_INNOVA, 755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x3-3-4-7-x19-046362',
     art: 'ANGULAR ALUMINIO 1X3/4"X19\'',
@@ -2449,14 +2457,6 @@
     url: 'https://ochoa.com.do/producto/aplicador-de-mortero-650-cc-01097256',
     nota: 'APLICADOR DE MORTERO 650 CC · artículo 01-09-7256 · ref. 65990 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-035', PROV_OCHOA, 1282.31, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplicador-de-morteros-profes-01097643',
-    art: 'APLICADOR DE MORTEROS PROFES',
-    sku: '01-09-7643',
-    marca: 'CORTAG',
-    url: 'https://ochoa.com.do/producto/aplicador-de-morteros-profes-01097643',
-    nota: 'APLICADOR DE MORTEROS PROFES · artículo 01-09-7643 · ref. 615699\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
-  });
   c('EQU-04-036', PROV_OCHOA, 4694.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-de-nivelacion-delta-01098055',
     art: 'KIT DE NIVELACIÓN DELTA',
@@ -2481,7 +2481,15 @@
     url: 'https://ochoa.com.do/producto/llana-dentada-acero-c-m-pl-10x10-01097645',
     nota: 'LLANA DENTADA ACERO C / M PL 10X10 · artículo 01-09-7645 · ref. 6099618.15/16\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-038', PROV_OCHOA, 1279.54, {
+  c('EQU-04-038', PROV_OCHOA, 1282.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplicador-de-morteros-profes-01097643',
+    art: 'APLICADOR DE MORTEROS PROFES',
+    sku: '01-09-7643',
+    marca: 'CORTAG',
+    url: 'https://ochoa.com.do/producto/aplicador-de-morteros-profes-01097643',
+    nota: 'APLICADOR DE MORTEROS PROFES · artículo 01-09-7643 · ref. 615699\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
+  });
+  c('EQU-04-039', PROV_OCHOA, 1279.54, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ventosa-doble-para-piezas-lisas-01098667',
     art: 'VENTOSA DOBLE PARA PIEZAS LISAS',
     sku: '01-09-8667',
@@ -2489,7 +2497,7 @@
     url: 'https://ochoa.com.do/producto/ventosa-doble-para-piezas-lisas-01098667',
     nota: 'VENTOSA DOBLE PARA PIEZAS LISAS · artículo 01-09-8667 · ref. 60673 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-039', PROV_OCHOA, 5321.25, {
+  c('EQU-04-040', PROV_OCHOA, 5321.25, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-t-disco-p-cortadora-10-01097259',
     art: 'CUCHILLA T / DISCO P / CORTADORA 10\'\'',
     sku: '01-09-7259',
@@ -2497,7 +2505,7 @@
     url: 'https://ochoa.com.do/producto/cuchilla-t-disco-p-cortadora-10-01097259',
     nota: 'CUCHILLA T / DISCO P / CORTADORA 10\'\' · artículo 01-09-7259 · ref. 31900 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-040', PROV_OCHOA, 1110.46, {
+  c('EQU-04-041', PROV_OCHOA, 1110.46, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortadcer-titan-18mm-01097637',
     art: 'CUCHILLA P / CORTADCER. TITAN.18MM',
     sku: '01-09-7637',
@@ -2505,7 +2513,7 @@
     url: 'https://ochoa.com.do/producto/cuchilla-p-cortadcer-titan-18mm-01097637',
     nota: 'CUCHILLA P / CORTADCER. TITAN.18MM · artículo 01-09-7637 · ref. 612933/4\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-040', PROV_OCHOA, 2178.45, {
+  c('EQU-04-041', PROV_OCHOA, 2178.45, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortadora-ceramica-18mm-01080136',
     art: 'CUCHILLA P / CORTADORA CERAMICA 18MM',
     sku: '01-08-0136',
@@ -2513,7 +2521,7 @@
     url: 'https://ochoa.com.do/producto/cuchilla-p-cortadora-ceramica-18mm-01080136',
     nota: 'CUCHILLA P / CORTADORA CERAMICA 18MM · artículo 01-08-0136 · ref. 01950 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-041', PROV_OCHOA, 358.67, {
+  c('EQU-04-042', PROV_OCHOA, 358.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuchilla-p-cortad-ceramica-7mm-01097636',
     art: 'CUCHILLA P / CORTAD CERAMICA 7MM',
     sku: '01-09-7636',
@@ -2521,7 +2529,7 @@
     url: 'https://ochoa.com.do/producto/cuchilla-p-cortad-ceramica-7mm-01097636',
     nota: 'CUCHILLA P / CORTAD CERAMICA 7MM · artículo 01-09-7636 · ref. 613509/32\'\' · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-042', PROV_OCHOA, 234.67, {
+  c('EQU-04-043', PROV_OCHOA, 234.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cucihlla-p-cortadora-80mm-01097903',
     art: 'CUCIHLLA P / CORTADORA 80MM',
     sku: '01-09-7903',
@@ -2529,7 +2537,7 @@
     url: 'https://ochoa.com.do/producto/cucihlla-p-cortadora-80mm-01097903',
     nota: 'CUCIHLLA P / CORTADORA 80MM · artículo 01-09-7903 · ref. 60.200 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-043', PROV_OCHOA, 480.68, {
+  c('EQU-04-044', PROV_OCHOA, 480.68, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061404',
     art: 'HERRAMIENTA DE TERMINACIÓN Z-TOOL',
     sku: '03-06-1404',
@@ -2537,7 +2545,7 @@
     url: 'https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061404',
     nota: 'HERRAMIENTA DE TERMINACIÓN Z-TOOL · artículo 03-06-1404 · ref. Z-TOOL-ZP · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-043', PROV_OCHOA, 448.43, {
+  c('EQU-04-044', PROV_OCHOA, 448.43, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061403',
     art: 'HERRAMIENTA DE TERMINACIÓN Z-TOOL',
     sku: '03-06-1403',
@@ -2545,7 +2553,7 @@
     url: 'https://ochoa.com.do/producto/herramienta-de-terminacion-z-tool-03061403',
     nota: 'HERRAMIENTA DE TERMINACIÓN Z-TOOL · artículo 03-06-1403 · ref. Z-TOOL · marca SIEMON. ' + SUPUESTO_ITBIS
   });
-  c('EQU-04-043', PROV_OCHOA, 6682.26, {
+  c('EQU-04-044', PROV_OCHOA, 6682.26, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/max-turbotool-03061424',
     art: 'MAX TURBOTOOL',
     sku: '03-06-1424',
@@ -43659,15 +43667,7 @@
     url: 'https://ochoa.com.do/producto/perfil-aluminio-nat-rect0101-04670119',
     nota: 'PERFIL ALUMINIO NAT. RECT0101 · artículo 04-67-0119 · ref. 4"X13/4"X(19.2P · marca EMMA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-23-026', PROV_INNOVA, 750, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x1-7-x19-032503',
-    art: 'ANGULAR ALUMINIO 1X1"X19\'',
-    sku: '032503',
-    marca: 'INNOMATE',
-    url: 'https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-1x1-7-x19-032503',
-    nota: 'ANGULAR ALUMINIO 1X1"X19\' · artículo 032503 · marca INNOMATE. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-23-027', PROV_INNOVA, 398, {
+  c('MAT-23-026', PROV_INNOVA, 398, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/productosdealuminio/angular-aluminio-3-3-4x1-3-2-7-x19-046361',
     art: 'ANGULAR ALUMINIO 3/4X1/2"X19\'',
     sku: '046361',

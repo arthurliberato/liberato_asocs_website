@@ -559,7 +559,14 @@ function clasificar(a) {
                : /^rodel/.test(n) ? 'rodel'
                : /^cuchilla|^cucihlla/.test(n) ? 'cuchilla'
                : /^llana/.test(n) ? 'llana'
-               : /^aplicador/.test(n) ? 'aplicador'
+               /* El de depósito se llena de mortero; la pistola aprieta
+                  un cartucho. La ficha declara cuál es: la primera dice
+                  la capacidad del depósito en centímetros cúbicos, la
+                  segunda habla de cartuchos o de silicona. */
+               : /^aplicador|^pistola/.test(n)
+                 ? (/\bcc\b|dep[oó]sito|\d+\s*cc/.test(baja(a.info || '')) ? 'aplicador-deposito'
+                    : /cartucho|silicona|masilla/.test(baja(a.info || '') + ' ' + n) ? 'pistola-cartucho'
+                    : 'aplicador-deposito')
                : /^ventosa/.test(n) ? 'ventosa'
                : /^alicate/.test(n) ? 'alicate'
                : null;
