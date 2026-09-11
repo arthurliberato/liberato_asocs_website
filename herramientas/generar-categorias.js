@@ -31,6 +31,10 @@ const WA = '18297939892';
 global.window = {};
 require(path.join(DESTINO, 'assets/js/datos-catalogo.js'));
 require(path.join(DESTINO, 'assets/js/datos-proveedores.js'));
+/* El motor va antes que el registro: datos-precios.js le pide la c(). El
+   generador carga el registro completo —con nota y fuente— aunque las
+   páginas que escribe solo lleven la forma compacta. */
+require(path.join(DESTINO, 'assets/js/precios.js'));
 require(path.join(DESTINO, 'assets/js/datos-precios.js'));
 require(path.join(DESTINO, 'assets/js/datos-demo.js'));
 const CAT = global.window.CATALOGO;
@@ -141,7 +145,11 @@ function tagsProveedores(it) {
   const qs = (it.cotizaciones || []).filter((q) => q.cuenta && !vistos.has(q.proveedor.nombre) && vistos.add(q.proveedor.nombre));
   if (!qs.length) return '';
   return '<span class="item-provs">' + qs.map((q) => {
-    const titulo = 'RD$ ' + Math.round(q.precioNormalizado).toLocaleString('en-US') + (q.fecha ? ' · ' + q.fecha : '') + (q.nota ? ' · ' + String(q.nota).slice(0, 160) : '');
+    /* El precio y la fecha, que son lo que hace falta para decidir. La
+       nota —qué artículo exacto es, de qué marca, con qué referencia— pesa
+       más que todo lo demás junto y solo se lee al pasar el cursor: la
+       pide app.js cuando eso ocurre, de assets/datos/detalle-CAT.json. */
+    const titulo = 'RD$ ' + Math.round(q.precioNormalizado).toLocaleString('en-US') + (q.fecha ? ' · ' + q.fecha : '');
     return `<button class="tag-prov" type="button" data-item-prov="${esc(it.codigo)}" data-prov="${esc(q.proveedor.nombre)}" aria-pressed="false" title="${esc(titulo)}">${esc(nombreTag(q.proveedor.nombre))}</button>`;
   }).join('') + '</span>';
 }
@@ -472,7 +480,7 @@ ${bloqueRelacionadas(cat.codigo)}
 ${JSON.stringify(jsonld, null, 2)}
 </script>
 </head>
-<body>
+<body data-cat="${cat.codigo}">
 
 ${header('catalogo')}
 
@@ -492,7 +500,8 @@ ${COTIZACION}
 
 <script src="assets/js/datos-catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
-<script src="assets/js/datos-precios.js"></script>
+<script src="assets/js/precios.js"></script>
+<script src="assets/js/cotizaciones.js"></script>
 <script src="assets/js/datos-demo.js"></script>
 <script src="assets/js/app.js" defer></script>
 </body>

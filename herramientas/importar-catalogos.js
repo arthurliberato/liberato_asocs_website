@@ -1895,7 +1895,9 @@ function escribirVisual() {
   }));
 
   return { total: filas.length, paginas: paginas.length,
-           kb: Math.round(fs.readdirSync(dir).reduce((s, f) =>
+           /* Solo lo del explorador: en esta carpeta también viven los
+              detalle-CAT.json, que son de otra cosa. */
+           kb: Math.round(fs.readdirSync(dir).filter(f => /^visual/.test(f)).reduce((s, f) =>
              s + fs.statSync(path.join(dir, f)).size, 0) / 1024) };
 }
 
@@ -1908,7 +1910,9 @@ if (ESCRIBIR) {
   console.log('Catálogo visual: ' + vis.total + ' artículos en ' + vis.paginas +
               ' páginas (' + vis.kb + ' KB en total).');
   console.log('');
-  console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');
+  console.log('Escrito. Ahora corre, en este orden:');
+  console.log('  node herramientas/generar-datos-navegador.js');
+  console.log('  node herramientas/generar-categorias.js');
 } else {
   console.log('');
   console.log('Nada escrito. Corre otra vez con --escribir para aplicar.');

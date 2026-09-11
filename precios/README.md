@@ -28,13 +28,53 @@ precios/
     js/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
       datos-proveedores.js Directorio de proveedores
+      precios.js          El cálculo: mediana, ITBIS, exportación
       datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
+                          (el registro completo; no lo carga el navegador)
+      cotizaciones.js     Las mismas, en forma compacta         ← GENERADO
       datos-demo.js       Datos ficticios de demostración       ← APAGADO (ACTIVO = false)
       app.js              Buscador, filtros y lista de cotización
+    datos/
+      visual-N.json       El explorador de interiorismo, por páginas  ← GENERADO
+      detalle-CAT.json    La nota y la fuente de cada cotización     ← GENERADO
     img/                  Logotipos (copia de los del sitio principal)
   robots.txt
   sitemap.xml
   vercel.json             Configuración de despliegue del subdominio
+```
+
+---
+
+## Qué carga el navegador y qué no
+
+El registro de cotizaciones —`datos-precios.js`— pesa 2.6 MB, y dos terceras
+partes de eso son la nota y la fuente de cada una: de qué artículo exacto se
+trata, de qué marca, con qué referencia, y dónde se leyó el precio. Eso es la
+prueba de cada número y por eso se guarda; pero para **pintar** un precio no
+hace falta.
+
+Así que el navegador no lo carga. Carga dos archivos más chicos:
+
+- `precios.js`, el cálculo, que es el mismo en el sitio y en las herramientas.
+- `cotizaciones.js`, las 8,532 cotizaciones en forma compacta: el comercio, la
+  fecha y la unidad en diccionarios, y una línea de tres números por
+  cotización. Son 163 KB en vez de 2.6 MB, y salen exactamente las mismas
+  medianas (se comprueba ítem por ítem).
+
+La nota y la fuente llegan aparte, por categoría, en
+`assets/datos/detalle-CAT.json`, y solo cuando se van a usar: al acercar el
+cursor a un comercio y al copiar la tabla para Excel. Quien solo mira precios
+no las descarga nunca.
+
+Las herramientas del repositorio hacen lo contrario: cargan `precios.js` y
+después el registro completo, porque ahí la nota y la fuente son justamente
+lo que importa.
+
+**Después de tocar `datos-precios.js` hay que correr:**
+
+```bash
+node herramientas/generar-datos-navegador.js   # cotizaciones.js y detalle-CAT.json
+node herramientas/generar-categorias.js        # las páginas
 ```
 
 ---

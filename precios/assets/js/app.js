@@ -549,15 +549,86 @@
   function nombreTag(nombre) {
     return String(nombre).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
   }
+  /* El precio y la fecha están desde el principio; la nota —qué artículo
+     exacto es, de qué marca— llega con el detalle de la categoría, que se
+     pide al acercar el cursor. Ver pedirDetalle(). */
+  function tituloTag(q) {
+    return rd(q.precioNormalizado) + (q.fecha ? ' · ' + q.fecha : '') +
+      (q.nota ? ' · ' + String(q.nota).slice(0, 160) : '');
+  }
   function tagsProveedores(it) {
     var qs = cotizacionesPorProveedor(it);
     if (!qs.length) return '';
     return '<span class="item-provs">' + qs.map(function (q) {
       var activo = it.provElegido === q.proveedor.nombre;
-      var titulo = rd(q.precioNormalizado) + (q.fecha ? ' · ' + q.fecha : '') + (q.nota ? ' · ' + String(q.nota).slice(0, 160) : '');
       return '<button class="tag-prov" type="button" data-item-prov="' + esc(it.codigo) + '" data-prov="' + esc(q.proveedor.nombre) + '" ' +
-        'aria-pressed="' + (activo ? 'true' : 'false') + '" title="' + esc(titulo) + '">' + esc(nombreTag(q.proveedor.nombre)) + '</button>';
+        'aria-pressed="' + (activo ? 'true' : 'false') + '" title="' + esc(tituloTag(q)) + '">' + esc(nombreTag(q.proveedor.nombre)) + '</button>';
     }).join('') + '</span>';
+  }
+
+  /* =========================================================
+     EL DETALLE DE CADA COTIZACIÓN, A PEDIDO
+
+     La nota y la fuente son dos terceras partes del peso del
+     registro de precios y no hacen falta para pintar un precio,
+     así que no viajan con la página: viven por categoría en
+     assets/datos/detalle-CAT.json y se piden cuando de verdad se
+     van a usar —al acercar el cursor a un comercio, al copiar
+     para Excel—. Mientras no lleguen, la tabla funciona igual;
+     lo único que falta es el texto del globo y la columna de
+     fuente al exportar.
+     ========================================================= */
+
+  var detallePedido = {};
+
+  function conDetalle(cats, hacer) {
+    if (!PRECIOS || !PRECIOS.detalle) { hacer(); return; }
+    PRECIOS.detalle(cats).then(hacer, hacer);
+  }
+
+  /* Los globos ya están escritos en el HTML; cuando llega la nota hay que
+     volver a escribirlos. Solo se hace una vez por categoría. */
+  function refrescarTitulos() {
+    $$('[data-item-prov]').forEach(function (b) {
+      var it = itemPorCodigo[b.getAttribute('data-item-prov')];
+      if (!it) return;
+      var nombre = b.getAttribute('data-prov');
+      var qs = (it.cotizaciones || []).filter(function (q) { return q.proveedor.nombre === nombre; });
+      if (qs.length) b.setAttribute('title', tituloTag(qs[0]));
+    });
+  }
+
+  /* Siempre se espera al detalle, aunque otro ya lo haya pedido: quien pide
+     con una tarea detrás —copiar para Excel— tiene que recibirla con la
+     fuente puesta, no con lo que hubiera cuando salió la petición.
+     PRECIOS.detalle() reparte la misma promesa a todos. Lo que sí se hace
+     una sola vez es reescribir los globos. */
+  function pedirDetalle(cats, hacer) {
+    var nuevos = (cats || []).filter(function (c) { return c && !detallePedido[c]; });
+    nuevos.forEach(function (c) { detallePedido[c] = true; });
+    conDetalle(cats, function () {
+      if (nuevos.length) refrescarTitulos();
+      if (hacer) hacer();
+    });
+  }
+
+  /* Acercarse basta para pedirlo: así, cuando el visitante llega a hacer
+     clic en «copiar», el detalle ya está. */
+  function alAcercarse(e) {
+    var t = e.target.closest && e.target.closest('.tag-prov, [data-copiar-tabla]');
+    if (!t) return;
+    var codigo = t.getAttribute('data-item-prov');
+    pedirDetalle(codigo ? [codigo.slice(0, 6)] : catsDeLaPagina());
+  }
+  document.addEventListener('pointerover', alAcercarse);
+  document.addEventListener('focusin', alAcercarse);
+
+  function catsDeLaPagina() {
+    var propia = document.body.getAttribute('data-cat');
+    if (propia) return [propia];
+    var vistas = {};
+    $$('tr[data-item]').forEach(function (tr) { vistas[tr.getAttribute('data-item').slice(0, 6)] = true; });
+    return Object.keys(vistas);
   }
   function htmlCeldaEstado(it) {
     return badgeFechaHTML(it) +
@@ -1122,13 +1193,18 @@
     var tabla = e.target.closest('[data-copiar-tabla]');
     if (tabla) {
       var codigos = $$('tr[data-item]').map(function (tr) { return tr.getAttribute('data-item'); });
-      var vistos = {}, acumulado = [];
-      codigos.forEach(function (c) {
-        if (vistos[c]) return;
-        vistos[c] = true;
-        acumulado = acumulado.concat(filasDeItem(c));
+      /* La columna de fuente sale del detalle de la categoría. Casi siempre
+         ya llegó, porque se pide al acercarse al botón; si no, se espera:
+         una exportación sin la fuente de cada precio no sirve de nada. */
+      pedirDetalle(PRECIOS.catsDe(codigos), function () {
+        var vistos = {}, acumulado = [];
+        codigos.forEach(function (c) {
+          if (vistos[c]) return;
+          vistos[c] = true;
+          acumulado = acumulado.concat(filasDeItem(c));
+        });
+        if (acumulado.length) copiarTexto(PRECIOS.aTSV(acumulado, true), tabla);
       });
-      if (acumulado.length) copiarTexto(PRECIOS.aTSV(acumulado, true), tabla);
       return;
     }
   });
