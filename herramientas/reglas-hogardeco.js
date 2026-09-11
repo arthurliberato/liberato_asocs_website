@@ -119,7 +119,7 @@ function regla(a) {
   const mat = material(t);
 
   if (a.cat1 === 'Papel Tapiz') {
-    return conMetro(REV.item('papel-tapiz', { material: mat || 'vinilo' }), a, d, 'rollo');
+    return conMetro(REV.item('papel-tapiz', {}), a, d, 'rollo');
   }
   if (a.cat1 === 'Flexistone') {
     return conMetro(REV.item('revestimiento-flexible',

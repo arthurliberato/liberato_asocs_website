@@ -975,6 +975,7 @@ const BELLON = require('./reglas-bellon.js');
 const MUNDOLED = require('./reglas-mundoled.js');
 const HOGARDECO = require('./reglas-hogardeco.js');
 const CORTINAJE = require('./reglas-cortinaje.js');
+const DCO = require('./reglas-dco.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 
 const FUENTES = [
@@ -1175,6 +1176,17 @@ const FUENTES = [
     motivoDe: () => BELLON.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
     mapeo: {},
     regla: a => { const r = BELLON.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/dco-2026-09-11.json'),
+    etiqueta: 'DCO · papel tapiz escandinavo',
+    proveedor: 'DCO',
+    constante: 'PROV_DCO',
+    fecha: '2026-09-11',
+    motivo: 'no corresponde a ningún ítem del catálogo',
+    motivoDe: () => DCO.MOTIVO.valor || 'no corresponde a ningún ítem del catálogo',
+    mapeo: {},
+    regla: a => { const r = DCO.regla(a); return r === undefined ? undefined : (r || null); }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/cortinaje-2026-09-11.json'),

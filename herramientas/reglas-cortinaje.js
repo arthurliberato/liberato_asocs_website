@@ -36,18 +36,6 @@ const MOTIVO = { valor: '' };
 const baja = s => String(s || '').toLowerCase()
   .normalize('NFD').replace(/[̀-ͯ]/g, '');
 
-/* El soporte del papel es lo que separa las partidas, y esta tienda lo
-   declara: el vinílico sobre TNT —non-woven— se cuelga con la pared
-   encolada, aguanta más y cuesta más que el vinílico corriente. Cuando la
-   ficha no dice el soporte, tampoco se supone. */
-function soporte(a) {
-  const t = baja(a.material + ' ' + a.info);
-  if (/\btnt\b|non.?woven|no tejido/.test(t)) return 'vinilo sobre TNT';
-  if (/vinil/.test(t)) return 'vinilo';
-  if (/chapa de madera|fibra natural/.test(t)) return '';
-  return '';
-}
-
 function regla(a) {
   MOTIVO.valor = '';
   if (!(a.precio > 1)) { MOTIVO.valor = 'la ficha no publica un precio utilizable'; return null; }
@@ -67,10 +55,7 @@ function regla(a) {
     MOTIVO.valor = 'la ficha no declara el tamaño del rollo, y el papel tapiz viene en dos estándares que se llevan el doble';
     return null;
   }
-  const s = soporte(a);
-  if (!s) { MOTIVO.valor = 'la ficha no declara el soporte del papel'; return null; }
-
-  const spec = REV.item('papel-tapiz', { material: s });
+  const spec = REV.item('papel-tapiz', {});
   if (!spec) return null;
   spec.factorUnidad = {
     veces: 1 / d.area_m2,

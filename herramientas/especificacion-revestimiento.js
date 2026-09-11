@@ -47,12 +47,23 @@ const FAMILIAS = {
     esp: 'Formato de 1.22 m de ancho',
     alias: 'plancha, lámina decorativa, panel liso, mármol PVC, ónix'
   },
+  /* Sin ejes, y es una corrección: nació con el material como eje y estaba
+     mal. Tres tiendas y 289 cotizaciones después se ve por qué. El material
+     solo lo declara una minoría —de los 168 papeles de DCO, 164 lo dejan en
+     blanco— y, sobre todo, no ordena el precio: el vinílico de Hogardeco
+     empieza en RD$ 310 el metro, el de DCO llega a RD$ 3,055, y los rangos
+     se montan uno sobre otro.
+
+     Lo que sí se ve al ponerlos juntos es una escalera continua de RD$ 310 a
+     RD$ 3,055 sin un solo salto mayor de 1.52x entre una cotización y la
+     siguiente. Igual que la lámpara decorativa: se compra por diseño, no por
+     especificación, y el rango es la respuesta. */
   'papel-tapiz': {
     cat: 'MAT-34', unidad: 'm²', etapa: 'terminacion', orden: 30,
-    ejes: ['material'],
-    nombre: m => 'Papel tapiz de ' + m.material,
-    esp: 'Rollo de 0.53 x 10 m',
-    alias: 'papel tapiz, wallpaper, empapelado'
+    ejes: [],
+    nombre: 'Papel tapiz',
+    esp: 'Se presupuesta por rango: el rollo se elige por diseño y el catálogo no lo compara modelo a modelo',
+    alias: 'papel tapiz, wallpaper, empapelado, revestimiento mural'
   },
   'revestimiento-flexible': {
     cat: 'MAT-34', unidad: 'm²', etapa: 'terminacion', orden: 40,

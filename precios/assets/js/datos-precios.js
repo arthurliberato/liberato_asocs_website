@@ -194,6 +194,7 @@
   var PROV_TONOS = 'Tonos y Colores';
   var PROV_FERREMIX = 'Ferremix (Grupo Alterra)';
   var PROV_BELLON = 'Bellón';
+  var PROV_DCO = 'DCO';
   var PROV_CORTINAJE = 'Cortinaje';
   var PROV_HOGARDECO = 'Hogardeco';
   var PROV_MUNDOLED = 'Mundo LED';
@@ -34165,227 +34166,417 @@
     peso: 23,
     nota: 'Plancha Lisa – Color Rosa Viejo · artículo h098. · ref. Rosa Viejo H098. La tienda cobra por plancha y, según las medidas que publica la tienda, cada una cubre 1.74 m²; aquí va el precio del m² (RD$ 2400 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-016', PROV_HOGARDECO, 350, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-geometrico-madera-modelo-tt1008/',
-    nota: 'Papel Tapiz Geometrico Madera Modelo – TT1008 · artículo TT1008. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1750 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-34-016', PROV_DCO, 712.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/borosan-2/',
+    peso: 2,
+    nota: 'BOROSAN · artículo 38632. La tienda cobra por rollo y su ficha declara 53 × 1005 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 3795 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 350, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-geometrico-modelo-tt1015/',
-    peso: 22,
-    nota: 'Papel Tapiz Geometrico Modelo – TT1015 · artículo TT1015. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 22 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 22 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-34-016', PROV_DCO, 1294.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/casablanca/',
+    nota: 'Casablanca · artículo 3079. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 6900 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 330, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-st-5544/',
-    peso: 33,
-    nota: 'Papel Tapiz Modelo -ST-5544 · artículo ST-5544. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 33 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 33 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-34-016', PROV_DCO, 899.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/mollys-meadow/',
+    nota: 'MOLLY’S MEADOW · artículo 3570. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4795 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 310, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-df-400404-1/',
+  c('MAT-34-016', PROV_DCO, 2245.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/villastan/',
+    nota: 'Villastan · artículo 4171. La tienda cobra por rollo y su ficha declara 53 × 1005 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 11970 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2047.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/flora-2/',
+    peso: 3,
+    nota: 'FLORA · artículo 4179 · ref. Alla Tiders Hus · marca Alla Tiders Hus. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 10915 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 919.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/johan/',
+    peso: 2,
+    nota: 'JOHAN · artículo 4512 · ref. Anno · marca Anno. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4900 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1688.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/dogwood/',
+    nota: 'Dogwood · artículo BL1762 · ref. Blooms Second Edition · marca Blooms Second Edition. La tienda cobra por rollo y su ficha declara 1006 × 52.07 cm, o sea 5.24 m² por rollo; aquí va el precio del m² (RD$ 8850 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 836.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/forest-floor/',
+    peso: 17,
+    nota: 'Forest Floor · artículo BL1813 · ref. Blooms Second Edition · marca Blooms Second Edition. La tienda cobra por rollo y su ficha declara 823 × 68.58 cm, o sea 5.64 m² por rollo; aquí va el precio del m² (RD$ 4720 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 900.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/moon-flower-2/',
+    peso: 2,
+    nota: 'Moon Flower · artículo BL1713 · ref. Blooms Second Edition · marca Blooms Second Edition. La tienda cobra por rollo y su ficha declara 52.07 × 1006 cm, o sea 5.24 m² por rollo; aquí va el precio del m² (RD$ 4720 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 774.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/borosan-easyup-20-3/',
+    peso: 3,
+    nota: 'BOROSAN EASYUP 20 · artículo 38608 · ref. Borosan Easy Up 20 · marca Borosan Easy Up 20. La tienda cobra por rollo y su ficha declara 1120 × 53 cm, o sea 5.94 m² por rollo; aquí va el precio del m² (RD$ 4602 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 784.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/ink-wash/',
+    peso: 6,
+    nota: 'Ink Wash · artículo CC1275 · ref. Carol Benson-Cobb Signature · marca Carol Benson-Cobb Signature. La tienda cobra por rollo y su ficha declara 823 × 68.58 cm, o sea 5.64 m² por rollo; aquí va el precio del m² (RD$ 4425 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1749.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/alice/',
+    peso: 12,
+    nota: 'ALICE · artículo 109-01 · ref. Charlotta Sandberg - Majvillan · marca Charlotta Sandberg - Majvillan. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 9325 por pieza). El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1206.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/nightingale-garden-2/',
+    nota: 'NIGHTINGALE GARDEN · artículo 3562 · ref. Cottage Garden · marca Cottage Garden. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 6431 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1084.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/tailors-tweed-4/',
+    peso: 2,
+    nota: 'TAILOR´S TWEED · artículo 3579 · ref. Cottage Garden · marca Cottage Garden. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 5782 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 655.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/decorama-3/',
+    nota: 'Decorama · artículo 9356 · ref. DECORAMA EASY UP 2019 · marca DECORAMA EASY UP 2019. La tienda cobra por rollo y su ficha declara 53 × 1005 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 3495 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1638.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/oriental-garden/',
     peso: 4,
-    nota: 'Papel Tapiz Modelo – DF-400404-1 · artículo DF-400404-1. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1550 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'ORIENTAL GARDEN · artículo 4271 · ref. DREAMY ESCAPE · marca DREAMY ESCAPE. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 8732 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 370, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261801/',
-    peso: 8,
-    nota: 'Papel Tapiz Modelo – LP-261801 · artículo LP-261801. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1850 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-34-016', PROV_DCO, 3055.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/paradise-birds-2/',
+    peso: 2,
+    nota: 'PARADISE BIRDS · artículo 4270 · ref. DREAMY ESCAPE · marca DREAMY ESCAPE. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 16284 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-017', PROV_HOGARDECO, 390, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261901/',
-    nota: 'Papel Tapiz Modelo – LP-261901 · artículo LP-261901. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1950 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-34-016', PROV_DCO, 1760.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/indigo-garden-2/',
+    peso: 2,
+    nota: 'INDIGO GARDEN · artículo 3134 · ref. EASTERN SIMPLICITY · marca EASTERN SIMPLICITY. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 9381 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-018', PROV_CORTINAJE, 23.58, {
+  c('MAT-34-016', PROV_DCO, 937.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/alice-2/',
+    peso: 2,
+    nota: 'Alice · artículo 3977 · ref. Essens · marca Essens. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4995 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1140.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/ang/',
+    nota: 'ÄNG · artículo 3972 · ref. Essens · marca Essens. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 6077 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2014.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/countryside-morning/',
+    peso: 12,
+    nota: 'COUNTRYSIDE MORNING · artículo 7677 · ref. FALSTERBO III · marca FALSTERBO III. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 10738 por pieza). El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2933.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/carnation-garden/',
+    peso: 2,
+    nota: 'CARNATION GARDEN · artículo 7235 · ref. In Bloom · marca In Bloom. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 15635 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1782.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/chestnut-blossom/',
+    peso: 3,
+    nota: 'CHESTNUT BLOSSOM · artículo 7201 · ref. In Bloom · marca In Bloom. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 9499 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1339.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/foxglove/',
+    peso: 3,
+    nota: 'FOXGLOVE · artículo 7221 · ref. In Bloom · marca In Bloom. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 7139 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1050.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/spring-garden/',
+    nota: 'SPRING GARDEN · artículo 7218 · ref. In Bloom · marca In Bloom. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 5600 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1051.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/ash-grey/',
+    peso: 28,
+    nota: 'ASH GREY · artículo 4321 · ref. LINEN · marca LINEN. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 5605 por pieza). El comercio lista 28 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 28 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 843.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/cloudy-linen/',
+    peso: 5,
+    nota: 'CLOUDY LINEN · artículo 4329 · ref. LINEN · marca LINEN. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4495 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1339.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/beachcomber-3/',
+    peso: 3,
+    nota: 'Beachcomber · artículo MN1872 · ref. Mediterranean · marca Mediterranean. La tienda cobra por rollo y su ficha declara 1006 × 52.07 cm, o sea 5.24 m² por rollo; aquí va el precio del m² (RD$ 7021 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1244.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/eden-retreat-2/',
+    peso: 2,
+    nota: 'Eden Retreat · artículo MN1844 · ref. Mediterranean · marca Mediterranean. La tienda cobra por rollo y su ficha declara 823 × 68.58 cm, o sea 5.64 m² por rollo; aquí va el precio del m² (RD$ 7021 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1087.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/orchard-2/',
+    peso: 2,
+    nota: 'Orchard · artículo MN1821 · ref. Mediterranean · marca Mediterranean. La tienda cobra por rollo y su ficha declara 1001 × 52 cm, o sea 5.21 m² por rollo; aquí va el precio del m² (RD$ 5664 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1129.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/papyrus-weave/',
+    nota: 'Papyrus Weave · artículo MN1932 · ref. Mediterranean · marca Mediterranean. La tienda cobra por rollo y su ficha declara 610 × 68.58 cm, o sea 4.18 m² por rollo; aquí va el precio del m² (RD$ 4720 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2058.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/blomsterhav-3/',
+    peso: 17,
+    nota: 'BLOMSTERHAV · artículo 2055 · ref. NEW HERITAGE · marca NEW HERITAGE. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 10974 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 1516.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/adventures/',
+    peso: 4,
+    nota: 'ADVENTURES · artículo 7458 · ref. Newbie · marca Newbie. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 8085 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2614.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/minou-2/',
+    peso: 2,
+    nota: 'MINOU · artículo 7483 · ref. Newbie · marca Newbie. La tienda cobra por rollo y su ficha declara 1005 × 49 cm, o sea 4.92 m² por rollo; aquí va el precio del m² (RD$ 12865 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 430.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/ivana-helsinki/',
+    nota: 'IVANA HELSINKI · artículo 5251-5 · ref. Sandudd · marca Sandudd. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 2295 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 374.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/laura/',
+    nota: 'LAURA · artículo 5409-4 · ref. Sandudd · marca Sandudd. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 1995 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 355.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/metsapolku/',
+    nota: 'METSAPOLKU · artículo 5256-4 · ref. Sandudd · marca Sandudd. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 1895 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 324.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/unelmia/',
+    nota: 'UNELMIA · artículo 5230-4 · ref. Sandudd · marca Sandudd. La tienda cobra por rollo y su ficha declara 1102 × 53 cm, o sea 5.84 m² por rollo; aquí va el precio del m² (RD$ 1895 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2059.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/arne-jacobsen-trapez-4/',
+    peso: 10,
+    nota: 'ARNE JACOBSEN TRAPEZ · artículo 1780 · ref. Scandinavian Designers II · marca Scandinavian Designers II. La tienda cobra por rollo y su ficha declara 53 × 1005 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 10975 por pieza). El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 2545.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/rabarber/',
+    nota: 'RABARBER · artículo 1792 · ref. Scandinavian Designers II · marca Scandinavian Designers II. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 13570 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 863.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/stjarnflor/',
+    nota: 'STJARNFLOR · artículo 1466 · ref. Wonderland · marca Wonderland. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4600 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_DCO, 880.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://dco.do/producto/northern-stone/',
+    nota: 'NORTHERN STONE · artículo 4709 · ref. WOODLAN · marca WOODLAN. La tienda cobra por rollo y su ficha declara 1005 × 53 cm, o sea 5.33 m² por rollo; aquí va el precio del m² (RD$ 4695 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_CORTINAJE, 23.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cortinaje.shop/products/papel-tapiz-collage-oriental-azulado-voyage-db73735',
     moneda: 'USD',
     peso: 52,
     nota: 'Papel Tapiz Collage Oriental Azulado – Mural Vinílico Lavable | VOYAGE (DB73735) · artículo DB73735 · ref. VOYAGE (DB73735) · marca Debora Benvenuti. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada uno cubre 10.6 m²; aquí va el precio del m² (RD$ 250 por pieza). El comercio lista 52 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 52 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 2430.56, {
+  c('MAT-34-016', PROV_HOGARDECO, 350, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-geometrico-madera-modelo-tt1008/',
+    peso: 23,
+    nota: 'Papel Tapiz Geometrico Madera Modelo – TT1008 · artículo TT1008. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 23 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 23 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 330, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-st-5544/',
+    peso: 33,
+    nota: 'Papel Tapiz Modelo -ST-5544 · artículo ST-5544. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 33 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 33 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 310, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-df-400404-1/',
+    peso: 4,
+    nota: 'Papel Tapiz Modelo – DF-400404-1 · artículo DF-400404-1. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1550 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 370, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261801/',
+    peso: 8,
+    nota: 'Papel Tapiz Modelo – LP-261801 · artículo LP-261801. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1850 por pieza). El comercio lista 8 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 8 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-016', PROV_HOGARDECO, 390, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/papel-tapiz-modelo-lp-261901/',
+    nota: 'Papel Tapiz Modelo – LP-261901 · artículo LP-261901. La tienda cobra por rollo y, según la cobertura que declara la tienda, cada una cubre 5 m²; aquí va el precio del m² (RD$ 1950 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-34-017', PROV_HOGARDECO, 2430.56, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ando-cement-concrete-fl8/',
     peso: 3,
     nota: 'Flexistone Interior –  Color ANDO CEMENT CONCRETE  FL8 · artículo 8 · ref. Flexistone Interior – Color ANDO CEMENT CONCRETE FL8. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1750 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 1736.11, {
+  c('MAT-34-017', PROV_HOGARDECO, 1736.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-cut-stone-striola-grey-fl13-1/',
     peso: 5,
     nota: 'Flexistone Interior –  Color CUT STONE STRIOLA GREY FL13-1 · artículo fl13-1 · ref. Flexistone Interior – Color – CUT STONE STRIOLA GREY FL13-1. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1250 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 1458.33, {
+  c('MAT-34-017', PROV_HOGARDECO, 1458.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-danxia-rammed-earth-beige-fl20/',
     peso: 2,
     nota: 'Flexistone Interior –  Color DANXIA RAMMED EARTH BEIGE FL20 · artículo fl20 · ref. Flexistone Interior – Color – DANXIA RAMMED EARTH BEIGE FL20. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1050 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 2291.67, {
+  c('MAT-34-017', PROV_HOGARDECO, 2291.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-lime-stone-beige-fl6-2/',
     peso: 4,
     nota: 'Flexistone Interior –  Color LIME STONE BEIGE  FL6 · artículo 6-1 · ref. Flexistone Interior – Color LIME STONE BEIGE FL6. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1650 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 2708.33, {
+  c('MAT-34-017', PROV_HOGARDECO, 2708.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-muretto-stone-cascade-beige/',
     peso: 3,
     nota: 'Flexistone Interior –  Color MURETTO STONE CASCADE BEIGE · artículo fl14 · ref. Flexistone Interior – Color – MURETTO STONE CASCADE BEIGE. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1950 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 2013.89, {
+  c('MAT-34-017', PROV_HOGARDECO, 2013.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-ripple-board-beige-fl15/',
     peso: 2,
     nota: 'Flexistone Interior –  Color RIPPLE BOARD BEIGE FL15 · artículo fl15 · ref. Flexistone Interior – Color – RIPPLE BOARD BEIGE FL15. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1450 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 1319.44, {
+  c('MAT-34-017', PROV_HOGARDECO, 1319.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-3d-travertine-oceanic-beige/',
     nota: 'Flexistone Interior –  Color Sand Brick · artículo fl22 · ref. Flexistone Interior – Color – Color Sand Brick FL22. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 950 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 937.5, {
+  c('MAT-34-017', PROV_HOGARDECO, 937.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-color-travertine-concrete-fl11-2/',
     nota: 'Flexistone Interior –  Color TRAVERTINE CONCRETE  FL11-2 · artículo fl11-2 · ref. Flexistone Interior – Color – TRAVERTINE CONCRETE FL11-2. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 675 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-019', PROV_HOGARDECO, 1944.44, {
+  c('MAT-34-017', PROV_HOGARDECO, 1944.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/flexistone-interior-dolomitic-travertine-dark-grey-fl5/',
     nota: 'Flexistone Interior –  DOLOMITIC TRAVERTINE  DARK GREY FL5 · artículo fl5 · ref. Flexistone Interior – Color DOLOMITIC TRAVERTINE DARK GREY FL5. La tienda cobra por lámina y, según las medidas que publica la tienda, cada una cubre 0.72 m²; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 10216.35, {
+  c('MAT-34-018', PROV_HOGARDECO, 10216.35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m01/',
     nota: 'Madera Maciza M01 · artículo modelo m01 · ref. M01. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0832 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 9444.44, {
+  c('MAT-34-018', PROV_HOGARDECO, 9444.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m010/',
     peso: 11,
     nota: 'Madera Maciza M010 · artículo modelo m010 · ref. M010. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 11 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 11 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 8750, {
+  c('MAT-34-018', PROV_HOGARDECO, 8750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m012/',
     nota: 'Madera Maciza M012 · artículo modelo m012 · ref. M012. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.16 m²; aquí va el precio del m² (RD$ 1400 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 8333.33, {
+  c('MAT-34-018', PROV_HOGARDECO, 8333.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m016/',
     nota: 'Madera Maciza M016 · artículo modelo m016 · ref. M016. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 750 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 10861.11, {
+  c('MAT-34-018', PROV_HOGARDECO, 10861.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m05/',
     nota: 'Madera Maciza M05 · artículo modelo m05 · ref. M05. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.18 m²; aquí va el precio del m² (RD$ 1955 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 8095.24, {
+  c('MAT-34-018', PROV_HOGARDECO, 8095.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m07/',
     peso: 2,
     nota: 'Madera Maciza M07 · artículo modelo m07 · ref. M07. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.105 m²; aquí va el precio del m² (RD$ 850 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 11666.67, {
+  c('MAT-34-018', PROV_HOGARDECO, 11666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/madera-maciza-m09/',
     nota: 'Madera Maciza M09 · artículo modelo m09 · ref. M09. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 4714.29, {
+  c('MAT-34-018', PROV_HOGARDECO, 4714.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m020/',
     nota: 'Mosaicos Madera Maciza Modelo M018 · artículo m018. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.105 m²; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-020', PROV_HOGARDECO, 5500, {
+  c('MAT-34-018', PROV_HOGARDECO, 5500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-madera-maciza-modelo-m019/',
     nota: 'Mosaicos Madera Maciza Modelo M019 · artículo m019. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 495 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 10337.55, {
+  c('MAT-34-019', PROV_HOGARDECO, 10337.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-modelo-m06-2/',
     peso: 2,
     nota: 'Mosaico de Mármol  – Modelo M06-2 · artículo 2553. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0948 m²; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 9444.44, {
+  c('MAT-34-019', PROV_HOGARDECO, 9444.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-blanco-modelo-m04/',
     nota: 'Mosaico de Mármol Blanco – Modelo M04 · artículo 2547. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 12887.44, {
+  c('MAT-34-019', PROV_HOGARDECO, 12887.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-leaf-blanca-m010-2-30-x-34-5-cm/',
     peso: 2,
     nota: 'Mosaico de Mármol Leaf Blanca M010-2 – 30 x 34.5 cm · artículo m010-1-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0613 m²; aquí va el precio del m² (RD$ 790 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 4166.67, {
+  c('MAT-34-019', PROV_HOGARDECO, 4166.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-m08-1-28-5-x-32-cm/',
     peso: 2,
     nota: 'Mosaico de Mármol M08-1 – 28.5 x 32 cm · artículo m08-1……. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0912 m²; aquí va el precio del m² (RD$ 380 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 11299.44, {
+  c('MAT-34-019', PROV_HOGARDECO, 11299.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-marmol-negro-y-blanco-modelo-m05/',
     nota: 'Mosaico de Mármol Verde y Blanco – Modelo M05 · artículo 2549. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0885 m²; aquí va el precio del m² (RD$ 1000 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 14518.76, {
+  c('MAT-34-019', PROV_HOGARDECO, 14518.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-nube-marmol-m011-1-24-5-x-25-cm/',
     peso: 2,
     nota: 'Mosaico de Nube Mármol M011-1 – 24.5 x 25 cm · artículo m011-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0613 m²; aquí va el precio del m² (RD$ 890 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 9615.38, {
+  c('MAT-34-019', PROV_HOGARDECO, 9615.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m09/',
     nota: 'Mosaico Mármol Blanco Estilo Escama  – Modelo M09 · artículo 2562. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0884 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 13709.68, {
+  c('MAT-34-019', PROV_HOGARDECO, 13709.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-marmol-blanco-estilo-escama-modelo-m08/',
     nota: 'Mosaico Mármol Blanco Estilo Escama – Modelo M08 · artículo 2560. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.062 m²; aquí va el precio del m² (RD$ 850 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-021', PROV_HOGARDECO, 9015.64, {
+  c('MAT-34-019', PROV_HOGARDECO, 9015.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-marmol-modelo-m07-1/',
     peso: 2,
     nota: 'Mosaicos De Mármol Modelo – M07-1 · artículo 2555. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.1087 m²; aquí va el precio del m² (RD$ 980 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 6111.11, {
+  c('MAT-34-020', PROV_HOGARDECO, 6111.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-crema-natural-m014-30-x-30-cm/',
     peso: 2,
     nota: 'Mosaico de Piedra Crema Natural M014 – 30 x 30 cm · artículo m014. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 550 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 11666.67, {
+  c('MAT-34-020', PROV_HOGARDECO, 11666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m01-elegancia-en-relieve/',
     nota: 'Mosaico de Piedra Natural M01 – Elegancia en Relieve · artículo 2541. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 13888.89, {
+  c('MAT-34-020', PROV_HOGARDECO, 13888.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaico-de-piedra-natural-m03/',
     nota: 'Mosaico de Piedra Natural M03 · artículo 2545. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0756 m²; aquí va el precio del m² (RD$ 1050 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 9311.74, {
+  c('MAT-34-020', PROV_HOGARDECO, 9311.74, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-m09-1/',
     nota: 'Mosaicos De Piedra M09-1 · artículo m09-1. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0741 m²; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-022', PROV_HOGARDECO, 7666.67, {
+  c('MAT-34-020', PROV_HOGARDECO, 7666.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mosaicos-de-piedra-natural-m013/',
     nota: 'Mosaicos de Piedra Natural M013 · artículo m013. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 690 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-023', PROV_HOGARDECO, 3277.78, {
+  c('MAT-34-021', PROV_HOGARDECO, 3277.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-m02-019/',
     peso: 17,
     nota: 'PIEZAS 3D DE CUERO – M02 019 · artículo M02 019 · ref. Piezas 3D De Cuero M02- 19. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.09 m²; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-023', PROV_HOGARDECO, 6357.76, {
+  c('MAT-34-021', PROV_HOGARDECO, 6357.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m01-001/',
     peso: 17,
     nota: 'Piezas 3D De Cuero – Modelo M01 001 · artículo m01 · ref. M01 001. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0464 m²; aquí va el precio del m² (RD$ 295 por pieza). El comercio lista 17 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 17 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-023', PROV_HOGARDECO, 4669.54, {
+  c('MAT-34-021', PROV_HOGARDECO, 4669.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/piezas-3d-de-cuero-modelo-m04-038/',
     peso: 16,
     nota: 'Piezas 3D De Cuero – Modelo M04 038 · artículo M04 038. La tienda cobra por pieza y, según las medidas que publica la tienda, cada una cubre 0.0696 m²; aquí va el precio del m² (RD$ 325 por pieza). El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-024', PROV_HOGARDECO, 1247.69, {
+  c('MAT-34-022', PROV_HOGARDECO, 1247.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/mallas-de-rattan-decorativas-modelo-r1-coffee/',
     peso: 2,
     nota: 'Mallas de Rattan Decorativas Modelo – R1 Coffee · artículo R1 Coffee. La tienda cobra por rollo y, según las medidas que publica la tienda, cada una cubre 12.423 m²; aquí va el precio del m² (RD$ 15500 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 350, {
+  c('MAT-34-023', PROV_HOGARDECO, 350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-irregular-round-circle-c9-19/',
     peso: 36,
     nota: 'Tiradores Modelo -IRREGULAR ROUND CIRCLE C9-19 · artículo c9 -19. El comercio lista 36 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 36 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 500, {
+  c('MAT-34-023', PROV_HOGARDECO, 500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-54/',
     peso: 12,
     nota: 'Tiradores Modelo – C-54 · artículo C-54. El comercio lista 12 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 12 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 450, {
+  c('MAT-34-023', PROV_HOGARDECO, 450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c-55/',
     peso: 9,
     nota: 'Tiradores Modelo – C-55 · artículo C-55. El comercio lista 9 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 9 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 650, {
+  c('MAT-34-023', PROV_HOGARDECO, 650, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c46/',
     peso: 2,
     nota: 'Tiradores Modelo – C46 · artículo C-46. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 900, {
+  c('MAT-34-023', PROV_HOGARDECO, 900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c50/',
     nota: 'Tiradores Modelo – C50 · artículo C-50. ' + SUPUESTO_ITBIS
   });
-  c('MAT-34-025', PROV_HOGARDECO, 700, {
+  c('MAT-34-023', PROV_HOGARDECO, 700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/tiradores-modelo-c52/',
     peso: 2,
     nota: 'Tiradores Modelo – C52 · artículo C-52. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS

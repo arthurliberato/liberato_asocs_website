@@ -88,6 +88,12 @@
     zonas:['nacional'], web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
+  p('DCO', {
+    tipo:'especializado', canal:'detallista',
+    cats:['MAT-34'],
+    zonas:[], web:'dco.do', precios:true,
+    nota:'Papel tapiz escandinavo y europeo: Boråstapeter, Majvillan, Rifle Paper Co., Newbie y Scandinavian Designers. Es la mejor fuente de la partida porque cada ficha publica la medida de su rollo —no todos son el estándar: los hay de 68.58 cm de ancho y de 11.20 m de largo—, y de ahí sale el metro cuadrado sin suponer nada. La mayor parte de su catálogo se vende por preorden. No declara si el precio incluye ITBIS.'
+  });
   p('Cortinaje', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-34'],
