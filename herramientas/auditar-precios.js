@@ -252,6 +252,9 @@ function escribir(retirar) {
   fs.writeFileSync(CATALOGO,
     texto.slice(0, ini) + cabecera + L.join('\n') + '\n' + texto.slice(fin));
   console.log('Escritos %d ítems en la lista de dudosos de datos-catalogo.js.', retirar.length);
+  console.log('Ahora corre, en este orden:');
+  console.log('  node herramientas/generar-datos-navegador.js');
+  console.log('  node herramientas/generar-categorias.js');
 }
 
 /* ---------- informe ---------- */

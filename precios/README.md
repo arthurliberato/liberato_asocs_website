@@ -27,6 +27,9 @@ precios/
     css/precios.css       Estilos (la paleta de marca, en :root)
     js/
       datos-catalogo.js   Taxonomía e ítems con su precio de referencia
+                          (el original; no lo carga el navegador)
+      catalogo.js         El mismo, en forma compacta           ← GENERADO
+      catalogo-alias.js   Los alias, solo para el buscador      ← GENERADO
       datos-proveedores.js Directorio de proveedores
       precios.js          El cálculo: mediana, ITBIS, exportación
       datos-precios.js    Cotizaciones por proveedor            ← se edita a menudo
@@ -46,6 +49,9 @@ precios/
 ---
 
 ## Qué carga el navegador y qué no
+
+Los dos originales del repositorio —`datos-catalogo.js` y `datos-precios.js`—
+suman 3.3 MB, y el navegador no carga ninguno de los dos.
 
 El registro de cotizaciones —`datos-precios.js`— pesa 2.6 MB, y dos terceras
 partes de eso son la nota y la fuente de cada una: de qué artículo exacto se
@@ -70,10 +76,18 @@ Las herramientas del repositorio hacen lo contrario: cargan `precios.js` y
 después el registro completo, porque ahí la nota y la fuente son justamente
 lo que importa.
 
-**Después de tocar `datos-precios.js` hay que correr:**
+Con el catálogo pasa algo parecido, aunque más simple: la unidad, la etapa,
+el alcance, el estado y la fuente de cada ítem son los mismos siete u ocho
+textos repetidos 2,185 veces, y en diccionario ocupan 1 KB. Tres campos
+—`medidas`, `gama` y `origen`— no los mira nadie en el navegador: son de la
+auditoría y del libro de Excel, que leen el original. Y los alias, que solo
+sirven para buscar, van en su propio archivo y los carga únicamente la
+portada, que es la única página con buscador. De 678 KB quedan 277.
+
+**Después de tocar `datos-precios.js` o `datos-catalogo.js` hay que correr:**
 
 ```bash
-node herramientas/generar-datos-navegador.js   # cotizaciones.js y detalle-CAT.json
+node herramientas/generar-datos-navegador.js   # catalogo.js, cotizaciones.js, detalle-CAT.json
 node herramientas/generar-categorias.js        # las páginas
 ```
 

@@ -154,11 +154,104 @@ Object.keys(detalle).sort().forEach(cat => {
   fs.writeFileSync(path.join(DATOS, 'detalle-' + cat + '.json'), texto);
 });
 
+/* =========================================================
+   El catálogo, también en forma compacta
+
+   datos-catalogo.js pesa 678 KB y buena parte es repetición: la
+   unidad, la etapa, el alcance, el estado y la fuente de cada ítem
+   son los mismos siete u ocho textos una y otra vez. En diccionario
+   ocupan 1 KB. De paso se quedan fuera tres campos que el navegador
+   no mira nunca —medidas, gama y origen—, que son de la auditoría.
+
+   Y los alias, que son 96 KB y solo sirven para buscar, van en su
+   propio archivo: los carga la portada, que es la única página con
+   buscador, y no las 31 páginas de categoría.
+   ========================================================= */
+
+const CAT = global.window.CATALOGO;
+
+const dic = {}, orden = {};
+function dicc(campo, valor) {
+  if (!dic[campo]) { dic[campo] = []; orden[campo] = {}; }
+  const s = JSON.stringify(valor);
+  if (!(s in orden[campo])) { orden[campo][s] = dic[campo].length; dic[campo].push(valor); }
+  return orden[campo][s];
+}
+
+/* El orden de los campos es el que lee catalogo.js al reconstruir. */
+const filas = CAT.items.map(i => [
+  i.codigo, i.nombre, i.esp || '', dicc('cat', i.cat), dicc('unidad', i.unidad),
+  dicc('etapa', i.etapa), dicc('alcance', i.alcance || ''), dicc('estado', i.estado),
+  dicc('fuente', i.fuente || ''), dicc('fecha', i.fecha || ''), i.itbis ? 1 : 0,
+  i.ref, i.min, i.max, dicc('ambitos', i.ambitos || []), i.nota || ''
+]);
+
+const taxonomia = ['meta', 'grupos', 'categorias', 'etapas', 'conversiones', 'dudosos', 'retirados'];
+
+const K = [];
+K.push('/* =========================================================');
+K.push('   El catálogo en la forma que carga el navegador.');
+K.push('');
+K.push('   NO EDITAR A MANO. Lo escribe herramientas/generar-datos-navegador.js');
+K.push('   a partir de datos-catalogo.js, que es el original y el que se edita.');
+K.push('');
+K.push('   Cada ítem es una línea de dieciséis posiciones; las que son índices');
+K.push('   apuntan a los diccionarios de aquí abajo. Faltan tres campos del');
+K.push('   original —medidas, gama y origen— porque el sitio no los usa: son');
+K.push('   de la auditoría y del libro de Excel, que leen el original. Los');
+K.push('   alias van aparte, en catalogo-alias.js, porque solo los necesita el');
+K.push('   buscador de la portada.');
+K.push('   ========================================================= */');
+K.push('');
+K.push('(function (global) {');
+K.push("  'use strict';");
+K.push('');
+K.push('  var d = ' + JSON.stringify(dic) + ';');
+K.push('');
+K.push('  var f = [');
+filas.forEach((f, n) => K.push('    ' + JSON.stringify(f) + (n < filas.length - 1 ? ',' : '')));
+K.push('  ];');
+K.push('');
+K.push('  global.CATALOGO = {');
+taxonomia.forEach(k => K.push('    ' + k + ': ' + JSON.stringify(CAT[k]) + ','));
+K.push('    items: f.map(function (i) {');
+K.push('      return {');
+K.push('        codigo: i[0], nombre: i[1], esp: i[2], cat: d.cat[i[3]], unidad: d.unidad[i[4]],');
+K.push('        etapa: d.etapa[i[5]], alcance: d.alcance[i[6]], estado: d.estado[i[7]],');
+K.push('        fuente: d.fuente[i[8]], fecha: d.fecha[i[9]], itbis: !!i[10],');
+K.push('        ref: i[11], min: i[12], max: i[13], ambitos: d.ambitos[i[14]], nota: i[15],');
+K.push("        alias: ''");
+K.push('      };');
+K.push('    })');
+K.push('  };');
+K.push('');
+K.push("})(typeof window !== 'undefined' ? window : globalThis);");
+fs.writeFileSync(path.join(JS, 'catalogo.js'), K.join('\n') + '\n');
+
+/* Los alias, para el buscador de la portada. */
+const A = [];
+A.push('/* Los alias de cada ítem, que es como el buscador encuentra «varilla» al');
+A.push('   escribir «cabilla». Van aparte porque son 96 KB y solo los usa la');
+A.push('   portada, la única página con buscador. NO EDITAR A MANO: lo escribe');
+A.push('   herramientas/generar-datos-navegador.js. */');
+A.push('');
+A.push('(function (global) {');
+A.push("  'use strict';");
+A.push('  var a = ' + JSON.stringify(CAT.items.map(i => i.alias || '')) + ';');
+A.push('  global.CATALOGO.items.forEach(function (it, n) { it.alias = a[n]; });');
+A.push("})(typeof window !== 'undefined' ? window : globalThis);");
+fs.writeFileSync(path.join(JS, 'catalogo-alias.js'), A.join('\n') + '\n');
+
 /* ---------- informe ---------- */
 const kb = n => String(Math.round(n / 1024)).padStart(5) + ' KB';
 console.log('Registro completo (datos-precios.js) ' + kb(fs.statSync(path.join(JS, 'datos-precios.js')).size));
 console.log('Forma compacta  (cotizaciones.js)    ' + kb(fs.statSync(path.join(JS, 'cotizaciones.js')).size) +
             '   ' + registros.length + ' cotizaciones de ' + porItem.length + ' ítems');
+console.log('Catálogo completo (datos-catalogo.js)' + kb(fs.statSync(path.join(JS, 'datos-catalogo.js')).size));
+console.log('Forma compacta  (catalogo.js)        ' + kb(fs.statSync(path.join(JS, 'catalogo.js')).size) +
+            '   ' + CAT.items.length + ' ítems');
+console.log('Alias           (catalogo-alias.js)  ' + kb(fs.statSync(path.join(JS, 'catalogo-alias.js')).size) +
+            '   solo la portada');
 console.log('Detalle por categoría                ' + kb(pesoDetalle) + '   ' +
             Object.keys(detalle).length + ' archivos, el mayor ' +
             kb(Math.max.apply(null, Object.keys(detalle).map(c => JSON.stringify(detalle[c]).length))));

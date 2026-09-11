@@ -75,7 +75,7 @@ const ALCANCE_BASE = (CAT.meta && CAT.meta.alcanceBase) || '';
 
 /* El encabezado y el pie viven en su propio módulo desde que hay dos
    generadores que los usan. */
-const { header, FOOTER } = require('./plantilla-precios.js');
+const { header, FOOTER, SPRITE, USO_COPIAR } = require('./plantilla-precios.js');
 
 const COTIZACION = `<!-- ============ LISTA DE COTIZACIÓN ============ -->
 <button class="cot-fab" id="cot-fab" type="button" hidden aria-controls="cot-panel">
@@ -131,7 +131,7 @@ const AVISO = `<div class="aviso">
    día para otro y la regeneración sigue siendo idempotente. */
 /* Los dos botones de copiar de la fila: el del precio copia el número; el
    de la última columna, la fila tal como se ve. app.js hace el trabajo. */
-const ICONO_COPIAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+const ICONO_COPIAR = USO_COPIAR;
 function botonCopiarPrecio(it) {
   return ` <button class="btn-copiar btn-copiar-precio" type="button" data-copiar-monto="${esc(it.codigo)}" aria-label="Copiar el precio de ${esc(it.nombre)}" title="Copiar el precio">${ICONO_COPIAR}</button>`;
 }
@@ -481,6 +481,7 @@ ${JSON.stringify(jsonld, null, 2)}
 </script>
 </head>
 <body data-cat="${cat.codigo}">
+${SPRITE}
 
 ${header('catalogo')}
 
@@ -498,7 +499,7 @@ ${FOOTER}
 
 ${COTIZACION}
 
-<script src="assets/js/datos-catalogo.js"></script>
+<script src="assets/js/catalogo.js"></script>
 <script src="assets/js/datos-proveedores.js"></script>
 <script src="assets/js/precios.js"></script>
 <script src="assets/js/cotizaciones.js"></script>
