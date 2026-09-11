@@ -234,40 +234,53 @@ table{border-collapse:collapse;width:100%}
 .tools{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.6rem 0 .65rem}
 .tools-row{display:flex;gap:.5rem .6rem;align-items:center;flex-wrap:wrap}
 .search-box{position:relative;flex:1 1 320px;min-width:0}
-.search-box input{width:100%;padding:.42rem .9rem .42rem 2.4rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint)}
+/* Al 70 % del cuerpo del texto: el buscador es una herramienta, no un
+   titular, y a tamaño completo se comía la fila. */
+.search-box input{width:100%;padding:.42rem .9rem .42rem 2.4rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.72rem}
 .search-box input:focus{background:#fff;border-color:var(--verde-200)}
 .search-box svg{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-mute);pointer-events:none}
 .select{padding:.42rem .7rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.9rem;max-width:100%}
 .select:focus{background:#fff}
 
-.filtros{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem;align-items:center}
-.chip{
-  border:1px solid var(--line);background:#fff;border-radius:100px;
-  padding:.24rem .75rem;font-size:.84rem;cursor:pointer;color:var(--ink-soft);
-  transition:border-color .2s var(--ease),background .2s var(--ease),color .2s var(--ease);
-}
-.chip:hover{border-color:var(--verde-200);color:var(--verde)}
-.chip[aria-pressed="true"]{background:var(--verde);border-color:var(--verde);color:#fff}
-.chip-group-label{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin-right:.2rem}
-.chip[hidden]{display:none}
+.filtros{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem;align-items:center;position:relative}
+.filtros-menus{gap:.5rem}
+.filtros-menus .select{flex:0 1 15rem;min-width:9rem}
 
-/* Botón del resto de etapas y su menú desplegable. */
-.filtros{position:relative}
-.chip-mas{font-variant-numeric:tabular-nums;font-weight:600;color:var(--verde);border-color:var(--verde-200)}
-.chip-mas[aria-expanded="true"]{background:var(--verde);border-color:var(--verde);color:#fff}
-.chip-menu{
-  position:absolute;top:calc(100% + .4rem);right:0;z-index:45;
-  display:flex;flex-wrap:wrap;gap:.5rem;
-  max-width:min(30rem,calc(100vw - 3rem));
-  background:#fff;border:1px solid var(--line);border-radius:var(--r);
-  box-shadow:var(--shadow);padding:.75rem;
+/* Proveedor admite varios a la vez, y para eso no sirve un <select>: es un
+   botón con la misma piel que los otros dos y una lista de casillas debajo. */
+.menu-multi{position:relative;flex:0 1 15rem;min-width:9rem}
+.select-menu{
+  width:100%;text-align:left;cursor:pointer;color:var(--ink);
+  display:flex;align-items:center;justify-content:space-between;gap:.4rem;
 }
-.chip-menu[hidden]{display:none}
+.select-menu::after{content:"";border:.3rem solid transparent;border-top-color:var(--ink-mute);margin-top:.28rem;flex:none}
+.select-menu[aria-pressed="true"]{border-color:var(--verde-200);color:var(--verde);font-weight:500}
+.menu-multi-lista{
+  position:absolute;top:calc(100% + .35rem);left:0;z-index:45;
+  min-width:100%;max-width:min(22rem,calc(100vw - 3rem));
+  max-height:min(22rem,60vh);overflow-y:auto;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:.4rem;
+}
+.menu-multi-lista[hidden]{display:none}
+.menu-op{
+  display:flex;align-items:center;gap:.5rem;padding:.3rem .5rem;border-radius:var(--r-sm);
+  font-size:.86rem;color:var(--ink-soft);cursor:pointer;white-space:nowrap;
+}
+.menu-op:hover{background:var(--bg-tint);color:var(--verde)}
+.menu-op input{width:15px;height:15px;accent-color:var(--verde);flex:none}
+.menu-limpiar{
+  display:block;width:100%;margin-top:.3rem;padding:.35rem .5rem;
+  border:0;border-top:1px solid var(--line);background:none;
+  font-size:.82rem;color:var(--verde);cursor:pointer;text-align:left;
+}
+.menu-limpiar:hover{text-decoration:underline}
 
 .toggle-itbis{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--ink-soft);cursor:pointer;white-space:nowrap}
 .toggle-itbis input{width:16px;height:16px;accent-color:var(--verde)}
 .rango-precio{display:inline-flex;align-items:center;gap:.3rem;color:var(--ink-mute);font-size:.88rem}
-.rango-precio input{width:6.4rem;padding:.42rem .55rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.9rem;-moz-appearance:textfield}
+/* Mismo criterio que el buscador: al 70 % de lo que medían. */
+.rango-precio input{width:5.2rem;padding:.42rem .55rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-tint);font-size:.63rem;-moz-appearance:textfield}
 .rango-precio input::-webkit-outer-spin-button,.rango-precio input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .rango-precio input:focus{background:#fff;border-color:var(--verde-200)}
 
@@ -650,18 +663,6 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .portada-id{flex:1 1 26rem;min-width:0}
 .portada-titulo{font-size:clamp(1.3rem,2.6vw,2.3rem);line-height:1.05}
 
-/* line-height en rem (no unitario) para que el rótulo, que va a menor
-   tamaño, no engorde el renglón. */
-.portada-meta{margin:.15rem 0 0;font-size:.88rem;line-height:1.2rem;color:var(--ink-soft)}
-.portada-meta .stat-num{font-family:Jost,sans-serif;font-weight:600;color:var(--verde);font-variant-numeric:tabular-nums}
-.portada-meta a{color:inherit}
-/* Hace el trabajo del .eyebrow sin gastar un renglón propio. */
-.portada-tag{
-  font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--verde);
-  margin-right:.55rem;
-}
-
 /* El descargo completo, como segunda columna. Crece algo más que la
    columna de identidad para que la frase de la cotización formal quepa
    en dos renglones y el aviso siga sin aportar altura. */
@@ -678,17 +679,12 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 @media (max-width:560px){
   .portada{padding-bottom:.4rem}
   .portada-fila{gap:.4rem}
-  .portada-meta{margin-top:.1rem;font-size:.84rem;line-height:1.1rem}
-  /* Redundantes con el h1 en pantalla estrecha: se van y liberan el
-     renglón; quedan las dos cifras. */
-  .portada-tag,.portada-desc{display:none}
   .aviso-fila{padding:0;gap:.5rem}
   .aviso-fila svg{width:15px;height:15px}
   .aviso-fila p{font-size:.8rem;line-height:1.1rem}
 }
 @media (max-width:360px){
   .portada-titulo{font-size:1.15rem}
-  .portada-meta{font-size:.76rem;line-height:1.1rem}
   .aviso-fila p{font-size:.78rem;line-height:1.1rem}
 }
 
@@ -698,23 +694,20 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    midiendo ~400px anclada bajo una cabecera de 73px. Aplica también a
    proveedores.html, el otro archivo que usa .tools.
 
-   OJO: no poner overflow en .filtros. El menú de «+N etapas»
-   (.chip-menu) es hijo posicionado en absoluto de .filtros y cualquier
-   overflow distinto de visible lo recorta; además compactarChips()
-   decide qué chips esconder comparando offsetTop, así que necesita que
-   la fila siga envolviendo.
+   OJO: no poner overflow en .filtros. La lista de proveedores
+   (.menu-multi-lista) es hija posicionada en absoluto y cualquier
+   overflow distinto de visible la recorta.
    ========================================================= */
 @media (max-width:640px){
   .tools{padding:.5rem 0 .55rem}
   .tools-row{gap:.4rem .5rem}
-  .search-box input{padding:.4rem .7rem .4rem 2.3rem}
+  .search-box input{padding:.4rem .7rem .4rem 2.3rem;font-size:.7rem}
   .select{font-size:.86rem;padding:.38rem .55rem}
-  .rango-precio input{width:5.6rem;font-size:.86rem;padding:.38rem .5rem}
+  .rango-precio input{width:4.6rem;font-size:.6rem;padding:.38rem .5rem}
   .toggle-itbis{font-size:.84rem}
   .tools-row .btn-mini{padding:.32rem .65rem;font-size:.82rem}
-  .filtros{margin-top:.45rem;gap:.35rem}
-  .chip{padding:.22rem .6rem;font-size:.8rem}
-  .chip-group-label{font-size:.72rem}
+  .filtros{margin-top:.45rem;gap:.4rem}
+  .filtros-menus .select,.menu-multi{flex:1 1 9rem}
 }
 
 /* =========================================================
@@ -957,7 +950,6 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 
 .ir-cuenta { margin: .55rem 0 0; font-size: .82rem; color: var(--ink-mute); }
 .ir-cuenta strong { color: var(--verde-800); font-variant-numeric: tabular-nums; }
-.ir-cuenta-sep { opacity: .45; margin: 0 .1rem; }
 
 /* ---------- la cuadrícula ---------- */
 

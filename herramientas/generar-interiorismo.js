@@ -123,13 +123,7 @@ ${header('interiorismo')}
   <div class="shell ir-intro">
     <div>
       <h1 class="ir-titulo">Interiorismo</h1>
-      <p class="ir-bajada">Aquí se elige mirando. ${TOTAL.toLocaleString('en-US')} acabados,
-        revestimientos, luminarias y piezas de baño de ${comercios.length} comercios dominicanos,
-        con el precio y la tienda sobre cada foto. Un clic lleva al producto en la tienda que lo vende.</p>
     </div>
-    <p class="ir-nota">La foto y el precio son del comercio que los publica.
-      Para comparar precios entre tiendas y ver la especificación,
-      <a href="./">el catálogo de precios</a> sigue siendo el sitio.</p>
   </div>
 </section>
 

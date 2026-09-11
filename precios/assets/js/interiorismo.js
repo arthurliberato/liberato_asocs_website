@@ -157,10 +157,11 @@
       c = { n: lista.length, min: v[0], max: v[v.length - 1], med: v[v.length >> 1] };
     }
     var parcial = !exactas && !cargadas(ns);
+    /* Cuántos hay, y nada más. El rango y la mediana son análisis y aquí
+       se viene a mirar: quien quiera comparar números tiene el catálogo de
+       precios y el libro de Excel. */
     cuenta.innerHTML = '<strong>' + c.n.toLocaleString('en-US') + '</strong> ' +
       (c.n === 1 ? 'artículo' : 'artículos') +
-      ' <span class="ir-cuenta-sep">·</span> de ' + money(c.min) + ' a ' + money(c.max) +
-      ' <span class="ir-cuenta-sep">·</span> mediana ' + money(c.med) +
       (parcial ? ' <span class="ir-cargando">cargando el resto…</span>' : '');
   }
 

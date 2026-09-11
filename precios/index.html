@@ -120,7 +120,6 @@
 
     <div class="portada-id">
       <h1 class="portada-titulo">Precios de construcción en RD<span class="visually-hidden"> (República Dominicana)</span></h1>
-      <p class="portada-meta"><span class="portada-tag">Base de precios</span><span class="portada-desc">Materiales y equipos de obra: </span><span class="stat-num" id="n-items">2185</span> ítems en <span class="stat-num" id="n-cats">31</span> categorías.</p>
     </div>
 
     <div class="aviso aviso-fila">
@@ -147,6 +146,7 @@
 
       <label class="visually-hidden" for="orden">Ordenar por</label>
       <select class="select" id="orden">
+        <option value="comercios">Más comercios primero</option>
         <option value="cat">Orden del catálogo</option>
         <option value="nombre">Nombre (A–Z)</option>
         <option value="precio-asc">Precio: menor a mayor</option>
@@ -180,9 +180,22 @@
          La misma base de datos, dos lentes. -->
     <div class="ambitos" id="ambito" role="group" aria-label="Para qué tipo de trabajo"></div>
 
-    <div class="filtros" id="chips-cat"></div>
-    <div class="filtros" id="chips-etapa"></div>
-    <div class="filtros" id="chips-prov"></div>
+    <!-- Categoría y etapa eligen una y son listas normales. Proveedor
+         admite varios a la vez, así que es un menú con casillas: se
+         despliega, se marcan los comercios con los que se trabaja y la
+         selección se guarda en el navegador. -->
+    <div class="filtros filtros-menus">
+      <label class="visually-hidden" for="f-cat">Categoría</label>
+      <select class="select" id="f-cat"></select>
+
+      <label class="visually-hidden" for="f-etapa">Etapa</label>
+      <select class="select" id="f-etapa"></select>
+
+      <div class="menu-multi" id="menu-prov">
+        <button class="select select-menu" type="button" id="f-prov" aria-expanded="false" aria-controls="menu-prov-lista">Todos los proveedores</button>
+        <div class="menu-multi-lista" id="menu-prov-lista" role="group" aria-label="Proveedores" hidden></div>
+      </div>
+    </div>
   </div>
 </div>
 

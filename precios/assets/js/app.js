@@ -351,107 +351,6 @@
 
 
   /* =========================================================
-     FILA DE FILTROS EN UNA SOLA LÍNEA
-     Se muestran las etapas que caben y el resto pasa a un menú
-     desplegable, para que la barra no ocupe media pantalla.
-     ========================================================= */
-
-  function cerrarMenuChips() {
-    $$('.chip-menu').forEach(function (m) { m.hidden = true; });
-    $$('.chip-mas').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
-  }
-
-  function compactarChips(cont) {
-    if (!cont) return;
-    var mas = $('.chip-mas', cont);
-    var menu = $('.chip-menu', cont);
-    if (!mas || !menu) return;
-
-    /* El menú es hijo del contenedor y sus opciones también son .chip, así
-       que solo cuentan los hijos directos de la fila. */
-    var chips = $$(':scope > .chip:not(.chip-mas)', cont);
-    if (!chips.length) return;
-    /* La fila puede ser de categorías, de etapas o de proveedores: el menú
-       repite el mismo atributo que llevan sus chips. */
-    var attr = ['data-cat', 'data-etapa', 'data-prov-chip'].filter(function (n) { return chips[0].hasAttribute(n); })[0] || 'data-etapa';
-
-    chips.forEach(function (c) { c.hidden = false; });
-    mas.hidden = false;
-    mas.textContent = '+0';
-
-    var base = cont.firstElementChild.offsetTop;
-    var ocultos = [];
-
-    /* Se ocultan desde el final hasta que el botón del menú vuelva a la
-       primera línea. El filtro activo nunca se oculta: si está aplicado,
-       tiene que verse. */
-    for (var i = chips.length - 1; i >= 0; i--) {
-      if (mas.offsetTop <= base + 2) break;
-      if (chips[i].getAttribute('aria-pressed') === 'true') continue;
-      chips[i].hidden = true;
-      ocultos.unshift(chips[i]);
-      mas.textContent = '+' + ocultos.length;
-    }
-
-    if (!ocultos.length) {
-      mas.hidden = true;
-      menu.hidden = true;
-      menu.innerHTML = '';
-      return;
-    }
-
-    mas.textContent = '+' + ocultos.length;
-    mas.setAttribute('aria-label', ocultos.length + ' más');
-    mas.title = ocultos.map(function (c) { return c.textContent; }).join(' · ');
-    menu.innerHTML = ocultos.map(function (c) {
-      return '<button class="chip" type="button" ' + attr + '="' + esc(c.getAttribute(attr)) +
-        '" aria-pressed="' + c.getAttribute('aria-pressed') + '">' + esc(c.textContent) + '</button>';
-    }).join('');
-  }
-
-  document.addEventListener('click', function (e) {
-    var mas = e.target.closest('.chip-mas');
-    if (mas) {
-      var menu = $('.chip-menu', mas.parentNode);
-      var abierto = mas.getAttribute('aria-expanded') === 'true';
-      cerrarMenuChips();
-      if (!abierto && menu) {
-        menu.hidden = false;
-        mas.setAttribute('aria-expanded', 'true');
-      }
-      return;
-    }
-    if (!e.target.closest('.chip-menu')) cerrarMenuChips();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') cerrarMenuChips();
-  });
-
-  function recompactarTodo() {
-    $$('.filtros').forEach(function (f) {
-      if ($('.chip-mas', f)) compactarChips(f);
-    });
-  }
-
-  (function recompactar() {
-    var t;
-    window.addEventListener('resize', function () {
-      window.clearTimeout(t);
-      t = window.setTimeout(recompactarTodo, 150);
-    });
-
-    /* Las tipografías cargan de forma asíncrona y cambian el ancho de los
-       chips: hay que volver a medir cuando estén listas, o el cálculo se
-       hace sobre la fuente de reserva y sobran o faltan chips. */
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(recompactarTodo);
-    } else {
-      window.addEventListener('load', recompactarTodo);
-    }
-  })();
-
-  /* =========================================================
      MIS PROVEEDORES
      Un visitante que ya trabaja con ciertos proveedores puede
      seleccionarlos y ver los precios calculados solo con sus
@@ -708,6 +607,7 @@
 
     pintarBarraFiltro();
     pintarPanelProveedores();
+    sincronizarMenuProv();
     pintarCotizacion();
   }
 
@@ -831,14 +731,30 @@
     $$('[data-abrir-proveedores] .prov-cuenta').forEach(function (el) {
       el.textContent = misProveedores.length ? '(' + misProveedores.length + ')' : '';
     });
-    $$('[data-prov-chip]').forEach(function (c) {
-      c.setAttribute('aria-pressed', misProveedores.indexOf(c.getAttribute('data-prov-chip')) !== -1 ? 'true' : 'false');
+  }
+
+  /* El menú de proveedores de la portada. Va aparte del panel porque la
+     selección se puede cambiar desde los dos sitios y la portada no monta
+     el panel: las casillas y el rótulo del botón tienen que ponerse al día
+     igual, venga el cambio de donde venga. */
+  function sincronizarMenuProv() {
+    $$('input[data-prov-chip]').forEach(function (c) {
+      c.checked = misProveedores.indexOf(c.getAttribute('data-prov-chip')) !== -1;
     });
+    var bot = $('#f-prov');
+    if (!bot) return;
+    var n = misProveedores.length;
+    bot.textContent = n === 0 ? 'Todos los proveedores'
+      : n === 1 ? nombreTag(misProveedores[0])
+      : n + ' proveedores';
+    bot.setAttribute('aria-pressed', n ? 'true' : 'false');
   }
 
   /* Botón para abrir el panel, junto al interruptor de ITBIS. */
   function montarBotonProveedores() {
-    if ($('#chips-prov')) return;
+    /* En la portada el filtro de proveedor ya está en la fila de menús;
+       un segundo botón para lo mismo sobra. */
+    if ($('#menu-prov')) return;
     var filas = $$('.tools-row');
     if (!filas.length) return;
     var destino = filas[filas.length - 1];
@@ -1236,7 +1152,10 @@
     estado.etapa = params.get('etapa') || '';
     estado.min = numero(params.get('min'));
     estado.max = numero(params.get('max'));
-    estado.orden = params.get('orden') || 'cat';
+    /* Por defecto manda cuántos comercios cotizan el ítem: un precio que
+       tres ferreterías publican dice más que uno que publica una sola, y
+       arriba tiene que estar lo comparable. */
+    estado.orden = params.get('orden') || 'comercios';
 
     /* --- chips: categoría, etapa y proveedor. Categoría y etapa eligen una;
        proveedor admite varios, y su selección se guarda en el navegador. --- */
@@ -1276,38 +1195,84 @@
       }).join('');
     }
 
-    var chipsCat = $('#chips-cat');
+    /* --- categoría y etapa: una lista cada una ---
+       Cada opción lleva cuántos ítems tiene, que es lo único que se
+       perdía al pasar de la muralla de chips a un desplegable: de un
+       vistazo ya no se ve dónde hay catálogo y dónde casi nada. */
+    var selCat = $('#f-cat'), selEtapa = $('#f-etapa');
+
+    function cuenta(prueba) {
+      var n = 0;
+      CAT.items.forEach(function (i) { if (prueba(i)) n += 1; });
+      return n;
+    }
+
     /* Se pinta en función y no en línea porque hay que repintarla cuando
        cambia el ámbito: las categorías ofrecidas son las de ese público. */
-    function pintarChipsCat() {
-      if (!chipsCat) return;
-      chipsCat.innerHTML = '<span class="chip-group-label">Categoría</span>' +
-        CAT.categorias.filter(function (c) { return catEnAmbito(c.codigo, estado.ambito); }).map(function (c) {
-          return '<button class="chip" type="button" data-cat="' + esc(c.codigo) + '" aria-pressed="' +
-            (estado.cat === c.codigo ? 'true' : 'false') + '">' + esc(c.nombre) + '</button>';
-        }).join('') +
-        '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-cat-menu" hidden></button>' +
-        '<div class="chip-menu" id="chips-cat-menu" hidden></div>';
-    }
-    pintarChipsCat();
-    pintarAmbitos();
-    var chipsEtapa = $('#chips-etapa');
-    if (chipsEtapa) {
-      chipsEtapa.innerHTML = '<span class="chip-group-label">Etapa</span>' +
-        CAT.etapas.map(function (e) {
-          return '<button class="chip" type="button" data-etapa="' + esc(e.codigo) + '" aria-pressed="false">' + esc(e.nombre) + '</button>';
-        }).join('') +
-        '<button class="chip chip-mas" type="button" aria-expanded="false" aria-controls="chips-etapa-menu" hidden></button>' +
-        '<div class="chip-menu" id="chips-etapa-menu" hidden></div>';
-    }
-    var chipsProv = $('#chips-prov');
-    if (chipsProv) {
-      chipsProv.innerHTML = '<span class="chip-group-label">Proveedor</span>' +
-        PROV.lista.filter(function (p) { return !p.demo; }).map(function (p) {
-          var activo = misProveedores.indexOf(p.nombre) !== -1;
-          return '<button class="chip" type="button" data-prov-chip="' + esc(p.nombre) + '" aria-pressed="' + (activo ? 'true' : 'false') + '" title="' + esc(p.nombre) + '">' + esc(nombreTag(p.nombre)) + '</button>';
+    function pintarSelCat() {
+      if (!selCat) return;
+      var suyas = CAT.categorias.filter(function (c) { return catEnAmbito(c.codigo, estado.ambito); });
+      selCat.innerHTML = '<option value="">Todas las categorías</option>' +
+        suyas.map(function (c) {
+          var n = cuenta(function (i) { return i.cat === c.codigo && itemEnAmbito(i, estado.ambito); });
+          return '<option value="' + esc(c.codigo) + '">' + esc(c.nombre) + ' (' + n + ')</option>';
         }).join('');
+      selCat.value = estado.cat;
     }
+
+    function pintarSelEtapa() {
+      if (!selEtapa) return;
+      selEtapa.innerHTML = '<option value="">Todas las etapas</option>' +
+        CAT.etapas.map(function (e) {
+          var n = cuenta(function (i) { return i.etapa === e.codigo && itemEnAmbito(i, estado.ambito); });
+          return '<option value="' + esc(e.codigo) + '"' + (n ? '' : ' disabled') + '>' +
+            esc(e.nombre) + ' (' + n + ')</option>';
+        }).join('');
+      selEtapa.value = estado.etapa;
+    }
+
+    pintarSelCat();
+    pintarSelEtapa();
+    pintarAmbitos();
+
+    /* --- proveedor: varios a la vez, así que casillas ---
+       Un desplegable normal solo deja elegir uno, y aquí el visitante
+       marca los comercios con los que ya trabaja. El botón dice cuántos
+       lleva; la lista se guarda en el navegador. */
+    var botProv = $('#f-prov'), listaProv = $('#menu-prov-lista');
+
+    function pintarMenuProv() {
+      if (!listaProv) return;
+      listaProv.innerHTML = PROV.lista.filter(function (p) { return !p.demo; }).map(function (p) {
+        var activo = misProveedores.indexOf(p.nombre) !== -1;
+        return '<label class="menu-op"><input type="checkbox" data-prov-chip="' + esc(p.nombre) + '"' +
+          (activo ? ' checked' : '') + '> <span>' + esc(p.nombre) + '</span></label>';
+      }).join('') +
+      '<button class="menu-limpiar" type="button" id="f-prov-todos">Todos los proveedores</button>';
+      sincronizarMenuProv();
+    }
+
+    function abrirMenuProv(abrir) {
+      if (!listaProv || !botProv) return;
+      listaProv.hidden = !abrir;
+      botProv.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+    }
+
+    pintarMenuProv();
+
+    if (botProv) botProv.addEventListener('click', function () {
+      abrirMenuProv(listaProv.hidden);
+    });
+    if (listaProv) listaProv.addEventListener('change', function (e) {
+      var ch = e.target.closest('input[data-prov-chip]');
+      if (ch) alternarProveedor(ch.getAttribute('data-prov-chip'));
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#menu-prov')) abrirMenuProv(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') abrirMenuProv(false);
+    });
 
     if (input) input.value = estado.q;
     if (selOrden) selOrden.value = estado.orden;
@@ -1356,14 +1321,21 @@
     function ordenar(lista) {
       var copia = lista.slice();
       var q = normaliza(estado.q).split(/\s+/).filter(Boolean);
-      if (q.length && estado.orden === 'cat') {
+      /* Con búsqueda escrita manda la relevancia, sea cual sea el orden
+         por defecto: quien escribe «varilla» quiere varillas primero. */
+      if (q.length && (estado.orden === 'cat' || estado.orden === 'comercios')) {
         copia.sort(function (a, b) {
           var d = relevancia(b, q) - relevancia(a, q);
           return d !== 0 ? d : cmpCatalogo(a, b);
         });
         return copia;
       }
-      if (estado.orden === 'nombre') {
+      if (estado.orden === 'comercios') {
+        copia.sort(function (a, b) {
+          var d = cotizacionesPorProveedor(b).length - cotizacionesPorProveedor(a).length;
+          return d !== 0 ? d : cmpCatalogo(a, b);
+        });
+      } else if (estado.orden === 'nombre') {
         copia.sort(function (a, b) { return a.nombre.localeCompare(b.nombre, 'es'); });
       } else if (estado.orden === 'precio-asc' || estado.orden === 'precio-desc') {
         var signo = estado.orden === 'precio-asc' ? 1 : -1;
@@ -1446,8 +1418,8 @@
       if (input) input.value = '';
       if (inMin) inMin.value = '';
       if (inMax) inMax.value = '';
-      $$('[data-etapa],[data-cat]').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-      recompactarTodo();
+      if (selCat) selCat.value = '';
+      if (selEtapa) selEtapa.value = '';
       if (misProveedores.length) { misProveedores = []; aplicarFiltroProveedores(); }
       else pintar();
     }
@@ -1466,7 +1438,7 @@
       if (estado.etapa) p.set('etapa', estado.etapa);
       if (estado.min !== '') p.set('min', estado.min);
       if (estado.max !== '') p.set('max', estado.max);
-      if (estado.orden !== 'cat') p.set('orden', estado.orden);
+      if (estado.orden !== 'comercios') p.set('orden', estado.orden);
       var qs = p.toString();
       window.history.replaceState(null, '', './' + (qs ? '?' + qs : '') + window.location.hash);
     }
@@ -1494,9 +1466,26 @@
       pintarCotizacion();
     });
 
+    if (selCat) selCat.addEventListener('change', function () {
+      estado.cat = selCat.value;
+      estado.grupo = '';
+      estado.tope = PAGINA;
+      pintar();
+    });
+    if (selEtapa) selEtapa.addEventListener('change', function () {
+      estado.etapa = selEtapa.value;
+      estado.tope = PAGINA;
+      pintar();
+    });
+
     document.addEventListener('click', function (e) {
-      var provChip = e.target.closest('[data-prov-chip]');
-      if (provChip) { alternarProveedor(provChip.getAttribute('data-prov-chip')); return; }
+      /* «Todos los proveedores»: suelta la selección entera de una vez, que
+         es lo que cuesta con casillas. */
+      if (e.target.closest('#f-prov-todos')) {
+        if (misProveedores.length) { misProveedores = []; aplicarFiltroProveedores(); }
+        abrirMenuProv(false);
+        return;
+      }
 
       var op = e.target.closest('[data-ambito]');
       if (op) {
@@ -1509,48 +1498,18 @@
         estado.grupo = '';
         estado.tope = PAGINA;
         pintarAmbitos();
-        pintarChipsCat();
+        /* Las cuentas de cada opción son de este ámbito, así que las dos
+           listas se rehacen, no solo la de categorías. */
+        pintarSelCat();
+        pintarSelEtapa();
         pintar();
         actualizarURL();
         return;
       }
-
-      var chip = e.target.closest('[data-etapa],[data-cat]');
-      if (chip) {
-        var esEtapa = chip.hasAttribute('data-etapa');
-        var attr = esEtapa ? 'data-etapa' : 'data-cat';
-        var valor = chip.getAttribute(attr);
-        var activo = chip.getAttribute('aria-pressed') === 'true';
-        $$('[' + attr + ']').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-        /* El mismo filtro puede estar en la fila y en el menú desplegable:
-           se marcan los dos, no solo el que se pulsó. */
-        if (!activo) {
-          $$('[' + attr + '="' + valor + '"]').forEach(function (c) { c.setAttribute('aria-pressed', 'true'); });
-        }
-        if (esEtapa) estado.etapa = activo ? '' : valor;
-        else { estado.cat = activo ? '' : valor; estado.grupo = ''; }
-        estado.tope = PAGINA;
-        cerrarMenuChips();
-        compactarChips(esEtapa ? chipsEtapa : chipsCat);
-        pintar();
-        return;
-      }
     });
-
-    /* marcar chips que vengan en la URL */
-    if (estado.etapa) {
-      var ce = $('[data-etapa="' + estado.etapa + '"]');
-      if (ce) ce.setAttribute('aria-pressed', 'true');
-    }
-    if (estado.cat) {
-      var cc = $('[data-cat="' + estado.cat + '"]');
-      if (cc) cc.setAttribute('aria-pressed', 'true');
-    }
 
     window.__pintarCatalogo = pintar;
     pintar();
-    compactarChips(chipsCat);
-    compactarChips(chipsEtapa);
   })();
 
   /* =========================================================

@@ -281,31 +281,10 @@ ${elegidas.map((c) => `      <a class="card" href="${c.slug}.html">
 function generarCategoria(cat) {
   const c = CONTENIDO[cat.codigo];
   const items = CAT.items.filter((i) => i.cat === cat.codigo);
-  /* La zona no es la misma en todas las categorías: el alquiler de
-     plataformas lo cotiza un comercio de Bávaro, no del Gran Santo Domingo.
-     Se saca de quién cotizó de verdad, no de un valor fijo. */
-  const zonasDeLaCategoria = (items) => {
-    const codigos = new Set();
-    /* c.proveedor ya es el objeto del comercio, no su nombre. */
-    items.forEach((i) => (i.cotizaciones || []).forEach((c) => {
-      const p = c.proveedor;
-      if (p && p.zonas) p.zonas.forEach((z) => codigos.add(z));
-    }));
-    if (codigos.has('nacional') || codigos.size === 0) return 'Cobertura nacional';
-    const nombre = (c) => (PROV.zonas.filter((z) => z.codigo === c)[0] || {}).nombre || c;
-    const nombres = Array.from(codigos).map(nombre).sort();
-    return nombres.length > 2
-      ? nombres.slice(0, 2).join(', ') + ' y otras zonas'
-      : nombres.join(' y ');
-  };
 
   const conPrecio = items.filter((i) => i.ref !== null);
   const url = `${SITIO}/${cat.slug}.html`;
   const grupo = grupoPorCodigo[cat.grupo];
-
-  const minimo = conPrecio.length ? Math.min.apply(null, conPrecio.map((i) => i.ref)) : null;
-  const maximo = conPrecio.length ? Math.max.apply(null, conPrecio.map((i) => i.ref)) : null;
-  const unidades = Array.from(new Set(items.map((i) => i.unidad)));
 
   const jsonld = {
     '@context': 'https://schema.org',
@@ -327,15 +306,6 @@ function generarCategoria(cat) {
     ],
   };
 
-  const resumen = conPrecio.length
-    ? `<p class="section-sub" style="margin-top:1.2rem">
-         <strong>${items.length} ${items.length === 1 ? 'ítem' : 'ítems'}</strong> en esta categoría,
-         con precios de referencia entre ${rd(minimo)} y ${rd(maximo)}
-         según el ítem y su unidad (${unidades.slice(0, 4).map(esc).join(', ')}${unidades.length > 4 ? '…' : ''}).
-         ${zonasDeLaCategoria(items)}, actualizado en septiembre de 2026.
-       </p>`
-    : `<p class="section-sub" style="margin-top:1.2rem"><strong>${items.length} ítems</strong> en esta categoría, sin monto publicado porque se liquidan según tarifario oficial.</p>`;
-
   const cuerpo = `
 <section class="section section-primera">
   <div class="shell">
@@ -352,8 +322,6 @@ function generarCategoria(cat) {
     <div class="prosa" style="max-width:74ch">
 ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
     </div>
-
-    ${resumen}
   </div>
 </section>
 
@@ -513,39 +481,6 @@ ${COTIZACION}
   return { slug: cat.slug, items: items.length, bytes: html.length };
 }
 
-/* ---------- portada: bloques estáticos e indexables ----------
-   index.html es el catálogo. Debajo de la tabla de resultados, la rejilla de
-   categorías y los precios destacados se escriben en el HTML entre marcadores,
-   para que los enlaces a las 41 páginas y los precios existan sin depender de
-   JavaScript: la tabla del catálogo se sirve vacía y la pinta app.js. */
-
-function parchearPortada() {
-  const archivo = path.join(DESTINO, 'index.html');
-  let html = fs.readFileSync(archivo, 'utf8');
-
-  /* La portada es la tabla del catálogo y nada más: la rejilla de categorías
-     y los destacados salieron de ahí, así que aquí solo quedan las cifras
-     del encabezado. */
-
-  /* Cifras del encabezado: valor real en el HTML, el JS solo lo confirma.
-     Las del directorio (proveedores, cuántos publican precios) ya no van
-     en la portada: pertenecen a proveedores.html. */
-  const cifras = {
-    'n-items': CAT.items.length,
-    'n-cats': CAT.categorias.length,
-  };
-  Object.keys(cifras).forEach((id) => {
-    const re = new RegExp('(<span class="stat-num" id="' + id + '">)[^<]*(</span>)');
-    /* String.replace no protesta cuando no encuentra nada: sin esta
-       comprobación las cifras se congelarían en silencio. */
-    if (!re.test(html)) throw new Error('No se encontró la cifra ' + id + ' en index.html');
-    html = html.replace(re, '$1' + cifras[id] + '$2');
-  });
-
-  fs.writeFileSync(archivo, html);
-  return Object.keys(cifras).length;
-}
-
 /* ---------- sitemap ---------- */
 
 function generarSitemap() {
@@ -581,5 +516,4 @@ CAT.categorias.forEach((cat) => {
 });
 
 console.log(`\n${CAT.categorias.length} páginas de categoría generadas (${(totalBytes / 1024).toFixed(0)} KB en total)`);
-console.log(`index.html: ${parchearPortada()} cifras del encabezado actualizadas`);
 console.log(`sitemap.xml regenerado con ${generarSitemap()} URLs`);
