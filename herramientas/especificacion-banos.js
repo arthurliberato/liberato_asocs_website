@@ -264,6 +264,31 @@ function ambito(texto) {
   return 'domestico';
 }
 
+/* CÓMO SE ACCIONA LA GRIFERÍA
+
+   Cada comercio lo decidía por su cuenta con la misma expresión suelta
+   —/sensor|electronic|automatic|temporizad/— y esa expresión tiene un
+   agujero: «automático» no siempre habla del grifo. Bellón vende una
+   «Llave Mezcladora Lavamanos C/Desagüe Automático» por RD$ 1,225; lo
+   automático ahí es el desagüe, y la llave entraba en «Mezcladora, de
+   baño, con sensor» como la más barata de la partida, a una quinta parte
+   de la mediana.
+
+   La palabra la tiene que reclamar el aparato, no lo que cuelgue de él;
+   así que antes de buscar los indicios se tacha el desagüe. Vive aquí, al
+   lado de ambito(), por la misma razón que ambito(): si lo decide cada
+   comercio, el mismo artículo cae en partidas distintas según quién lo
+   venda. */
+const ACCIONADO =
+  /sensor|electronic|infrarroj|automatic|temporizad|timer|pressmatic|bacteria.?free/;
+
+function activacion(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/desague\s+automatic\w*/g, ' ');
+  return ACCIONADO.test(t) ? 'sensor' : 'manual';
+}
+
 const limpia = s => String(s || '').trim();
 
 /* Construye el ítem. `medidas` trae todo lo que el comercio declaró; los
@@ -310,4 +335,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, aCm };

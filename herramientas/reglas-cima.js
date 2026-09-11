@@ -490,7 +490,7 @@ function clasificar(a) {
     }
     if (/^mezcladora|^llave|^grifo|^grifer/.test(n)) {
       const uso = /frega|lavadero|jardin|manguera|pared multiple|cocina/.test(n) ? 'fregadero' : 'bano';
-      const act = /sensor|electronic|automatic/.test(n) ? 'sensor' : 'manual';
+      const act = BANOS.activacion(n);
       return BANOS.item('mezcladora', { uso: uso, activacion: act });
     }
     MOTIVO.valor = 'pieza de grifería que la ficha no describe lo bastante';

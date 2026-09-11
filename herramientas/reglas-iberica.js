@@ -276,7 +276,7 @@ function reglaGriferia(a) {
   if (/^mezc|^grifo|^llave/.test(t)) {
     /* Ducha empotrada es otra partida que la mezcladora del lavamanos. */
     if (/ducha/.test(t)) return BANOS.item('ducha-mezcladora', {});
-    const act = /sensor|electronic|automatic|temporizad|pressmatic/.test(t) ? 'sensor' : 'manual';
+    const act = BANOS.activacion(t);
     const usoG = /cocina|frega|lavadero|lavatrapero/.test(t) ? 'fregadero' : 'bano';
     return BANOS.item('mezcladora', { uso: usoG, activacion: act });
   }

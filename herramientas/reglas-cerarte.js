@@ -289,8 +289,7 @@ function reglaLavamanos(a) {
 
 function reglaGriferia(a) {
   const t = texto(a);
-  const act = /sensor|electronic|automatic|infrarroj|bacteria-free|pressmatic|temporizad|timer/.test(t)
-    ? 'sensor' : 'manual';
+  const act = BANOS.activacion(t);
   /* La regla del catálogo: una mezcladora solo se separa por si lleva sensor
      y por si es de fregar o de baño. La marca, el acabado y el número de
      manijas son de la cotización. */

@@ -224,7 +224,7 @@ ${header('interiorismo')}
 <aside class="cot-panel" id="ir-panel" aria-hidden="true" aria-label="Mi selección de interiorismo">
   <div class="cot-head">
     <div>
-      <h2>Mi selección</h2>
+      <h2 id="ir-panel-titulo">Mi selección</h2>
       <p class="mat-sub" id="ir-sub"></p>
     </div>
     <button class="cot-close" id="ir-cerrar" type="button" aria-label="Cerrar la selección">
@@ -234,26 +234,42 @@ ${header('interiorismo')}
 
   <div class="cot-body" id="ir-lista"></div>
 
+  <!-- La misma selección, vista por comercio: a quién hay que pedirle qué.
+       Ocupa el sitio de la lista en vez de abrir otra ventana porque es la
+       misma lista contada de otra manera, no otro sitio. -->
+  <div class="cot-body" id="ir-rfq" hidden></div>
+
   <div class="cot-foot">
     <div class="cot-total">
       <span class="k">Suma de lo guardado</span>
       <span class="v" id="ir-total">RD$ 0</span>
     </div>
-    <p class="cot-nota">
+    <p class="cot-nota" id="ir-nota">
       Cada pieza lleva el precio que publica su tienda, con enlace a ella. La suma es
       orientativa: no incluye instalación, transporte ni las mermas del corte.
     </p>
-    <!-- Dos salidas y nada más. Una selección de interiorismo se cuenta por
-         decenas o por cientos, y eso no se manda por WhatsApp ni se pega en
-         un mensaje: se abre en una hoja o se imprime para enseñarlo. -->
-    <div class="cot-acciones">
-      <button class="btn btn-primary" id="ir-pdf" type="button">
+    <!-- Tres salidas. Las dos primeras se llevan la lista a otro sitio —una
+         hoja, un papel—; la tercera la devuelve al comercio, que es para lo
+         que se armó. -->
+    <div class="cot-acciones" id="ir-acciones">
+      <button class="btn btn-primary" id="ir-cotizar" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 12h5"/></svg>
+        Solicitar cotización
+      </button>
+      <button class="btn btn-ghost" id="ir-pdf" type="button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V4h12v5M6 18v2h12v-2M6 9h12a2 2 0 0 1 2 2v5H4v-5a2 2 0 0 1 2-2z"/></svg>
         Exportar a PDF
       </button>
       <button class="btn btn-ghost" id="ir-excel" type="button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
         Exportar a Excel
+      </button>
+    </div>
+    <!-- Solo aparece dentro de la vista por comercio. -->
+    <div class="cot-acciones" id="ir-rfq-acciones" hidden>
+      <button class="btn btn-ghost" id="ir-volver" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        Volver a la lista
       </button>
     </div>
   </div>

@@ -22159,6 +22159,13 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Lavamanos S/Desague TW (P101)ZBW-107402 · artículo 38962. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-014', PROV_BELLON, 1225, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Llave Mezcladora Lavamanos C/Desagüe Automático TW ZBW-103402',
+    sku: '42574',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Llave Mezcladora Lavamanos C/Desagüe Automático TW ZBW-103402 · artículo 42574. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-014', PROV_BELLON, 3687, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Lavamanos Con Desagüe Sayco 402',
@@ -23270,29 +23277,6 @@
     sku: '005994',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-tektronic-lavamanos-con-sensor-a-pilas/',
     nota: 'Mezcladora Tektronic Lavamanos con sensor a Pilas · artículo 005994. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-015', PROV_FERREMIX, 2339, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-solenoide-para-mezcladora-de-sensor-foster',
-    art: 'Válula solenoide para mezcladora de sen..',
-    sku: 'T45351',
-    marca: 'Foset',
-    url: 'https://ferremix.com.do/products/valvula-solenoide-para-mezcladora-de-sensor-foster',
-    nota: 'Válula solenoide para mezcladora de sen.. · artículo T45351 · marca Foset. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-015', PROV_FERREMIX, 740, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/porta-baterias-para-mezcladora-de-sensor',
-    art: 'Porta baterías ara mezcladora de sensor foset..',
-    sku: 'T45350',
-    marca: 'Foset',
-    url: 'https://ferremix.com.do/products/porta-baterias-para-mezcladora-de-sensor',
-    nota: 'Porta baterías ara mezcladora de sensor foset.. · artículo T45350 · marca Foset. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-015', PROV_BELLON, 1225, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Llave Mezcladora Lavamanos C/Desagüe Automático TW ZBW-103402',
-    sku: '42574',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Llave Mezcladora Lavamanos C/Desagüe Automático TW ZBW-103402 · artículo 42574. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_CIMA, 1556, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tipo-sayc',

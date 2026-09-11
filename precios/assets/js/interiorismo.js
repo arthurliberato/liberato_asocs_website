@@ -322,7 +322,31 @@
     var k = claveDe(v), i = -1;
     for (var n = 0; n < seleccion.length; n++) if (claveDe(seleccion[n]) === k) { i = n; break; }
     if (i >= 0) seleccion.splice(i, 1);
-    else seleccion.push({ n: v.n, img: v.img, p: v.p, c: v.c, u: v.u, k: v.k, s: v.s });
+    else seleccion.push({ n: v.n, img: v.img, p: v.p, c: v.c, u: v.u, k: v.k, s: v.s, q: 1 });
+    guardarSeleccion();
+    pintarSeleccion();
+  }
+
+  /* CUÁNTAS
+
+     Una pieza guardada casi nunca es una pieza comprada: son doce metros de
+     porcelanato, seis luminarias iguales, tres rollos de papel. Sin la
+     cantidad la suma del panel no es un presupuesto de nada, y el comercio
+     que recibe la solicitud no sabe qué cotizar.
+
+     Va a 1 por defecto para no obligar a teclear cuando de verdad es una.
+     Las listas viejas no la traen —se guardaron antes de que existiera—,
+     así que se lee con el 1 de respaldo en vez de migrarlas. */
+  function cant(v) {
+    var q = parseFloat(v && v.q);
+    return q > 0 ? q : 1;
+  }
+  function importe(v) { return (v.p || 0) * cant(v); }
+
+  function fijarCantidad(i, q) {
+    if (!seleccion[i]) return;
+    q = parseFloat(q);
+    seleccion[i].q = q > 0 ? q : 1;
     guardarSeleccion();
     pintarSeleccion();
   }
@@ -373,7 +397,11 @@
                     '<small>' + esc(corto(v.c)) + (man && man.sub && man.sub[v.s] ? ' · ' + esc(man.sub[v.s]) : '') + '</small>' +
                   '</div>' +
                   '<div class="ir-sel-der">' +
-                    '<span class="ir-sel-p">' + money(v.p) + '</span>' +
+                    '<input class="ir-cant" type="number" min="1" step="1" inputmode="numeric" ' +
+                      'value="' + cant(v) + '" data-cant="' + f.i + '" ' +
+                      'aria-label="Cantidad de ' + esc(v.n) + '">' +
+                    '<span class="ir-sel-p">' + money(importe(v)) +
+                      (cant(v) > 1 ? '<small>' + money(v.p) + ' c/u</small>' : '') + '</span>' +
                     '<button class="cot-quitar" type="button" data-quitar="' + f.i + '" aria-label="Quitar ' + esc(v.n) + '">' +
                       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M9 7V5h6v2M7 7l1 12h8l1-12"/></svg>' +
                     '</button>' +
@@ -384,12 +412,14 @@
       }).join('');
     }
 
-    var suma = 0;
-    seleccion.forEach(function (v) { suma += v.p || 0; });
-    if (total) total.textContent = money(suma);
+    if (total) total.textContent = money(sumaTotal());
+    var uds = 0;
+    seleccion.forEach(function (v) { uds += cant(v); });
     if (sub) sub.textContent = seleccion.length
-      ? seleccion.length + (seleccion.length === 1 ? ' pieza guardada' : ' piezas guardadas')
+      ? seleccion.length + (seleccion.length === 1 ? ' pieza guardada' : ' piezas guardadas') +
+        (uds !== seleccion.length ? ' · ' + uds + ' unidades' : '')
       : '';
+    if (enRFQ) pintarRFQ();
     refrescarBotones();
   }
 
@@ -412,14 +442,278 @@
     });
     return orden.map(function (k) {
       var suma = 0;
-      grupos[k].forEach(function (f) { suma += f.v.p || 0; });
+      grupos[k].forEach(function (f) { suma += importe(f.v); });
       return { cat: k, nombre: (CATS[k] && CATS[k].n) || 'Otros', filas: grupos[k], suma: suma };
     });
   }
 
+
+  /* =========================================================
+     SOLICITAR COTIZACIÓN
+
+     La lista se arma mirando fotos, que es una sola actividad; pedirla es
+     otra, y sobre todo se hace por partes. Doce piezas guardadas pueden
+     ser cuatro tiendas, y ninguna de las cuatro quiere una lista con lo
+     que venden las otras tres. Así que la misma selección se da la vuelta:
+     de agrupada por categoría —como se mira— a agrupada por comercio
+     —como se pide—, y cada comercio recibe solo lo suyo.
+
+     Quien pide se identifica una vez. Un comercio dominicano que recibe
+     una solicitud sin nombre ni RNC no sabe si cotiza al detalle o de
+     obra, y son precios distintos; el RNC es justamente lo que le dice
+     que hay una empresa detrás. Va opcional —hay quien construye su casa
+     sin RNC— y se guarda en el navegador para no volver a escribirlo.
+
+     No se manda nada desde aquí: no hay servidor y no lo va a haber por
+     esto. Se prepara el texto y se abre el canal del comercio —su correo,
+     su WhatsApp— con el texto dentro; mandar lo manda la persona, desde
+     su propia cuenta, que además es como el comercio puede contestarle.
+     ========================================================= */
+
+  var LS_QUIEN = 'ilya_solicitante_v1';
+  var quien = { nombre: '', rnc: '', email: '', tel: '', obra: '' };
+  var enRFQ = false;
+
+  function leerQuien() {
+    try {
+      var t = JSON.parse(localStorage.getItem(LS_QUIEN) || '{}');
+      if (t && typeof t === 'object') {
+        ['nombre', 'rnc', 'email', 'tel', 'obra'].forEach(function (k) {
+          if (typeof t[k] === 'string') quien[k] = t[k];
+        });
+      }
+    } catch (e) { /* modo privado */ }
+  }
+  function guardarQuien() {
+    try { localStorage.setItem(LS_QUIEN, JSON.stringify(quien)); } catch (e) { /* modo privado */ }
+  }
+
+  /* La misma selección, agrupada por comercio. El orden es por importe: la
+     tienda a la que más se le va a pedir, primero. */
+  function porComercio() {
+    var g = {}, orden = [];
+    seleccion.forEach(function (v, i) {
+      var k = v.c || 'Sin comercio';
+      if (!g[k]) { g[k] = []; orden.push(k); }
+      g[k].push({ v: v, i: i });
+    });
+    return orden.map(function (k) {
+      var suma = 0, uds = 0;
+      g[k].forEach(function (f) { suma += importe(f.v); uds += cant(f.v); });
+      return { com: k, filas: g[k], suma: suma, uds: uds, contacto: contactoDe(k) };
+    }).sort(function (a, b) { return b.suma - a.suma; });
+  }
+
+  function contactoDe(nombre) {
+    if (!man || !man.contacto || !man.com) return {};
+    var i = man.com.indexOf(nombre);
+    return (i >= 0 && man.contacto[i]) || {};
+  }
+
+  /* El texto que recibe el comercio. Va en plano y no en HTML porque tiene
+     que entrar igual en un correo, en un WhatsApp y en un pegado a mano. */
+  function textoRFQ(g) {
+    var l = [];
+    l.push('Solicitud de cotización');
+    l.push('');
+    l.push('Buen día. Les escribo para pedirles cotización de los siguientes');
+    l.push('artículos de su catálogo:');
+    l.push('');
+    g.filas.forEach(function (f, n) {
+      var v = f.v;
+      l.push((n + 1) + '. ' + v.n);
+      l.push('   Cantidad: ' + cant(v));
+      if (v.u) l.push('   ' + v.u);
+    });
+    l.push('');
+    l.push('Agradezco me confirmen precio unitario, disponibilidad, tiempo de');
+    l.push('entrega y si el precio incluye ITBIS.');
+    l.push('');
+    var firma = [];
+    if (quien.nombre) firma.push(quien.nombre);
+    if (quien.rnc) firma.push('RNC ' + quien.rnc);
+    if (quien.obra) firma.push('Obra: ' + quien.obra);
+    if (quien.email) firma.push(quien.email);
+    if (quien.tel) firma.push('Tel. ' + quien.tel);
+    if (firma.length) { l.push('—'); firma.forEach(function (x) { l.push(x); }); }
+    return l.join('\n');
+  }
+
+  function asuntoRFQ() {
+    return 'Solicitud de cotización' + (quien.obra ? ' · ' + quien.obra : '');
+  }
+
+  var CAMPOS = [
+    { k: 'nombre', t: 'Nombre o empresa', ph: 'Ings. Liberato & Asociados', tipo: 'text', an: 'organization' },
+    { k: 'rnc', t: 'RNC', ph: '1-01-12345-6', tipo: 'text', an: 'off', op: true },
+    { k: 'email', t: 'Correo', ph: 'compras@ejemplo.com', tipo: 'email', an: 'email' },
+    { k: 'tel', t: 'Teléfono', ph: '809-000-0000', tipo: 'tel', an: 'tel', op: true },
+    { k: 'obra', t: 'Obra o proyecto', ph: 'Residencial Los Cerros, apto. 3B', tipo: 'text', an: 'off', op: true }
+  ];
+
+  function pintarRFQ() {
+    var caja = $('ir-rfq');
+    if (!caja) return;
+
+    if (!seleccion.length) {
+      caja.innerHTML = '<p class="cot-vacio">No hay nada que cotizar todavía.</p>';
+      return;
+    }
+
+    var grupos = porComercio();
+
+    var form = '<div class="ir-quien">' +
+      '<h3>Quién pide</h3>' +
+      '<p class="ir-quien-n">Va al pie de cada solicitud. Se guarda en este navegador; ' +
+      'no sale de aquí hasta que usted mande el mensaje.</p>' +
+      '<div class="ir-quien-campos">' +
+      CAMPOS.map(function (c) {
+        return '<label class="ir-campo' + (c.k === 'obra' ? ' ir-campo-ancho' : '') + '">' +
+            '<span>' + esc(c.t) + (c.op ? ' <i>opcional</i>' : '') + '</span>' +
+            '<input type="' + c.tipo + '" data-quien="' + c.k + '" autocomplete="' + c.an + '" ' +
+              'placeholder="' + esc(c.ph) + '" value="' + esc(quien[c.k] || '') + '">' +
+          '</label>';
+      }).join('') +
+      '</div></div>';
+
+    var cartas = grupos.map(function (g, gi) {
+      var c = g.contacto, canales = [];
+
+      if (c.email) {
+        canales.push('<a class="btn btn-primary" href="mailto:' + esc(c.email) +
+          '?subject=' + encodeURIComponent(asuntoRFQ()) +
+          '&body=' + encodeURIComponent(textoRFQ(g)) + '">' + ICONO_CORREO + 'Correo</a>');
+      }
+      if (c.wa) {
+        canales.push('<a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/' +
+          esc(String(c.wa).replace(/\D/g, '')) + '?text=' + encodeURIComponent(textoRFQ(g)) +
+          '">' + ICONO_WA + 'WhatsApp</a>');
+      }
+      canales.push('<button class="btn btn-ghost" type="button" data-copiar="' + gi + '">' +
+        ICONO_COPIAR + 'Copiar la solicitud</button>');
+      if (c.web) {
+        canales.push('<a class="btn btn-ghost" target="_blank" rel="noopener nofollow" href="https://' +
+          esc(c.web) + '">' + ICONO_WEB + esc(c.web) + '</a>');
+      }
+
+      return '<div class="ir-carta">' +
+          '<div class="ir-carta-cab">' +
+            '<span class="ir-carta-com">' + esc(corto(g.com)) + '</span>' +
+            '<span class="ir-carta-cif">' + g.filas.length +
+              (g.filas.length === 1 ? ' artículo' : ' artículos') +
+              ' · ' + g.uds + (g.uds === 1 ? ' unidad' : ' unidades') +
+              ' · ' + money(g.suma) + '</span>' +
+          '</div>' +
+          '<ol class="ir-carta-lista">' +
+            g.filas.map(function (f) {
+              return '<li><span>' + esc(f.v.n) + '</span><b>' + cant(f.v) + '</b></li>';
+            }).join('') +
+          '</ol>' +
+          (c.email || c.wa ? '' :
+            '<p class="ir-carta-n">Todavía no tenemos su correo ni su WhatsApp. ' +
+            'Copie la solicitud y péguela donde la tienda atienda.</p>') +
+          '<div class="ir-carta-acc">' + canales.join('') + '</div>' +
+        '</div>';
+    }).join('');
+
+    caja.innerHTML = form +
+      '<p class="ir-rfq-tit">' + grupos.length +
+        (grupos.length === 1 ? ' comercio' : ' comercios') + ' a los que pedir</p>' +
+      cartas;
+  }
+
+  var ICONO_CORREO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>';
+  var ICONO_WA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>';
+  var ICONO_COPIAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 9h10v10H9z"/><path d="M5 15V5h10"/></svg>';
+  var ICONO_WEB = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>';
+
+  /* El texto va dentro del enlace —mailto: y wa.me lo llevan en la
+     dirección— así que cambia con cada letra que se escribe en «quién
+     pide». Repintar la vista entera en cada tecla le quitaría el foco al
+     campo, así que se reescriben solo las direcciones. */
+  function refrescarEnlaces() {
+    var caja = $('ir-rfq');
+    if (!caja || caja.hidden) return;
+    var grupos = porComercio();
+    [].forEach.call(caja.querySelectorAll('.ir-carta'), function (t, gi) {
+      var g = grupos[gi];
+      if (!g) return;
+      var texto = textoRFQ(g);
+      var m = t.querySelector('a[href^="mailto:"]');
+      if (m) {
+        m.href = 'mailto:' + g.contacto.email +
+          '?subject=' + encodeURIComponent(asuntoRFQ()) +
+          '&body=' + encodeURIComponent(texto);
+      }
+      var w = t.querySelector('a[href^="https://wa.me/"]');
+      if (w) {
+        w.href = 'https://wa.me/' + String(g.contacto.wa).replace(/\D/g, '') +
+          '?text=' + encodeURIComponent(texto);
+      }
+    });
+  }
+
+  function verRFQ(si) {
+    enRFQ = !!si;
+    var lista = $('ir-lista'), caja = $('ir-rfq'), tit = $('ir-panel-titulo'),
+        acc = $('ir-acciones'), accR = $('ir-rfq-acciones');
+    if (!caja) return;
+    if (enRFQ) pintarRFQ();
+    lista.hidden = enRFQ;
+    caja.hidden = !enRFQ;
+    if (acc) acc.hidden = enRFQ;
+    if (accR) accR.hidden = !enRFQ;
+    if (tit) tit.textContent = enRFQ ? 'Solicitar cotización' : 'Mi selección';
+    /* En la vista por comercio el pie dice otra cosa: ahí lo que importa no
+       es que la suma sea orientativa, sino que va a dejar de serlo. */
+    var nota = $('ir-nota');
+    if (nota) {
+      nota.textContent = enRFQ
+        ? 'Los precios son los que publica cada tienda hoy. La cotización que le devuelvan es la que vale.'
+        : 'Cada pieza lleva el precio que publica su tienda, con enlace a ella. La suma es ' +
+          'orientativa: no incluye instalación, transporte ni las mermas del corte.';
+    }
+    caja.scrollTop = 0;
+    if (lista) lista.scrollTop = 0;
+  }
+
+  function copiarSolicitud(gi, boton) {
+    var g = porComercio()[gi];
+    if (!g) return;
+    var t = textoRFQ(g);
+    var hecho = function () {
+      var antes = boton.innerHTML;
+      boton.innerHTML = ICONO_COPIAR + 'Copiado';
+      boton.disabled = true;
+      setTimeout(function () { boton.innerHTML = antes; boton.disabled = false; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(t).then(hecho, function () { aMano(t, hecho); });
+    } else { aMano(t, hecho); }
+  }
+
+  /* Sin permiso de portapapeles —o sin https— queda el truco de siempre. */
+  function aMano(t, hecho) {
+    var a = document.createElement('textarea');
+    a.value = t;
+    a.setAttribute('readonly', '');
+    a.style.position = 'fixed';
+    a.style.top = '-1000px';
+    document.body.appendChild(a);
+    a.select();
+    try { document.execCommand('copy'); hecho(); } catch (e) { /* nada que hacer */ }
+    document.body.removeChild(a);
+  }
+
+  function unidades() {
+    var n = 0;
+    seleccion.forEach(function (v) { n += cant(v); });
+    return n;
+  }
+
   function sumaTotal() {
     var n = 0;
-    seleccion.forEach(function (v) { n += v.p || 0; });
+    seleccion.forEach(function (v) { n += importe(v); });
     return n;
   }
 
@@ -447,7 +741,9 @@
       '<header class="imp-cab">' +
         '<h1>Mi selección</h1>' +
         '<p>Presupuesta · Ingenieros Liberato &amp; Asociados · precios.ingsliberato.com</p>' +
-        '<p>' + seleccion.length + (seleccion.length === 1 ? ' pieza' : ' piezas') + ' · ' + fechaHoy() + '</p>' +
+        '<p>' + seleccion.length + (seleccion.length === 1 ? ' pieza' : ' piezas') +
+          ' · ' + unidades() + (unidades() === 1 ? ' unidad' : ' unidades') +
+          ' · ' + fechaHoy() + '</p>' +
       '</header>' +
       grupos.map(function (g) {
         return '<section class="imp-grupo">' +
@@ -460,7 +756,9 @@
                   '<td><strong>' + esc(v.n) + '</strong><br><small>' + esc(corto(v.c)) +
                     (man && man.sub && man.sub[v.s] ? ' · ' + esc(man.sub[v.s]) : '') + '</small>' +
                     (v.u ? '<br><small class="imp-url">' + esc(v.u) + '</small>' : '') + '</td>' +
-                  '<td class="imp-p">' + money(v.p) + '</td>' +
+                  '<td class="imp-c">' + cant(v) + '</td>' +
+                  '<td class="imp-p">' + money(importe(v)) +
+                    (cant(v) > 1 ? '<br><small>' + money(v.p) + ' c/u</small>' : '') + '</td>' +
                 '</tr>';
             }).join('') +
             '</tbody></table>' +
@@ -584,22 +882,24 @@
       ['Mi selección — Presupuesta · Ingenieros Liberato & Asociados'],
       ['precios.ingsliberato.com · ' + fechaHoy()],
       [],
-      ['Categoría', 'Pieza', 'Tipo', 'Comercio', 'Precio RD$', 'Enlace']
+      ['Categoría', 'Pieza', 'Tipo', 'Comercio', 'Cantidad', 'Precio unitario RD$',
+       'Importe RD$', 'Enlace']
     ];
     porCategoria().forEach(function (g) {
       g.filas.forEach(function (f) {
         var v = f.v;
-        filas.push([g.nombre, v.n, (man && man.sub && man.sub[v.s]) || '', v.c, v.p || 0, v.u || '']);
+        filas.push([g.nombre, v.n, (man && man.sub && man.sub[v.s]) || '', v.c,
+                    cant(v), v.p || 0, importe(v), v.u || '']);
       });
-      filas.push(['', 'Subtotal ' + g.nombre, '', '', g.suma, '']);
+      filas.push(['', 'Subtotal ' + g.nombre, '', '', '', '', g.suma, '']);
       filas.push([]);
     });
-    filas.push(['', 'TOTAL', '', '', sumaTotal(), '']);
+    filas.push(['', 'TOTAL', '', '', '', '', sumaTotal(), '']);
     filas.push([]);
     filas.push(['Los precios son los que publica cada tienda en línea. No incluyen instalación, ' +
                 'transporte ni mermas, y ninguno es una cotización formal.']);
 
-    var datos = libro(filas, [26, 44, 28, 22, 13, 48], 'Mi selección');
+    var datos = libro(filas, [26, 44, 28, 22, 10, 16, 14, 48], 'Mi selección');
     var url = URL.createObjectURL(new Blob([datos],
       { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }));
     var a = document.createElement('a');
@@ -628,6 +928,7 @@
   (function montarSeleccion() {
     if (!$('ir-panel')) return;
     leerSeleccion();
+    leerQuien();
     pintarSeleccion();
 
     $('ir-fab').addEventListener('click', function () { abrirPanel(true); });
@@ -645,8 +946,38 @@
       pintarSeleccion();
     });
 
+    /* La cantidad se aplica al soltar el campo y al pulsar Intro, no en
+       cada tecla: repintar la lista entera mientras se teclea le quita el
+       foco al campo en el que se está escribiendo. */
+    $('ir-lista').addEventListener('change', function (e) {
+      var c = e.target.closest ? e.target.closest('[data-cant]') : null;
+      if (c) fijarCantidad(+c.getAttribute('data-cant'), c.value);
+    });
+    $('ir-lista').addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      var c = e.target.closest ? e.target.closest('[data-cant]') : null;
+      if (c) { e.preventDefault(); c.blur(); }
+    });
+
     $('ir-pdf').addEventListener('click', exportarPDF);
     $('ir-excel').addEventListener('click', exportarExcel);
+    $('ir-cotizar').addEventListener('click', function () { verRFQ(true); });
+    $('ir-volver').addEventListener('click', function () { verRFQ(false); });
+
+    $('ir-rfq').addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-copiar]') : null;
+      if (b) copiarSolicitud(+b.getAttribute('data-copiar'), b);
+    });
+    /* Los campos de quién pide se guardan al salir de cada uno. No se
+       repinta nada: el texto de la solicitud se arma en el momento de
+       mandarla, así que basta con tener el dato al día. */
+    $('ir-rfq').addEventListener('input', function (e) {
+      var c = e.target.closest ? e.target.closest('[data-quien]') : null;
+      if (!c) return;
+      quien[c.getAttribute('data-quien')] = c.value.trim();
+      guardarQuien();
+      refrescarEnlaces();
+    });
   }());
 
   function pintar() {

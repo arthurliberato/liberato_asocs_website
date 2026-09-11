@@ -49,10 +49,14 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 FILA_TITULOS = 2
 FUENTE = "Calibri"
 HOJAS = ["Catálogo", "Comparativo", "Artículos"]
+# El precio va pegado al ítem: E, F y G son las tres columnas de precio,
+# justo a la derecha del nombre. Si alguna se corre, la fórmula del precio
+# sin ITBIS —que las nombra por letra— traería otra cosa sin dar error.
 COLUMNAS_CATALOGO = {
-    "A": "Código", "D": "Ítem", "E": "Especificación", "F": "Unidad",
-    "G": "Etapa de obra", "K": "Precio de referencia (RD$)", "N": "Incluye ITBIS",
-    "Q": "Comercios que cotizaron",
+    "A": "Código", "D": "Ítem", "E": "Precio de referencia (RD$)",
+    "F": "Mínimo (RD$)", "G": "Máximo (RD$)", "H": "Precio sin ITBIS (RD$)",
+    "I": "Incluye ITBIS", "J": "Unidad", "L": "Comercios que cotizaron",
+    "M": "Especificación",
 }
 
 fallos = []

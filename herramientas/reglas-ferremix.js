@@ -246,12 +246,21 @@ function reglaPlomeria(a) {
 /* «Filtro HEPA para secador de manos» entraba como secador y metía un
    repuesto de 849 en una partida de 27,000. El patrón «X para <aparato>»
    es el que delata al repuesto: la pieza es la X, no el aparato. */
+/* Y el mismo patrón por el otro lado: cuando el nombre EMPIEZA por la
+   pieza, el artículo es la pieza. «Porta baterías para mezcladora de
+   sensor» y «Válvula solenoide para mezcladora de sensor» entraban como
+   mezcladoras con sensor y ponían el mínimo de esa partida en RD$ 740 y
+   RD$ 2,339, contra una mediana de casi RD$ 7,000. El catálogo de
+   Ferremix escribe mal las dos —«ara» y «Válula»—, así que la letra que
+   les falta va opcional. */
+const EMPIEZA_PIEZA = /^(?:porta ?bater[ií]as?|v[aá]l?[uv]+la|solenoide|electrov[aá]l[uv]+la)\b/;
+
 const PIEZA_SUELTA = /\bfiltro\b|\bresistencia\b|(?:^|\s)(?:motor|bomba) para |cartucho|aireador|\bpuno\b|\bpunos\b|maneral|vastago|cuello de repuesto|repuesto|pichorro|chapeton|desviador|\btapa\b|\btapon\b|asiento para inodoro|sello|empaque|arandela|kit de reparacion|salida de tina|manguera (de|para) (abasto|lavamanos|lavabo|fregadero|inodoro)|manguera flexible|manguera acero/;
 
 function reglaBano(a) {
   const t = texto(a);
 
-  if (PIEZA_SUELTA.test(t)) {
+  if (PIEZA_SUELTA.test(t) || EMPIEZA_PIEZA.test(t)) {
     MOTIVO.valor = 'pieza suelta o repuesto del aparato, no la partida completa';
     return null;
   }
@@ -261,7 +270,7 @@ function reglaBano(a) {
 
   if (/mezcladora|monomando|griferia|\bgrifo\b/.test(t)) {
     if (/ducha|regadera|empotrar/.test(t)) return BANOS.item('ducha-mezcladora', {});
-    const act = /sensor|electronic|automatic|temporizad/.test(t) ? 'sensor' : 'manual';
+    const act = BANOS.activacion(t);
     const uso = /frega|cocina|lavadero/.test(t) ? 'fregadero' : 'bano';
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }

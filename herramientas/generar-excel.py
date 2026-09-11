@@ -279,15 +279,32 @@ def hoja_leame(wb, d):
 # Fuera «Alcance» (lo mismo en 1,471 de 1,522 ítems), «Alias de mercado»
 #    (es para el buscador del sitio, no para una hoja) y «Estado» (ya no hay
 #    estimaciones: todo lo publicado tiene precio de comercio). 
+# El precio va pegado al ítem. Antes había que cruzar seis columnas
+# —especificación, unidad, etapa, gama, origen, cotizaciones— para llegar
+# de un nombre a su precio, y en una hoja de 2.190 filas eso es
+# desplazamiento horizontal en cada consulta. Lo que se viene a buscar
+# aquí es cuánto cuesta; el resto es contexto y puede esperar a la
+# derecha. Las cinco columnas de precio van juntas, y «Incluye ITBIS» con
+# ellas porque sin ese dato las otras cuatro no se pueden comparar.
 CAT_COLS = [
     ("Código", 13), ("Grupo", 16), ("Categoría", 26), ("Ítem", 46),
-    ("Especificación", 40),
-    ("Unidad", 12), ("Etapa de obra", 20), ("Gama", 11), ("Origen", 11),
-    ("Cotizaciones", 11),
     ("Precio de referencia (RD$)", 15), ("Mínimo (RD$)", 13), ("Máximo (RD$)", 13),
-    ("Incluye ITBIS", 11), ("Precio sin ITBIS (RD$)", 15),
-    ("Fecha", 11), ("Comercios que cotizaron", 46),
+    ("Precio sin ITBIS (RD$)", 15), ("Incluye ITBIS", 11),
+    ("Unidad", 12), ("Cotizaciones", 11), ("Comercios que cotizaron", 46),
+    ("Especificación", 40), ("Etapa de obra", 20), ("Gama", 11), ("Origen", 11),
+    ("Fecha", 11),
 ]
+
+# Y el orden se declara una sola vez. Los índices estaban escritos a mano
+# en la fórmula, en los formatos de número y en el ajuste de texto, así que
+# mover una columna era ir a buscarlos de uno en uno; ahora cada sitio pide
+# la columna por su nombre.
+CAT_IDX = {nombre: i for i, (nombre, _) in enumerate(CAT_COLS, start=1)}
+
+
+def cat_col(nombre):
+    """La letra de columna del catálogo, por el título que lleva encima."""
+    return get_column_letter(CAT_IDX[nombre])
 
 
 # Cómo se lee cada medida y en qué orden van las columnas. Solo salen las
@@ -333,24 +350,37 @@ def hoja_catalogo(wb, d):
     marca(ws, len(cols))
     encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
 
+    # Qué dato del ítem va en cada columna. La columna del precio sin ITBIS
+    # no sale de aquí: es una fórmula, y se escribe después.
+    DATO = {
+        "Código": "codigo", "Grupo": "grupo", "Categoría": "categoria",
+        "Ítem": "nombre", "Precio de referencia (RD$)": "ref",
+        "Mínimo (RD$)": "min", "Máximo (RD$)": "max", "Unidad": "unidad",
+        "Cotizaciones": "cotizaciones", "Comercios que cotizaron": "fuente",
+        "Especificación": "esp", "Etapa de obra": "etapa", "Gama": "gama",
+        "Origen": "origen", "Fecha": "fecha",
+    }
+    ENVUELVE = ("Ítem", "Especificación", "Comercios que cotizaron")
+    MONEDAS = ("Precio de referencia (RD$)", "Mínimo (RD$)", "Máximo (RD$)",
+               "Precio sin ITBIS (RD$)")
+    ref_c, itbis_c = cat_col("Precio de referencia (RD$)"), cat_col("Incluye ITBIS")
+
     for n, it in enumerate(d["items"], start=3):
-        fila = [
-            it["codigo"], it["grupo"], it["categoria"], it["nombre"],
-            it["esp"], it["unidad"], it["etapa"],
-            it["gama"], it["origen"],
-            it["cotizaciones"], it["ref"], it["min"], it["max"],
-            "Sí" if it["itbis"] else "No", None, it["fecha"], it["fuente"],
-        ]
-        for i, v in enumerate(fila, start=1):
+        for titulo, i in CAT_IDX.items():
+            if titulo == "Incluye ITBIS":
+                v = "Sí" if it["itbis"] else "No"
+            elif titulo == "Precio sin ITBIS (RD$)":
+                # El precio sin el impuesto, para quien presupuesta sin ITBIS
+                v = '=IF({r}{n}="","",IF({t}{n}="Sí",ROUND({r}{n}/1.18,2),{r}{n}))'.format(
+                    r=ref_c, t=itbis_c, n=n)
+            else:
+                v = it[DATO[titulo]]
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
-            c.alignment = Alignment(vertical="top", wrap_text=(i in (4, 5, 17)))
-        # O: el precio sin el impuesto, para quien presupuesta sin ITBIS
-        ws.cell(row=n, column=15,
-                value='=IF(K{0}="","",IF(N{0}="Sí",ROUND(K{0}/1.18,2),K{0}))'.format(n)).font = TXT
-        for col in (11, 12, 13, 15):
-            ws.cell(row=n, column=col).number_format = MONEDA
-        ws.cell(row=n, column=10).number_format = ENTERO
+            c.alignment = Alignment(vertical="top", wrap_text=(titulo in ENVUELVE))
+        for titulo in MONEDAS:
+            ws.cell(row=n, column=CAT_IDX[titulo]).number_format = MONEDA
+        ws.cell(row=n, column=CAT_IDX["Cotizaciones"]).number_format = ENTERO
 
     # Las medidas, una por columna
     base = len(CAT_COLS)

@@ -967,6 +967,19 @@ FAMILIAS_ALUMINIO.forEach(f => { REGLAS[f] = a => REGLAS.aluminio(a, f); });
    baños se identifica por marca y modelo, y lo que hay que decidir es otra
    cosa: si el artículo le sirve o no a un constructor. Ese criterio vive en
    reglas-banos.js. */
+/* Los datos públicos de cada comercio, para el explorador. Se lee el
+   registro del sitio y no una copia: si el directorio cambia un teléfono,
+   la solicitud de cotización lo trae en la siguiente importación. */
+const PROV_POR_NOMBRE = (() => {
+  /* datos-proveedores.js se escribió para el navegador: cuelga de window.
+     En Node no hay window, así que se le da uno. */
+  global.window = global.window || global;
+  require(path.join(DATOS, 'datos-proveedores.js'));
+  const m = {};
+  ((global.PROVEEDORES || {}).lista || []).forEach(p => { m[p.nombre] = p; });
+  return m;
+})();
+
 const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
@@ -2037,10 +2050,33 @@ function escribirVisual() {
       .sort((a, b) => b[1] - a[1]);
   });
 
+  /* POR DÓNDE SE LE PIDE A CADA COMERCIO
+
+     La selección se arma para mandarla, y mandarla quiere decir a alguien.
+     El directorio ya tiene los datos públicos de cada tienda, así que aquí
+     solo se copian los de los doce que salen en el explorador: el
+     explorador no carga datos-proveedores.js entero —son 60 KB para usar
+     doce líneas— y tampoco tiene por qué.
+
+     Hoy casi ninguno tiene más que la web, y eso está bien: la solicitud
+     se copia y se pega donde haga falta. El día que se recojan los correos
+     y los WhatsApp, aparecen los botones solos, sin tocar el navegador. */
+  const contacto = {};
+  comercios.forEach((n, i) => {
+    const p = PROV_POR_NOMBRE[n];
+    if (!p) return;
+    const c = {};
+    if (p.web) c.web = p.web;
+    if (p.email) c.email = p.email;
+    if (p.wa) c.wa = p.wa;
+    if (p.tel) c.tel = p.tel;
+    if (Object.keys(c).length) contacto[i] = c;
+  });
+
   fs.writeFileSync(path.join(dir, 'visual.json'), JSON.stringify({
     total: filas.length, porPagina: POR_PAGINA,
     pre: pre, com: comercios, pags: paginas, sub: subs, subCat: subCat,
-    todo: cifras(filas), cat: porCat, porCom: porCom
+    todo: cifras(filas), cat: porCat, porCom: porCom, contacto: contacto
   }));
 
   return { total: filas.length, paginas: paginas.length,
