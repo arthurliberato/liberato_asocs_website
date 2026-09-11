@@ -376,4 +376,33 @@ function formato(a, b) {
   return x + ' x ' + y + ' cm';
 }
 
-module.exports = { FAMILIAS, item, formato, aFormatoCm, aPesoKg, FORMATOS_CM, ETIQUETA_PERFIL, ETIQUETA_HERRAMIENTA };
+/* EL SUELO DEL METRO CUADRADO
+
+   Ochoa publica catorce baldosas a 50, 100, 150 y 200 pesos el metro
+   cuadrado. No son gangas: son marcadores de precio de su sistema. Se ve
+   al ordenar sus 857 baldosas por precio —el método de siempre, medir en
+   vez de opinar—: esas catorce se agolpan en esos cuatro valores, luego
+   hay un salto de x1.62 y desde RD$ 324 en adelante los precios forman un
+   continuo en el que ningún escalón pasa de x1.03.
+
+   Y no es cosa de un comercio. Puestos uno al lado del otro los seis que
+   venden baldosa, el mínimo es 355 en CerArte, 389 en Ferremix, 494 en
+   Bellón, 4.167 en Hogardeco; los únicos por debajo de 300 son esas
+   catorce de Ochoa y un mosaico suelto de La Ibérica. Por debajo del
+   suelo de mercado no hay baldosas: hay marcadores.
+
+   Importa porque una sola de estas hunde la partida entera. El auditor
+   ve «entre RD$ 50 y RD$ 1,238 no hay nada» y retira el ítem completo,
+   así que catorce marcadores se llevan por delante los precios buenos de
+   trescientas baldosas que sí sirven.
+
+   Vive aquí y no en las reglas de cada comercio por lo mismo que el
+   formato: es una propiedad de la baldosa, no de quién la vende. */
+const SUELO_M2 = 300;
+
+function precioDeMarcador(precioM2) {
+  return !(precioM2 > 0) || precioM2 < SUELO_M2;
+}
+
+module.exports = { FAMILIAS, item, formato, aFormatoCm, aPesoKg, precioDeMarcador,
+                   SUELO_M2, FORMATOS_CM, ETIQUETA_PERFIL, ETIQUETA_HERRAMIENTA };
