@@ -19683,20 +19683,85 @@
     url: 'https://ochoa.com.do/producto/columna-expuesta-de-ducha-01232642',
     nota: 'COLUMNA EXPUESTA DE DUCHA · artículo 01-23-2642 · ref. MB-2508CROMO · marca HELVEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-011', PROV_OCHOA, 307.11, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/desviador-para-set-de-columna-01021690',
-    art: 'DESVIADOR PARA SET DE COLUMNA',
-    sku: '01-02-1690',
-    marca: 'INEX',
-    url: 'https://ochoa.com.do/producto/desviador-para-set-de-columna-01021690',
-    nota: 'DESVIADOR PARA SET DE COLUMNA · artículo 01-02-1690 · ref. 991199 · marca INEX. ' + SUPUESTO_ITBIS
-  });
   c('MAT-09-011', PROV_CIMA, 6343, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sistema-ducha-universal-cuadra',
     art: 'SISTEMA DUCHA UNIVERSAL CUADRA',
     sku: '035912',
     url: 'https://ferreteriacima.com.do/products/sistema-ducha-universal-cuadra',
     nota: 'SISTEMA DUCHA UNIVERSAL CUADRA · artículo 035912. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_CERARTE, 12288.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35131',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35131 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 13220.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35132',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35132 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 15197.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35133',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35133 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 17351.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35130',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35130 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 22881.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
+    sku: 'CERA-35057',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35057 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 24025.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
+    sku: 'CERA-35058',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35058 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 18853.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
+    sku: 'CERA-35059',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35059 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 22245.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    itbis: false,
+    peso: 4,
+    art: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA',
+    sku: 'CERA-35005',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA · artículo CERA-35005 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-011', PROV_CERARTE, 4111.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-ducha-dmano-crampa-new-tempesta-110-2-spray?variant=012470%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
@@ -19734,23 +19799,15 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-y-ducha-dmano-fasano?variant=011903%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/CABEZAL Y DUCHA D/MANO FASANO · artículo CERA-35154 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-011', PROV_CERARTE, 16351.32, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-dducha-crampadesviador-tempesta-cosmopolitan-200?variant=013173%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
+  c('MAT-09-011', PROV_CERARTE, 13347.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
-    art: 'SET D/DUCHA C/RAMPA/DESVIADOR TEMPESTA COSMOPOLITAN 200',
-    sku: 'CERA-36892',
-    marca: 'GROHE',
-    url: 'https://cerarte.com.do/tienda/producto/set-dducha-crampadesviador-tempesta-cosmopolitan-200?variant=013173%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
-    nota: 'SET D/DUCHA C/RAMPA/DESVIADOR TEMPESTA COSMOPOLITAN 200 · artículo CERA-36892 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-011', PROV_CERARTE, 2894.96, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-dducha-csoporte-new-tempesta-f-trigger-spray-30?variant=007495%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
-    itbis: false,
-    art: 'SET D/DUCHA C/SOPORTE NEW TEMPESTA-F TRIGGER SPRAY 30',
-    sku: 'CERA-31582',
-    marca: 'GROHE',
-    url: 'https://cerarte.com.do/tienda/producto/set-dducha-csoporte-new-tempesta-f-trigger-spray-30?variant=007495%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
-    nota: 'SET D/DUCHA C/SOPORTE NEW TEMPESTA-F TRIGGER SPRAY 30 · artículo CERA-31582 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    peso: 3,
+    art: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO',
+    sku: 'CERA-35150',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO · artículo CERA-35150 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-011', PROV_CERARTE, 22272.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-y-dmano-retrofit-system-210?variant=007231%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
@@ -19806,14 +19863,33 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermos-euphoria-smartcontrol-310-cube-duo?variant=008684%20%3A%20%20%3A%20%20%3A%20BR%20WARM%20SUNSET%20%3A%20GROHE',
     nota: 'SISTEMA D/DUCHA C/TERMOS EUPHORIA SMARTCONTROL  310 CUBE DUO · artículo CERA-34954 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-011', PROV_CERARTE, 15970.38, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-dducha-crampadesviador-new-tempesta-cosmopolitan-200?variant=005752%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
+  c('MAT-09-011', PROV_CERARTE, 21882.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
-    art: 'SET D/DUCHA C/RAMPA/DESVIADOR NEW TEMPESTA COSMOPOLITAN 200',
-    sku: 'CERA-29267',
-    marca: 'GROHE',
-    url: 'https://cerarte.com.do/tienda/producto/set-dducha-crampadesviador-new-tempesta-cosmopolitan-200?variant=005752%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
-    nota: 'SET D/DUCHA C/RAMPA/DESVIADOR NEW TEMPESTA COSMOPOLITAN 200 · artículo CERA-29267 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
+    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
+    sku: 'CERA-35033',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35033 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 33368.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    itbis: false,
+    peso: 2,
+    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
+    sku: 'CERA-35032',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35032 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 27306.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
+    sku: 'CERA-35031',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
+    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35031 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-011', PROV_CERARTE, 29400.62, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-y-ducha-dmano-tempesta-cosmop-250?variant=012218%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
@@ -19898,6 +19974,34 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-cducha-dmano-tavira?variant=009187%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/CABEZAL C/DUCHA D/MANO TAVIRA · artículo CERA-33167 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
+  c('MAT-09-011', PROV_CERARTE, 10233.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    itbis: false,
+    peso: 2,
+    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35066',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
+    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35066 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 8061.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35067',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
+    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35067 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-09-011', PROV_CERARTE, 8863.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
+    sku: 'CERA-35068',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
+    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35068 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
   c('MAT-09-011', PROV_CERARTE, 8278.69, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ccabezal-cducha-dmano-viseu?variant=009000%20%3A%20%20%3A%20%20%3A%20ACERO%20INOXIDABL%20%3A%20AQUALIA',
     itbis: false,
@@ -19943,6 +20047,98 @@
     url: 'https://tienda.laiberica.com.do/product/equipo-de-ducha-genebre-negro-mate-con-toma-de-agua/',
     nota: 'Equipo De Ducha Genebre Negro Mate Con Toma De Agua · artículo 016504 · marca Genebre. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-011', PROV_IBERICA, 2600, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/kit-de-ducha-formentera-cromo/',
+    art: 'Kit de Ducha Formentera Cromo',
+    sku: '016347',
+    url: 'https://tienda.laiberica.com.do/product/kit-de-ducha-formentera-cromo/',
+    nota: 'Kit de Ducha Formentera Cromo · artículo 016347. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 5890.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/kit-de-ducha-formentera-cromo-con-toma-de-agua/',
+    art: 'Kit de Ducha Formentera Cromo Con Toma de Agua',
+    sku: '016352',
+    url: 'https://tienda.laiberica.com.do/product/kit-de-ducha-formentera-cromo-con-toma-de-agua/',
+    nota: 'Kit de Ducha Formentera Cromo Con Toma de Agua · artículo 016352. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 6499.96, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
+    art: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc.',
+    sku: '019160',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
+    nota: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc. · artículo 019160 · ref. 552420220. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 9500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
+    art: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo',
+    sku: '016366',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
+    nota: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo · artículo 016366 · ref. 621710200. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 5400, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-empotrar-1-salida-sin-equipo/',
+    art: 'Mezcladora Formentera Cromo Baño Empotrar 1 salida Sin equipo',
+    sku: '016360',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-empotrar-1-salida-sin-equipo/',
+    nota: 'Mezcladora Formentera Cromo Baño Empotrar 1 salida Sin equipo · artículo 016360. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 5650.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
+    art: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro',
+    sku: '005679',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
+    nota: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro · artículo 005679. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 14500.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo-2/',
+    peso: 2,
+    art: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo',
+    sku: '019120',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo-2/',
+    nota: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo · artículo 019120 · ref. 69100345266. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 13950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
+    art: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo',
+    sku: '019119',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
+    nota: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo · artículo 019119 · ref. 69110345266. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 16790, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
+    art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
+    sku: '019122',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
+    nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019122 · ref. 69100345166. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 15950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
+    art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
+    sku: '019121',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
+    nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019121 · ref. 69110345166. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 8700, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
+    art: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo',
+    sku: '016363',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
+    nota: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo · artículo 016363. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 10950, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
+    art: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo',
+    sku: '016502',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
+    nota: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo · artículo 016502. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 15790, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
+    art: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo',
+    sku: '016508',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
+    nota: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo · artículo 016508. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-011', PROV_IBERICA, 21240, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/sistema-de-ducha-alaior-xl-con-mezcladora/',
     art: 'Sistema De Ducha Alaior XL Con Mezcladora',
@@ -19956,13 +20152,6 @@
     sku: '012818',
     url: 'https://tienda.laiberica.com.do/product/sistema-de-ducha-formentera-con-mezcladora/',
     nota: 'Sistema De Ducha Formentera Con Mezcladora · artículo 012818. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-011', PROV_IBERICA, 14500.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/sistema-de-ducha-inca-dual-control-con-mezcladora/',
-    art: 'Sistema De Ducha Inca Dual Control Con Mezcladora',
-    sku: '016820',
-    url: 'https://tienda.laiberica.com.do/product/sistema-de-ducha-inca-dual-control-con-mezcladora/',
-    nota: 'Sistema De Ducha Inca Dual Control Con Mezcladora · artículo 016820. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-011', PROV_IBERICA, 14999.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/sistema-de-ducha-inca-termostatica-c-mezcladora/',
@@ -20047,6 +20236,13 @@
     sku: '008871',
     url: 'https://tienda.laiberica.com.do/product/sistema-ducha-universe-pro-completo/',
     nota: 'Sistema Ducha Universe Pro Completo · artículo 008871. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_IBERICA, 12500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
+    art: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha',
+    sku: '019011',
+    url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
+    nota: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha · artículo 019011. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-011', PROV_IBERICA, 78500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/sistema-de-ducha-itaca-bronze-con-mezcladora/',
@@ -23796,11 +23992,10 @@
   });
   c('MAT-09-014', PROV_IBERICA, 5400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-lavamano-sin-desage/',
-    peso: 2,
     art: 'Mezcladora Calvia Cromo Lavamano Sin Desagüe',
     sku: '010136',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-lavamano-sin-desage/',
-    nota: 'Mezcladora Calvia Cromo Lavamano Sin Desagüe · artículo 010136. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mezcladora Calvia Cromo Lavamano Sin Desagüe · artículo 010136. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_IBERICA, 6741.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-lavabo-cromo/',
@@ -28622,69 +28817,6 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-eurocube-joy?variant=000678%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EUROCUBE JOY · artículo CERA-01120 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 12288.22, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35131',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35131 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 13220.58, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35132',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35132 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 15197.32, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35133',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35133 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 17351.69, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35130',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35130 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 22881.36, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
-    sku: 'CERA-35057',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35057 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 24025.43, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
-    sku: 'CERA-35058',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35058 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 18853.25, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
-    sku: 'CERA-35059',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35059 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-09-018', PROV_CERARTE, 68793.1, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-dducha-sit-xl?variant=000933%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
@@ -28702,16 +28834,6 @@
     marca: 'GROHE',
     url: 'https://cerarte.com.do/tienda/producto/valvula-dducha-ctemporizador-euroeco-cosmopolitan-t-12?variant=011850%20%3A%20%20%3A%201%2F2%22%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'VALVULA D/DUCHA C/TEMPORIZADOR EUROECO COSMOPOLITAN T 1/2" · artículo CERA-34975 · ref. 1/2" · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 22245.76, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    itbis: false,
-    peso: 4,
-    art: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA',
-    sku: 'CERA-35005',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA · artículo CERA-35005 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-018', PROV_CERARTE, 9145.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostato-grohtherm-800?variant=000939%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
@@ -28848,16 +28970,6 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-atrio?variant=000698%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA TERMOSTATICO ATRIO · artículo CERA-01141 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 13347.45, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    itbis: false,
-    peso: 3,
-    art: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO',
-    sku: 'CERA-35150',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO · artículo CERA-35150 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-09-018', PROV_CERARTE, 9349.98, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-lineare?variant=000656%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
@@ -28903,34 +29015,6 @@
     marca: 'GESSI SPA',
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-via-manzoni?variant=000702%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA VIA MANZONI · artículo CERA-01145 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 21882.13, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
-    sku: 'CERA-35033',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35033 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 33368.64, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    itbis: false,
-    peso: 2,
-    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
-    sku: 'CERA-35032',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35032 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 27306.77, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
-    sku: 'CERA-35031',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
-    nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35031 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-09-018', PROV_CERARTE, 5616.54, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-essence-new?variant=000654%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
@@ -29059,34 +29143,6 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-lineare-monomando-dducha?variant=007488%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA LINEARE MONOMANDO D/DUCHA · artículo CERA-31575 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 10233.05, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    itbis: false,
-    peso: 2,
-    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35066',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
-    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35066 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 8061.87, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35067',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
-    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35067 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-09-018', PROV_CERARTE, 8863.02, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
-    sku: 'CERA-35068',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
-    nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35068 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
   c('MAT-09-018', PROV_CERARTE, 26633.74, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-y-ducha-mano-via-manzoni?variant=000659%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
@@ -29136,20 +29192,6 @@
     sku: '018278',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-bano-ducha-empotrado-2-vias-cr-s-acc-ducha/',
     nota: 'Mezc. Alaior Baño Ducha Empotrado 2 Vias Cr. Ref. 551710200 S/Acc. Ducha · artículo 018278 · ref. 551710200. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 6499.96, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
-    art: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc.',
-    sku: '019160',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
-    nota: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc. · artículo 019160 · ref. 552420220. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 9500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
-    art: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo',
-    sku: '016366',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
-    nota: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo · artículo 016366 · ref. 621710200. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-018', PROV_IBERICA, 80500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-bao-ducha-brave-black-cromo-para-baera/',
@@ -29284,13 +29326,6 @@
     url: 'https://tienda.laiberica.com.do/product/mezcladora-inca-cromo-bao-ducha/',
     nota: 'Mezcladora Inca Cromo Baño-Ducha · artículo 012068. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_IBERICA, 5650.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
-    art: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro',
-    sku: '005679',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
-    nota: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro · artículo 005679. ' + SUPUESTO_ITBIS
-  });
   c('MAT-09-018', PROV_IBERICA, 11600, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-2/',
     art: 'Mezcladora Itaca Cromo Baño-Ducha',
@@ -29300,11 +29335,10 @@
   });
   c('MAT-09-018', PROV_IBERICA, 14500.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha/',
-    peso: 2,
     art: 'Mezcladora Itaca Cromo Baño-Ducha',
     sku: '016063',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha/',
-    nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 016063. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 016063. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-018', PROV_IBERICA, 9550, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-sin-maneral/',
@@ -29326,27 +29360,6 @@
     sku: '016064',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-ducha-manguera/',
     nota: 'Mezcladora Itaca Cromo Ducha Manguera · artículo 016064. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 13950, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
-    art: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo',
-    sku: '019119',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
-    nota: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo · artículo 019119 · ref. 69110345266. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 16790, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
-    art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
-    sku: '019122',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
-    nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019122 · ref. 69100345166. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 15950, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
-    art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
-    sku: '019121',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
-    nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019121 · ref. 69110345166. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-018', PROV_IBERICA, 10300, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kobe-bao-ducha-cromo/',
@@ -29376,40 +29389,12 @@
     url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-cr-s-set-de-ducha/',
     nota: 'Mezcladora Manacor Baño-Ducha Cr S/Set de Ducha · artículo 019164 · ref. 842321200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_IBERICA, 8700, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
-    art: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo',
-    sku: '016363',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
-    nota: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo · artículo 016363. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 10950, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
-    art: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo',
-    sku: '016502',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
-    nota: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo · artículo 016502. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 15790, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
-    art: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo',
-    sku: '016508',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
-    nota: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo · artículo 016508. ' + SUPUESTO_ITBIS
-  });
   c('MAT-09-018', PROV_IBERICA, 69825.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-wave-cromo-ducha/',
     art: 'Mezcladora Wave Cromo Ducha',
     sku: '013311',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-wave-cromo-ducha/',
     nota: 'Mezcladora Wave Cromo Ducha · artículo 013311. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-018', PROV_IBERICA, 12500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
-    art: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha',
-    sku: '019011',
-    url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
-    nota: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha · artículo 019011. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-018', PROV_IBERICA, 38000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-bano-ducha/',

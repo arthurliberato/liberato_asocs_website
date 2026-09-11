@@ -258,7 +258,7 @@ function reglaBano(a) {
   if (/^orinal|^urinario/.test(t)) return BANOS.item('urinario', {});
   if (/^asiento/.test(t)) { MOTIVO.valor = 'repuesto de consumidor, no partida de obra'; return null; }
   if (/^pulsador|^bastidor|^kit/.test(t)) { MOTIVO.valor = 'mecanismo interno del aparato; se compra con él, no aparte'; return null; }
-  if (/^columna/.test(t)) return BANOS.item('ducha-columna', {});
+  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
   MOTIVO.valor = 'aparato sanitario que la ficha no describe lo bastante';
   return null;
 }
@@ -267,7 +267,7 @@ function reglaGriferia(a) {
   const t = texto(a);
   if (/^brazo/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^rociador|^regadera|^cabezal/.test(t)) return BANOS.item('ducha-cabezal', {});
-  if (/^sistema|^equipo|^columna/.test(t)) return BANOS.item('ducha-columna', {});
+  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
   if (/^valvula|^vlvula|^fluxometro|^maneral|^sensor|^llave de paso/.test(t)) {
     MOTIVO.valor = 'pieza de grifería que el catálogo no tiene como partida propia';
     return null;

@@ -302,13 +302,17 @@ function reglaDucha(a) {
   if (/^brazo de ducha|^brazo para|^codo de salida/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^manguera/.test(t)) return BANOS.item('ducha-manguera', {});
   if (/^barra de ducha|riel/.test(t)) return BANOS.item('ducha-barra', {});
+  /* «Toda columna ducha va dentro del mismo ítem»: sistema, set y columna
+     son el mismo producto con tres nombres comerciales.
+
+     Va ANTES que la mezcladora, y ahí estaba el fallo: un sistema con
+     termostato casaba con «termostat» y se archivaba como la válvula
+     suelta, que cuesta tres veces menos. Ver esJuegoDeDucha(). */
+  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
   if (/mezclador|valvula de ducha|termostat|termostic/.test(t)) {
     if (/banera|bañera/.test(t)) return BANOS.item('mezcladora', { uso: 'bano', activacion: 'manual' });
     return BANOS.item('ducha-mezcladora', {});
   }
-  /* «Toda columna ducha va dentro del mismo ítem»: sistema, set y columna son
-     el mismo producto con tres nombres comerciales. */
-  if (/^sistema de ducha|^sistema ducha|^columna|^set de ducha/.test(t)) return BANOS.item('ducha-columna', {});
   if (/^ducha de mano|telefono|^duchade ?mano|manual/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/^cabezal|rainshower|^ducha de techo|^ducha de pared|^ducha lateral|^ducha rotatoria|^regadera/.test(t)) {
     return BANOS.item('ducha-cabezal', {});

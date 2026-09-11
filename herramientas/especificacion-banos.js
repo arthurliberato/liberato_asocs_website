@@ -289,6 +289,47 @@ function activacion(texto) {
   return ACCIONADO.test(t) ? 'sensor' : 'manual';
 }
 
+/* ¿LA MEZCLADORA SOLA, O EL JUEGO COMPLETO?
+
+   «Mezcladora de ducha» es la válvula que va en la pared. «Columna de
+   ducha» es el conjunto: válvula, cabezal y teléfono. Son dos partidas
+   y entre ellas hay tres veces —6.297 contra 18.845—, así que colar una
+   en la otra corre la referencia de las dos.
+
+   Se colaban por un fallo de orden: la regla probaba primero si el
+   nombre decía «termostat» y mandaba a mezcladora, de modo que «SISTEMA
+   D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO» —que es un sistema
+   entero— nunca llegaba a la línea que preguntaba por «sistema». Trece
+   cotizaciones de CerArte y La Ibérica, con mediana de RD$ 18.853: el
+   precio exacto de la partida a la que pertenecen, que es la prueba de
+   que ahí van.
+
+   Dos maneras de delatarse: el nombre lo dice —sistema, columna, set— o
+   lo enumera, trayendo a la vez el cabezal y el teléfono. Ninguna pieza
+   suelta trae las dos.
+
+   Y una trampa que hay que mirar de cerca: «S/Set de Ducha» es SIN el
+   set y «C/Set de Ducha» es CON él. La misma mezcladora Manacor sale a
+   RD$ 2.950 sin y a RD$ 12.500 con. Una barra que se lee como la otra
+   cuesta cuatro veces. */
+const DICE_JUEGO = /\bsistema\b|\bcolumna\b|\bequipo\b|\bkit\b/;
+const CABEZAL = /cabezal|\bcbz\b|regadera|rainshower/;
+const TELEFONO = /d ?\/ ?mano|de mano|telefono|\btel\b/;
+
+function esJuegoDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  /* Lo que viene SIN el set no es el set. Se tacha antes de mirar nada
+     más, porque si no «s/set de ducha» cuenta como set. */
+  const sinExtras = t.replace(/\bs ?\/ ?(set|juego|kit|accesorio\w*)/g, ' ');
+
+  if (DICE_JUEGO.test(sinExtras)) return true;
+  if (/\bc ?\/ ?(set|juego|kit) de ducha|\bcon set de ducha/.test(sinExtras)) return true;
+  /* O lo enumera: trae el cabezal y el teléfono a la vez. */
+  return CABEZAL.test(sinExtras) && TELEFONO.test(sinExtras);
+}
+
 const limpia = s => String(s || '').trim();
 
 /* Construye el ítem. `medidas` trae todo lo que el comercio declaró; los
@@ -335,4 +376,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, aCm };
