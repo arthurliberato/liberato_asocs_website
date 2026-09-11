@@ -194,7 +194,15 @@ function clasificar(a) {
     if (/^cheque/.test(n)) {
       const md = medidaPulg((numerosDe(a.nombre)[0] || ''));
       if (!md) { MOTIVO.valor = 'la ficha no declara la medida del cheque'; return null; }
-      return PLOM.item('cheque', { medida: md });
+      if (!/vertical|horizontal/.test(n)) {
+        MOTIVO.valor = 'la ficha no dice si el cheque es vertical u horizontal';
+        return null;
+      }
+      return PLOM.item('cheque', {
+        tipo: /vertical/.test(n) ? 'vertical' : 'horizontal',
+        medida: md,
+        material: /\bpvc\b/.test(n) ? 'PVC' : ''
+      });
     }
     if (/valvula cisterna|valvula de cisterna/.test(n)) {
       const md = medidaPulg((numerosDe(a.nombre)[0] || ''));

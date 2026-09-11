@@ -332,9 +332,9 @@ function serieAlReves(items, articulos) {
    legítimos. Cada uno con su razón: si mañana cambia el dato, se borra
    la línea y vuelve a publicarse. */
 const A_MANO = {
-  'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, '
+  'MAT-09-155': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, '
     + 'que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
-  'MAT-10-181': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se '
+  'MAT-10-312': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se '
     + 'explica si el precio es de un paquete, y la ficha no lo dice',
 
   /* LAS TRES CRUCETAS RUBI DE OCHOA.
@@ -358,6 +358,14 @@ const A_MANO = {
     + 'funda RUBI de 3 mm del mismo comercio sale a RD$ 1.27 la pieza'
 };
 function aMano(items) {
+  /* Los códigos se mueven cuando entran ítems nuevos, y una entrada que
+     ya no apunta a nada deja de retirar sin avisar: las dos que había
+     aquí llevaban varias importaciones sin hacer nada. Si el código no
+     existe, se dice en voz alta. */
+  const hay = new Set(items.map(i => i.codigo));
+  Object.keys(A_MANO).filter(c => !hay.has(c)).forEach(c => {
+    console.error('AVISO: la retirada a mano de %s no corresponde a ningún ítem.', c);
+  });
   return items.filter(i => A_MANO[i.codigo]).map(i => ({
     item: i, razon: 'a mano', factor: 0, motivo: A_MANO[i.codigo]
   }));

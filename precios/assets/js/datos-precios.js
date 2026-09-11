@@ -3882,21 +3882,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Encofrar Brasil 2 Caras 4\' x 8\' x 3/4" 18mm C+/C+ OES WBP 7plies · artículo 207745. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-026', PROV_BELLON, 430, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR',
-    sku: '16659',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR · artículo 16659. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-06-027', PROV_BELLON, 501, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR',
-    sku: '16661',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR · artículo 16661. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-06-028', PROV_OCHOA, 1508.69, {
+  c('MAT-06-026', PROV_OCHOA, 1508.69, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-80pz-04690059',
     art: 'PLYWOOD DE OKUME (ATADO 80PZ)',
     sku: '04-69-0059',
@@ -3904,14 +3890,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-80pz-04690059',
     nota: 'PLYWOOD DE OKUME (ATADO 80PZ) · artículo 04-69-0059 · ref. 4X8X1/2=12MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-028', PROV_BELLON, 1235, {
+  c('MAT-06-026', PROV_BELLON, 1235, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 1/2" 12mm MR',
     sku: '16654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 1/2" 12mm MR · artículo 16654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-029', PROV_OCHOA, 744.08, {
+  c('MAT-06-027', PROV_OCHOA, 744.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-165pz-04690041',
     art: 'PLYWOOD DE OKUME (ATADO 165PZ)',
     sku: '04-69-0041',
@@ -3919,7 +3905,7 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-165pz-04690041',
     nota: 'PLYWOOD DE OKUME (ATADO 165PZ) · artículo 04-69-0041 · ref. 4X8X1/4=6MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-029', PROV_MAX, 849.6, {
+  c('MAT-06-027', PROV_MAX, 849.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/plywood-okume-4x8-5-5-mm-ref-1-4',
     art: 'PLYWOOD OKUME 4X8 5.5 MM (REF. 1/4)',
     sku: '0001017969',
@@ -3927,14 +3913,14 @@
     url: 'https://maxferreteria.com/products/plywood-okume-4x8-5-5-mm-ref-1-4',
     nota: 'PLYWOOD OKUME 4X8 5.5 MM (REF. 1/4) · artículo 0001017969 · ref. Plywood Okume | Formato 4x8 pies (1.22 x 2.44 m) | Espesor 1/4" / 5.5 mm · marca PLYWOOD. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-029', PROV_BELLON, 770, {
+  c('MAT-06-027', PROV_BELLON, 770, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 1/4" 6mm MR',
     sku: '16655',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 1/4" 6mm MR · artículo 16655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-030', PROV_OCHOA, 421.73, {
+  c('MAT-06-028', PROV_OCHOA, 421.73, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-335pz-04690008',
     art: 'PLYWOOD DE OKUME (ATADO 335PZ)',
     sku: '04-69-0008',
@@ -3942,14 +3928,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-335pz-04690008',
     nota: 'PLYWOOD DE OKUME (ATADO 335PZ) · artículo 04-69-0008 · ref. 4X8X1/8=2.7MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-030', PROV_BELLON, 450, {
+  c('MAT-06-028', PROV_BELLON, 450, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 1C 4\' x 8\' x 1/8" 2.7mm BB/CC MR',
     sku: '16658',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 1C 4\' x 8\' x 1/8" 2.7mm BB/CC MR · artículo 16658. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-031', PROV_OCHOA, 455.16, {
+  c('MAT-06-029', PROV_OCHOA, 455.16, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690038',
     art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
     sku: '04-69-0038',
@@ -3957,7 +3943,7 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690038',
     nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0038 · ref. 32X7X3/16=4MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-032', PROV_OCHOA, 492.59, {
+  c('MAT-06-030', PROV_OCHOA, 492.59, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690037',
     art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
     sku: '04-69-0037',
@@ -3965,7 +3951,7 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690037',
     nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0037 · ref. 3X7X3/16=4MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-032', PROV_OCHOA, 440.88, {
+  c('MAT-06-030', PROV_OCHOA, 440.88, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690061',
     art: 'PLYWOOD DE OKUME (ATADO 166PZ)',
     sku: '04-69-0061',
@@ -3973,7 +3959,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-166pz-04690061',
     nota: 'PLYWOOD DE OKUME (ATADO 166PZ) · artículo 04-69-0061 · ref. 30X7X3/16-3.6MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-033', PROV_OCHOA, 544.84, {
+  c('MAT-06-030', PROV_BELLON, 430, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR',
+    sku: '16659',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Plywood Okume 3\' x 7\' x 3/16" 3.6mm MR · artículo 16659. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-031', PROV_OCHOA, 544.84, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-250pz-04690039',
     art: 'PLYWOOD DE OKUME (ATADO 250PZ)',
     sku: '04-69-0039',
@@ -3981,7 +3974,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-250pz-04690039',
     nota: 'PLYWOOD DE OKUME (ATADO 250PZ) · artículo 04-69-0039 · ref. 4X8X3/16 · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-034', PROV_OCHOA, 2115.33, {
+  c('MAT-06-031', PROV_BELLON, 501, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR',
+    sku: '16661',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Plywood Okume 4\' x 8\' x 3/16" 3.6mm MR · artículo 16661. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-06-032', PROV_OCHOA, 2115.33, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-33pz-04690060',
     art: 'PLYWOOD DE OKUME (ATADO 33PZ)',
     sku: '04-69-0060',
@@ -3989,14 +3989,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-33pz-04690060',
     nota: 'PLYWOOD DE OKUME (ATADO 33PZ) · artículo 04-69-0060 · ref. 4X8X3/4=18MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-034', PROV_BELLON, 2121, {
+  c('MAT-06-032', PROV_BELLON, 2121, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 3/4" 18mm MR',
     sku: '16662',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 3/4" 18mm MR · artículo 16662. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-035', PROV_OCHOA, 1186.14, {
+  c('MAT-06-033', PROV_OCHOA, 1186.14, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-105pz-04690058',
     art: 'PLYWOOD DE OKUME (ATADO 105PZ)',
     sku: '04-69-0058',
@@ -4004,14 +4004,14 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-105pz-04690058',
     nota: 'PLYWOOD DE OKUME (ATADO 105PZ) · artículo 04-69-0058 · ref. 4X8X3/8=9MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-035', PROV_BELLON, 1249, {
+  c('MAT-06-033', PROV_BELLON, 1249, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Okume 4\' x 8\' x 3/8" 9mm MR',
     sku: '16663',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Okume 4\' x 8\' x 3/8" 9mm MR · artículo 16663. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-036', PROV_OCHOA, 2476.41, {
+  c('MAT-06-034', PROV_OCHOA, 2476.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-de-okume-atado-65pz-04690020',
     art: 'PLYWOOD DE OKUME (ATADO 65PZ)',
     sku: '04-69-0020',
@@ -4019,7 +4019,7 @@
     url: 'https://ochoa.com.do/producto/plywood-de-okume-atado-65pz-04690020',
     nota: 'PLYWOOD DE OKUME (ATADO 65PZ) · artículo 04-69-0020 · ref. 4X8X5/8=15MM · marca OKUME. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-037', PROV_OCHOA, 1436.37, {
+  c('MAT-06-035', PROV_OCHOA, 1436.37, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-75pz-04690119',
     art: 'PLYWOOD D / PINO (ATADO 75PZ)',
     sku: '04-69-0119',
@@ -4027,7 +4027,7 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-75pz-04690119',
     nota: 'PLYWOOD D / PINO (ATADO 75PZ) · artículo 04-69-0119 · ref. 4X8X1/2=12MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-038', PROV_OCHOA, 798.72, {
+  c('MAT-06-036', PROV_OCHOA, 798.72, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-150pz-04690144',
     art: 'PLYWOOD D / PINO (ATADO 150PZ)',
     sku: '04-69-0144',
@@ -4035,21 +4035,21 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-150pz-04690144',
     nota: 'PLYWOOD D / PINO (ATADO 150PZ) · artículo 04-69-0144 · ref. 4X8X1/4=6MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-038', PROV_BELLON, 705, {
+  c('MAT-06-036', PROV_BELLON, 705, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Brasil 4\' x 8\' x 1/4" 6mm C+/C MR Glue',
     sku: '142110',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Brasil 4\' x 8\' x 1/4" 6mm C+/C MR Glue · artículo 142110. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-039', PROV_BELLON, 875, {
+  c('MAT-06-037', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Decorativo 4\' x 8\' x 1/8" Pino',
     sku: '202600',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Pino · artículo 202600. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-040', PROV_OCHOA, 587.6, {
+  c('MAT-06-038', PROV_OCHOA, 587.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-225pz-04690185',
     art: 'PLYWOOD D / PINO (ATADO 225PZ)',
     sku: '04-69-0185',
@@ -4057,7 +4057,7 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-225pz-04690185',
     nota: 'PLYWOOD D / PINO (ATADO 225PZ) · artículo 04-69-0185 · ref. 4X8X3/16=4MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-041', PROV_OCHOA, 2076.87, {
+  c('MAT-06-039', PROV_OCHOA, 2076.87, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-50pz-04690057',
     art: 'PLYWOOD D / PINO (ATADO 50PZ)',
     sku: '04-69-0057',
@@ -4065,7 +4065,7 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-50pz-04690057',
     nota: 'PLYWOOD D / PINO (ATADO 50PZ) · artículo 04-69-0057 · ref. 4X8X3/4=18MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-042', PROV_OCHOA, 1106.7, {
+  c('MAT-06-040', PROV_OCHOA, 1106.7, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-100pz-04690125',
     art: 'PLYWOOD D / PINO (ATADO 100PZ)',
     sku: '04-69-0125',
@@ -4073,14 +4073,14 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-100pz-04690125',
     nota: 'PLYWOOD D / PINO (ATADO 100PZ) · artículo 04-69-0125 · ref. 4X8X3/8=9MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-042', PROV_BELLON, 1030, {
+  c('MAT-06-040', PROV_BELLON, 1030, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Plywood Pino Brasil 4\' x 8\' x 3/8" 9mm C+/C MR Glue',
     sku: '16666',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Pino Brasil 4\' x 8\' x 3/8" 9mm C+/C MR Glue · artículo 16666. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-043', PROV_OCHOA, 1757.79, {
+  c('MAT-06-041', PROV_OCHOA, 1757.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-d-pino-atado-60pz-04690126',
     art: 'PLYWOOD D / PINO (ATADO 60PZ)',
     sku: '04-69-0126',
@@ -4088,7 +4088,7 @@
     url: 'https://ochoa.com.do/producto/plywood-d-pino-atado-60pz-04690126',
     nota: 'PLYWOOD D / PINO (ATADO 60PZ) · artículo 04-69-0126 · ref. 4X8X5/8=15MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-044', PROV_OCHOA, 700.61, {
+  c('MAT-06-042', PROV_OCHOA, 700.61, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-dec-blanco-sm001-atado-200-04690101',
     art: 'PLYWOOD DEC. BLANCO (SM001) ATADO 200',
     sku: '04-69-0101',
@@ -4096,7 +4096,7 @@
     url: 'https://ochoa.com.do/producto/plywood-dec-blanco-sm001-atado-200-04690101',
     nota: 'PLYWOOD DEC. BLANCO (SM001) ATADO 200 · artículo 04-69-0101 · ref. 4X8X1/8=3MM · marca SIMAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-044', PROV_BELLON, 875, {
+  c('MAT-06-042', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba',
@@ -4104,7 +4104,7 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Plywood Decorativo 4\' x 8\' x 1/8" Caoba · artículo 202601. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-045', PROV_OCHOA, 2479.11, {
+  c('MAT-06-043', PROV_OCHOA, 2479.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plywood-laminado-negro-atado-52pz-04690293',
     art: 'PLYWOOD LAMINADO NEGRO (ATADO 52PZ)',
     sku: '04-69-0293',
@@ -4112,7 +4112,7 @@
     url: 'https://ochoa.com.do/producto/plywood-laminado-negro-atado-52pz-04690293',
     nota: 'PLYWOOD LAMINADO NEGRO (ATADO 52PZ) · artículo 04-69-0293 · ref. 4X8-3/4-18MM · marca EXTRANJERA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-046', PROV_OCHOA, 1163.3, {
+  c('MAT-06-044', PROV_OCHOA, 1163.3, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-55-pz-04690154',
     art: 'FIBRO MDF (ATADO 55 PZ)',
     sku: '04-69-0154',
@@ -4120,7 +4120,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-55-pz-04690154',
     nota: 'FIBRO MDF (ATADO 55 PZ) · artículo 04-69-0154 · ref. 4X8X1/2=12MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-047', PROV_OCHOA, 721.77, {
+  c('MAT-06-045', PROV_OCHOA, 721.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-124-pz-04690152',
     art: 'FIBRO MDF (ATADO 124 PZ)',
     sku: '04-69-0152',
@@ -4128,7 +4128,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-124-pz-04690152',
     nota: 'FIBRO MDF (ATADO 124 PZ) · artículo 04-69-0152 · ref. 4X8X1/4=5.5MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-047', PROV_OCHOA, 704.66, {
+  c('MAT-06-045', PROV_OCHOA, 704.66, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-165-04690278',
     art: 'FIBRO MDF (ATADO 165)',
     sku: '04-69-0278',
@@ -4136,7 +4136,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-165-04690278',
     nota: 'FIBRO MDF (ATADO 165) · artículo 04-69-0278 · ref. 4X8-5.5MM-1/4 · marca EXTRANJERA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-048', PROV_OCHOA, 399.26, {
+  c('MAT-06-046', PROV_OCHOA, 399.26, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-224-und-04690257',
     art: 'FIBRO MDF (ATADO 224 UND)',
     sku: '04-69-0257',
@@ -4144,7 +4144,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-224-und-04690257',
     nota: 'FIBRO MDF (ATADO 224 UND) · artículo 04-69-0257 · ref. 4X8X3MM1/8 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-049', PROV_OCHOA, 579.83, {
+  c('MAT-06-047', PROV_OCHOA, 579.83, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-168-106pz-04690151',
     art: 'FIBRO MDF (ATADO 168-106PZ)',
     sku: '04-69-0151',
@@ -4152,7 +4152,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-168-106pz-04690151',
     nota: 'FIBRO MDF (ATADO 168-106PZ) · artículo 04-69-0151 · ref. 4X8X3/16=4MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-050', PROV_OCHOA, 1835.53, {
+  c('MAT-06-048', PROV_OCHOA, 1835.53, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-39-pz-04690156',
     art: 'FIBRO MDF (ATADO 39 PZ)',
     sku: '04-69-0156',
@@ -4160,7 +4160,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-39-pz-04690156',
     nota: 'FIBRO MDF (ATADO 39 PZ) · artículo 04-69-0156 · ref. 4X8X3/4=18MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-051', PROV_OCHOA, 980.41, {
+  c('MAT-06-049', PROV_OCHOA, 980.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-102pz-04690153',
     art: 'FIBRO MDF (ATADO 102PZ)',
     sku: '04-69-0153',
@@ -4168,7 +4168,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-102pz-04690153',
     nota: 'FIBRO MDF (ATADO 102PZ) · artículo 04-69-0153 · ref. 4X8X3/8=9MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-052', PROV_OCHOA, 1471.72, {
+  c('MAT-06-050', PROV_OCHOA, 1471.72, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/fibro-mdf-atado-46-pz-04690155',
     art: 'FIBRO MDF (ATADO 46 PZ)',
     sku: '04-69-0155',
@@ -4176,7 +4176,7 @@
     url: 'https://ochoa.com.do/producto/fibro-mdf-atado-46-pz-04690155',
     nota: 'FIBRO MDF (ATADO 46 PZ) · artículo 04-69-0155 · ref. 4X8X5/8=15MM · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-053', PROV_OCHOA, 1616.16, {
+  c('MAT-06-051', PROV_OCHOA, 1616.16, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-80-plancha-04690232',
     art: 'MDF HIDROFUGO (ATADO=80 PLANCHA)',
     sku: '04-69-0232',
@@ -4184,7 +4184,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-80-plancha-04690232',
     nota: 'MDF HIDROFUGO (ATADO=80 PLANCHA) · artículo 04-69-0232 · ref. 4X8-12MM-1/2 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-053', PROV_MAX, 1735, {
+  c('MAT-06-051', PROV_MAX, 1735, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/plywood-mdf-hidrofugado-1-2',
     art: 'PLYWOOD MDF HIDROFUGADO 1/2',
     sku: '0001117951',
@@ -4192,7 +4192,7 @@
     url: 'https://maxferreteria.com/products/plywood-mdf-hidrofugado-1-2',
     nota: 'PLYWOOD MDF HIDROFUGADO 1/2 · artículo 0001117951 · ref. Plywood MDF hidrofugado | Formato 4x8 pies (asumido; no declarado en la ficha) | Espesor 1/2" · marca (sin marca). ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-054', PROV_OCHOA, 968.78, {
+  c('MAT-06-052', PROV_OCHOA, 968.78, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-113plancha-04690230',
     art: 'MDF HIDROFUGO (ATADO=113PLANCHA)',
     sku: '04-69-0230',
@@ -4200,7 +4200,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-113plancha-04690230',
     nota: 'MDF HIDROFUGO (ATADO=113PLANCHA) · artículo 04-69-0230 · ref. 4X8-6MM-1/4 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-055', PROV_OCHOA, 524.01, {
+  c('MAT-06-053', PROV_OCHOA, 524.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-04690292',
     art: 'MDF HIDROFUGO',
     sku: '04-69-0292',
@@ -4208,7 +4208,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-04690292',
     nota: 'MDF HIDROFUGO · artículo 04-69-0292 · ref. 4X8-3MM · marca EXTRANJERA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-055', PROV_OCHOA, 562.09, {
+  c('MAT-06-053', PROV_OCHOA, 562.09, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-hdf-atado-276-04690256',
     art: 'MDF HIDROFUGO HDF (ATADO 276)',
     sku: '04-69-0256',
@@ -4216,7 +4216,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-hdf-atado-276-04690256',
     nota: 'MDF HIDROFUGO HDF (ATADO 276) · artículo 04-69-0256 · ref. 4X8X3MM1/8 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-056', PROV_OCHOA, 2418.14, {
+  c('MAT-06-054', PROV_OCHOA, 2418.14, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-53-plancha-04690234',
     art: 'MDF HIDROFUGO (ATADO=53 PLANCHA)',
     sku: '04-69-0234',
@@ -4224,7 +4224,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-53-plancha-04690234',
     nota: 'MDF HIDROFUGO (ATADO=53 PLANCHA) · artículo 04-69-0234 · ref. 4X8-18MM-3/4 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-057', PROV_OCHOA, 1309.97, {
+  c('MAT-06-055', PROV_OCHOA, 1309.97, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-106-plancha-04690231',
     art: 'MDF HIDROFUGO (ATADO=106 PLANCHA)',
     sku: '04-69-0231',
@@ -4232,7 +4232,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-106-plancha-04690231',
     nota: 'MDF HIDROFUGO (ATADO=106 PLANCHA) · artículo 04-69-0231 · ref. 4X8-9MM-3/8 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-058', PROV_OCHOA, 2015.78, {
+  c('MAT-06-056', PROV_OCHOA, 2015.78, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mdf-hidrofugo-atado-64-plancha-04690233',
     art: 'MDF HIDROFUGO (ATADO=64 PLANCHA)',
     sku: '04-69-0233',
@@ -4240,7 +4240,7 @@
     url: 'https://ochoa.com.do/producto/mdf-hidrofugo-atado-64-plancha-04690233',
     nota: 'MDF HIDROFUGO (ATADO=64 PLANCHA) · artículo 04-69-0233 · ref. 4X8-15MM-5/8 · marca BRASIL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-059', PROV_INNOVA, 825, {
+  c('MAT-06-057', PROV_INNOVA, 825, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-4-7-004927',
     art: 'PLYWOOD PINO 4\'X8\'X1/4"',
     sku: '004927',
@@ -4248,7 +4248,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x1-3-4-7-004927',
     nota: 'PLYWOOD PINO 4\'X8\'X1/4" · artículo 004927 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-060', PROV_INNOVA, 780, {
+  c('MAT-06-058', PROV_INNOVA, 780, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-4-7-025848',
     art: 'PLYWOOD OKUME 4\'X8\'X1/4"',
     sku: '025848',
@@ -4256,7 +4256,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-4-7-025848',
     nota: 'PLYWOOD OKUME 4\'X8\'X1/4" · artículo 025848 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-061', PROV_INNOVA, 475, {
+  c('MAT-06-059', PROV_INNOVA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-8-7-025847',
     art: 'PLYWOOD OKUME 4\'X8\'X1/8"',
     sku: '025847',
@@ -4264,7 +4264,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x1-3-8-7-025847',
     nota: 'PLYWOOD OKUME 4\'X8\'X1/8" · artículo 025847 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-062', PROV_INNOVA, 1115, {
+  c('MAT-06-060', PROV_INNOVA, 1115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-8-7-025849',
     art: 'PLYWOOD OKUME 4\'X8\'X3/8"',
     sku: '025849',
@@ -4272,7 +4272,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-okume-4-x8-x3-3-8-7-025849',
     nota: 'PLYWOOD OKUME 4\'X8\'X3/8" · artículo 025849 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-062', PROV_INNOVA, 1245, {
+  c('MAT-06-060', PROV_INNOVA, 1245, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-8-7-004928',
     art: 'PLYWOOD PINO 4\'X8\'X3/8"',
     sku: '004928',
@@ -4280,7 +4280,7 @@
     url: 'https://www.innovacentro.com.do/planchasdeplywood/plywood-pino-4-x8-x3-3-8-7-004928',
     nota: 'PLYWOOD PINO 4\'X8\'X3/8" · artículo 004928 · ref. Plywood · marca INNOMATE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-06-063', PROV_INNOVA, 1995, {
+  c('MAT-06-061', PROV_INNOVA, 1995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/planchasdeplywood/plywood-slatwall-decoratico-blco-4x8-029814',
     art: 'PLYWOOD SLATWALL DECORATICO BLCO 4X8\'',
     sku: '029814',
@@ -57487,3654 +57487,3696 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 12 x 1/2" x 2.0 Hembra · artículo 126705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-075', PROV_BELLON, 282, {
+  c('MAT-32-074', PROV_BELLON, 282, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 12 x 3/8" x 2.0 Hembra',
     sku: '205087',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 12 x 3/8" x 2.0 Hembra · artículo 205087. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-076', PROV_BELLON, 204, {
+  c('MAT-32-075', PROV_BELLON, 204, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra 1402G152504',
     sku: '135430',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra 1402G152504 · artículo 135430. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-077', PROV_BELLON, 349, {
+  c('MAT-32-075', PROV_BELLON, 349, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 3/4" x 2.5 Hembra',
     sku: '166096',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 3/4" x 2.5 Hembra · artículo 166096. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-078', PROV_BELLON, 279, {
+  c('MAT-32-075', PROV_BELLON, 279, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 3/8" x 2.5 Hembra',
     sku: '205095',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 3/8" x 2.5 Hembra · artículo 205095. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-079', PROV_BELLON, 253, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra',
-    sku: '209598',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra · artículo 209598. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-080', PROV_BELLON, 356, {
+  c('MAT-32-076', PROV_BELLON, 356, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 18 x 3/4" x 2.5 Hembra',
     sku: '135431',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 18 x 3/4" x 2.5 Hembra · artículo 135431. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-081', PROV_BELLON, 423, {
+  c('MAT-32-076', PROV_BELLON, 253, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra',
+    sku: '209598',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra · artículo 209598. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-077', PROV_BELLON, 423, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Enlace Flex Polietileno 25 x 3/4" Hembra 3462G002505',
     sku: '201321',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Enlace Flex Polietileno 25 x 3/4" Hembra 3462G002505 · artículo 201321. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-082', PROV_BELLON, 135, {
+  c('MAT-32-078', PROV_BELLON, 135, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Presión x 1/2" NPT Hembra (467)',
     sku: '51677',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Presión x 1/2" NPT Hembra (467) · artículo 51677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-082', PROV_BELLON, 154, {
+  c('MAT-32-078', PROV_BELLON, 154, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Campana x 1/2" NPT Hembra 4787',
     sku: '59062',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Campana x 1/2" NPT Hembra 4787 · artículo 59062. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-083', PROV_BELLON, 104, {
+  c('MAT-32-079', PROV_BELLON, 104, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Presión x 1/4" NPT Hembra (465)',
     sku: '190715',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Presión x 1/4" NPT Hembra (465) · artículo 190715. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-084', PROV_BELLON, 183, {
+  c('MAT-32-080', PROV_BELLON, 183, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Campana x 3/4" NPT Hembra (480)',
     sku: '52032',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Campana x 3/4" NPT Hembra (480) · artículo 52032. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-085', PROV_BELLON, 90, {
+  c('MAT-32-081', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Campana x 3/8" NPT Hembra 477',
     sku: '35087',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Campana x 3/8" NPT Hembra 477 · artículo 35087. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-086', PROV_BELLON, 535, {
+  c('MAT-32-082', PROV_BELLON, 535, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Enlace Flex Polietileno 32 x 1" Hembra',
     sku: '142957',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Enlace Flex Polietileno 32 x 1" Hembra · artículo 142957. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-087', PROV_BELLON, 11.01, {
+  c('MAT-32-083', PROV_BELLON, 11.01, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra CPVC 1/2"',
     sku: '11795',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra CPVC 1/2" · artículo 11795. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-088', PROV_BELLON, 26.25, {
+  c('MAT-32-084', PROV_BELLON, 26.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra CPVC 1"',
     sku: '51501',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra CPVC 1" · artículo 51501. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-089', PROV_BELLON, 27.22, {
+  c('MAT-32-085', PROV_BELLON, 27.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra CPVC 3/4"',
     sku: '11796',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra CPVC 3/4" · artículo 11796. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-090', PROV_BELLON, 106, {
+  c('MAT-32-086', PROV_BELLON, 106, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Plástica Hembra/Hembra Manguera 5/8"-3/4" Orbit 56121',
     sku: '195393',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Plástica Hembra/Hembra Manguera 5/8"-3/4" Orbit 56121 · artículo 195393. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-091', PROV_CIMA, 172, {
+  c('MAT-32-087', PROV_CIMA, 172, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-hembra-20mm-x-1-2-pp',
     art: 'ADAPTADOR HEMBRA 20mm X 1/2 PP',
     sku: '502015',
     url: 'https://ferreteriacima.com.do/products/adaptador-hembra-20mm-x-1-2-pp',
     nota: 'ADAPTADOR HEMBRA 20mm X 1/2 PP · artículo 502015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-091', PROV_BELLON, 69, {
+  c('MAT-32-087', PROV_BELLON, 69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 20mm (1/2") x 3/4" Verde Maximus',
     sku: '48636',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 20mm (1/2") x 3/4"  Verde Maximus · artículo 48636. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-091', PROV_BELLON, 58.58, {
+  c('MAT-32-087', PROV_BELLON, 58.58, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 20mm (1/2") x 1/2" Verde Maximus',
     sku: '126714',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 20mm (1/2") x 1/2" Verde Maximus · artículo 126714. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-092', PROV_BELLON, 76, {
+  c('MAT-32-088', PROV_BELLON, 76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 25mm (3/4") x 3/4" Verde Maximus',
     sku: '206928',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 25mm (3/4") x 3/4" Verde Maximus · artículo 206928. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-092', PROV_BELLON, 60, {
+  c('MAT-32-088', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 25mm (3/4") x 1/2" Maximus',
     sku: '206936',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 25mm (3/4") x 1/2" Maximus · artículo 206936. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-093', PROV_BELLON, 56.64, {
+  c('MAT-32-089', PROV_BELLON, 56.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 32mm (1") x 1/2" Verde Maximus',
     sku: '48635',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 32mm (1") x 1/2" Verde Maximus · artículo 48635. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-093', PROV_BELLON, 140, {
+  c('MAT-32-089', PROV_BELLON, 140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 32mm (1") x 1" Verde Maximus',
     sku: '48637',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 32mm (1") x 1" Verde Maximus · artículo 48637. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-093', PROV_BELLON, 80, {
+  c('MAT-32-089', PROV_BELLON, 80, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 32mm (1") x 3/4" Verde Maximus',
     sku: '52463',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 32mm (1") x 3/4" Verde Maximus · artículo 52463. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-094', PROV_BELLON, 270, {
+  c('MAT-32-090', PROV_BELLON, 270, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PPR 50mm (2") x 1 1/2" Verde Maximus',
     sku: '52462',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PPR 50mm (2") x 1 1/2" Verde Maximus · artículo 52462. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-095', PROV_CIMA, 75, {
+  c('MAT-32-091', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-5',
     art: 'ADAPTADOR PVC HEMBRA 1.5',
     sku: '030318',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-5',
     nota: 'ADAPTADOR PVC HEMBRA 1.5 · artículo 030318. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-095', PROV_BELLON, 29.04, {
+  c('MAT-32-091', PROV_BELLON, 29.04, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1 1/2" Sonaca',
     sku: '11797',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1 1/2" Sonaca · artículo 11797. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-095', PROV_BELLON, 65.26, {
+  c('MAT-32-091', PROV_BELLON, 65.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1 1/2" gris SCH-80',
     sku: '11805',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1 1/2" gris SCH-80 · artículo 11805. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-095', PROV_BELLON, 19.21, {
+  c('MAT-32-091', PROV_BELLON, 19.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1 1/2" Maximus',
     sku: '234654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1 1/2" Maximus · artículo 234654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-096', PROV_CIMA, 20, {
+  c('MAT-32-092', PROV_CIMA, 20, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-2',
     art: 'ADAPTADOR PVC HEMBRA 1/2',
     sku: '030315',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1-2',
     nota: 'ADAPTADOR PVC HEMBRA 1/2 · artículo 030315. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-096', PROV_BELLON, 6.9, {
+  c('MAT-32-092', PROV_BELLON, 6.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1/2" Sonaca',
     sku: '11799',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1/2" Sonaca · artículo 11799. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-096', PROV_BELLON, 14.11, {
+  c('MAT-32-092', PROV_BELLON, 14.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1/2" Gris SCH80',
     sku: '208981',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1/2" Gris SCH80 · artículo 208981. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-096', PROV_BELLON, 4.73, {
+  c('MAT-32-092', PROV_BELLON, 4.73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1/2" Maximus',
     sku: '221270',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1/2" Maximus · artículo 221270. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-097', PROV_CIMA, 45, {
+  c('MAT-32-093', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1',
     art: 'ADAPTADOR PVC HEMBRA 1',
     sku: '030317',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-1',
     nota: 'ADAPTADOR PVC HEMBRA 1 · artículo 030317. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-097', PROV_BELLON, 15.35, {
+  c('MAT-32-093', PROV_BELLON, 15.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1" Sonaca',
     sku: '11798',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1" Sonaca · artículo 11798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-097', PROV_BELLON, 31.9, {
+  c('MAT-32-093', PROV_BELLON, 31.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1" Gris SCH80',
     sku: '185191',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1" Gris SCH80 · artículo 185191. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-097', PROV_BELLON, 11.28, {
+  c('MAT-32-093', PROV_BELLON, 11.28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 1" Maximus',
     sku: '221272',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 1" Maximus · artículo 221272. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-098', PROV_CIMA, 130, {
+  c('MAT-32-094', PROV_CIMA, 130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-2',
     art: 'ADAPTADOR PVC HEMBRA 2',
     sku: '030319',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-2',
     nota: 'ADAPTADOR PVC HEMBRA 2 · artículo 030319. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-098', PROV_BELLON, 40.06, {
+  c('MAT-32-094', PROV_BELLON, 40.06, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 2" Sonaca',
     sku: '11800',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 2" Sonaca · artículo 11800. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-098', PROV_BELLON, 94.5, {
+  c('MAT-32-094', PROV_BELLON, 94.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 2" Gris SCH80',
     sku: '185196',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 2" Gris SCH80 · artículo 185196. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-098', PROV_BELLON, 27.15, {
+  c('MAT-32-094', PROV_BELLON, 27.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 2" Maximus',
     sku: '234655',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 2" Maximus · artículo 234655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-099', PROV_CIMA, 26, {
+  c('MAT-32-095', PROV_CIMA, 26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3-4',
     art: 'ADAPTADOR PVC HEMBRA 3/4',
     sku: '030316',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3-4',
     nota: 'ADAPTADOR PVC HEMBRA 3/4 · artículo 030316. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-099', PROV_BELLON, 10.29, {
+  c('MAT-32-095', PROV_BELLON, 10.29, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3/4" Sonaca',
     sku: '11802',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3/4" Sonaca · artículo 11802. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-099', PROV_BELLON, 29.4, {
+  c('MAT-32-095', PROV_BELLON, 29.4, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3/4" Gris',
     sku: '224501',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3/4" Gris · artículo 224501. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-099', PROV_BELLON, 6.78, {
+  c('MAT-32-095', PROV_BELLON, 6.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3/4" Maximus',
     sku: '234657',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3/4" Maximus · artículo 234657. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-099', PROV_BELLON, 25.11, {
+  c('MAT-32-095', PROV_BELLON, 25.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3/4" Gris SCH80',
     sku: '235401',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3/4" Gris SCH80 · artículo 235401. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-100', PROV_CIMA, 177, {
+  c('MAT-32-096', PROV_CIMA, 177, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3',
     art: 'ADAPTADOR PVC HEMBRA 3',
     sku: '016404',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-3',
     nota: 'ADAPTADOR PVC HEMBRA 3 · artículo 016404. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-100', PROV_BELLON, 81.23, {
+  c('MAT-32-096', PROV_BELLON, 81.23, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3" Sonaca',
     sku: '11801',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3" Sonaca · artículo 11801. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-100', PROV_BELLON, 70.8, {
+  c('MAT-32-096', PROV_BELLON, 70.8, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 3" Maximus',
     sku: '234656',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 3" Maximus · artículo 234656. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-101', PROV_CIMA, 172, {
+  c('MAT-32-097', PROV_CIMA, 172, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-hembra-4',
     art: 'ADAPTADOR PVC HEMBRA 4',
     sku: '016403',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-hembra-4',
     nota: 'ADAPTADOR PVC HEMBRA 4 · artículo 016403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-101', PROV_BELLON, 128.31, {
+  c('MAT-32-097', PROV_BELLON, 128.31, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 4" Sonaca',
     sku: '11803',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 4" Sonaca · artículo 11803. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-101', PROV_BELLON, 94, {
+  c('MAT-32-097', PROV_BELLON, 94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 4" Maximus',
     sku: '234658',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 4" Maximus · artículo 234658. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-102', PROV_BELLON, 790, {
+  c('MAT-32-098', PROV_BELLON, 790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Hembra PVC 6" Durm-Lasc-Era',
     sku: '11804',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Hembra PVC 6"  Durm-Lasc-Era · artículo 11804. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-103', PROV_BELLON, 88, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Adaptador Bronce 5/16" Presión x 3/8" NPT Macho',
-    sku: '68762',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Adaptador Bronce 5/16" Presión x 3/8" NPT Macho · artículo 68762. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-104', PROV_BELLON, 200, {
+  c('MAT-32-099', PROV_BELLON, 200, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" Campana x 1/2 NPT Macho (674) B3-408-8',
     sku: '665',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" Campana x 1/2 NPT Macho (674) B3-408-8 · artículo 665. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-104', PROV_BELLON, 154, {
+  c('MAT-32-099', PROV_BELLON, 154, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" Presión x 1/2 NPT Macho 306',
     sku: '668',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" Presión x 1/2 NPT Macho 306 · artículo 668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-104', PROV_BELLON, 111, {
+  c('MAT-32-099', PROV_BELLON, 111, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" NPT Macho x 1/2" Hembra 1045',
     sku: '201060',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" NPT Macho x 1/2" Hembra 1045 · artículo 201060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-105', PROV_BELLON, 196, {
+  c('MAT-32-100', PROV_BELLON, 196, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" Campana x 3/4 NPT Macho 652',
     sku: '52414',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" Campana x 3/4 NPT Macho 652 · artículo 52414. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-106', PROV_BELLON, 137, {
+  c('MAT-32-101', PROV_BELLON, 137, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" Presión x 3/8" NPT Macho (337)',
     sku: '2431',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" Presión x 3/8" NPT Macho (337) · artículo 2431. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-106', PROV_BELLON, 94, {
+  c('MAT-32-101', PROV_BELLON, 94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/2" Campana x 3/8 NPT Macho (669)/0737',
     sku: '35093',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/2" Campana x 3/8 NPT Macho (669)/0737 · artículo 35093. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-107', PROV_BELLON, 120, {
+  c('MAT-32-102', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" Presión x 1/2" NPT Macho (278)',
     sku: '35091',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" Presión x 1/2" NPT Macho (278) · artículo 35091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-108', PROV_BELLON, 88, {
+  c('MAT-32-103', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" Presión x 1/4" NPT Macho 303',
     sku: '669',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" Presión x 1/4" NPT Macho 303 · artículo 669. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-108', PROV_BELLON, 62.17, {
+  c('MAT-32-103', PROV_BELLON, 62.17, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" Campana x 1/4" NPT Macho 672',
     sku: '52536',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" Campana x 1/4" NPT Macho 672 · artículo 52536. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-109', PROV_BELLON, 60, {
+  c('MAT-32-104', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" Presión x 1/8" NPT Macho (302)',
     sku: '35208',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" Presión x 1/8" NPT Macho (302) · artículo 35208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-109', PROV_BELLON, 43, {
+  c('MAT-32-104', PROV_BELLON, 43, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" NPT Hembra x 1/8" NPT Macho 120A-BA',
     sku: '38597',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" NPT Hembra x 1/8" NPT Macho 120A-BA · artículo 38597. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-110', PROV_BELLON, 81, {
+  c('MAT-32-105', PROV_BELLON, 81, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 1/4" Presión x 3/8" NPT Macho (296)',
     sku: '2424',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 1/4" Presión x 3/8" NPT Macho (296) · artículo 2424. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-111', PROV_BELLON, 232, {
+  c('MAT-32-106', PROV_BELLON, 232, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 12 x 1/2" x 2.0 Macho',
     sku: '43023',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 12 x 1/2" x 2.0 Macho · artículo 43023. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-112', PROV_BELLON, 326, {
+  c('MAT-32-106', PROV_BELLON, 326, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 12 x 3/8" x 2.0 Macho',
     sku: '205081',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 12 x 3/8" x 2.0 Macho · artículo 205081. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-113', PROV_BELLON, 205, {
+  c('MAT-32-107', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 1/2" x 2.5 Macho',
     sku: '135433',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 1/2" x 2.5 Macho · artículo 135433. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-114', PROV_BELLON, 377, {
+  c('MAT-32-107', PROV_BELLON, 377, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 3/4" x 2.5 Macho',
     sku: '205080',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 3/4" x 2.5 Macho · artículo 205080. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-115', PROV_BELLON, 309, {
+  c('MAT-32-107', PROV_BELLON, 309, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 15 x 3/8" x 2.5 Macho',
     sku: '205113',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 15 x 3/8" x 2.5 Macho · artículo 205113. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-116', PROV_BELLON, 232, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho',
-    sku: '192553',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho · artículo 192553. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-117', PROV_BELLON, 315, {
+  c('MAT-32-108', PROV_BELLON, 315, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Flex 18 x 3/4" x 2.5 Macho',
     sku: '135434',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Flex 18 x 3/4" x 2.5 Macho · artículo 135434. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-118', PROV_BELLON, 390, {
+  c('MAT-32-108', PROV_BELLON, 232, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho',
+    sku: '192553',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho · artículo 192553. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-109', PROV_BELLON, 390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Enlace Flex Polietileno 25 x 3/4" Macho',
     sku: '142960',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Enlace Flex Polietileno 25 x 3/4" Macho · artículo 142960. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-119', PROV_BELLON, 149, {
+  c('MAT-32-110', PROV_BELLON, 149, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Presión x 1/2" NPT Macho (297) SPC-432',
     sku: '2422',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Presión x 1/2" NPT Macho (297) SPC-432 · artículo 2422. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-120', PROV_BELLON, 68, {
+  c('MAT-32-111', PROV_BELLON, 68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Campana x 3/8" NPT Macho (678)',
     sku: '667',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Campana x 3/8" NPT Macho (678) · artículo 667. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-120', PROV_BELLON, 88, {
+  c('MAT-32-111', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 3/8" Presión x 3/8" NPT Macho (298)',
     sku: '670',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 3/8" Presión x 3/8" NPT Macho (298) · artículo 670. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-121', PROV_BELLON, 597, {
+  c('MAT-32-112', PROV_BELLON, 597, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce Enlace Flex Polietileno 32 x 1" Macho 3460G003206CR',
     sku: '142962',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce Enlace Flex Polietileno 32 x 1" Macho 3460G003206CR · artículo 142962. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-122', PROV_BELLON, 152, {
+  c('MAT-32-113', PROV_BELLON, 88, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Adaptador Bronce 5/16" Presión x 3/8" NPT Macho',
+    sku: '68762',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Adaptador Bronce 5/16" Presión x 3/8" NPT Macho · artículo 68762. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-114', PROV_BELLON, 152, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce 5/8" Presión x 1/2" NPT Macho 307',
     sku: '48410',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce 5/8" Presión x 1/2" NPT Macho 307 · artículo 48410. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-123', PROV_BELLON, 119, {
+  c('MAT-32-115', PROV_BELLON, 119, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho Cobre 1" NPT x 1 1/8"',
     sku: '58667',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho Cobre 1" NPT x 1 1/8" · artículo 58667. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-124', PROV_BELLON, 13, {
+  c('MAT-32-116', PROV_BELLON, 13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho CPVC 1/2"',
     sku: '11807',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho CPVC 1/2" · artículo 11807. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-125', PROV_BELLON, 32.71, {
+  c('MAT-32-117', PROV_BELLON, 32.71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho CPVC 1"',
     sku: '11806',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho CPVC 1" · artículo 11806. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-126', PROV_BELLON, 18.22, {
+  c('MAT-32-118', PROV_BELLON, 18.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho CPVC 3/4" FOSET CPVC-612 45099',
     sku: '11808',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho CPVC 3/4" FOSET CPVC-612 45099 · artículo 11808. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-127', PROV_BELLON, 155, {
+  c('MAT-32-119', PROV_BELLON, 155, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Tinaco Plástico Macho 1/2" 1070200',
     sku: '212403',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Tinaco Plástico Macho 1/2" 1070200 · artículo 212403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-128', PROV_BELLON, 190, {
+  c('MAT-32-120', PROV_BELLON, 190, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Tinaco Plástico Macho 1" 1070202/004587',
     sku: '161067',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Tinaco Plástico Macho 1" 1070202/004587 · artículo 161067. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-129', PROV_BELLON, 285, {
+  c('MAT-32-121', PROV_BELLON, 285, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Tinaco Plastico Macho 2"',
     sku: '228735',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Tinaco Plastico Macho 2" · artículo 228735. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-130', PROV_BELLON, 187, {
+  c('MAT-32-122', PROV_BELLON, 187, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Tinaco Plástico Macho 3/4" 003116/1070201',
     sku: '212402',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Tinaco Plástico Macho 3/4" 003116/1070201 · artículo 212402. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-131', PROV_CIMA, 188, {
+  c('MAT-32-123', PROV_CIMA, 188, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-3-4-pp',
     art: 'ADAPTADOR MACHO 20mm X 3/4 PP',
     sku: '7468910221008',
     url: 'https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-3-4-pp',
     nota: 'ADAPTADOR MACHO 20mm X 3/4 PP · artículo 7468910221008. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-131', PROV_CIMA, 205, {
+  c('MAT-32-123', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-1-2-pp',
     art: 'ADAPTADOR MACHO 20mm X 1/2 PP',
     sku: '552015',
     url: 'https://ferreteriacima.com.do/products/adaptador-macho-20mm-x-1-2-pp',
     nota: 'ADAPTADOR MACHO 20mm X 1/2 PP · artículo 552015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-131', PROV_BELLON, 63.5, {
+  c('MAT-32-123', PROV_BELLON, 63.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 20mm (1/2") x 1/2" Verde Maximus',
     sku: '48613',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 20mm (1/2") x 1/2" Verde Maximus · artículo 48613. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-131', PROV_BELLON, 84.11, {
+  c('MAT-32-123', PROV_BELLON, 84.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 20mm (1/2") x 3/4" Verde Maximus',
     sku: '206931',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 20mm (1/2") x 3/4" Verde Maximus · artículo 206931. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-132', PROV_CIMA, 253, {
+  c('MAT-32-124', PROV_CIMA, 253, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-macho-25mm-x-3-4-ppr',
     art: 'ADAPTADOR MACHO 25mm X 3/4 PPR',
     sku: '0475621',
     url: 'https://ferreteriacima.com.do/products/adaptador-macho-25mm-x-3-4-ppr',
     nota: 'ADAPTADOR MACHO 25mm X 3/4 PPR · artículo 0475621. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-132', PROV_BELLON, 91, {
+  c('MAT-32-124', PROV_BELLON, 91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 25mm (3/4") x 3/4" Verde Maximus',
     sku: '48634',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 25mm (3/4") x 3/4" Verde Maximus · artículo 48634. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-132', PROV_BELLON, 74.16, {
+  c('MAT-32-124', PROV_BELLON, 74.16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 25mm (3/4") x 1/2" Verde Maximus',
     sku: '204828',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 25mm (3/4") x 1/2" Verde Maximus · artículo 204828. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-133', PROV_BELLON, 175, {
+  c('MAT-32-125', PROV_BELLON, 175, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 32mm (1") x 1" Verde Maximus',
     sku: '48619',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 32mm (1") x 1" Verde Maximus · artículo 48619. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-133', PROV_BELLON, 78.15, {
+  c('MAT-32-125', PROV_BELLON, 78.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 32mm (1") x 1/2" Verde Maximus',
     sku: '51747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 32mm (1") x 1/2" Verde Maximus · artículo 51747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-133', PROV_BELLON, 83.45, {
+  c('MAT-32-125', PROV_BELLON, 83.45, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 32mm (1") x 3/4" Verde Maximus',
     sku: '126805',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 32mm (1") x 3/4" Verde Maximus · artículo 126805. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-134', PROV_BELLON, 310, {
+  c('MAT-32-126', PROV_BELLON, 310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PPR 50mm (2") x 1 1/2" Verde Maximus',
     sku: '51748',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PPR 50mm (2") x 1 1/2" Verde Maximus · artículo 51748. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-135', PROV_CIMA, 95, {
+  c('MAT-32-127', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-5',
     art: 'ADAPTADOR PVC MACHO 1.5',
     sku: '030313',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-5',
     nota: 'ADAPTADOR PVC MACHO 1.5 · artículo 030313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-135', PROV_BELLON, 27.15, {
+  c('MAT-32-127', PROV_BELLON, 27.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1 1/2" Sonaca',
     sku: '11809',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1 1/2" Sonaca · artículo 11809. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-135', PROV_BELLON, 41.86, {
+  c('MAT-32-127', PROV_BELLON, 41.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1 1/2" SCH80',
     sku: '11817',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1 1/2" SCH80 · artículo 11817. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-135', PROV_BELLON, 19.31, {
+  c('MAT-32-127', PROV_BELLON, 19.31, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1 1/2" Maximus',
     sku: '234659',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1 1/2" Maximus · artículo 234659. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-136', PROV_CIMA, 26, {
+  c('MAT-32-128', PROV_CIMA, 26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-2',
     art: 'ADAPTADOR PVC MACHO 1/2',
     sku: '030310',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-1-2',
     nota: 'ADAPTADOR PVC MACHO 1/2 · artículo 030310. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-136', PROV_BELLON, 5.36, {
+  c('MAT-32-128', PROV_BELLON, 5.36, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1/2" Sonaca',
     sku: '11811',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1/2" Sonaca · artículo 11811. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-136', PROV_BELLON, 4.08, {
+  c('MAT-32-128', PROV_BELLON, 4.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1/2" Maximus',
     sku: '221273',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1/2" Maximus · artículo 221273. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-137', PROV_CIMA, 40, {
+  c('MAT-32-129', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-1',
     art: 'ADAPTADOR PVC MACHO 1',
     sku: '030312',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-1',
     nota: 'ADAPTADOR PVC MACHO 1 · artículo 030312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-137', PROV_BELLON, 12.75, {
+  c('MAT-32-129', PROV_BELLON, 12.75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1" Sonaca',
     sku: '11810',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1" Sonaca · artículo 11810. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-137', PROV_BELLON, 23.64, {
+  c('MAT-32-129', PROV_BELLON, 23.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1" Gris SCH80',
     sku: '208960',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1" Gris SCH80 · artículo 208960. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-137', PROV_BELLON, 8.73, {
+  c('MAT-32-129', PROV_BELLON, 8.73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 1" Maximus',
     sku: '234660',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 1" Maximus · artículo 234660. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-138', PROV_CIMA, 105, {
+  c('MAT-32-130', PROV_CIMA, 105, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-2',
     art: 'ADAPTADOR PVC MACHO 2',
     sku: '030314',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-2',
     nota: 'ADAPTADOR PVC MACHO 2 · artículo 030314. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-138', PROV_BELLON, 35.19, {
+  c('MAT-32-130', PROV_BELLON, 35.19, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 2" Sonaca',
     sku: '11812',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 2" Sonaca · artículo 11812. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-138', PROV_BELLON, 126, {
+  c('MAT-32-130', PROV_BELLON, 126, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 2" SCH80 Gris',
     sku: '52755',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 2" SCH80 Gris · artículo 52755. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-138', PROV_BELLON, 60.76, {
+  c('MAT-32-130', PROV_BELLON, 60.76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 2" Gris SCH80',
     sku: '120081',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 2" Gris SCH80 · artículo 120081. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-138', PROV_BELLON, 28.05, {
+  c('MAT-32-130', PROV_BELLON, 28.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 2" Maximus',
     sku: '234661',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 2" Maximus · artículo 234661. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-139', PROV_CIMA, 26, {
+  c('MAT-32-131', PROV_CIMA, 26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-3-4',
     art: 'ADAPTADOR PVC MACHO 3/4',
     sku: '030311',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-3-4',
     nota: 'ADAPTADOR PVC MACHO 3/4 · artículo 030311. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-139', PROV_BELLON, 7.31, {
+  c('MAT-32-131', PROV_BELLON, 7.31, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3/4" Sonaca',
     sku: '11814',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3/4" Sonaca · artículo 11814. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-139', PROV_BELLON, 14.18, {
+  c('MAT-32-131', PROV_BELLON, 14.18, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3/4" Gris SCH80',
     sku: '187128',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3/4" Gris SCH80 · artículo 187128. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-139', PROV_BELLON, 5.62, {
+  c('MAT-32-131', PROV_BELLON, 5.62, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3/4" Maximus',
     sku: '221274',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3/4" Maximus · artículo 221274. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-140', PROV_CIMA, 271, {
+  c('MAT-32-132', PROV_CIMA, 271, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-3',
     art: 'ADAPTADOR PVC MACHO 3',
     sku: '016406',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-3',
     nota: 'ADAPTADOR PVC MACHO 3 · artículo 016406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-140', PROV_BELLON, 117, {
+  c('MAT-32-132', PROV_BELLON, 117, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3" Sonaca',
     sku: '11813',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3" Sonaca · artículo 11813. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-140', PROV_BELLON, 197, {
+  c('MAT-32-132', PROV_BELLON, 197, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3" Gris SCH80',
     sku: '215547',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3" Gris SCH80 · artículo 215547. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-140', PROV_BELLON, 85, {
+  c('MAT-32-132', PROV_BELLON, 85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 3" Maximus',
     sku: '234662',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 3" Maximus · artículo 234662. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-141', PROV_CIMA, 291, {
+  c('MAT-32-133', PROV_CIMA, 291, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/adaptador-pvc-macho-4',
     art: 'ADAPTADOR PVC MACHO 4',
     sku: '016405',
     url: 'https://ferreteriacima.com.do/products/adaptador-pvc-macho-4',
     nota: 'ADAPTADOR PVC MACHO 4 · artículo 016405. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-141', PROV_BELLON, 178.97, {
+  c('MAT-32-133', PROV_BELLON, 178.97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 4" Sonaca',
     sku: '11815',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 4" Sonaca · artículo 11815. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-141', PROV_BELLON, 341, {
+  c('MAT-32-133', PROV_BELLON, 341, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 4" SCH80',
     sku: '113401',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 4" SCH80 · artículo 113401. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-141', PROV_BELLON, 120, {
+  c('MAT-32-133', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 4" Maximus',
     sku: '234663',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 4" Maximus · artículo 234663. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-142', PROV_BELLON, 567, {
+  c('MAT-32-134', PROV_BELLON, 567, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Macho PVC 6" Durm-Lasc-Era',
     sku: '11816',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Macho PVC 6" Durm-Lasc-Era · artículo 11816. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-143', PROV_BELLON, 176, {
+  c('MAT-32-135', PROV_BELLON, 176, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Adaptador Bronce P/Estufa 7/8" Campana x 1/2" NPT (728)',
     sku: '59507',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Adaptador Bronce P/Estufa 7/8" Campana x 1/2" NPT (728) · artículo 59507. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-144', PROV_CIMA, 31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-3-16',
-    art: 'ANILLA COBRE 3/16',
-    sku: '030895',
-    url: 'https://ferreteriacima.com.do/products/anilla-cobre-3-16',
-    nota: 'ANILLA COBRE 3/16 · artículo 030895. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-145', PROV_CIMA, 19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-5-16',
-    art: 'ANILLA COBRE 5/16',
-    sku: '030896',
-    url: 'https://ferreteriacima.com.do/products/anilla-cobre-5-16',
-    nota: 'ANILLA COBRE 5/16 · artículo 030896. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-146', PROV_CIMA, 32, {
+  c('MAT-32-136', PROV_CIMA, 32, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-1-2',
     art: 'ANILLA COBRE 1/2',
     sku: '018507',
     url: 'https://ferreteriacima.com.do/products/anilla-cobre-1-2',
     nota: 'ANILLA COBRE 1/2 · artículo 018507. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-147', PROV_CIMA, 31, {
+  c('MAT-32-137', PROV_CIMA, 31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-1-4',
     art: 'ANILLA COBRE 1/4',
     sku: '017507',
     url: 'https://ferreteriacima.com.do/products/anilla-cobre-1-4',
     nota: 'ANILLA COBRE 1/4 · artículo 017507. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-148', PROV_CIMA, 31, {
+  c('MAT-32-138', PROV_CIMA, 31, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-3-16',
+    art: 'ANILLA COBRE 3/16',
+    sku: '030895',
+    url: 'https://ferreteriacima.com.do/products/anilla-cobre-3-16',
+    nota: 'ANILLA COBRE 3/16 · artículo 030895. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-139', PROV_CIMA, 31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-3-8',
     art: 'ANILLA COBRE 3/8',
     sku: '031895',
     url: 'https://ferreteriacima.com.do/products/anilla-cobre-3-8',
     nota: 'ANILLA COBRE 3/8 · artículo 031895. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-149', PROV_BELLON, 10.5, {
+  c('MAT-32-140', PROV_CIMA, 19, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/anilla-cobre-5-16',
+    art: 'ANILLA COBRE 5/16',
+    sku: '030896',
+    url: 'https://ferreteriacima.com.do/products/anilla-cobre-5-16',
+    nota: 'ANILLA COBRE 5/16 · artículo 030896. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-141', PROV_BELLON, 10.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 1/2" x 45º',
     sku: '167346',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 1/2" x 45º · artículo 167346. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-150', PROV_BELLON, 33.39, {
+  c('MAT-32-142', PROV_BELLON, 33.39, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 1" x 45º',
     sku: '76282',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 1" x 45º · artículo 76282. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-151', PROV_BELLON, 25.61, {
+  c('MAT-32-143', PROV_BELLON, 25.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 3/4" x 45º',
     sku: '167437',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 3/4" x 45º · artículo 167437. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-152', PROV_BELLON, 120, {
+  c('MAT-32-144', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1 1/2" x 45º',
     sku: '14759',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1 1/2" x 45º · artículo 14759. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-153', PROV_BELLON, 25.82, {
+  c('MAT-32-145', PROV_BELLON, 25.82, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1/2" x 45º',
     sku: '14765',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1/2" x 45º · artículo 14765. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-154', PROV_BELLON, 35.9, {
+  c('MAT-32-146', PROV_BELLON, 35.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1/4" x 45º',
     sku: '49383',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1/4" x 45º · artículo 49383. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-155', PROV_BELLON, 57, {
+  c('MAT-32-147', PROV_BELLON, 57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1" x 45º',
     sku: '14763',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1" x 45º · artículo 14763. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-156', PROV_BELLON, 181, {
+  c('MAT-32-148', PROV_BELLON, 181, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 2" x 45º',
     sku: '14769',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 2" x 45º · artículo 14769. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-157', PROV_BELLON, 4.27, {
+  c('MAT-32-149', PROV_BELLON, 4.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 3/8" x 45º',
     sku: '14773',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 3/8" x 45º · artículo 14773. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-158', PROV_BELLON, 5.85, {
+  c('MAT-32-150', PROV_BELLON, 5.85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 45º Verde Maximus',
     sku: '48618',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2") x 45º Verde Maximus · artículo 48618. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-159', PROV_CIMA, 37, {
+  c('MAT-32-151', PROV_CIMA, 37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-25mm-x-45-ppr',
     art: 'CODO 25mm X 45 PPR',
     sku: '069655',
     url: 'https://ferreteriacima.com.do/products/codo-25mm-x-45-ppr',
     nota: 'CODO 25mm X 45 PPR · artículo 069655. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-159', PROV_BELLON, 8.08, {
+  c('MAT-32-151', PROV_BELLON, 8.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 45º Verde Maximus',
     sku: '48609',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 45º Verde Maximus · artículo 48609. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-160', PROV_BELLON, 14.42, {
+  c('MAT-32-152', PROV_BELLON, 14.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 32mm (1") x 45º Verde Maximus',
     sku: '221673',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 32mm (1") x 45º Verde Maximus · artículo 221673. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-161', PROV_BELLON, 46.63, {
+  c('MAT-32-153', PROV_BELLON, 46.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 50mm (1 1/2") x 45º Verde Maximus',
     sku: '206929',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 50mm (1 1/2") x 45º Verde Maximus · artículo 206929. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-162', PROV_CIMA, 45, {
+  c('MAT-32-154', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-45',
     art: 'CODO PVC DRENAJE 1.5 x 45',
     sku: '030380',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-45',
     nota: 'CODO PVC DRENAJE 1.5 x 45 · artículo 030380. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-162', PROV_BELLON, 14.84, {
+  c('MAT-32-154', PROV_BELLON, 14.84, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 1 1/2" x 45º Sonaca',
     sku: '12071',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 1 1/2" x 45º Sonaca · artículo 12071. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-162', PROV_BELLON, 11, {
+  c('MAT-32-154', PROV_BELLON, 11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 1 1/2" x 45º Maximus',
     sku: '234671',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 1 1/2" x 45º Maximus · artículo 234671. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-163', PROV_CIMA, 55, {
+  c('MAT-32-155', PROV_CIMA, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-45',
     art: 'CODO PVC DRENAJE 2 x 45',
     sku: '030328',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-45',
     nota: 'CODO PVC DRENAJE 2 x 45 · artículo 030328. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-163', PROV_BELLON, 20.33, {
+  c('MAT-32-155', PROV_BELLON, 20.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 2" x 45º Sonaca',
     sku: '12073',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 2" x 45º Sonaca · artículo 12073. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-163', PROV_BELLON, 15.6, {
+  c('MAT-32-155', PROV_BELLON, 15.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 2" x 45º Maximus',
     sku: '234672',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 2" x 45º Maximus · artículo 234672. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-164', PROV_CIMA, 85, {
+  c('MAT-32-156', PROV_CIMA, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-45',
     art: 'CODO PVC DRENAJE 3 x 45',
     sku: '030329',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-45',
     nota: 'CODO PVC DRENAJE 3 x 45 · artículo 030329. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-164', PROV_BELLON, 55.48, {
+  c('MAT-32-156', PROV_BELLON, 55.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 3" x 45º Sonaca',
     sku: '12075',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 3" x 45º Sonaca · artículo 12075. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-164', PROV_BELLON, 41, {
+  c('MAT-32-156', PROV_BELLON, 41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 3" x 45º Maximus',
     sku: '221288',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 3" x 45º Maximus · artículo 221288. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-165', PROV_CIMA, 135, {
+  c('MAT-32-157', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-4-x-45',
     art: 'CODO PVC DRENAJE 4 x 45',
     sku: '030330',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-4-x-45',
     nota: 'CODO PVC DRENAJE 4 x 45 · artículo 030330. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-165', PROV_BELLON, 90.86, {
+  c('MAT-32-157', PROV_BELLON, 90.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 4" x 45º Sonaca',
     sku: '12077',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 4" x 45º Sonaca · artículo 12077. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-165', PROV_BELLON, 66, {
+  c('MAT-32-157', PROV_BELLON, 66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 4" x 45º Maximus',
     sku: '221289',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 4" x 45º Maximus · artículo 221289. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-166', PROV_CIMA, 612, {
+  c('MAT-32-158', PROV_CIMA, 612, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-6-x-45',
     art: 'CODO PVC DRENAJE 6 X 45',
     sku: '069636',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-6-x-45',
     nota: 'CODO PVC DRENAJE 6 X 45 · artículo 069636. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-166', PROV_BELLON, 445, {
+  c('MAT-32-158', PROV_BELLON, 445, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 6" x 45º Maximus',
     sku: '133841',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 6" x 45º Maximus · artículo 133841. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-167', PROV_BELLON, 101, {
+  c('MAT-32-159', PROV_BELLON, 101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 1 1/2" x 45º Gris SCH80',
     sku: '217274',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 1 1/2" x 45º Gris SCH80 · artículo 217274. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-168', PROV_BELLON, 12.69, {
+  c('MAT-32-160', PROV_BELLON, 12.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 1/2" x 45º Gris SCH80',
     sku: '217276',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 1/2" x 45º Gris SCH80 · artículo 217276. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-169', PROV_BELLON, 33.87, {
+  c('MAT-32-161', PROV_BELLON, 33.87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 1" x 45º Gris SCH80',
     sku: '217275',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 1" x 45º Gris SCH80 · artículo 217275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-170', PROV_BELLON, 85.05, {
+  c('MAT-32-162', PROV_BELLON, 85.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 2" x 45º Gris SCH80',
     sku: '226374',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 2" x 45º Gris SCH80 · artículo 226374. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-171', PROV_BELLON, 20.29, {
+  c('MAT-32-163', PROV_BELLON, 20.29, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 3/4" x 45º Gris SCH80',
     sku: '235348',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 3/4" x 45º Gris SCH80 · artículo 235348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-172', PROV_CIMA, 65, {
+  c('MAT-32-164', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-45',
     art: 'CODO PVC PRESION 1.5 x 45',
     sku: '087417',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-45',
     nota: 'CODO PVC PRESION 1.5 x 45 · artículo 087417. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-172', PROV_BELLON, 29.55, {
+  c('MAT-32-164', PROV_BELLON, 29.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1 1/2" x 45º Sonaca',
     sku: '12079',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1 1/2" x 45º Sonaca · artículo 12079. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-173', PROV_CIMA, 35, {
+  c('MAT-32-165', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-45',
     art: 'CODO PVC PRESION 1/2 x 45',
     sku: '023338',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-45',
     nota: 'CODO PVC PRESION 1/2 x 45 · artículo 023338. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-173', PROV_BELLON, 7.08, {
+  c('MAT-32-165', PROV_BELLON, 7.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1/2" x 45º Sonaca',
     sku: '68356',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1/2" x 45º Sonaca · artículo 68356. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-173', PROV_BELLON, 4.75, {
+  c('MAT-32-165', PROV_BELLON, 4.75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1/2" x 45º Maximus',
     sku: '221275',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1/2" x 45º Maximus · artículo 221275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-174', PROV_CIMA, 90, {
+  c('MAT-32-166', PROV_CIMA, 90, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-45',
     art: 'CODO PVC PRESION 1 x 45',
     sku: '087428',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-45',
     nota: 'CODO PVC PRESION 1 x 45 · artículo 087428. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-174', PROV_BELLON, 22.03, {
+  c('MAT-32-166', PROV_BELLON, 22.03, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1" x 45º Sonaca',
     sku: '42578',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1" x 45º Sonaca · artículo 42578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-174', PROV_BELLON, 14.1, {
+  c('MAT-32-166', PROV_BELLON, 14.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1" x 45º Maximus',
     sku: '221277',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1" x 45º Maximus · artículo 221277. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-175', PROV_BELLON, 48.14, {
+  c('MAT-32-167', PROV_BELLON, 48.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 2" x 45º Sonaca-Durman',
     sku: '12084',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 2" x 45º Sonaca-Durman · artículo 12084. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-175', PROV_BELLON, 33.12, {
+  c('MAT-32-167', PROV_BELLON, 33.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 2" x 45º Maximus',
     sku: '234902',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 2" x 45º Maximus · artículo 234902. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-176', PROV_CIMA, 25, {
+  c('MAT-32-168', PROV_CIMA, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-45',
     art: 'CODO PVC PRESION 3/4 x 45',
     sku: '030390',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-45',
     nota: 'CODO PVC PRESION 3/4 x 45 · artículo 030390. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-176', PROV_BELLON, 12.38, {
+  c('MAT-32-168', PROV_BELLON, 12.38, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3/4" x 45º Sonaca',
     sku: '67623',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3/4" x 45º Sonaca · artículo 67623. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-176', PROV_BELLON, 9.05, {
+  c('MAT-32-168', PROV_BELLON, 9.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3/4" x 45º Maximus',
     sku: '221276',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3/4" x 45º Maximus · artículo 221276. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-177', PROV_BELLON, 142.32, {
+  c('MAT-32-169', PROV_BELLON, 142.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3" x 45º Sonaca-Durman',
     sku: '12086',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3" x 45º Sonaca-Durman · artículo 12086. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-178', PROV_BELLON, 273.86, {
+  c('MAT-32-170', PROV_BELLON, 273.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 4" x 45º Sonaca-Durman',
     sku: '12089',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 4" x 45º Sonaca-Durman · artículo 12089. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-179', PROV_BELLON, 915, {
+  c('MAT-32-171', PROV_BELLON, 915, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 6" x 45º Durman-Sonaca',
     sku: '47411',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 6" x 45º Durman-Sonaca · artículo 47411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-179', PROV_BELLON, 576, {
+  c('MAT-32-171', PROV_BELLON, 576, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 6" x 45º Maximus',
     sku: '242264',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 6" x 45º Maximus · artículo 242264. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-180', PROV_BELLON, 4409, {
+  c('MAT-32-172', PROV_BELLON, 4409, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 8" x 45º Durm-Lasc-Era',
     sku: '12094',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 8" x 45º Durm-Lasc-Era · artículo 12094. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-181', PROV_BELLON, 380, {
+  c('MAT-32-173', PROV_BELLON, 380, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 1 1/8" 90º',
     sku: '47416',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 1 1/8" 90º · artículo 47416. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-182', PROV_BELLON, 49.82, {
+  c('MAT-32-174', PROV_BELLON, 49.82, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 1/2" 90º',
     sku: '184',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 1/2" 90º · artículo 184. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-183', PROV_BELLON, 107, {
+  c('MAT-32-175', PROV_BELLON, 107, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 3/4" 90º',
     sku: '185',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 3/4" 90º · artículo 185. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-184', PROV_BELLON, 46.98, {
+  c('MAT-32-176', PROV_BELLON, 46.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 3/8" 90º',
     sku: '186',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 3/8" 90º · artículo 186. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-185', PROV_BELLON, 80, {
+  c('MAT-32-177', PROV_BELLON, 80, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 5/8" 90º',
     sku: '187',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 5/8" 90º · artículo 187. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-186', PROV_BELLON, 159, {
+  c('MAT-32-178', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Cobre 7/8" 90º',
     sku: '41551',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Cobre 7/8" 90º · artículo 41551. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-187', PROV_BELLON, 10.61, {
+  c('MAT-32-179', PROV_BELLON, 10.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 1/2" x 90º',
     sku: '12069',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 1/2" x 90º · artículo 12069. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-188', PROV_BELLON, 45.15, {
+  c('MAT-32-180', PROV_BELLON, 45.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 1" x 90º',
     sku: '12068',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 1" x 90º · artículo 12068. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-189', PROV_BELLON, 15.75, {
+  c('MAT-32-181', PROV_BELLON, 15.75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo CPVC 3/4" x 90º',
     sku: '12070',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo CPVC 3/4" x 90º · artículo 12070. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-190', PROV_BELLON, 106, {
+  c('MAT-32-182', PROV_BELLON, 106, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1 1/2" x 90º',
     sku: '14760',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1 1/2" x 90º · artículo 14760. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-191', PROV_BELLON, 87, {
+  c('MAT-32-183', PROV_BELLON, 87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1 1/4" x 90º',
     sku: '14762',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1 1/4" x 90º · artículo 14762. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-192', PROV_BELLON, 24, {
+  c('MAT-32-184', PROV_BELLON, 24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1/2" x 90º',
     sku: '14766',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1/2" x 90º · artículo 14766. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-193', PROV_BELLON, 38.35, {
+  c('MAT-32-185', PROV_BELLON, 38.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1/4" x 90º',
     sku: '14767',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1/4" x 90º · artículo 14767. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-194', PROV_BELLON, 51, {
+  c('MAT-32-186', PROV_BELLON, 51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 1" x 90º',
     sku: '14764',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 1" x 90º · artículo 14764. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-195', PROV_BELLON, 170, {
+  c('MAT-32-187', PROV_BELLON, 170, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 2" x 90º',
     sku: '14770',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 2" x 90º · artículo 14770. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-196', PROV_BELLON, 34, {
+  c('MAT-32-188', PROV_BELLON, 34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 3/4" x 90º',
     sku: '21082',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 3/4" x 90º · artículo 21082. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-197', PROV_BELLON, 51.55, {
+  c('MAT-32-189', PROV_BELLON, 51.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 3/8" x 90º',
     sku: '14774',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 3/8" x 90º · artículo 14774. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-198', PROV_BELLON, 464, {
+  c('MAT-32-190', PROV_BELLON, 464, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 3" x 90º',
     sku: '14771',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 3" x 90º · artículo 14771. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-199', PROV_BELLON, 840, {
+  c('MAT-32-191', PROV_BELLON, 840, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Galvanizado 4" x 90º',
     sku: '14775',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Galvanizado 4" x 90º · artículo 14775. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-200', PROV_BELLON, 315, {
+  c('MAT-32-192', PROV_BELLON, 315, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Plástico Macho Polietileno 50 x 90º 1 1/2"',
     sku: '212342',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Plástico Macho Polietileno 50 x 90º 1 1/2" · artículo 212342. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-201', PROV_BELLON, 370, {
+  c('MAT-32-193', PROV_BELLON, 370, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Plástico Macho Polietileno 63 x 90º 2"',
     sku: '153179',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Plástico Macho Polietileno 63 x 90º  2" · artículo 153179. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-201', PROV_BELLON, 460, {
+  c('MAT-32-193', PROV_BELLON, 460, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Plástico Hembra Polietileno 63 x 90º 2"',
     sku: '204207',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Plástico Hembra Polietileno 63 x 90º  2" · artículo 204207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-202', PROV_CIMA, 33, {
+  c('MAT-32-194', PROV_CIMA, 33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-20mm-x-90-ppr',
     art: 'CODO 20mm X 90 PPR',
     sku: '150020',
     url: 'https://ferreteriacima.com.do/products/codo-20mm-x-90-ppr',
     nota: 'CODO 20mm X 90 PPR · artículo 150020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-202', PROV_BELLON, 6.25, {
+  c('MAT-32-194', PROV_BELLON, 6.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 90º Verde Maximus',
     sku: '221670',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2") x 90º Verde Maximus · artículo 221670. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-203', PROV_CIMA, 40, {
+  c('MAT-32-195', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-25mm-x-90-ppr',
     art: 'CODO 25mm X 90 PPR',
     sku: '069653',
     url: 'https://ferreteriacima.com.do/products/codo-25mm-x-90-ppr',
     nota: 'CODO 25mm X 90 PPR · artículo 069653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-203', PROV_BELLON, 9.92, {
+  c('MAT-32-195', PROV_BELLON, 9.92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 90º Verde Maximus',
     sku: '48642',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 90º Verde Maximus · artículo 48642. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-204', PROV_BELLON, 17.67, {
+  c('MAT-32-196', PROV_BELLON, 17.67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 32mm (1") x 90º Verde Maximus',
     sku: '221674',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 32mm (1") x 90º Verde Maximus · artículo 221674. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-205', PROV_BELLON, 60, {
+  c('MAT-32-197', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 50mm (1 1/2") x 90º (2") Verde Maximus',
     sku: '221671',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 50mm (1 1/2") x 90º (2") Verde Maximus · artículo 221671. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-206', PROV_CIMA, 30, {
+  c('MAT-32-198', PROV_CIMA, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-90',
     art: 'CODO PVC DRENAJE 1.5 x 90',
     sku: '031018',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-1-5-x-90',
     nota: 'CODO PVC DRENAJE 1.5 x 90 · artículo 031018. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-206', PROV_BELLON, 17.32, {
+  c('MAT-32-198', PROV_BELLON, 17.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 1 1/2" x 90º Sonaca',
     sku: '12072',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 1 1/2" x 90º Sonaca · artículo 12072. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-207', PROV_CIMA, 35, {
+  c('MAT-32-199', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-90',
     art: 'CODO PVC DRENAJE 2 x 90',
     sku: '030331',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-2-x-90',
     nota: 'CODO PVC DRENAJE 2 x 90 · artículo 030331. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-207', PROV_BELLON, 26.8, {
+  c('MAT-32-199', PROV_BELLON, 26.8, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 2" x 90º Sonaca',
     sku: '12074',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 2" x 90º Sonaca · artículo 12074. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-207', PROV_BELLON, 16.01, {
+  c('MAT-32-199', PROV_BELLON, 16.01, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 2" x 90º Maximus',
     sku: '234673',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 2" x 90º Maximus · artículo 234673. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-208', PROV_CIMA, 95, {
+  c('MAT-32-200', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-90',
     art: 'CODO PVC DRENAJE 3 x 90',
     sku: '030332',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-drenaje-3-x-90',
     nota: 'CODO PVC DRENAJE 3 x 90 · artículo 030332. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-208', PROV_BELLON, 75.16, {
+  c('MAT-32-200', PROV_BELLON, 75.16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 3" x 90º Sonaca',
     sku: '12076',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 3" x 90º Sonaca · artículo 12076. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-208', PROV_BELLON, 54.53, {
+  c('MAT-32-200', PROV_BELLON, 54.53, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 3" x 90º Maximus',
     sku: '234674',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 3" x 90º Maximus · artículo 234674. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-209', PROV_BELLON, 138.26, {
+  c('MAT-32-201', PROV_BELLON, 138.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 4" x 90º Sonaca',
     sku: '12078',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 4" x 90º Sonaca · artículo 12078. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-209', PROV_BELLON, 89.5, {
+  c('MAT-32-201', PROV_BELLON, 89.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 4" x 90º Maximus',
     sku: '234675',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 4" x 90º Maximus · artículo 234675. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-210', PROV_BELLON, 465, {
+  c('MAT-32-202', PROV_BELLON, 465, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 6" x 90º Durm-Lasc-Era',
     sku: '133840',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 6" x 90º Durm-Lasc-Era · artículo 133840. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-210', PROV_BELLON, 256, {
+  c('MAT-32-202', PROV_BELLON, 256, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Drenaje 6" x 90º Maximus',
     sku: '242281',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Drenaje 6" x 90º Maximus · artículo 242281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-211', PROV_BELLON, 70.2, {
+  c('MAT-32-203', PROV_BELLON, 70.2, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 1 1/2" x 90º Gris SCH80',
     sku: '12096',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 1 1/2" x 90º Gris SCH80 · artículo 12096. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-212', PROV_BELLON, 40.38, {
+  c('MAT-32-204', PROV_BELLON, 40.38, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 1" x 90º Gris SCH80',
     sku: '217271',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 1" x 90º Gris SCH80 · artículo 217271. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-213', PROV_BELLON, 120, {
+  c('MAT-32-205', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 2" x 90º Gris SCH80',
     sku: '120084',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC  2" x 90º Gris SCH80 · artículo 120084. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-214', PROV_BELLON, 22.22, {
+  c('MAT-32-206', PROV_BELLON, 22.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 3/4" x 90º Gris SCH80',
     sku: '235349',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 3/4" x 90º Gris SCH80 · artículo 235349. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-215', PROV_CIMA, 55, {
+  c('MAT-32-207', PROV_CIMA, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-90',
     art: 'CODO PVC PRESION 1.5 x 90',
     sku: '030337',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-5-x-90',
     nota: 'CODO PVC PRESION 1.5 x 90 · artículo 030337. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-215', PROV_BELLON, 44.53, {
+  c('MAT-32-207', PROV_BELLON, 44.53, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1 1/2" x 90º Sonaca',
     sku: '12080',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1 1/2" x 90º Sonaca · artículo 12080. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-215', PROV_BELLON, 28.52, {
+  c('MAT-32-207', PROV_BELLON, 28.52, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1 1/2" x 90º Maximus',
     sku: '221281',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1 1/2" x 90º Maximus · artículo 221281. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-216', PROV_CIMA, 15, {
+  c('MAT-32-208', PROV_CIMA, 15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-90',
     art: 'CODO PVC PRESION 1/2 x 90',
     sku: '030334',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-2-x-90',
     nota: 'CODO PVC PRESION 1/2 x 90 · artículo 030334. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-216', PROV_BELLON, 10, {
+  c('MAT-32-208', PROV_BELLON, 10, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1/2" x 90º Sonaca',
     sku: '12082',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1/2" x 90º Sonaca · artículo 12082. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-216', PROV_BELLON, 5.75, {
+  c('MAT-32-208', PROV_BELLON, 5.75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1/2" x 90º Maximus',
     sku: '221278',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1/2" x 90º Maximus · artículo 221278. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-217', PROV_CIMA, 27, {
+  c('MAT-32-209', PROV_CIMA, 27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-90',
     art: 'CODO PVC PRESION 1 x 90',
     sku: '030336',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-1-x-90',
     nota: 'CODO PVC PRESION 1 x 90 · artículo 030336. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-217', PROV_BELLON, 20.05, {
+  c('MAT-32-209', PROV_BELLON, 20.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1" x 90º Sonaca',
     sku: '12081',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1" x 90º Sonaca · artículo 12081. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-217', PROV_BELLON, 11.38, {
+  c('MAT-32-209', PROV_BELLON, 11.38, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 1" x 90º Maximus',
     sku: '221280',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 1" x 90º Maximus · artículo 221280. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-218', PROV_CIMA, 145, {
+  c('MAT-32-210', PROV_CIMA, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-2-x-90',
     art: 'CODO PVC PRESION 2 x 90',
     sku: '030338',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-2-x-90',
     nota: 'CODO PVC PRESION 2 x 90 · artículo 030338. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-218', PROV_BELLON, 67.15, {
+  c('MAT-32-210', PROV_BELLON, 67.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 2" x 90º Sonaca',
     sku: '12085',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 2" x 90º Sonaca · artículo 12085. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-218', PROV_BELLON, 46.28, {
+  c('MAT-32-210', PROV_BELLON, 46.28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 2" x 90º Maximus',
     sku: '221282',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 2" x 90º Maximus · artículo 221282. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-219', PROV_CIMA, 15, {
+  c('MAT-32-211', PROV_CIMA, 15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-90',
     art: 'CODO PVC PRESION 3/4 x 90',
     sku: '030335',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-3-4-x-90',
     nota: 'CODO PVC PRESION 3/4 x 90 · artículo 030335. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-219', PROV_BELLON, 12.15, {
+  c('MAT-32-211', PROV_BELLON, 12.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3/4" x 90º Sonaca',
     sku: '12088',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3/4" x 90º Sonaca · artículo 12088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-219', PROV_BELLON, 8.42, {
+  c('MAT-32-211', PROV_BELLON, 8.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3/4" x 90º Maximus',
     sku: '221279',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3/4" x 90º Maximus · artículo 221279. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-220', PROV_CIMA, 233, {
+  c('MAT-32-212', PROV_CIMA, 233, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-3-x-90',
     art: 'CODO PVC PRESION 3 x 90',
     sku: '030339',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-3-x-90',
     nota: 'CODO PVC PRESION 3 x 90 · artículo 030339. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-220', PROV_BELLON, 187.35, {
+  c('MAT-32-212', PROV_BELLON, 187.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3" x 90º Sonaca',
     sku: '12087',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3" x 90º Sonaca · artículo 12087. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-220', PROV_BELLON, 126, {
+  c('MAT-32-212', PROV_BELLON, 126, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 3" x 90º Maximus',
     sku: '234676',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 3" x 90º Maximus · artículo 234676. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-221', PROV_CIMA, 370, {
+  c('MAT-32-213', PROV_CIMA, 370, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-pvc-presion-4-x-90',
     art: 'CODO PVC PRESION 4 x 90',
     sku: '030340',
     url: 'https://ferreteriacima.com.do/products/codo-pvc-presion-4-x-90',
     nota: 'CODO PVC PRESION 4 x 90 · artículo 030340. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-221', PROV_BELLON, 309.43, {
+  c('MAT-32-213', PROV_BELLON, 309.43, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 4" x 90º Sonaca',
     sku: '12090',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 4" x 90º Sonaca · artículo 12090. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-221', PROV_BELLON, 206, {
+  c('MAT-32-213', PROV_BELLON, 206, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 4" x 90º Maximus',
     sku: '234678',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 4" x 90º Maximus · artículo 234678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-222', PROV_BELLON, 865, {
+  c('MAT-32-214', PROV_BELLON, 865, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 6" x 90º Durm-Lasc-Era',
     sku: '12092',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 6" x 90º Durm-Lasc-Era · artículo 12092. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-222', PROV_BELLON, 710, {
+  c('MAT-32-214', PROV_BELLON, 710, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 6" x 90º Maximus',
     sku: '242266',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 6" x 90º Maximus · artículo 242266. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-223', PROV_BELLON, 4205, {
+  c('MAT-32-215', PROV_BELLON, 4205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC Presión 8" x 90º Durm-Lasc-Era',
     sku: '113975',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC Presión 8" x 90º Durm-Lasc-Era · artículo 113975. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-224', PROV_BELLON, 195, {
+  c('MAT-32-216', PROV_BELLON, 195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce 1/2" x 1/2" NPT (129)',
     sku: '60959',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce 1/2" x 1/2" NPT (129) · artículo 60959. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-225', PROV_BELLON, 70, {
+  c('MAT-32-217', PROV_BELLON, 70, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Presión 1/4" x 1/4" NPT Macho (3136)',
     sku: '61443',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Presión 1/4" x 1/4" NPT Macho (3136) · artículo 61443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-225', PROV_BELLON, 60, {
+  c('MAT-32-217', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Manguera 1/4" x 1/4" NPT Macho 565',
     sku: '80087',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Manguera 1/4" x 1/4" NPT Macho 565 · artículo 80087. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-226', PROV_BELLON, 407, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Bronce Enlace Flex 12 x 12 x 2.0 1403G122000',
-    sku: '152229',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Bronce Enlace Flex 12 x 12 x 2.0 1403G122000 · artículo 152229. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-227', PROV_BELLON, 295, {
+  c('MAT-32-218', PROV_BELLON, 295, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 12 x 1/2" x 2.0 Hembra',
     sku: '152225',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 12 x 1/2" x 2.0 Hembra · artículo 152225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-227', PROV_BELLON, 279, {
+  c('MAT-32-218', PROV_BELLON, 279, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 12 x 1/2" x 2.0 Macho',
     sku: '152226',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 12 x 1/2" x 2.0 Macho · artículo 152226. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-228', PROV_BELLON, 422, {
+  c('MAT-32-218', PROV_BELLON, 407, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Bronce Enlace Flex 12 x 12 x 2.0 1403G122000',
+    sku: '152229',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Bronce Enlace Flex 12 x 12 x 2.0 1403G122000 · artículo 152229. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-219', PROV_BELLON, 422, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Enlace Flex 15 x 15 x 2.5 1403G152500',
     sku: '135442',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Enlace Flex 15 x 15 x 2.5 1403G152500 · artículo 135442. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-228', PROV_BELLON, 442, {
+  c('MAT-32-219', PROV_BELLON, 442, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Empotrar Flex 15 x 1/2" x 2.5 Hembra',
     sku: '135443',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Empotrar Flex 15 x 1/2" x 2.5 Hembra · artículo 135443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-229', PROV_BELLON, 320, {
+  c('MAT-32-219', PROV_BELLON, 320, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Macho',
     sku: '142970',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Macho · artículo 142970. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-229', PROV_BELLON, 269, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra',
-    sku: '201320',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra · artículo 201320. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-230', PROV_BELLON, 430, {
+  c('MAT-32-219', PROV_BELLON, 430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 15 x 3/4" x 2.5 Macho',
     sku: '142971',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 15 x 3/4" x 2.5 Macho · artículo 142971. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-231', PROV_BELLON, 592, {
+  c('MAT-32-219', PROV_BELLON, 269, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Bronce Enlace Flex 18 x 18 x 2.5 1403G182500',
-    sku: '142973',
+    art: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra',
+    sku: '201320',
     url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Bronce Enlace Flex 18 x 18 x 2.5 1403G182500 · artículo 142973. ' + SUPUESTO_ITBIS
+    nota: 'Codo Adaptador Bronce Flex 15 x 1/2" x 2.5 Hembra · artículo 201320. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-232', PROV_BELLON, 472, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho',
-    sku: '142972',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho · artículo 142972. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-232', PROV_BELLON, 370, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra',
-    sku: '193286',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra · artículo 193286. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-233', PROV_BELLON, 583, {
+  c('MAT-32-220', PROV_BELLON, 583, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 18 x 3/4" x 2.5 Hembra',
     sku: '142966',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 18 x 3/4" x 2.5 Hembra · artículo 142966. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-233', PROV_BELLON, 415, {
+  c('MAT-32-220', PROV_BELLON, 472, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho',
+    sku: '142972',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Macho · artículo 142972. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-220', PROV_BELLON, 592, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Bronce Enlace Flex 18 x 18 x 2.5 1403G182500',
+    sku: '142973',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Bronce Enlace Flex 18 x 18 x 2.5 1403G182500 · artículo 142973. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-220', PROV_BELLON, 370, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra',
+    sku: '193286',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Adaptador Bronce Flex 18 x 1/2" x 2.5 Hembra · artículo 193286. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-220', PROV_BELLON, 415, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Bronce Flex 18 x 3/4" x 2.5 Macho 1400105',
     sku: '209829',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Bronce Flex 18 x 3/4" x 2.5 Macho 1400105 · artículo 209829. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-234', PROV_BELLON, 724, {
+  c('MAT-32-221', PROV_BELLON, 724, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Enlace Flex 25 x 25 mm Tiemme 3463G252500W',
     sku: '232229',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Enlace Flex 25 x 25 mm Tiemme 3463G252500W · artículo 232229. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-235', PROV_BELLON, 500, {
+  c('MAT-32-221', PROV_BELLON, 500, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Flex 25 x 3/4" Hembra Tiemme 3465G002505W',
     sku: '232232',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Flex 25 x 3/4" Hembra Tiemme 3465G002505W · artículo 232232. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-236', PROV_BELLON, 99, {
+  c('MAT-32-222', PROV_BELLON, 99, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Presión 3/8" x 3/8" NPT Macho B2-69-66 (138)',
     sku: '38588',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Presión 3/8" x 3/8" NPT Macho B2-69-66 (138) · artículo 38588. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-236', PROV_BELLON, 195, {
+  c('MAT-32-222', PROV_BELLON, 195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce 3/8" x 3/8" NPT Hembra A06-L303',
     sku: '60958',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce 3/8" x 3/8" NPT Hembra A06-L303 · artículo 60958. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-237', PROV_BELLON, 1429, {
+  c('MAT-32-223', PROV_BELLON, 1429, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Enlace Flex 32 x 32 mm Tiemme 3463G323200W',
     sku: '232230',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Enlace Flex 32 x 32 mm Tiemme 3463G323200W · artículo 232230. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-238', PROV_BELLON, 882, {
+  c('MAT-32-223', PROV_BELLON, 882, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Bronce Flex 32 x 1" Hembra Tiemme 3465G003206W',
     sku: '232234',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Bronce Flex 32 x 1" Hembra Tiemme 3465G003206W · artículo 232234. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-239', PROV_CIMA, 234, {
+  c('MAT-32-224', PROV_CIMA, 234, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-5',
     art: 'CODO HG 1.5',
     sku: '300006',
     url: 'https://ferreteriacima.com.do/products/codo-hg-1-5',
     nota: 'CODO HG 1.5 · artículo 300006. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-239', PROV_BELLON, 134, {
+  c('MAT-32-224', PROV_BELLON, 134, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Niple Galvanizado 1 1/2"',
     sku: '14810',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Niple Galvanizado 1 1/2" · artículo 14810. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-240', PROV_CIMA, 130, {
+  c('MAT-32-225', PROV_CIMA, 130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-1-4',
     art: 'CODO HG 1 1/4',
     sku: '300005',
     url: 'https://ferreteriacima.com.do/products/codo-hg-1-1-4',
     nota: 'CODO HG 1 1/4 · artículo 300005. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-241', PROV_CIMA, 30, {
+  c('MAT-32-226', PROV_CIMA, 30, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-2',
     art: 'CODO HG 1/2',
     sku: '300002',
     url: 'https://ferreteriacima.com.do/products/codo-hg-1-2',
     nota: 'CODO HG 1/2 · artículo 300002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-241', PROV_BELLON, 26, {
+  c('MAT-32-226', PROV_BELLON, 26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Niple Galvanizado 1/2',
     sku: '14812',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Niple Galvanizado 1/2 · artículo 14812. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-242', PROV_CIMA, 75, {
+  c('MAT-32-227', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1-4',
     art: 'CODO HG 1/4',
     sku: '300000',
     url: 'https://ferreteriacima.com.do/products/codo-hg-1-4',
     nota: 'CODO HG 1/4 · artículo 300000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-243', PROV_CIMA, 65, {
+  c('MAT-32-228', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-1',
     art: 'CODO HG 1',
     sku: '300004',
     url: 'https://ferreteriacima.com.do/products/codo-hg-1',
     nota: 'CODO HG 1 · artículo 300004. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-244', PROV_CIMA, 291, {
+  c('MAT-32-229', PROV_CIMA, 291, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-2',
     art: 'CODO HG 2',
     sku: '300007',
     url: 'https://ferreteriacima.com.do/products/codo-hg-2',
     nota: 'CODO HG 2 · artículo 300007. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-244', PROV_BELLON, 191, {
+  c('MAT-32-229', PROV_BELLON, 191, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Niple Galvanizado 2"',
     sku: '14813',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Niple Galvanizado 2" · artículo 14813. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-245', PROV_CIMA, 51, {
+  c('MAT-32-230', PROV_CIMA, 51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-3-4',
     art: 'CODO HG 3/4',
     sku: '300003',
     url: 'https://ferreteriacima.com.do/products/codo-hg-3-4',
     nota: 'CODO HG 3/4 · artículo 300003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-246', PROV_CIMA, 50, {
+  c('MAT-32-231', PROV_CIMA, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-hg-3-8',
     art: 'CODO HG 3/8',
     sku: '300001',
     url: 'https://ferreteriacima.com.do/products/codo-hg-3-8',
     nota: 'CODO HG 3/8 · artículo 300001. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-247', PROV_CIMA, 363, {
+  c('MAT-32-232', PROV_CIMA, 363, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codo-niquelado-1-2',
     art: 'CODO NIQUELADO 1/2',
     sku: '78652',
     url: 'https://ferreteriacima.com.do/products/codo-niquelado-1-2',
     nota: 'CODO NIQUELADO 1/2 · artículo 78652. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-248', PROV_BELLON, 28.58, {
+  c('MAT-32-233', PROV_BELLON, 28.58, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador Plástico Tubería Flexible PE 16mm (1/2)',
     sku: '234098',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador Plástico Tubería Flexible  PE 16mm (1/2) · artículo 234098. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-249', PROV_BELLON, 11.23, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Reducción PPR 32 x 20mm (1"x1/2") Verde Maximus',
-    sku: '42954',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Reducción PPR 32 x 20mm (1"x1/2") Verde Maximus · artículo 42954. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-249', PROV_BELLON, 72.28, {
+  c('MAT-32-234', PROV_BELLON, 72.28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 1/2" Macho Verde Maximus',
     sku: '48644',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2")  x 1/2" Macho Verde Maximus · artículo 48644. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-249', PROV_BELLON, 8.59, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Reducción PPR 25 x 20mm (3/4"x1/2") Verde Maximus',
-    sku: '53463',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Reducción PPR 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 53463. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-249', PROV_BELLON, 78.32, {
+  c('MAT-32-234', PROV_BELLON, 78.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 3/4" Hembra Verde Maximus',
     sku: '134211',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2") x 3/4" Hembra Verde Maximus · artículo 134211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-249', PROV_BELLON, 58.86, {
+  c('MAT-32-234', PROV_BELLON, 58.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 1/2" Hembra Verde Maximus',
     sku: '142362',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2") x 1/2" Hembra Verde Maximus · artículo 142362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-249', PROV_BELLON, 78.45, {
+  c('MAT-32-234', PROV_BELLON, 78.45, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 20mm (1/2") x 3/4" Macho Verde Maximus',
     sku: '213027',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 20mm (1/2") x 3/4" Macho Verde Maximus · artículo 213027. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-250', PROV_BELLON, 15.37, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Codo Reducción PPR 32 x 25mm (1"x3/4") Verde Maximus',
-    sku: '42952',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Codo Reducción PPR 32 x 25mm (1"x3/4") Verde Maximus · artículo 42952. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-250', PROV_BELLON, 81.13, {
+  c('MAT-32-235', PROV_BELLON, 81.13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 3/4" Hembra Verde Maximus',
     sku: '43030',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 3/4" Hembra Verde Maximus · artículo 43030. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-250', PROV_BELLON, 68.78, {
+  c('MAT-32-235', PROV_BELLON, 68.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 1/2" Hembra Verde Maximus',
     sku: '43032',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 1/2" Hembra Verde Maximus · artículo 43032. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-250', PROV_BELLON, 128, {
+  c('MAT-32-235', PROV_BELLON, 128, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 3/4" Macho Verde Maximus',
     sku: '48592',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 3/4" Macho Verde Maximus · artículo 48592. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-250', PROV_BELLON, 80, {
+  c('MAT-32-235', PROV_BELLON, 80, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 25mm (3/4") x 1/2" Macho Verde Maximus',
     sku: '163127',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 25mm (3/4") x 1/2" Macho Verde Maximus · artículo 163127. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-251', PROV_BELLON, 92.89, {
+  c('MAT-32-236', PROV_BELLON, 8.59, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Reducción PPR 25 x 20mm (3/4"x1/2") Verde Maximus',
+    sku: '53463',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Reducción PPR 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 53463. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-237', PROV_BELLON, 92.89, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 32mm (1") x 3/4" Macho Verde Maximus',
     sku: '43033',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 32mm (1") x 3/4" Macho Verde Maximus · artículo 43033. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-251', PROV_BELLON, 228, {
+  c('MAT-32-237', PROV_BELLON, 228, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 32mm (1") x 1" Macho Verde Maximus',
     sku: '48646',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 32mm (1") x 1" Macho Verde Maximus · artículo 48646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-251', PROV_BELLON, 87.15, {
+  c('MAT-32-237', PROV_BELLON, 87.15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PPR 32mm (1") x 1/2" Macho Verde Maximus',
     sku: '48648',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PPR 32mm (1") x 1/2" Macho Verde Maximus · artículo 48648. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-252', PROV_BELLON, 47.12, {
+  c('MAT-32-238', PROV_BELLON, 11.23, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Reducción PPR 32 x 20mm (1"x1/2") Verde Maximus',
+    sku: '42954',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Reducción PPR 32 x 20mm (1"x1/2") Verde Maximus · artículo 42954. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-239', PROV_BELLON, 15.37, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Codo Reducción PPR 32 x 25mm (1"x3/4") Verde Maximus',
+    sku: '42952',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Codo Reducción PPR 32 x 25mm (1"x3/4") Verde Maximus · artículo 42952. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-240', PROV_BELLON, 47.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo Adaptador PVC 1" x 1" M/H S/Rosca 13632C',
     sku: '229828',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo Adaptador PVC 1" x 1" M/H S/Rosca 13632C · artículo 229828. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-253', PROV_BELLON, 40, {
+  c('MAT-32-241', PROV_BELLON, 40, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Codo PVC 3/4” C/Rosca 13903C',
     sku: '229833',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Codo PVC 3/4” C/Rosca 13903C · artículo 229833. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-254', PROV_CIMA, 179, {
+  c('MAT-32-242', PROV_CIMA, 179, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-bronce-3-8x45',
     art: 'CODONIPLE BRONCE 3/8X45',
     sku: '169541',
     url: 'https://ferreteriacima.com.do/products/codoniple-bronce-3-8x45',
     nota: 'CODONIPLE BRONCE 3/8X45 · artículo 169541. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-255', PROV_CIMA, 215, {
+  c('MAT-32-243', PROV_CIMA, 215, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-5',
     art: 'CODONIPLE HG 1.5',
     sku: '300030',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-1-5',
     nota: 'CODONIPLE HG 1.5 · artículo 300030. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-256', PROV_CIMA, 160, {
+  c('MAT-32-244', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-1-4',
     art: 'CODONIPLE HG 1 1/4',
     sku: '301035',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-1-1-4',
     nota: 'CODONIPLE HG 1 1/4 · artículo 301035. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-257', PROV_CIMA, 45, {
+  c('MAT-32-245', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-2',
     art: 'CODONIPLE HG 1/2',
     sku: '300026',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-1-2',
     nota: 'CODONIPLE HG 1/2 · artículo 300026. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-258', PROV_CIMA, 39, {
+  c('MAT-32-246', PROV_CIMA, 39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1-4',
     art: 'CODONIPLE HG 1/4',
     sku: '300024',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-1-4',
     nota: 'CODONIPLE HG 1/4 · artículo 300024. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-259', PROV_CIMA, 149, {
+  c('MAT-32-247', PROV_CIMA, 149, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-1',
     art: 'CODONIPLE HG 1',
     sku: '300028',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-1',
     nota: 'CODONIPLE HG 1 · artículo 300028. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-260', PROV_CIMA, 266, {
+  c('MAT-32-248', PROV_CIMA, 266, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-2',
     art: 'CODONIPLE HG 2',
     sku: '030030',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-2',
     nota: 'CODONIPLE HG 2 · artículo 030030. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-261', PROV_CIMA, 92, {
+  c('MAT-32-249', PROV_CIMA, 92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-hg-3-4',
     art: 'CODONIPLE HG 3/4',
     sku: '300027',
     url: 'https://ferreteriacima.com.do/products/codoniple-hg-3-4',
     nota: 'CODONIPLE HG 3/4 · artículo 300027. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-262', PROV_CIMA, 333, {
+  c('MAT-32-250', PROV_CIMA, 333, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/codoniple-niquelado-1-2',
     art: 'CODONIPLE NIQUELADO 1/2',
     sku: '78653',
     url: 'https://ferreteriacima.com.do/products/codoniple-niquelado-1-2',
     nota: 'CODONIPLE NIQUELADO 1/2 · artículo 78653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-263', PROV_CIMA, 199, {
+  c('MAT-32-251', PROV_CIMA, 199, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-5',
     art: 'COUPLING HG 1.5',
     sku: '300038',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-1-5',
     nota: 'COUPLING HG 1.5 · artículo 300038. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-264', PROV_CIMA, 141, {
+  c('MAT-32-252', PROV_CIMA, 141, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-1-4',
     art: 'COUPLING HG 1 1/4',
     sku: '300037',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-1-1-4',
     nota: 'COUPLING HG 1 1/4 · artículo 300037. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-265', PROV_CIMA, 25, {
+  c('MAT-32-253', PROV_CIMA, 25, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1-2',
     art: 'COUPLING HG 1/2',
     sku: '300034',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-1-2',
     nota: 'COUPLING HG 1/2 · artículo 300034. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-266', PROV_CIMA, 65, {
+  c('MAT-32-254', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-1',
     art: 'COUPLING HG 1',
     sku: '300036',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-1',
     nota: 'COUPLING HG 1 · artículo 300036. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-267', PROV_CIMA, 237, {
+  c('MAT-32-255', PROV_CIMA, 237, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-2',
     art: 'COUPLING HG 2',
     sku: '300039',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-2',
     nota: 'COUPLING HG 2 · artículo 300039. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-268', PROV_CIMA, 35, {
+  c('MAT-32-256', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-3-4',
     art: 'COUPLING HG 3/4',
     sku: '300035',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-3-4',
     nota: 'COUPLING HG 3/4 · artículo 300035. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-269', PROV_CIMA, 42, {
+  c('MAT-32-257', PROV_CIMA, 42, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-hg-3-8',
     art: 'COUPLING HG 3/8',
     sku: '300033',
     url: 'https://ferreteriacima.com.do/products/coupling-hg-3-8',
     nota: 'COUPLING HG 3/8 · artículo 300033. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-270', PROV_CIMA, 247, {
+  c('MAT-32-258', PROV_CIMA, 247, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-niquelado-1-2',
     art: 'COUPLING NIQUELADO 1/2',
     sku: '078654',
     url: 'https://ferreteriacima.com.do/products/coupling-niquelado-1-2',
     nota: 'COUPLING NIQUELADO 1/2 · artículo 078654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-271', PROV_CIMA, 40, {
+  c('MAT-32-259', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-25mm-ppr',
     art: 'COUPLING 25mm PPR',
     sku: '074596',
     url: 'https://ferreteriacima.com.do/products/coupling-25mm-ppr',
     nota: 'COUPLING 25mm PPR · artículo 074596. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-272', PROV_CIMA, 35, {
+  c('MAT-32-260', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-32mm-ppr',
     art: 'COUPLING 32mm PPR',
     sku: '150037',
     url: 'https://ferreteriacima.com.do/products/coupling-32mm-ppr',
     nota: 'COUPLING 32mm PPR · artículo 150037. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-273', PROV_CIMA, 65, {
+  c('MAT-32-261', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1-5',
     art: 'COUPLING PVC PRESION 1.5',
     sku: '031017',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-1-5',
     nota: 'COUPLING PVC PRESION 1.5 · artículo 031017. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-274', PROV_CIMA, 27, {
+  c('MAT-32-262', PROV_CIMA, 27, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1-2',
     art: 'COUPLING PVC PRESION 1/2',
     sku: '030322',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-1-2',
     nota: 'COUPLING PVC PRESION 1/2 · artículo 030322. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-275', PROV_CIMA, 41, {
+  c('MAT-32-263', PROV_CIMA, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-1',
     art: 'COUPLING PVC PRESION 1',
     sku: '030324',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-1',
     nota: 'COUPLING PVC PRESION 1 · artículo 030324. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-276', PROV_CIMA, 95, {
+  c('MAT-32-264', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-2',
     art: 'COUPLING PVC PRESION 2',
     sku: '030325',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-2',
     nota: 'COUPLING PVC PRESION 2 · artículo 030325. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-277', PROV_CIMA, 26, {
+  c('MAT-32-265', PROV_CIMA, 26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-3-4',
     art: 'COUPLING PVC PRESION 3/4',
     sku: '030323',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-3-4',
     nota: 'COUPLING PVC PRESION 3/4 · artículo 030323. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-278', PROV_CIMA, 215, {
+  c('MAT-32-266', PROV_CIMA, 215, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-3',
     art: 'COUPLING PVC PRESION 3',
     sku: '030326',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-3',
     nota: 'COUPLING PVC PRESION 3 · artículo 030326. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-279', PROV_CIMA, 335, {
+  c('MAT-32-267', PROV_CIMA, 335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/coupling-pvc-presion-4',
     art: 'COUPLING PVC PRESION 4',
     sku: '030327',
     url: 'https://ferreteriacima.com.do/products/coupling-pvc-presion-4',
     nota: 'COUPLING PVC PRESION 4 · artículo 030327. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-280', PROV_CIMA, 136, {
+  c('MAT-32-268', PROV_BELLON, 19.61, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 1/2" Durm-Lasc-Era',
+    sku: '224213',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 1/2" Durm-Lasc-Era · artículo 224213. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-268', PROV_BELLON, 13.68, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 1/2" Maximus',
+    sku: '242276',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 1/2" Maximus · artículo 242276. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-269', PROV_CIMA, 136, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cruz-pvc-presion-1',
     art: 'CRUZ PVC PRESION 1',
     sku: '030022',
     url: 'https://ferreteriacima.com.do/products/cruz-pvc-presion-1',
     nota: 'CRUZ PVC PRESION 1 · artículo 030022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-281', PROV_CIMA, 165, {
+  c('MAT-32-269', PROV_BELLON, 56, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 1" Durm-Lasc-Era',
+    sku: '224215',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 1" Durm-Lasc-Era · artículo 224215. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-269', PROV_BELLON, 27.06, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 1" Maximus',
+    sku: '242278',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 1" Maximus · artículo 242278. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-270', PROV_BELLON, 28, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 3/4" Durm-Lasc-Era',
+    sku: '224214',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 3/4" Durm-Lasc-Era · artículo 224214. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-270', PROV_BELLON, 17.7, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Cruz PVC Presión 3/4" Maximus',
+    sku: '242277',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Cruz PVC Presión 3/4" Maximus · artículo 242277. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-271', PROV_CIMA, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-mac-1-2-x-1-4',
     art: 'FITTING MANGUERA MAC 1/2 X 1/4',
     sku: '012138',
     url: 'https://ferreteriacima.com.do/products/fitting-manguera-mac-1-2-x-1-4',
     nota: 'FITTING MANGUERA MAC 1/2 X 1/4 · artículo 012138. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-282', PROV_CIMA, 205, {
+  c('MAT-32-272', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-1-2-x-3-8-mac',
     art: 'FITTING MANGUERA 1/2 x 3/8 MAC',
     sku: '017048',
     url: 'https://ferreteriacima.com.do/products/fitting-manguera-1-2-x-3-8-mac',
     nota: 'FITTING MANGUERA 1/2 x 3/8 MAC · artículo 017048. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-283', PROV_CIMA, 122, {
+  c('MAT-32-273', PROV_CIMA, 122, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-1-4-x-3-8',
     art: 'FITTING MANGUERA 1/4 X 3/8',
     sku: '074563',
     url: 'https://ferreteriacima.com.do/products/fitting-manguera-1-4-x-3-8',
     nota: 'FITTING MANGUERA 1/4 X 3/8 · artículo 074563. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-284', PROV_CIMA, 102, {
+  c('MAT-32-274', PROV_CIMA, 102, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fitting-manguera-3-8-x-1-4-mac',
     art: 'FITTING MANGUERA 3/8 x 1/4 MAC',
     sku: '019046',
     url: 'https://ferreteriacima.com.do/products/fitting-manguera-3-8-x-1-4-mac',
     nota: 'FITTING MANGUERA 3/8 x 1/4 MAC · artículo 019046. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-285', PROV_CIMA, 308, {
+  c('MAT-32-275', PROV_CIMA, 308, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1-5',
     art: 'JUNTA DRESSER PVC 1.5',
     sku: '031891',
     url: 'https://ferreteriacima.com.do/products/junta-dresser-pvc-1-5',
     nota: 'JUNTA DRESSER PVC 1.5 · artículo 031891. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-286', PROV_CIMA, 86, {
+  c('MAT-32-276', PROV_CIMA, 86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1-2',
     art: 'JUNTA DRESSER PVC 1/2',
     sku: '030577',
     url: 'https://ferreteriacima.com.do/products/junta-dresser-pvc-1-2',
     nota: 'JUNTA DRESSER PVC 1/2 · artículo 030577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-287', PROV_CIMA, 160, {
+  c('MAT-32-277', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-1',
     art: 'JUNTA DRESSER PVC 1',
     sku: '031890',
     url: 'https://ferreteriacima.com.do/products/junta-dresser-pvc-1',
     nota: 'JUNTA DRESSER PVC 1 · artículo 031890. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-288', PROV_CIMA, 135, {
+  c('MAT-32-278', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/junta-dresser-pvc-3-4',
     art: 'JUNTA DRESSER PVC 3/4',
     sku: '030578',
     url: 'https://ferreteriacima.com.do/products/junta-dresser-pvc-3-4',
     nota: 'JUNTA DRESSER PVC 3/4 · artículo 030578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-289', PROV_BELLON, 133, {
+  c('MAT-32-279', PROV_BELLON, 133, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 1/2" x 2" B1-113RB-82 (432)',
     sku: '696',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 1/2" x 2" B1-113RB-82 (432) · artículo 696. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-290', PROV_BELLON, 192, {
+  c('MAT-32-280', PROV_BELLON, 192, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 1/2" x 3" (587)',
     sku: '38604',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 1/2" x 3" (587) · artículo 38604. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-291', PROV_BELLON, 66, {
+  c('MAT-32-281', PROV_BELLON, 66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 1/4" x 1 1/2" (430)',
     sku: '697',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 1/4" x 1 1/2" (430) · artículo 697. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-292', PROV_BELLON, 165, {
+  c('MAT-32-282', PROV_BELLON, 165, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 1/4" x 3" (1090)',
     sku: '38601',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 1/4" x 3" (1090) · artículo 38601. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-293', PROV_BELLON, 51, {
+  c('MAT-32-283', PROV_BELLON, 51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 1/8" x 1 1/2" (33)',
     sku: '38620',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 1/8" x 1 1/2" (33) · artículo 38620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-294', PROV_BELLON, 87, {
+  c('MAT-32-284', PROV_BELLON, 87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 3/8" x 1 1/2" (435)/9854',
     sku: '701',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 3/8" x 1 1/2" (435)/9854 · artículo 701. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-295', PROV_BELLON, 90, {
+  c('MAT-32-285', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Bronce 3/8" x 2" (434)',
     sku: '704',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Bronce 3/8" x 2" (434) · artículo 704. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-296', PROV_CIMA, 121, {
+  c('MAT-32-286', PROV_CIMA, 121, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-1-4-x-1-5',
     art: 'NIPLE COBRE 1/4 x 1.5',
     sku: '017506',
     url: 'https://ferreteriacima.com.do/products/niple-cobre-1-4-x-1-5',
     nota: 'NIPLE COBRE 1/4 x 1.5 · artículo 017506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-297', PROV_CIMA, 230, {
+  c('MAT-32-287', PROV_CIMA, 230, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-4-x-3',
     art: 'NIPLE COBRE 3/4 X 3',
     sku: '080211',
     url: 'https://ferreteriacima.com.do/products/niple-cobre-3-4-x-3',
     nota: 'NIPLE COBRE 3/4 X 3 · artículo 080211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-298', PROV_CIMA, 193, {
+  c('MAT-32-288', PROV_CIMA, 193, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1-5',
     art: 'NIPLE COBRE 3/8 X 1.5',
     sku: '080215',
     url: 'https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1-5',
     nota: 'NIPLE COBRE 3/8 X 1.5 · artículo 080215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-299', PROV_CIMA, 177, {
+  c('MAT-32-289', PROV_CIMA, 177, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1',
     art: 'NIPLE COBRE 3/8 X 1',
     sku: '080207',
     url: 'https://ferreteriacima.com.do/products/niple-cobre-3-8-x-1',
     nota: 'NIPLE COBRE 3/8 X 1 · artículo 080207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-300', PROV_CIMA, 189, {
+  c('MAT-32-290', PROV_CIMA, 189, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-cobre-3-8-x-2',
     art: 'NIPLE COBRE 3/8 X 2',
     sku: '080206',
     url: 'https://ferreteriacima.com.do/products/niple-cobre-3-8-x-2',
     nota: 'NIPLE COBRE 3/8 X 2 · artículo 080206. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-301', PROV_CIMA, 372, {
+  c('MAT-32-291', PROV_CIMA, 372, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-10',
     art: 'NIPLE HG 1.5 X 10',
     sku: '058589',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-5-x-10',
     nota: 'NIPLE HG 1.5 X 10 · artículo 058589. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-302', PROV_BELLON, 82, {
+  c('MAT-32-292', PROV_BELLON, 82, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 2 1/2"',
     sku: '15365',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 2 1/2" · artículo 15365. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-303', PROV_BELLON, 85, {
+  c('MAT-32-293', PROV_BELLON, 85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 2"',
     sku: '15366',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 2" · artículo 15366. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-304', PROV_CIMA, 187, {
+  c('MAT-32-294', PROV_CIMA, 187, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-3',
     art: 'NIPLE HG 1.5 x 3',
     sku: '300144',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-5-x-3',
     nota: 'NIPLE HG 1.5 x 3 · artículo 300144. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-304', PROV_BELLON, 102, {
+  c('MAT-32-294', PROV_BELLON, 102, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 3"',
     sku: '15368',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 3" · artículo 15368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-305', PROV_CIMA, 257, {
+  c('MAT-32-295', PROV_CIMA, 257, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-4',
     art: 'NIPLE HG 1.5 x 4',
     sku: '300145',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-5-x-4',
     nota: 'NIPLE HG 1.5 x 4 · artículo 300145. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-305', PROV_BELLON, 104, {
+  c('MAT-32-295', PROV_BELLON, 104, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 4"',
     sku: '15369',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 4" · artículo 15369. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-306', PROV_BELLON, 150, {
+  c('MAT-32-296', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 5"',
     sku: '15370',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 5" · artículo 15370. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-307', PROV_CIMA, 379, {
+  c('MAT-32-297', PROV_CIMA, 379, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-5-x-6',
     art: 'NIPLE HG 1.5 x 6',
     sku: '300146',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-5-x-6',
     nota: 'NIPLE HG 1.5 x 6 · artículo 300146. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-307', PROV_BELLON, 141, {
+  c('MAT-32-297', PROV_BELLON, 141, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/2" x 6"',
     sku: '15371',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/2" x 6" · artículo 15371. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-308', PROV_CIMA, 170, {
+  c('MAT-32-298', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-2',
     art: 'NIPLE HG 1 1/4 x 2',
     sku: '311134',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-2',
     nota: 'NIPLE HG 1 1/4 x 2 · artículo 311134. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-309', PROV_CIMA, 174, {
+  c('MAT-32-299', PROV_CIMA, 174, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-3',
     art: 'NIPLE HG 1 1/4 x 3',
     sku: '063503',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-3',
     nota: 'NIPLE HG 1 1/4 x 3 · artículo 063503. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-309', PROV_BELLON, 78, {
+  c('MAT-32-299', PROV_BELLON, 78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/4" x 3"',
     sku: '15375',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/4" x 3" · artículo 15375. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-310', PROV_CIMA, 191, {
+  c('MAT-32-300', PROV_CIMA, 191, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-4',
     art: 'NIPLE HG 1 1/4 x 4',
     sku: '311234',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-4',
     nota: 'NIPLE HG 1 1/4 x 4 · artículo 311234. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-310', PROV_BELLON, 101, {
+  c('MAT-32-300', PROV_BELLON, 101, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/4" x 4"',
     sku: '15376',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/4" x 4" · artículo 15376. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-311', PROV_BELLON, 98, {
+  c('MAT-32-301', PROV_BELLON, 98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/4" x 5"',
     sku: '15377',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/4" x 5" · artículo 15377. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-312', PROV_CIMA, 236, {
+  c('MAT-32-302', PROV_CIMA, 236, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-6',
     art: 'NIPLE HG 1 1/4 x 6',
     sku: '311434',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-1-4-x-6',
     nota: 'NIPLE HG 1 1/4 x 6 · artículo 311434. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-312', PROV_BELLON, 118, {
+  c('MAT-32-302', PROV_BELLON, 118, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1 1/4" x 6"',
     sku: '15378',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1 1/4" x 6" · artículo 15378. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-313', PROV_CIMA, 75, {
+  c('MAT-32-303', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-1-5',
     art: 'NIPLE HG 1/2 x 1.5',
     sku: '300202',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-1-5',
     nota: 'NIPLE HG 1/2 x 1.5 · artículo 300202. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-313', PROV_BELLON, 17.47, {
+  c('MAT-32-303', PROV_BELLON, 17.47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 1 1/2"',
     sku: '15387',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 1 1/2" · artículo 15387. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-314', PROV_CIMA, 199, {
+  c('MAT-32-304', PROV_CIMA, 199, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-10',
     art: 'NIPLE HG 1/2 x 10',
     sku: '300095',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-10',
     nota: 'NIPLE HG 1/2 x 10 · artículo 300095. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-314', PROV_BELLON, 115, {
+  c('MAT-32-304', PROV_BELLON, 115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 10"',
     sku: '43961',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 10" · artículo 43961. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-315', PROV_CIMA, 259, {
+  c('MAT-32-305', PROV_CIMA, 259, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-12',
     art: 'NIPLE HG 1/2 x 12',
     sku: '300096',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-12',
     nota: 'NIPLE HG 1/2 x 12 · artículo 300096. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-315', PROV_BELLON, 119, {
+  c('MAT-32-305', PROV_BELLON, 119, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 12"',
     sku: '43963',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 12" · artículo 43963. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-316', PROV_CIMA, 67, {
+  c('MAT-32-306', PROV_CIMA, 67, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-1',
     art: 'NIPLE HG 1/2 x 1',
     sku: '300210',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-1',
     nota: 'NIPLE HG 1/2 x 1 · artículo 300210. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-316', PROV_BELLON, 16.38, {
+  c('MAT-32-306', PROV_BELLON, 16.38, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 1"',
     sku: '15388',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 1" · artículo 15388. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-317', PROV_CIMA, 65, {
+  c('MAT-32-307', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-2-5',
     art: 'NIPLE HG 1/2 x 2.5',
     sku: '300204',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-2-5',
     nota: 'NIPLE HG 1/2 x 2.5 · artículo 300204. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-317', PROV_BELLON, 24.02, {
+  c('MAT-32-307', PROV_BELLON, 24.02, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 2 1/2"',
     sku: '15389',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 2 1/2" · artículo 15389. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-318', PROV_CIMA, 65, {
+  c('MAT-32-308', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-2',
     art: 'NIPLE HG 1/2 x 2',
     sku: '300203',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-2',
     nota: 'NIPLE HG 1/2 x 2 · artículo 300203. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-318', PROV_BELLON, 19.66, {
+  c('MAT-32-308', PROV_BELLON, 19.66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 2"',
     sku: '15390',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 2" · artículo 15390. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-319', PROV_CIMA, 65, {
+  c('MAT-32-309', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-3',
     art: 'NIPLE HG 1/2 x 3',
     sku: '300205',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-3',
     nota: 'NIPLE HG 1/2 x 3 · artículo 300205. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-319', PROV_BELLON, 27.3, {
+  c('MAT-32-309', PROV_BELLON, 27.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 3"',
     sku: '15392',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 3" · artículo 15392. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-320', PROV_CIMA, 155, {
+  c('MAT-32-310', PROV_CIMA, 155, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-4',
     art: 'NIPLE HG 1/2 x 4',
     sku: '300092',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-4',
     nota: 'NIPLE HG 1/2 x 4 · artículo 300092. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-320', PROV_BELLON, 34.5, {
+  c('MAT-32-310', PROV_BELLON, 34.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 4"',
     sku: '15394',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 4" · artículo 15394. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-321', PROV_CIMA, 182, {
+  c('MAT-32-311', PROV_CIMA, 182, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-5',
     art: 'NIPLE HG 1/2 x 5',
     sku: '300206',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-5',
     nota: 'NIPLE HG 1/2 x 5 · artículo 300206. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-321', PROV_BELLON, 41.5, {
+  c('MAT-32-311', PROV_BELLON, 41.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 5"',
     sku: '15395',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 5" · artículo 15395. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-322', PROV_CIMA, 49, {
+  c('MAT-32-312', PROV_CIMA, 49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-6',
     art: 'NIPLE HG 1/2 x 6',
     sku: '300093',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-6',
     nota: 'NIPLE HG 1/2 x 6 · artículo 300093. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-322', PROV_BELLON, 70, {
+  c('MAT-32-312', PROV_BELLON, 70, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 6"',
     sku: '15396',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 6" · artículo 15396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_CIMA, 187, {
+  c('MAT-32-313', PROV_CIMA, 187, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-2-x-8',
     art: 'NIPLE HG 1/2 x 8',
     sku: '300094',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-2-x-8',
     nota: 'NIPLE HG 1/2 x 8 · artículo 300094. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-323', PROV_BELLON, 77, {
+  c('MAT-32-313', PROV_BELLON, 77, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/2" x 8"',
     sku: '43959',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/2" x 8" · artículo 43959. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-324', PROV_BELLON, 27.3, {
+  c('MAT-32-314', PROV_BELLON, 27.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/4" x 1 1/2"',
     sku: '15397',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/4" x 1 1/2" · artículo 15397. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-325', PROV_CIMA, 170, {
+  c('MAT-32-315', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-4-x-2',
     art: 'NIPLE HG 1/4 X 2',
     sku: '069657',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-4-x-2',
     nota: 'NIPLE HG 1/4 X 2 · artículo 069657. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-325', PROV_BELLON, 29.45, {
+  c('MAT-32-315', PROV_BELLON, 29.45, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/4" x 2"',
     sku: '15400',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/4" x 2" · artículo 15400. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-326', PROV_BELLON, 26.76, {
+  c('MAT-32-316', PROV_BELLON, 26.76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/4" x 3"',
     sku: '15402',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/4" x 3" · artículo 15402. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_CIMA, 204, {
+  c('MAT-32-317', PROV_CIMA, 204, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-4-x-4',
     art: 'NIPLE HG 1/4 X 4',
     sku: '090807',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-4-x-4',
     nota: 'NIPLE HG 1/4 X 4 · artículo 090807. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-327', PROV_BELLON, 35.88, {
+  c('MAT-32-317', PROV_BELLON, 35.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1/4" x 4"',
     sku: '15403',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1/4" x 4" · artículo 15403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-328', PROV_BELLON, 38.22, {
+  c('MAT-32-318', PROV_BELLON, 38.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 1 1/2"',
     sku: '15379',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 1 1/2" · artículo 15379. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-329', PROV_CIMA, 344, {
+  c('MAT-32-319', PROV_CIMA, 344, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-10',
     art: 'NIPLE HG 1 x 10',
     sku: '300215',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-10',
     nota: 'NIPLE HG 1 x 10 · artículo 300215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-330', PROV_CIMA, 130, {
+  c('MAT-32-320', PROV_CIMA, 130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-2-5',
     art: 'NIPLE HG 1 x 2.5',
     sku: '301213',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-2-5',
     nota: 'NIPLE HG 1 x 2.5 · artículo 301213. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-330', PROV_BELLON, 45.86, {
+  c('MAT-32-320', PROV_BELLON, 45.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 2 1/2"',
     sku: '15380',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 2 1/2" · artículo 15380. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-331', PROV_CIMA, 53, {
+  c('MAT-32-321', PROV_CIMA, 53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-2',
     art: 'NIPLE HG 1 x 2',
     sku: '301212',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-2',
     nota: 'NIPLE HG 1 x 2 · artículo 301212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-331', PROV_BELLON, 48.61, {
+  c('MAT-32-321', PROV_BELLON, 48.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 2"',
     sku: '15381',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 2" · artículo 15381. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-332', PROV_CIMA, 63, {
+  c('MAT-32-322', PROV_CIMA, 63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-3',
     art: 'NIPLE HG 1 x 3',
     sku: '301214',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-3',
     nota: 'NIPLE HG 1 x 3 · artículo 301214. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-333', PROV_CIMA, 65, {
+  c('MAT-32-323', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-4',
     art: 'NIPLE HG 1 x 4',
     sku: '301216',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-4',
     nota: 'NIPLE HG 1 x 4 · artículo 301216. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-333', PROV_BELLON, 88, {
+  c('MAT-32-323', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 4"',
     sku: '15384',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 4" · artículo 15384. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-334', PROV_CIMA, 31, {
+  c('MAT-32-324', PROV_CIMA, 31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-5',
     art: 'NIPLE HG 1 x 5',
     sku: '301217',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-5',
     nota: 'NIPLE HG 1 x 5 · artículo 301217. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-334', PROV_BELLON, 108, {
+  c('MAT-32-324', PROV_BELLON, 108, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 5"',
     sku: '15385',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 5" · artículo 15385. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-335', PROV_CIMA, 86, {
+  c('MAT-32-325', PROV_CIMA, 86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-1-x-6',
     art: 'NIPLE HG 1 x 6',
     sku: '300211',
     url: 'https://ferreteriacima.com.do/products/niple-hg-1-x-6',
     nota: 'NIPLE HG 1 x 6 · artículo 300211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-335', PROV_BELLON, 91, {
+  c('MAT-32-325', PROV_BELLON, 91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 1" x 6"',
     sku: '15386',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 1" x 6" · artículo 15386. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-336', PROV_BELLON, 78, {
+  c('MAT-32-326', PROV_BELLON, 78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 2" x 2"',
     sku: '37619',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 2" x 2" · artículo 37619. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-337', PROV_CIMA, 338, {
+  c('MAT-32-327', PROV_CIMA, 338, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-3',
     art: 'NIPLE HG 2 x 3',
     sku: '072360',
     url: 'https://ferreteriacima.com.do/products/niple-hg-2-x-3',
     nota: 'NIPLE HG 2 x 3 · artículo 072360. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-337', PROV_BELLON, 99, {
+  c('MAT-32-327', PROV_BELLON, 99, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 2" x 3"',
     sku: '15412',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 2" x 3" · artículo 15412. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-338', PROV_CIMA, 368, {
+  c('MAT-32-328', PROV_CIMA, 368, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-4',
     art: 'NIPLE HG 2 x 4',
     sku: '320134',
     url: 'https://ferreteriacima.com.do/products/niple-hg-2-x-4',
     nota: 'NIPLE HG 2 x 4 · artículo 320134. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-338', PROV_BELLON, 123, {
+  c('MAT-32-328', PROV_BELLON, 123, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 2" x 4"',
     sku: '15413',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 2" x 4" · artículo 15413. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-339', PROV_CIMA, 257, {
+  c('MAT-32-329', PROV_CIMA, 257, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-2-x-5',
     art: 'NIPLE HG 2 x 5',
     sku: '330134',
     url: 'https://ferreteriacima.com.do/products/niple-hg-2-x-5',
     nota: 'NIPLE HG 2 x 5 · artículo 330134. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-339', PROV_BELLON, 188, {
+  c('MAT-32-329', PROV_BELLON, 188, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 2" x 5"',
     sku: '15414',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 2" x 5" · artículo 15414. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-340', PROV_BELLON, 234, {
+  c('MAT-32-330', PROV_BELLON, 234, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 2" x 6"',
     sku: '15415',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 2" x 6" · artículo 15415. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-341', PROV_CIMA, 77, {
+  c('MAT-32-331', PROV_CIMA, 77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-1-5',
     art: 'NIPLE HG 3/4 x 1.5',
     sku: '300103',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-1-5',
     nota: 'NIPLE HG 3/4 x 1.5 · artículo 300103. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-341', PROV_BELLON, 25.12, {
+  c('MAT-32-331', PROV_BELLON, 25.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 1 1/2"',
     sku: '15420',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 1 1/2" · artículo 15420. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-342', PROV_BELLON, 88, {
+  c('MAT-32-332', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 10"',
     sku: '44017',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 10" · artículo 44017. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-343', PROV_BELLON, 109, {
+  c('MAT-32-333', PROV_BELLON, 109, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 12"',
     sku: '44019',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 12" · artículo 44019. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-344', PROV_CIMA, 62, {
+  c('MAT-32-334', PROV_CIMA, 62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-1',
     art: 'NIPLE HG 3/4 x 1',
     sku: '300104',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-1',
     nota: 'NIPLE HG 3/4 x 1 · artículo 300104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-344', PROV_BELLON, 21.54, {
+  c('MAT-32-334', PROV_BELLON, 21.54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 1"',
     sku: '15421',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 1" · artículo 15421. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-345', PROV_CIMA, 131, {
+  c('MAT-32-335', PROV_CIMA, 131, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-2-5',
     art: 'NIPLE HG 3/4 x 2.5',
     sku: '300100',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-2-5',
     nota: 'NIPLE HG 3/4 x 2.5 · artículo 300100. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-345', PROV_BELLON, 27.3, {
+  c('MAT-32-335', PROV_BELLON, 27.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 2 1/2"',
     sku: '15422',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 2 1/2" · artículo 15422. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-346', PROV_CIMA, 120, {
+  c('MAT-32-336', PROV_CIMA, 120, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-2',
     art: 'NIPLE HG 3/4 x 2',
     sku: '300099',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-2',
     nota: 'NIPLE HG 3/4 x 2 · artículo 300099. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-346', PROV_BELLON, 21.84, {
+  c('MAT-32-336', PROV_BELLON, 21.84, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 2"',
     sku: '15423',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 2" · artículo 15423. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-347', PROV_BELLON, 35.35, {
+  c('MAT-32-337', PROV_BELLON, 35.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 3 1/2"',
     sku: '15424',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 3 1/2" · artículo 15424. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-348', PROV_CIMA, 149, {
+  c('MAT-32-338', PROV_CIMA, 149, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-3',
     art: 'NIPLE HG 3/4 x 3',
     sku: '300101',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-3',
     nota: 'NIPLE HG 3/4 x 3 · artículo 300101. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-348', PROV_BELLON, 33.77, {
+  c('MAT-32-338', PROV_BELLON, 33.77, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 3"',
     sku: '15425',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 3" · artículo 15425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-349', PROV_CIMA, 160, {
+  c('MAT-32-339', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-4',
     art: 'NIPLE HG 3/4 x 4',
     sku: '300102',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-4',
     nota: 'NIPLE HG 3/4 x 4 · artículo 300102. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-349', PROV_BELLON, 51, {
+  c('MAT-32-339', PROV_BELLON, 51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 4"',
     sku: '15427',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 4" · artículo 15427. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-350', PROV_CIMA, 194, {
+  c('MAT-32-340', PROV_CIMA, 194, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-5',
     art: 'NIPLE HG 3/4 x 5',
     sku: '300207',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-5',
     nota: 'NIPLE HG 3/4 x 5 · artículo 300207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-350', PROV_BELLON, 54, {
+  c('MAT-32-340', PROV_BELLON, 54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 5"',
     sku: '15428',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 5" · artículo 15428. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-351', PROV_CIMA, 248, {
+  c('MAT-32-341', PROV_CIMA, 248, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-4-x-6',
     art: 'NIPLE HG 3/4 x 6',
     sku: '300208',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-4-x-6',
     nota: 'NIPLE HG 3/4 x 6 · artículo 300208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-351', PROV_BELLON, 87, {
+  c('MAT-32-341', PROV_BELLON, 87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 6"',
     sku: '15429',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 6" · artículo 15429. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-352', PROV_BELLON, 81, {
+  c('MAT-32-342', PROV_BELLON, 81, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/4" x 8"',
     sku: '44015',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/4" x 8" · artículo 44015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-353', PROV_CIMA, 155, {
+  c('MAT-32-343', PROV_CIMA, 155, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-2-5',
     art: 'NIPLE HG 3/8 x 2.5',
     sku: '300262',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-2-5',
     nota: 'NIPLE HG 3/8 x 2.5 · artículo 300262. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-353', PROV_BELLON, 24.74, {
+  c('MAT-32-343', PROV_BELLON, 24.74, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/8" x 2 1/2"',
     sku: '15432',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/8" x 2 1/2" · artículo 15432. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-354', PROV_CIMA, 160, {
+  c('MAT-32-344', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-2',
     art: 'NIPLE HG 3/8 x 2',
     sku: '049733',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-2',
     nota: 'NIPLE HG 3/8 x 2 · artículo 049733. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-354', PROV_BELLON, 61.6, {
+  c('MAT-32-344', PROV_BELLON, 61.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/8" x 2"',
     sku: '15433',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/8" x 2" · artículo 15433. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-355', PROV_CIMA, 194, {
+  c('MAT-32-345', PROV_CIMA, 194, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-3-5',
     art: 'NIPLE HG 3/8 x 3.5',
     sku: '300264',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-3-5',
     nota: 'NIPLE HG 3/8 x 3.5 · artículo 300264. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_CIMA, 185, {
+  c('MAT-32-346', PROV_CIMA, 185, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-3',
     art: 'NIPLE HG 3/8 X 3',
     sku: '300270',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-3',
     nota: 'NIPLE HG 3/8 X 3 · artículo 300270. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-356', PROV_BELLON, 27.3, {
+  c('MAT-32-346', PROV_BELLON, 27.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/8" x 3"',
     sku: '15435',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/8" x 3" · artículo 15435. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-357', PROV_CIMA, 194, {
+  c('MAT-32-347', PROV_CIMA, 194, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-4-5',
     art: 'NIPLE HG 3/8 x 4.5',
     sku: '300266',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-4-5',
     nota: 'NIPLE HG 3/8 x 4.5 · artículo 300266. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-358', PROV_CIMA, 249, {
+  c('MAT-32-348', PROV_CIMA, 249, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-4',
     art: 'NIPLE HG 3/8 x 4',
     sku: '300265',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-4',
     nota: 'NIPLE HG 3/8 x 4 · artículo 300265. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-358', PROV_BELLON, 34.64, {
+  c('MAT-32-348', PROV_BELLON, 34.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3/8" x 4"',
     sku: '15436',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3/8" x 4" · artículo 15436. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-359', PROV_CIMA, 229, {
+  c('MAT-32-349', PROV_CIMA, 229, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-5-5',
     art: 'NIPLE HG 3/8 x 5.5',
     sku: '300268',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-5-5',
     nota: 'NIPLE HG 3/8 x 5.5 · artículo 300268. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-360', PROV_CIMA, 255, {
+  c('MAT-32-350', PROV_CIMA, 255, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-5',
     art: 'NIPLE HG 3/8 x 5',
     sku: '300267',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-5',
     nota: 'NIPLE HG 3/8 x 5 · artículo 300267. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-361', PROV_CIMA, 327, {
+  c('MAT-32-351', PROV_CIMA, 327, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-hg-3-8-x-6',
     art: 'NIPLE HG 3/8 x 6',
     sku: '300269',
     url: 'https://ferreteriacima.com.do/products/niple-hg-3-8-x-6',
     nota: 'NIPLE HG 3/8 x 6 · artículo 300269. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-362', PROV_BELLON, 277, {
+  c('MAT-32-352', PROV_BELLON, 277, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Galvanizado 3" x 4"',
     sku: '15417',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Galvanizado 3" x 4" · artículo 15417. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-363', PROV_BELLON, 17, {
+  c('MAT-32-353', PROV_BELLON, 17, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 1 1/2" SPC-519CP',
     sku: '70926',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 1 1/2" SPC-519CP · artículo 70926. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-364', PROV_CIMA, 326, {
+  c('MAT-32-354', PROV_CIMA, 326, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5-2586',
     art: 'NIPLE NIQUELADO 1/2 X 2.5 2586',
     sku: '091712258650',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5-2586',
     nota: 'NIPLE NIQUELADO 1/2 X 2.5 2586 · artículo 091712258650. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-364', PROV_CIMA, 59, {
+  c('MAT-32-354', PROV_CIMA, 59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5',
     art: 'NIPLE NIQUELADO 1/2 X 2.5',
     sku: '061039',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-5',
     nota: 'NIPLE NIQUELADO 1/2 X 2.5 · artículo 061039. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-364', PROV_BELLON, 24, {
+  c('MAT-32-354', PROV_BELLON, 24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 2 1/2" SPC-519CP',
     sku: '21937',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 2 1/2" SPC-519CP · artículo 21937. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-364', PROV_BELLON, 230, {
+  c('MAT-32-354', PROV_BELLON, 230, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 2 1/2" Eastman 25865',
     sku: '184638',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 2 1/2" Eastman 25865 · artículo 184638. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-365', PROV_CIMA, 224, {
+  c('MAT-32-355', PROV_CIMA, 224, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-25864',
     art: 'NIPLE NIQUELADO 1/2 x 2 25864',
     sku: '091712258643',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2-25864',
     nota: 'NIPLE NIQUELADO 1/2 x 2 25864 · artículo 091712258643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-365', PROV_CIMA, 52, {
+  c('MAT-32-355', PROV_CIMA, 52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2',
     art: 'NIPLE NIQUELADO 1/2 x 2',
     sku: '050476',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-2',
     nota: 'NIPLE NIQUELADO 1/2 x 2 · artículo 050476. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-365', PROV_BELLON, 15.75, {
+  c('MAT-32-355', PROV_BELLON, 15.75, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 2" SPC-519CP',
     sku: '35419',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 2" SPC-519CP · artículo 35419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-365', PROV_BELLON, 150, {
+  c('MAT-32-355', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 2" Eastman 25864',
     sku: '184636',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 2" Eastman 25864 · artículo 184636. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-366', PROV_CIMA, 388, {
+  c('MAT-32-356', PROV_CIMA, 388, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-3-25866',
     art: 'NIPLE NIQUELADO 1/2 x 3 25866',
     sku: '091712258667',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-1-2-x-3-25866',
     nota: 'NIPLE NIQUELADO 1/2 x 3 25866 · artículo 091712258667. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-366', PROV_BELLON, 28, {
+  c('MAT-32-356', PROV_BELLON, 28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 3" NN123 (SPC-519CP)',
     sku: '21938',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 3" NN123 (SPC-519CP) · artículo 21938. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-366', PROV_BELLON, 252, {
+  c('MAT-32-356', PROV_BELLON, 252, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 3" Eastman 25866',
     sku: '184641',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 3" Eastman 25866 · artículo 184641. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-367', PROV_BELLON, 28, {
+  c('MAT-32-357', PROV_BELLON, 28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 4" SPC-519CP',
     sku: '21939',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 4" SPC-519CP · artículo 21939. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-367', PROV_BELLON, 348, {
+  c('MAT-32-357', PROV_BELLON, 348, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 1/2" x 4" Eastman 25868',
     sku: '192109',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 1/2" x 4" Eastman 25868 · artículo 192109. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-368', PROV_BELLON, 24.04, {
+  c('MAT-32-358', PROV_BELLON, 24.04, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 3/8" x 2 1/2" NN38212 (SPC-519CP)',
     sku: '15501',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 3/8" x 2 1/2" NN38212 (SPC-519CP) · artículo 15501. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-369', PROV_CIMA, 47, {
+  c('MAT-32-359', PROV_CIMA, 47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-2',
     art: 'NIPLE NIQUELADO 3/8 x 2',
     sku: '017850',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-2',
     nota: 'NIPLE NIQUELADO 3/8 x 2 · artículo 017850. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-370', PROV_CIMA, 59, {
+  c('MAT-32-360', PROV_CIMA, 59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-3',
     art: 'NIPLE NIQUELADO 3/8 x 3',
     sku: '031846',
     url: 'https://ferreteriacima.com.do/products/niple-niquelado-3-8-x-3',
     nota: 'NIPLE NIQUELADO 3/8 x 3 · artículo 031846. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-370', PROV_BELLON, 26.25, {
+  c('MAT-32-360', PROV_BELLON, 26.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Niple Niquelado 3/8" x 3" NN383 (SPC-519CP)',
     sku: '21935',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Niple Niquelado 3/8" x 3" NN383 (SPC-519CP) · artículo 21935. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-371', PROV_BELLON, 90, {
+  c('MAT-32-361', PROV_BELLON, 90, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 1/2" x 1/4" NPT (472)',
     sku: '35184',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 1/2" x 1/4" NPT (472) · artículo 35184. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-372', PROV_BELLON, 102, {
+  c('MAT-32-362', PROV_BELLON, 102, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 1/2" x 1/8" NPT 110-82 (474)',
     sku: '85450',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 1/2" x 1/8" NPT 110-82 (474) · artículo 85450. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-373', PROV_BELLON, 81, {
+  c('MAT-32-363', PROV_BELLON, 81, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 1/2" x 3/8" NPT B4-110-86 (473)',
     sku: '38594',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 1/2" x 3/8" NPT B4-110-86 (473) · artículo 38594. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-374', PROV_BELLON, 27.47, {
+  c('MAT-32-364', PROV_BELLON, 27.47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 1/4" x 1/8" NPT (469)',
     sku: '38592',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 1/4" x 1/8" NPT (469) · artículo 38592. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-375', PROV_CIMA, 132, {
+  c('MAT-32-365', PROV_CIMA, 132, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-4-x-3-8',
     art: 'REDUCCION BUS BRONCE 1/4 x 3/8',
     sku: '040471',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-4-x-3-8',
     nota: 'REDUCCION BUS BRONCE 1/4 x 3/8 · artículo 040471. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-376', PROV_CIMA, 101, {
+  c('MAT-32-366', PROV_CIMA, 101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-1-4',
     art: 'REDUCCION BUS BRONCE 1/8 x 1/4',
     sku: '400085',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-1-4',
     nota: 'REDUCCION BUS BRONCE 1/8 x 1/4 · artículo 400085. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-377', PROV_CIMA, 77, {
+  c('MAT-32-367', PROV_CIMA, 77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-3-8',
     art: 'REDUCCION BUS BRONCE 1/8 x 3/8',
     sku: '040472',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-bronce-1-8-x-3-8',
     nota: 'REDUCCION BUS BRONCE 1/8 x 3/8 · artículo 040472. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-378', PROV_BELLON, 202, {
+  c('MAT-32-368', PROV_BELLON, 202, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 1" x 3/4" NPT (2282)',
     sku: '38596',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 1" x 3/4" NPT (2282) · artículo 38596. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-379', PROV_BELLON, 97.88, {
+  c('MAT-32-369', PROV_BELLON, 97.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 3/4" x 1/2" NPT (475)',
     sku: '68264',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 3/4" x 1/2" NPT (475) · artículo 68264. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-380', PROV_BELLON, 137, {
+  c('MAT-32-370', PROV_BELLON, 137, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 3/4" x 3/8" NPT (528)',
     sku: '38595',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 3/4" x 3/8" NPT (528) · artículo 38595. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-381', PROV_BELLON, 78.74, {
+  c('MAT-32-371', PROV_BELLON, 78.74, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 3/8" x1/4" NPT B4-110-64 (471)',
     sku: '2429',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 3/8" x1/4" NPT B4-110-64 (471) · artículo 2429. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-382', PROV_BELLON, 57, {
+  c('MAT-32-372', PROV_BELLON, 57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Bronce 3/8" x 1/8" NPT (470)',
     sku: '58366',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Bronce 3/8" x 1/8" NPT (470) · artículo 58366. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-383', PROV_BELLON, 45.68, {
+  c('MAT-32-373', PROV_BELLON, 45.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing CPVC 1" x 1/2"',
     sku: '12205',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing CPVC 1" x 1/2" · artículo 12205. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-384', PROV_BELLON, 13.97, {
+  c('MAT-32-374', PROV_BELLON, 13.97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing CPVC 1" x 3/4"',
     sku: '12206',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing CPVC 1" x 3/4" · artículo 12206. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-385', PROV_BELLON, 322, {
+  c('MAT-32-375', PROV_BELLON, 322, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing CPVC 2" x 1"',
     sku: '99909',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing CPVC 2" x 1" · artículo 99909. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-386', PROV_BELLON, 10.62, {
+  c('MAT-32-376', PROV_BELLON, 10.62, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing CPVC 3/4" x 1/2" Foset CPVC-231 45062',
     sku: '12207',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing CPVC 3/4" x 1/2" Foset CPVC-231 45062 · artículo 12207. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-387', PROV_CIMA, 247, {
+  c('MAT-32-377', PROV_CIMA, 247, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-1-4',
     art: 'REDUCCION BUS HG 1.5 x 1 1/4',
     sku: '300089',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-1-4',
     nota: 'REDUCCION BUS HG 1.5 x 1 1/4 · artículo 300089. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-387', PROV_BELLON, 125, {
+  c('MAT-32-377', PROV_BELLON, 125, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/2" x 1 1/4"',
     sku: '15725',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/2" x 1 1/4" · artículo 15725. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-388', PROV_CIMA, 103, {
+  c('MAT-32-378', PROV_CIMA, 103, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-2',
     art: 'REDUCCION BUS HG 1.5 x 1/2',
     sku: '300063',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1-2',
     nota: 'REDUCCION BUS HG 1.5 x 1/2 · artículo 300063. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-388', PROV_BELLON, 76, {
+  c('MAT-32-378', PROV_BELLON, 76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/2" x 1/2"',
     sku: '15727',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/2" x 1/2" · artículo 15727. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-389', PROV_CIMA, 214, {
+  c('MAT-32-379', PROV_CIMA, 214, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1',
     art: 'REDUCCION BUS HG 1.5 x 1',
     sku: '300081',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-1',
     nota: 'REDUCCION BUS HG 1.5 x 1 · artículo 300081. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-389', PROV_BELLON, 67, {
+  c('MAT-32-379', PROV_BELLON, 67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/2" x 1"',
     sku: '15726',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/2" x 1" · artículo 15726. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-390', PROV_CIMA, 87, {
+  c('MAT-32-380', PROV_CIMA, 87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-3-4',
     art: 'REDUCCION BUS HG 1.5 x 3/4',
     sku: '300068',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-5-x-3-4',
     nota: 'REDUCCION BUS HG 1.5 x 3/4 · artículo 300068. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-390', PROV_BELLON, 110, {
+  c('MAT-32-380', PROV_BELLON, 110, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/2" x 3/4"',
     sku: '15728',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/2" x 3/4" · artículo 15728. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-391', PROV_CIMA, 61, {
+  c('MAT-32-381', PROV_CIMA, 61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1-2',
     art: 'REDUCCION BUS HG 1 1/4 x 1/2',
     sku: '300091',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1-2',
     nota: 'REDUCCION BUS HG 1 1/4 x 1/2 · artículo 300091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-391', PROV_BELLON, 87, {
+  c('MAT-32-381', PROV_BELLON, 87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/4" x 1/2"',
     sku: '15730',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/4" x 1/2" · artículo 15730. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-392', PROV_CIMA, 198, {
+  c('MAT-32-382', PROV_CIMA, 198, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1',
     art: 'REDUCCION BUS HG 1 1/4 x 1',
     sku: '300080',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-1-4-x-1',
     nota: 'REDUCCION BUS HG 1 1/4 x 1 · artículo 300080. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-392', PROV_BELLON, 51, {
+  c('MAT-32-382', PROV_BELLON, 51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/4" x 1"',
     sku: '15729',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/4" x 1" · artículo 15729. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-393', PROV_BELLON, 50, {
+  c('MAT-32-383', PROV_BELLON, 50, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1 1/4" x 3/4"',
     sku: '15731',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1 1/4" x 3/4" · artículo 15731. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-394', PROV_CIMA, 80, {
+  c('MAT-32-384', PROV_CIMA, 80, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-1-4',
     art: 'REDUCCION BUS HG 1/2 x 1/4',
     sku: '300078',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-1-4',
     nota: 'REDUCCION BUS HG 1/2 x 1/4 · artículo 300078. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-395', PROV_CIMA, 65, {
+  c('MAT-32-385', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-3-8',
     art: 'REDUCCION BUS HG 1/2 x 3/8',
     sku: '300075',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-2-x-3-8',
     nota: 'REDUCCION BUS HG 1/2 x 3/8 · artículo 300075. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-395', PROV_BELLON, 25, {
+  c('MAT-32-385', PROV_BELLON, 25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1/2" x 3/8"',
     sku: '15736',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1/2" x 3/8" · artículo 15736. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-396', PROV_CIMA, 92, {
+  c('MAT-32-386', PROV_CIMA, 92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-1-2',
     art: 'REDUCCION BUS HG 1 x 1/2',
     sku: '300086',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-1-2',
     nota: 'REDUCCION BUS HG 1 x 1/2 · artículo 300086. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-396', PROV_BELLON, 40, {
+  c('MAT-32-386', PROV_BELLON, 40, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1" x 1/2"',
     sku: '15732',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1" x 1/2" · artículo 15732. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-397', PROV_BELLON, 58.94, {
+  c('MAT-32-387', PROV_BELLON, 58.94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1" x 1/4"',
     sku: '49399',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1" x 1/4" · artículo 49399. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-398', PROV_CIMA, 97, {
+  c('MAT-32-388', PROV_CIMA, 97, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-3-4',
     art: 'REDUCCION BUS HG 1 x 3/4',
     sku: '300071',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-1-x-3-4',
     nota: 'REDUCCION BUS HG 1 x 3/4 · artículo 300071. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-398', PROV_BELLON, 31, {
+  c('MAT-32-388', PROV_BELLON, 31, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 1" x 3/4"',
     sku: '15733',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 1" x 3/4" · artículo 15733. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-399', PROV_BELLON, 52.64, {
+  c('MAT-32-389', PROV_BELLON, 52.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 2 1/2" x 2"',
     sku: '15737',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 2 1/2" x 2" · artículo 15737. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-400', PROV_CIMA, 189, {
+  c('MAT-32-390', PROV_CIMA, 189, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-2-x-1-5',
     art: 'REDUCCION BUS HG 2 x 1.5',
     sku: '030087',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-2-x-1-5',
     nota: 'REDUCCION BUS HG 2 x 1.5 · artículo 030087. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-400', PROV_BELLON, 94, {
+  c('MAT-32-390', PROV_BELLON, 94, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 2" x 1 1/2"',
     sku: '15738',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 2" x 1 1/2" · artículo 15738. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-401', PROV_BELLON, 95, {
+  c('MAT-32-391', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 2" x 1 1/4"',
     sku: '15739',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 2" x 1 1/4" · artículo 15739. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-402', PROV_BELLON, 140, {
+  c('MAT-32-392', PROV_BELLON, 140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 2" x 1/2"',
     sku: '15741',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 2" x 1/2" · artículo 15741. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-403', PROV_BELLON, 95, {
+  c('MAT-32-393', PROV_BELLON, 95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 2" x 1"',
     sku: '15740',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 2" x 1" · artículo 15740. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-404', PROV_CIMA, 75, {
+  c('MAT-32-394', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-hg-3-4-x-1-2',
     art: 'REDUCCION BUS HG 3/4 x 1/2',
     sku: '300079',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-hg-3-4-x-1-2',
     nota: 'REDUCCION BUS HG 3/4 x 1/2 · artículo 300079. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-404', PROV_BELLON, 25, {
+  c('MAT-32-394', PROV_BELLON, 25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 3/4" x 1/2"',
     sku: '15747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 3/4" x 1/2" · artículo 15747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-405', PROV_BELLON, 25, {
+  c('MAT-32-395', PROV_BELLON, 25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 3/4" x 1/4"',
     sku: '21927',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 3/4" x 1/4" · artículo 21927. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-406', PROV_BELLON, 67, {
+  c('MAT-32-396', PROV_BELLON, 67, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 3/4" x 3/8"',
     sku: '23678',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 3/4" x 3/8" · artículo 23678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-407', PROV_BELLON, 34, {
+  c('MAT-32-397', PROV_BELLON, 34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 3/8" x 1/4"',
     sku: '15748',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 3/8" x 1/4" · artículo 15748. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-408', PROV_BELLON, 261, {
+  c('MAT-32-398', PROV_BELLON, 261, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 3" x 2"',
     sku: '15746',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 3" x 2" · artículo 15746. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-409', PROV_BELLON, 454, {
+  c('MAT-32-399', PROV_BELLON, 454, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing Galvanizado 4" x 3"',
     sku: '21929',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing Galvanizado 4" x 3" · artículo 21929. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-410', PROV_CIMA, 64, {
+  c('MAT-32-400', PROV_CIMA, 64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dren-2-x-1-2',
     art: 'REDUCCION BUS PVC DREN 2 X 1/2',
     sku: '963514',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dren-2-x-1-2',
     nota: 'REDUCCION BUS PVC DREN 2 X 1/2 · artículo 963514. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-410', PROV_MC, 12.26, {
+  c('MAT-32-400', PROV_MC, 12.26, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 2x1/2',
@@ -61142,7 +61184,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 2x1/2 · artículo 102575 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-411', PROV_MC, 14.24, {
+  c('MAT-32-401', PROV_MC, 14.24, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC DRENAJ 2x1',
@@ -61150,7 +61192,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC DRENAJ 2x1 · artículo 926339 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-412', PROV_MC, 13.83, {
+  c('MAT-32-402', PROV_MC, 13.83, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 2x3/4',
@@ -61158,7 +61200,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 2x3/4 · artículo 926397 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-413', PROV_MC, 33.21, {
+  c('MAT-32-403', PROV_MC, 33.21, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 3x2',
@@ -61166,7 +61208,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 3x2 · artículo 102757 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-414', PROV_MC, 64.3, {
+  c('MAT-32-404', PROV_MC, 64.3, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 4x2',
@@ -61174,7 +61216,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 4x2 · artículo 103309 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-415', PROV_MC, 63.9, {
+  c('MAT-32-405', PROV_MC, 63.9, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 4x3',
@@ -61182,196 +61224,196 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 4x3 · artículo 103317 · ref. DRENAJE · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-416', PROV_MC, 237.3, {
+  c('MAT-32-406', PROV_MC, 237.3, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC DRENAJE 6x4',
     sku: '102640',
     nota: 'REDUCCION BUSH PVC DRENAJE 6x4 · artículo 102640 · ref. DRENAJE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-416', PROV_BELLON, 370, {
+  c('MAT-32-406', PROV_BELLON, 370, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Drenaje 6" x 4" Durm-Lasc-Era',
     sku: '147615',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Drenaje 6" x 4" Durm-Lasc-Era · artículo 147615. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-416', PROV_BELLON, 132, {
+  c('MAT-32-406', PROV_BELLON, 132, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Drenaje 6" x 4" Maximus',
     sku: '242282',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Drenaje 6" x 4" Maximus · artículo 242282. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-417', PROV_MC, 2126.7, {
+  c('MAT-32-407', PROV_MC, 2126.7, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC DRENAJE 8x4',
     sku: '10618',
     nota: 'REDUCCION BUSH PVC DRENAJE 8x4 · artículo 10618 · ref. DRENAJE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-418', PROV_MC, 1626, {
+  c('MAT-32-408', PROV_MC, 1626, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC DRENAJE 8x6',
     sku: '1513',
     nota: 'REDUCCION BUSH PVC DRENAJE 8x6 · artículo 1513 · ref. DRENAJE. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-419', PROV_CIMA, 87, {
+  c('MAT-32-409', PROV_CIMA, 87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-1',
     art: 'REDUCCION BUS PVC PR 1.5 x 1',
     sku: '031011',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-1',
     nota: 'REDUCCION BUS PVC PR 1.5 x 1 · artículo 031011. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-420', PROV_CIMA, 85, {
+  c('MAT-32-410', PROV_CIMA, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-3-4',
     art: 'REDUCCION BUS PVC PR 1.5 x 3/4',
     sku: '031010',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-5-x-3-4',
     nota: 'REDUCCION BUS PVC PR 1.5 x 3/4 · artículo 031010. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-420', PROV_BELLON, 30, {
+  c('MAT-32-410', PROV_BELLON, 30, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC 1 1/2" x 3/4" SCH80',
     sku: '209361',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC 1 1/2" x 3/4" SCH80 · artículo 209361. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-421', PROV_CIMA, 35, {
+  c('MAT-32-411', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pres-1-x-1-2',
     art: 'REDUCCION BUS PVC PRES 1 X 1/2',
     sku: '030343',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pres-1-x-1-2',
     nota: 'REDUCCION BUS PVC PRES 1 X 1/2 · artículo 030343. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-422', PROV_CIMA, 26, {
+  c('MAT-32-412', PROV_CIMA, 26, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-x-3-4',
     art: 'REDUCCION BUS PVC PR 1 x 3/4',
     sku: '030342',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-1-x-3-4',
     nota: 'REDUCCION BUS PVC PR 1 x 3/4 · artículo 030342. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-422', PROV_BELLON, 12.88, {
+  c('MAT-32-412', PROV_BELLON, 12.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC 1" x 3/4" Gris SCH80',
     sku: '202401',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC 1" x 3/4" Gris SCH80 · artículo 202401. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-423', PROV_CIMA, 65, {
+  c('MAT-32-413', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-2-x-1-5',
     art: 'REDUCCION BUS PVC PRE 2 X 1.5',
     sku: '031015',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-2-x-1-5',
     nota: 'REDUCCION BUS PVC PRE 2 X 1.5 · artículo 031015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-423', PROV_BELLON, 53, {
+  c('MAT-32-413', PROV_BELLON, 53, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC 2" x 1 1/2" Gris SCH80',
     sku: '209137',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC 2" x 1 1/2" Gris SCH80 · artículo 209137. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-424', PROV_CIMA, 64, {
+  c('MAT-32-414', PROV_CIMA, 64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-1',
     art: 'REDUCCION BUS PVC DRE 2 X 1',
     sku: '031014',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-1',
     nota: 'REDUCCION BUS PVC DRE 2 X 1 · artículo 031014. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-425', PROV_CIMA, 41, {
+  c('MAT-32-415', PROV_CIMA, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-3-4',
     art: 'REDUCCION BUS PVC DRE 2 X 3/4',
     sku: '031013',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-2-x-3-4',
     nota: 'REDUCCION BUS PVC DRE 2  X 3/4 · artículo 031013. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-426', PROV_CIMA, 20, {
+  c('MAT-32-416', PROV_CIMA, 20, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-3-4-x-1-2',
     art: 'REDUCCION BUS PVC PR 3/4 X 1/2',
     sku: '030341',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pr-3-4-x-1-2',
     nota: 'REDUCCION BUS PVC PR 3/4 X 1/2 · artículo 030341. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-427', PROV_CIMA, 210, {
+  c('MAT-32-417', PROV_CIMA, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-3-x-2',
     art: 'REDUCCION BUS PVC PRE 3 X 2',
     sku: '001923',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-pre-3-x-2',
     nota: 'REDUCCION BUS PVC PRE 3 X 2 · artículo 001923. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-428', PROV_CIMA, 175, {
+  c('MAT-32-418', PROV_CIMA, 175, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-2',
     art: 'REDUCCION BUS PVC DRE 4 X 2',
     sku: '030346',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-2',
     nota: 'REDUCCION BUS PVC DRE 4 X 2 · artículo 030346. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-429', PROV_CIMA, 195, {
+  c('MAT-32-419', PROV_CIMA, 195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-3',
     art: 'REDUCCION BUS PVC DRE 4 X 3',
     sku: '030347',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-4-x-3',
     nota: 'REDUCCION BUS PVC DRE 4 X 3 · artículo 030347. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-430', PROV_BELLON, 1430, {
+  c('MAT-32-420', PROV_BELLON, 1430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC 6" x 3" Durm-Lasc-Era',
     sku: '79738',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC 6" x 3" Durm-Lasc-Era · artículo 79738. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-431', PROV_CIMA, 702, {
+  c('MAT-32-421', PROV_CIMA, 702, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-6-x-4',
     art: 'REDUCCION BUS PVC DRE 6 X 4',
     sku: '030344',
     url: 'https://ferreteriacima.com.do/products/reduccion-bus-pvc-dre-6-x-4',
     nota: 'REDUCCION BUS PVC DRE 6 X 4 · artículo 030344. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-432', PROV_MC, 22.75, {
+  c('MAT-32-422', PROV_MC, 22.75, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 1 1/2x1/2',
     sku: '102682',
     nota: 'REDUCCION BUSH PVC 1 1/2x1/2 · artículo 102682 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-433', PROV_MC, 22.38, {
+  c('MAT-32-423', PROV_MC, 22.38, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 1 1/2X1',
     sku: '102751',
     nota: 'REDUCCION BUSH PVC 1 1/2X1 · artículo 102751 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-434', PROV_MC, 18.1, {
+  c('MAT-32-424', PROV_MC, 18.1, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 1 1/2x3/4',
     sku: '102567',
     nota: 'REDUCCION BUSH PVC 1 1/2x3/4 · artículo 102567 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-434', PROV_BELLON, 35, {
+  c('MAT-32-424', PROV_BELLON, 35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 1 1/2" x 3/4" Durm-Lasc-Era',
     sku: '12210',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 1 1/2" x 3/4" Durm-Lasc-Era · artículo 12210. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-434', PROV_BELLON, 10.48, {
+  c('MAT-32-424', PROV_BELLON, 10.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 1 1/2"x 3/4" Maximus',
     sku: '242267',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 1 1/2"x 3/4" Maximus · artículo 242267. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-435', PROV_BELLON, 15891.21, {
+  c('MAT-32-425', PROV_BELLON, 15891.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 12" x 8"',
     sku: '166591',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 12" x 8" · artículo 166591. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-436', PROV_MC, 8.95, {
+  c('MAT-32-426', PROV_MC, 8.95, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 1x 1/2',
@@ -61379,7 +61421,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 1x 1/2 · artículo 102674 · ref. PRESION · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-437', PROV_MC, 7.03, {
+  c('MAT-32-427', PROV_MC, 7.03, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 1x3/4',
@@ -61387,7 +61429,7 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 1x3/4 · artículo 102559 · ref. PRESION · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-438', PROV_MC, 19.43, {
+  c('MAT-32-428', PROV_MC, 19.43, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 2x1 1/2',
@@ -61395,28 +61437,28 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 2x1 1/2 · artículo 237984 · ref. PRESION · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-439', PROV_MC, 26.14, {
+  c('MAT-32-429', PROV_MC, 26.14, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 2X1/2',
     sku: '172752',
     nota: 'REDUCCION BUSH PVC 2X1/2 · artículo 172752 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-440', PROV_MC, 28.15, {
+  c('MAT-32-430', PROV_MC, 28.15, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 2 x 1',
     sku: '102583',
     nota: 'REDUCCION BUSH PVC 2 x 1 · artículo 102583 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-441', PROV_MC, 34.19, {
+  c('MAT-32-431', PROV_MC, 34.19, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSH PVC 2x3/4',
     sku: '102707',
     nota: 'REDUCCION BUSH PVC 2x3/4 · artículo 102707 · ref. PRESION. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-442', PROV_MC, 4.2, {
+  c('MAT-32-432', PROV_MC, 4.2, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'REDUCCION BUSHING PVC 3/4x1/2',
@@ -61424,2464 +61466,2422 @@
     marca: 'CORVI/DURMAN',
     nota: 'REDUCCION BUSHING PVC 3/4x1/2 · artículo 102666 · ref. PRESION · marca CORVI/DURMAN. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-443', PROV_BELLON, 350, {
+  c('MAT-32-433', PROV_BELLON, 350, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 3" x 1 1/2" Durm-Lasc-Era',
     sku: '12219',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 3" x 1 1/2" Durm-Lasc-Era · artículo 12219. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-443', PROV_BELLON, 61.64, {
+  c('MAT-32-433', PROV_BELLON, 61.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 3" x 1 1/2" Maximus',
     sku: '242268',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 3" x 1 1/2" Maximus · artículo 242268. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-444', PROV_BELLON, 350, {
+  c('MAT-32-434', PROV_BELLON, 350, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 3" x 1" Durm-Lasc-Era',
     sku: '44929',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 3" x 1" Durm-Lasc-Era · artículo 44929. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-445', PROV_BELLON, 195, {
+  c('MAT-32-435', PROV_BELLON, 195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 4" x 2" Durm-Lasc-Era',
     sku: '42058',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 4" x 2" Durm-Lasc-Era · artículo 42058. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-446', PROV_BELLON, 735, {
+  c('MAT-32-436', PROV_BELLON, 735, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 6" x 4" Durm-Lasc-Era',
     sku: '55739',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 6" x 4" Durm-Lasc-Era · artículo 55739. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-446', PROV_BELLON, 136, {
+  c('MAT-32-436', PROV_BELLON, 136, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 6" x 4" Maximus',
     sku: '242271',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 6" x 4" Maximus · artículo 242271. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-447', PROV_BELLON, 3880, {
+  c('MAT-32-437', PROV_BELLON, 3880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bushing PVC Presión 8" x 6" Durm-Lasc-Era',
     sku: '121635',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bushing PVC Presión 8" x 6" Durm-Lasc-Era · artículo 121635. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-448', PROV_BELLON, 121, {
+  c('MAT-32-438', PROV_BELLON, 121, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Cobre 1 3/8" x 5/8" Soldable',
     sku: '100051',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Cobre 1 3/8" x 5/8" Soldable · artículo 100051. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-449', PROV_BELLON, 159, {
+  c('MAT-32-439', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Cobre 1 5/8" x 1 1/8 Soldable',
     sku: '99279',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Cobre 1 5/8" x 1 1/8 Soldable · artículo 99279. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-450', PROV_BELLON, 48.07, {
+  c('MAT-32-440', PROV_BELLON, 48.07, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Cobre 7/8" x 5/8" Soldable',
     sku: '51556',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Cobre 7/8" x 5/8" Soldable · artículo 51556. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-451', PROV_BELLON, 120, {
+  c('MAT-32-441', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1 1/2" x 1 1/4"',
     sku: '21930',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1 1/2" x 1 1/4" · artículo 21930. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-452', PROV_BELLON, 83, {
+  c('MAT-32-442', PROV_BELLON, 83, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1 1/2" x 1/2"',
     sku: '15780',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1 1/2" x 1/2" · artículo 15780. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-453', PROV_CIMA, 237, {
+  c('MAT-32-443', PROV_CIMA, 237, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-5-x-1',
     art: 'REDUCCION COPA HG 1.5 x 1',
     sku: '3001296',
     url: 'https://ferreteriacima.com.do/products/reduccion-copa-hg-1-5-x-1',
     nota: 'REDUCCION COPA HG 1.5 x 1 · artículo 3001296. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-453', PROV_BELLON, 113, {
+  c('MAT-32-443', PROV_BELLON, 113, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1 1/2" x 1"',
     sku: '15779',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1 1/2" x 1" · artículo 15779. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-454', PROV_BELLON, 62, {
+  c('MAT-32-444', PROV_BELLON, 62, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1 1/4" x 1"',
     sku: '15782',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1 1/4" x 1" · artículo 15782. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-455', PROV_BELLON, 36.34, {
+  c('MAT-32-445', PROV_BELLON, 36.34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1/2" x 1/4"',
     sku: '15788',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1/2" x 1/4" · artículo 15788. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-456', PROV_CIMA, 70, {
+  c('MAT-32-446', PROV_CIMA, 70, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-2-x-3-8',
     art: 'REDUCCION COPA HG 1/2 x 3/8',
     sku: '300072',
     url: 'https://ferreteriacima.com.do/products/reduccion-copa-hg-1-2-x-3-8',
     nota: 'REDUCCION COPA HG 1/2 x 3/8 · artículo 300072. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-456', PROV_BELLON, 36.25, {
+  c('MAT-32-446', PROV_BELLON, 36.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1/2" x 3/8"',
     sku: '15789',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1/2" x 3/8" · artículo 15789. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-457', PROV_CIMA, 95, {
+  c('MAT-32-447', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-1-2',
     art: 'REDUCCION COPA HG 1 x 1/2',
     sku: '300064',
     url: 'https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-1-2',
     nota: 'REDUCCION COPA HG 1 x 1/2 · artículo 300064. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-457', PROV_BELLON, 47, {
+  c('MAT-32-447', PROV_BELLON, 47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1" x 1/2"',
     sku: '15785',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1" x 1/2" · artículo 15785. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-458', PROV_CIMA, 101, {
+  c('MAT-32-448', PROV_CIMA, 101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-3-4',
     art: 'REDUCCION COPA HG 1 x 3/4',
     sku: '300065',
     url: 'https://ferreteriacima.com.do/products/reduccion-copa-hg-1-x-3-4',
     nota: 'REDUCCION COPA HG 1 x 3/4 · artículo 300065. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-458', PROV_BELLON, 47.96, {
+  c('MAT-32-448', PROV_BELLON, 47.96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 1" x 3/4"',
     sku: '15786',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 1" x 3/4" · artículo 15786. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-459', PROV_BELLON, 135, {
+  c('MAT-32-449', PROV_BELLON, 135, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 2" x 1 1/2"',
     sku: '15791',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 2" x 1 1/2" · artículo 15791. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-460', PROV_BELLON, 117, {
+  c('MAT-32-450', PROV_BELLON, 117, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 2" x 1"',
     sku: '15793',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 2" x 1" · artículo 15793. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-461', PROV_BELLON, 34, {
+  c('MAT-32-451', PROV_BELLON, 34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 3/4" x 1/2"',
     sku: '15798',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 3/4" x 1/2" · artículo 15798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-462', PROV_BELLON, 26.32, {
+  c('MAT-32-452', PROV_BELLON, 26.32, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 3/4" x 3/8"',
     sku: '15799',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 3/4" x 3/8" · artículo 15799. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-463', PROV_BELLON, 440, {
+  c('MAT-32-453', PROV_BELLON, 440, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa Galvanizada 3" x 2"',
     sku: '21931',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa Galvanizada 3" x 2" · artículo 21931. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-464', PROV_BELLON, 7.36, {
+  c('MAT-32-454', PROV_BELLON, 7.36, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/2" x 1" 63642567773',
     sku: '113459',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/2" x 1" 63642567773 · artículo 113459. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-465', PROV_BELLON, 3.5, {
+  c('MAT-32-455', PROV_BELLON, 3.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/2" x 7/8" 10065424',
     sku: '113457',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/2" x 7/8" 10065424 · artículo 113457. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-466', PROV_BELLON, 10.35, {
+  c('MAT-32-456', PROV_BELLON, 10.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/4" x 1/2"',
     sku: '142412',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/4" x 1/2" · artículo 142412. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-467', PROV_BELLON, 2.33, {
+  c('MAT-32-457', PROV_BELLON, 2.33, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/4" x 3/4"',
     sku: '54996',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/4" x 3/4" · artículo 54996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-468', PROV_BELLON, 2.44, {
+  c('MAT-32-458', PROV_BELLON, 2.44, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/4" x 5/8"',
     sku: '113458',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/4" x 5/8" · artículo 113458. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-469', PROV_BELLON, 8.8, {
+  c('MAT-32-459', PROV_BELLON, 8.8, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Plástica Piedra Circular 1 1/4" x 7/8" 10065422',
     sku: '113461',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Plástica Piedra Circular 1 1/4" x 7/8" 10065422 · artículo 113461. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-470', PROV_BELLON, 8.08, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Reducción Lisa PPR 32 x 20mm (1" x 1/2") Verde Maximus',
-    sku: '59286',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Reducción Lisa PPR 32 x 20mm (1" x 1/2") Verde Maximus · artículo 59286. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-470', PROV_BELLON, 5.59, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Reducción Lisa PPR 25 x 20mm (3/4"x1/2") Verde Maximus',
-    sku: '221667',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Reducción Lisa PPR 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 221667. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-471', PROV_BELLON, 19.84, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Reducción Coupling PPR 50 x 25mm (1 1/2"x3/4") Verde Maximus',
-    sku: '48615',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Reducción Coupling PPR 50 x 25mm (1 1/2"x3/4") Verde Maximus · artículo 48615. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-471', PROV_BELLON, 7.98, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Reducción Lisa PPR 32 x 25mm (1" x 3/4") Verde Maximus',
-    sku: '221666',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Reducción Lisa PPR 32 x 25mm (1" x 3/4") Verde Maximus · artículo 221666. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-472', PROV_CIMA, 53, {
+  c('MAT-32-460', PROV_CIMA, 53, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-ppr-25mm-x-20mm',
     art: 'REDUCCION PPR 25mm X 20mm',
     sku: '150024',
     url: 'https://ferreteriacima.com.do/products/reduccion-ppr-25mm-x-20mm',
     nota: 'REDUCCION PPR 25mm X 20mm · artículo 150024. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-473', PROV_BELLON, 22.53, {
+  c('MAT-32-461', PROV_BELLON, 5.59, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Reducción Lisa PPR 25 x 20mm (3/4"x1/2") Verde Maximus',
+    sku: '221667',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Reducción Lisa PPR 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 221667. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-462', PROV_BELLON, 8.08, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Reducción Lisa PPR 32 x 20mm (1" x 1/2") Verde Maximus',
+    sku: '59286',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Reducción Lisa PPR 32 x 20mm (1" x 1/2") Verde Maximus · artículo 59286. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-463', PROV_BELLON, 7.98, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Reducción Lisa PPR 32 x 25mm (1" x 3/4") Verde Maximus',
+    sku: '221666',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Reducción Lisa PPR 32 x 25mm (1" x 3/4") Verde Maximus · artículo 221666. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-464', PROV_BELLON, 19.84, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Reducción Coupling PPR 50 x 25mm (1 1/2"x3/4") Verde Maximus',
+    sku: '48615',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Reducción Coupling PPR 50 x 25mm (1 1/2"x3/4") Verde Maximus · artículo 48615. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-465', PROV_BELLON, 22.53, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Coupling PPR 50 x 32mm (1 1/2"x1") Verde Maximus',
     sku: '48620',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Coupling PPR 50 x 32mm (1 1/2"x1") Verde Maximus · artículo 48620. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-474', PROV_BELLON, 15, {
+  c('MAT-32-466', PROV_BELLON, 15, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 1 1/2" x 1" Sonaca',
     sku: '12208',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 1 1/2" x 1" Sonaca · artículo 12208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-475', PROV_BELLON, 14.69, {
+  c('MAT-32-467', PROV_BELLON, 14.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 2" x 1/2" Sonaca',
     sku: '87278',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 2" x 1/2" Sonaca · artículo 87278. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-476', PROV_BELLON, 14.96, {
+  c('MAT-32-468', PROV_BELLON, 14.96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 2" x 1" Sonaca',
     sku: '60612',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 2" x 1" Sonaca · artículo 60612. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-477', PROV_BELLON, 14.52, {
+  c('MAT-32-469', PROV_BELLON, 14.52, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 2" x 3/4" Sonaca',
     sku: '12218',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 2" x 3/4" Sonaca · artículo 12218. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-478', PROV_BELLON, 35.26, {
+  c('MAT-32-470', PROV_BELLON, 35.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 3" x 2" Sonaca',
     sku: '12221',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 3" x 2" Sonaca · artículo 12221. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-478', PROV_BELLON, 28.6, {
+  c('MAT-32-470', PROV_BELLON, 28.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 3" x 2" Maximus',
     sku: '234680',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 3" x 2" Maximus · artículo 234680. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-479', PROV_BELLON, 76.73, {
+  c('MAT-32-471', PROV_BELLON, 76.73, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 4" x 2" Sonaca',
     sku: '12224',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 4" x 2" Sonaca · artículo 12224. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-479', PROV_BELLON, 57.06, {
+  c('MAT-32-471', PROV_BELLON, 57.06, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 4" x 2" Maximus',
     sku: '234681',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 4" x 2" Maximus · artículo 234681. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-480', PROV_BELLON, 66.51, {
+  c('MAT-32-472', PROV_BELLON, 66.51, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 4" x 3" Sonaca',
     sku: '26629',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 4" x 3" Sonaca · artículo 26629. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-480', PROV_BELLON, 52, {
+  c('MAT-32-472', PROV_BELLON, 52, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Drenaje 4" x 3" Maximus',
     sku: '234682',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Drenaje 4" x 3" Maximus · artículo 234682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-481', PROV_CIMA, 63, {
+  c('MAT-32-473', PROV_CIMA, 63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-1-2',
     art: 'REDUCCION COP PVC PR 1.5 X 1/2',
     sku: '7460823173214',
     url: 'https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-1-2',
     nota: 'REDUCCION COP PVC PR 1.5 X 1/2 · artículo 7460823173214. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-482', PROV_CIMA, 111, {
+  c('MAT-32-474', PROV_CIMA, 111, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-copa-pvc-pre-1-5-x-1',
     art: 'REDUCCION COPA PVC PRE 1.5 X 1',
     sku: '7460823173238',
     url: 'https://ferreteriacima.com.do/products/reduccion-copa-pvc-pre-1-5-x-1',
     nota: 'REDUCCION COPA PVC PRE 1.5 X 1 · artículo 7460823173238. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-483', PROV_CIMA, 85, {
+  c('MAT-32-475', PROV_CIMA, 85, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-3-4',
     art: 'REDUCCION COP PVC PR 1.5 X 3/4',
     sku: '7460823173221',
     url: 'https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-1-5-x-3-4',
     nota: 'REDUCCION COP PVC PR 1.5 X 3/4 · artículo 7460823173221. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-484', PROV_BELLON, 13614, {
+  c('MAT-32-476', PROV_BELLON, 13614, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 12" x 8"',
     sku: '52070',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 12" x 8" · artículo 52070. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-485', PROV_BELLON, 9256.89, {
+  c('MAT-32-477', PROV_BELLON, 9256.89, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 16" x 12"',
     sku: '164080',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 16" x 12" · artículo 164080. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-486', PROV_CIMA, 234, {
+  c('MAT-32-478', PROV_CIMA, 234, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-2-x-1-5',
     art: 'REDUCCION COP PVC PR 2 X 1.5',
     sku: '017326',
     url: 'https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-2-x-1-5',
     nota: 'REDUCCION COP PVC PR 2 X 1.5 · artículo 017326. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-487', PROV_CIMA, 46, {
+  c('MAT-32-479', PROV_CIMA, 46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-3-4-x-1-2',
     art: 'REDUCCION COP PVC PR 3/4 X 1/2',
     sku: '7460823173184',
     url: 'https://ferreteriacima.com.do/products/reduccion-cop-pvc-pr-3-4-x-1-2',
     nota: 'REDUCCION COP PVC PR 3/4 X 1/2 · artículo 7460823173184. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-487', PROV_BELLON, 30.68, {
+  c('MAT-32-479', PROV_BELLON, 30.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 3/4" x 1/2" SCH80',
     sku: '12227',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 3/4" x 1/2" SCH80 · artículo 12227. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-487', PROV_BELLON, 12.26, {
+  c('MAT-32-479', PROV_BELLON, 12.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 3/4" x 1/2" Durm-Lasc-Era',
     sku: '12229',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 3/4" x 1/2" Durm-Lasc-Era · artículo 12229. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-487', PROV_BELLON, 5.77, {
+  c('MAT-32-479', PROV_BELLON, 5.77, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 3/4" x 1/2" Maximus',
     sku: '242275',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 3/4" x 1/2" Maximus · artículo 242275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-488', PROV_BELLON, 348, {
+  c('MAT-32-480', PROV_BELLON, 348, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 4" x 2"',
     sku: '61030',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 4" x 2" · artículo 61030. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-489', PROV_BELLON, 630, {
+  c('MAT-32-481', PROV_BELLON, 630, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 4" x 3" Durm-Lasc-Era',
     sku: '49091',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 4" x 3" Durm-Lasc-Era · artículo 49091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-489', PROV_BELLON, 122, {
+  c('MAT-32-481', PROV_BELLON, 122, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Copa PVC 4" x 3" Maximus',
     sku: '242286',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Copa PVC 4" x 3" Maximus · artículo 242286. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-490', PROV_BELLON, 25.53, {
+  c('MAT-32-482', PROV_BELLON, 25.53, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 1 1/2"x1" Sonaca-Durman',
     sku: '177552',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 1 1/2"x1" Sonaca-Durman · artículo 177552. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-491', PROV_BELLON, 26.39, {
+  c('MAT-32-483', PROV_BELLON, 26.39, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presion 1 1/2" x 1/2" Sonaca-Durman',
     sku: '12209',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presion 1 1/2" x 1/2" Sonaca-Durman · artículo 12209. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-492', PROV_BELLON, 10.56, {
+  c('MAT-32-484', PROV_BELLON, 10.56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 1" x 1/2" Sonaca',
     sku: '12211',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 1" x 1/2" Sonaca · artículo 12211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-492', PROV_BELLON, 7.7, {
+  c('MAT-32-484', PROV_BELLON, 7.7, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 1" x 1/2" Maximus',
     sku: '221283',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 1" x 1/2" Maximus · artículo 221283. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-493', PROV_BELLON, 8.27, {
+  c('MAT-32-485', PROV_BELLON, 8.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 1" x 3/4" Sonaca',
     sku: '12212',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 1" x 3/4" Sonaca · artículo 12212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-493', PROV_BELLON, 6.11, {
+  c('MAT-32-485', PROV_BELLON, 6.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 1" x 3/4" Maximus',
     sku: '221284',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 1" x 3/4" Maximus · artículo 221284. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-494', PROV_BELLON, 22.64, {
+  c('MAT-32-486', PROV_BELLON, 22.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 2" x 1 1/2" Sonaca',
     sku: '12214',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 2" x 1 1/2" Sonaca · artículo 12214. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-495', PROV_BELLON, 53.85, {
+  c('MAT-32-487', PROV_BELLON, 53.85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 2" x 1/2" Sonaca-Durman',
     sku: '12217',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 2" x 1/2" Sonaca-Durman · artículo 12217. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-495', PROV_BELLON, 20, {
+  c('MAT-32-487', PROV_BELLON, 20, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 2"x1 1/2" Maximus',
     sku: '234683',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 2"x1 1/2" Maximus · artículo 234683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-496', PROV_BELLON, 53.85, {
+  c('MAT-32-488', PROV_BELLON, 53.85, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 2" x 1" Sonaca-Durman',
     sku: '12216',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 2" x 1" Sonaca-Durman · artículo 12216. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-497', PROV_BELLON, 53.61, {
+  c('MAT-32-489', PROV_BELLON, 53.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 2" x 3/4" Sonaca',
     sku: '99809',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 2" x 3/4" Sonaca · artículo 99809. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-498', PROV_BELLON, 3.9, {
+  c('MAT-32-490', PROV_BELLON, 3.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 3/4" x 1/2" Sonaca',
     sku: '12213',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 3/4" x 1/2" Sonaca · artículo 12213. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-498', PROV_BELLON, 2.28, {
+  c('MAT-32-490', PROV_BELLON, 2.28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 3/4" x 1/2" Maximus',
     sku: '234684',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 3/4" x 1/2" Maximus · artículo 234684. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-499', PROV_BELLON, 104.52, {
+  c('MAT-32-491', PROV_BELLON, 104.52, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 3" x 2" Sonaca-Durman',
     sku: '41308',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 3" x 2" Sonaca-Durman · artículo 41308. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-500', PROV_BELLON, 245, {
+  c('MAT-32-492', PROV_BELLON, 245, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 4" x 3" Durman-Sonaca',
     sku: '12225',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 4" x 3" Durman-Sonaca · artículo 12225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-500', PROV_BELLON, 72.37, {
+  c('MAT-32-492', PROV_BELLON, 72.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Reducción Bush. PVC Presión 4" x 3" Maximus',
     sku: '242270',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Reducción Bush. PVC Presión 4" x 3" Maximus · artículo 242270. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-501', PROV_CIMA, 101, {
+  c('MAT-32-493', PROV_CIMA, 101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-bronce-1-4',
     art: 'TAPON HEMBRA BRONCE 1/4',
     sku: '221250',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-bronce-1-4',
     nota: 'TAPON HEMBRA BRONCE 1/4 · artículo 221250. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-502', PROV_BELLON, 100, {
+  c('MAT-32-494', PROV_BELLON, 100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Bronce Colector 3/4" Hembra',
     sku: '201930',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Bronce Colector 3/4" Hembra · artículo 201930. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-503', PROV_CIMA, 170, {
+  c('MAT-32-495', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-bronce-3-8',
     art: 'TAPON HEMBRA BRONCE 3/8',
     sku: '221251',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-bronce-3-8',
     nota: 'TAPON HEMBRA BRONCE 3/8 · artículo 221251. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-504', PROV_BELLON, 5.78, {
+  c('MAT-32-496', PROV_BELLON, 5.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra CPVC 1/2"',
     sku: '20717',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra CPVC 1/2" · artículo 20717. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-505', PROV_BELLON, 21, {
+  c('MAT-32-497', PROV_BELLON, 21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra CPVC 1"',
     sku: '12357',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra CPVC 1" · artículo 12357. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-506', PROV_BELLON, 8.72, {
+  c('MAT-32-498', PROV_BELLON, 8.72, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra CPVC 3/4"',
     sku: '20718',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra CPVC 3/4" · artículo 20718. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-507', PROV_CIMA, 270, {
+  c('MAT-32-499', PROV_CIMA, 270, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-5',
     art: 'TAPON HEMBRA HG 1.5',
     sku: '300053',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-hg-1-5',
     nota: 'TAPON HEMBRA HG 1.5 · artículo 300053. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-508', PROV_CIMA, 20, {
+  c('MAT-32-500', PROV_CIMA, 20, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-2',
     art: 'TAPON HEMBRA HG 1/2',
     sku: '300049',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-hg-1-2',
     nota: 'TAPON HEMBRA HG 1/2 · artículo 300049. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-509', PROV_CIMA, 35, {
+  c('MAT-32-501', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1-4',
     art: 'TAPON HEMBRA HG 1/4',
     sku: '300070',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-hg-1-4',
     nota: 'TAPON HEMBRA HG 1/4 · artículo 300070. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-510', PROV_CIMA, 44, {
+  c('MAT-32-502', PROV_CIMA, 44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-1',
     art: 'TAPON HEMBRA HG 1',
     sku: '300051',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-hg-1',
     nota: 'TAPON HEMBRA HG 1 · artículo 300051. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-511', PROV_CIMA, 189, {
+  c('MAT-32-503', PROV_CIMA, 189, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-hg-2',
     art: 'TAPON HEMBRA HG 2',
     sku: '300054',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-hg-2',
     nota: 'TAPON HEMBRA HG 2 · artículo 300054. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-512', PROV_CIMA, 31, {
+  c('MAT-32-504', PROV_CIMA, 31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-hembra-20mm-ppr',
     art: 'TAPON HEMBRA 20mm PPR',
     sku: '450020',
     url: 'https://ferreteriacima.com.do/products/tapon-hembra-20mm-ppr',
     nota: 'TAPON HEMBRA 20mm PPR · artículo 450020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-512', PROV_BELLON, 2.34, {
+  c('MAT-32-504', PROV_BELLON, 2.34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PPR 20mm (1/2") Verde Maximus',
     sku: '48594',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PPR 20mm (1/2") Verde Maximus · artículo 48594. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-513', PROV_BELLON, 4.16, {
+  c('MAT-32-505', PROV_BELLON, 4.16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PPR 25mm (3/4") Verde Maximus',
     sku: '51751',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PPR 25mm (3/4") Verde Maximus · artículo 51751. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-514', PROV_BELLON, 7.47, {
+  c('MAT-32-506', PROV_BELLON, 7.47, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PPR 32mm (1") Verde Maximus',
     sku: '51752',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PPR 32mm (1") Verde Maximus · artículo 51752. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-515', PROV_BELLON, 45.68, {
+  c('MAT-32-507', PROV_BELLON, 45.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Drenaje 2"',
     sku: '12371',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Drenaje 2" · artículo 12371. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-516', PROV_BELLON, 71, {
+  c('MAT-32-508', PROV_BELLON, 71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Drenaje 3"',
     sku: '239563',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Drenaje 3" · artículo 239563. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-517', PROV_BELLON, 112, {
+  c('MAT-32-509', PROV_BELLON, 112, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Drenaje 4"',
     sku: '12373',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Drenaje 4" · artículo 12373. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-518', PROV_BELLON, 4.22, {
+  c('MAT-32-510', PROV_BELLON, 4.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC 1/2" C/Rosca',
     sku: '20797',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC 1/2" C/Rosca · artículo 20797. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-519', PROV_BELLON, 8495, {
+  c('MAT-32-511', PROV_BELLON, 8495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC 12"',
     sku: '122100',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC 12" · artículo 122100. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-520', PROV_BELLON, 840, {
+  c('MAT-32-512', PROV_BELLON, 840, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC 8" Durm-Lasc-Era',
     sku: '12367',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC 8" Durm-Lasc-Era · artículo 12367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-521', PROV_CIMA, 50, {
+  c('MAT-32-513', PROV_CIMA, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-5',
     art: 'TAPON PVC PRESION HEMBRA 1.5',
     sku: '030351',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-5',
     nota: 'TAPON PVC PRESION HEMBRA 1.5 · artículo 030351. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-521', PROV_BELLON, 16.56, {
+  c('MAT-32-513', PROV_BELLON, 16.56, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 1 1/2" Sonaca',
     sku: '12359',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 1 1/2" Sonaca · artículo 12359. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-521', PROV_BELLON, 11.93, {
+  c('MAT-32-513', PROV_BELLON, 11.93, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 1 1/2" Maximus',
     sku: '234686',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 1 1/2" Maximus · artículo 234686. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-522', PROV_CIMA, 31, {
+  c('MAT-32-514', PROV_CIMA, 31, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-3',
     art: 'TAPON PVC PRESION HEMBRA 1/2',
     sku: '049029',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-3',
     nota: 'TAPON PVC PRESION HEMBRA 1/2 · artículo 049029. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-522', PROV_CIMA, 18, {
+  c('MAT-32-514', PROV_CIMA, 18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-2',
     art: 'TAPON PVC PRESION HEMBRA 1/2',
     sku: '030348',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-2',
     nota: 'TAPON PVC PRESION HEMBRA 1/2 · artículo 030348. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-522', PROV_BELLON, 3.7, {
+  c('MAT-32-514', PROV_BELLON, 3.7, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 1/2" Sonaca',
     sku: '12361',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 1/2" Sonaca · artículo 12361. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-522', PROV_BELLON, 2.21, {
+  c('MAT-32-514', PROV_BELLON, 2.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 1/2" Maximus',
     sku: '234688',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 1/2" Maximus · artículo 234688. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-523', PROV_CIMA, 48, {
+  c('MAT-32-515', PROV_CIMA, 48, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-sch',
     art: 'TAPON PVC PRESION HEMBRA 1 SCH',
     sku: '049031',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1-sch',
     nota: 'TAPON PVC PRESION HEMBRA 1 SCH · artículo 049031. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-523', PROV_CIMA, 35, {
+  c('MAT-32-515', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1',
     art: 'TAPON PVC PRESION HEMBRA 1',
     sku: '030350',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-1',
     nota: 'TAPON PVC PRESION HEMBRA 1 · artículo 030350. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-523', PROV_BELLON, 8.96, {
+  c('MAT-32-515', PROV_BELLON, 8.96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapon Hembra PVC Presión 1" Sonaca',
     sku: '12360',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapon Hembra PVC Presión 1" Sonaca · artículo 12360. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-523', PROV_BELLON, 5.41, {
+  c('MAT-32-515', PROV_BELLON, 5.41, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapon Hembra PVC Presión 1" Maximus',
     sku: '234687',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapon Hembra PVC Presión 1" Maximus · artículo 234687. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-524', PROV_BELLON, 27.3, {
+  c('MAT-32-516', PROV_BELLON, 27.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 2" Sonaca',
     sku: '12362',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 2" Sonaca · artículo 12362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-524', PROV_BELLON, 17.57, {
+  c('MAT-32-516', PROV_BELLON, 17.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 2" Maximus',
     sku: '234689',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 2" Maximus · artículo 234689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-525', PROV_CIMA, 20, {
+  c('MAT-32-517', PROV_CIMA, 20, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3-4',
     art: 'TAPON PVC PRESION HEMBRA 3/4',
     sku: '030349',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3-4',
     nota: 'TAPON PVC PRESION HEMBRA 3/4 · artículo 030349. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-525', PROV_BELLON, 5.17, {
+  c('MAT-32-517', PROV_BELLON, 5.17, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 3/4" Sonaca',
     sku: '12364',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 3/4" Sonaca · artículo 12364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-525', PROV_BELLON, 3.6, {
+  c('MAT-32-517', PROV_BELLON, 3.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 3/4" Maximus',
     sku: '234691',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 3/4" Maximus · artículo 234691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-526', PROV_CIMA, 205, {
+  c('MAT-32-518', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3',
     art: 'TAPON PVC PRESION HEMBRA 3',
     sku: '030353',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-presion-hembra-3',
     nota: 'TAPON PVC PRESION HEMBRA 3 · artículo 030353. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-526', PROV_BELLON, 74.88, {
+  c('MAT-32-518', PROV_BELLON, 74.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 3" Sonaca',
     sku: '12363',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 3" Sonaca · artículo 12363. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-526', PROV_BELLON, 50, {
+  c('MAT-32-518', PROV_BELLON, 50, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 3" Maximus',
     sku: '234690',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 3" Maximus · artículo 234690. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-527', PROV_BELLON, 124.23, {
+  c('MAT-32-519', PROV_BELLON, 124.23, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 4" Sonaca',
     sku: '12365',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 4" Sonaca · artículo 12365. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-527', PROV_BELLON, 81.05, {
+  c('MAT-32-519', PROV_BELLON, 81.05, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 4" Maximus',
     sku: '234692',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 4" Maximus · artículo 234692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-528', PROV_BELLON, 450, {
+  c('MAT-32-520', PROV_BELLON, 450, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 6" Liso Durm-Lasc-Era',
     sku: '42891',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 6" Liso Durm-Lasc-Era · artículo 42891. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-528', PROV_BELLON, 309, {
+  c('MAT-32-520', PROV_BELLON, 309, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Hembra PVC Presión 6" Liso Maximus',
     sku: '242272',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Hembra PVC Presión 6" Liso Maximus · artículo 242272. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-529', PROV_BELLON, 80, {
+  c('MAT-32-521', PROV_BELLON, 80, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Bronce Macho 1/2" NPT 1573',
     sku: '165807',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Bronce Macho 1/2" NPT 1573 · artículo 165807. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-530', PROV_BELLON, 21.58, {
+  c('MAT-32-522', PROV_BELLON, 21.58, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Campana Bronce Macho 1/4"',
     sku: '2492',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Campana Bronce Macho 1/4" · artículo 2492. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-530', PROV_BELLON, 37, {
+  c('MAT-32-522', PROV_BELLON, 37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Bronce Macho 1/4" NPT (1158)',
     sku: '165808',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Bronce Macho 1/4" NPT (1158) · artículo 165808. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-531', PROV_BELLON, 40.2, {
+  c('MAT-32-523', PROV_BELLON, 40.2, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Bronce Macho 1/8" NPT 109-2 (1571)',
     sku: '85451',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Bronce Macho 1/8" NPT 109-2 (1571) · artículo 85451. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-532', PROV_BELLON, 140, {
+  c('MAT-32-524', PROV_BELLON, 140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Bronce Colector 3/4" Macho',
     sku: '201931',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Bronce Colector 3/4" Macho · artículo 201931. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-533', PROV_CIMA, 100, {
+  c('MAT-32-525', PROV_CIMA, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-5',
     art: 'TAPON MACHO HG 1.5',
     sku: '300045',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-1-5',
     nota: 'TAPON MACHO HG 1.5 · artículo 300045. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-533', PROV_BELLON, 58, {
+  c('MAT-32-525', PROV_BELLON, 58, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 1 1/2"',
     sku: '15994',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 1 1/2" · artículo 15994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-534', PROV_CIMA, 141, {
+  c('MAT-32-526', PROV_CIMA, 141, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-1-4',
     art: 'TAPON MACHO HG 1 1/4',
     sku: '300046',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-1-1-4',
     nota: 'TAPON MACHO HG 1 1/4 · artículo 300046. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-534', PROV_BELLON, 41.54, {
+  c('MAT-32-526', PROV_BELLON, 41.54, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 1 1/4"',
     sku: '15995',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 1 1/4" · artículo 15995. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-535', PROV_CIMA, 15, {
+  c('MAT-32-527', PROV_CIMA, 15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-2',
     art: 'TAPON MACHO HG 1/2',
     sku: '300042',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-1-2',
     nota: 'TAPON MACHO HG 1/2 · artículo 300042. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-535', PROV_BELLON, 22, {
+  c('MAT-32-527', PROV_BELLON, 22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 1/2"',
     sku: '15997',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 1/2" · artículo 15997. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-536', PROV_CIMA, 23, {
+  c('MAT-32-528', PROV_CIMA, 23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1-4',
     art: 'TAPON MACHO HG 1/4',
     sku: '300040',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-1-4',
     nota: 'TAPON MACHO HG 1/4 · artículo 300040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-536', PROV_BELLON, 19.18, {
+  c('MAT-32-528', PROV_BELLON, 19.18, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 1/4"',
     sku: '15998',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 1/4" · artículo 15998. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-537', PROV_CIMA, 101, {
+  c('MAT-32-529', PROV_CIMA, 101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-1',
     art: 'TAPON MACHO HG 1',
     sku: '300044',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-1',
     nota: 'TAPON MACHO HG 1 · artículo 300044. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-537', PROV_BELLON, 35.11, {
+  c('MAT-32-529', PROV_BELLON, 35.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 1"',
     sku: '15996',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 1" · artículo 15996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-538', PROV_BELLON, 105, {
+  c('MAT-32-530', PROV_BELLON, 105, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 2"',
     sku: '16000',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 2" · artículo 16000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-539', PROV_CIMA, 33, {
+  c('MAT-32-531', PROV_CIMA, 33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3-4',
     art: 'TAPON MACHO HG 3/4',
     sku: '300043',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-3-4',
     nota: 'TAPON MACHO HG 3/4 · artículo 300043. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-539', PROV_BELLON, 25.87, {
+  c('MAT-32-531', PROV_BELLON, 25.87, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 3/4"',
     sku: '16002',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 3/4" · artículo 16002. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-540', PROV_CIMA, 22, {
+  c('MAT-32-532', PROV_CIMA, 22, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3-8',
     art: 'TAPON MACHO HG 3/8',
     sku: '300041',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-3-8',
     nota: 'TAPON MACHO HG 3/8 · artículo 300041. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-540', PROV_BELLON, 21.1, {
+  c('MAT-32-532', PROV_BELLON, 21.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 3/8"',
     sku: '16003',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 3/8" · artículo 16003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-541', PROV_CIMA, 206, {
+  c('MAT-32-533', PROV_CIMA, 206, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-macho-hg-3',
     art: 'TAPON MACHO HG 3',
     sku: '300052',
     url: 'https://ferreteriacima.com.do/products/tapon-macho-hg-3',
     nota: 'TAPON MACHO HG 3 · artículo 300052. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-541', PROV_BELLON, 220, {
+  c('MAT-32-533', PROV_BELLON, 220, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho Galvanizado 3"',
     sku: '16001',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho Galvanizado 3" · artículo 16001. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-542', PROV_BELLON, 4.66, {
+  c('MAT-32-534', PROV_BELLON, 4.66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapon Macho PPR 20mm (1/2") Verde Maximus',
     sku: '210698',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapon Macho PPR 20mm (1/2") Verde Maximus · artículo 210698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-543', PROV_BELLON, 8.23, {
+  c('MAT-32-535', PROV_BELLON, 8.23, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapon Macho PPR 25mm (3/4") Verde Maximus',
     sku: '228626',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapon Macho PPR 25mm (3/4") Verde Maximus · artículo 228626. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-544', PROV_BELLON, 10.98, {
+  c('MAT-32-536', PROV_BELLON, 10.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapon Macho PPR 32mm (1") Verde Maximus',
     sku: '126776',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapon Macho PPR 32mm (1") Verde Maximus · artículo 126776. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-545', PROV_BELLON, 30.65, {
+  c('MAT-32-537', PROV_BELLON, 30.65, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 1 1/2" Maximus',
     sku: '230364',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 1 1/2" Maximus · artículo 230364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-546', PROV_CIMA, 62, {
+  c('MAT-32-538', PROV_CIMA, 62, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-macho-1',
     art: 'TAPON PVC MACHO 1',
     sku: '029024',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-macho-1',
     nota: 'TAPON PVC MACHO 1 · artículo 029024. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-546', PROV_BELLON, 35.11, {
+  c('MAT-32-538', PROV_BELLON, 35.11, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 1" Durm-Lasc-Era',
     sku: '20721',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 1" Durm-Lasc-Era · artículo 20721. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-546', PROV_BELLON, 5.61, {
+  c('MAT-32-538', PROV_BELLON, 5.61, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 1" Maximus',
     sku: '242284',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 1" Maximus · artículo 242284. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-547', PROV_BELLON, 31, {
+  c('MAT-32-539', PROV_BELLON, 31, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 2" Maximus',
     sku: '234693',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 2" Maximus · artículo 234693. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-548', PROV_BELLON, 10.5, {
+  c('MAT-32-540', PROV_BELLON, 10.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 3/4" Durm-Lasc-Era',
     sku: '81740',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 3/4" Durm-Lasc-Era · artículo 81740. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-548', PROV_BELLON, 3.57, {
+  c('MAT-32-540', PROV_BELLON, 3.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Macho PVC 3/4" Maximus',
     sku: '242283',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Macho PVC 3/4" Maximus · artículo 242283. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-549', PROV_BELLON, 71, {
+  c('MAT-32-541', PROV_BELLON, 71, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 1 1/2" PFG301-015',
     sku: '15968',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 1 1/2" PFG301-015 · artículo 15968. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-550', PROV_BELLON, 47.69, {
+  c('MAT-32-542', PROV_BELLON, 47.69, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 1/2"',
     sku: '15971',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 1/2" · artículo 15971. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-551', PROV_BELLON, 35.13, {
+  c('MAT-32-543', PROV_BELLON, 35.13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 1"',
     sku: '15970',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 1" · artículo 15970. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-552', PROV_BELLON, 88, {
+  c('MAT-32-544', PROV_BELLON, 88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 2"',
     sku: '15974',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 2" · artículo 15974. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-553', PROV_BELLON, 25.2, {
+  c('MAT-32-545', PROV_BELLON, 25.2, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 3/4"',
     sku: '15976',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 3/4" · artículo 15976. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-554', PROV_BELLON, 28.78, {
+  c('MAT-32-546', PROV_BELLON, 28.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 3/8"',
     sku: '15977',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 3/8" · artículo 15977. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-555', PROV_BELLON, 281, {
+  c('MAT-32-547', PROV_BELLON, 281, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 3"',
     sku: '15975',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 3" · artículo 15975. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-556', PROV_BELLON, 454, {
+  c('MAT-32-548', PROV_BELLON, 454, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Copa Galvanizado 4"',
     sku: '15978',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Copa Galvanizado 4" · artículo 15978. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-557', PROV_BELLON, 10, {
+  c('MAT-32-549', PROV_BELLON, 10, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Redondo Interior 1 1/2"',
     sku: '104415',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Redondo Interior 1 1/2" · artículo 104415. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-557', PROV_BELLON, 8.5, {
+  c('MAT-32-549', PROV_BELLON, 8.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Cuadrado Interior 1 1/2" x 1 1/2"',
     sku: '208255',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Cuadrado Interior 1 1/2" x 1 1/2" · artículo 208255. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-558', PROV_BELLON, 211, {
+  c('MAT-32-550', PROV_BELLON, 211, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Aceite Motosierra 16" Poulan 530057236',
     sku: '147571',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Aceite Motosierra 16" Poulan 530057236 · artículo 147571. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-559', PROV_BELLON, 3.9, {
+  c('MAT-32-551', PROV_BELLON, 3.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Cuadrado Interior 1" Maximus',
     sku: '9927',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Cuadrado Interior 1" Maximus · artículo 9927. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-559', PROV_BELLON, 6.63, {
+  c('MAT-32-551', PROV_BELLON, 6.63, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Redondo Interior 1"',
     sku: '9930',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Redondo Interior 1" · artículo 9930. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-560', PROV_BELLON, 5.25, {
+  c('MAT-32-552', PROV_BELLON, 5.25, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Rectangular Interior 2" x 1"',
     sku: '199941',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Rectangular Interior 2" x 1" · artículo 199941. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-561', PROV_BELLON, 4.48, {
+  c('MAT-32-553', PROV_BELLON, 4.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Plástico Redondo Interior 3/4"',
     sku: '9931',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Plástico Redondo Interior 3/4" · artículo 9931. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-562', PROV_CIMA, 101, {
+  c('MAT-32-554', PROV_CIMA, 101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-1-5',
     art: 'TAPON PVC REGISTRO 1.5',
     sku: '051021',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-registro-1-5',
     nota: 'TAPON PVC REGISTRO 1.5 · artículo 051021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-563', PROV_CIMA, 135, {
+  c('MAT-32-555', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-2',
     art: 'TAPON PVC REGISTRO 2',
     sku: '041020',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-registro-2',
     nota: 'TAPON PVC REGISTRO 2 · artículo 041020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-564', PROV_CIMA, 263, {
+  c('MAT-32-556', PROV_CIMA, 263, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-3',
     art: 'TAPON PVC REGISTRO 3',
     sku: '031020',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-registro-3',
     nota: 'TAPON PVC REGISTRO 3 · artículo 031020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-565', PROV_CIMA, 372, {
+  c('MAT-32-557', PROV_CIMA, 372, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapon-pvc-registro-4',
     art: 'TAPON PVC REGISTRO 4',
     sku: '031021',
     url: 'https://ferreteriacima.com.do/products/tapon-pvc-registro-4',
     nota: 'TAPON PVC REGISTRO 4 · artículo 031021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-566', PROV_BELLON, 470, {
+  c('MAT-32-558', PROV_BELLON, 470, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro Completo PVC 6" Durm-Lasc-Era',
     sku: '51654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro Completo PVC 6"  Durm-Lasc-Era · artículo 51654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-566', PROV_BELLON, 279, {
+  c('MAT-32-558', PROV_BELLON, 279, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro Completo PVC 6" Maximus',
     sku: '242285',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro Completo PVC 6" Maximus · artículo 242285. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-567', PROV_BELLON, 24.74, {
+  c('MAT-32-559', PROV_BELLON, 24.74, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro PVC Presión 1 1/2" Sonaca',
     sku: '49419',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro PVC Presión 1 1/2" Sonaca · artículo 49419. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-568', PROV_BELLON, 41.49, {
+  c('MAT-32-560', PROV_BELLON, 41.49, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro PVC Presión 2" Sonaca',
     sku: '48853',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro PVC Presión 2" Sonaca · artículo 48853. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-568', PROV_BELLON, 28.27, {
+  c('MAT-32-560', PROV_BELLON, 28.27, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro Completo PVC Presión 2" Maximus',
     sku: '221290',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro Completo PVC Presión 2" Maximus · artículo 221290. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-569', PROV_BELLON, 100.24, {
+  c('MAT-32-561', PROV_BELLON, 100.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro PVC Presión 3" Sonaca',
     sku: '49103',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro PVC Presión 3" Sonaca · artículo 49103. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-570', PROV_BELLON, 159, {
+  c('MAT-32-562', PROV_BELLON, 159, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tapón Registro PVC Presión 4" Sonaca',
     sku: '49104',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tapón Registro PVC Presión 4" Sonaca · artículo 49104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-571', PROV_BELLON, 150, {
+  c('MAT-32-563', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Manguera 1/2" x 1/2" Manguera 1589',
     sku: '80091',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Manguera 1/2" x 1/2" Manguera 1589 · artículo 80091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-572', PROV_BELLON, 52, {
+  c('MAT-32-564', PROV_BELLON, 52, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Manguera 1/4" x 1/4" 1587',
     sku: '80089',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Manguera 1/4" x 1/4" 1587 · artículo 80089. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-572', PROV_BELLON, 119, {
+  c('MAT-32-564', PROV_BELLON, 119, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce 1/4" Presión (596)',
     sku: '206057',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce 1/4" Presión (596) · artículo 206057. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-573', PROV_BELLON, 686, {
+  c('MAT-32-565', PROV_BELLON, 686, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Flex 12 x 12 x 12 x 2.0',
     sku: '126771',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Flex 12 x 12 x 12 x 2.0 · artículo 126771. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-574', PROV_BELLON, 605, {
+  c('MAT-32-566', PROV_BELLON, 605, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Flex 15 x 15 x 15 x 2.5',
     sku: '135447',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Flex 15 x 15 x 15 x 2.5 · artículo 135447. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-574', PROV_BELLON, 473, {
+  c('MAT-32-566', PROV_BELLON, 473, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Entrada Hembra Flex 15 x 1/2" x 15',
     sku: '143001',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Entrada Hembra Flex 15 x 1/2" x 15 · artículo 143001. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-574', PROV_BELLON, 628, {
+  c('MAT-32-566', PROV_BELLON, 628, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Flex 15 x 1/2" x 15 Macho',
     sku: '143005',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Flex 15 x 1/2" x 15 Macho · artículo 143005. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-575', PROV_BELLON, 207, {
+  c('MAT-32-567', PROV_BELLON, 207, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Entrada Hembra Flex 18 x 1/2" x 18',
     sku: '143003',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Entrada Hembra Flex 18 x 1/2" x 18 · artículo 143003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-575', PROV_BELLON, 770, {
+  c('MAT-32-567', PROV_BELLON, 770, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Flex 18 x 18 x 18 x 2.5',
     sku: '143009',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Flex 18 x 18 x 18 x 2.5 · artículo 143009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-575', PROV_BELLON, 702, {
+  c('MAT-32-567', PROV_BELLON, 702, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Polietileno Flex 18 x 1/2" x 18 Macho',
     sku: '152240',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Polietileno Flex 18 x 1/2" x 18 Macho · artículo 152240. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-576', PROV_BELLON, 1255, {
+  c('MAT-32-568', PROV_BELLON, 1255, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Enlace Flex Polietileno 25 x 25 x 25 3467G252525W',
     sku: '143016',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Enlace Flex Polietileno 25 x 25 x 25 3467G252525W · artículo 143016. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-577', PROV_CIMA, 186, {
+  c('MAT-32-569', PROV_CIMA, 186, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-manguera-bronce-3-8',
     art: 'TEE MANGUERA BRONCE 3/8',
     sku: '167425',
     url: 'https://ferreteriacima.com.do/products/tee-manguera-bronce-3-8',
     nota: 'TEE MANGUERA BRONCE 3/8 · artículo 167425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-577', PROV_BELLON, 173, {
+  c('MAT-32-569', PROV_BELLON, 173, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Campana 3/8" x 3/8" B3-404-6 (3600)',
     sku: '2501',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Campana 3/8" x 3/8" B3-404-6 (3600) · artículo 2501. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-577', PROV_BELLON, 185, {
+  c('MAT-32-569', PROV_BELLON, 185, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce 3/8" NPT Hembra 659',
     sku: '35182',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce 3/8" NPT Hembra 659 · artículo 35182. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-577', PROV_BELLON, 78, {
+  c('MAT-32-569', PROV_BELLON, 78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Manguera 3/8" x 3/8" Manguera (1588)',
     sku: '80090',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Manguera 3/8" x 3/8" Manguera (1588) · artículo 80090. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-578', PROV_BELLON, 2108, {
+  c('MAT-32-570', PROV_BELLON, 2108, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Bronce Enlace Flex Polietileno 32 x 32 x 32 3467G323232W',
     sku: '143017',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Bronce Enlace Flex Polietileno 32 x 32 x 32 3467G323232W · artículo 143017. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-579', PROV_BELLON, 143, {
+  c('MAT-32-571', PROV_BELLON, 143, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Cobre 1 1/8"',
     sku: '57668',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Cobre 1 1/8" · artículo 57668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-580', PROV_BELLON, 66, {
+  c('MAT-32-572', PROV_BELLON, 66, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Cobre 1/2"',
     sku: '2506',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Cobre 1/2" · artículo 2506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-581', PROV_BELLON, 293, {
+  c('MAT-32-573', PROV_BELLON, 293, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Cobre 1 3/8"',
     sku: '99936',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Cobre 1 3/8" · artículo 99936. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-582', PROV_BELLON, 237, {
+  c('MAT-32-574', PROV_BELLON, 237, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Cobre 3/4"',
     sku: '2507',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Cobre 3/4" · artículo 2507. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-583', PROV_CIMA, 256, {
+  c('MAT-32-575', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-cobre-flare-3-8-x-3-8',
     art: 'TEE COBRE FLARE 3/8 x 3/8',
     sku: '031456',
     url: 'https://ferreteriacima.com.do/products/tee-cobre-flare-3-8-x-3-8',
     nota: 'TEE COBRE FLARE 3/8 x 3/8 · artículo 031456. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-584', PROV_BELLON, 257, {
+  c('MAT-32-576', PROV_BELLON, 257, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Cobre 7/8"',
     sku: '51499',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Cobre 7/8" · artículo 51499. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-585', PROV_BELLON, 10.34, {
+  c('MAT-32-577', PROV_BELLON, 10.34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee CPVC 1/2"',
     sku: '12374',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee CPVC 1/2" · artículo 12374. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-586', PROV_BELLON, 40.95, {
+  c('MAT-32-578', PROV_BELLON, 40.95, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee CPVC 1"',
     sku: '49536',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee CPVC 1" · artículo 49536. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-587', PROV_BELLON, 27.04, {
+  c('MAT-32-579', PROV_BELLON, 27.04, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee CPVC 3/4"',
     sku: '12375',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee CPVC 3/4" · artículo 12375. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-588', PROV_CIMA, 277, {
+  c('MAT-32-580', PROV_CIMA, 277, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-5',
     art: 'TEE HG 1.5',
     sku: '300014',
     url: 'https://ferreteriacima.com.do/products/tee-hg-1-5',
     nota: 'TEE HG 1.5 · artículo 300014. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-588', PROV_BELLON, 143, {
+  c('MAT-32-580', PROV_BELLON, 143, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 1 1/2"',
     sku: '16017',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 1 1/2" · artículo 16017. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-589', PROV_BELLON, 119, {
+  c('MAT-32-581', PROV_BELLON, 119, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 1 1/4"',
     sku: '16018',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 1 1/4" · artículo 16018. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-590', PROV_CIMA, 40, {
+  c('MAT-32-582', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-2',
     art: 'TEE HG 1/2',
     sku: '300010',
     url: 'https://ferreteriacima.com.do/products/tee-hg-1-2',
     nota: 'TEE HG 1/2 · artículo 300010. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-590', PROV_BELLON, 34, {
+  c('MAT-32-582', PROV_BELLON, 34, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 1/2"',
     sku: '16019',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 1/2" · artículo 16019. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-591', PROV_CIMA, 130, {
+  c('MAT-32-583', PROV_CIMA, 130, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1-4',
     art: 'TEE HG 1/4',
     sku: '300008',
     url: 'https://ferreteriacima.com.do/products/tee-hg-1-4',
     nota: 'TEE HG 1/4 · artículo 300008. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-591', PROV_BELLON, 37, {
+  c('MAT-32-583', PROV_BELLON, 37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 1/4"',
     sku: '16020',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 1/4" · artículo 16020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-592', PROV_CIMA, 160, {
+  c('MAT-32-584', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-1',
     art: 'TEE HG 1',
     sku: '300012',
     url: 'https://ferreteriacima.com.do/products/tee-hg-1',
     nota: 'TEE HG 1 · artículo 300012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-592', PROV_BELLON, 77, {
+  c('MAT-32-584', PROV_BELLON, 77, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 1"',
     sku: '21901',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 1" · artículo 21901. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-593', PROV_BELLON, 526, {
+  c('MAT-32-585', PROV_BELLON, 526, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 2 1/2"',
     sku: '16021',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 2 1/2" · artículo 16021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-594', PROV_CIMA, 383, {
+  c('MAT-32-586', PROV_CIMA, 383, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-2',
     art: 'TEE HG 2',
     sku: '300015',
     url: 'https://ferreteriacima.com.do/products/tee-hg-2',
     nota: 'TEE HG 2 · artículo 300015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-594', PROV_BELLON, 212, {
+  c('MAT-32-586', PROV_BELLON, 212, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 2"',
     sku: '16022',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 2" · artículo 16022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-595', PROV_CIMA, 95, {
+  c('MAT-32-587', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-3-4',
     art: 'TEE HG 3/4',
     sku: '300011',
     url: 'https://ferreteriacima.com.do/products/tee-hg-3-4',
     nota: 'TEE HG 3/4 · artículo 300011. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-595', PROV_BELLON, 49, {
+  c('MAT-32-587', PROV_BELLON, 49, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 3/4"',
     sku: '16024',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 3/4" · artículo 16024. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-596', PROV_CIMA, 58, {
+  c('MAT-32-588', PROV_CIMA, 58, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-hg-3-8',
     art: 'TEE HG 3/8',
     sku: '300009',
     url: 'https://ferreteriacima.com.do/products/tee-hg-3-8',
     nota: 'TEE HG 3/8 · artículo 300009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-596', PROV_BELLON, 42.23, {
+  c('MAT-32-588', PROV_BELLON, 42.23, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 3/8"',
     sku: '16025',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 3/8" · artículo 16025. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-597', PROV_BELLON, 603, {
+  c('MAT-32-589', PROV_BELLON, 603, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 3"',
     sku: '16023',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 3" · artículo 16023. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-598', PROV_BELLON, 1187, {
+  c('MAT-32-590', PROV_BELLON, 1187, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Hierro Galvanizado 4"',
     sku: '16026',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Hierro Galvanizado 4" · artículo 16026. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-599', PROV_CIMA, 444, {
+  c('MAT-32-591', PROV_CIMA, 444, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-1-2-niquelada',
     art: 'TEE NIQUELADA 1/2',
     sku: '035891',
     url: 'https://ferreteriacima.com.do/products/tee-1-2-niquelada',
     nota: 'TEE NIQUELADA 1/2 · artículo 035891. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-600', PROV_BELLON, 1020, {
+  c('MAT-32-592', PROV_BELLON, 1020, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee Plástica Polietileno 63 x2"',
     sku: '153177',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee Plástica Polietileno 63 x2" · artículo 153177. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-601', PROV_CIMA, 293, {
+  c('MAT-32-593', PROV_CIMA, 293, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-macho-20mm-x-1-2-ppr',
     art: 'TEE MACHO 20mm X 1/2 PPR',
     sku: '352521',
     url: 'https://ferreteriacima.com.do/products/tee-macho-20mm-x-1-2-ppr',
     nota: 'TEE MACHO 20mm X 1/2 PPR · artículo 352521. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-601', PROV_CIMA, 55, {
+  c('MAT-32-593', PROV_CIMA, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-20mm-ppr',
     art: 'TEE 20mm PPR',
     sku: '3000192',
     url: 'https://ferreteriacima.com.do/products/tee-20mm-ppr',
     nota: 'TEE 20mm PPR · artículo 3000192. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-601', PROV_BELLON, 7.98, {
+  c('MAT-32-593', PROV_BELLON, 7.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PPR 20mm (1/2") Verde Maximus',
     sku: '48603',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PPR 20mm (1/2") Verde Maximus · artículo 48603. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-601', PROV_BELLON, 16.21, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee PPR Reducción 32 x 20mm (1"x1/2") Verde Maximus',
-    sku: '126745',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee PPR Reducción 32 x 20mm (1"x1/2") Verde Maximus · artículo 126745. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-601', PROV_BELLON, 41.69, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PPR 50 x 20mm (1 1/2"x1/2") Verde Maximus',
-    sku: '221663',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PPR 50 x 20mm (1 1/2"x1/2") Verde Maximus · artículo 221663. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-601', PROV_BELLON, 10.37, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee PPR Reducción 25 x 20mm (3/4"x1/2") Verde Maximus',
-    sku: '227097',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee PPR Reducción 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 227097. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-602', PROV_CIMA, 50, {
+  c('MAT-32-594', PROV_CIMA, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-25mm-ppr',
     art: 'TEE 25mm PPR',
     sku: '150027',
     url: 'https://ferreteriacima.com.do/products/tee-25mm-ppr',
     nota: 'TEE 25mm PPR · artículo 150027. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-602', PROV_BELLON, 12.12, {
+  c('MAT-32-594', PROV_BELLON, 12.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PPR 25mm (3/4") Verde Maximus',
     sku: '48640',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PPR 25mm (3/4") Verde Maximus · artículo 48640. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-602', PROV_BELLON, 17.44, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee PPR Reducción 32 x 25mm (1"x3/4") Verde Maximus',
-    sku: '121637',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee PPR Reducción 32 x 25mm (1"x3/4") Verde Maximus · artículo 121637. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-602', PROV_BELLON, 41.27, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee PPR Reducción 50 x 25mm (1 1/2"x3/4") Verde Maximus',
-    sku: '207787',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee PPR Reducción 50 x 25mm (1 1/2"x3/4") Verde Maximus · artículo 207787. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-603', PROV_CIMA, 75, {
+  c('MAT-32-595', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-32mm-ppr',
     art: 'TEE 32mm PPR',
     sku: '150092',
     url: 'https://ferreteriacima.com.do/products/tee-32mm-ppr',
     nota: 'TEE 32mm PPR · artículo 150092. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-603', PROV_BELLON, 51.19, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee PPR Reducción 50 x 32mm (1 1/2"x1") Verde Maximus',
-    sku: '207786',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee PPR Reducción 50 x 32mm (1 1/2"x1") Verde Maximus · artículo 207786. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-603', PROV_BELLON, 19.4, {
+  c('MAT-32-595', PROV_BELLON, 19.4, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PPR 32mm (1") Verde Maximus',
     sku: '207788',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PPR 32mm (1") Verde Maximus · artículo 207788. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-604', PROV_BELLON, 63.12, {
+  c('MAT-32-596', PROV_BELLON, 63.12, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PPR 50 mm (1 1/2") Verde Maximus',
     sku: '207785',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PPR 50 mm (1 1/2") Verde Maximus · artículo 207785. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-605', PROV_CIMA, 86, {
+  c('MAT-32-597', PROV_CIMA, 86, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-1-5',
     art: 'TEE PVC DRENAJE 1.5',
     sku: '031019',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-1-5',
     nota: 'TEE PVC DRENAJE 1.5 · artículo 031019. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-605', PROV_BELLON, 31.55, {
+  c('MAT-32-597', PROV_BELLON, 31.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 1 1/2" Sonaca',
     sku: '12376',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 1 1/2" Sonaca · artículo 12376. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-605', PROV_BELLON, 22.5, {
+  c('MAT-32-597', PROV_BELLON, 22.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 1 1/2" Maximus',
     sku: '234694',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 1 1/2" Maximus · artículo 234694. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-606', PROV_CIMA, 135, {
+  c('MAT-32-598', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-2',
     art: 'TEE PVC DRENAJE 2',
     sku: '030358',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-2',
     nota: 'TEE PVC DRENAJE 2 · artículo 030358. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-606', PROV_BELLON, 47.64, {
+  c('MAT-32-598', PROV_BELLON, 47.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 2" Sonaca',
     sku: '12377',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 2" Sonaca · artículo 12377. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-606', PROV_BELLON, 33.78, {
+  c('MAT-32-598', PROV_BELLON, 33.78, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 2" Maximus',
     sku: '234695',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 2" Maximus · artículo 234695. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-607', PROV_CIMA, 194, {
+  c('MAT-32-599', PROV_CIMA, 194, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-3-x-2',
     art: 'TEE PVC DRENAJE 3 x 2',
     sku: '016409',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-3-x-2',
     nota: 'TEE PVC DRENAJE 3 x 2 · artículo 016409. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-607', PROV_CIMA, 257, {
+  c('MAT-32-599', PROV_CIMA, 257, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-3',
     art: 'TEE PVC DRENAJE 3',
     sku: '030361',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-3',
     nota: 'TEE PVC DRENAJE 3 · artículo 030361. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-607', PROV_BELLON, 113, {
+  c('MAT-32-599', PROV_BELLON, 113, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 3" Sonaca',
     sku: '12378',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 3" Sonaca · artículo 12378. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-607', PROV_BELLON, 108, {
+  c('MAT-32-599', PROV_BELLON, 108, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 3" Maximus',
     sku: '234696',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 3" Maximus · artículo 234696. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-608', PROV_BELLON, 84.17, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC Drenaje 3" x 2" Sonaca',
-    sku: '12393',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC Drenaje 3" x 2" Sonaca · artículo 12393. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-609', PROV_CIMA, 260, {
+  c('MAT-32-600', PROV_CIMA, 260, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-4-x-2',
     art: 'TEE PVC DRENAJE 4 x 2',
     sku: '030362',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-4-x-2',
     nota: 'TEE PVC DRENAJE 4 x 2 · artículo 030362. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-609', PROV_CIMA, 429, {
+  c('MAT-32-600', PROV_CIMA, 429, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-drenaje-4',
     art: 'TEE PVC DRENAJE 4',
     sku: '030360',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-drenaje-4',
     nota: 'TEE PVC DRENAJE 4 · artículo 030360. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-609', PROV_BELLON, 194.64, {
+  c('MAT-32-600', PROV_BELLON, 194.64, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 4" Sonaca',
     sku: '12379',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 4" Sonaca · artículo 12379. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-609', PROV_BELLON, 139, {
+  c('MAT-32-600', PROV_BELLON, 139, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 4" Maximus',
     sku: '234697',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 4" Maximus · artículo 234697. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-610', PROV_BELLON, 111.93, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC Drenaje 4" x 2" Sonaca',
-    sku: '12394',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC Drenaje 4" x 2" Sonaca · artículo 12394. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-610', PROV_BELLON, 88.56, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC Drenaje 4" x 2" Maximus',
-    sku: '234702',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC Drenaje 4" x 2" Maximus · artículo 234702. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-611', PROV_BELLON, 153.77, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC Drenaje 4" x 3" Sonaca',
-    sku: '12395',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC Drenaje 4" x 3" Sonaca · artículo 12395. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-612', PROV_BELLON, 625, {
+  c('MAT-32-601', PROV_BELLON, 625, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 6" Durm-Lasc-Era',
     sku: '133842',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 6" Durm-Lasc-Era · artículo 133842. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-612', PROV_BELLON, 291, {
+  c('MAT-32-601', PROV_BELLON, 291, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Drenaje 6" Maximus',
     sku: '242279',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Drenaje 6" Maximus · artículo 242279. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-613', PROV_BELLON, 108, {
+  c('MAT-32-602', PROV_BELLON, 108, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 1 1/2" SCH-80',
     sku: '12390',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 1 1/2" SCH-80 · artículo 12390. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-613', PROV_BELLON, 92, {
+  c('MAT-32-602', PROV_BELLON, 92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 1 1/2" Gris SCH80',
     sku: '215549',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 1 1/2" Gris SCH80 · artículo 215549. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-614', PROV_BELLON, 48, {
+  c('MAT-32-603', PROV_BELLON, 48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 1" Gris SCH80',
     sku: '203286',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 1" Gris SCH80 · artículo 203286. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-615', PROV_BELLON, 37.36, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC 1" x 3/4"',
-    sku: '48591',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC 1" x 3/4" · artículo 48591. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-616', PROV_BELLON, 165, {
+  c('MAT-32-604', PROV_BELLON, 165, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 2” Gris SCH80',
     sku: '226288',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 2” Gris SCH80 · artículo 226288. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-617', PROV_BELLON, 33.35, {
+  c('MAT-32-605', PROV_BELLON, 33.35, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 3/4" Gris SCH80',
     sku: '193200',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 3/4" Gris SCH80 · artículo 193200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-617', PROV_BELLON, 60, {
+  c('MAT-32-605', PROV_BELLON, 60, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 3/4” C/Rosca 13909C',
     sku: '229835',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 3/4” C/Rosca 13909C · artículo 229835. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-618', PROV_BELLON, 502, {
+  c('MAT-32-606', PROV_BELLON, 502, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC 3" Gris SCH80',
     sku: '208895',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC 3" Gris SCH80 · artículo 208895. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-619', PROV_CIMA, 135, {
+  c('MAT-32-607', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1-5',
     art: 'TEE PVC PRESION 1.5',
     sku: '030160',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-1-5',
     nota: 'TEE PVC PRESION 1.5 · artículo 030160. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-619', PROV_BELLON, 54.48, {
+  c('MAT-32-607', PROV_BELLON, 54.48, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1 1/2" Sonaca',
     sku: '12380',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1 1/2" Sonaca · artículo 12380. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-619', PROV_BELLON, 45.97, {
+  c('MAT-32-607', PROV_BELLON, 45.97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1 1/2" Maximus',
     sku: '234698',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1 1/2" Maximus · artículo 234698. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-620', PROV_CIMA, 28, {
+  c('MAT-32-608', PROV_CIMA, 28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1-2',
     art: 'TEE PVC PRESION 1/2',
     sku: '030355',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-1-2',
     nota: 'TEE PVC PRESION 1/2 · artículo 030355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-620', PROV_BELLON, 11.84, {
+  c('MAT-32-608', PROV_BELLON, 11.84, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1/2" Sonaca',
     sku: '12382',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1/2" Sonaca · artículo 12382. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-620', PROV_BELLON, 8.14, {
+  c('MAT-32-608', PROV_BELLON, 8.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1/2" Maximus',
     sku: '221285',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1/2" Maximus · artículo 221285. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-620', PROV_BELLON, 19.61, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 1/2" Durm-Lasc-Era',
-    sku: '224213',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 1/2" Durm-Lasc-Era · artículo 224213. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-620', PROV_BELLON, 13.68, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 1/2" Maximus',
-    sku: '242276',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 1/2" Maximus · artículo 242276. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-621', PROV_CIMA, 55, {
+  c('MAT-32-609', PROV_CIMA, 55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-1',
     art: 'TEE PVC PRESION 1',
     sku: '030357',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-1',
     nota: 'TEE PVC PRESION 1 · artículo 030357. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-621', PROV_BELLON, 25.37, {
+  c('MAT-32-609', PROV_BELLON, 25.37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1" Sonaca',
     sku: '12381',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1" Sonaca · artículo 12381. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-621', PROV_BELLON, 16, {
+  c('MAT-32-609', PROV_BELLON, 16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 1" Maximus',
     sku: '221287',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 1" Maximus · artículo 221287. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-621', PROV_BELLON, 56, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 1" Durm-Lasc-Era',
-    sku: '224215',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 1" Durm-Lasc-Era · artículo 224215. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-621', PROV_BELLON, 27.06, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 1" Maximus',
-    sku: '242278',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 1" Maximus · artículo 242278. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-622', PROV_CIMA, 195, {
+  c('MAT-32-610', PROV_CIMA, 195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-2',
     art: 'TEE PVC PRESION 2',
     sku: '031400',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-2',
     nota: 'TEE PVC PRESION 2 · artículo 031400. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-622', PROV_BELLON, 82.49, {
+  c('MAT-32-610', PROV_BELLON, 82.49, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 2" Sonaca',
     sku: '12384',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 2" Sonaca · artículo 12384. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-622', PROV_BELLON, 45.98, {
+  c('MAT-32-610', PROV_BELLON, 45.98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 2" Maximus',
     sku: '234699',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 2" Maximus · artículo 234699. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-623', PROV_CIMA, 35, {
+  c('MAT-32-611', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-3-4',
     art: 'TEE PVC PRESION 3/4',
     sku: '030356',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-3-4',
     nota: 'TEE PVC PRESION 3/4 · artículo 030356. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-623', PROV_BELLON, 15.13, {
+  c('MAT-32-611', PROV_BELLON, 15.13, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 3/4" Sonaca',
     sku: '12386',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 3/4" Sonaca · artículo 12386. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-623', PROV_BELLON, 8.83, {
+  c('MAT-32-611', PROV_BELLON, 8.83, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 3/4" Maximus',
     sku: '221286',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 3/4" Maximus · artículo 221286. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-623', PROV_BELLON, 28, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 3/4" Durm-Lasc-Era',
-    sku: '224214',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 3/4" Durm-Lasc-Era · artículo 224214. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-623', PROV_BELLON, 17.7, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Cruz PVC Presión 3/4" Maximus',
-    sku: '242277',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Cruz PVC Presión 3/4" Maximus · artículo 242277. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-624', PROV_CIMA, 453, {
+  c('MAT-32-612', PROV_CIMA, 453, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-presion-3',
     art: 'TEE PVC PRESION 3',
     sku: '055666',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-presion-3',
     nota: 'TEE PVC PRESION 3 · artículo 055666. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-624', PROV_BELLON, 235.03, {
+  c('MAT-32-612', PROV_BELLON, 235.03, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 3" Sonaca',
     sku: '12385',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 3" Sonaca · artículo 12385. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-624', PROV_BELLON, 169, {
+  c('MAT-32-612', PROV_BELLON, 169, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 3" Maximus',
     sku: '234700',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 3" Maximus · artículo 234700. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-625', PROV_BELLON, 394.88, {
+  c('MAT-32-613', PROV_BELLON, 394.88, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 4" Sonaca',
     sku: '12387',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 4" Sonaca · artículo 12387. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-625', PROV_BELLON, 278, {
+  c('MAT-32-613', PROV_BELLON, 278, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 4" Maximus',
     sku: '234701',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 4" Maximus · artículo 234701. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-626', PROV_BELLON, 687.34, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Tee Reducción PVC Presión 4" x 3" Sonaca',
-    sku: '75628',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Tee Reducción PVC Presión 4" x 3" Sonaca · artículo 75628. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-627', PROV_BELLON, 1090, {
+  c('MAT-32-614', PROV_BELLON, 1090, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 6" Durm-Lasc-Era',
     sku: '12388',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 6" Durm-Lasc-Era · artículo 12388. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-627', PROV_BELLON, 915, {
+  c('MAT-32-614', PROV_BELLON, 915, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 6" Maximus',
     sku: '242274',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 6" Maximus · artículo 242274. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-628', PROV_BELLON, 8379, {
+  c('MAT-32-615', PROV_BELLON, 8379, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tee PVC Presión 8" Durm-Lasc-Era',
     sku: '129994',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tee PVC Presión 8" Durm-Lasc-Era · artículo 129994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-629', PROV_CIMA, 45, {
+  c('MAT-32-616', PROV_CIMA, 45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-reducida-25mm-x-20m-ppr',
     art: 'TEE REDUCIDA 25mm X 20m PPR',
     sku: '352520',
     url: 'https://ferreteriacima.com.do/products/tee-reducida-25mm-x-20m-ppr',
     nota: 'TEE REDUCIDA 25mm X 20m PPR · artículo 352520. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-630', PROV_CIMA, 144, {
+  c('MAT-32-617', PROV_BELLON, 10.37, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee PPR Reducción 25 x 20mm (3/4"x1/2") Verde Maximus',
+    sku: '227097',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee PPR Reducción 25 x 20mm (3/4"x1/2") Verde Maximus · artículo 227097. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-618', PROV_BELLON, 16.21, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee PPR Reducción 32 x 20mm (1"x1/2") Verde Maximus',
+    sku: '126745',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee PPR Reducción 32 x 20mm (1"x1/2") Verde Maximus · artículo 126745. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-619', PROV_BELLON, 17.44, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee PPR Reducción 32 x 25mm (1"x3/4") Verde Maximus',
+    sku: '121637',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee PPR Reducción 32 x 25mm (1"x3/4") Verde Maximus · artículo 121637. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-620', PROV_BELLON, 41.69, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PPR 50 x 20mm (1 1/2"x1/2") Verde Maximus',
+    sku: '221663',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PPR 50 x 20mm (1 1/2"x1/2") Verde Maximus · artículo 221663. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-621', PROV_BELLON, 41.27, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee PPR Reducción 50 x 25mm (1 1/2"x3/4") Verde Maximus',
+    sku: '207787',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee PPR Reducción 50 x 25mm (1 1/2"x3/4") Verde Maximus · artículo 207787. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-622', PROV_BELLON, 51.19, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee PPR Reducción 50 x 32mm (1 1/2"x1") Verde Maximus',
+    sku: '207786',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee PPR Reducción 50 x 32mm (1 1/2"x1") Verde Maximus · artículo 207786. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-623', PROV_BELLON, 84.17, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC Drenaje 3" x 2" Sonaca',
+    sku: '12393',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC Drenaje 3" x 2" Sonaca · artículo 12393. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-624', PROV_BELLON, 111.93, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC Drenaje 4" x 2" Sonaca',
+    sku: '12394',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC Drenaje 4" x 2" Sonaca · artículo 12394. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-624', PROV_BELLON, 88.56, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC Drenaje 4" x 2" Maximus',
+    sku: '234702',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC Drenaje 4" x 2" Maximus · artículo 234702. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-625', PROV_BELLON, 153.77, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC Drenaje 4" x 3" Sonaca',
+    sku: '12395',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC Drenaje 4" x 3" Sonaca · artículo 12395. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-626', PROV_CIMA, 144, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tee-pvc-reducida-1-a-3-4',
     art: 'TEE PVC REDUCIDA 1 A 3/4',
     sku: '053031',
     url: 'https://ferreteriacima.com.do/products/tee-pvc-reducida-1-a-3-4',
     nota: 'TEE PVC REDUCIDA 1 A 3/4 · artículo 053031. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-631', PROV_CIMA, 235, {
+  c('MAT-32-626', PROV_BELLON, 37.36, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC 1" x 3/4"',
+    sku: '48591',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC 1" x 3/4" · artículo 48591. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-627', PROV_BELLON, 687.34, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Tee Reducción PVC Presión 4" x 3" Sonaca',
+    sku: '75628',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Tee Reducción PVC Presión 4" x 3" Sonaca · artículo 75628. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-628', PROV_CIMA, 235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-1-2-cfm-1-2b',
     art: 'TERMINAL BRONCE 1/2 CFM-1/2B',
     sku: '7501206652039',
     url: 'https://ferreteriacima.com.do/products/terminal-bronce-1-2-cfm-1-2b',
     nota: 'TERMINAL BRONCE 1/2 CFM-1/2B · artículo 7501206652039. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-632', PROV_CIMA, 275, {
+  c('MAT-32-629', PROV_CIMA, 275, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-3-4-cfm-3-4b',
     art: 'TERMINAL BRONCE 3/4 CFM-3/4B',
     sku: '7501206652046',
     url: 'https://ferreteriacima.com.do/products/terminal-bronce-3-4-cfm-3-4b',
     nota: 'TERMINAL BRONCE 3/4 CFM-3/4B · artículo 7501206652046. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-633', PROV_CIMA, 335, {
+  c('MAT-32-630', PROV_CIMA, 335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bronce-5-8-cfm-5-8b',
     art: 'TERMINAL BRONCE 5/8 CFM-5/8B',
     sku: '7501206652053',
     url: 'https://ferreteriacima.com.do/products/terminal-bronce-5-8-cfm-5-8b',
     nota: 'TERMINAL BRONCE 5/8 CFM-5/8B · artículo 7501206652053. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-634', PROV_CIMA, 319, {
+  c('MAT-32-631', PROV_CIMA, 319, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-bombas-1-x-3-4-cobre',
     art: 'TERMINAL BOMBAS 1 x 3/4 COBRE',
     sku: '032631',
     url: 'https://ferreteriacima.com.do/products/terminal-bombas-1-x-3-4-cobre',
     nota: 'TERMINAL BOMBAS 1 x 3/4 COBRE · artículo 032631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-635', PROV_CIMA, 131, {
+  c('MAT-32-632', PROV_CIMA, 131, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-m-1-2-rem-1',
     art: 'TERMINAL MANGUERA M 1/2 REM-1/',
     sku: '7501206652411',
     url: 'https://ferreteriacima.com.do/products/terminal-manguera-m-1-2-rem-1',
     nota: 'TERMINAL MANGUERA M 1/2 REM-1/ · artículo 7501206652411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-635', PROV_CIMA, 170, {
+  c('MAT-32-632', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-ref-1',
     art: 'TERMINAL MANGUERA H 1/2 REF-1/',
     sku: '7501206652428',
     url: 'https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-ref-1',
     nota: 'TERMINAL MANGUERA H 1/2 REF-1/ · artículo 7501206652428. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-635', PROV_CIMA, 161, {
+  c('MAT-32-632', PROV_CIMA, 161, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-cf-1-2',
     art: 'TERMINAL MANGUERA H 1/2 CF-1/2',
     sku: '7501206668757',
     url: 'https://ferreteriacima.com.do/products/terminal-manguera-h-1-2-cf-1-2',
     nota: 'TERMINAL MANGUERA H 1/2 CF-1/2 · artículo 7501206668757. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-635', PROV_CIMA, 210, {
+  c('MAT-32-632', PROV_CIMA, 210, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-1-2-cf-1-2',
     art: 'TERMINAL MANGUERA 1/2 CF-1/2',
     sku: '7501206652022',
     url: 'https://ferreteriacima.com.do/products/terminal-manguera-1-2-cf-1-2',
     nota: 'TERMINAL MANGUERA 1/2 CF-1/2 · artículo 7501206652022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-636', PROV_CIMA, 247, {
+  c('MAT-32-633', PROV_CIMA, 247, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-mangue-h-3-4-cf-3-4b',
     art: 'TERMINAL MANGUE H 3/4 CF-3/4B',
     sku: '7506240606314',
     url: 'https://ferreteriacima.com.do/products/terminal-mangue-h-3-4-cf-3-4b',
     nota: 'TERMINAL MANGUE H 3/4 CF-3/4B · artículo 7506240606314. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-637', PROV_CIMA, 233, {
+  c('MAT-32-634', PROV_CIMA, 233, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-mangue-h-5-8-cf-5-8b',
     art: 'TERMINAL MANGUE H 5/8 CF-5/8B',
     sku: '7506240606338',
     url: 'https://ferreteriacima.com.do/products/terminal-mangue-h-5-8-cf-5-8b',
     nota: 'TERMINAL MANGUE H 5/8 CF-5/8B · artículo 7506240606338. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-638', PROV_CIMA, 295, {
+  c('MAT-32-635', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/terminal-manguera-5-1-thhcs051',
     art: 'TERMINAL MANGUERA 5/1 THHCS051',
     sku: '692582195170',
     url: 'https://ferreteriacima.com.do/products/terminal-manguera-5-1-thhcs051',
     nota: 'TERMINAL MANGUERA 5/1 THHCS051 · artículo 692582195170. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-639', PROV_BELLON, 35.78, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Unión Bronce Presión 3/16" (693) / 2094',
-    sku: '3163',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Unión Bronce Presión 3/16"  (693) / 2094 · artículo 3163. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-640', PROV_CIMA, 165, {
+  c('MAT-32-636', PROV_CIMA, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-presion-bronce-1-2-x-3-8',
     art: 'UNION PRESION BRONCE 1/2 X 3/8',
     sku: '012130',
     url: 'https://ferreteriacima.com.do/products/union-presion-bronce-1-2-x-3-8',
     nota: 'UNION PRESION BRONCE 1/2 X 3/8 · artículo 012130. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-640', PROV_BELLON, 66.19, {
+  c('MAT-32-636', PROV_BELLON, 66.19, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce 1/2" Manguera 6767/0195',
     sku: '3143',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce 1/2" Manguera 6767/0195 · artículo 3143. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-641', PROV_BELLON, 28, {
+  c('MAT-32-637', PROV_BELLON, 28, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce 1/4" Manguera B5-29S-4 (700)',
     sku: '3144',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce 1/4" Manguera B5-29S-4 (700) · artículo 3144. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-641', PROV_BELLON, 110, {
+  c('MAT-32-637', PROV_BELLON, 110, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Presión 1/4" (692) / 1791',
     sku: '3161',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Presión 1/4" (692) / 1791 · artículo 3161. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-642', PROV_BELLON, 16, {
+  c('MAT-32-638', PROV_BELLON, 16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Presión 1/8"',
     sku: '3162',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Presión 1/8" · artículo 3162. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-643', PROV_BELLON, 346, {
+  c('MAT-32-639', PROV_BELLON, 346, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Polietileno Flex 12 x 12 x 2.0',
     sku: '126784',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Polietileno Flex 12 x 12 x 2.0 · artículo 126784. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-644', PROV_BELLON, 375, {
+  c('MAT-32-640', PROV_BELLON, 375, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Polietileno Flex 15 x 15 x 2.5 1401G152500',
     sku: '143022',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Polietileno Flex 15 x 15 x 2.5 1401G152500 · artículo 143022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-645', PROV_BELLON, 413, {
+  c('MAT-32-641', PROV_BELLON, 413, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Polietileno Flex 18 x 18 x 2.5',
     sku: '143023',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Polietileno Flex 18 x 18 x 2.5 · artículo 143023. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-646', PROV_BELLON, 796, {
+  c('MAT-32-642', PROV_BELLON, 796, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Enlace Flex Polietileno 25 x 25 3461G252500',
     sku: '143026',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Enlace Flex Polietileno 25 x 25 3461G252500 · artículo 143026. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-647', PROV_CIMA, 147, {
+  c('MAT-32-643', PROV_BELLON, 35.78, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Unión Bronce Presión 3/16" (693) / 2094',
+    sku: '3163',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Unión Bronce Presión 3/16"  (693) / 2094 · artículo 3163. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-644', PROV_CIMA, 147, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-presion-bronce-3-8-x-3-8',
     art: 'UNION PRESION BRONCE 3/8 x 3/8',
     sku: '032557',
     url: 'https://ferreteriacima.com.do/products/union-presion-bronce-3-8-x-3-8',
     nota: 'UNION PRESION BRONCE 3/8 x 3/8 · artículo 032557. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-647', PROV_BELLON, 44, {
+  c('MAT-32-644', PROV_BELLON, 44, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce 3/8" Manguera (699)',
     sku: '3147',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce 3/8" Manguera (699) · artículo 3147. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-647', PROV_BELLON, 125, {
+  c('MAT-32-644', PROV_BELLON, 125, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Campana 3/8" (683)',
     sku: '3154',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Campana 3/8" (683) · artículo 3154. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-647', PROV_BELLON, 111, {
+  c('MAT-32-644', PROV_BELLON, 111, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Presión 3/8" (690) / 1563',
     sku: '3164',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Presión 3/8" (690) / 1563 · artículo 3164. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-648', PROV_BELLON, 906, {
+  c('MAT-32-645', PROV_BELLON, 906, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Bronce Polietileno Flex 32 x 32 mm Tiemme 3461G323200W',
     sku: '232231',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Bronce Polietileno Flex 32 x 32 mm Tiemme 3461G323200W · artículo 232231. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-649', PROV_CIMA, 180, {
+  c('MAT-32-646', PROV_CIMA, 180, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-plastico-rema-1-2',
     art: 'UNION PLASTICO REMA 1/2',
     sku: '7501206652435',
     url: 'https://ferreteriacima.com.do/products/union-plastico-rema-1-2',
     nota: 'UNION PLASTICO REMA 1/2 · artículo 7501206652435. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-649', PROV_BELLON, 111, {
+  c('MAT-32-646', PROV_BELLON, 111, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Manguera Plástico Jardín 1/2" Truper REMA-1/2',
     sku: '57420',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Manguera Plástico Jardín 1/2" Truper REMA-1/2 · artículo 57420. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-650', PROV_BELLON, 131, {
+  c('MAT-32-647', PROV_BELLON, 131, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Manguera Plástico Jardín 5/8 - 3/4" Truper',
     sku: '57421',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Manguera Plástico Jardín 5/8 - 3/4" Truper · artículo 57421. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-651', PROV_BELLON, 31.5, {
+  c('MAT-32-648', PROV_BELLON, 31.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca CPVC 1/2" FOSET CPVC-971 45055',
     sku: '20713',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca CPVC 1/2" FOSET CPVC-971 45055 · artículo 20713. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-652', PROV_BELLON, 150, {
+  c('MAT-32-649', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca CPVC 1"',
     sku: '226810',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca CPVC 1" · artículo 226810. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-653', PROV_BELLON, 100, {
+  c('MAT-32-650', PROV_BELLON, 100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca CPVC 3/4"',
     sku: '56327',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca CPVC 3/4" · artículo 56327. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-654', PROV_CIMA, 525, {
+  c('MAT-32-651', PROV_CIMA, 525, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-5',
     art: 'UNION UNIVERSAL HG 1.5',
     sku: '300022',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-1-5',
     nota: 'UNION UNIVERSAL HG 1.5 · artículo 300022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-654', PROV_BELLON, 350, {
+  c('MAT-32-651', PROV_BELLON, 350, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 1 1/2"',
     sku: '16134',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 1 1/2" · artículo 16134. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-655', PROV_CIMA, 422, {
+  c('MAT-32-652', PROV_CIMA, 422, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-1-4',
     art: 'UNION UNIVERSAL HG 1 1/4',
     sku: '300021',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-1-1-4',
     nota: 'UNION UNIVERSAL HG 1 1/4 · artículo 300021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-655', PROV_BELLON, 249, {
+  c('MAT-32-652', PROV_BELLON, 249, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 1 1/4"',
     sku: '16135',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 1 1/4" · artículo 16135. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-656', PROV_CIMA, 170, {
+  c('MAT-32-653', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-2',
     art: 'UNION UNIVERSAL HG 1/2',
     sku: '300018',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-1-2',
     nota: 'UNION UNIVERSAL HG 1/2 · artículo 300018. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-656', PROV_BELLON, 115, {
+  c('MAT-32-653', PROV_BELLON, 115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 1/2"',
     sku: '16137',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 1/2" · artículo 16137. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-657', PROV_CIMA, 44, {
+  c('MAT-32-654', PROV_CIMA, 44, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-1-4',
     art: 'UNION UNIVERSAL HG 1/4',
     sku: '300016',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-1-4',
     nota: 'UNION UNIVERSAL HG 1/4 · artículo 300016. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-658', PROV_BELLON, 174, {
+  c('MAT-32-655', PROV_BELLON, 174, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 1"',
     sku: '16136',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 1" · artículo 16136. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-659', PROV_CIMA, 827, {
+  c('MAT-32-656', PROV_CIMA, 827, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-2',
     art: 'UNION UNIVERSAL HG 2',
     sku: '300023',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-2',
     nota: 'UNION UNIVERSAL HG 2 · artículo 300023. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-659', PROV_BELLON, 450, {
+  c('MAT-32-656', PROV_BELLON, 450, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 2"',
     sku: '16139',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 2" · artículo 16139. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-660', PROV_CIMA, 162, {
+  c('MAT-32-657', PROV_CIMA, 162, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-3-4',
     art: 'UNION UNIVERSAL HG 3/4',
     sku: '300019',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-3-4',
     nota: 'UNION UNIVERSAL HG 3/4 · artículo 300019. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-660', PROV_BELLON, 180, {
+  c('MAT-32-657', PROV_BELLON, 180, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 3/4"',
     sku: '16141',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 3/4" · artículo 16141. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-661', PROV_CIMA, 12, {
+  c('MAT-32-658', PROV_CIMA, 12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-hg-3-8',
     art: 'UNION UNIVERSAL HG 3/8',
     sku: '300017',
     url: 'https://ferreteriacima.com.do/products/union-universal-hg-3-8',
     nota: 'UNION UNIVERSAL HG 3/8 · artículo 300017. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-662', PROV_BELLON, 1376, {
+  c('MAT-32-659', PROV_BELLON, 1376, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 3"',
     sku: '16140',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 3" · artículo 16140. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-663', PROV_BELLON, 1835, {
+  c('MAT-32-660', PROV_BELLON, 1835, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Galvanizado 4"',
     sku: '16143',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Galvanizado 4" · artículo 16143. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-664', PROV_BELLON, 25.14, {
+  c('MAT-32-661', PROV_BELLON, 25.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PPR 20mm (1/2") Verde Maximus',
     sku: '68587',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PPR 20mm (1/2") Verde Maximus · artículo 68587. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-665', PROV_CIMA, 166, {
+  c('MAT-32-662', PROV_CIMA, 166, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-25mm-ppr',
     art: 'UNION UNIVERSAL 25mm PPR',
     sku: '250021',
     url: 'https://ferreteriacima.com.do/products/union-universal-25mm-ppr',
     nota: 'UNION UNIVERSAL 25mm PPR · artículo 250021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-665', PROV_BELLON, 33.14, {
+  c('MAT-32-662', PROV_BELLON, 33.14, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PPR 25mm (3/4") Verde Maximus',
     sku: '48602',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PPR 25mm (3/4") Verde Maximus · artículo 48602. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-666', PROV_BELLON, 50.46, {
+  c('MAT-32-663', PROV_BELLON, 50.46, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PPR 32mm (1") Verde Maximus',
     sku: '51743',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PPR 32mm (1") Verde Maximus · artículo 51743. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-667', PROV_BELLON, 120, {
+  c('MAT-32-664', PROV_BELLON, 120, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PPR 50mm (1 1/2") Verde Maximus',
     sku: '200141',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PPR 50mm (1 1/2") Verde Maximus · artículo 200141. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-668', PROV_MC, 103, {
+  c('MAT-32-665', PROV_MC, 103, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 1 1/2',
@@ -63889,35 +63889,35 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 1 1/2 · artículo 326068 · ref. SCH 40 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-668', PROV_BELLON, 74.06, {
+  c('MAT-32-665', PROV_BELLON, 74.06, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1 1/2" Sonaca',
     sku: '12935',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1 1/2" Sonaca · artículo 12935. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-668', PROV_BELLON, 217, {
+  c('MAT-32-665', PROV_BELLON, 217, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PVC 1 1/2" Gris SCH80',
     sku: '217266',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal  PVC 1 1/2" Gris SCH80 · artículo 217266. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-668', PROV_BELLON, 87.5, {
+  c('MAT-32-665', PROV_BELLON, 87.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1 1/2" Maximus',
     sku: '234825',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1 1/2" Maximus · artículo 234825. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-669', PROV_CIMA, 75, {
+  c('MAT-32-666', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-1-2',
     art: 'UNION UNIVERSAL PVC 1/2',
     sku: '030725',
     url: 'https://ferreteriacima.com.do/products/union-universal-pvc-1-2',
     nota: 'UNION UNIVERSAL PVC 1/2 · artículo 030725. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-669', PROV_MC, 22.87, {
+  c('MAT-32-666', PROV_MC, 22.87, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 1/2',
@@ -63925,28 +63925,28 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 1/2 · artículo 102004 · ref. SCH 40 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-669', PROV_BELLON, 17.7, {
+  c('MAT-32-666', PROV_BELLON, 17.7, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1/2" Sonaca',
     sku: '12937',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1/2" Sonaca · artículo 12937. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-669', PROV_BELLON, 33.55, {
+  c('MAT-32-666', PROV_BELLON, 33.55, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1/2" Maximus',
     sku: '234823',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1/2" Maximus · artículo 234823. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-670', PROV_CIMA, 135, {
+  c('MAT-32-667', PROV_CIMA, 135, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-1',
     art: 'UNION UNIVERSAL PVC 1',
     sku: '030726',
     url: 'https://ferreteriacima.com.do/products/union-universal-pvc-1',
     nota: 'UNION UNIVERSAL PVC 1 · artículo 030726. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-670', PROV_MC, 41.92, {
+  c('MAT-32-667', PROV_MC, 41.92, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 1',
@@ -63954,35 +63954,35 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 1 · artículo 102020 · ref. SCH 40 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-670', PROV_BELLON, 38.6, {
+  c('MAT-32-667', PROV_BELLON, 38.6, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1" Sonaca',
     sku: '12936',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1" Sonaca · artículo 12936. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-670', PROV_BELLON, 147, {
+  c('MAT-32-667', PROV_BELLON, 147, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal 1" PVC Gris SCH80',
     sku: '82737',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal 1" PVC Gris SCH80 · artículo 82737. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-670', PROV_BELLON, 37, {
+  c('MAT-32-667', PROV_BELLON, 37, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 1" Maximus',
     sku: '234822',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 1" Maximus · artículo 234822. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-671', PROV_CIMA, 232, {
+  c('MAT-32-668', PROV_CIMA, 232, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-2',
     art: 'UNION UNIVERSAL PVC 2',
     sku: '021825',
     url: 'https://ferreteriacima.com.do/products/union-universal-pvc-2',
     nota: 'UNION UNIVERSAL PVC 2 · artículo 021825. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-671', PROV_MC, 137, {
+  c('MAT-32-668', PROV_MC, 137, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 2',
@@ -63990,35 +63990,35 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 2 · artículo 326076 · ref. SW5634 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-671', PROV_BELLON, 125.07, {
+  c('MAT-32-668', PROV_BELLON, 125.07, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 2" Sonaca',
     sku: '12938',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 2" Sonaca · artículo 12938. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-671', PROV_BELLON, 401, {
+  c('MAT-32-668', PROV_BELLON, 401, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal S/Rosca PVC 2" Gris SCH80',
     sku: '52754',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal S/Rosca PVC 2" Gris SCH80 · artículo 52754. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-671', PROV_BELLON, 145, {
+  c('MAT-32-668', PROV_BELLON, 145, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 2" Maximus',
     sku: '234821',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 2" Maximus · artículo 234821. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_CIMA, 95, {
+  c('MAT-32-669', PROV_CIMA, 95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/union-universal-pvc-3-4',
     art: 'UNION UNIVERSAL PVC 3/4',
     sku: '031689',
     url: 'https://ferreteriacima.com.do/products/union-universal-pvc-3-4',
     nota: 'UNION UNIVERSAL PVC 3/4 · artículo 031689. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_MC, 28.17, {
+  c('MAT-32-669', PROV_MC, 28.17, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 3/4',
@@ -64026,42 +64026,42 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 3/4 · artículo 102012 · ref. SCH 40 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-672', PROV_BELLON, 24.91, {
+  c('MAT-32-669', PROV_BELLON, 24.91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 3/4" Sonaca',
     sku: '12939',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 3/4" Sonaca · artículo 12939. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_BELLON, 27.9, {
+  c('MAT-32-669', PROV_BELLON, 27.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PVC 3/4" Rosca',
     sku: '20714',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PVC 3/4" Rosca · artículo 20714. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_BELLON, 76, {
+  c('MAT-32-669', PROV_BELLON, 76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PVC S/Rosca T/Cheque 3/4" SCH80',
     sku: '187129',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal PVC S/Rosca T/Cheque 3/4" SCH80 · artículo 187129. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_BELLON, 23.2, {
+  c('MAT-32-669', PROV_BELLON, 23.2, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 3/4" Maximus',
     sku: '234824',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 3/4" Maximus · artículo 234824. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-672', PROV_BELLON, 105, {
+  c('MAT-32-669', PROV_BELLON, 105, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal PVC 3/4" Gris SCH80',
     sku: '235350',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal  PVC 3/4" Gris SCH80 · artículo 235350. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-673', PROV_MC, 450, {
+  c('MAT-32-670', PROV_MC, 450, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 3',
@@ -64069,28 +64069,28 @@
     marca: 'AQUAVITA',
     nota: 'UNION UNIVERSAL PVC 3 · artículo 747993 · ref. SCH 40 · marca AQUAVITA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-673', PROV_BELLON, 645, {
+  c('MAT-32-670', PROV_BELLON, 645, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 3" Maximus',
     sku: '14355',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 3" Maximus · artículo 14355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-674', PROV_BELLON, 895, {
+  c('MAT-32-671', PROV_BELLON, 895, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal Sin Rosca PVC 4" Maximus',
     sku: '25888',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal Sin Rosca PVC 4" Maximus · artículo 25888. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-674', PROV_BELLON, 1617, {
+  c('MAT-32-671', PROV_BELLON, 1617, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Unión Universal S/Rosca PVC 4" Gris SCH80',
     sku: '42431',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Unión Universal S/Rosca PVC 4" Gris SCH80 · artículo 42431. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-675', PROV_MC, 83.29, {
+  c('MAT-32-672', PROV_MC, 83.29, {
     fecha: '2026-09-09', fuente: 'Cotización CZ27094 de Ferretería MC, 09/09/2026',
     itbis: false,
     art: 'UNION UNIVERSAL PVC 1',
@@ -64098,161 +64098,161 @@
     marca: 'ERA',
     nota: 'UNION UNIVERSAL PVC 1 · artículo 6012009 · ref. SCH80 · marca ERA. El precio es antes de ITBIS: la cotización lo suma aparte'
   });
-  c('MAT-32-676', PROV_CIMA, 47, {
+  c('MAT-32-673', PROV_CIMA, 47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-1-5',
     art: 'YEE PVC DRENAJE 1.5',
     sku: '030363',
     url: 'https://ferreteriacima.com.do/products/yee-pvc-drenaje-1-5',
     nota: 'YEE PVC DRENAJE 1.5 · artículo 030363. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-676', PROV_BELLON, 39.9, {
+  c('MAT-32-673', PROV_BELLON, 39.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 1 1/2" Durm-Lasc-Era',
     sku: '12967',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 1 1/2" Durm-Lasc-Era · artículo 12967. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-677', PROV_CIMA, 145, {
+  c('MAT-32-674', PROV_CIMA, 145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-2',
     art: 'YEE PVC DRENAJE 2',
     sku: '030364',
     url: 'https://ferreteriacima.com.do/products/yee-pvc-drenaje-2',
     nota: 'YEE PVC DRENAJE 2 · artículo 030364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-677', PROV_BELLON, 46.1, {
+  c('MAT-32-674', PROV_BELLON, 46.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 2" Sonaca',
     sku: '12968',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 2" Sonaca · artículo 12968. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-677', PROV_BELLON, 39.22, {
+  c('MAT-32-674', PROV_BELLON, 39.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 2" Maximus',
     sku: '234703',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 2" Maximus · artículo 234703. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-678', PROV_BELLON, 150.29, {
+  c('MAT-32-675', PROV_BELLON, 150.29, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 3" Sonaca',
     sku: '12969',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 3" Sonaca · artículo 12969. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-678', PROV_BELLON, 76.79, {
+  c('MAT-32-675', PROV_BELLON, 76.79, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 3" Maximus',
     sku: '234704',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 3" Maximus · artículo 234704. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-679', PROV_CIMA, 205, {
+  c('MAT-32-676', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-3-x-2',
     art: 'YEE PVC DRENAJE 3 x 2',
     sku: '030367',
     url: 'https://ferreteriacima.com.do/products/yee-pvc-drenaje-3-x-2',
     nota: 'YEE PVC DRENAJE 3 x 2 · artículo 030367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-679', PROV_BELLON, 89.57, {
+  c('MAT-32-676', PROV_BELLON, 89.57, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 3" x 2" Sonaca',
     sku: '12973',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 3" x 2" Sonaca · artículo 12973. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-680', PROV_CIMA, 425, {
+  c('MAT-32-677', PROV_CIMA, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-4',
     art: 'YEE PVC DRENAJE 4',
     sku: '030151',
     url: 'https://ferreteriacima.com.do/products/yee-pvc-drenaje-4',
     nota: 'YEE PVC DRENAJE 4 · artículo 030151. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-680', PROV_BELLON, 224.26, {
+  c('MAT-32-677', PROV_BELLON, 224.26, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 4" Sonaca',
     sku: '12970',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 4" Sonaca · artículo 12970. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-680', PROV_BELLON, 160, {
+  c('MAT-32-677', PROV_BELLON, 160, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 4" Maximus',
     sku: '234705',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 4" Maximus · artículo 234705. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-681', PROV_CIMA, 265, {
+  c('MAT-32-678', PROV_CIMA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yee-pvc-drenaje-4-x-2',
     art: 'YEE PVC DRENAJE 4 x 2',
     sku: '030368',
     url: 'https://ferreteriacima.com.do/products/yee-pvc-drenaje-4-x-2',
     nota: 'YEE PVC DRENAJE 4 x 2 · artículo 030368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-681', PROV_BELLON, 120.22, {
+  c('MAT-32-678', PROV_BELLON, 120.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 4" x 2" Sonaca',
     sku: '12974',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 4" x 2" Sonaca · artículo 12974. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-681', PROV_BELLON, 97, {
+  c('MAT-32-678', PROV_BELLON, 97, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 4" x 2" Maximus',
     sku: '234707',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 4" x 2" Maximus · artículo 234707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-682', PROV_BELLON, 191.92, {
+  c('MAT-32-679', PROV_BELLON, 191.92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 4" x 3" Sonaca',
     sku: '12975',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 4" x 3" Sonaca · artículo 12975. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-683', PROV_BELLON, 972, {
+  c('MAT-32-680', PROV_BELLON, 972, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 6" Durm-Lasc-Era',
     sku: '152610',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 6" Durm-Lasc-Era · artículo 152610. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-683', PROV_BELLON, 875, {
+  c('MAT-32-680', PROV_BELLON, 875, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee PVC Drenaje 6" Maximus',
     sku: '234706',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee PVC Drenaje 6" Maximus · artículo 234706. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-684', PROV_BELLON, 855, {
+  c('MAT-32-681', PROV_BELLON, 855, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 6" x 4" Durm-Lasc-Era',
     sku: '161838',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 6" x 4" Durm-Lasc-Era · artículo 161838. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-685', PROV_BELLON, 5151, {
+  c('MAT-32-682', PROV_BELLON, 5151, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Drenaje 8" x 4" Nibco',
     sku: '211570',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Drenaje 8" x 4" Nibco · artículo 211570. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-686', PROV_BELLON, 546, {
+  c('MAT-32-683', PROV_BELLON, 546, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Presión 3" x 2" Durm-Lasc-Era',
     sku: '204422',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Presión 3" x 2" Durm-Lasc-Era · artículo 204422. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-687', PROV_BELLON, 429, {
+  c('MAT-32-684', PROV_BELLON, 429, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Yee Reducción PVC Presión 4" x 2" Durm-Lasc-Era',
     sku: '204423',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Yee Reducción PVC Presión 4" x 2" Durm-Lasc-Era · artículo 204423. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-688', PROV_FERREMIX, 355, {
+  c('MAT-32-685', PROV_FERREMIX, 355, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-doble',
     art: 'LLAVE ANGULAR DE LATÓN 1/2" X 1/2", DOBLE',
     sku: 'T47478',
@@ -64260,7 +64260,7 @@
     url: 'https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-doble',
     nota: 'LLAVE ANGULAR DE LATÓN 1/2" X 1/2", DOBLE · artículo T47478 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-688', PROV_FERREMIX, 395, {
+  c('MAT-32-685', PROV_FERREMIX, 395, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-para-cpvc',
     art: 'Lave anguar, aton, 1/2x1/2" para cpvc',
     sku: 'T49108',
@@ -64268,42 +64268,42 @@
     url: 'https://ferremix.com.do/products/llave-angular-de-laton-1-2-x-1-2-para-cpvc',
     nota: 'Lave anguar, aton, 1/2x1/2" para cpvc · artículo T49108 · ref. T49108 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_CIMA, 565, {
+  c('MAT-32-686', PROV_CIMA, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-1-2-x-3-8',
     art: 'LLAVE ANGULAR DOBLE 1/2 X 3/8',
     sku: '091712043263',
     url: 'https://ferreteriacima.com.do/products/llave-angular-doble-1-2-x-3-8',
     nota: 'LLAVE ANGULAR DOBLE 1/2 X 3/8 · artículo 091712043263. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_CIMA, 321, {
+  c('MAT-32-686', PROV_CIMA, 321, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-medio-giro-1-2x3',
     art: 'LLAVE ANGULAR MEDIO GIRO 1/2X3',
     sku: '2460680002035',
     url: 'https://ferreteriacima.com.do/products/llave-angular-medio-giro-1-2x3',
     nota: 'LLAVE ANGULAR MEDIO GIRO 1/2X3 · artículo 2460680002035. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_CIMA, 415, {
+  c('MAT-32-686', PROV_CIMA, 415, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-7-16-04329',
     art: 'LLAVE ANGULAR 1/2 X 7/16 04329',
     sku: '091712043294',
     url: 'https://ferreteriacima.com.do/products/llave-angular-1-2-x-7-16-04329',
     nota: 'LLAVE ANGULAR 1/2 X 7/16 04329 · artículo 091712043294. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_CIMA, 405, {
+  c('MAT-32-686', PROV_CIMA, 405, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-x-3-8-eastma',
     art: 'LLAVE ANGULAR 1/2 X 3/8 EASTMA',
     sku: '091712043225',
     url: 'https://ferreteriacima.com.do/products/llave-angular-1-2-x-3-8-eastma',
     nota: 'LLAVE ANGULAR 1/2 X 3/8 EASTMA · artículo 091712043225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_CIMA, 271, {
+  c('MAT-32-686', PROV_CIMA, 271, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-1-2-medio-giro-1',
     art: 'LLAVE ANGULAR 1/2 MEDIO GIRO 1',
     sku: '091712107330',
     url: 'https://ferreteriacima.com.do/products/llave-angular-1-2-medio-giro-1',
     nota: 'LLAVE ANGULAR 1/2 MEDIO GIRO 1 · artículo 091712107330. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 235, {
+  c('MAT-32-686', PROV_FERREMIX, 235, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular',
     art: 'Lave anguar 1/2\'\' x 1/2\'\' 1/4 de vueta foset',
     sku: 'T46299',
@@ -64311,14 +64311,14 @@
     url: 'https://ferremix.com.do/products/llave-angular',
     nota: 'Lave anguar 1/2\'\' x 1/2\'\' 1/4 de vueta foset · artículo T46299 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 140, {
+  c('MAT-32-686', PROV_FERREMIX, 140, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-sensilla-1-2-x3-8',
     art: 'Lave ang. senc.1/2 x3/8',
     sku: '4869',
     url: 'https://ferremix.com.do/products/llave-angular-sensilla-1-2-x3-8',
     nota: 'Lave ang. senc.1/2 x3/8 · artículo 4869 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 245, {
+  c('MAT-32-686', PROV_FERREMIX, 245, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-de-1-2-a-3-8-1-salida',
     art: 'Lave ang. 1/2 a 3/8 senc. eastman - unidad',
     sku: '13952',
@@ -64326,7 +64326,7 @@
     url: 'https://ferremix.com.do/products/llave-angular-de-1-2-a-3-8-1-salida',
     nota: 'Lave ang. 1/2 a 3/8 senc. eastman - unidad · artículo 13952 · marca Eastman. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 385, {
+  c('MAT-32-686', PROV_FERREMIX, 385, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-3-8',
     art: 'Lave anguar 1/2- 3/8 ( 2 saida) eastman',
     sku: '8859',
@@ -64334,7 +64334,7 @@
     url: 'https://ferremix.com.do/products/llave-angular-1-2-3-8',
     nota: 'Lave anguar 1/2- 3/8 ( 2 saida) eastman · artículo 8859 · marca Eastman. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 270, {
+  c('MAT-32-686', PROV_FERREMIX, 270, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-x-1-2-de-1-4-de-vuelta-con-barrilito',
     art: 'Lave anguar, 1/2 x1/2,1/4 v,barriito.',
     sku: 'T49111',
@@ -64342,7 +64342,7 @@
     url: 'https://ferremix.com.do/products/llave-angular-1-2-x-1-2-de-1-4-de-vuelta-con-barrilito',
     nota: 'Lave anguar, 1/2 x1/2,1/4 v,barriito. · artículo T49111 · ref. T49111 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-689', PROV_FERREMIX, 210, {
+  c('MAT-32-686', PROV_FERREMIX, 210, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-1-2-x-1-2-1-4-de-vuelta',
     art: 'Lave anguar, 1/2 x 1/2, 1/4 vueta foset',
     sku: 'T49110',
@@ -64350,28 +64350,28 @@
     url: 'https://ferremix.com.do/products/llave-angular-1-2-x-1-2-1-4-de-vuelta',
     nota: 'Lave anguar, 1/2 x 1/2, 1/4 vueta foset · artículo T49110 · ref. T49110 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-690', PROV_CIMA, 453, {
+  c('MAT-32-687', PROV_CIMA, 453, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-doble-3-8-x-3-8',
     art: 'LLAVE ANGULAR DOBLE 3/8 X 3/8',
     sku: '091712043355',
     url: 'https://ferreteriacima.com.do/products/llave-angular-doble-3-8-x-3-8',
     nota: 'LLAVE ANGULAR DOBLE 3/8 X 3/8 · artículo 091712043355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-690', PROV_CIMA, 388, {
+  c('MAT-32-687', PROV_CIMA, 388, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-eastma',
     art: 'LLAVE ANGULAR 3/8 X 3/8 EASTMA',
     sku: '091712043195',
     url: 'https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-eastma',
     nota: 'LLAVE ANGULAR 3/8 X 3/8 EASTMA · artículo 091712043195. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-690', PROV_CIMA, 257, {
+  c('MAT-32-687', PROV_CIMA, 257, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-bras-c',
     art: 'LLAVE ANGULAR 3/8 X 3/8 BRAS C',
     sku: '026613172842',
     url: 'https://ferreteriacima.com.do/products/llave-angular-3-8-x-3-8-bras-c',
     nota: 'LLAVE ANGULAR 3/8 X 3/8 BRAS C · artículo 026613172842. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-690', PROV_FERREMIX, 285, {
+  c('MAT-32-687', PROV_FERREMIX, 285, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/llave-angular-3-8-a-3-8-sencillo',
     peso: 2,
     art: 'Lave anguar 3/8 a 3/8 senc. usa eastman',
@@ -64380,42 +64380,42 @@
     url: 'https://ferremix.com.do/products/llave-angular-3-8-a-3-8-sencillo',
     nota: 'Lave anguar 3/8 a 3/8 senc. usa eastman · artículo 6595 · marca Eastman. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-691', PROV_BELLON, 205, {
+  c('MAT-32-688', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Paso Bola Metal PPR 20mm (1/2") Maximus',
     sku: '234993',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Paso Bola Metal PPR 20mm (1/2")  Maximus · artículo 234993. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-692', PROV_BELLON, 270, {
+  c('MAT-32-689', PROV_BELLON, 270, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Paso Bola Metal PPR 32mm (1") Maximus',
     sku: '234995',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Paso Bola Metal PPR 32mm (1") Maximus · artículo 234995. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-693', PROV_BELLON, 255, {
+  c('MAT-32-690', PROV_BELLON, 255, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Paso Bola Metal PPR 25mm (3/4") Maximus',
     sku: '234994',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Paso Bola Metal PPR 25mm (3/4") Maximus · artículo 234994. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-694', PROV_BELLON, 388, {
+  c('MAT-32-691', PROV_BELLON, 388, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Válvula PVC Esfera Negra Mono Tuerca Hembra 1"',
     sku: '234112',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Válvula PVC Esfera Negra Mono Tuerca Hembra 1" · artículo 234112. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-695', PROV_BELLON, 311, {
+  c('MAT-32-692', PROV_BELLON, 311, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Válvula PVC Esfera Negra Mono Tuerca Hembra 3/4"',
     sku: '234111',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Válvula PVC Esfera Negra Mono Tuerca Hembra 3/4" · artículo 234111. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-696', PROV_FERREMIX, 1299, {
+  c('MAT-32-693', PROV_FERREMIX, 1299, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49021',
@@ -64423,7 +64423,7 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49021 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-697', PROV_FERREMIX, 1075, {
+  c('MAT-32-694', PROV_FERREMIX, 1075, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49020',
@@ -64431,7 +64431,7 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49020 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-698', PROV_FERREMIX, 355, {
+  c('MAT-32-695', PROV_FERREMIX, 355, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49017',
@@ -64439,7 +64439,7 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49017 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-699', PROV_FERREMIX, 655, {
+  c('MAT-32-696', PROV_FERREMIX, 655, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49019',
@@ -64447,7 +64447,7 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49019 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-700', PROV_FERREMIX, 1855, {
+  c('MAT-32-697', PROV_FERREMIX, 1855, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49022',
@@ -64455,7 +64455,7 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49022 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-701', PROV_FERREMIX, 449, {
+  c('MAT-32-698', PROV_FERREMIX, 449, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     art: 'valvula de compuerta de laton roscable',
     sku: 'T49018',
@@ -64463,665 +64463,665 @@
     url: 'https://ferremix.com.do/products/valvula-de-compuerta-de-laton-roscable',
     nota: 'valvula de compuerta de laton roscable · artículo T49018 · ref. T49017 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-702', PROV_CIMA, 435, {
+  c('MAT-32-699', PROV_CIMA, 435, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-cpvc-1-2-48636',
     art: 'LLAVE PASO BOLA CPVC 1/2 48636',
     sku: '091712486367',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-cpvc-1-2-48636',
     nota: 'LLAVE PASO BOLA CPVC 1/2 48636 · artículo 091712486367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-703', PROV_CIMA, 1961, {
+  c('MAT-32-700', PROV_CIMA, 1961, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-5',
     art: 'LLAVE PASO BOLA ITALIANA 1.5',
     sku: '032573',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-5',
     nota: 'LLAVE PASO BOLA ITALIANA 1.5 · artículo 032573. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-704', PROV_CIMA, 259, {
+  c('MAT-32-701', PROV_CIMA, 259, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-ll-21p',
     art: 'LLAVE R/M BOLA 1/2 LL-21P',
     sku: '7501206658871',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-ll-21p',
     nota: 'LLAVE R/M BOLA 1/2 LL-21P · artículo 7501206658871. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-704', PROV_CIMA, 567, {
+  c('MAT-32-701', PROV_CIMA, 567, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-italiana',
     art: 'LLAVE R/M BOLA 1/2 ITALIANA',
     sku: '031783',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-bola-1-2-italiana',
     nota: 'LLAVE R/M BOLA 1/2 ITALIANA · artículo 031783. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-704', PROV_CIMA, 635, {
+  c('MAT-32-701', PROV_CIMA, 635, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-2',
     art: 'LLAVE PASO BOLA P/GAS 1/2',
     sku: '060271',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-2',
     nota: 'LLAVE PASO BOLA P/GAS 1/2 · artículo 060271. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-704', PROV_CIMA, 545, {
+  c('MAT-32-701', PROV_CIMA, 545, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-macho-hemb-1-2',
     art: 'LLAVE PASO BOLA MACHO HEMB 1/2',
     sku: '030304',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-macho-hemb-1-2',
     nota: 'LLAVE PASO BOLA MACHO HEMB 1/2 · artículo 030304. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-704', PROV_CIMA, 465, {
+  c('MAT-32-701', PROV_CIMA, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-2-0',
     art: 'LLAVE PASO BOLA ITALIANA 1/2 0',
     sku: '031699',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-2-0',
     nota: 'LLAVE PASO BOLA ITALIANA 1/2 0 · artículo 031699. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-705', PROV_CIMA, 343, {
+  c('MAT-32-702', PROV_CIMA, 343, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-4',
     art: 'LLAVE PASO BOLA P/GAS 1/4',
     sku: '060269',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-1-4',
     nota: 'LLAVE PASO BOLA P/GAS 1/4 · artículo 060269. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-706', PROV_CIMA, 831, {
+  c('MAT-32-703', PROV_CIMA, 831, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-090',
     art: 'LLAVE PASO BOLA ITALIANA 1 090',
     sku: '031701',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-1-090',
     nota: 'LLAVE PASO BOLA ITALIANA 1 090 · artículo 031701. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-707', PROV_CIMA, 3227, {
+  c('MAT-32-704', PROV_CIMA, 3227, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-2-090',
     art: 'LLAVE PASO BOLA ITALIANA 2 090',
     sku: '031703',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-2-090',
     nota: 'LLAVE PASO BOLA ITALIANA 2 090 · artículo 031703. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-708', PROV_CIMA, 630, {
+  c('MAT-32-705', PROV_CIMA, 630, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-bola-3-4-italiana-09',
     art: 'LLAVE R/M BOLA 3/4 ITALIANA 09',
     sku: '031784',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-bola-3-4-italiana-09',
     nota: 'LLAVE R/M BOLA 3/4 ITALIANA 09 · artículo 031784. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-708', PROV_CIMA, 555, {
+  c('MAT-32-705', PROV_CIMA, 555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-4-0',
     art: 'LLAVE PASO BOLA ITALIANA 3/4 0',
     sku: '031700',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-4-0',
     nota: 'LLAVE PASO BOLA ITALIANA 3/4 0 · artículo 031700. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-709', PROV_CIMA, 455, {
+  c('MAT-32-706', PROV_CIMA, 455, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-3-8',
     art: 'LLAVE PASO BOLA P/GAS 3/8',
     sku: '060312',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-p-gas-3-8',
     nota: 'LLAVE PASO BOLA P/GAS 3/8 · artículo 060312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-709', PROV_CIMA, 327, {
+  c('MAT-32-706', PROV_CIMA, 327, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8-0',
     art: 'LLAVE PASO BOLA ITALIANA 3/8 0',
     sku: '044258',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8-0',
     nota: 'LLAVE PASO BOLA ITALIANA 3/8 0 · artículo 044258. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-709', PROV_CIMA, 336, {
+  c('MAT-32-706', PROV_CIMA, 336, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8',
     art: 'LLAVE PASO BOLA ITALIANA 3/8',
     sku: '034009',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-italiana-3-8',
     nota: 'LLAVE PASO BOLA ITALIANA 3/8 · artículo 034009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-710', PROV_CIMA, 465, {
+  c('MAT-32-707', PROV_CIMA, 465, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-5-sin-ro',
     art: 'LLAVE PASO BOLA PVC 1.5 SIN RO',
     sku: '091712201199',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-5-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1.5 SIN RO · artículo 091712201199. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-711', PROV_CIMA, 41, {
+  c('MAT-32-708', PROV_CIMA, 41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro',
     art: 'LLAVE PASO BOLA PVC 1/2 SIN RO',
     sku: '022190',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 022190. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-711', PROV_CIMA, 125, {
+  c('MAT-32-708', PROV_CIMA, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro-1',
     art: 'LLAVE PASO BOLA PVC 1/2 SIN RO',
     sku: '091712201113',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-2-sin-ro-1',
     nota: 'LLAVE PASO BOLA PVC 1/2 SIN RO · artículo 091712201113. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-712', PROV_CIMA, 170, {
+  c('MAT-32-709', PROV_CIMA, 170, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-sin-ro',
     art: 'LLAVE PASO BOLA PVC 1 SIN RO',
     sku: '091712201151',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-1-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 1 SIN RO · artículo 091712201151. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-713', PROV_CIMA, 616, {
+  c('MAT-32-710', PROV_CIMA, 616, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-2-sin-ro',
     art: 'LLAVE PASO BOLA PVC 2 SIN RO',
     sku: '091712201212',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-2-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 2 SIN RO · artículo 091712201212. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-714', PROV_CIMA, 125, {
+  c('MAT-32-711', PROV_CIMA, 125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro-1',
     art: 'LLAVE PASO BOLA PVC 3/4 SIN RO',
     sku: '091712201137',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro-1',
     nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 091712201137. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-714', PROV_CIMA, 107, {
+  c('MAT-32-711', PROV_CIMA, 107, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro',
     art: 'LLAVE PASO BOLA PVC 3/4 SIN RO',
     sku: '022091',
     url: 'https://ferreteriacima.com.do/products/llave-paso-bola-pvc-3-4-sin-ro',
     nota: 'LLAVE PASO BOLA PVC 3/4 SIN RO · artículo 022091. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-715', PROV_CIMA, 2262, {
+  c('MAT-32-712', PROV_CIMA, 2262, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-5',
     art: 'LLAVE CUNA 1.5',
     sku: '7501973716200',
     url: 'https://ferreteriacima.com.do/products/llave-cuna-1-5',
     nota: 'LLAVE CUNA 1.5 · artículo 7501973716200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-716', PROV_CIMA, 858, {
+  c('MAT-32-713', PROV_CIMA, 858, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1-2',
     art: 'LLAVE CUNA 1/2',
     sku: '7501973716163',
     url: 'https://ferreteriacima.com.do/products/llave-cuna-1-2',
     nota: 'LLAVE CUNA 1/2 · artículo 7501973716163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-717', PROV_CIMA, 1595, {
+  c('MAT-32-714', PROV_CIMA, 1595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-1',
     art: 'LLAVE CUNA 1',
     sku: '7501973716187',
     url: 'https://ferreteriacima.com.do/products/llave-cuna-1',
     nota: 'LLAVE CUNA 1 · artículo 7501973716187. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-718', PROV_CIMA, 1248, {
+  c('MAT-32-715', PROV_CIMA, 1248, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-cuna-3-4',
     art: 'LLAVE CUNA 3/4',
     sku: '7501973716170',
     url: 'https://ferreteriacima.com.do/products/llave-cuna-3-4',
     nota: 'LLAVE CUNA 3/4 · artículo 7501973716170. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-719', PROV_CIMA, 338, {
+  c('MAT-32-716', PROV_CIMA, 338, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-cromada-1-2-ll-19c',
     art: 'LLAVE R/M CROMADA 1/2 LL-19C',
     sku: '7501206695753',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-cromada-1-2-ll-19c',
     nota: 'LLAVE R/M CROMADA 1/2 LL-19C · artículo 7501206695753. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-719', PROV_CIMA, 1001, {
+  c('MAT-32-716', PROV_CIMA, 1001, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-candado-1-2-itali',
     art: 'LLAVE R/M CANDADO 1/2 ITALI',
     sku: '035798',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-candado-1-2-itali',
     nota: 'LLAVE R/M CANDADO 1/2 ITALI · artículo 035798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-719', PROV_CIMA, 1071, {
+  c('MAT-32-716', PROV_CIMA, 1071, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-x-45-191-13',
     art: 'LLAVE R/M 1/2 x 45 191.13',
     sku: '7501973701411',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-1-2-x-45-191-13',
     nota: 'LLAVE R/M 1/2 x 45 191.13 · artículo 7501973701411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-719', PROV_CIMA, 875, {
+  c('MAT-32-716', PROV_CIMA, 875, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-pesada-19n-13',
     art: 'LLAVE R/M 1/2 PESADA 19N.13',
     sku: '7501973701442',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-1-2-pesada-19n-13',
     nota: 'LLAVE R/M 1/2  PESADA 19N.13 · artículo 7501973701442. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-719', PROV_CIMA, 575, {
+  c('MAT-32-716', PROV_CIMA, 575, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-1-2-liviana-19nc-13',
     art: 'LLAVE R/M 1/2 LIVIANA 19NC.13',
     sku: '7501973701466',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-1-2-liviana-19nc-13',
     nota: 'LLAVE R/M 1/2  LIVIANA 19NC.13 · artículo 7501973701466. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-720', PROV_CIMA, 487, {
+  c('MAT-32-717', PROV_CIMA, 487, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-ll-19-3-4',
     art: 'LLAVE R/M 3/4 LLJ-180',
     sku: '7501206695784',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-3-4-ll-19-3-4',
     nota: 'LLAVE R/M 3/4 LLJ-180 · artículo 7501206695784. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-720', PROV_CIMA, 1145, {
+  c('MAT-32-717', PROV_CIMA, 1145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-r-m-3-4-pesada-19n-19',
     art: 'LLAVE R/M 3/4 PESADA 19N.19',
     sku: '7501973701459',
     url: 'https://ferreteriacima.com.do/products/llave-r-m-3-4-pesada-19n-19',
     nota: 'LLAVE R/M 3/4  PESADA 19N.19 · artículo 7501973701459. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-721', PROV_CIMA, 2283, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
-    art: 'CHEQUE VERTICAL EUROPA 1.5',
-    sku: '054231',
-    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
-    nota: 'CHEQUE VERTICAL EUROPA 1.5 · artículo 054231. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-721', PROV_CIMA, 1757, {
+  c('MAT-32-718', PROV_CIMA, 1757, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-5',
     art: 'CHEQUE HORIZONTAL ITALIANO 1.5',
     sku: '055154',
     url: 'https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-5',
     nota: 'CHEQUE HORIZONTAL ITALIANO 1.5 · artículo 055154. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-721', PROV_BELLON, 995, {
+  c('MAT-32-718', PROV_BELLON, 995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal 1 1/2" SPC430',
     sku: '14659',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal 1 1/2" SPC430 · artículo 14659. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-721', PROV_BELLON, 2465, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 1 1/2" Itap Europa 105 (111)',
-    sku: '14694',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 1 1/2" Itap Europa 105 (111) · artículo 14694. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-721', PROV_BELLON, 1959, {
+  c('MAT-32-718', PROV_BELLON, 1959, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 1 1/2" Itap 130',
     sku: '83631',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 1 1/2" Itap 130 · artículo 83631. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-721', PROV_BELLON, 1589, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical Compuerta Nylon 1 1/2" Tiemme 3500039 / 3600G2808',
-    sku: '215008',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical Compuerta Nylon 1 1/2" Tiemme 3500039 / 3600G2808 · artículo 215008. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-722', PROV_BELLON, 1394, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 1 1/4" Itap Europa 105 (111)',
-    sku: '14696',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 1 1/4" Itap Europa 105 (111) · artículo 14696. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-722', PROV_BELLON, 1495, {
+  c('MAT-32-719', PROV_BELLON, 1495, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 1 1/4" Itap 130',
     sku: '136263',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 1 1/4" Itap 130 · artículo 136263. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-723', PROV_CIMA, 590, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
-    art: 'CHEQUE VERTICAL EUROPA 1/2',
-    sku: '054227',
-    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
-    nota: 'CHEQUE VERTICAL EUROPA 1/2 · artículo 054227. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-723', PROV_CIMA, 535, {
+  c('MAT-32-720', PROV_CIMA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-2',
     art: 'CHEQUE HORIZONTAL ITALIANO 1/2',
     sku: '055152',
     url: 'https://ferreteriacima.com.do/products/cheque-horizontal-italiano-1-2',
     nota: 'CHEQUE HORIZONTAL ITALIANO 1/2 · artículo 055152. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-723', PROV_BELLON, 629, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 1/2" Itap Europa 105 (111)',
-    sku: '14699',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 1/2" Itap Europa 105 (111) · artículo 14699. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-723', PROV_BELLON, 502, {
+  c('MAT-32-720', PROV_BELLON, 502, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 1/2" Itap 130 (111)',
     sku: '22015',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 1/2" Itap 130 (111) · artículo 22015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-723', PROV_BELLON, 516, {
+  c('MAT-32-720', PROV_BELLON, 516, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal 1/2" Tiemme 3500015 / 3660G2804',
     sku: '210899',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal 1/2" Tiemme 3500015 / 3660G2804 · artículo 210899. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-724', PROV_CIMA, 1048, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
-    art: 'CHEQUE VERTICAL EUROPA 1',
-    sku: '054229',
-    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
-    nota: 'CHEQUE VERTICAL EUROPA 1 · artículo 054229. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-724', PROV_BELLON, 399, {
+  c('MAT-32-721', PROV_BELLON, 399, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal 1" TW SPC-430',
     sku: '14663',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal 1" TW SPC-430 · artículo 14663. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-724', PROV_BELLON, 1073, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 1" Itap Europa 105 (111)',
-    sku: '14698',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 1" Itap Europa 105 (111) · artículo 14698. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-724', PROV_BELLON, 1002, {
+  c('MAT-32-721', PROV_BELLON, 1002, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 1" Itap 130 (111)',
     sku: '96544',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 1" Itap 130 (111) · artículo 96544. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-724', PROV_BELLON, 955, {
+  c('MAT-32-721', PROV_BELLON, 955, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal 1" Tiemme 3500009 / 3660G2806',
     sku: '210898',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal 1" Tiemme 3500009 / 3660G2806 · artículo 210898. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-724', PROV_BELLON, 622, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical Compuerta Nylon 1" Tiemme 3500012',
-    sku: '210901',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical Compuerta Nylon 1" Tiemme 3500012 · artículo 210901. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-724', PROV_BELLON, 545, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical Compuerta Bronce 1" Tiemme 3500205',
-    sku: '215009',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical Compuerta Bronce 1" Tiemme  3500205 · artículo 215009. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-725', PROV_CIMA, 2946, {
+  c('MAT-32-722', PROV_CIMA, 2946, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-2',
     art: 'CHEQUE HORIZONTAL ITALIANO 2',
     sku: '055163',
     url: 'https://ferreteriacima.com.do/products/cheque-horizontal-italiano-2',
     nota: 'CHEQUE HORIZONTAL ITALIANO 2 · artículo 055163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-725', PROV_BELLON, 3499, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 2" Itap Europa 105 (111)',
-    sku: '14703',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 2" Itap Europa 105 (111) · artículo 14703. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-725', PROV_BELLON, 2782, {
+  c('MAT-32-722', PROV_BELLON, 2782, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 2" Itap 130 (111)',
     sku: '25333',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 2" Itap 130 (111) · artículo 25333. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-725', PROV_BELLON, 435, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical PVC C/Campana S/Rosca 2"',
-    sku: '98625',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical PVC C/Campana S/Rosca 2" · artículo 98625. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-726', PROV_CIMA, 695, {
+  c('MAT-32-723', PROV_CIMA, 695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-horizontal-italiano-3-4',
     art: 'CHEQUE HORIZONTAL ITALIANO 3/4',
     sku: '054234',
     url: 'https://ferreteriacima.com.do/products/cheque-horizontal-italiano-3-4',
     nota: 'CHEQUE HORIZONTAL ITALIANO 3/4 · artículo 054234. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-726', PROV_CIMA, 796, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
-    art: 'CHEQUE VERTICAL EUROPA 3/4',
-    sku: '054228',
-    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
-    nota: 'CHEQUE VERTICAL EUROPA 3/4 · artículo 054228. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-726', PROV_BELLON, 829, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 3/4" Itap Europa 111 / 105',
-    sku: '14707',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 3/4" Itap Europa 111 / 105 · artículo 14707. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-726', PROV_BELLON, 695, {
+  c('MAT-32-723', PROV_BELLON, 695, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 3/4" Itap 130 (111)',
     sku: '22016',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 3/4" Itap 130 (111) · artículo 22016. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-726', PROV_BELLON, 586, {
+  c('MAT-32-723', PROV_BELLON, 586, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal 3/4" Tiemme 3500016 / 3660G2805',
     sku: '210900',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal 3/4" Tiemme 3500016 / 3660G2805 · artículo 210900. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-726', PROV_BELLON, 597, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical Compuerta Nylon 3/4" Tiemme 3500164',
-    sku: '210902',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical Compuerta Nylon 3/4" Tiemme 3500164 · artículo 210902. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-726', PROV_BELLON, 975, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical Compuerta Bronce 3/4" Tiemme 3500209|3500349',
-    sku: '215013',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical Compuerta Bronce 3/4" Tiemme 3500209|3500349 · artículo 215013. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-727', PROV_BELLON, 11058, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 3" Itap Europa 111 / 105',
-    sku: '14705',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 3" Itap Europa 111 / 105 · artículo 14705. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-727', PROV_BELLON, 7885, {
+  c('MAT-32-724', PROV_BELLON, 7885, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 3" Itap 130 (111)',
     sku: '94635',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 3" Itap 130 (111) · artículo 94635. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-727', PROV_BELLON, 6059, {
+  c('MAT-32-724', PROV_BELLON, 6059, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 3" Tiemme 35000216 / 3660G11NPT',
     sku: '215005',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 3" Tiemme 35000216 / 3660G11NPT · artículo 215005. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-728', PROV_BELLON, 18722, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Cheque Vertical 4" Itap Europa 111 / 105',
-    sku: '14709',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Cheque Vertical 4" Itap Europa 111 / 105 · artículo 14709. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-728', PROV_BELLON, 14372, {
+  c('MAT-32-725', PROV_BELLON, 14372, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 4" Itap 130',
     sku: '102763',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 4" Itap 130 · artículo 102763. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-728', PROV_BELLON, 12582, {
+  c('MAT-32-725', PROV_BELLON, 12582, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Cheque Horizontal Compuerta 4" Tiemme 35000218/3660G12NPT',
     sku: '215007',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Cheque Horizontal Compuerta 4" Tiemme 35000218/3660G12NPT · artículo 215007. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-729', PROV_CIMA, 616, {
+  c('MAT-32-726', PROV_CIMA, 2283, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
+    art: 'CHEQUE VERTICAL EUROPA 1.5',
+    sku: '054231',
+    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1-5',
+    nota: 'CHEQUE VERTICAL EUROPA 1.5 · artículo 054231. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-726', PROV_BELLON, 2465, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 1 1/2" Itap Europa 105 (111)',
+    sku: '14694',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 1 1/2" Itap Europa 105 (111) · artículo 14694. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-726', PROV_BELLON, 1589, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical Compuerta Nylon 1 1/2" Tiemme 3500039 / 3600G2808',
+    sku: '215008',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical Compuerta Nylon 1 1/2" Tiemme 3500039 / 3600G2808 · artículo 215008. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-727', PROV_BELLON, 1394, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 1 1/4" Itap Europa 105 (111)',
+    sku: '14696',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 1 1/4" Itap Europa 105 (111) · artículo 14696. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-728', PROV_CIMA, 590, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
+    art: 'CHEQUE VERTICAL EUROPA 1/2',
+    sku: '054227',
+    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1-2',
+    nota: 'CHEQUE VERTICAL EUROPA 1/2 · artículo 054227. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-728', PROV_BELLON, 629, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 1/2" Itap Europa 105 (111)',
+    sku: '14699',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 1/2" Itap Europa 105 (111) · artículo 14699. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-729', PROV_CIMA, 1048, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
+    art: 'CHEQUE VERTICAL EUROPA 1',
+    sku: '054229',
+    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-1',
+    nota: 'CHEQUE VERTICAL EUROPA 1 · artículo 054229. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-729', PROV_BELLON, 1073, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 1" Itap Europa 105 (111)',
+    sku: '14698',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 1" Itap Europa 105 (111) · artículo 14698. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-729', PROV_BELLON, 622, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical Compuerta Nylon 1" Tiemme 3500012',
+    sku: '210901',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical Compuerta Nylon 1" Tiemme 3500012 · artículo 210901. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-729', PROV_BELLON, 545, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical Compuerta Bronce 1" Tiemme 3500205',
+    sku: '215009',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical Compuerta Bronce 1" Tiemme  3500205 · artículo 215009. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-730', PROV_BELLON, 3499, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 2" Itap Europa 105 (111)',
+    sku: '14703',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 2" Itap Europa 105 (111) · artículo 14703. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-731', PROV_BELLON, 435, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical PVC C/Campana S/Rosca 2"',
+    sku: '98625',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical PVC C/Campana S/Rosca 2" · artículo 98625. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-732', PROV_CIMA, 796, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
+    art: 'CHEQUE VERTICAL EUROPA 3/4',
+    sku: '054228',
+    url: 'https://ferreteriacima.com.do/products/cheque-vertical-europa-3-4',
+    nota: 'CHEQUE VERTICAL EUROPA 3/4 · artículo 054228. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-732', PROV_BELLON, 829, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 3/4" Itap Europa 111 / 105',
+    sku: '14707',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 3/4" Itap Europa 111 / 105 · artículo 14707. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-732', PROV_BELLON, 597, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical Compuerta Nylon 3/4" Tiemme 3500164',
+    sku: '210902',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical Compuerta Nylon 3/4" Tiemme 3500164 · artículo 210902. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-732', PROV_BELLON, 975, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical Compuerta Bronce 3/4" Tiemme 3500209|3500349',
+    sku: '215013',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical Compuerta Bronce 3/4" Tiemme 3500209|3500349 · artículo 215013. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-733', PROV_BELLON, 11058, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 3" Itap Europa 111 / 105',
+    sku: '14705',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 3" Itap Europa 111 / 105 · artículo 14705. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-734', PROV_BELLON, 18722, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cheque Vertical 4" Itap Europa 111 / 105',
+    sku: '14709',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cheque Vertical 4" Itap Europa 111 / 105 · artículo 14709. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-735', PROV_CIMA, 616, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-sin-boya',
     art: 'VALVULA CISTERNA 1/2 SIN BOYA',
     sku: '030721',
     url: 'https://ferreteriacima.com.do/products/valvula-cisterna-1-2-sin-boya',
     nota: 'VALVULA CISTERNA 1/2 SIN BOYA · artículo 030721. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-729', PROV_CIMA, 853, {
+  c('MAT-32-735', PROV_CIMA, 853, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-1-2-con-vari',
     art: 'VALVULA CISTERNA 1/2 CON VARI',
     sku: '7501973700254',
     url: 'https://ferreteriacima.com.do/products/valvula-cisterna-1-2-con-vari',
     nota: 'VALVULA CISTERNA 1/2 CON VARI · artículo 7501973700254. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-730', PROV_CIMA, 615, {
+  c('MAT-32-736', PROV_CIMA, 615, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-italiana-3-4',
     art: 'VALVULA CISTERNA ITALIANA 3/4',
     sku: '040427',
     url: 'https://ferreteriacima.com.do/products/valvula-cisterna-italiana-3-4',
     nota: 'VALVULA CISTERNA ITALIANA 3/4 · artículo 040427. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-730', PROV_CIMA, 1271, {
+  c('MAT-32-736', PROV_CIMA, 1271, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/valvula-cisterna-3-4-con-varil',
     art: 'VALVULA CISTERNA 3/4 CON VARIL',
     sku: '7501973700261',
     url: 'https://ferreteriacima.com.do/products/valvula-cisterna-3-4-con-varil',
     nota: 'VALVULA CISTERNA 3/4 CON VARIL · artículo 7501973700261. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-731', PROV_CIMA, 310, {
+  c('MAT-32-737', PROV_CIMA, 310, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-11',
     art: 'REJILLA PISO CUADRADA 10 X 10',
     sku: '063289',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-11',
     nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063289. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-731', PROV_CIMA, 685, {
+  c('MAT-32-737', PROV_CIMA, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-10',
     art: 'REJILLA PISO CUADRADA 10 X 10',
     sku: '063288',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-10-x-10',
     nota: 'REJILLA PISO CUADRADA 10 X 10 · artículo 063288. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-731', PROV_CIMA, 306, {
+  c('MAT-32-737', PROV_CIMA, 306, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-10-x-10',
     art: 'REJILLA PISO CUADRAD 10 X 10',
     sku: '09687070',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-10-x-10',
     nota: 'REJILLA PISO CUADRAD 10 X 10 · artículo 09687070. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-732', PROV_CIMA, 1173, {
+  c('MAT-32-738', PROV_CIMA, 1173, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-100-x-100',
     art: 'REJILLA PISO CUADRAD 100 X 100',
     sku: '096873',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-100-x-100',
     nota: 'REJILLA PISO CUADRAD 100 X 100 · artículo 096873. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-733', PROV_CIMA, 1510, {
+  c('MAT-32-739', PROV_CIMA, 1510, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x40-3cm-sus304',
     art: 'REJILLA PISO 10X40 3CM SUS304',
     sku: '033138',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-10x40-3cm-sus304',
     nota: 'REJILLA PISO 10X40 3CM SUS304 · artículo 033138. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-733', PROV_CIMA, 1196, {
+  c('MAT-32-739', PROV_CIMA, 1196, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x30-3cm-sus304',
     art: 'REJILLA PISO 10X30 3CM SUS304',
     sku: '7460215717163',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-10x30-3cm-sus304',
     nota: 'REJILLA PISO 10X30 3CM SUS304 · artículo 7460215717163. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-733', PROV_CIMA, 968, {
+  c('MAT-32-739', PROV_CIMA, 968, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-10x20-3cm-sus304',
     art: 'REJILLA PISO 10X20 3CM SUS304',
     sku: '7460215717156',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-10x20-3cm-sus304',
     nota: 'REJILLA PISO 10X20 3CM SUS304 · artículo 7460215717156. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-734', PROV_CIMA, 413, {
+  c('MAT-32-740', PROV_CIMA, 413, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-15-x-15',
     art: 'REJILLA PISO CUADRAD 15 X 15',
     sku: '096868',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-15-x-15',
     nota: 'REJILLA PISO CUADRAD 15 X 15 · artículo 096868. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-734', PROV_CIMA, 2054, {
+  c('MAT-32-740', PROV_CIMA, 2054, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inox-15-x-15-304',
     art: 'REJILLA PISO INOX 15 X 15 304',
     sku: '015104',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-inox-15-x-15-304',
     nota: 'REJILLA PISO INOX 15 X 15 304 · artículo 015104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-735', PROV_CIMA, 572, {
+  c('MAT-32-741', PROV_CIMA, 572, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuad-gr-200-x-200',
     art: 'REJILLA PISO CUAD GR 20 X 20',
     sku: '096872',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuad-gr-200-x-200',
     nota: 'REJILLA PISO CUAD GR 20 X 20 · artículo 096872. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-736', PROV_CIMA, 755, {
+  c('MAT-32-742', PROV_CIMA, 755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-11',
     art: 'REJILLA PISO CUADRADA 2 REJ-11',
     sku: '7592032050410',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-11',
     nota: 'REJILLA PISO CUADRADA 2 REJ-11 · artículo 7592032050410. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-736', PROV_CIMA, 858, {
+  c('MAT-32-742', PROV_CIMA, 858, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-10',
     art: 'REJILLA PISO CUADRADA 2 REJ-10',
     sku: '7592032050403',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrada-2-rej-10',
     nota: 'REJILLA PISO CUADRADA 2 REJ-10 · artículo 7592032050403. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-736', PROV_CIMA, 541, {
+  c('MAT-32-742', PROV_CIMA, 541, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-2-cua-re',
     art: 'REJILLA PISO ALUMINIO 2 CUA RE',
     sku: '7460976184440',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-2-cua-re',
     nota: 'REJILLA PISO ALUMINIO 2 CUA RE · artículo 7460976184440. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-736', PROV_CIMA, 199, {
+  c('MAT-32-742', PROV_CIMA, 199, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-2-aluminio-redond',
     art: 'REJILLA PISO 2 ALUMINIO REDOND',
     sku: '030717',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-2-aluminio-redond',
     nota: 'REJILLA PISO 2 ALUMINIO REDOND · artículo 030717. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-737', PROV_CIMA, 368, {
+  c('MAT-32-743', PROV_CIMA, 368, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-inoxidable-3-5-rs',
     art: 'REJILLA PISO INOXIDABLE 3.5 RS',
     sku: '7506240612568',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-inoxidable-3-5-rs',
     nota: 'REJILLA PISO INOXIDABLE 3.5 RS · artículo 7506240612568. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-737', PROV_CIMA, 401, {
+  c('MAT-32-743', PROV_CIMA, 401, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-re-3-5',
     art: 'REJILLA PISO ALUMINIO RE 3.5',
     sku: '7501206699188',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-re-3-5',
     nota: 'REJILLA PISO ALUMINIO RE 3.5 · artículo 7501206699188. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-738', PROV_CIMA, 356, {
+  c('MAT-32-744', PROV_CIMA, 356, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-fun',
     art: 'REJILLA PISO ALUMINIO 3 FUN',
     sku: '018755',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-fun',
     nota: 'REJILLA PISO ALUMINIO 3 FUN · artículo 018755. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-738', PROV_CIMA, 565, {
+  c('MAT-32-744', PROV_CIMA, 565, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-cua-re',
     art: 'REJILLA PISO ALUMINIO 3 CUA RE',
     sku: '7460976184457',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-3-cua-re',
     nota: 'REJILLA PISO ALUMINIO 3 CUA RE · artículo 7460976184457. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-739', PROV_CIMA, 453, {
+  c('MAT-32-745', PROV_CIMA, 453, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-4',
     art: 'REJILLA PISO ALUMINIO CUAD 4',
     sku: '7501206699171',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-4',
     nota: 'REJILLA PISO ALUMINIO CUAD 4 · artículo 7501206699171. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-739', PROV_CIMA, 510, {
+  c('MAT-32-745', PROV_CIMA, 510, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-aluminio-desague-4-fun',
     art: 'REJILLA ALUMINIO DESAGUE 4 FUN',
     sku: '7460440229912',
     url: 'https://ferreteriacima.com.do/products/rejilla-aluminio-desague-4-fun',
     nota: 'REJILLA ALUMINIO DESAGUE 4 FUN · artículo 7460440229912. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-740', PROV_FERREMIX, 3129, {
+  c('MAT-32-746', PROV_FERREMIX, 3129, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/resumidero-cuadrado-de-laton-6-x-6',
     art: 'Resumideo cuadado de latón, 6 x 6"..',
     sku: 'T46049',
@@ -65129,77 +65129,77 @@
     url: 'https://ferremix.com.do/products/resumidero-cuadrado-de-laton-6-x-6',
     nota: 'Resumideo cuadado de latón, 6 x 6".. · artículo T46049 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-741', PROV_CIMA, 2403, {
+  c('MAT-32-747', PROV_CIMA, 2403, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-6x6',
     art: 'REJILLA PISO ALUMINIO CUAD 6X6',
     sku: '7501206667798',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-aluminio-cuad-6x6',
     nota: 'REJILLA PISO ALUMINIO CUAD 6X6 · artículo 7501206667798. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-742', PROV_CIMA, 865, {
+  c('MAT-32-748', PROV_CIMA, 865, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-80-x-80',
     art: 'REJILLA PISO CUADRAD 80 X 80',
     sku: '096876',
     url: 'https://ferreteriacima.com.do/products/rejilla-piso-cuadrad-80-x-80',
     nota: 'REJILLA PISO CUADRAD 80 X 80 · artículo 096876. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-743', PROV_CIMA, 1425, {
+  c('MAT-32-749', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-cromado-tipo-botel-1-1-4',
     art: 'SIFON CROMADO TIPO BOTEL 1 1/4',
     sku: '8030575028897',
     url: 'https://ferreteriacima.com.do/products/sifon-cromado-tipo-botel-1-1-4',
     nota: 'SIFON CROMADO TIPO BOTEL 1 1/4 · artículo 8030575028897. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-744', PROV_CIMA, 647, {
+  c('MAT-32-750', PROV_CIMA, 647, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-freg-1-5-1092e',
     art: 'SIFON PVC DOBLE FREG 1.5 1092E',
     sku: '8030575008165',
     url: 'https://ferreteriacima.com.do/products/sifon-pvc-doble-freg-1-5-1092e',
     nota: 'SIFON PVC DOBLE FREG 1.5 1092E · artículo 8030575008165. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-744', PROV_CIMA, 356, {
+  c('MAT-32-750', PROV_CIMA, 356, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-doble-1-5-35393',
     art: 'SIFON PVC DOBLE 1.5 35393',
     sku: '091712353935',
     url: 'https://ferreteriacima.com.do/products/sifon-pvc-doble-1-5-35393',
     nota: 'SIFON PVC DOBLE 1.5 35393 · artículo 091712353935. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-745', PROV_CIMA, 225, {
+  c('MAT-32-751', PROV_CIMA, 225, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-2-sin-desague',
     art: 'SIFON PVC 2 SIN DESAGUE',
     sku: '032588',
     url: 'https://ferreteriacima.com.do/products/sifon-pvc-2-sin-desague',
     nota: 'SIFON PVC 2 SIN DESAGUE · artículo 032588. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-746', PROV_CIMA, 475, {
+  c('MAT-32-752', PROV_CIMA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-5',
     art: 'SIFON PVC FREGADERO 1.5',
     sku: '8030575029603',
     url: 'https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-5',
     nota: 'SIFON PVC FREGADERO 1.5 · artículo 8030575029603. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-747', PROV_CIMA, 585, {
+  c('MAT-32-753', PROV_CIMA, 585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-1-4',
     art: 'SIFON PVC FREGADERO 1 1/4',
     sku: '8055118131315',
     url: 'https://ferreteriacima.com.do/products/sifon-pvc-fregadero-1-1-4',
     nota: 'SIFON PVC FREGADERO 1 1/4 · artículo 8055118131315. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-748', PROV_BELLON, 1252, {
+  c('MAT-32-754', PROV_BELLON, 1252, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón Metal Inoxidable 1 1/2" Eastman 35001',
     sku: '205462',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón Metal Inoxidable 1 1/2" Eastman 35001 · artículo 205462. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-749', PROV_BELLON, 1274, {
+  c('MAT-32-755', PROV_BELLON, 1274, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón Metal Inoxidable 1 1/4" Eastman 35002',
     sku: '205463',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón Metal Inoxidable 1 1/4" Eastman 35002 · artículo 205463. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-750', PROV_FERREMIX, 925, {
+  c('MAT-32-756', PROV_FERREMIX, 925, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cespol-para-lavabo-de-laton-sin-contra',
     art: 'Cespol, sin ontra para lavabo 1-1/4"',
     sku: 'T49985',
@@ -65207,28 +65207,28 @@
     url: 'https://ferremix.com.do/products/cespol-para-lavabo-de-laton-sin-contra',
     nota: 'Cespol, sin ontra para lavabo 1-1/4" · artículo T49985 · ref. T49985 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 70.38, {
+  c('MAT-32-757', PROV_BELLON, 70.38, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Doble 1 1/2" TW ZBW PD0307',
     sku: '15933',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Doble 1 1/2"  TW ZBW PD0307 · artículo 15933. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 98, {
+  c('MAT-32-757', PROV_BELLON, 98, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Sencillo 1 1/2" ZBW-PD0303',
     sku: '142431',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Sencillo 1 1/2"  ZBW-PD0303 · artículo 142431. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 205, {
+  c('MAT-32-757', PROV_BELLON, 205, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Doble 1 1/2" Eastman 35393',
     sku: '205464',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Doble 1 1/2" Eastman 35393 · artículo 205464. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 150, {
+  c('MAT-32-757', PROV_BELLON, 150, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     art: 'Sifón PVC Sencillo 1 1/2" Eastman 35376',
@@ -65236,28 +65236,28 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Sencillo 1 1/2" Eastman 35376 · artículo 205465. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 91, {
+  c('MAT-32-757', PROV_BELLON, 91, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Sencillo Flexible 1 1/2" Eastman 35301',
     sku: '207247',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Sencillo Flexible 1 1/2" Eastman 35301 · artículo 207247. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 310, {
+  c('MAT-32-757', PROV_BELLON, 310, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Sencillo Flexible 1 1/2"- 1 1/4" x 32" Eastman 35347',
     sku: '227890',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Sencillo Flexible 1 1/2"- 1 1/4" x 32" Eastman 35347 · artículo 227890. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-751', PROV_BELLON, 912, {
+  c('MAT-32-757', PROV_BELLON, 912, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Doble Flexible Acordeón 1 1/2" Eastman 35355',
     sku: '228214',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Doble Flexible Acordeón 1 1/2" Eastman 35355 · artículo 228214. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-752', PROV_FERREMIX, 345, {
+  c('MAT-32-758', PROV_FERREMIX, 345, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/cespol-flexible-de-pvc-para-lavamano-con-extension-1-1-4',
     art: 'Sifon flexible para lavamano 1 1/4" con extenion 20cm pvc foet',
     sku: 'T49947',
@@ -65265,56 +65265,56 @@
     url: 'https://ferremix.com.do/products/cespol-flexible-de-pvc-para-lavamano-con-extension-1-1-4',
     nota: 'Sifon flexible para lavamano 1 1/4" con extenion 20cm pvc foet · artículo T49947 · ref. T49947 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-752', PROV_BELLON, 300, {
+  c('MAT-32-758', PROV_BELLON, 300, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón Orinal PVC Dual 1 1/4" Zeda ZDA141',
     sku: '166650',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón Orinal PVC Dual 1 1/4" Zeda ZDA141 · artículo 166650. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-752', PROV_BELLON, 93.86, {
+  c('MAT-32-758', PROV_BELLON, 93.86, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Sencillo 1 1/4" Zeda ZDA119',
     sku: '166654',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Sencillo 1 1/4" Zeda ZDA119 · artículo 166654. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-752', PROV_BELLON, 325, {
+  c('MAT-32-758', PROV_BELLON, 325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifon Flexible PVC Lavamano 1 1/4" Foset CE-235 49365',
     sku: '234074',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifon Flexible PVC Lavamano 1 1/4" Foset CE-235 49365 · artículo 234074. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-753', PROV_BELLON, 112.21, {
+  c('MAT-32-759', PROV_BELLON, 112.21, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Drenaje 2" Sencillo Sonaca',
     sku: '12354',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Drenaje 2" Sencillo Sonaca · artículo 12354. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-753', PROV_BELLON, 81.5, {
+  c('MAT-32-759', PROV_BELLON, 81.5, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Sifón PVC Drenaje 2" Sencillo Maximus',
     sku: '234685',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Sifón PVC Drenaje 2" Sencillo Maximus · artículo 234685. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-754', PROV_CIMA, 470, {
+  c('MAT-32-760', PROV_CIMA, 470, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-metal-4-30',
     art: 'BOQUILLA FREGADERO METAL 4 30',
     sku: '091712300014',
     url: 'https://ferreteriacima.com.do/products/boquilla-fregadero-metal-4-30',
     nota: 'BOQUILLA FREGADERO METAL 4 30 · artículo 091712300014. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-755', PROV_CIMA, 285, {
+  c('MAT-32-761', PROV_CIMA, 285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-fregadero-plastica-4',
     art: 'BOQUILLA FREGADERO PLASTICA 4',
     sku: '091712300052',
     url: 'https://ferreteriacima.com.do/products/boquilla-fregadero-plastica-4',
     nota: 'BOQUILLA FREGADERO PLASTICA 4 · artículo 091712300052. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-755', PROV_CERARTE, 713.65, {
+  c('MAT-32-761', PROV_CERARTE, 713.65, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/valvula-ddesague-pfregadero?variant=012050%20%3A%20%20%3A%204%201%2F2%22%20%3A%20CROMO%20%3A%20DOCOL',
     itbis: false,
     art: 'VALVULA D/DESAGUE P/FREGADERO',
@@ -65323,77 +65323,77 @@
     url: 'https://cerarte.com.do/tienda/producto/valvula-ddesague-pfregadero?variant=012050%20%3A%20%20%3A%204%201%2F2%22%20%3A%20CROMO%20%3A%20DOCOL',
     nota: 'VALVULA D/DESAGUE P/FREGADERO · artículo CERA-35466 · ref. 4 1/2" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-756', PROV_CIMA, 429, {
+  c('MAT-32-762', PROV_CIMA, 429, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavadero-metal-2-5-30',
     art: 'BOQUILLA LAVADERO METAL 2.5 30',
     sku: '091712300410',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavadero-metal-2-5-30',
     nota: 'BOQUILLA LAVADERO METAL 2.5 30 · artículo 091712300410. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 1145, {
+  c('MAT-32-763', PROV_CIMA, 1145, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-push',
     art: 'BOQUILLA LAVAMANO METAL PUSH',
     sku: '091712901150',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-push',
     nota: 'BOQUILLA LAVAMANO METAL PUSH · artículo 091712901150. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 665, {
+  c('MAT-32-763', PROV_CIMA, 665, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-nxc119',
     art: 'BOQUILLA LAVAMANO METAL NXC119',
     sku: '033117',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-nxc119',
     nota: 'BOQUILLA LAVAMANO METAL NXC119 · artículo 033117. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 490, {
+  c('MAT-32-763', PROV_CIMA, 490, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-dhc005',
     art: 'BOQUILLA LAVAMANO METAL DHC005',
     sku: '7460215744954',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-dhc005',
     nota: 'BOQUILLA LAVAMANO METAL DHC005 · artículo 7460215744954. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 676, {
+  c('MAT-32-763', PROV_CIMA, 676, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-12',
     art: 'BOQUILLA LAVAMANO METAL DES-12',
     sku: '7592032500991',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-12',
     nota: 'BOQUILLA LAVAMANO METAL DES-12 · artículo 7592032500991. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 255, {
+  c('MAT-32-763', PROV_CIMA, 255, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-14',
     art: 'BOQUILLA LAVAMANO METAL DES-14',
     sku: '7592032002099',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-des-14',
     nota: 'BOQUILLA LAVAMANO METAL DES-14 · artículo 7592032002099. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_CIMA, 530, {
+  c('MAT-32-763', PROV_CIMA, 530, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boquilla-lavamano-metal-1-1-4',
     art: 'BOQUILLA LAVAMANO METAL 1 1/4',
     sku: '091712350743',
     url: 'https://ferreteriacima.com.do/products/boquilla-lavamano-metal-1-1-4',
     nota: 'BOQUILLA LAVAMANO METAL 1 1/4 · artículo 091712350743. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_IBERICA, 2100, {
+  c('MAT-32-763', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desague-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose',
     sku: '017988',
     url: 'https://tienda.laiberica.com.do/product/desague-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose · artículo 017988. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_IBERICA, 5850, {
+  c('MAT-32-763', PROV_IBERICA, 5850, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose',
     sku: '015211',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-brave-black-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Brave Black Metal Sin Rebose · artículo 015211. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_IBERICA, 2200, {
+  c('MAT-32-763', PROV_IBERICA, 2200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Metal Sin Rebose',
     sku: '016641',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Metal Sin Rebose · artículo 016641. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_IBERICA, 1500, {
+  c('MAT-32-763', PROV_IBERICA, 1500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-teka-con-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Metal Teka Con Rebose',
     sku: '011688',
@@ -65401,14 +65401,14 @@
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-metal-teka-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Metal Teka Con Rebose · artículo 011688 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-757', PROV_IBERICA, 5990, {
+  c('MAT-32-763', PROV_IBERICA, 5990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-pure-gold-metal-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Pure Gold Metal Sin Rebose',
     sku: '015210',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-pure-gold-metal-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Pure Gold Metal Sin Rebose · artículo 015210. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_CERARTE, 567.32, {
+  c('MAT-32-764', PROV_CERARTE, 567.32, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-2?variant=012259%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65417,7 +65417,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-2?variant=012259%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35866 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 878.71, {
+  c('MAT-32-764', PROV_CERARTE, 878.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20GRAPHITE%20%3A%20AQUALIA',
     itbis: false,
     peso: 3,
@@ -65427,7 +65427,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20GRAPHITE%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35250 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 760.81, {
+  c('MAT-32-764', PROV_CERARTE, 760.81, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO',
@@ -65436,7 +65436,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35249 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 809.75, {
+  c('MAT-32-764', PROV_CERARTE, 809.75, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     peso: 2,
@@ -65446,7 +65446,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35247 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 834.57, {
+  c('MAT-32-764', PROV_CERARTE, 834.57, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20GUNMETAL%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO',
@@ -65455,7 +65455,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-soverflow-pmezcl-bellagrossetofasano?variant=011944%20%3A%20%20%3A%20%20%3A%20GUNMETAL%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS S/OVERFLOW P/MEZCL BELLA/GROSSETO/FASANO · artículo CERA-35251 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 518.67, {
+  c('MAT-32-764', PROV_CERARTE, 518.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20BRUSHED%20T%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     peso: 2,
@@ -65465,7 +65465,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20BRUSHED%20T%20GOLD%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33891 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 411.27, {
+  c('MAT-32-764', PROV_CERARTE, 411.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65474,7 +65474,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35226 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 544.6, {
+  c('MAT-32-764', PROV_CERARTE, 544.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65483,7 +65483,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33889 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 367.2, {
+  c('MAT-32-764', PROV_CERARTE, 367.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65492,7 +65492,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow-3?variant=009292%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-35227 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 1576.12, {
+  c('MAT-32-764', PROV_CERARTE, 1576.12, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow?variant=008152%20%3A%20%20%3A%20%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65501,7 +65501,7 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow?variant=008152%20%3A%20%20%3A%20%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-33391 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_CERARTE, 938.11, {
+  c('MAT-32-764', PROV_CERARTE, 938.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow?variant=008152%20%3A%20%20%3A%20%20%3A%20BLANCO%20%3A%20AQUALIA',
     itbis: false,
     art: 'DESAGUE P/LAVAMANOS C/OVERFLOW',
@@ -65510,14 +65510,14 @@
     url: 'https://cerarte.com.do/tienda/producto/desague-plavamanos-coverflow?variant=008152%20%3A%20%20%3A%20%20%3A%20BLANCO%20%3A%20AQUALIA',
     nota: 'DESAGUE P/LAVAMANOS C/OVERFLOW · artículo CERA-31846 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-32-758', PROV_IBERICA, 450, {
+  c('MAT-32-764', PROV_IBERICA, 450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-aqua-push-up-para-lavamanos-1-1-4-cromo-sin-rebose/',
     art: 'Desagüe Aqua Push Up Para Lavamanos 1 1/4 Cromo Sin rebose',
     sku: '016364',
     url: 'https://tienda.laiberica.com.do/product/desage-aqua-push-up-para-lavamanos-1-1-4-cromo-sin-rebose/',
     nota: 'Desagüe Aqua Push Up Para Lavamanos 1 1/4 Cromo Sin rebose · artículo 016364. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 2500, {
+  c('MAT-32-764', PROV_IBERICA, 2500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-genebre-para-lavamanos-push-up-negro-mate-sin-rebose/',
     art: 'Desagüe Genebre Para Lavamanos Push Up Negro Mate Sin Rebose',
     sku: '016507',
@@ -65525,7 +65525,7 @@
     url: 'https://tienda.laiberica.com.do/product/desage-genebre-para-lavamanos-push-up-negro-mate-sin-rebose/',
     nota: 'Desagüe Genebre Para Lavamanos Push Up Negro Mate Sin Rebose · artículo 016507 · marca Genebre. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 1100, {
+  c('MAT-32-764', PROV_IBERICA, 1100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-1-1-4-cromo-flova/',
     art: 'Desagüe Para Lavamanos 1 1/4 Cromo Flova',
     sku: '016454',
@@ -65533,462 +65533,462 @@
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-1-1-4-cromo-flova/',
     nota: 'Desagüe Para Lavamanos 1 1/4 Cromo Flova · artículo 016454 · marca Flova. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 1700, {
+  c('MAT-32-764', PROV_IBERICA, 1700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Sin Rebose',
     sku: '015408',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Sin Rebose · artículo 015408. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 509.76, {
+  c('MAT-32-764', PROV_IBERICA, 509.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-blanco-fomi-con-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Blanco Fomi Con Rebose',
     sku: '015653',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-blanco-fomi-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Blanco Fomi Con Rebose · artículo 015653. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 265.5, {
+  c('MAT-32-764', PROV_IBERICA, 265.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-con-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Con Rebose',
     sku: '015009',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-con-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Con Rebose · artículo 015009. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-758', PROV_IBERICA, 5590, {
+  c('MAT-32-764', PROV_IBERICA, 5590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-proud-rose-sin-rebose/',
     art: 'Desagüe Para Lavamanos Push Up Proud Rose Sin Rebose',
     sku: '016066',
     url: 'https://tienda.laiberica.com.do/product/desage-para-lavamanos-push-up-proud-rose-sin-rebose/',
     nota: 'Desagüe Para Lavamanos Push Up Proud Rose Sin Rebose · artículo 016066. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-759', PROV_CIMA, 970, {
+  c('MAT-32-765', PROV_CIMA, 970, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-24',
     art: 'MANGUERA BOMBA TANQUE 24"',
     sku: '050025',
     url: 'https://ferreteriacima.com.do/products/manguera-bomba-tanque-24',
     nota: 'MANGUERA BOMBA TANQUE 24" · artículo 050025. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-760', PROV_CIMA, 475, {
+  c('MAT-32-766', PROV_CIMA, 475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-bomba-tanque-36',
     art: 'MANGUERA BOMBA TANQUE 36"',
     sku: '036058',
     url: 'https://ferreteriacima.com.do/products/manguera-bomba-tanque-36',
     nota: 'MANGUERA BOMBA TANQUE 36" · artículo 036058. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-761', PROV_CIMA, 895, {
+  c('MAT-32-767', PROV_CIMA, 895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60',
     art: 'MANGUERA CALENTADOR 24 EVB-B60',
     sku: '7501605513160',
     url: 'https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60',
     nota: 'MANGUERA CALENTADOR 24 EVB-B60 · artículo 7501605513160. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-762', PROV_CIMA, 620, {
+  c('MAT-32-768', PROV_CIMA, 620, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-1',
     art: 'MANGUERA CALENTADOR HM 3/4 X 1',
     sku: '091712482543',
     url: 'https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-1',
     nota: 'MANGUERA CALENTADOR HM 3/4 X 1 · artículo 091712482543. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-763', PROV_CIMA, 1071, {
+  c('MAT-32-769', PROV_CIMA, 1071, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-2',
     art: 'MANGUERA CALENTADOR HM 3/4 X 2',
     sku: '091712482550',
     url: 'https://ferreteriacima.com.do/products/manguera-calentador-hm-3-4-x-2',
     nota: 'MANGUERA CALENTADOR HM 3/4 X 2 · artículo 091712482550. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-763', PROV_CIMA, 685, {
+  c('MAT-32-769', PROV_CIMA, 685, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-hh-3-4-x-2',
     art: 'MANGUERA CALENTADOR HH 3/4 X 2',
     sku: '091712482529',
     url: 'https://ferreteriacima.com.do/products/manguera-calentador-hh-3-4-x-2',
     nota: 'MANGUERA CALENTADOR HH 3/4 X 2 · artículo 091712482529. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-764', PROV_CIMA, 1094, {
+  c('MAT-32-770', PROV_CIMA, 1094, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60-1',
     art: 'MANGUERA CALENTADOR 60 VB-B60',
     sku: '710631939913',
     url: 'https://ferreteriacima.com.do/products/manguera-calentador-24-evb-b60-1',
     nota: 'MANGUERA CALENTADOR 60 VB-B60 · artículo 710631939913. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-765', PROV_CIMA, 50, {
+  c('MAT-32-771', PROV_CIMA, 50, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-12',
     art: 'MANGUERA POLIETILENO GAS 12',
     sku: '017845',
     url: 'https://ferreteriacima.com.do/products/manguera-polietileno-gas-12',
     nota: 'MANGUERA POLIETILENO GAS 12 · artículo 017845. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-766', PROV_CIMA, 65, {
+  c('MAT-32-772', PROV_CIMA, 65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-polietileno-gas-18',
     art: 'MANGUERA POLIETILENO GAS 18',
     sku: '251461',
     url: 'https://ferreteriacima.com.do/products/manguera-polietileno-gas-18',
     nota: 'MANGUERA POLIETILENO GAS 18 · artículo 251461. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-767', PROV_CIMA, 250, {
+  c('MAT-32-773', PROV_CIMA, 250, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-inodoro-16-pn-48176',
     art: 'MANGUERA INODORO 16 PN-48176',
     sku: '091712481768',
     url: 'https://ferreteriacima.com.do/products/manguera-inodoro-16-pn-48176',
     nota: 'MANGUERA INODORO 16 PN-48176 · artículo 091712481768. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-768', PROV_CIMA, 535, {
+  c('MAT-32-774', PROV_CIMA, 535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man-1',
     art: 'MANGUERA JARDIN 1/2 X 10M MAN-',
     sku: '7501206653340',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man-1',
     nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206653340. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-768', PROV_CIMA, 693, {
+  c('MAT-32-774', PROV_CIMA, 693, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man',
     art: 'MANGUERA JARDIN 1/2 X 10M MAN-',
     sku: '7501206691892',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-10m-man',
     nota: 'MANGUERA JARDIN 1/2 X 10M MAN- · artículo 7501206691892. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-768', PROV_CIMA, 1940, {
+  c('MAT-32-774', PROV_CIMA, 1940, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-20m-man',
     art: 'MANGUERA JARDIN 1/2 X 20M MAN-',
     sku: '7501206653388',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-20m-man',
     nota: 'MANGUERA JARDIN 1/2 X 20M MAN- · artículo 7501206653388. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-768', PROV_CIMA, 1883, {
+  c('MAT-32-774', PROV_CIMA, 1883, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-15m-man',
     art: 'MANGUERA JARDIN 1/2 X 15M MAN-',
     sku: '7501206660867',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-1-2-x-15m-man',
     nota: 'MANGUERA JARDIN 1/2 X 15M MAN- · artículo 7501206660867. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-769', PROV_CIMA, 1475, {
+  c('MAT-32-775', PROV_CIMA, 1475, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refo-1-2-x-100',
     art: 'MANGUERA JARDIN REFO 1/2 X 100',
     sku: '822312003834',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-refo-1-2-x-100',
     nota: 'MANGUERA JARDIN REFO 1/2 X 100 · artículo 822312003834. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-770', PROV_CIMA, 544, {
+  c('MAT-32-776', PROV_CIMA, 544, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-1-2-x-25',
     art: 'MANGUERA JARDIN REFOR 1/2 X 25',
     sku: '034574',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-refor-1-2-x-25',
     nota: 'MANGUERA JARDIN REFOR 1/2 X 25 · artículo 034574. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-771', PROV_CIMA, 1042, {
+  c('MAT-32-777', PROV_CIMA, 1042, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-lisa-1-2-x-50',
     art: 'MANGUERA JARDIN LISA 1/2 X 50',
     sku: '7460737001139',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-lisa-1-2-x-50',
     nota: 'MANGUERA JARDIN LISA 1/2 X 50 · artículo 7460737001139. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-772', PROV_CIMA, 2741, {
+  c('MAT-32-778', PROV_CIMA, 2741, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-30m-man',
     art: 'MANGUERA JARDIN 5/8 X 30M MAN-',
     sku: '7501206604861',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-30m-man',
     nota: 'MANGUERA JARDIN 5/8 X 30M MAN- · artículo 7501206604861. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-772', PROV_CIMA, 2397, {
+  c('MAT-32-778', PROV_CIMA, 2397, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-25m-man',
     art: 'MANGUERA JARDIN 5/8 X 25M MAN-',
     sku: '7501206604854',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-25m-man',
     nota: 'MANGUERA JARDIN 5/8 X 25M MAN- · artículo 7501206604854. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-772', PROV_CIMA, 2054, {
+  c('MAT-32-778', PROV_CIMA, 2054, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-20m-man',
     art: 'MANGUERA JARDIN 5/8 X 20M MAN-',
     sku: '7501206604847',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-5-8-x-20m-man',
     nota: 'MANGUERA JARDIN 5/8 X 20M MAN- · artículo 7501206604847. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-773', PROV_CIMA, 1365, {
+  c('MAT-32-779', PROV_CIMA, 1365, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-jardin-refor-5-8-x-75',
     art: 'MANGUERA JARDIN REFOR 5/8 X 75',
     sku: '022178',
     url: 'https://ferreteriacima.com.do/products/manguera-jardin-refor-5-8-x-75',
     nota: 'MANGUERA JARDIN REFOR 5/8 X 75 · artículo 022178. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-774', PROV_CIMA, 556, {
+  c('MAT-32-780', PROV_CIMA, 556, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-48',
     art: 'MANGUERA LAVADORA GOMA 48',
     sku: '040003',
     url: 'https://ferreteriacima.com.do/products/manguera-lavadora-goma-48',
     nota: 'MANGUERA LAVADORA GOMA 48 · artículo 040003. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-775', PROV_CIMA, 410, {
+  c('MAT-32-781', PROV_CIMA, 410, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-60',
     art: 'MANGUERA LAVADORA GOMA 60',
     sku: '010345',
     url: 'https://ferreteriacima.com.do/products/manguera-lavadora-goma-60',
     nota: 'MANGUERA LAVADORA GOMA 60 · artículo 010345. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-776', PROV_CIMA, 375, {
+  c('MAT-32-782', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavadora-goma-72',
     art: 'MANGUERA LAVADORA GOMA 72',
     sku: '7460126802125',
     url: 'https://ferreteriacima.com.do/products/manguera-lavadora-goma-72',
     nota: 'MANGUERA LAVADORA GOMA 72 · artículo 7460126802125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-777', PROV_CIMA, 384, {
+  c('MAT-32-783', PROV_CIMA, 384, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-2',
     art: 'MANGUERA METAL LAVAMANOS 1/2X1',
     sku: '710631931498',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-2',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931498. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-777', PROV_CIMA, 295, {
+  c('MAT-32-783', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-1',
     art: 'MANGUERA METAL LAVAMANOS 1/2X1',
     sku: '71063193498',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1-1',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 71063193498. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-777', PROV_CIMA, 451, {
+  c('MAT-32-783', PROV_CIMA, 451, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1',
     art: 'MANGUERA METAL LAVAMANOS 1/2X1',
     sku: '710631931504',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-1-2x1',
     nota: 'MANGUERA METAL LAVAMANOS 1/2X1 · artículo 710631931504. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-778', PROV_CIMA, 265, {
+  c('MAT-32-784', PROV_CIMA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-16-pn-48131',
     art: 'MANGUERA LAVAMANOS 16 PN-48131',
     sku: '091712481317',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-16-pn-48131',
     nota: 'MANGUERA LAVAMANOS 16 PN-48131 · artículo 091712481317. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-779', PROV_CIMA, 325, {
+  c('MAT-32-785', PROV_CIMA, 325, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-20-pn-48132',
     art: 'MANGUERA LAVAMANOS 20 PN-48132',
     sku: '091712481324',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-20-pn-48132',
     nota: 'MANGUERA LAVAMANOS 20 PN-48132 · artículo 091712481324. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-780', PROV_CIMA, 425, {
+  c('MAT-32-786', PROV_CIMA, 425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al-1',
     art: 'MANGUERA METAL LAVAMANOS 22 AL',
     sku: '710631931313',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al-1',
     nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 710631931313. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-780', PROV_CIMA, 365, {
+  c('MAT-32-786', PROV_CIMA, 365, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al',
     art: 'MANGUERA METAL LAVAMANOS 22 AL',
     sku: '7501605502119',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-al',
     nota: 'MANGUERA METAL LAVAMANOS 22 AL · artículo 7501605502119. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-780', PROV_CIMA, 499, {
+  c('MAT-32-786', PROV_CIMA, 499, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-vl',
     art: 'MANGUERA METAL LAVAMANOS 22 VL',
     sku: '7501605507114',
     url: 'https://ferreteriacima.com.do/products/manguera-metal-lavamanos-22-vl',
     nota: 'MANGUERA METAL LAVAMANOS 22 VL · artículo 7501605507114. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-781', PROV_CIMA, 265, {
+  c('MAT-32-787', PROV_CIMA, 265, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48135',
     art: 'MANGUERA LAVAMANOS 24 PN-48135',
     sku: '091712481355',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48135',
     nota: 'MANGUERA LAVAMANOS 24 PN-48135 · artículo 091712481355. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-781', PROV_CIMA, 293, {
+  c('MAT-32-787', PROV_CIMA, 293, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48127',
     art: 'MANGUERA LAVAMANOS 24 PN-48127',
     sku: '091712481270',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-24-pn-48127',
     nota: 'MANGUERA LAVAMANOS 24 PN-48127 · artículo 091712481270. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-782', PROV_CIMA, 505, {
+  c('MAT-32-788', PROV_CIMA, 505, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-3-8-eal-r55',
     art: 'MANGUERA LAVAMANOS 3/8 EAL-R55',
     sku: '710631905635',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-3-8-eal-r55',
     nota: 'MANGUERA LAVAMANOS 3/8 EAL-R55 · artículo 710631905635. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-783', PROV_CIMA, 198, {
+  c('MAT-32-789', PROV_CIMA, 198, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-20',
     art: 'MANGUERA LAVAMANOS 3/8 X 32',
     sku: '7460215730049',
     url: 'https://ferreteriacima.com.do/products/manguera-mezc-mono-20',
     nota: 'MANGUERA LAVAMANOS 3/8 X 32 · artículo 7460215730049. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-784', PROV_CIMA, 330, {
+  c('MAT-32-790', PROV_CIMA, 330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-30-pn-48128',
     art: 'MANGUERA LAVAMANOS 30 PN-48128',
     sku: '091712481287',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-30-pn-48128',
     nota: 'MANGUERA LAVAMANOS 30 PN-48128 · artículo 091712481287. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-785', PROV_CIMA, 319, {
+  c('MAT-32-791', PROV_CIMA, 319, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-lavamanos-36-pn-48129',
     art: 'MANGUERA LAVAMANOS 36 PN-48129',
     sku: '091712481294',
     url: 'https://ferreteriacima.com.do/products/manguera-lavamanos-36-pn-48129',
     nota: 'MANGUERA LAVAMANOS 36 PN-48129 · artículo 091712481294. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-786', PROV_CIMA, 195, {
+  c('MAT-32-792', PROV_CIMA, 195, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-3-8-x-20',
     art: 'MANGUERA MEZC/ MONO 3/8 X 20',
     sku: '010744',
     url: 'https://ferreteriacima.com.do/products/manguera-mezc-mono-3-8-x-20',
     nota: 'MANGUERA MEZC/ MONO 3/8 X 20 · artículo 010744. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-787', PROV_CIMA, 297, {
+  c('MAT-32-793', PROV_CIMA, 297, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-mezc-mono-32-od',
     art: 'MANGUERA MEZC/ MONO 32 OD',
     sku: '01012045',
     url: 'https://ferreteriacima.com.do/products/manguera-mezc-mono-32-od',
     nota: 'MANGUERA MEZC/ MONO 32 OD · artículo 01012045. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-788', PROV_CIMA, 25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-5-16',
-    art: 'MANGUERA TRANSPARENTE 5/16',
-    sku: '051576',
-    url: 'https://ferreteriacima.com.do/products/manguera-transparente-5-16',
-    nota: 'MANGUERA TRANSPARENTE 5/16 · artículo 051576. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-789', PROV_CIMA, 47, {
+  c('MAT-32-794', PROV_CIMA, 47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-ma-1-2',
     art: 'MANGUERA TRANSPARENTE MA 1/2',
     sku: '055583',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-ma-1-2',
     nota: 'MANGUERA TRANSPARENTE MA 1/2 · artículo 055583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-789', PROV_CIMA, 40, {
+  c('MAT-32-794', PROV_CIMA, 40, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-2',
     art: 'MANGUERA TRANSPARENTE 1/2',
     sku: '051577',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-1-2',
     nota: 'MANGUERA TRANSPARENTE 1/2 · artículo 051577. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-790', PROV_CIMA, 35, {
+  c('MAT-32-795', PROV_CIMA, 35, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1-4',
     art: 'MANGUERA TRANSPARENTE 1/4',
     sku: '051575',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-1-4',
     nota: 'MANGUERA TRANSPARENTE 1/4 · artículo 051575. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-791', PROV_CIMA, 100, {
+  c('MAT-32-796', PROV_CIMA, 100, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-1',
     art: 'MANGUERA TRANSPARENTE 1',
     sku: '051572',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-1',
     nota: 'MANGUERA TRANSPARENTE 1 · artículo 051572. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-792', PROV_CIMA, 36, {
+  c('MAT-32-797', PROV_CIMA, 36, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-4',
     art: 'MANGUERA TRANSPARENTE 3/4',
     sku: '051579',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-3-4',
     nota: 'MANGUERA TRANSPARENTE 3/4 · artículo 051579. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-793', PROV_CIMA, 32, {
+  c('MAT-32-798', PROV_CIMA, 32, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-3-8',
     art: 'MANGUERA TRANSPARENTE 3/8',
     sku: '051573',
     url: 'https://ferreteriacima.com.do/products/manguera-transparente-3-8',
     nota: 'MANGUERA TRANSPARENTE 3/8 · artículo 051573. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-794', PROV_CIMA, 75, {
+  c('MAT-32-799', PROV_CIMA, 25, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-transparente-5-16',
+    art: 'MANGUERA TRANSPARENTE 5/16',
+    sku: '051576',
+    url: 'https://ferreteriacima.com.do/products/manguera-transparente-5-16',
+    nota: 'MANGUERA TRANSPARENTE 5/16 · artículo 051576. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-800', PROV_CIMA, 75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-1-x-13m-ctf-1',
     art: 'TEFLON 1 X 13M CTF-1',
     sku: '7506240602590',
     url: 'https://ferreteriacima.com.do/products/teflon-1-x-13m-ctf-1',
     nota: 'TEFLON 1 X 13M CTF-1 · artículo 7506240602590. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-795', PROV_CIMA, 175, {
+  c('MAT-32-801', PROV_CIMA, 175, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-ind-3-4-ctf-3-4x13x',
     art: 'TEFLON IND 3/4 CTF-3/4X13X',
     sku: '7506240602583',
     url: 'https://ferreteriacima.com.do/products/teflon-ind-3-4-ctf-3-4x13x',
     nota: 'TEFLON IND 3/4 CTF-3/4X13X · artículo 7506240602583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-795', PROV_CIMA, 60, {
+  c('MAT-32-801', PROV_CIMA, 60, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/teflon-3-4-x-7-ctf-3-4',
     art: 'TEFLON 3/4 X 7 CTF-3/4',
     sku: '7501206641682',
     url: 'https://ferreteriacima.com.do/products/teflon-3-4-x-7-ctf-3-4',
     nota: 'TEFLON 3/4 X 7 CTF-3/4 · artículo 7501206641682. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-796', PROV_CIMA, 304, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
-    art: 'CINTA PLOMERO 3/16 x 15',
-    sku: '4710277065485',
-    url: 'https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
-    nota: 'CINTA PLOMERO 3/16 x 15 · artículo 4710277065485. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-32-797', PROV_CIMA, 2525, {
+  c('MAT-32-802', PROV_CIMA, 2525, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-2-x-50',
     art: 'CINTA PLOMERO 1/2 x 50',
     sku: '4710277021368',
     url: 'https://ferreteriacima.com.do/products/cinta-plomero-1-2-x-50',
     nota: 'CINTA PLOMERO 1/2 x 50 · artículo 4710277021368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-798', PROV_CIMA, 412, {
+  c('MAT-32-803', PROV_CIMA, 412, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-1-8-x-25-pies',
     art: 'CINTA PLOMERO 1/8 X 25 PIES',
     sku: '4710277019389',
     url: 'https://ferreteriacima.com.do/products/cinta-plomero-1-8-x-25-pies',
     nota: 'CINTA PLOMERO 1/8 X 25 PIES · artículo 4710277019389. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-799', PROV_CIMA, 979, {
+  c('MAT-32-804', PROV_CIMA, 304, {
+    fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
+    art: 'CINTA PLOMERO 3/16 x 15',
+    sku: '4710277065485',
+    url: 'https://ferreteriacima.com.do/products/cinta-plomero-3-16-x-15',
+    nota: 'CINTA PLOMERO 3/16 x 15 · artículo 4710277065485. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-32-805', PROV_CIMA, 979, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-16oz-wet-dry-sm-24',
     art: 'CEMENTO PVC 16oz WET DRY SM-24',
     sku: '718594024868',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-16oz-wet-dry-sm-24',
     nota: 'CEMENTO PVC 16oz WET DRY SM-24 · artículo 718594024868. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-800', PROV_CIMA, 1765, {
+  c('MAT-32-806', PROV_CIMA, 1765, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-32oz-w-d-sm-248-5',
     art: 'CEMENTO PVC 32oz W D SM-248-5',
     sku: '718594024851',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-32oz-w-d-sm-248-5',
     nota: 'CEMENTO PVC 32oz W D SM-248-5 · artículo 718594024851. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-801', PROV_CIMA, 415, {
+  c('MAT-32-807', PROV_CIMA, 415, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-wet-dry-sm-248',
     art: 'CEMENTO PVC 4oz WET DRY SM-248',
     sku: '718594024882',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-4oz-wet-dry-sm-248',
     nota: 'CEMENTO PVC 4oz WET DRY SM-248 · artículo 718594024882. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-801', PROV_CIMA, 368, {
+  c('MAT-32-807', PROV_CIMA, 368, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-super-4oz-sm-244-8',
     art: 'CEMENTO PVC SUPER 4oz SM-244-8',
     sku: '718594024486',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-super-4oz-sm-244-8',
     nota: 'CEMENTO PVC SUPER 4oz SM-244-8 · artículo 718594024486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-801', PROV_CIMA, 335, {
+  c('MAT-32-807', PROV_CIMA, 335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-cleaner-4oz-sm-245',
     art: 'CEMENTO PVC CLEANER 4oz SM-245',
     sku: '718594024585',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-cleaner-4oz-sm-245',
     nota: 'CEMENTO PVC CLEANER 4oz SM-245 · artículo 718594024585. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-801', PROV_CIMA, 522, {
+  c('MAT-32-807', PROV_CIMA, 522, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-4oz-jet-dry-sm-258',
     art: 'CEMENTO PVC 4oz JET-DRY SM-258',
     sku: '718594025889',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-4oz-jet-dry-sm-258',
     nota: 'CEMENTO PVC 4oz JET-DRY SM-258 · artículo 718594025889. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-802', PROV_CIMA, 205, {
+  c('MAT-32-808', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-50ml-wet-dry-tp-24',
     art: 'CEMENTO PVC 50ML WET DRY TP-24',
     sku: '718594248103',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-50ml-wet-dry-tp-24',
     nota: 'CEMENTO PVC 50ML WET DRY TP-24 · artículo 718594248103. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-803', PROV_CIMA, 567, {
+  c('MAT-32-809', PROV_CIMA, 567, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-wet-dry-sm-248',
     art: 'CEMENTO PVC 8oz WET-DRY SM-248',
     sku: '718594024875',
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-8oz-wet-dry-sm-248',
     nota: 'CEMENTO PVC 8oz WET-DRY SM-248 · artículo 718594024875. ' + SUPUESTO_ITBIS
   });
-  c('MAT-32-803', PROV_CIMA, 473, {
+  c('MAT-32-809', PROV_CIMA, 473, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
     art: 'CEMENTO PVC 8oz SM-244-7',
     sku: '718594024479',

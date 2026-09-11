@@ -242,35 +242,16 @@ function materialDe(n) {
   return '';
 }
 
-function tipoConexion(n) {
-  if (/^codoniple/.test(n)) return 'codoniple';
-  if (/^codo/.test(n)) return /\b45\b/.test(n) ? 'codo-45' : /\b90\b/.test(n) ? 'codo-90' : 'codo';
-  if (/^tee/.test(n)) return /reducid/.test(n) ? 'tee-reducida' : 'tee';
-  if (/^cruz/.test(n)) return 'cruz';
-  if (/^yee/.test(n)) return 'yee';
-  if (/^niple/.test(n)) return /reductor/.test(n) ? 'niple-reductor' : 'niple';
-  if (/^reduccion/.test(n)) return /\bbus\b|bushing/.test(n) ? 'reduccion-bushing' : 'reduccion';
-  if (/^tapon/.test(n)) return /macho/.test(n) ? 'tapon-macho' : /hembra/.test(n) ? 'tapon-hembra' : 'tapon';
-  if (/^adaptador/.test(n)) return /macho/.test(n) ? 'adaptador-macho' : /hembra/.test(n) ? 'adaptador-hembra' : 'adaptador';
-  if (/^union/.test(n)) return /universal/.test(n) ? 'union-universal' : 'union';
-  if (/^coupling/.test(n)) return 'coupling';
-  return '';
-}
-
-function medidaConexion(a, tipo) {
-  const n = baja(a.nombre);
-  const nums = numerosDe(a.nombre).filter(v => !(/^codo/.test(n) && (v === '90' || v === '45')));
-  if (/mm/i.test(a.nombre)) {
-    const mm = limpia(a.nombre).match(/(\d+)\s*mm/gi);
-    if (mm) return mm.map(x => x.replace(/\s*mm/i, '') + ' mm').join(' x ');
-  }
-  const pulg = nums.map(medidaPulg).filter(Boolean);
-  if (!pulg.length) return '';
-  if (pulg.length >= 2 && /reduc|niple|yee|tee-reducida|adaptador/.test(tipo + ' ' + n)) {
-    return pulg[0] + ' x ' + pulg[1];
-  }
-  return pulg[0];
-}
+/* El tipo y la medida de una conexión los decide especificacion-plomeria.js,
+   que es donde vive esa lectura para todos los comercios. Aquí había una
+   copia entera de las dos funciones y se quedó atrás: la copia buena
+   aprendió que «Tee Cruz PVC Presión 1"» es una cruz y no una tee, que el
+   polietileno se mide en milímetros aunque la ficha no escriba la unidad, y
+   que «Tee PPR Reducción 25 x 20mm» lleva las dos medidas. Esta no, y los
+   arreglos no llegaban a Bellón, que es justo el comercio que trae esos
+   nombres. Dos implementaciones de la misma lectura es una de más. */
+const tipoConexion = PLOM.tipoConexion;
+const medidaConexion = PLOM.medidaConexion;
 
 function reglaConexion(a) {
   const n = baja(a.nombre);
@@ -346,7 +327,13 @@ function reglaPlomeria(a) {
     if (!/vertical|horizontal/.test(t)) { MOTIVO.valor = 'la ficha no dice si el cheque es vertical u horizontal'; return null; }
     const p = pulgada(n);
     if (!p) { MOTIVO.valor = 'la ficha no declara la medida del cheque'; return null; }
-    return PLOM.item('cheque', { medida: p });
+    /* La regla ya exigía que la ficha dijera vertical u horizontal; lo
+       que faltaba era guardarlo. Ver la nota de la familia. */
+    return PLOM.item('cheque', {
+      tipo: /vertical/.test(t) ? 'vertical' : 'horizontal',
+      medida: p,
+      material: /\bpvc\b/.test(t) ? 'PVC' : ''
+    });
   }
   if (/^(llave de paso|llave paso|valvula)/.test(t)) {
     const p = pulgada(n);
