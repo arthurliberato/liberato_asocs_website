@@ -115,10 +115,12 @@
       sku: o.sku || '',
       marca: o.marca || '',
       url: o.url || '',
-      /* La gama sale de la marca, y solo cuando hay tabla puesta: la
-         ponen las herramientas del repositorio, que son las que la miden.
-         El navegador no la calcula, la recibe hecha. */
-      gama: (global.PRECIOS.gamaDeMarca && global.PRECIOS.gamaDeMarca[o.marca]) || ''
+      /* La gama. Primero la que el registro trae escrita —la declaró una
+         persona para este comercio en este producto, y es más estrecha
+         que medir una marca en todo el catálogo—; si no, la de la marca,
+         que está medida. Las tablas las ponen las herramientas del
+         repositorio; el navegador no calcula ninguna, la recibe hecha. */
+      gama: o.gama || (global.PRECIOS.gamaDeMarca && global.PRECIOS.gamaDeMarca[o.marca]) || ''
     });
   }
   /* ---------------------------------------------------------

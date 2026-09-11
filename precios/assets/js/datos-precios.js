@@ -507,6 +507,7 @@
     sku: '04-59-0147',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/adhesivo-cementicio-pegacol-blanco-04590147',
+    gama: 'estandar',
     nota: 'ADHESIVO CEMENTICIO PEGACOL BLANCO · artículo 04-59-0147 · ref. 20KG80F/PAL · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-013', PROV_OCHOA, 323.12, {
@@ -678,6 +679,7 @@
     sku: '058654',
     marca: 'WEC',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-weco-w-900-we0810457-blanco-50-058654',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA WECO W-900 WE0810457 BLANCO 50 LB · artículo 058654 · marca WEC. ' + SUPUESTO_ITBIS
   });
   c('MAT-13-006', PROV_INNOVA, 595, {
@@ -911,6 +913,7 @@
     art: 'PEGAMENTO CERAMICA GRIS 50LB P',
     sku: '001156',
     url: 'https://ferreteriacima.com.do/products/pegamento-ceramica-gris-50lb-p',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA GRIS 50LB P · artículo 001156. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-069', PROV_CIMA, 175, {
@@ -1113,6 +1116,7 @@
     sku: '0001123332',
     marca: 'PEGAFORTE',
     url: 'https://maxferreteria.com/products/pegamento-pega-forte-blanco-50lbs',
+    gama: 'estandar',
     nota: 'PEGAMENTO PEGA FORTE BLANCO 50LBS · artículo 0001123332 · ref. Presentacion 50 lb (22.68 kg) · marca PEGAFORTE. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-018', PROV_MAX, 335, {
@@ -1121,6 +1125,7 @@
     sku: '0001123331',
     marca: 'PEGAFORTE',
     url: 'https://maxferreteria.com/products/pegamento-pegon-50lbs',
+    gama: 'estandar',
     nota: 'PEGAMENTO PEGON 50LBS · artículo 0001123331 · ref. Presentacion 50 lb (22.68 kg) · marca PEGAFORTE. ' + SUPUESTO_ITBIS
   });
   c('MAT-32-004', PROV_MAX, 175.01, {
@@ -1193,6 +1198,7 @@
     sku: '0001115450',
     marca: 'PEGAFULL',
     url: 'https://maxferreteria.com/products/cemento-pegafull-gris-p-ceramica-22-7kg',
+    gama: 'estandar',
     nota: 'CEMENTO PEGAFULL GRIS P/CERAMICA 22.7KG · artículo 0001115450 · ref. Presentacion 22.7 kg | Uso: pegamento para ceramica · marca PEGAFULL. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-069', PROV_MAX, 145, {
@@ -2577,6 +2583,7 @@
     sku: '018534',
     marca: 'Pegafix',
     url: 'https://tienda.laiberica.com.do/product/adhesivo-pegafix-especial-blanco-c1-te-25-kg/',
+    gama: 'alta',
     nota: 'Adhesivo Pegafix Especial Blanco C1 TE Ref.105310 25 Kg · artículo 018534 · ref. 105310 · marca Pegafix. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-018', PROV_OCHOA, 306.95, {
@@ -2585,6 +2592,7 @@
     sku: '01-08-1539',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/adhesivo-cementicio-pegacol-01081539',
+    gama: 'estandar',
     nota: 'ADHESIVO CEMENTICIO PEGACOL · artículo 01-08-1539 · ref. 50LB.80FDAS/PAL. · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-018', PROV_OCHOA, 523.2, {
@@ -2593,6 +2601,7 @@
     sku: '01-09-6554',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/adhesivo-cementicio-pegacol-gris-01096554',
+    gama: 'estandar',
     nota: 'ADHESIVO CEMENTICIO PEGACOL GRIS · artículo 01-09-6554 · ref. 22.7KG/50LIBRAS · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-019', PROV_IBERICA, 885, {
@@ -2601,6 +2610,7 @@
     sku: '018533',
     marca: 'Pegafix',
     url: 'https://tienda.laiberica.com.do/product/adhesivo-pegafix-especial-gris-c1-te-25-kg/',
+    gama: 'alta',
     nota: 'Adhesivo Pegafix Especial Gris C1 TE Ref.105311 25 Kg · artículo 018533 · ref. 105311 · marca Pegafix. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-020', PROV_OCHOA, 1403.29, {
@@ -2609,6 +2619,7 @@
     sku: '01-09-2772',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/adhesivo-cementicio-euroflex-blanco-ultra-01092772',
+    gama: 'estandar',
     nota: 'ADHESIVO CEMENTICIO EUROFLEX BLANCO ULTRA · artículo 01-09-2772 · ref. 20KGC2TES2 · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-021', PROV_IBERICA, 4784.99, {
@@ -2616,6 +2627,7 @@
     art: 'Granirapid White System 46 Lb',
     sku: '006976',
     url: 'https://tienda.laiberica.com.do/product/granirapid-white-system-46-lb-s-latex/',
+    gama: 'alta',
     nota: 'Granirapid White System 46 Lb · artículo 006976. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-022', PROV_IBERICA, 2265, {
@@ -2623,6 +2635,7 @@
     art: 'Cemento Ultraflex 1 White 50 Lbs',
     sku: '000886',
     url: 'https://tienda.laiberica.com.do/product/cemento-ultraflex-1-white-50-lbs/',
+    gama: 'alta',
     nota: 'Cemento Ultraflex 1 White 50 Lbs · artículo 000886. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-022', PROV_IBERICA, 3375, {
@@ -2630,6 +2643,7 @@
     art: 'Cemento Ultraflex Lft White 50 Lbs',
     sku: '008218',
     url: 'https://tienda.laiberica.com.do/product/cemento-ultraflex-lft-white-50-lbs/',
+    gama: 'alta',
     nota: 'Cemento Ultraflex Lft White 50 Lbs · artículo 008218. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-022', PROV_IBERICA, 2490, {
@@ -2637,6 +2651,7 @@
     art: 'CEMENTO ULTRAFLEX LHT WHITE 50 LBS',
     sku: '014512',
     url: 'https://tienda.laiberica.com.do/product/cemento-ultraflex-lht-white-50-lbs/',
+    gama: 'alta',
     nota: 'CEMENTO ULTRAFLEX LHT WHITE 50 LBS · artículo 014512. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-023', PROV_IBERICA, 1675, {
@@ -2645,6 +2660,7 @@
     sku: '018890',
     marca: 'Pegafix',
     url: 'https://tienda.laiberica.com.do/product/adhesivo-pegafix-flex-blanco-c2-te-s1-25-kg/',
+    gama: 'alta',
     nota: 'Adhesivo Pegafix Flex Blanco C2 TE S1 Ref.105294 25 Kg · artículo 018890 · ref. 105294 · marca Pegafix. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-023', PROV_IBERICA, 1320, {
@@ -2653,6 +2669,7 @@
     sku: '018532',
     marca: 'Pegafix',
     url: 'https://tienda.laiberica.com.do/product/adhesivo-pegafix-porcelanico-blanco-c2-te-25-kg/',
+    gama: 'alta',
     nota: 'Adhesivo Pegafix Porcelanico Blanco C2 TE Ref.105296 25 Kg · artículo 018532 · ref. 105296 · marca Pegafix. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-024', PROV_OCHOA, 662.44, {
@@ -2661,6 +2678,7 @@
     sku: '01-08-8078',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/adhesivo-cementicio-euroflex-ultra-01088078',
+    gama: 'estandar',
     nota: 'ADHESIVO CEMENTICIO EUROFLEX ULTRA · artículo 01-08-8078 · ref. 22.7KG80FDAS/PAL. · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-024', PROV_OCHOA, 690.83, {
@@ -2669,6 +2687,7 @@
     sku: '04-59-0309',
     marca: 'MORTEROS EUROPA',
     url: 'https://ochoa.com.do/producto/pegacol-panel-masilla-p-revest-04590309',
+    gama: 'estandar',
     nota: 'PEGACOL PANEL (MASILLA P / REVEST) · artículo 04-59-0309 · ref. 22.7KGS · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-024', PROV_IBERICA, 1829, {
@@ -2676,6 +2695,7 @@
     art: 'Cemento Ultraflex 1 Gray 50 Lb',
     sku: '000887',
     url: 'https://tienda.laiberica.com.do/product/cemento-ultraflex-1-gray-50lb/',
+    gama: 'alta',
     nota: 'Cemento Ultraflex 1 Gray 50 Lb · artículo 000887. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-025', PROV_OCHOA, 1938.87, {
@@ -2684,6 +2704,7 @@
     sku: '01-08-1818',
     marca: 'LANCO',
     url: 'https://ochoa.com.do/producto/adhesivo-para-ceramica-interior-01081818',
+    gama: 'estandar',
     nota: 'ADHESIVO PARA CERÁMICA INTERIOR · artículo 01-08-1818 · ref. SM-502-4 · marca LANCO. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-025', PROV_OCHOA, 1914.51, {
@@ -2692,6 +2713,7 @@
     sku: '01-08-0115',
     marca: 'SIKA',
     url: 'https://ochoa.com.do/producto/cemento-p-ceramica-vinalit-01080115',
+    gama: 'estandar',
     nota: 'CEMENTO P / CERAMICA / VINALIT · artículo 01-08-0115 · ref. SIKACERAM310-VINALIT · marca SIKA. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-026', PROV_IBERICA, 2120, {
@@ -3285,6 +3307,7 @@
     sku: '058461',
     marca: 'LANCO',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-5-ceramic-tile-bla-058461',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA LANCO SM-502-5 CERAMIC TILE BLANCO 1/4 GL · artículo 058461 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-061', PROV_INNOVA, 1845, {
@@ -3293,6 +3316,7 @@
     sku: '058460',
     marca: 'LANCO',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-lanco-sm-502-4-ceramic-tile-bla-058460',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA LANCO SM-502-4 CERAMIC TILE BLANCO 1 GL · artículo 058460 · ref. Pegamento · marca LANCO. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-062', PROV_INNOVA, 610.3, {
@@ -3301,6 +3325,7 @@
     sku: '062077',
     marca: 'WEC',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-weco-w-2000-we0810602-polimero-062077',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA WECO W-2000 WE0810602 POLIMERO GRIS 10 LB · artículo 062077 · ref. Pegamento · marca WEC. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-062', PROV_INNOVA, 437.75, {
@@ -3309,6 +3334,7 @@
     sku: '069945',
     marca: 'WEC',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-weco-w-761-blanco-10-lb-069945',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA WECO W-761 BLANCO 10 LB · artículo 069945 · marca WEC. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-062', PROV_INNOVA, 569.5, {
@@ -3317,6 +3343,7 @@
     sku: '058653',
     marca: 'WEC',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-weco-w-900-we0810454-blanco-10-058653',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA WECO W-900 WE0810454 BLANCO 10 LB · artículo 058653 · marca WEC. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-063', PROV_INNOVA, 336, {
@@ -3325,6 +3352,7 @@
     sku: '065071',
     marca: 'PEGA FORTE',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-pega-forte-gris-50-lb-065071',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA PEGA FORTE GRIS 50 LB · artículo 065071 · marca PEGA FORTE. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-063', PROV_INNOVA, 325, {
@@ -3333,6 +3361,7 @@
     sku: '024743',
     marca: 'PEGATOD',
     url: 'https://www.innovacentro.com.do/pegamento-ceramica-pegatod-gris-50-lb-024743',
+    gama: 'estandar',
     nota: 'PEGAMENTO CERAMICA PEGATOD GRIS 50 LB · artículo 024743 · marca PEGATOD. ' + SUPUESTO_ITBIS
   });
   c('MAT-02-064', PROV_INNOVA, 167, {
