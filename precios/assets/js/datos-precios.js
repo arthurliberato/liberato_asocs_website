@@ -17683,6 +17683,199 @@
     url: 'https://ochoa.com.do/producto/ducha-redonda-5-funciones-01232600',
     nota: 'DUCHA REDONDA 5 FUNCIONES · artículo 01-23-2600 · ref. P01704 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-009', PROV_OCHOA, 18557.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-cuadr-cromo-01021699',
+    art: 'DUCHA DE EMPOTRAR CUADR CROMO',
+    sku: '01-02-1699',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-cuadr-cromo-01021699',
+    nota: 'DUCHA DE EMPOTRAR CUADR CROMO · artículo 01-02-1699 · ref. EDSS44144CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 16791.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-cuadra-gld-01021701',
+    art: 'DUCHA DE EMPOTRAR CUADRA GLD',
+    sku: '01-02-1701',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-cuadra-gld-01021701',
+    nota: 'DUCHA DE EMPOTRAR CUADRA GLD · artículo 01-02-1701 · ref. EDSS44544GOLD · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 12458.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-redondo-cromo-01021696',
+    art: 'DUCHA DE EMPOTRAR REDONDO CROMO',
+    sku: '01-02-1696',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-redondo-cromo-01021696',
+    nota: 'DUCHA DE EMPOTRAR REDONDO CROMO · artículo 01-02-1696 · ref. EDSS77477CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 16598.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-redondo-gold-01021698',
+    art: 'DUCHA DE EMPOTRAR REDONDO GOLD',
+    sku: '01-02-1698',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-redondo-gold-01021698',
+    nota: 'DUCHA DE EMPOTRAR REDONDO GOLD · artículo 01-02-1698 · ref. EDSS77677GLD · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 15829.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-redondo-gry-01021697',
+    art: 'DUCHA DE EMPOTRAR REDONDO GRY',
+    sku: '01-02-1697',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-redondo-gry-01021697',
+    nota: 'DUCHA DE EMPOTRAR REDONDO GRY · artículo 01-02-1697 · ref. EDSS77577GRY · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 16947.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-6-kubica-rose-gold-01021726',
+    art: 'REGADERA 6\'\' KUBICA ROSE GOLD',
+    sku: '01-02-1726',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-6-kubica-rose-gold-01021726',
+    nota: 'REGADERA 6\'\' KUBICA ROSE GOLD · artículo 01-02-1726 · ref. H3006AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 19116.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-c-cha-premier-rose-gold-01021725',
+    art: 'REGADERA C / CHA PREMIER ROSE GOLD',
+    sku: '01-02-1725',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-c-cha-premier-rose-gold-01021725',
+    nota: 'REGADERA C / CHA PREMIER ROSE GOLD · artículo 01-02-1725 · ref. H3005TR035AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 4891.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-chap-ebano-01021730',
+    art: 'REGADERA CHAP EBANO',
+    sku: '01-02-1730',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-chap-ebano-01021730',
+    nota: 'REGADERA CHAP EBANO · artículo 01-02-1730 · ref. REC-03-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 2133.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-de-ducha-01230515',
+    art: 'REGADERA DE DUCHA',
+    sku: '01-23-0515',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-de-ducha-01230515',
+    nota: 'REGADERA DE DUCHA · artículo 01-23-0515 · ref. REC-SP-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 4444.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-redonda-01021731',
+    art: 'REGADERA REDONDA',
+    sku: '01-02-1731',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-redonda-01021731',
+    nota: 'REGADERA REDONDA · artículo 01-02-1731 · ref. REC-03-B · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 1238.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-300-x-300-mm-01021565',
+    art: 'CABEZA DE DUCHA 300 X 300 MM',
+    sku: '01-02-1565',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/cabeza-de-ducha-300-x-300-mm-01021565',
+    nota: 'CABEZA DE DUCHA 300 X 300 MM · artículo 01-02-1565 · ref. SHD1-3030 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 2908.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cabeza-de-ducha-400-x-400-mm-01021566',
+    art: 'CABEZA DE DUCHA 400 X 400 MM',
+    sku: '01-02-1566',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/cabeza-de-ducha-400-x-400-mm-01021566',
+    nota: 'CABEZA DE DUCHA 400 X 400 MM · artículo 01-02-1566 · ref. SHD1-4040 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 15819.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-man-csoporte-mov-antica-2ch-eb-01232593',
+    art: 'DUCHA MAN. CSOPORTE MOV. ANTICA 2CH EB',
+    sku: '01-23-2593',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/ducha-man-csoporte-mov-antica-2ch-eb-01232593',
+    nota: 'DUCHA MAN. CSOPORTE MOV. ANTICA 2CH EB · artículo 01-23-2593 · ref. RM-30-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 30310.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-10-chorro-fijo-rose-gold-01232636',
+    art: 'REGADERA 10´´ CHORRO FIJO ROSE GOLD',
+    sku: '01-23-2636',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-10-chorro-fijo-rose-gold-01232636',
+    nota: 'REGADERA 10´´ CHORRO FIJO ROSE GOLD · artículo 01-23-2636 · ref. H3007-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 7054.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-7-chorro-fijo-antical-cr-01232634',
+    peso: 2,
+    art: 'REGADERA 7´´ CHORRO FIJO ANTICAL CR',
+    sku: '01-23-2634',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-7-chorro-fijo-antical-cr-01232634',
+    nota: 'REGADERA 7´´ CHORRO FIJO ANTICAL CR · artículo 01-23-2634 · ref. H-3003 · marca HELVEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 11924.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-altura-desl-5-chorros-01230485',
+    art: 'REGADERA ALTURA DESL. 5 CHORROS',
+    sku: '01-23-0485',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-altura-desl-5-chorros-01230485',
+    nota: 'REGADERA ALTURA DESL. 5 CHORROS · artículo 01-23-0485 · ref. RM-29 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 4095.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-br-chap-chf-cr-01232616',
+    art: 'REGADERA BR CHAP CHF CR',
+    sku: '01-23-2616',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-br-chap-chf-cr-01232616',
+    nota: 'REGADERA BR CHAP CHF CR · artículo 01-23-2616 · ref. REC-03 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 4866.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-br-y-chap-chf-iguazu-cr-01232635',
+    art: 'REGADERA BR Y CHAP CHF IGUAZU CR',
+    sku: '01-23-2635',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-br-y-chap-chf-iguazu-cr-01232635',
+    nota: 'REGADERA BR Y CHAP CHF IGUAZU CR · artículo 01-23-2635 · ref. H-202 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 3946.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-de-chorro-iguazu-eb-01232574',
+    art: 'REGADERA DE CHORRO IGUAZÚ ÉB',
+    sku: '01-23-2574',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-de-chorro-iguazu-eb-01232574',
+    nota: 'REGADERA DE CHORRO IGUAZÚ ÉB · artículo 01-23-2574 · ref. H-202-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 5817.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-de-limpieza-automatica-c-base-01230489',
+    art: 'REGADERA DE LIMPIEZA AUTOMATICA C / BASE',
+    sku: '01-23-0489',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-de-limpieza-automatica-c-base-01230489',
+    nota: 'REGADERA DE LIMPIEZA AUTOMATICA C / BASE · artículo 01-23-0489 · ref. AC-110-C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 7040.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-manual-c-soporte-fijo-01232465',
+    art: 'REGADERA MANUAL C / SOPORTE FIJO',
+    sku: '01-23-2465',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-manual-c-soporte-fijo-01232465',
+    nota: 'REGADERA MANUAL C / SOPORTE FIJO · artículo 01-23-2465 · ref. MBE-1131 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 191.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-manual-para-ducha-01021688',
+    art: 'REGADERA MANUAL PARA DUCHA',
+    sku: '01-02-1688',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/regadera-manual-para-ducha-01021688',
+    nota: 'REGADERA MANUAL PARA DUCHA · artículo 01-02-1688 · ref. BN/CRSPRAY · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 26356.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-plato-ancho-de-10-ch-fijo-cr-01232633',
+    art: 'REGADERA PLATO ANCHO DE 10´´ CH FIJO CR',
+    sku: '01-23-2633',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-plato-ancho-de-10-ch-fijo-cr-01232633',
+    nota: 'REGADERA PLATO ANCHO DE 10´´ CH FIJO CR · artículo 01-23-2633 · ref. H-3007 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-009', PROV_OCHOA, 15695.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-redonda-12-chf-antical-cr-01021577',
+    art: 'REGADERA REDONDA 12\'\' CHF ANTICAL CR',
+    sku: '01-02-1577',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-redonda-12-chf-antical-cr-01021577',
+    nota: 'REGADERA REDONDA 12\'\' CHF ANTICAL CR · artículo 01-02-1577 · ref. H-3010 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-009', PROV_CIMA, 1597, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/ducha-p-bidet-c-llave-jf031101',
     peso: 2,
@@ -19071,6 +19264,62 @@
     url: 'https://ochoa.com.do/producto/columna-ducha-expuesta-c-regadera-01101110',
     nota: 'COLUMNA DUCHA EXPUESTA C / REGADERA · artículo 01-10-1110 · ref. ALS9409002-C · marca HELVEX. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-011', PROV_OCHOA, 6963.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-de-columna-ducha-cuadrada-01021563',
+    art: 'SET DE COLUMNA DUCHA CUADRADA',
+    sku: '01-02-1563',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/set-de-columna-ducha-cuadrada-01021563',
+    nota: 'SET DE COLUMNA DUCHA CUADRADA · artículo 01-02-1563 · ref. 991199C · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 7578.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-de-columna-ducha-red-01021562',
+    art: 'SET DE COLUMNA DUCHA RED',
+    sku: '01-02-1562',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/set-de-columna-ducha-red-01021562',
+    nota: 'SET DE COLUMNA DUCHA RED · artículo 01-02-1562 · ref. 991199R · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 17948.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-expuesta-01232643',
+    art: 'COLUMNA DE DUCHA EXPUESTA',
+    sku: '01-23-2643',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/columna-de-ducha-expuesta-01232643',
+    nota: 'COLUMNA DE DUCHA EXPUESTA · artículo 01-23-2643 · ref. MB-2509CROMO · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 36911.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-manual-01232644',
+    art: 'COLUMNA DE DUCHA MANUAL',
+    sku: '01-23-2644',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/columna-de-ducha-manual-01232644',
+    nota: 'COLUMNA DE DUCHA MANUAL · artículo 01-23-2644 · ref. MB-2524CROMO · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 34707.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-de-ducha-reg-manual-exp-01232461',
+    art: 'COLUMNA DE DUCHA REG. MANUAL EXP',
+    sku: '01-23-2461',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/columna-de-ducha-reg-manual-exp-01232461',
+    nota: 'COLUMNA DE DUCHA REG. MANUAL EXP · artículo 01-23-2461 · ref. MB-1480 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 15632.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/columna-expuesta-de-ducha-01232642',
+    art: 'COLUMNA EXPUESTA DE DUCHA',
+    sku: '01-23-2642',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/columna-expuesta-de-ducha-01232642',
+    nota: 'COLUMNA EXPUESTA DE DUCHA · artículo 01-23-2642 · ref. MB-2508CROMO · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-011', PROV_OCHOA, 307.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/desviador-para-set-de-columna-01021690',
+    art: 'DESVIADOR PARA SET DE COLUMNA',
+    sku: '01-02-1690',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/desviador-para-set-de-columna-01021690',
+    nota: 'DESVIADOR PARA SET DE COLUMNA · artículo 01-02-1690 · ref. 991199 · marca INEX. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-011', PROV_CIMA, 6343, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/sistema-ducha-universal-cuadra',
     art: 'SISTEMA DUCHA UNIVERSAL CUADRA',
@@ -19668,6 +19917,110 @@
     url: 'https://ochoa.com.do/producto/ducha-de-barra-exterior-paris-01021642',
     nota: 'DUCHA DE BARRA EXTERIOR PARIS · artículo 01-02-1642 · ref. TB2151BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-012', PROV_OCHOA, 13702.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-cuad-brush-golden-01021739',
+    art: 'DUCHA BARRA CUAD. BRUSH GOLDEN',
+    sku: '01-02-1739',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/ducha-barra-cuad-brush-golden-01021739',
+    nota: 'DUCHA BARRA CUAD. BRUSH GOLDEN · artículo 01-02-1739 · ref. 1217-A-BG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 12087.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-cuad-cromo-01021737',
+    art: 'DUCHA BARRA CUAD. CROMO',
+    sku: '01-02-1737',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/ducha-barra-cuad-cromo-01021737',
+    nota: 'DUCHA BARRA CUAD. CROMO · artículo 01-02-1737 · ref. 1217-A-CR · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 12779.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-cuad-matte-black-01021738',
+    art: 'DUCHA BARRA CUAD. MATTE BLACK',
+    sku: '01-02-1738',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/ducha-barra-cuad-matte-black-01021738',
+    nota: 'DUCHA BARRA CUAD. MATTE BLACK · artículo 01-02-1738 · ref. 1217-A-BM · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 11150.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-ext-cab-red-cromo-01021733',
+    art: 'DUCHA BARRA EXT. CAB. RED. CROMO',
+    sku: '01-02-1733',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/ducha-barra-ext-cab-red-cromo-01021733',
+    nota: 'DUCHA BARRA EXT. CAB. RED. CROMO · artículo 01-02-1733 · ref. TB23SW65 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 9276.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cab-red-black-01021708',
+    art: 'DUCHA BARRA EXTER. CAB. RED. BLACK',
+    sku: '01-02-1708',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/ducha-barra-exter-cab-red-black-01021708',
+    nota: 'DUCHA BARRA EXTER. CAB. RED. BLACK · artículo 01-02-1708 · ref. TB21L13-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 8241.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exter-cabeza-red-01021706',
+    art: 'DUCHA BARRA EXTER. CABEZA RED.',
+    sku: '01-02-1706',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/ducha-barra-exter-cabeza-red-01021706',
+    nota: 'DUCHA BARRA EXTER. CABEZA RED. · artículo 01-02-1706 · ref. TB21L13 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 21787.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-c-soporte-barra-cromo-01021695',
+    art: 'DUCHA DE EMPOTRAR C / SOPORTE BARRA CROMO',
+    sku: '01-02-1695',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-c-soporte-barra-cromo-01021695',
+    nota: 'DUCHA DE EMPOTRAR C / SOPORTE BARRA CROMO · artículo 01-02-1695 · ref. EDD22122BCR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 31329.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-de-empotrar-c-soporte-barra-virgen-01021694',
+    art: 'DUCHA DE EMPOTRAR C / SOPORTE BARRA VIRGEN',
+    sku: '01-02-1694',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-de-empotrar-c-soporte-barra-virgen-01021694',
+    nota: 'DUCHA DE EMPOTRAR C / SOPORTE BARRA VIRGEN · artículo 01-02-1694 · ref. EDD44144BLK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 19006.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monom-exp-c-barra-ducha-man-01021585',
+    art: 'MONOM. EXP. C / BARRA DUCHA MAN',
+    sku: '01-02-1585',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monom-exp-c-barra-ducha-man-01021585',
+    nota: 'MONOM. EXP. C / BARRA DUCHA MAN · artículo 01-02-1585 · ref. MERB-01-EXP · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 18148.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monom-exp-p-tina-c-barra-d-man-01021590',
+    art: 'MONOM. EXP. P / TINA C / BARRA D. MAN',
+    sku: '01-02-1590',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monom-exp-p-tina-c-barra-d-man-01021590',
+    nota: 'MONOM. EXP. P / TINA C / BARRA D. MAN · artículo 01-02-1590 · ref. METB-02-SCU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 20864.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monom-exp-p-tina-c-barra-d-man-01021591',
+    art: 'MONOM. EXP. P / TINA C / BARRA D. MAN',
+    sku: '01-02-1591',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monom-exp-p-tina-c-barra-d-man-01021591',
+    nota: 'MONOM. EXP. P / TINA C / BARRA D. MAN · artículo 01-02-1591 · ref. METB-02-CEN · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 19340.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-barra-exterior-negro-mate-01021702',
+    art: 'DUCHA BARRA EXTERIOR NEGRO MATE',
+    sku: '01-02-1702',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/ducha-barra-exterior-negro-mate-01021702',
+    nota: 'DUCHA BARRA EXTERIOR NEGRO MATE · artículo 01-02-1702 · ref. EDMD778D · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-012', PROV_OCHOA, 11514.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-de-altura-deslizable-01232395',
+    art: 'REGADERA DE ALTURA DESLIZABLE',
+    sku: '01-23-2395',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-de-altura-deslizable-01232395',
+    nota: 'REGADERA DE ALTURA DESLIZABLE · artículo 01-23-2395 · ref. RM23 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-012', PROV_CERARTE, 2847.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ducha-dmano-criel-acero-inox-viseu?variant=007460%20%3A%20%20%3A%20%20%3A%20ACERO%20INOXIDABL%20%3A%20AQUALIA',
     itbis: false,
@@ -19749,6 +20102,118 @@
     marca: 'SPC',
     url: 'https://ochoa.com.do/producto/ducha-giratoria-brazo-cubrefalta-01230013',
     nota: 'DUCHA GIRATORIA BRAZO / CUBREFALTA · artículo 01-23-0013 · ref. SPC-4571/2 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 5944.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/reg-cuad-10-con-brazo-y-chapeton-cr-01021575',
+    art: 'REG. CUAD 10\'\' CON BRAZO Y CHAPETON CR',
+    sku: '01-02-1575',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/reg-cuad-10-con-brazo-y-chapeton-cr-01021575',
+    nota: 'REG. CUAD 10\'\' CON BRAZO Y CHAPETON CR · artículo 01-02-1575 · ref. H-3303 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 5919.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/reg-cuad-10-con-brazo-y-chapeton-crb-01021576',
+    art: 'REG. CUAD 10\'\' CON BRAZO Y CHAPETON CRB',
+    sku: '01-02-1576',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/reg-cuad-10-con-brazo-y-chapeton-crb-01021576',
+    nota: 'REG. CUAD 10\'\' CON BRAZO Y CHAPETON CRB · artículo 01-02-1576 · ref. H-3303-C/B · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 6250.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/reg-red-10-con-brazo-y-chapeton-cr-01021574',
+    art: 'REG. RED 10\'\' CON BRAZO Y CHAPETON CR',
+    sku: '01-02-1574',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/reg-red-10-con-brazo-y-chapeton-cr-01021574',
+    nota: 'REG. RED 10\'\' CON BRAZO Y CHAPETON CR · artículo 01-02-1574 · ref. H-3302 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 3466.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-red-5-con-brazo-y-chap-cr-01021573',
+    art: 'REGADERA RED 5\'\' CON BRAZO Y CHAP CR',
+    sku: '01-02-1573',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-red-5-con-brazo-y-chap-cr-01021573',
+    nota: 'REGADERA RED 5\'\' CON BRAZO Y CHAP CR · artículo 01-02-1573 · ref. H-3300 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 3940.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-chapeton-angular-cr-01230373',
+    art: 'BRAZO & CHAPETON ANGULAR CR',
+    sku: '01-23-0373',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-chapeton-angular-cr-01230373',
+    nota: 'BRAZO & CHAPETON ANGULAR CR · artículo 01-23-0373 · ref. TR-035 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 5414.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-y-chapeton-angular-01230428',
+    art: 'BRAZO Y CHAPETON ANGULAR',
+    sku: '01-23-0428',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-y-chapeton-angular-01230428',
+    nota: 'BRAZO Y CHAPETON ANGULAR · artículo 01-23-0428 · ref. TR039C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 2953.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-y-brazo-optima-01230211',
+    art: 'REGADERA Y BRAZO OPTIMA',
+    sku: '01-23-0211',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-y-brazo-optima-01230211',
+    nota: 'REGADERA Y BRAZO OPTIMA · artículo 01-23-0211 · ref. H-200C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 4279.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-cuadrado-de-muro-con-chapeton-01230477',
+    art: 'BRAZO CUADRADO DE MURO CON CHAPETÓN',
+    sku: '01-23-0477',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-cuadrado-de-muro-con-chapeton-01230477',
+    nota: 'BRAZO CUADRADO DE MURO CON CHAPETÓN · artículo 01-23-0477 · ref. TR036C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 4507.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-y-chap-reg-techo-kubica-rose-gold-01232617',
+    art: 'BRAZO Y CHAP REG. TECHO KUBICA ROSE GOLD',
+    sku: '01-23-2617',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-y-chap-reg-techo-kubica-rose-gold-01232617',
+    nota: 'BRAZO Y CHAP REG. TECHO KUBICA ROSE GOLD · artículo 01-23-2617 · ref. TR038-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 1394.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-y-chapeton-para-regadera-01230483',
+    art: 'BRAZO Y CHAPETÓN PARA REGADERA',
+    sku: '01-23-0483',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-y-chapeton-para-regadera-01230483',
+    nota: 'BRAZO Y CHAPETÓN PARA REGADERA · artículo 01-23-0483 · ref. TR-011-C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 7900.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brazo-y-regadera-vertika-c-01230506',
+    art: 'BRAZO Y REGADERA VERTIKA C',
+    sku: '01-23-0506',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/brazo-y-regadera-vertika-c-01230506',
+    nota: 'BRAZO Y REGADERA VERTIKA C · artículo 01-23-0506 · ref. H-904 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 2466.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-con-brazo-y-chapeton-01232471',
+    art: 'REGADERA CON BRAZO Y CHAPETÓN',
+    sku: '01-23-2471',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-con-brazo-y-chapeton-01232471',
+    nota: 'REGADERA CON BRAZO Y CHAPETÓN · artículo 01-23-2471 · ref. REC-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 5776.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-cuad-c-brazo-y-chapeton-01232467',
+    art: 'REGADERA CUAD C / BRAZO Y CHAPETON',
+    sku: '01-23-2467',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-cuad-c-brazo-y-chapeton-01232467',
+    nota: 'REGADERA CUAD C / BRAZO Y CHAPETON · artículo 01-23-2467 · ref. REC-02 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-013', PROV_OCHOA, 5567.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/regadera-de-plastico-red-c-brazo-01232476',
+    art: 'REGADERA DE PLASTICO RED. C / BRAZO',
+    sku: '01-23-2476',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/regadera-de-plastico-red-c-brazo-01232476',
+    nota: 'REGADERA DE PLASTICO RED. C / BRAZO · artículo 01-23-2476 · ref. MB-2064 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-013', PROV_CIMA, 247, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/soporte-ducha-plas-cromada-715',
@@ -19916,6 +20381,1378 @@
     marca: 'IB RUBINETTERIE',
     url: 'https://carabela.do/products/brazo-de-ducha-de-techo-redondo-colore-1',
     nota: 'Brazo de ducha de techo Colore · artículo 29427 · marca IB RUBINETTERIE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 576.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-p-lavamano-sencilla-01071530',
+    art: 'LLAVE P / LAVAMANO SENCILLA',
+    sku: '01-07-1530',
+    url: 'https://ochoa.com.do/producto/llave-p-lavamano-sencilla-01071530',
+    nota: 'LLAVE P / LAVAMANO SENCILLA · artículo 01-07-1530 · ref. 807-22101. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 779.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-p-lavamano-sencilla-t-sayco-01071526',
+    art: 'LLAVE P / LAVAMANO SENCILLA T / SAYCO',
+    sku: '01-07-1526',
+    url: 'https://ochoa.com.do/producto/llave-p-lavamano-sencilla-t-sayco-01071526',
+    nota: 'LLAVE P / LAVAMANO SENCILLA T / SAYCO · artículo 01-07-1526 · ref. 807-22049. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1118.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamano-01071529',
+    art: 'MEZCLADORA P / LAVAMANO',
+    sku: '01-07-1529',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamano-01071529',
+    nota: 'MEZCLADORA P / LAVAMANO · artículo 01-07-1529 · ref. 807-W6001. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3058.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071626',
+    art: 'MEZCLADORA P / LAVAMANO NEGRA',
+    sku: '01-07-1626',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071626',
+    nota: 'MEZCLADORA P / LAVAMANO NEGRA · artículo 01-07-1626 · ref. 807-22222. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2403.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071624',
+    art: 'MEZCLADORA P / LAVAMANO NEGRA',
+    sku: '01-07-1624',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071624',
+    nota: 'MEZCLADORA P / LAVAMANO NEGRA · artículo 01-07-1624 · ref. 807-22227. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1694.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071629',
+    art: 'MEZCLADORA P / LAVAMANO NEGRA',
+    sku: '01-07-1629',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamano-negra-01071629',
+    nota: 'MEZCLADORA P / LAVAMANO NEGRA · artículo 01-07-1629 · ref. 807-22132. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2134.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071543',
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-07-1543',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071543',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-07-1543 · ref. 807-24014. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1506.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-para-salon-01071460',
+    art: 'GRIFERIA PARA SALÓN.',
+    sku: '01-07-1460',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/griferia-para-salon-01071460',
+    nota: 'GRIFERIA PARA SALÓN. · artículo 01-07-1460 · ref. BPARLSET1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 761.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-tipo-tap-01071717',
+    art: 'GRIFERÍA TIPO TAP',
+    sku: '01-07-1717',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/griferia-tipo-tap-01071717',
+    nota: 'GRIFERÍA TIPO TAP · artículo 01-07-1717 · ref. TBXC29CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1576.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-alto-para-lavamanos-01071708',
+    art: 'GRIFO ALTO PARA LAVAMANOS',
+    sku: '01-07-1708',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-alto-para-lavamanos-01071708',
+    nota: 'GRIFO ALTO PARA LAVAMANOS · artículo 01-07-1708 · ref. TBC0003CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 979, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-monocomando-01071705',
+    peso: 2,
+    art: 'GRIFO MONOCOMANDO',
+    sku: '01-07-1705',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-monocomando-01071705',
+    nota: 'GRIFO MONOCOMANDO · artículo 01-07-1705 · ref. TBXC27BL · marca TILBY-GR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 825.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-para-lavamanos-01071716',
+    art: 'GRIFO PARA LAVAMANOS',
+    sku: '01-07-1716',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-para-lavamanos-01071716',
+    nota: 'GRIFO PARA LAVAMANOS · artículo 01-07-1716 · ref. TBXC28CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1587.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-tap-alto-black-01071706',
+    peso: 3,
+    art: 'GRIFO TAP ALTO BLACK',
+    sku: '01-07-1706',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-tap-alto-black-01071706',
+    nota: 'GRIFO TAP ALTO BLACK · artículo 01-07-1706 · ref. TBXC21BL · marca TILBY-GR. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1630.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-tap-alto-black-01071710',
+    art: 'GRIFO TAP ALTO BLACK',
+    sku: '01-07-1710',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-tap-alto-black-01071710',
+    nota: 'GRIFO TAP ALTO BLACK · artículo 01-07-1710 · ref. TBC0003BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 935.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-tap-black-01071709',
+    art: 'GRIFO TAP BLACK',
+    sku: '01-07-1709',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-tap-black-01071709',
+    nota: 'GRIFO TAP BLACK · artículo 01-07-1709 · ref. TBXC24BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 711.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-tap-brush-nickel-01071715',
+    art: 'GRIFO TAP BRUSH NICKEL',
+    sku: '01-07-1715',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-tap-brush-nickel-01071715',
+    nota: 'GRIFO TAP BRUSH NICKEL · artículo 01-07-1715 · ref. TBCS0002BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1215.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-tap-cromo-01071691',
+    art: 'GRIFO TAP CROMO',
+    sku: '01-07-1691',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/grifo-tap-cromo-01071691',
+    nota: 'GRIFO TAP CROMO · artículo 01-07-1691 · ref. TBPT033CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1678.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-doble-p-lavamano-01071623',
+    art: 'LLAVE DOBLE P / LAVAMANO',
+    sku: '01-07-1623',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-doble-p-lavamano-01071623',
+    nota: 'LLAVE DOBLE P / LAVAMANO · artículo 01-07-1623 · ref. P03120 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4707.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-economizadora-anti-robo-01070471',
+    art: 'LLAVE ECONOMIZADORA ANTI-ROBO',
+    sku: '01-07-0471',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-economizadora-anti-robo-01070471',
+    nota: 'LLAVE ECONOMIZADORA ANTI-ROBO · artículo 01-07-0471 · ref. TV-105 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6057.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-economizadora-pared-cr-01071247',
+    art: 'LLAVE ECONOMIZADORA PARED CR',
+    sku: '01-07-1247',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-economizadora-pared-cr-01071247',
+    nota: 'LLAVE ECONOMIZADORA PARED CR · artículo 01-07-1247 · ref. TV-121 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 28291.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-elect-lva-bat-liquida-cr-1-5l-01232484',
+    art: 'LLAVE ELECT LVA. BAT LIQUIDA CR 1.5L',
+    sku: '01-23-2484',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-elect-lva-bat-liquida-cr-1-5l-01232484',
+    nota: 'LLAVE ELECT LVA. BAT LIQUIDA CR 1.5L · artículo 01-23-2484 · ref. TV302-1.5 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 9691.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-hosp-cuello-ganso-man-cr-01071639',
+    art: 'LLAVE HOSP. CUELLO GANSO MAN CR',
+    sku: '01-07-1639',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-hosp-cuello-ganso-man-cr-01071639',
+    nota: 'LLAVE HOSP. CUELLO GANSO MAN CR · artículo 01-07-1639 · ref. VCG-2 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3762.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-monomando-para-lavamanos-01071621',
+    art: 'LLAVE MONOMANDO PARA LAVAMANOS',
+    sku: '01-07-1621',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-monomando-para-lavamanos-01071621',
+    nota: 'LLAVE MONOMANDO PARA LAVAMANOS · artículo 01-07-1621 · ref. P03102 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 218.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-niquelada-lisa-01260014',
+    art: 'LLAVE NIQUELADA LISA',
+    sku: '01-26-0014',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-niquelada-lisa-01260014',
+    nota: 'LLAVE NIQUELADA LISA · artículo 01-26-0014 · ref. SPC-454-0061/2" · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 290.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-senc-p-lav-t-cruceta-01070074',
+    art: 'LLAVE SENC. P / LAV. T / CRUCETA',
+    sku: '01-07-0074',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-senc-p-lav-t-cruceta-01070074',
+    nota: 'LLAVE SENC. P / LAV. T / CRUCETA · artículo 01-07-0074 · ref. SPC-357-S1/2" · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1301.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-senc-p-lav-individual-01070845',
+    art: 'LLAVE SENC. P / LAV. INDIVIDUAL',
+    sku: '01-07-0845',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/llave-senc-p-lav-individual-01070845',
+    nota: 'LLAVE SENC. P / LAV. INDIVIDUAL · artículo 01-07-0845 · ref. 94-489 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1354.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-cuello-ganzo-01071550',
+    art: 'LLAVE SENCILLA CUELLO GANZO.',
+    sku: '01-07-1550',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-cuello-ganzo-01071550',
+    nota: 'LLAVE SENCILLA CUELLO GANZO. · artículo 01-07-1550 · ref. P01459 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 313.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-lavamanos-01070245',
+    art: 'LLAVE SENCILLA LAVAMANOS',
+    sku: '01-07-0245',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-lavamanos-01070245',
+    nota: 'LLAVE SENCILLA LAVAMANOS · artículo 01-07-0245 · ref. SPC-980 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1881.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-p-lav-t-push-01071545',
+    art: 'LLAVE SENCILLA P / LAV. T / PUSH.',
+    sku: '01-07-1545',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-p-lav-t-push-01071545',
+    nota: 'LLAVE SENCILLA P / LAV. T / PUSH. · artículo 01-07-1545 · ref. P03111 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 764.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-p-lavamano-01071544',
+    art: 'LLAVE SENCILLA P / LAVAMANO',
+    sku: '01-07-1544',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-p-lavamano-01071544',
+    nota: 'LLAVE SENCILLA P / LAVAMANO · artículo 01-07-1544 · ref. P01154 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 870.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-p-lavamano-01071622',
+    art: 'LLAVE SENCILLA P / LAVAMANO',
+    sku: '01-07-1622',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-p-lavamano-01071622',
+    nota: 'LLAVE SENCILLA P / LAVAMANO · artículo 01-07-1622 · ref. P03108 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 80380.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-para-lavamanos-01071510',
+    art: 'LLAVE SENCILLA PARA LAVAMANOS',
+    sku: '01-07-1510',
+    marca: 'URREA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-para-lavamanos-01071510',
+    nota: 'LLAVE SENCILLA PARA LAVAMANOS · artículo 01-07-1510 · ref. 242Q · marca URREA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 277.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-para-lavamanos-01070243',
+    art: 'LLAVE SENCILLA PARA LAVAMANOS',
+    sku: '01-07-0243',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-para-lavamanos-01070243',
+    nota: 'LLAVE SENCILLA PARA LAVAMANOS · artículo 01-07-0243 · ref. 422CRISTALCROMADO · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7809.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-4-albatros-rejilla-c-01020472',
+    art: 'MEZC. 4\'\' ALBATROS REJILLA C',
+    sku: '01-02-0472',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezc-4-albatros-rejilla-c-01020472',
+    nota: 'MEZC. 4\'\' ALBATROS REJILLA C · artículo 01-02-0472 · ref. HM17C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8691.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lavamanos-paris-negro-m-01071573',
+    art: 'MEZCL LAVAMANOS PARIS NEGRO M.',
+    sku: '01-07-1573',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lavamanos-paris-negro-m-01071573',
+    nota: 'MEZCL LAVAMANOS PARIS NEGRO M. · artículo 01-07-1573 · ref. EDM8871 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3023.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-1h-mallorca-01071386',
+    art: 'MEZCL P / LAVAMANOS 1H MALLORCA',
+    sku: '01-07-1386',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-1h-mallorca-01071386',
+    nota: 'MEZCL P / LAVAMANOS 1H MALLORCA · artículo 01-07-1386 · ref. 99005I · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2177.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-barcelona-01071383',
+    art: 'MEZCL P / LAVAMANOS BARCELONA',
+    sku: '01-07-1383',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-barcelona-01071383',
+    nota: 'MEZCL P / LAVAMANOS BARCELONA · artículo 01-07-1383 · ref. 99002I · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2233.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavam-4-ankara-40-01071351',
+    art: 'MEZCL. P / LAVAM.4\'\' ANKARA 40',
+    sku: '01-07-1351',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavam-4-ankara-40-01071351',
+    nota: 'MEZCL. P / LAVAM.4\'\' ANKARA 40 · artículo 01-07-1351 · ref. 2241AOR41 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 12009.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-deco-p-lavabo-8-sin-contr-01071319',
+    art: 'MEZCL. DECO P / LAVABO 8” SIN CONTR',
+    sku: '01-07-1319',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcl-deco-p-lavabo-8-sin-contr-01071319',
+    nota: 'MEZCL. DECO P / LAVABO 8” SIN CONTR · artículo 01-07-1319 · ref. ME8-DC-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8996.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lav-minimalista-virgen-black-01071547',
+    art: 'MEZCL. LAV. MINIMALISTA VIRGEN BLACK',
+    sku: '01-07-1547',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lav-minimalista-virgen-black-01071547',
+    nota: 'MEZCL. LAV. MINIMALISTA VIRGEN BLACK · artículo 01-07-1547 · ref. EDL55155BLK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7687.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lav-minimalista-virgen-cromo-01071546',
+    art: 'MEZCL. LAV. MINIMALISTA VIRGEN CROMO',
+    sku: '01-07-1546',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lav-minimalista-virgen-cromo-01071546',
+    nota: 'MEZCL. LAV. MINIMALISTA VIRGEN CROMO · artículo 01-07-1546 · ref. EDL55155CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8347.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lav-xl-minimalista-virgen-black-01071549',
+    art: 'MEZCL. LAV. XL MINIMALISTA VIRGEN BLACK',
+    sku: '01-07-1549',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lav-xl-minimalista-virgen-black-01071549',
+    nota: 'MEZCL. LAV. XL MINIMALISTA VIRGEN BLACK · artículo 01-07-1549 · ref. EDL55155XLBLK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7995.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lav-xl-minimalista-virgen-cromo-01071548',
+    art: 'MEZCL. LAV. XL MINIMALISTA VIRGEN CROMO',
+    sku: '01-07-1548',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lav-xl-minimalista-virgen-cromo-01071548',
+    nota: 'MEZCL. LAV. XL MINIMALISTA VIRGEN CROMO · artículo 01-07-1548 · ref. EDL55155XLCR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2762.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lavamano-1h-cibeles-plus-01071337',
+    art: 'MEZCL. LAVAMANO 1H CIBELES PLUS',
+    sku: '01-07-1337',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lavamano-1h-cibeles-plus-01071337',
+    nota: 'MEZCL. LAVAMANO 1H CIBELES PLUS · artículo 01-07-1337 · ref. 44014H · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2909.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lavamano-orleans-plus-01071336',
+    art: 'MEZCL. LAVAMANO ORLEANS PLUS',
+    sku: '01-07-1336',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lavamano-orleans-plus-01071336',
+    nota: 'MEZCL. LAVAMANO ORLEANS PLUS · artículo 01-07-1336 · ref. 44012H · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6700.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lavamanos-1h-electro-01071375',
+    art: 'MEZCL. LAVAMANOS 1H ELECTRO',
+    sku: '01-07-1375',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lavamanos-1h-electro-01071375',
+    nota: 'MEZCL. LAVAMANOS 1H ELECTRO · artículo 01-07-1375 · ref. E0110CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3182.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-lavamanos-1h-quartz-plus-h-01071338',
+    art: 'MEZCL. LAVAMANOS 1H QUARTZ PLUS H',
+    sku: '01-07-1338',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-lavamanos-1h-quartz-plus-h-01071338',
+    nota: 'MEZCL. LAVAMANOS 1H QUARTZ PLUS H · artículo 01-07-1338 · ref. 44011/44013H · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1839.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamano-bari-1h-01071408',
+    art: 'MEZCL. MONO LAVAMANO BARI 1H',
+    sku: '01-07-1408',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamano-bari-1h-01071408',
+    nota: 'MEZCL. MONO LAVAMANO BARI 1H · artículo 01-07-1408 · ref. TB2602 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2952.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-1h-lav-davos-40-01071358',
+    art: 'MEZCL. MONO 1H LAV DAVOS 40',
+    sku: '01-07-1358',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-1h-lav-davos-40-01071358',
+    nota: 'MEZCL. MONO 1H LAV DAVOS 40 · artículo 01-07-1358 · ref. TLX8832 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3807.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-1h-lavabo-bruselas-35-01071298',
+    art: 'MEZCL. MONO 1H LAVABO BRUSELAS-35',
+    sku: '01-07-1298',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-1h-lavabo-bruselas-35-01071298',
+    nota: 'MEZCL. MONO 1H LAVABO BRUSELAS-35 · artículo 01-07-1298 · ref. TFZA09 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2917.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-1h-lavam-versus-plus-01071294',
+    peso: 2,
+    art: 'MEZCL. MONO 1H LAVAM VERSUS PLUS',
+    sku: '01-07-1294',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-1h-lavam-versus-plus-01071294',
+    nota: 'MEZCL. MONO 1H LAVAM VERSUS PLUS · artículo 01-07-1294 · ref. 77001G · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5206.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-freg-brush-nikel-01162604',
+    art: 'MEZCL. MONO FREG BRUSH NIKEL',
+    sku: '01-16-2604',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-freg-brush-nikel-01162604',
+    nota: 'MEZCL. MONO FREG BRUSH NIKEL · artículo 01-16-2604 · ref. TB2155BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2199.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-alta-brush-golden-01071620',
+    art: 'MEZCL. MONO LAV. ALTA BRUSH GOLDEN',
+    sku: '01-07-1620',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-alta-brush-golden-01071620',
+    nota: 'MEZCL. MONO LAV. ALTA BRUSH GOLDEN · artículo 01-07-1620 · ref. HD4203H-BG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1995.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-alta-matte-black-01071619',
+    art: 'MEZCL. MONO LAV. ALTA MATTE BLACK',
+    sku: '01-07-1619',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-alta-matte-black-01071619',
+    nota: 'MEZCL. MONO LAV. ALTA MATTE BLACK · artículo 01-07-1619 · ref. HD4203H-BM · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1889.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-brush-golden-01071617',
+    art: 'MEZCL. MONO LAV. BRUSH GOLDEN',
+    sku: '01-07-1617',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-brush-golden-01071617',
+    nota: 'MEZCL. MONO LAV. BRUSH GOLDEN · artículo 01-07-1617 · ref. HD4203BG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6217.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-cantabria-black-01071684',
+    art: 'MEZCL. MONO LAV. CANTABRIA BLACK',
+    sku: '01-07-1684',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-cantabria-black-01071684',
+    nota: 'MEZCL. MONO LAV. CANTABRIA BLACK · artículo 01-07-1684 · ref. TB1803-8BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2283.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-cromo-01071615',
+    art: 'MEZCL. MONO LAV. CROMO',
+    sku: '01-07-1615',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-cromo-01071615',
+    nota: 'MEZCL. MONO LAV. CROMO · artículo 01-07-1615 · ref. HD4203CR · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1769.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-matte-black-01071616',
+    art: 'MEZCL. MONO LAV. MATTE BLACK',
+    sku: '01-07-1616',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-matte-black-01071616',
+    nota: 'MEZCL. MONO LAV. MATTE BLACK · artículo 01-07-1616 · ref. HD4203BM · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2026.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071680',
+    peso: 2,
+    art: 'MEZCL. MONO LAV. SUS304 BLACK',
+    sku: '01-07-1680',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071680',
+    nota: 'MEZCL. MONO LAV. SUS304 BLACK · artículo 01-07-1680 · ref. TBSU3RD1BL · marca TILBY-GR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2634.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071671',
+    art: 'MEZCL. MONO LAV. SUS304 BLACK',
+    sku: '01-07-1671',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071671',
+    nota: 'MEZCL. MONO LAV. SUS304 BLACK · artículo 01-07-1671 · ref. TBSU3JK1BLT · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3985.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071667',
+    art: 'MEZCL. MONO LAV. SUS304 BLACK',
+    sku: '01-07-1667',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071667',
+    nota: 'MEZCL. MONO LAV. SUS304 BLACK · artículo 01-07-1667 · ref. TBSU3FG5BLT · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2701.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071681',
+    art: 'MEZCL. MONO LAV. SUS304 BLACK',
+    sku: '01-07-1681',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071681',
+    nota: 'MEZCL. MONO LAV. SUS304 BLACK · artículo 01-07-1681 · ref. TBSU3RD1BLT · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3647.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071666',
+    art: 'MEZCL. MONO LAV. SUS304 BLACK',
+    sku: '01-07-1666',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-black-01071666',
+    nota: 'MEZCL. MONO LAV. SUS304 BLACK · artículo 01-07-1666 · ref. TBSU3FG5BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1756.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brush-01071682',
+    art: 'MEZCL. MONO LAV. SUS304 BRUSH',
+    sku: '01-07-1682',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brush-01071682',
+    nota: 'MEZCL. MONO LAV. SUS304 BRUSH · artículo 01-07-1682 · ref. TBSU3RD1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2566.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brush-01071683',
+    art: 'MEZCL. MONO LAV. SUS304 BRUSH',
+    sku: '01-07-1683',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brush-01071683',
+    nota: 'MEZCL. MONO LAV. SUS304 BRUSH · artículo 01-07-1683 · ref. TBSU3RD1T · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1553.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brushed-01071672',
+    art: 'MEZCL. MONO LAV. SUS304 BRUSHED',
+    sku: '01-07-1672',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brushed-01071672',
+    nota: 'MEZCL. MONO LAV. SUS304 BRUSHED · artículo 01-07-1672 · ref. TBSU3JK1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2296.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brushed-01071673',
+    peso: 2,
+    art: 'MEZCL. MONO LAV. SUS304 BRUSHED',
+    sku: '01-07-1673',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-brushed-01071673',
+    nota: 'MEZCL. MONO LAV. SUS304 BRUSHED · artículo 01-07-1673 · ref. TBSU3JK1T · marca TILBY-GR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2431.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071679',
+    peso: 3,
+    art: 'MEZCL. MONO LAV. SUS304 CROMO',
+    sku: '01-07-1679',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071679',
+    nota: 'MEZCL. MONO LAV. SUS304 CROMO · artículo 01-07-1679 · ref. TBSU3RD1CHT · marca TILBY-GR. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1756.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071668',
+    art: 'MEZCL. MONO LAV. SUS304 CROMO',
+    sku: '01-07-1668',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071668',
+    nota: 'MEZCL. MONO LAV. SUS304 CROMO · artículo 01-07-1668 · ref. TBSU3JK1CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1688.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071678',
+    art: 'MEZCL. MONO LAV. SUS304 CROMO',
+    sku: '01-07-1678',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lav-sus304-cromo-01071678',
+    nota: 'MEZCL. MONO LAV. SUS304 CROMO · artículo 01-07-1678 · ref. TBSU3RD1CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3001.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavabo-niza-35-01071300',
+    art: 'MEZCL. MONO LAVABO NIZA-35',
+    sku: '01-07-1300',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavabo-niza-35-01071300',
+    nota: 'MEZCL. MONO LAVABO NIZA-35 · artículo 01-07-1300 · ref. TFZLR1014 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2512.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamano-4-versus-01071293',
+    art: 'MEZCL. MONO LAVAMANO 4 VERSUS',
+    sku: '01-07-1293',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamano-4-versus-01071293',
+    nota: 'MEZCL. MONO LAVAMANO 4 VERSUS · artículo 01-07-1293 · ref. 77202G · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2700.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamano-4-versus-plus-01071291',
+    art: 'MEZCL. MONO LAVAMANO 4 VERSUS PLUS',
+    sku: '01-07-1291',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamano-4-versus-plus-01071291',
+    nota: 'MEZCL. MONO LAVAMANO 4 VERSUS PLUS · artículo 01-07-1291 · ref. 77002G · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4469.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamanos-brush-nikel-01071434',
+    art: 'MEZCL. MONO LAVAMANOS BRUSH NIKEL',
+    sku: '01-07-1434',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamanos-brush-nikel-01071434',
+    nota: 'MEZCL. MONO LAVAMANOS BRUSH NIKEL · artículo 01-07-1434 · ref. TB2152BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6381.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamanos-brush-nikel-01071435',
+    art: 'MEZCL. MONO LAVAMANOS BRUSH NIKEL',
+    sku: '01-07-1435',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamanos-brush-nikel-01071435',
+    nota: 'MEZCL. MONO LAVAMANOS BRUSH NIKEL · artículo 01-07-1435 · ref. TB2153BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3280.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-lavamanos-neg-cr-01071433',
+    art: 'MEZCL. MONO LAVAMANOS NEG / CR',
+    sku: '01-07-1433',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-lavamanos-neg-cr-01071433',
+    nota: 'MEZCL. MONO LAVAMANOS NEG / CR · artículo 01-07-1433 · ref. TB6114-BLK · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 13342.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavabo-spacio-de-8-sin-contra-01071322',
+    art: 'MEZCL. P / LAVABO SPACIO DE 8” SIN CONTRA.',
+    sku: '01-07-1322',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavabo-spacio-de-8-sin-contra-01071322',
+    nota: 'MEZCL. P / LAVABO SPACIO DE 8” SIN CONTRA. · artículo 01-07-1322 · ref. ME8-SP-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2220.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamano-s-desag-4-t-sayco-01070995',
+    art: 'MEZCL. P / LAVAMANO S / DESAG. 4” T / SAYCO',
+    sku: '01-07-0995',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamano-s-desag-4-t-sayco-01070995',
+    nota: 'MEZCL. P / LAVAMANO S / DESAG. 4” T / SAYCO · artículo 01-07-0995 · ref. 53011 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3843.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-milan-cromo-01071655',
+    art: 'MEZCL. P / LAVAMANOS STELO MILAN CROMO',
+    sku: '01-07-1655',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-milan-cromo-01071655',
+    nota: 'MEZCL. P / LAVAMANOS STELO MILAN CROMO · artículo 01-07-1655 · ref. L331STL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4173.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-milan-gris-met-01071656',
+    art: 'MEZCL. P / LAVAMANOS STELO MILAN GRIS MET',
+    sku: '01-07-1656',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-milan-gris-met-01071656',
+    nota: 'MEZCL. P / LAVAMANOS STELO MILAN GRIS MET · artículo 01-07-1656 · ref. L332STL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3132.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-roma-negro-tita-01071653',
+    art: 'MEZCL. P / LAVAMANOS STELO-ROMA NEGRO TITA',
+    sku: '01-07-1653',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-roma-negro-tita-01071653',
+    nota: 'MEZCL. P / LAVAMANOS STELO-ROMA NEGRO TITA · artículo 01-07-1653 · ref. L321STL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3735.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-roma-xl-negro-t-01071654',
+    art: 'MEZCL. P / LAVAMANOS STELO-ROMA XL NEGRO T',
+    sku: '01-07-1654',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lavamanos-stelo-roma-xl-negro-t-01071654',
+    nota: 'MEZCL. P / LAVAMANOS STELO-ROMA XL NEGRO T · artículo 01-07-1654 · ref. L322XLSTL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 9784.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lava-etrio-negro-cobalto-xl-01071491',
+    art: 'MEZCLA LAVA ETRIO NEGRO COBALTO XL',
+    sku: '01-07-1491',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lava-etrio-negro-cobalto-xl-01071491',
+    nota: 'MEZCLA LAVA ETRIO NEGRO COBALTO XL · artículo 01-07-1491 · ref. M814LBKXL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7265.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavam-redondo-xl-acero-inox-gold-01071565',
+    art: 'MEZCLA LAVAM REDONDO XL ACERO INOX. GOLD',
+    sku: '01-07-1565',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavam-redondo-xl-acero-inox-gold-01071565',
+    nota: 'MEZCLA LAVAM REDONDO XL ACERO INOX. GOLD · artículo 01-07-1565 · ref. EDSS33833XLGLD · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7108.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-cromo-01071564',
+    peso: 2,
+    art: 'MEZCLA LAVAMA REDONDO ACERO INOX. CROMO',
+    sku: '01-07-1564',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-cromo-01071564',
+    nota: 'MEZCLA LAVAMA REDONDO ACERO INOX. CROMO · artículo 01-07-1564 · ref. EDSS22822XLGRY · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5953.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-cromo-01071563',
+    art: 'MEZCLA LAVAMA REDONDO ACERO INOX. CROMO',
+    sku: '01-07-1563',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-cromo-01071563',
+    nota: 'MEZCLA LAVAMA REDONDO ACERO INOX. CROMO · artículo 01-07-1563 · ref. EDSS44844CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5798.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-gold-01071562',
+    art: 'MEZCLA LAVAMA REDONDO ACERO INOX. GOLD',
+    sku: '01-07-1562',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-gold-01071562',
+    nota: 'MEZCLA LAVAMA REDONDO ACERO INOX. GOLD · artículo 01-07-1562 · ref. EDSS33833GOLD · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6587.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-gray-01071561',
+    art: 'MEZCLA LAVAMA REDONDO ACERO INOX. GRAY',
+    sku: '01-07-1561',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavama-redondo-acero-inox-gray-01071561',
+    nota: 'MEZCLA LAVAMA REDONDO ACERO INOX. GRAY · artículo 01-07-1561 · ref. EDSS22822GRY · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8305.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavamano-tj-sctra-spacio-01071321',
+    art: 'MEZCLA. LAVAMANO TJ SCTRA SPACIO',
+    sku: '01-07-1321',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavamano-tj-sctra-spacio-01071321',
+    nota: 'MEZCLA. LAVAMANO TJ SCTRA SPACIO · artículo 01-07-1321 · ref. ME4-SP-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2440.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-1h-p-lavamano-ankara-01071350',
+    art: 'MEZCLA. MONO 1H P / LAVAMANO ANKARA',
+    sku: '01-07-1350',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-1h-p-lavamano-ankara-01071350',
+    nota: 'MEZCLA. MONO 1H P / LAVAMANO ANKARA · artículo 01-07-1350 · ref. 1241AOR41/LX7830 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4985.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-freg-paris-35-01162600',
+    art: 'MEZCLAD MONO FREG. PARIS 35',
+    sku: '01-16-2600',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-freg-paris-35-01162600',
+    nota: 'MEZCLAD MONO FREG. PARIS 35 · artículo 01-16-2600 · ref. TB2155 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3890.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-lavam-blanco-35-01071425',
+    art: 'MEZCLAD MONO LAVAM BLANCO 35',
+    sku: '01-07-1425',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-lavam-blanco-35-01071425',
+    nota: 'MEZCLAD MONO LAVAM BLANCO 35 · artículo 01-07-1425 · ref. TB6114-WH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3036.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-lavam-cromo-35-01071423',
+    art: 'MEZCLAD MONO LAVAM CROMO 35',
+    sku: '01-07-1423',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-lavam-cromo-35-01071423',
+    nota: 'MEZCLAD MONO LAVAM CROMO 35 · artículo 01-07-1423 · ref. TB61113-CHR · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5362.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-lavam-paris-36-01071430',
+    art: 'MEZCLAD MONO LAVAM. PARIS 36',
+    sku: '01-07-1430',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-lavam-paris-36-01071430',
+    nota: 'MEZCLAD MONO LAVAM. PARIS 36 · artículo 01-07-1430 · ref. TB2153 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4353.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-lavamanos-paris-35-01071429',
+    art: 'MEZCLAD MONO LAVAMANOS PARIS 35',
+    sku: '01-07-1429',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-lavamanos-paris-35-01071429',
+    nota: 'MEZCLAD MONO LAVAMANOS PARIS 35 · artículo 01-07-1429 · ref. TB2152 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 16842.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-de-lavabo-clasica-01071316',
+    art: 'MEZCLADORA DE LAVABO CLÁSICA',
+    sku: '01-07-1316',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-de-lavabo-clasica-01071316',
+    nota: 'MEZCLADORA DE LAVABO CLÁSICA · artículo 01-07-1316 · ref. M-1005 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2189.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-de-lavamanos-milan-01071384',
+    art: 'MEZCLADORA DE LAVAMANOS MILAN',
+    sku: '01-07-1384',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-de-lavamanos-milan-01071384',
+    nota: 'MEZCLADORA DE LAVAMANOS MILAN · artículo 01-07-1384 · ref. 99003I · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2016.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-de-lavamanos-milan-01071395',
+    art: 'MEZCLADORA DE LAVAMANOS MILAN',
+    sku: '01-07-1395',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-de-lavamanos-milan-01071395',
+    nota: 'MEZCLADORA DE LAVAMANOS MILAN · artículo 01-07-1395 · ref. 99003IW · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2168.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-de-lavamanos-roma-01071385',
+    art: 'MEZCLADORA DE LAVAMANOS ROMA',
+    sku: '01-07-1385',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-de-lavamanos-roma-01071385',
+    nota: 'MEZCLADORA DE LAVAMANOS ROMA · artículo 01-07-1385 · ref. 99004I · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7335.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lav-s-contra-deco-tj-01071318',
+    art: 'MEZCLADORA LAV. S / CONTRA DECO TJ',
+    sku: '01-07-1318',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lav-s-contra-deco-tj-01071318',
+    nota: 'MEZCLADORA LAV. S / CONTRA DECO TJ · artículo 01-07-1318 · ref. ME4-DC-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 14306.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavabo-con-desague-01071323',
+    art: 'MEZCLADORA LAVABO CON DESAGÜE',
+    sku: '01-07-1323',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavabo-con-desague-01071323',
+    nota: 'MEZCLADORA LAVABO CON DESAGÜE · artículo 01-07-1323 · ref. MEP-2004 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2652.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavamanos-cascada-bronce-01071489',
+    art: 'MEZCLADORA LAVAMANOS CASCADA BRONCE',
+    sku: '01-07-1489',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavamanos-cascada-bronce-01071489',
+    nota: 'MEZCLADORA LAVAMANOS CASCADA BRONCE · artículo 01-07-1489 · ref. N5553BRZ · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2593.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavamanos-cascada-chome-01071488',
+    art: 'MEZCLADORA LAVAMANOS CASCADA CHOME',
+    sku: '01-07-1488',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavamanos-cascada-chome-01071488',
+    nota: 'MEZCLADORA LAVAMANOS CASCADA CHOME · artículo 01-07-1488 · ref. N553CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8360.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavamanos-diseno-negro-mate-01071570',
+    art: 'MEZCLADORA LAVAMANOS DISENO NEGRO MATE',
+    sku: '01-07-1570',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavamanos-diseno-negro-mate-01071570',
+    nota: 'MEZCLADORA LAVAMANOS DISENO NEGRO MATE · artículo 01-07-1570 · ref. EDM77188 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8269.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavamanos-negro-mate-01071568',
+    art: 'MEZCLADORA LAVAMANOS NEGRO MATE',
+    sku: '01-07-1568',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavamanos-negro-mate-01071568',
+    nota: 'MEZCLADORA LAVAMANOS NEGRO MATE · artículo 01-07-1568 · ref. EDM33188L · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 11075.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavamanos-xl-negro-mate-01071569',
+    art: 'MEZCLADORA LAVAMANOS XL NEGRO MATE',
+    sku: '01-07-1569',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavamanos-xl-negro-mate-01071569',
+    nota: 'MEZCLADORA LAVAMANOS XL NEGRO MATE · artículo 01-07-1569 · ref. EDM33188XL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4022.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-1h-lavabo-praga-01071343',
+    art: 'MEZCLADORA MONO 1H LAVABO PRAGA',
+    sku: '01-07-1343',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-1h-lavabo-praga-01071343',
+    nota: 'MEZCLADORA MONO 1H LAVABO PRAGA · artículo 01-07-1343 · ref. TYHF02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1582.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lav-cali-01071661',
+    art: 'MEZCLADORA MONO LAV. CALI',
+    sku: '01-07-1661',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lav-cali-01071661',
+    nota: 'MEZCLADORA MONO LAV. CALI · artículo 01-07-1661 · ref. TB1657A1-01 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1991.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lav-cromo-01071588',
+    art: 'MEZCLADORA MONO LAV. CROMO',
+    sku: '01-07-1588',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lav-cromo-01071588',
+    nota: 'MEZCLADORA MONO LAV. CROMO · artículo 01-07-1588 · ref. TBZ21C1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4640.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lav-cromo-01071587',
+    art: 'MEZCLADORA MONO LAV. CROMO',
+    sku: '01-07-1587',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lav-cromo-01071587',
+    nota: 'MEZCLADORA MONO LAV. CROMO · artículo 01-07-1587 · ref. TBH1811H · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2687.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lav-umbria-35-01071420',
+    art: 'MEZCLADORA MONO LAV. UMBRIA 35',
+    sku: '01-07-1420',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lav-umbria-35-01071420',
+    nota: 'MEZCLADORA MONO LAV. UMBRIA 35 · artículo 01-07-1420 · ref. TBZ18A1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2359.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-01071502',
+    art: 'MEZCLADORA MONO LAVABO',
+    sku: '01-07-1502',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-01071502',
+    nota: 'MEZCLADORA MONO LAVABO · artículo 01-07-1502 · ref. 75508-11A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2539.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-01071503',
+    art: 'MEZCLADORA MONO LAVABO 1H',
+    sku: '01-07-1503',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-01071503',
+    nota: 'MEZCLADORA MONO LAVABO 1H · artículo 01-07-1503 · ref. 73505-11A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1323.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-01071506',
+    art: 'MEZCLADORA MONO LAVABO 1H',
+    sku: '01-07-1506',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-01071506',
+    nota: 'MEZCLADORA MONO LAVABO 1H · artículo 01-07-1506 · ref. RB79221-11A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4429.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-altona-01071521',
+    art: 'MEZCLADORA MONO LAVABO 1H ALTONA',
+    sku: '01-07-1521',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-1h-altona-01071521',
+    nota: 'MEZCLADORA MONO LAVABO 1H ALTONA · artículo 01-07-1521 · ref. TB20L1XLCROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1699.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-4-vigo-01071449',
+    art: 'MEZCLADORA MONO LAVABO 4\'\' VIGO',
+    sku: '01-07-1449',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-4-vigo-01071449',
+    nota: 'MEZCLADORA MONO LAVABO 4\'\' VIGO · artículo 01-07-1449 · ref. TB18042A1-02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5098.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-lavabo-cantabria-01071501',
+    art: 'MEZCLADORA MONO LAVABO CANTABRIA',
+    sku: '01-07-1501',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-lavabo-cantabria-01071501',
+    nota: 'MEZCLADORA MONO LAVABO CANTABRIA · artículo 01-07-1501 · ref. TB1803-8 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3311.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-des-sus304-01071750',
+    art: 'MEZCLADORA MONO P / LAV. +DES SUS304',
+    sku: '01-07-1750',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-des-sus304-01071750',
+    nota: 'MEZCLADORA MONO P / LAV. +DES SUS304 · artículo 01-07-1750 · ref. TB-30401XL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2119.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-desag-sus304-01071749',
+    art: 'MEZCLADORA MONO P / LAV. +DESAG. SUS304',
+    sku: '01-07-1749',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-desag-sus304-01071749',
+    nota: 'MEZCLADORA MONO P / LAV. +DESAG. SUS304 · artículo 01-07-1749 · ref. TB-30401 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2989.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-malaga-cromo-01071694',
+    art: 'MEZCLADORA MONO P / LAV. MALAGA CROMO',
+    sku: '01-07-1694',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-malaga-cromo-01071694',
+    nota: 'MEZCLADORA MONO P / LAV. MALAGA CROMO · artículo 01-07-1694 · ref. TBXC31801CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4655.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-negro-01071737',
+    art: 'MEZCLADORA MONO P / LAV. NEGRO',
+    sku: '01-07-1737',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-negro-01071737',
+    nota: 'MEZCLADORA MONO P / LAV. NEGRO · artículo 01-07-1737 · ref. TB2152BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6662.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-negro-01071738',
+    art: 'MEZCLADORA MONO P / LAV. NEGRO',
+    sku: '01-07-1738',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-negro-01071738',
+    nota: 'MEZCLADORA MONO P / LAV. NEGRO · artículo 01-07-1738 · ref. TB2153BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2381.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-parma-black-01071692',
+    art: 'MEZCLADORA MONO P / LAV. PARMA BLACK',
+    sku: '01-07-1692',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-parma-black-01071692',
+    nota: 'MEZCLADORA MONO P / LAV. PARMA BLACK · artículo 01-07-1692 · ref. TBXC33001BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1946.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-parma-cromo-01071693',
+    art: 'MEZCLADORA MONO P / LAV. PARMA CROMO',
+    sku: '01-07-1693',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-parma-cromo-01071693',
+    nota: 'MEZCLADORA MONO P / LAV. PARMA CROMO · artículo 01-07-1693 · ref. XC-32401 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3468.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-black-01071699',
+    art: 'MEZCLADORA MONO P / LAV. TORINO BLACK',
+    sku: '01-07-1699',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-black-01071699',
+    nota: 'MEZCLADORA MONO P / LAV. TORINO BLACK · artículo 01-07-1699 · ref. TBXC32601BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5240.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-black-01071700',
+    art: 'MEZCLADORA MONO P / LAV. TORINO BLACK',
+    sku: '01-07-1700',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-black-01071700',
+    nota: 'MEZCLADORA MONO P / LAV. TORINO BLACK · artículo 01-07-1700 · ref. TBXC32601HBLT · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3109.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-cromo-01071696',
+    art: 'MEZCLADORA MONO P / LAV. TORINO CROMO',
+    sku: '01-07-1696',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-cromo-01071696',
+    nota: 'MEZCLADORA MONO P / LAV. TORINO CROMO · artículo 01-07-1696 · ref. TBXC32601CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 4892.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-cromo-01071697',
+    art: 'MEZCLADORA MONO P / LAV. TORINO CROMO',
+    sku: '01-07-1697',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lav-torino-cromo-01071697',
+    nota: 'MEZCLADORA MONO P / LAV. TORINO CROMO · artículo 01-07-1697 · ref. TBXC32601HCHT · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2862.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-bari-01071522',
+    art: 'MEZCLADORA MONO P / LAVAMANOS BARI',
+    sku: '01-07-1522',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-bari-01071522',
+    nota: 'MEZCLADORA MONO P / LAVAMANOS BARI · artículo 01-07-1522 · ref. TB2602T · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3551.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-black-01071583',
+    art: 'MEZCLADORA MONO P / LAVAMANOS BLACK',
+    sku: '01-07-1583',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-black-01071583',
+    nota: 'MEZCLADORA MONO P / LAVAMANOS BLACK · artículo 01-07-1583 · ref. TB21L1-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5680.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-black-01071584',
+    art: 'MEZCLADORA MONO P / LAVAMANOS BLACK',
+    sku: '01-07-1584',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-black-01071584',
+    nota: 'MEZCLADORA MONO P / LAVAMANOS BLACK · artículo 01-07-1584 · ref. TB21L1XL-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3227.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-cromo-01071581',
+    art: 'MEZCLADORA MONO P / LAVAMANOS CROMO',
+    sku: '01-07-1581',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-cromo-01071581',
+    nota: 'MEZCLADORA MONO P / LAVAMANOS CROMO · artículo 01-07-1581 · ref. TB21L1 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5369.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-cromo-01071582',
+    art: 'MEZCLADORA MONO P / LAVAMANOS CROMO',
+    sku: '01-07-1582',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-lavamanos-cromo-01071582',
+    nota: 'MEZCLADORA MONO P / LAVAMANOS CROMO · artículo 01-07-1582 · ref. TB21L1XL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2486.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-monomando-p-lavamanos-01071585',
+    art: 'MEZCLADORA MONOMANDO P / LAVAMANOS',
+    sku: '01-07-1585',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-monomando-p-lavamanos-01071585',
+    nota: 'MEZCLADORA MONOMANDO P / LAVAMANOS · artículo 01-07-1585 · ref. TGSM012 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2744.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-black-01071557',
+    peso: 4,
+    art: 'MEZCLADORA P / LAVAMANOS 4\'\' BLACK',
+    sku: '01-07-1557',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-black-01071557',
+    nota: 'MEZCLADORA P / LAVAMANOS 4\'\' BLACK · artículo 01-07-1557 · ref. USONE4004BLK · marca INEX. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3389.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-cromo-01071554',
+    peso: 2,
+    art: 'MEZCLADORA P / LAVAMANOS 4\'\' CROMO',
+    sku: '01-07-1554',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-cromo-01071554',
+    nota: 'MEZCLADORA P / LAVAMANOS 4\'\' CROMO · artículo 01-07-1554 · ref. USONE2002CR · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 3916.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-gld-01071553',
+    peso: 3,
+    art: 'MEZCLADORA P / LAVAMANOS 4\'\' GLD',
+    sku: '01-07-1553',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-gld-01071553',
+    nota: 'MEZCLADORA P / LAVAMANOS 4\'\' GLD · artículo 01-07-1553 · ref. USONE4005GOLD · marca INEX. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2863.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-4-urrea-01071514',
+    art: 'MEZCLADORA P / LAV 4” URREA',
+    sku: '01-07-1514',
+    marca: 'URREA',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-4-urrea-01071514',
+    nota: 'MEZCLADORA P / LAV 4” URREA · artículo 01-07-1514 · ref. 4"46QURREA · marca URREA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5286.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-milan-xl-01071397',
+    art: 'MEZCLADORA P / LAV MILAN XL',
+    sku: '01-07-1397',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-milan-xl-01071397',
+    nota: 'MEZCLADORA P / LAV MILAN XL · artículo 01-07-1397 · ref. 99003IXL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2542.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-milan-xlw-01071396',
+    art: 'MEZCLADORA P / LAV. MILAN XLW',
+    sku: '01-07-1396',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-milan-xlw-01071396',
+    nota: 'MEZCLADORA P / LAV. MILAN XLW · artículo 01-07-1396 · ref. 99003XLW · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2173.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-wc-01071392',
+    art: 'MEZCLADORA P / LAV. BARCELONA WC',
+    sku: '01-07-1392',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-wc-01071392',
+    nota: 'MEZCLADORA P / LAV. BARCELONA WC · artículo 01-07-1392 · ref. 990021W · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 5754.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-xl-01071394',
+    art: 'MEZCLADORA P / LAV. BARCELONA XL',
+    sku: '01-07-1394',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-xl-01071394',
+    nota: 'MEZCLADORA P / LAV. BARCELONA XL · artículo 01-07-1394 · ref. 99002IXL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2787.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-xl-w-01071393',
+    art: 'MEZCLADORA P / LAV. BARCELONA XL W',
+    sku: '01-07-1393',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lav-barcelona-xl-w-01071393',
+    nota: 'MEZCLADORA P / LAV. BARCELONA XL W · artículo 01-07-1393 · ref. 990021XLW · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1280.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-zinc-01071068',
+    art: 'MEZCLADORA P / LAVAMANOS 4” ZINC',
+    sku: '01-07-1068',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-lavamanos-4-zinc-01071068',
+    nota: 'MEZCLADORA P / LAVAMANOS 4” ZINC · artículo 01-07-1068 · ref. 3414-2 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1552.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavabo-4-01071345',
+    art: 'MEZCLADORA PARA LAVABO 4\'\'',
+    sku: '01-07-1345',
+    marca: 'TILBY-GRI-ECO',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavabo-4-01071345',
+    nota: 'MEZCLADORA PARA LAVABO 4\'\' · artículo 01-07-1345 · ref. TB801A2-01 · marca TILBY-GRI-ECO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 995.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01070682',
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-07-0682',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01070682',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-07-0682 · ref. SPC-978 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1045.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01070098',
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-07-0098',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01070098',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-07-0098 · ref. SPC-358-B014" · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 2836.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071685',
+    peso: 2,
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-07-1685',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071685',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-07-1685 · ref. TGSM012BL · marca TILBY-GR. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 540.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071606',
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-07-1606',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01071606',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-07-1606 · ref. P03143 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 843.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-tipo-tap-01071707',
+    art: 'MEZCLADORA TIPO TAP',
+    sku: '01-07-1707',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-tipo-tap-01071707',
+    nota: 'MEZCLADORA TIPO TAP · artículo 01-07-1707 · ref. TBXC24CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 1486.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-tipo-tap-01071689',
+    art: 'MEZCLADORA TIPO TAP',
+    sku: '01-07-1689',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-tipo-tap-01071689',
+    nota: 'MEZCLADORA TIPO TAP · artículo 01-07-1689 · ref. TBPT011CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 18385.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-alto-sctra-max-rose-gold-01071641',
+    art: 'MONOMANDO ALTO SCTRA MAX ROSE GOLD',
+    sku: '01-07-1641',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-alto-sctra-max-rose-gold-01071641',
+    nota: 'MONOMANDO ALTO SCTRA MAX ROSE GOLD · artículo 01-07-1641 · ref. EP933-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 15849.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-alto-squadra-lav-cr-01071401',
+    art: 'MONOMANDO ALTO SQUADRA LAV CR',
+    sku: '01-07-1401',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-alto-squadra-lav-cr-01071401',
+    nota: 'MONOMANDO ALTO SQUADRA LAV CR · artículo 01-07-1401 · ref. E-937 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6397.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-lava-sin-contra-piazza-01071500',
+    art: 'MONOMANDO DE LAVA SIN CONTRA PIAZZA',
+    sku: '01-07-1500',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-lava-sin-contra-piazza-01071500',
+    nota: 'MONOMANDO DE LAVA SIN CONTRA PIAZZA · artículo 01-07-1500 · ref. PIA-100 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 8241.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-lavabo-alto-01071601',
+    art: 'MONOMANDO DE LAVABO ALTO',
+    sku: '01-07-1601',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-lavabo-alto-01071601',
+    nota: 'MONOMANDO DE LAVABO ALTO · artículo 01-07-1601 · ref. MO8-DC-01-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 11146.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-lavamano-maxima-01071399',
+    art: 'MONOMANDO DE LAVAMANO MAXIMA',
+    sku: '01-07-1399',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-lavamano-maxima-01071399',
+    nota: 'MONOMANDO DE LAVAMANO MAXIMA · artículo 01-07-1399 · ref. E-932 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6767.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-lavamano-scuadra-01071333',
+    art: 'MONOMANDO DE LAVAMANO SCUADRA',
+    sku: '01-07-1333',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-lavamano-scuadra-01071333',
+    nota: 'MONOMANDO DE LAVAMANO SCUADRA · artículo 01-07-1333 · ref. E-919 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7447.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-deco-de-lavabo-01071320',
+    art: 'MONOMANDO DECO DE LAVABO',
+    sku: '01-07-1320',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-deco-de-lavabo-01071320',
+    nota: 'MONOMANDO DECO DE LAVABO · artículo 01-07-1320 · ref. MO8-DC-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 27168.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-alto-ctra-push-piura-cr-01071636',
+    art: 'MONOMANDO LAV ALTO CTRA PUSH PIURA CR',
+    sku: '01-07-1636',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-alto-ctra-push-piura-cr-01071636',
+    nota: 'MONOMANDO LAV ALTO CTRA PUSH PIURA CR · artículo 01-07-1636 · ref. PIU-101 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 22457.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-alto-ctra-push-scala-eb-01071646',
+    art: 'MONOMANDO LAV ALTO CTRA PUSH SCALA EB',
+    sku: '01-07-1646',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-alto-ctra-push-scala-eb-01071646',
+    nota: 'MONOMANDO LAV ALTO CTRA PUSH SCALA EB · artículo 01-07-1646 · ref. E-949-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 13131.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-alto-maxima-cr-01071402',
+    art: 'MONOMANDO LAV ALTO MAXIMA CR',
+    sku: '01-07-1402',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-alto-maxima-cr-01071402',
+    nota: 'MONOMANDO LAV ALTO MAXIMA CR · artículo 01-07-1402 · ref. E-933 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 9881.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-alto-sctra-lusitania-cr-01071649',
+    art: 'MONOMANDO LAV ALTO SCTRA LUSITANIA CR',
+    sku: '01-07-1649',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-alto-sctra-lusitania-cr-01071649',
+    nota: 'MONOMANDO LAV ALTO SCTRA LUSITANIA CR · artículo 01-07-1649 · ref. LUS-101 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 9847.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-alto-sctra-piazza-cr-01071637',
+    art: 'MONOMANDO LAV ALTO SCTRA PIAZZA CR',
+    sku: '01-07-1637',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-alto-sctra-piazza-cr-01071637',
+    nota: 'MONOMANDO LAV ALTO SCTRA PIAZZA CR · artículo 01-07-1637 · ref. PIA-101 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 21674.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-ctra-push-piura-cr-01071635',
+    art: 'MONOMANDO LAV CTRA PUSH PIURA CR',
+    sku: '01-07-1635',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-ctra-push-piura-cr-01071635',
+    nota: 'MONOMANDO LAV CTRA PUSH PIURA CR · artículo 01-07-1635 · ref. PIU-100 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 12295.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-ctra-push-premier-ii-cr-01071438',
+    art: 'MONOMANDO LAV CTRA PUSH PREMIER II CR',
+    sku: '01-07-1438',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-ctra-push-premier-ii-cr-01071438',
+    nota: 'MONOMANDO LAV CTRA PUSH PREMIER II CR · artículo 01-07-1438 · ref. E-941 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 19052.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-ctra-push-scala-eb-01071645',
+    art: 'MONOMANDO LAV CTRA PUSH SCALA EB',
+    sku: '01-07-1645',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-ctra-push-scala-eb-01071645',
+    nota: 'MONOMANDO LAV CTRA PUSH SCALA EB · artículo 01-07-1645 · ref. E-948-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6194.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-sctra-lusitania-cr-01071648',
+    art: 'MONOMANDO LAV SCTRA LUSITANIA CR',
+    sku: '01-07-1648',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-sctra-lusitania-cr-01071648',
+    nota: 'MONOMANDO LAV SCTRA LUSITANIA CR · artículo 01-07-1648 · ref. LUS-100 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 7117.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lav-sctra-piazza-eb-01071577',
+    art: 'MONOMANDO LAV. SCTRA PIAZZA EB',
+    sku: '01-07-1577',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lav-sctra-piazza-eb-01071577',
+    nota: 'MONOMANDO LAV. SCTRA PIAZZA EB · artículo 01-07-1577 · ref. PIA-100-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 16650.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lavabo-premier-c-push-eb-01071576',
+    art: 'MONOMANDO LAVABO PREMIER C PUSH EB',
+    sku: '01-07-1576',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lavabo-premier-c-push-eb-01071576',
+    nota: 'MONOMANDO LAVABO PREMIER C PUSH EB · artículo 01-07-1576 · ref. EP-909-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 15592.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-lavabo-premier-ctra-push-01071644',
+    art: 'MONOMANDO LAVABO PREMIER CTRA PUSH',
+    sku: '01-07-1644',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-lavabo-premier-ctra-push-01071644',
+    nota: 'MONOMANDO LAVABO PREMIER CTRA PUSH · artículo 01-07-1644 · ref. EP909-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-014', PROV_OCHOA, 6627.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-lavamano-century-01071346',
+    art: 'MONOMANDO P / LAVAMANO CENTURY',
+    sku: '01-07-1346',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-lavamano-century-01071346',
+    nota: 'MONOMANDO P / LAVAMANO CENTURY · artículo 01-07-1346 · ref. E-918 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-014', PROV_CIMA, 1791, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-lavamano-mono-gr-66',
@@ -23153,6 +24990,62 @@
     url: 'https://carabela.do/products/griferia-de-lavabo-marmo',
     nota: 'Grifería de Lavabo Marmo · artículo 28566 · marca IB RUBINETTERIE. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-015', PROV_OCHOA, 2304.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-p-lavamanos-push-temporizada-01071374',
+    art: 'LLAVE P / LAVAMANOS PUSH TEMPORIZADA',
+    sku: '01-07-1374',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/llave-p-lavamanos-push-temporizada-01071374',
+    nota: 'LLAVE P / LAVAMANOS PUSH TEMPORIZADA · artículo 01-07-1374 · ref. T0110CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 10826.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-lav-sensor-de-celula-cromo-01071566',
+    art: 'MEZCL P / LAV. SENSOR DE CELULA CROMO',
+    sku: '01-07-1566',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-lav-sensor-de-celula-cromo-01071566',
+    nota: 'MEZCL P / LAV. SENSOR DE CELULA CROMO · artículo 01-07-1566 · ref. CED55655CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 11030.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-lavama-sensor-de-celula-black-01071567',
+    art: 'MEZCLADORA LAVAMA SENSOR DE CELULA BLACK',
+    sku: '01-07-1567',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-lavama-sensor-de-celula-black-01071567',
+    nota: 'MEZCLADORA LAVAMA SENSOR DE CELULA BLACK · artículo 01-07-1567 · ref. CED55755BLK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 5150.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071598',
+    art: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC',
+    sku: '01-07-1598',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071598',
+    nota: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC · artículo 01-07-1598 · ref. TBS1203 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 3147.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071592',
+    art: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC',
+    sku: '01-07-1592',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071592',
+    nota: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC · artículo 01-07-1592 · ref. TBS1022 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 4904.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071593',
+    art: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC',
+    sku: '01-07-1593',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071593',
+    nota: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC · artículo 01-07-1593 · ref. TB150BR-2 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-015', PROV_OCHOA, 2963.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071591',
+    art: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC',
+    sku: '01-07-1591',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-sensor-p-lavamanos-ac-dc-01071591',
+    nota: 'MEZCLADORA SENSOR P / LAVAMANOS AC / DC · artículo 01-07-1591 · ref. TBS1088 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-015', PROV_CERARTE, 5455.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/griferia-join-timer-bacteria-free-pressmatic?variant=000712%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20DOCOL',
     itbis: false,
@@ -23290,6 +25183,723 @@
     sku: '005994',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-tektronic-lavamanos-con-sensor-a-pilas/',
     nota: 'Mezcladora Tektronic Lavamanos con sensor a Pilas · artículo 005994. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3710.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-fregadero-negra-01162717',
+    art: 'MEZCLADORA P / FREGADERO NEGRA',
+    sku: '01-16-2717',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-fregadero-negra-01162717',
+    nota: 'MEZCLADORA P / FREGADERO NEGRA · artículo 01-16-2717 · ref. 807-22120. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3049.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162704',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2704',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162704',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2704 · ref. 807-22010. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 6353.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162703',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2703',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162703',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2703 · ref. 807-22040. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 9130.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-fregadero-albatros-c-01160216',
+    art: 'GRIFERIA FREGADERO ALBATROS C',
+    sku: '01-16-0216',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/griferia-fregadero-albatros-c-01160216',
+    nota: 'GRIFERIA FREGADERO ALBATROS C · artículo 01-16-0216 · ref. HM37C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 44015.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162762',
+    art: 'GRIFO DE PARED PARA COCINA C / BRAZO',
+    sku: '01-16-2762',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162762',
+    nota: 'GRIFO DE PARED PARA COCINA C / BRAZO · artículo 01-16-2762 · ref. S665BZG · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 40978.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162763',
+    art: 'GRIFO DE PARED PARA COCINA C / BRAZO',
+    sku: '01-16-2763',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162763',
+    nota: 'GRIFO DE PARED PARA COCINA C / BRAZO · artículo 01-16-2763 · ref. S665NL · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 39463.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162761',
+    art: 'GRIFO DE PARED PARA COCINA C / BRAZO',
+    sku: '01-16-2761',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162761',
+    nota: 'GRIFO DE PARED PARA COCINA C / BRAZO · artículo 01-16-2761 · ref. S665BL · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 30354.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162760',
+    art: 'GRIFO DE PARED PARA COCINA C / BRAZO',
+    sku: '01-16-2760',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/grifo-de-pared-para-cocina-c-brazo-01162760',
+    nota: 'GRIFO DE PARED PARA COCINA C / BRAZO · artículo 01-16-2760 · ref. S665 · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 6203.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-econom-de-cieere-automat-01071255',
+    art: 'LLAVE ECONOM. DE CIEERE AUTOMAT.',
+    sku: '01-07-1255',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-econom-de-cieere-automat-01071255',
+    nota: 'LLAVE ECONOM. DE CIEERE AUTOMAT. · artículo 01-07-1255 · ref. TV-122 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1030.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-p-fregadero-blanco-01162721',
+    art: 'LLAVE P / FREGADERO BLANCO',
+    sku: '01-16-2721',
+    marca: 'FLEXIMATIC',
+    url: 'https://ochoa.com.do/producto/llave-p-fregadero-blanco-01162721',
+    nota: 'LLAVE P / FREGADERO BLANCO · artículo 01-16-2721 · ref. 44311/4BUELTA · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 4228.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-p-fregadero-8-urrea-01162699',
+    art: 'MEZC P / FREGADERO 8 ” URREA',
+    sku: '01-16-2699',
+    marca: 'URREA',
+    url: 'https://ochoa.com.do/producto/mezc-p-fregadero-8-urrea-01162699',
+    nota: 'MEZC P / FREGADERO 8 ” URREA · artículo 01-16-2699 · ref. 318Q8"URREA · marca URREA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3654.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-mono-p-freg-superf-7-7-ankara-35-01160268',
+    art: 'MEZC. MONO P / FREG. SUPERF.#7-7 ANKARA 35',
+    sku: '01-16-0268',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezc-mono-p-freg-superf-7-7-ankara-35-01160268',
+    nota: 'MEZC. MONO P / FREG. SUPERF.#7-7 ANKARA 35 · artículo 01-16-0268 · ref. 9241A0R41CROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2074.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-freg-vertical-cuello-alto-habana-01160233',
+    art: 'MEZCL P / FREG VERTICAL CUELLO ALTO HABANA',
+    sku: '01-16-0233',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-freg-vertical-cuello-alto-habana-01160233',
+    nota: 'MEZCL P / FREG VERTICAL CUELLO ALTO HABANA · artículo 01-16-0233 · ref. 92-048 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3265.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-freg-vertical-cuello-alto-jamai-01160237',
+    art: 'MEZCL P / FREG VERTICAL CUELLO ALTO JAMAI.',
+    sku: '01-16-0237',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-freg-vertical-cuello-alto-jamai-01160237',
+    nota: 'MEZCL P / FREG VERTICAL CUELLO ALTO JAMAI. · artículo 01-16-0237 · ref. 92.039/92-528CROMO · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 8646.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-fregadero-lux-brush-01162550',
+    art: 'MEZCL. FREGADERO LUX BRUSH',
+    sku: '01-16-2550',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-fregadero-lux-brush-01162550',
+    nota: 'MEZCL. FREGADERO LUX BRUSH · artículo 01-16-2550 · ref. KL8338BN · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1403.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-fregadero-bari-01162590',
+    art: 'MEZCL. MONO FREGADERO BARI',
+    sku: '01-16-2590',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-fregadero-bari-01162590',
+    nota: 'MEZCL. MONO FREGADERO BARI · artículo 01-16-2590 · ref. TB2608 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1217.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-fregadero-lima-01162588',
+    art: 'MEZCL. MONO FREGADERO LIMA',
+    sku: '01-16-2588',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-fregadero-lima-01162588',
+    nota: 'MEZCL. MONO FREGADERO LIMA · artículo 01-16-2588 · ref. TB80151-02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1946.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-freg-brush-golden-01162729',
+    art: 'MEZCL. MONO FREG. BRUSH GOLDEN',
+    sku: '01-16-2729',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-freg-brush-golden-01162729',
+    nota: 'MEZCL. MONO FREG. BRUSH GOLDEN · artículo 01-16-2729 · ref. HD4257BG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3346.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-inex-k-prem-b-n-01162609',
+    art: 'MEZCL. P / FREGADERO INEX K PREM B / N',
+    sku: '01-16-2609',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-inex-k-prem-b-n-01162609',
+    nota: 'MEZCL. P / FREGADERO INEX K PREM B / N · artículo 01-16-2609 · ref. 88003KBN · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3353.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-inex-k-prem-b-n-01162608',
+    art: 'MEZCL. P / FREGADERO INEX K PREM B / N',
+    sku: '01-16-2608',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-inex-k-prem-b-n-01162608',
+    nota: 'MEZCL. P / FREGADERO INEX K PREM B / N · artículo 01-16-2608 · ref. 88001KBN · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3851.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-inex-pro-negro-titani-01162735',
+    art: 'MEZCL. P / FREGADERO INEX PRO NEGRO TITANI',
+    sku: '01-16-2735',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-inex-pro-negro-titani-01162735',
+    nota: 'MEZCL. P / FREGADERO INEX PRO NEGRO TITANI · artículo 01-16-2735 · ref. INK-333-GT · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1532.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-jamaica-prem-b-c-01162607',
+    art: 'MEZCL. P / FREGADERO JAMAICA PREM B / C',
+    sku: '01-16-2607',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-jamaica-prem-b-c-01162607',
+    nota: 'MEZCL. P / FREGADERO JAMAICA PREM B / C · artículo 01-16-2607 · ref. 92039CW · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2794.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-s-mang-8-t-sayco-01160291',
+    art: 'MEZCL. P / FREGADERO S / MANG. 8” T / SAYCO',
+    sku: '01-16-0291',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-s-mang-8-t-sayco-01160291',
+    nota: 'MEZCL. P / FREGADERO S / MANG. 8” T / SAYCO · artículo 01-16-0291 · ref. 53022 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3854.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-fregadero-stelo-roma-negro-tita-01162734',
+    art: 'MEZCL. P / FREGADERO STELO-ROMA NEGRO TITA',
+    sku: '01-16-2734',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-fregadero-stelo-roma-negro-tita-01162734',
+    nota: 'MEZCL. P / FREGADERO STELO-ROMA NEGRO TITA · artículo 01-16-2734 · ref. C521STL · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3841.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-lavamanos-etrio-silver-chrome-01071494',
+    art: 'MEZCLA LAVAMANOS ETRIO SILVER CHROME',
+    sku: '01-07-1494',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcla-lavamanos-etrio-silver-chrome-01071494',
+    nota: 'MEZCLA LAVAMANOS ETRIO SILVER CHROME · artículo 01-07-1494 · ref. M814LCR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3185.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-fregadero-bruselas-35mm-01162553',
+    art: 'MEZCLA. MONO FREGADERO BRUSELAS 35MM',
+    sku: '01-16-2553',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-fregadero-bruselas-35mm-01162553',
+    nota: 'MEZCLA. MONO FREGADERO BRUSELAS 35MM · artículo 01-16-2553 · ref. TFZH01 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3377.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162594',
+    art: 'MEZCLA. MONO FREGADERO BRUSH N',
+    sku: '01-16-2594',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162594',
+    nota: 'MEZCLA. MONO FREGADERO BRUSH N · artículo 01-16-2594 · ref. TB8918BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1164.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162596',
+    art: 'MEZCLA. MONO FREGADERO BRUSH N',
+    sku: '01-16-2596',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162596',
+    nota: 'MEZCLA. MONO FREGADERO BRUSH N · artículo 01-16-2596 · ref. TB9112BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1925.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162595',
+    art: 'MEZCLA. MONO FREGADERO BRUSH N',
+    sku: '01-16-2595',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162595',
+    nota: 'MEZCLA. MONO FREGADERO BRUSH N · artículo 01-16-2595 · ref. TB9108BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3961.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162598',
+    art: 'MEZCLA. MONO FREGADERO BRUSH N',
+    sku: '01-16-2598',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-fregadero-brush-n-01162598',
+    nota: 'MEZCLA. MONO FREGADERO BRUSH N · artículo 01-16-2598 · ref. TB9619BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2196.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-fregadero-altona-01162700',
+    art: 'MEZCLAD. MONO FREGADERO ALTONA',
+    sku: '01-16-2700',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-fregadero-altona-01162700',
+    nota: 'MEZCLAD. MONO FREGADERO ALTONA · artículo 01-16-2700 · ref. TB20L;6CROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3731.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-fregadero-paris-01162641',
+    art: 'MEZCLAD. MONO FREGADERO PARIS',
+    sku: '01-16-2641',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-fregadero-paris-01162641',
+    nota: 'MEZCLAD. MONO FREGADERO PARIS · artículo 01-16-2641 · ref. TB16D6ORB · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3521.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclad-mono-fregader-paris-01162640',
+    art: 'MEZCLAD.MONO FREGADER PARIS',
+    sku: '01-16-2640',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezclad-mono-fregader-paris-01162640',
+    nota: 'MEZCLAD.MONO FREGADER PARIS · artículo 01-16-2640 · ref. TB16D6 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 8800.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclador-p-fregadero-klp-bn-01162613',
+    art: 'MEZCLADOR P / FREGADERO KLP BN',
+    sku: '01-16-2613',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezclador-p-fregadero-klp-bn-01162613',
+    nota: 'MEZCLADOR P / FREGADERO KLP BN · artículo 01-16-2613 · ref. KLP9339BN · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 10463.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezclador-p-fregadero-klp-cr-01162612',
+    art: 'MEZCLADOR P / FREGADERO KLP CR',
+    sku: '01-16-2612',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezclador-p-fregadero-klp-cr-01162612',
+    nota: 'MEZCLADOR P / FREGADERO KLP CR · artículo 01-16-2612 · ref. KLP9339CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 5191.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-8-otto-negro-cobalto-01071495',
+    art: 'MEZCLADORA 8 OTTO NEGRO COBALTO',
+    sku: '01-07-1495',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-8-otto-negro-cobalto-01071495',
+    nota: 'MEZCLADORA 8 OTTO NEGRO COBALTO · artículo 01-07-1495 · ref. M810BK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 8703.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-8-otto-silver-chrome-01071496',
+    art: 'MEZCLADORA 8 OTTO SILVER CHROME',
+    sku: '01-07-1496',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-8-otto-silver-chrome-01071496',
+    nota: 'MEZCLADORA 8 OTTO SILVER CHROME · artículo 01-07-1496 · ref. M810CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 33869.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162764',
+    art: 'MEZCLADORA COCINA C / C DESPLEGABLE',
+    sku: '01-16-2764',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162764',
+    nota: 'MEZCLADORA COCINA C / C DESPLEGABLE · artículo 01-16-2764 · ref. S75005 · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 17697.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162768',
+    art: 'MEZCLADORA COCINA C / C DESPLEGABLE',
+    sku: '01-16-2768',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162768',
+    nota: 'MEZCLADORA COCINA C / C DESPLEGABLE · artículo 01-16-2768 · ref. 87233EWSRS · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 44033.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162765',
+    art: 'MEZCLADORA COCINA C / C DESPLEGABLE',
+    sku: '01-16-2765',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-c-c-desplegable-01162765',
+    nota: 'MEZCLADORA COCINA C / C DESPLEGABLE · artículo 01-16-2765 · ref. S75005BL · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 9005.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-01162720',
+    art: 'MEZCLADORA COCINA MANGUERA EXTRA',
+    sku: '01-16-2720',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-01162720',
+    nota: 'MEZCLADORA COCINA MANGUERA EXTRA · artículo 01-16-2720 · ref. KED88588CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 9451.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-black-01162719',
+    art: 'MEZCLADORA COCINA MANGUERA EXTRA BLACK',
+    sku: '01-16-2719',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-black-01162719',
+    nota: 'MEZCLADORA COCINA MANGUERA EXTRA BLACK · artículo 01-16-2719 · ref. KED88088BK · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3149.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-freg-inex-plus-01162532',
+    peso: 2,
+    art: 'MEZCLADORA FREG. INEX PLUS',
+    sku: '01-16-2532',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-freg-inex-plus-01162532',
+    nota: 'MEZCLADORA FREG. INEX PLUS · artículo 01-16-2532 · ref. 88003K · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3096.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregader-kitchen-faucet-01162690',
+    art: 'MEZCLADORA MONO / FREGADER KITCHEN FAUCET',
+    sku: '01-16-2690',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregader-kitchen-faucet-01162690',
+    nota: 'MEZCLADORA MONO / FREGADER KITCHEN FAUCET · artículo 01-16-2690 · ref. TFZLR2009BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 5295.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-paris-35-01162701',
+    art: 'MEZCLADORA MONO / FREGADERO PARIS-35',
+    sku: '01-16-2701',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-paris-35-01162701',
+    nota: 'MEZCLADORA MONO / FREGADERO PARIS-35 · artículo 01-16-2701 · ref. TB2155ORB · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1623.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-01162694',
+    art: 'MEZCLADORA MONO FREGADERO',
+    sku: '01-16-2694',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-01162694',
+    nota: 'MEZCLADORA MONO FREGADERO · artículo 01-16-2694 · ref. 88502-12A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 870.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-vigo-01162617',
+    art: 'MEZCLADORA MONO FREGADERO VIGO',
+    sku: '01-16-2617',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-vigo-01162617',
+    nota: 'MEZCLADORA MONO FREGADERO VIGO · artículo 01-16-2617 · ref. TB18042F1-02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3787.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-praga-01162537',
+    art: 'MEZCLADORA MONO FREGADERO PRAGA',
+    sku: '01-16-2537',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-praga-01162537',
+    nota: 'MEZCLADORA MONO FREGADERO PRAGA · artículo 01-16-2537 · ref. TYHF03 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3375.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-superf-01162689',
+    art: 'MEZCLADORA MONO FREGADERO SUPERF',
+    sku: '01-16-2689',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-superf-01162689',
+    nota: 'MEZCLADORA MONO FREGADERO SUPERF · artículo 01-16-2689 · ref. TB18T6 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1414.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-fregadero-01162696',
+    art: 'MEZCLADORA MONO P / FREGADERO',
+    sku: '01-16-2696',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-fregadero-01162696',
+    nota: 'MEZCLADORA MONO P / FREGADERO · artículo 01-16-2696 · ref. RB79151-16A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 4084.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162753',
+    art: 'MEZCLADORA MONO P / FREG. BLACK',
+    sku: '01-16-2753',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162753',
+    nota: 'MEZCLADORA MONO P / FREG. BLACK · artículo 01-16-2753 · ref. TBCK24KA10BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2715.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162755',
+    art: 'MEZCLADORA MONO P / FREG. BLACK',
+    sku: '01-16-2755',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162755',
+    nota: 'MEZCLADORA MONO P / FREG. BLACK · artículo 01-16-2755 · ref. TBCK-1817BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 5910.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162751',
+    art: 'MEZCLADORA MONO P / FREG. BLACK',
+    sku: '01-16-2751',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-black-01162751',
+    nota: 'MEZCLADORA MONO P / FREG. BLACK · artículo 01-16-2751 · ref. TBCK24KA13GGBL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2119.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162754',
+    art: 'MEZCLADORA MONO P / FREG. CROMO',
+    sku: '01-16-2754',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162754',
+    nota: 'MEZCLADORA MONO P / FREG. CROMO · artículo 01-16-2754 · ref. TBCK-1817CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3864.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162752',
+    art: 'MEZCLADORA MONO P / FREG. CROMO',
+    sku: '01-16-2752',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162752',
+    nota: 'MEZCLADORA MONO P / FREG. CROMO · artículo 01-16-2752 · ref. TBCK24KA10CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 5033.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162747',
+    art: 'MEZCLADORA MONO P / FREG. CROMO',
+    sku: '01-16-2747',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162747',
+    nota: 'MEZCLADORA MONO P / FREG. CROMO · artículo 01-16-2747 · ref. TBCK24KA14 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 4967.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162749',
+    art: 'MEZCLADORA MONO P / FREG. CROMO',
+    sku: '01-16-2749',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-cromo-01162749',
+    nota: 'MEZCLADORA MONO P / FREG. CROMO · artículo 01-16-2749 · ref. TBCK24KA11 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3850.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162737',
+    art: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK',
+    sku: '01-16-2737',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162737',
+    nota: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK · artículo 01-16-2737 · ref. TB8918BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2296.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162740',
+    art: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK',
+    sku: '01-16-2740',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162740',
+    nota: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK · artículo 01-16-2740 · ref. TB9207BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2161.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162738',
+    art: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK',
+    sku: '01-16-2738',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-black-01162738',
+    nota: 'MEZCLADORA MONO P / FREG. SUPERFICIE BLACK · artículo 01-16-2738 · ref. TB9108BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2026.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-brush-01162739',
+    art: 'MEZCLADORA MONO P / FREG. SUPERFICIE BRUSH',
+    sku: '01-16-2739',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-freg-superficie-brush-01162739',
+    nota: 'MEZCLADORA MONO P / FREG. SUPERFICIE BRUSH · artículo 01-16-2739 · ref. TB9207BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 10033.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-monomado-p-freg-01162722',
+    art: 'MEZCLADORA MONOMADO P / FREG',
+    sku: '01-16-2722',
+    marca: 'FLEXIMATIC',
+    url: 'https://ochoa.com.do/producto/mezcladora-monomado-p-freg-01162722',
+    nota: 'MEZCLADORA MONOMADO P / FREG · artículo 01-16-2722 · ref. 4503 · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1325.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-fegader-bastia-01162569',
+    art: 'MEZCLADORA P / FEGADER BASTIA',
+    sku: '01-16-2569',
+    marca: 'TILBY-GRI-ECO',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-fegader-bastia-01162569',
+    nota: 'MEZCLADORA P / FEGADER BASTIA · artículo 01-16-2569 · ref. TB2509 · marca TILBY-GRI-ECO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2709.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-fregadero-inex-plus-01162533',
+    art: 'MEZCLADORA P / FREGADERO INEX PLUS',
+    sku: '01-16-2533',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-fregadero-inex-plus-01162533',
+    nota: 'MEZCLADORA P / FREGADERO INEX PLUS · artículo 01-16-2533 · ref. 88004K · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 983.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-fregadero-puno-lujo-01162706',
+    art: 'MEZCLADORA P / FREGADERO PUNO LUJO',
+    sku: '01-16-2706',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-fregadero-puno-lujo-01162706',
+    nota: 'MEZCLADORA P / FREGADERO PUNO LUJO · artículo 01-16-2706 · ref. 807-20043. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1148.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01160130',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-0130',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01160130',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-0130 · ref. SPC-979/641 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 965.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01160026',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-0026',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01160026',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-0026 · ref. SPC-362-B018" · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1519.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162567',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2567',
+    marca: 'TILBY-GRI-ECO',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162567',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2567 · ref. TKF8004 · marca TILBY-GRI-ECO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1320.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162576',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2576',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162576',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2576 · ref. TKF8025 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 892.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01160021',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-0021',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01160021',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-0021 · ref. SPC-355 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2594.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01160341',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-0341',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01160341',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-0341 · ref. 53-061 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 3673.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162620',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2620',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162620',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2620 · ref. TB16D6BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2875.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162572',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2572',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162572',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2572 · ref. TFZG02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 6437.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162725',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2725',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162725',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2725 · ref. 807-22121. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2733.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162659',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2659',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162659',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2659 · ref. TBY108 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2872.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162693',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2693',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162693',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2693 · ref. 73505-20A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 2993.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162660',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2660',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162660',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2660 · ref. TBY108-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 10428.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-lavamanos-01162549',
+    art: 'MEZCLADORA PARA LAVAMANOS',
+    sku: '01-16-2549',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-lavamanos-01162549',
+    nota: 'MEZCLADORA PARA LAVAMANOS · artículo 01-16-2549 · ref. KL8338CR · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 14124.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-fregadero-eb-01071578',
+    art: 'MONOMANDO FREGADERO EB.',
+    sku: '01-07-1578',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-fregadero-eb-01071578',
+    nota: 'MONOMANDO FREGADERO EB. · artículo 01-07-1578 · ref. E-310-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 39181.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-fregadero-gourmet-salida-flex-01160343',
+    art: 'MONOMANDO FREGADERO GOURMET SALIDA FLEX',
+    sku: '01-16-0343',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-fregadero-gourmet-salida-flex-01160343',
+    nota: 'MONOMANDO FREGADERO GOURMET SALIDA FLEX · artículo 01-16-0343 · ref. E-305-C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 40376.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-fregadero-gourmet-twin-01162579',
+    art: 'MONOMANDO FREGADERO GOURMET TWIN',
+    sku: '01-16-2579',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-fregadero-gourmet-twin-01162579',
+    nota: 'MONOMANDO FREGADERO GOURMET TWIN · artículo 01-16-2579 · ref. E-308-C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 27514.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-freg-adara-retractil-2chorr-01162732',
+    art: 'MONOMANDO P / FREG. ADARA RETRACTIL 2CHORR',
+    sku: '01-16-2732',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-freg-adara-retractil-2chorr-01162732',
+    nota: 'MONOMANDO P / FREG. ADARA RETRACTIL 2CHORR · artículo 01-16-2732 · ref. E-312 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 13473.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-fregadero-nuva-cr-01160286',
+    art: 'MONOMANDO P / FREGADERO NUVA CR',
+    sku: '01-16-0286',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-fregadero-nuva-cr-01160286',
+    nota: 'MONOMANDO P / FREGADERO NUVA CR · artículo 01-16-0286 · ref. E-32 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 12690.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-para-fregadero-01160344',
+    peso: 2,
+    art: 'MONOMANDO PARA FREGADERO',
+    sku: '01-16-0344',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-para-fregadero-01160344',
+    nota: 'MONOMANDO PARA FREGADERO · artículo 01-16-0344 · ref. E-300-C · marca HELVEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 12657.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-para-fregadero-01160161',
+    art: 'MONOMANDO PARA FREGADERO',
+    sku: '01-16-0161',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-para-fregadero-01160161',
+    nota: 'MONOMANDO PARA FREGADERO · artículo 01-16-0161 · ref. E-34CROMO · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 18320.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-retractil-fregadero-cromo-01160239',
+    art: 'MONOMANDO RETRACTIL FREGADERO CROMO',
+    sku: '01-16-0239',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-retractil-fregadero-cromo-01160239',
+    nota: 'MONOMANDO RETRACTIL FREGADERO CROMO · artículo 01-16-0239 · ref. E-39 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 675.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-doble-plastica-p-fregadero-01071607',
+    art: 'LLAVE DOBLE PLASTICA P / FREGADERO',
+    sku: '01-07-1607',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-doble-plastica-p-fregadero-01071607',
+    nota: 'LLAVE DOBLE PLASTICA P / FREGADERO · artículo 01-07-1607 · ref. P03144 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 1070.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-sencilla-para-fregadero-01071605',
+    art: 'LLAVE SENCILLA PARA FREGADERO',
+    sku: '01-07-1605',
+    marca: 'AQUINA',
+    url: 'https://ochoa.com.do/producto/llave-sencilla-para-fregadero-01071605',
+    nota: 'LLAVE SENCILLA PARA FREGADERO · artículo 01-07-1605 · ref. P03107 · marca AQUINA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 9724.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-dor-01162718',
+    art: 'MEZCLADORA COCINA MANGUERA EXTRA DOR',
+    sku: '01-16-2718',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-manguera-extra-dor-01162718',
+    nota: 'MEZCLADORA COCINA MANGUERA EXTRA DOR · artículo 01-16-2718 · ref. KED88988GOLD · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-016', PROV_OCHOA, 21526.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-fregadero-01162542',
+    art: 'MEZCLADORA PARA FREGADERO',
+    sku: '01-16-2542',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-fregadero-01162542',
+    nota: 'MEZCLADORA PARA FREGADERO · artículo 01-16-2542 · ref. ME-303 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-016', PROV_CIMA, 1556, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-fregadero-tipo-sayc',
@@ -24758,7 +27368,31 @@
     url: 'https://carabela.do/products/monomando-para-fregadero-play-cromo',
     nota: 'Grifería Play · artículo 27463 · ref. Material: Latón · marca FOSTER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 11059.92, {
+  c('MAT-09-017', PROV_OCHOA, 28086.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-elect-con-sensor-de-baterias-01230378',
+    art: 'LLAVE ELECT. CON SENSOR DE BATERIAS',
+    sku: '01-23-0378',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/llave-elect-con-sensor-de-baterias-01230378',
+    nota: 'LLAVE ELECT. CON SENSOR DE BATERIAS · artículo 01-23-0378 · ref. TV-297C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_OCHOA, 53204.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-con-sensor-01162767',
+    art: 'MEZCLADORA COCINA CON SENSOR',
+    sku: '01-16-2767',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-con-sensor-01162767',
+    nota: 'MEZCLADORA COCINA CON SENSOR · artículo 01-16-2767 · ref. 7565EWBG · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-017', PROV_OCHOA, 47253.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cocina-con-sensor-01162766',
+    art: 'MEZCLADORA COCINA CON SENSOR',
+    sku: '01-16-2766',
+    marca: 'MOEN',
+    url: 'https://ochoa.com.do/producto/mezcladora-cocina-con-sensor-01162766',
+    nota: 'MEZCLADORA COCINA CON SENSOR · artículo 01-16-2766 · ref. 7565EWBL · marca MOEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 11059.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monom-barra-ext-new-belice-01021175',
     art: 'MEZC MONOM. BARRA EXT.NEW BELICE',
     sku: '01-02-1175',
@@ -24766,7 +27400,7 @@
     url: 'https://ochoa.com.do/producto/mezc-monom-barra-ext-new-belice-01021175',
     nota: 'MEZC MONOM. BARRA EXT.NEW BELICE · artículo 01-02-1175 · ref. 96170 · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 5025.94, {
+  c('MAT-09-018', PROV_OCHOA, 5025.94, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-cromo-01021754',
     art: 'MEZCL. DUCHA STELO MILAN CROMO',
     sku: '01-02-1754',
@@ -24774,7 +27408,7 @@
     url: 'https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-cromo-01021754',
     nota: 'MEZCL. DUCHA STELO MILAN CROMO · artículo 01-02-1754 · ref. D181STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 5024.64, {
+  c('MAT-09-018', PROV_OCHOA, 5024.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-gris-met-01021755',
     art: 'MEZCL. DUCHA STELO MILAN GRIS MET',
     sku: '01-02-1755',
@@ -24782,7 +27416,7 @@
     url: 'https://ochoa.com.do/producto/mezcl-ducha-stelo-milan-gris-met-01021755',
     nota: 'MEZCL. DUCHA STELO MILAN GRIS MET · artículo 01-02-1755 · ref. D182STL · marca INEX. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_OCHOA, 2603.89, {
+  c('MAT-09-018', PROV_OCHOA, 2603.89, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-01021719',
     art: 'MEZCLADORA MONO DUCHA C / SALIDA',
     sku: '01-02-1719',
@@ -24790,105 +27424,768 @@
     url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-01021719',
     nota: 'MEZCLADORA MONO DUCHA C / SALIDA · artículo 01-02-1719 · ref. TBZ21C3 · marca TILBY-GR. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 2035, {
+  c('MAT-09-018', PROV_OCHOA, 2795.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-banera-monomando-01021703',
+    art: 'MEZCLADORA P / BANERA MONOMANDO',
+    sku: '01-02-1703',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-banera-monomando-01021703',
+    nota: 'MEZCLADORA P / BANERA MONOMANDO · artículo 01-02-1703 · ref. 807-3002. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2083.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-banera-monomando-01021671',
+    art: 'MEZCLADORA P / BANERA MONOMANDO',
+    sku: '01-02-1671',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-banera-monomando-01021671',
+    nota: 'MEZCLADORA P / BANERA MONOMANDO · artículo 01-02-1671 · ref. LY-3526. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 16562.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-ducha-mon-h103-spira-cromo-01021483',
+    art: 'GRIFERIA DUCHA MON (H103) SPIRA CROMO',
+    sku: '01-02-1483',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/griferia-ducha-mon-h103-spira-cromo-01021483',
+    nota: 'GRIFERIA DUCHA MON (H103) SPIRA CROMO · artículo 01-02-1483 · ref. HM0354C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 8945.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-ducha-spacio-01021441',
+    art: 'GRIFERIA DUCHA SPACIO',
+    sku: '01-02-1441',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/griferia-ducha-spacio-01021441',
+    nota: 'GRIFERIA DUCHA SPACIO · artículo 01-02-1441 · ref. PDS0343C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 1273, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-empotrar-secilla-t-sayco-01021168',
+    art: 'LLAVE EMPOTRAR SECILLA T / SAYCO',
+    sku: '01-02-1168',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/llave-empotrar-secilla-t-sayco-01021168',
+    nota: 'LLAVE EMPOTRAR SECILLA T / SAYCO · artículo 01-02-1168 · ref. 53055 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 412.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-p-empotrar-tipo-nibco-01020143',
+    art: 'LLAVE P / EMPOTRAR TIPO NIBCO',
+    sku: '01-02-0143',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-p-empotrar-tipo-nibco-01020143',
+    nota: 'LLAVE P / EMPOTRAR TIPO NIBCO · artículo 01-02-0143 · ref. SPC-953-T04 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 1943.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-para-empotrar-01021660',
+    art: 'LLAVE PARA EMPOTRAR',
+    sku: '01-02-1660',
+    marca: 'URREA',
+    url: 'https://ochoa.com.do/producto/llave-para-empotrar-01021660',
+    nota: 'LLAVE PARA EMPOTRAR · artículo 01-02-1660 · ref. 52QG · marca URREA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 727.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/llave-para-empotrar-01020057',
+    art: 'LLAVE PARA EMPOTRAR',
+    sku: '01-02-0057',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/llave-para-empotrar-01020057',
+    nota: 'LLAVE PARA EMPOTRAR · artículo 01-02-0057 · ref. SPC-441-L011/2" · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2139.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-doble-p-banera-01020025',
+    art: 'MEZC DOBLE P / BAÑERA.',
+    sku: '01-02-0025',
+    marca: 'SPC',
+    url: 'https://ochoa.com.do/producto/mezc-doble-p-banera-01020025',
+    nota: 'MEZC DOBLE P / BAÑERA. · artículo 01-02-0025 · ref. SPC-360 · marca SPC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 16961.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monomando-barra-ext-bermuda-01021275',
+    art: 'MEZC MONOMANDO BARRA EXT.BERMUDA',
+    sku: '01-02-1275',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezc-monomando-barra-ext-bermuda-01021275',
+    nota: 'MEZC MONOMANDO BARRA EXT.BERMUDA · artículo 01-02-1275 · ref. 96165 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 15141.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-monomando-barra-ext-caiman-01021271',
+    art: 'MEZC MONOMANDO BARRA EXT.CAIMAN',
+    sku: '01-02-1271',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezc-monomando-barra-ext-caiman-01021271',
+    nota: 'MEZC MONOMANDO BARRA EXT.CAIMAN · artículo 01-02-1271 · ref. 96166 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4293.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-acc-cromo-01021740',
+    art: 'MEZCL MONO DUCHA ACC. CROMO',
+    sku: '01-02-1740',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-acc-cromo-01021740',
+    nota: 'MEZCL MONO DUCHA ACC. CROMO · artículo 01-02-1740 · ref. 1201-CR+100118-7CR · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5025.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-acc-matte-black-01021741',
+    art: 'MEZCL MONO DUCHA ACC. MATTE BLACK',
+    sku: '01-02-1741',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-acc-matte-black-01021741',
+    nota: 'MEZCL MONO DUCHA ACC. MATTE BLACK · artículo 01-02-1741 · ref. 1201-BM+100118-7BM · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4012.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-ducha-barcelona-01021558',
+    art: 'MEZCL P / DUCHA BARCELONA',
+    sku: '01-02-1558',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-ducha-barcelona-01021558',
+    nota: 'MEZCL P / DUCHA BARCELONA · artículo 01-02-1558 · ref. 99002BS · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 11746.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-colunna-mono-ducha-paris-35-01021608',
+    art: 'MEZCL. COLUNNA MONO DUCHA PARIS 35',
+    sku: '01-02-1608',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-colunna-mono-ducha-paris-35-01021608',
+    nota: 'MEZCL. COLUNNA MONO DUCHA PARIS 35 · artículo 01-02-1608 · ref. TB2151 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5025.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-ducha-cibeles-plus-h-01021533',
+    art: 'MEZCL. DUCHA CIBELES PLUS H',
+    sku: '01-02-1533',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-ducha-cibeles-plus-h-01021533',
+    nota: 'MEZCL. DUCHA CIBELES PLUS H · artículo 01-02-1533 · ref. 44014HBS · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2792.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-dcuha-bruselas-35-01021504',
+    art: 'MEZCL. MONO DCUHA BRUSELAS-35',
+    sku: '01-02-1504',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-dcuha-bruselas-35-01021504',
+    nota: 'MEZCL. MONO DCUHA BRUSELAS-35 · artículo 01-02-1504 · ref. TFZA06 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3610.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-versus-01021497',
+    art: 'MEZCL. MONO DUCHA VERSUS',
+    sku: '01-02-1497',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-versus-01021497',
+    nota: 'MEZCL. MONO DUCHA VERSUS · artículo 01-02-1497 · ref. 77203G · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3494.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-versus-plus-01021496',
+    art: 'MEZCL. MONO DUCHA VERSUS PLUS',
+    sku: '01-02-1496',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-versus-plus-01021496',
+    nota: 'MEZCL. MONO DUCHA VERSUS PLUS · artículo 01-02-1496 · ref. 77003G · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5912, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-acc-brush-golden-01021742',
+    art: 'MEZCL. MONO DUCHA ACC. BRUSH GOLDEN',
+    sku: '01-02-1742',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-acc-brush-golden-01021742',
+    nota: 'MEZCL. MONO DUCHA ACC. BRUSH GOLDEN · artículo 01-02-1742 · ref. 1201-BG+100118-7BG · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6105.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-mono-ducha-brush-nikel-01021609',
+    art: 'MEZCL. MONO DUCHA BRUSH NIKEL',
+    sku: '01-02-1609',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-mono-ducha-brush-nikel-01021609',
+    nota: 'MEZCL. MONO DUCHA BRUSH NIKEL · artículo 01-02-1609 · ref. TB2156BN · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4052.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-bano-doble-t-sayco-01021167',
+    art: 'MEZCL. P / BANO DOBLE T / SAYCO',
+    sku: '01-02-1167',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-bano-doble-t-sayco-01021167',
+    nota: 'MEZCL. P / BANO DOBLE T / SAYCO · artículo 01-02-1167 · ref. 53044 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5160.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-bano-triple-t-sayco-01021166',
+    art: 'MEZCL. P / BANO TRIPLE T / SAYCO',
+    sku: '01-02-1166',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-p-bano-triple-t-sayco-01021166',
+    nota: 'MEZCL. P / BANO TRIPLE T / SAYCO · artículo 01-02-1166 · ref. 53033 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 14768.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021606',
+    art: 'MEZCL. P / JACUZZI FREESTANDING',
+    sku: '01-02-1606',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021606',
+    nota: 'MEZCL. P / JACUZZI FREESTANDING · artículo 01-02-1606 · ref. TBF2006 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 11213.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021603',
+    art: 'MEZCL. P / JACUZZI FREESTANDING',
+    sku: '01-02-1603',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021603',
+    nota: 'MEZCL. P / JACUZZI FREESTANDING · artículo 01-02-1603 · ref. TBF2001 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 16267.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021604',
+    art: 'MEZCL. P / JACUZZI FREESTANDING',
+    sku: '01-02-1604',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcl-p-jacuzzi-freestanding-01021604',
+    nota: 'MEZCL. P / JACUZZI FREESTANDING · artículo 01-02-1604 · ref. TBF2004 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2203.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcl-monoblock-p-bano-antigona-cromo-01020853',
+    art: 'MEZCL.MONOBLOCK P / BANO ANTIGONA CROMO',
+    sku: '01-02-0853',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcl-monoblock-p-bano-antigona-cromo-01020853',
+    nota: 'MEZCL.MONOBLOCK P / BANO ANTIGONA CROMO · artículo 01-02-0853 · ref. 94-476 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2968.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-ducha-s-salida-capri-35-01021657',
+    art: 'MEZCLA MONO DUCHA S / SALIDA CAPRI-35',
+    sku: '01-02-1657',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-ducha-s-salida-capri-35-01021657',
+    nota: 'MEZCLA MONO DUCHA S / SALIDA CAPRI-35 · artículo 01-02-1657 · ref. TBM12056CROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4087.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcla-mono-ducha-c-salida-capri-35-01021658',
+    art: 'MEZCLA. MONO DUCHA C / SALIDA CAPRI 35',
+    sku: '01-02-1658',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcla-mono-ducha-c-salida-capri-35-01021658',
+    nota: 'MEZCLA. MONO DUCHA C / SALIDA CAPRI 35 · artículo 01-02-1658 · ref. TBM13056CROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 15504.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-cuello-ganzo-flamingo-c-01020469',
+    art: 'MEZCLADORA CUELLO GANZO FLAMINGO C',
+    sku: '01-02-0469',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-cuello-ganzo-flamingo-c-01020469',
+    nota: 'MEZCLADORA CUELLO GANZO FLAMINGO C · artículo 01-02-0469 · ref. H-13341G · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2987.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-empotrar-ind-reg-clasica-cr-01021523',
+    art: 'MEZCLADORA EMPOTRAR IND REG CLASICA CR',
+    sku: '01-02-1523',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-empotrar-ind-reg-clasica-cr-01021523',
+    nota: 'MEZCLADORA EMPOTRAR IND REG CLASICA CR · artículo 01-02-1523 · ref. MR-1005 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4283.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-bano-ducha-01021717',
+    art: 'MEZCLADORA MONO BAÑO DUCHA',
+    sku: '01-02-1717',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-bano-ducha-01021717',
+    nota: 'MEZCLADORA MONO BAÑO DUCHA · artículo 01-02-1717 · ref. TGSM031 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 1828.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-01021477',
+    art: 'MEZCLADORA MONO DUCHA',
+    sku: '01-02-1477',
+    marca: 'TILBY-GRI-ECO',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-01021477',
+    nota: 'MEZCLADORA MONO DUCHA · artículo 01-02-1477 · ref. TB801D1-01 · marca TILBY-GRI-ECO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2326.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-01021653',
+    art: 'MEZCLADORA MONO DUCHA',
+    sku: '01-02-1653',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-01021653',
+    nota: 'MEZCLADORA MONO DUCHA · artículo 01-02-1653 · ref. RB79151-13A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4122.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-01021667',
+    art: 'MEZCLADORA MONO DUCHA',
+    sku: '01-02-1667',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-01021667',
+    nota: 'MEZCLADORA MONO DUCHA · artículo 01-02-1667 · ref. TB20L3CROMO · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2699.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-01021652',
+    art: 'MEZCLADORA MONO DUCHA',
+    sku: '01-02-1652',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-01021652',
+    nota: 'MEZCLADORA MONO DUCHA · artículo 01-02-1652 · ref. 73505-13A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2272.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-01021655',
+    art: 'MEZCLADORA MONO DUCHA',
+    sku: '01-02-1655',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-01021655',
+    nota: 'MEZCLADORA MONO DUCHA · artículo 01-02-1655 · ref. RB79221-13A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2788.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-bari-01021583',
+    art: 'MEZCLADORA MONO DUCHA BARI',
+    sku: '01-02-1583',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-bari-01021583',
+    nota: 'MEZCLADORA MONO DUCHA BARI · artículo 01-02-1583 · ref. TB2607 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3195.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-01021704',
+    art: 'MEZCLADORA MONO DUCHA C / SALIDA',
+    sku: '01-02-1704',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-01021704',
+    nota: 'MEZCLADORA MONO DUCHA C / SALIDA · artículo 01-02-1704 · ref. TBKE0311 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4627.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-cua-black-01021707',
+    art: 'MEZCLADORA MONO DUCHA C / SALIDA CUA BLACK',
+    sku: '01-02-1707',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-cua-black-01021707',
+    nota: 'MEZCLADORA MONO DUCHA C / SALIDA CUA BLACK · artículo 01-02-1707 · ref. TB21L3-B · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5146.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-cuad-cr-01021705',
+    art: 'MEZCLADORA MONO DUCHA C / SALIDA CUAD. CR',
+    sku: '01-02-1705',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-c-salida-cuad-cr-01021705',
+    nota: 'MEZCLADORA MONO DUCHA C / SALIDA CUAD. CR · artículo 01-02-1705 · ref. TB21L3 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3719.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-cromo-01021718',
+    art: 'MEZCLADORA MONO DUCHA CROMO',
+    sku: '01-02-1718',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-cromo-01021718',
+    nota: 'MEZCLADORA MONO DUCHA CROMO · artículo 01-02-1718 · ref. TBH181103 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 4218.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-davos-40-01021548',
+    art: 'MEZCLADORA MONO DUCHA DAVOS 40',
+    sku: '01-02-1548',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-davos-40-01021548',
+    nota: 'MEZCLADORA MONO DUCHA DAVOS 40 · artículo 01-02-1548 · ref. TLX8831 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6015.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-ducha-paris-35-01021607',
+    art: 'MEZCLADORA MONO DUCHA PARIS 35',
+    sku: '01-02-1607',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-ducha-paris-35-01021607',
+    nota: 'MEZCLADORA MONO DUCHA PARIS 35 · artículo 01-02-1607 · ref. TB2156 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2012.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-fregadero-cantabria-01162615',
+    art: 'MEZCLADORA MONO FREGADERO CANTABRIA',
+    sku: '01-16-2615',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-fregadero-cantabria-01162615',
+    nota: 'MEZCLADORA MONO FREGADERO CANTABRIA · artículo 01-16-2615 · ref. TB1803-4 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2047.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-cali-01021756',
+    art: 'MEZCLADORA MONO P / DUCHA CALI',
+    sku: '01-02-1756',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-cali-01021756',
+    nota: 'MEZCLADORA MONO P / DUCHA CALI · artículo 01-02-1756 · ref. TB1657A1-02 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3468.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-malaga-cromo-01021771',
+    art: 'MEZCLADORA MONO P / DUCHA MALAGA CROMO',
+    sku: '01-02-1771',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-malaga-cromo-01021771',
+    nota: 'MEZCLADORA MONO P / DUCHA MALAGA CROMO · artículo 01-02-1771 · ref. TBXC31802CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2500.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-parma-black-01021769',
+    art: 'MEZCLADORA MONO P / DUCHA PARMA BLACK',
+    sku: '01-02-1769',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-parma-black-01021769',
+    nota: 'MEZCLADORA MONO P / DUCHA PARMA BLACK · artículo 01-02-1769 · ref. TBLXC-33002S · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2153.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-parma-cromo-01021770',
+    art: 'MEZCLADORA MONO P / DUCHA PARMA CROMO',
+    sku: '01-02-1770',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-parma-cromo-01021770',
+    nota: 'MEZCLADORA MONO P / DUCHA PARMA CROMO · artículo 01-02-1770 · ref. XC-32402 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3968.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-torino-black-01021774',
+    art: 'MEZCLADORA MONO P / DUCHA TORINO BLACK',
+    sku: '01-02-1774',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-torino-black-01021774',
+    nota: 'MEZCLADORA MONO P / DUCHA TORINO BLACK · artículo 01-02-1774 · ref. TBXC32602BL · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3620.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-torino-cromo-01021782',
+    art: 'MEZCLADORA MONO P / DUCHA TORINO CROMO',
+    sku: '01-02-1782',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-torino-cromo-01021782',
+    nota: 'MEZCLADORA MONO P / DUCHA TORINO CROMO · artículo 01-02-1782 · ref. TBXC32602CH · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 1881.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-mono-p-ducha-01021654',
+    art: 'MEZCLADORA MONO P. / DUCHA',
+    sku: '01-02-1654',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-mono-p-ducha-01021654',
+    nota: 'MEZCLADORA MONO P. / DUCHA · artículo 01-02-1654 · ref. RB73503-13A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2813.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-ducha-mono-01021651',
+    art: 'MEZCLADORA P / DUCHA MONO',
+    sku: '01-02-1651',
+    marca: 'ULTRA',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-ducha-mono-01021651',
+    nota: 'MEZCLADORA P / DUCHA MONO · artículo 01-02-1651 · ref. 75508-13A · marca ULTRA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2290.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-ducha-barcelona-w-01021569',
+    peso: 2,
+    art: 'MEZCLADORA P / DUCHA BARCELONA W',
+    sku: '01-02-1569',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-ducha-barcelona-w-01021569',
+    nota: 'MEZCLADORA P / DUCHA BARCELONA W · artículo 01-02-1569 · ref. 99002BSW · marca INEX. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2914.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-p-ducha-sus-304-01021800',
+    art: 'MEZCLADORA P / DUCHA SUS 304',
+    sku: '01-02-1800',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezcladora-p-ducha-sus-304-01021800',
+    nota: 'MEZCLADORA P / DUCHA SUS 304 · artículo 01-02-1800 · ref. TB-30403 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2558.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-ducha-bastia-01021564',
+    art: 'MEZCLADORA PARA DUCHA BASTIA',
+    sku: '01-02-1564',
+    marca: 'TILBY-GRI-ECO',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-ducha-bastia-01021564',
+    nota: 'MEZCLADORA PARA DUCHA BASTIA · artículo 01-02-1564 · ref. TB2701 · marca TILBY-GRI-ECO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3896.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-ducha-mallorca-01021561',
+    art: 'MEZCLADORA PARA DUCHA MALLORCA',
+    sku: '01-02-1561',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-ducha-mallorca-01021561',
+    nota: 'MEZCLADORA PARA DUCHA MALLORCA · artículo 01-02-1561 · ref. 99005BS · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2280.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-ducha-quartz-01021532',
+    art: 'MEZCLADORA PARA DUCHA QUARTZ',
+    sku: '01-02-1532',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-ducha-quartz-01021532',
+    nota: 'MEZCLADORA PARA DUCHA QUARTZ · artículo 01-02-1532 · ref. 44011/44013HBS · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 2284.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezcladora-para-ducha-roma-01021560',
+    art: 'MEZCLADORA PARA DUCHA ROMA',
+    sku: '01-02-1560',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/mezcladora-para-ducha-roma-01021560',
+    nota: 'MEZCLADORA PARA DUCHA ROMA · artículo 01-02-1560 · ref. 99004BS · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 15339.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-con-desviador-manual-01021593',
+    art: 'MONOMANDO CON DESVIADOR MANUAL',
+    sku: '01-02-1593',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-con-desviador-manual-01021593',
+    nota: 'MONOMANDO CON DESVIADOR MANUAL · artículo 01-02-1593 · ref. METR-01-EXP · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 8709.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-empotrar-para-regadera-01021676',
+    art: 'MONOMANDO DE EMPOTRAR PARA REGADERA',
+    sku: '01-02-1676',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-empotrar-para-regadera-01021676',
+    nota: 'MONOMANDO DE EMPOTRAR PARA REGADERA · artículo 01-02-1676 · ref. E-702-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 7730.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-lavabo-alto-01071602',
+    art: 'MONOMANDO DE LAVABO ALTO',
+    sku: '01-07-1602',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-lavabo-alto-01071602',
+    nota: 'MONOMANDO DE LAVABO ALTO · artículo 01-07-1602 · ref. MO8-DC-01-B · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6272.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-de-regadera-maxima-01021571',
+    art: 'MONOMANDO DE REGADERA MAXIMA',
+    sku: '01-02-1571',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-de-regadera-maxima-01021571',
+    nota: 'MONOMANDO DE REGADERA MAXIMA · artículo 01-02-1571 · ref. E-712 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6828.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-ducha-spacio-01021421',
+    art: 'MONOMANDO DUCHA SPACIO',
+    sku: '01-02-1421',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-ducha-spacio-01021421',
+    nota: 'MONOMANDO DUCHA SPACIO · artículo 01-02-1421 · ref. MOR-SP-01 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5512.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-duchas-sin-desviador-01021542',
+    art: 'MONOMANDO DUCHAS SIN DESVIADOR',
+    sku: '01-02-1542',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-duchas-sin-desviador-01021542',
+    nota: 'MONOMANDO DUCHAS SIN DESVIADOR · artículo 01-02-1542 · ref. E-708 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 14666.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-explora-con-desviado-01021592',
+    art: 'MONOMANDO EXPLORA CON DESVIADO',
+    sku: '01-02-1592',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-explora-con-desviado-01021592',
+    nota: 'MONOMANDO EXPLORA CON DESVIADO · artículo 01-02-1592 · ref. METR-01-CEN · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 15937.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-explora-con-desviado-01021594',
+    art: 'MONOMANDO EXPLORA CON DESVIADO',
+    sku: '01-02-1594',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-explora-con-desviado-01021594',
+    nota: 'MONOMANDO EXPLORA CON DESVIADO · artículo 01-02-1594 · ref. METR-02-CEN · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 7164.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-lav-scuadra-chap-sh1506-01021636',
+    art: 'MONOMANDO P / LAV. SCUADRA CHAP SH1506',
+    sku: '01-02-1636',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-lav-scuadra-chap-sh1506-01021636',
+    nota: 'MONOMANDO P / LAV. SCUADRA CHAP SH1506 · artículo 01-02-1636 · ref. E919-CHAP · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6338.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-ducha-century-c-d-01021543',
+    art: 'MONOMANDO P / DUCHA CENTURY C / D',
+    sku: '01-02-1543',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-ducha-century-c-d-01021543',
+    nota: 'MONOMANDO P / DUCHA CENTURY C / D · artículo 01-02-1543 · ref. E-709 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6362.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-ducha-squadra-c-d-01021544',
+    art: 'MONOMANDO P / DUCHA SQUADRA C / D',
+    sku: '01-02-1544',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-ducha-squadra-c-d-01021544',
+    nota: 'MONOMANDO P / DUCHA SQUADRA C / D · artículo 01-02-1544 · ref. E-711 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5562.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-p-ducha-squadra-s-d-01021541',
+    art: 'MONOMANDO P / DUCHA SQUADRA S / D',
+    sku: '01-02-1541',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-p-ducha-squadra-s-d-01021541',
+    nota: 'MONOMANDO P / DUCHA SQUADRA S / D · artículo 01-02-1541 · ref. E-710 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5596.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-para-duchas-piazza-01021650',
+    art: 'MONOMANDO PARA DUCHAS PIAZZA',
+    sku: '01-02-1650',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-para-duchas-piazza-01021650',
+    nota: 'MONOMANDO PARA DUCHAS PIAZZA · artículo 01-02-1650 · ref. PIA-200 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 12259.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-para-regadera-01021722',
+    art: 'MONOMANDO PARA REGADERA',
+    sku: '01-02-1722',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-para-regadera-01021722',
+    nota: 'MONOMANDO PARA REGADERA · artículo 01-02-1722 · ref. E702-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6538.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-para-regadera-01021728',
+    art: 'MONOMANDO PARA REGADERA',
+    sku: '01-02-1728',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-para-regadera-01021728',
+    nota: 'MONOMANDO PARA REGADERA · artículo 01-02-1728 · ref. MOR-DC-01-B · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 6930.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-reg-sdesv-max-au-01021750',
+    art: 'MONOMANDO REG. SDESV MAX AU',
+    sku: '01-02-1750',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-reg-sdesv-max-au-01021750',
+    nota: 'MONOMANDO REG. SDESV MAX AU · artículo 01-02-1750 · ref. E712-AU · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 15423.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-regadera-cdesv-piura-cr-01021748',
+    art: 'MONOMANDO REGADERA CDESV PIURA CR',
+    sku: '01-02-1748',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-regadera-cdesv-piura-cr-01021748',
+    nota: 'MONOMANDO REGADERA CDESV PIURA CR · artículo 01-02-1748 · ref. PIU-201 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5703.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-regadera-dev-squadra-eb-01021677',
+    art: 'MONOMANDO REGADERA DEV. SQUADRA EB',
+    sku: '01-02-1677',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-regadera-dev-squadra-eb-01021677',
+    nota: 'MONOMANDO REGADERA DEV. SQUADRA EB · artículo 01-02-1677 · ref. E-710-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 13595.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-regadera-sdesv-piura-cr-01021747',
+    art: 'MONOMANDO REGADERA SDESV PIURA CR',
+    sku: '01-02-1747',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-regadera-sdesv-piura-cr-01021747',
+    nota: 'MONOMANDO REGADERA SDESV PIURA CR · artículo 01-02-1747 · ref. PIU-200 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 9345.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-regadera-sdesv-premier-eb-cr-01021611',
+    art: 'MONOMANDO REGADERA SDESV PREMIER EB / CR',
+    sku: '01-02-1611',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-regadera-sdesv-premier-eb-cr-01021611',
+    nota: 'MONOMANDO REGADERA SDESV PREMIER EB / CR · artículo 01-02-1611 · ref. E-702-EB/CR · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 12972.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomandolav-ctra-push-bamboo-eb-01021678',
+    art: 'MONOMANDOLAV CTRA PUSH BAMBOO EB',
+    sku: '01-02-1678',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomandolav-ctra-push-bamboo-eb-01021678',
+    nota: 'MONOMANDOLAV CTRA PUSH BAMBOO EB · artículo 01-02-1678 · ref. E-922-EB · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 18801.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/griferia-ducha-3m-h200-albatros-c-01020382',
+    art: 'GRIFERIA DUCHA 3M(H200) ALBATROS C',
+    sku: '01-02-0382',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/griferia-ducha-3m-h200-albatros-c-01020382',
+    nota: 'GRIFERIA DUCHA 3M(H200) ALBATROS C · artículo 01-02-0382 · ref. HO0117C · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 3319.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mezc-mono-ducha-c-salida-d3001-fh02-h10-01021076',
+    art: 'MEZC. MONO DUCHA C / SALIDA-D3001,FH02,H10',
+    sku: '01-02-1076',
+    marca: 'TILBY-GR',
+    url: 'https://ochoa.com.do/producto/mezc-mono-ducha-c-salida-d3001-fh02-h10-01021076',
+    nota: 'MEZC. MONO DUCHA C / SALIDA-D3001,FH02,H10 · artículo 01-02-1076 · ref. S3241A0R41/TLX7807 · marca TILBY-GR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_OCHOA, 5711.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/monomando-regadera-sdesv-lusitania-cr-01071650',
+    art: 'MONOMANDO REGADERA SDESV LUSITANIA CR',
+    sku: '01-07-1650',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/monomando-regadera-sdesv-lusitania-cr-01071650',
+    nota: 'MONOMANDO REGADERA SDESV LUSITANIA CR · artículo 01-07-1650 · ref. LUS-200 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-018', PROV_CIMA, 2035, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-sm-0202',
     art: 'MEZCLADORA DUCHA MONO SM-0202',
     sku: '034090',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-sm-0202',
     nota: 'MEZCLADORA DUCHA MONO SM-0202 · artículo 034090. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 3313, {
+  c('MAT-09-018', PROV_CIMA, 3313, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-82',
     art: 'MEZCLADORA DUCHA MONO GRI-81',
     sku: '7592032510181',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-82',
     nota: 'MEZCLADORA DUCHA MONO GRI-81 · artículo 7592032510181. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 4695, {
+  c('MAT-09-018', PROV_CIMA, 4695, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-83',
     art: 'MEZCLADORA DUCHA MONO GRI-83',
     sku: '7592032504432',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-83',
     nota: 'MEZCLADORA DUCHA MONO GRI-83 · artículo 7592032504432. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 4000, {
+  c('MAT-09-018', PROV_CIMA, 4000, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-79',
     art: 'MEZCLADORA DUCHA MONO GRI-79',
     sku: '7592032030368',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-79',
     nota: 'MEZCLADORA DUCHA MONO GRI-79 · artículo 7592032030368. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 2397, {
+  c('MAT-09-018', PROV_CIMA, 2397, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-10497n',
     art: 'LLAVE BAÑO EMPOTRAR 1/2 10497N',
     sku: '091712386407',
     url: 'https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-10497n',
     nota: 'LLAVE BAÑO EMPOTRAR 1/2 10497N · artículo 091712386407. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 2672, {
+  c('MAT-09-018', PROV_CIMA, 2672, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16011',
     art: 'MEZCLADORA DUCHA MONO EM-16010',
     sku: '7460215700141',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16011',
     nota: 'MEZCLADORA DUCHA MONO EM-16010 · artículo 7460215700141. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 3869, {
+  c('MAT-09-018', PROV_CIMA, 3869, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-inox',
     art: 'MEZCLADORA DUCHA MONO INOX',
     sku: '7592032702371',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-inox',
     nota: 'MEZCLADORA DUCHA MONO INOX · artículo 7592032702371. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 2895, {
+  c('MAT-09-018', PROV_CIMA, 2895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-81',
     art: 'MEZCLADORA DUCHA MONO GRI-81',
     sku: '7592032504418',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-81',
     nota: 'MEZCLADORA DUCHA MONO GRI-81 · artículo 7592032504418. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 3095, {
+  c('MAT-09-018', PROV_CIMA, 3095, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-78',
     art: 'MEZCLADORA DUCHA MONO GRI-78',
     sku: '7592032030351',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-gri-78',
     nota: 'MEZCLADORA DUCHA MONO GRI-78 · artículo 7592032030351. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 2335, {
+  c('MAT-09-018', PROV_CIMA, 2335, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16010',
     art: 'MEZCLADORA DUCHA MONO EM-16010',
     sku: '016010',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-em-16010',
     nota: 'MEZCLADORA DUCHA MONO EM-16010 · artículo 016010. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 6321, {
+  c('MAT-09-018', PROV_CIMA, 6321, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-mono-34042',
     art: 'MEZCLADORA DUCHA MONO 34042',
     sku: '7460215705436',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-mono-34042',
     nota: 'MEZCLADORA DUCHA MONO 34042 · artículo 7460215705436. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 4160, {
+  c('MAT-09-018', PROV_CIMA, 4160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-77',
     art: 'MEZCLADORA DUCHA M GRI-77',
     sku: '7592032030344',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-77',
     nota: 'MEZCLADORA DUCHA M GRI-77 · artículo 7592032030344. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 3702, {
+  c('MAT-09-018', PROV_CIMA, 3702, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-76',
     art: 'MEZCLADORA DUCHA M GRI-76',
     sku: '7592032030337',
     url: 'https://ferreteriacima.com.do/products/mezcladora-ducha-m-gri-76',
     nota: 'MEZCLADORA DUCHA M GRI-76 · artículo 7592032030337. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CIMA, 945, {
+  c('MAT-09-018', PROV_CIMA, 945, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-puno-a',
     art: 'LLAVE BAÑO EMPOTRAR 1/2 PUNO A',
     sku: '054133',
     url: 'https://ferreteriacima.com.do/products/llave-bano-empotrar-1-2-puno-a',
     nota: 'LLAVE BAÑO EMPOTRAR 1/2 PUNO A · artículo 054133. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CERARTE, 2347.43, {
+  c('MAT-09-018', PROV_CERARTE, 2347.43, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-bauloop-sustituto-007229?variant=000682%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA BAULOOP (SUSTITUTO 007229)',
@@ -24897,7 +28194,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-bauloop-sustituto-007229?variant=000682%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA BAULOOP (SUSTITUTO 007229) · artículo CERA-01125 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 14948.07, {
+  c('MAT-09-018', PROV_CERARTE, 14948.07, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-eurocube?variant=000687%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA EUROCUBE',
@@ -24906,7 +28203,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-eurocube?variant=000687%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA EUROCUBE · artículo CERA-01130 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 7502.67, {
+  c('MAT-09-018', PROV_CERARTE, 7502.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI',
     itbis: false,
     peso: 2,
@@ -24916,7 +28213,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA TORTONA · artículo CERA-34273 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 15860.91, {
+  c('MAT-09-018', PROV_CERARTE, 15860.91, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20BLACK%20ME%20B%20%3A%20GESSI',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA TORTONA',
@@ -24925,7 +28222,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20BLACK%20ME%20B%20%3A%20GESSI',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA TORTONA · artículo CERA-34274 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 15858.5, {
+  c('MAT-09-018', PROV_CERARTE, 15858.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20WARM%20BRONZE%20B%20%3A%20GESSI',
     itbis: false,
     peso: 3,
@@ -24935,7 +28232,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20WARM%20BRONZE%20B%20%3A%20GESSI',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA TORTONA · artículo CERA-34276 · marca GESSI SPA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 11965.07, {
+  c('MAT-09-018', PROV_CERARTE, 11965.07, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20FINOX%20%3A%20GESSI',
     itbis: false,
     peso: 2,
@@ -24945,7 +28242,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-via-tortona?variant=011292%20%3A%20%20%3A%20%20%3A%20FINOX%20%3A%20GESSI',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR VIA TORTONA · artículo CERA-34275 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 18375.92, {
+  c('MAT-09-018', PROV_CERARTE, 18375.92, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-eurocube-joy?variant=000678%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EUROCUBE JOY',
@@ -24954,7 +28251,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-eurocube-joy?variant=000678%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EUROCUBE JOY · artículo CERA-01120 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 12288.22, {
+  c('MAT-09-018', PROV_CERARTE, 12288.22, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
@@ -24963,7 +28260,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35131 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 13220.58, {
+  c('MAT-09-018', PROV_CERARTE, 13220.58, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
@@ -24972,7 +28269,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35132 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 15197.32, {
+  c('MAT-09-018', PROV_CERARTE, 15197.32, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
@@ -24981,7 +28278,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35133 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 17351.69, {
+  c('MAT-09-018', PROV_CERARTE, 17351.69, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO',
@@ -24990,7 +28287,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccabezal-y-ducha-dmano-aveiro?variant=011893%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO AVEIRO · artículo CERA-35130 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 22881.36, {
+  c('MAT-09-018', PROV_CERARTE, 22881.36, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
@@ -24999,7 +28296,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35057 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 24025.43, {
+  c('MAT-09-018', PROV_CERARTE, 24025.43, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
@@ -25008,7 +28305,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35058 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 18853.25, {
+  c('MAT-09-018', PROV_CERARTE, 18853.25, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO',
@@ -25017,7 +28314,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-ctermostato-ccbz-y-ducha-dmano-grosseto?variant=011881%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA C/TERMOSTATO C/CBZ Y DUCHA D/MANO GROSSETO · artículo CERA-35059 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 68793.1, {
+  c('MAT-09-018', PROV_CERARTE, 68793.1, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-dducha-sit-xl?variant=000933%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA TERMOSTATICA D/DUCHA SIT XL',
@@ -25026,7 +28323,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostatica-dducha-sit-xl?variant=000933%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA TERMOSTATICA D/DUCHA SIT XL · artículo CERA-01422 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 7031.73, {
+  c('MAT-09-018', PROV_CERARTE, 7031.73, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/valvula-dducha-ctemporizador-euroeco-cosmopolitan-t-12?variant=011850%20%3A%20%20%3A%201%2F2%22%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'VALVULA D/DUCHA C/TEMPORIZADOR EUROECO COSMOPOLITAN T 1/2"',
@@ -25035,7 +28332,7 @@
     url: 'https://cerarte.com.do/tienda/producto/valvula-dducha-ctemporizador-euroeco-cosmopolitan-t-12?variant=011850%20%3A%20%20%3A%201%2F2%22%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'VALVULA D/DUCHA C/TEMPORIZADOR EUROECO COSMOPOLITAN T 1/2" · artículo CERA-34975 · ref. 1/2" · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 22245.76, {
+  c('MAT-09-018', PROV_CERARTE, 22245.76, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     peso: 4,
@@ -25045,7 +28342,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccabezal-cducha-dmano-bella?variant=011863%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CABEZAL C/DUCHA D/MANO BELLA · artículo CERA-35005 · marca AQUALIA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 9145.28, {
+  c('MAT-09-018', PROV_CERARTE, 9145.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostato-grohtherm-800?variant=000939%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA TERMOSTATO GROHTHERM 800',
@@ -25054,7 +28351,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostato-grohtherm-800?variant=000939%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA TERMOSTATO GROHTHERM 800 · artículo CERA-01428 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 5490.71, {
+  c('MAT-09-018', PROV_CERARTE, 5490.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pducha-espinho?variant=007573%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA P/DUCHA ESPINHO',
@@ -25063,7 +28360,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-pducha-espinho?variant=007573%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA P/DUCHA ESPINHO · artículo CERA-31648 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8926, {
+  c('MAT-09-018', PROV_CERARTE, 8926, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-ccuerpo-empotrado-cdesviador-bauloop?variant=011847%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/CUERPO EMPOTRADO C/DESVIADOR BAULOOP',
@@ -25072,7 +28369,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-ccuerpo-empotrado-cdesviador-bauloop?variant=011847%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA C/CUERPO EMPOTRADO C/DESVIADOR BAULOOP · artículo CERA-34972 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 78366.56, {
+  c('MAT-09-018', PROV_CERARTE, 78366.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-cono?variant=000699%20%3A%20%20%3A%20%20%3A%20COPPER%20PVD%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA TERMOSTATICO CONO',
@@ -25081,7 +28378,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-cono?variant=000699%20%3A%20%20%3A%20%20%3A%20COPPER%20PVD%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA TERMOSTATICO CONO · artículo CERA-34511 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 39567.82, {
+  c('MAT-09-018', PROV_CERARTE, 39567.82, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-cono?variant=000699%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA TERMOSTATICO CONO',
@@ -25090,7 +28387,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-cono?variant=000699%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA TERMOSTATICO CONO · artículo CERA-01142 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 15346.9, {
+  c('MAT-09-018', PROV_CERARTE, 15346.9, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-cdesviador-grohe-plus?variant=011834%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMPOTRADA C/DESVIADOR GROHE PLUS',
@@ -25099,7 +28396,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-cdesviador-grohe-plus?variant=011834%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/DESVIADOR GROHE PLUS · artículo CERA-34960 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 20254.23, {
+  c('MAT-09-018', PROV_CERARTE, 20254.23, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-empotrada-rettangolo-150-mm?variant=000710%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA EMPOTRADA RETTANGOLO 150 MM',
@@ -25108,7 +28405,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-empotrada-rettangolo-150-mm?variant=000710%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA EMPOTRADA RETTANGOLO 150 MM · artículo CERA-01153 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8950, {
+  c('MAT-09-018', PROV_CERARTE, 8950, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-lineare?variant=000692%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA LINEARE',
@@ -25117,7 +28414,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-lineare?variant=000692%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA LINEARE · artículo CERA-01135 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 10348.25, {
+  c('MAT-09-018', PROV_CERARTE, 10348.25, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-mono-dducha-cdesviador-de-2-vias-eurosmart-cosm?variant=008241%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA MONO D/DUCHA C/DESVIADOR DE 2 VIAS EUROSMART COSM',
@@ -25126,7 +28423,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-mono-dducha-cdesviador-de-2-vias-eurosmart-cosm?variant=008241%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA MONO D/DUCHA C/DESVIADOR DE 2 VIAS EUROSMART COSM · artículo CERA-31900 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 47215.61, {
+  c('MAT-09-018', PROV_CERARTE, 47215.61, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostica-expuesta-grohtherm-smartcontrol?variant=007424%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA TERMOSTICA EXPUESTA GROHTHERM SMARTCONTROL',
@@ -25135,7 +28432,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostica-expuesta-grohtherm-smartcontrol?variant=007424%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA TERMOSTICA EXPUESTA GROHTHERM SMARTCONTROL · artículo CERA-31523 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 5488.55, {
+  c('MAT-09-018', PROV_CERARTE, 5488.55, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-bauflow?variant=007228%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA BAUFLOW',
@@ -25144,7 +28441,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-bauflow?variant=007228%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA BAUFLOW · artículo CERA-31357 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 29331.99, {
+  c('MAT-09-018', PROV_CERARTE, 29331.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezclador-empotrado-grohtherm-smartcontrol?variant=008340%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADOR EMPOTRADO GROHTHERM SMARTCONTROL',
@@ -25153,7 +28450,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezclador-empotrado-grohtherm-smartcontrol?variant=008340%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADOR EMPOTRADO GROHTHERM SMARTCONTROL · artículo CERA-32156 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 3701, {
+  c('MAT-09-018', PROV_CERARTE, 3701, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-viseu?variant=008556%20%3A%20%20%3A%20%20%3A%20ACERO%20INOXIDABL%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMPOTRADA VISEU',
@@ -25162,7 +28459,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-viseu?variant=008556%20%3A%20%20%3A%20%20%3A%20ACERO%20INOXIDABL%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADA VISEU · artículo CERA-32428 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 11168.28, {
+  c('MAT-09-018', PROV_CERARTE, 11168.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-essence-new?variant=000676%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA ESSENCE NEW',
@@ -25171,7 +28468,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-essence-new?variant=000676%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA ESSENCE NEW · artículo CERA-01118 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 13221.98, {
+  c('MAT-09-018', PROV_CERARTE, 13221.98, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-atrio?variant=000698%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA TERMOSTATICO ATRIO',
@@ -25180,7 +28477,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-atrio?variant=000698%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA TERMOSTATICO ATRIO · artículo CERA-01141 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 13347.45, {
+  c('MAT-09-018', PROV_CERARTE, 13347.45, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     peso: 3,
@@ -25190,7 +28487,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrada-ccbz-y-ducha-dmano-fasano?variant=011902%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADA C/CBZ Y DUCHA D/MANO FASANO · artículo CERA-35150 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 9349.98, {
+  c('MAT-09-018', PROV_CERARTE, 9349.98, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-lineare?variant=000656%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/DESVIADOR LINEARE',
@@ -25199,7 +28496,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-lineare?variant=000656%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR LINEARE · artículo CERA-01096 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8769.84, {
+  c('MAT-09-018', PROV_CERARTE, 8769.84, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cdesviador-bauloop-12?variant=011845%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA C/DESVIADOR BAULOOP 1/2´´',
@@ -25208,7 +28505,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cdesviador-bauloop-12?variant=011845%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA C/DESVIADOR BAULOOP 1/2´´ · artículo CERA-34970 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 33050.84, {
+  c('MAT-09-018', PROV_CERARTE, 33050.84, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-ovale-1?variant=000930%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     peso: 2,
@@ -25218,7 +28515,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-ovale-1?variant=000930%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA TERMOSTATICA ALTA CAP OVALE 1 · artículo CERA-01419 · marca GESSI SPA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 15169.49, {
+  c('MAT-09-018', PROV_CERARTE, 15169.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-allure-brilliant?variant=000651%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/DESVIADOR ALLURE BRILLIANT',
@@ -25227,7 +28524,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-allure-brilliant?variant=000651%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR ALLURE BRILLIANT · artículo CERA-01089 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 9576.27, {
+  c('MAT-09-018', PROV_CERARTE, 9576.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-via-manzoni?variant=000702%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA VIA MANZONI',
@@ -25236,7 +28533,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-via-manzoni?variant=000702%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA VIA MANZONI · artículo CERA-01145 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 21882.13, {
+  c('MAT-09-018', PROV_CERARTE, 21882.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
@@ -25245,7 +28542,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35033 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 33368.64, {
+  c('MAT-09-018', PROV_CERARTE, 33368.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     itbis: false,
     peso: 2,
@@ -25255,7 +28552,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20GOLD%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35032 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 27306.77, {
+  c('MAT-09-018', PROV_CERARTE, 27306.77, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
     itbis: false,
     art: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA',
@@ -25264,7 +28561,7 @@
     url: 'https://cerarte.com.do/tienda/producto/sistema-dducha-termostatica-ccabezal-y-ducha-dmano-bella?variant=011869%20%3A%20%20%3A%20%20%3A%20BRUSHED%20BRONZE%20%3A%20AQUALIA',
     nota: 'SISTEMA D/DUCHA TERMOSTATICA C/CABEZAL Y DUCHA D/MANO BELLA · artículo CERA-35031 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 5616.54, {
+  c('MAT-09-018', PROV_CERARTE, 5616.54, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-essence-new?variant=000654%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/DESVIADOR ESSENCE NEW',
@@ -25273,7 +28570,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-essence-new?variant=000654%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR ESSENCE NEW · artículo CERA-01093 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 45529.15, {
+  c('MAT-09-018', PROV_CERARTE, 45529.15, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-oxygene?variant=000701%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA TERMOSTATICO OXYGENE',
@@ -25282,7 +28579,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-termostatico-oxygene?variant=000701%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA TERMOSTATICO OXYGENE · artículo CERA-01144 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 13415.49, {
+  c('MAT-09-018', PROV_CERARTE, 13415.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostato-cdesviador-grohtherm-800?variant=005511%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA TERMOSTATO C/DESVIADOR GROHTHERM 800',
@@ -25291,7 +28588,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostato-cdesviador-grohtherm-800?variant=005511%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA TERMOSTATO C/DESVIADOR GROHTHERM 800 · artículo CERA-21229 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 2525.42, {
+  c('MAT-09-018', PROV_CERARTE, 2525.42, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrado-cdiverter-liverpool?variant=000668%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMPOTRADO C/DIVERTER LIVERPOOL',
@@ -25300,7 +28597,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrado-cdiverter-liverpool?variant=000668%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADO C/DIVERTER LIVERPOOL · artículo CERA-01110 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8997.72, {
+  c('MAT-09-018', PROV_CERARTE, 8997.72, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrado-cdesviador-eurocube?variant=000666%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMPOTRADO C/DESVIADOR EUROCUBE',
@@ -25309,7 +28606,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-empotrado-cdesviador-eurocube?variant=000666%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EMPOTRADO C/DESVIADOR EUROCUBE · artículo CERA-01107 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 6473.7, {
+  c('MAT-09-018', PROV_CERARTE, 6473.7, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-sdesviador-bauloop-12?variant=011846%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA S/DESVIADOR BAULOOP 1/2´´',
@@ -25318,7 +28615,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-sdesviador-bauloop-12?variant=011846%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA S/DESVIADOR BAULOOP 1/2´´ · artículo CERA-34971 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 6975.04, {
+  c('MAT-09-018', PROV_CERARTE, 6975.04, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cdesviador-bauflow?variant=007212%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EXPUESTA C/DESVIADOR BAUFLOW',
@@ -25327,7 +28624,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cdesviador-bauflow?variant=007212%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA C/DESVIADOR BAUFLOW · artículo CERA-31356 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 11836.85, {
+  c('MAT-09-018', PROV_CERARTE, 11836.85, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-grohtherm-1000?variant=000690%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA GROHTHERM 1000',
@@ -25336,7 +28633,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-grohtherm-1000?variant=000690%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA GROHTHERM 1000 · artículo CERA-01133 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 38135.59, {
+  c('MAT-09-018', PROV_CERARTE, 38135.59, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-rettangolo?variant=000931%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA TERMOSTATICA ALTA CAP RETTANGOLO',
@@ -25345,7 +28642,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostatica-alta-cap-rettangolo?variant=000931%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA TERMOSTATICA ALTA CAP RETTANGOLO · artículo CERA-01420 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 3514.83, {
+  c('MAT-09-018', PROV_CERARTE, 3514.83, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-acero-inox-viseu?variant=007648%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA ACERO INOX VISEU',
@@ -25354,7 +28651,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-acero-inox-viseu?variant=007648%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA ACERO INOX VISEU · artículo CERA-34322 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 3490.71, {
+  c('MAT-09-018', PROV_CERARTE, 3490.71, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-acero-inox-viseu?variant=007648%20%3A%20%20%3A%20%20%3A%20ACERO%20SATINADO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA ACERO INOX VISEU',
@@ -25363,7 +28660,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-acero-inox-viseu?variant=007648%20%3A%20%20%3A%20%20%3A%20ACERO%20SATINADO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA ACERO INOX VISEU · artículo CERA-31769 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 5631.48, {
+  c('MAT-09-018', PROV_CERARTE, 5631.48, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pducha-tavira?variant=007575%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA P/DUCHA TAVIRA',
@@ -25372,7 +28669,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-pducha-tavira?variant=007575%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA P/DUCHA TAVIRA · artículo CERA-31650 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 6673.73, {
+  c('MAT-09-018', PROV_CERARTE, 6673.73, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cducha-dmano-salemi?variant=011890%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     peso: 3,
@@ -25382,7 +28679,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-expuesta-cducha-dmano-salemi?variant=011890%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EXPUESTA C/DUCHA D/MANO SALEMI · artículo CERA-35120 · marca AQUALIA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 14169.6, {
+  c('MAT-09-018', PROV_CERARTE, 14169.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-lineare-monomando-dducha?variant=007488%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA LINEARE MONOMANDO D/DUCHA',
@@ -25391,7 +28688,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-lineare-monomando-dducha?variant=007488%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA LINEARE MONOMANDO D/DUCHA · artículo CERA-31575 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 10233.05, {
+  c('MAT-09-018', PROV_CERARTE, 10233.05, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     itbis: false,
     peso: 2,
@@ -25401,7 +28698,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35066 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8061.87, {
+  c('MAT-09-018', PROV_CERARTE, 8061.87, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
@@ -25410,7 +28707,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35067 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 8863.02, {
+  c('MAT-09-018', PROV_CERARTE, 8863.02, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO',
@@ -25419,7 +28716,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-emp-cdesviador-ccbz-ducha-dmano-aveiro?variant=011882%20%3A%20%20%3A%20%20%3A%20NEGRO%20MATE%20%3A%20AQUALIA',
     nota: 'MEZCLADORA D/DUCHA EMP C/DESVIADOR C/CBZ DUCHA D/MANO AVEIRO · artículo CERA-35068 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 26633.74, {
+  c('MAT-09-018', PROV_CERARTE, 26633.74, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-y-ducha-mano-via-manzoni?variant=000659%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA C/DESVIADOR Y DUCHA MANO VIA MANZONI',
@@ -25428,7 +28725,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-cdesviador-y-ducha-mano-via-manzoni?variant=000659%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GESSI%20SPA',
     nota: 'MEZCLADORA D/DUCHA C/DESVIADOR Y DUCHA MANO VIA MANZONI · artículo CERA-01099 · marca GESSI SPA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 12196.19, {
+  c('MAT-09-018', PROV_CERARTE, 12196.19, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-termostatico-dducha-2-salida-soiree?variant=000938%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20TOTO%20USA',
     itbis: false,
     art: 'MEZCLADORA TERMOSTATICO D/DUCHA 2 SALIDA SOIREE',
@@ -25437,7 +28734,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-termostatico-dducha-2-salida-soiree?variant=000938%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20TOTO%20USA',
     nota: 'MEZCLADORA TERMOSTATICO D/DUCHA 2 SALIDA SOIREE · artículo CERA-01427 · marca TOTO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 11250, {
+  c('MAT-09-018', PROV_CERARTE, 11250, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-dducha-lineare-1?variant=000693%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MEZCLADORA D/DUCHA LINEARE 1',
@@ -25446,7 +28743,7 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-dducha-lineare-1?variant=000693%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MEZCLADORA D/DUCHA LINEARE 1 · artículo CERA-01136 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_CERARTE, 2542.97, {
+  c('MAT-09-018', PROV_CERARTE, 2542.97, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mezcladora-pducha-aveiro?variant=007570%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MEZCLADORA P/DUCHA AVEIRO',
@@ -25455,182 +28752,182 @@
     url: 'https://cerarte.com.do/tienda/producto/mezcladora-pducha-aveiro?variant=007570%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MEZCLADORA P/DUCHA AVEIRO · artículo CERA-31645 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-017', PROV_IBERICA, 16200, {
+  c('MAT-09-018', PROV_IBERICA, 16200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/grifo-itaca-bao-ducha-3h-cromo-metal/',
     art: 'Grifo Itaca Baño-Ducha 3H Cromo Metal',
     sku: '015797',
     url: 'https://tienda.laiberica.com.do/product/grifo-itaca-bao-ducha-3h-cromo-metal/',
     nota: 'Grifo Itaca Baño-Ducha 3H Cromo Metal · artículo 015797. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 10499.99, {
+  c('MAT-09-018', PROV_IBERICA, 10499.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-bano-ducha-empotrado-2-vias-cr-s-acc-ducha/',
     art: 'Mezc. Alaior Baño Ducha Empotrado 2 Vias Cr. Ref. 551710200 S/Acc. Ducha',
     sku: '018278',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-bano-ducha-empotrado-2-vias-cr-s-acc-ducha/',
     nota: 'Mezc. Alaior Baño Ducha Empotrado 2 Vias Cr. Ref. 551710200 S/Acc. Ducha · artículo 018278 · ref. 551710200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 6499.96, {
+  c('MAT-09-018', PROV_IBERICA, 6499.96, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
     art: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc.',
     sku: '019160',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-kit-ducha-empotrado-1-via-cr-con-accesorios/',
     nota: 'Mezc. Alaior Kit Ducha Empotrado 1 Via Cr. Ref.552420220 C/Acc. · artículo 019160 · ref. 552420220. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 9500, {
+  c('MAT-09-018', PROV_IBERICA, 9500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
     art: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo',
     sku: '016366',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cr-bano-ducha-empotrar-salidas-s-equipo/',
     nota: 'Mezc. Formentera Cr Baño-Ducha Empotrar Ref.621710200 2 salidas s/equipo · artículo 016366 · ref. 621710200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 80500, {
+  c('MAT-09-018', PROV_IBERICA, 80500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-bao-ducha-brave-black-cromo-para-baera/',
     art: 'Mezcladora Alaior Baño-Ducha Brave Black Cromo Para Bañera',
     sku: '016677',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-bao-ducha-brave-black-cromo-para-baera/',
     nota: 'Mezcladora Alaior Baño-Ducha Brave Black Cromo Para Bañera · artículo 016677. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 76500, {
+  c('MAT-09-018', PROV_IBERICA, 76500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-bano-ducha-bronce-pvd-p-banera/',
     art: 'Mezcladora Alaior Baño-Ducha Bronce PVD P/Bañera',
     sku: '019131',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-bano-ducha-bronce-pvd-p-banera/',
     nota: 'Mezcladora Alaior Baño-Ducha Bronce PVD P/Bañera · artículo 019131 · ref. 18233020BZ. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 58500, {
+  c('MAT-09-018', PROV_IBERICA, 58500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-bao-ducha-cromo-para-baera/',
     art: 'Mezcladora Alaior Baño-Ducha Cromo Para Bañera',
     sku: '015059',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-bao-ducha-cromo-para-baera/',
     nota: 'Mezcladora Alaior Baño-Ducha Cromo Para Bañera · artículo 015059. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 3500, {
+  c('MAT-09-018', PROV_IBERICA, 3500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-alaior-ducha-cromo-sin-accesorios-de-ducha/',
     art: 'Mezcladora Alaior Ducha Cromo Sin Accesorios de ducha',
     sku: '016821',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-alaior-ducha-cromo-sin-accesorios-de-ducha/',
     nota: 'Mezcladora Alaior Ducha Cromo Sin Accesorios de ducha · artículo 016821. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 2200, {
+  c('MAT-09-018', PROV_IBERICA, 2200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-aqua-bao-ducha-cromo/',
     art: 'Mezcladora Aqua Baño-Ducha Cromo',
     sku: '016353',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-aqua-bao-ducha-cromo/',
     nota: 'Mezcladora Aqua Baño-Ducha Cromo · artículo 016353. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 21300, {
+  c('MAT-09-018', PROV_IBERICA, 21300, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-arkus-bano-ducha-cromo-mate/',
     art: 'Mezcladora Arkus Bano-Ducha Cromo Mate',
     sku: '002984',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-arkus-bano-ducha-cromo-mate/',
     nota: 'Mezcladora Arkus Bano-Ducha Cromo Mate · artículo 002984. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 44929.68, {
+  c('MAT-09-018', PROV_IBERICA, 44929.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-arris-brushed-nickel-ducha/',
     art: 'Mezcladora Arris Brushed Nickel Ducha',
     sku: '012895',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-arris-brushed-nickel-ducha/',
     nota: 'Mezcladora Arris Brushed Nickel Ducha · artículo 012895. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 7490, {
+  c('MAT-09-018', PROV_IBERICA, 7490, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-bao-ducha/',
     art: 'Mezcladora Calvia Cromo Baño-Ducha',
     sku: '010135',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-bao-ducha/',
     nota: 'Mezcladora Calvia Cromo Baño-Ducha · artículo 010135. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 6590.01, {
+  c('MAT-09-018', PROV_IBERICA, 6590.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-ducha/',
     art: 'Mezcladora Calvia Cromo Ducha',
     sku: '010709',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-ducha/',
     nota: 'Mezcladora Calvia Cromo Ducha · artículo 010709. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 4990, {
+  c('MAT-09-018', PROV_IBERICA, 4990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-ducha-sin-accesorio-de-ducha/',
     art: 'Mezcladora Calvia Cromo Ducha Sin Accesorio de ducha',
     sku: '010134',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-calvia-cromo-ducha-sin-accesorio-de-ducha/',
     nota: 'Mezcladora Calvia Cromo Ducha Sin Accesorio de ducha · artículo 010134. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 23500, {
+  c('MAT-09-018', PROV_IBERICA, 23500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-bao-ducha-bronce/',
     art: 'Mezcladora Capricho 1820 Baño-Ducha Bronce',
     sku: '002996',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-bao-ducha-bronce/',
     nota: 'Mezcladora Capricho 1820 Baño-Ducha Bronce · artículo 002996. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 22381.06, {
+  c('MAT-09-018', PROV_IBERICA, 22381.06, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-bao-ducha-inox/',
     art: 'Mezcladora Capricho 1820 Baño-Ducha Inox',
     sku: '006326',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-capricho-1820-bao-ducha-inox/',
     nota: 'Mezcladora Capricho 1820 Baño-Ducha Inox · artículo 006326. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 23700.01, {
+  c('MAT-09-018', PROV_IBERICA, 23700.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-l90-cr-bao-ducha/',
     art: 'Mezcladora Cromo Baño-Ducha',
     sku: '012135',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-l90-cr-bao-ducha/',
     nota: 'Mezcladora Cromo Baño-Ducha · artículo 012135. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 14496.28, {
+  c('MAT-09-018', PROV_IBERICA, 14496.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-cuadro-bao-ducha-con-accesorio/',
     art: 'Mezcladora Cuadro Baño Ducha Con Accesorio',
     sku: '006877',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-cuadro-bao-ducha-con-accesorio/',
     nota: 'Mezcladora Cuadro Baño Ducha Con Accesorio · artículo 006877. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 15699.99, {
+  c('MAT-09-018', PROV_IBERICA, 15699.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-ducha/',
     art: 'Mezcladora Formentera Cromo Baño-Ducha',
     sku: '012819',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-ducha/',
     nota: 'Mezcladora Formentera Cromo Baño-Ducha · artículo 012819. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 13700, {
+  c('MAT-09-018', PROV_IBERICA, 13700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-ducha-sin-accesorios-de-ducha/',
     art: 'Mezcladora Formentera Cromo Baño-Ducha Sin Accesorios de ducha',
     sku: '016065',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-bao-ducha-sin-accesorios-de-ducha/',
     nota: 'Mezcladora Formentera Cromo Baño-Ducha Sin Accesorios de ducha · artículo 016065. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 11900.01, {
+  c('MAT-09-018', PROV_IBERICA, 11900.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-ducha/',
     art: 'Mezcladora Formentera Cromo Ducha',
     sku: '012820',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-formentera-cromo-ducha/',
     nota: 'Mezcladora Formentera Cromo Ducha · artículo 012820. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 27825.58, {
+  c('MAT-09-018', PROV_IBERICA, 27825.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-icon-huber-cromo-ducha-termostatica/',
     art: 'Mezcladora Icon Huber Cromo Ducha Termostatica',
     sku: '012823',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-icon-huber-cromo-ducha-termostatica/',
     nota: 'Mezcladora Icon Huber Cromo Ducha Termostatica · artículo 012823. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 6250, {
+  c('MAT-09-018', PROV_IBERICA, 6250, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-cromo-bao-ducha/',
     art: 'Mezcladora Inca Cromo Baño-Ducha',
     sku: '012068',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-inca-cromo-bao-ducha/',
     nota: 'Mezcladora Inca Cromo Baño-Ducha · artículo 012068. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 5650.01, {
+  c('MAT-09-018', PROV_IBERICA, 5650.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
     art: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro',
     sku: '005679',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-inca-ducha-con-equipo-ducha-sin-pichorro/',
     nota: 'Mezcladora Inca Ducha Con Equipo Ducha Sin Pichorro · artículo 005679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 11600, {
+  c('MAT-09-018', PROV_IBERICA, 11600, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-2/',
     art: 'Mezcladora Itaca Cromo Baño-Ducha',
     sku: '013589',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-2/',
     nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 013589. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 14500.01, {
+  c('MAT-09-018', PROV_IBERICA, 14500.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha/',
     peso: 2,
     art: 'Mezcladora Itaca Cromo Baño-Ducha',
@@ -25638,126 +28935,126 @@
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha/',
     nota: 'Mezcladora Itaca Cromo Baño-Ducha · artículo 016063. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 9550, {
+  c('MAT-09-018', PROV_IBERICA, 9550, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-sin-maneral/',
     art: 'Mezcladora Itaca Cromo Baño-Ducha Sin Maneral',
     sku: '016941',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-bao-ducha-sin-maneral/',
     nota: 'Mezcladora Itaca Cromo Baño-Ducha Sin Maneral · artículo 016941. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 9900, {
+  c('MAT-09-018', PROV_IBERICA, 9900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-ducha/',
     art: 'Mezcladora Itaca Cromo Ducha',
     sku: '013590',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-ducha/',
     nota: 'Mezcladora Itaca Cromo Ducha · artículo 013590. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 12800, {
+  c('MAT-09-018', PROV_IBERICA, 12800, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-ducha-manguera/',
     art: 'Mezcladora Itaca Cromo Ducha Manguera',
     sku: '016064',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-itaca-cromo-ducha-manguera/',
     nota: 'Mezcladora Itaca Cromo Ducha Manguera · artículo 016064. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 13950, {
+  c('MAT-09-018', PROV_IBERICA, 13950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
     art: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo',
     sku: '019119',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-brushed-metal-c-equipo/',
     nota: 'Mezcladora Kloe Baño-Ducha Brushed Metal C/Equipo · artículo 019119 · ref. 69110345266. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 16790, {
+  c('MAT-09-018', PROV_IBERICA, 16790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
     art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
     sku: '019122',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo/',
     nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019122 · ref. 69100345166. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 15950, {
+  c('MAT-09-018', PROV_IBERICA, 15950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
     art: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo',
     sku: '019121',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-kloe-bano-ducha-gold-brushed-c-equipo-2/',
     nota: 'Mezcladora Kloe Baño-Ducha Gold Brushed C/Equipo · artículo 019121 · ref. 69110345166. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 10300, {
+  c('MAT-09-018', PROV_IBERICA, 10300, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kobe-bao-ducha-cromo/',
     art: 'Mezcladora Kobe Baño/Ducha Cromo',
     sku: '003053',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-kobe-bao-ducha-cromo/',
     nota: 'Mezcladora Kobe Baño/Ducha Cromo · artículo 003053. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 8900, {
+  c('MAT-09-018', PROV_IBERICA, 8900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-kobe-bao-ducha-cromo-mate/',
     art: 'Mezcladora Kobe Baño/Ducha Cromo Mate',
     sku: '003054',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-kobe-bao-ducha-cromo-mate/',
     nota: 'Mezcladora Kobe Baño/Ducha Cromo Mate · artículo 003054. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 15644.44, {
+  c('MAT-09-018', PROV_IBERICA, 15644.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-levity-cromo-ducha-termostatica/',
     art: 'Mezcladora Levity Cromo Ducha Termostatica',
     sku: '012825',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-levity-cromo-ducha-termostatica/',
     nota: 'Mezcladora Levity Cromo Ducha Termostatica · artículo 012825. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 2950, {
+  c('MAT-09-018', PROV_IBERICA, 2950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-cr-s-set-de-ducha/',
     art: 'Mezcladora Manacor Baño-Ducha Cr S/Set de Ducha',
     sku: '019164',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-cr-s-set-de-ducha/',
     nota: 'Mezcladora Manacor Baño-Ducha Cr S/Set de Ducha · artículo 019164 · ref. 842321200. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 8700, {
+  c('MAT-09-018', PROV_IBERICA, 8700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
     art: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo',
     sku: '016363',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-cromo-bao-ducha-empotrar-sin-equipo/',
     nota: 'Mezcladora Manacor Cromo Baño-Ducha Empotrar Sin equipo · artículo 016363. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 10950, {
+  c('MAT-09-018', PROV_IBERICA, 10950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
     art: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo',
     sku: '016502',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-empotrar-negro-mate-con-inversor-sin-equipo/',
     nota: 'Mezcladora Oslo Baño-Ducha Empotrar Negro Mate Con Inversor Sin Equipo · artículo 016502. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 15790, {
+  c('MAT-09-018', PROV_IBERICA, 15790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
     art: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo',
     sku: '016508',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-oslo-bao-ducha-negro-mate-c-equipo/',
     nota: 'Mezcladora Oslo Baño-Ducha Negro Mate Con Equipo · artículo 016508. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 69825.32, {
+  c('MAT-09-018', PROV_IBERICA, 69825.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-wave-cromo-ducha/',
     art: 'Mezcladora Wave Cromo Ducha',
     sku: '013311',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-wave-cromo-ducha/',
     nota: 'Mezcladora Wave Cromo Ducha · artículo 013311. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 12500, {
+  c('MAT-09-018', PROV_IBERICA, 12500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
     art: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha',
     sku: '019011',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-manacor-bano-ducha-negro-mate-c-set-de-ducha/',
     nota: 'Mezcladora Manacor Baño-Ducha Negro Mate C/Set de Ducha · artículo 019011. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 38000, {
+  c('MAT-09-018', PROV_IBERICA, 38000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-bano-ducha/',
     art: 'Mezcladora ONA Negro Mate Baño Ducha Con Accesorios',
     sku: '019492',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-bano-ducha/',
     nota: 'Mezcladora ONA Negro Mate Baño Ducha Con Accesorios · artículo 019492. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_IBERICA, 58000, {
+  c('MAT-09-018', PROV_IBERICA, 58000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-empotrada-ducha-1-via-con-accesorios/',
     art: 'Mezcladora ONA Negro Mate Empotrada Ducha 1 Vía Con Accesorios',
     sku: '019494',
     url: 'https://tienda.laiberica.com.do/product/mezcladora-ona-negro-mate-empotrada-ducha-1-via-con-accesorios/',
     nota: 'Mezcladora ONA Negro Mate Empotrada Ducha 1 Vía Con Accesorios · artículo 019494. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 2789, {
+  c('MAT-09-018', PROV_FERREMIX, 2789, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-negro-1',
     art: 'Monomando para regadera, negro',
     sku: 'T48472',
@@ -25765,7 +29062,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-regadera-negro-1',
     nota: 'Monomando para regadera, negro · artículo T48472 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 3340, {
+  c('MAT-09-018', PROV_FERREMIX, 3340, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-satin',
     art: 'Monomando para regadera, satín',
     sku: 'T48471',
@@ -25773,7 +29070,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-regadera-satin',
     nota: 'Monomando para regadera, satín · artículo T48471 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 2435, {
+  c('MAT-09-018', PROV_FERREMIX, 2435, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera-negro',
     art: 'Monomando para regadera, negro',
     sku: 'T46791',
@@ -25781,7 +29078,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-regadera-negro',
     nota: 'Monomando para regadera, negro · artículo T46791 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 1759, {
+  c('MAT-09-018', PROV_FERREMIX, 1759, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-de-empotrar-para-regadera',
     art: 'Monomando de empotrar para regadera',
     sku: 'T45859',
@@ -25789,7 +29086,7 @@
     url: 'https://ferremix.com.do/products/monomando-de-empotrar-para-regadera',
     nota: 'Monomando de empotrar para regadera · artículo T45859 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 1880, {
+  c('MAT-09-018', PROV_FERREMIX, 1880, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-de-empotrar-para-regadera-cpvc-1-2',
     art: 'Monomando de empotrar para regadera CPVC 1/2"',
     sku: 'T45484',
@@ -25797,7 +29094,7 @@
     url: 'https://ferremix.com.do/products/monomando-de-empotrar-para-regadera-cpvc-1-2',
     nota: 'Monomando de empotrar para regadera CPVC 1/2" · artículo T45484 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 2195, {
+  c('MAT-09-018', PROV_FERREMIX, 2195, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-regadera',
     art: 'Monomando para regadera',
     sku: 'T46789',
@@ -25805,14 +29102,14 @@
     url: 'https://ferremix.com.do/products/monomando-para-regadera',
     nota: 'Monomando para regadera · artículo T46789 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 1215, {
+  c('MAT-09-018', PROV_FERREMIX, 1215, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-fregadera-metal-tipo-sayco',
     art: 'Mezcladora para fregadera etal tipo sayco gf-11',
     sku: '13566',
     url: 'https://ferremix.com.do/products/mezcladora-para-fregadera-metal-tipo-sayco',
     nota: 'Mezcladora para fregadera etal tipo sayco gf-11 · artículo 13566 · marca Genérico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 5085, {
+  c('MAT-09-018', PROV_FERREMIX, 5085, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-t49767-1',
     art: 'Mezcladora de baño onoando de laton foset aero',
     sku: 'T49767',
@@ -25820,7 +29117,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-ducha-t49767-1',
     nota: 'Mezcladora de baño onoando de laton foset aero · artículo T49767 · ref. T49767 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 4535, {
+  c('MAT-09-018', PROV_FERREMIX, 4535, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/mezcladora-para-empotrar',
     art: 'Mezcladora epostrable tipo nibco 1/4 de vuelta de bronce foset',
     sku: 'T49445',
@@ -25828,7 +29125,7 @@
     url: 'https://ferremix.com.do/products/mezcladora-para-empotrar',
     nota: 'Mezcladora epostrable tipo nibco 1/4 de vuelta de bronce foset · artículo T49445 · ref. T49445 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 2380, {
+  c('MAT-09-018', PROV_FERREMIX, 2380, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-t49435',
     art: 'Mezcladora de baño onoando 1/2" de laton foset aqua',
     sku: 'T49435',
@@ -25836,7 +29133,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-ducha-t49435',
     nota: 'Mezcladora de baño onoando 1/2" de laton foset aqua · artículo T49435 · ref. T49435 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 5019, {
+  c('MAT-09-018', PROV_FERREMIX, 5019, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-pt860',
     art: 'monomando para ducha pt860',
     sku: 'T45199',
@@ -25844,7 +29141,7 @@
     url: 'https://ferremix.com.do/products/monomando-para-ducha-pt860',
     nota: 'monomando para ducha pt860 · artículo T45199 · ref. T45199 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_FERREMIX, 5419, {
+  c('MAT-09-018', PROV_FERREMIX, 5419, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/monomando-para-ducha-pt860',
     art: 'monomando para ducha pt860',
     sku: 'T45200',
@@ -25852,154 +29149,154 @@
     url: 'https://ferremix.com.do/products/monomando-para-ducha-pt860',
     nota: 'monomando para ducha pt860 · artículo T45200 · ref. T45199 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5009, {
+  c('MAT-09-018', PROV_BELLON, 5009, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Triple Sayco S308 (LF308)',
     sku: '15291',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Triple Sayco S308 (LF308) · artículo 15291. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 8200, {
+  c('MAT-09-018', PROV_BELLON, 8200, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Alaior Teka 551220200',
     sku: '206223',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Alaior Teka 551220200 · artículo 206223. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5470, {
+  c('MAT-09-018', PROV_BELLON, 5470, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Accesorio Alaior Teka 552320200',
     sku: '206224',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Accesorio Alaior Teka 552320200 · artículo 206224. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5837, {
+  c('MAT-09-018', PROV_BELLON, 5837, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Inca Teka 5310212',
     sku: '206225',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Inca Teka 5310212 · artículo 206225. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5545, {
+  c('MAT-09-018', PROV_BELLON, 5545, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Accesorio Inca Teka 5323212',
     sku: '206226',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Accesorio Inca Teka 5323212 · artículo 206226. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 7227, {
+  c('MAT-09-018', PROV_BELLON, 7227, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio MT PLUS Teka 461220200',
     sku: '206227',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio MT PLUS Teka 461220200 · artículo 206227. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5585, {
+  c('MAT-09-018', PROV_BELLON, 5585, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Accesorio MT PLUS Teka 462320200',
     sku: '206228',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Accesorio MT PLUS Teka 462320200 · artículo 206228. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 4451, {
+  c('MAT-09-018', PROV_BELLON, 4451, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Accesorio Inca Pro Teka 272320200',
     sku: '219983',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Accesorio Inca Pro Teka 272320200 · artículo 219983. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5917, {
+  c('MAT-09-018', PROV_BELLON, 5917, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Inca Pro Teka271220200',
     sku: '219984',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Inca Pro Teka271220200 · artículo 219984. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 3855, {
+  c('MAT-09-018', PROV_BELLON, 3855, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Telefono Negro Mt Desigle QC3001AH',
     sku: '232463',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Telefono Negro Mt Desigle QC3001AH · artículo 232463. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 6091, {
+  c('MAT-09-018', PROV_BELLON, 6091, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Telefono Monomando Ares Teka 232320200',
     sku: '232474',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Telefono Monomando Ares Teka 232320200 · artículo 232474. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 4390, {
+  c('MAT-09-018', PROV_BELLON, 4390, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Negro Mt Desigle QC3005H',
     sku: '232475',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando  Negro Mt Desigle QC3005H · artículo 232475. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5521, {
+  c('MAT-09-018', PROV_BELLON, 5521, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Empotrable Desigle QY-03',
     sku: '232509',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Empotrable Desigle QY-03 · artículo 232509. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 8365, {
+  c('MAT-09-018', PROV_BELLON, 8365, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Itaca Teka 671010200',
     sku: '233149',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Itaca Teka 671010200 · artículo 233149. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5160, {
+  c('MAT-09-018', PROV_BELLON, 5160, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Accesorios Mofem Hello',
     sku: '238424',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Accesorios Mofem Hello · artículo 238424. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 5855, {
+  c('MAT-09-018', PROV_BELLON, 5855, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Mofem Hello',
     sku: '238425',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Con Accesorio Mofem Hello · artículo 238425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 1295, {
+  c('MAT-09-018', PROV_BELLON, 1295, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB100-7',
     sku: '239108',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB100-7 · artículo 239108. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 1970, {
+  c('MAT-09-018', PROV_BELLON, 1970, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB150-6',
     sku: '239109',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB150-6 · artículo 239109. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 1860, {
+  c('MAT-09-018', PROV_BELLON, 1860, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB200-7',
     sku: '239111',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Con Telefono Maximus Cromada KB200-7 · artículo 239111. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 1425, {
+  c('MAT-09-018', PROV_BELLON, 1425, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Ducha Monomando Maximus Cromada KB210-3-2',
     sku: '239112',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Ducha Monomando Maximus Cromada KB210-3-2 · artículo 239112. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_BELLON, 1455, {
+  c('MAT-09-018', PROV_BELLON, 1455, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Llave Mezcladora Baño/Ducha Monomando Dyllu DTZD1502',
     sku: '243588',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Llave Mezcladora Baño/Ducha Monomando Dyllu DTZD1502 · artículo 243588. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 33400, {
+  c('MAT-09-018', PROV_CARABELA, 33400, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-alexia-8',
     art: 'Grifería Alexia Ducha',
     sku: '28472',
@@ -26007,7 +29304,7 @@
     url: 'https://carabela.do/products/griferia-alexia-8',
     nota: 'Grifería Alexia Ducha · artículo 28472 · ref. Color: Oro cepillado · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 24600, {
+  c('MAT-09-018', PROV_CARABELA, 24600, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-alexia',
     art: 'Grifería Alexia Ducha',
     sku: '28438',
@@ -26015,7 +29312,7 @@
     url: 'https://carabela.do/products/ducha-alexia',
     nota: 'Grifería Alexia Ducha · artículo 28438 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 6700, {
+  c('MAT-09-018', PROV_CARABELA, 6700, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia-cromo',
     art: 'Grifería Alexia Ducha',
     sku: '26151',
@@ -26023,7 +29320,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-alexia-cromo',
     nota: 'Grifería Alexia Ducha · artículo 26151 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 12000, {
+  c('MAT-09-018', PROV_CARABELA, 12000, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia-1',
     art: 'Grifería de Ducha Alexia',
     sku: '26148',
@@ -26031,7 +29328,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-alexia-1',
     nota: 'Grifería de Ducha Alexia · artículo 26148 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 10100, {
+  c('MAT-09-018', PROV_CARABELA, 10100, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-alexia',
     art: 'Grifería de Ducha Alexia',
     sku: '26150',
@@ -26039,7 +29336,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-alexia',
     nota: 'Grifería de Ducha Alexia · artículo 26150 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 11040, {
+  c('MAT-09-018', PROV_CARABELA, 11040, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-cromo',
     art: 'Grifería de Ducha Cromo',
     sku: '26155',
@@ -26047,7 +29344,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-cromo',
     nota: 'Grifería de Ducha Cromo · artículo 26155 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 8050, {
+  c('MAT-09-018', PROV_CARABELA, 8050, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-drako-cromo',
     art: 'Grifería Drako Ducha',
     sku: '26154',
@@ -26055,7 +29352,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-drako-cromo',
     nota: 'Grifería Drako Ducha · artículo 26154 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 10500, {
+  c('MAT-09-018', PROV_CARABELA, 10500, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-con-equipo-de-ducha-drako-cromo',
     art: 'Grifería Drako Ducha',
     sku: '24040',
@@ -26063,7 +29360,7 @@
     url: 'https://carabela.do/products/griferia-con-equipo-de-ducha-drako-cromo',
     nota: 'Grifería Drako Ducha · artículo 24040 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 5200, {
+  c('MAT-09-018', PROV_CARABELA, 5200, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-ducha-hotels',
     art: 'Grifería Ducha Hotels',
     sku: '25722',
@@ -26071,7 +29368,7 @@
     url: 'https://carabela.do/products/griferia-ducha-hotels',
     nota: 'Grifería Ducha Hotels · artículo 25722 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 14350, {
+  c('MAT-09-018', PROV_CARABELA, 14350, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/monomando-hotels-externo-ducha-cromo',
     art: 'Grifería Hotels Ducha',
     sku: '23616',
@@ -26079,7 +29376,7 @@
     url: 'https://carabela.do/products/monomando-hotels-externo-ducha-cromo',
     nota: 'Grifería Hotels Ducha · artículo 23616 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 15950, {
+  c('MAT-09-018', PROV_CARABELA, 15950, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-new-fly',
     art: 'Grifería New Fly Ducha',
     sku: '28454',
@@ -26087,7 +29384,7 @@
     url: 'https://carabela.do/products/ducha-new-fly',
     nota: 'Grifería New Fly Ducha · artículo 28454 · ref. Color: Negro mate · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 1000, {
+  c('MAT-09-018', PROV_CARABELA, 1000, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-bano-nk-concept-1',
     art: 'Grifería Nk Concept Ducha',
     sku: '25835',
@@ -26095,7 +29392,7 @@
     url: 'https://carabela.do/products/griferia-de-bano-nk-concept-1',
     nota: 'Grifería Nk Concept Ducha · artículo 25835 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 11400, {
+  c('MAT-09-018', PROV_CARABELA, 11400, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-rondo',
     art: 'Grifería Rondo Ducha',
     sku: '28350',
@@ -26103,7 +29400,7 @@
     url: 'https://carabela.do/products/griferia-rondo',
     nota: 'Grifería Rondo Ducha · artículo 28350 · ref. Color: Negro · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 7220, {
+  c('MAT-09-018', PROV_CARABELA, 7220, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-de-ducha-titanium',
     art: 'Grifería Titanium Ducha',
     sku: '25889',
@@ -26111,7 +29408,7 @@
     url: 'https://carabela.do/products/griferia-de-ducha-titanium',
     nota: 'Grifería Titanium Ducha · artículo 25889 · ref. Color: Cromo · marca RAMÓN SOLER. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 29350, {
+  c('MAT-09-018', PROV_CARABELA, 29350, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-touch-feel',
     art: 'Grifería Touch-Feel Ducha',
     sku: '27273',
@@ -26119,7 +29416,7 @@
     url: 'https://carabela.do/products/griferia-touch-feel',
     nota: 'Grifería Touch-Feel Ducha · artículo 27273 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 3550, {
+  c('MAT-09-018', PROV_CARABELA, 3550, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/griferia-urban-3',
     art: 'Grifería Urban Ducha',
     sku: '23835',
@@ -26127,7 +29424,7 @@
     url: 'https://carabela.do/products/griferia-urban-3',
     nota: 'Grifería Urban Ducha · artículo 23835 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 6750, {
+  c('MAT-09-018', PROV_CARABELA, 6750, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-urban-cromo',
     art: 'Grifería Urban Ducha',
     sku: '23187',
@@ -26135,7 +29432,7 @@
     url: 'https://carabela.do/products/ducha-urban-cromo',
     nota: 'Grifería Urban Ducha · artículo 23187 · ref. Color: Cromo · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-017', PROV_CARABELA, 3467.5, {
+  c('MAT-09-018', PROV_CARABELA, 3467.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/ducha-urban-exterior-cromo',
     art: 'Grifería Urban Ducha + Complemento',
     sku: '23135',
@@ -26143,7 +29440,7 @@
     url: 'https://carabela.do/products/ducha-urban-exterior-cromo',
     nota: 'Grifería Urban Ducha + Complemento · artículo 23135 · marca NOKEN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 764.03, {
+  c('MAT-09-019', PROV_OCHOA, 764.03, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232601',
     art: 'DUCHA TELEFONO C / MANGUERA 3 FUNCIONES',
     sku: '01-23-2601',
@@ -26151,7 +29448,7 @@
     url: 'https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232601',
     nota: 'DUCHA TELEFONO C / MANGUERA 3 FUNCIONES · artículo 01-23-2601 · ref. P01721 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 1084.36, {
+  c('MAT-09-019', PROV_OCHOA, 1084.36, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232604',
     art: 'DUCHA TELEFONO C / MANGUERA 3 FUNCIONES',
     sku: '01-23-2604',
@@ -26159,7 +29456,7 @@
     url: 'https://ochoa.com.do/producto/ducha-telefono-c-manguera-3-funciones-01232604',
     nota: 'DUCHA TELEFONO C / MANGUERA 3 FUNCIONES · artículo 01-23-2604 · ref. P01725 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 1338.18, {
+  c('MAT-09-019', PROV_OCHOA, 1338.18, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-5-funciones-01232603',
     art: 'DUCHA TELEFONO C / MANGUERA 5 FUNCIONES',
     sku: '01-23-2603',
@@ -26167,7 +29464,7 @@
     url: 'https://ochoa.com.do/producto/ducha-telefono-c-manguera-5-funciones-01232603',
     nota: 'DUCHA TELEFONO C / MANGUERA 5 FUNCIONES · artículo 01-23-2603 · ref. P01724 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 730.86, {
+  c('MAT-09-019', PROV_OCHOA, 730.86, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ducha-telefono-c-manguera-8-funciones-01232602',
     art: 'DUCHA TELEFONO C / MANGUERA 8 FUNCIONES',
     sku: '01-23-2602',
@@ -26175,7 +29472,7 @@
     url: 'https://ochoa.com.do/producto/ducha-telefono-c-manguera-8-funciones-01232602',
     nota: 'DUCHA TELEFONO C / MANGUERA 8 FUNCIONES · artículo 01-23-2602 · ref. P01722 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 511.64, {
+  c('MAT-09-019', PROV_OCHOA, 511.64, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-cromada-plastica-01230530',
     art: 'MANGUERA CROMADA PLASTICA',
     sku: '01-23-0530',
@@ -26183,7 +29480,7 @@
     url: 'https://ochoa.com.do/producto/manguera-cromada-plastica-01230530',
     nota: 'MANGUERA CROMADA PLASTICA · artículo 01-23-0530 · ref. 15078 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 363.69, {
+  c('MAT-09-019', PROV_OCHOA, 363.69, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-de-metal-p-ducha-1-5mts-01232599',
     art: 'MANGUERA DE METAL P / DUCHA 1.5MTS',
     sku: '01-23-2599',
@@ -26191,7 +29488,7 @@
     url: 'https://ochoa.com.do/producto/manguera-de-metal-p-ducha-1-5mts-01232599',
     nota: 'MANGUERA DE METAL P / DUCHA 1.5MTS · artículo 01-23-2599 · ref. P01800 · marca AQUINA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_OCHOA, 256.18, {
+  c('MAT-09-019', PROV_OCHOA, 256.18, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-p-fregadero-01162535',
     art: 'MANGUERA P / FREGADERO',
     sku: '01-16-2535',
@@ -26199,42 +29496,58 @@
     url: 'https://ochoa.com.do/producto/manguera-p-fregadero-01162535',
     nota: 'MANGUERA P / FREGADERO · artículo 01-16-2535 · ref. 30171 · marca EZ-FLO/EASTMAN. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CIMA, 601, {
+  c('MAT-09-019', PROV_OCHOA, 578.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-p-ducha-cromo-metal-01232553',
+    art: 'MANGUERA P / DUCHA CROMO METAL',
+    sku: '01-23-2553',
+    marca: 'INEX',
+    url: 'https://ochoa.com.do/producto/manguera-p-ducha-cromo-metal-01232553',
+    nota: 'MANGUERA P / DUCHA CROMO METAL · artículo 01-23-2553 · ref. 88-088 · marca INEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_OCHOA, 5345.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/manguera-retractilp-freg-e305-01232475',
+    art: 'MANGUERA RETRACTILP / FREG E305',
+    sku: '01-23-2475',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/manguera-retractilp-freg-e305-01232475',
+    nota: 'MANGUERA RETRACTILP / FREG E305 · artículo 01-23-2475 · ref. SH-1075 · marca HELVEX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-019', PROV_CIMA, 601, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-16',
     art: 'MANGUERA DUCHA TELEFONO 708-15',
     sku: '8055118137751',
     url: 'https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-16',
     nota: 'MANGUERA DUCHA TELEFONO 708-15 · artículo 8055118137751. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CIMA, 647, {
+  c('MAT-09-019', PROV_CIMA, 647, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-p01799',
     art: 'MANGUERA DUCHA TELEFONO P01799',
     sku: '7453001171706',
     url: 'https://ferreteriacima.com.do/products/manguera-ducha-telefono-p01799',
     nota: 'MANGUERA DUCHA TELEFONO P01799 · artículo 7453001171706. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CIMA, 779, {
+  c('MAT-09-019', PROV_CIMA, 779, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-710-15',
     art: 'MANGUERA DUCHA TELEFONO 710-15',
     sku: '071020',
     url: 'https://ferreteriacima.com.do/products/manguera-ducha-telefono-710-15',
     nota: 'MANGUERA DUCHA TELEFONO 710-15 · artículo 071020. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CIMA, 910, {
+  c('MAT-09-019', PROV_CIMA, 910, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-710',
     art: 'MANGUERA DUCHA TELEFONO 710-',
     sku: '071015',
     url: 'https://ferreteriacima.com.do/products/manguera-ducha-telefono-710',
     nota: 'MANGUERA DUCHA TELEFONO 710- · artículo 071015. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CIMA, 525, {
+  c('MAT-09-019', PROV_CIMA, 525, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-15',
     art: 'MANGUERA DUCHA TELEFONO 708-15',
     sku: '071021',
     url: 'https://ferreteriacima.com.do/products/manguera-ducha-telefono-708-15',
     nota: 'MANGUERA DUCHA TELEFONO 708-15 · artículo 071021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-018', PROV_CERARTE, 1047.51, {
+  c('MAT-09-019', PROV_CERARTE, 1047.51, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/manguera-dducha-silverflex-anti-torcion?variant=011855%20%3A%20%20%3A%20125X1%2F2%22%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MANGUERA D/DUCHA SILVERFLEX ANTI TORCION',
@@ -26243,7 +29556,7 @@
     url: 'https://cerarte.com.do/tienda/producto/manguera-dducha-silverflex-anti-torcion?variant=011855%20%3A%20%20%3A%20125X1%2F2%22%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MANGUERA D/DUCHA SILVERFLEX ANTI TORCION · artículo CERA-34979 · ref. 125X1/2" · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 2085.35, {
+  c('MAT-09-019', PROV_CERARTE, 2085.35, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/manguera-dducha-silverflex-175-cm?variant=012315%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MANGUERA D/DUCHA SILVERFLEX 175 CM',
@@ -26252,7 +29565,7 @@
     url: 'https://cerarte.com.do/tienda/producto/manguera-dducha-silverflex-175-cm?variant=012315%20%3A%20%20%3A%20%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MANGUERA D/DUCHA SILVERFLEX 175 CM · artículo CERA-35964 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 1112, {
+  c('MAT-09-019', PROV_CERARTE, 1112, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/manguera-flexible-relexa-flex-tube?variant=000615%20%3A%20%20%3A%20150%20%3A%20CROMO%20%3A%20GROHE',
     itbis: false,
     art: 'MANGUERA FLEXIBLE RELEXA FLEX TUBE',
@@ -26261,7 +29574,7 @@
     url: 'https://cerarte.com.do/tienda/producto/manguera-flexible-relexa-flex-tube?variant=000615%20%3A%20%20%3A%20150%20%3A%20CROMO%20%3A%20GROHE',
     nota: 'MANGUERA FLEXIBLE RELEXA FLEX TUBE · artículo CERA-01050 · ref. 150 · marca GROHE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-018', PROV_CERARTE, 269.5, {
+  c('MAT-09-019', PROV_CERARTE, 269.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/manguera-flexible-acero-inox?variant=000613%20%3A%20%20%3A%20150%20%3A%20CROMO%20%3A%20AQUALIA',
     itbis: false,
     art: 'MANGUERA FLEXIBLE ACERO INOX',
@@ -26270,105 +29583,105 @@
     url: 'https://cerarte.com.do/tienda/producto/manguera-flexible-acero-inox?variant=000613%20%3A%20%20%3A%20150%20%3A%20CROMO%20%3A%20AQUALIA',
     nota: 'MANGUERA FLEXIBLE ACERO INOX · artículo CERA-01048 · ref. 150 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-019', PROV_CIMA, 1139, {
+  c('MAT-09-020', PROV_CIMA, 1139, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-doble-tanque',
     art: 'REGULADOR GAS DOBLE TANQUE',
     sku: '039936',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-doble-tanque',
     nota: 'REGULADOR GAS DOBLE TANQUE · artículo 039936. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_CIMA, 953, {
+  c('MAT-09-021', PROV_CIMA, 953, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-grande-manual-m',
     art: 'REGULADOR GAS GRANDE MANUAL M',
     sku: '022345',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-grande-manual-m',
     nota: 'REGULADOR GAS GRANDE MANUAL M · artículo 022345. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_CIMA, 326, {
+  c('MAT-09-021', PROV_CIMA, 326, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-grande-si',
     art: 'REGULADOR GAS MANUAL GRANDE SI',
     sku: '7460818400882',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-manual-grande-si',
     nota: 'REGULADOR GAS MANUAL GRANDE SI · artículo 7460818400882. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_CIMA, 359, {
+  c('MAT-09-021', PROV_CIMA, 359, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-grande-co',
     art: 'REGULADOR GAS MANUAL GRANDE CO',
     sku: '7460818401261',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-manual-grande-co',
     nota: 'REGULADOR GAS MANUAL GRANDE CO · artículo 7460818401261. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-020', PROV_CIMA, 1315, {
+  c('MAT-09-021', PROV_CIMA, 1315, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-g-grande-manual-tube',
     art: 'REGULADOR G GRANDE MANUAL TUBE',
     sku: '049275',
     url: 'https://ferreteriacima.com.do/products/regulador-g-grande-manual-tube',
     nota: 'REGULADOR G GRANDE MANUAL TUBE · artículo 049275. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_CIMA, 760, {
+  c('MAT-09-022', PROV_CIMA, 760, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-pequeno-p-tuberi',
     art: 'REGULADOR GAS PEQUENO P/TUBERI',
     sku: '069578',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-pequeno-p-tuberi',
     nota: 'REGULADOR GAS PEQUENO P/TUBERI · artículo 069578. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-021', PROV_CIMA, 259, {
+  c('MAT-09-022', PROV_CIMA, 259, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/regulador-gas-manual-pequeno-a',
     art: 'REGULADOR GAS MANUAL PEQUENO A',
     sku: '7460818400691',
     url: 'https://ferreteriacima.com.do/products/regulador-gas-manual-pequeno-a',
     nota: 'REGULADOR GAS MANUAL PEQUENO A · artículo 7460818400691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_CIMA, 412, {
+  c('MAT-09-023', PROV_CIMA, 412, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-largo-estufa',
     art: 'PIG TAIL LARGO ESTUFA',
     sku: '030583',
     url: 'https://ferreteriacima.com.do/products/pig-tail-largo-estufa',
     nota: 'PIG TAIL LARGO ESTUFA · artículo 030583. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_CIMA, 567, {
+  c('MAT-09-023', PROV_CIMA, 567, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-flexible-gas-fpig-55',
     art: 'PIG TAIL FLEXIBLE GAS FPIG-55',
     sku: '7506240611127',
     url: 'https://ferreteriacima.com.do/products/pig-tail-flexible-gas-fpig-55',
     nota: 'PIG TAIL FLEXIBLE GAS FPIG-55 · artículo 7506240611127. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_CIMA, 1095, {
+  c('MAT-09-023', PROV_CIMA, 1095, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-flexible-gas-eag-d60',
     art: 'PIG TAIL FLEXIBLE GAS EAG-D60',
     sku: '7501605514907',
     url: 'https://ferreteriacima.com.do/products/pig-tail-flexible-gas-eag-d60',
     nota: 'PIG TAIL FLEXIBLE GAS EAG-D60 · artículo 7501605514907. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-022', PROV_CIMA, 299, {
+  c('MAT-09-023', PROV_CIMA, 299, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/pig-tail-corto-estufa',
     art: 'PIG TAIL CORTO ESTUFA',
     sku: '030594',
     url: 'https://ferreteriacima.com.do/products/pig-tail-corto-estufa',
     nota: 'PIG TAIL CORTO ESTUFA · artículo 030594. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-023', PROV_CIMA, 377, {
+  c('MAT-09-024', PROV_CIMA, 377, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-tanque-gas-7-8-ll-ga',
     art: 'LLAVE TANQUE GAS 7/8 LL-GA',
     sku: '7501206643488',
     url: 'https://ferreteriacima.com.do/products/llave-tanque-gas-7-8-ll-ga',
     nota: 'LLAVE TANQUE GAS 7/8 LL-GA · artículo 7501206643488. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-024', PROV_BELLON, 11045, {
+  c('MAT-09-025', PROV_BELLON, 11045, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 220V 1 HP 60Hz Maximus 2XCM25/130',
     sku: '214699',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 220V 1 HP 60Hz Maximus 2XCM25/130 · artículo 214699. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-024', PROV_BELLON, 6802, {
+  c('MAT-09-025', PROV_BELLON, 6802, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 110/120V 1HP 60Hz Dyllu UDTWPHCA03',
     sku: '242964',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1HP 60Hz Dyllu UDTWPHCA03 · artículo 242964. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-025', PROV_FERREMIX, 11205, {
+  c('MAT-09-026', PROV_FERREMIX, 11205, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-presurizadora-multietapas',
     art: 'Boma centrifuga 1 1/3 hp presurizadora multietap',
     sku: 'T102387',
@@ -26376,7 +29689,7 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-presurizadora-multietapas',
     nota: 'Boma centrifuga 1 1/3 hp presurizadora multietap · artículo T102387 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-026', PROV_FERREMIX, 7989, {
+  c('MAT-09-027', PROV_FERREMIX, 7989, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-1-2-hp',
     art: 'Boma 1/2 hp centrifuga para agua truper expert',
     sku: 'T100431',
@@ -26384,35 +29697,35 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-para-agua-1-2-hp',
     nota: 'Boma 1/2 hp centrifuga para agua truper expert · artículo T100431 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-026', PROV_BELLON, 9090, {
+  c('MAT-09-027', PROV_BELLON, 9090, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrifuga 1F 127V 1/2HP Truper 10072',
     sku: '237367',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrifuga 1F 127V 1/2HP Truper 10072 · artículo 237367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-026', PROV_BELLON, 4732, {
+  c('MAT-09-027', PROV_BELLON, 4732, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 110/120V 1/2HP 60Hz Dyllu UDTWPHCA01',
     sku: '242963',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1/2HP 60Hz Dyllu UDTWPHCA01 · artículo 242963. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_BELLON, 18229, {
+  c('MAT-09-028', PROV_BELLON, 18229, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus',
     sku: '209425',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus · artículo 209425. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_BELLON, 8100, {
+  c('MAT-09-028', PROV_BELLON, 8100, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04',
     sku: '242965',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04 · artículo 242965. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-028', PROV_FERREMIX, 30539, {
+  c('MAT-09-029', PROV_FERREMIX, 30539, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/motobomba-para-agua-uso-agricola-15-hp',
     art: 'Motoboba 4" para agua uso agricola, 15 hp',
     sku: 'T102405',
@@ -26420,28 +29733,28 @@
     url: 'https://ferremix.com.do/products/motobomba-para-agua-uso-agricola-15-hp',
     nota: 'Motoboba 4" para agua uso agricola, 15 hp · artículo T102405 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-029', PROV_BELLON, 25785, {
+  c('MAT-09-030', PROV_BELLON, 25785, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 220V 2HP Maximus XHM/6B',
     sku: '164398',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 220V 2HP Maximus XHM/6B · artículo 164398. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-029', PROV_BELLON, 20409, {
+  c('MAT-09-030', PROV_BELLON, 20409, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 220V 2 HP 60Hz Maximus 2XCM25/160B',
     sku: '213988',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 220V 2 HP 60Hz Maximus 2XCM25/160B · artículo 213988. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-030', PROV_BELLON, 23699, {
+  c('MAT-09-031', PROV_BELLON, 23699, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 220/220V 3 HP 60Hz Maximus',
     sku: '209431',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 220/220V 3 HP 60Hz Maximus · artículo 209431. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-031', PROV_FERREMIX, 9495, {
+  c('MAT-09-032', PROV_FERREMIX, 9495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-3-4-hp',
     art: 'Boma 3/4 hp centrifuga para agua truper expert',
     sku: 'T100432',
@@ -26449,7 +29762,7 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-para-agua-3-4-hp',
     nota: 'Boma 3/4 hp centrifuga para agua truper expert · artículo T100432 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-031', PROV_FERREMIX, 7849, {
+  c('MAT-09-032', PROV_FERREMIX, 7849, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-de-3-4-hp',
     art: 'Boma 3/4 hp centrifuga para agua truper',
     sku: 'T100389',
@@ -26457,7 +29770,7 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-para-agua-de-3-4-hp',
     nota: 'Boma 3/4 hp centrifuga para agua truper · artículo T100389 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-032', PROV_FERREMIX, 13189, {
+  c('MAT-09-033', PROV_FERREMIX, 13189, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/motobomba-para-agua-de-3-6-1-2hp-uso-agricola',
     art: 'Motoboba para agua de 3 6 1/2hp uso agricola pretul',
     sku: 'T26063',
@@ -26465,49 +29778,49 @@
     url: 'https://ferremix.com.do/products/motobomba-para-agua-de-3-6-1-2hp-uso-agricola',
     nota: 'Motoboba para agua de 3 6 1/2hp uso agricola pretul · artículo T26063 · marca Pretul. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-033', PROV_CIMA, 7106, {
+  c('MAT-09-034', PROV_CIMA, 7106, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-cisterna-1-2-hp-110',
     art: 'BOMBA AGUA CISTERNA 1/2 HP 110',
     sku: '045841',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-cisterna-1-2-hp-110',
     nota: 'BOMBA AGUA CISTERNA 1/2 HP 110 · artículo 045841. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 2789, {
+  c('MAT-09-035', PROV_CIMA, 2789, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-nara',
     art: 'BOMBA AGUA LADRONA 1/2HP NARA',
     sku: '014449',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-nara',
     nota: 'BOMBA AGUA LADRONA 1/2HP NARA · artículo 014449. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 2670, {
+  c('MAT-09-035', PROV_CIMA, 2670, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-verde',
     art: 'BOMBA AGUA LADRONA 1/2HP VERDE',
     sku: '014451',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-verde',
     nota: 'BOMBA AGUA LADRONA 1/2HP VERDE · artículo 014451. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 3957, {
+  c('MAT-09-035', PROV_CIMA, 3957, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-ama',
     art: 'BOMBA AGUA LADRONA 1/2HP AMA',
     sku: '014450',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2hp-ama',
     nota: 'BOMBA AGUA LADRONA 1/2HP AMA · artículo 014450. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 4480, {
+  c('MAT-09-035', PROV_CIMA, 4480, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp-201t',
     art: 'BOMBA AGUA LADRONA 1/2 HP 201T',
     sku: '058546',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp-201t',
     nota: 'BOMBA AGUA LADRONA 1/2 HP 201T · artículo 058546. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-034', PROV_CIMA, 6300, {
+  c('MAT-09-035', PROV_CIMA, 6300, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp',
     art: 'BOMBA AGUA LADRONA 1/2 HP',
     sku: '044756',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladrona-1-2-hp',
     nota: 'BOMBA AGUA LADRONA 1/2 HP · artículo 044756. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-035', PROV_FERREMIX, 5719, {
+  c('MAT-09-036', PROV_FERREMIX, 5719, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-1hp',
     art: 'Bomba periférica 1HP',
     sku: 'T10070',
@@ -26515,7 +29828,7 @@
     url: 'https://ferremix.com.do/products/bomba-periferica-1hp',
     nota: 'Bomba periférica 1HP · artículo T10070 · marca Truper Expert. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-036', PROV_FERREMIX, 1995, {
+  c('MAT-09-037', PROV_FERREMIX, 1995, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-1-2hp-altura-max-30m-uso-agricola',
     art: 'Boma periférica para agua de 1/2 hp, foset',
     sku: 'T46237',
@@ -26523,7 +29836,7 @@
     url: 'https://ferremix.com.do/products/bomba-periferica-1-2hp-altura-max-30m-uso-agricola',
     nota: 'Boma periférica para agua de 1/2 hp, foset · artículo T46237 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-037', PROV_FERREMIX, 5079, {
+  c('MAT-09-038', PROV_FERREMIX, 5079, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-periferica-3-4hp-altura-max-65m-uso-agricola-expert',
     art: 'Bomba periférica 3/4HP',
     sku: 'T10069',
@@ -26531,28 +29844,28 @@
     url: 'https://ferremix.com.do/products/bomba-periferica-3-4hp-altura-max-65m-uso-agricola-expert',
     nota: 'Bomba periférica 3/4HP · artículo T10069 · marca Truper Expert. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-038', PROV_CIMA, 5075, {
+  c('MAT-09-039', PROV_CIMA, 5075, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-agua-ladro-presur-1-2hp',
     art: 'BOMBA AGUA LADRO PRESUR 1/2HP',
     sku: '023341',
     url: 'https://ferreteriacima.com.do/products/bomba-agua-ladro-presur-1-2hp',
     nota: 'BOMBA AGUA LADRO PRESUR 1/2HP · artículo 023341. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-039', PROV_CIMA, 4914, {
+  c('MAT-09-040', PROV_CIMA, 4914, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-3hp',
     art: 'BOMBA PRESURIZADORA 1/3HP',
     sku: '7506240667971',
     url: 'https://ferreteriacima.com.do/products/bomba-presurizadora-1-3hp',
     nota: 'BOMBA PRESURIZADORA 1/3HP · artículo 7506240667971. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-040', PROV_CIMA, 2911, {
+  c('MAT-09-041', PROV_CIMA, 2911, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/bomba-presurizadora-1-6hp',
     art: 'BOMBA PRESURIZADORA 1/6HP',
     sku: '7506240667964',
     url: 'https://ferreteriacima.com.do/products/bomba-presurizadora-1-6hp',
     nota: 'BOMBA PRESURIZADORA 1/6HP · artículo 7506240667964. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 4075, {
+  c('MAT-09-042', PROV_FERREMIX, 4075, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-sucia',
     art: 'Boma sumergile para agua sucia 1hp pre',
     sku: 'T27198',
@@ -26560,7 +29873,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-sucia',
     nota: 'Boma sumergile para agua sucia 1hp pre · artículo T27198 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 3719, {
+  c('MAT-09-042', PROV_FERREMIX, 3719, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-limpia',
     art: 'Boma sumergile para agua limpia 1 hp p',
     sku: 'T27197',
@@ -26568,7 +29881,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-1-hp-para-agua-limpia',
     nota: 'Boma sumergile para agua limpia 1 hp p · artículo T27197 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 1920, {
+  c('MAT-09-042', PROV_FERREMIX, 1920, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/caja-de-control-para-bomba-tipo-bala-1-hp',
     art: 'Caja de ontrol elétrio 1hp para bomba sumergible',
     sku: 'T102709',
@@ -26576,7 +29889,7 @@
     url: 'https://ferremix.com.do/products/caja-de-control-para-bomba-tipo-bala-1-hp',
     nota: 'Caja de ontrol elétrio 1hp para bomba sumergible · artículo T102709 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 11755, {
+  c('MAT-09-042', PROV_FERREMIX, 11755, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-1-hp-tipo-bala',
     art: 'Boma 1 hp sumergile agua limpia t/ ala truper',
     sku: 'T12625',
@@ -26584,7 +29897,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-de-1-hp-tipo-bala',
     nota: 'Boma 1 hp sumergile agua limpia t/ ala truper · artículo T12625 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 13220, {
+  c('MAT-09-042', PROV_FERREMIX, 13220, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-de-1-hp',
     art: 'Boma 1 hp sumergile de agua limpia de hierro truper',
     sku: 'T100171',
@@ -26592,7 +29905,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-de-1-hp',
     nota: 'Boma 1 hp sumergile de agua limpia de hierro truper · artículo T100171 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 6635, {
+  c('MAT-09-042', PROV_FERREMIX, 6635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-inoxidable-para-agua-sucia',
     art: 'Boma 1 hp sumergile para agua sucia acero inoxidale truper',
     sku: 'T12607',
@@ -26600,7 +29913,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-inoxidable-para-agua-sucia',
     nota: 'Boma 1 hp sumergile para agua sucia acero inoxidale truper · artículo T12607 · ref. T12607 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_FERREMIX, 5255, {
+  c('MAT-09-042', PROV_FERREMIX, 5255, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-para-agua-sucia',
     art: 'Boma 1 hp sumergile para agua sucia plastica truper',
     sku: 'T12603',
@@ -26608,56 +29921,56 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-para-agua-sucia',
     nota: 'Boma 1 hp sumergile para agua sucia plastica truper · artículo T12603 · ref. T12603 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 5512, {
+  c('MAT-09-042', PROV_BELLON, 5512, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 110V 1 HP 60Hz Truper BOS-1SP',
     sku: '201381',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 110V 1 HP 60Hz Truper BOS-1SP · artículo 201381. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 10429, {
+  c('MAT-09-042', PROV_BELLON, 10429, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Cisterna C/Motor/Caja 1F 1220V 1 HP 60Hz Maximus',
     sku: '208921',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Cisterna C/Motor/Caja 1F 1220V 1 HP 60Hz Maximus · artículo 208921. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 15989, {
+  c('MAT-09-042', PROV_BELLON, 15989, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 115V 1HP 60Hz Maximus LSWM100A/XSP18-12/0',
     sku: '210821',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 115V 1HP 60Hz Maximus LSWM100A/XSP18-12/0 · artículo 210821. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 10399, {
+  c('MAT-09-042', PROV_BELLON, 10399, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1HP Maximus 4SPM5-5',
     sku: '212439',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1HP Maximus 4SPM5-5 · artículo 212439. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 9430, {
+  c('MAT-09-042', PROV_BELLON, 9430, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1HP Maximus 4SPM5-5',
     sku: '212442',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1HP Maximus 4SPM5-5 · artículo 212442. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 6660, {
+  c('MAT-09-042', PROV_BELLON, 6660, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Limpias 1F 110V 1 HP 60Hz Truper 12602',
     sku: '234883',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Limpias 1F 110V 1 HP 60Hz Truper 12602 · artículo 234883. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-041', PROV_BELLON, 9060, {
+  c('MAT-09-042', PROV_BELLON, 9060, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1HP Dyllu UDTWPD5031',
     sku: '243693',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1HP Dyllu UDTWPD5031 · artículo 243693. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-042', PROV_FERREMIX, 14569, {
+  c('MAT-09-043', PROV_FERREMIX, 14569, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-1-1-2-hp-tipo-bala',
     art: 'Boma 1 1/2 hp sumergile para agua limpia tipo ala truper',
     sku: 'T12626',
@@ -26665,28 +29978,28 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-de-1-1-2-hp-tipo-bala',
     nota: 'Boma 1 1/2 hp sumergile para agua limpia tipo ala truper · artículo T12626 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-042', PROV_BELLON, 6623, {
+  c('MAT-09-043', PROV_BELLON, 6623, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 110V 1 1/2 HP 60Hz Truper BOS-1-1/2SP',
     sku: '206671',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 110V 1 1/2 HP 60Hz Truper BOS-1-1/2SP · artículo 206671. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-042', PROV_BELLON, 18559, {
+  c('MAT-09-043', PROV_BELLON, 18559, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 220V 1 1/2 HP 60Hz Maximus LSWM150A/XSP20-9/1.1I',
     sku: '210822',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 220V 1 1/2 HP 60Hz Maximus LSWM150A/XSP20-9/1.1I · artículo 210822. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-042', PROV_BELLON, 12399, {
+  c('MAT-09-043', PROV_BELLON, 12399, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1 1/2HP Maximus 4SPM5-7',
     sku: '212437',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1 1/2HP Maximus 4SPM5-7 · artículo 212437. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_FERREMIX, 2835, {
+  c('MAT-09-044', PROV_FERREMIX, 2835, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-1-2-hp-para-agua-limpia',
     art: 'Boma sumergile para agua limpia 1/2 hp',
     sku: 'T27195',
@@ -26694,7 +30007,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-1-2-hp-para-agua-limpia',
     nota: 'Boma sumergile para agua limpia 1/2 hp · artículo T27195 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_FERREMIX, 9405, {
+  c('MAT-09-044', PROV_FERREMIX, 9405, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-1-2-hp',
     art: 'Boma 1/2 hp sumergile de agua limpia de hierro truper',
     sku: 'T100169',
@@ -26702,7 +30015,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-de-agua-limpia-1-2-hp',
     nota: 'Boma 1/2 hp sumergile de agua limpia de hierro truper · artículo T100169 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_FERREMIX, 9595, {
+  c('MAT-09-044', PROV_FERREMIX, 9595, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-tipo-bala-para-agua-limpia',
     art: 'Boma 1/2 hp sumergile para agua limpia tipo ala truper',
     sku: 'T16933',
@@ -26710,7 +30023,7 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-tipo-bala-para-agua-limpia',
     nota: 'Boma 1/2 hp sumergile para agua limpia tipo ala truper · artículo T16933 · ref. T16933 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_FERREMIX, 7809, {
+  c('MAT-09-044', PROV_FERREMIX, 7809, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-metalica-para-agua-limpia-uso-rudo-1-2-hp',
     art: 'Boma 1/2 hp sumergile para agua limpia uso rudo truper',
     sku: 'T15001',
@@ -26718,70 +30031,70 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-metalica-para-agua-limpia-uso-rudo-1-2-hp',
     nota: 'Boma 1/2 hp sumergile para agua limpia uso rudo truper · artículo T15001 · ref. T15001 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 41232, {
+  c('MAT-09-044', PROV_BELLON, 41232, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1/2 HP 10GPM Franklin',
     sku: '176548',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1/2 HP 10GPM Franklin · artículo 176548. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 7960, {
+  c('MAT-09-044', PROV_BELLON, 7960, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 1/2 HP 60Hz Maximus',
     sku: '193339',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 1/2 HP 60Hz Maximus · artículo 193339. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 9002, {
+  c('MAT-09-044', PROV_BELLON, 9002, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1/2HP Maximus 4SPM3-4',
     sku: '212440',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1/2HP Maximus 4SPM3-4 · artículo 212440. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 8375, {
+  c('MAT-09-044', PROV_BELLON, 8375, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1/2HP Maximus 4SPM3-4',
     sku: '212443',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 1/2HP Maximus 4SPM3-4 · artículo 212443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 5881, {
+  c('MAT-09-044', PROV_BELLON, 5881, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Limpias 1F 110V 1/2 HP 60Hz Truper 12601',
     sku: '234880',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Limpias 1F 110V 1/2 HP 60Hz Truper 12601 · artículo 234880. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-043', PROV_BELLON, 7095, {
+  c('MAT-09-044', PROV_BELLON, 7095, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1/2HP Dyllu UDTWPD5011',
     sku: '243691',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1/2HP Dyllu UDTWPD5011 · artículo 243691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-044', PROV_BELLON, 77553, {
+  c('MAT-09-045', PROV_BELLON, 77553, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550',
     sku: '164411',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550 · artículo 164411. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-045', PROV_BELLON, 21812, {
+  c('MAT-09-046', PROV_BELLON, 21812, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Flota 115V 1/6 HP Little Giant 505712 5-MSP 505712/505025',
     sku: '167633',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Flota 115V 1/6 HP Little Giant 505712 5-MSP 505712/505025 · artículo 167633. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-046', PROV_BELLON, 56995, {
+  c('MAT-09-047', PROV_BELLON, 56995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Motor Sin Caja 230V 10 HP Franklin 60LD10S4-PE',
     sku: '196628',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Motor Sin Caja 230V 10 HP Franklin 60LD10S4-PE · artículo 196628. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_FERREMIX, 16615, {
+  c('MAT-09-048', PROV_FERREMIX, 16615, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-para-pozo-profundo-2-hp-agua-limpia',
     art: 'Boma 2 hp sumergile para agua limpia tipo ala truper',
     sku: 'T12627',
@@ -26789,42 +30102,42 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-para-pozo-profundo-2-hp-agua-limpia',
     nota: 'Boma 2 hp sumergile para agua limpia tipo ala truper · artículo T12627 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_BELLON, 61535, {
+  c('MAT-09-048', PROV_BELLON, 61535, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Motor Sin Caja 2 HP 25GPM Franklin 25LD2S4-PE',
     sku: '202255',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Motor Sin Caja 2 HP 25GPM Franklin 25LD2S4-PE · artículo 202255. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_BELLON, 23639, {
+  c('MAT-09-048', PROV_BELLON, 23639, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 220V 2HP 60Hz Maximus LSWM200A/XSP16.2.22/1.5I 2.0HP',
     sku: '210824',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 220V 2HP 60Hz Maximus LSWM200A/XSP16.2.22/1.5I 2.0HP · artículo 210824. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_BELLON, 12859, {
+  c('MAT-09-048', PROV_BELLON, 12859, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 2HP Maximus 4SPM5-10',
     sku: '212444',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 2HP Maximus 4SPM5-10 · artículo 212444. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_BELLON, 29640, {
+  c('MAT-09-049', PROV_BELLON, 29640, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 220V 3HP 60Hz Maximus LSWM300A/XSP42-17/2.2I',
     sku: '210825',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 220V 3HP 60Hz Maximus LSWM300A/XSP42-17/2.2I · artículo 210825. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_BELLON, 17345, {
+  c('MAT-09-049', PROV_BELLON, 17345, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja1F 220V 3 HP Maximus 4SPM5-14',
     sku: '212438',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja1F 220V 3 HP Maximus 4SPM5-14 · artículo 212438. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_FERREMIX, 2999, {
+  c('MAT-09-050', PROV_FERREMIX, 2999, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-3-4-hp-para-agua-limpia',
     art: 'Boma sumergile para agua limpia 3/4 hp',
     sku: 'T27196',
@@ -26832,217 +30145,217 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-3-4-hp-para-agua-limpia',
     nota: 'Boma sumergile para agua limpia 3/4 hp · artículo T27196 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 8979, {
+  c('MAT-09-050', PROV_BELLON, 8979, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 3/4 HP 60Hz Maximus',
     sku: '208920',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 3/4 HP 60Hz Maximus · artículo 208920. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 13303, {
+  c('MAT-09-050', PROV_BELLON, 13303, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 115V 3/4 HP 60Hz Maximus LSWM75A/XSP12-8.5.5/0',
     sku: '210823',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 115V 3/4 HP 60Hz Maximus LSWM75A/XSP12-8.5.5/0 · artículo 210823. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 8599, {
+  c('MAT-09-050', PROV_BELLON, 8599, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Maximus 4SPM5-4',
     sku: '212441',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Maximus 4SPM5-4 · artículo 212441. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 9170, {
+  c('MAT-09-050', PROV_BELLON, 9170, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 3/4HP Maximus 4SPM5-4',
     sku: '212445',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 3/4HP Maximus 4SPM5-4 · artículo 212445. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 5215, {
+  c('MAT-09-050', PROV_BELLON, 5215, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Limpias 1F 110V 3/4 HP 60Hz Truper 12600',
     sku: '234882',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Limpias 1F 110V 3/4 HP 60Hz Truper 12600 · artículo 234882. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 8005, {
+  c('MAT-09-050', PROV_BELLON, 8005, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Dyllu UDTWPD5021',
     sku: '243692',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Dyllu UDTWPD5021 · artículo 243692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 27049, {
+  c('MAT-09-051', PROV_BELLON, 27049, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 3F 220V 5.5 HP Maximu 4SP5-23',
     sku: '192679',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 3F 220V 5.5 HP Maximu 4SP5-23 · artículo 192679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-051', PROV_CIMA, 1825, {
+  c('MAT-09-052', PROV_CIMA, 1825, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
     art: 'TANQUE PRESURIZADO HORIZO 24L',
     sku: '041539',
     url: 'https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
     nota: 'TANQUE PRESURIZADO HORIZO 24L · artículo 041539. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-052', PROV_CIMA, 1666, {
+  c('MAT-09-053', PROV_CIMA, 1666, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
     art: 'INTERRUPTOR AUTOMA BOMBA 20-40',
     sku: '782116159208',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
     nota: 'INTERRUPTOR AUTOMA BOMBA 20-40 · artículo 782116159208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-053', PROV_CIMA, 1631, {
+  c('MAT-09-054', PROV_CIMA, 1631, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
     art: 'INTERRUPTOR AUTOMA BOMBA 30-50',
     sku: '782116159215',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
     nota: 'INTERRUPTOR AUTOMA BOMBA 30-50 · artículo 782116159215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-054', PROV_CIMA, 1688, {
+  c('MAT-09-055', PROV_CIMA, 1688, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
     art: 'INTERRUPTOR AUTOMA BOMBA 40-60',
     sku: '782116159222',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
     nota: 'INTERRUPTOR AUTOMA BOMBA 40-60 · artículo 782116159222. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-055', PROV_CIMA, 690, {
+  c('MAT-09-056', PROV_CIMA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
     art: 'INTERRUPTOR FLOTA ELECT 3M',
     sku: '022359',
     url: 'https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
     nota: 'INTERRUPTOR FLOTA ELECT 3M · artículo 022359. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-055', PROV_CIMA, 1454, {
+  c('MAT-09-056', PROV_CIMA, 1454, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
     art: 'INTERRUPTOR FLOTA ELECT 10AMP',
     sku: '8428381208648',
     url: 'https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
     nota: 'INTERRUPTOR FLOTA ELECT 10AMP · artículo 8428381208648. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-056', PROV_CIMA, 3178, {
+  c('MAT-09-057', PROV_CIMA, 3178, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/control-automatico-bomba-1',
     art: 'CONTROL AUTOMATICO BOMBA 1\'\'',
     sku: '8428381219088',
     url: 'https://ferreteriacima.com.do/products/control-automatico-bomba-1',
     nota: 'CONTROL AUTOMATICO BOMBA 1\'\' · artículo 8428381219088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-057', PROV_CIMA, 990, {
+  c('MAT-09-058', PROV_CIMA, 990, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
     art: 'MANOMETRO GLICERINA 150PSI 382',
     sku: '8428381508908',
     url: 'https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
     nota: 'MANOMETRO GLICERINA 150PSI 382 · artículo 8428381508908. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-058', PROV_CIMA, 905, {
+  c('MAT-09-059', PROV_CIMA, 905, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
     art: 'MANOMETRO GLICERINA 90PSI 3822',
     sku: '8428381508892',
     url: 'https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
     nota: 'MANOMETRO GLICERINA 90PSI 3822 · artículo 8428381508892. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-059', PROV_CIMA, 407, {
+  c('MAT-09-060', PROV_CIMA, 407, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
     art: 'MANOMETRO 90PSI 3820N-006',
     sku: '8428381508854',
     url: 'https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
     nota: 'MANOMETRO 90PSI 3820N-006 · artículo 8428381508854. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-060', PROV_CIMA, 5395, {
+  c('MAT-09-061', PROV_CIMA, 5395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
     art: 'CALENTADOR LINEA A GAS 8LTS',
     sku: '082516',
     url: 'https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 082516. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-060', PROV_CIMA, 15945, {
+  c('MAT-09-061', PROV_CIMA, 15945, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
     art: 'CALENTADOR LINEA A GAS 8LTS',
     sku: '822312089944',
     url: 'https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 822312089944. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-061', PROV_CIMA, 10291, {
+  c('MAT-09-062', PROV_CIMA, 10291, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
     art: 'CALENTADOR ELEC 6 GLS C-6',
     sku: '064560',
     url: 'https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
     nota: 'CALENTADOR ELEC 6 GLS C-6 · artículo 064560. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-062', PROV_CIMA, 20503, {
+  c('MAT-09-063', PROV_CIMA, 20503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
     art: 'CALENTADOR ELECTRICO 7 KW',
     sku: '822312080392',
     url: 'https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
     nota: 'CALENTADOR ELECTRICO 7 KW · artículo 822312080392. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-063', PROV_CIMA, 11717, {
+  c('MAT-09-064', PROV_CIMA, 11717, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
     art: 'CALENTADOR ELEC 8 GLS C-8',
     sku: '064178',
     url: 'https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
     nota: 'CALENTADOR ELEC 8 GLS C-8 · artículo 064178. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-064', PROV_CIMA, 17755, {
+  c('MAT-09-065', PROV_CIMA, 17755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
     art: 'TANQUE CISTERNA 120gls FIBRA',
     sku: '085845',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
     nota: 'TANQUE CISTERNA 120gls FIBRA · artículo 085845. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-065', PROV_CIMA, 5101, {
+  c('MAT-09-066', PROV_CIMA, 5101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
     art: 'TANQUE CISTERNA 30gls FIBRA VI',
     sku: '040678',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
     nota: 'TANQUE CISTERNA 30gls FIBRA VI · artículo 040678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-066', PROV_CIMA, 7487, {
+  c('MAT-09-067', PROV_CIMA, 7487, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     art: 'TANQUE CISTERNA 42gls FIBRA VI',
     sku: '093660',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     nota: 'TANQUE CISTERNA 42gls FIBRA VI · artículo 093660. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-066', PROV_CIMA, 14217, {
+  c('MAT-09-067', PROV_CIMA, 14217, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
     art: 'TANQUE CISTERNA 42gls FV VERDE',
     sku: '039668',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
     nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-067', PROV_CIMA, 15482, {
+  c('MAT-09-068', PROV_CIMA, 15482, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
     art: 'TANQUE CISTERNA 60gls FV VERDE',
     sku: '039691',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
     nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-067', PROV_CIMA, 10496, {
+  c('MAT-09-068', PROV_CIMA, 10496, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     art: 'TANQUE CISTERNA 60gls FIBRA VI',
     sku: '047125',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     nota: 'TANQUE CISTERNA 60gls FIBRA VI · artículo 047125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-068', PROV_CIMA, 9895, {
+  c('MAT-09-069', PROV_CIMA, 9895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     art: 'TANQUE CISTERNA 82 GLS FIBRA V',
     sku: '260406',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     nota: 'TANQUE CISTERNA 82 GLS FIBRA V · artículo 260406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-069', PROV_BELLON, 35835, {
+  c('MAT-09-070', PROV_BELLON, 35835, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 1000 GL El Valleno Negro',
     sku: '78646',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 1000 GL El Valleno Negro · artículo 78646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-070', PROV_MAX, 41115, {
+  c('MAT-09-071', PROV_MAX, 41115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     art: 'TINACO TINACOM 1100 GLS.',
     sku: '0001016137',
@@ -27050,7 +30363,7 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     nota: 'TINACO TINACOM 1100 GLS. · artículo 0001016137 · ref. Tinaco Vertical | Capacidad 1100 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-071', PROV_MAX, 5385, {
+  c('MAT-09-072', PROV_MAX, 5385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     art: 'TINACO TINACOM 145 GLS',
     sku: '0001047874',
@@ -27058,21 +30371,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     nota: 'TINACO TINACOM 145 GLS · artículo 0001047874 · ref. Tinaco Vertical | Capacidad 145 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-071', PROV_BELLON, 5880, {
+  c('MAT-09-072', PROV_BELLON, 5880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro',
     sku: '147528',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro · artículo 147528. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-071', PROV_BELLON, 4990, {
+  c('MAT-09-072', PROV_BELLON, 4990, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GL Tinagua TC-150',
     sku: '199707',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GL Tinagua TC-150 · artículo 199707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-072', PROV_MAX, 10469.3, {
+  c('MAT-09-073', PROV_MAX, 10469.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     art: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO',
     sku: '0001015240',
@@ -27080,21 +30393,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     nota: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO · artículo 0001015240 · ref. Tinaco Horizontal | Capacidad 200 galones | Color Negro · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-073', PROV_BELLON, 6325, {
+  c('MAT-09-074', PROV_BELLON, 6325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 215 GL Tinagua TC-225',
     sku: '199708',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 215 GL Tinagua TC-225 · artículo 199708. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-074', PROV_BELLON, 7125, {
+  c('MAT-09-075', PROV_BELLON, 7125, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 250 GL El Valleno Negro',
     sku: '23435',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 250 GL El Valleno Negro · artículo 23435. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-075', PROV_FERREMIX, 8375, {
+  c('MAT-09-076', PROV_FERREMIX, 8375, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     art: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper',
     sku: 'OF0187',
@@ -27102,21 +30415,21 @@
     url: 'https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     nota: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper · artículo OF0187 · ref. 255 GLS · marca Truper y Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-075', PROV_BELLON, 7664, {
+  c('MAT-09-076', PROV_BELLON, 7664, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 255GL Tinagua TC-255',
     sku: '121511',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 255GL Tinagua TC-255 · artículo 121511. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-076', PROV_CIMA, 9555, {
+  c('MAT-09-077', PROV_CIMA, 9555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     art: 'TINACO 265gls NEGRO',
     sku: '040506',
     url: 'https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     nota: 'TINACO 265gls NEGRO · artículo 040506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-076', PROV_MAX, 8585, {
+  c('MAT-09-077', PROV_MAX, 8585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     art: 'TINACO TINACOM 265 GLS',
     sku: '0001012185',
@@ -27124,21 +30437,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     nota: 'TINACO TINACOM 265 GLS · artículo 0001012185 · ref. Tinaco Vertical | Capacidad 265 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-076', PROV_BELLON, 8050, {
+  c('MAT-09-077', PROV_BELLON, 8050, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro',
     sku: '26643',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro · artículo 26643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-077', PROV_BELLON, 8105, {
+  c('MAT-09-078', PROV_BELLON, 8105, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 295 GL Tinagua TC-300',
     sku: '199709',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 295 GL Tinagua TC-300 · artículo 199709. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-078', PROV_MAX, 9660, {
+  c('MAT-09-079', PROV_MAX, 9660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     art: 'TINACO TINACOM 300 GLS',
     sku: '0001047397',
@@ -27146,28 +30459,28 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     nota: 'TINACO TINACOM 300 GLS · artículo 0001047397 · ref. Tinaco Vertical | Capacidad 300 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-078', PROV_BELLON, 10080, {
+  c('MAT-09-079', PROV_BELLON, 10080, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro',
     sku: '48543',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro · artículo 48543. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-078', PROV_BELLON, 7995, {
+  c('MAT-09-079', PROV_BELLON, 7995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GL El Valleno Negro',
     sku: '100747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GL El Valleno Negro · artículo 100747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-079', PROV_BELLON, 9335, {
+  c('MAT-09-080', PROV_BELLON, 9335, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 350 GL El Valleno Negro',
     sku: '120396',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 350 GL El Valleno Negro · artículo 120396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-080', PROV_MAX, 12125, {
+  c('MAT-09-081', PROV_MAX, 12125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     art: 'TINACO TINACOM 400 GLS.',
     sku: '0001013502',
@@ -27175,42 +30488,42 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     nota: 'TINACO TINACOM 400 GLS. · artículo 0001013502 · ref. Tinaco Vertical | Capacidad 400 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-080', PROV_BELLON, 13300, {
+  c('MAT-09-081', PROV_BELLON, 13300, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GLS 2 Capas Tinacom Negro',
     sku: '105219',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GLS  2 Capas Tinacom Negro · artículo 105219. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-080', PROV_BELLON, 13140, {
+  c('MAT-09-081', PROV_BELLON, 13140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GL Tinagua TC-420',
     sku: '199778',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GL Tinagua TC-420 · artículo 199778. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_BELLON, 12940, {
+  c('MAT-09-082', PROV_BELLON, 12940, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 500 GL El Valleno Negro',
     sku: '23433',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 500 GL El Valleno Negro · artículo 23433. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-082', PROV_BELLON, 292790, {
+  c('MAT-09-083', PROV_BELLON, 292790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 5000 GL El Valleno Negro',
     sku: '149801',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 5000 GL El Valleno Negro · artículo 149801. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-083', PROV_CIMA, 18535, {
+  c('MAT-09-084', PROV_CIMA, 18535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     art: 'TINACO 530gls NEGRO',
     sku: '025060',
     url: 'https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     nota: 'TINACO 530gls NEGRO · artículo 025060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-083', PROV_MAX, 15331.46, {
+  c('MAT-09-084', PROV_MAX, 15331.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     art: 'TINACO TINACOM 530 GLS',
     sku: '0001012186',
@@ -27218,84 +30531,84 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     nota: 'TINACO TINACOM 530 GLS · artículo 0001012186 · ref. Tinaco Vertical | Capacidad 530 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-083', PROV_BELLON, 14980, {
+  c('MAT-09-084', PROV_BELLON, 14980, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro',
     sku: '16722',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro · artículo 16722. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-083', PROV_BELLON, 15115, {
+  c('MAT-09-084', PROV_BELLON, 15115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GL Tinagua TC-555',
     sku: '199779',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GL Tinagua TC-555 · artículo 199779. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-084', PROV_BELLON, 15265, {
+  c('MAT-09-085', PROV_BELLON, 15265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 600 GL El Valleno Negro',
     sku: '48561',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 600 GL El Valleno Negro · artículo 48561. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-085', PROV_CIMA, 3313, {
+  c('MAT-09-086', PROV_CIMA, 3313, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     art: 'TAPA CISTERNA ALUMINIO 24 X 24',
     sku: '105040',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-085', PROV_MAX, 3795, {
+  c('MAT-09-086', PROV_MAX, 3795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-24x24',
     art: 'TAPA CISTERNA 24X24',
     sku: '0001124802',
     url: 'https://maxferreteria.com/products/tapa-cisterna-24x24',
     nota: 'TAPA CISTERNA 24X24 · artículo 0001124802 · ref. Tapa de cisterna | Formato 24x24 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-086', PROV_CIMA, 4503, {
+  c('MAT-09-087', PROV_CIMA, 4503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     art: 'TAPA CISTERNA ALUMINIO 30 x 30',
     sku: '065683',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-086', PROV_MAX, 4745, {
+  c('MAT-09-087', PROV_MAX, 4745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-30x30',
     art: 'TAPA CISTERNA 30X30',
     sku: '0001124804',
     url: 'https://maxferreteria.com/products/tapa-cisterna-30x30',
     nota: 'TAPA CISTERNA 30X30 · artículo 0001124804 · ref. Tapa de cisterna | Formato 30x30 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-087', PROV_CIMA, 3995, {
+  c('MAT-09-088', PROV_CIMA, 3995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     art: 'TAPA CISTERNA ALUMINIO 33 X 33',
     sku: '032540',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     nota: 'TAPA CISTERNA ALUMINIO 33 X 33 · artículo 032540. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-088', PROV_CIMA, 295, {
+  c('MAT-09-089', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     art: 'BOYA CISTERNA NARANJA 120mm',
     sku: '090406',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     nota: 'BOYA CISTERNA NARANJA 120mm · artículo 090406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-089', PROV_CIMA, 375, {
+  c('MAT-09-090', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     art: 'BOYA CISTERNA NARANJA 150mm',
     sku: '090405',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     nota: 'BOYA CISTERNA NARANJA 150mm · artículo 090405. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-090', PROV_CIMA, 160, {
+  c('MAT-09-091', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     art: 'BOYA CISTERNA NEGRA/MAMEY 90mm',
     sku: '090407',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     nota: 'BOYA CISTERNA NEGRA/MAMEY 90mm · artículo 090407. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-091', PROV_IBERICA, 4000, {
+  c('MAT-09-092', PROV_IBERICA, 4000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     art: 'Fregadero Sencillo Teka 25×22',
     sku: '001680',
@@ -27303,14 +30616,14 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     nota: 'Fregadero Sencillo Teka 25×22 · artículo 001680 · ref. 25×22 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-092', PROV_CIMA, 1425, {
+  c('MAT-09-093', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     art: 'FREGADERO BAR 2 HOYOS 15X15',
     sku: '7592032002860',
     url: 'https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     nota: 'FREGADERO BAR 2 HOYOS 15X15 · artículo 7592032002860. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-093', PROV_CERARTE, 1795.08, {
+  c('MAT-09-094', PROV_CERARTE, 1795.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -27319,7 +30632,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34519 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-093', PROV_CERARTE, 2764.6, {
+  c('MAT-09-094', PROV_CERARTE, 2764.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -27328,7 +30641,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34518 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-094', PROV_CERARTE, 2753.38, {
+  c('MAT-09-095', PROV_CERARTE, 2753.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO INVICTA',
@@ -27337,7 +30650,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO INVICTA · artículo CERA-34523 · ref. 47X32X15 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-095', PROV_CERARTE, 16794.81, {
+  c('MAT-09-096', PROV_CERARTE, 16794.81, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 50',
@@ -27346,7 +30659,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 50 · artículo CERA-03261 · ref. 50X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-096', PROV_CERARTE, 4600.63, {
+  c('MAT-09-097', PROV_CERARTE, 4600.63, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -27355,7 +30668,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34521 · ref. 56X34X14.5 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-097', PROV_CERARTE, 15492.89, {
+  c('MAT-09-098', PROV_CERARTE, 15492.89, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 1B D/CUARZO',
@@ -27364,7 +30677,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 1B D/CUARZO · artículo CERA-34922 · ref. 60X48X20 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-098', PROV_CERARTE, 18365.37, {
+  c('MAT-09-099', PROV_CERARTE, 18365.37, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 74',
@@ -27373,7 +30686,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 74 · artículo CERA-03262 · ref. 70X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-099', PROV_CERARTE, 23956.99, {
+  c('MAT-09-100', PROV_CERARTE, 23956.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LUX 74',
@@ -27382,7 +30695,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LUX 74 · artículo CERA-03263 · ref. 74X40X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-100', PROV_FERREMIX, 1635, {
+  c('MAT-09-101', PROV_FERREMIX, 1635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     peso: 2,
     art: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga',
@@ -27391,7 +30704,7 @@
     url: 'https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-101', PROV_IBERICA, 74.85, {
+  c('MAT-09-102', PROV_IBERICA, 74.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     art: 'Fregadero Sencillo 20×21 Teka',
     sku: '008929',
@@ -27399,21 +30712,21 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     nota: 'Fregadero Sencillo 20×21 Teka · artículo 008929 · ref. 20×21 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-102', PROV_IBERICA, 5265.16, {
+  c('MAT-09-103', PROV_IBERICA, 5265.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     art: 'Fregadero Sencillo Black 23.5x18x8 1H',
     sku: '018946',
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     nota: 'Fregadero Sencillo Black 23.5x18x8 1H · artículo 018946 · ref. FRE-603B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-103', PROV_CIMA, 3040, {
+  c('MAT-09-104', PROV_CIMA, 3040, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     art: 'FREGADERO SENCILLO C/ESCURRIDO',
     sku: '010795',
     url: 'https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     nota: 'FREGADERO SENCILLO C/ESCURRIDO · artículo 010795. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-104', PROV_CERARTE, 11376, {
+  c('MAT-09-105', PROV_CERARTE, 11376, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -27422,7 +30735,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34524 · ref. 71.5X40X15 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-105', PROV_CERARTE, 18165.28, {
+  c('MAT-09-106', PROV_CERARTE, 18165.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -27431,7 +30744,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35549 · ref. 79X45X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-105', PROV_CERARTE, 45252.11, {
+  c('MAT-09-106', PROV_CERARTE, 45252.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B BOX LINE 75',
@@ -27440,7 +30753,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 2B BOX LINE 75 · artículo CERA-03264 · ref. 77.6X46X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-106', PROV_CERARTE, 17852.79, {
+  c('MAT-09-107', PROV_CERARTE, 17852.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -27449,7 +30762,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35126 · ref. 80X47X22 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-107', PROV_CERARTE, 5594.18, {
+  c('MAT-09-108', PROV_CERARTE, 5594.18, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO',
@@ -27458,7 +30771,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     nota: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO · artículo CERA-20957 · ref. 800X500 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-107', PROV_CERARTE, 17226.67, {
+  c('MAT-09-108', PROV_CERARTE, 17226.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B OKIO PLUS 80 DUO',
@@ -27467,7 +30780,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     nota: 'FREGADERO 2B OKIO PLUS 80 DUO · artículo CERA-03266 · ref. 80X50X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-108', PROV_CERARTE, 11166.49, {
+  c('MAT-09-109', PROV_CERARTE, 11166.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -27476,14 +30789,14 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34525 · ref. 83.5X34.5X18 4. · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-109', PROV_CIMA, 3285, {
+  c('MAT-09-110', PROV_CIMA, 3285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     art: 'FREGADERO DOBLE 1H 33 X 19 S/E',
     sku: '012486',
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     nota: 'FREGADERO DOBLE 1H 33 X 19 S/E · artículo 012486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-110', PROV_CIMA, 6540, {
+  c('MAT-09-111', PROV_CIMA, 6540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     peso: 2,
     art: 'FREGADERO DOBLE 7 1H 33 x 22',
@@ -27491,14 +30804,14 @@
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-111', PROV_IBERICA, 45860, {
+  c('MAT-09-112', PROV_IBERICA, 45860, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     art: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido',
     sku: '018396',
     url: 'https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     nota: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido · artículo 018396 · ref. 44×86. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-112', PROV_CERARTE, 17194.13, {
+  c('MAT-09-113', PROV_CERARTE, 17194.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -27507,7 +30820,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35127 · ref. 86X46X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-113', PROV_CARABELA, 18400, {
+  c('MAT-09-114', PROV_CARABELA, 18400, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     art: 'Fregadero Prime Doble Rectángular 89x39 cm',
     sku: '29581',
@@ -27515,7 +30828,7 @@
     url: 'https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     nota: 'Fregadero Prime Doble Rectángular 89x39 cm · artículo 29581 · marca Carabelatienda. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_FERREMIX, 6665, {
+  c('MAT-09-115', PROV_FERREMIX, 6665, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45061',
@@ -27523,7 +30836,7 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45061 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-114', PROV_FERREMIX, 6680, {
+  c('MAT-09-115', PROV_FERREMIX, 6680, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45060',
@@ -27531,28 +30844,28 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45060 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_CIMA, 256, {
+  c('MAT-09-116', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     art: 'LLAVE BEBEDERO PLAST # 53 AF',
     sku: '7461299795443',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_CIMA, 205, {
+  c('MAT-09-116', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     art: 'LLAVE BEBEDERO PLAS MACHO 5/8',
     sku: '7502217611022',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_CIMA, 213, {
+  c('MAT-09-116', PROV_CIMA, 213, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7502217612012',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_CIMA, 222, {
+  c('MAT-09-116', PROV_CIMA, 222, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7461299795276',
@@ -48331,6 +51644,14 @@
     marca: 'FLEXIMATIC',
     url: 'https://ochoa.com.do/producto/kit-p-indoro-d-flush-01045589',
     nota: 'KIT P / INDORO D / FLUSH · artículo 01-04-5589 · ref. 4451 · marca FLEXIMATIC. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-27-018', PROV_OCHOA, 108.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/kit-boton-europeo-con-oring-cr-01232419',
+    art: 'KIT BOTON EUROPEO CON ORING CR',
+    sku: '01-23-2419',
+    marca: 'HELVEX',
+    url: 'https://ochoa.com.do/producto/kit-boton-europeo-con-oring-cr-01232419',
+    nota: 'KIT BOTON EUROPEO CON ORING CR · artículo 01-23-2419 · ref. SH-355 · marca HELVEX. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-018', PROV_CERARTE, 5419.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/set-de-accesorios-dbano-d-6pz-serie-2100?variant=009114%20%3A%20%20%3A%20%20%3A%20BRUSHED%20NICKEL%20%3A%20AQUALIA',

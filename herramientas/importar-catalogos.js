@@ -1036,6 +1036,11 @@ const FUENTES = [
         return r === undefined ? undefined : (r || null);
       }
       if (a.cat1 === 'baños') return BANOS.regla(a) || null;
+      /* La grifería de Ochoa vive en «Plomería», no en «Baños»: 624
+         artículos que hasta ahora no entraban por ningún lado —de ahí que
+         el comercio apareciera con cuatro mezcladoras—. Es la misma regla
+         de baños; lo único que hacía falta era llamarla. */
+      if (a.cat1 === 'plomeria' && a.cat2 === 'griferia y mezcladora') return BANOS.regla(a) || null;
       if (a.cat1 === 'seguridad y tecnologia') return SEGTEC.regla(a) || null;
       if (a.cat1 === 'materiales de construccion') {
         const r = REGLAS[a.cat2 + '/' + a.cat3];
