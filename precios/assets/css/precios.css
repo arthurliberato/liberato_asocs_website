@@ -1022,6 +1022,71 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 }
 .ir-busca:focus-within, .ir-select select:focus-visible { border-color: var(--verde); outline: 2px solid var(--verde-200); outline-offset: 1px; }
 
+/* ---------- el desplegable de varios comercios ----------
+   Se parece a los <select> de al lado a propósito: es el mismo gesto y
+   tiene que verse como el mismo control. Lo que cambia es que por dentro
+   son casillas y se pueden marcar varias. */
+.ir-multi { position: relative; }
+.ir-multi-btn {
+  font: inherit;
+  font-size: .88rem;
+  padding: .4rem 1.9rem .4rem .6rem;
+  border: 1px solid var(--line-fuerte);
+  border-radius: var(--r-sm);
+  background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%2362685a' d='M1 1.5 6 6.5l5-5'/%3E%3C/svg%3E") no-repeat right .6rem center/.7rem;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+}
+.ir-multi-btn.is-on { border-color: var(--verde); color: var(--verde-800); font-weight: 600; }
+.ir-multi-btn:focus-visible { border-color: var(--verde); outline: 2px solid var(--verde-200); outline-offset: 1px; }
+
+.ir-multi-menu {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + .3rem);
+  left: 0;
+  min-width: 13rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: .3rem;
+  background: var(--bg);
+  border: 1px solid var(--line-fuerte);
+  border-radius: var(--r-sm);
+  box-shadow: 0 6px 20px rgba(27, 30, 23, .16);
+}
+.ir-multi-menu[hidden] { display: none; }
+.ir-multi-todos {
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-size: .82rem;
+  text-align: left;
+  padding: .35rem .5rem;
+  margin-bottom: .2rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+  background: none;
+  color: var(--ink-mute);
+  cursor: pointer;
+}
+.ir-multi-todos:hover { background: var(--verde-050, rgba(63, 110, 34, .07)); color: var(--verde-800); }
+.ir-multi-op {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  /* Alto de dedo: 44 px es el mínimo con el que se acierta sin mirar. */
+  min-height: 2.75rem;
+  padding: 0 .5rem;
+  font-size: .88rem;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+.ir-multi-op:hover { background: var(--verde-050, rgba(63, 110, 34, .07)); }
+.ir-multi-op input { width: 1.05rem; height: 1.05rem; accent-color: var(--verde); flex: none; }
+
 .ir-cuenta { margin: .55rem 0 0; font-size: .82rem; color: var(--ink-mute); }
 .ir-cuenta strong { color: var(--verde-800); font-variant-numeric: tabular-nums; }
 
@@ -1070,6 +1135,61 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ir-guardar.is-on { background: var(--ambar); color: var(--verde-900); }
 .ir-guardar.is-on svg { fill: currentColor; }
 .ir-guardar:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+
+/* ---------- los dos botones del toque ----------
+   Solo salen en pantalla táctil y solo en la ficha tocada.
+
+   Van ARRIBA de la foto y no abajo, aunque abajo es donde está el pulgar:
+   el recuadro del precio y del comercio vive en la esquina de abajo, y es
+   justo el dato que se está mirando cuando se decide si entrar a la
+   tienda. Taparlo con los botones era pedir la decisión y esconder el
+   número con el que se toma. */
+.ir-acciones { display: none; }
+
+@media (hover: none) {
+  /* Con el dedo no hay hover, así que el marcador de la esquina no se
+     puede descubrir: su sitio es el panel que se abre al tocar. */
+  .ir-guardar { display: none; }
+
+  .ir-card.is-abierta .ir-acciones {
+    position: absolute;
+    z-index: 3;
+    left: .35rem;
+    right: .35rem;
+    /* Pegado al borde de abajo de la foto, que es cuadrada. */
+    top: .35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .35rem;
+    aspect-ratio: 1 / 1;
+    padding: .35rem;
+    border-radius: var(--r-sm);
+    background: linear-gradient(to bottom, rgba(27, 30, 23, .72) 55%, rgba(27, 30, 23, 0));
+  }
+  .ir-acc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    min-height: 2.5rem;
+    padding: 0 .5rem;
+    border: 0;
+    border-radius: var(--r-sm);
+    font: inherit;
+    font-size: .82rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(248, 246, 238, .95);
+    color: var(--verde-900);
+  }
+  .ir-acc svg { width: 15px; height: 15px; flex: none; }
+  .ir-acc-guardar.is-on { background: var(--ambar); }
+  .ir-acc-guardar.is-on svg { fill: currentColor; }
+  .ir-acc-ver { background: var(--verde); color: #fff; }
+}
 
 /* Cada pieza guardada, dentro del panel. */
 .ir-sel {
@@ -1457,6 +1577,12 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .ir-busca { min-width: 0; flex: 1 1 100%; }
   .ir-select { flex: 1 1 8rem; }
   .ir-select select { width: 100%; }
+  .ir-multi { flex: 1 1 8rem; }
+  .ir-multi-btn { width: 100%; }
+  /* El botón mide ocho caracteres y «Papel Tapiz Bella Vista» no cabe en
+     ocho: el panel se ancla a su izquierda y se ensancha lo que haga
+     falta, sin pasarse del ancho de la pantalla. */
+  .ir-multi-menu { left: 0; right: auto; min-width: min(15rem, calc(100vw - 2rem)); }
   .ir-intro .ir-nota { font-size: .8rem; }
   .ir-bajada { font-size: .92rem; }
 }

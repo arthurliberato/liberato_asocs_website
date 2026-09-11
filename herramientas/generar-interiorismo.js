@@ -83,9 +83,17 @@ const pastillas = cats.map(c =>
 const corto = (n) => String(n).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
 /* Se ordena por el nombre corto, que es el que se lee: alfabetizar por
    «Ferretería Ochoa (8A)» y mostrar «Ochoa» deja la lista descolocada. */
+/* NO ES UN <select>, Y NO POR CAPRICHO
+
+   Se puede elegir más de un comercio, y un <select multiple> en el
+   teléfono no es un desplegable: es una lista abierta que ocupa media
+   pantalla y que hay que manejar con pulsaciones largas. Un botón que
+   abre un panel de casillas se maneja con el pulgar y dice cuántos hay
+   elegidos sin abrirlo. */
 const opciones = comercios.slice()
   .sort((a, b) => corto(a).localeCompare(corto(b), 'es'))
-  .map(c => `<option value="${esc(c)}">${esc(corto(c))}</option>`).join('\n            ');
+  .map(c => `<label class="ir-multi-op"><input type="checkbox" value="${esc(c)}">` +
+            `<span>${esc(corto(c))}</span></label>`).join('\n              ');
 
 const html = `<!DOCTYPE html>
 <html lang="es-DO">
@@ -173,13 +181,19 @@ ${header('interiorismo')}
           <input type="search" id="ir-q" placeholder="Buscar: colgante, mármol, dorado…" autocomplete="off">
         </label>
 
-        <label class="ir-select">
-          <span class="visually-hidden">Comercio</span>
-          <select id="ir-comercio">
-            <option value="">Todos los comercios</option>
-            ${opciones}
-          </select>
-        </label>
+        <div class="ir-multi" id="ir-comercio">
+          <button type="button" class="ir-multi-btn" id="ir-comercio-btn"
+                  aria-expanded="false" aria-controls="ir-comercio-menu">
+            <span id="ir-comercio-txt">Todos los comercios</span>
+          </button>
+          <div class="ir-multi-menu" id="ir-comercio-menu" role="group"
+               aria-label="Filtrar por comercio" hidden>
+            <button type="button" class="ir-multi-todos" id="ir-comercio-todos">Todos los comercios</button>
+            <div class="ir-multi-lista">
+              ${opciones}
+            </div>
+          </div>
+        </div>
 
         <label class="ir-select">
           <span class="visually-hidden">Orden</span>
