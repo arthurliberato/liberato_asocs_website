@@ -315,7 +315,8 @@ function reglaDucha(a) {
   }
   if (/^ducha de mano|telefono|^duchade ?mano|manual/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/^cabezal|rainshower|^ducha de techo|^ducha de pared|^ducha lateral|^ducha rotatoria|^regadera/.test(t)) {
-    return BANOS.item('ducha-cabezal', {});
+    const c = BANOS.cabezalDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
   }
   MOTIVO.valor = 'pieza de ducha que la ficha no describe lo bastante';
   return null;

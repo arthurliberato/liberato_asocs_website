@@ -274,7 +274,10 @@ function reglaBano(a) {
     const uso = /frega|cocina|lavadero/.test(t) ? 'fregadero' : 'bano';
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }
-  if (/^regadera|cabezal de ducha|ducha (cuadrada|redonda|tipo lluvia)/.test(t)) return BANOS.item('ducha-cabezal', {});
+  if (/^regadera|cabezal de ducha|ducha (cuadrada|redonda|tipo lluvia)/.test(t)) {
+    const c = BANOS.cabezalDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/ducha telefono|ducha de mano|regadera de mano/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/brazo (de|para) ducha|cuello de ganso/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/columna de ducha|sistema de ducha/.test(t)) return BANOS.item('ducha-columna', {});

@@ -224,11 +224,65 @@ const FAMILIAS = {
     alias: 'cambiador de bebés, baño público'
   },
 
+  /* EL CABEZAL DE DUCHA, QUE ERA EL PEOR DEL CATÁLOGO
+
+     166 cotizaciones de RD$ 150 a RD$ 143.568: mil ciento veintinueve
+     veces, la mayor dispersión de todas las partidas. Y con razón, porque
+     ahí dentro había seis productos distintos y tres hechos que el precio
+     sigue.
+
+     PRIMERO, LO QUE NO ES UN CABEZAL FIJO —28 cotizaciones—: la regadera
+     eléctrica, que calienta el agua y es un aparato; la ducha de bidé; el
+     chorro lateral de cuerpo; la ducha de mano con su soporte, que ya
+     tiene partida propia; y la ducha de techo empotrada, que se instala
+     en el cielo raso y no en la pared.
+
+     DESPUÉS, LOS TRES EJES, y los tres los declara el nombre:
+
+       el tamaño, que es monótono y manda —2" RD$ 429, 4" RD$ 1.049,
+       6" RD$ 1.185, 8" RD$ 2.475, 10" RD$ 5.809, 12" RD$ 7.355—;
+       el material, plástico RD$ 505, acero RD$ 1.005, latón RD$ 3.205;
+       y si trae brazo, que es lo que duplica el precio del mismo cabezal.
+
+     LA FORMA NO ENTRA. Cuadrado o redondo es una decisión de diseño que
+     no mueve el precio, y meterla partiría cada partida en dos por nada.
+
+     DÓNDE QUEDÓ. Las 166 son 50 partidas. La peor sigue siendo la que
+     no lleva ningún eje: 44 cotizaciones y 327 veces. No hay eje que
+     sacarle, porque sus nombres no declaran nada físico —«Rociador
+     Spin», «REGADERA DE DUCHA», «Regadera cuadrada»—; lo que las separa
+     es la marca, y eso lo resuelve la gama, que ya está medida sobre
+     ellas mismas: la económica en RD$ 562 con 15 cotizaciones y la alta
+     en RD$ 22.021 con 20. Eso no es un eje del ítem y por eso va por el
+     otro camino, el de la referencia por gama. */
   'ducha-cabezal': {
     cat: 'MAT-09', base: 'Cabezal de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 10, alias: 'cabeza de ducha, regadera'
+    ejes: ['pulgadas', 'material', 'brazo'], etapa: 'instalaciones', orden: 45,
+    alias: 'cabezal de ducha, regadera, rociador, ducha fija'
   },
-  'ducha-telefono': {
+  'ducha-techo': {
+    cat: 'MAT-09', base: 'Ducha de techo empotrada', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 46,
+    esp: 'Va en el cielo raso: pide la tubería por el entretecho',
+    alias: 'ducha de techo, ducha empotrada, lluvia de techo'
+  },
+  'ducha-lateral': {
+    cat: 'MAT-09', base: 'Chorro lateral de ducha', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 47,
+    esp: 'Chorro de cuerpo: se instalan varios por ducha',
+    alias: 'chorro lateral, jet de cuerpo, ducha lateral'
+  },
+  'ducha-bide': {
+    cat: 'MAT-09', base: 'Ducha higiénica de bidé', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 48,
+    alias: 'ducha higiénica, chattaf, ducha de bidé'
+  },
+  'regadera-electrica': {
+    cat: 'MAT-09', base: 'Regadera eléctrica', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 49,
+    esp: 'Calienta el agua: pide línea eléctrica propia',
+    alias: 'regadera eléctrica, ducha eléctrica, calentador de paso'
+  },  'ducha-telefono': {
     cat: 'MAT-09', base: 'Ducha teléfono', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20, alias: 'ducha de mano, teléfono de ducha'
   },
@@ -275,6 +329,14 @@ const ETIQUETA = {
      piden el «de». Sale «Bañera, de empotrar, acrílica» y «Bañera, de
      isla, de carga mineral». */
   material:    v => (v === 'acrílica' ? 'acrílica' : 'de ' + v),
+  pulgadas:    v => 'de ' + v + '"',
+  /* Las dos se nombran. Se intentó nombrar solo «con brazo» y dejar
+     «sin brazo» sin etiqueta, y salieron partidas distintas con el
+     mismo nombre: «Cabezal de ducha, de 8\", de acero inoxidable» dos
+     veces, una a RD$ 2.450 y otra a RD$ 4.210. El eje separaba y el
+     nombre no lo decía. Callar un valor del eje no es lo mismo que no
+     tener el eje. */
+  brazo:       v => v + ' brazo',
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
@@ -338,6 +400,102 @@ function activacion(texto) {
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/desague\s+automatic\w*/g, ' ');
   return ACCIONADO.test(t) ? 'sensor' : 'manual';
+}
+
+/* QUÉ CABEZAL DE DUCHA ES, Y DE QUÉ
+
+   Devuelve la familia y sus medidas de una vez, porque las cinco
+   decisiones se toman sobre el mismo nombre y separarlas obligaría a
+   cada comercio a repetirlas. Ver la nota de 'ducha-cabezal'.
+
+   El orden importa, como siempre: «REGADERA MANUAL C / SOPORTE FIJO»
+   lleva «fijo» y es de mano; «DUCHA DE EMPOTRAR REDONDO» lleva
+   «redondo» y es de techo. Lo específico primero. */
+function cabezalDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  if (/electric|\d\s*tempe/.test(t)) return { familia: 'regadera-electrica', medidas: {} };
+  if (/bidet?\b|higienic|chattaf/.test(t)) return { familia: 'ducha-bide', medidas: {} };
+  if (/lateral/.test(t)) return { familia: 'ducha-lateral', medidas: {} };
+  if (/d ?\/ ?techo|de techo|empotrar|empotrada/.test(t)) return { familia: 'ducha-techo', medidas: {} };
+  /* La de mano ya tiene partida propia desde antes. */
+  if (/manual|\bman\.|telefono|c ?\/? ?sopo?rte|con soporte|c ?\/ ?extension/.test(t)) {
+    return { familia: 'ducha-telefono', medidas: {} };
+  }
+
+  return { familia: 'ducha-cabezal', medidas: {
+    pulgadas: pulgadasDeCabezal(t),
+    material: materialDeCabezal(t),
+    brazo: brazoDeCabezal(t)
+  } };
+}
+
+/* El tamaño del plato, en pulgadas. El comercio lo escribe «8''», «8\"»,
+   «2-1/2"» y «2 1/2"», y las dos últimas son el mismo cabezal: se
+   normalizan a una sola forma o la partida se parte en dos por un guion.
+   HELVEX lo escribe con dos acentos agudos —«REGADERA 7´´ CHORRO FIJO»,
+   «REGADERA 10´´ CHORRO FIJO ROSE GOLD»—, que no son comillas pero
+   valen por ellas: sin esa marca esas tres cotizaciones, dos de ellas
+   de más de RD$ 26.000, se quedaban en el montón sin medida.
+
+   Sin marca de pulgada no se da por bueno un número suelto: «Regadera
+   5 funciones» lleva un 5 que no son pulgadas, y «DUCHA S/BRAZO 722»
+   lleva un modelo.
+
+   MILÍMETROS. Cuatro fichas declaran el plato en milímetros —«300 X
+   300 MM», «D.220mm», «190 MM»— y se convierten, redondeando a la
+   pulgada: 300 mm son 11,8" y se publican como 12". El redondeo es una
+   convención nuestra y aquí queda dicha; lo que no es convención es el
+   dato, que la ficha sí lo declara. Se exige la unidad escrita, y por
+   eso «TEMPESTA 210» no entra: 210 es el nombre del modelo, aunque
+   GROHE lo derive del diámetro. */
+function pulgadasDeCabezal(t) {
+  let n = 0;
+
+  /* Primero la pulgada, que es como lo escribe la mayoría. */
+  const m = t.match(/(\d{1,2})(?:\s*[-\s]\s*(\d)\s*\/\s*(\d))?\s*(?:''|´´|"|\u201d|pulg)/);
+  const ancho = t.match(/plato ancho (?:de )?(\d{1,2})\b/);
+  if (m) {
+    n = parseInt(m[1], 10) + (m[2] ? parseInt(m[2], 10) / parseInt(m[3], 10) : 0);
+  } else if (ancho) {
+    /* HELVEX tiene dos «plato ancho» y solo a una le puso las marcas:
+       «REGADERA PLATO ANCHO DE 10´´ CH FIJO CR» y «REGADERA PLATO ANCHO
+       7». El número suelto detrás de «plato ancho» es el plato, y la
+       prueba es el precio: la de 7 queda en RD$ 7.055 junto a la otra
+       de 7" en RD$ 7.147. */
+    n = parseInt(ancho[1], 10);
+  } else {
+    /* Luego el milímetro. «300 X 300 MM» es el lado de un plato
+       cuadrado y «D.220mm» el diámetro de uno redondo; van al mismo
+       eje porque la forma no define el ítem. */
+    const mm = t.match(/(\d{2,3})\s*(?:x\s*\d{2,3}\s*)?m ?m\b/);
+    if (!mm) return '';
+    n = Math.round(parseInt(mm[1], 10) / 25.4);
+  }
+
+  if (!(n >= 1.5 && n <= 24)) return '';
+  const ent = Math.floor(n), fr = n - ent;
+  const FRACCION = { 0.25: ' 1/4', 0.5: ' 1/2', 0.75: ' 3/4' };
+  return String(ent) + (fr ? (FRACCION[fr] || '') : '');
+}
+
+function materialDeCabezal(t) {
+  if (/laton|bronce/.test(t)) return 'latón';
+  if (/acero inox|inoxiable|inoxidable|\bacero\b|\bsatin\b/.test(t)) return 'acero inoxidable';
+  if (/zamak/.test(t)) return 'zamak';
+  if (/plastic|\babs\b/.test(t)) return 'plástico';
+  return '';
+}
+
+/* «Con brazo» es el cabezal más el tubo que lo separa de la pared, y a
+   veces el chapetón: casi el doble que el mismo cabezal solo. Cuando el
+   nombre no dice nada, no se supone —hay comercios que nunca lo
+   escriben. */
+function brazoDeCabezal(t) {
+  if (/c ?\/ ?bra?zo|con bra?zo|y chapeton|c ?\/ ?cubre ?falta|\bbr y? ?chap/.test(t)) return 'con';
+  if (/s ?\/ ?bra?zo|sin bra?zo/.test(t)) return 'sin';
+  return '';
 }
 
 /* CUÁL DE LAS CUATRO BAÑERAS
@@ -484,4 +642,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };

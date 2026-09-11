@@ -1059,10 +1059,59 @@
   it('MAT-08', 'Polvo de color para mosaico verde industrial, 55 lb', 'funda', 9092.93, 9092.93, 9092.93, {esp:'', etapa:'pisos', gama:'premium', origen:'importado', alias:'cromo, polvo de color, pigmento para granito', alcance:'Material retirado en almacén'});
 
   /* MAT-09 */
-  it('MAT-09', 'Cabezal de ducha', 'unidad', 2517.5, 150, 143567.8, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabeza de ducha, regadera', alcance:'Material retirado en almacén'});
-  it('MAT-09', 'Ducha teléfono', 'unidad', 712.46, 238.61, 16666.17, {esp:'', etapa:'instalaciones', origen:'importado', alias:'ducha de mano, teléfono de ducha', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Ducha teléfono', 'unidad', 1063.5, 191.62, 16666.17, {esp:'', etapa:'instalaciones', origen:'importado', alias:'ducha de mano, teléfono de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Columna de ducha', 'unidad', 16238.78, 900, 151833.06, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, set de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Columna de ducha', 'unidad', 11514.18, 516.7, 31329.53, {esp:'', etapa:'instalaciones', origen:'importado', alias:'columna de ducha, sistema de ducha, barra deslizable, riel', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha', 'unidad', 4798.81, 195.95, 57000, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, con brazo', 'unidad', 4866.32, 1196, 42584.75, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, sin brazo', 'unidad', 1079.5, 567, 1565, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de acero inoxidable', 'unidad', 6657, 5809, 7459, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{material:'acero inoxidable'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de acero inoxidable, con brazo', 'unidad', 6300, 5485, 7230, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{material:'acero inoxidable', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de acero inoxidable, sin brazo', 'unidad', 305, 305, 305, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{material:'acero inoxidable', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de plástico', 'unidad', 150, 150, 150, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{material:'plástico'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de plástico, sin brazo', 'unidad', 573, 322, 824, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 10"', 'unidad', 16215.97, 5799, 30310.77, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'10'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 12"', 'unidad', 8466.93, 1238.65, 15695.2, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'12'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 16"', 'unidad', 2908.85, 2908.85, 2908.85, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'16'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2"', 'unidad', 283.72, 283.72, 283.72, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2 1/2"', 'unidad', 469, 469, 469, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2 1/2'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2 1/2", con brazo', 'unidad', 555, 555, 555, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2 1/2', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2 1/2", sin brazo', 'unidad', 399, 399, 399, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2 1/2', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2 1/2", de plástico', 'unidad', 269, 269, 269, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2 1/2', material:'plástico'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2 1/2", de plástico, sin brazo', 'unidad', 205, 205, 205, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2 1/2', material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 2", sin brazo', 'unidad', 429, 429, 429, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'2', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3"', 'unidad', 373.94, 373.94, 373.94, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3 1/2", con brazo', 'unidad', 570, 570, 570, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3 1/2', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3 1/4", sin brazo', 'unidad', 655, 655, 655, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3 1/4', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3 1/4", de acero inoxidable, con brazo', 'unidad', 1249, 1249, 1249, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3 1/4', material:'acero inoxidable', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3", sin brazo', 'unidad', 415, 415, 415, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3", de zamak, con brazo', 'unidad', 499, 499, 499, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3', material:'zamak', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 3", de zamak, sin brazo', 'unidad', 405, 405, 405, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'3', material:'zamak', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4"', 'unidad', 1660.9, 1660.9, 1660.9, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4 1/4", de plástico, con brazo', 'unidad', 505, 505, 505, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4 1/4', material:'plástico', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4 1/4", de plástico, sin brazo', 'unidad', 362.5, 345, 380, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4 1/4', material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4", de acero inoxidable, con brazo', 'unidad', 1154, 1049, 2779, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4', material:'acero inoxidable', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4", de acero inoxidable, sin brazo', 'unidad', 719, 610, 2135, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4', material:'acero inoxidable', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4", de plástico, con brazo', 'unidad', 535, 535, 535, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4', material:'plástico', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 4", de plástico, sin brazo', 'unidad', 415, 405, 570, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'4', material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6"', 'unidad', 16947.22, 16947.22, 16947.22, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6", de acero inoxidable, con brazo', 'unidad', 1624, 1185, 1799, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6', material:'acero inoxidable', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6", de acero inoxidable, sin brazo', 'unidad', 1005, 790, 2675, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6', material:'acero inoxidable', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6", de plástico', 'unidad', 525, 525, 525, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6', material:'plástico'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6", de plástico, con brazo', 'unidad', 1094.5, 930, 1259, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6', material:'plástico', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 6", de plástico, sin brazo', 'unidad', 729.5, 710, 749, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'6', material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 7"', 'unidad', 6555.91, 6057.11, 7054.7, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'7'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8"', 'unidad', 4404.5, 4329, 4480, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8", de acero inoxidable', 'unidad', 4210, 4060, 4360, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8', material:'acero inoxidable'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8", de acero inoxidable, con brazo', 'unidad', 3909, 1170, 5879, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8', material:'acero inoxidable', brazo:'con'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8", de acero inoxidable, sin brazo', 'unidad', 2450, 2425, 2475, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8', material:'acero inoxidable', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8", de latón, sin brazo', 'unidad', 3205, 3205, 3205, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8', material:'latón', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 8", de plástico, sin brazo', 'unidad', 982, 735, 1230, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'8', material:'plástico', brazo:'sin'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Cabezal de ducha, de 9"', 'unidad', 2990, 2990, 2990, {esp:'', etapa:'instalaciones', origen:'importado', alias:'cabezal de ducha, regadera, rociador, ducha fija', medidas:{pulgadas:'9'}, alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Ducha de techo empotrada', 'unidad', 17674.54, 12458.63, 143567.8, {esp:'Va en el cielo raso: pide la tubería por el entretecho', etapa:'instalaciones', origen:'importado', alias:'ducha de techo, ducha empotrada, lluvia de techo', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Chorro lateral de ducha', 'unidad', 8400.97, 6845.04, 9956.89, {esp:'Chorro de cuerpo: se instalan varios por ducha', etapa:'instalaciones', origen:'importado', alias:'chorro lateral, jet de cuerpo, ducha lateral', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Ducha higiénica de bidé', 'unidad', 1059.59, 500, 1597, {esp:'', etapa:'instalaciones', origen:'importado', alias:'ducha higiénica, chattaf, ducha de bidé', alcance:'Material retirado en almacén'});
+  it('MAT-09', 'Regadera eléctrica', 'unidad', 1445, 1410, 1480, {esp:'Calienta el agua: pide línea eléctrica propia', etapa:'instalaciones', origen:'importado', alias:'regadera eléctrica, ducha eléctrica, calentador de paso', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Brazo de ducha', 'unidad', 2439.75, 108.23, 10850, {esp:'', etapa:'instalaciones', origen:'importado', alias:'brazo de ducha, cuello de ducha', alcance:'Material retirado en almacén'});
   it('MAT-09', 'Mezcladora, de baño', 'unidad', 4707.54, 218.25, 80380.41, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'bano', activacion:'manual'}, alcance:'Material retirado en almacén'});
   it('MAT-09', 'Mezcladora, de baño, con sensor', 'unidad', 5977.63, 2304.87, 32262.65, {esp:'', etapa:'instalaciones', origen:'importado', alias:'mezcladora, grifo, llave, monocomando, grifería, lavamanos, fregadero', medidas:{uso:'bano', activacion:'sensor'}, alcance:'Material retirado en almacén'});
@@ -2891,8 +2940,10 @@
   /* dudosos:inicio — generado por herramientas/auditar-precios.js. No editar a mano. */
   var dudosos = {
     /* Herramienta de terminación de cableado */
-    'EQU-04-043': 'entre RD$ 481 y RD$ 6,682 no hay nada, y del lado barato queda una sola cotización (14x): hay una pieza mal clasificada',
-    /* Tinaco de 600 galones */
+    'EQU-04-044': 'entre RD$ 481 y RD$ 6,682 no hay nada, y del lado barato queda una sola cotización (14x): hay una pieza mal clasificada',
+    /* Cabezal de ducha, de 12" */
+    'MAT-09-021': 'entre RD$ 1,239 y RD$ 15,695 no hay nada, y del lado barato queda una sola cotización (13x): hay una pieza mal clasificada',
+    /* Bomba ladrona de 1/2 HP */
     'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
     /* Interruptor sencillo */
     'MAT-10-008': 'entre RD$ 395 y RD$ 3,840 no hay nada, y del lado barato queda una sola cotización (10x): hay una pieza mal clasificada',
@@ -2913,23 +2964,23 @@
     /* Cable de red */
     'MAT-30-002': 'la partida se parte en dos entre RD$ 16 y RD$ 164 (10x): le falta un eje que separe los dos grupos',
     /* Cable de red Cat 6 */
-    'MAT-30-006': 'entre RD$ 477 y RD$ 11,276 no hay nada, y del lado barato quedan dos cotizaciones (24x): hay una pieza mal clasificada',
+    'MAT-30-006': 'la partida se parte en dos entre RD$ 477 y RD$ 11,276 (24x): le falta un eje que separe los dos grupos',
     /* Jack RJ45 */
     'MAT-30-008': 'entre RD$ 2 y RD$ 70 no hay nada, y del lado barato quedan dos cotizaciones (33x): hay una pieza mal clasificada',
     /* Placa de pared para datos 1 puertos */
-    'MAT-30-017': 'entre RD$ 101 y RD$ 884 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
-    /* Placa de pared para datos 2 puertos */
     'MAT-30-018': 'entre RD$ 101 y RD$ 884 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
+    /* Placa de pared para datos 2 puertos */
+    'MAT-30-019': 'entre RD$ 101 y RD$ 884 no hay nada, y del lado barato queda una sola cotización (9x): hay una pieza mal clasificada',
     /* Rack y accesorios de gabinete */
-    'MAT-30-020': 'entre RD$ 27 y RD$ 306 no hay nada, y del lado barato queda una sola cotización (11x): hay una pieza mal clasificada',
+    'MAT-30-021': 'entre RD$ 27 y RD$ 306 no hay nada, y del lado barato queda una sola cotización (11x): hay una pieza mal clasificada',
     /* Equipo de red 8 puertos */
-    'MAT-30-023': 'entre RD$ 501 y RD$ 13,694 no hay nada, y del lado barato queda una sola cotización (27x): hay una pieza mal clasificada',
+    'MAT-30-024': 'entre RD$ 501 y RD$ 13,694 no hay nada, y del lado barato queda una sola cotización (27x): hay una pieza mal clasificada',
     /* Conector y accesorio de cableado */
-    'MAT-30-024': 'la partida se parte en dos entre RD$ 4 y RD$ 30 (8x): le falta un eje que separe los dos grupos',
+    'MAT-30-025': 'la partida se parte en dos entre RD$ 4 y RD$ 30 (8x): le falta un eje que separe los dos grupos',
     /* Parlante o amplificador de voceo */
-    'MAT-30-025': 'entre RD$ 287 y RD$ 7,861 no hay nada, y del lado barato quedan dos cotizaciones (27x): hay una pieza mal clasificada',
+    'MAT-30-026': 'entre RD$ 287 y RD$ 7,861 no hay nada, y del lado barato quedan dos cotizaciones (27x): hay una pieza mal clasificada',
     /* Fuente de alimentación para sistemas */
-    'MAT-30-026': 'entre RD$ 1 y RD$ 1,857 no hay nada, y del lado barato queda una sola cotización (1535x): hay una pieza mal clasificada',
+    'MAT-30-027': 'entre RD$ 1 y RD$ 1,857 no hay nada, y del lado barato queda una sola cotización (1535x): hay una pieza mal clasificada',
     /* Interruptor inteligente */
     'MAT-31-002': 'entre RD$ 101 y RD$ 1,002 no hay nada, y del lado barato queda una sola cotización (10x): hay una pieza mal clasificada',
     /* Tomacorriente inteligente */

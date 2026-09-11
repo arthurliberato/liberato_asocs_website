@@ -101,7 +101,10 @@ function regla(a) {
   }
 
   /* ---- Ducha ---- */
-  if (/^rociador|^regadera|cabezal de ducha/.test(n)) return BANOS.item('ducha-cabezal', {});
+  if (/^rociador|^regadera|cabezal de ducha/.test(n)) {
+    const c = BANOS.cabezalDeDucha(n);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/^brazo de ducha/.test(n)) return BANOS.item('ducha-brazo', {});
   /* La tienda la nombra de cuatro maneras —«Columna de Grifería Alexia»,
      «Columna Drako Ducha», «Columna Ducha Smart», «Columna Smart

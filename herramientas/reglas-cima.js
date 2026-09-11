@@ -429,11 +429,11 @@ function clasificar(a) {
     if (/^sistema ducha|^columna/.test(n)) return BANOS.item('ducha-columna', {});
     if (/^soporte ducha/.test(n)) return BANOS.item('ducha-brazo', {});
     if (/^ducha|^regadera/.test(n)) {
-      /* «Con brazo» es un cabezal con su brazo; «sin brazo» es solo el
-         cabezal. Son dos partidas distintas y el nombre lo declara. */
-      if (/c\s*\/\s*brazo|con brazo/.test(n)) return BANOS.item('ducha-cabezal', {});
-      if (/s\s*\/\s*brazo|sin brazo/.test(n)) return BANOS.item('ducha-cabezal', {});
-      return BANOS.item('ducha-cabezal', {});
+      /* Qué cabezal es y de qué lo dice la tabla, que lo decide igual
+         para los seis comercios. Las tres ramas que había aquí —con
+         brazo, sin brazo y lo demás— devolvían las tres el mismo ítem. */
+      const c = BANOS.cabezalDeDucha(n);
+      return BANOS.item(c.familia, c.medidas);
     }
     MOTIVO.valor = 'accesorio de ducha que la ficha no describe lo bastante';
     return null;

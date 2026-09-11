@@ -266,7 +266,10 @@ function reglaBano(a) {
 function reglaGriferia(a) {
   const t = texto(a);
   if (/^brazo/.test(t)) return BANOS.item('ducha-brazo', {});
-  if (/^rociador|^regadera|^cabezal/.test(t)) return BANOS.item('ducha-cabezal', {});
+  if (/^rociador|^regadera|^cabezal/.test(t)) {
+    const c = BANOS.cabezalDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
   if (/^valvula|^vlvula|^fluxometro|^maneral|^sensor|^llave de paso/.test(t)) {
     MOTIVO.valor = 'pieza de grifería que el catálogo no tiene como partida propia';

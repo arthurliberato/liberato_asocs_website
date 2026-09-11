@@ -231,6 +231,12 @@ function regla(a) {
   if (!f || !f[1]) return null;
 
   if (f[1] === 'mezcladora') return mezcladoraDe(a, n);
+  /* El cabezal lo resuelve la tabla: qué pieza de ducha es, y de qué
+     tamaño, material y con brazo o sin él. */
+  if (f[1] === 'ducha-cabezal') {
+    const c = E.cabezalDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
   return E.item(f[1], medidasDe(a, f[1]));
 }
 
