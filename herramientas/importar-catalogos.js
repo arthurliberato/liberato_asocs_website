@@ -1722,17 +1722,25 @@ if (faltan.length) {
    ========================================================= */
 
 function bloqueVisual() {
-  /* Los ámbitos salen del propio catálogo, cargándolo: si se copiaran a otro
-     archivo habría dos verdades sobre qué es interiorismo y un día no
-     coincidirían. */
-  const g = { window: {} };
-  const cats = {};
+  /* El ámbito se pregunta ÍTEM POR ÍTEM, no por su categoría, y esa
+     distinción no es cosmética. «Pisos y revestimientos» es de los dos
+     ámbitos, pero dentro lleva sesenta y dos consumibles de instalación
+     —crucetas, calzos, clips, juntas de dilatación— que el catálogo saca de
+     interiorismo uno por uno con sus propias reglas. Preguntando por la
+     categoría, un «Clips-Calzo Espesorado 2mm» terminaba entre las lámparas
+     y los mármoles.
+
+     Por eso esto se calcula DESPUÉS de escribir el catálogo: recargándolo se
+     obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
+     reglas y arriesgar que las dos copias se separen. */
+  const ambitoDeItem = {};
   (function () {
+    const g = { window: {} };
     const antes = global.window;
     global.window = g.window;
     delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
     require(path.join(DATOS, 'datos-catalogo.js'));
-    (g.window.CATALOGO.categorias || []).forEach(c => { cats[c.codigo] = c.ambitos || []; });
+    (g.window.CATALOGO.items || []).forEach(i => { ambitoDeItem[i.codigo] = i.ambitos || []; });
     global.window = antes;
   }());
 
@@ -1741,7 +1749,7 @@ function bloqueVisual() {
   const anota = (a, codigoItem, cat) => {
     const img = a.imagen || '';
     if (!img) return;
-    if (!(cats[cat] || []).includes('interiorismo')) return;
+    if (!(ambitoDeItem[codigoItem] || []).includes('interiorismo')) return;
     const f = a._fuente;
     const clave = f.proveedor + '|' + a.codigo;
     if (vistos[clave]) return;
@@ -1779,6 +1787,8 @@ function bloqueVisual() {
 if (ESCRIBIR) {
   reemplazar('datos-catalogo.js', 'items', bloqueItems());
   reemplazar('datos-precios.js', 'cotizaciones', bloqueCotizaciones());
+  /* Después de los dos, y no a la vez: bloqueVisual() recarga el catálogo
+     para preguntarle el ámbito de cada ítem, y necesita el recién escrito. */
   fs.writeFileSync(path.join(DATOS, 'datos-visual.js'), bloqueVisual());
   console.log('');
   console.log('Escrito. Ahora corre: node herramientas/generar-categorias.js');

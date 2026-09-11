@@ -2924,7 +2924,15 @@
      Un ítem sin regla hereda el de la suya.
      ========================================================= */
   var REGLAS_AMBITO = [
-    { cat: 'MAT-10', re: /^(cable|tubo|tuberia|tubería|canaleta|abrazadera|codo|caja|breaker|fusible|regleta|tapa|placa|tomacorriente|interruptor|switch|cinta|conector|curva|extension|extensión|centro de carga|panel de breaker)/i,
+    /* De «Electricidad e iluminación» sale de interiorismo todo lo que es
+       instalación —lo que va dentro de la pared o en el tablero— y se queda
+       lo que se ve: el bombillo, el panel, el reflector, el ojo de buey.
+
+       Los últimos de la lista entraron al construirse el explorador visual,
+       que fue donde se vieron: una campana LED de nave industrial y una
+       fuente de poder de 100 W no son cosas que alguien elija mirando
+       fotos de acabados. */
+    { cat: 'MAT-10', re: /^(cable|tubo|tuberia|tubería|canaleta|abrazadera|codo|caja|breaker|fusible|regleta|tapa|placa|tomacorriente|interruptor|switch|cinta|conector|curva|extension|extensión|centro de carga|panel de breaker|campana|fuente|fotocelda|protector|regulador|temporizador|timbre|sensor|adaptador|enchufe|perfil)/i,
       ambitos: ['construccion'] },
     { cat: 'MAT-09', re: /^(bomba|tinaco|cisterna|regulador|manometro|manómetro|boya|interruptor|tapa|valvula|válvula|tanque)/i,
       ambitos: ['construccion'] },
