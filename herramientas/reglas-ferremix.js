@@ -176,6 +176,15 @@ function reglaPlomeria(a) {
   const t = texto(a);
   const md = medido(a);
 
+  /* El grupo «Cabinas» de esta tienda no se leía y sus dos artículos se
+     descartaban enteros: «@cabina de 90x90 cuadrada» y «@cabina de
+     vidrio media luna c/e - 06 90x90», RD$ 12.561 y RD$ 11.585. La
+     tabla decide si es recinto o vidrio y le saca la medida. */
+  if (a.cat2 === 'Cabinas' || /^@?cabina\b|^mampara\b/.test(t)) {
+    const c = BANOS.cabinaDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
+
   if (/bomba (periferica|centrifuga|sumergible|de agua)|motobomba/.test(t)) {
     const hp = numero(md, /(\d+(?:\s+\d+\/\d+|\/\d+|\.\d+)?)\s*hp/) ||
                (/(\d+)\s*\/\s*(\d+)\s*hp/.test(md) ? null : null);
@@ -274,10 +283,13 @@ function reglaBano(a) {
     const uso = /frega|cocina|lavadero/.test(t) ? 'fregadero' : 'bano';
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }
-  if (/^regadera|cabezal de ducha|ducha (cuadrada|redonda|tipo lluvia)/.test(t)) return BANOS.item('ducha-cabezal', {});
+  if (/^regadera|cabezal de ducha|ducha (cuadrada|redonda|tipo lluvia)/.test(t)) {
+    const c = BANOS.cabezalDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/ducha telefono|ducha de mano|regadera de mano/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/brazo (de|para) ducha|cuello de ganso/.test(t)) return BANOS.item('ducha-brazo', {});
-  if (/columna de ducha|sistema de ducha/.test(t)) return BANOS.item('ducha-columna', {});
+  if (/columna de ducha|sistema de ducha/.test(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/manguera (de|para) ducha/.test(t)) return BANOS.item('ducha-manguera', {});
 
   if (/inodoro|sanitario de loza|taza de bano/.test(t)) {
@@ -299,7 +311,7 @@ function reglaBano(a) {
   if (/espejo/.test(t)) return BANOS.item('espejo', { luz: /led|luz/.test(t) ? 'led' : '' });
   if (/urinario|orinal/.test(t)) return BANOS.item('urinario', {});
   if (/\bbidet\b|\bbide\b/.test(t)) return BANOS.item('bide', {});
-  if (/banera|tina de bano|jacuzzi/.test(t)) return BANOS.item('banera', {});
+  if (/banera|tina de bano|jacuzzi/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t), material: BANOS.materialDeBanera(t) });
   if (/barra de (apoyo|seguridad)/.test(t)) {
     const cm = numero(medido(a), /(\d+(?:\.\d+)?)\s*cm/);
     const med = { forma: /abatible/.test(t) ? 'abatible' : /\ben l\b|"l"/.test(t) ? 'en L' : 'recta' };

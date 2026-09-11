@@ -156,7 +156,11 @@ const TECHO = {
   medida_pulg: 120, largo_cm: 1200, ancho_cm: 1200, alto_cm: 1200,
   /* 305 m es la caja de cable de red de 1000 pies: existe, no es un error. */
   diametro_pulg: 60, espesor_mm: 500, largo_m: 500, ancho_mm: 5000,
-  potencia_w: 5000, litros: 2000, watts: 5000
+  potencia_w: 5000, litros: 2000, watts: 5000,
+  /* La cabina y la mampara se guardan en centímetros y como par o
+     terna —«90 × 90 × 215»—; el auditor mira el primer número. 260 es
+     el mismo techo que usa la lectura del nombre. */
+  planta_cm: 260, vidrio_cm: 260
 };
 function medidasImposibles(items) {
   const fuera = [];
@@ -213,17 +217,155 @@ function fueraDeSerie(items) {
   return fuera;
 }
 
+/* ---------- 4: la escalera que baja (informativo) ----------
+
+   Una serie ordenada por una medida que es CANTIDAD —galones, vatios,
+   espacios, milímetros— no puede ir para atrás: el tanque de 82 galones
+   no puede costar menos que el de 60 en la misma tienda. Cuando pasa, o
+   el precio está mal, o los dos artículos no son de la misma línea, o la
+   medida se leyó torcida. Las tres cosas hay que verlas.
+
+   El caso que lo trajo: Cima publica la cisterna de fibra de 60 galones
+   a RD$ 10.496 y la de 82 a RD$ 9.895. Por galón, la serie va a RD$ 170,
+   178 y 175 y la de 82 cae a RD$ 121. Un 6% de diferencia que a ojo se
+   ve y que ninguna de las otras comprobaciones miraba: el hueco no es
+   hueco, la medida no es imposible, y la mediana de la serie no dice
+   nada porque en una serie monótona la mediana es solo el del medio.
+
+   POR QUÉ DENTRO DE UNA MISMA LÍNEA, y no contra el catálogo entero.
+   Un panel LED de 10,5 W de marca puede costar legítimamente más que
+   uno genérico de 12 W, y comparar los dos no dice nada de nadie. Lo
+   que sí dice es que un mismo comercio, en una misma marca, cobre menos
+   por más producto: ahí no hay gama que lo explique, lo contradice su
+   propia lista de precios.
+
+   NO RETIRA, INFORMA. La inversión delata que algo está mal en la
+   pareja, pero no cuál de los dos: retirar el barato cuando el
+   equivocado era el caro sería empeorar el catálogo.
+
+   LOS EJES QUE NO SON CANTIDAD no entran, y están escritos uno por uno
+   porque cada exclusión es una afirmación que hay que poder discutir. */
+const NO_ES_CANTIDAD = new Set([
+  'temp_k',     // 2.700 K y 6.500 K son dos luces, no más y menos luz
+  'voltaje_v',  // 12 V y 120 V no son más ni menos producto
+  'lente_mm',   // la distancia focal no ordena el precio de una cámara
+  'piezas_m2',  // más piezas por metro es baldosa más chica, no más baldosa
+  'grado'       // el grado del acero es una norma, no una cantidad
+]);
+const MINIMO_ESCALERA = 3;
+
+function serieAlReves(items, articulos) {
+  const porCodigo = new Map(items.map(i => [i.codigo, i]));
+
+  /* Las series se arman igual que en «fuera de serie»: se deja libre un
+     eje y se fijan los demás. La diferencia es que aquí el eje libre es
+     numérico, y que el nombre del ítem con el número borrado hace de
+     familia —«Campana LED industrial de # W» no se mezcla con «Reflector
+     LED de # W» aunque las dos vivan en MAT-10 y se midan en vatios. */
+  const series = new Map();
+  for (const i of items) {
+    const m = i.medidas || {};
+    for (const libre of Object.keys(m)) {
+      if (typeof m[libre] !== 'number' || NO_ES_CANTIDAD.has(libre)) continue;
+      const patron = i.nombre.split(String(m[libre])).join('#');
+      const fijos = Object.keys(m).filter(k => k !== libre).sort()
+        .map(k => k + '=' + m[k]).join('|');
+      const clave = [i.catCodigo, patron, fijos, libre].join('::');
+      if (!series.has(clave)) series.set(clave, { libre, patron, codigos: new Set() });
+      series.get(clave).codigos.add(i.codigo);
+    }
+  }
+
+  const porItem = new Map();
+  for (const a of articulos) {
+    if (!porItem.has(a.itemCodigo)) porItem.set(a.itemCodigo, []);
+    porItem.get(a.itemCodigo).push(a);
+  }
+
+  const fuera = [];
+  for (const { libre, patron, codigos } of series.values()) {
+    if (codigos.size < MINIMO_ESCALERA) continue;
+
+    /* Una línea es un comercio y una marca. La marca vacía también hace
+       línea: hay tiendas que no la publican, y entre ellas la comparación
+       sigue siendo la lista de precios de una sola tienda. */
+    const lineas = new Map();
+    for (const cod of codigos) {
+      for (const a of (porItem.get(cod) || [])) {
+        if (!a.precio) continue;
+        const k = a.comercio + ' § ' + (a.marca || '');
+        if (!lineas.has(k)) lineas.set(k, []);
+        lineas.get(k).push({ v: porCodigo.get(cod).medidas[libre], p: a.precio, cod: cod });
+      }
+    }
+
+    for (const [k, puntos] of lineas) {
+      if (puntos.length < MINIMO_ESCALERA) continue;
+      puntos.sort((x, y) => x.v - y.v);
+      let peor = null;
+      for (let i = 1; i < puntos.length; i++) {
+        for (let j = 0; j < i; j++) {
+          if (puntos[j].v >= puntos[i].v || puntos[j].p <= puntos[i].p) continue;
+          const r = puntos[j].p / puntos[i].p;
+          if (!peor || r > peor.factor) {
+            peor = { factor: r, grande: puntos[i], chico: puntos[j] };
+          }
+        }
+      }
+      if (!peor) continue;
+      const comercio = k.split(' § ')[0], marca = k.split(' § ')[1];
+      fuera.push({
+        item: porCodigo.get(peor.grande.cod),
+        razon: 'escalera', factor: peor.factor,
+        motivo: 'en ' + comercio + (marca ? ' (' + marca + ')' : '')
+                + ' el de ' + peor.grande.v + ' cuesta ' + pesos(peor.grande.p)
+                + ' y el de ' + peor.chico.v + ' cuesta ' + pesos(peor.chico.p)
+                + ': la serie del eje «' + libre + '» va para atrás'
+      });
+    }
+  }
+  return fuera.sort((a, b) => b.factor - a.factor);
+}
+
 /* ---------- 4: revisados a mano ----------
    Los que ninguna regla general pilla sin llevarse por delante casos
    legítimos. Cada uno con su razón: si mañana cambia el dato, se borra
    la línea y vuelve a publicarse. */
 const A_MANO = {
-  'MAT-09-084': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, '
+  'MAT-09-155': 'La Ibérica publica un fregadero Teka de 20x21" a RD$ 75, '
     + 'que no es un precio de fregadero. Además la medida se leyó como 8 x 8.',
-  'MAT-10-181': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se '
-    + 'explica si el precio es de un paquete, y la ficha no lo dice'
+  'MAT-10-312': 'Un rollo de cinta de electricista de 30 m a RD$ 1,730 solo se '
+    + 'explica si el precio es de un paquete, y la ficha no lo dice',
+
+  /* LAS TRES CRUCETAS RUBI DE OCHOA.
+
+     No es la marca. Ochoa publica cinco fundas de crucetas RUBI y dos de
+     ellas están donde deben: la de 1,5 mm con 300 a RD$ 234 y la de 3 mm
+     con 200 a RD$ 253, entre los RD$ 165 y los RD$ 340 que cobran los
+     demás por la misma funda. Las otras tres, del mismo comercio, la
+     misma marca y el mismo empaque declarado, salen a RD$ 35, 36 y 41
+     por cruceta cuando las dos buenas salen a menos de RD$ 1,30.
+
+     Cuál de las dos lecturas es la buena no lo dice la ficha, y por eso
+     se retiran en vez de corregirse: una cruceta de plástico a RD$ 35 no
+     existe, pero tampoco sabemos si el precio es de una caja de fundas o
+     un dato malo de la tienda. */
+  'MAT-08-255': 'RD$ 10,609 la funda de 300 son RD$ 35 por cruceta, cuando la '
+    + 'funda RUBI de 1.5 mm del mismo comercio sale a RD$ 0.78 la pieza',
+  'MAT-08-257': 'RD$ 12,275 la funda de 300 son RD$ 41 por cruceta, cuando la '
+    + 'funda RUBI de 3 mm del mismo comercio sale a RD$ 1.27 la pieza',
+  'MAT-08-262': 'RD$ 7,236 la funda de 200 son RD$ 36 por cruceta, cuando la '
+    + 'funda RUBI de 3 mm del mismo comercio sale a RD$ 1.27 la pieza'
 };
 function aMano(items) {
+  /* Los códigos se mueven cuando entran ítems nuevos, y una entrada que
+     ya no apunta a nada deja de retirar sin avisar: las dos que había
+     aquí llevaban varias importaciones sin hacer nada. Si el código no
+     existe, se dice en voz alta. */
+  const hay = new Set(items.map(i => i.codigo));
+  Object.keys(A_MANO).filter(c => !hay.has(c)).forEach(c => {
+    console.error('AVISO: la retirada a mano de %s no corresponde a ningún ítem.', c);
+  });
   return items.filter(i => A_MANO[i.codigo]).map(i => ({
     item: i, razon: 'a mano', factor: 0, motivo: A_MANO[i.codigo]
   }));
@@ -268,6 +410,7 @@ function main() {
   const informar = fueraDeSerie(items)
     .filter(f => !retirar.some(r => r.item.codigo === f.item.codigo))
     .sort((a, b) => b.factor - a.factor);
+  const escaleras = serieAlReves(items, d.articulos || []);
 
   if (process.argv.includes('--lista')) {
     for (const f of retirar) console.log(f.item.codigo + '\t' + f.motivo);
@@ -292,6 +435,13 @@ function main() {
       + col(f.item.codigo, 12) + ' ' + col(f.item.nombre, 38) + ' ' + f.motivo);
   }
   if (informar.length > 25) console.log('  ... y %d más', informar.length - 25);
+
+  console.log('\n=== LA ESCALERA QUE BAJA (%d) ===', escaleras.length);
+  console.log('Un mismo comercio, una misma marca, y más producto por menos dinero.\n');
+  for (const f of escaleras) {
+    console.log('  ' + f.factor.toFixed(2).padStart(6) + 'x  '
+      + col(f.item.codigo, 12) + ' ' + col(f.item.nombre, 38) + ' ' + f.motivo);
+  }
 }
 
 main();

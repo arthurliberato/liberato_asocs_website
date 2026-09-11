@@ -207,6 +207,10 @@ function piezasPorFunda(a) {
   let m = t.match(/(\d{2,4})\s*(?:UDS|UNIDADES|PCS|PZAS|PIEZAS)/);
   if (m) return parseInt(m[1], 10);
   m = t.match(/\((\d{2,4})\s*PCS\)/);
+  if (m) return parseInt(m[1], 10);
+  /* «200/1» es como La Ibérica, CerArte y MAKOFIX escriben la funda de
+     200: el 1 es la funda y el 200 lo que lleva dentro. */
+  m = t.match(/(\d{2,4})\s*\/\s*1\b/);
   return m ? parseInt(m[1], 10) : null;
 }
 
@@ -492,9 +496,15 @@ function clasificar(a) {
     /* La cuña no tiene espesor: es la pieza que aprieta, y sirve para
        cualquier junta. Va con 0, que aquí quiere decir «no aplica». En el
        calzo y el clip el espesor SÍ es la identidad y sin él no hay ítem. */
-    if (pieza === 'cuna') return ESP.item('nivelador-ceramica', { pieza: pieza, espesor_mm: 0 });
+    const piezas = piezasPorFunda(a);
+    if (pieza === 'cuna') {
+      return ESP.item('nivelador-ceramica', { pieza: pieza, espesor_mm: 0, piezas: piezas || '' });
+    }
     if (!esp) { MOTIVO.valor = 'la ficha no declara el espesor del nivelador'; return null; }
-    return ESP.item('nivelador-ceramica', { pieza: pieza, espesor_mm: esp });
+    /* Cuántos trae la funda vale aquí lo mismo que en la cruceta, y
+       cuando la ficha lo dice entra: «CLIPS NIVELADOR DELTA 1MM FDA. 400
+       UDS» no compite con una funda de 100. */
+    return ESP.item('nivelador-ceramica', { pieza: pieza, espesor_mm: esp, piezas: piezas || '' });
   }
 
   if (fam === 'adoquin') {
@@ -559,7 +569,14 @@ function clasificar(a) {
                : /^rodel/.test(n) ? 'rodel'
                : /^cuchilla|^cucihlla/.test(n) ? 'cuchilla'
                : /^llana/.test(n) ? 'llana'
-               : /^aplicador/.test(n) ? 'aplicador'
+               /* El de depósito se llena de mortero; la pistola aprieta
+                  un cartucho. La ficha declara cuál es: la primera dice
+                  la capacidad del depósito en centímetros cúbicos, la
+                  segunda habla de cartuchos o de silicona. */
+               : /^aplicador|^pistola/.test(n)
+                 ? (/\bcc\b|dep[oó]sito|\d+\s*cc/.test(baja(a.info || '')) ? 'aplicador-deposito'
+                    : /cartucho|silicona|masilla/.test(baja(a.info || '') + ' ' + n) ? 'pistola-cartucho'
+                    : 'aplicador-deposito')
                : /^ventosa/.test(n) ? 'ventosa'
                : /^alicate/.test(n) ? 'alicate'
                : null;

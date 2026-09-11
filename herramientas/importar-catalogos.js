@@ -1004,6 +1004,7 @@ const ILUMEL = require('./reglas-ilumel.js');
 const LUMINATTI = require('./reglas-luminatti.js');
 const OCHOAILUM = require('./reglas-ochoa-iluminacion.js');
 const OCHOAMAD = require('./reglas-ochoa-madera.js');
+const GAMAS_DECLARADAS = require('./gama-comercios.js');
 
 const FUENTES = [
   /* EL CATÁLOGO ENTERO DE OCHOA, EN UN SOLO ARCHIVO
@@ -1365,6 +1366,10 @@ FUENTES.forEach(fuente => {
     const spec = fuente.regla(a);
     if (spec === undefined) return;                       // familia sin regla
     if (spec && spec.factorUnidad) a._factorUnidad = spec.factorUnidad;
+    /* El nombre de la partida se guarda para consultarlo al escribir la
+       cotización: es la mitad de la clave con que gama-comercios.js
+       declara una gama —comercio y producto—. */
+    if (spec && spec.nombre) a._nombreItem = spec.nombre;
     if (!spec) {
       descartados.push({ a, motivo: fuente.motivoDe ? fuente.motivoDe(a) : fuente.motivo });
       fuera++;
@@ -1495,6 +1500,10 @@ lista.sort((p, q) => p.spec.cat.localeCompare(q.spec.cat) || (p.spec.orden - q.s
 global.window = global;
 /* El motor va antes que el registro: datos-precios.js le pide la c(). */
 require(path.join(DATOS, 'precios.js'));
+/* La tabla de gamas, antes de leer el registro: c() la consulta al
+   construir cada cotización. La miden y la escriben medir-gama.js y
+   gama-marcas.js; aquí solo se enchufa. */
+(global.PRECIOS || global.window.PRECIOS).gamaDeMarca = require('./gama-marcas.js');
 ['catalogo', 'proveedores', 'precios', 'demo'].forEach(f => require(path.join(DATOS, 'datos-' + f + '.js')));
 const CAT = global.CATALOGO;
 
@@ -1634,6 +1643,9 @@ function bloqueCotizaciones() {
   L.push('     No editar a mano: se reescribe en cada importación. */');
   L.push('');
 
+  const NOMBRE_ITEM = {};
+  CAT.items.forEach(i => { NOMBRE_ITEM[i.codigo] = i.nombre; });
+
   const linea = (item, a, repite) => {
     /* La referencia del fabricante va en la nota porque es la prueba: es
        donde la tienda declara la medida que su propio nombre se calla. */
@@ -1675,6 +1687,17 @@ function bloqueCotizaciones() {
     if (a.codigo) campos.push("    sku: '" + esc(limpia(a.codigo)) + "'");
     if (a.marca && !/GENERICO|GENÉRICO/i.test(a.marca)) campos.push("    marca: '" + esc(limpia(a.marca)) + "'");
     if (a.url) campos.push("    url: '" + esc(a.url) + "'");
+    /* Y la gama que alguien declaró para este comercio en este producto,
+       cuando la hay. Es lo estrecho que manda sobre lo ancho: la tabla de
+       marcas mide la mediana de una marca en todo el catálogo, y esto es
+       un comercio en una familia. Ver gama-comercios.js. */
+    /* Los artículos que van a un ítem que ya existía no pasan por regla y
+       no traen el nombre puesto; se busca por el código, que aquí sí se
+       tiene —y aquí el catálogo ya está cargado, cosa que no ocurre
+       durante la clasificación. */
+    const nombreItem = a._nombreItem || (NOMBRE_ITEM[item] || '');
+    const gd = GAMAS_DECLARADAS.gamaDeclarada(f.proveedor, nombreItem);
+    if (gd) campos.push("    gama: '" + gd + "'");
     /* Tres casos: el comercio declara que no lo lleva, declara que sí lo
        lleva, o se calla y hay que suponerlo. Solo el tercero es un supuesto
        y solo ese lo dice. */

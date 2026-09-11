@@ -110,11 +110,23 @@ const FAMILIAS = {
     alias: 'cruceta, separador, crucetilla'
   },
 
+  /* CUÁNTOS TRAE LA FUNDA, que en la cruceta siempre estuvo y aquí
+     faltaba. Sin eso, «Clip de nivelación para cerámica 2 mm» juntaba
+     una funda de 100 de La Ibérica a RD$ 250, una de 200 de MAKOFIX a
+     RD$ 423, una de 250 de PROFILITEC a RD$ 2.575 y una de 400 de RUBI
+     a RD$ 1.691: cuatro empaques distintos comparados como si fueran el
+     mismo, y la culpa del precio alto se la llevaba la marca.
+
+     Es opcional y no obligatorio como en la cruceta porque hay fichas
+     que no lo dicen —CORTAG y VALENPLAS no lo publican— y retirarlas
+     por eso perdería seis cotizaciones buenas; se quedan con el nombre
+     corto, que es lo que la ficha sostiene. */
   'nivelador-ceramica': {
     cat: 'MAT-08', unidad: 'funda', etapa: 'pisos', orden: 90,
-    ejes: ['pieza', 'espesor_mm'],
+    ejes: ['pieza', 'espesor_mm'], opcionales: ['piezas'],
     nombre: m => (m.pieza === 'calzo' ? 'Calzo' : m.pieza === 'cuna' ? 'Cuña' : 'Clip') +
-                 ' de nivelación para cerámica' + (m.espesor_mm ? ' ' + m.espesor_mm + ' mm' : ''),
+                 ' de nivelación para cerámica' + (m.espesor_mm ? ' ' + m.espesor_mm + ' mm' : '') +
+                 (m.piezas ? ', funda de ' + m.piezas : ''),
     /* Los mm del calzo y del clip son la junta que dejan, no el espesor de
        la pieza, y ninguno de los dos aprieta solo: la cuña se compra aparte. */
     esp: m => m.pieza === 'cuna' ? 'Aprieta calzos y clips de cualquier junta'
@@ -287,7 +299,18 @@ const ETIQUETA_HERRAMIENTA = {
   'rodel': 'Rodel de repuesto para cortadora',
   'cuchilla': 'Cuchilla de repuesto para cortadora',
   'llana': 'Llana dentada',
-  'aplicador': 'Aplicador de mortero',
+  /* DOS HERRAMIENTAS CON EL MISMO NOMBRE COMERCIAL
+
+     «Aplicador de mortero» juntaba una pistola de calafateo de CORTAG de
+     RD$ 1.282 con un aplicador RUBI de RD$ 4.581, 3,6 veces. No son la
+     misma herramienta y las dos fichas lo dicen: la de RUBI es un
+     «aplicador manual de mortero/juntas» con depósito de 650 cc y
+     boquillas de 2 a 14 mm, que se llena de mortero; la de CORTAG es una
+     «pistola manual para silicona / masillas» para cartuchos o tubos.
+
+     Lo que las separa es cómo se cargan, y por eso se llaman por ahí. */
+  'aplicador-deposito': 'Aplicador de mortero de depósito',
+  'pistola-cartucho': 'Pistola para cartucho de silicona o mortero',
   'ventosa': 'Ventosa para piezas lisas',
   'alicate': 'Alicate para nivelación de cerámica',
   'kit-nivelacion': 'Kit de nivelación de cerámica'
@@ -311,6 +334,14 @@ function item(familia, medidas) {
     if (!v) return null;
     claves.push(f.ejes[i] + '-' + v);
   }
+  /* Los ejes opcionales entran en la clave solo cuando el comercio los
+     declara: una funda de 400 clips no es la misma compra que una de
+     100, y una ficha que no dice cuántas trae tampoco es ninguna de las
+     dos. */
+  (f.opcionales || []).forEach(eje => {
+    const v = limpia(medidas[eje]);
+    if (v) claves.push(eje + '-' + v);
+  });
 
   return {
     cat: f.cat,

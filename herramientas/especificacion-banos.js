@@ -128,16 +128,101 @@ const FAMILIAS = {
     cat: 'MAT-26', base: 'Espejo de baño', unidad: 'unidad',
     ejes: ['luz'], etapa: 'terminacion', orden: 30, alias: 'espejo de baño'
   },
+  /* LA CABINA Y EL PANEL, QUE NO SON LA MISMA COSA
+
+     El nombre del ítem lo confesaba con una «o»: «Cabina o panel de
+     ducha». Son dos productos y no se sustituyen. El panel —la
+     mampara— es un vidrio que se pone al lado de la ducha y se mide
+     ancho por alto: 80 × 190. La cabina es el recinto entero, con sus
+     dos o tres piezas, y se mide en planta: 90 × 90, y si la ficha lo
+     dice, también de alto. Ponerlas juntas era comparar un vidrio de
+     RD$ 3.119 con un recinto de RD$ 62.095.
+
+     Cuál es cuál lo dice la palabra del comercio, y aquí la palabra sí
+     es el dato: quien escribe «mampara», «panel» o «wet room» vende un
+     vidrio, y quien escribe «cabina» vende el recinto. Se comprueba con
+     la medida: las mamparas vienen todas en 190 de alto y las cabinas
+     en 194, 200, 210 y 215.
+
+     EL TAMAÑO MANDA, Y ES LO QUE PIDE QUIEN CUBICA. De 21 cotizaciones,
+     16 declaran la medida en el nombre. En la mampara el alto es
+     siempre 190 y el ancho es el que se mueve: 70 RD$ 3.783, 80
+     RD$ 4.235, 90 RD$ 6.079. El 100 se sale —RD$ 4.096 con dos
+     cotizaciones de un solo comercio, una de ellas más barata que la de
+     70— y queda dicho aquí en vez de taparlo.
+
+     La forma no entra, como en el cabezal: «esquina curveada» y «media
+     luna» son la misma mampara doblada, y el precio no las separa.
+
+     El hidromasaje sí, porque no es una cabina con vidrio distinto sino
+     un aparato con bomba, igual que se separó en las bañeras. */
   'cabina-ducha': {
-    cat: 'MAT-26', base: 'Cabina o panel de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'terminacion', orden: 40,
-    alias: 'cabina de ducha, mampara, panel de ducha'
+    cat: 'MAT-26', base: 'Cabina de ducha', unidad: 'unidad',
+    ejes: ['planta_cm'], etapa: 'terminacion', orden: 40,
+    alias: 'cabina de ducha, recinto de ducha'
+  },
+  'cabina-hidromasaje': {
+    cat: 'MAT-26', base: 'Cabina de ducha con hidromasaje', unidad: 'unidad',
+    ejes: ['planta_cm'], etapa: 'terminacion', orden: 41,
+    alias: 'cabina de hidromasaje, cabina de vapor'
+  },
+  'mampara-ducha': {
+    cat: 'MAT-26', base: 'Mampara o panel de ducha', unidad: 'unidad',
+    ejes: ['vidrio_cm'], etapa: 'terminacion', orden: 42,
+    alias: 'mampara, panel de ducha, vidrio de ducha, wet room'
   },
 
+  /* CUATRO COSAS QUE SE LLAMABAN «BAÑERA»
+
+     Veintiocho cotizaciones de RD$ 9.469 a RD$ 430.700 —cuarenta y cinco
+     veces— en un solo ítem sin ejes, y dentro cuatro productos que no se
+     presupuestan igual: la bañera de baño, la infantil de 72 cm, la que
+     lleva chorros y el jacuzzi, que es otro aparato con su bomba y su
+     instalación eléctrica.
+
+     Quien presupuesta un apartamento pone una bañera; quien pone un
+     jacuzzi está resolviendo otra cosa, y necesita además una línea
+     eléctrica y un desagüe que la bañera no pide. Mezclarlos daba una
+     referencia de RD$ 99.105 que no servía para ninguno de los dos. */
   banera: {
     cat: 'MAT-26', base: 'Bañera', unidad: 'unidad',
-    ejes: [], etapa: 'terminacion', orden: 42,
-    alias: 'bañera, tina, bathtub, jacuzzi'
+    /* Y dentro de la bañera a secas queda un corte más, que los propios
+       nombres declaran: la exenta —isla, freestanding— se planta en medio
+       del baño y pide que la plomería suba por el piso; la empotrada va
+       contra la pared y se resuelve como siempre. Entre las dos hay tres
+       veces, y es la clase de decisión que se toma antes de picar. */
+    /* Y el material, que es el que manda en el precio: acero esmaltado
+       RD$ 9.469, acrílica RD$ 82.974 de mediana, carga mineral
+       RD$ 195.000. Nueve veces del primero al segundo y dos y media del
+       segundo al tercero.
+
+       Va como eje aunque solo lo declaren siete de doce, porque item()
+       salta el eje que falta en vez de rechazar la cotización: las que
+       no lo dicen se quedan juntas en «Bañera, de empotrar», y eso es
+       exactamente lo que son —bañeras de las que no sabemos de qué están
+       hechas—. Las fichas no ayudan: las de CerArte hablan de
+       «materiales duraderos y resistentes a la humedad», que es prosa de
+       venta y no una especificación. */
+    ejes: ['montaje', 'material'], etapa: 'terminacion', orden: 42,
+    alias: 'bañera, tina, bathtub'
+  },
+  'banera-infantil': {
+    cat: 'MAT-26', base: 'Bañera infantil', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 43,
+    esp: 'Bañera corta, de guardería o baño de niños',
+    alias: 'bañera infantil, kiddy, tina de niños'
+  },
+  'banera-hidromasaje': {
+    cat: 'MAT-26', base: 'Bañera de hidromasaje', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 44,
+    esp: 'Lleva bomba y chorros: pide línea eléctrica propia',
+    alias: 'bañera de hidromasaje, bañera con chorros, whirlpool'
+  },
+  jacuzzi: {
+    cat: 'MAT-26', base: 'Jacuzzi', unidad: 'unidad',
+    ejes: [], etapa: 'terminacion', orden: 45,
+    esp: 'Aparato completo con bomba: pide línea eléctrica y desagüe propios',
+    alias: 'jacuzzi, spa, tina de hidromasaje'
   },
 
   'plato-ducha': {
@@ -177,24 +262,111 @@ const FAMILIAS = {
     alias: 'cambiador de bebés, baño público'
   },
 
+  /* EL CABEZAL DE DUCHA, QUE ERA EL PEOR DEL CATÁLOGO
+
+     166 cotizaciones de RD$ 150 a RD$ 143.568: mil ciento veintinueve
+     veces, la mayor dispersión de todas las partidas. Y con razón, porque
+     ahí dentro había seis productos distintos y tres hechos que el precio
+     sigue.
+
+     PRIMERO, LO QUE NO ES UN CABEZAL FIJO —28 cotizaciones—: la regadera
+     eléctrica, que calienta el agua y es un aparato; la ducha de bidé; el
+     chorro lateral de cuerpo; la ducha de mano con su soporte, que ya
+     tiene partida propia; y la ducha de techo empotrada, que se instala
+     en el cielo raso y no en la pared.
+
+     DESPUÉS, LOS TRES EJES, y los tres los declara el nombre:
+
+       el tamaño, que es monótono y manda —2" RD$ 429, 4" RD$ 1.049,
+       6" RD$ 1.185, 8" RD$ 2.475, 10" RD$ 5.809, 12" RD$ 7.355—;
+       el material, plástico RD$ 505, acero RD$ 1.005, latón RD$ 3.205;
+       y si trae brazo, que es lo que duplica el precio del mismo cabezal.
+
+     LA FORMA NO ENTRA. Cuadrado o redondo es una decisión de diseño que
+     no mueve el precio, y meterla partiría cada partida en dos por nada.
+
+     DÓNDE QUEDÓ. Las 166 son 50 partidas. La peor sigue siendo la que
+     no lleva ningún eje: 44 cotizaciones y 327 veces. No hay eje que
+     sacarle, porque sus nombres no declaran nada físico —«Rociador
+     Spin», «REGADERA DE DUCHA», «Regadera cuadrada»—; lo que las separa
+     es la marca, y eso lo resuelve la gama, que ya está medida sobre
+     ellas mismas: la económica en RD$ 562 con 15 cotizaciones y la alta
+     en RD$ 22.021 con 20. Eso no es un eje del ítem y por eso va por el
+     otro camino, el de la referencia por gama. */
   'ducha-cabezal': {
     cat: 'MAT-09', base: 'Cabezal de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 10, alias: 'cabeza de ducha, regadera'
+    ejes: ['pulgadas', 'material', 'brazo'], etapa: 'instalaciones', orden: 45,
+    alias: 'cabezal de ducha, regadera, rociador, ducha fija'
   },
-  'ducha-telefono': {
+  'ducha-techo': {
+    cat: 'MAT-09', base: 'Ducha de techo empotrada', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 46,
+    esp: 'Va en el cielo raso: pide la tubería por el entretecho',
+    alias: 'ducha de techo, ducha empotrada, lluvia de techo'
+  },
+  'ducha-lateral': {
+    cat: 'MAT-09', base: 'Chorro lateral de ducha', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 47,
+    esp: 'Chorro de cuerpo: se instalan varios por ducha',
+    alias: 'chorro lateral, jet de cuerpo, ducha lateral'
+  },
+  'ducha-bide': {
+    cat: 'MAT-09', base: 'Ducha higiénica de bidé', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 48,
+    alias: 'ducha higiénica, chattaf, ducha de bidé'
+  },
+  'regadera-electrica': {
+    cat: 'MAT-09', base: 'Regadera eléctrica', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 49,
+    esp: 'Calienta el agua: pide línea eléctrica propia',
+    alias: 'regadera eléctrica, ducha eléctrica, calentador de paso'
+  },  'ducha-telefono': {
     cat: 'MAT-09', base: 'Ducha teléfono', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20, alias: 'ducha de mano, teléfono de ducha'
   },
+  /* LA COLUMNA DE DUCHA, QUE ERA 124 COTIZACIONES SIN UN SOLO EJE
+
+     De RD$ 517 a RD$ 151.833 —294 veces— y nueve comercios mandando
+     todo al mismo ítem. Dentro había tres cosas que no son columnas y
+     dos ejes que el nombre sí declara.
+
+     LO QUE NO ES UNA COLUMNA. La barra deslizable sola —«BARRA
+     DESLIZABLE P/DUCHA», RD$ 517— es el riel y nada más: sin cabezal,
+     sin ducha de mano y sin mezcladora, y es lo que ponía el suelo de
+     la partida. La «Columna Valencia 2 Puertas Suspendida Blanco Ebony
+     35×30,5×130» es un mueble alto de baño y entró por la palabra. Y
+     una mezcladora que dice «Sin equipo» es justamente la que no trae
+     la columna.
+
+     LOS DOS EJES. El termostato, que lo declaran quince —«SISTEMA
+     D/DUCHA C/TERMOSTATO»— y es la pieza que mantiene la temperatura;
+     y si va empotrada en el muro o expuesta sobre él, que cambia la
+     instalación entera y también lo declaran.
+
+     Lo que NO se hizo es separar «con mezcladora» de «sin mezcladora»:
+     en AQUALIA AVEIRO el sistema expuesto va de RD$ 12.903 a RD$ 14.682
+     y el empotrado con mezcladora de RD$ 8.062 a RD$ 10.233, así que el
+     que trae más cuesta menos. Ahí manda el montaje, no la mezcladora,
+     y meter un eje que no manda es partir la partida por gusto. */
   'ducha-columna': {
     cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 30, alias: 'columna de ducha, set de ducha'
+    ejes: ['montaje', 'termostato'], etapa: 'instalaciones', orden: 30,
+    alias: 'columna de ducha, set de ducha, sistema de ducha'
   },
-  /* La barra deslizable no se presupuesta sola: es parte del conjunto de
-     ducha, igual que la columna y el sistema completo. Todo eso es un ítem. */
+  /* AQUÍ ESTABA LA SEGUNDA «COLUMNA DE DUCHA»
+
+     Había dos familias con este mismo nombre de base: esta y
+     'ducha-columna'. La nota de la vieja decía que la barra deslizable
+     no se presupuesta sola y que todo era un ítem, y con los catálogos
+     de entonces se sostenía. Ya no: la barra sola son RD$ 517 y el
+     sistema completo llega a RD$ 151.833, y el catálogo publicaba dos
+     partidas distintas llamadas igual, una con 57 cotizaciones y otra
+     con 35. Dos ítems no pueden llamarse igual. */
   'ducha-barra': {
-    cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 40,
-    alias: 'columna de ducha, sistema de ducha, barra deslizable, riel'
+    cat: 'MAT-09', base: 'Barra deslizable para ducha', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 31,
+    alias: 'barra deslizable, riel de ducha, barra de ducha',
+    esp: 'Solo el riel · el cabezal y la ducha de mano van aparte'
   },
   'ducha-brazo': {
     cat: 'MAT-09', base: 'Brazo de ducha', unidad: 'unidad',
@@ -224,9 +396,32 @@ const ETIQUETA = {
   forma:       v => v,
   uso:         v => 'de ' + (v === 'bano' ? 'baño' : v),
   montaje:     v => 'de ' + v,
+  /* «Acrílica» es adjetivo y va sola; las otras dos son sustantivos y
+     piden el «de». Sale «Bañera, de empotrar, acrílica» y «Bañera, de
+     isla, de carga mineral». */
+  material:    v => (v === 'acrílica' ? 'acrílica' : 'de ' + v),
+  pulgadas:    v => 'de ' + v + '"',
+  /* Las dos se nombran. Se intentó nombrar solo «con brazo» y dejar
+     «sin brazo» sin etiqueta, y salieron partidas distintas con el
+     mismo nombre: «Cabezal de ducha, de 8\", de acero inoxidable» dos
+     veces, una a RD$ 2.450 y otra a RD$ 4.210. El eje separaba y el
+     nombre no lo decía. Callar un valor del eje no es lo mismo que no
+     tener el eje. */
+  brazo:       v => v + ' brazo',
+  /* Solo se nombra la que lo trae: la columna corriente no lleva
+     termostato y se pide a secas. */
+  termostato:  v => v === 'con' ? 'termostática' : '',
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
+  /* Las dos son medidas en centímetros y se nombran igual; se llaman
+     distinto porque significan distinto: la planta es lo que ocupa la
+     cabina en el piso y el vidrio es el ancho por el alto del paño. Y
+     las dos llevan la unidad en el nombre del eje porque el auditor
+     tiene un techo por eje y el suyo, «medida», es en pulgadas: sin el
+     sufijo daba por imposible una mampara de 152 cm. */
+  planta_cm:   v => 'de ' + v + ' cm',
+  vidrio_cm:   v => 'de ' + v + ' cm',
   activacion:  v => v === 'sensor' ? 'con sensor' : v === 'boton' ? 'de botón' : '',
   /* El doméstico es el caso corriente y va sin etiqueta; el institucional
      se nombra porque es el que no se espera. */
@@ -289,6 +484,293 @@ function activacion(texto) {
   return ACCIONADO.test(t) ? 'sensor' : 'manual';
 }
 
+/* QUÉ CABEZAL DE DUCHA ES, Y DE QUÉ
+
+   Devuelve la familia y sus medidas de una vez, porque las cinco
+   decisiones se toman sobre el mismo nombre y separarlas obligaría a
+   cada comercio a repetirlas. Ver la nota de 'ducha-cabezal'.
+
+   El orden importa, como siempre: «REGADERA MANUAL C / SOPORTE FIJO»
+   lleva «fijo» y es de mano; «DUCHA DE EMPOTRAR REDONDO» lleva
+   «redondo» y es de techo. Lo específico primero. */
+function cabezalDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  if (/electric|\d\s*tempe/.test(t)) return { familia: 'regadera-electrica', medidas: {} };
+  if (/bidet?\b|higienic|chattaf/.test(t)) return { familia: 'ducha-bide', medidas: {} };
+  if (/lateral/.test(t)) return { familia: 'ducha-lateral', medidas: {} };
+  if (/d ?\/ ?techo|de techo|empotrar|empotrada/.test(t)) return { familia: 'ducha-techo', medidas: {} };
+  /* La de mano ya tiene partida propia desde antes. */
+  if (/manual|\bman\.|telefono|c ?\/? ?sopo?rte|con soporte|c ?\/ ?extension/.test(t)) {
+    return { familia: 'ducha-telefono', medidas: {} };
+  }
+
+  return { familia: 'ducha-cabezal', medidas: {
+    pulgadas: pulgadasDeCabezal(t),
+    material: materialDeCabezal(t),
+    brazo: brazoDeCabezal(t)
+  } };
+}
+
+/* El tamaño del plato, en pulgadas. El comercio lo escribe «8''», «8\"»,
+   «2-1/2"» y «2 1/2"», y las dos últimas son el mismo cabezal: se
+   normalizan a una sola forma o la partida se parte en dos por un guion.
+   HELVEX lo escribe con dos acentos agudos —«REGADERA 7´´ CHORRO FIJO»,
+   «REGADERA 10´´ CHORRO FIJO ROSE GOLD»—, que no son comillas pero
+   valen por ellas: sin esa marca esas tres cotizaciones, dos de ellas
+   de más de RD$ 26.000, se quedaban en el montón sin medida.
+
+   Sin marca de pulgada no se da por bueno un número suelto: «Regadera
+   5 funciones» lleva un 5 que no son pulgadas, y «DUCHA S/BRAZO 722»
+   lleva un modelo.
+
+   MILÍMETROS. Cuatro fichas declaran el plato en milímetros —«300 X
+   300 MM», «D.220mm», «190 MM»— y se convierten, redondeando a la
+   pulgada: 300 mm son 11,8" y se publican como 12". El redondeo es una
+   convención nuestra y aquí queda dicha; lo que no es convención es el
+   dato, que la ficha sí lo declara. Se exige la unidad escrita, y por
+   eso «TEMPESTA 210» no entra: 210 es el nombre del modelo, aunque
+   GROHE lo derive del diámetro. */
+function pulgadasDeCabezal(t) {
+  let n = 0;
+
+  /* Primero la pulgada, que es como lo escribe la mayoría. */
+  const m = t.match(/(\d{1,2})(?:\s*[-\s]\s*(\d)\s*\/\s*(\d))?\s*(?:''|´´|"|\u201d|pulg)/);
+  const ancho = t.match(/plato ancho (?:de )?(\d{1,2})\b/);
+  if (m) {
+    n = parseInt(m[1], 10) + (m[2] ? parseInt(m[2], 10) / parseInt(m[3], 10) : 0);
+  } else if (ancho) {
+    /* HELVEX tiene dos «plato ancho» y solo a una le puso las marcas:
+       «REGADERA PLATO ANCHO DE 10´´ CH FIJO CR» y «REGADERA PLATO ANCHO
+       7». El número suelto detrás de «plato ancho» es el plato, y la
+       prueba es el precio: la de 7 queda en RD$ 7.055 junto a la otra
+       de 7" en RD$ 7.147. */
+    n = parseInt(ancho[1], 10);
+  } else {
+    /* Luego el milímetro. «300 X 300 MM» es el lado de un plato
+       cuadrado y «D.220mm» el diámetro de uno redondo; van al mismo
+       eje porque la forma no define el ítem. */
+    const mm = t.match(/(\d{2,3})\s*(?:x\s*\d{2,3}\s*)?m ?m\b/);
+    if (!mm) return '';
+    n = Math.round(parseInt(mm[1], 10) / 25.4);
+  }
+
+  if (!(n >= 1.5 && n <= 24)) return '';
+  const ent = Math.floor(n), fr = n - ent;
+  const FRACCION = { 0.25: ' 1/4', 0.5: ' 1/2', 0.75: ' 3/4' };
+  return String(ent) + (fr ? (FRACCION[fr] || '') : '');
+}
+
+function materialDeCabezal(t) {
+  if (/laton|bronce/.test(t)) return 'latón';
+  if (/acero inox|inoxiable|inoxidable|\bacero\b|\bsatin\b/.test(t)) return 'acero inoxidable';
+  if (/zamak/.test(t)) return 'zamak';
+  if (/plastic|\babs\b/.test(t)) return 'plástico';
+  return '';
+}
+
+/* «Con brazo» es el cabezal más el tubo que lo separa de la pared, y a
+   veces el chapetón: casi el doble que el mismo cabezal solo. Cuando el
+   nombre no dice nada, no se supone —hay comercios que nunca lo
+   escriben. */
+function brazoDeCabezal(t) {
+  if (/c ?\/ ?bra?zo|con bra?zo|y chapeton|c ?\/ ?cubre ?falta|\bbr y? ?chap/.test(t)) return 'con';
+  if (/s ?\/ ?bra?zo|sin bra?zo/.test(t)) return 'sin';
+  return '';
+}
+
+/* QUÉ JUEGO DE DUCHA ES, Y CÓMO VA MONTADO
+
+   Nueve comercios clasifican esto y los nueve mandaban todo al mismo
+   ítem, así que la decisión vive aquí. Ver la nota de 'ducha-columna'.
+
+   El orden importa: «DUCHA BARRA EXTER. CABEZA RED» lleva «barra» y sí
+   trae cabezal, así que la barra sola se reconoce por lo que NO dice. */
+function juegoDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  /* El mueble alto de baño entró por la palabra «columna». Lo delata que
+     declare puertas y unas medidas de mueble. */
+  if (/\d\s*puertas?\b/.test(t) && /suspendid|blanco|ebony|nogal|roble/.test(t)) {
+    return { familia: 'mueble-bano', medidas: { montaje: 'pared' } };
+  }
+  /* «Sin equipo» es la mezcladora sola: lo dice la ficha con todas las
+     letras y es justo lo contrario de una columna. */
+  if (/sin equipo|s ?\/ ?equipo|sin set de ducha/.test(t)) {
+    return { familia: 'ducha-mezcladora', medidas: {} };
+  }
+  /* La barra sola: riel y nada más. */
+  if (/barra (deslizable|deslizante|corredera)|riel de ducha/.test(t) &&
+      !/cabez|regadera|rociador|ducha de mano|d ?\/ ?mano|mezclad/.test(t)) {
+    return { familia: 'ducha-barra', medidas: {} };
+  }
+
+  return { familia: 'ducha-columna', medidas: {
+    montaje: /empotr|\bemp\b/.test(t) ? 'empotrar' : /expuest|exterior|\bbarra\b/.test(t) ? 'sobreponer' : '',
+    termostato: /termostat|termos\b/.test(t) ? 'con' : ''
+  } };
+}
+
+/* CABINA, CABINA DE HIDROMASAJE O MAMPARA, Y DE QUÉ TAMAÑO
+
+   Cuatro comercios clasifican esto y los cuatro mandaban todo al mismo
+   ítem, así que la decisión vive aquí. Ver la nota de 'cabina-ducha'.
+
+   Las medidas se escriben de cuatro maneras —«80X190 CM», «80×190»,
+   «900 x 900 x 1940mm», «90x90»— y hay que dejarlas todas en
+   centímetros antes de comparar. El milímetro se reconoce por la
+   unidad escrita o por el tamaño: nadie vende una mampara de 900 cm.
+
+   Del nombre se descarta antes el número de piezas —«2Pcs», «4 Pcs»—,
+   que no es una medida, y las referencias de modelo con equis
+   —«YLL-8009L»—, que tampoco. */
+function cabinaDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  const familia = /hidromasaje|vapor/.test(t) ? 'cabina-hidromasaje'
+    : /cabina|recinto/.test(t) ? 'cabina-ducha'
+      : 'mampara-ducha';
+
+  const d = dimensionesEnCm(t);
+  if (!d.length) return { familia: familia, medidas: {} };
+
+  /* La mampara se nombra por el vidrio entero, ancho por alto. La
+     cabina por lo que ocupa en el piso, y el alto detrás solo si la
+     ficha lo declara. */
+  const eje = familia === 'mampara-ducha' ? 'vidrio_cm' : 'planta_cm';
+  const medidas = {};
+  medidas[eje] = d.slice(0, 3).join(' × ');
+  return { familia: familia, medidas: medidas };
+}
+
+/* Devuelve las dos o tres medidas del nombre, en centímetros y
+   redondeadas al entero. Si no hay al menos dos, no hay medida: un
+   número suelto en una ficha de cabina es un modelo. */
+function dimensionesEnCm(t) {
+  /* Cada número puede traer su marca de unidad pegada —«60" x 74"»,
+     «80x190 Cms», «900x900x2100mm»— y hay que dejarla entrar entre el
+     número y la equis o no se reconoce el par. */
+  const m = t.match(
+    /(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?\s*[x×]\s*(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?(?:\s*[x×]\s*(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?)?/);
+  if (!m) return [];
+  const crudas = [m[1], m[2], m[3]].filter(Boolean).map(Number);
+
+  /* Tres unidades y una regla para cada una. La pulgada la escribe un
+     solo artículo —«Mampara Con Puerta Corrediza 60" x 74"»— pero sin
+     convertirla salía una mampara de 74 cm de alto. El milímetro se
+     reconoce por la unidad escrita o por el tamaño: 190 cm de alto sí,
+     1940 cm no. */
+  const unidad = /["]|''|´´/.test(m[0]) ? 'pulg'
+    : /mm/i.test(m[0]) || crudas.some(v => v > 260) ? 'mm'
+      : 'cm';
+  const factor = unidad === 'pulg' ? 2.54 : unidad === 'mm' ? 0.1 : 1;
+
+  const cm = crudas.map(v => Math.round(v * factor));
+  if (cm.some(v => v < 40 || v > 260)) return [];
+  return cm;
+}
+
+/* CUÁL DE LAS CUATRO BAÑERAS
+
+   El nombre lo dice en las cuatro, y por eso la decisión vive aquí y no
+   en la regla de cada comercio: seis las clasifican y los seis mandaban
+   todo al mismo ítem.
+
+   El orden importa. «Bañera Hidromasaje Cataluña» lleva las dos
+   palabras y es una bañera con chorros, no un jacuzzi; el jacuzzi se
+   llama jacuzzi a secas. Y lo infantil se pregunta primero de todo,
+   porque una bañera infantil con chorros seguiría siendo infantil. */
+function tipoDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  if (/\bkiddy\b|infantil|\binfante\b|\bninos?\b|\bbebe\b/.test(t)) return 'banera-infantil';
+  if (/hidromasaje|whirlpool|c\/? ?chorros|con chorros/.test(t)) return 'banera-hidromasaje';
+  if (/\bjacuzzi\b|\bspa\b/.test(t)) return 'jacuzzi';
+  return 'banera';
+}
+
+/* Y si es bañera a secas, cómo se planta. «Isla» y «freestanding» son la
+   misma palabra en dos idiomas; «corner» va contra dos paredes y se
+   resuelve como una empotrada. Cuando el nombre no lo dice, es empotrada:
+   es lo corriente, y una exenta siempre se anuncia como tal porque es
+   justo lo que se está vendiendo. */
+/* DE QUÉ ESTÁ HECHA
+
+   Lo dice el nombre en siete de doce y la ficha en ninguna. Se reconocen
+   tres materiales porque son los tres que el mercado dominicano separa
+   por precio, y en ese orden.
+
+   «Stonex» entra como carga mineral y no como material aparte: es el
+   nombre que Roca le da a su resina de carga mineral, y La Ibérica vende
+   las dos cosas —«ONA Corner Stonex» y «Alaior Carga Mineral»— al mismo
+   nivel de precio. Dejarlas separadas sería partir una partida por una
+   marca comercial. */
+function materialDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (/acero esmaltado|acero porcelanizado/.test(t)) return 'acero esmaltado';
+  if (/stonex|carga mineral|solid ?surface/.test(t)) return 'carga mineral';
+  if (/acrilic/.test(t)) return 'acrílica';
+  if (/hierro fundido/.test(t)) return 'hierro fundido';
+  if (/fibra de vidrio|fiberglass/.test(t)) return 'fibra de vidrio';
+  return '';                      // la ficha no lo dice: no se inventa
+}
+
+function montajeDeBanera(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  /* Los valores se eligen para que encajen con la etiqueta del eje, que
+     antepone «de»: sale «Bañera, de isla» y «Bañera, de empotrar», que es
+     como se piden. Con «exenta» y «empotrada» salía «Bañera, de exenta». */
+  return /\bisla\b|freestanding|free standing|\bexenta\b|c\/? ?patas|con patas/.test(t)
+    ? 'isla' : 'empotrar';
+}
+
+/* ¿LA MEZCLADORA SOLA, O EL JUEGO COMPLETO?
+
+   «Mezcladora de ducha» es la válvula que va en la pared. «Columna de
+   ducha» es el conjunto: válvula, cabezal y teléfono. Son dos partidas
+   y entre ellas hay tres veces —6.297 contra 18.845—, así que colar una
+   en la otra corre la referencia de las dos.
+
+   Se colaban por un fallo de orden: la regla probaba primero si el
+   nombre decía «termostat» y mandaba a mezcladora, de modo que «SISTEMA
+   D/DUCHA C/TERMOSTATO C/CABEZAL Y DUCHA D/MANO» —que es un sistema
+   entero— nunca llegaba a la línea que preguntaba por «sistema». Trece
+   cotizaciones de CerArte y La Ibérica, con mediana de RD$ 18.853: el
+   precio exacto de la partida a la que pertenecen, que es la prueba de
+   que ahí van.
+
+   Dos maneras de delatarse: el nombre lo dice —sistema, columna, set— o
+   lo enumera, trayendo a la vez el cabezal y el teléfono. Ninguna pieza
+   suelta trae las dos.
+
+   Y una trampa que hay que mirar de cerca: «S/Set de Ducha» es SIN el
+   set y «C/Set de Ducha» es CON él. La misma mezcladora Manacor sale a
+   RD$ 2.950 sin y a RD$ 12.500 con. Una barra que se lee como la otra
+   cuesta cuatro veces. */
+const DICE_JUEGO = /\bsistema\b|\bcolumna\b|\bequipo\b|\bkit\b/;
+const CABEZAL = /cabezal|\bcbz\b|regadera|rainshower/;
+const TELEFONO = /d ?\/ ?mano|de mano|telefono|\btel\b/;
+
+function esJuegoDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  /* Lo que viene SIN el set no es el set. Se tacha antes de mirar nada
+     más, porque si no «s/set de ducha» cuenta como set. */
+  const sinExtras = t.replace(/\bs ?\/ ?(set|juego|kit|accesorio\w*)/g, ' ');
+
+  if (DICE_JUEGO.test(sinExtras)) return true;
+  if (/\bc ?\/ ?(set|juego|kit) de ducha|\bcon set de ducha/.test(sinExtras)) return true;
+  /* O lo enumera: trae el cabezal y el teléfono a la vez. */
+  return CABEZAL.test(sinExtras) && TELEFONO.test(sinExtras);
+}
+
 const limpia = s => String(s || '').trim();
 
 /* Construye el ítem. `medidas` trae todo lo que el comercio declaró; los
@@ -335,4 +817,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, juegoDeDucha, cabinaDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };

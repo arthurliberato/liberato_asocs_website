@@ -25,6 +25,10 @@ const DATOS = path.join(__dirname, '..', 'precios/assets/js');
 global.window = global;
 /* El motor va antes que el registro: datos-precios.js le pide la c(). */
 require(path.join(DATOS, 'precios.js'));
+/* La tabla de gamas, antes de leer el registro: c() la consulta al
+   construir cada cotización. La miden y la escriben medir-gama.js y
+   gama-marcas.js; aquí solo se enchufa. */
+(global.PRECIOS || global.window.PRECIOS).gamaDeMarca = require('./gama-marcas.js');
 ['catalogo', 'proveedores', 'precios'].forEach(f => require(path.join(DATOS, 'datos-' + f + '.js')));
 
 const CAT = global.CATALOGO;
@@ -32,6 +36,12 @@ const PROV = global.PROVEEDORES;
 const PRECIOS = global.PRECIOS;
 
 const problemas = PRECIOS.aplicar(CAT, PROV);
+/* aplicar() cuelga las cotizaciones de cada ítem; recalcular() es quien
+   saca de ellas la referencia, el mínimo, el máximo y —desde ahora— la
+   referencia por gama. Sin esta llamada las gamas llegarían vacías al
+   libro y nadie se enteraría: la columna saldría en blanco, que es
+   exactamente lo que sale cuando la partida no tiene gama medida. */
+PRECIOS.recalcular(CAT);
 if (problemas && problemas.length) {
   console.error('Los datos tienen problemas; corrígelos antes de generar el libro:');
   problemas.forEach(p => console.error('  - ' + p));
@@ -93,6 +103,9 @@ const articulos = PRECIOS.registros
       itemCodigo: q.item,
       articulo: q.art || '',
       marca: q.marca || '',
+      /* De qué gama es la marca, medido. Vacío cuando no está medida, que
+         es la mayoría: ver herramientas/medir-gama.js. */
+      gama: q.gama || '',
       comercio: q.proveedor,
       unidad: q.unidad || (it ? it.unidad : ''),
       precio: Math.round(q.precio * 100) / 100,
@@ -120,7 +133,9 @@ const items = CAT.items.map(i => ({
   alias: i.alias,
   unidad: i.unidad,
   etapa: etapaPorCodigo[i.etapa] ? etapaPorCodigo[i.etapa].nombre : (i.etapa || 'Transversal'),
-  gama: i.gama,
+  /* La referencia por gama, cuando la partida la tiene. La calcula
+     recalcular(); aquí solo se copia. */
+  gamas: i.gamas || null,
   origen: i.origen,
   estado: i.estado,
   itbis: i.itbis,

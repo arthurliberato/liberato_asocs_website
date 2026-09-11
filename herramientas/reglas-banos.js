@@ -43,6 +43,12 @@ const E = require('./especificacion-banos.js');
    Lo que no entra: repuesto de consumidor
    --------------------------------------------------------- */
 const REPUESTO = [
+  /* La pieza de la columna no es la columna. «DESVIADOR PARA SET DE
+     COLUMNA» entraba a RD$ 307 en una partida cuya mediana es RD$ 17.133,
+     porque el nombre dice «columna» aunque lo que se vende sea el
+     desviador. Es el patrón «X para <aparato>» de siempre: la pieza es la
+     X, y lo delata que el nombre EMPIECE por ella. */
+  /^(Desviador|Inversor|Divisor)\b/i,
   /^Asiento\b/i,                       // tapa de inodoro
   /^Tapa\b/i,                          // tapa de tanque
   /^(Manecilla|Manija|Manivela)\b/i,
@@ -225,6 +231,26 @@ function regla(a) {
   if (!f || !f[1]) return null;
 
   if (f[1] === 'mezcladora') return mezcladoraDe(a, n);
+  /* El cabezal lo resuelve la tabla: qué pieza de ducha es, y de qué
+     tamaño, material y con brazo o sin él. */
+  if (f[1] === 'ducha-cabezal') {
+    const c = E.cabezalDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
+  /* Y el juego de ducha: si es columna, barra sola, mezcladora sin
+     equipo o un mueble que entró por la palabra «columna». */
+  /* También la barra: la tabla manda aquí todo lo que diga «barra»,
+     «riel» o «desliza», y «DUCHA BARRA EXTER. CABEZA RED» es un juego
+     completo con su cabezal, no el riel suelto. Lo decide la tabla. */
+  if (f[1] === 'ducha-columna' || f[1] === 'ducha-barra') {
+    const c = E.juegoDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
+  /* Y la cabina igual: si es recinto o vidrio, y de qué tamaño. */
+  if (f[1] === 'cabina-ducha') {
+    const c = E.cabinaDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
   return E.item(f[1], medidasDe(a, f[1]));
 }
 

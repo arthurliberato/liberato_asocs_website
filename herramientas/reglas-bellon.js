@@ -117,7 +117,6 @@ const TRAMPAS = [
   [/^tubo (guia|calentador|escape|neon|carton|prueba|ensayo)/, 'pieza o repuesto, no tubería de instalación'],
   [/^bombillo.*huevo paloma|^bombillo (vela|flama|decorativo|globo)/, 'bombillo decorativo, no el de una instalación de vivienda'],
   [/piscina/, 'artículo de piscina; el catálogo no tiene esa partida'],
-  [/hidromasaje|\bhidrom\b|^jacuzzi/, 'bañera de hidromasaje: es otro aparato y otro precio que la bañera de obra'],
   [/^ducha barra|^ducha metal (con|c\/) ?brazo/, 'juego de ducha completo, no la pieza suelta que nombra'],
   [/^inodoro.*intelig|^inodoro.*smart|bide electronic/, 'inodoro inteligente: es otro aparato y otro precio']
 ];
@@ -243,35 +242,16 @@ function materialDe(n) {
   return '';
 }
 
-function tipoConexion(n) {
-  if (/^codoniple/.test(n)) return 'codoniple';
-  if (/^codo/.test(n)) return /\b45\b/.test(n) ? 'codo-45' : /\b90\b/.test(n) ? 'codo-90' : 'codo';
-  if (/^tee/.test(n)) return /reducid/.test(n) ? 'tee-reducida' : 'tee';
-  if (/^cruz/.test(n)) return 'cruz';
-  if (/^yee/.test(n)) return 'yee';
-  if (/^niple/.test(n)) return /reductor/.test(n) ? 'niple-reductor' : 'niple';
-  if (/^reduccion/.test(n)) return /\bbus\b|bushing/.test(n) ? 'reduccion-bushing' : 'reduccion';
-  if (/^tapon/.test(n)) return /macho/.test(n) ? 'tapon-macho' : /hembra/.test(n) ? 'tapon-hembra' : 'tapon';
-  if (/^adaptador/.test(n)) return /macho/.test(n) ? 'adaptador-macho' : /hembra/.test(n) ? 'adaptador-hembra' : 'adaptador';
-  if (/^union/.test(n)) return /universal/.test(n) ? 'union-universal' : 'union';
-  if (/^coupling/.test(n)) return 'coupling';
-  return '';
-}
-
-function medidaConexion(a, tipo) {
-  const n = baja(a.nombre);
-  const nums = numerosDe(a.nombre).filter(v => !(/^codo/.test(n) && (v === '90' || v === '45')));
-  if (/mm/i.test(a.nombre)) {
-    const mm = limpia(a.nombre).match(/(\d+)\s*mm/gi);
-    if (mm) return mm.map(x => x.replace(/\s*mm/i, '') + ' mm').join(' x ');
-  }
-  const pulg = nums.map(medidaPulg).filter(Boolean);
-  if (!pulg.length) return '';
-  if (pulg.length >= 2 && /reduc|niple|yee|tee-reducida|adaptador/.test(tipo + ' ' + n)) {
-    return pulg[0] + ' x ' + pulg[1];
-  }
-  return pulg[0];
-}
+/* El tipo y la medida de una conexión los decide especificacion-plomeria.js,
+   que es donde vive esa lectura para todos los comercios. Aquí había una
+   copia entera de las dos funciones y se quedó atrás: la copia buena
+   aprendió que «Tee Cruz PVC Presión 1"» es una cruz y no una tee, que el
+   polietileno se mide en milímetros aunque la ficha no escriba la unidad, y
+   que «Tee PPR Reducción 25 x 20mm» lleva las dos medidas. Esta no, y los
+   arreglos no llegaban a Bellón, que es justo el comercio que trae esos
+   nombres. Dos implementaciones de la misma lectura es una de más. */
+const tipoConexion = PLOM.tipoConexion;
+const medidaConexion = PLOM.medidaConexion;
 
 function reglaConexion(a) {
   const n = baja(a.nombre);
@@ -347,7 +327,13 @@ function reglaPlomeria(a) {
     if (!/vertical|horizontal/.test(t)) { MOTIVO.valor = 'la ficha no dice si el cheque es vertical u horizontal'; return null; }
     const p = pulgada(n);
     if (!p) { MOTIVO.valor = 'la ficha no declara la medida del cheque'; return null; }
-    return PLOM.item('cheque', { medida: p });
+    /* La regla ya exigía que la ficha dijera vertical u horizontal; lo
+       que faltaba era guardarlo. Ver la nota de la familia. */
+    return PLOM.item('cheque', {
+      tipo: /vertical/.test(t) ? 'vertical' : 'horizontal',
+      medida: p,
+      material: /\bpvc\b/.test(t) ? 'PVC' : ''
+    });
   }
   if (/^(llave de paso|llave paso|valvula)/.test(t)) {
     const p = pulgada(n);
@@ -418,9 +404,17 @@ function reglaBano(a) {
     const act = BANOS.activacion(t);
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }
+  /* Las cuatro cabinas de esta tienda —de RD$ 21.135 a RD$ 62.095— se
+     descartaban enteras porque llegan sin grupo y ninguna empieza por
+     una palabra de la lista. Van antes que «ducha»: «Cabina Ducha
+     Plást 900 x 900 x 1940mm» lleva las dos. */
+  if (/^cabina|^mampara/.test(t)) {
+    const c = BANOS.cabinaDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/^ducha/.test(t)) {
     if (/telefono|de mano/.test(t)) return BANOS.item('ducha-telefono', {});
-    if (/columna|sistema/.test(t)) return BANOS.item('ducha-columna', {});
+    if (/columna|sistema/.test(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
     if (/brazo|cuello de ganso/.test(t)) return BANOS.item('ducha-brazo', {});
     MOTIVO.valor = 'la ficha no dice qué pieza de la ducha es';
     return null;
@@ -428,7 +422,7 @@ function reglaBano(a) {
   if (/^mueble (de bano|con lavamanos)|^vanity/.test(t)) {
     return BANOS.item('mueble-bano', { montaje: /suspendido|flotante|pared/.test(t) ? 'pared' : 'piso' });
   }
-  if (/^banera|^tina de bano|^jacuzzi/.test(t)) return BANOS.item('banera', {});
+  if (/^banera|^tina de bano|^jacuzzi/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t), material: BANOS.materialDeBanera(t) });
   if (/^barra (de apoyo|de seguridad)/.test(t)) {
     const cm = numero(baja(n), /(\d+(?:\.\d+)?)\s*cm/);
     const med = { forma: /abatible/.test(t) ? 'abatible' : /\ben l\b/.test(t) ? 'en L' : 'recta' };
@@ -505,7 +499,12 @@ function reglaElectrico(a) {
        ítem se define por el número mayor, que es el que la caja admite. */
     const m = n.match(/(?:(\d+)\s*-\s*)?(\d+)\s*Circuitos/i);
     if (!m) { MOTIVO.valor = 'la ficha no declara cuántos espacios tiene la caja'; return null; }
-    return ELEC.item('caja-breaker', { espacios: parseInt(m[2], 10) });
+    /* La fase la declara esta tienda en todas: «1F» o «3F». Solo se
+       nombra la trifásica; ver la nota de la familia. */
+    return ELEC.item('caja-breaker', {
+      espacios: parseInt(m[2], 10),
+      fases: /\b3\s*f\b|trifasic/.test(t) ? '3F' : ''
+    });
   }
   if (/^bombillo/.test(t)) {
     if (!w) { MOTIVO.valor = 'la ficha no declara la potencia del bombillo'; return null; }
@@ -686,7 +685,7 @@ const RUTA = [
   [/^tubo\b/, reglaTubo],
   [/^(codo|codoniple|tee|cruz|yee|niple|reduccion|tapon|adaptador|union|coupling)\b/, reglaConexion],
   [/^(tinaco|cisterna|bomba|cheque|llave de paso|llave paso|valvula|sifon|cespol|fregadero)\b/, reglaPlomeria],
-  [/^(inodoro|lavamanos|lavabo|urinario|orinal|bidet|bide|llave mezcladora|mezcladora|monomando|ducha|mueble de bano|mueble con lavamanos|vanity|banera|tina de bano|jacuzzi|barra de apoyo|barra de seguridad)\b/, reglaBano],
+  [/^(inodoro|lavamanos|lavabo|urinario|orinal|bidet|bide|llave mezcladora|mezcladora|monomando|ducha|cabina|mampara|mueble de bano|mueble con lavamanos|vanity|banera|tina de bano|jacuzzi|barra de apoyo|barra de seguridad)\b/, reglaBano],
   [/^(breaker|caja breaker|panel breaker|centro de carga|bombillo|reflector|tubo led|panel led|interruptor|tomacorriente|alambre electrico|cable thhn|alambre thhn)\b/, reglaElectrico],
   [/^(pintura|esmalte|masilla|primer|sellador|impermeabilizante|barniz|laca)\b/, reglaPintura],
   [/^plywood\b/, reglaPlywood]
@@ -705,12 +704,15 @@ function regla(a) {
   /* Un precio por varias unidades no compara con uno por pieza, y la
      diferencia no se ve en la tabla. «(At. 34/1)» es el atado de la varilla
      y no es eso: ahí el precio publicado sigue siendo por unidad. */
-  /* Ojo con las dos que NO son paquetes: «11Pcs/Cjs» son las piezas que trae
-     la caja de cerámica —el precio sigue siendo por pieza— y «2 Pcs» en un
-     inodoro quiere decir de dos piezas. Descartarlas costaba 1,479
-     artículos buenos. */
+  /* Ojo con las tres que NO son paquetes: «11Pcs/Cjs» son las piezas que trae
+     la caja de cerámica —el precio sigue siendo por pieza—, «2 Pcs» en un
+     inodoro quiere decir de dos piezas y «2Pcs», «3Pc» o «4 Pcs» en una
+     cabina son los paneles en que viene desarmada, no cuatro cabinas.
+     Descartarlas costaba 1,479 artículos buenos y tres cabinas de
+     RD$ 21.135, RD$ 25.870 y RD$ 62.095. */
   if ((/\b(?:juego|set|pack|combo|kit) de \d+\b|\b\d+\s*(?:pzas?|piezas|unidades)\b/.test(t)
-       || (/\d+\s*pcs\b/.test(t) && !/pcs\s*\/\s*(cjs|caja)/.test(t) && !/^inodoro/.test(t)))
+       || (/\d+\s*pcs?\b/.test(t) && !/pcs\s*\/\s*(cjs|caja)/.test(t)
+           && !/^inodoro/.test(t) && !/^cabina|^mampara/.test(t)))
       && !/^varilla/.test(t)) {
     MOTIVO.valor = 'el precio cubre un paquete de varias unidades, no una';
     return null;

@@ -213,7 +213,11 @@ function reglaNivelador(a) {
   const esp = me ? parseFloat(me[1]) : null;
   if (!esp) { MOTIVO.valor = 'la ficha no declara el espesor de junta del nivelador'; return null; }
   const pieza = /tirante|clip|correa/.test(t) ? 'clip' : /cuna/.test(t) ? 'cuna' : 'calzo';
-  return BALDOSAS.item('nivelador-ceramica', { pieza: pieza, espesor_mm: esp });
+  /* Cuántos trae la funda, igual que en el separador de arriba. */
+  const q = String(a.nombre).match(/(\d+)\s*\/\s*1\b/);
+  return BALDOSAS.item('nivelador-ceramica', {
+    pieza: pieza, espesor_mm: esp, piezas: q ? parseInt(q[1], 10) : ''
+  });
 }
 
 function reglaZocalo(a) {
@@ -302,16 +306,21 @@ function reglaDucha(a) {
   if (/^brazo de ducha|^brazo para|^codo de salida/.test(t)) return BANOS.item('ducha-brazo', {});
   if (/^manguera/.test(t)) return BANOS.item('ducha-manguera', {});
   if (/^barra de ducha|riel/.test(t)) return BANOS.item('ducha-barra', {});
+  /* «Toda columna ducha va dentro del mismo ítem»: sistema, set y columna
+     son el mismo producto con tres nombres comerciales.
+
+     Va ANTES que la mezcladora, y ahí estaba el fallo: un sistema con
+     termostato casaba con «termostat» y se archivaba como la válvula
+     suelta, que cuesta tres veces menos. Ver esJuegoDeDucha(). */
+  if (BANOS.esJuegoDeDucha(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/mezclador|valvula de ducha|termostat|termostic/.test(t)) {
     if (/banera|bañera/.test(t)) return BANOS.item('mezcladora', { uso: 'bano', activacion: 'manual' });
     return BANOS.item('ducha-mezcladora', {});
   }
-  /* «Toda columna ducha va dentro del mismo ítem»: sistema, set y columna son
-     el mismo producto con tres nombres comerciales. */
-  if (/^sistema de ducha|^sistema ducha|^columna|^set de ducha/.test(t)) return BANOS.item('ducha-columna', {});
   if (/^ducha de mano|telefono|^duchade ?mano|manual/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/^cabezal|rainshower|^ducha de techo|^ducha de pared|^ducha lateral|^ducha rotatoria|^regadera/.test(t)) {
-    return BANOS.item('ducha-cabezal', {});
+    const c = BANOS.cabezalDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
   }
   MOTIVO.valor = 'pieza de ducha que la ficha no describe lo bastante';
   return null;
@@ -446,9 +455,14 @@ function regla(a) {
       { montaje: /suspendido|pared|flotante/.test(texto(a)) ? 'pared' : 'piso' });
     case 'ESPEJOS':               return BANOS.item('espejo',
       { luz: /led|luz/.test(texto(a)) ? 'led' : '' });
-    case 'CABINAS':               return BANOS.item('cabina-ducha', {});
+    /* El grupo se llama CABINAS y dentro hay «WET ROOM», que es un
+       vidrio fijo, no un recinto. Orienta el grupo y decide el nombre. */
+    case 'CABINAS':               return (function () {
+      const c = BANOS.cabinaDeDucha(texto(a));
+      return BANOS.item(c.familia, c.medidas);
+    })();
     case 'PLATO DUCHA':           return BANOS.item('plato-ducha', {});
-    case 'BAÑERAS':               return BANOS.item('banera', {});
+    case 'BAÑERAS':               return BANOS.item(BANOS.tipoDeBanera(texto(a)), { montaje: BANOS.montajeDeBanera(texto(a)), material: BANOS.materialDeBanera(texto(a)) });
     case 'BARRA DE SEGURIDAD':    return reglaBarra(a);
     case 'ACCESORIOS BAÑOS':      return reglaAccesorio(a);
     case 'DISPENSADOR D/ JABON':  return BANOS.item('dispensador-jabon',

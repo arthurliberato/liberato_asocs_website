@@ -149,9 +149,18 @@ function reglaFuncional(a) {
       return ILUM.item('ojo-de-buey', { tipo: tipo, potencia_w: w });
     }
 
-    case 'Campanas LED':
+    case 'Campanas LED': {
+      /* Lo específico primero: la de selector dice «100W 150W 200W» y
+         el lector de vatios se queda con el primero. Ver la nota de la
+         familia en especificacion-iluminacion.js. */
+      if (/selector/.test(t)) return ILUM.item('campana-led-selector', {});
       if (!w) { MOTIVO.valor = 'la ficha no declara la potencia de la campana'; return null; }
-      return ILUM.item('campana-led', { potencia_w: w });
+      if (/canopy/.test(t)) return ILUM.item('luminaria-canopy', { potencia_w: w });
+      return ILUM.item('campana-led', {
+        potencia_w: w,
+        driver: /sin driver|s ?\/ ?driver/.test(t) ? 'sin' : ''
+      });
+    }
 
     case 'Power supply':
       if (!w) { MOTIVO.valor = 'la ficha no declara la potencia de la fuente'; return null; }

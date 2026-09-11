@@ -114,19 +114,39 @@ const FAMILIAS = {
     esp: m => m.formato === 'fino' ? 'Ocupa medio espacio · no es intercambiable con el estándar' : '',
     alias: 'breaker, interruptor termomagnético, brekaer'
   },
+  /* «CAJA DE BREAKER» Y «PANEL DE BREAKER» SON LA MISMA COSA
+
+     La duda es razonable porque el catálogo publicaba las dos, y la
+     prueba de que sobra una está en el número de parte: el TLM1212CCU
+     de GE aparece en Bellón como «Caja Breaker 1F 14-24 Circuitos 240V
+     125A» a RD$ 6.220 y en Max Ferretería como «PANEL BREAKER GE 14A24
+     125AMP» a RD$ 6.160. El TLM812FCUD, igual: RD$ 4.715 y RD$ 4.755.
+     Mismo artículo, dos palabras, un 1% de diferencia.
+
+     Lo que las separaba no era el producto sino la lectura: «14A24» es
+     como GE escribe «de 14 a 24 circuitos» y no se leía, así que ese
+     panel caía en un ítem aparte definido por amperios. Una sola
+     familia, y la palabra del comercio da igual.
+
+     EL EJE QUE FALTABA ES LA FASE, no el amperaje. Entre los 42
+     circuitos, el monofásico de 225 A cuesta RD$ 11.251 y los
+     trifásicos de 200 y 225 A van de RD$ 16.662 a RD$ 22.869. El
+     amperaje, en cambio, no separa nada dentro de un mismo tamaño: los
+     cinco paneles de 8 espacios son todos de 125 A y van de RD$ 1.145 a
+     RD$ 6.205, que es marca y caja, no amperios. Por eso el amperaje no
+     entra: metería un eje que no manda y partiría en dos las parejas
+     que acabamos de demostrar iguales, porque Max lo declara en un
+     panel y no en el otro.
+
+     El trifásico se nombra y el monofásico no, como el «formato fino»
+     del breaker: lo corriente va a secas y lo que no se espera se dice. */
   'caja-breaker': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 210,
-    ejes: ['espacios'],
-    nombre: m => 'Panel de breakers de ' + m.espacios + ' espacios',
+    ejes: ['espacios'], opcionales: ['fases'],
+    nombre: m => 'Panel de breakers' + (m.fases === '3F' ? ' trifásico' : '') +
+                 ' de ' + m.espacios + ' espacio' + (Number(m.espacios) === 1 ? '' : 's'),
     esp: 'Solo la caja · los breakers van aparte',
-    alias: 'caja de breakers, panel eléctrico, tablero'
-  },
-  'caja-main': {
-    cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 215,
-    ejes: ['amperaje'],
-    nombre: m => 'Caja de breaker principal de ' + m.amperaje + ' A',
-    esp: '',
-    alias: 'caja de breaker, main, acometida'
+    alias: 'caja de breakers, caja de breaker, panel de breaker, panel eléctrico, tablero'
   },
   'switch-doble-tiro': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 220,

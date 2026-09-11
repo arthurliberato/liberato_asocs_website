@@ -63,6 +63,7 @@ const NO_ES_DE_OBRA = [
   /^S[ií]mbolos/i,                    // material didáctico de prototipos
   /^Jumper Para Tiras De Pines/i,     // jumper de laboratorio, no de rack
   /^Divisor.*Hdmi/i, /^Conmutador 4K/i,   // distribución de video de consumo
+  /^Modulador/i,                          // cabecera de TV, no instalación del edificio
   /^Tablet/i,
   /^Extension Programador/i,              // programador de PIC, equipo de laboratorio
   /Ide Ultra|\bIde\b/i,                   // cable IDE: pieza de computadora
@@ -108,10 +109,27 @@ const FAMILIA = [
   [/^Pulsador.*(P[aá]nico|Alarma|Incendio)/i,      'estacion-manual'],
   [/^Detector.*(Humo|Calor|T[eé]rmico|Termico)/i,  'detector-incendio'],
   [/^Base Detector/i,                              'accesorio-incendio'],
-  [/^(Sirena|Bocina|Estrobo)/i,                    'sirena'],
+  /* «Bocina» aquí no es sirena. Las cuatro de TUTONDO —«BOCINA
+     ESFERICA MULTIPOSICION 2VIAS 120W», RD$ 39.917— son parlantes de
+     voceo y música ambiental, y entre las sirenas llevaban la partida
+     de RD$ 714 a RD$ 49.478. Van con los parlantes, más abajo. */
+  [/^(Sirena|Estrobo)/i,                           'sirena'],
 
   [/^(Central|Panel)/i,                            'panel-alarma'],
   [/^Teclado/i,                                    'teclado-alarma'],
+  /* Qué detecta, antes de dar por hecho que detecta movimiento. Ver la
+     nota de 'detector-alarma'. Lo específico primero, como siempre. */
+  [/pir ?cam/i,                                    'detector-alarma'],
+  [/^Detector(?:es)? De Salida/i,                      'detector-alarma'],
+  [/rotura de (cristal|vidrio)|glass ?break/i,     'detector-alarma'],
+  [/^(Detector|Sensor).*(Vibraci|Impacto|Flexion)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(\bGas\b|Combusti|Monoxido)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(Humedad|Temperatura|Temp\.)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(Fuga|\bAgua\b)/i,         'detector-alarma'],
+  [/^(Detector|Sensor).*(Magnetico|Puerta Y Ventana|Apertura)/i, 'contacto-magnetico'],
+  /* WATTSTOPPER no vende alarmas: sus sensores encienden y apagan luces
+     y por eso traen el voltaje de la instalación en el nombre. */
+  [/^Sensor De Ocupaci|^Sensor .*\b(120|24)\s*V\b/i, 'sensor-ocupacion'],
   [/^(Detector|Sensor|Censor)/i,                   'detector-movimiento'],
   [/^Contacto/i,                                   'contacto-magnetico'],
   [/^(Control Acceso|Control De Acceso|Lector|Cerradura)|^Controlador (De )?(Acceso|Puerta)/i, 'control-acceso'],
@@ -122,22 +140,95 @@ const FAMILIA = [
   [/^(Patch|Panel De Conex)/i,                     'patch-panel'],
   [/^(Placa|Faceplate|Fp,)/i,                      'placa-pared'],
   [/^(Rack|Organizador|Tapa Ciega|Bandeja|Pasador|Manga|Distribuidor|Gabinete|Carril)/i, 'rack'],
-  [/^(Switch|Mini Switch|Extensor|Repetidor|Conversor|Bridge|Modulador|Wireless|Terminal|Homekit)/i, 'equipo-red'],
+  /* «Equipo de red» era otro cajón: trece cotizaciones con un terminal
+     RJ45 de 100 piezas, un modulador de TV, un botón inalámbrico de
+     AQARA, dos conversores de zonas de una alarma VESTA y dos hubs. De
+     switches de red, dos. Cada uno a lo suyo, y lo específico primero. */
+  [/^Terminal/i,                                   'conector-datos'],
+  [/^Mini Switch|^Switch Remoto/i,                 'interruptor-inteligente'],
+  [/^Bridge|Homekit/i,                             'hub-domotica'],
+  [/zonas cableadas|^Extensor \/ Repetidor Inalambrico|^Extensor Inalambrico/i, 'accesorio-alarma'],
+  [/^(Switch|Extensor|Repetidor|Conversor|Wireless)/i, 'equipo-red'],
   [/^(Fuente|Power|Transf|Injector|Inyector|Pdu|Regenerador|Capacitor)/i, 'alimentacion'],
-  [/^(Parlante|Amplificador|Altavoz|Anillo)|Plena/i,'sonido'],
+  [/^(Parlante|Amplificador|Altavoz|Anillo|Bocina)|Plena/i,'sonido'],
   [/^(Acoplador|Barril|Cople|Conector|Casquillo|Inserto|Tira|Decorator|Adaptador|Jumper|Plug|Mc\d|Utp )/i, 'conector-datos'],
 
   [/^(Interruptor|Interrupto|Int\.|Dimmer|Microfluxa|Shutter|Pulsador|Doble Pulsador|Boton|Disp\. Wifi)/i, 'interruptor-inteligente'],
   [/^(Tomacorriente|Toma )/i,                      'tomacorriente-smart'],
-  [/^(Hub|Concentrador|Unidad Central|Kit Domotica|Kit Luci|Smart Home|Automation|Auto Premium|Modulo Dlfra|Tarjeta Eva|Tarjeta Ingrid|Tarjeta Vesta)|Smart Home/i, 'hub-domotica'],
+  /* El prefijo comercial de SONOFF y las tarjetas de MASTER se los
+     llevaba todos al hub. Ver la nota de 'hub-domotica'. Lo
+     específico va primero, y el prefijo suelto al final. */
+  [/^Auto(?:mation)? Premium Int/i,                'interruptor-inteligente'],
+  [/^Auto(?:mation)? Premium Tomacorriente/i,      'tomacorriente-smart'],
+  [/^(?:Tarjeta (?:Eva|Ingrid|Vesta)|Modulo Dlfra)/i, 'tarjeta-domotica'],
+  [/^Kit (?:Domotica|Luci)/i,                      'kit-domotica'],
+  [/^Auto(?:mation)? Premium/i,                    'modulo-domotica'],
+  [/^(Hub|Concentrador|Unidad Central|Controlador Smart|Smart Home)|Smart Home/i, 'hub-domotica'],
   [/Cerradura Inteligente/i,                       'cerradura-inteligente'],
   [/^Kit Intercom|^Kit De Video Timbre/i,          'intercom-kit'],
   [/^(Timbre|Pulsador Inalambrico)/i,              'timbre-inteligente'],
-  [/^(Estacion|Estación)/i,                        'intercom-estacion'],
-  [/intercom|conserje|montante|soneria|secreto de conversacion|^Telefono Sprint|^Frontal Para Teclado|^Marco Soporte|^Unidad De Control/i, 'intercom-accesorio'],
+  /* El intercom, por dónde va montado. Ver especificacion-segtec.js: el
+     teléfono del apartamento, el monitor del apartamento, la placa del
+     portón y los herrajes son cuatro compras distintas y antes caían en
+     la misma. El orden importa —«VIDEO INTERCOM MODULO ESTACION PUERTA»
+     tiene «video» y «modulo», y es la placa de calle— así que lo más
+     específico va primero. */
+  [/estacion (de )?puerta|placa de calle|frente de calle|modulo estacion puerta|^Placa/i, 'intercom-placa'],
+  [/intercom video|video intercom|^Estacion Interior|estacion interior|monitor.*intercom|intercom.*monitor|videoportero interior/i, 'intercom-monitor'],
+  [/^Telefono .*intercom|intercom.*telefono|^Telefono Sprint|^Telefono Trad|^Intercomunicador\b/i, 'intercom-telefono'],
+  /* Lo que va en la línea del intercom y lo que lo sujeta a la pared son
+     dos compras distintas: la primera se cuenta por vivienda o por
+     montante, la segunda por entrada. */
+  [/^Soneria|montante|^Derivador|secreto de conversacion|conserje/i, 'intercom-linea'],
+  [/^Frontal Para Teclado|^Marco Soporte|modulo montaje|^Caja Empotrar|^Accesorios? p ?\/ ?instalacion.*interc/i, 'intercom-montaje'],
+  [/intercom/i,                                    'intercom-accesorio'],
 
   [/^Mini Caja/i,                                  'soporte-camara'],
-  [/^(Soporte|Bracket|Carcasa|Caja|Base|Cubierta|Brazo|Copa|Poste|Sello|Bisel|Display|Programador|Comunicador|Modulo|Módulo|Tarjeta|Configurador|Control Remoto|Llavero|Mando|Receptor|Transmisor|Borne)/i, 'accesorio-alarma']
+
+  /* EL CAJÓN DE «ACCESORIO DE SISTEMA DE ALARMA», ABIERTO
+
+     Esta última línea recogía todo lo que empezaba por una de veinte
+     palabras y lo metía en un solo ítem: 72 cotizaciones de RD$ 147 a
+     RD$ 34.654. Ahora se reparten por función —ver
+     especificacion-segtec.js—, y el orden manda: lo más específico
+     primero, porque «MODULO CIEGO» empieza por «Modulo» y es una tapa, y
+     «CARCASA CON 1 RAIL DIN» empieza por «Carcasa» y es una caja. */
+
+  [/^Sello\b/i, null],
+
+  /* Lo que es de otro sistema y caía aquí por empezar por la palabra
+     adecuada. Cada uno con su casa:
+
+     - Los módulos del panel de incendio FPA-1000 de BOSCH son de
+       incendio, no de intrusión: el catálogo los tiene en MAT-29.
+     - Los módulos de parcheo de 12 puertos de ON Q y SIEMON son
+       cableado estructurado.
+     - Los configuradores de BTICINO son los puentes numerados con que
+       se direccionan los aparatos de un intercom de dos hilos; vienen
+       en caja de diez y valen RD$ 300, no son un módulo de expansión.
+     - Los módulos de dos hilos de BTICINO —pantalla, audio y video,
+       teclado Sfera, pulsadores— son de la placa de calle. El
+       fabricante los numera «2H», «2H2» o «2 hilos», y las tres formas
+       hay que reconocerlas: «2H2 WIR» no lleva separador y «2 HILO» va
+       en singular. */
+  [/fpa-?1000|\bslc\b/i,                            'accesorio-incendio'],
+  [/^Modulo \d+-?port|modulo ric\b|\bcat ?[56]e?\d*-?po\b/i, 'patch-panel'],
+  [/^Configurador/i,                               'intercom-linea'],
+  [/^Cubierta.*(2\s*h|hilos?|pulsador)/i,           'intercom-montaje'],
+  [/\b2\s*h(ilos?|\d)?\b|sfera|2 hilos?/i,          'intercom-accesorio'],
+
+  /* Y lo que no es de obra de ninguna manera. */
+  [/^Receptor Multicanal|hdvr av|home theater|^Bateria Power Bank|^Estacion De Llamada|^Estación De Llamada|pln-\d|^Unidad De Control Digital|^Serie Modo/i, null],
+
+  [/^(Control Remoto|Llavero|Mando|Tarjeta Badge|Tarjeta De Proximidad|Credencial)/i, 'mando-credencial'],
+  [/^(Cubierta|Bisel|Modulo Ciego|Módulo Ciego|Tapa)/i,      'cubierta-modulo'],
+  [/^(Caja|Carcasa|Gabinete)/i,                              'caja-equipo'],
+  [/^(Soporte|Bracket|Brazo|Copa|Poste|Base)/i,              'soporte-montaje'],
+  /* El programador de mano es la herramienta con que se configura el
+     panel, no una pieza que se instale en él. */
+  [/^Programador/i,                                'accesorio-alarma'],
+  [/^(Modulo|Módulo|Tarjeta|Display|Comunicador|Transmisor|Borne|Receptor)/i, 'modulo-panel'],
+  [/./,                                                      'accesorio-alarma']
 ];
 
 const num = s => { const v = parseFloat(String(s).replace(',', '.')); return isFinite(v) ? v : null; };
@@ -168,8 +259,19 @@ function medidasDe(a, familia) {
     if (mp) m.resolucion_mp = num(mp[1]);
     const le = n.match(/(\d+(?:\.\d+)?)\s*Mm\b/i);
     if (le) m.lente_mm = num(le[1]);
-    if (/\bip\b|\bnet\b|\bpoe\b/i.test(n)) m.tecnologia = 'IP';
-    else if (/hdcvi|hdtvi|analog/i.test(n)) m.tecnologia = 'HDCVI';
+
+    /* Lo específico primero: la solar trae 4G y también dice «IP», y la
+       de wifi dice las dos. Ver la nota larga de la familia. */
+    if (/solar|\b4g\b/i.test(n)) m.tecnologia = 'solar 4G';
+    else if (/wifi|wi-fi|inalambr/i.test(n)) m.tecnologia = 'wifi';
+    else if (/\bip\b|\bnet\b|\bpoe\b/i.test(n)) m.tecnologia = 'IP';
+    else if (/hdcvi|hdtvi|\bahd\b|analog/i.test(n)) m.tecnologia = 'analógica';
+
+    /* El varifocal se declara de cuatro maneras y todas dicen lo mismo:
+       que el lente se mueve. El fijo, cuando la ficha da una sola
+       distancia o lo dice con todas las letras. */
+    if (/motoriz|varifocal|varif\b|\bvf\b|\d\s*-\s*\d+\s*mm|zoom/i.test(n)) m.lente = 'varifocal';
+    else if (/lente fij|fixed/i.test(n) || le) m.lente = 'fijo';
     const ir = n.match(/ir\s*(\d+)\s*m/i);
     if (ir) m.alcance_ir_m = num(ir[1]);
   }
@@ -203,6 +305,21 @@ function medidasDe(a, familia) {
     if (/inal[aá]mbric/i.test(n)) m.enlace = 'inalámbrico';
   }
 
+  if (familia === 'detector-movimiento' || familia === 'detector-alarma') {
+    if (/exterior/i.test(n)) m.ubicacion = 'exterior';
+    else if (/interior/i.test(n)) m.ubicacion = 'interior';
+  }
+
+  if (familia === 'detector-alarma') {
+    if (/pir ?cam/i.test(n)) m.deteccion = 'movimiento con cámara';
+    else if (/^detectores? de salida/i.test(n)) m.deteccion = 'salida';
+    else if (/rotura de (cristal|vidrio)|glass ?break/i.test(n)) m.deteccion = 'rotura de cristal';
+    else if (/vibraci|impacto|flexion/i.test(n)) m.deteccion = 'vibración';
+    else if (/\bgas\b|combusti|monoxido/i.test(n)) m.deteccion = 'gas';
+    else if (/fuga|\bagua\b/i.test(n)) m.deteccion = 'fuga de agua';
+    else if (/humedad|temperatura|temp\./i.test(n)) m.deteccion = 'temperatura y humedad';
+  }
+
   if (familia === 'detector-incendio') {
     if (/humo/i.test(n) && /calor|t[eé]rmico/i.test(n)) m.deteccion = 'humo y calor';
     else if (/humo/i.test(n)) m.deteccion = 'humo';
@@ -233,12 +350,23 @@ function medidasDe(a, familia) {
   }
 
   if (familia === 'patch-panel' || familia === 'placa-pared' || familia === 'equipo-red') {
-    const p = n.match(/(\d+)[\s-]*(?:puertos?|port|po\b)/i);
+    /* «24 PUERTO», «48 PORT» y también «24POE», que es como DAHUA
+       escribe los veinticuatro puertos con alimentación. */
+    const p = n.match(/(\d+)[\s-]*(?:puertos?|port|poe\b|po\b)/i);
     if (p) m.puertos = num(p[1]);
   }
 
+  if (familia === 'kit-domotica') {
+    const c = n.match(/(\d+)\s*circuitos?/i);
+    if (c) m.circuitos = num(c[1]);
+  }
+
   if (familia === 'interruptor-inteligente') {
-    if (/triple/i.test(n)) m.canales = 3;
+    /* SONOFF escribe los canales como «2CH». Sin leerlo, sus cuatro
+       interruptores quedaban sin eje y en el mismo montón. */
+    const ch = n.match(/(\d)\s*ch\b/i);
+    if (ch) m.canales = num(ch[1]);
+    else if (/triple/i.test(n)) m.canales = 3;
     else if (/doble|2 canales/i.test(n)) m.canales = 2;
     else if (/simple|sencill|1 canal/i.test(n)) m.canales = 1;
     if (/con neutro|c \/ neutro/i.test(n)) m.neutro = 'con';
@@ -289,7 +417,11 @@ function regla(a) {
   if (!CATEGORIA[a.cat2]) return null;
 
   const f = FAMILIA.filter(x => x[0].test(n))[0];
-  if (!f) return null;
+  /* La familia puede ser null a propósito: hay expresiones en la tabla
+     que están para atrapar el nombre ANTES de que lo reclame otra —el
+     receptor de cine en casa antes que «Receptor»— y decir que no es
+     partida. Mismo mecanismo que en reglas-banos.js. */
+  if (!f || !f[1]) return null;
 
   return ES.item(f[1], medidasDe(a, f[1]));
 }

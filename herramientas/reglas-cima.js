@@ -194,7 +194,15 @@ function clasificar(a) {
     if (/^cheque/.test(n)) {
       const md = medidaPulg((numerosDe(a.nombre)[0] || ''));
       if (!md) { MOTIVO.valor = 'la ficha no declara la medida del cheque'; return null; }
-      return PLOM.item('cheque', { medida: md });
+      if (!/vertical|horizontal/.test(n)) {
+        MOTIVO.valor = 'la ficha no dice si el cheque es vertical u horizontal';
+        return null;
+      }
+      return PLOM.item('cheque', {
+        tipo: /vertical/.test(n) ? 'vertical' : 'horizontal',
+        medida: md,
+        material: /\bpvc\b/.test(n) ? 'PVC' : ''
+      });
     }
     if (/valvula cisterna|valvula de cisterna/.test(n)) {
       const md = medidaPulg((numerosDe(a.nombre)[0] || ''));
@@ -371,9 +379,15 @@ function clasificar(a) {
     if (/^tanque cisterna|^cisterna/.test(n)) {
       const m = limpia(a.nombre).match(/(\d+)\s*gls?\b/i);
       if (!m) { MOTIVO.valor = 'la ficha no declara la capacidad de la cisterna'; return null; }
-      /* «FV» es como el comercio abrevia fibra de vidrio. */
-      const material = /fibra|\bfv\b/.test(n) ? 'fibra de vidrio' : /polietil|plast/.test(n) ? 'polietileno' : '';
+      /* «FV» es como el comercio abrevia fibra de vidrio. Y «VERDE» no
+         es un color de adorno: es otra línea del mismo tanque y cuesta
+         casi el doble. A igual capacidad, 42 gls RD$ 7.487 y RD$
+         14.217; 60 gls RD$ 10.496 y RD$ 15.482. Juntarlas dejaba dos
+         partidas con el doble de dispersión y ningún eje que lo
+         explicara. */
+      let material = /fibra|\bfv\b/.test(n) ? 'fibra de vidrio' : /polietil|plast/.test(n) ? 'polietileno' : '';
       if (!material) { MOTIVO.valor = 'la ficha no declara el material de la cisterna'; return null; }
+      if (/\bverde\b/.test(n)) material += ' verde';
       return PLOM.item('cisterna', { material: material, capacidad_gal: parseInt(m[1], 10) });
     }
     if (/^tinaco/.test(n)) {
@@ -426,14 +440,14 @@ function clasificar(a) {
   /* ---- Duchas ---- */
   if (cat === 'Duchas y banera') {
     if (/^ducha telefono|regadera.*telefono/.test(n)) return BANOS.item('ducha-telefono', {});
-    if (/^sistema ducha|^columna/.test(n)) return BANOS.item('ducha-columna', {});
+    if (/^sistema ducha|^columna/.test(n)) return (function () { const c = BANOS.juegoDeDucha(n); return BANOS.item(c.familia, c.medidas); })();
     if (/^soporte ducha/.test(n)) return BANOS.item('ducha-brazo', {});
     if (/^ducha|^regadera/.test(n)) {
-      /* «Con brazo» es un cabezal con su brazo; «sin brazo» es solo el
-         cabezal. Son dos partidas distintas y el nombre lo declara. */
-      if (/c\s*\/\s*brazo|con brazo/.test(n)) return BANOS.item('ducha-cabezal', {});
-      if (/s\s*\/\s*brazo|sin brazo/.test(n)) return BANOS.item('ducha-cabezal', {});
-      return BANOS.item('ducha-cabezal', {});
+      /* Qué cabezal es y de qué lo dice la tabla, que lo decide igual
+         para los seis comercios. Las tres ramas que había aquí —con
+         brazo, sin brazo y lo demás— devolvían las tres el mismo ítem. */
+      const c = BANOS.cabezalDeDucha(n);
+      return BANOS.item(c.familia, c.medidas);
     }
     MOTIVO.valor = 'accesorio de ducha que la ficha no describe lo bastante';
     return null;

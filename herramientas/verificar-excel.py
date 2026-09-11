@@ -47,17 +47,28 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 # cumplirse, las plantillas traen el dato equivocado sin dar error.
 # Los encabezados van en la fila 2: la 1 es la banda de marca.
 FILA_TITULOS = 2
+# La primera fila de datos: dos de encabezado y a la tercera empiezan.
+FILA_1 = 3
 FUENTE = "Calibri"
 HOJAS = ["Catálogo", "Comparativo", "Artículos"]
+# La columna del precio en la hoja de artículos. Se corrió al entrar
+# «Gama», y un precio que entre como texto inutiliza la hoja entera.
+COL_PRECIO_ART = 8
 # El precio va pegado al ítem: E, F y G son las tres columnas de precio,
 # justo a la derecha del nombre. Si alguna se corre, la fórmula del precio
 # sin ITBIS —que las nombra por letra— traería otra cosa sin dar error.
 COLUMNAS_CATALOGO = {
     "A": "Código", "D": "Ítem", "E": "Precio de referencia (RD$)",
-    "F": "Mínimo (RD$)", "G": "Máximo (RD$)", "H": "Precio sin ITBIS (RD$)",
-    "I": "Incluye ITBIS", "J": "Unidad", "L": "Comercios que cotizaron",
-    "M": "Especificación",
+    "F": "Mínimo (RD$)", "G": "Máximo (RD$)",
+    "H": "Económica (RD$)", "I": "Estándar (RD$)",
+    "J": "Alta (RD$)", "K": "Premium (RD$)",
+    "L": "Precio sin ITBIS (RD$)", "M": "Incluye ITBIS", "N": "Unidad",
+    "P": "Comercios que cotizaron", "Q": "Especificación",
 }
+
+# Las cuatro de gama, en orden. Una partida que las publique al revés
+# —premium más barata que económica— se lee como un error nuestro.
+GAMAS = ["H", "I", "J", "K"]
 
 fallos = []
 avisos = []
@@ -111,6 +122,28 @@ def main():
         if retirada in fila:
             falla("la columna «%s» debía salir del catálogo y sigue ahí" % retirada)
 
+    # ---- 3 ter: la referencia por gama va en orden ------------------
+    # Se publica solo donde la marca separa de verdad, y con la condición
+    # de que las gamas queden ordenadas. Si alguna fila sale al revés, la
+    # puerta que lo impide en recalcular() se ha roto.
+    cols_g = [column_index_from_string(c) for c in GAMAS]
+    con_gama = desordenadas = 0
+    for r in range(FILA_TITULOS + 1, cat.max_row + 1):
+        v = [cat.cell(row=r, column=c).value for c in cols_g]
+        v = [x for x in v if isinstance(x, (int, float))]
+        if not v:
+            continue
+        con_gama += 1
+        if len(v) < 2:
+            falla("Catálogo fila %d: una sola referencia de gama, sin nada "
+                  "con que compararla" % r)
+        if any(v[i] <= v[i - 1] for i in range(1, len(v))):
+            desordenadas += 1
+            if desordenadas <= 3:
+                falla("Catálogo fila %d: las gamas salen desordenadas (%s)"
+                      % (r, ", ".join("%.0f" % x for x in v)))
+    print("Catálogo: %d ítems con referencia por gama" % con_gama)
+
     filas_cat = cat.max_row
     while filas_cat > FILA_TITULOS and cat.cell(row=filas_cat, column=1).value is None:
         filas_cat -= 1
@@ -134,7 +167,7 @@ def main():
     if sin_nombre:
         falla("%d artículos sin nombre en la hoja de artículos" % sin_nombre)
     no_numero = [r for r in range(FILA_TITULOS + 1, min(filas_art, FILA_TITULOS + 400) + 1)
-                 if not isinstance(art.cell(row=r, column=7).value, (int, float))]
+                 if not isinstance(art.cell(row=r, column=COL_PRECIO_ART).value, (int, float))]
     if no_numero:
         falla("el precio de la hoja de artículos entra como texto en %d filas (ej. fila %d)"
               % (len(no_numero), no_numero[0]))
@@ -215,6 +248,70 @@ def main():
             falla("Comparativo fila %d: sin ningún precio, no debería estar en esta hoja" % f)
 
     print("Comparativo: %d filas revisadas" % revisadas)
+
+    # ---- los enlaces entre hojas apuntan a donde dicen -----------------
+    #
+    # El ítem del catálogo lleva al bloque de sus artículos, y el artículo
+    # vuelve a la fila de su ítem. Un enlace que apunta a un rango
+    # equivocado es peor que no tener enlace: enseña los artículos de otra
+    # partida y quien los mira no tiene cómo saberlo.
+    #
+    # Se comprueban tres cosas: que el destino sea interno (con «location»
+    # y sin destino externo), que el rango caiga dentro de la hoja, y que
+    # todas sus filas sean del mismo ítem que la fila de origen. Y que los
+    # rangos no se pisen entre sí, que es como se vería un bloque mal
+    # cortado.
+    art = wb["Artículos"]
+    col_item_cat, col_item_art = 4, 2
+    cubiertas, enlazadas, solapes = {}, 0, 0
+    for f in range(FILA_1, cat.max_row + 1):
+        c = cat.cell(row=f, column=col_item_cat)
+        if not c.hyperlink:
+            continue
+        enlazadas += 1
+        if c.hyperlink.target:
+            falla("Catálogo fila %d: el enlace al bloque de artículos sale del libro" % f)
+            continue
+        destino = (c.hyperlink.location or "")
+        m = re.match(r"^'Artículos'!A(\d+):[A-Z]+(\d+)$", destino)
+        if not m:
+            falla("Catálogo fila %d: el enlace dice «%s» y no es un rango de Artículos"
+                  % (f, destino))
+            continue
+        ini, fin = int(m.group(1)), int(m.group(2))
+        if ini < FILA_1 or fin > art.max_row or fin < ini:
+            falla("Catálogo fila %d: el enlace señala %d:%d y la hoja llega a %d"
+                  % (f, ini, fin, art.max_row))
+            continue
+        nombre = c.value
+        for k in range(ini, fin + 1):
+            if art.cell(row=k, column=col_item_art).value != nombre:
+                falla("Catálogo fila %d («%s»): el rango %d:%d incluye la fila %d, "
+                      "que es de otro ítem" % (f, nombre, ini, fin, k))
+                break
+            if k in cubiertas:
+                solapes += 1
+            cubiertas[k] = f
+    if solapes:
+        falla("hay %d filas de Artículos señaladas por dos ítems del catálogo" % solapes)
+
+    vuelta = sum(1 for f in range(FILA_1, art.max_row + 1)
+                 if art.cell(row=f, column=col_item_art).hyperlink)
+    for f in range(FILA_1, art.max_row + 1):
+        h = art.cell(row=f, column=col_item_art).hyperlink
+        if not h:
+            continue
+        m = re.match(r"^'Catálogo'!A(\d+)$", h.location or "")
+        if not m or not (FILA_1 <= int(m.group(1)) <= cat.max_row):
+            falla("Artículos fila %d: el enlace de vuelta dice «%s»" % (f, h.location))
+            break
+        if cat.cell(row=int(m.group(1)), column=col_item_cat).value != \
+                art.cell(row=f, column=col_item_art).value:
+            falla("Artículos fila %d: el enlace de vuelta lleva a otro ítem" % f)
+            break
+
+    print("Enlaces: %d ítems llevan a sus artículos (%d filas) · %d artículos vuelven"
+          % (enlazadas, len(cubiertas), vuelta))
 
     # ---- Informe ------------------------------------------------------
     print("")

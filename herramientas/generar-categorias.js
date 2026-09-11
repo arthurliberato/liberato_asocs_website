@@ -35,6 +35,10 @@ require(path.join(DESTINO, 'assets/js/datos-proveedores.js'));
    generador carga el registro completo —con nota y fuente— aunque las
    páginas que escribe solo lleven la forma compacta. */
 require(path.join(DESTINO, 'assets/js/precios.js'));
+/* La tabla de gamas, antes de leer el registro: c() la consulta al
+   construir cada cotización. La miden y la escriben medir-gama.js y
+   gama-marcas.js; aquí solo se enchufa. */
+(global.PRECIOS || global.window.PRECIOS).gamaDeMarca = require('./gama-marcas.js');
 require(path.join(DESTINO, 'assets/js/datos-precios.js'));
 require(path.join(DESTINO, 'assets/js/datos-demo.js'));
 const CAT = global.window.CATALOGO;

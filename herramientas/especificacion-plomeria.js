@@ -67,10 +67,24 @@ const FAMILIAS = {
     esp: '',
     alias: 'llave de paso, válvula, llave de bola, llave angular'
   },
+  /* EL CHEQUE SE PIDE POR CÓMO VA MONTADO, Y ESO LO DECLARAN LAS 37
+
+     Horizontal y vertical no son dos acabados del mismo cheque: son dos
+     piezas que se instalan en tramos distintos y no se sustituyen. Y
+     también manda en el precio, en las cinco medidas donde conviven el
+     vertical sale más caro: 1" RD$ 399-1.002 horizontal contra RD$
+     545-1.073 vertical; 3", RD$ 6.059-7.885 contra RD$ 11.058; 4", RD$
+     12.582-14.372 contra RD$ 18.722.
+
+     EL MATERIAL, solo cuando la ficha lo dice, y aquí lo dice una: el
+     «Cheque Vertical PVC C/Campana S/Rosca 2"» de RD$ 435 estaba entre
+     cheques de bronce de RD$ 2.782 a RD$ 3.499 y era el salto de ocho
+     veces de esa partida. El bronce es el caso corriente y va a secas. */
   cheque: {
     cat: 'MAT-32', unidad: 'unidad', etapa: 'instalaciones', orden: 40,
-    ejes: ['medida'],
-    nombre: m => 'Válvula de retención (cheque) ' + m.medida,
+    ejes: ['tipo', 'medida'], opcionales: ['material'],
+    nombre: m => 'Válvula de retención (cheque) ' + m.tipo + ' ' + m.medida +
+                 (m.material ? ', de ' + m.material : ''),
     esp: '',
     alias: 'cheque, válvula de retención, check'
   },
@@ -382,6 +396,13 @@ function item(familia, medidas) {
     if (!v) return null;
     claves.push(f.ejes[i] + '-' + v);
   }
+  /* Los ejes opcionales entran en la clave solo cuando el comercio los
+     declara: un cheque que dice «PVC» no es el mismo que uno que no dice
+     nada, y juntarlos sería afirmar que sí. */
+  (f.opcionales || []).forEach(eje => {
+    const v = limpia(medidas[eje]);
+    if (v) claves.push(eje + '-' + v);
+  });
 
   return {
     cat: f.cat,
@@ -411,8 +432,13 @@ function item(familia, medidas) {
    «1.5» y el de «1 1/2» sean el mismo ítem, que es lo que son.
    --------------------------------------------------------- */
 
-const FRACCION = { 0.125: '1/8', 0.25: '1/4', 0.375: '3/8', 0.5: '1/2', 0.625: '5/8',
-                   0.75: '3/4', 0.875: '7/8' };
+/* Los dieciseisavos entran porque el comercio los escribe: el plywood de
+   okume de 3/16" y la anilla de cobre de 5/16" se publicaban como 0.19" y
+   0.31", que no es una medida que nadie pida. */
+const FRACCION = { 0.0625: '1/16', 0.125: '1/8', 0.1875: '3/16', 0.25: '1/4',
+                   0.3125: '5/16', 0.375: '3/8', 0.4375: '7/16', 0.5: '1/2',
+                   0.5625: '9/16', 0.625: '5/8', 0.6875: '11/16', 0.75: '3/4',
+                   0.8125: '13/16', 0.875: '7/8', 0.9375: '15/16' };
 
 /* Ninguna pieza de este catálogo mide más de diez pies. Por encima de ahí
    lo que se leyó no es una medida sino el SKU interno del comercio, que
@@ -428,7 +454,9 @@ const TOPE_PULGADAS = 120;
 function comoPulgada(v) {
   if (!(v > 0) || v > TOPE_PULGADAS) return '';
   const entero = Math.floor(v + 1e-9);
-  const resto = Math.round((v - entero) * 1000) / 1000;
+  /* A diezmilésimas: redondeando a milésimas, 0,1875 se volvía 0,188 y
+     no encontraba su fracción. */
+  const resto = Math.round((v - entero) * 10000) / 10000;
   const fr = FRACCION[resto];
   if (resto && !fr) return (Math.round(v * 100) / 100) + '"';
   if (entero && fr) return entero + ' ' + fr + '"';
@@ -538,8 +566,12 @@ function materialDe(n) {
 function tipoConexion(n) {
   if (/^codoniple/.test(n)) return 'codoniple';
   if (/^codo/.test(n)) return /\b45\b/.test(n) ? 'codo-45' : /\b90\b/.test(n) ? 'codo-90' : 'codo';
-  if (/^tee/.test(n)) return /reducid/.test(n) ? 'tee-reducida' : 'tee';
-  if (/^cruz/.test(n)) return 'cruz';
+  /* La cruz antes que la tee, porque Bellón la llama «Tee Cruz PVC
+     Presión 1"» y con el ^tee delante caía en la tee: una cruz de 1"
+     a RD$ 27 junto a una tee de 1" a RD$ 16, la misma marca y la misma
+     medida, en la misma partida. Son tres salidas contra cuatro. */
+  if (/\bcruz\b/.test(n)) return 'cruz';
+  if (/^tee/.test(n)) return /reducid|reducci/.test(n) ? 'tee-reducida' : 'tee';
   if (/^yee/.test(n)) return 'yee';
   if (/^niple/.test(n)) return /reductor/.test(n) ? 'niple-reductor' : 'niple';
   if (/^reduccion/.test(n)) return /\bbus\b|bushing/.test(n) ? 'reduccion-bushing' : 'reduccion';
@@ -564,8 +596,30 @@ function medidaConexion(a, tipo) {
     return true;
   });
   if (/mm/i.test(a.nombre)) {
+    /* «Tee PPR Reducción 25 x 20mm»: la unidad va solo detrás del
+       segundo número y los dos son milímetros. Sin esto la reducción
+       25 x 20 entraba como una tee recta de 20 y llevaba esa partida a
+       treinta y seis veces. */
+    const par = limpiaN(a.nombre).match(/(\d+)\s*x\s*(\d+)\s*mm/i);
+    /* Solo si reducen de verdad: «Unión Bronce Flex 32 x 32 mm» es una
+       unión de 32, no una de 32 a 32. */
+    if (par && par[1] !== par[2]) return par[1] + ' x ' + par[2] + ' mm';
     const mm = limpiaN(a.nombre).match(/(\d+)\s*mm/gi);
     if (mm) return mm.map(x => x.replace(/\s*mm/i, '') + ' mm').join(' x ');
+  }
+
+  /* El polietileno se mide en milímetros aunque la ficha no escriba la
+     unidad: «Tee Bronce Polietileno Flex 12 x 12 x 12» son 12 mm.
+     Leerlos como pulgadas ponía en el catálogo una tee de bronce de 32"
+     a RD$ 2.108, y una de verdad costaría cientos de miles. */
+  /* «Flex» es como Tiemme llama a su línea de compresión para
+     polietileno, y no todas las fichas repiten la palabra: «Adaptador
+     Bronce Flex 12 x 1/2" x 2.0 Macho» son 12 mm de tubo y media
+     pulgada de rosca. La pulgada la escriben con comillas; el
+     milímetro, suelto. */
+  if (/polietileno|\bflex\b/i.test(a.nombre)) {
+    const ent = nums.filter(v => /^\d+$/.test(v) && +v >= 10 && +v <= 200);
+    if (ent.length) return ent[0] + ' mm';
   }
   const pulg = nums.map(medidaPulg).filter(Boolean);
   if (!pulg.length) return '';

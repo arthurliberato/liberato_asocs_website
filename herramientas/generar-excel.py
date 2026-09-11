@@ -43,6 +43,7 @@ from openpyxl.drawing.xdr import XDRPositiveSize2D
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
+from openpyxl.worksheet.hyperlink import Hyperlink
 
 RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "precios" / "descargas" / "precios-construccion-rd.xlsx"
@@ -76,6 +77,9 @@ FILETE = "D8D4C4"
 
 TXT = Font(name=FUENTE, size=CUERPO)
 TXT_MINI = Font(name=FUENTE, size=CUERPO - 1, color="62685A")
+# El mismo verde de los enlaces a la tienda, para que el libro tenga una
+# sola manera de decir «esto se puede pulsar».
+ENLACE = Font(name=FUENTE, size=CUERPO, color="3F6E22", underline="single")
 TIT = Font(name=FUENTE, size=CUERPO, bold=True, color="FFFFFF")
 H1 = Font(name=FUENTE, size=18, bold=True, color=VERDE_HONDO)
 H2 = Font(name=FUENTE, size=CUERPO + 1, bold=True, color=VERDE_HONDO)
@@ -289,9 +293,23 @@ def hoja_leame(wb, d):
 CAT_COLS = [
     ("Código", 13), ("Grupo", 16), ("Categoría", 26), ("Ítem", 46),
     ("Precio de referencia (RD$)", 15), ("Mínimo (RD$)", 13), ("Máximo (RD$)", 13),
+    # LA REFERENCIA POR GAMA
+    #
+    # «Mezcladora, de baño» tiene 577 cotizaciones y una referencia que le
+    # sirve al 14% de ellas: bajo el mismo nombre conviven la de ferretería
+    # y la de casa de diseño, y entre las dos hay doce veces. Separadas,
+    # las cuatro referencias dicen la verdad. Van pegadas a la referencia
+    # única porque es su contexto: sin ellas, ese número engaña.
+    #
+    # Solo las llevan las partidas donde la marca de verdad separa —hoy 25
+    # de 2.206, casi todas de baño— así que la mayoría de las filas las
+    # tiene vacías. Eso es correcto y es el punto: donde no se puede medir
+    # la gama, no se inventa.
+    ("Económica (RD$)", 14), ("Estándar (RD$)", 14),
+    ("Alta (RD$)", 14), ("Premium (RD$)", 14),
     ("Precio sin ITBIS (RD$)", 15), ("Incluye ITBIS", 11),
     ("Unidad", 12), ("Cotizaciones", 11), ("Comercios que cotizaron", 46),
-    ("Especificación", 40), ("Etapa de obra", 20), ("Gama", 11), ("Origen", 11),
+    ("Especificación", 40), ("Etapa de obra", 20), ("Origen", 11),
     ("Fecha", 11),
 ]
 
@@ -300,6 +318,62 @@ CAT_COLS = [
 # mover una columna era ir a buscarlos de uno en uno; ahora cada sitio pide
 # la columna por su nombre.
 CAT_IDX = {nombre: i for i, (nombre, _) in enumerate(CAT_COLS, start=1)}
+
+# Las columnas de la hoja «Artículos» viven aquí arriba y no dentro de su
+# función porque el catálogo necesita saber hasta qué columna llega el
+# bloque de un ítem para poder señalarlo entero.
+ART_COLS = [("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
+            ("Marca", 18), ("Gama", 12), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
+            ("Fecha", 11), ("Enlace", 52)]
+
+# La primera fila de datos de todas las hojas: dos de encabezado y a la
+# tercera empiezan los ítems. Estaba escrito a mano en cada hoja y ahora
+# hace falta en tres sitios a la vez, porque los enlaces internos se
+# calculan con él.
+FILA_1 = 3
+
+
+def rangos_de_articulos(articulos):
+    """Dónde empieza y dónde acaba cada ítem en la hoja «Artículos».
+
+    Los artículos vienen agrupados por ítem desde datos-para-excel.js, así
+    que cada ítem ocupa un bloque seguido de filas y se puede señalar con
+    un rango. Si algún día dejaran de venir agrupados, esto lo diría en
+    voz alta en vez de enlazar a un rango que se come al vecino.
+    """
+    rangos, orden = {}, []
+    for i, a in enumerate(articulos):
+        cod = a["itemCodigo"]
+        if cod not in rangos:
+            rangos[cod] = [FILA_1 + i, FILA_1 + i]
+            orden.append(cod)
+        elif orden[-1] != cod:
+            raise SystemExit(
+                "Los artículos de %s no vienen seguidos: el enlace del catálogo "
+                "señalaría un rango con artículos de otros ítems." % cod)
+        else:
+            rangos[cod][1] = FILA_1 + i
+    return rangos
+
+
+# Hasta dónde llega a lo ancho el bloque de un ítem en «Artículos».
+ULTIMA_ART = get_column_letter(len(ART_COLS))
+
+
+def enlace_interno(celda, hoja, ref):
+    """Un enlace de una hoja a otra dentro del mismo libro.
+
+    No vale con asignarle a la celda una cadena que empiece por «#»:
+    openpyxl la trataría como una dirección de fuera y escribiría una
+    relación externa, que Excel abre como si fuera un archivo. Un enlace
+    interno es el que lleva «location» y no lleva destino.
+
+    El destino es un RANGO, no una celda, y eso es a propósito: al pulsar,
+    Excel selecciona las filas enteras del ítem, que es justo lo que se
+    quiere ver. El nombre de la hoja va entre comillas simples porque
+    lleva tilde.
+    """
+    return Hyperlink(ref=celda.coordinate, location="'%s'!%s" % (hoja, ref))
 
 
 def cat_col(nombre):
@@ -343,7 +417,7 @@ def columnas_medida(items):
     return elegidas, cuenta
 
 
-def hoja_catalogo(wb, d):
+def hoja_catalogo(wb, d, rangos=None):
     ws = wb.create_sheet("Catálogo")
     medidas, _ = columnas_medida(d["items"])
     cols = list(CAT_COLS) + [(ETIQUETA_MEDIDA[k], 13) for k in medidas] + [("Otras medidas", 30)]
@@ -357,18 +431,24 @@ def hoja_catalogo(wb, d):
         "Ítem": "nombre", "Precio de referencia (RD$)": "ref",
         "Mínimo (RD$)": "min", "Máximo (RD$)": "max", "Unidad": "unidad",
         "Cotizaciones": "cotizaciones", "Comercios que cotizaron": "fuente",
-        "Especificación": "esp", "Etapa de obra": "etapa", "Gama": "gama",
+        "Especificación": "esp", "Etapa de obra": "etapa",
         "Origen": "origen", "Fecha": "fecha",
     }
+    # Las cuatro de gama salen del mismo sitio, que es un diccionario.
+    GAMA_COL = {"Económica (RD$)": "economica", "Estándar (RD$)": "estandar",
+                "Alta (RD$)": "alta", "Premium (RD$)": "premium"}
     ENVUELVE = ("Ítem", "Especificación", "Comercios que cotizaron")
     MONEDAS = ("Precio de referencia (RD$)", "Mínimo (RD$)", "Máximo (RD$)",
-               "Precio sin ITBIS (RD$)")
+               "Precio sin ITBIS (RD$)") + tuple(GAMA_COL)
     ref_c, itbis_c = cat_col("Precio de referencia (RD$)"), cat_col("Incluye ITBIS")
 
     for n, it in enumerate(d["items"], start=3):
         for titulo, i in CAT_IDX.items():
             if titulo == "Incluye ITBIS":
                 v = "Sí" if it["itbis"] else "No"
+            elif titulo in GAMA_COL:
+                g = (it.get("gamas") or {}).get(GAMA_COL[titulo])
+                v = g["ref"] if g else None
             elif titulo == "Precio sin ITBIS (RD$)":
                 # El precio sin el impuesto, para quien presupuesta sin ITBIS
                 v = '=IF({r}{n}="","",IF({t}{n}="Sí",ROUND({r}{n}/1.18,2),{r}{n}))'.format(
@@ -378,6 +458,15 @@ def hoja_catalogo(wb, d):
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
             c.alignment = Alignment(vertical="top", wrap_text=(titulo in ENVUELVE))
+            # El nombre del ítem lleva al bloque de artículos que hay
+            # debajo de él. Es la pregunta que no se podía contestar desde
+            # aquí: la fila dice «Cabezal de ducha, de 8", de acero
+            # inoxidable, RD$ 2.450» y no de qué artículos sale ese número.
+            if titulo == "Ítem" and rangos and it["codigo"] in rangos:
+                ini, fin = rangos[it["codigo"]]
+                c.hyperlink = enlace_interno(
+                    c, "Artículos", "A%d:%s%d" % (ini, ULTIMA_ART, fin))
+                c.font = ENLACE
         for titulo in MONEDAS:
             ws.cell(row=n, column=CAT_IDX[titulo]).number_format = MONEDA
         ws.cell(row=n, column=CAT_IDX["Cotizaciones"]).number_format = ENTERO
@@ -787,7 +876,7 @@ def hoja_conversiones(wb, d):
 # 3. Todos los artículos
 # =====================================================================
 
-def hoja_articulos(wb, d):
+def hoja_articulos(wb, d, filas_catalogo=None):
     """Una fila por artículo de tienda, sin agregar nada.
 
     El resto del libro trabaja por ítem: una fila por especificación, con
@@ -802,30 +891,45 @@ def hoja_articulos(wb, d):
     Excel como haga falta.
     """
     ws = wb.create_sheet("Artículos")
-    cols = [("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
-            ("Marca", 18), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
-            ("Fecha", 11), ("Enlace", 52)]
+    cols = ART_COLS
     marca(ws, len(cols))
     encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
 
-    n = 3
+    # El orden se declara una sola vez, como en el catálogo: el precio y el
+    # enlace se buscan por su título y no por un número escrito a mano, que
+    # es lo que se corre en silencio al insertar una columna.
+    DATO = {"Categoría": "categoria", "Ítem del catálogo": "item",
+            "Artículo del comercio": "articulo", "Marca": "marca",
+            "Gama": "gama", "Comercio": "comercio", "Unidad": "unidad",
+            "Precio RD$": "precio", "Fecha": "fecha", "Enlace": "url"}
+    idx = {t: i for i, (t, _) in enumerate(cols, start=1)}
+    filas_catalogo = filas_catalogo or {}
+
+    n = FILA_1
     for a in d["articulos"]:
-        fila = [a["categoria"], a["item"], a["articulo"] or a["item"], a["marca"],
-                a["comercio"], a["unidad"], a["precio"], a["fecha"], a["url"]]
-        for i, v in enumerate(fila, start=1):
+        for titulo, i in idx.items():
+            v = a[DATO[titulo]]
+            if titulo == "Artículo del comercio":
+                v = v or a["item"]
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
             c.alignment = Alignment(vertical="top")
-        ws.cell(row=n, column=7).number_format = MONEDA
+            # Y la vuelta: desde el artículo, a su fila del catálogo. Sin
+            # esto el enlace de ida es un viaje de una sola dirección.
+            if titulo == "Ítem del catálogo" and a["itemCodigo"] in filas_catalogo:
+                c.hyperlink = enlace_interno(
+                    c, "Catálogo", "A%d" % filas_catalogo[a["itemCodigo"]])
+                c.font = ENLACE
+        ws.cell(row=n, column=idx["Precio RD$"]).number_format = MONEDA
         # El enlace va como hipervínculo: es lo que convierte la hoja en una
         # herramienta de compra y no en una lista para mirar.
         if a["url"]:
-            c = ws.cell(row=n, column=9)
+            c = ws.cell(row=n, column=idx["Enlace"])
             c.hyperlink = a["url"]
             c.font = Font(name=FUENTE, size=CUERPO, color="3F6E22", underline="single")
         n += 1
 
-    ws.auto_filter.ref = "A2:I%d" % (n - 1)
+    ws.auto_filter.ref = "A2:%s%d" % (get_column_letter(len(cols)), n - 1)
     return n - 3
 
 
@@ -843,9 +947,15 @@ def main():
 
     # Tres hojas: el catálogo por ítem, el comparativo por comercio y el
     # dato crudo, un artículo de tienda por fila.
-    hoja_catalogo(wb, d)
+    # Los dos mapas de ida y vuelta entre las hojas, antes de escribir
+    # ninguna: el catálogo se escribe primero y ya necesita saber dónde
+    # caerá cada bloque de artículos.
+    rangos = rangos_de_articulos(d["articulos"])
+    filas_catalogo = {it["codigo"]: FILA_1 + i for i, it in enumerate(d["items"])}
+
+    hoja_catalogo(wb, d, rangos)
     comparadas = hoja_comparativo(wb, d)
-    n_articulos = hoja_articulos(wb, d)
+    n_articulos = hoja_articulos(wb, d, filas_catalogo)
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"
