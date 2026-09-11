@@ -1495,6 +1495,10 @@ lista.sort((p, q) => p.spec.cat.localeCompare(q.spec.cat) || (p.spec.orden - q.s
 global.window = global;
 /* El motor va antes que el registro: datos-precios.js le pide la c(). */
 require(path.join(DATOS, 'precios.js'));
+/* La tabla de gamas, antes de leer el registro: c() la consulta al
+   construir cada cotización. La miden y la escriben medir-gama.js y
+   gama-marcas.js; aquí solo se enchufa. */
+(global.PRECIOS || global.window.PRECIOS).gamaDeMarca = require('./gama-marcas.js');
 ['catalogo', 'proveedores', 'precios', 'demo'].forEach(f => require(path.join(DATOS, 'datos-' + f + '.js')));
 const CAT = global.CATALOGO;
 

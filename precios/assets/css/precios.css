@@ -1158,6 +1158,36 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 }
 .ir-grupo-sub { font-variant-numeric: tabular-nums; letter-spacing: 0; color: var(--verde-700); }
 
+/* La referencia por gama, bajo el nombre del ítem. Solo sale en las
+   partidas donde la marca separa de verdad, así que es una línea rara y
+   tiene que leerse como lo que es: un desglose del precio de arriba, no
+   otra fila de datos. De ahí el tamaño pequeño y el tono apagado en la
+   etiqueta, con la cifra en el verde de los precios. */
+.item-gamas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .1rem .9rem;
+  margin-top: .3rem;
+}
+.item-gamas .gama-p {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .28rem;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: .76rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--verde-700);
+  white-space: nowrap;
+}
+.item-gamas .gama-p i {
+  font-style: normal;
+  font-weight: 500;
+  font-size: .68rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
 /* ---------- solicitar cotización ----------
    La misma selección vista por comercio. Ocupa el sitio de la lista dentro
    del mismo panel: es la misma lista contada de otra manera, no otra

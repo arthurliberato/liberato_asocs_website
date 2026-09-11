@@ -289,9 +289,23 @@ def hoja_leame(wb, d):
 CAT_COLS = [
     ("Código", 13), ("Grupo", 16), ("Categoría", 26), ("Ítem", 46),
     ("Precio de referencia (RD$)", 15), ("Mínimo (RD$)", 13), ("Máximo (RD$)", 13),
+    # LA REFERENCIA POR GAMA
+    #
+    # «Mezcladora, de baño» tiene 577 cotizaciones y una referencia que le
+    # sirve al 14% de ellas: bajo el mismo nombre conviven la de ferretería
+    # y la de casa de diseño, y entre las dos hay doce veces. Separadas,
+    # las cuatro referencias dicen la verdad. Van pegadas a la referencia
+    # única porque es su contexto: sin ellas, ese número engaña.
+    #
+    # Solo las llevan las partidas donde la marca de verdad separa —hoy 25
+    # de 2.206, casi todas de baño— así que la mayoría de las filas las
+    # tiene vacías. Eso es correcto y es el punto: donde no se puede medir
+    # la gama, no se inventa.
+    ("Económica (RD$)", 14), ("Estándar (RD$)", 14),
+    ("Alta (RD$)", 14), ("Premium (RD$)", 14),
     ("Precio sin ITBIS (RD$)", 15), ("Incluye ITBIS", 11),
     ("Unidad", 12), ("Cotizaciones", 11), ("Comercios que cotizaron", 46),
-    ("Especificación", 40), ("Etapa de obra", 20), ("Gama", 11), ("Origen", 11),
+    ("Especificación", 40), ("Etapa de obra", 20), ("Origen", 11),
     ("Fecha", 11),
 ]
 
@@ -357,18 +371,24 @@ def hoja_catalogo(wb, d):
         "Ítem": "nombre", "Precio de referencia (RD$)": "ref",
         "Mínimo (RD$)": "min", "Máximo (RD$)": "max", "Unidad": "unidad",
         "Cotizaciones": "cotizaciones", "Comercios que cotizaron": "fuente",
-        "Especificación": "esp", "Etapa de obra": "etapa", "Gama": "gama",
+        "Especificación": "esp", "Etapa de obra": "etapa",
         "Origen": "origen", "Fecha": "fecha",
     }
+    # Las cuatro de gama salen del mismo sitio, que es un diccionario.
+    GAMA_COL = {"Económica (RD$)": "economica", "Estándar (RD$)": "estandar",
+                "Alta (RD$)": "alta", "Premium (RD$)": "premium"}
     ENVUELVE = ("Ítem", "Especificación", "Comercios que cotizaron")
     MONEDAS = ("Precio de referencia (RD$)", "Mínimo (RD$)", "Máximo (RD$)",
-               "Precio sin ITBIS (RD$)")
+               "Precio sin ITBIS (RD$)") + tuple(GAMA_COL)
     ref_c, itbis_c = cat_col("Precio de referencia (RD$)"), cat_col("Incluye ITBIS")
 
     for n, it in enumerate(d["items"], start=3):
         for titulo, i in CAT_IDX.items():
             if titulo == "Incluye ITBIS":
                 v = "Sí" if it["itbis"] else "No"
+            elif titulo in GAMA_COL:
+                g = (it.get("gamas") or {}).get(GAMA_COL[titulo])
+                v = g["ref"] if g else None
             elif titulo == "Precio sin ITBIS (RD$)":
                 # El precio sin el impuesto, para quien presupuesta sin ITBIS
                 v = '=IF({r}{n}="","",IF({t}{n}="Sí",ROUND({r}{n}/1.18,2),{r}{n}))'.format(
@@ -803,29 +823,39 @@ def hoja_articulos(wb, d):
     """
     ws = wb.create_sheet("Artículos")
     cols = [("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
-            ("Marca", 18), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
+            ("Marca", 18), ("Gama", 12), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
             ("Fecha", 11), ("Enlace", 52)]
     marca(ws, len(cols))
     encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
 
+    # El orden se declara una sola vez, como en el catálogo: el precio y el
+    # enlace se buscan por su título y no por un número escrito a mano, que
+    # es lo que se corre en silencio al insertar una columna.
+    DATO = {"Categoría": "categoria", "Ítem del catálogo": "item",
+            "Artículo del comercio": "articulo", "Marca": "marca",
+            "Gama": "gama", "Comercio": "comercio", "Unidad": "unidad",
+            "Precio RD$": "precio", "Fecha": "fecha", "Enlace": "url"}
+    idx = {t: i for i, (t, _) in enumerate(cols, start=1)}
+
     n = 3
     for a in d["articulos"]:
-        fila = [a["categoria"], a["item"], a["articulo"] or a["item"], a["marca"],
-                a["comercio"], a["unidad"], a["precio"], a["fecha"], a["url"]]
-        for i, v in enumerate(fila, start=1):
+        for titulo, i in idx.items():
+            v = a[DATO[titulo]]
+            if titulo == "Artículo del comercio":
+                v = v or a["item"]
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
             c.alignment = Alignment(vertical="top")
-        ws.cell(row=n, column=7).number_format = MONEDA
+        ws.cell(row=n, column=idx["Precio RD$"]).number_format = MONEDA
         # El enlace va como hipervínculo: es lo que convierte la hoja en una
         # herramienta de compra y no en una lista para mirar.
         if a["url"]:
-            c = ws.cell(row=n, column=9)
+            c = ws.cell(row=n, column=idx["Enlace"])
             c.hyperlink = a["url"]
             c.font = Font(name=FUENTE, size=CUERPO, color="3F6E22", underline="single")
         n += 1
 
-    ws.auto_filter.ref = "A2:I%d" % (n - 1)
+    ws.auto_filter.ref = "A2:%s%d" % (get_column_letter(len(cols)), n - 1)
     return n - 3
 
 

@@ -41,6 +41,10 @@ global.window = {};
 require(path.join(JS, 'datos-catalogo.js'));
 require(path.join(JS, 'datos-proveedores.js'));
 require(path.join(JS, 'precios.js'));
+/* La tabla de gamas, antes de leer el registro: c() la consulta al
+   construir cada cotización. La miden y la escriben medir-gama.js y
+   gama-marcas.js; aquí solo se enchufa. */
+(global.PRECIOS || global.window.PRECIOS).gamaDeMarca = require('./gama-marcas.js');
 require(path.join(JS, 'datos-precios.js'));
 const PRECIOS = global.window.PRECIOS;
 const registros = PRECIOS.registros;
@@ -95,10 +99,11 @@ function linea(r) {
 const porItem = [];
 const donde = {};
 registros.forEach(r => {
-  if (!(r.item in donde)) { donde[r.item] = porItem.length; porItem.push([r.item, [], []]); }
+  if (!(r.item in donde)) { donde[r.item] = porItem.length; porItem.push([r.item, [], [], []]); }
   const g = porItem[donde[r.item]];
   g[1].push(linea(r));
   g[2].push([r.fuente || '', r.nota || '']);
+  g[3].push(r.gama || '');
 });
 
 /* ---------- cotizaciones.js ---------- */
@@ -116,6 +121,10 @@ L.push('   La línea de cada cotización es');
 L.push('     [comercio, precio, fecha, unidad, itbis, peso, moneda, precioOrigen]');
 L.push('   recortada por el final: casi todas son de tres números. Los tres');
 L.push('   primeros son índices de los diccionarios de abajo.');
+L.push('');
+L.push('   Tras las líneas, cuando el ítem tiene marcas medidas, va la tira');
+L.push('   de gamas: una letra por cotización y en el mismo orden —«e»');
+L.push('   económica, «s» estándar, «a» alta, «p» premium, «.» sin medir.');
 L.push('   ========================================================= */');
 L.push('');
 L.push('(function (global) {');
@@ -127,8 +136,34 @@ L.push('    fecha: ' + JSON.stringify(fecha) + ',');
 L.push('    unid: ' + JSON.stringify(unid) + ',');
 L.push('    mon: ' + JSON.stringify(mon) + ',');
 L.push('    cot: [');
+/* LA TIRA DE GAMAS
+
+   Una letra por cotización y en el mismo orden que las líneas: «e»
+   económica, «s» estándar, «a» alta, «p» premium, «.» sin medir.
+
+   Solo la llevan los ítems que de verdad van a publicar una referencia
+   por gama, y eso pide dos gamas con tres cotizaciones cada una: con una
+   sola no hay con qué comparar, y con dos de dos la «mediana» es el
+   promedio de dos números. Escribirla en los 2.206 ítems costaba 18 KB
+   para que la usaran veinticinco; así cuesta menos de uno.
+
+   El umbral se comprueba sin filtro, que es como se abre la página. Al
+   filtrar por comercio la referencia se recalcula con lo que quede, y
+   puede quedarse sin gamas —nunca ganarlas—, que es el lado correcto por
+   el que equivocarse. */
+const LETRA = { economica: 'e', estandar: 's', alta: 'a', premium: 'p' };
+let conTira = 0;
 porItem.forEach((g, n) => {
-  L.push('      ["' + g[0] + '",' + JSON.stringify(g[1]) + ']' + (n < porItem.length - 1 ? ',' : ''));
+  const cuenta = {};
+  (g[3] || []).forEach(x => { if (x) cuenta[x] = (cuenta[x] || 0) + 1; });
+  const vale = Object.keys(cuenta).filter(k => cuenta[k] >= 3).length >= 2;
+  let gamas = '';
+  if (vale) {
+    gamas = ',"' + g[1].map((_, i) => LETRA[(g[3] || [])[i]] || '.').join('') + '"';
+    conTira += 1;
+  }
+  L.push('      ["' + g[0] + '",' + JSON.stringify(g[1]) + gamas + ']' +
+         (n < porItem.length - 1 ? ',' : ''));
 });
 L.push('    ]');
 L.push('  });');
@@ -245,6 +280,7 @@ fs.writeFileSync(path.join(JS, 'catalogo-alias.js'), A.join('\n') + '\n');
 /* ---------- informe ---------- */
 const kb = n => String(Math.round(n / 1024)).padStart(5) + ' KB';
 console.log('Registro completo (datos-precios.js) ' + kb(fs.statSync(path.join(JS, 'datos-precios.js')).size));
+console.log('  de esos, con tira de gamas: ' + conTira);
 console.log('Forma compacta  (cotizaciones.js)    ' + kb(fs.statSync(path.join(JS, 'cotizaciones.js')).size) +
             '   ' + registros.length + ' cotizaciones de ' + porItem.length + ' ítems');
 console.log('Catálogo completo (datos-catalogo.js)' + kb(fs.statSync(path.join(JS, 'datos-catalogo.js')).size));

@@ -517,6 +517,36 @@
     }).join('') + '</span>';
   }
 
+  /* LA REFERENCIA POR GAMA, BAJO EL NOMBRE
+
+     Hay partidas donde un solo precio de referencia miente por omisión.
+     «Mezcladora, de baño» tiene 577 cotizaciones y una referencia de
+     RD$ 4.967 que le queda cerca al 14% de ellas: bajo el mismo nombre
+     conviven la mezcladora de ferretería y la de casa de diseño, y entre
+     las dos hay doce veces. Quien presupuesta una vivienda económica y
+     quien presupuesta una de lujo están mirando el mismo número y a los
+     dos les sirve mal.
+
+     Así que donde se puede medir, se dice. Solo aparece en las partidas
+     donde la marca de verdad separa —hoy 25 de 2.206, casi todas de
+     baño—; en el resto no hay línea, porque inventarla sería peor que
+     no tenerla. Cómo se mide, en herramientas/medir-gama.js. */
+  var ETIQUETA_GAMA = { economica: 'Económica', estandar: 'Estándar',
+                        alta: 'Alta', premium: 'Premium' };
+
+  function tiraGama(it) {
+    if (!it.gamas) return '';
+    var partes = [];
+    ['economica', 'estandar', 'alta', 'premium'].forEach(function (g) {
+      var x = it.gamas[g];
+      if (!x) return;
+      partes.push('<span class="gama-p" title="' + x.n + ' cotizaciones de marcas de gama ' +
+        ETIQUETA_GAMA[g].toLowerCase() + '"><i>' + ETIQUETA_GAMA[g] + '</i>' + rd(x.ref) + '</span>');
+    });
+    if (partes.length < 2) return '';
+    return '<span class="item-gamas">' + partes.join('') + '</span>';
+  }
+
   /* =========================================================
      EL DETALLE DE CADA COTIZACIÓN, A PEDIDO
 
@@ -1417,7 +1447,7 @@
       return '<tr data-item="' + esc(it.codigo) + '">' +
           '<td><span class="item-nombre">' + esc(it.nombre) + '</span>' +
               (it.alcance && it.alcance !== ALCANCE_BASE ? '<span class="item-alcance">' + esc(it.alcance) + '</span>' : '') +
-              tagsProveedores(it) + '</td>' +
+              tagsProveedores(it) + tiraGama(it) + '</td>' +
           '<td><a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num" data-precio-ref="' + (bruto === null ? '' : bruto) + '">' + precioHtml + '</td>' +

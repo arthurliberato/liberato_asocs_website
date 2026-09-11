@@ -49,15 +49,24 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 FILA_TITULOS = 2
 FUENTE = "Calibri"
 HOJAS = ["Catálogo", "Comparativo", "Artículos"]
+# La columna del precio en la hoja de artículos. Se corrió al entrar
+# «Gama», y un precio que entre como texto inutiliza la hoja entera.
+COL_PRECIO_ART = 8
 # El precio va pegado al ítem: E, F y G son las tres columnas de precio,
 # justo a la derecha del nombre. Si alguna se corre, la fórmula del precio
 # sin ITBIS —que las nombra por letra— traería otra cosa sin dar error.
 COLUMNAS_CATALOGO = {
     "A": "Código", "D": "Ítem", "E": "Precio de referencia (RD$)",
-    "F": "Mínimo (RD$)", "G": "Máximo (RD$)", "H": "Precio sin ITBIS (RD$)",
-    "I": "Incluye ITBIS", "J": "Unidad", "L": "Comercios que cotizaron",
-    "M": "Especificación",
+    "F": "Mínimo (RD$)", "G": "Máximo (RD$)",
+    "H": "Económica (RD$)", "I": "Estándar (RD$)",
+    "J": "Alta (RD$)", "K": "Premium (RD$)",
+    "L": "Precio sin ITBIS (RD$)", "M": "Incluye ITBIS", "N": "Unidad",
+    "P": "Comercios que cotizaron", "Q": "Especificación",
 }
+
+# Las cuatro de gama, en orden. Una partida que las publique al revés
+# —premium más barata que económica— se lee como un error nuestro.
+GAMAS = ["H", "I", "J", "K"]
 
 fallos = []
 avisos = []
@@ -111,6 +120,28 @@ def main():
         if retirada in fila:
             falla("la columna «%s» debía salir del catálogo y sigue ahí" % retirada)
 
+    # ---- 3 ter: la referencia por gama va en orden ------------------
+    # Se publica solo donde la marca separa de verdad, y con la condición
+    # de que las gamas queden ordenadas. Si alguna fila sale al revés, la
+    # puerta que lo impide en recalcular() se ha roto.
+    cols_g = [column_index_from_string(c) for c in GAMAS]
+    con_gama = desordenadas = 0
+    for r in range(FILA_TITULOS + 1, cat.max_row + 1):
+        v = [cat.cell(row=r, column=c).value for c in cols_g]
+        v = [x for x in v if isinstance(x, (int, float))]
+        if not v:
+            continue
+        con_gama += 1
+        if len(v) < 2:
+            falla("Catálogo fila %d: una sola referencia de gama, sin nada "
+                  "con que compararla" % r)
+        if any(v[i] <= v[i - 1] for i in range(1, len(v))):
+            desordenadas += 1
+            if desordenadas <= 3:
+                falla("Catálogo fila %d: las gamas salen desordenadas (%s)"
+                      % (r, ", ".join("%.0f" % x for x in v)))
+    print("Catálogo: %d ítems con referencia por gama" % con_gama)
+
     filas_cat = cat.max_row
     while filas_cat > FILA_TITULOS and cat.cell(row=filas_cat, column=1).value is None:
         filas_cat -= 1
@@ -134,7 +165,7 @@ def main():
     if sin_nombre:
         falla("%d artículos sin nombre en la hoja de artículos" % sin_nombre)
     no_numero = [r for r in range(FILA_TITULOS + 1, min(filas_art, FILA_TITULOS + 400) + 1)
-                 if not isinstance(art.cell(row=r, column=7).value, (int, float))]
+                 if not isinstance(art.cell(row=r, column=COL_PRECIO_ART).value, (int, float))]
     if no_numero:
         falla("el precio de la hoja de artículos entra como texto en %d filas (ej. fila %d)"
               % (len(no_numero), no_numero[0]))

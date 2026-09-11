@@ -114,7 +114,11 @@
       art: o.art || '',
       sku: o.sku || '',
       marca: o.marca || '',
-      url: o.url || ''
+      url: o.url || '',
+      /* La gama sale de la marca, y solo cuando hay tabla puesta: la
+         ponen las herramientas del repositorio, que son las que la miden.
+         El navegador no la calcula, la recibe hecha. */
+      gama: (global.PRECIOS.gamaDeMarca && global.PRECIOS.gamaDeMarca[o.marca]) || ''
     });
   }
   /* ---------------------------------------------------------
@@ -194,6 +198,9 @@
         nota: r.nota,
         /* Cuántos artículos del comercio representa esta línea. */
         peso: r.peso || 1,
+        /* De qué gama, según la marca. La trae el registro en Node y la
+           tira de letras en el navegador; aquí solo se copia. */
+        gama: r.gama || '',
         /* Solo los proveedores que venden al público entran en el cálculo. */
         cuenta: prov.publico && mismaUnidad
       };
@@ -249,6 +256,7 @@
         item.fuente = item.base.fuente;
         item.fecha = item.base.fecha;
         item.filtrado = false;
+        item.gamas = null;
         item.sinCotizacionDelFiltro = !!filtro;
         return;
       }
@@ -259,6 +267,56 @@
       })) * 100) / 100;
       item.min = Math.round(Math.min.apply(null, valores) * 100) / 100;
       item.max = Math.round(Math.max.apply(null, valores) * 100) / 100;
+
+      /* UNA REFERENCIA POR GAMA
+
+         «Mezcladora, de baño» tiene 577 cotizaciones y una referencia
+         que le sirve al 14% de ellas. No es la fórmula: es que bajo el
+         mismo nombre conviven la mezcladora de ferretería y la de casa
+         de diseño, y entre las dos hay doce veces. Separadas por gama,
+         las cuatro referencias —2.283, 4.004, 13.764 y 31.811— le
+         sirven al 32%, y sobre todo dicen la verdad: cuánto cuesta
+         depende de qué se esté comprando.
+
+         Se calcula aquí y no una vez al generar porque tiene que
+         responder al filtro de comercios igual que la principal: quien
+         mira solo dos ferreterías no debe ver la referencia premium de
+         una casa de diseño que no ha seleccionado.
+
+         Tres cotizaciones es el mínimo para publicar una: con dos, la
+         «mediana» es el promedio de dos números y no dice nada. */
+      var porGama = {};
+      validas.forEach(function (q) {
+        if (q.gama) (porGama[q.gama] = porGama[q.gama] || []).push(q.precioNormalizado);
+      });
+      var gamas = null, orden = [];
+      ['economica', 'estandar', 'alta', 'premium'].forEach(function (g) {
+        var v = porGama[g];
+        if (!v || v.length < 3) return;
+        var r = Math.round(mediana(v) * 100) / 100;
+        (gamas = gamas || {})[g] = { ref: r, n: v.length };
+        orden.push(r);
+      });
+
+      /* Y SOLO SI QUEDAN EN ORDEN
+
+         La gama de una marca se mide sobre todo lo que vende, así que es
+         un promedio de sus líneas: una marca que es estándar en general
+         puede tener una línea cara, y entonces en esa partida concreta
+         sale por encima de una marca «alta». Pasa poco, pero pasa —el
+         urinario de porcelana salía con la económica a RD$ 6.631 y la
+         estándar a RD$ 5.473— y publicado parece un error nuestro, no lo
+         que es: que ahí la marca no manda.
+
+         Cuando el orden se rompe no se publica ninguna. Vale más no decir
+         nada que decir algo que se lee al revés. */
+      for (var i = 1; i < orden.length; i++) {
+        if (orden[i] <= orden[i - 1]) { gamas = null; break; }
+      }
+      /* Con una sola tampoco: una referencia «económica» suelta, sin las
+         otras con qué compararla, no informa de nada. */
+      if (gamas && orden.length < 2) gamas = null;
+      item.gamas = gamas;
 
       /* Un dato inventado no se presenta como comprobado: si todas las
          cotizaciones que cuentan vienen del modo demostración, el ítem
@@ -428,10 +486,20 @@
     var prov = d.prov || [], fechas = d.fecha || [], unid = d.unid || [''],
         mon = d.mon || ['RD$'];
     registros.length = 0;
+    /* LA TIRA DE GAMAS
+
+       Una letra por cotización, en el mismo orden —«e» económica, «s»
+       estándar, «a» alta, «p» premium, «.» sin marca conocida—. Va
+       aparte y no como un campo más de la línea porque la línea se
+       recorta por el final: meterla dentro obligaría a escribir la
+       unidad, el ITBIS, el peso y la moneda en cada cotización que
+       tuviera gama, y son cinco números para guardar una letra. */
+    var GAMA = { e: 'economica', s: 'estandar', a: 'alta', p: 'premium' };
     d.cot.forEach(function (par) {
-      var item = par[0];
-      par[1].forEach(function (q) {
+      var item = par[0], tira = par[2] || '';
+      par[1].forEach(function (q, n) {
         registros.push({
+          gama: GAMA[tira.charAt(n)] || '',
           item: item,
           proveedor: prov[q[0]],
           precio: q[1],
