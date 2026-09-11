@@ -324,16 +324,49 @@ const FAMILIAS = {
     cat: 'MAT-09', base: 'Ducha teléfono', unidad: 'unidad',
     ejes: [], etapa: 'instalaciones', orden: 20, alias: 'ducha de mano, teléfono de ducha'
   },
+  /* LA COLUMNA DE DUCHA, QUE ERA 124 COTIZACIONES SIN UN SOLO EJE
+
+     De RD$ 517 a RD$ 151.833 —294 veces— y nueve comercios mandando
+     todo al mismo ítem. Dentro había tres cosas que no son columnas y
+     dos ejes que el nombre sí declara.
+
+     LO QUE NO ES UNA COLUMNA. La barra deslizable sola —«BARRA
+     DESLIZABLE P/DUCHA», RD$ 517— es el riel y nada más: sin cabezal,
+     sin ducha de mano y sin mezcladora, y es lo que ponía el suelo de
+     la partida. La «Columna Valencia 2 Puertas Suspendida Blanco Ebony
+     35×30,5×130» es un mueble alto de baño y entró por la palabra. Y
+     una mezcladora que dice «Sin equipo» es justamente la que no trae
+     la columna.
+
+     LOS DOS EJES. El termostato, que lo declaran quince —«SISTEMA
+     D/DUCHA C/TERMOSTATO»— y es la pieza que mantiene la temperatura;
+     y si va empotrada en el muro o expuesta sobre él, que cambia la
+     instalación entera y también lo declaran.
+
+     Lo que NO se hizo es separar «con mezcladora» de «sin mezcladora»:
+     en AQUALIA AVEIRO el sistema expuesto va de RD$ 12.903 a RD$ 14.682
+     y el empotrado con mezcladora de RD$ 8.062 a RD$ 10.233, así que el
+     que trae más cuesta menos. Ahí manda el montaje, no la mezcladora,
+     y meter un eje que no manda es partir la partida por gusto. */
   'ducha-columna': {
     cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 30, alias: 'columna de ducha, set de ducha'
+    ejes: ['montaje', 'termostato'], etapa: 'instalaciones', orden: 30,
+    alias: 'columna de ducha, set de ducha, sistema de ducha'
   },
-  /* La barra deslizable no se presupuesta sola: es parte del conjunto de
-     ducha, igual que la columna y el sistema completo. Todo eso es un ítem. */
+  /* AQUÍ ESTABA LA SEGUNDA «COLUMNA DE DUCHA»
+
+     Había dos familias con este mismo nombre de base: esta y
+     'ducha-columna'. La nota de la vieja decía que la barra deslizable
+     no se presupuesta sola y que todo era un ítem, y con los catálogos
+     de entonces se sostenía. Ya no: la barra sola son RD$ 517 y el
+     sistema completo llega a RD$ 151.833, y el catálogo publicaba dos
+     partidas distintas llamadas igual, una con 57 cotizaciones y otra
+     con 35. Dos ítems no pueden llamarse igual. */
   'ducha-barra': {
-    cat: 'MAT-09', base: 'Columna de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 40,
-    alias: 'columna de ducha, sistema de ducha, barra deslizable, riel'
+    cat: 'MAT-09', base: 'Barra deslizable para ducha', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 31,
+    alias: 'barra deslizable, riel de ducha, barra de ducha',
+    esp: 'Solo el riel · el cabezal y la ducha de mano van aparte'
   },
   'ducha-brazo': {
     cat: 'MAT-09', base: 'Brazo de ducha', unidad: 'unidad',
@@ -375,6 +408,9 @@ const ETIQUETA = {
      nombre no lo decía. Callar un valor del eje no es lo mismo que no
      tener el eje. */
   brazo:       v => v + ' brazo',
+  /* Solo se nombra la que lo trae: la columna corriente no lleva
+     termostato y se pide a secas. */
+  termostato:  v => v === 'con' ? 'termostática' : '',
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
@@ -542,6 +578,39 @@ function brazoDeCabezal(t) {
   if (/c ?\/ ?bra?zo|con bra?zo|y chapeton|c ?\/ ?cubre ?falta|\bbr y? ?chap/.test(t)) return 'con';
   if (/s ?\/ ?bra?zo|sin bra?zo/.test(t)) return 'sin';
   return '';
+}
+
+/* QUÉ JUEGO DE DUCHA ES, Y CÓMO VA MONTADO
+
+   Nueve comercios clasifican esto y los nueve mandaban todo al mismo
+   ítem, así que la decisión vive aquí. Ver la nota de 'ducha-columna'.
+
+   El orden importa: «DUCHA BARRA EXTER. CABEZA RED» lleva «barra» y sí
+   trae cabezal, así que la barra sola se reconoce por lo que NO dice. */
+function juegoDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  /* El mueble alto de baño entró por la palabra «columna». Lo delata que
+     declare puertas y unas medidas de mueble. */
+  if (/\d\s*puertas?\b/.test(t) && /suspendid|blanco|ebony|nogal|roble/.test(t)) {
+    return { familia: 'mueble-bano', medidas: { montaje: 'pared' } };
+  }
+  /* «Sin equipo» es la mezcladora sola: lo dice la ficha con todas las
+     letras y es justo lo contrario de una columna. */
+  if (/sin equipo|s ?\/ ?equipo|sin set de ducha/.test(t)) {
+    return { familia: 'ducha-mezcladora', medidas: {} };
+  }
+  /* La barra sola: riel y nada más. */
+  if (/barra (deslizable|deslizante|corredera)|riel de ducha/.test(t) &&
+      !/cabez|regadera|rociador|ducha de mano|d ?\/ ?mano|mezclad/.test(t)) {
+    return { familia: 'ducha-barra', medidas: {} };
+  }
+
+  return { familia: 'ducha-columna', medidas: {
+    montaje: /empotr|\bemp\b/.test(t) ? 'empotrar' : /expuest|exterior|\bbarra\b/.test(t) ? 'sobreponer' : '',
+    termostato: /termostat|termos\b/.test(t) ? 'con' : ''
+  } };
 }
 
 /* CABINA, CABINA DE HIDROMASAJE O MAMPARA, Y DE QUÉ TAMAÑO
@@ -748,4 +817,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, cabinaDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, juegoDeDucha, cabinaDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };

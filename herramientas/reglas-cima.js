@@ -432,7 +432,7 @@ function clasificar(a) {
   /* ---- Duchas ---- */
   if (cat === 'Duchas y banera') {
     if (/^ducha telefono|regadera.*telefono/.test(n)) return BANOS.item('ducha-telefono', {});
-    if (/^sistema ducha|^columna/.test(n)) return BANOS.item('ducha-columna', {});
+    if (/^sistema ducha|^columna/.test(n)) return (function () { const c = BANOS.juegoDeDucha(n); return BANOS.item(c.familia, c.medidas); })();
     if (/^soporte ducha/.test(n)) return BANOS.item('ducha-brazo', {});
     if (/^ducha|^regadera/.test(n)) {
       /* Qué cabezal es y de qué lo dice la tabla, que lo decide igual

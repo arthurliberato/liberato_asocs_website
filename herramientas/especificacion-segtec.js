@@ -83,7 +83,35 @@ const FAMILIAS = {
   },
   'detector-movimiento': {
     cat: 'MAT-28', base: 'Detector de movimiento', unidad: 'unidad',
-    ejes: ['alcance_m'], etapa: 'instalaciones', orden: 30, alias: 'sensor PIR, detector de movimiento'
+    /* De interior o de exterior lo declaran, y en BOSCH TRITECH el
+       mismo detector cuesta RD$ 2.324 dentro y RD$ 4.382 fuera. */
+    ejes: ['ubicacion', 'alcance_m'], etapa: 'instalaciones', orden: 30,
+    alias: 'sensor PIR, detector de movimiento'
+  },
+  /* «DETECTOR DE MOVIMIENTO» ERA «DETECTOR DE CUALQUIER COSA»
+
+     Treinta y ocho cotizaciones y dentro, además de los PIR, un sensor
+     de temperatura y humedad, uno de fuga de agua, uno de vibración,
+     uno de rotura de cristal, uno de gas de combustión, contactos
+     magnéticos de puerta y ventana y cinco sensores de ocupación de
+     WATTSTOPPER, que no son de alarma sino de encendido de luces y van
+     a 120 V.
+
+     Lo que los juntaba era la primera palabra: la tabla mandaba a este
+     ítem todo lo que empezara por «Detector», «Sensor» o «Censor». Lo
+     que detecta lo dice el nombre en todos menos en tres, y es lo que
+     define la compra: un detector de humo no sustituye a uno de
+     movimiento ni por precio ni por función. */
+  'detector-alarma': {
+    cat: 'MAT-28', base: 'Detector', unidad: 'unidad',
+    ejes: ['deteccion', 'ubicacion'], etapa: 'instalaciones', orden: 31,
+    alias: 'detector, sensor de alarma'
+  },
+  'sensor-ocupacion': {
+    cat: 'MAT-10', base: 'Sensor de ocupación para iluminación', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 32,
+    alias: 'sensor de ocupación, apagado automático, WattStopper',
+    esp: 'Enciende y apaga luces · no es un detector de alarma'
   },
   'contacto-magnetico': {
     cat: 'MAT-28', base: 'Contacto magnético para puerta o ventana', unidad: 'unidad',

@@ -427,7 +427,7 @@ function reglaBano(a) {
   }
   if (/^ducha/.test(t)) {
     if (/telefono|de mano/.test(t)) return BANOS.item('ducha-telefono', {});
-    if (/columna|sistema/.test(t)) return BANOS.item('ducha-columna', {});
+    if (/columna|sistema/.test(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
     if (/brazo|cuello de ganso/.test(t)) return BANOS.item('ducha-brazo', {});
     MOTIVO.valor = 'la ficha no dice qué pieza de la ducha es';
     return null;

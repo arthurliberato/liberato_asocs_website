@@ -237,6 +237,15 @@ function regla(a) {
     const c = E.cabezalDeDucha(n + ' ' + T.limpia(a.ref));
     return E.item(c.familia, c.medidas);
   }
+  /* Y el juego de ducha: si es columna, barra sola, mezcladora sin
+     equipo o un mueble que entró por la palabra «columna». */
+  /* También la barra: la tabla manda aquí todo lo que diga «barra»,
+     «riel» o «desliza», y «DUCHA BARRA EXTER. CABEZA RED» es un juego
+     completo con su cabezal, no el riel suelto. Lo decide la tabla. */
+  if (f[1] === 'ducha-columna' || f[1] === 'ducha-barra') {
+    const c = E.juegoDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
   /* Y la cabina igual: si es recinto o vidrio, y de qué tamaño. */
   if (f[1] === 'cabina-ducha') {
     const c = E.cabinaDeDucha(n + ' ' + T.limpia(a.ref));

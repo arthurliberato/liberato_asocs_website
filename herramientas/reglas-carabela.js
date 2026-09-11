@@ -109,8 +109,8 @@ function regla(a) {
   /* La tienda la nombra de cuatro maneras —«Columna de Grifería Alexia»,
      «Columna Drako Ducha», «Columna Ducha Smart», «Columna Smart
      Termostática Ducha»— y todas son lo mismo. */
-  if (/^columna/.test(n) && /ducha|griferia|termostat/.test(t)) return BANOS.item('ducha-columna', {});
-  if (/^conjunto de ducha|^set de ducha/.test(n)) return BANOS.item('ducha-columna', {});
+  if (/^columna/.test(n) && /ducha|griferia|termostat/.test(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
+  if (/^conjunto de ducha|^set de ducha/.test(n)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/^ducha (telefono|de mano)|^teleducha/.test(n)) return BANOS.item('ducha-telefono', {});
   if (/^plato de ducha|^plato ducha/.test(n)) return BANOS.item('plato-ducha', {});
 

@@ -63,6 +63,7 @@ const NO_ES_DE_OBRA = [
   /^S[ií]mbolos/i,                    // material didáctico de prototipos
   /^Jumper Para Tiras De Pines/i,     // jumper de laboratorio, no de rack
   /^Divisor.*Hdmi/i, /^Conmutador 4K/i,   // distribución de video de consumo
+  /^Modulador/i,                          // cabecera de TV, no instalación del edificio
   /^Tablet/i,
   /^Extension Programador/i,              // programador de PIC, equipo de laboratorio
   /Ide Ultra|\bIde\b/i,                   // cable IDE: pieza de computadora
@@ -108,10 +109,27 @@ const FAMILIA = [
   [/^Pulsador.*(P[aá]nico|Alarma|Incendio)/i,      'estacion-manual'],
   [/^Detector.*(Humo|Calor|T[eé]rmico|Termico)/i,  'detector-incendio'],
   [/^Base Detector/i,                              'accesorio-incendio'],
-  [/^(Sirena|Bocina|Estrobo)/i,                    'sirena'],
+  /* «Bocina» aquí no es sirena. Las cuatro de TUTONDO —«BOCINA
+     ESFERICA MULTIPOSICION 2VIAS 120W», RD$ 39.917— son parlantes de
+     voceo y música ambiental, y entre las sirenas llevaban la partida
+     de RD$ 714 a RD$ 49.478. Van con los parlantes, más abajo. */
+  [/^(Sirena|Estrobo)/i,                           'sirena'],
 
   [/^(Central|Panel)/i,                            'panel-alarma'],
   [/^Teclado/i,                                    'teclado-alarma'],
+  /* Qué detecta, antes de dar por hecho que detecta movimiento. Ver la
+     nota de 'detector-alarma'. Lo específico primero, como siempre. */
+  [/pir ?cam/i,                                    'detector-alarma'],
+  [/^Detector(?:es)? De Salida/i,                      'detector-alarma'],
+  [/rotura de (cristal|vidrio)|glass ?break/i,     'detector-alarma'],
+  [/^(Detector|Sensor).*(Vibraci|Impacto|Flexion)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(\bGas\b|Combusti|Monoxido)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(Humedad|Temperatura|Temp\.)/i, 'detector-alarma'],
+  [/^(Detector|Sensor).*(Fuga|\bAgua\b)/i,         'detector-alarma'],
+  [/^(Detector|Sensor).*(Magnetico|Puerta Y Ventana|Apertura)/i, 'contacto-magnetico'],
+  /* WATTSTOPPER no vende alarmas: sus sensores encienden y apagan luces
+     y por eso traen el voltaje de la instalación en el nombre. */
+  [/^Sensor De Ocupaci|^Sensor .*\b(120|24)\s*V\b/i, 'sensor-ocupacion'],
   [/^(Detector|Sensor|Censor)/i,                   'detector-movimiento'],
   [/^Contacto/i,                                   'contacto-magnetico'],
   [/^(Control Acceso|Control De Acceso|Lector|Cerradura)|^Controlador (De )?(Acceso|Puerta)/i, 'control-acceso'],
@@ -122,9 +140,17 @@ const FAMILIA = [
   [/^(Patch|Panel De Conex)/i,                     'patch-panel'],
   [/^(Placa|Faceplate|Fp,)/i,                      'placa-pared'],
   [/^(Rack|Organizador|Tapa Ciega|Bandeja|Pasador|Manga|Distribuidor|Gabinete|Carril)/i, 'rack'],
-  [/^(Switch|Mini Switch|Extensor|Repetidor|Conversor|Bridge|Modulador|Wireless|Terminal|Homekit)/i, 'equipo-red'],
+  /* «Equipo de red» era otro cajón: trece cotizaciones con un terminal
+     RJ45 de 100 piezas, un modulador de TV, un botón inalámbrico de
+     AQARA, dos conversores de zonas de una alarma VESTA y dos hubs. De
+     switches de red, dos. Cada uno a lo suyo, y lo específico primero. */
+  [/^Terminal/i,                                   'conector-datos'],
+  [/^Mini Switch|^Switch Remoto/i,                 'interruptor-inteligente'],
+  [/^Bridge|Homekit/i,                             'hub-domotica'],
+  [/zonas cableadas|^Extensor \/ Repetidor Inalambrico|^Extensor Inalambrico/i, 'accesorio-alarma'],
+  [/^(Switch|Extensor|Repetidor|Conversor|Wireless)/i, 'equipo-red'],
   [/^(Fuente|Power|Transf|Injector|Inyector|Pdu|Regenerador|Capacitor)/i, 'alimentacion'],
-  [/^(Parlante|Amplificador|Altavoz|Anillo)|Plena/i,'sonido'],
+  [/^(Parlante|Amplificador|Altavoz|Anillo|Bocina)|Plena/i,'sonido'],
   [/^(Acoplador|Barril|Cople|Conector|Casquillo|Inserto|Tira|Decorator|Adaptador|Jumper|Plug|Mc\d|Utp )/i, 'conector-datos'],
 
   [/^(Interruptor|Interrupto|Int\.|Dimmer|Microfluxa|Shutter|Pulsador|Doble Pulsador|Boton|Disp\. Wifi)/i, 'interruptor-inteligente'],
@@ -279,6 +305,21 @@ function medidasDe(a, familia) {
     if (/inal[aá]mbric/i.test(n)) m.enlace = 'inalámbrico';
   }
 
+  if (familia === 'detector-movimiento' || familia === 'detector-alarma') {
+    if (/exterior/i.test(n)) m.ubicacion = 'exterior';
+    else if (/interior/i.test(n)) m.ubicacion = 'interior';
+  }
+
+  if (familia === 'detector-alarma') {
+    if (/pir ?cam/i.test(n)) m.deteccion = 'movimiento con cámara';
+    else if (/^detectores? de salida/i.test(n)) m.deteccion = 'salida';
+    else if (/rotura de (cristal|vidrio)|glass ?break/i.test(n)) m.deteccion = 'rotura de cristal';
+    else if (/vibraci|impacto|flexion/i.test(n)) m.deteccion = 'vibración';
+    else if (/\bgas\b|combusti|monoxido/i.test(n)) m.deteccion = 'gas';
+    else if (/fuga|\bagua\b/i.test(n)) m.deteccion = 'fuga de agua';
+    else if (/humedad|temperatura|temp\./i.test(n)) m.deteccion = 'temperatura y humedad';
+  }
+
   if (familia === 'detector-incendio') {
     if (/humo/i.test(n) && /calor|t[eé]rmico/i.test(n)) m.deteccion = 'humo y calor';
     else if (/humo/i.test(n)) m.deteccion = 'humo';
@@ -309,7 +350,9 @@ function medidasDe(a, familia) {
   }
 
   if (familia === 'patch-panel' || familia === 'placa-pared' || familia === 'equipo-red') {
-    const p = n.match(/(\d+)[\s-]*(?:puertos?|port|po\b)/i);
+    /* «24 PUERTO», «48 PORT» y también «24POE», que es como DAHUA
+       escribe los veinticuatro puertos con alimentación. */
+    const p = n.match(/(\d+)[\s-]*(?:puertos?|port|poe\b|po\b)/i);
     if (p) m.puertos = num(p[1]);
   }
 

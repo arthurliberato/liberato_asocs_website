@@ -155,7 +155,11 @@ function reglaComplemento(a) {
     const e = String(a.medida || t).match(/(\d+(?:\.\d+)?)\s*mm/i);
     if (!e) { MOTIVO.valor = 'la ficha no declara el espesor de junta del nivelador'; return null; }
     const pieza = /cuna/.test(t) ? 'cuna' : /calzo/.test(t) ? 'calzo' : 'clip';
-    return BALDOSAS.item('nivelador-ceramica', { pieza: pieza, espesor_mm: parseFloat(e[1]) });
+    /* Cuántos trae la funda, igual que en la cruceta de arriba. */
+    const q = String(a.presentacion || a.nombre).match(/(\d+)\s*\/\s*1/);
+    return BALDOSAS.item('nivelador-ceramica', {
+      pieza: pieza, espesor_mm: parseFloat(e[1]), piezas: q ? parseInt(q[1], 10) : ''
+    });
   }
 
   if (/^perfil|^remate|^junta/.test(t)) {
@@ -261,7 +265,7 @@ function reglaBano(a) {
   if (/^orinal|^urinario/.test(t)) return BANOS.item('urinario', {});
   if (/^asiento/.test(t)) { MOTIVO.valor = 'repuesto de consumidor, no partida de obra'; return null; }
   if (/^pulsador|^bastidor|^kit/.test(t)) { MOTIVO.valor = 'mecanismo interno del aparato; se compra con él, no aparte'; return null; }
-  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
+  if (BANOS.esJuegoDeDucha(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   MOTIVO.valor = 'aparato sanitario que la ficha no describe lo bastante';
   return null;
 }
@@ -273,7 +277,7 @@ function reglaGriferia(a) {
     const c = BANOS.cabezalDeDucha(t);
     return BANOS.item(c.familia, c.medidas);
   }
-  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
+  if (BANOS.esJuegoDeDucha(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/^valvula|^vlvula|^fluxometro|^maneral|^sensor|^llave de paso/.test(t)) {
     MOTIVO.valor = 'pieza de grifería que el catálogo no tiene como partida propia';
     return null;

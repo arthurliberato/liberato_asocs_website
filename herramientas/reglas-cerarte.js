@@ -213,7 +213,11 @@ function reglaNivelador(a) {
   const esp = me ? parseFloat(me[1]) : null;
   if (!esp) { MOTIVO.valor = 'la ficha no declara el espesor de junta del nivelador'; return null; }
   const pieza = /tirante|clip|correa/.test(t) ? 'clip' : /cuna/.test(t) ? 'cuna' : 'calzo';
-  return BALDOSAS.item('nivelador-ceramica', { pieza: pieza, espesor_mm: esp });
+  /* Cuántos trae la funda, igual que en el separador de arriba. */
+  const q = String(a.nombre).match(/(\d+)\s*\/\s*1\b/);
+  return BALDOSAS.item('nivelador-ceramica', {
+    pieza: pieza, espesor_mm: esp, piezas: q ? parseInt(q[1], 10) : ''
+  });
 }
 
 function reglaZocalo(a) {
@@ -308,7 +312,7 @@ function reglaDucha(a) {
      Va ANTES que la mezcladora, y ahí estaba el fallo: un sistema con
      termostato casaba con «termostat» y se archivaba como la válvula
      suelta, que cuesta tres veces menos. Ver esJuegoDeDucha(). */
-  if (BANOS.esJuegoDeDucha(t)) return BANOS.item('ducha-columna', {});
+  if (BANOS.esJuegoDeDucha(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/mezclador|valvula de ducha|termostat|termostic/.test(t)) {
     if (/banera|bañera/.test(t)) return BANOS.item('mezcladora', { uso: 'bano', activacion: 'manual' });
     return BANOS.item('ducha-mezcladora', {});

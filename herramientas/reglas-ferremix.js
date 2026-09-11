@@ -289,7 +289,7 @@ function reglaBano(a) {
   }
   if (/ducha telefono|ducha de mano|regadera de mano/.test(t)) return BANOS.item('ducha-telefono', {});
   if (/brazo (de|para) ducha|cuello de ganso/.test(t)) return BANOS.item('ducha-brazo', {});
-  if (/columna de ducha|sistema de ducha/.test(t)) return BANOS.item('ducha-columna', {});
+  if (/columna de ducha|sistema de ducha/.test(t)) return (function () { const c = BANOS.juegoDeDucha(t); return BANOS.item(c.familia, c.medidas); })();
   if (/manguera (de|para) ducha/.test(t)) return BANOS.item('ducha-manguera', {});
 
   if (/inodoro|sanitario de loza|taza de bano/.test(t)) {
