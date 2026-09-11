@@ -1144,52 +1144,55 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    justo el dato que se está mirando cuando se decide si entrar a la
    tienda. Taparlo con los botones era pedir la decisión y esconder el
    número con el que se toma. */
-.ir-acciones { display: none; }
+/* La clase «ir-tactil» la pone interiorismo.js en <html> según el gesto
+   —dedo o ratón— y no según la pantalla: el iPad y los portátiles con
+   pantalla táctil contestan que sí tienen hover, así que «(hover: none)»
+   los dejaba fuera y en ellos el primer toque seguía saliendo a la
+   tienda. Se llama «ir-tocar» y no «ir-acciones» porque ese nombre ya es
+   el del pie del panel lateral. */
+.ir-tocar { display: none; }
 
-@media (hover: none) {
-  /* Con el dedo no hay hover, así que el marcador de la esquina no se
-     puede descubrir: su sitio es el panel que se abre al tocar. */
-  .ir-guardar { display: none; }
+.ir-tactil .ir-guardar { display: none; }
 
-  .ir-card.is-abierta .ir-acciones {
-    position: absolute;
-    z-index: 3;
-    left: .35rem;
-    right: .35rem;
-    /* Pegado al borde de abajo de la foto, que es cuadrada. */
-    top: .35rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: .35rem;
-    aspect-ratio: 1 / 1;
-    padding: .35rem;
-    border-radius: var(--r-sm);
-    background: linear-gradient(to bottom, rgba(27, 30, 23, .72) 55%, rgba(27, 30, 23, 0));
-  }
-  .ir-acc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .35rem;
-    min-height: 2.5rem;
-    padding: 0 .5rem;
-    border: 0;
-    border-radius: var(--r-sm);
-    font: inherit;
-    font-size: .82rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    background: rgba(248, 246, 238, .95);
-    color: var(--verde-900);
-  }
-  .ir-acc svg { width: 15px; height: 15px; flex: none; }
-  .ir-acc-guardar.is-on { background: var(--ambar); }
-  .ir-acc-guardar.is-on svg { fill: currentColor; }
-  .ir-acc-ver { background: var(--verde); color: #fff; }
+.ir-tactil .ir-card.is-abierta .ir-tocar {
+  position: absolute;
+  z-index: 3;
+  top: .35rem;
+  left: .35rem;
+  right: .35rem;
+  /* La foto es cuadrada: el panel la cubre entera y los botones se
+     apoyan arriba, dejando el recuadro del precio a la vista abajo. */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: .35rem;
+  padding: .35rem;
+  border-radius: var(--r-sm);
+  background: linear-gradient(to bottom, rgba(27, 30, 23, .72) 55%, rgba(27, 30, 23, 0));
 }
+.ir-acc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  min-height: 2.5rem;
+  padding: 0 .5rem;
+  border: 0;
+  border-radius: var(--r-sm);
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(248, 246, 238, .95);
+  color: var(--verde-900);
+}
+.ir-acc svg { width: 15px; height: 15px; flex: none; }
+.ir-acc-guardar.is-on { background: var(--ambar); }
+.ir-acc-guardar.is-on svg { fill: currentColor; }
+.ir-acc-ver { background: var(--verde); color: #fff; }
 
 /* Cada pieza guardada, dentro del panel. */
 .ir-sel {

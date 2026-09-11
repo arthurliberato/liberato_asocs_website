@@ -282,12 +282,46 @@
     return tarjeta;
   }
 
-  /* Si el dispositivo no tiene hover, el dedo es el puntero. Se pregunta
-     cada vez y no una sola: hay tabletas con teclado y ventanas que se
-     arrastran de una pantalla a otra. */
-  function esTactil() {
-    return window.matchMedia && window.matchMedia('(hover: none)').matches;
+  /* QUIÉN DECIDE SI ESTO ES UN DEDO O UN RATÓN
+
+     La primera versión preguntaba «(hover: none)» y no basta. El iPad
+     con Safari contesta que SÍ tiene hover —emula un puntero—, y los
+     portátiles con pantalla táctil, igual. En esos, el primer toque se
+     iba a la tienda como antes: la consulta de medios describe la
+     pantalla, no el gesto.
+
+     Lo que manda es el gesto, y el navegador lo dice en cada evento:
+     'touch', 'pen' o 'mouse'. Se escucha en captura y en pointerdown y
+     touchstart, que ocurren los dos ANTES del clic, así que el primer
+     toque ya llega con el modo puesto. Y cambia si se cambia: la misma
+     tableta con el teclado y el ratón encima vuelve a abrir la tienda de
+     un clic.
+
+     La clase va en <html> porque el CSS necesita lo mismo: cuál de los
+     dos botones se enseña no lo puede decidir «(hover: none)» por la
+     misma razón. */
+  var tactil = !!(window.matchMedia && window.matchMedia('(hover: none)').matches);
+  modoPuntero(tactil ? 'touch' : 'mouse');
+
+  function modoPuntero(tipo) {
+    var t = tipo === 'touch' || tipo === 'pen';
+    if (t === tactil && document.documentElement.classList.contains('ir-tactil') === t) return;
+    tactil = t;
+    document.documentElement.classList.toggle('ir-tactil', t);
+    /* Al pasar de dedo a ratón, una ficha abierta se queda con los dos
+       botones puestos y sin manera de cerrarlos. */
+    if (!t) cerrarFichas();
   }
+
+  document.addEventListener('pointerdown', function (e) {
+    if (e.pointerType) modoPuntero(e.pointerType);
+  }, true);
+  /* Para los navegadores que todavía no mandan eventos de puntero. */
+  document.addEventListener('touchstart', function () {
+    modoPuntero('touch');
+  }, { passive: true, capture: true });
+
+  function esTactil() { return tactil; }
 
   function cerrarFichas() {
     [].forEach.call(document.querySelectorAll('.ir-card.is-abierta'), function (c) {
@@ -299,7 +333,7 @@
      sus letras porque aquí hay sitio, y el de salir a la tienda. */
   function acciones(v, href) {
     var caja = document.createElement('div');
-    caja.className = 'ir-acciones';
+    caja.className = 'ir-tocar';
 
     var g = document.createElement('button');
     g.type = 'button';
