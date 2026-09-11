@@ -59,7 +59,7 @@ const cats = CAT.categorias
   .map(c => ({ codigo: c.codigo, nombre: c.nombre, slug: c.slug, n: MAN.cat[c.codigo].n }))
   .sort((a, b) => b.n - a.n);
 
-const comercios = MAN.com.slice().sort((a, b) => a.localeCompare(b));
+const comercios = MAN.com.slice();
 const TOTAL = MAN.total;
 
 const esc = s => String(s)
@@ -77,7 +77,15 @@ const pastillas = cats.map(c =>
   `${esc(c.nombre)}<span class="ir-chip-n">${c.n}</span></button>`
 ).join('\n          ');
 
-const opciones = comercios.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('\n            ');
+/* El valor es el nombre completo, que es con el que viaja el dato; lo que
+   se lee es el corto, igual que en la tabla y que en el recuadro sobre la
+   foto. Que las tres vistas nombren al comercio de la misma manera. */
+const corto = (n) => String(n).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
+/* Se ordena por el nombre corto, que es el que se lee: alfabetizar por
+   «Ferretería Ochoa (8A)» y mostrar «Ochoa» deja la lista descolocada. */
+const opciones = comercios.slice()
+  .sort((a, b) => corto(a).localeCompare(corto(b), 'es'))
+  .map(c => `<option value="${esc(c)}">${esc(corto(c))}</option>`).join('\n            ');
 
 const html = `<!DOCTYPE html>
 <html lang="es-DO">

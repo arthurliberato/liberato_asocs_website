@@ -52,6 +52,11 @@
   var lista = [], pintados = 0, cargandoTodo = false;
 
   function money(n) { return 'RD$ ' + Math.round(n).toLocaleString('en-US'); }
+  /* Misma regla que la tabla de precios: sin el paréntesis de la razón
+     social y sin el «Ferretería» de delante. */
+  function corto(nombre) {
+    return String(nombre).replace(/\s*\([^)]*\)\s*/g, '').replace(/^Ferreter[ií]a\s+/i, '').trim();
+  }
   function baja(s) {
     return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   }
@@ -189,7 +194,10 @@
     var chip = document.createElement('span');
     chip.className = 'ir-precio';
     chip.innerHTML = '<b>' + money(v.p) + '</b><i></i>';
-    chip.querySelector('i').textContent = v.c;
+    /* El nombre corto del comercio, igual que en la tabla: en un recuadro
+       de cuatro centímetros sobre la foto, «Ferretería Ochoa (8A)» no cabe
+       y no dice nada que «Ochoa» no diga. El completo queda en el title. */
+    chip.querySelector('i').textContent = corto(v.c);
     marco.appendChild(chip);
     a.appendChild(marco);
 

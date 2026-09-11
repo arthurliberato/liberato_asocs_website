@@ -971,6 +971,12 @@ const BANOS = require('./reglas-banos.js');
 const SEGTEC = require('./reglas-segtec.js');
 const INNOVA = require('./reglas-innovacentro.js');
 const BALDOSAS = require('./reglas-baldosas.js');
+
+/* Los códigos que trae la extracción de baldosas del 11/09, para que la
+   del 09/09 solo aporte lo que aquella dejó fuera. Ver FUENTES. */
+const CUBIERTOS_11 = new Set(
+  require('./datos-externos/ochoa-baldosas-2026-09-11.json').map(a => a.codigo)
+);
 const CIMA = require('./reglas-cima.js');
 const MAX = require('./reglas-max.js');
 const MAXELEC = require('./reglas-max-electricos.js');
@@ -1023,12 +1029,24 @@ const FUENTES = [
     mapeo: {},
     regla: a => SEGTEC.regla(a) || null
   },
+  /* LAS DOS EXTRACCIONES DE BALDOSAS
+     La del 11/09 trae foto de cada artículo —lo que faltaba para que los
+     pisos se pudieran mirar en el explorador— y además separa los campos
+     de la ficha con « | », de modo que se leen bien: en la del 09/09 las
+     claves venían pegadas al valor anterior y 447 fichas quedaban mal
+     partidas, con el material y el uso mezclados en un mismo campo.
+
+     Pero deja fuera 157 artículos de «Terminación Baldosas»: las
+     crucetas, los niveladores, los perfiles de canto, los adhesivos y la
+     herramienta de instalación. Esos 75 ítems no se pierden, siguen
+     saliendo de la extracción anterior: la del 09/09 se queda, limitada a
+     lo que la nueva ya no cubre. */
   {
-    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
+    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-11.json'),
     etiqueta: 'Ochoa · baldosas',
     proveedor: 'Ferretería Ochoa (8A)',
     constante: 'PROV_OCHOA',
-    fecha: '2026-09-09',
+    fecha: '2026-09-11',
     motivo: 'la ficha no declara la especificación',
     motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
     mapeo: {},
@@ -1037,6 +1055,25 @@ const FUENTES = [
        pavimentos que no es de este rubro y no tiene por qué contarse como
        algo que se dejó fuera. */
     regla: a => { const r = BALDOSAS.regla(a); return r === undefined ? undefined : (r || null); }
+  },
+  {
+    archivo: path.join(__dirname, 'datos-externos/ochoa-baldosas-2026-09-09.json'),
+    etiqueta: 'Ochoa · terminación de baldosas',
+    proveedor: 'Ferretería Ochoa (8A)',
+    constante: 'PROV_OCHOA',
+    fecha: '2026-09-09',
+    motivo: 'la ficha no declara la especificación',
+    motivoDe: () => BALDOSAS.MOTIVO.valor || 'la ficha no declara la especificación',
+    mapeo: {},
+    /* Lo que la extracción del 11/09 ya trae no se vuelve a leer aquí: se
+       devuelve undefined, que es «no es de esta fuente» y no cuenta como
+       descarte. Si no, cada baldosa entraría dos veces, con dos precios del
+       mismo comercio y dos fechas. */
+    regla: a => {
+      if (CUBIERTOS_11.has(a.codigo)) return undefined;
+      const r = BALDOSAS.regla(a);
+      return r === undefined ? undefined : (r || null);
+    }
   },
   {
     archivo: path.join(__dirname, 'datos-externos/innovacentro-2026-09-09.json'),
@@ -1770,12 +1807,10 @@ if (faltan.length) {
 
 function escribirVisual() {
   /* El ámbito se pregunta ÍTEM POR ÍTEM, no por su categoría, y esa
-     distinción no es cosmética. «Pisos y revestimientos» es de los dos
-     ámbitos, pero dentro lleva sesenta y dos consumibles de instalación
-     —crucetas, calzos, clips, juntas de dilatación— que el catálogo saca de
-     interiorismo uno por uno con sus propias reglas. Preguntando por la
-     categoría, un «Clips-Calzo Espesorado 2mm» terminaba entre las lámparas
-     y los mármoles.
+     distinción no es cosmética: hay categorías de los dos ámbitos donde el
+     catálogo saca ítems sueltos de interiorismo con sus propias reglas —el
+     cable y el breaker dentro de eléctricos, la bomba dentro de plomería—.
+     Preguntando por la categoría terminaban entre las lámparas.
 
      Por eso esto se calcula DESPUÉS de escribir el catálogo: recargándolo se
      obtienen los ítems ya con su ámbito resuelto, en vez de repetir aquí las
@@ -1793,6 +1828,16 @@ function escribirVisual() {
     global.window = antes;
   }());
 
+  /* Un comercio publica en mayúsculas y los demás no. En una cuadrícula de
+     fotos, donde el nombre va debajo de cada una, esa tienda grita y parece
+     un error de la página. Se pasa a caja de título solo cuando el nombre
+     viene ENTERO en mayúsculas —si trae una sola minúscula se respeta tal
+     cual— y se dejan intactas las siglas y los números. */
+  const SIGLAS = /^(PVC|CPVC|PPR|PP|LED|WPC|MDF|HG|SDR|UV|IP|USB|RGB|CCT|AT|MT|CM|MM|HD|XL|SL|LX|II|III)$/;
+  const caja = n => /[a-záéíóúüñ]/.test(n) ? n
+    : n.replace(/[A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ']*/g, p =>
+        SIGLAS.test(p) ? p : p.charAt(0) + p.slice(1).toLowerCase());
+
   const filas = [];
   const vistos = {};
   const anota = (a, codigoItem, cat) => {
@@ -1804,7 +1849,7 @@ function escribirVisual() {
     if (vistos[clave]) return;
     vistos[clave] = 1;
     filas.push({
-      n: limpia(a.nombre).slice(0, 90),
+      n: caja(limpia(a.nombre)).slice(0, 90),
       img: img,
       p: Math.round(precioUnidad(a) * (f.moneda === 'USD' ? TASA_USD : 1)),
       c: f.proveedor,
@@ -1821,8 +1866,18 @@ function escribirVisual() {
      comercios, para que las primeras pantallas no parezcan una sola tienda.
      Se fija AQUÍ y no en el navegador porque de este orden dependen las
      páginas: la número 3 tiene que traer siempre los mismos artículos. */
+  /* El turno se cuenta por comercio Y categoría, no por comercio a secas.
+     Contándolo global, un comercio que ya gastó cuatrocientos turnos en las
+     lámparas entraba en los pisos con el turno 400, detrás de los primeros
+     cuatrocientos del comercio que llega con el contador en cero: la
+     categoría abría con una sola tienda, que es justo lo que el intercalado
+     existe para evitar. */
   const turno = {};
-  filas.forEach(v => { turno[v.c] = (turno[v.c] || 0); v._t = turno[v.c]++; });
+  filas.forEach(v => {
+    const k = v.c + '|' + v.k;
+    turno[k] = (turno[k] || 0);
+    v._t = turno[k]++;
+  });
   filas.sort((a, b) =>
     (ordenCat[a.k] - ordenCat[b.k]) || (a._t - b._t) || a.n.localeCompare(b.n));
 

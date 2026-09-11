@@ -253,168 +253,162 @@
   });
 
   /* Ochoa · baldosas */
+  c('MAT-08-003', PROV_OCHOA, 528.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-liso-ivory-01095168',
+    nota: 'BALDOSA CERÁMICA PORC. LISO IVORY · artículo 01-09-5168 · ref. 60X602.77MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 190.87 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 842.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-blanca-01097657',
+    peso: 2,
+    nota: 'BALDOSA PORCELÁNICA BLANCA · artículo 01-09-7657 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 303.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1093.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-milton-beige-01098052',
+    nota: 'BALDOSA CERÁMICA PORC MILTON BEIGE · artículo 01-09-8052 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 394.77 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1106.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-milton-perla-01098053',
+    nota: 'BALDOSA PORCELÁNICA MILTON PERLA · artículo 01-09-8053 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 399.43 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 727.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-crema-lisa-01098708',
+    nota: 'BALDOSA PORCELÁNICA CREMA LISA · artículo 01-09-8708 · ref. 60X602.77MT2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 262.79 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 681.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-super-white-brillo-blanco-liso-01099278',
+    nota: 'PORC. SUPER WHITE BRILLO (BLANCO LISO) · artículo 01-09-9278 · ref. 60X602.77MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 245.98 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 944.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-perla-01098167',
+    nota: 'BALDOSA PORCELÁNICA PERLA · artículo 01-09-8167 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 340.82 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 802.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-gris-marmoleado-piatra-grey-9199-01099022',
+    nota: 'PORC. GRIS MARMOLEADO (PIATRA GREY 9199) · artículo 01-09-9022 · ref. 60X602.77MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 289.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 616.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-ivory-01098882',
+    nota: 'BALDOSA PORCELÁNICA IVORY · artículo 01-09-8882 · ref. 60X602.77MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 222.55 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1279.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-beige-01097208',
+    nota: 'BALDOSA PORCELÁNICA MARSELLA BEIGE · artículo 01-09-7208 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1030.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-naos-brillo-01099207',
+    nota: 'BALDOSA PORCELÁNICA NAOS BRILLO · artículo 01-09-9207 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 377.59 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1312.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-perla-01097209',
+    nota: 'BALDOSA PORCELÁNICA MARSELLA PERLA · artículo 01-09-7209 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 473.68 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1024.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-naos-gold-01099208',
+    nota: 'BALDOSA PORCELÁNICA NAOS GOLD · artículo 01-09-9208 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 375.43 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1790.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-origin-graphite-01099200',
+    nota: 'BALDOSA PORCELÁNICA ORIGIN GRAPHITE · artículo 01-09-9200 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 646.56 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 588.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-bk-crema-marfil-brillo-01099281',
+    nota: 'PORC. BK CREMA MARFIL BRILLO · artículo 01-09-9281 · ref. 60X602.77MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 212.48 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1485.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-eaton-ash-01098473',
+    nota: 'BALDOSA PORCELÁNICA EATON ASH · artículo 01-09-8473 · ref. 60.8X60.82.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 550.13 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-001', PROV_OCHOA, 764.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-esmeralda-01099156',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA L. BÁVARO ESMERALDA · artículo 01-09-9156 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 84.77 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-001', PROV_OCHOA, 752, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-2-azul-01099153',
+    nota: 'BALDOSA CERÁMICA L. BÁVARO 2 AZUL · artículo 01-09-9153 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 83.37 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 2113.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essence-marfil-01099201',
+    nota: 'BALDOSA CERÁMICA ESSENCE MARFIL · artículo 01-09-9201 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 763.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1508.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hendaya-haya-01098095',
+    nota: 'BALDOSA AT HENDAYA HAYA · artículo 01-09-8095 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 558.77 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1721.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-majestic-gris-01098027',
+    nota: 'BALDOSA PORCELÁNICA MAJESTIC GRIS · artículo 01-09-8027 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 637.72 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1874.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-eaton-pearl-01098471',
+    nota: 'BALDOSA PORCELÁNICA EATON PEARL · artículo 01-09-8471 · ref. 60.8X60.82.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 694.43 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 964.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-milton-crema-01098550',
+    nota: 'BALDOSA PORCELÁNICA MILTON CREMA · artículo 01-09-8550 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1838.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-desert-natural-01097918',
+    nota: 'BALDOSA PORCELÁNICA DESERT NATURAL · artículo 01-09-7918 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 663.71 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1180.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-at-versilia-marfil-01098557',
+    nota: 'BALDOSA CERÁMICA PORC. AT. VERSILIA MARFIL · artículo 01-09-8557 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 426.04 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1279.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hungary-beige-01098098',
+    nota: 'BALDOSA AT HUNGARY BEIGE · artículo 01-09-8098 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 474.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1445.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hungary-gris-01098097',
+    nota: 'BALDOSA AT HUNGARY GRIS · artículo 01-09-8097 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 535.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1400.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-marengo-01097703',
+    nota: 'BALDOSA PORCELÁNICA MARSELLA MARENGO · artículo 01-09-7703 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 505.55 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 950.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-nival-gris-brillo-01097731',
+    nota: 'BALDOSA PORCELÁNICA NIVAL GRIS BRILLO · artículo 01-09-7731 · ref. 60.5X60.52.73MT · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 571.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-arencio-soluble-salt-01098945',
+    nota: 'BALDOSA CERÁMICA PORC ARENCIO SOLUBLE SALT · artículo 01-09-8945 · ref. 60X602.77MT/2. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 206.26 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1382.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-crema-01098549',
+    nota: 'BALDOSA PORCELÁNICA CREMA · artículo 01-09-8549 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 499.06 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-003', PROV_OCHOA, 1096.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-beige-01094105',
+    nota: 'BALDOSA PORCELÁNICA MANHATTAN BEIGE · artículo 01-09-4105 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 395.76 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-002', PROV_OCHOA, 1306.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origami-blanco-01096482',
+    nota: 'BALDOSA CERÁMICA ORIGAMI BLANCO · artículo 01-09-6482 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 130.65 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-002', PROV_OCHOA, 1134.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-albar-blanco-mate-01096796',
+    nota: 'BALDOSA ALBAR BLANCO MATE · artículo 01-09-6796 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 113.41 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-002', PROV_OCHOA, 1266.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-flisat-blanco-01096798',
+    nota: 'BALDOSA CERÁMICA FLISAT BLANCO · artículo 01-09-6798 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 126.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+
+  /* Ochoa · terminación de baldosas */
   c('MAT-02-009', PROV_OCHOA, 346.09, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/readymix-normal-mezcla-lista-p-panete-04590198',
     nota: 'Readymix Normal (Mezcla Lista P / Panete) · artículo 04-59-0198 · ref. 101-002494LBS · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 528.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-liso-ivory-01095168',
-    nota: 'Baldosa Cerámica Porc. Liso Ivory · artículo 01-09-5168 · ref. 60X602.77MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 190.87 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-02-013', PROV_OCHOA, 323.12, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/eurojunta-5kg-derretido-p-ceramica-01096522',
     peso: 16,
     nota: 'Eurojunta 5Kg ( Derretido P / Ceramica) · artículo 01-09-6522 · ref. BLANCO · marca MORTEROS EUROPA. El comercio lista 16 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 16 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-003', PROV_OCHOA, 842.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-blanca-01097657',
-    peso: 2,
-    nota: 'Baldosa Porcelánica Blanca · artículo 01-09-7657 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 303.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
   c('MAT-02-007', PROV_OCHOA, 554.28, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adhesivo-cementicio-pegacol-blanco-04590147',
     nota: 'Adhesivo Cementicio Pegacol Blanco · artículo 04-59-0147 · ref. 20KG80F/PAL · marca MORTEROS EUROPA. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1093.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-milton-beige-01098052',
-    nota: 'Baldosa Cerámica Porc Milton Beige · artículo 01-09-8052 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 394.77 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1106.42, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-milton-perla-01098053',
-    nota: 'Baldosa Porcelánica Milton Perla · artículo 01-09-8053 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 399.43 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 727.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-crema-lisa-01098708',
-    nota: 'Baldosa Porcelánica Crema Lisa · artículo 01-09-8708 · ref. 60X602.77MT2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 262.79 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 681.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-super-white-brillo-blanco-liso-01099278',
-    nota: 'Porc. Super White Brillo (Blanco Liso) · artículo 01-09-9278 · ref. 60X602.77MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 245.98 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 944.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-perla-01098167',
-    nota: 'Baldosa Porcelánica Perla · artículo 01-09-8167 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 340.82 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 802.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-gris-marmoleado-piatra-grey-9199-01099022',
-    nota: 'Porc. Gris Marmoleado (Piatra Grey 9199) · artículo 01-09-9022 · ref. 60X602.77MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 289.67 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 616.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-ivory-01098882',
-    nota: 'Baldosa Porcelánica Ivory · artículo 01-09-8882 · ref. 60X602.77MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 222.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1279.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-beige-01097208',
-    nota: 'Baldosa Porcelánica Marsella Beige · artículo 01-09-7208 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1030.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-naos-brillo-01099207',
-    nota: 'Baldosa Porcelánica Naos Brillo · artículo 01-09-9207 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 377.59 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1312.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-perla-01097209',
-    nota: 'Baldosa Porcelánica Marsella Perla · artículo 01-09-7209 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 473.68 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1024.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-naos-gold-01099208',
-    nota: 'Baldosa Porcelánica Naos Gold · artículo 01-09-9208 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 375.43 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1790.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-origin-graphite-01099200',
-    nota: 'Baldosa Porcelánica Origin Graphite · artículo 01-09-9200 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 646.56 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 588.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-bk-crema-marfil-brillo-01099281',
-    nota: 'Porc. Bk Crema Marfil Brillo · artículo 01-09-9281 · ref. 60X602.77MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 212.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1485.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-eaton-ash-01098473',
-    nota: 'Baldosa Porcelánica Eaton Ash · artículo 01-09-8473 · ref. 60.8X60.82.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 550.13 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-001', PROV_OCHOA, 764.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-esmeralda-01099156',
-    peso: 2,
-    nota: 'Baldosa Cerámica L. Bávaro Esmeralda · artículo 01-09-9156 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 84.77 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-001', PROV_OCHOA, 752, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-l-bavaro-2-azul-01099153',
-    nota: 'Baldosa Cerámica L. Bávaro 2 Azul · artículo 01-09-9153 · ref. 33.3X33.39.02MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 83.37 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 2113.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essence-marfil-01099201',
-    nota: 'Baldosa Cerámica Essence Marfil · artículo 01-09-9201 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 763.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-001', PROV_OCHOA, 1267.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-barbados-aqua-01098469',
-    nota: 'Baldosa Cerámica Barbados Aqua · artículo 01-09-8469 · ref. 33.3X33.39.02MT/2 · marca PAMESA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 140.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-002', PROV_OCHOA, 1306.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origami-blanco-01096482',
-    nota: 'Baldosa Cerámica Origami Blanco · artículo 01-09-6482 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 130.65 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-002', PROV_OCHOA, 1134.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-albar-blanco-mate-01096796',
-    nota: 'Baldosa Albar Blanco Mate · artículo 01-09-6796 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 113.41 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1508.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hendaya-haya-01098095',
-    nota: 'Baldosa At Hendaya Haya · artículo 01-09-8095 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 558.77 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1721.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-majestic-gris-01098027',
-    nota: 'Baldosa Porcelánica Majestic Gris · artículo 01-09-8027 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 637.72 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-002', PROV_OCHOA, 1266.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-flisat-blanco-01096798',
-    nota: 'Baldosa Cerámica Flisat Blanco · artículo 01-09-6798 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 126.67 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1874.96, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-eaton-pearl-01098471',
-    nota: 'Baldosa Porcelánica Eaton Pearl · artículo 01-09-8471 · ref. 60.8X60.82.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 694.43 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 964.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-milton-crema-01098550',
-    nota: 'Baldosa Porcelánica Milton Crema · artículo 01-09-8550 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1838.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-desert-natural-01097918',
-    nota: 'Baldosa Porcelánica Desert Natural · artículo 01-09-7918 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 663.71 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1180.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-at-versilia-marfil-01098557',
-    nota: 'Baldosa Cerámica Porc. At. Versilia Marfil · artículo 01-09-8557 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 426.04 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1175.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-albur-gris-01098740',
-    nota: 'Baldosa Cerámica Albur Gris · artículo 01-09-8740 · ref. 60.8X60.82.70MT2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 435.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1279.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hungary-beige-01098098',
-    nota: 'Baldosa At Hungary Beige · artículo 01-09-8098 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 474.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1445.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-hungary-gris-01098097',
-    nota: 'Baldosa At Hungary Gris · artículo 01-09-8097 · ref. 60.8X60.82.70MT/ · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 535.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1400.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marsella-marengo-01097703',
-    nota: 'Baldosa Porcelánica Marsella Marengo · artículo 01-09-7703 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 505.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 950.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-nival-gris-brillo-01097731',
-    nota: 'Baldosa Porcelánica Nival Gris Brillo · artículo 01-09-7731 · ref. 60.5X60.52.73MT · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 571.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-arencio-soluble-salt-01098945',
-    nota: 'Baldosa Cerámica Porc Arencio Soluble Salt · artículo 01-09-8945 · ref. 60X602.77MT/2. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 206.26 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1382.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-crema-01098549',
-    nota: 'Baldosa Porcelánica Crema · artículo 01-09-8549 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 499.06 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-003', PROV_OCHOA, 1096.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-beige-01094105',
-    nota: 'Baldosa Porcelánica Manhattan Beige · artículo 01-09-4105 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 395.76 por pieza). ' + SUPUESTO_ITBIS
   });
 
   /* InnovaCentro · materiales de construcción */
@@ -585,7 +579,7 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/cemento-blanco-5lb',
     nota: 'CEMENTO BLANCO 5LB · artículo 7465710056021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-249', PROV_CIMA, 330, {
+  c('MAT-08-250', PROV_CIMA, 330, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cer-1-5mm-300-1-2913',
     peso: 2,
     nota: 'SEPARADOR CER 1.5MM 300/1 2912 · artículo 8413797269918. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
@@ -611,15 +605,15 @@
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/yeso-2lb',
     nota: 'YESO 2LB · artículo 7465710056045. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-259', PROV_CIMA, 390, {
+  c('MAT-08-260', PROV_CIMA, 390, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-5mm-100-1-2903',
     nota: 'SEPARADOR CERA 5MM 100/1 2903 · artículo 8413797029031. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-256', PROV_CIMA, 340, {
+  c('MAT-08-257', PROV_CIMA, 340, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-3mm-200-1-2902',
     nota: 'SEPARADOR CERA 3MM 200/1 2902 · artículo 8413797029024. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-249', PROV_CIMA, 165, {
+  c('MAT-08-250', PROV_CIMA, 165, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/separador-cera-1-5mm-300-1-602',
     nota: 'SEPARADOR CERA 1.5MM 300/1 602 · artículo 7897451462739. ' + SUPUESTO_ITBIS
   });
@@ -2249,58 +2243,58 @@
     nota: 'Plancha De Zinc Acanalado C-34 · artículo 04-77-0095 · ref. C-343X12 · marca METALDOM. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-015', PROV_OCHOA, 1896.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-acero-gravi-16-1-2-x52-01092135',
-    nota: 'Teja Acero Gravi 16-1 / 2\'\'X52\'\' · artículo 01-09-2135 · ref. TERRACOTA2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 948.26 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-acero-gravi-16-1-2-x52-01092135',
+    nota: 'TEJA ACERO GRAVI 16-1 / 2\'\'X52\'\' · artículo 01-09-2135 · ref. TERRACOTA2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 948.26 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-07-015', PROV_OCHOA, 1026.24, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-acero-gravi-carbon-16-1-2-x52-01097587',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-acero-gravi-carbon-16-1-2-x52-01097587',
     peso: 2,
-    nota: 'Teja Acero Gravi Carbon 16-1 / 2\'\'X52\'\' · artículo 01-09-7587 · ref. CHARCOAL2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 513.12 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'TEJA ACERO GRAVI CARBON 16-1 / 2\'\'X52\'\' · artículo 01-09-7587 · ref. CHARCOAL2MT/2 · marca DECRA. La tienda cotiza por teja; van 2 tejas por m² según su propia referencia (RD$ 513.12 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-016', PROV_OCHOA, 1677.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-mixta-gde-marron-01097666',
-    nota: 'Teja Mixta Gde Marron · artículo 01-09-7666 · ref. 10.5MT/2TGMP · marca ESCANDELLA. La tienda cotiza por teja; van 10.5 tejas por m² según su propia referencia (RD$ 159.74 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-mixta-gde-marron-01097666',
+    nota: 'TEJA MIXTA GDE MARRON · artículo 01-09-7666 · ref. 10.5MT/2TGMP · marca ESCANDELLA. La tienda cotiza por teja; van 10.5 tejas por m² según su propia referencia (RD$ 159.74 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-07-017', PROV_OCHOA, 2043.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-vienna-pizarra-plana-46-5x25-8-01097606',
-    nota: 'Teja Vienna Pizarra Plana 46.5X25.8 · artículo 01-09-7606 · ref. 11.5MT/2TVPK · marca ESCANDELLA. La tienda cotiza por teja; van 11.5 tejas por m² según su propia referencia (RD$ 177.71 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-vienna-pizarra-plana-46-5x25-8-01097606',
+    nota: 'TEJA VIENNA PIZARRA PLANA 46.5X25.8 · artículo 01-09-7606 · ref. 11.5MT/2TVPK · marca ESCANDELLA. La tienda cotiza por teja; van 11.5 tejas por m² según su propia referencia (RD$ 177.71 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-07-017', PROV_OCHOA, 2085.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-vienna-marron-plana-46-5x25-8-01097609',
-    nota: 'Teja Vienna Marron Plana 46.5X25.8 · artículo 01-09-7609 · ref. 11.5MT/2TVMK · marca ESCANDELLA. La tienda cotiza por teja; van 11.5 tejas por m² según su propia referencia (RD$ 181.33 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/teja-vienna-marron-plana-46-5x25-8-01097609',
+    nota: 'TEJA VIENNA MARRON PLANA 46.5X25.8 · artículo 01-09-7609 · ref. 11.5MT/2TVMK · marca ESCANDELLA. La tienda cotiza por teja; van 11.5 tejas por m² según su propia referencia (RD$ 181.33 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-07-018', PROV_OCHOA, 320.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-grav-01096513',
-    nota: 'Caballete P / Teja Acero Grav. · artículo 01-09-6513 · ref. SHADOWOOD2.05ML · marca DECRA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-grav-01096513',
+    nota: 'CABALLETE P / TEJA ACERO GRAV. · artículo 01-09-6513 · ref. SHADOWOOD2.05ML · marca DECRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-018', PROV_OCHOA, 394.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-grav-01092141',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-grav-01092141',
     peso: 2,
-    nota: 'Caballete P / Teja Acero Grav. · artículo 01-09-2141 · ref. TERRACOTA2.5ML · marca DECRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'CABALLETE P / TEJA ACERO GRAV. · artículo 01-09-2141 · ref. TERRACOTA2.5ML · marca DECRA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-018', PROV_OCHOA, 202.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-duna-01095354',
-    nota: 'Caballete P / Teja Duna · artículo 01-09-5354 · ref. 1021025MARRON2.5 · marca COBERT. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-duna-01095354',
+    nota: 'CABALLETE P / TEJA DUNA · artículo 01-09-5354 · ref. 1021025MARRON2.5 · marca COBERT. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-018', PROV_OCHOA, 386.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-gravillada-01093835',
-    nota: 'Caballete P / Teja Acero Gravillada · artículo 01-09-3835 · ref. GARNET2.5ML · marca DECRA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/caballete-p-teja-acero-gravillada-01093835',
+    nota: 'CABALLETE P / TEJA ACERO GRAVILLADA · artículo 01-09-3835 · ref. GARNET2.5ML · marca DECRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-019', PROV_OCHOA, 179.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-teja-acero-grav-01093508',
-    nota: 'Final Caballete Teja Acero Grav. · artículo 01-09-3508 · ref. CHESTNUT · marca DECRA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-teja-acero-grav-01093508',
+    nota: 'FINAL CABALLETE TEJA ACERO GRAV. · artículo 01-09-3508 · ref. CHESTNUT · marca DECRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-019', PROV_OCHOA, 136.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-acero-gravillad-01092789',
-    nota: 'Final Caballete P / Teja Acero Gravillad · artículo 01-09-2789 · ref. ARTICBLUE · marca DECRA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-acero-gravillad-01092789',
+    nota: 'FINAL CABALLETE P / TEJA ACERO GRAVILLAD · artículo 01-09-2789 · ref. ARTICBLUE · marca DECRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-019', PROV_OCHOA, 131.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-acero-grav-01092149',
-    nota: 'Final Caballete P / Teja Acero Grav. · artículo 01-09-2149 · ref. SEAGREEN · marca DECRA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-acero-grav-01092149',
+    nota: 'FINAL CABALLETE P / TEJA ACERO GRAV. · artículo 01-09-2149 · ref. SEAGREEN · marca DECRA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-020', PROV_OCHOA, 2198.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-mixta-roja-01097605',
-    nota: 'Final Caballete P / Teja Mixta Roja · artículo 01-09-7605 · ref. Q03R · marca ESCANDELLA. ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/final-caballete-p-teja-mixta-roja-01097605',
+    nota: 'FINAL CABALLETE P / TEJA MIXTA ROJA · artículo 01-09-7605 · ref. Q03R · marca ESCANDELLA. ' + SUPUESTO_ITBIS
   });
   c('MAT-07-021', PROV_OCHOA, 296.18, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/plancha-de-zinc-liso-c-29-04770054',
@@ -2348,50 +2342,50 @@
     nota: 'Caño Para Aluzinc 6\'\' · artículo 04-52-0469 · ref. 6\'\'X7\'\'X10\' · marca ACERO ESTRELLA-C. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1999.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-mediterranea-blanco-01098753',
-    nota: 'Revestimiento Cerámico Mediterránea Blanco · artículo 01-09-8753 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 630.73 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-mediterranea-blanco-01098753',
+    nota: 'REVESTIMIENTO CERÁMICO MEDITERRÁNEA BLANCO · artículo 01-09-8753 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 630.73 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2014.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-para-revestimiento-01097694',
-    nota: 'Baldosa Cerámica Venato Para Revestimiento · artículo 01-09-7694 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 635.49 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-para-revestimiento-01097694',
+    nota: 'BALDOSA CERÁMICA VENATO PARA REVESTIMIENTO · artículo 01-09-7694 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 635.49 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2197.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramico-mediterranea-blanco-01098754',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramico-mediterranea-blanco-01098754',
     peso: 2,
-    nota: 'Baldosa Cerámico Mediterránea Blanco · artículo 01-09-8754 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 693.14 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICO MEDITERRÁNEA BLANCO · artículo 01-09-8754 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 693.14 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2112.23, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-01097718',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-01097718',
     peso: 2,
-    nota: 'Baldosa Cerámica Venato · artículo 01-09-7718 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 666.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA VENATO · artículo 01-09-7718 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 666.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2223.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mediterranea-01099061',
-    nota: 'Baldosa Cerámica Mediterránea · artículo 01-09-9061 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 701.42 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mediterranea-01099061',
+    nota: 'BALDOSA CERÁMICA MEDITERRÁNEA · artículo 01-09-9061 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 701.42 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1998.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-negro-01098933',
-    nota: 'Baldosa Cerámica Muse Negro · artículo 01-09-8933 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 630.51 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-negro-01098933',
+    nota: 'BALDOSA CERÁMICA MUSE NEGRO · artículo 01-09-8933 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 630.51 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 2048.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mediterranea-gris-01099060',
-    nota: 'Baldosa Cerámica Mediterránea Gris · artículo 01-09-9060 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 646.06 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mediterranea-gris-01099060',
+    nota: 'BALDOSA CERÁMICA MEDITERRÁNEA GRIS · artículo 01-09-9060 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 646.06 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1760.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-mediterranea-azul-01098756',
-    nota: 'Revestimiento Cerámico Mediterránea Azul · artículo 01-09-8756 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 555.46 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-mediterranea-azul-01098756',
+    nota: 'REVESTIMIENTO CERÁMICO MEDITERRÁNEA AZUL · artículo 01-09-8756 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 555.46 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1867.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rosace-rectangular-01097695',
-    nota: 'Baldosa Cerámica Rosace Rectangular · artículo 01-09-7695 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 589.1 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rosace-rectangular-01097695',
+    nota: 'BALDOSA CERÁMICA ROSACE RECTANGULAR · artículo 01-09-7695 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 589.1 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1749.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-r-01098192',
-    nota: 'Baldosa Cerámica Essenza R · artículo 01-09-8192 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 551.78 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-r-01098192',
+    nota: 'BALDOSA CERÁMICA ESSENZA R · artículo 01-09-8192 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 551.78 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_OCHOA, 1303.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-blanco-01098931',
-    nota: 'Baldosa Cerámica Muse Blanco · artículo 01-09-8931 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 411.31 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-blanco-01098931',
+    nota: 'BALDOSA CERÁMICA MUSE BLANCO · artículo 01-09-8931 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 411.31 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-014', PROV_CERARTE, 2145.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/sensorial-forma-333x100',
@@ -2433,81 +2427,123 @@
     itbis: false,
     nota: 'RV STRAVAGANZA-R GRIS 32X99 · artículo CERA-34154 · ref. 30X100 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-015', PROV_OCHOA, 1239.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-amalt-snow-01098440',
-    nota: 'Baldosa Amalt Snow · artículo 01-09-8440 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 413.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-015', PROV_OCHOA, 1505.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/vegetal-palm-1-trend-green-mate-01098449',
+    nota: 'VEGETAL PALM 1. / TREND GREEN MATE · artículo 01-09-8449 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 501.76 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-015', PROV_OCHOA, 1825.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098475',
-    nota: 'Baldosa Cerámica Tripoli Mate Snow · artículo 01-09-8475 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 608.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-015', PROV_OCHOA, 1239.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-amalt-snow-01098440',
+    nota: 'BALDOSA AMALT SNOW · artículo 01-09-8440 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 413.06 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-015', PROV_IBERICA, 1725.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/claire-evoque-gris-mate-33-3x100/',
     nota: 'Claire Evoque Gris Mate 33.3×100 · artículo 017040 · ref. 33.3×100. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-016', PROV_OCHOA, 1045.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-botanico-01099088',
-    nota: 'Baldosa Cerámica Botánico · artículo 01-09-9088 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 661.51 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-botanico-01099088',
+    nota: 'BALDOSA CERÁMICA BOTÁNICO · artículo 01-09-9088 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 661.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-017', PROV_OCHOA, 2945.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mattei-blanco-01098887',
-    nota: 'Baldosa Cerámica Mattei Blanco · artículo 01-09-8887 · ref. 120X1200.69MT/2 · marca SALONI. La tienda cotiza por pieza; van 0.69 piezas por m² según su propia referencia (RD$ 4268.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-017', PROV_OCHOA, 1505.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-ceniza-01098732',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA AREN CENIZA · artículo 01-09-8732 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 361.85 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-018', PROV_OCHOA, 1474.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-arce-01097877',
-    nota: 'Baldosa Cerámica Viggo Arce · artículo 01-09-7877 · ref. 20X1204.16MT · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 354.53 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-017', PROV_OCHOA, 1316.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-terra-01098734',
+    nota: 'BALDOSA CERÁMICA AREN TERRA · artículo 01-09-8734 · ref. 20X1204.16MT2 · marca ATRIUM. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 316.46 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-018', PROV_OCHOA, 1459.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-ceniza-01097878',
-    nota: 'Baldosa Cerámica Viggo Ceniza · artículo 01-09-7878 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 350.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-017', PROV_OCHOA, 1474.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-arce-01097877',
+    nota: 'BALDOSA CERÁMICA VIGGO ARCE · artículo 01-09-7877 · ref. 20X1204.16MT · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 354.53 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-018', PROV_OCHOA, 1439.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-roble-01097876',
-    nota: 'Baldosa Cerámica Viggo Roble · artículo 01-09-7876 · ref. 20X1204.16MT · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 345.96 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-017', PROV_OCHOA, 1459.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-ceniza-01097878',
+    nota: 'BALDOSA CERÁMICA VIGGO CENIZA · artículo 01-09-7878 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 350.74 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-017', PROV_OCHOA, 1439.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-viggo-roble-01097876',
+    nota: 'BALDOSA CERÁMICA VIGGO ROBLE · artículo 01-09-7876 · ref. 20X1204.16MT · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 345.96 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 1327.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-roble-01098458',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA ACADIAN ROBLE · artículo 01-09-8458 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 366.76 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 1295.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-haya-01098457',
+    nota: 'BALDOSA CERÁMICA ACADIAN HAYA · artículo 01-09-8457 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 357.98 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 1291.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-natural-01098455',
+    nota: 'BALDOSA CERÁMICA ACADIAN NATURAL · artículo 01-09-8455 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 356.78 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 1253.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-ceniza-01098456',
+    nota: 'BALDOSA CERÁMICA ACADIAN CENIZA · artículo 01-09-8456 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 346.29 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-018', PROV_OCHOA, 1122.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-boreal-haya-01098726',
+    nota: 'BALDOSA CERÁMICA BOREAL HAYA · artículo 01-09-8726 · ref. 23X1203.62MT2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 310.15 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-019', PROV_OCHOA, 1881.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-vita-gris-01099184',
-    nota: 'Baldosa Cerámica Rlv Vita Gris · artículo 01-09-9184 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 904.34 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-vita-gris-01099184',
+    nota: 'BALDOSA CERÁMICA RLV VITA GRIS · artículo 01-09-9184 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 904.34 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1925.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-blanco-mate-care-01099044',
+    nota: 'BALDOSA CERÁMICA SNOW BLANCO MATE CARE · artículo 01-09-9044 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 925.66 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 2083.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-blanco-brillo-care-01099043',
+    nota: 'BALDOSA CERÁMICA SNOW BLANCO BRILLO CARE · artículo 01-09-9043 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1001.83 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-019', PROV_OCHOA, 1962, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rockwell-marfil-01099198',
-    nota: 'Baldosa Cerámica Rockwell Marfil · artículo 01-09-9198 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 943.27 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-019', PROV_OCHOA, 1783.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-aura-blanco-mate-01098889',
-    nota: 'Baldosa Cerámica Snow Aura Blanco Mate · artículo 01-09-8889 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 857.62 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-019', PROV_OCHOA, 2202.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vector-marron-cacao-01097653',
-    nota: 'Baldosa Cerámica Vector Marrón Cacao · artículo 01-09-7653 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1048.88 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-019', PROV_OCHOA, 1884.69, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vary-dorex-iris-01095297',
-    nota: 'Baldosa Cerámica Vary Dorex Iris · artículo 01-09-5297 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 906.1 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rockwell-marfil-01099198',
+    nota: 'BALDOSA CERÁMICA ROCKWELL MARFIL · artículo 01-09-9198 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 943.27 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-019', PROV_OCHOA, 2788.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kross-marron-cacao-01097564',
-    nota: 'Baldosa Cerámica Kross Marrón-Cacao · artículo 01-09-7564 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1327.72 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kross-marron-cacao-01097564',
+    nota: 'BALDOSA CERÁMICA KROSS MARRÓN-CACAO · artículo 01-09-7564 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1327.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-019', PROV_OCHOA, 3697.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kross-crema-miel-01097817',
-    nota: 'Baldosa Cerámica Kross Crema-Miel · artículo 01-09-7817 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1777.72 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-019', PROV_OCHOA, 1516.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-metric-blanco-01098828',
+    nota: 'BALDOSA CERÁMICA CAVALLINA METRIC BLANCO · artículo 01-09-8828 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 729.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-019', PROV_OCHOA, 1875.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lines-blanco-brillo-care-01098888',
-    nota: 'Baldosa Cerámica Lines Blanco Brillo Care · artículo 01-09-8888 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 901.76 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-019', PROV_OCHOA, 2461.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bernini-crema-01098588',
+    nota: 'BALDOSA CERÁMICA BERNINI CREMA · artículo 01-09-8588 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1183.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-019', PROV_OCHOA, 1799.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-thales-gris-01097628',
-    nota: 'Baldosa Cerámica Thales Gris · artículo 01-09-7628 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 857.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-019', PROV_OCHOA, 1794.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-strokes-blanco-01098895',
-    nota: 'Baldosa Cerámica Snow Strokes Blanco · artículo 01-09-8895 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 862.93 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-019', PROV_OCHOA, 1991.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-metric-marfil-01098829',
+    nota: 'BALDOSA CERÁMICA CAVALLINA METRIC MARFIL · artículo 01-09-8829 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 957.5 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-019', PROV_OCHOA, 1563.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-dosso-greige-01098446',
-    nota: 'Baldosa Cerámica Rlv Dosso Greige · artículo 01-09-8446 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 751.67 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-dosso-greige-01098446',
+    nota: 'BALDOSA CERÁMICA RLV DOSSO GREIGE · artículo 01-09-8446 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 751.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1624.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-manaos-white-01098612',
+    nota: 'BALDOSA CERÁMICA RLV MANAOS WHITE · artículo 01-09-8612 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 780.88 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1783.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-aura-blanco-mate-01098889',
+    nota: 'BALDOSA CERÁMICA SNOW AURA BLANCO MATE · artículo 01-09-8889 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 857.62 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 3697.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kross-crema-miel-01097817',
+    nota: 'BALDOSA CERÁMICA KROSS CREMA-MIEL · artículo 01-09-7817 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1777.72 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1875.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lines-blanco-brillo-care-01098888',
+    nota: 'BALDOSA CERÁMICA LINES BLANCO BRILLO CARE · artículo 01-09-8888 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 901.76 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1799.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-thales-gris-01097628',
+    nota: 'BALDOSA CERÁMICA THALES GRIS · artículo 01-09-7628 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 857.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-019', PROV_OCHOA, 1794.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-strokes-blanco-01098895',
+    nota: 'BALDOSA CERÁMICA SNOW STROKES BLANCO · artículo 01-09-8895 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 862.93 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-019', PROV_CERARTE, 1769.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/boulevard-40x120',
@@ -2731,25 +2767,9 @@
     itbis: false,
     nota: 'ZESTY QUEOPS 45X120 · artículo CERA-36764 · ref. 45X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-021', PROV_OCHOA, 2155.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toscana-gris-01098892',
-    nota: 'Baldosa Cerámica Toscana Gris · artículo 01-09-8892 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1561.99 por pieza). ' + SUPUESTO_ITBIS
-  });
   c('MAT-08-021', PROV_OCHOA, 2549.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-metric-chesnut-01099188',
-    nota: 'Baldosa Cerámica Venatto Metric Chesnut · artículo 01-09-9188 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1847.36 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-021', PROV_OCHOA, 2206.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-laurent-negro-anticato-01098891',
-    nota: 'Baldosa Cerámica Laurent Negro Anticato · artículo 01-09-8891 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1598.85 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-021', PROV_OCHOA, 2181.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-novella-dark-green-01098890',
-    nota: 'Baldosa Cerámica Novella Dark Green · artículo 01-09-8890 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1580.72 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-021', PROV_OCHOA, 2119.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-delight-blanco-anticato-01098893',
-    nota: 'Baldosa Cerámica Delight Blanco Anticato · artículo 01-09-8893 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1536.03 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-metric-chesnut-01099188',
+    nota: 'BALDOSA CERÁMICA VENATTO METRIC CHESNUT · artículo 01-09-9188 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1847.36 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-021', PROV_CERARTE, 2193.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-buisson-montmartre-60x120-rt',
@@ -2832,8 +2852,8 @@
     nota: 'CERAMICA RV BARI SLAT 60X120 RT · artículo CERA-36465 · ref. 60X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-022', PROV_OCHOA, 2854.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-ocean-01098741',
-    nota: 'Baldosa Cerámica Slate Way Ocean · artículo 01-09-8741 · ref. 15X1544.44MT2 · marca ATRIUM. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 64.23 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-ocean-01098741',
+    nota: 'BALDOSA CERÁMICA SLATE WAY OCEAN · artículo 01-09-8741 · ref. 15X1544.44MT2 · marca ATRIUM. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 64.23 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-022', PROV_CERARTE, 2122.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-byte-13x13',
@@ -2846,17 +2866,17 @@
     nota: 'RV RONTO MULTICOLOR 13X13 · artículo CERA-35345 · ref. 15x15 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-023', PROV_OCHOA, 2775.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-blanco-brillo-01098745',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-blanco-brillo-01098745',
     peso: 2,
-    nota: 'Baldosa Cerámica Subway Blanco Brillo · artículo 01-09-8745 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 31.54 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA SUBWAY BLANCO BRILLO · artículo 01-09-8745 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 31.54 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-023', PROV_OCHOA, 2355.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-negro-01098742',
-    nota: 'Baldosa Cerámica Subway Negro · artículo 01-09-8742 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 26.77 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-negro-01098742',
+    nota: 'BALDOSA CERÁMICA SUBWAY NEGRO · artículo 01-09-8742 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 26.77 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-023', PROV_OCHOA, 2209.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-negro-mate-01098743',
-    nota: 'Baldosa Cerámica Subway Negro Mate · artículo 01-09-8743 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 25.11 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-subway-negro-mate-01098743',
+    nota: 'BALDOSA CERÁMICA SUBWAY NEGRO MATE · artículo 01-09-8743 · ref. 7.5X1588MT2 · marca PAMESA. La tienda cotiza por pieza; van 88 piezas por m² según su propia referencia (RD$ 25.11 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-024', PROV_CERARTE, 1224.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/metro-white-biselado-10x20',
@@ -2865,13 +2885,13 @@
     nota: 'METRO WHITE BISELADO 10X20 · artículo CERA-34562 · ref. 10X20 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-025', PROV_OCHOA, 772.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-c-01097412',
-    nota: 'Baldosa Cerámica Makara Decor C · artículo 01-09-7412 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 27.05 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-c-01097412',
+    nota: 'BALDOSA CERÁMICA MAKARA DECOR C · artículo 01-09-7412 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 27.05 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-025', PROV_OCHOA, 767.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-a-01097410',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-makara-decor-a-01097410',
     peso: 3,
-    nota: 'Baldosa Cerámica Makara Decor A · artículo 01-09-7410 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 26.86 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MAKARA DECOR A · artículo 01-09-7410 · ref. 17.5X2028.57MT · marca PERONDA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 26.86 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-026', PROV_CERARTE, 995, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/trace-20x20',
@@ -2892,25 +2912,25 @@
     peso: 2,
     nota: 'Blanco Brillo 20×20 · artículo 017837 · ref. 20×20. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
+  c('MAT-08-027', PROV_OCHOA, 2595, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sysley-1-01097104',
+    nota: 'BALDOSA CERÁMICA SYSLEY 1 · artículo 01-09-7104 · ref. 22.3X22.320MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 20 piezas por m² según su propia referencia (RD$ 129.75 por pieza). ' + SUPUESTO_ITBIS
+  });
   c('MAT-08-027', PROV_OCHOA, 1177.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sysley-1-01097102',
-    nota: 'Baldosa Cerámica Sysley 1 · artículo 01-09-7102 · ref. 60.8X60.82.70MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 436.26 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sysley-1-01097102',
+    nota: 'BALDOSA CERÁMICA SYSLEY 1 · artículo 01-09-7102 · ref. 60.8X60.82.70MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 436.26 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-028', PROV_OCHOA, 874.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-super-blanco-01098997',
-    nota: 'Baldosa Cerámica Super Blanco · artículo 01-09-8997 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 26.24 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-super-blanco-01098997',
+    nota: 'BALDOSA CERÁMICA SUPER BLANCO · artículo 01-09-8997 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 26.24 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-028', PROV_OCHOA, 1480.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velvet-blue-01098998',
-    nota: 'Baldosa Cerámica Velvet Blue · artículo 01-09-8998 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 44.42 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-028', PROV_OCHOA, 1259.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velvet-white-01098999',
-    nota: 'Baldosa Cerámica Velvet White · artículo 01-09-8999 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 37.78 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velvet-blue-01098998',
+    nota: 'BALDOSA CERÁMICA VELVET BLUE · artículo 01-09-8998 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 44.42 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-028', PROV_OCHOA, 1148.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-decorativa-blaze-gris-oscuro-01098996',
-    nota: 'Cerámica Decorativa Blaze Gris Oscuro · artículo 01-09-8996 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 34.47 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-decorativa-blaze-gris-oscuro-01098996',
+    nota: 'CERÁMICA DECORATIVA BLAZE GRIS OSCURO · artículo 01-09-8996 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 34.47 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-029', PROV_CERARTE, 1873.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-nalu-23x335',
@@ -2918,32 +2938,24 @@
     nota: 'RV NALU 23X33.5 · artículo CERA-37094 · ref. 20X30 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-030', PROV_OCHOA, 1796.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-negro-01098730',
-    nota: 'Baldosa Cerámica Spring Negro · artículo 01-09-8730 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 40.24 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-030', PROV_OCHOA, 806.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nouria-gris-brillo-01097415',
-    nota: 'Baldosa Cerámica Nouria Gris Brillo · artículo 01-09-7415 · ref. 7.5X3044.44MT/2 · marca PERONDA. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 18.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-030', PROV_OCHOA, 1152.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travel-black-01097989',
-    nota: 'Baldosa Cerámica Travel Black · artículo 01-09-7989 · ref. 7.5X3044.44MT/2 · marca HALCON. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 25.93 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-negro-01098730',
+    nota: 'BALDOSA CERÁMICA SPRING NEGRO · artículo 01-09-8730 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 40.24 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-030', PROV_OCHOA, 1860.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-blanco-01098729',
-    nota: 'Baldosa Cerámica Spring Blanco · artículo 01-09-8729 · ref. 7.5X3044.06MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.06 piezas por m² según su propia referencia (RD$ 42.22 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-blanco-01098729',
+    nota: 'BALDOSA CERÁMICA SPRING BLANCO · artículo 01-09-8729 · ref. 7.5X3044.06MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.06 piezas por m² según su propia referencia (RD$ 42.22 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-030', PROV_OCHOA, 1931.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-verde-01098728',
-    nota: 'Baldosa Cerámica Spring Verde · artículo 01-09-8728 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 43.26 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-verde-01098728',
+    nota: 'BALDOSA CERÁMICA SPRING VERDE · artículo 01-09-8728 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 43.26 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-030', PROV_OCHOA, 1076.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-azul-01098727',
-    nota: 'Baldosa Cerámica Spring Azul · artículo 01-09-8727 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 24.12 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spring-azul-01098727',
+    nota: 'BALDOSA CERÁMICA SPRING AZUL · artículo 01-09-8727 · ref. 7.5X3044.64MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.64 piezas por m² según su propia referencia (RD$ 24.12 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-030', PROV_OCHOA, 1147, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travel-white-01097990',
-    nota: 'Baldosa Cerámica Travel White · artículo 01-09-7990 · ref. 7.5X3044.44MT/2 · marca HALCON. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 25.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-030', PROV_OCHOA, 806.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nouria-gris-brillo-01097415',
+    nota: 'BALDOSA CERÁMICA NOURIA GRIS BRILLO · artículo 01-09-7415 · ref. 7.5X3044.44MT/2 · marca PERONDA. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 18.14 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-030', PROV_CERARTE, 968.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-aylla-design-75x26',
@@ -2999,651 +3011,753 @@
     peso: 4,
     nota: 'RV LEXA DUNA 7.5X30 · artículo CERA-36816 · ref. 7.5X30 · marca CIFRE. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-031', PROV_IBERICA, 1628.41, {
+  c('MAT-08-031', PROV_OCHOA, 1267.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-barbados-aqua-01098469',
+    nota: 'BALDOSA CERÁMICA BARBADOS AQUA · artículo 01-09-8469 · ref. 33.3X33.39.02MT/2 · marca PAMESA. La tienda cotiza por pieza; van 9.02 piezas por m² según su propia referencia (RD$ 140.48 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-032', PROV_IBERICA, 1628.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-ice-brillo-25x40/',
     nota: 'Blanco Ice Brillo 25×40 · artículo 016869 · ref. 25×40. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-031', PROV_IBERICA, 1100, {
+  c('MAT-08-032', PROV_IBERICA, 1100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-mate-25x40/',
     nota: 'Blanco Mate 25×40 · artículo 019367 · ref. 25×40. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-032', PROV_OCHOA, 1123.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pastel-beige-01098080',
-    nota: 'Baldosa Cerámica Pastel Beige · artículo 01-09-8080 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 227.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-033', PROV_OCHOA, 1123.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pastel-beige-01098080',
+    nota: 'BALDOSA CERÁMICA PASTEL BEIGE · artículo 01-09-8080 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 227.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-032', PROV_OCHOA, 832.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mikonos-crema-01098670',
-    nota: 'Baldosa Cerámica Mikonos Crema · artículo 01-09-8670 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 168.96 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-033', PROV_OCHOA, 832.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mikonos-crema-01098670',
+    nota: 'BALDOSA CERÁMICA MIKONOS CREMA · artículo 01-09-8670 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 168.96 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-032', PROV_OCHOA, 709.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pastellato-blanco-01098020',
-    nota: 'Baldosa Cerámica Pastellato Blanco · artículo 01-09-8020 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 143.88 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-033', PROV_OCHOA, 709.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pastellato-blanco-01098020',
+    nota: 'BALDOSA CERÁMICA PASTELLATO BLANCO · artículo 01-09-8020 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 143.88 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-033', PROV_OCHOA, 1238.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-titan-neutro-01098397',
-    nota: 'Revestimiento Cerámico Titan Neutro · artículo 01-09-8397 · ref. 17X5211.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.33 piezas por m² según su propia referencia (RD$ 109.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-034', PROV_OCHOA, 1226.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-gris-01098111',
+    nota: 'BALDOSA CERÁMICA TEIDE GRIS · artículo 01-09-8111 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 108.56 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-034', PROV_CERARTE, 2332.73, {
+  c('MAT-08-034', PROV_OCHOA, 1220.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-magna-01098112',
+    nota: 'BALDOSA CERÁMICA TEIDE MAGNA · artículo 01-09-8112 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 108.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-034', PROV_OCHOA, 1169.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-titan-mix-01098114',
+    nota: 'BALDOSA CERÁMICA TITAN MIX · artículo 01-09-8114 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 103.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-034', PROV_OCHOA, 1192.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-beige-01098113',
+    nota: 'BALDOSA CERÁMICA TEIDE BEIGE · artículo 01-09-8113 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 105.57 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-034', PROV_OCHOA, 1238.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-grafito-01098578',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA TEIDE GRAFITO · artículo 01-09-8578 · ref. 17X5211.33MT2 · marca PAMESA. La tienda cotiza por pieza; van 11.33 piezas por m² según su propia referencia (RD$ 109.34 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-034', PROV_OCHOA, 1312.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toba-gris-01098115',
+    nota: 'BALDOSA CERÁMICA TOBA GRIS · artículo 01-09-8115 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 116.18 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-035', PROV_CERARTE, 2332.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-harlem-15x45',
     itbis: false,
     peso: 2,
     nota: 'RV HARLEM 15X45 · artículo CERA-36784 · ref. 20X50 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-035', PROV_CERARTE, 459.05, {
+  c('MAT-08-036', PROV_CERARTE, 459.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/toulouse-25x50',
     itbis: false,
     nota: 'TOULOUSE 25X50 · artículo CERA-03038 · ref. 25X50 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-036', PROV_OCHOA, 1173.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-gales-mix-01095316',
-    nota: 'Revestimiento Cerámico Gales Mix · artículo 01-09-5316 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 199.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-036', PROV_OCHOA, 1229.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-gales-terra-01095832',
+  c('MAT-08-037', PROV_OCHOA, 1229.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-gales-terra-01095832',
     peso: 3,
-    nota: 'Revestimiento Cerámico Gales Terra · artículo 01-09-5832 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 209.16 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'REVESTIMIENTO CERÁMICO GALES TERRA · artículo 01-09-5832 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 209.16 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-037', PROV_CERARTE, 1029.69, {
+  c('MAT-08-037', PROV_OCHOA, 1173.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/revestimiento-ceramico-gales-mix-01095316',
+    nota: 'REVESTIMIENTO CERÁMICO GALES MIX · artículo 01-09-5316 · ref. 34X505.88MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.88 piezas por m² según su propia referencia (RD$ 199.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-038', PROV_CERARTE, 1029.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fileto-34x50-14pcs',
     itbis: false,
     nota: 'FILETO 34X50 14PCS · artículo CERA-20433 · ref. 35X50 · marca PAMESA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-038', PROV_OCHOA, 839.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brillo-blanco-01095987',
+  c('MAT-08-039', PROV_OCHOA, 928.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-portofino-blanco-01098118',
+    nota: 'BALDOSA CERÁMICA PORTOFINO BLANCO · artículo 01-09-8118 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 171.04 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 798.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-mate-01099121',
+    nota: 'BALDOSA CERÁMICA BLANCO MATE · artículo 01-09-9121 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 144.57 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 839.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanco-at-gaia-01098131',
     peso: 2,
-    nota: 'Baldosa Cerámica Brillo Blanco · artículo 01-09-5987 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA BLANCO AT GAIA · artículo 01-09-8131 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 900.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-egeo-blanco-01097972',
-    nota: 'Baldosa Cerámica Egeo Blanco · artículo 01-09-7972 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 165.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 863.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-ondas-01099123',
+    nota: 'BALDOSA CERÁMICA BLANCO ONDAS · artículo 01-09-9123 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 156.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 798.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-mate-01099121',
-    nota: 'Baldosa Cerámica Blanco Mate · artículo 01-09-9121 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 144.57 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-038', PROV_OCHOA, 835.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mate-blanco-01096207',
-    nota: 'Baldosa Cerámica Mate Blanco · artículo 01-09-6207 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 153.84 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-038', PROV_OCHOA, 863.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-ondas-01099123',
-    nota: 'Baldosa Cerámica Blanco Ondas · artículo 01-09-9123 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 156.37 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-038', PROV_OCHOA, 815.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-perla-01095966',
+  c('MAT-08-039', PROV_OCHOA, 815.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-at-blaze-01098135',
     peso: 2,
-    nota: 'Baldosa Cerámica Badem Perla · artículo 01-09-5966 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 150.19 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA PERLA AT BLAZE · artículo 01-09-8135 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 150.19 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 812.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-florida-mix-01099124',
-    nota: 'Baldosa Cerámica Florida Mix · artículo 01-09-9124 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 812.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-florida-mix-01099124',
+    nota: 'BALDOSA CERÁMICA FLORIDA MIX · artículo 01-09-9124 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 756.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atrium-kie-01095739',
-    nota: 'Baldosa Cerámica Atrium Kie · artículo 01-09-5739 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 139.33 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 816.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-florida-crema-01099125',
+    nota: 'BALDOSA CERÁMICA FLORIDA CREMA · artículo 01-09-9125 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.84 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 816.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-florida-crema-01099125',
-    nota: 'Baldosa Cerámica Florida Crema · artículo 01-09-9125 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.84 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 849.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-benasque-gris-mate-01099126',
+    nota: 'BALDOSA CERÁMICA BENASQUE GRIS MATE · artículo 01-09-9126 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 153.95 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 901.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-rlv-kie-gris-mate-01095741',
-    nota: 'At Rlv Kie Gris Mate · artículo 01-09-5741 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 166.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 835.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-benasque-marron-mate-01099127',
+    nota: 'BALDOSA CERÁMICA BENASQUE MARRÓN MATE · artículo 01-09-9127 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 151.44 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 921.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-badem-perla-01095967',
-    nota: 'Baldosa Cerámica Ondas Badem Perla · artículo 01-09-5967 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 169.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 1078.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-arena-at-gaia-01098132',
+    nota: 'BALDOSA ARENA AT GAIA · artículo 01-09-8132 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 198.66 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 1078.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-arena-at-gaia-01098132',
-    nota: 'Baldosa Arena At Gaia · artículo 01-09-8132 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 198.66 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 1052.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gaia-ceniza-01098274',
+    nota: 'BALDOSA CERÁMICA GAIA CENIZA · artículo 01-09-8274 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 193.86 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 935.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-egeo-blanco-01097973',
-    nota: 'Baldosa Cerámica Egeo Blanco · artículo 01-09-7973 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 172.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 1080.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-chipre-1-01098273',
+    nota: 'BALDOSA CERÁMICA RLV CHIPRE 1 · artículo 01-09-8273 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 199.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 918.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-tortora-01095968',
-    nota: 'Baldosa Cerámica Badem Tortora · artículo 01-09-5968 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 169.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 1056.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-gaia-01098134',
+    nota: 'BALDOSA CERÁMICA RLV GAIA · artículo 01-09-8134 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 194.59 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 684.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blaze-ondas-tortora-01098993',
-    nota: 'Baldosa Cerámica Blaze Ondas Tortora · artículo 01-09-8993 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 126 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 768.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-arena-01098272',
+    nota: 'BALDOSA CERÁMICA SANTORINI ARENA · artículo 01-09-8272 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 141.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 768.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-arena-01098272',
-    nota: 'Baldosa Cerámica Santorini Arena · artículo 01-09-8272 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 141.45 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 752.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kios-perla-01098278',
+    nota: 'BALDOSA CERÁMICA KIOS PERLA · artículo 01-09-8278 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 138.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 796.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-badem-tortora-01095969',
-    nota: 'Baldosa Cerámica Ondas Badem Tortora · artículo 01-09-5969 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 146.76 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 800.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-arena-01098276',
+    nota: 'BALDOSA CERÁMICA SANTORINI ARENA · artículo 01-09-8276 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 147.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 828.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-lux-1-01095963',
-    nota: 'Baldosa Cerámica Rlv Lux 1 · artículo 01-09-5963 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 152.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 909.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-perla-01098277',
+    nota: 'BALDOSA CERÁMICA SANTORINI PERLA · artículo 01-09-8277 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 167.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_OCHOA, 721.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-atrium-chipre-blanco-01098279',
-    nota: 'Baldosa Atrium Chipre Blanco · artículo 01-09-8279 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 132.86 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-039', PROV_OCHOA, 826.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-kios-gris-01098280',
+    nota: 'BALDOSA CERÁMICA RLV KIOS GRIS · artículo 01-09-8280 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 152.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_IBERICA, 1189.99, {
+  c('MAT-08-039', PROV_OCHOA, 721.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-atrium-chipre-blanco-01098279',
+    nota: 'BALDOSA ATRIUM CHIPRE BLANCO · artículo 01-09-8279 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 132.86 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 786.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-santorini-perla-01098275',
+    nota: 'BALDOSA CERÁMICA ONDAS SANTORINI PERLA · artículo 01-09-8275 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 144.85 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 900.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-egeo-blanco-01097972',
+    nota: 'BALDOSA CERÁMICA EGEO BLANCO · artículo 01-09-7972 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 165.91 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 835.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mate-blanco-01096207',
+    nota: 'BALDOSA CERÁMICA MATE BLANCO · artículo 01-09-6207 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 153.84 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 756.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atrium-kie-01095739',
+    nota: 'BALDOSA CERÁMICA ATRIUM KIE · artículo 01-09-5739 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 139.33 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 901.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-rlv-kie-gris-mate-01095741',
+    nota: 'AT RLV KIE GRIS MATE · artículo 01-09-5741 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 166.09 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 921.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-badem-perla-01095967',
+    nota: 'BALDOSA CERÁMICA ONDAS BADEM PERLA · artículo 01-09-5967 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 169.73 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 935.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-egeo-blanco-01097973',
+    nota: 'BALDOSA CERÁMICA EGEO BLANCO · artículo 01-09-7973 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 172.24 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 918.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-tortora-01095968',
+    nota: 'BALDOSA CERÁMICA BADEM TORTORA · artículo 01-09-5968 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 169.18 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 684.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blaze-ondas-tortora-01098993',
+    nota: 'BALDOSA CERÁMICA BLAZE ONDAS TORTORA · artículo 01-09-8993 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 126 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 796.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-badem-tortora-01095969',
+    nota: 'BALDOSA CERÁMICA ONDAS BADEM TORTORA · artículo 01-09-5969 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 146.76 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_OCHOA, 828.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-lux-1-01095963',
+    nota: 'BALDOSA CERÁMICA RLV LUX 1 · artículo 01-09-5963 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 152.56 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-039', PROV_IBERICA, 1189.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/droit-snow-33-3x55-2/',
     nota: 'Droit Snow 33.3×55 · artículo 018185 · ref. 33.3×55. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_BELLON, 809.1, {
+  c('MAT-08-039', PROV_BELLON, 809.1, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 32 x 56 Cm 1A 5.58/Mt Cristofoletti HD3271 PEI2 11Pcs/Cjs Pared · artículo 219632. La tienda cobra por pieza y declara 5.58 piezas por m²; aquí va el precio del m² (RD$ 145 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-038', PROV_BELLON, 680.76, {
+  c('MAT-08-039', PROV_BELLON, 680.76, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 32 x 56 Cm 1A 5.58/Mt Cristofoletti HD3262 PEI2 11Pcs/Cjs Pared · artículo 222887. La tienda cobra por pieza y declara 5.58 piezas por m²; aquí va el precio del m² (RD$ 122 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-039', PROV_OCHOA, 760.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-beige-01099131',
-    nota: 'Baldosa Cerámica Selva Beige · artículo 01-09-9131 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 82.19 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-040', PROV_OCHOA, 760.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-beige-01099131',
+    nota: 'BALDOSA CERÁMICA SELVA BEIGE · artículo 01-09-9131 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 82.19 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-039', PROV_OCHOA, 804.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-teka-01099133',
-    nota: 'Baldosa Cerámica Selva Teka · artículo 01-09-9133 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 86.93 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-040', PROV_OCHOA, 804.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-teka-01099133',
+    nota: 'BALDOSA CERÁMICA SELVA TEKA · artículo 01-09-9133 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 86.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-039', PROV_OCHOA, 766.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-gris-01099132',
-    nota: 'Baldosa Cerámica Selva Gris · artículo 01-09-9132 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 82.87 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-040', PROV_OCHOA, 766.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selva-gris-01099132',
+    nota: 'BALDOSA CERÁMICA SELVA GRIS · artículo 01-09-9132 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 82.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-039', PROV_OCHOA, 1461.04, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-team-gris-01098487',
-    nota: 'Baldosa Cerámica Team Gris · artículo 01-09-8487 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 160.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-040', PROV_OCHOA, 1461.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-team-gris-01098487',
+    nota: 'BALDOSA CERÁMICA TEAM GRIS · artículo 01-09-8487 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 160.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-040', PROV_OCHOA, 1684.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-old-vic-perla-01098313',
-    nota: 'Baldosa Cerámica Old Vic Perla · artículo 01-09-8313 · ref. 29.5X595.75MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 293.03 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-041', PROV_OCHOA, 1684.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-old-vic-perla-01098313',
+    nota: 'BALDOSA CERÁMICA OLD VIC PERLA · artículo 01-09-8313 · ref. 29.5X595.75MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 293.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 348.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-branco-01098573',
-    nota: 'Baldosa Cerámica Everest Branco · artículo 01-09-8573 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 348.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-branco-01098573',
+    nota: 'BALDOSA CERÁMICA EVEREST BRANCO · artículo 01-09-8573 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 355.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098569',
-    nota: 'Baldosa Cerámica · artículo 01-09-8569 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 65.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 355.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098569',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-8569 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 65.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 360.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-blanc-01098401',
-    nota: 'Baldosa Cerámica Luxor Blanc · artículo 01-09-8401 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 66.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 360.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-blanc-01098401',
+    nota: 'BALDOSA CERÁMICA LUXOR BLANC · artículo 01-09-8401 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 66.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 427.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01097181',
-    nota: 'Baldosa Cerámica · artículo 01-09-7181 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 78.64 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 341.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nobile-bege-iii-01098572',
+    nota: 'BALDOSA CERÁMICA NOBILE BEGE III · artículo 01-09-8572 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 341.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nobile-bege-iii-01098572',
-    nota: 'Baldosa Cerámica Nobile Bege Iii · artículo 01-09-8572 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 414.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-branco-01098568',
+    nota: 'BALDOSA CERÁMICA CARRARA BRANCO · artículo 01-09-8568 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 76.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 342.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selene-bege-01097171',
-    nota: 'Baldosa Cerámica Selene Bege · artículo 01-09-7171 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.96 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 368.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099093',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-9093 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 67.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 414.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-branco-01098568',
-    nota: 'Baldosa Cerámica Carrara Branco · artículo 01-09-8568 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 76.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 409.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-clean-01098793',
+    nota: 'BALDOSA CERÁMICA BLANCO CLEAN · artículo 01-09-8793 · ref. 32X575.41MT2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 75.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 409.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fioranno-01098011',
-    nota: 'Baldosa Cerámica Fioranno · artículo 01-09-8011 · ref. 32X575.41MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 75.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 349.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098577',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-8577 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 368.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099093',
-    nota: 'Baldosa Cerámica · artículo 01-09-9093 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 67.72 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 333.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-01099094',
+    nota: 'BALDOSA CERÁMICA CEDASA · artículo 01-09-9094 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 61.29 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 401.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-panaro-bianco-01098012',
-    nota: 'Baldosa Cerámica Panaro Bianco · artículo 01-09-8012 · ref. 32X575.41MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 74.16 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 348.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099096',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-9096 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 409.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-clean-01098793',
-    nota: 'Baldosa Cerámica Blanco Clean · artículo 01-09-8793 · ref. 32X575.41MT2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 75.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 346.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099092',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-9092 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 63.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 390.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-decor-01097783',
-    nota: 'Baldosa Cerámica Luxor Decor · artículo 01-09-7783 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 71.87 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 640.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petrus-brown-01098007',
+    nota: 'BALDOSA CERÁMICA PETRUS BROWN · artículo 01-09-8007 · ref. 32X575.41MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 118.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 349.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098577',
-    nota: 'Baldosa Cerámica · artículo 01-09-8577 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 375.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-01098570',
+    nota: 'BALDOSA CERÁMICA CEDASA · artículo 01-09-8570 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 69.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 420.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098233',
-    nota: 'Baldosa Cerámica · artículo 01-09-8233 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 77.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 441.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-odessa-beige-01099143',
+    nota: 'BALDOSA CERÁMICA ODESSA BEIGE · artículo 01-09-9143 · ref. 32X575.41MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 81.57 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 333.42, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-01099094',
-    nota: 'Baldosa Cerámica Cedasa · artículo 01-09-9094 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 61.29 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 339.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-negro-01099097',
+    nota: 'BALDOSA CERÁMICA LUXOR NEGRO · artículo 01-09-9097 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 348.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099096',
-    nota: 'Baldosa Cerámica · artículo 01-09-9096 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 64.03 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 389.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-blanco-01098571',
+    nota: 'BALDOSA CERÁMICA CEDASA BLANCO · artículo 01-09-8571 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 71.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 346.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01099092',
-    nota: 'Baldosa Cerámica · artículo 01-09-9092 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 63.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 848.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-idealle-01098016',
+    nota: 'BALDOSA CERÁMICA IDEALLE · artículo 01-09-8016 · ref. 32X575.41MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 156.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 640.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petrus-brown-01098007',
-    nota: 'Baldosa Cerámica Petrus Brown · artículo 01-09-8007 · ref. 32X575.41MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 118.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 427.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01097181',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-7181 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 78.64 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 375.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-01098570',
-    nota: 'Baldosa Cerámica Cedasa · artículo 01-09-8570 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 69.02 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 342.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selene-bege-01097171',
+    nota: 'BALDOSA CERÁMICA SELENE BEGE · artículo 01-09-7171 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.96 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 411.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098210',
-    nota: 'Baldosa Cerámica · artículo 01-09-8210 · ref. 32X585.39MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.39 piezas por m² según su propia referencia (RD$ 76.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 409.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fioranno-01098011',
+    nota: 'BALDOSA CERÁMICA FIORANNO · artículo 01-09-8011 · ref. 32X575.41MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 75.78 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 441.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-odessa-beige-01099143',
-    nota: 'Baldosa Cerámica Odessa Beige · artículo 01-09-9143 · ref. 32X575.41MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 81.57 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 401.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-panaro-bianco-01098012',
+    nota: 'BALDOSA CERÁMICA PANARO BIANCO · artículo 01-09-8012 · ref. 32X575.41MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 74.16 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 339.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-negro-01099097',
-    nota: 'Baldosa Cerámica Luxor Negro · artículo 01-09-9097 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 62.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 390.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-luxor-decor-01097783',
+    nota: 'BALDOSA CERÁMICA LUXOR DECOR · artículo 01-09-7783 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 71.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 389.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-blanco-01098571',
-    nota: 'Baldosa Cerámica Cedasa Blanco · artículo 01-09-8571 · ref. 32X585.44MT2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 71.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 420.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098233',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-8233 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 77.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_OCHOA, 848.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-idealle-01098016',
-    nota: 'Baldosa Cerámica Idealle · artículo 01-09-8016 · ref. 32X575.41MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5.41 piezas por m² según su propia referencia (RD$ 156.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-042', PROV_OCHOA, 411.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098210',
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-8210 · ref. 32X585.39MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.39 piezas por m² según su propia referencia (RD$ 76.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_FERREMIX, 460, {
+  c('MAT-08-042', PROV_FERREMIX, 460, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-hd-32-x-58',
     nota: 'Ceramia pared hd 4114 32x58 majopar brasil · artículo 49524 · marca Majopar brasileña. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_FERREMIX, 495, {
+  c('MAT-08-042', PROV_FERREMIX, 495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-cedasa-brasil',
     peso: 2,
     nota: 'Ceramia pared hd 2114 32x58 edasa brasil · artículo 49522 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-041', PROV_FERREMIX, 944, {
+  c('MAT-08-042', PROV_FERREMIX, 944, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-pared-32x58-lorenzza-brasil',
     peso: 2,
     nota: 'Ceramia pared 73048 32x58 lorenzza brasil · artículo 32573 · marca Brasileña. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-042', PROV_OCHOA, 1264.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-marengo-01098105',
-    nota: 'Baldosa Cerámica Rlv Brienz Marengo · artículo 01-09-8105 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 151.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-043', PROV_OCHOA, 1264.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-marengo-01098105',
+    nota: 'BALDOSA CERÁMICA RLV BRIENZ MARENGO · artículo 01-09-8105 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 151.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-042', PROV_OCHOA, 1162.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobogan-arena-01097557',
-    nota: 'Baldosa Cerámica Tobogan Arena · artículo 01-09-7557 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 139.58 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-043', PROV_OCHOA, 1162.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobogan-arena-01097557',
+    nota: 'BALDOSA CERÁMICA TOBOGAN ARENA · artículo 01-09-7557 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 139.58 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-042', PROV_IBERICA, 1640.18, {
+  c('MAT-08-043', PROV_IBERICA, 1640.18, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/claire-arena-mate-20x60/',
     nota: 'Claire Arena Mate 20×60 · artículo 016716 · ref. 20×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 470.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099001',
+  c('MAT-08-044', PROV_OCHOA, 1606.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soren-blanco-negro-01098826',
+    nota: 'BALDOSA CERÁMICA SOREN BLANCO‑NEGRO · artículo 01-09-8826 · ref. 30X605.55MT2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 289.43 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1472.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-arden-blanco-01099045',
+    nota: 'BALDOSA CERÁMICA ARDEN BLANCO · artículo 01-09-9045 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 265.28 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1226.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treves-grafito-01098924',
+    nota: 'BALDOSA CERÁMICA TREVES GRAFITO · artículo 01-09-8924 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 231.81 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1199.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shake-beige-01099059',
+    nota: 'BALDOSA CERÁMICA SHAKE BEIGE · artículo 01-09-9059 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 226.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1654.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soren-blanco-01098825',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA SOREN BLANCO · artículo 01-09-8825 · ref. 30X605.55MT2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 298.14 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 617.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-majolica-01098980',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA MAJOLICA · artículo 01-09-8980 · ref. 30X605.55MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 111.2 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1321.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muretto-alabama-perla-01097955',
+    nota: 'BALDOSA CERÁMICA MURETTO ALABAMA PERLA · artículo 01-09-7955 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 238.07 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 461.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lucca-antracite-01097519',
+    nota: 'BALDOSA CERÁMICA LUCCA ANTRACITE · artículo 01-09-7519 · ref. 31X61.85.21MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 5.21 piezas por m² según su propia referencia (RD$ 88.56 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1271.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nebula-mate-blanco-01098029',
+    nota: 'BALDOSA CERÁMICA NEBULA MATE BLANCO · artículo 01-09-8029 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 229.06 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 1162.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-babylon-beige-01098271',
+    nota: 'BALDOSA CERÁMICA BABYLON BEIGE · artículo 01-09-8271 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 216.49 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 576.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-madera-11165-01099157',
+    nota: 'PARED MADERA 11165 · artículo 01-09-9157 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 103.88 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 846.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01097552',
+    nota: 'BALDOSA CERÁMICA TRANSFER MARFIL · artículo 01-09-7552 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 157.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-044', PROV_OCHOA, 470.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099001',
     peso: 6,
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9001 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 84.83 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA SKYTOUCH · artículo 01-09-9001 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 84.83 por pieza). El comercio lista 6 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 6 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 504.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099005',
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9005 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 90.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 504.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099005',
+    nota: 'BALDOSA CERÁMICA SKYTOUCH · artículo 01-09-9005 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 90.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 474.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099000',
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9000 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 85.54 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 474.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099000',
+    nota: 'BALDOSA CERÁMICA SKYTOUCH · artículo 01-09-9000 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 85.54 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1634.42, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nebula-blanco-brillo-01097966',
-    nota: 'Baldosa Cerámica Nebula Blanco Brillo · artículo 01-09-7966 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 294.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1634.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nebula-blanco-brillo-01097966',
+    nota: 'BALDOSA CERÁMICA NEBULA BLANCO BRILLO · artículo 01-09-7966 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 294.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1066.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098125',
-    nota: 'Baldosa Cerámica Tripoli Mate Snow · artículo 01-09-8125 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 192.12 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1601.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-track-blanco-01098042',
+    nota: 'BALDOSA CERÁMICA TRACK BLANCO · artículo 01-09-8042 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 288.56 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1601.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-track-blanco-01098042',
-    nota: 'Baldosa Cerámica Track Blanco · artículo 01-09-8042 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 288.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1084.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-move-beige-01096963',
+    nota: 'BALDOSA CERÁMICA MOVE BEIGE · artículo 01-09-6963 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 205.04 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1084.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-move-beige-01096963',
-    nota: 'Baldosa Cerámica Move Beige · artículo 01-09-6963 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 205.04 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1220.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sonata-gris-01098880',
+    nota: 'BALDOSA CERÁMICA SONATA GRIS · artículo 01-09-8880 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1220.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sonata-gris-01098880',
-    nota: 'Baldosa Cerámica Sonata Gris · artículo 01-09-8880 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1033.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gard-ceniza-01098879',
+    nota: 'BALDOSA CERÁMICA GARD CENIZA · artículo 01-09-8879 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 195.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1033.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gard-ceniza-01098879',
-    nota: 'Baldosa Cerámica Gard Ceniza · artículo 01-09-8879 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 195.36 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 707.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099006',
+  c('MAT-08-044', PROV_OCHOA, 707.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-skytouch-01099006',
     peso: 2,
-    nota: 'Baldosa Cerámica Skytouch · artículo 01-09-9006 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 127.39 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA SKYTOUCH · artículo 01-09-9006 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 127.39 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1220.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tour-beige-01096964',
+  c('MAT-08-044', PROV_OCHOA, 1220.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tour-beige-01096964',
     peso: 2,
-    nota: 'Baldosa Cerámica Tour Beige · artículo 01-09-6964 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.65 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA TOUR BEIGE · artículo 01-09-6964 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 230.65 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 617.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-majolica-01098980',
-    peso: 2,
-    nota: 'Baldosa Cerámica Majolica · artículo 01-09-8980 · ref. 30X605.55MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 111.2 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1049.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-babylon-blanco-01098032',
+    nota: 'BALDOSA CERÁMICA BABYLON BLANCO · artículo 01-09-8032 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 198.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1321.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muretto-alabama-perla-01097955',
-    nota: 'Baldosa Cerámica Muretto Alabama Perla · artículo 01-09-7955 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 238.07 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1199.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-label-gris-01096806',
+    nota: 'BALDOSA CERÁMICA LABEL GRIS · artículo 01-09-6806 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 226.76 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1654.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-track-marfil-01098045',
-    nota: 'Baldosa Cerámica Track Marfil · artículo 01-09-8045 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 298.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1016.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dandy-gris-01098885',
+    nota: 'BALDOSA CERÁMICA DANDY GRIS · artículo 01-09-8885 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 192.12 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1049.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-babylon-blanco-01098032',
-    nota: 'Baldosa Cerámica Babylon Blanco · artículo 01-09-8032 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 198.45 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1072.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-axel-marfil-01098048',
+    nota: 'BALDOSA CERÁMICA AXEL MARFIL · artículo 01-09-8048 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 202.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1199.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-label-gris-01096806',
-    nota: 'Baldosa Cerámica Label Gris · artículo 01-09-6806 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 226.76 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1252.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01098852',
+    nota: 'BALDOSA CERÁMICA TRANSFER MARFIL · artículo 01-09-8852 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 236.79 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1016.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dandy-gris-01098885',
-    nota: 'Baldosa Cerámica Dandy Gris · artículo 01-09-8885 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 192.12 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 919.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-revestimiento-31x60-iris-01097433',
+    nota: 'BALDOSA REVESTIMIENTO 31X60 IRIS · artículo 01-09-7433 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 171.31 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1072.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-axel-marfil-01098048',
-    nota: 'Baldosa Cerámica Axel Marfil · artículo 01-09-8048 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 202.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1378.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-label-blanco-01096805',
+    nota: 'BALDOSA CERÁMICA LABEL BLANCO · artículo 01-09-6805 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 256.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 1252.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01098852',
-    nota: 'Baldosa Cerámica Transfer Marfil · artículo 01-09-8852 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 236.79 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-044', PROV_OCHOA, 1302.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-allegro-iris-01097423',
+    nota: 'BALDOSA ALLEGRO IRIS · artículo 01-09-7423 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 242.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_OCHOA, 919.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-revestimiento-31x60-iris-01097433',
-    nota: 'Baldosa Revestimiento 31X60 Iris · artículo 01-09-7433 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 171.31 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 461.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lucca-antracite-01097519',
-    nota: 'Baldosa Cerámica Lucca Antracite · artículo 01-09-7519 · ref. 31X61.85.21MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 5.21 piezas por m² según su propia referencia (RD$ 88.56 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 1271.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nebula-mate-blanco-01098029',
-    nota: 'Baldosa Cerámica Nebula Mate Blanco · artículo 01-09-8029 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 229.06 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 524.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rune-beige-01096476',
-    nota: 'Baldosa Cerámica Rune Beige · artículo 01-09-6476 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 94.57 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 576.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-madera-11165-01099157',
-    nota: 'Pared Madera 11165 · artículo 01-09-9157 · ref. 30X605.55MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 103.88 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 1378.69, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-label-blanco-01096805',
-    nota: 'Baldosa Cerámica Label Blanco · artículo 01-09-6805 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 256.74 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_OCHOA, 1302.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-allegro-iris-01097423',
-    nota: 'Baldosa Allegro Iris · artículo 01-09-7423 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 242.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-043', PROV_CERARTE, 655.28, {
+  c('MAT-08-044', PROV_CERARTE, 655.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mos-bianco-30x60',
     itbis: false,
     nota: 'MOS BIANCO 30X60 · artículo CERA-31335 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 689.7, {
+  c('MAT-08-044', PROV_CERARTE, 689.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/bico-de-jaca-azul-30x60',
     itbis: false,
     nota: 'BICO DE JACA AZUL 30X60 · artículo CERA-31336 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 775.73, {
+  c('MAT-08-044', PROV_CERARTE, 775.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/art-deco-blanc-30x60-ret',
     itbis: false,
     nota: 'ART DECO BLANC 30X60 RET · artículo CERA-32151 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 620.87, {
+  c('MAT-08-044', PROV_CERARTE, 620.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mos-pulpis-mix-30x60',
     itbis: false,
     nota: 'MOS PULPIS MIX 30X60 · artículo CERA-32152 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 355.01, {
+  c('MAT-08-044', PROV_CERARTE, 355.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ancestral-white-30x60',
     itbis: false,
     nota: 'ANCESTRAL WHITE 30X60 · artículo CERA-32304 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 355.2, {
+  c('MAT-08-044', PROV_CERARTE, 355.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/blossom-beach-30x60',
     itbis: false,
     nota: 'BLOSSOM BEACH 30X60 · artículo CERA-32306 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 678.1, {
+  c('MAT-08-044', PROV_CERARTE, 678.1, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/diamante-puro-30x60',
     itbis: false,
     nota: 'DIAMANTE PURO 30X60 · artículo CERA-32961 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 670.45, {
+  c('MAT-08-044', PROV_CERARTE, 670.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ondina-30x60-mate',
     itbis: false,
     nota: 'ONDINA 30X60 MATE · artículo CERA-33680 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1158.44, {
+  c('MAT-08-044', PROV_CERARTE, 1158.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-brick-ingles-33x605',
     itbis: false,
     nota: 'RV BRICK INGLES 33X60.5 · artículo CERA-34155 · ref. 30X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1043.99, {
+  c('MAT-08-044', PROV_CERARTE, 1043.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-brick-ingles-33x605',
     itbis: false,
     nota: 'RV BRICK INGLES 33X60.5 · artículo CERA-34156 · ref. 30X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 411.9, {
+  c('MAT-08-044', PROV_CERARTE, 411.9, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-veneto-32x59-rt',
     itbis: false,
     nota: 'RV VENETO 32X59 RT · artículo CERA-34567 · ref. 30X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 466.4, {
+  c('MAT-08-044', PROV_CERARTE, 466.4, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-maggie-30x60-rt',
     itbis: false,
     nota: 'RV MAGGIE 30X60 RT · artículo CERA-34599 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1321.34, {
+  c('MAT-08-044', PROV_CERARTE, 1321.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/geneve-30x60',
     itbis: false,
     nota: 'GENEVE 30X60 · artículo CERA-34633 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 947.53, {
+  c('MAT-08-044', PROV_CERARTE, 947.53, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/geneve-brick-30x60',
     itbis: false,
     nota: 'GENEVE BRICK 30X60 · artículo CERA-34636 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 385.99, {
+  c('MAT-08-044', PROV_CERARTE, 385.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-bege-brillo-32x59-rt',
     itbis: false,
     nota: 'RV BEGE BRILLO 32X59 RT · artículo CERA-34957 · ref. 30X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 544.64, {
+  c('MAT-08-044', PROV_CERARTE, 544.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-calacata-32x59-rt',
     itbis: false,
     nota: 'RV CALACATA 32X59 RT · artículo CERA-35966 · ref. 30X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 664.2, {
+  c('MAT-08-044', PROV_CERARTE, 664.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-marfil-30x60-rt',
     itbis: false,
     nota: 'CERÁMICA RV MARFIL 30X60 RT · artículo CERA-36158 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 658.23, {
+  c('MAT-08-044', PROV_CERARTE, 658.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-hueso-30x60-rt',
     itbis: false,
     peso: 2,
     nota: 'CERÁMICA RV HUESO 30X60 RT · artículo CERA-36159 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 679.68, {
+  c('MAT-08-044', PROV_CERARTE, 679.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-nieve-white-absoluto-30x60-rt-012493',
     itbis: false,
     nota: 'CERÁMICA RV NIEVE WHITE ABSOLUTO 30X60 RT · artículo CERA-36165 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 594.2, {
+  c('MAT-08-044', PROV_CERARTE, 594.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-nieve-white-cuadriculado-30x60-rt-012494',
     itbis: false,
     nota: 'CERÁMICA RV NIEVE WHITE CUADRICULADO 30X60 RT · artículo CERA-36161 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 667.67, {
+  c('MAT-08-044', PROV_CERARTE, 667.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-tiza-white-decorado-30x60-rt-012495',
     itbis: false,
     nota: 'CERÁMICA RV TIZA WHITE DECORADO 30X60 RT · artículo CERA-36162 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 660, {
+  c('MAT-08-044', PROV_CERARTE, 660, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-marmolizado-hueso-decorado-30x60-rt-012496',
     itbis: false,
     nota: 'CERÁMICA RV MARMOLIZADO HUESO DECORADO 30X60 RT · artículo CERA-36163 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 639.2, {
+  c('MAT-08-044', PROV_CERARTE, 639.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-marmolizado-blanco-cuadriculado-30x60-012497',
     itbis: false,
     nota: 'CERÁMICA RV MARMOLIZADO BLANCO CUADRICULADO 30X60 RT · artículo CERA-36164 · ref. 30X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1126.09, {
+  c('MAT-08-044', PROV_CERARTE, 1126.09, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-pris-pre-ponto-316x60',
     itbis: false,
     nota: 'CERAMICA RV PRIS. PRE. PONTO 31.6X60 · artículo CERA-36438 · ref. 30X60 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1126.11, {
+  c('MAT-08-044', PROV_CERARTE, 1126.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-pris-pre-ponto-316x60',
     itbis: false,
     nota: 'CERAMICA RV PRIS. PRE. PONTO 31.6X60 · artículo CERA-36436 · ref. 30X60 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 1078.14, {
+  c('MAT-08-044', PROV_CERARTE, 1078.14, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-rv-pris-pre-ponto-316x60',
     itbis: false,
     nota: 'CERAMICA RV PRIS. PRE. PONTO 31.6X60 · artículo CERA-36437 · ref. 30X60 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_CERARTE, 645.82, {
+  c('MAT-08-044', PROV_CERARTE, 645.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-glacial-33x60-rt',
     itbis: false,
     nota: 'CERAMICA GLACIAL 33X60 RT · artículo CERA-36652 · ref. 30X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-043', PROV_IBERICA, 1190, {
+  c('MAT-08-044', PROV_IBERICA, 1190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-brillo-rectificado-30x60/',
     nota: 'Blanco Brillo Rectificado 30×60 · artículo 019272 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_IBERICA, 1297.98, {
+  c('MAT-08-044', PROV_IBERICA, 1297.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-ice-brillo-30x60/',
     nota: 'Blanco Ice Brillo 30×60 · artículo 017141 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-043', PROV_IBERICA, 989.96, {
+  c('MAT-08-044', PROV_IBERICA, 989.96, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/blanco-mate-30x60/',
     nota: 'Blanco Mate 30×60 · artículo 018623 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-044', PROV_OCHOA, 1027.23, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-blanco-01095765',
-    nota: 'Baldosa Cerámica Toronto Blanco · artículo 01-09-5765 · ref. 31.6X605.27MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.27 piezas por m² según su propia referencia (RD$ 194.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-045', PROV_OCHOA, 1027.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-blanco-01095765',
+    nota: 'BALDOSA CERÁMICA TORONTO BLANCO · artículo 01-09-5765 · ref. 31.6X605.27MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.27 piezas por m² según su propia referencia (RD$ 194.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-044', PROV_IBERICA, 724.97, {
+  c('MAT-08-045', PROV_IBERICA, 724.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/esna-crema-brillo-33x60-5-2/',
     nota: 'Esna Crema Brillo 33×60.5 · artículo 017331 · ref. 33×60.5. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-045', PROV_OCHOA, 1195.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tabor-sand-01097101',
-    nota: 'Baldosa Cerámica Tabor Sand · artículo 01-09-7101 · ref. 60.8X60.82.70MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 442.67 por pieza). ' + SUPUESTO_ITBIS
-  });
   c('MAT-08-046', PROV_OCHOA, 199.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpha-taupe-01097090',
-    nota: 'Baldosa Cerámica Alpha Taupe · artículo 01-09-7090 · ref. 25X705.69MT/2 · marca ELISA. La tienda cotiza por pieza; van 5.69 piezas por m² según su propia referencia (RD$ 35.14 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpha-taupe-01097090',
+    nota: 'BALDOSA CERÁMICA ALPHA TAUPE · artículo 01-09-7090 · ref. 25X705.69MT/2 · marca ELISA. La tienda cotiza por pieza; van 5.69 piezas por m² según su propia referencia (RD$ 35.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1459.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-outline-gris-b-stone-01099134',
+    nota: 'BALDOSA CERÁMICA OUTLINE GRIS B‑STONE · artículo 01-09-9134 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 273.77 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1345.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-marfil-01098818',
+    nota: 'BALDOSA CERÁMICA HUDSON MARFIL · artículo 01-09-8818 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.4 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1327.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-moka-01098517',
-    nota: 'Baldosa Cerámica Atenea Moka · artículo 01-09-8517 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 249.12 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-moka-01098517',
+    nota: 'BALDOSA CERÁMICA ATENEA MOKA · artículo 01-09-8517 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 249.12 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-047', PROV_OCHOA, 1299.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-pri-01093615',
-    nota: 'Baldosa Cerámica Tripoli Blanco Pri · artículo 01-09-3615 · ref. 25X755.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 243.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-047', PROV_OCHOA, 1429.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-metric-marfil-01098820',
+    nota: 'BALDOSA CERÁMICA HUDSON METRIC MARFIL · artículo 01-09-8820 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 268.23 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1345.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-vicat-marfil-01098822',
+    nota: 'BALDOSA CERÁMICA SALONI VICAT MARFIL · artículo 01-09-8822 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.35 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1387.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-blanco-01098817',
+    nota: 'BALDOSA CERÁMICA HUDSON BLANCO · artículo 01-09-8817 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 260.26 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1291.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vicat-blanco-01098821',
+    nota: 'BALDOSA CERÁMICA VICAT BLANCO · artículo 01-09-8821 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 242.36 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1341.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-marfil-01098520',
-    nota: 'Baldosa Cerámica Atenea Marfil · artículo 01-09-8520 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 251.6 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-marfil-01098520',
+    nota: 'BALDOSA CERÁMICA ATENEA MARFIL · artículo 01-09-8520 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 251.6 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1277.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-axiom-blanco-01098819',
+    nota: 'BALDOSA CERÁMICA AXIOM BLANCO · artículo 01-09-8819 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.72 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1249.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanco-art-01098197',
-    nota: 'Baldosa Blanco Art · artículo 01-09-8197 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 234.34 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanco-art-01098197',
+    nota: 'BALDOSA BLANCO ART · artículo 01-09-8197 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 234.34 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1675.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-topo-01098521',
-    nota: 'Baldosa Cerámica Livorno Topo · artículo 01-09-8521 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 314.26 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-topo-01098521',
+    nota: 'BALDOSA CERÁMICA LIVORNO TOPO · artículo 01-09-8521 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 314.26 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1433.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-vicat-graphi-01098824',
+    nota: 'BALDOSA CERÁMICA SALONI VICAT GRAPHI · artículo 01-09-8824 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 269.04 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1382.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-01098518',
-    nota: 'Baldosa Cerámica Livorno · artículo 01-09-8518 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 259.39 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-01098518',
+    nota: 'BALDOSA CERÁMICA LIVORNO · artículo 01-09-8518 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 259.39 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1268.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-trellis-01098196',
-    nota: 'Baldosa Cerámica Essenza Trellis · artículo 01-09-8196 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 237.95 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-trellis-01098196',
+    nota: 'BALDOSA CERÁMICA ESSENZA TRELLIS · artículo 01-09-8196 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 237.95 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-047', PROV_OCHOA, 1220.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097949',
-    nota: 'Baldosa Cerámica Trentino Perla · artículo 01-09-7949 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 229.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-047', PROV_OCHOA, 1588.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saona-marfil-01096170',
-    nota: 'Baldosa Cerámica Saona Marfil · artículo 01-09-6170 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 298.07 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-047', PROV_OCHOA, 1055.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vicat-graphic-blanco-01098823',
+    nota: 'BALDOSA CERÁMICA VICAT GRAPHIC BLANCO · artículo 01-09-8823 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 198.04 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1275.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-perla-01098537',
-    nota: 'Baldosa Cerámica Livorno Perla · artículo 01-09-8537 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.27 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-perla-01098537',
+    nota: 'BALDOSA CERÁMICA LIVORNO PERLA · artículo 01-09-8537 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.27 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1513.24, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-undefasa-essenza-01098194',
-    nota: 'Baldosa Cerámica Undefasa Essenza · artículo 01-09-8194 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 283.91 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-047', PROV_OCHOA, 1257.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-loman-beige-01097945',
-    nota: 'Baldosa Cerámica Loman Beige · artículo 01-09-7945 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 236.02 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-undefasa-essenza-01098194',
+    nota: 'BALDOSA CERÁMICA UNDEFASA ESSENZA · artículo 01-09-8194 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 283.91 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1347.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-azul-01098534',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-azul-01098534',
     peso: 2,
-    nota: 'Baldosa Cerámica Chromatic Azul · artículo 01-09-8534 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-047', PROV_OCHOA, 1184.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-gris-01095782',
-    nota: 'Cerámica Etruscan Gris · artículo 01-09-5782 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 222.21 por pieza). ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA CHROMATIC AZUL · artículo 01-09-8534 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1250.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ardesia-flagstone-cenere-01098254',
-    nota: 'Ardesia Flagstone Cenere · artículo 01-09-8254 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 234.7 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ardesia-flagstone-cenere-01098254',
+    nota: 'ARDESIA FLAGSTONE CENERE · artículo 01-09-8254 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 234.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-047', PROV_OCHOA, 1279.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-degas-pearl-01096859',
-    nota: 'Baldosa Cerámica Degas Pearl · artículo 01-09-6859 · ref. 25X755.34MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 239.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-047', PROV_OCHOA, 1270.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-essenza-pad-01098195',
+    nota: 'CERÁMICA ESSENZA PAD · artículo 01-09-8195 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 238.34 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1043.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-irta-gris-concept-01098200',
-    nota: 'Baldosa Cerámica Irta Gris Concept · artículo 01-09-8200 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 195.71 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-irta-gris-concept-01098200',
+    nota: 'BALDOSA CERÁMICA IRTA GRIS CONCEPT · artículo 01-09-8200 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 195.71 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1189.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ardesia-flagstone-avorio-01098268',
-    nota: 'Ardesia Flagstone Avorio · artículo 01-09-8268 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 223.13 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ardesia-flagstone-avorio-01098268',
+    nota: 'ARDESIA FLAGSTONE AVORIO · artículo 01-09-8268 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 223.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-047', PROV_OCHOA, 1221.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-marfil-01097951',
-    nota: 'Baldosa Cerámica Trentino Marfil · artículo 01-09-7951 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 229.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-047', PROV_OCHOA, 1588.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saona-marfil-01096170',
+    nota: 'BALDOSA CERÁMICA SAONA MARFIL · artículo 01-09-6170 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 298.07 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1257.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-loman-beige-01097945',
+    nota: 'BALDOSA CERÁMICA LOMAN BEIGE · artículo 01-09-7945 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 236.02 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1184.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-gris-01095782',
+    nota: 'CERÁMICA ETRUSCAN GRIS · artículo 01-09-5782 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 222.21 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-047', PROV_OCHOA, 1279.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-degas-pearl-01096859',
+    nota: 'BALDOSA CERÁMICA DEGAS PEARL · artículo 01-09-6859 · ref. 25X755.34MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 239.68 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1468.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-beige-bend-01096592',
-    nota: 'Cerámica Etruscan Beige Bend · artículo 01-09-6592 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 275.47 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-beige-bend-01096592',
+    nota: 'CERÁMICA ETRUSCAN BEIGE BEND · artículo 01-09-6592 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 275.47 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_OCHOA, 1512.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-degas-beige-01096858',
-    nota: 'Baldosa Cerámica Degas Beige · artículo 01-09-6858 · ref. 25X755.34MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 283.16 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-047', PROV_OCHOA, 1149.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097948',
-    nota: 'Baldosa Cerámica Trentino Perla · artículo 01-09-7948 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 215.67 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-047', PROV_OCHOA, 883.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-marfil-01097947',
-    nota: 'Baldosa Cerámica Trentino Marfil · artículo 01-09-7947 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 165.82 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-degas-beige-01096858',
+    nota: 'BALDOSA CERÁMICA DEGAS BEIGE · artículo 01-09-6858 · ref. 25X755.34MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 283.16 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-047', PROV_CERARTE, 1391.47, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/terma-white-25x75',
@@ -3669,122 +3783,134 @@
     itbis: false,
     nota: 'RV LISBON ZELLIGE 30X75 RT · artículo CERA-35391 · ref. 35X75 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-050', PROV_OCHOA, 761.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selah-white-01097967',
-    nota: 'Baldosa Cerámica Selah White · artículo 01-09-7967 · ref. 38X753.5MT/2 · marca CECAFI. La tienda cotiza por pieza; van 3.5 piezas por m² según su propia referencia (RD$ 217.46 por pieza). ' + SUPUESTO_ITBIS
-  });
   c('MAT-08-050', PROV_OCHOA, 527.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lodz-rustic-plus-01099138',
-    nota: 'Baldosa Cerámica Lodz Rustic Plus · artículo 01-09-9138 · ref. 38X753.5MT/2 · marca CECAFI. La tienda cotiza por pieza; van 3.5 piezas por m² según su propia referencia (RD$ 150.65 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lodz-rustic-plus-01099138',
+    nota: 'BALDOSA CERÁMICA LODZ RUSTIC PLUS · artículo 01-09-9138 · ref. 38X753.5MT/2 · marca CECAFI. La tienda cotiza por pieza; van 3.5 piezas por m² según su propia referencia (RD$ 150.65 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-050', PROV_OCHOA, 761.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-selah-white-01097967',
+    nota: 'BALDOSA CERÁMICA SELAH WHITE · artículo 01-09-7967 · ref. 38X753.5MT/2 · marca CECAFI. La tienda cotiza por pieza; van 3.5 piezas por m² según su propia referencia (RD$ 217.46 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-051', PROV_OCHOA, 1679.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-mys-rlav-bco-brillo-01097880',
-    nota: 'At Mys Rlav Bco Brillo · artículo 01-09-7880 · ref. 36X803.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.47 piezas por m² según su propia referencia (RD$ 484.12 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-mys-rlav-bco-brillo-01097880',
+    nota: 'AT MYS RLAV BCO BRILLO · artículo 01-09-7880 · ref. 36X803.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.47 piezas por m² según su propia referencia (RD$ 484.12 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-051', PROV_OCHOA, 1343.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tabor-argent-01098137',
-    nota: 'Baldosa Cerámica Tabor Argent · artículo 01-09-8137 · ref. 36X803.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.47 piezas por m² según su propia referencia (RD$ 387.28 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tabor-argent-01098137',
+    nota: 'BALDOSA CERÁMICA TABOR ARGENT · artículo 01-09-8137 · ref. 36X803.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.47 piezas por m² según su propia referencia (RD$ 387.28 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1616.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origins-white-01099189',
-    nota: 'Baldosa Cerámica Origins White · artículo 01-09-9189 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 436.86 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origins-white-01099189',
+    nota: 'BALDOSA CERÁMICA ORIGINS WHITE · artículo 01-09-9189 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 436.86 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-052', PROV_OCHOA, 1216.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aria-blanco-01098878',
-    nota: 'Baldosa Cerámica Aria Blanco · artículo 01-09-8878 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 344.71 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1945.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palatina-blanco-01097969',
-    nota: 'Baldosa Cerámica Palatina Blanco · artículo 01-09-7969 · ref. 30X903.70MT/2 · marca HALCON. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 525.73 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1768.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-graphic-beige-01098922',
-    nota: 'Baldosa Cerámica Metallo Graphic Beige · artículo 01-09-8922 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 478.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1798.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essence-metric-marfil-care-01098886',
-    nota: 'Baldosa Cerámica Essence Metric Marfil Care · artículo 01-09-8886 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-052', PROV_OCHOA, 1304.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-metric-marfil-01098925',
+    nota: 'BALDOSA CERÁMICA CIRCE METRIC MARFIL · artículo 01-09-8925 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 369.55 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1825.69, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-grafico-01099192',
-    nota: 'Baldosa Cerámica Venato Gráfico · artículo 01-09-9192 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 493.43 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1345.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-01097974',
-    nota: 'Baldosa Cerámica Tripoli Blanco · artículo 01-09-7974 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 363.56 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1117.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-graphic-blanco-01098851',
-    nota: 'Baldosa Cerámica Circe Graphic Blanco · artículo 01-09-8851 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 316.56 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-grafico-01099192',
+    nota: 'BALDOSA CERÁMICA VENATO GRÁFICO · artículo 01-09-9192 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 493.43 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1225.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aria-metric-blanco-01098926',
-    nota: 'Baldosa Cerámica Aria Metric Blanco · artículo 01-09-8926 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 347.13 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aria-metric-blanco-01098926',
+    nota: 'BALDOSA CERÁMICA ARIA METRIC BLANCO · artículo 01-09-8926 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 347.13 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 2145.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-radiance-blanco-rg-01099158',
+    nota: 'BALDOSA CERÁMICA RADIANCE BLANCO RG · artículo 01-09-9158 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 579.89 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1850.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origins-graphic-white-01099190',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-origins-graphic-white-01099190',
     peso: 2,
-    nota: 'Baldosa Cerámica Origins Graphic White · artículo 01-09-9190 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 500.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA ORIGINS GRAPHIC WHITE · artículo 01-09-9190 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 500.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1829.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-metric-oak-01099193',
-    nota: 'Baldosa Cerámica Venatto Metric Oak · artículo 01-09-9193 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 494.49 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-metric-oak-01099193',
+    nota: 'BALDOSA CERÁMICA VENATTO METRIC OAK · artículo 01-09-9193 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 494.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-052', PROV_OCHOA, 924.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alba-perla-01096582',
-    nota: 'Baldosa Alba Perla · artículo 01-09-6582 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 249.87 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1128.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-alba-arena-01096836',
-    nota: 'Baldosa Cerámica Rlv Alba Arena · artículo 01-09-6836 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 304.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-052', PROV_OCHOA, 1034.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-graphic-marfil-01098923',
+    nota: 'BALDOSA CERÁMICA CIRCE GRAPHIC MARFIL · artículo 01-09-8923 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 292.98 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1811.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-virian-arena-01098422',
-    nota: 'Baldosa Cerámica Virian Arena · artículo 01-09-8422 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 480.63 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-virian-arena-01098422',
+    nota: 'BALDOSA CERÁMICA VIRIAN ARENA · artículo 01-09-8422 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 480.63 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1002.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-gris-01098655',
-    nota: 'Baldosa Cerámica Sable Gris · artículo 01-09-8655 · ref. 31X913.53MT2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 283.88 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1001.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-blanco-01098877',
-    nota: 'Baldosa Cerámica Sable Blanco · artículo 01-09-8877 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 283.78 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 2178.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sector-blanco-01097809',
-    nota: 'Baldosa Cerámica Sector Blanco · artículo 01-09-7809 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 577.92 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-052', PROV_OCHOA, 1061.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-gris-01097238',
-    nota: 'Baldosa Cerámica Tholos Gris · artículo 01-09-7238 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 281.64 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-gris-01098655',
+    nota: 'BALDOSA CERÁMICA SABLE GRIS · artículo 01-09-8655 · ref. 31X913.53MT2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 283.88 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1822.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanco-agora-01098424',
-    nota: 'Baldosa Blanco Agora · artículo 01-09-8424 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 492.46 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanco-agora-01098424',
+    nota: 'BALDOSA BLANCO AGORA · artículo 01-09-8424 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 492.46 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 954.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpha-blanco-01098467',
+    nota: 'BALDOSA CERÁMICA ALPHA BLANCO · artículo 01-09-8467 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 257.98 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1216.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aria-blanco-01098878',
+    nota: 'BALDOSA CERÁMICA ARIA BLANCO · artículo 01-09-8878 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 344.71 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1945.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palatina-blanco-01097969',
+    nota: 'BALDOSA CERÁMICA PALATINA BLANCO · artículo 01-09-7969 · ref. 30X903.70MT/2 · marca HALCON. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 525.73 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1768.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-graphic-beige-01098922',
+    nota: 'BALDOSA CERÁMICA METALLO GRAPHIC BEIGE · artículo 01-09-8922 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 478.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1798.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essence-metric-marfil-care-01098886',
+    nota: 'BALDOSA CERÁMICA ESSENCE METRIC MARFIL CARE · artículo 01-09-8886 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.21 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1117.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-graphic-blanco-01098851',
+    nota: 'BALDOSA CERÁMICA CIRCE GRAPHIC BLANCO · artículo 01-09-8851 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 316.56 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 924.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alba-perla-01096582',
+    nota: 'BALDOSA ALBA PERLA · artículo 01-09-6582 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 249.87 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1128.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-alba-arena-01096836',
+    nota: 'BALDOSA CERÁMICA RLV ALBA ARENA · artículo 01-09-6836 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 304.92 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1001.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-blanco-01098877',
+    nota: 'BALDOSA CERÁMICA SABLE BLANCO · artículo 01-09-8877 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 283.78 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 2178.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sector-blanco-01097809',
+    nota: 'BALDOSA CERÁMICA SECTOR BLANCO · artículo 01-09-7809 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 577.92 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-052', PROV_OCHOA, 1061.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-gris-01097238',
+    nota: 'BALDOSA CERÁMICA THOLOS GRIS · artículo 01-09-7238 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 281.64 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1806.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-perla-01097630',
-    nota: 'Baldosa Cerámica Tholos Perla · artículo 01-09-7630 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 479.16 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-perla-01097630',
+    nota: 'BALDOSA CERÁMICA THOLOS PERLA · artículo 01-09-7630 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 479.16 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 2326.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fluctus-blanco-01094457',
-    nota: 'Baldosa Cerámica Fluctus Blanco · artículo 01-09-4457 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 628.72 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fluctus-blanco-01094457',
+    nota: 'BALDOSA CERÁMICA FLUCTUS BLANCO · artículo 01-09-4457 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 628.72 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1054.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-alba-perla-01096584',
-    nota: 'Baldosa Cerámica Rlv Alba Perla · artículo 01-09-6584 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 284.88 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-alba-perla-01096584',
+    nota: 'BALDOSA CERÁMICA RLV ALBA PERLA · artículo 01-09-6584 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 284.88 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 1743.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lumina-blanco-mate-01096480',
-    nota: 'Baldosa Cerámica Lumina Blanco Mate · artículo 01-09-6480 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 462.52 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lumina-blanco-mate-01096480',
+    nota: 'BALDOSA CERÁMICA LUMINA BLANCO MATE · artículo 01-09-6480 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 462.52 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 544.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-beige-01098859',
-    nota: 'Baldosa Cerámica Way Beige · artículo 01-09-8859 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 147.08 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-beige-01098859',
+    nota: 'BALDOSA CERÁMICA WAY BEIGE · artículo 01-09-8859 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 147.08 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_OCHOA, 401.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-grafito-01097631',
-    nota: 'Baldosa Cerámica Tholos Grafito · artículo 01-09-7631 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 106.46 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tholos-grafito-01097631',
+    nota: 'BALDOSA CERÁMICA THOLOS GRAFITO · artículo 01-09-7631 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 106.46 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-052', PROV_CERARTE, 1613.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/leeds-30x90',
@@ -3924,2436 +4050,2135 @@
     nota: 'Divine Harlem Decor Taupe Mate Rect 33.3×90 · artículo 017594 · ref. 33.3×90. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-054', PROV_OCHOA, 2506.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kore-gris-01097016',
-    nota: 'Baldosa Cerámica Kore Gris · artículo 01-09-7016 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 1019.06 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kore-gris-01097016',
+    nota: 'BALDOSA CERÁMICA KORE GRIS · artículo 01-09-7016 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 1019.06 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-054', PROV_CERARTE, 1552.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zebra-cinza-45x90-ret',
     itbis: false,
     nota: 'ZEBRA CINZA 45X90 RET · artículo CERA-33681 · ref. 45X90 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-055', PROV_OCHOA, 1505.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/vegetal-palm-1-trend-green-mate-01098449',
-    nota: 'Vegetal Palm 1. / Trend Green Mate · artículo 01-09-8449 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 501.76 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-055', PROV_OCHOA, 1333.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-royal-trend-blue-01098450',
-    nota: 'Baldosa Cerámica Royal Trend Blue · artículo 01-09-8450 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 444.52 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-056', PROV_CERARTE, 1145.76, {
+  c('MAT-08-055', PROV_CERARTE, 1145.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/gran-urbano-46x100-rt',
     itbis: false,
     peso: 2,
     nota: 'GRAN URBANO 46X100 RT · artículo CERA-33695 · ref. 45X100 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-057', PROV_CERARTE, 664.44, {
+  c('MAT-08-056', PROV_CERARTE, 664.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-saturno-ppi56940r-54x109-rt',
     itbis: false,
     nota: 'PV SATURNO PPI56940R 54X109 RT · artículo CERA-34616 · ref. 55X110 · marca INCEFRA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-058', PROV_OCHOA, 806.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-polido-gran-01099084',
-    nota: 'Baldosa Polido Gran · artículo 01-09-9084 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 510.47 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-057', PROV_OCHOA, 806.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-polido-gran-01099084',
+    nota: 'BALDOSA POLIDO GRAN · artículo 01-09-9084 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 510.47 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-058', PROV_OCHOA, 489.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dunas-mate-01099089',
-    nota: 'Baldosa Cerámica Dunas Mate · artículo 01-09-9089 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 309.8 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-057', PROV_OCHOA, 489.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dunas-mate-01099089',
+    nota: 'BALDOSA CERÁMICA DUNAS MATE · artículo 01-09-9089 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 309.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-058', PROV_FERREMIX, 750, {
+  c('MAT-08-057', PROV_FERREMIX, 750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-urban-concreto-56x113-brasil',
     nota: 'Ceramia piso urban onreto 56 x 113 edasa brasil · artículo 49544 · marca Génerico. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-058', PROV_FERREMIX, 975, {
+  c('MAT-08-057', PROV_FERREMIX, 975, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-gris-alboran-polido-gran-56x113-brasil',
     peso: 4,
     nota: 'Ceramia piso gris alboran polido gran 56 x 113 brasil · artículo 49541 · marca Génerico. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-059', PROV_OCHOA, 669.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-canela-slim-01098799',
-    nota: 'Baldosa Cerámica Piso Madera Canela Slim · artículo 01-09-8799 · ref. 18X1144.92MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.92 piezas por m² según su propia referencia (RD$ 136.03 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-058', PROV_OCHOA, 669.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-canela-slim-01098799',
+    nota: 'BALDOSA CERÁMICA PISO MADERA CANELA SLIM · artículo 01-09-8799 · ref. 18X1144.92MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.92 piezas por m² según su propia referencia (RD$ 136.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-059', PROV_OCHOA, 737.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-jacaranda-01098800',
-    nota: 'Baldosa Cerámica Piso Madera Jacarandá · artículo 01-09-8800 · ref. 18X1144.69MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.69 piezas por m² según su propia referencia (RD$ 157.22 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-058', PROV_OCHOA, 737.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-jacaranda-01098800',
+    nota: 'BALDOSA CERÁMICA PISO MADERA JACARANDÁ · artículo 01-09-8800 · ref. 18X1144.69MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.69 piezas por m² según su propia referencia (RD$ 157.22 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-059', PROV_OCHOA, 743.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-amendoa-slim-01098798',
-    nota: 'Baldosa Cerámica Piso Madera Amêndoa Slim · artículo 01-09-8798 · ref. 18X1144.69MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.69 piezas por m² según su propia referencia (RD$ 158.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-058', PROV_OCHOA, 743.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-madera-amendoa-slim-01098798',
+    nota: 'BALDOSA CERÁMICA PISO MADERA AMÊNDOA SLIM · artículo 01-09-8798 · ref. 18X1144.69MT2 · marca CEDASA. La tienda cotiza por pieza; van 4.69 piezas por m² según su propia referencia (RD$ 158.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-060', PROV_OCHOA, 4005.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yoho-oak-01098431',
-    peso: 2,
-    nota: 'Baldosa Cerámica Yoho Oak · artículo 01-09-8431 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 696.55 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-060', PROV_OCHOA, 3981.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-opera-silver-01099178',
-    peso: 4,
-    nota: 'Baldosa Cerámica Opera Silver · artículo 01-09-9178 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 692.37 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-060', PROV_OCHOA, 3429.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-perla-01098587',
-    nota: 'Baldosa Cerámica Venatto Perla · artículo 01-09-8587 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 596.47 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-060', PROV_OCHOA, 3991.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marble-crema-marfil-01096897',
-    nota: 'Baldosa Ceramica Marble Crema Marfil · artículo 01-09-6897 · ref. 15X120 · marca EXAGRES. La tienda cotiza por pieza; van 6.67 piezas por m² según su propia referencia (RD$ 598.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-060', PROV_OCHOA, 2578.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-gris-01098436',
-    nota: 'Baldosa Cerámica Milan Gris · artículo 01-09-8436 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 448.47 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-060', PROV_IBERICA, 1690, {
+  c('MAT-08-059', PROV_IBERICA, 1690, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/vinilico-grandwood-342-souffle-15x124-5-4/',
     nota: 'Vinilico Grandwood 342 Souffle 15×124.5 · artículo 017604 · ref. 15×124.5. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-061', PROV_OCHOA, 1980.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-uppsala-indigo-01097213',
-    nota: 'Baldosa Cerámica Uppsala Indigo · artículo 01-09-7213 · ref. 20X1204.21MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 470.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-060', PROV_OCHOA, 2390.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oslo-gris-01097680',
+    nota: 'BALDOSA CERÁMICA OSLO GRIS · artículo 01-09-7680 · ref. 19.5X1204.21MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 567.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-061', PROV_OCHOA, 1732.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-natural-01098695',
-    nota: 'Baldosa Cerámica Bergen Natural · artículo 01-09-8695 · ref. 19.5X119.54.23MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 409.48 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-061', PROV_OCHOA, 2036.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-misten-arena-metric-byblos-01099289',
+    nota: 'SA MISTEN ARENA (METRIC) BYBLOS · artículo 01-09-9289 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 979.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-061', PROV_OCHOA, 2292.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-antislip-ceniza-01096865',
-    nota: 'Baldosa Cerámica Bergen Antislip Ceniza · artículo 01-09-6865 · ref. 19.5X119.54.23MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 542.02 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-061', PROV_OCHOA, 2390.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oslo-gris-01097680',
-    nota: 'Baldosa Cerámica Oslo Gris · artículo 01-09-7680 · ref. 19.5X1204.21MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 567.8 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-062', PROV_OCHOA, 1327.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-roble-01098458',
+  c('MAT-08-061', PROV_OCHOA, 1883.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-pigmenta-ambar-01099291',
     peso: 2,
-    nota: 'Baldosa Cerámica Acadian Roble · artículo 01-09-8458 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 366.76 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'SA PIGMENTA AMBAR · artículo 01-09-9291 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 905.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-062', PROV_OCHOA, 1295.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-haya-01098457',
-    nota: 'Baldosa Cerámica Acadian Haya · artículo 01-09-8457 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 357.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-061', PROV_OCHOA, 2779.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-faces-ceniza-01097561',
+    nota: 'BALDOSA CERÁMICA FACES CENIZA · artículo 01-09-7561 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1323.61 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-062', PROV_OCHOA, 1291.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-natural-01098455',
-    nota: 'Baldosa Cerámica Acadian Natural · artículo 01-09-8455 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 356.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-061', PROV_OCHOA, 3746.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-blanco-01097816',
+    nota: 'BALDOSA CERÁMICA FONTANA BLANCO · artículo 01-09-7816 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1801.19 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-062', PROV_OCHOA, 1253.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acadian-ceniza-01098456',
-    nota: 'Baldosa Cerámica Acadian Ceniza · artículo 01-09-8456 · ref. 23X1203.62MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 346.29 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-061', PROV_OCHOA, 1921.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-forest-blanco-01098677',
+    nota: 'BALDOSA CERÁMICA FOREST BLANCO · artículo 01-09-8677 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 923.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 1925.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-blanco-mate-care-01099044',
-    nota: 'Baldosa Cerámica Snow Blanco Mate Care · artículo 01-09-9044 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 925.66 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 823.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-ivory-01098868',
+    nota: 'BALDOSA CERÁMICA CABRIO IVORY · artículo 01-09-8868 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.53 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 2083.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-snow-blanco-brillo-care-01099043',
-    nota: 'Baldosa Cerámica Snow Blanco Brillo Care · artículo 01-09-9043 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1001.83 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 819.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-calacatta-venato-01098704',
+    nota: 'BALDOSA CERÁMICA CALACATTA VENATO · artículo 01-09-8704 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 2072.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vector-crema-miel-01098502',
-    nota: 'Baldosa Cerámica Vector Crema Miel · artículo 01-09-8502 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 996.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 1281.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-grey-01098866',
+    nota: 'BALDOSA CERÁMICA CABRIO GREY · artículo 01-09-8866 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 928.85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 2036.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-misten-arena-metric-byblos-01099289',
-    nota: 'Sa Misten Arena (Metric) Byblos · artículo 01-09-9289 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 979.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 822.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-silver-01098867',
+    nota: 'BALDOSA CERÁMICA CABRIO SILVER · artículo 01-09-8867 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 2461.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bernini-crema-01098588',
-    nota: 'Baldosa Cerámica Bernini Crema · artículo 01-09-8588 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1183.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 2077.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-antislip-gris-01098751',
+    nota: 'BALDOSA CERÁMICA DIVERSO ANTISLIP GRIS · artículo 01-09-8751 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1505.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 1883.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-pigmenta-ambar-01099291',
-    peso: 2,
-    nota: 'Sa Pigmenta Ambar · artículo 01-09-9291 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 905.32 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 1855.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-pizarra-01098310',
+    nota: 'BALDOSA CERÁMICA CAPITOL PIZARRA · artículo 01-09-8310 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1344.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 2779.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-faces-ceniza-01097561',
-    nota: 'Baldosa Cerámica Faces Ceniza · artículo 01-09-7561 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1323.61 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 1829.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-beige-01098309',
+    nota: 'BALDOSA CERÁMICA CAPITOL BEIGE · artículo 01-09-8309 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1325.42 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 3746.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-blanco-01097816',
-    nota: 'Baldosa Cerámica Fontana Blanco · artículo 01-09-7816 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1801.19 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 2201.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-antislip-antracita-01099070',
+    nota: 'BALDOSA CERÁMICA DIVERSO ANTISLIP ANTRACITA · artículo 01-09-9070 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1595.55 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 1624.23, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-manaos-white-01098612',
-    nota: 'Baldosa Cerámica Rlv Manaos White · artículo 01-09-8612 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 780.88 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 2372.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-novella-dark-green-01098560',
+    nota: 'BALDOSA CERÁMICA NOVELLA DARK GREEN · artículo 01-09-8560 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1719.2 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-063', PROV_OCHOA, 1921.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-forest-blanco-01098677',
-    nota: 'Baldosa Cerámica Forest Blanco · artículo 01-09-8677 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 923.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-062', PROV_OCHOA, 2413.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nirvana-gold-01098749',
+    nota: 'BALDOSA CERÁMICA NIRVANA GOLD · artículo 01-09-8749 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1749.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-064', PROV_OCHOA, 823.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-ivory-01098868',
-    nota: 'Baldosa Cerámica Cabrio Ivory · artículo 01-09-8868 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 819.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-calacatta-venato-01098704',
-    nota: 'Baldosa Cerámica Calacatta Venato · artículo 01-09-8704 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1281.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-grey-01098866',
-    nota: 'Baldosa Cerámica Cabrio Grey · artículo 01-09-8866 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 928.85 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 822.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cabrio-silver-01098867',
-    nota: 'Baldosa Cerámica Cabrio Silver · artículo 01-09-8867 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.24 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2077.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-antislip-gris-01098751',
-    nota: 'Baldosa Cerámica Diverso Antislip Gris · artículo 01-09-8751 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1505.7 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1855.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-pizarra-01098310',
-    nota: 'Baldosa Cerámica Capitol Pizarra · artículo 01-09-8310 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1344.74 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2737.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toscana-gris-01098561',
-    nota: 'Baldosa Cerámica Toscana Gris · artículo 01-09-8561 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1983.72 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1722.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-blanco-01098460',
-    nota: 'Baldosa Cerámica Murano Blanco · artículo 01-09-8460 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1247.85 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1829.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-beige-01098309',
-    nota: 'Baldosa Cerámica Capitol Beige · artículo 01-09-8309 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1325.42 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1672.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-marfil-01098459',
-    nota: 'Baldosa Cerámica Murano Marfil · artículo 01-09-8459 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1212.23 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2201.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-antislip-antracita-01099070',
-    nota: 'Baldosa Cerámica Diverso Antislip Antracita · artículo 01-09-9070 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1595.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2244.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byblos-ceniza-01098262',
-    nota: 'Baldosa Cerámica Byblos Ceniza · artículo 01-09-8262 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1626.32 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2372.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-novella-dark-green-01098560',
-    nota: 'Baldosa Cerámica Novella Dark Green · artículo 01-09-8560 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1719.2 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 2413.77, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nirvana-gold-01098749',
-    nota: 'Baldosa Cerámica Nirvana Gold · artículo 01-09-8749 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1749.11 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_OCHOA, 1454.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-perla-01098461',
-    nota: 'Baldosa Cerámica Murano Perla · artículo 01-09-8461 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1054.31 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-064', PROV_CERARTE, 1328.57, {
+  c('MAT-08-062', PROV_CERARTE, 1328.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-calacata-gold-lux-63x122-rt',
     itbis: false,
     nota: 'PV CALACATA GOLD LUX 63X122 RT · artículo CERA-34766 · ref. 60X120 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-064', PROV_CERARTE, 1082.08, {
+  c('MAT-08-062', PROV_CERARTE, 1082.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-montreal-beige-64x123-rt',
     itbis: false,
     peso: 2,
     nota: 'PV MONTREAL BEIGE 64X123 RT · artículo CERA-34767 · ref. 60X120 · marca EMBRAMACO. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-065', PROV_OCHOA, 741.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-quadra-liscio-01096491',
-    nota: 'Baldosa Cerámica Quadra Liscio · artículo 01-09-6491 · ref. 15X1544.00MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 16.86 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-063', PROV_OCHOA, 741.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-quadra-liscio-01096491',
+    nota: 'BALDOSA CERÁMICA QUADRA LISCIO · artículo 01-09-6491 · ref. 15X1544.00MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 16.86 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-065', PROV_IBERICA, 1889.91, {
+  c('MAT-08-063', PROV_IBERICA, 1889.91, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/quarry-tile-rojo-15x15/',
     nota: 'Quarry Tile Rojo 15×15 · artículo 019103 · ref. 15×15. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-065', PROV_BELLON, 2174.92, {
+  c('MAT-08-063', PROV_BELLON, 2174.92, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 15 x 15 Cm 1A 44/Mt Cifer Bali Black MT Antideslizante · artículo 235570. La tienda cobra por pieza y declara 44 piezas por m²; aquí va el precio del m² (RD$ 49.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-066', PROV_CERARTE, 2571.07, {
+  c('MAT-08-064', PROV_CERARTE, 2571.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcel-sl-meridia-75x150',
     itbis: false,
     nota: 'PORCEL. SL MERIDIA 75X150 · artículo CERA-36794 · ref. 75X150 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-066', PROV_CERARTE, 2539.67, {
+  c('MAT-08-064', PROV_CERARTE, 2539.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcel-sl-meridia-75x150',
     itbis: false,
     nota: 'PORCEL. SL MERIDIA 75X150 · artículo CERA-36868 · ref. 75X150 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-066', PROV_CERARTE, 2568.65, {
+  c('MAT-08-064', PROV_CERARTE, 2568.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcel-sl-meridia-75x150',
     itbis: false,
     nota: 'PORCEL. SL MERIDIA 75X150 · artículo CERA-36793 · ref. 75X150 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-067', PROV_OCHOA, 324.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-zambi-marron-01095580',
-    nota: 'Baldosa Cerámica Zambi Marrón · artículo 01-09-5580 · ref. 20X2025.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 25 piezas por m² según su propia referencia (RD$ 12.97 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-065', PROV_OCHOA, 324.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-zambi-marron-01095580',
+    nota: 'BALDOSA CERÁMICA ZAMBI MARRÓN · artículo 01-09-5580 · ref. 20X2025.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 25 piezas por m² según su propia referencia (RD$ 12.97 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-068', PROV_OCHOA, 2595, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sysley-1-01097104',
-    nota: 'Baldosa Cerámica Sysley 1 · artículo 01-09-7104 · ref. 22.3X22.320MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 20 piezas por m² según su propia referencia (RD$ 129.75 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-069', PROV_IBERICA, 2989.56, {
+  c('MAT-08-066', PROV_IBERICA, 2989.56, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mallorca-natural-brillo-7-5x30/',
     nota: 'Mallorca Natural Brillo 7.5×30 · artículo 019372 · ref. 7.5×30. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-070', PROV_IBERICA, 948.15, {
+  c('MAT-08-067', PROV_IBERICA, 948.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/colours-blanco-mt-33-3x33-3/',
     nota: 'Colours blanco MT 33.3×33.3 · artículo 018096 · ref. 33.3×33.3. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-070', PROV_IBERICA, 850, {
+  c('MAT-08-067', PROV_IBERICA, 850, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/onda-terracota-antislip-33-3x33-3/',
     nota: 'Onda Terracota Antislip 33.3×33.3 · artículo 018116 · ref. 33.3×33.3. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 425, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-espanha-01097895',
-    nota: 'Baldosa Cerámica Espanha · artículo 01-09-7895 · ref. 45X455.0MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 85 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 425, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-espanha-01097895',
+    nota: 'BALDOSA CERÁMICA ESPANHA · artículo 01-09-7895 · ref. 45X455.0MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 401.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-san-marino-01092405',
+  c('MAT-08-068', PROV_OCHOA, 401.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-san-marino-01092405',
     peso: 2,
-    nota: 'Baldosa Cerámica Piso San Marino · artículo 01-09-2405 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.33 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA PISO SAN MARINO · artículo 01-09-2405 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.33 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 717.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-volcan-01097821',
-    nota: 'Baldosa Cerámica Everest Volcan · artículo 01-09-7821 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.44 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 717.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-volcan-01097821',
+    nota: 'BALDOSA CERÁMICA EVEREST VOLCAN · artículo 01-09-7821 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.44 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 714.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-orisha-beige-01099013',
+  c('MAT-08-068', PROV_OCHOA, 714.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-orisha-beige-01099013',
     peso: 3,
-    nota: 'Baldosa Cerámica Orisha Beige · artículo 01-09-9013 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA ORISHA BEIGE · artículo 01-09-9013 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 407, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-baltimore-01097894',
-    nota: 'Baldosa Cerámica Baltimore · artículo 01-09-7894 · ref. 45X455.0MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.4 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 407, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-baltimore-01097894',
+    nota: 'BALDOSA CERÁMICA BALTIMORE · artículo 01-09-7894 · ref. 45X455.0MT/2 · marca IDEALLE. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.4 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 408.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-anthem-white-plus-01097898',
+  c('MAT-08-068', PROV_OCHOA, 408.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-anthem-white-plus-01097898',
     peso: 2,
-    nota: 'Baldosa Cerámica Anthem White Plus · artículo 01-09-7898 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.66 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA ANTHEM WHITE PLUS · artículo 01-09-7898 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 81.66 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 720.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pebbles-merida-ext-01096668',
+  c('MAT-08-068', PROV_OCHOA, 720.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pebbles-merida-ext-01096668',
     peso: 4,
-    nota: 'Baldosa Cerámica Pebbles Mérida Ext. · artículo 01-09-6668 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA PEBBLES MÉRIDA EXT. · artículo 01-09-6668 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 702.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-ocre-01097820',
-    nota: 'Baldosa Cerámica Everest Ocre · artículo 01-09-7820 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 142.41 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 702.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-ocre-01097820',
+    nota: 'BALDOSA CERÁMICA EVEREST OCRE · artículo 01-09-7820 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 142.41 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 710.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-01096893',
+  c('MAT-08-068', PROV_OCHOA, 746.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-medina-beige-01098948',
+    nota: 'BALDOSA CERÁMICA MEDINA BEIGE · artículo 01-09-8948 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.35 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 746.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-medina-gris-01098949',
+    nota: 'BALDOSA CERÁMICA MEDINA GRIS · artículo 01-09-8949 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.32 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 710.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pebbles-sand-ext-01096093',
+    nota: 'BALDOSA CERÁMICA PEBBLES SAND EXT. · artículo 01-09-6093 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.13 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 716.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tasos-ext-mix-01099014',
+    nota: 'BALDOSA CERÁMICA TASOS EXT MIX · artículo 01-09-9014 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.36 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 718.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-beige-01097822',
+    nota: 'BALDOSA CERÁMICA EVEREST BEIGE · artículo 01-09-7822 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.66 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 676.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oasis-beige-01096747',
+    nota: 'BALDOSA CERÁMICA OASIS BEIGE · artículo 01-09-6747 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 137.27 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-068', PROV_OCHOA, 806.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oliana-beige-anti-01093520',
     peso: 2,
-    nota: 'Baldosa Cerámica Blanco · artículo 01-09-6893 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.13 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA OLIANA BEIGE ANTI · artículo 01-09-3520 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.64 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 746.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-medina-beige-01098948',
-    nota: 'Baldosa Cerámica Medina Beige · artículo 01-09-8948 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 441.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/piso-branco-neve-plus-brillo-02125-01099047',
+    nota: 'PISO BRANCO NEVE PLUS BRILLO 02125 · artículo 01-09-9047 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 88.25 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 746.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-medina-gris-01098949',
-    nota: 'Baldosa Cerámica Medina Gris · artículo 01-09-8949 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 371.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-volterra-plus-01098006',
+    nota: 'BALDOSA CERÁMICA PISO VOLTERRA PLUS · artículo 01-09-8006 · ref. 45X455.00MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 74.25 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 716.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tasos-ext-mix-01099014',
-    nota: 'Baldosa Cerámica Tasos Ext Mix · artículo 01-09-9014 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 517.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-toledo-01097897',
+    nota: 'BALDOSA CERÁMICA PISO TOLEDO · artículo 01-09-7897 · ref. 45X455.0MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 103.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 718.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-everest-beige-01097822',
-    nota: 'Baldosa Cerámica Everest Beige · artículo 01-09-7822 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.66 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 676.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oasis-beige-01096747',
-    nota: 'Baldosa Cerámica Oasis Beige · artículo 01-09-6747 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 137.27 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 806.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oliana-beige-anti-01093520',
+  c('MAT-08-068', PROV_OCHOA, 714.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caiman-gris-01097825',
     peso: 2,
-    nota: 'Baldosa Cerámica Oliana Beige Anti · artículo 01-09-3520 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.64 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA CAIMAN GRIS · artículo 01-09-7825 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 441.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/piso-branco-neve-plus-brillo-02125-01099047',
-    nota: 'Piso Branco Neve Plus Brillo 02125 · artículo 01-09-9047 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 88.25 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 733.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-crema-01098869',
+    nota: 'BALDOSA CERÁMICA FONTANA CREMA · artículo 01-09-8869 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 148.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 371.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-volterra-plus-01098006',
-    nota: 'Baldosa Cerámica Piso Volterra Plus · artículo 01-09-8006 · ref. 45X455.00MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 74.25 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 828.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-tiza-01098871',
+    nota: 'BALDOSA CERÁMICA FONTANA TIZA · artículo 01-09-8871 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 168 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 517.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-toledo-01097897',
-    nota: 'Baldosa Cerámica Piso Toledo · artículo 01-09-7897 · ref. 45X455.0MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 103.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1303.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-gris-01097700',
+    nota: 'BALDOSA CERÁMICA IROCO GRIS · artículo 01-09-7700 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 264.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 719.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treviso-ceniza-01098140',
-    nota: 'Baldosa Cerámica Treviso Ceniza · artículo 01-09-8140 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.93 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 797.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-exterior-mate-01099015',
+    nota: 'BALDOSA CERÁMICA MILAN EXTERIOR MATE · artículo 01-09-9015 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 161.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 714.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caiman-gris-01097825',
-    peso: 2,
-    nota: 'Baldosa Cerámica Caiman Gris · artículo 01-09-7825 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 719.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-jorcal-perla-01096745',
+    nota: 'BALDOSA CERÁMICA JORCAL PERLA · artículo 01-09-6745 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 822.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-beige-01085658',
-    nota: 'Baldosa Cerámica Tobago Beige · artículo 01-08-5658 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 166.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 680.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dorsey-exterior-01096740',
+    nota: 'BALDOSA CERÁMICA DORSEY EXTERIOR · artículo 01-09-6740 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 138.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 733.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-crema-01098869',
-    nota: 'Baldosa Cerámica Fontana Crema · artículo 01-09-8869 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 148.7 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 713.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fosil-beige-01096742',
+    nota: 'BALDOSA CERÁMICA FOSIL BEIGE · artículo 01-09-6742 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 828.24, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fontana-tiza-01098871',
-    nota: 'Baldosa Cerámica Fontana Tiza · artículo 01-09-8871 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 168 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 845.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-dream-perla-mate-01098091',
+    nota: 'BALDOSA DREAM PERLA MATE · artículo 01-09-8091 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 171.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 401.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-estocolmo-beige-01099139',
-    nota: 'Baldosa Cerámica Estocolmo Beige · artículo 01-09-9139 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1257.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-ivory-01096726',
+    nota: 'BALDOSA CERÁMICA IROCO IVORY · artículo 01-09-6726 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 255.05 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 1303.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-gris-01097700',
-    nota: 'Baldosa Cerámica Iroco Gris · artículo 01-09-7700 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 264.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 807.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cement-beige-01098075',
+    nota: 'BALDOSA CERÁMICA CEMENT BEIGE · artículo 01-09-8075 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.83 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 811.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-perla-01097314',
-    nota: 'Baldosa Cerámica Badem Perla · artículo 01-09-7314 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.65 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 777.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ermitage-01097159',
+    nota: 'BALDOSA CERÁMICA ERMITAGE · artículo 01-09-7159 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 157.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 797.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-exterior-mate-01099015',
-    nota: 'Baldosa Cerámica Milan Exterior Mate · artículo 01-09-9015 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 161.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1208.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dolomiti-beige-01097723',
+    nota: 'BALDOSA CERÁMICA DOLOMITI BEIGE · artículo 01-09-7723 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 245.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 719.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-jorcal-perla-01096745',
-    nota: 'Baldosa Cerámica Jorcal Perla · artículo 01-09-6745 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 434.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acacia-01099185',
+    nota: 'BALDOSA CERÁMICA ACACIA · artículo 01-09-9185 · ref. 45X455.0MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 86.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 680.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dorsey-exterior-01096740',
-    nota: 'Baldosa Cerámica Dorsey Exterior · artículo 01-09-6740 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 138.13 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1288.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-teka-01096727',
+    nota: 'BALDOSA CERÁMICA IROCO TEKA · artículo 01-09-6727 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 261.31 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 713.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fosil-beige-01096742',
-    nota: 'Baldosa Cerámica Fosil Beige · artículo 01-09-6742 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1136.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cement-gris-01098074',
+    nota: 'BALDOSA CERÁMICA CEMENT GRIS · artículo 01-09-8074 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 230.54 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 845.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-dream-perla-mate-01098091',
-    nota: 'Baldosa Dream Perla Mate · artículo 01-09-8091 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 171.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 666.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marble-beige-01095086',
+    nota: 'BALDOSA CERÁMICA MARBLE BEIGE · artículo 01-09-5086 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 371.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velum-gray-01099140',
-    nota: 'Baldosa Cerámica Velum Gray · artículo 01-09-9140 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 74.28 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 384.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alaska-plus-01098556',
+    nota: 'BALDOSA CERÁMICA ALASKA PLUS · artículo 01-09-8556 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 76.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 1257.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-ivory-01096726',
-    nota: 'Baldosa Cerámica Iroco Ivory · artículo 01-09-6726 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 255.05 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 661.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-delhi-beige-01095807',
+    nota: 'BALDOSA CERÁMICA DELHI BEIGE · artículo 01-09-5807 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 134.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 720.42, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rustico-teja-01097975',
-    nota: 'Baldosa Cerámica Rústico Teja · artículo 01-09-7975 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.13 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1178.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01097550',
+    nota: 'BALDOSA CERÁMICA TRANSFER MARFIL · artículo 01-09-7550 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 218.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 807.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cement-beige-01098075',
-    nota: 'Baldosa Cerámica Cement Beige · artículo 01-09-8075 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.83 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 545.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bologna-marfil-01098540',
+    nota: 'BALDOSA CERÁMICA BOLOGNA MARFIL · artículo 01-09-8540 · ref. 45X454.93MT/2 · marca ESPANOLA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 110.64 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 777.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ermitage-01097159',
-    nota: 'Baldosa Cerámica Ermitage · artículo 01-09-7159 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 157.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 1115.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-etnea-marfil-01098263',
+    nota: 'BALDOSA CERÁMICA ETNEA MARFIL · artículo 01-09-8263 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 206.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 1208.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dolomiti-beige-01097723',
-    nota: 'Baldosa Cerámica Dolomiti Beige · artículo 01-09-7723 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 245.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-068', PROV_OCHOA, 774.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-time-gris-antideslizante-01098376',
+    nota: 'BALDOSA CERÁMICA TIME GRIS ANTIDESLIZANTE · artículo 01-09-8376 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 143.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_OCHOA, 929.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blaze-blanco-01097313',
-    nota: 'Baldosa Cerámica Blaze Blanco · artículo 01-09-7313 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 188.54 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 757.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-natural-01096644',
-    nota: 'Baldosa Cerámica Tobago Natural · artículo 01-09-6644 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 153.59 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 434.05, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-acacia-01099185',
-    nota: 'Baldosa Cerámica Acacia · artículo 01-09-9185 · ref. 45X455.0MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 86.81 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 882.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-classic-mix-01098719',
-    nota: 'Baldosa Cerámica Classic Mix · artículo 01-09-8719 · ref. 45X454.93MT2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 179.03 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1288.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iroco-teka-01096727',
-    nota: 'Baldosa Cerámica Iroco Teka · artículo 01-09-6727 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 261.31 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1136.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cement-gris-01098074',
-    nota: 'Baldosa Cerámica Cement Gris · artículo 01-09-8074 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 230.54 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 666.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marble-beige-01095086',
-    nota: 'Baldosa Cerámica Marble Beige · artículo 01-09-5086 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 384.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alaska-plus-01098556',
-    nota: 'Baldosa Cerámica Alaska Plus · artículo 01-09-8556 · ref. 45X455MT/2 · marca FIORANNO. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 76.87 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 661.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-delhi-beige-01095807',
-    nota: 'Baldosa Cerámica Delhi Beige · artículo 01-09-5807 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 134.26 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1178.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01097550',
-    nota: 'Baldosa Cerámica Transfer Marfil · artículo 01-09-7550 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 218.15 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 545.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bologna-marfil-01098540',
-    nota: 'Baldosa Cerámica Bologna Marfil · artículo 01-09-8540 · ref. 45X454.93MT/2 · marca ESPANOLA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 110.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1149.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ara-1-01097310',
-    nota: 'Baldosa Cerámica Ara 1 · artículo 01-09-7310 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 233.13 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1597.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teak-gris-01097854',
-    nota: 'Baldosa Cerámica Teak Gris · artículo 01-09-7854 · ref. 45X454.91MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.91 piezas por m² según su propia referencia (RD$ 325.33 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 1115.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-etnea-marfil-01098263',
-    nota: 'Baldosa Cerámica Etnea Marfil · artículo 01-09-8263 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 206.51 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_OCHOA, 774.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-time-gris-antideslizante-01098376',
-    nota: 'Baldosa Cerámica Time Gris Antideslizante · artículo 01-09-8376 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 143.93 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-071', PROV_CERARTE, 674.91, {
+  c('MAT-08-068', PROV_CERARTE, 674.91, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/napoli-45x45',
     itbis: false,
     nota: 'NAPOLI 45X45 · artículo CERA-32163 · ref. 45X45 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-071', PROV_CERARTE, 685.67, {
+  c('MAT-08-068', PROV_CERARTE, 685.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/vega-ivory-45x45',
     itbis: false,
     nota: 'VEGA IVORY 45X45 · artículo CERA-33790 · ref. 45X45 · marca STN. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-071', PROV_IBERICA, 1121.39, {
+  c('MAT-08-068', PROV_IBERICA, 1121.39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/ares-perla-45x45/',
     nota: 'Ares Perla 45×45 · artículo 016895 · ref. 45×45. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_IBERICA, 960.01, {
+  c('MAT-08-068', PROV_IBERICA, 960.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/barcelona-beige-43-3x43-3/',
     nota: 'Barcelona Beige 43.3×43.3 · artículo 016984 · ref. 43.3×43.3. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_IBERICA, 1120.94, {
+  c('MAT-08-068', PROV_IBERICA, 1120.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/manaus-bege-hd-46x46/',
     nota: 'Manaus Bege HD 46×46 · artículo 016918 · ref. 46×46. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 839.8, {
+  c('MAT-08-068', PROV_BELLON, 839.8, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45330 Blanco 11Pcs/Cjs Interior · artículo 116017. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 170 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 652.08, {
+  c('MAT-08-068', PROV_BELLON, 652.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 3,
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45310 11Pcs/Cjs Interior · artículo 184574. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 132 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 1096.68, {
+  c('MAT-08-068', PROV_BELLON, 1096.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45326 11Pcs/Cjs Interior · artículo 184577. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 222 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 666.9, {
+  c('MAT-08-068', PROV_BELLON, 666.9, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45406 11Pcs/Cjs Exterior · artículo 184579. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 135 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 671.84, {
+  c('MAT-08-068', PROV_BELLON, 671.84, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 4,
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45201 11Pcs/Cjs Interior-Exterior · artículo 196066. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 136 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 805.22, {
+  c('MAT-08-068', PROV_BELLON, 805.22, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45214 11Pcs/Cjs Interior · artículo 219633. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 163 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 494, {
+  c('MAT-08-068', PROV_BELLON, 494, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45440 11Pcs/Cjs Interior-Exterior · artículo 224165. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 100 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 790.4, {
+  c('MAT-08-068', PROV_BELLON, 790.4, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Cristofoletti 45348 11Pcs/Cjs Interior · artículo 224166. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 160 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 601.4, {
+  c('MAT-08-068', PROV_BELLON, 601.4, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45.4 x 45.4 Cm 4.85/Mt 45040 Exterior · artículo 237690. La tienda cobra por pieza y declara 4.85 piezas por m²; aquí va el precio del m² (RD$ 124 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-071', PROV_BELLON, 706.62, {
+  c('MAT-08-068', PROV_BELLON, 706.62, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 45 x 45 Cm 1A 4.94/Mt Stn Exterior Rimini Grey (Renaut Gris) · artículo 239276. La tienda cobra por pieza y declara 4.94 piezas por m²; aquí va el precio del m² (RD$ 143.04 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-072', PROV_OCHOA, 1226.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-gris-01098111',
-    nota: 'Baldosa Cerámica Teide Gris · artículo 01-09-8111 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 108.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 424.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/piso-calacata-white-plus-hd-777363-01098492',
+    nota: 'PISO CALACATA WHITE PLUS HD 777363 · artículo 01-09-8492 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 110 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-072', PROV_OCHOA, 1220.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-magna-01098112',
-    nota: 'Baldosa Cerámica Teide Magna · artículo 01-09-8112 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 108.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-072', PROV_OCHOA, 1169.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-titan-mix-01098114',
-    nota: 'Baldosa Cerámica Titan Mix · artículo 01-09-8114 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 103.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-072', PROV_OCHOA, 1192.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-beige-01098113',
-    nota: 'Baldosa Cerámica Teide Beige · artículo 01-09-8113 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 105.57 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-072', PROV_OCHOA, 1238.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teide-grafito-01098578',
-    nota: 'Baldosa Cerámica Teide Grafito · artículo 01-09-8578 · ref. 17X5211.33MT2 · marca PAMESA. La tienda cotiza por pieza; van 11.33 piezas por m² según su propia referencia (RD$ 109.34 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-072', PROV_OCHOA, 1312.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toba-gris-01098115',
-    nota: 'Baldosa Cerámica Toba Gris · artículo 01-09-8115 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 116.18 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-073', PROV_OCHOA, 424.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/piso-calacata-white-plus-hd-777363-01098492',
-    nota: 'Piso Calacata White Plus Hd 777363 · artículo 01-09-8492 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 110 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-073', PROV_OCHOA, 394.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-olga-plus-01099017',
+  c('MAT-08-069', PROV_OCHOA, 394.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-olga-plus-01099017',
     peso: 5,
-    nota: 'Baldosa Cerámica Piso Olga Plus · artículo 01-09-9017 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.22 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA PISO OLGA PLUS · artículo 01-09-9017 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.22 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 422.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-concreto-gris-01099020',
+  c('MAT-08-069', PROV_OCHOA, 422.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-concreto-gris-01099020',
     peso: 2,
-    nota: 'Baldosa Cerámica Concreto Gris · artículo 01-09-9020 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 109.56 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA CONCRETO GRIS · artículo 01-09-9020 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 109.56 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 395.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-pompeia-marron-01098491',
-    nota: 'Baldosa Cerámica Piso Pompeia Marrón · artículo 01-09-8491 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 395.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-pompeia-marron-01098491',
+    nota: 'BALDOSA CERÁMICA PISO POMPEIA MARRÓN · artículo 01-09-8491 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 391.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-onix-beige-01098490',
-    nota: 'Baldosa Cerámica Piso Onix Beige · artículo 01-09-8490 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 101.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 391.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-onix-beige-01098490',
+    nota: 'BALDOSA CERÁMICA PISO ONIX BEIGE · artículo 01-09-8490 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 101.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 359.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-portland-plus-01098496',
-    nota: 'Baldosa Cerámica Piso Portland Plus · artículo 01-09-8496 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 93.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 359.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-portland-plus-01098496',
+    nota: 'BALDOSA CERÁMICA PISO PORTLAND PLUS · artículo 01-09-8496 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 93.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 344.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-salinas-plus-01098493',
-    nota: 'Baldosa Cerámica Piso Salinas Plus · artículo 01-09-8493 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 89.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 344.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-salinas-plus-01098493',
+    nota: 'BALDOSA CERÁMICA PISO SALINAS PLUS · artículo 01-09-8493 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 89.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 459.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cretta-tono-claro-01099018',
-    nota: 'Baldosa Cerámica Cretta Tono Claro · artículo 01-09-9018 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 119.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 459.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cretta-tono-claro-01099018',
+    nota: 'BALDOSA CERÁMICA CRETTA TONO CLARO · artículo 01-09-9018 · ref. 50.8X50.83.86MT/ · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 119.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 396.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-studio-01098494',
-    nota: 'Baldosa Cerámica Piso Studio · artículo 01-09-8494 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.64 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 396.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-studio-01098494',
+    nota: 'BALDOSA CERÁMICA PISO STUDIO · artículo 01-09-8494 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 102.64 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-073', PROV_OCHOA, 767.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-legno-beige-01098497',
-    nota: 'Baldosa Cerámica Piso Legno Beige · artículo 01-09-8497 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 198.95 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-069', PROV_OCHOA, 767.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-legno-beige-01098497',
+    nota: 'BALDOSA CERÁMICA PISO LEGNO BEIGE · artículo 01-09-8497 · ref. 50.8X50.83.86MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 3.86 piezas por m² según su propia referencia (RD$ 198.95 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-074', PROV_OCHOA, 928.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-portofino-blanco-01098118',
-    nota: 'Baldosa Cerámica Portofino Blanco · artículo 01-09-8118 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 171.04 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 885.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-brillo-01099122',
-    nota: 'Baldosa Cerámica Blanco Brillo · artículo 01-09-9122 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 160.44 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 849.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-benasque-gris-mate-01099126',
-    nota: 'Baldosa Cerámica Benasque Gris Mate · artículo 01-09-9126 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 153.95 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 835.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-benasque-marron-mate-01099127',
-    nota: 'Baldosa Cerámica Benasque Marrón Mate · artículo 01-09-9127 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 151.44 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 1052.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gaia-ceniza-01098274',
-    nota: 'Baldosa Cerámica Gaia Ceniza · artículo 01-09-8274 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 193.86 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 1080.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-chipre-1-01098273',
-    nota: 'Baldosa Cerámica Rlv Chipre 1 · artículo 01-09-8273 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 199.02 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 596.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-brickroad-gris-mate-01099318',
+  c('MAT-08-070', PROV_OCHOA, 596.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-brickroad-gris-mate-01099318',
     peso: 3,
-    nota: 'Pared Brickroad Gris Mate · artículo 01-09-9318 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 108.09 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PARED BRICKROAD GRIS MATE · artículo 01-09-9318 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 108.09 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-074', PROV_OCHOA, 1056.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-gaia-01098134',
-    nota: 'Baldosa Cerámica Rlv Gaia · artículo 01-09-8134 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 194.59 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 752.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-kios-perla-01098278',
-    nota: 'Baldosa Cerámica Kios Perla · artículo 01-09-8278 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 138.52 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 800.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-arena-01098276',
-    nota: 'Baldosa Cerámica Santorini Arena · artículo 01-09-8276 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 147.51 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 909.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-santorini-perla-01098277',
-    nota: 'Baldosa Cerámica Santorini Perla · artículo 01-09-8277 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 167.43 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 826.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-kios-gris-01098280',
-    nota: 'Baldosa Cerámica Rlv Kios Gris · artículo 01-09-8280 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 152.18 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_OCHOA, 786.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ondas-santorini-perla-01098275',
-    nota: 'Baldosa Cerámica Ondas Santorini Perla · artículo 01-09-8275 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 144.85 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-074', PROV_BELLON, 703.08, {
+  c('MAT-08-070', PROV_BELLON, 703.08, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 32 x 56 Cm 1A 5.58/Mt Cristofoletti HD3276 11Pcs/Cjs Interior · artículo 222885. La tienda cobra por pieza y declara 5.58 piezas por m²; aquí va el precio del m² (RD$ 126 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 906.3, {
+  c('MAT-08-071', PROV_BELLON, 906.3, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56002  7Pcs/Cjs Interior · artículo 205665. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 285 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 718.68, {
+  c('MAT-08-071', PROV_BELLON, 718.68, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 4,
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56010-1 7Pcs/Cjs Interior · artículo 205667. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 226 por pieza). El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 864.96, {
+  c('MAT-08-071', PROV_BELLON, 864.96, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56008 7Pcs/Cjs Exterior · artículo 207194. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 272 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 696.42, {
+  c('MAT-08-071', PROV_BELLON, 696.42, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     peso: 2,
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56046 7Pcs/Cjs Exterior · artículo 218383. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 219 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 674.16, {
+  c('MAT-08-071', PROV_BELLON, 674.16, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56099 7Pcs/Cjs Interior · artículo 222877. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 212 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 524.7, {
+  c('MAT-08-071', PROV_BELLON, 524.7, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 56 x 56 Cm 1A 3.18/Mt Cristofoletti 56118 7Pcs/Cjs Exterior · artículo 232906. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 165 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-075', PROV_BELLON, 534.24, {
+  c('MAT-08-071', PROV_BELLON, 534.24, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     nota: 'Cerámica 56 x 56 Cm Antideslizante 1A 3.18/Mt Cristofoletti 56136 Exterior · artículo 242304. La tienda cobra por pieza y declara 3.18 piezas por m²; aquí va el precio del m² (RD$ 168 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-076', PROV_OCHOA, 380.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-hd-4114-01099091',
-    nota: 'Pared Hd 4114 · artículo 01-09-9091 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 69.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-072', PROV_OCHOA, 380.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/pared-hd-4114-01099091',
+    nota: 'PARED HD 4114 · artículo 01-09-9091 · ref. 32X585.44MT/2 · marca CEDASA. La tienda cotiza por pieza; van 5.44 piezas por m² según su propia referencia (RD$ 69.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-076', PROV_OCHOA, 509.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-ref-5902-01099255',
+  c('MAT-08-072', PROV_OCHOA, 509.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-ref-5902-01099255',
     peso: 5,
-    nota: 'Cer. Ref-5902 · artículo 01-09-9255 · ref. 33X575.31MT/2. La tienda cotiza por pieza; van 5.31 piezas por m² según su propia referencia (RD$ 96 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'CER. REF-5902 · artículo 01-09-9255 · ref. 33X575.31MT/2. La tienda cotiza por pieza; van 5.31 piezas por m² según su propia referencia (RD$ 96 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-076', PROV_OCHOA, 509.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-hd-ref-57702-01099253',
-    nota: 'Cer. Hd Ref-57702 · artículo 01-09-9253 · ref. 33X575.30MT/2. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 96.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-072', PROV_OCHOA, 509.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-hd-ref-57702-01099253',
+    nota: 'CER. HD REF-57702 · artículo 01-09-9253 · ref. 33X575.30MT/2. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 96.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 427.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098576',
+  c('MAT-08-073', PROV_OCHOA, 427.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098576',
     peso: 3,
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8576 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 142.12 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8576 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 142.12 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 375.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098552',
+  c('MAT-08-073', PROV_OCHOA, 375.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-01098552',
     peso: 2,
-    nota: 'Baldosa Cerámica · artículo 01-09-8552 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.73 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA · artículo 01-09-8552 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.73 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 375.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098574',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8574 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 375.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098574',
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8574 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 124.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 345.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098551',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8551 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 114.66 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 345.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098551',
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8551 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 114.66 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 348.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cemento-01098805',
-    nota: 'Baldosa Cerámica Cemento · artículo 01-09-8805 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.84 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 348.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cemento-01098805',
+    nota: 'BALDOSA CERÁMICA CEMENTO · artículo 01-09-8805 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.84 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 342.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098398',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8398 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 113.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 342.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098398',
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8398 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 113.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 575.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hd-exterior-01098553',
-    nota: 'Baldosa Cerámica Hd Exterior · artículo 01-09-8553 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 191.3 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 575.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hd-exterior-01098553',
+    nota: 'BALDOSA CERÁMICA HD EXTERIOR · artículo 01-09-8553 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 191.3 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 432.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098504',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8504 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 143.72 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 432.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098504',
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8504 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 143.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 342.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098403',
-    nota: 'Baldosa Cerámica Piso · artículo 01-09-8403 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 113.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 342.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-piso-01098403',
+    nota: 'BALDOSA CERÁMICA PISO · artículo 01-09-8403 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 113.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 349.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-exterior-01098806',
-    nota: 'Baldosa Cerámica Exterior · artículo 01-09-8806 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 349.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-exterior-01098806',
+    nota: 'BALDOSA CERÁMICA EXTERIOR · artículo 01-09-8806 · ref. 58X583.01MT2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 347.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/gris-oscuro-mate-hd-1826-01099298',
-    nota: 'Gris Oscuro Mate Hd 1826 · artículo 01-09-9298 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 347.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/gris-oscuro-mate-hd-1826-01099298',
+    nota: 'GRIS OSCURO MATE HD 1826 · artículo 01-09-9298 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 115.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 509.77, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-ref-55801-01099259',
-    nota: 'Cer. Ref-55801 · artículo 01-09-9259 · ref. 57X573.07MT/2. La tienda cotiza por pieza; van 3.07 piezas por m² según su propia referencia (RD$ 166.05 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 509.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-ref-55801-01099259',
+    nota: 'CER. REF-55801 · artículo 01-09-9259 · ref. 57X573.07MT/2. La tienda cotiza por pieza; van 3.07 piezas por m² según su propia referencia (RD$ 166.05 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_OCHOA, 352.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-exterior-hd-01098554',
-    nota: 'Baldosa Cerámica Exterior Hd · artículo 01-09-8554 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 117.08 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-073', PROV_OCHOA, 352.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-exterior-hd-01098554',
+    nota: 'BALDOSA CERÁMICA EXTERIOR HD · artículo 01-09-8554 · ref. 58X583.01MT/2 · marca CEDASA. La tienda cotiza por pieza; van 3.01 piezas por m² según su propia referencia (RD$ 117.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_FERREMIX, 389, {
+  c('MAT-08-073', PROV_FERREMIX, 389, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-58-x-58',
     peso: 4,
     nota: 'Ceramia piso hd 5798 58x58 vistabella brasil · artículo 49532 · marca Brasileña. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_FERREMIX, 410, {
+  c('MAT-08-073', PROV_FERREMIX, 410, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-beige-hd-58x58-brasil',
     nota: 'Ceramia piso beige 1801 58x58 edasa brasil · artículo 49530 · marca Cedasa. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-077', PROV_FERREMIX, 495, {
+  c('MAT-08-073', PROV_FERREMIX, 495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/ceramica-piso-hd-3798-58x58',
     peso: 3,
     nota: 'Ceramia piso hd 3798 58x58 majopar brasil · artículo 49536 · marca Cedasa Brasil. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 913.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-perla-01098000',
-    nota: 'Baldosa Cerámica Fronda Perla · artículo 01-09-8000 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 109.72 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 913.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-perla-01098000',
+    nota: 'BALDOSA CERÁMICA FRONDA PERLA · artículo 01-09-8000 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 109.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 863.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-roble-01095937',
-    nota: 'Baldosa Cerámica Fronda Roble · artículo 01-09-5937 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.69 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 863.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-roble-01095937',
+    nota: 'BALDOSA CERÁMICA FRONDA ROBLE · artículo 01-09-5937 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.69 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 910.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-light-01094775',
-    nota: 'Baldosa Cerámica Castle Light · artículo 01-09-4775 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 109.33 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 492.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carson-timberland-01098765',
+    nota: 'BALDOSA CERÁMICA CARSON TIMBERLAND · artículo 01-09-8765 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 59.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 880.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-musgo-01095938',
-    nota: 'Baldosa Cerámica Fronda Musgo · artículo 01-09-5938 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 105.65 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-078', PROV_OCHOA, 492.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carson-timberland-01098765',
-    nota: 'Baldosa Cerámica Carson Timberland · artículo 01-09-8765 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 59.8 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-078', PROV_OCHOA, 983.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-cerezo-01095939',
+  c('MAT-08-074', PROV_OCHOA, 983.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-cerezo-01095939',
     peso: 2,
-    nota: 'Baldosa Cerámica Fronda Cerezo · artículo 01-09-5939 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 118.07 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA FRONDA CEREZO · artículo 01-09-5939 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 118.07 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 1017.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-cenere-01095941',
+  c('MAT-08-074', PROV_OCHOA, 1017.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-cenere-01095941',
     peso: 2,
-    nota: 'Baldosa Cerámica Castle Cenere · artículo 01-09-5941 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 122.17 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA CASTLE CENERE · artículo 01-09-5941 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 122.17 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 757.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-gris-01098143',
-    nota: 'Baldosa Cerámica Toronto Gris · artículo 01-09-8143 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 573.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carson-kona-01098764',
+    nota: 'BALDOSA CERÁMICA CARSON KONA · artículo 01-09-8764 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 69.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 573.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carson-kona-01098764',
-    nota: 'Baldosa Cerámica Carson Kona · artículo 01-09-8764 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 69.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 445.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-white-satin-plus-01099141',
+    nota: 'BALDOSA CERÁMICA WHITE SATIN PLUS · artículo 01-09-9141 · ref. 20X608.23MT/2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 54.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 894.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-antic-01094488',
-    nota: 'Baldosa Cerámica Castle Antic · artículo 01-09-4488 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 107.39 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 910.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-light-01094775',
+    nota: 'BALDOSA CERÁMICA CASTLE LIGHT · artículo 01-09-4775 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 109.33 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 445.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-white-satin-plus-01099141',
-    nota: 'Baldosa Cerámica White Satin Plus · artículo 01-09-9141 · ref. 20X608.23MT/2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 54.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 880.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-fronda-musgo-01095938',
+    nota: 'BALDOSA CERÁMICA FRONDA MUSGO · artículo 01-09-5938 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 105.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 865.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-blanco-01098579',
-    nota: 'Baldosa Cerámica Rlv Brienz Blanco · artículo 01-09-8579 · ref. 20X608.33MT2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 894.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-castle-antic-01094488',
+    nota: 'BALDOSA CERÁMICA CASTLE ANTIC · artículo 01-09-4488 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 107.39 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_OCHOA, 1227.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wald-mica-01097881',
-    nota: 'Baldosa Cerámica Wald Mica · artículo 01-09-7881 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 147.3 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-074', PROV_OCHOA, 1227.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wald-mica-01097881',
+    nota: 'BALDOSA CERÁMICA WALD MICA · artículo 01-09-7881 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 147.3 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-078', PROV_CERARTE, 619.32, {
+  c('MAT-08-074', PROV_CERARTE, 619.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/myra-20x60',
     itbis: false,
     nota: 'MYRA 22X60 · artículo CERA-33058 · ref. 20X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-078', PROV_CERARTE, 676.7, {
+  c('MAT-08-074', PROV_CERARTE, 676.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/myra-20x60',
     itbis: false,
     nota: 'MYRA 22X60 · artículo CERA-33202 · ref. 20X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-079', PROV_OCHOA, 1275.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-olimpia-beige-antislip-01097942',
-    nota: 'Baldosa Cerámica Olimpia Beige Antislip · artículo 01-09-7942 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 229.88 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1275.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-olimpia-beige-antislip-01097942',
+    nota: 'BALDOSA CERÁMICA OLIMPIA BEIGE ANTISLIP · artículo 01-09-7942 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 229.88 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1493.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-blanco-01098040',
-    nota: 'Baldosa Cerámica Way Blanco · artículo 01-09-8040 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 269.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1500.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-gris-01098269',
+    nota: 'BALDOSA CERÁMICA WAY GRIS · artículo 01-09-8269 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 270.44 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1500.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-gris-01098269',
-    nota: 'Baldosa Cerámica Way Gris · artículo 01-09-8269 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 270.44 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 2044.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vita-gris-01098438',
+    nota: 'BALDOSA CERÁMICA VITA GRIS · artículo 01-09-8438 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 368.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1606.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soren-blanco-negro-01098826',
-    nota: 'Baldosa Cerámica Soren Blanco‑Negro · artículo 01-09-8826 · ref. 30X605.55MT2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 289.43 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 2034.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vita-arena-01098439',
+    nota: 'BALDOSA CERÁMICA VITA ARENA · artículo 01-09-8439 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 366.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1207.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01097835',
-    nota: 'Baldosa Cerámica Vermont Ceniza · artículo 01-09-7835 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 217.58 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1305.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-perla-01097925',
+    nota: 'BALDOSA CERÁMICA CANNES PERLA · artículo 01-09-7925 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 235.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1251.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-gris-01097836',
-    nota: 'Baldosa Cerámica Vermont Gris · artículo 01-09-7836 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1542.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-arena-01098602',
+    nota: 'BALDOSA CERÁMICA VERMONT ARENA · artículo 01-09-8602 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 285.71 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1874.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eaton-pearl-01098472',
-    nota: 'Baldosa Cerámica Eaton Pearl · artículo 01-09-8472 · ref. 30.3X60.35.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 348.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1495.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-aliste-ceniza-01098366',
+    nota: 'BALDOSA CERÁMICA VERMONT ALISTE CENIZA · artículo 01-09-8366 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 276.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1472.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-arden-blanco-01099045',
-    nota: 'Baldosa Cerámica Arden Blanco · artículo 01-09-9045 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 265.28 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1665.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ripton-arena-01098367',
+    nota: 'BALDOSA CERÁMICA VERMONT RIPTON ARENA · artículo 01-09-8367 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 308.39 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 2044.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vita-gris-01098438',
-    nota: 'Baldosa Cerámica Vita Gris · artículo 01-09-8438 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 368.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1091.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01098381',
+    nota: 'BALDOSA CERÁMICA VERMONT CENIZA · artículo 01-09-8381 · ref. 30.5X60.55.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 196.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1226.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treves-grafito-01098924',
-    nota: 'Baldosa Cerámica Treves Grafito · artículo 01-09-8924 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 231.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1035.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-gris-01097926',
+    nota: 'BALDOSA CERÁMICA CANNES GRIS · artículo 01-09-7926 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 186.55 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1311.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-carrara-01098220',
-    nota: 'Baldosa Cerámica Blanco Carrara · artículo 01-09-8220 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 236.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1493.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-blanco-01098040',
+    nota: 'BALDOSA CERÁMICA WAY BLANCO · artículo 01-09-8040 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 269.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1199.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shake-beige-01099059',
-    nota: 'Baldosa Cerámica Shake Beige · artículo 01-09-9059 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 226.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1207.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01097835',
+    nota: 'BALDOSA CERÁMICA VERMONT CENIZA · artículo 01-09-7835 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 217.58 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1654.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soren-blanco-01098825',
-    nota: 'Baldosa Cerámica Soren Blanco · artículo 01-09-8825 · ref. 30X605.55MT2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 298.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-075', PROV_OCHOA, 1251.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-gris-01097836',
+    nota: 'BALDOSA CERÁMICA VERMONT GRIS · artículo 01-09-7836 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 2034.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vita-arena-01098439',
-    nota: 'Baldosa Cerámica Vita Arena · artículo 01-09-8439 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 366.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-076', PROV_OCHOA, 902.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-beige-01098693',
+    nota: 'BALDOSA CERÁMICA CANNES BEIGE · artículo 01-09-8693 · ref. 33X605MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 180.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1305.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-perla-01097925',
-    nota: 'Baldosa Cerámica Cannes Perla · artículo 01-09-7925 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 235.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 744.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-liso-01098707',
+    nota: 'BALDOSA CERÁMICA BLANCO LISO · artículo 01-09-8707 · ref. 60X602.77MT2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 268.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-079', PROV_OCHOA, 1375.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-rlv-eiffel-negro-mate-01097859',
-    nota: 'At Rlv Eiffel Negro Mate · artículo 01-09-7859 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 255.6 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1542.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-arena-01098602',
-    nota: 'Baldosa Cerámica Vermont Arena · artículo 01-09-8602 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 285.71 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1495.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-aliste-ceniza-01098366',
-    nota: 'Baldosa Cerámica Vermont Aliste Ceniza · artículo 01-09-8366 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 276.92 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1162.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-babylon-beige-01098271',
-    nota: 'Baldosa Cerámica Babylon Beige · artículo 01-09-8271 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 216.49 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1665.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ripton-arena-01098367',
-    nota: 'Baldosa Cerámica Vermont Ripton Arena · artículo 01-09-8367 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 308.39 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1068.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atica-antislip-pearl-01097910',
-    nota: 'Baldosa Cerámica Ática Antislip Pearl · artículo 01-09-7910 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 192.58 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1091.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01098381',
-    nota: 'Baldosa Cerámica Vermont Ceniza · artículo 01-09-8381 · ref. 30.5X60.55.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 196.68 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 846.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-transfer-marfil-01097552',
-    nota: 'Baldosa Cerámica Transfer Marfil · artículo 01-09-7552 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 157.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-079', PROV_OCHOA, 1035.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-gris-01097926',
-    nota: 'Baldosa Cerámica Cannes Gris · artículo 01-09-7926 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 186.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-080', PROV_OCHOA, 902.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cannes-beige-01098693',
-    nota: 'Baldosa Cerámica Cannes Beige · artículo 01-09-8693 · ref. 33X605MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 180.52 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 744.77, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-liso-01098707',
-    nota: 'Baldosa Cerámica Blanco Liso · artículo 01-09-8707 · ref. 60X602.77MT2 · marca LIVENZA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 268.87 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1230.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-gris-venato-01097717',
-    nota: 'Baldosa Cerámica Venato Gris / Venato · artículo 01-09-7717 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 444.18 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1245.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-royal-gold-gloss-01099011',
-    nota: 'Baldosa Cerámica Royal Gold Gloss · artículo 01-09-9011 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.71 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1279.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-olimpia-beige-01097932',
+  c('MAT-08-077', PROV_OCHOA, 1279.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-olimpia-beige-01097932',
     peso: 2,
-    nota: 'Baldosa Cerámica Olimpia Beige · artículo 01-09-7932 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA OLIMPIA BEIGE · artículo 01-09-7932 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1093.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-carrara-01098054',
-    nota: 'Baldosa Cerámica Blanco Carrara · artículo 01-09-8054 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 394.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1093.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-carrara-01098054',
+    nota: 'BALDOSA CERÁMICA BLANCO CARRARA · artículo 01-09-8054 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 394.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1238.49, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-pizarra-01097931',
-    nota: 'Baldosa Cerámica Capitol Pizarra · artículo 01-09-7931 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 447.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1238.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-pizarra-01097931',
+    nota: 'BALDOSA CERÁMICA CAPITOL PIZARRA · artículo 01-09-7931 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 447.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1198.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-perla-01097930',
-    nota: 'Baldosa Cerámica Capitol Perla · artículo 01-09-7930 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1198.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-capitol-perla-01097930',
+    nota: 'BALDOSA CERÁMICA CAPITOL PERLA · artículo 01-09-7930 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.56 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1297.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-attas-blanco-01097887',
-    nota: 'Baldosa Cerámica Attas Blanco · artículo 01-09-7887 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 480.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1196.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palace-gris-01094759',
+  c('MAT-08-077', PROV_OCHOA, 1196.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palace-gris-01094759',
     peso: 2,
-    nota: 'Baldosa Cerámica Palace Gris · artículo 01-09-4759 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA PALACE GRIS · artículo 01-09-4759 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1491.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yukon-ivory-01097065',
-    nota: 'Baldosa Cerámica Yukon Ivory · artículo 01-09-7065 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 538.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1491.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yukon-ivory-01097065',
+    nota: 'BALDOSA CERÁMICA YUKON IVORY · artículo 01-09-7065 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 538.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1252.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-beige-01098303',
-    nota: 'Baldosa Cerámica Tívoli Beige · artículo 01-09-8303 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1264.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bianco-master-pulido-01098180',
+    nota: 'BALDOSA CERÁMICA BIANCO MASTER PULIDO · artículo 01-09-8180 · ref. 62.5X62.52.53MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 2.53 piezas por m² según su propia referencia (RD$ 499.89 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1251.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-perla-01098304',
-    nota: 'Baldosa Cerámica Tívoli Perla · artículo 01-09-8304 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 451.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1279.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-gris-01098524',
+    nota: 'BALDOSA CERÁMICA LIVORNO GRIS · artículo 01-09-8524 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 461.89 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1289.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-pw-01097991',
-    nota: 'Baldosa Cerámica Essenza Pw · artículo 01-09-7991 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 465.53 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1421.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/portofino-blanco-brillo-01099315',
+    nota: 'PORTOFINO BLANCO BRILLO · artículo 01-09-9315 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 513.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1121.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rialto-ivory-01096863',
-    nota: 'Baldosa Cerámica Rialto Ivory · artículo 01-09-6863 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 404.85 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 848.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bianco-master-01098179',
+    nota: 'BALDOSA CERÁMICA BIANCO MASTER · artículo 01-09-8179 · ref. 62.5X62.52.53MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 2.53 piezas por m² según su propia referencia (RD$ 335.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1264.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bianco-master-pulido-01098180',
-    nota: 'Baldosa Cerámica Bianco Master Pulido · artículo 01-09-8180 · ref. 62.5X62.52.53MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 2.53 piezas por m² según su propia referencia (RD$ 499.89 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1437.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01098370',
+    nota: 'BALDOSA CERÁMICA VERMONT CENIZA · artículo 01-09-8370 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 532.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1279.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-gris-01098524',
-    nota: 'Baldosa Cerámica Livorno Gris · artículo 01-09-8524 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 461.89 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1053.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yukon-pearl-01096968',
+    nota: 'BALDOSA CERÁMICA YUKON PEARL · artículo 01-09-6968 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 380.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1421.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/portofino-blanco-brillo-01099315',
-    nota: 'Portofino Blanco Brillo · artículo 01-09-9315 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 513.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 939.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-at-nuva-arena-01097922',
+    nota: 'BALDOSA CERÁMICA AT NUVA ARENA · artículo 01-09-7922 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1160.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-giona-crema-01097311',
-    nota: 'Baldosa Cerámica Giona Crema · artículo 01-09-7311 · ref. 60.8X60.82.70MT2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 429.8 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1538.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-topo-01098522',
+    nota: 'BALDOSA CERÁMICA LIVORNO TOPO · artículo 01-09-8522 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 555.57 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 848.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bianco-master-01098179',
-    nota: 'Baldosa Cerámica Bianco Master · artículo 01-09-8179 · ref. 62.5X62.52.53MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 2.53 piezas por m² según su propia referencia (RD$ 335.43 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1461.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-old-vic-gris-01098308',
+    nota: 'BALDOSA CERÁMICA OLD VIC GRIS · artículo 01-09-8308 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 527.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1437.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-ceniza-01098370',
-    nota: 'Baldosa Cerámica Vermont Ceniza · artículo 01-09-8370 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 532.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1398.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-arena-01098368',
+    nota: 'BALDOSA CERÁMICA VERMONT ARENA · artículo 01-09-8368 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 518.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1286.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-gris-01098305',
-    nota: 'Baldosa Cerámica Tívoli Gris · artículo 01-09-8305 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 464.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1146.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-topo-01097908',
+    nota: 'BALDOSA CERÁMICA OTTAWA TOPO · artículo 01-09-7908 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 413.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1053.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yukon-pearl-01096968',
-    nota: 'Baldosa Cerámica Yukon Pearl · artículo 01-09-6968 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 380.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1696.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnium-marfil-01098025',
+    nota: 'BALDOSA CERÁMICA OMNIUM MARFIL · artículo 01-09-8025 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 628.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 939.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-at-nuva-arena-01097922',
-    nota: 'Baldosa Cerámica At Nuva Arena · artículo 01-09-7922 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1074.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-etruscan-pearl-01095788',
+    nota: 'BALDOSA CERÁMICA ETRUSCAN PEARL · artículo 01-09-5788 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 387.97 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1538.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-livorno-topo-01098522',
-    nota: 'Baldosa Cerámica Livorno Topo · artículo 01-09-8522 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 555.57 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1796.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-gris-01098369',
+    nota: 'BALDOSA CERÁMICA VERMONT GRIS · artículo 01-09-8369 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 665.2 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1461.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-old-vic-gris-01098308',
-    nota: 'Baldosa Cerámica Old Vic Gris · artículo 01-09-8308 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 527.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-077', PROV_OCHOA, 1297.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-attas-blanco-01097887',
+    nota: 'BALDOSA CERÁMICA ATTAS BLANCO · artículo 01-09-7887 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 480.53 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-081', PROV_OCHOA, 1398.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-arena-01098368',
-    nota: 'Baldosa Cerámica Vermont Arena · artículo 01-09-8368 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 518.13 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1146.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-topo-01097908',
-    nota: 'Baldosa Cerámica Ottawa Topo · artículo 01-09-7908 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 413.82 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1172.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-ivory-01095787',
-    nota: 'Cerámica Etruscan Ivory · artículo 01-09-5787 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 423.15 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1696.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnium-marfil-01098025',
-    nota: 'Baldosa Cerámica Omnium Marfil · artículo 01-09-8025 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 628.35 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1043.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097934',
-    nota: 'Baldosa Cerámica Trentino Perla · artículo 01-09-7934 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 376.67 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1074.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-etruscan-pearl-01095788',
-    nota: 'Baldosa Cerámica Etruscan Pearl · artículo 01-09-5788 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 387.97 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_OCHOA, 1796.04, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vermont-gris-01098369',
-    nota: 'Baldosa Cerámica Vermont Gris · artículo 01-09-8369 · ref. 60.5X60.52.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 665.2 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-081', PROV_CERARTE, 754.86, {
+  c('MAT-08-077', PROV_CERARTE, 754.86, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-classic-onix-beige-605x605',
     itbis: false,
     nota: 'PV CLASSIC ONIX BEIGE 60.5X60.5 · artículo CERA-33687 · ref. 60X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 1171.11, {
+  c('MAT-08-077', PROV_CERARTE, 1171.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-detroit-gray-60x60-rt',
     itbis: false,
     nota: 'PV DETROIT GRAY 60X60 RT · artículo CERA-33694 · ref. 60X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 582.81, {
+  c('MAT-08-077', PROV_CERARTE, 582.81, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-blanco-599x599-rt',
     itbis: false,
     nota: 'PV BLANCO 60X60 RT · artículo CERA-34569 · ref. 60X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 703.96, {
+  c('MAT-08-077', PROV_CERARTE, 703.96, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-marmo-bianco-60x60-rt',
     itbis: false,
     nota: 'PV MARMO BIANCO 60X60 RT · artículo CERA-34757 · ref. 60X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 645.82, {
+  c('MAT-08-077', PROV_CERARTE, 645.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-glacial-60x60-rt',
     itbis: false,
     peso: 3,
     nota: 'CERAMICA GLACIAL 60X60 RT · artículo CERA-36653 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 668.89, {
+  c('MAT-08-077', PROV_CERARTE, 668.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-pavia-605x605',
     itbis: false,
     nota: 'CERAMICA PAVIA 60.5X60.5 · artículo CERA-36656 · ref. 60X60 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-081', PROV_CERARTE, 691.95, {
+  c('MAT-08-077', PROV_CERARTE, 691.95, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/ceramica-pettros-60x60-rt',
     itbis: false,
     peso: 3,
     nota: 'CERAMICA PETTROS 60X60 RT · artículo CERA-36659 · ref. 60X60 · marca EMBRAMACO. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-082', PROV_OCHOA, 2092.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wood-roble-antideslizante-01097220',
-    nota: 'Baldosa Cerámica Wood Roble Antideslizante · artículo 01-09-7220 · ref. 7.1X6023.25MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 23.25 piezas por m² según su propia referencia (RD$ 90 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-078', PROV_OCHOA, 2092.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wood-roble-antideslizante-01097220',
+    nota: 'BALDOSA CERÁMICA WOOD ROBLE ANTIDESLIZANTE · artículo 01-09-7220 · ref. 7.1X6023.25MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 23.25 piezas por m² según su propia referencia (RD$ 90 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-083', PROV_OCHOA, 509.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-n-flat-ondas-blanco-br-01099245',
-    nota: 'Cer. N. Flat. Ondas Blanco Br · artículo 01-09-9245 · ref. 25X705.71MT/2. La tienda cotiza por pieza; van 5.71 piezas por m² según su propia referencia (RD$ 89.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-079', PROV_OCHOA, 509.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cer-n-flat-ondas-blanco-br-01099245',
+    nota: 'CER. N. FLAT. ONDAS BLANCO BR · artículo 01-09-9245 · ref. 25X705.71MT/2. La tienda cotiza por pieza; van 5.71 piezas por m² según su propia referencia (RD$ 89.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-084', PROV_OCHOA, 1459.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-outline-gris-b-stone-01099134',
-    nota: 'Baldosa Cerámica Outline Gris B‑Stone · artículo 01-09-9134 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 273.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-080', PROV_OCHOA, 1162.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-beige-01097704',
+    nota: 'BALDOSA CERÁMICA MARSELLA BEIGE · artículo 01-09-7704 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 218.05 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-084', PROV_OCHOA, 1345.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-marfil-01098818',
-    nota: 'Baldosa Cerámica Hudson Marfil · artículo 01-09-8818 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.4 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-080', PROV_OCHOA, 1143.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-perla-01097705',
+    nota: 'BALDOSA CERÁMICA MARSELLA PERLA · artículo 01-09-7705 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 214.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-084', PROV_OCHOA, 1429.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-metric-marfil-01098820',
-    nota: 'Baldosa Cerámica Hudson Metric Marfil · artículo 01-09-8820 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 268.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-080', PROV_OCHOA, 1618.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-vison-unic-01097709',
+    nota: 'BALDOSA CERÁMICA MARSELLA VISÓN UNIC · artículo 01-09-7709 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 303.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-084', PROV_OCHOA, 1345.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-vicat-marfil-01098822',
-    nota: 'Baldosa Cerámica Saloni Vicat Marfil · artículo 01-09-8822 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 252.35 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1387.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hudson-blanco-01098817',
-    nota: 'Baldosa Cerámica Hudson Blanco · artículo 01-09-8817 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 260.26 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1291.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vicat-blanco-01098821',
-    nota: 'Baldosa Cerámica Vicat Blanco · artículo 01-09-8821 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 242.36 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1162.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-beige-01097704',
-    nota: 'Baldosa Cerámica Marsella Beige · artículo 01-09-7704 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 218.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1277.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-axiom-blanco-01098819',
-    nota: 'Baldosa Cerámica Axiom Blanco · artículo 01-09-8819 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.72 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1433.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-vicat-graphi-01098824',
-    nota: 'Baldosa Cerámica Saloni Vicat Graphi · artículo 01-09-8824 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 269.04 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1143.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-perla-01097705',
-    nota: 'Baldosa Cerámica Marsella Perla · artículo 01-09-7705 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 214.45 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1055.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vicat-graphic-blanco-01098823',
-    nota: 'Baldosa Cerámica Vicat Graphic Blanco · artículo 01-09-8823 · ref. 25X755.33MT2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 198.04 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1270.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-essenza-pad-01098195',
-    nota: 'Cerámica Essenza Pad · artículo 01-09-8195 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 238.34 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1618.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marsella-vison-unic-01097709',
-    nota: 'Baldosa Cerámica Marsella Visón Unic · artículo 01-09-7709 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 303.67 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-084', PROV_OCHOA, 1124.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-gris-01098199',
-    nota: 'Baldosa Cerámica Trentino Gris · artículo 01-09-8199 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 211.01 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-085', PROV_CERARTE, 673.04, {
+  c('MAT-08-081', PROV_CERARTE, 673.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-lat-silver-75x75-rt',
     itbis: false,
     nota: 'PV LAT SILVER 75X75 RT · artículo CERA-34770 · ref. 75X75 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-085', PROV_CERARTE, 1041.03, {
+  c('MAT-08-081', PROV_CERARTE, 1041.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-botticino-77x77-rt',
     itbis: false,
     nota: 'PV BOTTICINO 77X77 RT · artículo CERA-35882 · ref. 77X77 · marca CERAMICA CRISTOFOLETTI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_OCHOA, 951.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venus-pulido-01099150',
+  c('MAT-08-082', PROV_OCHOA, 951.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venus-pulido-01099150',
     peso: 2,
-    nota: 'Baldosa Cerámica Venus Pulido · artículo 01-09-9150 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA VENUS PULIDO · artículo 01-09-9150 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-086', PROV_OCHOA, 1730.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caseto-roble-01097573',
-    nota: 'Baldosa Cerámica Caseto Roble · artículo 01-09-7573 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 1109.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-082', PROV_OCHOA, 1730.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caseto-roble-01097573',
+    nota: 'BALDOSA CERÁMICA CASETO ROBLE · artículo 01-09-7573 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 1109.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-086', PROV_OCHOA, 1535.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-beige-01097221',
-    nota: 'Baldosa Cerámica Tívoli Beige · artículo 01-09-7221 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 984.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-082', PROV_OCHOA, 1037.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oxford-gris-01097222',
+    nota: 'BALDOSA CERÁMICA OXFORD GRIS · artículo 01-09-7222 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 665.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-086', PROV_OCHOA, 1037.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oxford-gris-01097222',
-    nota: 'Baldosa Cerámica Oxford Gris · artículo 01-09-7222 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 665.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-086', PROV_CERARTE, 1552.61, {
+  c('MAT-08-082', PROV_CERARTE, 1552.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zebra-cinza-80x80-ret',
     itbis: false,
     nota: 'ZEBRA CINZA 80X80 RET · artículo CERA-33682 · ref. 80X80 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 1552.54, {
+  c('MAT-08-082', PROV_CERARTE, 1552.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/vizcaya-80x80-ret',
     itbis: false,
     nota: 'VIZCAYA 80X80 RET · artículo CERA-33683 · ref. 80X80 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 1010.05, {
+  c('MAT-08-082', PROV_CERARTE, 1010.05, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/vitral-white-lux-mag-85x85-rt',
     itbis: false,
     nota: 'VITRAL WHITE LUX MAG 85X85 RT · artículo CERA-34575 · ref. 80X80 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 1141.72, {
+  c('MAT-08-082', PROV_CERARTE, 1141.72, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/charm-lux-mag-85x85-rt',
     itbis: false,
     nota: 'CHARM LUX MAG 85X85 RT · artículo CERA-34576 · ref. 80X80 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 821.68, {
+  c('MAT-08-082', PROV_CERARTE, 821.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/vitral-white-satiny-mag-86x86-rt',
     itbis: false,
     nota: 'VITRAL WHITE SATINY MAG 86X86 RT · artículo CERA-34577 · ref. 80X80 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 1071.43, {
+  c('MAT-08-082', PROV_CERARTE, 1071.43, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/boston-sand-satiny-mag-86x86-rt',
     itbis: false,
     nota: 'BOSTON SAND SATINY MAG 86X86 RT · artículo CERA-34578 · ref. 80X80 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 716.48, {
+  c('MAT-08-082', PROV_CERARTE, 716.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-tavola-ecko-86x86-rt',
     itbis: false,
     nota: 'PV TAVOLA ECKO 86X86 RT · artículo CERA-34881 · ref. 80X80 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-086', PROV_CERARTE, 901.76, {
+  c('MAT-08-082', PROV_CERARTE, 901.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-zeppelin-80x80-rt',
     itbis: false,
     nota: 'PV ZEPPELIN 80X80 RT · artículo CERA-34782 · ref. 80X80 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-087', PROV_OCHOA, 1042.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-extrem-miel-01097852',
-    nota: 'Baldosa Cerámica Extrem Miel · artículo 01-09-7852 · ref. 14.8X907.69MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.69 piezas por m² según su propia referencia (RD$ 135.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-083', PROV_OCHOA, 1042.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-extrem-miel-01097852',
+    nota: 'BALDOSA CERÁMICA EXTREM MIEL · artículo 01-09-7852 · ref. 14.8X907.69MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.69 piezas por m² según su propia referencia (RD$ 135.62 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1643.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marthal-beige-01099196',
-    nota: 'Baldosa Cerámica Marthal Beige · artículo 01-09-9196 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 444.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1643.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marthal-beige-01099196',
+    nota: 'BALDOSA CERÁMICA MARTHAL BEIGE · artículo 01-09-9196 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 444.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1642.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-marfil-01097745',
-    nota: 'Baldosa Cerámica Way Marfil · artículo 01-09-7745 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 435.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1801.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marthal-metric-beige-01099195',
+    nota: 'BALDOSA CERÁMICA MARTHAL METRIC BEIGE · artículo 01-09-9195 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1801.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marthal-metric-beige-01099195',
-    nota: 'Baldosa Cerámica Marthal Metric Beige · artículo 01-09-9195 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1767.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marthal-graphic-beige-mate-01099316',
+    nota: 'MARTHAL GRAPHIC BEIGE MATE · artículo 01-09-9316 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 477.79 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1304.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-metric-marfil-01098925',
-    nota: 'Baldosa Cerámica Circe Metric Marfil · artículo 01-09-8925 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 369.55 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1650.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/velvet-c-blanco-01099272',
+    nota: 'VELVET C BLANCO · artículo 01-09-9272 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 446.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1767.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/marthal-graphic-beige-mate-01099316',
-    nota: 'Marthal Graphic Beige Mate · artículo 01-09-9316 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 477.79 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1798.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/venatto-graphic-oak-01099194',
+    nota: 'VENATTO GRAPHIC OAK · artículo 01-09-9194 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 2145.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-radiance-blanco-rg-01099158',
-    nota: 'Baldosa Cerámica Radiance Blanco Rg · artículo 01-09-9158 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 579.89 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1626.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-plumage-natural-01099295',
+    nota: 'SA PLUMAGE NATURAL · artículo 01-09-9295 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 439.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1650.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/velvet-c-blanco-01099272',
-    nota: 'Velvet C Blanco · artículo 01-09-9272 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 446.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1823.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/velvet-c-graphic-blanco-01099271',
+    nota: 'VELVET C GRAPHIC BLANCO · artículo 01-09-9271 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 492.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1798.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/venatto-graphic-oak-01099194',
-    nota: 'Venatto Graphic Oak · artículo 01-09-9194 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 486.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 1642.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-way-marfil-01097745',
+    nota: 'BALDOSA CERÁMICA WAY MARFIL · artículo 01-09-7745 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 435.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1034.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-graphic-marfil-01098923',
-    nota: 'Baldosa Cerámica Circe Graphic Marfil · artículo 01-09-8923 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 292.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-084', PROV_OCHOA, 2286.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-efeso-brillo-grafito-01097632',
+    nota: 'BALDOSA CERÁMICA EFESO BRILLO GRAFITO · artículo 01-09-7632 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 606.4 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1025.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-sable-azul-01098654',
-    nota: 'Baldosa Cerámica Saloni Sable Azul · artículo 01-09-8654 · ref. 30.5X903.63MT2 · marca SALONI. La tienda cotiza por pieza; van 3.63 piezas por m² según su propia referencia (RD$ 282.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-085', PROV_OCHOA, 2014.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-aged-01098755',
+    nota: 'BALDOSA CERÁMICA CARRARA AGED · artículo 01-09-8755 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 635.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1626.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/sa-plumage-natural-01099295',
-    nota: 'Sa Plumage Natural · artículo 01-09-9295 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 439.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-085', PROV_OCHOA, 1700.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorline-blanco-01098505',
+    nota: 'BALDOSA CERÁMICA COLORLINE BLANCO · artículo 01-09-8505 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 536.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 1823.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/velvet-c-graphic-blanco-01099271',
-    nota: 'Velvet C Graphic Blanco · artículo 01-09-9271 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 492.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-085', PROV_OCHOA, 2499.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorline-azul-01098506',
+    nota: 'BALDOSA CERÁMICA COLORLINE AZUL · artículo 01-09-8506 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 788.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 954.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpha-blanco-01098467',
-    nota: 'Baldosa Cerámica Alpha Blanco · artículo 01-09-8467 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 257.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-085', PROV_OCHOA, 1786.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-aged-01098752',
+    nota: 'BALDOSA CERÁMICA CARRARA AGED · artículo 01-09-8752 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 563.44 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-088', PROV_OCHOA, 2286.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-efeso-brillo-grafito-01097632',
-    nota: 'Baldosa Cerámica Efeso Brillo Grafito · artículo 01-09-7632 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 606.4 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-085', PROV_OCHOA, 2089.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carved-beige-01098203',
+    nota: 'BALDOSA CERÁMICA CARVED BEIGE · artículo 01-09-8203 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 659.22 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-089', PROV_OCHOA, 2014.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-aged-01098755',
-    nota: 'Baldosa Cerámica Carrara Aged · artículo 01-09-8755 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 635.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-086', PROV_OCHOA, 884.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blue-belle-01099082',
+    nota: 'BALDOSA CERÁMICA BLUE BELLE · artículo 01-09-9082 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 559.78 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-089', PROV_OCHOA, 1700.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorline-blanco-01098505',
-    nota: 'Baldosa Cerámica Colorline Blanco · artículo 01-09-8505 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 536.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-086', PROV_OCHOA, 859.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-via-lactea-blanco-01099081',
+    nota: 'BALDOSA CERÁMICA VIA LÁCTEA BLANCO · artículo 01-09-9081 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 544.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-089', PROV_OCHOA, 2499.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorline-azul-01098506',
-    nota: 'Baldosa Cerámica Colorline Azul · artículo 01-09-8506 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 788.45 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-087', PROV_OCHOA, 1465.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grove-sand-01098738',
+    nota: 'BALDOSA CERÁMICA GROVE SAND · artículo 01-09-8738 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 352.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-089', PROV_OCHOA, 1786.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carrara-aged-01098752',
-    nota: 'Baldosa Cerámica Carrara Aged · artículo 01-09-8752 · ref. 31.5X1003.17MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 563.44 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-087', PROV_OCHOA, 1294.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grove-white-01098737',
+    nota: 'BALDOSA CERÁMICA GROVE WHITE · artículo 01-09-8737 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 311.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-089', PROV_OCHOA, 2089.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-carved-beige-01098203',
-    nota: 'Baldosa Cerámica Carved Beige · artículo 01-09-8203 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 659.22 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-087', PROV_OCHOA, 1922.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oregon-ceniza-01098463',
+    nota: 'BALDOSA CERÁMICA OREGON CENIZA · artículo 01-09-8463 · ref. 20X1204.16MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 462.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-090', PROV_OCHOA, 884.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blue-belle-01099082',
-    nota: 'Baldosa Cerámica Blue Belle · artículo 01-09-9082 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 559.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-087', PROV_OCHOA, 2025, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-larvik-white-01098295',
+    nota: 'BALDOSA CERÁMICA LARVIK WHITE · artículo 01-09-8295 · ref. 20X1204.27MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.27 piezas por m² según su propia referencia (RD$ 474.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-090', PROV_OCHOA, 493.24, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-urban-concreto-mate-01099083',
-    nota: 'Baldosa Cerámica Urban Concreto Mate · artículo 01-09-9083 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 312.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-087', PROV_OCHOA, 2401.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-larvik-black-01097214',
+    nota: 'BALDOSA CERÁMICA LARVIK BLACK · artículo 01-09-7214 · ref. 20X1204.21MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 570.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-090', PROV_OCHOA, 859.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-via-lactea-blanco-01099081',
-    nota: 'Baldosa Cerámica Via Láctea Blanco · artículo 01-09-9081 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 544.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-088', PROV_OCHOA, 1394.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bolivia-01097984',
+    nota: 'BALDOSA CERÁMICA BOLIVIA · artículo 01-09-7984 · ref. 23.3X1203.57MT · marca HALCON. La tienda cotiza por pieza; van 3.57 piezas por m² según su propia referencia (RD$ 390.71 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-090', PROV_OCHOA, 918.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-tundra-gris-01099086',
-    nota: 'Baldosa Cerámica Cedasa Tundra Gris · artículo 01-09-9086 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 581.61 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-089', PROV_OCHOA, 1973.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-roble-01098300',
+    nota: 'BALDOSA CERÁMICA HERITAGE ROBLE · artículo 01-09-8300 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 704.79 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-091', PROV_OCHOA, 1465.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grove-sand-01098738',
-    nota: 'Baldosa Cerámica Grove Sand · artículo 01-09-8738 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 352.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-089', PROV_OCHOA, 1905.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-natural-01097952',
+    nota: 'BALDOSA CERÁMICA HERITAGE NATURAL · artículo 01-09-7952 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 680.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-091', PROV_OCHOA, 1294.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grove-white-01098737',
-    nota: 'Baldosa Cerámica Grove White · artículo 01-09-8737 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 311.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-089', PROV_OCHOA, 1981.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-nogal-01097953',
+    nota: 'BALDOSA CERÁMICA HERITAGE NOGAL · artículo 01-09-7953 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 707.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-091', PROV_OCHOA, 1922.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oregon-ceniza-01098463',
-    nota: 'Baldosa Cerámica Oregon Ceniza · artículo 01-09-8463 · ref. 20X1204.16MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 462.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 1916.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-stone-ceniza-01097560',
+    nota: 'BALDOSA CERÁMICA STONE CENIZA · artículo 01-09-7560 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 912.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-091', PROV_OCHOA, 2025, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-larvik-white-01098295',
-    nota: 'Baldosa Cerámica Larvik White · artículo 01-09-8295 · ref. 20X1204.27MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.27 piezas por m² según su propia referencia (RD$ 474.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 1563.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dosso-greige-01098445',
+    nota: 'BALDOSA CERÁMICA DOSSO GREIGE · artículo 01-09-8445 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 751.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-091', PROV_OCHOA, 2401.05, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-larvik-black-01097214',
-    nota: 'Baldosa Cerámica Larvik Black · artículo 01-09-7214 · ref. 20X1204.21MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 570.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2053.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dosso-bianco-01098443',
+    nota: 'BALDOSA CERÁMICA DOSSO BIANCO · artículo 01-09-8443 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 987.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-092', PROV_OCHOA, 1394.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bolivia-01097984',
-    nota: 'Baldosa Cerámica Bolivia · artículo 01-09-7984 · ref. 23.3X1203.57MT · marca HALCON. La tienda cotiza por pieza; van 3.57 piezas por m² según su propia referencia (RD$ 390.71 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2818.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-adobra-roble-01098605',
+    nota: 'BALDOSA CERÁMICA ADOBRA ROBLE · artículo 01-09-8605 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1354.96 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-093', PROV_OCHOA, 1973.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-roble-01098300',
-    nota: 'Baldosa Cerámica Heritage Roble · artículo 01-09-8300 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 704.79 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 1397.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nerpio-nogal-01098606',
+    nota: 'BALDOSA CERÁMICA NERPIO NOGAL · artículo 01-09-8606 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 671.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-093', PROV_OCHOA, 1905.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-natural-01097952',
-    nota: 'Baldosa Cerámica Heritage Natural · artículo 01-09-7952 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 680.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2099.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-phedra-mate-iris-01097240',
+    nota: 'BALDOSA CERÁMICA PHEDRA MATE IRIS · artículo 01-09-7240 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 999.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-093', PROV_OCHOA, 1981.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-heritage-nogal-01097953',
-    nota: 'Baldosa Cerámica Heritage Nogal · artículo 01-09-7953 · ref. 30X1202.80MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.8 piezas por m² según su propia referencia (RD$ 707.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2334.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shade-blanco-01098678',
+    nota: 'BALDOSA CERÁMICA SHADE BLANCO · artículo 01-09-8678 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1122.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2099.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-phedra-mate-iris-01097240',
-    nota: 'Baldosa Cerámica Phedra Mate Iris · artículo 01-09-7240 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 999.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2299.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-beige-01095818',
+    nota: 'BALDOSA CERÁMICA SUNSET BEIGE · artículo 01-09-5818 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1105.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 1916.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-stone-ceniza-01097560',
-    nota: 'Baldosa Cerámica Stone Ceniza · artículo 01-09-7560 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 912.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2113.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097621',
+    nota: 'BALDOSA CERÁMICA ATENEO BLANCO · artículo 01-09-7621 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1006.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2334.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shade-blanco-01098678',
-    nota: 'Baldosa Cerámica Shade Blanco · artículo 01-09-8678 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1122.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 1522.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanca-01095827',
+    nota: 'BALDOSA BLANCA · artículo 01-09-5827 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 731.91 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 1563.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dosso-greige-01098445',
-    nota: 'Baldosa Cerámica Dosso Greige · artículo 01-09-8445 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 751.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 3055.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-blanco-01095817',
+    nota: 'BALDOSA CERÁMICA SUNSET BLANCO · artículo 01-09-5817 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1469.01 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2053.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dosso-bianco-01098443',
-    nota: 'Baldosa Cerámica Dosso Bianco · artículo 01-09-8443 · ref. 40X1202.08MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 987.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2141.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-ceniza-01095819',
+    nota: 'BALDOSA CERÁMICA SUNSET CENIZA · artículo 01-09-5819 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1029.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2299.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-beige-01095818',
-    nota: 'Baldosa Cerámica Sunset Beige · artículo 01-09-5818 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1105.65 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-090', PROV_OCHOA, 2743.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dorex-beige-01096209',
+    nota: 'BALDOSA CERÁMICA DOREX BEIGE · artículo 01-09-6209 · ref. 40X1202.08MT/ · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1318.95 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2113.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097621',
-    nota: 'Baldosa Cerámica Ateneo Blanco · artículo 01-09-7621 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1006.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1899.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-coliseo-blanco-01098299',
+    nota: 'BALDOSA CERÁMICA COLISEO BLANCO · artículo 01-09-8299 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1376.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2818.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-adobra-roble-01098605',
-    nota: 'Baldosa Cerámica Adobra Roble · artículo 01-09-8605 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1354.96 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2041.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-perla-01099071',
+    nota: 'BALDOSA CERÁMICA ICONIC PERLA · artículo 01-09-9071 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1479.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 1397.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-nerpio-nogal-01098606',
-    nota: 'Baldosa Cerámica Nerpio Nogal · artículo 01-09-8606 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 671.65 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2744.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-laurent-negro-01098559',
+    nota: 'BALDOSA CERÁMICA LAURENT NEGRO · artículo 01-09-8559 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1989.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 1522.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-blanca-01095827',
-    nota: 'Baldosa Blanca · artículo 01-09-5827 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 731.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2253.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-negro-01099072',
+    nota: 'BALDOSA CERÁMICA SOLID+ NORDBY NEGRO · artículo 01-09-9072 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1633.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 3055.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-blanco-01095817',
-    nota: 'Baldosa Cerámica Sunset Blanco · artículo 01-09-5817 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1469.01 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2050.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-blanco-01099069',
+    nota: 'BALDOSA CERÁMICA DIVERSO BLANCO · artículo 01-09-9069 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1485.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2141.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sunset-ceniza-01095819',
-    nota: 'Baldosa Cerámica Sunset Ceniza · artículo 01-09-5819 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1029.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2371.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-terra-viva-verde-01099075',
+    nota: 'BALDOSA CERÁMICA SOLID+ TERRA VIVA VERDE · artículo 01-09-9075 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1718.41 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-094', PROV_OCHOA, 2743.42, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dorex-beige-01096209',
-    nota: 'Baldosa Cerámica Dorex Beige · artículo 01-09-6209 · ref. 40X1202.08MT/ · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 1318.95 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1722.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-blanco-01098460',
+    nota: 'BALDOSA CERÁMICA MURANO BLANCO · artículo 01-09-8460 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1247.85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1899.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-coliseo-blanco-01098299',
-    nota: 'Baldosa Cerámica Coliseo Blanco · artículo 01-09-8299 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1376.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2271.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-gris-01099040',
+    nota: 'BALDOSA CERÁMICA SOLID+ NORDBY GRIS · artículo 01-09-9040 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1646.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 2041.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-perla-01099071',
-    nota: 'Baldosa Cerámica Iconic Perla · artículo 01-09-9071 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1479.37 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-095', PROV_OCHOA, 2744.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-laurent-negro-01098559',
-    nota: 'Baldosa Cerámica Laurent Negro · artículo 01-09-8559 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1989.02 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-095', PROV_OCHOA, 2253.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-negro-01099072',
-    nota: 'Baldosa Cerámica Solid+ Nordby Negro · artículo 01-09-9072 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1633.18 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-095', PROV_OCHOA, 2050.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diverso-blanco-01099069',
-    nota: 'Baldosa Cerámica Diverso Blanco · artículo 01-09-9069 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1485.8 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-095', PROV_OCHOA, 2371.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-terra-viva-verde-01099075',
-    nota: 'Baldosa Cerámica Solid+ Terra Viva Verde · artículo 01-09-9075 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1718.41 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-095', PROV_OCHOA, 2294.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-blanco-01098672',
+  c('MAT-08-091', PROV_OCHOA, 2294.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byblos-arena-01098261',
     peso: 2,
-    nota: 'Baldosa Cerámica Cavallina Blanco · artículo 01-09-8672 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1662.84 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA BYBLOS ARENA · artículo 01-09-8261 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1662.84 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 2271.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-gris-01099040',
-    nota: 'Baldosa Cerámica Solid+ Nordby Gris · artículo 01-09-9040 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1646.08 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1672.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-marfil-01098459',
+    nota: 'BALDOSA CERÁMICA MURANO MARFIL · artículo 01-09-8459 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1212.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1602.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-infinity-beige-01099112',
-    nota: 'Baldosa Cerámica Infinity Beige · artículo 01-09-9112 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1161.3 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1602.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-infinity-beige-01099112',
+    nota: 'BALDOSA CERÁMICA INFINITY BEIGE · artículo 01-09-9112 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1161.3 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1619.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-perla-mate-01098619',
-    nota: 'Baldosa Cerámica Eleganza Perla Mate · artículo 01-09-8619 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1173.72 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1619.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-perla-mate-01098619',
+    nota: 'BALDOSA CERÁMICA ELEGANZA PERLA MATE · artículo 01-09-8619 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1173.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1481.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-blu-mate-01098618',
-    nota: 'Baldosa Cerámica Eleganza Blu Mate · artículo 01-09-8618 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1073.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1481.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-blu-mate-01098618',
+    nota: 'BALDOSA CERÁMICA ELEGANZA BLU MATE · artículo 01-09-8618 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1073.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1964.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-invisible-grey-mate-01098947',
-    nota: 'Baldosa Cerámica Invisible Grey Mate · artículo 01-09-8947 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1423.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1964.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-invisible-grey-mate-01098947',
+    nota: 'BALDOSA CERÁMICA INVISIBLE GREY MATE · artículo 01-09-8947 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1423.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1965.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byblos-gris-01098260',
-    nota: 'Baldosa Cerámica Byblos Gris · artículo 01-09-8260 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1424.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1965.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byblos-gris-01098260',
+    nota: 'BALDOSA CERÁMICA BYBLOS GRIS · artículo 01-09-8260 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1424.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1933.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-azul-01098936',
-    nota: 'Baldosa Cerámica Iconic Azul · artículo 01-09-8936 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1401.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1933.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-azul-01098936',
+    nota: 'BALDOSA CERÁMICA ICONIC AZUL · artículo 01-09-8936 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1401.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1728.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-verde-01098929',
-    nota: 'Baldosa Cerámica Iconic Verde · artículo 01-09-8929 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1252.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 1728.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-verde-01098929',
+    nota: 'BALDOSA CERÁMICA ICONIC VERDE · artículo 01-09-8929 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1252.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 2225.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-terra-viva-01099074',
-    nota: 'Baldosa Cerámica Solid+ Terra Viva · artículo 01-09-9074 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1612.99 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-091', PROV_OCHOA, 2225.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-terra-viva-01099074',
+    nota: 'BALDOSA CERÁMICA SOLID+ TERRA VIVA · artículo 01-09-9074 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1612.99 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1871, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-oxido-01098674',
+  c('MAT-08-091', PROV_OCHOA, 1454.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-murano-perla-01098461',
+    nota: 'BALDOSA CERÁMICA MURANO PERLA · artículo 01-09-8461 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1054.31 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-091', PROV_OCHOA, 1915.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-beige-01098617',
+    nota: 'BALDOSA CERÁMICA ELEGANZA BEIGE · artículo 01-09-8617 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1388.23 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-091', PROV_OCHOA, 1643.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-invisible-grey-brillo-01098644',
+    nota: 'BALDOSA CERÁMICA INVISIBLE GREY BRILLO · artículo 01-09-8644 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1190.88 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-091', PROV_OCHOA, 1871, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-oxido-01098674',
     peso: 2,
-    nota: 'Baldosa Cerámica Metallo Óxido · artículo 01-09-8674 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1355.8 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA METALLO ÓXIDO · artículo 01-09-8674 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1355.8 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1915.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eleganza-beige-01098617',
-    nota: 'Baldosa Cerámica Eleganza Beige · artículo 01-09-8617 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1388.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-092', PROV_OCHOA, 2764.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-green-01098746',
+    nota: 'BALDOSA CERÁMICA SLATE WAY GREEN · artículo 01-09-8746 · ref. 15X1544.44MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 62.2 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-095', PROV_OCHOA, 1643.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-invisible-grey-brillo-01098644',
-    nota: 'Baldosa Cerámica Invisible Grey Brillo · artículo 01-09-8644 · ref. 60X1201.38MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1190.88 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-092', PROV_OCHOA, 516.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alcoy-verde-01095479',
+    nota: 'BALDOSA ALCOY VERDE · artículo 01-09-5479 · ref. 15X1544.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 11.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-096', PROV_OCHOA, 2764.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-green-01098746',
-    nota: 'Baldosa Cerámica Slate Way Green · artículo 01-09-8746 · ref. 15X1544.44MT2 · marca PAMESA. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 62.2 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-093', PROV_OCHOA, 3184.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-land-iris-01097963',
+    nota: 'BALDOSA CERÁMICA LAND IRIS · artículo 01-09-7963 · ref. 18.5X18.529.54MT · marca SALONI. La tienda cotiza por pieza; van 29.54 piezas por m² según su propia referencia (RD$ 107.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-096', PROV_OCHOA, 516.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alcoy-verde-01095479',
-    nota: 'Baldosa Alcoy Verde · artículo 01-09-5479 · ref. 15X1544.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 11.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-094', PROV_OCHOA, 3073.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-amarna-shell-01097913',
+    nota: 'BALDOSA CERÁMICA AMARNA SHELL · artículo 01-09-7913 · ref. 90X1800.61MT/2 · marca PAMESA. La tienda cotiza por pieza; van 0.61 piezas por m² según su propia referencia (RD$ 5038.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-097', PROV_OCHOA, 3184.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-land-iris-01097963',
-    nota: 'Baldosa Cerámica Land Iris · artículo 01-09-7963 · ref. 18.5X18.529.54MT · marca SALONI. La tienda cotiza por pieza; van 29.54 piezas por m² según su propia referencia (RD$ 107.8 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-095', PROV_OCHOA, 915.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/alaska-blanco-blanco-brillo-01094015',
+    nota: 'ALASKA BLANCO (BLANCO BRILLO) · artículo 01-09-4015 · ref. 20X2025MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 25 piezas por m² según su propia referencia (RD$ 36.63 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-098', PROV_OCHOA, 3073.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-amarna-shell-01097913',
-    nota: 'Baldosa Cerámica Amarna Shell · artículo 01-09-7913 · ref. 90X1800.61MT/2 · marca PAMESA. La tienda cotiza por pieza; van 0.61 piezas por m² según su propia referencia (RD$ 5038.87 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-096', PROV_OCHOA, 2644.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-blanco-01098336',
+    nota: 'BALDOSA CERÁMICA MAYFAIR BLANCO · artículo 01-09-8336 · ref. 6.5X2077.14MT/2 · marca PAMESA. La tienda cotiza por pieza; van 77.14 piezas por m² según su propia referencia (RD$ 34.28 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-099', PROV_OCHOA, 915.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alaska-blanco-blanco-brillo-01094015',
-    nota: 'Alaska Blanco (Blanco Brillo) · artículo 01-09-4015 · ref. 20X2025MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 25 piezas por m² según su propia referencia (RD$ 36.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-096', PROV_OCHOA, 2599.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mayfair-navi-01098333',
+    nota: 'MAYFAIR NAVI · artículo 01-09-8333 · ref. 6.5X2077.14MT/2 · marca PAMESA. La tienda cotiza por pieza; van 77.14 piezas por m² según su propia referencia (RD$ 33.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-100', PROV_OCHOA, 2644.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-blanco-01098336',
-    nota: 'Baldosa Cerámica Mayfair Blanco · artículo 01-09-8336 · ref. 6.5X2077.14MT/2 · marca PAMESA. La tienda cotiza por pieza; van 77.14 piezas por m² según su propia referencia (RD$ 34.28 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-097', PROV_OCHOA, 2550.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diagonals-sage-01098331',
+    nota: 'BALDOSA CERÁMICA DIAGONALS SAGE · artículo 01-09-8331 · ref. 22.3X22.320MT/2 · marca PAMESA. La tienda cotiza por pieza; van 20 piezas por m² según su propia referencia (RD$ 127.53 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-100', PROV_OCHOA, 2599.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mayfair-navi-01098333',
-    nota: 'Mayfair Navi · artículo 01-09-8333 · ref. 6.5X2077.14MT/2 · marca PAMESA. La tienda cotiza por pieza; van 77.14 piezas por m² según su propia referencia (RD$ 33.7 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-098', PROV_OCHOA, 2044.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-negro-hexagonal-01098327',
+    nota: 'BALDOSA CERÁMICA MAYFAIR NEGRO HEXAGONAL · artículo 01-09-8327 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 71.56 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-101', PROV_OCHOA, 2550.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-diagonals-sage-01098331',
-    nota: 'Baldosa Cerámica Diagonals Sage · artículo 01-09-8331 · ref. 22.3X22.320MT/2 · marca PAMESA. La tienda cotiza por pieza; van 20 piezas por m² según su propia referencia (RD$ 127.53 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-098', PROV_OCHOA, 2071.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-blanco-hexagonal-01098329',
+    nota: 'BALDOSA CERÁMICA MAYFAIR BLANCO HEXAGONAL · artículo 01-09-8329 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 72.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-102', PROV_OCHOA, 2044.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-negro-hexagonal-01098327',
-    nota: 'Baldosa Cerámica Mayfair Negro Hexagonal · artículo 01-09-8327 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 71.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-098', PROV_OCHOA, 2629.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-vert-hexagonal-01098328',
+    nota: 'BALDOSA CERÁMICA MAYFAIR VERT HEXAGONAL · artículo 01-09-8328 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 92.04 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-102', PROV_OCHOA, 2071.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-blanco-hexagonal-01098329',
-    nota: 'Baldosa Cerámica Mayfair Blanco Hexagonal · artículo 01-09-8329 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 72.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-098', PROV_OCHOA, 1614.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-tortora-hexagonal-01098620',
+    nota: 'BALDOSA CERÁMICA MAYFAIR TORTORA HEXAGONAL · artículo 01-09-8620 · ref. 19.8X22.828.57MT2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 56.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-102', PROV_OCHOA, 2629.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-vert-hexagonal-01098328',
-    nota: 'Baldosa Cerámica Mayfair Vert Hexagonal · artículo 01-09-8328 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 92.04 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-098', PROV_OCHOA, 3195.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-navi-hexagonal-01098326',
+    nota: 'BALDOSA CERÁMICA MAYFAIR NAVI HEXAGONAL · artículo 01-09-8326 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 111.84 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-102', PROV_OCHOA, 1614.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-tortora-hexagonal-01098620',
-    nota: 'Baldosa Cerámica Mayfair Tortora Hexagonal · artículo 01-09-8620 · ref. 19.8X22.828.57MT2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 56.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-099', PROV_OCHOA, 1643.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-blanco-01098530',
+    nota: 'BALDOSA CERÁMICA MOMENTS BLANCO · artículo 01-09-8530 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 103.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-102', PROV_OCHOA, 3195.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mayfair-navi-hexagonal-01098326',
-    nota: 'Baldosa Cerámica Mayfair Navi Hexagonal · artículo 01-09-8326 · ref. 19.8X22.828.57MT/2 · marca PAMESA. La tienda cotiza por pieza; van 28.57 piezas por m² según su propia referencia (RD$ 111.84 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-099', PROV_OCHOA, 1641.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-azul-01098529',
+    nota: 'BALDOSA CERÁMICA MOMENTS AZUL · artículo 01-09-8529 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 103.12 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-103', PROV_OCHOA, 1643.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-blanco-01098530',
-    nota: 'Baldosa Cerámica Moments Blanco · artículo 01-09-8530 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 103.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-099', PROV_OCHOA, 1470.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-think-01098525',
+    nota: 'BALDOSA CERÁMICA MOMENTS THINK · artículo 01-09-8525 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 92.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-103', PROV_OCHOA, 1641.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-azul-01098529',
-    nota: 'Baldosa Cerámica Moments Azul · artículo 01-09-8529 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 103.12 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-100', PROV_OCHOA, 2504.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caleidos-01098319',
+    nota: 'BALDOSA CERÁMICA CALEIDOS · artículo 01-09-8319 · ref. 23.2X26.821.62MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 21.62 piezas por m² según su propia referencia (RD$ 115.85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-103', PROV_OCHOA, 1470.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-moments-think-01098525',
-    nota: 'Baldosa Cerámica Moments Think · artículo 01-09-8525 · ref. 25X2515.92MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 15.92 piezas por m² según su propia referencia (RD$ 92.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-101', PROV_OCHOA, 1914.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hexa-doria-multi-01098739',
+    nota: 'BALDOSA CERÁMICA HEXA DORIA MULTI · artículo 01-09-8739 · ref. 25.8X2918MT2 · marca PAMESA. La tienda cotiza por pieza; van 18 piezas por m² según su propia referencia (RD$ 106.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-104', PROV_OCHOA, 2504.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-caleidos-01098319',
-    nota: 'Baldosa Cerámica Caleidos · artículo 01-09-8319 · ref. 23.2X26.821.62MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 21.62 piezas por m² según su propia referencia (RD$ 115.85 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-102', PROV_OCHOA, 779.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igloo-blanco-01096797',
+    nota: 'BALDOSA CERÁMICA IGLOO BLANCO · artículo 01-09-6797 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 77.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-105', PROV_OCHOA, 1914.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-hexa-doria-multi-01098739',
-    nota: 'Baldosa Cerámica Hexa Doria Multi · artículo 01-09-8739 · ref. 25.8X2918MT2 · marca PAMESA. La tienda cotiza por pieza; van 18 piezas por m² según su propia referencia (RD$ 106.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 797.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-01098083',
+    nota: 'BALDOSA CERÁMICA MILAN · artículo 01-09-8083 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 161.85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-106', PROV_OCHOA, 779.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igloo-blanco-01096797',
-    nota: 'Baldosa Cerámica Igloo Blanco · artículo 01-09-6797 · ref. 25X4010.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 77.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 717.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-glint-blanco-01095084',
+    nota: 'BALDOSA CERÁMICA GLINT BLANCO · artículo 01-09-5084 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.59 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 797.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-01098083',
-    nota: 'Baldosa Cerámica Milan · artículo 01-09-8083 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 161.85 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 680.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-terrazzo-beige-01096744',
+    nota: 'BALDOSA CERÁMICA TERRAZZO BEIGE · artículo 01-09-6744 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 138.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 717.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-glint-blanco-01095084',
-    nota: 'Baldosa Cerámica Glint Blanco · artículo 01-09-5084 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.59 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 780.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palatina-blanco-01097059',
+    nota: 'BALDOSA CERÁMICA PALATINA BLANCO · artículo 01-09-7059 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 158.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 680.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-terrazzo-beige-01096744',
-    nota: 'Baldosa Cerámica Terrazzo Beige · artículo 01-09-6744 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 138.13 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 822.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-beige-01085658',
+    nota: 'BALDOSA CERÁMICA TOBAGO BEIGE · artículo 01-08-5658 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 166.91 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 780.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-palatina-blanco-01097059',
-    nota: 'Baldosa Cerámica Palatina Blanco · artículo 01-09-7059 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 158.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 800.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atessa-marfil-01098420',
+    nota: 'BALDOSA CERÁMICA ATESSA MARFIL · artículo 01-09-8420 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 162.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 800.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atessa-marfil-01098420',
-    nota: 'Baldosa Cerámica Atessa Marfil · artículo 01-09-8420 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 162.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 401.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-estocolmo-beige-01099139',
+    nota: 'BALDOSA CERÁMICA ESTOCOLMO BEIGE · artículo 01-09-9139 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 80.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 805.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-urban-blanco-01098084',
-    nota: 'Baldosa Cerámica Urban Blanco · artículo 01-09-8084 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.43 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 807.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atessa-beige-01095090',
+    nota: 'BALDOSA CERÁMICA ATESSA BEIGE · artículo 01-09-5090 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.71 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 807.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atessa-beige-01095090',
-    nota: 'Baldosa Cerámica Atessa Beige · artículo 01-09-5090 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.71 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1263.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colormatt-negro-01096329',
+    nota: 'BALDOSA CERÁMICA COLORMATT NEGRO · artículo 01-09-6329 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 256.19 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1263.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colormatt-negro-01096329',
-    nota: 'Baldosa Cerámica Colormatt Negro · artículo 01-09-6329 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 256.19 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 811.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-badem-perla-01097314',
+    nota: 'BALDOSA CERÁMICA BADEM PERLA · artículo 01-09-7314 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 677.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-marron-01085575',
-    nota: 'Baldosa Cerámica Tobago Marrón · artículo 01-08-5575 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 137.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 677.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-marron-01085575',
+    nota: 'BALDOSA CERÁMICA TOBAGO MARRÓN · artículo 01-08-5575 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 137.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 780.07, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-oro-01099130',
-    nota: 'Baldosa Cerámica Imperium Oro · artículo 01-09-9130 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 158.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 780.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-oro-01099130',
+    nota: 'BALDOSA CERÁMICA IMPERIUM ORO · artículo 01-09-9130 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 158.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 839.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-alpha-marengo-01098089',
-    nota: 'Baldosa At Alpha Marengo · artículo 01-09-8089 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 170.33 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 371.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velum-gray-01099140',
+    nota: 'BALDOSA CERÁMICA VELUM GRAY · artículo 01-09-9140 · ref. 45X455MT/2 · marca CECAFI. La tienda cotiza por pieza; van 5 piezas por m² según su propia referencia (RD$ 74.28 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1209.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-stockholm-perla-01096235',
-    nota: 'Baldosa Cerámica Stockholm Perla · artículo 01-09-6235 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 245.25 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 839.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-alpha-marengo-01098089',
+    nota: 'BALDOSA AT ALPHA MARENGO · artículo 01-09-8089 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 170.33 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1115.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petris-blanco-01098415',
-    nota: 'Baldosa Cerámica Petris Blanco · artículo 01-09-8415 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 207.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 929.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blaze-blanco-01097313',
+    nota: 'BALDOSA CERÁMICA BLAZE BLANCO · artículo 01-09-7313 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 188.54 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 666.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mirror-brown-01098296',
+  c('MAT-08-103', PROV_OCHOA, 1209.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-stockholm-perla-01096235',
+    nota: 'BALDOSA CERÁMICA STOCKHOLM PERLA · artículo 01-09-6235 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 245.25 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-103', PROV_OCHOA, 1115.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petris-blanco-01098415',
+    nota: 'BALDOSA CERÁMICA PETRIS BLANCO · artículo 01-09-8415 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 207.27 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-103', PROV_OCHOA, 666.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mirror-brown-01098296',
     peso: 2,
-    nota: 'Baldosa Cerámica Mirror Brown · artículo 01-09-8296 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MIRROR BROWN · artículo 01-09-8296 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 135.23 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1226.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-blanco-01096725',
-    nota: 'Baldosa Cerámica Ottawa Blanco · artículo 01-09-6725 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 248.71 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 882.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-classic-mix-01098719',
+    nota: 'BALDOSA CERÁMICA CLASSIC MIX · artículo 01-09-8719 · ref. 45X454.93MT2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 179.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1272.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-negro-01096330',
-    nota: 'Baldosa Cerámica Colorgloss Negro · artículo 01-09-6330 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 258.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1226.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-blanco-01096725',
+    nota: 'BALDOSA CERÁMICA OTTAWA BLANCO · artículo 01-09-6725 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 248.71 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1187.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-tita-01096326',
-    nota: 'Baldosa Cerámica Ottawa Tita · artículo 01-09-6326 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 240.89 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1272.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-negro-01096330',
+    nota: 'BALDOSA CERÁMICA COLORGLOSS NEGRO · artículo 01-09-6330 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 258.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1415.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-topo-01096325',
-    nota: 'Baldosa Cerámica Ottawa Topo · artículo 01-09-6325 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 287.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1187.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-tita-01096326',
+    nota: 'BALDOSA CERÁMICA OTTAWA TITA · artículo 01-09-6326 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 240.89 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1115.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sonata-gris-01098266',
-    nota: 'Baldosa Cerámica Sonata Gris · artículo 01-09-8266 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 206.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1415.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ottawa-topo-01096325',
+    nota: 'BALDOSA CERÁMICA OTTAWA TOPO · artículo 01-09-6325 · ref. 45X454.93MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 287.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 947.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-samara-crema-01098082',
-    nota: 'Baldosa Cerámica Samara Crema · artículo 01-09-8082 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 192.28 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1115.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sonata-gris-01098266',
+    nota: 'BALDOSA CERÁMICA SONATA GRIS · artículo 01-09-8266 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 206.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 963.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-corinto-blanco-01095756',
-    nota: 'Baldosa Cerámica Corinto Blanco · artículo 01-09-5756 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 178.46 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 947.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-samara-crema-01098082',
+    nota: 'BALDOSA CERÁMICA SAMARA CREMA · artículo 01-09-8082 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 192.28 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 1129.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sorrento-gris-01097613',
-    nota: 'Baldosa Cerámica Sorrento Gris · artículo 01-09-7613 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 229.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 963.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-corinto-blanco-01095756',
+    nota: 'BALDOSA CERÁMICA CORINTO BLANCO · artículo 01-09-5756 · ref. 43X435.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 178.46 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-107', PROV_OCHOA, 927.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-corinto-blanco-01098416',
-    nota: 'Baldosa Cerámica Corinto Blanco · artículo 01-09-8416 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 172.39 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1129.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sorrento-gris-01097613',
+    nota: 'BALDOSA CERÁMICA SORRENTO GRIS · artículo 01-09-7613 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 229.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-108', PROV_OCHOA, 811.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-oro-brillo-01099119',
-    nota: 'Baldosa Cerámica Imperium Oro Brillo · artículo 01-09-9119 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1149.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ara-1-01097310',
+    nota: 'BALDOSA CERÁMICA ARA 1 · artículo 01-09-7310 · ref. 45X454.93MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 233.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-108', PROV_OCHOA, 863.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-nazca-oro-01099120',
-    nota: 'Baldosa Cerámica Imperium Nazca Oro · artículo 01-09-9120 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 156.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 1597.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-teak-gris-01097854',
+    nota: 'BALDOSA CERÁMICA TEAK GRIS · artículo 01-09-7854 · ref. 45X454.91MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.91 piezas por m² según su propia referencia (RD$ 325.33 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-109', PROV_OCHOA, 917.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpes-nogal-01098408',
-    nota: 'Baldosa Cerámica Alpes Nogal · artículo 01-09-8408 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 100.93 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-103', PROV_OCHOA, 927.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-corinto-blanco-01098416',
+    nota: 'BALDOSA CERÁMICA CORINTO BLANCO · artículo 01-09-8416 · ref. 43X435.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 172.39 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-109', PROV_OCHOA, 851.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpes-natural-01098409',
-    nota: 'Baldosa Cerámica Alpes Natural · artículo 01-09-8409 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 93.7 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-104', PROV_OCHOA, 811.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-oro-brillo-01099119',
+    nota: 'BALDOSA CERÁMICA IMPERIUM ORO BRILLO · artículo 01-09-9119 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 147.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-110', PROV_OCHOA, 1267.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-micenas-crema-01096792',
-    nota: 'Baldosa Cerámica Micenas Crema · artículo 01-09-6792 · ref. 58.5X58.52.92MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 433.97 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-104', PROV_OCHOA, 863.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-nazca-oro-01099120',
+    nota: 'BALDOSA CERÁMICA IMPERIUM NAZCA ORO · artículo 01-09-9120 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 156.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-110', PROV_OCHOA, 1547.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byzas-beige-01096021',
-    nota: 'Baldosa Cerámica Byzas Beige · artículo 01-09-6021 · ref. 58.5X58.2.92MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 530.08 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-105', PROV_OCHOA, 917.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpes-nogal-01098408',
+    nota: 'BALDOSA CERÁMICA ALPES NOGAL · artículo 01-09-8408 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 100.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 757.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-perla-01098142',
+  c('MAT-08-105', PROV_OCHOA, 851.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-alpes-natural-01098409',
+    nota: 'BALDOSA CERÁMICA ALPES NATURAL · artículo 01-09-8409 · ref. 19X579.09MT/2 · marca SALONI. La tienda cotiza por pieza; van 9.09 piezas por m² según su propia referencia (RD$ 93.7 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-106', PROV_OCHOA, 1267.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-micenas-crema-01096792',
+    nota: 'BALDOSA CERÁMICA MICENAS CREMA · artículo 01-09-6792 · ref. 58.5X58.52.92MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 433.97 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-106', PROV_OCHOA, 1547.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byzas-beige-01096021',
+    nota: 'BALDOSA CERÁMICA BYZAS BEIGE · artículo 01-09-6021 · ref. 58.5X58.2.92MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 530.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-107', PROV_OCHOA, 482.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/albero-bosco-plus-hd-mad-01098762',
+    nota: 'ALBERO BOSCO PLUS HD MAD. · artículo 01-09-8762 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 58.58 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-107', PROV_OCHOA, 788.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brienz-01098102',
+    nota: 'BALDOSA CERÁMICA BRIENZ · artículo 01-09-8102 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 94.68 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-107', PROV_OCHOA, 692.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-marengo-01098687',
+    nota: 'BALDOSA CERÁMICA CITY MARENGO · artículo 01-09-8687 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-107', PROV_OCHOA, 692.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-perla-climb-01098692',
     peso: 2,
-    nota: 'Baldosa Cerámica Toronto Perla · artículo 01-09-8142 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA CITY PERLA CLIMB · artículo 01-09-8692 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.18 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 482.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/albero-bosco-plus-hd-mad-01098762',
-    nota: 'Albero Bosco Plus Hd Mad. · artículo 01-09-8762 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 58.58 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-111', PROV_OCHOA, 858.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colonia-nogal-01098145',
-    nota: 'Baldosa Cerámica Colonia Nogal · artículo 01-09-8145 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-111', PROV_OCHOA, 995.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-01095217',
+  c('MAT-08-107', PROV_OCHOA, 777.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gravel-gris-01098106',
     peso: 2,
-    nota: 'Baldosa Cerámica Colorgloss Blanco · artículo 01-09-5217 · ref. 20X608.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 119.45 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA GRAVEL GRIS · artículo 01-09-8106 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 93.34 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 788.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brienz-01098102',
-    nota: 'Baldosa Cerámica Brienz · artículo 01-09-8102 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 94.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-107', PROV_OCHOA, 829, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brienz-ceniza-01098103',
+    nota: 'BALDOSA CERÁMICA BRIENZ CENIZA · artículo 01-09-8103 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 99.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 692.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-marengo-01098687',
-    nota: 'Baldosa Cerámica City Marengo · artículo 01-09-8687 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-107', PROV_OCHOA, 858.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colonia-nogal-01098145',
+    nota: 'BALDOSA CERÁMICA COLONIA NOGAL · artículo 01-09-8145 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 692.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-perla-climb-01098692',
+  c('MAT-08-107', PROV_OCHOA, 995.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-01095217',
     peso: 2,
-    nota: 'Baldosa Cerámica City Perla Climb · artículo 01-09-8692 · ref. 20X608.33MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 83.18 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA COLORGLOSS BLANCO · artículo 01-09-5217 · ref. 20X608.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 119.45 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 777.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-gravel-gris-01098106',
+  c('MAT-08-107', PROV_OCHOA, 757.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colonia-gris-01098144',
+    nota: 'BALDOSA CERÁMICA COLONIA GRIS · artículo 01-09-8144 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-107', PROV_OCHOA, 723.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mos-chip-marron-01094466',
+    nota: 'BALDOSA CERÁMICA MOS CHIP MARRÓN · artículo 01-09-4466 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 86.81 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1076.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-white-01099118',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON WHITE · artículo 01-09-9118 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 194.02 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1111.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milton-perla-01098219',
+    nota: 'BALDOSA CERÁMICA MILTON PERLA · artículo 01-09-8219 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 200.34 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1460.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-ocean-01099173',
+    nota: 'BALDOSA CERÁMICA SLATE WAY OCEAN · artículo 01-09-9173 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 263.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1130.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-sand-01099116',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON SAND · artículo 01-09-9116 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 203.61 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1084.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-silver-01099117',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON SILVER · artículo 01-09-9117 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 195.37 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1965.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-antislip-gris-01098796',
+    nota: 'BALDOSA CERÁMICA SOLID+ NORDBY ANTISLIP GRIS · artículo 01-09-8796 · ref. 30X605.55MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 354.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1824.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-perla-01098935',
+    nota: 'BALDOSA CERÁMICA ICONIC PERLA · artículo 01-09-8935 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 328.78 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1681.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-woodstrip-nogal-01098348',
     peso: 2,
-    nota: 'Baldosa Cerámica Gravel Gris · artículo 01-09-8106 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 93.34 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA WOODSTRIP NOGAL · artículo 01-09-8348 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 302.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 723.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mos-chip-marron-01094466',
-    nota: 'Baldosa Cerámica Mos Chip Marrón · artículo 01-09-4466 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 86.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-108', PROV_OCHOA, 1280, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alameda-blanco-01097912',
+    nota: 'BALDOSA ALAMEDA BLANCO · artículo 01-09-7912 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 230.63 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-111', PROV_OCHOA, 829, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brienz-ceniza-01098103',
-    nota: 'Baldosa Cerámica Brienz Ceniza · artículo 01-09-8103 · ref. 20X608.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 99.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-108', PROV_OCHOA, 1422.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-argento-01099170',
+    nota: 'BALDOSA CERÁMICA LAVAGNA PIETRA DI ARGENTO · artículo 01-09-9170 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 256.39 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-112', PROV_OCHOA, 1076.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-white-01099118',
-    nota: 'Baldosa Cerámica Grand Canyon White · artículo 01-09-9118 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 194.02 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-108', PROV_OCHOA, 1093.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milton-beige-01098218',
+    nota: 'BALDOSA CERÁMICA MILTON BEIGE · artículo 01-09-8218 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 197.04 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-112', PROV_OCHOA, 1111.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milton-perla-01098219',
-    nota: 'Baldosa Cerámica Milton Perla · artículo 01-09-8219 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 200.34 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1460.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-ocean-01099173',
-    nota: 'Baldosa Cerámica Slate Way Ocean · artículo 01-09-9173 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 263.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1130.04, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-sand-01099116',
-    nota: 'Baldosa Cerámica Grand Canyon Sand · artículo 01-09-9116 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 203.61 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1084.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-silver-01099117',
-    nota: 'Baldosa Cerámica Grand Canyon Silver · artículo 01-09-9117 · ref. 30X605.55MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 195.37 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1965.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-solid-nordby-antislip-gris-01098796',
-    nota: 'Baldosa Cerámica Solid+ Nordby Antislip Gris · artículo 01-09-8796 · ref. 30X605.55MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 354.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1823.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-antracita-01096787',
-    nota: 'Baldosa Cerámica Menhir Antracita · artículo 01-09-6787 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 328.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1505.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-slate-way-m-green-01099172',
-    nota: 'Baldosa Cerámica Slate Way M Green · artículo 01-09-9172 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 271.21 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1824.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-perla-01098935',
-    nota: 'Baldosa Cerámica Iconic Perla · artículo 01-09-8935 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 328.78 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1681.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-woodstrip-nogal-01098348',
+  c('MAT-08-108', PROV_OCHOA, 1251.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-perla-01098004',
     peso: 2,
-    nota: 'Baldosa Cerámica Woodstrip Nogal · artículo 01-09-8348 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 302.98 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1280, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alameda-blanco-01097912',
-    nota: 'Baldosa Alameda Blanco · artículo 01-09-7912 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 230.63 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1422.96, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-argento-01099170',
-    nota: 'Baldosa Cerámica Lavagna Pietra Di Argento · artículo 01-09-9170 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 256.39 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1093.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milton-beige-01098218',
-    nota: 'Baldosa Cerámica Milton Beige · artículo 01-09-8218 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 197.04 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1251.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-perla-01098004',
-    peso: 2,
-    nota: 'Baldosa Alabama Perla · artículo 01-09-8004 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1666.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-marfil-01098685',
-    nota: 'Baldosa Cerámica Petralava Marfil · artículo 01-09-8685 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 308.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1252.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-coliseo-blanco-01098201',
-    nota: 'Baldosa Cerámica Coliseo Blanco · artículo 01-09-8201 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.59 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1748.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-arena-01096786',
-    nota: 'Baldosa Cerámica Menhir Arena · artículo 01-09-6786 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 315.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1474.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-perla-01098349',
-    nota: 'Baldosa Cerámica Industrial Perla · artículo 01-09-8349 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 265.68 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1408.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lane-gris-01098270',
-    nota: 'Baldosa Cerámica Lane Gris · artículo 01-09-8270 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 253.85 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1479.69, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-grigio-01099169',
-    nota: 'Baldosa Cerámica Lavagna Pietra Di Grigio · artículo 01-09-9169 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 266.61 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1373.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-perla-01099079',
-    nota: 'Baldosa Cerámica Lagom Perla · artículo 01-09-9079 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 247.42 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1611.83, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spike-blanco-01098357',
-    nota: 'Baldosa Cerámica Spike Blanco · artículo 01-09-8357 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.42 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1474.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-beige-01098371',
-    nota: 'Baldosa Cerámica Smelting Beige · artículo 01-09-8371 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 273.1 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1611.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097976',
-    nota: 'Baldosa Cerámica Ateneo Blanco · artículo 01-09-7976 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.3 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1561.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-woodstrip-arce-01098346',
-    nota: 'Baldosa Cerámica Woodstrip Arce · artículo 01-09-8346 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 281.32 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1761.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-beige-01098934',
-    nota: 'Baldosa Cerámica Iconic Beige · artículo 01-09-8934 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 317.4 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1567.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-galena-beige-01098373',
-    nota: 'Baldosa Cerámica Smelting Galena Beige · artículo 01-09-8373 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 290.24 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1530.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-alloy-ceniza-01098383',
-    nota: 'Baldosa Cerámica Smelting Alloy Ceniza · artículo 01-09-8383 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 283.46 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1554.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cm-sedus-brillo-blanco-01098377',
-    nota: 'Cm Sedus Brillo Blanco · artículo 01-09-8377 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 280.12 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1408.81, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lane-marfil-01098044',
-    nota: 'Baldosa Cerámica Lane Marfil · artículo 01-09-8044 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 253.84 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1543.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-radiance-blanco-01098356',
-    nota: 'Baldosa Cerámica Radiance Blanco · artículo 01-09-8356 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 278.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1219.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-nave-perla-01098353',
-    nota: 'Baldosa Cerámica Industrial Nave Perla · artículo 01-09-8353 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 219.8 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1260.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-beige-01099077',
-    nota: 'Baldosa Cerámica Lagom Beige · artículo 01-09-9077 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 227.17 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1496.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-alloy-beige-01098375',
-    nota: 'Baldosa Cerámica Smelting Alloy Beige · artículo 01-09-8375 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.11 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1429.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-ceniza-01098372',
-    nota: 'Baldosa Cerámica Smelting Ceniza · artículo 01-09-8372 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 264.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1730.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colormatt-negro-01098815',
-    nota: 'Baldosa Cerámica Colormatt Negro · artículo 01-09-8815 · ref. 29.5X59.55.75MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 300.97 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1620.77, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-grid-perla-01098351',
-    nota: 'Baldosa Cerámica Industrial Grid Perla · artículo 01-09-8351 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 292.03 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1294.76, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-acero-01098350',
-    nota: 'Baldosa Cerámica Industrial Acero · artículo 01-09-8350 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 233.29 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1724.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01098034',
-    nota: 'Baldosa Cerámica Ateneo Blanco · artículo 01-09-8034 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 310.65 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1048.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shake-beige-01098478',
-    nota: 'Baldosa Cerámica Shake Beige · artículo 01-09-8478 · ref. 31X605.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 194.92 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1647.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rectangular-30x60-01098039',
-    nota: 'Baldosa Cerámica Rectangular 30X60 · artículo 01-09-8039 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 296.91 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1183.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-nave-acero-01098354',
-    nota: 'Baldosa Cerámica Industrial Nave Acero · artículo 01-09-8354 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 213.19 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1455.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-galena-ceniza-01098374',
-    nota: 'Baldosa Cerámica Smelting Galena Ceniza · artículo 01-09-8374 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 269.5 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1395.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-gris-01098686',
-    nota: 'Baldosa Cerámica Petralava Gris · artículo 01-09-8686 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 258.38 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-112', PROV_OCHOA, 1100.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rectangular-01096155',
-    nota: 'Baldosa Cerámica Rectangular · artículo 01-09-6155 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 204.88 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 956.05, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-natural-mate-01099206',
-    nota: 'Baldosa Cerámica Energy Natural Mate · artículo 01-09-9206 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 350.2 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 901.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-marfil-01097819',
-    nota: 'Baldosa Cerámica Desert Marfil · artículo 01-09-7819 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 330.33 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1238.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-perla-01097699',
-    nota: 'Baldosa Alabama Perla · artículo 01-09-7699 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 447.05 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1021.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-dolomite-01099209',
-    nota: 'Baldosa Cerámica Imperium Dolomite · artículo 01-09-9209 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 374 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 930.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-ivory-mate-01099205',
-    nota: 'Baldosa Cerámica Energy Ivory Mate · artículo 01-09-9205 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 340.68 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1382.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-grigio-01099166',
-    nota: 'Baldosa Cerámica Lavagna Pietra Di Grigio · artículo 01-09-9166 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 498.96 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 981.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-gris-mate-01099204',
-    nota: 'Baldosa Cerámica Energy Gris Mate · artículo 01-09-9204 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 359.48 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1207.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-perla-01097679',
-    nota: 'Baldosa Cerámica City Perla · artículo 01-09-7679 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 435.94 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1196.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-statuario-01097582',
-    nota: 'Baldosa Cerámica Statuario · artículo 01-09-7582 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1253.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-beige-01097215',
-    nota: 'Baldosa Alabama Beige · artículo 01-09-7215 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.58 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1277.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-marfil-01098515',
-    nota: 'Baldosa Cerámica Atenea Marfil · artículo 01-09-8515 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 461.34 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1441.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-argento-01099168',
-    nota: 'Baldosa Cerámica Lavagna Pietra Di Argento · artículo 01-09-9168 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 520.32 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1251.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alberta-roble-01097937',
-    nota: 'Baldosa Alberta Roble · artículo 01-09-7937 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 451.77 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1211.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-denver-beige-01097939',
-    nota: 'Baldosa Cerámica Denver Beige · artículo 01-09-7939 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 437.5 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1252.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-01098516',
-    nota: 'Baldosa Cerámica Atenea · artículo 01-09-8516 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.33 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1289.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/alberta-gris-pw-mad-01097938',
-    nota: 'Alberta Gris Pw Mad. · artículo 01-09-7938 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 465.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 2215.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01099046',
-    nota: 'Baldosa Cerámica Desert Natural · artículo 01-09-9046 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 799.86 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1108.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-blanco-01098682',
-    nota: 'Baldosa Cerámica Sable Blanco · artículo 01-09-8682 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 400.09 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1469.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mistic-white-01098509',
-    nota: 'Baldosa Cerámica Mistic White · artículo 01-09-8509 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 530.56 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1519.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-denver-chrome-01097940',
-    nota: 'Baldosa Cerámica Denver Chrome · artículo 01-09-7940 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 548.66 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1775.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097112',
-    nota: 'Baldosa Cerámica Ateneo Blanco · artículo 01-09-7112 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 641.09 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1166.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-blanco-01098681',
-    nota: 'Baldosa Cerámica Circe Blanco · artículo 01-09-8681 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 421 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 2912.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-agora-blanco-01097999',
-    nota: 'Baldosa Ágora Blanco · artículo 01-09-7999 · ref. 60X602.92MT2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 997.38 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1390.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-marfil-01098657',
-    nota: 'Baldosa Cerámica Circe Marfil · artículo 01-09-8657 · ref. 60X602.77MT2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 501.96 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1058.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-infinity-electra-01094938',
-    nota: 'Baldosa Cerámica Infinity Electra · artículo 01-09-4938 · ref. 60X602.77MT/2 · marca ROCERSA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 382.09 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 1499.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mistral-ivory-01095789',
-    nota: 'Baldosa Cerámica Mistral Ivory · artículo 01-09-5789 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 541.51 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-113', PROV_OCHOA, 461.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tuscany-grigio-01097515',
-    nota: 'Baldosa Cerámica Tuscany Grigio · artículo 01-09-7515 · ref. 62X622.60MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 2.6 piezas por m² según su propia referencia (RD$ 177.46 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1203.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-arena-01097958',
-    nota: 'Baldosa Cerámica Petralava Arena · artículo 01-09-7958 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 227.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1309.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-bend-01094298',
-    nota: 'Baldosa Cerámica Colorgloss Blanco Bend · artículo 01-09-4298 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 245.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1417.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-01094317',
-    nota: 'Baldosa Cerámica Colorgloss Blanco · artículo 01-09-4317 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 265.97 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1375.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-negro-01095238',
-    nota: 'Baldosa Cerámica Colorgloss Negro · artículo 01-09-5238 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 258.11 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1181.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ardesia-cenere-01098252',
-    nota: 'Baldosa Cerámica Ardesia Cenere · artículo 01-09-8252 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 221.63 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1279.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-nimes-marfil-01097962',
-    nota: 'Baldosa Cerámica Petralava Nimes Marfil · artículo 01-09-7962 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 241.37 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1568.95, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-gris-01097889',
-    nota: 'Baldosa Cerámica Sybar Gris · artículo 01-09-7889 · ref. 25X755.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 292.17 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1155.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-perla-01098535',
-    nota: 'Baldosa Cerámica Chromatic Perla · artículo 01-09-8535 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 216.72 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1202.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-gris-01097959',
-    nota: 'Baldosa Cerámica Petralava Gris · artículo 01-09-7959 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 226.81 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1275.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-azul-01098533',
-    nota: 'Baldosa Cerámica Chromatic Azul · artículo 01-09-8533 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.27 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1239.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-gris-01098532',
-    nota: 'Baldosa Cerámica Chromatic Gris · artículo 01-09-8532 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 232.5 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1133.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-loira-marfil-01097961',
-    nota: 'Baldosa Cerámica Petralava Loira Marfil · artículo 01-09-7961 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 213.84 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1469.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-beige-01093717',
-    nota: 'Baldosa Cerámica Sybar Beige · artículo 01-09-3717 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 275.64 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1492.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-marfil-01095139',
-    nota: 'Baldosa Cerámica Sybar Marfil · artículo 01-09-5139 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 279.98 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 1173.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-statuario-01097702',
-    nota: 'Baldosa Cerámica Statuario · artículo 01-09-7702 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 220.08 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-114', PROV_OCHOA, 915.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soul-blanco-01096580',
-    nota: 'Baldosa Cerámica Soul Blanco · artículo 01-09-6580 · ref. 25X755.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 172.77 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-115', PROV_OCHOA, 908.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travertino-polido-01098178',
-    nota: 'Baldosa Cerámica Travertino Polido · artículo 01-09-8178 · ref. 84X841.41MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 1.41 piezas por m² según su propia referencia (RD$ 644.23 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-115', PROV_OCHOA, 951.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-columba-01099149',
-    nota: 'Baldosa Cerámica Columba · artículo 01-09-9149 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-116', PROV_OCHOA, 1576.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bois-ceniza-01098608',
-    nota: 'Baldosa Cerámica Bois Ceniza · artículo 01-09-8608 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 212.99 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-116', PROV_OCHOA, 1417.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bois-beige-01098610',
-    nota: 'Baldosa Cerámica Bois Beige · artículo 01-09-8610 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 191.53 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 1188.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-blanco-01098679',
-    nota: 'Baldosa Cerámica Circe Blanco · artículo 01-09-8679 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 336.55 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 1615.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-beige-01099197',
-    nota: 'Baldosa Cerámica Metallo Beige · artículo 01-09-9197 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 436.74 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 1180.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-marfil-01098651',
-    nota: 'Baldosa Cerámica Circe Marfil · artículo 01-09-8651 · ref. 31X913.53MT2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 334.34 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 1809.41, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-graphic-blanco-01098680',
-    nota: 'Baldosa Cerámica Metallo Graphic Blanco · artículo 01-09-8680 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 489.03 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 2203.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-metric-blanco-01098675',
-    nota: 'Baldosa Cerámica Metallo Metric Blanco · artículo 01-09-8675 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 595.5 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 3096.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brilliant-blanco-01097811',
-    nota: 'Baldosa Cerámica Brilliant Blanco · artículo 01-09-7811 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 821.36 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 1807.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-motion-marfil-01098481',
-    nota: 'Baldosa Cerámica Motion Marfil · artículo 01-09-8481 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 488.52 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 2252.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sector-negro-01098482',
-    nota: 'Baldosa Cerámica Sector Negro · artículo 01-09-8482 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 608.69 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 3142.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/brilliant-negro-01097812',
-    nota: 'Brilliant Negro · artículo 01-09-7812 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 833.68 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-117', PROV_OCHOA, 2274.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-rail-ceniza-01098362',
+    nota: 'BALDOSA ALABAMA PERLA · artículo 01-09-8004 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1252.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-coliseo-blanco-01098201',
+    nota: 'BALDOSA CERÁMICA COLISEO BLANCO · artículo 01-09-8201 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.59 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1474.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-perla-01098349',
+    nota: 'BALDOSA CERÁMICA INDUSTRIAL PERLA · artículo 01-09-8349 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 265.68 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1408.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lane-gris-01098270',
+    nota: 'BALDOSA CERÁMICA LANE GRIS · artículo 01-09-8270 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 253.85 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1479.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-grigio-01099169',
+    nota: 'BALDOSA CERÁMICA LAVAGNA PIETRA DI GRIGIO · artículo 01-09-9169 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 266.61 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1373.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-perla-01099079',
+    nota: 'BALDOSA CERÁMICA LAGOM PERLA · artículo 01-09-9079 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 247.42 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1611.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-spike-blanco-01098357',
+    nota: 'BALDOSA CERÁMICA SPIKE BLANCO · artículo 01-09-8357 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.42 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1474.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-beige-01098371',
+    nota: 'BALDOSA CERÁMICA SMELTING BEIGE · artículo 01-09-8371 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 273.1 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1561.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-woodstrip-arce-01098346',
+    nota: 'BALDOSA CERÁMICA WOODSTRIP ARCE · artículo 01-09-8346 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 281.32 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1761.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-iconic-beige-01098934',
+    nota: 'BALDOSA CERÁMICA ICONIC BEIGE · artículo 01-09-8934 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 317.4 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1567.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-galena-beige-01098373',
+    nota: 'BALDOSA CERÁMICA SMELTING GALENA BEIGE · artículo 01-09-8373 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 290.24 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1530.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-alloy-ceniza-01098383',
+    nota: 'BALDOSA CERÁMICA SMELTING ALLOY CENIZA · artículo 01-09-8383 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 283.46 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1554.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cm-sedus-brillo-blanco-01098377',
+    nota: 'CM SEDUS BRILLO BLANCO · artículo 01-09-8377 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 280.12 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1543.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-radiance-blanco-01098356',
+    nota: 'BALDOSA CERÁMICA RADIANCE BLANCO · artículo 01-09-8356 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 278.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1219.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-nave-perla-01098353',
+    nota: 'BALDOSA CERÁMICA INDUSTRIAL NAVE PERLA · artículo 01-09-8353 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 219.8 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1260.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-beige-01099077',
+    nota: 'BALDOSA CERÁMICA LAGOM BEIGE · artículo 01-09-9077 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 227.17 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1496.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-alloy-beige-01098375',
+    nota: 'BALDOSA CERÁMICA SMELTING ALLOY BEIGE · artículo 01-09-8375 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.11 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1429.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-ceniza-01098372',
+    nota: 'BALDOSA CERÁMICA SMELTING CENIZA · artículo 01-09-8372 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 264.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1730.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colormatt-negro-01098815',
+    nota: 'BALDOSA CERÁMICA COLORMATT NEGRO · artículo 01-09-8815 · ref. 29.5X59.55.75MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 300.97 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1620.77, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-grid-perla-01098351',
+    nota: 'BALDOSA CERÁMICA INDUSTRIAL GRID PERLA · artículo 01-09-8351 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 292.03 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1294.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-acero-01098350',
+    nota: 'BALDOSA CERÁMICA INDUSTRIAL ACERO · artículo 01-09-8350 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 233.29 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1048.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-shake-beige-01098478',
+    nota: 'BALDOSA CERÁMICA SHAKE BEIGE · artículo 01-09-8478 · ref. 31X605.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 194.92 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1183.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-industrial-nave-acero-01098354',
+    nota: 'BALDOSA CERÁMICA INDUSTRIAL NAVE ACERO · artículo 01-09-8354 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 213.19 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1068.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atica-antislip-pearl-01097910',
+    nota: 'BALDOSA CERÁMICA ÁTICA ANTISLIP PEARL · artículo 01-09-7910 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 192.58 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1455.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-smelting-galena-ceniza-01098374',
+    nota: 'BALDOSA CERÁMICA SMELTING GALENA CENIZA · artículo 01-09-8374 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 269.5 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1823.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-antracita-01096787',
+    nota: 'BALDOSA CERÁMICA MENHIR ANTRACITA · artículo 01-09-6787 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 328.55 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1666.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-marfil-01098685',
+    nota: 'BALDOSA CERÁMICA PETRALAVA MARFIL · artículo 01-09-8685 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 308.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1748.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-arena-01096786',
+    nota: 'BALDOSA CERÁMICA MENHIR ARENA · artículo 01-09-6786 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 315.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1611.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097976',
+    nota: 'BALDOSA CERÁMICA ATENEO BLANCO · artículo 01-09-7976 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.3 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1408.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lane-marfil-01098044',
+    nota: 'BALDOSA CERÁMICA LANE MARFIL · artículo 01-09-8044 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 253.84 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1724.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01098034',
+    nota: 'BALDOSA CERÁMICA ATENEO BLANCO · artículo 01-09-8034 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 310.65 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1647.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rectangular-30x60-01098039',
+    nota: 'BALDOSA CERÁMICA RECTANGULAR 30X60 · artículo 01-09-8039 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 296.91 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1395.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-gris-01098686',
+    nota: 'BALDOSA CERÁMICA PETRALAVA GRIS · artículo 01-09-8686 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 258.38 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-108', PROV_OCHOA, 1100.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rectangular-01096155',
+    nota: 'BALDOSA CERÁMICA RECTANGULAR · artículo 01-09-6155 · ref. 31X605.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 204.88 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 956.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-natural-mate-01099206',
+    nota: 'BALDOSA CERÁMICA ENERGY NATURAL MATE · artículo 01-09-9206 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 350.2 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 901.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-marfil-01097819',
+    nota: 'BALDOSA CERÁMICA DESERT MARFIL · artículo 01-09-7819 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 330.33 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1238.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-perla-01097699',
+    nota: 'BALDOSA ALABAMA PERLA · artículo 01-09-7699 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 447.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1021.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-imperium-dolomite-01099209',
+    nota: 'BALDOSA CERÁMICA IMPERIUM DOLOMITE · artículo 01-09-9209 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 374 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 930.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-ivory-mate-01099205',
+    nota: 'BALDOSA CERÁMICA ENERGY IVORY MATE · artículo 01-09-9205 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 340.68 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1382.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-grigio-01099166',
+    nota: 'BALDOSA CERÁMICA LAVAGNA PIETRA DI GRIGIO · artículo 01-09-9166 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 498.96 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 981.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-energy-gris-mate-01099204',
+    nota: 'BALDOSA CERÁMICA ENERGY GRIS MATE · artículo 01-09-9204 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 359.48 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1207.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-city-perla-01097679',
+    nota: 'BALDOSA CERÁMICA CITY PERLA · artículo 01-09-7679 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 435.94 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1196.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-statuario-01097582',
+    nota: 'BALDOSA CERÁMICA STATUARIO · artículo 01-09-7582 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 432.1 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1253.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alabama-beige-01097215',
+    nota: 'BALDOSA ALABAMA BEIGE · artículo 01-09-7215 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.58 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1277.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-marfil-01098515',
+    nota: 'BALDOSA CERÁMICA ATENEA MARFIL · artículo 01-09-8515 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 461.34 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1441.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lavagna-pietra-di-argento-01099168',
+    nota: 'BALDOSA CERÁMICA LAVAGNA PIETRA DI ARGENTO · artículo 01-09-9168 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 520.32 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1251.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alberta-roble-01097937',
+    nota: 'BALDOSA ALBERTA ROBLE · artículo 01-09-7937 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 451.77 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1211.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-denver-beige-01097939',
+    nota: 'BALDOSA CERÁMICA DENVER BEIGE · artículo 01-09-7939 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 437.5 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1252.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-01098516',
+    nota: 'BALDOSA CERÁMICA ATENEA · artículo 01-09-8516 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.33 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1160.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-giona-crema-01097311',
+    nota: 'BALDOSA CERÁMICA GIONA CREMA · artículo 01-09-7311 · ref. 60.8X60.82.70MT2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 429.8 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1289.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/alberta-gris-pw-mad-01097938',
+    nota: 'ALBERTA GRIS PW MAD. · artículo 01-09-7938 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 465.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 2215.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01099046',
+    nota: 'BALDOSA CERÁMICA DESERT NATURAL · artículo 01-09-9046 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 799.86 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1469.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mistic-white-01098509',
+    nota: 'BALDOSA CERÁMICA MISTIC WHITE · artículo 01-09-8509 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 530.56 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1519.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-denver-chrome-01097940',
+    nota: 'BALDOSA CERÁMICA DENVER CHROME · artículo 01-09-7940 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 548.66 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1775.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ateneo-blanco-01097112',
+    nota: 'BALDOSA CERÁMICA ATENEO BLANCO · artículo 01-09-7112 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 641.09 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1172.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/ceramica-etruscan-ivory-01095787',
+    nota: 'CERÁMICA ETRUSCAN IVORY · artículo 01-09-5787 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 423.15 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 2912.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-agora-blanco-01097999',
+    nota: 'BALDOSA ÁGORA BLANCO · artículo 01-09-7999 · ref. 60X602.92MT2 · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 997.38 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1175.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-albur-gris-01098740',
+    nota: 'BALDOSA CERÁMICA ALBUR GRIS · artículo 01-09-8740 · ref. 60.8X60.82.70MT2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 435.48 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1390.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-marfil-01098657',
+    nota: 'BALDOSA CERÁMICA CIRCE MARFIL · artículo 01-09-8657 · ref. 60X602.77MT2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 501.96 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1058.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-infinity-electra-01094938',
+    nota: 'BALDOSA CERÁMICA INFINITY ELECTRA · artículo 01-09-4938 · ref. 60X602.77MT/2 · marca ROCERSA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 382.09 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1499.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mistral-ivory-01095789',
+    nota: 'BALDOSA CERÁMICA MISTRAL IVORY · artículo 01-09-5789 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 541.51 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1195.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tabor-sand-01097101',
+    nota: 'BALDOSA CERÁMICA TABOR SAND · artículo 01-09-7101 · ref. 60.8X60.82.70MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 442.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1108.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sable-blanco-01098682',
+    nota: 'BALDOSA CERÁMICA SABLE BLANCO · artículo 01-09-8682 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 400.09 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-109', PROV_OCHOA, 1166.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-blanco-01098681',
+    nota: 'BALDOSA CERÁMICA CIRCE BLANCO · artículo 01-09-8681 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 421 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1181.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-ardesia-cenere-01098252',
+    nota: 'BALDOSA CERÁMICA ARDESIA CENERE · artículo 01-09-8252 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 221.63 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1155.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-perla-01098535',
+    nota: 'BALDOSA CERÁMICA CHROMATIC PERLA · artículo 01-09-8535 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 216.72 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1275.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-azul-01098533',
+    nota: 'BALDOSA CERÁMICA CHROMATIC AZUL · artículo 01-09-8533 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 239.27 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1239.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-chromatic-gris-01098532',
+    nota: 'BALDOSA CERÁMICA CHROMATIC GRIS · artículo 01-09-8532 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 232.5 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1203.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-arena-01097958',
+    nota: 'BALDOSA CERÁMICA PETRALAVA ARENA · artículo 01-09-7958 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 227.14 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1309.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-bend-01094298',
+    nota: 'BALDOSA CERÁMICA COLORGLOSS BLANCO BEND · artículo 01-09-4298 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 245.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1417.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-blanco-01094317',
+    nota: 'BALDOSA CERÁMICA COLORGLOSS BLANCO · artículo 01-09-4317 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 265.97 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1375.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-colorgloss-negro-01095238',
+    nota: 'BALDOSA CERÁMICA COLORGLOSS NEGRO · artículo 01-09-5238 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 258.11 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1279.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-nimes-marfil-01097962',
+    nota: 'BALDOSA CERÁMICA PETRALAVA NIMES MARFIL · artículo 01-09-7962 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 241.37 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1568.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-gris-01097889',
+    nota: 'BALDOSA CERÁMICA SYBAR GRIS · artículo 01-09-7889 · ref. 25X755.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.37 piezas por m² según su propia referencia (RD$ 292.17 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1202.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-gris-01097959',
+    nota: 'BALDOSA CERÁMICA PETRALAVA GRIS · artículo 01-09-7959 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 226.81 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1133.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-petralava-loira-marfil-01097961',
+    nota: 'BALDOSA CERÁMICA PETRALAVA LOIRA MARFIL · artículo 01-09-7961 · ref. 25X755.30MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 213.84 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1469.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-beige-01093717',
+    nota: 'BALDOSA CERÁMICA SYBAR BEIGE · artículo 01-09-3717 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 275.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1492.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sybar-marfil-01095139',
+    nota: 'BALDOSA CERÁMICA SYBAR MARFIL · artículo 01-09-5139 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 279.98 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 1173.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-statuario-01097702',
+    nota: 'BALDOSA CERÁMICA STATUARIO · artículo 01-09-7702 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 220.08 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-110', PROV_OCHOA, 915.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-soul-blanco-01096580',
+    nota: 'BALDOSA CERÁMICA SOUL BLANCO · artículo 01-09-6580 · ref. 25X755.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.3 piezas por m² según su propia referencia (RD$ 172.77 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-111', PROV_OCHOA, 951.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-columba-01099149',
+    nota: 'BALDOSA CERÁMICA COLUMBA · artículo 01-09-9149 · ref. 83X831.45MT/2 · marca PISOFORTE. La tienda cotiza por pieza; van 1.45 piezas por m² según su propia referencia (RD$ 655.93 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-112', PROV_OCHOA, 1576.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bois-ceniza-01098608',
+    nota: 'BALDOSA CERÁMICA BOIS CENIZA · artículo 01-09-8608 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 212.99 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-112', PROV_OCHOA, 1417.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bois-beige-01098610',
+    nota: 'BALDOSA CERÁMICA BOIS BEIGE · artículo 01-09-8610 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 191.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 1615.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-beige-01099197',
+    nota: 'BALDOSA CERÁMICA METALLO BEIGE · artículo 01-09-9197 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 436.74 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 1180.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-marfil-01098651',
+    nota: 'BALDOSA CERÁMICA CIRCE MARFIL · artículo 01-09-8651 · ref. 31X913.53MT2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 334.34 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 1807.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-motion-marfil-01098481',
+    nota: 'BALDOSA CERÁMICA MOTION MARFIL · artículo 01-09-8481 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 488.52 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 1025.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-saloni-sable-azul-01098654',
+    nota: 'BALDOSA CERÁMICA SALONI SABLE AZUL · artículo 01-09-8654 · ref. 30.5X903.63MT2 · marca SALONI. La tienda cotiza por pieza; van 3.63 piezas por m² según su propia referencia (RD$ 282.62 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 2252.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-sector-negro-01098482',
+    nota: 'BALDOSA CERÁMICA SECTOR NEGRO · artículo 01-09-8482 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 608.69 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 2274.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-rail-ceniza-01098362',
     peso: 3,
-    nota: 'Baldosa Cerámica Igneous Stone Rail Ceniza · artículo 01-09-8362 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 614.74 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA IGNEOUS STONE RAIL CENIZA · artículo 01-09-8362 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 614.74 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 1750.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pontesei-negro-01098127',
-    nota: 'Baldosa Cerámica Pontesei Negro · artículo 01-09-8127 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 473.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 1750.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pontesei-negro-01098127',
+    nota: 'BALDOSA CERÁMICA PONTESEI NEGRO · artículo 01-09-8127 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 473.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 2271.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-blanco-01098676',
-    nota: 'Baldosa Cerámica Metallo Blanco · artículo 01-09-8676 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 613.87 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 2071.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rif-marfil-01098413',
+    nota: 'BALDOSA CERÁMICA RIF MARFIL · artículo 01-09-8413 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 559.95 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 2394.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-strata-arena-01096789',
-    nota: 'Baldosa Cerámica Strata Arena · artículo 01-09-6789 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 635.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 1263.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bolsena-01098123',
+    nota: 'BALDOSA CERÁMICA BOLSENA · artículo 01-09-8123 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 341.55 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 2338.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cast-ceniza-01095751',
-    nota: 'Baldosa Cerámica Cast Ceniza · artículo 01-09-5751 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 631.94 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 1754.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-gris-01098360',
+    nota: 'BALDOSA CERÁMICA IGNEOUS STONE GRIS · artículo 01-09-8360 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 474.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 2071.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rif-marfil-01098413',
-    nota: 'Baldosa Cerámica Rif Marfil · artículo 01-09-8413 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 559.95 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 1188.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-circe-blanco-01098679',
+    nota: 'BALDOSA CERÁMICA CIRCE BLANCO · artículo 01-09-8679 · ref. 31X913.53MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.53 piezas por m² según su propia referencia (RD$ 336.55 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 1263.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bolsena-01098123',
-    nota: 'Baldosa Cerámica Bolsena · artículo 01-09-8123 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 341.55 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 1809.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-graphic-blanco-01098680',
+    nota: 'BALDOSA CERÁMICA METALLO GRAPHIC BLANCO · artículo 01-09-8680 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 489.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 2264.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-candle-trafic-01097815',
-    nota: 'Baldosa Cerámica Candle Trafic · artículo 01-09-7815 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 600.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 2203.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-metric-blanco-01098675',
+    nota: 'BALDOSA CERÁMICA METALLO METRIC BLANCO · artículo 01-09-8675 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 595.5 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-117', PROV_OCHOA, 1754.65, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-gris-01098360',
-    nota: 'Baldosa Cerámica Igneous Stone Gris · artículo 01-09-8360 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 474.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 3096.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-brilliant-blanco-01097811',
+    nota: 'BALDOSA CERÁMICA BRILLIANT BLANCO · artículo 01-09-7811 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 821.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 2067.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-antracita-01096162',
-    nota: 'Baldosa Cerámica Menhir Antracita · artículo 01-09-6162 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 840.54 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 3142.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/brilliant-negro-01097812',
+    nota: 'BRILLIANT NEGRO · artículo 01-09-7812 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 833.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 2043.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-arena-01096156',
-    nota: 'Baldosa Cerámica Menhir Arena · artículo 01-09-6156 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 830.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-113', PROV_OCHOA, 2271.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-metallo-blanco-01098676',
+    nota: 'BALDOSA CERÁMICA METALLO BLANCO · artículo 01-09-8676 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 613.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 1988.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-gris-01098364',
+  c('MAT-08-113', PROV_OCHOA, 2394.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-strata-arena-01096789',
+    nota: 'BALDOSA CERÁMICA STRATA ARENA · artículo 01-09-6789 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 635.21 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 2338.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cast-ceniza-01095751',
+    nota: 'BALDOSA CERÁMICA CAST CENIZA · artículo 01-09-5751 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 631.94 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-113', PROV_OCHOA, 2264.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-candle-trafic-01097815',
+    nota: 'BALDOSA CERÁMICA CANDLE TRAFIC · artículo 01-09-7815 · ref. 30X903.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.77 piezas por m² según su propia referencia (RD$ 600.63 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-114', PROV_OCHOA, 1988.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-igneous-stone-gris-01098364',
     peso: 2,
-    nota: 'Baldosa Cerámica Igneous Stone Gris · artículo 01-09-8364 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 811.58 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA IGNEOUS STONE GRIS · artículo 01-09-8364 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 811.58 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 1367.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vendome-gris-01096673',
-    nota: 'Baldosa Cerámica Vendome Gris · artículo 01-09-6673 · ref. 44X892.56MT/2 · marca PLAZA. La tienda cotiza por pieza; van 2.56 piezas por m² según su propia referencia (RD$ 534.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-114', PROV_OCHOA, 1367.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vendome-gris-01096673',
+    nota: 'BALDOSA CERÁMICA VENDOME GRIS · artículo 01-09-6673 · ref. 44X892.56MT/2 · marca PLAZA. La tienda cotiza por pieza; van 2.56 piezas por m² según su propia referencia (RD$ 534.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 1931.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-midas-arena-01096479',
-    nota: 'Baldosa Cerámica Midas Arena · artículo 01-09-6479 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 788.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-114', PROV_OCHOA, 1941.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-gris-01098591',
+    nota: 'BALDOSA CERÁMICA MENHIR GRIS · artículo 01-09-8591 · ref. 45X902.45MT2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 792.31 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-118', PROV_OCHOA, 1941.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-gris-01098591',
-    nota: 'Baldosa Cerámica Menhir Gris · artículo 01-09-8591 · ref. 45X902.45MT2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 792.31 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-114', PROV_OCHOA, 2067.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-antracita-01096162',
+    nota: 'BALDOSA CERÁMICA MENHIR ANTRACITA · artículo 01-09-6162 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 840.54 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-119', PROV_OCHOA, 1961.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-beige-01097302',
-    nota: 'Baldosa Porcelánica Portobello Beige · artículo 01-09-7302 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 618.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-114', PROV_OCHOA, 2043.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-menhir-arena-01096156',
+    nota: 'BALDOSA CERÁMICA MENHIR ARENA · artículo 01-09-6156 · ref. 45X902.46MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 830.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-119', PROV_OCHOA, 2062.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-beige-01098394',
-    nota: 'Baldosa Porcelánica Portobello Beige · artículo 01-09-8394 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 650.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-114', PROV_OCHOA, 1931.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-midas-arena-01096479',
+    nota: 'BALDOSA CERÁMICA MIDAS ARENA · artículo 01-09-6479 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 788.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-119', PROV_OCHOA, 2164.54, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-perla-01097301',
-    nota: 'Baldosa Porcelánica Portobello Perla · artículo 01-09-7301 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 682.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-115', PROV_OCHOA, 2062.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-beige-01098394',
+    nota: 'BALDOSA PORCELÁNICA PORTOBELLO BEIGE · artículo 01-09-8394 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 650.63 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-120', PROV_CERARTE, 2686.15, {
+  c('MAT-08-115', PROV_OCHOA, 1961.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-beige-01097302',
+    nota: 'BALDOSA PORCELÁNICA PORTOBELLO BEIGE · artículo 01-09-7302 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 618.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-115', PROV_OCHOA, 2164.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portobello-perla-01097301',
+    nota: 'BALDOSA PORCELÁNICA PORTOBELLO PERLA · artículo 01-09-7301 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 682.82 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-116', PROV_OCHOA, 1333.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-royal-trend-blue-01098450',
+    nota: 'BALDOSA CERÁMICA ROYAL TREND BLUE · artículo 01-09-8450 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 444.52 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-116', PROV_OCHOA, 1825.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098475',
+    nota: 'BALDOSA CERÁMICA TRIPOLI MATE SNOW · artículo 01-09-8475 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 608.36 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-117', PROV_CERARTE, 2686.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lev-aida-bianco-120x120-rt',
     itbis: false,
     nota: 'LEV. AIDA BIANCO 120X120 RT · artículo CERA-34901 · ref. 120X120 · marca VARMORA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-121', PROV_OCHOA, 1839.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-01098748',
-    nota: 'Baldosa Cerámica Tripoli Blanco · artículo 01-09-8748 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 884.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-118', PROV_OCHOA, 1839.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-01098748',
+    nota: 'BALDOSA CERÁMICA TRIPOLI BLANCO · artículo 01-09-8748 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 884.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-121', PROV_OCHOA, 1241.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098747',
-    nota: 'Baldosa Cerámica Tripoli Mate Snow · artículo 01-09-8747 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 596.65 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-118', PROV_OCHOA, 1241.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098747',
+    nota: 'BALDOSA CERÁMICA TRIPOLI MATE SNOW · artículo 01-09-8747 · ref. 40X1202.08MT2 · marca PAMESA. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 596.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-122', PROV_CERARTE, 1645.33, {
+  c('MAT-08-119', PROV_CERARTE, 1645.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-carrara-icon-cesellato-45x120',
     itbis: false,
     nota: 'RV . CARRARA ICON CESELLATO 45X120 · artículo CERA-37051 · ref. 45X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-122', PROV_CERARTE, 1713.83, {
+  c('MAT-08-119', PROV_CERARTE, 1713.83, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-flotan-canele-45x120',
     itbis: false,
     peso: 2,
     nota: 'RV FLOTAN CANELE 45X120 · artículo CERA-37077 · ref. 45X120 · marca ELIANE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_OCHOA, 1708.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-pure-essenza-plu-nero-01098723',
-    nota: 'Baldosa Porcelánica Pure Essenza Plu Nero · artículo 01-09-8723 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1238.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-120', PROV_OCHOA, 1708.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-pure-essenza-plu-nero-01098723',
+    nota: 'BALDOSA PORCELÁNICA PURE ESSENZA PLU NERO · artículo 01-09-8723 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1238.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-123', PROV_CERARTE, 1819.23, {
+  c('MAT-08-120', PROV_OCHOA, 2206.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-laurent-negro-anticato-01098891',
+    nota: 'BALDOSA CERÁMICA LAURENT NEGRO ANTICATO · artículo 01-09-8891 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1598.85 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-120', PROV_CERARTE, 1819.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-apuano-oro-60x120-rt',
     itbis: false,
     nota: 'PORC. APUANO ORO 60X120 RT · artículo CERA-34592 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 2288.22, {
+  c('MAT-08-120', PROV_CERARTE, 2288.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-apuano-oro-60x120-rt',
     itbis: false,
     nota: 'PORC. APUANO ORO 60X120 RT · artículo CERA-35691 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1936.19, {
+  c('MAT-08-120', PROV_CERARTE, 1936.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-apuano-oro-stream-60x120',
     itbis: false,
     nota: 'PORC. APUANO ORO STREAM 60X120 · artículo CERA-34792 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1051.16, {
+  c('MAT-08-120', PROV_CERARTE, 1051.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/lev-infinity-polenta-60x120-rt',
     itbis: false,
     nota: 'LEV. INFINITY POLENTA 60X120 RT · artículo CERA-34848 · ref. 60X120 · marca VARMORA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1819.67, {
+  c('MAT-08-120', PROV_CERARTE, 1819.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-stroke-pristone-60x120-rt',
     itbis: false,
     nota: 'PORC. STROKE PRISTONE 60X120 RT · artículo CERA-34877 · ref. 60X120 · marca VARMORA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 2072.68, {
+  c('MAT-08-120', PROV_CERARTE, 2072.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-ess-rlv-gobi-60x120-rt',
     itbis: false,
     nota: 'PORC. ESS. RLV. GOBI 60X120 RT · artículo CERA-35305 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1534.93, {
+  c('MAT-08-120', PROV_CERARTE, 1534.93, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-cais-3d-60x120-rt-012730',
     itbis: false,
     nota: 'PORCELANATO CAIS 3D 60X120 RT · artículo CERA-36603 · ref. 60X120 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1794.53, {
+  c('MAT-08-120', PROV_CERARTE, 1794.53, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-cais-3d-60x120-rt-012730',
     itbis: false,
     nota: 'PORCELANATO CAIS 3D 60X120 RT · artículo CERA-36604 · ref. 60X120 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1501.3, {
+  c('MAT-08-120', PROV_CERARTE, 1501.3, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-aeterna-x-st-cross-dock',
     itbis: false,
     nota: 'PORC. AETERNA X ST (CROSS DOCK) · artículo CERA-36763 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 996.8, {
+  c('MAT-08-120', PROV_CERARTE, 996.8, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-viterbo-60x120',
     itbis: false,
     peso: 3,
     nota: 'PORCELANATO VITERBO 60X120 · artículo CERA-36787 · ref. 60X120 · marca GRIFINE. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_CERARTE, 1045.04, {
+  c('MAT-08-120', PROV_CERARTE, 1045.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-monza-60x120',
     itbis: false,
     nota: 'PORCELANATO MONZA 60X120 · artículo CERA-36790 · ref. 60X120 · marca GRIFINE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-123', PROV_IBERICA, 2589.99, {
+  c('MAT-08-120', PROV_IBERICA, 2589.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-glow-eclat-mix-xs-rect-60x120/',
     nota: 'Porcelanato Glow Eclat Mix XS Rect. 60×120 · artículo 019151 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-124', PROV_OCHOA, 516.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tibet-negro-01095506',
-    nota: 'Baldosa Cerámica Tibet Negro · artículo 01-09-5506 · ref. 15X1544MT/2 · marca PAMESA. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 11.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-121', PROV_OCHOA, 516.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tibet-negro-01095506',
+    nota: 'BALDOSA CERÁMICA TIBET NEGRO · artículo 01-09-5506 · ref. 15X1544MT/2 · marca PAMESA. La tienda cotiza por pieza; van 44 piezas por m² según su propia referencia (RD$ 11.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-124', PROV_CERARTE, 2225.83, {
+  c('MAT-08-121', PROV_CERARTE, 2225.83, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-barlavento-relevo-145x145-exterior-bold',
     itbis: false,
     nota: 'PORCELANATO BARLAVENTO RELEVO 14.5X14.5 EXTERIOR BOLD · artículo CERA-36117 · ref. 15x15 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-124', PROV_CERARTE, 1237.02, {
+  c('MAT-08-121', PROV_CERARTE, 1237.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-barlavento-relevo-145x145-exterior-bold',
     itbis: false,
     nota: 'PORCELANATO BARLAVENTO RELEVO 14.5X14.5 EXTERIOR BOLD · artículo CERA-33544 · ref. 15x15 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-124', PROV_CERARTE, 1853.44, {
+  c('MAT-08-121', PROV_CERARTE, 1853.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-barlavento-relevo-145x145-exterior-bold',
     itbis: false,
     nota: 'PORCELANATO BARLAVENTO RELEVO 14.5X14.5 EXTERIOR BOLD · artículo CERA-32803 · ref. 15x15 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-124', PROV_CERARTE, 1704.6, {
+  c('MAT-08-121', PROV_CERARTE, 1704.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-barlavento-relevo-145x145-exterior-bold',
     itbis: false,
     nota: 'PORCELANATO BARLAVENTO RELEVO 14.5X14.5 EXTERIOR BOLD · artículo CERA-21429 · ref. 15x15 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-124', PROV_IBERICA, 3759.89, {
+  c('MAT-08-121', PROV_IBERICA, 3759.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-aqua-turquoise-15x15/',
     nota: 'Porcelanato Aqua Turquoise 15×15 · artículo 019691 · ref. 15×15. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-124', PROV_IBERICA, 3349.82, {
+  c('MAT-08-121', PROV_IBERICA, 3349.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-moon-esmeralda-antislip-15x15/',
     peso: 4,
     nota: 'Porcelanato Moon Esmeralda Antislip 15×15 · artículo 019280 · ref. 15×15. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-125', PROV_CERARTE, 2611.01, {
+  c('MAT-08-122', PROV_CERARTE, 2611.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-goroka-20x20',
     itbis: false,
     nota: 'PORCELANATO GOROKA GRAFITO 20X20 · artículo CERA-05131 · ref. 20X20 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-125', PROV_CERARTE, 2758.82, {
+  c('MAT-08-122', PROV_CERARTE, 2758.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-quetta-20x20',
     itbis: false,
     nota: 'PORC. QUETTA 20X20 · artículo CERA-35346 · ref. 20X20 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-125', PROV_CERARTE, 1929.65, {
+  c('MAT-08-122', PROV_CERARTE, 1929.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-fuso-viking-linea-mix-20x20',
     itbis: false,
     nota: 'SEMI-GRES FUSO VIKING LINEA MIX 20X20 · artículo CERA-36065 · ref. 20X20 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-125', PROV_CERARTE, 1437.07, {
+  c('MAT-08-122', PROV_CERARTE, 1437.07, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-fuso-zermaat-linea-mix-20x20',
     itbis: false,
     nota: 'SEMI-GRES FUSO ZERMAAT LINEA MIX 20X20 · artículo CERA-36066 · ref. 20X20 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-126', PROV_IBERICA, 3926.57, {
+  c('MAT-08-123', PROV_IBERICA, 3926.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rhombus-cream-14x24/',
     peso: 3,
     nota: 'Porcelanato Rhombus Cream 14×24 · artículo 010634 · ref. 14×24. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-127', PROV_IBERICA, 2990.03, {
+  c('MAT-08-124', PROV_IBERICA, 2990.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-sonar-white-hex-22x25/',
     nota: 'Porcelanato Sonar White Hex 22×25 · artículo 016338 · ref. 22×25. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-128', PROV_CERARTE, 3637.09, {
+  c('MAT-08-125', PROV_CERARTE, 3637.09, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hexag-bushmills-multi-233x268',
     itbis: false,
     nota: 'PORCELANATO HEXAG. BUSHMILLS MULTI. 23.3X26.8 · artículo CERA-33944 · ref. 23X26 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-129', PROV_CERARTE, 1838.44, {
+  c('MAT-08-126', PROV_OCHOA, 1259.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-velvet-white-01098999',
+    nota: 'BALDOSA CERÁMICA VELVET WHITE · artículo 01-09-8999 · ref. 10X3033.33MT/2 · marca SKYTOUCH. La tienda cotiza por pieza; van 33.33 piezas por m² según su propia referencia (RD$ 37.78 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-127', PROV_CERARTE, 1838.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bali-333x333',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO BALI 33.3X33.3 · artículo CERA-36767 · ref. 30X30 · marca REALONDA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-130', PROV_CERARTE, 6935.94, {
+  c('MAT-08-128', PROV_OCHOA, 1152.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travel-black-01097989',
+    nota: 'BALDOSA CERÁMICA TRAVEL BLACK · artículo 01-09-7989 · ref. 7.5X3044.44MT/2 · marca HALCON. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 25.93 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-128', PROV_OCHOA, 1147, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travel-white-01097990',
+    nota: 'BALDOSA CERÁMICA TRAVEL WHITE · artículo 01-09-7990 · ref. 7.5X3044.44MT/2 · marca HALCON. La tienda cotiza por pieza; van 44.44 piezas por m² según su propia referencia (RD$ 25.81 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-129', PROV_CERARTE, 6935.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-alaska-white-150x300-6mm',
     itbis: false,
     nota: 'PORC. ALASKA WHITE 150X300 6MM · artículo CERA-34790 · ref. 150X300 · marca GRANITI FIANDRE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-131', PROV_OCHOA, 2197.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eos-wood-roble-01098099',
-    nota: 'Baldosa Cerámica Eos Wood Roble · artículo 01-09-8099 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 194.45 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-130', PROV_OCHOA, 2197.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eos-wood-roble-01098099',
+    nota: 'BALDOSA CERÁMICA EOS WOOD ROBLE · artículo 01-09-8099 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 194.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-131', PROV_OCHOA, 1550.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eos-wood-fresno-01098100',
-    nota: 'Baldosa Cerámica Eos Wood Fresno · artículo 01-09-8100 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 137.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-130', PROV_OCHOA, 1550.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eos-wood-fresno-01098100',
+    nota: 'BALDOSA CERÁMICA EOS WOOD FRESNO · artículo 01-09-8100 · ref. 17X5211.30MT/2 · marca PAMESA. La tienda cotiza por pieza; van 11.3 piezas por m² según su propia referencia (RD$ 137.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-132', PROV_OCHOA, 839.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-arena-01095737',
+  c('MAT-08-131', PROV_OCHOA, 671.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-tempo-curve-nature-mate-01098767',
+    nota: 'BALDOSA PORCELÁNICA TEMPO CURVE NATURE MATE · artículo 01-09-8767 · ref. 33X555.52MT2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 121.63 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-131', PROV_OCHOA, 839.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-arena-01095737',
     peso: 2,
-    nota: 'Baldosa At Kiel Arena · artículo 01-09-5737 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA AT KIEL ARENA · artículo 01-09-5737 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-132', PROV_OCHOA, 1073.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-perla-01095738',
-    nota: 'Baldosa At Kiel Perla · artículo 01-09-5738 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 197.69 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-131', PROV_OCHOA, 1073.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-kiel-perla-01095738',
+    nota: 'BALDOSA AT KIEL PERLA · artículo 01-09-5738 · ref. 33.3X555.43MT/2 · marca ATRIUM. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 197.69 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-132', PROV_OCHOA, 671.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-tempo-curve-nature-mate-01098767',
-    nota: 'Baldosa Porcelánica Tempo Curve Nature Mate · artículo 01-09-8767 · ref. 33X555.52MT2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 121.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-132', PROV_OCHOA, 865.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-brienz-blanco-01098579',
+    nota: 'BALDOSA CERÁMICA RLV BRIENZ BLANCO · artículo 01-09-8579 · ref. 20X608.33MT2 · marca PAMESA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 103.92 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-133', PROV_OCHOA, 1066.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-mate-snow-01098125',
+    nota: 'BALDOSA CERÁMICA TRIPOLI MATE SNOW · artículo 01-09-8125 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 192.12 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-133', PROV_OCHOA, 1242.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-wall-01098182',
-    nota: 'Baldosa Pizarra Ardesia Wall · artículo 01-09-8182 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 223.89 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-wall-01098182',
+    nota: 'BALDOSA PIZARRA ARDESIA WALL · artículo 01-09-8182 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 223.89 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-133', PROV_OCHOA, 1623.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-wall-01098185',
-    nota: 'Baldosa Perla Ardesia Wall · artículo 01-09-8185 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 292.58 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-wall-01098185',
+    nota: 'BALDOSA PERLA ARDESIA WALL · artículo 01-09-8185 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 292.58 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-133', PROV_OCHOA, 1170.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-preston-perla-01098189',
-    nota: 'Baldosa Porcelánica Preston Perla · artículo 01-09-8189 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 210.98 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-preston-perla-01098189',
+    nota: 'BALDOSA PORCELÁNICA PRESTON PERLA · artículo 01-09-8189 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 210.98 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-133', PROV_OCHOA, 1034.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-preston-pizarra-01098191',
-    nota: 'Baldosa Porcelánica Preston Pizarra · artículo 01-09-8191 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 186.46 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-preston-pizarra-01098191',
+    nota: 'BALDOSA PORCELÁNICA PRESTON PIZARRA · artículo 01-09-8191 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 186.46 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-133', PROV_OCHOA, 524.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rune-beige-01096476',
+    nota: 'BALDOSA CERÁMICA RUNE BEIGE · artículo 01-09-6476 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 94.57 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-133', PROV_CERARTE, 1363.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-nusa-pool-30x60',
@@ -6377,21 +6202,49 @@
     nota: 'PORCELANATO MEIER 60X60 CJ4 · artículo CERA-34437 · ref. 60X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-135', PROV_OCHOA, 796.67, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-piscis-relieve-crema-01098773',
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-piscis-relieve-crema-01098773',
     peso: 3,
-    nota: 'Baldosa Porcelánica Piscis Relieve Crema · artículo 01-09-8773 · ref. 25X755.34MT2 · marca HALCON. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 149.19 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA PORCELÁNICA PISCIS RELIEVE CREMA · artículo 01-09-8773 · ref. 25X755.34MT2 · marca HALCON. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 149.19 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-135', PROV_OCHOA, 1544.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ardesia-tilt-cenere-01098255',
-    nota: 'Baldosa Ardesia Tilt Cenere · artículo 01-09-8255 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 289.75 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ardesia-tilt-cenere-01098255',
+    nota: 'BALDOSA ARDESIA TILT CENERE · artículo 01-09-8255 · ref. 25X755.33MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 289.75 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 1124.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-gris-01098199',
+    nota: 'BALDOSA CERÁMICA TRENTINO GRIS · artículo 01-09-8199 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 211.01 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 1299.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-pri-01093615',
+    nota: 'BALDOSA CERÁMICA TRIPOLI BLANCO PRI · artículo 01-09-3615 · ref. 25X755.33MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 243.82 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 1220.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097949',
+    nota: 'BALDOSA CERÁMICA TRENTINO PERLA · artículo 01-09-7949 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 229.05 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 1221.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-marfil-01097951',
+    nota: 'BALDOSA CERÁMICA TRENTINO MARFIL · artículo 01-09-7951 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 229.11 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 1149.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097948',
+    nota: 'BALDOSA CERÁMICA TRENTINO PERLA · artículo 01-09-7948 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 215.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-135', PROV_OCHOA, 883.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-marfil-01097947',
+    nota: 'BALDOSA CERÁMICA TRENTINO MARFIL · artículo 01-09-7947 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 165.82 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-136', PROV_IBERICA, 2789.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-community-decor-mix-mate-rect-80x80/',
     nota: 'Porcelanato Community Decor Mix Mate Rect. 80×80 · artículo 018132 · ref. 80×80. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-137', PROV_OCHOA, 1531.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-pontesei-negro-01098128',
-    nota: 'Baldosa Cerámica Rlv Pontesei Negro · artículo 01-09-8128 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 413.85 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-pontesei-negro-01098128',
+    nota: 'BALDOSA CERÁMICA RLV PONTESEI NEGRO · artículo 01-09-8128 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 413.85 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-137', PROV_OCHOA, 1345.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tripoli-blanco-01097974',
+    nota: 'BALDOSA CERÁMICA TRIPOLI BLANCO · artículo 01-09-7974 · ref. 30X903.70MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 363.56 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-138', PROV_CERARTE, 682.2, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-rv-ripado-45x90-rt',
@@ -6411,16 +6264,16 @@
     nota: 'PORCELANATO ACAPULCO 108X108 RT · artículo CERA-36650 · ref. 100X100 · marca VILLAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-140', PROV_OCHOA, 1243.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-carson-ceniza-mad-mate-01097993',
-    nota: 'At Carson Ceniza Mad. Mate · artículo 01-09-7993 · ref. 25X1004.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 310.91 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-carson-ceniza-mad-mate-01097993',
+    nota: 'AT CARSON CENIZA MAD. MATE · artículo 01-09-7993 · ref. 25X1004.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 310.91 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-140', PROV_OCHOA, 1294.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-carson-arena-mad-mate-01097864',
-    nota: 'At Carson Arena Mad. Mate · artículo 01-09-7864 · ref. 25X1004.00MT · marca PAMESA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 323.63 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-carson-arena-mad-mate-01097864',
+    nota: 'AT CARSON ARENA MAD. MATE · artículo 01-09-7864 · ref. 25X1004.00MT · marca PAMESA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 323.63 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-141', PROV_OCHOA, 955.09, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marmo-haze-01099087',
-    nota: 'Baldosa Porcelánica Marmo Haze · artículo 01-09-9087 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 604.49 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-marmo-haze-01099087',
+    nota: 'BALDOSA PORCELÁNICA MARMO HAZE · artículo 01-09-9087 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 604.49 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-142', PROV_CERARTE, 2505.74, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-samba-rock-st-120x120-rt',
@@ -6432,576 +6285,559 @@
     itbis: false,
     nota: 'PORCELANATO SAMBA ROCK ST 120X120 RT · artículo CERA-36722 · ref. 120X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-143', PROV_OCHOA, 3981.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-imperial-ceniza-01098585',
-    nota: 'Baldosa Porcelánica Imperial Ceniza · artículo 01-09-8585 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 692.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-143', PROV_OCHOA, 1514.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oldmanor-ambar-01098735',
+    nota: 'BALDOSA CERÁMICA OLDMANOR ÁMBAR · artículo 01-09-8735 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 364.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-143', PROV_OCHOA, 2570.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-base-albaroc-galena-01098428',
-    nota: 'Baldosa Porcelánica Base Albaroc Galena · artículo 01-09-8428 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 447.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-143', PROV_OCHOA, 1467.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oldmanor-tabaco-01098736',
+    nota: 'BALDOSA CERÁMICA OLDMANOR TABACO · artículo 01-09-8736 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 352.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-143', PROV_OCHOA, 3297.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-base-albaroc-boal-01098237',
-    nota: 'Baldosa Porcelánica Base Albaroc Boal · artículo 01-09-8237 · ref. 14.5X1205.55MT/2 · marca EXAGRES. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 594.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-143', PROV_OCHOA, 1732.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-natural-01098695',
+    nota: 'BALDOSA CERÁMICA BERGEN NATURAL · artículo 01-09-8695 · ref. 19.5X119.54.23MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 409.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-144', PROV_OCHOA, 1505.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-ceniza-01098732',
+  c('MAT-08-143', PROV_OCHOA, 2543.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-antislip-01096864',
+    nota: 'BALDOSA CERÁMICA BERGEN ANTISLIP · artículo 01-09-6864 · ref. 19.5X119.54.23MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 601.2 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-143', PROV_OCHOA, 939.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-magicwood-crema-01097845',
     peso: 2,
-    nota: 'Baldosa Cerámica Aren Ceniza · artículo 01-09-8732 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 361.85 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA PORCELÁNICA MAGICWOOD CREMA · artículo 01-09-7845 · ref. 20X1204.23MT/2 · marca SALONI. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 222.06 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-144', PROV_OCHOA, 1316.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-aren-terra-01098734',
-    nota: 'Baldosa Cerámica Aren Terra · artículo 01-09-8734 · ref. 20X1204.16MT2 · marca ATRIUM. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 316.46 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-143', PROV_OCHOA, 2292.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-antislip-ceniza-01096865',
+    nota: 'BALDOSA CERÁMICA BERGEN ANTISLIP CENIZA · artículo 01-09-6865 · ref. 19.5X119.54.23MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 542.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-144', PROV_OCHOA, 1514.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oldmanor-ambar-01098735',
-    nota: 'Baldosa Cerámica Oldmanor Ámbar · artículo 01-09-8735 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 364.14 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-144', PROV_OCHOA, 1467.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-oldmanor-tabaco-01098736',
-    nota: 'Baldosa Cerámica Oldmanor Tabaco · artículo 01-09-8736 · ref. 20X1204.16MT2 · marca PAMESA. La tienda cotiza por pieza; van 4.16 piezas por m² según su propia referencia (RD$ 352.73 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-144', PROV_OCHOA, 2543.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-bergen-antislip-01096864',
-    nota: 'Baldosa Cerámica Bergen Antislip · artículo 01-09-6864 · ref. 19.5X119.54.23MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 601.2 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-144', PROV_OCHOA, 939.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-magicwood-crema-01097845',
-    peso: 2,
-    nota: 'Baldosa Porcelánica Magicwood Crema · artículo 01-09-7845 · ref. 20X1204.23MT/2 · marca SALONI. La tienda cotiza por pieza; van 4.23 piezas por m² según su propia referencia (RD$ 222.06 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-144', PROV_CERARTE, 2090, {
+  c('MAT-08-143', PROV_CERARTE, 2090, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-boreal-20x120-ret-5pz',
     itbis: false,
     nota: 'PORCELANATO BOREAL 20X120 RET 5PZ · artículo CERA-30575 · ref. 20X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-144', PROV_CERARTE, 2010.03, {
+  c('MAT-08-143', PROV_CERARTE, 2010.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-dagen-20x120',
     itbis: false,
     nota: 'PORC. DAGEN 20X120 · artículo CERA-36867 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-144', PROV_CERARTE, 2075.94, {
+  c('MAT-08-143', PROV_CERARTE, 2075.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-dagen-20x120',
     itbis: false,
     nota: 'PORC. DAGEN 20X120 · artículo CERA-36869 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-144', PROV_CERARTE, 2204.57, {
+  c('MAT-08-143', PROV_CERARTE, 2204.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-dagen-20x120',
     itbis: false,
     nota: 'PORC. DAGEN 20X120 · artículo CERA-36866 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-145', PROV_IBERICA, 1949.98, {
+  c('MAT-08-144', PROV_IBERICA, 1949.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-bellver-grey-23-3x120-2/',
     peso: 4,
     nota: 'Porcelanato Tablilla Bellver Grey 23.3×120 · artículo 018086 · ref. 23.3×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-146', PROV_OCHOA, 1122.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-boreal-haya-01098726',
-    nota: 'Baldosa Cerámica Boreal Haya · artículo 01-09-8726 · ref. 23X1203.62MT2 · marca PAMESA. La tienda cotiza por pieza; van 3.62 piezas por m² según su propia referencia (RD$ 310.15 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-146', PROV_IBERICA, 1949.99, {
+  c('MAT-08-145', PROV_IBERICA, 1949.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-kenia-natural-23x120-2/',
     peso: 2,
     nota: 'Porcelanato Tablilla Kenia Natural 23×120 · artículo 018757 · ref. 23×120. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-146', PROV_IBERICA, 1798, {
+  c('MAT-08-145', PROV_IBERICA, 1798, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-ninsba-beige-rect-23x120-2/',
     peso: 4,
     nota: 'Porcelanato Tablilla Ninsba Beige Rect. 23×120 · artículo 017948 · ref. 23×120. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-147', PROV_OCHOA, 1516.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-metric-blanco-01098828',
-    nota: 'Baldosa Cerámica Cavallina Metric Blanco · artículo 01-09-8828 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 729.02 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-146', PROV_OCHOA, 819.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-apollo-white-01098865',
+    nota: 'BALDOSA CERÁMICA PORC. APOLLO WHITE · artículo 01-09-8865 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-147', PROV_OCHOA, 1991.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-metric-marfil-01098829',
-    nota: 'Baldosa Cerámica Cavallina Metric Marfil · artículo 01-09-8829 · ref. 40X1202.08MT2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 957.5 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-146', PROV_OCHOA, 2194.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-negro-marquina-01098927',
+    nota: 'BALDOSA PORCELÁNICA NEGRO MARQUINA · artículo 01-09-8927 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1590.39 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_OCHOA, 819.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-porc-apollo-white-01098865',
-    nota: 'Baldosa Cerámica Porc. Apollo White · artículo 01-09-8865 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-146', PROV_OCHOA, 863.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-nivea-grey-light-01099052',
+    nota: 'BALDOSA PORCELÁNICA NIVEA GREY LIGHT · artículo 01-09-9052 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 625.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_OCHOA, 1903.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travertino-beige-01098928',
-    nota: 'Baldosa Cerámica Travertino Beige · artículo 01-09-8928 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1379.6 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-148', PROV_OCHOA, 2194.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-negro-marquina-01098927',
-    nota: 'Baldosa Porcelánica Negro Marquina · artículo 01-09-8927 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1590.39 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-148', PROV_OCHOA, 2019.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-marfil-soft-01098827',
-    nota: 'Baldosa Cerámica Cavallina Marfil Soft · artículo 01-09-8827 · ref. 60X1201.38MT2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1463.7 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-148', PROV_OCHOA, 863.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-nivea-grey-light-01099052',
-    nota: 'Baldosa Porcelánica Nivea Grey Light · artículo 01-09-9052 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 625.93 por pieza). ' + SUPUESTO_ITBIS
-  });
-  c('MAT-08-148', PROV_CERARTE, 1257.62, {
+  c('MAT-08-146', PROV_CERARTE, 1257.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-vitral-white-64x123-rt',
     itbis: false,
     nota: 'PV VITRAL WHITE 64X123 RT · artículo CERA-34769 · ref. 60X120 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-148', PROV_CERARTE, 1328.55, {
+  c('MAT-08-146', PROV_CERARTE, 1328.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-vitral-white-lux-63x122-rt',
     itbis: false,
     nota: 'PV VITRAL WHITE LUX 63X122 RT · artículo CERA-34800 · ref. 60X120 · marca EMBRAMACO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-148', PROV_CERARTE, 2078.85, {
+  c('MAT-08-146', PROV_CERARTE, 2078.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-sl-livia-60x120-rt',
     itbis: false,
     nota: 'PORCELANATO SL LIVIA 60X120 RT · artículo CERA-36458 · ref. 60X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-148', PROV_CERARTE, 909.23, {
+  c('MAT-08-146', PROV_CERARTE, 909.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-viena-62x119-rt-012780',
     itbis: false,
     nota: 'SEMI-GRES VIENA 62X119 RT · artículo CERA-36640 · ref. 60X120 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-148', PROV_IBERICA, 1190, {
+  c('MAT-08-146', PROV_IBERICA, 1190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-calacatta-pulido-rect-60x120/',
     nota: 'Porcelanato Calacatta Pulido Rect. 60×120 · artículo 018865 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2349.98, {
+  c('MAT-08-146', PROV_IBERICA, 2349.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-chevron-alabama-oak-matt-59-5x119-2-rec-2/',
     nota: 'Porcelanato Chevron Alabama Oak Matt 59.5×119.2 Rec. · artículo 018323 · ref. 59.5×119.2. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2390, {
+  c('MAT-08-146', PROV_IBERICA, 2390, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-chevron-alabama-oak-matt-59-5x119-2-rec/',
     nota: 'Porcelanato Chevron Alabama Oak Matt 59.5×119.2 Rec. · artículo 019305 · ref. 59.5×119.2. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2450, {
+  c('MAT-08-146', PROV_IBERICA, 2450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-fior-di-bosco-mate-rect-60x120/',
     nota: 'Porcelanato Fior Di Bosco Mate Rect. 60×120 · artículo 017748 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2490, {
+  c('MAT-08-146', PROV_IBERICA, 2490, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-goldoni-bianco-mate-rect-60x120/',
     nota: 'Porcelanato Goldoni Bianco Mate Rect. 60×120 · artículo 017334 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2290, {
+  c('MAT-08-146', PROV_IBERICA, 2290, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-goldoni-grigio-mate-rect-60x120/',
     nota: 'Porcelanato Goldoni Grigio Mate Rect. 60×120 · artículo 018687 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 3599.99, {
+  c('MAT-08-146', PROV_IBERICA, 3599.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-linz-white-pulido-rec-60x120/',
     nota: 'Porcelanato Linz White Pulido Rec. 60×120 · artículo 017602 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2350, {
+  c('MAT-08-146', PROV_IBERICA, 2350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-monreale-bronze-mate-rect-60x120/',
     nota: 'Porcelanato Monreale Bronze Mate Rect. 60×120 · artículo 018225 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 3249.99, {
+  c('MAT-08-146', PROV_IBERICA, 3249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-palisandro-white-pulido-rect-60x120/',
     nota: 'Porcelanato Palisandro White Pulido Rect. 60×120 · artículo 017070 · ref. 60×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-148', PROV_IBERICA, 2249.99, {
+  c('MAT-08-146', PROV_IBERICA, 2249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rodano-chalk-rect-60x120/',
     peso: 3,
     nota: 'Porcelanato Rodano Chalk Rect. 60×120 · artículo 017897 · ref. 60×120. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-149', PROV_CERARTE, 2029.55, {
+  c('MAT-08-147', PROV_CERARTE, 2029.55, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-infinity-savlon-80x160-rt',
     itbis: false,
     nota: 'PORC. INFINITY SAVLON 80X160 RT · artículo CERA-34886 · ref. 80X160 · marca VARMORA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-150', PROV_CERARTE, 2854.33, {
+  c('MAT-08-148', PROV_CERARTE, 2854.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-oct-musichalls-multicolor-20x20',
     itbis: false,
     nota: 'PORCELANATO OCT. MUSICHALLS MULTICOLOR 20X20 · artículo CERA-05418 · ref. 20X20 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-151', PROV_IBERICA, 3834.91, {
+  c('MAT-08-149', PROV_IBERICA, 3834.91, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-eclipse-white-33-3x33-3/',
     nota: 'Porcelanato Eclipse White 33.3×33.3 · artículo 016723 · ref. 33.3×33.3. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 700.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daroca-roja-01085220',
-    nota: 'Baldosa Cerámica Daroca Roja · artículo 01-08-5220 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 142.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 700.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daroca-roja-01085220',
+    nota: 'BALDOSA CERÁMICA DAROCA ROJA · artículo 01-08-5220 · ref. 45X454.93/MT · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 142.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 720.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-exterior-gris-01097482',
-    nota: 'Baldosa Cerámica Rosetón Exterior Gris · artículo 01-09-7482 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 720.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-exterior-gris-01097482',
+    nota: 'BALDOSA CERÁMICA ROSETÓN EXTERIOR GRIS · artículo 01-09-7482 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.07 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 810.98, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-legno-arce-mad-mate-01098085',
-    nota: 'At Legno Arce Mad. Mate · artículo 01-09-8085 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.5 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 810.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-legno-arce-mad-mate-01098085',
+    nota: 'AT LEGNO ARCE MAD. MATE · artículo 01-09-8085 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.5 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 714.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daroca-beige-01085271',
-    nota: 'Baldosa Cerámica Daroca Beige · artículo 01-08-5271 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 714.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daroca-beige-01085271',
+    nota: 'BALDOSA CERÁMICA DAROCA BEIGE · artículo 01-08-5271 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.01 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 899.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-legno-terra-mad-mate-01098086',
-    nota: 'At Legno Terra Mad. Mate · artículo 01-09-8086 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 182.43 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 899.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-legno-terra-mad-mate-01098086',
+    nota: 'AT LEGNO TERRA MAD. MATE · artículo 01-09-8086 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 182.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 714.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-beige-01096748',
-    nota: 'Baldosa Cerámica Rosetón Beige · artículo 01-09-6748 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 714.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-beige-01096748',
+    nota: 'BALDOSA CERÁMICA ROSETÓN BEIGE · artículo 01-09-6748 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 746.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpino-caoba-01099129',
-    nota: 'Baldosa Alpino Caoba · artículo 01-09-9129 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 746.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpino-caoba-01099129',
+    nota: 'BALDOSA ALPINO CAOBA · artículo 01-09-9129 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 151.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 774.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpino-haya-01097735',
-    nota: 'Baldosa Alpino Haya · artículo 01-09-7735 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 157.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 774.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpino-haya-01097735',
+    nota: 'BALDOSA ALPINO HAYA · artículo 01-09-7735 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 157.06 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 858.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-alpha-blanco-mate-01098087',
-    nota: 'At Alpha Blanco Mate · artículo 01-09-8087 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 174.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 858.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-alpha-blanco-mate-01098087',
+    nota: 'AT ALPHA BLANCO MATE · artículo 01-09-8087 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 174.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 692.86, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-rustico-cuero-01096743',
-    nota: 'Baldosa Cerámica Rosetón Rústico Cuero · artículo 01-09-6743 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 140.54 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 720.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rustico-teja-01097975',
+    nota: 'BALDOSA CERÁMICA RÚSTICO TEJA · artículo 01-09-7975 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 146.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 1062.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-monza-gris-01098543',
+  c('MAT-08-150', PROV_OCHOA, 692.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-roseton-rustico-cuero-01096743',
+    nota: 'BALDOSA CERÁMICA ROSETÓN RÚSTICO CUERO · artículo 01-09-6743 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 140.54 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-150', PROV_OCHOA, 757.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tobago-natural-01096644',
+    nota: 'BALDOSA CERÁMICA TOBAGO NATURAL · artículo 01-09-6644 · ref. 45X454.93MT/2 · marca HALCON. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 153.59 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-150', PROV_OCHOA, 1062.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-monza-gris-01098543',
     peso: 3,
-    nota: 'Baldosa Cerámica Monza Gris · artículo 01-09-8543 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 215.46 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MONZA GRIS · artículo 01-09-8543 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 215.46 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-152', PROV_OCHOA, 581.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-taranto-crema-01098541',
-    nota: 'Baldosa Cerámica Taranto Crema · artículo 01-09-8541 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 118.01 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-150', PROV_OCHOA, 581.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-taranto-crema-01098541',
+    nota: 'BALDOSA CERÁMICA TARANTO CREMA · artículo 01-09-8541 · ref. 45X454.93MT/2 · marca STN. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 118.01 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-153', PROV_OCHOA, 1035.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-vetas-coral-01098636',
-    nota: 'Baldosa Porcelánica Vetas Coral · artículo 01-09-8636 · ref. 50X504.00MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 258.87 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-151', PROV_OCHOA, 1035.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-vetas-coral-01098636',
+    nota: 'BALDOSA PORCELÁNICA VETAS CORAL · artículo 01-09-8636 · ref. 50X504.00MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 258.87 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-154', PROV_OCHOA, 772.01, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/andira-taupe-mate-pri-01098951',
-    nota: 'Andira Taupe Mate Pri · artículo 01-09-8951 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 83.46 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-152', PROV_OCHOA, 772.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/andira-taupe-mate-pri-01098951',
+    nota: 'ANDIRA TAUPE MATE PRI · artículo 01-09-8951 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 83.46 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-154', PROV_OCHOA, 783.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-andira-beige-mate-01098950',
-    nota: 'Baldosa Andira Beige Mate · artículo 01-09-8950 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 84.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-152', PROV_OCHOA, 783.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-andira-beige-mate-01098950',
+    nota: 'BALDOSA ANDIRA BEIGE MATE · artículo 01-09-8950 · ref. 19X579.25MT/2 · marca HALCON. La tienda cotiza por pieza; van 9.25 piezas por m² según su propia referencia (RD$ 84.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-155', PROV_OCHOA, 998.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-gloss-beige-pw-rectif-01098599',
-    nota: 'Porc. Gloss Beige Pw Rectif. · artículo 01-09-8599 · ref. 59X592.87MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.87 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-153', PROV_OCHOA, 998.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-gloss-beige-pw-rectif-01098599',
+    nota: 'PORC. GLOSS BEIGE PW RECTIF. · artículo 01-09-8599 · ref. 59X592.87MT2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.87 piezas por m² según su propia referencia (RD$ 348.08 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-155', PROV_IBERICA, 1689.98, {
+  c('MAT-08-153', PROV_IBERICA, 1689.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-ardesia-marengo-rect-58-5x58-5-2/',
     nota: 'Porcelanato Ardesia Marengo Rect. 58.5×58.5 · artículo 017921 · ref. 58.5×58.5. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 988.04, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-vogue-blanco-mate-pri-01099210',
-    nota: 'Porc. Vogue Blanco Mate Pri · artículo 01-09-9210 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 361.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-154', PROV_OCHOA, 757.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-gris-01098143',
+    nota: 'BALDOSA CERÁMICA TORONTO GRIS · artículo 01-09-8143 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1269.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-bali-stone-01098302',
-    nota: 'Baldosa Porcelánica Bali Stone · artículo 01-09-8302 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 228.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 988.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-vogue-blanco-mate-pri-01099210',
+    nota: 'PORC. VOGUE BLANCO MATE PRI · artículo 01-09-9210 · ref. 60.5X60.52.73MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.73 piezas por m² según su propia referencia (RD$ 361.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1304.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-bone-01098498',
-    nota: 'Baldosa Porcelánica Rajasthan Bone · artículo 01-09-8498 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 235.12 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1304.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-bone-01098498',
+    nota: 'BALDOSA PORCELÁNICA RAJASTHAN BONE · artículo 01-09-8498 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 235.12 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1251.47, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-bone-01097826',
+  c('MAT-08-155', PROV_OCHOA, 1251.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-bone-01097826',
     peso: 2,
-    nota: 'Baldosa Porcelánica Rajasthan Bone · artículo 01-09-7826 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA PORCELÁNICA RAJASTHAN BONE · artículo 01-09-7826 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.49 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1311.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-black-antislip-01098500',
-    nota: 'Baldosa Porcelánica Rajasthan Black Antislip · artículo 01-09-8500 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 236.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1311.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-black-antislip-01098500',
+    nota: 'BALDOSA PORCELÁNICA RAJASTHAN BLACK ANTISLIP · artículo 01-09-8500 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 236.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1278.05, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-bali-stone-01098301',
-    nota: 'Baldosa Porcelánica Bali Stone · artículo 01-09-8301 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 230.28 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1262.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-black-01097741',
+    nota: 'BALDOSA PORCELÁNICA RAJASTHAN BLACK · artículo 01-09-7741 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 227.42 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1262.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-black-01097741',
-    nota: 'Baldosa Porcelánica Rajasthan Black · artículo 01-09-7741 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 227.42 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1324.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-sand-01098499',
+    nota: 'BALDOSA PORCELÁNICA RAJASTHAN SAND · artículo 01-09-8499 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 238.63 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1324.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rajasthan-sand-01098499',
-    nota: 'Baldosa Porcelánica Rajasthan Sand · artículo 01-09-8499 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 238.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1349.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-blanco-antidesl-01098501',
+    nota: 'BALDOSA PORCELÁNICA MANHATTAN BLANCO ANTIDESL · artículo 01-09-8501 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 243.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1349.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-blanco-antidesl-01098501',
-    nota: 'Baldosa Porcelánica Manhattan Blanco Antidesl · artículo 01-09-8501 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 243.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1375.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-rlv-eiffel-negro-mate-01097859',
+    nota: 'AT RLV EIFFEL NEGRO MATE · artículo 01-09-7859 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 255.6 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1031.16, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-blanco-01097954',
-    nota: 'Baldosa Porcelánica Manhattan Blanco · artículo 01-09-7954 · ref. 30X605.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.56 piezas por m² según su propia referencia (RD$ 185.46 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1500.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-majestic-beige-01098259',
+    nota: 'BALDOSA PORCELÁNICA MAJESTIC BEIGE · artículo 01-09-8259 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1500.23, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-majestic-beige-01098259',
-    nota: 'Baldosa Porcelánica Majestic Beige · artículo 01-09-8259 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1085.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-gris-01097890',
+    nota: 'BALDOSA PORCELÁNICA MANHATTAN GRIS · artículo 01-09-7890 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 195.64 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1144.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-madeira-gris-01096811',
-    nota: 'Baldosa Porcelánica Madeira Gris · artículo 01-09-6811 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 212.02 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1031.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-blanco-01097954',
+    nota: 'BALDOSA PORCELÁNICA MANHATTAN BLANCO · artículo 01-09-7954 · ref. 30X605.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.56 piezas por m² según su propia referencia (RD$ 185.46 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_OCHOA, 1085.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-manhattan-gris-01097890',
-    nota: 'Baldosa Porcelánica Manhattan Gris · artículo 01-09-7890 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 195.64 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-155', PROV_OCHOA, 1144.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-madeira-gris-01096811',
+    nota: 'BALDOSA PORCELÁNICA MADEIRA GRIS · artículo 01-09-6811 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 212.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_CERARTE, 1914.73, {
+  c('MAT-08-155', PROV_CERARTE, 1914.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tanum-30x60-caj08',
     itbis: false,
     nota: 'PORCELANATO TANUM 30X60 CAJ08 · artículo CERA-33762 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-156', PROV_CERARTE, 1955.15, {
+  c('MAT-08-155', PROV_CERARTE, 1955.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tanum-30x60-caj08',
     itbis: false,
     nota: 'PORCELANATO TANUM 30X60 CAJ08 · artículo CERA-33667 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-156', PROV_CERARTE, 1789.91, {
+  c('MAT-08-155', PROV_CERARTE, 1789.91, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tanum-30x60-caj08',
     itbis: false,
     nota: 'PORCELANATO TANUM 30X60 CAJ08 · artículo CERA-33834 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-156', PROV_CERARTE, 1922.36, {
+  c('MAT-08-155', PROV_CERARTE, 1922.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tanum-30x60-caj08',
     itbis: false,
     nota: 'PORCELANATO TANUM 30X60 CAJ08 · artículo CERA-33661 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-156', PROV_CERARTE, 1874.65, {
+  c('MAT-08-155', PROV_CERARTE, 1874.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tanum-30x60-caj08',
     itbis: false,
     nota: 'PORCELANATO TANUM 30X60 CAJ08 · artículo CERA-33796 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-156', PROV_IBERICA, 1690, {
+  c('MAT-08-155', PROV_IBERICA, 1690, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-aymara-tierra-30x60/',
     nota: 'Porcelanato Aymara Tierra 30×60 · artículo 017974 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_IBERICA, 1589.94, {
+  c('MAT-08-155', PROV_IBERICA, 1589.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-bali-green-ant-30x60/',
     nota: 'Porcelanato Bali Green Ant. 30×60 · artículo 019196 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_IBERICA, 1789.98, {
+  c('MAT-08-155', PROV_IBERICA, 1789.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-coral-bavaro-antideslizante-30x60/',
     nota: 'Porcelanato Coral Bavaro Antideslizante 30×60 · artículo 018280 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_IBERICA, 1949.94, {
+  c('MAT-08-155', PROV_IBERICA, 1949.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-core-snow-rect-30x60/',
     nota: 'Porcelanato Core Snow Rect. 30×60 · artículo 018977 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_IBERICA, 2589.94, {
+  c('MAT-08-155', PROV_IBERICA, 2589.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-kursaal-ashen-rectificado-30x60/',
     nota: 'Porcelanato Kursaal Ashen Rectificado 30×60 · artículo 016272 · ref. 30×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-156', PROV_IBERICA, 1350.02, {
+  c('MAT-08-155', PROV_IBERICA, 1350.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rodano-chalk-mate-30x60/',
     peso: 2,
     nota: 'Porcelanato Rodano Chalk Mate 30×60 · artículo 017752 · ref. 30×60. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_CERARTE, 1507.72, {
+  c('MAT-08-156', PROV_CERARTE, 1507.72, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pyrenees-out-60x60',
     itbis: false,
     nota: 'PORC. PYRENEES OUT 60X60 · artículo CERA-35522 · ref. 60X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 903.75, {
+  c('MAT-08-156', PROV_CERARTE, 903.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-marfil-marmolizado-60x60-rt-012498',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO PV MARFIL MARMOLIZADO 60X60 RT · artículo CERA-36166 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 879.63, {
+  c('MAT-08-156', PROV_CERARTE, 879.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-inca-calacatta-60x60-rt',
     itbis: false,
     nota: 'PORCELANATO PV INCA CALACATTA 60X60 RT · artículo CERA-36167 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 887.84, {
+  c('MAT-08-156', PROV_CERARTE, 887.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-blanco-absoluto-60x60-rt-012500',
     itbis: false,
     nota: 'PORCELANATO PV BLANCO ABSOLUTO 60X60 RT · artículo CERA-36169 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 849.99, {
+  c('MAT-08-156', PROV_CERARTE, 849.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-inca-60x60-rt',
     itbis: false,
     nota: 'PORCELANATO PV INCA 60X60 RT · artículo CERA-36468 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 912.36, {
+  c('MAT-08-156', PROV_CERARTE, 912.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-inca-60x60-rt',
     itbis: false,
     nota: 'PORCELANATO PV INCA 60X60 RT · artículo CERA-36170 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 850.58, {
+  c('MAT-08-156', PROV_CERARTE, 850.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-roca-inca-60x60-rt-012502',
     itbis: false,
     nota: 'PORCELANATO PV ROCA INCA 60X60 RT · artículo CERA-36173 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 834.21, {
+  c('MAT-08-156', PROV_CERARTE, 834.21, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-roca-inca-60x60-rt-012502',
     itbis: false,
     nota: 'PORCELANATO PV ROCA INCA 60X60 RT · artículo CERA-36172 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 856.39, {
+  c('MAT-08-156', PROV_CERARTE, 856.39, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-pv-roca-inca-60x60-rt-012502',
     itbis: false,
     nota: 'PORCELANATO PV ROCA INCA 60X60 RT · artículo CERA-36171 · ref. 60X60 · marca PORCELAMIKA PERÚ. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 959.31, {
+  c('MAT-08-156', PROV_CERARTE, 959.31, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-taj-mahal-61x61-rt-012740',
     itbis: false,
     nota: 'PORCELANATO TAJ MAHAL 61X61 RT · artículo CERA-36615 · ref. 60X60 · marca CERAMICA CRISTOFOLETTI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_CERARTE, 570.53, {
+  c('MAT-08-156', PROV_CERARTE, 570.53, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-sahara-60x60-rt-012973',
     itbis: false,
     nota: 'PV SAHARA 60X60 RT · artículo CERA-36732 · ref. 60X60 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-157', PROV_IBERICA, 1799.99, {
+  c('MAT-08-156', PROV_IBERICA, 1799.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-concept-natural-60x60/',
     nota: 'Porcelanato Concept Natural 60×60 · artículo 017908 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 1190, {
+  c('MAT-08-156', PROV_IBERICA, 1190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-elpaso-light-beige-mate-rec-60x60/',
     peso: 3,
     nota: 'Porcelanato Elpaso Light Beige Mate Rec. 60×60 · artículo 018678 · ref. 60×60. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 2249.99, {
+  c('MAT-08-156', PROV_IBERICA, 2249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-kursaal-slate-rectificado-60x60/',
     nota: 'Porcelanato Kursaal Slate Rectificado 60×60 · artículo 018922 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 1589.98, {
+  c('MAT-08-156', PROV_IBERICA, 1589.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-random-blanc-60x60/',
     nota: 'Porcelanato Random Blanc 60×60 · artículo 018777 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 1549.99, {
+  c('MAT-08-156', PROV_IBERICA, 1549.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-random-fonce-60x60/',
     nota: 'Porcelanato Random Fonce 60×60 · artículo 017273 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 2989.99, {
+  c('MAT-08-156', PROV_IBERICA, 2989.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rios-parana-mate-60x60/',
     nota: 'Porcelanato Rios Parana Mate 60×60 · artículo 019317 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 1479.99, {
+  c('MAT-08-156', PROV_IBERICA, 1479.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-rodano-chalk-60x60/',
     nota: 'Porcelanato Rodano Chalk 60×60 · artículo 019030 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 2450, {
+  c('MAT-08-156', PROV_IBERICA, 2450, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-stark-marfil-rect-60x60/',
     nota: 'Porcelanato Stark Marfil Rect. 60×60 · artículo 017542 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-157', PROV_IBERICA, 1790.02, {
+  c('MAT-08-156', PROV_IBERICA, 1790.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-versailles-oak-60x60/',
     nota: 'Porcelanato Versailles Oak 60×60 · artículo 019704 · ref. 60×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-158', PROV_CERARTE, 851.66, {
+  c('MAT-08-157', PROV_CERARTE, 851.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-pv-alvorada-75x75-ext-rt',
     itbis: false,
     nota: 'SEMI-GRES PV ALVORADA 75X75 EXT RT · artículo CERA-36056 · ref. 75X75 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-158', PROV_CERARTE, 815.88, {
+  c('MAT-08-157', PROV_CERARTE, 815.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-crema-delicato-75x75-rt',
     itbis: false,
     nota: 'SEMI-GRES CREMA DELICATO 75X75 RT · artículo CERA-36058 · ref. 75X75 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-158', PROV_CERARTE, 1111.29, {
+  c('MAT-08-157', PROV_CERARTE, 1111.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-city-76x76-rt-012734',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO CITY 76X76 RT · artículo CERA-36609 · ref. 75X75 · marca CERAMICA CRISTOFOLETTI. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-158', PROV_CERARTE, 756.14, {
+  c('MAT-08-157', PROV_CERARTE, 756.14, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-petra-natural-75x75-rt-012777',
     itbis: false,
     nota: 'SEMI-GRES PETRA NATURAL 75X75 RT · artículo CERA-36637 · ref. 75X75 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-158', PROV_CERARTE, 690.22, {
+  c('MAT-08-157', PROV_CERARTE, 690.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-boston-75x75-rt',
     itbis: false,
     nota: 'SEMI-GRES BOSTON 75X75 RT · artículo CERA-36734 · ref. 75X75 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-159', PROV_CERARTE, 877.69, {
+  c('MAT-08-158', PROV_CERARTE, 877.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/pv-calacatta-gold-85x85-rt-012974',
     itbis: false,
     nota: 'PV CALACATTA GOLD 85X85 RT · artículo CERA-36733 · ref. 80X80 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-160', PROV_OCHOA, 2473.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-epoca-nogal-01094774',
-    nota: 'Baldosa Cerámica Época Nogal · artículo 01-09-4774 · ref. 22X855.34MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 463.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-159', PROV_OCHOA, 2473.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-epoca-nogal-01094774',
+    nota: 'BALDOSA CERÁMICA ÉPOCA NOGAL · artículo 01-09-4774 · ref. 22X855.34MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.34 piezas por m² según su propia referencia (RD$ 463.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-161', PROV_OCHOA, 1206.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-arce-01099135',
-    nota: 'Baldosa At Montevideo Arce · artículo 01-09-9135 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 163.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-160', PROV_OCHOA, 1206.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-arce-01099135',
+    nota: 'BALDOSA AT MONTEVIDEO ARCE · artículo 01-09-9135 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 163.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-161', PROV_OCHOA, 1156.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-gris-01099136',
-    nota: 'Baldosa At Montevideo Gris · artículo 01-09-9136 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 156.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-160', PROV_OCHOA, 1156.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-gris-01099136',
+    nota: 'BALDOSA AT MONTEVIDEO GRIS · artículo 01-09-9136 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 156.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-161', PROV_OCHOA, 1187.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-roble-01099137',
-    nota: 'Baldosa At Montevideo Roble · artículo 01-09-9137 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 161.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-160', PROV_OCHOA, 1187.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-montevideo-roble-01099137',
+    nota: 'BALDOSA AT MONTEVIDEO ROBLE · artículo 01-09-9137 · ref. 15X907.37MT/2 · marca SALONI. La tienda cotiza por pieza; van 7.37 piezas por m² según su propia referencia (RD$ 161.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-162', PROV_IBERICA, 1649.96, {
+  c('MAT-08-161', PROV_IBERICA, 1649.96, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-rovere-grafite-22-5x90-2/',
     nota: 'Porcelanato Tablilla Rovere Grafite 22.5×90 · artículo 018965 · ref. 22.5×90. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-162', PROV_IBERICA, 1589.97, {
+  c('MAT-08-161', PROV_IBERICA, 1589.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/porcelanato-tablilla-rovere-tabacco-22-5x90/',
     nota: 'Porcelanato Tablilla Rovere Tabacco 22.5×90 · artículo 018384 · ref. 22.5×90. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-163', PROV_OCHOA, 1641.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-zircon-01098120',
-    nota: 'Baldosa Cerámica Essen Zircon · artículo 01-09-8120 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 664.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-162', PROV_OCHOA, 1641.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-zircon-01098120',
+    nota: 'BALDOSA CERÁMICA ESSEN ZIRCON · artículo 01-09-8120 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 664.62 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-163', PROV_OCHOA, 1632.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-ash-01098119',
-    nota: 'Baldosa Cerámica Essen Ash · artículo 01-09-8119 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 660.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-162', PROV_OCHOA, 1632.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-ash-01098119',
+    nota: 'BALDOSA CERÁMICA ESSEN ASH · artículo 01-09-8119 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 660.78 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-163', PROV_OCHOA, 1987.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-elgin-tortora-01098121',
-    nota: 'Baldosa Cerámica Elgin Tortora · artículo 01-09-8121 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 804.61 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-162', PROV_OCHOA, 1987.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-elgin-tortora-01098121',
+    nota: 'BALDOSA CERÁMICA ELGIN TORTORA · artículo 01-09-8121 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 804.61 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-163', PROV_OCHOA, 818.71, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-mandal-gris-01096823',
-    nota: 'Baldosa Porcelánica Mandal Gris · artículo 01-09-6823 · ref. 45X902.46MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 332.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-162', PROV_OCHOA, 818.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-mandal-gris-01096823',
+    nota: 'BALDOSA PORCELÁNICA MANDAL GRIS · artículo 01-09-6823 · ref. 45X902.46MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.46 piezas por m² según su propia referencia (RD$ 332.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-164', PROV_CERARTE, 1329.83, {
+  c('MAT-08-163', PROV_CERARTE, 1329.83, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-laranjeiras-84x84',
     itbis: false,
     nota: 'PORCELANATO LARANJEIRAS 84X84 · artículo CERA-36622 · ref. 86X86 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-164', PROV_CERARTE, 1640.22, {
+  c('MAT-08-163', PROV_CERARTE, 1640.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-sevilha-92x92-rt',
     itbis: false,
     nota: 'PORCELANATO SEVILHA 92X92 RT · artículo CERA-36647 · ref. 90X90 · marca VILLAGRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-164', PROV_IBERICA, 2950, {
+  c('MAT-08-163', PROV_IBERICA, 2950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/__trashed-62/',
     nota: 'Porcelanato Concept Mist Rec. 90×90 · artículo 018378 · ref. 90×90. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-165', PROV_OCHOA, 1782.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-blanco-01098930',
-    nota: 'Baldosa Cerámica Muse Blanco · artículo 01-09-8930 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 562.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-164', PROV_OCHOA, 1782.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-blanco-01098930',
+    nota: 'BALDOSA CERÁMICA MUSE BLANCO · artículo 01-09-8930 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 562.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-165', PROV_OCHOA, 2196.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-negro-01098932',
-    nota: 'Baldosa Cerámica Muse Negro · artículo 01-09-8932 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 692.8 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-164', PROV_OCHOA, 2196.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-muse-negro-01098932',
+    nota: 'BALDOSA CERÁMICA MUSE NEGRO · artículo 01-09-8932 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 692.8 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-165', PROV_OCHOA, 2601.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crema-natural-twist-01096869',
-    nota: 'Baldosa Cerámica Crema Natural Twist · artículo 01-09-6869 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 820.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-164', PROV_OCHOA, 2601.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crema-natural-twist-01096869',
+    nota: 'BALDOSA CERÁMICA CREMA NATURAL TWIST · artículo 01-09-6869 · ref. 31.5X1003.17MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 3.17 piezas por m² según su propia referencia (RD$ 820.62 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-166', PROV_OCHOA, 1505.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-cellini-01098442',
-    nota: 'Baldosa Cerámica Rlv Cellini · artículo 01-09-8442 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 501.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-165', PROV_OCHOA, 1505.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-cellini-01098442',
+    nota: 'BALDOSA CERÁMICA RLV CELLINI · artículo 01-09-8442 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 501.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-166', PROV_OCHOA, 1466.73, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cellini-01098441',
-    nota: 'Baldosa Cerámica Cellini · artículo 01-09-8441 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 488.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-165', PROV_OCHOA, 1466.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cellini-01098441',
+    nota: 'BALDOSA CERÁMICA CELLINI · artículo 01-09-8441 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 488.91 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-166', PROV_OCHOA, 1481.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-torano-01098447',
-    nota: 'Baldosa Cerámica Torano · artículo 01-09-8447 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 493.77 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-165', PROV_OCHOA, 1481.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-torano-01098447',
+    nota: 'BALDOSA CERÁMICA TORANO · artículo 01-09-8447 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 493.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-166', PROV_OCHOA, 1604.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-torano-01098448',
-    nota: 'Baldosa Cerámica Rlv Torano · artículo 01-09-8448 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 534.85 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-165', PROV_OCHOA, 1604.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rlv-torano-01098448',
+    nota: 'BALDOSA CERÁMICA RLV TORANO · artículo 01-09-8448 · ref. 33.3X1003MT/2 · marca PAMESA. La tienda cotiza por pieza; van 3 piezas por m² según su propia referencia (RD$ 534.85 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-167', PROV_OCHOA, 3647.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rafter-chevron-natural-01097996',
-    nota: 'Baldosa Porcelánica Rafter Chevron Natural · artículo 01-09-7996 · ref. 50X1002.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 2 piezas por m² según su propia referencia (RD$ 1823.64 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-166', PROV_OCHOA, 3647.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rafter-chevron-natural-01097996',
+    nota: 'BALDOSA PORCELÁNICA RAFTER CHEVRON NATURAL · artículo 01-09-7996 · ref. 50X1002.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 2 piezas por m² según su propia referencia (RD$ 1823.64 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-167', PROV_OCHOA, 1801.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rafter-chevron-beige-01097995',
-    nota: 'Baldosa Porcelánica Rafter Chevron Beige · artículo 01-09-7995 · ref. 50X1002.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 2 piezas por m² según su propia referencia (RD$ 900.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-166', PROV_OCHOA, 1801.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-rafter-chevron-beige-01097995',
+    nota: 'BALDOSA PORCELÁNICA RAFTER CHEVRON BEIGE · artículo 01-09-7995 · ref. 50X1002.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 2 piezas por m² según su propia referencia (RD$ 900.91 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-167', PROV_CERARTE, 1296.43, {
+  c('MAT-08-166', PROV_CERARTE, 1296.43, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-alpino-hd-49x99-rt',
     itbis: false,
     nota: 'LEVIGATO ALPINO HD 49X99 RT · artículo CERA-34088 · ref. 50X100 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-08-167', PROV_OCHOA, 493.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-urban-concreto-mate-01099083',
+    nota: 'BALDOSA CERÁMICA URBAN CONCRETO MATE · artículo 01-09-9083 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 312.18 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-167', PROV_OCHOA, 918.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cedasa-tundra-gris-01099086',
+    nota: 'BALDOSA CERÁMICA CEDASA TUNDRA GRIS · artículo 01-09-9086 · ref. 56X1131.58MT/2 · marca CEDASA. La tienda cotiza por pieza; van 1.58 piezas por m² según su propia referencia (RD$ 581.61 por pieza). ' + SUPUESTO_ITBIS
   });
   c('MAT-08-168', PROV_CERARTE, 1900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-maori-11x120-nat-ret',
@@ -7009,8 +6845,9 @@
     nota: 'PORCELANATO MAORI 11X120 NAT RET · artículo CERA-32710 · ref. 11X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
   c('MAT-08-169', PROV_OCHOA, 2945.45, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-marfil-01098894',
-    nota: 'Baldosa Cerámica Cavallina Marfil · artículo 01-09-8894 · ref. 120X1200.69MT/2 · marca SALONI. La tienda cotiza por pieza; van 0.69 piezas por m² según su propia referencia (RD$ 4268.77 por pieza). ' + SUPUESTO_ITBIS
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-marfil-01098894',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA CAVALLINA MARFIL · artículo 01-09-8894 · ref. 120X1200.69MT/2 · marca SALONI. La tienda cotiza por pieza; van 0.69 piezas por m² según su propia referencia (RD$ 4268.77 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
   c('MAT-08-169', PROV_CERARTE, 2341.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-basalto-123x123-nat',
@@ -7032,2099 +6869,2246 @@
     itbis: false,
     nota: 'PORCELANATO TECTON AVE 3D 120X120 RT · artículo CERA-36606 · ref. 120X120 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_OCHOA, 1658, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rigato-sabbia-01097746',
-    nota: 'Baldosa Cerámica Rigato Sabbia · artículo 01-09-7746 · ref. 20X1204.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 414.5 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-170', PROV_OCHOA, 4005.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-yoho-oak-01098431',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA YOHO OAK · artículo 01-09-8431 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 696.55 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-170', PROV_CERARTE, 1314.57, {
+  c('MAT-08-170', PROV_OCHOA, 3981.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-opera-silver-01099178',
+    peso: 5,
+    nota: 'BALDOSA CERÁMICA OPERA SILVER · artículo 01-09-9178 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 692.37 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-170', PROV_OCHOA, 3429.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venatto-perla-01098587',
+    nota: 'BALDOSA CERÁMICA VENATTO PERLA · artículo 01-09-8587 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 596.47 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-170', PROV_OCHOA, 2570.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-base-albaroc-galena-01098428',
+    nota: 'BALDOSA PORCELÁNICA BASE ALBAROC GALENA · artículo 01-09-8428 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 447.06 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-170', PROV_OCHOA, 3297.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-base-albaroc-boal-01098237',
+    nota: 'BALDOSA PORCELÁNICA BASE ALBAROC BOAL · artículo 01-09-8237 · ref. 14.5X1205.55MT/2 · marca EXAGRES. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 594.06 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-170', PROV_OCHOA, 3991.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-marble-crema-marfil-01096897',
+    nota: 'BALDOSA CERAMICA MARBLE CREMA MARFIL · artículo 01-09-6897 · ref. 15X120 · marca EXAGRES. La tienda cotiza por pieza; van 6.67 piezas por m² según su propia referencia (RD$ 598.48 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-170', PROV_OCHOA, 2578.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-milan-gris-01098436',
+    nota: 'BALDOSA CERÁMICA MILAN GRIS · artículo 01-09-8436 · ref. 14.5X120 · marca EXAGRES. La tienda cotiza por pieza; van 5.75 piezas por m² según su propia referencia (RD$ 448.47 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-171', PROV_OCHOA, 1980.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-uppsala-indigo-01097213',
+    nota: 'BALDOSA CERÁMICA UPPSALA INDIGO · artículo 01-09-7213 · ref. 20X1204.21MT · marca UNDEFASA. La tienda cotiza por pieza; van 4.21 piezas por m² según su propia referencia (RD$ 470.49 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-171', PROV_OCHOA, 1658, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rigato-sabbia-01097746',
+    nota: 'BALDOSA CERÁMICA RIGATO SABBIA · artículo 01-09-7746 · ref. 20X1204.00MT/2 · marca SALONI. La tienda cotiza por pieza; van 4 piezas por m² según su propia referencia (RD$ 414.5 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-171', PROV_CERARTE, 1314.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-chateau-20x120-ret',
     itbis: false,
     nota: 'PORCELANATO CHATEAU 20X120 RET · artículo CERA-20858 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1915.49, {
+  c('MAT-08-171', PROV_CERARTE, 1915.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-ducale-20x120-caj05-ret',
     itbis: false,
     nota: 'PORCELANATO DUCALE 20X120 CAJ05 RET · artículo CERA-33445 · ref. 20X120 · marca BALDOCER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1775.45, {
+  c('MAT-08-171', PROV_CERARTE, 1775.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-ducale-20x120-caj05-ret',
     itbis: false,
     nota: 'PORCELANATO DUCALE 20X120 CAJ05 RET · artículo CERA-33529 · ref. 20X120 · marca BALDOCER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1804.33, {
+  c('MAT-08-171', PROV_CERARTE, 1804.33, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-milena-20x120-rt',
     itbis: false,
     nota: 'PORC. XS MILENA 20X120 RT · artículo CERA-34472 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1821.38, {
+  c('MAT-08-171', PROV_CERARTE, 1821.38, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-milena-20x120-rt',
     itbis: false,
     nota: 'PORC. XS MILENA 20X120 RT · artículo CERA-35496 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1802.7, {
+  c('MAT-08-171', PROV_CERARTE, 1802.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-milena-20x120-rt',
     itbis: false,
     nota: 'PORC. XS MILENA 20X120 RT · artículo CERA-34477 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1835.85, {
+  c('MAT-08-171', PROV_CERARTE, 1835.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-milena-20x120-rt',
     itbis: false,
     nota: 'PORC. XS MILENA 20X120 RT · artículo CERA-34949 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1895.7, {
+  c('MAT-08-171', PROV_CERARTE, 1895.7, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-ariz-20x120-rt',
     itbis: false,
     nota: 'PORC. XS ARIZ 20X120 RT · artículo CERA-34736 · ref. 20X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1119.19, {
+  c('MAT-08-171', PROV_CERARTE, 1119.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-amazon-20x120-rt',
     itbis: false,
     nota: 'PORC. AMAZON 20X120 RT · artículo CERA-35418 · ref. 20X120 · marca VOGUE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1437.03, {
+  c('MAT-08-171', PROV_CERARTE, 1437.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-mood-wood-larice-20x120-rt',
     itbis: false,
     nota: 'PORC. MOOD WOOD LARICE 20X120 RT · artículo CERA-36704 · ref. 20X120 · marca VOGUE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1577.77, {
+  c('MAT-08-171', PROV_CERARTE, 1577.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-stowe-20x120',
     itbis: false,
     nota: 'PORC. STOWE 20X120 · artículo CERA-36831 · ref. 20X120 · marca CIFRE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-170', PROV_CERARTE, 1084.19, {
+  c('MAT-08-171', PROV_CERARTE, 1084.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-arles-20x120',
     itbis: false,
     nota: 'PORC. ARLES 20X120 · artículo CERA-36835 · ref. 20X120 · marca GRIFINE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-171', PROV_OCHOA, 3697.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-davos-iris-01097563',
-    nota: 'Baldosa Cerámica Davos Iris · artículo 01-09-7563 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1760.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-172', PROV_OCHOA, 2072.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vector-crema-miel-01098502',
+    nota: 'BALDOSA CERÁMICA VECTOR CREMA MIEL · artículo 01-09-8502 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 996.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 822.49, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-statuario-smoke-01098864',
-    nota: 'Baldosa Porcelánica Statuario Smoke · artículo 01-09-8864 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.01 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-172', PROV_OCHOA, 3697.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-davos-iris-01097563',
+    nota: 'BALDOSA CERÁMICA DAVOS IRIS · artículo 01-09-7563 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1760.78 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 826.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-panthon-statuario-01098703',
-    nota: 'Baldosa Porcelánica Panthon Statuario · artículo 01-09-8703 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 598.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-172', PROV_OCHOA, 2202.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vector-marron-cacao-01097653',
+    nota: 'BALDOSA CERÁMICA VECTOR MARRÓN CACAO · artículo 01-09-7653 · ref. 40X1202.10MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.1 piezas por m² según su propia referencia (RD$ 1048.88 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 819.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-semond-light-01098862',
-    nota: 'Baldosa Porcelánica Semond Light · artículo 01-09-8862 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-172', PROV_OCHOA, 1884.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-vary-dorex-iris-01095297',
+    nota: 'BALDOSA CERÁMICA VARY DOREX IRIS · artículo 01-09-5297 · ref. 40X1202.08MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.08 piezas por m² según su propia referencia (RD$ 906.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 841.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-piatra-grey-light-01098706',
-    nota: 'Baldosa Porcelánica Piatra Grey Light · artículo 01-09-8706 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 609.88 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 822.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-statuario-smoke-01098864',
+    nota: 'BALDOSA PORCELÁNICA STATUARIO SMOKE · artículo 01-09-8864 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 596.01 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2212.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pisa-gold-01098342',
-    nota: 'Baldosa Cerámica Pisa Gold · artículo 01-09-8342 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1603.42 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 826.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-panthon-statuario-01098703',
+    nota: 'BALDOSA PORCELÁNICA PANTHON STATUARIO · artículo 01-09-8703 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 598.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2118.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cr-noor-white-brillo-01098625',
-    nota: 'Cr. Noor White Brillo · artículo 01-09-8625 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1535.36 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 819.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-semond-light-01098862',
+    nota: 'BALDOSA PORCELÁNICA SEMOND LIGHT · artículo 01-09-8862 · ref. 60X1201.38MT/2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 594.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1323.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-white-01099109',
-    nota: 'Baldosa Cerámica Grand Canyon White · artículo 01-09-9109 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 959.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 841.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-piatra-grey-light-01098706',
+    nota: 'BALDOSA PORCELÁNICA PIATRA GREY LIGHT · artículo 01-09-8706 · ref. 60X1201.38MT2 · marca LIVENZA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 609.88 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1700.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-palma-blanco-01097874',
-    nota: 'Baldosa At Palma Blanco · artículo 01-09-7874 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1232.03 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2212.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pisa-gold-01098342',
+    nota: 'BALDOSA CERÁMICA PISA GOLD · artículo 01-09-8342 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1603.42 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1624.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portofino-blanco-01099147',
-    nota: 'Baldosa Porcelánica Portofino Blanco · artículo 01-09-9147 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1177.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2118.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/cr-noor-white-brillo-01098625',
+    nota: 'CR. NOOR WHITE BRILLO · artículo 01-09-8625 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1535.36 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2814.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-laurants-brown-01098130',
-    nota: 'Baldosa Cerámica Lux Laurants Brown · artículo 01-09-8130 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2039.41 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1323.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-white-01099109',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON WHITE · artículo 01-09-9109 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 959.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2282.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-berry-01098624',
-    nota: 'Baldosa Cerámica Lux Noor Berry · artículo 01-09-8624 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1654.01 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1624.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portofino-blanco-01099147',
+    nota: 'BALDOSA PORCELÁNICA PORTOFINO BLANCO · artículo 01-09-9147 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1177.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2152.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01098884',
-    nota: 'Baldosa Cerámica Desert Natural · artículo 01-09-8884 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1559.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2814.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-laurants-brown-01098130',
+    nota: 'BALDOSA CERÁMICA LUX LAURANTS BROWN · artículo 01-09-8130 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2039.41 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1409.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-sand-01099111',
-    nota: 'Baldosa Cerámica Grand Canyon Sand · artículo 01-09-9111 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1021.49 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2282.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-berry-01098624',
+    nota: 'BALDOSA CERÁMICA LUX NOOR BERRY · artículo 01-09-8624 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1654.01 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1955.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01098396',
-    nota: 'Baldosa Cerámica Desert Natural · artículo 01-09-8396 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1416.89 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2152.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01098884',
+    nota: 'BALDOSA CERÁMICA DESERT NATURAL · artículo 01-09-8884 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1559.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2878.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-apple-01098613',
-    nota: 'Baldosa Cerámica Lux Noor Apple · artículo 01-09-8613 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2085.6 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1409.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-sand-01099111',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON SAND · artículo 01-09-9111 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1021.49 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1337.74, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-silver-01099110',
-    nota: 'Baldosa Cerámica Grand Canyon Silver · artículo 01-09-9110 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 969.38 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1955.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-desert-natural-01098396',
+    nota: 'BALDOSA CERÁMICA DESERT NATURAL · artículo 01-09-8396 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1416.89 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2096.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lincoln-white-01098241',
-    nota: 'Baldosa Cerámica Lincoln White · artículo 01-09-8241 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1519.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2737.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toscana-gris-01098561',
+    nota: 'BALDOSA CERÁMICA TOSCANA GRIS · artículo 01-09-8561 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1983.72 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1423.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-blanco-01098607',
-    nota: 'Baldosa Cerámica Essenza Blanco · artículo 01-09-8607 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1031.43 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2878.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-apple-01098613',
+    nota: 'BALDOSA CERÁMICA LUX NOOR APPLE · artículo 01-09-8613 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2085.6 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1672.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portofino-gold-01099145',
-    nota: 'Baldosa Porcelánica Portofino Gold · artículo 01-09-9145 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1212.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1337.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-grand-canyon-silver-01099110',
+    nota: 'BALDOSA CERÁMICA GRAND CANYON SILVER · artículo 01-09-9110 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 969.38 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1610.52, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-nero-01099039',
-    nota: 'Baldosa Cerámica Essenza Nero · artículo 01-09-9039 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1167.04 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2096.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lincoln-white-01098241',
+    nota: 'BALDOSA CERÁMICA LINCOLN WHITE · artículo 01-09-8241 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1519.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1907.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/arabescatto-pure-blanco-pw-r-01099068',
-    nota: 'Arabescatto Pure Blanco Pw R · artículo 01-09-9068 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1381.93 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1423.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-blanco-01098607',
+    nota: 'BALDOSA CERÁMICA ESSENZA BLANCO · artículo 01-09-8607 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1031.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1903.85, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-amazonita-verde-01099067',
-    nota: 'Baldosa Amazonita Verde · artículo 01-09-9067 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1379.6 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1903.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travertino-beige-01098928',
+    peso: 2,
+    nota: 'BALDOSA CERÁMICA TRAVERTINO BEIGE · artículo 01-09-8928 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1379.6 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1801.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wells-ash-01098616',
-    nota: 'Baldosa Cerámica Wells Ash · artículo 01-09-8616 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1305.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1672.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-portofino-gold-01099145',
+    nota: 'BALDOSA PORCELÁNICA PORTOFINO GOLD · artículo 01-09-9145 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1212.06 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2873.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-peach-01098614',
-    nota: 'Baldosa Cerámica Lux Noor Peach · artículo 01-09-8614 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2082.1 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1610.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-nero-01099039',
+    nota: 'BALDOSA CERÁMICA ESSENZA NERO · artículo 01-09-9039 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1167.04 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1514.84, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-at-elite-01097872',
-    nota: 'Baldosa Perla At Elite · artículo 01-09-7872 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1097.71 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1907.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/arabescatto-pure-blanco-pw-r-01099068',
+    nota: 'ARABESCATTO PURE BLANCO PW R · artículo 01-09-9068 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1381.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2458.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-thasos-01098297',
-    nota: 'Baldosa Cerámica Blanco Thasos · artículo 01-09-8297 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1781.48 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1801.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wells-ash-01098616',
+    nota: 'BALDOSA CERÁMICA WELLS ASH · artículo 01-09-8616 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1305.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1455.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-pompei-blanco-01097875',
-    nota: 'Baldosa At Pompei Blanco · artículo 01-09-7875 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1054.66 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2873.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-noor-peach-01098614',
+    nota: 'BALDOSA CERÁMICA LUX NOOR PEACH · artículo 01-09-8614 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2082.1 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2480.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alloy-mint-01098623',
-    nota: 'Baldosa Alloy Mint · artículo 01-09-8623 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1797.29 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2244.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-byblos-ceniza-01098262',
+    nota: 'BALDOSA CERÁMICA BYBLOS CENIZA · artículo 01-09-8262 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1626.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2144.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alloy-azzurro-mate-01098622',
-    nota: 'Baldosa Alloy Azzurro Mate · artículo 01-09-8622 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1553.99 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2458.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-thasos-01098297',
+    nota: 'BALDOSA CERÁMICA BLANCO THASOS · artículo 01-09-8297 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1781.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2841.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-grotta-oro-01098437',
-    nota: 'Baldosa Cerámica Lux Grotta Oro · artículo 01-09-8437 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2058.75 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2480.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alloy-mint-01098623',
+    nota: 'BALDOSA ALLOY MINT · artículo 01-09-8623 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1797.29 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1593.49, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-apulia-gold-01098470',
-    nota: 'Baldosa Cerámica Apulia Gold · artículo 01-09-8470 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1154.7 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2144.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alloy-azzurro-mate-01098622',
+    nota: 'BALDOSA ALLOY AZZURRO MATE · artículo 01-09-8622 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1553.99 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2299.59, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-front-blanco-01098380',
-    nota: 'Baldosa Porcelánica Front Blanco · artículo 01-09-8380 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1666.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2841.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lux-grotta-oro-01098437',
+    nota: 'BALDOSA CERÁMICA LUX GROTTA ORO · artículo 01-09-8437 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 2058.75 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 2332.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-potomac-blanco-01098324',
-    nota: 'Baldosa Porcelánica Potomac Blanco · artículo 01-09-8324 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1690.2 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2019.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-cavallina-marfil-soft-01098827',
+    nota: 'BALDOSA CERÁMICA CAVALLINA MARFIL SOFT · artículo 01-09-8827 · ref. 60X1201.38MT2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1463.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1987.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wells-cream-01098615',
-    nota: 'Baldosa Cerámica Wells Cream · artículo 01-09-8615 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1440.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 1593.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-apulia-gold-01098470',
+    nota: 'BALDOSA CERÁMICA APULIA GOLD · artículo 01-09-8470 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1154.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 1768.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-arabescato-pwr-01098538',
-    nota: 'Baldosa Arabescato Pwr · artículo 01-09-8538 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1281.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2299.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-front-blanco-01098380',
+    nota: 'BALDOSA PORCELÁNICA FRONT BLANCO · artículo 01-09-8380 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1666.37 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_OCHOA, 908.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-statuario-volbo-01098960',
-    nota: 'Baldosa Porcelánica Statuario Volbo · artículo 01-09-8960 · ref. 60X1201.38MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 658.64 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-173', PROV_OCHOA, 2332.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-potomac-blanco-01098324',
+    nota: 'BALDOSA PORCELÁNICA POTOMAC BLANCO · artículo 01-09-8324 · ref. 60X1201.38MT/2 · marca HALCON. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1690.2 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-172', PROV_CERARTE, 2220.77, {
+  c('MAT-08-173', PROV_OCHOA, 1987.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-wells-cream-01098615',
+    nota: 'BALDOSA CERÁMICA WELLS CREAM · artículo 01-09-8615 · ref. 60X1201.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1440.26 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 1768.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-arabescato-pwr-01098538',
+    nota: 'BALDOSA ARABESCATO PWR · artículo 01-09-8538 · ref. 60X1201.38MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1281.74 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 1514.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-at-elite-01097872',
+    nota: 'BALDOSA PERLA AT ELITE · artículo 01-09-7872 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1097.71 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 1455.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-pompei-blanco-01097875',
+    nota: 'BALDOSA AT POMPEI BLANCO · artículo 01-09-7875 · ref. 60X1201.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1054.66 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 2155.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toscana-gris-01098892',
+    nota: 'BALDOSA CERÁMICA TOSCANA GRIS · artículo 01-09-8892 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1561.99 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 2181.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-novella-dark-green-01098890',
+    nota: 'BALDOSA CERÁMICA NOVELLA DARK GREEN · artículo 01-09-8890 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1580.72 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 2119.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-delight-blanco-anticato-01098893',
+    nota: 'BALDOSA CERÁMICA DELIGHT BLANCO ANTICATO · artículo 01-09-8893 · ref. 60X1201.38MT/2 · marca SALONI. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 1536.03 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_OCHOA, 908.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-statuario-volbo-01098960',
+    nota: 'BALDOSA PORCELÁNICA STATUARIO VOLBO · artículo 01-09-8960 · ref. 60X1201.38MT/2 · marca MAJOLICA. La tienda cotiza por pieza; van 1.38 piezas por m² según su propia referencia (RD$ 658.64 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-173', PROV_CERARTE, 2220.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-folk-60x120-rt',
     itbis: false,
     nota: 'PORCELANATO FOLK 60X120 RT · artículo CERA-33719 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1514.22, {
+  c('MAT-08-173', PROV_CERARTE, 1514.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-folk-60x120-rt',
     itbis: false,
     nota: 'PORCELANATO FOLK 60X120 RT · artículo CERA-33721 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2440.53, {
+  c('MAT-08-173', PROV_CERARTE, 2440.53, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-ms-barcelona-60x120-rt',
     itbis: false,
     nota: 'PORCELANATO MS. BARCELONA 60X120 RT · artículo CERA-35859 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2090, {
+  c('MAT-08-173', PROV_CERARTE, 2090, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-bianco-di-lucca-60x120',
     itbis: false,
     nota: 'LEVIGATO BIANCO DI LUCCA 60X120 · artículo CERA-33961 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1982.01, {
+  c('MAT-08-173', PROV_CERARTE, 1982.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-xs-terma-white-60x120-rt',
     itbis: false,
     nota: 'PORC. XS TERMA WHITE 60X120 RT · artículo CERA-34537 · ref. 60X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2082.93, {
+  c('MAT-08-173', PROV_CERARTE, 2082.93, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-ess-rlv-bercy-60x120-rt',
     itbis: false,
     nota: 'PORC. ESS. RLV. BERCY 60X120 RT · artículo CERA-34546 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1872.28, {
+  c('MAT-08-173', PROV_CERARTE, 1872.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-ess-dec-bercy-60x120-rt',
     itbis: false,
     nota: 'PORC. ESS. DEC. BERCY 60X120 RT · artículo CERA-34548 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1780.84, {
+  c('MAT-08-173', PROV_CERARTE, 1780.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-woody-60x120-rt',
     itbis: false,
     nota: 'PORC. WOODY 60X120 RT · artículo CERA-35406 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1274.63, {
+  c('MAT-08-173', PROV_CERARTE, 1274.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-ark-60x120-rt-2',
     itbis: false,
     peso: 2,
     nota: 'PORC. ARK 60X120 RT · artículo CERA-35449 · ref. 60X120 · marca TILE SPACE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2181.48, {
+  c('MAT-08-173', PROV_CERARTE, 2181.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-sun-60x120-rt',
     itbis: false,
     nota: 'PORC. PRIS. SUN 60X120 RT · artículo CERA-35987 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2171.65, {
+  c('MAT-08-173', PROV_CERARTE, 2171.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-sun-60x120-rt',
     itbis: false,
     nota: 'PORC. PRIS. SUN 60X120 RT · artículo CERA-35986 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2849.37, {
+  c('MAT-08-173', PROV_CERARTE, 2849.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-rlv-sun-60x120-rt',
     itbis: false,
     nota: 'PORC. PRIS. RLV SUN 60X120 RT · artículo CERA-35852 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2947.47, {
+  c('MAT-08-173', PROV_CERARTE, 2947.47, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-rlv-sun-60x120-rt',
     itbis: false,
     nota: 'PORC. PRIS. RLV SUN 60X120 RT · artículo CERA-35851 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2832.43, {
+  c('MAT-08-173', PROV_CERARTE, 2832.43, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-pris-rlv-mind-60x120-rt',
     itbis: false,
     nota: 'PORC. PRIS. RLV MIND 60X120 RT · artículo CERA-35855 · ref. 60X120 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1555.08, {
+  c('MAT-08-173', PROV_CERARTE, 1555.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-cosmopolitan-soft-60x120',
     itbis: false,
     nota: 'PORCELANATO COSMOPOLITAN SOFT 60X120 · artículo CERA-36619 · ref. 60X120 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 909.23, {
+  c('MAT-08-173', PROV_CERARTE, 909.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/semi-gres-paladio-62x119-rt',
     itbis: false,
     nota: 'SEMI-GRES PALADIO 62X119 RT · artículo CERA-36638 · ref. 60X120 · marca LUME CERAMICA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2255.84, {
+  c('MAT-08-173', PROV_CERARTE, 2255.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-zesty-st-60x120-rt-012819',
     itbis: false,
     nota: 'PORCELANATO ZESTY ST 60X120 RT · artículo CERA-36643 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1980.94, {
+  c('MAT-08-173', PROV_CERARTE, 1980.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-zesty-st-60x120-rt-012819',
     itbis: false,
     nota: 'PORCELANATO ZESTY ST 60X120 RT · artículo CERA-36642 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2535.73, {
+  c('MAT-08-173', PROV_CERARTE, 2535.73, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-chiaro-di-versilia-60x120-rt-012821',
     itbis: false,
     nota: 'PORCELANATO CHIARO DI VERSILIA 60X120 RT · artículo CERA-36646 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1769.45, {
+  c('MAT-08-173', PROV_CERARTE, 1769.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-lagoon-63x108-rt-012823',
     itbis: false,
     nota: 'PORCELANATO LAGOON 63X108 RT · artículo CERA-36648 · ref. 60X120 · marca VILLAGRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2571.6, {
+  c('MAT-08-173', PROV_CERARTE, 2571.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-sintese-platina-brutalista-nat-60x120-013011',
     itbis: false,
     nota: 'PORCELANATO SINTESE PLATINA BRUTALISTA NAT 60X120 RT · artículo CERA-36743 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1275.45, {
+  c('MAT-08-173', PROV_CERARTE, 1275.45, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bona-dea-60x120',
     itbis: false,
     nota: 'PORCELANATO BONA DEA 60X120 · artículo CERA-36762 · ref. 60X120 · marca TILE SPACE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 1279.81, {
+  c('MAT-08-173', PROV_CERARTE, 1279.81, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bona-dea-60x120',
     itbis: false,
     nota: 'PORCELANATO BONA DEA 60X120 · artículo CERA-36761 · ref. 60X120 · marca TILE SPACE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2095.67, {
+  c('MAT-08-173', PROV_CERARTE, 2095.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-flavia-rigata-duna-60x120',
     itbis: false,
     nota: 'PORCELANATO FLAVIA RIGATA DUNA 60X120 · artículo CERA-36796 · ref. 60X120 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-172', PROV_CERARTE, 2196.69, {
+  c('MAT-08-173', PROV_CERARTE, 2196.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-mocaccino-da-torino',
     itbis: false,
     nota: 'PORC. MOCACCINO DA TORINO · artículo CERA-36836 · ref. 60X120 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-173', PROV_CERARTE, 2228.77, {
+  c('MAT-08-174', PROV_CERARTE, 2228.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-origem-15x15',
     itbis: false,
     nota: 'PORC. ORIGEM 15X15 · artículo CERA-36010 · ref. 15x15 · marca PORTINARRI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-174', PROV_CERARTE, 2039.29, {
+  c('MAT-08-175', PROV_CERARTE, 2039.29, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tiffany-805x140-rt',
     itbis: false,
     nota: 'PORCELANATO TIFFANY 80.5X140 RT · artículo CERA-36649 · ref. 80X160 · marca VILLAGRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-175', PROV_CERARTE, 4953.11, {
+  c('MAT-08-176', PROV_CERARTE, 4953.11, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-nature-mood-80x180-rt',
     itbis: false,
     nota: 'PORC. NATURE MOOD 80X180 RT · artículo CERA-34441 · ref. 80X180 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-175', PROV_CERARTE, 4724.25, {
+  c('MAT-08-176', PROV_CERARTE, 4724.25, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-nature-mood-80x180-rt',
     itbis: false,
     nota: 'PORC. NATURE MOOD 80X180 RT · artículo CERA-34440 · ref. 80X180 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-176', PROV_OCHOA, 3376.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pisa-gold-01097992',
-    nota: 'Baldosa Cerámica Pisa Gold · artículo 01-09-7992 · ref. 90X1800.61MT/2 · marca PAMESA. La tienda cotiza por pieza; van 0.61 piezas por m² según su propia referencia (RD$ 5535.51 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-177', PROV_OCHOA, 3376.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-pisa-gold-01097992',
+    nota: 'BALDOSA CERÁMICA PISA GOLD · artículo 01-09-7992 · ref. 90X1800.61MT/2 · marca PAMESA. La tienda cotiza por pieza; van 0.61 piezas por m² según su propia referencia (RD$ 5535.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-177', PROV_CERARTE, 2075.61, {
+  c('MAT-08-178', PROV_CERARTE, 2075.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-hex-pris-blanco-198x228',
     itbis: false,
     nota: 'PORC. HEX. PRIS. BLANCO 19.8X22.8 · artículo CERA-35358 · ref. 20X23 · marca PRISSMACER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-178', PROV_CERARTE, 6001.66, {
+  c('MAT-08-179', PROV_CERARTE, 6001.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-illusion-120x240-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO EOTILE ILLUSION 120X240 6MM RET · artículo CERA-31672 · ref. 120X240 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-178', PROV_CERARTE, 5783.22, {
+  c('MAT-08-179', PROV_CERARTE, 5783.22, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-symphonie-120x240-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO ETOILE SYMPHONIE 120X240 6MM RET · artículo CERA-31693 · ref. 120X240 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-178', PROV_CERARTE, 7790.61, {
+  c('MAT-08-179', PROV_CERARTE, 7790.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-policroma-cipollino-120x240-6mm',
     itbis: false,
     nota: 'PORCELANATO POLICROMA CIPOLLINO 120X240 6MM · artículo CERA-33137 · ref. 120X240 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-178', PROV_CERARTE, 6242.18, {
+  c('MAT-08-179', PROV_CERARTE, 6242.18, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-crem-120x240-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO ETOILE CREM 120X240 6MM RET · artículo CERA-33599 · ref. 120X240 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-179', PROV_CERARTE, 4879.76, {
+  c('MAT-08-180', PROV_CERARTE, 4879.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bianco-di-lucca-11985x26985-x-6mm',
     itbis: false,
     nota: 'PORCELANATO BIANCO DI LUCCA 119.85X269.85 X 6MM · artículo CERA-33960 · ref. 120X270 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-180', PROV_CERARTE, 6591.03, {
+  c('MAT-08-181', PROV_CERARTE, 6591.03, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-renoir-120x280-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO ETOILE RENOIR 120X280 6MM RET · artículo CERA-31671 · ref. 120X280 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-180', PROV_CERARTE, 6168.37, {
+  c('MAT-08-181', PROV_CERARTE, 6168.37, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bw-breach-120x280-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO B&W BREACH 120X280 6MM RET · artículo CERA-31694 · ref. 120X280 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-180', PROV_CERARTE, 5799.85, {
+  c('MAT-08-181', PROV_CERARTE, 5799.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-bw-flow-120x280-6mm-ret',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO B&W FLOW 120X280 6MM RET · artículo CERA-31689 · ref. 120X280 · marca FLORIM. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-180', PROV_CERARTE, 6244.01, {
+  c('MAT-08-181', PROV_CERARTE, 6244.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-etoile-gris-120x280-6mm-ret',
     itbis: false,
     nota: 'PORCELANATO ETOILE GRIS 120X280 6MM RET · artículo CERA-31691 · ref. 120X280 · marca FLORIM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-181', PROV_CERARTE, 2402.66, {
+  c('MAT-08-182', PROV_CERARTE, 2402.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-origo-8x315',
     itbis: false,
     peso: 3,
     nota: 'PORCELANATO ORIGO 8X31.5 · artículo CERA-36428 · ref. 10X30 · marca VIVES AZULEJOS Y GRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-181', PROV_CERARTE, 2709.62, {
+  c('MAT-08-182', PROV_CERARTE, 2709.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-origo-8x315',
     itbis: false,
     nota: 'PORCELANATO ORIGO 8X31.5 · artículo CERA-36427 · ref. 10X30 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-181', PROV_CERARTE, 2679.06, {
+  c('MAT-08-182', PROV_CERARTE, 2679.06, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-origo-8x315',
     itbis: false,
     nota: 'PORCELANATO ORIGO 8X31.5 · artículo CERA-36426 · ref. 10X30 · marca VIVES AZULEJOS Y GRES. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-182', PROV_OCHOA, 812.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-urbana-crema-01097205',
-    nota: 'Baldosa Urbana Crema · artículo 01-09-7205 · ref. 31X3110.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 81.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-183', PROV_OCHOA, 812.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-urbana-crema-01097205',
+    nota: 'BALDOSA URBANA CREMA · artículo 01-09-7205 · ref. 31X3110.00MT/2 · marca PAMESA. La tienda cotiza por pieza; van 10 piezas por m² según su propia referencia (RD$ 81.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-182', PROV_CERARTE, 2584.89, {
+  c('MAT-08-183', PROV_CERARTE, 2584.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-circle-309x309',
     itbis: false,
     nota: 'PORCELANATO CIRCLE 30.9X30.9 · artículo CERA-36769 · ref. 30X30 · marca REALONDA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-182', PROV_CERARTE, 2429.69, {
+  c('MAT-08-183', PROV_CERARTE, 2429.69, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-circle-309x309',
     itbis: false,
     nota: 'PORCELANATO CIRCLE 30.9X30.9 · artículo CERA-36770 · ref. 30X30 · marca REALONDA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-182', PROV_CERARTE, 2244.92, {
+  c('MAT-08-183', PROV_CERARTE, 2244.92, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porce-venus-33x285',
     itbis: false,
     peso: 4,
     nota: 'PORCE. VENUS 33X28.5 · artículo CERA-36774 · ref. 30X30 · marca REALONDA. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-182', PROV_CERARTE, 2244.94, {
+  c('MAT-08-183', PROV_CERARTE, 2244.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-scale-30-7x30-7-013060',
     itbis: false,
     nota: 'PORC SCALE 30.7X30.7 · artículo CERA-36786 · ref. 30X30 · marca REALONDA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-183', PROV_CERARTE, 6154.42, {
+  c('MAT-08-184', PROV_CERARTE, 6154.42, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-ossido-100x300-5mm',
     itbis: false,
     nota: 'PORCELANATO OSSIDO 100X300 5MM · artículo CERA-31572 · ref. 100X300 · marca ITALCRAFTS. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-184', PROV_CERARTE, 7890.62, {
+  c('MAT-08-185', PROV_CERARTE, 7890.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-nebula-150x300-6mm',
     itbis: false,
     peso: 2,
     nota: 'LEVIGATO NEBULA 150X300 6MM · artículo CERA-31394 · ref. 150X300 · marca GRANITI FIANDRE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-184', PROV_CERARTE, 6081.64, {
+  c('MAT-08-185', PROV_CERARTE, 6081.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-eminent-150x300',
     itbis: false,
     nota: 'PORCELANATO EMINENT 150X300 · artículo CERA-31406 · ref. 150X300 · marca GRANITI FIANDRE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-184', PROV_CERARTE, 7890.61, {
+  c('MAT-08-185', PROV_CERARTE, 7890.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-sahara-noir-150x300',
     itbis: false,
     nota: 'PORCELANATO SAHARA NOIR 150X300 · artículo CERA-31404 · ref. 150X300 · marca GRANITI FIANDRE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-184', PROV_CERARTE, 8038.49, {
+  c('MAT-08-185', PROV_CERARTE, 8038.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-maximum-calacatta-150x300',
     itbis: false,
     nota: 'LEVIGATO MAXIMUM CALACATTA 150X300 · artículo CERA-31409 · ref. 150X300 · marca GRANITI FIANDRE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 3496.15, {
+  c('MAT-08-186', PROV_CERARTE, 3496.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-calce-grigio-162x324-5mm',
     itbis: false,
     nota: 'PORCELANATO CALCE GRIGIO 162X324 5MM · artículo CERA-31574 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 14936.18, {
+  c('MAT-08-186', PROV_CERARTE, 14936.18, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-naturali-statuario-venato-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO NATURALI STATUARIO VENATO 162X324 12MM · artículo CERA-31589 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 14936.16, {
+  c('MAT-08-186', PROV_CERARTE, 14936.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-naturali-noir-desir-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO NATURALI 162X324 12MM · artículo CERA-31590 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 12900, {
+  c('MAT-08-186', PROV_CERARTE, 12900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-collection-assoluto-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO COLLECTION ASSOLUTO 162X324 · artículo CERA-31821 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 11741.16, {
+  c('MAT-08-186', PROV_CERARTE, 11741.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-collection-assoluto-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO COLLECTION ASSOLUTO 162X324 · artículo CERA-31768 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 16517.64, {
+  c('MAT-08-186', PROV_CERARTE, 16517.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-naturali-calacatta-venato-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO NATURALI CALACATTA VENATO 162X324 12MM · artículo CERA-31822 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 10949.04, {
+  c('MAT-08-186', PROV_CERARTE, 10949.04, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-i-naturali-arabescato-162x324-12mm',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO I NATURALI ARABESCATO 162X324 12MM · artículo CERA-31763 · ref. 162X324 · marca LAMINAM. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 12535.87, {
+  c('MAT-08-186', PROV_CERARTE, 12535.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-i-naturali-arabescato-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO I NATURALI ARABESCATO 162X324 12MM · artículo CERA-31762 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-185', PROV_CERARTE, 12535.9, {
+  c('MAT-08-186', PROV_CERARTE, 12535.9, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-naturali-emperador-extra-162x324-12mm',
     itbis: false,
     nota: 'PORCELANATO NATURALI EMPERADOR EXTRA 162X324 12MM · artículo CERA-31766 · ref. 162X324 · marca LAMINAM. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-186', PROV_OCHOA, 857.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-portofino-blanco-01098090',
-    nota: 'Baldosa At Portofino Blanco · artículo 01-09-8090 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 174.03 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 857.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-portofino-blanco-01098090',
+    nota: 'BALDOSA AT PORTOFINO BLANCO · artículo 01-09-8090 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 174.03 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-186', PROV_OCHOA, 717.22, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crema-marfil-01095094',
-    nota: 'Baldosa Cerámica Crema Marfil · artículo 01-09-5094 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.48 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 710.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-01096893',
+    nota: 'BALDOSA CERÁMICA BLANCO · artículo 01-09-6893 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-186', PROV_OCHOA, 710.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treviso-crema-01098139',
-    nota: 'Baldosa Cerámica Treviso Crema · artículo 01-09-8139 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 717.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crema-marfil-01095094',
+    nota: 'BALDOSA CERÁMICA CREMA MARFIL · artículo 01-09-5094 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-186', PROV_OCHOA, 811.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-alpha-marfil-mate-01098088',
-    nota: 'At Alpha Marfil Mate · artículo 01-09-8088 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.61 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 719.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treviso-ceniza-01098140',
+    nota: 'BALDOSA CERÁMICA TREVISO CENIZA · artículo 01-09-8140 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 145.93 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-187', PROV_OCHOA, 839.97, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-portofino-blanco-01098117',
-    nota: 'Baldosa At Portofino Blanco · artículo 01-09-8117 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 710.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-treviso-crema-01098139',
+    nota: 'BALDOSA CERÁMICA TREVISO CREMA · artículo 01-09-8139 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 144.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-188', PROV_OCHOA, 2571.44, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/arcadia-marfil-01096688',
-    nota: 'Arcadia Marfil · artículo 01-09-6688 · ref. 58.5X58.52.92MT · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 880.63 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 805.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-urban-blanco-01098084',
+    nota: 'BALDOSA CERÁMICA URBAN BLANCO · artículo 01-09-8084 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 163.43 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-189', PROV_OCHOA, 482.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dayton-classic-01098763',
-    nota: 'Baldosa Cerámica Dayton Classic · artículo 01-09-8763 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 58.58 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-187', PROV_OCHOA, 811.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-alpha-marfil-mate-01098088',
+    nota: 'AT ALPHA MARFIL MATE · artículo 01-09-8088 · ref. 45X454.93MT/2 · marca PAMESA. La tienda cotiza por pieza; van 4.93 piezas por m² según su propia referencia (RD$ 164.61 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1250.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-01098202',
-    nota: 'Baldosa Beige Ardesia · artículo 01-09-8202 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-188', PROV_OCHOA, 839.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-portofino-blanco-01098117',
+    nota: 'BALDOSA AT PORTOFINO BLANCO · artículo 01-09-8117 · ref. 33.3X555.43MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.43 piezas por m² según su propia referencia (RD$ 154.69 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1258.19, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-01098181',
-    nota: 'Baldosa Pizarra Ardesia · artículo 01-09-8181 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 226.7 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-188', PROV_OCHOA, 885.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-brillo-01099122',
+    nota: 'BALDOSA CERÁMICA BLANCO BRILLO · artículo 01-09-9122 · ref. 33X555.52MT/2 · marca HALCON. La tienda cotiza por pieza; van 5.52 piezas por m² según su propia referencia (RD$ 160.44 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1203.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-01098184',
-    nota: 'Baldosa Perla Ardesia · artículo 01-09-8184 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 216.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-189', PROV_OCHOA, 2571.44, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/arcadia-marfil-01096688',
+    nota: 'ARCADIA MARFIL · artículo 01-09-6688 · ref. 58.5X58.52.92MT · marca SALONI. La tienda cotiza por pieza; van 2.92 piezas por m² según su propia referencia (RD$ 880.63 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1426.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnia-beige-01099171',
-    nota: 'Baldosa Cerámica Omnia Beige · artículo 01-09-9171 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 257 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-190', PROV_OCHOA, 482.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dayton-classic-01098763',
+    nota: 'BALDOSA CERÁMICA DAYTON CLASSIC · artículo 01-09-8763 · ref. 20X608.23MT2 · marca CECAFI. La tienda cotiza por pieza; van 8.23 piezas por m² según su propia referencia (RD$ 58.58 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1101.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dandy-blanco-01098030',
-    nota: 'Baldosa Cerámica Dandy Blanco · artículo 01-09-8030 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 208.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-190', PROV_OCHOA, 757.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-toronto-perla-01098142',
+    nota: 'BALDOSA CERÁMICA TORONTO PERLA · artículo 01-09-8142 · ref. 20X608.33MT/2 · marca HISPANIA. La tienda cotiza por pieza; van 8.33 piezas por m² según su propia referencia (RD$ 90.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1235.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rialto-ivory-01098003',
-    nota: 'Baldosa Cerámica Rialto Ivory · artículo 01-09-8003 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 222.56 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1250.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-01098202',
+    nota: 'BALDOSA BEIGE ARDESIA · artículo 01-09-8202 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 225.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1218.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-blomma-01099078',
-    nota: 'Baldosa Cerámica Lagom Blomma · artículo 01-09-9078 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 219.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1258.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-01098181',
+    nota: 'BALDOSA PIZARRA ARDESIA · artículo 01-09-8181 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 226.7 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1342.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-wall-01098187',
-    nota: 'Baldosa Beige Ardesia Wall · artículo 01-09-8187 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 241.91 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1203.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-01098184',
+    nota: 'BALDOSA PERLA ARDESIA · artículo 01-09-8184 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 216.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1049.58, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-eiffel-blanco-01097858',
-    nota: 'Baldosa At Eiffel Blanco · artículo 01-09-7858 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 195.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1269.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-bali-stone-01098302',
+    nota: 'BALDOSA PORCELÁNICA BALI STONE · artículo 01-09-8302 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 228.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1496.39, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ambient-gris-01098283',
-    nota: 'Baldosa Ambient Gris · artículo 01-09-8283 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1278.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-bali-stone-01098301',
+    nota: 'BALDOSA PORCELÁNICA BALI STONE · artículo 01-09-8301 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 230.28 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1371.18, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-grafito-mate-01098038',
-    nota: 'Baldosa Ares Grafito Mate · artículo 01-09-8038 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 247.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1426.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnia-beige-01099171',
+    nota: 'BALDOSA CERÁMICA OMNIA BEIGE · artículo 01-09-9171 · ref. 30X605.55MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 257 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1669.61, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-blanco-mate-01098036',
-    nota: 'Baldosa Ares Blanco Mate · artículo 01-09-8036 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 300.83 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1101.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-dandy-blanco-01098030',
+    nota: 'BALDOSA CERÁMICA DANDY BLANCO · artículo 01-09-8030 · ref. 31X615.29MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.29 piezas por m² según su propia referencia (RD$ 208.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1288.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-eiffel-negro-01097870',
-    nota: 'At Eiffel Negro · artículo 01-09-7870 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 239.42 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1235.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rialto-ivory-01098003',
+    nota: 'BALDOSA CERÁMICA RIALTO IVORY · artículo 01-09-8003 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 222.56 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1582.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-rlv-monsoon-opalo-01097862',
-    nota: 'Baldosa At Rlv Monsoon Opalo · artículo 01-09-7862 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 294.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1874.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-eaton-pearl-01098472',
+    nota: 'BALDOSA CERÁMICA EATON PEARL · artículo 01-09-8472 · ref. 30.3X60.35.38MT/2 · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 348.51 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1554.72, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-blanco-brillo-01098035',
-    nota: 'Baldosa Ares Blanco Brillo · artículo 01-09-8035 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 280.13 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1218.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-lagom-blomma-01099078',
+    nota: 'BALDOSA CERÁMICA LAGOM BLOMMA · artículo 01-09-9078 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 219.62 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1611.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-grafito-mate-01098037',
-    nota: 'Baldosa Grafito Mate · artículo 01-09-8037 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.37 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1342.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-wall-01098187',
+    nota: 'BALDOSA BEIGE ARDESIA WALL · artículo 01-09-8187 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 241.91 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1476.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ambient-beige-01097998',
-    nota: 'Baldosa Ambient Beige · artículo 01-09-7998 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 273.5 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1311.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-carrara-01098220',
+    nota: 'BALDOSA CERÁMICA BLANCO CARRARA · artículo 01-09-8220 · ref. 30X605.55MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 236.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_OCHOA, 1158.91, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-aroa-mix-01098718',
-    nota: 'Baldosa Aroa Mix · artículo 01-09-8718 · ref. 30.3X61.35.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 215.41 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-191', PROV_OCHOA, 1049.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-eiffel-blanco-01097858',
+    nota: 'BALDOSA AT EIFFEL BLANCO · artículo 01-09-7858 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 195.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-190', PROV_CERARTE, 1489.82, {
+  c('MAT-08-191', PROV_OCHOA, 1496.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ambient-gris-01098283',
+    nota: 'BALDOSA AMBIENT GRIS · artículo 01-09-8283 · ref. 30.5X60.55.40MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 277.11 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1582.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-at-rlv-monsoon-opalo-01097862',
+    nota: 'BALDOSA AT RLV MONSOON OPALO · artículo 01-09-7862 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 294.15 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1158.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-aroa-mix-01098718',
+    nota: 'BALDOSA AROA MIX · artículo 01-09-8718 · ref. 30.3X61.35.38MT2 · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 215.41 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1371.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-grafito-mate-01098038',
+    nota: 'BALDOSA ARES GRAFITO MATE · artículo 01-09-8038 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 247.06 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1669.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-blanco-mate-01098036',
+    nota: 'BALDOSA ARES BLANCO MATE · artículo 01-09-8036 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 300.83 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1288.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/at-eiffel-negro-01097870',
+    nota: 'AT EIFFEL NEGRO · artículo 01-09-7870 · ref. 30.3X61.35.38MT · marca PAMESA. La tienda cotiza por pieza; van 5.38 piezas por m² según su propia referencia (RD$ 239.42 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1554.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ares-blanco-brillo-01098035',
+    nota: 'BALDOSA ARES BLANCO BRILLO · artículo 01-09-8035 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 280.13 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1611.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-grafito-mate-01098037',
+    nota: 'BALDOSA GRAFITO MATE · artículo 01-09-8037 · ref. 30X605.55MT/2 · marca SALONI. La tienda cotiza por pieza; van 5.55 piezas por m² según su propia referencia (RD$ 290.37 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_OCHOA, 1476.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ambient-beige-01097998',
+    nota: 'BALDOSA AMBIENT BEIGE · artículo 01-09-7998 · ref. 30.5X60.55.40MT2 · marca SALONI. La tienda cotiza por pieza; van 5.4 piezas por m² según su propia referencia (RD$ 273.5 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-191', PROV_CERARTE, 1489.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-valls-30x60-cj8',
     itbis: false,
     nota: 'PORCELANATO VALLS 30X60 CJ8 · artículo CERA-32634 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-190', PROV_CERARTE, 1500.63, {
+  c('MAT-08-191', PROV_CERARTE, 1500.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-valls-30x60-cj8',
     itbis: false,
     nota: 'PORCELANATO VALLS 30X60 CJ8 · artículo CERA-32517 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-190', PROV_CERARTE, 660, {
+  c('MAT-08-191', PROV_CERARTE, 660, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/magic-platinum-30x60-ret',
     itbis: false,
     nota: 'MAGIC PLATINUM 30X60 RET · artículo CERA-32620 · ref. 30X60 · marca POINTER. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-190', PROV_CERARTE, 1490.75, {
+  c('MAT-08-191', PROV_CERARTE, 1490.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/xs-olimpia-flag-30x60',
     itbis: false,
     nota: 'XS OLIMPIA FLAG 30X60 · artículo CERA-34638 · ref. 30X60 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-190', PROV_CERARTE, 2377.95, {
+  c('MAT-08-191', PROV_CERARTE, 2377.95, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/rv-hex-26-5x51-013057',
     itbis: false,
     nota: 'PORC .HEX 26.5X51 · artículo CERA-36783 · ref. 30X60 · marca REALONDA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_OCHOA, 518.13, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-plain-ivory-liso-sal-sol-01098939',
-    nota: 'Porc. Plain Ivory (Liso) Sal Sol. · artículo 01-09-8939 · ref. 60X602.77MT/2 · marca INDIA-CER. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 187.05 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 518.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/porc-plain-ivory-liso-sal-sol-01098939',
+    nota: 'PORC. PLAIN IVORY (LISO) SAL SOL. · artículo 01-09-8939 · ref. 60X602.77MT/2 · marca INDIA-CER. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 187.05 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1245.36, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-gris-ardesia-01098186',
-    nota: 'Baldosa Gris Ardesia · artículo 01-09-8186 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.59 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1245.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-gris-ardesia-01098186',
+    nota: 'BALDOSA GRIS ARDESIA · artículo 01-09-8186 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.59 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1244.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-01098183',
-    nota: 'Baldosa Pizarra Ardesia · artículo 01-09-8183 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.32 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1230.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-venato-gris-venato-01097717',
+    nota: 'BALDOSA CERÁMICA VENATO GRIS / VENATO · artículo 01-09-7717 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 444.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1200.05, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01095934',
-    nota: 'Baldosa Cerámica Daino Ivory · artículo 01-09-5934 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 433.23 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1244.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-pizarra-ardesia-01098183',
+    nota: 'BALDOSA PIZARRA ARDESIA · artículo 01-09-8183 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.32 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1279.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-01098188',
-    nota: 'Baldosa Beige Ardesia · artículo 01-09-8188 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1245.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-royal-gold-gloss-01099011',
+    nota: 'BALDOSA CERÁMICA ROYAL GOLD GLOSS · artículo 01-09-9011 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 449.71 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1237.75, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-01099063',
-    nota: 'Baldosa Perla Ardesia · artículo 01-09-9063 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 446.84 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1200.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01095934',
+    nota: 'BALDOSA CERÁMICA DAINO IVORY · artículo 01-09-5934 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 433.23 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1213.43, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-thasos-01097941',
-    nota: 'Baldosa Cerámica Blanco Thasos · artículo 01-09-7941 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 438.06 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1279.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-beige-ardesia-01098188',
+    nota: 'BALDOSA BEIGE ARDESIA · artículo 01-09-8188 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 462.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1350.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-city-marfil-01097600',
-    nota: 'Baldosa Porcelánica City Marfil · artículo 01-09-7600 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 487.4 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1237.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-perla-ardesia-01099063',
+    nota: 'BALDOSA PERLA ARDESIA · artículo 01-09-9063 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 446.84 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1285.89, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpi-beige-imn-01098514',
-    nota: 'Baldosa Alpi Beige Imn · artículo 01-09-8514 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 464.22 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1213.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-thasos-01097941',
+    nota: 'BALDOSA CERÁMICA BLANCO THASOS · artículo 01-09-7941 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 438.06 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1215.14, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpi-pizarra-imn-01098512',
-    nota: 'Baldosa Alpi Pizarra Imn · artículo 01-09-8512 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 438.68 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1350.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-city-marfil-01097600',
+    nota: 'BALDOSA PORCELÁNICA CITY MARFIL · artículo 01-09-7600 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 487.4 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1416.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-mate-01097442',
-    nota: 'Baldosa Cerámica Blanco Mate · artículo 01-09-7442 · ref. 60X602.77MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 511.42 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1252.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-beige-01098303',
+    nota: 'BALDOSA CERÁMICA TÍVOLI BEIGE · artículo 01-09-8303 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 452.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1427.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnia-beige-01099167',
-    nota: 'Baldosa Cerámica Omnia Beige · artículo 01-09-9167 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 515.48 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1285.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpi-beige-imn-01098514',
+    nota: 'BALDOSA ALPI BEIGE IMN · artículo 01-09-8514 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 464.22 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1160.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-carriere-perla-01097863',
-    nota: 'Baldosa Carriere Perla · artículo 01-09-7863 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 429.8 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1251.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-perla-01098304',
+    nota: 'BALDOSA CERÁMICA TÍVOLI PERLA · artículo 01-09-8304 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 451.77 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 2562.78, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-proyeccion-marfil-01094651',
-    nota: 'Baldosa Porcelánica Proyección Marfil · artículo 01-09-4651 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 925.19 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1215.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-alpi-pizarra-imn-01098512',
+    nota: 'BALDOSA ALPI PIZARRA IMN · artículo 01-09-8512 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 438.68 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1538.93, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crosscut-marfil-01098511',
-    nota: 'Baldosa Cerámica Crosscut Marfil · artículo 01-09-8511 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 555.57 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1416.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-blanco-mate-01097442',
+    nota: 'BALDOSA CERÁMICA BLANCO MATE · artículo 01-09-7442 · ref. 60X602.77MT/2 · marca HALCON. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 511.42 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_OCHOA, 1133.48, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crosscut-gris-01098510',
-    nota: 'Baldosa Cerámica Crosscut Gris · artículo 01-09-8510 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 409.2 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-192', PROV_OCHOA, 1427.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-omnia-beige-01099167',
+    nota: 'BALDOSA CERÁMICA OMNIA BEIGE · artículo 01-09-9167 · ref. 60X602.77MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 515.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-191', PROV_CERARTE, 1692.59, {
+  c('MAT-08-192', PROV_OCHOA, 1289.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essenza-pw-01097991',
+    nota: 'BALDOSA CERÁMICA ESSENZA PW · artículo 01-09-7991 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 465.53 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1121.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rialto-ivory-01096863',
+    nota: 'BALDOSA CERÁMICA RIALTO IVORY · artículo 01-09-6863 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 404.85 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1160.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-carriere-perla-01097863',
+    nota: 'BALDOSA CARRIERE PERLA · artículo 01-09-7863 · ref. 60.8X60.82.70MT · marca PAMESA. La tienda cotiza por pieza; van 2.7 piezas por m² según su propia referencia (RD$ 429.8 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1286.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-gris-01098305',
+    nota: 'BALDOSA CERÁMICA TÍVOLI GRIS · artículo 01-09-8305 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 464.32 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 2562.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-proyeccion-marfil-01094651',
+    nota: 'BALDOSA PORCELÁNICA PROYECCIÓN MARFIL · artículo 01-09-4651 · ref. 60X602.77MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 925.19 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1538.93, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crosscut-marfil-01098511',
+    nota: 'BALDOSA CERÁMICA CROSSCUT MARFIL · artículo 01-09-8511 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 555.57 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1133.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-crosscut-gris-01098510',
+    nota: 'BALDOSA CERÁMICA CROSSCUT GRIS · artículo 01-09-8510 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 409.2 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 1043.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-trentino-perla-01097934',
+    nota: 'BALDOSA CERÁMICA TRENTINO PERLA · artículo 01-09-7934 · ref. 60X602.77MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 2.77 piezas por m² según su propia referencia (RD$ 376.67 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_OCHOA, 461.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tuscany-grigio-01097515',
+    nota: 'BALDOSA CERÁMICA TUSCANY GRIGIO · artículo 01-09-7515 · ref. 62X622.60MT/2 · marca ITALCRAFTS. La tienda cotiza por pieza; van 2.6 piezas por m² según su propia referencia (RD$ 177.46 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-192', PROV_CERARTE, 1692.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-lounge-60x60-rt',
     itbis: false,
     nota: 'PORC. LOUNGE 60X60 RT · artículo CERA-35494 · ref. 60X60 · marca RAK CERAMICS. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1692.6, {
+  c('MAT-08-192', PROV_CERARTE, 1692.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-lounge-60x60-rt',
     itbis: false,
     nota: 'PORC. LOUNGE 60X60 RT · artículo CERA-35493 · ref. 60X60 · marca RAK CERAMICS. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1457.57, {
+  c('MAT-08-192', PROV_CERARTE, 1457.57, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-lounge-60x60-rt',
     itbis: false,
     nota: 'PORC. LOUNGE 60X60 RT · artículo CERA-35491 · ref. 60X60 · marca RAK CERAMICS. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1454.93, {
+  c('MAT-08-192', PROV_CERARTE, 1454.93, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-lounge-60x60-rt',
     itbis: false,
     nota: 'PORC. LOUNGE 60X60 RT · artículo CERA-35490 · ref. 60X60 · marca RAK CERAMICS. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1500.1, {
+  c('MAT-08-192', PROV_CERARTE, 1500.1, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-60x60-ext-ret',
     itbis: false,
     nota: 'PORCELANATO HIT 60X60 EXT. RET · artículo CERA-35547 · ref. 60X60 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1377.44, {
+  c('MAT-08-192', PROV_CERARTE, 1377.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-natural-60x60-ret',
     itbis: false,
     nota: 'PORCELANATO HIT NATURAL 60X60 RET · artículo CERA-35868 · ref. 60X60 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1186.87, {
+  c('MAT-08-192', PROV_CERARTE, 1186.87, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-natural-60x60-ret',
     itbis: false,
     nota: 'PORCELANATO HIT NATURAL 60X60 RET · artículo CERA-35548 · ref. 60X60 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1881.35, {
+  c('MAT-08-192', PROV_CERARTE, 1881.35, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porc-lepola-60x60',
     itbis: false,
     nota: 'PORC. LEPOLA 60X60 · artículo CERA-36702 · ref. 60X60 · marca VARMORA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-191', PROV_CERARTE, 1003.78, {
+  c('MAT-08-192', PROV_CERARTE, 1003.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-viterbo-60x60',
     itbis: false,
     peso: 2,
     nota: 'PORCELANATO VITERBO 60X60 · artículo CERA-36792 · ref. 60X60 · marca GRIFINE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-192', PROV_OCHOA, 1386.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-art-indigo-01097944',
-    nota: 'Baldosa Cerámica Art Indigo · artículo 01-09-7944 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 260.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-193', PROV_OCHOA, 1386.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-art-indigo-01097944',
+    nota: 'BALDOSA CERÁMICA ART INDIGO · artículo 01-09-7944 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 260.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-192', PROV_OCHOA, 1419.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-trellis-01098519',
-    nota: 'Baldosa Cerámica Atenea Trellis · artículo 01-09-8519 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 266.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-193', PROV_OCHOA, 1419.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-atenea-trellis-01098519',
+    nota: 'BALDOSA CERÁMICA ATENEA TRELLIS · artículo 01-09-8519 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 266.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-192', PROV_OCHOA, 1689.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01096594',
-    nota: 'Baldosa Cerámica Daino Ivory · artículo 01-09-6594 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 316.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-193', PROV_OCHOA, 1689.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01096594',
+    nota: 'BALDOSA CERÁMICA DAINO IVORY · artículo 01-09-6594 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 316.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-192', PROV_OCHOA, 1146.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01095931',
-    nota: 'Baldosa Cerámica Daino Ivory · artículo 01-09-5931 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 215.02 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-193', PROV_OCHOA, 1146.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-daino-ivory-01095931',
+    nota: 'BALDOSA CERÁMICA DAINO IVORY · artículo 01-09-5931 · ref. 25X755.33MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 5.33 piezas por m² según su propia referencia (RD$ 215.02 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-193', PROV_CERARTE, 1186.47, {
+  c('MAT-08-194', PROV_CERARTE, 1186.47, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-rock-foliage-76x76-rt',
     itbis: false,
     nota: 'PORCELANATO ROCK FOLIAGE 76X76 RT · artículo CERA-36611 · ref. 75X75 · marca CERAMICA CRISTOFOLETTI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-193', PROV_CERARTE, 1186.48, {
+  c('MAT-08-194', PROV_CERARTE, 1186.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-taj-mahal-76x76-rt',
     itbis: false,
     nota: 'PORCELANATO TAJ MAHAL 76X76 RT · artículo CERA-36614 · ref. 75X75 · marca CERAMICA CRISTOFOLETTI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1251.8, {
+  c('MAT-08-195', PROV_OCHOA, 908.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-travertino-polido-01098178',
+    nota: 'BALDOSA CERÁMICA TRAVERTINO POLIDO · artículo 01-09-8178 · ref. 84X841.41MT/2 · marca ELIZABETH. La tienda cotiza por pieza; van 1.41 piezas por m² según su propia referencia (RD$ 644.23 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-195', PROV_OCHOA, 1535.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-tivoli-beige-01097221',
+    nota: 'BALDOSA CERÁMICA TÍVOLI BEIGE · artículo 01-09-7221 · ref. 80X801.56MT/2 · marca UNDEFASA. La tienda cotiza por pieza; van 1.56 piezas por m² según su propia referencia (RD$ 984.32 por pieza). ' + SUPUESTO_ITBIS
+  });
+  c('MAT-08-195', PROV_CERARTE, 1251.8, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-crema-sicilia-80x80-nat-ret',
     itbis: false,
     nota: 'PORCELANATO CREMA SICILIA 80X80 NAT RET · artículo CERA-33722 · ref. 80X80 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1362.36, {
+  c('MAT-08-195', PROV_CERARTE, 1362.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-olimpia-84x84',
     itbis: false,
     nota: 'LEVIGATO OLIMPIA 84X84 · artículo CERA-33757 · ref. 80X80 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 2046.53, {
+  c('MAT-08-195', PROV_CERARTE, 2046.53, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-le-blanc-84x84-rt',
     itbis: false,
     nota: 'LEVIGATO LE BLANC 84X84 RT · artículo CERA-33758 · ref. 80X80 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1559.92, {
+  c('MAT-08-195', PROV_CERARTE, 1559.92, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-urban-84x84-rt',
     itbis: false,
     nota: 'PORCELANATO URBAN 84X84 RT · artículo CERA-33759 · ref. 80X80 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1679.63, {
+  c('MAT-08-195', PROV_CERARTE, 1679.63, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/levigato-dunne-80x80-rt',
     itbis: false,
     nota: 'LEVIGATO DUNNE 80X80 RT · artículo CERA-34072 · ref. 80X80 · marca GAUDI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1122.23, {
+  c('MAT-08-195', PROV_CERARTE, 1122.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-kotel-81x81-rt',
     itbis: false,
     nota: 'PORCELANATO KOTEL 81X81 RT · artículo CERA-36699 · ref. 80X80 · marca GAUDI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1368.76, {
+  c('MAT-08-195', PROV_CERARTE, 1368.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-80x80-ret-2',
     itbis: false,
     nota: 'PORCELANATO HIT 80X80 RET · artículo CERA-36756 · ref. 80X80 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1408.5, {
+  c('MAT-08-195', PROV_CERARTE, 1408.5, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-80x80-ret-2',
     itbis: false,
     nota: 'PORCELANATO HIT 80X80 RET · artículo CERA-36755 · ref. 80X80 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-194', PROV_CERARTE, 1408.49, {
+  c('MAT-08-195', PROV_CERARTE, 1408.49, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-hit-80x80-ret-2',
     itbis: false,
     nota: 'PORCELANATO HIT 80X80 RET · artículo CERA-36757 · ref. 80X80 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-195', PROV_OCHOA, 1835.57, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rovere-honey-01098609',
-    nota: 'Baldosa Cerámica Rovere Honey · artículo 01-09-8609 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 248.05 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-196', PROV_OCHOA, 1835.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-rovere-honey-01098609',
+    nota: 'BALDOSA CERÁMICA ROVERE HONEY · artículo 01-09-8609 · ref. 15X907.40MT2 · marca PAMESA. La tienda cotiza por pieza; van 7.4 piezas por m² según su propia referencia (RD$ 248.05 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-196', PROV_CERARTE, 1398.19, {
+  c('MAT-08-197', PROV_CERARTE, 1398.19, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-jasper-225x90',
     itbis: false,
     nota: 'PORCELANATO JASPER 22.5X90 · artículo CERA-20863 · ref. 20X90 · marca ARGENTA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-197', PROV_OCHOA, 2210.12, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-quarz-arena-01096159',
-    nota: 'Baldosa Porcelánica Quarz Arena · artículo 01-09-6159 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 597.33 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-198', PROV_OCHOA, 2210.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-porcelanica-quarz-arena-01096159',
+    nota: 'BALDOSA PORCELÁNICA QUARZ ARENA · artículo 01-09-6159 · ref. 30X903.70MT/2 · marca SALONI. La tienda cotiza por pieza; van 3.7 piezas por m² según su propia referencia (RD$ 597.33 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-198', PROV_OCHOA, 2022.08, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-fumo-ardesia-01097243',
-    nota: 'Baldosa Fumo Ardesia · artículo 01-09-7243 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 825.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-199', PROV_OCHOA, 1630.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-zircon-01098883',
+    nota: 'BALDOSA CERÁMICA ESSEN ZIRCON · artículo 01-09-8883 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 660.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-198', PROV_OCHOA, 1630.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-essen-zircon-01098883',
-    nota: 'Baldosa Cerámica Essen Zircon · artículo 01-09-8883 · ref. 45X902.47MT/2 · marca PAMESA. La tienda cotiza por pieza; van 2.47 piezas por m² según su propia referencia (RD$ 660.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-199', PROV_OCHOA, 2022.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-fumo-ardesia-01097243',
+    nota: 'BALDOSA FUMO ARDESIA · artículo 01-09-7243 · ref. 45X902.45MT/2 · marca SALONI. La tienda cotiza por pieza; van 2.45 piezas por m² según su propia referencia (RD$ 825.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-198', PROV_CERARTE, 5147.23, {
+  c('MAT-08-199', PROV_CERARTE, 5147.23, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-expressions-high-honed-4463x8946',
     itbis: false,
     nota: 'PORCELANATO EXPRESSIONS HIGH HONED 44.63X89.46 · artículo CERA-30232 · ref. 45X90 · marca APARICI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-199', PROV_CERARTE, 1836.68, {
+  c('MAT-08-200', PROV_CERARTE, 1836.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/porcelanato-tulum-jeri-3d-90x90-rt-012733',
     itbis: false,
     nota: 'PORCELANATO TULUM JERI 3D 90X90 RT · artículo CERA-36607 · ref. 90X90 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-200', PROV_IBERICA, 495, {
+  c('MAT-08-201', PROV_IBERICA, 495, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-bali-stone-pvc-2-5x2-5x4-4-31x46-7/',
     nota: 'Mosaico Bali Stone PVC 2.5×2.5×4.4 (31×46.7) · artículo 015171 · ref. 2.5×2.5×4.4. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-201', PROV_IBERICA, 1099.76, {
+  c('MAT-08-202', PROV_IBERICA, 1099.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-crema-brillo-20x20/',
     nota: 'Mosaico Crema Brillo 20×20 · artículo 019203 · ref. 20×20. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-202', PROV_CERARTE, 1541.48, {
+  c('MAT-08-203', PROV_CERARTE, 1541.48, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-brick-england',
     itbis: false,
     nota: 'MOSAICO BRICK ENGLAND · artículo CERA-03905 · ref. 26X30 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-202', PROV_CERARTE, 1646.67, {
+  c('MAT-08-203', PROV_CERARTE, 1646.67, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-georgian',
     itbis: false,
     nota: 'MOSAICO GEORGIAN · artículo CERA-04012 · ref. 26X30 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-202', PROV_CERARTE, 1702.01, {
+  c('MAT-08-203', PROV_CERARTE, 1702.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-georgian',
     itbis: false,
     nota: 'MOSAICO GEORGIAN · artículo CERA-04013 · ref. 26X30 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-202', PROV_CERARTE, 947.36, {
+  c('MAT-08-203', PROV_CERARTE, 947.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-rodes-07x26',
     itbis: false,
     peso: 2,
     nota: 'MOSAICO RODES 07X26 · artículo CERA-33750 · ref. 26X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-203', PROV_OCHOA, 3159.2, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-jade50ay-jade-mate-poliure-01098813',
-    nota: 'Mosaico 5X5 Jade50Ay Jade Mate Poliure · artículo 01-09-8813 · ref. 30.7X30.710MT2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 315.92 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3159.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-jade50ay-jade-mate-poliure-01098813',
+    nota: 'MOSAICO 5X5 JADE50AY JADE MATE POLIURE · artículo 01-09-8813 · ref. 30.7X30.710MT2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 315.92 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 2461.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-verde-tikal-5x5-nivt50y-01098389',
-    nota: 'Mosaico Niebla Verde Tikal (5X5) Nivt50Y · artículo 01-09-8389 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 246.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 2461.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-verde-tikal-5x5-nivt50y-01098389',
+    nota: 'MOSAICO NIEBLA VERDE TIKAL (5X5) NIVT50Y · artículo 01-09-8389 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 246.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3156.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-han050ay-hanoi-mate-poliure-01098812',
-    nota: 'Mosaico 5X5 Han050Ay Hanoi Mate Poliure · artículo 01-09-8812 · ref. 30.7X30.710MT2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 315.65 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3156.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-han050ay-hanoi-mate-poliure-01098812',
+    nota: 'MOSAICO 5X5 HAN050AY HANOI MATE POLIURE · artículo 01-09-8812 · ref. 30.7X30.710MT2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 315.65 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3579.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-blanco-antides-01098153',
-    nota: 'Mosaico 5X5 Blanco Antides. · artículo 01-09-8153 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 357.98 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3579.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-5x5-blanco-antides-01098153',
+    nota: 'MOSAICO 5X5 BLANCO ANTIDES. · artículo 01-09-8153 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 357.98 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3071.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-azul-01097981',
-    nota: 'Baldosa Cerámica Mosaico Niebla Azul · artículo 01-09-7981 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 307.18 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3071.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-azul-01097981',
+    nota: 'BALDOSA CERÁMICA MOSAICO NIEBLA AZUL · artículo 01-09-7981 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 307.18 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 4631.7, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-g326-poliuretano-01098388',
-    nota: 'Baldosa Cerámica Mosaico G326 Poliuretano · artículo 01-09-8388 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 463.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 4631.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-g326-poliuretano-01098388',
+    nota: 'BALDOSA CERÁMICA MOSAICO G326 POLIURETANO · artículo 01-09-8388 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 463.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3114.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-azul-cobalto-01098156',
-    nota: 'Baldosa Cerámica Mosaico Azul Cobalto · artículo 01-09-8156 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 311.45 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3114.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-azul-cobalto-01098156',
+    nota: 'BALDOSA CERÁMICA MOSAICO AZUL COBALTO · artículo 01-09-8156 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 311.45 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3101.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-negro-01098151',
-    nota: 'Baldosa Cerámica Mosaico Negro · artículo 01-09-8151 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 310.14 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3101.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-negro-01098151',
+    nota: 'BALDOSA CERÁMICA MOSAICO NEGRO · artículo 01-09-8151 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 310.14 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 2863.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-piscina-01097980',
+  c('MAT-08-204', PROV_OCHOA, 2863.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-piscina-01097980',
     peso: 2,
-    nota: 'Baldosa Cerámica Mosaico Niebla Piscina · artículo 01-09-7980 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 286.35 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MOSAICO NIEBLA PISCINA · artículo 01-09-7980 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 286.35 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 2707.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-fuerte-01097982',
-    nota: 'Baldosa Cerámica Mosaico Niebla Fuerte · artículo 01-09-7982 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 270.76 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 2707.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-niebla-fuerte-01097982',
+    nota: 'BALDOSA CERÁMICA MOSAICO NIEBLA FUERTE · artículo 01-09-7982 · ref. 30.7X30.710.00MT · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 270.76 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 2932.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-503-01098152',
-    nota: 'Baldosa Cerámica Mosaico 503 · artículo 01-09-8152 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 293.24 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 2932.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-503-01098152',
+    nota: 'BALDOSA CERÁMICA MOSAICO 503 · artículo 01-09-8152 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 293.24 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 7157.4, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-bronze-fibra-01097131',
+  c('MAT-08-204', PROV_OCHOA, 7157.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-bronze-fibra-01097131',
     peso: 2,
-    nota: 'Baldosa Cerámica Mosaico Bronze Fibra · artículo 01-09-7131 · ref. 30.7X30.710.00M · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 715.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MOSAICO BRONZE FIBRA · artículo 01-09-7131 · ref. 30.7X30.710.00M · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 715.74 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 1844.8, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-arena-01098155',
-    nota: 'Baldosa Cerámica Mosaico Arena · artículo 01-09-8155 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 184.48 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 1844.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-arena-01098155',
+    nota: 'BALDOSA CERÁMICA MOSAICO ARENA · artículo 01-09-8155 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 184.48 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_OCHOA, 3760.9, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-558-01098154',
-    nota: 'Baldosa Cerámica Mosaico 558 · artículo 01-09-8154 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 376.09 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-204', PROV_OCHOA, 3760.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-558-01098154',
+    nota: 'BALDOSA CERÁMICA MOSAICO 558 · artículo 01-09-8154 · ref. 30.7X30.710.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 10 mallas por m² (RD$ 376.09 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_CERARTE, 1763.99, {
+  c('MAT-08-204', PROV_CERARTE, 1763.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-tasos-5x10',
     itbis: false,
     nota: 'MOSAICO TASOS 5X10 · artículo CERA-20929 · ref. 30X30 · marca CERAMICA ELIZABETH. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-203', PROV_CERARTE, 2889.25, {
+  c('MAT-08-204', PROV_CERARTE, 2889.25, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-crystal-mix-blue-327x327',
     itbis: false,
     nota: 'MOSAICO CRYSTAL MIX BLUE 32.7X32.7 · artículo CERA-29207 · ref. 30X30 · marca PORCELAMIKA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-203', PROV_CERARTE, 1414.01, {
+  c('MAT-08-204', PROV_CERARTE, 1414.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-tasos-1015x1015',
     itbis: false,
     peso: 2,
     nota: 'MOSAICO TASOS 10.15X10.15 · artículo CERA-36747 · ref. 30X30 · marca CERAMICA ELIZABETH. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-203', PROV_IBERICA, 892.08, {
+  c('MAT-08-204', PROV_IBERICA, 892.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-artist-black-cristal-metal-piedra-natural-2-3x9-8x8-30x30/',
     nota: 'Mosaico Artist Black Cristal-Metal-Piedra Natural 30×30 · artículo 011098 · ref. 30×30. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_IBERICA, 1039.58, {
+  c('MAT-08-204', PROV_IBERICA, 1039.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-artist-white-cristal-metal-piedra-natural-2-3x9-8x8-30x30/',
     nota: 'Mosaico Artist White Cristal-Metal-Piedra Natural 30×30 · artículo 011097 · ref. 30×30. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_IBERICA, 156.94, {
+  c('MAT-08-204', PROV_IBERICA, 156.94, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-beige-porcelanico-30-6x30-6/',
     nota: 'Mosaico Beige Porcelanico 30.6×30.6 · artículo 014305 · ref. 30.6×30.6. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_IBERICA, 690.01, {
+  c('MAT-08-204', PROV_IBERICA, 690.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penny-saona-cristal-d-19-28-6x28-6/',
     nota: 'Mosaico Penny Saona Cristal D.19 (28.6×28.6) · artículo 015847 · ref. 28.6×28.6. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_IBERICA, 590, {
+  c('MAT-08-204', PROV_IBERICA, 590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penta-arrecife-green-cristal-31-1x31-1/',
     nota: 'Mosaico Penta Arrecife Green Cristal 31.1×31.1 · artículo 015846 · ref. 31.1×31.1. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-203', PROV_IBERICA, 890, {
+  c('MAT-08-204', PROV_IBERICA, 890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-perla-nero-natura-piedra-natural-5x5x8-30x30/',
     nota: 'Mosaico Perla Nero Natura Piedra Natural 30×30 · artículo 011336 · ref. 30×30. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 5374.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-oslo-01098987',
-    nota: 'Baldosa Cerámica Mosaico Hexagonal Oslo · artículo 01-09-8987 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 488.57 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 5374.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-oslo-01098987',
+    nota: 'BALDOSA CERÁMICA MOSAICO HEXAGONAL OSLO · artículo 01-09-8987 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 488.57 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 4496.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-leno-01098991',
-    nota: 'Baldosa Cerámica Mosaico Hexagonal Leno · artículo 01-09-8991 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 408.73 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 4496.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-leno-01098991',
+    nota: 'BALDOSA CERÁMICA MOSAICO HEXAGONAL LENO · artículo 01-09-8991 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 408.73 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 5065.06, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-white-diamond-01098985',
-    nota: 'Mosaico Cerámico Sixties White Diamond · artículo 01-09-8985 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 460.46 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 5065.06, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-white-diamond-01098985',
+    nota: 'MOSAICO CERÁMICO SIXTIES WHITE DIAMOND · artículo 01-09-8985 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 460.46 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 4636.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-01098988',
+  c('MAT-08-205', PROV_OCHOA, 4636.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-01098988',
     peso: 3,
-    nota: 'Baldosa Cerámica Mosaico Hexagonal · artículo 01-09-8988 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 421.47 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BALDOSA CERÁMICA MOSAICO HEXAGONAL · artículo 01-09-8988 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 421.47 por pieza). El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 5223.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-black-diamond-01098986',
-    nota: 'Mosaico Cerámico Sixties Black Diamond · artículo 01-09-8986 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 474.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 5223.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-black-diamond-01098986',
+    nota: 'MOSAICO CERÁMICO SIXTIES BLACK DIAMOND · artículo 01-09-8986 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 474.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 6188.82, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-white-01098159',
-    nota: 'Mosaico Cerámico Sixties White · artículo 01-09-8159 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 562.62 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 6188.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-sixties-white-01098159',
+    nota: 'MOSAICO CERÁMICO SIXTIES WHITE · artículo 01-09-8159 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 562.62 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-204', PROV_OCHOA, 4369.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-01098992',
-    nota: 'Baldosa Cerámica Mosaico Hexagonal · artículo 01-09-8992 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 397.21 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-205', PROV_OCHOA, 4369.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-hexagonal-01098992',
+    nota: 'BALDOSA CERÁMICA MOSAICO HEXAGONAL · artículo 01-09-8992 · ref. 33X29.811.0MT/2 · marca TOGAMA. La tienda cotiza por malla; van 11 mallas por m² (RD$ 397.21 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1349.37, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-azul-poli-niaz25y-01095850',
+  c('MAT-08-206', PROV_OCHOA, 1349.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-azul-poli-niaz25y-01095850',
     peso: 2,
-    nota: 'Mosaico Niebla Azul Poli Niaz25Y · artículo 01-09-5850 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'MOSAICO NIEBLA AZUL POLI NIAZ25Y · artículo 01-09-5850 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.93 por pieza). El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1582.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-turquesa-01094410',
-    nota: 'Mosaico Cerámico Turquesa · artículo 01-09-4410 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 175.81 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1582.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-turquesa-01094410',
+    nota: 'MOSAICO CERÁMICO TURQUESA · artículo 01-09-4410 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 175.81 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1342.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-piscina-nipi25y-01095851',
-    nota: 'Mosaico Niebla Piscina Nipi25Y · artículo 01-09-5851 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.15 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1342.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-piscina-nipi25y-01095851',
+    nota: 'MOSAICO NIEBLA PISCINA NIPI25Y · artículo 01-09-5851 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.15 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1349.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-menta-25x25-nime25y-01098386',
-    nota: 'Mosaico Niebla Menta (25X25) Nime25Y · artículo 01-09-8386 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1349.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-menta-25x25-nime25y-01098386',
+    nota: 'MOSAICO NIEBLA MENTA (25X25) NIME25Y · artículo 01-09-8386 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 149.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1983.6, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-25x25-dlfs25y-delfos-poliuretan-01098814',
-    nota: 'Mosaico 25X25 Dlfs25Y Delfos Poliuretan · artículo 01-09-8814 · ref. 33X339MT2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 220.4 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1983.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-25x25-dlfs25y-delfos-poliuretan-01098814',
+    nota: 'MOSAICO 25X25 DLFS25Y DELFOS POLIURETAN · artículo 01-09-8814 · ref. 33X339MT2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 220.4 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 3445.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-g326-01097316',
-    nota: 'Baldosa Cerámica Mosaico Glossy G326 · artículo 01-09-7316 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 382.78 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 3445.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-g326-01097316',
+    nota: 'BALDOSA CERÁMICA MOSAICO GLOSSY G326 · artículo 01-09-7316 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 382.78 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1571.31, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-ibiza-niebla-01095849',
-    nota: 'Baldosa Cerámica Mosaico Ibiza Niebla · artículo 01-09-5849 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 174.59 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1571.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-ibiza-niebla-01095849',
+    nota: 'BALDOSA CERÁMICA MOSAICO IBIZA NIEBLA · artículo 01-09-5849 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 174.59 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 2373.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-fuerte-anti-nifu25ay-01097338',
-    nota: 'Mosaico Niebla Fuerte Anti Nifu25Ay · artículo 01-09-7338 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 263.74 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 2373.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-niebla-fuerte-anti-nifu25ay-01097338',
+    nota: 'MOSAICO NIEBLA FUERTE ANTI NIFU25AY · artículo 01-09-7338 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 263.74 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1558.53, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-caribe-01094411',
-    nota: 'Baldosa Cerámica Mosaico Caribe · artículo 01-09-4411 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 173.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1558.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-caribe-01094411',
+    nota: 'BALDOSA CERÁMICA MOSAICO CARIBE · artículo 01-09-4411 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 173.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1499.94, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-azul-claro-01097431',
-    nota: 'Baldosa Cerámica Mosaico Azul Claro · artículo 01-09-7431 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 166.66 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1499.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-azul-claro-01097431',
+    nota: 'BALDOSA CERÁMICA MOSAICO AZUL CLARO · artículo 01-09-7431 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 166.66 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1524.15, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-204-01098384',
-    nota: 'Baldosa Cerámica Mosaico 204 · artículo 01-09-8384 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 169.35 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1524.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-204-01098384',
+    nota: 'BALDOSA CERÁMICA MOSAICO 204 · artículo 01-09-8384 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 169.35 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1318.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-blanco-01094399',
-    nota: 'Baldosa Cerámica Mosaico Blanco · artículo 01-09-4399 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 146.5 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1318.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-blanco-01094399',
+    nota: 'BALDOSA CERÁMICA MOSAICO BLANCO · artículo 01-09-4399 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 146.5 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 3021.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-g325-01097315',
-    nota: 'Baldosa Cerámica Mosaico Glossy G325 · artículo 01-09-7315 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 335.67 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 3021.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-g325-01097315',
+    nota: 'BALDOSA CERÁMICA MOSAICO GLOSSY G325 · artículo 01-09-7315 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 335.67 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 4021.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-tokio-poliu-01097317',
-    nota: 'Mosaico Cerámico Tokio Poliu · artículo 01-09-7317 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 446.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 4021.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-tokio-poliu-01097317',
+    nota: 'MOSAICO CERÁMICO TOKIO POLIU · artículo 01-09-7317 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 446.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 3091.68, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-paris-poliu-pari25y-01097319',
-    nota: 'Mosaico Paris Poliu Pari25Y · artículo 01-09-7319 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 343.52 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 3091.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-paris-poliu-pari25y-01097319',
+    nota: 'MOSAICO PARIS POLIU PARI25Y · artículo 01-09-7319 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 343.52 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 2997.99, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-boston-poliuretano-01097318',
-    nota: 'Baldosa Cerámica Mosaico Boston Poliuretano · artículo 01-09-7318 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 333.11 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 2997.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-boston-poliuretano-01097318',
+    nota: 'BALDOSA CERÁMICA MOSAICO BOSTON POLIURETANO · artículo 01-09-7318 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 333.11 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 2945.34, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-g305-blanco-glossy-01098385',
-    nota: 'Baldosa Cerámica Mosaico G305 Blanco Glossy · artículo 01-09-8385 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 327.26 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 2945.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-g305-blanco-glossy-01098385',
+    nota: 'BALDOSA CERÁMICA MOSAICO G305 BLANCO GLOSSY · artículo 01-09-8385 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 327.26 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 2411.46, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-blanco-antideslizant-01095847',
-    nota: 'Baldosa Cerámica Mosaico Blanco Antideslizant · artículo 01-09-5847 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 267.94 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 2411.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-blanco-antideslizant-01095847',
+    nota: 'BALDOSA CERÁMICA MOSAICO BLANCO ANTIDESLIZANT · artículo 01-09-5847 · ref. 33X339.00MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 267.94 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 1441.17, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-203-poliu-01098387',
-    nota: 'Baldosa Cerámica Mosaico 203 Poliu · artículo 01-09-8387 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 160.13 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 1441.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-203-poliu-01098387',
+    nota: 'BALDOSA CERÁMICA MOSAICO 203 POLIU · artículo 01-09-8387 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 160.13 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_OCHOA, 3292.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-01094398',
-    nota: 'Baldosa Cerámica Mosaico Glossy · artículo 01-09-4398 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 365.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-206', PROV_OCHOA, 3292.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/baldosa-ceramica-mosaico-glossy-01094398',
+    nota: 'BALDOSA CERÁMICA MOSAICO GLOSSY · artículo 01-09-4398 · ref. 33X339MT/2 · marca TOGAMA. La tienda cotiza por malla; van 9 mallas por m² (RD$ 365.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_IBERICA, 690.01, {
+  c('MAT-08-206', PROV_IBERICA, 690.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-iris-artic-ms3800-31-6x31-6/',
     peso: 4,
     nota: 'Mosaico Iris Artic 31.6×31.6 · artículo 016263 · ref. 31.6×31.6. El comercio lista 4 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 4 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_IBERICA, 400.01, {
+  c('MAT-08-206', PROV_IBERICA, 400.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-negro-liso-cristal-2-5x2-5x8-31-6x31-6/',
     nota: 'Mosaico Negro Liso Cristal 31.6×31.6 · artículo 013381 · ref. 31.6×31.6. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_IBERICA, 350, {
+  c('MAT-08-206', PROV_IBERICA, 350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-nieblas-azul-claro-ms3003-31-6x31-6/',
     peso: 7,
     nota: 'Mosaico Nieblas Azul Claro 31.6×31.6 · artículo 016837 · ref. 31.6×31.6. El comercio lista 7 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 7 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_IBERICA, 390, {
+  c('MAT-08-206', PROV_IBERICA, 390, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-tenerife-cristal-31-6x31-6/',
     nota: 'Mosaico Tenerife Cristal 31.6×31.6 · artículo 016256 · ref. 31.6×31.6. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-205', PROV_IBERICA, 325, {
+  c('MAT-08-206', PROV_IBERICA, 325, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-cabrera-cristal-2-5x2-5x8-31-6x31-6/',
     nota: 'Mosaico Cabrera Cristal 31.6×31.6 · artículo 016258 · ref. 31.6×31.6. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-206', PROV_CERARTE, 2917.01, {
+  c('MAT-08-207', PROV_CERARTE, 2917.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-33710 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-206', PROV_CERARTE, 2205.98, {
+  c('MAT-08-207', PROV_CERARTE, 2205.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-33711 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-206', PROV_CERARTE, 2778.1, {
+  c('MAT-08-207', PROV_CERARTE, 2778.1, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-33712 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-206', PROV_CERARTE, 2486.89, {
+  c('MAT-08-207', PROV_CERARTE, 2486.89, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-33717 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-206', PROV_CERARTE, 2176.75, {
+  c('MAT-08-207', PROV_CERARTE, 2176.75, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-33718 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-206', PROV_CERARTE, 2176.74, {
+  c('MAT-08-207', PROV_CERARTE, 2176.74, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-terralma-9x37-nat',
     itbis: false,
     nota: 'MOSAICO TERRALMA 9X37 NAT · artículo CERA-34434 · ref. 10X40 · marca PORTOBELLO. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-207', PROV_IBERICA, 650, {
+  c('MAT-08-208', PROV_IBERICA, 650, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-opalescent-verde-pvc-2-5x2-5x4-4-31x46-7/',
     nota: 'Mosaico Opalescent Verde 31×46.7 · artículo 015172 · ref. 31×46.7. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-208', PROV_OCHOA, 789.64, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-slate-01098072',
-    nota: 'Mosaico Cerámico Slate · artículo 01-09-8072 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por malla; van 4.93 mallas por m² (RD$ 160.17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-209', PROV_OCHOA, 789.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-slate-01098072',
+    nota: 'MOSAICO CERÁMICO SLATE · artículo 01-09-8072 · ref. 45X454.93MT/2 · marca HISPANIA. La tienda cotiza por malla; van 4.93 mallas por m² (RD$ 160.17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-209', PROV_IBERICA, 790, {
+  c('MAT-08-210', PROV_IBERICA, 790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penta-bidart-artic-mate-cristal-5x5x5-3-31-1x31-1/',
     peso: 3,
     nota: 'Mosaico Penta Bidart Artic Mate Cristal 5x5x5.3 (31.1×31.1) · artículo 018188 · ref. 5×5×5.3. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-209', PROV_IBERICA, 590, {
+  c('MAT-08-210', PROV_IBERICA, 590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-penta-forest-blue-cristal-5x5x5-3/',
     nota: 'Mosaico Penta Forest Blue Cristal 5x5x5.3 · artículo 016896 · ref. 5×5×5.3. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-210', PROV_IBERICA, 3998.02, {
+  c('MAT-08-211', PROV_IBERICA, 3998.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-cloudy-grey-ledgestone-wall-panel-piedra-15x60/',
     nota: 'Mosaico Cloudy Grey Ledgestone Wall Panel Piedra 15×60 · artículo 013205 · ref. 15×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-210', PROV_IBERICA, 3110.82, {
+  c('MAT-08-211', PROV_IBERICA, 3110.82, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-pure-white-piedra-15x60/',
     nota: 'Mosaico Pure White Piedra 15×60 · artículo 012348 · ref. 15×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-210', PROV_IBERICA, 2290.15, {
+  c('MAT-08-211', PROV_IBERICA, 2290.15, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mosaico-rusty-piedra-15x60/',
     nota: 'Mosaico Rusty Piedra 15×60 · artículo 012349 · ref. 15×60. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-211', PROV_OCHOA, 743.62, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-mimesis-marron-01094649',
-    nota: 'Mosaico Cerámico Mimesis Marrón · artículo 01-09-4649 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por malla; van 8.33 mallas por m² (RD$ 89.27 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-212', PROV_OCHOA, 743.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/mosaico-ceramico-mimesis-marron-01094649',
+    nota: 'MOSAICO CERÁMICO MIMESIS MARRÓN · artículo 01-09-4649 · ref. 20X608.33MT/2 · marca SALONI. La tienda cotiza por malla; van 8.33 mallas por m² (RD$ 89.27 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-212', PROV_CERARTE, 1500.98, {
+  c('MAT-08-213', PROV_CERARTE, 1500.98, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-java-75x75',
     itbis: false,
     nota: 'MOSAICO JAVA 7.5X7.5 · artículo CERA-35567 · ref. 7.5X7.5 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-212', PROV_CERARTE, 1512.36, {
+  c('MAT-08-213', PROV_CERARTE, 1512.36, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-java-75x75',
     itbis: false,
     nota: 'MOSAICO JAVA 7.5X7.5 · artículo CERA-35566 · ref. 7.5X7.5 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-212', PROV_CERARTE, 1454.78, {
+  c('MAT-08-213', PROV_CERARTE, 1454.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/mosaico-maui-ext-75x75',
     itbis: false,
     nota: 'MOSAICO MAUI EXT 7.5X7.5 · artículo CERA-35568 · ref. 7.5X7.5 · marca ELIANE. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-213', PROV_OCHOA, 2087.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-coliseo-blanco-romo-ran-2-01098316',
+  c('MAT-08-214', PROV_OCHOA, 2087.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-coliseo-blanco-romo-ran-2-01098316',
     peso: 2,
-    nota: 'Peldaño Coliseo Blanco Romo Ran 2 · artículo 01-09-8316 · ref. 30X120 · marca UNDEFASA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PELDAÑO COLISEO BLANCO ROMO RAN 2 · artículo 01-09-8316 · ref. 30X120 · marca UNDEFASA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 2066.55, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-heritage-roble-romo-ran-2-01098317',
-    nota: 'Peldaño Heritage Roble Romo Ran 2 · artículo 01-09-8317 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 2066.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-heritage-roble-romo-ran-2-01098317',
+    nota: 'PELDAÑO HERITAGE ROBLE ROMO RAN 2 · artículo 01-09-8317 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 1945.03, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-pizarra-romo-ran-2-01098314',
-    nota: 'Peldaño Capitol Pizarra Romo Ran 2 · artículo 01-09-8314 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 1945.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-pizarra-romo-ran-2-01098314',
+    nota: 'PELDAÑO CAPITOL PIZARRA ROMO RAN 2 · artículo 01-09-8314 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 2179.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-blanco-thassos-romo-ran-2-01098321',
-    nota: 'Peldaño Blanco Thassos Romo Ran 2 · artículo 01-09-8321 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 2179.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-blanco-thassos-romo-ran-2-01098321',
+    nota: 'PELDAÑO BLANCO THASSOS ROMO RAN 2 · artículo 01-09-8321 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 2028.35, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-heritage-nogal-romo-ran-2-01098318',
-    nota: 'Peldaño Heritage Nogal Romo Ran 2 · artículo 01-09-8318 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 2028.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-heritage-nogal-romo-ran-2-01098318',
+    nota: 'PELDAÑO HERITAGE NOGAL ROMO RAN 2 · artículo 01-09-8318 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 1822.23, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-beige-romo-ran-2-01098320',
-    nota: 'Peldaño Capitol Beige Romo Ran 2 · artículo 01-09-8320 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 1822.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-beige-romo-ran-2-01098320',
+    nota: 'PELDAÑO CAPITOL BEIGE ROMO RAN 2 · artículo 01-09-8320 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 1733.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-olimpia-antideslizante-beige-01098921',
-    nota: 'Peldaño Cerámico Olimpia Antideslizante Beige · artículo 01-09-8921 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 1733.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-olimpia-antideslizante-beige-01098921',
+    nota: 'PELDAÑO CERÁMICO OLIMPIA ANTIDESLIZANTE BEIGE · artículo 01-09-8921 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-213', PROV_OCHOA, 1719.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-pizarra-romo-liso-01098914',
-    nota: 'Peldano Capitol Pizarra Romo Liso · artículo 01-09-8914 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
+  c('MAT-08-214', PROV_OCHOA, 1719.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-capitol-pizarra-romo-liso-01098914',
+    nota: 'PELDANO CAPITOL PIZARRA ROMO LISO · artículo 01-09-8914 · ref. 30X120 · marca UNDEFASA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 4970.3, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-opera-ivory-01098995',
-    nota: 'Peldaño Cerámico Recto Opera Ivory · artículo 01-09-8995 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 4970.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-opera-ivory-01098995',
+    nota: 'PELDAÑO CERÁMICO RECTO OPERA IVORY · artículo 01-09-8995 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5236.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-yoho-oak-01098430',
-    nota: 'Peldaño Cerámico Recto Yoho Oak · artículo 01-09-8430 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 5236.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-yoho-oak-01098430',
+    nota: 'PELDAÑO CERÁMICO RECTO YOHO OAK · artículo 01-09-8430 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5254.79, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-provenza-blanco-01099179',
-    nota: 'Peldaño Cerámico Recto Provenza Blanco · artículo 01-09-9179 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 5254.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-provenza-blanco-01099179',
+    nota: 'PELDAÑO CERÁMICO RECTO PROVENZA BLANCO · artículo 01-09-9179 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5264.25, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-provenza-grigio-01099181',
-    nota: 'Peldaño Cerámico Recto Provenza Grigio · artículo 01-09-9181 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 5264.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-provenza-grigio-01099181',
+    nota: 'PELDAÑO CERÁMICO RECTO PROVENZA GRIGIO · artículo 01-09-9181 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5892.02, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-ml-imperial-ceniza-01098639',
-    nota: 'Peldaño Cerámico Ml Imperial Ceniza · artículo 01-09-8639 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 5892.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-ml-imperial-ceniza-01098639',
+    nota: 'PELDAÑO CERÁMICO ML IMPERIAL CENIZA · artículo 01-09-8639 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5478.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-marble-travertino-01098432',
+  c('MAT-08-215', PROV_OCHOA, 5478.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-marble-travertino-01098432',
     peso: 3,
-    nota: 'Peldaño Cerámico Recto Marble Travertino · artículo 01-09-8432 · ref. 33X120 · marca EXAGRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'PELDAÑO CERÁMICO RECTO MARBLE TRAVERTINO · artículo 01-09-8432 · ref. 33X120 · marca EXAGRES. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 3607.11, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-crema-marfil-01096896',
-    nota: 'Peldaño Cerámico Recto Crema Marfil · artículo 01-09-6896 · ref. 33X120X3C-3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 3607.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-crema-marfil-01096896',
+    nota: 'PELDAÑO CERÁMICO RECTO CREMA MARFIL · artículo 01-09-6896 · ref. 33X120X3C-3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 5245.32, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-ml-venatto-perla-01098586',
-    nota: 'Peldaño Cerámico Ml Venatto Perla · artículo 01-09-8586 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 5245.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-ml-venatto-perla-01098586',
+    nota: 'PELDAÑO CERÁMICO ML VENATTO PERLA · artículo 01-09-8586 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 4680.56, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-albaroc-galena-01098427',
-    nota: 'Peldaño Cerámico Recto Albaroc Galena · artículo 01-09-8427 · ref. 120X33X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 4680.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-albaroc-galena-01098427',
+    nota: 'PELDAÑO CERÁMICO RECTO ALBAROC GALENA · artículo 01-09-8427 · ref. 120X33X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 4817.26, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-albaroc-boal-01098238',
-    nota: 'Peldaño Cerámico Recto Albaroc Boal · artículo 01-09-8238 · ref. 33X120X3C-1 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 4817.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-albaroc-boal-01098238',
+    nota: 'PELDAÑO CERÁMICO RECTO ALBAROC BOAL · artículo 01-09-8238 · ref. 33X120X3C-1 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_OCHOA, 3843.63, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-milan-gris-01098435',
-    nota: 'Peldaño Cerámico Recto Milan Gris · artículo 01-09-8435 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-215', PROV_OCHOA, 3843.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/peldano-ceramico-recto-milan-gris-01098435',
+    nota: 'PELDAÑO CERÁMICO RECTO MILAN GRIS · artículo 01-09-8435 · ref. 33X120 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_IBERICA, 8990, {
+  c('MAT-08-215', PROV_IBERICA, 8990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/peldano-ang-decor-marquetry-park-spike-120x32-3/',
     peso: 5,
     nota: 'Peldaño Ang. Decor Marquetry Park Spike 120×32/3 · artículo 018163 · ref. 120×32. El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-214', PROV_IBERICA, 9990, {
+  c('MAT-08-215', PROV_IBERICA, 9990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/peldao-porcelanato-coral-beach-antideslizante-33x120/',
     nota: 'Peldaño Porcelanato Coral Beach Antideslizante 33×120 · artículo 016335 · ref. 33×120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-215', PROV_OCHOA, 1547.69, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huella-metalo-01098983',
+  c('MAT-08-216', PROV_OCHOA, 1547.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huella-metalo-01098983',
     peso: 3,
-    nota: 'Set Huella C / Huella Metalo · artículo 01-09-8983 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'SET HUELLA C / HUELLA METALO · artículo 01-09-8983 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-215', PROV_OCHOA, 1547.92, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huel-desert-cem-01098874',
-    nota: 'Set Huella / C / Huel Desert Cem · artículo 01-09-8874 · ref. 1.20X30/1.20X17 · marca MAJOLICA. ' + SUPUESTO_ITBIS
+  c('MAT-08-216', PROV_OCHOA, 1547.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huel-desert-cem-01098874',
+    nota: 'SET HUELLA / C / HUEL DESERT CEM · artículo 01-09-8874 · ref. 1.20X30/1.20X17 · marca MAJOLICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-215', PROV_OCHOA, 1266.29, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-blanco-matrix-01098760',
+  c('MAT-08-216', PROV_OCHOA, 1266.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-blanco-matrix-01098760',
     peso: 2,
-    nota: 'Set Huella / Contra Huella Blanco Matrix · artículo 01-09-8760 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'SET HUELLA / CONTRA HUELLA BLANCO MATRIX · artículo 01-09-8760 · ref. 1.20X30 · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-215', PROV_OCHOA, 1307.88, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-desert-sahara-01099320',
+  c('MAT-08-216', PROV_OCHOA, 1307.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-desert-sahara-01099320',
     peso: 2,
-    nota: 'Set Huella / Contra Huella Desert Sahara · artículo 01-09-9320 · ref. 1.20X30CM · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'SET HUELLA / CONTRA HUELLA DESERT SAHARA · artículo 01-09-9320 · ref. 1.20X30CM · marca MAJOLICA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-216', PROV_OCHOA, 1267.1, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-super-white-01098236',
-    nota: 'Set Huella / Contra Huella Super White · artículo 01-09-8236 · ref. 1.20MX30MERCWHITE · marca MAJOLICA. ' + SUPUESTO_ITBIS
+  c('MAT-08-217', PROV_OCHOA, 1267.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-contra-huella-super-white-01098236',
+    nota: 'SET HUELLA / CONTRA HUELLA SUPER WHITE · artículo 01-09-8236 · ref. 1.20MX30MERCWHITE · marca MAJOLICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-216', PROV_OCHOA, 1170.21, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huella-majs111-01098138',
-    nota: 'Set Huella C / Huella Majs111 · artículo 01-09-8138 · ref. 1.20MX30CM · marca MAJOLICA. ' + SUPUESTO_ITBIS
+  c('MAT-08-217', PROV_OCHOA, 1170.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-huella-c-huella-majs111-01098138',
+    nota: 'SET HUELLA C / HUELLA MAJS111 · artículo 01-09-8138 · ref. 1.20MX30CM · marca MAJOLICA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 452.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6004-01097448',
+  c('MAT-08-218', PROV_OCHOA, 452.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6004-01097448',
     peso: 2,
-    nota: 'Borde P / Peldano T-6004 · artículo 01-09-7448 · ref. 69.5X3 · marca EXAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+    nota: 'BORDE P / PELDANO T-6004 · artículo 01-09-7448 · ref. 69.5X3 · marca EXAGRES. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 433.51, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6002-01097447',
-    nota: 'Borde P / Peldano T-6002 · artículo 01-09-7447 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-218', PROV_OCHOA, 433.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6002-01097447',
+    nota: 'BORDE P / PELDANO T-6002 · artículo 01-09-7447 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 453.27, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-calacatta-cls3-t-6210-01097126',
-    nota: 'Borde P / Peldano Calacatta Cls3 T-6210 · artículo 01-09-7126 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-218', PROV_OCHOA, 453.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-calacatta-cls3-t-6210-01097126',
+    nota: 'BORDE P / PELDANO CALACATTA CLS3 T-6210 · artículo 01-09-7126 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 425.5, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6100-01097449',
-    nota: 'Borde P / Peldano T-6100 · artículo 01-09-7449 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-218', PROV_OCHOA, 425.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6100-01097449',
+    nota: 'BORDE P / PELDANO T-6100 · artículo 01-09-7449 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-217', PROV_OCHOA, 434.66, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6005-01097451',
-    nota: 'Borde P / Peldano T-6005 · artículo 01-09-7451 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
+  c('MAT-08-218', PROV_OCHOA, 434.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/borde-p-peldano-t-6005-01097451',
+    nota: 'BORDE P / PELDANO T-6005 · artículo 01-09-7451 · ref. 69.5X3 · marca EXAGRES. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-218', PROV_IBERICA, 189.99, {
+  c('MAT-08-219', PROV_IBERICA, 189.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/zocalo-media-cana-quarry-tile-rojo-15x15/',
     peso: 2,
     nota: 'Zocalo Media Caña Quarry Tile Rojo 15×15 · artículo 004712 · ref. 15×15. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-219', PROV_OCHOA, 1395.33, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/rodapie-crema-marfil-pulidas-01097077',
-    nota: 'Rodapie Crema Marfil Pulidas · artículo 01-09-7077 · ref. 80X20X21.25ML · marca ESPANOL. ' + SUPUESTO_ITBIS
+  c('MAT-08-220', PROV_OCHOA, 1395.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/rodapie-crema-marfil-pulidas-01097077',
+    nota: 'RODAPIE CREMA MARFIL PULIDAS · artículo 01-09-7077 · ref. 80X20X21.25ML · marca ESPANOL. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-220', PROV_CERARTE, 375.32, {
+  c('MAT-08-221', PROV_CERARTE, 375.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zocalo-piso-vinil-yc8105-21-240x9x15cm',
     itbis: false,
     nota: 'ZOCALO PISO VINIL YC8105-21 240X9X1.5CM · artículo CERA-34811 · ref. 240X9X1.5 · marca PORCELAMIKA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-220', PROV_CERARTE, 394.08, {
+  c('MAT-08-221', PROV_CERARTE, 394.08, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zocalo-vinil-240x9x15',
     itbis: false,
     nota: 'ZOCALO VINIL 240X9X1.5 · artículo CERA-35672 · ref. 240X9X1.5 · marca PORCELAMIKA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-220', PROV_CERARTE, 543.06, {
+  c('MAT-08-221', PROV_CERARTE, 543.06, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/zocalo-vinil-240x9x15',
     itbis: false,
     peso: 2,
     nota: 'ZOCALO VINIL 240X9X1.5 · artículo CERA-35674 · ref. 240X9X1.5 · marca PORCELAMIKA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-221', PROV_CERARTE, 2765.84, {
+  c('MAT-08-222', PROV_CERARTE, 2765.84, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquiniero-acero-inox-cuadrado',
     itbis: false,
     nota: 'ESQUINIERO ACERO INOX. CUADRADO · artículo CERA-03734 · ref. 10-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-221', PROV_CERARTE, 2112.54, {
+  c('MAT-08-222', PROV_CERARTE, 2112.54, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquiniero-acero-inox-cuadrado',
     itbis: false,
     nota: 'ESQUINIERO ACERO INOX. CUADRADO · artículo CERA-29224 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-222', PROV_OCHOA, 844.55, {
+  c('MAT-08-223', PROV_OCHOA, 844.55, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/list-ac-inox-12x12-oro-b-t-a-01098905',
     nota: 'List. Ac. Inox. 12X12 Oro B. T. A. · artículo 01-09-8905 · ref. 02345/02322 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-222', PROV_OCHOA, 832.63, {
+  c('MAT-08-223', PROV_OCHOA, 832.63, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/list-ac-inox-12x12-titanium-b-t-a-01098906',
     nota: 'List. Ac. Inox. 12X12 Titanium B. T. A. · artículo 01-09-8906 · ref. 02321 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-222', PROV_OCHOA, 845.21, {
+  c('MAT-08-223', PROV_OCHOA, 845.21, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/list-ac-inox-12x12-pink-b-t-a-01098904',
     nota: 'List. Ac. Inox. 12X12 Pink B.T. A. · artículo 01-09-8904 · ref. 02327 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-223', PROV_CERARTE, 2897.42, {
+  c('MAT-08-224', PROV_CERARTE, 2897.42, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquiniero-acero-inox-cuadrado',
     itbis: false,
     nota: 'ESQUINIERO ACERO INOX. CUADRADO · artículo CERA-03733 · ref. 12.5-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_OCHOA, 573.59, {
+  c('MAT-08-225', PROV_OCHOA, 573.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/list-alum-10x12-tex-gris-claro-01098713',
     nota: 'List. Alum. 10X12 Tex. Gris Claro · artículo 01-09-8713 · ref. 2.5MT202653 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_CERARTE, 942.34, {
+  c('MAT-08-225', PROV_CERARTE, 942.34, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-aluminio-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO ALUMINIO BORDE REDONDO · artículo CERA-03720 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_CERARTE, 1334.3, {
+  c('MAT-08-225', PROV_CERARTE, 1334.3, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-aluminio-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO ALUMINIO BORDE REDONDO · artículo CERA-32625 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_CERARTE, 1747.09, {
+  c('MAT-08-225', PROV_CERARTE, 1747.09, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-aluminio-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO ALUMINIO BORDE REDONDO · artículo CERA-03721 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_CERARTE, 1505.24, {
+  c('MAT-08-225', PROV_CERARTE, 1505.24, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-aluminio-borde-cuadrado',
     itbis: false,
     nota: 'ESQUINERO ALUMINIO BORDE CUADRADO · artículo CERA-32624 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_CERARTE, 1567.79, {
+  c('MAT-08-225', PROV_CERARTE, 1567.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-aluminio-borde-cuadrado',
     itbis: false,
     nota: 'ESQUINERO ALUMINIO BORDE CUADRADO · artículo CERA-20912 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-224', PROV_IBERICA, 2100, {
+  c('MAT-08-225', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-multi-plata-mate-aluminio-10x2500/',
     nota: 'Perfil N-Canto Multi Plata Mate Aluminio 10×2500 · artículo 010566 · ref. 10×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_IBERICA, 1590, {
+  c('MAT-08-225', PROV_IBERICA, 1590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-xs-oro-mate-aluminio-10x2500/',
     peso: 2,
     nota: 'Perfil N-Listel 3 XS Oro Mate Aluminio 10×2500 · artículo 016228 · ref. 10×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_IBERICA, 990, {
+  c('MAT-08-225', PROV_IBERICA, 990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-plata-brillo-aluminio-10x2500/',
     nota: 'Perfil N-Listel Plata Brillo Aluminio 10×2500 · artículo 006982 · ref. 10×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_IBERICA, 890, {
+  c('MAT-08-225', PROV_IBERICA, 890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-plata-mate-aluminio-10x2500/',
     nota: 'Perfil N-Listel Plata Mate Aluminio 10×2500 · artículo 006983 · ref. 10×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_IBERICA, 949.99, {
+  c('MAT-08-225', PROV_IBERICA, 949.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-ref-2601-plata-mate-aluminio-10x2500/',
     nota: 'Perfil N-Listel Ref. 2601 Plata Mate Aluminio 10×2500 · artículo 019089 · ref. 2601. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-224', PROV_IBERICA, 1349.99, {
+  c('MAT-08-225', PROV_IBERICA, 1349.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-ref-3046-plata-mate-aluminio-10x2600/',
     nota: 'Perfil N-Listel Ref. 3046 Plata Mate Aluminio 10×2600 · artículo 019070 · ref. 3046. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_OCHOA, 521.95, {
+  c('MAT-08-226', PROV_OCHOA, 521.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-alum-12mm-01092347',
     nota: 'Esquinero Canto Alum 12Mm · artículo 01-09-2347 · ref. PLATAM.0078 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 725, {
+  c('MAT-08-226', PROV_IBERICA, 725, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-de-canto-plata-brillo-aluminio-12x2600/',
     nota: 'Perfil De Canto Plata Brillo Aluminio 12×2600 · artículo 010929 · ref. 12×2600. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 890, {
+  c('MAT-08-226', PROV_IBERICA, 890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-de-canto-plata-mate-aluminio-12x2600/',
     nota: 'Perfil De Canto Plata Mate Aluminio 12×2600 · artículo 011210 · ref. 12×2600. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2100, {
+  c('MAT-08-226', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-bisel-anodizado-espejo-aluminio-12x2500/',
     peso: 2,
     nota: 'Perfil N-Bisel Anodizado Espejo Aluminio 12×2500 · artículo 012302 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 1950, {
+  c('MAT-08-226', PROV_IBERICA, 1950, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-bisel-anodizado-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Bisel Anodizado Plata Mate Aluminio 12×2500 · artículo 012301 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2549.99, {
+  c('MAT-08-226', PROV_IBERICA, 2549.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-anodizado-espejo-aluminio-12x2500/',
     nota: 'Perfil N-Canto Anodizado Espejo Aluminio 12×2500 · artículo 013972 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2249.99, {
+  c('MAT-08-226', PROV_IBERICA, 2249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-negro-mate-aluminio-12x2500/',
     nota: 'Perfil N-Canto Negro Mate Aluminio 12×2500 · artículo 013973 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 1889.99, {
+  c('MAT-08-226', PROV_IBERICA, 1889.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-oro-brillo-aluminio-12x2500/',
     nota: 'Perfil N-Canto Oro Brillo Aluminio 12×2500 · artículo 013716 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2590.01, {
+  c('MAT-08-226', PROV_IBERICA, 2590.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-oro-mate-aluminio-12x2500/',
     nota: 'Perfil N-Canto Oro Mate Aluminio 12×2500 · artículo 013715 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2690, {
+  c('MAT-08-226', PROV_IBERICA, 2690, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Canto Plata Mate Aluminio 12×2500 · artículo 013289 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2890, {
+  c('MAT-08-226', PROV_IBERICA, 2890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-anodizado-espejo-aluminio-12x2500/',
     nota: 'Perfil N-Listel 3 Anodizado Espejo Aluminio 12×2500 · artículo 013288 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 3890, {
+  c('MAT-08-226', PROV_IBERICA, 3890, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-negro-brillo-aluminio-12x2500/',
     nota: 'Perfil N-Listel 3 Negro Brillo Aluminio 12×2500 · artículo 013970 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 4790, {
+  c('MAT-08-226', PROV_IBERICA, 4790, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-negro-mate-aluminio-12x2500/',
     nota: 'Perfil N-Listel 3 Negro Mate Aluminio 12×2500 · artículo 013971 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2995.01, {
+  c('MAT-08-226', PROV_IBERICA, 2995.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-oro-brillo-aluminio-12x2500/',
     nota: 'Perfil N-Listel 3 Oro Brillo Aluminio 12×2500 · artículo 013720 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 1895, {
+  c('MAT-08-226', PROV_IBERICA, 1895, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-oro-mate-aluminio-12x2500/',
     nota: 'Perfil N-Listel 3 Oro Mate Aluminio 12×2500 · artículo 013719 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 1900, {
+  c('MAT-08-226', PROV_IBERICA, 1900, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-listel-3-xs-oro-brillo-aluminio-12x2500/',
     peso: 2,
     nota: 'Perfil N-Listel 3 XS Oro Brillo Aluminio 12×2500 · artículo 016230 · ref. 12×2500. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 5549.99, {
+  c('MAT-08-226', PROV_IBERICA, 5549.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-forte-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Nivel Forte Plata Mate Aluminio 12×2500 · artículo 013066 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2083.88, {
+  c('MAT-08-226', PROV_IBERICA, 2083.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-natural-aluminio-12x2500/',
     nota: 'Perfil N-Nivel Natural Aluminio 12×2500 · artículo 013129 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 3300, {
+  c('MAT-08-226', PROV_IBERICA, 3300, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Nivel Plata Mate Aluminio 12×2500 · artículo 013130 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 649.99, {
+  c('MAT-08-226', PROV_IBERICA, 649.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-remate-separador-plata-mate-aluminio-12x2600-ref-02231/',
     peso: 2,
     nota: 'Perfil Remate Separador Plata Mate Aluminio 12×2600 Ref.02231 · artículo 019403 · ref. 02231. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 889.99, {
+  c('MAT-08-226', PROV_IBERICA, 889.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-remate-separador-plata-mate-aluminio-12x3000/',
     nota: 'Perfil Remate Separador Plata Mate Aluminio 12×3000 · artículo 019404 · ref. 02289. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-225', PROV_IBERICA, 2150, {
+  c('MAT-08-226', PROV_IBERICA, 2150, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-rodapie-plata-mate-aluminio-12x2000/',
     nota: 'Perfil Rodapie Plata Mate Aluminio 12×2000 · artículo 018093 · ref. 12×2000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-226', PROV_IBERICA, 2560, {
+  c('MAT-08-227', PROV_IBERICA, 2560, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-suelo-anodizado-espejo-aluminio-12-5x2500/',
     nota: 'Perfil N-Suelo Anodizado Espejo Aluminio 12.5×2500 · artículo 013718 · ref. 12.5×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-226', PROV_IBERICA, 2190, {
+  c('MAT-08-227', PROV_IBERICA, 2190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-suelo-flexible-ref-nla1312-plata-mate-aluminio-12-5x2500/',
     nota: 'Perfil N-Suelo Flexible Ref. NLA1312 Plata Mate Aluminio 12.5×2500 · artículo 019365 · ref. NLA1312. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-226', PROV_IBERICA, 2500, {
+  c('MAT-08-227', PROV_IBERICA, 2500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-suelo-flexible-ref-nla9012c-negro-mate-aluminio-12-5x2500/',
     nota: 'Perfil N-Suelo Flexible Ref. NLA9012C Negro Mate Aluminio 12.5×2500 · artículo 019366 · ref. NLA9012C. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-226', PROV_IBERICA, 2100, {
+  c('MAT-08-227', PROV_IBERICA, 2100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-suelo-oro-mate-aluminio-12-5x2500/',
     nota: 'Perfil N-Suelo Oro Mate Aluminio 12.5×2500 · artículo 015544 · ref. 12.5×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-226', PROV_IBERICA, 2241.28, {
+  c('MAT-08-227', PROV_IBERICA, 2241.28, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-suelo-plata-mate-aluminio-12-5x2500/',
     nota: 'Perfil N-Suelo Plata Mate Aluminio 12.5×2500 · artículo 013717 · ref. 12.5×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-227', PROV_IBERICA, 1699.99, {
+  c('MAT-08-228', PROV_IBERICA, 1699.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-3-plata-mate-aluminio-13x2500/',
     nota: 'Perfil N-Nivel 3 Plata Mate Aluminio 13×2500 · artículo 015864 · ref. 13×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-228', PROV_IBERICA, 2500, {
+  c('MAT-08-229', PROV_IBERICA, 2500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-pletina-plata-mate-aluminio-2-7x2500/',
     nota: 'Perfil N-Pletina Plata Mate Aluminio 2.7×2500 · artículo 015212 · ref. 2.7×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-229', PROV_OCHOA, 775.19, {
+  c('MAT-08-230', PROV_OCHOA, 775.19, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/list-aluminio-t-plata-brillo-20-mm-01093892',
     nota: 'List. Aluminio T Plata Brillo 20 Mm · artículo 01-09-3892 · ref. 2.5MTS01169 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-229', PROV_OCHOA, 1273.77, {
+  c('MAT-08-230', PROV_OCHOA, 1273.77, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perf-peld-alu-20x12-tex-gris-claro-01098910',
     nota: 'Perf. Peld Alu. 20X12 Tex. Gris Claro · artículo 01-09-8910 · ref. 02684 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_OCHOA, 627.91, {
+  c('MAT-08-231', PROV_OCHOA, 627.91, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perf-peld-alu-25-x-35-plata-m-2-5m-01096722',
     nota: 'Perf. Peld Alu 25 X 35 Plata M. 2.5M · artículo 01-09-6722 · ref. 01177 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_IBERICA, 3290.01, {
+  c('MAT-08-231', PROV_IBERICA, 3290.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-escuadra-anodizado-plata-mate-aluminio-25x2500/',
     nota: 'Perfil N-Escuadra Anodizado Plata Mate Aluminio 25×2500 · artículo 012304 · ref. 25×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_IBERICA, 2232.64, {
+  c('MAT-08-231', PROV_IBERICA, 2232.64, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-escuadra-natural-aluminio-25x2500/',
     nota: 'Perfil N-Escuadra Natural Aluminio 25×2500 · artículo 012303 · ref. 25×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_IBERICA, 1750, {
+  c('MAT-08-231', PROV_IBERICA, 1750, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-separa-4-plata-mate-aluminio-25x2500/',
     nota: 'Perfil N-Separa 4 Plata Mate Aluminio 25×2500 · artículo 005932 · ref. 25×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_IBERICA, 4290, {
+  c('MAT-08-231', PROV_IBERICA, 4290, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-separa-4-negro-mate-aluminio-25x2500/',
     nota: 'Perfil N-Separa 4 Ref. NR490 Negro Mate Aluminio 25×2500 · artículo 019014 · ref. NR490. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-230', PROV_IBERICA, 2089.78, {
+  c('MAT-08-231', PROV_IBERICA, 2089.78, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-tri-eclipse-plata-mate-aluminio-25x2500/',
     nota: 'Perfil N-Tri Eclipse Plata Mate Aluminio 25×2500 · artículo 013898 · ref. 25×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-231', PROV_IBERICA, 6349.99, {
+  c('MAT-08-232', PROV_IBERICA, 6349.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-rodapie-anodizado-plata-mate-aluminio-70x2000/',
     nota: 'Perfil N-Rodapie Anodizado Plata Mate Aluminio 70×2000 · artículo 012307 · ref. 70×2000. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-231', PROV_IBERICA, 3400, {
+  c('MAT-08-232', PROV_IBERICA, 3400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-rodapie-eclipse-anodizado-plata-mate-aluminio-70x2500/',
     nota: 'Perfil N-Rodapie Eclipse Anodizado Plata Mate Aluminio 70×2500 · artículo 013070 · ref. 70×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-232', PROV_IBERICA, 1189.99, {
+  c('MAT-08-233', PROV_IBERICA, 1189.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-strip-plata-mate-aluminio-9x2500/',
     nota: 'Perfil N-Strip Plata Mate Aluminio 9×2500 · artículo 013899 · ref. 9×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-233', PROV_OCHOA, 402.71, {
+  c('MAT-08-234', PROV_OCHOA, 402.71, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfiles-fibra-veg-gris-10mm-01096716',
     nota: 'Perfiles Fibra Veg. Gris 10Mm · artículo 01-09-6716 · ref. 01860 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-233', PROV_OCHOA, 390.6, {
+  c('MAT-08-234', PROV_OCHOA, 390.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfiles-fibra-veg-arena-10mm-01096718',
     nota: 'Perfiles Fibra Veg. Arena 10Mm · artículo 01-09-6718 · ref. 01857 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-233', PROV_OCHOA, 417.52, {
+  c('MAT-08-234', PROV_OCHOA, 417.52, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfiles-fibra-veg-marron-10mm-01096719',
     nota: 'Perfiles Fibra Veg. Marron 10Mm · artículo 01-09-6719 · ref. 01862 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-233', PROV_OCHOA, 365.33, {
+  c('MAT-08-234', PROV_OCHOA, 365.33, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/perfiles-fibra-veg-beige-10mm-01096717',
     nota: 'Perfiles Fibra Veg. Beige 10Mm · artículo 01-09-6717 · ref. 01858 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-234', PROV_IBERICA, 3254.44, {
+  c('MAT-08-235', PROV_IBERICA, 3254.44, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-nivel-natural-latn-10x2500/',
     nota: 'Perfil N-Nivel Natural Latón 10×2500 · artículo 003723 · ref. 10×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-235', PROV_CERARTE, 315.47, {
+  c('MAT-08-236', PROV_CERARTE, 315.47, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-03730 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_CERARTE, 342.77, {
+  c('MAT-08-236', PROV_CERARTE, 342.77, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-33659 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_CERARTE, 373.02, {
+  c('MAT-08-236', PROV_CERARTE, 373.02, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-32627 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_CERARTE, 291.88, {
+  c('MAT-08-236', PROV_CERARTE, 291.88, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
     peso: 2,
     nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-03729 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_CERARTE, 330.59, {
+  c('MAT-08-236', PROV_CERARTE, 330.59, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-borde-redondo',
     itbis: false,
     nota: 'ESQUINERO PVC BORDE REDONDO · artículo CERA-03727 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_CERARTE, 333.56, {
+  c('MAT-08-236', PROV_CERARTE, 333.56, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/esquinero-pvc-cuadrado',
     itbis: false,
     nota: 'ESQUINERO PVC CUADRADO · artículo CERA-35963 · ref. 10MM-2.7ML · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-235', PROV_IBERICA, 590, {
+  c('MAT-08-236', PROV_IBERICA, 590, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-canto-blanco-10x2500/',
     nota: 'Perfil N-Canto Ref. NCP0138 Blanco PVC 10×2500 · artículo 003719 · ref. NCP0138. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-236', PROV_OCHOA, 68.95, {
+  c('MAT-08-237', PROV_OCHOA, 68.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-az-beige-claro-01097803',
     nota: 'Esquinero Canto Pvc Az Beige Claro · artículo 01-09-7803 · ref. 003048.5MM/2.5MT · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-236', PROV_OCHOA, 66.68, {
+  c('MAT-08-237', PROV_OCHOA, 66.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-beige-oscuro-01097797',
     nota: 'Esquinero Canto Pvc Beige Oscuro · artículo 01-09-7797 · ref. 003138.5MM/2.6MT · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-237', PROV_CIMA, 248, {
+  c('MAT-08-238', PROV_CIMA, 248, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/perfiles-pvc-p-cera-8x2600-gri',
     peso: 3,
     nota: 'PERFILES PVC P/CERA 8X2600 GRI · artículo 084199. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-238', PROV_OCHOA, 73.23, {
+  c('MAT-08-239', PROV_OCHOA, 73.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-8-5-mm-01098632',
     nota: 'Esquinero Canto Pvc 8.5 Mm · artículo 01-09-8632 · ref. NEGRO00391 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-238', PROV_OCHOA, 68.95, {
+  c('MAT-08-239', PROV_OCHOA, 68.95, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquinero-canto-pvc-8-5-mm-01082755',
     peso: 2,
     nota: 'Esquinero Canto Pvc 8.5 Mm · artículo 01-08-2755 · ref. MARFIL00303 · marca VALENPLAS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-238', PROV_OCHOA, 66.61, {
+  c('MAT-08-239', PROV_OCHOA, 66.61, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/esquiner-canto-pvc-8-5mm-2-6mt-01096369',
     nota: 'Esquiner Canto Pvc 8.5Mm 2.6Mt · artículo 01-09-6369 · ref. GRISOSCURO00369 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-238', PROV_IBERICA, 224.99, {
+  c('MAT-08-239', PROV_IBERICA, 224.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-beige-claro-pvc-8-5x2600/',
     nota: 'Perfil Beige Claro PVC 8.5×2600 · artículo 013710 · ref. 8.5×2600. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-239', PROV_IBERICA, 9476.58, {
+  c('MAT-08-240', PROV_IBERICA, 9476.58, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-junta-decor-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Junta Decor Plata Mate Aluminio 12×2500 · artículo 012469 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-239', PROV_IBERICA, 5822.12, {
+  c('MAT-08-240', PROV_IBERICA, 5822.12, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-junta-decor-xl-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Junta Decor XL Plata Mate Aluminio 12×2500 · artículo 006958 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-240', PROV_IBERICA, 1589.99, {
+  c('MAT-08-241', PROV_IBERICA, 1589.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/junta-dilatacion-t-gris-aluminio-14x2500/',
     nota: 'Junta Dilatacion T Gris Aluminio 14×2500 · artículo 018092 · ref. 14×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-241', PROV_IBERICA, 6400, {
+  c('MAT-08-242', PROV_IBERICA, 6400, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-junta-metallic-flecha-natural-mate-aluminio-26x2500/',
     nota: 'Perfil N-Junta Metallic Flecha Natural Mate Aluminio 26×2500 · artículo 015863 · ref. 26×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-242', PROV_IBERICA, 1100, {
+  c('MAT-08-243', PROV_IBERICA, 1100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-junta-1-ref-njp1021-gris-pvc-25x2500/',
     nota: 'Perfil N-Junta 1 Ref. NJP1021 Gris PVC 25×2500 · artículo 008349 · ref. NJP1021. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-243', PROV_IBERICA, 490, {
+  c('MAT-08-244', PROV_IBERICA, 490, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/junta-dilatacion-cuna-gris-pvc-25x8/',
     nota: 'Junta Dilatacion Cuña Gris PVC 25×8 · artículo 018091 · ref. 25×8. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-243', PROV_IBERICA, 949.99, {
+  c('MAT-08-244', PROV_IBERICA, 949.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/junta-dilatacion-t-gris-pvc-14x8/',
     nota: 'Junta Dilatacion T Gris PVC 14×8 · artículo 018090 · ref. 14×8. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-244', PROV_IBERICA, 4995, {
+  c('MAT-08-245', PROV_IBERICA, 4995, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-peldao-4-anodizado-plata-mate-aluminio-12x2500/',
     nota: 'Perfil N-Peldaño 4 Anodizado Plata Mate Aluminio 12×2500 · artículo 013069 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-244', PROV_IBERICA, 2190, {
+  c('MAT-08-245', PROV_IBERICA, 2190, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-peldao-plata-mate-aluminio-12x2500/',
     nota: 'Perfil Peldaño Plata Mate Aluminio 12×2500 · artículo 011856 · ref. 12×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-245', PROV_IBERICA, 6525, {
+  c('MAT-08-246', PROV_IBERICA, 6525, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-peldao-lumina-anodizado-plata-mate-banda-amarillo-aluminio-48x2500/',
     nota: 'Perfil N-Peldaño Lumina Anodizado Plata Mate Banda Amarillo Aluminio 48×2500 · artículo 012915 · ref. 48×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-246', PROV_IBERICA, 4893.46, {
+  c('MAT-08-247', PROV_IBERICA, 4893.46, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/perfil-n-peldao-safety-anodizado-plata-mate-banda-negra-aluminio-65x2500/',
     nota: 'Perfil N-Peldaño Safety Anodizado Plata Mate Banda Negra Aluminio 65×2500 · artículo 012305 · ref. 65×2500. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-247', PROV_OCHOA, 47.83, {
+  c('MAT-08-248', PROV_OCHOA, 47.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1-5mm-01099042',
     nota: 'Cruceta Para Cerámica 1.5Mm · artículo 01-09-9042 · ref. F16651(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-247', PROV_IBERICA, 100.01, {
+  c('MAT-08-248', PROV_IBERICA, 100.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/cruceta-1-5mm-100-1/',
     nota: 'Cruceta 1.5mm 100/1 · artículo 017251 · ref. 1.5 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-248', PROV_IBERICA, 114.99, {
+  c('MAT-08-249', PROV_IBERICA, 114.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/cruceta-plstico-1-5mm-250-1/',
     nota: 'Cruceta Plástico 1.5mm 250/1 · artículo 016321 · ref. 1.5 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-249', PROV_OCHOA, 233.76, {
+  c('MAT-08-250', PROV_OCHOA, 233.76, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1-5mm-fda-300-uds-01098564',
     nota: 'Cruceta Para Ceramica 1.5Mm Fda 300 Uds · artículo 01-09-8564 · ref. 26991 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-250', PROV_OCHOA, 42.56, {
+  c('MAT-08-251', PROV_OCHOA, 42.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1mm-01099041',
     nota: 'Cruceta Para Cerámica 1Mm · artículo 01-09-9041 · ref. F16650(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-251', PROV_OCHOA, 10608.65, {
+  c('MAT-08-252', PROV_OCHOA, 10608.65, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-1mm-fda-300-uds-01097701',
     nota: 'Cruceta Para Ceramica 1Mm Fda 300 Uds · artículo 01-09-7701 · ref. 02123/26998 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-252', PROV_OCHOA, 52.3, {
+  c('MAT-08-253', PROV_OCHOA, 52.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-2mm-01080125',
     nota: 'Cruceta Para Cerámica 2Mm · artículo 01-08-0125 · ref. F16652(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-252', PROV_IBERICA, 100.01, {
+  c('MAT-08-253', PROV_IBERICA, 100.01, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/cruceta-2mm-100-1/',
     nota: 'Cruceta 2mm 100/1 · artículo 017252 · ref. 2 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-253', PROV_OCHOA, 12274.78, {
+  c('MAT-08-254', PROV_OCHOA, 12274.78, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-2mm-fda-300-uds-01096683',
     nota: 'Cruceta Para Ceramicas 2Mm Fda 300 Uds · artículo 01-09-6683 · ref. 26997 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-254', PROV_CERARTE, 315.32, {
+  c('MAT-08-255', PROV_CERARTE, 315.32, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/separador-en-cruz-2mm-set-5001',
     itbis: false,
     nota: 'SEPARADOR EN CRUZ 2MM SET 500/1 · artículo CERA-30184 · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-254', PROV_CERARTE, 319.79, {
+  c('MAT-08-255', PROV_CERARTE, 319.79, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/separador-en-cruz-2mm-set-5001',
     itbis: false,
     nota: 'SEPARADOR EN CRUZ 2MM SET 500/1 · artículo CERA-30183 · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-255', PROV_OCHOA, 61.54, {
+  c('MAT-08-256', PROV_OCHOA, 61.54, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-3mm-01080128',
     nota: 'Cruceta Para Cerámica 3Mm · artículo 01-08-0128 · ref. F16653(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-256', PROV_OCHOA, 252.59, {
+  c('MAT-08-257', PROV_OCHOA, 252.59, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-3mm-fda-200-uds-01096684',
     nota: 'Cruceta Para Ceramicas 3Mm Fda 200 Uds · artículo 01-09-6684 · ref. 26990/02902 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-256', PROV_IBERICA, 249.99, {
+  c('MAT-08-257', PROV_IBERICA, 249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/cruceta-plstico-3mm-200-1/',
     nota: 'Cruceta Plástico 3mm 200/1 · artículo 010555 · ref. 3 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-257', PROV_OCHOA, 72.83, {
+  c('MAT-08-258', PROV_OCHOA, 72.83, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-4mm-01080353',
     nota: 'Cruceta Para Cerámica 4Mm · artículo 01-08-0353 · ref. F16654(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-258', PROV_OCHOA, 7235.96, {
+  c('MAT-08-259', PROV_OCHOA, 7235.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramicas-4mm-fda-200-uds-01096682',
     nota: 'Cruceta Para Ceramicas 4Mm Fda 200 Uds · artículo 01-09-6682 · ref. 02129/02954 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-259', PROV_OCHOA, 81.07, {
+  c('MAT-08-260', PROV_OCHOA, 81.07, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-5mm-01080390',
     nota: 'Cruceta Para Cerámica 5Mm · artículo 01-08-0390 · ref. F16655(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-260', PROV_OCHOA, 78.89, {
+  c('MAT-08-261', PROV_OCHOA, 78.89, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cruceta-para-ceramica-6mm-01080431',
     nota: 'Cruceta Para Cerámica 6Mm · artículo 01-08-0431 · ref. F16656(100PCS) · marca BEST VALUE. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-261', PROV_OCHOA, 919.94, {
+  c('MAT-08-262', PROV_OCHOA, 919.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-0-5-mm-01098897',
     nota: 'Calzos De Nivelación Cerámica 0.5 Mm · artículo 01-09-8897 · ref. 02209 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-262', PROV_OCHOA, 767.39, {
+  c('MAT-08-263', PROV_OCHOA, 767.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-1-mm-01098898',
     nota: 'Calzos De Nivelación Cerámica 1 Mm · artículo 01-09-8898 · ref. 02204 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-262', PROV_CERARTE, 404.16, {
+  c('MAT-08-263', PROV_CERARTE, 404.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nivelador-espaciador-dpiso-sencillo-6-16mm-2001',
     itbis: false,
     nota: 'NIVELADOR ESPACIADOR D/PISO SENCILLO 6-16MM 200/1 · artículo CERA-35531 · ref. 1MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-262', PROV_IBERICA, 1490, {
+  c('MAT-08-263', PROV_IBERICA, 1490, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clips-calzo-1mm-valenplas-ref-02204-250-1/',
     nota: 'Clips-Calzo 1mm Valenplas Ref.02204 250/1 · artículo 017160 · ref. 02204 · marca Valenplas. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-263', PROV_OCHOA, 487.49, {
+  c('MAT-08-264', PROV_OCHOA, 487.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-1-5-mm-01098899',
     nota: 'Calzos De Nivelación Cerámica 1.5 Mm · artículo 01-09-8899 · ref. 03060 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-263', PROV_CERARTE, 387.97, {
+  c('MAT-08-264', PROV_CERARTE, 387.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nivelador-espaciador-dpiso-sencillo-6-16mm-2001',
     itbis: false,
     nota: 'NIVELADOR ESPACIADOR D/PISO SENCILLO 6-16MM 200/1 · artículo CERA-35534 · ref. 1.5MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-263', PROV_IBERICA, 1490, {
+  c('MAT-08-264', PROV_IBERICA, 1490, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clips-calzo-1-5mm-valenplas-250-1/',
     nota: 'Clips-Calzo 1.5mm Valenplas 250/1 · artículo 017998 · ref. 1.5 mm · marca Valenplas. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-264', PROV_OCHOA, 767.39, {
+  c('MAT-08-265', PROV_OCHOA, 767.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-2-mm-01098900',
     nota: 'Calzos De Nivelación Cerámica 2 Mm · artículo 01-09-8900 · ref. 02205 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-264', PROV_CERARTE, 404.16, {
+  c('MAT-08-265', PROV_CERARTE, 404.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nivelador-espaciador-dpiso-sencillo-6-16mm-2001',
     itbis: false,
     nota: 'NIVELADOR ESPACIADOR D/PISO SENCILLO 6-16MM 200/1 · artículo CERA-35532 · ref. 2MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-264', PROV_IBERICA, 1350, {
+  c('MAT-08-265', PROV_IBERICA, 1350, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clip-calzo-2mm-250-1/',
     nota: 'Clip-Calzo 2mm 250/1 · artículo 017161 · ref. 2 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-264', PROV_IBERICA, 1789.99, {
+  c('MAT-08-265', PROV_IBERICA, 1789.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clips-calzo-espesorado-2mm-valenplas-250-1/',
     nota: 'Clips-Calzo Espesorado 2mm Valenplas 250/1 · artículo 017997 · ref. 2 mm · marca Valenplas. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-265', PROV_OCHOA, 873.47, {
+  c('MAT-08-266', PROV_OCHOA, 873.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/calzos-de-nivelacion-ceramica-3-mm-01098901',
     nota: 'Calzos De Nivelación Cerámica 3 Mm · artículo 01-09-8901 · ref. 02206 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-265', PROV_CERARTE, 370.76, {
+  c('MAT-08-266', PROV_CERARTE, 370.76, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/nivelador-espaciador-dpiso-sencillo-6-16mm-2001',
     itbis: false,
     nota: 'NIVELADOR ESPACIADOR D/PISO SENCILLO 6-16MM 200/1 · artículo CERA-35533 · ref. 3MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-266', PROV_OCHOA, 144.94, {
+  c('MAT-08-267', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-1-mm-01098666',
     nota: 'Nivelador Para Azulejo 1 Mm · artículo 01-09-8666 · ref. 61334BLUE · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-266', PROV_OCHOA, 1690.8, {
+  c('MAT-08-267', PROV_OCHOA, 1690.8, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/clips-nivelador-delta-1mm-fda-400-uds-01098635',
     nota: 'Clips Nivelador Delta 1Mm Fda. 400 Uds · artículo 01-09-8635 · ref. 02839 · marca RUBI. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-266', PROV_CERARTE, 2886.41, {
+  c('MAT-08-267', PROV_CERARTE, 2886.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-leveltec-nivelador-dpisos-2501',
     itbis: false,
     nota: 'TIRANTE LEVELTEC NIVELADOR D/PISOS 250/1 · artículo CERA-32426 · ref. 1 MM · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-266', PROV_CERARTE, 422.52, {
+  c('MAT-08-267', PROV_CERARTE, 422.52, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-pnivelador-dpiso-6-22mm-2001',
     itbis: false,
     nota: 'TIRANTE P/NIVELADOR D/PISO 6-22MM 200/1 · artículo CERA-35528 · ref. 1MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-267', PROV_OCHOA, 144.94, {
+  c('MAT-08-268', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-1-5-mm-01098664',
     nota: 'Nivelador Para Azulejo 1.5 Mm · artículo 01-09-8664 · ref. 61336RED · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-267', PROV_IBERICA, 295, {
+  c('MAT-08-268', PROV_IBERICA, 295, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clips-espaciadores-para-nivelacion-100-1-1-5mm/',
     nota: 'Clips Espaciadores para Nivelacion 1.5MM 100/1 · artículo 016320 · ref. 1.5 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-268', PROV_OCHOA, 144.94, {
+  c('MAT-08-269', PROV_OCHOA, 144.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/nivelador-para-azulejo-2-mm-01098665',
     nota: 'Nivelador Para Azulejo 2 Mm · artículo 01-09-8665 · ref. 61338GREEN · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-268', PROV_CERARTE, 2692.62, {
+  c('MAT-08-269', PROV_CERARTE, 2692.62, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-leveltec-nivelador-dpisos-2501',
     itbis: false,
     nota: 'TIRANTE LEVELTEC NIVELADOR D/PISOS 250/1 · artículo CERA-30186 · ref. 2 MM · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-268', PROV_CERARTE, 2886.41, {
+  c('MAT-08-269', PROV_CERARTE, 2886.41, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-leveltec-nivelador-dpisos-2501',
     itbis: false,
     nota: 'TIRANTE LEVELTEC NIVELADOR D/PISOS 250/1 · artículo CERA-30187 · ref. 2 MM · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-268', PROV_CERARTE, 2574.65, {
+  c('MAT-08-269', PROV_CERARTE, 2574.65, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-leveltec-nivelador-dpisos-2501',
     itbis: false,
     nota: 'TIRANTE LEVELTEC NIVELADOR D/PISOS 250/1 · artículo CERA-30185 · ref. 2 MM · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-268', PROV_CERARTE, 422.52, {
+  c('MAT-08-269', PROV_CERARTE, 422.52, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-pnivelador-dpiso-6-22mm-2001',
     itbis: false,
     nota: 'TIRANTE P/NIVELADOR D/PISO 6-22MM 200/1 · artículo CERA-35529 · ref. 2MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-268', PROV_IBERICA, 249.99, {
+  c('MAT-08-269', PROV_IBERICA, 249.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/clips-espaciadores-p-nivelacion-2mm-100-1/',
     nota: 'Clips Espaciadores P/Nivelacion 2mm 100/1 · artículo 017254 · ref. 2 mm. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-269', PROV_CERARTE, 2574.71, {
+  c('MAT-08-270', PROV_CERARTE, 2574.71, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-leveltec-nivelador-dpisos-2501',
     itbis: false,
     nota: 'TIRANTE LEVELTEC NIVELADOR D/PISOS 250/1 · artículo CERA-34829 · ref. 3 MM · marca PROFILITEC. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-269', PROV_CERARTE, 405.61, {
+  c('MAT-08-270', PROV_CERARTE, 405.61, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/tirante-pnivelador-dpiso-6-22mm-2001',
     itbis: false,
     nota: 'TIRANTE P/NIVELADOR D/PISO 6-22MM 200/1 · artículo CERA-35530 · ref. 3MM · marca MAKOFIX. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-270', PROV_OCHOA, 358.87, {
+  c('MAT-08-271', PROV_OCHOA, 358.87, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cuna-para-nivelar-ceramica-01098758',
     nota: 'Cuña Para Nivelar Cerámica · artículo 01-09-8758 · ref. 60694 · marca CORTAG. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-270', PROV_OCHOA, 845.41, {
+  c('MAT-08-271', PROV_OCHOA, 845.41, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/cunas-nivelacion-para-instalacion-de-ceramica-01098902',
     nota: 'Cuñas Nivelación Para Instalación De Cerámica · artículo 01-09-8902 · ref. 02207 · marca VALENPLAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-271', PROV_HOGARDECO, 3201.97, {
+  c('MAT-08-272', PROV_HOGARDECO, 3201.97, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-madera-sintetica-color-caoba-oscuro-3/',
     peso: 5,
     nota: 'Pisos Exterior WPC – Color CAOBA OSCURO 3 · artículo 3 · ref. Pisos Exterior WPC – Color CAOBA OSCURO 3. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.406 m²; aquí va el precio del m² (RD$ 1300 por pieza). El comercio lista 5 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 5 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-272', PROV_HOGARDECO, 1411.66, {
+  c('MAT-08-273', PROV_HOGARDECO, 1411.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-nogal-2073/',
     nota: 'Pisos De Spc Para Interior – Color 2056 · artículo 2056. · ref. Pisos De Spc Para Interior – Color 2056. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.2196 m²; aquí va el precio del m² (RD$ 310 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-273', PROV_HOGARDECO, 1411.66, {
+  c('MAT-08-274', PROV_HOGARDECO, 1411.66, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://hogardeco.com.do/producto/pisos-de-spc-para-interior-color-2005/',
     peso: 10,
     nota: 'Pisos De Spc Para Interior – Color 2005 · artículo 2005 · ref. Pisos De Spc Para Interior – Color 2005. La tienda cobra por tabla y, según las medidas que publica la tienda, cada una cubre 0.2196 m²; aquí va el precio del m² (RD$ 310 por pieza). El comercio lista 10 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 10 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-274', PROV_CERARTE, 1302.6, {
+  c('MAT-08-275', PROV_CERARTE, 1302.6, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-2',
     itbis: false,
     peso: 3,
     nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34830 · ref. 60X260 · marca PORCELAMIKA. El comercio lista 3 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 3 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-274', PROV_CERARTE, 857.68, {
+  c('MAT-08-275', PROV_CERARTE, 857.68, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/panel-vinil-ppared-60x260-45mm-4',
     itbis: false,
     nota: 'PANEL VINIL P/PARED 60X260 4.5MM · artículo CERA-34879 · ref. 60X260 · marca PORCELAMIKA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-08-275', PROV_OCHOA, 874.38, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-cuad-40cm-x-40cm-x-7-3-6-25mt2-01092958',
-    nota: 'Adoquin Cuad. 40Cm X 40Cm X 7.3 6.25Mt2 · artículo 01-09-2958 · ref. TIPOBALDOSA · marca OCHOA. La tienda cotiza por pieza; van 6.25 adoquines por m² según su propio nombre de artículo (RD$ 139.9 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-276', PROV_OCHOA, 874.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-cuad-40cm-x-40cm-x-7-3-6-25mt2-01092958',
+    nota: 'ADOQUIN CUAD. 40CM X 40CM X 7.3 6.25MT2 · artículo 01-09-2958 · ref. TIPOBALDOSA · marca OCHOA. La tienda cotiza por pieza; van 6.25 adoquines por m² según su propio nombre de artículo (RD$ 139.9 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-276', PROV_OCHOA, 812.28, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-flecha-42-mt2-01096817',
-    nota: 'Adoquin Tipo Flecha 42 / Mt2 · artículo 01-09-6817 · ref. TIPOFLECHA · marca OCHOA. La tienda cotiza por pieza; van 42 adoquines por m² según su propio nombre de artículo (RD$ 19.34 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-277', PROV_OCHOA, 812.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-flecha-42-mt2-01096817',
+    nota: 'ADOQUIN TIPO FLECHA 42 / MT2 · artículo 01-09-6817 · ref. TIPOFLECHA · marca OCHOA. La tienda cotiza por pieza; van 42 adoquines por m² según su propio nombre de artículo (RD$ 19.34 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-277', PROV_OCHOA, 850, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-2x4x8-natural-50-mt2-01092082',
-    nota: 'Adoquin 2X4X8 Natural 50 / Mt2 · artículo 01-09-2082 · ref. TIPOLADRILLO · marca OCHOA. La tienda cotiza por pieza; van 50 adoquines por m² según su propio nombre de artículo (RD$ 17 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-278', PROV_OCHOA, 850, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-2x4x8-natural-50-mt2-01092082',
+    nota: 'ADOQUIN 2X4X8 NATURAL 50 / MT2 · artículo 01-09-2082 · ref. TIPOLADRILLO · marca OCHOA. La tienda cotiza por pieza; van 50 adoquines por m² según su propio nombre de artículo (RD$ 17 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-278', PROV_OCHOA, 872.87, {
-    fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-raqueta-38-25-mt2-01093486',
-    nota: 'Adoquin Tipo Raqueta 38.25 / Mt2 · artículo 01-09-3486 · ref. TIPORAQUETA · marca OCHOA. La tienda cotiza por pieza; van 38.25 adoquines por m² según su propio nombre de artículo (RD$ 22.82 por pieza). ' + SUPUESTO_ITBIS
+  c('MAT-08-279', PROV_OCHOA, 872.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/adoquin-tipo-raqueta-38-25-mt2-01093486',
+    nota: 'ADOQUIN TIPO RAQUETA 38.25 / MT2 · artículo 01-09-3486 · ref. TIPORAQUETA · marca OCHOA. La tienda cotiza por pieza; van 38.25 adoquines por m² según su propio nombre de artículo (RD$ 22.82 por pieza). ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-279', PROV_OCHOA, 55.94, {
+  c('MAT-08-280', PROV_OCHOA, 55.94, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590337',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0337 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-280', PROV_OCHOA, 153.81, {
+  c('MAT-08-281', PROV_OCHOA, 153.81, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590330',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0330 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-281', PROV_OCHOA, 82.72, {
+  c('MAT-08-282', PROV_OCHOA, 82.72, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590335',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0335 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-282', PROV_OCHOA, 162.49, {
+  c('MAT-08-283', PROV_OCHOA, 162.49, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590327',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0327 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-283', PROV_OCHOA, 90.79, {
+  c('MAT-08-284', PROV_OCHOA, 90.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590342',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0342 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-284', PROV_OCHOA, 129.29, {
+  c('MAT-08-285', PROV_OCHOA, 129.29, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590328',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0328 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-285', PROV_OCHOA, 66.5, {
+  c('MAT-08-286', PROV_OCHOA, 66.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590341',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0341 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-286', PROV_OCHOA, 106.37, {
+  c('MAT-08-287', PROV_OCHOA, 106.37, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590332',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0332 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-287', PROV_OCHOA, 78.84, {
+  c('MAT-08-288', PROV_OCHOA, 78.84, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590338',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0338 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-288', PROV_OCHOA, 180.39, {
+  c('MAT-08-289', PROV_OCHOA, 180.39, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590324',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0324 · ref. 1LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-289', PROV_OCHOA, 460.92, {
+  c('MAT-08-290', PROV_OCHOA, 460.92, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-ind-04590331',
     nota: 'Polvo Mosaico Amarillo Ind · artículo 04-59-0331 · ref. 3LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-290', PROV_OCHOA, 280.64, {
+  c('MAT-08-291', PROV_OCHOA, 280.64, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-amarillo-com-04590336',
     nota: 'Polvo Mosaico Amarillo Com · artículo 04-59-0336 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-291', PROV_OCHOA, 367.96, {
+  c('MAT-08-292', PROV_OCHOA, 367.96, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-com-04590334',
     nota: 'Polvo Mosaico Azul Com · artículo 04-59-0334 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-292', PROV_OCHOA, 813.47, {
+  c('MAT-08-293', PROV_OCHOA, 813.47, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-azul-ind-04590326',
     nota: 'Polvo Mosaico Azul Ind · artículo 04-59-0326 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-293', PROV_OCHOA, 406.73, {
+  c('MAT-08-294', PROV_OCHOA, 406.73, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-com-04590343',
     nota: 'Polvo Mosaico Negro Com · artículo 04-59-0343 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-294', PROV_OCHOA, 647.51, {
+  c('MAT-08-295', PROV_OCHOA, 647.51, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-negro-ind-04590329',
     nota: 'Polvo Mosaico Negro Ind · artículo 04-59-0329 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-295', PROV_OCHOA, 333.56, {
+  c('MAT-08-296', PROV_OCHOA, 333.56, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-com-04590340',
     nota: 'Polvo Mosaico Rojo Com · artículo 04-59-0340 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-296', PROV_OCHOA, 472.9, {
+  c('MAT-08-297', PROV_OCHOA, 472.9, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-rojo-ind-04590333',
     nota: 'Polvo Mosaico Rojo Ind · artículo 04-59-0333 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-297', PROV_OCHOA, 350.7, {
+  c('MAT-08-298', PROV_OCHOA, 350.7, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-com-04590339',
     nota: 'Polvo Mosaico Verde Com · artículo 04-59-0339 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-298', PROV_OCHOA, 902.88, {
+  c('MAT-08-299', PROV_OCHOA, 902.88, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-mosaico-verde-ind-04590325',
     nota: 'Polvo Mosaico Verde Ind · artículo 04-59-0325 · ref. 5LIBRAS · marca BELGA-LIBRAS. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-299', PROV_OCHOA, 3195.68, {
+  c('MAT-08-300', PROV_OCHOA, 3195.68, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590027',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0027 · ref. 16322AMAR.COM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-300', PROV_OCHOA, 7742.13, {
+  c('MAT-08-301', PROV_OCHOA, 7742.13, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590022',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0022 · ref. 13632AMAR.IND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-301', PROV_OCHOA, 4220.23, {
+  c('MAT-08-302', PROV_OCHOA, 4220.23, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590021',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0021 · ref. 16066AZULCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-302', PROV_OCHOA, 8183.45, {
+  c('MAT-08-303', PROV_OCHOA, 8183.45, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590050',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0050 · ref. 9776KAZULIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-303', PROV_OCHOA, 4640.79, {
+  c('MAT-08-304', PROV_OCHOA, 4640.79, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590071',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0071 · ref. 8035NEGROCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-304', PROV_OCHOA, 6521.15, {
+  c('MAT-08-305', PROV_OCHOA, 6521.15, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-6316-04590060',
     nota: 'Polvo P / Mosaico (Cromo) 6316 · artículo 04-59-0060 · ref. 9081NEGROIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-305', PROV_OCHOA, 3350.57, {
+  c('MAT-08-306', PROV_OCHOA, 3350.57, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590024',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0024 · ref. 16323ROJOCOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-306', PROV_OCHOA, 5451.6, {
+  c('MAT-08-307', PROV_OCHOA, 5451.6, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-12908-55-lbs-04590023',
     nota: 'Polvo P / Mosaico(Cromo) (12908) 55 Lbs. · artículo 04-59-0023 · ref. F-6225ROJOIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-307', PROV_OCHOA, 4017.75, {
+  c('MAT-08-308', PROV_OCHOA, 4017.75, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-04590033',
     nota: 'Polvo P / Mosaico (Cromo) · artículo 04-59-0033 · ref. 16068VERDECOM. · marca BELGA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-08-308', PROV_OCHOA, 9092.93, {
+  c('MAT-08-309', PROV_OCHOA, 9092.93, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ochoa.com.do/producto/polvo-p-mosaico-cromo-55-lbs-04590059',
     nota: 'Polvo P / Mosaico (Cromo) 55 Lbs. · artículo 04-59-0059 · ref. 14951VERDEIND. · marca BELGA. ' + SUPUESTO_ITBIS
   });
