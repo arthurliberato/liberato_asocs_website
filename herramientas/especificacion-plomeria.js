@@ -430,4 +430,110 @@ const YA_EXISTE = {
   'conexion-tipo-codo-90-material-pvc-drenaje-medida-4pulg': 'MAT-32-006'
 };
 
-module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION, TOPE_PULGADAS };
+/* =========================================================
+   CÓMO SE LEE EL NOMBRE DE UNA CONEXIÓN
+
+   De qué pieza es —codo, tee, niple, reducción—, de qué material y de qué
+   medida. Estaba escrito dentro de las reglas de Cima, que fue el primer
+   comercio de plomería que entró; pero un codo de PVC de 3/4 se llama
+   igual lo venda quien lo venda, así que vive aquí, al lado de la familia
+   que construye. Ochoa trae 551 tuberías y accesorios de PVC y los lee con
+   esto mismo, sin copiar una línea.
+
+   El texto llega ya en minúsculas y sin tildes: cada comercio lo normaliza
+   a su manera antes de llamar.
+   ========================================================= */
+
+const limpiaN = s => String(s || '').replace(/\s+/g, ' ').trim();
+
+const bajaN = s => limpiaN(s).toLowerCase()
+  .replace(/[áà]/g, 'a').replace(/[éè]/g, 'e').replace(/[íì]/g, 'i')
+  .replace(/[óò]/g, 'o').replace(/[úù]/g, 'u').replace(/ñ/g, 'n');
+
+/* Saca las medidas sueltas de un nombre: «CODO PVC PRESION 3/4 x 90» da
+   ['3/4', '90']. Se ignoran los códigos de fabricante, que vienen pegados a
+   letras o guiones. */
+function numerosDe(nombre) {
+  const t = limpiaN(nombre).replace(/,/g, ' ');
+  const salida = [];
+  const re = /(?:^|[\s(])(\d+\s+\d+\s*\/\s*\d+|\d+\s*\/\s*\d+|\d+(?:\.\d+)?)(?=$|[\s)xX×'"\u201d]|mm|MM)/g;
+  let m;
+  while ((m = re.exec(t)) !== null) salida.push(m[1].trim());
+  return salida;
+}
+
+function medidaPulg(txt) {
+  const v = pulgadas(txt);
+  return v === null ? '' : comoPulgada(v);
+}
+
+/* ---------------------------------------------------------
+   Conexiones
+   --------------------------------------------------------- */
+
+const MATERIAL_CONEXION = [
+  [/pvc\s*presion/, 'PVC presión'],
+  [/pvc\s*dren/, 'PVC drenaje'],
+  [/\bcpvc\b/, 'CPVC'],
+  [/\bppr?\b/, 'PPR'],
+  [/\bhg\b|galvaniz/, 'HG'],
+  [/bronce/, 'bronce'],
+  [/cobre/, 'cobre'],
+  [/niquelad/, 'niquelado'],
+  [/\bpvc\b/, 'PVC'],
+  [/mangue/, 'manguera'],
+  [/\bplast/, 'plástico']
+];
+
+function materialDe(n) {
+  for (let i = 0; i < MATERIAL_CONEXION.length; i++) {
+    if (MATERIAL_CONEXION[i][0].test(n)) return MATERIAL_CONEXION[i][1];
+  }
+  return '';
+}
+
+function tipoConexion(n) {
+  if (/^codoniple/.test(n)) return 'codoniple';
+  if (/^codo/.test(n)) return /\b45\b/.test(n) ? 'codo-45' : /\b90\b/.test(n) ? 'codo-90' : 'codo';
+  if (/^tee/.test(n)) return /reducid/.test(n) ? 'tee-reducida' : 'tee';
+  if (/^cruz/.test(n)) return 'cruz';
+  if (/^yee/.test(n)) return 'yee';
+  if (/^niple/.test(n)) return /reductor/.test(n) ? 'niple-reductor' : 'niple';
+  if (/^reduccion/.test(n)) return /\bbus\b|bushing/.test(n) ? 'reduccion-bushing' : 'reduccion';
+  if (/^tapon/.test(n)) return /macho/.test(n) ? 'tapon-macho' : /hembra/.test(n) ? 'tapon-hembra' : 'tapon';
+  if (/^adaptador/.test(n)) return /macho/.test(n) ? 'adaptador-macho' : /hembra/.test(n) ? 'adaptador-hembra' : 'adaptador';
+  if (/^union/.test(n)) return /universal/.test(n) ? 'union-universal' : 'union';
+  if (/^coupling/.test(n)) return 'coupling';
+  if (/^terminal/.test(n)) return 'terminal';
+  if (/^abrazadera/.test(n)) return 'abrazadera';
+  if (/^anilla/.test(n)) return 'anilla';
+  if (/^fitting/.test(n)) return 'fitting';
+  if (/^tuerca/.test(n)) return 'tuerca';
+  if (/^junta/.test(n)) return 'junta';
+  return '';
+}
+
+/* La medida de una conexión: una sola («1/2») o dos, cuando reduce
+   («4 x 2»). El ángulo del codo NO va en la medida: ya está en el tipo. */
+function medidaConexion(a, tipo) {
+  const nums = numerosDe(a.nombre).filter(v => {
+    if (/^codo/.test(bajaN(a.nombre)) && (v === '90' || v === '45')) return false;
+    return true;
+  });
+  if (/mm/i.test(a.nombre)) {
+    const mm = limpiaN(a.nombre).match(/(\d+)\s*mm/gi);
+    if (mm) return mm.map(x => x.replace(/\s*mm/i, '') + ' mm').join(' x ');
+  }
+  const pulg = nums.map(medidaPulg).filter(Boolean);
+  if (!pulg.length) return '';
+  /* Los niples llevan diámetro por largo («1/2 x 2») y los dos importan. En
+     las reducciones son los dos diámetros. En todo lo demás basta el primero. */
+  if (pulg.length >= 2 && /reduc|niple|yee|tee-reducida|fitting|adaptador/.test(tipo + ' ' + bajaN(a.nombre))) {
+    return pulg[0] + ' x ' + pulg[1];
+  }
+  return pulg[0];
+}
+
+
+module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION, TOPE_PULGADAS,
+                   numerosDe, medidaPulg, materialDe, tipoConexion, medidaConexion };

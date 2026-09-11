@@ -65394,6 +65394,370 @@
     url: 'https://ferreteriacima.com.do/products/cemento-pvc-8oz-sm-244-7',
     nota: 'CEMENTO PVC 8oz SM-244-7 · artículo 718594024479. ' + SUPUESTO_ITBIS
   });
+  c('MAT-33-001', PROV_OCHOA, 1718.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-escritorio-1l-e27-11w-blanca-01485561',
+    art: 'LAMPARA D / ESCRITORIO 1L / E27 / 11W / BLANCA',
+    sku: '01-48-5561',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-escritorio-1l-e27-11w-blanca-01485561',
+    nota: 'LAMPARA D / ESCRITORIO 1L / E27 / 11W / BLANCA · artículo 01-48-5561 · ref. 00367T-WH · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 2271.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-escritorio-1l-gu10-20w-negro-01485560',
+    art: 'LAMPARA D / ESCRITORIO 1L / GU10 / 20W / NEGRO',
+    sku: '01-48-5560',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-escritorio-1l-gu10-20w-negro-01485560',
+    nota: 'LAMPARA D / ESCRITORIO 1L / GU10 / 20W / NEGRO · artículo 01-48-5560 · ref. 00336T-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 680, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-escritorio-led-1-5w-30-60k-niq-01485559',
+    art: 'LAMPARA D / ESCRITORIO LED 1.5W / 30-60K / NIQ',
+    sku: '01-48-5559',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-escritorio-led-1-5w-30-60k-niq-01485559',
+    nota: 'LAMPARA D / ESCRITORIO LED 1.5W / 30-60K / NIQ · artículo 01-48-5559 · ref. 00318T-SN · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 1162.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-escritorio-led-2w-4000k-blanca-01485557',
+    art: 'LAMPARA D / ESCRITORIO LED 2W / 4000K / BLANCA',
+    sku: '01-48-5557',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-escritorio-led-2w-4000k-blanca-01485557',
+    nota: 'LAMPARA D / ESCRITORIO LED 2W / 4000K / BLANCA · artículo 01-48-5557 · ref. 00316WH · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 3863.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-b-vidrio-circular-transp-40x53cm-01485829',
+    art: 'LAMPARA B / VIDRIO CIRCULAR TRANSP 40X53CM',
+    sku: '01-48-5829',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-b-vidrio-circular-transp-40x53cm-01485829',
+    nota: 'LAMPARA B / VIDRIO CIRCULAR TRANSP 40X53CM · artículo 01-48-5829 · ref. 454-2600017/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5605.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-escritorio-hierro-negra-51cm-01485016',
+    art: 'LAMPARA D / ESCRITORIO HIERRO NEGRA 51CM',
+    sku: '01-48-5016',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-escritorio-hierro-negra-51cm-01485016',
+    nota: 'LAMPARA D / ESCRITORIO HIERRO NEGRA 51CM · artículo 01-48-5016 · ref. 541-670010/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5140.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-1l-e27-60w-marmol-dorado-01485825',
+    art: 'LAMPARA D / MESA 1L / E27 / 60W / MARMOL / DORADO',
+    sku: '01-48-5825',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-1l-e27-60w-marmol-dorado-01485825',
+    nota: 'LAMPARA D / MESA 1L / E27 / 60W / MARMOL / DORADO · artículo 01-48-5825 · ref. 00907T-WH · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 1749.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-1l-e27-negro-01485360',
+    art: 'LAMPARA D / MESA 1L / E27 / NEGRO',
+    sku: '01-48-5360',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-1l-e27-negro-01485360',
+    nota: 'LAMPARA D / MESA 1L / E27 / NEGRO · artículo 01-48-5360 · ref. IL-DEC-1113BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 1984.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-acab-lino-1l-e27-40w-01485611',
+    art: 'LAMPARA D / MESA ACAB. LINO 1L / E27 / 40W',
+    sku: '01-48-5611',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-acab-lino-1l-e27-40w-01485611',
+    nota: 'LAMPARA D / MESA ACAB. LINO 1L / E27 / 40W · artículo 01-48-5611 · ref. 00917T-NAT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 6079.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-blanco-gris-32-01485775',
+    art: 'LAMPARA D / MESA B / BLANCO-GRIS 32”',
+    sku: '01-48-5775',
+    marca: 'STYLECRAFT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-blanco-gris-32-01485775',
+    nota: 'LAMPARA D / MESA B / BLANCO-GRIS 32” · artículo 01-48-5775 · ref. KHL335224 · marca STYLECRAFT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 16900.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-bronce-antiguo-32-01483677',
+    art: 'LAMPARA D / MESA B / BRONCE ANTIGUO 32”',
+    sku: '01-48-3677',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-bronce-antiguo-32-01483677',
+    nota: 'LAMPARA D / MESA B / BRONCE ANTIGUO 32” · artículo 01-48-3677 · ref. 26384-1 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 14044.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-azul-gris-35-01483710',
+    art: 'LAMPARA D / MESA B / CERAMICA AZUL / GRIS 35”',
+    sku: '01-48-3710',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-azul-gris-35-01483710',
+    nota: 'LAMPARA D / MESA B / CERAMICA AZUL / GRIS 35” · artículo 01-48-3710 · ref. 29797 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 10076.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-gris-27-01483674',
+    art: 'LAMPARA D / MESA B / CERAMICA GRIS 27”',
+    sku: '01-48-3674',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-gris-27-01483674',
+    nota: 'LAMPARA D / MESA B / CERAMICA GRIS 27” · artículo 01-48-3674 · ref. 27219 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 11773.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-marron-35-01485791',
+    art: 'LAMPARA D / MESA B / CERAMICA MARRON 35”',
+    sku: '01-48-5791',
+    marca: 'DECO MARCHE',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-marron-35-01485791',
+    nota: 'LAMPARA D / MESA B / CERAMICA MARRON 35” · artículo 01-48-5791 · ref. 14217 · marca DECO MARCHE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 6469.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-negra-72-5cm-01485397',
+    art: 'LAMPARA D / MESA B / CERAMICA NEGRA 72.5CM',
+    sku: '01-48-5397',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-ceramica-negra-72-5cm-01485397',
+    nota: 'LAMPARA D / MESA B / CERAMICA NEGRA 72.5CM · artículo 01-48-5397 · ref. 442-030190/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 18374.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-cristal-29-5-01484304',
+    art: 'LAMPARA D / MESA B / CRISTAL 29.5”',
+    sku: '01-48-4304',
+    marca: 'K&K',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-cristal-29-5-01484304',
+    nota: 'LAMPARA D / MESA B / CRISTAL 29.5” · artículo 01-48-4304 · ref. 17970A-SI · marca K&K. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 8866.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-resina-gr-cristal-34-5-01484261',
+    art: 'LAMPARA D / MESA B / RESINA GR / CRISTAL 34.5”',
+    sku: '01-48-4261',
+    marca: 'CRESTVIEW',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-resina-gr-cristal-34-5-01484261',
+    nota: 'LAMPARA D / MESA B / RESINA GR / CRISTAL 34.5” · artículo 01-48-4261 · ref. CVAVP1704 · marca CRESTVIEW. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5756.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-terracota-blanca-53-5cm-01485760',
+    art: 'LAMPARA D / MESA B / TERRACOTA BLANCA 53.5CM',
+    sku: '01-48-5760',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-terracota-blanca-53-5cm-01485760',
+    nota: 'LAMPARA D / MESA B / TERRACOTA BLANCA 53.5CM · artículo 01-48-5760 · ref. 442-030220/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 10837.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-b-vidrio-gris-16x34-75-01484232',
+    art: 'LAMPARA D / MESA B / VIDRIO GRIS 16X34.75”',
+    sku: '01-48-4232',
+    marca: 'CRESTVIEW',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-b-vidrio-gris-16x34-75-01484232',
+    nota: 'LAMPARA D / MESA B / VIDRIO GRIS 16X34.75” · artículo 01-48-4232 · ref. CVABS1993 · marca CRESTVIEW. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 10136.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-bohemia-madera-33-01485779',
+    peso: 2,
+    art: 'LAMPARA D / MESA BOHEMIA MADERA 33”',
+    sku: '01-48-5779',
+    marca: 'STYLECRAFT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-bohemia-madera-33-01485779',
+    nota: 'LAMPARA D / MESA BOHEMIA MADERA 33” · artículo 01-48-5779 · ref. NWL334051 · marca STYLECRAFT. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 969.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-c-bateria-recarg-9x21cm-01485358',
+    art: 'LAMPARA D / MESA C / BATERIA RECARG 9X21CM',
+    sku: '01-48-5358',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-c-bateria-recarg-9x21cm-01485358',
+    nota: 'LAMPARA D / MESA C / BATERIA RECARG 9X21CM · artículo 01-48-5358 · ref. MP-40035A-CO · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 860.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-c-bateria-recarg-9x21cm-01485357',
+    art: 'LAMPARA D / MESA C / BATERIA RECARG 9X21CM',
+    sku: '01-48-5357',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-c-bateria-recarg-9x21cm-01485357',
+    nota: 'LAMPARA D / MESA C / BATERIA RECARG 9X21CM · artículo 01-48-5357 · ref. MP-40035A-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 11184.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-ceramica-32-h-01484224',
+    art: 'LAMPARA D / MESA CERAMICA 32”H',
+    sku: '01-48-4224',
+    marca: 'CRESTVIEW',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-ceramica-32-h-01484224',
+    nota: 'LAMPARA D / MESA CERAMICA 32”H · artículo 01-48-4224 · ref. CVAP1958VERDE · marca CRESTVIEW. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 6607.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-ceramica-blanca-38x56-5cm-01485850',
+    art: 'LAMPARA D / MESA CERAMICA BLANCA 38X56.5CM',
+    sku: '01-48-5850',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-ceramica-blanca-38x56-5cm-01485850',
+    nota: 'LAMPARA D / MESA CERAMICA BLANCA 38X56.5CM · artículo 01-48-5850 · ref. 442-030245/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 6799.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-ceramica-marron-c-asas-54-01485852',
+    art: 'LAMPARA D / MESA CERAMICA MARRON C / ASAS 54',
+    sku: '01-48-5852',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-ceramica-marron-c-asas-54-01485852',
+    nota: 'LAMPARA D / MESA CERAMICA MARRON C / ASAS 54 · artículo 01-48-5852 · ref. 442-030250/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 2826.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-led-1l-3000k-3-7v-negra-01485128',
+    art: 'LAMPARA D / MESA LED 1L / 3000K / 3.7V / NEGRA',
+    sku: '01-48-5128',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-led-1l-3000k-3-7v-negra-01485128',
+    nota: 'LAMPARA D / MESA LED 1L / 3000K / 3.7V / NEGRA · artículo 01-48-5128 · ref. MP-40022A-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 892.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-led-tactil-1w-blanca-01485824',
+    peso: 2,
+    art: 'LAMPARA D / MESA LED TACTIL 1W / BLANCA',
+    sku: '01-48-5824',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-led-tactil-1w-blanca-01485824',
+    nota: 'LAMPARA D / MESA LED TACTIL 1W / BLANCA · artículo 01-48-5824 · ref. 00923WH-CCT · marca HOME DELIGHT. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 9122.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-marmol-blanco-35-01485780',
+    art: 'LAMPARA D / MESA MARMOL BLANCO 35”',
+    sku: '01-48-5780',
+    marca: 'STYLECRAFT',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-marmol-blanco-35-01485780',
+    nota: 'LAMPARA D / MESA MARMOL BLANCO 35” · artículo 01-48-5780 · ref. L334794 · marca STYLECRAFT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 7880.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-metal-3-luces-28-25-01484247',
+    art: 'LAMPARA D / MESA METAL 3 LUCES 28.25”',
+    sku: '01-48-4247',
+    marca: 'CRESTVIEW',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-metal-3-luces-28-25-01484247',
+    nota: 'LAMPARA D / MESA METAL 3 LUCES 28.25” · artículo 01-48-4247 · ref. CVAER1615 · marca CRESTVIEW. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5367.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-mesa-tipo-bambu-b-metal-dorado-01485404',
+    art: 'LAMPARA D / MESA TIPO BAMBU B / METAL DORADO',
+    sku: '01-48-5404',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-mesa-tipo-bambu-b-metal-dorado-01485404',
+    nota: 'LAMPARA D / MESA TIPO BAMBU B / METAL DORADO · artículo 01-48-5404 · ref. 541-300907/161CM · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 2301.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-piso-7w-6500k-01485705',
+    art: 'LAMPARA D / PISO 7W / 6500K',
+    sku: '01-48-5705',
+    marca: 'GENER-VEGA',
+    url: 'https://ochoa.com.do/producto/lampara-d-piso-7w-6500k-01485705',
+    nota: 'LAMPARA D / PISO 7W / 6500K · artículo 01-48-5705 · ref. HIKARU · marca GENER-VEGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 8598.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-piso-hierro-negro-20x35x123cm-01485015',
+    art: 'LAMPARA D / PISO HIERRO NEGRO 20X35X123CM',
+    sku: '01-48-5015',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-piso-hierro-negro-20x35x123cm-01485015',
+    nota: 'LAMPARA D / PISO HIERRO NEGRO 20X35X123CM · artículo 01-48-5015 · ref. 541-670008/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 3947.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-piso-led-3000k-madera-negro-01485564',
+    art: 'LAMPARA D / PISO LED 3000K / MADERA-NEGRO',
+    sku: '01-48-5564',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-piso-led-3000k-madera-negro-01485564',
+    nota: 'LAMPARA D / PISO LED 3000K / MADERA-NEGRO · artículo 01-48-5564 · ref. TBL157-1 · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 10618.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-piso-tripode-madera-77-h-01484085',
+    art: 'LAMPARA D / PISO TRIPODE MADERA 77”H',
+    sku: '01-48-4085',
+    marca: 'UMA',
+    url: 'https://ochoa.com.do/producto/lampara-d-piso-tripode-madera-77-h-01484085',
+    nota: 'LAMPARA D / PISO TRIPODE MADERA 77”H · artículo 01-48-4085 · ref. 24484 · marca UMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 12638.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-negro-01483122',
+    art: 'LAMPARA DE MESA 1L / E27 / 60W / NEGRO',
+    sku: '01-48-3122',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-negro-01483122',
+    nota: 'LAMPARA DE MESA 1L / E27 / 60W / NEGRO · artículo 01-48-3122 · ref. 15620634-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 3574.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-dorado-01484137',
+    peso: 2,
+    art: 'LAMPARA DE MESA 1L / E27 / 60W DORADO',
+    sku: '01-48-4137',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-dorado-01484137',
+    nota: 'LAMPARA DE MESA 1L / E27 / 60W DORADO · artículo 01-48-4137 · ref. 15623327-0 · marca IKELITE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 2747.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-negro-01484136',
+    art: 'LAMPARA DE MESA 1L / E27 / 60W NEGRO',
+    sku: '01-48-4136',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-mesa-1l-e27-60w-negro-01484136',
+    nota: 'LAMPARA DE MESA 1L / E27 / 60W NEGRO · artículo 01-48-4136 · ref. 15623353-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 4789.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-mesa-metal-dorado-45x12x45cm-01485409',
+    art: 'LAMPARA DE MESA METAL DORADO 45X12X45CM',
+    sku: '01-48-5409',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-mesa-metal-dorado-45x12x45cm-01485409',
+    nota: 'LAMPARA DE MESA METAL DORADO 45X12X45CM · artículo 01-48-5409 · ref. 541-690026/1 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5065.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-mesa-vidrio-ambar-madera-33-01485784',
+    art: 'LAMPARA DE MESA VIDRIO AMBAR / MADERA 33”',
+    sku: '01-48-5784',
+    marca: 'STYLECRAFT',
+    url: 'https://ochoa.com.do/producto/lampara-de-mesa-vidrio-ambar-madera-33-01485784',
+    nota: 'LAMPARA DE MESA VIDRIO AMBAR / MADERA 33” · artículo 01-48-5784 · ref. KHL334284 · marca STYLECRAFT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 8629.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-piso-1l-e27-dorada-01483826',
+    art: 'LAMPARA DE PISO 1L / E27 DORADA',
+    sku: '01-48-3826',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-piso-1l-e27-dorada-01483826',
+    nota: 'LAMPARA DE PISO 1L / E27 DORADA · artículo 01-48-3826 · ref. 213017F-1GD · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 9366.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-piso-ambar-negra-e27-1l-60w-01483155',
+    art: 'LAMPARA DE PISO AMBAR / NEGRA E27 / 1L / 60W',
+    sku: '01-48-3155',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-de-piso-ambar-negra-e27-1l-60w-01483155',
+    nota: 'LAMPARA DE PISO AMBAR / NEGRA E27 / 1L / 60W · artículo 01-48-3155 · ref. F8106-1 · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 5452.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-piso-base-dorada-verde-01484950',
+    peso: 2,
+    art: 'LAMPARA DE PISO BASE DORADA / VERDE',
+    sku: '01-48-4950',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-piso-base-dorada-verde-01484950',
+    nota: 'LAMPARA DE PISO BASE DORADA / VERDE · artículo 01-48-4950 · ref. 213021F-1GDGN · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 4777.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-decorativa-d-mesa-cristal-13x30-01483552',
+    art: 'LAMPARA DECORATIVA D / MESA CRISTAL 13X30”',
+    sku: '01-48-3552',
+    marca: 'UMA',
+    url: 'https://ochoa.com.do/producto/lampara-decorativa-d-mesa-cristal-13x30-01483552',
+    nota: 'LAMPARA DECORATIVA D / MESA CRISTAL 13X30” · artículo 01-48-3552 · ref. 33265 · marca UMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 487.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-metal-d-mesa-11-5x11-5x18cm-01484344',
+    art: 'LAMPARA LED METAL D / MESA 11.5X11.5X18CM',
+    sku: '01-48-4344',
+    marca: 'DECORE',
+    url: 'https://ochoa.com.do/producto/lampara-led-metal-d-mesa-11-5x11-5x18cm-01484344',
+    nota: 'LAMPARA LED METAL D / MESA 11.5X11.5X18CM · artículo 01-48-4344 · ref. 604-04932SURTIDO · marca DECORE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-001', PROV_OCHOA, 1688.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-piso-bc-led-4w-01485734',
+    art: 'LAMPARA P / PISO BC LED 4W',
+    sku: '01-48-5734',
+    marca: 'GENER-VEGA',
+    url: 'https://ochoa.com.do/producto/lampara-p-piso-bc-led-4w-01485734',
+    nota: 'LAMPARA P / PISO BC LED 4W · artículo 01-48-5734 · ref. (ML-LPP4WBC) · marca GENER-VEGA. ' + SUPUESTO_ITBIS
+  });
   c('MAT-33-001', PROV_ALISS, 3027.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-mesa-con-pantalla-de-yute-20x40cm-3056998',
     art: 'Lámpara Mesa Con Pantalla De Yute 20X40Cm',
@@ -65600,6 +65964,813 @@
     marca: 'Vigo Lighting Group',
     url: 'https://luminatti.com/products/table-lamp-with-marble-base-and-golden-disc-d14in-led-3000k-8w-120v-60hz',
     nota: 'Table Lamp with Marble base and Golden Disc D14in LED 3000K 8W 120v/60Hz · artículo MTBMG007732D360GDLEDWW8W · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 518.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-escalera-exterior-interior-e27-1-01186133',
+    art: 'LAMPARA ESCALERA EXTERIOR / INTERIOR E27 1',
+    sku: '01-18-6133',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-escalera-exterior-interior-e27-1-01186133',
+    nota: 'LAMPARA ESCALERA EXTERIOR / INTERIOR E27 1 · artículo 01-18-6133 · ref. 101665-11 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1388.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-d-pared-inalambric-4-5w-6v-2700k-01485355',
+    peso: 2,
+    art: 'APLIQUE D / PARED INALAMBRIC 4.5W / 6V / 2700K',
+    sku: '01-48-5355',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-d-pared-inalambric-4-5w-6v-2700k-01485355',
+    nota: 'APLIQUE D / PARED INALAMBRIC 4.5W / 6V / 2700K · artículo 01-48-5355 · ref. P-10010BK · marca 770 LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2129.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-d-pared-led-15w-30-60k-cromo-01485566',
+    art: 'APLIQUE D / PARED LED 15W / 30-60K / CROMO',
+    sku: '01-48-5566',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/aplique-d-pared-led-15w-30-60k-cromo-01485566',
+    nota: 'APLIQUE D / PARED LED 15W / 30-60K / CROMO · artículo 01-48-5566 · ref. 00284CH-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1738.98, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-d-pared-led-15w-30-60k-negro-01485565',
+    art: 'APLIQUE D / PARED LED 15W / 30-60K / NEGRO',
+    sku: '01-48-5565',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/aplique-d-pared-led-15w-30-60k-negro-01485565',
+    nota: 'APLIQUE D / PARED LED 15W / 30-60K / NEGRO · artículo 01-48-5565 · ref. 00284BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 819.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-de-pared-1l-25w-gu10-01485352',
+    art: 'APLIQUE DE PARED 1L / 25W / GU10',
+    sku: '01-48-5352',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-de-pared-1l-25w-gu10-01485352',
+    nota: 'APLIQUE DE PARED 1L / 25W / GU10 · artículo 01-48-5352 · ref. P-10005A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 352.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-de-pared-1l-25w-ip44-01485419',
+    art: 'APLIQUE DE PARED 1L / 25W / IP44',
+    sku: '01-48-5419',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-de-pared-1l-25w-ip44-01485419',
+    nota: 'APLIQUE DE PARED 1L / 25W / IP44 · artículo 01-48-5419 · ref. P-10016BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3195.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-de-pared-led-10w-3000k-dorado-ce-01485552',
+    art: 'APLIQUE DE PARED LED 10W / 3000K / DORADO CE',
+    sku: '01-48-5552',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/aplique-de-pared-led-10w-3000k-dorado-ce-01485552',
+    nota: 'APLIQUE DE PARED LED 10W / 3000K / DORADO CE · artículo 01-48-5552 · ref. 00774W-GD-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1912.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-de-pared-led-12w-3cct-negro-01485350',
+    art: 'APLIQUE DE PARED LED 12W / 3CCT / NEGRO',
+    sku: '01-48-5350',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-de-pared-led-12w-3cct-negro-01485350',
+    nota: 'APLIQUE DE PARED LED 12W / 3CCT / NEGRO · artículo 01-48-5350 · ref. IL-DEC-1501BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2031.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-de-pared-led-16w-3-4-6000k-70cm-01485252',
+    peso: 2,
+    art: 'APLIQUE DE PARED LED 16W / 3 / 4 / 6000K / 70CM',
+    sku: '01-48-5252',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-de-pared-led-16w-3-4-6000k-70cm-01485252',
+    nota: 'APLIQUE DE PARED LED 16W / 3 / 4 / 6000K / 70CM · artículo 01-48-5252 · ref. IL-DEC-1502A · marca 770 LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1338.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-exterior-led-6w-3000k-ip54-01485445',
+    art: 'APLIQUE EXTERIOR LED 6W / 3000K / IP54',
+    sku: '01-48-5445',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/aplique-exterior-led-6w-3000k-ip54-01485445',
+    nota: 'APLIQUE EXTERIOR LED 6W / 3000K / IP54 · artículo 01-48-5445 · ref. ML-27055ABK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1152.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-pared-led-5w-3000k-ip20-01485444',
+    art: 'APLIQUE PARED LED 5W / 3000K / IP20',
+    sku: '01-48-5444',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/aplique-pared-led-5w-3000k-ip20-01485444',
+    nota: 'APLIQUE PARED LED 5W / 3000K / IP20 · artículo 01-48-5444 · ref. ML-27111A-BK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2322.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-pared-solar-led-2w-ip65-01485448',
+    art: 'APLIQUE PARED SOLAR LED 2W / IP65',
+    sku: '01-48-5448',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-pared-solar-led-2w-ip65-01485448',
+    nota: 'APLIQUE PARED SOLAR LED 2W / IP65 · artículo 01-48-5448 · ref. E-30096B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1361.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-pared-solar-led-2w-ip65-01485447',
+    art: 'APLIQUE PARED SOLAR LED 2W / IP65',
+    sku: '01-48-5447',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-pared-solar-led-2w-ip65-01485447',
+    nota: 'APLIQUE PARED SOLAR LED 2W / IP65 · artículo 01-48-5447 · ref. E-30096A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2323.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-spot-1l-e27-40w-negro-01483349',
+    art: 'LAMP SPOT 1L / E27 / 40W NEGRO',
+    sku: '01-48-3349',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-spot-1l-e27-40w-negro-01483349',
+    nota: 'LAMP SPOT 1L / E27 / 40W NEGRO · artículo 01-48-3349 · ref. 2122632-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2625.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-spot-3l-e14-40w-negro-01483330',
+    art: 'LAMP SPOT 3L / E14 / 40W NEGRO',
+    sku: '01-48-3330',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-spot-3l-e14-40w-negro-01483330',
+    nota: 'LAMP SPOT 3L / E14 / 40W NEGRO · artículo 01-48-3330 · ref. 2122614-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 531.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-de-pared-interior-led-1l-3000k-3w-01483613',
+    art: 'LAMP. DE PARED INTERIOR LED 1L / 3000K / 3W',
+    sku: '01-48-3613',
+    marca: 'NUVO',
+    url: 'https://ochoa.com.do/producto/lamp-de-pared-interior-led-1l-3000k-3w-01483613',
+    nota: 'LAMP. DE PARED INTERIOR LED 1L / 3000K / 3W · artículo 01-48-3613 · ref. 65-402 · marca NUVO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 500.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-de-pared-interior-led-1l-3000k-5w-01483614',
+    art: 'LAMP. DE PARED INTERIOR LED 1L / 3000K / 5W',
+    sku: '01-48-3614',
+    marca: 'NUVO',
+    url: 'https://ochoa.com.do/producto/lamp-de-pared-interior-led-1l-3000k-5w-01483614',
+    nota: 'LAMP. DE PARED INTERIOR LED 1L / 3000K / 5W · artículo 01-48-3614 · ref. 65-404 · marca NUVO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 728.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-int-pared-led-6w-3000k-negra-01484051',
+    art: 'LAMP. INT. PARED LED 6W / 3000K NEGRA',
+    sku: '01-48-4051',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lamp-int-pared-led-6w-3000k-negra-01484051',
+    nota: 'LAMP. INT. PARED LED 6W / 3000K NEGRA · artículo 01-48-4051 · ref. 50136A-BK · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1150.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-pared-1l-e27-60w-negro-01483646',
+    art: 'LAMP. PARED 1L / E27 / 60W NEGRO',
+    sku: '01-48-3646',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-pared-1l-e27-60w-negro-01483646',
+    nota: 'LAMP. PARED 1L / E27 / 60W NEGRO · artículo 01-48-3646 · ref. 1923037-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 875.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-1l-40w-e27-acab-niquel-01482792',
+    art: 'LAMPARA D / PARED 1L / 40W / E27 / ACAB. NIQUEL',
+    sku: '01-48-2792',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-1l-40w-e27-acab-niquel-01482792',
+    nota: 'LAMPARA D / PARED 1L / 40W / E27 / ACAB. NIQUEL · artículo 01-48-2792 · ref. 4322100-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1613.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-1l-e27-25w-blanco-01483477',
+    peso: 2,
+    art: 'LAMPARA D / PARED 1L / E27 / 25W BLANCO',
+    sku: '01-48-3477',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-1l-e27-25w-blanco-01483477',
+    nota: 'LAMPARA D / PARED 1L / E27 / 25W BLANCO · artículo 01-48-3477 · ref. 26797A-WH · marca 770 LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1577.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-1l-e27-40w-blanca-01484548',
+    art: 'LAMPARA D / PARED 1L / E27 / 40W BLANCA',
+    sku: '01-48-4548',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-1l-e27-40w-blanca-01484548',
+    nota: 'LAMPARA D / PARED 1L / E27 / 40W BLANCA · artículo 01-48-4548 · ref. 1932374-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1504.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-2l-e27-40w-negro-01483464',
+    art: 'LAMPARA D / PARED 2L / E27 / 40W NEGRO',
+    sku: '01-48-3464',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-2l-e27-40w-negro-01483464',
+    nota: 'LAMPARA D / PARED 2L / E27 / 40W NEGRO · artículo 01-48-3464 · ref. 26893A-2W · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3116.56, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-3l-e27-40w-blanco-01483465',
+    art: 'LAMPARA D / PARED 3L / E27 / 40W BLANCO',
+    sku: '01-48-3465',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-3l-e27-40w-blanco-01483465',
+    nota: 'LAMPARA D / PARED 3L / E27 / 40W BLANCO · artículo 01-48-3465 · ref. 26892A-3W · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 630.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-1l-gu10-7w-blanco-01484566',
+    art: 'LAMPARA D / PARED EXT. 1L / GU10 / 7W / BLANCO',
+    sku: '01-48-4566',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-1l-gu10-7w-blanco-01484566',
+    nota: 'LAMPARA D / PARED EXT. 1L / GU10 / 7W / BLANCO · artículo 01-48-4566 · ref. 4623663-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2322.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-g9-9x8x55cm-dorada-01485293',
+    art: 'LAMPARA D / PARED G9 / 9X8X55CM / DORADA',
+    sku: '01-48-5293',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-g9-9x8x55cm-dorada-01485293',
+    nota: 'LAMPARA D / PARED G9 / 9X8X55CM / DORADA · artículo 01-48-5293 · ref. P-20020BR · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1182.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-13w-3000k-dorado-01485571',
+    art: 'LAMPARA D / PARED LED 13W / 3000K / DORADO',
+    sku: '01-48-5571',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-13w-3000k-dorado-01485571',
+    nota: 'LAMPARA D / PARED LED 13W / 3000K / DORADO · artículo 01-48-5571 · ref. 00463W-GD-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1019.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-13w-3000k-negro-01485570',
+    art: 'LAMPARA D / PARED LED 13W / 3000K / NEGRO',
+    sku: '01-48-5570',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-13w-3000k-negro-01485570',
+    nota: 'LAMPARA D / PARED LED 13W / 3000K / NEGRO · artículo 01-48-5570 · ref. 00463W-BK-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3033.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-dorada-01485569',
+    art: 'LAMPARA D / PARED LED 18W / 3000K / DORADA',
+    sku: '01-48-5569',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-dorada-01485569',
+    nota: 'LAMPARA D / PARED LED 18W / 3000K / DORADA · artículo 01-48-5569 · ref. 00442W-GD-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3385.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-dorado-01485573',
+    art: 'LAMPARA D / PARED LED 18W / 3000K / DORADO',
+    sku: '01-48-5573',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-dorado-01485573',
+    nota: 'LAMPARA D / PARED LED 18W / 3000K / DORADO · artículo 01-48-5573 · ref. 00578W-GD-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2535.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-negro-01485568',
+    art: 'LAMPARA D / PARED LED 18W / 3000K / NEGRO',
+    sku: '01-48-5568',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-negro-01485568',
+    nota: 'LAMPARA D / PARED LED 18W / 3000K / NEGRO · artículo 01-48-5568 · ref. 00442W-BK-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3300.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-negro-01485572',
+    art: 'LAMPARA D / PARED LED 18W / 3000K / NEGRO',
+    sku: '01-48-5572',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-18w-3000k-negro-01485572',
+    nota: 'LAMPARA D / PARED LED 18W / 3000K / NEGRO · artículo 01-48-5572 · ref. 00576W-BK-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2450.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-20w-4000k-blanco-01484156',
+    art: 'LAMPARA D / PARED LED 20W / 4000K BLANCO',
+    sku: '01-48-4156',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-20w-4000k-blanco-01484156',
+    nota: 'LAMPARA D / PARED LED 20W / 4000K BLANCO · artículo 01-48-4156 · ref. 27108C-WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2357.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-20w-4000k-negro-01484868',
+    art: 'LAMPARA D / PARED LED 20W / 4000K NEGRO',
+    sku: '01-48-4868',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-20w-4000k-negro-01484868',
+    nota: 'LAMPARA D / PARED LED 20W / 4000K NEGRO · artículo 01-48-4868 · ref. 27108A-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 4810.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-8w-3000k-resina-01485821',
+    art: 'LAMPARA D / PARED LED 8W / 3000K / RESINA',
+    sku: '01-48-5821',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-8w-3000k-resina-01485821',
+    nota: 'LAMPARA D / PARED LED 8W / 3000K / RESINA · artículo 01-48-5821 · ref. 01083W-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2876.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-1l-40w-e27-blanca-01483848',
+    peso: 2,
+    art: 'LAMPARA DE PARED 1L / 40W / E27 BLANCA',
+    sku: '01-48-3848',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-1l-40w-e27-blanca-01483848',
+    nota: 'LAMPARA DE PARED 1L / 40W / E27 BLANCA · artículo 01-48-3848 · ref. 152066W-1GDWH · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3595.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-1l-g9-40w-madera-01483841',
+    peso: 2,
+    art: 'LAMPARA DE PARED 1L / G9 / 40W MADERA',
+    sku: '01-48-3841',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-1l-g9-40w-madera-01483841',
+    nota: 'LAMPARA DE PARED 1L / G9 / 40W MADERA · artículo 01-48-3841 · ref. 264050WB-1WD · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 5752.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-2l-40w-e27-blanca-01483845',
+    art: 'LAMPARA DE PARED 2L / 40W / E27 BLANCA',
+    sku: '01-48-3845',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-2l-40w-e27-blanca-01483845',
+    nota: 'LAMPARA DE PARED 2L / 40W / E27 BLANCA · artículo 01-48-3845 · ref. 260064WA-LED-2WH · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1359.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-2l-e27-60w-negro-01483869',
+    art: 'LAMPARA DE PARED 2L / E27 / 60W NEGRO',
+    sku: '01-48-3869',
+    marca: 'ECO MAX',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-2l-e27-60w-negro-01483869',
+    nota: 'LAMPARA DE PARED 2L / E27 / 60W NEGRO · artículo 01-48-3869 · ref. 1122558-2 · marca ECO MAX. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1918.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-blanca-01483813',
+    art: 'LAMPARA DE PARED BLANCA',
+    sku: '01-48-3813',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-blanca-01483813',
+    nota: 'LAMPARA DE PARED BLANCA · artículo 01-48-3813 · ref. 253053W-1WH · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1349.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-led-blanca-01483823',
+    peso: 2,
+    art: 'LAMPARA DE PARED LED BLANCA',
+    sku: '01-48-3823',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-led-blanca-01483823',
+    nota: 'LAMPARA DE PARED LED BLANCA · artículo 01-48-3823 · ref. 260055W-LED-WH · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3394.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-piso-acero-inox-6-led-50w-01483046',
+    art: 'LAMPARA DE PISO ACERO INOX 6 LED / 50W',
+    sku: '01-48-3046',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-piso-acero-inox-6-led-50w-01483046',
+    nota: 'LAMPARA DE PISO ACERO INOX 6 LED / 50W · artículo 01-48-3046 · ref. 4603410-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 958.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-emp-spot-1l-gu10-13w-blanco-01483225',
+    art: 'LAMPARA EMP. SPOT 1L / GU10 / 13W BLANCO',
+    sku: '01-48-3225',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-emp-spot-1l-gu10-13w-blanco-01483225',
+    nota: 'LAMPARA EMP. SPOT 1L / GU10 / 13W BLANCO · artículo 01-48-3225 · ref. 15622504-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 942.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-emp-spot-1l-gu10-13w-negro-01483226',
+    art: 'LAMPARA EMP. SPOT 1L / GU10 / 13W NEGRO',
+    sku: '01-48-3226',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-emp-spot-1l-gu10-13w-negro-01483226',
+    nota: 'LAMPARA EMP. SPOT 1L / GU10 / 13W NEGRO · artículo 01-48-3226 · ref. 15622504-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1152.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-pared-1l-18w-6500k-blanca-01482737',
+    art: 'LAMPARA LED PARED 1L / 18W / 6500K / BLANCA',
+    sku: '01-48-2737',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-led-pared-1l-18w-6500k-blanca-01482737',
+    nota: 'LAMPARA LED PARED 1L / 18W / 6500K / BLANCA · artículo 01-48-2737 · ref. 6421701-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 363.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-ojo-d-buey-1l-gu10-3w-led-6000k-01482403',
+    art: 'LAMPARA OJO D / BUEY 1L / GU10 / 3W / LED / 6000K',
+    sku: '01-48-2403',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-ojo-d-buey-1l-gu10-3w-led-6000k-01482403',
+    nota: 'LAMPARA OJO D / BUEY 1L / GU10 / 3W / LED / 6000K · artículo 01-48-2403 · ref. 3105510-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 922.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-1l-e27-40w-madera-osc-01485621',
+    art: 'LAMPARA P / PARED 1L / E27 / 40W / MADERA OSC.',
+    sku: '01-48-5621',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-1l-e27-40w-madera-osc-01485621',
+    nota: 'LAMPARA P / PARED 1L / E27 / 40W / MADERA OSC. · artículo 01-48-5621 · ref. 00945WD-1W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2362.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-dorado-cep-01485614',
+    art: 'LAMPARA P / PARED 2L / E27 / 40W / DORADO CEP.',
+    sku: '01-48-5614',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-dorado-cep-01485614',
+    nota: 'LAMPARA P / PARED 2L / E27 / 40W / DORADO CEP. · artículo 01-48-5614 · ref. 00870PB-2W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1764.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-madera-osc-01485622',
+    art: 'LAMPARA P / PARED 2L / E27 / 40W / MADERA OSC.',
+    sku: '01-48-5622',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-madera-osc-01485622',
+    nota: 'LAMPARA P / PARED 2L / E27 / 40W / MADERA OSC. · artículo 01-48-5622 · ref. 00945WD-2W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1870.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-negra-01485630',
+    art: 'LAMPARA P / PARED 2L / E27 / 40W / NEGRA',
+    sku: '01-48-5630',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-2l-e27-40w-negra-01485630',
+    nota: 'LAMPARA P / PARED 2L / E27 / 40W / NEGRA · artículo 01-48-5630 · ref. 01208BK-2W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3835.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-3l-e27-40w-dorado-cep-01485615',
+    art: 'LAMPARA P / PARED 3L / E27 / 40W / DORADO CEP.',
+    sku: '01-48-5615',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-3l-e27-40w-dorado-cep-01485615',
+    nota: 'LAMPARA P / PARED 3L / E27 / 40W / DORADO CEP. · artículo 01-48-5615 · ref. 00870PB-3W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2595.31, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-p-pared-3l-e27-40w-negra-01485617',
+    art: 'LAMPARA P / PARED 3L / E27 / 40W / NEGRA',
+    sku: '01-48-5617',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-p-pared-3l-e27-40w-negra-01485617',
+    nota: 'LAMPARA P / PARED 3L / E27 / 40W / NEGRA · artículo 01-48-5617 · ref. 01208BK-3W · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1275.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-1l-e27-40w-blanca-01484382',
+    art: 'LAMPARA PARED 1L / E27 / 40W / BLANCA',
+    sku: '01-48-4382',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-pared-1l-e27-40w-blanca-01484382',
+    nota: 'LAMPARA PARED 1L / E27 / 40W / BLANCA · artículo 01-48-4382 · ref. 26835A-1W-WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1280.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-1l-e27-60w-gris-01484390',
+    art: 'LAMPARA PARED 1L / E27 / 60W / GRIS',
+    sku: '01-48-4390',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-pared-1l-e27-60w-gris-01484390',
+    nota: 'LAMPARA PARED 1L / E27 / 60W / GRIS · artículo 01-48-4390 · ref. 26934C · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1728.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-2l-e14-40w-acab-negro-anti-01484391',
+    art: 'LAMPARA PARED 2L / E14 / 40W / ACAB.NEGRO ANTI',
+    sku: '01-48-4391',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-pared-2l-e14-40w-acab-negro-anti-01484391',
+    nota: 'LAMPARA PARED 2L / E14 / 40W / ACAB.NEGRO ANTI · artículo 01-48-4391 · ref. 26917B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2342.54, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-3l-e14-40w-acab-negro-ant-01484392',
+    art: 'LAMPARA PARED 3L / E14 / 40W / ACAB.NEGRO ANT',
+    sku: '01-48-4392',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-pared-3l-e14-40w-acab-negro-ant-01484392',
+    nota: 'LAMPARA PARED 3L / E14 / 40W / ACAB.NEGRO ANT · artículo 01-48-4392 · ref. 26917C · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3968.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-led-negro-20w-tres-tonos-01483938',
+    art: 'LAMPARA PARED LED NEGRO 20W TRES TONOS',
+    sku: '01-48-3938',
+    marca: 'GENERAL LIGHTING',
+    url: 'https://ochoa.com.do/producto/lampara-pared-led-negro-20w-tres-tonos-01483938',
+    nota: 'LAMPARA PARED LED NEGRO 20W TRES TONOS · artículo 01-48-3938 · ref. 6423188-2 · marca GENERAL LIGHTING. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2568.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-5pz-lampara-cuantica-led-pared-3000k-01484405',
+    art: 'SET 5PZ LAMPARA CUANTICA LED PARED 3000K',
+    sku: '01-48-4405',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/set-5pz-lampara-cuantica-led-pared-3000k-01484405',
+    nota: 'SET 5PZ LAMPARA CUANTICA LED PARED 3000K · artículo 01-48-4405 · ref. IL-DEC070WW · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2606.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-5pz-lampara-cuantica-led-pared-6500k-01484404',
+    art: 'SET 5PZ LAMPARA CUANTICA LED PARED 6500K',
+    sku: '01-48-4404',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/set-5pz-lampara-cuantica-led-pared-6500k-01484404',
+    nota: 'SET 5PZ LAMPARA CUANTICA LED PARED 6500K · artículo 01-48-4404 · ref. IL-DEC070DL · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 834.95, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-pared-vanity-4l-gu24-52w-niquel-01483626',
+    art: 'LAMP. PARED VANITY 4L / GU24 / 52W NIQUEL',
+    sku: '01-48-3626',
+    marca: 'NUVO',
+    url: 'https://ochoa.com.do/producto/lamp-pared-vanity-4l-gu24-52w-niquel-01483626',
+    nota: 'LAMP. PARED VANITY 4L / GU24 / 52W NIQUEL · artículo 01-48-3626 · ref. 60-3804 · marca NUVO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 861.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-1l-e27-25w-negra-campana-01484369',
+    art: 'LAMPARA D / PARED 1L / E27 / 25W / NEGRA / CAMPANA',
+    sku: '01-48-4369',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-1l-e27-25w-negra-campana-01484369',
+    nota: 'LAMPARA D / PARED 1L / E27 / 25W / NEGRA / CAMPANA · artículo 01-48-4369 · ref. 26803B-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 850.18, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pared-1l-e27-60w-acab-choco-01481889',
+    art: 'LAMPARA DE PARED 1L / E27 / 60W / ACAB.CHOCO',
+    sku: '01-48-1889',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-pared-1l-e27-60w-acab-choco-01481889',
+    nota: 'LAMPARA DE PARED 1L / E27 / 60W / ACAB.CHOCO · artículo 01-48-1889 · ref. 4304865-91 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 795.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-pared-chocolate-1l-e27-40w-01482891',
+    art: 'LAMPARA PARED CHOCOLATE 1L / E27 / 40W',
+    sku: '01-48-2891',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-pared-chocolate-1l-e27-40w-01482891',
+    nota: 'LAMPARA PARED CHOCOLATE 1L / E27 / 40W · artículo 01-48-2891 · ref. 4322125-9 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 516.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/aplique-para-techo-1l-e27-28w-negro-01484166',
+    art: 'APLIQUE PARA TECHO 1L / E27 / 28W NEGRO',
+    sku: '01-48-4166',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/aplique-para-techo-1l-e27-28w-negro-01484166',
+    nota: 'APLIQUE PARA TECHO 1L / E27 / 28W NEGRO · artículo 01-48-4166 · ref. MM-080 · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 577.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-d-pared-doble-e27-1l-60w-negro-01482779',
+    art: 'FAROL D / PARED DOBLE E27 / 1L / 60W / NEGRO',
+    sku: '01-48-2779',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/farol-d-pared-doble-e27-1l-60w-negro-01482779',
+    nota: 'FAROL D / PARED DOBLE E27 / 1L / 60W / NEGRO · artículo 01-48-2779 · ref. 012290-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2816.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-d-pared-ext-1l-e27-40w-negro-01485116',
+    art: 'FAROL D / PARED EXT. / 1L / E27 / 40W / NEGRO',
+    sku: '01-48-5116',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/farol-d-pared-ext-1l-e27-40w-negro-01485116',
+    nota: 'FAROL D / PARED EXT. / 1L / E27 / 40W / NEGRO · artículo 01-48-5116 · ref. E-30037A · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1385.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-d-pared-ext-1l-e27-40w-ip44-negro-01485183',
+    art: 'FAROL D / PARED EXT. 1L / E27 / 40W / IP44 / NEGRO',
+    sku: '01-48-5183',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/farol-d-pared-ext-1l-e27-40w-ip44-negro-01485183',
+    nota: 'FAROL D / PARED EXT. 1L / E27 / 40W / IP44 / NEGRO · artículo 01-48-5183 · ref. 56037A-BK · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 643.78, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-d-pared-ext-alum-blanco-01181912',
+    art: 'FAROL D / PARED EXT. ALUM. BLANCO',
+    sku: '01-18-1912',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/farol-d-pared-ext-alum-blanco-01181912',
+    nota: 'FAROL D / PARED EXT. ALUM. BLANCO · artículo 01-18-1912 · ref. 462020-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1344.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-d-pared-exterior-aluminio-oxido-01182922',
+    art: 'FAROL D / PARED EXTERIOR ALUMINIO OXIDO',
+    sku: '01-18-2922',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/farol-d-pared-exterior-aluminio-oxido-01182922',
+    nota: 'FAROL D / PARED EXTERIOR ALUMINIO OXIDO · artículo 01-18-2922 · ref. 012820-9 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1260.21, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-de-pared-1l-e27-60w-acab-negro-01482775',
+    art: 'FAROL DE PARED 1L / E27 / 60W / ACAB.NEGRO',
+    sku: '01-48-2775',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/farol-de-pared-1l-e27-60w-acab-negro-01482775',
+    nota: 'FAROL DE PARED 1L / E27 / 60W / ACAB.NEGRO · artículo 01-48-2775 · ref. 0121946-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 329.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-ext-d-pared-oval-1l-e27-c-rejilla-01484159',
+    art: 'LAMP EXT D / PARED OVAL 1L / E27 / C / REJILLA',
+    sku: '01-48-4159',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lamp-ext-d-pared-oval-1l-e27-c-rejilla-01484159',
+    nota: 'LAMP EXT D / PARED OVAL 1L / E27 / C / REJILLA · artículo 01-48-4159 · ref. 50011A-WH · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1681.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-pared-2l-e27-40w-ip20-dorado-neg-01485179',
+    art: 'LAMP. D / PARED 2L / E27 / 40W / IP20 / DORADO / NEG',
+    sku: '01-48-5179',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-pared-2l-e27-40w-ip20-dorado-neg-01485179',
+    nota: 'LAMP. D / PARED 2L / E27 / 40W / IP20 / DORADO / NEG · artículo 01-48-5179 · ref. P-10001B · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2445.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-pared-3l-e27-40w-ip20-dorado-neg-01485180',
+    art: 'LAMP. D / PARED 3L / E27 / 40W / IP20 / DORADO / NEG',
+    sku: '01-48-5180',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lamp-d-pared-3l-e27-40w-ip20-dorado-neg-01485180',
+    nota: 'LAMP. D / PARED 3L / E27 / 40W / IP20 / DORADO / NEG · artículo 01-48-5180 · ref. P-10001C · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1122.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-pared-ext-1l-e27-40w-neg-blanco-01485113',
+    art: 'LAMP. D / PARED EXT / 1L / E27 / 40W / NEG / BLANCO',
+    sku: '01-48-5113',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lamp-d-pared-ext-1l-e27-40w-neg-blanco-01485113',
+    nota: 'LAMP. D / PARED EXT / 1L / E27 / 40W / NEG / BLANCO · artículo 01-48-5113 · ref. E-30036A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1457.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-pared-ext-1l-e27-9-2w-ip65-bc-ng-01485188',
+    art: 'LAMP. D / PARED EXT / 1L / E27 / 9.2W / IP65 / BC / NG',
+    sku: '01-48-5188',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lamp-d-pared-ext-1l-e27-9-2w-ip65-bc-ng-01485188',
+    nota: 'LAMP. D / PARED EXT / 1L / E27 / 9.2W / IP65 / BC / NG · artículo 01-48-5188 · ref. E-30017 · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 842.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-ext-de-pared-led-2w-3000k-ip65-01484008',
+    art: 'LAMP. EXT. DE PARED LED 2W / 3000K / IP65',
+    sku: '01-48-4008',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lamp-ext-de-pared-led-2w-3000k-ip65-01484008',
+    nota: 'LAMP. EXT. DE PARED LED 2W / 3000K / IP65 · artículo 01-48-4008 · ref. 56053A-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3269.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-2l-g9-40w-negro-01484534',
+    art: 'LAMPARA D / PARED 2L / G9 / 40W / NEGRO',
+    sku: '01-48-4534',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-2l-g9-40w-negro-01484534',
+    nota: 'LAMPARA D / PARED 2L / G9 / 40W / NEGRO · artículo 01-48-4534 · ref. 1923906-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 953.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-blanco-01485137',
+    art: 'LAMPARA D / PARED 6W / 3000K / IP44 / BLANCO',
+    sku: '01-48-5137',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-blanco-01485137',
+    nota: 'LAMPARA D / PARED 6W / 3000K / IP44 / BLANCO · artículo 01-48-5137 · ref. ML-27075A-WH · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1156.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-blanco-3-5-01485141',
+    art: 'LAMPARA D / PARED 6W / 3000K / IP44 / BLANCO 3.5',
+    sku: '01-48-5141',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-blanco-3-5-01485141',
+    nota: 'LAMPARA D / PARED 6W / 3000K / IP44 / BLANCO 3.5 · artículo 01-48-5141 · ref. ML-27088A-WH · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1360.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-negro-3-5c-01485140',
+    art: 'LAMPARA D / PARED 6W / 3000K / IP44 / NEGRO 3.5C',
+    sku: '01-48-5140',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-6w-3000k-ip44-negro-3-5c-01485140',
+    nota: 'LAMPARA D / PARED 6W / 3000K / IP44 / NEGRO 3.5C · artículo 01-48-5140 · ref. ML-27088A-BK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3449.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-2l-e27-25w-acab-gris-01482052',
+    art: 'LAMPARA D / PARED EXT 2L / E27 / 25W / ACAB.GRIS',
+    sku: '01-48-2052',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-2l-e27-25w-acab-gris-01482052',
+    nota: 'LAMPARA D / PARED EXT 2L / E27 / 25W / ACAB.GRIS · artículo 01-48-2052 · ref. 0104180-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1781.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-2l-gu10-18w-negra-01484901',
+    art: 'LAMPARA D / PARED EXT. 2L / GU10 / 18W / NEGRA',
+    sku: '01-48-4901',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-2l-gu10-18w-negra-01484901',
+    nota: 'LAMPARA D / PARED EXT. 2L / GU10 / 18W / NEGRA · artículo 01-48-4901 · ref. 50208A-BK · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 692.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-2l-gu10-3w-bco-01484908',
+    art: 'LAMPARA D / PARED EXT. LED 2L / GU10 / 3W / BCO',
+    sku: '01-48-4908',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-2l-gu10-3w-bco-01484908',
+    nota: 'LAMPARA D / PARED EXT. LED 2L / GU10 / 3W / BCO · artículo 01-48-4908 · ref. 56025A-WH · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 692.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-2l-gu10-4w-bco-01484905',
+    art: 'LAMPARA D / PARED EXT. LED 2L / GU10 / 4W / BCO',
+    sku: '01-48-4905',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-2l-gu10-4w-bco-01484905',
+    nota: 'LAMPARA D / PARED EXT. LED 2L / GU10 / 4W / BCO · artículo 01-48-4905 · ref. 56023A-WH · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 760.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-blanca-01484910',
+    art: 'LAMPARA D / PARED EXT. LED 3W / 3000K / BLANCA',
+    sku: '01-48-4910',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-blanca-01484910',
+    nota: 'LAMPARA D / PARED EXT. LED 3W / 3000K / BLANCA · artículo 01-48-4910 · ref. 56048A-WH · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 727.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-negra-01484909',
+    art: 'LAMPARA D / PARED EXT. LED 3W / 3000K / NEGRA',
+    sku: '01-48-4909',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-negra-01484909',
+    nota: 'LAMPARA D / PARED EXT. LED 3W / 3000K / NEGRA · artículo 01-48-4909 · ref. 56048A-BK · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1183.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-negra-01484911',
+    art: 'LAMPARA D / PARED EXT. LED 3W / 3000K / NEGRA',
+    sku: '01-48-4911',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-3w-3000k-negra-01484911',
+    nota: 'LAMPARA D / PARED EXT. LED 3W / 3000K / NEGRA · artículo 01-48-4911 · ref. 56049A-BK · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 339.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-8w-3000k-blanco-01485555',
+    peso: 2,
+    art: 'LAMPARA D / PARED EXT. LED 8W / 3000K / BLANCO',
+    sku: '01-48-5555',
+    marca: 'LIGHTSOURCE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-8w-3000k-blanco-01485555',
+    nota: 'LAMPARA D / PARED EXT. LED 8W / 3000K / BLANCO · artículo 01-48-5555 · ref. 9294WH-30K · marca LIGHTSOURCE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 508.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-gu10-4w-blanca-01484906',
+    art: 'LAMPARA D / PARED EXT. LED GU10 / 4W / BLANCA',
+    sku: '01-48-4906',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-gu10-4w-blanca-01484906',
+    nota: 'LAMPARA D / PARED EXT. LED GU10 / 4W / BLANCA · artículo 01-48-4906 · ref. 56024A-WH · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 531.22, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-led-gu10-4w-blanca-01484903',
+    art: 'LAMPARA D / PARED EXT. LED GU10 / 4W / BLANCA',
+    sku: '01-48-4903',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-led-gu10-4w-blanca-01484903',
+    nota: 'LAMPARA D / PARED EXT. LED GU10 / 4W / BLANCA · artículo 01-48-4903 · ref. 56022A-WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2117.82, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-ext-red-led-9w-3000k-01483453',
+    art: 'LAMPARA D / PARED EXT. RED LED 9W / 3000K',
+    sku: '01-48-3453',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-ext-red-led-9w-3000k-01483453',
+    nota: 'LAMPARA D / PARED EXT. RED LED 9W / 3000K · artículo 01-48-3453 · ref. ML-27060A · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 3516.28, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-ext-2l-5w-4000k-blan-01484536',
+    art: 'LAMPARA D / PARED LED / EXT 2L / 5W / 4000K BLAN',
+    sku: '01-48-4536',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-ext-2l-5w-4000k-blan-01484536',
+    nota: 'LAMPARA D / PARED LED / EXT 2L / 5W / 4000K BLAN · artículo 01-48-4536 · ref. 15623971-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1377.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-10w-3000k-ip65-negro-01485133',
+    art: 'LAMPARA D / PARED LED 10W / 3000K / IP65 / NEGRO',
+    sku: '01-48-5133',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-10w-3000k-ip65-negro-01485133',
+    nota: 'LAMPARA D / PARED LED 10W / 3000K / IP65 / NEGRO · artículo 01-48-5133 · ref. ML-27054ABK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1924.59, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-20w-3000k-ip65-negro-01485134',
+    art: 'LAMPARA D / PARED LED 20W / 3000K / IP65 / NEGRO',
+    sku: '01-48-5134',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-20w-3000k-ip65-negro-01485134',
+    nota: 'LAMPARA D / PARED LED 20W / 3000K / IP65 / NEGRO · artículo 01-48-5134 · ref. ML-27054BBK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2591.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-30w-3000k-ip65-negro-01485135',
+    art: 'LAMPARA D / PARED LED 30W / 3000K / IP65 / NEGRO',
+    sku: '01-48-5135',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-30w-3000k-ip65-negro-01485135',
+    nota: 'LAMPARA D / PARED LED 30W / 3000K / IP65 / NEGRO · artículo 01-48-5135 · ref. ML-27054CBK · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1248.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-8w-3000k-ip44-blanco-01485139',
+    art: 'LAMPARA D / PARED LED 8W / 3000K / IP44 / BLANCO',
+    sku: '01-48-5139',
+    marca: 'MYLIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-8w-3000k-ip44-blanco-01485139',
+    nota: 'LAMPARA D / PARED LED 8W / 3000K / IP44 / BLANCO · artículo 01-48-5139 · ref. ML-27076A-WH · marca MYLIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1755.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-ext-12w-3000k-negra-01485185',
+    art: 'LAMPARA D / PARED LED EXT / 12W / 3000K / NEGRA',
+    sku: '01-48-5185',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-ext-12w-3000k-negra-01485185',
+    nota: 'LAMPARA D / PARED LED EXT / 12W / 3000K / NEGRA · artículo 01-48-5185 · ref. E-30003B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 1446.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-pared-led-ext-6w-3000k-ip54-ng-01485184',
+    art: 'LAMPARA D / PARED LED EXT / 6W / 3000K / IP54 / NG',
+    sku: '01-48-5184',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-pared-led-ext-6w-3000k-ip54-ng-01485184',
+    nota: 'LAMPARA D / PARED LED EXT / 6W / 3000K / IP54 / NG · artículo 01-48-5184 · ref. E-30003A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2240.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-ext-de-pared-1l-e27-40w-negro-01483895',
+    art: 'LAMPARA EXT DE PARED 1L / E27 / 40W NEGRO',
+    sku: '01-48-3895',
+    marca: 'ARTELUCE',
+    url: 'https://ochoa.com.do/producto/lampara-ext-de-pared-1l-e27-40w-negro-01483895',
+    nota: 'LAMPARA EXT DE PARED 1L / E27 / 40W NEGRO · artículo 01-48-3895 · ref. 15623125-2 · marca ARTELUCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-002', PROV_OCHOA, 2858.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-ext-de-pared-3l-e27-40w-01483884',
+    art: 'LAMPARA EXT DE PARED 3L / E27 / 40W',
+    sku: '01-48-3884',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-ext-de-pared-3l-e27-40w-01483884',
+    nota: 'LAMPARA EXT DE PARED 3L / E27 / 40W · artículo 01-48-3884 · ref. 1121218-4 · marca IKELITE. ' + SUPUESTO_ITBIS
   });
   c('MAT-33-002', PROV_ALISS, 365, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-de-oso-para-pared-24x19x9cm-3030564',
@@ -66680,6 +67851,23 @@
     url: 'https://luminatti.com/products/wall-lamp-2-metal-gold-g9x2-120v-60hz',
     nota: 'Wall Lamp 2 Metal Gold G9x2 120v/60Hz · artículo MWLMG0B7047L760GDG9X2 · marca Vigo Lighting Group. ' + SUPUESTO_ITBIS
   });
+  c('MAT-33-003', PROV_OCHOA, 7550.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pie-40w-negra-01483856',
+    art: 'LAMPARA DE PIE 40W NEGRA',
+    sku: '01-48-3856',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pie-40w-negra-01483856',
+    nota: 'LAMPARA DE PIE 40W NEGRA · artículo 01-48-3856 · ref. 213009F-1SDBK-BK · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-003', PROV_OCHOA, 1913.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-pie-negra-01483850',
+    peso: 2,
+    art: 'LAMPARA DE PIE NEGRA',
+    sku: '01-48-3850',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-de-pie-negra-01483850',
+    nota: 'LAMPARA DE PIE NEGRA · artículo 01-48-3850 · ref. 152032T-1SBK · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
   c('MAT-33-003', PROV_MUNDOLED, 4200, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://mundoled.com.do/producto/lampara-de-mesa-soga-tejida-circular-e27-5028-h60cm-cod-4783/',
     art: 'LÁMPARA DE MESA SOGA TEJIDA CIRCULAR E27 50*28 H60CM COD.4783',
@@ -66802,6 +67990,1536 @@
     marca: 'Marco Guridi',
     url: 'https://luminatti.com/products/floor-lamp-gold-iron-with-white-stone-base-h65in-led-5w-3000k-120v-60hz',
     nota: 'Floor Lamp Gold Iron with White Stone Base H65in LED 5W 3000K 120v/60Hz · artículo 9061-WH-5W-WW · marca Marco Guridi. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 112.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-noche-led-barco-240v-01484268',
+    art: 'LAMPARA D / NOCHE LED BARCO 240V',
+    sku: '01-48-4268',
+    marca: 'FOY',
+    url: 'https://ochoa.com.do/producto/lampara-d-noche-led-barco-240v-01484268',
+    nota: 'LAMPARA D / NOCHE LED BARCO 240V · artículo 01-48-4268 · ref. LUNL03 · marca FOY. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1632.26, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-gu10-blanca-6x40cm-01485264',
+    art: 'LAMPARA COLGANTE 1L / GU10 / BLANCA / 6X40CM',
+    sku: '01-48-5264',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-gu10-blanca-6x40cm-01485264',
+    nota: 'LAMPARA COLGANTE 1L / GU10 / BLANCA / 6X40CM · artículo 01-48-5264 · ref. T-20040BWH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1940.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-gu10-blanca-6x60cm-01485266',
+    art: 'LAMPARA COLGANTE 1L / GU10 / BLANCA / 6X60CM',
+    sku: '01-48-5266',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-gu10-blanca-6x60cm-01485266',
+    nota: 'LAMPARA COLGANTE 1L / GU10 / BLANCA / 6X60CM · artículo 01-48-5266 · ref. T-20040CWH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2177.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-gu10-negra-6x60cm-01485265',
+    art: 'LAMPARA COLGANTE 1L / GU10 / NEGRA / 6X60CM',
+    sku: '01-48-5265',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-gu10-negra-6x60cm-01485265',
+    nota: 'LAMPARA COLGANTE 1L / GU10 / NEGRA / 6X60CM · artículo 01-48-5265 · ref. T-20040CBK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2663.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-12w-3000k-dorada-01485272',
+    art: 'LAMPARA COLGANTE LED 12W / 3000K / DORADA',
+    sku: '01-48-5272',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-12w-3000k-dorada-01485272',
+    nota: 'LAMPARA COLGANTE LED 12W / 3000K / DORADA · artículo 01-48-5272 · ref. IL-DEC-1305GD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4840.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-12w-4000k-bco-negro-01485332',
+    art: 'LAMPARA COLGANTE LED 12W / 4000K BCO / NEGRO',
+    sku: '01-48-5332',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-12w-4000k-bco-negro-01485332',
+    nota: 'LAMPARA COLGANTE LED 12W / 4000K BCO / NEGRO · artículo 01-48-5332 · ref. T-20139A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2345.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-5w-3000k-blanca-01485271',
+    art: 'LAMPARA COLGANTE LED 5W / 3000K / BLANCA',
+    sku: '01-48-5271',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-5w-3000k-blanca-01485271',
+    nota: 'LAMPARA COLGANTE LED 5W / 3000K / BLANCA · artículo 01-48-5271 · ref. IL-DEC-1311A-WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2456.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-5w-3000k-dorada-01485269',
+    art: 'LAMPARA COLGANTE LED 5W / 3000K / DORADA',
+    sku: '01-48-5269',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-5w-3000k-dorada-01485269',
+    nota: 'LAMPARA COLGANTE LED 5W / 3000K / DORADA · artículo 01-48-5269 · ref. IL-DEC-1311A-AB · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 12038.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-dim-6w-3000k-100cm-01485290',
+    art: 'LAMPARA COLGANTE LED DIM 6W / 3000K / 100CM',
+    sku: '01-48-5290',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-dim-6w-3000k-100cm-01485290',
+    nota: 'LAMPARA COLGANTE LED DIM 6W / 3000K / 100CM · artículo 01-48-5290 · ref. IL-DEC-1353A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 14335.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-dim-6w-3000k-100cm-01485291',
+    art: 'LAMPARA COLGANTE LED DIM 6W / 3000K / 100CM',
+    sku: '01-48-5291',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-dim-6w-3000k-100cm-01485291',
+    nota: 'LAMPARA COLGANTE LED DIM 6W / 3000K / 100CM · artículo 01-48-5291 · ref. IL-DEC-1353B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 916.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-negro-verde-1l-e26-60w-01482969',
+    art: 'LAMPARA COLGANTE NEGRO / VERDE 1L / E26 / 60W',
+    sku: '01-48-2969',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-negro-verde-1l-e26-60w-01482969',
+    nota: 'LAMPARA COLGANTE NEGRO / VERDE 1L / E26 / 60W · artículo 01-48-2969 · ref. 5620844-6 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5048.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-5l-e27-40w-acab-negr-01484500',
+    art: 'LAMPARA D / TECHO 5L / E27 / 40W ACAB.NEGR',
+    sku: '01-48-4500',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-5l-e27-40w-acab-negr-01484500',
+    nota: 'LAMPARA D / TECHO 5L / E27 / 40W ACAB.NEGR · artículo 01-48-4500 · ref. 2021157-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1031.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-spot-1l-e27-40w-negro-01483257',
+    art: 'LAMPARA D / TECHO SPOT 1L / E27 / 40W NEGRO',
+    sku: '01-48-3257',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-spot-1l-e27-40w-negro-01483257',
+    nota: 'LAMPARA D / TECHO SPOT 1L / E27 / 40W NEGRO · artículo 01-48-3257 · ref. 2122633-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1195.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-spot-1l-gu10-13w-blanco-01483223',
+    art: 'LAMPARA D / TECHO SPOT 1L / GU10 / 13W BLANCO',
+    sku: '01-48-3223',
+    marca: 'ARTELUCE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-spot-1l-gu10-13w-blanco-01483223',
+    nota: 'LAMPARA D / TECHO SPOT 1L / GU10 / 13W BLANCO · artículo 01-48-3223 · ref. 15622502-1 · marca ARTELUCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2046.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-d-techo-pared-15w-3000k-cafe-01485619',
+    art: 'LAMPARA LED D / TECHO-PARED 15W / 3000K / CAFE',
+    sku: '01-48-5619',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-led-d-techo-pared-15w-3000k-cafe-01485619',
+    nota: 'LAMPARA LED D / TECHO-PARED 15W / 3000K / CAFE · artículo 01-48-5619 · ref. 00963CF-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2302.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-d-techo-pared-8w-3000k-dorad-01485628',
+    art: 'LAMPARA LED D / TECHO-PARED 8W / 3000K / DORAD',
+    sku: '01-48-5628',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-led-d-techo-pared-8w-3000k-dorad-01485628',
+    nota: 'LAMPARA LED D / TECHO-PARED 8W / 3000K / DORAD · artículo 01-48-5628 · ref. 00964GD-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3052.5, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-colgante-3l-e27-60w-negro-01484111',
+    art: 'LAMP COLGANTE 3L / E27 / 60W NEGRO',
+    sku: '01-48-4111',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-colgante-3l-e27-60w-negro-01484111',
+    nota: 'LAMP COLGANTE 3L / E27 / 60W NEGRO · artículo 01-48-4111 · ref. 4323136-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 15801.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-16l-jc-20w-acab-metal-01481419',
+    art: 'LAMPARA COLG. 16L / JC / 20W / ACAB.METAL',
+    sku: '01-48-1419',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-16l-jc-20w-acab-metal-01481419',
+    nota: 'LAMPARA COLG. 16L / JC / 20W / ACAB.METAL · artículo 01-48-1419 · ref. 156-92493-41 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1859.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-25w-acab-blanco-01481881',
+    art: 'LAMPARA COLG. 1L / E27 / 25W / ACAB.BLANCO',
+    sku: '01-48-1881',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-25w-acab-blanco-01481881',
+    nota: 'LAMPARA COLG. 1L / E27 / 25W / ACAB.BLANCO · artículo 01-48-1881 · ref. 5605066-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1034.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-40w-ip20-blanco-01485149',
+    art: 'LAMPARA COLG. 1L / E27 / 40W / IP20 / BLANCO',
+    sku: '01-48-5149',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-40w-ip20-blanco-01485149',
+    nota: 'LAMPARA COLG. 1L / E27 / 40W / IP20 / BLANCO · artículo 01-48-5149 · ref. IL-DEC-1323WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2551.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-blanco-01482334',
+    art: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.BLANCO',
+    sku: '01-48-2334',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-blanco-01482334',
+    nota: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.BLANCO · artículo 01-48-2334 · ref. 5620354-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3566.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-bronce-01482625',
+    art: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.BRONCE',
+    sku: '01-48-2625',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-bronce-01482625',
+    nota: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.BRONCE · artículo 01-48-2625 · ref. 15692384-0 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2076.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-negro-01482335',
+    art: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.NEGRO',
+    sku: '01-48-2335',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-60w-acab-negro-01482335',
+    nota: 'LAMPARA COLG. 1L / E27 / 60W / ACAB.NEGRO · artículo 01-48-2335 · ref. 5620355-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3358.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-3l-40w-e14-cromo-01482745',
+    art: 'LAMPARA COLG. 3L / 40W / E14 / CROMO',
+    sku: '01-48-2745',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-3l-40w-e14-cromo-01482745',
+    nota: 'LAMPARA COLG. 3L / 40W / E14 / CROMO · artículo 01-48-2745 · ref. 5620640-41 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 20904.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-8l-40w-g9-acab-cristal-01480655',
+    art: 'LAMPARA COLG. 8L / 40W / G9 ACAB.CRISTAL',
+    sku: '01-48-0655',
+    marca: 'EGLO',
+    url: 'https://ochoa.com.do/producto/lampara-colg-8l-40w-g9-acab-cristal-01480655',
+    nota: 'LAMPARA COLG. 8L / 40W / G9 ACAB.CRISTAL · artículo 01-48-0655 · ref. 89204A-DRIFTER · marca EGLO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 14115.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-led-12l-e14-40w-acab-rojo-01481414',
+    art: 'LAMPARA COLG. LED / 12L / E14 / 40W / ACAB.ROJO',
+    sku: '01-48-1414',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-led-12l-e14-40w-acab-rojo-01481414',
+    nota: 'LAMPARA COLG. LED / 12L / E14 / 40W / ACAB.ROJO · artículo 01-48-1414 · ref. 156-03812-41 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2008.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-led-1l-e27-40w-negro-01482674',
+    art: 'LAMPARA COLG. LED 1L / E27 / 40W / NEGRO',
+    sku: '01-48-2674',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-led-1l-e27-40w-negro-01482674',
+    nota: 'LAMPARA COLG. LED 1L / E27 / 40W / NEGRO · artículo 01-48-2674 · ref. 5621707-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1590.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colg-1l-e27-40w-acab-negro-01482647',
+    art: 'LAMPARA COLG.1L / E27 / 40W / ACAB.NEGRO',
+    sku: '01-48-2647',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colg-1l-e27-40w-acab-negro-01482647',
+    nota: 'LAMPARA COLG.1L / E27 / 40W / ACAB.NEGRO · artículo 01-48-2647 · ref. 3521705-8 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5033.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-40w-e27-verde-01483847',
+    art: 'LAMPARA COLGANTE 1L / 40W / E27 VERDE',
+    sku: '01-48-3847',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-40w-e27-verde-01483847',
+    nota: 'LAMPARA COLGANTE 1L / 40W / E27 VERDE · artículo 01-48-3847 · ref. 152064P-1GNWH · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5288.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e14-40w-vidrio-120cm-01485304',
+    art: 'LAMPARA COLGANTE 1L / E14 / 40W / VIDRIO 120CM',
+    sku: '01-48-5304',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e14-40w-vidrio-120cm-01485304',
+    nota: 'LAMPARA COLGANTE 1L / E14 / 40W / VIDRIO 120CM · artículo 01-48-5304 · ref. IL-DEC-1304AL · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1718.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-12-negro-01485362',
+    art: 'LAMPARA COLGANTE 1L / E27 / 12” / NEGRO',
+    sku: '01-48-5362',
+    marca: 'PROGRESS LIGHTING',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-12-negro-01485362',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 12” / NEGRO · artículo 01-48-5362 · ref. 1006262956 · marca PROGRESS LIGHTING. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2144.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-20w-dorado-bco-01485812',
+    art: 'LAMPARA COLGANTE 1L / E27 / 20W / DORADO / BCO',
+    sku: '01-48-5812',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-20w-dorado-bco-01485812',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 20W / DORADO / BCO · artículo 01-48-5812 · ref. 01158H-22-GD · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3023.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-c-base-negro-01484524',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / C / BASE / NEGRO',
+    sku: '01-48-4524',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-c-base-negro-01484524',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / C / BASE / NEGRO · artículo 01-48-4524 · ref. 5623887-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2907.38, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-01485159',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO',
+    sku: '01-48-5159',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-01485159',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO · artículo 01-48-5159 · ref. T-20023AGD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1469.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-vidri-01485808',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO / VIDRI',
+    sku: '01-48-5808',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-vidri-01485808',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO / VIDRI · artículo 01-48-5808 · ref. 01052H-AM · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2531.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-109cm-01485161',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO 109CM',
+    sku: '01-48-5161',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-109cm-01485161',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / DORADO 109CM · artículo 01-48-5161 · ref. T-20023BGD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 14605.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-gris-60x180c-01484846',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / GRIS 60X180C',
+    sku: '01-48-4846',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-gris-60x180c-01484846',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / GRIS 60X180C · artículo 01-48-4846 · ref. IL-DEC-1091GY · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2558.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01485158',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO',
+    sku: '01-48-5158',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01485158',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO · artículo 01-48-5158 · ref. T-20023ABK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1427.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01485858',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO',
+    sku: '01-48-5858',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01485858',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO · artículo 01-48-5858 · ref. 01117H-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2370.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-109cm-01485160',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO 109CM',
+    sku: '01-48-5160',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-109cm-01485160',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / NEGRO 109CM · artículo 01-48-5160 · ref. T-20023BBK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2225.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-natura-01485489',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN NATURA',
+    sku: '01-48-5489',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-natura-01485489',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN NATURA · artículo 01-48-5489 · ref. 00342H · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3623.24, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-tejido-01485501',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN-TEJIDO',
+    sku: '01-48-5501',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-tejido-01485501',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN-TEJIDO · artículo 01-48-5501 · ref. 00491H · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4455.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-tejido-01485502',
+    peso: 2,
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN-TEJIDO',
+    sku: '01-48-5502',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-ratan-tejido-01485502',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / RATAN-TEJIDO · artículo 01-48-5502 · ref. 00494H · marca HOME DELIGHT. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2093.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-verde-01485147',
+    peso: 2,
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / VERDE',
+    sku: '01-48-5147',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-verde-01485147',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / VERDE · artículo 01-48-5147 · ref. T-20021AGR · marca 770 LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1115.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-vidrio-ng-01485860',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W / VIDRIO / NG',
+    sku: '01-48-5860',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-vidrio-ng-01485860',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W / VIDRIO / NG · artículo 01-48-5860 · ref. 01135-1H-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1394.55, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-azul-01484119',
+    peso: 2,
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W AZUL',
+    sku: '01-48-4119',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-azul-01484119',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W AZUL · artículo 01-48-4119 · ref. 5623551-3 · marca IKELITE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2896.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-01483292',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W DORADO',
+    sku: '01-48-3292',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-dorado-01483292',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W DORADO · artículo 01-48-3292 · ref. 15621320-9 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2512.33, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01483957',
+    art: 'LAMPARA COLGANTE 1L / E27 / 40W NEGRO',
+    sku: '01-48-3957',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-40w-negro-01483957',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 40W NEGRO · artículo 01-48-3957 · ref. 5621304-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1424.58, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-blanco-vint-01484386',
+    art: 'LAMPARA COLGANTE 1L / E27 / 60W / BLANCO / VINT',
+    sku: '01-48-4386',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-blanco-vint-01484386',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 60W / BLANCO / VINT · artículo 01-48-4386 · ref. 26933A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 26689.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485284',
+    art: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA',
+    sku: '01-48-5284',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485284',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA · artículo 01-48-5284 · ref. T-21003B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 7971.19, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485283',
+    art: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA',
+    sku: '01-48-5283',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485283',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA · artículo 01-48-5283 · ref. T-21003A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 12829.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485282',
+    art: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA',
+    sku: '01-48-5282',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-60w-madera-01485282',
+    nota: 'LAMPARA COLGANTE 1L / E27 / 60W / MADERA · artículo 01-48-5282 · ref. T-21002B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1974.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-amarillo-01484421',
+    peso: 2,
+    art: 'LAMPARA COLGANTE 1L / E27 / AMARILLO',
+    sku: '01-48-4421',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-amarillo-01484421',
+    nota: 'LAMPARA COLGANTE 1L / E27 / AMARILLO · artículo 01-48-4421 · ref. 26946A-YW · marca 770 LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3121.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-e27-tejido-blanco-01485280',
+    art: 'LAMPARA COLGANTE 1L / E27 / TEJIDO BLANCO',
+    sku: '01-48-5280',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-e27-tejido-blanco-01485280',
+    nota: 'LAMPARA COLGANTE 1L / E27 / TEJIDO BLANCO · artículo 01-48-5280 · ref. T-24005WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 6304.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-g9-acab-plateado-neg-01484364',
+    art: 'LAMPARA COLGANTE 1L / G9 / ACAB.PLATEADO / NEG',
+    sku: '01-48-4364',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-g9-acab-plateado-neg-01484364',
+    nota: 'LAMPARA COLGANTE 1L / G9 / ACAB.PLATEADO / NEG · artículo 01-48-4364 · ref. 26920A-CH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 6354.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-g9-ocre-negra-01484363',
+    art: 'LAMPARA COLGANTE 1L / G9 / OCRE / NEGRA',
+    sku: '01-48-4363',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-g9-ocre-negra-01484363',
+    nota: 'LAMPARA COLGANTE 1L / G9 / OCRE / NEGRA · artículo 01-48-4363 · ref. 26920A-BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2876.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-1l-gu10-3w-verde-01483844',
+    art: 'LAMPARA COLGANTE 1L / GU10 / 3W VERDE',
+    sku: '01-48-3844',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-1l-gu10-3w-verde-01483844',
+    nota: 'LAMPARA COLGANTE 1L / GU10 / 3W VERDE · artículo 01-48-3844 · ref. 260063PB-LED-1GN · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 19467.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-2s-conos-laton-23x15-01485794',
+    art: 'LAMPARA COLGANTE 2S CONOS LATON 23X15”',
+    sku: '01-48-5794',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-2s-conos-laton-23x15-01485794',
+    nota: 'LAMPARA COLGANTE 2S CONOS LATON 23X15” · artículo 01-48-5794 · ref. 21617 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4058.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-30-60k-30w-ratan-acril-01485857',
+    art: 'LAMPARA COLGANTE 30-60K / 30W / RATAN / ACRIL.',
+    sku: '01-48-5857',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-30-60k-30w-ratan-acril-01485857',
+    nota: 'LAMPARA COLGANTE 30-60K / 30W / RATAN / ACRIL. · artículo 01-48-5857 · ref. 00883H-43-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3100.13, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-3l-e27-40w-vidrio-ng-01485862',
+    art: 'LAMPARA COLGANTE 3L / E27 / 40W / VIDRIO / NG',
+    sku: '01-48-5862',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-3l-e27-40w-vidrio-ng-01485862',
+    nota: 'LAMPARA COLGANTE 3L / E27 / 40W / VIDRIO / NG · artículo 01-48-5862 · ref. 01135-3H-RND-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3174.51, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-3l-e27-40w-vidrio-ng-01485861',
+    art: 'LAMPARA COLGANTE 3L / E27 / 40W / VIDRIO / NG',
+    sku: '01-48-5861',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-3l-e27-40w-vidrio-ng-01485861',
+    nota: 'LAMPARA COLGANTE 3L / E27 / 40W / VIDRIO / NG · artículo 01-48-5861 · ref. 01135-3H-BAR-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 7122.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-3l-gu10-8w-bronce-01484533',
+    art: 'LAMPARA COLGANTE 3L / GU10 / 8W / BRONCE',
+    sku: '01-48-4533',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-3l-gu10-8w-bronce-01484533',
+    nota: 'LAMPARA COLGANTE 3L / GU10 / 8W / BRONCE · artículo 01-48-4533 · ref. 15623768-3 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5057.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-5l-e27-40w-negro-01484131',
+    art: 'LAMPARA COLGANTE 5L / E27 / 40W NEGRO',
+    sku: '01-48-4131',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-5l-e27-40w-negro-01484131',
+    nota: 'LAMPARA COLGANTE 5L / E27 / 40W NEGRO · artículo 01-48-4131 · ref. 5623314-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4676.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-6l-e27-60w-plateado-01484882',
+    art: 'LAMPARA COLGANTE 6L / E27 / 60W / PLATEADO',
+    sku: '01-48-4882',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-6l-e27-60w-plateado-01484882',
+    nota: 'LAMPARA COLGANTE 6L / E27 / 60W / PLATEADO · artículo 01-48-4882 · ref. DEC-2124A-N · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5452.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-blanca-e27-1l-60w-01483167',
+    peso: 2,
+    art: 'LAMPARA COLGANTE BLANCA E27 / 1L / 60W',
+    sku: '01-48-3167',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-blanca-e27-1l-60w-01483167',
+    nota: 'LAMPARA COLGANTE BLANCA E27 / 1L / 60W · artículo 01-48-3167 · ref. P9097-1B · marca COLONI. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 15977.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-boho-natural-31x31x16-01484578',
+    art: 'LAMPARA COLGANTE BOHO NATURAL 31X31X16”',
+    sku: '01-48-4578',
+    marca: 'CONCEPTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-boho-natural-31x31x16-01484578',
+    nota: 'LAMPARA COLGANTE BOHO NATURAL 31X31X16” · artículo 01-48-4578 · ref. 429-7900004 · marca CONCEPTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 33487.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-laton-1l-23x16-01483690',
+    art: 'LAMPARA COLGANTE CRISTAL / LATON 1L 23X16”',
+    sku: '01-48-3690',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-laton-1l-23x16-01483690',
+    nota: 'LAMPARA COLGANTE CRISTAL / LATON 1L 23X16” · artículo 01-48-3690 · ref. 22127 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 8137.45, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-4l-e27-40w-01482144',
+    art: 'LAMPARA COLGANTE CRISTAL 4L / E27 / 40W',
+    sku: '01-48-2144',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-4l-e27-40w-01482144',
+    nota: 'LAMPARA COLGANTE CRISTAL 4L / E27 / 40W · artículo 01-48-2144 · ref. 4205297-41 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 10553.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-azul-1l-10x9-01483689',
+    art: 'LAMPARA COLGANTE CRISTAL AZUL 1L 10X9”',
+    sku: '01-48-3689',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-azul-1l-10x9-01483689',
+    nota: 'LAMPARA COLGANTE CRISTAL AZUL 1L 10X9” · artículo 01-48-3689 · ref. 22198 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 22613.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-blanco-1l-29x16-01483684',
+    art: 'LAMPARA COLGANTE CRISTAL BLANCO 1L 29X16',
+    sku: '01-48-3684',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-blanco-1l-29x16-01483684',
+    nota: 'LAMPARA COLGANTE CRISTAL BLANCO 1L 29X16 · artículo 01-48-3684 · ref. 21545 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1729.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-k9-1l-e27-40w-01485815',
+    art: 'LAMPARA COLGANTE CRISTAL K9 / 1L / E27 / 40W',
+    sku: '01-48-5815',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-k9-1l-e27-40w-01485815',
+    nota: 'LAMPARA COLGANTE CRISTAL K9 / 1L / E27 / 40W · artículo 01-48-5815 · ref. 01188-1H-GD · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3729.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-cristal-k9-3l-e27-40w-01485816',
+    art: 'LAMPARA COLGANTE CRISTAL K9 / 3L / E27 / 40W',
+    sku: '01-48-5816',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-cristal-k9-3l-e27-40w-01485816',
+    nota: 'LAMPARA COLGANTE CRISTAL K9 / 3L / E27 / 40W · artículo 01-48-5816 · ref. 01188-3H-RND-GD · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 7023.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dim-9w-3000k-dorado-01485377',
+    art: 'LAMPARA COLGANTE DIM 9W / 3000K / DORADO',
+    sku: '01-48-5377',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dim-9w-3000k-dorado-01485377',
+    nota: 'LAMPARA COLGANTE DIM 9W / 3000K / DORADO · artículo 01-48-5377 · ref. IL-DEC-1357BAMB · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3467.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dorada-negra-e27-1l-60w-01483165',
+    art: 'LAMPARA COLGANTE DORADA / NEGRA E27 / 1L / 60W',
+    sku: '01-48-3165',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dorada-negra-e27-1l-60w-01483165',
+    nota: 'LAMPARA COLGANTE DORADA / NEGRA E27 / 1L / 60W · artículo 01-48-3165 · ref. P9124-1B · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4504.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dorada-negra-e27-1l-60w-01483160',
+    art: 'LAMPARA COLGANTE DORADA / NEGRA E27 / 1L / 60W',
+    sku: '01-48-3160',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dorada-negra-e27-1l-60w-01483160',
+    nota: 'LAMPARA COLGANTE DORADA / NEGRA E27 / 1L / 60W · artículo 01-48-3160 · ref. P9124-1D · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3155.62, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483171',
+    art: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W',
+    sku: '01-48-3171',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483171',
+    nota: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W · artículo 01-48-3171 · ref. P9034-1A · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1649.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483174',
+    art: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W',
+    sku: '01-48-3174',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483174',
+    nota: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W · artículo 01-48-3174 · ref. P9116-1B · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3445.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483169',
+    art: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W',
+    sku: '01-48-3169',
+    marca: 'COLONI',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-dorado-rosa-e27-1l-60w-01483169',
+    nota: 'LAMPARA COLGANTE DORADO ROSA E27 / 1L / 60W · artículo 01-48-3169 · ref. P9350-1B · marca COLONI. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 6918.42, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-e27-60w-27x17cm-dorado-01485316',
+    art: 'LAMPARA COLGANTE E27 / 60W 27X17CM DORADO',
+    sku: '01-48-5316',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-e27-60w-27x17cm-dorado-01485316',
+    nota: 'LAMPARA COLGANTE E27 / 60W 27X17CM DORADO · artículo 01-48-5316 · ref. T-21004A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5683.61, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-e27-dorada-01483791',
+    peso: 2,
+    art: 'LAMPARA COLGANTE E27 DORADA',
+    sku: '01-48-3791',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-e27-dorada-01483791',
+    nota: 'LAMPARA COLGANTE E27 DORADA · artículo 01-48-3791 · ref. 264022P-1GD · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1776.76, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-gu10-1l-01485460',
+    art: 'LAMPARA COLGANTE GU10 / 1L',
+    sku: '01-48-5460',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-gu10-1l-01485460',
+    nota: 'LAMPARA COLGANTE GU10 / 1L · artículo 01-48-5460 · ref. T-20073BGD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5209.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-gu10-3l-01485458',
+    art: 'LAMPARA COLGANTE GU10 / 3L',
+    sku: '01-48-5458',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-gu10-3l-01485458',
+    nota: 'LAMPARA COLGANTE GU10 / 3L · artículo 01-48-5458 · ref. T-20074BGD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 30591.04, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-laton-antiguo-16x24-01485792',
+    art: 'LAMPARA COLGANTE LATON ANTIGUO 16X24”',
+    sku: '01-48-5792',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-laton-antiguo-16x24-01485792',
+    nota: 'LAMPARA COLGANTE LATON ANTIGUO 16X24” · artículo 01-48-5792 · ref. 21610 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2660.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-10w-30-60k-humo-01485868',
+    art: 'LAMPARA COLGANTE LED 10W / 30-60K / HUMO',
+    sku: '01-48-5868',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-10w-30-60k-humo-01485868',
+    nota: 'LAMPARA COLGANTE LED 10W / 30-60K / HUMO · artículo 01-48-5868 · ref. 01673SM-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2493.87, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-10w-3000k-dorado-hu-01485869',
+    art: 'LAMPARA COLGANTE LED 10W / 3000K / DORADO / HU',
+    sku: '01-48-5869',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-10w-3000k-dorado-hu-01485869',
+    nota: 'LAMPARA COLGANTE LED 10W / 3000K / DORADO / HU · artículo 01-48-5869 · ref. 01042H-SM-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2539.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-10w-3000k-humo-01485818',
+    art: 'LAMPARA COLGANTE LED 10W / 3000K / HUMO',
+    sku: '01-48-5818',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-10w-3000k-humo-01485818',
+    nota: 'LAMPARA COLGANTE LED 10W / 3000K / HUMO · artículo 01-48-5818 · ref. 01672SM-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4093.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-16w-30-60k-negro-01485867',
+    art: 'LAMPARA COLGANTE LED 16W / 30-60K / NEGRO',
+    sku: '01-48-5867',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-16w-30-60k-negro-01485867',
+    nota: 'LAMPARA COLGANTE LED 16W / 30-60K / NEGRO · artículo 01-48-5867 · ref. 01214-2H-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4474.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-16w-3000k-negra-01485817',
+    art: 'LAMPARA COLGANTE LED 16W / 3000K / NEGRA',
+    sku: '01-48-5817',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-16w-3000k-negra-01485817',
+    nota: 'LAMPARA COLGANTE LED 16W / 3000K / NEGRA · artículo 01-48-5817 · ref. 01608H-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4792.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-18w-3cct-dorado-01485373',
+    art: 'LAMPARA COLGANTE LED 18W / 3CCT-DORADO',
+    sku: '01-48-5373',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-18w-3cct-dorado-01485373',
+    nota: 'LAMPARA COLGANTE LED 18W / 3CCT-DORADO · artículo 01-48-5373 · ref. T-20143AGD · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5832.8, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-18w-4000k-bco-negro-01485333',
+    art: 'LAMPARA COLGANTE LED 18W / 4000K BCO / NEGRO',
+    sku: '01-48-5333',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-18w-4000k-bco-negro-01485333',
+    nota: 'LAMPARA COLGANTE LED 18W / 4000K BCO / NEGRO · artículo 01-48-5333 · ref. T-20139B · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2463.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-1l-3000k-2w-bronce-01485476',
+    art: 'LAMPARA COLGANTE LED 1L / 3000K / 2W / BRONCE',
+    sku: '01-48-5476',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-1l-3000k-2w-bronce-01485476',
+    nota: 'LAMPARA COLGANTE LED 1L / 3000K / 2W / BRONCE · artículo 01-48-5476 · ref. 00181BRO · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3226.32, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-1l-e27-8w-3000k-dor-01485802',
+    art: 'LAMPARA COLGANTE LED 1L / E27 / 8W / 3000K / DOR',
+    sku: '01-48-5802',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-1l-e27-8w-3000k-dor-01485802',
+    nota: 'LAMPARA COLGANTE LED 1L / E27 / 8W / 3000K / DOR · artículo 01-48-5802 · ref. 00987GD-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4297.69, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-30-60k-32w-dorada-01485477',
+    art: 'LAMPARA COLGANTE LED 30-60K / 32W / DORADA',
+    sku: '01-48-5477',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-30-60k-32w-dorada-01485477',
+    nota: 'LAMPARA COLGANTE LED 30-60K / 32W / DORADA · artículo 01-48-5477 · ref. 00285GD-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2661.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-30-60k-36w-gris-dor-01485488',
+    art: 'LAMPARA COLGANTE LED 30-60K / 36W / GRIS-DOR',
+    sku: '01-48-5488',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-30-60k-36w-gris-dor-01485488',
+    nota: 'LAMPARA COLGANTE LED 30-60K / 36W / GRIS-DOR · artículo 01-48-5488 · ref. 00321H-GY-50-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2868.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3000k-10w-acab-mad-01485478',
+    art: 'LAMPARA COLGANTE LED 3000K / 10W / ACAB. MAD',
+    sku: '01-48-5478',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3000k-10w-acab-mad-01485478',
+    nota: 'LAMPARA COLGANTE LED 3000K / 10W / ACAB. MAD · artículo 01-48-5478 · ref. 00288WD-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4764.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3000k-28w-acab-cafe-01485492',
+    art: 'LAMPARA COLGANTE LED 3000K / 28W / ACAB CAFE',
+    sku: '01-48-5492',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3000k-28w-acab-cafe-01485492',
+    nota: 'LAMPARA COLGANTE LED 3000K / 28W / ACAB CAFE · artículo 01-48-5492 · ref. 00347CF-65-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1953.96, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3000k-5w-dorado-01485499',
+    art: 'LAMPARA COLGANTE LED 3000K / 5W / DORADO',
+    sku: '01-48-5499',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3000k-5w-dorado-01485499',
+    nota: 'LAMPARA COLGANTE LED 3000K / 5W / DORADO · artículo 01-48-5499 · ref. 00473-GD-3K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3907.89, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3000k-7w-dorado-01485518',
+    art: 'LAMPARA COLGANTE LED 3000K / 7W / DORADO',
+    sku: '01-48-5518',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3000k-7w-dorado-01485518',
+    nota: 'LAMPARA COLGANTE LED 3000K / 7W / DORADO · artículo 01-48-5518 · ref. 00892GD-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3369.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3000k-7w-negro-01485517',
+    art: 'LAMPARA COLGANTE LED 3000K / 7W / NEGRO',
+    sku: '01-48-5517',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3000k-7w-negro-01485517',
+    nota: 'LAMPARA COLGANTE LED 3000K / 7W / NEGRO · artículo 01-48-5517 · ref. 00892BK-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5180.86, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-30k-13w-negro-01485480',
+    art: 'LAMPARA COLGANTE LED 30K / 13W / NEGRO',
+    sku: '01-48-5480',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-30k-13w-negro-01485480',
+    nota: 'LAMPARA COLGANTE LED 30K / 13W / NEGRO · artículo 01-48-5480 · ref. 00296BK-30K · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3299.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-38w-negro-natural-01485641',
+    art: 'LAMPARA COLGANTE LED 38W / NEGRO-NATURAL',
+    sku: '01-48-5641',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-38w-negro-natural-01485641',
+    nota: 'LAMPARA COLGANTE LED 38W / NEGRO-NATURAL · artículo 01-48-5641 · ref. 00889H-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5312.88, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3l-9w-dorada-01485642',
+    art: 'LAMPARA COLGANTE LED 3L / 9W / DORADA',
+    sku: '01-48-5642',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3l-9w-dorada-01485642',
+    nota: 'LAMPARA COLGANTE LED 3L / 9W / DORADA · artículo 01-48-5642 · ref. 00931BG-3BAR-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 5749.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3l-9w-dorada-01485603',
+    art: 'LAMPARA COLGANTE LED 3L / 9W / DORADA',
+    sku: '01-48-5603',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3l-9w-dorada-01485603',
+    nota: 'LAMPARA COLGANTE LED 3L / 9W / DORADA · artículo 01-48-5603 · ref. 00931BG-3RND-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1677.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-3w-dorada-01485602',
+    art: 'LAMPARA COLGANTE LED 3W / DORADA',
+    sku: '01-48-5602',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-3w-dorada-01485602',
+    nota: 'LAMPARA COLGANTE LED 3W / DORADA · artículo 01-48-5602 · ref. 00931BG-1H-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 7729.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-50w-30-60k-dorado-01485864',
+    art: 'LAMPARA COLGANTE LED 50W / 30-60K / DORADO',
+    sku: '01-48-5864',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-50w-30-60k-dorado-01485864',
+    nota: 'LAMPARA COLGANTE LED 50W / 30-60K / DORADO · artículo 01-48-5864 · ref. 01184H-GD-60-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 9498.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-65w-30-60k-dorado-01485865',
+    art: 'LAMPARA COLGANTE LED 65W / 30-60K / DORADO',
+    sku: '01-48-5865',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-65w-30-60k-dorado-01485865',
+    nota: 'LAMPARA COLGANTE LED 65W / 30-60K / DORADO · artículo 01-48-5865 · ref. 01184H-GD-80-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3759.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-65w-3000k-resina-ng-01485863',
+    art: 'LAMPARA COLGANTE LED 65W / 3000K / RESINA / NG',
+    sku: '01-48-5863',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-65w-3000k-resina-ng-01485863',
+    nota: 'LAMPARA COLGANTE LED 65W / 3000K / RESINA / NG · artículo 01-48-5863 · ref. 01138H-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2579.37, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-8w-30-60k-negro-01485866',
+    art: 'LAMPARA COLGANTE LED 8W / 30-60K / NEGRO',
+    sku: '01-48-5866',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-8w-30-60k-negro-01485866',
+    nota: 'LAMPARA COLGANTE LED 8W / 30-60K / NEGRO · artículo 01-48-5866 · ref. 01214-1H-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 6221.71, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-8w-3000k-verde-29cm-01485287',
+    art: 'LAMPARA COLGANTE LED 8W / 3000K / VERDE / 29CM',
+    sku: '01-48-5287',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-8w-3000k-verde-29cm-01485287',
+    nota: 'LAMPARA COLGANTE LED 8W / 3000K / VERDE / 29CM · artículo 01-48-5287 · ref. IL-DEC-1348AGR · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3339.12, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-acabado-cromado-01483763',
+    art: 'LAMPARA COLGANTE LED ACABADO CROMADO',
+    sku: '01-48-3763',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-acabado-cromado-01483763',
+    nota: 'LAMPARA COLGANTE LED ACABADO CROMADO · artículo 01-48-3763 · ref. 253019PM-LED-CH · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 15159.75, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-led-dim-13w-3000k-dorad-01485292',
+    art: 'LAMPARA COLGANTE LED DIM 13W / 3000K / DORAD',
+    sku: '01-48-5292',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-led-dim-13w-3000k-dorad-01485292',
+    nota: 'LAMPARA COLGANTE LED DIM 13W / 3000K / DORAD · artículo 01-48-5292 · ref. IL-DEC-1352 · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 27578.29, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-vidrio-negro-25x14-01485796',
+    art: 'LAMPARA COLGANTE VIDRIO / NEGRO 25X14”',
+    sku: '01-48-5796',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-vidrio-negro-25x14-01485796',
+    nota: 'LAMPARA COLGANTE VIDRIO / NEGRO 25X14” · artículo 01-48-5796 · ref. 21628 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 9283.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-colgante-vidrio-azul-1l-14x9-01483711',
+    art: 'LAMPARA COLGANTE VIDRIO AZUL 1L 14X9”',
+    sku: '01-48-3711',
+    marca: 'UTTERMOST',
+    url: 'https://ochoa.com.do/producto/lampara-colgante-vidrio-azul-1l-14x9-01483711',
+    nota: 'LAMPARA COLGANTE VIDRIO AZUL 1L 14X9” · artículo 01-48-3711 · ref. 21986 · marca UTTERMOST. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3178.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-1l-e27-10w-dorado-01483123',
+    art: 'LAMPARA D / TECHO 1L / E27 / 10W / DORADO',
+    sku: '01-48-3123',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-1l-e27-10w-dorado-01483123',
+    nota: 'LAMPARA D / TECHO 1L / E27 / 10W / DORADO · artículo 01-48-3123 · ref. 15620801-0 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 337.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-base-gris-01485687',
+    art: 'LAMPARA D / TECHO BASE GRIS',
+    sku: '01-48-5687',
+    marca: 'GENER-VEGA',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-base-gris-01485687',
+    nota: 'LAMPARA D / TECHO BASE GRIS · artículo 01-48-5687 · ref. ML-LT5WBL · marca GENER-VEGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 14750.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-contemporanea-met-45x74-01484214',
+    art: 'LAMPARA D / TECHO CONTEMPORANEA MET 45X74”',
+    sku: '01-48-4214',
+    marca: 'UMA',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-contemporanea-met-45x74-01484214',
+    nota: 'LAMPARA D / TECHO CONTEMPORANEA MET 45X74” · artículo 01-48-4214 · ref. 66937GRIS · marca UMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 392.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-emp-1l-gu10-7w-blanca-01482627',
+    art: 'LAMPARA D / TECHO EMP. 1L / GU10 / 7W / BLANCA',
+    sku: '01-48-2627',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-emp-1l-gu10-7w-blanca-01482627',
+    nota: 'LAMPARA D / TECHO EMP. 1L / GU10 / 7W / BLANCA · artículo 01-48-2627 · ref. 3120361-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 14699.73, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-65w-3cct-dorado-01485318',
+    art: 'LAMPARA D / TECHO LED 65W / 3CCT DORADO',
+    sku: '01-48-5318',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-65w-3cct-dorado-01485318',
+    nota: 'LAMPARA D / TECHO LED 65W / 3CCT DORADO · artículo 01-48-5318 · ref. T-20081A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 20299.1, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-metal-dorado-52-01484213',
+    art: 'LAMPARA D / TECHO METAL DORADO 52”',
+    sku: '01-48-4213',
+    marca: 'UMA',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-metal-dorado-52-01484213',
+    nota: 'LAMPARA D / TECHO METAL DORADO 52” · artículo 01-48-4213 · ref. 66935 · marca UMA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4262.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-spot-2l-blanca-01483820',
+    peso: 2,
+    art: 'LAMPARA SPOT 2L BLANCA',
+    sku: '01-48-3820',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-spot-2l-blanca-01483820',
+    nota: 'LAMPARA SPOT 2L BLANCA · artículo 01-48-3820 · ref. 253053C-2WH · marca SOHO LIGHTS. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4191.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-spot-2l-dorada-01483821',
+    art: 'LAMPARA SPOT 2L DORADA',
+    sku: '01-48-3821',
+    marca: 'SOHO LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-spot-2l-dorada-01483821',
+    nota: 'LAMPARA SPOT 2L DORADA · artículo 01-48-3821 · ref. 253053C-2GD · marca SOHO LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 470.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-techo-blanca-multicolor-01485655',
+    art: 'LAMPARA TECHO BLANCA / MULTICOLOR',
+    sku: '01-48-5655',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-techo-blanca-multicolor-01485655',
+    nota: 'LAMPARA TECHO BLANCA / MULTICOLOR · artículo 01-48-5655 · ref. 1404992-11 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4694.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamparacolgante-5l-e27-40w-negro-01483274',
+    art: 'LAMPARACOLGANTE 5L / E27 / 40W NEGRO',
+    sku: '01-48-3274',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamparacolgante-5l-e27-40w-negro-01483274',
+    nota: 'LAMPARACOLGANTE 5L / E27 / 40W NEGRO · artículo 01-48-3274 · ref. 4322925-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 446.02, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-oval-18w-3k-4k-6k-bco-01485122',
+    peso: 2,
+    art: 'LAMP. D / PLAFON LED OVAL 18W / 3K / 4K / 6K / BCO',
+    sku: '01-48-5122',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-oval-18w-3k-4k-6k-bco-01485122',
+    nota: 'LAMP. D / PLAFON LED OVAL 18W / 3K / 4K / 6K / BCO · artículo 01-48-5122 · ref. GE-32002BWH · marca GEL-C. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 414.94, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-oval-12w-3k-4k-6k-bco-01485120',
+    art: 'LAMP. D / PLAFON LED OVAL.12W / 3K / 4K / 6K / BCO',
+    sku: '01-48-5120',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-oval-12w-3k-4k-6k-bco-01485120',
+    nota: 'LAMP. D / PLAFON LED OVAL.12W / 3K / 4K / 6K / BCO · artículo 01-48-5120 · ref. GE-32001BWH · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 352.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-red-12w-3k-4k-6k-bco-01485124',
+    art: 'LAMP. D / PLAFON LED RED. 12W / 3K / 4K / 6K / BCO',
+    sku: '01-48-5124',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-red-12w-3k-4k-6k-bco-01485124',
+    nota: 'LAMP. D / PLAFON LED RED. 12W / 3K / 4K / 6K / BCO · artículo 01-48-5124 · ref. GE-32001AWH · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 362.65, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-red-12w-3k-4k-6k-neg-01485125',
+    art: 'LAMP. D / PLAFON LED RED. 12W / 3K / 4K / 6K / NEG',
+    sku: '01-48-5125',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-red-12w-3k-4k-6k-neg-01485125',
+    nota: 'LAMP. D / PLAFON LED RED. 12W / 3K / 4K / 6K / NEG · artículo 01-48-5125 · ref. GE-32001ABK · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 431.63, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-red-18w-3k-4k-6k-bco-01485126',
+    art: 'LAMP. D / PLAFON LED RED. 18W / 3K / 4K / 6K / BCO',
+    sku: '01-48-5126',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-red-18w-3k-4k-6k-bco-01485126',
+    nota: 'LAMP. D / PLAFON LED RED. 18W / 3K / 4K / 6K / BCO · artículo 01-48-5126 · ref. GE-32002AWH · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 446.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-d-plafon-led-red-18w-3k-4k-6k-neg-01485127',
+    art: 'LAMP. D / PLAFON LED RED. 18W / 3K / 4K / 6K / NEG',
+    sku: '01-48-5127',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lamp-d-plafon-led-red-18w-3k-4k-6k-neg-01485127',
+    nota: 'LAMP. D / PLAFON LED RED. 18W / 3K / 4K / 6K / NEG · artículo 01-48-5127 · ref. GE-32002ABK · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 233.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-1l-e27-60w-acab-blanco-01481757',
+    art: 'LAMPARA D / PLAFON 1L / E27 / 60W / ACAB. BLANCO',
+    sku: '01-48-1757',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-1l-e27-60w-acab-blanco-01481757',
+    nota: 'LAMPARA D / PLAFON 1L / E27 / 60W / ACAB. BLANCO · artículo 01-48-1757 · ref. 0116668-1/5616668 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1598.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-blanco-01485536',
+    art: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. BLANCO',
+    sku: '01-48-5536',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-blanco-01485536',
+    nota: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. BLANCO · artículo 01-48-5536 · ref. 7117WH-11 · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2726.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-negro-01485505',
+    art: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. NEGRO',
+    sku: '01-48-5505',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-negro-01485505',
+    nota: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. NEGRO · artículo 01-48-5505 · ref. 00029C-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1928.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-negro-01485507',
+    art: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. NEGRO',
+    sku: '01-48-5507',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-40w-acab-negro-01485507',
+    nota: 'LAMPARA D / PLAFON 2L / E27 / 40W / ACAB. NEGRO · artículo 01-48-5507 · ref. 00034C-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1459.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-60w-acab-blanco-01485504',
+    art: 'LAMPARA D / PLAFON 2L / E27 / 60W / ACAB. BLANCO',
+    sku: '01-48-5504',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-60w-acab-blanco-01485504',
+    nota: 'LAMPARA D / PLAFON 2L / E27 / 60W / ACAB. BLANCO · artículo 01-48-5504 · ref. 00026C-WH · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1445.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-60w-acab-negro-01485503',
+    art: 'LAMPARA D / PLAFON 2L / E27 / 60W / ACAB. NEGRO',
+    sku: '01-48-5503',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-2l-e27-60w-acab-negro-01485503',
+    nota: 'LAMPARA D / PLAFON 2L / E27 / 60W / ACAB. NEGRO · artículo 01-48-5503 · ref. 00026C-BK · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 287.84, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-7-3-8-e27-1l-60w-nique-01188629',
+    art: 'LAMPARA D / PLAFON 7-3 / 8” E27 / 1L / 60W / NIQUE',
+    sku: '01-18-8629',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-7-3-8-e27-1l-60w-nique-01188629',
+    nota: 'LAMPARA D / PLAFON 7-3 / 8” E27 / 1L / 60W / NIQUE · artículo 01-18-8629 · ref. 01BR-248621/01BR-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2497.49, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-cuadrada-led-36w-negro-01485512',
+    art: 'LAMPARA D / PLAFON CUADRADA LED 36W / NEGRO',
+    sku: '01-48-5512',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-cuadrada-led-36w-negro-01485512',
+    nota: 'LAMPARA D / PLAFON CUADRADA LED 36W / NEGRO · artículo 01-48-5512 · ref. 00323BK-50-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 415.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-e27x2l-40w-blanca-01186812',
+    art: 'LAMPARA D / PLAFON E27X2L / 40W BLANCA',
+    sku: '01-18-6812',
+    marca: 'BRIGHT-STAR',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-e27x2l-40w-blanca-01186812',
+    nota: 'LAMPARA D / PLAFON E27X2L / 40W BLANCA · artículo 01-18-6812 · ref. 01BR-247201/41BR-2 · marca BRIGHT-STAR. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 995.99, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-15w-3000-6000k-ng-d-01485629',
+    art: 'LAMPARA D / PLAFON LED 15W / 3000-6000K / NG-D',
+    sku: '01-48-5629',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-15w-3000-6000k-ng-d-01485629',
+    nota: 'LAMPARA D / PLAFON LED 15W / 3000-6000K / NG-D · artículo 01-48-5629 · ref. 00919BK-27-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 304.46, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-15w-redonda-blanca-01482802',
+    art: 'LAMPARA D / PLAFON LED 15W REDONDA BLANCA',
+    sku: '01-48-2802',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-15w-redonda-blanca-01482802',
+    nota: 'LAMPARA D / PLAFON LED 15W REDONDA BLANCA · artículo 01-48-2802 · ref. 3121850-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 353.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-18w-6000k-25x5cm-01485296',
+    art: 'LAMPARA D / PLAFON LED 18W / 6000K / 25X5CM',
+    sku: '01-48-5296',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-18w-6000k-25x5cm-01485296',
+    nota: 'LAMPARA D / PLAFON LED 18W / 6000K / 25X5CM · artículo 01-48-5296 · ref. T-20031A · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1074.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-18w-acab-dorado-01485523',
+    art: 'LAMPARA D / PLAFON LED 18W / ACAB. DORADO',
+    sku: '01-48-5523',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-18w-acab-dorado-01485523',
+    nota: 'LAMPARA D / PLAFON LED 18W / ACAB. DORADO · artículo 01-48-5523 · ref. 01025C-GD-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1281.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-18w-acab-negro-01485522',
+    art: 'LAMPARA D / PLAFON LED 18W / ACAB. NEGRO',
+    sku: '01-48-5522',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-18w-acab-negro-01485522',
+    nota: 'LAMPARA D / PLAFON LED 18W / ACAB. NEGRO · artículo 01-48-5522 · ref. 01025C-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2544.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-30w-blanca-natural-01485632',
+    art: 'LAMPARA D / PLAFON LED 30W / BLANCA-NATURAL',
+    sku: '01-48-5632',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-30w-blanca-natural-01485632',
+    nota: 'LAMPARA D / PLAFON LED 30W / BLANCA-NATURAL · artículo 01-48-5632 · ref. 00889C-WH-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1963.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-30w-neg-3000-6000k-01485634',
+    art: 'LAMPARA D / PLAFON LED 30W / NEG / 3000-6000K',
+    sku: '01-48-5634',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-30w-neg-3000-6000k-01485634',
+    nota: 'LAMPARA D / PLAFON LED 30W / NEG / 3000-6000K · artículo 01-48-5634 · ref. 00886C-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2303.72, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-30w-negro-natural-01485606',
+    art: 'LAMPARA D / PLAFON LED 30W / NEGRO-NATURAL',
+    sku: '01-48-5606',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-30w-negro-natural-01485606',
+    nota: 'LAMPARA D / PLAFON LED 30W / NEGRO-NATURAL · artículo 01-48-5606 · ref. 00889C-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 820.79, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-48w-6000k-47x5cm-01485298',
+    art: 'LAMPARA D / PLAFON LED 48W / 6000K / 47X5CM',
+    sku: '01-48-5298',
+    marca: '770 LIGHTS-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-48w-6000k-47x5cm-01485298',
+    nota: 'LAMPARA D / PLAFON LED 48W / 6000K / 47X5CM · artículo 01-48-5298 · ref. T-20031B · marca 770 LIGHTS-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2907.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-cuadrada-38w-bca-na-01485631',
+    art: 'LAMPARA D / PLAFON LED CUADRADA 38W / BCA-NA',
+    sku: '01-48-5631',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-cuadrada-38w-bca-na-01485631',
+    nota: 'LAMPARA D / PLAFON LED CUADRADA 38W / BCA-NA · artículo 01-48-5631 · ref. 00890C-WH-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2873.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-plafon-led-ratan-30w-ip20-01485605',
+    art: 'LAMPARA D / PLAFON LED RATAN / 30W / IP20',
+    sku: '01-48-5605',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-d-plafon-led-ratan-30w-ip20-01485605',
+    nota: 'LAMPARA D / PLAFON LED RATAN / 30W / IP20 · artículo 01-48-5605 · ref. 00881C-43-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 10812.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-dimeable-48w-3000k-bco-01485248',
+    art: 'LAMPARA D / TECHO DIMEABLE 48W / 3000K / BCO',
+    sku: '01-48-5248',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-dimeable-48w-3000k-bco-01485248',
+    nota: 'LAMPARA D / TECHO DIMEABLE 48W / 3000K / BCO · artículo 01-48-5248 · ref. IL-DEC-1605WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 11496.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-dimeable-48w-3000k-negro-01485249',
+    art: 'LAMPARA D / TECHO DIMEABLE 48W / 3000K / NEGRO',
+    sku: '01-48-5249',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-dimeable-48w-3000k-negro-01485249',
+    nota: 'LAMPARA D / TECHO DIMEABLE 48W / 3000K / NEGRO · artículo 01-48-5249 · ref. IL-DEC-1605BK · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1214.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-flourescente-01485759',
+    art: 'LAMPARA D / TECHO FLOURESCENTE',
+    sku: '01-48-5759',
+    marca: 'GENER-VEGA',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-flourescente-01485759',
+    nota: 'LAMPARA D / TECHO FLOURESCENTE · artículo 01-48-5759 · ref. 3908-11 · marca GENER-VEGA. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 20209.52, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-100w-4000k-01485346',
+    art: 'LAMPARA D / TECHO LED 100W / 4000K',
+    sku: '01-48-5346',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-100w-4000k-01485346',
+    nota: 'LAMPARA D / TECHO LED 100W / 4000K · artículo 01-48-5346 · ref. IL-DEC-1038BBW · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 820.07, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-18w-6000k-acab-plat-01482721',
+    art: 'LAMPARA D / TECHO LED 18W / 6000K / ACAB. PLAT',
+    sku: '01-48-2721',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-18w-6000k-acab-plat-01482721',
+    nota: 'LAMPARA D / TECHO LED 18W / 6000K / ACAB. PLAT · artículo 01-48-2721 · ref. 0121622-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 7056.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-46w-3000k-bco-01485340',
+    art: 'LAMPARA D / TECHO LED 46W / 3000K / BCO',
+    sku: '01-48-5340',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-46w-3000k-bco-01485340',
+    nota: 'LAMPARA D / TECHO LED 46W / 3000K / BCO · artículo 01-48-5340 · ref. IL-DEC-1024WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3798.14, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-48w-3k-4k-6k-01485454',
+    art: 'LAMPARA D / TECHO LED 48W / 3K / 4K / 6K',
+    sku: '01-48-5454',
+    marca: 'GEL-C',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-48w-3k-4k-6k-01485454',
+    nota: 'LAMPARA D / TECHO LED 48W / 3K / 4K / 6K · artículo 01-48-5454 · ref. GE-32004CWH · marca GEL-C. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 12536.64, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-led-50w-3k-4k-dim-01485343',
+    art: 'LAMPARA D / TECHO LED 50W / 3K / 4K DIM',
+    sku: '01-48-5343',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-led-50w-3k-4k-dim-01485343',
+    nota: 'LAMPARA D / TECHO LED 50W / 3K / 4K DIM · artículo 01-48-5343 · ref. IL-DEC-1377WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 167.43, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-1l-e27-60w-caja-28-1-01482731',
+    art: 'LAMPARA DE PLAFON 1L / E27 / 60W CAJA 28 / 1',
+    sku: '01-48-2731',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-1l-e27-60w-caja-28-1-01482731',
+    nota: 'LAMPARA DE PLAFON 1L / E27 / 60W CAJA 28 / 1 · artículo 01-48-2731 · ref. 0121810-1/4121810 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 862.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-blanco-1l-e27-60w-01483416',
+    art: 'LAMPARA DE PLAFON BLANCO 1L / E27 / 60W',
+    sku: '01-48-3416',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-blanco-1l-e27-60w-01483416',
+    nota: 'LAMPARA DE PLAFON BLANCO 1L / E27 / 60W · artículo 01-48-3416 · ref. 4122446-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 551.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-led-12w-acab-blanco-01482496',
+    art: 'LAMPARA DE PLAFON LED 12W ACAB. BLANCO',
+    sku: '01-48-2496',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-led-12w-acab-blanco-01482496',
+    nota: 'LAMPARA DE PLAFON LED 12W ACAB. BLANCO · artículo 01-48-2496 · ref. 0119205-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 742.16, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-led-18w-acab-blanco-01482493',
+    art: 'LAMPARA DE PLAFON LED 18W ACAB. BLANCO',
+    sku: '01-48-2493',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-led-18w-acab-blanco-01482493',
+    nota: 'LAMPARA DE PLAFON LED 18W ACAB. BLANCO · artículo 01-48-2493 · ref. 0119202-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 834.92, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-led-22w-acab-blanca-01482501',
+    art: 'LAMPARA DE PLAFON LED 22W ACAB. BLANCA',
+    sku: '01-48-2501',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-led-22w-acab-blanca-01482501',
+    nota: 'LAMPARA DE PLAFON LED 22W ACAB. BLANCA · artículo 01-48-2501 · ref. 0119342-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2680.74, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-led-cct-home-delight-00890c-01485637',
+    art: 'LÁMPARA DE PLAFÓN LED CCT HOME DELIGHT 00890C',
+    sku: '01-48-5637',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-led-cct-home-delight-00890c-01485637',
+    nota: 'LÁMPARA DE PLAFÓN LED CCT HOME DELIGHT 00890C · artículo 01-48-5637 · ref. 00890C-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 716.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-plafon-spot-led-01481991',
+    art: 'LAMPARA DE PLAFON SPOT LED',
+    sku: '01-48-1991',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/lampara-de-plafon-spot-led-01481991',
+    nota: 'LAMPARA DE PLAFON SPOT LED · artículo 01-48-1991 · ref. 8165 · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 817.35, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-techo-e27-2l-25w-acab-satin-01480208',
+    art: 'LAMPARA DE TECHO E27 / 2L / 25W / ACAB.SATIN',
+    sku: '01-48-0208',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-de-techo-e27-2l-25w-acab-satin-01480208',
+    nota: 'LAMPARA DE TECHO E27 / 2L / 25W / ACAB.SATIN · artículo 01-48-0208 · ref. 64-3906-31 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1218.41, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-techo-spot-led-01481974',
+    peso: 2,
+    art: 'LAMPARA DE TECHO SPOT LED',
+    sku: '01-48-1974',
+    marca: 'LIGHTSOURCE',
+    url: 'https://ochoa.com.do/producto/lampara-de-techo-spot-led-01481974',
+    nota: 'LAMPARA DE TECHO SPOT LED · artículo 01-48-1974 · ref. 7929 · marca LIGHTSOURCE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 710.53, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-techo-spot-led-01481972',
+    art: 'LAMPARA DE TECHO SPOT LED',
+    sku: '01-48-1972',
+    marca: 'LIGHTSOURCE',
+    url: 'https://ochoa.com.do/producto/lampara-de-techo-spot-led-01481972',
+    nota: 'LAMPARA DE TECHO SPOT LED · artículo 01-48-1972 · ref. 7927 · marca LIGHTSOURCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1370.17, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-de-techo-spot-led-redonda-01481970',
+    art: 'LAMPARA DE TECHO SPOT LED REDONDA',
+    sku: '01-48-1970',
+    marca: 'LIGHTSOURCE',
+    url: 'https://ochoa.com.do/producto/lampara-de-techo-spot-led-redonda-01481970',
+    nota: 'LAMPARA DE TECHO SPOT LED REDONDA · artículo 01-48-1970 · ref. 7925 · marca LIGHTSOURCE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3516.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-d-techo-1l-48w-3000k-blanco-01484551',
+    peso: 2,
+    art: 'LAMPARA LED D / TECHO 1L / 48W / 3000K BLANCO',
+    sku: '01-48-4551',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-led-d-techo-1l-48w-3000k-blanco-01484551',
+    nota: 'LAMPARA LED D / TECHO 1L / 48W / 3000K BLANCO · artículo 01-48-4551 · ref. 6423908-1 · marca IKELITE. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1622.9, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-led-d-techo-5w-3000k-blanco-01484550',
+    art: 'LAMPARA LED D / TECHO 5W / 3000K BLANCO',
+    sku: '01-48-4550',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-led-d-techo-5w-3000k-blanco-01484550',
+    nota: 'LAMPARA LED D / TECHO 5W / 3000K BLANCO · artículo 01-48-4550 · ref. 15623824-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 844.11, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-plafon-led-c-sensor-12w-blanca-01482511',
+    art: 'LAMPARA PLAFON LED C / SENSOR 12W BLANCA',
+    sku: '01-48-2511',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-plafon-led-c-sensor-12w-blanca-01482511',
+    nota: 'LAMPARA PLAFON LED C / SENSOR 12W BLANCA · artículo 01-48-2511 · ref. 0119188-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 922.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-plafon-led-c-sensor-12w-gris-01482512',
+    art: 'LAMPARA PLAFON LED C / SENSOR 12W GRIS',
+    sku: '01-48-2512',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-plafon-led-c-sensor-12w-gris-01482512',
+    nota: 'LAMPARA PLAFON LED C / SENSOR 12W GRIS · artículo 01-48-2512 · ref. 0119189-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1206.01, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-planfon-led-1l-12w-nickel-01482527',
+    art: 'LAMPARA PLANFON LED 1L / 12W / NICKEL',
+    sku: '01-48-2527',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-planfon-led-1l-12w-nickel-01482527',
+    nota: 'LAMPARA PLANFON LED 1L / 12W / NICKEL · artículo 01-48-2527 · ref. 0119200-4 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 860.03, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-planfon-led-1l-14w-6500kblanco-01482529',
+    art: 'LAMPARA PLANFON LED 1L / 14W / 6500KBLANCO',
+    sku: '01-48-2529',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-planfon-led-1l-14w-6500kblanco-01482529',
+    nota: 'LAMPARA PLANFON LED 1L / 14W / 6500KBLANCO · artículo 01-48-2529 · ref. 0119237-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 458.39, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-planfon-led-1l-e27-12w-blanco-01482522',
+    art: 'LAMPARA PLANFON LED 1L / E27 / 12W / BLANCO',
+    sku: '01-48-2522',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-planfon-led-1l-e27-12w-blanco-01482522',
+    nota: 'LAMPARA PLANFON LED 1L / E27 / 12W / BLANCO · artículo 01-48-2522 · ref. 0119347-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1153.15, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-planfon-led-c-sensor-20w-blanco-01482517',
+    art: 'LAMPARA PLANFON LED C / SENSOR 20W / BLANCO',
+    sku: '01-48-2517',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-planfon-led-c-sensor-20w-blanco-01482517',
+    nota: 'LAMPARA PLANFON LED C / SENSOR 20W / BLANCO · artículo 01-48-2517 · ref. 0119190-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 770.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/plafon-led-exterior-6lt-13w-blanco-01482419',
+    art: 'PLAFON LED EXTERIOR 6LT / 13W / BLANCO',
+    sku: '01-48-2419',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/plafon-led-exterior-6lt-13w-blanco-01482419',
+    nota: 'PLAFON LED EXTERIOR 6LT / 13W / BLANCO · artículo 01-48-2419 · ref. 4604189-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1646.25, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-blanco-01485527',
+    art: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / BLANCO',
+    sku: '01-48-5527',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-blanco-01485527',
+    nota: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / BLANCO · artículo 01-48-5527 · ref. 01027DUO-WH-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1605.66, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-dorado-01485526',
+    art: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / DORADO',
+    sku: '01-48-5526',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-dorado-01485526',
+    nota: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / DORADO · artículo 01-48-5526 · ref. 01027DUO-GD-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1652.36, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-negro-01485525',
+    art: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / NEGRO',
+    sku: '01-48-5525',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-12w-negro-01485525',
+    nota: 'SET 2 PZAS LAMPARAS D / PLAFON 12W / NEGRO · artículo 01-48-5525 · ref. 01027DUO-BK-CCT · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1618.09, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-2l-e27-40w-01485528',
+    art: 'SET 2 PZAS LAMPARAS D / PLAFON 2L / E27 / 40W',
+    sku: '01-48-5528',
+    marca: 'HOME DELIGHT',
+    url: 'https://ochoa.com.do/producto/set-2-pzas-lamparas-d-plafon-2l-e27-40w-01485528',
+    nota: 'SET 2 PZAS LAMPARAS D / PLAFON 2L / E27 / 40W · artículo 01-48-5528 · ref. 4665DUO-13-ABSATIN · marca HOME DELIGHT. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 3226.05, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-semicolgante-3l-e27-40w-blanco-01484101',
+    art: 'LAMP SEMICOLGANTE 3L / E27 / 40W BLANCO',
+    sku: '01-48-4101',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-semicolgante-3l-e27-40w-blanco-01484101',
+    nota: 'LAMP SEMICOLGANTE 3L / E27 / 40W BLANCO · artículo 01-48-4101 · ref. 2023303-1 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2615.57, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-semicolgante-3l-e27-40w-chocolate-01484105',
+    art: 'LAMP SEMICOLGANTE 3L / E27 / 40W CHOCOLATE',
+    sku: '01-48-4105',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-semicolgante-3l-e27-40w-chocolate-01484105',
+    nota: 'LAMP SEMICOLGANTE 3L / E27 / 40W CHOCOLATE · artículo 01-48-4105 · ref. 2023221-9 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 4359.85, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-semicolgante-5l-e27-40w-negro-01484104',
+    art: 'LAMP SEMICOLGANTE 5L / E27 / 40W NEGRO',
+    sku: '01-48-4104',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-semicolgante-5l-e27-40w-negro-01484104',
+    nota: 'LAMP SEMICOLGANTE 5L / E27 / 40W NEGRO · artículo 01-48-4104 · ref. 2023239-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 885.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-1l-e27-60w-blanco-01483487',
+    art: 'LAMPARA D / TECHO 1L / E27 / 60W BLANCO',
+    sku: '01-48-3487',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-1l-e27-60w-blanco-01483487',
+    nota: 'LAMPARA D / TECHO 1L / E27 / 60W BLANCO · artículo 01-48-3487 · ref. 26714B-WH · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1516.2, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-semicolgante-1l-e27-40w-negro-01483899',
+    art: 'LAMPARA SEMICOLGANTE 1L / E27 / 40W NEGRO',
+    sku: '01-48-3899',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-semicolgante-1l-e27-40w-negro-01483899',
+    nota: 'LAMPARA SEMICOLGANTE 1L / E27 / 40W NEGRO · artículo 01-48-3899 · ref. 2023200-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1771.48, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/farol-colgante-aluminio-e27-1l-100w-oxid-01185657',
+    art: 'FAROL COLGANTE ALUMINIO E27 / 1L / 100W OXID',
+    sku: '01-18-5657',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/farol-colgante-aluminio-e27-1l-100w-oxid-01185657',
+    nota: 'FAROL COLGANTE ALUMINIO E27 / 1L / 100W OXID · artículo 01-18-5657 · ref. 462824-91 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 1657.91, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lamp-ext-colgante-negro-1l-e27-40w-01483423',
+    art: 'LAMP. EXT. COLGANTE NEGRO 1L / E27 / 40W',
+    sku: '01-48-3423',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lamp-ext-colgante-negro-1l-e27-40w-01483423',
+    nota: 'LAMP. EXT. COLGANTE NEGRO 1L / E27 / 40W · artículo 01-48-3423 · ref. 4621168-2 · marca IKELITE. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 2272.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-d-techo-exterior-e27-acero-inox-01485256',
+    art: 'LAMPARA D / TECHO EXTERIOR E27 / ACERO INOX.',
+    sku: '01-48-5256',
+    marca: '770 LIGHTS',
+    url: 'https://ochoa.com.do/producto/lampara-d-techo-exterior-e27-acero-inox-01485256',
+    nota: 'LAMPARA D / TECHO EXTERIOR E27 / ACERO INOX. · artículo 01-48-5256 · ref. 50119A · marca 770 LIGHTS. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-33-004', PROV_OCHOA, 792.6, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/lampara-ext-techo-1l-gu10-7w-negro-01483638',
+    art: 'LAMPARA EXT. TECHO 1L / GU10 / 7W NEGRO',
+    sku: '01-48-3638',
+    marca: 'IKELITE',
+    url: 'https://ochoa.com.do/producto/lampara-ext-techo-1l-gu10-7w-negro-01483638',
+    nota: 'LAMPARA EXT. TECHO 1L / GU10 / 7W NEGRO · artículo 01-48-3638 · ref. 4623436-2 · marca IKELITE. ' + SUPUESTO_ITBIS
   });
   c('MAT-33-004', PROV_ALISS, 2306.5, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://aliss.do/lampara-blanca-de-mimbre-para-techo-34x34x124cm-3055494',
