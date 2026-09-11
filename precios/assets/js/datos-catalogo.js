@@ -2899,7 +2899,16 @@
       ambitos: ['construccion'] },
     { cat: 'MAT-09', re: /^(bomba|tinaco|cisterna|regulador|manometro|manómetro|boya|interruptor|tapa|valvula|válvula|tanque)/i,
       ambitos: ['construccion'] },
-    { cat: 'MAT-08', re: /^(cruceta|calzo|clip|junta|set|adoquin|adoquín|polvo|yeso|mortero|pegamento|fragua|separador)/i,
+    /* Lo que sale de interiorismo aquí es el consumible de instalación —la
+       cruceta, el calzo, el clip, la junta de dilatación, el polvo de color
+       del mosaico—, no el acabado. La baldosa, el porcelanato, el rodapié y
+       el peldaño los elige quien diseña, y por eso se quedan en los dos
+       ámbitos.
+
+       «set» estaba en esta lista y sobraba: lo único que empieza así en la
+       categoría es el «Set de huella y contrahuella», que es el acabado de
+       una escalera y se elige igual que el piso al que acompaña. */
+    { cat: 'MAT-08', re: /^(cruceta|calzo|clip|junta|adoquin|adoquín|polvo|yeso|mortero|pegamento|fragua|separador)/i,
       ambitos: ['construccion'] }
   ];
 
