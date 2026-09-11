@@ -231,7 +231,17 @@ table{border-collapse:collapse;width:100%}
 /* =========================================================
    BUSCADOR + FILTROS (catálogo)
    ========================================================= */
-.tools{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.6rem 0 .65rem}
+/* --alto-cabecera es lo que mide la cabecera del sitio; --alto-tools, lo
+   que mide esta barra ahora mismo —cambia al replegarse—. Los dos los
+   mantiene app.js y de ellos cuelga dónde se pega la cabecera de la tabla,
+   que es lo que de verdad hace falta al bajar por una tabla larga. */
+:root{--alto-cabecera:72px;--alto-tools:0px}
+.tools{position:sticky;top:var(--alto-cabecera);z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:.75rem 0 .8rem}
+/* Al bajar se queda solo el buscador y sus acciones: sigue sirviendo, pero
+   deja de comerse un tercio de la pantalla. Al subir vuelve entera. */
+.tools.is-plegada{padding:.5rem 0}
+.tools.is-plegada .ambitos,
+.tools.is-plegada .filtros{display:none}
 .tools-row{display:flex;gap:.5rem .6rem;align-items:center;flex-wrap:wrap}
 .search-box{position:relative;flex:1 1 320px;min-width:0}
 /* Al 70 % del cuerpo del texto: el buscador es una herramienta, no un
@@ -284,17 +294,31 @@ table{border-collapse:collapse;width:100%}
 .rango-precio input::-webkit-outer-spin-button,.rango-precio input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .rango-precio input:focus{background:#fff;border-color:var(--verde-200)}
 
-.resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .9rem;font-size:.9rem;color:var(--ink-mute)}
+/* Un renglón que dice cuántos ítems hay no merece dos centímetros de
+   margen: lo que se viene a ver es la tabla que va debajo. */
+.resultado-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:.75rem 0 .5rem;font-size:.9rem;color:var(--ink-mute)}
 .resultado-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
 .link-reset{background:none;border:0;color:var(--verde);cursor:pointer;text-decoration:underline;font-size:.9rem;padding:0}
 
 /* =========================================================
    TABLA DE PRECIOS
    ========================================================= */
-.tabla-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+/* El desbordamiento horizontal solo hace falta donde la tabla no cabe.
+   Y tiene un costo escondido: un contenedor con overflow es un contenedor
+   de desplazamiento, y dentro de él position:sticky se pega a ÉL y no a la
+   ventana —o sea, no se pega—. Por eso el desbordamiento queda solo en
+   pantalla estrecha, que es donde de verdad se necesita deslizar de lado,
+   y en escritorio la cabecera de la tabla puede quedarse arriba. */
+.tabla-wrap{border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+@media (max-width:900px){.tabla-wrap{overflow-x:auto}}
 .tabla{min-width:820px;font-size:.94rem}
+/* Al bajar por una tabla de ochocientas filas, lo que hace falta arriba no
+   son los filtros sino saber qué columna se está leyendo. La cabecera se
+   pega justo debajo de la cabecera del sitio y de lo que quede de la barra
+   de filtros; el z-index la deja por encima de las filas y por debajo de
+   las dos barras, que es el orden en que se superponen. */
 .tabla thead th{
-  position:sticky;top:0;z-index:2;background:var(--bg-tint);
+  position:sticky;top:calc(var(--alto-cabecera) + var(--alto-tools));z-index:3;background:var(--bg-tint);
   text-align:left;font-family:Jost,sans-serif;font-size:.79rem;font-weight:600;
   letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);
   padding:.85rem 1rem;border-bottom:1px solid var(--line);white-space:nowrap;
@@ -805,7 +829,11 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ambitos{
   display:inline-flex;flex-wrap:wrap;gap:2px;
   background:var(--marfil);border:1px solid var(--marfil-hondo);
-  border-radius:100px;padding:3px;margin:.15rem 0 .1rem;
+  border-radius:100px;padding:3px;
+  /* Es el selector que decide qué catálogo se está mirando, no un filtro
+     más: necesita aire propio para leerse como lo que es. Iba pegado por
+     arriba y por abajo a las dos filas vecinas. */
+  margin:.7rem 0 .6rem;
 }
 .ambito-op{
   display:inline-flex;align-items:center;gap:.45rem;
