@@ -30052,7 +30052,21 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1HP 60Hz Dyllu UDTWPHCA03 · artículo 242964. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-026', PROV_FERREMIX, 11205, {
+  c('MAT-09-026', PROV_BELLON, 18229, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus',
+    sku: '209425',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus · artículo 209425. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-026', PROV_BELLON, 8100, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04',
+    sku: '242965',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04 · artículo 242965. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-09-027', PROV_FERREMIX, 11205, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-presurizadora-multietapas',
     art: 'Boma centrifuga 1 1/3 hp presurizadora multietap',
     sku: 'T102387',
@@ -30060,7 +30074,7 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-presurizadora-multietapas',
     nota: 'Boma centrifuga 1 1/3 hp presurizadora multietap · artículo T102387 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_FERREMIX, 7989, {
+  c('MAT-09-028', PROV_FERREMIX, 7989, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-centrifuga-para-agua-1-2-hp',
     art: 'Boma 1/2 hp centrifuga para agua truper expert',
     sku: 'T100431',
@@ -30068,33 +30082,19 @@
     url: 'https://ferremix.com.do/products/bomba-centrifuga-para-agua-1-2-hp',
     nota: 'Boma 1/2 hp centrifuga para agua truper expert · artículo T100431 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_BELLON, 9090, {
+  c('MAT-09-028', PROV_BELLON, 9090, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrifuga 1F 127V 1/2HP Truper 10072',
     sku: '237367',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrifuga 1F 127V 1/2HP Truper 10072 · artículo 237367. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-027', PROV_BELLON, 4732, {
+  c('MAT-09-028', PROV_BELLON, 4732, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Cisterna Centrífuga 1F 110/120V 1/2HP 60Hz Dyllu UDTWPHCA01',
     sku: '242963',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1/2HP 60Hz Dyllu UDTWPHCA01 · artículo 242963. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-028', PROV_BELLON, 18229, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus',
-    sku: '209425',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Bomba Cisterna Centrífuga 1F 220V 1.5HP 60Hz Maximus · artículo 209425. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-028', PROV_BELLON, 8100, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04',
-    sku: '242965',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Bomba Cisterna Centrífuga 1F 110/120V 1.5HP 60Hz Dyllu UDTWPHCA04 · artículo 242965. ' + SUPUESTO_ITBIS
   });
   c('MAT-09-029', PROV_FERREMIX, 30539, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/motobomba-para-agua-uso-agricola-15-hp',
@@ -30349,6 +30349,13 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-de-1-1-2-hp-tipo-bala',
     nota: 'Boma 1 1/2 hp sumergile para agua limpia tipo ala truper · artículo T12626 · marca Truper. ' + SUPUESTO_ITBIS
   });
+  c('MAT-09-043', PROV_BELLON, 77553, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550',
+    sku: '164411',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550 · artículo 164411. ' + SUPUESTO_ITBIS
+  });
   c('MAT-09-043', PROV_BELLON, 6623, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 110V 1 1/2 HP 60Hz Truper BOS-1-1/2SP',
@@ -30444,28 +30451,21 @@
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 1/2HP Dyllu UDTWPD5011 · artículo 243691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-045', PROV_BELLON, 77553, {
-    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550',
-    sku: '164411',
-    url: 'https://catalogo.bellon.com.do/',
-    nota: 'Bomba Sumergible Con Motor Sin Caja 1F 230V 1.5 HP 25GPM Franklin 93702550 · artículo 164411. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-09-046', PROV_BELLON, 21812, {
+  c('MAT-09-045', PROV_BELLON, 21812, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Flota 115V 1/6 HP Little Giant 505712 5-MSP 505712/505025',
     sku: '167633',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Flota 115V 1/6 HP Little Giant 505712 5-MSP 505712/505025 · artículo 167633. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-047', PROV_BELLON, 56995, {
+  c('MAT-09-046', PROV_BELLON, 56995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Motor Sin Caja 230V 10 HP Franklin 60LD10S4-PE',
     sku: '196628',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Motor Sin Caja 230V 10 HP Franklin 60LD10S4-PE · artículo 196628. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_FERREMIX, 16615, {
+  c('MAT-09-047', PROV_FERREMIX, 16615, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-para-pozo-profundo-2-hp-agua-limpia',
     art: 'Boma 2 hp sumergile para agua limpia tipo ala truper',
     sku: 'T12627',
@@ -30473,42 +30473,42 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-para-pozo-profundo-2-hp-agua-limpia',
     nota: 'Boma 2 hp sumergile para agua limpia tipo ala truper · artículo T12627 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_BELLON, 61535, {
+  c('MAT-09-047', PROV_BELLON, 61535, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Sin Motor Sin Caja 2 HP 25GPM Franklin 25LD2S4-PE',
     sku: '202255',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Sin Motor Sin Caja 2 HP 25GPM Franklin 25LD2S4-PE · artículo 202255. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_BELLON, 23639, {
+  c('MAT-09-047', PROV_BELLON, 23639, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 220V 2HP 60Hz Maximus LSWM200A/XSP16.2.22/1.5I 2.0HP',
     sku: '210824',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 220V 2HP 60Hz Maximus LSWM200A/XSP16.2.22/1.5I 2.0HP · artículo 210824. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-048', PROV_BELLON, 12859, {
+  c('MAT-09-047', PROV_BELLON, 12859, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 2HP Maximus 4SPM5-10',
     sku: '212444',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 2HP Maximus 4SPM5-10 · artículo 212444. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 29640, {
+  c('MAT-09-048', PROV_BELLON, 29640, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 220V 3HP 60Hz Maximus LSWM300A/XSP42-17/2.2I',
     sku: '210825',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 220V 3HP 60Hz Maximus LSWM300A/XSP42-17/2.2I · artículo 210825. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-049', PROV_BELLON, 17345, {
+  c('MAT-09-048', PROV_BELLON, 17345, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja1F 220V 3 HP Maximus 4SPM5-14',
     sku: '212438',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja1F 220V 3 HP Maximus 4SPM5-14 · artículo 212438. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_FERREMIX, 2999, {
+  c('MAT-09-049', PROV_FERREMIX, 2999, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/bomba-sumergible-plastica-3-4-hp-para-agua-limpia',
     art: 'Boma sumergile para agua limpia 3/4 hp',
     sku: 'T27196',
@@ -30516,217 +30516,217 @@
     url: 'https://ferremix.com.do/products/bomba-sumergible-plastica-3-4-hp-para-agua-limpia',
     nota: 'Boma sumergile para agua limpia 3/4 hp · artículo T27196 · marca Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 8979, {
+  c('MAT-09-049', PROV_BELLON, 8979, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 3/4 HP 60Hz Maximus',
     sku: '208920',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Cisterna Con Motor/Caja 1F 220V 3/4 HP 60Hz Maximus · artículo 208920. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 13303, {
+  c('MAT-09-049', PROV_BELLON, 13303, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Negras 1F 115V 3/4 HP 60Hz Maximus LSWM75A/XSP12-8.5.5/0',
     sku: '210823',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Negras 1F 115V 3/4 HP 60Hz Maximus LSWM75A/XSP12-8.5.5/0 · artículo 210823. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 8599, {
+  c('MAT-09-049', PROV_BELLON, 8599, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Maximus 4SPM5-4',
     sku: '212441',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Maximus 4SPM5-4 · artículo 212441. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 9170, {
+  c('MAT-09-049', PROV_BELLON, 9170, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 220V 3/4HP Maximus 4SPM5-4',
     sku: '212445',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 220V 3/4HP Maximus 4SPM5-4 · artículo 212445. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 5215, {
+  c('MAT-09-049', PROV_BELLON, 5215, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Aguas Limpias 1F 110V 3/4 HP 60Hz Truper 12600',
     sku: '234882',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Aguas Limpias 1F 110V 3/4 HP 60Hz Truper 12600 · artículo 234882. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-050', PROV_BELLON, 8005, {
+  c('MAT-09-049', PROV_BELLON, 8005, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Dyllu UDTWPD5021',
     sku: '243692',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 1F 115V 3/4HP Dyllu UDTWPD5021 · artículo 243692. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-051', PROV_BELLON, 27049, {
+  c('MAT-09-050', PROV_BELLON, 27049, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Bomba Sumergible Con Motor Con Caja 3F 220V 5.5 HP Maximu 4SP5-23',
     sku: '192679',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Bomba Sumergible Con Motor Con Caja 3F 220V 5.5 HP Maximu 4SP5-23 · artículo 192679. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-052', PROV_CIMA, 1825, {
+  c('MAT-09-051', PROV_CIMA, 1825, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
     art: 'TANQUE PRESURIZADO HORIZO 24L',
     sku: '041539',
     url: 'https://ferreteriacima.com.do/products/tanque-presurizado-horizo-24l',
     nota: 'TANQUE PRESURIZADO HORIZO 24L · artículo 041539. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-053', PROV_CIMA, 1666, {
+  c('MAT-09-052', PROV_CIMA, 1666, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
     art: 'INTERRUPTOR AUTOMA BOMBA 20-40',
     sku: '782116159208',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-20-40',
     nota: 'INTERRUPTOR AUTOMA BOMBA 20-40 · artículo 782116159208. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-054', PROV_CIMA, 1631, {
+  c('MAT-09-053', PROV_CIMA, 1631, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
     art: 'INTERRUPTOR AUTOMA BOMBA 30-50',
     sku: '782116159215',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-30-50',
     nota: 'INTERRUPTOR AUTOMA BOMBA 30-50 · artículo 782116159215. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-055', PROV_CIMA, 1688, {
+  c('MAT-09-054', PROV_CIMA, 1688, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
     art: 'INTERRUPTOR AUTOMA BOMBA 40-60',
     sku: '782116159222',
     url: 'https://ferreteriacima.com.do/products/interruptor-automa-bomba-40-60',
     nota: 'INTERRUPTOR AUTOMA BOMBA 40-60 · artículo 782116159222. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-056', PROV_CIMA, 690, {
+  c('MAT-09-055', PROV_CIMA, 690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
     art: 'INTERRUPTOR FLOTA ELECT 3M',
     sku: '022359',
     url: 'https://ferreteriacima.com.do/products/interruptor-flota-elect-16amp',
     nota: 'INTERRUPTOR FLOTA ELECT 3M · artículo 022359. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-056', PROV_CIMA, 1454, {
+  c('MAT-09-055', PROV_CIMA, 1454, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
     art: 'INTERRUPTOR FLOTA ELECT 10AMP',
     sku: '8428381208648',
     url: 'https://ferreteriacima.com.do/products/interruptor-flota-elect-10amp',
     nota: 'INTERRUPTOR FLOTA ELECT 10AMP · artículo 8428381208648. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-057', PROV_CIMA, 3178, {
+  c('MAT-09-056', PROV_CIMA, 3178, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/control-automatico-bomba-1',
     art: 'CONTROL AUTOMATICO BOMBA 1\'\'',
     sku: '8428381219088',
     url: 'https://ferreteriacima.com.do/products/control-automatico-bomba-1',
     nota: 'CONTROL AUTOMATICO BOMBA 1\'\' · artículo 8428381219088. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-058', PROV_CIMA, 990, {
+  c('MAT-09-057', PROV_CIMA, 990, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
     art: 'MANOMETRO GLICERINA 150PSI 382',
     sku: '8428381508908',
     url: 'https://ferreteriacima.com.do/products/manometro-glicerina-150psi-382',
     nota: 'MANOMETRO GLICERINA 150PSI 382 · artículo 8428381508908. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-059', PROV_CIMA, 905, {
+  c('MAT-09-058', PROV_CIMA, 905, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
     art: 'MANOMETRO GLICERINA 90PSI 3822',
     sku: '8428381508892',
     url: 'https://ferreteriacima.com.do/products/manometro-glicerina-90psi-3822',
     nota: 'MANOMETRO GLICERINA 90PSI 3822 · artículo 8428381508892. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-060', PROV_CIMA, 407, {
+  c('MAT-09-059', PROV_CIMA, 407, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
     art: 'MANOMETRO 90PSI 3820N-006',
     sku: '8428381508854',
     url: 'https://ferreteriacima.com.do/products/manometro-90psi-3820n-006',
     nota: 'MANOMETRO 90PSI 3820N-006 · artículo 8428381508854. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-061', PROV_CIMA, 5395, {
+  c('MAT-09-060', PROV_CIMA, 5395, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
     art: 'CALENTADOR LINEA A GAS 8LTS',
     sku: '082516',
     url: 'https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts-1',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 082516. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-061', PROV_CIMA, 15945, {
+  c('MAT-09-060', PROV_CIMA, 15945, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
     art: 'CALENTADOR LINEA A GAS 8LTS',
     sku: '822312089944',
     url: 'https://ferreteriacima.com.do/products/calentador-linea-a-gas-8lts',
     nota: 'CALENTADOR LINEA A GAS 8LTS · artículo 822312089944. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-062', PROV_CIMA, 10291, {
+  c('MAT-09-061', PROV_CIMA, 10291, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
     art: 'CALENTADOR ELEC 6 GLS C-6',
     sku: '064560',
     url: 'https://ferreteriacima.com.do/products/calentador-elec-6-gls-c-6',
     nota: 'CALENTADOR ELEC 6 GLS C-6 · artículo 064560. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-063', PROV_CIMA, 20503, {
+  c('MAT-09-062', PROV_CIMA, 20503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
     art: 'CALENTADOR ELECTRICO 7 KW',
     sku: '822312080392',
     url: 'https://ferreteriacima.com.do/products/calentador-electrico-7-kw',
     nota: 'CALENTADOR ELECTRICO 7 KW · artículo 822312080392. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-064', PROV_CIMA, 11717, {
+  c('MAT-09-063', PROV_CIMA, 11717, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
     art: 'CALENTADOR ELEC 8 GLS C-8',
     sku: '064178',
     url: 'https://ferreteriacima.com.do/products/calentador-elec-8-gls-c-8',
     nota: 'CALENTADOR ELEC 8 GLS C-8 · artículo 064178. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-065', PROV_CIMA, 17755, {
+  c('MAT-09-064', PROV_CIMA, 17755, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
     art: 'TANQUE CISTERNA 120gls FIBRA',
     sku: '085845',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-120gls-fibra',
     nota: 'TANQUE CISTERNA 120gls FIBRA · artículo 085845. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-066', PROV_CIMA, 5101, {
+  c('MAT-09-065', PROV_CIMA, 5101, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
     art: 'TANQUE CISTERNA 30gls FIBRA VI',
     sku: '040678',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-30gls-fibra-vi',
     nota: 'TANQUE CISTERNA 30gls FIBRA VI · artículo 040678. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-067', PROV_CIMA, 7487, {
+  c('MAT-09-066', PROV_CIMA, 7487, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     art: 'TANQUE CISTERNA 42gls FIBRA VI',
     sku: '093660',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fibra-vi',
     nota: 'TANQUE CISTERNA 42gls FIBRA VI · artículo 093660. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-067', PROV_CIMA, 14217, {
+  c('MAT-09-066', PROV_CIMA, 14217, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
     art: 'TANQUE CISTERNA 42gls FV VERDE',
     sku: '039668',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-42gls-fv-verde',
     nota: 'TANQUE CISTERNA 42gls FV VERDE · artículo 039668. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-068', PROV_CIMA, 15482, {
+  c('MAT-09-067', PROV_CIMA, 15482, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
     art: 'TANQUE CISTERNA 60gls FV VERDE',
     sku: '039691',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fv-verde',
     nota: 'TANQUE CISTERNA 60gls FV VERDE · artículo 039691. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-068', PROV_CIMA, 10496, {
+  c('MAT-09-067', PROV_CIMA, 10496, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     art: 'TANQUE CISTERNA 60gls FIBRA VI',
     sku: '047125',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-60gls-fibra-vi',
     nota: 'TANQUE CISTERNA 60gls FIBRA VI · artículo 047125. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-069', PROV_CIMA, 9895, {
+  c('MAT-09-068', PROV_CIMA, 9895, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     art: 'TANQUE CISTERNA 82 GLS FIBRA V',
     sku: '260406',
     url: 'https://ferreteriacima.com.do/products/tanque-cisterna-82-gls-fibra-v',
     nota: 'TANQUE CISTERNA 82 GLS FIBRA V · artículo 260406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-070', PROV_BELLON, 35835, {
+  c('MAT-09-069', PROV_BELLON, 35835, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 1000 GL El Valleno Negro',
     sku: '78646',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 1000 GL El Valleno Negro · artículo 78646. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-071', PROV_MAX, 41115, {
+  c('MAT-09-070', PROV_MAX, 41115, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     art: 'TINACO TINACOM 1100 GLS.',
     sku: '0001016137',
@@ -30734,7 +30734,7 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-1100-gls',
     nota: 'TINACO TINACOM 1100 GLS. · artículo 0001016137 · ref. Tinaco Vertical | Capacidad 1100 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-072', PROV_MAX, 5385, {
+  c('MAT-09-071', PROV_MAX, 5385, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     art: 'TINACO TINACOM 145 GLS',
     sku: '0001047874',
@@ -30742,21 +30742,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-145-gls',
     nota: 'TINACO TINACOM 145 GLS · artículo 0001047874 · ref. Tinaco Vertical | Capacidad 145 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-072', PROV_BELLON, 5880, {
+  c('MAT-09-071', PROV_BELLON, 5880, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro',
     sku: '147528',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GLS 2 Capas Tinacom Negro · artículo 147528. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-072', PROV_BELLON, 4990, {
+  c('MAT-09-071', PROV_BELLON, 4990, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 145 GL Tinagua TC-150',
     sku: '199707',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 145 GL Tinagua TC-150 · artículo 199707. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-073', PROV_MAX, 10469.3, {
+  c('MAT-09-072', PROV_MAX, 10469.3, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     art: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO',
     sku: '0001015240',
@@ -30764,21 +30764,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-horiz-200-gls-negro',
     nota: 'TINACO TINACOM HORIZ. 200 GLS. NEGRO · artículo 0001015240 · ref. Tinaco Horizontal | Capacidad 200 galones | Color Negro · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-074', PROV_BELLON, 6325, {
+  c('MAT-09-073', PROV_BELLON, 6325, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 215 GL Tinagua TC-225',
     sku: '199708',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 215 GL Tinagua TC-225 · artículo 199708. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-075', PROV_BELLON, 7125, {
+  c('MAT-09-074', PROV_BELLON, 7125, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 250 GL El Valleno Negro',
     sku: '23435',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 250 GL El Valleno Negro · artículo 23435. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-076', PROV_FERREMIX, 8375, {
+  c('MAT-09-075', PROV_FERREMIX, 8375, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     art: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper',
     sku: 'OF0187',
@@ -30786,21 +30786,21 @@
     url: 'https://ferremix.com.do/products/combo-tinaco-255gls-tinagua-bomba-ladrona-1-2-hp-truper',
     nota: 'Combo tinao 255gls tinagua + bomba ladrona 1/2 hp truper · artículo OF0187 · ref. 255 GLS · marca Truper y Truper. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-076', PROV_BELLON, 7664, {
+  c('MAT-09-075', PROV_BELLON, 7664, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 255GL Tinagua TC-255',
     sku: '121511',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 255GL Tinagua TC-255 · artículo 121511. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-077', PROV_CIMA, 9555, {
+  c('MAT-09-076', PROV_CIMA, 9555, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     art: 'TINACO 265gls NEGRO',
     sku: '040506',
     url: 'https://ferreteriacima.com.do/products/tinaco-265gls-negro',
     nota: 'TINACO 265gls NEGRO · artículo 040506. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-077', PROV_MAX, 8585, {
+  c('MAT-09-076', PROV_MAX, 8585, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     art: 'TINACO TINACOM 265 GLS',
     sku: '0001012185',
@@ -30808,21 +30808,21 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-265-gls-1',
     nota: 'TINACO TINACOM 265 GLS · artículo 0001012185 · ref. Tinaco Vertical | Capacidad 265 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-077', PROV_BELLON, 8050, {
+  c('MAT-09-076', PROV_BELLON, 8050, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro',
     sku: '26643',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 265 GLS 2 Capas Tinacom Negro · artículo 26643. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-078', PROV_BELLON, 8105, {
+  c('MAT-09-077', PROV_BELLON, 8105, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 295 GL Tinagua TC-300',
     sku: '199709',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 295 GL Tinagua TC-300 · artículo 199709. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-079', PROV_MAX, 9660, {
+  c('MAT-09-078', PROV_MAX, 9660, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     art: 'TINACO TINACOM 300 GLS',
     sku: '0001047397',
@@ -30830,28 +30830,28 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-300-gls',
     nota: 'TINACO TINACOM 300 GLS · artículo 0001047397 · ref. Tinaco Vertical | Capacidad 300 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-079', PROV_BELLON, 10080, {
+  c('MAT-09-078', PROV_BELLON, 10080, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro',
     sku: '48543',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GLS 2 Capas Tinacom Negro · artículo 48543. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-079', PROV_BELLON, 7995, {
+  c('MAT-09-078', PROV_BELLON, 7995, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 300 GL El Valleno Negro',
     sku: '100747',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 300 GL El Valleno Negro · artículo 100747. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-080', PROV_BELLON, 9335, {
+  c('MAT-09-079', PROV_BELLON, 9335, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 350 GL El Valleno Negro',
     sku: '120396',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 350 GL El Valleno Negro · artículo 120396. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_MAX, 12125, {
+  c('MAT-09-080', PROV_MAX, 12125, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     art: 'TINACO TINACOM 400 GLS.',
     sku: '0001013502',
@@ -30859,42 +30859,42 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-400-gls',
     nota: 'TINACO TINACOM 400 GLS. · artículo 0001013502 · ref. Tinaco Vertical | Capacidad 400 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_BELLON, 13300, {
+  c('MAT-09-080', PROV_BELLON, 13300, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GLS 2 Capas Tinacom Negro',
     sku: '105219',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GLS  2 Capas Tinacom Negro · artículo 105219. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-081', PROV_BELLON, 13140, {
+  c('MAT-09-080', PROV_BELLON, 13140, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 400 GL Tinagua TC-420',
     sku: '199778',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 400 GL Tinagua TC-420 · artículo 199778. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-082', PROV_BELLON, 12940, {
+  c('MAT-09-081', PROV_BELLON, 12940, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 500 GL El Valleno Negro',
     sku: '23433',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 500 GL El Valleno Negro · artículo 23433. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-083', PROV_BELLON, 292790, {
+  c('MAT-09-082', PROV_BELLON, 292790, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 5000 GL El Valleno Negro',
     sku: '149801',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 5000 GL El Valleno Negro · artículo 149801. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-084', PROV_CIMA, 18535, {
+  c('MAT-09-083', PROV_CIMA, 18535, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     art: 'TINACO 530gls NEGRO',
     sku: '025060',
     url: 'https://ferreteriacima.com.do/products/tinaco-530gls-negro',
     nota: 'TINACO 530gls NEGRO · artículo 025060. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-084', PROV_MAX, 15331.46, {
+  c('MAT-09-083', PROV_MAX, 15331.46, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     art: 'TINACO TINACOM 530 GLS',
     sku: '0001012186',
@@ -30902,84 +30902,84 @@
     url: 'https://maxferreteria.com/products/tinaco-tinacom-530-gls',
     nota: 'TINACO TINACOM 530 GLS · artículo 0001012186 · ref. Tinaco Vertical | Capacidad 530 galones | Color n/d · marca TINACOM. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-084', PROV_BELLON, 14980, {
+  c('MAT-09-083', PROV_BELLON, 14980, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro',
     sku: '16722',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GLS 2 Capas Tinacom Negro · artículo 16722. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-084', PROV_BELLON, 15115, {
+  c('MAT-09-083', PROV_BELLON, 15115, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 530 GL Tinagua TC-555',
     sku: '199779',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 530 GL Tinagua TC-555 · artículo 199779. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-085', PROV_BELLON, 15265, {
+  c('MAT-09-084', PROV_BELLON, 15265, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
     art: 'Tinaco Plástico 600 GL El Valleno Negro',
     sku: '48561',
     url: 'https://catalogo.bellon.com.do/',
     nota: 'Tinaco Plástico 600 GL El Valleno Negro · artículo 48561. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-086', PROV_CIMA, 3313, {
+  c('MAT-09-085', PROV_CIMA, 3313, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     art: 'TAPA CISTERNA ALUMINIO 24 X 24',
     sku: '105040',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-24-x-24',
     nota: 'TAPA CISTERNA ALUMINIO 24 X 24 · artículo 105040. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-086', PROV_MAX, 3795, {
+  c('MAT-09-085', PROV_MAX, 3795, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-24x24',
     art: 'TAPA CISTERNA 24X24',
     sku: '0001124802',
     url: 'https://maxferreteria.com/products/tapa-cisterna-24x24',
     nota: 'TAPA CISTERNA 24X24 · artículo 0001124802 · ref. Tapa de cisterna | Formato 24x24 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-087', PROV_CIMA, 4503, {
+  c('MAT-09-086', PROV_CIMA, 4503, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     art: 'TAPA CISTERNA ALUMINIO 30 x 30',
     sku: '065683',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-30-x-30',
     nota: 'TAPA CISTERNA ALUMINIO 30 x 30 · artículo 065683. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-087', PROV_MAX, 4745, {
+  c('MAT-09-086', PROV_MAX, 4745, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://maxferreteria.com/products/tapa-cisterna-30x30',
     art: 'TAPA CISTERNA 30X30',
     sku: '0001124804',
     url: 'https://maxferreteria.com/products/tapa-cisterna-30x30',
     nota: 'TAPA CISTERNA 30X30 · artículo 0001124804 · ref. Tapa de cisterna | Formato 30x30 pulgadas (estandar local). ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-088', PROV_CIMA, 3995, {
+  c('MAT-09-087', PROV_CIMA, 3995, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     art: 'TAPA CISTERNA ALUMINIO 33 X 33',
     sku: '032540',
     url: 'https://ferreteriacima.com.do/products/tapa-cisterna-aluminio-33-x-33',
     nota: 'TAPA CISTERNA ALUMINIO 33 X 33 · artículo 032540. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-089', PROV_CIMA, 295, {
+  c('MAT-09-088', PROV_CIMA, 295, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     art: 'BOYA CISTERNA NARANJA 120mm',
     sku: '090406',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-120mm',
     nota: 'BOYA CISTERNA NARANJA 120mm · artículo 090406. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-090', PROV_CIMA, 375, {
+  c('MAT-09-089', PROV_CIMA, 375, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     art: 'BOYA CISTERNA NARANJA 150mm',
     sku: '090405',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-naranja-150mm',
     nota: 'BOYA CISTERNA NARANJA 150mm · artículo 090405. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-091', PROV_CIMA, 160, {
+  c('MAT-09-090', PROV_CIMA, 160, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     art: 'BOYA CISTERNA NEGRA/MAMEY 90mm',
     sku: '090407',
     url: 'https://ferreteriacima.com.do/products/boya-cisterna-negra-mamey-90mm',
     nota: 'BOYA CISTERNA NEGRA/MAMEY 90mm · artículo 090407. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-092', PROV_IBERICA, 4000, {
+  c('MAT-09-091', PROV_IBERICA, 4000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     art: 'Fregadero Sencillo Teka 25×22',
     sku: '001680',
@@ -30987,14 +30987,14 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-teka-25x22-1c-1h/',
     nota: 'Fregadero Sencillo Teka 25×22 · artículo 001680 · ref. 25×22 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-093', PROV_CIMA, 1425, {
+  c('MAT-09-092', PROV_CIMA, 1425, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     art: 'FREGADERO BAR 2 HOYOS 15X15',
     sku: '7592032002860',
     url: 'https://ferreteriacima.com.do/products/fregadero-bar-2-hoyos-15x15',
     nota: 'FREGADERO BAR 2 HOYOS 15X15 · artículo 7592032002860. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-094', PROV_CERARTE, 1795.08, {
+  c('MAT-09-093', PROV_CERARTE, 1795.08, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31003,7 +31003,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34519 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-094', PROV_CERARTE, 2764.6, {
+  c('MAT-09-093', PROV_CERARTE, 2764.6, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31012,7 +31012,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2040X34X14.5%204.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34518 · ref. 40X34X14.5 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-095', PROV_CERARTE, 2753.38, {
+  c('MAT-09-094', PROV_CERARTE, 2753.38, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO INVICTA',
@@ -31021,7 +31021,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-invicta?variant=011546%20%3A%20%20%3A%2047X32X15%203.5%22%20%3A%20PULIDO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO INVICTA · artículo CERA-34523 · ref. 47X32X15 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-096', PROV_CERARTE, 16794.81, {
+  c('MAT-09-095', PROV_CERARTE, 16794.81, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 50',
@@ -31030,7 +31030,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-50?variant=002198%20%3A%20%20%3A%2050X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 50 · artículo CERA-03261 · ref. 50X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-097', PROV_CERARTE, 4600.63, {
+  c('MAT-09-096', PROV_CERARTE, 4600.63, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 1B EMPOTRADO RIVA',
@@ -31039,7 +31039,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-empotrado-riva?variant=011544%20%3A%20%20%3A%2056X34X14.5%203.5%22%20%3A%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 1B EMPOTRADO RIVA · artículo CERA-34521 · ref. 56X34X14.5 3.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-098', PROV_CERARTE, 15492.89, {
+  c('MAT-09-097', PROV_CERARTE, 15492.89, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 1B D/CUARZO',
@@ -31048,7 +31048,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-dcuarzo?variant=011814%20%3A%20%20%3A%2060X48X20%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 1B D/CUARZO · artículo CERA-34922 · ref. 60X48X20 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-099', PROV_CERARTE, 18365.37, {
+  c('MAT-09-098', PROV_CERARTE, 18365.37, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LINE 74',
@@ -31057,7 +31057,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-line-74?variant=002199%20%3A%20%20%3A%2070X40%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LINE 74 · artículo CERA-03262 · ref. 70X40 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-100', PROV_CERARTE, 23956.99, {
+  c('MAT-09-099', PROV_CERARTE, 23956.99, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 1B BOX LUX 74',
@@ -31066,7 +31066,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-1b-box-lux-74?variant=002200%20%3A%20%20%3A%2074X40X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 1B BOX LUX 74 · artículo CERA-03263 · ref. 74X40X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-101', PROV_FERREMIX, 1635, {
+  c('MAT-09-100', PROV_FERREMIX, 1635, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     peso: 2,
     art: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga',
@@ -31075,7 +31075,7 @@
     url: 'https://ferremix.com.do/products/fregadero-sencillo-izquierdo-3h-800-x-500-x-140mm-acero-inoxidable',
     nota: 'Fregadero sencillo izquierdo 3h 800 x 500 x 140mm acero inox. 201 regga · artículo 27095 · marca Regga. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-102', PROV_IBERICA, 74.85, {
+  c('MAT-09-101', PROV_IBERICA, 74.85, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     art: 'Fregadero Sencillo 20×21 Teka',
     sku: '008929',
@@ -31083,21 +31083,21 @@
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-20x21-teka/',
     nota: 'Fregadero Sencillo 20×21 Teka · artículo 008929 · ref. 20×21 · marca Teka. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-103', PROV_IBERICA, 5265.16, {
+  c('MAT-09-102', PROV_IBERICA, 5265.16, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     art: 'Fregadero Sencillo Black 23.5x18x8 1H',
     sku: '018946',
     url: 'https://tienda.laiberica.com.do/product/fregadero-sencillo-black-23-5x18x8-1h/',
     nota: 'Fregadero Sencillo Black 23.5x18x8 1H · artículo 018946 · ref. FRE-603B. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-104', PROV_CIMA, 3040, {
+  c('MAT-09-103', PROV_CIMA, 3040, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     art: 'FREGADERO SENCILLO C/ESCURRIDO',
     sku: '010795',
     url: 'https://ferreteriacima.com.do/products/fregadero-sencillo-c-escurrido',
     nota: 'FREGADERO SENCILLO C/ESCURRIDO · artículo 010795. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-105', PROV_CERARTE, 11376, {
+  c('MAT-09-104', PROV_CERARTE, 11376, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -31106,7 +31106,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2071.5X40X15%204.5%22%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34524 · ref. 71.5X40X15 4.5" · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-106', PROV_CERARTE, 18165.28, {
+  c('MAT-09-105', PROV_CERARTE, 18165.28, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31115,7 +31115,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2079X45X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35549 · ref. 79X45X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-106', PROV_CERARTE, 45252.11, {
+  c('MAT-09-105', PROV_CERARTE, 45252.11, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B BOX LINE 75',
@@ -31124,7 +31124,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-box-line-75?variant=002201%20%3A%20%20%3A%2077.6X46X20%20%3A%20SATINADO%20%3A%20RODI',
     nota: 'FREGADERO 2B BOX LINE 75 · artículo CERA-03264 · ref. 77.6X46X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-107', PROV_CERARTE, 17852.79, {
+  c('MAT-09-106', PROV_CERARTE, 17852.79, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31133,7 +31133,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2080X47X22%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35126 · ref. 80X47X22 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-108', PROV_CERARTE, 5594.18, {
+  c('MAT-09-107', PROV_CERARTE, 5594.18, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO',
@@ -31142,7 +31142,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-doble-csifonvalvula-np-okio?variant=005309%20%3A%20%20%3A%20800X500%20%3A%20ACERO%20%3A%20RODI',
     nota: 'FREGADERO DOBLE C/SIFON/VALVULA NP OKIO · artículo CERA-20957 · ref. 800X500 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-108', PROV_CERARTE, 17226.67, {
+  c('MAT-09-107', PROV_CERARTE, 17226.67, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     itbis: false,
     art: 'FREGADERO 2B OKIO PLUS 80 DUO',
@@ -31151,7 +31151,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-okio-plus-80-duo?variant=002203%20%3A%20%20%3A%2080X50X20%20%3A%20PULIDO%20%3A%20RODI',
     nota: 'FREGADERO 2B OKIO PLUS 80 DUO · artículo CERA-03266 · ref. 80X50X20 · marca RODI. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-109', PROV_CERARTE, 11166.49, {
+  c('MAT-09-108', PROV_CERARTE, 11166.49, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     itbis: false,
     art: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE',
@@ -31160,14 +31160,14 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-empotrado-cvalvula-spice?variant=011547%20%3A%20%20%3A%2083.5X34.5X18%204.%20%3A%20ALTO%20BRILLO%20%3A%20DOCOL',
     nota: 'FREGADERO 2B EMPOTRADO C/VALVULA SPICE · artículo CERA-34525 · ref. 83.5X34.5X18 4. · marca DOCOL. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-110', PROV_CIMA, 3285, {
+  c('MAT-09-109', PROV_CIMA, 3285, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     art: 'FREGADERO DOBLE 1H 33 X 19 S/E',
     sku: '012486',
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-3h-33-x-19-s-e',
     nota: 'FREGADERO DOBLE 1H 33 X 19 S/E · artículo 012486. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-111', PROV_CIMA, 6540, {
+  c('MAT-09-110', PROV_CIMA, 6540, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     peso: 2,
     art: 'FREGADERO DOBLE 7 1H 33 x 22',
@@ -31175,14 +31175,14 @@
     url: 'https://ferreteriacima.com.do/products/fregadero-doble-7-1h-33-x-22',
     nota: 'FREGADERO DOBLE 7 1H 33 x 22 · artículo 033190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-112', PROV_IBERICA, 45860, {
+  c('MAT-09-111', PROV_IBERICA, 45860, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     art: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido',
     sku: '018396',
     url: 'https://tienda.laiberica.com.do/product/fregadero-undermount-flexlinea-rs15-2b-860-2c-44x86-inox-pulido/',
     nota: 'Fregadero Undermount FlexLinea RS15 2B 860 2C 44×86 Inox Pulido · artículo 018396 · ref. 44×86. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-113', PROV_CERARTE, 17194.13, {
+  c('MAT-09-112', PROV_CERARTE, 17194.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     itbis: false,
     art: 'FREGADERO 2B D/CUARZO',
@@ -31191,7 +31191,7 @@
     url: 'https://cerarte.com.do/tienda/producto/fregadero-2b-dcuarzo?variant=011892%20%3A%20%20%3A%2086X46X21%20%3A%20NEGRO%20%3A%20AQUALIA',
     nota: 'FREGADERO 2B D/CUARZO · artículo CERA-35127 · ref. 86X46X21 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-09-114', PROV_CARABELA, 18400, {
+  c('MAT-09-113', PROV_CARABELA, 18400, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     art: 'Fregadero Prime Doble Rectángular 89x39 cm',
     sku: '29581',
@@ -31199,7 +31199,7 @@
     url: 'https://carabela.do/products/fregadero-prime-doble-rectangular-89x39-cm',
     nota: 'Fregadero Prime Doble Rectángular 89x39 cm · artículo 29581 · marca Carabelatienda. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_FERREMIX, 6665, {
+  c('MAT-09-114', PROV_FERREMIX, 6665, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45061',
@@ -31207,7 +31207,7 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45061 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-115', PROV_FERREMIX, 6680, {
+  c('MAT-09-114', PROV_FERREMIX, 6680, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     art: 'fregadero de empotrar 120 x 50 doble',
     sku: 'T45060',
@@ -31215,28 +31215,28 @@
     url: 'https://ferremix.com.do/products/fregadero-de-empotrar-120-x-50-doble',
     nota: 'fregadero de empotrar 120 x 50 doble · artículo T45060 · ref. T45060 · marca Foset. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-116', PROV_CIMA, 256, {
+  c('MAT-09-115', PROV_CIMA, 256, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     art: 'LLAVE BEBEDERO PLAST # 53 AF',
     sku: '7461299795443',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plastica-3-8-he',
     nota: 'LLAVE BEBEDERO PLAST # 53 AF · artículo 7461299795443. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-116', PROV_CIMA, 205, {
+  c('MAT-09-115', PROV_CIMA, 205, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     art: 'LLAVE BEBEDERO PLAS MACHO 5/8',
     sku: '7502217611022',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-macho-5-8',
     nota: 'LLAVE BEBEDERO PLAS MACHO 5/8 · artículo 7502217611022. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-116', PROV_CIMA, 213, {
+  c('MAT-09-115', PROV_CIMA, 213, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7502217612012',
     url: 'https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-9',
     nota: 'LLAVE BEBEDERO PLAS HEMBRA 3/8 · artículo 7502217612012. ' + SUPUESTO_ITBIS
   });
-  c('MAT-09-116', PROV_CIMA, 222, {
+  c('MAT-09-115', PROV_CIMA, 222, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://ferreteriacima.com.do/products/llave-bebedero-plas-hembra-3-8',
     art: 'LLAVE BEBEDERO PLAS HEMBRA 3/8',
     sku: '7461299795276',

@@ -327,10 +327,53 @@ const ETIQUETA_CONEXION = {
 
 const limpia = s => (s === 0 ? '0' : String(s === undefined || s === null ? '' : s).trim());
 
+/* LOS CABALLOS DE FUERZA, ESCRITOS DE UNA SOLA MANERA
+
+   Bellón publica la misma bomba como «1 1/2 HP» en una ficha y «1.5HP»
+   en otra, y el catálogo la partía en dos: «Bomba sumergible de 1 1/2 HP»
+   con cuatro cotizaciones entre RD$ 6.623 y RD$ 18.559, y «Bomba
+   sumergible de 1.5 HP» con una sola de RD$ 77.553. Dos ítems para el
+   mismo motor, y el segundo sin nadie con quien compararse.
+
+   Se normaliza aquí, dentro de item(), y no en la regla de cada comercio,
+   por la razón de siempre pero también por una práctica: así no hay que
+   acordarse. Cualquier familia que lleve un eje `hp` queda cubierta, la
+   escriba quien la escriba.
+
+   Se publica en fracción porque es como se pide en la obra —media, tres
+   cuartos, uno y medio— y porque es lo que ya usaban casi todos los
+   ítems del catálogo. */
+const HP_FRACCION = {
+  '0.166': '1/6', '0.167': '1/6', '0.17': '1/6',
+  '0.25': '1/4', '0.33': '1/3', '0.333': '1/3', '0.5': '1/2', '0.75': '3/4',
+  '1.25': '1 1/4', '1.33': '1 1/3', '1.333': '1 1/3', '1.5': '1 1/2',
+  '2.5': '2 1/2', '3.5': '3 1/2', '5.5': '5 1/2', '6.5': '6 1/2', '7.5': '7 1/2'
+};
+
+function normalizarHP(v) {
+  const t = String(v === undefined || v === null ? '' : v).trim();
+  if (!t) return t;
+  /* Ya viene en fracción: se deja como está, solo se aprieta el espacio. */
+  if (/\//.test(t)) return t.replace(/\s+/g, ' ');
+  const n = parseFloat(t.replace(',', '.'));
+  if (!isFinite(n)) return t;
+  const clave = String(Math.round(n * 1000) / 1000);
+  if (HP_FRACCION[clave]) return HP_FRACCION[clave];
+  return Number.isInteger(n) ? String(n) : String(n);
+}
+
 function item(familia, medidas) {
   const f = FAMILIAS[familia];
   if (!f) throw new Error('familia de plomería desconocida: ' + familia);
   medidas = medidas || {};
+  /* Antes de nada: los caballos de fuerza, en una sola escritura. Va sobre
+     una copia para no reescribirle al comercio su propia ficha. */
+  if (f.ejes.indexOf('hp') >= 0 && medidas.hp !== undefined) {
+    const copia = {};
+    Object.keys(medidas).forEach(k => { copia[k] = medidas[k]; });
+    copia.hp = normalizarHP(medidas.hp);
+    medidas = copia;
+  }
 
   const claves = [familia];
   for (let i = 0; i < f.ejes.length; i++) {
@@ -535,5 +578,5 @@ function medidaConexion(a, tipo) {
 }
 
 
-module.exports = { FAMILIAS, item, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION, TOPE_PULGADAS,
+module.exports = { FAMILIAS, item, normalizarHP, comoPulgada, pulgadas, YA_EXISTE, ETIQUETA_CONEXION, TOPE_PULGADAS,
                    numerosDe, medidaPulg, materialDe, tipoConexion, medidaConexion };
