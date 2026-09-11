@@ -185,13 +185,42 @@ const FAMILIAS = {
     ejes: ['apartamentos', 'video'], etapa: 'instalaciones', orden: 60,
     alias: 'intercomunicador, videoportero'
   },
-  'intercom-estacion': {
-    cat: 'MAT-31', base: 'Estación de intercomunicador', unidad: 'unidad',
-    ejes: ['pulgadas'], etapa: 'instalaciones', orden: 70, alias: 'monitor de intercom, estación interior'
+  /* LAS CUATRO PIEZAS DE UNA INSTALACIÓN DE INTERCOM
+
+     «Accesorio de intercomunicador» era un cajón: doce cotizaciones de
+     RD$ 305 a RD$ 11.520 —treinta y ocho veces— con un teléfono de
+     audio, un monitor de video de 7", la placa de calle y los herrajes
+     de montaje dentro del mismo ítem. Ninguno de los cuatro se
+     presupuesta mirando a los otros tres.
+
+     Se separan como se compran, que es por dónde van montados: el
+     teléfono o el monitor en cada apartamento, la placa en el portón,
+     y los herrajes y los dispositivos de línea a razón de lo que pida
+     la instalación. Un edificio de ocho apartamentos lleva ocho de la
+     primera y una de la segunda: mezclarlas es contar ocho placas de
+     calle. */
+  'intercom-telefono': {
+    cat: 'MAT-31', base: 'Teléfono de intercomunicador', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 70,
+    esp: 'Unidad interior de audio, una por apartamento',
+    alias: 'teléfono de intercom, unidad interior, auricular'
+  },
+  'intercom-monitor': {
+    cat: 'MAT-31', base: 'Monitor de intercomunicador', unidad: 'unidad',
+    ejes: ['pulgadas'], etapa: 'instalaciones', orden: 72,
+    esp: 'Unidad interior con video, una por apartamento',
+    alias: 'monitor de intercom, estación interior, videoportero interior'
+  },
+  'intercom-placa': {
+    cat: 'MAT-31', base: 'Placa de calle de intercomunicador', unidad: 'unidad',
+    ejes: [], etapa: 'instalaciones', orden: 74,
+    esp: 'Unidad exterior del portón, una por entrada',
+    alias: 'placa de calle, estación de puerta, frente de calle'
   },
   'intercom-accesorio': {
     cat: 'MAT-31', base: 'Accesorio de intercomunicador', unidad: 'unidad',
-    ejes: [], etapa: 'instalaciones', orden: 80, alias: 'módulo, cubierta, fuente de intercom'
+    ejes: [], etapa: 'instalaciones', orden: 80,
+    alias: 'marco, módulo de montaje, derivador, sonería'
   },
   'timbre-inteligente': {
     cat: 'MAT-31', base: 'Timbre inteligente', unidad: 'unidad',

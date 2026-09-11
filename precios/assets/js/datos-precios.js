@@ -56301,13 +56301,29 @@
     url: 'https://ochoa.com.do/producto/kit-de-video-timbre-inteligente-g4-03061830',
     nota: 'KIT DE VIDEO TIMBRE INTELIGENTE G4 · artículo 03-06-1830 · ref. SVD-KIT1 · marca AQARA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-017', PROV_OCHOA, 9200.34, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/estacion-de-llamada-pln-6aio240-6-zonas-03061292',
-    art: 'ESTACIÓN DE LLAMADA PLN-6AIO240, 6 ZONAS',
-    sku: '03-06-1292',
-    marca: 'BOSCH',
-    url: 'https://ochoa.com.do/producto/estacion-de-llamada-pln-6aio240-6-zonas-03061292',
-    nota: 'ESTACIÓN DE LLAMADA PLN-6AIO240, 6 ZONAS · artículo 03-06-1292 · ref. PLN-6CS · marca BOSCH. ' + SUPUESTO_ITBIS
+  c('MAT-31-017', PROV_OCHOA, 305.08, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
+    art: 'TELEFONO TRAD. INTERCOM SERIE 3000',
+    sku: '03-06-0439',
+    marca: 'MASTER',
+    url: 'https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
+    nota: 'TELEFONO TRAD. INTERCOM SERIE 3000 · artículo 03-06-0439 · ref. S.VX3111 · marca MASTER. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-017', PROV_OCHOA, 1419, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
+    art: 'TELEFONO SPRINT 194MM',
+    sku: '03-06-1069',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
+    nota: 'TELEFONO SPRINT 194MM · artículo 03-06-1069 · ref. 344242 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-017', PROV_OCHOA, 5278.83, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
+    art: 'INTERCOMUNICADOR 2HINTER',
+    sku: '03-06-0352',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
+    nota: 'INTERCOMUNICADOR 2HINTER · artículo 03-06-0352 · ref. 331651 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-018', PROV_OCHOA, 14861.01, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/estacion-interior-touch-7-p-intercom-03061766',
@@ -56317,37 +56333,13 @@
     url: 'https://ochoa.com.do/producto/estacion-interior-touch-7-p-intercom-03061766',
     nota: 'ESTACION INTERIOR TOUCH 7” P / INTERCOM · artículo 03-06-1766 · ref. ST-LI9460-UD2 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-019', PROV_OCHOA, 2573.7, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
-    art: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM',
-    sku: '03-06-1767',
-    marca: 'SECTECH',
-    url: 'https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
-    nota: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM · artículo 03-06-1767 · ref. OCB-LBCE9003-RS2 · marca SECTECH. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 305.08, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
-    art: 'TELEFONO TRAD. INTERCOM SERIE 3000',
-    sku: '03-06-0439',
-    marca: 'MASTER',
-    url: 'https://ochoa.com.do/producto/telefono-trad-intercom-serie-3000-03060439',
-    nota: 'TELEFONO TRAD. INTERCOM SERIE 3000 · artículo 03-06-0439 · ref. S.VX3111 · marca MASTER. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 1765.47, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/derivador-montante-independ-03060327',
-    art: 'DERIVADOR MONTANTE INDEPEND.',
-    sku: '03-06-0327',
+  c('MAT-31-018', PROV_OCHOA, 11519.81, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
+    art: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT',
+    sku: '03-06-1043',
     marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/derivador-montante-independ-03060327',
-    nota: 'DERIVADOR MONTANTE INDEPEND. · artículo 03-06-0327 · ref. 346980 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 2164.34, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
-    art: 'MARCO SOPORTE 2 MODULOS',
-    sku: '03-06-0477',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
-    nota: 'MARCO SOPORTE 2 MODULOS · artículo 03-06-0477 · ref. 350221 · marca BTICINO. ' + SUPUESTO_ITBIS
+    url: 'https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
+    nota: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT · artículo 03-06-1043 · ref. 330751 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
   c('MAT-31-019', PROV_OCHOA, 9883.62, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/video-intercom-modulo-estacion-puerta-03061764',
@@ -56357,7 +56349,31 @@
     url: 'https://ochoa.com.do/producto/video-intercom-modulo-estacion-puerta-03061764',
     nota: 'VIDEO INTERCOM MODULO ESTACION PUERTA · artículo 03-06-1764 · ref. ST-LE9003-JNF1 · marca SECTECH. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-019', PROV_OCHOA, 1085.02, {
+  c('MAT-31-020', PROV_OCHOA, 2573.7, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
+    art: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM',
+    sku: '03-06-1767',
+    marca: 'SECTECH',
+    url: 'https://ochoa.com.do/producto/modulo-montaje-para-2-modulos-intercom-03061767',
+    nota: 'MODULO MONTAJE PARA 2 MODULOS INTERCOM · artículo 03-06-1767 · ref. OCB-LBCE9003-RS2 · marca SECTECH. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 1765.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/derivador-montante-independ-03060327',
+    art: 'DERIVADOR MONTANTE INDEPEND.',
+    sku: '03-06-0327',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/derivador-montante-independ-03060327',
+    nota: 'DERIVADOR MONTANTE INDEPEND. · artículo 03-06-0327 · ref. 346980 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 2164.34, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
+    art: 'MARCO SOPORTE 2 MODULOS',
+    sku: '03-06-0477',
+    marca: 'BTICINO',
+    url: 'https://ochoa.com.do/producto/marco-soporte-2-modulos-03060477',
+    nota: 'MARCO SOPORTE 2 MODULOS · artículo 03-06-0477 · ref. 350221 · marca BTICINO. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-31-020', PROV_OCHOA, 1085.02, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
     art: 'FRONTAL PARA TECLADO NUMERICO',
     sku: '03-06-0313',
@@ -56365,23 +56381,7 @@
     url: 'https://ochoa.com.do/producto/frontal-para-teclado-numerico-03060313',
     nota: 'FRONTAL PARA TECLADO NUMERICO · artículo 03-06-0313 · ref. 332651 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-019', PROV_OCHOA, 1419, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
-    art: 'TELEFONO SPRINT 194MM',
-    sku: '03-06-1069',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/telefono-sprint-194mm-03061069',
-    nota: 'TELEFONO SPRINT 194MM · artículo 03-06-1069 · ref. 344242 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 5278.83, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
-    art: 'INTERCOMUNICADOR 2HINTER',
-    sku: '03-06-0352',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/intercomunicador-2hinter-03060352',
-    nota: 'INTERCOMUNICADOR 2HINTER · artículo 03-06-0352 · ref. 331651 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 537.03, {
+  c('MAT-31-020', PROV_OCHOA, 537.03, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/soneria-adicional-2-hilos-03060303',
     art: 'SONERIA ADICIONAL 2 HILOS',
     sku: '03-06-0303',
@@ -56389,29 +56389,13 @@
     url: 'https://ochoa.com.do/producto/soneria-adicional-2-hilos-03060303',
     nota: 'SONERIA ADICIONAL 2 HILOS · artículo 03-06-0303 · ref. 336910 · marca BTICINO. ' + SUPUESTO_ITBIS
   });
-  c('MAT-31-019', PROV_OCHOA, 563.56, {
+  c('MAT-31-020', PROV_OCHOA, 563.56, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-p-secreto-de-conversacion-03060302',
     art: 'UNIDAD P / SECRETO DE CONVERSACION',
     sku: '03-06-0302',
     marca: 'BTICINO',
     url: 'https://ochoa.com.do/producto/unidad-p-secreto-de-conversacion-03060302',
     nota: 'UNIDAD P / SECRETO DE CONVERSACION · artículo 03-06-0302 · ref. 336300 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 11519.81, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
-    art: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT',
-    sku: '03-06-1043',
-    marca: 'BTICINO',
-    url: 'https://ochoa.com.do/producto/intercom-video-7-adic-4haddit-03061043',
-    nota: 'INTERCOM VIDEO 7\'\' ADIC 4HADDIT · artículo 03-06-1043 · ref. 330751 · marca BTICINO. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-31-019', PROV_OCHOA, 5924.86, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://ochoa.com.do/producto/unidad-de-control-digital-pantalla-oled-03060710',
-    art: 'UNIDAD DE CONTROL DIGITAL PANTALLA OLED',
-    sku: '03-06-0710',
-    marca: 'TUTONDO',
-    url: 'https://ochoa.com.do/producto/unidad-de-control-digital-pantalla-oled-03060710',
-    nota: 'UNIDAD DE CONTROL DIGITAL PANTALLA OLED · artículo 03-06-0710 · ref. CZ830MC · marca TUTONDO. ' + SUPUESTO_ITBIS
   });
   c('MAT-32-008', PROV_BELLON, 3075, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',

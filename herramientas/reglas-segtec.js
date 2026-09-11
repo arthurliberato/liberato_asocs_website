@@ -133,8 +133,16 @@ const FAMILIA = [
   [/Cerradura Inteligente/i,                       'cerradura-inteligente'],
   [/^Kit Intercom|^Kit De Video Timbre/i,          'intercom-kit'],
   [/^(Timbre|Pulsador Inalambrico)/i,              'timbre-inteligente'],
-  [/^(Estacion|Estación)/i,                        'intercom-estacion'],
-  [/intercom|conserje|montante|soneria|secreto de conversacion|^Telefono Sprint|^Frontal Para Teclado|^Marco Soporte|^Unidad De Control/i, 'intercom-accesorio'],
+  /* El intercom, por dónde va montado. Ver especificacion-segtec.js: el
+     teléfono del apartamento, el monitor del apartamento, la placa del
+     portón y los herrajes son cuatro compras distintas y antes caían en
+     la misma. El orden importa —«VIDEO INTERCOM MODULO ESTACION PUERTA»
+     tiene «video» y «modulo», y es la placa de calle— así que lo más
+     específico va primero. */
+  [/estacion (de )?puerta|placa de calle|frente de calle|modulo estacion puerta|^Placa/i, 'intercom-placa'],
+  [/intercom video|video intercom|^Estacion Interior|estacion interior|monitor.*intercom|intercom.*monitor|videoportero interior/i, 'intercom-monitor'],
+  [/^Telefono .*intercom|intercom.*telefono|^Telefono Sprint|^Telefono Trad|^Intercomunicador\b/i, 'intercom-telefono'],
+  [/intercom|conserje|montante|soneria|secreto de conversacion|^Frontal Para Teclado|^Marco Soporte/i, 'intercom-accesorio'],
 
   [/^Mini Caja/i,                                  'soporte-camara'],
   [/^(Soporte|Bracket|Carcasa|Caja|Base|Cubierta|Brazo|Copa|Poste|Sello|Bisel|Display|Programador|Comunicador|Modulo|Módulo|Tarjeta|Configurador|Control Remoto|Llavero|Mando|Receptor|Transmisor|Borne)/i, 'accesorio-alarma']
