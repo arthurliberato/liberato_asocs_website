@@ -459,6 +459,15 @@ function reglaBanos(a) {
   }
 
   if (!familia) return null;
+
+  /* El panel se resuelve en la tabla, que decide si es recinto o vidrio
+     y le saca la medida del nombre: «PANEL BAÑO AQUASPA WS-1/80F 80X190
+     CM RAYAS» es una mampara de 80 × 190. */
+  if (familia === 'cabina-ducha') {
+    const c = EB.cabinaDeDucha(n);
+    return EB.item(c.familia, c.medidas);
+  }
+
   return EB.item(familia, medidasBano(a, familia));
 }
 

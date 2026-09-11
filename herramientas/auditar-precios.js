@@ -156,7 +156,11 @@ const TECHO = {
   medida_pulg: 120, largo_cm: 1200, ancho_cm: 1200, alto_cm: 1200,
   /* 305 m es la caja de cable de red de 1000 pies: existe, no es un error. */
   diametro_pulg: 60, espesor_mm: 500, largo_m: 500, ancho_mm: 5000,
-  potencia_w: 5000, litros: 2000, watts: 5000
+  potencia_w: 5000, litros: 2000, watts: 5000,
+  /* La cabina y la mampara se guardan en centímetros y como par o
+     terna —«90 × 90 × 215»—; el auditor mira el primer número. 260 es
+     el mismo techo que usa la lectura del nombre. */
+  planta_cm: 260, vidrio_cm: 260
 };
 function medidasImposibles(items) {
   const fuera = [];

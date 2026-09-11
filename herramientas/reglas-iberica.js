@@ -253,7 +253,10 @@ function reglaBano(a) {
   if (/^espejo/.test(t)) return BANOS.item('espejo', { luz: /led|luz/.test(t) ? 'led' : '' });
   if (/^banera|^jacuzzi|^tina\b/.test(t)) return BANOS.item(BANOS.tipoDeBanera(t), { montaje: BANOS.montajeDeBanera(t), material: BANOS.materialDeBanera(t) });
   if (/^plato/.test(t)) return BANOS.item('plato-ducha', {});
-  if (/^mampara|^cabina/.test(t)) return BANOS.item('cabina-ducha', {});
+  if (/^mampara|^cabina/.test(t)) {
+    const c = BANOS.cabinaDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/^bidet|^bide\b/.test(t)) return BANOS.item('bide', {});
   if (/^orinal|^urinario/.test(t)) return BANOS.item('urinario', {});
   if (/^asiento/.test(t)) { MOTIVO.valor = 'repuesto de consumidor, no partida de obra'; return null; }

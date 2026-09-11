@@ -237,6 +237,11 @@ function regla(a) {
     const c = E.cabezalDeDucha(n + ' ' + T.limpia(a.ref));
     return E.item(c.familia, c.medidas);
   }
+  /* Y la cabina igual: si es recinto o vidrio, y de qué tamaño. */
+  if (f[1] === 'cabina-ducha') {
+    const c = E.cabinaDeDucha(n + ' ' + T.limpia(a.ref));
+    return E.item(c.familia, c.medidas);
+  }
   return E.item(f[1], medidasDe(a, f[1]));
 }
 

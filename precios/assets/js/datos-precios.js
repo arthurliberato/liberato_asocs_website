@@ -51178,7 +51178,202 @@
     url: 'https://www.innovacentro.com.do/espejosbano/espejo-baño-aquaspa-h-3004-50x70-cm-ovalado-luz-le-064823',
     nota: 'ESPEJO BAÑO AQUASPA H-3004 50X70 CM OVALADO LUZ LED · artículo 064823 · ref. Espejo · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_CERARTE, 14364.41, {
+  c('MAT-26-008', PROV_BELLON, 25870, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cabina Ducha Rectagular 1200 x 800 x 2000mm Yalilai YLL-8009 /YLL-8009L / YLL-8009R 2Pcs',
+    sku: '184972',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cabina Ducha Rectagular 1200 x 800 x 2000mm Yalilai YLL-8009 /YLL-8009L / YLL-8009R 2Pcs · artículo 184972. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-009', PROV_BELLON, 21135, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cabina Ducha Plást 900 x 900 x 1940mm Yalilai YLL-JS90 2Pcs',
+    sku: '181813',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cabina Ducha Plást 900 x 900 x 1940mm Yalilai YLL-JS90 2Pcs · artículo 181813. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-010', PROV_BELLON, 62095, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cabina Ducha 900 x 900 x 2150mm Yalilai YLL-2608 4 Pcs',
+    sku: '215796',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cabina Ducha 900 x 900 x 2150mm Yalilai YLL-2608 4 Pcs · artículo 215796. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-011', PROV_BELLON, 19995, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cabina Ducha Plástico 950x950x1940mm Yalilai Cromo YLL-JS95 2Pc',
+    sku: '180133',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cabina Ducha Plástico 950x950x1940mm Yalilai Cromo YLL-JS95 2Pc · artículo 180133. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-012', PROV_BELLON, 50655, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Cabina Ducha Hidromasaje 900x900x2100mm Yalilai YLL-869 3Pc',
+    sku: '222388',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Cabina Ducha Hidromasaje 900x900x2100mm Yalilai YLL-869 3Pc · artículo 222388. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-013', PROV_CERARTE, 104740.68, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-cdesague-hudson?variant=000057%20%3A%20%20%3A%20180X88X52%20%3A%20BLANCO%20MA%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'BAÑERA C/DESAGUE HUDSON',
+    sku: 'CERA-00078',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/banera-cdesague-hudson?variant=000057%20%3A%20%20%3A%20180X88X52%20%3A%20BLANCO%20MA%20%3A%20AQUALIA',
+    nota: 'BAÑERA C/DESAGUE HUDSON · artículo CERA-00078 · ref. 180X88X52 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-013', PROV_CERARTE, 109416.67, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-cdesague-nicolet?variant=000058%20%3A%20%20%3A%20170X80X55%20%3A%20BLANCO%20BR%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'BAÑERA C/DESAGUE NICOLET',
+    sku: 'CERA-00079',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/banera-cdesague-nicolet?variant=000058%20%3A%20%20%3A%20170X80X55%20%3A%20BLANCO%20BR%20%3A%20AQUALIA',
+    nota: 'BAÑERA C/DESAGUE NICOLET · artículo CERA-00079 · ref. 170X80X55 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-013', PROV_CERARTE, 43840, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-sencilla-moncton?variant=008232%20%3A%20%20%3A%20170X75X73%20%3A%20BLANCO%20BRILLO%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'BAÑERA SENCILLA MONCTON',
+    sku: 'CERA-32338',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/banera-sencilla-moncton?variant=008232%20%3A%20%20%3A%20170X75X73%20%3A%20BLANCO%20BRILLO%20%3A%20AQUALIA',
+    nota: 'BAÑERA SENCILLA MONCTON · artículo CERA-32338 · ref. 170X75X73 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-013', PROV_CERARTE, 117819.27, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
+    itbis: false,
+    art: 'BAÑERA BRANT',
+    sku: 'CERA-00077',
+    marca: 'AQUALIA',
+    url: 'https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
+    nota: 'BAÑERA BRANT · artículo CERA-00077 · ref. 180X80X69 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-013', PROV_BELLON, 33597, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bañera Acrí Hidrom 150 x 80 x 40 Cm Solidus Blanca',
+    sku: '210665',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bañera Acrí Hidrom 150 x 80 x 40 Cm Solidus Blanca · artículo 210665. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-013', PROV_BELLON, 49219, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bañera Acrí Hidrom 137 x 137 x 52 Cm Sanskrit Blanca',
+    sku: '210669',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bañera Acrí Hidrom 137 x 137 x 52 Cm Sanskrit Blanca · artículo 210669. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-013', PROV_BELLON, 47999, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bañera Acrí Hidrom 110 x 180 x 50 Cm Acuario Blanca',
+    sku: '226647',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bañera Acrí Hidrom 110 x 180 x 50 Cm Acuario Blanca · artículo 226647. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-013', PROV_CARABELA, 213400, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/banera-new-arquitect',
+    art: 'Bañera New Arquitect',
+    sku: '29419',
+    marca: 'NOKEN',
+    url: 'https://carabela.do/products/banera-new-arquitect',
+    nota: 'Bañera New Arquitect · artículo 29419 · marca NOKEN. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-014', PROV_BELLON, 9469, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Bañera Acero Esmaltado Liviana Der Briggs Beige',
+    sku: '22551',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Bañera Acero Esmaltado Liviana Der Briggs Beige · artículo 22551. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-015', PROV_CERARTE, 62252.4, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-leman?variant=012387%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRILICA C/DESAGUE C/OVERFLOW LEMAN',
+    sku: 'CERA-36067',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-leman?variant=012387%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
+    nota: 'BAÑERA ACRILICA C/DESAGUE C/OVERFLOW LEMAN · artículo CERA-36067 · ref. 170X75X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-015', PROV_CERARTE, 52274.47, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-kariba?variant=013094%20%3A%20%20%3A%20170X75%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW KARIBA',
+    sku: 'CERA-36838',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-kariba?variant=013094%20%3A%20%20%3A%20170X75%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
+    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW KARIBA · artículo CERA-36838 · ref. 170X75 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-015', PROV_CERARTE, 77041.97, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-maggiore?variant=012161%20%3A%20%20%3A%20170X72X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW MAGGIORE',
+    sku: 'CERA-35730',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-maggiore?variant=012161%20%3A%20%20%3A%20170X72X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW MAGGIORE · artículo CERA-35730 · ref. 170X72X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-015', PROV_CERARTE, 82102.3, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-aura?variant=012162%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW AURA',
+    sku: 'CERA-35731',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-aura?variant=012162%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW AURA · artículo CERA-35731 · ref. 170X75X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-016', PROV_IBERICA, 220004.71, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
+    art: 'Bañera Alaior Blanco 160x70x5 Carga Mineral',
+    sku: '016937',
+    url: 'https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
+    nota: 'Bañera Alaior Blanco 160x70x5 Carga Mineral · artículo 016937 · ref. 160×70×5. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-016', PROV_IBERICA, 168799.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
+    art: 'Bañera ONA Corner Der. Stonex Blanco',
+    sku: '019493',
+    url: 'https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
+    nota: 'Bañera ONA Corner Der. Stonex Blanco · artículo 019493. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-017', PROV_IBERICA, 74000.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
+    art: 'Bañera Cataluña Isla Blanco 170×90',
+    sku: '013680',
+    url: 'https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
+    nota: 'Bañera Cataluña Isla Blanco 170×90 · artículo 013680 · ref. 170×90. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-017', PROV_IBERICA, 83900.01, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
+    peso: 2,
+    art: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios',
+    sku: '018597',
+    url: 'https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
+    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-018', PROV_CERARTE, 82974.23, {
+    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    itbis: false,
+    art: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA',
+    sku: 'CERA-35732',
+    marca: 'ZENON',
+    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
+    nota: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA · artículo CERA-35732 · ref. 170X80X58 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  });
+  c('MAT-26-018', PROV_IBERICA, 109999.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
+    art: 'Bañera Acrilica Freestanding Blanco 170×80',
+    sku: '017247',
+    url: 'https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
+    nota: 'Bañera Acrilica Freestanding Blanco 170×80 · artículo 017247 · ref. 170×80. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-019', PROV_IBERICA, 195000, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
+    art: 'Bañera Freestanding Arianne Stonex Blanco',
+    sku: '016997',
+    url: 'https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
+    nota: 'Bañera Freestanding Arianne Stonex Blanco · artículo 016997. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-020', PROV_CERARTE, 14364.41, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room-8mm?variant=001279%20%3A%20%20%3A%2085X85X195%20%3A%20SC%20%3A',
     itbis: false,
     peso: 2,
@@ -51188,7 +51383,7 @@
     url: 'https://cerarte.com.do/tienda/producto/wet-room-8mm?variant=001279%20%3A%20%20%3A%2085X85X195%20%3A%20SC%20%3A',
     nota: 'WET ROOM 8MM · artículo CERA-00238 · ref. 85X85X195 · marca AQUALIA. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-008', PROV_CERARTE, 16029.13, {
+  c('MAT-26-020', PROV_CERARTE, 16029.13, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%20100X195%20%3A%20SC%20%3A',
     itbis: false,
     art: 'WET ROOM',
@@ -51197,7 +51392,7 @@
     url: 'https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%20100X195%20%3A%20SC%20%3A',
     nota: 'WET ROOM · artículo CERA-00231 · ref. 100X195 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-008', PROV_CERARTE, 15782.88, {
+  c('MAT-26-020', PROV_CERARTE, 15782.88, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2090X195%20%3A%20SC%20%3A',
     itbis: false,
     art: 'WET ROOM',
@@ -51206,7 +51401,7 @@
     url: 'https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2090X195%20%3A%20SC%20%3A',
     nota: 'WET ROOM · artículo CERA-00234 · ref. 90X195 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-008', PROV_CERARTE, 14826.27, {
+  c('MAT-26-020', PROV_CERARTE, 14826.27, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2080X80X195%20%3A%20SC%20%3A',
     itbis: false,
     art: 'WET ROOM',
@@ -51215,7 +51410,7 @@
     url: 'https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2080X80X195%20%3A%20SC%20%3A',
     nota: 'WET ROOM · artículo CERA-00233 · ref. 80X80X195 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-008', PROV_CERARTE, 15254.23, {
+  c('MAT-26-020', PROV_CERARTE, 15254.23, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2090X90X195%20%3A%20SC%20%3A',
     itbis: false,
     art: 'WET ROOM',
@@ -51224,36 +51419,28 @@
     url: 'https://cerarte.com.do/tienda/producto/wet-room?variant=001278%20%3A%20%20%3A%2090X90X195%20%3A%20SC%20%3A',
     nota: 'WET ROOM · artículo CERA-00235 · ref. 90X90X195 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-008', PROV_IBERICA, 8900, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte/',
-    peso: 2,
-    art: 'Mampara 80×190 Cristal',
-    sku: '017557',
-    url: 'https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte/',
-    nota: 'Mampara 80×190 Cristal · artículo 017557 · ref. 80×190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  c('MAT-26-020', PROV_BELLON, 12750, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 80+30x195 Cm Clear Articulada Cromo Nano Cuadrada SSC-18002L',
+    sku: '228316',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 80+30x195 Cm Clear Articulada Cromo Nano Cuadrada SSC-18002L · artículo 228316. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_IBERICA, 9299.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-90x190-cristal-5-16/',
-    art: 'Mampara 90×190 Cristal 5/16',
-    sku: '014729',
-    url: 'https://tienda.laiberica.com.do/product/mampara-90x190-cristal-5-16/',
-    nota: 'Mampara 90×190 Cristal 5/16 · artículo 014729 · ref. 90×190. ' + SUPUESTO_ITBIS
+  c('MAT-26-021', PROV_BELLON, 3220, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 100X190 Cm Perforada',
+    sku: '224910',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 100X190 Cm Perforada · artículo 224910. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_IBERICA, 15500, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte-2/',
-    art: 'Mampara Borde Alum. Black 90×190 Cristal 3/8″ C/Barra Soporte',
-    sku: '017257',
-    url: 'https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte-2/',
-    nota: 'Mampara Borde Alum. Black 90×190 Cristal 3/8″ C/Barra Soporte · artículo 017257 · ref. 90×190. ' + SUPUESTO_ITBIS
+  c('MAT-26-021', PROV_BELLON, 7045, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 100x190 Cm Rayas C/Toallero 030-36173',
+    sku: '239104',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 100x190 Cm Rayas C/Toallero 030-36173 · artículo 239104. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_IBERICA, 10097.26, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-french-black-90x190-ref-ex-100-3-cristal-3-8-c-barra-soporte/',
-    art: 'Mampara French Black 90×190 Ref. EX-100-3 Cristal 3/8″ C/Barra Soporte',
-    sku: '017256',
-    url: 'https://tienda.laiberica.com.do/product/mampara-french-black-90x190-ref-ex-100-3-cristal-3-8-c-barra-soporte/',
-    nota: 'Mampara French Black 90×190 Ref. EX-100-3 Cristal 3/8″ C/Barra Soporte · artículo 017256 · ref. EX-100-3. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-008', PROV_INNOVA, 3475.5, {
+  c('MAT-26-021', PROV_INNOVA, 3475.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-100f-100x190-cm-rayas-038165',
     art: 'PANEL BAÑO AQUASPA WS-1/100F 100X190 CM RAYAS',
     sku: '038165',
@@ -51261,7 +51448,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-100f-100x190-cm-rayas-038165',
     nota: 'PANEL BAÑO AQUASPA WS-1/100F 100X190 CM RAYAS · artículo 038165 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 4715, {
+  c('MAT-26-021', PROV_INNOVA, 4715, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-100n-100x190-cm-clear-038164',
     art: 'PANEL BAÑO AQUASPA WS-1/100N 100X190 CM CLEAR',
     sku: '038164',
@@ -51269,7 +51456,42 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-100n-100x190-cm-clear-038164',
     nota: 'PANEL BAÑO AQUASPA WS-1/100N 100X190 CM CLEAR · artículo 038164 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 3875, {
+  c('MAT-26-022', PROV_BELLON, 41895, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Con Puerta Corrediza 60" x 74"',
+    sku: '219617',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Con Puerta Corrediza 60" x 74" · artículo 219617. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-023', PROV_BELLON, 4470, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 60x190 Cm Cuadrada Rayas C/Toallero 030-36169',
+    sku: '239100',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 60x190 Cm Cuadrada Rayas C/Toallero 030-36169 · artículo 239100. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-024', PROV_BELLON, 5185, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 70x190 Cm Cuadrada Rayas C/Toallero 030-36170',
+    sku: '200886',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 70x190 Cm Cuadrada Rayas C/Toallero 030-36170 · artículo 200886. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-024', PROV_BELLON, 4150, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 70X190 Cm Perforada',
+    sku: '224902',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 70X190 Cm Perforada · artículo 224902. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-024', PROV_BELLON, 4790, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 70x190 Cm Cuadrada C/Toallero FL-1900S-T 030-36158',
+    sku: '239099',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 70x190 Cm Cuadrada C/Toallero FL-1900S-T 030-36158 · artículo 239099. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-024', PROV_INNOVA, 3875, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-70f-70x190-cm-rayas-038158',
     art: 'PANEL BAÑO AQUASPA WS-1/70F 70X190 CM RAYAS',
     sku: '038158',
@@ -51277,7 +51499,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-70f-70x190-cm-rayas-038158',
     nota: 'PANEL BAÑO AQUASPA WS-1/70F 70X190 CM RAYAS · artículo 038158 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 3690, {
+  c('MAT-26-024', PROV_INNOVA, 3690, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-70n-70x190-cm-clear-038157',
     art: 'PANEL BAÑO AQUASPA WS-1/70N 70X190 CM CLEAR',
     sku: '038157',
@@ -51285,7 +51507,43 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-70n-70x190-cm-clear-038157',
     nota: 'PANEL BAÑO AQUASPA WS-1/70N 70X190 CM CLEAR · artículo 038157 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 5302, {
+  c('MAT-26-025', PROV_BELLON, 6195, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 70 x 195 Cm Raya Derecha C/Toallero FL-1900B-T',
+    sku: '233796',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 70 x 195 Cm Raya Derecha C/Toallero FL-1900B-T · artículo 233796. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-026', PROV_IBERICA, 8900, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte/',
+    peso: 2,
+    art: 'Mampara 80×190 Cristal',
+    sku: '017557',
+    url: 'https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte/',
+    nota: 'Mampara 80×190 Cristal · artículo 017557 · ref. 80×190. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-026', PROV_BELLON, 6024, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 80x190 Cm Cuadrada Rayas C/Toallero 030-36171',
+    sku: '200869',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 80x190 Cm Cuadrada Rayas C/Toallero 030-36171 · artículo 200869. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-026', PROV_BELLON, 3840, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 80x190 Cms Perforada',
+    sku: '212697',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 80x190 Cms Perforada · artículo 212697. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-026', PROV_BELLON, 2660, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 80x190 Cms S/Perforación',
+    sku: '227197',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 80x190 Cms S/Perforación · artículo 227197. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-026', PROV_INNOVA, 5302, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80c-80x190-cm-clear-esqu-054729',
     art: 'PANEL BAÑO AQUASPA WS-1/80C 80X190 CM CLEAR ESQUINA CURVEADA',
     sku: '054729',
@@ -51293,7 +51551,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80c-80x190-cm-clear-esqu-054729',
     nota: 'PANEL BAÑO AQUASPA WS-1/80C 80X190 CM CLEAR ESQUINA CURVEADA · artículo 054729 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 3118.5, {
+  c('MAT-26-026', PROV_INNOVA, 3118.5, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80cr-80x190-cm-rayas-esq-054731',
     art: 'PANEL BAÑO AQUASPA WS-1/80CR 80X190 CM RAYAS ESQUINA CURVEADA',
     sku: '054731',
@@ -51301,7 +51559,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80cr-80x190-cm-rayas-esq-054731',
     nota: 'PANEL BAÑO AQUASPA WS-1/80CR 80X190 CM RAYAS ESQUINA CURVEADA · artículo 054731 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 4235, {
+  c('MAT-26-026', PROV_INNOVA, 4235, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80f-80x190-cm-rayas-038160',
     art: 'PANEL BAÑO AQUASPA WS-1/80F 80X190 CM RAYAS',
     sku: '038160',
@@ -51309,7 +51567,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80f-80x190-cm-rayas-038160',
     nota: 'PANEL BAÑO AQUASPA WS-1/80F 80X190 CM RAYAS · artículo 038160 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 4025, {
+  c('MAT-26-026', PROV_INNOVA, 4025, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80n-80x190-cm-clear-038159',
     art: 'PANEL BAÑO AQUASPA WS-1/80N 80X190 CM CLEAR',
     sku: '038159',
@@ -51317,7 +51575,77 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-80n-80x190-cm-clear-038159',
     nota: 'PANEL BAÑO AQUASPA WS-1/80N 80X190 CM CLEAR · artículo 038159 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 5733, {
+  c('MAT-26-027', PROV_BELLON, 6907, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 80 x 195 Cm Raya Derecha C/Toallero Curva FL-1900B-T',
+    sku: '228315',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 80 x 195 Cm Raya Derecha C/Toallero Curva FL-1900B-T · artículo 228315. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-027', PROV_BELLON, 6866, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 80 x 195 Cm Raya Izquierda C/Toallero FL-1900B-T',
+    sku: '235599',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 80 x 195 Cm Raya Izquierda C/Toallero FL-1900B-T · artículo 235599. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-028', PROV_BELLON, 5379, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 90 x 180 Cm Raya Derecha C/Toallero Curva FL-1800B-T',
+    sku: '236964',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 90 x 180 Cm Raya Derecha C/Toallero Curva FL-1800B-T · artículo 236964. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_IBERICA, 9299.99, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-90x190-cristal-5-16/',
+    art: 'Mampara 90×190 Cristal 5/16',
+    sku: '014729',
+    url: 'https://tienda.laiberica.com.do/product/mampara-90x190-cristal-5-16/',
+    nota: 'Mampara 90×190 Cristal 5/16 · artículo 014729 · ref. 90×190. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_IBERICA, 15500, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte-2/',
+    art: 'Mampara Borde Alum. Black 90×190 Cristal 3/8″ C/Barra Soporte',
+    sku: '017257',
+    url: 'https://tienda.laiberica.com.do/product/mampara-borde-alum-black-90x190-cristal-3-8-c-barra-soporte-2/',
+    nota: 'Mampara Borde Alum. Black 90×190 Cristal 3/8″ C/Barra Soporte · artículo 017257 · ref. 90×190. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_IBERICA, 10097.26, {
+    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/mampara-french-black-90x190-ref-ex-100-3-cristal-3-8-c-barra-soporte/',
+    art: 'Mampara French Black 90×190 Ref. EX-100-3 Cristal 3/8″ C/Barra Soporte',
+    sku: '017256',
+    url: 'https://tienda.laiberica.com.do/product/mampara-french-black-90x190-ref-ex-100-3-cristal-3-8-c-barra-soporte/',
+    nota: 'Mampara French Black 90×190 Ref. EX-100-3 Cristal 3/8″ C/Barra Soporte · artículo 017256 · ref. EX-100-3. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_BELLON, 6786.42, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 90x190 Cm Cuadrada Rayas C/Toallero 030-36172',
+    sku: '200853',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 90x190 Cm Cuadrada Rayas C/Toallero 030-36172 · artículo 200853. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_BELLON, 4963, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 90x190 Cms Perforada',
+    sku: '212698',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 90x190 Cms Perforada · artículo 212698. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_BELLON, 2660, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara Fija Transparente 3/8 90x190 Cms S/Perforación',
+    sku: '227198',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara Fija Transparente 3/8 90x190 Cms S/Perforación · artículo 227198. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_BELLON, 6305, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 90x190 Cm Cuadrada C/Toallero FL-1900S-T',
+    sku: '239102',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 90x190 Cm Cuadrada C/Toallero FL-1900S-T · artículo 239102. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-029', PROV_INNOVA, 5733, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90c-90x190-cm-clear-esqu-054730',
     art: 'PANEL BAÑO AQUASPA WS-1/90C 90X190 CM CLEAR ESQUINA CURVEADA',
     sku: '054730',
@@ -51325,7 +51653,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90c-90x190-cm-clear-esqu-054730',
     nota: 'PANEL BAÑO AQUASPA WS-1/90C 90X190 CM CLEAR ESQUINA CURVEADA · artículo 054730 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 4830, {
+  c('MAT-26-029', PROV_INNOVA, 4830, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90cr-90x190-cm-rayas-esq-054732',
     art: 'PANEL BAÑO AQUASPA WS-1/90CR 90X190 CM RAYAS ESQUINA CURVEADA',
     sku: '054732',
@@ -51333,7 +51661,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90cr-90x190-cm-rayas-esq-054732',
     nota: 'PANEL BAÑO AQUASPA WS-1/90CR 90X190 CM RAYAS ESQUINA CURVEADA · artículo 054732 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 4595, {
+  c('MAT-26-029', PROV_INNOVA, 4595, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90f-90x190-cm-rayas-038162',
     art: 'PANEL BAÑO AQUASPA WS-1/90F 90X190 CM RAYAS',
     sku: '038162',
@@ -51341,7 +51669,7 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90f-90x190-cm-rayas-038162',
     nota: 'PANEL BAÑO AQUASPA WS-1/90F 90X190 CM RAYAS · artículo 038162 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-008', PROV_INNOVA, 6079, {
+  c('MAT-26-029', PROV_INNOVA, 6079, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90n-90x190-cm-clear-038161',
     art: 'PANEL BAÑO AQUASPA WS-1/90N 90X190 CM CLEAR',
     sku: '038161',
@@ -51349,146 +51677,28 @@
     url: 'https://www.innovacentro.com.do/panelesducha/panel-baño-aquaspa-ws-1-3-90n-90x190-cm-clear-038161',
     nota: 'PANEL BAÑO AQUASPA WS-1/90N 90X190 CM CLEAR · artículo 038161 · ref. Panel · marca AQUASPA. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-009', PROV_CERARTE, 104740.68, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-cdesague-hudson?variant=000057%20%3A%20%20%3A%20180X88X52%20%3A%20BLANCO%20MA%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'BAÑERA C/DESAGUE HUDSON',
-    sku: 'CERA-00078',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/banera-cdesague-hudson?variant=000057%20%3A%20%20%3A%20180X88X52%20%3A%20BLANCO%20MA%20%3A%20AQUALIA',
-    nota: 'BAÑERA C/DESAGUE HUDSON · artículo CERA-00078 · ref. 180X88X52 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-009', PROV_CERARTE, 109416.67, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-cdesague-nicolet?variant=000058%20%3A%20%20%3A%20170X80X55%20%3A%20BLANCO%20BR%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'BAÑERA C/DESAGUE NICOLET',
-    sku: 'CERA-00079',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/banera-cdesague-nicolet?variant=000058%20%3A%20%20%3A%20170X80X55%20%3A%20BLANCO%20BR%20%3A%20AQUALIA',
-    nota: 'BAÑERA C/DESAGUE NICOLET · artículo CERA-00079 · ref. 170X80X55 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-009', PROV_CERARTE, 43840, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-sencilla-moncton?variant=008232%20%3A%20%20%3A%20170X75X73%20%3A%20BLANCO%20BRILLO%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'BAÑERA SENCILLA MONCTON',
-    sku: 'CERA-32338',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/banera-sencilla-moncton?variant=008232%20%3A%20%20%3A%20170X75X73%20%3A%20BLANCO%20BRILLO%20%3A%20AQUALIA',
-    nota: 'BAÑERA SENCILLA MONCTON · artículo CERA-32338 · ref. 170X75X73 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-009', PROV_CERARTE, 117819.27, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
-    itbis: false,
-    art: 'BAÑERA BRANT',
-    sku: 'CERA-00077',
-    marca: 'AQUALIA',
-    url: 'https://cerarte.com.do/tienda/producto/banera-brant?variant=000056%20%3A%20%20%3A%20180X80X69%20%3A%20BLANCO%20%3A%20AQUALIA',
-    nota: 'BAÑERA BRANT · artículo CERA-00077 · ref. 180X80X69 · marca AQUALIA. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-009', PROV_CARABELA, 213400, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://carabela.do/products/banera-new-arquitect',
-    art: 'Bañera New Arquitect',
-    sku: '29419',
-    marca: 'NOKEN',
-    url: 'https://carabela.do/products/banera-new-arquitect',
-    nota: 'Bañera New Arquitect · artículo 29419 · marca NOKEN. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-010', PROV_BELLON, 9469, {
+  c('MAT-26-030', PROV_BELLON, 7195, {
     fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
-    art: 'Bañera Acero Esmaltado Liviana Der Briggs Beige',
-    sku: '22551',
+    art: 'Mampara 90x195 Cm Raya Der C/Toallero FL-1950B-T',
+    sku: '228317',
     url: 'https://catalogo.bellon.com.do/',
-    nota: 'Bañera Acero Esmaltado Liviana Der Briggs Beige · artículo 22551. ' + SUPUESTO_ITBIS
+    nota: 'Mampara 90x195 Cm Raya Der C/Toallero FL-1950B-T · artículo 228317. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-011', PROV_CERARTE, 62252.4, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-leman?variant=012387%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRILICA C/DESAGUE C/OVERFLOW LEMAN',
-    sku: 'CERA-36067',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-leman?variant=012387%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
-    nota: 'BAÑERA ACRILICA C/DESAGUE C/OVERFLOW LEMAN · artículo CERA-36067 · ref. 170X75X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  c('MAT-26-030', PROV_BELLON, 7350, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 90 x 195 Cm Raya Derecha S/Toallero Curva FL-1900B-E',
+    sku: '233120',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 90 x 195 Cm Raya Derecha S/Toallero Curva FL-1900B-E · artículo 233120. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-011', PROV_CERARTE, 52274.47, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-kariba?variant=013094%20%3A%20%20%3A%20170X75%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW KARIBA',
-    sku: 'CERA-36838',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-kariba?variant=013094%20%3A%20%20%3A%20170X75%20%3A%20BLANCO%20BRILLO%20%3A%20ZENON',
-    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW KARIBA · artículo CERA-36838 · ref. 170X75 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
+  c('MAT-26-030', PROV_BELLON, 6700, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Mampara 90 x 195 Cm Raya Izquierda C/Toallero Curva',
+    sku: '235322',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Mampara 90 x 195 Cm  Raya Izquierda C/Toallero Curva · artículo 235322. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-011', PROV_CERARTE, 77041.97, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-maggiore?variant=012161%20%3A%20%20%3A%20170X72X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW MAGGIORE',
-    sku: 'CERA-35730',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-maggiore?variant=012161%20%3A%20%20%3A%20170X72X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW MAGGIORE · artículo CERA-35730 · ref. 170X72X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-011', PROV_CERARTE, 82102.3, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-aura?variant=012162%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW AURA',
-    sku: 'CERA-35731',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cdesague-coverflow-aura?variant=012162%20%3A%20%20%3A%20170X75X60%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    nota: 'BAÑERA ACRÍLICA C/DESAGUE C/OVERFLOW AURA · artículo CERA-35731 · ref. 170X75X60 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-012', PROV_IBERICA, 220004.71, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
-    art: 'Bañera Alaior Blanco 160x70x5 Carga Mineral',
-    sku: '016937',
-    url: 'https://tienda.laiberica.com.do/product/baera-alaior-blanco-160x70x57-5-carga-mineral-con-desage/',
-    nota: 'Bañera Alaior Blanco 160x70x5 Carga Mineral · artículo 016937 · ref. 160×70×5. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-012', PROV_IBERICA, 168799.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
-    art: 'Bañera ONA Corner Der. Stonex Blanco',
-    sku: '019493',
-    url: 'https://tienda.laiberica.com.do/product/banera-ona-corner-der-stonex-blanco/',
-    nota: 'Bañera ONA Corner Der. Stonex Blanco · artículo 019493. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-013', PROV_IBERICA, 74000.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
-    art: 'Bañera Cataluña Isla Blanco 170×90',
-    sku: '013680',
-    url: 'https://tienda.laiberica.com.do/product/baera-catalua-isla-blanco-170x90/',
-    nota: 'Bañera Cataluña Isla Blanco 170×90 · artículo 013680 · ref. 170×90. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-013', PROV_IBERICA, 83900.01, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
-    peso: 2,
-    art: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios',
-    sku: '018597',
-    url: 'https://tienda.laiberica.com.do/product/banera-danesa-isla-blanco-189-x-113-sin-accesorios/',
-    nota: 'Bañera Danesa Isla Blanco 189 x 113 Sin Accesorios · artículo 018597 · ref. 189×113. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-014', PROV_CERARTE, 82974.23, {
-    fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    itbis: false,
-    art: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA',
-    sku: 'CERA-35732',
-    marca: 'ZENON',
-    url: 'https://cerarte.com.do/tienda/producto/banera-acrilica-cpatas-cdesague-coverflow-olympia?variant=012163%20%3A%20%20%3A%20170X80X58%20%3A%20BLANCO%20MATE%20%3A%20ZENON',
-    nota: 'BAÑERA ACRÍLICA C/PATAS C/DESAGUE C/OVERFLOW OLYMPIA · artículo CERA-35732 · ref. 170X80X58 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
-  });
-  c('MAT-26-014', PROV_IBERICA, 109999.99, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
-    art: 'Bañera Acrilica Freestanding Blanco 170×80',
-    sku: '017247',
-    url: 'https://tienda.laiberica.com.do/product/banera-acrilica-freestanding-blanco-170x80/',
-    nota: 'Bañera Acrilica Freestanding Blanco 170×80 · artículo 017247 · ref. 170×80. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-015', PROV_IBERICA, 195000, {
-    fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
-    art: 'Bañera Freestanding Arianne Stonex Blanco',
-    sku: '016997',
-    url: 'https://tienda.laiberica.com.do/product/baera-freestanding-arianne-stonex-blanco/',
-    nota: 'Bañera Freestanding Arianne Stonex Blanco · artículo 016997. ' + SUPUESTO_ITBIS
-  });
-  c('MAT-26-016', PROV_IBERICA, 14250, {
+  c('MAT-26-031', PROV_IBERICA, 14250, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
     peso: 2,
     art: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague',
@@ -51496,14 +51706,21 @@
     url: 'https://tienda.laiberica.com.do/product/banera-kiddy-infante-blanca-72x44x15-5-acrilica-s-desague/',
     nota: 'Bañera Kiddy Infante Blanca 72x44x15.5 Acrilica s/Desague · artículo 010627 · ref. 72×44×15.5. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-017', PROV_IBERICA, 224176.4, {
+  c('MAT-26-032', PROV_IBERICA, 224176.4, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
     art: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90',
     sku: '015731',
     url: 'https://tienda.laiberica.com.do/product/baera-hidromasaje-catalua-isla-blanco-170x90/',
     nota: 'Bañera Hidromasaje Cataluña Isla Blanco 170×90 · artículo 015731 · ref. 170×90. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-018', PROV_CERARTE, 16337.59, {
+  c('MAT-26-032', PROV_BELLON, 98290, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Jacuzzi Hidromasaje 1700 x 1150 x 650mm Yalilai YLL-878',
+    sku: '216500',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Jacuzzi Hidromasaje 1700 x 1150 x 650mm Yalilai YLL-878 · artículo 216500. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-033', PROV_CERARTE, 16337.59, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-korvit?variant=012718%20%3A%20%20%3A%2080X120%20%3A%20NIEVE%20%3A%20ZENON',
     itbis: false,
     peso: 2,
@@ -51513,7 +51730,7 @@
     url: 'https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-smart-korvit?variant=012718%20%3A%20%20%3A%2080X120%20%3A%20NIEVE%20%3A%20ZENON',
     nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA SMART KORVIT · artículo CERA-36589 · ref. 80X120 · marca ZENON. El comercio lista 2 artículos con esta misma especificación y el mismo precio; aquí van como una sola cotización, y cuenta por 2 al calcular la referencia. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-018', PROV_CERARTE, 14956.2, {
+  c('MAT-26-033', PROV_CERARTE, 14956.2, {
     fecha: '2026-09-11', fuente: 'Precio publicado en https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-frame-korvit?variant=012719%20%3A%20%20%3A%2090X90%20%3A%20NIEVE%20%3A%20ZENON',
     itbis: false,
     art: 'PLATO D/DUCHA C/DESAGUE C/REJILLA FRAME KORVIT',
@@ -51522,90 +51739,97 @@
     url: 'https://cerarte.com.do/tienda/producto/plato-dducha-cdesague-crejilla-frame-korvit?variant=012719%20%3A%20%20%3A%2090X90%20%3A%20NIEVE%20%3A%20ZENON',
     nota: 'PLATO D/DUCHA C/DESAGUE C/REJILLA FRAME KORVIT · artículo CERA-36590 · ref. 90X90 · marca ZENON. El comercio publica el precio sin ITBIS y lo suma en la factura'
   });
-  c('MAT-26-018', PROV_IBERICA, 23481.99, {
+  c('MAT-26-033', PROV_IBERICA, 23481.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-120x80-acrilico-blanco-derecha/',
     art: 'Plato De Ducha 120×80 Acrílico Blanco Derecha',
     sku: '003786',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-120x80-acrilico-blanco-derecha/',
     nota: 'Plato De Ducha 120×80 Acrílico Blanco Derecha · artículo 003786 · ref. 120×80. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-018', PROV_IBERICA, 14999.99, {
+  c('MAT-26-033', PROV_IBERICA, 14999.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-classic-traverten/',
     art: 'Plato De Ducha 36″X36″ Classic Traverten',
     sku: '003788',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-classic-traverten/',
     nota: 'Plato De Ducha 36″X36″ Classic Traverten · artículo 003788. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-018', PROV_IBERICA, 29990, {
+  c('MAT-26-033', PROV_IBERICA, 29990, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-gold-travertino/',
     art: 'Plato De Ducha 36″X36″ Gold Travertino',
     sku: '003789',
     url: 'https://tienda.laiberica.com.do/product/plato-de-ducha-36x36-gold-travertino/',
     nota: 'Plato De Ducha 36″X36″ Gold Travertino · artículo 003789. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 147500, {
+  c('MAT-26-034', PROV_IBERICA, 147500, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
     art: 'Jacuzzi Palermo Acrilico Blanco',
     sku: '005935',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-palermo-acrilico-blanco/',
     nota: 'Jacuzzi Palermo Acrilico Blanco · artículo 005935. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 389999.99, {
+  c('MAT-26-034', PROV_IBERICA, 389999.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
     art: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico',
     sku: '010967',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-cameo-235x285x81-acrlico/',
     nota: 'Jacuzzi Punta Cana Cameo 235x285x81 Acrilico · artículo 010967 · ref. 235×285×81. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 295000, {
+  c('MAT-26-034', PROV_IBERICA, 295000, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
     art: 'Jacuzzi Samana White 200x200x98 Acrílico',
     sku: '010970',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-samana-white-200x200x98-acrlico/',
     nota: 'Jacuzzi Samana White 200x200x98 Acrílico · artículo 010970 · ref. 200×200×98. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 69620, {
+  c('MAT-26-034', PROV_IBERICA, 69620, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
     art: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho',
     sku: '007741',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-alegro-acrilico-blanco-180x90x40-derecho/',
     nota: 'Jacuzzi Alegro Acrílico Blanco 180x90x40 Derecho · artículo 007741 · ref. 180×90×40. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 100299.99, {
+  c('MAT-26-034', PROV_IBERICA, 100299.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
     art: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico',
     sku: '011601',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-aquamarina-bone-1-20x2-00x0-42-acrilico/',
     nota: 'Jacuzzi Aquamarina Bone 1.20×2.00×0.42 Acrilico · artículo 011601 · ref. 1.20×2.00×0.42. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 64899.99, {
+  c('MAT-26-034', PROV_IBERICA, 64899.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
     art: 'Jacuzzi Ibiza Blanco',
     sku: '002029',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-ibiza-blanco/',
     nota: 'Jacuzzi Ibiza Blanco · artículo 002029. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 348100, {
+  c('MAT-26-034', PROV_IBERICA, 348100, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
     art: 'Jacuzzi Macao Acrilico Blanco',
     sku: '010308',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-macao-acrilico-blanco/',
     nota: 'Jacuzzi Macao Acrilico Blanco · artículo 010308. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 76699.99, {
+  c('MAT-26-034', PROV_IBERICA, 76699.99, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
     art: 'Jacuzzi Mallorca Acrílico Blanco 170×90',
     sku: '002053',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-mallorca-acrilico-blanco-170-x-90/',
     nota: 'Jacuzzi Mallorca Acrílico Blanco 170×90 · artículo 002053 · ref. 170×90. ' + SUPUESTO_ITBIS
   });
-  c('MAT-26-019', PROV_IBERICA, 430700, {
+  c('MAT-26-034', PROV_IBERICA, 430700, {
     fecha: '2026-09-10', fuente: 'Precio publicado en https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
     art: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico',
     sku: '010960',
     marca: 'Kohler',
     url: 'https://tienda.laiberica.com.do/product/jacuzzi-punta-cana-kholer-white-235x285x81-acrlico/',
     nota: 'Jacuzzi Punta Cana Kholer White 235x285x81 Acrílico · artículo 010960 · ref. 235×285×81 · marca Kohler. ' + SUPUESTO_ITBIS
+  });
+  c('MAT-26-034', PROV_BELLON, 285595, {
+    fecha: '2026-09-10', fuente: 'Catálogo público de Bellón (catalogo.bellon.com.do), 10/09/2026',
+    art: 'Jacuzzi Hidrom 185 x 200 x 70 Cm Quorum Blanco',
+    sku: '228031',
+    url: 'https://catalogo.bellon.com.do/',
+    nota: 'Jacuzzi Hidrom 185 x 200 x 70 Cm Quorum Blanco · artículo 228031. ' + SUPUESTO_ITBIS
   });
   c('MAT-27-001', PROV_INNOVA, 2439, {
     fecha: '2026-09-09', fuente: 'Precio publicado en https://www.innovacentro.com.do/barrassegubaneraducha/barra-seguridad-baikal-tty-8865-3-a-abatible-blanc-070116',

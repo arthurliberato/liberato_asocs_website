@@ -176,6 +176,15 @@ function reglaPlomeria(a) {
   const t = texto(a);
   const md = medido(a);
 
+  /* El grupo «Cabinas» de esta tienda no se leía y sus dos artículos se
+     descartaban enteros: «@cabina de 90x90 cuadrada» y «@cabina de
+     vidrio media luna c/e - 06 90x90», RD$ 12.561 y RD$ 11.585. La
+     tabla decide si es recinto o vidrio y le saca la medida. */
+  if (a.cat2 === 'Cabinas' || /^@?cabina\b|^mampara\b/.test(t)) {
+    const c = BANOS.cabinaDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
+
   if (/bomba (periferica|centrifuga|sumergible|de agua)|motobomba/.test(t)) {
     const hp = numero(md, /(\d+(?:\s+\d+\/\d+|\/\d+|\.\d+)?)\s*hp/) ||
                (/(\d+)\s*\/\s*(\d+)\s*hp/.test(md) ? null : null);

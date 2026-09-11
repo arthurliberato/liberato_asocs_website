@@ -117,7 +117,6 @@ const TRAMPAS = [
   [/^tubo (guia|calentador|escape|neon|carton|prueba|ensayo)/, 'pieza o repuesto, no tubería de instalación'],
   [/^bombillo.*huevo paloma|^bombillo (vela|flama|decorativo|globo)/, 'bombillo decorativo, no el de una instalación de vivienda'],
   [/piscina/, 'artículo de piscina; el catálogo no tiene esa partida'],
-  [/hidromasaje|\bhidrom\b|^jacuzzi/, 'bañera de hidromasaje: es otro aparato y otro precio que la bañera de obra'],
   [/^ducha barra|^ducha metal (con|c\/) ?brazo/, 'juego de ducha completo, no la pieza suelta que nombra'],
   [/^inodoro.*intelig|^inodoro.*smart|bide electronic/, 'inodoro inteligente: es otro aparato y otro precio']
 ];
@@ -418,6 +417,14 @@ function reglaBano(a) {
     const act = BANOS.activacion(t);
     return BANOS.item('mezcladora', { uso: uso, activacion: act });
   }
+  /* Las cuatro cabinas de esta tienda —de RD$ 21.135 a RD$ 62.095— se
+     descartaban enteras porque llegan sin grupo y ninguna empieza por
+     una palabra de la lista. Van antes que «ducha»: «Cabina Ducha
+     Plást 900 x 900 x 1940mm» lleva las dos. */
+  if (/^cabina|^mampara/.test(t)) {
+    const c = BANOS.cabinaDeDucha(t);
+    return BANOS.item(c.familia, c.medidas);
+  }
   if (/^ducha/.test(t)) {
     if (/telefono|de mano/.test(t)) return BANOS.item('ducha-telefono', {});
     if (/columna|sistema/.test(t)) return BANOS.item('ducha-columna', {});
@@ -686,7 +693,7 @@ const RUTA = [
   [/^tubo\b/, reglaTubo],
   [/^(codo|codoniple|tee|cruz|yee|niple|reduccion|tapon|adaptador|union|coupling)\b/, reglaConexion],
   [/^(tinaco|cisterna|bomba|cheque|llave de paso|llave paso|valvula|sifon|cespol|fregadero)\b/, reglaPlomeria],
-  [/^(inodoro|lavamanos|lavabo|urinario|orinal|bidet|bide|llave mezcladora|mezcladora|monomando|ducha|mueble de bano|mueble con lavamanos|vanity|banera|tina de bano|jacuzzi|barra de apoyo|barra de seguridad)\b/, reglaBano],
+  [/^(inodoro|lavamanos|lavabo|urinario|orinal|bidet|bide|llave mezcladora|mezcladora|monomando|ducha|cabina|mampara|mueble de bano|mueble con lavamanos|vanity|banera|tina de bano|jacuzzi|barra de apoyo|barra de seguridad)\b/, reglaBano],
   [/^(breaker|caja breaker|panel breaker|centro de carga|bombillo|reflector|tubo led|panel led|interruptor|tomacorriente|alambre electrico|cable thhn|alambre thhn)\b/, reglaElectrico],
   [/^(pintura|esmalte|masilla|primer|sellador|impermeabilizante|barniz|laca)\b/, reglaPintura],
   [/^plywood\b/, reglaPlywood]
@@ -705,12 +712,15 @@ function regla(a) {
   /* Un precio por varias unidades no compara con uno por pieza, y la
      diferencia no se ve en la tabla. «(At. 34/1)» es el atado de la varilla
      y no es eso: ahí el precio publicado sigue siendo por unidad. */
-  /* Ojo con las dos que NO son paquetes: «11Pcs/Cjs» son las piezas que trae
-     la caja de cerámica —el precio sigue siendo por pieza— y «2 Pcs» en un
-     inodoro quiere decir de dos piezas. Descartarlas costaba 1,479
-     artículos buenos. */
+  /* Ojo con las tres que NO son paquetes: «11Pcs/Cjs» son las piezas que trae
+     la caja de cerámica —el precio sigue siendo por pieza—, «2 Pcs» en un
+     inodoro quiere decir de dos piezas y «2Pcs», «3Pc» o «4 Pcs» en una
+     cabina son los paneles en que viene desarmada, no cuatro cabinas.
+     Descartarlas costaba 1,479 artículos buenos y tres cabinas de
+     RD$ 21.135, RD$ 25.870 y RD$ 62.095. */
   if ((/\b(?:juego|set|pack|combo|kit) de \d+\b|\b\d+\s*(?:pzas?|piezas|unidades)\b/.test(t)
-       || (/\d+\s*pcs\b/.test(t) && !/pcs\s*\/\s*(cjs|caja)/.test(t) && !/^inodoro/.test(t)))
+       || (/\d+\s*pcs?\b/.test(t) && !/pcs\s*\/\s*(cjs|caja)/.test(t)
+           && !/^inodoro/.test(t) && !/^cabina|^mampara/.test(t)))
       && !/^varilla/.test(t)) {
     MOTIVO.valor = 'el precio cubre un paquete de varias unidades, no una';
     return null;

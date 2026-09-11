@@ -451,7 +451,12 @@ function regla(a) {
       { montaje: /suspendido|pared|flotante/.test(texto(a)) ? 'pared' : 'piso' });
     case 'ESPEJOS':               return BANOS.item('espejo',
       { luz: /led|luz/.test(texto(a)) ? 'led' : '' });
-    case 'CABINAS':               return BANOS.item('cabina-ducha', {});
+    /* El grupo se llama CABINAS y dentro hay «WET ROOM», que es un
+       vidrio fijo, no un recinto. Orienta el grupo y decide el nombre. */
+    case 'CABINAS':               return (function () {
+      const c = BANOS.cabinaDeDucha(texto(a));
+      return BANOS.item(c.familia, c.medidas);
+    })();
     case 'PLATO DUCHA':           return BANOS.item('plato-ducha', {});
     case 'BAÑERAS':               return BANOS.item(BANOS.tipoDeBanera(texto(a)), { montaje: BANOS.montajeDeBanera(texto(a)), material: BANOS.materialDeBanera(texto(a)) });
     case 'BARRA DE SEGURIDAD':    return reglaBarra(a);

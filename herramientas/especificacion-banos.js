@@ -128,10 +128,48 @@ const FAMILIAS = {
     cat: 'MAT-26', base: 'Espejo de baño', unidad: 'unidad',
     ejes: ['luz'], etapa: 'terminacion', orden: 30, alias: 'espejo de baño'
   },
+  /* LA CABINA Y EL PANEL, QUE NO SON LA MISMA COSA
+
+     El nombre del ítem lo confesaba con una «o»: «Cabina o panel de
+     ducha». Son dos productos y no se sustituyen. El panel —la
+     mampara— es un vidrio que se pone al lado de la ducha y se mide
+     ancho por alto: 80 × 190. La cabina es el recinto entero, con sus
+     dos o tres piezas, y se mide en planta: 90 × 90, y si la ficha lo
+     dice, también de alto. Ponerlas juntas era comparar un vidrio de
+     RD$ 3.119 con un recinto de RD$ 62.095.
+
+     Cuál es cuál lo dice la palabra del comercio, y aquí la palabra sí
+     es el dato: quien escribe «mampara», «panel» o «wet room» vende un
+     vidrio, y quien escribe «cabina» vende el recinto. Se comprueba con
+     la medida: las mamparas vienen todas en 190 de alto y las cabinas
+     en 194, 200, 210 y 215.
+
+     EL TAMAÑO MANDA, Y ES LO QUE PIDE QUIEN CUBICA. De 21 cotizaciones,
+     16 declaran la medida en el nombre. En la mampara el alto es
+     siempre 190 y el ancho es el que se mueve: 70 RD$ 3.783, 80
+     RD$ 4.235, 90 RD$ 6.079. El 100 se sale —RD$ 4.096 con dos
+     cotizaciones de un solo comercio, una de ellas más barata que la de
+     70— y queda dicho aquí en vez de taparlo.
+
+     La forma no entra, como en el cabezal: «esquina curveada» y «media
+     luna» son la misma mampara doblada, y el precio no las separa.
+
+     El hidromasaje sí, porque no es una cabina con vidrio distinto sino
+     un aparato con bomba, igual que se separó en las bañeras. */
   'cabina-ducha': {
-    cat: 'MAT-26', base: 'Cabina o panel de ducha', unidad: 'unidad',
-    ejes: [], etapa: 'terminacion', orden: 40,
-    alias: 'cabina de ducha, mampara, panel de ducha'
+    cat: 'MAT-26', base: 'Cabina de ducha', unidad: 'unidad',
+    ejes: ['planta_cm'], etapa: 'terminacion', orden: 40,
+    alias: 'cabina de ducha, recinto de ducha'
+  },
+  'cabina-hidromasaje': {
+    cat: 'MAT-26', base: 'Cabina de ducha con hidromasaje', unidad: 'unidad',
+    ejes: ['planta_cm'], etapa: 'terminacion', orden: 41,
+    alias: 'cabina de hidromasaje, cabina de vapor'
+  },
+  'mampara-ducha': {
+    cat: 'MAT-26', base: 'Mampara o panel de ducha', unidad: 'unidad',
+    ejes: ['vidrio_cm'], etapa: 'terminacion', orden: 42,
+    alias: 'mampara, panel de ducha, vidrio de ducha, wet room'
   },
 
   /* CUATRO COSAS QUE SE LLAMABAN «BAÑERA»
@@ -340,6 +378,14 @@ const ETIQUETA = {
   luz:         v => v === 'led' ? 'con luz LED' : '',
   piezas:      v => v + ' piezas',
   largo_cm:    v => v + ' cm',
+  /* Las dos son medidas en centímetros y se nombran igual; se llaman
+     distinto porque significan distinto: la planta es lo que ocupa la
+     cabina en el piso y el vidrio es el ancho por el alto del paño. Y
+     las dos llevan la unidad en el nombre del eje porque el auditor
+     tiene un techo por eje y el suyo, «medida», es en pulgadas: sin el
+     sufijo daba por imposible una mampara de 152 cm. */
+  planta_cm:   v => 'de ' + v + ' cm',
+  vidrio_cm:   v => 'de ' + v + ' cm',
   activacion:  v => v === 'sensor' ? 'con sensor' : v === 'boton' ? 'de botón' : '',
   /* El doméstico es el caso corriente y va sin etiqueta; el institucional
      se nombra porque es el que no se espera. */
@@ -498,6 +544,66 @@ function brazoDeCabezal(t) {
   return '';
 }
 
+/* CABINA, CABINA DE HIDROMASAJE O MAMPARA, Y DE QUÉ TAMAÑO
+
+   Cuatro comercios clasifican esto y los cuatro mandaban todo al mismo
+   ítem, así que la decisión vive aquí. Ver la nota de 'cabina-ducha'.
+
+   Las medidas se escriben de cuatro maneras —«80X190 CM», «80×190»,
+   «900 x 900 x 1940mm», «90x90»— y hay que dejarlas todas en
+   centímetros antes de comparar. El milímetro se reconoce por la
+   unidad escrita o por el tamaño: nadie vende una mampara de 900 cm.
+
+   Del nombre se descarta antes el número de piezas —«2Pcs», «4 Pcs»—,
+   que no es una medida, y las referencias de modelo con equis
+   —«YLL-8009L»—, que tampoco. */
+function cabinaDeDucha(texto) {
+  const t = String(texto || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  const familia = /hidromasaje|vapor/.test(t) ? 'cabina-hidromasaje'
+    : /cabina|recinto/.test(t) ? 'cabina-ducha'
+      : 'mampara-ducha';
+
+  const d = dimensionesEnCm(t);
+  if (!d.length) return { familia: familia, medidas: {} };
+
+  /* La mampara se nombra por el vidrio entero, ancho por alto. La
+     cabina por lo que ocupa en el piso, y el alto detrás solo si la
+     ficha lo declara. */
+  const eje = familia === 'mampara-ducha' ? 'vidrio_cm' : 'planta_cm';
+  const medidas = {};
+  medidas[eje] = d.slice(0, 3).join(' × ');
+  return { familia: familia, medidas: medidas };
+}
+
+/* Devuelve las dos o tres medidas del nombre, en centímetros y
+   redondeadas al entero. Si no hay al menos dos, no hay medida: un
+   número suelto en una ficha de cabina es un modelo. */
+function dimensionesEnCm(t) {
+  /* Cada número puede traer su marca de unidad pegada —«60" x 74"»,
+     «80x190 Cms», «900x900x2100mm»— y hay que dejarla entrar entre el
+     número y la equis o no se reconoce el par. */
+  const m = t.match(
+    /(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?\s*[x×]\s*(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?(?:\s*[x×]\s*(\d{2,4})(?:\s*(?:''|´´|"|mm|cms|cm))?)?/);
+  if (!m) return [];
+  const crudas = [m[1], m[2], m[3]].filter(Boolean).map(Number);
+
+  /* Tres unidades y una regla para cada una. La pulgada la escribe un
+     solo artículo —«Mampara Con Puerta Corrediza 60" x 74"»— pero sin
+     convertirla salía una mampara de 74 cm de alto. El milímetro se
+     reconoce por la unidad escrita o por el tamaño: 190 cm de alto sí,
+     1940 cm no. */
+  const unidad = /["]|''|´´/.test(m[0]) ? 'pulg'
+    : /mm/i.test(m[0]) || crudas.some(v => v > 260) ? 'mm'
+      : 'cm';
+  const factor = unidad === 'pulg' ? 2.54 : unidad === 'mm' ? 0.1 : 1;
+
+  const cm = crudas.map(v => Math.round(v * factor));
+  if (cm.some(v => v < 40 || v > 260)) return [];
+  return cm;
+}
+
 /* CUÁL DE LAS CUATRO BAÑERAS
 
    El nombre lo dice en las cuatro, y por eso la decisión vive aquí y no
@@ -642,4 +748,4 @@ function aCm(valor, unidad) {
   return Math.round(cm / 5) * 5;
 }
 
-module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };
+module.exports = { FAMILIAS, item, ambito, activacion, esJuegoDeDucha, cabinaDeDucha, tipoDeBanera, montajeDeBanera, materialDeBanera, cabezalDeDucha, aCm };
