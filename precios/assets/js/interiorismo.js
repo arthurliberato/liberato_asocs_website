@@ -48,7 +48,9 @@
   var man = null;                 // el manifiesto
   var paginas = [];               // las que ya llegaron, por número
   var pidiendo = {};              // las que están en camino
-  var estado = { cats: [], sub: null, q: '', comercio: '', orden: 'cat' };
+  /* «comercios» en plural desde que se puede elegir más de uno. Vacío
+     quiere decir todos, que es lo mismo que decía la cadena vacía. */
+  var estado = { cats: [], sub: null, q: '', comercios: [], orden: 'cat' };
   var lista = [], pintados = 0, cargandoTodo = false;
 
   function money(n) { return 'RD$ ' + Math.round(n).toLocaleString('en-US'); }
@@ -89,7 +91,10 @@
     for (var n = 0; n < man.pags.length; n++) {
       var p = man.pags[n];
       if (estado.cats.length && !estado.cats.some(function (c) { return p.k.indexOf(c) >= 0; })) continue;
-      if (estado.comercio && p.c.indexOf(man.com.indexOf(estado.comercio)) < 0) continue;
+      /* Con varios elegidos, la página hace falta si trae alguno. */
+      if (estado.comercios.length && !estado.comercios.some(function (c) {
+        return p.c.indexOf(man.com.indexOf(c)) >= 0;
+      })) continue;
       fuera.push(n);
     }
     return fuera;
@@ -114,7 +119,7 @@
       paginas[n].forEach(function (v) {
         if (estado.cats.length && estado.cats.indexOf(v.k) < 0) return;
         if (estado.sub !== null && v.s !== estado.sub) return;
-        if (estado.comercio && v.c !== estado.comercio) return;
+        if (estado.comercios.length && estado.comercios.indexOf(v.c) < 0) return;
         for (var i = 0; i < q.length; i++) if (v._b.indexOf(q[i]) < 0) return;
         lista.push(v);
       });
@@ -134,7 +139,7 @@
        con la siguiente al llegar al final. */
     var faltan = ns.filter(function (n) { return !paginas[n]; });
     if (!faltan.length) return;
-    if (pideTodo() || estado.cats.length || estado.comercio) {
+    if (pideTodo() || estado.cats.length || estado.comercios.length) {
       cargandoTodo = true;
       Promise.all(faltan.map(pide)).then(function () {
         cargandoTodo = false;
@@ -147,18 +152,23 @@
 
   function contar(ns, listasYa) {
     var c;
-    var simple = !estado.q && (estado.cats.length + (estado.comercio ? 1 : 0)) <= 1;
+    var unCom = estado.comercios.length === 1 ? estado.comercios[0] : null;
+    /* La cuenta exacta del manifiesto sirve para un comercio, no para
+       tres: no hay una cifra guardada por cada combinación. Con varios se
+       cuenta lo cargado, como con cualquier otro filtro compuesto. */
+    var simple = !estado.q && estado.comercios.length <= 1 &&
+                 (estado.cats.length + (unCom ? 1 : 0)) <= 1;
     /* Una categoría con una subcategoría dentro también es cuenta exacta:
        el manifiesto trae cuántas fichas tiene cada una. Sin esto, elegir
        «papel tapiz» seguía diciendo las 719 de toda la categoría. */
-    if (simple && estado.sub !== null && estado.cats.length === 1 && !estado.comercio) {
+    if (simple && estado.sub !== null && estado.cats.length === 1 && !unCom) {
       var fila = (man.subCat[estado.cats[0]] || []).filter(function (x) { return x[0] === estado.sub; })[0];
       if (fila) c = { n: fila[1] };
     } else if (estado.sub !== null) simple = false;
     if (c) { /* ya está */ }
-    else if (simple && !estado.cats.length && !estado.comercio) c = man.todo;
+    else if (simple && !estado.cats.length && !unCom) c = man.todo;
     else if (simple && estado.cats.length === 1) c = man.cat[estado.cats[0]];
-    else if (simple && estado.comercio) c = man.porCom[man.com.indexOf(estado.comercio)];
+    else if (simple && unCom) c = man.porCom[man.com.indexOf(unCom)];
 
     /* Cuando las cifras salen del manifiesto son exactas aunque falten
        páginas por descargar, y avisar de una carga que no las afecta sería
@@ -251,7 +261,111 @@
     a.appendChild(pie);
     tarjeta.appendChild(a);
     tarjeta.appendChild(botonGuardar(v));
+    tarjeta.appendChild(acciones(v, a.href));
+
+    /* EN EL TELÉFONO, UN TOQUE NO PUEDE SIGNIFICAR DOS COSAS
+
+       Con ratón la ficha entera es un enlace y el marcador de guardar
+       está en la esquina: se ven los dos y se elige con el puntero. Con
+       el dedo no hay puntero ni hay hover, el marcador es un blanco de
+       treinta píxeles al lado del enlace, y tocar para mirar el precio
+       te saca a la tienda sin pedirlo.
+
+       Así que en pantalla táctil el primer toque no sale de la página:
+       abre los dos botones sobre la foto y que decida quien mira. */
+    a.addEventListener('click', function (e) {
+      if (!esTactil() || tarjeta.classList.contains('is-abierta')) return;
+      e.preventDefault();
+      cerrarFichas();
+      tarjeta.classList.add('is-abierta');
+    });
     return tarjeta;
+  }
+
+  /* QUIÉN DECIDE SI ESTO ES UN DEDO O UN RATÓN
+
+     La primera versión preguntaba «(hover: none)» y no basta. El iPad
+     con Safari contesta que SÍ tiene hover —emula un puntero—, y los
+     portátiles con pantalla táctil, igual. En esos, el primer toque se
+     iba a la tienda como antes: la consulta de medios describe la
+     pantalla, no el gesto.
+
+     Lo que manda es el gesto, y el navegador lo dice en cada evento:
+     'touch', 'pen' o 'mouse'. Se escucha en captura y en pointerdown y
+     touchstart, que ocurren los dos ANTES del clic, así que el primer
+     toque ya llega con el modo puesto. Y cambia si se cambia: la misma
+     tableta con el teclado y el ratón encima vuelve a abrir la tienda de
+     un clic.
+
+     La clase va en <html> porque el CSS necesita lo mismo: cuál de los
+     dos botones se enseña no lo puede decidir «(hover: none)» por la
+     misma razón. */
+  var tactil = !!(window.matchMedia && window.matchMedia('(hover: none)').matches);
+  modoPuntero(tactil ? 'touch' : 'mouse');
+
+  function modoPuntero(tipo) {
+    var t = tipo === 'touch' || tipo === 'pen';
+    if (t === tactil && document.documentElement.classList.contains('ir-tactil') === t) return;
+    tactil = t;
+    document.documentElement.classList.toggle('ir-tactil', t);
+    /* Al pasar de dedo a ratón, una ficha abierta se queda con los dos
+       botones puestos y sin manera de cerrarlos. */
+    if (!t) cerrarFichas();
+  }
+
+  document.addEventListener('pointerdown', function (e) {
+    if (e.pointerType) modoPuntero(e.pointerType);
+  }, true);
+  /* Para los navegadores que todavía no mandan eventos de puntero. */
+  document.addEventListener('touchstart', function () {
+    modoPuntero('touch');
+  }, { passive: true, capture: true });
+
+  function esTactil() { return tactil; }
+
+  function cerrarFichas() {
+    [].forEach.call(document.querySelectorAll('.ir-card.is-abierta'), function (c) {
+      c.classList.remove('is-abierta');
+    });
+  }
+
+  /* Los dos botones que salen al tocar: el mismo de guardar, con todas
+     sus letras porque aquí hay sitio, y el de salir a la tienda. */
+  function acciones(v, href) {
+    var caja = document.createElement('div');
+    caja.className = 'ir-tocar';
+
+    var g = document.createElement('button');
+    g.type = 'button';
+    g.className = 'ir-acc ir-acc-guardar';
+    g.innerHTML = ICONO_MARCA + '<span></span>';
+    marcarAccion(g, v);
+    g.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      alternar(v);
+      marcarAccion(g, v);
+      var esq = caja.parentNode && caja.parentNode.querySelector('.ir-guardar');
+      if (esq) marcarBoton(esq, v);
+    });
+    caja.appendChild(g);
+
+    var ver = document.createElement('a');
+    ver.className = 'ir-acc ir-acc-ver';
+    ver.href = href;
+    ver.target = '_blank';
+    ver.rel = 'noopener nofollow';
+    ver.textContent = 'Ver en la tienda';
+    ver.addEventListener('click', function (e) { e.stopPropagation(); });
+    caja.appendChild(ver);
+    return caja;
+  }
+
+  function marcarAccion(b, v) {
+    var on = estaGuardado(v);
+    b.classList.toggle('is-on', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.querySelector('span').textContent = on ? 'Guardado' : 'Guardar';
   }
 
   /* =========================================================
@@ -306,6 +420,8 @@
       e.stopPropagation();
       alternar(v);
       marcarBoton(b, v);
+      var acc = b.parentNode && b.parentNode.querySelector('.ir-acc-guardar');
+      if (acc) marcarAccion(acc, v);
     });
     return b;
   }
@@ -1026,7 +1142,7 @@
        depende de cuántas fichas tenga cada una y cambia en cada
        importación, así que un enlace guardado dejaría de servir. */
     if (estado.sub !== null && man && man.sub) p.set('sub', man.sub[estado.sub]);
-    if (estado.comercio) p.set('comercio', estado.comercio);
+    if (estado.comercios.length) p.set('comercio', estado.comercios.join(','));
     if (estado.q) p.set('q', estado.q);
     if (estado.orden !== 'cat') p.set('orden', estado.orden);
     var s = p.toString();
@@ -1038,12 +1154,16 @@
     estado.cats = (p.get('cat') || '').split(',').filter(Boolean);
     var sub = p.get('sub');
     estado.sub = sub && man && man.sub ? (man.sub.indexOf(sub) >= 0 ? man.sub.indexOf(sub) : null) : null;
-    estado.comercio = p.get('comercio') || '';
+    /* Un enlace guardado de cuando solo se podía elegir uno trae un
+       nombre suelto, y sigue valiendo: una lista de uno. */
+    estado.comercios = (p.get('comercio') || '').split(',')
+      .map(function (x) { return x.trim(); })
+      .filter(function (x) { return x && man && man.com.indexOf(x) >= 0; });
     estado.q = p.get('q') || '';
     estado.orden = p.get('orden') || 'cat';
     $('ir-q').value = estado.q;
-    $('ir-comercio').value = estado.comercio;
     $('ir-orden').value = estado.orden;
+    pintarComercios();
     pintarChips();
   }
 
@@ -1092,11 +1212,75 @@
     caja.innerHTML = html;
   }
 
+  /* ---------- el desplegable de comercios ----------
+
+     Se puede elegir más de uno. El botón dice cuántos hay elegidos sin
+     abrirlo, que en el teléfono es lo único que se ve mientras se mira la
+     cuadrícula: «Todos los comercios», «Ochoa» o «3 comercios». */
+
+  function pintarComercios() {
+    var caja = $('ir-comercio-menu');
+    if (!caja) return;
+    [].forEach.call(caja.querySelectorAll('input[type=checkbox]'), function (i) {
+      i.checked = estado.comercios.indexOf(i.value) >= 0;
+    });
+    var t = $('ir-comercio-txt');
+    if (!estado.comercios.length) t.textContent = 'Todos los comercios';
+    else if (estado.comercios.length === 1) t.textContent = corto(estado.comercios[0]);
+    else t.textContent = estado.comercios.length + ' comercios';
+    $('ir-comercio-btn').classList.toggle('is-on', estado.comercios.length > 0);
+  }
+
+  function abrirComercios(abrir) {
+    var menu = $('ir-comercio-menu'), btn = $('ir-comercio-btn');
+    if (!menu) return;
+    menu.hidden = !abrir;
+    btn.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+  }
+
+  if ($('ir-comercio-btn')) {
+    $('ir-comercio-btn').addEventListener('click', function () {
+      abrirComercios($('ir-comercio-menu').hidden);
+    });
+    $('ir-comercio-menu').addEventListener('change', function (e) {
+      if (!man || e.target.type !== 'checkbox') return;
+      var i = estado.comercios.indexOf(e.target.value);
+      if (e.target.checked) { if (i < 0) estado.comercios.push(e.target.value); }
+      else if (i >= 0) estado.comercios.splice(i, 1);
+      pintarComercios();
+      filtrar();
+    });
+    $('ir-comercio-todos').addEventListener('click', function () {
+      if (!man) return;
+      estado.comercios = [];
+      pintarComercios();
+      filtrar();
+      abrirComercios(false);
+    });
+    /* Se cierra al tocar fuera y con Escape, como cualquier desplegable.
+       No se cierra al marcar una casilla: elegir tres comercios son tres
+       toques seguidos y volver a abrirlo entre uno y otro sería absurdo. */
+    document.addEventListener('click', function (e) {
+      var d = $('ir-comercio');
+      if (d && !d.contains(e.target)) abrirComercios(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !$('ir-comercio-menu').hidden) {
+        abrirComercios(false);
+        $('ir-comercio-btn').focus();
+      }
+    });
+  }
+
   function esc(t) {
     return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   /* ---------- sucesos ---------- */
+
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && !e.target.closest('.ir-card')) cerrarFichas();
+  });
 
   document.addEventListener('click', function (e) {
     var b = e.target.closest ? e.target.closest('.ir-chip') : null;
@@ -1127,9 +1311,7 @@
     var v = e.target.value;
     espera = setTimeout(function () { if (man) { estado.q = v; filtrar(); } }, 220);
   });
-  $('ir-comercio').addEventListener('change', function (e) {
-    if (man) { estado.comercio = e.target.value; filtrar(); }
-  });
+
   $('ir-orden').addEventListener('change', function (e) {
     if (man) { estado.orden = e.target.value; filtrar(); }
   });

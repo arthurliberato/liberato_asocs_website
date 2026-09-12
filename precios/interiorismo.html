@@ -119,24 +119,30 @@
           <input type="search" id="ir-q" placeholder="Buscar: colgante, mármol, dorado…" autocomplete="off">
         </label>
 
-        <label class="ir-select">
-          <span class="visually-hidden">Comercio</span>
-          <select id="ir-comercio">
-            <option value="">Todos los comercios</option>
-            <option value="Aliss">Aliss</option>
-            <option value="Carabela">Carabela</option>
-            <option value="CerArte">CerArte</option>
-            <option value="Cortinaje">Cortinaje</option>
-            <option value="DCO">DCO</option>
-            <option value="Hogardeco">Hogardeco</option>
-            <option value="Ilumel">Ilumel</option>
-            <option value="La Ibérica">La Ibérica</option>
-            <option value="Luminatti">Luminatti</option>
-            <option value="Mundo LED">Mundo LED</option>
-            <option value="Ferretería Ochoa (8A)">Ochoa</option>
-            <option value="Papel Tapiz Bella Vista">Papel Tapiz Bella Vista</option>
-          </select>
-        </label>
+        <div class="ir-multi" id="ir-comercio">
+          <button type="button" class="ir-multi-btn" id="ir-comercio-btn"
+                  aria-expanded="false" aria-controls="ir-comercio-menu">
+            <span id="ir-comercio-txt">Todos los comercios</span>
+          </button>
+          <div class="ir-multi-menu" id="ir-comercio-menu" role="group"
+               aria-label="Filtrar por comercio" hidden>
+            <button type="button" class="ir-multi-todos" id="ir-comercio-todos">Todos los comercios</button>
+            <div class="ir-multi-lista">
+              <label class="ir-multi-op"><input type="checkbox" value="Aliss"><span>Aliss</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Carabela"><span>Carabela</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="CerArte"><span>CerArte</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Cortinaje"><span>Cortinaje</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="DCO"><span>DCO</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Hogardeco"><span>Hogardeco</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Ilumel"><span>Ilumel</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="La Ibérica"><span>La Ibérica</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Luminatti"><span>Luminatti</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Mundo LED"><span>Mundo LED</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Ferretería Ochoa (8A)"><span>Ochoa</span></label>
+              <label class="ir-multi-op"><input type="checkbox" value="Papel Tapiz Bella Vista"><span>Papel Tapiz Bella Vista</span></label>
+            </div>
+          </div>
+        </div>
 
         <label class="ir-select">
           <span class="visually-hidden">Orden</span>
