@@ -34,6 +34,7 @@ import sys
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl.comments import Comment
 from openpyxl.drawing.image import Image
 from openpyxl.drawing.fill import Blip
 from openpyxl.drawing.geometry import PresetGeometry2D
@@ -93,6 +94,23 @@ FILL_MARCA = PatternFill("solid", fgColor=MARFIL)
 
 BORDE = Border(*[Side(style="thin", color=FILETE)] * 4)
 
+# EL COLOR DE CADA PESTAÑA
+#
+# Cuatro hojas con la misma lengüeta gris obligan a leer el nombre para
+# saber dónde está uno. Con color se distingue de reojo, y el color dice
+# además qué clase de hoja es: verde el catálogo, que es la referencia;
+# ámbar la selección, que es la única que el usuario llena —el mismo
+# ámbar de las celdas de entrada—; y tonos apagados las dos de consulta.
+#
+# Se quedan dentro de la paleta del logotipo: un libro con una pestaña
+# roja y otra azul parece de otro sitio.
+COLOR_PESTANA = {
+    "Catálogo": VERDE,
+    "Comparativo": "6E8C4F",
+    "Artículos": "9AA88A",
+    "Selección": "C98A2E",
+}
+
 MONEDA = '#,##0.00;[Red]-#,##0.00;"—"'
 PORCENTAJE = '0.0%;[Red]-0.0%;"—"'
 ENTERO = '#,##0;[Red]-#,##0;"—"'
@@ -116,6 +134,67 @@ ICONO_PX = 22       # el icono dentro de la banda
 MARGEN_PX = 5
 
 
+# CÓMO SE EXPLICA UN LIBRO SIN GASTAR UNA FILA
+#
+# Lo pedido era una fila con las instrucciones, y mejor todavía algo que
+# flote y se pueda abrir y cerrar. En Excel eso existe y es una NOTA de
+# celda: flota sobre la cuadrícula, se abre al pasar el cursor, se queda
+# abierta con «Mostrar nota» y se cierra igual. No gasta una fila, no
+# desplaza ningún dato y no necesita macros.
+#
+# Lo que NO sirve: un cuadro de texto flota pero no se puede plegar sin
+# VBA, y agrupar filas pliega de verdad pero sigue ocupando la hoja.
+#
+# Va anclada en A2, que es la segunda fila de la primera hoja. El único
+# defecto de una nota es que se ve poco —un triangulito en la esquina—,
+# así que la banda de la fila 1 lo dice con todas las letras.
+
+AUTOR_NOTA = "Ingenieros Liberato & Asociados"
+
+# Una nota se dibuja en píxeles y no se ajusta sola: si se queda corta,
+# el texto se recorta sin avisar. Se mide a ojo de carácter.
+ANCHO_NOTA_PX = 7
+ALTO_NOTA_PX = 15
+
+
+def nota(ws, celda, texto):
+    """Pega una nota flotante, dimensionada para que quepa entera."""
+    lineas = texto.split("\n")
+    c = Comment(texto, AUTOR_NOTA)
+    c.width = max(260, min(560, ANCHO_NOTA_PX * max(len(l) for l in lineas) + 24))
+    c.height = ALTO_NOTA_PX * len(lineas) + 16
+    ws[celda].comment = c
+
+
+GUIA = """CÓMO USAR ESTE LIBRO
+
+Cuatro hojas, cada una con su color de pestaña.
+
+CATÁLOGO (verde) · una fila por partida
+  Precio de referencia: la mediana de lo que cotizan los comercios.
+  Rango: de la cotización más barata a la más cara. Si es muy ancho,
+    la partida mezcla productos distintos y la referencia vale poco.
+  Económica / Estándar / Alta / Premium: referencia por gama. Solo
+    aparece donde la marca de verdad separa el precio.
+  Pulse el nombre de una partida y salta a sus artículos.
+
+COMPARATIVO (verde claro) · una columna por comercio
+  Para ver quién tiene el mejor precio de cada partida y negociar.
+
+ARTÍCULOS (gris verdoso) · el dato crudo, sin agregar
+  Un artículo de tienda por fila, con su marca, su precio y el
+  enlace a la ficha del comercio.
+  Escriba una x en la columna «Agregar» y la fila pasa a Selección.
+  Pulse el ítem del catálogo y vuelve a su fila.
+
+SELECCIÓN (ámbar) · su lista de compra
+  Recoge sola lo que marcó, con la suma al pie. Funciona con
+  fórmulas: no hay macros y no hay que habilitar nada.
+
+Todas las hojas se filtran y se ordenan con la flecha del encabezado.
+Los precios incluyen ITBIS salvo donde la columna diga que no."""
+
+
 def marca(ws, n_cols):
     """Banda fina con la marca, fija arriba de la hoja.
 
@@ -128,8 +207,11 @@ def marca(ws, n_cols):
     verde y sobre un fondo del mismo color se perdería.
     """
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=max(2, n_cols))
+    # La banda dice dónde está la guía porque una nota se anuncia con un
+    # triangulito de tres píxeles y nadie lo busca.
     c = ws.cell(row=1, column=1,
-                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com")
+                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com"
+                      "   ·   Cómo usar este libro: la nota de la celda A2")
     c.font = Font(name=FUENTE, size=CUERPO - 1, bold=True, color=VERDE_HONDO)
     c.fill = FILL_MARCA
     # La sangría deja hueco al icono: cada nivel vale un ancho de carácter.
@@ -293,6 +375,14 @@ def hoja_leame(wb, d):
 CAT_COLS = [
     ("Código", 13), ("Grupo", 16), ("Categoría", 26), ("Ítem", 46),
     ("Precio de referencia (RD$)", 15), ("Mínimo (RD$)", 13), ("Máximo (RD$)", 13),
+    # EL RANGO, DE UNA MIRADA
+    #
+    # El mínimo y el máximo ya estaban, pero en dos columnas separadas hay
+    # que leer dos números y restarlos mentalmente para saber si la partida
+    # es una cosa o es un cajón. Juntos en una celda —«RD$ 218 – 80,380»—
+    # la dispersión se ve sin hacer cuentas, que es justo lo que uno mira
+    # antes de fiarse de la referencia.
+    ("Rango (RD$)", 24),
     # LA REFERENCIA POR GAMA
     #
     # «Mezcladora, de baño» tiene 577 cotizaciones y una referencia que le
@@ -322,9 +412,21 @@ CAT_IDX = {nombre: i for i, (nombre, _) in enumerate(CAT_COLS, start=1)}
 # Las columnas de la hoja «Artículos» viven aquí arriba y no dentro de su
 # función porque el catálogo necesita saber hasta qué columna llega el
 # bloque de un ítem para poder señalarlo entero.
-ART_COLS = [("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
+# La primera columna no trae dato: es donde el usuario escribe una «x»
+# para llevarse la fila a la hoja «Selección». Y la última tampoco: es el
+# contador que hace posible esa hoja sin macros. Va oculta.
+ART_COLS = [("Agregar", 9),
+            ("Categoría", 26), ("Ítem del catálogo", 40), ("Artículo del comercio", 46),
             ("Marca", 18), ("Gama", 12), ("Comercio", 22), ("Unidad", 11), ("Precio RD$", 13),
-            ("Fecha", 11), ("Enlace", 52)]
+            ("Fecha", 11), ("Enlace", 52),
+            ("#", 5)]
+
+# Las que se copian a «Selección»: todas menos la casilla y el contador.
+SEL_COLS = [c for c in ART_COLS if c[0] not in ("Agregar", "#")]
+
+# Cuántas filas se dejan preparadas en «Selección». Son fórmulas, así que
+# cuestan tamaño aunque estén vacías; 300 cubre cualquier compra sensata.
+SEL_FILAS = 300
 
 # La primera fila de datos de todas las hojas: dos de encabezado y a la
 # tercera empiezan los ítems. Estaba escrito a mano en cada hoja y ahora
@@ -417,6 +519,15 @@ def columnas_medida(items):
     return elegidas, cuenta
 
 
+def rango_texto(minimo, maximo):
+    """«RD$ 218 – 80,380», o vacío si no hay con qué."""
+    if minimo in (None, "") or maximo in (None, ""):
+        return None
+    if minimo == maximo:
+        return "RD$ {:,.0f}".format(minimo)
+    return "RD$ {:,.0f} – {:,.0f}".format(minimo, maximo)
+
+
 def hoja_catalogo(wb, d, rangos=None):
     ws = wb.create_sheet("Catálogo")
     medidas, _ = columnas_medida(d["items"])
@@ -449,6 +560,10 @@ def hoja_catalogo(wb, d, rangos=None):
             elif titulo in GAMA_COL:
                 g = (it.get("gamas") or {}).get(GAMA_COL[titulo])
                 v = g["ref"] if g else None
+            elif titulo == "Rango (RD$)":
+                # Texto y no fórmula: TEXT() usa códigos de formato que
+                # dependen del idioma del Excel de quien lo abre.
+                v = rango_texto(it.get("min"), it.get("max"))
             elif titulo == "Precio sin ITBIS (RD$)":
                 # El precio sin el impuesto, para quien presupuesta sin ITBIS
                 v = '=IF({r}{n}="","",IF({t}{n}="Sí",ROUND({r}{n}/1.18,2),{r}{n}))'.format(
@@ -908,6 +1023,8 @@ def hoja_articulos(wb, d, filas_catalogo=None):
     n = FILA_1
     for a in d["articulos"]:
         for titulo, i in idx.items():
+            if titulo not in DATO:
+                continue
             v = a[DATO[titulo]]
             if titulo == "Artículo del comercio":
                 v = v or a["item"]
@@ -929,8 +1046,110 @@ def hoja_articulos(wb, d, filas_catalogo=None):
             c.font = Font(name=FUENTE, size=CUERPO, color="3F6E22", underline="single")
         n += 1
 
+    # LA CASILLA Y EL CONTADOR
+    #
+    # Excel no puede tener un botón que copie una fila sin macros, y un
+    # libro con macros no se abre sin que el usuario acepte un aviso de
+    # seguridad. Así que la fila no se copia: se MARCA, y la hoja
+    # «Selección» la recoge sola con fórmulas.
+    #
+    # El contador es lo que lo hace posible. COUNTIF acumulado numera las
+    # filas marcadas 1, 2, 3… y entonces «Selección» solo tiene que buscar
+    # el número 1, el 2 y el 3 con MATCH. Sin él haría falta una fórmula
+    # matricial por celda sobre nueve mil filas, que es lenta y además no
+    # existe en los Excel viejos.
+    c_marca = get_column_letter(idx["Agregar"])
+    c_cont = get_column_letter(idx["#"])
+    for r in range(FILA_1, n):
+        m = ws.cell(row=r, column=idx["Agregar"])
+        m.fill = FILL_ENTRADA
+        m.font = ENTRADA
+        m.alignment = Alignment(horizontal="center", vertical="top")
+        ws.cell(row=r, column=idx["#"],
+                value='=IF(${c}{r}="","",COUNTIF(${c}${f}:${c}{r},"<>"))'.format(
+                    c=c_marca, r=r, f=FILA_1))
+    ws.column_dimensions[c_cont].hidden = True
+
     ws.auto_filter.ref = "A2:%s%d" % (get_column_letter(len(cols)), n - 1)
     return n - 3
+
+
+def hoja_seleccion(wb, ultima_fila_art):
+    """Lo que el usuario marcó en «Artículos», recogido solo.
+
+    SIN MACROS, Y POR QUÉ
+
+    Lo natural sería un botón al lado de cada artículo que copiara la fila.
+    Excel no lo permite sin macros: un botón que hace algo es VBA, el libro
+    pasa a ser .xlsm y al abrirlo sale un aviso de seguridad que hay que
+    aceptar. Un libro de referencia que pide permisos para abrirse no es un
+    libro de referencia.
+
+    Así que la fila no se copia: se marca. El usuario escribe una «x» en la
+    primera columna de «Artículos» —da igual qué escriba, cuenta cualquier
+    cosa— y esta hoja la recoge. El efecto es el mismo y el coste es una
+    tecla.
+
+    CÓMO FUNCIONA
+
+    «Artículos» lleva una columna oculta que numera las filas marcadas: 1
+    para la primera, 2 para la segunda. Aquí cada fila busca su número con
+    MATCH y trae el resto con INDEX. Son fórmulas corrientes, no
+    matriciales, así que corren en cualquier versión de Excel y no se
+    arrastran con nueve mil filas.
+
+    La hoja ya existe vacía, con sus 300 filas preparadas. No hay que
+    crearla al marcar el primer artículo.
+    """
+    ws = wb.create_sheet("Selección")
+    marca(ws, len(SEL_COLS) + 1)
+    encabeza(ws, 2, ["#"] + [c[0] for c in SEL_COLS], [5] + [c[1] for c in SEL_COLS])
+
+    idx_art = {t: i for i, (t, _) in enumerate(ART_COLS, start=1)}
+    col_cont = get_column_letter(idx_art["#"])
+    # El nombre de la hoja va entre comillas simples: «Artículos» lleva
+    # acento y hay versiones de Excel que sin comillas no la encuentran.
+    rango_cont = "'Artículos'!${c}${a}:${c}${b}".format(c=col_cont, a=FILA_1, b=ultima_fila_art)
+
+    for j, (titulo, _) in enumerate(SEL_COLS, start=2):
+        col_dato = get_column_letter(idx_art[titulo])
+        rango_dato = "'Artículos'!${c}${a}:${c}${b}".format(c=col_dato, a=FILA_1, b=ultima_fila_art)
+        for k in range(SEL_FILAS):
+            r = FILA_1 + k
+            # ISNA y no IFERROR ni IFNA. IFERROR escondería un fallo de
+            # verdad y la hoja saldría vacía sin decir nada. IFNA sería lo
+            # correcto pero es de Excel 2013 y openpyxl la escribe sin el
+            # prefijo «_xlfn.» que necesita, así que en Excel daría #NAME?:
+            # lo cazó el verificador. ISNA e IF existen desde siempre.
+            f = '=IF(ISNA(MATCH({n},{c},0)),"",INDEX({d},MATCH({n},{c},0)))'.format(
+                d=rango_dato, c=rango_cont, n=k + 1)
+            cel = ws.cell(row=r, column=j, value=f)
+            cel.font = TXT
+            cel.alignment = Alignment(vertical="top")
+            if titulo == "Precio RD$":
+                cel.number_format = MONEDA
+
+    for k in range(SEL_FILAS):
+        r = FILA_1 + k
+        c = ws.cell(row=r, column=1, value=k + 1)
+        c.font = TXT_MINI
+        c.alignment = Alignment(horizontal="center", vertical="top")
+
+    # El total, que es para lo que uno hace una lista de compra.
+    i_precio = [c[0] for c in SEL_COLS].index("Precio RD$") + 2   # +1 por la columna «#»
+    col_precio = get_column_letter(i_precio)
+    r_tot = FILA_1 + SEL_FILAS + 1
+
+    t = ws.cell(row=r_tot, column=1, value="Suma de lo marcado")
+    t.font = H2
+    ws.merge_cells(start_row=r_tot, start_column=1, end_row=r_tot, end_column=i_precio - 1)
+
+    tot = ws.cell(row=r_tot, column=i_precio,
+                  value="=SUM({c}{a}:{c}{b})".format(c=col_precio, a=FILA_1, b=FILA_1 + SEL_FILAS - 1))
+    tot.font = Font(name=FUENTE, size=CUERPO, bold=True)
+    tot.number_format = MONEDA
+    tot.fill = FILL_TOTAL
+    return ws
 
 
 def main():
@@ -956,6 +1175,31 @@ def main():
     hoja_catalogo(wb, d, rangos)
     comparadas = hoja_comparativo(wb, d)
     n_articulos = hoja_articulos(wb, d, filas_catalogo)
+    hoja_seleccion(wb, FILA_1 + n_articulos - 1)
+
+    for nombre, color in COLOR_PESTANA.items():
+        if nombre in wb.sheetnames:
+            wb[nombre].sheet_properties.tabColor = color
+
+    # La guía entera en la primera hoja, y en las demás una línea que diga
+    # para qué sirve esa hoja. Quien abre «Comparativo» directamente no
+    # tiene por qué volver al catálogo para enterarse.
+    nota(wb["Catálogo"], "A2", GUIA)
+    nota(wb["Comparativo"], "A2",
+         "COMPARATIVO\n\n"
+         "Una columna por comercio y una fila por partida: quién tiene\n"
+         "el mejor precio de cada cosa.\n\n"
+         "La guía completa está en la celda A2 de la hoja «Catálogo».")
+    nota(wb["Artículos"], "A2",
+         "AGREGAR A LA SELECCIÓN\n\n"
+         "Escriba una x en esta columna —vale cualquier cosa— y la fila\n"
+         "entera aparece en la hoja «Selección», con su suma al pie.\n\n"
+         "Sin macros: la recoge una fórmula. Para quitarla, borre la x.")
+    nota(wb["Selección"], "A2",
+         "SU LISTA DE COMPRA\n\n"
+         "Esta hoja no se escribe: se llena sola con lo que usted marque\n"
+         "en la columna «Agregar» de la hoja «Artículos».\n\n"
+         "Hay 300 filas preparadas. Si necesita más, avísenos.")
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"

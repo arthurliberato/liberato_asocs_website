@@ -267,7 +267,11 @@ function regla(a) {
 
   return {
     cat: cat,
-    clave: T.clave(base + '-' + u + '-' + cola + '-' + (medidas.calibre || '')),
+    /* La clave tiene que salir de LO MISMO que el nombre. Salía de
+       `base + u`, y el nombre omite el uso cuando la base ya lo dice, así
+       que «Derretido para cerámica» con uso declarado y sin declarar daban
+       el mismo nombre y dos claves: dos partidas llamadas igual. */
+    clave: T.clave(partes.join(' ') + '-' + cola + '-' + (medidas.calibre || '')),
     orden: 500,
     nombre: T.recorta(nombre),
     unidad: UNIDADES[a.unidad] || 'unidad',

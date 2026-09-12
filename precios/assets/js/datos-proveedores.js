@@ -14,6 +14,13 @@
    Cuando un dato no se pudo verificar, se deja vacío y se dice en la
    nota; nunca se inventa un teléfono o un correo.
 
+   Los correos y los WhatsApp de esta tanda los recogió Arthur Liberato
+   comercio por comercio (12/09/2026) y son los canales de atención que
+   cada tienda publica. Diecinueve de los veinte tienen ya por dónde
+   recibir una solicitud; Aliss es el único que sigue sin canal, y por
+   eso su carta de cotización sigue diciendo que hay que copiarla y
+   pegarla a mano.
+
    CAMPO 'canal' Y 'vendeAlPublico'
    --------------------------------
    El precio de referencia del sitio se calcula únicamente con
@@ -73,7 +80,7 @@
   p('Ferretería Ochoa (8A)', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-12','MAT-13','MAT-18'],
-    zonas:['gsd','cibao'], web:'ochoa.com.do', tel:'809-971-8000', precios:true,
+    zonas:['gsd','cibao'], email:'servicioalcliente@ochoa.com.do', web:'ochoa.com.do', tel:'809-971-8000', precios:true,
     nota:'Fundada en 1971. Sucursales en Santiago y Santo Domingo Oeste (Zona Industrial Herrera). E-commerce con precios en RD$ por producto: es la mejor fuente de precio base en línea.'
   });
   p('Ferremix (Grupo Alterra)', {
@@ -85,49 +92,49 @@
   p('Bellón', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-04','MAT-06','MAT-07','MAT-08','MAT-09','MAT-10','MAT-12','MAT-24','MAT-25','MAT-26','MAT-32'],
-    zonas:['nacional'], web:'bellon.com.do', precios:true,
+    zonas:['nacional'], email:'info@bellon.com.do', wa:'18494525050', web:'bellon.com.do', precios:true,
     nota:'Abierta en Santiago en 1949. Ocho sucursales con el mismo precio en todas: Pontezuela (Santiago), San Francisco de Macorís, Mao, Imbert, Baní, La Romana, Punta Cana y Santo Domingo. Su catálogo en línea publica 26,485 productos con precio por artículo, y es el más extenso del directorio. Es una ferretería completa —vende también la línea industrial y la domótica—, así que solo entra el material de obra corriente. No declara si el precio incluye ITBIS.'
   });
   p('Papel Tapiz Bella Vista', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-34'],
-    zonas:[], web:'papeltapizbellavista.com', precios:true,
+    zonas:[], email:'info@papeltapizbellavista.com.do', wa:'18095085982', web:'papeltapizbellavista.com', precios:true,
     nota:'Papel tapiz. De sus 386 referencias entran 109: el resto está agotado —descontinuado, más bien— y ninguno de esos declara la medida de su rollo ni trae foto, mientras que los 109 disponibles la declaran todos. Es de los pocos comercios del directorio que declara el ITBIS en vez de dejarlo al supuesto: su columna de precio dice «ITBIS incluido». Ubicación sin verificar.'
   });
   p('Carabela', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-09','MAT-24','MAT-25','MAT-26','MAT-33'],
-    zonas:['gsd'], web:'carabela.do', precios:true,
+    zonas:['gsd'], email:'info@carabela.com.do', wa:'18095442560', web:'carabela.do', precios:true,
     nota:'Baño y cocina de gama alta: Ramón Soler, Noken, IB Rubinetterie, Salgar y Foster. Es la contraparte de arriba de partidas que hasta ahora se movían entre lo que venden las ferreterías. Sus categorías están hechas para navegar la tienda y no para presupuestar —«Muebles de baño» incluye las patas y los tiradores, «Lavamanos» sobre todo grifería—, así que la clasificación sale del nombre. Sus electrodomésticos de cocina no entran: el catálogo no tiene ese rubro. No declara si el precio incluye ITBIS.'
   });
   p('Ilumel', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-33'],
-    zonas:['gsd'], web:'ilumel.com', precios:true,
+    zonas:['gsd'], email:'servicioalcliente@ilumel.com', web:'ilumel.com', precios:true,
     nota:'Lámparas decorativas en Santo Domingo, de RD$ 1,089 a RD$ 153,327. Incluye su tienda de descuento, ilumeloutlet.com, que es la misma empresa: de sus 23 lámparas, 15 llevan el mismo SKU y el mismo precio que la tienda principal y no se cuentan dos veces; entran las 8 que solo existen allí. No declara si el precio incluye ITBIS.'
   });
   p('DCO', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-34'],
-    zonas:[], web:'dco.do', precios:true,
+    zonas:[], email:'info@dco.do', wa:'18098637055', web:'dco.do', precios:true,
     nota:'Papel tapiz escandinavo y europeo: Boråstapeter, Majvillan, Rifle Paper Co., Newbie y Scandinavian Designers. Es la mejor fuente de la partida porque cada ficha publica la medida de su rollo —no todos son el estándar: los hay de 68.58 cm de ancho y de 11.20 m de largo—, y de ahí sale el metro cuadrado sin suponer nada. La mayor parte de su catálogo se vende por preorden. No declara si el precio incluye ITBIS.'
   });
   p('Cortinaje', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-34'],
-    zonas:['gsd'], web:'cortinaje.shop', precios:true,
+    zonas:['gsd'], email:'angel@cortinaje.com.do', web:'cortinaje.shop', precios:true,
     nota:'Papel tapiz de diseñador en Santo Domingo: Roberto Cavalli, Gianfranco Ferré, Dolce & Gabbana, Lamborghini y Elie Saab, con precio en DÓLARES de US$ 27 a US$ 250 el rollo. Es el extremo alto de la partida. Solo entran los 52 artículos cuyo rollo trae medida declarada: el papel tapiz se vende en dos estándares —5.3 y 10.6 m² por rollo— que se llevan el doble, y sin el dato no hay metro cuadrado. El peso sale de la tasa del catálogo. No declara ITBIS.'
   });
   p('Hogardeco', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-08','MAT-34'],
-    zonas:[], web:'hogardeco.com.do', precios:true,
+    zonas:[], email:'adm@hogardeco.com.do', wa:'18297669239', web:'hogardeco.com.do', precios:true,
     nota:'Tienda de revestimientos decorativos: paneles de pared de PVC y WPC, planchas de bambú, mármol y ónix, papel tapiz, piedra flexible, mosaicos y piezas 3D. Es la fuente que llena los revestimientos decorativos y el piso vinílico, dos rubros que el catálogo tenía vacíos. Lo que la hace utilizable es que publica la medida de cada pieza, y con ella el precio se lleva al metro cuadrado. No declara si el precio incluye ITBIS. Ubicación sin verificar.'
   });
   p('Mundo LED', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-10','MAT-33'],
-    zonas:[], web:'mundoled.com.do', precios:true,
+    zonas:[], email:'tecnoelite@gmail.com', wa:'18093631313', web:'mundoled.com.do', precios:true,
     nota:'Tienda dedicada solo a iluminación, con 1,549 productos y precio por artículo en RD$. Es la fuente que llena la iluminación decorativa, que el catálogo tenía vacía: 952 de sus artículos son lámparas de techo, de pared, de mesa y de pie. Declara potencia, temperatura de color y zócalo en el material de instalación; en la lámpara decorativa, como todo el rubro, no declara ejes. No dice si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
   });
   p('Aliss', {
@@ -139,7 +146,7 @@
   p('Luminatti', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-33'],
-    zonas:[], web:'luminatti.com', precios:true,
+    zonas:[], email:'info@luminatti.com', web:'luminatti.com', precios:true,
     nota:'Iluminación de diseño importada, de Vigo Lighting Group. 140 piezas con precio en DÓLARES, de US$ 77 a US$ 3,160. Es el extremo alto de la partida y por eso vale: sin él, la referencia de una lámpara terminaba en lo que cuesta en el mercado local. El peso sale de la tasa del catálogo y cada cotización dice cuál y de cuándo. No declara ITBIS. Ubicación sin verificar.'
   });
   p('Max Ferretería', {
@@ -147,7 +154,7 @@
     /* Las categorías salen de la única colección que se ha extraído. El sitio
        tiene más departamentos; se irán agregando al verificarlos. */
     cats:['MAT-02','MAT-06','MAT-09','MAT-32'],
-    zonas:[], web:'maxferreteria.com', precios:true,
+    zonas:[], email:'ventas@maxferreteria.com', wa:'18095404444', web:'maxferreteria.com', precios:true,
     nota:'Tienda en línea con precios de lista en RD$, disponibilidad por artículo y fecha de última actualización del precio en cada ficha. No declara si el precio incluye ITBIS. Ubicación de sucursales sin verificar.'
   });
   p('Ferretería Cima', {
@@ -157,37 +164,37 @@
        asigna zona: el filtro por zona la deja fuera antes que decir algo que
        no sabemos. Sus precios sí cuentan para la referencia, que depende de
        si vende al público y no de dónde está. */
-    zonas:[], web:'ferreteriacima.com.do', precios:true,
+    zonas:[], email:'mercadeo@ferreteriacima.com.do', wa:'18095659743', web:'ferreteriacima.com.do', precios:true,
     nota:'Tienda en línea con precios de lista en RD$ y disponibilidad por artículo. Su catálogo declara el suplidor o importador de cada producto, dato que casi ningún comercio publica. Ubicación de sucursales sin verificar.'
   });
   p('InnovaCentro (La Innovación)', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12','MAT-13'],
-    zonas:['nacional'], web:'innovacentro.com.do', precios:true,
+    zonas:['nacional'], wa:'18095411818', web:'innovacentro.com.do', precios:true,
     nota:'Catálogo en línea con marcas y precios. Maneja Truper, Foset, Total, Pedrollo y Tangit.'
   });
   p('La Ibérica', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-24','MAT-25','MAT-26','MAT-32'],
-    zonas:['gsd'], web:'tienda.laiberica.com.do', precios:true,
+    zonas:['gsd'], email:'ventas@laiberica.com.do', wa:'18095472277', web:'tienda.laiberica.com.do', precios:true,
     nota:'Tienda especializada en cerámica, porcelanato, baños, grifería y adhesivos, con tienda en línea y precios por artículo. Su web no desglosa el ITBIS. Santo Domingo.'
   });
   p('Tonos y Colores', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-12','EQU-04'],
-    zonas:[], web:'tonosycolores.com', precios:true,
+    zonas:[], email:'mercado@tonosycolores.com', web:'tonosycolores.com', precios:true,
     nota:'Tienda de pintura en línea: Montó, Tropical, Popular, Lanco y Claudette, con el envase de cada presentación y el precio por SKU. Declara que sus precios incluyen ITBIS. Todo su catálogo se publica en oferta sobre el precio de lista. Ubicación de sucursales sin verificar.'
   });
   p('CerArte', {
     tipo:'especializado', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-24','MAT-25','MAT-26','MAT-27','MAT-32'],
-    zonas:[], web:'cerarte.com.do', precios:true,
+    zonas:[], email:'analistadeservicios2@cerarte.com.do', wa:'18294516425', web:'cerarte.com.do', precios:true,
     nota:'Tienda especializada en cerámica, porcelanato, baños y cocinas, con tienda en línea. Es el único comercio del directorio que declara en cada ficha la unidad de venta, los metros y las piezas por caja, y que el precio publicado no lleva ITBIS. Ubicación de sucursales sin verificar.'
   });
   p('Ferretería MC', {
     tipo:'cadena', canal:'detallista',
     cats:['MAT-02','MAT-08','MAT-09','MAT-10','MAT-12'],
-    zonas:['gsd'], web:'mc.com.do', precios:false, tel:'809-565-5797', email:'ferreteriamc@gmail.com',
+    zonas:['gsd'], web:'mc.com.do', precios:false, tel:'809-565-5797', email:'ventas@ferreteriamc.com',
     nota:'Mercantil del Caribe, S.A.S., av. John F. Kennedy km 8½. No publica precios en línea: cotiza por escrito, y su cotización trae el ITBIS en columna aparte. Es la única fuente del catálogo donde el impuesto es un dato y no un supuesto.'
   });
 

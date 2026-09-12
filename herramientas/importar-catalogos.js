@@ -1539,6 +1539,53 @@ lista.forEach(e => {
   codigoDe[c + '|' + e.spec.clave] = c + '-' + (n < 10 ? '00' + n : n < 100 ? '0' + n : '' + n);
 });
 
+/* DOS ÍTEMS NO PUEDEN LLAMARSE IGUAL
+
+   El contador solo garantiza que el CÓDIGO sea único. El nombre no lo
+   miraba nadie, y el catálogo publicaba «Cerámica de piso, 33 x 33 cm»
+   dos veces: una escrita a mano, con su «Pasta cerámica esmaltada», y
+   otra generada por una regla. Son la misma especificación y el usuario
+   ve dos filas iguales con precios distintos, sin manera de elegir.
+
+   No se resuelve solo: la generada tiene cotizaciones que habría que
+   mudar a la de mano, y eso es un MAPEO declarado. Así que aquí solo se
+   avisa, con el código de las dos, para que alguien lo declare. */
+/* Lo escrito a mano es exactamente lo que hay ANTES del marcador, que es
+   de donde sale `aMano`. Pero un nombre que choca con un ítem retirado no
+   choca con nada, así que se cruza con lo que el catálogo publica hoy. */
+const publicados = {};
+(function () {
+  const antes = global.window;
+  global.window = {};
+  delete require.cache[require.resolve(path.join(DATOS, 'datos-catalogo.js'))];
+  require(path.join(DATOS, 'datos-catalogo.js'));
+  (global.window.CATALOGO.items || []).forEach(i => { publicados[i.codigo] = i.nombre; });
+  global.window = antes;
+}());
+
+const nombresAMano = {};
+Object.keys(publicados).forEach(cod => {
+  /* ¿Está su declaración antes del marcador? */
+  const nom = publicados[cod];
+  if (aMano.indexOf("'" + nom.replace(/'/g, "\\'") + "'") < 0) return;
+  (nombresAMano[nom] = nombresAMano[nom] || []).push(cod);
+});
+
+const chocan = lista.filter(e => {
+  const ya = nombresAMano[e.spec.nombre] || [];
+  const mio = codigoDe[e.spec.cat + '|' + e.spec.clave];
+  return ya.some(c => c !== mio);
+});
+if (chocan.length) {
+  console.log('');
+  console.log('AVISO: %d ítem(s) generado(s) se llaman igual que uno escrito a mano.', chocan.length);
+  console.log('Hay que declarar el mapeo, o el catálogo publica la misma partida dos veces:');
+  chocan.forEach(e => console.log('  %s  «%s»  ya existe como %s',
+    codigoDe[e.spec.cat + '|' + e.spec.clave], e.spec.nombre,
+    nombresAMano[e.spec.nombre].filter(c => c !== codigoDe[e.spec.cat + '|' + e.spec.clave]).join(', ')));
+  console.log('');
+}
+
 /* Un mapeo puede apuntar a un ítem que genera esta misma herramienta. Ahí no
    sirve escribir el código —se corre solo si más adelante entra otro ítem
    antes—, así que se escribe '#CATEGORÍA|clave' y se resuelve aquí, ya con

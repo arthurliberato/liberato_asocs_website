@@ -601,12 +601,22 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .cot-quitar{background:none;border:0;color:var(--ink-mute);cursor:pointer;padding:.2rem;line-height:0}
 .cot-quitar:hover{color:var(--rojo-700)}
 .cot-quitar svg{width:16px;height:16px}
-.cot-foot{border-top:1px solid var(--line);padding:1.1rem 1.35rem;background:var(--bg-tint)}
-.cot-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.35rem}
+/* EL PIE OCUPABA EL 37% DE LA PANTALLA DEL TELÉFONO
+
+   Tres botones apilados, cada uno a lo ancho, más la suma y la nota:
+   310 px de 844. Y lo que hay que ver es la lista, no el pie.
+
+   La suma y «Solicitar cotización» se quedan como estaban —son el dato y
+   la salida a la que se viene—; los dos exportadores pasan a compartir
+   una línea, que es lo que son: la misma acción con dos formatos. */
+.cot-foot{border-top:1px solid var(--line);padding:.75rem 1.35rem .9rem;background:var(--bg-tint)}
+.cot-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.2rem}
 .cot-total .k{font-size:.9rem;color:var(--ink-soft)}
 .cot-total .v{font-family:Jost,sans-serif;font-size:1.35rem;font-weight:600;color:var(--verde);font-variant-numeric:tabular-nums}
-.cot-nota{font-size:.79rem;color:var(--ink-mute);margin:.5rem 0 .9rem;line-height:1.5}
-.cot-acciones{display:grid;gap:.5rem}
+.cot-nota{font-size:.76rem;color:var(--ink-mute);margin:.15rem 0 .6rem;line-height:1.4}
+.cot-acciones{display:grid;gap:.45rem}
+.cot-exportar{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
+.cot-exportar .btn{padding-left:.4rem;padding-right:.4rem}
 /* display:grid le gana a la regla del navegador para [hidden], así que
    hay que decirlo: sin esto las dos filas de botones salen a la vez. */
 .cot-acciones[hidden]{display:none}
@@ -1116,7 +1126,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   position: absolute;
   top: .4rem;
   right: .4rem;
-  z-index: 2;
+  /* Por encima del panel de los dos botones (capa 3): con la ficha
+     abierta el marcador tiene que seguir viéndose y pulsándose. */
+  z-index: 4;
   display: grid;
   place-items: center;
   width: 30px;
@@ -1152,8 +1164,12 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    el del pie del panel lateral. */
 .ir-tocar { display: none; }
 
-.ir-tactil .ir-guardar { display: none; }
-
+/* El marcador de la esquina se queda también con el dedo. Se probó
+   quitándolo —el panel ya trae su «Guardar», así que parecía de más— y
+   se pierde el gesto de un toque: apartar diez piezas mirando la
+   cuadrícula son diez toques, no veinte. Que estén los dos no confunde
+   porque son el mismo estado: marcar en cualquiera de ellos enciende el
+   otro. */
 .ir-tactil .ir-card.is-abierta .ir-tocar {
   position: absolute;
   z-index: 3;
@@ -1167,7 +1183,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   flex-direction: column;
   justify-content: flex-start;
   gap: .35rem;
-  padding: .35rem;
+  /* A la derecha, el hueco del marcador de la esquina: los botones no
+     pasan por debajo de él. */
+  padding: .35rem 2.4rem .35rem .35rem;
   border-radius: var(--r-sm);
   background: linear-gradient(to bottom, rgba(27, 30, 23, .72) 55%, rgba(27, 30, 23, 0));
 }
@@ -1255,14 +1273,30 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
 .ir-grupo { margin-bottom: 1.1rem; }
 .ir-grupo-cab {
   position: sticky;
-  top: 0;
+  /* POR QUÉ NO ES «top: 0»
+
+     El contenedor que hace el scroll lleva 1,1 rem de relleno arriba, y
+     con «top: 0» la cabecera se clava por debajo de él: queda una franja
+     de dieciocho píxeles entre el borde del panel y la cabecera por la
+     que las filas siguen asomando después de haber pasado por detrás.
+     Se ve media fila colgando encima del subtotal.
+
+     Clavándola 1,1 rem más arriba, el fondo tapa la franja entera. El
+     relleno de arriba compensa lo que se sube y el margen negativo
+     devuelve al flujo el alto que ese relleno añade, así que el texto
+     no se mueve de donde estaba. */
+  top: -1.1rem;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  padding: .5rem 0 .35rem;
-  margin-bottom: .1rem;
+  /* El aire de debajo va como relleno y no como margen: el margen es
+     transparente y por esos dos píxeles se veía pasar el borde de las
+     filas que iban quedando detrás. */
+  padding: 1.6rem 0 .45rem;
+  margin-top: -1.1rem;
+  margin-bottom: 0;
   background: #fff;
   border-bottom: 2px solid var(--verde-200);
   font-family: 'Jost', system-ui, sans-serif;
@@ -1279,7 +1313,23 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   letter-spacing: 0;
   text-transform: none;
 }
-.ir-grupo-sub { font-variant-numeric: tabular-nums; letter-spacing: 0; color: var(--verde-700); }
+/* «Muebles y espejos de baño» no cabe al lado de su suma en un teléfono
+   y partía la cabecera en dos renglones, con el número de piezas colgando
+   solo. El nombre se recorta con puntos suspensivos y la suma, que es la
+   cifra, no se parte nunca. */
+.ir-grupo-cab > span:first-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ir-grupo-sub {
+  flex: none;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  color: var(--verde-700);
+}
 
 /* La referencia por gama, bajo el nombre del ítem. Solo sale en las
    partidas donde la marca separa de verdad, así que es una línea rara y
@@ -1589,3 +1639,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .ir-intro .ir-nota { font-size: .8rem; }
   .ir-bajada { font-size: .92rem; }
 }
+
+/* El rango, al lado de la referencia. Más pequeño y más apagado que el
+   precio: es contexto para leerlo, no un segundo precio que compita con él.
+   Una sola cotización se apaga más todavía, porque no es un rango. */
+.rango-precio { white-space: nowrap; color: var(--ink-soft); font-size: .86em; }
+.rango-precio .rango-uno { opacity: .6; }

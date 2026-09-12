@@ -24,6 +24,7 @@ esto comprueba lo otro, que es lo que de verdad se rompe:
 import re
 import statistics
 import sys
+import zipfile
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -40,6 +41,10 @@ LIBRO = Path(sys.argv[1]) if len(sys.argv) > 1 else (
 PERMITIDAS = {
     "IF", "IFERROR", "INDEX", "MATCH", "MIN", "MAX", "MEDIAN", "COUNT",
     "SUM", "SUMIF", "SUMPRODUCT", "OR", "AND", "NOT", "ISNUMBER", "ROUND",
+    # COUNTIF e ISNA son de las primeras versiones de Excel y openpyxl las
+    # escribe tal cual. Ojo con las de 2013 en adelante —IFNA, IFS—: esas
+    # necesitan el prefijo «_xlfn.» y sin él Excel muestra #NAME?.
+    "COUNTIF", "ISNA",
 }
 PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXTJOIN", "LET"}
 
@@ -50,25 +55,31 @@ FILA_TITULOS = 2
 # La primera fila de datos: dos de encabezado y a la tercera empiezan.
 FILA_1 = 3
 FUENTE = "Calibri"
-HOJAS = ["Catálogo", "Comparativo", "Artículos"]
-# La columna del precio en la hoja de artículos. Se corrió al entrar
-# «Gama», y un precio que entre como texto inutiliza la hoja entera.
-COL_PRECIO_ART = 8
+HOJAS = ["Catálogo", "Comparativo", "Artículos", "Selección"]
+# Las columnas se piden por su TÍTULO. Estaban clavadas por número y se
+# corrían solas: primero al entrar «Gama», después al entrar la casilla
+# «Agregar». Un número escrito a mano aquí no da error, trae otra cosa.
+def columna_por_titulo(ws, titulo, fila=2):
+    """El número de columna cuyo encabezado dice exactamente eso."""
+    for c in ws[fila]:
+        if c.value == titulo:
+            return c.column
+    raise SystemExit("No encuentro la columna «%s» en la hoja «%s»." % (titulo, ws.title))
 # El precio va pegado al ítem: E, F y G son las tres columnas de precio,
 # justo a la derecha del nombre. Si alguna se corre, la fórmula del precio
 # sin ITBIS —que las nombra por letra— traería otra cosa sin dar error.
 COLUMNAS_CATALOGO = {
     "A": "Código", "D": "Ítem", "E": "Precio de referencia (RD$)",
-    "F": "Mínimo (RD$)", "G": "Máximo (RD$)",
-    "H": "Económica (RD$)", "I": "Estándar (RD$)",
-    "J": "Alta (RD$)", "K": "Premium (RD$)",
-    "L": "Precio sin ITBIS (RD$)", "M": "Incluye ITBIS", "N": "Unidad",
-    "P": "Comercios que cotizaron", "Q": "Especificación",
+    "F": "Mínimo (RD$)", "G": "Máximo (RD$)", "H": "Rango (RD$)",
+    "I": "Económica (RD$)", "J": "Estándar (RD$)",
+    "K": "Alta (RD$)", "L": "Premium (RD$)",
+    "M": "Precio sin ITBIS (RD$)", "N": "Incluye ITBIS", "O": "Unidad",
+    "Q": "Comercios que cotizaron", "R": "Especificación",
 }
 
 # Las cuatro de gama, en orden. Una partida que las publique al revés
 # —premium más barata que económica— se lee como un error nuestro.
-GAMAS = ["H", "I", "J", "K"]
+GAMAS = ["I", "J", "K", "L"]
 
 fallos = []
 avisos = []
@@ -150,6 +161,39 @@ def main():
     print("Catálogo: %d ítems (filas %d a %d)"
           % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
 
+    # ---- 3 quater: las notas que explican el libro ------------------
+    # Cada hoja lleva en A2 una nota flotante que dice para qué sirve, y
+    # la primera lleva la guía entera. Lo que puede romperse callado es
+    # el TAMAÑO: la caja se dibuja en píxeles y no crece con el texto, así
+    # que una guía más larga saldría recortada sin dar ningún error.
+    #
+    # Y hay que medirlo en el VML, no con openpyxl: openpyxl escribe el
+    # tamaño correctamente pero al releer el archivo devuelve siempre el
+    # de por defecto, 144x79. Creerle sería dar por buena una caja que no
+    # se ha mirado.
+    for hoja in HOJAS:
+        if wb[hoja]["A2"].comment is None:
+            falla("la hoja «%s» no tiene la nota de A2 que explica para qué sirve" % hoja)
+
+    cajas = []
+    with zipfile.ZipFile(LIBRO) as z:
+        for nombre in sorted(n for n in z.namelist() if n.endswith(".vml")):
+            estilo = re.search(r"width:(\d+)px;height:(\d+)px",
+                               z.read(nombre).decode("utf-8", "replace"))
+            if estilo:
+                cajas.append((int(estilo.group(1)), int(estilo.group(2))))
+    if len(cajas) != len(HOJAS):
+        falla("hay %d cajas de nota dibujadas y %d hojas" % (len(cajas), len(HOJAS)))
+    for ancho, alto in cajas:
+        if (ancho, alto) == (144, 79):
+            falla("una nota se quedó con la caja por defecto: el texto saldrá recortado")
+    # La guía es la más larga y necesita la caja más grande de todas.
+    if cajas and max(a for _, a in cajas) < 300:
+        falla("la caja mayor mide %d px de alto y la guía necesita más de 300"
+              % max(a for _, a in cajas))
+    print("Notas: %d hojas explicadas · caja mayor %dx%d px"
+          % (len(cajas), max(w for w, _ in cajas), max(h for _, h in cajas)))
+
     # ---- 3 bis: la hoja de artículos --------------------------------
     # Es el dato crudo, una fila por artículo de tienda. Lo que puede
     # romperse callado aquí es que se quede vacía —si el registro deja de
@@ -157,7 +201,11 @@ def main():
     # es lo que inutiliza una hoja hecha para filtrar y sumar.
     art = wb["Artículos"]
     filas_art = art.max_row
-    while filas_art > FILA_TITULOS and art.cell(row=filas_art, column=1).value is None:
+    # Se cuenta por una columna que SIEMPRE trae dato. Antes miraba la
+    # primera, y el día que la primera pasó a ser la casilla que el usuario
+    # rellena —vacía a propósito— la hoja pareció no tener ni una fila.
+    col_cuenta = columna_por_titulo(art, "Categoría")
+    while filas_art > FILA_TITULOS and art.cell(row=filas_art, column=col_cuenta).value is None:
         filas_art -= 1
     n_art = filas_art - FILA_TITULOS
     if n_art < 1000:
@@ -167,7 +215,7 @@ def main():
     if sin_nombre:
         falla("%d artículos sin nombre en la hoja de artículos" % sin_nombre)
     no_numero = [r for r in range(FILA_TITULOS + 1, min(filas_art, FILA_TITULOS + 400) + 1)
-                 if not isinstance(art.cell(row=r, column=COL_PRECIO_ART).value, (int, float))]
+                 if not isinstance(art.cell(row=r, column=columna_por_titulo(art, "Precio RD$")).value, (int, float))]
     if no_numero:
         falla("el precio de la hoja de artículos entra como texto en %d filas (ej. fila %d)"
               % (len(no_numero), no_numero[0]))
@@ -262,7 +310,12 @@ def main():
     # rangos no se pisen entre sí, que es como se vería un bloque mal
     # cortado.
     art = wb["Artículos"]
-    col_item_cat, col_item_art = 4, 2
+    # Las columnas se buscan por su TÍTULO, no por un número escrito a
+    # mano. Estaban clavadas en 4 y 2, y el día que la hoja «Artículos»
+    # ganó una columna delante el verificador acusó a 2.354 enlaces de
+    # apuntar al ítem equivocado. El fallo era suyo.
+    col_item_cat = columna_por_titulo(cat, "Ítem")
+    col_item_art = columna_por_titulo(art, "Ítem del catálogo")
     cubiertas, enlazadas, solapes = {}, 0, 0
     for f in range(FILA_1, cat.max_row + 1):
         c = cat.cell(row=f, column=col_item_cat)
