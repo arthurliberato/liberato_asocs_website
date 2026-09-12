@@ -258,26 +258,36 @@ ${header('interiorismo')}
       <span class="k">Suma de lo guardado</span>
       <span class="v" id="ir-total">RD$ 0</span>
     </div>
+    <!-- La nota se quedó con la mitad que avisa y soltó la que describe:
+         que cada pieza lleva el precio de su tienda ya lo dice cada fila,
+         con el nombre del comercio debajo. Lo que no se puede quitar es
+         lo que la suma NO incluye. -->
     <p class="cot-nota" id="ir-nota">
-      Cada pieza lleva el precio que publica su tienda, con enlace a ella. La suma es
-      orientativa: no incluye instalación, transporte ni las mermas del corte.
+      La suma es orientativa: no incluye instalación, transporte ni las mermas del corte.
     </p>
-    <!-- Tres salidas. Las dos primeras se llevan la lista a otro sitio —una
-         hoja, un papel—; la tercera la devuelve al comercio, que es para lo
-         que se armó. -->
+    <!-- Tres salidas, dos filas. «Solicitar cotización» va sola y a lo
+         ancho porque es a lo que se viene; los dos exportadores comparten
+         línea porque son la misma acción con dos formatos, y apilados se
+         llevaban un tercio de la pantalla del teléfono. -->
     <div class="cot-acciones" id="ir-acciones">
       <button class="btn btn-primary" id="ir-cotizar" type="button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 12h5"/></svg>
         Solicitar cotización
       </button>
-      <button class="btn btn-ghost" id="ir-pdf" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V4h12v5M6 18v2h12v-2M6 9h12a2 2 0 0 1 2 2v5H4v-5a2 2 0 0 1 2-2z"/></svg>
-        Exportar a PDF
-      </button>
-      <button class="btn btn-ghost" id="ir-excel" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
-        Exportar a Excel
-      </button>
+      <!-- Dicen «PDF» y «Excel» y no «Exportar a PDF»: a dos por línea, en
+           un teléfono de 320 px cada botón tiene 135 px y la etiqueta
+           larga se parte en dos renglones. El verbo va en el aria-label,
+           que es donde hace falta. -->
+      <div class="cot-exportar">
+        <button class="btn btn-ghost" id="ir-pdf" type="button" aria-label="Exportar a PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V4h12v5M6 18v2h12v-2M6 9h12a2 2 0 0 1 2 2v5H4v-5a2 2 0 0 1 2-2z"/></svg>
+          PDF
+        </button>
+        <button class="btn btn-ghost" id="ir-excel" type="button" aria-label="Exportar a Excel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          Excel
+        </button>
+      </div>
     </div>
     <!-- Solo aparece dentro de la vista por comercio. -->
     <div class="cot-acciones" id="ir-rfq-acciones" hidden>
