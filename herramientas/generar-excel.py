@@ -94,21 +94,21 @@ FILL_MARCA = PatternFill("solid", fgColor=MARFIL)
 
 BORDE = Border(*[Side(style="thin", color=FILETE)] * 4)
 
-# EL COLOR DE CADA PESTAÑA
+# UN COLOR POR HOJA, Y QUE SEA OTRO COLOR
 #
-# Cuatro hojas con la misma lengüeta gris obligan a leer el nombre para
-# saber dónde está uno. Con color se distingue de reojo, y el color dice
-# además qué clase de hoja es: verde el catálogo, que es la referencia;
-# ámbar la selección, que es la única que el usuario llena —el mismo
-# ámbar de las celdas de entrada—; y tonos apagados las dos de consulta.
+# El primer intento pintó las pestañas con tres verdes distintos, y tres
+# verdes no son tres colores: son el mismo color tres veces, y de reojo
+# no se distinguen. Aquí cada hoja lleva un TONO DE COLOR distinto —verde,
+# azul, ámbar— y lo lleva la tabla entera: la fila de títulos, la cebra de
+# las filas y la pestaña.
 #
-# Se quedan dentro de la paleta del logotipo: un libro con una pestaña
-# roja y otra azul parece de otro sitio.
-COLOR_PESTANA = {
-    "Catálogo": VERDE,
-    "Comparativo": "6E8C4F",
-    "Artículos": "9AA88A",
-    "Selección": "C98A2E",
+# El verde y el ámbar son del logotipo. El azul no: la paleta de la marca
+# solo tiene verde, ámbar y rojo, y el rojo en una fila de títulos se lee
+# como una alarma. Hace falta un tercer color que no grite.
+COLOR_HOJA = {
+    "Catálogo":  {"tit": "3F6E22", "cebra": "EDF3E6", "pestana": "3F6E22"},
+    "Artículos": {"tit": "1F5673", "cebra": "E6EFF4", "pestana": "1F5673"},
+    "Selección": {"tit": "9A5B06", "cebra": "FDF3E2", "pestana": "E89019"},
 }
 
 MONEDA = '#,##0.00;[Red]-#,##0.00;"—"'
@@ -134,66 +134,12 @@ ICONO_PX = 22       # el icono dentro de la banda
 MARGEN_PX = 5
 
 
-# CÓMO SE EXPLICA UN LIBRO SIN GASTAR UNA FILA
+# LA EXPLICACIÓN ESTABA EN UNA NOTA FLOTANTE Y AHORA ESTÁ EN LA FILA 2
 #
-# Lo pedido era una fila con las instrucciones, y mejor todavía algo que
-# flote y se pueda abrir y cerrar. En Excel eso existe y es una NOTA de
-# celda: flota sobre la cuadrícula, se abre al pasar el cursor, se queda
-# abierta con «Mostrar nota» y se cierra igual. No gasta una fila, no
-# desplaza ningún dato y no necesita macros.
-#
-# Lo que NO sirve: un cuadro de texto flota pero no se puede plegar sin
-# VBA, y agrupar filas pliega de verdad pero sigue ocupando la hoja.
-#
-# Va anclada en A2, que es la segunda fila de la primera hoja. El único
-# defecto de una nota es que se ve poco —un triangulito en la esquina—,
-# así que la banda de la fila 1 lo dice con todas las letras.
-
-AUTOR_NOTA = "Ingenieros Liberato & Asociados"
-
-# Una nota se dibuja en píxeles y no se ajusta sola: si se queda corta,
-# el texto se recorta sin avisar. Se mide a ojo de carácter.
-ANCHO_NOTA_PX = 7
-ALTO_NOTA_PX = 15
-
-
-def nota(ws, celda, texto):
-    """Pega una nota flotante, dimensionada para que quepa entera."""
-    lineas = texto.split("\n")
-    c = Comment(texto, AUTOR_NOTA)
-    c.width = max(260, min(560, ANCHO_NOTA_PX * max(len(l) for l in lineas) + 24))
-    c.height = ALTO_NOTA_PX * len(lineas) + 16
-    ws[celda].comment = c
-
-
-GUIA = """CÓMO USAR ESTE LIBRO
-
-Cuatro hojas, cada una con su color de pestaña.
-
-CATÁLOGO (verde) · una fila por partida
-  Precio de referencia: la mediana de lo que cotizan los comercios.
-  Rango: de la cotización más barata a la más cara. Si es muy ancho,
-    la partida mezcla productos distintos y la referencia vale poco.
-  Económica / Estándar / Alta / Premium: referencia por gama. Solo
-    aparece donde la marca de verdad separa el precio.
-  Pulse el nombre de una partida y salta a sus artículos.
-
-COMPARATIVO (verde claro) · una columna por comercio
-  Para ver quién tiene el mejor precio de cada partida y negociar.
-
-ARTÍCULOS (gris verdoso) · el dato crudo, sin agregar
-  Un artículo de tienda por fila, con su marca, su precio y el
-  enlace a la ficha del comercio.
-  Escriba una x en la columna «Agregar» y la fila pasa a Selección.
-  Pulse el ítem del catálogo y vuelve a su fila.
-
-SELECCIÓN (ámbar) · su lista de compra
-  Recoge sola lo que marcó, con la suma al pie. Funciona con
-  fórmulas: no hay macros y no hay que habilitar nada.
-
-Todas las hojas se filtran y se ordenan con la flecha del encabezado.
-Los precios incluyen ITBIS salvo donde la columna diga que no."""
-
+# Una nota de celda flota y se abre y se cierra, que era lo pedido, pero
+# se anuncia con un triangulito de tres píxeles en una esquina: quien abre
+# el libro no la ve, y una explicación que no se ve no explica nada. Se
+# cambió por una línea en la fila 2 de cada hoja, que se lee sola.
 
 def marca(ws, n_cols):
     """Banda fina con la marca, fija arriba de la hoja.
@@ -207,11 +153,8 @@ def marca(ws, n_cols):
     verde y sobre un fondo del mismo color se perdería.
     """
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=max(2, n_cols))
-    # La banda dice dónde está la guía porque una nota se anuncia con un
-    # triangulito de tres píxeles y nadie lo busca.
     c = ws.cell(row=1, column=1,
-                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com"
-                      "   ·   Cómo usar este libro: la nota de la celda A2")
+                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com")
     c.font = Font(name=FUENTE, size=CUERPO - 1, bold=True, color=VERDE_HONDO)
     c.fill = FILL_MARCA
     # La sangría deja hueco al icono: cada nivel vale un ancho de carácter.
@@ -243,11 +186,12 @@ def marca(ws, n_cols):
         ws.add_image(img)
 
 
-def encabeza(ws, fila, titulos, anchos=None, congelar=True):
+def encabeza(ws, fila, titulos, anchos=None, congelar=True, color=None):
+    fill = PatternFill("solid", fgColor=color) if color else FILL_TIT
     for i, t in enumerate(titulos, start=1):
         c = ws.cell(row=fila, column=i, value=t)
         c.font = TIT
-        c.fill = FILL_TIT
+        c.fill = fill
         c.alignment = Alignment(vertical="center", wrap_text=True)
         c.border = BORDE
     ws.row_dimensions[fila].height = 30
@@ -256,6 +200,27 @@ def encabeza(ws, fila, titulos, anchos=None, congelar=True):
             ws.column_dimensions[get_column_letter(i)].width = a
     if congelar:
         ws.freeze_panes = ws.cell(row=fila + 1, column=1)
+
+
+def explica(ws, n_cols, numero, hoja, cuerpo, color):
+    """La fila 2: qué es esta hoja y qué se hace en ella.
+
+    Una línea, en la misma fila, con el número de la hoja delante para
+    que se lea como una secuencia: del catálogo se baja a los artículos y
+    de los artículos se sube a la selección. El número y el nombre van en
+    el color de la hoja; el resto, en tinta normal.
+
+    Va en la fila y no en una nota flotante: una nota se anuncia con un
+    triangulito que no ve nadie, y esto hay que verlo al abrir.
+    """
+    ws.merge_cells(start_row=FILA_EXPLICA, start_column=1,
+                   end_row=FILA_EXPLICA, end_column=max(2, n_cols))
+    c = ws.cell(row=FILA_EXPLICA, column=1)
+    c.value = "(%d) %s: %s" % (numero, hoja, cuerpo)
+    c.font = Font(name=FUENTE, size=CUERPO, color=color)
+    c.fill = FILL_MARCA
+    c.alignment = Alignment(vertical="center", horizontal="left", indent=1)
+    ws.row_dimensions[FILA_EXPLICA].height = 20
 
 
 def texto(ws, celda, valor, fuente=TXT, ajuste=False):
@@ -428,11 +393,18 @@ SEL_COLS = [c for c in ART_COLS if c[0] not in ("Agregar", "#")]
 # cuestan tamaño aunque estén vacías; 300 cubre cualquier compra sensata.
 SEL_FILAS = 300
 
-# La primera fila de datos de todas las hojas: dos de encabezado y a la
-# tercera empiezan los ítems. Estaba escrito a mano en cada hoja y ahora
-# hace falta en tres sitios a la vez, porque los enlaces internos se
-# calculan con él.
-FILA_1 = 3
+# LAS TRES FILAS DE CABECERA
+#
+#   1  la banda de marca, con el logotipo
+#   2  una línea que dice para qué sirve ESTA hoja
+#   3  los títulos de columna
+#   4  ya son datos
+#
+# Van aquí arriba porque los enlaces internos entre hojas se calculan con
+# ellas, y un número escrito a mano en cada sitio se corre solo.
+FILA_EXPLICA = 2
+FILA_TITULOS = 3
+FILA_1 = 4
 
 
 def rangos_de_articulos(articulos):
@@ -519,6 +491,48 @@ def columnas_medida(items):
     return elegidas, cuenta
 
 
+# LAS TRES LÍNEAS QUE EXPLICAN EL LIBRO
+#
+# Escritas por quien lo va a usar, no por quien lo genera: dicen lo que
+# hace falta saber para trabajar y nada más.
+EXPLICACION = {
+    "Catálogo": (1, "agrupa múltiples artículos del mismo tipo en un mismo ítem. "
+                    "Pulsa el ítem para ver todos los artículos que contiene este ítem."),
+    "Artículos": (2, "desglose de todos los artículos que conforman un ítem. Escribe un "
+                     "carácter en la primera columna («Agregar») de la fila del artículo y "
+                     "hace copy paste a la hoja «Selección»."),
+    "Selección": (3, "listado de artículos seleccionados en la hoja «Artículos». Para agregar "
+                     "cada artículo, ve a la hoja «Artículos» y solo escribe un carácter en la "
+                     "primera columna («Agregar») de la fila del artículo y hace copy paste a "
+                     "la hoja «Selección»."),
+}
+
+
+def cebra(ws, primera, ultima, n_cols, color):
+    """Una de cada dos filas en el color de la hoja, muy claro.
+
+    La cebra no es adorno: en una tabla de nueve mil filas y once columnas
+    es lo que impide leer el precio de la fila de al lado. Va en el tono
+    claro del color de SU hoja, para que el color de la tabla se sostenga
+    de arriba abajo y no solo en la fila de títulos.
+    """
+    fill = PatternFill("solid", fgColor=color)
+    for r in range(primera, ultima + 1):
+        if (r - primera) % 2:
+            for i in range(1, n_cols + 1):
+                ws.cell(row=r, column=i).fill = fill
+
+
+def viste(ws, n_cols):
+    """La banda, la explicación y el color: lo que toda hoja lleva igual."""
+    col = COLOR_HOJA[ws.title]
+    marca(ws, n_cols)
+    numero, cuerpo = EXPLICACION[ws.title]
+    explica(ws, n_cols, numero, ws.title, cuerpo, col["tit"])
+    ws.sheet_properties.tabColor = col["pestana"]
+    return col
+
+
 def rango_texto(minimo, maximo):
     """«RD$ 218 – 80,380», o vacío si no hay con qué."""
     if minimo in (None, "") or maximo in (None, ""):
@@ -532,8 +546,8 @@ def hoja_catalogo(wb, d, rangos=None):
     ws = wb.create_sheet("Catálogo")
     medidas, _ = columnas_medida(d["items"])
     cols = list(CAT_COLS) + [(ETIQUETA_MEDIDA[k], 13) for k in medidas] + [("Otras medidas", 30)]
-    marca(ws, len(cols))
-    encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
+    col = viste(ws, len(cols))
+    encabeza(ws, FILA_TITULOS, [c[0] for c in cols], [c[1] for c in cols], color=col["tit"])
 
     # Qué dato del ítem va en cada columna. La columna del precio sin ITBIS
     # no sale de aquí: es una fórmula, y se escribe después.
@@ -553,7 +567,7 @@ def hoja_catalogo(wb, d, rangos=None):
                "Precio sin ITBIS (RD$)") + tuple(GAMA_COL)
     ref_c, itbis_c = cat_col("Precio de referencia (RD$)"), cat_col("Incluye ITBIS")
 
-    for n, it in enumerate(d["items"], start=3):
+    for n, it in enumerate(d["items"], start=FILA_1):
         for titulo, i in CAT_IDX.items():
             if titulo == "Incluye ITBIS":
                 v = "Sí" if it["itbis"] else "No"
@@ -588,7 +602,7 @@ def hoja_catalogo(wb, d, rangos=None):
 
     # Las medidas, una por columna
     base = len(CAT_COLS)
-    for n2, it in enumerate(d["items"], start=3):
+    for n2, it in enumerate(d["items"], start=FILA_1):
         med = it.get("medidas") or {}
         for j, k in enumerate(medidas):
             v = med.get(k)
@@ -602,9 +616,10 @@ def hoja_catalogo(wb, d, rangos=None):
             c.font = TXT
             c.alignment = Alignment(vertical="top", wrap_text=True)
 
-    ultima = len(d["items"]) + 2
-    ws.auto_filter.ref = "A2:%s%d" % (
-        get_column_letter(base + len(medidas) + 1), ultima)
+    ultima = len(d["items"]) + FILA_TITULOS
+    cebra(ws, FILA_1, ultima, base + len(medidas) + 1, col["cebra"])
+    ws.auto_filter.ref = "A%d:%s%d" % (
+        FILA_TITULOS, get_column_letter(base + len(medidas) + 1), ultima)
     return ultima
 
 
@@ -1007,8 +1022,8 @@ def hoja_articulos(wb, d, filas_catalogo=None):
     """
     ws = wb.create_sheet("Artículos")
     cols = ART_COLS
-    marca(ws, len(cols))
-    encabeza(ws, 2, [c[0] for c in cols], [c[1] for c in cols])
+    col = viste(ws, len(cols))
+    encabeza(ws, FILA_TITULOS, [c[0] for c in cols], [c[1] for c in cols], color=col["tit"])
 
     # El orden se declara una sola vez, como en el catálogo: el precio y el
     # enlace se buscan por su título y no por un número escrito a mano, que
@@ -1028,6 +1043,17 @@ def hoja_articulos(wb, d, filas_catalogo=None):
             v = a[DATO[titulo]]
             if titulo == "Artículo del comercio":
                 v = v or a["item"]
+            # UNA CELDA VACÍA NO DICE SI NO HAY MARCA O SI NO LA SABEMOS
+            #
+            # Los dos casos existen y son distintos: hay artículos que se
+            # venden sin marca y hay comercios que no publican columna de
+            # marca —Bellón, el catálogo más grande, no publica ninguna—.
+            # En blanco los dos se leen como un dato que falta por error.
+            # Además una columna con huecos no se puede filtrar ni ordenar
+            # sin que los huecos se vayan todos juntos al final.
+            if titulo == "Marca" and not v:
+                v = "Genérico/Desconocida"
+            
             c = ws.cell(row=n, column=i, value=v)
             c.font = TXT
             c.alignment = Alignment(vertical="top")
@@ -1070,8 +1096,12 @@ def hoja_articulos(wb, d, filas_catalogo=None):
                     c=c_marca, r=r, f=FILA_1))
     ws.column_dimensions[c_cont].hidden = True
 
-    ws.auto_filter.ref = "A2:%s%d" % (get_column_letter(len(cols)), n - 1)
-    return n - 3
+    cebra(ws, FILA_1, n - 1, len(cols), col["cebra"])
+    # La casilla de «Agregar» manda sobre la cebra: es donde se escribe.
+    for r in range(FILA_1, n):
+        ws.cell(row=r, column=idx["Agregar"]).fill = FILL_ENTRADA
+    ws.auto_filter.ref = "A%d:%s%d" % (FILA_TITULOS, get_column_letter(len(cols)), n - 1)
+    return n - FILA_1
 
 
 def hoja_seleccion(wb, ultima_fila_art):
@@ -1102,8 +1132,9 @@ def hoja_seleccion(wb, ultima_fila_art):
     crearla al marcar el primer artículo.
     """
     ws = wb.create_sheet("Selección")
-    marca(ws, len(SEL_COLS) + 1)
-    encabeza(ws, 2, ["#"] + [c[0] for c in SEL_COLS], [5] + [c[1] for c in SEL_COLS])
+    col = viste(ws, len(SEL_COLS) + 1)
+    encabeza(ws, FILA_TITULOS, ["#"] + [c[0] for c in SEL_COLS], [5] + [c[1] for c in SEL_COLS],
+             color=col["tit"])
 
     idx_art = {t: i for i, (t, _) in enumerate(ART_COLS, start=1)}
     col_cont = get_column_letter(idx_art["#"])
@@ -1134,6 +1165,8 @@ def hoja_seleccion(wb, ultima_fila_art):
         c = ws.cell(row=r, column=1, value=k + 1)
         c.font = TXT_MINI
         c.alignment = Alignment(horizontal="center", vertical="top")
+
+    cebra(ws, FILA_1, FILA_1 + SEL_FILAS - 1, len(SEL_COLS) + 1, col["cebra"])
 
     # El total, que es para lo que uno hace una lista de compra.
     i_precio = [c[0] for c in SEL_COLS].index("Precio RD$") + 2   # +1 por la columna «#»
@@ -1172,34 +1205,14 @@ def main():
     rangos = rangos_de_articulos(d["articulos"])
     filas_catalogo = {it["codigo"]: FILA_1 + i for i, it in enumerate(d["items"])}
 
+    # EL COMPARATIVO, RETIRADO POR AHORA
+    #
+    # hoja_comparativo() sigue en el archivo y sigue funcionando; lo que no
+    # se hace es llamarla. Volver a publicarla es descomentar una línea, y
+    # así no hay que reescribirla cuando se decida.
     hoja_catalogo(wb, d, rangos)
-    comparadas = hoja_comparativo(wb, d)
     n_articulos = hoja_articulos(wb, d, filas_catalogo)
     hoja_seleccion(wb, FILA_1 + n_articulos - 1)
-
-    for nombre, color in COLOR_PESTANA.items():
-        if nombre in wb.sheetnames:
-            wb[nombre].sheet_properties.tabColor = color
-
-    # La guía entera en la primera hoja, y en las demás una línea que diga
-    # para qué sirve esa hoja. Quien abre «Comparativo» directamente no
-    # tiene por qué volver al catálogo para enterarse.
-    nota(wb["Catálogo"], "A2", GUIA)
-    nota(wb["Comparativo"], "A2",
-         "COMPARATIVO\n\n"
-         "Una columna por comercio y una fila por partida: quién tiene\n"
-         "el mejor precio de cada cosa.\n\n"
-         "La guía completa está en la celda A2 de la hoja «Catálogo».")
-    nota(wb["Artículos"], "A2",
-         "AGREGAR A LA SELECCIÓN\n\n"
-         "Escriba una x en esta columna —vale cualquier cosa— y la fila\n"
-         "entera aparece en la hoja «Selección», con su suma al pie.\n\n"
-         "Sin macros: la recoge una fórmula. Para quitarla, borre la x.")
-    nota(wb["Selección"], "A2",
-         "SU LISTA DE COMPRA\n\n"
-         "Esta hoja no se escribe: se llena sola con lo que usted marque\n"
-         "en la columna «Agregar» de la hoja «Artículos».\n\n"
-         "Hay 300 filas preparadas. Si necesita más, avísenos.")
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"
@@ -1210,8 +1223,8 @@ def main():
     wb.save(SALIDA)
 
     print("Escrito %s" % SALIDA.relative_to(RAIZ))
-    print("  %d ítems · %d en el comparativo · %d proveedores" % (
-        len(d["items"]), comparadas, d["totales"]["comercios"]))
+    print("  %d ítems · %d proveedores" % (
+        len(d["items"]), d["totales"]["comercios"]))
     print("  %d artículos de tienda en la hoja «Artículos»" % n_articulos)
     print("  Ahora conviene revisarlo: python3 herramientas/verificar-excel.py")
 

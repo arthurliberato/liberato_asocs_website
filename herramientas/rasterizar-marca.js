@@ -41,24 +41,37 @@ function cargarChromium() {
   process.exit(2);
 }
 
+/* EL SVG VA INCRUSTADO, NO ENLAZADO
+
+   Estas páginas se cargan con setContent(), y una página así no tiene
+   origen de archivo: Chromium le bloquea los subrecursos file://. El
+   <img src="file://..."> no cargaba nunca y la captura salía en blanco.
+   Así llevaba isotipo-180.png desde que se creó —31.462 de sus 32.400
+   píxeles eran blanco puro— y por eso el libro de Excel no enseñaba
+   ningún logotipo.
+   
+   Incrustado no depende de ningún permiso ni de ninguna espera. */
+const svg = f => fs.readFileSync(f, 'utf8');
+
 const paginaOg = logo => `<!doctype html><meta charset="utf-8">
 <style>
  html,body{margin:0;padding:0}
  body{width:1200px;height:630px;background:${MARFIL};display:flex;flex-direction:column;
       align-items:center;justify-content:center;gap:34px;
       font-family:Archivo,Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
- img{width:840px;height:auto}
+ .logo{width:840px}
+ .logo svg{width:100%;height:auto;display:block}
  .regla{width:840px;height:3px;background:${AMBAR}}
  p{margin:0;font-size:27px;font-weight:600;letter-spacing:.16em;
    text-transform:uppercase;color:${VERDE}}
 </style>
-<img src="file://${logo}">
+<div class="logo">${svg(logo)}</div>
 <div class="regla"></div>
 <p>Construcción &middot; Diseño &middot; Supervisión</p>`;
 
 const paginaIcono = iso => `<!doctype html><meta charset="utf-8">
-<style>html,body{margin:0;padding:0}img{width:180px;height:180px;display:block}</style>
-<img src="file://${iso}">`;
+<style>html,body{margin:0;padding:0}svg{width:180px;height:180px;display:block}</style>
+${svg(iso)}`;
 
 (async () => {
   const chromium = cargarChromium();

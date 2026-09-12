@@ -21,6 +21,9 @@ esto comprueba lo otro, que es lo que de verdad se rompe:
      calculados aparte sobre las celdas de proveedor de esa fila.
 """
 
+import colorsys
+import io
+import itertools
 import re
 import statistics
 import sys
@@ -28,6 +31,7 @@ import zipfile
 from pathlib import Path
 
 from openpyxl import load_workbook
+from PIL import Image as PILImage
 from openpyxl.utils import column_index_from_string, get_column_letter
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -51,16 +55,21 @@ PROHIBIDAS = {"XLOOKUP", "XMATCH", "SORT", "FILTER", "UNIQUE", "SEQUENCE", "TEXT
 # Qué tiene que haber en cada columna de la hoja Catálogo. Si esto deja de
 # cumplirse, las plantillas traen el dato equivocado sin dar error.
 # Los encabezados van en la fila 2: la 1 es la banda de marca.
-FILA_TITULOS = 2
-# La primera fila de datos: dos de encabezado y a la tercera empiezan.
-FILA_1 = 3
+# La 1 es la banda de marca, la 2 explica para qué sirve la hoja, la 3
+# lleva los títulos de columna y en la 4 empiezan los datos.
+FILA_EXPLICA = 2
+FILA_TITULOS = 3
+FILA_1 = 4
 FUENTE = "Calibri"
-HOJAS = ["Catálogo", "Comparativo", "Artículos", "Selección"]
+# Tres hojas. El comparativo se retiró del libro; su comprobación sigue
+# escrita más abajo, desactivada, para no reescribirla si vuelve.
+HOJAS = ["Catálogo", "Artículos", "Selección"]
 # Las columnas se piden por su TÍTULO. Estaban clavadas por número y se
 # corrían solas: primero al entrar «Gama», después al entrar la casilla
 # «Agregar». Un número escrito a mano aquí no da error, trae otra cosa.
-def columna_por_titulo(ws, titulo, fila=2):
+def columna_por_titulo(ws, titulo, fila=None):
     """El número de columna cuyo encabezado dice exactamente eso."""
+    fila = FILA_TITULOS if fila is None else fila
     for c in ws[fila]:
         if c.value == titulo:
             return c.column
@@ -161,38 +170,59 @@ def main():
     print("Catálogo: %d ítems (filas %d a %d)"
           % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
 
-    # ---- 3 quater: las notas que explican el libro ------------------
-    # Cada hoja lleva en A2 una nota flotante que dice para qué sirve, y
-    # la primera lleva la guía entera. Lo que puede romperse callado es
-    # el TAMAÑO: la caja se dibuja en píxeles y no crece con el texto, así
-    # que una guía más larga saldría recortada sin dar ningún error.
-    #
-    # Y hay que medirlo en el VML, no con openpyxl: openpyxl escribe el
-    # tamaño correctamente pero al releer el archivo devuelve siempre el
-    # de por defecto, 144x79. Creerle sería dar por buena una caja que no
-    # se ha mirado.
-    for hoja in HOJAS:
-        if wb[hoja]["A2"].comment is None:
-            falla("la hoja «%s» no tiene la nota de A2 que explica para qué sirve" % hoja)
-
-    cajas = []
+    # ---- 3 ter bis: el logotipo incrustado no está en blanco ---------
+    # assets/img/isotipo-180.png se generaba con un <img src="file://...">
+    # dentro de setContent(), y Chromium bloquea los subrecursos file:// en
+    # una página sin origen de archivo: la captura salía en blanco. El libro
+    # llevó meses un logotipo de 180x180 con 31.462 píxeles blancos de
+    # 32.400, y nadie lo vio hasta abrirlo. Un archivo se incrusta sin
+    # protestar aunque no tenga nada dibujado, así que hay que mirarlo.
     with zipfile.ZipFile(LIBRO) as z:
-        for nombre in sorted(n for n in z.namelist() if n.endswith(".vml")):
-            estilo = re.search(r"width:(\d+)px;height:(\d+)px",
-                               z.read(nombre).decode("utf-8", "replace"))
-            if estilo:
-                cajas.append((int(estilo.group(1)), int(estilo.group(2))))
-    if len(cajas) != len(HOJAS):
-        falla("hay %d cajas de nota dibujadas y %d hojas" % (len(cajas), len(HOJAS)))
-    for ancho, alto in cajas:
-        if (ancho, alto) == (144, 79):
-            falla("una nota se quedó con la caja por defecto: el texto saldrá recortado")
-    # La guía es la más larga y necesita la caja más grande de todas.
-    if cajas and max(a for _, a in cajas) < 300:
-        falla("la caja mayor mide %d px de alto y la guía necesita más de 300"
-              % max(a for _, a in cajas))
-    print("Notas: %d hojas explicadas · caja mayor %dx%d px"
-          % (len(cajas), max(w for w, _ in cajas), max(h for _, h in cajas)))
+        medios = [n for n in z.namelist() if n.startswith("xl/media/")]
+        if not medios:
+            falla("el libro no lleva ninguna imagen: falta el logotipo")
+        for n in medios:
+            im = PILImage.open(io.BytesIO(z.read(n))).convert("RGB")
+            pix = list(im.convert("RGB").tobytes())
+            pix = [tuple(pix[i:i + 3]) for i in range(0, len(pix), 3)]
+            blancos = sum(1 for p in pix if p == (255, 255, 255))
+            if blancos > len(pix) * 0.8:
+                falla("%s está en blanco al %d%%: el logotipo no se rasterizó"
+                      % (n, round(blancos / len(pix) * 100)))
+    print("Logotipo: %d copias incrustadas, con dibujo dentro" % len(medios))
+
+    # ---- 3 quater: la fila que explica cada hoja --------------------
+    # La explicación vivía en una nota flotante y no la veía nadie. Ahora
+    # va en la fila 2, y lo que puede romperse callado es que se quede
+    # vacía o que hable de otra hoja.
+    for n, hoja in enumerate(HOJAS, start=1):
+        v = wb[hoja].cell(row=FILA_EXPLICA, column=1).value or ""
+        if not v.strip():
+            falla("la hoja «%s» no tiene la línea de la fila %d que dice para qué sirve"
+                  % (hoja, FILA_EXPLICA))
+        elif not v.startswith("(%d) %s:" % (n, hoja)):
+            falla("la fila %d de «%s» empieza por «%s» y debería numerarla y nombrarla"
+                  % (FILA_EXPLICA, hoja, v[:24]))
+
+    # ---- 3 quinquies: cada hoja lleva OTRO color, no otro tono ---------
+    # Tres verdes no son tres colores. Se comprueba comparando el tono de
+    # la fila de títulos de cada hoja: si dos caen en el mismo sector del
+    # círculo cromático, de reojo son la misma hoja.
+    tonos = {}
+    for hoja in HOJAS:
+        rgb = (wb[hoja].cell(row=FILA_TITULOS, column=1).fill.fgColor.rgb or "")[-6:]
+        if len(rgb) != 6:
+            falla("la fila de títulos de «%s» no tiene color de fondo" % hoja)
+            continue
+        r, g, b = (int(rgb[i:i + 2], 16) / 255 for i in (0, 2, 4))
+        tonos[hoja] = colorsys.rgb_to_hls(r, g, b)[0] * 360
+    for a, b in itertools.combinations(sorted(tonos), 2):
+        d = abs(tonos[a] - tonos[b])
+        d = min(d, 360 - d)
+        if d < 40:
+            falla("«%s» y «%s» llevan el mismo color con otro tono (%.0f° de diferencia); "
+                  "se pidió cambio de color" % (a, b, d))
+    print("Colores: " + " · ".join("%s %.0f°" % (h, t) for h, t in sorted(tonos.items())))
 
     # ---- 3 bis: la hoja de artículos --------------------------------
     # Es el dato crudo, una fila por artículo de tienda. Lo que puede
@@ -267,35 +297,40 @@ def main():
               % (", ".join(sorted(intrusas)), FUENTE))
 
     # ---- 5: mínimo, mediana y máximo del comparativo -------------------
-    comp = wb["Comparativo"]
-    encabezados = [comp.cell(row=FILA_TITULOS, column=i).value for i in range(1, comp.max_column + 1)]
-    p1 = 4
-    p2 = encabezados.index("Mínimo (RD$)")          # 0-based: la columna anterior es la última de proveedor
-    n_prov = p2 - 3
-    print("Comparativo: %d proveedores (columnas %s a %s)"
-          % (n_prov, get_column_letter(p1), get_column_letter(p2)))
+    # Se queda escrita entera: el día que el comparativo vuelva al libro,
+    # vuelve su comprobación con él.
+    # Se queda escrita entera: el día que el comparativo vuelva al libro,
+    # vuelve su comprobación con él.
+    comp = wb["Comparativo"] if "Comparativo" in wb.sheetnames else None
+    if comp is not None:
+        encabezados = [comp.cell(row=FILA_TITULOS, column=i).value for i in range(1, comp.max_column + 1)]
+        p1 = 4
+        p2 = encabezados.index("Mínimo (RD$)")          # 0-based: la columna anterior es la última de proveedor
+        n_prov = p2 - 3
+        print("Comparativo: %d proveedores (columnas %s a %s)"
+              % (n_prov, get_column_letter(p1), get_column_letter(p2)))
 
-    revisadas = 0
-    for f in range(FILA_TITULOS + 1, comp.max_row + 1):
-        if not comp.cell(row=f, column=1).value:
-            break
-        valores = [comp.cell(row=f, column=c).value for c in range(p1, p2 + 1)]
-        nums = [v for v in valores if isinstance(v, (int, float))]
-        for col, fn in ((p2 + 1, min), (p2 + 2, statistics.median), (p2 + 3, max)):
-            formula = comp.cell(row=f, column=col).value or ""
-            rango = re.search(r"\(([A-Z]+)(\d+):([A-Z]+)(\d+)\)\)$", formula)
-            if not rango:
-                falla("Comparativo fila %d: no entiendo la fórmula «%s»" % (f, formula))
-                continue
-            a, fa, b, fb = rango.group(1), int(rango.group(2)), rango.group(3), int(rango.group(4))
-            if (column_index_from_string(a), column_index_from_string(b), fa, fb) != (p1, p2, f, f):
-                falla("Comparativo fila %d: la fórmula mira %s%d:%s%d y los proveedores están en %s%d:%s%d"
-                      % (f, a, fa, b, fb, get_column_letter(p1), f, get_column_letter(p2), f))
-        revisadas += 1
-        if not nums:
-            falla("Comparativo fila %d: sin ningún precio, no debería estar en esta hoja" % f)
+        revisadas = 0
+        for f in range(FILA_TITULOS + 1, comp.max_row + 1):
+            if not comp.cell(row=f, column=1).value:
+                break
+            valores = [comp.cell(row=f, column=c).value for c in range(p1, p2 + 1)]
+            nums = [v for v in valores if isinstance(v, (int, float))]
+            for col, fn in ((p2 + 1, min), (p2 + 2, statistics.median), (p2 + 3, max)):
+                formula = comp.cell(row=f, column=col).value or ""
+                rango = re.search(r"\(([A-Z]+)(\d+):([A-Z]+)(\d+)\)\)$", formula)
+                if not rango:
+                    falla("Comparativo fila %d: no entiendo la fórmula «%s»" % (f, formula))
+                    continue
+                a, fa, b, fb = rango.group(1), int(rango.group(2)), rango.group(3), int(rango.group(4))
+                if (column_index_from_string(a), column_index_from_string(b), fa, fb) != (p1, p2, f, f):
+                    falla("Comparativo fila %d: la fórmula mira %s%d:%s%d y los proveedores están en %s%d:%s%d"
+                          % (f, a, fa, b, fb, get_column_letter(p1), f, get_column_letter(p2), f))
+            revisadas += 1
+            if not nums:
+                falla("Comparativo fila %d: sin ningún precio, no debería estar en esta hoja" % f)
 
-    print("Comparativo: %d filas revisadas" % revisadas)
+        print("Comparativo: %d filas revisadas" % revisadas)
 
     # ---- los enlaces entre hojas apuntan a donde dicen -----------------
     #
