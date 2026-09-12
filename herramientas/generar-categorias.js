@@ -172,12 +172,29 @@ function fila(it) {
   if (it.ref === null) {
     precio = '<span class="precio-nulo">Según tarifario</span>';
   } else if (pct) {
-    /* Sin el rango debajo: el sitio muestra un precio de referencia y la
-       lista de cotizaciones reales. La mediana, el mínimo y el máximo son
-       herramientas de análisis y viven en el libro de Excel. */
     precio = `<span class="precio">${fmt(it.ref)} %</span>`;
   } else {
     precio = `<span class="precio">${rd(it.ref)}</span>`;
+  }
+
+  /* EL RANGO, AL LADO DE LA REFERENCIA
+
+     Aquí decía que el mínimo y el máximo son herramientas de análisis y que
+     viven en el libro de Excel. Era verdad a medias: el que decide si un
+     número sirve es quien lo va a usar, y sin el rango no puede. «Mezcladora,
+     de baño» vale RD$ 4.949 y va de RD$ 218 a RD$ 83.293. El precio es
+     correcto; la partida es un cajón, y eso hay que poder verlo en la misma
+     fila.
+
+     La moneda va una sola vez —«RD$ 218 – 83,293»— porque repetirla obliga a
+     leer el símbolo dos veces para comparar dos números. */
+  let rango = '';
+  if (typeof it.min === 'number' && typeof it.max === 'number') {
+    rango = it.min === it.max
+      ? `<span class="rango-uno">${pct ? fmt(it.min) + ' %' : rd(it.min)}</span>`
+      : (pct
+          ? `<span class="rango-par">${fmt(it.min)} – ${fmt(it.max)} %</span>`
+          : `<span class="rango-par">${rd(it.min)} – ${fmt(it.max)}</span>`);
   }
 
   const etapa = it.etapa && etapaPorCodigo[it.etapa] ? etapaPorCodigo[it.etapa].nombre : 'Transversal';
@@ -191,6 +208,7 @@ function fila(it) {
             <td><span class="item-esp">${esc(etapa)}</span></td>
             <td class="unidad">${esc(it.unidad)}</td>
             <td class="num" data-precio-ref="${it.ref === null ? '' : it.ref}" data-precio-itbis="${it.itbis ? '1' : '0'}" data-precio-pct="${pct ? '1' : '0'}">${precio}${it.ref === null ? '' : botonCopiarPrecio(it)}</td>
+            <td class="num rango-precio">${rango}</td>
             <td class="celda-estado">${badgeFecha(it)}${it.itbis ? '' : ' <span class="badge badge-itbis">no lleva ITBIS</span>'}</td>
             <td class="num acciones"><button class="btn-copiar" type="button" data-copiar-fila="${esc(it.codigo)}" aria-label="Copiar la fila de ${esc(it.nombre)}" title="Copiar la fila">${ICONO_COPIAR}</button></td>
           </tr>`;
@@ -351,6 +369,7 @@ ${c.intro.map((p) => `      <p>${p}</p>`).join('\n')}
             <th scope="col">Etapa</th>
             <th scope="col">Unidad</th>
             <th scope="col" class="num">Precio de referencia</th>
+            <th scope="col" class="num">Rango</th>
             <th scope="col">Última actualización</th>
             <th scope="col" class="num">Copiar fila</th>
           </tr>

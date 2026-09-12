@@ -1639,3 +1639,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   .ir-intro .ir-nota { font-size: .8rem; }
   .ir-bajada { font-size: .92rem; }
 }
+
+/* El rango, al lado de la referencia. Más pequeño y más apagado que el
+   precio: es contexto para leerlo, no un segundo precio que compita con él.
+   Una sola cotización se apaga más todavía, porque no es un rango. */
+.rango-precio { white-space: nowrap; color: var(--ink-soft); font-size: .86em; }
+.rango-precio .rango-uno { opacity: .6; }

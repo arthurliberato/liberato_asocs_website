@@ -1430,6 +1430,33 @@
     }
 
 
+    /* EL RANGO, AL LADO DE LA REFERENCIA
+
+       La referencia sola no dice si uno puede fiarse de ella. «Mezcladora,
+       de baño» vale RD$ 4.708 y va de RD$ 218 a RD$ 80.380: el número es
+       correcto y no sirve para presupuestar nada. Con el rango al lado eso
+       se ve sin abrir la partida.
+
+       Va con el mismo ITBIS que la referencia —si el usuario pidió verla
+       sin impuesto, el rango también—, porque dos números de la misma fila
+       en bases distintas es peor que no ponerlos. */
+    function rangoHtml(it, esPorcentaje) {
+      var lo = precioVista(it.min, it, estado.sinItbis);
+      var hi = precioVista(it.max, it, estado.sinItbis);
+      if (lo === null || hi === null) return '';
+      /* Una sola cotización no tiene rango, y escribir «X – X» sugiere que
+         se midió algo que no se midió. */
+      if (esPorcentaje) {
+        return lo === hi
+          ? '<span class="rango-uno">' + fmt(lo) + ' %</span>'
+          : '<span class="rango-par">' + fmt(lo) + ' – ' + fmt(hi) + ' %</span>';
+      }
+      /* La moneda una sola vez: «RD$ 218 – 83,293» y no «RD$ 218 – RD$
+         83,293», que obliga a leer el símbolo dos veces para comparar. */
+      if (lo === hi) return '<span class="rango-uno">' + rd(lo) + '</span>';
+      return '<span class="rango-par">' + rd(lo) + ' – ' + fmt(hi) + '</span>';
+    }
+
     function fila(it) {
       var bruto = precioFila(it);
       var p = precioVista(bruto, it, estado.sinItbis);
@@ -1451,6 +1478,7 @@
           '<td><a class="item-esp" style="text-decoration:none" href="' + esc(urlCat(it.cat)) + '">' + esc(nombreCat(it.cat)) + '</a></td>' +
           '<td class="unidad">' + esc(it.unidad) + '</td>' +
           '<td class="num" data-precio-ref="' + (bruto === null ? '' : bruto) + '">' + precioHtml + '</td>' +
+          '<td class="num rango-precio">' + rangoHtml(it, esPorcentaje) + '</td>' +
           '<td class="celda-estado">' + htmlCeldaEstado(it) + '</td>' +
           '<td class="num acciones">' +
             '<button class="btn-copiar" type="button" data-copiar-fila="' + esc(it.codigo) + '" ' +
