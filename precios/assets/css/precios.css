@@ -1116,7 +1116,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   position: absolute;
   top: .4rem;
   right: .4rem;
-  z-index: 2;
+  /* Por encima del panel de los dos botones (capa 3): con la ficha
+     abierta el marcador tiene que seguir viéndose y pulsándose. */
+  z-index: 4;
   display: grid;
   place-items: center;
   width: 30px;
@@ -1152,8 +1154,12 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
    el del pie del panel lateral. */
 .ir-tocar { display: none; }
 
-.ir-tactil .ir-guardar { display: none; }
-
+/* El marcador de la esquina se queda también con el dedo. Se probó
+   quitándolo —el panel ya trae su «Guardar», así que parecía de más— y
+   se pierde el gesto de un toque: apartar diez piezas mirando la
+   cuadrícula son diez toques, no veinte. Que estén los dos no confunde
+   porque son el mismo estado: marcar en cualquiera de ellos enciende el
+   otro. */
 .ir-tactil .ir-card.is-abierta .ir-tocar {
   position: absolute;
   z-index: 3;
@@ -1167,7 +1173,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:va
   flex-direction: column;
   justify-content: flex-start;
   gap: .35rem;
-  padding: .35rem;
+  /* A la derecha, el hueco del marcador de la esquina: los botones no
+     pasan por debajo de él. */
+  padding: .35rem 2.4rem .35rem .35rem;
   border-radius: var(--r-sm);
   background: linear-gradient(to bottom, rgba(27, 30, 23, .72) 55%, rgba(27, 30, 23, 0));
 }
