@@ -68,8 +68,12 @@ const FAMILIAS = {
   roseta: {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 50,
     ejes: ['tipo'],
+    /* La última rama mandaba TODO lo demás a «Portalámparas» y se comía el
+       eje: plástico y porcelana son dos ítems y el catálogo publicaba dos
+       partidas llamadas igual. Si el tipo no es uno de los tres nombres
+       propios, es el material y va en el nombre. */
     nombre: m => (m.tipo === 'roseta' ? 'Roseta de techo' : m.tipo === 'zocalo' ? 'Zócalo para bombillo'
-                : m.tipo === 'fotocelda' ? 'Fotocelda' : 'Portalámparas'),
+                : m.tipo === 'fotocelda' ? 'Fotocelda' : 'Portalámparas de ' + m.tipo),
     esp: '',
     alias: 'roseta, zócalo, socket, portalámparas, fotocelda'
   },
@@ -85,14 +89,35 @@ const FAMILIAS = {
   tomacorriente: {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 110,
     ejes: ['tipo'],
-    nombre: m => 'Tomacorriente ' + m.tipo,
+    /* GFCI y USB son siglas: «Tomacorriente gfci» se lee como una errata. */
+    nombre: m => 'Tomacorriente ' + String(m.tipo).replace(/\b(gfci|usb)\b/gi, x => x.toUpperCase()),
     esp: '',
     alias: 'tomacorriente, toma, enchufe de pared, receptáculo'
   },
+  /* EL NOMBRE NO PUEDE SER EL EJE A SECAS
+
+     Esta familia decía `nombre: m => m.tipo` y confiaba en que cada comercio
+     mandara el nombre entero. Max-eléctricos manda «Tapa ciega» y «Placa de
+     3 módulos», que están completos; Ferremix manda «ciega», «doble»,
+     «sencilla» y «triple», que son calificativos sueltos. El catálogo quedó
+     publicando cuatro ítems llamados «ciega», «doble», «sencilla» y
+     «triple», en minúscula y sin decir de qué.
+
+     Es el mismo fallo que el brazo de ducha, donde un eje con valor 'sin'
+     dejaba el nombre vacío: si el nombre depende de que el que llama escriba
+     bien, tarde o temprano alguien escribe mal. Así que el sustantivo lo
+     pone la familia y el comercio solo aporta el calificativo. */
   'placa-electrica': {
     cat: 'MAT-10', unidad: 'unidad', etapa: 'instalaciones', orden: 120,
     ejes: ['tipo'],
-    nombre: m => m.tipo,
+    /* «Tapa» y «placa» son la misma pieza y las dos se dicen en obra, así
+       que el catálogo publicaba «Tapa ciega» y «Placa ciega» como dos
+       partidas. Un ítem es una especificación: el eje guarda solo el
+       calificativo y el sustantivo lo pone el nombre. */
+    normaliza: m => Object.assign({}, m, {
+      tipo: String(m.tipo || '').replace(/^\s*(placa|tapa)\s+/i, '').toLowerCase()
+    }),
+    nombre: m => 'Placa ' + m.tipo,
     /* La placa modular se vende sola; la de huecos y la tapa ciega no engañan. */
     esp: m => /módulos/.test(m.tipo) ? 'Solo la placa · los módulos van aparte' : '',
     alias: 'placa, tapa, plaquita, tapa ciega'
@@ -298,6 +323,13 @@ function item(familia, medidas) {
   const f = FAMILIAS[familia];
   if (!f) throw new Error('familia eléctrica desconocida: ' + familia);
   medidas = medidas || {};
+
+  /* La clave sale del valor CRUDO del eje, así que dos comercios que
+     escriben lo mismo de dos maneras producen dos ítems. `normaliza` deja
+     que la familia unifique el eje ANTES de que se construya la clave, que
+     es el único sitio donde el arreglo funciona: cambiar solo el nombre
+     deja dos partidas llamadas igual. */
+  if (f.normaliza) medidas = f.normaliza(medidas);
 
   const claves = [familia];
   for (let i = 0; i < f.ejes.length; i++) {
