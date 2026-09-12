@@ -24,6 +24,7 @@ esto comprueba lo otro, que es lo que de verdad se rompe:
 import re
 import statistics
 import sys
+import zipfile
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -159,6 +160,39 @@ def main():
         filas_cat -= 1
     print("Catálogo: %d ítems (filas %d a %d)"
           % (filas_cat - FILA_TITULOS, FILA_TITULOS + 1, filas_cat))
+
+    # ---- 3 quater: las notas que explican el libro ------------------
+    # Cada hoja lleva en A2 una nota flotante que dice para qué sirve, y
+    # la primera lleva la guía entera. Lo que puede romperse callado es
+    # el TAMAÑO: la caja se dibuja en píxeles y no crece con el texto, así
+    # que una guía más larga saldría recortada sin dar ningún error.
+    #
+    # Y hay que medirlo en el VML, no con openpyxl: openpyxl escribe el
+    # tamaño correctamente pero al releer el archivo devuelve siempre el
+    # de por defecto, 144x79. Creerle sería dar por buena una caja que no
+    # se ha mirado.
+    for hoja in HOJAS:
+        if wb[hoja]["A2"].comment is None:
+            falla("la hoja «%s» no tiene la nota de A2 que explica para qué sirve" % hoja)
+
+    cajas = []
+    with zipfile.ZipFile(LIBRO) as z:
+        for nombre in sorted(n for n in z.namelist() if n.endswith(".vml")):
+            estilo = re.search(r"width:(\d+)px;height:(\d+)px",
+                               z.read(nombre).decode("utf-8", "replace"))
+            if estilo:
+                cajas.append((int(estilo.group(1)), int(estilo.group(2))))
+    if len(cajas) != len(HOJAS):
+        falla("hay %d cajas de nota dibujadas y %d hojas" % (len(cajas), len(HOJAS)))
+    for ancho, alto in cajas:
+        if (ancho, alto) == (144, 79):
+            falla("una nota se quedó con la caja por defecto: el texto saldrá recortado")
+    # La guía es la más larga y necesita la caja más grande de todas.
+    if cajas and max(a for _, a in cajas) < 300:
+        falla("la caja mayor mide %d px de alto y la guía necesita más de 300"
+              % max(a for _, a in cajas))
+    print("Notas: %d hojas explicadas · caja mayor %dx%d px"
+          % (len(cajas), max(w for w, _ in cajas), max(h for _, h in cajas)))
 
     # ---- 3 bis: la hoja de artículos --------------------------------
     # Es el dato crudo, una fila por artículo de tienda. Lo que puede

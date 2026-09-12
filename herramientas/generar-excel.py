@@ -34,6 +34,7 @@ import sys
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl.comments import Comment
 from openpyxl.drawing.image import Image
 from openpyxl.drawing.fill import Blip
 from openpyxl.drawing.geometry import PresetGeometry2D
@@ -133,6 +134,67 @@ ICONO_PX = 22       # el icono dentro de la banda
 MARGEN_PX = 5
 
 
+# CÓMO SE EXPLICA UN LIBRO SIN GASTAR UNA FILA
+#
+# Lo pedido era una fila con las instrucciones, y mejor todavía algo que
+# flote y se pueda abrir y cerrar. En Excel eso existe y es una NOTA de
+# celda: flota sobre la cuadrícula, se abre al pasar el cursor, se queda
+# abierta con «Mostrar nota» y se cierra igual. No gasta una fila, no
+# desplaza ningún dato y no necesita macros.
+#
+# Lo que NO sirve: un cuadro de texto flota pero no se puede plegar sin
+# VBA, y agrupar filas pliega de verdad pero sigue ocupando la hoja.
+#
+# Va anclada en A2, que es la segunda fila de la primera hoja. El único
+# defecto de una nota es que se ve poco —un triangulito en la esquina—,
+# así que la banda de la fila 1 lo dice con todas las letras.
+
+AUTOR_NOTA = "Ingenieros Liberato & Asociados"
+
+# Una nota se dibuja en píxeles y no se ajusta sola: si se queda corta,
+# el texto se recorta sin avisar. Se mide a ojo de carácter.
+ANCHO_NOTA_PX = 7
+ALTO_NOTA_PX = 15
+
+
+def nota(ws, celda, texto):
+    """Pega una nota flotante, dimensionada para que quepa entera."""
+    lineas = texto.split("\n")
+    c = Comment(texto, AUTOR_NOTA)
+    c.width = max(260, min(560, ANCHO_NOTA_PX * max(len(l) for l in lineas) + 24))
+    c.height = ALTO_NOTA_PX * len(lineas) + 16
+    ws[celda].comment = c
+
+
+GUIA = """CÓMO USAR ESTE LIBRO
+
+Cuatro hojas, cada una con su color de pestaña.
+
+CATÁLOGO (verde) · una fila por partida
+  Precio de referencia: la mediana de lo que cotizan los comercios.
+  Rango: de la cotización más barata a la más cara. Si es muy ancho,
+    la partida mezcla productos distintos y la referencia vale poco.
+  Económica / Estándar / Alta / Premium: referencia por gama. Solo
+    aparece donde la marca de verdad separa el precio.
+  Pulse el nombre de una partida y salta a sus artículos.
+
+COMPARATIVO (verde claro) · una columna por comercio
+  Para ver quién tiene el mejor precio de cada partida y negociar.
+
+ARTÍCULOS (gris verdoso) · el dato crudo, sin agregar
+  Un artículo de tienda por fila, con su marca, su precio y el
+  enlace a la ficha del comercio.
+  Escriba una x en la columna «Agregar» y la fila pasa a Selección.
+  Pulse el ítem del catálogo y vuelve a su fila.
+
+SELECCIÓN (ámbar) · su lista de compra
+  Recoge sola lo que marcó, con la suma al pie. Funciona con
+  fórmulas: no hay macros y no hay que habilitar nada.
+
+Todas las hojas se filtran y se ordenan con la flecha del encabezado.
+Los precios incluyen ITBIS salvo donde la columna diga que no."""
+
+
 def marca(ws, n_cols):
     """Banda fina con la marca, fija arriba de la hoja.
 
@@ -145,8 +207,11 @@ def marca(ws, n_cols):
     verde y sobre un fondo del mismo color se perdería.
     """
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=max(2, n_cols))
+    # La banda dice dónde está la guía porque una nota se anuncia con un
+    # triangulito de tres píxeles y nadie lo busca.
     c = ws.cell(row=1, column=1,
-                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com")
+                value="Ingenieros Liberato & Asociados  ·  precios.ingsliberato.com"
+                      "   ·   Cómo usar este libro: la nota de la celda A2")
     c.font = Font(name=FUENTE, size=CUERPO - 1, bold=True, color=VERDE_HONDO)
     c.fill = FILL_MARCA
     # La sangría deja hueco al icono: cada nivel vale un ancho de carácter.
@@ -1115,6 +1180,26 @@ def main():
     for nombre, color in COLOR_PESTANA.items():
         if nombre in wb.sheetnames:
             wb[nombre].sheet_properties.tabColor = color
+
+    # La guía entera en la primera hoja, y en las demás una línea que diga
+    # para qué sirve esa hoja. Quien abre «Comparativo» directamente no
+    # tiene por qué volver al catálogo para enterarse.
+    nota(wb["Catálogo"], "A2", GUIA)
+    nota(wb["Comparativo"], "A2",
+         "COMPARATIVO\n\n"
+         "Una columna por comercio y una fila por partida: quién tiene\n"
+         "el mejor precio de cada cosa.\n\n"
+         "La guía completa está en la celda A2 de la hoja «Catálogo».")
+    nota(wb["Artículos"], "A2",
+         "AGREGAR A LA SELECCIÓN\n\n"
+         "Escriba una x en esta columna —vale cualquier cosa— y la fila\n"
+         "entera aparece en la hoja «Selección», con su suma al pie.\n\n"
+         "Sin macros: la recoge una fórmula. Para quitarla, borre la x.")
+    nota(wb["Selección"], "A2",
+         "SU LISTA DE COMPRA\n\n"
+         "Esta hoja no se escribe: se llena sola con lo que usted marque\n"
+         "en la columna «Agregar» de la hoja «Artículos».\n\n"
+         "Hay 300 filas preparadas. Si necesita más, avísenos.")
 
     wb.properties.title = "Precios de construcción · República Dominicana"
     wb.properties.creator = "Ingenieros Liberato & Asociados"
